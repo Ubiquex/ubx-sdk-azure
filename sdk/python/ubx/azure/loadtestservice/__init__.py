@@ -5,4 +5,4 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .load_test_resource import LoadTestResource, LoadTestResourceConfig
-from .playwright_playwright_workspace import PlaywrightPlaywrightWorkspace, PlaywrightPlaywrightWorkspaceConfig
+from .playwright_workspace import PlaywrightWorkspace, PlaywrightWorkspaceConfig

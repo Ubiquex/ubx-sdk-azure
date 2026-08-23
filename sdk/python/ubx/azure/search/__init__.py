@@ -5,5 +5,5 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
-from .search_service import SearchService, SearchServiceConfig
+from .service import Service, ServiceConfig
 from .shared_private_link_resource import SharedPrivateLinkResource, SharedPrivateLinkResourceConfig

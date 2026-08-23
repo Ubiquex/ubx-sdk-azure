@@ -6,6 +6,6 @@ SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .authorization_rule import AuthorizationRule, AuthorizationRuleConfig
 from .hybrid_connection import HybridConnection, HybridConnectionConfig
+from .namespace import Namespace, NamespaceConfig
 from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
-from .relay_namespace import RelayNamespace, RelayNamespaceConfig
 from .wcf_relay import WcfRelay, WcfRelayConfig

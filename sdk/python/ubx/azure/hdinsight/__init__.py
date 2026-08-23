@@ -5,5 +5,5 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .applications_application import ApplicationsApplication, ApplicationsApplicationConfig
-from .cluster_cluster import ClusterCluster, ClusterClusterConfig
+from .cluster import Cluster, ClusterConfig
 from .privateendpointconnections_private_endpoint_connection import PrivateendpointconnectionsPrivateEndpointConnection, PrivateendpointconnectionsPrivateEndpointConnectionConfig

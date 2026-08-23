@@ -5,5 +5,5 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .apply_update import ApplyUpdate, ApplyUpdateConfig
+from .configuration import Configuration, ConfigurationConfig
 from .configuration_assignment import ConfigurationAssignment, ConfigurationAssignmentConfig
-from .maintenance_configuration import MaintenanceConfiguration, MaintenanceConfigurationConfig
