@@ -4,5 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .advisor_arm_error_response import AdvisorArmErrorResponse, AdvisorArmErrorResponseConfig
-from .advisor_suppression_contract import AdvisorSuppressionContract, AdvisorSuppressionContractConfig
+from .arm_error_response import ArmErrorResponse, ArmErrorResponseConfig
+from .suppression_contract import SuppressionContract, SuppressionContractConfig

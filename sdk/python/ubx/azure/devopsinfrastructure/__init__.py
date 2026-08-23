@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .devopsinfrastructure_pool import DevopsinfrastructurePool, DevopsinfrastructurePoolConfig
+from .pool import Pool, PoolConfig

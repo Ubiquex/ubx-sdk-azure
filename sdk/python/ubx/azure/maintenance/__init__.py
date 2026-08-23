@@ -4,6 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .maintenance_apply_update import MaintenanceApplyUpdate, MaintenanceApplyUpdateConfig
-from .maintenance_configuration_assignment import MaintenanceConfigurationAssignment, MaintenanceConfigurationAssignmentConfig
-from .maintenance_maintenance_configuration import MaintenanceMaintenanceConfiguration, MaintenanceMaintenanceConfigurationConfig
+from .apply_update import ApplyUpdate, ApplyUpdateConfig
+from .configuration_assignment import ConfigurationAssignment, ConfigurationAssignmentConfig
+from .maintenance_configuration import MaintenanceConfiguration, MaintenanceConfigurationConfig

@@ -4,5 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .trafficmanager_endpoint import TrafficmanagerEndpoint, TrafficmanagerEndpointConfig
-from .trafficmanager_profile import TrafficmanagerProfile, TrafficmanagerProfileConfig
+from .endpoint import Endpoint, EndpointConfig
+from .profile import Profile, ProfileConfig

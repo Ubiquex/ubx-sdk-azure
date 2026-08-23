@@ -4,7 +4,7 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .datadog_datadog_monitor_resource import DatadogDatadogMonitorResource, DatadogDatadogMonitorResourceConfig
-from .datadog_datadog_single_sign_on_resource import DatadogDatadogSingleSignOnResource, DatadogDatadogSingleSignOnResourceConfig
-from .datadog_monitored_subscription_properties import DatadogMonitoredSubscriptionProperties, DatadogMonitoredSubscriptionPropertiesConfig
-from .datadog_monitoring_tag_rules import DatadogMonitoringTagRules, DatadogMonitoringTagRulesConfig
+from .datadog_monitor_resource import DatadogMonitorResource, DatadogMonitorResourceConfig
+from .datadog_single_sign_on_resource import DatadogSingleSignOnResource, DatadogSingleSignOnResourceConfig
+from .monitored_subscription_properties import MonitoredSubscriptionProperties, MonitoredSubscriptionPropertiesConfig
+from .monitoring_tag_rules import MonitoringTagRules, MonitoringTagRulesConfig

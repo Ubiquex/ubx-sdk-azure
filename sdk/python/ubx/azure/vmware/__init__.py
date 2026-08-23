@@ -4,23 +4,23 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .vmware_addon import VmwareAddon, VmwareAddonConfig
-from .vmware_cloud_link import VmwareCloudLink, VmwareCloudLinkConfig
-from .vmware_cluster import VmwareCluster, VmwareClusterConfig
-from .vmware_datastore import VmwareDatastore, VmwareDatastoreConfig
-from .vmware_express_route_authorization import VmwareExpressRouteAuthorization, VmwareExpressRouteAuthorizationConfig
-from .vmware_global_reach_connection import VmwareGlobalReachConnection, VmwareGlobalReachConnectionConfig
-from .vmware_hcx_enterprise_site import VmwareHcxEnterpriseSite, VmwareHcxEnterpriseSiteConfig
-from .vmware_license import VmwareLicense, VmwareLicenseConfig
-from .vmware_maintenance import VmwareMaintenance, VmwareMaintenanceConfig
-from .vmware_placement_policy import VmwarePlacementPolicy, VmwarePlacementPolicyConfig
-from .vmware_private_cloud import VmwarePrivateCloud, VmwarePrivateCloudConfig
-from .vmware_pure_storage_policy import VmwarePureStoragePolicy, VmwarePureStoragePolicyConfig
-from .vmware_script_execution import VmwareScriptExecution, VmwareScriptExecutionConfig
-from .vmware_workload_network_dhcp import VmwareWorkloadNetworkDhcp, VmwareWorkloadNetworkDhcpConfig
-from .vmware_workload_network_dns_service import VmwareWorkloadNetworkDnsService, VmwareWorkloadNetworkDnsServiceConfig
-from .vmware_workload_network_dns_zone import VmwareWorkloadNetworkDnsZone, VmwareWorkloadNetworkDnsZoneConfig
-from .vmware_workload_network_port_mirroring import VmwareWorkloadNetworkPortMirroring, VmwareWorkloadNetworkPortMirroringConfig
-from .vmware_workload_network_public_ip import VmwareWorkloadNetworkPublicIp, VmwareWorkloadNetworkPublicIpConfig
-from .vmware_workload_network_segment import VmwareWorkloadNetworkSegment, VmwareWorkloadNetworkSegmentConfig
-from .vmware_workload_network_vmgroup import VmwareWorkloadNetworkVmgroup, VmwareWorkloadNetworkVmgroupConfig
+from .addon import Addon, AddonConfig
+from .cloud_link import CloudLink, CloudLinkConfig
+from .cluster import Cluster, ClusterConfig
+from .datastore import Datastore, DatastoreConfig
+from .express_route_authorization import ExpressRouteAuthorization, ExpressRouteAuthorizationConfig
+from .global_reach_connection import GlobalReachConnection, GlobalReachConnectionConfig
+from .hcx_enterprise_site import HcxEnterpriseSite, HcxEnterpriseSiteConfig
+from .license import License, LicenseConfig
+from .maintenance import Maintenance, MaintenanceConfig
+from .placement_policy import PlacementPolicy, PlacementPolicyConfig
+from .private_cloud import PrivateCloud, PrivateCloudConfig
+from .pure_storage_policy import PureStoragePolicy, PureStoragePolicyConfig
+from .script_execution import ScriptExecution, ScriptExecutionConfig
+from .workload_network_dhcp import WorkloadNetworkDhcp, WorkloadNetworkDhcpConfig
+from .workload_network_dns_service import WorkloadNetworkDnsService, WorkloadNetworkDnsServiceConfig
+from .workload_network_dns_zone import WorkloadNetworkDnsZone, WorkloadNetworkDnsZoneConfig
+from .workload_network_port_mirroring import WorkloadNetworkPortMirroring, WorkloadNetworkPortMirroringConfig
+from .workload_network_public_ip import WorkloadNetworkPublicIp, WorkloadNetworkPublicIpConfig
+from .workload_network_segment import WorkloadNetworkSegment, WorkloadNetworkSegmentConfig
+from .workload_network_vmgroup import WorkloadNetworkVmgroup, WorkloadNetworkVmgroupConfig

@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .redhatopenshift_open_shift_cluster import RedhatopenshiftOpenShiftCluster, RedhatopenshiftOpenShiftClusterConfig
+from .open_shift_cluster import OpenShiftCluster, OpenShiftClusterConfig

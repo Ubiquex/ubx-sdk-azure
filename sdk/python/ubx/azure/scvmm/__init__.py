@@ -4,9 +4,9 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .scvmm_availability_set import ScvmmAvailabilitySet, ScvmmAvailabilitySetConfig
-from .scvmm_cloud import ScvmmCloud, ScvmmCloudConfig
-from .scvmm_inventory_item import ScvmmInventoryItem, ScvmmInventoryItemConfig
-from .scvmm_virtual_machine_template import ScvmmVirtualMachineTemplate, ScvmmVirtualMachineTemplateConfig
-from .scvmm_virtual_network import ScvmmVirtualNetwork, ScvmmVirtualNetworkConfig
-from .scvmm_vmm_server import ScvmmVmmServer, ScvmmVmmServerConfig
+from .availability_set import AvailabilitySet, AvailabilitySetConfig
+from .cloud import Cloud, CloudConfig
+from .inventory_item import InventoryItem, InventoryItemConfig
+from .virtual_machine_template import VirtualMachineTemplate, VirtualMachineTemplateConfig
+from .virtual_network import VirtualNetwork, VirtualNetworkConfig
+from .vmm_server import VmmServer, VmmServerConfig

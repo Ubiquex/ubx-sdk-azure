@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .help_diagnostic_resource import HelpDiagnosticResource, HelpDiagnosticResourceConfig
+from .diagnostic_resource import DiagnosticResource, DiagnosticResourceConfig

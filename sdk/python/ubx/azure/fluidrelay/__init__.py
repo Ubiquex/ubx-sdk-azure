@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .fluidrelay_fluid_relay_server import FluidrelayFluidRelayServer, FluidrelayFluidRelayServerConfig
+from .fluid_relay_server import FluidRelayServer, FluidRelayServerConfig

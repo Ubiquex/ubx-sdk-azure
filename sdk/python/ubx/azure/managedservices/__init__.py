@@ -4,5 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .managedservices_registration_assignment import ManagedservicesRegistrationAssignment, ManagedservicesRegistrationAssignmentConfig
-from .managedservices_registration_definition import ManagedservicesRegistrationDefinition, ManagedservicesRegistrationDefinitionConfig
+from .registration_assignment import RegistrationAssignment, RegistrationAssignmentConfig
+from .registration_definition import RegistrationDefinition, RegistrationDefinitionConfig

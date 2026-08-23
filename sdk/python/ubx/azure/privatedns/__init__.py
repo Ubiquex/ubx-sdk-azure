@@ -4,6 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .privatedns_private_zone import PrivatednsPrivateZone, PrivatednsPrivateZoneConfig
-from .privatedns_record_set import PrivatednsRecordSet, PrivatednsRecordSetConfig
-from .privatedns_virtual_network_link import PrivatednsVirtualNetworkLink, PrivatednsVirtualNetworkLinkConfig
+from .private_zone import PrivateZone, PrivateZoneConfig
+from .record_set import RecordSet, RecordSetConfig
+from .virtual_network_link import VirtualNetworkLink, VirtualNetworkLinkConfig

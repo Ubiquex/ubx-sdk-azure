@@ -4,7 +4,7 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .redisenterprise_access_policy_assignment import RedisenterpriseAccessPolicyAssignment, RedisenterpriseAccessPolicyAssignmentConfig
-from .redisenterprise_cluster import RedisenterpriseCluster, RedisenterpriseClusterConfig
-from .redisenterprise_database import RedisenterpriseDatabase, RedisenterpriseDatabaseConfig
-from .redisenterprise_private_endpoint_connection import RedisenterprisePrivateEndpointConnection, RedisenterprisePrivateEndpointConnectionConfig
+from .access_policy_assignment import AccessPolicyAssignment, AccessPolicyAssignmentConfig
+from .cluster import Cluster, ClusterConfig
+from .database import Database, DatabaseConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig

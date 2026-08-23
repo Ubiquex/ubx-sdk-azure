@@ -4,21 +4,21 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .eventgrid_ca_certificate import EventgridCaCertificate, EventgridCaCertificateConfig
-from .eventgrid_channel import EventgridChannel, EventgridChannelConfig
-from .eventgrid_client import EventgridClient, EventgridClientConfig
-from .eventgrid_client_group import EventgridClientGroup, EventgridClientGroupConfig
-from .eventgrid_domain import EventgridDomain, EventgridDomainConfig
-from .eventgrid_domain_topic import EventgridDomainTopic, EventgridDomainTopicConfig
-from .eventgrid_event_subscription import EventgridEventSubscription, EventgridEventSubscriptionConfig
-from .eventgrid_namespace import EventgridNamespace, EventgridNamespaceConfig
-from .eventgrid_namespace_topic import EventgridNamespaceTopic, EventgridNamespaceTopicConfig
-from .eventgrid_partner_namespace import EventgridPartnerNamespace, EventgridPartnerNamespaceConfig
-from .eventgrid_partner_registration import EventgridPartnerRegistration, EventgridPartnerRegistrationConfig
-from .eventgrid_partner_topic import EventgridPartnerTopic, EventgridPartnerTopicConfig
-from .eventgrid_permission_binding import EventgridPermissionBinding, EventgridPermissionBindingConfig
-from .eventgrid_private_endpoint_connection import EventgridPrivateEndpointConnection, EventgridPrivateEndpointConnectionConfig
-from .eventgrid_subscription import EventgridSubscription, EventgridSubscriptionConfig
-from .eventgrid_system_topic import EventgridSystemTopic, EventgridSystemTopicConfig
-from .eventgrid_topic import EventgridTopic, EventgridTopicConfig
-from .eventgrid_topic_space import EventgridTopicSpace, EventgridTopicSpaceConfig
+from .ca_certificate import CaCertificate, CaCertificateConfig
+from .channel import Channel, ChannelConfig
+from .client import Client, ClientConfig
+from .client_group import ClientGroup, ClientGroupConfig
+from .domain import Domain, DomainConfig
+from .domain_topic import DomainTopic, DomainTopicConfig
+from .event_subscription import EventSubscription, EventSubscriptionConfig
+from .namespace import Namespace, NamespaceConfig
+from .namespace_topic import NamespaceTopic, NamespaceTopicConfig
+from .partner_namespace import PartnerNamespace, PartnerNamespaceConfig
+from .partner_registration import PartnerRegistration, PartnerRegistrationConfig
+from .partner_topic import PartnerTopic, PartnerTopicConfig
+from .permission_binding import PermissionBinding, PermissionBindingConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .subscription import Subscription, SubscriptionConfig
+from .system_topic import SystemTopic, SystemTopicConfig
+from .topic import Topic, TopicConfig
+from .topic_space import TopicSpace, TopicSpaceConfig

@@ -4,15 +4,15 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .devcenter_attached_network_connection import DevcenterAttachedNetworkConnection, DevcenterAttachedNetworkConnectionConfig
-from .devcenter_catalog import DevcenterCatalog, DevcenterCatalogConfig
-from .devcenter_dev_box_definition import DevcenterDevBoxDefinition, DevcenterDevBoxDefinitionConfig
-from .devcenter_dev_center import DevcenterDevCenter, DevcenterDevCenterConfig
-from .devcenter_environment_type import DevcenterEnvironmentType, DevcenterEnvironmentTypeConfig
-from .devcenter_gallery import DevcenterGallery, DevcenterGalleryConfig
-from .devcenter_project import DevcenterProject, DevcenterProjectConfig
-from .devcenter_project_environment_type import DevcenterProjectEnvironmentType, DevcenterProjectEnvironmentTypeConfig
-from .devcenter_project_policy import DevcenterProjectPolicy, DevcenterProjectPolicyConfig
+from .attached_network_connection import AttachedNetworkConnection, AttachedNetworkConnectionConfig
+from .catalog import Catalog, CatalogConfig
+from .dev_box_definition import DevBoxDefinition, DevBoxDefinitionConfig
+from .dev_center import DevCenter, DevCenterConfig
+from .environment_type import EnvironmentType, EnvironmentTypeConfig
+from .gallery import Gallery, GalleryConfig
+from .project import Project, ProjectConfig
+from .project_environment_type import ProjectEnvironmentType, ProjectEnvironmentTypeConfig
+from .project_policy import ProjectPolicy, ProjectPolicyConfig
 from .vdi_network_connection import VdiNetworkConnection, VdiNetworkConnectionConfig
 from .vdi_pool import VdiPool, VdiPoolConfig
 from .vdi_schedule import VdiSchedule, VdiScheduleConfig
