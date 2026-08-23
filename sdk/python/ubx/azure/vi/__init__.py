@@ -4,6 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .vi_account import ViAccount, ViAccountConfig
-from .vi_private_endpoint_connection import ViPrivateEndpointConnection, ViPrivateEndpointConnectionConfig
-from .vi_private_link_resource import ViPrivateLinkResource, ViPrivateLinkResourceConfig
+from .account import Account, AccountConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig

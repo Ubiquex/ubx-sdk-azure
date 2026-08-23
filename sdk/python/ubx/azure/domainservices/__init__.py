@@ -4,5 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .domainservices_domain_service import DomainservicesDomainService, DomainservicesDomainServiceConfig
+from .domain_service import DomainService, DomainServiceConfig
 from .oucontainer_ou_container import OucontainerOuContainer, OucontainerOuContainerConfig

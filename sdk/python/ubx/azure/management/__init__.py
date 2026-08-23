@@ -4,6 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .management_management_group import ManagementManagementGroup, ManagementManagementGroupConfig
-from .management_subscription_under_management_group import ManagementSubscriptionUnderManagementGroup, ManagementSubscriptionUnderManagementGroupConfig
+from .group import Group, GroupConfig
 from .servicegroups_service_group import ServicegroupsServiceGroup, ServicegroupsServiceGroupConfig
+from .subscription_under_management_group import SubscriptionUnderManagementGroup, SubscriptionUnderManagementGroupConfig

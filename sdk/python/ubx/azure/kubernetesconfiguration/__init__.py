@@ -6,4 +6,4 @@ SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .extensions_extension import ExtensionsExtension, ExtensionsExtensionConfig
 from .fluxconfiguration_flux_configuration import FluxconfigurationFluxConfiguration, FluxconfigurationFluxConfigurationConfig
-from .kubernetesconfiguration_source_control_configuration import KubernetesconfigurationSourceControlConfiguration, KubernetesconfigurationSourceControlConfigurationConfig
+from .source_control_configuration import SourceControlConfiguration, SourceControlConfigurationConfig

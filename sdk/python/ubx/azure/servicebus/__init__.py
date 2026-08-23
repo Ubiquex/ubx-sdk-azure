@@ -4,12 +4,12 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .servicebus_arm_disaster_recovery import ServicebusArmDisasterRecovery, ServicebusArmDisasterRecoveryConfig
-from .servicebus_migration_config_properties import ServicebusMigrationConfigProperties, ServicebusMigrationConfigPropertiesConfig
-from .servicebus_private_endpoint_connection import ServicebusPrivateEndpointConnection, ServicebusPrivateEndpointConnectionConfig
-from .servicebus_rule import ServicebusRule, ServicebusRuleConfig
-from .servicebus_sbauthorization_rule import ServicebusSbauthorizationRule, ServicebusSbauthorizationRuleConfig
-from .servicebus_sbnamespace import ServicebusSbnamespace, ServicebusSbnamespaceConfig
-from .servicebus_sbqueue import ServicebusSbqueue, ServicebusSbqueueConfig
-from .servicebus_sbsubscription import ServicebusSbsubscription, ServicebusSbsubscriptionConfig
-from .servicebus_sbtopic import ServicebusSbtopic, ServicebusSbtopicConfig
+from .arm_disaster_recovery import ArmDisasterRecovery, ArmDisasterRecoveryConfig
+from .migration_config_properties import MigrationConfigProperties, MigrationConfigPropertiesConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .rule import Rule, RuleConfig
+from .sbauthorization_rule import SbauthorizationRule, SbauthorizationRuleConfig
+from .sbnamespace import Sbnamespace, SbnamespaceConfig
+from .sbqueue import Sbqueue, SbqueueConfig
+from .sbsubscription import Sbsubscription, SbsubscriptionConfig
+from .sbtopic import Sbtopic, SbtopicConfig

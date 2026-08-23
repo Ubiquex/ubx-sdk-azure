@@ -4,7 +4,7 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .digitaltwins_digital_twins_description import DigitaltwinsDigitalTwinsDescription, DigitaltwinsDigitalTwinsDescriptionConfig
-from .digitaltwins_digital_twins_endpoint_resource import DigitaltwinsDigitalTwinsEndpointResource, DigitaltwinsDigitalTwinsEndpointResourceConfig
-from .digitaltwins_private_endpoint_connection import DigitaltwinsPrivateEndpointConnection, DigitaltwinsPrivateEndpointConnectionConfig
-from .digitaltwins_time_series_database_connection import DigitaltwinsTimeSeriesDatabaseConnection, DigitaltwinsTimeSeriesDatabaseConnectionConfig
+from .digital_twins_description import DigitalTwinsDescription, DigitalTwinsDescriptionConfig
+from .digital_twins_endpoint_resource import DigitalTwinsEndpointResource, DigitalTwinsEndpointResourceConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .time_series_database_connection import TimeSeriesDatabaseConnection, TimeSeriesDatabaseConnectionConfig

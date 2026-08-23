@@ -7,7 +7,7 @@ SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 from .dtl_artifact_source import DtlArtifactSource, DtlArtifactSourceConfig
 from .dtl_custom_image import DtlCustomImage, DtlCustomImageConfig
 from .dtl_disk import DtlDisk, DtlDiskConfig
-from .dtl_dtl_environment import DtlDtlEnvironment, DtlDtlEnvironmentConfig
+from .dtl_environment import DtlEnvironment, DtlEnvironmentConfig
 from .dtl_formula import DtlFormula, DtlFormulaConfig
 from .dtl_lab import DtlLab, DtlLabConfig
 from .dtl_lab_cost import DtlLabCost, DtlLabCostConfig

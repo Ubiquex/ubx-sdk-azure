@@ -4,8 +4,8 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .appconfiguration_configuration_store import AppconfigurationConfigurationStore, AppconfigurationConfigurationStoreConfig
-from .appconfiguration_key_value import AppconfigurationKeyValue, AppconfigurationKeyValueConfig
-from .appconfiguration_private_endpoint_connection import AppconfigurationPrivateEndpointConnection, AppconfigurationPrivateEndpointConnectionConfig
-from .appconfiguration_replica import AppconfigurationReplica, AppconfigurationReplicaConfig
-from .appconfiguration_snapshot import AppconfigurationSnapshot, AppconfigurationSnapshotConfig
+from .configuration_store import ConfigurationStore, ConfigurationStoreConfig
+from .key_value import KeyValue, KeyValueConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .replica import Replica, ReplicaConfig
+from .snapshot import Snapshot, SnapshotConfig

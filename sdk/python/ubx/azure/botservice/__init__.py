@@ -4,7 +4,7 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .botservice_bot import BotserviceBot, BotserviceBotConfig
-from .botservice_bot_channel import BotserviceBotChannel, BotserviceBotChannelConfig
-from .botservice_connection_setting import BotserviceConnectionSetting, BotserviceConnectionSettingConfig
-from .botservice_private_endpoint_connection import BotservicePrivateEndpointConnection, BotservicePrivateEndpointConnectionConfig
+from .bot import Bot, BotConfig
+from .bot_channel import BotChannel, BotChannelConfig
+from .connection_setting import ConnectionSetting, ConnectionSettingConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig

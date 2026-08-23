@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .graphservicesprod_account_resource import GraphservicesprodAccountResource, GraphservicesprodAccountResourceConfig
+from .account_resource import AccountResource, AccountResourceConfig

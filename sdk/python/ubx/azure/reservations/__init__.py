@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .reservations_reservation_order_response import ReservationsReservationOrderResponse, ReservationsReservationOrderResponseConfig
+from .reservation_order_response import ReservationOrderResponse, ReservationOrderResponseConfig
