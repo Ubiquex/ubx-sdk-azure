@@ -1,1 +1,4 @@
-5.0.1
+merged-schema-sha256: 2ab44e0ab7d5c790089db38807f7c6c50c4da98fbd414eea07af152f1115ba25
+members: 302
+fetched: 2026-08-23
+source: [dynamic_provider_groups.azure_all] in ubiquex (sdk/providers/.ubx/config)
