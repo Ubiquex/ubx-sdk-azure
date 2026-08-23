@@ -4,6 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .newrelic_monitored_subscription_properties import NewrelicMonitoredSubscriptionProperties, NewrelicMonitoredSubscriptionPropertiesConfig
-from .newrelic_new_relic_monitor_resource import NewrelicNewRelicMonitorResource, NewrelicNewRelicMonitorResourceConfig
-from .newrelic_tag_rule import NewrelicTagRule, NewrelicTagRuleConfig
+from .monitored_subscription_properties import MonitoredSubscriptionProperties, MonitoredSubscriptionPropertiesConfig
+from .new_relic_monitor_resource import NewRelicMonitorResource, NewRelicMonitorResourceConfig
+from .tag_rule import TagRule, TagRuleConfig

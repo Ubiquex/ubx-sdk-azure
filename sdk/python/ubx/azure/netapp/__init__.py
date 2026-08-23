@@ -4,16 +4,16 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .netapp_backup import NetappBackup, NetappBackupConfig
-from .netapp_backup_policy import NetappBackupPolicy, NetappBackupPolicyConfig
-from .netapp_backup_vault import NetappBackupVault, NetappBackupVaultConfig
-from .netapp_bucket import NetappBucket, NetappBucketConfig
-from .netapp_cache import NetappCache, NetappCacheConfig
-from .netapp_capacity_pool import NetappCapacityPool, NetappCapacityPoolConfig
-from .netapp_net_app_account import NetappNetAppAccount, NetappNetAppAccountConfig
-from .netapp_snapshot import NetappSnapshot, NetappSnapshotConfig
-from .netapp_snapshot_policy import NetappSnapshotPolicy, NetappSnapshotPolicyConfig
-from .netapp_subvolume_info import NetappSubvolumeInfo, NetappSubvolumeInfoConfig
-from .netapp_volume import NetappVolume, NetappVolumeConfig
-from .netapp_volume_group_details import NetappVolumeGroupDetails, NetappVolumeGroupDetailsConfig
-from .netapp_volume_quota_rule import NetappVolumeQuotaRule, NetappVolumeQuotaRuleConfig
+from .backup import Backup, BackupConfig
+from .backup_policy import BackupPolicy, BackupPolicyConfig
+from .backup_vault import BackupVault, BackupVaultConfig
+from .bucket import Bucket, BucketConfig
+from .cache import Cache, CacheConfig
+from .capacity_pool import CapacityPool, CapacityPoolConfig
+from .net_app_account import NetAppAccount, NetAppAccountConfig
+from .snapshot import Snapshot, SnapshotConfig
+from .snapshot_policy import SnapshotPolicy, SnapshotPolicyConfig
+from .subvolume_info import SubvolumeInfo, SubvolumeInfoConfig
+from .volume import Volume, VolumeConfig
+from .volume_group_details import VolumeGroupDetails, VolumeGroupDetailsConfig
+from .volume_quota_rule import VolumeQuotaRule, VolumeQuotaRuleConfig

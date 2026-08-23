@@ -4,7 +4,7 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .marketplace_admin_request_approvals_resource import MarketplaceAdminRequestApprovalsResource, MarketplaceAdminRequestApprovalsResourceConfig
-from .marketplace_collection import MarketplaceCollection, MarketplaceCollectionConfig
-from .marketplace_offer import MarketplaceOffer, MarketplaceOfferConfig
-from .marketplace_request_approval_resource import MarketplaceRequestApprovalResource, MarketplaceRequestApprovalResourceConfig
+from .admin_request_approvals_resource import AdminRequestApprovalsResource, AdminRequestApprovalsResourceConfig
+from .collection import Collection, CollectionConfig
+from .offer import Offer, OfferConfig
+from .request_approval_resource import RequestApprovalResource, RequestApprovalResourceConfig

@@ -4,6 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .search_private_endpoint_connection import SearchPrivateEndpointConnection, SearchPrivateEndpointConnectionConfig
-from .search_search_service import SearchSearchService, SearchSearchServiceConfig
-from .search_shared_private_link_resource import SearchSharedPrivateLinkResource, SearchSharedPrivateLinkResourceConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .search_service import SearchService, SearchServiceConfig
+from .shared_private_link_resource import SharedPrivateLinkResource, SharedPrivateLinkResourceConfig

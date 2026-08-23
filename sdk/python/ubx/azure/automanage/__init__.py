@@ -4,5 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .automanage_configuration_profile import AutomanageConfigurationProfile, AutomanageConfigurationProfileConfig
-from .automanage_configuration_profile_assignment import AutomanageConfigurationProfileAssignment, AutomanageConfigurationProfileAssignmentConfig
+from .configuration_profile import ConfigurationProfile, ConfigurationProfileConfig
+from .configuration_profile_assignment import ConfigurationProfileAssignment, ConfigurationProfileAssignmentConfig

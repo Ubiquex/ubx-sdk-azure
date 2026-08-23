@@ -4,7 +4,7 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .elastic_elastic_monitor_resource import ElasticElasticMonitorResource, ElasticElasticMonitorResourceConfig
-from .elastic_monitored_subscription_properties import ElasticMonitoredSubscriptionProperties, ElasticMonitoredSubscriptionPropertiesConfig
-from .elastic_monitoring_tag_rules import ElasticMonitoringTagRules, ElasticMonitoringTagRulesConfig
-from .elastic_open_aiintegration_rpmodel import ElasticOpenAiintegrationRpmodel, ElasticOpenAiintegrationRpmodelConfig
+from .elastic_monitor_resource import ElasticMonitorResource, ElasticMonitorResourceConfig
+from .monitored_subscription_properties import MonitoredSubscriptionProperties, MonitoredSubscriptionPropertiesConfig
+from .monitoring_tag_rules import MonitoringTagRules, MonitoringTagRulesConfig
+from .open_aiintegration_rpmodel import OpenAiintegrationRpmodel, OpenAiintegrationRpmodelConfig

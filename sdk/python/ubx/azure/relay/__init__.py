@@ -4,8 +4,8 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .relay_authorization_rule import RelayAuthorizationRule, RelayAuthorizationRuleConfig
-from .relay_hybrid_connection import RelayHybridConnection, RelayHybridConnectionConfig
-from .relay_private_endpoint_connection import RelayPrivateEndpointConnection, RelayPrivateEndpointConnectionConfig
-from .relay_relay_namespace import RelayRelayNamespace, RelayRelayNamespaceConfig
-from .relay_wcf_relay import RelayWcfRelay, RelayWcfRelayConfig
+from .authorization_rule import AuthorizationRule, AuthorizationRuleConfig
+from .hybrid_connection import HybridConnection, HybridConnectionConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .relay_namespace import RelayNamespace, RelayNamespaceConfig
+from .wcf_relay import WcfRelay, WcfRelayConfig

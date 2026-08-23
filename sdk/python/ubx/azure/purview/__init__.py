@@ -4,6 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .purview_account import PurviewAccount, PurviewAccountConfig
-from .purview_kafka_configuration import PurviewKafkaConfiguration, PurviewKafkaConfigurationConfig
-from .purview_private_endpoint_connection import PurviewPrivateEndpointConnection, PurviewPrivateEndpointConnectionConfig
+from .account import Account, AccountConfig
+from .kafka_configuration import KafkaConfiguration, KafkaConfigurationConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig

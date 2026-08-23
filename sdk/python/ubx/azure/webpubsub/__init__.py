@@ -4,10 +4,10 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .webpubsub_custom_certificate import WebpubsubCustomCertificate, WebpubsubCustomCertificateConfig
-from .webpubsub_custom_domain import WebpubsubCustomDomain, WebpubsubCustomDomainConfig
-from .webpubsub_private_endpoint_connection import WebpubsubPrivateEndpointConnection, WebpubsubPrivateEndpointConnectionConfig
-from .webpubsub_replica import WebpubsubReplica, WebpubsubReplicaConfig
-from .webpubsub_shared_private_link_resource import WebpubsubSharedPrivateLinkResource, WebpubsubSharedPrivateLinkResourceConfig
-from .webpubsub_web_pub_sub_hub import WebpubsubWebPubSubHub, WebpubsubWebPubSubHubConfig
-from .webpubsub_web_pub_sub_resource import WebpubsubWebPubSubResource, WebpubsubWebPubSubResourceConfig
+from .custom_certificate import CustomCertificate, CustomCertificateConfig
+from .custom_domain import CustomDomain, CustomDomainConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .replica import Replica, ReplicaConfig
+from .shared_private_link_resource import SharedPrivateLinkResource, SharedPrivateLinkResourceConfig
+from .web_pub_sub_hub import WebPubSubHub, WebPubSubHubConfig
+from .web_pub_sub_resource import WebPubSubResource, WebPubSubResourceConfig

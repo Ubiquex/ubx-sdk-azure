@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .iotcentral_app import IotcentralApp, IotcentralAppConfig
+from .app import App, AppConfig

@@ -4,5 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .dns_record_set import DnsRecordSet, DnsRecordSetConfig
-from .dns_zone import DnsZone, DnsZoneConfig
+from .record_set import RecordSet, RecordSetConfig
+from .zone import Zone, ZoneConfig
