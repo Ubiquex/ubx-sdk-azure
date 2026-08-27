@@ -37,8 +37,17 @@ provenance record for what's currently checked in, not a semantic version.
   language — never assume they agree. Verify each directly before trusting
   parity: Go module proxy (`gh api repos/Ubiquex/ubx-sdk-azure/tags`),
   `jsr.io/@ubx/sdk-azure`, `pypi.org/project/ubx-sdk-azure`. A commit to this
-  repo's own `main` is NOT the same as "published" for any of the three
-  (`ubiquex`'s own CLAUDE.md rule 8, UBI-131).
+  repo's own `main` is NOT the same as "published" for any of the three —
+  verify against the SEPARATE published repo/registry directly (a real
+  `git log`/`diff` against the actual separate repo, or a real registry
+  query: the Go module proxy, `jsr.io`, `pypi.org`), never infer "published"
+  from a commit to the monorepo's own copy alone (`ubiquex`'s own CLAUDE.md
+  rule 8). This bit the project once already at the runtime-repo level: a Go
+  fix was reported "committed and pushed" across multiple session summaries,
+  but only the monorepo's own copy had changed — the separate, real
+  `ubx-sdk-go` repo was never touched, still showing its original scaffold
+  commit a full day later, caught only when the founder pushed back and a
+  real `git log` was run against the actual separate repo (UBI-131).
 - These bindings are generated, not hand-written — a real fix belongs in
   `ubiquex`'s own `sdk/codegen/` (or the upstream schema, if the bug is in
   what's being generated FROM, see `ubx-schema-azure`), then regenerated
