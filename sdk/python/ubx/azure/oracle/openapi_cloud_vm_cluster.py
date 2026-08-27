@@ -85,7 +85,7 @@ class OpenapiCloudVmCluster_Properties:
     file_system_configuration_details: Any = None
     # Oracle Grid Infrastructure (GI) software version
     gi_version: Any = None
-    # The hostname for the cloud VM cluster.
+    # The hostname for the cloud VM cluster. Hostname and domain combined length cannot exceed 112 characters.
     hostname: Any = None
     # ExadataIormConfig for cloud vm cluster
     iorm_config_cache: Any = None

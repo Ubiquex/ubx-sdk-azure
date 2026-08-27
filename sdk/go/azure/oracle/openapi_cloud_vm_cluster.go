@@ -81,7 +81,7 @@ type OpenapiCloudVmCluster_Properties struct {
 	FileSystemConfigurationDetails any
 	// Oracle Grid Infrastructure (GI) software version
 	GiVersion any
-	// The hostname for the cloud VM cluster.
+	// The hostname for the cloud VM cluster. Hostname and domain combined length cannot exceed 112 characters.
 	Hostname any
 	// ExadataIormConfig for cloud vm cluster
 	IormConfigCache any
