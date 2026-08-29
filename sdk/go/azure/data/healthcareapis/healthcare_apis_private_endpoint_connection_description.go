@@ -3,37 +3,35 @@ package healthcareapis
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type HealthcareApisPrivateEndpointConnectionDescription_SystemData struct {
-	// The timestamp of resource creation (UTC).
+type HealthcareApisPrivateEndpointConnectionDescription_Value_SystemData struct {
 	CreatedAt any
-	// The identity that created the resource.
 	CreatedBy any
-	// The type of identity that created the resource.
 	CreatedByType any
-	// The timestamp of resource last modification (UTC)
 	LastModifiedAt any
-	// The identity that last modified the resource.
 	LastModifiedBy any
-	// The type of identity that last modified the resource.
 	LastModifiedByType any
+}
+
+type HealthcareApisPrivateEndpointConnectionDescription_Value struct {
+	SystemData any
 }
 
 type HealthcareApisPrivateEndpointConnectionDescriptionConfig struct {
 	ResourceGroupName any
-	WorkspaceName any
+	ResourceName any
 }
 
 type HealthcareApisPrivateEndpointConnectionDescriptionAttrs struct {
 	ResourceGroupName any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
-	WorkspaceName any
+	ResourceName any
+	// Array of private endpoint connections
+	Value any
 }
 
 var HealthcareApisPrivateEndpointConnectionDescription = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_private_endpoint_connection_description",
 	Fields: ubx.FieldMap{
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

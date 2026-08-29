@@ -3,35 +3,36 @@ package batch
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiPrivateLinkResource_Properties struct {
-	// The group id is used to establish the private link connection.
+type OpenapiPrivateLinkResource_Value_Properties struct {
 	GroupId any
-	// The list of required members that are used to establish the private link connection.
 	RequiredMembers any
-	// The list of required zone names for the private DNS resource name
 	RequiredZoneNames any
+}
+
+type OpenapiPrivateLinkResource_Value struct {
+	Etag any
+	Properties any
+	Tags any
 }
 
 type OpenapiPrivateLinkResourceConfig struct {
 	AccountName any
-	PrivateLinkResourceName any
+	Maxresults any
 }
 
 type OpenapiPrivateLinkResourceAttrs struct {
 	AccountName any
-	// The ETag of the resource, used for concurrency statements.
-	Etag any
-	PrivateLinkResourceName any
-	// Private link resource properties.
-	Properties any
-	// The tags of the resource.
-	Tags any
+	Maxresults any
+	// The link to the next page of items
+	NextLink any
+	// The PrivateLinkResource items on this page
+	Value any
 }
 
 var OpenapiPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_private_link_resource",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PrivateLinkResourceName": ubx.FieldSpec{WireName: "private_link_resource_name"},
+		"Maxresults": ubx.FieldSpec{WireName: "maxresults"},
 	},
 }

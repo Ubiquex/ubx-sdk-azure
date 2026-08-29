@@ -3,38 +3,34 @@ package dataprotection
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DeletedBackupInstanceResource_Properties_DeletionInfo struct {
-	// Specifies billing end date
+type DeletedBackupInstanceResource_Value_Properties_DeletionInfo struct {
 	BillingEndDate any
-	// Delete activity ID for troubleshooting purpose
 	DeleteActivityId any
-	// Specifies time of deletion
 	DeletionTime any
-	// Specifies purge time
 	ScheduledPurgeTime any
 }
 
-type DeletedBackupInstanceResource_Properties struct {
-	// Deletion Info
+type DeletedBackupInstanceResource_Value_Properties struct {
 	DeletionInfo any
 }
 
+type DeletedBackupInstanceResource_Value struct {
+	Properties any
+}
+
 type DeletedBackupInstanceResourceConfig struct {
-	BackupInstanceName any
 	VaultName any
 }
 
 type DeletedBackupInstanceResourceAttrs struct {
-	BackupInstanceName any
-	// Deleted Backup Instance
-	Properties any
+	// List of resources.
+	Value any
 	VaultName any
 }
 
 var DeletedBackupInstanceResource = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_deleted_backup_instance_resource",
 	Fields: ubx.FieldMap{
-		"BackupInstanceName": ubx.FieldSpec{WireName: "backup_instance_name"},
 		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

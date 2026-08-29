@@ -3,24 +3,26 @@ package oracle
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiAutonomousDatabaseNationalCharacterSet_Properties struct {
-	// The Oracle Autonomous Database supported national character sets.
+type OpenapiAutonomousDatabaseNationalCharacterSet_Value_Properties struct {
 	CharacterSet any
 }
 
+type OpenapiAutonomousDatabaseNationalCharacterSet_Value struct {
+	Properties any
+}
+
 type OpenapiAutonomousDatabaseNationalCharacterSetConfig struct {
-	Adbsncharsetname any
 }
 
 type OpenapiAutonomousDatabaseNationalCharacterSetAttrs struct {
-	Adbsncharsetname any
-	// AutonomousDatabaseNationalCharacterSet resource model
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The AutonomousDatabaseNationalCharacterSet items on this page
+	Value any
 }
 
 var OpenapiAutonomousDatabaseNationalCharacterSet = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_autonomous_database_national_character_set",
 	Fields: ubx.FieldMap{
-		"Adbsncharsetname": ubx.FieldSpec{WireName: "adbsncharsetname"},
 	},
 }

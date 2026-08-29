@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiAgreement_Properties_BillingProfileInfo:
+class OpenapiAgreement_Value_Properties_BillingProfileInfo:
     billing_account_id: Any = None
     billing_profile_display_name: Any = None
     billing_profile_id: Any = None
@@ -15,52 +15,47 @@ class OpenapiAgreement_Properties_BillingProfileInfo:
     indirect_relationship_organization_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiAgreement_Properties_Participants:
+class OpenapiAgreement_Value_Properties_Participants:
     email: Any = None
     status: Any = None
     status_date: Any = None
 
 @dataclasses.dataclass
-class OpenapiAgreement_Properties:
-    # The mode of acceptance for an agreement.
+class OpenapiAgreement_Value_Properties:
     acceptance_mode: Any = None
-    # The URL to download the agreement.
     agreement_link: Any = None
-    # The list of billing profiles associated with agreement and present only for specific agreements.
     billing_profile_info: Any = None
-    # The category of the agreement.
     category: Any = None
-    # The name of the agreement signed by a customer.
     display_name: Any = None
-    # The date from which the agreement is effective.
     effective_date: Any = None
-    # The date when the agreement expires.
     expiration_date: Any = None
-    # The ID of the lead billing account if this agreement is part of the Customer Affiliate Purchase Terms.
     lead_billing_account_name: Any = None
-    # The list of participants that participates in acceptance of an agreement.
     participants: Any = None
-    # The current status of the agreement.
     status: Any = None
 
 @dataclasses.dataclass
+class OpenapiAgreement_Value:
+    properties: Any = None
+    tags: Any = None
+
+@dataclasses.dataclass
 class OpenapiAgreementConfig:
-    agreement_name: Any = None
     billing_account_name: Any = None
+    expand: Any = None
 
 @dataclasses.dataclass
 class OpenapiAgreementAttrs:
-    agreement_name: Any = None
     billing_account_name: Any = None
-    # An agreement.
-    properties: Any = None
-    # Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-    tags: Any = None
+    expand: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Agreement items on this page
+    value: Any = None
 
 OpenapiAgreement = ubx.DataSourceBinding(
     wire_type="azure_billing_openapi_agreement",
     fields={
-        "agreement_name": ubx.FieldSpec(wire_name="agreement_name"),
         "billing_account_name": ubx.FieldSpec(wire_name="billing_account_name"),
+        "expand": ubx.FieldSpec(wire_name="expand"),
     },
 )

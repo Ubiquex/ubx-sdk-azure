@@ -7,32 +7,26 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiPolicyDefinition_Properties_ExternalEvaluationEnforcementSettings_EndpointSettings:
-    # The details of the endpoint.
+class OpenapiPolicyDefinition_Value_Properties_ExternalEvaluationEnforcementSettings_EndpointSettings:
     details: Any = None
-    # The kind of the endpoint.
     kind: Any = None
 
 @dataclasses.dataclass
-class OpenapiPolicyDefinition_Properties_ExternalEvaluationEnforcementSettings:
-    # The settings of an external endpoint providing evaluation results.
+class OpenapiPolicyDefinition_Value_Properties_ExternalEvaluationEnforcementSettings:
     endpoint_settings: Any = None
-    # What to do when evaluating an enforcement policy that requires an external evaluation and the token is missing. Possible values are Audit and Deny and language expressions are supported.
     missing_token_action: Any = None
-    # The lifespan of the endpoint invocation result after which it's no longer valid. Value is expected to follow the ISO 8601 duration format and language expressions are supported.
     result_lifespan: Any = None
-    # An array of the role definition Ids the assignment's MSI will need in order to invoke the endpoint.
     role_definition_ids: Any = None
 
 @dataclasses.dataclass
-class OpenapiPolicyDefinition_Properties_Parameters_Metadata:
+class OpenapiPolicyDefinition_Value_Properties_Parameters_Metadata:
     assign_permissions: Any = None
     description: Any = None
     display_name: Any = None
     strong_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiPolicyDefinition_Properties_Parameters:
+class OpenapiPolicyDefinition_Value_Properties_Parameters:
     allowed_values: Any = None
     default_value: Any = None
     metadata: Any = None
@@ -40,44 +34,35 @@ class OpenapiPolicyDefinition_Properties_Parameters:
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiPolicyDefinition_Properties:
-    # The policy definition description.
+class OpenapiPolicyDefinition_Value_Properties:
     description: Any = None
-    # The display name of the policy definition.
     display_name: Any = None
-    # The details of the source of external evaluation results required by the policy during enforcement evaluation.
     external_evaluation_enforcement_settings: Any = None
-    # The policy definition metadata. Metadata is an open ended object and is typically a collection of key value pairs.
     metadata: Any = None
-    # The policy definition mode. Some examples are All, Indexed, Microsoft.KeyVault.Data.
     mode: Any = None
-    # The parameter definitions for parameters used in the policy rule. The keys are the parameter names.
     parameters: Any = None
-    # The policy rule.
     policy_rule: Any = None
-    # The type of policy definition. Possible values are NotSpecified, BuiltIn, Custom, and Static.
     policy_type: Any = None
-    # The policy definition version in #.#.# format.
     version: Any = None
-    # A list of available versions for this policy definition.
     versions: Any = None
 
 @dataclasses.dataclass
+class OpenapiPolicyDefinition_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiPolicyDefinitionConfig:
-    management_group_id: Any = None
-    policy_definition_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiPolicyDefinitionAttrs:
-    management_group_id: Any = None
-    policy_definition_name: Any = None
-    # The policy definition properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The PolicyDefinition items on this page
+    value: Any = None
 
 OpenapiPolicyDefinition = ubx.DataSourceBinding(
     wire_type="azure_resources_openapi_policy_definition",
     fields={
-        "management_group_id": ubx.FieldSpec(wire_name="management_group_id"),
-        "policy_definition_name": ubx.FieldSpec(wire_name="policy_definition_name"),
     },
 )

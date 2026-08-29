@@ -3,43 +3,43 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDatabaseConnection_Properties_ConfigurationFiles struct {
+type OpenapiDatabaseConnection_Value_Properties_ConfigurationFiles struct {
 	Contents any
 	FileName any
 	Type any
 }
 
-type OpenapiDatabaseConnection_Properties struct {
-	// A list of configuration files associated with this database connection.
+type OpenapiDatabaseConnection_Value_Properties struct {
 	ConfigurationFiles any
-	// If present, the identity is used in conjunction with connection string to connect to the database. Use of the system-assigned managed identity is indicated with the string 'SystemAssigned', while use of a user-assigned managed identity is indicated with the resource id of the managed identity resource.
 	ConnectionIdentity any
-	// The connection string to use to connect to the database.
 	ConnectionString any
-	// The region of the database resource.
 	Region any
-	// The resource id of the database.
 	ResourceId any
 }
 
+type OpenapiDatabaseConnection_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiDatabaseConnectionConfig struct {
-	DatabaseConnectionName any
+	EnvironmentName any
 	Name any
 }
 
 type OpenapiDatabaseConnectionAttrs struct {
-	DatabaseConnectionName any
-	// Kind of resource.
-	Kind any
+	EnvironmentName any
 	Name any
-	// DatabaseConnection resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The DatabaseConnection items on this page
+	Value any
 }
 
 var OpenapiDatabaseConnection = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_database_connection",
 	Fields: ubx.FieldMap{
-		"DatabaseConnectionName": ubx.FieldSpec{WireName: "database_connection_name"},
+		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

@@ -3,32 +3,33 @@ package machinelearningservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiCodeVersion_Properties struct {
-	// Uri where code is located
+type OpenapiCodeVersion_Value_Properties struct {
 	CodeUri any
-	// Provisioning state of registry asset.
 	ProvisioningState any
 }
 
+type OpenapiCodeVersion_Value struct {
+	Properties any
+}
+
 type OpenapiCodeVersionConfig struct {
-	Name any
-	Version any
-	WorkspaceName any
+	CodeName any
+	RegistryName any
 }
 
 type OpenapiCodeVersionAttrs struct {
-	Name any
-	// Code asset version details.
-	Properties any
-	Version any
-	WorkspaceName any
+	CodeName any
+	// The link to the next page of items
+	NextLink any
+	RegistryName any
+	// The CodeVersion items on this page
+	Value any
 }
 
 var OpenapiCodeVersion = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_code_version",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"CodeName": ubx.FieldSpec{WireName: "code_name"},
+		"RegistryName": ubx.FieldSpec{WireName: "registry_name"},
 	},
 }

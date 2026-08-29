@@ -10,7 +10,6 @@ from .openapi_configuration import OpenapiConfiguration, OpenapiConfigurationCon
 from .openapi_database import OpenapiDatabase, OpenapiDatabaseConfig
 from .openapi_firewall_rule import OpenapiFirewallRule, OpenapiFirewallRuleConfig
 from .openapi_private_endpoint_connection import OpenapiPrivateEndpointConnection, OpenapiPrivateEndpointConnectionConfig
-from .openapi_private_link_resource import OpenapiPrivateLinkResource, OpenapiPrivateLinkResourceConfig
 from .openapi_server import OpenapiServer, OpenapiServerConfig
 from .openapi_server_backup import OpenapiServerBackup, OpenapiServerBackupConfig
 from .openapi_server_backup_v2 import OpenapiServerBackupV2, OpenapiServerBackupV2Config

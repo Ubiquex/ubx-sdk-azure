@@ -7,30 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class PrivateLinkResource_Properties:
-    # The private link resource group id.
+class PrivateLinkResource_Value_Properties:
     group_id: Any = None
-    # The private link resource required member names.
     required_members: Any = None
-    # The private link resource Private link DNS zone name.
     required_zone_names: Any = None
+
+@dataclasses.dataclass
+class PrivateLinkResource_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class PrivateLinkResourceConfig:
     namespace_name: Any = None
-    private_link_resource_name: Any = None
 
 @dataclasses.dataclass
 class PrivateLinkResourceAttrs:
     namespace_name: Any = None
-    private_link_resource_name: Any = None
-    # Properties of PrivateLinkResource
-    properties: Any = None
+    # A link for the next page of private link resources.
+    next_link: Any = None
+    # A collection of private link resources
+    value: Any = None
 
 PrivateLinkResource = ubx.DataSourceBinding(
     wire_type="azure_relay_private_link_resource",
     fields={
         "namespace_name": ubx.FieldSpec(wire_name="namespace_name"),
-        "private_link_resource_name": ubx.FieldSpec(wire_name="private_link_resource_name"),
     },
 )

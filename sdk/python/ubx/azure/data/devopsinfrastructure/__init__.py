@@ -4,9 +4,7 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .image_version_list_result import ImageVersionListResult, ImageVersionListResultConfig
-from .microsoft_dev_ops_infrastructure import MicrosoftDevOpsInfrastructure, MicrosoftDevOpsInfrastructureConfig
-from .paged_quota import PagedQuota, PagedQuotaConfig
-from .pool_list_result import PoolListResult, PoolListResultConfig
-from .resource_details_object_list_result import ResourceDetailsObjectListResult, ResourceDetailsObjectListResultConfig
-from .resource_sku_list_result import ResourceSkuListResult, ResourceSkuListResultConfig
+from .image_version import ImageVersion, ImageVersionConfig
+from .pool import Pool, PoolConfig
+from .resource_details_object import ResourceDetailsObject, ResourceDetailsObjectConfig
+from .resource_sku import ResourceSku, ResourceSkuConfig

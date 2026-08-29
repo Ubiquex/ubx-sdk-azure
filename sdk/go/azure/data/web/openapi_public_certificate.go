@@ -3,36 +3,32 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiPublicCertificate_Properties struct {
-	// Public Certificate byte array
+type OpenapiPublicCertificate_Value_Properties struct {
 	Blob any
-	// Public Certificate Location
 	PublicCertificateLocation any
-	// Certificate Thumbprint
 	Thumbprint any
+}
+
+type OpenapiPublicCertificate_Value struct {
+	Kind any
+	Properties any
 }
 
 type OpenapiPublicCertificateConfig struct {
 	Name any
-	PublicCertificateName any
-	Slot any
 }
 
 type OpenapiPublicCertificateAttrs struct {
-	// Kind of resource.
-	Kind any
 	Name any
-	// PublicCertificate resource specific properties
-	Properties any
-	PublicCertificateName any
-	Slot any
+	// The link to the next page of items
+	NextLink any
+	// The PublicCertificate items on this page
+	Value any
 }
 
 var OpenapiPublicCertificate = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_public_certificate",
 	Fields: ubx.FieldMap{
 		"Name": ubx.FieldSpec{WireName: "name"},
-		"PublicCertificateName": ubx.FieldSpec{WireName: "public_certificate_name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
 	},
 }

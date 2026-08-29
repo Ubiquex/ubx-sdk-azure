@@ -3,54 +3,44 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type Catalog_Properties_LastSyncStats struct {
-	// Count of catalog items added during synchronization.
+type Catalog_Value_Properties_LastSyncStats struct {
 	Added any
-	// Count of catalog items removed during synchronization.
 	Removed any
-	// Indicates catalog item types that were synced.
 	SyncedCatalogItemTypes any
-	// Count of synchronization errors that occured during synchronization.
 	SynchronizationErrors any
-	// Count of catalog items that were unchanged during synchronization.
 	Unchanged any
-	// Count of catalog items updated during synchronization.
 	Updated any
-	// Count of catalog items that had validation errors during synchronization.
 	ValidationErrors any
 }
 
-type Catalog_Properties struct {
-	// The connection state of the catalog.
+type Catalog_Value_Properties struct {
 	ConnectionState any
-	// When the catalog was last connected.
 	LastConnectionTime any
-	// Stats of the synchronization.
 	LastSyncStats any
-	// When the catalog was last synced.
 	LastSyncTime any
-	// Provisioning state of the resource.
 	ProvisioningState any
-	// The synchronization state of the catalog.
 	SyncState any
 }
 
+type Catalog_Value struct {
+	Properties any
+}
+
 type CatalogConfig struct {
-	CatalogName any
-	ProjectName any
+	DevCenterName any
 }
 
 type CatalogAttrs struct {
-	CatalogName any
-	ProjectName any
-	// Properties of a catalog.
-	Properties any
+	DevCenterName any
+	// URL to get the next set of results if there are any.
+	NextLink any
+	// Current page of results.
+	Value any
 }
 
 var Catalog = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_catalog",
 	Fields: ubx.FieldMap{
-		"CatalogName": ubx.FieldSpec{WireName: "catalog_name"},
-		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
+		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
 	},
 }

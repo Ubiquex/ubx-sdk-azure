@@ -3,47 +3,37 @@ package automanage
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type BestPractice_Properties struct {
-	// The custom configuration for configuration profile. Name and value pairs that define the configuration details of the configuration profile.
+type BestPractice_Value_Properties struct {
 	Configuration any
 }
 
-type BestPractice_SystemData struct {
-	// The timestamp of resource creation (UTC).
+type BestPractice_Value_SystemData struct {
 	CreatedAt any
-	// The identity that created the resource.
 	CreatedBy any
-	// The type of identity that created the resource.
 	CreatedByType any
-	// The timestamp of resource last modification (UTC)
 	LastModifiedAt any
-	// The identity that last modified the resource.
 	LastModifiedBy any
-	// The type of identity that last modified the resource.
 	LastModifiedByType any
 }
 
+type BestPractice_Value struct {
+	Id any
+	Name any
+	Properties any
+	SystemData any
+	Type any
+}
+
 type BestPracticeConfig struct {
-	BestPracticeName any
 }
 
 type BestPracticeAttrs struct {
-	BestPracticeName any
-	// The fully qualified ID for the best practice. For example, /providers/Microsoft.Automanage/bestPractices/azureBestPracticesProduction
-	Id any
-	// The name of the best practice. For example, azureBestPracticesProduction
-	Name any
-	// Automanage configuration profile properties.
-	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
-	// The type of the resource. For example, Microsoft.Automanage/bestPractices
-	Type any
+	// Result of the list best practice operation.
+	Value any
 }
 
 var BestPractice = ubx.DataSourceBinding{
 	WireType: "azure_automanage_best_practice",
 	Fields: ubx.FieldMap{
-		"BestPracticeName": ubx.FieldSpec{WireName: "best_practice_name"},
 	},
 }

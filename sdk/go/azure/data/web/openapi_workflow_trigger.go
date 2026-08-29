@@ -3,80 +3,61 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiWorkflowTrigger_Properties_Recurrence_Schedule_MonthlyOccurrences struct {
+type OpenapiWorkflowTrigger_Value_Properties_Recurrence_Schedule_MonthlyOccurrences struct {
 	Day any
 	Occurrence any
 }
 
-type OpenapiWorkflowTrigger_Properties_Recurrence_Schedule struct {
-	// The hours.
+type OpenapiWorkflowTrigger_Value_Properties_Recurrence_Schedule struct {
 	Hours any
-	// The minutes.
 	Minutes any
-	// The month days.
 	MonthDays any
-	// The monthly occurrences.
 	MonthlyOccurrences any
-	// The days of the week.
 	WeekDays any
 }
 
-type OpenapiWorkflowTrigger_Properties_Recurrence struct {
-	// The end time.
+type OpenapiWorkflowTrigger_Value_Properties_Recurrence struct {
 	EndTime any
-	// The recurrence frequency.
 	Frequency any
-	// The interval.
 	Interval any
-	// The recurrence schedule.
 	Schedule any
-	// The start time.
 	StartTime any
-	// The time zone.
 	TimeZone any
 }
 
-type OpenapiWorkflowTrigger_Properties_Workflow struct {
-	// The resource id.
+type OpenapiWorkflowTrigger_Value_Properties_Workflow struct {
 	Id any
-	// Gets the resource name.
 	Name any
-	// Gets the resource type.
 	Type any
 }
 
-type OpenapiWorkflowTrigger_Properties struct {
-	// Gets the changed time.
+type OpenapiWorkflowTrigger_Value_Properties struct {
 	ChangedTime any
-	// Gets the created time.
 	CreatedTime any
-	// Gets the last execution time.
 	LastExecutionTime any
-	// Gets the next execution time.
 	NextExecutionTime any
-	// The workflow trigger provisioning state.
 	ProvisioningState any
-	// The workflow trigger recurrence.
 	Recurrence any
-	// The workflow state.
 	State any
-	// The workflow status.
 	Status any
-	// The resource reference.
 	Workflow any
+}
+
+type OpenapiWorkflowTrigger_Value struct {
+	Properties any
 }
 
 type OpenapiWorkflowTriggerConfig struct {
 	Name any
-	TriggerName any
 	WorkflowName any
 }
 
 type OpenapiWorkflowTriggerAttrs struct {
 	Name any
-	// The workflow trigger properties.
-	Properties any
-	TriggerName any
+	// The link to the next page of items
+	NextLink any
+	// The WorkflowTrigger items on this page
+	Value any
 	WorkflowName any
 }
 
@@ -84,7 +65,6 @@ var OpenapiWorkflowTrigger = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_trigger",
 	Fields: ubx.FieldMap{
 		"Name": ubx.FieldSpec{WireName: "name"},
-		"TriggerName": ubx.FieldSpec{WireName: "trigger_name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

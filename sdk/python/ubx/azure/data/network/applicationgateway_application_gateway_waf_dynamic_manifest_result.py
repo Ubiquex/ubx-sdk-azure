@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties_AvailableRuleSets_RuleGroups_Rules:
+class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_AvailableRuleSets_RuleGroups_Rules:
     action: Any = None
     description: Any = None
     rule_id: Any = None
@@ -16,13 +16,13 @@ class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties_Av
     state: Any = None
 
 @dataclasses.dataclass
-class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties_AvailableRuleSets_RuleGroups:
+class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_AvailableRuleSets_RuleGroups:
     description: Any = None
     rule_group_name: Any = None
     rules: Any = None
 
 @dataclasses.dataclass
-class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties_AvailableRuleSets:
+class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_AvailableRuleSets:
     rule_groups: Any = None
     rule_set_type: Any = None
     rule_set_version: Any = None
@@ -30,18 +30,18 @@ class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties_Av
     tiers: Any = None
 
 @dataclasses.dataclass
-class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties_DefaultRuleSet:
-    # The type of the web application firewall rule set.
+class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_DefaultRuleSet:
     rule_set_type: Any = None
-    # The version of the web application firewall rule set type.
     rule_set_version: Any = None
 
 @dataclasses.dataclass
-class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties:
-    # The available rulesets.
+class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties:
     available_rule_sets: Any = None
-    # the default web application firewall rule set.
     default_rule_set: Any = None
+
+@dataclasses.dataclass
+class ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class ApplicationgatewayApplicationGatewayWafDynamicManifestResultConfig:
@@ -50,8 +50,10 @@ class ApplicationgatewayApplicationGatewayWafDynamicManifestResultConfig:
 @dataclasses.dataclass
 class ApplicationgatewayApplicationGatewayWafDynamicManifestResultAttrs:
     location: Any = None
-    # Properties of ApplicationGatewayWafDynamicManifest.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The ApplicationGatewayWafDynamicManifestResult items on this page
+    value: Any = None
 
 ApplicationgatewayApplicationGatewayWafDynamicManifestResult = ubx.DataSourceBinding(
     wire_type="azure_network_applicationgateway_application_gateway_waf_dynamic_manifest_result",

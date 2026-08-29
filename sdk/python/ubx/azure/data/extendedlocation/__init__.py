@@ -4,6 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .customlocations_custom_location_list_result import CustomlocationsCustomLocationListResult, CustomlocationsCustomLocationListResultConfig
-from .customlocations_custom_location_operations_list import CustomlocationsCustomLocationOperationsList, CustomlocationsCustomLocationOperationsListConfig
-from .customlocations_enabled_resource_types_list_result import CustomlocationsEnabledResourceTypesListResult, CustomlocationsEnabledResourceTypesListResultConfig
+from .customlocations_enabled_resource_type import CustomlocationsEnabledResourceType, CustomlocationsEnabledResourceTypeConfig

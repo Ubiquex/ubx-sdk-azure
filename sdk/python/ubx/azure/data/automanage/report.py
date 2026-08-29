@@ -7,16 +7,16 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class Report_Properties_Error_AdditionalInfo:
+class Report_Value_Properties_Error_AdditionalInfo:
     info: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class Report_Properties_Error_Details_Details:
+class Report_Value_Properties_Error_Details_Details:
     pass
 
 @dataclasses.dataclass
-class Report_Properties_Error_Details:
+class Report_Value_Properties_Error_Details:
     additional_info: Any = None
     code: Any = None
     details: Any = None
@@ -24,20 +24,15 @@ class Report_Properties_Error_Details:
     target: Any = None
 
 @dataclasses.dataclass
-class Report_Properties_Error:
-    # The error additional info.
+class Report_Value_Properties_Error:
     additional_info: Any = None
-    # The error code.
     code: Any = None
-    # The error details.
     details: Any = None
-    # The error message.
     message: Any = None
-    # The error target.
     target: Any = None
 
 @dataclasses.dataclass
-class Report_Properties_Resources:
+class Report_Value_Properties_Resources:
     error: Any = None
     id: Any = None
     name: Any = None
@@ -45,64 +40,48 @@ class Report_Properties_Resources:
     type: Any = None
 
 @dataclasses.dataclass
-class Report_Properties:
-    # The configurationProfile linked to the assignment.
+class Report_Value_Properties:
     configuration_profile: Any = None
-    # Duration of the configuration profile assignment processing.
     duration: Any = None
-    # End time of the configuration profile assignment processing.
     end_time: Any = None
-    # The error detail.
     error: Any = None
-    # Last modified time of the configuration profile assignment processing.
     last_modified_time: Any = None
-    # Version of the report format
     report_format_version: Any = None
-    # List of resources processed by the configuration profile assignment.
     resources: Any = None
-    # Start time of the configuration profile assignment processing.
     start_time: Any = None
-    # The status of the configuration profile assignment.
     status: Any = None
-    # Type of the configuration profile assignment processing (Initial/Consistency).
     type: Any = None
 
 @dataclasses.dataclass
-class Report_SystemData:
-    # The timestamp of resource creation (UTC).
+class Report_Value_SystemData:
     created_at: Any = None
-    # The identity that created the resource.
     created_by: Any = None
-    # The type of identity that created the resource.
     created_by_type: Any = None
-    # The timestamp of resource last modification (UTC)
     last_modified_at: Any = None
-    # The identity that last modified the resource.
     last_modified_by: Any = None
-    # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
+
+@dataclasses.dataclass
+class Report_Value:
+    properties: Any = None
+    system_data: Any = None
 
 @dataclasses.dataclass
 class ReportConfig:
     cluster_name: Any = None
     configuration_profile_assignment_name: Any = None
-    report_name: Any = None
 
 @dataclasses.dataclass
 class ReportAttrs:
     cluster_name: Any = None
     configuration_profile_assignment_name: Any = None
-    # Data related to the report detail.
-    properties: Any = None
-    report_name: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
+    # Result of the list report operation.
+    value: Any = None
 
 Report = ubx.DataSourceBinding(
     wire_type="azure_automanage_report",
     fields={
         "cluster_name": ubx.FieldSpec(wire_name="cluster_name"),
         "configuration_profile_assignment_name": ubx.FieldSpec(wire_name="configuration_profile_assignment_name"),
-        "report_name": ubx.FieldSpec(wire_name="report_name"),
     },
 )

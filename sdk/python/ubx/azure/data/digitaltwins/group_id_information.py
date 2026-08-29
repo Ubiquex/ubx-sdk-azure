@@ -7,44 +7,39 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class GroupIdInformation_Properties:
-    # The group id.
+class GroupIdInformation_Value_Properties:
     group_id: Any = None
-    # The required members for a specific group id.
     required_members: Any = None
-    # The required DNS zones for a specific group id.
     required_zone_names: Any = None
+
+@dataclasses.dataclass
+class GroupIdInformation_Value:
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
 class GroupIdInformationConfig:
     api_version: Any = None
     resource_group_name: Any = None
-    resource_id: Any = None
     resource_name: Any = None
     subscription_id: Any = None
 
 @dataclasses.dataclass
 class GroupIdInformationAttrs:
     api_version: Any = None
-    # The resource identifier.
-    id: Any = None
-    # The resource name.
-    name: Any = None
-    # The properties for a group information object.
-    properties: Any = None
     resource_group_name: Any = None
-    resource_id: Any = None
     resource_name: Any = None
     subscription_id: Any = None
-    # The resource type.
-    type: Any = None
+    # The list of available private link resources for a Digital Twin.
+    value: Any = None
 
 GroupIdInformation = ubx.DataSourceBinding(
     wire_type="azure_digitaltwins_group_id_information",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
-        "resource_id": ubx.FieldSpec(wire_name="resource_id"),
         "resource_name": ubx.FieldSpec(wire_name="resource_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },

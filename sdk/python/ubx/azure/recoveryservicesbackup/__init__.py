@@ -4,14 +4,14 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .bms_backup_operation_result import BmsBackupOperationResult, BmsBackupOperationResultConfig
-from .bms_operation_result import BmsOperationResult, BmsOperationResultConfig
+from .bms_error_response import BmsErrorResponse, BmsErrorResponseConfig
 from .bms_operation_status import BmsOperationStatus, BmsOperationStatusConfig
 from .bms_private_endpoint_connection_resource import BmsPrivateEndpointConnectionResource, BmsPrivateEndpointConnectionResourceConfig
 from .bms_protected_item_resource import BmsProtectedItemResource, BmsProtectedItemResourceConfig
 from .bms_protection_container_resource import BmsProtectionContainerResource, BmsProtectionContainerResourceConfig
 from .bms_protection_intent_resource import BmsProtectionIntentResource, BmsProtectionIntentResourceConfig
 from .bms_protection_policy_resource import BmsProtectionPolicyResource, BmsProtectionPolicyResourceConfig
+from .bms_recovery_point_resource import BmsRecoveryPointResource, BmsRecoveryPointResourceConfig
 from .bms_resource_guard_proxy_base_resource import BmsResourceGuardProxyBaseResource, BmsResourceGuardProxyBaseResourceConfig
 from .bms_tiering_cost_info import BmsTieringCostInfo, BmsTieringCostInfoConfig
 from .bms_validate_operations_response import BmsValidateOperationsResponse, BmsValidateOperationsResponseConfig

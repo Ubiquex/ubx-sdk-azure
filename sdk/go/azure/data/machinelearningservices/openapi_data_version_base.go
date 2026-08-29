@@ -3,32 +3,36 @@ package machinelearningservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDataVersionBase_Properties struct {
-	// Enum to determine the type of data.
+type OpenapiDataVersionBase_Value_Properties struct {
 	DataType any
-	// [Required] Uri of the data. Example: https://go.microsoft.com/fwlink/?linkid=2202330
 	DataUri any
 }
 
+type OpenapiDataVersionBase_Value struct {
+	Properties any
+}
+
 type OpenapiDataVersionBaseConfig struct {
+	ListViewType any
 	Name any
-	Version any
-	WorkspaceName any
+	RegistryName any
 }
 
 type OpenapiDataVersionBaseAttrs struct {
+	ListViewType any
 	Name any
-	// Data version base definition
-	Properties any
-	Version any
-	WorkspaceName any
+	// The link to the next page of items
+	NextLink any
+	RegistryName any
+	// The DataVersionBase items on this page
+	Value any
 }
 
 var OpenapiDataVersionBase = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_data_version_base",
 	Fields: ubx.FieldMap{
+		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
 		"Name": ubx.FieldSpec{WireName: "name"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"RegistryName": ubx.FieldSpec{WireName: "registry_name"},
 	},
 }

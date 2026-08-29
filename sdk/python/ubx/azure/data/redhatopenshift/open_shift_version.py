@@ -7,23 +7,26 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenShiftVersion_Properties:
-    # Version represents the version to create the cluster at.
+class OpenShiftVersion_Value_Properties:
     version: Any = None
 
 @dataclasses.dataclass
+class OpenShiftVersion_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenShiftVersionConfig:
-    open_shift_version: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenShiftVersionAttrs:
-    open_shift_version: Any = None
-    # OpenShiftVersionProperties represents the properties of an OpenShiftVersion.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The OpenShiftVersion items on this page
+    value: Any = None
 
 OpenShiftVersion = ubx.DataSourceBinding(
     wire_type="azure_redhatopenshift_open_shift_version",
     fields={
-        "open_shift_version": ubx.FieldSpec(wire_name="open_shift_version"),
     },
 )

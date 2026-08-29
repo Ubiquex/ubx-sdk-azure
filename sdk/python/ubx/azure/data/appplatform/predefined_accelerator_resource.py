@@ -7,30 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class PredefinedAcceleratorResource_Properties:
+class PredefinedAcceleratorResource_Value_Properties:
     accelerator_tags: Any = None
     description: Any = None
     display_name: Any = None
     icon_url: Any = None
-    # Provisioning state of the predefined accelerator.
     provisioning_state: Any = None
-    # State of the predefined accelerator.
     state: Any = None
 
 @dataclasses.dataclass
-class PredefinedAcceleratorResource_Sku:
-    # Current capacity of the target resource
+class PredefinedAcceleratorResource_Value_Sku:
     capacity: Any = None
-    # Name of the Sku
     name: Any = None
-    # Tier of the Sku
     tier: Any = None
+
+@dataclasses.dataclass
+class PredefinedAcceleratorResource_Value:
+    properties: Any = None
+    sku: Any = None
 
 @dataclasses.dataclass
 class PredefinedAcceleratorResourceConfig:
     api_version: Any = None
     application_accelerator_name: Any = None
-    predefined_accelerator_name: Any = None
     resource_group_name: Any = None
     service_name: Any = None
     subscription_id: Any = None
@@ -39,21 +38,17 @@ class PredefinedAcceleratorResourceConfig:
 class PredefinedAcceleratorResourceAttrs:
     api_version: Any = None
     application_accelerator_name: Any = None
-    predefined_accelerator_name: Any = None
-    # Predefined accelerator properties payload
-    properties: Any = None
+    next_link: Any = None
     resource_group_name: Any = None
     service_name: Any = None
-    # Sku of Azure Spring Apps
-    sku: Any = None
     subscription_id: Any = None
+    value: Any = None
 
 PredefinedAcceleratorResource = ubx.DataSourceBinding(
     wire_type="azure_appplatform_predefined_accelerator_resource",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
         "application_accelerator_name": ubx.FieldSpec(wire_name="application_accelerator_name"),
-        "predefined_accelerator_name": ubx.FieldSpec(wire_name="predefined_accelerator_name"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "service_name": ubx.FieldSpec(wire_name="service_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),

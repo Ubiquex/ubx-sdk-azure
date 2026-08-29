@@ -7,33 +7,32 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ImageVersion_Properties:
-    # If the version should be excluded from being treated as the latest version.
+class ImageVersion_Value_Properties:
     exclude_from_latest: Any = None
-    # The semantic version string.
     name: Any = None
-    # The size of the OS disk image, in GB.
     os_disk_image_size_in_gb: Any = None
-    # Provisioning state of the resource.
     provisioning_state: Any = None
-    # The datetime that the backing image version was published.
     published_date: Any = None
+
+@dataclasses.dataclass
+class ImageVersion_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class ImageVersionConfig:
     dev_center_name: Any = None
     gallery_name: Any = None
     image_name: Any = None
-    version_name: Any = None
 
 @dataclasses.dataclass
 class ImageVersionAttrs:
     dev_center_name: Any = None
     gallery_name: Any = None
     image_name: Any = None
-    # Properties of an image version.
-    properties: Any = None
-    version_name: Any = None
+    # URL to get the next set of results if there are any.
+    next_link: Any = None
+    # Current page of results.
+    value: Any = None
 
 ImageVersion = ubx.DataSourceBinding(
     wire_type="azure_devcenter_image_version",
@@ -41,6 +40,5 @@ ImageVersion = ubx.DataSourceBinding(
         "dev_center_name": ubx.FieldSpec(wire_name="dev_center_name"),
         "gallery_name": ubx.FieldSpec(wire_name="gallery_name"),
         "image_name": ubx.FieldSpec(wire_name="image_name"),
-        "version_name": ubx.FieldSpec(wire_name="version_name"),
     },
 )

@@ -7,48 +7,45 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class RansomwareReport_Properties_Suspects_SuspectFiles:
+class RansomwareReport_Value_Properties_Suspects_SuspectFiles:
     file_timestamp: Any = None
     suspect_file_name: Any = None
 
 @dataclasses.dataclass
-class RansomwareReport_Properties_Suspects:
+class RansomwareReport_Value_Properties_Suspects:
     extension: Any = None
     file_count: Any = None
     resolution: Any = None
     suspect_files: Any = None
 
 @dataclasses.dataclass
-class RansomwareReport_Properties:
-    # The number of cleared suspects identified by the ARP report
+class RansomwareReport_Value_Properties:
     cleared_count: Any = None
-    # The creation date and time of the report
     event_time: Any = None
-    # Azure lifecycle management
     provisioning_state: Any = None
-    # The number of suspects identified by the ARP report
     reported_count: Any = None
-    # Severity of the Advanced Ransomware Protection (ARP) report
     severity: Any = None
-    # State of the Advanced Ransomware Protection (ARP) report
     state: Any = None
-    # Suspects identified in an ARP report
     suspects: Any = None
+
+@dataclasses.dataclass
+class RansomwareReport_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class RansomwareReportConfig:
     account_name: Any = None
     pool_name: Any = None
-    ransomware_report_name: Any = None
     volume_name: Any = None
 
 @dataclasses.dataclass
 class RansomwareReportAttrs:
     account_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     pool_name: Any = None
-    # Advanced Ransomware Protection (ARP) report properties. Evaluate the report to determine whether the activity is acceptable (false positive) or whether an attack seems malicious using the ClearSuspects operation. Advanced Ransomware Protection (ARP) creates snapshots named Anti_ransomware_backup when it detects a potential ransomware threat. You can use one of the ARP snapshots or another snapshot of your volume to restore data.
-    properties: Any = None
-    ransomware_report_name: Any = None
+    # The RansomwareReport items on this page
+    value: Any = None
     volume_name: Any = None
 
 RansomwareReport = ubx.DataSourceBinding(
@@ -56,7 +53,6 @@ RansomwareReport = ubx.DataSourceBinding(
     fields={
         "account_name": ubx.FieldSpec(wire_name="account_name"),
         "pool_name": ubx.FieldSpec(wire_name="pool_name"),
-        "ransomware_report_name": ubx.FieldSpec(wire_name="ransomware_report_name"),
         "volume_name": ubx.FieldSpec(wire_name="volume_name"),
     },
 )

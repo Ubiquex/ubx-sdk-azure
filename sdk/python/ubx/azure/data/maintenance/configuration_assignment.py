@@ -7,58 +7,45 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ConfigurationAssignment_Properties_Filter_TagSettings:
-    # Filter VMs by Any or All specified tags.
+class ConfigurationAssignment_Value_Properties_Filter_TagSettings:
     filter_operator: Any = None
-    # Dictionary of tags with its list of values.
     tags: Any = None
 
 @dataclasses.dataclass
-class ConfigurationAssignment_Properties_Filter:
-    # List of locations to scope the query to.
+class ConfigurationAssignment_Value_Properties_Filter:
     locations: Any = None
-    # List of allowed operating systems.
     os_types: Any = None
-    # List of allowed resource groups.
     resource_groups: Any = None
-    # List of allowed resources.
     resource_types: Any = None
-    # Tag filter information for the VM.
     tag_settings: Any = None
 
 @dataclasses.dataclass
-class ConfigurationAssignment_Properties:
-    # Azure query for the update configuration.
+class ConfigurationAssignment_Value_Properties:
     filter: Any = None
-    # The maintenance configuration Id
     maintenance_configuration_id: Any = None
-    # The unique resourceId
     resource_id: Any = None
+
+@dataclasses.dataclass
+class ConfigurationAssignment_Value:
+    location: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class ConfigurationAssignmentConfig:
     api_version: Any = None
-    configuration_assignment_name: Any = None
-    resource_group_name: Any = None
     subscription_id: Any = None
 
 @dataclasses.dataclass
 class ConfigurationAssignmentAttrs:
     api_version: Any = None
-    configuration_assignment_name: Any = None
-    # Location of the resource
-    location: Any = None
-    # Properties for configuration assignment
-    properties: Any = None
-    resource_group_name: Any = None
     subscription_id: Any = None
+    # The list of configuration Assignments
+    value: Any = None
 
 ConfigurationAssignment = ubx.DataSourceBinding(
     wire_type="azure_maintenance_configuration_assignment",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
-        "configuration_assignment_name": ubx.FieldSpec(wire_name="configuration_assignment_name"),
-        "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },
 )

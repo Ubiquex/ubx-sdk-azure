@@ -7,51 +7,39 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class RoleassignmentscallsRoleAssignment_Properties:
-    # The conditions on the role assignment. This limits the resources it can be assigned to. e.g.: @Resource[Microsoft.Storage/storageAccounts/blobServices/containers:ContainerName] StringEqualsIgnoreCase 'foo_storage_container'
+class RoleassignmentscallsRoleAssignment_Value_Properties:
     condition: Any = None
-    # Version of the condition. Currently the only accepted value is '2.0'
     condition_version: Any = None
-    # Id of the user who created the assignment
     created_by: Any = None
-    # Time it was created
     created_on: Any = None
-    # Id of the delegated managed identity resource
     delegated_managed_identity_resource_id: Any = None
-    # Description of role assignment
     description: Any = None
-    # The principal ID.
     principal_id: Any = None
-    # The principal type of the assigned principal ID.
     principal_type: Any = None
-    # The role definition ID.
     role_definition_id: Any = None
-    # The role assignment scope.
     scope: Any = None
-    # Id of the user who updated the assignment
     updated_by: Any = None
-    # Time it was updated
     updated_on: Any = None
 
 @dataclasses.dataclass
+class RoleassignmentscallsRoleAssignment_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class RoleassignmentscallsRoleAssignmentConfig:
-    role_assignment_name: Any = None
-    scope: Any = None
     tenant_id: Any = None
 
 @dataclasses.dataclass
 class RoleassignmentscallsRoleAssignmentAttrs:
-    # Role assignment properties.
-    properties: Any = None
-    role_assignment_name: Any = None
-    scope: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     tenant_id: Any = None
+    # The RoleAssignment items on this page
+    value: Any = None
 
 RoleassignmentscallsRoleAssignment = ubx.DataSourceBinding(
     wire_type="azure_authorization_roleassignmentscalls_role_assignment",
     fields={
-        "role_assignment_name": ubx.FieldSpec(wire_name="role_assignment_name"),
-        "scope": ubx.FieldSpec(wire_name="scope"),
         "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
     },
 )

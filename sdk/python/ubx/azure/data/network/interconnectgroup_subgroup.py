@@ -7,37 +7,35 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class InterconnectgroupSubgroup_Properties_InterconnectBlock:
-    # Resource ID.
+class InterconnectgroupSubgroup_Value_Properties_InterconnectBlock:
     id: Any = None
 
 @dataclasses.dataclass
-class InterconnectgroupSubgroup_Properties:
-    # Reference to another subresource.
+class InterconnectgroupSubgroup_Value_Properties:
     interconnect_block: Any = None
-    # The unique identifier of the subgroup.
     internal_subgroup_id: Any = None
-    # Provisioning states of a resource.
     provisioning_state: Any = None
-    # A list of virtual machine references.
     virtual_machines: Any = None
+
+@dataclasses.dataclass
+class InterconnectgroupSubgroup_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class InterconnectgroupSubgroupConfig:
     interconnect_group_name: Any = None
-    subgroup_name: Any = None
 
 @dataclasses.dataclass
 class InterconnectgroupSubgroupAttrs:
     interconnect_group_name: Any = None
-    # Properties of subgroup.
-    properties: Any = None
-    subgroup_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Subgroup items on this page
+    value: Any = None
 
 InterconnectgroupSubgroup = ubx.DataSourceBinding(
     wire_type="azure_network_interconnectgroup_subgroup",
     fields={
         "interconnect_group_name": ubx.FieldSpec(wire_name="interconnect_group_name"),
-        "subgroup_name": ubx.FieldSpec(wire_name="subgroup_name"),
     },
 )

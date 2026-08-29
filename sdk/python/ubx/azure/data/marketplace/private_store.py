@@ -7,52 +7,47 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class PrivateStore_Properties_NotificationsSettings_Recipients:
+class PrivateStore_Value_Properties_NotificationsSettings_Recipients:
     display_name: Any = None
     email_address: Any = None
     principal_id: Any = None
 
 @dataclasses.dataclass
-class PrivateStore_Properties_NotificationsSettings:
-    # Gets or sets list of notified recipients for new requests
+class PrivateStore_Value_Properties_NotificationsSettings:
     recipients: Any = None
-    # Gets or sets whether to send email to all marketplace admins for new requests
     send_to_all_marketplace_admins: Any = None
 
 @dataclasses.dataclass
-class PrivateStore_Properties:
-    # Indicates private store availability
+class PrivateStore_Value_Properties:
     availability: Any = None
-    # Gets or sets list of branding characteristics
     branding: Any = None
-    # Gets list of associated collection ids
     collection_ids: Any = None
-    # Identifier for purposes of race condition
     e_tag: Any = None
-    # Is government
     is_gov: Any = None
-    # Describes the json payload for notifications settings
     notifications_settings: Any = None
-    # Private Store id
     private_store_id: Any = None
-    # Private Store Name
     private_store_name: Any = None
-    # Tenant id
     tenant_id: Any = None
 
 @dataclasses.dataclass
+class PrivateStore_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class PrivateStoreConfig:
-    private_store_id: Any = None
+    use_cache: Any = None
 
 @dataclasses.dataclass
 class PrivateStoreAttrs:
-    private_store_id: Any = None
-    # Describes the json payload on whether or not the private store is enabled for a given tenant
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    use_cache: Any = None
+    # The PrivateStore items on this page
+    value: Any = None
 
 PrivateStore = ubx.DataSourceBinding(
     wire_type="azure_marketplace_private_store",
     fields={
-        "private_store_id": ubx.FieldSpec(wire_name="private_store_id"),
+        "use_cache": ubx.FieldSpec(wire_name="use_cache"),
     },
 )

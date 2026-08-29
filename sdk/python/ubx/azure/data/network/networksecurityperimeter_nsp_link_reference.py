@@ -7,44 +7,37 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class NetworksecurityperimeterNspLinkReference_Properties:
-    # A message sent by the remote NSP link admin for connection request. In case of Auto-approved flow, it is default to 'Auto Approved'.
+class NetworksecurityperimeterNspLinkReference_Value_Properties:
     description: Any = None
-    # Local Inbound profile names to which Inbound is allowed. Use ['*'] to allow inbound to all profiles.
     local_inbound_profiles: Any = None
-    # Local Outbound profile names from which Outbound is allowed. In current version, it is readonly property and it's value is set to ['*'] to allow outbound from all profiles. In later version, user will be able to modify it.
     local_outbound_profiles: Any = None
-    # The current provisioning state of NSP Link/LinkReference.
     provisioning_state: Any = None
-    # Remote Inbound profile names to which Inbound is allowed. ['*'] value implies inbound is allowed to all profiles at remote perimeter. This property can only be updated from corresponding link resource present in remote perimeter.
     remote_inbound_profiles: Any = None
-    # Remote Outbound profile names from which Outbound is allowed. ['*'] value implies outbound is allowed from all profiles at remote perimeter. This property can only be updated from corresponding link resource present in remote perimeter.
     remote_outbound_profiles: Any = None
-    # Remote NSP Guid with which the link is created.
     remote_perimeter_guid: Any = None
-    # Remote NSP location with which the link gets created.
     remote_perimeter_location: Any = None
-    # Perimeter ARM Id for the remote NSP with which the link is created.
     remote_perimeter_resource_id: Any = None
-    # The NSP link state.
     status: Any = None
 
 @dataclasses.dataclass
+class NetworksecurityperimeterNspLinkReference_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class NetworksecurityperimeterNspLinkReferenceConfig:
-    link_reference_name: Any = None
     network_security_perimeter_name: Any = None
 
 @dataclasses.dataclass
 class NetworksecurityperimeterNspLinkReferenceAttrs:
-    link_reference_name: Any = None
     network_security_perimeter_name: Any = None
-    # Properties of NSP LinkReference resource.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The NspLinkReference items on this page
+    value: Any = None
 
 NetworksecurityperimeterNspLinkReference = ubx.DataSourceBinding(
     wire_type="azure_network_networksecurityperimeter_nsp_link_reference",
     fields={
-        "link_reference_name": ubx.FieldSpec(wire_name="link_reference_name"),
         "network_security_perimeter_name": ubx.FieldSpec(wire_name="network_security_perimeter_name"),
     },
 )

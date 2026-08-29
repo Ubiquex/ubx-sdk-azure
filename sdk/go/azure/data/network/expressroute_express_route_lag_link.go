@@ -3,18 +3,14 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ExpressrouteExpressRouteLagLink_Properties_MacSecConfig struct {
-	// Keyvault Secret Identifier URL containing Mac security CAK key.
+type ExpressrouteExpressRouteLagLink_Value_Properties_MacSecConfig struct {
 	CakSecretIdentifier any
-	// Mac security cipher.
 	Cipher any
-	// Keyvault Secret Identifier URL containing Mac security CKN key.
 	CknSecretIdentifier any
-	// Sci mode enabled/disabled.
 	SciState any
 }
 
-type ExpressrouteExpressRouteLagLink_Properties_Members_Properties struct {
+type ExpressrouteExpressRouteLagLink_Value_Properties_Members_Properties struct {
 	AdminState any
 	ColoLocation any
 	ConnectorType any
@@ -24,7 +20,7 @@ type ExpressrouteExpressRouteLagLink_Properties_Members_Properties struct {
 	RackId any
 }
 
-type ExpressrouteExpressRouteLagLink_Properties_Members struct {
+type ExpressrouteExpressRouteLagLink_Value_Properties_Members struct {
 	Etag any
 	Id any
 	Name any
@@ -32,45 +28,38 @@ type ExpressrouteExpressRouteLagLink_Properties_Members struct {
 	Type any
 }
 
-type ExpressrouteExpressRouteLagLink_Properties struct {
-	// Administrative state of the physical port.
+type ExpressrouteExpressRouteLagLink_Value_Properties struct {
 	AdminState any
-	// Name of Azure router interface.
 	InterfaceName any
-	// ExpressRouteLink Mac Security Configuration.
 	MacSecConfig any
-	// The set of members of the ExpressRouteLagLink resource.
 	Members any
-	// Provisioning states of a resource.
 	ProvisioningState any
-	// Name of Azure router associated with link.
 	RouterName any
+}
+
+type ExpressrouteExpressRouteLagLink_Value struct {
+	Etag any
+	Id any
+	Name any
+	Properties any
+	Type any
 }
 
 type ExpressrouteExpressRouteLagLinkConfig struct {
 	ExpressRouteLagName any
-	LinkName any
 }
 
 type ExpressrouteExpressRouteLagLinkAttrs struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	ExpressRouteLagName any
-	// The unique identifier of the resource.
-	Id any
-	LinkName any
-	// Name of child link resource that is unique among child link resources of the parent.
-	Name any
-	// Properties specific to ExpressRouteLagLink resources.
-	Properties any
-	// The type of the resource.
-	Type any
+	// The link to the next page of items
+	NextLink any
+	// The ExpressRouteLagLink items on this page
+	Value any
 }
 
 var ExpressrouteExpressRouteLagLink = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_lag_link",
 	Fields: ubx.FieldMap{
 		"ExpressRouteLagName": ubx.FieldSpec{WireName: "express_route_lag_name"},
-		"LinkName": ubx.FieldSpec{WireName: "link_name"},
 	},
 }

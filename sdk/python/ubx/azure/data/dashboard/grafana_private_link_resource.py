@@ -7,31 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class GrafanaPrivateLinkResource_Properties:
-    # The private link resource group id.
+class GrafanaPrivateLinkResource_Value_Properties:
     group_id: Any = None
     provisioning_state: Any = None
-    # The private link resource required member names.
     required_members: Any = None
-    # The private link resource Private link DNS zone name.
     required_zone_names: Any = None
 
 @dataclasses.dataclass
+class GrafanaPrivateLinkResource_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class GrafanaPrivateLinkResourceConfig:
-    private_link_resource_name: Any = None
     workspace_name: Any = None
 
 @dataclasses.dataclass
 class GrafanaPrivateLinkResourceAttrs:
-    private_link_resource_name: Any = None
-    # Properties of a private link resource.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The PrivateLinkResource items on this page
+    value: Any = None
     workspace_name: Any = None
 
 GrafanaPrivateLinkResource = ubx.DataSourceBinding(
     wire_type="azure_dashboard_grafana_private_link_resource",
     fields={
-        "private_link_resource_name": ubx.FieldSpec(wire_name="private_link_resource_name"),
         "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
     },
 )

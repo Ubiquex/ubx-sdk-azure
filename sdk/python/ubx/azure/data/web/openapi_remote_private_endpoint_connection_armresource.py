@@ -7,46 +7,42 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpoint:
+class OpenapiRemotePrivateEndpointConnectionArmresource_Value_Properties_PrivateEndpoint:
     id: Any = None
 
 @dataclasses.dataclass
-class OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateLinkServiceConnectionState:
-    # ActionsRequired for a private link connection
+class OpenapiRemotePrivateEndpointConnectionArmresource_Value_Properties_PrivateLinkServiceConnectionState:
     actions_required: Any = None
-    # Description of a private link connection
     description: Any = None
-    # Status of a private link connection
     status: Any = None
 
 @dataclasses.dataclass
-class OpenapiRemotePrivateEndpointConnectionArmresource_Properties:
-    # Private IPAddresses mapped to the remote private endpoint
+class OpenapiRemotePrivateEndpointConnectionArmresource_Value_Properties:
     ip_addresses: Any = None
-    # A wrapper for an ARM resource id
     private_endpoint: Any = None
-    # The state of a private link connection
     private_link_service_connection_state: Any = None
     provisioning_state: Any = None
 
 @dataclasses.dataclass
+class OpenapiRemotePrivateEndpointConnectionArmresource_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiRemotePrivateEndpointConnectionArmresourceConfig:
     name: Any = None
-    private_endpoint_connection_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiRemotePrivateEndpointConnectionArmresourceAttrs:
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
-    private_endpoint_connection_name: Any = None
-    # RemotePrivateEndpointConnectionARMResource resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The RemotePrivateEndpointConnectionARMResource items on this page
+    value: Any = None
 
 OpenapiRemotePrivateEndpointConnectionArmresource = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_remote_private_endpoint_connection_armresource",
     fields={
         "name": ubx.FieldSpec(wire_name="name"),
-        "private_endpoint_connection_name": ubx.FieldSpec(wire_name="private_endpoint_connection_name"),
     },
 )

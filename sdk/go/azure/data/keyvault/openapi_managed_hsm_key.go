@@ -3,98 +3,78 @@ package keyvault
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiManagedHsmKey_Properties_Attributes struct {
-	// Creation time in seconds since 1970-01-01T00:00:00Z.
+type OpenapiManagedHsmKey_Value_Properties_Attributes struct {
 	Created any
-	// Determines whether or not the object is enabled.
 	Enabled any
-	// Expiry date in seconds since 1970-01-01T00:00:00Z.
 	Exp any
-	// Indicates if the private key can be exported.
 	Exportable any
-	// Not before date in seconds since 1970-01-01T00:00:00Z.
 	Nbf any
-	// The deletion recovery level currently in effect for the object. If it contains 'Purgeable', then the object can be permanently deleted by a privileged user; otherwise, only the system can purge the object at the end of the retention interval.
 	RecoveryLevel any
-	// Last updated time in seconds since 1970-01-01T00:00:00Z.
 	Updated any
 }
 
-type OpenapiManagedHsmKey_Properties_ReleasePolicy struct {
-	// Content type and version of key release policy
+type OpenapiManagedHsmKey_Value_Properties_ReleasePolicy struct {
 	ContentType any
-	// Blob encoding the policy rules under which the key can be released.
 	Data any
 }
 
-type OpenapiManagedHsmKey_Properties_RotationPolicy_Attributes struct {
-	// Creation time in seconds since 1970-01-01T00:00:00Z.
+type OpenapiManagedHsmKey_Value_Properties_RotationPolicy_Attributes struct {
 	Created any
-	// The expiration time for the new key version. It should be in ISO8601 format. Eg: 'P90D', 'P1Y'.
 	ExpiryTime any
-	// Last updated time in seconds since 1970-01-01T00:00:00Z.
 	Updated any
 }
 
-type OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_Action struct {
+type OpenapiManagedHsmKey_Value_Properties_RotationPolicy_LifetimeActions_Action struct {
 	Type any
 }
 
-type OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_Trigger struct {
+type OpenapiManagedHsmKey_Value_Properties_RotationPolicy_LifetimeActions_Trigger struct {
 	TimeAfterCreate any
 	TimeBeforeExpiry any
 }
 
-type OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions struct {
+type OpenapiManagedHsmKey_Value_Properties_RotationPolicy_LifetimeActions struct {
 	Action any
 	Trigger any
 }
 
-type OpenapiManagedHsmKey_Properties_RotationPolicy struct {
+type OpenapiManagedHsmKey_Value_Properties_RotationPolicy struct {
 	Attributes any
-	// The lifetimeActions for key rotation action.
 	LifetimeActions any
 }
 
-type OpenapiManagedHsmKey_Properties struct {
-	// The object attributes managed by the Azure Key Vault service.
+type OpenapiManagedHsmKey_Value_Properties struct {
 	Attributes any
-	// The elliptic curve name. For valid values, see JsonWebKeyCurveName. Default for EC and EC-HSM keys is P-256
 	CurveName any
 	KeyOps any
-	// The key size in bits. For example: 2048, 3072, or 4096 for RSA. Default for RSA and RSA-HSM keys is 2048. Exception made for bring your own key (BYOK), key exchange keys default to 4096.
 	KeySize any
-	// The URI to retrieve the current version of the key.
 	KeyUri any
-	// The URI to retrieve the specific version of the key.
 	KeyUriWithVersion any
-	// The type of the key. For valid values, see JsonWebKeyType.
 	Kty any
 	ReleasePolicy any
 	RotationPolicy any
 }
 
+type OpenapiManagedHsmKey_Value struct {
+	Properties any
+	Tags any
+}
+
 type OpenapiManagedHsmKeyConfig struct {
-	KeyName any
-	KeyVersion any
 	Name any
 }
 
 type OpenapiManagedHsmKeyAttrs struct {
-	KeyName any
-	KeyVersion any
 	Name any
-	// The properties of the key.
-	Properties any
-	// Resource tags
-	Tags any
+	// The link to the next page of items
+	NextLink any
+	// The ManagedHsmKey items on this page
+	Value any
 }
 
 var OpenapiManagedHsmKey = ubx.DataSourceBinding{
 	WireType: "azure_keyvault_openapi_managed_hsm_key",
 	Fields: ubx.FieldMap{
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

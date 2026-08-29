@@ -3,42 +3,84 @@ package vi
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type Account_Value_Properties_PrivateEndpoint struct {
+type Account_Value_Identity_UserAssignedIdentities struct {
+	ClientId any
+	PrincipalId any
+}
+
+type Account_Value_Identity struct {
+	PrincipalId any
+	TenantId any
+	Type any
+	UserAssignedIdentities any
+}
+
+type Account_Value_Properties_OpenAiServices struct {
+	ResourceId any
+	UserAssignedIdentity any
+}
+
+type Account_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
 	Id any
 }
 
-type Account_Value_Properties_PrivateLinkServiceConnectionState struct {
+type Account_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
 	Description any
 	Status any
 }
 
-type Account_Value_Properties struct {
+type Account_Value_Properties_PrivateEndpointConnections_Properties struct {
 	GroupIds any
 	PrivateEndpoint any
 	PrivateLinkServiceConnectionState any
 	ProvisioningState any
 }
 
-type Account_Value struct {
+type Account_Value_Properties_PrivateEndpointConnections struct {
 	Properties any
 }
 
-type AccountConfig struct {
+type Account_Value_Properties struct {
+	AccountId any
 	AccountName any
+	OpenAiServices any
+	PrivateEndpointConnections any
+	ProvisioningState any
+	PublicNetworkAccess any
+	StorageServices any
+	TenantId any
+	TotalMinutesIndexed any
+	TotalSecondsIndexed any
+}
+
+type Account_Value_SystemData struct {
+	CreatedAt any
+	CreatedBy any
+	CreatedByType any
+	LastModifiedAt any
+	LastModifiedBy any
+	LastModifiedByType any
+}
+
+type Account_Value struct {
+	Identity any
+	Properties any
+	SystemData any
+}
+
+type AccountConfig struct {
 }
 
 type AccountAttrs struct {
-	AccountName any
-	// URL to get the next set of operation list results (if there are any).
+	// URL to get the next set of operation list results if there are any.
 	NextLink any
-	// Array of private endpoint connections.
+	// List of accounts and their properties.
 	Value any
 }
 
 var Account = ubx.DataSourceBinding{
 	WireType: "azure_vi_account",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
 	},
 }

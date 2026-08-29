@@ -3,17 +3,95 @@ package operationalinsights
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type OpenapiWorkspace_Value_Identity_UserAssignedIdentities struct {
+	ClientId any
+	PrincipalId any
+}
+
+type OpenapiWorkspace_Value_Identity struct {
+	PrincipalId any
+	TenantId any
+	Type any
+	UserAssignedIdentities any
+}
+
+type OpenapiWorkspace_Value_Properties_Failover struct {
+	LastModifiedDate any
+	State any
+}
+
+type OpenapiWorkspace_Value_Properties_Features struct {
+	Associations any
+	ClusterResourceId any
+	DataAuthorizationMode any
+	DisableLocalAuth any
+	EnableDataExport any
+	EnableLogAccessUsingOnlyResourcePermissions any
+	ImmediatePurgeDataOn30Days any
+	UnifiedSentinelBillingOnly any
+}
+
+type OpenapiWorkspace_Value_Properties_PrivateLinkScopedResources struct {
+	ResourceId any
+	ScopeId any
+}
+
+type OpenapiWorkspace_Value_Properties_Replication struct {
+	CreatedDate any
+	Enabled any
+	LastModifiedDate any
+	Location any
+	ProvisioningState any
+}
+
+type OpenapiWorkspace_Value_Properties_Sku struct {
+	CapacityReservationLevel any
+	LastSkuUpdate any
+	Name any
+}
+
+type OpenapiWorkspace_Value_Properties_WorkspaceCapping struct {
+	DailyQuotaGb any
+	DataIngestionStatus any
+	QuotaNextResetTime any
+}
+
+type OpenapiWorkspace_Value_Properties struct {
+	CreatedDate any
+	CustomerId any
+	DefaultDataCollectionRuleResourceId any
+	Failover any
+	Features any
+	ForceCmkForQuery any
+	ModifiedDate any
+	PrivateLinkScopedResources any
+	ProvisioningState any
+	PublicNetworkAccessForIngestion any
+	PublicNetworkAccessForQuery any
+	Replication any
+	RetentionInDays any
+	Sku any
+	WorkspaceCapping any
+}
+
+type OpenapiWorkspace_Value struct {
+	Etag any
+	Identity any
+	Properties any
+}
+
 type OpenapiWorkspaceConfig struct {
-	WorkspaceName any
 }
 
 type OpenapiWorkspaceAttrs struct {
-	WorkspaceName any
+	// The URL to get the next set of results.
+	NextLink any
+	// A list of workspaces.
+	Value any
 }
 
 var OpenapiWorkspace = ubx.DataSourceBinding{
 	WireType: "azure_operationalinsights_openapi_workspace",
 	Fields: ubx.FieldMap{
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

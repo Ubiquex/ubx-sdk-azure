@@ -3,47 +3,39 @@ package postgresql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiConfiguration_Properties struct {
-	// Allowed values of the configuration (also known as server parameter).
+type OpenapiConfiguration_Value_Properties struct {
 	AllowedValues any
-	// Data type of the configuration (also known as server parameter).
 	DataType any
-	// Value assigned by default to the configuration (also known as server parameter).
 	DefaultValue any
-	// Description of the configuration (also known as server parameter).
 	Description any
-	// Link pointing to the documentation of the configuration (also known as server parameter).
 	DocumentationLink any
-	// Indicates if the value assigned to the configuration (also known as server parameter) is pending a server restart for it to take effect.
 	IsConfigPendingRestart any
-	// Indicates if it's a dynamic (true) or static (false) configuration (also known as server parameter). Static server parameters require a server restart after changing the value assigned to them, for the change to take effect. Dynamic server parameters do not require a server restart after changing the value assigned to them, for the change to take effect.
 	IsDynamicConfig any
-	// Indicates if it's a read-only (true) or modifiable (false) configuration (also known as server parameter).
 	IsReadOnly any
-	// Source of the value assigned to the configuration (also known as server parameter). Required to update the value assigned to a specific modifiable configuration.
 	Source any
-	// Units in which the configuration (also known as server parameter) value is expressed.
 	Unit any
-	// Value of the configuration (also known as server parameter). Required to update the value assigned to a specific modifiable configuration.
 	Value any
 }
 
+type OpenapiConfiguration_Value struct {
+	Properties any
+}
+
 type OpenapiConfigurationConfig struct {
-	ConfigurationName any
 	ServerName any
 }
 
 type OpenapiConfigurationAttrs struct {
-	ConfigurationName any
-	// Properties of a configuration (also known as server parameter).
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ServerName any
+	// The Configuration items on this page
+	Value any
 }
 
 var OpenapiConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_configuration",
 	Fields: ubx.FieldMap{
-		"ConfigurationName": ubx.FieldSpec{WireName: "configuration_name"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
 	},
 }

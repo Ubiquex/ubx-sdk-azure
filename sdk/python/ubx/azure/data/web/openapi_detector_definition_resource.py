@@ -7,36 +7,34 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDetectorDefinitionResource_Properties:
-    # Description of the detector
+class OpenapiDetectorDefinitionResource_Value_Properties:
     description: Any = None
-    # Display name of the detector
     display_name: Any = None
-    # Flag representing whether detector is enabled or not.
     is_enabled: Any = None
-    # Detector Rank
     rank: Any = None
 
 @dataclasses.dataclass
+class OpenapiDetectorDefinitionResource_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiDetectorDefinitionResourceConfig:
-    detector_name: Any = None
     diagnostic_category: Any = None
     site_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiDetectorDefinitionResourceAttrs:
-    detector_name: Any = None
     diagnostic_category: Any = None
-    # Kind of resource.
-    kind: Any = None
-    # Class representing detector definition
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     site_name: Any = None
+    # The DetectorDefinitionResource items on this page
+    value: Any = None
 
 OpenapiDetectorDefinitionResource = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_detector_definition_resource",
     fields={
-        "detector_name": ubx.FieldSpec(wire_name="detector_name"),
         "diagnostic_category": ubx.FieldSpec(wire_name="diagnostic_category"),
         "site_name": ubx.FieldSpec(wire_name="site_name"),
     },

@@ -7,60 +7,47 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class LocksManagementLockObject_Properties_Owners:
+class LocksManagementLockObject_Value_Properties_Owners:
     application_id: Any = None
 
 @dataclasses.dataclass
-class LocksManagementLockObject_Properties:
-    # The level of the lock. Possible values are: NotSpecified, CanNotDelete, ReadOnly. CanNotDelete means authorized users are able to read and modify the resources, but not delete. ReadOnly means authorized users can only read from a resource, but they can't modify or delete it.
+class LocksManagementLockObject_Value_Properties:
     level: Any = None
-    # Notes about the lock. Maximum of 512 characters.
     notes: Any = None
-    # The owners of the lock.
     owners: Any = None
 
 @dataclasses.dataclass
-class LocksManagementLockObject_SystemData:
-    # The timestamp of resource creation (UTC).
+class LocksManagementLockObject_Value_SystemData:
     created_at: Any = None
-    # The identity that created the resource.
     created_by: Any = None
-    # The type of identity that created the resource.
     created_by_type: Any = None
-    # The timestamp of resource last modification (UTC)
     last_modified_at: Any = None
-    # The identity that last modified the resource.
     last_modified_by: Any = None
-    # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
 
 @dataclasses.dataclass
+class LocksManagementLockObject_Value:
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    system_data: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
 class LocksManagementLockObjectConfig:
-    lock_name: Any = None
-    resource_group_name: Any = None
     subscription_id: Any = None
 
 @dataclasses.dataclass
 class LocksManagementLockObjectAttrs:
-    # The resource ID of the lock.
-    id: Any = None
-    lock_name: Any = None
-    # The name of the lock.
-    name: Any = None
-    # The lock properties.
-    properties: Any = None
-    resource_group_name: Any = None
+    # The URL to use for getting the next set of results.
+    next_link: Any = None
     subscription_id: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    # The resource type of the lock - Microsoft.Authorization/locks.
-    type: Any = None
+    # The list of locks.
+    value: Any = None
 
 LocksManagementLockObject = ubx.DataSourceBinding(
     wire_type="azure_resources_locks_management_lock_object",
     fields={
-        "lock_name": ubx.FieldSpec(wire_name="lock_name"),
-        "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },
 )

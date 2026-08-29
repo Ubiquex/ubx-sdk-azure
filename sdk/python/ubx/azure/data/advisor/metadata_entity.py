@@ -7,41 +7,39 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class MetadataEntity_Properties_SupportedValues:
+class MetadataEntity_Value_Properties_SupportedValues:
     display_name: Any = None
     id: Any = None
 
 @dataclasses.dataclass
-class MetadataEntity_Properties:
-    # The list of scenarios applicable to this metadata entity.
+class MetadataEntity_Value_Properties:
     applicable_scenarios: Any = None
-    # The list of keys on which this entity depends on.
     depends_on: Any = None
-    # The display name.
     display_name: Any = None
-    # The list of supported values.
     supported_values: Any = None
+
+@dataclasses.dataclass
+class MetadataEntity_Value:
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
 class MetadataEntityConfig:
     api_version: Any = None
-    name: Any = None
 
 @dataclasses.dataclass
 class MetadataEntityAttrs:
     api_version: Any = None
-    # The resource Id of the metadata entity.
-    id: Any = None
-    name: Any = None
-    # The metadata entity properties
-    properties: Any = None
-    # The type of the metadata entity.
-    type: Any = None
+    # The link used to get the next page of metadata.
+    next_link: Any = None
+    # The list of metadata entities.
+    value: Any = None
 
 MetadataEntity = ubx.DataSourceBinding(
     wire_type="azure_advisor_metadata_entity",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
-        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

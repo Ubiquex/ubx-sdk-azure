@@ -3,51 +3,62 @@ package machinelearningservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiModelVersion_Properties_Datasets struct {
+type OpenapiModelVersion_Value_Properties_Datasets struct {
 	Id any
 	Name any
 }
 
-type OpenapiModelVersion_Properties_Flavors struct {
+type OpenapiModelVersion_Value_Properties_Flavors struct {
 	Data any
 }
 
-type OpenapiModelVersion_Properties struct {
-	// Array of dataset references
+type OpenapiModelVersion_Value_Properties struct {
 	Datasets any
-	// Mapping of model flavors to their properties.
 	Flavors any
-	// Name of the training job which produced this model
 	JobName any
-	// The storage format for this entity. Used for NCD.
 	ModelType any
-	// The URI path to the model contents.
 	ModelUri any
-	// Provisioning state of registry asset.
 	ProvisioningState any
-	// Stage in the model lifecycle assigned to this model
 	Stage any
 }
 
+type OpenapiModelVersion_Value struct {
+	Properties any
+}
+
 type OpenapiModelVersionConfig struct {
-	Name any
+	Description any
+	ListViewType any
+	ModelName any
+	Properties any
+	RegistryName any
+	Tags any
 	Version any
-	WorkspaceName any
 }
 
 type OpenapiModelVersionAttrs struct {
-	Name any
-	// Model asset version details.
+	Description any
+	ListViewType any
+	ModelName any
+	// The link to the next page of items
+	NextLink any
 	Properties any
+	RegistryName any
+	Tags any
+	// The ModelVersion items on this page
+	Value any
 	Version any
-	WorkspaceName any
 }
 
 var OpenapiModelVersion = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_model_version",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
+		"ModelName": ubx.FieldSpec{WireName: "model_name"},
+		"Properties": ubx.FieldSpec{WireName: "properties"},
+		"RegistryName": ubx.FieldSpec{WireName: "registry_name"},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Version": ubx.FieldSpec{WireName: "version"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

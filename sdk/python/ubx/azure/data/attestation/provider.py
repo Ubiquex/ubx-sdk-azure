@@ -7,39 +7,52 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+class Provider_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
+class Provider_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
     id: Any = None
 
 @dataclasses.dataclass
-class Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+class Provider_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
     actions_required: Any = None
     description: Any = None
     status: Any = None
 
 @dataclasses.dataclass
-class Provider_Properties_PrivateEndpointConnections_Properties:
+class Provider_Value_Properties_PrivateEndpointConnections_Properties:
     private_endpoint: Any = None
     private_link_service_connection_state: Any = None
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class Provider_Properties_PrivateEndpointConnections:
+class Provider_Value_Properties_PrivateEndpointConnections:
     properties: Any = None
 
 @dataclasses.dataclass
-class Provider_Properties:
-    # Gets the uri of attestation service
+class Provider_Value_Properties:
     attest_uri: Any = None
-    # List of private endpoint connections associated with the attestation provider.
     private_endpoint_connections: Any = None
-    # Controls whether traffic from the public network is allowed to access the Attestation Provider APIs.
     public_network_access: Any = None
-    # Status of attestation service.
     status: Any = None
-    # The setting that controls whether authentication is enabled or disabled for TPM Attestation REST APIs.
     tpm_attestation_authentication: Any = None
-    # Trust model for the attestation provider.
     trust_model: Any = None
+
+@dataclasses.dataclass
+class Provider_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class ProviderConfig:
@@ -47,8 +60,10 @@ class ProviderConfig:
 
 @dataclasses.dataclass
 class ProviderAttrs:
-    # Status of attestation service.
-    properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Attestation Provider array.
+    value: Any = None
 
 Provider = ubx.DataSourceBinding(
     wire_type="azure_attestation_provider",

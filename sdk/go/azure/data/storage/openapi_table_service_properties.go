@@ -3,7 +3,7 @@ package storage
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiTableServiceProperties_Properties_Cors_CorsRules struct {
+type OpenapiTableServiceProperties_Value_Properties_Cors_CorsRules struct {
 	AllowedHeaders any
 	AllowedMethods any
 	AllowedOrigins any
@@ -11,14 +11,16 @@ type OpenapiTableServiceProperties_Properties_Cors_CorsRules struct {
 	MaxAgeInSeconds any
 }
 
-type OpenapiTableServiceProperties_Properties_Cors struct {
-	// The List of CORS rules. You can include up to five CorsRule elements in the request.
+type OpenapiTableServiceProperties_Value_Properties_Cors struct {
 	CorsRules any
 }
 
-type OpenapiTableServiceProperties_Properties struct {
-	// Sets the CORS rules. You can include up to five CorsRule elements in the request.
+type OpenapiTableServiceProperties_Value_Properties struct {
 	Cors any
+}
+
+type OpenapiTableServiceProperties_Value struct {
+	Properties any
 }
 
 type OpenapiTableServicePropertiesConfig struct {
@@ -27,8 +29,8 @@ type OpenapiTableServicePropertiesConfig struct {
 
 type OpenapiTableServicePropertiesAttrs struct {
 	AccountName any
-	// The properties of a storage account’s Table service.
-	Properties any
+	// List of table services returned.
+	Value any
 }
 
 var OpenapiTableServiceProperties = ubx.DataSourceBinding{

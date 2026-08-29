@@ -7,36 +7,34 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class HealthcareApisPrivateEndpointConnectionDescription_SystemData:
-    # The timestamp of resource creation (UTC).
+class HealthcareApisPrivateEndpointConnectionDescription_Value_SystemData:
     created_at: Any = None
-    # The identity that created the resource.
     created_by: Any = None
-    # The type of identity that created the resource.
     created_by_type: Any = None
-    # The timestamp of resource last modification (UTC)
     last_modified_at: Any = None
-    # The identity that last modified the resource.
     last_modified_by: Any = None
-    # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
+
+@dataclasses.dataclass
+class HealthcareApisPrivateEndpointConnectionDescription_Value:
+    system_data: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisPrivateEndpointConnectionDescriptionConfig:
     resource_group_name: Any = None
-    workspace_name: Any = None
+    resource_name: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisPrivateEndpointConnectionDescriptionAttrs:
     resource_group_name: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    workspace_name: Any = None
+    resource_name: Any = None
+    # Array of private endpoint connections
+    value: Any = None
 
 HealthcareApisPrivateEndpointConnectionDescription = ubx.DataSourceBinding(
     wire_type="azure_healthcareapis_healthcare_apis_private_endpoint_connection_description",
     fields={
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
-        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
+        "resource_name": ubx.FieldSpec(wire_name="resource_name"),
     },
 )

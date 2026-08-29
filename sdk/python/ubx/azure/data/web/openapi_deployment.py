@@ -7,44 +7,37 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDeployment_Properties:
-    # True if deployment is currently active, false if completed and null if not started.
+class OpenapiDeployment_Value_Properties:
     active: Any = None
-    # Who authored the deployment.
     author: Any = None
-    # Author email.
     author_email: Any = None
-    # Who performed the deployment.
     deployer: Any = None
-    # Details on deployment.
     details: Any = None
-    # End time.
     end_time: Any = None
-    # Details about deployment status.
     message: Any = None
-    # Start time.
     start_time: Any = None
-    # Deployment status.
     status: Any = None
 
 @dataclasses.dataclass
+class OpenapiDeployment_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiDeploymentConfig:
-    id: Any = None
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiDeploymentAttrs:
-    id: Any = None
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
-    # Deployment resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Deployment items on this page
+    value: Any = None
 
 OpenapiDeployment = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_deployment",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

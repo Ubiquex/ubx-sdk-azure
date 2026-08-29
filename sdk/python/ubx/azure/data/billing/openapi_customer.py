@@ -7,56 +7,71 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiCustomer_Properties_EnabledAzurePlans:
+class OpenapiCustomer_Value_Properties_EnabledAzurePlans:
     product_id: Any = None
     sku_description: Any = None
     sku_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiCustomer_Properties_Resellers:
+class OpenapiCustomer_Value_Properties_Resellers:
     description: Any = None
     reseller_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiCustomer_Properties:
-    # The name of the billing profile.
+class OpenapiCustomer_Value_Properties:
     billing_profile_display_name: Any = None
-    # The fully qualified ID that uniquely identifies a billing profile.
     billing_profile_id: Any = None
-    # The name of the customer.
     display_name: Any = None
-    # Azure plans enabled for the customer.
     enabled_azure_plans: Any = None
-    # The list of resellers for which an Azure plan is enabled for the customer.
     resellers: Any = None
-    # Identifies the status of an customer. This is an upcoming property that will be populated in the future.
     status: Any = None
-    # The system generated unique identifier for a customer.
     system_id: Any = None
-    # Dictionary of metadata associated with the resource. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
+    tags: Any = None
+
+@dataclasses.dataclass
+class OpenapiCustomer_Value:
+    properties: Any = None
     tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiCustomerConfig:
     billing_account_name: Any = None
     billing_profile_name: Any = None
-    customer_name: Any = None
+    count: Any = None
+    expand: Any = None
+    filter: Any = None
+    order_by: Any = None
+    search: Any = None
+    skip: Any = None
+    top: Any = None
 
 @dataclasses.dataclass
 class OpenapiCustomerAttrs:
     billing_account_name: Any = None
     billing_profile_name: Any = None
-    customer_name: Any = None
-    # A partner's customer.
-    properties: Any = None
-    # Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-    tags: Any = None
+    count: Any = None
+    expand: Any = None
+    filter: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    order_by: Any = None
+    search: Any = None
+    skip: Any = None
+    top: Any = None
+    # The Customer items on this page
+    value: Any = None
 
 OpenapiCustomer = ubx.DataSourceBinding(
     wire_type="azure_billing_openapi_customer",
     fields={
         "billing_account_name": ubx.FieldSpec(wire_name="billing_account_name"),
         "billing_profile_name": ubx.FieldSpec(wire_name="billing_profile_name"),
-        "customer_name": ubx.FieldSpec(wire_name="customer_name"),
+        "count": ubx.FieldSpec(wire_name="count"),
+        "expand": ubx.FieldSpec(wire_name="expand"),
+        "filter": ubx.FieldSpec(wire_name="filter"),
+        "order_by": ubx.FieldSpec(wire_name="order_by"),
+        "search": ubx.FieldSpec(wire_name="search"),
+        "skip": ubx.FieldSpec(wire_name="skip"),
+        "top": ubx.FieldSpec(wire_name="top"),
     },
 )

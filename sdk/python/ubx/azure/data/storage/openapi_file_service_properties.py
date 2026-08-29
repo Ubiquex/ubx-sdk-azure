@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiFileServiceProperties_Properties_Cors_CorsRules:
+class OpenapiFileServiceProperties_Value_Properties_Cors_CorsRules:
     allowed_headers: Any = None
     allowed_methods: Any = None
     allowed_origins: Any = None
@@ -15,71 +15,56 @@ class OpenapiFileServiceProperties_Properties_Cors_CorsRules:
     max_age_in_seconds: Any = None
 
 @dataclasses.dataclass
-class OpenapiFileServiceProperties_Properties_Cors:
-    # The List of CORS rules. You can include up to five CorsRule elements in the request.
+class OpenapiFileServiceProperties_Value_Properties_Cors:
     cors_rules: Any = None
 
 @dataclasses.dataclass
-class OpenapiFileServiceProperties_Properties_ProtocolSettings_Nfs_EncryptionInTransit:
-    # Indicates whether encryption in transit is required
+class OpenapiFileServiceProperties_Value_Properties_ProtocolSettings_Nfs_EncryptionInTransit:
     required: Any = None
 
 @dataclasses.dataclass
-class OpenapiFileServiceProperties_Properties_ProtocolSettings_Nfs:
-    # Encryption in transit setting.
+class OpenapiFileServiceProperties_Value_Properties_ProtocolSettings_Nfs:
     encryption_in_transit: Any = None
 
 @dataclasses.dataclass
-class OpenapiFileServiceProperties_Properties_ProtocolSettings_Smb_Multichannel:
-    # Indicates whether multichannel is enabled
+class OpenapiFileServiceProperties_Value_Properties_ProtocolSettings_Smb_Multichannel:
     enabled: Any = None
 
 @dataclasses.dataclass
-class OpenapiFileServiceProperties_Properties_ProtocolSettings_Smb:
-    # SMB authentication methods supported by server. Valid values are NTLMv2, Kerberos. Should be passed as a string with delimiter ';'.
+class OpenapiFileServiceProperties_Value_Properties_ProtocolSettings_Smb:
     authentication_methods: Any = None
-    # SMB channel encryption supported by server. Valid values are AES-128-CCM, AES-128-GCM, AES-256-GCM. Should be passed as a string with delimiter ';'.
     channel_encryption: Any = None
-    # Encryption in transit setting.
     encryption_in_transit: Any = None
-    # Kerberos ticket encryption supported by server. Valid values are RC4-HMAC, AES-256. Should be passed as a string with delimiter ';'
     kerberos_ticket_encryption: Any = None
-    # Multichannel setting. Applies to Premium FileStorage only.
     multichannel: Any = None
-    # SMB protocol versions supported by server. Valid values are SMB2.1, SMB3.0, SMB3.1.1. Should be passed as a string with delimiter ';'.
     versions: Any = None
 
 @dataclasses.dataclass
-class OpenapiFileServiceProperties_Properties_ProtocolSettings:
-    # Setting for NFS protocol
+class OpenapiFileServiceProperties_Value_Properties_ProtocolSettings:
     nfs: Any = None
-    # Setting for SMB protocol
     smb: Any = None
 
 @dataclasses.dataclass
-class OpenapiFileServiceProperties_Properties_ShareDeleteRetentionPolicy:
-    # This property when set to true allows deletion of the soft deleted blob versions and snapshots. This property cannot be used blob restore policy. This property only applies to blob service and does not apply to containers or file share.
+class OpenapiFileServiceProperties_Value_Properties_ShareDeleteRetentionPolicy:
     allow_permanent_delete: Any = None
-    # Indicates the number of days that the deleted item should be retained. The minimum specified value can be 1 and the maximum value can be 365.
     days: Any = None
-    # Indicates whether DeleteRetentionPolicy is enabled.
     enabled: Any = None
 
 @dataclasses.dataclass
-class OpenapiFileServiceProperties_Properties:
-    # Sets the CORS rules. You can include up to five CorsRule elements in the request.
+class OpenapiFileServiceProperties_Value_Properties:
     cors: Any = None
-    # Protocol settings for file service
     protocol_settings: Any = None
-    # The service properties for soft delete.
     share_delete_retention_policy: Any = None
 
 @dataclasses.dataclass
-class OpenapiFileServiceProperties_Sku:
-    # The SKU name. Required for account creation; optional for update. Note that in older versions, SKU name was called accountType.
+class OpenapiFileServiceProperties_Value_Sku:
     name: Any = None
-    # The SKU tier. This is based on the SKU name.
     tier: Any = None
+
+@dataclasses.dataclass
+class OpenapiFileServiceProperties_Value:
+    properties: Any = None
+    sku: Any = None
 
 @dataclasses.dataclass
 class OpenapiFileServicePropertiesConfig:
@@ -88,10 +73,8 @@ class OpenapiFileServicePropertiesConfig:
 @dataclasses.dataclass
 class OpenapiFileServicePropertiesAttrs:
     account_name: Any = None
-    # The properties of File services in storage account.
-    properties: Any = None
-    # The SKU of the storage account.
-    sku: Any = None
+    # List of file services returned.
+    value: Any = None
 
 OpenapiFileServiceProperties = ubx.DataSourceBinding(
     wire_type="azure_storage_openapi_file_service_properties",

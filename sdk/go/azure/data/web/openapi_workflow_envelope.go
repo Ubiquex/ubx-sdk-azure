@@ -3,64 +3,55 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiWorkflowEnvelope_Properties_Health_Error_Details struct {
+type OpenapiWorkflowEnvelope_Value_Properties_Health_Error_Details struct {
 }
 
-type OpenapiWorkflowEnvelope_Properties_Health_Error struct {
-	// Basic error code.
+type OpenapiWorkflowEnvelope_Value_Properties_Health_Error struct {
 	Code any
-	// Error Details.
 	Details any
-	// Type of error.
 	ExtendedCode any
-	// Inner errors.
 	InnerErrors any
-	// Any details of the error.
 	Message any
-	// Message template.
 	MessageTemplate any
-	// Parameters for the template.
 	Parameters any
-	// The error target.
 	Target any
 }
 
-type OpenapiWorkflowEnvelope_Properties_Health struct {
-	// Body of the error response returned from the API.
+type OpenapiWorkflowEnvelope_Value_Properties_Health struct {
 	Error any
-	// Gets or sets the workflow health state.
 	State any
 }
 
-type OpenapiWorkflowEnvelope_Properties struct {
-	// Gets or sets the files.
+type OpenapiWorkflowEnvelope_Value_Properties struct {
 	Files any
-	// The workflow state.
 	FlowState any
-	// Represents the workflow health.
 	Health any
+}
+
+type OpenapiWorkflowEnvelope_Value struct {
+	Kind any
+	Location any
+	Properties any
 }
 
 type OpenapiWorkflowEnvelopeConfig struct {
 	Name any
-	WorkflowName any
+	Slot any
 }
 
 type OpenapiWorkflowEnvelopeAttrs struct {
-	// The resource kind.
-	Kind any
-	// The resource location.
-	Location any
 	Name any
-	// Additional workflow properties.
-	Properties any
-	WorkflowName any
+	// The link to the next page of items
+	NextLink any
+	Slot any
+	// The WorkflowEnvelope items on this page
+	Value any
 }
 
 var OpenapiWorkflowEnvelope = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_envelope",
 	Fields: ubx.FieldMap{
 		"Name": ubx.FieldSpec{WireName: "name"},
-		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
+		"Slot": ubx.FieldSpec{WireName: "slot"},
 	},
 }

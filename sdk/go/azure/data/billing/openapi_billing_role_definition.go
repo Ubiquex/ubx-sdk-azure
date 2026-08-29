@@ -3,34 +3,34 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiBillingRoleDefinition_Properties_Permissions struct {
+type OpenapiBillingRoleDefinition_Value_Properties_Permissions struct {
 	Actions any
 	NotActions any
 }
 
-type OpenapiBillingRoleDefinition_Properties struct {
-	// The role description.
+type OpenapiBillingRoleDefinition_Value_Properties struct {
 	Description any
-	// The billingPermissions the role has.
 	Permissions any
-	// The name of the role.
 	RoleName any
+}
+
+type OpenapiBillingRoleDefinition_Value struct {
+	Properties any
+	Tags any
 }
 
 type OpenapiBillingRoleDefinitionConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	RoleDefinitionName any
 }
 
 type OpenapiBillingRoleDefinitionAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	// The properties of a role definition.
-	Properties any
-	RoleDefinitionName any
-	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-	Tags any
+	// The link to the next page of items
+	NextLink any
+	// The BillingRoleDefinition items on this page
+	Value any
 }
 
 var OpenapiBillingRoleDefinition = ubx.DataSourceBinding{
@@ -38,6 +38,5 @@ var OpenapiBillingRoleDefinition = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"RoleDefinitionName": ubx.FieldSpec{WireName: "role_definition_name"},
 	},
 }

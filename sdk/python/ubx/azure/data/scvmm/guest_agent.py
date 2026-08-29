@@ -7,35 +7,28 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class GuestAgent_Properties_Credentials:
-    # Gets or sets the password to connect with the guest.
+class GuestAgent_Value_Properties_Credentials:
     password: Any = None
-    # Gets or sets username to connect with the guest.
     username: Any = None
 
 @dataclasses.dataclass
-class GuestAgent_Properties_HttpProxyConfig:
-    # Gets or sets httpsProxy url.
+class GuestAgent_Value_Properties_HttpProxyConfig:
     https_proxy: Any = None
 
 @dataclasses.dataclass
-class GuestAgent_Properties:
-    # Username / Password Credentials to connect to guest.
+class GuestAgent_Value_Properties:
     credentials: Any = None
-    # Gets the name of the corresponding resource in Kubernetes.
     custom_resource_name: Any = None
-    # HTTP Proxy configuration for the VM.
     http_proxy_config: Any = None
-    # The resource id of the private link scope this machine is assigned to, if any.
     private_link_scope_resource_id: Any = None
-    # Guest agent provisioning action.
     provisioning_action: Any = None
-    # The provisioning state of the resource.
     provisioning_state: Any = None
-    # Gets the guest agent status.
     status: Any = None
-    # Gets a unique identifier for this resource.
     uuid: Any = None
+
+@dataclasses.dataclass
+class GuestAgent_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class GuestAgentConfig:
@@ -43,9 +36,11 @@ class GuestAgentConfig:
 
 @dataclasses.dataclass
 class GuestAgentAttrs:
-    # Defines the resource properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     resource_uri: Any = None
+    # The GuestAgent items on this page
+    value: Any = None
 
 GuestAgent = ubx.DataSourceBinding(
     wire_type="azure_scvmm_guest_agent",

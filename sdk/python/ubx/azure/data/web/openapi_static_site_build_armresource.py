@@ -7,13 +7,13 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiStaticSiteBuildArmresource_Properties_DatabaseConnections_ConfigurationFiles:
+class OpenapiStaticSiteBuildArmresource_Value_Properties_DatabaseConnections_ConfigurationFiles:
     contents: Any = None
     file_name: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiStaticSiteBuildArmresource_Properties_DatabaseConnections:
+class OpenapiStaticSiteBuildArmresource_Value_Properties_DatabaseConnections:
     configuration_files: Any = None
     connection_identity: Any = None
     name: Any = None
@@ -21,63 +21,55 @@ class OpenapiStaticSiteBuildArmresource_Properties_DatabaseConnections:
     resource_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiStaticSiteBuildArmresource_Properties_LinkedBackends:
+class OpenapiStaticSiteBuildArmresource_Value_Properties_LinkedBackends:
     backend_resource_id: Any = None
     created_on: Any = None
     provisioning_state: Any = None
     region: Any = None
 
 @dataclasses.dataclass
-class OpenapiStaticSiteBuildArmresource_Properties_UserProvidedFunctionApps_Properties:
+class OpenapiStaticSiteBuildArmresource_Value_Properties_UserProvidedFunctionApps_Properties:
     created_on: Any = None
     function_app_region: Any = None
     function_app_resource_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiStaticSiteBuildArmresource_Properties_UserProvidedFunctionApps:
+class OpenapiStaticSiteBuildArmresource_Value_Properties_UserProvidedFunctionApps:
     properties: Any = None
 
 @dataclasses.dataclass
-class OpenapiStaticSiteBuildArmresource_Properties:
-    # An identifier for the static site build.
+class OpenapiStaticSiteBuildArmresource_Value_Properties:
     build_id: Any = None
-    # When this build was created.
     created_time_utc: Any = None
-    # Database connections for the static site build
     database_connections: Any = None
-    # The hostname for a static site build.
     hostname: Any = None
-    # When this build was updated.
     last_updated_on: Any = None
-    # Backends linked to the static side build
     linked_backends: Any = None
-    # The title of a pull request that a static site build is related to.
     pull_request_title: Any = None
-    # The source branch.
     source_branch: Any = None
-    # The status of the static site build.
     status: Any = None
-    # User provided function apps registered with the static site build
     user_provided_function_apps: Any = None
 
 @dataclasses.dataclass
+class OpenapiStaticSiteBuildArmresource_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiStaticSiteBuildArmresourceConfig:
-    environment_name: Any = None
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteBuildArmresourceAttrs:
-    environment_name: Any = None
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
-    # StaticSiteBuildARMResource resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The StaticSiteBuildARMResource items on this page
+    value: Any = None
 
 OpenapiStaticSiteBuildArmresource = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_static_site_build_armresource",
     fields={
-        "environment_name": ubx.FieldSpec(wire_name="environment_name"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

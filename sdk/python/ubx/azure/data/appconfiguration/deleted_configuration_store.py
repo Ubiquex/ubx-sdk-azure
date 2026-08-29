@@ -7,48 +7,39 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class DeletedConfigurationStore_Properties:
-    # The resource id of the original configuration store.
+class DeletedConfigurationStore_Value_Properties:
     configuration_store_id: Any = None
-    # The deleted date.
     deletion_date: Any = None
-    # The location of the original configuration store.
     location: Any = None
-    # Purge protection status of the original configuration store.
     purge_protection_enabled: Any = None
-    # The scheduled purged date.
     scheduled_purge_date: Any = None
-    # Tags of the original configuration store.
     tags: Any = None
+
+@dataclasses.dataclass
+class DeletedConfigurationStore_Value:
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
 class DeletedConfigurationStoreConfig:
     api_version: Any = None
-    config_store_name: Any = None
-    location: Any = None
     subscription_id: Any = None
 
 @dataclasses.dataclass
 class DeletedConfigurationStoreAttrs:
     api_version: Any = None
-    config_store_name: Any = None
-    # The resource ID for the deleted configuration store.
-    id: Any = None
-    location: Any = None
-    # The name of the configuration store.
-    name: Any = None
-    # Properties of the deleted configuration store.
-    properties: Any = None
+    # The URL to get the next set of deleted configuration stores.
+    next_link: Any = None
     subscription_id: Any = None
-    # The resource type of the configuration store.
-    type: Any = None
+    # The list of deleted configuration store.
+    value: Any = None
 
 DeletedConfigurationStore = ubx.DataSourceBinding(
     wire_type="azure_appconfiguration_deleted_configuration_store",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
-        "config_store_name": ubx.FieldSpec(wire_name="config_store_name"),
-        "location": ubx.FieldSpec(wire_name="location"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },
 )

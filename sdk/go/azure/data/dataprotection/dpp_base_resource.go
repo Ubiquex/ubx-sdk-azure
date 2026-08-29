@@ -3,20 +3,24 @@ package dataprotection
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type DppBaseResource_Value struct {
+}
+
 type DppBaseResourceConfig struct {
-	RequestName any
 	ResourceGuardsName any
 }
 
 type DppBaseResourceAttrs struct {
-	RequestName any
+	// The link to the next page of items
+	NextLink any
 	ResourceGuardsName any
+	// The DppBaseResource items on this page
+	Value any
 }
 
 var DppBaseResource = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_dpp_base_resource",
 	Fields: ubx.FieldMap{
-		"RequestName": ubx.FieldSpec{WireName: "request_name"},
 		"ResourceGuardsName": ubx.FieldSpec{WireName: "resource_guards_name"},
 	},
 }

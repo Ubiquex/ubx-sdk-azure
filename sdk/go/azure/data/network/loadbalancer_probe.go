@@ -3,49 +3,42 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type LoadbalancerProbe_Properties_LoadBalancingRules struct {
+type LoadbalancerProbe_Value_Properties_LoadBalancingRules struct {
 	Id any
 }
 
-type LoadbalancerProbe_Properties struct {
-	// The interval, in seconds, for how frequently to probe the endpoint for health status. Typically, the interval is slightly less than half the allocated timeout period (in seconds) which allows two full probes before taking the instance out of rotation. The default value is 15, the minimum value is 5.
+type LoadbalancerProbe_Value_Properties struct {
 	IntervalInSeconds any
-	// The load balancer rules that use this probe.
 	LoadBalancingRules any
-	// Determines how new connections are handled by the load balancer when all backend instances are probed down.
 	NoHealthyBackendsBehavior any
-	// The number of probes where if no response, will result in stopping further traffic from being delivered to the endpoint. This values allows endpoints to be taken out of rotation faster or slower than the typical times used in Azure.
 	NumberOfProbes any
-	// The port for communicating the probe. Possible values range from 1 to 65535, inclusive.
 	Port any
-	// The number of consecutive successful or failed probes in order to allow or deny traffic from being delivered to this endpoint. After failing the number of consecutive probes equal to this value, the endpoint will be taken out of rotation and require the same number of successful consecutive probes to be placed back in rotation.
 	ProbeThreshold any
-	// The protocol of the end point. If 'Tcp' is specified, a received ACK is required for the probe to be successful. If 'Http' or 'Https' is specified, a 200 OK response from the specifies URI is required for the probe to be successful.
 	Protocol any
-	// Provisioning states of a resource.
 	ProvisioningState any
-	// The URI used for requesting health status from the VM. Path is required if a protocol is set to http. Otherwise, it is not allowed. There is no default value.
 	RequestPath any
+}
+
+type LoadbalancerProbe_Value struct {
+	Etag any
+	Properties any
 }
 
 type LoadbalancerProbeConfig struct {
 	LoadBalancerName any
-	ProbeName any
 }
 
 type LoadbalancerProbeAttrs struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	LoadBalancerName any
-	ProbeName any
-	// Load balancer probe resource.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The Probe items on this page
+	Value any
 }
 
 var LoadbalancerProbe = ubx.DataSourceBinding{
 	WireType: "azure_network_loadbalancer_probe",
 	Fields: ubx.FieldMap{
 		"LoadBalancerName": ubx.FieldSpec{WireName: "load_balancer_name"},
-		"ProbeName": ubx.FieldSpec{WireName: "probe_name"},
 	},
 }

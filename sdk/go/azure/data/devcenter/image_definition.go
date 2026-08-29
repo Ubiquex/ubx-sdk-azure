@@ -3,56 +3,46 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ImageDefinition_Properties_ActiveImageReference struct {
-	// The actual version of the image after use. When id references a gallery image latest version, this will indicate the actual version in use.
+type ImageDefinition_Value_Properties_ActiveImageReference struct {
 	ExactVersion any
-	// Image ID, or Image version ID. When Image ID is provided, its latest version will be used.
 	Id any
 }
 
-type ImageDefinition_Properties_ImageValidationErrorDetails struct {
-	// An identifier for the error.
+type ImageDefinition_Value_Properties_ImageValidationErrorDetails struct {
 	Code any
-	// A message describing the error.
 	Message any
 }
 
-type ImageDefinition_Properties_LatestBuild struct {
-	// End time of the task group.
+type ImageDefinition_Value_Properties_LatestBuild struct {
 	EndTime any
-	// Identifier of a build.
 	Name any
-	// Start time of the task group.
 	StartTime any
-	// The state of an Image Definition Build.
 	Status any
 }
 
-type ImageDefinition_Properties struct {
-	// Image reference information
+type ImageDefinition_Value_Properties struct {
 	ActiveImageReference any
-	// Indicates whether auto image build is enabled/disabled.
 	AutoImageBuild any
-	// The URL to the repository file containing the image definition.
 	FileUrl any
-	// Image reference information
 	ImageReference any
-	// Image validation error details
 	ImageValidationErrorDetails any
-	// Image validation status
 	ImageValidationStatus any
-	// Details about the latest build.
 	LatestBuild any
-	// Catalog resource validation status
 	ValidationStatus any
+}
+
+type ImageDefinition_Value struct {
+	Properties any
 }
 
 type ImageDefinitionConfig struct {
 }
 
 type ImageDefinitionAttrs struct {
-	// Properties of an Image Definition.
-	Properties any
+	// URL to get the next set of results if there are any.
+	NextLink any
+	// Current page of results.
+	Value any
 }
 
 var ImageDefinition = ubx.DataSourceBinding{

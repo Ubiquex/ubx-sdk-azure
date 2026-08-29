@@ -3,45 +3,38 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDeployment_Properties struct {
-	// True if deployment is currently active, false if completed and null if not started.
+type OpenapiDeployment_Value_Properties struct {
 	Active any
-	// Who authored the deployment.
 	Author any
-	// Author email.
 	AuthorEmail any
-	// Who performed the deployment.
 	Deployer any
-	// Details on deployment.
 	Details any
-	// End time.
 	EndTime any
-	// Details about deployment status.
 	Message any
-	// Start time.
 	StartTime any
-	// Deployment status.
 	Status any
 }
 
+type OpenapiDeployment_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiDeploymentConfig struct {
-	Id any
 	Name any
 }
 
 type OpenapiDeploymentAttrs struct {
-	Id any
-	// Kind of resource.
-	Kind any
 	Name any
-	// Deployment resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The Deployment items on this page
+	Value any
 }
 
 var OpenapiDeployment = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_deployment",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

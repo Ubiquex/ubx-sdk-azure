@@ -7,92 +7,70 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiBillingRoleAssignment_Properties:
-    # The name of the billing account.
+class OpenapiBillingRoleAssignment_Value_Properties:
     billing_account_display_name: Any = None
-    # The fully qualified ID that uniquely identifies a billing account.
     billing_account_id: Any = None
-    # The name of the billing profile.
     billing_profile_display_name: Any = None
-    # The fully qualified ID that uniquely identifies a billing profile.
     billing_profile_id: Any = None
-    # The ID of the billing request that was created for the role assignment. This is only applicable to cross tenant role assignments or role assignments created through the billing request.
     billing_request_id: Any = None
-    # The object ID of the user who created the role assignment.
     created_by_principal_id: Any = None
-    # The principal PUID of the user who created the role assignment.
     created_by_principal_puid: Any = None
-    # The tenant Id of the user who created the role assignment.
     created_by_principal_tenant_id: Any = None
-    # The email address of the user who created the role assignment. This is supported only for billing accounts with agreement type Enterprise Agreement.
     created_by_user_email_address: Any = None
-    # The date the role assignment was created.
     created_on: Any = None
-    # The name of the customer.
     customer_display_name: Any = None
-    # The fully qualified ID that uniquely identifies a customer.
     customer_id: Any = None
-    # The name of the invoice section.
     invoice_section_display_name: Any = None
-    # The fully qualified ID that uniquely identifies an invoice section.
     invoice_section_id: Any = None
-    # The principal PUID of the user who modified the role assignment.
     modified_by_principal_id: Any = None
-    # The principal PUID of the user who modified the role assignment.
     modified_by_principal_puid: Any = None
-    # The tenant Id of the user who modified the role assignment.
     modified_by_principal_tenant_id: Any = None
-    # The email address of the user who modified the role assignment. This is supported only for billing accounts with agreement type Enterprise Agreement.
     modified_by_user_email_address: Any = None
-    # The date the role assignment was modified.
     modified_on: Any = None
-    # The display name of the principal to whom the role was assigned.
     principal_display_name: Any = None
-    # The object id of the user to whom the role was assigned.
     principal_id: Any = None
-    # The principal PUID of the user to whom the role was assigned.
     principal_puid: Any = None
-    # The principal tenant id of the user to whom the role was assigned.
     principal_tenant_id: Any = None
-    # The friendly name of the tenant of the user to whom the role was assigned. This will be 'Primary Tenant' for the primary tenant of the billing account.
     principal_tenant_name: Any = None
-    # The type of a role Assignment.
     principal_type: Any = None
-    # The provisioning state of the resource during a long-running operation.
     provisioning_state: Any = None
-    # The ID of the role definition.
     role_definition_id: Any = None
-    # The scope at which the role was assigned.
     scope: Any = None
-    # The authentication type of the user, whether Organization or MSA, of the user to whom the role was assigned. This is supported only for billing accounts with agreement type Enterprise Agreement.
     user_authentication_type: Any = None
-    # The email address of the user to whom the role was assigned. This is supported only for billing accounts with agreement type Enterprise Agreement.
     user_email_address: Any = None
+
+@dataclasses.dataclass
+class OpenapiBillingRoleAssignment_Value:
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingRoleAssignmentConfig:
     billing_account_name: Any = None
     billing_profile_name: Any = None
-    billing_role_assignment_name: Any = None
-    customer_name: Any = None
+    filter: Any = None
+    skip: Any = None
+    top: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingRoleAssignmentAttrs:
     billing_account_name: Any = None
     billing_profile_name: Any = None
-    billing_role_assignment_name: Any = None
-    customer_name: Any = None
-    # The properties of the billing role assignment.
-    properties: Any = None
-    # Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-    tags: Any = None
+    filter: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    skip: Any = None
+    top: Any = None
+    # The BillingRoleAssignment items on this page
+    value: Any = None
 
 OpenapiBillingRoleAssignment = ubx.DataSourceBinding(
     wire_type="azure_billing_openapi_billing_role_assignment",
     fields={
         "billing_account_name": ubx.FieldSpec(wire_name="billing_account_name"),
         "billing_profile_name": ubx.FieldSpec(wire_name="billing_profile_name"),
-        "billing_role_assignment_name": ubx.FieldSpec(wire_name="billing_role_assignment_name"),
-        "customer_name": ubx.FieldSpec(wire_name="customer_name"),
+        "filter": ubx.FieldSpec(wire_name="filter"),
+        "skip": ubx.FieldSpec(wire_name="skip"),
+        "top": ubx.FieldSpec(wire_name="top"),
     },
 )

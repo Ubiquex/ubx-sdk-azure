@@ -3,7 +3,7 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiProcessInfo_Properties_Modules_Properties struct {
+type OpenapiProcessInfo_Value_Properties_Modules_Properties struct {
 	BaseAddress any
 	FileDescription any
 	FileName any
@@ -17,12 +17,12 @@ type OpenapiProcessInfo_Properties_Modules_Properties struct {
 	ProductVersion any
 }
 
-type OpenapiProcessInfo_Properties_Modules struct {
+type OpenapiProcessInfo_Value_Properties_Modules struct {
 	Kind any
 	Properties any
 }
 
-type OpenapiProcessInfo_Properties_Threads_Properties struct {
+type OpenapiProcessInfo_Value_Properties_Threads_Properties struct {
 	BasePriority any
 	CurrentPriority any
 	Href any
@@ -37,99 +37,66 @@ type OpenapiProcessInfo_Properties_Threads_Properties struct {
 	WaitReason any
 }
 
-type OpenapiProcessInfo_Properties_Threads struct {
+type OpenapiProcessInfo_Value_Properties_Threads struct {
 	Properties any
 }
 
-type OpenapiProcessInfo_Properties struct {
-	// Child process list.
+type OpenapiProcessInfo_Value_Properties struct {
 	Children any
-	// Command line.
 	CommandLine any
-	// Deployment name.
 	DeploymentName any
-	// Description of process.
 	Description any
-	// List of environment variables.
 	EnvironmentVariables any
-	// File name of this process.
 	FileName any
-	// Handle count.
 	HandleCount any
-	// HRef URI.
 	Href any
-	// ARM Identifier for deployment.
 	Identifier any
-	// IIS Profile timeout (seconds).
 	IisProfileTimeoutInSeconds any
-	// Is the IIS Profile running?
 	IsIisProfileRunning any
-	// Is profile running?
 	IsProfileRunning any
-	// Is this the SCM site?
 	IsScmSite any
-	// Is this a Web Job?
 	IsWebjob any
-	// Minidump URI.
 	Minidump any
-	// Module count.
 	ModuleCount any
-	// List of modules.
 	Modules any
-	// Non-paged system memory.
 	NonPagedSystemMemory any
-	// List of open files.
 	OpenFileHandles any
-	// Paged memory.
 	PagedMemory any
-	// Paged system memory.
 	PagedSystemMemory any
-	// Parent process.
 	Parent any
-	// Peak paged memory.
 	PeakPagedMemory any
-	// Peak virtual memory usage.
 	PeakVirtualMemory any
-	// Peak working set.
 	PeakWorkingSet any
-	// Private memory size.
 	PrivateMemory any
-	// Privileged CPU time.
 	PrivilegedCpuTime any
-	// Start time.
 	StartTime any
-	// Thread count.
 	ThreadCount any
-	// Thread list.
 	Threads any
-	// Time stamp.
 	TimeStamp any
-	// Total CPU time.
 	TotalCpuTime any
-	// User CPU time.
 	UserCpuTime any
-	// User name.
 	UserName any
-	// Virtual memory size.
 	VirtualMemory any
-	// Working set.
 	WorkingSet any
+}
+
+type OpenapiProcessInfo_Value struct {
+	Kind any
+	Properties any
 }
 
 type OpenapiProcessInfoConfig struct {
 	InstanceId any
 	Name any
-	ProcessId any
 }
 
 type OpenapiProcessInfoAttrs struct {
 	InstanceId any
-	// Kind of resource.
-	Kind any
 	Name any
-	ProcessId any
-	// ProcessInfo resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The ProcessInfo items on this page
+	Value any
 }
 
 var OpenapiProcessInfo = ubx.DataSourceBinding{
@@ -137,6 +104,5 @@ var OpenapiProcessInfo = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
-		"ProcessId": ubx.FieldSpec{WireName: "process_id"},
 	},
 }

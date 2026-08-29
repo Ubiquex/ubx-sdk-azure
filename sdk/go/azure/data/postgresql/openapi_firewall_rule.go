@@ -3,29 +3,30 @@ package postgresql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiFirewallRule_Properties struct {
-	// IP address defining the end of the range of addresses of a firewall rule. Must be expressed in IPv4 format.
+type OpenapiFirewallRule_Value_Properties struct {
 	EndIpAddress any
-	// IP address defining the start of the range of addresses of a firewall rule. Must be expressed in IPv4 format.
 	StartIpAddress any
 }
 
+type OpenapiFirewallRule_Value struct {
+	Properties any
+}
+
 type OpenapiFirewallRuleConfig struct {
-	FirewallRuleName any
 	ServerName any
 }
 
 type OpenapiFirewallRuleAttrs struct {
-	FirewallRuleName any
-	// Properties of a firewall rule.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ServerName any
+	// The FirewallRule items on this page
+	Value any
 }
 
 var OpenapiFirewallRule = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_firewall_rule",
 	Fields: ubx.FieldMap{
-		"FirewallRuleName": ubx.FieldSpec{WireName: "firewall_rule_name"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
 	},
 }

@@ -3,146 +3,109 @@ package dataprotection
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DeletedBackupVaultResource_Properties_CostManagementSettings struct {
+type DeletedBackupVaultResource_Value_Properties_CostManagementSettings struct {
 	GranularityLevel any
 }
 
-type DeletedBackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettings struct {
-	// CrossRegionRestore state
+type DeletedBackupVaultResource_Value_Properties_FeatureSettings_CrossRegionRestoreSettings struct {
 	State any
 }
 
-type DeletedBackupVaultResource_Properties_FeatureSettings struct {
+type DeletedBackupVaultResource_Value_Properties_FeatureSettings struct {
 	CrossRegionRestoreSettings any
-	// CrossSubscriptionRestore Settings
 	CrossSubscriptionRestoreSettings any
 }
 
-type DeletedBackupVaultResource_Properties_MonitoringSettings_AzureMonitorAlertSettings struct {
+type DeletedBackupVaultResource_Value_Properties_MonitoringSettings_AzureMonitorAlertSettings struct {
 	AlertsForAllJobFailures any
 }
 
-type DeletedBackupVaultResource_Properties_MonitoringSettings struct {
-	// Settings for Azure Monitor based alerts
+type DeletedBackupVaultResource_Value_Properties_MonitoringSettings struct {
 	AzureMonitorAlertSettings any
 }
 
-type DeletedBackupVaultResource_Properties_ResourceDeletionInfo struct {
-	// Delete activity ID for troubleshooting the deletion of the tracked resource
+type DeletedBackupVaultResource_Value_Properties_ResourceDeletionInfo struct {
 	DeleteActivityId any
-	// Specifies time of deletion for the tracked resource (Backup Vault)
 	DeletionTime any
-	// Specifies the scheduled purge time for the tracked resource (Backup Vault)
 	ScheduledPurgeTime any
 }
 
-type DeletedBackupVaultResource_Properties_ResourceMoveDetails struct {
-	// Completion time in UTC of latest ResourceMove operation attempted. ISO 8601 format.
+type DeletedBackupVaultResource_Value_Properties_ResourceMoveDetails struct {
 	CompletionTimeUtc any
-	// CorrelationId of latest ResourceMove operation attempted
 	OperationId any
-	// ARM resource path of source resource
 	SourceResourcePath any
-	// Start time in UTC of latest ResourceMove operation attempted. ISO 8601 format.
 	StartTimeUtc any
-	// ARM resource path of target resource used in latest ResourceMove operation
 	TargetResourcePath any
 }
 
-type DeletedBackupVaultResource_Properties_SecuritySettings_EncryptionSettings_KekIdentity struct {
-	// The managed identity to be used which has access permissions to the Key Vault. Provide a value here in case identity types: 'UserAssigned' only.
+type DeletedBackupVaultResource_Value_Properties_SecuritySettings_EncryptionSettings_KekIdentity struct {
 	IdentityId any
-	// The identity type. 'SystemAssigned' and 'UserAssigned' are mutually exclusive. 'SystemAssigned' will use implicitly created managed identity.
 	IdentityType any
 }
 
-type DeletedBackupVaultResource_Properties_SecuritySettings_EncryptionSettings_KeyVaultProperties struct {
-	// The key uri of the Customer Managed Key
+type DeletedBackupVaultResource_Value_Properties_SecuritySettings_EncryptionSettings_KeyVaultProperties struct {
 	KeyUri any
 }
 
-type DeletedBackupVaultResource_Properties_SecuritySettings_EncryptionSettings struct {
-	// Enabling/Disabling the Double Encryption state
+type DeletedBackupVaultResource_Value_Properties_SecuritySettings_EncryptionSettings struct {
 	InfrastructureEncryption any
-	// The details of the managed identity used for CMK
 	KekIdentity any
-	// The properties of the Key Vault which hosts CMK
 	KeyVaultProperties any
-	// Encryption state of the Backup Vault.
 	State any
 }
 
-type DeletedBackupVaultResource_Properties_SecuritySettings_SoftDeleteSettings struct {
-	// Soft delete retention duration
+type DeletedBackupVaultResource_Value_Properties_SecuritySettings_SoftDeleteSettings struct {
 	RetentionDurationInDays any
-	// State of soft delete
 	State any
 }
 
-type DeletedBackupVaultResource_Properties_SecuritySettings struct {
-	// Customer Managed Key details of the resource.
+type DeletedBackupVaultResource_Value_Properties_SecuritySettings struct {
 	EncryptionSettings any
-	// Immutability Settings at vault level
 	ImmutabilitySettings any
-	// Soft delete related settings
 	SoftDeleteSettings any
 }
 
-type DeletedBackupVaultResource_Properties_StorageSettings struct {
+type DeletedBackupVaultResource_Value_Properties_StorageSettings struct {
 	DatastoreType any
 	Type any
 }
 
-type DeletedBackupVaultResource_Properties struct {
-	// Security Level of Backup Vault
+type DeletedBackupVaultResource_Value_Properties struct {
 	BcdrSecurityLevel any
-	// Cost Management Settings of the vault
 	CostManagementSettings any
-	// Class containing feature settings of vault
 	FeatureSettings any
-	// Is vault protected by resource guard
 	IsVaultProtectedByResourceGuard any
-	// Monitoring Settings
 	MonitoringSettings any
-	// Resource Id of the original backup vault
 	OriginalBackupVaultId any
-	// Resource name of the original backup vault
 	OriginalBackupVaultName any
-	// Resource path of the original backup vault
 	OriginalBackupVaultResourcePath any
-	// Provisioning state of the BackupVault resource
 	ProvisioningState any
-	// List of replicated regions for Backup Vault
 	ReplicatedRegions any
-	// Deletion info for a tracked resource (Backup Vault)
 	ResourceDeletionInfo any
-	// ResourceGuardOperationRequests on which LAC check will be performed
 	ResourceGuardOperationRequests any
-	// ResourceMoveDetails will be returned in response to GetResource call from ARM
 	ResourceMoveDetails any
-	// Resource move state for backup vault
 	ResourceMoveState any
-	// Secure Score of Backup Vault
 	SecureScore any
-	// Class containing security settings of vault
 	SecuritySettings any
-	// Storage Settings
 	StorageSettings any
 }
 
+type DeletedBackupVaultResource_Value struct {
+	Properties any
+}
+
 type DeletedBackupVaultResourceConfig struct {
-	DeletedVaultName any
 }
 
 type DeletedBackupVaultResourceAttrs struct {
-	DeletedVaultName any
-	// Deleted Backup Vault - uses composition with BackupVault and additional deletion metadata
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The DeletedBackupVaultResource items on this page
+	Value any
 }
 
 var DeletedBackupVaultResource = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_deleted_backup_vault_resource",
 	Fields: ubx.FieldMap{
-		"DeletedVaultName": ubx.FieldSpec{WireName: "deleted_vault_name"},
 	},
 }

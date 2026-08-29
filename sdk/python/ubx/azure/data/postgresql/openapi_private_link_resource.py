@@ -7,30 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiPrivateLinkResource_Properties:
-    # The private link resource group id.
+class OpenapiPrivateLinkResource_Value_Properties:
     group_id: Any = None
-    # The private link resource required member names.
     required_members: Any = None
-    # The private link resource private link DNS zone name.
     required_zone_names: Any = None
 
 @dataclasses.dataclass
+class OpenapiPrivateLinkResource_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiPrivateLinkResourceConfig:
-    group_name: Any = None
     server_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiPrivateLinkResourceAttrs:
-    group_name: Any = None
-    # Properties of a private link resource.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
+    # The PrivateLinkResource items on this page
+    value: Any = None
 
 OpenapiPrivateLinkResource = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_private_link_resource",
     fields={
-        "group_name": ubx.FieldSpec(wire_name="group_name"),
         "server_name": ubx.FieldSpec(wire_name="server_name"),
     },
 )

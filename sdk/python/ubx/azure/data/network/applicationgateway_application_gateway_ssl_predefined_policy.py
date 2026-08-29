@@ -7,27 +7,28 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ApplicationgatewayApplicationGatewaySslPredefinedPolicy_Properties:
-    # Ssl cipher suites to be enabled in the specified order for application gateway.
+class ApplicationgatewayApplicationGatewaySslPredefinedPolicy_Value_Properties:
     cipher_suites: Any = None
-    # Ssl protocol enums.
     min_protocol_version: Any = None
 
 @dataclasses.dataclass
+class ApplicationgatewayApplicationGatewaySslPredefinedPolicy_Value:
+    name: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class ApplicationgatewayApplicationGatewaySslPredefinedPolicyConfig:
-    predefined_policy_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class ApplicationgatewayApplicationGatewaySslPredefinedPolicyAttrs:
-    # Name of the Ssl predefined policy.
-    name: Any = None
-    predefined_policy_name: Any = None
-    # Properties of ApplicationGatewaySslPredefinedPolicy.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The ApplicationGatewaySslPredefinedPolicy items on this page
+    value: Any = None
 
 ApplicationgatewayApplicationGatewaySslPredefinedPolicy = ubx.DataSourceBinding(
     wire_type="azure_network_applicationgateway_application_gateway_ssl_predefined_policy",
     fields={
-        "predefined_policy_name": ubx.FieldSpec(wire_name="predefined_policy_name"),
     },
 )

@@ -7,30 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_DebugSetting:
-    # Specifies the type of information to log for debugging. The permitted values are none, requestContent, responseContent, or both requestContent and responseContent separated by a comma. The default is none. When setting this value, carefully consider the type of information you are passing in during deployment. By logging information about the request or response, you could potentially expose sensitive data that is retrieved through the deployment operations.
+class DeploymentsDeploymentExtended_Value_Properties_DebugSetting:
     detail_level: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Dependencies_DependsOn:
+class DeploymentsDeploymentExtended_Value_Properties_Dependencies_DependsOn:
     id: Any = None
     resource_name: Any = None
     resource_type: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Dependencies:
+class DeploymentsDeploymentExtended_Value_Properties_Dependencies:
     depends_on: Any = None
     id: Any = None
     resource_name: Any = None
     resource_type: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfo:
+class DeploymentsDeploymentExtended_Value_Properties_Diagnostics_AdditionalInfo:
     info: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Diagnostics:
+class DeploymentsDeploymentExtended_Value_Properties_Diagnostics:
     additional_info: Any = None
     code: Any = None
     level: Any = None
@@ -38,40 +37,35 @@ class DeploymentsDeploymentExtended_Properties_Diagnostics:
     target: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Error_Details:
+class DeploymentsDeploymentExtended_Value_Properties_Error_Details:
     pass
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Error:
-    # The error additional info.
+class DeploymentsDeploymentExtended_Value_Properties_Error:
     additional_info: Any = None
-    # The error code.
     code: Any = None
-    # The error details.
     details: Any = None
-    # The error message.
     message: Any = None
-    # The error target.
     target: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Extensions_Config_KeyVaultReference_KeyVault:
+class DeploymentsDeploymentExtended_Value_Properties_Extensions_Config_KeyVaultReference_KeyVault:
     id: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Extensions_Config_KeyVaultReference:
+class DeploymentsDeploymentExtended_Value_Properties_Extensions_Config_KeyVaultReference:
     key_vault: Any = None
     secret_name: Any = None
     secret_version: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Extensions_Config:
+class DeploymentsDeploymentExtended_Value_Properties_Extensions_Config:
     key_vault_reference: Any = None
     type: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Extensions:
+class DeploymentsDeploymentExtended_Value_Properties_Extensions:
     alias: Any = None
     config: Any = None
     config_id: Any = None
@@ -79,16 +73,13 @@ class DeploymentsDeploymentExtended_Properties_Extensions:
     version: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_OnErrorDeployment:
-    # The deployment to be used on error case.
+class DeploymentsDeploymentExtended_Value_Properties_OnErrorDeployment:
     deployment_name: Any = None
-    # The state of the provisioning for the on error deployment.
     provisioning_state: Any = None
-    # The deployment on error behavior type. Possible values are LastSuccessful and SpecificDeployment.
     type: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_OutputResources:
+class DeploymentsDeploymentExtended_Value_Properties_OutputResources:
     api_version: Any = None
     extension: Any = None
     id: Any = None
@@ -96,32 +87,30 @@ class DeploymentsDeploymentExtended_Properties_OutputResources:
     resource_type: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_ParametersLink:
-    # If included, must match the ContentVersion in the template.
+class DeploymentsDeploymentExtended_Value_Properties_ParametersLink:
     content_version: Any = None
-    # The URI of the parameters file.
     uri: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata:
+class DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata:
     attributes: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPattern:
+class DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases_DefaultPattern:
     phrase: Any = None
     type: Any = None
     variable: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_Paths:
+class DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases_Paths:
     api_versions: Any = None
     metadata: Any = None
     path: Any = None
     pattern: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases:
+class DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases:
     default_metadata: Any = None
     default_path: Any = None
     default_pattern: Any = None
@@ -130,23 +119,23 @@ class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases:
     type: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfiles:
+class DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_ApiProfiles:
     api_version: Any = None
     profile_version: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappings:
+class DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_LocationMappings:
     extended_locations: Any = None
     location: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappings:
+class DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_ZoneMappings:
     location: Any = None
     zones: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes:
+class DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes:
     aliases: Any = None
     api_profiles: Any = None
     api_versions: Any = None
@@ -159,7 +148,7 @@ class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes:
     zone_mappings: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_Providers:
+class DeploymentsDeploymentExtended_Value_Properties_Providers:
     id: Any = None
     namespace: Any = None
     provider_authorization_consent_state: Any = None
@@ -168,78 +157,57 @@ class DeploymentsDeploymentExtended_Properties_Providers:
     resource_types: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties_TemplateLink:
-    # If included, must match the ContentVersion in the template.
+class DeploymentsDeploymentExtended_Value_Properties_TemplateLink:
     content_version: Any = None
-    # The resource id of a Template Spec. Use either the id or uri property, but not both.
     id: Any = None
-    # The query string (for example, a SAS token) to be used with the templateLink URI.
     query_string: Any = None
-    # The relativePath property can be used to deploy a linked template at a location relative to the parent. If the parent template was linked with a TemplateSpec, this will reference an artifact in the TemplateSpec. If the parent was linked with a URI, the child deployment will be a combination of the parent and relativePath URIs
     relative_path: Any = None
-    # The URI of the template to deploy. Use either the uri or id property, but not both.
     uri: Any = None
 
 @dataclasses.dataclass
-class DeploymentsDeploymentExtended_Properties:
-    # The correlation ID of the deployment.
+class DeploymentsDeploymentExtended_Value_Properties:
     correlation_id: Any = None
-    # The debug setting.
     debug_setting: Any = None
-    # The list of deployment dependencies.
     dependencies: Any = None
-    # Contains diagnostic information collected during validation process.
     diagnostics: Any = None
-    # The duration of the template deployment.
     duration: Any = None
-    # Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also follows the OData error response format.)
     error: Any = None
-    # The extensions used in this deployment.
     extensions: Any = None
-    # The mode that is used to deploy resources. This value can be either Incremental or Complete. In Incremental mode, resources are deployed without deleting existing resources that are not included in the template. In Complete mode, resources are deployed and existing resources in the resource group that are not included in the template are deleted. Be careful when using Complete mode as you may unintentionally delete resources.
     mode: Any = None
-    # Deployment on error behavior with additional details.
     on_error_deployment: Any = None
-    # Array of provisioned resources.
     output_resources: Any = None
-    # Key/value pairs that represent deployment output.
     outputs: Any = None
-    # Deployment parameters.
     parameters: Any = None
-    # Entity representing the reference to the deployment parameters.
     parameters_link: Any = None
-    # The list of resource providers needed for the deployment.
     providers: Any = None
-    # Denotes the state of provisioning.
     provisioning_state: Any = None
-    # The hash produced for the template.
     template_hash: Any = None
-    # Entity representing the reference to the template.
     template_link: Any = None
-    # The timestamp of the template deployment.
     timestamp: Any = None
-    # Array of validated resources.
     validated_resources: Any = None
-    # The level of validation performed on the deployment.
     validation_level: Any = None
 
 @dataclasses.dataclass
+class DeploymentsDeploymentExtended_Value:
+    location: Any = None
+    properties: Any = None
+    tags: Any = None
+
+@dataclasses.dataclass
 class DeploymentsDeploymentExtendedConfig:
-    deployment_name: Any = None
+    group_id: Any = None
 
 @dataclasses.dataclass
 class DeploymentsDeploymentExtendedAttrs:
-    deployment_name: Any = None
-    # the location of the deployment.
-    location: Any = None
-    # Deployment properties with additional details.
-    properties: Any = None
-    # Deployment tags
-    tags: Any = None
+    group_id: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The DeploymentExtended items on this page
+    value: Any = None
 
 DeploymentsDeploymentExtended = ubx.DataSourceBinding(
     wire_type="azure_resources_deployments_deployment_extended",
     fields={
-        "deployment_name": ubx.FieldSpec(wire_name="deployment_name"),
+        "group_id": ubx.FieldSpec(wire_name="group_id"),
     },
 )

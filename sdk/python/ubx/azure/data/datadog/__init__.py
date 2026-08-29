@@ -4,11 +4,9 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .agreement_resource_list_response import AgreementResourceListResponse, AgreementResourceListResponseConfig
+from .agreement_resource import AgreementResource, AgreementResourceConfig
 from .create_resource_supported_response import CreateResourceSupportedResponse, CreateResourceSupportedResponseConfig
-from .create_resource_supported_response_list import CreateResourceSupportedResponseList, CreateResourceSupportedResponseListConfig
-from .monitor_resource_list_response import MonitorResourceListResponse, MonitorResourceListResponseConfig
-from .monitored_subscription_properties_list import MonitoredSubscriptionPropertiesList, MonitoredSubscriptionPropertiesListConfig
-from .monitoring_tag_rules_list_response import MonitoringTagRulesListResponse, MonitoringTagRulesListResponseConfig
-from .operation_list_result import OperationListResult, OperationListResultConfig
-from .single_sign_on_resource_list_response import SingleSignOnResourceListResponse, SingleSignOnResourceListResponseConfig
+from .monitor_resource import MonitorResource, MonitorResourceConfig
+from .monitored_subscription_properties import MonitoredSubscriptionProperties, MonitoredSubscriptionPropertiesConfig
+from .monitoring_tag_rules import MonitoringTagRules, MonitoringTagRulesConfig
+from .single_sign_on_resource import SingleSignOnResource, SingleSignOnResourceConfig

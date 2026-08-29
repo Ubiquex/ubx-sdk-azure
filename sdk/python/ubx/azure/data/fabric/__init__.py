@@ -4,7 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .capacity_list_result import CapacityListResult, CapacityListResultConfig
-from .microsoft_fabric import MicrosoftFabric, MicrosoftFabricConfig
-from .rp_sku_enumeration_for_existing_resource_result import RpSkuEnumerationForExistingResourceResult, RpSkuEnumerationForExistingResourceResultConfig
-from .rp_sku_enumeration_for_new_resource_result import RpSkuEnumerationForNewResourceResult, RpSkuEnumerationForNewResourceResultConfig
+from .capacity import Capacity, CapacityConfig
+from .rp_sku_details_for_existing_resource import RpSkuDetailsForExistingResource, RpSkuDetailsForExistingResourceConfig
+from .rp_sku_details_for_new_resource import RpSkuDetailsForNewResource, RpSkuDetailsForNewResourceConfig

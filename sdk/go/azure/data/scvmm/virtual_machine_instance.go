@@ -3,68 +3,48 @@ package scvmm
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type VirtualMachineInstance_ExtendedLocation struct {
-	// The extended location name.
+type VirtualMachineInstance_Value_ExtendedLocation struct {
 	Name any
-	// The extended location type.
 	Type any
 }
 
-type VirtualMachineInstance_Properties_AvailabilitySets struct {
+type VirtualMachineInstance_Value_Properties_AvailabilitySets struct {
 	Id any
 	Name any
 }
 
-type VirtualMachineInstance_Properties_HardwareProfile struct {
-	// Gets or sets the number of vCPUs for the vm.
+type VirtualMachineInstance_Value_Properties_HardwareProfile struct {
 	CpuCount any
-	// Dynamic memory enabled.
 	DynamicMemoryEnabled any
-	// Gets or sets the max dynamic memory for the vm.
 	DynamicMemoryMaxMb any
-	// Gets or sets the min dynamic memory for the vm.
 	DynamicMemoryMinMb any
-	// Highly available.
 	IsHighlyAvailable any
-	// Limit CPU for migration.
 	LimitCpuForMigration any
-	// MemoryMB is the size of a virtual machine's memory, in MB.
 	MemoryMb any
 }
 
-type VirtualMachineInstance_Properties_InfrastructureProfile_Checkpoints struct {
+type VirtualMachineInstance_Value_Properties_InfrastructureProfile_Checkpoints struct {
 	CheckpointId any
 	Description any
 	Name any
 	ParentCheckpointId any
 }
 
-type VirtualMachineInstance_Properties_InfrastructureProfile struct {
-	// Gets or sets the bios guid for the vm.
+type VirtualMachineInstance_Value_Properties_InfrastructureProfile struct {
 	BiosGuid any
-	// Type of checkpoint supported for the vm.
 	CheckpointType any
-	// Checkpoints in the vm.
 	Checkpoints any
-	// ARM Id of the cloud resource to use for deploying the vm.
 	CloudId any
-	// Gets or sets the generation for the vm.
 	Generation any
-	// Gets or sets the inventory Item ID for the resource.
 	InventoryItemId any
-	// Defines the resource properties.
 	LastRestoredVmcheckpoint any
-	// ARM Id of the template resource to use for deploying the vm.
 	TemplateId any
-	// Unique ID of the virtual machine.
 	Uuid any
-	// VMName is the name of VM on the SCVmm server.
 	VmName any
-	// ARM Id of the vmmServer resource in which this resource resides.
 	VmmServerId any
 }
 
-type VirtualMachineInstance_Properties_NetworkProfile_NetworkInterfaces struct {
+type VirtualMachineInstance_Value_Properties_NetworkProfile_NetworkInterfaces struct {
 	DisplayName any
 	Ipv4AddressType any
 	Ipv4Addresses any
@@ -78,41 +58,27 @@ type VirtualMachineInstance_Properties_NetworkProfile_NetworkInterfaces struct {
 	VirtualNetworkId any
 }
 
-type VirtualMachineInstance_Properties_NetworkProfile struct {
-	// Gets or sets the list of network interfaces associated with the virtual machine.
+type VirtualMachineInstance_Value_Properties_NetworkProfile struct {
 	NetworkInterfaces any
 }
 
-type VirtualMachineInstance_Properties_OsProfile struct {
-	// Admin password of the virtual machine.
+type VirtualMachineInstance_Value_Properties_OsProfile struct {
 	AdminPassword any
-	// Gets or sets the admin username.
 	AdminUsername any
-	// Gets or sets computer name.
 	ComputerName any
-	// Gets or sets the domain name.
 	DomainName any
-	// Password of the domain the VM has to join.
 	DomainPassword any
-	// Gets or sets the domain username.
 	DomainUsername any
-	// Gets os sku.
 	OsSku any
-	// Virtual machine operating system type.
 	OsType any
-	// Gets os version.
 	OsVersion any
-	// Gets or sets the product key.Input format xxxxx-xxxxx-xxxxx-xxxxx-xxxxx
 	ProductKey any
-	// Get or sets the commands to be run once at the time of creation separated by semicolons.
 	RunOnceCommands any
-	// Gets or sets the index value of the timezone.
 	Timezone any
-	// Gets or sets the workgroup.
 	Workgroup any
 }
 
-type VirtualMachineInstance_Properties_StorageProfile_Disks struct {
+type VirtualMachineInstance_Value_Properties_StorageProfile_Disks struct {
 	Bus any
 	BusType any
 	CreateDiffDisk any
@@ -129,28 +95,24 @@ type VirtualMachineInstance_Properties_StorageProfile_Disks struct {
 	VolumeType any
 }
 
-type VirtualMachineInstance_Properties_StorageProfile struct {
-	// Gets or sets the list of virtual disks associated with the virtual machine.
+type VirtualMachineInstance_Value_Properties_StorageProfile struct {
 	Disks any
 }
 
-type VirtualMachineInstance_Properties struct {
-	// Availability Sets in vm.
+type VirtualMachineInstance_Value_Properties struct {
 	AvailabilitySets any
-	// Defines the resource properties.
 	HardwareProfile any
-	// Specifies the vmmServer infrastructure specific settings for the virtual machine instance.
 	InfrastructureProfile any
-	// Defines the resource properties.
 	NetworkProfile any
-	// Defines the resource properties.
 	OsProfile any
-	// Gets the power state of the virtual machine.
 	PowerState any
-	// The provisioning state of the resource.
 	ProvisioningState any
-	// Defines the resource properties.
 	StorageProfile any
+}
+
+type VirtualMachineInstance_Value struct {
+	ExtendedLocation any
+	Properties any
 }
 
 type VirtualMachineInstanceConfig struct {
@@ -158,11 +120,11 @@ type VirtualMachineInstanceConfig struct {
 }
 
 type VirtualMachineInstanceAttrs struct {
-	// The extended location.
-	ExtendedLocation any
-	// Defines the resource properties.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ResourceUri any
+	// The VirtualMachineInstance items on this page
+	Value any
 }
 
 var VirtualMachineInstance = ubx.DataSourceBinding{

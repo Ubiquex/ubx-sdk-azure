@@ -7,88 +7,67 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class WorkflowTrigger_Properties_Recurrence_Schedule_MonthlyOccurrences:
+class WorkflowTrigger_Value_Properties_Recurrence_Schedule_MonthlyOccurrences:
     day: Any = None
     occurrence: Any = None
 
 @dataclasses.dataclass
-class WorkflowTrigger_Properties_Recurrence_Schedule:
-    # The hours.
+class WorkflowTrigger_Value_Properties_Recurrence_Schedule:
     hours: Any = None
-    # The minutes.
     minutes: Any = None
-    # The month days.
     month_days: Any = None
-    # The monthly occurrences.
     monthly_occurrences: Any = None
-    # The days of the week.
     week_days: Any = None
 
 @dataclasses.dataclass
-class WorkflowTrigger_Properties_Recurrence:
-    # The end time.
+class WorkflowTrigger_Value_Properties_Recurrence:
     end_time: Any = None
-    # The recurrence frequency.
     frequency: Any = None
-    # The interval.
     interval: Any = None
-    # The recurrence schedule.
     schedule: Any = None
-    # The start time.
     start_time: Any = None
-    # The time zone.
     time_zone: Any = None
 
 @dataclasses.dataclass
-class WorkflowTrigger_Properties_Workflow:
-    # The resource id.
+class WorkflowTrigger_Value_Properties_Workflow:
     id: Any = None
-    # Gets the resource name.
     name: Any = None
-    # Gets the resource type.
     type: Any = None
 
 @dataclasses.dataclass
-class WorkflowTrigger_Properties:
-    # Gets the changed time.
+class WorkflowTrigger_Value_Properties:
     changed_time: Any = None
-    # Gets the created time.
     created_time: Any = None
-    # Gets the last execution time.
     last_execution_time: Any = None
-    # Gets the next execution time.
     next_execution_time: Any = None
-    # The workflow trigger provisioning state.
     provisioning_state: Any = None
-    # The workflow trigger recurrence.
     recurrence: Any = None
-    # The workflow state.
     state: Any = None
-    # The workflow status.
     status: Any = None
-    # The resource reference.
     workflow: Any = None
+
+@dataclasses.dataclass
+class WorkflowTrigger_Value:
+    name: Any = None
+    properties: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
 class WorkflowTriggerConfig:
     api_version: Any = None
     resource_group_name: Any = None
     subscription_id: Any = None
-    trigger_name: Any = None
     workflow_name: Any = None
 
 @dataclasses.dataclass
 class WorkflowTriggerAttrs:
     api_version: Any = None
-    # Gets the workflow trigger name.
-    name: Any = None
-    # The workflow trigger properties.
-    properties: Any = None
+    # The URL to get the next set of results.
+    next_link: Any = None
     resource_group_name: Any = None
     subscription_id: Any = None
-    trigger_name: Any = None
-    # Gets the workflow trigger type.
-    type: Any = None
+    # A list of workflow triggers.
+    value: Any = None
     workflow_name: Any = None
 
 WorkflowTrigger = ubx.DataSourceBinding(
@@ -97,7 +76,6 @@ WorkflowTrigger = ubx.DataSourceBinding(
         "api_version": ubx.FieldSpec(wire_name="api_version"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
-        "trigger_name": ubx.FieldSpec(wire_name="trigger_name"),
         "workflow_name": ubx.FieldSpec(wire_name="workflow_name"),
     },
 )

@@ -3,56 +3,42 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiFunctionEnvelope_Properties struct {
-	// Config information.
+type OpenapiFunctionEnvelope_Value_Properties struct {
 	Config any
-	// Config URI.
 	ConfigHref any
-	// File list.
 	Files any
-	// Function App ID.
 	FunctionAppId any
-	// Function URI.
 	Href any
-	// The invocation URL
 	InvokeUrlTemplate any
-	// Gets or sets a value indicating whether the function is disabled
 	IsDisabled any
-	// The function language
 	Language any
-	// Script URI.
 	ScriptHref any
-	// Script root path URI.
 	ScriptRootPathHref any
-	// Secrets file URI.
 	SecretsFileHref any
-	// Test data used when testing via the Azure Portal.
 	TestData any
-	// Test data URI.
 	TestDataHref any
 }
 
+type OpenapiFunctionEnvelope_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiFunctionEnvelopeConfig struct {
-	FunctionName any
 	Name any
-	Slot any
 }
 
 type OpenapiFunctionEnvelopeAttrs struct {
-	FunctionName any
-	// Kind of resource.
-	Kind any
 	Name any
-	// FunctionEnvelope resource specific properties
-	Properties any
-	Slot any
+	// The link to the next page of items
+	NextLink any
+	// The FunctionEnvelope items on this page
+	Value any
 }
 
 var OpenapiFunctionEnvelope = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_function_envelope",
 	Fields: ubx.FieldMap{
-		"FunctionName": ubx.FieldSpec{WireName: "function_name"},
 		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
 	},
 }

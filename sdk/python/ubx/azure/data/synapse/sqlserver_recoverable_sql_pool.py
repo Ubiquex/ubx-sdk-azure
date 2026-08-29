@@ -7,29 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class SqlserverRecoverableSqlPool_Properties:
-    # The edition of the database
+class SqlserverRecoverableSqlPool_Value_Properties:
     edition: Any = None
-    # The elastic pool name of the database
     elastic_pool_name: Any = None
-    # The last available backup date of the database (ISO8601 format)
     last_available_backup_date: Any = None
-    # The service level objective name of the database
     service_level_objective: Any = None
 
 @dataclasses.dataclass
+class SqlserverRecoverableSqlPool_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class SqlserverRecoverableSqlPoolConfig:
-    sql_pool_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class SqlserverRecoverableSqlPoolAttrs:
-    # The properties of a recoverable sql pool
-    properties: Any = None
-    sql_pool_name: Any = None
+    # Link to retrieve next page of results.
+    next_link: Any = None
+    # A list of recoverable sql pool
+    value: Any = None
 
 SqlserverRecoverableSqlPool = ubx.DataSourceBinding(
     wire_type="azure_synapse_sqlserver_recoverable_sql_pool",
     fields={
-        "sql_pool_name": ubx.FieldSpec(wire_name="sql_pool_name"),
     },
 )

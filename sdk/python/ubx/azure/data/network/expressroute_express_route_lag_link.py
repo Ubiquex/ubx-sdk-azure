@@ -7,18 +7,14 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ExpressrouteExpressRouteLagLink_Properties_MacSecConfig:
-    # Keyvault Secret Identifier URL containing Mac security CAK key.
+class ExpressrouteExpressRouteLagLink_Value_Properties_MacSecConfig:
     cak_secret_identifier: Any = None
-    # Mac security cipher.
     cipher: Any = None
-    # Keyvault Secret Identifier URL containing Mac security CKN key.
     ckn_secret_identifier: Any = None
-    # Sci mode enabled/disabled.
     sci_state: Any = None
 
 @dataclasses.dataclass
-class ExpressrouteExpressRouteLagLink_Properties_Members_Properties:
+class ExpressrouteExpressRouteLagLink_Value_Properties_Members_Properties:
     admin_state: Any = None
     colo_location: Any = None
     connector_type: Any = None
@@ -28,7 +24,7 @@ class ExpressrouteExpressRouteLagLink_Properties_Members_Properties:
     rack_id: Any = None
 
 @dataclasses.dataclass
-class ExpressrouteExpressRouteLagLink_Properties_Members:
+class ExpressrouteExpressRouteLagLink_Value_Properties_Members:
     etag: Any = None
     id: Any = None
     name: Any = None
@@ -36,44 +32,37 @@ class ExpressrouteExpressRouteLagLink_Properties_Members:
     type: Any = None
 
 @dataclasses.dataclass
-class ExpressrouteExpressRouteLagLink_Properties:
-    # Administrative state of the physical port.
+class ExpressrouteExpressRouteLagLink_Value_Properties:
     admin_state: Any = None
-    # Name of Azure router interface.
     interface_name: Any = None
-    # ExpressRouteLink Mac Security Configuration.
     mac_sec_config: Any = None
-    # The set of members of the ExpressRouteLagLink resource.
     members: Any = None
-    # Provisioning states of a resource.
     provisioning_state: Any = None
-    # Name of Azure router associated with link.
     router_name: Any = None
+
+@dataclasses.dataclass
+class ExpressrouteExpressRouteLagLink_Value:
+    etag: Any = None
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLagLinkConfig:
     express_route_lag_name: Any = None
-    link_name: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLagLinkAttrs:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     express_route_lag_name: Any = None
-    # The unique identifier of the resource.
-    id: Any = None
-    link_name: Any = None
-    # Name of child link resource that is unique among child link resources of the parent.
-    name: Any = None
-    # Properties specific to ExpressRouteLagLink resources.
-    properties: Any = None
-    # The type of the resource.
-    type: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The ExpressRouteLagLink items on this page
+    value: Any = None
 
 ExpressrouteExpressRouteLagLink = ubx.DataSourceBinding(
     wire_type="azure_network_expressroute_express_route_lag_link",
     fields={
         "express_route_lag_name": ubx.FieldSpec(wire_name="express_route_lag_name"),
-        "link_name": ubx.FieldSpec(wire_name="link_name"),
     },
 )

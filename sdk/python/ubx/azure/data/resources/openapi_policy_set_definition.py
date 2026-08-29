@@ -7,14 +7,14 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiPolicySetDefinition_Properties_Parameters_Metadata:
+class OpenapiPolicySetDefinition_Value_Properties_Parameters_Metadata:
     assign_permissions: Any = None
     description: Any = None
     display_name: Any = None
     strong_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiPolicySetDefinition_Properties_Parameters:
+class OpenapiPolicySetDefinition_Value_Properties_Parameters:
     allowed_values: Any = None
     default_value: Any = None
     metadata: Any = None
@@ -22,7 +22,7 @@ class OpenapiPolicySetDefinition_Properties_Parameters:
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiPolicySetDefinition_Properties_PolicyDefinitionGroups:
+class OpenapiPolicySetDefinition_Value_Properties_PolicyDefinitionGroups:
     additional_metadata_id: Any = None
     category: Any = None
     description: Any = None
@@ -30,11 +30,11 @@ class OpenapiPolicySetDefinition_Properties_PolicyDefinitionGroups:
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiPolicySetDefinition_Properties_PolicyDefinitions_Parameters:
+class OpenapiPolicySetDefinition_Value_Properties_PolicyDefinitions_Parameters:
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiPolicySetDefinition_Properties_PolicyDefinitions:
+class OpenapiPolicySetDefinition_Value_Properties_PolicyDefinitions:
     definition_version: Any = None
     effective_definition_version: Any = None
     group_names: Any = None
@@ -44,42 +44,34 @@ class OpenapiPolicySetDefinition_Properties_PolicyDefinitions:
     policy_definition_reference_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiPolicySetDefinition_Properties:
-    # The policy set definition description.
+class OpenapiPolicySetDefinition_Value_Properties:
     description: Any = None
-    # The display name of the policy set definition.
     display_name: Any = None
-    # The policy set definition metadata. Metadata is an open ended object and is typically a collection of key value pairs.
     metadata: Any = None
-    # The policy set definition parameters that can be used in policy definition references.
     parameters: Any = None
-    # The metadata describing groups of policy definition references within the policy set definition.
     policy_definition_groups: Any = None
-    # An array of policy definition references.
     policy_definitions: Any = None
-    # The type of policy definition. Possible values are NotSpecified, BuiltIn, Custom, and Static.
     policy_type: Any = None
-    # The policy set definition version in #.#.# format.
     version: Any = None
-    # A list of available versions for this policy set definition.
     versions: Any = None
 
 @dataclasses.dataclass
+class OpenapiPolicySetDefinition_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiPolicySetDefinitionConfig:
-    management_group_id: Any = None
-    policy_set_definition_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiPolicySetDefinitionAttrs:
-    management_group_id: Any = None
-    policy_set_definition_name: Any = None
-    # The policy set definition properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The PolicySetDefinition items on this page
+    value: Any = None
 
 OpenapiPolicySetDefinition = ubx.DataSourceBinding(
     wire_type="azure_resources_openapi_policy_set_definition",
     fields={
-        "management_group_id": ubx.FieldSpec(wire_name="management_group_id"),
-        "policy_set_definition_name": ubx.FieldSpec(wire_name="policy_set_definition_name"),
     },
 )

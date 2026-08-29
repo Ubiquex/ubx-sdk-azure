@@ -7,82 +7,60 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class CommitmentPlan_Properties_Current_Quota:
-    # Commitment quota quantity.
+class CommitmentPlan_Value_Properties_Current_Quota:
     quantity: Any = None
-    # Commitment quota unit.
     unit: Any = None
 
 @dataclasses.dataclass
-class CommitmentPlan_Properties_Current:
-    # Commitment period commitment count.
+class CommitmentPlan_Value_Properties_Current:
     count: Any = None
-    # Commitment period end date.
     end_date: Any = None
-    # Cognitive Services account commitment quota.
     quota: Any = None
-    # Commitment period start date.
     start_date: Any = None
-    # Commitment period commitment tier.
     tier: Any = None
 
 @dataclasses.dataclass
-class CommitmentPlan_Properties:
-    # AutoRenew commitment plan.
+class CommitmentPlan_Value_Properties:
     auto_renew: Any = None
-    # Commitment plan guid.
     commitment_plan_guid: Any = None
-    # Cognitive Services account commitment period.
     current: Any = None
-    # Account hosting model.
     hosting_model: Any = None
-    # Cognitive Services account commitment period.
     last: Any = None
-    # Cognitive Services account commitment period.
     next: Any = None
-    # Commitment plan type.
     plan_type: Any = None
-    # The list of ProvisioningIssue.
     provisioning_issues: Any = None
-    # Gets the status of the resource at the time the operation was called.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class CommitmentPlan_Sku:
-    # If the SKU supports scale out/in then the capacity integer should be included. If scale out/in is not possible for the resource this may be omitted.
+class CommitmentPlan_Value_Sku:
     capacity: Any = None
-    # If the service has different generations of hardware, for the same SKU, then that can be captured here.
     family: Any = None
-    # The name of the SKU. Ex - P3. It is typically a letter+number code
     name: Any = None
-    # The SKU size. When the name field is the combination of tier and some other value, this would be the standalone code.
     size: Any = None
-    # This field is required to be implemented by the Resource Provider if the service has more than one tier, but is not required on a PUT.
     tier: Any = None
 
 @dataclasses.dataclass
+class CommitmentPlan_Value:
+    etag: Any = None
+    kind: Any = None
+    location: Any = None
+    properties: Any = None
+    sku: Any = None
+    tags: Any = None
+
+@dataclasses.dataclass
 class CommitmentPlanConfig:
-    commitment_plan_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class CommitmentPlanAttrs:
-    commitment_plan_name: Any = None
-    # Resource Etag.
-    etag: Any = None
-    # The kind (type) of cognitive service account.
-    kind: Any = None
-    # The geo-location where the resource lives
-    location: Any = None
-    # Properties of Cognitive Services account commitment plan.
-    properties: Any = None
-    # The resource model definition representing SKU
-    sku: Any = None
-    # Resource tags.
-    tags: Any = None
+    # The link used to get the next page of CommitmentPlan.
+    next_link: Any = None
+    # Gets the list of Cognitive Services accounts CommitmentPlan and their properties.
+    value: Any = None
 
 CommitmentPlan = ubx.DataSourceBinding(
     wire_type="azure_cognitiveservices_commitment_plan",
     fields={
-        "commitment_plan_name": ubx.FieldSpec(wire_name="commitment_plan_name"),
     },
 )

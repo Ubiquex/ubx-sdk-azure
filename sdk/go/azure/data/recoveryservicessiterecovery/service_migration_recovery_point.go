@@ -3,31 +3,32 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServiceMigrationRecoveryPoint_Properties struct {
-	// The recovery point time.
+type ServiceMigrationRecoveryPoint_Value_Properties struct {
 	RecoveryPointTime any
-	// The recovery point type.
 	RecoveryPointType any
+}
+
+type ServiceMigrationRecoveryPoint_Value struct {
+	Location any
+	Properties any
 }
 
 type ServiceMigrationRecoveryPointConfig struct {
 	FabricName any
 	MigrationItemName any
-	MigrationRecoveryPointName any
 	ProtectionContainerName any
 	ResourceName any
 }
 
 type ServiceMigrationRecoveryPointAttrs struct {
 	FabricName any
-	// Resource Location
-	Location any
 	MigrationItemName any
-	MigrationRecoveryPointName any
-	// Migration item recovery point properties.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ProtectionContainerName any
 	ResourceName any
+	// The MigrationRecoveryPoint items on this page
+	Value any
 }
 
 var ServiceMigrationRecoveryPoint = ubx.DataSourceBinding{
@@ -35,7 +36,6 @@ var ServiceMigrationRecoveryPoint = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
 		"MigrationItemName": ubx.FieldSpec{WireName: "migration_item_name"},
-		"MigrationRecoveryPointName": ubx.FieldSpec{WireName: "migration_recovery_point_name"},
 		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},

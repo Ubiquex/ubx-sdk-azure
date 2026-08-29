@@ -4,19 +4,15 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .arm_disaster_recovery_list_result import ArmDisasterRecoveryListResult, ArmDisasterRecoveryListResultConfig
-from .migration_config_list_result import MigrationConfigListResult, MigrationConfigListResultConfig
+from .arm_disaster_recovery import ArmDisasterRecovery, ArmDisasterRecoveryConfig
+from .migration_config_properties import MigrationConfigProperties, MigrationConfigPropertiesConfig
 from .network_rule_set import NetworkRuleSet, NetworkRuleSetConfig
-from .network_rule_set_list_result import NetworkRuleSetListResult, NetworkRuleSetListResultConfig
 from .network_security_perimeter_configuration import NetworkSecurityPerimeterConfiguration, NetworkSecurityPerimeterConfigurationConfig
-from .network_security_perimeter_configuration_list import NetworkSecurityPerimeterConfigurationList, NetworkSecurityPerimeterConfigurationListConfig
-from .operation_list_result import OperationListResult, OperationListResultConfig
-from .private_endpoint_connection_list_result import PrivateEndpointConnectionListResult, PrivateEndpointConnectionListResultConfig
-from .private_link_resources_list_result import PrivateLinkResourcesListResult, PrivateLinkResourcesListResultConfig
-from .rule_list_result import RuleListResult, RuleListResultConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
+from .rule import Rule, RuleConfig
 from .sbauthorization_rule import SbauthorizationRule, SbauthorizationRuleConfig
-from .sbauthorization_rule_list_result import SbauthorizationRuleListResult, SbauthorizationRuleListResultConfig
-from .sbnamespace_list_result import SbnamespaceListResult, SbnamespaceListResultConfig
-from .sbqueue_list_result import SbqueueListResult, SbqueueListResultConfig
-from .sbsubscription_list_result import SbsubscriptionListResult, SbsubscriptionListResultConfig
-from .sbtopic_list_result import SbtopicListResult, SbtopicListResultConfig
+from .sbnamespace import Sbnamespace, SbnamespaceConfig
+from .sbqueue import Sbqueue, SbqueueConfig
+from .sbsubscription import Sbsubscription, SbsubscriptionConfig
+from .sbtopic import Sbtopic, SbtopicConfig

@@ -7,50 +7,46 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiPrivateEndpointConnection_Properties_PrivateEndpoint:
-    # The ARM resource identifier of the private endpoint. This is of the form /subscriptions/{subscription}/resourceGroups/{group}/providers/Microsoft.Network/privateEndpoints/{privateEndpoint}.
+class OpenapiPrivateEndpointConnection_Value_Properties_PrivateEndpoint:
     id: Any = None
 
 @dataclasses.dataclass
-class OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState:
-    # Action required on the private connection state
+class OpenapiPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState:
     actions_required: Any = None
-    # Description of the private Connection state
     description: Any = None
-    # The status of the Batch private endpoint connection
     status: Any = None
 
 @dataclasses.dataclass
-class OpenapiPrivateEndpointConnection_Properties:
-    # The value has one and only one group id.
+class OpenapiPrivateEndpointConnection_Value_Properties:
     group_ids: Any = None
-    # The private endpoint of the private endpoint connection.
     private_endpoint: Any = None
-    # The private link service connection state of the private endpoint connection
     private_link_service_connection_state: Any = None
-    # The provisioning state of the private endpoint connection.
     provisioning_state: Any = None
+
+@dataclasses.dataclass
+class OpenapiPrivateEndpointConnection_Value:
+    etag: Any = None
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiPrivateEndpointConnectionConfig:
     account_name: Any = None
-    private_endpoint_connection_name: Any = None
+    maxresults: Any = None
 
 @dataclasses.dataclass
 class OpenapiPrivateEndpointConnectionAttrs:
     account_name: Any = None
-    # The ETag of the resource, used for concurrency statements.
-    etag: Any = None
-    private_endpoint_connection_name: Any = None
-    # Private endpoint connection properties.
-    properties: Any = None
-    # The tags of the resource.
-    tags: Any = None
+    maxresults: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The PrivateEndpointConnection items on this page
+    value: Any = None
 
 OpenapiPrivateEndpointConnection = ubx.DataSourceBinding(
     wire_type="azure_batch_openapi_private_endpoint_connection",
     fields={
         "account_name": ubx.FieldSpec(wire_name="account_name"),
-        "private_endpoint_connection_name": ubx.FieldSpec(wire_name="private_endpoint_connection_name"),
+        "maxresults": ubx.FieldSpec(wire_name="maxresults"),
     },
 )

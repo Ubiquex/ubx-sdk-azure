@@ -7,39 +7,34 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class BuildResult_Properties_BuildStages:
+class BuildResult_Value_Properties_BuildStages:
     exit_code: Any = None
     name: Any = None
     reason: Any = None
     status: Any = None
 
 @dataclasses.dataclass
-class BuildResult_Properties_Error:
-    # The code of error.
+class BuildResult_Value_Properties_Error:
     code: Any = None
-    # The message of error.
     message: Any = None
 
 @dataclasses.dataclass
-class BuildResult_Properties:
-    # The build pod name which can be used to get the build log streaming.
+class BuildResult_Value_Properties:
     build_pod_name: Any = None
-    # All of the build stage (init-container and container) resources in build pod.
     build_stages: Any = None
-    # The error code compose of code and message.
     error: Any = None
-    # The container registry image of this build result.
     image: Any = None
-    # The name of this build result
     name: Any = None
-    # Provisioning state of the KPack build result
     provisioning_state: Any = None
+
+@dataclasses.dataclass
+class BuildResult_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class BuildResultConfig:
     api_version: Any = None
     build_name: Any = None
-    build_result_name: Any = None
     build_service_name: Any = None
     resource_group_name: Any = None
     service_name: Any = None
@@ -49,20 +44,20 @@ class BuildResultConfig:
 class BuildResultAttrs:
     api_version: Any = None
     build_name: Any = None
-    build_result_name: Any = None
     build_service_name: Any = None
-    # Build result resource properties payload
-    properties: Any = None
+    # URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
+    next_link: Any = None
     resource_group_name: Any = None
     service_name: Any = None
     subscription_id: Any = None
+    # Collection of Build result resources
+    value: Any = None
 
 BuildResult = ubx.DataSourceBinding(
     wire_type="azure_appplatform_build_result",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
         "build_name": ubx.FieldSpec(wire_name="build_name"),
-        "build_result_name": ubx.FieldSpec(wire_name="build_result_name"),
         "build_service_name": ubx.FieldSpec(wire_name="build_service_name"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "service_name": ubx.FieldSpec(wire_name="service_name"),

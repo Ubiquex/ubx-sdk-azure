@@ -7,53 +7,43 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class Catalog_Properties_LastSyncStats:
-    # Count of catalog items added during synchronization.
+class Catalog_Value_Properties_LastSyncStats:
     added: Any = None
-    # Count of catalog items removed during synchronization.
     removed: Any = None
-    # Indicates catalog item types that were synced.
     synced_catalog_item_types: Any = None
-    # Count of synchronization errors that occured during synchronization.
     synchronization_errors: Any = None
-    # Count of catalog items that were unchanged during synchronization.
     unchanged: Any = None
-    # Count of catalog items updated during synchronization.
     updated: Any = None
-    # Count of catalog items that had validation errors during synchronization.
     validation_errors: Any = None
 
 @dataclasses.dataclass
-class Catalog_Properties:
-    # The connection state of the catalog.
+class Catalog_Value_Properties:
     connection_state: Any = None
-    # When the catalog was last connected.
     last_connection_time: Any = None
-    # Stats of the synchronization.
     last_sync_stats: Any = None
-    # When the catalog was last synced.
     last_sync_time: Any = None
-    # Provisioning state of the resource.
     provisioning_state: Any = None
-    # The synchronization state of the catalog.
     sync_state: Any = None
 
 @dataclasses.dataclass
+class Catalog_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class CatalogConfig:
-    catalog_name: Any = None
-    project_name: Any = None
+    dev_center_name: Any = None
 
 @dataclasses.dataclass
 class CatalogAttrs:
-    catalog_name: Any = None
-    project_name: Any = None
-    # Properties of a catalog.
-    properties: Any = None
+    dev_center_name: Any = None
+    # URL to get the next set of results if there are any.
+    next_link: Any = None
+    # Current page of results.
+    value: Any = None
 
 Catalog = ubx.DataSourceBinding(
     wire_type="azure_devcenter_catalog",
     fields={
-        "catalog_name": ubx.FieldSpec(wire_name="catalog_name"),
-        "project_name": ubx.FieldSpec(wire_name="project_name"),
+        "dev_center_name": ubx.FieldSpec(wire_name="dev_center_name"),
     },
 )

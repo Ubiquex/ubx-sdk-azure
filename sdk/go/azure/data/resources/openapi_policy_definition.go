@@ -3,32 +3,26 @@ package resources
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiPolicyDefinition_Properties_ExternalEvaluationEnforcementSettings_EndpointSettings struct {
-	// The details of the endpoint.
+type OpenapiPolicyDefinition_Value_Properties_ExternalEvaluationEnforcementSettings_EndpointSettings struct {
 	Details any
-	// The kind of the endpoint.
 	Kind any
 }
 
-type OpenapiPolicyDefinition_Properties_ExternalEvaluationEnforcementSettings struct {
-	// The settings of an external endpoint providing evaluation results.
+type OpenapiPolicyDefinition_Value_Properties_ExternalEvaluationEnforcementSettings struct {
 	EndpointSettings any
-	// What to do when evaluating an enforcement policy that requires an external evaluation and the token is missing. Possible values are Audit and Deny and language expressions are supported.
 	MissingTokenAction any
-	// The lifespan of the endpoint invocation result after which it's no longer valid. Value is expected to follow the ISO 8601 duration format and language expressions are supported.
 	ResultLifespan any
-	// An array of the role definition Ids the assignment's MSI will need in order to invoke the endpoint.
 	RoleDefinitionIds any
 }
 
-type OpenapiPolicyDefinition_Properties_Parameters_Metadata struct {
+type OpenapiPolicyDefinition_Value_Properties_Parameters_Metadata struct {
 	AssignPermissions any
 	Description any
 	DisplayName any
 	StrongType any
 }
 
-type OpenapiPolicyDefinition_Properties_Parameters struct {
+type OpenapiPolicyDefinition_Value_Properties_Parameters struct {
 	AllowedValues any
 	DefaultValue any
 	Metadata any
@@ -36,45 +30,35 @@ type OpenapiPolicyDefinition_Properties_Parameters struct {
 	Type any
 }
 
-type OpenapiPolicyDefinition_Properties struct {
-	// The policy definition description.
+type OpenapiPolicyDefinition_Value_Properties struct {
 	Description any
-	// The display name of the policy definition.
 	DisplayName any
-	// The details of the source of external evaluation results required by the policy during enforcement evaluation.
 	ExternalEvaluationEnforcementSettings any
-	// The policy definition metadata. Metadata is an open ended object and is typically a collection of key value pairs.
 	Metadata any
-	// The policy definition mode. Some examples are All, Indexed, Microsoft.KeyVault.Data.
 	Mode any
-	// The parameter definitions for parameters used in the policy rule. The keys are the parameter names.
 	Parameters any
-	// The policy rule.
 	PolicyRule any
-	// The type of policy definition. Possible values are NotSpecified, BuiltIn, Custom, and Static.
 	PolicyType any
-	// The policy definition version in #.#.# format.
 	Version any
-	// A list of available versions for this policy definition.
 	Versions any
 }
 
+type OpenapiPolicyDefinition_Value struct {
+	Properties any
+}
+
 type OpenapiPolicyDefinitionConfig struct {
-	ManagementGroupId any
-	PolicyDefinitionName any
 }
 
 type OpenapiPolicyDefinitionAttrs struct {
-	ManagementGroupId any
-	PolicyDefinitionName any
-	// The policy definition properties.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The PolicyDefinition items on this page
+	Value any
 }
 
 var OpenapiPolicyDefinition = ubx.DataSourceBinding{
 	WireType: "azure_resources_openapi_policy_definition",
 	Fields: ubx.FieldMap{
-		"ManagementGroupId": ubx.FieldSpec{WireName: "management_group_id"},
-		"PolicyDefinitionName": ubx.FieldSpec{WireName: "policy_definition_name"},
 	},
 }

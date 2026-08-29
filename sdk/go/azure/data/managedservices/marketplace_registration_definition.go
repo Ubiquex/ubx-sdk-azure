@@ -3,81 +3,70 @@ package managedservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type MarketplaceRegistrationDefinition_Plan struct {
-	// Azure Marketplace plan name.
+type MarketplaceRegistrationDefinition_Value_Plan struct {
 	Name any
-	// Azure Marketplace product code.
 	Product any
-	// Azure Marketplace publisher ID.
 	Publisher any
-	// Azure Marketplace plan's version.
 	Version any
 }
 
-type MarketplaceRegistrationDefinition_Properties_Authorizations struct {
+type MarketplaceRegistrationDefinition_Value_Properties_Authorizations struct {
 	DelegatedRoleDefinitionIds any
 	PrincipalId any
 	PrincipalIdDisplayName any
 	RoleDefinitionId any
 }
 
-type MarketplaceRegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApprovers struct {
+type MarketplaceRegistrationDefinition_Value_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApprovers struct {
 	PrincipalId any
 	PrincipalIdDisplayName any
 }
 
-type MarketplaceRegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy struct {
+type MarketplaceRegistrationDefinition_Value_Properties_EligibleAuthorizations_JustInTimeAccessPolicy struct {
 	ManagedByTenantApprovers any
 	MaximumActivationDuration any
 	MultiFactorAuthProvider any
 }
 
-type MarketplaceRegistrationDefinition_Properties_EligibleAuthorizations struct {
+type MarketplaceRegistrationDefinition_Value_Properties_EligibleAuthorizations struct {
 	JustInTimeAccessPolicy any
 	PrincipalId any
 	PrincipalIdDisplayName any
 	RoleDefinitionId any
 }
 
-type MarketplaceRegistrationDefinition_Properties struct {
-	// The collection of authorization objects describing the access Azure Active Directory principals in the managedBy tenant will receive on the delegated resource in the managed tenant.
+type MarketplaceRegistrationDefinition_Value_Properties struct {
 	Authorizations any
-	// The collection of eligible authorization objects describing the just-in-time access Azure Active Directory principals in the managedBy tenant will receive on the delegated resource in the managed tenant.
 	EligibleAuthorizations any
-	// The identifier of the managedBy tenant.
 	ManagedByTenantId any
-	// The marketplace offer display name.
 	OfferDisplayName any
-	// The marketplace plan display name.
 	PlanDisplayName any
-	// The marketplace publisher display name.
 	PublisherDisplayName any
+}
+
+type MarketplaceRegistrationDefinition_Value struct {
+	Id any
+	Name any
+	Plan any
+	Properties any
+	Type any
 }
 
 type MarketplaceRegistrationDefinitionConfig struct {
 	ApiVersion any
-	MarketplaceIdentifier any
 }
 
 type MarketplaceRegistrationDefinitionAttrs struct {
 	ApiVersion any
-	// The fully qualified path of the marketplace registration definition.
-	Id any
-	MarketplaceIdentifier any
-	// The name of the marketplace registration definition.
-	Name any
-	// The details for the Managed Services offer’s plan in Azure Marketplace.
-	Plan any
-	// The properties of the marketplace registration definition.
-	Properties any
-	// The type of the Azure resource (Microsoft.ManagedServices/marketplaceRegistrationDefinitions).
-	Type any
+	// The link to the next page of marketplace registration definitions.
+	NextLink any
+	// The list of marketplace registration definitions.
+	Value any
 }
 
 var MarketplaceRegistrationDefinition = ubx.DataSourceBinding{
 	WireType: "azure_managedservices_marketplace_registration_definition",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"MarketplaceIdentifier": ubx.FieldSpec{WireName: "marketplace_identifier"},
 	},
 }

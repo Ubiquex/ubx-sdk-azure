@@ -7,75 +7,57 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiSoftwareUpdateConfigurationRun_Properties_SoftwareUpdateConfiguration:
-    # Name of the software update configuration triggered the software update configuration run
+class OpenapiSoftwareUpdateConfigurationRun_Value_Properties_SoftwareUpdateConfiguration:
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiSoftwareUpdateConfigurationRun_Properties_Tasks_PostTask:
-    # The job id of the task.
+class OpenapiSoftwareUpdateConfigurationRun_Value_Properties_Tasks_PostTask:
     job_id: Any = None
-    # The name of the source of the task.
     source: Any = None
-    # The status of the task.
     status: Any = None
 
 @dataclasses.dataclass
-class OpenapiSoftwareUpdateConfigurationRun_Properties_Tasks:
-    # Task properties of the software update configuration.
+class OpenapiSoftwareUpdateConfigurationRun_Value_Properties_Tasks:
     post_task: Any = None
-    # Task properties of the software update configuration.
     pre_task: Any = None
 
 @dataclasses.dataclass
-class OpenapiSoftwareUpdateConfigurationRun_Properties:
-    # Number of computers in the software update configuration run.
+class OpenapiSoftwareUpdateConfigurationRun_Value_Properties:
     computer_count: Any = None
-    # Configured duration for the software update configuration run.
     configured_duration: Any = None
-    # CreatedBy property, which only appears in the response.
     created_by: Any = None
-    # Creation time of the resource, which only appears in the response.
     creation_time: Any = None
-    # End time of the software update configuration run.
     end_time: Any = None
-    # Number of computers with failed status.
     failed_count: Any = None
-    # LastModifiedBy property, which only appears in the response.
     last_modified_by: Any = None
-    # Last time resource was modified, which only appears in the response.
     last_modified_time: Any = None
-    # Operating system target of the software update configuration triggered this run
     os_type: Any = None
-    # Software update configuration Run Navigation model.
     software_update_configuration: Any = None
-    # Start time of the software update configuration run.
     start_time: Any = None
-    # Status of the software update configuration run.
     status: Any = None
-    # Software update configuration run tasks model.
     tasks: Any = None
+
+@dataclasses.dataclass
+class OpenapiSoftwareUpdateConfigurationRun_Value:
+    id: Any = None
+    name: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiSoftwareUpdateConfigurationRunConfig:
     automation_account_name: Any = None
-    software_update_configuration_run_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiSoftwareUpdateConfigurationRunAttrs:
     automation_account_name: Any = None
-    # Resource Id of the software update configuration run
-    id: Any = None
-    # Name of the software update configuration run.
-    name: Any = None
-    # Software update configuration properties.
-    properties: Any = None
-    software_update_configuration_run_id: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The softwareUpdateConfigurationRun items on this page
+    value: Any = None
 
 OpenapiSoftwareUpdateConfigurationRun = ubx.DataSourceBinding(
     wire_type="azure_automation_openapi_software_update_configuration_run",
     fields={
         "automation_account_name": ubx.FieldSpec(wire_name="automation_account_name"),
-        "software_update_configuration_run_id": ubx.FieldSpec(wire_name="software_update_configuration_run_id"),
     },
 )

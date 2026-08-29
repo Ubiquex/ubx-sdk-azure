@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .containerservice_container_service_list_result import ContainerserviceContainerServiceListResult, ContainerserviceContainerServiceListResultConfig
+from .containerservice_container_service import ContainerserviceContainerService, ContainerserviceContainerServiceConfig

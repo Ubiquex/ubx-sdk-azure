@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .datascanners_data_scanner_list import DatascannersDataScannerList, DatascannersDataScannerListConfig
+from .datascanners_data_scanner import DatascannersDataScanner, DatascannersDataScannerConfig

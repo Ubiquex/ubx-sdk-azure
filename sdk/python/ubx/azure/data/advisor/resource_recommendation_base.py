@@ -7,87 +7,63 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ResourceRecommendationBase_Properties_ResourceMetadata:
-    # The action to view resource.
+class ResourceRecommendationBase_Value_Properties_ResourceMetadata:
     action: Any = None
-    # The plural user friendly name of resource type. eg: virtual machines
     plural: Any = None
-    # Azure resource Id of the assessed resource
     resource_id: Any = None
-    # The singular user friendly name of resource type. eg: virtual machine
     singular: Any = None
-    # Source from which recommendation is generated
     source: Any = None
 
 @dataclasses.dataclass
-class ResourceRecommendationBase_Properties_ShortDescription:
-    # The issue or opportunity identified by the recommendation and proposed solution.
+class ResourceRecommendationBase_Value_Properties_ShortDescription:
     problem: Any = None
-    # The issue or opportunity identified by the recommendation and proposed solution.
     solution: Any = None
 
 @dataclasses.dataclass
-class ResourceRecommendationBase_Properties:
-    # The list of recommended actions to implement recommendation.
+class ResourceRecommendationBase_Value_Properties:
     actions: Any = None
-    # The category of the recommendation.
     category: Any = None
-    # The sub-category of the recommendation.
     control: Any = None
-    # The detailed description of recommendation.
     description: Any = None
-    # The recommendation metadata properties exposed to customer to provide additional information.
     exposed_metadata_properties: Any = None
-    # Extended properties
     extended_properties: Any = None
-    # The business impact of the recommendation.
     impact: Any = None
-    # The resource type identified by Advisor.
     impacted_field: Any = None
-    # The resource identified by Advisor.
     impacted_value: Any = None
-    # The label of recommendation.
     label: Any = None
-    # The most recent time that Advisor checked the validity of the recommendation.
     last_updated: Any = None
-    # The link to learn more about recommendation and generation logic.
     learn_more_link: Any = None
-    # The recommendation metadata.
     metadata: Any = None
-    # The potential benefit of implementing recommendation.
     potential_benefits: Any = None
-    # The recommendation-type GUID.
     recommendation_type_id: Any = None
-    # The automated way to apply recommendation.
     remediation: Any = None
-    # Recommendation resource metadata
     resource_metadata: Any = None
-    # The potential risk of not implementing the recommendation.
     risk: Any = None
-    # A summary of the recommendation.
     short_description: Any = None
-    # The list of snoozed and dismissed rules for the recommendation.
     suppression_ids: Any = None
+
+@dataclasses.dataclass
+class ResourceRecommendationBase_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class ResourceRecommendationBaseConfig:
     api_version: Any = None
-    recommendation_id: Any = None
-    resource_uri: Any = None
+    subscription_id: Any = None
 
 @dataclasses.dataclass
 class ResourceRecommendationBaseAttrs:
     api_version: Any = None
-    # The properties of the recommendation.
-    properties: Any = None
-    recommendation_id: Any = None
-    resource_uri: Any = None
+    # The link used to get the next page of recommendations.
+    next_link: Any = None
+    subscription_id: Any = None
+    # The list of recommendations.
+    value: Any = None
 
 ResourceRecommendationBase = ubx.DataSourceBinding(
     wire_type="azure_advisor_resource_recommendation_base",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
-        "recommendation_id": ubx.FieldSpec(wire_name="recommendation_id"),
-        "resource_uri": ubx.FieldSpec(wire_name="resource_uri"),
+        "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },
 )

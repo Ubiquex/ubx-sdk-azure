@@ -4,9 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .open_shift_cluster_list import OpenShiftClusterList, OpenShiftClusterListConfig
+from .open_shift_cluster import OpenShiftCluster, OpenShiftClusterConfig
 from .open_shift_version import OpenShiftVersion, OpenShiftVersionConfig
-from .open_shift_version_list import OpenShiftVersionList, OpenShiftVersionListConfig
-from .operation_list import OperationList, OperationListConfig
 from .platform_workload_identity_role_set import PlatformWorkloadIdentityRoleSet, PlatformWorkloadIdentityRoleSetConfig
-from .platform_workload_identity_role_set_list import PlatformWorkloadIdentityRoleSetList, PlatformWorkloadIdentityRoleSetListConfig

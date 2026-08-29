@@ -7,27 +7,22 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_ExtendedStatusInfo_Properties:
-    # Subscription Id
+class OpenapiReservationOrder_Value_Properties_ExtendedStatusInfo_Properties:
     subscription_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_ExtendedStatusInfo:
-    # The message giving detailed information about the status code.
+class OpenapiReservationOrder_Value_Properties_ExtendedStatusInfo:
     message: Any = None
-    # Extended status definition properties
     properties: Any = None
-    # The status of the reservation.
     status_code: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_PlanInformation_PricingCurrencyTotal:
+class OpenapiReservationOrder_Value_Properties_PlanInformation_PricingCurrencyTotal:
     amount: Any = None
-    # The ISO 4217 3-letter currency code for the currency used by this purchase record.
     currency_code: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_PlanInformation_Transactions:
+class OpenapiReservationOrder_Value_Properties_PlanInformation_Transactions:
     billing_account: Any = None
     billing_currency_total: Any = None
     due_date: Any = None
@@ -37,17 +32,14 @@ class OpenapiReservationOrder_Properties_PlanInformation_Transactions:
     status: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_PlanInformation:
-    # For recurring billing plans, indicates the date when next payment will be processed. Null when total is paid off.
+class OpenapiReservationOrder_Value_Properties_PlanInformation:
     next_payment_due_date: Any = None
-    # The price.
     pricing_currency_total: Any = None
-    # Date when the billing plan has started.
     start_date: Any = None
     transactions: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties_AppliedScopeProperties:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties_AppliedScopeProperties:
     display_name: Any = None
     management_group_id: Any = None
     resource_group_id: Any = None
@@ -55,16 +47,16 @@ class OpenapiReservationOrder_Properties_Reservations_Properties_AppliedScopePro
     tenant_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties_MergeProperties:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties_MergeProperties:
     merge_destination: Any = None
     merge_sources: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties:
     instance_flexibility: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties:
     applied_scope_properties: Any = None
     applied_scope_type: Any = None
     applied_scopes: Any = None
@@ -80,45 +72,45 @@ class OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties
     term: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku:
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties:
     location: Any = None
     properties: Any = None
     sku: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties_RenewProperties:
     billing_currency_total: Any = None
     pricing_currency_total: Any = None
     purchase_properties: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties_SplitProperties:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties_SplitProperties:
     split_destinations: Any = None
     split_source: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties_SwapProperties:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties_SwapProperties:
     swap_destination: Any = None
     swap_source: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties_Utilization_Aggregates:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties_Utilization_Aggregates:
     grain: Any = None
     grain_unit: Any = None
     value: Any = None
     value_unit: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties_Utilization:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties_Utilization:
     aggregates: Any = None
     trend: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations_Properties:
+class OpenapiReservationOrder_Value_Properties_Reservations_Properties:
     applied_scope_properties: Any = None
     applied_scope_type: Any = None
     applied_scopes: Any = None
@@ -157,7 +149,7 @@ class OpenapiReservationOrder_Properties_Reservations_Properties:
     utilization: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties_Reservations:
+class OpenapiReservationOrder_Value_Properties_Reservations:
     etag: Any = None
     location: Any = None
     properties: Any = None
@@ -165,67 +157,57 @@ class OpenapiReservationOrder_Properties_Reservations:
     tags: Any = None
 
 @dataclasses.dataclass
-class OpenapiReservationOrder_Properties:
-    # This is the DateTime when the reservation benefit started.
+class OpenapiReservationOrder_Value_Properties:
     benefit_start_time: Any = None
-    # Billing account Id associated to this reservation order.
     billing_account_id: Any = None
-    # Represent the billing plans.
     billing_plan: Any = None
-    # Billing profile Id associated to this reservation order.
     billing_profile_id: Any = None
-    # This is the DateTime when the reservation order was created.
     created_date_time: Any = None
-    # Fully-qualified identifier of the customerId where the benefit is applied. Present only for Enterprise Agreement PartnerLed customers.
     customer_id: Any = None
-    # Friendly name for user to easily identified the reservation order.
     display_name: Any = None
-    # Enrollment id of the reservation order.
     enrollment_id: Any = None
-    # This is the date when the reservation order will expire.
     expiry_date: Any = None
-    # This is the date-time when the reservation order will expire.
     expiry_date_time: Any = None
-    # Extended status information for the reservation.
     extended_status_info: Any = None
-    # Total original quantity of the skus purchased in the reservation order.
     original_quantity: Any = None
-    # Information describing the type of billing plan for this reservation order.
     plan_information: Any = None
-    # Represents UPN
     product_code: Any = None
-    # The provisioning state of the reservation, e.g. Succeeded
     provisioning_state: Any = None
-    # This is the DateTime when the reservation order was initially requested for purchase.
     request_date_time: Any = None
     reservations: Any = None
-    # This is the date-time when the Azure Hybrid Benefit needs to be reviewed.
     review_date_time: Any = None
-    # The term of the reservation, e.g. P1Y
     term: Any = None
+
+@dataclasses.dataclass
+class OpenapiReservationOrder_Value:
+    etag: Any = None
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiReservationOrderConfig:
     billing_account_name: Any = None
-    expand: Any = None
-    reservation_order_id: Any = None
+    filter: Any = None
+    order_by: Any = None
+    skiptoken: Any = None
 
 @dataclasses.dataclass
 class OpenapiReservationOrderAttrs:
     billing_account_name: Any = None
-    etag: Any = None
-    expand: Any = None
-    # Properties of a reservation order.
-    properties: Any = None
-    reservation_order_id: Any = None
-    # Tags for this reservation
-    tags: Any = None
+    filter: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    order_by: Any = None
+    skiptoken: Any = None
+    # The ReservationOrder items on this page
+    value: Any = None
 
 OpenapiReservationOrder = ubx.DataSourceBinding(
     wire_type="azure_billing_openapi_reservation_order",
     fields={
         "billing_account_name": ubx.FieldSpec(wire_name="billing_account_name"),
-        "expand": ubx.FieldSpec(wire_name="expand"),
-        "reservation_order_id": ubx.FieldSpec(wire_name="reservation_order_id"),
+        "filter": ubx.FieldSpec(wire_name="filter"),
+        "order_by": ubx.FieldSpec(wire_name="order_by"),
+        "skiptoken": ubx.FieldSpec(wire_name="skiptoken"),
     },
 )

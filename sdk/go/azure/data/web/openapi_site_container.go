@@ -3,68 +3,54 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiSiteContainer_Properties_EnvironmentVariables struct {
+type OpenapiSiteContainer_Value_Properties_EnvironmentVariables struct {
 	Name any
 	Value any
 }
 
-type OpenapiSiteContainer_Properties_VolumeMounts struct {
+type OpenapiSiteContainer_Value_Properties_VolumeMounts struct {
 	ContainerMountPath any
 	Data any
 	ReadOnly any
 	VolumeSubPath any
 }
 
-type OpenapiSiteContainer_Properties struct {
-	// Auth Type
+type OpenapiSiteContainer_Value_Properties struct {
 	AuthType any
-	// Created Time
 	CreatedTime any
-	// List of environment variables
 	EnvironmentVariables any
-	// Image Name
 	Image any
-	// <code>true</code> if all AppSettings and ConnectionStrings have to be passed to the container as environment variables; <code>false</code> otherwise.
 	InheritAppSettingsAndConnectionStrings any
-	// <code>true</code> if the container is the main site container; <code>false</code> otherwise.
 	IsMain any
-	// Last Modified Time
 	LastModifiedTime any
-	// Password Secret
 	PasswordSecret any
-	// StartUp Command
 	StartUpCommand any
-	// Target Port
 	TargetPort any
-	// UserManagedIdentity ClientId
 	UserManagedIdentityClientId any
-	// User Name
 	UserName any
-	// List of volume mounts
 	VolumeMounts any
 }
 
+type OpenapiSiteContainer_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiSiteContainerConfig struct {
-	ContainerName any
 	Name any
-	Slot any
 }
 
 type OpenapiSiteContainerAttrs struct {
-	ContainerName any
-	// Kind of resource.
-	Kind any
 	Name any
-	// SiteContainer resource specific properties
-	Properties any
-	Slot any
+	// The link to the next page of items
+	NextLink any
+	// The SiteContainer items on this page
+	Value any
 }
 
 var OpenapiSiteContainer = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_site_container",
 	Fields: ubx.FieldMap{
-		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
 		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
 	},
 }

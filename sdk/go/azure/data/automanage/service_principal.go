@@ -3,36 +3,31 @@ package automanage
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServicePrincipal_Properties struct {
-	// Returns the contributor RBAC Role exist or not for the Service Principal Id.
+type ServicePrincipal_Value_Properties struct {
 	AuthorizationSet any
-	// The Service Principal Id for the subscription.
 	ServicePrincipalId any
 }
 
-type ServicePrincipal_SystemData struct {
-	// The timestamp of resource creation (UTC).
+type ServicePrincipal_Value_SystemData struct {
 	CreatedAt any
-	// The identity that created the resource.
 	CreatedBy any
-	// The type of identity that created the resource.
 	CreatedByType any
-	// The timestamp of resource last modification (UTC)
 	LastModifiedAt any
-	// The identity that last modified the resource.
 	LastModifiedBy any
-	// The type of identity that last modified the resource.
 	LastModifiedByType any
+}
+
+type ServicePrincipal_Value struct {
+	Properties any
+	SystemData any
 }
 
 type ServicePrincipalConfig struct {
 }
 
 type ServicePrincipalAttrs struct {
-	// The Service Principal properties for the subscription.
-	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
+	// The list of servicePrincipals.
+	Value any
 }
 
 var ServicePrincipal = ubx.DataSourceBinding{

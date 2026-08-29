@@ -7,29 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiTargetType_Properties:
-    # Localized string of the description.
+class OpenapiTargetType_Value_Properties:
     description: Any = None
-    # Localized string of the display name.
     display_name: Any = None
-    # URL to retrieve JSON schema of the Target Type properties.
     properties_schema: Any = None
-    # List of resource types this Target Type can extend.
     resource_types: Any = None
 
 @dataclasses.dataclass
+class OpenapiTargetType_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiTargetTypeConfig:
-    target_type_name: Any = None
+    continuation_token: Any = None
 
 @dataclasses.dataclass
 class OpenapiTargetTypeAttrs:
-    # Model that represents the base Target Type properties model.
-    properties: Any = None
-    target_type_name: Any = None
+    continuation_token: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The TargetType items on this page
+    value: Any = None
 
 OpenapiTargetType = ubx.DataSourceBinding(
     wire_type="azure_chaos_openapi_target_type",
     fields={
-        "target_type_name": ubx.FieldSpec(wire_name="target_type_name"),
+        "continuation_token": ubx.FieldSpec(wire_name="continuation_token"),
     },
 )

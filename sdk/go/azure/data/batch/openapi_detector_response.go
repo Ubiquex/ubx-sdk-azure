@@ -3,31 +3,31 @@ package batch
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDetectorResponse_Properties struct {
-	// A base64 encoded string that represents the content of a detector.
+type OpenapiDetectorResponse_Value_Properties struct {
 	Value any
+}
+
+type OpenapiDetectorResponse_Value struct {
+	Etag any
+	Properties any
+	Tags any
 }
 
 type OpenapiDetectorResponseConfig struct {
 	AccountName any
-	DetectorId any
 }
 
 type OpenapiDetectorResponseAttrs struct {
 	AccountName any
-	DetectorId any
-	// The ETag of the resource, used for concurrency statements.
-	Etag any
-	// Detector response properties.
-	Properties any
-	// The tags of the resource.
-	Tags any
+	// The link to the next page of items
+	NextLink any
+	// The DetectorResponse items on this page
+	Value any
 }
 
 var OpenapiDetectorResponse = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_detector_response",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"DetectorId": ubx.FieldSpec{WireName: "detector_id"},
 	},
 }

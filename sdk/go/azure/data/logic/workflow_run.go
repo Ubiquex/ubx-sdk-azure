@@ -3,115 +3,86 @@ package logic
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type WorkflowRun_Properties_Correlation struct {
-	// The client tracking id.
+type WorkflowRun_Value_Properties_Correlation struct {
 	ClientTrackingId any
 }
 
-type WorkflowRun_Properties_Outputs struct {
+type WorkflowRun_Value_Properties_Outputs struct {
 	Error any
 }
 
-type WorkflowRun_Properties_Response_InputsLink_ContentHash struct {
-	// The algorithm of the content hash.
+type WorkflowRun_Value_Properties_Response_InputsLink_ContentHash struct {
 	Algorithm any
-	// The value of the content hash.
 	Value any
 }
 
-type WorkflowRun_Properties_Response_InputsLink struct {
-	// The content hash.
+type WorkflowRun_Value_Properties_Response_InputsLink struct {
 	ContentHash any
-	// The content size.
 	ContentSize any
-	// The content version.
 	ContentVersion any
 	Metadata any
-	// The content link URI.
 	Uri any
 }
 
-type WorkflowRun_Properties_Response struct {
-	// Gets the code.
+type WorkflowRun_Value_Properties_Response struct {
 	Code any
-	// The correlation property.
 	Correlation any
-	// Gets the end time.
 	EndTime any
 	Error any
 	Inputs any
-	// The content link.
 	InputsLink any
-	// Gets the name.
 	Name any
 	Outputs any
-	// The content link.
 	OutputsLink any
-	// Gets the scheduled time.
 	ScheduledTime any
-	// Gets the start time.
 	StartTime any
-	// The workflow status.
 	Status any
 	TrackedProperties any
-	// Gets the tracking id.
 	TrackingId any
 }
 
-type WorkflowRun_Properties_Workflow struct {
-	// The resource id.
+type WorkflowRun_Value_Properties_Workflow struct {
 	Id any
-	// Gets the resource name.
 	Name any
-	// Gets the resource type.
 	Type any
 }
 
-type WorkflowRun_Properties struct {
-	// Gets the code.
+type WorkflowRun_Value_Properties struct {
 	Code any
-	// The correlation property.
 	Correlation any
-	// Gets the correlation id.
 	CorrelationId any
-	// Gets the end time.
 	EndTime any
 	Error any
-	// Gets the outputs.
 	Outputs any
-	// The workflow run trigger.
 	Response any
-	// Gets the start time.
 	StartTime any
-	// The workflow status.
 	Status any
-	// The workflow run trigger.
 	Trigger any
-	// Gets the wait end time.
 	WaitEndTime any
-	// The resource reference.
 	Workflow any
+}
+
+type WorkflowRun_Value struct {
+	Name any
+	Properties any
+	Type any
 }
 
 type WorkflowRunConfig struct {
 	ApiVersion any
 	ResourceGroupName any
-	RunName any
 	SubscriptionId any
 	WorkflowName any
 }
 
 type WorkflowRunAttrs struct {
 	ApiVersion any
-	// Gets the workflow run name.
-	Name any
-	// The workflow run properties.
-	Properties any
+	// The URL to get the next set of results.
+	NextLink any
 	ResourceGroupName any
-	RunName any
 	SubscriptionId any
-	// Gets the workflow run type.
-	Type any
+	// A list of workflow runs.
+	Value any
 	WorkflowName any
 }
 
@@ -120,7 +91,6 @@ var WorkflowRun = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"RunName": ubx.FieldSpec{WireName: "run_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},

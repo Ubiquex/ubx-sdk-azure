@@ -4,16 +4,12 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .availability_set_list_result import AvailabilitySetListResult, AvailabilitySetListResultConfig
-from .cloud_list_result import CloudListResult, CloudListResultConfig
+from .availability_set import AvailabilitySet, AvailabilitySetConfig
+from .cloud import Cloud, CloudConfig
 from .guest_agent import GuestAgent, GuestAgentConfig
-from .guest_agent_list_result import GuestAgentListResult, GuestAgentListResultConfig
-from .inventory_item_list_result import InventoryItemListResult, InventoryItemListResultConfig
-from .microsoft_sc_vmm import MicrosoftScVmm, MicrosoftScVmmConfig
+from .inventory_item import InventoryItem, InventoryItemConfig
 from .virtual_machine_instance import VirtualMachineInstance, VirtualMachineInstanceConfig
-from .virtual_machine_instance_list_result import VirtualMachineInstanceListResult, VirtualMachineInstanceListResultConfig
-from .virtual_machine_template_list_result import VirtualMachineTemplateListResult, VirtualMachineTemplateListResultConfig
-from .virtual_network_list_result import VirtualNetworkListResult, VirtualNetworkListResultConfig
+from .virtual_machine_template import VirtualMachineTemplate, VirtualMachineTemplateConfig
+from .virtual_network import VirtualNetwork, VirtualNetworkConfig
 from .vm_instance_hybrid_identity_metadata import VmInstanceHybridIdentityMetadata, VmInstanceHybridIdentityMetadataConfig
-from .vm_instance_hybrid_identity_metadata_list_result import VmInstanceHybridIdentityMetadataListResult, VmInstanceHybridIdentityMetadataListResultConfig
-from .vmm_server_list_result import VmmServerListResult, VmmServerListResultConfig
+from .vmm_server import VmmServer, VmmServerConfig

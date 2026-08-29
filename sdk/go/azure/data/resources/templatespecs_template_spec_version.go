@@ -3,53 +3,43 @@ package resources
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type TemplatespecsTemplateSpecVersion_Properties_LinkedTemplates struct {
+type TemplatespecsTemplateSpecVersion_Value_Properties_LinkedTemplates struct {
 	Path any
 	Template any
 }
 
-type TemplatespecsTemplateSpecVersion_Properties struct {
-	// Template Spec version description.
+type TemplatespecsTemplateSpecVersion_Value_Properties struct {
 	Description any
-	// An array of linked template artifacts.
 	LinkedTemplates any
-	// The main Azure Resource Manager template content.
 	MainTemplate any
-	// The version metadata. Metadata is an open-ended object and is typically a collection of key-value pairs.
 	Metadata any
-	// The Azure Resource Manager template UI definition content.
 	UiFormDefinition any
+}
+
+type TemplatespecsTemplateSpecVersion_Value struct {
+	Location any
+	Properties any
+	Tags any
 }
 
 type TemplatespecsTemplateSpecVersionConfig struct {
 	ApiVersion any
-	ResourceGroupName any
-	SubscriptionId any
 	TemplateSpecName any
-	TemplateSpecVersion any
 }
 
 type TemplatespecsTemplateSpecVersionAttrs struct {
 	ApiVersion any
-	// The location of the Template Spec Version. It must match the location of the parent Template Spec.
-	Location any
-	// Template Spec Version properties.
-	Properties any
-	ResourceGroupName any
-	SubscriptionId any
-	// Resource tags.
-	Tags any
+	// The URL to use for getting the next set of results.
+	NextLink any
 	TemplateSpecName any
-	TemplateSpecVersion any
+	// An array of Template Spec versions.
+	Value any
 }
 
 var TemplatespecsTemplateSpecVersion = ubx.DataSourceBinding{
 	WireType: "azure_resources_templatespecs_template_spec_version",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 		"TemplateSpecName": ubx.FieldSpec{WireName: "template_spec_name"},
-		"TemplateSpecVersion": ubx.FieldSpec{WireName: "template_spec_version"},
 	},
 }

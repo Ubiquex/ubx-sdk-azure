@@ -3,34 +3,29 @@ package sql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SyncmembersSyncMember_Value_Tables_Columns struct {
-	DataSize any
-	DataType any
-	ErrorId any
-	HasError any
-	IsPrimaryKey any
-	Name any
-	QuotedName any
-}
-
-type SyncmembersSyncMember_Value_Tables struct {
-	Columns any
-	ErrorId any
-	HasError any
-	Name any
-	QuotedName any
+type SyncmembersSyncMember_Value_Properties struct {
+	DatabaseName any
+	DatabaseType any
+	Password any
+	PrivateEndpointName any
+	ServerName any
+	SqlServerDatabaseId any
+	SyncAgentId any
+	SyncDirection any
+	SyncMemberAzureDatabaseResourceId any
+	SyncState any
+	UsePrivateLinkConnection any
+	UserName any
 }
 
 type SyncmembersSyncMember_Value struct {
-	LastUpdateTime any
-	Tables any
+	Properties any
 }
 
 type SyncmembersSyncMemberConfig struct {
 	DatabaseName any
 	ServerName any
 	SyncGroupName any
-	SyncMemberName any
 }
 
 type SyncmembersSyncMemberAttrs struct {
@@ -39,8 +34,7 @@ type SyncmembersSyncMemberAttrs struct {
 	NextLink any
 	ServerName any
 	SyncGroupName any
-	SyncMemberName any
-	// The SyncFullSchemaProperties items on this page
+	// The SyncMember items on this page
 	Value any
 }
 
@@ -50,6 +44,5 @@ var SyncmembersSyncMember = ubx.DataSourceBinding{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
 		"SyncGroupName": ubx.FieldSpec{WireName: "sync_group_name"},
-		"SyncMemberName": ubx.FieldSpec{WireName: "sync_member_name"},
 	},
 }

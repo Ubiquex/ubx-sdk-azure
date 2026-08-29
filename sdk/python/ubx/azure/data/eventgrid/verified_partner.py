@@ -7,60 +7,48 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VerifiedPartner_Properties_PartnerTopicDetails:
-    # This is short description about the partner. The length of this description should not exceed 256 characters.
+class VerifiedPartner_Value_Properties_PartnerTopicDetails:
     description: Any = None
-    # Long description for the partner's scenarios and integration.Length of this description should not exceed 2048 characters.
     long_description: Any = None
-    # URI of the partner website that can be used by Azure customers to setup Event Grid integration on an event source.
     setup_uri: Any = None
 
 @dataclasses.dataclass
-class VerifiedPartner_Properties:
-    # Official name of the Partner.
+class VerifiedPartner_Value_Properties:
     organization_name: Any = None
-    # Display name of the verified partner.
     partner_display_name: Any = None
-    # ImmutableId of the corresponding partner registration.
     partner_registration_immutable_id: Any = None
-    # Information about the partner.
     partner_topic_details: Any = None
-    # Provisioning state of the verified partner.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class VerifiedPartner_SystemData:
-    # The timestamp of resource creation (UTC).
+class VerifiedPartner_Value_SystemData:
     created_at: Any = None
-    # The identity that created the resource.
     created_by: Any = None
-    # The type of identity that created the resource.
     created_by_type: Any = None
-    # The timestamp of resource last modification (UTC)
     last_modified_at: Any = None
-    # The identity that last modified the resource.
     last_modified_by: Any = None
-    # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
+
+@dataclasses.dataclass
+class VerifiedPartner_Value:
+    properties: Any = None
+    system_data: Any = None
 
 @dataclasses.dataclass
 class VerifiedPartnerConfig:
     api_version: Any = None
-    verified_partner_name: Any = None
 
 @dataclasses.dataclass
 class VerifiedPartnerAttrs:
     api_version: Any = None
-    # Properties of the verified partner.
-    properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    verified_partner_name: Any = None
+    # A link for the next page of verified partners if any.
+    next_link: Any = None
+    # A collection of verified partners.
+    value: Any = None
 
 VerifiedPartner = ubx.DataSourceBinding(
     wire_type="azure_eventgrid_verified_partner",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
-        "verified_partner_name": ubx.FieldSpec(wire_name="verified_partner_name"),
     },
 )

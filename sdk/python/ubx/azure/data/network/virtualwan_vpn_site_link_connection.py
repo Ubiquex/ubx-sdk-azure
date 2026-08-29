@@ -7,11 +7,11 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VirtualwanVpnSiteLinkConnection_Properties_EgressNatRules:
+class VirtualwanVpnSiteLinkConnection_Value_Properties_EgressNatRules:
     id: Any = None
 
 @dataclasses.dataclass
-class VirtualwanVpnSiteLinkConnection_Properties_IpsecPolicies:
+class VirtualwanVpnSiteLinkConnection_Value_Properties_IpsecPolicies:
     dh_group: Any = None
     ike_encryption: Any = None
     ike_integrity: Any = None
@@ -22,72 +22,55 @@ class VirtualwanVpnSiteLinkConnection_Properties_IpsecPolicies:
     sa_life_time_seconds: Any = None
 
 @dataclasses.dataclass
-class VirtualwanVpnSiteLinkConnection_Properties_VpnGatewayCustomBgpAddresses:
+class VirtualwanVpnSiteLinkConnection_Value_Properties_VpnGatewayCustomBgpAddresses:
     custom_bgp_ip_address: Any = None
     ip_configuration_id: Any = None
 
 @dataclasses.dataclass
-class VirtualwanVpnSiteLinkConnection_Properties:
-    # Expected bandwidth in MBPS.
+class VirtualwanVpnSiteLinkConnection_Value_Properties:
     connection_bandwidth: Any = None
-    # The current state of the vpn connection.
     connection_status: Any = None
-    # Dead Peer Detection timeout in seconds for VpnLink connection.
     dpd_timeout_seconds: Any = None
-    # Egress bytes transferred.
     egress_bytes_transferred: Any = None
-    # List of egress NatRules.
     egress_nat_rules: Any = None
-    # EnableBgp flag.
     enable_bgp: Any = None
-    # EnableBgp flag.
     enable_rate_limiting: Any = None
-    # Ingress bytes transferred.
     ingress_bytes_transferred: Any = None
-    # List of ingress NatRules.
     ingress_nat_rules: Any = None
-    # The IPSec Policies to be considered by this connection.
     ipsec_policies: Any = None
-    # Provisioning states of a resource.
     provisioning_state: Any = None
-    # Routing weight for vpn connection.
     routing_weight: Any = None
-    # SharedKey for the vpn link connection. We will no longer return sharedKey in any Create/Update/Get/List/UpdateTags VpnGateway/VpnConnection/VpnLinkConnection APIs response. Please use 'Vpn Link Connections - List Default Shared Key' API to fetch Vpn link connection sharedKey.
     shared_key: Any = None
-    # Use local azure ip to initiate connection.
     use_local_azure_ip_address: Any = None
-    # Enable policy-based traffic selectors.
     use_policy_based_traffic_selectors: Any = None
-    # Gateway connection protocol.
     vpn_connection_protocol_type: Any = None
-    # vpnGatewayCustomBgpAddresses used by this connection.
     vpn_gateway_custom_bgp_addresses: Any = None
-    # Vpn link connection mode.
     vpn_link_connection_mode: Any = None
-    # Reference to another subresource.
     vpn_site_link: Any = None
+
+@dataclasses.dataclass
+class VirtualwanVpnSiteLinkConnection_Value:
+    etag: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnSiteLinkConnectionConfig:
     connection_name: Any = None
     gateway_name: Any = None
-    link_connection_name: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnSiteLinkConnectionAttrs:
     connection_name: Any = None
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     gateway_name: Any = None
-    link_connection_name: Any = None
-    # Parameters for VpnConnection.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The VpnSiteLinkConnection items on this page
+    value: Any = None
 
 VirtualwanVpnSiteLinkConnection = ubx.DataSourceBinding(
     wire_type="azure_network_virtualwan_vpn_site_link_connection",
     fields={
         "connection_name": ubx.FieldSpec(wire_name="connection_name"),
         "gateway_name": ubx.FieldSpec(wire_name="gateway_name"),
-        "link_connection_name": ubx.FieldSpec(wire_name="link_connection_name"),
     },
 )

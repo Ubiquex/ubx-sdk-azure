@@ -3,48 +3,48 @@ package cognitiveservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ConnectionPropertiesV2BasicResource_Properties struct {
-	// Authentication type of the connection target
+type ConnectionPropertiesV2BasicResource_Value_Properties struct {
 	AuthType any
-	// Category of the connection
 	Category any
-	// A type definition that refers the id to an Azure Resource Manager resource.
 	CreatedByWorkspaceArmId any
-	// Provides the error message if the connection fails
 	Error any
 	ExpiryTime any
-	// Group based on connection category
 	Group any
 	IsSharedToAll any
-	// Store user metadata for this connection
 	Metadata any
 	PeRequirement any
 	PeStatus any
 	SharedUserList any
-	// The connection URL to be used.
 	Target any
 	UseWorkspaceManagedIdentity any
 }
 
+type ConnectionPropertiesV2BasicResource_Value struct {
+	Properties any
+}
+
 type ConnectionPropertiesV2BasicResourceConfig struct {
 	AccountName any
-	ConnectionName any
-	ProjectName any
+	Category any
+	IncludeAll any
+	Target any
 }
 
 type ConnectionPropertiesV2BasicResourceAttrs struct {
 	AccountName any
-	ConnectionName any
-	ProjectName any
-	// Connection property base schema.
-	Properties any
+	Category any
+	IncludeAll any
+	NextLink any
+	Target any
+	Value any
 }
 
 var ConnectionPropertiesV2BasicResource = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_connection_properties_v2_basic_resource",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
-		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
+		"Category": ubx.FieldSpec{WireName: "category"},
+		"IncludeAll": ubx.FieldSpec{WireName: "include_all"},
+		"Target": ubx.FieldSpec{WireName: "target"},
 	},
 }

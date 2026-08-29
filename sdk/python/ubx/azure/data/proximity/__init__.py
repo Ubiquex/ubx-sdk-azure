@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .placement_group_list_result import PlacementGroupListResult, PlacementGroupListResultConfig
+from .placement_group import PlacementGroup, PlacementGroupConfig

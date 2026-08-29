@@ -7,47 +7,47 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ConnectionPropertiesV2BasicResource_Properties:
-    # Authentication type of the connection target
+class ConnectionPropertiesV2BasicResource_Value_Properties:
     auth_type: Any = None
-    # Category of the connection
     category: Any = None
-    # A type definition that refers the id to an Azure Resource Manager resource.
     created_by_workspace_arm_id: Any = None
-    # Provides the error message if the connection fails
     error: Any = None
     expiry_time: Any = None
-    # Group based on connection category
     group: Any = None
     is_shared_to_all: Any = None
-    # Store user metadata for this connection
     metadata: Any = None
     pe_requirement: Any = None
     pe_status: Any = None
     shared_user_list: Any = None
-    # The connection URL to be used.
     target: Any = None
     use_workspace_managed_identity: Any = None
 
 @dataclasses.dataclass
+class ConnectionPropertiesV2BasicResource_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class ConnectionPropertiesV2BasicResourceConfig:
     account_name: Any = None
-    connection_name: Any = None
-    project_name: Any = None
+    category: Any = None
+    include_all: Any = None
+    target: Any = None
 
 @dataclasses.dataclass
 class ConnectionPropertiesV2BasicResourceAttrs:
     account_name: Any = None
-    connection_name: Any = None
-    project_name: Any = None
-    # Connection property base schema.
-    properties: Any = None
+    category: Any = None
+    include_all: Any = None
+    next_link: Any = None
+    target: Any = None
+    value: Any = None
 
 ConnectionPropertiesV2BasicResource = ubx.DataSourceBinding(
     wire_type="azure_cognitiveservices_connection_properties_v2_basic_resource",
     fields={
         "account_name": ubx.FieldSpec(wire_name="account_name"),
-        "connection_name": ubx.FieldSpec(wire_name="connection_name"),
-        "project_name": ubx.FieldSpec(wire_name="project_name"),
+        "category": ubx.FieldSpec(wire_name="category"),
+        "include_all": ubx.FieldSpec(wire_name="include_all"),
+        "target": ubx.FieldSpec(wire_name="target"),
     },
 )

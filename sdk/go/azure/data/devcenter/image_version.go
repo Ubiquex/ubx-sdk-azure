@@ -3,33 +3,32 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ImageVersion_Properties struct {
-	// If the version should be excluded from being treated as the latest version.
+type ImageVersion_Value_Properties struct {
 	ExcludeFromLatest any
-	// The semantic version string.
 	Name any
-	// The size of the OS disk image, in GB.
 	OsDiskImageSizeInGb any
-	// Provisioning state of the resource.
 	ProvisioningState any
-	// The datetime that the backing image version was published.
 	PublishedDate any
+}
+
+type ImageVersion_Value struct {
+	Properties any
 }
 
 type ImageVersionConfig struct {
 	DevCenterName any
 	GalleryName any
 	ImageName any
-	VersionName any
 }
 
 type ImageVersionAttrs struct {
 	DevCenterName any
 	GalleryName any
 	ImageName any
-	// Properties of an image version.
-	Properties any
-	VersionName any
+	// URL to get the next set of results if there are any.
+	NextLink any
+	// Current page of results.
+	Value any
 }
 
 var ImageVersion = ubx.DataSourceBinding{
@@ -38,6 +37,5 @@ var ImageVersion = ubx.DataSourceBinding{
 		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
 		"GalleryName": ubx.FieldSpec{WireName: "gallery_name"},
 		"ImageName": ubx.FieldSpec{WireName: "image_name"},
-		"VersionName": ubx.FieldSpec{WireName: "version_name"},
 	},
 }

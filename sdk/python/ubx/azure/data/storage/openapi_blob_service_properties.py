@@ -7,23 +7,18 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiBlobServiceProperties_Properties_ChangeFeed:
-    # Indicates whether change feed event logging is enabled for the Blob service.
+class OpenapiBlobServiceProperties_Value_Properties_ChangeFeed:
     enabled: Any = None
-    # Indicates the duration of changeFeed retention in days. Minimum value is 1 day and maximum value is 146000 days (400 years). A null value indicates an infinite retention of the change feed.
     retention_in_days: Any = None
 
 @dataclasses.dataclass
-class OpenapiBlobServiceProperties_Properties_ContainerDeleteRetentionPolicy:
-    # This property when set to true allows deletion of the soft deleted blob versions and snapshots. This property cannot be used blob restore policy. This property only applies to blob service and does not apply to containers or file share.
+class OpenapiBlobServiceProperties_Value_Properties_ContainerDeleteRetentionPolicy:
     allow_permanent_delete: Any = None
-    # Indicates the number of days that the deleted item should be retained. The minimum specified value can be 1 and the maximum value can be 365.
     days: Any = None
-    # Indicates whether DeleteRetentionPolicy is enabled.
     enabled: Any = None
 
 @dataclasses.dataclass
-class OpenapiBlobServiceProperties_Properties_Cors_CorsRules:
+class OpenapiBlobServiceProperties_Value_Properties_Cors_CorsRules:
     allowed_headers: Any = None
     allowed_methods: Any = None
     allowed_origins: Any = None
@@ -31,72 +26,52 @@ class OpenapiBlobServiceProperties_Properties_Cors_CorsRules:
     max_age_in_seconds: Any = None
 
 @dataclasses.dataclass
-class OpenapiBlobServiceProperties_Properties_Cors:
-    # The List of CORS rules. You can include up to five CorsRule elements in the request.
+class OpenapiBlobServiceProperties_Value_Properties_Cors:
     cors_rules: Any = None
 
 @dataclasses.dataclass
-class OpenapiBlobServiceProperties_Properties_LastAccessTimeTrackingPolicy:
-    # An array of predefined supported blob types. Only blockBlob is the supported value. This field is currently read only
+class OpenapiBlobServiceProperties_Value_Properties_LastAccessTimeTrackingPolicy:
     blob_type: Any = None
-    # When set to true last access time based tracking is enabled.
     enable: Any = None
-    # Name of the policy. The valid value is AccessTimeTracking. This field is currently read only
     name: Any = None
-    # The field specifies blob object tracking granularity in days, typically how often the blob object should be tracked.This field is currently read only with value as 1
     tracking_granularity_in_days: Any = None
 
 @dataclasses.dataclass
-class OpenapiBlobServiceProperties_Properties_RestorePolicy:
-    # how long this blob can be restored. It should be great than zero and less than DeleteRetentionPolicy.days.
+class OpenapiBlobServiceProperties_Value_Properties_RestorePolicy:
     days: Any = None
-    # Blob restore is enabled if set to true.
     enabled: Any = None
-    # Deprecated in favor of minRestoreTime property.
     last_enabled_time: Any = None
-    # Returns the minimum date and time that the restore can be started.
     min_restore_time: Any = None
 
 @dataclasses.dataclass
-class OpenapiBlobServiceProperties_Properties_StaticWebsite:
-    # The absolute path where the default index file is present. This absolute path is mutually exclusive to "indexDocument" and it is case-sensitive.
+class OpenapiBlobServiceProperties_Value_Properties_StaticWebsite:
     default_index_document_path: Any = None
-    # Indicates whether static website support is enabled for the specified account.
     enabled: Any = None
-    # The absolute path to a webpage that Azure Storage serves for requests that don't correspond to an existing file. The contents of the page are returned with HTTP 404 Not Found. Only a single custom 404 page is supported in each static website.
     error_document404_path: Any = None
-    # The webpage that Azure Storage serves for requests to the root of a website or any subfolder (for example, index.html). The value is case-sensitive.
     index_document: Any = None
 
 @dataclasses.dataclass
-class OpenapiBlobServiceProperties_Properties:
-    # Deprecated in favor of isVersioningEnabled property.
+class OpenapiBlobServiceProperties_Value_Properties:
     automatic_snapshot_policy_enabled: Any = None
-    # The blob service properties for change feed events.
     change_feed: Any = None
-    # The service properties for soft delete.
     container_delete_retention_policy: Any = None
-    # Sets the CORS rules. You can include up to five CorsRule elements in the request.
     cors: Any = None
-    # DefaultServiceVersion indicates the default version to use for requests to the Blob service if an incoming request’s version is not specified. Possible values include version 2008-10-27 and all more recent versions.
     default_service_version: Any = None
-    # The service properties for soft delete.
     delete_retention_policy: Any = None
-    # Versioning is enabled if set to true.
     is_versioning_enabled: Any = None
-    # The blob service properties for Last access time based tracking policy.
     last_access_time_tracking_policy: Any = None
-    # The blob service properties for blob restore policy
     restore_policy: Any = None
-    # The static website properties for blob storage.
     static_website: Any = None
 
 @dataclasses.dataclass
-class OpenapiBlobServiceProperties_Sku:
-    # The SKU name. Required for account creation; optional for update. Note that in older versions, SKU name was called accountType.
+class OpenapiBlobServiceProperties_Value_Sku:
     name: Any = None
-    # The SKU tier. This is based on the SKU name.
     tier: Any = None
+
+@dataclasses.dataclass
+class OpenapiBlobServiceProperties_Value:
+    properties: Any = None
+    sku: Any = None
 
 @dataclasses.dataclass
 class OpenapiBlobServicePropertiesConfig:
@@ -105,10 +80,9 @@ class OpenapiBlobServicePropertiesConfig:
 @dataclasses.dataclass
 class OpenapiBlobServicePropertiesAttrs:
     account_name: Any = None
-    # The properties of a storage account’s Blob service.
-    properties: Any = None
-    # The SKU of the storage account.
-    sku: Any = None
+    next_link: Any = None
+    # List of blob services returned.
+    value: Any = None
 
 OpenapiBlobServiceProperties = ubx.DataSourceBinding(
     wire_type="azure_storage_openapi_blob_service_properties",

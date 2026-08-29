@@ -7,27 +7,28 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class RaiContentFilter_Properties:
-    # If the Content Filter has multi severity levels(Low, Medium, or High).
+class RaiContentFilter_Value_Properties:
     is_multi_level_filter: Any = None
-    # Name of Content Filter.
     name: Any = None
-    # Content source to apply the Content Filters.
     source: Any = None
 
 @dataclasses.dataclass
+class RaiContentFilter_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class RaiContentFilterConfig:
-    filter_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class RaiContentFilterAttrs:
-    filter_name: Any = None
-    # Azure OpenAI Content Filter Properties.
-    properties: Any = None
+    # The link used to get the next page of Content Filters.
+    next_link: Any = None
+    # The list of RaiContentFilter.
+    value: Any = None
 
 RaiContentFilter = ubx.DataSourceBinding(
     wire_type="azure_cognitiveservices_rai_content_filter",
     fields={
-        "filter_name": ubx.FieldSpec(wire_name="filter_name"),
     },
 )

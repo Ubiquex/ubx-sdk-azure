@@ -7,179 +7,145 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiBillingSubscription_Properties_Beneficiary:
-    # The ID that uniquely identifies a user in a tenant.
+class OpenapiBillingSubscription_Value_Properties_Beneficiary:
     object_id: Any = None
-    # The ID that uniquely identifies a tenant.
     tenant_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiBillingSubscription_Properties_EnrollmentAccountSubscriptionDetails:
-    # The enrollment Account and the subscription association start date. This field is available only for the Enterprise Agreement Type.
+class OpenapiBillingSubscription_Value_Properties_EnrollmentAccountSubscriptionDetails:
     enrollment_account_start_date: Any = None
-    # The current enrollment account status of the subscription. This field is available only for the Enterprise Agreement Type.
     subscription_enrollment_account_status: Any = None
 
 @dataclasses.dataclass
-class OpenapiBillingSubscription_Properties_LastMonthCharges:
-    # The currency for the amount value.
+class OpenapiBillingSubscription_Value_Properties_LastMonthCharges:
     currency: Any = None
-    # The amount value. For example, if the currency is USD, then a value of 600 would be $600.00.
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiBillingSubscription_Properties_NextBillingCycleDetails:
-    # Billing frequency of the product under the subscription.
+class OpenapiBillingSubscription_Value_Properties_NextBillingCycleDetails:
     billing_frequency: Any = None
 
 @dataclasses.dataclass
-class OpenapiBillingSubscription_Properties_RenewalTermDetails:
-    # The billing frequency in ISO8601 format of product in the subscription. Example: P1M, P3M, P1Y
+class OpenapiBillingSubscription_Value_Properties_RenewalTermDetails:
     billing_frequency: Any = None
-    # Id of the product for which the subscription is purchased.
     product_id: Any = None
-    # Type Id of the product for which the subscription is purchased.
     product_type_id: Any = None
-    # The quantity of licenses or fulfillment units for the subscription.
     quantity: Any = None
-    # The SKU ID of the product for which the subscription is purchased. This field is is only available for Microsoft Customer Agreement billing accounts.
     sku_id: Any = None
-    # The duration in ISO8601 format for which you can use the subscription. Example: P1M, P3M, P1Y
     term_duration: Any = None
-    # End date of the term in UTC time.
     term_end_date: Any = None
 
 @dataclasses.dataclass
-class OpenapiBillingSubscription_Properties_Reseller:
-    # The name of the reseller.
+class OpenapiBillingSubscription_Value_Properties_Reseller:
     description: Any = None
-    # The MPN ID of the reseller.
     reseller_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiBillingSubscription_Properties_SuspensionReasonDetails:
+class OpenapiBillingSubscription_Value_Properties_SuspensionReasonDetails:
     effective_date: Any = None
     reason: Any = None
 
 @dataclasses.dataclass
-class OpenapiBillingSubscription_Properties_SystemOverrides:
-    # The policy override for the subscription indicates whether the self-serve cancellation or seat reduction is allowed.
+class OpenapiBillingSubscription_Value_Properties_SystemOverrides:
     cancellation: Any = None
-    # The end date in UTC time by when the self-serve cancellation ends.
     cancellation_allowed_end_date: Any = None
 
 @dataclasses.dataclass
-class OpenapiBillingSubscription_Properties:
-    # Indicates whether auto renewal is turned on or off for a product.
+class OpenapiBillingSubscription_Value_Properties:
     auto_renew: Any = None
-    # Details of the beneficiary.
     beneficiary: Any = None
-    # The provisioning tenant of the subscription.
     beneficiary_tenant_id: Any = None
-    # The billing frequency in ISO8601 format of product in the subscription. Example: P1M, P3M, P1Y
     billing_frequency: Any = None
-    # Dictionary of billing policies associated with the subscription.
     billing_policies: Any = None
-    # The name of the billing profile.
     billing_profile_display_name: Any = None
-    # The fully qualified ID that uniquely identifies a billing profile.
     billing_profile_id: Any = None
-    # The ID that uniquely identifies a billing profile.
     billing_profile_name: Any = None
-    # The cost center applied to the subscription. This field is only available for consumption subscriptions of Microsoft Customer Agreement or Enterprise Agreement Type billing accounts.
     consumption_cost_center: Any = None
-    # The name of the customer.
     customer_display_name: Any = None
-    # The fully qualified ID that uniquely identifies a customer.
     customer_id: Any = None
-    # The ID that uniquely identifies a customer.
     customer_name: Any = None
-    # The name of the billing subscription.
     display_name: Any = None
-    # The enrollment Account name associated with the subscription. This field is available only for the Enterprise Agreement Type billing accounts.
     enrollment_account_display_name: Any = None
-    # The enrollment Account ID associated with the subscription. This field is available only for the Enterprise Agreement Type billing accounts.
     enrollment_account_id: Any = None
-    # The billing properties that can be modified. Available only for the Enterprise Agreement Type.
     enrollment_account_subscription_details: Any = None
-    # The name of the invoice section.
     invoice_section_display_name: Any = None
-    # The fully qualified ID that uniquely identifies an invoice section.
     invoice_section_id: Any = None
-    # The ID that uniquely identifies an invoice section.
     invoice_section_name: Any = None
-    # The amount.
     last_month_charges: Any = None
-    # The amount.
     month_to_date_charges: Any = None
-    # Billing cycle details of the product.
     next_billing_cycle_details: Any = None
-    # The offer ID for the subscription. This field is only available for the Microsoft Online Services Program billing accounts or billing accounts with agreement type Enterprise Agreement.
     offer_id: Any = None
-    # The status of an operation on the subscription. When None, there is no ongoing operation. When LockedForUpdate, write operations will be blocked on the Billing Subscription. Other is the default value and you may need to refer to the latest API version for more details.
     operation_status: Any = None
-    # The category of the product for which the subscription is purchased. Possible values include: AzureSupport, Hardware, ReservationOrder, SaaS, SavingsPlanOrder, Software, UsageBased, Other.
     product_category: Any = None
-    # Type of the product for which the subscription is purchased.
     product_type: Any = None
-    # Id of the product for which the subscription is purchased.
     product_type_id: Any = None
-    # The provisioning state of the resource during a long-running operation.
     provisioning_state: Any = None
-    # The tenant in which the subscription is provisioned.
     provisioning_tenant_id: Any = None
-    # Purchase date of the product in UTC time.
     purchase_date: Any = None
-    # The quantity of licenses or fulfillment units for the subscription.
     quantity: Any = None
-    # Details for the next renewal term of a subscription.
     renewal_term_details: Any = None
-    # Details of the reseller.
     reseller: Any = None
-    # Unique identifier of the linked resource.
     resource_uri: Any = None
-    # The SKU description of the product for which the subscription is purchased. This field is is only available for billing accounts with agreement type Microsoft Customer Agreement and Microsoft Partner Agreement.
     sku_description: Any = None
-    # The SKU ID of the product for which the subscription is purchased. This field is is only available for Microsoft Customer Agreement billing accounts.
     sku_id: Any = None
-    # The subscription status.
     status: Any = None
-    # The ID of the subscription.
     subscription_id: Any = None
-    # The suspension details for a subscription. This field is not available for Enterprise Agreement billing accounts.
     suspension_reason_details: Any = None
-    # The suspension reason for a subscription. This field is not available for Enterprise Agreement billing accounts.
     suspension_reasons: Any = None
-    # System imposed policies that regulate behavior of the subscription.
     system_overrides: Any = None
-    # The duration in ISO8601 format for which you can use the subscription. Example: P1M, P3M, P1Y
     term_duration: Any = None
-    # End date of the term in UTC time.
     term_end_date: Any = None
-    # Start date of the term in UTC time.
     term_start_date: Any = None
+
+@dataclasses.dataclass
+class OpenapiBillingSubscription_Value:
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingSubscriptionConfig:
     billing_account_name: Any = None
-    billing_subscription_name: Any = None
+    billing_profile_name: Any = None
+    count: Any = None
     expand: Any = None
+    filter: Any = None
+    include_deleted: Any = None
+    order_by: Any = None
+    search: Any = None
+    skip: Any = None
+    top: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingSubscriptionAttrs:
     billing_account_name: Any = None
-    billing_subscription_name: Any = None
+    billing_profile_name: Any = None
+    count: Any = None
     expand: Any = None
-    # The billing properties of a subscription.
-    properties: Any = None
-    # Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-    tags: Any = None
+    filter: Any = None
+    include_deleted: Any = None
+    # The link (url) to the next page of results.
+    next_link: Any = None
+    order_by: Any = None
+    search: Any = None
+    skip: Any = None
+    top: Any = None
+    # Total number of records.
+    total_count: Any = None
+    # The list of resources.
+    value: Any = None
 
 OpenapiBillingSubscription = ubx.DataSourceBinding(
     wire_type="azure_billing_openapi_billing_subscription",
     fields={
         "billing_account_name": ubx.FieldSpec(wire_name="billing_account_name"),
-        "billing_subscription_name": ubx.FieldSpec(wire_name="billing_subscription_name"),
+        "billing_profile_name": ubx.FieldSpec(wire_name="billing_profile_name"),
+        "count": ubx.FieldSpec(wire_name="count"),
         "expand": ubx.FieldSpec(wire_name="expand"),
+        "filter": ubx.FieldSpec(wire_name="filter"),
+        "include_deleted": ubx.FieldSpec(wire_name="include_deleted"),
+        "order_by": ubx.FieldSpec(wire_name="order_by"),
+        "search": ubx.FieldSpec(wire_name="search"),
+        "skip": ubx.FieldSpec(wire_name="skip"),
+        "top": ubx.FieldSpec(wire_name="top"),
     },
 )

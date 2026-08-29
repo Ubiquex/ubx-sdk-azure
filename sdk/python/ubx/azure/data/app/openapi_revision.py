@@ -7,12 +7,12 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Containers_Probes_HttpGet_HttpHeaders:
+class OpenapiRevision_Value_Properties_Template_Containers_Probes_HttpGet_HttpHeaders:
     name: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Containers_Probes_HttpGet:
+class OpenapiRevision_Value_Properties_Template_Containers_Probes_HttpGet:
     host: Any = None
     http_headers: Any = None
     path: Any = None
@@ -20,12 +20,12 @@ class OpenapiRevision_Properties_Template_Containers_Probes_HttpGet:
     scheme: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Containers_Probes_TcpSocket:
+class OpenapiRevision_Value_Properties_Template_Containers_Probes_TcpSocket:
     host: Any = None
     port: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Containers_Probes:
+class OpenapiRevision_Value_Properties_Template_Containers_Probes:
     failure_threshold: Any = None
     http_get: Any = None
     initial_delay_seconds: Any = None
@@ -37,29 +37,29 @@ class OpenapiRevision_Properties_Template_Containers_Probes:
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Containers:
+class OpenapiRevision_Value_Properties_Template_Containers:
     probes: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_InitContainers_Env:
+class OpenapiRevision_Value_Properties_Template_InitContainers_Env:
     name: Any = None
     secret_ref: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_InitContainers_Resources:
+class OpenapiRevision_Value_Properties_Template_InitContainers_Resources:
     cpu: Any = None
     ephemeral_storage: Any = None
     memory: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_InitContainers_VolumeMounts:
+class OpenapiRevision_Value_Properties_Template_InitContainers_VolumeMounts:
     mount_path: Any = None
     sub_path: Any = None
     volume_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_InitContainers:
+class OpenapiRevision_Value_Properties_Template_InitContainers:
     args: Any = None
     command: Any = None
     env: Any = None
@@ -69,12 +69,12 @@ class OpenapiRevision_Properties_Template_InitContainers:
     volume_mounts: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Scale_Rules_AzureQueue_Auth:
+class OpenapiRevision_Value_Properties_Template_Scale_Rules_AzureQueue_Auth:
     secret_ref: Any = None
     trigger_parameter: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Scale_Rules_AzureQueue:
+class OpenapiRevision_Value_Properties_Template_Scale_Rules_AzureQueue:
     account_name: Any = None
     auth: Any = None
     identity: Any = None
@@ -82,20 +82,20 @@ class OpenapiRevision_Properties_Template_Scale_Rules_AzureQueue:
     queue_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Scale_Rules_Custom:
+class OpenapiRevision_Value_Properties_Template_Scale_Rules_Custom:
     auth: Any = None
     identity: Any = None
     metadata: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Scale_Rules_Http:
+class OpenapiRevision_Value_Properties_Template_Scale_Rules_Http:
     auth: Any = None
     identity: Any = None
     metadata: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Scale_Rules:
+class OpenapiRevision_Value_Properties_Template_Scale_Rules:
     azure_queue: Any = None
     custom: Any = None
     http: Any = None
@@ -103,30 +103,25 @@ class OpenapiRevision_Properties_Template_Scale_Rules:
     tcp: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Scale:
-    # Optional. KEDA Cooldown Period in seconds. Defaults to 300 seconds if not set.
+class OpenapiRevision_Value_Properties_Template_Scale:
     cooldown_period: Any = None
-    # Optional. Maximum number of container replicas. Defaults to 10 if not set.
     max_replicas: Any = None
-    # Optional. Minimum number of container replicas.
     min_replicas: Any = None
-    # Optional. KEDA Polling Interval in seconds. Defaults to 30 seconds if not set.
     polling_interval: Any = None
-    # Scaling rules.
     rules: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_ServiceBinds:
+class OpenapiRevision_Value_Properties_Template_ServiceBinds:
     name: Any = None
     service_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Volumes_Secrets:
+class OpenapiRevision_Value_Properties_Template_Volumes_Secrets:
     path: Any = None
     secret_ref: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template_Volumes:
+class OpenapiRevision_Value_Properties_Template_Volumes:
     mount_options: Any = None
     name: Any = None
     secrets: Any = None
@@ -134,63 +129,48 @@ class OpenapiRevision_Properties_Template_Volumes:
     storage_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties_Template:
-    # List of container definitions for the Container App.
+class OpenapiRevision_Value_Properties_Template:
     containers: Any = None
-    # List of specialized containers that run before app containers.
     init_containers: Any = None
-    # User friendly suffix that is appended to the revision name
     revision_suffix: Any = None
-    # Container App scaling configurations.
     scale: Any = None
-    # List of container app services bound to the app
     service_binds: Any = None
-    # Optional duration in seconds the Container App Instance needs to terminate gracefully. Value must be non-negative integer. The value zero indicates stop immediately via the kill signal (no opportunity to shut down). If this value is nil, the default grace period will be used instead. Set this value longer than the expected cleanup time for your process. Defaults to 30 seconds.
     termination_grace_period_seconds: Any = None
-    # List of volume definitions for the Container App.
     volumes: Any = None
 
 @dataclasses.dataclass
-class OpenapiRevision_Properties:
-    # Boolean describing if the Revision is Active
+class OpenapiRevision_Value_Properties:
     active: Any = None
-    # Timestamp describing when the revision was created by controller
     created_time: Any = None
-    # Fully qualified domain name of the revision
     fqdn: Any = None
-    # Current health State of the revision
     health_state: Any = None
-    # Timestamp describing when the revision was last active. Only meaningful when revision is inactive
     last_active_time: Any = None
-    # Optional Field - Platform Error Message
     provisioning_error: Any = None
-    # Current provisioning State of the revision
     provisioning_state: Any = None
-    # Number of pods currently running for this revision
     replicas: Any = None
-    # Current running state of the revision
     running_state: Any = None
-    # Container App versioned application definition. Defines the desired state of an immutable revision. Any changes to this section Will result in a new revision being created
     template: Any = None
-    # Traffic weight assigned to this revision
     traffic_weight: Any = None
+
+@dataclasses.dataclass
+class OpenapiRevision_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiRevisionConfig:
     container_app_name: Any = None
-    revision_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiRevisionAttrs:
     container_app_name: Any = None
-    # Revision resource specific properties
-    properties: Any = None
-    revision_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Revision items on this page
+    value: Any = None
 
 OpenapiRevision = ubx.DataSourceBinding(
     wire_type="azure_app_openapi_revision",
     fields={
         "container_app_name": ubx.FieldSpec(wire_name="container_app_name"),
-        "revision_name": ubx.FieldSpec(wire_name="revision_name"),
     },
 )

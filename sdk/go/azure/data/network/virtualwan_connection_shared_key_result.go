@@ -3,13 +3,14 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type VirtualwanConnectionSharedKeyResult_Properties struct {
-	// Provisioning states of a resource.
+type VirtualwanConnectionSharedKeyResult_Value_Properties struct {
 	ProvisioningState any
-	// The value of the shared key for the vpn link connection.
 	SharedKey any
-	// The length of the shared key for the vpn link connection.
 	SharedKeyLength any
+}
+
+type VirtualwanConnectionSharedKeyResult_Value struct {
+	Properties any
 }
 
 type VirtualwanConnectionSharedKeyResultConfig struct {
@@ -22,8 +23,10 @@ type VirtualwanConnectionSharedKeyResultAttrs struct {
 	ConnectionName any
 	GatewayName any
 	LinkConnectionName any
-	// Parameters for SharedKey.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The ConnectionSharedKeyResult items on this page
+	Value any
 }
 
 var VirtualwanConnectionSharedKeyResult = ubx.DataSourceBinding{

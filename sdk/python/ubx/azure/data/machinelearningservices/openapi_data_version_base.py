@@ -7,31 +7,35 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDataVersionBase_Properties:
-    # Enum to determine the type of data.
+class OpenapiDataVersionBase_Value_Properties:
     data_type: Any = None
-    # [Required] Uri of the data. Example: https://go.microsoft.com/fwlink/?linkid=2202330
     data_uri: Any = None
 
 @dataclasses.dataclass
+class OpenapiDataVersionBase_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiDataVersionBaseConfig:
+    list_view_type: Any = None
     name: Any = None
-    version: Any = None
-    workspace_name: Any = None
+    registry_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiDataVersionBaseAttrs:
+    list_view_type: Any = None
     name: Any = None
-    # Data version base definition
-    properties: Any = None
-    version: Any = None
-    workspace_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    registry_name: Any = None
+    # The DataVersionBase items on this page
+    value: Any = None
 
 OpenapiDataVersionBase = ubx.DataSourceBinding(
     wire_type="azure_machinelearningservices_openapi_data_version_base",
     fields={
+        "list_view_type": ubx.FieldSpec(wire_name="list_view_type"),
         "name": ubx.FieldSpec(wire_name="name"),
-        "version": ubx.FieldSpec(wire_name="version"),
-        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
+        "registry_name": ubx.FieldSpec(wire_name="registry_name"),
     },
 )

@@ -3,33 +3,34 @@ package synapse
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SqlpoolSqlPoolColumn_Properties struct {
-	// The column data type.
+type SqlpoolSqlPoolColumn_Value_Properties struct {
 	ColumnType any
-	// Indicates whether column value is computed or not
 	IsComputed any
 }
 
+type SqlpoolSqlPoolColumn_Value struct {
+	Properties any
+}
+
 type SqlpoolSqlPoolColumnConfig struct {
-	ColumnName any
 	SchemaName any
 	SqlPoolName any
 	TableName any
 }
 
 type SqlpoolSqlPoolColumnAttrs struct {
-	ColumnName any
-	// Sql pool column properties.
-	Properties any
+	// Link to retrieve next page of results.
+	NextLink any
 	SchemaName any
 	SqlPoolName any
 	TableName any
+	// Array of results.
+	Value any
 }
 
 var SqlpoolSqlPoolColumn = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_sql_pool_column",
 	Fields: ubx.FieldMap{
-		"ColumnName": ubx.FieldSpec{WireName: "column_name"},
 		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
 		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
 		"TableName": ubx.FieldSpec{WireName: "table_name"},

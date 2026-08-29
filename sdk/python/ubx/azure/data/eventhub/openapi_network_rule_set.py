@@ -7,31 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiNetworkRuleSet_Properties_IpRules:
+class OpenapiNetworkRuleSet_Value_Properties_IpRules:
     action: Any = None
     ip_mask: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkRuleSet_Properties_VirtualNetworkRules_Subnet:
+class OpenapiNetworkRuleSet_Value_Properties_VirtualNetworkRules_Subnet:
     id: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkRuleSet_Properties_VirtualNetworkRules:
+class OpenapiNetworkRuleSet_Value_Properties_VirtualNetworkRules:
     ignore_missing_vnet_service_endpoint: Any = None
     subnet: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkRuleSet_Properties:
-    # Default Action for Network Rule Set
+class OpenapiNetworkRuleSet_Value_Properties:
     default_action: Any = None
-    # List of IpRules
     ip_rules: Any = None
-    # This determines if traffic is allowed over public network. By default it is enabled. If value is SecuredByPerimeter then Inbound and Outbound communication is controlled by the network security perimeter and profile's access rules.
     public_network_access: Any = None
-    # Value that indicates whether Trusted Service Access is Enabled or not.
     trusted_service_access_enabled: Any = None
-    # List VirtualNetwork Rules
     virtual_network_rules: Any = None
+
+@dataclasses.dataclass
+class OpenapiNetworkRuleSet_Value:
+    location: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiNetworkRuleSetConfig:
@@ -39,11 +39,11 @@ class OpenapiNetworkRuleSetConfig:
 
 @dataclasses.dataclass
 class OpenapiNetworkRuleSetAttrs:
-    # The geo-location where the resource lives
-    location: Any = None
     namespace_name: Any = None
-    # NetworkRuleSet properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The NetworkRuleSet items on this page
+    value: Any = None
 
 OpenapiNetworkRuleSet = ubx.DataSourceBinding(
     wire_type="azure_eventhub_openapi_network_rule_set",

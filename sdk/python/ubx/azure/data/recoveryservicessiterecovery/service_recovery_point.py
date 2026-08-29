@@ -7,45 +7,43 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ServiceRecoveryPoint_Properties_ProviderSpecificDetails:
-    # Gets the provider type.
+class ServiceRecoveryPoint_Value_Properties_ProviderSpecificDetails:
     instance_type: Any = None
 
 @dataclasses.dataclass
-class ServiceRecoveryPoint_Properties:
-    # Replication provider specific recovery point details.
+class ServiceRecoveryPoint_Value_Properties:
     provider_specific_details: Any = None
-    # The recovery point time.
     recovery_point_time: Any = None
-    # The recovery point type: ApplicationConsistent, CrashConsistent.
     recovery_point_type: Any = None
+
+@dataclasses.dataclass
+class ServiceRecoveryPoint_Value:
+    location: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class ServiceRecoveryPointConfig:
     fabric_name: Any = None
     protection_container_name: Any = None
-    recovery_point_name: Any = None
     replicated_protected_item_name: Any = None
     resource_name: Any = None
 
 @dataclasses.dataclass
 class ServiceRecoveryPointAttrs:
     fabric_name: Any = None
-    # Resource Location
-    location: Any = None
-    # Recovery point properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     protection_container_name: Any = None
-    recovery_point_name: Any = None
     replicated_protected_item_name: Any = None
     resource_name: Any = None
+    # The RecoveryPoint items on this page
+    value: Any = None
 
 ServiceRecoveryPoint = ubx.DataSourceBinding(
     wire_type="azure_recoveryservicessiterecovery_service_recovery_point",
     fields={
         "fabric_name": ubx.FieldSpec(wire_name="fabric_name"),
         "protection_container_name": ubx.FieldSpec(wire_name="protection_container_name"),
-        "recovery_point_name": ubx.FieldSpec(wire_name="recovery_point_name"),
         "replicated_protected_item_name": ubx.FieldSpec(wire_name="replicated_protected_item_name"),
         "resource_name": ubx.FieldSpec(wire_name="resource_name"),
     },

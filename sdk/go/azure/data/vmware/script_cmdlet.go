@@ -3,7 +3,7 @@ package vmware
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ScriptCmdlet_Properties_Parameters struct {
+type ScriptCmdlet_Value_Properties_Parameters struct {
 	Description any
 	Name any
 	Optional any
@@ -11,38 +11,36 @@ type ScriptCmdlet_Properties_Parameters struct {
 	Visibility any
 }
 
-type ScriptCmdlet_Properties struct {
-	// Specifies whether a script cmdlet is intended to be invoked only through automation or visible to customers
+type ScriptCmdlet_Value_Properties struct {
 	Audience any
-	// Description of the scripts functionality
 	Description any
-	// Parameters the script will accept
 	Parameters any
-	// A script cmdlet provisioning state
 	ProvisioningState any
-	// Recommended time limit for execution
 	Timeout any
+}
+
+type ScriptCmdlet_Value struct {
+	Properties any
 }
 
 type ScriptCmdletConfig struct {
 	PrivateCloudName any
-	ScriptCmdletName any
 	ScriptPackageName any
 }
 
 type ScriptCmdletAttrs struct {
+	// The link to the next page of items
+	NextLink any
 	PrivateCloudName any
-	// Properties of a pre-canned script
-	Properties any
-	ScriptCmdletName any
 	ScriptPackageName any
+	// The ScriptCmdlet items on this page
+	Value any
 }
 
 var ScriptCmdlet = ubx.DataSourceBinding{
 	WireType: "azure_vmware_script_cmdlet",
 	Fields: ubx.FieldMap{
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
-		"ScriptCmdletName": ubx.FieldSpec{WireName: "script_cmdlet_name"},
 		"ScriptPackageName": ubx.FieldSpec{WireName: "script_package_name"},
 	},
 }

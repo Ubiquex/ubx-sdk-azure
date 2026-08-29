@@ -4,14 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .load_test_resource_list_result import LoadTestResourceListResult, LoadTestResourceListResultConfig
-from .microsoft_load_test_service import MicrosoftLoadTestService, MicrosoftLoadTestServiceConfig
-from .paged_outbound_environment_endpoint import PagedOutboundEnvironmentEndpoint, PagedOutboundEnvironmentEndpointConfig
-from .playwright_microsoft_load_test_service import PlaywrightMicrosoftLoadTestService, PlaywrightMicrosoftLoadTestServiceConfig
-from .playwright_quota import PlaywrightQuota, PlaywrightQuotaConfig
-from .playwright_quota_list_result import PlaywrightQuotaListResult, PlaywrightQuotaListResultConfig
-from .playwright_workspace_list_result import PlaywrightWorkspaceListResult, PlaywrightWorkspaceListResultConfig
-from .playwright_workspace_quota import PlaywrightWorkspaceQuota, PlaywrightWorkspaceQuotaConfig
-from .playwright_workspace_quota_list_result import PlaywrightWorkspaceQuotaListResult, PlaywrightWorkspaceQuotaListResultConfig
-from .quota_resource import QuotaResource, QuotaResourceConfig
-from .quota_resource_list_result import QuotaResourceListResult, QuotaResourceListResultConfig
+from .load_test_resource import LoadTestResource, LoadTestResourceConfig
+from .outbound_environment_endpoint import OutboundEnvironmentEndpoint, OutboundEnvironmentEndpointConfig
+from .playwright_workspace import PlaywrightWorkspace, PlaywrightWorkspaceConfig

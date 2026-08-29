@@ -3,85 +3,62 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiBillingRoleAssignment_Properties struct {
-	// The name of the billing account.
+type OpenapiBillingRoleAssignment_Value_Properties struct {
 	BillingAccountDisplayName any
-	// The fully qualified ID that uniquely identifies a billing account.
 	BillingAccountId any
-	// The name of the billing profile.
 	BillingProfileDisplayName any
-	// The fully qualified ID that uniquely identifies a billing profile.
 	BillingProfileId any
-	// The ID of the billing request that was created for the role assignment. This is only applicable to cross tenant role assignments or role assignments created through the billing request.
 	BillingRequestId any
-	// The object ID of the user who created the role assignment.
 	CreatedByPrincipalId any
-	// The principal PUID of the user who created the role assignment.
 	CreatedByPrincipalPuid any
-	// The tenant Id of the user who created the role assignment.
 	CreatedByPrincipalTenantId any
-	// The email address of the user who created the role assignment. This is supported only for billing accounts with agreement type Enterprise Agreement.
 	CreatedByUserEmailAddress any
-	// The date the role assignment was created.
 	CreatedOn any
-	// The name of the customer.
 	CustomerDisplayName any
-	// The fully qualified ID that uniquely identifies a customer.
 	CustomerId any
-	// The name of the invoice section.
 	InvoiceSectionDisplayName any
-	// The fully qualified ID that uniquely identifies an invoice section.
 	InvoiceSectionId any
-	// The principal PUID of the user who modified the role assignment.
 	ModifiedByPrincipalId any
-	// The principal PUID of the user who modified the role assignment.
 	ModifiedByPrincipalPuid any
-	// The tenant Id of the user who modified the role assignment.
 	ModifiedByPrincipalTenantId any
-	// The email address of the user who modified the role assignment. This is supported only for billing accounts with agreement type Enterprise Agreement.
 	ModifiedByUserEmailAddress any
-	// The date the role assignment was modified.
 	ModifiedOn any
-	// The display name of the principal to whom the role was assigned.
 	PrincipalDisplayName any
-	// The object id of the user to whom the role was assigned.
 	PrincipalId any
-	// The principal PUID of the user to whom the role was assigned.
 	PrincipalPuid any
-	// The principal tenant id of the user to whom the role was assigned.
 	PrincipalTenantId any
-	// The friendly name of the tenant of the user to whom the role was assigned. This will be 'Primary Tenant' for the primary tenant of the billing account.
 	PrincipalTenantName any
-	// The type of a role Assignment.
 	PrincipalType any
-	// The provisioning state of the resource during a long-running operation.
 	ProvisioningState any
-	// The ID of the role definition.
 	RoleDefinitionId any
-	// The scope at which the role was assigned.
 	Scope any
-	// The authentication type of the user, whether Organization or MSA, of the user to whom the role was assigned. This is supported only for billing accounts with agreement type Enterprise Agreement.
 	UserAuthenticationType any
-	// The email address of the user to whom the role was assigned. This is supported only for billing accounts with agreement type Enterprise Agreement.
 	UserEmailAddress any
+}
+
+type OpenapiBillingRoleAssignment_Value struct {
+	Properties any
+	Tags any
 }
 
 type OpenapiBillingRoleAssignmentConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	BillingRoleAssignmentName any
-	CustomerName any
+	Filter any
+	Skip any
+	Top any
 }
 
 type OpenapiBillingRoleAssignmentAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	BillingRoleAssignmentName any
-	CustomerName any
-	// The properties of the billing role assignment.
-	Properties any
-	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-	Tags any
+	Filter any
+	// The link to the next page of items
+	NextLink any
+	Skip any
+	Top any
+	// The BillingRoleAssignment items on this page
+	Value any
 }
 
 var OpenapiBillingRoleAssignment = ubx.DataSourceBinding{
@@ -89,7 +66,8 @@ var OpenapiBillingRoleAssignment = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"BillingRoleAssignmentName": ubx.FieldSpec{WireName: "billing_role_assignment_name"},
-		"CustomerName": ubx.FieldSpec{WireName: "customer_name"},
+		"Filter": ubx.FieldSpec{WireName: "filter"},
+		"Skip": ubx.FieldSpec{WireName: "skip"},
+		"Top": ubx.FieldSpec{WireName: "top"},
 	},
 }

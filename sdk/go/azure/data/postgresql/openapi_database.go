@@ -3,29 +3,30 @@ package postgresql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDatabase_Properties struct {
-	// Character set of the database.
+type OpenapiDatabase_Value_Properties struct {
 	Charset any
-	// Collation of the database.
 	Collation any
 }
 
+type OpenapiDatabase_Value struct {
+	Properties any
+}
+
 type OpenapiDatabaseConfig struct {
-	DatabaseName any
 	ServerName any
 }
 
 type OpenapiDatabaseAttrs struct {
-	DatabaseName any
-	// Properties of a database.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ServerName any
+	// The Database items on this page
+	Value any
 }
 
 var OpenapiDatabase = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_database",
 	Fields: ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
 	},
 }

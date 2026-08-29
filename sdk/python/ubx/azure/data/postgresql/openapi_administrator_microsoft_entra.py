@@ -7,32 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiAdministratorMicrosoftEntra_Properties:
-    # Object identifier of the Microsoft Entra principal.
+class OpenapiAdministratorMicrosoftEntra_Value_Properties:
     object_id: Any = None
-    # Name of the Microsoft Entra principal.
     principal_name: Any = None
-    # Type of Microsoft Entra principal to which the server administrator is associated.
     principal_type: Any = None
-    # Identifier of the tenant in which the Microsoft Entra principal exists.
     tenant_id: Any = None
 
 @dataclasses.dataclass
+class OpenapiAdministratorMicrosoftEntra_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiAdministratorMicrosoftEntraConfig:
-    object_id: Any = None
     server_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiAdministratorMicrosoftEntraAttrs:
-    object_id: Any = None
-    # Properties of a server administrator associated to a Microsoft Entra principal.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
+    # The AdministratorMicrosoftEntra items on this page
+    value: Any = None
 
 OpenapiAdministratorMicrosoftEntra = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_administrator_microsoft_entra",
     fields={
-        "object_id": ubx.FieldSpec(wire_name="object_id"),
         "server_name": ubx.FieldSpec(wire_name="server_name"),
     },
 )

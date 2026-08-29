@@ -7,30 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class WorkloadNetworkVirtualMachine_Properties:
-    # Display name of the VM.
+class WorkloadNetworkVirtualMachine_Value_Properties:
     display_name: Any = None
-    # base Workload Network provisioning state
     provisioning_state: Any = None
-    # VM type
     vm_type: Any = None
+
+@dataclasses.dataclass
+class WorkloadNetworkVirtualMachine_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class WorkloadNetworkVirtualMachineConfig:
     private_cloud_name: Any = None
-    virtual_machine_id: Any = None
 
 @dataclasses.dataclass
 class WorkloadNetworkVirtualMachineAttrs:
+    # The link to the next page of items
+    next_link: Any = None
     private_cloud_name: Any = None
-    # NSX Virtual Machine Properties
-    properties: Any = None
-    virtual_machine_id: Any = None
+    # The WorkloadNetworkVirtualMachine items on this page
+    value: Any = None
 
 WorkloadNetworkVirtualMachine = ubx.DataSourceBinding(
     wire_type="azure_vmware_workload_network_virtual_machine",
     fields={
         "private_cloud_name": ubx.FieldSpec(wire_name="private_cloud_name"),
-        "virtual_machine_id": ubx.FieldSpec(wire_name="virtual_machine_id"),
     },
 )

@@ -7,42 +7,42 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDatabaseConnection_Properties_ConfigurationFiles:
+class OpenapiDatabaseConnection_Value_Properties_ConfigurationFiles:
     contents: Any = None
     file_name: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiDatabaseConnection_Properties:
-    # A list of configuration files associated with this database connection.
+class OpenapiDatabaseConnection_Value_Properties:
     configuration_files: Any = None
-    # If present, the identity is used in conjunction with connection string to connect to the database. Use of the system-assigned managed identity is indicated with the string 'SystemAssigned', while use of a user-assigned managed identity is indicated with the resource id of the managed identity resource.
     connection_identity: Any = None
-    # The connection string to use to connect to the database.
     connection_string: Any = None
-    # The region of the database resource.
     region: Any = None
-    # The resource id of the database.
     resource_id: Any = None
 
 @dataclasses.dataclass
+class OpenapiDatabaseConnection_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiDatabaseConnectionConfig:
-    database_connection_name: Any = None
+    environment_name: Any = None
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiDatabaseConnectionAttrs:
-    database_connection_name: Any = None
-    # Kind of resource.
-    kind: Any = None
+    environment_name: Any = None
     name: Any = None
-    # DatabaseConnection resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The DatabaseConnection items on this page
+    value: Any = None
 
 OpenapiDatabaseConnection = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_database_connection",
     fields={
-        "database_connection_name": ubx.FieldSpec(wire_name="database_connection_name"),
+        "environment_name": ubx.FieldSpec(wire_name="environment_name"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

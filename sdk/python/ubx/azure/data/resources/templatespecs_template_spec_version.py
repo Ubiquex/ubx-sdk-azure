@@ -7,52 +7,42 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class TemplatespecsTemplateSpecVersion_Properties_LinkedTemplates:
+class TemplatespecsTemplateSpecVersion_Value_Properties_LinkedTemplates:
     path: Any = None
     template: Any = None
 
 @dataclasses.dataclass
-class TemplatespecsTemplateSpecVersion_Properties:
-    # Template Spec version description.
+class TemplatespecsTemplateSpecVersion_Value_Properties:
     description: Any = None
-    # An array of linked template artifacts.
     linked_templates: Any = None
-    # The main Azure Resource Manager template content.
     main_template: Any = None
-    # The version metadata. Metadata is an open-ended object and is typically a collection of key-value pairs.
     metadata: Any = None
-    # The Azure Resource Manager template UI definition content.
     ui_form_definition: Any = None
+
+@dataclasses.dataclass
+class TemplatespecsTemplateSpecVersion_Value:
+    location: Any = None
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class TemplatespecsTemplateSpecVersionConfig:
     api_version: Any = None
-    resource_group_name: Any = None
-    subscription_id: Any = None
     template_spec_name: Any = None
-    template_spec_version: Any = None
 
 @dataclasses.dataclass
 class TemplatespecsTemplateSpecVersionAttrs:
     api_version: Any = None
-    # The location of the Template Spec Version. It must match the location of the parent Template Spec.
-    location: Any = None
-    # Template Spec Version properties.
-    properties: Any = None
-    resource_group_name: Any = None
-    subscription_id: Any = None
-    # Resource tags.
-    tags: Any = None
+    # The URL to use for getting the next set of results.
+    next_link: Any = None
     template_spec_name: Any = None
-    template_spec_version: Any = None
+    # An array of Template Spec versions.
+    value: Any = None
 
 TemplatespecsTemplateSpecVersion = ubx.DataSourceBinding(
     wire_type="azure_resources_templatespecs_template_spec_version",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
-        "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
-        "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
         "template_spec_name": ubx.FieldSpec(wire_name="template_spec_name"),
-        "template_spec_version": ubx.FieldSpec(wire_name="template_spec_version"),
     },
 )

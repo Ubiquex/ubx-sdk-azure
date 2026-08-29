@@ -3,80 +3,57 @@ package cost
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ManagementOpenapiScheduledAction_Properties_FileDestination struct {
-	// Destination of the view data. Currently only CSV format is supported.
+type ManagementOpenapiScheduledAction_Value_Properties_FileDestination struct {
 	FileFormats any
 }
 
-type ManagementOpenapiScheduledAction_Properties_Notification struct {
-	// Locale of the email.
+type ManagementOpenapiScheduledAction_Value_Properties_Notification struct {
 	Language any
-	// Optional message to be added in the email. Length is limited to 250 characters.
 	Message any
-	// Regional format used for formatting date/time and currency values in the email.
 	RegionalFormat any
-	// Subject of the email. Length is limited to 70 characters.
 	Subject any
-	// Array of email addresses.
 	To any
 }
 
-type ManagementOpenapiScheduledAction_Properties_Schedule struct {
-	// UTC day on which cost analysis data will be emailed. Must be between 1 and 31. This property is applicable when frequency is Monthly and overrides weeksOfMonth or daysOfWeek.
+type ManagementOpenapiScheduledAction_Value_Properties_Schedule struct {
 	DayOfMonth any
-	// Day names in english on which cost analysis data will be emailed. This property is applicable when frequency is Weekly or Monthly.
 	DaysOfWeek any
-	// The end date and time of the scheduled action (UTC).
 	EndDate any
-	// Frequency of the schedule.
 	Frequency any
-	// UTC time at which cost analysis data will be emailed.
 	HourOfDay any
-	// The start date and time of the scheduled action (UTC).
 	StartDate any
-	// Weeks in which cost analysis data will be emailed. This property is applicable when frequency is Monthly and used in combination with daysOfWeek.
 	WeeksOfMonth any
 }
 
-type ManagementOpenapiScheduledAction_Properties struct {
-	// Scheduled action name.
+type ManagementOpenapiScheduledAction_Value_Properties struct {
 	DisplayName any
-	// Destination of the view data. This is optional. Currently only CSV format is supported.
 	FileDestination any
-	// The properties of the scheduled action notification.
 	Notification any
-	// Email address of the point of contact that should get the unsubscribe requests and notification emails.
 	NotificationEmail any
-	// The properties of the schedule.
 	Schedule any
-	// For private scheduled action(Create or Update), scope will be empty.<br /> For shared scheduled action(Create or Update By Scope), Cost Management scope can be 'subscriptions/{subscriptionId}' for subscription scope, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' for resourceGroup scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' for Billing Account scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' for Department scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{enrollmentAccountId}' for EnrollmentAccount scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' for BillingProfile scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/invoiceSections/{invoiceSectionId}' for InvoiceSection scope, '/providers/Microsoft.CostManagement/externalBillingAccounts/{externalBillingAccountName}' for ExternalBillingAccount scope, and '/providers/Microsoft.CostManagement/externalSubscriptions/{externalSubscriptionName}' for ExternalSubscription scope.
 	Scope any
-	// Status of the scheduled action.
 	Status any
-	// Cost analysis viewId used for scheduled action. For example, '/providers/Microsoft.CostManagement/views/swaggerExample'
 	ViewId any
 }
 
+type ManagementOpenapiScheduledAction_Value struct {
+	ETag any
+	Kind any
+	Properties any
+}
+
 type ManagementOpenapiScheduledActionConfig struct {
-	Name any
-	Scope any
 }
 
 type ManagementOpenapiScheduledActionAttrs struct {
-	// The ETag (or entity tag) HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content was not changed. It is a string of ASCII characters placed between double quotes, like "675af34563dc-tr34".
-	ETag any
-	// Kind of the scheduled action.
-	Kind any
-	Name any
-	// The properties of the scheduled action.
-	Properties any
-	Scope any
+	// The link (url) to the next page of results.
+	NextLink any
+	// The list of scheduled actions.
+	Value any
 }
 
 var ManagementOpenapiScheduledAction = ubx.DataSourceBinding{
 	WireType: "azure_cost_management_openapi_scheduled_action",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},
 }

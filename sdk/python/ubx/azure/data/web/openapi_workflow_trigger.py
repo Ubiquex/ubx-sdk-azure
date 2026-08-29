@@ -7,87 +7,67 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiWorkflowTrigger_Properties_Recurrence_Schedule_MonthlyOccurrences:
+class OpenapiWorkflowTrigger_Value_Properties_Recurrence_Schedule_MonthlyOccurrences:
     day: Any = None
     occurrence: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowTrigger_Properties_Recurrence_Schedule:
-    # The hours.
+class OpenapiWorkflowTrigger_Value_Properties_Recurrence_Schedule:
     hours: Any = None
-    # The minutes.
     minutes: Any = None
-    # The month days.
     month_days: Any = None
-    # The monthly occurrences.
     monthly_occurrences: Any = None
-    # The days of the week.
     week_days: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowTrigger_Properties_Recurrence:
-    # The end time.
+class OpenapiWorkflowTrigger_Value_Properties_Recurrence:
     end_time: Any = None
-    # The recurrence frequency.
     frequency: Any = None
-    # The interval.
     interval: Any = None
-    # The recurrence schedule.
     schedule: Any = None
-    # The start time.
     start_time: Any = None
-    # The time zone.
     time_zone: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowTrigger_Properties_Workflow:
-    # The resource id.
+class OpenapiWorkflowTrigger_Value_Properties_Workflow:
     id: Any = None
-    # Gets the resource name.
     name: Any = None
-    # Gets the resource type.
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowTrigger_Properties:
-    # Gets the changed time.
+class OpenapiWorkflowTrigger_Value_Properties:
     changed_time: Any = None
-    # Gets the created time.
     created_time: Any = None
-    # Gets the last execution time.
     last_execution_time: Any = None
-    # Gets the next execution time.
     next_execution_time: Any = None
-    # The workflow trigger provisioning state.
     provisioning_state: Any = None
-    # The workflow trigger recurrence.
     recurrence: Any = None
-    # The workflow state.
     state: Any = None
-    # The workflow status.
     status: Any = None
-    # The resource reference.
     workflow: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkflowTrigger_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkflowTriggerConfig:
     name: Any = None
-    trigger_name: Any = None
     workflow_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkflowTriggerAttrs:
     name: Any = None
-    # The workflow trigger properties.
-    properties: Any = None
-    trigger_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The WorkflowTrigger items on this page
+    value: Any = None
     workflow_name: Any = None
 
 OpenapiWorkflowTrigger = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_workflow_trigger",
     fields={
         "name": ubx.FieldSpec(wire_name="name"),
-        "trigger_name": ubx.FieldSpec(wire_name="trigger_name"),
         "workflow_name": ubx.FieldSpec(wire_name="workflow_name"),
     },
 )

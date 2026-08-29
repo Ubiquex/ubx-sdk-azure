@@ -3,32 +3,48 @@ package oracle
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDbVersion_Properties struct {
-	// True if this version of the Oracle Database software is the latest version for a release.
+type OpenapiDbVersion_Value_Properties struct {
 	IsLatestForMajorVersion any
-	// True if this version of the Oracle Database software is the preview version.
 	IsPreviewDbVersion any
-	// True if this version of the Oracle Database software is supported for Upgrade.
 	IsUpgradeSupported any
-	// True if this version of the Oracle Database software supports pluggable databases.
 	SupportsPdb any
-	// A valid Oracle Database version.
 	Version any
 }
 
+type OpenapiDbVersion_Value struct {
+	Properties any
+}
+
 type OpenapiDbVersionConfig struct {
-	Dbversionsname any
+	DbSystemId any
+	DbSystemShape any
+	IsDatabaseSoftwareImageSupported any
+	IsUpgradeSupported any
+	ShapeFamily any
+	StorageManagement any
 }
 
 type OpenapiDbVersionAttrs struct {
-	Dbversionsname any
-	// DbVersion resource model
-	Properties any
+	DbSystemId any
+	DbSystemShape any
+	IsDatabaseSoftwareImageSupported any
+	IsUpgradeSupported any
+	// The link to the next page of items
+	NextLink any
+	ShapeFamily any
+	StorageManagement any
+	// The DbVersion items on this page
+	Value any
 }
 
 var OpenapiDbVersion = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_db_version",
 	Fields: ubx.FieldMap{
-		"Dbversionsname": ubx.FieldSpec{WireName: "dbversionsname"},
+		"DbSystemId": ubx.FieldSpec{WireName: "db_system_id"},
+		"DbSystemShape": ubx.FieldSpec{WireName: "db_system_shape"},
+		"IsDatabaseSoftwareImageSupported": ubx.FieldSpec{WireName: "is_database_software_image_supported"},
+		"IsUpgradeSupported": ubx.FieldSpec{WireName: "is_upgrade_supported"},
+		"ShapeFamily": ubx.FieldSpec{WireName: "shape_family"},
+		"StorageManagement": ubx.FieldSpec{WireName: "storage_management"},
 	},
 }

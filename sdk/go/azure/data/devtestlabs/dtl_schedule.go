@@ -3,87 +3,59 @@ package devtestlabs
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DtlSchedule_Properties_DailyRecurrence struct {
-	// The time of day the schedule will occur.
+type DtlSchedule_Value_Properties_DailyRecurrence struct {
 	Time any
 }
 
-type DtlSchedule_Properties_HourlyRecurrence struct {
-	// Minutes of the hour the schedule will run.
+type DtlSchedule_Value_Properties_HourlyRecurrence struct {
 	Minute any
 }
 
-type DtlSchedule_Properties_NotificationSettings struct {
-	// The email recipient to send notifications to (can be a list of semi-colon separated email addresses).
+type DtlSchedule_Value_Properties_NotificationSettings struct {
 	EmailRecipient any
-	// The locale to use when sending a notification (fallback for unsupported languages is EN).
 	NotificationLocale any
-	// If notifications are enabled for this schedule (i.e. Enabled, Disabled).
 	Status any
-	// Time in minutes before event at which notification will be sent.
 	TimeInMinutes any
-	// The webhook URL to which the notification will be sent.
 	WebhookUrl any
 }
 
-type DtlSchedule_Properties_WeeklyRecurrence struct {
-	// The time of the day the schedule will occur.
+type DtlSchedule_Value_Properties_WeeklyRecurrence struct {
 	Time any
-	// The days of the week for which the schedule is set (e.g. Sunday, Monday, Tuesday, etc.).
 	Weekdays any
 }
 
-type DtlSchedule_Properties struct {
-	// The creation date of the schedule.
+type DtlSchedule_Value_Properties struct {
 	CreatedDate any
-	// Properties of a daily schedule.
 	DailyRecurrence any
-	// Properties of an hourly schedule.
 	HourlyRecurrence any
-	// Notification settings for a schedule.
 	NotificationSettings any
-	// The provisioning status of the resource.
 	ProvisioningState any
-	// The status of the schedule (i.e. Enabled, Disabled)
 	Status any
-	// The resource ID to which the schedule belongs
 	TargetResourceId any
-	// The task type of the schedule (e.g. LabVmsShutdownTask, LabVmAutoStart).
 	TaskType any
-	// The time zone ID (e.g. China Standard Time, Greenland Standard Time, Pacific Standard time, etc.). The possible values for this property can be found in `IReadOnlyCollection<string> TimeZoneConverter.TZConvert.KnownWindowsTimeZoneIds` (https://github.com/mattjohnsonpint/TimeZoneConverter/blob/main/README.md)
 	TimeZoneId any
-	// The unique immutable identifier of a resource (Guid).
 	UniqueIdentifier any
-	// Properties of a weekly schedule.
 	WeeklyRecurrence any
 }
 
+type DtlSchedule_Value struct {
+	Location any
+	Properties any
+	Tags any
+}
+
 type DtlScheduleConfig struct {
-	LabName any
-	Name any
-	ServiceFabricName any
-	UserName any
 }
 
 type DtlScheduleAttrs struct {
-	LabName any
-	// The geo-location where the resource lives
-	Location any
-	Name any
-	// Properties of a schedule.
-	Properties any
-	ServiceFabricName any
-	// Resource tags.
-	Tags any
-	UserName any
+	// The link to the next page of items
+	NextLink any
+	// The Schedule items on this page
+	Value any
 }
 
 var DtlSchedule = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_schedule",
 	Fields: ubx.FieldMap{
-		"LabName": ubx.FieldSpec{WireName: "lab_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ServiceFabricName": ubx.FieldSpec{WireName: "service_fabric_name"},
-		"UserName": ubx.FieldSpec{WireName: "user_name"},
 	},
 }

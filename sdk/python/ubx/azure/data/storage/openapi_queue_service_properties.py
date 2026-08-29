@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiQueueServiceProperties_Properties_Cors_CorsRules:
+class OpenapiQueueServiceProperties_Value_Properties_Cors_CorsRules:
     allowed_headers: Any = None
     allowed_methods: Any = None
     allowed_origins: Any = None
@@ -15,14 +15,16 @@ class OpenapiQueueServiceProperties_Properties_Cors_CorsRules:
     max_age_in_seconds: Any = None
 
 @dataclasses.dataclass
-class OpenapiQueueServiceProperties_Properties_Cors:
-    # The List of CORS rules. You can include up to five CorsRule elements in the request.
+class OpenapiQueueServiceProperties_Value_Properties_Cors:
     cors_rules: Any = None
 
 @dataclasses.dataclass
-class OpenapiQueueServiceProperties_Properties:
-    # Sets the CORS rules. You can include up to five CorsRule elements in the request.
+class OpenapiQueueServiceProperties_Value_Properties:
     cors: Any = None
+
+@dataclasses.dataclass
+class OpenapiQueueServiceProperties_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiQueueServicePropertiesConfig:
@@ -31,8 +33,8 @@ class OpenapiQueueServicePropertiesConfig:
 @dataclasses.dataclass
 class OpenapiQueueServicePropertiesAttrs:
     account_name: Any = None
-    # The properties of a storage account’s Queue service.
-    properties: Any = None
+    # List of queue services returned.
+    value: Any = None
 
 OpenapiQueueServiceProperties = ubx.DataSourceBinding(
     wire_type="azure_storage_openapi_queue_service_properties",

@@ -3,12 +3,12 @@ package app
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiRevision_Properties_Template_Containers_Probes_HttpGet_HttpHeaders struct {
+type OpenapiRevision_Value_Properties_Template_Containers_Probes_HttpGet_HttpHeaders struct {
 	Name any
 	Value any
 }
 
-type OpenapiRevision_Properties_Template_Containers_Probes_HttpGet struct {
+type OpenapiRevision_Value_Properties_Template_Containers_Probes_HttpGet struct {
 	Host any
 	HttpHeaders any
 	Path any
@@ -16,12 +16,12 @@ type OpenapiRevision_Properties_Template_Containers_Probes_HttpGet struct {
 	Scheme any
 }
 
-type OpenapiRevision_Properties_Template_Containers_Probes_TcpSocket struct {
+type OpenapiRevision_Value_Properties_Template_Containers_Probes_TcpSocket struct {
 	Host any
 	Port any
 }
 
-type OpenapiRevision_Properties_Template_Containers_Probes struct {
+type OpenapiRevision_Value_Properties_Template_Containers_Probes struct {
 	FailureThreshold any
 	HttpGet any
 	InitialDelaySeconds any
@@ -33,29 +33,29 @@ type OpenapiRevision_Properties_Template_Containers_Probes struct {
 	Type any
 }
 
-type OpenapiRevision_Properties_Template_Containers struct {
+type OpenapiRevision_Value_Properties_Template_Containers struct {
 	Probes any
 }
 
-type OpenapiRevision_Properties_Template_InitContainers_Env struct {
+type OpenapiRevision_Value_Properties_Template_InitContainers_Env struct {
 	Name any
 	SecretRef any
 	Value any
 }
 
-type OpenapiRevision_Properties_Template_InitContainers_Resources struct {
+type OpenapiRevision_Value_Properties_Template_InitContainers_Resources struct {
 	Cpu any
 	EphemeralStorage any
 	Memory any
 }
 
-type OpenapiRevision_Properties_Template_InitContainers_VolumeMounts struct {
+type OpenapiRevision_Value_Properties_Template_InitContainers_VolumeMounts struct {
 	MountPath any
 	SubPath any
 	VolumeName any
 }
 
-type OpenapiRevision_Properties_Template_InitContainers struct {
+type OpenapiRevision_Value_Properties_Template_InitContainers struct {
 	Args any
 	Command any
 	Env any
@@ -65,12 +65,12 @@ type OpenapiRevision_Properties_Template_InitContainers struct {
 	VolumeMounts any
 }
 
-type OpenapiRevision_Properties_Template_Scale_Rules_AzureQueue_Auth struct {
+type OpenapiRevision_Value_Properties_Template_Scale_Rules_AzureQueue_Auth struct {
 	SecretRef any
 	TriggerParameter any
 }
 
-type OpenapiRevision_Properties_Template_Scale_Rules_AzureQueue struct {
+type OpenapiRevision_Value_Properties_Template_Scale_Rules_AzureQueue struct {
 	AccountName any
 	Auth any
 	Identity any
@@ -78,20 +78,20 @@ type OpenapiRevision_Properties_Template_Scale_Rules_AzureQueue struct {
 	QueueName any
 }
 
-type OpenapiRevision_Properties_Template_Scale_Rules_Custom struct {
+type OpenapiRevision_Value_Properties_Template_Scale_Rules_Custom struct {
 	Auth any
 	Identity any
 	Metadata any
 	Type any
 }
 
-type OpenapiRevision_Properties_Template_Scale_Rules_Http struct {
+type OpenapiRevision_Value_Properties_Template_Scale_Rules_Http struct {
 	Auth any
 	Identity any
 	Metadata any
 }
 
-type OpenapiRevision_Properties_Template_Scale_Rules struct {
+type OpenapiRevision_Value_Properties_Template_Scale_Rules struct {
 	AzureQueue any
 	Custom any
 	Http any
@@ -99,30 +99,25 @@ type OpenapiRevision_Properties_Template_Scale_Rules struct {
 	Tcp any
 }
 
-type OpenapiRevision_Properties_Template_Scale struct {
-	// Optional. KEDA Cooldown Period in seconds. Defaults to 300 seconds if not set.
+type OpenapiRevision_Value_Properties_Template_Scale struct {
 	CooldownPeriod any
-	// Optional. Maximum number of container replicas. Defaults to 10 if not set.
 	MaxReplicas any
-	// Optional. Minimum number of container replicas.
 	MinReplicas any
-	// Optional. KEDA Polling Interval in seconds. Defaults to 30 seconds if not set.
 	PollingInterval any
-	// Scaling rules.
 	Rules any
 }
 
-type OpenapiRevision_Properties_Template_ServiceBinds struct {
+type OpenapiRevision_Value_Properties_Template_ServiceBinds struct {
 	Name any
 	ServiceId any
 }
 
-type OpenapiRevision_Properties_Template_Volumes_Secrets struct {
+type OpenapiRevision_Value_Properties_Template_Volumes_Secrets struct {
 	Path any
 	SecretRef any
 }
 
-type OpenapiRevision_Properties_Template_Volumes struct {
+type OpenapiRevision_Value_Properties_Template_Volumes struct {
 	MountOptions any
 	Name any
 	Secrets any
@@ -130,64 +125,49 @@ type OpenapiRevision_Properties_Template_Volumes struct {
 	StorageType any
 }
 
-type OpenapiRevision_Properties_Template struct {
-	// List of container definitions for the Container App.
+type OpenapiRevision_Value_Properties_Template struct {
 	Containers any
-	// List of specialized containers that run before app containers.
 	InitContainers any
-	// User friendly suffix that is appended to the revision name
 	RevisionSuffix any
-	// Container App scaling configurations.
 	Scale any
-	// List of container app services bound to the app
 	ServiceBinds any
-	// Optional duration in seconds the Container App Instance needs to terminate gracefully. Value must be non-negative integer. The value zero indicates stop immediately via the kill signal (no opportunity to shut down). If this value is nil, the default grace period will be used instead. Set this value longer than the expected cleanup time for your process. Defaults to 30 seconds.
 	TerminationGracePeriodSeconds any
-	// List of volume definitions for the Container App.
 	Volumes any
 }
 
-type OpenapiRevision_Properties struct {
-	// Boolean describing if the Revision is Active
+type OpenapiRevision_Value_Properties struct {
 	Active any
-	// Timestamp describing when the revision was created by controller
 	CreatedTime any
-	// Fully qualified domain name of the revision
 	Fqdn any
-	// Current health State of the revision
 	HealthState any
-	// Timestamp describing when the revision was last active. Only meaningful when revision is inactive
 	LastActiveTime any
-	// Optional Field - Platform Error Message
 	ProvisioningError any
-	// Current provisioning State of the revision
 	ProvisioningState any
-	// Number of pods currently running for this revision
 	Replicas any
-	// Current running state of the revision
 	RunningState any
-	// Container App versioned application definition. Defines the desired state of an immutable revision. Any changes to this section Will result in a new revision being created
 	Template any
-	// Traffic weight assigned to this revision
 	TrafficWeight any
+}
+
+type OpenapiRevision_Value struct {
+	Properties any
 }
 
 type OpenapiRevisionConfig struct {
 	ContainerAppName any
-	RevisionName any
 }
 
 type OpenapiRevisionAttrs struct {
 	ContainerAppName any
-	// Revision resource specific properties
-	Properties any
-	RevisionName any
+	// The link to the next page of items
+	NextLink any
+	// The Revision items on this page
+	Value any
 }
 
 var OpenapiRevision = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_revision",
 	Fields: ubx.FieldMap{
 		"ContainerAppName": ubx.FieldSpec{WireName: "container_app_name"},
-		"RevisionName": ubx.FieldSpec{WireName: "revision_name"},
 	},
 }

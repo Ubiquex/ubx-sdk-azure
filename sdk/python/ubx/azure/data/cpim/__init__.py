@@ -4,6 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .externalidentities_available_operations import ExternalidentitiesAvailableOperations, ExternalidentitiesAvailableOperationsConfig
-from .externalidentities_b2_ctenant_resource_list import ExternalidentitiesB2CtenantResourceList, ExternalidentitiesB2CtenantResourceListConfig
-from .externalidentities_guest_usages_resource_list import ExternalidentitiesGuestUsagesResourceList, ExternalidentitiesGuestUsagesResourceListConfig
+from .externalidentities_b2_ctenant_resource import ExternalidentitiesB2CtenantResource, ExternalidentitiesB2CtenantResourceConfig
+from .externalidentities_guest_usages_resource import ExternalidentitiesGuestUsagesResource, ExternalidentitiesGuestUsagesResourceConfig

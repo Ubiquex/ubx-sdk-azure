@@ -7,144 +7,108 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Identity_UserAssignedIdentities:
+class ManagedapplicationsApplication_Value_Identity_UserAssignedIdentities:
     principal_id: Any = None
     tenant_id: Any = None
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Identity:
-    # The principal ID of resource identity.
+class ManagedapplicationsApplication_Value_Identity:
     principal_id: Any = None
-    # The tenant ID of resource.
     tenant_id: Any = None
-    # The identity type.
     type: Any = None
-    # The list of user identities associated with the resource. The user identity dictionary key references will be resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Plan:
-    # The plan name.
+class ManagedapplicationsApplication_Value_Plan:
     name: Any = None
-    # The product code.
     product: Any = None
-    # The promotion code.
     promotion_code: Any = None
-    # The publisher ID.
     publisher: Any = None
-    # The plan's version.
     version: Any = None
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Properties_Artifacts:
+class ManagedapplicationsApplication_Value_Properties_Artifacts:
     name: Any = None
     type: Any = None
     uri: Any = None
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Properties_Authorizations:
+class ManagedapplicationsApplication_Value_Properties_Authorizations:
     principal_id: Any = None
     role_definition_id: Any = None
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Properties_BillingDetails:
-    # The managed application resource usage Id.
+class ManagedapplicationsApplication_Value_Properties_BillingDetails:
     resource_usage_id: Any = None
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Properties_CreatedBy:
-    # The client application Id.
+class ManagedapplicationsApplication_Value_Properties_CreatedBy:
     application_id: Any = None
-    # The client Oid.
     oid: Any = None
-    # The client Puid
     puid: Any = None
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Properties_CustomerSupport:
-    # The contact name.
+class ManagedapplicationsApplication_Value_Properties_CustomerSupport:
     contact_name: Any = None
-    # The contact email.
     email: Any = None
-    # The contact phone number.
     phone: Any = None
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Properties_JitAccessPolicy_JitApprovers:
+class ManagedapplicationsApplication_Value_Properties_JitAccessPolicy_JitApprovers:
     display_name: Any = None
     id: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Properties_JitAccessPolicy:
-    # Whether the JIT access is enabled.
+class ManagedapplicationsApplication_Value_Properties_JitAccessPolicy:
     jit_access_enabled: Any = None
-    # The Jit approval mode.
     jit_approval_mode: Any = None
-    # The JIT approvers
     jit_approvers: Any = None
-    # The maximum duration JIT access is granted. This is an ISO8601 time period value.
     maximum_jit_access_duration: Any = None
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Properties_SupportUrls:
-    # The government cloud support URL.
+class ManagedapplicationsApplication_Value_Properties_SupportUrls:
     government_cloud: Any = None
-    # The public azure support URL.
     public_azure: Any = None
 
 @dataclasses.dataclass
-class ManagedapplicationsApplication_Properties:
-    # The fully qualified path of managed application definition Id.
+class ManagedapplicationsApplication_Value_Properties:
     application_definition_id: Any = None
-    # The collection of managed application artifacts.
     artifacts: Any = None
-    # The read-only authorizations property that is retrieved from the application package.
     authorizations: Any = None
-    # Managed application billing details definition.
     billing_details: Any = None
-    # The application client details to track the entity creating/updating the managed app resource.
     created_by: Any = None
-    # The application package contact information.
     customer_support: Any = None
-    # Managed application Jit access policy.
     jit_access_policy: Any = None
-    # The managed resource group Id.
     managed_resource_group_id: Any = None
-    # The management mode.
     management_mode: Any = None
-    # Name and value pairs that define the managed application outputs.
     outputs: Any = None
-    # Name and value pairs that define the managed application parameters. It can be a JObject or a well formed JSON string.
     parameters: Any = None
-    # Provisioning status of the managed application.
     provisioning_state: Any = None
-    # The publisher tenant Id.
     publisher_tenant_id: Any = None
-    # The appliance package support URLs.
     support_urls: Any = None
-    # The application client details to track the entity creating/updating the managed app resource.
     updated_by: Any = None
 
 @dataclasses.dataclass
+class ManagedapplicationsApplication_Value:
+    identity: Any = None
+    kind: Any = None
+    plan: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class ManagedapplicationsApplicationConfig:
-    application_id: Any = None
+    pass
 
 @dataclasses.dataclass
 class ManagedapplicationsApplicationAttrs:
-    application_id: Any = None
-    # Identity for the resource.
-    identity: Any = None
-    # The kind of the managed application. Allowed values are MarketPlace and ServiceCatalog.
-    kind: Any = None
-    # Plan for the managed application.
-    plan: Any = None
-    # The managed application properties.
-    properties: Any = None
+    # The URL to use for getting the next set of results.
+    next_link: Any = None
+    # The array of managed applications.
+    value: Any = None
 
 ManagedapplicationsApplication = ubx.DataSourceBinding(
     wire_type="azure_solutions_managedapplications_application",
     fields={
-        "application_id": ubx.FieldSpec(wire_name="application_id"),
     },
 )

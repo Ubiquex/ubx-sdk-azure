@@ -7,43 +7,42 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ManagedclustersMachine_Properties_Network_IpAddresses:
+class ManagedclustersMachine_Value_Properties_Network_IpAddresses:
     family: Any = None
     ip: Any = None
 
 @dataclasses.dataclass
-class ManagedclustersMachine_Properties_Network:
-    # IPv4, IPv6 addresses of the machine
+class ManagedclustersMachine_Value_Properties_Network:
     ip_addresses: Any = None
 
 @dataclasses.dataclass
-class ManagedclustersMachine_Properties:
-    # network properties of the machine
+class ManagedclustersMachine_Value_Properties:
     network: Any = None
-    # Azure resource id of the machine. It can be used to GET underlying VM Instance
     resource_id: Any = None
+
+@dataclasses.dataclass
+class ManagedclustersMachine_Value:
+    properties: Any = None
+    zones: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersMachineConfig:
     agent_pool_name: Any = None
-    machine_name: Any = None
     resource_name: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersMachineAttrs:
     agent_pool_name: Any = None
-    machine_name: Any = None
-    # The properties of the machine
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     resource_name: Any = None
-    # The Availability zone in which machine is located.
-    zones: Any = None
+    # The Machine items on this page
+    value: Any = None
 
 ManagedclustersMachine = ubx.DataSourceBinding(
     wire_type="azure_containerservice_managedclusters_machine",
     fields={
         "agent_pool_name": ubx.FieldSpec(wire_name="agent_pool_name"),
-        "machine_name": ubx.FieldSpec(wire_name="machine_name"),
         "resource_name": ubx.FieldSpec(wire_name="resource_name"),
     },
 )

@@ -7,34 +7,32 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ScriptPackage_Properties:
-    # Company that created and supports the package
+class ScriptPackage_Value_Properties:
     company: Any = None
-    # User friendly description of the package
     description: Any = None
-    # Script Package provisioning state
     provisioning_state: Any = None
-    # Link to support by the package vendor
     uri: Any = None
-    # Module version
     version: Any = None
+
+@dataclasses.dataclass
+class ScriptPackage_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class ScriptPackageConfig:
     private_cloud_name: Any = None
-    script_package_name: Any = None
 
 @dataclasses.dataclass
 class ScriptPackageAttrs:
+    # The link to the next page of items
+    next_link: Any = None
     private_cloud_name: Any = None
-    # Properties of a Script Package subresource
-    properties: Any = None
-    script_package_name: Any = None
+    # The ScriptPackage items on this page
+    value: Any = None
 
 ScriptPackage = ubx.DataSourceBinding(
     wire_type="azure_vmware_script_package",
     fields={
         "private_cloud_name": ubx.FieldSpec(wire_name="private_cloud_name"),
-        "script_package_name": ubx.FieldSpec(wire_name="script_package_name"),
     },
 )

@@ -7,201 +7,148 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiContainerApp_ExtendedLocation:
-    # The name of the extended location.
+class OpenapiContainerApp_Value_ExtendedLocation:
     name: Any = None
-    # The type of extendedLocation.
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Identity_UserAssignedIdentities:
+class OpenapiContainerApp_Value_Identity_UserAssignedIdentities:
     client_id: Any = None
     principal_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Identity:
-    # The service principal ID of the system assigned identity. This property will only be provided for a system assigned identity.
+class OpenapiContainerApp_Value_Identity:
     principal_id: Any = None
-    # The tenant ID of the system assigned identity. This property will only be provided for a system assigned identity.
     tenant_id: Any = None
-    # Type of managed service identity (where both SystemAssigned and UserAssigned types are allowed).
     type: Any = None
-    # The set of user assigned identities associated with the resource. The userAssignedIdentities dictionary keys will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}. The dictionary values can be empty objects ({}) in requests.
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Dapr_AppHealth:
-    # Boolean indicating if the health probe is enabled
+class OpenapiContainerApp_Value_Properties_Configuration_Dapr_AppHealth:
     enabled: Any = None
-    # Path for the health probe
     path: Any = None
-    # Interval for the health probe in seconds
     probe_interval_seconds: Any = None
-    # Timeout for the health probe in milliseconds
     probe_timeout_milliseconds: Any = None
-    # Threshold for the health probe
     threshold: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Dapr:
-    # Dapr application health check configuration
+class OpenapiContainerApp_Value_Properties_Configuration_Dapr:
     app_health: Any = None
-    # Dapr application identifier
     app_id: Any = None
-    # Tells Dapr which port your application is listening on
     app_port: Any = None
-    # Tells Dapr which protocol your application is using. Valid options are http and grpc. Default is http
     app_protocol: Any = None
-    # Enables API logging for the Dapr sidecar
     enable_api_logging: Any = None
-    # Boolean indicating if the Dapr side car is enabled
     enabled: Any = None
-    # Increasing max size of request body http and grpc servers parameter in MB to handle uploading of big files. Default is 4 MB.
     http_max_request_size: Any = None
-    # Dapr max size of http header read buffer in KB to handle when sending multi-KB headers. Default is 65KB.
     http_read_buffer_size: Any = None
-    # Sets the log level for the Dapr sidecar. Allowed values are debug, info, warn, error. Default is info.
     log_level: Any = None
-    # Maximum number of concurrent requests, events handled by the Dapr sidecar
     max_concurrency: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_IdentitySettings:
+class OpenapiContainerApp_Value_Properties_Configuration_IdentitySettings:
     identity: Any = None
     lifecycle: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Ingress_AdditionalPortMappings:
+class OpenapiContainerApp_Value_Properties_Configuration_Ingress_AdditionalPortMappings:
     exposed_port: Any = None
     external: Any = None
     target_port: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Ingress_CorsPolicy:
-    # Specifies whether the resource allows credentials
+class OpenapiContainerApp_Value_Properties_Configuration_Ingress_CorsPolicy:
     allow_credentials: Any = None
-    # Specifies the content for the access-control-allow-headers header
     allowed_headers: Any = None
-    # Specifies the content for the access-control-allow-methods header
     allowed_methods: Any = None
-    # Specifies the content for the access-control-allow-origins header
     allowed_origins: Any = None
-    # Specifies the content for the access-control-expose-headers header
     expose_headers: Any = None
-    # Specifies the content for the access-control-max-age header
     max_age: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Ingress_CustomDomains:
+class OpenapiContainerApp_Value_Properties_Configuration_Ingress_CustomDomains:
     binding_type: Any = None
     certificate_id: Any = None
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Ingress_IpSecurityRestrictions:
+class OpenapiContainerApp_Value_Properties_Configuration_Ingress_IpSecurityRestrictions:
     action: Any = None
     description: Any = None
     ip_address_range: Any = None
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Ingress_StickySessions:
-    # Sticky Session Affinity
+class OpenapiContainerApp_Value_Properties_Configuration_Ingress_StickySessions:
     affinity: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Ingress_Traffic:
+class OpenapiContainerApp_Value_Properties_Configuration_Ingress_Traffic:
     label: Any = None
     latest_revision: Any = None
     revision_name: Any = None
     weight: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Ingress:
-    # Settings to expose additional ports on container app
+class OpenapiContainerApp_Value_Properties_Configuration_Ingress:
     additional_port_mappings: Any = None
-    # Bool indicating if HTTP connections to is allowed. If set to false HTTP connections are automatically redirected to HTTPS connections
     allow_insecure: Any = None
-    # Client certificate mode for mTLS authentication. Ignore indicates server drops client certificate on forwarding. Accept indicates server forwards client certificate but does not require a client certificate. Require indicates server requires a client certificate.
     client_certificate_mode: Any = None
-    # Cross-Origin-Resource-Sharing policy
     cors_policy: Any = None
-    # custom domain bindings for Container Apps' hostnames.
     custom_domains: Any = None
-    # Exposed Port in containers for TCP traffic from ingress
     exposed_port: Any = None
-    # Bool indicating if app exposes an external http endpoint
     external: Any = None
-    # Hostname.
     fqdn: Any = None
-    # Rules to restrict incoming IP address.
     ip_security_restrictions: Any = None
-    # Sticky Sessions for Single Revision Mode
     sticky_sessions: Any = None
-    # Target Port in containers for traffic from ingress
     target_port: Any = None
-    # Traffic weights for app's revisions
     traffic: Any = None
-    # Ingress transport protocol
     transport: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Registries:
+class OpenapiContainerApp_Value_Properties_Configuration_Registries:
     identity: Any = None
     password_secret_ref: Any = None
     server: Any = None
     username: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Runtime_Java:
-    # Enable jmx core metrics for the java app
+class OpenapiContainerApp_Value_Properties_Configuration_Runtime_Java:
     enable_metrics: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Runtime:
-    # Java app configuration
+class OpenapiContainerApp_Value_Properties_Configuration_Runtime:
     java: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Secrets:
+class OpenapiContainerApp_Value_Properties_Configuration_Secrets:
     identity: Any = None
     key_vault_url: Any = None
     name: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration_Service:
-    # Dev ContainerApp service type
+class OpenapiContainerApp_Value_Properties_Configuration_Service:
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Configuration:
-    # ActiveRevisionsMode controls how active revisions are handled for the Container app: <list><item>Multiple: multiple revisions can be active.</item><item>Single: Only one revision can be active at a time. Revision weights can not be used in this mode. If no value if provided, this is the default.</item></list>
+class OpenapiContainerApp_Value_Properties_Configuration:
     active_revisions_mode: Any = None
-    # Container App Dapr configuration.
     dapr: Any = None
-    # Optional settings for Managed Identities that are assigned to the Container App. If a Managed Identity is not specified here, default settings will be used.
     identity_settings: Any = None
-    # Container App Ingress configuration.
     ingress: Any = None
-    # Optional. Max inactive revisions a Container App can have.
     max_inactive_revisions: Any = None
-    # Collection of private container registry credentials for containers used by the Container app
     registries: Any = None
-    # Container App Runtime configuration.
     runtime: Any = None
-    # Collection of secrets used by a Container app
     secrets: Any = None
-    # Container App to be a dev service
     service: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet_HttpHeaders:
+class OpenapiContainerApp_Value_Properties_Template_Containers_Probes_HttpGet_HttpHeaders:
     name: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet:
+class OpenapiContainerApp_Value_Properties_Template_Containers_Probes_HttpGet:
     host: Any = None
     http_headers: Any = None
     path: Any = None
@@ -209,12 +156,12 @@ class OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet:
     scheme: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Containers_Probes_TcpSocket:
+class OpenapiContainerApp_Value_Properties_Template_Containers_Probes_TcpSocket:
     host: Any = None
     port: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Containers_Probes:
+class OpenapiContainerApp_Value_Properties_Template_Containers_Probes:
     failure_threshold: Any = None
     http_get: Any = None
     initial_delay_seconds: Any = None
@@ -226,29 +173,29 @@ class OpenapiContainerApp_Properties_Template_Containers_Probes:
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Containers:
+class OpenapiContainerApp_Value_Properties_Template_Containers:
     probes: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_InitContainers_Env:
+class OpenapiContainerApp_Value_Properties_Template_InitContainers_Env:
     name: Any = None
     secret_ref: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_InitContainers_Resources:
+class OpenapiContainerApp_Value_Properties_Template_InitContainers_Resources:
     cpu: Any = None
     ephemeral_storage: Any = None
     memory: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_InitContainers_VolumeMounts:
+class OpenapiContainerApp_Value_Properties_Template_InitContainers_VolumeMounts:
     mount_path: Any = None
     sub_path: Any = None
     volume_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_InitContainers:
+class OpenapiContainerApp_Value_Properties_Template_InitContainers:
     args: Any = None
     command: Any = None
     env: Any = None
@@ -258,12 +205,12 @@ class OpenapiContainerApp_Properties_Template_InitContainers:
     volume_mounts: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_Auth:
+class OpenapiContainerApp_Value_Properties_Template_Scale_Rules_AzureQueue_Auth:
     secret_ref: Any = None
     trigger_parameter: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue:
+class OpenapiContainerApp_Value_Properties_Template_Scale_Rules_AzureQueue:
     account_name: Any = None
     auth: Any = None
     identity: Any = None
@@ -271,20 +218,20 @@ class OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue:
     queue_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Scale_Rules_Custom:
+class OpenapiContainerApp_Value_Properties_Template_Scale_Rules_Custom:
     auth: Any = None
     identity: Any = None
     metadata: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Scale_Rules_Http:
+class OpenapiContainerApp_Value_Properties_Template_Scale_Rules_Http:
     auth: Any = None
     identity: Any = None
     metadata: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Scale_Rules:
+class OpenapiContainerApp_Value_Properties_Template_Scale_Rules:
     azure_queue: Any = None
     custom: Any = None
     http: Any = None
@@ -292,30 +239,25 @@ class OpenapiContainerApp_Properties_Template_Scale_Rules:
     tcp: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Scale:
-    # Optional. KEDA Cooldown Period in seconds. Defaults to 300 seconds if not set.
+class OpenapiContainerApp_Value_Properties_Template_Scale:
     cooldown_period: Any = None
-    # Optional. Maximum number of container replicas. Defaults to 10 if not set.
     max_replicas: Any = None
-    # Optional. Minimum number of container replicas.
     min_replicas: Any = None
-    # Optional. KEDA Polling Interval in seconds. Defaults to 30 seconds if not set.
     polling_interval: Any = None
-    # Scaling rules.
     rules: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_ServiceBinds:
+class OpenapiContainerApp_Value_Properties_Template_ServiceBinds:
     name: Any = None
     service_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Volumes_Secrets:
+class OpenapiContainerApp_Value_Properties_Template_Volumes_Secrets:
     path: Any = None
     secret_ref: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template_Volumes:
+class OpenapiContainerApp_Value_Properties_Template_Volumes:
     mount_options: Any = None
     name: Any = None
     secrets: Any = None
@@ -323,72 +265,52 @@ class OpenapiContainerApp_Properties_Template_Volumes:
     storage_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties_Template:
-    # List of container definitions for the Container App.
+class OpenapiContainerApp_Value_Properties_Template:
     containers: Any = None
-    # List of specialized containers that run before app containers.
     init_containers: Any = None
-    # User friendly suffix that is appended to the revision name
     revision_suffix: Any = None
-    # Container App scaling configurations.
     scale: Any = None
-    # List of container app services bound to the app
     service_binds: Any = None
-    # Optional duration in seconds the Container App Instance needs to terminate gracefully. Value must be non-negative integer. The value zero indicates stop immediately via the kill signal (no opportunity to shut down). If this value is nil, the default grace period will be used instead. Set this value longer than the expected cleanup time for your process. Defaults to 30 seconds.
     termination_grace_period_seconds: Any = None
-    # List of volume definitions for the Container App.
     volumes: Any = None
 
 @dataclasses.dataclass
-class OpenapiContainerApp_Properties:
-    # Non versioned Container App configuration properties that define the mutable settings of a Container app
+class OpenapiContainerApp_Value_Properties:
     configuration: Any = None
-    # Id used to verify domain name ownership
     custom_domain_verification_id: Any = None
-    # Resource ID of environment.
     environment_id: Any = None
-    # The endpoint of the eventstream of the container app.
     event_stream_endpoint: Any = None
-    # Name of the latest ready revision of the Container App.
     latest_ready_revision_name: Any = None
-    # Fully Qualified Domain Name of the latest revision of the Container App.
     latest_revision_fqdn: Any = None
-    # Name of the latest revision of the Container App.
     latest_revision_name: Any = None
-    # Deprecated. Resource ID of the Container App's environment.
     managed_environment_id: Any = None
-    # Outbound IP Addresses for container app.
     outbound_ip_addresses: Any = None
-    # Provisioning state of the Container App.
     provisioning_state: Any = None
-    # Running status of the Container App.
     running_status: Any = None
-    # Container App versioned application definition. Defines the desired state of an immutable revision. Any changes to this section Will result in a new revision being created
     template: Any = None
-    # Workload profile name to pin for container app execution.
     workload_profile_name: Any = None
 
 @dataclasses.dataclass
+class OpenapiContainerApp_Value:
+    extended_location: Any = None
+    identity: Any = None
+    kind: Any = None
+    managed_by: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiContainerAppConfig:
-    container_app_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiContainerAppAttrs:
-    container_app_name: Any = None
-    # The complex type of the extended location.
-    extended_location: Any = None
-    # Managed service identity (system assigned and/or user assigned identities)
-    identity: Any = None
-    # Metadata to represent the container app kind, representing if a container app is workflowapp or functionapp.
-    kind: Any = None
-    # The fully qualified resource ID of the resource that manages this resource. Indicates if this resource is managed by another Azure resource. If this is present, complete mode deployment will not delete the resource if it is removed from the template since it is managed by another resource.
-    managed_by: Any = None
-    # ContainerApp resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The ContainerApp items on this page
+    value: Any = None
 
 OpenapiContainerApp = ubx.DataSourceBinding(
     wire_type="azure_app_openapi_container_app",
     fields={
-        "container_app_name": ubx.FieldSpec(wire_name="container_app_name"),
     },
 )

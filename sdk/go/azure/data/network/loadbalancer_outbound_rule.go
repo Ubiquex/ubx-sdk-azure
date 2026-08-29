@@ -3,46 +3,40 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type LoadbalancerOutboundRule_Properties_BackendAddressPool struct {
-	// Resource ID.
+type LoadbalancerOutboundRule_Value_Properties_BackendAddressPool struct {
 	Id any
 }
 
-type LoadbalancerOutboundRule_Properties struct {
-	// The number of outbound ports to be used for NAT.
+type LoadbalancerOutboundRule_Value_Properties struct {
 	AllocatedOutboundPorts any
-	// Reference to another subresource.
 	BackendAddressPool any
-	// Receive bidirectional TCP Reset on TCP flow idle timeout or unexpected connection termination. This element is only used when the protocol is set to TCP.
 	EnableTcpReset any
-	// The Frontend IP addresses of the load balancer.
 	FrontendIpconfigurations any
-	// The timeout for the TCP idle connection.
 	IdleTimeoutInMinutes any
-	// The protocol for the outbound rule in load balancer.
 	Protocol any
-	// Provisioning states of a resource.
 	ProvisioningState any
+}
+
+type LoadbalancerOutboundRule_Value struct {
+	Etag any
+	Properties any
 }
 
 type LoadbalancerOutboundRuleConfig struct {
 	LoadBalancerName any
-	OutboundRuleName any
 }
 
 type LoadbalancerOutboundRuleAttrs struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	LoadBalancerName any
-	OutboundRuleName any
-	// Outbound rule of the load balancer.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The OutboundRule items on this page
+	Value any
 }
 
 var LoadbalancerOutboundRule = ubx.DataSourceBinding{
 	WireType: "azure_network_loadbalancer_outbound_rule",
 	Fields: ubx.FieldMap{
 		"LoadBalancerName": ubx.FieldSpec{WireName: "load_balancer_name"},
-		"OutboundRuleName": ubx.FieldSpec{WireName: "outbound_rule_name"},
 	},
 }

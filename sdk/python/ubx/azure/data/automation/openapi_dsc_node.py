@@ -7,54 +7,48 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDscNode_Properties_ExtensionHandler:
+class OpenapiDscNode_Value_Properties_ExtensionHandler:
     name: Any = None
     version: Any = None
 
 @dataclasses.dataclass
-class OpenapiDscNode_Properties_NodeConfiguration:
-    # Gets or sets the name of the dsc node configuration.
+class OpenapiDscNode_Value_Properties_NodeConfiguration:
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiDscNode_Properties:
-    # Gets or sets the account id of the node.
+class OpenapiDscNode_Value_Properties:
     account_id: Any = None
-    # Gets or sets the etag of the resource.
     etag: Any = None
-    # Gets or sets the list of extensionHandler properties for a Node.
     extension_handler: Any = None
-    # Gets or sets the ip of the node.
     ip: Any = None
-    # Gets or sets the last seen time of the node.
     last_seen: Any = None
-    # The dsc node configuration property associated with the entity.
     node_configuration: Any = None
-    # Gets or sets the node id.
     node_id: Any = None
-    # Gets or sets the registration time of the node.
     registration_time: Any = None
-    # Gets or sets the status of the node.
     status: Any = None
-    # Gets the total number of records matching filter criteria.
     total_count: Any = None
+
+@dataclasses.dataclass
+class OpenapiDscNode_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiDscNodeConfig:
     automation_account_name: Any = None
-    node_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiDscNodeAttrs:
     automation_account_name: Any = None
-    node_id: Any = None
-    # The properties of a DscNode
-    properties: Any = None
+    # Gets or sets the next link.
+    next_link: Any = None
+    # Gets the total number of nodes matching filter criteria.
+    total_count: Any = None
+    # Gets or sets a list of dsc nodes.
+    value: Any = None
 
 OpenapiDscNode = ubx.DataSourceBinding(
     wire_type="azure_automation_openapi_dsc_node",
     fields={
         "automation_account_name": ubx.FieldSpec(wire_name="automation_account_name"),
-        "node_id": ubx.FieldSpec(wire_name="node_id"),
     },
 )

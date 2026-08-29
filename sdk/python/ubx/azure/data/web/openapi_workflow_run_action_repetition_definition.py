@@ -7,20 +7,22 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiWorkflowRunActionRepetitionDefinition_Properties_RepetitionIndexes:
+class OpenapiWorkflowRunActionRepetitionDefinition_Value_Properties_RepetitionIndexes:
     item_index: Any = None
     scope_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowRunActionRepetitionDefinition_Properties:
-    # The repetition indexes.
+class OpenapiWorkflowRunActionRepetitionDefinition_Value_Properties:
     repetition_indexes: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkflowRunActionRepetitionDefinition_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkflowRunActionRepetitionDefinitionConfig:
     action_name: Any = None
     name: Any = None
-    repetition_name: Any = None
     run_name: Any = None
     workflow_name: Any = None
 
@@ -28,10 +30,11 @@ class OpenapiWorkflowRunActionRepetitionDefinitionConfig:
 class OpenapiWorkflowRunActionRepetitionDefinitionAttrs:
     action_name: Any = None
     name: Any = None
-    # The workflow run action repetition properties definition.
-    properties: Any = None
-    repetition_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     run_name: Any = None
+    # The WorkflowRunActionRepetitionDefinition items on this page
+    value: Any = None
     workflow_name: Any = None
 
 OpenapiWorkflowRunActionRepetitionDefinition = ubx.DataSourceBinding(
@@ -39,7 +42,6 @@ OpenapiWorkflowRunActionRepetitionDefinition = ubx.DataSourceBinding(
     fields={
         "action_name": ubx.FieldSpec(wire_name="action_name"),
         "name": ubx.FieldSpec(wire_name="name"),
-        "repetition_name": ubx.FieldSpec(wire_name="repetition_name"),
         "run_name": ubx.FieldSpec(wire_name="run_name"),
         "workflow_name": ubx.FieldSpec(wire_name="workflow_name"),
     },

@@ -7,28 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiFirewallRule_Properties:
-    # IP address defining the end of the range of addresses of a firewall rule. Must be expressed in IPv4 format.
+class OpenapiFirewallRule_Value_Properties:
     end_ip_address: Any = None
-    # IP address defining the start of the range of addresses of a firewall rule. Must be expressed in IPv4 format.
     start_ip_address: Any = None
 
 @dataclasses.dataclass
+class OpenapiFirewallRule_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiFirewallRuleConfig:
-    firewall_rule_name: Any = None
     server_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiFirewallRuleAttrs:
-    firewall_rule_name: Any = None
-    # Properties of a firewall rule.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
+    # The FirewallRule items on this page
+    value: Any = None
 
 OpenapiFirewallRule = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_firewall_rule",
     fields={
-        "firewall_rule_name": ubx.FieldSpec(wire_name="firewall_rule_name"),
         "server_name": ubx.FieldSpec(wire_name="server_name"),
     },
 )

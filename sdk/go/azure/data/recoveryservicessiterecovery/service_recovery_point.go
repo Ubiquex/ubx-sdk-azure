@@ -3,38 +3,37 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServiceRecoveryPoint_Properties_ProviderSpecificDetails struct {
-	// Gets the provider type.
+type ServiceRecoveryPoint_Value_Properties_ProviderSpecificDetails struct {
 	InstanceType any
 }
 
-type ServiceRecoveryPoint_Properties struct {
-	// Replication provider specific recovery point details.
+type ServiceRecoveryPoint_Value_Properties struct {
 	ProviderSpecificDetails any
-	// The recovery point time.
 	RecoveryPointTime any
-	// The recovery point type: ApplicationConsistent, CrashConsistent.
 	RecoveryPointType any
+}
+
+type ServiceRecoveryPoint_Value struct {
+	Location any
+	Properties any
 }
 
 type ServiceRecoveryPointConfig struct {
 	FabricName any
 	ProtectionContainerName any
-	RecoveryPointName any
 	ReplicatedProtectedItemName any
 	ResourceName any
 }
 
 type ServiceRecoveryPointAttrs struct {
 	FabricName any
-	// Resource Location
-	Location any
-	// Recovery point properties.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ProtectionContainerName any
-	RecoveryPointName any
 	ReplicatedProtectedItemName any
 	ResourceName any
+	// The RecoveryPoint items on this page
+	Value any
 }
 
 var ServiceRecoveryPoint = ubx.DataSourceBinding{
@@ -42,7 +41,6 @@ var ServiceRecoveryPoint = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
 		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
-		"RecoveryPointName": ubx.FieldSpec{WireName: "recovery_point_name"},
 		"ReplicatedProtectedItemName": ubx.FieldSpec{WireName: "replicated_protected_item_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},

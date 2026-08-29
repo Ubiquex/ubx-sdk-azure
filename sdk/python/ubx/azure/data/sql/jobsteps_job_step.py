@@ -7,86 +7,64 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class JobstepsJobStep_Properties_Action:
-    # The source of the action to execute.
+class JobstepsJobStep_Value_Properties_Action:
     source: Any = None
-    # Type of action being executed by the job step.
     type: Any = None
-    # The action value, for example the text of the T-SQL script to execute.
     value: Any = None
 
 @dataclasses.dataclass
-class JobstepsJobStep_Properties_ExecutionOptions:
-    # Initial delay between retries for job step execution.
+class JobstepsJobStep_Value_Properties_ExecutionOptions:
     initial_retry_interval_seconds: Any = None
-    # The maximum amount of time to wait between retries for job step execution.
     maximum_retry_interval_seconds: Any = None
-    # Maximum number of times the job step will be reattempted if the first attempt fails.
     retry_attempts: Any = None
-    # The backoff multiplier for the time between retries.
     retry_interval_backoff_multiplier: Any = None
-    # Execution timeout for the job step.
     timeout_seconds: Any = None
 
 @dataclasses.dataclass
-class JobstepsJobStep_Properties_Output:
-    # The resource ID of the credential to use to connect to the output destination.
+class JobstepsJobStep_Value_Properties_Output:
     credential: Any = None
-    # The output destination database.
     database_name: Any = None
-    # The output destination resource group.
     resource_group_name: Any = None
-    # The output destination schema.
     schema_name: Any = None
-    # The output destination server name.
     server_name: Any = None
-    # Universally Unique Identifier
     subscription_id: Any = None
-    # The output destination table.
     table_name: Any = None
-    # The output destination type.
     type: Any = None
 
 @dataclasses.dataclass
-class JobstepsJobStep_Properties:
-    # The action to be executed by a job step.
+class JobstepsJobStep_Value_Properties:
     action: Any = None
-    # The resource ID of the job credential that will be used to connect to the targets.
     credential: Any = None
-    # The execution options of a job step.
     execution_options: Any = None
-    # The output configuration of a job step.
     output: Any = None
-    # The job step's index within the job. If not specified when creating the job step, it will be created as the last step. If not specified when updating the job step, the step id is not modified.
     step_id: Any = None
-    # The resource ID of the target group that the job step will be executed on.
     target_group: Any = None
+
+@dataclasses.dataclass
+class JobstepsJobStep_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class JobstepsJobStepConfig:
     job_agent_name: Any = None
     job_name: Any = None
-    job_version: Any = None
     server_name: Any = None
-    step_name: Any = None
 
 @dataclasses.dataclass
 class JobstepsJobStepAttrs:
     job_agent_name: Any = None
     job_name: Any = None
-    job_version: Any = None
-    # Properties of a job step.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
-    step_name: Any = None
+    # The JobStep items on this page
+    value: Any = None
 
 JobstepsJobStep = ubx.DataSourceBinding(
     wire_type="azure_sql_jobsteps_job_step",
     fields={
         "job_agent_name": ubx.FieldSpec(wire_name="job_agent_name"),
         "job_name": ubx.FieldSpec(wire_name="job_name"),
-        "job_version": ubx.FieldSpec(wire_name="job_version"),
         "server_name": ubx.FieldSpec(wire_name="server_name"),
-        "step_name": ubx.FieldSpec(wire_name="step_name"),
     },
 )

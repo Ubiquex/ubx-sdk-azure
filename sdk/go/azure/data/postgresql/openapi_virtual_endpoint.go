@@ -3,31 +3,31 @@ package postgresql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiVirtualEndpoint_Properties struct {
-	// Type of endpoint for the virtual endpoints.
+type OpenapiVirtualEndpoint_Value_Properties struct {
 	EndpointType any
-	// List of servers that one of the virtual endpoints can refer to.
 	Members any
-	// List of virtual endpoints for a server.
 	VirtualEndpoints any
+}
+
+type OpenapiVirtualEndpoint_Value struct {
+	Properties any
 }
 
 type OpenapiVirtualEndpointConfig struct {
 	ServerName any
-	VirtualEndpointName any
 }
 
 type OpenapiVirtualEndpointAttrs struct {
-	// Properties of a pair of virtual endpoints.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ServerName any
-	VirtualEndpointName any
+	// The VirtualEndpoint items on this page
+	Value any
 }
 
 var OpenapiVirtualEndpoint = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_virtual_endpoint",
 	Fields: ubx.FieldMap{
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
-		"VirtualEndpointName": ubx.FieldSpec{WireName: "virtual_endpoint_name"},
 	},
 }

@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VdiHealthCheckStatusDetails_Properties_HealthChecks:
+class VdiHealthCheckStatusDetails_Value_Properties_HealthChecks:
     additional_details: Any = None
     display_name: Any = None
     end_date_time: Any = None
@@ -17,27 +17,28 @@ class VdiHealthCheckStatusDetails_Properties_HealthChecks:
     status: Any = None
 
 @dataclasses.dataclass
-class VdiHealthCheckStatusDetails_Properties:
-    # End time of last execution of the health checks.
+class VdiHealthCheckStatusDetails_Value_Properties:
     end_date_time: Any = None
-    # Details for each health check item.
     health_checks: Any = None
-    # Start time of last execution of the health checks.
     start_date_time: Any = None
 
 @dataclasses.dataclass
+class VdiHealthCheckStatusDetails_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class VdiHealthCheckStatusDetailsConfig:
-    network_connection_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class VdiHealthCheckStatusDetailsAttrs:
-    network_connection_name: Any = None
-    # Health Check properties.
-    properties: Any = None
+    # URL to get the next set of results if there are any.
+    next_link: Any = None
+    # Current page of results.
+    value: Any = None
 
 VdiHealthCheckStatusDetails = ubx.DataSourceBinding(
     wire_type="azure_devcenter_vdi_health_check_status_details",
     fields={
-        "network_connection_name": ubx.FieldSpec(wire_name="network_connection_name"),
     },
 )

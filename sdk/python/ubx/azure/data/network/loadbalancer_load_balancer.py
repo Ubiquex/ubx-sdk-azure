@@ -12,58 +12,49 @@ class LoadbalancerLoadBalancer_Value_ExtendedLocation:
     type: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_DnsSettings:
-    applied_dns_servers: Any = None
-    dns_servers: Any = None
-    internal_dns_name_label: Any = None
-    internal_domain_name_suffix: Any = None
-    internal_fqdn: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_DscpConfiguration:
-    id: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddresses:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddresses:
     fqdn: Any = None
     ip_address: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations:
-    etag: Any = None
-    properties: Any = None
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations:
+    pass
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties:
     backend_addresses: Any = None
     backend_ipconfigurations: Any = None
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools:
     etag: Any = None
     name: Any = None
     properties: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_ApplicationSecurityGroups_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups_Properties:
     provisioning_state: Any = None
     resource_guid: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_ApplicationSecurityGroups:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups:
     etag: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancer:
+    id: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping:
     backend_port: Any = None
     frontend_port: Any = None
     inbound_nat_rule_name: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties:
     admin_state: Any = None
     inbound_nat_rules_port_mapping: Any = None
     ip_address: Any = None
@@ -73,19 +64,19 @@ class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Load
     virtual_network: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses:
     name: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces:
     identifier: Any = None
     port: Any = None
     protocol: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties:
     backend_ipconfigurations: Any = None
     drain_period_in_seconds: Any = None
     inbound_nat_rules: Any = None
@@ -100,12 +91,12 @@ class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Load
     virtual_network: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools:
     etag: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules_Properties:
     backend_address_pool: Any = None
     backend_ipconfiguration: Any = None
     backend_port: Any = None
@@ -120,78 +111,74 @@ class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Load
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules:
     etag: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PrivateLinkConnectionProperties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties:
     fqdns: Any = None
     group_id: Any = None
     required_member_name: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DdosSettings:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings:
     ddos_custom_policy: Any = None
     ddos_protection_plan: Any = None
     protection_mode: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DnsSettings:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings:
     domain_name_label: Any = None
     domain_name_label_scope: Any = None
     fqdn: Any = None
     reverse_fqdn: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_Properties:
     provisioning_state: Any = None
     subnet: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations:
     etag: Any = None
     name: Any = None
     properties: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_Properties:
     actions: Any = None
     provisioning_state: Any = None
     service_name: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations:
     etag: Any = None
     name: Any = None
     properties: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties:
     provisioning_state: Any = None
     subnet: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles:
     etag: Any = None
     name: Any = None
     properties: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurations:
-    pass
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations:
     allocated_address_prefixes: Any = None
     number_of_ip_addresses: Any = None
     pool: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties:
     access: Any = None
     description: Any = None
     destination_address_prefix: Any = None
@@ -210,24 +197,24 @@ class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Publ
     source_port_ranges: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules:
     etag: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity_UserAssignedIdentities:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity_UserAssignedIdentities:
     client_id: Any = None
     principal_id: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity:
     principal_id: Any = None
     tenant_id: Any = None
     type: Any = None
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration:
     enabled: Any = None
     traffic_analytics_interval: Any = None
     workspace_id: Any = None
@@ -235,21 +222,21 @@ class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Publ
     workspace_resource_id: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration:
     network_watcher_flow_analytics_configuration: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format:
     type: Any = None
     version: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy:
     days: Any = None
     enabled: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties:
     enabled: Any = None
     enabled_filtering_criteria: Any = None
     flow_analytics_configuration: Any = None
@@ -262,53 +249,50 @@ class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Publ
     target_resource_id: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs:
     etag: Any = None
     identity: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties:
-    default_security_rules: Any = None
-    flow_logs: Any = None
-    flush_connection: Any = None
-    network_interfaces: Any = None
-    provisioning_state: Any = None
-    resource_guid: Any = None
-    security_rules: Any = None
-    subnets: Any = None
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings:
+    applied_dns_servers: Any = None
+    dns_servers: Any = None
+    internal_dns_name_label: Any = None
+    internal_domain_name_suffix: Any = None
+    internal_fqdn: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations:
     etag: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_CustomDnsConfigs:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs:
     fqdn: Any = None
     ip_addresses: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_IpConfigurations_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties:
     group_id: Any = None
     member_name: Any = None
     private_ipaddress: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_IpConfigurations:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations:
     etag: Any = None
     name: Any = None
     properties: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState:
     actions_required: Any = None
     description: Any = None
     status: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_ManualPrivateLinkServiceConnections_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties:
     group_ids: Any = None
     private_link_service_connection_state: Any = None
     private_link_service_id: Any = None
@@ -316,14 +300,14 @@ class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Publ
     request_message: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_ManualPrivateLinkServiceConnections:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections:
     etag: Any = None
     name: Any = None
     properties: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties:
     application_security_groups: Any = None
     billing_sku: Any = None
     custom_dns_configs: Any = None
@@ -337,209 +321,42 @@ class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Publ
     subnet: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint:
     etag: Any = None
     extended_location: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_Properties:
-    link: Any = None
-    linked_resource_type: Any = None
-    provisioning_state: Any = None
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval:
+    subscriptions: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks:
-    etag: Any = None
-    id: Any = None
-    name: Any = None
-    properties: Any = None
-    type: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHop:
-    next_hop_ip_addresses: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties:
-    address_prefix: Any = None
-    has_bgp_override: Any = None
-    next_hop: Any = None
-    next_hop_ip_address: Any = None
-    next_hop_type: Any = None
-    provisioning_state: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties:
-    disable_bgp_route_propagation: Any = None
-    disable_peering_route: Any = None
-    provisioning_state: Any = None
-    resource_guid: Any = None
-    routes: Any = None
-    subnets: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_Properties:
-    allow_delete: Any = None
-    link: Any = None
-    linked_resource_type: Any = None
-    locations: Any = None
-    provisioning_state: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks:
-    etag: Any = None
-    name: Any = None
-    properties: Any = None
-    type: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_Properties:
-    description: Any = None
-    provisioning_state: Any = None
-    service: Any = None
-    service_resources: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties:
-    contextual_service_endpoint_policies: Any = None
-    provisioning_state: Any = None
-    resource_guid: Any = None
-    service_alias: Any = None
-    service_endpoint_policy_definitions: Any = None
-    subnets: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies:
-    etag: Any = None
-    kind: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints:
-    locations: Any = None
-    network_identifier: Any = None
-    provisioning_state: Any = None
-    service: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties:
-    address_prefix: Any = None
-    address_prefixes: Any = None
-    application_gateway_ipconfigurations: Any = None
-    default_outbound_access: Any = None
-    delegations: Any = None
-    ip_allocations: Any = None
-    ip_configuration_profiles: Any = None
-    ip_configurations: Any = None
-    ipam_pool_prefix_allocations: Any = None
-    nat_gateway: Any = None
-    network_security_group: Any = None
-    private_endpoint_network_policies: Any = None
-    private_endpoints: Any = None
-    private_link_service_network_policies: Any = None
-    provisioning_state: Any = None
-    purpose: Any = None
-    resource_navigation_links: Any = None
-    route_table: Any = None
-    service_association_links: Any = None
-    service_endpoint_policies: Any = None
-    service_endpoints: Any = None
-    service_gateway: Any = None
-    sharing_scope: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties:
+    primary: Any = None
     private_ipaddress: Any = None
+    private_ipaddress_version: Any = None
     private_ipallocation_method: Any = None
     provisioning_state: Any = None
-    public_ipaddress: Any = None
     subnet: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations:
     etag: Any = None
     name: Any = None
     properties: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpTags:
-    first_party_service_tag_id: Any = None
-    ip_tag_type: Any = None
-    tag: Any = None
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings:
+    ddos_custom_policy: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway_Properties:
-    idle_timeout_in_minutes: Any = None
-    nat64: Any = None
-    provisioning_state: Any = None
-    public_ip_addresses: Any = None
-    public_ip_addresses_v6: Any = None
-    public_ip_prefixes: Any = None
-    public_ip_prefixes_v6: Any = None
-    resource_guid: Any = None
-    service_gateway: Any = None
-    source_virtual_network: Any = None
-    subnets: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway_Sku:
-    name: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway:
-    etag: Any = None
-    properties: Any = None
-    sku: Any = None
-    zones: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Properties:
-    ddos_settings: Any = None
-    delete_option: Any = None
-    dns_settings: Any = None
-    idle_timeout_in_minutes: Any = None
-    ip_address: Any = None
-    ip_configuration: Any = None
-    ip_tags: Any = None
-    linked_public_ipaddress: Any = None
-    migration_phase: Any = None
-    nat_gateway: Any = None
-    provisioning_state: Any = None
-    public_ipaddress_version: Any = None
-    public_ipallocation_method: Any = None
-    public_ipprefix: Any = None
-    resource_guid: Any = None
-    service_public_ipaddress: Any = None
-    upgraded_to_v2: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress_Sku:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku:
     name: Any = None
     tier: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_PublicIpaddress:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress:
     etag: Any = None
     extended_location: Any = None
     properties: Any = None
@@ -547,256 +364,7 @@ class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Publ
     zones: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Properties:
-    ddos_settings: Any = None
-    delete_option: Any = None
-    dns_settings: Any = None
-    idle_timeout_in_minutes: Any = None
-    ip_address: Any = None
-    ip_configuration: Any = None
-    ip_tags: Any = None
-    linked_public_ipaddress: Any = None
-    migration_phase: Any = None
-    nat_gateway: Any = None
-    provisioning_state: Any = None
-    public_ipaddress_version: Any = None
-    public_ipallocation_method: Any = None
-    public_ipprefix: Any = None
-    resource_guid: Any = None
-    service_public_ipaddress: Any = None
-    upgraded_to_v2: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress:
-    etag: Any = None
-    extended_location: Any = None
-    properties: Any = None
-    sku: Any = None
-    zones: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Subnet_Properties_IpConfigurations_Properties:
-    private_ipaddress: Any = None
-    private_ipallocation_method: Any = None
-    provisioning_state: Any = None
-    public_ipaddress: Any = None
-    subnet: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Subnet_Properties_IpConfigurations:
-    etag: Any = None
-    name: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Subnet_Properties:
-    address_prefix: Any = None
-    address_prefixes: Any = None
-    application_gateway_ipconfigurations: Any = None
-    default_outbound_access: Any = None
-    delegations: Any = None
-    ip_allocations: Any = None
-    ip_configuration_profiles: Any = None
-    ip_configurations: Any = None
-    ipam_pool_prefix_allocations: Any = None
-    nat_gateway: Any = None
-    network_security_group: Any = None
-    private_endpoint_network_policies: Any = None
-    private_endpoints: Any = None
-    private_link_service_network_policies: Any = None
-    provisioning_state: Any = None
-    purpose: Any = None
-    resource_navigation_links: Any = None
-    route_table: Any = None
-    service_association_links: Any = None
-    service_endpoint_policies: Any = None
-    service_endpoints: Any = None
-    service_gateway: Any = None
-    sharing_scope: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Subnet:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_DdosSettings:
-    ddos_custom_policy: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress:
-    etag: Any = None
-    extended_location: Any = None
-    properties: Any = None
-    sku: Any = None
-    zones: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties:
-    private_ipaddress: Any = None
-    private_ipallocation_method: Any = None
-    provisioning_state: Any = None
-    public_ipaddress: Any = None
-    subnet: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration:
-    etag: Any = None
-    name: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties:
-    ddos_settings: Any = None
-    delete_option: Any = None
-    dns_settings: Any = None
-    idle_timeout_in_minutes: Any = None
-    ip_address: Any = None
-    ip_configuration: Any = None
-    ip_tags: Any = None
-    linked_public_ipaddress: Any = None
-    migration_phase: Any = None
-    nat_gateway: Any = None
-    provisioning_state: Any = None
-    public_ipaddress_version: Any = None
-    public_ipallocation_method: Any = None
-    public_ipprefix: Any = None
-    resource_guid: Any = None
-    service_public_ipaddress: Any = None
-    upgraded_to_v2: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress:
-    etag: Any = None
-    extended_location: Any = None
-    properties: Any = None
-    sku: Any = None
-    zones: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties:
-    provisioning_state: Any = None
-    subnet: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles:
-    etag: Any = None
-    name: Any = None
-    properties: Any = None
-    type: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations_Properties:
-    private_ipaddress: Any = None
-    private_ipallocation_method: Any = None
-    provisioning_state: Any = None
-    public_ipaddress: Any = None
-    subnet: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations:
-    etag: Any = None
-    name: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties:
-    default_security_rules: Any = None
-    flow_logs: Any = None
-    flush_connection: Any = None
-    network_interfaces: Any = None
-    provisioning_state: Any = None
-    resource_guid: Any = None
-    security_rules: Any = None
-    subnets: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties:
-    application_security_groups: Any = None
-    billing_sku: Any = None
-    custom_dns_configs: Any = None
-    custom_network_interface_name: Any = None
-    ip_configurations: Any = None
-    ip_version_type: Any = None
-    manual_private_link_service_connections: Any = None
-    network_interfaces: Any = None
-    private_link_service_connections: Any = None
-    provisioning_state: Any = None
-    subnet: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints:
-    etag: Any = None
-    extended_location: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable_Properties:
-    disable_bgp_route_propagation: Any = None
-    disable_peering_route: Any = None
-    provisioning_state: Any = None
-    resource_guid: Any = None
-    routes: Any = None
-    subnets: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties:
-    contextual_service_endpoint_policies: Any = None
-    provisioning_state: Any = None
-    resource_guid: Any = None
-    service_alias: Any = None
-    service_endpoint_policy_definitions: Any = None
-    subnets: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies:
-    etag: Any = None
-    kind: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties:
-    address_prefix: Any = None
-    address_prefixes: Any = None
-    application_gateway_ipconfigurations: Any = None
-    default_outbound_access: Any = None
-    delegations: Any = None
-    ip_allocations: Any = None
-    ip_configuration_profiles: Any = None
-    ip_configurations: Any = None
-    ipam_pool_prefix_allocations: Any = None
-    nat_gateway: Any = None
-    network_security_group: Any = None
-    private_endpoint_network_policies: Any = None
-    private_endpoints: Any = None
-    private_link_service_network_policies: Any = None
-    provisioning_state: Any = None
-    purpose: Any = None
-    resource_navigation_links: Any = None
-    route_table: Any = None
-    service_association_links: Any = None
-    service_endpoint_policies: Any = None
-    service_endpoints: Any = None
-    service_gateway: Any = None
-    sharing_scope: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties:
     ddos_settings: Any = None
     enable_connection_tracking: Any = None
     gateway_load_balancer: Any = None
@@ -813,178 +381,13 @@ class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_Virt
     subnet: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations:
     etag: Any = None
     properties: Any = None
     zones: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations_Properties:
-    provisioning_state: Any = None
-    virtual_network_tap: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties:
-    destination_load_balancer_front_end_ipconfiguration: Any = None
-    destination_network_interface_ipconfiguration: Any = None
-    destination_port: Any = None
-    network_interface_tap_configurations: Any = None
-    provisioning_state: Any = None
-    resource_guid: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties_VirtualNetworkTaps:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations_Properties:
-    application_gateway_backend_address_pools: Any = None
-    application_security_groups: Any = None
-    gateway_load_balancer: Any = None
-    load_balancer_backend_address_pools: Any = None
-    load_balancer_inbound_nat_rules: Any = None
-    primary: Any = None
-    private_ipaddress: Any = None
-    private_ipaddress_prefix_length: Any = None
-    private_ipaddress_version: Any = None
-    private_ipallocation_method: Any = None
-    private_link_connection_properties: Any = None
-    provisioning_state: Any = None
-    public_ipaddress: Any = None
-    subnet: Any = None
-    virtual_network_taps: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_IpConfigurations:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_NetworkSecurityGroup_Properties_Subnets_Properties:
-    address_prefix: Any = None
-    address_prefixes: Any = None
-    application_gateway_ipconfigurations: Any = None
-    default_outbound_access: Any = None
-    delegations: Any = None
-    ip_allocations: Any = None
-    ip_configuration_profiles: Any = None
-    ip_configurations: Any = None
-    ipam_pool_prefix_allocations: Any = None
-    nat_gateway: Any = None
-    network_security_group: Any = None
-    private_endpoint_network_policies: Any = None
-    private_endpoints: Any = None
-    private_link_service_network_policies: Any = None
-    provisioning_state: Any = None
-    purpose: Any = None
-    resource_navigation_links: Any = None
-    route_table: Any = None
-    service_association_links: Any = None
-    service_endpoint_policies: Any = None
-    service_endpoints: Any = None
-    service_gateway: Any = None
-    sharing_scope: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_NetworkSecurityGroup_Properties_Subnets:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_NetworkSecurityGroup_Properties:
-    default_security_rules: Any = None
-    flow_logs: Any = None
-    flush_connection: Any = None
-    network_interfaces: Any = None
-    provisioning_state: Any = None
-    resource_guid: Any = None
-    security_rules: Any = None
-    subnets: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_NetworkSecurityGroup:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_PrivateEndpoint_Properties_Subnet_Properties:
-    address_prefix: Any = None
-    address_prefixes: Any = None
-    application_gateway_ipconfigurations: Any = None
-    default_outbound_access: Any = None
-    delegations: Any = None
-    ip_allocations: Any = None
-    ip_configuration_profiles: Any = None
-    ip_configurations: Any = None
-    ipam_pool_prefix_allocations: Any = None
-    nat_gateway: Any = None
-    network_security_group: Any = None
-    private_endpoint_network_policies: Any = None
-    private_endpoints: Any = None
-    private_link_service_network_policies: Any = None
-    provisioning_state: Any = None
-    purpose: Any = None
-    resource_navigation_links: Any = None
-    route_table: Any = None
-    service_association_links: Any = None
-    service_endpoint_policies: Any = None
-    service_endpoints: Any = None
-    service_gateway: Any = None
-    sharing_scope: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_PrivateEndpoint_Properties_Subnet:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_PrivateEndpoint_Properties:
-    application_security_groups: Any = None
-    billing_sku: Any = None
-    custom_dns_configs: Any = None
-    custom_network_interface_name: Any = None
-    ip_configurations: Any = None
-    ip_version_type: Any = None
-    manual_private_link_service_connections: Any = None
-    network_interfaces: Any = None
-    private_link_service_connections: Any = None
-    provisioning_state: Any = None
-    subnet: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_PrivateEndpoint:
-    etag: Any = None
-    extended_location: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_PrivateLinkService_Properties_AutoApproval:
-    subscriptions: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_PrivateLinkService_Properties_IpConfigurations_Properties:
-    primary: Any = None
-    private_ipaddress: Any = None
-    private_ipaddress_version: Any = None
-    private_ipallocation_method: Any = None
-    provisioning_state: Any = None
-    subnet: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_PrivateLinkService_Properties_IpConfigurations:
-    etag: Any = None
-    name: Any = None
-    properties: Any = None
-    type: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties:
     link_identifier: Any = None
     private_endpoint: Any = None
     private_endpoint_location: Any = None
@@ -992,12 +395,12 @@ class LoadbalancerLoadBalancer_Value_Properties_PrivateLinkService_Properties_Pr
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_PrivateLinkService_Properties_PrivateEndpointConnections:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections:
     etag: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_PrivateLinkService_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
     access_mode: Any = None
     alias: Any = None
     auto_approval: Any = None
@@ -1012,89 +415,13 @@ class LoadbalancerLoadBalancer_Value_Properties_PrivateLinkService_Properties:
     visibility: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_PrivateLinkService:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService:
     etag: Any = None
     extended_location: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools_Properties:
-    backend_addresses: Any = None
-    backend_ipconfigurations: Any = None
-    provisioning_state: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools:
-    etag: Any = None
-    name: Any = None
-    properties: Any = None
-    type: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools_Properties:
-    backend_ipconfigurations: Any = None
-    drain_period_in_seconds: Any = None
-    inbound_nat_rules: Any = None
-    load_balancer_backend_addresses: Any = None
-    load_balancing_rules: Any = None
-    location: Any = None
-    outbound_rule: Any = None
-    outbound_rules: Any = None
-    provisioning_state: Any = None
-    sync_mode: Any = None
-    tunnel_interfaces: Any = None
-    virtual_network: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules_Properties:
-    backend_address_pool: Any = None
-    backend_ipconfiguration: Any = None
-    backend_port: Any = None
-    enable_floating_ip: Any = None
-    enable_tcp_reset: Any = None
-    frontend_ipconfiguration: Any = None
-    frontend_port: Any = None
-    frontend_port_range_end: Any = None
-    frontend_port_range_start: Any = None
-    idle_timeout_in_minutes: Any = None
-    protocol: Any = None
-    provisioning_state: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties:
-    application_gateway_backend_address_pools: Any = None
-    application_security_groups: Any = None
-    gateway_load_balancer: Any = None
-    load_balancer_backend_address_pools: Any = None
-    load_balancer_inbound_nat_rules: Any = None
-    primary: Any = None
-    private_ipaddress: Any = None
-    private_ipaddress_prefix_length: Any = None
-    private_ipaddress_version: Any = None
-    private_ipallocation_method: Any = None
-    private_link_connection_properties: Any = None
-    provisioning_state: Any = None
-    public_ipaddress: Any = None
-    subnet: Any = None
-    virtual_network_taps: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties:
     destination_load_balancer_front_end_ipconfiguration: Any = None
     destination_network_interface_ipconfiguration: Any = None
     destination_port: Any = None
@@ -1103,22 +430,22 @@ class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties_Vir
     resource_guid: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties_VirtualNetworkTap:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap:
     etag: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties:
     provisioning_state: Any = None
     virtual_network_tap: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties_TapConfigurations:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations:
     etag: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value_Properties:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties:
     auxiliary_mode: Any = None
     auxiliary_sku: Any = None
     default_outbound_connectivity_enabled: Any = None
@@ -1144,26 +471,2119 @@ class LoadbalancerLoadBalancer_Value_Properties:
     workload_type: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerLoadBalancer_Value:
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces:
     etag: Any = None
     extended_location: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties:
+    default_security_rules: Any = None
+    flow_logs: Any = None
+    flush_connection: Any = None
+    network_interfaces: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    security_rules: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties:
+    default_security_rules: Any = None
+    flow_logs: Any = None
+    flush_connection: Any = None
+    network_interfaces: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    security_rules: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties:
+    link_identifier: Any = None
+    private_endpoint: Any = None
+    private_endpoint_location: Any = None
+    private_link_service_connection_state: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    access_mode: Any = None
+    alias: Any = None
+    auto_approval: Any = None
+    destination_ipaddress: Any = None
+    enable_proxy_protocol: Any = None
+    fqdns: Any = None
+    ip_configurations: Any = None
+    load_balancer_frontend_ip_configurations: Any = None
+    network_interfaces: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    visibility: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties:
+    auxiliary_mode: Any = None
+    auxiliary_sku: Any = None
+    default_outbound_connectivity_enabled: Any = None
+    disable_tcp_state_tracking: Any = None
+    dns_settings: Any = None
+    dscp_configuration: Any = None
+    enable_accelerated_networking: Any = None
+    enable_ipforwarding: Any = None
+    hosted_workloads: Any = None
+    ip_configurations: Any = None
+    mac_address: Any = None
+    migration_phase: Any = None
+    network_security_group: Any = None
+    nic_type: Any = None
+    primary: Any = None
+    private_endpoint: Any = None
+    private_link_service: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    tap_configurations: Any = None
+    virtual_machine: Any = None
+    vnet_encryption_supported: Any = None
+    workload_type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties:
+    application_security_groups: Any = None
+    billing_sku: Any = None
+    custom_dns_configs: Any = None
+    custom_network_interface_name: Any = None
+    ip_configurations: Any = None
+    ip_version_type: Any = None
+    manual_private_link_service_connections: Any = None
+    network_interfaces: Any = None
+    private_link_service_connections: Any = None
+    provisioning_state: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_Properties:
+    link: Any = None
+    linked_resource_type: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks:
+    etag: Any = None
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHop:
+    next_hop_ip_addresses: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties:
+    address_prefix: Any = None
+    has_bgp_override: Any = None
+    next_hop: Any = None
+    next_hop_ip_address: Any = None
+    next_hop_type: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties:
+    disable_bgp_route_propagation: Any = None
+    disable_peering_route: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    routes: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_Properties:
+    allow_delete: Any = None
+    link: Any = None
+    linked_resource_type: Any = None
+    locations: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_Properties:
+    description: Any = None
+    provisioning_state: Any = None
+    service: Any = None
+    service_resources: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties:
+    contextual_service_endpoint_policies: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    service_alias: Any = None
+    service_endpoint_policy_definitions: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies:
+    etag: Any = None
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints:
+    locations: Any = None
+    network_identifier: Any = None
+    provisioning_state: Any = None
+    service: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties:
+    address_prefix: Any = None
+    address_prefixes: Any = None
+    application_gateway_ipconfigurations: Any = None
+    default_outbound_access: Any = None
+    delegations: Any = None
+    ip_allocations: Any = None
+    ip_configuration_profiles: Any = None
+    ip_configurations: Any = None
+    ipam_pool_prefix_allocations: Any = None
+    nat_gateway: Any = None
+    network_security_group: Any = None
+    private_endpoint_network_policies: Any = None
+    private_endpoints: Any = None
+    private_link_service_network_policies: Any = None
+    provisioning_state: Any = None
+    purpose: Any = None
+    resource_navigation_links: Any = None
+    route_table: Any = None
+    service_association_links: Any = None
+    service_endpoint_policies: Any = None
+    service_endpoints: Any = None
+    service_gateway: Any = None
+    sharing_scope: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties:
+    private_ipaddress: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags:
+    first_party_service_tag_id: Any = None
+    ip_tag_type: Any = None
+    tag: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Properties:
+    idle_timeout_in_minutes: Any = None
+    nat64: Any = None
+    provisioning_state: Any = None
+    public_ip_addresses: Any = None
+    public_ip_addresses_v6: Any = None
+    public_ip_prefixes: Any = None
+    public_ip_prefixes_v6: Any = None
+    resource_guid: Any = None
+    service_gateway: Any = None
+    source_virtual_network: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Sku:
+    name: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway:
+    etag: Any = None
+    properties: Any = None
+    sku: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties:
+    ddos_settings: Any = None
+    delete_option: Any = None
+    dns_settings: Any = None
+    idle_timeout_in_minutes: Any = None
+    ip_address: Any = None
+    ip_configuration: Any = None
+    ip_tags: Any = None
+    linked_public_ipaddress: Any = None
+    migration_phase: Any = None
+    nat_gateway: Any = None
+    provisioning_state: Any = None
+    public_ipaddress_version: Any = None
+    public_ipallocation_method: Any = None
+    public_ipprefix: Any = None
+    resource_guid: Any = None
+    service_public_ipaddress: Any = None
+    upgraded_to_v2: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+    sku: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Properties:
+    ddos_settings: Any = None
+    delete_option: Any = None
+    dns_settings: Any = None
+    idle_timeout_in_minutes: Any = None
+    ip_address: Any = None
+    ip_configuration: Any = None
+    ip_tags: Any = None
+    linked_public_ipaddress: Any = None
+    migration_phase: Any = None
+    nat_gateway: Any = None
+    provisioning_state: Any = None
+    public_ipaddress_version: Any = None
+    public_ipallocation_method: Any = None
+    public_ipprefix: Any = None
+    resource_guid: Any = None
+    service_public_ipaddress: Any = None
+    upgraded_to_v2: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+    sku: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties:
+    private_ipaddress: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties:
+    private_ipaddress: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties:
+    ddos_settings: Any = None
+    delete_option: Any = None
+    dns_settings: Any = None
+    idle_timeout_in_minutes: Any = None
+    ip_address: Any = None
+    ip_configuration: Any = None
+    ip_tags: Any = None
+    linked_public_ipaddress: Any = None
+    migration_phase: Any = None
+    nat_gateway: Any = None
+    provisioning_state: Any = None
+    public_ipaddress_version: Any = None
+    public_ipallocation_method: Any = None
+    public_ipprefix: Any = None
+    resource_guid: Any = None
+    service_public_ipaddress: Any = None
+    upgraded_to_v2: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+    sku: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties:
+    ddos_settings: Any = None
+    enable_connection_tracking: Any = None
+    gateway_load_balancer: Any = None
+    inbound_nat_pools: Any = None
+    inbound_nat_rules: Any = None
+    load_balancing_rules: Any = None
+    outbound_rules: Any = None
+    private_ipaddress: Any = None
+    private_ipaddress_version: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    public_ipprefix: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations:
+    etag: Any = None
+    properties: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    access_mode: Any = None
+    alias: Any = None
+    auto_approval: Any = None
+    destination_ipaddress: Any = None
+    enable_proxy_protocol: Any = None
+    fqdns: Any = None
+    ip_configurations: Any = None
+    load_balancer_frontend_ip_configurations: Any = None
+    network_interfaces: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    visibility: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties:
+    destination_load_balancer_front_end_ipconfiguration: Any = None
+    destination_network_interface_ipconfiguration: Any = None
+    destination_port: Any = None
+    network_interface_tap_configurations: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties:
+    provisioning_state: Any = None
+    virtual_network_tap: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties:
+    auxiliary_mode: Any = None
+    auxiliary_sku: Any = None
+    default_outbound_connectivity_enabled: Any = None
+    disable_tcp_state_tracking: Any = None
+    dns_settings: Any = None
+    dscp_configuration: Any = None
+    enable_accelerated_networking: Any = None
+    enable_ipforwarding: Any = None
+    hosted_workloads: Any = None
+    ip_configurations: Any = None
+    mac_address: Any = None
+    migration_phase: Any = None
+    network_security_group: Any = None
+    nic_type: Any = None
+    primary: Any = None
+    private_endpoint: Any = None
+    private_link_service: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    tap_configurations: Any = None
+    virtual_machine: Any = None
+    vnet_encryption_supported: Any = None
+    workload_type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties:
+    default_security_rules: Any = None
+    flow_logs: Any = None
+    flush_connection: Any = None
+    network_interfaces: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    security_rules: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    access_mode: Any = None
+    alias: Any = None
+    auto_approval: Any = None
+    destination_ipaddress: Any = None
+    enable_proxy_protocol: Any = None
+    fqdns: Any = None
+    ip_configurations: Any = None
+    load_balancer_frontend_ip_configurations: Any = None
+    network_interfaces: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    visibility: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties:
+    auxiliary_mode: Any = None
+    auxiliary_sku: Any = None
+    default_outbound_connectivity_enabled: Any = None
+    disable_tcp_state_tracking: Any = None
+    dns_settings: Any = None
+    dscp_configuration: Any = None
+    enable_accelerated_networking: Any = None
+    enable_ipforwarding: Any = None
+    hosted_workloads: Any = None
+    ip_configurations: Any = None
+    mac_address: Any = None
+    migration_phase: Any = None
+    network_security_group: Any = None
+    nic_type: Any = None
+    primary: Any = None
+    private_endpoint: Any = None
+    private_link_service: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    tap_configurations: Any = None
+    virtual_machine: Any = None
+    vnet_encryption_supported: Any = None
+    workload_type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties:
+    application_security_groups: Any = None
+    billing_sku: Any = None
+    custom_dns_configs: Any = None
+    custom_network_interface_name: Any = None
+    ip_configurations: Any = None
+    ip_version_type: Any = None
+    manual_private_link_service_connections: Any = None
+    network_interfaces: Any = None
+    private_link_service_connections: Any = None
+    provisioning_state: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties:
+    address_prefix: Any = None
+    address_prefixes: Any = None
+    application_gateway_ipconfigurations: Any = None
+    default_outbound_access: Any = None
+    delegations: Any = None
+    ip_allocations: Any = None
+    ip_configuration_profiles: Any = None
+    ip_configurations: Any = None
+    ipam_pool_prefix_allocations: Any = None
+    nat_gateway: Any = None
+    network_security_group: Any = None
+    private_endpoint_network_policies: Any = None
+    private_endpoints: Any = None
+    private_link_service_network_policies: Any = None
+    provisioning_state: Any = None
+    purpose: Any = None
+    resource_navigation_links: Any = None
+    route_table: Any = None
+    service_association_links: Any = None
+    service_endpoint_policies: Any = None
+    service_endpoints: Any = None
+    service_gateway: Any = None
+    sharing_scope: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    access_mode: Any = None
+    alias: Any = None
+    auto_approval: Any = None
+    destination_ipaddress: Any = None
+    enable_proxy_protocol: Any = None
+    fqdns: Any = None
+    ip_configurations: Any = None
+    load_balancer_frontend_ip_configurations: Any = None
+    network_interfaces: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    visibility: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties:
+    provisioning_state: Any = None
+    virtual_network_tap: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties:
+    auxiliary_mode: Any = None
+    auxiliary_sku: Any = None
+    default_outbound_connectivity_enabled: Any = None
+    disable_tcp_state_tracking: Any = None
+    dns_settings: Any = None
+    dscp_configuration: Any = None
+    enable_accelerated_networking: Any = None
+    enable_ipforwarding: Any = None
+    hosted_workloads: Any = None
+    ip_configurations: Any = None
+    mac_address: Any = None
+    migration_phase: Any = None
+    network_security_group: Any = None
+    nic_type: Any = None
+    primary: Any = None
+    private_endpoint: Any = None
+    private_link_service: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    tap_configurations: Any = None
+    virtual_machine: Any = None
+    vnet_encryption_supported: Any = None
+    workload_type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties:
+    default_security_rules: Any = None
+    flow_logs: Any = None
+    flush_connection: Any = None
+    network_interfaces: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    security_rules: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    access_mode: Any = None
+    alias: Any = None
+    auto_approval: Any = None
+    destination_ipaddress: Any = None
+    enable_proxy_protocol: Any = None
+    fqdns: Any = None
+    ip_configurations: Any = None
+    load_balancer_frontend_ip_configurations: Any = None
+    network_interfaces: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    visibility: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties:
+    auxiliary_mode: Any = None
+    auxiliary_sku: Any = None
+    default_outbound_connectivity_enabled: Any = None
+    disable_tcp_state_tracking: Any = None
+    dns_settings: Any = None
+    dscp_configuration: Any = None
+    enable_accelerated_networking: Any = None
+    enable_ipforwarding: Any = None
+    hosted_workloads: Any = None
+    ip_configurations: Any = None
+    mac_address: Any = None
+    migration_phase: Any = None
+    network_security_group: Any = None
+    nic_type: Any = None
+    primary: Any = None
+    private_endpoint: Any = None
+    private_link_service: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    tap_configurations: Any = None
+    virtual_machine: Any = None
+    vnet_encryption_supported: Any = None
+    workload_type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties:
+    application_security_groups: Any = None
+    billing_sku: Any = None
+    custom_dns_configs: Any = None
+    custom_network_interface_name: Any = None
+    ip_configurations: Any = None
+    ip_version_type: Any = None
+    manual_private_link_service_connections: Any = None
+    network_interfaces: Any = None
+    private_link_service_connections: Any = None
+    provisioning_state: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties:
+    address_prefix: Any = None
+    address_prefixes: Any = None
+    application_gateway_ipconfigurations: Any = None
+    default_outbound_access: Any = None
+    delegations: Any = None
+    ip_allocations: Any = None
+    ip_configuration_profiles: Any = None
+    ip_configurations: Any = None
+    ipam_pool_prefix_allocations: Any = None
+    nat_gateway: Any = None
+    network_security_group: Any = None
+    private_endpoint_network_policies: Any = None
+    private_endpoints: Any = None
+    private_link_service_network_policies: Any = None
+    provisioning_state: Any = None
+    purpose: Any = None
+    resource_navigation_links: Any = None
+    route_table: Any = None
+    service_association_links: Any = None
+    service_endpoint_policies: Any = None
+    service_endpoints: Any = None
+    service_gateway: Any = None
+    sharing_scope: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties:
+    private_ipaddress: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties:
+    ddos_settings: Any = None
+    delete_option: Any = None
+    dns_settings: Any = None
+    idle_timeout_in_minutes: Any = None
+    ip_address: Any = None
+    ip_configuration: Any = None
+    ip_tags: Any = None
+    linked_public_ipaddress: Any = None
+    migration_phase: Any = None
+    nat_gateway: Any = None
+    provisioning_state: Any = None
+    public_ipaddress_version: Any = None
+    public_ipallocation_method: Any = None
+    public_ipprefix: Any = None
+    resource_guid: Any = None
+    service_public_ipaddress: Any = None
+    upgraded_to_v2: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+    sku: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties:
+    provisioning_state: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations_Properties:
+    private_ipaddress: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties:
+    application_security_groups: Any = None
+    billing_sku: Any = None
+    custom_dns_configs: Any = None
+    custom_network_interface_name: Any = None
+    ip_configurations: Any = None
+    ip_version_type: Any = None
+    manual_private_link_service_connections: Any = None
+    network_interfaces: Any = None
+    private_link_service_connections: Any = None
+    provisioning_state: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties:
+    primary: Any = None
+    private_ipaddress: Any = None
+    private_ipaddress_version: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties:
+    link_identifier: Any = None
+    private_endpoint: Any = None
+    private_endpoint_location: Any = None
+    private_link_service_connection_state: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    access_mode: Any = None
+    alias: Any = None
+    auto_approval: Any = None
+    destination_ipaddress: Any = None
+    enable_proxy_protocol: Any = None
+    fqdns: Any = None
+    ip_configurations: Any = None
+    load_balancer_frontend_ip_configurations: Any = None
+    network_interfaces: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    visibility: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties:
+    auxiliary_mode: Any = None
+    auxiliary_sku: Any = None
+    default_outbound_connectivity_enabled: Any = None
+    disable_tcp_state_tracking: Any = None
+    dns_settings: Any = None
+    dscp_configuration: Any = None
+    enable_accelerated_networking: Any = None
+    enable_ipforwarding: Any = None
+    hosted_workloads: Any = None
+    ip_configurations: Any = None
+    mac_address: Any = None
+    migration_phase: Any = None
+    network_security_group: Any = None
+    nic_type: Any = None
+    primary: Any = None
+    private_endpoint: Any = None
+    private_link_service: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    tap_configurations: Any = None
+    virtual_machine: Any = None
+    vnet_encryption_supported: Any = None
+    workload_type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties:
+    default_security_rules: Any = None
+    flow_logs: Any = None
+    flush_connection: Any = None
+    network_interfaces: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    security_rules: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties:
+    default_security_rules: Any = None
+    flow_logs: Any = None
+    flush_connection: Any = None
+    network_interfaces: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    security_rules: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    access_mode: Any = None
+    alias: Any = None
+    auto_approval: Any = None
+    destination_ipaddress: Any = None
+    enable_proxy_protocol: Any = None
+    fqdns: Any = None
+    ip_configurations: Any = None
+    load_balancer_frontend_ip_configurations: Any = None
+    network_interfaces: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    visibility: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties:
+    auxiliary_mode: Any = None
+    auxiliary_sku: Any = None
+    default_outbound_connectivity_enabled: Any = None
+    disable_tcp_state_tracking: Any = None
+    dns_settings: Any = None
+    dscp_configuration: Any = None
+    enable_accelerated_networking: Any = None
+    enable_ipforwarding: Any = None
+    hosted_workloads: Any = None
+    ip_configurations: Any = None
+    mac_address: Any = None
+    migration_phase: Any = None
+    network_security_group: Any = None
+    nic_type: Any = None
+    primary: Any = None
+    private_endpoint: Any = None
+    private_link_service: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    tap_configurations: Any = None
+    virtual_machine: Any = None
+    vnet_encryption_supported: Any = None
+    workload_type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties:
+    application_security_groups: Any = None
+    billing_sku: Any = None
+    custom_dns_configs: Any = None
+    custom_network_interface_name: Any = None
+    ip_configurations: Any = None
+    ip_version_type: Any = None
+    manual_private_link_service_connections: Any = None
+    network_interfaces: Any = None
+    private_link_service_connections: Any = None
+    provisioning_state: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable_Properties:
+    disable_bgp_route_propagation: Any = None
+    disable_peering_route: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    routes: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties:
+    contextual_service_endpoint_policies: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    service_alias: Any = None
+    service_endpoint_policy_definitions: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies:
+    etag: Any = None
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties:
+    address_prefix: Any = None
+    address_prefixes: Any = None
+    application_gateway_ipconfigurations: Any = None
+    default_outbound_access: Any = None
+    delegations: Any = None
+    ip_allocations: Any = None
+    ip_configuration_profiles: Any = None
+    ip_configurations: Any = None
+    ipam_pool_prefix_allocations: Any = None
+    nat_gateway: Any = None
+    network_security_group: Any = None
+    private_endpoint_network_policies: Any = None
+    private_endpoints: Any = None
+    private_link_service_network_policies: Any = None
+    provisioning_state: Any = None
+    purpose: Any = None
+    resource_navigation_links: Any = None
+    route_table: Any = None
+    service_association_links: Any = None
+    service_endpoint_policies: Any = None
+    service_endpoints: Any = None
+    service_gateway: Any = None
+    sharing_scope: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties:
+    ddos_settings: Any = None
+    enable_connection_tracking: Any = None
+    gateway_load_balancer: Any = None
+    inbound_nat_pools: Any = None
+    inbound_nat_rules: Any = None
+    load_balancing_rules: Any = None
+    outbound_rules: Any = None
+    private_ipaddress: Any = None
+    private_ipaddress_version: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    public_ipprefix: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration:
+    etag: Any = None
+    properties: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties:
+    destination_load_balancer_front_end_ipconfiguration: Any = None
+    destination_network_interface_ipconfiguration: Any = None
+    destination_port: Any = None
+    network_interface_tap_configurations: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties:
+    application_gateway_backend_address_pools: Any = None
+    application_security_groups: Any = None
+    gateway_load_balancer: Any = None
+    load_balancer_backend_address_pools: Any = None
+    load_balancer_inbound_nat_rules: Any = None
+    primary: Any = None
+    private_ipaddress: Any = None
+    private_ipaddress_prefix_length: Any = None
+    private_ipaddress_version: Any = None
+    private_ipallocation_method: Any = None
+    private_link_connection_properties: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+    virtual_network_taps: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties_BackendIpconfigurations:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools_Properties:
+    backend_ipconfigurations: Any = None
+    drain_period_in_seconds: Any = None
+    inbound_nat_rules: Any = None
+    load_balancer_backend_addresses: Any = None
+    load_balancing_rules: Any = None
+    location: Any = None
+    outbound_rule: Any = None
+    outbound_rules: Any = None
+    provisioning_state: Any = None
+    sync_mode: Any = None
+    tunnel_interfaces: Any = None
+    virtual_network: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_BackendAddressPools:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties:
+    backend_addresses: Any = None
+    backend_ipconfigurations: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties:
+    backend_ipconfigurations: Any = None
+    drain_period_in_seconds: Any = None
+    inbound_nat_rules: Any = None
+    load_balancer_backend_addresses: Any = None
+    load_balancing_rules: Any = None
+    location: Any = None
+    outbound_rule: Any = None
+    outbound_rules: Any = None
+    provisioning_state: Any = None
+    sync_mode: Any = None
+    tunnel_interfaces: Any = None
+    virtual_network: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties:
+    backend_address_pool: Any = None
+    backend_ipconfiguration: Any = None
+    backend_port: Any = None
+    enable_floating_ip: Any = None
+    enable_tcp_reset: Any = None
+    frontend_ipconfiguration: Any = None
+    frontend_port: Any = None
+    frontend_port_range_end: Any = None
+    frontend_port_range_start: Any = None
+    idle_timeout_in_minutes: Any = None
+    protocol: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties:
+    ddos_settings: Any = None
+    enable_connection_tracking: Any = None
+    gateway_load_balancer: Any = None
+    inbound_nat_pools: Any = None
+    inbound_nat_rules: Any = None
+    load_balancing_rules: Any = None
+    outbound_rules: Any = None
+    private_ipaddress: Any = None
+    private_ipaddress_version: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    public_ipprefix: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration:
+    etag: Any = None
+    properties: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties:
+    destination_load_balancer_front_end_ipconfiguration: Any = None
+    destination_network_interface_ipconfiguration: Any = None
+    destination_port: Any = None
+    network_interface_tap_configurations: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties:
+    application_gateway_backend_address_pools: Any = None
+    application_security_groups: Any = None
+    gateway_load_balancer: Any = None
+    load_balancer_backend_address_pools: Any = None
+    load_balancer_inbound_nat_rules: Any = None
+    primary: Any = None
+    private_ipaddress: Any = None
+    private_ipaddress_prefix_length: Any = None
+    private_ipaddress_version: Any = None
+    private_ipallocation_method: Any = None
+    private_link_connection_properties: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+    virtual_network_taps: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    access_mode: Any = None
+    alias: Any = None
+    auto_approval: Any = None
+    destination_ipaddress: Any = None
+    enable_proxy_protocol: Any = None
+    fqdns: Any = None
+    ip_configurations: Any = None
+    load_balancer_frontend_ip_configurations: Any = None
+    network_interfaces: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    visibility: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties:
+    application_gateway_backend_address_pools: Any = None
+    application_security_groups: Any = None
+    gateway_load_balancer: Any = None
+    load_balancer_backend_address_pools: Any = None
+    load_balancer_inbound_nat_rules: Any = None
+    primary: Any = None
+    private_ipaddress: Any = None
+    private_ipaddress_prefix_length: Any = None
+    private_ipaddress_version: Any = None
+    private_ipallocation_method: Any = None
+    private_link_connection_properties: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+    virtual_network_taps: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties:
+    destination_load_balancer_front_end_ipconfiguration: Any = None
+    destination_network_interface_ipconfiguration: Any = None
+    destination_port: Any = None
+    network_interface_tap_configurations: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties:
+    provisioning_state: Any = None
+    virtual_network_tap: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties:
+    auxiliary_mode: Any = None
+    auxiliary_sku: Any = None
+    default_outbound_connectivity_enabled: Any = None
+    disable_tcp_state_tracking: Any = None
+    dns_settings: Any = None
+    dscp_configuration: Any = None
+    enable_accelerated_networking: Any = None
+    enable_ipforwarding: Any = None
+    hosted_workloads: Any = None
+    ip_configurations: Any = None
+    mac_address: Any = None
+    migration_phase: Any = None
+    network_security_group: Any = None
+    nic_type: Any = None
+    primary: Any = None
+    private_endpoint: Any = None
+    private_link_service: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    tap_configurations: Any = None
+    virtual_machine: Any = None
+    vnet_encryption_supported: Any = None
+    workload_type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties:
+    default_security_rules: Any = None
+    flow_logs: Any = None
+    flush_connection: Any = None
+    network_interfaces: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    security_rules: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    access_mode: Any = None
+    alias: Any = None
+    auto_approval: Any = None
+    destination_ipaddress: Any = None
+    enable_proxy_protocol: Any = None
+    fqdns: Any = None
+    ip_configurations: Any = None
+    load_balancer_frontend_ip_configurations: Any = None
+    network_interfaces: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    visibility: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties:
+    auxiliary_mode: Any = None
+    auxiliary_sku: Any = None
+    default_outbound_connectivity_enabled: Any = None
+    disable_tcp_state_tracking: Any = None
+    dns_settings: Any = None
+    dscp_configuration: Any = None
+    enable_accelerated_networking: Any = None
+    enable_ipforwarding: Any = None
+    hosted_workloads: Any = None
+    ip_configurations: Any = None
+    mac_address: Any = None
+    migration_phase: Any = None
+    network_security_group: Any = None
+    nic_type: Any = None
+    primary: Any = None
+    private_endpoint: Any = None
+    private_link_service: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    tap_configurations: Any = None
+    virtual_machine: Any = None
+    vnet_encryption_supported: Any = None
+    workload_type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties:
+    application_security_groups: Any = None
+    billing_sku: Any = None
+    custom_dns_configs: Any = None
+    custom_network_interface_name: Any = None
+    ip_configurations: Any = None
+    ip_version_type: Any = None
+    manual_private_link_service_connections: Any = None
+    network_interfaces: Any = None
+    private_link_service_connections: Any = None
+    provisioning_state: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties:
+    address_prefix: Any = None
+    address_prefixes: Any = None
+    application_gateway_ipconfigurations: Any = None
+    default_outbound_access: Any = None
+    delegations: Any = None
+    ip_allocations: Any = None
+    ip_configuration_profiles: Any = None
+    ip_configurations: Any = None
+    ipam_pool_prefix_allocations: Any = None
+    nat_gateway: Any = None
+    network_security_group: Any = None
+    private_endpoint_network_policies: Any = None
+    private_endpoints: Any = None
+    private_link_service_network_policies: Any = None
+    provisioning_state: Any = None
+    purpose: Any = None
+    resource_navigation_links: Any = None
+    route_table: Any = None
+    service_association_links: Any = None
+    service_endpoint_policies: Any = None
+    service_endpoints: Any = None
+    service_gateway: Any = None
+    sharing_scope: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties:
+    private_ipaddress: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress_Properties:
+    ddos_settings: Any = None
+    delete_option: Any = None
+    dns_settings: Any = None
+    idle_timeout_in_minutes: Any = None
+    ip_address: Any = None
+    ip_configuration: Any = None
+    ip_tags: Any = None
+    linked_public_ipaddress: Any = None
+    migration_phase: Any = None
+    nat_gateway: Any = None
+    provisioning_state: Any = None
+    public_ipaddress_version: Any = None
+    public_ipallocation_method: Any = None
+    public_ipprefix: Any = None
+    resource_guid: Any = None
+    service_public_ipaddress: Any = None
+    upgraded_to_v2: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_PublicIpaddress:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+    sku: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties:
+    private_ipaddress: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties:
+    ddos_settings: Any = None
+    delete_option: Any = None
+    dns_settings: Any = None
+    idle_timeout_in_minutes: Any = None
+    ip_address: Any = None
+    ip_configuration: Any = None
+    ip_tags: Any = None
+    linked_public_ipaddress: Any = None
+    migration_phase: Any = None
+    nat_gateway: Any = None
+    provisioning_state: Any = None
+    public_ipaddress_version: Any = None
+    public_ipallocation_method: Any = None
+    public_ipprefix: Any = None
+    resource_guid: Any = None
+    service_public_ipaddress: Any = None
+    upgraded_to_v2: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+    sku: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties:
+    private_ipaddress: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties:
+    ddos_settings: Any = None
+    delete_option: Any = None
+    dns_settings: Any = None
+    idle_timeout_in_minutes: Any = None
+    ip_address: Any = None
+    ip_configuration: Any = None
+    ip_tags: Any = None
+    linked_public_ipaddress: Any = None
+    migration_phase: Any = None
+    nat_gateway: Any = None
+    provisioning_state: Any = None
+    public_ipaddress_version: Any = None
+    public_ipallocation_method: Any = None
+    public_ipprefix: Any = None
+    resource_guid: Any = None
+    service_public_ipaddress: Any = None
+    upgraded_to_v2: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+    sku: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties:
+    ddos_settings: Any = None
+    enable_connection_tracking: Any = None
+    gateway_load_balancer: Any = None
+    inbound_nat_pools: Any = None
+    inbound_nat_rules: Any = None
+    load_balancing_rules: Any = None
+    outbound_rules: Any = None
+    private_ipaddress: Any = None
+    private_ipaddress_version: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    public_ipprefix: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration:
+    etag: Any = None
+    properties: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties:
+    destination_load_balancer_front_end_ipconfiguration: Any = None
+    destination_network_interface_ipconfiguration: Any = None
+    destination_port: Any = None
+    network_interface_tap_configurations: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties:
+    application_gateway_backend_address_pools: Any = None
+    application_security_groups: Any = None
+    gateway_load_balancer: Any = None
+    load_balancer_backend_address_pools: Any = None
+    load_balancer_inbound_nat_rules: Any = None
+    primary: Any = None
+    private_ipaddress: Any = None
+    private_ipaddress_prefix_length: Any = None
+    private_ipaddress_version: Any = None
+    private_ipallocation_method: Any = None
+    private_link_connection_properties: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+    virtual_network_taps: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    access_mode: Any = None
+    alias: Any = None
+    auto_approval: Any = None
+    destination_ipaddress: Any = None
+    enable_proxy_protocol: Any = None
+    fqdns: Any = None
+    ip_configurations: Any = None
+    load_balancer_frontend_ip_configurations: Any = None
+    network_interfaces: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    visibility: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties:
+    application_gateway_backend_address_pools: Any = None
+    application_security_groups: Any = None
+    gateway_load_balancer: Any = None
+    load_balancer_backend_address_pools: Any = None
+    load_balancer_inbound_nat_rules: Any = None
+    primary: Any = None
+    private_ipaddress: Any = None
+    private_ipaddress_prefix_length: Any = None
+    private_ipaddress_version: Any = None
+    private_ipallocation_method: Any = None
+    private_link_connection_properties: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    subnet: Any = None
+    virtual_network_taps: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties:
+    destination_load_balancer_front_end_ipconfiguration: Any = None
+    destination_network_interface_ipconfiguration: Any = None
+    destination_port: Any = None
+    network_interface_tap_configurations: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties:
+    provisioning_state: Any = None
+    virtual_network_tap: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties:
+    auxiliary_mode: Any = None
+    auxiliary_sku: Any = None
+    default_outbound_connectivity_enabled: Any = None
+    disable_tcp_state_tracking: Any = None
+    dns_settings: Any = None
+    dscp_configuration: Any = None
+    enable_accelerated_networking: Any = None
+    enable_ipforwarding: Any = None
+    hosted_workloads: Any = None
+    ip_configurations: Any = None
+    mac_address: Any = None
+    migration_phase: Any = None
+    network_security_group: Any = None
+    nic_type: Any = None
+    primary: Any = None
+    private_endpoint: Any = None
+    private_link_service: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    tap_configurations: Any = None
+    virtual_machine: Any = None
+    vnet_encryption_supported: Any = None
+    workload_type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties:
+    default_security_rules: Any = None
+    flow_logs: Any = None
+    flush_connection: Any = None
+    network_interfaces: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    security_rules: Any = None
+    subnets: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    access_mode: Any = None
+    alias: Any = None
+    auto_approval: Any = None
+    destination_ipaddress: Any = None
+    enable_proxy_protocol: Any = None
+    fqdns: Any = None
+    ip_configurations: Any = None
+    load_balancer_frontend_ip_configurations: Any = None
+    network_interfaces: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    visibility: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties:
+    auxiliary_mode: Any = None
+    auxiliary_sku: Any = None
+    default_outbound_connectivity_enabled: Any = None
+    disable_tcp_state_tracking: Any = None
+    dns_settings: Any = None
+    dscp_configuration: Any = None
+    enable_accelerated_networking: Any = None
+    enable_ipforwarding: Any = None
+    hosted_workloads: Any = None
+    ip_configurations: Any = None
+    mac_address: Any = None
+    migration_phase: Any = None
+    network_security_group: Any = None
+    nic_type: Any = None
+    primary: Any = None
+    private_endpoint: Any = None
+    private_link_service: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    tap_configurations: Any = None
+    virtual_machine: Any = None
+    vnet_encryption_supported: Any = None
+    workload_type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties:
+    application_security_groups: Any = None
+    billing_sku: Any = None
+    custom_dns_configs: Any = None
+    custom_network_interface_name: Any = None
+    ip_configurations: Any = None
+    ip_version_type: Any = None
+    manual_private_link_service_connections: Any = None
+    network_interfaces: Any = None
+    private_link_service_connections: Any = None
+    provisioning_state: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet_Properties:
+    address_prefix: Any = None
+    address_prefixes: Any = None
+    application_gateway_ipconfigurations: Any = None
+    default_outbound_access: Any = None
+    delegations: Any = None
+    ip_allocations: Any = None
+    ip_configuration_profiles: Any = None
+    ip_configurations: Any = None
+    ipam_pool_prefix_allocations: Any = None
+    nat_gateway: Any = None
+    network_security_group: Any = None
+    private_endpoint_network_policies: Any = None
+    private_endpoints: Any = None
+    private_link_service_network_policies: Any = None
+    provisioning_state: Any = None
+    purpose: Any = None
+    resource_navigation_links: Any = None
+    route_table: Any = None
+    service_association_links: Any = None
+    service_endpoint_policies: Any = None
+    service_endpoints: Any = None
+    service_gateway: Any = None
+    sharing_scope: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties_Subnet:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations_Properties:
+    ddos_settings: Any = None
+    enable_connection_tracking: Any = None
+    gateway_load_balancer: Any = None
+    inbound_nat_pools: Any = None
+    inbound_nat_rules: Any = None
+    load_balancing_rules: Any = None
+    outbound_rules: Any = None
+    private_ipaddress: Any = None
+    private_ipaddress_version: Any = None
+    private_ipallocation_method: Any = None
+    provisioning_state: Any = None
+    public_ipaddress: Any = None
+    public_ipprefix: Any = None
+    subnet: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_FrontendIpconfigurations:
+    etag: Any = None
+    properties: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_InboundNatPools_Properties:
+    backend_port: Any = None
+    enable_floating_ip: Any = None
+    enable_tcp_reset: Any = None
+    frontend_ipconfiguration: Any = None
+    frontend_port_range_end: Any = None
+    frontend_port_range_start: Any = None
+    idle_timeout_in_minutes: Any = None
+    protocol: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_InboundNatPools:
+    etag: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_InboundNatRules_Properties:
+    backend_address_pool: Any = None
+    backend_ipconfiguration: Any = None
+    backend_port: Any = None
+    enable_floating_ip: Any = None
+    enable_tcp_reset: Any = None
+    frontend_ipconfiguration: Any = None
+    frontend_port: Any = None
+    frontend_port_range_end: Any = None
+    frontend_port_range_start: Any = None
+    idle_timeout_in_minutes: Any = None
+    protocol: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_InboundNatRules:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_LoadBalancingRules_Properties:
+    backend_address_pool: Any = None
+    backend_address_pools: Any = None
+    backend_port: Any = None
+    disable_outbound_snat: Any = None
+    enable_connection_tracking: Any = None
+    enable_floating_ip: Any = None
+    enable_tcp_reset: Any = None
+    frontend_ipconfiguration: Any = None
+    frontend_port: Any = None
+    idle_timeout_in_minutes: Any = None
+    load_distribution: Any = None
+    probe: Any = None
+    protocol: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_LoadBalancingRules:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_OutboundRules_Properties:
+    allocated_outbound_ports: Any = None
+    backend_address_pool: Any = None
+    enable_tcp_reset: Any = None
+    frontend_ipconfigurations: Any = None
+    idle_timeout_in_minutes: Any = None
+    protocol: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_OutboundRules:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_Probes_Properties:
+    interval_in_seconds: Any = None
+    load_balancing_rules: Any = None
+    no_healthy_backends_behavior: Any = None
+    number_of_probes: Any = None
+    port: Any = None
+    probe_threshold: Any = None
+    protocol: Any = None
+    provisioning_state: Any = None
+    request_path: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties_Probes:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value_Properties:
+    backend_address_pools: Any = None
+    frontend_ipconfigurations: Any = None
+    inbound_nat_pools: Any = None
+    inbound_nat_rules: Any = None
+    load_balancing_rules: Any = None
+    mode: Any = None
+    outbound_rules: Any = None
+    probes: Any = None
+    provisioning_state: Any = None
+    resource_guid: Any = None
+    scope: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerLoadBalancer_Value:
+    etag: Any = None
+    extended_location: Any = None
+    properties: Any = None
+    sku: Any = None
+
+@dataclasses.dataclass
 class LoadbalancerLoadBalancerConfig:
-    load_balancer_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class LoadbalancerLoadBalancerAttrs:
-    load_balancer_name: Any = None
     # The link to the next page of items
     next_link: Any = None
-    # The NetworkInterface items on this page
+    # The LoadBalancer items on this page
     value: Any = None
 
 LoadbalancerLoadBalancer = ubx.DataSourceBinding(
     wire_type="azure_network_loadbalancer_load_balancer",
     fields={
-        "load_balancer_name": ubx.FieldSpec(wire_name="load_balancer_name"),
     },
 )

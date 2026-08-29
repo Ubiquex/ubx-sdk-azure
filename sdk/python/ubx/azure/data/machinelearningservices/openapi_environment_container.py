@@ -7,26 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiEnvironmentContainer_Properties:
-    # Provisioning state of registry asset.
+class OpenapiEnvironmentContainer_Value_Properties:
     provisioning_state: Any = None
 
 @dataclasses.dataclass
+class OpenapiEnvironmentContainer_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiEnvironmentContainerConfig:
-    name: Any = None
-    workspace_name: Any = None
+    list_view_type: Any = None
+    registry_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiEnvironmentContainerAttrs:
-    name: Any = None
-    # Container for environment specification versions.
-    properties: Any = None
-    workspace_name: Any = None
+    list_view_type: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    registry_name: Any = None
+    # The EnvironmentContainer items on this page
+    value: Any = None
 
 OpenapiEnvironmentContainer = ubx.DataSourceBinding(
     wire_type="azure_machinelearningservices_openapi_environment_container",
     fields={
-        "name": ubx.FieldSpec(wire_name="name"),
-        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
+        "list_view_type": ubx.FieldSpec(wire_name="list_view_type"),
+        "registry_name": ubx.FieldSpec(wire_name="registry_name"),
     },
 )

@@ -4,6 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .management_creator_list import ManagementCreatorList, ManagementCreatorListConfig
-from .management_maps_accounts import ManagementMapsAccounts, ManagementMapsAccountsConfig
-from .management_maps_operations import ManagementMapsOperations, ManagementMapsOperationsConfig
+from .management_creator import ManagementCreator, ManagementCreatorConfig
+from .management_maps_account import ManagementMapsAccount, ManagementMapsAccountConfig

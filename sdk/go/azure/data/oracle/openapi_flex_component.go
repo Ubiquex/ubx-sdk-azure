@@ -3,42 +3,38 @@ package oracle
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiFlexComponent_Properties struct {
-	// The maximum number of CPU cores that can be enabled on the DB Server for this Flex Component.
+type OpenapiFlexComponent_Value_Properties struct {
 	AvailableCoreCount any
-	// The maximum storage that can be enabled on the Storage Server for this Flex Component.
 	AvailableDbStorageInGbs any
-	// The maximum local storage that can be enabled on the DB Server for this Flex Component.
 	AvailableLocalStorageInGbs any
-	// The maximum memory size that can be enabled on the DB Server for this Flex Component.
 	AvailableMemoryInGbs any
-	// The compute model of the DB Server for this Flex Component.
 	ComputeModel any
-	// The description summary for this Flex Component.
 	DescriptionSummary any
-	// Hardware Type enum
 	HardwareType any
-	// The minimum number of CPU cores that can be enabled on the DB Server for this Flex Component.
 	MinimumCoreCount any
-	// The runtime minimum number of CPU cores that can be enabled for this Flex Component.
 	RuntimeMinimumCoreCount any
-	// The name of the DB system shape for this Flex Component.
 	Shape any
 }
 
+type OpenapiFlexComponent_Value struct {
+	Properties any
+}
+
 type OpenapiFlexComponentConfig struct {
-	FlexComponentName any
+	Shape any
 }
 
 type OpenapiFlexComponentAttrs struct {
-	FlexComponentName any
-	// FlexComponent resource model
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	Shape any
+	// The FlexComponent items on this page
+	Value any
 }
 
 var OpenapiFlexComponent = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_flex_component",
 	Fields: ubx.FieldMap{
-		"FlexComponentName": ubx.FieldSpec{WireName: "flex_component_name"},
+		"Shape": ubx.FieldSpec{WireName: "shape"},
 	},
 }

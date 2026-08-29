@@ -3,26 +3,21 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiApiKvreference_Properties_IdentityType_UserAssignedIdentities struct {
+type OpenapiApiKvreference_Value_Properties_IdentityType_UserAssignedIdentities struct {
 	ClientId any
 	PrincipalId any
 }
 
-type OpenapiApiKvreference_Properties_IdentityType struct {
-	// Principal Id of managed service identity.
+type OpenapiApiKvreference_Value_Properties_IdentityType struct {
 	PrincipalId any
-	// Tenant of managed service identity.
 	TenantId any
-	// Type of managed service identity.
 	Type any
-	// The list of user assigned identities associated with the resource. The user identity dictionary key references will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}
 	UserAssignedIdentities any
 }
 
-type OpenapiApiKvreference_Properties struct {
+type OpenapiApiKvreference_Value_Properties struct {
 	ActiveVersion any
 	Details any
-	// Managed service identity.
 	IdentityType any
 	Reference any
 	SecretName any
@@ -32,24 +27,26 @@ type OpenapiApiKvreference_Properties struct {
 	VaultName any
 }
 
+type OpenapiApiKvreference_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiApiKvreferenceConfig struct {
-	AppSettingKey any
 	Name any
 }
 
 type OpenapiApiKvreferenceAttrs struct {
-	AppSettingKey any
-	// Kind of resource.
-	Kind any
 	Name any
-	// ApiKVReference resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The ApiKVReference items on this page
+	Value any
 }
 
 var OpenapiApiKvreference = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_api_kvreference",
 	Fields: ubx.FieldMap{
-		"AppSettingKey": ubx.FieldSpec{WireName: "app_setting_key"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

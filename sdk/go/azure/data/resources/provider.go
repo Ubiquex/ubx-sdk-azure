@@ -3,25 +3,25 @@ package resources
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type Provider_ResourceTypes_Aliases_DefaultMetadata struct {
+type Provider_Value_ResourceTypes_Aliases_DefaultMetadata struct {
 	Attributes any
 	Type any
 }
 
-type Provider_ResourceTypes_Aliases_DefaultPattern struct {
+type Provider_Value_ResourceTypes_Aliases_DefaultPattern struct {
 	Phrase any
 	Type any
 	Variable any
 }
 
-type Provider_ResourceTypes_Aliases_Paths struct {
+type Provider_Value_ResourceTypes_Aliases_Paths struct {
 	ApiVersions any
 	Metadata any
 	Path any
 	Pattern any
 }
 
-type Provider_ResourceTypes_Aliases struct {
+type Provider_Value_ResourceTypes_Aliases struct {
 	DefaultMetadata any
 	DefaultPath any
 	DefaultPattern any
@@ -30,23 +30,23 @@ type Provider_ResourceTypes_Aliases struct {
 	Type any
 }
 
-type Provider_ResourceTypes_ApiProfiles struct {
+type Provider_Value_ResourceTypes_ApiProfiles struct {
 	ApiVersion any
 	ProfileVersion any
 }
 
-type Provider_ResourceTypes_LocationMappings struct {
+type Provider_Value_ResourceTypes_LocationMappings struct {
 	ExtendedLocations any
 	Location any
 	Type any
 }
 
-type Provider_ResourceTypes_ZoneMappings struct {
+type Provider_Value_ResourceTypes_ZoneMappings struct {
 	Location any
 	Zones any
 }
 
-type Provider_ResourceTypes struct {
+type Provider_Value_ResourceTypes struct {
 	Aliases any
 	ApiProfiles any
 	ApiVersions any
@@ -59,29 +59,27 @@ type Provider_ResourceTypes struct {
 	ZoneMappings any
 }
 
+type Provider_Value struct {
+	Id any
+	Namespace any
+	ProviderAuthorizationConsentState any
+	RegistrationPolicy any
+	RegistrationState any
+	ResourceTypes any
+}
+
 type ProviderConfig struct {
-	ResourceProviderNamespace any
 }
 
 type ProviderAttrs struct {
-	// The provider ID.
-	Id any
-	// The namespace of the resource provider.
-	Namespace any
-	// The provider authorization consent state.
-	ProviderAuthorizationConsentState any
-	// The registration policy of the resource provider.
-	RegistrationPolicy any
-	// The registration state of the resource provider.
-	RegistrationState any
-	ResourceProviderNamespace any
-	// The collection of provider resource types.
-	ResourceTypes any
+	// The link to the next page of items
+	NextLink any
+	// The Provider items on this page
+	Value any
 }
 
 var Provider = ubx.DataSourceBinding{
 	WireType: "azure_resources_provider",
 	Fields: ubx.FieldMap{
-		"ResourceProviderNamespace": ubx.FieldSpec{WireName: "resource_provider_namespace"},
 	},
 }

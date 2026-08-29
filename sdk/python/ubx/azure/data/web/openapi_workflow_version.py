@@ -7,129 +7,104 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_AccessControl_Actions_AllowedCallerIpAddresses:
+class OpenapiWorkflowVersion_Value_Properties_AccessControl_Actions_AllowedCallerIpAddresses:
     address_range: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims:
+class OpenapiWorkflowVersion_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims:
     name: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies:
+class OpenapiWorkflowVersion_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies:
     claims: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies:
-    # Open authentication policies.
+class OpenapiWorkflowVersion_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies:
     policies: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_AccessControl_Actions:
-    # The allowed caller IP address ranges.
+class OpenapiWorkflowVersion_Value_Properties_AccessControl_Actions:
     allowed_caller_ip_addresses: Any = None
-    # AuthenticationPolicy of type Open.
     open_authentication_policies: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_AccessControl:
-    # The access control configuration policy.
+class OpenapiWorkflowVersion_Value_Properties_AccessControl:
     actions: Any = None
-    # The access control configuration policy.
     contents: Any = None
-    # The access control configuration policy.
     triggers: Any = None
-    # The access control configuration policy.
     workflow_management: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddresses:
+class OpenapiWorkflowVersion_Value_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddresses:
     address: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_EndpointsConfiguration_Connector:
-    # The access endpoint ip address.
+class OpenapiWorkflowVersion_Value_Properties_EndpointsConfiguration_Connector:
     access_endpoint_ip_addresses: Any = None
-    # The outgoing ip address.
     outgoing_ip_addresses: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_EndpointsConfiguration:
-    # The flow endpoints configuration.
+class OpenapiWorkflowVersion_Value_Properties_EndpointsConfiguration:
     connector: Any = None
-    # The flow endpoints configuration.
     workflow: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_IntegrationAccount:
-    # The resource id.
+class OpenapiWorkflowVersion_Value_Properties_IntegrationAccount:
     id: Any = None
-    # Gets the resource name.
     name: Any = None
-    # Gets the resource type.
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_Parameters:
+class OpenapiWorkflowVersion_Value_Properties_Parameters:
     description: Any = None
     metadata: Any = None
     type: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties_Sku:
-    # The sku name.
+class OpenapiWorkflowVersion_Value_Properties_Sku:
     name: Any = None
-    # The resource reference.
     plan: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowVersion_Properties:
-    # The access control configuration.
+class OpenapiWorkflowVersion_Value_Properties:
     access_control: Any = None
-    # Gets the access endpoint.
     access_endpoint: Any = None
-    # Gets the changed time.
     changed_time: Any = None
-    # Gets the created time.
     created_time: Any = None
-    # The definition.
     definition: Any = None
-    # The endpoints configuration.
     endpoints_configuration: Any = None
-    # The resource reference.
     integration_account: Any = None
-    # The parameters.
     parameters: Any = None
-    # The workflow provisioning state.
     provisioning_state: Any = None
-    # The sku type.
     sku: Any = None
-    # The workflow state.
     state: Any = None
-    # Gets the version.
     version: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkflowVersion_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkflowVersionConfig:
     name: Any = None
-    version_id: Any = None
     workflow_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkflowVersionAttrs:
     name: Any = None
-    # The workflow version properties.
-    properties: Any = None
-    version_id: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The WorkflowVersion items on this page
+    value: Any = None
     workflow_name: Any = None
 
 OpenapiWorkflowVersion = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_workflow_version",
     fields={
         "name": ubx.FieldSpec(wire_name="name"),
-        "version_id": ubx.FieldSpec(wire_name="version_id"),
         "workflow_name": ubx.FieldSpec(wire_name="workflow_name"),
     },
 )

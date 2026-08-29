@@ -3,133 +3,91 @@ package securityinsights
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiProductPackageModel_Properties_Author struct {
-	// Email of author contact
+type OpenapiProductPackageModel_Value_Properties_Author struct {
 	Email any
-	// Link for author/vendor page
 	Link any
-	// Name of the author. Company or person.
 	Name any
 }
 
-type OpenapiProductPackageModel_Properties_Categories struct {
-	// domain for the solution content item
+type OpenapiProductPackageModel_Value_Properties_Categories struct {
 	Domains any
-	// Industry verticals for the solution content item
 	Verticals any
 }
 
-type OpenapiProductPackageModel_Properties_Dependencies_Criteria struct {
+type OpenapiProductPackageModel_Value_Properties_Dependencies_Criteria struct {
 }
 
-type OpenapiProductPackageModel_Properties_Dependencies struct {
-	// Id of the content item we depend on
+type OpenapiProductPackageModel_Value_Properties_Dependencies struct {
 	ContentId any
-	// This is the list of dependencies we must fulfill, according to the AND/OR operator
 	Criteria any
-	// The kind of content the metadata is for.
 	Kind any
-	// Name of the content item
 	Name any
-	// Operator used for list of dependencies in criteria array.
 	Operator any
-	// Version of the the content item we depend on. Can be blank, * or missing to indicate any version fulfills the dependency. If version does not match our defined numeric format then an exact match is required.
 	Version any
 }
 
-type OpenapiProductPackageModel_Properties_Source struct {
-	// Source type of the content
+type OpenapiProductPackageModel_Value_Properties_Source struct {
 	Kind any
-	// Name of the content source. The repo name, solution name, LA workspace name etc.
 	Name any
-	// ID of the content source. The solution ID, workspace ID, etc
 	SourceId any
 }
 
-type OpenapiProductPackageModel_Properties_Support struct {
-	// Email of support contact
+type OpenapiProductPackageModel_Value_Properties_Support struct {
 	Email any
-	// Link for support help, like to support page to open a ticket etc.
 	Link any
-	// Name of the support contact. Company or person.
 	Name any
-	// Type of support for content item
 	Tier any
 }
 
-type OpenapiProductPackageModel_Properties struct {
-	// Publisher or creator of the content item.
+type OpenapiProductPackageModel_Value_Properties struct {
 	Author any
-	// ies for the solution content item
 	Categories any
-	// The content id of the package
 	ContentId any
-	// The package kind
 	ContentKind any
-	// Unique ID for the content. It should be generated based on the contentId, contentKind and the contentVersion of the package
 	ContentProductId any
-	// The version of the content schema.
 	ContentSchemaVersion any
-	// Dependencies for the content item, what other content items it requires to work. Can describe more complex dependencies using a recursive/nested structure. For a single dependency an id/kind/version can be supplied or operator/criteria for complex dependencies.
 	Dependencies any
-	// The description of the package
 	Description any
-	// The display name of the package
 	DisplayName any
-	// first publish date package item
 	FirstPublishDate any
-	// the icon identifier. this id can later be fetched from the content metadata
 	Icon any
-	// The version of the installed package, null or absent means not installed.
 	InstalledVersion any
-	// The boolean value the metadata is for.
 	IsDeprecated any
-	// The boolean value the metadata is for.
 	IsFeatured any
-	// The boolean value the metadata is for.
 	IsNew any
-	// The boolean value the metadata is for.
 	IsPreview any
-	// last publish date for the package item
 	LastPublishDate any
-	// The metadata resource id.
 	MetadataResourceId any
-	// The json of the ARM template to deploy. Expandable.
 	PackagedContent any
-	// Providers for the package item
 	Providers any
-	// The publisher display name of the package
 	PublisherDisplayName any
-	// The original source of the content item, where it comes from.
 	Source any
-	// Support information for the content item.
 	Support any
-	// the tactics the resource covers
 	ThreatAnalysisTactics any
-	// the techniques the resource covers, these have to be aligned with the tactics being used
 	ThreatAnalysisTechniques any
-	// the latest version number of the package
 	Version any
 }
 
+type OpenapiProductPackageModel_Value struct {
+	Etag any
+	Properties any
+}
+
 type OpenapiProductPackageModelConfig struct {
-	PackageId any
 	WorkspaceName any
 }
 
 type OpenapiProductPackageModelAttrs struct {
-	// Etag of the azure resource
-	Etag any
-	PackageId any
-	// Describes package properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The ProductPackageModel items on this page
+	Value any
 	WorkspaceName any
 }
 
 var OpenapiProductPackageModel = ubx.DataSourceBinding{
 	WireType: "azure_securityinsights_openapi_product_package_model",
 	Fields: ubx.FieldMap{
-		"PackageId": ubx.FieldSpec{WireName: "package_id"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

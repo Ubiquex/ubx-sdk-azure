@@ -7,37 +7,33 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDnsPrivateView_Properties:
-    # The display name of the view resource
+class OpenapiDnsPrivateView_Value_Properties:
     display_name: Any = None
-    # A Boolean flag indicating whether or not parts of the resource are unable to be explicitly managed.
     is_protected: Any = None
-    # DNS Private Views lifecycle state enum
     lifecycle_state: Any = None
-    # The [OCID](/Content/General/Concepts/identifiers.htm) of the resource.
     ocid: Any = None
-    # The provisioning state of a resource type.
     provisioning_state: Any = None
-    # The canonical absolute URL of the resource.
     self: Any = None
-    # views timeCreated
     time_created: Any = None
-    # views timeCreated
     time_updated: Any = None
 
 @dataclasses.dataclass
+class OpenapiDnsPrivateView_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiDnsPrivateViewConfig:
-    dnsprivateviewocid: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiDnsPrivateViewAttrs:
-    dnsprivateviewocid: Any = None
-    # Views resource model
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The DnsPrivateView items on this page
+    value: Any = None
 
 OpenapiDnsPrivateView = ubx.DataSourceBinding(
     wire_type="azure_oracle_openapi_dns_private_view",
     fields={
-        "dnsprivateviewocid": ubx.FieldSpec(wire_name="dnsprivateviewocid"),
     },
 )

@@ -7,71 +7,55 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiModule_Properties_ContentLink_ContentHash:
-    # Gets or sets the content hash algorithm used to hash the content.
+class OpenapiModule_Value_Properties_ContentLink_ContentHash:
     algorithm: Any = None
-    # Gets or sets expected hash value of the content.
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiModule_Properties_ContentLink:
-    # Definition of the runbook property type.
+class OpenapiModule_Value_Properties_ContentLink:
     content_hash: Any = None
-    # Gets or sets the uri of content.
     uri: Any = None
-    # Gets or sets the version of the content.
     version: Any = None
 
 @dataclasses.dataclass
-class OpenapiModule_Properties_Error:
-    # Gets or sets the error code.
+class OpenapiModule_Value_Properties_Error:
     code: Any = None
-    # Gets or sets the error message.
     message: Any = None
 
 @dataclasses.dataclass
-class OpenapiModule_Properties:
-    # Gets or sets the activity count of the module.
+class OpenapiModule_Value_Properties:
     activity_count: Any = None
-    # Definition of the content link.
     content_link: Any = None
-    # Gets or sets the creation time.
     creation_time: Any = None
-    # Gets or sets the description.
     description: Any = None
-    # Definition of the module error info type.
     error: Any = None
-    # Gets or sets type of module, if its composite or not.
     is_composite: Any = None
-    # Gets or sets the isGlobal flag of the module.
     is_global: Any = None
-    # Gets or sets the last modified time.
     last_modified_time: Any = None
-    # Gets or sets the provisioning state of the module.
     provisioning_state: Any = None
-    # Gets or sets the size in bytes of the module.
     size_in_bytes: Any = None
-    # Gets or sets the version of the module.
     version: Any = None
+
+@dataclasses.dataclass
+class OpenapiModule_Value:
+    etag: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiModuleConfig:
     automation_account_name: Any = None
-    package_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiModuleAttrs:
     automation_account_name: Any = None
-    # Gets or sets the etag of the resource.
-    etag: Any = None
-    package_name: Any = None
-    # Definition of the module property type.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Module items on this page
+    value: Any = None
 
 OpenapiModule = ubx.DataSourceBinding(
     wire_type="azure_automation_openapi_module",
     fields={
         "automation_account_name": ubx.FieldSpec(wire_name="automation_account_name"),
-        "package_name": ubx.FieldSpec(wire_name="package_name"),
     },
 )

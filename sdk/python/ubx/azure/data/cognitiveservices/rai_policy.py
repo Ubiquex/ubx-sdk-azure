@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class RaiPolicy_Properties_ContentFilters:
+class RaiPolicy_Value_Properties_ContentFilters:
     action: Any = None
     blocking: Any = None
     enabled: Any = None
@@ -16,44 +16,39 @@ class RaiPolicy_Properties_ContentFilters:
     source: Any = None
 
 @dataclasses.dataclass
-class RaiPolicy_Properties_CustomBlocklists:
+class RaiPolicy_Value_Properties_CustomBlocklists:
     source: Any = None
 
 @dataclasses.dataclass
-class RaiPolicy_Properties:
-    # Name of Rai policy.
+class RaiPolicy_Value_Properties:
     base_policy_name: Any = None
-    # The list of Content Filters.
     content_filters: Any = None
-    # The list of custom Blocklist.
     custom_blocklists: Any = None
-    # Rai policy mode. The enum value mapping is as below: Default = 0, Deferred=1, Blocking=2, Asynchronous_filter =3. Please use 'Asynchronous_filter' after 2025-06-01. It is the same as 'Deferred' in previous version.
     mode: Any = None
-    # The list of Safety Providers.
     safety_providers: Any = None
-    # Content Filters policy type.
     type: Any = None
+
+@dataclasses.dataclass
+class RaiPolicy_Value:
+    etag: Any = None
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class RaiPolicyConfig:
     account_name: Any = None
-    rai_policy_name: Any = None
 
 @dataclasses.dataclass
 class RaiPolicyAttrs:
     account_name: Any = None
-    # Resource Etag.
-    etag: Any = None
-    # Azure OpenAI Content Filters properties.
-    properties: Any = None
-    rai_policy_name: Any = None
-    # Resource tags.
-    tags: Any = None
+    # The link used to get the next page of RaiPolicy.
+    next_link: Any = None
+    # The list of RaiPolicy.
+    value: Any = None
 
 RaiPolicy = ubx.DataSourceBinding(
     wire_type="azure_cognitiveservices_rai_policy",
     fields={
         "account_name": ubx.FieldSpec(wire_name="account_name"),
-        "rai_policy_name": ubx.FieldSpec(wire_name="rai_policy_name"),
     },
 )

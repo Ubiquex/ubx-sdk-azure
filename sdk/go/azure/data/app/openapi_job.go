@@ -3,28 +3,24 @@ package app
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiJob_Identity_UserAssignedIdentities struct {
+type OpenapiJob_Value_Identity_UserAssignedIdentities struct {
 	ClientId any
 	PrincipalId any
 }
 
-type OpenapiJob_Identity struct {
-	// The service principal ID of the system assigned identity. This property will only be provided for a system assigned identity.
+type OpenapiJob_Value_Identity struct {
 	PrincipalId any
-	// The tenant ID of the system assigned identity. This property will only be provided for a system assigned identity.
 	TenantId any
-	// Type of managed service identity (where both SystemAssigned and UserAssigned types are allowed).
 	Type any
-	// The set of user assigned identities associated with the resource. The userAssignedIdentities dictionary keys will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}. The dictionary values can be empty objects ({}) in requests.
 	UserAssignedIdentities any
 }
 
-type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules_Auth struct {
+type OpenapiJob_Value_Properties_Configuration_EventTriggerConfig_Scale_Rules_Auth struct {
 	SecretRef any
 	TriggerParameter any
 }
 
-type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules struct {
+type OpenapiJob_Value_Properties_Configuration_EventTriggerConfig_Scale_Rules struct {
 	Auth any
 	Identity any
 	Metadata any
@@ -32,88 +28,67 @@ type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules struct {
 	Type any
 }
 
-type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale struct {
-	// Maximum number of job executions that are created for a trigger, default 100.
+type OpenapiJob_Value_Properties_Configuration_EventTriggerConfig_Scale struct {
 	MaxExecutions any
-	// Minimum number of job executions that are created for a trigger, default 0
 	MinExecutions any
-	// Interval to check each event source in seconds. Defaults to 30s
 	PollingInterval any
-	// Scaling rules.
 	Rules any
 }
 
-type OpenapiJob_Properties_Configuration_EventTriggerConfig struct {
-	// Number of parallel replicas of a job that can run at a given time.
+type OpenapiJob_Value_Properties_Configuration_EventTriggerConfig struct {
 	Parallelism any
-	// Minimum number of successful replica completions before overall job completion.
 	ReplicaCompletionCount any
-	// Scaling configurations for event driven jobs.
 	Scale any
 }
 
-type OpenapiJob_Properties_Configuration_IdentitySettings struct {
+type OpenapiJob_Value_Properties_Configuration_IdentitySettings struct {
 	Identity any
 	Lifecycle any
 }
 
-type OpenapiJob_Properties_Configuration_ManualTriggerConfig struct {
-	// Number of parallel replicas of a job that can run at a given time.
+type OpenapiJob_Value_Properties_Configuration_ManualTriggerConfig struct {
 	Parallelism any
-	// Minimum number of successful replica completions before overall job completion.
 	ReplicaCompletionCount any
 }
 
-type OpenapiJob_Properties_Configuration_Registries struct {
+type OpenapiJob_Value_Properties_Configuration_Registries struct {
 	Identity any
 	PasswordSecretRef any
 	Server any
 	Username any
 }
 
-type OpenapiJob_Properties_Configuration_ScheduleTriggerConfig struct {
-	// Cron formatted repeating schedule ("* * * * *") of a Cron Job.
+type OpenapiJob_Value_Properties_Configuration_ScheduleTriggerConfig struct {
 	CronExpression any
-	// Number of parallel replicas of a job that can run at a given time.
 	Parallelism any
-	// Minimum number of successful replica completions before overall job completion.
 	ReplicaCompletionCount any
 }
 
-type OpenapiJob_Properties_Configuration_Secrets struct {
+type OpenapiJob_Value_Properties_Configuration_Secrets struct {
 	Identity any
 	KeyVaultUrl any
 	Name any
 	Value any
 }
 
-type OpenapiJob_Properties_Configuration struct {
-	// Trigger configuration of an event driven job.
+type OpenapiJob_Value_Properties_Configuration struct {
 	EventTriggerConfig any
-	// Optional settings for Managed Identities that are assigned to the Container App Job. If a Managed Identity is not specified here, default settings will be used.
 	IdentitySettings any
-	// Manual trigger configuration for a single execution job. Properties replicaCompletionCount and parallelism would be set to 1 by default
 	ManualTriggerConfig any
-	// Collection of private container registry credentials used by a Container apps job
 	Registries any
-	// Maximum number of retries before failing the job.
 	ReplicaRetryLimit any
-	// Maximum number of seconds a replica is allowed to run.
 	ReplicaTimeout any
-	// Cron formatted repeating trigger schedule ("* * * * *") for cronjobs. Properties completions and parallelism would be set to 1 by default
 	ScheduleTriggerConfig any
-	// Collection of secrets used by a Container Apps Job
 	Secrets any
-	// Trigger type of the job
 	TriggerType any
 }
 
-type OpenapiJob_Properties_Template_Containers_Probes_HttpGet_HttpHeaders struct {
+type OpenapiJob_Value_Properties_Template_Containers_Probes_HttpGet_HttpHeaders struct {
 	Name any
 	Value any
 }
 
-type OpenapiJob_Properties_Template_Containers_Probes_HttpGet struct {
+type OpenapiJob_Value_Properties_Template_Containers_Probes_HttpGet struct {
 	Host any
 	HttpHeaders any
 	Path any
@@ -121,12 +96,12 @@ type OpenapiJob_Properties_Template_Containers_Probes_HttpGet struct {
 	Scheme any
 }
 
-type OpenapiJob_Properties_Template_Containers_Probes_TcpSocket struct {
+type OpenapiJob_Value_Properties_Template_Containers_Probes_TcpSocket struct {
 	Host any
 	Port any
 }
 
-type OpenapiJob_Properties_Template_Containers_Probes struct {
+type OpenapiJob_Value_Properties_Template_Containers_Probes struct {
 	FailureThreshold any
 	HttpGet any
 	InitialDelaySeconds any
@@ -138,29 +113,29 @@ type OpenapiJob_Properties_Template_Containers_Probes struct {
 	Type any
 }
 
-type OpenapiJob_Properties_Template_Containers struct {
+type OpenapiJob_Value_Properties_Template_Containers struct {
 	Probes any
 }
 
-type OpenapiJob_Properties_Template_InitContainers_Env struct {
+type OpenapiJob_Value_Properties_Template_InitContainers_Env struct {
 	Name any
 	SecretRef any
 	Value any
 }
 
-type OpenapiJob_Properties_Template_InitContainers_Resources struct {
+type OpenapiJob_Value_Properties_Template_InitContainers_Resources struct {
 	Cpu any
 	EphemeralStorage any
 	Memory any
 }
 
-type OpenapiJob_Properties_Template_InitContainers_VolumeMounts struct {
+type OpenapiJob_Value_Properties_Template_InitContainers_VolumeMounts struct {
 	MountPath any
 	SubPath any
 	VolumeName any
 }
 
-type OpenapiJob_Properties_Template_InitContainers struct {
+type OpenapiJob_Value_Properties_Template_InitContainers struct {
 	Args any
 	Command any
 	Env any
@@ -170,12 +145,12 @@ type OpenapiJob_Properties_Template_InitContainers struct {
 	VolumeMounts any
 }
 
-type OpenapiJob_Properties_Template_Volumes_Secrets struct {
+type OpenapiJob_Value_Properties_Template_Volumes_Secrets struct {
 	Path any
 	SecretRef any
 }
 
-type OpenapiJob_Properties_Template_Volumes struct {
+type OpenapiJob_Value_Properties_Template_Volumes struct {
 	MountOptions any
 	Name any
 	Secrets any
@@ -183,50 +158,39 @@ type OpenapiJob_Properties_Template_Volumes struct {
 	StorageType any
 }
 
-type OpenapiJob_Properties_Template struct {
-	// List of container definitions for the Container App.
+type OpenapiJob_Value_Properties_Template struct {
 	Containers any
-	// List of specialized containers that run before app containers.
 	InitContainers any
-	// List of volume definitions for the Container App.
 	Volumes any
 }
 
-type OpenapiJob_Properties struct {
-	// Non versioned Container Apps Job configuration properties
+type OpenapiJob_Value_Properties struct {
 	Configuration any
-	// Resource ID of environment.
 	EnvironmentId any
-	// The endpoint of the eventstream of the container apps job.
 	EventStreamEndpoint any
-	// Outbound IP Addresses of a container apps job.
 	OutboundIpAddresses any
-	// Provisioning state of the Container Apps Job.
 	ProvisioningState any
-	// Container Apps Job versioned application definition. Defines the desired state of an immutable revision. Any changes to this section Will result in a new revision being created
 	Template any
-	// Workload profile name to pin for container apps job execution.
 	WorkloadProfileName any
 }
 
+type OpenapiJob_Value struct {
+	Identity any
+	Properties any
+}
+
 type OpenapiJobConfig struct {
-	ApiName any
-	JobName any
 }
 
 type OpenapiJobAttrs struct {
-	ApiName any
-	// Managed service identity (system assigned and/or user assigned identities)
-	Identity any
-	JobName any
-	// Container Apps Job resource specific properties.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The Job items on this page
+	Value any
 }
 
 var OpenapiJob = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_job",
 	Fields: ubx.FieldMap{
-		"ApiName": ubx.FieldSpec{WireName: "api_name"},
-		"JobName": ubx.FieldSpec{WireName: "job_name"},
 	},
 }

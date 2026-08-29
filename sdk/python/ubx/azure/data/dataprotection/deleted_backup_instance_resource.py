@@ -7,37 +7,33 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class DeletedBackupInstanceResource_Properties_DeletionInfo:
-    # Specifies billing end date
+class DeletedBackupInstanceResource_Value_Properties_DeletionInfo:
     billing_end_date: Any = None
-    # Delete activity ID for troubleshooting purpose
     delete_activity_id: Any = None
-    # Specifies time of deletion
     deletion_time: Any = None
-    # Specifies purge time
     scheduled_purge_time: Any = None
 
 @dataclasses.dataclass
-class DeletedBackupInstanceResource_Properties:
-    # Deletion Info
+class DeletedBackupInstanceResource_Value_Properties:
     deletion_info: Any = None
 
 @dataclasses.dataclass
+class DeletedBackupInstanceResource_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class DeletedBackupInstanceResourceConfig:
-    backup_instance_name: Any = None
     vault_name: Any = None
 
 @dataclasses.dataclass
 class DeletedBackupInstanceResourceAttrs:
-    backup_instance_name: Any = None
-    # Deleted Backup Instance
-    properties: Any = None
+    # List of resources.
+    value: Any = None
     vault_name: Any = None
 
 DeletedBackupInstanceResource = ubx.DataSourceBinding(
     wire_type="azure_dataprotection_deleted_backup_instance_resource",
     fields={
-        "backup_instance_name": ubx.FieldSpec(wire_name="backup_instance_name"),
         "vault_name": ubx.FieldSpec(wire_name="vault_name"),
     },
 )

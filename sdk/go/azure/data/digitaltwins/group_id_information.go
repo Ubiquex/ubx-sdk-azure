@@ -3,37 +3,33 @@ package digitaltwins
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type GroupIdInformation_Properties struct {
-	// The group id.
+type GroupIdInformation_Value_Properties struct {
 	GroupId any
-	// The required members for a specific group id.
 	RequiredMembers any
-	// The required DNS zones for a specific group id.
 	RequiredZoneNames any
+}
+
+type GroupIdInformation_Value struct {
+	Id any
+	Name any
+	Properties any
+	Type any
 }
 
 type GroupIdInformationConfig struct {
 	ApiVersion any
 	ResourceGroupName any
-	ResourceId any
 	ResourceName any
 	SubscriptionId any
 }
 
 type GroupIdInformationAttrs struct {
 	ApiVersion any
-	// The resource identifier.
-	Id any
-	// The resource name.
-	Name any
-	// The properties for a group information object.
-	Properties any
 	ResourceGroupName any
-	ResourceId any
 	ResourceName any
 	SubscriptionId any
-	// The resource type.
-	Type any
+	// The list of available private link resources for a Digital Twin.
+	Value any
 }
 
 var GroupIdInformation = ubx.DataSourceBinding{
@@ -41,7 +37,6 @@ var GroupIdInformation = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},

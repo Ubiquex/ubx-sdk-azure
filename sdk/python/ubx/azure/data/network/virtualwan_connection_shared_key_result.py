@@ -7,13 +7,14 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VirtualwanConnectionSharedKeyResult_Properties:
-    # Provisioning states of a resource.
+class VirtualwanConnectionSharedKeyResult_Value_Properties:
     provisioning_state: Any = None
-    # The value of the shared key for the vpn link connection.
     shared_key: Any = None
-    # The length of the shared key for the vpn link connection.
     shared_key_length: Any = None
+
+@dataclasses.dataclass
+class VirtualwanConnectionSharedKeyResult_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class VirtualwanConnectionSharedKeyResultConfig:
@@ -26,8 +27,10 @@ class VirtualwanConnectionSharedKeyResultAttrs:
     connection_name: Any = None
     gateway_name: Any = None
     link_connection_name: Any = None
-    # Parameters for SharedKey.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The ConnectionSharedKeyResult items on this page
+    value: Any = None
 
 VirtualwanConnectionSharedKeyResult = ubx.DataSourceBinding(
     wire_type="azure_network_virtualwan_connection_shared_key_result",

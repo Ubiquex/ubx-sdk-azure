@@ -7,11 +7,11 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiCsmDeploymentStatus_Properties_Errors_Details:
+class OpenapiCsmDeploymentStatus_Value_Properties_Errors_Details:
     pass
 
 @dataclasses.dataclass
-class OpenapiCsmDeploymentStatus_Properties_Errors:
+class OpenapiCsmDeploymentStatus_Value_Properties_Errors:
     code: Any = None
     details: Any = None
     extended_code: Any = None
@@ -22,40 +22,35 @@ class OpenapiCsmDeploymentStatus_Properties_Errors:
     target: Any = None
 
 @dataclasses.dataclass
-class OpenapiCsmDeploymentStatus_Properties:
-    # Deployment operation id.
+class OpenapiCsmDeploymentStatus_Value_Properties:
     deployment_id: Any = None
-    # List of errors.
     errors: Any = None
-    # List of URLs pointing to logs for instances which failed to provision.
     failed_instances_logs: Any = None
-    # Number of site instances failed to provision.
     number_of_instances_failed: Any = None
-    # Number of site instances currently being provisioned.
     number_of_instances_in_progress: Any = None
-    # Number of site instances provisioned successfully.
     number_of_instances_successful: Any = None
-    # Deployment build status.
     status: Any = None
 
 @dataclasses.dataclass
+class OpenapiCsmDeploymentStatus_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiCsmDeploymentStatusConfig:
-    deployment_status_id: Any = None
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiCsmDeploymentStatusAttrs:
-    deployment_status_id: Any = None
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
-    # CsmDeploymentStatus resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The CsmDeploymentStatus items on this page
+    value: Any = None
 
 OpenapiCsmDeploymentStatus = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_csm_deployment_status",
     fields={
-        "deployment_status_id": ubx.FieldSpec(wire_name="deployment_status_id"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

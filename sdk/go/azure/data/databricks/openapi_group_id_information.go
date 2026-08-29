@@ -3,31 +3,31 @@ package databricks
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiGroupIdInformation_Properties struct {
-	// The group id
+type OpenapiGroupIdInformation_Value_Properties struct {
 	GroupId any
-	// The required members for a specific group id
 	RequiredMembers any
-	// The required DNS zones for a specific group id
 	RequiredZoneNames any
 }
 
+type OpenapiGroupIdInformation_Value struct {
+	Properties any
+}
+
 type OpenapiGroupIdInformationConfig struct {
-	GroupId any
 	WorkspaceName any
 }
 
 type OpenapiGroupIdInformationAttrs struct {
-	GroupId any
-	// The properties for a group information object
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The GroupIdInformation items on this page
+	Value any
 	WorkspaceName any
 }
 
 var OpenapiGroupIdInformation = ubx.DataSourceBinding{
 	WireType: "azure_databricks_openapi_group_id_information",
 	Fields: ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

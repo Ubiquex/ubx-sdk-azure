@@ -7,39 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter:
-    # Azure resource Id
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter:
     id: Any = None
-    # Regional location of the perimeter
     location: Any = None
-    # Guid of the Network Security Perimeter
     perimeter_guid: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties:
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties:
     address_prefixes: Any = None
     direction: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules:
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules:
     name: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile:
-    # Collection of access rules for the profile
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile:
     access_rules: Any = None
-    # Access rules version number
     access_rules_version: Any = None
-    # Diagnostic settings version number
     diagnostic_settings_version: Any = None
-    # Collection of enabled log categories for the profile
     enabled_log_categories: Any = None
-    # Name of the resource
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties:
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties:
     description: Any = None
     issue_type: Any = None
     severity: Any = None
@@ -47,46 +39,42 @@ class OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues
     suggested_resource_ids: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues:
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues:
     name: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation:
-    # Property that impacts a resource's logging behavior and its connectivity with other resources and public networks.
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation:
     access_mode: Any = None
-    # Name of the Resource Association
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties:
-    # Properties that define a Network Security Perimeter resource.
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties:
     network_security_perimeter: Any = None
-    # Network Security Perimeter profile
     profile: Any = None
-    # Provisioning issues.
     provisioning_issues: Any = None
-    # Current state of this NetworkSecurityPerimeter: whether or not is has been provisioned within the resource group it is defined. Users cannot change this value but are able to read from it. Values will include Provisioning ,Succeeded, Canceled and Failed.
     provisioning_state: Any = None
-    # Properties that define a Resource Association.
     resource_association: Any = None
 
 @dataclasses.dataclass
+class OpenapiNetworkSecurityPerimeterConfiguration_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiNetworkSecurityPerimeterConfigurationConfig:
-    perimeter_name: Any = None
     scope_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiNetworkSecurityPerimeterConfigurationAttrs:
-    perimeter_name: Any = None
-    # Properties that define a Network Security Perimeter resource.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     scope_name: Any = None
+    # The NetworkSecurityPerimeterConfiguration items on this page
+    value: Any = None
 
 OpenapiNetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding(
     wire_type="azure_hybridcompute_openapi_network_security_perimeter_configuration",
     fields={
-        "perimeter_name": ubx.FieldSpec(wire_name="perimeter_name"),
         "scope_name": ubx.FieldSpec(wire_name="scope_name"),
     },
 )

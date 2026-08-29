@@ -7,28 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiAdvancedThreatProtectionSettingsModel_Properties:
-    # Specifies the creation time (UTC) of the policy.
+class OpenapiAdvancedThreatProtectionSettingsModel_Value_Properties:
     creation_time: Any = None
-    # Specifies the state of the advanced threat protection, whether it is enabled, disabled, or a state has not been applied yet on the server.
     state: Any = None
+
+@dataclasses.dataclass
+class OpenapiAdvancedThreatProtectionSettingsModel_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiAdvancedThreatProtectionSettingsModelConfig:
     server_name: Any = None
-    threat_protection_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiAdvancedThreatProtectionSettingsModelAttrs:
-    # Properties of advanced threat protection state for a server.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
-    threat_protection_name: Any = None
+    # The AdvancedThreatProtectionSettingsModel items on this page
+    value: Any = None
 
 OpenapiAdvancedThreatProtectionSettingsModel = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_advanced_threat_protection_settings_model",
     fields={
         "server_name": ubx.FieldSpec(wire_name="server_name"),
-        "threat_protection_name": ubx.FieldSpec(wire_name="threat_protection_name"),
     },
 )

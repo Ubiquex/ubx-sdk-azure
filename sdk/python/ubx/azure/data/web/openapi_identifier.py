@@ -7,31 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiIdentifier_Properties:
-    # String representation of the identity.
+class OpenapiIdentifier_Value_Properties:
     id: Any = None
 
 @dataclasses.dataclass
+class OpenapiIdentifier_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiIdentifierConfig:
-    domain_ownership_identifier_name: Any = None
     name: Any = None
-    slot: Any = None
 
 @dataclasses.dataclass
 class OpenapiIdentifierAttrs:
-    domain_ownership_identifier_name: Any = None
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
-    # Identifier resource specific properties
-    properties: Any = None
-    slot: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Identifier items on this page
+    value: Any = None
 
 OpenapiIdentifier = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_identifier",
     fields={
-        "domain_ownership_identifier_name": ubx.FieldSpec(wire_name="domain_ownership_identifier_name"),
         "name": ubx.FieldSpec(wire_name="name"),
-        "slot": ubx.FieldSpec(wire_name="slot"),
     },
 )

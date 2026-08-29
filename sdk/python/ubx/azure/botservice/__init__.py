@@ -7,4 +7,4 @@ SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 from .bot import Bot, BotConfig
 from .bot_channel import BotChannel, BotChannelConfig
 from .connection_setting import ConnectionSetting, ConnectionSettingConfig
-from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .private_endpoint_connection_2 import PrivateEndpointConnection2, PrivateEndpointConnection2Config

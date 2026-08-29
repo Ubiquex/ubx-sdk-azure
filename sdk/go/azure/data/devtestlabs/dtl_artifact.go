@@ -3,41 +3,35 @@ package devtestlabs
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DtlArtifact_Properties struct {
-	// The artifact's creation date.
+type DtlArtifact_Value_Properties struct {
 	CreatedDate any
-	// The artifact's description.
 	Description any
-	// The file path to the artifact.
 	FilePath any
-	// The URI to the artifact icon.
 	Icon any
-	// The artifact's parameters.
 	Parameters any
-	// The artifact's publisher.
 	Publisher any
-	// The artifact's target OS.
 	TargetOsType any
-	// The artifact's title.
 	Title any
+}
+
+type DtlArtifact_Value struct {
+	Location any
+	Properties any
+	Tags any
 }
 
 type DtlArtifactConfig struct {
 	ArtifactSourceName any
 	LabName any
-	Name any
 }
 
 type DtlArtifactAttrs struct {
 	ArtifactSourceName any
 	LabName any
-	// The geo-location where the resource lives
-	Location any
-	Name any
-	// Properties of an artifact.
-	Properties any
-	// Resource tags.
-	Tags any
+	// The link to the next page of items
+	NextLink any
+	// The Artifact items on this page
+	Value any
 }
 
 var DtlArtifact = ubx.DataSourceBinding{
@@ -45,6 +39,5 @@ var DtlArtifact = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"ArtifactSourceName": ubx.FieldSpec{WireName: "artifact_source_name"},
 		"LabName": ubx.FieldSpec{WireName: "lab_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

@@ -3,30 +3,29 @@ package appplatform
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type PredefinedAcceleratorResource_Properties struct {
+type PredefinedAcceleratorResource_Value_Properties struct {
 	AcceleratorTags any
 	Description any
 	DisplayName any
 	IconUrl any
-	// Provisioning state of the predefined accelerator.
 	ProvisioningState any
-	// State of the predefined accelerator.
 	State any
 }
 
-type PredefinedAcceleratorResource_Sku struct {
-	// Current capacity of the target resource
+type PredefinedAcceleratorResource_Value_Sku struct {
 	Capacity any
-	// Name of the Sku
 	Name any
-	// Tier of the Sku
 	Tier any
+}
+
+type PredefinedAcceleratorResource_Value struct {
+	Properties any
+	Sku any
 }
 
 type PredefinedAcceleratorResourceConfig struct {
 	ApiVersion any
 	ApplicationAcceleratorName any
-	PredefinedAcceleratorName any
 	ResourceGroupName any
 	ServiceName any
 	SubscriptionId any
@@ -35,14 +34,11 @@ type PredefinedAcceleratorResourceConfig struct {
 type PredefinedAcceleratorResourceAttrs struct {
 	ApiVersion any
 	ApplicationAcceleratorName any
-	PredefinedAcceleratorName any
-	// Predefined accelerator properties payload
-	Properties any
+	NextLink any
 	ResourceGroupName any
 	ServiceName any
-	// Sku of Azure Spring Apps
-	Sku any
 	SubscriptionId any
+	Value any
 }
 
 var PredefinedAcceleratorResource = ubx.DataSourceBinding{
@@ -50,7 +46,6 @@ var PredefinedAcceleratorResource = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
 		"ApplicationAcceleratorName": ubx.FieldSpec{WireName: "application_accelerator_name"},
-		"PredefinedAcceleratorName": ubx.FieldSpec{WireName: "predefined_accelerator_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},

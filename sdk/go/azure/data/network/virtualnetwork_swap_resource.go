@@ -3,23 +3,23 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type VirtualnetworkSwapResource_Properties struct {
-	// Specifies slot info on a cloud service
+type VirtualnetworkSwapResource_Value_Properties struct {
 	SlotType any
+}
+
+type VirtualnetworkSwapResource_Value struct {
+	Properties any
 }
 
 type VirtualnetworkSwapResourceConfig struct {
 	GroupName any
 	ResourceName any
-	SingletonResource any
 }
 
 type VirtualnetworkSwapResourceAttrs struct {
 	GroupName any
-	// Swap resource properties
-	Properties any
 	ResourceName any
-	SingletonResource any
+	Value any
 }
 
 var VirtualnetworkSwapResource = ubx.DataSourceBinding{
@@ -27,6 +27,5 @@ var VirtualnetworkSwapResource = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"GroupName": ubx.FieldSpec{WireName: "group_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SingletonResource": ubx.FieldSpec{WireName: "singleton_resource"},
 	},
 }

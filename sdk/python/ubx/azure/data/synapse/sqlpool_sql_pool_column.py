@@ -7,32 +7,33 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class SqlpoolSqlPoolColumn_Properties:
-    # The column data type.
+class SqlpoolSqlPoolColumn_Value_Properties:
     column_type: Any = None
-    # Indicates whether column value is computed or not
     is_computed: Any = None
 
 @dataclasses.dataclass
+class SqlpoolSqlPoolColumn_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class SqlpoolSqlPoolColumnConfig:
-    column_name: Any = None
     schema_name: Any = None
     sql_pool_name: Any = None
     table_name: Any = None
 
 @dataclasses.dataclass
 class SqlpoolSqlPoolColumnAttrs:
-    column_name: Any = None
-    # Sql pool column properties.
-    properties: Any = None
+    # Link to retrieve next page of results.
+    next_link: Any = None
     schema_name: Any = None
     sql_pool_name: Any = None
     table_name: Any = None
+    # Array of results.
+    value: Any = None
 
 SqlpoolSqlPoolColumn = ubx.DataSourceBinding(
     wire_type="azure_synapse_sqlpool_sql_pool_column",
     fields={
-        "column_name": ubx.FieldSpec(wire_name="column_name"),
         "schema_name": ubx.FieldSpec(wire_name="schema_name"),
         "sql_pool_name": ubx.FieldSpec(wire_name="sql_pool_name"),
         "table_name": ubx.FieldSpec(wire_name="table_name"),

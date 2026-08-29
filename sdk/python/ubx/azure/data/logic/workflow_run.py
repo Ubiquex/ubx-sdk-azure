@@ -7,115 +7,86 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class WorkflowRun_Properties_Correlation:
-    # The client tracking id.
+class WorkflowRun_Value_Properties_Correlation:
     client_tracking_id: Any = None
 
 @dataclasses.dataclass
-class WorkflowRun_Properties_Outputs:
+class WorkflowRun_Value_Properties_Outputs:
     error: Any = None
 
 @dataclasses.dataclass
-class WorkflowRun_Properties_Response_InputsLink_ContentHash:
-    # The algorithm of the content hash.
+class WorkflowRun_Value_Properties_Response_InputsLink_ContentHash:
     algorithm: Any = None
-    # The value of the content hash.
     value: Any = None
 
 @dataclasses.dataclass
-class WorkflowRun_Properties_Response_InputsLink:
-    # The content hash.
+class WorkflowRun_Value_Properties_Response_InputsLink:
     content_hash: Any = None
-    # The content size.
     content_size: Any = None
-    # The content version.
     content_version: Any = None
     metadata: Any = None
-    # The content link URI.
     uri: Any = None
 
 @dataclasses.dataclass
-class WorkflowRun_Properties_Response:
-    # Gets the code.
+class WorkflowRun_Value_Properties_Response:
     code: Any = None
-    # The correlation property.
     correlation: Any = None
-    # Gets the end time.
     end_time: Any = None
     error: Any = None
     inputs: Any = None
-    # The content link.
     inputs_link: Any = None
-    # Gets the name.
     name: Any = None
     outputs: Any = None
-    # The content link.
     outputs_link: Any = None
-    # Gets the scheduled time.
     scheduled_time: Any = None
-    # Gets the start time.
     start_time: Any = None
-    # The workflow status.
     status: Any = None
     tracked_properties: Any = None
-    # Gets the tracking id.
     tracking_id: Any = None
 
 @dataclasses.dataclass
-class WorkflowRun_Properties_Workflow:
-    # The resource id.
+class WorkflowRun_Value_Properties_Workflow:
     id: Any = None
-    # Gets the resource name.
     name: Any = None
-    # Gets the resource type.
     type: Any = None
 
 @dataclasses.dataclass
-class WorkflowRun_Properties:
-    # Gets the code.
+class WorkflowRun_Value_Properties:
     code: Any = None
-    # The correlation property.
     correlation: Any = None
-    # Gets the correlation id.
     correlation_id: Any = None
-    # Gets the end time.
     end_time: Any = None
     error: Any = None
-    # Gets the outputs.
     outputs: Any = None
-    # The workflow run trigger.
     response: Any = None
-    # Gets the start time.
     start_time: Any = None
-    # The workflow status.
     status: Any = None
-    # The workflow run trigger.
     trigger: Any = None
-    # Gets the wait end time.
     wait_end_time: Any = None
-    # The resource reference.
     workflow: Any = None
+
+@dataclasses.dataclass
+class WorkflowRun_Value:
+    name: Any = None
+    properties: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
 class WorkflowRunConfig:
     api_version: Any = None
     resource_group_name: Any = None
-    run_name: Any = None
     subscription_id: Any = None
     workflow_name: Any = None
 
 @dataclasses.dataclass
 class WorkflowRunAttrs:
     api_version: Any = None
-    # Gets the workflow run name.
-    name: Any = None
-    # The workflow run properties.
-    properties: Any = None
+    # The URL to get the next set of results.
+    next_link: Any = None
     resource_group_name: Any = None
-    run_name: Any = None
     subscription_id: Any = None
-    # Gets the workflow run type.
-    type: Any = None
+    # A list of workflow runs.
+    value: Any = None
     workflow_name: Any = None
 
 WorkflowRun = ubx.DataSourceBinding(
@@ -123,7 +94,6 @@ WorkflowRun = ubx.DataSourceBinding(
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
-        "run_name": ubx.FieldSpec(wire_name="run_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
         "workflow_name": ubx.FieldSpec(wire_name="workflow_name"),
     },

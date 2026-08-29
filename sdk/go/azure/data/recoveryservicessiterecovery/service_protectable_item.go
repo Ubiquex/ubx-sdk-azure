@@ -3,51 +3,45 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServiceProtectableItem_Properties_CustomDetails struct {
-	// Gets the class type. Overridden in derived classes.
+type ServiceProtectableItem_Value_Properties_CustomDetails struct {
 	InstanceType any
 }
 
-type ServiceProtectableItem_Properties struct {
-	// Replication provider specific settings.
+type ServiceProtectableItem_Value_Properties struct {
 	CustomDetails any
-	// The name.
 	FriendlyName any
-	// The Current protection readiness errors.
 	ProtectionReadinessErrors any
-	// The protection status.
 	ProtectionStatus any
-	// The recovery provider ARM Id.
 	RecoveryServicesProviderId any
-	// The ARM resource of protected items.
 	ReplicationProtectedItemId any
-	// The list of replication providers supported for the protectable item.
 	SupportedReplicationProviders any
+}
+
+type ServiceProtectableItem_Value struct {
+	Location any
+	Properties any
 }
 
 type ServiceProtectableItemConfig struct {
 	FabricName any
-	ProtectableItemName any
 	ProtectionContainerName any
 	ResourceName any
 }
 
 type ServiceProtectableItemAttrs struct {
 	FabricName any
-	// Resource Location
-	Location any
-	// Replication protected item custom data details.
-	Properties any
-	ProtectableItemName any
+	// The link to the next page of items
+	NextLink any
 	ProtectionContainerName any
 	ResourceName any
+	// The ProtectableItem items on this page
+	Value any
 }
 
 var ServiceProtectableItem = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_protectable_item",
 	Fields: ubx.FieldMap{
 		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"ProtectableItemName": ubx.FieldSpec{WireName: "protectable_item_name"},
 		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},

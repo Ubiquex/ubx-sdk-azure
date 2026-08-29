@@ -7,31 +7,32 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ServiceStorageClassification_Properties:
-    # Friendly name of the Storage classification.
+class ServiceStorageClassification_Value_Properties:
     friendly_name: Any = None
+
+@dataclasses.dataclass
+class ServiceStorageClassification_Value:
+    location: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class ServiceStorageClassificationConfig:
     fabric_name: Any = None
     resource_name: Any = None
-    storage_classification_name: Any = None
 
 @dataclasses.dataclass
 class ServiceStorageClassificationAttrs:
     fabric_name: Any = None
-    # Resource Location
-    location: Any = None
-    # Storage object properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     resource_name: Any = None
-    storage_classification_name: Any = None
+    # The StorageClassification items on this page
+    value: Any = None
 
 ServiceStorageClassification = ubx.DataSourceBinding(
     wire_type="azure_recoveryservicessiterecovery_service_storage_classification",
     fields={
         "fabric_name": ubx.FieldSpec(wire_name="fabric_name"),
         "resource_name": ubx.FieldSpec(wire_name="resource_name"),
-        "storage_classification_name": ubx.FieldSpec(wire_name="storage_classification_name"),
     },
 )

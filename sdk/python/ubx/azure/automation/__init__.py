@@ -23,6 +23,7 @@ from .openapi_runtime_environment import OpenapiRuntimeEnvironment, OpenapiRunti
 from .openapi_schedule import OpenapiSchedule, OpenapiScheduleConfig
 from .openapi_software_update_configuration import OpenapiSoftwareUpdateConfiguration, OpenapiSoftwareUpdateConfigurationConfig
 from .openapi_source_control import OpenapiSourceControl, OpenapiSourceControlConfig
+from .openapi_source_control_sync_job_by_id import OpenapiSourceControlSyncJobById, OpenapiSourceControlSyncJobByIdConfig
 from .openapi_variable import OpenapiVariable, OpenapiVariableConfig
 from .openapi_watcher import OpenapiWatcher, OpenapiWatcherConfig
 from .openapi_webhook import OpenapiWebhook, OpenapiWebhookConfig

@@ -7,43 +7,41 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ServiceNetwork_Properties_Subnets:
+class ServiceNetwork_Value_Properties_Subnets:
     address_list: Any = None
     friendly_name: Any = None
     name: Any = None
 
 @dataclasses.dataclass
-class ServiceNetwork_Properties:
-    # The Fabric Type.
+class ServiceNetwork_Value_Properties:
     fabric_type: Any = None
-    # The Friendly Name.
     friendly_name: Any = None
-    # The Network Type.
     network_type: Any = None
-    # The List of subnets.
     subnets: Any = None
+
+@dataclasses.dataclass
+class ServiceNetwork_Value:
+    location: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class ServiceNetworkConfig:
     fabric_name: Any = None
-    network_name: Any = None
     resource_name: Any = None
 
 @dataclasses.dataclass
 class ServiceNetworkAttrs:
     fabric_name: Any = None
-    # Resource Location
-    location: Any = None
-    network_name: Any = None
-    # Network Properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     resource_name: Any = None
+    # The Network items on this page
+    value: Any = None
 
 ServiceNetwork = ubx.DataSourceBinding(
     wire_type="azure_recoveryservicessiterecovery_service_network",
     fields={
         "fabric_name": ubx.FieldSpec(wire_name="fabric_name"),
-        "network_name": ubx.FieldSpec(wire_name="network_name"),
         "resource_name": ubx.FieldSpec(wire_name="resource_name"),
     },
 )

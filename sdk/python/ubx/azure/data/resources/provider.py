@@ -7,25 +7,25 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class Provider_ResourceTypes_Aliases_DefaultMetadata:
+class Provider_Value_ResourceTypes_Aliases_DefaultMetadata:
     attributes: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class Provider_ResourceTypes_Aliases_DefaultPattern:
+class Provider_Value_ResourceTypes_Aliases_DefaultPattern:
     phrase: Any = None
     type: Any = None
     variable: Any = None
 
 @dataclasses.dataclass
-class Provider_ResourceTypes_Aliases_Paths:
+class Provider_Value_ResourceTypes_Aliases_Paths:
     api_versions: Any = None
     metadata: Any = None
     path: Any = None
     pattern: Any = None
 
 @dataclasses.dataclass
-class Provider_ResourceTypes_Aliases:
+class Provider_Value_ResourceTypes_Aliases:
     default_metadata: Any = None
     default_path: Any = None
     default_pattern: Any = None
@@ -34,23 +34,23 @@ class Provider_ResourceTypes_Aliases:
     type: Any = None
 
 @dataclasses.dataclass
-class Provider_ResourceTypes_ApiProfiles:
+class Provider_Value_ResourceTypes_ApiProfiles:
     api_version: Any = None
     profile_version: Any = None
 
 @dataclasses.dataclass
-class Provider_ResourceTypes_LocationMappings:
+class Provider_Value_ResourceTypes_LocationMappings:
     extended_locations: Any = None
     location: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class Provider_ResourceTypes_ZoneMappings:
+class Provider_Value_ResourceTypes_ZoneMappings:
     location: Any = None
     zones: Any = None
 
 @dataclasses.dataclass
-class Provider_ResourceTypes:
+class Provider_Value_ResourceTypes:
     aliases: Any = None
     api_profiles: Any = None
     api_versions: Any = None
@@ -63,28 +63,27 @@ class Provider_ResourceTypes:
     zone_mappings: Any = None
 
 @dataclasses.dataclass
+class Provider_Value:
+    id: Any = None
+    namespace: Any = None
+    provider_authorization_consent_state: Any = None
+    registration_policy: Any = None
+    registration_state: Any = None
+    resource_types: Any = None
+
+@dataclasses.dataclass
 class ProviderConfig:
-    resource_provider_namespace: Any = None
+    pass
 
 @dataclasses.dataclass
 class ProviderAttrs:
-    # The provider ID.
-    id: Any = None
-    # The namespace of the resource provider.
-    namespace: Any = None
-    # The provider authorization consent state.
-    provider_authorization_consent_state: Any = None
-    # The registration policy of the resource provider.
-    registration_policy: Any = None
-    # The registration state of the resource provider.
-    registration_state: Any = None
-    resource_provider_namespace: Any = None
-    # The collection of provider resource types.
-    resource_types: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Provider items on this page
+    value: Any = None
 
 Provider = ubx.DataSourceBinding(
     wire_type="azure_resources_provider",
     fields={
-        "resource_provider_namespace": ubx.FieldSpec(wire_name="resource_provider_namespace"),
     },
 )

@@ -4,7 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
+from .appliances_appliance import AppliancesAppliance, AppliancesApplianceConfig
 from .appliances_appliance_get_telemetry_config_result import AppliancesApplianceGetTelemetryConfigResult, AppliancesApplianceGetTelemetryConfigResultConfig
-from .appliances_appliance_list_result import AppliancesApplianceListResult, AppliancesApplianceListResultConfig
-from .appliances_appliance_operations_list import AppliancesApplianceOperationsList, AppliancesApplianceOperationsListConfig
 from .appliances_upgrade_graph import AppliancesUpgradeGraph, AppliancesUpgradeGraphConfig

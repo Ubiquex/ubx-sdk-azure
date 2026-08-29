@@ -3,37 +3,33 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiWebJob_Properties struct {
-	// Error information.
+type OpenapiWebJob_Value_Properties struct {
 	Error any
-	// Extra Info URL.
 	ExtraInfoUrl any
-	// Run command.
 	RunCommand any
-	// Job settings.
 	Settings any
-	// Job URL.
 	Url any
-	// Using SDK?
 	UsingSdk any
-	// Job type.
 	WebJobType any
+}
+
+type OpenapiWebJob_Value struct {
+	Kind any
+	Properties any
 }
 
 type OpenapiWebJobConfig struct {
 	Name any
 	Slot any
-	WebJobName any
 }
 
 type OpenapiWebJobAttrs struct {
-	// Kind of resource.
-	Kind any
 	Name any
-	// WebJob resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	Slot any
-	WebJobName any
+	// The WebJob items on this page
+	Value any
 }
 
 var OpenapiWebJob = ubx.DataSourceBinding{
@@ -41,6 +37,5 @@ var OpenapiWebJob = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Slot": ubx.FieldSpec{WireName: "slot"},
-		"WebJobName": ubx.FieldSpec{WireName: "web_job_name"},
 	},
 }

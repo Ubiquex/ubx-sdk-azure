@@ -3,31 +3,31 @@ package hybridcompute
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiPrivateLinkResource_Properties struct {
-	// The private link resource group id.
+type OpenapiPrivateLinkResource_Value_Properties struct {
 	GroupId any
-	// The private link resource required member names.
 	RequiredMembers any
-	// Required DNS zone names of the the private link resource.
 	RequiredZoneNames any
 }
 
+type OpenapiPrivateLinkResource_Value struct {
+	Properties any
+}
+
 type OpenapiPrivateLinkResourceConfig struct {
-	GroupName any
 	ScopeName any
 }
 
 type OpenapiPrivateLinkResourceAttrs struct {
-	GroupName any
-	// Properties of a private link resource.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ScopeName any
+	// The PrivateLinkResource items on this page
+	Value any
 }
 
 var OpenapiPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_hybridcompute_openapi_private_link_resource",
 	Fields: ubx.FieldMap{
-		"GroupName": ubx.FieldSpec{WireName: "group_name"},
 		"ScopeName": ubx.FieldSpec{WireName: "scope_name"},
 	},
 }

@@ -3,102 +3,88 @@ package app
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDiagnostics_Properties_DataProviderMetadata_PropertyBag struct {
+type OpenapiDiagnostics_Value_Properties_DataProviderMetadata_PropertyBag struct {
 	Name any
 	Value any
 }
 
-type OpenapiDiagnostics_Properties_DataProviderMetadata struct {
-	// Collection of properties
+type OpenapiDiagnostics_Value_Properties_DataProviderMetadata struct {
 	PropertyBag any
-	// Name of data provider
 	ProviderName any
 }
 
-type OpenapiDiagnostics_Properties_Dataset_RenderingProperties struct {
+type OpenapiDiagnostics_Value_Properties_Dataset_RenderingProperties struct {
 	Description any
 	IsVisible any
 	Title any
 	Type any
 }
 
-type OpenapiDiagnostics_Properties_Dataset_Table_Columns struct {
+type OpenapiDiagnostics_Value_Properties_Dataset_Table_Columns struct {
 	ColumnName any
 	ColumnType any
 	DataType any
 }
 
-type OpenapiDiagnostics_Properties_Dataset_Table struct {
+type OpenapiDiagnostics_Value_Properties_Dataset_Table struct {
 	Columns any
 	Rows any
 	TableName any
 }
 
-type OpenapiDiagnostics_Properties_Dataset struct {
+type OpenapiDiagnostics_Value_Properties_Dataset struct {
 	RenderingProperties any
 	Table any
 }
 
-type OpenapiDiagnostics_Properties_Metadata_SupportTopicList struct {
+type OpenapiDiagnostics_Value_Properties_Metadata_SupportTopicList struct {
 	Id any
 	PesId any
 }
 
-type OpenapiDiagnostics_Properties_Metadata struct {
-	// List of analysis types
+type OpenapiDiagnostics_Value_Properties_Metadata struct {
 	AnalysisTypes any
-	// Authors' names of the detector
 	Author any
-	// Category of the detector
 	Category any
-	// Details of the diagnostics info
 	Description any
-	// Unique detector name
 	Id any
-	// Display Name of the detector
 	Name any
-	// Authors' names of the detector
 	Score any
-	// List of support topics
 	SupportTopicList any
-	// Authors' names of the detector
 	Type any
 }
 
-type OpenapiDiagnostics_Properties_Status struct {
-	// Diagnostic message
+type OpenapiDiagnostics_Value_Properties_Status struct {
 	Message any
-	// Status
 	StatusId any
 }
 
-type OpenapiDiagnostics_Properties struct {
-	// Details of a diagnostics data provider
+type OpenapiDiagnostics_Value_Properties struct {
 	DataProviderMetadata any
-	// Set of data collections associated with the response.
 	Dataset any
-	// Metadata of the diagnostics response
 	Metadata any
-	// Rendering details of a diagnostics table
 	Status any
+}
+
+type OpenapiDiagnostics_Value struct {
+	Properties any
 }
 
 type OpenapiDiagnosticsConfig struct {
 	ContainerAppName any
-	DetectorName any
 }
 
 type OpenapiDiagnosticsAttrs struct {
 	ContainerAppName any
-	DetectorName any
-	// Diagnostics resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The Diagnostics items on this page
+	Value any
 }
 
 var OpenapiDiagnostics = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_diagnostics",
 	Fields: ubx.FieldMap{
 		"ContainerAppName": ubx.FieldSpec{WireName: "container_app_name"},
-		"DetectorName": ubx.FieldSpec{WireName: "detector_name"},
 	},
 }

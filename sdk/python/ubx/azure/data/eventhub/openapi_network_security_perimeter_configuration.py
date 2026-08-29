@@ -7,20 +7,17 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter:
-    # Fully qualified identifier of the resource
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter:
     id: Any = None
-    # Location of the resource
     location: Any = None
-    # Guid of the resource
     perimeter_guid: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions:
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties_Subscriptions:
     id: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties:
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties:
     address_prefixes: Any = None
     direction: Any = None
     fully_qualified_domain_names: Any = None
@@ -28,77 +25,63 @@ class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRule
     subscriptions: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules:
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules:
     id: Any = None
     name: Any = None
     properties: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile:
-    # List of Access Rules
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile:
     access_rules: Any = None
-    # Current access rules version
     access_rules_version: Any = None
-    # Name of the resource
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties:
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties:
     description: Any = None
     issue_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues:
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues:
     name: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation:
-    # Access Mode of the resource association
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation:
     access_mode: Any = None
-    # Name of the resource association
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Properties:
-    # Indicates that the NSP controls related to backing association are only applicable to a specific feature in backing resource's data plane.
+class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties:
     applicable_features: Any = None
-    # True if the EventHub namespace is backed by another Azure resource and not visible to end users.
     is_backing_resource: Any = None
-    # NetworkSecurityPerimeter related information
     network_security_perimeter: Any = None
-    # Source Resource Association name
     parent_association_name: Any = None
-    # Information about current network profile
     profile: Any = None
-    # List of Provisioning Issues if any
     provisioning_issues: Any = None
-    # Provisioning state of NetworkSecurityPerimeter configuration propagation
     provisioning_state: Any = None
-    # Information about resource association
     resource_association: Any = None
-    # ARM Id of source resource
     source_resource_id: Any = None
+
+@dataclasses.dataclass
+class OpenapiNetworkSecurityPerimeterConfiguration_Value:
+    location: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiNetworkSecurityPerimeterConfigurationConfig:
     namespace_name: Any = None
-    resource_association_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiNetworkSecurityPerimeterConfigurationAttrs:
-    # The geo-location where the resource lives
-    location: Any = None
     namespace_name: Any = None
-    # Properties of NetworkSecurityPerimeterConfiguration
-    properties: Any = None
-    resource_association_name: Any = None
+    # A collection of NetworkSecurityPerimeterConfigurations
+    value: Any = None
 
 OpenapiNetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding(
     wire_type="azure_eventhub_openapi_network_security_perimeter_configuration",
     fields={
         "namespace_name": ubx.FieldSpec(wire_name="namespace_name"),
-        "resource_association_name": ubx.FieldSpec(wire_name="resource_association_name"),
     },
 )

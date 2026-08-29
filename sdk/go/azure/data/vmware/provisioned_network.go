@@ -3,31 +3,31 @@ package vmware
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ProvisionedNetwork_Properties struct {
-	// The address prefixes of the provisioned network in CIDR notation.
+type ProvisionedNetwork_Value_Properties struct {
 	AddressPrefix any
-	// The type of network provisioned.
 	NetworkType any
-	// provisioned network provisioning state
 	ProvisioningState any
+}
+
+type ProvisionedNetwork_Value struct {
+	Properties any
 }
 
 type ProvisionedNetworkConfig struct {
 	PrivateCloudName any
-	ProvisionedNetworkName any
 }
 
 type ProvisionedNetworkAttrs struct {
+	// The link to the next page of items
+	NextLink any
 	PrivateCloudName any
-	// The properties of a provisioned network.
-	Properties any
-	ProvisionedNetworkName any
+	// The ProvisionedNetwork items on this page
+	Value any
 }
 
 var ProvisionedNetwork = ubx.DataSourceBinding{
 	WireType: "azure_vmware_provisioned_network",
 	Fields: ubx.FieldMap{
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
-		"ProvisionedNetworkName": ubx.FieldSpec{WireName: "provisioned_network_name"},
 	},
 }

@@ -79,7 +79,7 @@ export interface OpenapiCloudVmCluster_Properties {
   fileSystemConfigurationDetails?: OpenapiCloudVmCluster_Properties_FileSystemConfigurationDetails[] | Computed<OpenapiCloudVmCluster_Properties_FileSystemConfigurationDetails[]>;
   /** Oracle Grid Infrastructure (GI) software version */
   giVersion: string | Computed<string>;
-  /** The hostname for the cloud VM cluster. Hostname and domain combined length cannot exceed 112 characters. */
+  /** The hostname for the cloud VM cluster. */
   hostname: string | Computed<string>;
   /** ExadataIormConfig for cloud vm cluster */
   iormConfigCache?: OpenapiCloudVmCluster_Properties_IormConfigCache | Computed<OpenapiCloudVmCluster_Properties_IormConfigCache>;

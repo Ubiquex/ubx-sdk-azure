@@ -7,41 +7,84 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class Account_Value_Properties_PrivateEndpoint:
+class Account_Value_Identity_UserAssignedIdentities:
+    client_id: Any = None
+    principal_id: Any = None
+
+@dataclasses.dataclass
+class Account_Value_Identity:
+    principal_id: Any = None
+    tenant_id: Any = None
+    type: Any = None
+    user_assigned_identities: Any = None
+
+@dataclasses.dataclass
+class Account_Value_Properties_OpenAiServices:
+    resource_id: Any = None
+    user_assigned_identity: Any = None
+
+@dataclasses.dataclass
+class Account_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
     id: Any = None
 
 @dataclasses.dataclass
-class Account_Value_Properties_PrivateLinkServiceConnectionState:
+class Account_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
     actions_required: Any = None
     description: Any = None
     status: Any = None
 
 @dataclasses.dataclass
-class Account_Value_Properties:
+class Account_Value_Properties_PrivateEndpointConnections_Properties:
     group_ids: Any = None
     private_endpoint: Any = None
     private_link_service_connection_state: Any = None
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class Account_Value:
+class Account_Value_Properties_PrivateEndpointConnections:
     properties: Any = None
 
 @dataclasses.dataclass
-class AccountConfig:
+class Account_Value_Properties:
+    account_id: Any = None
     account_name: Any = None
+    open_ai_services: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    public_network_access: Any = None
+    storage_services: Any = None
+    tenant_id: Any = None
+    total_minutes_indexed: Any = None
+    total_seconds_indexed: Any = None
+
+@dataclasses.dataclass
+class Account_Value_SystemData:
+    created_at: Any = None
+    created_by: Any = None
+    created_by_type: Any = None
+    last_modified_at: Any = None
+    last_modified_by: Any = None
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
+class Account_Value:
+    identity: Any = None
+    properties: Any = None
+    system_data: Any = None
+
+@dataclasses.dataclass
+class AccountConfig:
+    pass
 
 @dataclasses.dataclass
 class AccountAttrs:
-    account_name: Any = None
-    # URL to get the next set of operation list results (if there are any).
+    # URL to get the next set of operation list results if there are any.
     next_link: Any = None
-    # Array of private endpoint connections.
+    # List of accounts and their properties.
     value: Any = None
 
 Account = ubx.DataSourceBinding(
     wire_type="azure_vi_account",
     fields={
-        "account_name": ubx.FieldSpec(wire_name="account_name"),
     },
 )

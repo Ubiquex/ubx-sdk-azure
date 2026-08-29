@@ -7,4 +7,4 @@ SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 from .access_policy_assignment import AccessPolicyAssignment, AccessPolicyAssignmentConfig
 from .cluster import Cluster, ClusterConfig
 from .database import Database, DatabaseConfig
-from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .private_endpoint_connection_2 import PrivateEndpointConnection2, PrivateEndpointConnection2Config

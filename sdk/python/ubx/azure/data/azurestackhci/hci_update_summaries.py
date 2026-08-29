@@ -7,12 +7,12 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class HciUpdateSummaries_Properties_HealthCheckResult_Tags:
+class HciUpdateSummaries_Value_Properties_HealthCheckResult_Tags:
     key: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class HciUpdateSummaries_Properties_HealthCheckResult:
+class HciUpdateSummaries_Value_Properties_HealthCheckResult:
     additional_data: Any = None
     description: Any = None
     display_name: Any = None
@@ -30,39 +30,31 @@ class HciUpdateSummaries_Properties_HealthCheckResult:
     title: Any = None
 
 @dataclasses.dataclass
-class HciUpdateSummaries_Properties_PackageVersions:
+class HciUpdateSummaries_Value_Properties_PackageVersions:
     last_updated: Any = None
     package_type: Any = None
     version: Any = None
 
 @dataclasses.dataclass
-class HciUpdateSummaries_Properties:
-    # Current OEM Version.
+class HciUpdateSummaries_Value_Properties:
     current_oem_version: Any = None
-    # Current Sbe version of the stamp.
     current_sbe_version: Any = None
-    # Current Solution Bundle version of the stamp.
     current_version: Any = None
-    # Name of the hardware model.
     hardware_model: Any = None
-    # Last time the package-specific checks were run.
     health_check_date: Any = None
-    # An array of pre-check result objects.
     health_check_result: Any = None
-    # Overall health state for update-specific health checks. Indicates whether the system is functioning correctly, has warnings or errors, or is undergoing a health evaluation.
     health_state: Any = None
-    # Last time the update service successfully checked for updates
     last_checked: Any = None
-    # Last time an update installation completed successfully.
     last_updated: Any = None
-    # OEM family name.
     oem_family: Any = None
-    # Current version of each updatable component.
     package_versions: Any = None
-    # Provisioning state of the ArcSetting proxy resource.
     provisioning_state: Any = None
-    # Overall update state of the stamp. Indicates the current status of update deployment across the stamp, including preparation, application, and any issues encountered.
     state: Any = None
+
+@dataclasses.dataclass
+class HciUpdateSummaries_Value:
+    location: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class HciUpdateSummariesConfig:
@@ -71,10 +63,10 @@ class HciUpdateSummariesConfig:
 @dataclasses.dataclass
 class HciUpdateSummariesAttrs:
     cluster_name: Any = None
-    # The geo-location where the resource lives
-    location: Any = None
-    # Properties of Update summaries
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The UpdateSummaries items on this page
+    value: Any = None
 
 HciUpdateSummaries = ubx.DataSourceBinding(
     wire_type="azure_azurestackhci_hci_update_summaries",

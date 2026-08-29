@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .block_list_result import BlockListResult, BlockListResultConfig
+from .block import Block, BlockConfig

@@ -7,55 +7,43 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiWorkerPoolResource_Properties:
-    # Shared/dedicated workers.
+class OpenapiWorkerPoolResource_Value_Properties:
     compute_mode: Any = None
-    # Names of all instances in the worker pool (read only).
     instance_names: Any = None
-    # Number of instances in the worker pool.
     worker_count: Any = None
-    # VM size of the worker pool instances.
     worker_size: Any = None
-    # Worker size ID for referencing this worker pool.
     worker_size_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkerPoolResource_Sku_Capabilities:
+class OpenapiWorkerPoolResource_Value_Sku_Capabilities:
     name: Any = None
     reason: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkerPoolResource_Sku_SkuCapacity:
-    # Default number of workers for this App Service plan SKU.
+class OpenapiWorkerPoolResource_Value_Sku_SkuCapacity:
     default: Any = None
-    # Maximum number of Elastic workers for this App Service plan SKU.
     elastic_maximum: Any = None
-    # Maximum number of workers for this App Service plan SKU.
     maximum: Any = None
-    # Minimum number of workers for this App Service plan SKU.
     minimum: Any = None
-    # Available scale configurations for an App Service plan.
     scale_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkerPoolResource_Sku:
-    # Capabilities of the SKU, e.g., is traffic manager enabled?
+class OpenapiWorkerPoolResource_Value_Sku:
     capabilities: Any = None
-    # Current number of instances assigned to the resource.
     capacity: Any = None
-    # Family code of the resource SKU.
     family: Any = None
-    # Locations of the SKU.
     locations: Any = None
-    # Name of the resource SKU.
     name: Any = None
-    # Size specifier of the resource SKU.
     size: Any = None
-    # Description of the App Service plan scale options.
     sku_capacity: Any = None
-    # Service tier of the resource SKU.
     tier: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkerPoolResource_Value:
+    kind: Any = None
+    properties: Any = None
+    sku: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkerPoolResourceConfig:
@@ -63,13 +51,11 @@ class OpenapiWorkerPoolResourceConfig:
 
 @dataclasses.dataclass
 class OpenapiWorkerPoolResourceAttrs:
-    # Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
-    kind: Any = None
     name: Any = None
-    # Worker pool of an App Service Environment.
-    properties: Any = None
-    # Description of a SKU for a scalable resource.
-    sku: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The WorkerPoolResource items on this page
+    value: Any = None
 
 OpenapiWorkerPoolResource = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_worker_pool_resource",

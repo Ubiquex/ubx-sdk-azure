@@ -7,49 +7,37 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ConfigurationProfileAssignment_Properties:
-    # The Automanage configurationProfile ARM Resource URI.
+class ConfigurationProfileAssignment_Value_Properties:
     configuration_profile: Any = None
-    # The status of onboarding, which only appears in the response.
     status: Any = None
-    # The target VM resource URI
     target_id: Any = None
 
 @dataclasses.dataclass
-class ConfigurationProfileAssignment_SystemData:
-    # The timestamp of resource creation (UTC).
+class ConfigurationProfileAssignment_Value_SystemData:
     created_at: Any = None
-    # The identity that created the resource.
     created_by: Any = None
-    # The type of identity that created the resource.
     created_by_type: Any = None
-    # The timestamp of resource last modification (UTC)
     last_modified_at: Any = None
-    # The identity that last modified the resource.
     last_modified_by: Any = None
-    # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
 
 @dataclasses.dataclass
+class ConfigurationProfileAssignment_Value:
+    managed_by: Any = None
+    properties: Any = None
+    system_data: Any = None
+
+@dataclasses.dataclass
 class ConfigurationProfileAssignmentConfig:
-    configuration_profile_assignment_name: Any = None
-    vm_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class ConfigurationProfileAssignmentAttrs:
-    configuration_profile_assignment_name: Any = None
-    # Azure resource id. Indicates if this resource is managed by another Azure resource.
-    managed_by: Any = None
-    # Automanage configuration profile assignment properties.
-    properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    vm_name: Any = None
+    # Result of the list configuration profile assignment operation.
+    value: Any = None
 
 ConfigurationProfileAssignment = ubx.DataSourceBinding(
     wire_type="azure_automanage_configuration_profile_assignment",
     fields={
-        "configuration_profile_assignment_name": ubx.FieldSpec(wire_name="configuration_profile_assignment_name"),
-        "vm_name": ubx.FieldSpec(wire_name="vm_name"),
     },
 )

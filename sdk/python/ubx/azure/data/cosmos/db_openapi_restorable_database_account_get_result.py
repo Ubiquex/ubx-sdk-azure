@@ -7,43 +7,40 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class DbOpenapiRestorableDatabaseAccountGetResult_Properties_RestorableLocations:
+class DbOpenapiRestorableDatabaseAccountGetResult_Value_Properties_RestorableLocations:
     creation_time: Any = None
     deletion_time: Any = None
     location_name: Any = None
     regional_database_account_instance_id: Any = None
 
 @dataclasses.dataclass
-class DbOpenapiRestorableDatabaseAccountGetResult_Properties:
-    # The name of the global database account
+class DbOpenapiRestorableDatabaseAccountGetResult_Value_Properties:
     account_name: Any = None
-    # Enum to indicate the API type of the restorable database account.
     api_type: Any = None
-    # The creation time of the restorable database account (ISO-8601 format).
     creation_time: Any = None
-    # The time at which the restorable database account has been deleted (ISO-8601 format).
     deletion_time: Any = None
-    # The least recent time at which the database account can be restored to (ISO-8601 format).
     oldest_restorable_time: Any = None
-    # List of regions where the of the database account can be restored from.
     restorable_locations: Any = None
 
 @dataclasses.dataclass
+class DbOpenapiRestorableDatabaseAccountGetResult_Value:
+    location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class DbOpenapiRestorableDatabaseAccountGetResultConfig:
-    instance_id: Any = None
     location: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiRestorableDatabaseAccountGetResultAttrs:
-    instance_id: Any = None
     location: Any = None
-    # The properties of a restorable database account.
-    properties: Any = None
+    next_link: Any = None
+    # List of restorable database accounts and their properties.
+    value: Any = None
 
 DbOpenapiRestorableDatabaseAccountGetResult = ubx.DataSourceBinding(
     wire_type="azure_cosmos_db_openapi_restorable_database_account_get_result",
     fields={
-        "instance_id": ubx.FieldSpec(wire_name="instance_id"),
         "location": ubx.FieldSpec(wire_name="location"),
     },
 )

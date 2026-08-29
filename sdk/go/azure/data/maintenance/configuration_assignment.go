@@ -3,59 +3,46 @@ package maintenance
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ConfigurationAssignment_Properties_Filter_TagSettings struct {
-	// Filter VMs by Any or All specified tags.
+type ConfigurationAssignment_Value_Properties_Filter_TagSettings struct {
 	FilterOperator any
-	// Dictionary of tags with its list of values.
 	Tags any
 }
 
-type ConfigurationAssignment_Properties_Filter struct {
-	// List of locations to scope the query to.
+type ConfigurationAssignment_Value_Properties_Filter struct {
 	Locations any
-	// List of allowed operating systems.
 	OsTypes any
-	// List of allowed resource groups.
 	ResourceGroups any
-	// List of allowed resources.
 	ResourceTypes any
-	// Tag filter information for the VM.
 	TagSettings any
 }
 
-type ConfigurationAssignment_Properties struct {
-	// Azure query for the update configuration.
+type ConfigurationAssignment_Value_Properties struct {
 	Filter any
-	// The maintenance configuration Id
 	MaintenanceConfigurationId any
-	// The unique resourceId
 	ResourceId any
+}
+
+type ConfigurationAssignment_Value struct {
+	Location any
+	Properties any
 }
 
 type ConfigurationAssignmentConfig struct {
 	ApiVersion any
-	ConfigurationAssignmentName any
-	ResourceGroupName any
 	SubscriptionId any
 }
 
 type ConfigurationAssignmentAttrs struct {
 	ApiVersion any
-	ConfigurationAssignmentName any
-	// Location of the resource
-	Location any
-	// Properties for configuration assignment
-	Properties any
-	ResourceGroupName any
 	SubscriptionId any
+	// The list of configuration Assignments
+	Value any
 }
 
 var ConfigurationAssignment = ubx.DataSourceBinding{
 	WireType: "azure_maintenance_configuration_assignment",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ConfigurationAssignmentName": ubx.FieldSpec{WireName: "configuration_assignment_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

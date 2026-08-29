@@ -7,39 +7,32 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class WorkspaceRestorableDroppedSqlPool_Properties:
-    # The creation date of the database (ISO8601 format)
+class WorkspaceRestorableDroppedSqlPool_Value_Properties:
     creation_date: Any = None
-    # The name of the database
     database_name: Any = None
-    # The deletion date of the database (ISO8601 format)
     deletion_date: Any = None
-    # The earliest restore date of the database (ISO8601 format)
     earliest_restore_date: Any = None
-    # The edition of the database
     edition: Any = None
-    # The elastic pool name of the database
     elastic_pool_name: Any = None
-    # The max size in bytes of the database
     max_size_bytes: Any = None
-    # The service level objective name of the database
     service_level_objective: Any = None
 
 @dataclasses.dataclass
+class WorkspaceRestorableDroppedSqlPool_Value:
+    location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class WorkspaceRestorableDroppedSqlPoolConfig:
-    restorable_dropped_sql_pool_id: Any = None
+    pass
 
 @dataclasses.dataclass
 class WorkspaceRestorableDroppedSqlPoolAttrs:
-    # The geo-location where the resource lives
-    location: Any = None
-    # The properties of a restorable dropped Sql pool
-    properties: Any = None
-    restorable_dropped_sql_pool_id: Any = None
+    # A list of restorable dropped Sql pools
+    value: Any = None
 
 WorkspaceRestorableDroppedSqlPool = ubx.DataSourceBinding(
     wire_type="azure_synapse_workspace_restorable_dropped_sql_pool",
     fields={
-        "restorable_dropped_sql_pool_id": ubx.FieldSpec(wire_name="restorable_dropped_sql_pool_id"),
     },
 )

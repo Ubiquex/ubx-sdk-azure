@@ -7,65 +7,59 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiEnvironmentVersion_Properties_Build:
-    # [Required] URI of the Docker build context used to build the image. Supports blob URIs on environment creation and may return blob or Git URIs. <seealso href="https://docs.docker.com/engine/reference/commandline/build/#extended-description" />
+class OpenapiEnvironmentVersion_Value_Properties_Build:
     context_uri: Any = None
-    # Path to the Dockerfile in the build context. <seealso href="https://docs.docker.com/engine/reference/builder/" />
     dockerfile_path: Any = None
 
 @dataclasses.dataclass
-class OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute:
-    # [Required] The path for the route.
+class OpenapiEnvironmentVersion_Value_Properties_InferenceConfig_LivenessRoute:
     path: Any = None
-    # [Required] The port for the route.
     port: Any = None
 
 @dataclasses.dataclass
-class OpenapiEnvironmentVersion_Properties_InferenceConfig:
+class OpenapiEnvironmentVersion_Value_Properties_InferenceConfig:
     liveness_route: Any = None
     readiness_route: Any = None
     scoring_route: Any = None
     startup_route: Any = None
 
 @dataclasses.dataclass
-class OpenapiEnvironmentVersion_Properties:
-    # AutoRebuild setting for the derived image
+class OpenapiEnvironmentVersion_Value_Properties:
     auto_rebuild: Any = None
-    # Configuration settings for Docker build context
     build: Any = None
-    # Standard configuration file used by Conda that lets you install any kind of package, including Python, R, and C/C++ packages. <see href="https://repo2docker.readthedocs.io/en/latest/config_files.html#environment-yml-install-a-conda-environment" />
     conda_file: Any = None
-    # Environment type is either user created or curated by Azure ML service
     environment_type: Any = None
-    # Name of the image that will be used for the environment. <seealso href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-custom-docker-image#use-a-custom-base-image" />
     image: Any = None
     inference_config: Any = None
-    # The type of operating system.
     os_type: Any = None
-    # Provisioning state of registry asset.
     provisioning_state: Any = None
-    # Stage in the environment lifecycle assigned to this environment
     stage: Any = None
 
 @dataclasses.dataclass
+class OpenapiEnvironmentVersion_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiEnvironmentVersionConfig:
-    name: Any = None
-    version: Any = None
-    workspace_name: Any = None
+    environment_name: Any = None
+    list_view_type: Any = None
+    registry_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiEnvironmentVersionAttrs:
-    name: Any = None
-    # Environment version details.
-    properties: Any = None
-    version: Any = None
-    workspace_name: Any = None
+    environment_name: Any = None
+    list_view_type: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    registry_name: Any = None
+    # The EnvironmentVersion items on this page
+    value: Any = None
 
 OpenapiEnvironmentVersion = ubx.DataSourceBinding(
     wire_type="azure_machinelearningservices_openapi_environment_version",
     fields={
-        "name": ubx.FieldSpec(wire_name="name"),
-        "version": ubx.FieldSpec(wire_name="version"),
-        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
+        "environment_name": ubx.FieldSpec(wire_name="environment_name"),
+        "list_view_type": ubx.FieldSpec(wire_name="list_view_type"),
+        "registry_name": ubx.FieldSpec(wire_name="registry_name"),
     },
 )

@@ -4,14 +4,12 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .custom_certificate_list import CustomCertificateList, CustomCertificateListConfig
-from .custom_domain_list import CustomDomainList, CustomDomainListConfig
-from .operation_list import OperationList, OperationListConfig
-from .private_endpoint_connection_list import PrivateEndpointConnectionList, PrivateEndpointConnectionListConfig
-from .private_link_resource_list import PrivateLinkResourceList, PrivateLinkResourceListConfig
-from .replica_list import ReplicaList, ReplicaListConfig
+from .custom_certificate import CustomCertificate, CustomCertificateConfig
+from .custom_domain import CustomDomain, CustomDomainConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
+from .replica import Replica, ReplicaConfig
 from .shared_private_link_resource import SharedPrivateLinkResource, SharedPrivateLinkResourceConfig
-from .shared_private_link_resource_list import SharedPrivateLinkResourceList, SharedPrivateLinkResourceListConfig
-from .signal_rresource_list import SignalRresourceList, SignalRresourceListConfig
-from .signal_rusage_list import SignalRusageList, SignalRusageListConfig
-from .sku_list import SkuList, SkuListConfig
+from .signal_rresource import SignalRresource, SignalRresourceConfig
+from .signal_rusage import SignalRusage, SignalRusageConfig
+from .sku import Sku, SkuConfig

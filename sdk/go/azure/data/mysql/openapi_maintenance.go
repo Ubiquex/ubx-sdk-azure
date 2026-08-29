@@ -3,47 +3,39 @@ package mysql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiMaintenance_Properties struct {
-	// The max time the maintenance can be rescheduled.
+type OpenapiMaintenance_Value_Properties struct {
 	MaintenanceAvailableScheduleMaxTime any
-	// The min time the maintenance can be rescheduled.
 	MaintenanceAvailableScheduleMinTime any
-	// The maintenance description.
 	MaintenanceDescription any
-	// The end time for a maintenance.
 	MaintenanceEndTime any
-	// The end time for a maintenance execution.
 	MaintenanceExecutionEndTime any
-	// The start time for a maintenance execution.
 	MaintenanceExecutionStartTime any
-	// The start time for a maintenance.
 	MaintenanceStartTime any
-	// The current status of this maintenance.
 	MaintenanceState any
-	// The maintenance title.
 	MaintenanceTitle any
-	// The type of this maintenance.
 	MaintenanceType any
-	// The current provisioning state.
 	ProvisioningState any
 }
 
+type OpenapiMaintenance_Value struct {
+	Properties any
+}
+
 type OpenapiMaintenanceConfig struct {
-	MaintenanceName any
 	ServerName any
 }
 
 type OpenapiMaintenanceAttrs struct {
-	MaintenanceName any
-	// The properties of a maintenance resource.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ServerName any
+	// The Maintenance items on this page
+	Value any
 }
 
 var OpenapiMaintenance = ubx.DataSourceBinding{
 	WireType: "azure_mysql_openapi_maintenance",
 	Fields: ubx.FieldMap{
-		"MaintenanceName": ubx.FieldSpec{WireName: "maintenance_name"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
 	},
 }

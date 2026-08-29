@@ -3,49 +3,42 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type Image_Properties_RecommendedMachineConfiguration_Memory struct {
-	// Maximum value.
+type Image_Value_Properties_RecommendedMachineConfiguration_Memory struct {
 	Max any
-	// Minimum value.
 	Min any
 }
 
-type Image_Properties_RecommendedMachineConfiguration struct {
-	// Properties for a range of values.
+type Image_Value_Properties_RecommendedMachineConfiguration struct {
 	Memory any
-	// Properties for a range of values.
 	VCpus any
 }
 
-type Image_Properties struct {
-	// The description of the image.
+type Image_Value_Properties struct {
 	Description any
-	// Indicates whether hibernate is enabled/disabled.
 	HibernateSupport any
-	// The name of the image offer.
 	Offer any
-	// Provisioning state of the resource.
 	ProvisioningState any
-	// The publisher of the image.
 	Publisher any
-	// Properties for a recommended machine configuration.
 	RecommendedMachineConfiguration any
-	// The SKU name for the image.
 	Sku any
+}
+
+type Image_Value struct {
+	Properties any
 }
 
 type ImageConfig struct {
 	DevCenterName any
 	GalleryName any
-	ImageName any
 }
 
 type ImageAttrs struct {
 	DevCenterName any
 	GalleryName any
-	ImageName any
-	// Properties of an image.
-	Properties any
+	// URL to get the next set of results if there are any.
+	NextLink any
+	// Current page of results.
+	Value any
 }
 
 var Image = ubx.DataSourceBinding{
@@ -53,6 +46,5 @@ var Image = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
 		"GalleryName": ubx.FieldSpec{WireName: "gallery_name"},
-		"ImageName": ubx.FieldSpec{WireName: "image_name"},
 	},
 }

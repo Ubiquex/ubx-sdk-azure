@@ -4,6 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .host_group_list_result import HostGroupListResult, HostGroupListResultConfig
-from .host_list_result import HostListResult, HostListResultConfig
+from .host import Host, HostConfig
+from .host_group import HostGroup, HostGroupConfig
 from .host_size_list_result import HostSizeListResult, HostSizeListResultConfig

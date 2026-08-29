@@ -7,34 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class SyncmembersSyncMember_Value_Tables_Columns:
-    data_size: Any = None
-    data_type: Any = None
-    error_id: Any = None
-    has_error: Any = None
-    is_primary_key: Any = None
-    name: Any = None
-    quoted_name: Any = None
-
-@dataclasses.dataclass
-class SyncmembersSyncMember_Value_Tables:
-    columns: Any = None
-    error_id: Any = None
-    has_error: Any = None
-    name: Any = None
-    quoted_name: Any = None
+class SyncmembersSyncMember_Value_Properties:
+    database_name: Any = None
+    database_type: Any = None
+    password: Any = None
+    private_endpoint_name: Any = None
+    server_name: Any = None
+    sql_server_database_id: Any = None
+    sync_agent_id: Any = None
+    sync_direction: Any = None
+    sync_member_azure_database_resource_id: Any = None
+    sync_state: Any = None
+    use_private_link_connection: Any = None
+    user_name: Any = None
 
 @dataclasses.dataclass
 class SyncmembersSyncMember_Value:
-    last_update_time: Any = None
-    tables: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class SyncmembersSyncMemberConfig:
     database_name: Any = None
     server_name: Any = None
     sync_group_name: Any = None
-    sync_member_name: Any = None
 
 @dataclasses.dataclass
 class SyncmembersSyncMemberAttrs:
@@ -43,8 +38,7 @@ class SyncmembersSyncMemberAttrs:
     next_link: Any = None
     server_name: Any = None
     sync_group_name: Any = None
-    sync_member_name: Any = None
-    # The SyncFullSchemaProperties items on this page
+    # The SyncMember items on this page
     value: Any = None
 
 SyncmembersSyncMember = ubx.DataSourceBinding(
@@ -53,6 +47,5 @@ SyncmembersSyncMember = ubx.DataSourceBinding(
         "database_name": ubx.FieldSpec(wire_name="database_name"),
         "server_name": ubx.FieldSpec(wire_name="server_name"),
         "sync_group_name": ubx.FieldSpec(wire_name="sync_group_name"),
-        "sync_member_name": ubx.FieldSpec(wire_name="sync_member_name"),
     },
 )

@@ -5,5 +5,6 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .account import Account, AccountConfig
-from .account_list import AccountList, AccountListConfig
-from .operation_list_result import OperationListResult, OperationListResultConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
+from .private_link_resource_2 import PrivateLinkResource2, PrivateLinkResource2Config

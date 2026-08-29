@@ -3,72 +3,56 @@ package automation
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiModule_Properties_ContentLink_ContentHash struct {
-	// Gets or sets the content hash algorithm used to hash the content.
+type OpenapiModule_Value_Properties_ContentLink_ContentHash struct {
 	Algorithm any
-	// Gets or sets expected hash value of the content.
 	Value any
 }
 
-type OpenapiModule_Properties_ContentLink struct {
-	// Definition of the runbook property type.
+type OpenapiModule_Value_Properties_ContentLink struct {
 	ContentHash any
-	// Gets or sets the uri of content.
 	Uri any
-	// Gets or sets the version of the content.
 	Version any
 }
 
-type OpenapiModule_Properties_Error struct {
-	// Gets or sets the error code.
+type OpenapiModule_Value_Properties_Error struct {
 	Code any
-	// Gets or sets the error message.
 	Message any
 }
 
-type OpenapiModule_Properties struct {
-	// Gets or sets the activity count of the module.
+type OpenapiModule_Value_Properties struct {
 	ActivityCount any
-	// Definition of the content link.
 	ContentLink any
-	// Gets or sets the creation time.
 	CreationTime any
-	// Gets or sets the description.
 	Description any
-	// Definition of the module error info type.
 	Error any
-	// Gets or sets type of module, if its composite or not.
 	IsComposite any
-	// Gets or sets the isGlobal flag of the module.
 	IsGlobal any
-	// Gets or sets the last modified time.
 	LastModifiedTime any
-	// Gets or sets the provisioning state of the module.
 	ProvisioningState any
-	// Gets or sets the size in bytes of the module.
 	SizeInBytes any
-	// Gets or sets the version of the module.
 	Version any
+}
+
+type OpenapiModule_Value struct {
+	Etag any
+	Properties any
 }
 
 type OpenapiModuleConfig struct {
 	AutomationAccountName any
-	PackageName any
 }
 
 type OpenapiModuleAttrs struct {
 	AutomationAccountName any
-	// Gets or sets the etag of the resource.
-	Etag any
-	PackageName any
-	// Definition of the module property type.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The Module items on this page
+	Value any
 }
 
 var OpenapiModule = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_module",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"PackageName": ubx.FieldSpec{WireName: "package_name"},
 	},
 }

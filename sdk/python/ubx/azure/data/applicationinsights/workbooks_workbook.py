@@ -7,64 +7,59 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class WorkbooksWorkbook_Identity_UserAssignedIdentities:
+class WorkbooksWorkbook_Value_Identity_UserAssignedIdentities:
     client_id: Any = None
     principal_id: Any = None
 
 @dataclasses.dataclass
-class WorkbooksWorkbook_Identity:
+class WorkbooksWorkbook_Value_Identity:
     principal_id: Any = None
     tenant_id: Any = None
     type: Any = None
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
-class WorkbooksWorkbook_Properties:
-    # Workbook category, as defined by the user at creation time.
+class WorkbooksWorkbook_Value_Properties:
     category: Any = None
-    # The description of the workbook.
     description: Any = None
-    # The user-defined name (display name) of the workbook.
     display_name: Any = None
-    # The unique revision id for this workbook definition
     revision: Any = None
-    # Configuration of this particular workbook. Configuration data is a string containing valid JSON
     serialized_data: Any = None
-    # ResourceId for a source resource.
     source_id: Any = None
-    # The resourceId to the storage account when bring your own storage is used
     storage_uri: Any = None
-    # Being deprecated, please use the other tags field
     tags: Any = None
-    # Date and time in UTC of the last modification that was made to this workbook definition.
     time_modified: Any = None
-    # Unique user id of the specific user that owns this workbook.
     user_id: Any = None
-    # Workbook schema version format, like 'Notebook/1.0', which should match the workbook in serializedData
     version: Any = None
 
 @dataclasses.dataclass
+class WorkbooksWorkbook_Value:
+    etag: Any = None
+    identity: Any = None
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class WorkbooksWorkbookConfig:
-    resource_name: Any = None
-    revision_id: Any = None
+    can_fetch_content: Any = None
+    category: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class WorkbooksWorkbookAttrs:
-    # Resource etag
-    etag: Any = None
-    # Identity used for BYOS
-    identity: Any = None
-    # The kind of workbook. Only valid value is shared.
-    kind: Any = None
-    # Properties that contain a workbook.
-    properties: Any = None
-    resource_name: Any = None
-    revision_id: Any = None
+    can_fetch_content: Any = None
+    category: Any = None
+    # The link to the next page of results.
+    next_link: Any = None
+    tags: Any = None
+    # An array of workbooks.
+    value: Any = None
 
 WorkbooksWorkbook = ubx.DataSourceBinding(
     wire_type="azure_applicationinsights_workbooks_workbook",
     fields={
-        "resource_name": ubx.FieldSpec(wire_name="resource_name"),
-        "revision_id": ubx.FieldSpec(wire_name="revision_id"),
+        "can_fetch_content": ubx.FieldSpec(wire_name="can_fetch_content"),
+        "category": ubx.FieldSpec(wire_name="category"),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

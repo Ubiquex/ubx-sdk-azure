@@ -7,57 +7,45 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiCertificate_Properties_CertificateKeyVaultProperties:
-    # Resource ID of a managed identity to authenticate with Azure Key Vault, or System to use a system-assigned identity.
+class OpenapiCertificate_Value_Properties_CertificateKeyVaultProperties:
     identity: Any = None
-    # URL pointing to the Azure Key Vault secret that holds the certificate.
     key_vault_url: Any = None
 
 @dataclasses.dataclass
-class OpenapiCertificate_Properties:
-    # Properties for a certificate stored in a Key Vault.
+class OpenapiCertificate_Value_Properties:
     certificate_key_vault_properties: Any = None
-    # Any errors that occurred during deployment or deployment validation
     deployment_errors: Any = None
-    # Certificate expiration date.
     expiration_date: Any = None
-    # Certificate issue Date.
     issue_date: Any = None
-    # Certificate issuer.
     issuer: Any = None
-    # Certificate password.
     password: Any = None
-    # Provisioning state of the certificate.
     provisioning_state: Any = None
-    # Public key hash.
     public_key_hash: Any = None
-    # Subject alternative names the certificate applies to.
     subject_alternative_names: Any = None
-    # Subject name of the certificate.
     subject_name: Any = None
-    # Certificate thumbprint.
     thumbprint: Any = None
-    # Is the certificate valid?.
     valid: Any = None
-    # PFX or PEM blob
     value: Any = None
 
 @dataclasses.dataclass
+class OpenapiCertificate_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiCertificateConfig:
-    certificate_name: Any = None
-    environment_name: Any = None
+    connected_environment_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiCertificateAttrs:
-    certificate_name: Any = None
-    environment_name: Any = None
-    # Certificate resource specific properties
-    properties: Any = None
+    connected_environment_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Certificate items on this page
+    value: Any = None
 
 OpenapiCertificate = ubx.DataSourceBinding(
     wire_type="azure_app_openapi_certificate",
     fields={
-        "certificate_name": ubx.FieldSpec(wire_name="certificate_name"),
-        "environment_name": ubx.FieldSpec(wire_name="environment_name"),
+        "connected_environment_name": ubx.FieldSpec(wire_name="connected_environment_name"),
     },
 )

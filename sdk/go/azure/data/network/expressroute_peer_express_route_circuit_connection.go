@@ -3,49 +3,43 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ExpressroutePeerExpressRouteCircuitConnection_Properties_ExpressRouteCircuitPeering struct {
-	// Resource ID.
+type ExpressroutePeerExpressRouteCircuitConnection_Value_Properties_ExpressRouteCircuitPeering struct {
 	Id any
 }
 
-type ExpressroutePeerExpressRouteCircuitConnection_Properties struct {
-	// /29 IP address space to carve out Customer addresses for tunnels.
+type ExpressroutePeerExpressRouteCircuitConnection_Value_Properties struct {
 	AddressPrefix any
-	// The resource guid of the authorization used for the express route circuit connection.
 	AuthResourceGuid any
-	// Express Route Circuit connection state.
 	CircuitConnectionStatus any
-	// The name of the express route circuit connection resource.
 	ConnectionName any
-	// Reference to another subresource.
 	ExpressRouteCircuitPeering any
-	// Reference to another subresource.
 	PeerExpressRouteCircuitPeering any
-	// Provisioning states of a resource.
 	ProvisioningState any
+}
+
+type ExpressroutePeerExpressRouteCircuitConnection_Value struct {
+	Etag any
+	Properties any
 }
 
 type ExpressroutePeerExpressRouteCircuitConnectionConfig struct {
 	CircuitName any
-	ConnectionName any
 	PeeringName any
 }
 
 type ExpressroutePeerExpressRouteCircuitConnectionAttrs struct {
 	CircuitName any
-	ConnectionName any
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
+	// The link to the next page of items
+	NextLink any
 	PeeringName any
-	// Properties of the peer express route circuit connection.
-	Properties any
+	// The PeerExpressRouteCircuitConnection items on this page
+	Value any
 }
 
 var ExpressroutePeerExpressRouteCircuitConnection = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_peer_express_route_circuit_connection",
 	Fields: ubx.FieldMap{
 		"CircuitName": ubx.FieldSpec{WireName: "circuit_name"},
-		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
 		"PeeringName": ubx.FieldSpec{WireName: "peering_name"},
 	},
 }

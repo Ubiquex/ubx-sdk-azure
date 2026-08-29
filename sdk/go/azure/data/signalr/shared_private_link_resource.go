@@ -3,35 +3,36 @@ package signalr
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SharedPrivateLinkResource_Properties struct {
-	// The group id from the provider of resource the shared private link resource is for
+type SharedPrivateLinkResource_Value_Properties struct {
 	GroupId any
-	// The resource id of the resource the shared private link resource is for
 	PrivateLinkResourceId any
-	// Provisioning state of the resource.
 	ProvisioningState any
-	// The request message for requesting approval of the shared private link resource
 	RequestMessage any
-	// Status of the shared private link resource
 	Status any
 }
 
+type SharedPrivateLinkResource_Value struct {
+	Properties any
+}
+
 type SharedPrivateLinkResourceConfig struct {
+	ReplicaName any
 	ResourceName any
-	SharedPrivateLinkResourceName any
 }
 
 type SharedPrivateLinkResourceAttrs struct {
-	// Describes the properties of an existing Shared Private Link Resource
-	Properties any
+	// Request URL that can be used to query next page of private endpoint connections. Returned when the total number of requested private endpoint connections exceed maximum page size.
+	NextLink any
+	ReplicaName any
 	ResourceName any
-	SharedPrivateLinkResourceName any
+	// The list of the shared private link resources
+	Value any
 }
 
 var SharedPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_signalr_shared_private_link_resource",
 	Fields: ubx.FieldMap{
+		"ReplicaName": ubx.FieldSpec{WireName: "replica_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SharedPrivateLinkResourceName": ubx.FieldSpec{WireName: "shared_private_link_resource_name"},
 	},
 }

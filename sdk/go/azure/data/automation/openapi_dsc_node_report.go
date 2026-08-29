@@ -3,7 +3,7 @@ package automation
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDscNodeReport_Errors struct {
+type OpenapiDscNodeReport_Value_Errors struct {
 	ErrorCode any
 	ErrorDetails any
 	ErrorMessage any
@@ -12,28 +12,21 @@ type OpenapiDscNodeReport_Errors struct {
 	ResourceId any
 }
 
-type OpenapiDscNodeReport_MetaConfiguration struct {
-	// Gets or sets the ActionAfterReboot value of the meta configuration.
+type OpenapiDscNodeReport_Value_MetaConfiguration struct {
 	ActionAfterReboot any
-	// Gets or sets the AllowModuleOverwrite value of the meta configuration.
 	AllowModuleOverwrite any
-	// Gets or sets the CertificateId value of the meta configuration.
 	CertificateId any
-	// Gets or sets the ConfigurationMode value of the meta configuration.
 	ConfigurationMode any
-	// Gets or sets the ConfigurationModeFrequencyMins value of the meta configuration.
 	ConfigurationModeFrequencyMins any
-	// Gets or sets the RebootNodeIfNeeded value of the meta configuration.
 	RebootNodeIfNeeded any
-	// Gets or sets the RefreshFrequencyMins value of the meta configuration.
 	RefreshFrequencyMins any
 }
 
-type OpenapiDscNodeReport_Resources_DependsOn struct {
+type OpenapiDscNodeReport_Value_Resources_DependsOn struct {
 	ResourceId any
 }
 
-type OpenapiDscNodeReport_Resources struct {
+type OpenapiDscNodeReport_Value_Resources struct {
 	DependsOn any
 	DurationInSeconds any
 	Error any
@@ -46,52 +39,40 @@ type OpenapiDscNodeReport_Resources struct {
 	Status any
 }
 
+type OpenapiDscNodeReport_Value struct {
+	ConfigurationVersion any
+	EndTime any
+	Errors any
+	HostName any
+	IPv4Addresses any
+	IPv6Addresses any
+	Id any
+	LastModifiedTime any
+	MetaConfiguration any
+	NumberOfResources any
+	RawErrors any
+	RebootRequested any
+	RefreshMode any
+	ReportFormatVersion any
+	ReportId any
+	Resources any
+	StartTime any
+	Status any
+	Type any
+}
+
 type OpenapiDscNodeReportConfig struct {
 	AutomationAccountName any
 	NodeId any
-	ReportId any
 }
 
 type OpenapiDscNodeReportAttrs struct {
 	AutomationAccountName any
-	// Gets or sets the configurationVersion of the node report.
-	ConfigurationVersion any
-	// Gets or sets the end time of the node report.
-	EndTime any
-	// Gets or sets the errors for the node report.
-	Errors any
-	// Gets or sets the hostname of the node that sent the report.
-	HostName any
-	// Gets or sets the IPv4 address of the node that sent the report.
-	IPv4Addresses any
-	// Gets or sets the IPv6 address of the node that sent the report.
-	IPv6Addresses any
-	// Gets or sets the id.
-	Id any
-	// Gets or sets the lastModifiedTime of the node report.
-	LastModifiedTime any
-	// Definition of the DSC Meta Configuration.
-	MetaConfiguration any
+	// The link to the next page of items
+	NextLink any
 	NodeId any
-	// Gets or sets the number of resource in the node report.
-	NumberOfResources any
-	// Gets or sets the unparsed errors for the node report.
-	RawErrors any
-	// Gets or sets the rebootRequested of the node report.
-	RebootRequested any
-	// Gets or sets the refreshMode of the node report.
-	RefreshMode any
-	// Gets or sets the reportFormatVersion of the node report.
-	ReportFormatVersion any
-	ReportId any
-	// Gets or sets the resource for the node report.
-	Resources any
-	// Gets or sets the start time of the node report.
-	StartTime any
-	// Gets or sets the status of the node report.
-	Status any
-	// Gets or sets the type of the node report.
-	Type any
+	// The DscNodeReport items on this page
+	Value any
 }
 
 var OpenapiDscNodeReport = ubx.DataSourceBinding{
@@ -99,6 +80,5 @@ var OpenapiDscNodeReport = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
 		"NodeId": ubx.FieldSpec{WireName: "node_id"},
-		"ReportId": ubx.FieldSpec{WireName: "report_id"},
 	},
 }

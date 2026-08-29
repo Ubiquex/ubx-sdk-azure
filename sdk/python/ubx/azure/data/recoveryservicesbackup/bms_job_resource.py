@@ -7,46 +7,36 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class BmsJobResource_Properties:
-    # ActivityId of job.
+class BmsJobResource_Value_Properties:
     activity_id: Any = None
-    # Backup management type to execute the current job.
     backup_management_type: Any = None
-    # The end time.
     end_time: Any = None
-    # Friendly name of the entity on which the current job is executing.
     entity_friendly_name: Any = None
-    # This property will be used as the discriminator for deciding the specific types in the polymorphic chain of types.
     job_type: Any = None
-    # The operation name.
     operation: Any = None
-    # The start time.
     start_time: Any = None
-    # Job status.
     status: Any = None
 
 @dataclasses.dataclass
+class BmsJobResource_Value:
+    e_tag: Any = None
+    location: Any = None
+    properties: Any = None
+    tags: Any = None
+
+@dataclasses.dataclass
 class BmsJobResourceConfig:
-    job_name: Any = None
     vault_name: Any = None
 
 @dataclasses.dataclass
 class BmsJobResourceAttrs:
-    # Optional ETag.
-    e_tag: Any = None
-    job_name: Any = None
-    # Represents an Azure geography region where supported resource providers live.
-    location: Any = None
-    # Defines workload agnostic properties for a job.
-    properties: Any = None
-    # Resource tags.
-    tags: Any = None
+    # List of resources.
+    value: Any = None
     vault_name: Any = None
 
 BmsJobResource = ubx.DataSourceBinding(
     wire_type="azure_recoveryservicesbackup_bms_job_resource",
     fields={
-        "job_name": ubx.FieldSpec(wire_name="job_name"),
         "vault_name": ubx.FieldSpec(wire_name="vault_name"),
     },
 )

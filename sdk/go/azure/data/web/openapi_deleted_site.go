@@ -3,40 +3,34 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDeletedSite_Properties struct {
-	// Numeric id for the deleted site
+type OpenapiDeletedSite_Value_Properties struct {
 	DeletedSiteId any
-	// Name of the deleted site
 	DeletedSiteName any
-	// Time in UTC when the app was deleted.
 	DeletedTimestamp any
-	// Geo Region of the deleted site
 	GeoRegionName any
-	// Kind of site that was deleted
 	Kind any
-	// ResourceGroup that contained the deleted site
 	ResourceGroup any
-	// Slot of the deleted site
 	Slot any
-	// Subscription containing the deleted site
 	Subscription any
 }
 
+type OpenapiDeletedSite_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiDeletedSiteConfig struct {
-	DeletedSiteId any
 }
 
 type OpenapiDeletedSiteAttrs struct {
-	DeletedSiteId any
-	// Kind of resource.
-	Kind any
-	// DeletedSite resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The DeletedSite items on this page
+	Value any
 }
 
 var OpenapiDeletedSite = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_deleted_site",
 	Fields: ubx.FieldMap{
-		"DeletedSiteId": ubx.FieldSpec{WireName: "deleted_site_id"},
 	},
 }

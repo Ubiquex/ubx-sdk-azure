@@ -7,50 +7,43 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VirtualwanVpnSiteLink_Properties_BgpProperties:
-    # The BGP speaker's ASN.
+class VirtualwanVpnSiteLink_Value_Properties_BgpProperties:
     asn: Any = None
-    # The BGP peering address and BGP identifier of this BGP speaker.
     bgp_peering_address: Any = None
 
 @dataclasses.dataclass
-class VirtualwanVpnSiteLink_Properties_LinkProperties:
-    # Name of the link provider.
+class VirtualwanVpnSiteLink_Value_Properties_LinkProperties:
     link_provider_name: Any = None
-    # Link speed.
     link_speed_in_mbps: Any = None
 
 @dataclasses.dataclass
-class VirtualwanVpnSiteLink_Properties:
-    # BGP settings details for a link.
+class VirtualwanVpnSiteLink_Value_Properties:
     bgp_properties: Any = None
-    # FQDN of vpn-site-link.
     fqdn: Any = None
-    # The ip-address for the vpn-site-link.
     ip_address: Any = None
-    # List of properties of a link provider.
     link_properties: Any = None
-    # Provisioning states of a resource.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
+class VirtualwanVpnSiteLink_Value:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class VirtualwanVpnSiteLinkConfig:
-    vpn_site_link_name: Any = None
     vpn_site_name: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnSiteLinkAttrs:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
-    # Parameters for VpnSite.
-    properties: Any = None
-    vpn_site_link_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The VpnSiteLink items on this page
+    value: Any = None
     vpn_site_name: Any = None
 
 VirtualwanVpnSiteLink = ubx.DataSourceBinding(
     wire_type="azure_network_virtualwan_vpn_site_link",
     fields={
-        "vpn_site_link_name": ubx.FieldSpec(wire_name="vpn_site_link_name"),
         "vpn_site_name": ubx.FieldSpec(wire_name="vpn_site_name"),
     },
 )

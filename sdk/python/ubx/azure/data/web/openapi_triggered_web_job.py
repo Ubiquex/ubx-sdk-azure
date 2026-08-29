@@ -7,78 +7,57 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiTriggeredWebJob_Properties_LatestRun:
-    # Job duration.
+class OpenapiTriggeredWebJob_Value_Properties_LatestRun:
     duration: Any = None
-    # End time.
     end_time: Any = None
-    # Error URL.
     error_url: Any = None
-    # Job name.
     job_name: Any = None
-    # Output URL.
     output_url: Any = None
-    # Start time.
     start_time: Any = None
-    # Job status.
     status: Any = None
-    # Job trigger.
     trigger: Any = None
-    # Job URL.
     url: Any = None
-    # Job ID.
     web_job_id: Any = None
-    # Job name.
     web_job_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiTriggeredWebJob_Properties:
-    # Error information.
+class OpenapiTriggeredWebJob_Value_Properties:
     error: Any = None
-    # Extra Info URL.
     extra_info_url: Any = None
-    # History URL.
     history_url: Any = None
-    # Triggered Web Job Run Information.
     latest_run: Any = None
-    # Property to allow or block all public traffic. Allowed Values: 'Enabled', 'Disabled' or an empty string.
     public_network_access: Any = None
-    # Run command.
     run_command: Any = None
-    # Scheduler Logs URL.
     scheduler_logs_url: Any = None
-    # Job settings.
     settings: Any = None
-    # Checks if Customer provided storage account is required
     storage_account_required: Any = None
-    # Job URL.
     url: Any = None
-    # Using SDK?
     using_sdk: Any = None
-    # Job type.
     web_job_type: Any = None
+
+@dataclasses.dataclass
+class OpenapiTriggeredWebJob_Value:
+    kind: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiTriggeredWebJobConfig:
     name: Any = None
     slot: Any = None
-    web_job_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiTriggeredWebJobAttrs:
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
-    # TriggeredWebJob resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     slot: Any = None
-    web_job_name: Any = None
+    # The TriggeredWebJob items on this page
+    value: Any = None
 
 OpenapiTriggeredWebJob = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_triggered_web_job",
     fields={
         "name": ubx.FieldSpec(wire_name="name"),
         "slot": ubx.FieldSpec(wire_name="slot"),
-        "web_job_name": ubx.FieldSpec(wire_name="web_job_name"),
     },
 )

@@ -7,30 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ProvisionedNetwork_Properties:
-    # The address prefixes of the provisioned network in CIDR notation.
+class ProvisionedNetwork_Value_Properties:
     address_prefix: Any = None
-    # The type of network provisioned.
     network_type: Any = None
-    # provisioned network provisioning state
     provisioning_state: Any = None
+
+@dataclasses.dataclass
+class ProvisionedNetwork_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class ProvisionedNetworkConfig:
     private_cloud_name: Any = None
-    provisioned_network_name: Any = None
 
 @dataclasses.dataclass
 class ProvisionedNetworkAttrs:
+    # The link to the next page of items
+    next_link: Any = None
     private_cloud_name: Any = None
-    # The properties of a provisioned network.
-    properties: Any = None
-    provisioned_network_name: Any = None
+    # The ProvisionedNetwork items on this page
+    value: Any = None
 
 ProvisionedNetwork = ubx.DataSourceBinding(
     wire_type="azure_vmware_provisioned_network",
     fields={
         "private_cloud_name": ubx.FieldSpec(wire_name="private_cloud_name"),
-        "provisioned_network_name": ubx.FieldSpec(wire_name="provisioned_network_name"),
     },
 )

@@ -7,31 +7,32 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiComponentVersion_Properties:
-    # Defines Component definition details. <see href="https://docs.microsoft.com/en-us/azure/machine-learning/reference-yaml-component-command" />
+class OpenapiComponentVersion_Value_Properties:
     component_spec: Any = None
-    # Provisioning state of registry asset.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
+class OpenapiComponentVersion_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiComponentVersionConfig:
-    name: Any = None
-    version: Any = None
-    workspace_name: Any = None
+    component_name: Any = None
+    registry_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiComponentVersionAttrs:
-    name: Any = None
-    # Definition of a component version: defines resources that span component types.
-    properties: Any = None
-    version: Any = None
-    workspace_name: Any = None
+    component_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    registry_name: Any = None
+    # The ComponentVersion items on this page
+    value: Any = None
 
 OpenapiComponentVersion = ubx.DataSourceBinding(
     wire_type="azure_machinelearningservices_openapi_component_version",
     fields={
-        "name": ubx.FieldSpec(wire_name="name"),
-        "version": ubx.FieldSpec(wire_name="version"),
-        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
+        "component_name": ubx.FieldSpec(wire_name="component_name"),
+        "registry_name": ubx.FieldSpec(wire_name="registry_name"),
     },
 )

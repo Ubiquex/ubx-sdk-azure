@@ -3,19 +3,22 @@ package appconfiguration
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type PrivateLinkResource_Properties struct {
-	// The private link resource group id.
+type PrivateLinkResource_Value_Properties struct {
 	GroupId any
-	// The private link resource required member names.
 	RequiredMembers any
-	// The list of required DNS zone names of the private link resource.
 	RequiredZoneNames any
+}
+
+type PrivateLinkResource_Value struct {
+	Id any
+	Name any
+	Properties any
+	Type any
 }
 
 type PrivateLinkResourceConfig struct {
 	ApiVersion any
 	ConfigStoreName any
-	GroupName any
 	ResourceGroupName any
 	SubscriptionId any
 }
@@ -23,17 +26,12 @@ type PrivateLinkResourceConfig struct {
 type PrivateLinkResourceAttrs struct {
 	ApiVersion any
 	ConfigStoreName any
-	GroupName any
-	// The resource ID.
-	Id any
-	// The name of the resource.
-	Name any
-	// Properties of a private link resource.
-	Properties any
+	// The URI that can be used to request the next set of paged results.
+	NextLink any
 	ResourceGroupName any
 	SubscriptionId any
-	// The type of the resource.
-	Type any
+	// The collection value.
+	Value any
 }
 
 var PrivateLinkResource = ubx.DataSourceBinding{
@@ -41,7 +39,6 @@ var PrivateLinkResource = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
 		"ConfigStoreName": ubx.FieldSpec{WireName: "config_store_name"},
-		"GroupName": ubx.FieldSpec{WireName: "group_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},

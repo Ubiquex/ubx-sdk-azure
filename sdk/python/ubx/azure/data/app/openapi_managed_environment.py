@@ -7,193 +7,144 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Identity_UserAssignedIdentities:
+class OpenapiManagedEnvironment_Value_Identity_UserAssignedIdentities:
     client_id: Any = None
     principal_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Identity:
-    # The service principal ID of the system assigned identity. This property will only be provided for a system assigned identity.
+class OpenapiManagedEnvironment_Value_Identity:
     principal_id: Any = None
-    # The tenant ID of the system assigned identity. This property will only be provided for a system assigned identity.
     tenant_id: Any = None
-    # Type of managed service identity (where both SystemAssigned and UserAssigned types are allowed).
     type: Any = None
-    # The set of user assigned identities associated with the resource. The userAssignedIdentities dictionary keys will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}. The dictionary values can be empty objects ({}) in requests.
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfiguration:
-    # Log analytics customer id
+class OpenapiManagedEnvironment_Value_Properties_AppLogsConfiguration_LogAnalyticsConfiguration:
     customer_id: Any = None
-    # Log analytics customer key
     shared_key: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_AppLogsConfiguration:
-    # Logs destination, can be 'log-analytics', 'azure-monitor' or 'none'
+class OpenapiManagedEnvironment_Value_Properties_AppLogsConfiguration:
     destination: Any = None
-    # Log Analytics configuration, must only be provided when destination is configured as 'log-analytics'
     log_analytics_configuration: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_CustomDomainConfiguration_CertificateKeyVaultProperties:
-    # Resource ID of a managed identity to authenticate with Azure Key Vault, or System to use a system-assigned identity.
+class OpenapiManagedEnvironment_Value_Properties_CustomDomainConfiguration_CertificateKeyVaultProperties:
     identity: Any = None
-    # URL pointing to the Azure Key Vault secret that holds the certificate.
     key_vault_url: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_CustomDomainConfiguration:
-    # Properties for a certificate stored in a Key Vault.
+class OpenapiManagedEnvironment_Value_Properties_CustomDomainConfiguration:
     certificate_key_vault_properties: Any = None
-    # Certificate password
     certificate_password: Any = None
-    # PFX or PEM blob
     certificate_value: Any = None
-    # Id used to verify domain name ownership
     custom_domain_verification_id: Any = None
-    # Dns suffix for the environment domain
     dns_suffix: Any = None
-    # Certificate expiration date.
     expiration_date: Any = None
-    # Subject name of the certificate.
     subject_name: Any = None
-    # Certificate thumbprint.
     thumbprint: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_DaprConfiguration:
-    # The version of Dapr
+class OpenapiManagedEnvironment_Value_Properties_DaprConfiguration:
     version: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_IngressConfiguration:
-    # Maximum number of headers per request allowed by the ingress. Must be at least 1. Defaults to 100.
+class OpenapiManagedEnvironment_Value_Properties_IngressConfiguration:
     header_count_limit: Any = None
-    # Duration (in minutes) before idle requests are timed out. Must be between 4 and 30 inclusive. Defaults to 4 minutes.
     request_idle_timeout: Any = None
-    # Time (in seconds) to allow active connections to complete on termination. Must be between 0 and 3600. Defaults to 480 seconds.
     termination_grace_period_seconds: Any = None
-    # Name of the workload profile used by the ingress component. Required.
     workload_profile_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_PeerAuthentication_Mtls:
-    # Boolean indicating whether the mutual TLS authentication is enabled
+class OpenapiManagedEnvironment_Value_Properties_PeerAuthentication_Mtls:
     enabled: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_PeerAuthentication:
-    # Configuration properties for mutual TLS authentication
+class OpenapiManagedEnvironment_Value_Properties_PeerAuthentication:
     mtls: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_PeerTrafficConfiguration:
-    # Peer traffic encryption settings for the Managed Environment
+class OpenapiManagedEnvironment_Value_Properties_PeerTrafficConfiguration:
     encryption: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+class OpenapiManagedEnvironment_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
     id: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+class OpenapiManagedEnvironment_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
     actions_required: Any = None
     description: Any = None
     status: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties:
+class OpenapiManagedEnvironment_Value_Properties_PrivateEndpointConnections_Properties:
     group_ids: Any = None
     private_endpoint: Any = None
     private_link_service_connection_state: Any = None
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_PrivateEndpointConnections:
+class OpenapiManagedEnvironment_Value_Properties_PrivateEndpointConnections:
     properties: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_VnetConfiguration:
-    # CIDR notation IP range assigned to the Docker bridge, network. Must not overlap with any other provided IP ranges.
+class OpenapiManagedEnvironment_Value_Properties_VnetConfiguration:
     docker_bridge_cidr: Any = None
-    # Resource ID of a subnet for infrastructure components. Must not overlap with any other provided IP ranges.
     infrastructure_subnet_id: Any = None
-    # Boolean indicating the environment only has an internal load balancer. These environments do not have a public static IP resource. They must provide infrastructureSubnetId if enabling this property
     internal: Any = None
-    # IP range in CIDR notation that can be reserved for environment infrastructure IP addresses. Must not overlap with any other provided IP ranges.
     platform_reserved_cidr: Any = None
-    # An IP address from the IP range defined by platformReservedCidr that will be reserved for the internal DNS server.
     platform_reserved_dns_ip: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties_WorkloadProfiles:
+class OpenapiManagedEnvironment_Value_Properties_WorkloadProfiles:
     maximum_count: Any = None
     minimum_count: Any = None
     name: Any = None
     workload_profile_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedEnvironment_Properties:
-    # Configuration of application logs
+class OpenapiManagedEnvironment_Value_Properties:
     app_logs_configuration: Any = None
-    # Configuration properties for apps environment custom domain
     custom_domain_configuration: Any = None
-    # Application Insights connection string used by Dapr to export Service to Service communication telemetry
     dapr_aiconnection_string: Any = None
-    # Azure Monitor instrumentation key used by Dapr to export Service to Service communication telemetry
     dapr_aiinstrumentation_key: Any = None
-    # Configuration properties Dapr component
     dapr_configuration: Any = None
-    # Default Domain Name for the cluster
     default_domain: Any = None
-    # Any errors that occurred during deployment or deployment validation
     deployment_errors: Any = None
-    # The endpoint of the eventstream of the Environment.
     event_stream_endpoint: Any = None
-    # Name of the platform-managed resource group created for the Managed Environment to host infrastructure resources. If a subnet ID is provided, this resource group will be created in the same subscription as the subnet.
     infrastructure_resource_group: Any = None
-    # Settings for the ingress component, including workload profile, scaling, and connection handling.
     ingress_configuration: Any = None
-    # Configuration properties Keda component
     keda_configuration: Any = None
-    # Peer authentication settings for the Managed Environment
     peer_authentication: Any = None
-    # Peer traffic settings for the Managed Environment
     peer_traffic_configuration: Any = None
-    # Private endpoint connections to the resource.
     private_endpoint_connections: Any = None
-    # Provisioning state of the Environment.
     provisioning_state: Any = None
-    # Property to allow or block all public traffic. Allowed Values: 'Enabled', 'Disabled'.
     public_network_access: Any = None
-    # Static IP of the Environment
     static_ip: Any = None
-    # Configuration properties for apps environment to join a Virtual Network
     vnet_configuration: Any = None
-    # Workload profiles configured for the Managed Environment.
     workload_profiles: Any = None
-    # Whether or not this Managed Environment is zone-redundant.
     zone_redundant: Any = None
 
 @dataclasses.dataclass
+class OpenapiManagedEnvironment_Value:
+    identity: Any = None
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiManagedEnvironmentConfig:
-    environment_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiManagedEnvironmentAttrs:
-    environment_name: Any = None
-    # Managed service identity (system assigned and/or user assigned identities)
-    identity: Any = None
-    # Kind of the Environment.
-    kind: Any = None
-    # Managed environment resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The ManagedEnvironment items on this page
+    value: Any = None
 
 OpenapiManagedEnvironment = ubx.DataSourceBinding(
     wire_type="azure_app_openapi_managed_environment",
     fields={
-        "environment_name": ubx.FieldSpec(wire_name="environment_name"),
     },
 )

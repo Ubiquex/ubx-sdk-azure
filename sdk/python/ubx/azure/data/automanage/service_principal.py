@@ -7,26 +7,23 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ServicePrincipal_Properties:
-    # Returns the contributor RBAC Role exist or not for the Service Principal Id.
+class ServicePrincipal_Value_Properties:
     authorization_set: Any = None
-    # The Service Principal Id for the subscription.
     service_principal_id: Any = None
 
 @dataclasses.dataclass
-class ServicePrincipal_SystemData:
-    # The timestamp of resource creation (UTC).
+class ServicePrincipal_Value_SystemData:
     created_at: Any = None
-    # The identity that created the resource.
     created_by: Any = None
-    # The type of identity that created the resource.
     created_by_type: Any = None
-    # The timestamp of resource last modification (UTC)
     last_modified_at: Any = None
-    # The identity that last modified the resource.
     last_modified_by: Any = None
-    # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
+
+@dataclasses.dataclass
+class ServicePrincipal_Value:
+    properties: Any = None
+    system_data: Any = None
 
 @dataclasses.dataclass
 class ServicePrincipalConfig:
@@ -34,10 +31,8 @@ class ServicePrincipalConfig:
 
 @dataclasses.dataclass
 class ServicePrincipalAttrs:
-    # The Service Principal properties for the subscription.
-    properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
+    # The list of servicePrincipals.
+    value: Any = None
 
 ServicePrincipal = ubx.DataSourceBinding(
     wire_type="azure_automanage_service_principal",

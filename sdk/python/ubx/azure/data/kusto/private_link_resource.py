@@ -7,30 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class PrivateLinkResource_Properties:
-    # The private link resource group id.
+class PrivateLinkResource_Value_Properties:
     group_id: Any = None
-    # The private link resource required member names.
     required_members: Any = None
-    # The private link resource required zone names.
     required_zone_names: Any = None
+
+@dataclasses.dataclass
+class PrivateLinkResource_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class PrivateLinkResourceConfig:
     cluster_name: Any = None
-    private_link_resource_name: Any = None
 
 @dataclasses.dataclass
 class PrivateLinkResourceAttrs:
     cluster_name: Any = None
-    private_link_resource_name: Any = None
-    # Properties of a private link resource.
-    properties: Any = None
+    # Link to the next page of results.
+    next_link: Any = None
+    # Array of private link resources
+    value: Any = None
 
 PrivateLinkResource = ubx.DataSourceBinding(
     wire_type="azure_kusto_private_link_resource",
     fields={
         "cluster_name": ubx.FieldSpec(wire_name="cluster_name"),
-        "private_link_resource_name": ubx.FieldSpec(wire_name="private_link_resource_name"),
     },
 )

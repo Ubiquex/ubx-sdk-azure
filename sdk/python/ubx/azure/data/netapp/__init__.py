@@ -4,30 +4,19 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .backup_policies_list import BackupPoliciesList, BackupPoliciesListConfig
+from .backup import Backup, BackupConfig
+from .backup_policy import BackupPolicy, BackupPolicyConfig
 from .backup_status import BackupStatus, BackupStatusConfig
-from .backup_vaults_list import BackupVaultsList, BackupVaultsListConfig
-from .backups_list import BackupsList, BackupsListConfig
-from .bucket_list import BucketList, BucketListConfig
-from .cache_list import CacheList, CacheListConfig
-from .capacity_pool_list import CapacityPoolList, CapacityPoolListConfig
-from .net_app_account_list import NetAppAccountList, NetAppAccountListConfig
-from .operation_list_result import OperationListResult, OperationListResultConfig
-from .quota_item import QuotaItem, QuotaItemConfig
-from .quota_item_list import QuotaItemList, QuotaItemListConfig
+from .backup_vault import BackupVault, BackupVaultConfig
+from .bucket import Bucket, BucketConfig
+from .cache import Cache, CacheConfig
+from .capacity_pool import CapacityPool, CapacityPoolConfig
+from .net_app_account import NetAppAccount, NetAppAccountConfig
 from .ransomware_report import RansomwareReport, RansomwareReportConfig
-from .ransomware_reports_list import RansomwareReportsList, RansomwareReportsListConfig
-from .region_info import RegionInfo, RegionInfoConfig
-from .region_info_resource import RegionInfoResource, RegionInfoResourceConfig
-from .region_infos_list import RegionInfosList, RegionInfosListConfig
 from .replication_status import ReplicationStatus, ReplicationStatusConfig
 from .restore_status import RestoreStatus, RestoreStatusConfig
-from .snapshot_policies_list import SnapshotPoliciesList, SnapshotPoliciesListConfig
-from .snapshot_policy_volume_list import SnapshotPolicyVolumeList, SnapshotPolicyVolumeListConfig
-from .snapshots_list import SnapshotsList, SnapshotsListConfig
-from .subvolumes_list import SubvolumesList, SubvolumesListConfig
-from .usage_result import UsageResult, UsageResultConfig
-from .usages_list_result import UsagesListResult, UsagesListResultConfig
-from .volume_group_list import VolumeGroupList, VolumeGroupListConfig
-from .volume_list import VolumeList, VolumeListConfig
-from .volume_quota_rules_list import VolumeQuotaRulesList, VolumeQuotaRulesListConfig
+from .snapshot import Snapshot, SnapshotConfig
+from .snapshot_policy import SnapshotPolicy, SnapshotPolicyConfig
+from .subvolume_info import SubvolumeInfo, SubvolumeInfoConfig
+from .volume import Volume, VolumeConfig
+from .volume_group import VolumeGroup, VolumeGroupConfig
