@@ -1,6 +1,6 @@
 {
   "name": "@ubx/sdk-azure",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Generated TypeScript bindings for azure@dynamic (ubx sdk gen). DO NOT EDIT.",
   "type": "module",
   "dependencies": {
