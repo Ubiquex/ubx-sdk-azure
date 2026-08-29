@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDscNodeReport_Errors:
+class OpenapiDscNodeReport_Value_Errors:
     error_code: Any = None
     error_details: Any = None
     error_message: Any = None
@@ -16,28 +16,21 @@ class OpenapiDscNodeReport_Errors:
     resource_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiDscNodeReport_MetaConfiguration:
-    # Gets or sets the ActionAfterReboot value of the meta configuration.
+class OpenapiDscNodeReport_Value_MetaConfiguration:
     action_after_reboot: Any = None
-    # Gets or sets the AllowModuleOverwrite value of the meta configuration.
     allow_module_overwrite: Any = None
-    # Gets or sets the CertificateId value of the meta configuration.
     certificate_id: Any = None
-    # Gets or sets the ConfigurationMode value of the meta configuration.
     configuration_mode: Any = None
-    # Gets or sets the ConfigurationModeFrequencyMins value of the meta configuration.
     configuration_mode_frequency_mins: Any = None
-    # Gets or sets the RebootNodeIfNeeded value of the meta configuration.
     reboot_node_if_needed: Any = None
-    # Gets or sets the RefreshFrequencyMins value of the meta configuration.
     refresh_frequency_mins: Any = None
 
 @dataclasses.dataclass
-class OpenapiDscNodeReport_Resources_DependsOn:
+class OpenapiDscNodeReport_Value_Resources_DependsOn:
     resource_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiDscNodeReport_Resources:
+class OpenapiDscNodeReport_Value_Resources:
     depends_on: Any = None
     duration_in_seconds: Any = None
     error: Any = None
@@ -50,58 +43,45 @@ class OpenapiDscNodeReport_Resources:
     status: Any = None
 
 @dataclasses.dataclass
+class OpenapiDscNodeReport_Value:
+    configuration_version: Any = None
+    end_time: Any = None
+    errors: Any = None
+    host_name: Any = None
+    i_pv4_addresses: Any = None
+    i_pv6_addresses: Any = None
+    id: Any = None
+    last_modified_time: Any = None
+    meta_configuration: Any = None
+    number_of_resources: Any = None
+    raw_errors: Any = None
+    reboot_requested: Any = None
+    refresh_mode: Any = None
+    report_format_version: Any = None
+    report_id: Any = None
+    resources: Any = None
+    start_time: Any = None
+    status: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
 class OpenapiDscNodeReportConfig:
     automation_account_name: Any = None
     node_id: Any = None
-    report_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiDscNodeReportAttrs:
     automation_account_name: Any = None
-    # Gets or sets the configurationVersion of the node report.
-    configuration_version: Any = None
-    # Gets or sets the end time of the node report.
-    end_time: Any = None
-    # Gets or sets the errors for the node report.
-    errors: Any = None
-    # Gets or sets the hostname of the node that sent the report.
-    host_name: Any = None
-    # Gets or sets the IPv4 address of the node that sent the report.
-    i_pv4_addresses: Any = None
-    # Gets or sets the IPv6 address of the node that sent the report.
-    i_pv6_addresses: Any = None
-    # Gets or sets the id.
-    id: Any = None
-    # Gets or sets the lastModifiedTime of the node report.
-    last_modified_time: Any = None
-    # Definition of the DSC Meta Configuration.
-    meta_configuration: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     node_id: Any = None
-    # Gets or sets the number of resource in the node report.
-    number_of_resources: Any = None
-    # Gets or sets the unparsed errors for the node report.
-    raw_errors: Any = None
-    # Gets or sets the rebootRequested of the node report.
-    reboot_requested: Any = None
-    # Gets or sets the refreshMode of the node report.
-    refresh_mode: Any = None
-    # Gets or sets the reportFormatVersion of the node report.
-    report_format_version: Any = None
-    report_id: Any = None
-    # Gets or sets the resource for the node report.
-    resources: Any = None
-    # Gets or sets the start time of the node report.
-    start_time: Any = None
-    # Gets or sets the status of the node report.
-    status: Any = None
-    # Gets or sets the type of the node report.
-    type: Any = None
+    # The DscNodeReport items on this page
+    value: Any = None
 
 OpenapiDscNodeReport = ubx.DataSourceBinding(
     wire_type="azure_automation_openapi_dsc_node_report",
     fields={
         "automation_account_name": ubx.FieldSpec(wire_name="automation_account_name"),
         "node_id": ubx.FieldSpec(wire_name="node_id"),
-        "report_id": ubx.FieldSpec(wire_name="report_id"),
     },
 )

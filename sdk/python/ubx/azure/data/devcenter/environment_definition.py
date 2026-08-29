@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class EnvironmentDefinition_Properties_Parameters:
+class EnvironmentDefinition_Value_Properties_Parameters:
     description: Any = None
     id: Any = None
     name: Any = None
@@ -16,27 +16,34 @@ class EnvironmentDefinition_Properties_Parameters:
     type: Any = None
 
 @dataclasses.dataclass
-class EnvironmentDefinition_Properties:
-    # A short description of the environment definition.
+class EnvironmentDefinition_Value_Properties:
     description: Any = None
-    # Input parameters passed to an environment.
     parameters: Any = None
-    # Path to the Environment Definition entrypoint file.
     template_path: Any = None
-    # Catalog resource validation status
     validation_status: Any = None
 
 @dataclasses.dataclass
+class EnvironmentDefinition_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class EnvironmentDefinitionConfig:
-    pass
+    catalog_name: Any = None
+    dev_center_name: Any = None
 
 @dataclasses.dataclass
 class EnvironmentDefinitionAttrs:
-    # Properties of an environment definition.
-    properties: Any = None
+    catalog_name: Any = None
+    dev_center_name: Any = None
+    # URL to get the next set of results if there are any.
+    next_link: Any = None
+    # Current page of results.
+    value: Any = None
 
 EnvironmentDefinition = ubx.DataSourceBinding(
     wire_type="azure_devcenter_environment_definition",
     fields={
+        "catalog_name": ubx.FieldSpec(wire_name="catalog_name"),
+        "dev_center_name": ubx.FieldSpec(wire_name="dev_center_name"),
     },
 )

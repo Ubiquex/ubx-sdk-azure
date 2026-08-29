@@ -4,4 +4,11 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
+from .openapi_administrator_microsoft_entra import OpenapiAdministratorMicrosoftEntra, OpenapiAdministratorMicrosoftEntraConfig
+from .openapi_advanced_threat_protection_settings_model import OpenapiAdvancedThreatProtectionSettingsModel, OpenapiAdvancedThreatProtectionSettingsModelConfig
+from .openapi_backup_automatic_and_on_demand import OpenapiBackupAutomaticAndOnDemand, OpenapiBackupAutomaticAndOnDemandConfig
+from .openapi_database import OpenapiDatabase, OpenapiDatabaseConfig
+from .openapi_firewall_rule import OpenapiFirewallRule, OpenapiFirewallRuleConfig
 from .openapi_migration import OpenapiMigration, OpenapiMigrationConfig
+from .openapi_server import OpenapiServer, OpenapiServerConfig
+from .openapi_virtual_endpoint import OpenapiVirtualEndpoint, OpenapiVirtualEndpointConfig

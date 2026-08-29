@@ -3,23 +3,24 @@ package resources
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DeploymentscriptsScriptLog_Properties struct {
-	// Script execution logs in text format.
+type DeploymentscriptsScriptLog_Value_Properties struct {
 	Log any
+}
+
+type DeploymentscriptsScriptLog_Value struct {
+	Properties any
 }
 
 type DeploymentscriptsScriptLogConfig struct {
 	ResourceGroupName any
 	ScriptName any
-	Tail any
 }
 
 type DeploymentscriptsScriptLogAttrs struct {
-	// Script log properties.
-	Properties any
 	ResourceGroupName any
 	ScriptName any
-	Tail any
+	// Deployment scripts logs.
+	Value any
 }
 
 var DeploymentscriptsScriptLog = ubx.DataSourceBinding{
@@ -27,6 +28,5 @@ var DeploymentscriptsScriptLog = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"ScriptName": ubx.FieldSpec{WireName: "script_name"},
-		"Tail": ubx.FieldSpec{WireName: "tail"},
 	},
 }

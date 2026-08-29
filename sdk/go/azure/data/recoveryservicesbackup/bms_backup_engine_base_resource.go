@@ -3,76 +3,53 @@ package recoveryservicesbackup
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type BmsBackupEngineBaseResource_Properties_ExtendedInfo struct {
-	// Disk space currently available in the backup engine.
+type BmsBackupEngineBaseResource_Value_Properties_ExtendedInfo struct {
 	AvailableDiskSpace any
-	// Protected instances in the backup engine.
 	AzureProtectedInstances any
-	// Database name of backup engine.
 	DatabaseName any
-	// Number of disks in the backup engine.
 	DiskCount any
-	// Number of protected items in the backup engine.
 	ProtectedItemsCount any
-	// Number of protected servers in the backup engine.
 	ProtectedServersCount any
-	// Last refresh time in the backup engine.
 	RefreshedAt any
-	// Disk space used in the backup engine.
 	UsedDiskSpace any
 }
 
-type BmsBackupEngineBaseResource_Properties struct {
-	// Backup agent version
+type BmsBackupEngineBaseResource_Value_Properties struct {
 	AzureBackupAgentVersion any
-	// ID of the backup engine.
 	BackupEngineId any
-	// Status of the backup engine with the Recovery Services Vault. = {Active/Deleting/DeleteFailed}
 	BackupEngineState any
-	// Type of the backup engine.
 	BackupEngineType any
-	// Backup management type to execute the current job.
 	BackupManagementType any
-	// Flag indicating if the backup engine be registered, once already registered.
 	CanReRegister any
-	// Backup engine version
 	DpmVersion any
-	// Additional information on backup engine.
 	ExtendedInfo any
-	// Friendly name of the backup engine.
 	FriendlyName any
-	// Backup status of the backup engine.
 	HealthStatus any
-	// To check if backup agent upgrade available
 	IsAzureBackupAgentUpgradeAvailable any
-	// To check if backup engine upgrade available
 	IsDpmUpgradeAvailable any
-	// Registration status of the backup engine with the Recovery Services Vault.
 	RegistrationStatus any
 }
 
+type BmsBackupEngineBaseResource_Value struct {
+	ETag any
+	Location any
+	Properties any
+	Tags any
+}
+
 type BmsBackupEngineBaseResourceConfig struct {
-	BackupEngineName any
 	VaultName any
 }
 
 type BmsBackupEngineBaseResourceAttrs struct {
-	BackupEngineName any
-	// Optional ETag.
-	ETag any
-	// Represents an Azure geography region where supported resource providers live.
-	Location any
-	// The base backup engine class. All workload specific backup engines derive from this class.
-	Properties any
-	// Resource tags.
-	Tags any
+	// List of resources.
+	Value any
 	VaultName any
 }
 
 var BmsBackupEngineBaseResource = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_backup_engine_base_resource",
 	Fields: ubx.FieldMap{
-		"BackupEngineName": ubx.FieldSpec{WireName: "backup_engine_name"},
 		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

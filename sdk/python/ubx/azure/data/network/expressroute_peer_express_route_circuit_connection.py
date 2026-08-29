@@ -7,48 +7,42 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ExpressroutePeerExpressRouteCircuitConnection_Properties_ExpressRouteCircuitPeering:
-    # Resource ID.
+class ExpressroutePeerExpressRouteCircuitConnection_Value_Properties_ExpressRouteCircuitPeering:
     id: Any = None
 
 @dataclasses.dataclass
-class ExpressroutePeerExpressRouteCircuitConnection_Properties:
-    # /29 IP address space to carve out Customer addresses for tunnels.
+class ExpressroutePeerExpressRouteCircuitConnection_Value_Properties:
     address_prefix: Any = None
-    # The resource guid of the authorization used for the express route circuit connection.
     auth_resource_guid: Any = None
-    # Express Route Circuit connection state.
     circuit_connection_status: Any = None
-    # The name of the express route circuit connection resource.
     connection_name: Any = None
-    # Reference to another subresource.
     express_route_circuit_peering: Any = None
-    # Reference to another subresource.
     peer_express_route_circuit_peering: Any = None
-    # Provisioning states of a resource.
     provisioning_state: Any = None
+
+@dataclasses.dataclass
+class ExpressroutePeerExpressRouteCircuitConnection_Value:
+    etag: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class ExpressroutePeerExpressRouteCircuitConnectionConfig:
     circuit_name: Any = None
-    connection_name: Any = None
     peering_name: Any = None
 
 @dataclasses.dataclass
 class ExpressroutePeerExpressRouteCircuitConnectionAttrs:
     circuit_name: Any = None
-    connection_name: Any = None
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     peering_name: Any = None
-    # Properties of the peer express route circuit connection.
-    properties: Any = None
+    # The PeerExpressRouteCircuitConnection items on this page
+    value: Any = None
 
 ExpressroutePeerExpressRouteCircuitConnection = ubx.DataSourceBinding(
     wire_type="azure_network_expressroute_peer_express_route_circuit_connection",
     fields={
         "circuit_name": ubx.FieldSpec(wire_name="circuit_name"),
-        "connection_name": ubx.FieldSpec(wire_name="connection_name"),
         "peering_name": ubx.FieldSpec(wire_name="peering_name"),
     },
 )

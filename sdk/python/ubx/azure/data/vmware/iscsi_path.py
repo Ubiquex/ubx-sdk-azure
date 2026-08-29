@@ -7,11 +7,13 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class IscsiPath_Properties:
-    # CIDR Block for iSCSI path.
+class IscsiPath_Value_Properties:
     network_block: Any = None
-    # private cloud provisioning state
     provisioning_state: Any = None
+
+@dataclasses.dataclass
+class IscsiPath_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class IscsiPathConfig:
@@ -19,9 +21,11 @@ class IscsiPathConfig:
 
 @dataclasses.dataclass
 class IscsiPathAttrs:
+    # The link to the next page of items
+    next_link: Any = None
     private_cloud_name: Any = None
-    # The properties of an iSCSI path resource
-    properties: Any = None
+    # The IscsiPath items on this page
+    value: Any = None
 
 IscsiPath = ubx.DataSourceBinding(
     wire_type="azure_vmware_iscsi_path",

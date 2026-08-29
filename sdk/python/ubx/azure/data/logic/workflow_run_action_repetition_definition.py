@@ -7,20 +7,22 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class WorkflowRunActionRepetitionDefinition_Properties_RepetitionIndexes:
+class WorkflowRunActionRepetitionDefinition_Value_Properties_RepetitionIndexes:
     item_index: Any = None
     scope_name: Any = None
 
 @dataclasses.dataclass
-class WorkflowRunActionRepetitionDefinition_Properties:
-    # The repetition indexes.
+class WorkflowRunActionRepetitionDefinition_Value_Properties:
     repetition_indexes: Any = None
+
+@dataclasses.dataclass
+class WorkflowRunActionRepetitionDefinition_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class WorkflowRunActionRepetitionDefinitionConfig:
     action_name: Any = None
     api_version: Any = None
-    repetition_name: Any = None
     resource_group_name: Any = None
     run_name: Any = None
     subscription_id: Any = None
@@ -30,12 +32,12 @@ class WorkflowRunActionRepetitionDefinitionConfig:
 class WorkflowRunActionRepetitionDefinitionAttrs:
     action_name: Any = None
     api_version: Any = None
-    # The workflow run action repetition properties definition.
-    properties: Any = None
-    repetition_name: Any = None
+    # The link used to get the next page of recommendations.
+    next_link: Any = None
     resource_group_name: Any = None
     run_name: Any = None
     subscription_id: Any = None
+    value: Any = None
     workflow_name: Any = None
 
 WorkflowRunActionRepetitionDefinition = ubx.DataSourceBinding(
@@ -43,7 +45,6 @@ WorkflowRunActionRepetitionDefinition = ubx.DataSourceBinding(
     fields={
         "action_name": ubx.FieldSpec(wire_name="action_name"),
         "api_version": ubx.FieldSpec(wire_name="api_version"),
-        "repetition_name": ubx.FieldSpec(wire_name="repetition_name"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "run_name": ubx.FieldSpec(wire_name="run_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),

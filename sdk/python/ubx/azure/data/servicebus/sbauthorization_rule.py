@@ -7,31 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class SbauthorizationRule_Properties:
-    # The rights associated with the rule.
+class SbauthorizationRule_Value_Properties:
     rights: Any = None
 
 @dataclasses.dataclass
+class SbauthorizationRule_Value:
+    location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class SbauthorizationRuleConfig:
-    alias: Any = None
-    authorization_rule_name: Any = None
     namespace_name: Any = None
 
 @dataclasses.dataclass
 class SbauthorizationRuleAttrs:
-    alias: Any = None
-    authorization_rule_name: Any = None
-    # The geo-location where the resource lives
-    location: Any = None
     namespace_name: Any = None
-    # AuthorizationRule properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The SBAuthorizationRule items on this page
+    value: Any = None
 
 SbauthorizationRule = ubx.DataSourceBinding(
     wire_type="azure_servicebus_sbauthorization_rule",
     fields={
-        "alias": ubx.FieldSpec(wire_name="alias"),
-        "authorization_rule_name": ubx.FieldSpec(wire_name="authorization_rule_name"),
         "namespace_name": ubx.FieldSpec(wire_name="namespace_name"),
     },
 )

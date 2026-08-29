@@ -4,6 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .private_zone_list_result import PrivateZoneListResult, PrivateZoneListResultConfig
-from .record_set_list_result import RecordSetListResult, RecordSetListResultConfig
-from .virtual_network_link_list_result import VirtualNetworkLinkListResult, VirtualNetworkLinkListResultConfig
+from .record_set import RecordSet, RecordSetConfig
+from .virtual_network_link import VirtualNetworkLink, VirtualNetworkLinkConfig

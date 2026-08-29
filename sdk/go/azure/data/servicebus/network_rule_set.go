@@ -3,31 +3,31 @@ package servicebus
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type NetworkRuleSet_Properties_IpRules struct {
+type NetworkRuleSet_Value_Properties_IpRules struct {
 	Action any
 	IpMask any
 }
 
-type NetworkRuleSet_Properties_VirtualNetworkRules_Subnet struct {
+type NetworkRuleSet_Value_Properties_VirtualNetworkRules_Subnet struct {
 	Id any
 }
 
-type NetworkRuleSet_Properties_VirtualNetworkRules struct {
+type NetworkRuleSet_Value_Properties_VirtualNetworkRules struct {
 	IgnoreMissingVnetServiceEndpoint any
 	Subnet any
 }
 
-type NetworkRuleSet_Properties struct {
-	// Default Action for Network Rule Set
+type NetworkRuleSet_Value_Properties struct {
 	DefaultAction any
-	// List of IpRules
 	IpRules any
-	// This determines if traffic is allowed over public network. By default it is enabled.
 	PublicNetworkAccess any
-	// Value that indicates whether Trusted Service Access is Enabled or not.
 	TrustedServiceAccessEnabled any
-	// List VirtualNetwork Rules
 	VirtualNetworkRules any
+}
+
+type NetworkRuleSet_Value struct {
+	Location any
+	Properties any
 }
 
 type NetworkRuleSetConfig struct {
@@ -35,11 +35,11 @@ type NetworkRuleSetConfig struct {
 }
 
 type NetworkRuleSetAttrs struct {
-	// The geo-location where the resource lives
-	Location any
 	NamespaceName any
-	// NetworkRuleSet properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The NetworkRuleSet items on this page
+	Value any
 }
 
 var NetworkRuleSet = ubx.DataSourceBinding{

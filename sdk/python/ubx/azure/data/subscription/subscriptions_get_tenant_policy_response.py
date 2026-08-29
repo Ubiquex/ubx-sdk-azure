@@ -7,30 +7,28 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class SubscriptionsGetTenantPolicyResponse_Properties:
-    # Blocks the entering of subscriptions into user's tenant.
+class SubscriptionsGetTenantPolicyResponse_Value_Properties:
     block_subscriptions_into_tenant: Any = None
-    # Blocks the leaving of subscriptions from user's tenant.
     block_subscriptions_leaving_tenant: Any = None
-    # List of user objectIds that are exempted from the set subscription tenant policies for the user's tenant.
     exempted_principals: Any = None
-    # Policy Id.
     policy_id: Any = None
 
 @dataclasses.dataclass
-class SubscriptionsGetTenantPolicyResponse_SystemData:
-    # The timestamp of resource creation (UTC).
+class SubscriptionsGetTenantPolicyResponse_Value_SystemData:
     created_at: Any = None
-    # The identity that created the resource.
     created_by: Any = None
-    # The type of identity that created the resource.
     created_by_type: Any = None
-    # The timestamp of resource last modification (UTC)
     last_modified_at: Any = None
-    # The identity that last modified the resource.
     last_modified_by: Any = None
-    # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
+
+@dataclasses.dataclass
+class SubscriptionsGetTenantPolicyResponse_Value:
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    system_data: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
 class SubscriptionsGetTenantPolicyResponseConfig:
@@ -39,16 +37,10 @@ class SubscriptionsGetTenantPolicyResponseConfig:
 @dataclasses.dataclass
 class SubscriptionsGetTenantPolicyResponseAttrs:
     api_version: Any = None
-    # Policy Id.
-    id: Any = None
-    # Policy name.
-    name: Any = None
-    # Tenant policy.
-    properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    # Resource type.
-    type: Any = None
+    # The link (url) to the next page of results.
+    next_link: Any = None
+    # The list of tenant policies.
+    value: Any = None
 
 SubscriptionsGetTenantPolicyResponse = ubx.DataSourceBinding(
     wire_type="azure_subscription_subscriptions_get_tenant_policy_response",

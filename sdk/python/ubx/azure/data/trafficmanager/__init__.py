@@ -5,6 +5,6 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .heat_map_model import HeatMapModel, HeatMapModelConfig
-from .profile_list_result import ProfileListResult, ProfileListResultConfig
+from .profile import Profile, ProfileConfig
 from .traffic_manager_geographic_hierarchy import TrafficManagerGeographicHierarchy, TrafficManagerGeographicHierarchyConfig
 from .user_metrics_model import UserMetricsModel, UserMetricsModelConfig

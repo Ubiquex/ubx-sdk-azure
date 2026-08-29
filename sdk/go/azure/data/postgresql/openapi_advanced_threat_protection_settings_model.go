@@ -3,29 +3,30 @@ package postgresql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiAdvancedThreatProtectionSettingsModel_Properties struct {
-	// Specifies the creation time (UTC) of the policy.
+type OpenapiAdvancedThreatProtectionSettingsModel_Value_Properties struct {
 	CreationTime any
-	// Specifies the state of the advanced threat protection, whether it is enabled, disabled, or a state has not been applied yet on the server.
 	State any
+}
+
+type OpenapiAdvancedThreatProtectionSettingsModel_Value struct {
+	Properties any
 }
 
 type OpenapiAdvancedThreatProtectionSettingsModelConfig struct {
 	ServerName any
-	ThreatProtectionName any
 }
 
 type OpenapiAdvancedThreatProtectionSettingsModelAttrs struct {
-	// Properties of advanced threat protection state for a server.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ServerName any
-	ThreatProtectionName any
+	// The AdvancedThreatProtectionSettingsModel items on this page
+	Value any
 }
 
 var OpenapiAdvancedThreatProtectionSettingsModel = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_advanced_threat_protection_settings_model",
 	Fields: ubx.FieldMap{
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
-		"ThreatProtectionName": ubx.FieldSpec{WireName: "threat_protection_name"},
 	},
 }

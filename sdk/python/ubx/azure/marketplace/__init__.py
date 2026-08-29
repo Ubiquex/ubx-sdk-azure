@@ -7,4 +7,5 @@ SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 from .admin_request_approvals_resource import AdminRequestApprovalsResource, AdminRequestApprovalsResourceConfig
 from .collection import Collection, CollectionConfig
 from .offer import Offer, OfferConfig
+from .private_store import PrivateStore, PrivateStoreConfig
 from .request_approval_resource import RequestApprovalResource, RequestApprovalResourceConfig

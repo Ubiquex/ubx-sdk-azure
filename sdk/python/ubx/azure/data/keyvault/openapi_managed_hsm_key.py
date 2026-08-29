@@ -7,97 +7,77 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiManagedHsmKey_Properties_Attributes:
-    # Creation time in seconds since 1970-01-01T00:00:00Z.
+class OpenapiManagedHsmKey_Value_Properties_Attributes:
     created: Any = None
-    # Determines whether or not the object is enabled.
     enabled: Any = None
-    # Expiry date in seconds since 1970-01-01T00:00:00Z.
     exp: Any = None
-    # Indicates if the private key can be exported.
     exportable: Any = None
-    # Not before date in seconds since 1970-01-01T00:00:00Z.
     nbf: Any = None
-    # The deletion recovery level currently in effect for the object. If it contains 'Purgeable', then the object can be permanently deleted by a privileged user; otherwise, only the system can purge the object at the end of the retention interval.
     recovery_level: Any = None
-    # Last updated time in seconds since 1970-01-01T00:00:00Z.
     updated: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedHsmKey_Properties_ReleasePolicy:
-    # Content type and version of key release policy
+class OpenapiManagedHsmKey_Value_Properties_ReleasePolicy:
     content_type: Any = None
-    # Blob encoding the policy rules under which the key can be released.
     data: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedHsmKey_Properties_RotationPolicy_Attributes:
-    # Creation time in seconds since 1970-01-01T00:00:00Z.
+class OpenapiManagedHsmKey_Value_Properties_RotationPolicy_Attributes:
     created: Any = None
-    # The expiration time for the new key version. It should be in ISO8601 format. Eg: 'P90D', 'P1Y'.
     expiry_time: Any = None
-    # Last updated time in seconds since 1970-01-01T00:00:00Z.
     updated: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_Action:
+class OpenapiManagedHsmKey_Value_Properties_RotationPolicy_LifetimeActions_Action:
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_Trigger:
+class OpenapiManagedHsmKey_Value_Properties_RotationPolicy_LifetimeActions_Trigger:
     time_after_create: Any = None
     time_before_expiry: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions:
+class OpenapiManagedHsmKey_Value_Properties_RotationPolicy_LifetimeActions:
     action: Any = None
     trigger: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedHsmKey_Properties_RotationPolicy:
+class OpenapiManagedHsmKey_Value_Properties_RotationPolicy:
     attributes: Any = None
-    # The lifetimeActions for key rotation action.
     lifetime_actions: Any = None
 
 @dataclasses.dataclass
-class OpenapiManagedHsmKey_Properties:
-    # The object attributes managed by the Azure Key Vault service.
+class OpenapiManagedHsmKey_Value_Properties:
     attributes: Any = None
-    # The elliptic curve name. For valid values, see JsonWebKeyCurveName. Default for EC and EC-HSM keys is P-256
     curve_name: Any = None
     key_ops: Any = None
-    # The key size in bits. For example: 2048, 3072, or 4096 for RSA. Default for RSA and RSA-HSM keys is 2048. Exception made for bring your own key (BYOK), key exchange keys default to 4096.
     key_size: Any = None
-    # The URI to retrieve the current version of the key.
     key_uri: Any = None
-    # The URI to retrieve the specific version of the key.
     key_uri_with_version: Any = None
-    # The type of the key. For valid values, see JsonWebKeyType.
     kty: Any = None
     release_policy: Any = None
     rotation_policy: Any = None
 
 @dataclasses.dataclass
+class OpenapiManagedHsmKey_Value:
+    properties: Any = None
+    tags: Any = None
+
+@dataclasses.dataclass
 class OpenapiManagedHsmKeyConfig:
-    key_name: Any = None
-    key_version: Any = None
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagedHsmKeyAttrs:
-    key_name: Any = None
-    key_version: Any = None
     name: Any = None
-    # The properties of the key.
-    properties: Any = None
-    # Resource tags
-    tags: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The ManagedHsmKey items on this page
+    value: Any = None
 
 OpenapiManagedHsmKey = ubx.DataSourceBinding(
     wire_type="azure_keyvault_openapi_managed_hsm_key",
     fields={
-        "key_name": ubx.FieldSpec(wire_name="key_name"),
-        "key_version": ubx.FieldSpec(wire_name="key_version"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

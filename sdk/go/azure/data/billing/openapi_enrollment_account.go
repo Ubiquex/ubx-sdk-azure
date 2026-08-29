@@ -3,50 +3,60 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiEnrollmentAccount_Properties struct {
-	// The owner of the enrollment account.
+type OpenapiEnrollmentAccount_Value_Properties struct {
 	AccountOwner any
-	// The authorization type of the enrollment account.
 	AuthType any
-	// The cost center associated with the enrollment account.
 	CostCenter any
-	// The name of the department under which the enrollment account exists.
 	DepartmentDisplayName any
-	// The ID that uniquely identifies the department.
 	DepartmentId any
-	// The name of the enrollment account.
 	DisplayName any
-	// The date of expiration of the enrollment account.
 	EndDate any
-	// Boolean flag which enables subscribers to run development and testing workloads on Azure at special Dev/Test rates.
 	IsDevTestEnabled any
-	// The date from which the enrollment account became valid and functional.
 	StartDate any
-	// The status of the enrollment account.
 	Status any
+}
+
+type OpenapiEnrollmentAccount_Value struct {
+	Properties any
+	Tags any
 }
 
 type OpenapiEnrollmentAccountConfig struct {
 	BillingAccountName any
+	Count any
 	DepartmentName any
-	EnrollmentAccountName any
+	Filter any
+	OrderBy any
+	Search any
+	Skip any
+	Top any
 }
 
 type OpenapiEnrollmentAccountAttrs struct {
 	BillingAccountName any
+	Count any
 	DepartmentName any
-	EnrollmentAccountName any
-	// It is an organizational hierarchy within a billing account to administer and manage azure costs.
-	Properties any
-	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-	Tags any
+	Filter any
+	// The link to the next page of items
+	NextLink any
+	OrderBy any
+	Search any
+	Skip any
+	Top any
+	// The EnrollmentAccount items on this page
+	Value any
 }
 
 var OpenapiEnrollmentAccount = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_enrollment_account",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
+		"Count": ubx.FieldSpec{WireName: "count"},
 		"DepartmentName": ubx.FieldSpec{WireName: "department_name"},
-		"EnrollmentAccountName": ubx.FieldSpec{WireName: "enrollment_account_name"},
+		"Filter": ubx.FieldSpec{WireName: "filter"},
+		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
+		"Search": ubx.FieldSpec{WireName: "search"},
+		"Skip": ubx.FieldSpec{WireName: "skip"},
+		"Top": ubx.FieldSpec{WireName: "top"},
 	},
 }

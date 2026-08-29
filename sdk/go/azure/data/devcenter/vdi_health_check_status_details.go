@@ -3,7 +3,7 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type VdiHealthCheckStatusDetails_Properties_HealthChecks struct {
+type VdiHealthCheckStatusDetails_Value_Properties_HealthChecks struct {
 	AdditionalDetails any
 	DisplayName any
 	EndDateTime any
@@ -13,28 +13,28 @@ type VdiHealthCheckStatusDetails_Properties_HealthChecks struct {
 	Status any
 }
 
-type VdiHealthCheckStatusDetails_Properties struct {
-	// End time of last execution of the health checks.
+type VdiHealthCheckStatusDetails_Value_Properties struct {
 	EndDateTime any
-	// Details for each health check item.
 	HealthChecks any
-	// Start time of last execution of the health checks.
 	StartDateTime any
 }
 
+type VdiHealthCheckStatusDetails_Value struct {
+	Properties any
+}
+
 type VdiHealthCheckStatusDetailsConfig struct {
-	NetworkConnectionName any
 }
 
 type VdiHealthCheckStatusDetailsAttrs struct {
-	NetworkConnectionName any
-	// Health Check properties.
-	Properties any
+	// URL to get the next set of results if there are any.
+	NextLink any
+	// Current page of results.
+	Value any
 }
 
 var VdiHealthCheckStatusDetails = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_vdi_health_check_status_details",
 	Fields: ubx.FieldMap{
-		"NetworkConnectionName": ubx.FieldSpec{WireName: "network_connection_name"},
 	},
 }

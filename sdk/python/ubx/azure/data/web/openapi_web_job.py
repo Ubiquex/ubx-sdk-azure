@@ -7,43 +7,38 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiWebJob_Properties:
-    # Error information.
+class OpenapiWebJob_Value_Properties:
     error: Any = None
-    # Extra Info URL.
     extra_info_url: Any = None
-    # Run command.
     run_command: Any = None
-    # Job settings.
     settings: Any = None
-    # Job URL.
     url: Any = None
-    # Using SDK?
     using_sdk: Any = None
-    # Job type.
     web_job_type: Any = None
+
+@dataclasses.dataclass
+class OpenapiWebJob_Value:
+    kind: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiWebJobConfig:
     name: Any = None
     slot: Any = None
-    web_job_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiWebJobAttrs:
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
-    # WebJob resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     slot: Any = None
-    web_job_name: Any = None
+    # The WebJob items on this page
+    value: Any = None
 
 OpenapiWebJob = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_web_job",
     fields={
         "name": ubx.FieldSpec(wire_name="name"),
         "slot": ubx.FieldSpec(wire_name="slot"),
-        "web_job_name": ubx.FieldSpec(wire_name="web_job_name"),
     },
 )

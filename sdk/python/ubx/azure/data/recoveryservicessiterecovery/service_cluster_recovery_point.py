@@ -7,49 +7,45 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ServiceClusterRecoveryPoint_Properties_ProviderSpecificDetails:
-    # Gets the provider type.
+class ServiceClusterRecoveryPoint_Value_Properties_ProviderSpecificDetails:
     instance_type: Any = None
 
 @dataclasses.dataclass
-class ServiceClusterRecoveryPoint_Properties:
-    # Replication provider specific cluster recovery point details.
+class ServiceClusterRecoveryPoint_Value_Properties:
     provider_specific_details: Any = None
-    # The recovery point time.
     recovery_point_time: Any = None
-    # The recovery point type.
     recovery_point_type: Any = None
+
+@dataclasses.dataclass
+class ServiceClusterRecoveryPoint_Value:
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
 class ServiceClusterRecoveryPointConfig:
     fabric_name: Any = None
     protection_container_name: Any = None
-    recovery_point_name: Any = None
     replication_protection_cluster_name: Any = None
     resource_name: Any = None
 
 @dataclasses.dataclass
 class ServiceClusterRecoveryPointAttrs:
     fabric_name: Any = None
-    # The recovery point Id.
-    id: Any = None
-    # The recovery point name.
-    name: Any = None
-    # Cluster recovery point properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     protection_container_name: Any = None
-    recovery_point_name: Any = None
     replication_protection_cluster_name: Any = None
     resource_name: Any = None
-    # The resource type.
-    type: Any = None
+    # The ClusterRecoveryPoint items on this page
+    value: Any = None
 
 ServiceClusterRecoveryPoint = ubx.DataSourceBinding(
     wire_type="azure_recoveryservicessiterecovery_service_cluster_recovery_point",
     fields={
         "fabric_name": ubx.FieldSpec(wire_name="fabric_name"),
         "protection_container_name": ubx.FieldSpec(wire_name="protection_container_name"),
-        "recovery_point_name": ubx.FieldSpec(wire_name="recovery_point_name"),
         "replication_protection_cluster_name": ubx.FieldSpec(wire_name="replication_protection_cluster_name"),
         "resource_name": ubx.FieldSpec(wire_name="resource_name"),
     },

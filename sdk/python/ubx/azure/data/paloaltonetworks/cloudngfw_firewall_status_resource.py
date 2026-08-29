@@ -7,35 +7,28 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class CloudngfwFirewallStatusResource_Properties_PanoramaStatus:
-    # Connectivity Status for Panorama Server
+class CloudngfwFirewallStatusResource_Value_Properties_PanoramaStatus:
     panorama_server2_status: Any = None
-    # Connectivity Status for Panorama Server
     panorama_server_status: Any = None
 
 @dataclasses.dataclass
-class CloudngfwFirewallStatusResource_Properties_StrataCloudManagerInfo:
-    # Strata Cloud Manager folder in which this firewall has been placed
+class CloudngfwFirewallStatusResource_Value_Properties_StrataCloudManagerInfo:
     folder_name: Any = None
-    # URL for Strata Cloud Manager
     hub_url: Any = None
 
 @dataclasses.dataclass
-class CloudngfwFirewallStatusResource_Properties:
-    # Detail description of current health of the Firewall
+class CloudngfwFirewallStatusResource_Value_Properties:
     health_reason: Any = None
-    # Status Codes for the Firewall
     health_status: Any = None
-    # Boolean Enum
     is_panorama_managed: Any = None
-    # Boolean Enum
     is_strata_cloud_managed: Any = None
-    # Panorama connectivity information
     panorama_status: Any = None
-    # Provisioning state of the firewall resource.
     provisioning_state: Any = None
-    # Strata Cloud Manager Info
     strata_cloud_manager_info: Any = None
+
+@dataclasses.dataclass
+class CloudngfwFirewallStatusResource_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class CloudngfwFirewallStatusResourceConfig:
@@ -44,8 +37,10 @@ class CloudngfwFirewallStatusResourceConfig:
 @dataclasses.dataclass
 class CloudngfwFirewallStatusResourceAttrs:
     firewall_name: Any = None
-    # Firewall Status
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The FirewallStatusResource items on this page
+    value: Any = None
 
 CloudngfwFirewallStatusResource = ubx.DataSourceBinding(
     wire_type="azure_paloaltonetworks_cloudngfw_firewall_status_resource",

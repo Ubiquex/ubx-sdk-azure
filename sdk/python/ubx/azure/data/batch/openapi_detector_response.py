@@ -7,30 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDetectorResponse_Properties:
-    # A base64 encoded string that represents the content of a detector.
+class OpenapiDetectorResponse_Value_Properties:
     value: Any = None
+
+@dataclasses.dataclass
+class OpenapiDetectorResponse_Value:
+    etag: Any = None
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiDetectorResponseConfig:
     account_name: Any = None
-    detector_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiDetectorResponseAttrs:
     account_name: Any = None
-    detector_id: Any = None
-    # The ETag of the resource, used for concurrency statements.
-    etag: Any = None
-    # Detector response properties.
-    properties: Any = None
-    # The tags of the resource.
-    tags: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The DetectorResponse items on this page
+    value: Any = None
 
 OpenapiDetectorResponse = ubx.DataSourceBinding(
     wire_type="azure_batch_openapi_detector_response",
     fields={
         "account_name": ubx.FieldSpec(wire_name="account_name"),
-        "detector_id": ubx.FieldSpec(wire_name="detector_id"),
     },
 )

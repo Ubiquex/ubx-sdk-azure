@@ -3,50 +3,37 @@ package automanage
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ConfigurationProfileAssignment_Properties struct {
-	// The Automanage configurationProfile ARM Resource URI.
+type ConfigurationProfileAssignment_Value_Properties struct {
 	ConfigurationProfile any
-	// The status of onboarding, which only appears in the response.
 	Status any
-	// The target VM resource URI
 	TargetId any
 }
 
-type ConfigurationProfileAssignment_SystemData struct {
-	// The timestamp of resource creation (UTC).
+type ConfigurationProfileAssignment_Value_SystemData struct {
 	CreatedAt any
-	// The identity that created the resource.
 	CreatedBy any
-	// The type of identity that created the resource.
 	CreatedByType any
-	// The timestamp of resource last modification (UTC)
 	LastModifiedAt any
-	// The identity that last modified the resource.
 	LastModifiedBy any
-	// The type of identity that last modified the resource.
 	LastModifiedByType any
 }
 
+type ConfigurationProfileAssignment_Value struct {
+	ManagedBy any
+	Properties any
+	SystemData any
+}
+
 type ConfigurationProfileAssignmentConfig struct {
-	ConfigurationProfileAssignmentName any
-	VmName any
 }
 
 type ConfigurationProfileAssignmentAttrs struct {
-	ConfigurationProfileAssignmentName any
-	// Azure resource id. Indicates if this resource is managed by another Azure resource.
-	ManagedBy any
-	// Automanage configuration profile assignment properties.
-	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
-	VmName any
+	// Result of the list configuration profile assignment operation.
+	Value any
 }
 
 var ConfigurationProfileAssignment = ubx.DataSourceBinding{
 	WireType: "azure_automanage_configuration_profile_assignment",
 	Fields: ubx.FieldMap{
-		"ConfigurationProfileAssignmentName": ubx.FieldSpec{WireName: "configuration_profile_assignment_name"},
-		"VmName": ubx.FieldSpec{WireName: "vm_name"},
 	},
 }

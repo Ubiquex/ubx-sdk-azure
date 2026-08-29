@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .public_keys_group_list_result import PublicKeysGroupListResult, PublicKeysGroupListResultConfig
+from .public_key_resource import PublicKeyResource, PublicKeyResourceConfig

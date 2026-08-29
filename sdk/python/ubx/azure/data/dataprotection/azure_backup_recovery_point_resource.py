@@ -7,28 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class AzureBackupRecoveryPointResource_Properties:
+class AzureBackupRecoveryPointResource_Value_Properties:
     object_type: Any = None
+
+@dataclasses.dataclass
+class AzureBackupRecoveryPointResource_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class AzureBackupRecoveryPointResourceConfig:
     backup_instance_name: Any = None
-    recovery_point_id: Any = None
     vault_name: Any = None
 
 @dataclasses.dataclass
 class AzureBackupRecoveryPointResourceAttrs:
     backup_instance_name: Any = None
-    # Azure backup recoveryPoint
-    properties: Any = None
-    recovery_point_id: Any = None
+    # List of resources.
+    value: Any = None
     vault_name: Any = None
 
 AzureBackupRecoveryPointResource = ubx.DataSourceBinding(
     wire_type="azure_dataprotection_azure_backup_recovery_point_resource",
     fields={
         "backup_instance_name": ubx.FieldSpec(wire_name="backup_instance_name"),
-        "recovery_point_id": ubx.FieldSpec(wire_name="recovery_point_id"),
         "vault_name": ubx.FieldSpec(wire_name="vault_name"),
     },
 )

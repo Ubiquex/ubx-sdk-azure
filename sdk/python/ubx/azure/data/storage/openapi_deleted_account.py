@@ -7,31 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDeletedAccount_Properties:
-    # Creation time of the deleted account.
+class OpenapiDeletedAccount_Value_Properties:
     creation_time: Any = None
-    # Deletion time of the deleted account.
     deletion_time: Any = None
-    # Location of the deleted account.
     location: Any = None
-    # Can be used to attempt recovering this deleted account via PutStorageAccount API.
     restore_reference: Any = None
-    # Full resource id of the original storage account.
     storage_account_resource_id: Any = None
 
 @dataclasses.dataclass
+class OpenapiDeletedAccount_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiDeletedAccountConfig:
-    deleted_account_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiDeletedAccountAttrs:
-    deleted_account_name: Any = None
-    # Attributes of a deleted storage account.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The DeletedAccount items on this page
+    value: Any = None
 
 OpenapiDeletedAccount = ubx.DataSourceBinding(
     wire_type="azure_storage_openapi_deleted_account",
     fields={
-        "deleted_account_name": ubx.FieldSpec(wire_name="deleted_account_name"),
     },
 )

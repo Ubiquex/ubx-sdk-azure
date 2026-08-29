@@ -3,12 +3,12 @@ package azurestackhci
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type HciUpdateSummaries_Properties_HealthCheckResult_Tags struct {
+type HciUpdateSummaries_Value_Properties_HealthCheckResult_Tags struct {
 	Key any
 	Value any
 }
 
-type HciUpdateSummaries_Properties_HealthCheckResult struct {
+type HciUpdateSummaries_Value_Properties_HealthCheckResult struct {
 	AdditionalData any
 	Description any
 	DisplayName any
@@ -26,39 +26,31 @@ type HciUpdateSummaries_Properties_HealthCheckResult struct {
 	Title any
 }
 
-type HciUpdateSummaries_Properties_PackageVersions struct {
+type HciUpdateSummaries_Value_Properties_PackageVersions struct {
 	LastUpdated any
 	PackageType any
 	Version any
 }
 
-type HciUpdateSummaries_Properties struct {
-	// Current OEM Version.
+type HciUpdateSummaries_Value_Properties struct {
 	CurrentOemVersion any
-	// Current Sbe version of the stamp.
 	CurrentSbeVersion any
-	// Current Solution Bundle version of the stamp.
 	CurrentVersion any
-	// Name of the hardware model.
 	HardwareModel any
-	// Last time the package-specific checks were run.
 	HealthCheckDate any
-	// An array of pre-check result objects.
 	HealthCheckResult any
-	// Overall health state for update-specific health checks. Indicates whether the system is functioning correctly, has warnings or errors, or is undergoing a health evaluation.
 	HealthState any
-	// Last time the update service successfully checked for updates
 	LastChecked any
-	// Last time an update installation completed successfully.
 	LastUpdated any
-	// OEM family name.
 	OemFamily any
-	// Current version of each updatable component.
 	PackageVersions any
-	// Provisioning state of the ArcSetting proxy resource.
 	ProvisioningState any
-	// Overall update state of the stamp. Indicates the current status of update deployment across the stamp, including preparation, application, and any issues encountered.
 	State any
+}
+
+type HciUpdateSummaries_Value struct {
+	Location any
+	Properties any
 }
 
 type HciUpdateSummariesConfig struct {
@@ -67,10 +59,10 @@ type HciUpdateSummariesConfig struct {
 
 type HciUpdateSummariesAttrs struct {
 	ClusterName any
-	// The geo-location where the resource lives
-	Location any
-	// Properties of Update summaries
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The UpdateSummaries items on this page
+	Value any
 }
 
 var HciUpdateSummaries = ubx.DataSourceBinding{

@@ -7,104 +7,73 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ManagementOpenapiAlert_Properties_Definition:
-    # Alert category
+class ManagementOpenapiAlert_Value_Properties_Definition:
     category: Any = None
-    # Criteria that triggered alert
     criteria: Any = None
-    # type of alert
     type: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiAlert_Properties_Details:
-    # budget threshold amount
+class ManagementOpenapiAlert_Value_Properties_Details:
     amount: Any = None
-    # company name
     company_name: Any = None
-    # list of emails to contact
     contact_emails: Any = None
-    # list of action groups to broadcast to
     contact_groups: Any = None
-    # list of contact roles
     contact_roles: Any = None
-    # current spend
     current_spend: Any = None
-    # department name
     department_name: Any = None
-    # datetime of enrollmentEndDate
     enrollment_end_date: Any = None
-    # enrollment number
     enrollment_number: Any = None
-    # datetime of enrollmentStartDate
     enrollment_start_date: Any = None
-    # invoicing threshold
     invoicing_threshold: Any = None
-    # array of meters to filter by
     meter_filter: Any = None
-    # operator used to compare currentSpend with amount
     operator: Any = None
-    # overriding alert
     overriding_alert: Any = None
-    # datetime of periodStartDate
     period_start_date: Any = None
-    # array of resources to filter by
     resource_filter: Any = None
-    # array of resourceGroups to filter by
     resource_group_filter: Any = None
-    # tags to filter by
     tag_filter: Any = None
-    # notification threshold percentage as a decimal which activated this alert
     threshold: Any = None
-    # Type of timegrain cadence
     time_grain_type: Any = None
-    # notificationId that triggered this alert
     triggered_by: Any = None
-    # unit of currency being used
     unit: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiAlert_Properties:
-    # dateTime in which alert was closed
+class ManagementOpenapiAlert_Value_Properties:
     close_time: Any = None
-    # related budget
     cost_entity_id: Any = None
-    # dateTime in which alert was created
     creation_time: Any = None
-    # defines the type of alert
     definition: Any = None
-    # Alert description
     description: Any = None
-    # Alert details
     details: Any = None
-    # dateTime in which alert was last modified
     modification_time: Any = None
-    # Source of alert
     source: Any = None
-    # alert status
     status: Any = None
-    # dateTime in which the alert status was last modified
     status_modification_time: Any = None
-    # User who last modified the alert
     status_modification_user_name: Any = None
 
 @dataclasses.dataclass
+class ManagementOpenapiAlert_Value:
+    e_tag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class ManagementOpenapiAlertConfig:
-    alert_id: Any = None
-    scope: Any = None
+    external_cloud_provider_id: Any = None
+    external_cloud_provider_type: Any = None
 
 @dataclasses.dataclass
 class ManagementOpenapiAlertAttrs:
-    alert_id: Any = None
-    # The ETag (or entity tag) HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content was not changed. It is a string of ASCII characters placed between double quotes, like "675af34563dc-tr34".
-    e_tag: Any = None
-    # Alert properties.
-    properties: Any = None
-    scope: Any = None
+    external_cloud_provider_id: Any = None
+    external_cloud_provider_type: Any = None
+    # URL to get the next set of alerts results if there are any.
+    next_link: Any = None
+    # List of alerts.
+    value: Any = None
 
 ManagementOpenapiAlert = ubx.DataSourceBinding(
     wire_type="azure_cost_management_openapi_alert",
     fields={
-        "alert_id": ubx.FieldSpec(wire_name="alert_id"),
-        "scope": ubx.FieldSpec(wire_name="scope"),
+        "external_cloud_provider_id": ubx.FieldSpec(wire_name="external_cloud_provider_id"),
+        "external_cloud_provider_type": ubx.FieldSpec(wire_name="external_cloud_provider_type"),
     },
 )

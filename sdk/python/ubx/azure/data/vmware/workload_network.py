@@ -7,9 +7,12 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class WorkloadNetwork_Properties:
-    # base Workload Network provisioning state
+class WorkloadNetwork_Value_Properties:
     provisioning_state: Any = None
+
+@dataclasses.dataclass
+class WorkloadNetwork_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class WorkloadNetworkConfig:
@@ -17,9 +20,11 @@ class WorkloadNetworkConfig:
 
 @dataclasses.dataclass
 class WorkloadNetworkAttrs:
+    # The link to the next page of items
+    next_link: Any = None
     private_cloud_name: Any = None
-    # The properties of a workload network
-    properties: Any = None
+    # The WorkloadNetwork items on this page
+    value: Any = None
 
 WorkloadNetwork = ubx.DataSourceBinding(
     wire_type="azure_vmware_workload_network",

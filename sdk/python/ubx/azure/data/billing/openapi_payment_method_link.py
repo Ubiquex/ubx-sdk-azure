@@ -7,75 +7,58 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiPaymentMethodLink_Properties_Logos:
+class OpenapiPaymentMethodLink_Value_Properties_Logos:
     mime_type: Any = None
     url: Any = None
 
 @dataclasses.dataclass
-class OpenapiPaymentMethodLink_Properties_PaymentMethod:
-    # The account holder name for the payment method. This is only supported for payment methods with family CreditCard.
+class OpenapiPaymentMethodLink_Value_Properties_PaymentMethod:
     account_holder_name: Any = None
-    # The display name of the payment method.
     display_name: Any = None
-    # The expiration month and year of the payment method. This is only supported for payment methods with family CreditCard.
     expiration: Any = None
-    # Payment on Account type.
     family: Any = None
-    # Id of payment method.
     id: Any = None
-    # Last four digits of payment method.
     last_four_digits: Any = None
-    # The list of logos for the payment method.
     logos: Any = None
-    # The type of payment method.
     payment_method_type: Any = None
-    # Status of the payment method.
     status: Any = None
 
 @dataclasses.dataclass
-class OpenapiPaymentMethodLink_Properties:
-    # The account holder name for the payment method. This is only supported for payment methods with family CreditCard.
+class OpenapiPaymentMethodLink_Value_Properties:
     account_holder_name: Any = None
-    # The display name of the payment method.
     display_name: Any = None
-    # The expiration month and year of the payment method. This is only supported for payment methods with family CreditCard.
     expiration: Any = None
-    # Payment on Account type.
     family: Any = None
-    # Last four digits of payment method.
     last_four_digits: Any = None
-    # The list of logos for the payment method.
     logos: Any = None
-    # The properties of a payment method.
     payment_method: Any = None
-    # Id of payment method. Example: /providers/Microsoft.Billing/paymentMethods/ABCDABCDABC0
     payment_method_id: Any = None
-    # The type of payment method.
     payment_method_type: Any = None
-    # Status of the payment method.
     status: Any = None
+
+@dataclasses.dataclass
+class OpenapiPaymentMethodLink_Value:
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiPaymentMethodLinkConfig:
     billing_account_name: Any = None
     billing_profile_name: Any = None
-    payment_method_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiPaymentMethodLinkAttrs:
     billing_account_name: Any = None
     billing_profile_name: Any = None
-    payment_method_name: Any = None
-    # The properties of a payment method link.
-    properties: Any = None
-    # Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-    tags: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The PaymentMethodLink items on this page
+    value: Any = None
 
 OpenapiPaymentMethodLink = ubx.DataSourceBinding(
     wire_type="azure_billing_openapi_payment_method_link",
     fields={
         "billing_account_name": ubx.FieldSpec(wire_name="billing_account_name"),
         "billing_profile_name": ubx.FieldSpec(wire_name="billing_profile_name"),
-        "payment_method_name": ubx.FieldSpec(wire_name="payment_method_name"),
     },
 )

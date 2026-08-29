@@ -3,39 +3,34 @@ package healthcareapis
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type HealthcareApisPrivateLinkResourceDescription_SystemData struct {
-	// The timestamp of resource creation (UTC).
+type HealthcareApisPrivateLinkResourceDescription_Value_SystemData struct {
 	CreatedAt any
-	// The identity that created the resource.
 	CreatedBy any
-	// The type of identity that created the resource.
 	CreatedByType any
-	// The timestamp of resource last modification (UTC)
 	LastModifiedAt any
-	// The identity that last modified the resource.
 	LastModifiedBy any
-	// The type of identity that last modified the resource.
 	LastModifiedByType any
 }
 
+type HealthcareApisPrivateLinkResourceDescription_Value struct {
+	SystemData any
+}
+
 type HealthcareApisPrivateLinkResourceDescriptionConfig struct {
-	GroupName any
 	ResourceGroupName any
 	ResourceName any
 }
 
 type HealthcareApisPrivateLinkResourceDescriptionAttrs struct {
-	GroupName any
 	ResourceGroupName any
 	ResourceName any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
+	// Array of private link resources
+	Value any
 }
 
 var HealthcareApisPrivateLinkResourceDescription = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_private_link_resource_description",
 	Fields: ubx.FieldMap{
-		"GroupName": ubx.FieldSpec{WireName: "group_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},

@@ -7,36 +7,38 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class PrivateLinkResource_Properties:
+class PrivateLinkResource_Value_Properties:
     display_name: Any = None
     group_id: Any = None
     required_members: Any = None
     required_zone_names: Any = None
 
 @dataclasses.dataclass
+class PrivateLinkResource_Value:
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
 class PrivateLinkResourceConfig:
     api_version: Any = None
     parent_name: Any = None
     parent_type: Any = None
-    private_link_resource_name: Any = None
     resource_group_name: Any = None
     subscription_id: Any = None
 
 @dataclasses.dataclass
 class PrivateLinkResourceAttrs:
     api_version: Any = None
-    # Fully qualified identifier of the resource.
-    id: Any = None
-    # Name of the resource.
-    name: Any = None
+    # A link for the next page of private link resources.
+    next_link: Any = None
     parent_name: Any = None
     parent_type: Any = None
-    private_link_resource_name: Any = None
-    properties: Any = None
     resource_group_name: Any = None
     subscription_id: Any = None
-    # Type of the resource.
-    type: Any = None
+    # A collection of private link resources
+    value: Any = None
 
 PrivateLinkResource = ubx.DataSourceBinding(
     wire_type="azure_eventgrid_private_link_resource",
@@ -44,7 +46,6 @@ PrivateLinkResource = ubx.DataSourceBinding(
         "api_version": ubx.FieldSpec(wire_name="api_version"),
         "parent_name": ubx.FieldSpec(wire_name="parent_name"),
         "parent_type": ubx.FieldSpec(wire_name="parent_type"),
-        "private_link_resource_name": ubx.FieldSpec(wire_name="private_link_resource_name"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },

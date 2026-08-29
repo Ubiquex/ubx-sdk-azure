@@ -7,33 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiAutonomousDbVersion_Properties:
-    # WorkloadType enum
+class OpenapiAutonomousDbVersion_Value_Properties:
     db_workload: Any = None
-    # True if this version of the Oracle Database software's default is free.
     is_default_for_free: Any = None
-    # True if this version of the Oracle Database software's default is paid.
     is_default_for_paid: Any = None
-    # True if this version of the Oracle Database software can be used for Always-Free Autonomous Databases.
     is_free_tier_enabled: Any = None
-    # True if this version of the Oracle Database software has payments enabled.
     is_paid_enabled: Any = None
-    # Supported Autonomous Db versions.
     version: Any = None
 
 @dataclasses.dataclass
+class OpenapiAutonomousDbVersion_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiAutonomousDbVersionConfig:
-    autonomousdbversionsname: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiAutonomousDbVersionAttrs:
-    autonomousdbversionsname: Any = None
-    # AutonomousDbVersion resource model
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The AutonomousDbVersion items on this page
+    value: Any = None
 
 OpenapiAutonomousDbVersion = ubx.DataSourceBinding(
     wire_type="azure_oracle_openapi_autonomous_db_version",
     fields={
-        "autonomousdbversionsname": ubx.FieldSpec(wire_name="autonomousdbversionsname"),
     },
 )

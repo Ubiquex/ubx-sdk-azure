@@ -7,48 +7,39 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class SqlpoolReplicationLink_Properties:
-    # Legacy value indicating whether termination is allowed. Currently always returns true.
+class SqlpoolReplicationLink_Value_Properties:
     is_termination_allowed: Any = None
-    # The name of the partner Sql pool.
     partner_database: Any = None
-    # The Azure Region of the partner Sql pool.
     partner_location: Any = None
-    # The role of the partner Sql pool in the replication link.
     partner_role: Any = None
-    # The name of the workspace hosting the partner Sql pool.
     partner_server: Any = None
-    # The percentage of seeding complete for the replication link.
     percent_complete: Any = None
-    # Replication mode of this replication link.
     replication_mode: Any = None
-    # The replication state for the replication link.
     replication_state: Any = None
-    # The role of the Sql pool in the replication link.
     role: Any = None
-    # The start time for the replication link.
     start_time: Any = None
 
 @dataclasses.dataclass
+class SqlpoolReplicationLink_Value:
+    location: Any = None
+    properties: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
 class SqlpoolReplicationLinkConfig:
-    link_id: Any = None
     sql_pool_name: Any = None
 
 @dataclasses.dataclass
 class SqlpoolReplicationLinkAttrs:
-    link_id: Any = None
-    # Location of the workspace that contains this firewall rule.
-    location: Any = None
-    # Represents the properties of a Sql pool replication link.
-    properties: Any = None
+    # Link to retrieve next page of results.
+    next_link: Any = None
     sql_pool_name: Any = None
-    # Type of resource this is.
-    type: Any = None
+    # The list of Sql pool replication links housed in the Sql pool.
+    value: Any = None
 
 SqlpoolReplicationLink = ubx.DataSourceBinding(
     wire_type="azure_synapse_sqlpool_replication_link",
     fields={
-        "link_id": ubx.FieldSpec(wire_name="link_id"),
         "sql_pool_name": ubx.FieldSpec(wire_name="sql_pool_name"),
     },
 )

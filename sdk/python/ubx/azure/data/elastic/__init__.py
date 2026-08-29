@@ -4,9 +4,8 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .monitor_resource_list_response import MonitorResourceListResponse, MonitorResourceListResponseConfig
-from .monitored_subscription_properties_list import MonitoredSubscriptionPropertiesList, MonitoredSubscriptionPropertiesListConfig
-from .monitoring_tag_rules_list_response import MonitoringTagRulesListResponse, MonitoringTagRulesListResponseConfig
-from .open_aiintegration_rpmodel_list_response import OpenAiintegrationRpmodelListResponse, OpenAiintegrationRpmodelListResponseConfig
-from .operation_list_result import OperationListResult, OperationListResultConfig
-from .versions_list_response import VersionsListResponse, VersionsListResponseConfig
+from .monitor_resource import MonitorResource, MonitorResourceConfig
+from .monitored_subscription_properties import MonitoredSubscriptionProperties, MonitoredSubscriptionPropertiesConfig
+from .monitoring_tag_rules import MonitoringTagRules, MonitoringTagRulesConfig
+from .open_aiintegration_rpmodel import OpenAiintegrationRpmodel, OpenAiintegrationRpmodelConfig
+from .version_list_format import VersionListFormat, VersionListFormatConfig

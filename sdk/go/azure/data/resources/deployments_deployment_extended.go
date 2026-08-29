@@ -3,30 +3,29 @@ package resources
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DeploymentsDeploymentExtended_Properties_DebugSetting struct {
-	// Specifies the type of information to log for debugging. The permitted values are none, requestContent, responseContent, or both requestContent and responseContent separated by a comma. The default is none. When setting this value, carefully consider the type of information you are passing in during deployment. By logging information about the request or response, you could potentially expose sensitive data that is retrieved through the deployment operations.
+type DeploymentsDeploymentExtended_Value_Properties_DebugSetting struct {
 	DetailLevel any
 }
 
-type DeploymentsDeploymentExtended_Properties_Dependencies_DependsOn struct {
+type DeploymentsDeploymentExtended_Value_Properties_Dependencies_DependsOn struct {
 	Id any
 	ResourceName any
 	ResourceType any
 }
 
-type DeploymentsDeploymentExtended_Properties_Dependencies struct {
+type DeploymentsDeploymentExtended_Value_Properties_Dependencies struct {
 	DependsOn any
 	Id any
 	ResourceName any
 	ResourceType any
 }
 
-type DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfo struct {
+type DeploymentsDeploymentExtended_Value_Properties_Diagnostics_AdditionalInfo struct {
 	Info any
 	Type any
 }
 
-type DeploymentsDeploymentExtended_Properties_Diagnostics struct {
+type DeploymentsDeploymentExtended_Value_Properties_Diagnostics struct {
 	AdditionalInfo any
 	Code any
 	Level any
@@ -34,39 +33,34 @@ type DeploymentsDeploymentExtended_Properties_Diagnostics struct {
 	Target any
 }
 
-type DeploymentsDeploymentExtended_Properties_Error_Details struct {
+type DeploymentsDeploymentExtended_Value_Properties_Error_Details struct {
 }
 
-type DeploymentsDeploymentExtended_Properties_Error struct {
-	// The error additional info.
+type DeploymentsDeploymentExtended_Value_Properties_Error struct {
 	AdditionalInfo any
-	// The error code.
 	Code any
-	// The error details.
 	Details any
-	// The error message.
 	Message any
-	// The error target.
 	Target any
 }
 
-type DeploymentsDeploymentExtended_Properties_Extensions_Config_KeyVaultReference_KeyVault struct {
+type DeploymentsDeploymentExtended_Value_Properties_Extensions_Config_KeyVaultReference_KeyVault struct {
 	Id any
 }
 
-type DeploymentsDeploymentExtended_Properties_Extensions_Config_KeyVaultReference struct {
+type DeploymentsDeploymentExtended_Value_Properties_Extensions_Config_KeyVaultReference struct {
 	KeyVault any
 	SecretName any
 	SecretVersion any
 }
 
-type DeploymentsDeploymentExtended_Properties_Extensions_Config struct {
+type DeploymentsDeploymentExtended_Value_Properties_Extensions_Config struct {
 	KeyVaultReference any
 	Type any
 	Value any
 }
 
-type DeploymentsDeploymentExtended_Properties_Extensions struct {
+type DeploymentsDeploymentExtended_Value_Properties_Extensions struct {
 	Alias any
 	Config any
 	ConfigId any
@@ -74,16 +68,13 @@ type DeploymentsDeploymentExtended_Properties_Extensions struct {
 	Version any
 }
 
-type DeploymentsDeploymentExtended_Properties_OnErrorDeployment struct {
-	// The deployment to be used on error case.
+type DeploymentsDeploymentExtended_Value_Properties_OnErrorDeployment struct {
 	DeploymentName any
-	// The state of the provisioning for the on error deployment.
 	ProvisioningState any
-	// The deployment on error behavior type. Possible values are LastSuccessful and SpecificDeployment.
 	Type any
 }
 
-type DeploymentsDeploymentExtended_Properties_OutputResources struct {
+type DeploymentsDeploymentExtended_Value_Properties_OutputResources struct {
 	ApiVersion any
 	Extension any
 	Id any
@@ -91,32 +82,30 @@ type DeploymentsDeploymentExtended_Properties_OutputResources struct {
 	ResourceType any
 }
 
-type DeploymentsDeploymentExtended_Properties_ParametersLink struct {
-	// If included, must match the ContentVersion in the template.
+type DeploymentsDeploymentExtended_Value_Properties_ParametersLink struct {
 	ContentVersion any
-	// The URI of the parameters file.
 	Uri any
 }
 
-type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata struct {
+type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata struct {
 	Attributes any
 	Type any
 }
 
-type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPattern struct {
+type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases_DefaultPattern struct {
 	Phrase any
 	Type any
 	Variable any
 }
 
-type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_Paths struct {
+type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases_Paths struct {
 	ApiVersions any
 	Metadata any
 	Path any
 	Pattern any
 }
 
-type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases struct {
+type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases struct {
 	DefaultMetadata any
 	DefaultPath any
 	DefaultPattern any
@@ -125,23 +114,23 @@ type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases st
 	Type any
 }
 
-type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfiles struct {
+type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_ApiProfiles struct {
 	ApiVersion any
 	ProfileVersion any
 }
 
-type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappings struct {
+type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_LocationMappings struct {
 	ExtendedLocations any
 	Location any
 	Type any
 }
 
-type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappings struct {
+type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_ZoneMappings struct {
 	Location any
 	Zones any
 }
 
-type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes struct {
+type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes struct {
 	Aliases any
 	ApiProfiles any
 	ApiVersions any
@@ -154,7 +143,7 @@ type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes struct {
 	ZoneMappings any
 }
 
-type DeploymentsDeploymentExtended_Properties_Providers struct {
+type DeploymentsDeploymentExtended_Value_Properties_Providers struct {
 	Id any
 	Namespace any
 	ProviderAuthorizationConsentState any
@@ -163,79 +152,58 @@ type DeploymentsDeploymentExtended_Properties_Providers struct {
 	ResourceTypes any
 }
 
-type DeploymentsDeploymentExtended_Properties_TemplateLink struct {
-	// If included, must match the ContentVersion in the template.
+type DeploymentsDeploymentExtended_Value_Properties_TemplateLink struct {
 	ContentVersion any
-	// The resource id of a Template Spec. Use either the id or uri property, but not both.
 	Id any
-	// The query string (for example, a SAS token) to be used with the templateLink URI.
 	QueryString any
-	// The relativePath property can be used to deploy a linked template at a location relative to the parent. If the parent template was linked with a TemplateSpec, this will reference an artifact in the TemplateSpec. If the parent was linked with a URI, the child deployment will be a combination of the parent and relativePath URIs
 	RelativePath any
-	// The URI of the template to deploy. Use either the uri or id property, but not both.
 	Uri any
 }
 
-type DeploymentsDeploymentExtended_Properties struct {
-	// The correlation ID of the deployment.
+type DeploymentsDeploymentExtended_Value_Properties struct {
 	CorrelationId any
-	// The debug setting.
 	DebugSetting any
-	// The list of deployment dependencies.
 	Dependencies any
-	// Contains diagnostic information collected during validation process.
 	Diagnostics any
-	// The duration of the template deployment.
 	Duration any
-	// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also follows the OData error response format.)
 	Error any
-	// The extensions used in this deployment.
 	Extensions any
-	// The mode that is used to deploy resources. This value can be either Incremental or Complete. In Incremental mode, resources are deployed without deleting existing resources that are not included in the template. In Complete mode, resources are deployed and existing resources in the resource group that are not included in the template are deleted. Be careful when using Complete mode as you may unintentionally delete resources.
 	Mode any
-	// Deployment on error behavior with additional details.
 	OnErrorDeployment any
-	// Array of provisioned resources.
 	OutputResources any
-	// Key/value pairs that represent deployment output.
 	Outputs any
-	// Deployment parameters.
 	Parameters any
-	// Entity representing the reference to the deployment parameters.
 	ParametersLink any
-	// The list of resource providers needed for the deployment.
 	Providers any
-	// Denotes the state of provisioning.
 	ProvisioningState any
-	// The hash produced for the template.
 	TemplateHash any
-	// Entity representing the reference to the template.
 	TemplateLink any
-	// The timestamp of the template deployment.
 	Timestamp any
-	// Array of validated resources.
 	ValidatedResources any
-	// The level of validation performed on the deployment.
 	ValidationLevel any
 }
 
+type DeploymentsDeploymentExtended_Value struct {
+	Location any
+	Properties any
+	Tags any
+}
+
 type DeploymentsDeploymentExtendedConfig struct {
-	DeploymentName any
+	GroupId any
 }
 
 type DeploymentsDeploymentExtendedAttrs struct {
-	DeploymentName any
-	// the location of the deployment.
-	Location any
-	// Deployment properties with additional details.
-	Properties any
-	// Deployment tags
-	Tags any
+	GroupId any
+	// The link to the next page of items
+	NextLink any
+	// The DeploymentExtended items on this page
+	Value any
 }
 
 var DeploymentsDeploymentExtended = ubx.DataSourceBinding{
 	WireType: "azure_resources_deployments_deployment_extended",
 	Fields: ubx.FieldMap{
-		"DeploymentName": ubx.FieldSpec{WireName: "deployment_name"},
+		"GroupId": ubx.FieldSpec{WireName: "group_id"},
 	},
 }

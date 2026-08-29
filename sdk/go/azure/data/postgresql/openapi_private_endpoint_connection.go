@@ -3,29 +3,25 @@ package postgresql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiPrivateEndpointConnection_Properties_PrivateEndpoint struct {
-	// The ARM identifier for private endpoint.
+type OpenapiPrivateEndpointConnection_Value_Properties_PrivateEndpoint struct {
 	Id any
 }
 
-type OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState struct {
-	// A message indicating if changes on the service provider require any updates on the consumer.
+type OpenapiPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	// The reason for approval/rejection of the connection.
 	Description any
-	// The private endpoint connection status.
 	Status any
 }
 
-type OpenapiPrivateEndpointConnection_Properties struct {
-	// The group ids for the private endpoint resource.
+type OpenapiPrivateEndpointConnection_Value_Properties struct {
 	GroupIds any
-	// The private endpoint resource.
 	PrivateEndpoint any
-	// A collection of information about the state of the connection between service consumer and provider.
 	PrivateLinkServiceConnectionState any
-	// The current provisioning state.
 	ProvisioningState any
+}
+
+type OpenapiPrivateEndpointConnection_Value struct {
+	Properties any
 }
 
 type OpenapiPrivateEndpointConnectionConfig struct {
@@ -33,9 +29,11 @@ type OpenapiPrivateEndpointConnectionConfig struct {
 }
 
 type OpenapiPrivateEndpointConnectionAttrs struct {
-	// Properties of the private endpoint connection.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ServerName any
+	// The PrivateEndpointConnection items on this page
+	Value any
 }
 
 var OpenapiPrivateEndpointConnection = ubx.DataSourceBinding{

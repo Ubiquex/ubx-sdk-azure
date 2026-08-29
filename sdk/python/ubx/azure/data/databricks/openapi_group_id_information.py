@@ -7,30 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiGroupIdInformation_Properties:
-    # The group id
+class OpenapiGroupIdInformation_Value_Properties:
     group_id: Any = None
-    # The required members for a specific group id
     required_members: Any = None
-    # The required DNS zones for a specific group id
     required_zone_names: Any = None
 
 @dataclasses.dataclass
+class OpenapiGroupIdInformation_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiGroupIdInformationConfig:
-    group_id: Any = None
     workspace_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiGroupIdInformationAttrs:
-    group_id: Any = None
-    # The properties for a group information object
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The GroupIdInformation items on this page
+    value: Any = None
     workspace_name: Any = None
 
 OpenapiGroupIdInformation = ubx.DataSourceBinding(
     wire_type="azure_databricks_openapi_group_id_information",
     fields={
-        "group_id": ubx.FieldSpec(wire_name="group_id"),
         "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
     },
 )

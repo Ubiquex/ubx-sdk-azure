@@ -7,37 +7,35 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VirtualMachine_Properties:
-    # Display name of the VM.
+class VirtualMachine_Value_Properties:
     display_name: Any = None
-    # Path to virtual machine's folder starting from datacenter virtual machine folder
     folder_path: Any = None
-    # vCenter managed object reference ID of the virtual machine
     mo_ref_id: Any = None
-    # Virtual Machine provisioning state
     provisioning_state: Any = None
-    # Virtual Machine Restrict Movement state
     restrict_movement: Any = None
+
+@dataclasses.dataclass
+class VirtualMachine_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class VirtualMachineConfig:
     cluster_name: Any = None
     private_cloud_name: Any = None
-    virtual_machine_id: Any = None
 
 @dataclasses.dataclass
 class VirtualMachineAttrs:
     cluster_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     private_cloud_name: Any = None
-    # Virtual Machine Properties
-    properties: Any = None
-    virtual_machine_id: Any = None
+    # The VirtualMachine items on this page
+    value: Any = None
 
 VirtualMachine = ubx.DataSourceBinding(
     wire_type="azure_vmware_virtual_machine",
     fields={
         "cluster_name": ubx.FieldSpec(wire_name="cluster_name"),
         "private_cloud_name": ubx.FieldSpec(wire_name="private_cloud_name"),
-        "virtual_machine_id": ubx.FieldSpec(wire_name="virtual_machine_id"),
     },
 )

@@ -7,56 +7,46 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class LongtermretentionbackupsLongTermRetentionBackup_Properties:
-    # The time the long term retention backup will expire.
+class LongtermretentionbackupsLongTermRetentionBackup_Value_Properties:
     backup_expiration_time: Any = None
-    # The BackupStorageAccessTier for the LTR backup
     backup_storage_access_tier: Any = None
-    # The storage account type used to store backups for this database.
     backup_storage_redundancy: Any = None
-    # The time the backup was taken
     backup_time: Any = None
-    # The delete time of the database
     database_deletion_time: Any = None
-    # The name of the database the backup belong to
     database_name: Any = None
-    # The setting whether the LTR backup is immutable
     is_backup_immutable: Any = None
-    # The setting for whether LegalHold is enabled or disabled on the LTR backup. When LegalHold is enabled, the backup cannot be deleted until the LegalHold is removed.
     legal_hold_immutability: Any = None
-    # The storage account type used to store backups for this database.
     requested_backup_storage_redundancy: Any = None
-    # The create time of the server.
     server_create_time: Any = None
-    # The server name that the backup database belong to.
     server_name: Any = None
-    # The setting for whether or not time-based immutability is enabled for the LTR backup. When time-based immutability is enabled and locked, the backup cannot be deleted until BackupExpirationTime.
     time_based_immutability: Any = None
-    # The time-based immutability mode. Only applicable if time-based immutability is enabled.
     time_based_immutability_mode: Any = None
 
 @dataclasses.dataclass
+class LongtermretentionbackupsLongTermRetentionBackup_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class LongtermretentionbackupsLongTermRetentionBackupConfig:
-    backup_name: Any = None
+    database_state: Any = None
     location_name: Any = None
-    long_term_retention_database_name: Any = None
-    long_term_retention_server_name: Any = None
+    only_latest_per_database: Any = None
 
 @dataclasses.dataclass
 class LongtermretentionbackupsLongTermRetentionBackupAttrs:
-    backup_name: Any = None
+    database_state: Any = None
     location_name: Any = None
-    long_term_retention_database_name: Any = None
-    long_term_retention_server_name: Any = None
-    # Properties of a long term retention backup
-    properties: Any = None
+    # Link to retrieve next page of results.
+    next_link: Any = None
+    only_latest_per_database: Any = None
+    # Array of results.
+    value: Any = None
 
 LongtermretentionbackupsLongTermRetentionBackup = ubx.DataSourceBinding(
     wire_type="azure_sql_longtermretentionbackups_long_term_retention_backup",
     fields={
-        "backup_name": ubx.FieldSpec(wire_name="backup_name"),
+        "database_state": ubx.FieldSpec(wire_name="database_state"),
         "location_name": ubx.FieldSpec(wire_name="location_name"),
-        "long_term_retention_database_name": ubx.FieldSpec(wire_name="long_term_retention_database_name"),
-        "long_term_retention_server_name": ubx.FieldSpec(wire_name="long_term_retention_server_name"),
+        "only_latest_per_database": ubx.FieldSpec(wire_name="only_latest_per_database"),
     },
 )

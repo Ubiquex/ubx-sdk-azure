@@ -3,35 +3,48 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDepartment_Properties struct {
-	// The cost center associated with the department.
+type OpenapiDepartment_Value_Properties struct {
 	CostCenter any
-	// The name of the department.
 	DisplayName any
-	// The ID that uniquely identifies the department.
 	Id any
-	// The status of the department.
 	Status any
+}
+
+type OpenapiDepartment_Value struct {
+	Properties any
+	Tags any
 }
 
 type OpenapiDepartmentConfig struct {
 	BillingAccountName any
-	DepartmentName any
+	Filter any
+	OrderBy any
+	Search any
+	Skip any
+	Top any
 }
 
 type OpenapiDepartmentAttrs struct {
 	BillingAccountName any
-	DepartmentName any
-	// Optional grouping of enrollment accounts to segment costs into logical groupings and set budgets.
-	Properties any
-	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-	Tags any
+	Filter any
+	// The link to the next page of items
+	NextLink any
+	OrderBy any
+	Search any
+	Skip any
+	Top any
+	// The Department items on this page
+	Value any
 }
 
 var OpenapiDepartment = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_department",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"DepartmentName": ubx.FieldSpec{WireName: "department_name"},
+		"Filter": ubx.FieldSpec{WireName: "filter"},
+		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
+		"Search": ubx.FieldSpec{WireName: "search"},
+		"Skip": ubx.FieldSpec{WireName: "skip"},
+		"Top": ubx.FieldSpec{WireName: "top"},
 	},
 }

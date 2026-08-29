@@ -4,11 +4,8 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .configuration_store_list_result import ConfigurationStoreListResult, ConfigurationStoreListResultConfig
+from .configuration_store import ConfigurationStore, ConfigurationStoreConfig
 from .deleted_configuration_store import DeletedConfigurationStore, DeletedConfigurationStoreConfig
-from .deleted_configuration_store_list_result import DeletedConfigurationStoreListResult, DeletedConfigurationStoreListResultConfig
-from .operation_definition_list_result import OperationDefinitionListResult, OperationDefinitionListResultConfig
-from .private_endpoint_connection_list_result import PrivateEndpointConnectionListResult, PrivateEndpointConnectionListResultConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
 from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
-from .private_link_resource_list_result import PrivateLinkResourceListResult, PrivateLinkResourceListResultConfig
-from .replica_list_result import ReplicaListResult, ReplicaListResultConfig
+from .replica import Replica, ReplicaConfig

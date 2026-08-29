@@ -3,51 +3,41 @@ package oracle
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiExascaleDbNode_Properties struct {
-	// Additional information about the planned maintenance.
+type OpenapiExascaleDbNode_Value_Properties struct {
 	AdditionalDetails any
-	// The number of CPU cores enabled on the Db node.
 	CpuCoreCount any
-	// The allocated local node storage in GBs on the Db node.
 	DbNodeStorageSizeInGbs any
-	// The name of the Fault Domain the instance is contained in.
 	FaultDomain any
-	// The host name for the database node.
 	Hostname any
-	// DnNode provisioning state enum
 	LifecycleState any
-	// The type of database node maintenance.
 	MaintenanceType any
-	// The allocated memory in GBs on the Db node.
 	MemorySizeInGbs any
-	// The [OCID](/Content/General/Concepts/identifiers.htm) of the resource.
 	Ocid any
-	// The size (in GB) of the block storage volume allocation for the DB system. This attribute applies only for virtual machine DB systems.
 	SoftwareStorageSizeInGb any
-	// End date and time of maintenance window.
 	TimeMaintenanceWindowEnd any
-	// Start date and time of maintenance window.
 	TimeMaintenanceWindowStart any
-	// The total number of CPU cores reserved on the Db node.
 	TotalCpuCoreCount any
+}
+
+type OpenapiExascaleDbNode_Value struct {
+	Properties any
 }
 
 type OpenapiExascaleDbNodeConfig struct {
 	ExadbVmClusterName any
-	ExascaleDbNodeName any
 }
 
 type OpenapiExascaleDbNodeAttrs struct {
 	ExadbVmClusterName any
-	ExascaleDbNodeName any
-	// The properties of DbNodeResource
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The ExascaleDbNode items on this page
+	Value any
 }
 
 var OpenapiExascaleDbNode = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_exascale_db_node",
 	Fields: ubx.FieldMap{
 		"ExadbVmClusterName": ubx.FieldSpec{WireName: "exadb_vm_cluster_name"},
-		"ExascaleDbNodeName": ubx.FieldSpec{WireName: "exascale_db_node_name"},
 	},
 }

@@ -7,30 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class PrivateLinkResource_Properties:
-    # A Group Id for Private Link. For Notification Hubs, it is always set to "namespace".
+class PrivateLinkResource_Value_Properties:
     group_id: Any = None
-    # Required members. For Notification Hubs, it's always a collection with a single "namespace" item.
     required_members: Any = None
-    # Required DNS zone names. For Notification Hubs, it contains two CNames for Service Bus and Notification Hubs zones.
     required_zone_names: Any = None
+
+@dataclasses.dataclass
+class PrivateLinkResource_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class PrivateLinkResourceConfig:
     namespace_name: Any = None
-    sub_resource_name: Any = None
 
 @dataclasses.dataclass
 class PrivateLinkResourceAttrs:
     namespace_name: Any = None
-    # Represents properties of Private Link Resource.
-    properties: Any = None
-    sub_resource_name: Any = None
+    # Gets or sets link to the next set of results.
+    next_link: Any = None
+    # Gets or sets result of the List AuthorizationRules operation.
+    value: Any = None
 
 PrivateLinkResource = ubx.DataSourceBinding(
     wire_type="azure_notificationhubs_private_link_resource",
     fields={
         "namespace_name": ubx.FieldSpec(wire_name="namespace_name"),
-        "sub_resource_name": ubx.FieldSpec(wire_name="sub_resource_name"),
     },
 )

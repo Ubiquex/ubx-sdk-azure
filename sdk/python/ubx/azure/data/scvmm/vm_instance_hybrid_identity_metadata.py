@@ -7,13 +7,14 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VmInstanceHybridIdentityMetadata_Properties:
-    # The provisioning state of the resource.
+class VmInstanceHybridIdentityMetadata_Value_Properties:
     provisioning_state: Any = None
-    # Gets or sets the Public Key.
     public_key: Any = None
-    # The unique identifier for the resource.
     resource_uid: Any = None
+
+@dataclasses.dataclass
+class VmInstanceHybridIdentityMetadata_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class VmInstanceHybridIdentityMetadataConfig:
@@ -21,9 +22,11 @@ class VmInstanceHybridIdentityMetadataConfig:
 
 @dataclasses.dataclass
 class VmInstanceHybridIdentityMetadataAttrs:
-    # Describes the properties of Hybrid Identity Metadata for a Virtual Machine.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     resource_uri: Any = None
+    # The VmInstanceHybridIdentityMetadata items on this page
+    value: Any = None
 
 VmInstanceHybridIdentityMetadata = ubx.DataSourceBinding(
     wire_type="azure_scvmm_vm_instance_hybrid_identity_metadata",

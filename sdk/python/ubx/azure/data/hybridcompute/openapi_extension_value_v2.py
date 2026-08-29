@@ -7,31 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiExtensionValueV2_Properties:
-    # Architectures (x64, arms64, etc.) that this extension supports.
+class OpenapiExtensionValueV2_Value_Properties:
     architecture: Any = None
-    # Location of the signature files for the extension.
     extension_signature_uri: Any = None
-    # A list of locations where the extension packages can be found.
     extension_uris: Any = None
-    # The operating system (Windows, Linux, etc.) this extension supports.
     operating_system: Any = None
+
+@dataclasses.dataclass
+class OpenapiExtensionValueV2_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiExtensionValueV2Config:
     extension_type: Any = None
     location: Any = None
     publisher: Any = None
-    version: Any = None
 
 @dataclasses.dataclass
 class OpenapiExtensionValueV2Attrs:
     extension_type: Any = None
     location: Any = None
-    # Describes Extension Metadata properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     publisher: Any = None
-    version: Any = None
+    # The ExtensionValueV2 items on this page
+    value: Any = None
 
 OpenapiExtensionValueV2 = ubx.DataSourceBinding(
     wire_type="azure_hybridcompute_openapi_extension_value_v2",
@@ -39,6 +39,5 @@ OpenapiExtensionValueV2 = ubx.DataSourceBinding(
         "extension_type": ubx.FieldSpec(wire_name="extension_type"),
         "location": ubx.FieldSpec(wire_name="location"),
         "publisher": ubx.FieldSpec(wire_name="publisher"),
-        "version": ubx.FieldSpec(wire_name="version"),
     },
 )

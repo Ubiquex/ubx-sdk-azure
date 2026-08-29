@@ -7,34 +7,34 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VirtualnetworkNetworkVirtualApplianceSku_Properties_AvailableScaleUnits:
+class VirtualnetworkNetworkVirtualApplianceSku_Value_Properties_AvailableScaleUnits:
     instance_count: Any = None
     scale_unit: Any = None
 
 @dataclasses.dataclass
-class VirtualnetworkNetworkVirtualApplianceSku_Properties:
-    # The list of scale units available.
+class VirtualnetworkNetworkVirtualApplianceSku_Value_Properties:
     available_scale_units: Any = None
-    # Available Network Virtual Appliance versions.
     available_versions: Any = None
-    # Network Virtual Appliance Sku vendor.
     vendor: Any = None
 
 @dataclasses.dataclass
+class VirtualnetworkNetworkVirtualApplianceSku_Value:
+    etag: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class VirtualnetworkNetworkVirtualApplianceSkuConfig:
-    sku_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkVirtualApplianceSkuAttrs:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
-    # Properties specific to NetworkVirtualApplianceSkus.
-    properties: Any = None
-    sku_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The NetworkVirtualApplianceSku items on this page
+    value: Any = None
 
 VirtualnetworkNetworkVirtualApplianceSku = ubx.DataSourceBinding(
     wire_type="azure_network_virtualnetwork_network_virtual_appliance_sku",
     fields={
-        "sku_name": ubx.FieldSpec(wire_name="sku_name"),
     },
 )

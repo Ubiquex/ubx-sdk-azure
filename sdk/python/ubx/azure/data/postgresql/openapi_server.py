@@ -7,212 +7,150 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiServer_Identity_UserAssignedIdentities:
+class OpenapiServer_Value_Identity_UserAssignedIdentities:
     client_id: Any = None
     principal_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Identity:
-    # Identifier of the object of the service principal associated to the user assigned managed identity.
+class OpenapiServer_Value_Identity:
     principal_id: Any = None
-    # Identifier of the tenant of a server.
     tenant_id: Any = None
-    # Types of identities associated with a server.
     type: Any = None
-    # Map of user assigned managed identities.
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_AuthConfig:
-    # Indicates if the server supports Microsoft Entra authentication.
+class OpenapiServer_Value_Properties_AuthConfig:
     active_directory_auth: Any = None
-    # Indicates if the server supports password based authentication.
     password_auth: Any = None
-    # Identifier of the tenant of the delegated resource.
     tenant_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_Backup:
-    # Backup retention days for the server.
+class OpenapiServer_Value_Properties_Backup:
     backup_retention_days: Any = None
-    # Earliest restore point time (ISO8601 format) for a server.
     earliest_restore_date: Any = None
-    # Indicates if the server is configured to create geographically redundant backups.
     geo_redundant_backup: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_Cluster:
-    # Number of nodes assigned to the elastic cluster.
+class OpenapiServer_Value_Properties_Cluster:
     cluster_size: Any = None
-    # Default database name for the elastic cluster.
     default_database_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_DataEncryption:
-    # Status of key used by a server configured with data encryption based on customer managed key, to encrypt the primary storage associated to the server.
+class OpenapiServer_Value_Properties_DataEncryption:
     geo_backup_encryption_key_status: Any = None
-    # Identifier of the user assigned managed identity used to access the key in Azure Key Vault for data encryption of the geographically redundant storage associated to a server that is configured to support geographically redundant backups.
     geo_backup_key_uri: Any = None
-    # Identifier of the user assigned managed identity used to access the key in Azure Key Vault for data encryption of the geographically redundant storage associated to a server that is configured to support geographically redundant backups.
     geo_backup_user_assigned_identity_id: Any = None
-    # Status of key used by a server configured with data encryption based on customer managed key, to encrypt the primary storage associated to the server.
     primary_encryption_key_status: Any = None
-    # URI of the key in Azure Key Vault used for data encryption of the primary storage associated to a server.
     primary_key_uri: Any = None
-    # Identifier of the user assigned managed identity used to access the key in Azure Key Vault for data encryption of the primary storage associated to a server.
     primary_user_assigned_identity_id: Any = None
-    # Data encryption type used by a server.
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_HighAvailability:
-    # High availability mode for a server.
+class OpenapiServer_Value_Properties_HighAvailability:
     mode: Any = None
-    # Availability zone associated to the standby server created when high availability is set to SameZone or ZoneRedundant.
     standby_availability_zone: Any = None
-    # Possible states of the standby server created when high availability is set to SameZone or ZoneRedundant.
     state: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_MaintenanceWindow:
-    # Indicates whether custom window is enabled or disabled.
+class OpenapiServer_Value_Properties_MaintenanceWindow:
     custom_window: Any = None
-    # Day of the week to be used for maintenance window.
     day_of_week: Any = None
-    # Start hour to be used for maintenance window.
     start_hour: Any = None
-    # Start minute to be used for maintenance window.
     start_minute: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_Network:
-    # Resource identifier of the delegated subnet. Required during creation of a new server, in case you want the server to be integrated into your own virtual network. For an update operation, you only have to provide this property if you want to change the value assigned for the private DNS zone.
+class OpenapiServer_Value_Properties_Network:
     delegated_subnet_resource_id: Any = None
-    # Identifier of the private DNS zone. Required during creation of a new server, in case you want the server to be integrated into your own virtual network. For an update operation, you only have to provide this property if you want to change the value assigned for the private DNS zone.
     private_dns_zone_arm_resource_id: Any = None
-    # Indicates if public network access is enabled or not.
     public_network_access: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+class OpenapiServer_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
     id: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+class OpenapiServer_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
     actions_required: Any = None
     description: Any = None
     status: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_PrivateEndpointConnections_Properties:
+class OpenapiServer_Value_Properties_PrivateEndpointConnections_Properties:
     group_ids: Any = None
     private_endpoint: Any = None
     private_link_service_connection_state: Any = None
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_PrivateEndpointConnections:
+class OpenapiServer_Value_Properties_PrivateEndpointConnections:
     properties: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_Replica:
-    # Maximum number of read replicas allowed for a server.
+class OpenapiServer_Value_Properties_Replica:
     capacity: Any = None
-    # Type of operation to apply on the read replica. This property is write only.
     promote_mode: Any = None
-    # Data synchronization option to use when processing the operation specified in the promoteMode property. This property is write only.
     promote_option: Any = None
-    # Indicates the replication state of a read replica. This property is returned only when the target server is a read replica.
     replication_state: Any = None
-    # Role of the server in a replication set.
     role: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties_Storage:
-    # Indicates if the server is configured to automatically grow storage size when available space is nearing zero and conditions allow for automatic growing storage size.
+class OpenapiServer_Value_Properties_Storage:
     auto_grow: Any = None
-    # Maximum IOPS supported for storage. Required when type of storage is PremiumV2_LRS or UltraSSD_LRS.
     iops: Any = None
-    # Size of storage assigned to a server.
     storage_size_gb: Any = None
-    # Maximum throughput supported for storage. Required when type of storage is PremiumV2_LRS or UltraSSD_LRS.
     throughput: Any = None
-    # Storage tier of a server.
     tier: Any = None
-    # Type of storage assigned to a server. If not specified, it defaults to Premium_LRS.
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Properties:
-    # Name of the login designated as the first password based administrator assigned to your instance of PostgreSQL. Must be specified the first time that you enable password based authentication on a server. Once set to a given value, it cannot be changed for the rest of the life of a server. If you disable password based authentication on a server which had it enabled, this password based role isn't deleted.
+class OpenapiServer_Value_Properties:
     administrator_login: Any = None
-    # Password assigned to the administrator login. As long as password authentication is enabled, this password can be changed at any time.
     administrator_login_password: Any = None
-    # Authentication configuration properties of a server.
     auth_config: Any = None
-    # Availability zone of a server.
     availability_zone: Any = None
-    # Backup properties of a server.
     backup: Any = None
-    # Cluster properties of a server.
     cluster: Any = None
-    # Creation mode of a new server.
     create_mode: Any = None
-    # Data encryption properties of a server.
     data_encryption: Any = None
-    # Fully qualified domain name of a server.
     fully_qualified_domain_name: Any = None
-    # High availability properties of a server.
     high_availability: Any = None
-    # Maintenance window properties of a server.
     maintenance_window: Any = None
-    # Minor version of PostgreSQL database engine.
     minor_version: Any = None
-    # Network properties of a server.
     network: Any = None
-    # Creation time (in ISO8601 format) of the backup which you want to restore in the new server. It's required when 'createMode' is 'PointInTimeRestore', 'GeoRestore', or 'ReviveDropped'.
     point_in_time_utc: Any = None
-    # List of private endpoint connections associated with the specified server.
     private_endpoint_connections: Any = None
-    # Replica properties of a server.
     replica: Any = None
-    # Maximum number of read replicas allowed for a server.
     replica_capacity: Any = None
-    # Role of the server in a replication set.
     replication_role: Any = None
-    # Identifier of the server to be used as the source of the new server. Required when 'createMode' is 'PointInTimeRestore', 'GeoRestore', 'Replica', or 'ReviveDropped'. This property is returned only when the target server is a read replica.
     source_server_resource_id: Any = None
-    # State of a server.
     state: Any = None
-    # Storage properties of a server.
     storage: Any = None
-    # Major version of PostgreSQL database engine.
     version: Any = None
 
 @dataclasses.dataclass
-class OpenapiServer_Sku:
-    # Name by which is known a given compute size assigned to a server.
+class OpenapiServer_Value_Sku:
     name: Any = None
-    # Tier of the compute assigned to a server.
     tier: Any = None
 
 @dataclasses.dataclass
+class OpenapiServer_Value:
+    identity: Any = None
+    properties: Any = None
+    sku: Any = None
+
+@dataclasses.dataclass
 class OpenapiServerConfig:
-    server_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiServerAttrs:
-    # Identities associated with a server.
-    identity: Any = None
-    # Properties of a server.
-    properties: Any = None
-    server_name: Any = None
-    # Compute information of a server.
-    sku: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Server items on this page
+    value: Any = None
 
 OpenapiServer = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_server",
     fields={
-        "server_name": ubx.FieldSpec(wire_name="server_name"),
     },
 )

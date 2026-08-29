@@ -3,35 +3,33 @@ package vmware
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ScriptPackage_Properties struct {
-	// Company that created and supports the package
+type ScriptPackage_Value_Properties struct {
 	Company any
-	// User friendly description of the package
 	Description any
-	// Script Package provisioning state
 	ProvisioningState any
-	// Link to support by the package vendor
 	Uri any
-	// Module version
 	Version any
+}
+
+type ScriptPackage_Value struct {
+	Properties any
 }
 
 type ScriptPackageConfig struct {
 	PrivateCloudName any
-	ScriptPackageName any
 }
 
 type ScriptPackageAttrs struct {
+	// The link to the next page of items
+	NextLink any
 	PrivateCloudName any
-	// Properties of a Script Package subresource
-	Properties any
-	ScriptPackageName any
+	// The ScriptPackage items on this page
+	Value any
 }
 
 var ScriptPackage = ubx.DataSourceBinding{
 	WireType: "azure_vmware_script_package",
 	Fields: ubx.FieldMap{
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
-		"ScriptPackageName": ubx.FieldSpec{WireName: "script_package_name"},
 	},
 }

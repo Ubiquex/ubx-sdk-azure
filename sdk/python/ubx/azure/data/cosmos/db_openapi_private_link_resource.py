@@ -7,30 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class DbOpenapiPrivateLinkResource_Properties:
-    # The private link resource group id.
+class DbOpenapiPrivateLinkResource_Value_Properties:
     group_id: Any = None
-    # The private link resource required member names.
     required_members: Any = None
-    # The private link resource required zone names.
     required_zone_names: Any = None
+
+@dataclasses.dataclass
+class DbOpenapiPrivateLinkResource_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiPrivateLinkResourceConfig:
     account_name: Any = None
-    group_name: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiPrivateLinkResourceAttrs:
     account_name: Any = None
-    group_name: Any = None
-    # Properties of a private link resource.
-    properties: Any = None
+    next_link: Any = None
+    # Array of private link resources
+    value: Any = None
 
 DbOpenapiPrivateLinkResource = ubx.DataSourceBinding(
     wire_type="azure_cosmos_db_openapi_private_link_resource",
     fields={
         "account_name": ubx.FieldSpec(wire_name="account_name"),
-        "group_name": ubx.FieldSpec(wire_name="group_name"),
     },
 )

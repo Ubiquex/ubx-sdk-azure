@@ -3,44 +3,39 @@ package azurestackhci
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type HciOffer_Properties_SkuMappings struct {
+type HciOffer_Value_Properties_SkuMappings struct {
 	CatalogPlanId any
 	MarketplaceSkuId any
 	MarketplaceSkuVersions any
 }
 
-type HciOffer_Properties struct {
-	// JSON serialized catalog content of the offer
+type HciOffer_Value_Properties struct {
 	Content any
-	// The API version of the catalog service used to serve the catalog content
 	ContentVersion any
-	// Provisioning State
 	ProvisioningState any
-	// Identifier of the Publisher for the offer
 	PublisherId any
-	// Array of SKU mappings
 	SkuMappings any
+}
+
+type HciOffer_Value struct {
+	Properties any
 }
 
 type HciOfferConfig struct {
 	ClusterName any
-	OfferName any
-	PublisherName any
 }
 
 type HciOfferAttrs struct {
 	ClusterName any
-	OfferName any
-	// Publisher properties.
-	Properties any
-	PublisherName any
+	// The link to the next page of items
+	NextLink any
+	// The Offer items on this page
+	Value any
 }
 
 var HciOffer = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_hci_offer",
 	Fields: ubx.FieldMap{
 		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
-		"OfferName": ubx.FieldSpec{WireName: "offer_name"},
-		"PublisherName": ubx.FieldSpec{WireName: "publisher_name"},
 	},
 }

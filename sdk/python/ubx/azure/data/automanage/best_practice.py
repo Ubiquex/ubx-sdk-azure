@@ -7,46 +7,37 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class BestPractice_Properties:
-    # The custom configuration for configuration profile. Name and value pairs that define the configuration details of the configuration profile.
+class BestPractice_Value_Properties:
     configuration: Any = None
 
 @dataclasses.dataclass
-class BestPractice_SystemData:
-    # The timestamp of resource creation (UTC).
+class BestPractice_Value_SystemData:
     created_at: Any = None
-    # The identity that created the resource.
     created_by: Any = None
-    # The type of identity that created the resource.
     created_by_type: Any = None
-    # The timestamp of resource last modification (UTC)
     last_modified_at: Any = None
-    # The identity that last modified the resource.
     last_modified_by: Any = None
-    # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
 
 @dataclasses.dataclass
+class BestPractice_Value:
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    system_data: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
 class BestPracticeConfig:
-    best_practice_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class BestPracticeAttrs:
-    best_practice_name: Any = None
-    # The fully qualified ID for the best practice. For example, /providers/Microsoft.Automanage/bestPractices/azureBestPracticesProduction
-    id: Any = None
-    # The name of the best practice. For example, azureBestPracticesProduction
-    name: Any = None
-    # Automanage configuration profile properties.
-    properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    # The type of the resource. For example, Microsoft.Automanage/bestPractices
-    type: Any = None
+    # Result of the list best practice operation.
+    value: Any = None
 
 BestPractice = ubx.DataSourceBinding(
     wire_type="azure_automanage_best_practice",
     fields={
-        "best_practice_name": ubx.FieldSpec(wire_name="best_practice_name"),
     },
 )

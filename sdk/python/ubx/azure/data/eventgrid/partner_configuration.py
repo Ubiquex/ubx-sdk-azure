@@ -7,65 +7,55 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class PartnerConfiguration_Properties_PartnerAuthorization_AuthorizedPartnersList:
+class PartnerConfiguration_Value_Properties_PartnerAuthorization_AuthorizedPartnersList:
     authorization_expiration_time_in_utc: Any = None
     partner_name: Any = None
     partner_registration_immutable_id: Any = None
 
 @dataclasses.dataclass
-class PartnerConfiguration_Properties_PartnerAuthorization:
-    # The list of authorized partners.
+class PartnerConfiguration_Value_Properties_PartnerAuthorization:
     authorized_partners_list: Any = None
-    # Time used to validate the authorization expiration time for each authorized partner. If DefaultMaximumExpirationTimeInDays is not specified, the default is 7 days. Otherwise, allowed values are between 1 and 365 days.
     default_maximum_expiration_time_in_days: Any = None
 
 @dataclasses.dataclass
-class PartnerConfiguration_Properties:
-    # The partner authorization details.
+class PartnerConfiguration_Value_Properties:
     partner_authorization: Any = None
-    # Provisioning state of the partner configuration.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class PartnerConfiguration_SystemData:
-    # The timestamp of resource creation (UTC).
+class PartnerConfiguration_Value_SystemData:
     created_at: Any = None
-    # The identity that created the resource.
     created_by: Any = None
-    # The type of identity that created the resource.
     created_by_type: Any = None
-    # The timestamp of resource last modification (UTC)
     last_modified_at: Any = None
-    # The identity that last modified the resource.
     last_modified_by: Any = None
-    # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
+
+@dataclasses.dataclass
+class PartnerConfiguration_Value:
+    location: Any = None
+    properties: Any = None
+    system_data: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class PartnerConfigurationConfig:
     api_version: Any = None
-    resource_group_name: Any = None
     subscription_id: Any = None
 
 @dataclasses.dataclass
 class PartnerConfigurationAttrs:
     api_version: Any = None
-    # Location of the resource.
-    location: Any = None
-    # Properties of the partner configuration.
-    properties: Any = None
-    resource_group_name: Any = None
+    # A link for the next page of partner configurations.
+    next_link: Any = None
     subscription_id: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    # Tags of the resource.
-    tags: Any = None
+    # A collection of partner configurations.
+    value: Any = None
 
 PartnerConfiguration = ubx.DataSourceBinding(
     wire_type="azure_eventgrid_partner_configuration",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
-        "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },
 )

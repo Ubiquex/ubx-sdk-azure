@@ -7,37 +7,35 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ServiceLogicalNetwork_Properties:
-    # The Friendly Name.
+class ServiceLogicalNetwork_Value_Properties:
     friendly_name: Any = None
-    # A value indicating whether logical network definitions are isolated.
     logical_network_definitions_status: Any = None
-    # A value indicating whether logical network is used as private test network by test failover.
     logical_network_usage: Any = None
-    # A value indicating whether Network Virtualization is enabled for the logical network.
     network_virtualization_status: Any = None
+
+@dataclasses.dataclass
+class ServiceLogicalNetwork_Value:
+    location: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class ServiceLogicalNetworkConfig:
     fabric_name: Any = None
-    logical_network_name: Any = None
     resource_name: Any = None
 
 @dataclasses.dataclass
 class ServiceLogicalNetworkAttrs:
     fabric_name: Any = None
-    # Resource Location
-    location: Any = None
-    logical_network_name: Any = None
-    # Logical Network Properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     resource_name: Any = None
+    # The LogicalNetwork items on this page
+    value: Any = None
 
 ServiceLogicalNetwork = ubx.DataSourceBinding(
     wire_type="azure_recoveryservicessiterecovery_service_logical_network",
     fields={
         "fabric_name": ubx.FieldSpec(wire_name="fabric_name"),
-        "logical_network_name": ubx.FieldSpec(wire_name="logical_network_name"),
         "resource_name": ubx.FieldSpec(wire_name="resource_name"),
     },
 )

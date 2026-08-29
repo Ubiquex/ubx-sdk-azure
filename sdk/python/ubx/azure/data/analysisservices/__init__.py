@@ -4,8 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .analysis_services_servers import AnalysisServicesServers, AnalysisServicesServersConfig
-from .operation_list_result import OperationListResult, OperationListResultConfig
-from .operation_status import OperationStatus, OperationStatusConfig
-from .sku_enumeration_for_existing_resource_result import SkuEnumerationForExistingResourceResult, SkuEnumerationForExistingResourceResultConfig
-from .sku_enumeration_for_new_resource_result import SkuEnumerationForNewResourceResult, SkuEnumerationForNewResourceResultConfig
+from .analysis_services_server import AnalysisServicesServer, AnalysisServicesServerConfig
+from .resource_sku import ResourceSku, ResourceSkuConfig
+from .sku_details_for_existing_resource import SkuDetailsForExistingResource, SkuDetailsForExistingResourceConfig

@@ -3,38 +3,33 @@ package oracle
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDnsPrivateView_Properties struct {
-	// The display name of the view resource
+type OpenapiDnsPrivateView_Value_Properties struct {
 	DisplayName any
-	// A Boolean flag indicating whether or not parts of the resource are unable to be explicitly managed.
 	IsProtected any
-	// DNS Private Views lifecycle state enum
 	LifecycleState any
-	// The [OCID](/Content/General/Concepts/identifiers.htm) of the resource.
 	Ocid any
-	// The provisioning state of a resource type.
 	ProvisioningState any
-	// The canonical absolute URL of the resource.
 	Self any
-	// views timeCreated
 	TimeCreated any
-	// views timeCreated
 	TimeUpdated any
 }
 
+type OpenapiDnsPrivateView_Value struct {
+	Properties any
+}
+
 type OpenapiDnsPrivateViewConfig struct {
-	Dnsprivateviewocid any
 }
 
 type OpenapiDnsPrivateViewAttrs struct {
-	Dnsprivateviewocid any
-	// Views resource model
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The DnsPrivateView items on this page
+	Value any
 }
 
 var OpenapiDnsPrivateView = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_dns_private_view",
 	Fields: ubx.FieldMap{
-		"Dnsprivateviewocid": ubx.FieldSpec{WireName: "dnsprivateviewocid"},
 	},
 }

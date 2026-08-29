@@ -3,32 +3,30 @@ package storage
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDeletedAccount_Properties struct {
-	// Creation time of the deleted account.
+type OpenapiDeletedAccount_Value_Properties struct {
 	CreationTime any
-	// Deletion time of the deleted account.
 	DeletionTime any
-	// Location of the deleted account.
 	Location any
-	// Can be used to attempt recovering this deleted account via PutStorageAccount API.
 	RestoreReference any
-	// Full resource id of the original storage account.
 	StorageAccountResourceId any
 }
 
+type OpenapiDeletedAccount_Value struct {
+	Properties any
+}
+
 type OpenapiDeletedAccountConfig struct {
-	DeletedAccountName any
 }
 
 type OpenapiDeletedAccountAttrs struct {
-	DeletedAccountName any
-	// Attributes of a deleted storage account.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The DeletedAccount items on this page
+	Value any
 }
 
 var OpenapiDeletedAccount = ubx.DataSourceBinding{
 	WireType: "azure_storage_openapi_deleted_account",
 	Fields: ubx.FieldMap{
-		"DeletedAccountName": ubx.FieldSpec{WireName: "deleted_account_name"},
 	},
 }

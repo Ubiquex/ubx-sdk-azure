@@ -7,31 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class AuthorizationRule_Properties:
-    # The rights associated with the rule.
+class AuthorizationRule_Value_Properties:
     rights: Any = None
 
 @dataclasses.dataclass
+class AuthorizationRule_Value:
+    location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class AuthorizationRuleConfig:
-    authorization_rule_name: Any = None
-    hybrid_connection_name: Any = None
     namespace_name: Any = None
 
 @dataclasses.dataclass
 class AuthorizationRuleAttrs:
-    authorization_rule_name: Any = None
-    hybrid_connection_name: Any = None
-    # The geo-location where the resource lives
-    location: Any = None
     namespace_name: Any = None
-    # Properties supplied to create or update AuthorizationRule
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The AuthorizationRule items on this page
+    value: Any = None
 
 AuthorizationRule = ubx.DataSourceBinding(
     wire_type="azure_relay_authorization_rule",
     fields={
-        "authorization_rule_name": ubx.FieldSpec(wire_name="authorization_rule_name"),
-        "hybrid_connection_name": ubx.FieldSpec(wire_name="hybrid_connection_name"),
         "namespace_name": ubx.FieldSpec(wire_name="namespace_name"),
     },
 )

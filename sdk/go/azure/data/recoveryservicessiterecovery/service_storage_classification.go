@@ -3,25 +3,27 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServiceStorageClassification_Properties struct {
-	// Friendly name of the Storage classification.
+type ServiceStorageClassification_Value_Properties struct {
 	FriendlyName any
+}
+
+type ServiceStorageClassification_Value struct {
+	Location any
+	Properties any
 }
 
 type ServiceStorageClassificationConfig struct {
 	FabricName any
 	ResourceName any
-	StorageClassificationName any
 }
 
 type ServiceStorageClassificationAttrs struct {
 	FabricName any
-	// Resource Location
-	Location any
-	// Storage object properties.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ResourceName any
-	StorageClassificationName any
+	// The StorageClassification items on this page
+	Value any
 }
 
 var ServiceStorageClassification = ubx.DataSourceBinding{
@@ -29,6 +31,5 @@ var ServiceStorageClassification = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"StorageClassificationName": ubx.FieldSpec{WireName: "storage_classification_name"},
 	},
 }

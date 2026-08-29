@@ -4,5 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .available_operations import AvailableOperations, AvailableOperationsConfig
-from .bot_response_list import BotResponseList, BotResponseListConfig
+from .health_bot import HealthBot, HealthBotConfig

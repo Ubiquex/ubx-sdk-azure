@@ -7,31 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiAuthorizationRule_Properties:
-    # The rights associated with the rule.
+class OpenapiAuthorizationRule_Value_Properties:
     rights: Any = None
 
 @dataclasses.dataclass
+class OpenapiAuthorizationRule_Value:
+    location: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiAuthorizationRuleConfig:
-    alias: Any = None
-    authorization_rule_name: Any = None
     namespace_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiAuthorizationRuleAttrs:
-    alias: Any = None
-    authorization_rule_name: Any = None
-    # The geo-location where the resource lives
-    location: Any = None
     namespace_name: Any = None
-    # Properties supplied to create or update AuthorizationRule
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The AuthorizationRule items on this page
+    value: Any = None
 
 OpenapiAuthorizationRule = ubx.DataSourceBinding(
     wire_type="azure_eventhub_openapi_authorization_rule",
     fields={
-        "alias": ubx.FieldSpec(wire_name="alias"),
-        "authorization_rule_name": ubx.FieldSpec(wire_name="authorization_rule_name"),
         "namespace_name": ubx.FieldSpec(wire_name="namespace_name"),
     },
 )

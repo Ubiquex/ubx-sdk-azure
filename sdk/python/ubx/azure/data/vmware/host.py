@@ -7,57 +7,47 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class Host_Properties:
-    # Display name of the host in VMware vCenter.
+class Host_Value_Properties:
     display_name: Any = None
     fault_domain: Any = None
-    # Fully qualified domain name of the host.
     fqdn: Any = None
-    # The kind of host.
     kind: Any = None
-    # The reason for host maintenance.
     maintenance: Any = None
-    # vCenter managed object reference ID of the host.
     mo_ref_id: Any = None
-    # provisioning state of the host
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class Host_Sku:
-    # If the SKU supports scale out/in then the capacity integer should be included. If scale out/in is not possible for the resource this may be omitted.
+class Host_Value_Sku:
     capacity: Any = None
-    # If the service has different generations of hardware, for the same SKU, then that can be captured here.
     family: Any = None
-    # The name of the SKU. E.g. P3. It is typically a letter+number code
     name: Any = None
-    # The SKU size. When the name field is the combination of tier and some other value, this would be the standalone code.
     size: Any = None
-    # This field is required to be implemented by the Resource Provider if the service has more than one tier, but is not required on a PUT.
     tier: Any = None
+
+@dataclasses.dataclass
+class Host_Value:
+    properties: Any = None
+    sku: Any = None
+    zones: Any = None
 
 @dataclasses.dataclass
 class HostConfig:
     cluster_name: Any = None
-    host_id: Any = None
     private_cloud_name: Any = None
 
 @dataclasses.dataclass
 class HostAttrs:
     cluster_name: Any = None
-    host_id: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     private_cloud_name: Any = None
-    # The properties of a host.
-    properties: Any = None
-    # The resource model definition representing SKU
-    sku: Any = None
-    # The availability zones.
-    zones: Any = None
+    # The Host items on this page
+    value: Any = None
 
 Host = ubx.DataSourceBinding(
     wire_type="azure_vmware_host",
     fields={
         "cluster_name": ubx.FieldSpec(wire_name="cluster_name"),
-        "host_id": ubx.FieldSpec(wire_name="host_id"),
         "private_cloud_name": ubx.FieldSpec(wire_name="private_cloud_name"),
     },
 )

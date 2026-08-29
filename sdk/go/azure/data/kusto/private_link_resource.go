@@ -3,31 +3,31 @@ package kusto
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type PrivateLinkResource_Properties struct {
-	// The private link resource group id.
+type PrivateLinkResource_Value_Properties struct {
 	GroupId any
-	// The private link resource required member names.
 	RequiredMembers any
-	// The private link resource required zone names.
 	RequiredZoneNames any
+}
+
+type PrivateLinkResource_Value struct {
+	Properties any
 }
 
 type PrivateLinkResourceConfig struct {
 	ClusterName any
-	PrivateLinkResourceName any
 }
 
 type PrivateLinkResourceAttrs struct {
 	ClusterName any
-	PrivateLinkResourceName any
-	// Properties of a private link resource.
-	Properties any
+	// Link to the next page of results.
+	NextLink any
+	// Array of private link resources
+	Value any
 }
 
 var PrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_kusto_private_link_resource",
 	Fields: ubx.FieldMap{
 		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
-		"PrivateLinkResourceName": ubx.FieldSpec{WireName: "private_link_resource_name"},
 	},
 }

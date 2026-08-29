@@ -3,31 +3,31 @@ package notificationhubs
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type PrivateLinkResource_Properties struct {
-	// A Group Id for Private Link. For Notification Hubs, it is always set to "namespace".
+type PrivateLinkResource_Value_Properties struct {
 	GroupId any
-	// Required members. For Notification Hubs, it's always a collection with a single "namespace" item.
 	RequiredMembers any
-	// Required DNS zone names. For Notification Hubs, it contains two CNames for Service Bus and Notification Hubs zones.
 	RequiredZoneNames any
+}
+
+type PrivateLinkResource_Value struct {
+	Properties any
 }
 
 type PrivateLinkResourceConfig struct {
 	NamespaceName any
-	SubResourceName any
 }
 
 type PrivateLinkResourceAttrs struct {
 	NamespaceName any
-	// Represents properties of Private Link Resource.
-	Properties any
-	SubResourceName any
+	// Gets or sets link to the next set of results.
+	NextLink any
+	// Gets or sets result of the List AuthorizationRules operation.
+	Value any
 }
 
 var PrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_notificationhubs_private_link_resource",
 	Fields: ubx.FieldMap{
 		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
-		"SubResourceName": ubx.FieldSpec{WireName: "sub_resource_name"},
 	},
 }

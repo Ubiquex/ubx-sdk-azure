@@ -4,5 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .reservation_group_list_result import ReservationGroupListResult, ReservationGroupListResultConfig
-from .reservation_list_result import ReservationListResult, ReservationListResultConfig
+from .reservation import Reservation, ReservationConfig
+from .reservation_group import ReservationGroup, ReservationGroupConfig

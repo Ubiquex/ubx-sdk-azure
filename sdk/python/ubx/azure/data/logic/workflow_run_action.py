@@ -7,40 +7,33 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class WorkflowRunAction_Properties_Correlation:
-    # The action tracking identifier.
+class WorkflowRunAction_Value_Properties_Correlation:
     action_tracking_id: Any = None
 
 @dataclasses.dataclass
-class WorkflowRunAction_Properties_InputsLink_ContentHash:
-    # The algorithm of the content hash.
+class WorkflowRunAction_Value_Properties_InputsLink_ContentHash:
     algorithm: Any = None
-    # The value of the content hash.
     value: Any = None
 
 @dataclasses.dataclass
-class WorkflowRunAction_Properties_InputsLink:
-    # The content hash.
+class WorkflowRunAction_Value_Properties_InputsLink:
     content_hash: Any = None
-    # The content size.
     content_size: Any = None
-    # The content version.
     content_version: Any = None
     metadata: Any = None
-    # The content link URI.
     uri: Any = None
 
 @dataclasses.dataclass
-class WorkflowRunAction_Properties_RetryHistory_Error_Error:
+class WorkflowRunAction_Value_Properties_RetryHistory_Error_Error:
     code: Any = None
     message: Any = None
 
 @dataclasses.dataclass
-class WorkflowRunAction_Properties_RetryHistory_Error:
+class WorkflowRunAction_Value_Properties_RetryHistory_Error:
     error: Any = None
 
 @dataclasses.dataclass
-class WorkflowRunAction_Properties_RetryHistory:
+class WorkflowRunAction_Value_Properties_RetryHistory:
     client_request_id: Any = None
     code: Any = None
     end_time: Any = None
@@ -49,31 +42,27 @@ class WorkflowRunAction_Properties_RetryHistory:
     start_time: Any = None
 
 @dataclasses.dataclass
-class WorkflowRunAction_Properties:
-    # Gets the code.
+class WorkflowRunAction_Value_Properties:
     code: Any = None
-    # The workflow run action correlation properties.
     correlation: Any = None
-    # Gets the end time.
     end_time: Any = None
     error: Any = None
-    # The content link.
     inputs_link: Any = None
-    # The content link.
     outputs_link: Any = None
-    # Gets the retry histories.
     retry_history: Any = None
-    # Gets the start time.
     start_time: Any = None
-    # The workflow status.
     status: Any = None
     tracked_properties: Any = None
-    # Gets the tracking id.
     tracking_id: Any = None
 
 @dataclasses.dataclass
+class WorkflowRunAction_Value:
+    name: Any = None
+    properties: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
 class WorkflowRunActionConfig:
-    action_name: Any = None
     api_version: Any = None
     resource_group_name: Any = None
     run_name: Any = None
@@ -82,23 +71,19 @@ class WorkflowRunActionConfig:
 
 @dataclasses.dataclass
 class WorkflowRunActionAttrs:
-    action_name: Any = None
     api_version: Any = None
-    # Gets the workflow run action name.
-    name: Any = None
-    # The workflow run action properties.
-    properties: Any = None
+    # The URL to get the next set of results.
+    next_link: Any = None
     resource_group_name: Any = None
     run_name: Any = None
     subscription_id: Any = None
-    # Gets the workflow run action type.
-    type: Any = None
+    # A list of workflow run actions.
+    value: Any = None
     workflow_name: Any = None
 
 WorkflowRunAction = ubx.DataSourceBinding(
     wire_type="azure_logic_workflow_run_action",
     fields={
-        "action_name": ubx.FieldSpec(wire_name="action_name"),
         "api_version": ubx.FieldSpec(wire_name="api_version"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "run_name": ubx.FieldSpec(wire_name="run_name"),

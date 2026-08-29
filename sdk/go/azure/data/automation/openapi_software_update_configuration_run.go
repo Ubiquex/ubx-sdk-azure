@@ -3,76 +3,58 @@ package automation
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiSoftwareUpdateConfigurationRun_Properties_SoftwareUpdateConfiguration struct {
-	// Name of the software update configuration triggered the software update configuration run
+type OpenapiSoftwareUpdateConfigurationRun_Value_Properties_SoftwareUpdateConfiguration struct {
 	Name any
 }
 
-type OpenapiSoftwareUpdateConfigurationRun_Properties_Tasks_PostTask struct {
-	// The job id of the task.
+type OpenapiSoftwareUpdateConfigurationRun_Value_Properties_Tasks_PostTask struct {
 	JobId any
-	// The name of the source of the task.
 	Source any
-	// The status of the task.
 	Status any
 }
 
-type OpenapiSoftwareUpdateConfigurationRun_Properties_Tasks struct {
-	// Task properties of the software update configuration.
+type OpenapiSoftwareUpdateConfigurationRun_Value_Properties_Tasks struct {
 	PostTask any
-	// Task properties of the software update configuration.
 	PreTask any
 }
 
-type OpenapiSoftwareUpdateConfigurationRun_Properties struct {
-	// Number of computers in the software update configuration run.
+type OpenapiSoftwareUpdateConfigurationRun_Value_Properties struct {
 	ComputerCount any
-	// Configured duration for the software update configuration run.
 	ConfiguredDuration any
-	// CreatedBy property, which only appears in the response.
 	CreatedBy any
-	// Creation time of the resource, which only appears in the response.
 	CreationTime any
-	// End time of the software update configuration run.
 	EndTime any
-	// Number of computers with failed status.
 	FailedCount any
-	// LastModifiedBy property, which only appears in the response.
 	LastModifiedBy any
-	// Last time resource was modified, which only appears in the response.
 	LastModifiedTime any
-	// Operating system target of the software update configuration triggered this run
 	OsType any
-	// Software update configuration Run Navigation model.
 	SoftwareUpdateConfiguration any
-	// Start time of the software update configuration run.
 	StartTime any
-	// Status of the software update configuration run.
 	Status any
-	// Software update configuration run tasks model.
 	Tasks any
+}
+
+type OpenapiSoftwareUpdateConfigurationRun_Value struct {
+	Id any
+	Name any
+	Properties any
 }
 
 type OpenapiSoftwareUpdateConfigurationRunConfig struct {
 	AutomationAccountName any
-	SoftwareUpdateConfigurationRunId any
 }
 
 type OpenapiSoftwareUpdateConfigurationRunAttrs struct {
 	AutomationAccountName any
-	// Resource Id of the software update configuration run
-	Id any
-	// Name of the software update configuration run.
-	Name any
-	// Software update configuration properties.
-	Properties any
-	SoftwareUpdateConfigurationRunId any
+	// The link to the next page of items
+	NextLink any
+	// The softwareUpdateConfigurationRun items on this page
+	Value any
 }
 
 var OpenapiSoftwareUpdateConfigurationRun = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_software_update_configuration_run",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"SoftwareUpdateConfigurationRunId": ubx.FieldSpec{WireName: "software_update_configuration_run_id"},
 	},
 }

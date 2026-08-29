@@ -7,52 +7,45 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class DtlArmTemplate_Properties_ParametersValueFilesInfo:
+class DtlArmTemplate_Value_Properties_ParametersValueFilesInfo:
     file_name: Any = None
     parameters_value_info: Any = None
 
 @dataclasses.dataclass
-class DtlArmTemplate_Properties:
-    # The contents of the ARM template.
+class DtlArmTemplate_Value_Properties:
     contents: Any = None
-    # The creation date of the armTemplate.
     created_date: Any = None
-    # The description of the ARM template.
     description: Any = None
-    # The display name of the ARM template.
     display_name: Any = None
-    # Whether or not ARM template is enabled for use by lab user.
     enabled: Any = None
-    # The URI to the icon of the ARM template.
     icon: Any = None
-    # File name and parameter values information from all azuredeploy.*.parameters.json for the ARM template.
     parameters_value_files_info: Any = None
-    # The publisher of the ARM template.
     publisher: Any = None
+
+@dataclasses.dataclass
+class DtlArmTemplate_Value:
+    location: Any = None
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class DtlArmTemplateConfig:
     artifact_source_name: Any = None
     lab_name: Any = None
-    name: Any = None
 
 @dataclasses.dataclass
 class DtlArmTemplateAttrs:
     artifact_source_name: Any = None
     lab_name: Any = None
-    # The geo-location where the resource lives
-    location: Any = None
-    name: Any = None
-    # Properties of an Azure Resource Manager template.
-    properties: Any = None
-    # Resource tags.
-    tags: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The ArmTemplate items on this page
+    value: Any = None
 
 DtlArmTemplate = ubx.DataSourceBinding(
     wire_type="azure_devtestlabs_dtl_arm_template",
     fields={
         "artifact_source_name": ubx.FieldSpec(wire_name="artifact_source_name"),
         "lab_name": ubx.FieldSpec(wire_name="lab_name"),
-        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

@@ -7,34 +7,35 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiPrivateLinkResource_Properties:
-    # The group id is used to establish the private link connection.
+class OpenapiPrivateLinkResource_Value_Properties:
     group_id: Any = None
-    # The list of required members that are used to establish the private link connection.
     required_members: Any = None
-    # The list of required zone names for the private DNS resource name
     required_zone_names: Any = None
+
+@dataclasses.dataclass
+class OpenapiPrivateLinkResource_Value:
+    etag: Any = None
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiPrivateLinkResourceConfig:
     account_name: Any = None
-    private_link_resource_name: Any = None
+    maxresults: Any = None
 
 @dataclasses.dataclass
 class OpenapiPrivateLinkResourceAttrs:
     account_name: Any = None
-    # The ETag of the resource, used for concurrency statements.
-    etag: Any = None
-    private_link_resource_name: Any = None
-    # Private link resource properties.
-    properties: Any = None
-    # The tags of the resource.
-    tags: Any = None
+    maxresults: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The PrivateLinkResource items on this page
+    value: Any = None
 
 OpenapiPrivateLinkResource = ubx.DataSourceBinding(
     wire_type="azure_batch_openapi_private_link_resource",
     fields={
         "account_name": ubx.FieldSpec(wire_name="account_name"),
-        "private_link_resource_name": ubx.FieldSpec(wire_name="private_link_resource_name"),
+        "maxresults": ubx.FieldSpec(wire_name="maxresults"),
     },
 )

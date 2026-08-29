@@ -3,20 +3,17 @@ package storage
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter struct {
-	// The ARM identifier of the resource
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter struct {
 	Id any
-	// Location of the resource
 	Location any
-	// Guid of the resource
 	PerimeterGuid any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties_Subscriptions struct {
 	Id any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties struct {
 	AddressPrefixes any
 	Direction any
 	FullyQualifiedDomainNames any
@@ -24,71 +21,62 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules
 	Subscriptions any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules struct {
 	Name any
 	Properties any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile struct {
-	// List of Access Rules
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile struct {
 	AccessRules any
-	// Current access rules version
 	AccessRulesVersion any
-	// Diagnostic settings version
 	DiagnosticSettingsVersion any
-	// Enabled logging categories
 	EnabledLogCategories any
-	// Name of the resource
 	Name any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties struct {
 	Description any
 	IssueType any
 	Severity any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues struct {
 	Name any
 	Properties any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation struct {
-	// Access Mode of the resource association
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation struct {
 	AccessMode any
-	// Name of the resource association
 	Name any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties struct {
-	// NetworkSecurityPerimeter related information
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties struct {
 	NetworkSecurityPerimeter any
-	// Network Security Perimeter profile
 	Profile any
-	// List of Provisioning Issues if any
 	ProvisioningIssues any
-	// Provisioning state of Network Security Perimeter configuration propagation
 	ProvisioningState any
-	// Information about resource association
 	ResourceAssociation any
+}
+
+type OpenapiNetworkSecurityPerimeterConfiguration_Value struct {
+	Properties any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationConfig struct {
 	AccountName any
-	NetworkSecurityPerimeterConfigurationName any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationAttrs struct {
 	AccountName any
-	NetworkSecurityPerimeterConfigurationName any
-	// Properties of the Network Security Perimeter Configuration
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The NetworkSecurityPerimeterConfiguration items on this page
+	Value any
 }
 
 var OpenapiNetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_storage_openapi_network_security_perimeter_configuration",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"NetworkSecurityPerimeterConfigurationName": ubx.FieldSpec{WireName: "network_security_perimeter_configuration_name"},
 	},
 }

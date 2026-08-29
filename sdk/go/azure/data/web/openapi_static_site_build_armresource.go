@@ -3,13 +3,13 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiStaticSiteBuildArmresource_Properties_DatabaseConnections_ConfigurationFiles struct {
+type OpenapiStaticSiteBuildArmresource_Value_Properties_DatabaseConnections_ConfigurationFiles struct {
 	Contents any
 	FileName any
 	Type any
 }
 
-type OpenapiStaticSiteBuildArmresource_Properties_DatabaseConnections struct {
+type OpenapiStaticSiteBuildArmresource_Value_Properties_DatabaseConnections struct {
 	ConfigurationFiles any
 	ConnectionIdentity any
 	Name any
@@ -17,64 +17,56 @@ type OpenapiStaticSiteBuildArmresource_Properties_DatabaseConnections struct {
 	ResourceId any
 }
 
-type OpenapiStaticSiteBuildArmresource_Properties_LinkedBackends struct {
+type OpenapiStaticSiteBuildArmresource_Value_Properties_LinkedBackends struct {
 	BackendResourceId any
 	CreatedOn any
 	ProvisioningState any
 	Region any
 }
 
-type OpenapiStaticSiteBuildArmresource_Properties_UserProvidedFunctionApps_Properties struct {
+type OpenapiStaticSiteBuildArmresource_Value_Properties_UserProvidedFunctionApps_Properties struct {
 	CreatedOn any
 	FunctionAppRegion any
 	FunctionAppResourceId any
 }
 
-type OpenapiStaticSiteBuildArmresource_Properties_UserProvidedFunctionApps struct {
+type OpenapiStaticSiteBuildArmresource_Value_Properties_UserProvidedFunctionApps struct {
 	Properties any
 }
 
-type OpenapiStaticSiteBuildArmresource_Properties struct {
-	// An identifier for the static site build.
+type OpenapiStaticSiteBuildArmresource_Value_Properties struct {
 	BuildId any
-	// When this build was created.
 	CreatedTimeUtc any
-	// Database connections for the static site build
 	DatabaseConnections any
-	// The hostname for a static site build.
 	Hostname any
-	// When this build was updated.
 	LastUpdatedOn any
-	// Backends linked to the static side build
 	LinkedBackends any
-	// The title of a pull request that a static site build is related to.
 	PullRequestTitle any
-	// The source branch.
 	SourceBranch any
-	// The status of the static site build.
 	Status any
-	// User provided function apps registered with the static site build
 	UserProvidedFunctionApps any
 }
 
+type OpenapiStaticSiteBuildArmresource_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiStaticSiteBuildArmresourceConfig struct {
-	EnvironmentName any
 	Name any
 }
 
 type OpenapiStaticSiteBuildArmresourceAttrs struct {
-	EnvironmentName any
-	// Kind of resource.
-	Kind any
 	Name any
-	// StaticSiteBuildARMResource resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The StaticSiteBuildARMResource items on this page
+	Value any
 }
 
 var OpenapiStaticSiteBuildArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_static_site_build_armresource",
 	Fields: ubx.FieldMap{
-		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

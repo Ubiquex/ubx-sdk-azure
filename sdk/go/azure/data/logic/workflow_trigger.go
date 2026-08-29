@@ -3,88 +3,67 @@ package logic
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type WorkflowTrigger_Properties_Recurrence_Schedule_MonthlyOccurrences struct {
+type WorkflowTrigger_Value_Properties_Recurrence_Schedule_MonthlyOccurrences struct {
 	Day any
 	Occurrence any
 }
 
-type WorkflowTrigger_Properties_Recurrence_Schedule struct {
-	// The hours.
+type WorkflowTrigger_Value_Properties_Recurrence_Schedule struct {
 	Hours any
-	// The minutes.
 	Minutes any
-	// The month days.
 	MonthDays any
-	// The monthly occurrences.
 	MonthlyOccurrences any
-	// The days of the week.
 	WeekDays any
 }
 
-type WorkflowTrigger_Properties_Recurrence struct {
-	// The end time.
+type WorkflowTrigger_Value_Properties_Recurrence struct {
 	EndTime any
-	// The recurrence frequency.
 	Frequency any
-	// The interval.
 	Interval any
-	// The recurrence schedule.
 	Schedule any
-	// The start time.
 	StartTime any
-	// The time zone.
 	TimeZone any
 }
 
-type WorkflowTrigger_Properties_Workflow struct {
-	// The resource id.
+type WorkflowTrigger_Value_Properties_Workflow struct {
 	Id any
-	// Gets the resource name.
 	Name any
-	// Gets the resource type.
 	Type any
 }
 
-type WorkflowTrigger_Properties struct {
-	// Gets the changed time.
+type WorkflowTrigger_Value_Properties struct {
 	ChangedTime any
-	// Gets the created time.
 	CreatedTime any
-	// Gets the last execution time.
 	LastExecutionTime any
-	// Gets the next execution time.
 	NextExecutionTime any
-	// The workflow trigger provisioning state.
 	ProvisioningState any
-	// The workflow trigger recurrence.
 	Recurrence any
-	// The workflow state.
 	State any
-	// The workflow status.
 	Status any
-	// The resource reference.
 	Workflow any
+}
+
+type WorkflowTrigger_Value struct {
+	Name any
+	Properties any
+	Type any
 }
 
 type WorkflowTriggerConfig struct {
 	ApiVersion any
 	ResourceGroupName any
 	SubscriptionId any
-	TriggerName any
 	WorkflowName any
 }
 
 type WorkflowTriggerAttrs struct {
 	ApiVersion any
-	// Gets the workflow trigger name.
-	Name any
-	// The workflow trigger properties.
-	Properties any
+	// The URL to get the next set of results.
+	NextLink any
 	ResourceGroupName any
 	SubscriptionId any
-	TriggerName any
-	// Gets the workflow trigger type.
-	Type any
+	// A list of workflow triggers.
+	Value any
 	WorkflowName any
 }
 
@@ -94,7 +73,6 @@ var WorkflowTrigger = ubx.DataSourceBinding{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"TriggerName": ubx.FieldSpec{WireName: "trigger_name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

@@ -3,50 +3,43 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiPaymentMethod_Properties_Logos struct {
+type OpenapiPaymentMethod_Value_Properties_Logos struct {
 	MimeType any
 	Url any
 }
 
-type OpenapiPaymentMethod_Properties struct {
-	// The account holder name for the payment method. This is only supported for payment methods with family CreditCard.
+type OpenapiPaymentMethod_Value_Properties struct {
 	AccountHolderName any
-	// The display name of the payment method.
 	DisplayName any
-	// The expiration month and year of the payment method. This is only supported for payment methods with family CreditCard.
 	Expiration any
-	// Payment on Account type.
 	Family any
-	// Id of payment method.
 	Id any
-	// Last four digits of payment method.
 	LastFourDigits any
-	// The list of logos for the payment method.
 	Logos any
-	// The type of payment method.
 	PaymentMethodType any
-	// Status of the payment method.
 	Status any
+}
+
+type OpenapiPaymentMethod_Value struct {
+	Properties any
+	Tags any
 }
 
 type OpenapiPaymentMethodConfig struct {
 	BillingAccountName any
-	PaymentMethodName any
 }
 
 type OpenapiPaymentMethodAttrs struct {
 	BillingAccountName any
-	PaymentMethodName any
-	// The properties of a payment method.
-	Properties any
-	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-	Tags any
+	// The link to the next page of items
+	NextLink any
+	// The PaymentMethod items on this page
+	Value any
 }
 
 var OpenapiPaymentMethod = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_payment_method",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"PaymentMethodName": ubx.FieldSpec{WireName: "payment_method_name"},
 	},
 }

@@ -3,53 +3,48 @@ package marketplace
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type PrivateStore_Properties_NotificationsSettings_Recipients struct {
+type PrivateStore_Value_Properties_NotificationsSettings_Recipients struct {
 	DisplayName any
 	EmailAddress any
 	PrincipalId any
 }
 
-type PrivateStore_Properties_NotificationsSettings struct {
-	// Gets or sets list of notified recipients for new requests
+type PrivateStore_Value_Properties_NotificationsSettings struct {
 	Recipients any
-	// Gets or sets whether to send email to all marketplace admins for new requests
 	SendToAllMarketplaceAdmins any
 }
 
-type PrivateStore_Properties struct {
-	// Indicates private store availability
+type PrivateStore_Value_Properties struct {
 	Availability any
-	// Gets or sets list of branding characteristics
 	Branding any
-	// Gets list of associated collection ids
 	CollectionIds any
-	// Identifier for purposes of race condition
 	ETag any
-	// Is government
 	IsGov any
-	// Describes the json payload for notifications settings
 	NotificationsSettings any
-	// Private Store id
 	PrivateStoreId any
-	// Private Store Name
 	PrivateStoreName any
-	// Tenant id
 	TenantId any
 }
 
+type PrivateStore_Value struct {
+	Properties any
+}
+
 type PrivateStoreConfig struct {
-	PrivateStoreId any
+	UseCache any
 }
 
 type PrivateStoreAttrs struct {
-	PrivateStoreId any
-	// Describes the json payload on whether or not the private store is enabled for a given tenant
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	UseCache any
+	// The PrivateStore items on this page
+	Value any
 }
 
 var PrivateStore = ubx.DataSourceBinding{
 	WireType: "azure_marketplace_private_store",
 	Fields: ubx.FieldMap{
-		"PrivateStoreId": ubx.FieldSpec{WireName: "private_store_id"},
+		"UseCache": ubx.FieldSpec{WireName: "use_cache"},
 	},
 }

@@ -7,12 +7,12 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiInvoice_Properties_AmountDue:
+class OpenapiInvoice_Value_Properties_AmountDue:
     currency: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiInvoice_Properties_Documents:
+class OpenapiInvoice_Value_Properties_Documents:
     document_numbers: Any = None
     external_url: Any = None
     kind: Any = None
@@ -21,12 +21,12 @@ class OpenapiInvoice_Properties_Documents:
     url: Any = None
 
 @dataclasses.dataclass
-class OpenapiInvoice_Properties_FailedPayments:
+class OpenapiInvoice_Value_Properties_FailedPayments:
     date: Any = None
     failed_payment_reason: Any = None
 
 @dataclasses.dataclass
-class OpenapiInvoice_Properties_Payments:
+class OpenapiInvoice_Value_Properties_Payments:
     amount: Any = None
     date: Any = None
     payment_method_family: Any = None
@@ -35,19 +35,19 @@ class OpenapiInvoice_Properties_Payments:
     payment_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiInvoice_Properties_RebillDetails_RebillDetails:
+class OpenapiInvoice_Value_Properties_RebillDetails_RebillDetails:
     credit_note_document_id: Any = None
     invoice_document_id: Any = None
     rebill_details: Any = None
 
 @dataclasses.dataclass
-class OpenapiInvoice_Properties_RebillDetails:
+class OpenapiInvoice_Value_Properties_RebillDetails:
     credit_note_document_id: Any = None
     invoice_document_id: Any = None
     rebill_details: Any = None
 
 @dataclasses.dataclass
-class OpenapiInvoice_Properties_RefundDetails:
+class OpenapiInvoice_Value_Properties_RefundDetails:
     amount_refunded: Any = None
     amount_requested: Any = None
     approved_on: Any = None
@@ -60,84 +60,81 @@ class OpenapiInvoice_Properties_RefundDetails:
     transaction_count: Any = None
 
 @dataclasses.dataclass
-class OpenapiInvoice_Properties:
-    # The amount due as of now.
+class OpenapiInvoice_Value_Properties:
     amount_due: Any = None
-    # The amount of Azure prepayment applied to the charges. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
     azure_prepayment_applied: Any = None
-    # The total charges for the invoice billing period.
     billed_amount: Any = None
-    # The Id of the active invoice which is originally billed after this invoice was voided. This field is applicable to the void invoices only.
     billed_document_id: Any = None
-    # The name of the billing profile for which the invoice is generated.
     billing_profile_display_name: Any = None
-    # The ID of the billing profile for which the invoice is generated.
     billing_profile_id: Any = None
-    # The total refund for returns and cancellations during the invoice billing period. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
     credit_amount: Any = None
-    # The Id of the invoice which got voided and this credit note was issued as a result. This field is applicable to the credit notes only.
     credit_for_document_id: Any = None
-    # The type of the document.
     document_type: Any = None
-    # List of documents available to download and view such as invoice, credit note, or tax receipt.
     documents: Any = None
-    # The due date for the invoice.
     due_date: Any = None
-    # List of failed payments.
     failed_payments: Any = None
-    # The amount of free Azure credits applied to the charges. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
     free_azure_credit_applied: Any = None
-    # The date when the invoice was generated.
     invoice_date: Any = None
-    # The end date of the billing period for which the invoice is generated. The date is in MM-DD-YYYY format.
     invoice_period_end_date: Any = None
-    # The start date of the billing period for which the invoice is generated. The date is in MM-DD-YYYY format.
     invoice_period_start_date: Any = None
-    # Invoice type.
     invoice_type: Any = None
-    # Specifies if the invoice is generated as part of monthly invoicing cycle or not. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
     is_monthly_invoice: Any = None
-    # List of payments.
     payments: Any = None
-    # An optional purchase order number for the invoice.
     purchase_order_number: Any = None
-    # Rebill details for an invoice.
     rebill_details: Any = None
-    # The details of a refund request.
     refund_details: Any = None
-    # Identifies the type of tax calculation used for the invoice. The field is applicable only to invoices with special tax calculation logic.
     special_taxation_type: Any = None
-    # The current status of the invoice.
     status: Any = None
-    # The pre-tax amount due. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
     sub_total: Any = None
-    # The name of the billing subscription for which the invoice is generated.
     subscription_display_name: Any = None
-    # The ID of the subscription for which the invoice is generated.
     subscription_id: Any = None
-    # The amount of tax charged for the billing period. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
     tax_amount: Any = None
-    # The amount due when the invoice was generated. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
     total_amount: Any = None
 
 @dataclasses.dataclass
+class OpenapiInvoice_Value:
+    properties: Any = None
+    tags: Any = None
+
+@dataclasses.dataclass
 class OpenapiInvoiceConfig:
-    invoice_name: Any = None
+    count: Any = None
+    filter: Any = None
+    order_by: Any = None
+    period_end_date: Any = None
+    period_start_date: Any = None
+    search: Any = None
+    skip: Any = None
     subscription_id: Any = None
+    top: Any = None
 
 @dataclasses.dataclass
 class OpenapiInvoiceAttrs:
-    invoice_name: Any = None
-    # An invoice.
-    properties: Any = None
+    count: Any = None
+    filter: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    order_by: Any = None
+    period_end_date: Any = None
+    period_start_date: Any = None
+    search: Any = None
+    skip: Any = None
     subscription_id: Any = None
-    # Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-    tags: Any = None
+    top: Any = None
+    # The Invoice items on this page
+    value: Any = None
 
 OpenapiInvoice = ubx.DataSourceBinding(
     wire_type="azure_billing_openapi_invoice",
     fields={
-        "invoice_name": ubx.FieldSpec(wire_name="invoice_name"),
+        "count": ubx.FieldSpec(wire_name="count"),
+        "filter": ubx.FieldSpec(wire_name="filter"),
+        "order_by": ubx.FieldSpec(wire_name="order_by"),
+        "period_end_date": ubx.FieldSpec(wire_name="period_end_date"),
+        "period_start_date": ubx.FieldSpec(wire_name="period_start_date"),
+        "search": ubx.FieldSpec(wire_name="search"),
+        "skip": ubx.FieldSpec(wire_name="skip"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
+        "top": ubx.FieldSpec(wire_name="top"),
     },
 )

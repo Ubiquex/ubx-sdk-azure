@@ -3,45 +3,41 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type NetworkmanagerNetworkManagerConnection_Properties struct {
-	// The current scope connection state.
+type NetworkmanagerNetworkManagerConnection_Value_Properties struct {
 	ConnectionState any
-	// A description of the network manager connection.
 	Description any
-	// Network Manager Id.
 	NetworkManagerId any
 }
 
-type NetworkmanagerNetworkManagerConnection_SystemData struct {
-	// The timestamp of resource creation (UTC).
+type NetworkmanagerNetworkManagerConnection_Value_SystemData struct {
 	CreatedAt any
-	// The identity that created the resource.
 	CreatedBy any
-	// The type of identity that created the resource.
 	CreatedByType any
-	// The timestamp of resource last modification (UTC)
 	LastModifiedAt any
-	// The identity that last modified the resource.
 	LastModifiedBy any
-	// The type of identity that last modified the resource.
 	LastModifiedByType any
 }
 
+type NetworkmanagerNetworkManagerConnection_Value struct {
+	Properties any
+	SystemData any
+}
+
 type NetworkmanagerNetworkManagerConnectionConfig struct {
-	NetworkManagerConnectionName any
+	ManagementGroupId any
 }
 
 type NetworkmanagerNetworkManagerConnectionAttrs struct {
-	NetworkManagerConnectionName any
-	// Information about the network manager connection.
-	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
+	ManagementGroupId any
+	// The link to the next page of items
+	NextLink any
+	// The NetworkManagerConnection items on this page
+	Value any
 }
 
 var NetworkmanagerNetworkManagerConnection = ubx.DataSourceBinding{
 	WireType: "azure_network_networkmanager_network_manager_connection",
 	Fields: ubx.FieldMap{
-		"NetworkManagerConnectionName": ubx.FieldSpec{WireName: "network_manager_connection_name"},
+		"ManagementGroupId": ubx.FieldSpec{WireName: "management_group_id"},
 	},
 }

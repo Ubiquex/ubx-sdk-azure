@@ -7,41 +7,39 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class HciSku_Properties_SkuMappings:
+class HciSku_Value_Properties_SkuMappings:
     catalog_plan_id: Any = None
     marketplace_sku_id: Any = None
     marketplace_sku_versions: Any = None
 
 @dataclasses.dataclass
-class HciSku_Properties:
-    # JSON serialized catalog content of the sku offer
+class HciSku_Value_Properties:
     content: Any = None
-    # The API version of the catalog service used to serve the catalog content
     content_version: Any = None
-    # Identifier of the Offer for the sku
     offer_id: Any = None
-    # Provisioning State
     provisioning_state: Any = None
-    # Identifier of the Publisher for the offer
     publisher_id: Any = None
-    # Array of SKU mappings
     sku_mappings: Any = None
+
+@dataclasses.dataclass
+class HciSku_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class HciSkuConfig:
     cluster_name: Any = None
     offer_name: Any = None
     publisher_name: Any = None
-    sku_name: Any = None
 
 @dataclasses.dataclass
 class HciSkuAttrs:
     cluster_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     offer_name: Any = None
-    # SKU properties.
-    properties: Any = None
     publisher_name: Any = None
-    sku_name: Any = None
+    # The Sku items on this page
+    value: Any = None
 
 HciSku = ubx.DataSourceBinding(
     wire_type="azure_azurestackhci_hci_sku",
@@ -49,6 +47,5 @@ HciSku = ubx.DataSourceBinding(
         "cluster_name": ubx.FieldSpec(wire_name="cluster_name"),
         "offer_name": ubx.FieldSpec(wire_name="offer_name"),
         "publisher_name": ubx.FieldSpec(wire_name="publisher_name"),
-        "sku_name": ubx.FieldSpec(wire_name="sku_name"),
     },
 )

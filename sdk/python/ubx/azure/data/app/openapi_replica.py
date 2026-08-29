@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiReplica_Properties_Containers:
+class OpenapiReplica_Value_Properties_Containers:
     container_id: Any = None
     exec_endpoint: Any = None
     log_stream_endpoint: Any = None
@@ -19,37 +19,33 @@ class OpenapiReplica_Properties_Containers:
     started: Any = None
 
 @dataclasses.dataclass
-class OpenapiReplica_Properties:
-    # The containers collection under a replica.
+class OpenapiReplica_Value_Properties:
     containers: Any = None
-    # Timestamp describing when the pod was created by controller
     created_time: Any = None
-    # The init containers collection under a replica.
     init_containers: Any = None
-    # Current running state of the replica
     running_state: Any = None
-    # The details of replica current running state
     running_state_details: Any = None
+
+@dataclasses.dataclass
+class OpenapiReplica_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiReplicaConfig:
     container_app_name: Any = None
-    replica_name: Any = None
     revision_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiReplicaAttrs:
     container_app_name: Any = None
-    # Replica resource specific properties
-    properties: Any = None
-    replica_name: Any = None
     revision_name: Any = None
+    # Collection of resources.
+    value: Any = None
 
 OpenapiReplica = ubx.DataSourceBinding(
     wire_type="azure_app_openapi_replica",
     fields={
         "container_app_name": ubx.FieldSpec(wire_name="container_app_name"),
-        "replica_name": ubx.FieldSpec(wire_name="replica_name"),
         "revision_name": ubx.FieldSpec(wire_name="revision_name"),
     },
 )

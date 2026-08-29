@@ -3,50 +3,59 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiCustomer_Properties_EnabledAzurePlans struct {
+type OpenapiCustomer_Value_Properties_EnabledAzurePlans struct {
 	ProductId any
 	SkuDescription any
 	SkuId any
 }
 
-type OpenapiCustomer_Properties_Resellers struct {
+type OpenapiCustomer_Value_Properties_Resellers struct {
 	Description any
 	ResellerId any
 }
 
-type OpenapiCustomer_Properties struct {
-	// The name of the billing profile.
+type OpenapiCustomer_Value_Properties struct {
 	BillingProfileDisplayName any
-	// The fully qualified ID that uniquely identifies a billing profile.
 	BillingProfileId any
-	// The name of the customer.
 	DisplayName any
-	// Azure plans enabled for the customer.
 	EnabledAzurePlans any
-	// The list of resellers for which an Azure plan is enabled for the customer.
 	Resellers any
-	// Identifies the status of an customer. This is an upcoming property that will be populated in the future.
 	Status any
-	// The system generated unique identifier for a customer.
 	SystemId any
-	// Dictionary of metadata associated with the resource. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
+	Tags any
+}
+
+type OpenapiCustomer_Value struct {
+	Properties any
 	Tags any
 }
 
 type OpenapiCustomerConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	CustomerName any
+	Count any
+	Expand any
+	Filter any
+	OrderBy any
+	Search any
+	Skip any
+	Top any
 }
 
 type OpenapiCustomerAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	CustomerName any
-	// A partner's customer.
-	Properties any
-	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-	Tags any
+	Count any
+	Expand any
+	Filter any
+	// The link to the next page of items
+	NextLink any
+	OrderBy any
+	Search any
+	Skip any
+	Top any
+	// The Customer items on this page
+	Value any
 }
 
 var OpenapiCustomer = ubx.DataSourceBinding{
@@ -54,6 +63,12 @@ var OpenapiCustomer = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"CustomerName": ubx.FieldSpec{WireName: "customer_name"},
+		"Count": ubx.FieldSpec{WireName: "count"},
+		"Expand": ubx.FieldSpec{WireName: "expand"},
+		"Filter": ubx.FieldSpec{WireName: "filter"},
+		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
+		"Search": ubx.FieldSpec{WireName: "search"},
+		"Skip": ubx.FieldSpec{WireName: "skip"},
+		"Top": ubx.FieldSpec{WireName: "top"},
 	},
 }

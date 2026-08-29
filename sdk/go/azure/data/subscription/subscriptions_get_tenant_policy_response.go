@@ -3,30 +3,28 @@ package subscription
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SubscriptionsGetTenantPolicyResponse_Properties struct {
-	// Blocks the entering of subscriptions into user's tenant.
+type SubscriptionsGetTenantPolicyResponse_Value_Properties struct {
 	BlockSubscriptionsIntoTenant any
-	// Blocks the leaving of subscriptions from user's tenant.
 	BlockSubscriptionsLeavingTenant any
-	// List of user objectIds that are exempted from the set subscription tenant policies for the user's tenant.
 	ExemptedPrincipals any
-	// Policy Id.
 	PolicyId any
 }
 
-type SubscriptionsGetTenantPolicyResponse_SystemData struct {
-	// The timestamp of resource creation (UTC).
+type SubscriptionsGetTenantPolicyResponse_Value_SystemData struct {
 	CreatedAt any
-	// The identity that created the resource.
 	CreatedBy any
-	// The type of identity that created the resource.
 	CreatedByType any
-	// The timestamp of resource last modification (UTC)
 	LastModifiedAt any
-	// The identity that last modified the resource.
 	LastModifiedBy any
-	// The type of identity that last modified the resource.
 	LastModifiedByType any
+}
+
+type SubscriptionsGetTenantPolicyResponse_Value struct {
+	Id any
+	Name any
+	Properties any
+	SystemData any
+	Type any
 }
 
 type SubscriptionsGetTenantPolicyResponseConfig struct {
@@ -35,16 +33,10 @@ type SubscriptionsGetTenantPolicyResponseConfig struct {
 
 type SubscriptionsGetTenantPolicyResponseAttrs struct {
 	ApiVersion any
-	// Policy Id.
-	Id any
-	// Policy name.
-	Name any
-	// Tenant policy.
-	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
-	// Resource type.
-	Type any
+	// The link (url) to the next page of results.
+	NextLink any
+	// The list of tenant policies.
+	Value any
 }
 
 var SubscriptionsGetTenantPolicyResponse = ubx.DataSourceBinding{

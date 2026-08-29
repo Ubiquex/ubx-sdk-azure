@@ -3,32 +3,30 @@ package relay
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type AuthorizationRule_Properties struct {
-	// The rights associated with the rule.
+type AuthorizationRule_Value_Properties struct {
 	Rights any
 }
 
+type AuthorizationRule_Value struct {
+	Location any
+	Properties any
+}
+
 type AuthorizationRuleConfig struct {
-	AuthorizationRuleName any
-	HybridConnectionName any
 	NamespaceName any
 }
 
 type AuthorizationRuleAttrs struct {
-	AuthorizationRuleName any
-	HybridConnectionName any
-	// The geo-location where the resource lives
-	Location any
 	NamespaceName any
-	// Properties supplied to create or update AuthorizationRule
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The AuthorizationRule items on this page
+	Value any
 }
 
 var AuthorizationRule = ubx.DataSourceBinding{
 	WireType: "azure_relay_authorization_rule",
 	Fields: ubx.FieldMap{
-		"AuthorizationRuleName": ubx.FieldSpec{WireName: "authorization_rule_name"},
-		"HybridConnectionName": ubx.FieldSpec{WireName: "hybrid_connection_name"},
 		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
 	},
 }

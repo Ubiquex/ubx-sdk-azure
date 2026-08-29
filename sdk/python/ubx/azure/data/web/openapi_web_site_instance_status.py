@@ -7,27 +7,27 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiWebSiteInstanceStatus_Properties_Containers_CurrentCpuStats_CpuUsage:
+class OpenapiWebSiteInstanceStatus_Value_Properties_Containers_CurrentCpuStats_CpuUsage:
     kernel_mode_usage: Any = None
     per_cpu_usage: Any = None
     total_usage: Any = None
     user_mode_usage: Any = None
 
 @dataclasses.dataclass
-class OpenapiWebSiteInstanceStatus_Properties_Containers_CurrentCpuStats_ThrottlingData:
+class OpenapiWebSiteInstanceStatus_Value_Properties_Containers_CurrentCpuStats_ThrottlingData:
     periods: Any = None
     throttled_periods: Any = None
     throttled_time: Any = None
 
 @dataclasses.dataclass
-class OpenapiWebSiteInstanceStatus_Properties_Containers_CurrentCpuStats:
+class OpenapiWebSiteInstanceStatus_Value_Properties_Containers_CurrentCpuStats:
     cpu_usage: Any = None
     online_cpu_count: Any = None
     system_cpu_usage: Any = None
     throttling_data: Any = None
 
 @dataclasses.dataclass
-class OpenapiWebSiteInstanceStatus_Properties_Containers_Eth0:
+class OpenapiWebSiteInstanceStatus_Value_Properties_Containers_Eth0:
     rx_bytes: Any = None
     rx_dropped: Any = None
     rx_errors: Any = None
@@ -38,13 +38,13 @@ class OpenapiWebSiteInstanceStatus_Properties_Containers_Eth0:
     tx_packets: Any = None
 
 @dataclasses.dataclass
-class OpenapiWebSiteInstanceStatus_Properties_Containers_MemoryStats:
+class OpenapiWebSiteInstanceStatus_Value_Properties_Containers_MemoryStats:
     limit: Any = None
     max_usage: Any = None
     usage: Any = None
 
 @dataclasses.dataclass
-class OpenapiWebSiteInstanceStatus_Properties_Containers:
+class OpenapiWebSiteInstanceStatus_Value_Properties_Containers:
     current_cpu_stats: Any = None
     current_time_stamp: Any = None
     eth0: Any = None
@@ -55,39 +55,35 @@ class OpenapiWebSiteInstanceStatus_Properties_Containers:
     previous_time_stamp: Any = None
 
 @dataclasses.dataclass
-class OpenapiWebSiteInstanceStatus_Properties:
-    # Link to the console to web app instance
+class OpenapiWebSiteInstanceStatus_Value_Properties:
     console_url: Any = None
-    # Dictionary of <ContainerInfo>
     containers: Any = None
-    # Link to the Diagnose and Solve Portal
     detector_url: Any = None
-    # Link to the console to web app instance
     health_check_url: Any = None
-    # The physical zone that the instance is in
     physical_zone: Any = None
     state: Any = None
-    # Link to the GetStatusApi in Kudu
     status_url: Any = None
 
 @dataclasses.dataclass
+class OpenapiWebSiteInstanceStatus_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiWebSiteInstanceStatusConfig:
-    instance_id: Any = None
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiWebSiteInstanceStatusAttrs:
-    instance_id: Any = None
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
-    # WebSiteInstanceStatus resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The WebSiteInstanceStatus items on this page
+    value: Any = None
 
 OpenapiWebSiteInstanceStatus = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_web_site_instance_status",
     fields={
-        "instance_id": ubx.FieldSpec(wire_name="instance_id"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

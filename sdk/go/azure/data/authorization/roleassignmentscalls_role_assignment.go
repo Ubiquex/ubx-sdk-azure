@@ -3,52 +3,40 @@ package authorization
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type RoleassignmentscallsRoleAssignment_Properties struct {
-	// The conditions on the role assignment. This limits the resources it can be assigned to. e.g.: @Resource[Microsoft.Storage/storageAccounts/blobServices/containers:ContainerName] StringEqualsIgnoreCase 'foo_storage_container'
+type RoleassignmentscallsRoleAssignment_Value_Properties struct {
 	Condition any
-	// Version of the condition. Currently the only accepted value is '2.0'
 	ConditionVersion any
-	// Id of the user who created the assignment
 	CreatedBy any
-	// Time it was created
 	CreatedOn any
-	// Id of the delegated managed identity resource
 	DelegatedManagedIdentityResourceId any
-	// Description of role assignment
 	Description any
-	// The principal ID.
 	PrincipalId any
-	// The principal type of the assigned principal ID.
 	PrincipalType any
-	// The role definition ID.
 	RoleDefinitionId any
-	// The role assignment scope.
 	Scope any
-	// Id of the user who updated the assignment
 	UpdatedBy any
-	// Time it was updated
 	UpdatedOn any
 }
 
+type RoleassignmentscallsRoleAssignment_Value struct {
+	Properties any
+}
+
 type RoleassignmentscallsRoleAssignmentConfig struct {
-	RoleAssignmentName any
-	Scope any
 	TenantId any
 }
 
 type RoleassignmentscallsRoleAssignmentAttrs struct {
-	// Role assignment properties.
-	Properties any
-	RoleAssignmentName any
-	Scope any
+	// The link to the next page of items
+	NextLink any
 	TenantId any
+	// The RoleAssignment items on this page
+	Value any
 }
 
 var RoleassignmentscallsRoleAssignment = ubx.DataSourceBinding{
 	WireType: "azure_authorization_roleassignmentscalls_role_assignment",
 	Fields: ubx.FieldMap{
-		"RoleAssignmentName": ubx.FieldSpec{WireName: "role_assignment_name"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
 		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
 	},
 }

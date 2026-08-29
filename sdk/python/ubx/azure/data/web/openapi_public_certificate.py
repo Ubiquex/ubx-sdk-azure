@@ -7,35 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiPublicCertificate_Properties:
-    # Public Certificate byte array
+class OpenapiPublicCertificate_Value_Properties:
     blob: Any = None
-    # Public Certificate Location
     public_certificate_location: Any = None
-    # Certificate Thumbprint
     thumbprint: Any = None
+
+@dataclasses.dataclass
+class OpenapiPublicCertificate_Value:
+    kind: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiPublicCertificateConfig:
     name: Any = None
-    public_certificate_name: Any = None
-    slot: Any = None
 
 @dataclasses.dataclass
 class OpenapiPublicCertificateAttrs:
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
-    # PublicCertificate resource specific properties
-    properties: Any = None
-    public_certificate_name: Any = None
-    slot: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The PublicCertificate items on this page
+    value: Any = None
 
 OpenapiPublicCertificate = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_public_certificate",
     fields={
         "name": ubx.FieldSpec(wire_name="name"),
-        "public_certificate_name": ubx.FieldSpec(wire_name="public_certificate_name"),
-        "slot": ubx.FieldSpec(wire_name="slot"),
     },
 )

@@ -3,47 +3,37 @@ package recoveryservicesbackup
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type BmsJobResource_Properties struct {
-	// ActivityId of job.
+type BmsJobResource_Value_Properties struct {
 	ActivityId any
-	// Backup management type to execute the current job.
 	BackupManagementType any
-	// The end time.
 	EndTime any
-	// Friendly name of the entity on which the current job is executing.
 	EntityFriendlyName any
-	// This property will be used as the discriminator for deciding the specific types in the polymorphic chain of types.
 	JobType any
-	// The operation name.
 	Operation any
-	// The start time.
 	StartTime any
-	// Job status.
 	Status any
 }
 
+type BmsJobResource_Value struct {
+	ETag any
+	Location any
+	Properties any
+	Tags any
+}
+
 type BmsJobResourceConfig struct {
-	JobName any
 	VaultName any
 }
 
 type BmsJobResourceAttrs struct {
-	// Optional ETag.
-	ETag any
-	JobName any
-	// Represents an Azure geography region where supported resource providers live.
-	Location any
-	// Defines workload agnostic properties for a job.
-	Properties any
-	// Resource tags.
-	Tags any
+	// List of resources.
+	Value any
 	VaultName any
 }
 
 var BmsJobResource = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_job_resource",
 	Fields: ubx.FieldMap{
-		"JobName": ubx.FieldSpec{WireName: "job_name"},
 		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

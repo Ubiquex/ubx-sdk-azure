@@ -7,41 +7,37 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiJobStream_Properties:
-    # Gets or sets the id of the job stream.
+class OpenapiJobStream_Value_Properties:
     job_stream_id: Any = None
-    # Gets or sets the stream text.
     stream_text: Any = None
-    # Gets or sets the stream type.
     stream_type: Any = None
-    # Gets or sets the summary.
     summary: Any = None
-    # Gets or sets the creation time of the job.
     time: Any = None
-    # Gets or sets the values of the job stream.
     value: Any = None
+
+@dataclasses.dataclass
+class OpenapiJobStream_Value:
+    id: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiJobStreamConfig:
     automation_account_name: Any = None
     job_name: Any = None
-    job_stream_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiJobStreamAttrs:
     automation_account_name: Any = None
-    # Gets or sets the id of the resource.
-    id: Any = None
     job_name: Any = None
-    job_stream_id: Any = None
-    # Definition of the job stream.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The JobStream items on this page
+    value: Any = None
 
 OpenapiJobStream = ubx.DataSourceBinding(
     wire_type="azure_automation_openapi_job_stream",
     fields={
         "automation_account_name": ubx.FieldSpec(wire_name="automation_account_name"),
         "job_name": ubx.FieldSpec(wire_name="job_name"),
-        "job_stream_id": ubx.FieldSpec(wire_name="job_stream_id"),
     },
 )

@@ -7,29 +7,28 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VirtualnetworkSwapResource_Properties:
-    # Specifies slot info on a cloud service
+class VirtualnetworkSwapResource_Value_Properties:
     slot_type: Any = None
+
+@dataclasses.dataclass
+class VirtualnetworkSwapResource_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkSwapResourceConfig:
     group_name: Any = None
     resource_name: Any = None
-    singleton_resource: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkSwapResourceAttrs:
     group_name: Any = None
-    # Swap resource properties
-    properties: Any = None
     resource_name: Any = None
-    singleton_resource: Any = None
+    value: Any = None
 
 VirtualnetworkSwapResource = ubx.DataSourceBinding(
     wire_type="azure_network_virtualnetwork_swap_resource",
     fields={
         "group_name": ubx.FieldSpec(wire_name="group_name"),
         "resource_name": ubx.FieldSpec(wire_name="resource_name"),
-        "singleton_resource": ubx.FieldSpec(wire_name="singleton_resource"),
     },
 )

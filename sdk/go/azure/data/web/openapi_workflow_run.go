@@ -3,113 +3,80 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiWorkflowRun_Properties_Correlation struct {
-	// The client tracking id.
+type OpenapiWorkflowRun_Value_Properties_Correlation struct {
 	ClientTrackingId any
 }
 
-type OpenapiWorkflowRun_Properties_Outputs struct {
+type OpenapiWorkflowRun_Value_Properties_Outputs struct {
 	Error any
 }
 
-type OpenapiWorkflowRun_Properties_Response_InputsLink_ContentHash struct {
-	// The algorithm of the content hash.
+type OpenapiWorkflowRun_Value_Properties_Response_InputsLink_ContentHash struct {
 	Algorithm any
-	// The value of the content hash.
 	Value any
 }
 
-type OpenapiWorkflowRun_Properties_Response_InputsLink struct {
-	// The content hash.
+type OpenapiWorkflowRun_Value_Properties_Response_InputsLink struct {
 	ContentHash any
-	// The content size.
 	ContentSize any
-	// The content version.
 	ContentVersion any
-	// The metadata.
 	Metadata any
-	// The content link URI.
 	Uri any
 }
 
-type OpenapiWorkflowRun_Properties_Response struct {
-	// Gets the code.
+type OpenapiWorkflowRun_Value_Properties_Response struct {
 	Code any
-	// The correlation property.
 	Correlation any
-	// Gets the end time.
 	EndTime any
-	// Gets the error.
 	Error any
-	// Gets the inputs.
 	Inputs any
-	// The content link.
 	InputsLink any
-	// Gets the name.
 	Name any
-	// Gets the outputs.
 	Outputs any
-	// The content link.
 	OutputsLink any
-	// Gets the scheduled time.
 	ScheduledTime any
-	// Gets the start time.
 	StartTime any
-	// The workflow status.
 	Status any
-	// Gets the tracked properties.
 	TrackedProperties any
-	// Gets the tracking id.
 	TrackingId any
 }
 
-type OpenapiWorkflowRun_Properties_Workflow struct {
-	// The resource id.
+type OpenapiWorkflowRun_Value_Properties_Workflow struct {
 	Id any
-	// Gets the resource name.
 	Name any
-	// Gets the resource type.
 	Type any
 }
 
-type OpenapiWorkflowRun_Properties struct {
-	// Gets the code.
+type OpenapiWorkflowRun_Value_Properties struct {
 	Code any
-	// The correlation property.
 	Correlation any
-	// Gets the correlation id.
 	CorrelationId any
-	// Gets the end time.
 	EndTime any
-	// Gets the error.
 	Error any
-	// Gets the outputs.
 	Outputs any
-	// The workflow run trigger.
 	Response any
-	// Gets the start time.
 	StartTime any
-	// The workflow status.
 	Status any
-	// The workflow run trigger.
 	Trigger any
-	// Gets the wait end time.
 	WaitEndTime any
-	// The resource reference.
 	Workflow any
+}
+
+type OpenapiWorkflowRun_Value struct {
+	Properties any
 }
 
 type OpenapiWorkflowRunConfig struct {
 	Name any
-	RunName any
 	WorkflowName any
 }
 
 type OpenapiWorkflowRunAttrs struct {
 	Name any
-	// The workflow run properties.
-	Properties any
-	RunName any
+	// The link to the next page of items
+	NextLink any
+	// The WorkflowRun items on this page
+	Value any
 	WorkflowName any
 }
 
@@ -117,7 +84,6 @@ var OpenapiWorkflowRun = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_run",
 	Fields: ubx.FieldMap{
 		"Name": ubx.FieldSpec{WireName: "name"},
-		"RunName": ubx.FieldSpec{WireName: "run_name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

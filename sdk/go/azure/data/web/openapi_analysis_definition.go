@@ -3,31 +3,32 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiAnalysisDefinition_Properties struct {
-	// Description of the Analysis
+type OpenapiAnalysisDefinition_Value_Properties struct {
 	Description any
 }
 
+type OpenapiAnalysisDefinition_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiAnalysisDefinitionConfig struct {
-	AnalysisName any
 	DiagnosticCategory any
 	SiteName any
 }
 
 type OpenapiAnalysisDefinitionAttrs struct {
-	AnalysisName any
 	DiagnosticCategory any
-	// Kind of resource.
-	Kind any
-	// AnalysisDefinition resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	SiteName any
+	// The AnalysisDefinition items on this page
+	Value any
 }
 
 var OpenapiAnalysisDefinition = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_analysis_definition",
 	Fields: ubx.FieldMap{
-		"AnalysisName": ubx.FieldSpec{WireName: "analysis_name"},
 		"DiagnosticCategory": ubx.FieldSpec{WireName: "diagnostic_category"},
 		"SiteName": ubx.FieldSpec{WireName: "site_name"},
 	},

@@ -7,143 +7,102 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class BackupInstanceResource_Properties_DataSourceInfo_ResourceProperties:
-    # Type of the specific object - used for deserializing
+class BackupInstanceResource_Value_Properties_DataSourceInfo_ResourceProperties:
     object_type: Any = None
 
 @dataclasses.dataclass
-class BackupInstanceResource_Properties_DataSourceInfo:
-    # DatasourceType of the resource.
+class BackupInstanceResource_Value_Properties_DataSourceInfo:
     datasource_type: Any = None
-    # Type of Datasource object, used to initialize the right inherited type
     object_type: Any = None
-    # Full ARM ID of the resource. For azure resources, this is ARM ID. For non azure resources, this will be the ID created by backup service via Fabric/Vault.
     resource_id: Any = None
-    # Location of datasource.
     resource_location: Any = None
-    # Unique identifier of the resource in the context of parent.
     resource_name: Any = None
-    # Properties which are specific to datasource/datasourceSets
     resource_properties: Any = None
-    # Resource Type of Datasource.
     resource_type: Any = None
-    # Uri of the resource.
     resource_uri: Any = None
 
 @dataclasses.dataclass
-class BackupInstanceResource_Properties_IdentityDetails:
-    # Specifies if the BI is protected by System Identity.
+class BackupInstanceResource_Value_Properties_IdentityDetails:
     use_system_assigned_identity: Any = None
-    # ARM URL for User Assigned Identity.
     user_assigned_identity_arm_url: Any = None
 
 @dataclasses.dataclass
-class BackupInstanceResource_Properties_PolicyInfo_PolicyParameters_DataStoreParametersList:
+class BackupInstanceResource_Value_Properties_PolicyInfo_PolicyParameters_DataStoreParametersList:
     data_store_type: Any = None
     object_type: Any = None
 
 @dataclasses.dataclass
-class BackupInstanceResource_Properties_PolicyInfo_PolicyParameters:
-    # Gets or sets the Backup Data Source Parameters
+class BackupInstanceResource_Value_Properties_PolicyInfo_PolicyParameters:
     backup_datasource_parameters_list: Any = None
-    # Gets or sets the DataStore Parameters
     data_store_parameters_list: Any = None
 
 @dataclasses.dataclass
-class BackupInstanceResource_Properties_PolicyInfo:
+class BackupInstanceResource_Value_Properties_PolicyInfo:
     policy_id: Any = None
-    # Parameters in Policy
     policy_parameters: Any = None
     policy_version: Any = None
 
 @dataclasses.dataclass
-class BackupInstanceResource_Properties_ProtectionErrorDetails_Details:
+class BackupInstanceResource_Value_Properties_ProtectionErrorDetails_Details:
     pass
 
 @dataclasses.dataclass
-class BackupInstanceResource_Properties_ProtectionErrorDetails_InnerError:
-    # Any Key value pairs that can be provided to the client for additional verbose information.
+class BackupInstanceResource_Value_Properties_ProtectionErrorDetails_InnerError:
     additional_info: Any = None
-    # Unique code for this error
     code: Any = None
-    # Inner Error
     embedded_inner_error: Any = None
 
 @dataclasses.dataclass
-class BackupInstanceResource_Properties_ProtectionErrorDetails:
-    # Unique code for this error
+class BackupInstanceResource_Value_Properties_ProtectionErrorDetails:
     code: Any = None
-    # Additional related Errors
     details: Any = None
-    # Inner Error
     inner_error: Any = None
-    # Whether the operation will be retryable or not
     is_retryable: Any = None
-    # Whether the operation is due to a user error or service error
     is_user_error: Any = None
     message: Any = None
-    # Any key value pairs that can be injected inside error object
     properties: Any = None
-    # RecommendedAction � localized.
     recommended_action: Any = None
-    # Target of the error.
     target: Any = None
 
 @dataclasses.dataclass
-class BackupInstanceResource_Properties_ProtectionStatus:
-    # Error object used by layers that have access to localized content, and propagate that to user
+class BackupInstanceResource_Value_Properties_ProtectionStatus:
     error_details: Any = None
-    # Specifies the protection status of the resource
     status: Any = None
 
 @dataclasses.dataclass
-class BackupInstanceResource_Properties:
-    # Specifies the current protection state of the resource
+class BackupInstanceResource_Value_Properties:
     current_protection_state: Any = None
-    # Datasource to be backed up
     data_source_info: Any = None
-    # DatasourceSet details of datasource to be backed up
     data_source_set_info: Any = None
-    # Base class for different types of authentication credentials.
     datasource_auth_credentials: Any = None
-    # Gets or sets the Backup Instance friendly name.
     friendly_name: Any = None
     identity_details: Any = None
     object_type: Any = None
-    # Policy Info in backupInstance
     policy_info: Any = None
-    # Error object used by layers that have access to localized content, and propagate that to user
     protection_error_details: Any = None
-    # Protection status details
     protection_status: Any = None
-    # Specifies the provisioning state of the resource i.e. provisioning/updating/Succeeded/Failed
     provisioning_state: Any = None
-    # ResourceGuardOperationRequests on which LAC check will be performed
     resource_guard_operation_requests: Any = None
-    # Specifies the type of validation. In case of DeepValidation, all validations from /validateForBackup API will run again.
     validation_type: Any = None
 
 @dataclasses.dataclass
+class BackupInstanceResource_Value:
+    properties: Any = None
+    tags: Any = None
+
+@dataclasses.dataclass
 class BackupInstanceResourceConfig:
-    backup_instance_name: Any = None
-    operation_id: Any = None
     vault_name: Any = None
 
 @dataclasses.dataclass
 class BackupInstanceResourceAttrs:
-    backup_instance_name: Any = None
-    operation_id: Any = None
-    # Backup Instance
-    properties: Any = None
-    # Proxy Resource tags.
-    tags: Any = None
+    # List of resources.
+    value: Any = None
     vault_name: Any = None
 
 BackupInstanceResource = ubx.DataSourceBinding(
     wire_type="azure_dataprotection_backup_instance_resource",
     fields={
-        "backup_instance_name": ubx.FieldSpec(wire_name="backup_instance_name"),
-        "operation_id": ubx.FieldSpec(wire_name="operation_id"),
         "vault_name": ubx.FieldSpec(wire_name="vault_name"),
     },
 )

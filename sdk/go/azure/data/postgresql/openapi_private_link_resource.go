@@ -3,31 +3,31 @@ package postgresql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiPrivateLinkResource_Properties struct {
-	// The private link resource group id.
+type OpenapiPrivateLinkResource_Value_Properties struct {
 	GroupId any
-	// The private link resource required member names.
 	RequiredMembers any
-	// The private link resource private link DNS zone name.
 	RequiredZoneNames any
 }
 
+type OpenapiPrivateLinkResource_Value struct {
+	Properties any
+}
+
 type OpenapiPrivateLinkResourceConfig struct {
-	GroupName any
 	ServerName any
 }
 
 type OpenapiPrivateLinkResourceAttrs struct {
-	GroupName any
-	// Properties of a private link resource.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ServerName any
+	// The PrivateLinkResource items on this page
+	Value any
 }
 
 var OpenapiPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_private_link_resource",
 	Fields: ubx.FieldMap{
-		"GroupName": ubx.FieldSpec{WireName: "group_name"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
 	},
 }

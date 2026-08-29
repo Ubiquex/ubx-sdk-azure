@@ -7,34 +7,32 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class AttachedNetworkConnection_Properties:
-    # Active Directory join type
+class AttachedNetworkConnection_Value_Properties:
     domain_join_type: Any = None
-    # Health check status values
     health_check_status: Any = None
-    # The resource ID of the NetworkConnection you want to attach.
     network_connection_id: Any = None
-    # The geo-location where the NetworkConnection resource specified in 'networkConnectionResourceId' property lives.
     network_connection_location: Any = None
-    # Provisioning state of the resource.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
+class AttachedNetworkConnection_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class AttachedNetworkConnectionConfig:
-    attached_network_connection_name: Any = None
-    project_name: Any = None
+    dev_center_name: Any = None
 
 @dataclasses.dataclass
 class AttachedNetworkConnectionAttrs:
-    attached_network_connection_name: Any = None
-    project_name: Any = None
-    # Properties of an attached NetworkConnection.
-    properties: Any = None
+    dev_center_name: Any = None
+    # URL to get the next set of results if there are any.
+    next_link: Any = None
+    # Current page of results.
+    value: Any = None
 
 AttachedNetworkConnection = ubx.DataSourceBinding(
     wire_type="azure_devcenter_attached_network_connection",
     fields={
-        "attached_network_connection_name": ubx.FieldSpec(wire_name="attached_network_connection_name"),
-        "project_name": ubx.FieldSpec(wire_name="project_name"),
+        "dev_center_name": ubx.FieldSpec(wire_name="dev_center_name"),
     },
 )

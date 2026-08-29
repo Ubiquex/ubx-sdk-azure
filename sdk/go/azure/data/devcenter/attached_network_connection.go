@@ -3,35 +3,33 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type AttachedNetworkConnection_Properties struct {
-	// Active Directory join type
+type AttachedNetworkConnection_Value_Properties struct {
 	DomainJoinType any
-	// Health check status values
 	HealthCheckStatus any
-	// The resource ID of the NetworkConnection you want to attach.
 	NetworkConnectionId any
-	// The geo-location where the NetworkConnection resource specified in 'networkConnectionResourceId' property lives.
 	NetworkConnectionLocation any
-	// Provisioning state of the resource.
 	ProvisioningState any
 }
 
+type AttachedNetworkConnection_Value struct {
+	Properties any
+}
+
 type AttachedNetworkConnectionConfig struct {
-	AttachedNetworkConnectionName any
-	ProjectName any
+	DevCenterName any
 }
 
 type AttachedNetworkConnectionAttrs struct {
-	AttachedNetworkConnectionName any
-	ProjectName any
-	// Properties of an attached NetworkConnection.
-	Properties any
+	DevCenterName any
+	// URL to get the next set of results if there are any.
+	NextLink any
+	// Current page of results.
+	Value any
 }
 
 var AttachedNetworkConnection = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_attached_network_connection",
 	Fields: ubx.FieldMap{
-		"AttachedNetworkConnectionName": ubx.FieldSpec{WireName: "attached_network_connection_name"},
-		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
+		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
 	},
 }

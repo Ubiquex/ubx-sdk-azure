@@ -7,31 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class NetworkRuleSet_Properties_IpRules:
+class NetworkRuleSet_Value_Properties_IpRules:
     action: Any = None
     ip_mask: Any = None
 
 @dataclasses.dataclass
-class NetworkRuleSet_Properties_VirtualNetworkRules_Subnet:
+class NetworkRuleSet_Value_Properties_VirtualNetworkRules_Subnet:
     id: Any = None
 
 @dataclasses.dataclass
-class NetworkRuleSet_Properties_VirtualNetworkRules:
+class NetworkRuleSet_Value_Properties_VirtualNetworkRules:
     ignore_missing_vnet_service_endpoint: Any = None
     subnet: Any = None
 
 @dataclasses.dataclass
-class NetworkRuleSet_Properties:
-    # Default Action for Network Rule Set
+class NetworkRuleSet_Value_Properties:
     default_action: Any = None
-    # List of IpRules
     ip_rules: Any = None
-    # This determines if traffic is allowed over public network. By default it is enabled.
     public_network_access: Any = None
-    # Value that indicates whether Trusted Service Access is Enabled or not.
     trusted_service_access_enabled: Any = None
-    # List VirtualNetwork Rules
     virtual_network_rules: Any = None
+
+@dataclasses.dataclass
+class NetworkRuleSet_Value:
+    location: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class NetworkRuleSetConfig:
@@ -39,11 +39,11 @@ class NetworkRuleSetConfig:
 
 @dataclasses.dataclass
 class NetworkRuleSetAttrs:
-    # The geo-location where the resource lives
-    location: Any = None
     namespace_name: Any = None
-    # NetworkRuleSet properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The NetworkRuleSet items on this page
+    value: Any = None
 
 NetworkRuleSet = ubx.DataSourceBinding(
     wire_type="azure_servicebus_network_rule_set",

@@ -3,29 +3,30 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type AllowedEnvironmentType_Properties struct {
-	// The display name of the allowed environment type.
+type AllowedEnvironmentType_Value_Properties struct {
 	DisplayName any
-	// Provisioning state of the resource.
 	ProvisioningState any
 }
 
+type AllowedEnvironmentType_Value struct {
+	Properties any
+}
+
 type AllowedEnvironmentTypeConfig struct {
-	EnvironmentTypeName any
 	ProjectName any
 }
 
 type AllowedEnvironmentTypeAttrs struct {
-	EnvironmentTypeName any
+	// URL to get the next set of results if there are any.
+	NextLink any
 	ProjectName any
-	// Properties of an allowed environment type.
-	Properties any
+	// Current page of results.
+	Value any
 }
 
 var AllowedEnvironmentType = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_allowed_environment_type",
 	Fields: ubx.FieldMap{
-		"EnvironmentTypeName": ubx.FieldSpec{WireName: "environment_type_name"},
 		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
 	},
 }

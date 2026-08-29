@@ -7,28 +7,24 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiJob_Identity_UserAssignedIdentities:
+class OpenapiJob_Value_Identity_UserAssignedIdentities:
     client_id: Any = None
     principal_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Identity:
-    # The service principal ID of the system assigned identity. This property will only be provided for a system assigned identity.
+class OpenapiJob_Value_Identity:
     principal_id: Any = None
-    # The tenant ID of the system assigned identity. This property will only be provided for a system assigned identity.
     tenant_id: Any = None
-    # Type of managed service identity (where both SystemAssigned and UserAssigned types are allowed).
     type: Any = None
-    # The set of user assigned identities associated with the resource. The userAssignedIdentities dictionary keys will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}. The dictionary values can be empty objects ({}) in requests.
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules_Auth:
+class OpenapiJob_Value_Properties_Configuration_EventTriggerConfig_Scale_Rules_Auth:
     secret_ref: Any = None
     trigger_parameter: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules:
+class OpenapiJob_Value_Properties_Configuration_EventTriggerConfig_Scale_Rules:
     auth: Any = None
     identity: Any = None
     metadata: Any = None
@@ -36,88 +32,67 @@ class OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules:
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale:
-    # Maximum number of job executions that are created for a trigger, default 100.
+class OpenapiJob_Value_Properties_Configuration_EventTriggerConfig_Scale:
     max_executions: Any = None
-    # Minimum number of job executions that are created for a trigger, default 0
     min_executions: Any = None
-    # Interval to check each event source in seconds. Defaults to 30s
     polling_interval: Any = None
-    # Scaling rules.
     rules: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Configuration_EventTriggerConfig:
-    # Number of parallel replicas of a job that can run at a given time.
+class OpenapiJob_Value_Properties_Configuration_EventTriggerConfig:
     parallelism: Any = None
-    # Minimum number of successful replica completions before overall job completion.
     replica_completion_count: Any = None
-    # Scaling configurations for event driven jobs.
     scale: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Configuration_IdentitySettings:
+class OpenapiJob_Value_Properties_Configuration_IdentitySettings:
     identity: Any = None
     lifecycle: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Configuration_ManualTriggerConfig:
-    # Number of parallel replicas of a job that can run at a given time.
+class OpenapiJob_Value_Properties_Configuration_ManualTriggerConfig:
     parallelism: Any = None
-    # Minimum number of successful replica completions before overall job completion.
     replica_completion_count: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Configuration_Registries:
+class OpenapiJob_Value_Properties_Configuration_Registries:
     identity: Any = None
     password_secret_ref: Any = None
     server: Any = None
     username: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Configuration_ScheduleTriggerConfig:
-    # Cron formatted repeating schedule ("* * * * *") of a Cron Job.
+class OpenapiJob_Value_Properties_Configuration_ScheduleTriggerConfig:
     cron_expression: Any = None
-    # Number of parallel replicas of a job that can run at a given time.
     parallelism: Any = None
-    # Minimum number of successful replica completions before overall job completion.
     replica_completion_count: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Configuration_Secrets:
+class OpenapiJob_Value_Properties_Configuration_Secrets:
     identity: Any = None
     key_vault_url: Any = None
     name: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Configuration:
-    # Trigger configuration of an event driven job.
+class OpenapiJob_Value_Properties_Configuration:
     event_trigger_config: Any = None
-    # Optional settings for Managed Identities that are assigned to the Container App Job. If a Managed Identity is not specified here, default settings will be used.
     identity_settings: Any = None
-    # Manual trigger configuration for a single execution job. Properties replicaCompletionCount and parallelism would be set to 1 by default
     manual_trigger_config: Any = None
-    # Collection of private container registry credentials used by a Container apps job
     registries: Any = None
-    # Maximum number of retries before failing the job.
     replica_retry_limit: Any = None
-    # Maximum number of seconds a replica is allowed to run.
     replica_timeout: Any = None
-    # Cron formatted repeating trigger schedule ("* * * * *") for cronjobs. Properties completions and parallelism would be set to 1 by default
     schedule_trigger_config: Any = None
-    # Collection of secrets used by a Container Apps Job
     secrets: Any = None
-    # Trigger type of the job
     trigger_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template_Containers_Probes_HttpGet_HttpHeaders:
+class OpenapiJob_Value_Properties_Template_Containers_Probes_HttpGet_HttpHeaders:
     name: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template_Containers_Probes_HttpGet:
+class OpenapiJob_Value_Properties_Template_Containers_Probes_HttpGet:
     host: Any = None
     http_headers: Any = None
     path: Any = None
@@ -125,12 +100,12 @@ class OpenapiJob_Properties_Template_Containers_Probes_HttpGet:
     scheme: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template_Containers_Probes_TcpSocket:
+class OpenapiJob_Value_Properties_Template_Containers_Probes_TcpSocket:
     host: Any = None
     port: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template_Containers_Probes:
+class OpenapiJob_Value_Properties_Template_Containers_Probes:
     failure_threshold: Any = None
     http_get: Any = None
     initial_delay_seconds: Any = None
@@ -142,29 +117,29 @@ class OpenapiJob_Properties_Template_Containers_Probes:
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template_Containers:
+class OpenapiJob_Value_Properties_Template_Containers:
     probes: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template_InitContainers_Env:
+class OpenapiJob_Value_Properties_Template_InitContainers_Env:
     name: Any = None
     secret_ref: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template_InitContainers_Resources:
+class OpenapiJob_Value_Properties_Template_InitContainers_Resources:
     cpu: Any = None
     ephemeral_storage: Any = None
     memory: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template_InitContainers_VolumeMounts:
+class OpenapiJob_Value_Properties_Template_InitContainers_VolumeMounts:
     mount_path: Any = None
     sub_path: Any = None
     volume_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template_InitContainers:
+class OpenapiJob_Value_Properties_Template_InitContainers:
     args: Any = None
     command: Any = None
     env: Any = None
@@ -174,12 +149,12 @@ class OpenapiJob_Properties_Template_InitContainers:
     volume_mounts: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template_Volumes_Secrets:
+class OpenapiJob_Value_Properties_Template_Volumes_Secrets:
     path: Any = None
     secret_ref: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template_Volumes:
+class OpenapiJob_Value_Properties_Template_Volumes:
     mount_options: Any = None
     name: Any = None
     secrets: Any = None
@@ -187,49 +162,39 @@ class OpenapiJob_Properties_Template_Volumes:
     storage_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties_Template:
-    # List of container definitions for the Container App.
+class OpenapiJob_Value_Properties_Template:
     containers: Any = None
-    # List of specialized containers that run before app containers.
     init_containers: Any = None
-    # List of volume definitions for the Container App.
     volumes: Any = None
 
 @dataclasses.dataclass
-class OpenapiJob_Properties:
-    # Non versioned Container Apps Job configuration properties
+class OpenapiJob_Value_Properties:
     configuration: Any = None
-    # Resource ID of environment.
     environment_id: Any = None
-    # The endpoint of the eventstream of the container apps job.
     event_stream_endpoint: Any = None
-    # Outbound IP Addresses of a container apps job.
     outbound_ip_addresses: Any = None
-    # Provisioning state of the Container Apps Job.
     provisioning_state: Any = None
-    # Container Apps Job versioned application definition. Defines the desired state of an immutable revision. Any changes to this section Will result in a new revision being created
     template: Any = None
-    # Workload profile name to pin for container apps job execution.
     workload_profile_name: Any = None
 
 @dataclasses.dataclass
+class OpenapiJob_Value:
+    identity: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiJobConfig:
-    api_name: Any = None
-    job_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiJobAttrs:
-    api_name: Any = None
-    # Managed service identity (system assigned and/or user assigned identities)
-    identity: Any = None
-    job_name: Any = None
-    # Container Apps Job resource specific properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Job items on this page
+    value: Any = None
 
 OpenapiJob = ubx.DataSourceBinding(
     wire_type="azure_app_openapi_job",
     fields={
-        "api_name": ubx.FieldSpec(wire_name="api_name"),
-        "job_name": ubx.FieldSpec(wire_name="job_name"),
     },
 )

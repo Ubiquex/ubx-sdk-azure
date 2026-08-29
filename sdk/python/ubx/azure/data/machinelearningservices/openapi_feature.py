@@ -7,34 +7,50 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiFeature_Properties:
-    # Specifies type
+class OpenapiFeature_Value_Properties:
     data_type: Any = None
-    # Specifies name
     feature_name: Any = None
 
 @dataclasses.dataclass
+class OpenapiFeature_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiFeatureConfig:
+    description: Any = None
     feature_name: Any = None
     featureset_name: Any = None
     featureset_version: Any = None
+    list_view_type: Any = None
+    page_size: Any = None
+    tags: Any = None
     workspace_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiFeatureAttrs:
+    description: Any = None
     feature_name: Any = None
     featureset_name: Any = None
     featureset_version: Any = None
-    # DTO object representing feature
-    properties: Any = None
+    list_view_type: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    page_size: Any = None
+    tags: Any = None
+    # The Feature items on this page
+    value: Any = None
     workspace_name: Any = None
 
 OpenapiFeature = ubx.DataSourceBinding(
     wire_type="azure_machinelearningservices_openapi_feature",
     fields={
+        "description": ubx.FieldSpec(wire_name="description"),
         "feature_name": ubx.FieldSpec(wire_name="feature_name"),
         "featureset_name": ubx.FieldSpec(wire_name="featureset_name"),
         "featureset_version": ubx.FieldSpec(wire_name="featureset_version"),
+        "list_view_type": ubx.FieldSpec(wire_name="list_view_type"),
+        "page_size": ubx.FieldSpec(wire_name="page_size"),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
     },
 )

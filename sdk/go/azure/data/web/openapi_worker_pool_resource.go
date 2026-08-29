@@ -3,55 +3,43 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiWorkerPoolResource_Properties struct {
-	// Shared/dedicated workers.
+type OpenapiWorkerPoolResource_Value_Properties struct {
 	ComputeMode any
-	// Names of all instances in the worker pool (read only).
 	InstanceNames any
-	// Number of instances in the worker pool.
 	WorkerCount any
-	// VM size of the worker pool instances.
 	WorkerSize any
-	// Worker size ID for referencing this worker pool.
 	WorkerSizeId any
 }
 
-type OpenapiWorkerPoolResource_Sku_Capabilities struct {
+type OpenapiWorkerPoolResource_Value_Sku_Capabilities struct {
 	Name any
 	Reason any
 	Value any
 }
 
-type OpenapiWorkerPoolResource_Sku_SkuCapacity struct {
-	// Default number of workers for this App Service plan SKU.
+type OpenapiWorkerPoolResource_Value_Sku_SkuCapacity struct {
 	Default any
-	// Maximum number of Elastic workers for this App Service plan SKU.
 	ElasticMaximum any
-	// Maximum number of workers for this App Service plan SKU.
 	Maximum any
-	// Minimum number of workers for this App Service plan SKU.
 	Minimum any
-	// Available scale configurations for an App Service plan.
 	ScaleType any
 }
 
-type OpenapiWorkerPoolResource_Sku struct {
-	// Capabilities of the SKU, e.g., is traffic manager enabled?
+type OpenapiWorkerPoolResource_Value_Sku struct {
 	Capabilities any
-	// Current number of instances assigned to the resource.
 	Capacity any
-	// Family code of the resource SKU.
 	Family any
-	// Locations of the SKU.
 	Locations any
-	// Name of the resource SKU.
 	Name any
-	// Size specifier of the resource SKU.
 	Size any
-	// Description of the App Service plan scale options.
 	SkuCapacity any
-	// Service tier of the resource SKU.
 	Tier any
+}
+
+type OpenapiWorkerPoolResource_Value struct {
+	Kind any
+	Properties any
+	Sku any
 }
 
 type OpenapiWorkerPoolResourceConfig struct {
@@ -59,13 +47,11 @@ type OpenapiWorkerPoolResourceConfig struct {
 }
 
 type OpenapiWorkerPoolResourceAttrs struct {
-	// Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
-	Kind any
 	Name any
-	// Worker pool of an App Service Environment.
-	Properties any
-	// Description of a SKU for a scalable resource.
-	Sku any
+	// The link to the next page of items
+	NextLink any
+	// The WorkerPoolResource items on this page
+	Value any
 }
 
 var OpenapiWorkerPoolResource = ubx.DataSourceBinding{

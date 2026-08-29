@@ -3,37 +3,35 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDetectorDefinitionResource_Properties struct {
-	// Description of the detector
+type OpenapiDetectorDefinitionResource_Value_Properties struct {
 	Description any
-	// Display name of the detector
 	DisplayName any
-	// Flag representing whether detector is enabled or not.
 	IsEnabled any
-	// Detector Rank
 	Rank any
 }
 
+type OpenapiDetectorDefinitionResource_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiDetectorDefinitionResourceConfig struct {
-	DetectorName any
 	DiagnosticCategory any
 	SiteName any
 }
 
 type OpenapiDetectorDefinitionResourceAttrs struct {
-	DetectorName any
 	DiagnosticCategory any
-	// Kind of resource.
-	Kind any
-	// Class representing detector definition
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	SiteName any
+	// The DetectorDefinitionResource items on this page
+	Value any
 }
 
 var OpenapiDetectorDefinitionResource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_detector_definition_resource",
 	Fields: ubx.FieldMap{
-		"DetectorName": ubx.FieldSpec{WireName: "detector_name"},
 		"DiagnosticCategory": ubx.FieldSpec{WireName: "diagnostic_category"},
 		"SiteName": ubx.FieldSpec{WireName: "site_name"},
 	},

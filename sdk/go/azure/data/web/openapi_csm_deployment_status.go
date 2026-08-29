@@ -3,10 +3,10 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiCsmDeploymentStatus_Properties_Errors_Details struct {
+type OpenapiCsmDeploymentStatus_Value_Properties_Errors_Details struct {
 }
 
-type OpenapiCsmDeploymentStatus_Properties_Errors struct {
+type OpenapiCsmDeploymentStatus_Value_Properties_Errors struct {
 	Code any
 	Details any
 	ExtendedCode any
@@ -17,41 +17,36 @@ type OpenapiCsmDeploymentStatus_Properties_Errors struct {
 	Target any
 }
 
-type OpenapiCsmDeploymentStatus_Properties struct {
-	// Deployment operation id.
+type OpenapiCsmDeploymentStatus_Value_Properties struct {
 	DeploymentId any
-	// List of errors.
 	Errors any
-	// List of URLs pointing to logs for instances which failed to provision.
 	FailedInstancesLogs any
-	// Number of site instances failed to provision.
 	NumberOfInstancesFailed any
-	// Number of site instances currently being provisioned.
 	NumberOfInstancesInProgress any
-	// Number of site instances provisioned successfully.
 	NumberOfInstancesSuccessful any
-	// Deployment build status.
 	Status any
 }
 
+type OpenapiCsmDeploymentStatus_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiCsmDeploymentStatusConfig struct {
-	DeploymentStatusId any
 	Name any
 }
 
 type OpenapiCsmDeploymentStatusAttrs struct {
-	DeploymentStatusId any
-	// Kind of resource.
-	Kind any
 	Name any
-	// CsmDeploymentStatus resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The CsmDeploymentStatus items on this page
+	Value any
 }
 
 var OpenapiCsmDeploymentStatus = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_csm_deployment_status",
 	Fields: ubx.FieldMap{
-		"DeploymentStatusId": ubx.FieldSpec{WireName: "deployment_status_id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

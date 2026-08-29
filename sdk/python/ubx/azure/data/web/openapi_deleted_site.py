@@ -7,39 +7,34 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDeletedSite_Properties:
-    # Numeric id for the deleted site
+class OpenapiDeletedSite_Value_Properties:
     deleted_site_id: Any = None
-    # Name of the deleted site
     deleted_site_name: Any = None
-    # Time in UTC when the app was deleted.
     deleted_timestamp: Any = None
-    # Geo Region of the deleted site
     geo_region_name: Any = None
-    # Kind of site that was deleted
     kind: Any = None
-    # ResourceGroup that contained the deleted site
     resource_group: Any = None
-    # Slot of the deleted site
     slot: Any = None
-    # Subscription containing the deleted site
     subscription: Any = None
 
 @dataclasses.dataclass
+class OpenapiDeletedSite_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiDeletedSiteConfig:
-    deleted_site_id: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiDeletedSiteAttrs:
-    deleted_site_id: Any = None
-    # Kind of resource.
-    kind: Any = None
-    # DeletedSite resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The DeletedSite items on this page
+    value: Any = None
 
 OpenapiDeletedSite = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_deleted_site",
     fields={
-        "deleted_site_id": ubx.FieldSpec(wire_name="deleted_site_id"),
     },
 )

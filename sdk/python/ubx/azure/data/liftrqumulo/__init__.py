@@ -4,5 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .qumulo_storage import QumuloStorage, QumuloStorageConfig
-from .qumulo_storage_file_system_resource_list_result import QumuloStorageFileSystemResourceListResult, QumuloStorageFileSystemResourceListResultConfig
+from .qumulo_storage_liftr_base_storage_file_system_resource import QumuloStorageLiftrBaseStorageFileSystemResource, QumuloStorageLiftrBaseStorageFileSystemResourceConfig

@@ -7,46 +7,38 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiContinuousWebJob_Properties:
-    # Detailed status.
+class OpenapiContinuousWebJob_Value_Properties:
     detailed_status: Any = None
-    # Error information.
     error: Any = None
-    # Extra Info URL.
     extra_info_url: Any = None
-    # Log URL.
     log_url: Any = None
-    # Run command.
     run_command: Any = None
-    # Job settings.
     settings: Any = None
-    # Job status.
     status: Any = None
-    # Job URL.
     url: Any = None
-    # Using SDK?
     using_sdk: Any = None
-    # Job type.
     web_job_type: Any = None
+
+@dataclasses.dataclass
+class OpenapiContinuousWebJob_Value:
+    kind: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiContinuousWebJobConfig:
     name: Any = None
-    web_job_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiContinuousWebJobAttrs:
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
-    # ContinuousWebJob resource specific properties
-    properties: Any = None
-    web_job_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The ContinuousWebJob items on this page
+    value: Any = None
 
 OpenapiContinuousWebJob = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_continuous_web_job",
     fields={
         "name": ubx.FieldSpec(wire_name="name"),
-        "web_job_name": ubx.FieldSpec(wire_name="web_job_name"),
     },
 )

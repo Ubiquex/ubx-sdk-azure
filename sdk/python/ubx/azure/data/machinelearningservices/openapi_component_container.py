@@ -7,26 +7,28 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiComponentContainer_Properties:
-    # Provisioning state of registry asset.
+class OpenapiComponentContainer_Value_Properties:
     provisioning_state: Any = None
 
 @dataclasses.dataclass
+class OpenapiComponentContainer_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiComponentContainerConfig:
-    name: Any = None
-    workspace_name: Any = None
+    registry_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiComponentContainerAttrs:
-    name: Any = None
-    # Component container definition. <see href="https://docs.microsoft.com/en-us/azure/machine-learning/reference-yaml-component-command" />
-    properties: Any = None
-    workspace_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    registry_name: Any = None
+    # The ComponentContainer items on this page
+    value: Any = None
 
 OpenapiComponentContainer = ubx.DataSourceBinding(
     wire_type="azure_machinelearningservices_openapi_component_container",
     fields={
-        "name": ubx.FieldSpec(wire_name="name"),
-        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
+        "registry_name": ubx.FieldSpec(wire_name="registry_name"),
     },
 )

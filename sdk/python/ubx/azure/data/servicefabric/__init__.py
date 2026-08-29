@@ -4,10 +4,9 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .application_resource_list import ApplicationResourceList, ApplicationResourceListConfig
-from .application_service_resource_list import ApplicationServiceResourceList, ApplicationServiceResourceListConfig
-from .application_type_resource_list import ApplicationTypeResourceList, ApplicationTypeResourceListConfig
-from .application_type_version_resource_list import ApplicationTypeVersionResourceList, ApplicationTypeVersionResourceListConfig
-from .cluster_code_versions_list_result import ClusterCodeVersionsListResult, ClusterCodeVersionsListResultConfig
-from .cluster_list_result import ClusterListResult, ClusterListResultConfig
-from .cluster_operation_list_result import ClusterOperationListResult, ClusterOperationListResultConfig
+from .application_resource import ApplicationResource, ApplicationResourceConfig
+from .application_service_resource import ApplicationServiceResource, ApplicationServiceResourceConfig
+from .application_type_resource import ApplicationTypeResource, ApplicationTypeResourceConfig
+from .application_type_version_resource import ApplicationTypeVersionResource, ApplicationTypeVersionResourceConfig
+from .cluster import Cluster, ClusterConfig
+from .cluster_code_versions_result import ClusterCodeVersionsResult, ClusterCodeVersionsResultConfig

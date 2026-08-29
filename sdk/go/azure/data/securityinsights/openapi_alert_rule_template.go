@@ -3,22 +3,25 @@ package securityinsights
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type OpenapiAlertRuleTemplate_Value struct {
+	Kind any
+}
+
 type OpenapiAlertRuleTemplateConfig struct {
-	AlertRuleTemplateId any
 	WorkspaceName any
 }
 
 type OpenapiAlertRuleTemplateAttrs struct {
-	AlertRuleTemplateId any
-	// The kind of the alert rule
-	Kind any
+	// The link to the next page of items
+	NextLink any
+	// The AlertRuleTemplate items on this page
+	Value any
 	WorkspaceName any
 }
 
 var OpenapiAlertRuleTemplate = ubx.DataSourceBinding{
 	WireType: "azure_securityinsights_openapi_alert_rule_template",
 	Fields: ubx.FieldMap{
-		"AlertRuleTemplateId": ubx.FieldSpec{WireName: "alert_rule_template_id"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

@@ -7,31 +7,47 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDbVersion_Properties:
-    # True if this version of the Oracle Database software is the latest version for a release.
+class OpenapiDbVersion_Value_Properties:
     is_latest_for_major_version: Any = None
-    # True if this version of the Oracle Database software is the preview version.
     is_preview_db_version: Any = None
-    # True if this version of the Oracle Database software is supported for Upgrade.
     is_upgrade_supported: Any = None
-    # True if this version of the Oracle Database software supports pluggable databases.
     supports_pdb: Any = None
-    # A valid Oracle Database version.
     version: Any = None
 
 @dataclasses.dataclass
+class OpenapiDbVersion_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiDbVersionConfig:
-    dbversionsname: Any = None
+    db_system_id: Any = None
+    db_system_shape: Any = None
+    is_database_software_image_supported: Any = None
+    is_upgrade_supported: Any = None
+    shape_family: Any = None
+    storage_management: Any = None
 
 @dataclasses.dataclass
 class OpenapiDbVersionAttrs:
-    dbversionsname: Any = None
-    # DbVersion resource model
-    properties: Any = None
+    db_system_id: Any = None
+    db_system_shape: Any = None
+    is_database_software_image_supported: Any = None
+    is_upgrade_supported: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    shape_family: Any = None
+    storage_management: Any = None
+    # The DbVersion items on this page
+    value: Any = None
 
 OpenapiDbVersion = ubx.DataSourceBinding(
     wire_type="azure_oracle_openapi_db_version",
     fields={
-        "dbversionsname": ubx.FieldSpec(wire_name="dbversionsname"),
+        "db_system_id": ubx.FieldSpec(wire_name="db_system_id"),
+        "db_system_shape": ubx.FieldSpec(wire_name="db_system_shape"),
+        "is_database_software_image_supported": ubx.FieldSpec(wire_name="is_database_software_image_supported"),
+        "is_upgrade_supported": ubx.FieldSpec(wire_name="is_upgrade_supported"),
+        "shape_family": ubx.FieldSpec(wire_name="shape_family"),
+        "storage_management": ubx.FieldSpec(wire_name="storage_management"),
     },
 )

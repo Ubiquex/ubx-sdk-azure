@@ -7,19 +7,24 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class DppBaseResource_Value:
+    pass
+
+@dataclasses.dataclass
 class DppBaseResourceConfig:
-    request_name: Any = None
     resource_guards_name: Any = None
 
 @dataclasses.dataclass
 class DppBaseResourceAttrs:
-    request_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     resource_guards_name: Any = None
+    # The DppBaseResource items on this page
+    value: Any = None
 
 DppBaseResource = ubx.DataSourceBinding(
     wire_type="azure_dataprotection_dpp_base_resource",
     fields={
-        "request_name": ubx.FieldSpec(wire_name="request_name"),
         "resource_guards_name": ubx.FieldSpec(wire_name="resource_guards_name"),
     },
 )

@@ -7,47 +7,40 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class DtlArtifact_Properties:
-    # The artifact's creation date.
+class DtlArtifact_Value_Properties:
     created_date: Any = None
-    # The artifact's description.
     description: Any = None
-    # The file path to the artifact.
     file_path: Any = None
-    # The URI to the artifact icon.
     icon: Any = None
-    # The artifact's parameters.
     parameters: Any = None
-    # The artifact's publisher.
     publisher: Any = None
-    # The artifact's target OS.
     target_os_type: Any = None
-    # The artifact's title.
     title: Any = None
+
+@dataclasses.dataclass
+class DtlArtifact_Value:
+    location: Any = None
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class DtlArtifactConfig:
     artifact_source_name: Any = None
     lab_name: Any = None
-    name: Any = None
 
 @dataclasses.dataclass
 class DtlArtifactAttrs:
     artifact_source_name: Any = None
     lab_name: Any = None
-    # The geo-location where the resource lives
-    location: Any = None
-    name: Any = None
-    # Properties of an artifact.
-    properties: Any = None
-    # Resource tags.
-    tags: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Artifact items on this page
+    value: Any = None
 
 DtlArtifact = ubx.DataSourceBinding(
     wire_type="azure_devtestlabs_dtl_artifact",
     fields={
         "artifact_source_name": ubx.FieldSpec(wire_name="artifact_source_name"),
         "lab_name": ubx.FieldSpec(wire_name="lab_name"),
-        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

@@ -3,31 +3,31 @@ package postgresql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiBackupAutomaticAndOnDemand_Properties struct {
-	// Type of backup.
+type OpenapiBackupAutomaticAndOnDemand_Value_Properties struct {
 	BackupType any
-	// Time(ISO8601 format) at which the backup was completed.
 	CompletedTime any
-	// Source of the backup.
 	Source any
 }
 
+type OpenapiBackupAutomaticAndOnDemand_Value struct {
+	Properties any
+}
+
 type OpenapiBackupAutomaticAndOnDemandConfig struct {
-	BackupName any
 	ServerName any
 }
 
 type OpenapiBackupAutomaticAndOnDemandAttrs struct {
-	BackupName any
-	// Properties of a backup.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ServerName any
+	// The BackupAutomaticAndOnDemand items on this page
+	Value any
 }
 
 var OpenapiBackupAutomaticAndOnDemand = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_backup_automatic_and_on_demand",
 	Fields: ubx.FieldMap{
-		"BackupName": ubx.FieldSpec{WireName: "backup_name"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
 	},
 }

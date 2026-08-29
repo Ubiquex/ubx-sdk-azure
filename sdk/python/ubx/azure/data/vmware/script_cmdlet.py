@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ScriptCmdlet_Properties_Parameters:
+class ScriptCmdlet_Value_Properties_Parameters:
     description: Any = None
     name: Any = None
     optional: Any = None
@@ -15,37 +15,35 @@ class ScriptCmdlet_Properties_Parameters:
     visibility: Any = None
 
 @dataclasses.dataclass
-class ScriptCmdlet_Properties:
-    # Specifies whether a script cmdlet is intended to be invoked only through automation or visible to customers
+class ScriptCmdlet_Value_Properties:
     audience: Any = None
-    # Description of the scripts functionality
     description: Any = None
-    # Parameters the script will accept
     parameters: Any = None
-    # A script cmdlet provisioning state
     provisioning_state: Any = None
-    # Recommended time limit for execution
     timeout: Any = None
+
+@dataclasses.dataclass
+class ScriptCmdlet_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class ScriptCmdletConfig:
     private_cloud_name: Any = None
-    script_cmdlet_name: Any = None
     script_package_name: Any = None
 
 @dataclasses.dataclass
 class ScriptCmdletAttrs:
+    # The link to the next page of items
+    next_link: Any = None
     private_cloud_name: Any = None
-    # Properties of a pre-canned script
-    properties: Any = None
-    script_cmdlet_name: Any = None
     script_package_name: Any = None
+    # The ScriptCmdlet items on this page
+    value: Any = None
 
 ScriptCmdlet = ubx.DataSourceBinding(
     wire_type="azure_vmware_script_cmdlet",
     fields={
         "private_cloud_name": ubx.FieldSpec(wire_name="private_cloud_name"),
-        "script_cmdlet_name": ubx.FieldSpec(wire_name="script_cmdlet_name"),
         "script_package_name": ubx.FieldSpec(wire_name="script_package_name"),
     },
 )

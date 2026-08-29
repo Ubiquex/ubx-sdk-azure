@@ -7,30 +7,24 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiSite_ExtendedLocation:
-    # Name of extended location.
+class OpenapiSite_Value_ExtendedLocation:
     name: Any = None
-    # Type of extended location.
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Identity_UserAssignedIdentities:
+class OpenapiSite_Value_Identity_UserAssignedIdentities:
     client_id: Any = None
     principal_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Identity:
-    # Principal Id of managed service identity.
+class OpenapiSite_Value_Identity:
     principal_id: Any = None
-    # Tenant of managed service identity.
     tenant_id: Any = None
-    # Type of managed service identity.
     type: Any = None
-    # The list of user assigned identities associated with the resource. The user identity dictionary key references will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_AiIntegration_Mcp_Servers:
+class OpenapiSite_Value_Properties_AiIntegration_Mcp_Servers:
     description: Any = None
     enabled: Any = None
     endpoint: Any = None
@@ -38,163 +32,110 @@ class OpenapiSite_Properties_AiIntegration_Mcp_Servers:
     tool_list: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_AiIntegration_Mcp:
-    # Array of MCP server configurations. This array is replaced in its entirety on update; individual servers cannot be patched independently. An empty array signals that MCP should be disabled/deleted.
+class OpenapiSite_Value_Properties_AiIntegration_Mcp:
     servers: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_AiIntegration_SiteAuth:
-    # Expected 'aud' claim.
+class OpenapiSite_Value_Properties_AiIntegration_SiteAuth:
     audience: Any = None
-    # Expected 'iss' claim. Required for custom site authentication if `wellKnownOpenIdConfiguration` is not provided.
     issuer: Any = None
-    # JWKS URL for verifying JWT signatures.
     jwks_uri: Any = None
-    # OAuth scopes for Protected Resource Metadata (PRM). Required for custom site authentication.
     scopes: Any = None
-    # OIDC metadata URL. Required for custom site authentication if `issuer` is not provided.
     well_known_open_id_configuration: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_AiIntegration:
-    # Relative path to the API specification file from /home in site files.
+class OpenapiSite_Value_Properties_AiIntegration:
     api_spec_path: Any = None
-    # MCP configuration settings.
     mcp: Any = None
-    # External auth configuration for the MCP endpoint (used when EasyAuth is not enabled). At minimum, `scopes` and either `wellKnownOpenIdConfiguration` or `issuer` must be provided.
     site_auth: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_CloningInfo:
-    # Application setting overrides for cloned app. If specified, these settings override the settings cloned from source app. Otherwise, application settings from source app are retained.
+class OpenapiSite_Value_Properties_CloningInfo:
     app_settings_overrides: Any = None
-    # <code>true</code> to clone custom hostnames from source app; otherwise, <code>false</code>.
     clone_custom_host_names: Any = None
-    # <code>true</code> to clone source control from source app; otherwise, <code>false</code>.
     clone_source_control: Any = None
-    # <code>true</code> to configure load balancing for source and destination app.
     configure_load_balancing: Any = None
-    # Correlation ID of cloning operation. This ID ties multiple cloning operations together to use the same snapshot.
     correlation_id: Any = None
-    # App Service Environment.
     hosting_environment: Any = None
-    # <code>true</code> to overwrite destination app; otherwise, <code>false</code>.
     overwrite: Any = None
-    # ARM resource ID of the source app. App resource ID is of the form /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName} for production slots and /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName}/slots/{slotName} for other slots.
     source_web_app_id: Any = None
-    # Location of source app ex: West US or North Europe
     source_web_app_location: Any = None
-    # ARM resource ID of the Traffic Manager profile to use, if it exists. Traffic Manager resource ID is of the form /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
     traffic_manager_profile_id: Any = None
-    # Name of Traffic Manager profile to create. This is only needed if Traffic Manager profile does not already exist.
     traffic_manager_profile_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_DaprConfig:
-    # Dapr application identifier
+class OpenapiSite_Value_Properties_DaprConfig:
     app_id: Any = None
-    # Tells Dapr which port your application is listening on
     app_port: Any = None
-    # Enables API logging for the Dapr sidecar
     enable_api_logging: Any = None
-    # Boolean indicating if the Dapr side car is enabled
     enabled: Any = None
-    # Increasing max size of request body http servers parameter in MB to handle uploading of big files. Default is 4 MB.
     http_max_request_size: Any = None
-    # Dapr max size of http header read buffer in KB to handle when sending multi-KB headers. Default is 65KB.
     http_read_buffer_size: Any = None
-    # Sets the log level for the Dapr sidecar. Allowed values are debug, info, warn, error. Default is info.
     log_level: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_DnsConfiguration:
-    # Alternate DNS server to be used by apps. This property replicates the WEBSITE_DNS_ALT_SERVER app setting.
+class OpenapiSite_Value_Properties_DnsConfiguration:
     dns_alt_server: Any = None
-    # Indicates that sites using Virtual network custom DNS servers are still sorting the list of DNS servers. Read-Only.
     dns_legacy_sort_order: Any = None
-    # Custom time for DNS to be cached in seconds. Allowed range: 0-60. Default is 30 seconds. 0 means caching disabled.
     dns_max_cache_timeout: Any = None
-    # Total number of retries for dns lookup. Allowed range: 1-5. Default is 3.
     dns_retry_attempt_count: Any = None
-    # Timeout for a single dns lookup in seconds. Allowed range: 1-30. Default is 3.
     dns_retry_attempt_timeout: Any = None
-    # List of custom DNS servers to be used by an app for lookups. Maximum 5 dns servers can be set.
     dns_servers: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_FunctionAppConfig_Deployment_Storage_Authentication:
-    # Use this property for StorageAccountConnectionString. Set the name of the app setting that has the storage account connection string. Do not set a value for this property when using other authentication type.
+class OpenapiSite_Value_Properties_FunctionAppConfig_Deployment_Storage_Authentication:
     storage_account_connection_string_name: Any = None
-    # Property to select authentication type to access the selected storage account. Available options: SystemAssignedIdentity, UserAssignedIdentity, StorageAccountConnectionString.
     type: Any = None
-    # Use this property for UserAssignedIdentity. Set the resource ID of the identity. Do not set a value for this property when using other authentication type.
     user_assigned_identity_resource_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_FunctionAppConfig_Deployment_Storage:
-    # Authentication method to access the storage account for deployment.
+class OpenapiSite_Value_Properties_FunctionAppConfig_Deployment_Storage:
     authentication: Any = None
-    # Property to select Azure Storage type. Available options: blobContainer.
     type: Any = None
-    # Property to set the URL for the selected Azure Storage type. Example: For blobContainer, the value could be https://<storageAccountName>.blob.core.windows.net/<containerName>.
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_FunctionAppConfig_Deployment:
-    # Storage for deployed package used by the function app.
+class OpenapiSite_Value_Properties_FunctionAppConfig_Deployment:
     storage: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_FunctionAppConfig_Runtime:
-    # Function app runtime name. Available options: dotnet-isolated, node, java, powershell, python, custom
+class OpenapiSite_Value_Properties_FunctionAppConfig_Runtime:
     name: Any = None
-    # Function app runtime version. Example: 8 (for dotnet-isolated)
     version: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_AlwaysReady:
+class OpenapiSite_Value_Properties_FunctionAppConfig_ScaleAndConcurrency_AlwaysReady:
     instance_count: Any = None
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_Triggers_Http:
-    # The maximum number of concurrent HTTP trigger invocations per instance.
+class OpenapiSite_Value_Properties_FunctionAppConfig_ScaleAndConcurrency_Triggers_Http:
     per_instance_concurrency: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_Triggers:
-    # Scale and concurrency settings for the HTTP trigger.
+class OpenapiSite_Value_Properties_FunctionAppConfig_ScaleAndConcurrency_Triggers:
     http: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency:
-    # 'Always Ready' configuration for the function app.
+class OpenapiSite_Value_Properties_FunctionAppConfig_ScaleAndConcurrency:
     always_ready: Any = None
-    # Set the amount of memory allocated to each instance of the function app in MB. CPU and network bandwidth are allocated proportionally.
     instance_memory_mb: Any = None
-    # The maximum number of on demand instances per function group.
     maximum_instance_count: Any = None
-    # Scale and concurrency settings for the function app triggers.
     triggers: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_FunctionAppConfig_SiteUpdateStrategy:
-    # Function app site update strategy type. Available options: Recreate, RollingUpdate
+class OpenapiSite_Value_Properties_FunctionAppConfig_SiteUpdateStrategy:
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_FunctionAppConfig:
-    # Configuration section for the function app deployment.
+class OpenapiSite_Value_Properties_FunctionAppConfig:
     deployment: Any = None
-    # Function app runtime name and version.
     runtime: Any = None
-    # Scale and concurrency settings for the function app.
     scale_and_concurrency: Any = None
-    # Function app site update strategy configuration for deployments and site config updates.
     site_update_strategy: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_HostNameSslStates:
+class OpenapiSite_Value_Properties_HostNameSslStates:
     host_type: Any = None
     name: Any = None
     ssl_state: Any = None
@@ -203,87 +144,63 @@ class OpenapiSite_Properties_HostNameSslStates:
     virtual_ip: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_HostingEnvironmentProfile:
-    # Resource ID of the App Service Environment.
+class OpenapiSite_Value_Properties_HostingEnvironmentProfile:
     id: Any = None
-    # Name of the App Service Environment.
     name: Any = None
-    # Resource type of the App Service Environment.
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_OutboundVnetRouting:
-    # Enables all other routing options defined in OutboundVnetRouting if this setting is set to true.
+class OpenapiSite_Value_Properties_OutboundVnetRouting:
     all_traffic: Any = None
-    # This causes all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied. Previously called VnetRouteAllEnabled.
     application_traffic: Any = None
-    # Enables Backup and Restore operations over virtual network. Previously called VnetBackupRestoreEnabled
     backup_restore_traffic: Any = None
-    # Enables accessing content over virtual network. Previously called VnetContentShareEnabled
     content_share_traffic: Any = None
-    # Enables pulling image over Virtual Network. Previously called VnetImagePullEnabled.
     image_pull_traffic: Any = None
-    # Enables Managed Identity operations over virtual network.
     managed_identity_traffic: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_ResourceConfig:
-    # Required CPU in cores, e.g. 0.5
+class OpenapiSite_Value_Properties_ResourceConfig:
     cpu: Any = None
-    # Required memory, e.g. "1Gi"
     memory: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_ApiDefinition:
-    # The URL of the API definition.
+class OpenapiSite_Value_Properties_SiteConfig_ApiDefinition:
     url: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_ApiManagementConfig:
-    # APIM-Api Identifier.
+class OpenapiSite_Value_Properties_SiteConfig_ApiManagementConfig:
     id: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_AppSettings:
+class OpenapiSite_Value_Properties_SiteConfig_AppSettings:
     name: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_AutoHealRules_Actions_CustomAction:
-    # Executable to be run.
+class OpenapiSite_Value_Properties_SiteConfig_AutoHealRules_Actions_CustomAction:
     exe: Any = None
-    # Parameters for the executable.
     parameters: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_AutoHealRules_Actions:
-    # Predefined action to be taken.
+class OpenapiSite_Value_Properties_SiteConfig_AutoHealRules_Actions:
     action_type: Any = None
-    # Custom action to be executed when an auto heal rule is triggered.
     custom_action: Any = None
-    # Minimum time the process must execute before taking the action
     min_process_execution_time: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_Requests:
-    # Request Count.
+class OpenapiSite_Value_Properties_SiteConfig_AutoHealRules_Triggers_Requests:
     count: Any = None
-    # Time interval.
     time_interval: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_SlowRequests:
-    # Request Count.
+class OpenapiSite_Value_Properties_SiteConfig_AutoHealRules_Triggers_SlowRequests:
     count: Any = None
-    # Request Path.
     path: Any = None
-    # Time interval.
     time_interval: Any = None
-    # Time taken.
     time_taken: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodes:
+class OpenapiSite_Value_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodes:
     count: Any = None
     path: Any = None
     status: Any = None
@@ -292,36 +209,28 @@ class OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodes:
     win32_status: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesRange:
+class OpenapiSite_Value_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesRange:
     count: Any = None
     path: Any = None
     status_codes: Any = None
     time_interval: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers:
-    # A rule based on private bytes.
+class OpenapiSite_Value_Properties_SiteConfig_AutoHealRules_Triggers:
     private_bytes_in_kb: Any = None
-    # Trigger based on total requests.
     requests: Any = None
-    # Trigger based on request execution time.
     slow_requests: Any = None
-    # A rule based on multiple Slow Requests Rule with path
     slow_requests_with_path: Any = None
-    # A rule based on status codes.
     status_codes: Any = None
-    # A rule based on status codes ranges.
     status_codes_range: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_AutoHealRules:
-    # Actions which to take by the auto-heal module when a rule is triggered.
+class OpenapiSite_Value_Properties_SiteConfig_AutoHealRules:
     actions: Any = None
-    # Triggers for auto-heal.
     triggers: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_AzureStorageAccounts:
+class OpenapiSite_Value_Properties_SiteConfig_AzureStorageAccounts:
     access_key: Any = None
     account_name: Any = None
     mount_path: Any = None
@@ -331,20 +240,18 @@ class OpenapiSite_Properties_SiteConfig_AzureStorageAccounts:
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_ConnectionStrings:
+class OpenapiSite_Value_Properties_SiteConfig_ConnectionStrings:
     connection_string: Any = None
     name: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_Cors:
-    # Gets or sets the list of origins that should be allowed to make cross-origin calls (for example: http://example.com:12345). Use "*" to allow all.
+class OpenapiSite_Value_Properties_SiteConfig_Cors:
     allowed_origins: Any = None
-    # Gets or sets whether CORS requests with credentials are allowed. See https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Requests_with_credentials for more details.
     support_credentials: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_Experiments_RampUpRules:
+class OpenapiSite_Value_Properties_SiteConfig_Experiments_RampUpRules:
     action_host_name: Any = None
     change_decision_callback_url: Any = None
     change_interval_in_minutes: Any = None
@@ -355,18 +262,17 @@ class OpenapiSite_Properties_SiteConfig_Experiments_RampUpRules:
     reroute_percentage: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_Experiments:
-    # List of ramp-up rules.
+class OpenapiSite_Value_Properties_SiteConfig_Experiments:
     ramp_up_rules: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_HandlerMappings:
+class OpenapiSite_Value_Properties_SiteConfig_HandlerMappings:
     arguments: Any = None
     extension: Any = None
     script_processor: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_IpSecurityRestrictions:
+class OpenapiSite_Value_Properties_SiteConfig_IpSecurityRestrictions:
     action: Any = None
     description: Any = None
     headers: Any = None
@@ -380,355 +286,206 @@ class OpenapiSite_Properties_SiteConfig_IpSecurityRestrictions:
     vnet_traffic_tag: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_Limits:
-    # Maximum allowed disk size usage in MB.
+class OpenapiSite_Value_Properties_SiteConfig_Limits:
     max_disk_size_in_mb: Any = None
-    # Maximum allowed memory usage in MB.
     max_memory_in_mb: Any = None
-    # Maximum allowed CPU usage percentage.
     max_percentage_cpu: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_MachineKey:
-    # Algorithm used for decryption.
+class OpenapiSite_Value_Properties_SiteConfig_MachineKey:
     decryption: Any = None
-    # Decryption key.
     decryption_key: Any = None
-    # MachineKey validation.
     validation: Any = None
-    # Validation key.
     validation_key: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_Push_Properties:
-    # Gets or sets a JSON string containing a list of dynamic tags that will be evaluated from user claims in the push registration endpoint.
+class OpenapiSite_Value_Properties_SiteConfig_Push_Properties:
     dynamic_tags_json: Any = None
-    # Gets or sets a flag indicating whether the Push endpoint is enabled.
     is_push_enabled: Any = None
-    # Gets or sets a JSON string containing a list of tags that are whitelisted for use by the push registration endpoint.
     tag_whitelist_json: Any = None
-    # Gets or sets a JSON string containing a list of tags that require user authentication to be used in the push registration endpoint. Tags can consist of alphanumeric characters and the following: '_', '@', '#', '.', ':', '-'. Validation should be performed at the PushRequestHandler.
     tags_requiring_auth: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_Push:
-    # PushSettings resource specific properties
+class OpenapiSite_Value_Properties_SiteConfig_Push:
     properties: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_VirtualApplications_VirtualDirectories:
+class OpenapiSite_Value_Properties_SiteConfig_VirtualApplications_VirtualDirectories:
     physical_path: Any = None
     virtual_path: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig_VirtualApplications:
+class OpenapiSite_Value_Properties_SiteConfig_VirtualApplications:
     physical_path: Any = None
     preload_enabled: Any = None
     virtual_directories: Any = None
     virtual_path: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SiteConfig:
-    # Flag to use Managed Identity Creds for ACR pull
+class OpenapiSite_Value_Properties_SiteConfig:
     acr_use_managed_identity_creds: Any = None
-    # If using user managed identity, the user managed identity ClientId
     acr_user_managed_identity_id: Any = None
-    # <code>true</code> if Always On is enabled; otherwise, <code>false</code>.
     always_on: Any = None
-    # Information about the formal API definition for the app.
     api_definition: Any = None
-    # Azure API management (APIM) configuration linked to the app.
     api_management_config: Any = None
-    # App command line to launch.
     app_command_line: Any = None
-    # Application settings. This property is not returned in response to normal create and read requests since it may contain sensitive information.
     app_settings: Any = None
-    # <code>true</code> if Auto Heal is enabled; otherwise, <code>false</code>.
     auto_heal_enabled: Any = None
-    # Rules that can be defined for auto-heal.
     auto_heal_rules: Any = None
-    # Auto-swap slot name.
     auto_swap_slot_name: Any = None
-    # List of Azure Storage Accounts.
     azure_storage_accounts: Any = None
-    # Connection strings. This property is not returned in response to normal create and read requests since it may contain sensitive information.
     connection_strings: Any = None
-    # Cross-Origin Resource Sharing (CORS) settings for the app.
     cors: Any = None
-    # Default documents.
     default_documents: Any = None
-    # <code>true</code> if detailed error logging is enabled; otherwise, <code>false</code>.
     detailed_error_logging_enabled: Any = None
-    # Document root.
     document_root: Any = None
-    # Maximum number of workers that a site can scale out to. This setting only applies to apps in plans where ElasticScaleEnabled is <code>true</code>
     elastic_web_app_scale_limit: Any = None
-    # Routing rules in production experiments.
     experiments: Any = None
-    # State of FTP / FTPS service
     ftps_state: Any = None
-    # Maximum number of workers that a site can scale out to. This setting only applies to the Consumption and Elastic Premium Plans
     function_app_scale_limit: Any = None
-    # Gets or sets a value indicating whether functions runtime scale monitoring is enabled. When enabled, the ScaleController will not monitor event sources directly, but will instead call to the runtime to get scale status.
     functions_runtime_scale_monitoring_enabled: Any = None
-    # Handler mappings.
     handler_mappings: Any = None
-    # Health check path
     health_check_path: Any = None
-    # Http20Enabled: configures a web site to allow clients to connect over http2.0
     http20_enabled: Any = None
-    # Http20ProxyFlag: Configures a website to allow http2.0 to pass be proxied all the way to the app. 0 = disabled, 1 = pass through all http2 traffic, 2 = pass through gRPC only.
     http20_proxy_flag: Any = None
-    # <code>true</code> if HTTP logging is enabled; otherwise, <code>false</code>.
     http_logging_enabled: Any = None
-    # IP security restrictions for main.
     ip_security_restrictions: Any = None
-    # Default action for main access restriction if no rules are matched.
     ip_security_restrictions_default_action: Any = None
-    # Java container.
     java_container: Any = None
-    # Java container version.
     java_container_version: Any = None
-    # Java version.
     java_version: Any = None
-    # Identity to use for Key Vault Reference authentication.
     key_vault_reference_identity: Any = None
-    # Metric limits set on an app.
     limits: Any = None
-    # Linux App Framework and version
     linux_fx_version: Any = None
-    # Site load balancing.
     load_balancing: Any = None
-    # <code>true</code> to enable local MySQL; otherwise, <code>false</code>.
     local_my_sql_enabled: Any = None
-    # HTTP logs directory size limit.
     logs_directory_size_limit: Any = None
-    # MachineKey of an app.
     machine_key: Any = None
-    # Managed pipeline mode.
     managed_pipeline_mode: Any = None
-    # Managed Service Identity Id
     managed_service_identity_id: Any = None
-    # Application metadata. This property cannot be retrieved, since it may contain secrets.
     metadata: Any = None
-    # The minimum strength TLS cipher suite allowed for an application
     min_tls_cipher_suite: Any = None
-    # MinTlsVersion: configures the minimum version of TLS required for SSL requests
     min_tls_version: Any = None
-    # Number of minimum instance count for a site This setting only applies to the Elastic Plans
     minimum_elastic_instance_count: Any = None
-    # .NET Framework version.
     net_framework_version: Any = None
-    # Version of Node.js.
     node_version: Any = None
-    # Number of workers.
     number_of_workers: Any = None
-    # Version of PHP.
     php_version: Any = None
-    # Version of PowerShell.
     power_shell_version: Any = None
-    # Number of preWarmed instances. This setting only applies to the Consumption and Elastic Plans
     pre_warmed_instance_count: Any = None
-    # Property to allow or block all public traffic.
     public_network_access: Any = None
-    # Publishing user name.
     publishing_username: Any = None
-    # Push settings for the App.
     push: Any = None
-    # Version of Python.
     python_version: Any = None
-    # <code>true</code> if remote debugging is enabled; otherwise, <code>false</code>.
     remote_debugging_enabled: Any = None
-    # Remote debugging version.
     remote_debugging_version: Any = None
-    # <code>true</code> if request tracing is enabled; otherwise, <code>false</code>.
     request_tracing_enabled: Any = None
-    # Request tracing expiration time.
     request_tracing_expiration_time: Any = None
-    # IP security restrictions for scm.
     scm_ip_security_restrictions: Any = None
-    # Default action for main access restriction if no rules are matched.
     scm_ip_security_restrictions_default_action: Any = None
-    # IP security restrictions for scm to use main.
     scm_ip_security_restrictions_use_main: Any = None
-    # MinTlsVersion: configures the minimum version of TLS required for SSL requests
     scm_min_tls_version: Any = None
-    # SCM type.
     scm_type: Any = None
-    # Tracing options.
     tracing_options: Any = None
-    # <code>true</code> to use 32-bit worker process; otherwise, <code>false</code>.
     use32_bit_worker_process: Any = None
-    # Virtual applications.
     virtual_applications: Any = None
-    # Virtual Network name.
     vnet_name: Any = None
-    # The number of private ports assigned to this app. These will be assigned dynamically on runtime.
     vnet_private_ports_count: Any = None
-    # Virtual Network Route All enabled. This causes all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied.
     vnet_route_all_enabled: Any = None
-    # <code>true</code> if WebSocket is enabled; otherwise, <code>false</code>.
     web_sockets_enabled: Any = None
-    # Sets the time zone a site uses for generating timestamps. Compatible with Linux and Windows App Service. Setting the WEBSITE_TIME_ZONE app setting takes precedence over this config. For Linux, expects tz database values https://www.iana.org/time-zones (for a quick reference see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For Windows, expects one of the time zones listed under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones
     website_time_zone: Any = None
-    # Xenon App Framework and version
     windows_fx_version: Any = None
-    # Explicit Managed Service Identity Id
     x_managed_service_identity_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties_SlotSwapStatus:
-    # The destination slot of the last swap operation.
+class OpenapiSite_Value_Properties_SlotSwapStatus:
     destination_slot_name: Any = None
-    # The source slot of the last swap operation.
     source_slot_name: Any = None
-    # The time the last successful slot swap completed.
     timestamp_utc: Any = None
 
 @dataclasses.dataclass
-class OpenapiSite_Properties:
-    # AI integration configuration for the app.
+class OpenapiSite_Value_Properties:
     ai_integration: Any = None
-    # Specifies the scope of uniqueness for the default hostname during resource creation
     auto_generated_domain_name_label_scope: Any = None
-    # Management information availability state for the app.
     availability_state: Any = None
-    # <code>true</code> to enable client affinity; <code>false</code> to stop sending session affinity cookies, which route client requests in the same session to the same instance. Default is <code>true</code>.
     client_affinity_enabled: Any = None
-    # <code>true</code> to enable client affinity partitioning using CHIPS cookies, this will add the <code>partitioned</code> property to the affinity cookies; <code>false</code> to stop sending partitioned affinity cookies. Default is <code>false</code>.
     client_affinity_partitioning_enabled: Any = None
-    # <code>true</code> to override client affinity cookie domain with X-Forwarded-Host request header. <code>false</code> to use default domain. Default is <code>false</code>.
     client_affinity_proxy_enabled: Any = None
-    # <code>true</code> to enable client certificate authentication (TLS mutual authentication); otherwise, <code>false</code>. Default is <code>false</code>.
     client_cert_enabled: Any = None
-    # client certificate authentication comma-separated exclusion paths
     client_cert_exclusion_paths: Any = None
-    # This composes with ClientCertEnabled setting. - ClientCertEnabled: false means ClientCert is ignored. - ClientCertEnabled: true and ClientCertMode: Required means ClientCert is required. - ClientCertEnabled: true and ClientCertMode: Optional means ClientCert is optional or accepted.
     client_cert_mode: Any = None
-    # Information needed for cloning operation.
     cloning_info: Any = None
-    # Size of the function container.
     container_size: Any = None
-    # Unique identifier that verifies the custom domains assigned to the app. Customer will add this id to a txt record for verification.
     custom_domain_verification_id: Any = None
-    # Maximum allowed daily memory-time quota (applicable on dynamic apps only).
     daily_memory_time_quota: Any = None
-    # App Dapr configuration.
     dapr_config: Any = None
-    # Default hostname of the app. Read-only.
     default_host_name: Any = None
     dns_configuration: Any = None
-    # <code>true</code> if the app is enabled; otherwise, <code>false</code>. Setting this value to false disables the app (takes the app offline).
     enabled: Any = None
-    # Enabled hostnames for the app.Hostnames need to be assigned (see HostNames) AND enabled. Otherwise, the app is not served on those hostnames.
     enabled_host_names: Any = None
-    # Whether to use end to end encryption between the FrontEnd and the Worker
     end_to_end_encryption_enabled: Any = None
-    # Function app configuration.
     function_app_config: Any = None
-    # Hostname SSL states are used to manage the SSL bindings for app's hostnames.
     host_name_ssl_states: Any = None
-    # Hostnames associated with the app.
     host_names: Any = None
-    # <code>true</code> to disable the public hostnames of the app; otherwise, <code>false</code>. If <code>true</code>, the app is only accessible via API management process.
     host_names_disabled: Any = None
-    # Specification for an App Service Environment to use for this resource.
     hosting_environment_profile: Any = None
-    # HttpsOnly: configures a web site to accept only https requests. Issues redirect for http requests
     https_only: Any = None
-    # Hyper-V sandbox.
     hyper_v: Any = None
-    # Specifies an operation id if this site has a pending operation.
     in_progress_operation_id: Any = None
-    # Specifies the IP mode of the app.
     ip_mode: Any = None
-    # <code>true</code> if the app is a default container; otherwise, <code>false</code>.
     is_default_container: Any = None
-    # Obsolete: Hyper-V sandbox.
     is_xenon: Any = None
-    # Identity to use for Key Vault Reference authentication.
     key_vault_reference_identity: Any = None
-    # Last time the app was modified, in UTC. Read-only.
     last_modified_time_utc: Any = None
-    # <code>true</code> if the app is in maintenance mode; otherwise, <code>false</code>. Setting this value to true puts the app in maintenance mode, making it return the maintenance custom error page. The maintenance custom error page is required to set the site to maintenance. Default value is <code>false</code>.
     maintenance_enabled: Any = None
-    # Azure Resource Manager ID of the customer's selected Managed Environment on which to host this app. This must be of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.App/managedEnvironments/{managedEnvironmentName}
     managed_environment_id: Any = None
-    # Maximum number of workers. This only applies to Functions container.
     max_number_of_workers: Any = None
-    # List of IP addresses that the app uses for outbound connections (e.g. database access). Includes VIPs from tenants that site can be hosted with current settings. Read-only.
     outbound_ip_addresses: Any = None
-    # Outbound traffic options over virtual network.
     outbound_vnet_routing: Any = None
-    # The platform release channel for the site.
     platform_release_channel: Any = None
-    # List of IP addresses that the app uses for outbound connections (e.g. database access). Includes VIPs from all tenants except dataComponent. Read-only.
     possible_outbound_ip_addresses: Any = None
-    # Property to allow or block all public traffic. Allowed Values: 'Enabled', 'Disabled' or an empty string.
     public_network_access: Any = None
-    # Site redundancy mode
     redundancy_mode: Any = None
-    # Name of the repository site.
     repository_site_name: Any = None
-    # <code>true</code> if reserved; otherwise, <code>false</code>.
     reserved: Any = None
-    # Function app resource requirements.
     resource_config: Any = None
-    # Name of the resource group the app belongs to. Read-only.
     resource_group: Any = None
-    # <code>true</code> to stop SCM (KUDU) site when the app is stopped; otherwise, <code>false</code>. The default is <code>false</code>.
     scm_site_also_stopped: Any = None
-    # Resource ID of the associated App Service plan, formatted as: "/subscriptions/{subscriptionID}/resourceGroups/{groupName}/providers/Microsoft.Web/serverfarms/{appServicePlanName}".
     server_farm_id: Any = None
-    # Configuration of an App Service app.
     site_config: Any = None
-    # <code>true</code> if site scoped certificates are enabled; otherwise, <code>false</code>.
     site_scoped_certificates_enabled: Any = None
-    # Current SKU of application based on associated App Service Plan. Some valid SKU values are Free, Shared, Basic, Dynamic, FlexConsumption, Standard, Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2
     sku: Any = None
-    # The status of the last successful slot swap operation.
     slot_swap_status: Any = None
-    # Whether to enable ssh access.
     ssh_enabled: Any = None
-    # Current state of the app.
     state: Any = None
-    # Checks if Customer provided storage account is required
     storage_account_required: Any = None
-    # App suspended till in case memory-time quota is exceeded.
     suspended_till: Any = None
-    # Specifies which deployment slot this app will swap into. Read-only.
     target_swap_slot: Any = None
-    # Azure Traffic Manager hostnames associated with the app. Read-only.
     traffic_manager_host_names: Any = None
-    # State indicating whether the app has exceeded its quota usage. Read-only.
     usage_state: Any = None
-    # Azure Resource Manager ID of the Virtual network and subnet to be joined by Regional VNET Integration. This must be of the form /subscriptions/{subscriptionName}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{vnetName}/subnets/{subnetName}
     virtual_network_subnet_id: Any = None
-    # Workload profile name for function app to execute on.
     workload_profile_name: Any = None
 
 @dataclasses.dataclass
+class OpenapiSite_Value:
+    extended_location: Any = None
+    identity: Any = None
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiSiteConfig:
-    name: Any = None
-    slot: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiSiteAttrs:
-    # Extended Location.
-    extended_location: Any = None
-    # Managed service identity.
-    identity: Any = None
-    # Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
-    kind: Any = None
-    name: Any = None
-    # Site resource specific properties
-    properties: Any = None
-    slot: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Site items on this page
+    value: Any = None
 
 OpenapiSite = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_site",
     fields={
-        "name": ubx.FieldSpec(wire_name="name"),
-        "slot": ubx.FieldSpec(wire_name="slot"),
     },
 )

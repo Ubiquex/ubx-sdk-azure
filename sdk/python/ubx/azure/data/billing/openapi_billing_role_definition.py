@@ -7,40 +7,39 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiBillingRoleDefinition_Properties_Permissions:
+class OpenapiBillingRoleDefinition_Value_Properties_Permissions:
     actions: Any = None
     not_actions: Any = None
 
 @dataclasses.dataclass
-class OpenapiBillingRoleDefinition_Properties:
-    # The role description.
+class OpenapiBillingRoleDefinition_Value_Properties:
     description: Any = None
-    # The billingPermissions the role has.
     permissions: Any = None
-    # The name of the role.
     role_name: Any = None
+
+@dataclasses.dataclass
+class OpenapiBillingRoleDefinition_Value:
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingRoleDefinitionConfig:
     billing_account_name: Any = None
     billing_profile_name: Any = None
-    role_definition_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingRoleDefinitionAttrs:
     billing_account_name: Any = None
     billing_profile_name: Any = None
-    # The properties of a role definition.
-    properties: Any = None
-    role_definition_name: Any = None
-    # Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-    tags: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The BillingRoleDefinition items on this page
+    value: Any = None
 
 OpenapiBillingRoleDefinition = ubx.DataSourceBinding(
     wire_type="azure_billing_openapi_billing_role_definition",
     fields={
         "billing_account_name": ubx.FieldSpec(wire_name="billing_account_name"),
         "billing_profile_name": ubx.FieldSpec(wire_name="billing_profile_name"),
-        "role_definition_name": ubx.FieldSpec(wire_name="role_definition_name"),
     },
 )

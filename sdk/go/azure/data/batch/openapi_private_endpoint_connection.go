@@ -3,51 +3,47 @@ package batch
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiPrivateEndpointConnection_Properties_PrivateEndpoint struct {
-	// The ARM resource identifier of the private endpoint. This is of the form /subscriptions/{subscription}/resourceGroups/{group}/providers/Microsoft.Network/privateEndpoints/{privateEndpoint}.
+type OpenapiPrivateEndpointConnection_Value_Properties_PrivateEndpoint struct {
 	Id any
 }
 
-type OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState struct {
-	// Action required on the private connection state
+type OpenapiPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	// Description of the private Connection state
 	Description any
-	// The status of the Batch private endpoint connection
 	Status any
 }
 
-type OpenapiPrivateEndpointConnection_Properties struct {
-	// The value has one and only one group id.
+type OpenapiPrivateEndpointConnection_Value_Properties struct {
 	GroupIds any
-	// The private endpoint of the private endpoint connection.
 	PrivateEndpoint any
-	// The private link service connection state of the private endpoint connection
 	PrivateLinkServiceConnectionState any
-	// The provisioning state of the private endpoint connection.
 	ProvisioningState any
+}
+
+type OpenapiPrivateEndpointConnection_Value struct {
+	Etag any
+	Properties any
+	Tags any
 }
 
 type OpenapiPrivateEndpointConnectionConfig struct {
 	AccountName any
-	PrivateEndpointConnectionName any
+	Maxresults any
 }
 
 type OpenapiPrivateEndpointConnectionAttrs struct {
 	AccountName any
-	// The ETag of the resource, used for concurrency statements.
-	Etag any
-	PrivateEndpointConnectionName any
-	// Private endpoint connection properties.
-	Properties any
-	// The tags of the resource.
-	Tags any
+	Maxresults any
+	// The link to the next page of items
+	NextLink any
+	// The PrivateEndpointConnection items on this page
+	Value any
 }
 
 var OpenapiPrivateEndpointConnection = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_private_endpoint_connection",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PrivateEndpointConnectionName": ubx.FieldSpec{WireName: "private_endpoint_connection_name"},
+		"Maxresults": ubx.FieldSpec{WireName: "maxresults"},
 	},
 }

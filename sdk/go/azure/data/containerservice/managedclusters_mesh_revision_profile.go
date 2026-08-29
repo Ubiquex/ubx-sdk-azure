@@ -3,35 +3,37 @@ package containerservice
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ManagedclustersMeshRevisionProfile_Properties_MeshRevisions_CompatibleWith struct {
+type ManagedclustersMeshRevisionProfile_Value_Properties_MeshRevisions_CompatibleWith struct {
 	Name any
 	Versions any
 }
 
-type ManagedclustersMeshRevisionProfile_Properties_MeshRevisions struct {
+type ManagedclustersMeshRevisionProfile_Value_Properties_MeshRevisions struct {
 	CompatibleWith any
 	Revision any
 	Upgrades any
 }
 
-type ManagedclustersMeshRevisionProfile_Properties struct {
-	// Available mesh revisions.
+type ManagedclustersMeshRevisionProfile_Value_Properties struct {
 	MeshRevisions any
 }
 
+type ManagedclustersMeshRevisionProfile_Value struct {
+	Properties any
+}
+
 type ManagedclustersMeshRevisionProfileConfig struct {
-	Mode any
 }
 
 type ManagedclustersMeshRevisionProfileAttrs struct {
-	Mode any
-	// Mesh revision profile properties for a mesh
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The MeshRevisionProfile items on this page
+	Value any
 }
 
 var ManagedclustersMeshRevisionProfile = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_managedclusters_mesh_revision_profile",
 	Fields: ubx.FieldMap{
-		"Mode": ubx.FieldSpec{WireName: "mode"},
 	},
 }

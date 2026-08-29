@@ -3,58 +3,48 @@ package vmware
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type Host_Properties struct {
-	// Display name of the host in VMware vCenter.
+type Host_Value_Properties struct {
 	DisplayName any
 	FaultDomain any
-	// Fully qualified domain name of the host.
 	Fqdn any
-	// The kind of host.
 	Kind any
-	// The reason for host maintenance.
 	Maintenance any
-	// vCenter managed object reference ID of the host.
 	MoRefId any
-	// provisioning state of the host
 	ProvisioningState any
 }
 
-type Host_Sku struct {
-	// If the SKU supports scale out/in then the capacity integer should be included. If scale out/in is not possible for the resource this may be omitted.
+type Host_Value_Sku struct {
 	Capacity any
-	// If the service has different generations of hardware, for the same SKU, then that can be captured here.
 	Family any
-	// The name of the SKU. E.g. P3. It is typically a letter+number code
 	Name any
-	// The SKU size. When the name field is the combination of tier and some other value, this would be the standalone code.
 	Size any
-	// This field is required to be implemented by the Resource Provider if the service has more than one tier, but is not required on a PUT.
 	Tier any
+}
+
+type Host_Value struct {
+	Properties any
+	Sku any
+	Zones any
 }
 
 type HostConfig struct {
 	ClusterName any
-	HostId any
 	PrivateCloudName any
 }
 
 type HostAttrs struct {
 	ClusterName any
-	HostId any
+	// The link to the next page of items
+	NextLink any
 	PrivateCloudName any
-	// The properties of a host.
-	Properties any
-	// The resource model definition representing SKU
-	Sku any
-	// The availability zones.
-	Zones any
+	// The Host items on this page
+	Value any
 }
 
 var Host = ubx.DataSourceBinding{
 	WireType: "azure_vmware_host",
 	Fields: ubx.FieldMap{
 		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
-		"HostId": ubx.FieldSpec{WireName: "host_id"},
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
 	},
 }

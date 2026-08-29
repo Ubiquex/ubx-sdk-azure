@@ -4,16 +4,11 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .certificate_list_description import CertificateListDescription, CertificateListDescriptionConfig
-from .endpoint_health_data_list_result import EndpointHealthDataListResult, EndpointHealthDataListResultConfig
-from .event_hub_consumer_groups_list_result import EventHubConsumerGroupsListResult, EventHubConsumerGroupsListResultConfig
+from .certificate_description import CertificateDescription, CertificateDescriptionConfig
+from .endpoint_health_data import EndpointHealthData, EndpointHealthDataConfig
 from .group_id_information import GroupIdInformation, GroupIdInformationConfig
-from .iot_hub_description_list_result import IotHubDescriptionListResult, IotHubDescriptionListResultConfig
-from .iot_hub_quota_metric_info_list_result import IotHubQuotaMetricInfoListResult, IotHubQuotaMetricInfoListResultConfig
-from .iot_hub_sku_description_list_result import IotHubSkuDescriptionListResult, IotHubSkuDescriptionListResultConfig
-from .job_response_list_result import JobResponseListResult, JobResponseListResultConfig
-from .operation_list_result import OperationListResult, OperationListResultConfig
+from .iot_hub_description import IotHubDescription, IotHubDescriptionConfig
+from .iot_hub_sku_description import IotHubSkuDescription, IotHubSkuDescriptionConfig
+from .job_response import JobResponse, JobResponseConfig
 from .private_endpoint_connections_list import PrivateEndpointConnectionsList, PrivateEndpointConnectionsListConfig
-from .private_link_resources import PrivateLinkResources, PrivateLinkResourcesConfig
 from .registry_statistics import RegistryStatistics, RegistryStatisticsConfig
-from .user_subscription_quota_list_result import UserSubscriptionQuotaListResult, UserSubscriptionQuotaListResultConfig

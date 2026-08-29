@@ -3,44 +3,42 @@ package resources
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDataPolicyManifest_Properties_Effects struct {
+type OpenapiDataPolicyManifest_Value_Properties_Effects struct {
 	DetailsSchema any
 	Name any
 }
 
-type OpenapiDataPolicyManifest_Properties_ResourceFunctions_Custom struct {
+type OpenapiDataPolicyManifest_Value_Properties_ResourceFunctions_Custom struct {
 	AllowCustomProperties any
 	DefaultProperties any
 	FullyQualifiedResourceType any
 	Name any
 }
 
-type OpenapiDataPolicyManifest_Properties_ResourceFunctions struct {
-	// An array of data manifest custom resource definitions.
+type OpenapiDataPolicyManifest_Value_Properties_ResourceFunctions struct {
 	Custom any
-	// The standard resource functions (subscription and/or resourceGroup).
 	Standard any
 }
 
-type OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases_DefaultMetadata struct {
+type OpenapiDataPolicyManifest_Value_Properties_ResourceTypeAliases_Aliases_DefaultMetadata struct {
 	Attributes any
 	Type any
 }
 
-type OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases_DefaultPattern struct {
+type OpenapiDataPolicyManifest_Value_Properties_ResourceTypeAliases_Aliases_DefaultPattern struct {
 	Phrase any
 	Type any
 	Variable any
 }
 
-type OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases_Paths struct {
+type OpenapiDataPolicyManifest_Value_Properties_ResourceTypeAliases_Aliases_Paths struct {
 	ApiVersions any
 	Metadata any
 	Path any
 	Pattern any
 }
 
-type OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases struct {
+type OpenapiDataPolicyManifest_Value_Properties_ResourceTypeAliases_Aliases struct {
 	DefaultMetadata any
 	DefaultPath any
 	DefaultPattern any
@@ -49,41 +47,37 @@ type OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases struct {
 	Type any
 }
 
-type OpenapiDataPolicyManifest_Properties_ResourceTypeAliases struct {
+type OpenapiDataPolicyManifest_Value_Properties_ResourceTypeAliases struct {
 	Aliases any
 	ResourceType any
 }
 
-type OpenapiDataPolicyManifest_Properties struct {
-	// The effect definition.
+type OpenapiDataPolicyManifest_Value_Properties struct {
 	Effects any
-	// The non-alias field accessor values that can be used in the policy rule.
 	FieldValues any
-	// A value indicating whether policy mode is allowed only in built-in definitions.
 	IsBuiltInOnly any
-	// The list of namespaces for the data policy manifest.
 	Namespaces any
-	// The policy mode of the data policy manifest.
 	PolicyMode any
-	// The resource functions supported by a manifest.
 	ResourceFunctions any
-	// An array of resource type aliases.
 	ResourceTypeAliases any
 }
 
+type OpenapiDataPolicyManifest_Value struct {
+	Properties any
+}
+
 type OpenapiDataPolicyManifestConfig struct {
-	PolicyMode any
 }
 
 type OpenapiDataPolicyManifestAttrs struct {
-	PolicyMode any
-	// The properties of the data policy manifest.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The DataPolicyManifest items on this page
+	Value any
 }
 
 var OpenapiDataPolicyManifest = ubx.DataSourceBinding{
 	WireType: "azure_resources_openapi_data_policy_manifest",
 	Fields: ubx.FieldMap{
-		"PolicyMode": ubx.FieldSpec{WireName: "policy_mode"},
 	},
 }

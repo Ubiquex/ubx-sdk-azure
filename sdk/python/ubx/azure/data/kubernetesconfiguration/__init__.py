@@ -4,8 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .extensions_list import ExtensionsList, ExtensionsListConfig
-from .extensions_operation import ExtensionsOperation, ExtensionsOperationConfig
-from .fluxconfiguration_flux_configurations_list import FluxconfigurationFluxConfigurationsList, FluxconfigurationFluxConfigurationsListConfig
-from .fluxconfiguration_operation import FluxconfigurationOperation, FluxconfigurationOperationConfig
-from .source_control_configuration_list import SourceControlConfigurationList, SourceControlConfigurationListConfig
+from .extensions_extension import ExtensionsExtension, ExtensionsExtensionConfig
+from .fluxconfiguration_flux_configuration import FluxconfigurationFluxConfiguration, FluxconfigurationFluxConfigurationConfig
+from .source_control_configuration import SourceControlConfiguration, SourceControlConfigurationConfig

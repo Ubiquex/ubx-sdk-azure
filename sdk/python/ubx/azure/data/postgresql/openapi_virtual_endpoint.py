@@ -7,30 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiVirtualEndpoint_Properties:
-    # Type of endpoint for the virtual endpoints.
+class OpenapiVirtualEndpoint_Value_Properties:
     endpoint_type: Any = None
-    # List of servers that one of the virtual endpoints can refer to.
     members: Any = None
-    # List of virtual endpoints for a server.
     virtual_endpoints: Any = None
+
+@dataclasses.dataclass
+class OpenapiVirtualEndpoint_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiVirtualEndpointConfig:
     server_name: Any = None
-    virtual_endpoint_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiVirtualEndpointAttrs:
-    # Properties of a pair of virtual endpoints.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
-    virtual_endpoint_name: Any = None
+    # The VirtualEndpoint items on this page
+    value: Any = None
 
 OpenapiVirtualEndpoint = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_virtual_endpoint",
     fields={
         "server_name": ubx.FieldSpec(wire_name="server_name"),
-        "virtual_endpoint_name": ubx.FieldSpec(wire_name="virtual_endpoint_name"),
     },
 )

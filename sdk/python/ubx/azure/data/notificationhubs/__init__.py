@@ -4,11 +4,8 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .namespace_list_result import NamespaceListResult, NamespaceListResultConfig
-from .notification_hub_list_result import NotificationHubListResult, NotificationHubListResultConfig
-from .operation_list_result import OperationListResult, OperationListResultConfig
-from .private_endpoint_connection_resource_list_result import PrivateEndpointConnectionResourceListResult, PrivateEndpointConnectionResourceListResultConfig
+from .namespace_resource import NamespaceResource, NamespaceResourceConfig
+from .notification_hub_resource import NotificationHubResource, NotificationHubResourceConfig
+from .private_endpoint_connection_resource import PrivateEndpointConnectionResource, PrivateEndpointConnectionResourceConfig
 from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
-from .private_link_resource_list_result import PrivateLinkResourceListResult, PrivateLinkResourceListResultConfig
-from .shared_access_authorization_rule_list_result import SharedAccessAuthorizationRuleListResult, SharedAccessAuthorizationRuleListResultConfig
 from .shared_access_authorization_rule_resource import SharedAccessAuthorizationRuleResource, SharedAccessAuthorizationRuleResourceConfig

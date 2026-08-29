@@ -3,19 +3,22 @@ package purview
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type PrivateLinkResource_Properties struct {
-	// The private link resource group identifier.
+type PrivateLinkResource_Value_Properties struct {
 	GroupId any
-	// This translates to how many Private IPs should be created for each privately linkable resource.
 	RequiredMembers any
-	// The required zone names for private link resource.
 	RequiredZoneNames any
+}
+
+type PrivateLinkResource_Value struct {
+	Id any
+	Name any
+	Properties any
+	Type any
 }
 
 type PrivateLinkResourceConfig struct {
 	AccountName any
 	ApiVersion any
-	GroupId any
 	ResourceGroupName any
 	SubscriptionId any
 }
@@ -23,17 +26,12 @@ type PrivateLinkResourceConfig struct {
 type PrivateLinkResourceAttrs struct {
 	AccountName any
 	ApiVersion any
-	GroupId any
-	// The private link resource identifier.
-	Id any
-	// The private link resource name.
-	Name any
-	// A privately linkable resource properties.
-	Properties any
+	// The Url of next result page.
+	NextLink any
 	ResourceGroupName any
 	SubscriptionId any
-	// The private link resource type.
-	Type any
+	// Collection of items of type results.
+	Value any
 }
 
 var PrivateLinkResource = ubx.DataSourceBinding{
@@ -41,7 +39,6 @@ var PrivateLinkResource = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},

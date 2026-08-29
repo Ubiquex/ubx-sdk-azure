@@ -7,27 +7,34 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateEndpoint:
+class PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
     id: Any = None
 
 @dataclasses.dataclass
-class PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateLinkServiceConnectionState:
+class PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
     actions_required: Any = None
     description: Any = None
     status: Any = None
 
 @dataclasses.dataclass
-class PrivatelinkhubPrivateLinkHub_Value_Properties:
+class PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateEndpointConnections_Properties:
     private_endpoint: Any = None
     private_link_service_connection_state: Any = None
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class PrivatelinkhubPrivateLinkHub_Value:
+class PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateEndpointConnections:
     id: Any = None
-    name: Any = None
     properties: Any = None
-    type: Any = None
+
+@dataclasses.dataclass
+class PrivatelinkhubPrivateLinkHub_Value_Properties:
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class PrivatelinkhubPrivateLinkHub_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class PrivatelinkhubPrivateLinkHubConfig:
@@ -35,7 +42,9 @@ class PrivatelinkhubPrivateLinkHubConfig:
 
 @dataclasses.dataclass
 class PrivatelinkhubPrivateLinkHubAttrs:
+    # Link to the next page of results
     next_link: Any = None
+    # List of privateLinkHubs
     value: Any = None
 
 PrivatelinkhubPrivateLinkHub = ubx.DataSourceBinding(

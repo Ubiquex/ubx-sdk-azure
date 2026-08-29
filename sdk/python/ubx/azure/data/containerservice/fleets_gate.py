@@ -7,54 +7,45 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class FleetsGate_Properties_Target_UpdateRunProperties:
-    # The Update Group of the Update Run.
+class FleetsGate_Value_Properties_Target_UpdateRunProperties:
     group: Any = None
-    # The name of the Update Run.
     name: Any = None
-    # The Update Stage of the Update Run.
     stage: Any = None
-    # Whether the Gate is placed before or after the target.
     timing: Any = None
 
 @dataclasses.dataclass
-class FleetsGate_Properties_Target:
-    # A type definition that refers the id to an Azure Resource Manager resource.
+class FleetsGate_Value_Properties_Target:
     id: Any = None
-    # The properties of the Update Run that the Gate is targeting.
     update_run_properties: Any = None
 
 @dataclasses.dataclass
-class FleetsGate_Properties:
-    # The human-readable display name of the Gate.
+class FleetsGate_Value_Properties:
     display_name: Any = None
-    # The type of the Gate determines how it is completed.
     gate_type: Any = None
-    # The provisioning state of the Gate resource.
     provisioning_state: Any = None
-    # The state of the Gate.
     state: Any = None
-    # The target that the Gate is controlling, e.g. an Update Run. Exactly one of the properties objects will be set.
     target: Any = None
+
+@dataclasses.dataclass
+class FleetsGate_Value:
+    e_tag: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class FleetsGateConfig:
     fleet_name: Any = None
-    gate_name: Any = None
 
 @dataclasses.dataclass
 class FleetsGateAttrs:
-    # If eTag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.
-    e_tag: Any = None
     fleet_name: Any = None
-    gate_name: Any = None
-    # A Gate controls the progression during a staged rollout, e.g. in an Update Run.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Gate items on this page
+    value: Any = None
 
 FleetsGate = ubx.DataSourceBinding(
     wire_type="azure_containerservice_fleets_gate",
     fields={
         "fleet_name": ubx.FieldSpec(wire_name="fleet_name"),
-        "gate_name": ubx.FieldSpec(wire_name="gate_name"),
     },
 )

@@ -7,28 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDiagnosticCategory_Properties:
-    # Description of the diagnostic category
+class OpenapiDiagnosticCategory_Value_Properties:
     description: Any = None
 
 @dataclasses.dataclass
+class OpenapiDiagnosticCategory_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiDiagnosticCategoryConfig:
-    diagnostic_category: Any = None
     site_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiDiagnosticCategoryAttrs:
-    diagnostic_category: Any = None
-    # Kind of resource.
-    kind: Any = None
-    # DiagnosticCategory resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     site_name: Any = None
+    # The DiagnosticCategory items on this page
+    value: Any = None
 
 OpenapiDiagnosticCategory = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_diagnostic_category",
     fields={
-        "diagnostic_category": ubx.FieldSpec(wire_name="diagnostic_category"),
         "site_name": ubx.FieldSpec(wire_name="site_name"),
     },
 )

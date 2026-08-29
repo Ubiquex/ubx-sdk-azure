@@ -3,27 +3,29 @@ package machinelearningservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiCodeContainer_Properties struct {
-	// Provisioning state of registry asset.
+type OpenapiCodeContainer_Value_Properties struct {
 	ProvisioningState any
 }
 
+type OpenapiCodeContainer_Value struct {
+	Properties any
+}
+
 type OpenapiCodeContainerConfig struct {
-	Name any
-	WorkspaceName any
+	RegistryName any
 }
 
 type OpenapiCodeContainerAttrs struct {
-	Name any
-	// Container for code asset versions.
-	Properties any
-	WorkspaceName any
+	// The link to the next page of items
+	NextLink any
+	RegistryName any
+	// The CodeContainer items on this page
+	Value any
 }
 
 var OpenapiCodeContainer = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_code_container",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"RegistryName": ubx.FieldSpec{WireName: "registry_name"},
 	},
 }

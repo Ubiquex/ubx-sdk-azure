@@ -7,30 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiBackupAutomaticAndOnDemand_Properties:
-    # Type of backup.
+class OpenapiBackupAutomaticAndOnDemand_Value_Properties:
     backup_type: Any = None
-    # Time(ISO8601 format) at which the backup was completed.
     completed_time: Any = None
-    # Source of the backup.
     source: Any = None
 
 @dataclasses.dataclass
+class OpenapiBackupAutomaticAndOnDemand_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiBackupAutomaticAndOnDemandConfig:
-    backup_name: Any = None
     server_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiBackupAutomaticAndOnDemandAttrs:
-    backup_name: Any = None
-    # Properties of a backup.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
+    # The BackupAutomaticAndOnDemand items on this page
+    value: Any = None
 
 OpenapiBackupAutomaticAndOnDemand = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_backup_automatic_and_on_demand",
     fields={
-        "backup_name": ubx.FieldSpec(wire_name="backup_name"),
         "server_name": ubx.FieldSpec(wire_name="server_name"),
     },
 )

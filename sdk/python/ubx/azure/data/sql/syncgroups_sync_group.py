@@ -7,33 +7,53 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class SyncgroupsSyncGroup_Value_Tables_Columns:
+class SyncgroupsSyncGroup_Value_Properties_Schema_Tables_Columns:
     data_size: Any = None
     data_type: Any = None
-    error_id: Any = None
-    has_error: Any = None
-    is_primary_key: Any = None
-    name: Any = None
     quoted_name: Any = None
 
 @dataclasses.dataclass
-class SyncgroupsSyncGroup_Value_Tables:
+class SyncgroupsSyncGroup_Value_Properties_Schema_Tables:
     columns: Any = None
-    error_id: Any = None
-    has_error: Any = None
-    name: Any = None
     quoted_name: Any = None
+
+@dataclasses.dataclass
+class SyncgroupsSyncGroup_Value_Properties_Schema:
+    master_sync_member_name: Any = None
+    tables: Any = None
+
+@dataclasses.dataclass
+class SyncgroupsSyncGroup_Value_Properties:
+    conflict_logging_retention_in_days: Any = None
+    conflict_resolution_policy: Any = None
+    enable_conflict_logging: Any = None
+    hub_database_password: Any = None
+    hub_database_user_name: Any = None
+    interval: Any = None
+    last_sync_time: Any = None
+    private_endpoint_name: Any = None
+    schema: Any = None
+    sync_database_id: Any = None
+    sync_state: Any = None
+    use_private_link_connection: Any = None
+
+@dataclasses.dataclass
+class SyncgroupsSyncGroup_Value_Sku:
+    capacity: Any = None
+    family: Any = None
+    name: Any = None
+    size: Any = None
+    tier: Any = None
 
 @dataclasses.dataclass
 class SyncgroupsSyncGroup_Value:
-    last_update_time: Any = None
-    tables: Any = None
+    properties: Any = None
+    sku: Any = None
 
 @dataclasses.dataclass
 class SyncgroupsSyncGroupConfig:
     database_name: Any = None
     server_name: Any = None
-    sync_group_name: Any = None
 
 @dataclasses.dataclass
 class SyncgroupsSyncGroupAttrs:
@@ -41,8 +61,7 @@ class SyncgroupsSyncGroupAttrs:
     # The link to the next page of items
     next_link: Any = None
     server_name: Any = None
-    sync_group_name: Any = None
-    # The SyncFullSchemaProperties items on this page
+    # The SyncGroup items on this page
     value: Any = None
 
 SyncgroupsSyncGroup = ubx.DataSourceBinding(
@@ -50,6 +69,5 @@ SyncgroupsSyncGroup = ubx.DataSourceBinding(
     fields={
         "database_name": ubx.FieldSpec(wire_name="database_name"),
         "server_name": ubx.FieldSpec(wire_name="server_name"),
-        "sync_group_name": ubx.FieldSpec(wire_name="sync_group_name"),
     },
 )

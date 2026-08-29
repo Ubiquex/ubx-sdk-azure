@@ -7,19 +7,22 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class PrivateLinkResource_Properties:
-    # The private link resource group identifier.
+class PrivateLinkResource_Value_Properties:
     group_id: Any = None
-    # This translates to how many Private IPs should be created for each privately linkable resource.
     required_members: Any = None
-    # The required zone names for private link resource.
     required_zone_names: Any = None
+
+@dataclasses.dataclass
+class PrivateLinkResource_Value:
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
 class PrivateLinkResourceConfig:
     account_name: Any = None
     api_version: Any = None
-    group_id: Any = None
     resource_group_name: Any = None
     subscription_id: Any = None
 
@@ -27,24 +30,18 @@ class PrivateLinkResourceConfig:
 class PrivateLinkResourceAttrs:
     account_name: Any = None
     api_version: Any = None
-    group_id: Any = None
-    # The private link resource identifier.
-    id: Any = None
-    # The private link resource name.
-    name: Any = None
-    # A privately linkable resource properties.
-    properties: Any = None
+    # The Url of next result page.
+    next_link: Any = None
     resource_group_name: Any = None
     subscription_id: Any = None
-    # The private link resource type.
-    type: Any = None
+    # Collection of items of type results.
+    value: Any = None
 
 PrivateLinkResource = ubx.DataSourceBinding(
     wire_type="azure_purview_private_link_resource",
     fields={
         "account_name": ubx.FieldSpec(wire_name="account_name"),
         "api_version": ubx.FieldSpec(wire_name="api_version"),
-        "group_id": ubx.FieldSpec(wire_name="group_id"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },

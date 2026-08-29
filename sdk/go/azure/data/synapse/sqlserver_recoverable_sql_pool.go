@@ -3,30 +3,29 @@ package synapse
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SqlserverRecoverableSqlPool_Properties struct {
-	// The edition of the database
+type SqlserverRecoverableSqlPool_Value_Properties struct {
 	Edition any
-	// The elastic pool name of the database
 	ElasticPoolName any
-	// The last available backup date of the database (ISO8601 format)
 	LastAvailableBackupDate any
-	// The service level objective name of the database
 	ServiceLevelObjective any
 }
 
+type SqlserverRecoverableSqlPool_Value struct {
+	Properties any
+}
+
 type SqlserverRecoverableSqlPoolConfig struct {
-	SqlPoolName any
 }
 
 type SqlserverRecoverableSqlPoolAttrs struct {
-	// The properties of a recoverable sql pool
-	Properties any
-	SqlPoolName any
+	// Link to retrieve next page of results.
+	NextLink any
+	// A list of recoverable sql pool
+	Value any
 }
 
 var SqlserverRecoverableSqlPool = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlserver_recoverable_sql_pool",
 	Fields: ubx.FieldMap{
-		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
 	},
 }

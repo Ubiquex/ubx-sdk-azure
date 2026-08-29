@@ -7,46 +7,38 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiConfiguration_Properties:
-    # Allowed values of the configuration (also known as server parameter).
+class OpenapiConfiguration_Value_Properties:
     allowed_values: Any = None
-    # Data type of the configuration (also known as server parameter).
     data_type: Any = None
-    # Value assigned by default to the configuration (also known as server parameter).
     default_value: Any = None
-    # Description of the configuration (also known as server parameter).
     description: Any = None
-    # Link pointing to the documentation of the configuration (also known as server parameter).
     documentation_link: Any = None
-    # Indicates if the value assigned to the configuration (also known as server parameter) is pending a server restart for it to take effect.
     is_config_pending_restart: Any = None
-    # Indicates if it's a dynamic (true) or static (false) configuration (also known as server parameter). Static server parameters require a server restart after changing the value assigned to them, for the change to take effect. Dynamic server parameters do not require a server restart after changing the value assigned to them, for the change to take effect.
     is_dynamic_config: Any = None
-    # Indicates if it's a read-only (true) or modifiable (false) configuration (also known as server parameter).
     is_read_only: Any = None
-    # Source of the value assigned to the configuration (also known as server parameter). Required to update the value assigned to a specific modifiable configuration.
     source: Any = None
-    # Units in which the configuration (also known as server parameter) value is expressed.
     unit: Any = None
-    # Value of the configuration (also known as server parameter). Required to update the value assigned to a specific modifiable configuration.
     value: Any = None
 
 @dataclasses.dataclass
+class OpenapiConfiguration_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiConfigurationConfig:
-    configuration_name: Any = None
     server_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiConfigurationAttrs:
-    configuration_name: Any = None
-    # Properties of a configuration (also known as server parameter).
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
+    # The Configuration items on this page
+    value: Any = None
 
 OpenapiConfiguration = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_configuration",
     fields={
-        "configuration_name": ubx.FieldSpec(wire_name="configuration_name"),
         "server_name": ubx.FieldSpec(wire_name="server_name"),
     },
 )

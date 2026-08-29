@@ -7,16 +7,95 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class OpenapiWorkspace_Value_Identity_UserAssignedIdentities:
+    client_id: Any = None
+    principal_id: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkspace_Value_Identity:
+    principal_id: Any = None
+    tenant_id: Any = None
+    type: Any = None
+    user_assigned_identities: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkspace_Value_Properties_Failover:
+    last_modified_date: Any = None
+    state: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkspace_Value_Properties_Features:
+    associations: Any = None
+    cluster_resource_id: Any = None
+    data_authorization_mode: Any = None
+    disable_local_auth: Any = None
+    enable_data_export: Any = None
+    enable_log_access_using_only_resource_permissions: Any = None
+    immediate_purge_data_on30_days: Any = None
+    unified_sentinel_billing_only: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkspace_Value_Properties_PrivateLinkScopedResources:
+    resource_id: Any = None
+    scope_id: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkspace_Value_Properties_Replication:
+    created_date: Any = None
+    enabled: Any = None
+    last_modified_date: Any = None
+    location: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkspace_Value_Properties_Sku:
+    capacity_reservation_level: Any = None
+    last_sku_update: Any = None
+    name: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkspace_Value_Properties_WorkspaceCapping:
+    daily_quota_gb: Any = None
+    data_ingestion_status: Any = None
+    quota_next_reset_time: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkspace_Value_Properties:
+    created_date: Any = None
+    customer_id: Any = None
+    default_data_collection_rule_resource_id: Any = None
+    failover: Any = None
+    features: Any = None
+    force_cmk_for_query: Any = None
+    modified_date: Any = None
+    private_link_scoped_resources: Any = None
+    provisioning_state: Any = None
+    public_network_access_for_ingestion: Any = None
+    public_network_access_for_query: Any = None
+    replication: Any = None
+    retention_in_days: Any = None
+    sku: Any = None
+    workspace_capping: Any = None
+
+@dataclasses.dataclass
+class OpenapiWorkspace_Value:
+    etag: Any = None
+    identity: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiWorkspaceConfig:
-    workspace_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiWorkspaceAttrs:
-    workspace_name: Any = None
+    # The URL to get the next set of results.
+    next_link: Any = None
+    # A list of workspaces.
+    value: Any = None
 
 OpenapiWorkspace = ubx.DataSourceBinding(
     wire_type="azure_operationalinsights_openapi_workspace",
     fields={
-        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
     },
 )

@@ -3,50 +3,39 @@ package notificationhubs
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SharedAccessAuthorizationRuleResource_Properties struct {
-	// Gets a string that describes the claim type
+type SharedAccessAuthorizationRuleResource_Value_Properties struct {
 	ClaimType any
-	// Gets a string that describes the claim value
 	ClaimValue any
-	// Gets the created time for this rule
 	CreatedTime any
-	// Gets a string that describes the authorization rule.
 	KeyName any
-	// Gets the last modified time for this rule
 	ModifiedTime any
-	// Gets a base64-encoded 256-bit primary key for signing and validating the SAS token.
 	PrimaryKey any
-	// Gets the revision number for the rule
 	Revision any
-	// Gets or sets the rights associated with the rule.
 	Rights any
-	// Gets a base64-encoded 256-bit primary key for signing and validating the SAS token.
 	SecondaryKey any
 }
 
+type SharedAccessAuthorizationRuleResource_Value struct {
+	Location any
+	Properties any
+	Tags any
+}
+
 type SharedAccessAuthorizationRuleResourceConfig struct {
-	AuthorizationRuleName any
 	NamespaceName any
-	NotificationHubName any
 }
 
 type SharedAccessAuthorizationRuleResourceAttrs struct {
-	AuthorizationRuleName any
-	// Deprecated - only for compatibility.
-	Location any
 	NamespaceName any
-	NotificationHubName any
-	// SharedAccessAuthorizationRule properties.
-	Properties any
-	// Deprecated - only for compatibility.
-	Tags any
+	// Gets or sets link to the next set of results.
+	NextLink any
+	// Gets or sets result of the List AuthorizationRules operation.
+	Value any
 }
 
 var SharedAccessAuthorizationRuleResource = ubx.DataSourceBinding{
 	WireType: "azure_notificationhubs_shared_access_authorization_rule_resource",
 	Fields: ubx.FieldMap{
-		"AuthorizationRuleName": ubx.FieldSpec{WireName: "authorization_rule_name"},
 		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
-		"NotificationHubName": ubx.FieldSpec{WireName: "notification_hub_name"},
 	},
 }

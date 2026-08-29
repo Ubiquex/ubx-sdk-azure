@@ -4,8 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .operation_list import OperationList, OperationListConfig
-from .private_endpoint_connection_list_result import PrivateEndpointConnectionListResult, PrivateEndpointConnectionListResultConfig
-from .private_link_resource_list_result import PrivateLinkResourceListResult, PrivateLinkResourceListResultConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
 from .provider import Provider, ProviderConfig
-from .provider_list_result import ProviderListResult, ProviderListResultConfig

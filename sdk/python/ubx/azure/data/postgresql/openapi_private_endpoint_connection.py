@@ -7,29 +7,25 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiPrivateEndpointConnection_Properties_PrivateEndpoint:
-    # The ARM identifier for private endpoint.
+class OpenapiPrivateEndpointConnection_Value_Properties_PrivateEndpoint:
     id: Any = None
 
 @dataclasses.dataclass
-class OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState:
-    # A message indicating if changes on the service provider require any updates on the consumer.
+class OpenapiPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState:
     actions_required: Any = None
-    # The reason for approval/rejection of the connection.
     description: Any = None
-    # The private endpoint connection status.
     status: Any = None
 
 @dataclasses.dataclass
-class OpenapiPrivateEndpointConnection_Properties:
-    # The group ids for the private endpoint resource.
+class OpenapiPrivateEndpointConnection_Value_Properties:
     group_ids: Any = None
-    # The private endpoint resource.
     private_endpoint: Any = None
-    # A collection of information about the state of the connection between service consumer and provider.
     private_link_service_connection_state: Any = None
-    # The current provisioning state.
     provisioning_state: Any = None
+
+@dataclasses.dataclass
+class OpenapiPrivateEndpointConnection_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiPrivateEndpointConnectionConfig:
@@ -37,9 +33,11 @@ class OpenapiPrivateEndpointConnectionConfig:
 
 @dataclasses.dataclass
 class OpenapiPrivateEndpointConnectionAttrs:
-    # Properties of the private endpoint connection.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
+    # The PrivateEndpointConnection items on this page
+    value: Any = None
 
 OpenapiPrivateEndpointConnection = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_private_endpoint_connection",

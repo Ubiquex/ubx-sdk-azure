@@ -3,31 +3,31 @@ package relay
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type PrivateLinkResource_Properties struct {
-	// The private link resource group id.
+type PrivateLinkResource_Value_Properties struct {
 	GroupId any
-	// The private link resource required member names.
 	RequiredMembers any
-	// The private link resource Private link DNS zone name.
 	RequiredZoneNames any
+}
+
+type PrivateLinkResource_Value struct {
+	Properties any
 }
 
 type PrivateLinkResourceConfig struct {
 	NamespaceName any
-	PrivateLinkResourceName any
 }
 
 type PrivateLinkResourceAttrs struct {
 	NamespaceName any
-	PrivateLinkResourceName any
-	// Properties of PrivateLinkResource
-	Properties any
+	// A link for the next page of private link resources.
+	NextLink any
+	// A collection of private link resources
+	Value any
 }
 
 var PrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_relay_private_link_resource",
 	Fields: ubx.FieldMap{
 		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
-		"PrivateLinkResourceName": ubx.FieldSpec{WireName: "private_link_resource_name"},
 	},
 }

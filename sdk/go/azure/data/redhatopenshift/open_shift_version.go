@@ -3,24 +3,26 @@ package redhatopenshift
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenShiftVersion_Properties struct {
-	// Version represents the version to create the cluster at.
+type OpenShiftVersion_Value_Properties struct {
 	Version any
 }
 
+type OpenShiftVersion_Value struct {
+	Properties any
+}
+
 type OpenShiftVersionConfig struct {
-	OpenShiftVersion any
 }
 
 type OpenShiftVersionAttrs struct {
-	OpenShiftVersion any
-	// OpenShiftVersionProperties represents the properties of an OpenShiftVersion.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The OpenShiftVersion items on this page
+	Value any
 }
 
 var OpenShiftVersion = ubx.DataSourceBinding{
 	WireType: "azure_redhatopenshift_open_shift_version",
 	Fields: ubx.FieldMap{
-		"OpenShiftVersion": ubx.FieldSpec{WireName: "open_shift_version"},
 	},
 }

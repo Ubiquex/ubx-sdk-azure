@@ -4,10 +4,8 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .descendant_list_result import DescendantListResult, DescendantListResultConfig
-from .group_list_result import GroupListResult, GroupListResultConfig
+from .descendant_info import DescendantInfo, DescendantInfoConfig
+from .group_info import GroupInfo, GroupInfoConfig
 from .hierarchy_settings import HierarchySettings, HierarchySettingsConfig
-from .hierarchy_settings_list import HierarchySettingsList, HierarchySettingsListConfig
-from .list_subscription_under_management_group import ListSubscriptionUnderManagementGroup, ListSubscriptionUnderManagementGroupConfig
-from .microsoft_management import MicrosoftManagement, MicrosoftManagementConfig
-from .servicegroups_microsoft_management import ServicegroupsMicrosoftManagement, ServicegroupsMicrosoftManagementConfig
+from .hierarchy_settings_info import HierarchySettingsInfo, HierarchySettingsInfoConfig
+from .subscription_under_management_group import SubscriptionUnderManagementGroup, SubscriptionUnderManagementGroupConfig

@@ -7,44 +7,45 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags:
+class MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags:
     action: Any = None
     name: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules:
+class MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules_LogRules:
     filtering_tags: Any = None
     send_aad_logs: Any = None
     send_activity_logs: Any = None
     send_subscription_logs: Any = None
 
 @dataclasses.dataclass
-class MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_MetricRules:
+class MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules_MetricRules:
     filtering_tags: Any = None
     sending_metrics: Any = None
 
 @dataclasses.dataclass
-class MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules:
+class MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules:
     log_rules: Any = None
     metric_rules: Any = None
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList:
+class MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList:
     error: Any = None
     status: Any = None
     subscription_id: Any = None
     tag_rules: Any = None
 
 @dataclasses.dataclass
-class MonitoredSubscriptionProperties_Properties:
-    # List of subscriptions and the state of the monitoring.
+class MonitoredSubscriptionProperties_Value_Properties:
     monitored_subscription_list: Any = None
-    # The operation for the patch on the resource.
     operation: Any = None
-    # Provisioning state of the monitoring resource
     provisioning_state: Any = None
+
+@dataclasses.dataclass
+class MonitoredSubscriptionProperties_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class MonitoredSubscriptionPropertiesConfig:
@@ -53,8 +54,10 @@ class MonitoredSubscriptionPropertiesConfig:
 @dataclasses.dataclass
 class MonitoredSubscriptionPropertiesAttrs:
     monitor_name: Any = None
-    # The request to update subscriptions needed to be monitored by the Dynatrace monitor resource.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The MonitoredSubscriptionProperties items on this page
+    value: Any = None
 
 MonitoredSubscriptionProperties = ubx.DataSourceBinding(
     wire_type="azure_dynatrace_monitored_subscription_properties",

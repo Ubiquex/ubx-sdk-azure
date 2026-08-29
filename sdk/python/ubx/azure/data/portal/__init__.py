@@ -4,6 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .dashboard_list_result import DashboardListResult, DashboardListResultConfig
-from .microsoft_portal import MicrosoftPortal, MicrosoftPortalConfig
-from .tenantconfiguration_configuration_list_result import TenantconfigurationConfigurationListResult, TenantconfigurationConfigurationListResultConfig
+from .dashboard import Dashboard, DashboardConfig
+from .tenantconfiguration_configuration import TenantconfigurationConfiguration, TenantconfigurationConfigurationConfig

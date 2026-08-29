@@ -7,50 +7,61 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiModelVersion_Properties_Datasets:
+class OpenapiModelVersion_Value_Properties_Datasets:
     id: Any = None
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiModelVersion_Properties_Flavors:
+class OpenapiModelVersion_Value_Properties_Flavors:
     data: Any = None
 
 @dataclasses.dataclass
-class OpenapiModelVersion_Properties:
-    # Array of dataset references
+class OpenapiModelVersion_Value_Properties:
     datasets: Any = None
-    # Mapping of model flavors to their properties.
     flavors: Any = None
-    # Name of the training job which produced this model
     job_name: Any = None
-    # The storage format for this entity. Used for NCD.
     model_type: Any = None
-    # The URI path to the model contents.
     model_uri: Any = None
-    # Provisioning state of registry asset.
     provisioning_state: Any = None
-    # Stage in the model lifecycle assigned to this model
     stage: Any = None
 
 @dataclasses.dataclass
+class OpenapiModelVersion_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiModelVersionConfig:
-    name: Any = None
+    description: Any = None
+    list_view_type: Any = None
+    model_name: Any = None
+    properties: Any = None
+    registry_name: Any = None
+    tags: Any = None
     version: Any = None
-    workspace_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiModelVersionAttrs:
-    name: Any = None
-    # Model asset version details.
+    description: Any = None
+    list_view_type: Any = None
+    model_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     properties: Any = None
+    registry_name: Any = None
+    tags: Any = None
+    # The ModelVersion items on this page
+    value: Any = None
     version: Any = None
-    workspace_name: Any = None
 
 OpenapiModelVersion = ubx.DataSourceBinding(
     wire_type="azure_machinelearningservices_openapi_model_version",
     fields={
-        "name": ubx.FieldSpec(wire_name="name"),
+        "description": ubx.FieldSpec(wire_name="description"),
+        "list_view_type": ubx.FieldSpec(wire_name="list_view_type"),
+        "model_name": ubx.FieldSpec(wire_name="model_name"),
+        "properties": ubx.FieldSpec(wire_name="properties"),
+        "registry_name": ubx.FieldSpec(wire_name="registry_name"),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "version": ubx.FieldSpec(wire_name="version"),
-        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
     },
 )

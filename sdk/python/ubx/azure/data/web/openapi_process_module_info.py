@@ -7,52 +7,43 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiProcessModuleInfo_Properties:
-    # Base address. Used as module identifier in ARM resource URI.
+class OpenapiProcessModuleInfo_Value_Properties:
     base_address: Any = None
-    # File description.
     file_description: Any = None
-    # File name.
     file_name: Any = None
-    # File path.
     file_path: Any = None
-    # File version.
     file_version: Any = None
-    # HRef URI.
     href: Any = None
-    # Is debug?
     is_debug: Any = None
-    # Module language (locale).
     language: Any = None
-    # Module memory size.
     module_memory_size: Any = None
-    # Product name.
     product: Any = None
-    # Product version.
     product_version: Any = None
 
 @dataclasses.dataclass
+class OpenapiProcessModuleInfo_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiProcessModuleInfoConfig:
-    base_address: Any = None
     instance_id: Any = None
     name: Any = None
     process_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiProcessModuleInfoAttrs:
-    base_address: Any = None
     instance_id: Any = None
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     process_id: Any = None
-    # ProcessModuleInfo resource specific properties
-    properties: Any = None
+    # The ProcessModuleInfo items on this page
+    value: Any = None
 
 OpenapiProcessModuleInfo = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_process_module_info",
     fields={
-        "base_address": ubx.FieldSpec(wire_name="base_address"),
         "instance_id": ubx.FieldSpec(wire_name="instance_id"),
         "name": ubx.FieldSpec(wire_name="name"),
         "process_id": ubx.FieldSpec(wire_name="process_id"),

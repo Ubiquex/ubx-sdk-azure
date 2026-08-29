@@ -7,49 +7,41 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ExpressrouteExpressRouteLagMember_Properties:
-    # Administrative state of the physical port.
+class ExpressrouteExpressRouteLagMember_Value_Properties:
     admin_state: Any = None
-    # Cololocation for ExpressRoute member.
     colo_location: Any = None
-    # Physical fiber port type.
     connector_type: Any = None
-    # Name of Azure router interface.
     interface_name: Any = None
-    # Mapping between physical port to patch panel port.
     patch_panel_id: Any = None
-    # Provisioning states of a resource.
     provisioning_state: Any = None
-    # Mapping of physical patch panel to rack.
     rack_id: Any = None
+
+@dataclasses.dataclass
+class ExpressrouteExpressRouteLagMember_Value:
+    etag: Any = None
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLagMemberConfig:
     express_route_lag_name: Any = None
     link_name: Any = None
-    member_name: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLagMemberAttrs:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     express_route_lag_name: Any = None
-    # The unique identifier of the resource.
-    id: Any = None
     link_name: Any = None
-    member_name: Any = None
-    # Name of child member resource that is unique among child member resources of the parent.
-    name: Any = None
-    # Properties specific to ExpressRouteLagMember resources.
-    properties: Any = None
-    # The type of the resource.
-    type: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The ExpressRouteLagMember items on this page
+    value: Any = None
 
 ExpressrouteExpressRouteLagMember = ubx.DataSourceBinding(
     wire_type="azure_network_expressroute_express_route_lag_member",
     fields={
         "express_route_lag_name": ubx.FieldSpec(wire_name="express_route_lag_name"),
         "link_name": ubx.FieldSpec(wire_name="link_name"),
-        "member_name": ubx.FieldSpec(wire_name="member_name"),
     },
 )

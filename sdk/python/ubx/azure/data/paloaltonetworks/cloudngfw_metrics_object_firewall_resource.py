@@ -7,15 +7,15 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class CloudngfwMetricsObjectFirewallResource_Properties:
-    # Connection string of application insights resource
+class CloudngfwMetricsObjectFirewallResource_Value_Properties:
     application_insights_connection_string: Any = None
-    # Resource Id of application insights resource
     application_insights_resource_id: Any = None
-    # read only string representing last create or update
     pan_etag: Any = None
-    # Provisioning state of the firewall resource.
     provisioning_state: Any = None
+
+@dataclasses.dataclass
+class CloudngfwMetricsObjectFirewallResource_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class CloudngfwMetricsObjectFirewallResourceConfig:
@@ -24,8 +24,10 @@ class CloudngfwMetricsObjectFirewallResourceConfig:
 @dataclasses.dataclass
 class CloudngfwMetricsObjectFirewallResourceAttrs:
     firewall_name: Any = None
-    # Config for Metrics for firewall metrics
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The MetricsObjectFirewallResource items on this page
+    value: Any = None
 
 CloudngfwMetricsObjectFirewallResource = ubx.DataSourceBinding(
     wire_type="azure_paloaltonetworks_cloudngfw_metrics_object_firewall_resource",

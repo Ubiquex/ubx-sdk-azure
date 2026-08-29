@@ -7,34 +7,35 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class SharedPrivateLinkResource_Properties:
-    # The group id from the provider of resource the shared private link resource is for
+class SharedPrivateLinkResource_Value_Properties:
     group_id: Any = None
-    # The resource id of the resource the shared private link resource is for
     private_link_resource_id: Any = None
-    # Provisioning state of the resource.
     provisioning_state: Any = None
-    # The request message for requesting approval of the shared private link resource
     request_message: Any = None
-    # Status of the shared private link resource
     status: Any = None
 
 @dataclasses.dataclass
+class SharedPrivateLinkResource_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class SharedPrivateLinkResourceConfig:
+    replica_name: Any = None
     resource_name: Any = None
-    shared_private_link_resource_name: Any = None
 
 @dataclasses.dataclass
 class SharedPrivateLinkResourceAttrs:
-    # Describes the properties of an existing Shared Private Link Resource
-    properties: Any = None
+    # Request URL that can be used to query next page of private endpoint connections. Returned when the total number of requested private endpoint connections exceed maximum page size.
+    next_link: Any = None
+    replica_name: Any = None
     resource_name: Any = None
-    shared_private_link_resource_name: Any = None
+    # The list of the shared private link resources
+    value: Any = None
 
 SharedPrivateLinkResource = ubx.DataSourceBinding(
     wire_type="azure_webpubsub_shared_private_link_resource",
     fields={
+        "replica_name": ubx.FieldSpec(wire_name="replica_name"),
         "resource_name": ubx.FieldSpec(wire_name="resource_name"),
-        "shared_private_link_resource_name": ubx.FieldSpec(wire_name="shared_private_link_resource_name"),
     },
 )

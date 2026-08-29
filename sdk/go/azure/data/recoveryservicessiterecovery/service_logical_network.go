@@ -3,38 +3,36 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServiceLogicalNetwork_Properties struct {
-	// The Friendly Name.
+type ServiceLogicalNetwork_Value_Properties struct {
 	FriendlyName any
-	// A value indicating whether logical network definitions are isolated.
 	LogicalNetworkDefinitionsStatus any
-	// A value indicating whether logical network is used as private test network by test failover.
 	LogicalNetworkUsage any
-	// A value indicating whether Network Virtualization is enabled for the logical network.
 	NetworkVirtualizationStatus any
+}
+
+type ServiceLogicalNetwork_Value struct {
+	Location any
+	Properties any
 }
 
 type ServiceLogicalNetworkConfig struct {
 	FabricName any
-	LogicalNetworkName any
 	ResourceName any
 }
 
 type ServiceLogicalNetworkAttrs struct {
 	FabricName any
-	// Resource Location
-	Location any
-	LogicalNetworkName any
-	// Logical Network Properties.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ResourceName any
+	// The LogicalNetwork items on this page
+	Value any
 }
 
 var ServiceLogicalNetwork = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_logical_network",
 	Fields: ubx.FieldMap{
 		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"LogicalNetworkName": ubx.FieldSpec{WireName: "logical_network_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

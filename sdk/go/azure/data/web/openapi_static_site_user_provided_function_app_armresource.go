@@ -3,33 +3,35 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiStaticSiteUserProvidedFunctionAppArmresource_Properties struct {
-	// The date and time on which the function app was registered with the static site.
+type OpenapiStaticSiteUserProvidedFunctionAppArmresource_Value_Properties struct {
 	CreatedOn any
-	// The region of the function app registered with the static site
 	FunctionAppRegion any
-	// The resource id of the function app registered with the static site
 	FunctionAppResourceId any
 }
 
+type OpenapiStaticSiteUserProvidedFunctionAppArmresource_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiStaticSiteUserProvidedFunctionAppArmresourceConfig struct {
-	FunctionAppName any
+	EnvironmentName any
 	Name any
 }
 
 type OpenapiStaticSiteUserProvidedFunctionAppArmresourceAttrs struct {
-	FunctionAppName any
-	// Kind of resource.
-	Kind any
+	EnvironmentName any
 	Name any
-	// StaticSiteUserProvidedFunctionAppARMResource resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The StaticSiteUserProvidedFunctionAppARMResource items on this page
+	Value any
 }
 
 var OpenapiStaticSiteUserProvidedFunctionAppArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_static_site_user_provided_function_app_armresource",
 	Fields: ubx.FieldMap{
-		"FunctionAppName": ubx.FieldSpec{WireName: "function_app_name"},
+		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

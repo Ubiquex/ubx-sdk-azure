@@ -3,29 +3,36 @@ package oracle
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiGiMinorVersion_Properties struct {
-	// The [OCID](/Content/General/Concepts/identifiers.htm) of the resource.
+type OpenapiGiMinorVersion_Value_Properties struct {
 	GridImageOcid any
-	// A valid Oracle Grid Infrastructure (GI) software version.
 	Version any
 }
 
+type OpenapiGiMinorVersion_Value struct {
+	Properties any
+}
+
 type OpenapiGiMinorVersionConfig struct {
-	GiMinorVersionName any
 	Giversionname any
+	ShapeFamily any
+	Zone any
 }
 
 type OpenapiGiMinorVersionAttrs struct {
-	GiMinorVersionName any
 	Giversionname any
-	// The Oracle Grid Infrastructure (GI) minor version properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	ShapeFamily any
+	// The GiMinorVersion items on this page
+	Value any
+	Zone any
 }
 
 var OpenapiGiMinorVersion = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_gi_minor_version",
 	Fields: ubx.FieldMap{
-		"GiMinorVersionName": ubx.FieldSpec{WireName: "gi_minor_version_name"},
 		"Giversionname": ubx.FieldSpec{WireName: "giversionname"},
+		"ShapeFamily": ubx.FieldSpec{WireName: "shape_family"},
+		"Zone": ubx.FieldSpec{WireName: "zone"},
 	},
 }

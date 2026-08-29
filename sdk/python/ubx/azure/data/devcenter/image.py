@@ -7,55 +7,47 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class Image_Properties_RecommendedMachineConfiguration_Memory:
-    # Maximum value.
+class Image_Value_Properties_RecommendedMachineConfiguration_Memory:
     max: Any = None
-    # Minimum value.
     min: Any = None
 
 @dataclasses.dataclass
-class Image_Properties_RecommendedMachineConfiguration:
-    # Properties for a range of values.
+class Image_Value_Properties_RecommendedMachineConfiguration:
     memory: Any = None
-    # Properties for a range of values.
     v_cpus: Any = None
 
 @dataclasses.dataclass
-class Image_Properties:
-    # The description of the image.
+class Image_Value_Properties:
     description: Any = None
-    # Indicates whether hibernate is enabled/disabled.
     hibernate_support: Any = None
-    # The name of the image offer.
     offer: Any = None
-    # Provisioning state of the resource.
     provisioning_state: Any = None
-    # The publisher of the image.
     publisher: Any = None
-    # Properties for a recommended machine configuration.
     recommended_machine_configuration: Any = None
-    # The SKU name for the image.
     sku: Any = None
+
+@dataclasses.dataclass
+class Image_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class ImageConfig:
     dev_center_name: Any = None
     gallery_name: Any = None
-    image_name: Any = None
 
 @dataclasses.dataclass
 class ImageAttrs:
     dev_center_name: Any = None
     gallery_name: Any = None
-    image_name: Any = None
-    # Properties of an image.
-    properties: Any = None
+    # URL to get the next set of results if there are any.
+    next_link: Any = None
+    # Current page of results.
+    value: Any = None
 
 Image = ubx.DataSourceBinding(
     wire_type="azure_devcenter_image",
     fields={
         "dev_center_name": ubx.FieldSpec(wire_name="dev_center_name"),
         "gallery_name": ubx.FieldSpec(wire_name="gallery_name"),
-        "image_name": ubx.FieldSpec(wire_name="image_name"),
     },
 )

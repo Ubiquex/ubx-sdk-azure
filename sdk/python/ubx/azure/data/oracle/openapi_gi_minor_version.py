@@ -7,28 +7,35 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiGiMinorVersion_Properties:
-    # The [OCID](/Content/General/Concepts/identifiers.htm) of the resource.
+class OpenapiGiMinorVersion_Value_Properties:
     grid_image_ocid: Any = None
-    # A valid Oracle Grid Infrastructure (GI) software version.
     version: Any = None
 
 @dataclasses.dataclass
+class OpenapiGiMinorVersion_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiGiMinorVersionConfig:
-    gi_minor_version_name: Any = None
     giversionname: Any = None
+    shape_family: Any = None
+    zone: Any = None
 
 @dataclasses.dataclass
 class OpenapiGiMinorVersionAttrs:
-    gi_minor_version_name: Any = None
     giversionname: Any = None
-    # The Oracle Grid Infrastructure (GI) minor version properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    shape_family: Any = None
+    # The GiMinorVersion items on this page
+    value: Any = None
+    zone: Any = None
 
 OpenapiGiMinorVersion = ubx.DataSourceBinding(
     wire_type="azure_oracle_openapi_gi_minor_version",
     fields={
-        "gi_minor_version_name": ubx.FieldSpec(wire_name="gi_minor_version_name"),
         "giversionname": ubx.FieldSpec(wire_name="giversionname"),
+        "shape_family": ubx.FieldSpec(wire_name="shape_family"),
+        "zone": ubx.FieldSpec(wire_name="zone"),
     },
 )

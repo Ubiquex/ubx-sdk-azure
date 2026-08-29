@@ -3,31 +3,30 @@ package vmware
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type VirtualMachine_Properties struct {
-	// Display name of the VM.
+type VirtualMachine_Value_Properties struct {
 	DisplayName any
-	// Path to virtual machine's folder starting from datacenter virtual machine folder
 	FolderPath any
-	// vCenter managed object reference ID of the virtual machine
 	MoRefId any
-	// Virtual Machine provisioning state
 	ProvisioningState any
-	// Virtual Machine Restrict Movement state
 	RestrictMovement any
+}
+
+type VirtualMachine_Value struct {
+	Properties any
 }
 
 type VirtualMachineConfig struct {
 	ClusterName any
 	PrivateCloudName any
-	VirtualMachineId any
 }
 
 type VirtualMachineAttrs struct {
 	ClusterName any
+	// The link to the next page of items
+	NextLink any
 	PrivateCloudName any
-	// Virtual Machine Properties
-	Properties any
-	VirtualMachineId any
+	// The VirtualMachine items on this page
+	Value any
 }
 
 var VirtualMachine = ubx.DataSourceBinding{
@@ -35,6 +34,5 @@ var VirtualMachine = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
-		"VirtualMachineId": ubx.FieldSpec{WireName: "virtual_machine_id"},
 	},
 }

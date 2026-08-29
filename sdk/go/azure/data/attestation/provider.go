@@ -3,47 +3,62 @@ package attestation
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+type Provider_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
+type Provider_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
 	Id any
 }
 
-type Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+type Provider_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
 	Description any
 	Status any
 }
 
-type Provider_Properties_PrivateEndpointConnections_Properties struct {
+type Provider_Value_Properties_PrivateEndpointConnections_Properties struct {
 	PrivateEndpoint any
 	PrivateLinkServiceConnectionState any
 	ProvisioningState any
 }
 
-type Provider_Properties_PrivateEndpointConnections struct {
+type Provider_Value_Properties_PrivateEndpointConnections struct {
 	Properties any
 }
 
-type Provider_Properties struct {
-	// Gets the uri of attestation service
+type Provider_Value_Properties struct {
 	AttestUri any
-	// List of private endpoint connections associated with the attestation provider.
 	PrivateEndpointConnections any
-	// Controls whether traffic from the public network is allowed to access the Attestation Provider APIs.
 	PublicNetworkAccess any
-	// Status of attestation service.
 	Status any
-	// The setting that controls whether authentication is enabled or disabled for TPM Attestation REST APIs.
 	TpmAttestationAuthentication any
-	// Trust model for the attestation provider.
 	TrustModel any
+}
+
+type Provider_Value struct {
+	Properties any
 }
 
 type ProviderConfig struct {
 }
 
 type ProviderAttrs struct {
-	// Status of attestation service.
-	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Attestation Provider array.
+	Value any
 }
 
 var Provider = ubx.DataSourceBinding{

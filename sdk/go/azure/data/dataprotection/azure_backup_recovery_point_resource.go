@@ -3,21 +3,23 @@ package dataprotection
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type AzureBackupRecoveryPointResource_Properties struct {
+type AzureBackupRecoveryPointResource_Value_Properties struct {
 	ObjectType any
+}
+
+type AzureBackupRecoveryPointResource_Value struct {
+	Properties any
 }
 
 type AzureBackupRecoveryPointResourceConfig struct {
 	BackupInstanceName any
-	RecoveryPointId any
 	VaultName any
 }
 
 type AzureBackupRecoveryPointResourceAttrs struct {
 	BackupInstanceName any
-	// Azure backup recoveryPoint
-	Properties any
-	RecoveryPointId any
+	// List of resources.
+	Value any
 	VaultName any
 }
 
@@ -25,7 +27,6 @@ var AzureBackupRecoveryPointResource = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_azure_backup_recovery_point_resource",
 	Fields: ubx.FieldMap{
 		"BackupInstanceName": ubx.FieldSpec{WireName: "backup_instance_name"},
-		"RecoveryPointId": ubx.FieldSpec{WireName: "recovery_point_id"},
 		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

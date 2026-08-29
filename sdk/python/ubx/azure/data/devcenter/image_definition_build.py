@@ -7,31 +7,26 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ImageDefinitionBuild_Properties_ErrorDetails:
-    # An identifier for the error.
+class ImageDefinitionBuild_Value_Properties_ErrorDetails:
     code: Any = None
-    # A message describing the error.
     message: Any = None
 
 @dataclasses.dataclass
-class ImageDefinitionBuild_Properties_ImageReference:
-    # The actual version of the image after use. When id references a gallery image latest version, this will indicate the actual version in use.
+class ImageDefinitionBuild_Value_Properties_ImageReference:
     exact_version: Any = None
-    # Image ID, or Image version ID. When Image ID is provided, its latest version will be used.
     id: Any = None
 
 @dataclasses.dataclass
-class ImageDefinitionBuild_Properties:
-    # End time of the task group.
+class ImageDefinitionBuild_Value_Properties:
     end_time: Any = None
-    # Image creation error details
     error_details: Any = None
-    # Image reference information
     image_reference: Any = None
-    # Start time of the task group.
     start_time: Any = None
-    # The state of an Image Definition Build.
     status: Any = None
+
+@dataclasses.dataclass
+class ImageDefinitionBuild_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class ImageDefinitionBuildConfig:
@@ -39,8 +34,10 @@ class ImageDefinitionBuildConfig:
 
 @dataclasses.dataclass
 class ImageDefinitionBuildAttrs:
-    # Properties of an Image Definition Build.
-    properties: Any = None
+    # URL to get the next set of results if there are any.
+    next_link: Any = None
+    # Current page of results.
+    value: Any = None
 
 ImageDefinitionBuild = ubx.DataSourceBinding(
     wire_type="azure_devcenter_image_definition_build",

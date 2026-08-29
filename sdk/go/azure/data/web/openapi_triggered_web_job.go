@@ -3,72 +3,52 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiTriggeredWebJob_Properties_LatestRun struct {
-	// Job duration.
+type OpenapiTriggeredWebJob_Value_Properties_LatestRun struct {
 	Duration any
-	// End time.
 	EndTime any
-	// Error URL.
 	ErrorUrl any
-	// Job name.
 	JobName any
-	// Output URL.
 	OutputUrl any
-	// Start time.
 	StartTime any
-	// Job status.
 	Status any
-	// Job trigger.
 	Trigger any
-	// Job URL.
 	Url any
-	// Job ID.
 	WebJobId any
-	// Job name.
 	WebJobName any
 }
 
-type OpenapiTriggeredWebJob_Properties struct {
-	// Error information.
+type OpenapiTriggeredWebJob_Value_Properties struct {
 	Error any
-	// Extra Info URL.
 	ExtraInfoUrl any
-	// History URL.
 	HistoryUrl any
-	// Triggered Web Job Run Information.
 	LatestRun any
-	// Property to allow or block all public traffic. Allowed Values: 'Enabled', 'Disabled' or an empty string.
 	PublicNetworkAccess any
-	// Run command.
 	RunCommand any
-	// Scheduler Logs URL.
 	SchedulerLogsUrl any
-	// Job settings.
 	Settings any
-	// Checks if Customer provided storage account is required
 	StorageAccountRequired any
-	// Job URL.
 	Url any
-	// Using SDK?
 	UsingSdk any
-	// Job type.
 	WebJobType any
+}
+
+type OpenapiTriggeredWebJob_Value struct {
+	Kind any
+	Properties any
 }
 
 type OpenapiTriggeredWebJobConfig struct {
 	Name any
 	Slot any
-	WebJobName any
 }
 
 type OpenapiTriggeredWebJobAttrs struct {
-	// Kind of resource.
-	Kind any
 	Name any
-	// TriggeredWebJob resource specific properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	Slot any
-	WebJobName any
+	// The TriggeredWebJob items on this page
+	Value any
 }
 
 var OpenapiTriggeredWebJob = ubx.DataSourceBinding{
@@ -76,6 +56,5 @@ var OpenapiTriggeredWebJob = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Slot": ubx.FieldSpec{WireName: "slot"},
-		"WebJobName": ubx.FieldSpec{WireName: "web_job_name"},
 	},
 }

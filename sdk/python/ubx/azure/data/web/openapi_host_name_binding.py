@@ -7,47 +7,37 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiHostNameBinding_Properties:
-    # Azure resource name.
+class OpenapiHostNameBinding_Value_Properties:
     azure_resource_name: Any = None
-    # Azure resource type.
     azure_resource_type: Any = None
-    # Custom DNS record type.
     custom_host_name_dns_record_type: Any = None
-    # Fully qualified ARM domain resource URI.
     domain_id: Any = None
-    # Hostname type.
     host_name_type: Any = None
-    # App Service app name.
     site_name: Any = None
-    # SSL type
     ssl_state: Any = None
-    # SSL certificate thumbprint
     thumbprint: Any = None
-    # Virtual IP address assigned to the hostname if IP based SSL is enabled.
     virtual_ip: Any = None
 
 @dataclasses.dataclass
+class OpenapiHostNameBinding_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiHostNameBindingConfig:
-    host_name: Any = None
     name: Any = None
-    slot: Any = None
 
 @dataclasses.dataclass
 class OpenapiHostNameBindingAttrs:
-    host_name: Any = None
-    # Kind of resource.
-    kind: Any = None
     name: Any = None
-    # HostNameBinding resource specific properties
-    properties: Any = None
-    slot: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The HostNameBinding items on this page
+    value: Any = None
 
 OpenapiHostNameBinding = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_host_name_binding",
     fields={
-        "host_name": ubx.FieldSpec(wire_name="host_name"),
         "name": ubx.FieldSpec(wire_name="name"),
-        "slot": ubx.FieldSpec(wire_name="slot"),
     },
 )

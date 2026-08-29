@@ -7,68 +7,48 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VirtualMachineInstance_ExtendedLocation:
-    # The extended location name.
+class VirtualMachineInstance_Value_ExtendedLocation:
     name: Any = None
-    # The extended location type.
     type: Any = None
 
 @dataclasses.dataclass
-class VirtualMachineInstance_Properties_AvailabilitySets:
+class VirtualMachineInstance_Value_Properties_AvailabilitySets:
     id: Any = None
     name: Any = None
 
 @dataclasses.dataclass
-class VirtualMachineInstance_Properties_HardwareProfile:
-    # Gets or sets the number of vCPUs for the vm.
+class VirtualMachineInstance_Value_Properties_HardwareProfile:
     cpu_count: Any = None
-    # Dynamic memory enabled.
     dynamic_memory_enabled: Any = None
-    # Gets or sets the max dynamic memory for the vm.
     dynamic_memory_max_mb: Any = None
-    # Gets or sets the min dynamic memory for the vm.
     dynamic_memory_min_mb: Any = None
-    # Highly available.
     is_highly_available: Any = None
-    # Limit CPU for migration.
     limit_cpu_for_migration: Any = None
-    # MemoryMB is the size of a virtual machine's memory, in MB.
     memory_mb: Any = None
 
 @dataclasses.dataclass
-class VirtualMachineInstance_Properties_InfrastructureProfile_Checkpoints:
+class VirtualMachineInstance_Value_Properties_InfrastructureProfile_Checkpoints:
     checkpoint_id: Any = None
     description: Any = None
     name: Any = None
     parent_checkpoint_id: Any = None
 
 @dataclasses.dataclass
-class VirtualMachineInstance_Properties_InfrastructureProfile:
-    # Gets or sets the bios guid for the vm.
+class VirtualMachineInstance_Value_Properties_InfrastructureProfile:
     bios_guid: Any = None
-    # Type of checkpoint supported for the vm.
     checkpoint_type: Any = None
-    # Checkpoints in the vm.
     checkpoints: Any = None
-    # ARM Id of the cloud resource to use for deploying the vm.
     cloud_id: Any = None
-    # Gets or sets the generation for the vm.
     generation: Any = None
-    # Gets or sets the inventory Item ID for the resource.
     inventory_item_id: Any = None
-    # Defines the resource properties.
     last_restored_vmcheckpoint: Any = None
-    # ARM Id of the template resource to use for deploying the vm.
     template_id: Any = None
-    # Unique ID of the virtual machine.
     uuid: Any = None
-    # VMName is the name of VM on the SCVmm server.
     vm_name: Any = None
-    # ARM Id of the vmmServer resource in which this resource resides.
     vmm_server_id: Any = None
 
 @dataclasses.dataclass
-class VirtualMachineInstance_Properties_NetworkProfile_NetworkInterfaces:
+class VirtualMachineInstance_Value_Properties_NetworkProfile_NetworkInterfaces:
     display_name: Any = None
     ipv4_address_type: Any = None
     ipv4_addresses: Any = None
@@ -82,41 +62,27 @@ class VirtualMachineInstance_Properties_NetworkProfile_NetworkInterfaces:
     virtual_network_id: Any = None
 
 @dataclasses.dataclass
-class VirtualMachineInstance_Properties_NetworkProfile:
-    # Gets or sets the list of network interfaces associated with the virtual machine.
+class VirtualMachineInstance_Value_Properties_NetworkProfile:
     network_interfaces: Any = None
 
 @dataclasses.dataclass
-class VirtualMachineInstance_Properties_OsProfile:
-    # Admin password of the virtual machine.
+class VirtualMachineInstance_Value_Properties_OsProfile:
     admin_password: Any = None
-    # Gets or sets the admin username.
     admin_username: Any = None
-    # Gets or sets computer name.
     computer_name: Any = None
-    # Gets or sets the domain name.
     domain_name: Any = None
-    # Password of the domain the VM has to join.
     domain_password: Any = None
-    # Gets or sets the domain username.
     domain_username: Any = None
-    # Gets os sku.
     os_sku: Any = None
-    # Virtual machine operating system type.
     os_type: Any = None
-    # Gets os version.
     os_version: Any = None
-    # Gets or sets the product key.Input format xxxxx-xxxxx-xxxxx-xxxxx-xxxxx
     product_key: Any = None
-    # Get or sets the commands to be run once at the time of creation separated by semicolons.
     run_once_commands: Any = None
-    # Gets or sets the index value of the timezone.
     timezone: Any = None
-    # Gets or sets the workgroup.
     workgroup: Any = None
 
 @dataclasses.dataclass
-class VirtualMachineInstance_Properties_StorageProfile_Disks:
+class VirtualMachineInstance_Value_Properties_StorageProfile_Disks:
     bus: Any = None
     bus_type: Any = None
     create_diff_disk: Any = None
@@ -133,28 +99,24 @@ class VirtualMachineInstance_Properties_StorageProfile_Disks:
     volume_type: Any = None
 
 @dataclasses.dataclass
-class VirtualMachineInstance_Properties_StorageProfile:
-    # Gets or sets the list of virtual disks associated with the virtual machine.
+class VirtualMachineInstance_Value_Properties_StorageProfile:
     disks: Any = None
 
 @dataclasses.dataclass
-class VirtualMachineInstance_Properties:
-    # Availability Sets in vm.
+class VirtualMachineInstance_Value_Properties:
     availability_sets: Any = None
-    # Defines the resource properties.
     hardware_profile: Any = None
-    # Specifies the vmmServer infrastructure specific settings for the virtual machine instance.
     infrastructure_profile: Any = None
-    # Defines the resource properties.
     network_profile: Any = None
-    # Defines the resource properties.
     os_profile: Any = None
-    # Gets the power state of the virtual machine.
     power_state: Any = None
-    # The provisioning state of the resource.
     provisioning_state: Any = None
-    # Defines the resource properties.
     storage_profile: Any = None
+
+@dataclasses.dataclass
+class VirtualMachineInstance_Value:
+    extended_location: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class VirtualMachineInstanceConfig:
@@ -162,11 +124,11 @@ class VirtualMachineInstanceConfig:
 
 @dataclasses.dataclass
 class VirtualMachineInstanceAttrs:
-    # The extended location.
-    extended_location: Any = None
-    # Defines the resource properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     resource_uri: Any = None
+    # The VirtualMachineInstance items on this page
+    value: Any = None
 
 VirtualMachineInstance = ubx.DataSourceBinding(
     wire_type="azure_scvmm_virtual_machine_instance",

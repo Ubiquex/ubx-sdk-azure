@@ -7,19 +7,22 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class PrivateLinkResource_Properties:
-    # The private link resource group id.
+class PrivateLinkResource_Value_Properties:
     group_id: Any = None
-    # The private link resource required member names.
     required_members: Any = None
-    # The list of required DNS zone names of the private link resource.
     required_zone_names: Any = None
+
+@dataclasses.dataclass
+class PrivateLinkResource_Value:
+    id: Any = None
+    name: Any = None
+    properties: Any = None
+    type: Any = None
 
 @dataclasses.dataclass
 class PrivateLinkResourceConfig:
     api_version: Any = None
     config_store_name: Any = None
-    group_name: Any = None
     resource_group_name: Any = None
     subscription_id: Any = None
 
@@ -27,24 +30,18 @@ class PrivateLinkResourceConfig:
 class PrivateLinkResourceAttrs:
     api_version: Any = None
     config_store_name: Any = None
-    group_name: Any = None
-    # The resource ID.
-    id: Any = None
-    # The name of the resource.
-    name: Any = None
-    # Properties of a private link resource.
-    properties: Any = None
+    # The URI that can be used to request the next set of paged results.
+    next_link: Any = None
     resource_group_name: Any = None
     subscription_id: Any = None
-    # The type of the resource.
-    type: Any = None
+    # The collection value.
+    value: Any = None
 
 PrivateLinkResource = ubx.DataSourceBinding(
     wire_type="azure_appconfiguration_private_link_resource",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
         "config_store_name": ubx.FieldSpec(wire_name="config_store_name"),
-        "group_name": ubx.FieldSpec(wire_name="group_name"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },

@@ -3,20 +3,17 @@ package servicebus
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type NetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter struct {
-	// Fully qualified identifier of the resource
+type NetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter struct {
 	Id any
-	// Location of the resource
 	Location any
-	// Guid of the resource
 	PerimeterGuid any
 }
 
-type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions struct {
+type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties_Subscriptions struct {
 	Id any
 }
 
-type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
+type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties struct {
 	AddressPrefixes any
 	Direction any
 	FullyQualifiedDomainNames any
@@ -24,78 +21,66 @@ type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Proper
 	Subscriptions any
 }
 
-type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
+type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules struct {
 	Id any
 	Name any
 	Properties any
 	Type any
 }
 
-type NetworkSecurityPerimeterConfiguration_Properties_Profile struct {
-	// List of Access Rules
+type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile struct {
 	AccessRules any
-	// Current access rules version
 	AccessRulesVersion any
-	// Name of the resource
 	Name any
 }
 
-type NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
+type NetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties struct {
 	Description any
 	IssueType any
 }
 
-type NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
+type NetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues struct {
 	Name any
 	Properties any
 }
 
-type NetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation struct {
-	// Access Mode of the resource association
+type NetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation struct {
 	AccessMode any
-	// Name of the resource association
 	Name any
 }
 
-type NetworkSecurityPerimeterConfiguration_Properties struct {
-	// Indicates that the NSP controls related to backing association are only applicable to a specific feature in backing resource's data plane.
+type NetworkSecurityPerimeterConfiguration_Value_Properties struct {
 	ApplicableFeatures any
-	// True if the ServiceBus namespace is backed by another Azure resource and not visible to end users.
 	IsBackingResource any
-	// NetworkSecurityPerimeter related information
 	NetworkSecurityPerimeter any
-	// Source Resource Association name
 	ParentAssociationName any
-	// Information about current network profile
 	Profile any
-	// List of Provisioning Issues if any
 	ProvisioningIssues any
-	// Provisioning state of NetworkSecurityPerimeter configuration propagation
 	ProvisioningState any
-	// Information about resource association
 	ResourceAssociation any
-	// ARM Id of source resource
 	SourceResourceId any
+}
+
+type NetworkSecurityPerimeterConfiguration_Value struct {
+	Location any
+	Properties any
 }
 
 type NetworkSecurityPerimeterConfigurationConfig struct {
 	NamespaceName any
-	ResourceAssociationName any
 }
 
 type NetworkSecurityPerimeterConfigurationAttrs struct {
-	// The geo-location where the resource lives
-	Location any
 	NamespaceName any
-	// Properties of NetworkSecurityPerimeterConfiguration
-	Properties any
-	ResourceAssociationName any
+	// The link to the next page of items
+	NextLink any
+	// The NetworkSecurityPerimeterConfiguration items on this page
+	Value any
 }
 
 var NetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_servicebus_network_security_perimeter_configuration",
 	Fields: ubx.FieldMap{
 		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
-		"ResourceAssociationName": ubx.FieldSpec{WireName: "resource_association_name"},
 	},
 }

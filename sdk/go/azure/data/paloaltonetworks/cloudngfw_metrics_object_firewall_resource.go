@@ -3,15 +3,15 @@ package paloaltonetworks
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type CloudngfwMetricsObjectFirewallResource_Properties struct {
-	// Connection string of application insights resource
+type CloudngfwMetricsObjectFirewallResource_Value_Properties struct {
 	ApplicationInsightsConnectionString any
-	// Resource Id of application insights resource
 	ApplicationInsightsResourceId any
-	// read only string representing last create or update
 	PanEtag any
-	// Provisioning state of the firewall resource.
 	ProvisioningState any
+}
+
+type CloudngfwMetricsObjectFirewallResource_Value struct {
+	Properties any
 }
 
 type CloudngfwMetricsObjectFirewallResourceConfig struct {
@@ -20,8 +20,10 @@ type CloudngfwMetricsObjectFirewallResourceConfig struct {
 
 type CloudngfwMetricsObjectFirewallResourceAttrs struct {
 	FirewallName any
-	// Config for Metrics for firewall metrics
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The MetricsObjectFirewallResource items on this page
+	Value any
 }
 
 var CloudngfwMetricsObjectFirewallResource = ubx.DataSourceBinding{

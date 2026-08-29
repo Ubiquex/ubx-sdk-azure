@@ -3,35 +3,32 @@ package automation
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiJobStream_Properties struct {
-	// Gets or sets the id of the job stream.
+type OpenapiJobStream_Value_Properties struct {
 	JobStreamId any
-	// Gets or sets the stream text.
 	StreamText any
-	// Gets or sets the stream type.
 	StreamType any
-	// Gets or sets the summary.
 	Summary any
-	// Gets or sets the creation time of the job.
 	Time any
-	// Gets or sets the values of the job stream.
 	Value any
+}
+
+type OpenapiJobStream_Value struct {
+	Id any
+	Properties any
 }
 
 type OpenapiJobStreamConfig struct {
 	AutomationAccountName any
 	JobName any
-	JobStreamId any
 }
 
 type OpenapiJobStreamAttrs struct {
 	AutomationAccountName any
-	// Gets or sets the id of the resource.
-	Id any
 	JobName any
-	JobStreamId any
-	// Definition of the job stream.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The JobStream items on this page
+	Value any
 }
 
 var OpenapiJobStream = ubx.DataSourceBinding{
@@ -39,6 +36,5 @@ var OpenapiJobStream = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
 		"JobName": ubx.FieldSpec{WireName: "job_name"},
-		"JobStreamId": ubx.FieldSpec{WireName: "job_stream_id"},
 	},
 }

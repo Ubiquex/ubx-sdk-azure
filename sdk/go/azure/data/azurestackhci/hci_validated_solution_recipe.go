@@ -3,18 +3,16 @@ package azurestackhci
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type HciValidatedSolutionRecipe_Properties_RecipeContent_Capabilities_ClusterCapabilities struct {
+type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Capabilities_ClusterCapabilities struct {
 	CapabilityName any
 }
 
-type HciValidatedSolutionRecipe_Properties_RecipeContent_Capabilities struct {
-	// Represents the cluster capabilities.
+type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Capabilities struct {
 	ClusterCapabilities any
-	// Represents the node capabilities.
 	NodeCapabilities any
 }
 
-type HciValidatedSolutionRecipe_Properties_RecipeContent_Components_Metadata struct {
+type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components_Metadata struct {
 	Catalog any
 	EnableAutomaticUpgrade any
 	ExpectedHash any
@@ -28,14 +26,14 @@ type HciValidatedSolutionRecipe_Properties_RecipeContent_Components_Metadata str
 	Ring any
 }
 
-type HciValidatedSolutionRecipe_Properties_RecipeContent_Components_Payloads struct {
+type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components_Payloads struct {
 	FileName any
 	Hash any
 	Identifier any
 	Url any
 }
 
-type HciValidatedSolutionRecipe_Properties_RecipeContent_Components struct {
+type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components struct {
 	InstallOrder any
 	Metadata any
 	Name any
@@ -45,42 +43,38 @@ type HciValidatedSolutionRecipe_Properties_RecipeContent_Components struct {
 	Type any
 }
 
-type HciValidatedSolutionRecipe_Properties_RecipeContent_Info struct {
-	// Represents the solution type for which this validated solution recipe is applicable.
+type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Info struct {
 	SolutionType any
-	// Represents the version for which this validated solution recipe is applicable.
 	Version any
 }
 
-type HciValidatedSolutionRecipe_Properties_RecipeContent struct {
-	// Represents capabilities available in a validated solution recipe.
+type HciValidatedSolutionRecipe_Value_Properties_RecipeContent struct {
 	Capabilities any
-	// Represents components available in a validated solution recipe.
 	Components any
-	// Represents information about a validated solution recipe.
 	Info any
 }
 
-type HciValidatedSolutionRecipe_Properties struct {
-	// Represents contents of a validated solution recipe resource.
+type HciValidatedSolutionRecipe_Value_Properties struct {
 	RecipeContent any
-	// Represents the signature of the recipe, to be used for ensuring its integrity.
 	Signature any
 }
 
+type HciValidatedSolutionRecipe_Value struct {
+	Properties any
+}
+
 type HciValidatedSolutionRecipeConfig struct {
-	ValidatedSolutionRecipeName any
 }
 
 type HciValidatedSolutionRecipeAttrs struct {
-	// Represents properties of a validated solution recipe resource.
-	Properties any
-	ValidatedSolutionRecipeName any
+	// The link to the next page of items
+	NextLink any
+	// The ValidatedSolutionRecipe items on this page
+	Value any
 }
 
 var HciValidatedSolutionRecipe = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_hci_validated_solution_recipe",
 	Fields: ubx.FieldMap{
-		"ValidatedSolutionRecipeName": ubx.FieldSpec{WireName: "validated_solution_recipe_name"},
 	},
 }

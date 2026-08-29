@@ -3,33 +3,53 @@ package sql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SyncgroupsSyncGroup_Value_Tables_Columns struct {
+type SyncgroupsSyncGroup_Value_Properties_Schema_Tables_Columns struct {
 	DataSize any
 	DataType any
-	ErrorId any
-	HasError any
-	IsPrimaryKey any
-	Name any
 	QuotedName any
 }
 
-type SyncgroupsSyncGroup_Value_Tables struct {
+type SyncgroupsSyncGroup_Value_Properties_Schema_Tables struct {
 	Columns any
-	ErrorId any
-	HasError any
-	Name any
 	QuotedName any
+}
+
+type SyncgroupsSyncGroup_Value_Properties_Schema struct {
+	MasterSyncMemberName any
+	Tables any
+}
+
+type SyncgroupsSyncGroup_Value_Properties struct {
+	ConflictLoggingRetentionInDays any
+	ConflictResolutionPolicy any
+	EnableConflictLogging any
+	HubDatabasePassword any
+	HubDatabaseUserName any
+	Interval any
+	LastSyncTime any
+	PrivateEndpointName any
+	Schema any
+	SyncDatabaseId any
+	SyncState any
+	UsePrivateLinkConnection any
+}
+
+type SyncgroupsSyncGroup_Value_Sku struct {
+	Capacity any
+	Family any
+	Name any
+	Size any
+	Tier any
 }
 
 type SyncgroupsSyncGroup_Value struct {
-	LastUpdateTime any
-	Tables any
+	Properties any
+	Sku any
 }
 
 type SyncgroupsSyncGroupConfig struct {
 	DatabaseName any
 	ServerName any
-	SyncGroupName any
 }
 
 type SyncgroupsSyncGroupAttrs struct {
@@ -37,8 +57,7 @@ type SyncgroupsSyncGroupAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	ServerName any
-	SyncGroupName any
-	// The SyncFullSchemaProperties items on this page
+	// The SyncGroup items on this page
 	Value any
 }
 
@@ -47,6 +66,5 @@ var SyncgroupsSyncGroup = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
-		"SyncGroupName": ubx.FieldSpec{WireName: "sync_group_name"},
 	},
 }

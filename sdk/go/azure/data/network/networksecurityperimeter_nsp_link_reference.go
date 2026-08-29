@@ -3,45 +3,38 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type NetworksecurityperimeterNspLinkReference_Properties struct {
-	// A message sent by the remote NSP link admin for connection request. In case of Auto-approved flow, it is default to 'Auto Approved'.
+type NetworksecurityperimeterNspLinkReference_Value_Properties struct {
 	Description any
-	// Local Inbound profile names to which Inbound is allowed. Use ['*'] to allow inbound to all profiles.
 	LocalInboundProfiles any
-	// Local Outbound profile names from which Outbound is allowed. In current version, it is readonly property and it's value is set to ['*'] to allow outbound from all profiles. In later version, user will be able to modify it.
 	LocalOutboundProfiles any
-	// The current provisioning state of NSP Link/LinkReference.
 	ProvisioningState any
-	// Remote Inbound profile names to which Inbound is allowed. ['*'] value implies inbound is allowed to all profiles at remote perimeter. This property can only be updated from corresponding link resource present in remote perimeter.
 	RemoteInboundProfiles any
-	// Remote Outbound profile names from which Outbound is allowed. ['*'] value implies outbound is allowed from all profiles at remote perimeter. This property can only be updated from corresponding link resource present in remote perimeter.
 	RemoteOutboundProfiles any
-	// Remote NSP Guid with which the link is created.
 	RemotePerimeterGuid any
-	// Remote NSP location with which the link gets created.
 	RemotePerimeterLocation any
-	// Perimeter ARM Id for the remote NSP with which the link is created.
 	RemotePerimeterResourceId any
-	// The NSP link state.
 	Status any
 }
 
+type NetworksecurityperimeterNspLinkReference_Value struct {
+	Properties any
+}
+
 type NetworksecurityperimeterNspLinkReferenceConfig struct {
-	LinkReferenceName any
 	NetworkSecurityPerimeterName any
 }
 
 type NetworksecurityperimeterNspLinkReferenceAttrs struct {
-	LinkReferenceName any
 	NetworkSecurityPerimeterName any
-	// Properties of NSP LinkReference resource.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The NspLinkReference items on this page
+	Value any
 }
 
 var NetworksecurityperimeterNspLinkReference = ubx.DataSourceBinding{
 	WireType: "azure_network_networksecurityperimeter_nsp_link_reference",
 	Fields: ubx.FieldMap{
-		"LinkReferenceName": ubx.FieldSpec{WireName: "link_reference_name"},
 		"NetworkSecurityPerimeterName": ubx.FieldSpec{WireName: "network_security_perimeter_name"},
 	},
 }

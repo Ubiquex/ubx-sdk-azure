@@ -3,58 +3,43 @@ package synapse
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SqlpoolSqlPool_Properties struct {
-	// Collation mode
+type SqlpoolSqlPool_Value_Properties struct {
 	Collation any
-	// Specifies the mode of sql pool creation. Default: regular sql pool creation. PointInTimeRestore: Creates a sql pool by restoring a point in time backup of an existing sql pool. sourceDatabaseId must be specified as the resource ID of the existing sql pool, and restorePointInTime must be specified. Recovery: Creates a sql pool by a geo-replicated backup. sourceDatabaseId must be specified as the recoverableDatabaseId to restore. Restore: Creates a sql pool by restoring a backup of a deleted sql pool. SourceDatabaseId should be the sql pool's original resource ID. SourceDatabaseId and sourceDatabaseDeletionDate must be specified.
 	CreateMode any
-	// Date the SQL pool was created
 	CreationDate any
-	// Maximum size in bytes
 	MaxSizeBytes any
-	// Resource state
 	ProvisioningState any
-	// Backup database to restore from
 	RecoverableDatabaseId any
-	// Snapshot time to restore
 	RestorePointInTime any
-	// Specifies the time that the sql pool was deleted
 	SourceDatabaseDeletionDate any
-	// Source database to create from
 	SourceDatabaseId any
-	// Resource status
 	Status any
-	// The storage account type used to store backups for this sql pool.
 	StorageAccountType any
 }
 
-type SqlpoolSqlPool_Sku struct {
-	// If the SKU supports scale out/in then the capacity integer should be included. If scale out/in is not possible for the resource this may be omitted.
+type SqlpoolSqlPool_Value_Sku struct {
 	Capacity any
-	// The SKU name
 	Name any
-	// The service tier
 	Tier any
 }
 
+type SqlpoolSqlPool_Value struct {
+	Properties any
+	Sku any
+}
+
 type SqlpoolSqlPoolConfig struct {
-	OperationId any
-	SqlPoolName any
 }
 
 type SqlpoolSqlPoolAttrs struct {
-	OperationId any
-	// Properties of a SQL Analytics pool
-	Properties any
-	// SQL pool SKU
-	Sku any
-	SqlPoolName any
+	// Link to the next page of results
+	NextLink any
+	// List of SQL pools
+	Value any
 }
 
 var SqlpoolSqlPool = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_sql_pool",
 	Fields: ubx.FieldMap{
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
 	},
 }

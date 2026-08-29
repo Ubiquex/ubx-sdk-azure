@@ -3,9 +3,12 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type FirewallpolicySignaturesOverrides_Properties struct {
-	// Dictionary of <string>
+type FirewallpolicySignaturesOverrides_Value_Properties struct {
 	Signatures any
+}
+
+type FirewallpolicySignaturesOverrides_Value struct {
+	Properties any
 }
 
 type FirewallpolicySignaturesOverridesConfig struct {
@@ -14,8 +17,8 @@ type FirewallpolicySignaturesOverridesConfig struct {
 
 type FirewallpolicySignaturesOverridesAttrs struct {
 	FirewallPolicyName any
-	// Will contain the properties of the resource (the actual signature overrides)
-	Properties any
+	// Describes a list consisting exactly one item describing the policy's signature override status
+	Value any
 }
 
 var FirewallpolicySignaturesOverrides = ubx.DataSourceBinding{

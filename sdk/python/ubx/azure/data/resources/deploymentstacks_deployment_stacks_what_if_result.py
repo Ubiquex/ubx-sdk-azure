@@ -7,33 +7,25 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_ActionOnUnmanage:
-    # Specifies an action for a newly unmanaged resource.
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ActionOnUnmanage:
     management_groups: Any = None
-    # Specifies an action for a newly unmanaged resource group.
     resource_groups: Any = None
-    # Specifies an action for a newly unmanaged resource.
     resources: Any = None
-    # Specifies an action for resources that do not support deletion.
     resources_without_delete_support: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_After:
-    # DenySettings will be applied to child resource scopes of every managed resource with a deny assignment.
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange_After:
     apply_to_child_scopes: Any = None
-    # List of role-based management operations that are excluded from the denySettings. Up to 200 actions are permitted. If the denySetting mode is set to 'denyWriteAndDelete', then the following actions are automatically appended to 'excludedActions': '*\/read' and 'Microsoft.Authorization/locks/delete'. If the denySetting mode is set to 'denyDelete', then the following actions are automatically appended to 'excludedActions': 'Microsoft.Authorization/locks/delete'. Duplicate actions will be removed.
     excluded_actions: Any = None
-    # List of AAD principal IDs excluded from the lock. Up to 5 principals are permitted.
     excluded_principals: Any = None
-    # denySettings Mode that defines denied actions.
     mode: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_Children:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange_Delta_Children:
     pass
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange_Delta:
     after: Any = None
     before: Any = None
     change_type: Any = None
@@ -41,52 +33,47 @@ class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettin
     path: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange:
-    # Defines how resources deployed by the Deployment stack are locked.
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange:
     after: Any = None
-    # Defines how resources deployed by the Deployment stack are locked.
     before: Any = None
-    # The predicted changes to the properties."
     delta: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChange:
-    # The predicted value after the deployment is executed.
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DeploymentScopeChange:
     after: Any = None
-    # The predicted value before the deployment is executed.
     before: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVault:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVault:
     id: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference:
     key_vault: Any = None
     secret_name: Any = None
     secret_version: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_Extension_Config:
     key_vault_reference: Any = None
     type: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_Extension:
     config: Any = None
     config_id: Any = None
     name: Any = None
     version: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChanges:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_ResourceConfigurationChanges:
     after: Any = None
     before: Any = None
     delta: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges:
     api_version: Any = None
     change_certainty: Any = None
     change_type: Any = None
@@ -102,26 +89,22 @@ class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceCh
     unsupported_reason: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes:
-    # Predicted changes to the deployment stack deny settings.
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes:
     deny_settings_change: Any = None
-    # Predicted changes to the deployment scope for the deployment stack.
     deployment_scope_change: Any = None
-    # List of resource changes predicted by What-If operation.
     resource_changes: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_DebugSetting:
-    # Specifies the type of information to log for debugging. The permitted values are none, requestContent, responseContent, or both requestContent and responseContent separated by a comma. The default is none. When setting this value, carefully consider the type of information that is being passed in during deployment. By logging information about the request or response, sensitive data that is retrieved through the deployment operations could potentially be exposed.
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_DebugSetting:
     detail_level: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfo:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Diagnostics_AdditionalInfo:
     info: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Diagnostics:
     additional_info: Any = None
     code: Any = None
     level: Any = None
@@ -129,7 +112,7 @@ class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics:
     target: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_Details:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Error_Details:
     additional_info: Any = None
     code: Any = None
     details: Any = None
@@ -137,116 +120,87 @@ class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_Details:
     target: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error:
-    # The error additional info.
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Error:
     additional_info: Any = None
-    # The error code.
     code: Any = None
-    # The error details.
     details: Any = None
-    # The error message.
     message: Any = None
-    # The error target.
     target: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputDefinitions:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ExternalInputDefinitions:
     config: Any = None
     kind: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputs:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ExternalInputs:
     value: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Parameters:
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Parameters:
     expression: Any = None
     reference: Any = None
     type: Any = None
     value: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_ParametersLink:
-    # If included, must match the ContentVersion in the template.
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ParametersLink:
     content_version: Any = None
-    # The URI of the parameters file.
     uri: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties_TemplateLink:
-    # If included, must match the ContentVersion in the template.
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_TemplateLink:
     content_version: Any = None
-    # The resourceId of a Template Spec. Use either the id or uri property, but not both.
     id: Any = None
-    # The query string (for example, a SAS token) to be used with the templateLink URI.
     query_string: Any = None
-    # The relativePath property can be used to deploy a linked template at a location relative to the parent. If the parent template was linked with a TemplateSpec, this will reference an artifact in the TemplateSpec. If the parent was linked with a URI, the child deployment will be a combination of the parent and relativePath URIs.
     relative_path: Any = None
-    # The URI of the template to deploy. Use either the uri or id property, but not both.
     uri: Any = None
 
 @dataclasses.dataclass
-class DeploymentstacksDeploymentStacksWhatIfResult_Properties:
-    # Defines the behavior of resources that are no longer managed after the stack is updated or deleted.
+class DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties:
     action_on_unmanage: Any = None
-    # Changes predicted to the deployment stack as a result of the what-if operation.
     changes: Any = None
-    # The correlation id of the last Deployment stack upsert or delete operation. It is in GUID format and is used for tracing.
     correlation_id: Any = None
-    # The debug setting.
     debug_setting: Any = None
-    # Defines how resources deployed by the Deployment stack are locked.
     deny_settings: Any = None
-    # The scope at which the initial deployment should be created. If a scope is not specified, it will default to the scope of the deployment stack. Valid scopes are: management group (format: '/providers/Microsoft.Management/managementGroups/{managementGroupId}'), subscription (format: '/subscriptions/{subscriptionId}'), resource group (format: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}').
     deployment_scope: Any = None
-    # The timestamp for when the deployment stack was last modified. This can be used to determine if the what-if data is still current.
     deployment_stack_last_modified: Any = None
-    # The deployment stack id to use as the basis for comparison.
     deployment_stack_resource_id: Any = None
-    # Deployment stack description. Max length of 4096 characters.
     description: Any = None
-    # List of resource diagnostics detected by What-If operation.
     diagnostics: Any = None
-    # The error detail.
     error: Any = None
-    # The deployment extension configs. Keys of this object are extension aliases as defined in the deployment template.
     extension_configs: Any = None
-    # External input definitions, used by external tooling to define expected external input values.
     external_input_definitions: Any = None
-    # External input values, used by external tooling for parameter evaluation.
     external_inputs: Any = None
-    # Name and value pairs that define the deployment parameters for the template. Use this element when providing the parameter values directly in the request, rather than linking to an existing parameter file. Use either the parametersLink property or the parameters property, but not both.
     parameters: Any = None
-    # Entity representing the reference to the deployment parameters.
     parameters_link: Any = None
-    # State of the deployment stack.
     provisioning_state: Any = None
-    # The interval to persist the deployment stack what-if result in ISO 8601 format.
     retention_interval: Any = None
-    # The template content. You use this element when you want to pass the template syntax directly in the request rather than link to an existing template. It can be a JObject or well-formed JSON string. Use either the templateLink property or the template property, but not both.
     template: Any = None
-    # Entity representing the reference to the template.
     template_link: Any = None
-    # The level of validation performed on the deployment.
     validation_level: Any = None
 
 @dataclasses.dataclass
+class DeploymentstacksDeploymentStacksWhatIfResult_Value:
+    location: Any = None
+    properties: Any = None
+    tags: Any = None
+
+@dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResultConfig:
-    deployment_stacks_what_if_result_name: Any = None
+    management_group_id: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResultAttrs:
-    deployment_stacks_what_if_result_name: Any = None
-    # The geo-location where the resource lives. Required for subscription and management group scoped stacks. The location is inherited from the resource group for resource group scoped stacks.
-    location: Any = None
-    # DeploymentStack WhatIfResult Properties
-    properties: Any = None
-    # Resource tags.
-    tags: Any = None
+    management_group_id: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The DeploymentStacksWhatIfResult items on this page
+    value: Any = None
 
 DeploymentstacksDeploymentStacksWhatIfResult = ubx.DataSourceBinding(
     wire_type="azure_resources_deploymentstacks_deployment_stacks_what_if_result",
     fields={
-        "deployment_stacks_what_if_result_name": ubx.FieldSpec(wire_name="deployment_stacks_what_if_result_name"),
+        "management_group_id": ubx.FieldSpec(wire_name="management_group_id"),
     },
 )

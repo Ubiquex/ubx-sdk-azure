@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .point_collection_list_result import PointCollectionListResult, PointCollectionListResultConfig
+from .point_collection import PointCollection, PointCollectionConfig

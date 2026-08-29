@@ -7,151 +7,111 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class BackupVaultResource_Identity_UserAssignedIdentities:
+class BackupVaultResource_Value_Identity_UserAssignedIdentities:
     client_id: Any = None
     principal_id: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Identity:
-    # The object ID of the service principal object for the managed identity that is used to grant role-based access to an Azure resource.
+class BackupVaultResource_Value_Identity:
     principal_id: Any = None
-    # A Globally Unique Identifier (GUID) that represents the Azure AD tenant where the resource is now a member.
     tenant_id: Any = None
-    # The identityType which can be either SystemAssigned, UserAssigned, 'SystemAssigned,UserAssigned' or None
     type: Any = None
-    # Gets or sets the user assigned identities.
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_CostManagementSettings:
+class BackupVaultResource_Value_Properties_CostManagementSettings:
     granularity_level: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettings:
-    # CrossRegionRestore state
+class BackupVaultResource_Value_Properties_FeatureSettings_CrossRegionRestoreSettings:
     state: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_FeatureSettings:
+class BackupVaultResource_Value_Properties_FeatureSettings:
     cross_region_restore_settings: Any = None
-    # CrossSubscriptionRestore Settings
     cross_subscription_restore_settings: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_MonitoringSettings_AzureMonitorAlertSettings:
+class BackupVaultResource_Value_Properties_MonitoringSettings_AzureMonitorAlertSettings:
     alerts_for_all_job_failures: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_MonitoringSettings:
-    # Settings for Azure Monitor based alerts
+class BackupVaultResource_Value_Properties_MonitoringSettings:
     azure_monitor_alert_settings: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_ResourceMoveDetails:
-    # Completion time in UTC of latest ResourceMove operation attempted. ISO 8601 format.
+class BackupVaultResource_Value_Properties_ResourceMoveDetails:
     completion_time_utc: Any = None
-    # CorrelationId of latest ResourceMove operation attempted
     operation_id: Any = None
-    # ARM resource path of source resource
     source_resource_path: Any = None
-    # Start time in UTC of latest ResourceMove operation attempted. ISO 8601 format.
     start_time_utc: Any = None
-    # ARM resource path of target resource used in latest ResourceMove operation
     target_resource_path: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_SecuritySettings_EncryptionSettings_KekIdentity:
-    # The managed identity to be used which has access permissions to the Key Vault. Provide a value here in case identity types: 'UserAssigned' only.
+class BackupVaultResource_Value_Properties_SecuritySettings_EncryptionSettings_KekIdentity:
     identity_id: Any = None
-    # The identity type. 'SystemAssigned' and 'UserAssigned' are mutually exclusive. 'SystemAssigned' will use implicitly created managed identity.
     identity_type: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_SecuritySettings_EncryptionSettings_KeyVaultProperties:
-    # The key uri of the Customer Managed Key
+class BackupVaultResource_Value_Properties_SecuritySettings_EncryptionSettings_KeyVaultProperties:
     key_uri: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_SecuritySettings_EncryptionSettings:
-    # Enabling/Disabling the Double Encryption state
+class BackupVaultResource_Value_Properties_SecuritySettings_EncryptionSettings:
     infrastructure_encryption: Any = None
-    # The details of the managed identity used for CMK
     kek_identity: Any = None
-    # The properties of the Key Vault which hosts CMK
     key_vault_properties: Any = None
-    # Encryption state of the Backup Vault.
     state: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_SecuritySettings_SoftDeleteSettings:
-    # Soft delete retention duration
+class BackupVaultResource_Value_Properties_SecuritySettings_SoftDeleteSettings:
     retention_duration_in_days: Any = None
-    # State of soft delete
     state: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_SecuritySettings:
-    # Customer Managed Key details of the resource.
+class BackupVaultResource_Value_Properties_SecuritySettings:
     encryption_settings: Any = None
-    # Immutability Settings at vault level
     immutability_settings: Any = None
-    # Soft delete related settings
     soft_delete_settings: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties_StorageSettings:
+class BackupVaultResource_Value_Properties_StorageSettings:
     datastore_type: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class BackupVaultResource_Properties:
-    # Security Level of Backup Vault
+class BackupVaultResource_Value_Properties:
     bcdr_security_level: Any = None
-    # Cost Management Settings of the vault
     cost_management_settings: Any = None
-    # Class containing feature settings of vault
     feature_settings: Any = None
-    # Is vault protected by resource guard
     is_vault_protected_by_resource_guard: Any = None
-    # Monitoring Settings
     monitoring_settings: Any = None
-    # Provisioning state of the BackupVault resource
     provisioning_state: Any = None
-    # List of replicated regions for Backup Vault
     replicated_regions: Any = None
-    # ResourceGuardOperationRequests on which LAC check will be performed
     resource_guard_operation_requests: Any = None
-    # ResourceMoveDetails will be returned in response to GetResource call from ARM
     resource_move_details: Any = None
-    # Resource move state for backup vault
     resource_move_state: Any = None
-    # Secure Score of Backup Vault
     secure_score: Any = None
-    # Class containing security settings of vault
     security_settings: Any = None
-    # Storage Settings
     storage_settings: Any = None
 
 @dataclasses.dataclass
+class BackupVaultResource_Value:
+    e_tag: Any = None
+    identity: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class BackupVaultResourceConfig:
-    operation_id: Any = None
-    vault_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class BackupVaultResourceAttrs:
-    # Optional ETag.
-    e_tag: Any = None
-    # Identity details
-    identity: Any = None
-    operation_id: Any = None
-    # Backup Vault
-    properties: Any = None
-    vault_name: Any = None
+    # List of resources.
+    value: Any = None
 
 BackupVaultResource = ubx.DataSourceBinding(
     wire_type="azure_dataprotection_backup_vault_resource",
     fields={
-        "operation_id": ubx.FieldSpec(wire_name="operation_id"),
-        "vault_name": ubx.FieldSpec(wire_name="vault_name"),
     },
 )

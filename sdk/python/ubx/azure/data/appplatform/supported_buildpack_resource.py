@@ -7,15 +7,17 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class SupportedBuildpackResource_Properties:
-    # The id of supported buildpack
+class SupportedBuildpackResource_Value_Properties:
     buildpack_id: Any = None
+
+@dataclasses.dataclass
+class SupportedBuildpackResource_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class SupportedBuildpackResourceConfig:
     api_version: Any = None
     build_service_name: Any = None
-    buildpack_name: Any = None
     resource_group_name: Any = None
     service_name: Any = None
     subscription_id: Any = None
@@ -24,19 +26,19 @@ class SupportedBuildpackResourceConfig:
 class SupportedBuildpackResourceAttrs:
     api_version: Any = None
     build_service_name: Any = None
-    buildpack_name: Any = None
-    # Supported buildpack resource properties
-    properties: Any = None
+    # URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
+    next_link: Any = None
     resource_group_name: Any = None
     service_name: Any = None
     subscription_id: Any = None
+    # Collection of supported buildpacks resources
+    value: Any = None
 
 SupportedBuildpackResource = ubx.DataSourceBinding(
     wire_type="azure_appplatform_supported_buildpack_resource",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
         "build_service_name": ubx.FieldSpec(wire_name="build_service_name"),
-        "buildpack_name": ubx.FieldSpec(wire_name="buildpack_name"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "service_name": ubx.FieldSpec(wire_name="service_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),

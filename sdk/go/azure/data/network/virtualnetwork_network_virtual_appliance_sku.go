@@ -3,35 +3,34 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type VirtualnetworkNetworkVirtualApplianceSku_Properties_AvailableScaleUnits struct {
+type VirtualnetworkNetworkVirtualApplianceSku_Value_Properties_AvailableScaleUnits struct {
 	InstanceCount any
 	ScaleUnit any
 }
 
-type VirtualnetworkNetworkVirtualApplianceSku_Properties struct {
-	// The list of scale units available.
+type VirtualnetworkNetworkVirtualApplianceSku_Value_Properties struct {
 	AvailableScaleUnits any
-	// Available Network Virtual Appliance versions.
 	AvailableVersions any
-	// Network Virtual Appliance Sku vendor.
 	Vendor any
 }
 
+type VirtualnetworkNetworkVirtualApplianceSku_Value struct {
+	Etag any
+	Properties any
+}
+
 type VirtualnetworkNetworkVirtualApplianceSkuConfig struct {
-	SkuName any
 }
 
 type VirtualnetworkNetworkVirtualApplianceSkuAttrs struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
-	// Properties specific to NetworkVirtualApplianceSkus.
-	Properties any
-	SkuName any
+	// The link to the next page of items
+	NextLink any
+	// The NetworkVirtualApplianceSku items on this page
+	Value any
 }
 
 var VirtualnetworkNetworkVirtualApplianceSku = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_network_virtual_appliance_sku",
 	Fields: ubx.FieldMap{
-		"SkuName": ubx.FieldSpec{WireName: "sku_name"},
 	},
 }

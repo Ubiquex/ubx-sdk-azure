@@ -3,57 +3,47 @@ package sql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type LongtermretentionbackupsLongTermRetentionBackup_Properties struct {
-	// The time the long term retention backup will expire.
+type LongtermretentionbackupsLongTermRetentionBackup_Value_Properties struct {
 	BackupExpirationTime any
-	// The BackupStorageAccessTier for the LTR backup
 	BackupStorageAccessTier any
-	// The storage account type used to store backups for this database.
 	BackupStorageRedundancy any
-	// The time the backup was taken
 	BackupTime any
-	// The delete time of the database
 	DatabaseDeletionTime any
-	// The name of the database the backup belong to
 	DatabaseName any
-	// The setting whether the LTR backup is immutable
 	IsBackupImmutable any
-	// The setting for whether LegalHold is enabled or disabled on the LTR backup. When LegalHold is enabled, the backup cannot be deleted until the LegalHold is removed.
 	LegalHoldImmutability any
-	// The storage account type used to store backups for this database.
 	RequestedBackupStorageRedundancy any
-	// The create time of the server.
 	ServerCreateTime any
-	// The server name that the backup database belong to.
 	ServerName any
-	// The setting for whether or not time-based immutability is enabled for the LTR backup. When time-based immutability is enabled and locked, the backup cannot be deleted until BackupExpirationTime.
 	TimeBasedImmutability any
-	// The time-based immutability mode. Only applicable if time-based immutability is enabled.
 	TimeBasedImmutabilityMode any
 }
 
+type LongtermretentionbackupsLongTermRetentionBackup_Value struct {
+	Properties any
+}
+
 type LongtermretentionbackupsLongTermRetentionBackupConfig struct {
-	BackupName any
+	DatabaseState any
 	LocationName any
-	LongTermRetentionDatabaseName any
-	LongTermRetentionServerName any
+	OnlyLatestPerDatabase any
 }
 
 type LongtermretentionbackupsLongTermRetentionBackupAttrs struct {
-	BackupName any
+	DatabaseState any
 	LocationName any
-	LongTermRetentionDatabaseName any
-	LongTermRetentionServerName any
-	// Properties of a long term retention backup
-	Properties any
+	// Link to retrieve next page of results.
+	NextLink any
+	OnlyLatestPerDatabase any
+	// Array of results.
+	Value any
 }
 
 var LongtermretentionbackupsLongTermRetentionBackup = ubx.DataSourceBinding{
 	WireType: "azure_sql_longtermretentionbackups_long_term_retention_backup",
 	Fields: ubx.FieldMap{
-		"BackupName": ubx.FieldSpec{WireName: "backup_name"},
+		"DatabaseState": ubx.FieldSpec{WireName: "database_state"},
 		"LocationName": ubx.FieldSpec{WireName: "location_name"},
-		"LongTermRetentionDatabaseName": ubx.FieldSpec{WireName: "long_term_retention_database_name"},
-		"LongTermRetentionServerName": ubx.FieldSpec{WireName: "long_term_retention_server_name"},
+		"OnlyLatestPerDatabase": ubx.FieldSpec{WireName: "only_latest_per_database"},
 	},
 }

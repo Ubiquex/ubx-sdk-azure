@@ -7,68 +7,54 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups_Properties:
+class VirtualnetworkSecurityRule_Value_Properties_DestinationApplicationSecurityGroups_Properties:
     provisioning_state: Any = None
     resource_guid: Any = None
 
 @dataclasses.dataclass
-class VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups:
+class VirtualnetworkSecurityRule_Value_Properties_DestinationApplicationSecurityGroups:
     etag: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class VirtualnetworkSecurityRule_Properties:
-    # Whether network traffic is allowed or denied.
+class VirtualnetworkSecurityRule_Value_Properties:
     access: Any = None
-    # A description for this rule. Restricted to 140 chars.
     description: Any = None
-    # The destination address prefix. CIDR or destination IP range. Asterisk '*' can also be used to match all source IPs. Default tags such as 'VirtualNetwork', 'AzureLoadBalancer' and 'Internet' can also be used.
     destination_address_prefix: Any = None
-    # The destination address prefixes. CIDR or destination IP ranges.
     destination_address_prefixes: Any = None
-    # The application security group specified as destination.
     destination_application_security_groups: Any = None
-    # The destination port or range. Integer or range between 0 and 65535. Asterisk '*' can also be used to match all ports.
     destination_port_range: Any = None
-    # The destination port ranges.
     destination_port_ranges: Any = None
-    # The direction of the rule. The direction specifies if rule will be evaluated on incoming or outgoing traffic.
     direction: Any = None
-    # The priority of the rule. The value can be between 100 and 4096. The priority number must be unique for each rule in the collection. The lower the priority number, the higher the priority of the rule.
     priority: Any = None
-    # Network protocol this rule applies to.
     protocol: Any = None
-    # Provisioning states of a resource.
     provisioning_state: Any = None
-    # The CIDR or source IP range. Asterisk '*' can also be used to match all source IPs. Default tags such as 'VirtualNetwork', 'AzureLoadBalancer' and 'Internet' can also be used. If this is an ingress rule, specifies where network traffic originates from.
     source_address_prefix: Any = None
-    # The CIDR or source IP ranges.
     source_address_prefixes: Any = None
-    # The application security group specified as source.
     source_application_security_groups: Any = None
-    # The source port or range. Integer or range between 0 and 65535. Asterisk '*' can also be used to match all ports.
     source_port_range: Any = None
-    # The source port ranges.
     source_port_ranges: Any = None
+
+@dataclasses.dataclass
+class VirtualnetworkSecurityRule_Value:
+    etag: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkSecurityRuleConfig:
     network_security_group_name: Any = None
-    security_rule_name: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkSecurityRuleAttrs:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     network_security_group_name: Any = None
-    # Security rule resource.
-    properties: Any = None
-    security_rule_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The SecurityRule items on this page
+    value: Any = None
 
 VirtualnetworkSecurityRule = ubx.DataSourceBinding(
     wire_type="azure_network_virtualnetwork_security_rule",
     fields={
         "network_security_group_name": ubx.FieldSpec(wire_name="network_security_group_name"),
-        "security_rule_name": ubx.FieldSpec(wire_name="security_rule_name"),
     },
 )

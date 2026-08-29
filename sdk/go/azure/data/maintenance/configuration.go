@@ -3,89 +3,64 @@ package maintenance
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type Configuration_Properties_InstallPatches_LinuxParameters struct {
-	// Classification category of patches to be patched. Allowed values are 'Critical', 'Security', and 'Other'.
+type Configuration_Value_Properties_InstallPatches_LinuxParameters struct {
 	ClassificationsToInclude any
-	// Package names to be excluded for patching.
 	PackageNameMasksToExclude any
-	// Package names to be included for patching.
 	PackageNameMasksToInclude any
 }
 
-type Configuration_Properties_InstallPatches_WindowsParameters struct {
-	// Classification category of patches to be patched. Allowed values are 'Critical', 'Security', 'UpdateRollup', 'FeaturePack', 'ServicePack', 'Definition', 'Tools', and 'Updates'.
+type Configuration_Value_Properties_InstallPatches_WindowsParameters struct {
 	ClassificationsToInclude any
-	// Exclude patches which need reboot
 	ExcludeKbsRequiringReboot any
-	// Windows KBID to be excluded for patching.
 	KbNumbersToExclude any
-	// Windows KBID to be included for patching.
 	KbNumbersToInclude any
 }
 
-type Configuration_Properties_InstallPatches struct {
-	// Input properties for patching a Linux machine.
+type Configuration_Value_Properties_InstallPatches struct {
 	LinuxParameters any
-	// Possible reboot preference as defined by the user based on which it would be decided to reboot the machine or not after the patch operation is completed.
 	RebootSetting any
-	// Input properties for patching a Windows machine.
 	WindowsParameters any
 }
 
-type Configuration_Properties_MaintenanceWindow struct {
-	// Duration of the maintenance window in HH:mm format. If not provided, default value will be used based on maintenance scope provided. Example: 05:00.
+type Configuration_Value_Properties_MaintenanceWindow struct {
 	Duration any
-	// Effective expiration date of the maintenance window in YYYY-MM-DD hh:mm format. The window will be created in the time zone provided and adjusted to daylight savings according to that time zone. Expiration date must be set to a future date. If not provided, it will be set to the maximum datetime 9999-12-31 23:59:59.
 	ExpirationDateTime any
-	// Rate at which a Maintenance window is expected to recur. The rate can be expressed as daily, weekly, or monthly schedules. Daily schedule are formatted as recurEvery: [Frequency as integer]['Day(s)']. If no frequency is provided, the default frequency is 1. Daily schedule examples are recurEvery: Day, recurEvery: 3Days. Weekly schedule are formatted as recurEvery: [Frequency as integer]['Week(s)'] [Optional comma separated list of weekdays Monday-Sunday]. Weekly schedule examples are recurEvery: 3Weeks, recurEvery: Week Saturday,Sunday. Monthly schedules are formatted as [Frequency as integer]['Month(s)'] [Comma separated list of month days] or [Frequency as integer]['Month(s)'] [Week of Month (First, Second, Third, Fourth, Last)] [Weekday Monday-Sunday] [Optional Offset(No. of days)]. Offset value must be between -6 to 6 inclusive. Monthly schedule examples are recurEvery: Month, recurEvery: 2Months, recurEvery: Month day23,day24, recurEvery: Month Last Sunday, recurEvery: Month Fourth Monday, recurEvery: Month Last Sunday Offset-3, recurEvery: Month Third Sunday Offset6.
 	RecurEvery any
-	// Effective start date of the maintenance window in YYYY-MM-DD hh:mm format. The start date can be set to either the current date or future date. The window will be created in the time zone provided and adjusted to daylight savings according to that time zone.
 	StartDateTime any
-	// Name of the timezone. List of timezones can be obtained by executing [System.TimeZoneInfo]::GetSystemTimeZones() in PowerShell. Example: Pacific Standard Time, UTC, W. Europe Standard Time, Korea Standard Time, Cen. Australia Standard Time.
 	TimeZone any
 }
 
-type Configuration_Properties struct {
-	// Gets or sets extensionProperties of the maintenanceConfiguration
+type Configuration_Value_Properties struct {
 	ExtensionProperties any
-	// Input configuration for a patch run
 	InstallPatches any
-	// Gets or sets maintenanceScope of the configuration
 	MaintenanceScope any
-	// Definition of a MaintenanceWindow
 	MaintenanceWindow any
-	// Gets or sets namespace of the resource
 	Namespace any
-	// Gets or sets the visibility of the configuration. The default value is 'Custom'
 	Visibility any
+}
+
+type Configuration_Value struct {
+	Location any
+	Properties any
+	Tags any
 }
 
 type ConfigurationConfig struct {
 	ApiVersion any
-	ResourceGroupName any
-	ResourceName any
 	SubscriptionId any
 }
 
 type ConfigurationAttrs struct {
 	ApiVersion any
-	// Gets or sets location of the resource
-	Location any
-	// Properties for maintenance configuration
-	Properties any
-	ResourceGroupName any
-	ResourceName any
 	SubscriptionId any
-	// Gets or sets tags of the resource
-	Tags any
+	// The list of maintenance Configurations
+	Value any
 }
 
 var Configuration = ubx.DataSourceBinding{
 	WireType: "azure_maintenance_configuration",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

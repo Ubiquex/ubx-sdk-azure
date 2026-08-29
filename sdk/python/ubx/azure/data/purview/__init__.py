@@ -4,11 +4,8 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .account_list import AccountList, AccountListConfig
+from .account import Account, AccountConfig
 from .default_account_payload import DefaultAccountPayload, DefaultAccountPayloadConfig
-from .kafka_configuration_list import KafkaConfigurationList, KafkaConfigurationListConfig
-from .operation_list import OperationList, OperationListConfig
-from .private_endpoint_connection_list import PrivateEndpointConnectionList, PrivateEndpointConnectionListConfig
+from .kafka_configuration import KafkaConfiguration, KafkaConfigurationConfig
+from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
 from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
-from .private_link_resource_list import PrivateLinkResourceList, PrivateLinkResourceListConfig
-from .usage_list import UsageList, UsageListConfig

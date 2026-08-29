@@ -7,32 +7,35 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ManagedclustersMeshUpgradeProfile_Properties_CompatibleWith:
+class ManagedclustersMeshUpgradeProfile_Value_Properties_CompatibleWith:
     name: Any = None
     versions: Any = None
 
 @dataclasses.dataclass
-class ManagedclustersMeshUpgradeProfile_Properties:
+class ManagedclustersMeshUpgradeProfile_Value_Properties:
     compatible_with: Any = None
     revision: Any = None
     upgrades: Any = None
 
 @dataclasses.dataclass
+class ManagedclustersMeshUpgradeProfile_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class ManagedclustersMeshUpgradeProfileConfig:
-    mode: Any = None
     resource_name: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersMeshUpgradeProfileAttrs:
-    mode: Any = None
-    # Mesh upgrade profile properties for a major.minor release.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     resource_name: Any = None
+    # The MeshUpgradeProfile items on this page
+    value: Any = None
 
 ManagedclustersMeshUpgradeProfile = ubx.DataSourceBinding(
     wire_type="azure_containerservice_managedclusters_mesh_upgrade_profile",
     fields={
-        "mode": ubx.FieldSpec(wire_name="mode"),
         "resource_name": ubx.FieldSpec(wire_name="resource_name"),
     },
 )

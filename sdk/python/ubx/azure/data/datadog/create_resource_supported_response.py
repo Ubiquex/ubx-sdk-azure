@@ -7,11 +7,13 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class CreateResourceSupportedResponse_Properties:
-    # Indicates if selected subscription supports Datadog resource creation, if not it is already being monitored for the selected organization via multi subscription feature.
+class CreateResourceSupportedResponse_Value_Properties:
     creation_supported: Any = None
-    # The ARM id of the subscription.
     name: Any = None
+
+@dataclasses.dataclass
+class CreateResourceSupportedResponse_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class CreateResourceSupportedResponseConfig:
@@ -20,8 +22,10 @@ class CreateResourceSupportedResponseConfig:
 @dataclasses.dataclass
 class CreateResourceSupportedResponseAttrs:
     datadog_organization_id: Any = None
-    # Datadog resource can be created or not properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The CreateResourceSupportedResponse items on this page
+    value: Any = None
 
 CreateResourceSupportedResponse = ubx.DataSourceBinding(
     wire_type="azure_datadog_create_resource_supported_response",

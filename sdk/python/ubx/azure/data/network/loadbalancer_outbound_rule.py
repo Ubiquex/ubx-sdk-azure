@@ -7,45 +7,39 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class LoadbalancerOutboundRule_Properties_BackendAddressPool:
-    # Resource ID.
+class LoadbalancerOutboundRule_Value_Properties_BackendAddressPool:
     id: Any = None
 
 @dataclasses.dataclass
-class LoadbalancerOutboundRule_Properties:
-    # The number of outbound ports to be used for NAT.
+class LoadbalancerOutboundRule_Value_Properties:
     allocated_outbound_ports: Any = None
-    # Reference to another subresource.
     backend_address_pool: Any = None
-    # Receive bidirectional TCP Reset on TCP flow idle timeout or unexpected connection termination. This element is only used when the protocol is set to TCP.
     enable_tcp_reset: Any = None
-    # The Frontend IP addresses of the load balancer.
     frontend_ipconfigurations: Any = None
-    # The timeout for the TCP idle connection.
     idle_timeout_in_minutes: Any = None
-    # The protocol for the outbound rule in load balancer.
     protocol: Any = None
-    # Provisioning states of a resource.
     provisioning_state: Any = None
+
+@dataclasses.dataclass
+class LoadbalancerOutboundRule_Value:
+    etag: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class LoadbalancerOutboundRuleConfig:
     load_balancer_name: Any = None
-    outbound_rule_name: Any = None
 
 @dataclasses.dataclass
 class LoadbalancerOutboundRuleAttrs:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     load_balancer_name: Any = None
-    outbound_rule_name: Any = None
-    # Outbound rule of the load balancer.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The OutboundRule items on this page
+    value: Any = None
 
 LoadbalancerOutboundRule = ubx.DataSourceBinding(
     wire_type="azure_network_loadbalancer_outbound_rule",
     fields={
         "load_balancer_name": ubx.FieldSpec(wire_name="load_balancer_name"),
-        "outbound_rule_name": ubx.FieldSpec(wire_name="outbound_rule_name"),
     },
 )

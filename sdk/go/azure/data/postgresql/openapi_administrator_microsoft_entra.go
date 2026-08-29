@@ -3,33 +3,32 @@ package postgresql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiAdministratorMicrosoftEntra_Properties struct {
-	// Object identifier of the Microsoft Entra principal.
+type OpenapiAdministratorMicrosoftEntra_Value_Properties struct {
 	ObjectId any
-	// Name of the Microsoft Entra principal.
 	PrincipalName any
-	// Type of Microsoft Entra principal to which the server administrator is associated.
 	PrincipalType any
-	// Identifier of the tenant in which the Microsoft Entra principal exists.
 	TenantId any
 }
 
+type OpenapiAdministratorMicrosoftEntra_Value struct {
+	Properties any
+}
+
 type OpenapiAdministratorMicrosoftEntraConfig struct {
-	ObjectId any
 	ServerName any
 }
 
 type OpenapiAdministratorMicrosoftEntraAttrs struct {
-	ObjectId any
-	// Properties of a server administrator associated to a Microsoft Entra principal.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ServerName any
+	// The AdministratorMicrosoftEntra items on this page
+	Value any
 }
 
 var OpenapiAdministratorMicrosoftEntra = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_administrator_microsoft_entra",
 	Fields: ubx.FieldMap{
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
 	},
 }

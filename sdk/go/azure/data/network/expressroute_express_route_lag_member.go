@@ -3,43 +3,36 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ExpressrouteExpressRouteLagMember_Properties struct {
-	// Administrative state of the physical port.
+type ExpressrouteExpressRouteLagMember_Value_Properties struct {
 	AdminState any
-	// Cololocation for ExpressRoute member.
 	ColoLocation any
-	// Physical fiber port type.
 	ConnectorType any
-	// Name of Azure router interface.
 	InterfaceName any
-	// Mapping between physical port to patch panel port.
 	PatchPanelId any
-	// Provisioning states of a resource.
 	ProvisioningState any
-	// Mapping of physical patch panel to rack.
 	RackId any
+}
+
+type ExpressrouteExpressRouteLagMember_Value struct {
+	Etag any
+	Id any
+	Name any
+	Properties any
+	Type any
 }
 
 type ExpressrouteExpressRouteLagMemberConfig struct {
 	ExpressRouteLagName any
 	LinkName any
-	MemberName any
 }
 
 type ExpressrouteExpressRouteLagMemberAttrs struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	ExpressRouteLagName any
-	// The unique identifier of the resource.
-	Id any
 	LinkName any
-	MemberName any
-	// Name of child member resource that is unique among child member resources of the parent.
-	Name any
-	// Properties specific to ExpressRouteLagMember resources.
-	Properties any
-	// The type of the resource.
-	Type any
+	// The link to the next page of items
+	NextLink any
+	// The ExpressRouteLagMember items on this page
+	Value any
 }
 
 var ExpressrouteExpressRouteLagMember = ubx.DataSourceBinding{
@@ -47,6 +40,5 @@ var ExpressrouteExpressRouteLagMember = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"ExpressRouteLagName": ubx.FieldSpec{WireName: "express_route_lag_name"},
 		"LinkName": ubx.FieldSpec{WireName: "link_name"},
-		"MemberName": ubx.FieldSpec{WireName: "member_name"},
 	},
 }

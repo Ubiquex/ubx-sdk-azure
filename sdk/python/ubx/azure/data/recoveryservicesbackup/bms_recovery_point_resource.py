@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class BmsRecoveryPointResource_Properties_ThreatInfo:
+class BmsRecoveryPointResource_Value_Properties_ThreatInfo:
     last_updated_time: Any = None
     threat_description: Any = None
     threat_end_time: Any = None
@@ -18,36 +18,32 @@ class BmsRecoveryPointResource_Properties_ThreatInfo:
     threat_uri: Any = None
 
 @dataclasses.dataclass
-class BmsRecoveryPointResource_Properties:
-    # This property will be used as the discriminator for deciding the specific types in the polymorphic chain of types.
+class BmsRecoveryPointResource_Value_Properties:
     object_type: Any = None
-    # Recovery point threat information.
     threat_info: Any = None
-    # Threat status of the recovery point
     threat_status: Any = None
+
+@dataclasses.dataclass
+class BmsRecoveryPointResource_Value:
+    e_tag: Any = None
+    location: Any = None
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class BmsRecoveryPointResourceConfig:
     container_name: Any = None
     fabric_name: Any = None
     protected_item_name: Any = None
-    recovery_point_id: Any = None
     vault_name: Any = None
 
 @dataclasses.dataclass
 class BmsRecoveryPointResourceAttrs:
     container_name: Any = None
-    # Optional ETag.
-    e_tag: Any = None
     fabric_name: Any = None
-    # Represents an Azure geography region where supported resource providers live.
-    location: Any = None
-    # Base class for backup copies. Workload-specific backup copies are derived from this class.
-    properties: Any = None
     protected_item_name: Any = None
-    recovery_point_id: Any = None
-    # Resource tags.
-    tags: Any = None
+    # List of resources.
+    value: Any = None
     vault_name: Any = None
 
 BmsRecoveryPointResource = ubx.DataSourceBinding(
@@ -56,7 +52,6 @@ BmsRecoveryPointResource = ubx.DataSourceBinding(
         "container_name": ubx.FieldSpec(wire_name="container_name"),
         "fabric_name": ubx.FieldSpec(wire_name="fabric_name"),
         "protected_item_name": ubx.FieldSpec(wire_name="protected_item_name"),
-        "recovery_point_id": ubx.FieldSpec(wire_name="recovery_point_id"),
         "vault_name": ubx.FieldSpec(wire_name="vault_name"),
     },
 )

@@ -7,32 +7,34 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiStaticSiteUserProvidedFunctionAppArmresource_Properties:
-    # The date and time on which the function app was registered with the static site.
+class OpenapiStaticSiteUserProvidedFunctionAppArmresource_Value_Properties:
     created_on: Any = None
-    # The region of the function app registered with the static site
     function_app_region: Any = None
-    # The resource id of the function app registered with the static site
     function_app_resource_id: Any = None
 
 @dataclasses.dataclass
+class OpenapiStaticSiteUserProvidedFunctionAppArmresource_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiStaticSiteUserProvidedFunctionAppArmresourceConfig:
-    function_app_name: Any = None
+    environment_name: Any = None
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteUserProvidedFunctionAppArmresourceAttrs:
-    function_app_name: Any = None
-    # Kind of resource.
-    kind: Any = None
+    environment_name: Any = None
     name: Any = None
-    # StaticSiteUserProvidedFunctionAppARMResource resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The StaticSiteUserProvidedFunctionAppARMResource items on this page
+    value: Any = None
 
 OpenapiStaticSiteUserProvidedFunctionAppArmresource = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_static_site_user_provided_function_app_armresource",
     fields={
-        "function_app_name": ubx.FieldSpec(wire_name="function_app_name"),
+        "environment_name": ubx.FieldSpec(wire_name="environment_name"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

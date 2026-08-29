@@ -3,32 +3,24 @@ package resources
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ActionOnUnmanage struct {
-	// Specifies an action for a newly unmanaged resource.
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ActionOnUnmanage struct {
 	ManagementGroups any
-	// Specifies an action for a newly unmanaged resource group.
 	ResourceGroups any
-	// Specifies an action for a newly unmanaged resource.
 	Resources any
-	// Specifies an action for resources that do not support deletion.
 	ResourcesWithoutDeleteSupport any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_After struct {
-	// DenySettings will be applied to child resource scopes of every managed resource with a deny assignment.
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange_After struct {
 	ApplyToChildScopes any
-	// List of role-based management operations that are excluded from the denySettings. Up to 200 actions are permitted. If the denySetting mode is set to 'denyWriteAndDelete', then the following actions are automatically appended to 'excludedActions': '*\/read' and 'Microsoft.Authorization/locks/delete'. If the denySetting mode is set to 'denyDelete', then the following actions are automatically appended to 'excludedActions': 'Microsoft.Authorization/locks/delete'. Duplicate actions will be removed.
 	ExcludedActions any
-	// List of AAD principal IDs excluded from the lock. Up to 5 principals are permitted.
 	ExcludedPrincipals any
-	// denySettings Mode that defines denied actions.
 	Mode any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_Children struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange_Delta_Children struct {
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange_Delta struct {
 	After any
 	Before any
 	ChangeType any
@@ -36,52 +28,47 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySetting
 	Path any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange struct {
-	// Defines how resources deployed by the Deployment stack are locked.
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange struct {
 	After any
-	// Defines how resources deployed by the Deployment stack are locked.
 	Before any
-	// The predicted changes to the properties."
 	Delta any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChange struct {
-	// The predicted value after the deployment is executed.
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DeploymentScopeChange struct {
 	After any
-	// The predicted value before the deployment is executed.
 	Before any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVault struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVault struct {
 	Id any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference struct {
 	KeyVault any
 	SecretName any
 	SecretVersion any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_Extension_Config struct {
 	KeyVaultReference any
 	Type any
 	Value any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_Extension struct {
 	Config any
 	ConfigId any
 	Name any
 	Version any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChanges struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_ResourceConfigurationChanges struct {
 	After any
 	Before any
 	Delta any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges struct {
 	ApiVersion any
 	ChangeCertainty any
 	ChangeType any
@@ -97,26 +84,22 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceCha
 	UnsupportedReason any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes struct {
-	// Predicted changes to the deployment stack deny settings.
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes struct {
 	DenySettingsChange any
-	// Predicted changes to the deployment scope for the deployment stack.
 	DeploymentScopeChange any
-	// List of resource changes predicted by What-If operation.
 	ResourceChanges any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_DebugSetting struct {
-	// Specifies the type of information to log for debugging. The permitted values are none, requestContent, responseContent, or both requestContent and responseContent separated by a comma. The default is none. When setting this value, carefully consider the type of information that is being passed in during deployment. By logging information about the request or response, sensitive data that is retrieved through the deployment operations could potentially be exposed.
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_DebugSetting struct {
 	DetailLevel any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfo struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Diagnostics_AdditionalInfo struct {
 	Info any
 	Type any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Diagnostics struct {
 	AdditionalInfo any
 	Code any
 	Level any
@@ -124,7 +107,7 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics struct 
 	Target any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_Details struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Error_Details struct {
 	AdditionalInfo any
 	Code any
 	Details any
@@ -132,117 +115,88 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_Details struc
 	Target any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error struct {
-	// The error additional info.
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Error struct {
 	AdditionalInfo any
-	// The error code.
 	Code any
-	// The error details.
 	Details any
-	// The error message.
 	Message any
-	// The error target.
 	Target any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputDefinitions struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ExternalInputDefinitions struct {
 	Config any
 	Kind any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputs struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ExternalInputs struct {
 	Value any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Parameters struct {
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Parameters struct {
 	Expression any
 	Reference any
 	Type any
 	Value any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ParametersLink struct {
-	// If included, must match the ContentVersion in the template.
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ParametersLink struct {
 	ContentVersion any
-	// The URI of the parameters file.
 	Uri any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties_TemplateLink struct {
-	// If included, must match the ContentVersion in the template.
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_TemplateLink struct {
 	ContentVersion any
-	// The resourceId of a Template Spec. Use either the id or uri property, but not both.
 	Id any
-	// The query string (for example, a SAS token) to be used with the templateLink URI.
 	QueryString any
-	// The relativePath property can be used to deploy a linked template at a location relative to the parent. If the parent template was linked with a TemplateSpec, this will reference an artifact in the TemplateSpec. If the parent was linked with a URI, the child deployment will be a combination of the parent and relativePath URIs.
 	RelativePath any
-	// The URI of the template to deploy. Use either the uri or id property, but not both.
 	Uri any
 }
 
-type DeploymentstacksDeploymentStacksWhatIfResult_Properties struct {
-	// Defines the behavior of resources that are no longer managed after the stack is updated or deleted.
+type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties struct {
 	ActionOnUnmanage any
-	// Changes predicted to the deployment stack as a result of the what-if operation.
 	Changes any
-	// The correlation id of the last Deployment stack upsert or delete operation. It is in GUID format and is used for tracing.
 	CorrelationId any
-	// The debug setting.
 	DebugSetting any
-	// Defines how resources deployed by the Deployment stack are locked.
 	DenySettings any
-	// The scope at which the initial deployment should be created. If a scope is not specified, it will default to the scope of the deployment stack. Valid scopes are: management group (format: '/providers/Microsoft.Management/managementGroups/{managementGroupId}'), subscription (format: '/subscriptions/{subscriptionId}'), resource group (format: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}').
 	DeploymentScope any
-	// The timestamp for when the deployment stack was last modified. This can be used to determine if the what-if data is still current.
 	DeploymentStackLastModified any
-	// The deployment stack id to use as the basis for comparison.
 	DeploymentStackResourceId any
-	// Deployment stack description. Max length of 4096 characters.
 	Description any
-	// List of resource diagnostics detected by What-If operation.
 	Diagnostics any
-	// The error detail.
 	Error any
-	// The deployment extension configs. Keys of this object are extension aliases as defined in the deployment template.
 	ExtensionConfigs any
-	// External input definitions, used by external tooling to define expected external input values.
 	ExternalInputDefinitions any
-	// External input values, used by external tooling for parameter evaluation.
 	ExternalInputs any
-	// Name and value pairs that define the deployment parameters for the template. Use this element when providing the parameter values directly in the request, rather than linking to an existing parameter file. Use either the parametersLink property or the parameters property, but not both.
 	Parameters any
-	// Entity representing the reference to the deployment parameters.
 	ParametersLink any
-	// State of the deployment stack.
 	ProvisioningState any
-	// The interval to persist the deployment stack what-if result in ISO 8601 format.
 	RetentionInterval any
-	// The template content. You use this element when you want to pass the template syntax directly in the request rather than link to an existing template. It can be a JObject or well-formed JSON string. Use either the templateLink property or the template property, but not both.
 	Template any
-	// Entity representing the reference to the template.
 	TemplateLink any
-	// The level of validation performed on the deployment.
 	ValidationLevel any
 }
 
+type DeploymentstacksDeploymentStacksWhatIfResult_Value struct {
+	Location any
+	Properties any
+	Tags any
+}
+
 type DeploymentstacksDeploymentStacksWhatIfResultConfig struct {
-	DeploymentStacksWhatIfResultName any
+	ManagementGroupId any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResultAttrs struct {
-	DeploymentStacksWhatIfResultName any
-	// The geo-location where the resource lives. Required for subscription and management group scoped stacks. The location is inherited from the resource group for resource group scoped stacks.
-	Location any
-	// DeploymentStack WhatIfResult Properties
-	Properties any
-	// Resource tags.
-	Tags any
+	ManagementGroupId any
+	// The link to the next page of items
+	NextLink any
+	// The DeploymentStacksWhatIfResult items on this page
+	Value any
 }
 
 var DeploymentstacksDeploymentStacksWhatIfResult = ubx.DataSourceBinding{
 	WireType: "azure_resources_deploymentstacks_deployment_stacks_what_if_result",
 	Fields: ubx.FieldMap{
-		"DeploymentStacksWhatIfResultName": ubx.FieldSpec{WireName: "deployment_stacks_what_if_result_name"},
+		"ManagementGroupId": ubx.FieldSpec{WireName: "management_group_id"},
 	},
 }

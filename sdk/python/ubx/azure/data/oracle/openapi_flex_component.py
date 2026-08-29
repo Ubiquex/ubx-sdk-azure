@@ -7,41 +7,37 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiFlexComponent_Properties:
-    # The maximum number of CPU cores that can be enabled on the DB Server for this Flex Component.
+class OpenapiFlexComponent_Value_Properties:
     available_core_count: Any = None
-    # The maximum storage that can be enabled on the Storage Server for this Flex Component.
     available_db_storage_in_gbs: Any = None
-    # The maximum local storage that can be enabled on the DB Server for this Flex Component.
     available_local_storage_in_gbs: Any = None
-    # The maximum memory size that can be enabled on the DB Server for this Flex Component.
     available_memory_in_gbs: Any = None
-    # The compute model of the DB Server for this Flex Component.
     compute_model: Any = None
-    # The description summary for this Flex Component.
     description_summary: Any = None
-    # Hardware Type enum
     hardware_type: Any = None
-    # The minimum number of CPU cores that can be enabled on the DB Server for this Flex Component.
     minimum_core_count: Any = None
-    # The runtime minimum number of CPU cores that can be enabled for this Flex Component.
     runtime_minimum_core_count: Any = None
-    # The name of the DB system shape for this Flex Component.
     shape: Any = None
 
 @dataclasses.dataclass
+class OpenapiFlexComponent_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiFlexComponentConfig:
-    flex_component_name: Any = None
+    shape: Any = None
 
 @dataclasses.dataclass
 class OpenapiFlexComponentAttrs:
-    flex_component_name: Any = None
-    # FlexComponent resource model
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    shape: Any = None
+    # The FlexComponent items on this page
+    value: Any = None
 
 OpenapiFlexComponent = ubx.DataSourceBinding(
     wire_type="azure_oracle_openapi_flex_component",
     fields={
-        "flex_component_name": ubx.FieldSpec(wire_name="flex_component_name"),
+        "shape": ubx.FieldSpec(wire_name="shape"),
     },
 )

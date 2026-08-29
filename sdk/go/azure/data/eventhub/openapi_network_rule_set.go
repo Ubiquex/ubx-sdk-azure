@@ -3,31 +3,31 @@ package eventhub
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiNetworkRuleSet_Properties_IpRules struct {
+type OpenapiNetworkRuleSet_Value_Properties_IpRules struct {
 	Action any
 	IpMask any
 }
 
-type OpenapiNetworkRuleSet_Properties_VirtualNetworkRules_Subnet struct {
+type OpenapiNetworkRuleSet_Value_Properties_VirtualNetworkRules_Subnet struct {
 	Id any
 }
 
-type OpenapiNetworkRuleSet_Properties_VirtualNetworkRules struct {
+type OpenapiNetworkRuleSet_Value_Properties_VirtualNetworkRules struct {
 	IgnoreMissingVnetServiceEndpoint any
 	Subnet any
 }
 
-type OpenapiNetworkRuleSet_Properties struct {
-	// Default Action for Network Rule Set
+type OpenapiNetworkRuleSet_Value_Properties struct {
 	DefaultAction any
-	// List of IpRules
 	IpRules any
-	// This determines if traffic is allowed over public network. By default it is enabled. If value is SecuredByPerimeter then Inbound and Outbound communication is controlled by the network security perimeter and profile's access rules.
 	PublicNetworkAccess any
-	// Value that indicates whether Trusted Service Access is Enabled or not.
 	TrustedServiceAccessEnabled any
-	// List VirtualNetwork Rules
 	VirtualNetworkRules any
+}
+
+type OpenapiNetworkRuleSet_Value struct {
+	Location any
+	Properties any
 }
 
 type OpenapiNetworkRuleSetConfig struct {
@@ -35,11 +35,11 @@ type OpenapiNetworkRuleSetConfig struct {
 }
 
 type OpenapiNetworkRuleSetAttrs struct {
-	// The geo-location where the resource lives
-	Location any
 	NamespaceName any
-	// NetworkRuleSet properties
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The NetworkRuleSet items on this page
+	Value any
 }
 
 var OpenapiNetworkRuleSet = ubx.DataSourceBinding{

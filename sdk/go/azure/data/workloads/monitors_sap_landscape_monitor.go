@@ -3,32 +3,31 @@ package workloads
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type MonitorsSapLandscapeMonitor_Properties_Grouping_Landscape struct {
+type MonitorsSapLandscapeMonitor_Value_Properties_Grouping_Landscape struct {
 	Name any
 	TopSid any
 }
 
-type MonitorsSapLandscapeMonitor_Properties_Grouping struct {
-	// Gets or sets the list of landscape to SID mappings.
+type MonitorsSapLandscapeMonitor_Value_Properties_Grouping struct {
 	Landscape any
-	// Gets or sets the list of Sap Applications to SID mappings.
 	SapApplication any
 }
 
-type MonitorsSapLandscapeMonitor_Properties_TopMetricsThresholds struct {
+type MonitorsSapLandscapeMonitor_Value_Properties_TopMetricsThresholds struct {
 	Green any
 	Name any
 	Red any
 	Yellow any
 }
 
-type MonitorsSapLandscapeMonitor_Properties struct {
-	// Gets or sets the SID groupings by landscape and Environment.
+type MonitorsSapLandscapeMonitor_Value_Properties struct {
 	Grouping any
-	// State of provisioning of the SAP monitor.
 	ProvisioningState any
-	// Gets or sets the list Top Metric Thresholds for SAP Landscape Monitor Dashboard
 	TopMetricsThresholds any
+}
+
+type MonitorsSapLandscapeMonitor_Value struct {
+	Properties any
 }
 
 type MonitorsSapLandscapeMonitorConfig struct {
@@ -37,8 +36,10 @@ type MonitorsSapLandscapeMonitorConfig struct {
 
 type MonitorsSapLandscapeMonitorAttrs struct {
 	MonitorName any
-	// Gets or sets the properties for Sap Landscape Monitor Dashboard.
-	Properties any
+	// The URL to get the next set of SAP Landscape Monitor Dashboard.
+	NextLink any
+	// The list of Sap Landscape Monitor configuration.
+	Value any
 }
 
 var MonitorsSapLandscapeMonitor = ubx.DataSourceBinding{

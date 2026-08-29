@@ -3,31 +3,31 @@ package hybridcompute
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiExtensionValueV2_Properties struct {
-	// Architectures (x64, arms64, etc.) that this extension supports.
+type OpenapiExtensionValueV2_Value_Properties struct {
 	Architecture any
-	// Location of the signature files for the extension.
 	ExtensionSignatureUri any
-	// A list of locations where the extension packages can be found.
 	ExtensionUris any
-	// The operating system (Windows, Linux, etc.) this extension supports.
 	OperatingSystem any
+}
+
+type OpenapiExtensionValueV2_Value struct {
+	Properties any
 }
 
 type OpenapiExtensionValueV2Config struct {
 	ExtensionType any
 	Location any
 	Publisher any
-	Version any
 }
 
 type OpenapiExtensionValueV2Attrs struct {
 	ExtensionType any
 	Location any
-	// Describes Extension Metadata properties.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	Publisher any
-	Version any
+	// The ExtensionValueV2 items on this page
+	Value any
 }
 
 var OpenapiExtensionValueV2 = ubx.DataSourceBinding{
@@ -36,6 +36,5 @@ var OpenapiExtensionValueV2 = ubx.DataSourceBinding{
 		"ExtensionType": ubx.FieldSpec{WireName: "extension_type"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Version": ubx.FieldSpec{WireName: "version"},
 	},
 }

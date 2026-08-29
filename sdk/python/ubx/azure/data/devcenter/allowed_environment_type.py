@@ -7,28 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class AllowedEnvironmentType_Properties:
-    # The display name of the allowed environment type.
+class AllowedEnvironmentType_Value_Properties:
     display_name: Any = None
-    # Provisioning state of the resource.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
+class AllowedEnvironmentType_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class AllowedEnvironmentTypeConfig:
-    environment_type_name: Any = None
     project_name: Any = None
 
 @dataclasses.dataclass
 class AllowedEnvironmentTypeAttrs:
-    environment_type_name: Any = None
+    # URL to get the next set of results if there are any.
+    next_link: Any = None
     project_name: Any = None
-    # Properties of an allowed environment type.
-    properties: Any = None
+    # Current page of results.
+    value: Any = None
 
 AllowedEnvironmentType = ubx.DataSourceBinding(
     wire_type="azure_devcenter_allowed_environment_type",
     fields={
-        "environment_type_name": ubx.FieldSpec(wire_name="environment_type_name"),
         "project_name": ubx.FieldSpec(wire_name="project_name"),
     },
 )

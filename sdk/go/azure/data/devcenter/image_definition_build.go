@@ -3,39 +3,36 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ImageDefinitionBuild_Properties_ErrorDetails struct {
-	// An identifier for the error.
+type ImageDefinitionBuild_Value_Properties_ErrorDetails struct {
 	Code any
-	// A message describing the error.
 	Message any
 }
 
-type ImageDefinitionBuild_Properties_ImageReference struct {
-	// The actual version of the image after use. When id references a gallery image latest version, this will indicate the actual version in use.
+type ImageDefinitionBuild_Value_Properties_ImageReference struct {
 	ExactVersion any
-	// Image ID, or Image version ID. When Image ID is provided, its latest version will be used.
 	Id any
 }
 
-type ImageDefinitionBuild_Properties struct {
-	// End time of the task group.
+type ImageDefinitionBuild_Value_Properties struct {
 	EndTime any
-	// Image creation error details
 	ErrorDetails any
-	// Image reference information
 	ImageReference any
-	// Start time of the task group.
 	StartTime any
-	// The state of an Image Definition Build.
 	Status any
+}
+
+type ImageDefinitionBuild_Value struct {
+	Properties any
 }
 
 type ImageDefinitionBuildConfig struct {
 }
 
 type ImageDefinitionBuildAttrs struct {
-	// Properties of an Image Definition Build.
-	Properties any
+	// URL to get the next set of results if there are any.
+	NextLink any
+	// Current page of results.
+	Value any
 }
 
 var ImageDefinitionBuild = ubx.DataSourceBinding{

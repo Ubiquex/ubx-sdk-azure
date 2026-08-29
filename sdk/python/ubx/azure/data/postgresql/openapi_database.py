@@ -7,28 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDatabase_Properties:
-    # Character set of the database.
+class OpenapiDatabase_Value_Properties:
     charset: Any = None
-    # Collation of the database.
     collation: Any = None
 
 @dataclasses.dataclass
+class OpenapiDatabase_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiDatabaseConfig:
-    database_name: Any = None
     server_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiDatabaseAttrs:
-    database_name: Any = None
-    # Properties of a database.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
+    # The Database items on this page
+    value: Any = None
 
 OpenapiDatabase = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_database",
     fields={
-        "database_name": ubx.FieldSpec(wire_name="database_name"),
         "server_name": ubx.FieldSpec(wire_name="server_name"),
     },
 )

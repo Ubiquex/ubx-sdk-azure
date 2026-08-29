@@ -7,49 +7,40 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class TopicTypeInfo_Properties_AdditionalEnforcedPermissions:
+class TopicTypeInfo_Value_Properties_AdditionalEnforcedPermissions:
     is_data_action: Any = None
     permission_name: Any = None
 
 @dataclasses.dataclass
-class TopicTypeInfo_Properties:
-    # Permissions which are enforced for creating and updating system topics of this this topic type.
+class TopicTypeInfo_Value_Properties:
     additional_enforced_permissions: Any = None
-    # Flag to indicate that a topic type can support both regional or global system topics.
     are_regional_and_global_sources_supported: Any = None
-    # Description of the topic type.
     description: Any = None
-    # Display Name for the topic type.
     display_name: Any = None
-    # Namespace of the provider of the topic type.
     provider: Any = None
-    # Provisioning state of the topic type.
     provisioning_state: Any = None
-    # Region type of the resource.
     resource_region_type: Any = None
-    # Source resource format.
     source_resource_format: Any = None
-    # List of locations supported by this topic type.
     supported_locations: Any = None
-    # Supported source scopes.
     supported_scopes_for_source: Any = None
+
+@dataclasses.dataclass
+class TopicTypeInfo_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class TopicTypeInfoConfig:
     api_version: Any = None
-    topic_type_name: Any = None
 
 @dataclasses.dataclass
 class TopicTypeInfoAttrs:
     api_version: Any = None
-    # Properties of a topic type.
-    properties: Any = None
-    topic_type_name: Any = None
+    # A collection of topic types
+    value: Any = None
 
 TopicTypeInfo = ubx.DataSourceBinding(
     wire_type="azure_eventgrid_topic_type_info",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
-        "topic_type_name": ubx.FieldSpec(wire_name="topic_type_name"),
     },
 )

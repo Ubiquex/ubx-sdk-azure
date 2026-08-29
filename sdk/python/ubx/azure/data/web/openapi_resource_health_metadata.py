@@ -7,27 +7,28 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiResourceHealthMetadata_Properties:
-    # The category that the resource matches in the RHC Policy File
+class OpenapiResourceHealthMetadata_Value_Properties:
     category: Any = None
-    # Is there a health signal for the resource
     signal_availability: Any = None
 
 @dataclasses.dataclass
+class OpenapiResourceHealthMetadata_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiResourceHealthMetadataConfig:
-    name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiResourceHealthMetadataAttrs:
-    # Kind of resource.
-    kind: Any = None
-    name: Any = None
-    # ResourceHealthMetadata resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The ResourceHealthMetadata items on this page
+    value: Any = None
 
 OpenapiResourceHealthMetadata = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_resource_health_metadata",
     fields={
-        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

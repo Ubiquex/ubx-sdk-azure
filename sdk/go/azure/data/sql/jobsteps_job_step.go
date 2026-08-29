@@ -3,78 +3,58 @@ package sql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type JobstepsJobStep_Properties_Action struct {
-	// The source of the action to execute.
+type JobstepsJobStep_Value_Properties_Action struct {
 	Source any
-	// Type of action being executed by the job step.
 	Type any
-	// The action value, for example the text of the T-SQL script to execute.
 	Value any
 }
 
-type JobstepsJobStep_Properties_ExecutionOptions struct {
-	// Initial delay between retries for job step execution.
+type JobstepsJobStep_Value_Properties_ExecutionOptions struct {
 	InitialRetryIntervalSeconds any
-	// The maximum amount of time to wait between retries for job step execution.
 	MaximumRetryIntervalSeconds any
-	// Maximum number of times the job step will be reattempted if the first attempt fails.
 	RetryAttempts any
-	// The backoff multiplier for the time between retries.
 	RetryIntervalBackoffMultiplier any
-	// Execution timeout for the job step.
 	TimeoutSeconds any
 }
 
-type JobstepsJobStep_Properties_Output struct {
-	// The resource ID of the credential to use to connect to the output destination.
+type JobstepsJobStep_Value_Properties_Output struct {
 	Credential any
-	// The output destination database.
 	DatabaseName any
-	// The output destination resource group.
 	ResourceGroupName any
-	// The output destination schema.
 	SchemaName any
-	// The output destination server name.
 	ServerName any
-	// Universally Unique Identifier
 	SubscriptionId any
-	// The output destination table.
 	TableName any
-	// The output destination type.
 	Type any
 }
 
-type JobstepsJobStep_Properties struct {
-	// The action to be executed by a job step.
+type JobstepsJobStep_Value_Properties struct {
 	Action any
-	// The resource ID of the job credential that will be used to connect to the targets.
 	Credential any
-	// The execution options of a job step.
 	ExecutionOptions any
-	// The output configuration of a job step.
 	Output any
-	// The job step's index within the job. If not specified when creating the job step, it will be created as the last step. If not specified when updating the job step, the step id is not modified.
 	StepId any
-	// The resource ID of the target group that the job step will be executed on.
 	TargetGroup any
+}
+
+type JobstepsJobStep_Value struct {
+	Properties any
 }
 
 type JobstepsJobStepConfig struct {
 	JobAgentName any
 	JobName any
-	JobVersion any
 	ServerName any
-	StepName any
 }
 
 type JobstepsJobStepAttrs struct {
 	JobAgentName any
 	JobName any
-	JobVersion any
-	// Properties of a job step.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ServerName any
-	StepName any
+	// The JobStep items on this page
+	Value any
 }
 
 var JobstepsJobStep = ubx.DataSourceBinding{
@@ -82,8 +62,6 @@ var JobstepsJobStep = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"JobAgentName": ubx.FieldSpec{WireName: "job_agent_name"},
 		"JobName": ubx.FieldSpec{WireName: "job_name"},
-		"JobVersion": ubx.FieldSpec{WireName: "job_version"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
-		"StepName": ubx.FieldSpec{WireName: "step_name"},
 	},
 }

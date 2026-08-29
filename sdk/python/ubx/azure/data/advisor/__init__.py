@@ -4,12 +4,8 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .configuration_list_result import ConfigurationListResult, ConfigurationListResultConfig
+from .config_data import ConfigData, ConfigDataConfig
 from .metadata_entity import MetadataEntity, MetadataEntityConfig
-from .metadata_entity_list_result import MetadataEntityListResult, MetadataEntityListResultConfig
-from .operation_entity_list_result import OperationEntityListResult, OperationEntityListResultConfig
 from .resource_recommendation_base import ResourceRecommendationBase, ResourceRecommendationBaseConfig
-from .resource_recommendation_base_list_result import ResourceRecommendationBaseListResult, ResourceRecommendationBaseListResultConfig
 from .score_entity import ScoreEntity, ScoreEntityConfig
-from .score_response import ScoreResponse, ScoreResponseConfig
-from .suppression_contract_list_result import SuppressionContractListResult, SuppressionContractListResultConfig
+from .suppression_contract import SuppressionContract, SuppressionContractConfig

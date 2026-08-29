@@ -7,46 +7,38 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiMaintenance_Properties:
-    # The max time the maintenance can be rescheduled.
+class OpenapiMaintenance_Value_Properties:
     maintenance_available_schedule_max_time: Any = None
-    # The min time the maintenance can be rescheduled.
     maintenance_available_schedule_min_time: Any = None
-    # The maintenance description.
     maintenance_description: Any = None
-    # The end time for a maintenance.
     maintenance_end_time: Any = None
-    # The end time for a maintenance execution.
     maintenance_execution_end_time: Any = None
-    # The start time for a maintenance execution.
     maintenance_execution_start_time: Any = None
-    # The start time for a maintenance.
     maintenance_start_time: Any = None
-    # The current status of this maintenance.
     maintenance_state: Any = None
-    # The maintenance title.
     maintenance_title: Any = None
-    # The type of this maintenance.
     maintenance_type: Any = None
-    # The current provisioning state.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
+class OpenapiMaintenance_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiMaintenanceConfig:
-    maintenance_name: Any = None
     server_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiMaintenanceAttrs:
-    maintenance_name: Any = None
-    # The properties of a maintenance resource.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
+    # The Maintenance items on this page
+    value: Any = None
 
 OpenapiMaintenance = ubx.DataSourceBinding(
     wire_type="azure_mysql_openapi_maintenance",
     fields={
-        "maintenance_name": ubx.FieldSpec(wire_name="maintenance_name"),
         "server_name": ubx.FieldSpec(wire_name="server_name"),
     },
 )

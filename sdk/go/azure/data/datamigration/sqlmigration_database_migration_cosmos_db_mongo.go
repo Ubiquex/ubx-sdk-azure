@@ -3,7 +3,7 @@ package datamigration
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList_MigrationProgressDetails struct {
+type SqlmigrationDatabaseMigrationCosmosDbMongo_Value_Properties_CollectionList_MigrationProgressDetails struct {
 	DurationInSeconds any
 	MigrationError any
 	MigrationStatus any
@@ -11,7 +11,7 @@ type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList_Migrat
 	SourceDocumentCount any
 }
 
-type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList struct {
+type SqlmigrationDatabaseMigrationCosmosDbMongo_Value_Properties_CollectionList struct {
 	MigrationProgressDetails any
 	SourceCollection any
 	SourceDatabase any
@@ -19,33 +19,27 @@ type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList struct
 	TargetDatabase any
 }
 
-type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_SourceMongoConnection struct {
-	// ConnectionString to connect to Mongo.
+type SqlmigrationDatabaseMigrationCosmosDbMongo_Value_Properties_SourceMongoConnection struct {
 	ConnectionString any
-	// Host of mongo connection.
 	Host any
-	// Password to connect to Mongo.
 	Password any
-	// Port of mongo connection.
 	Port any
-	// Whether to UseSsl or UseTls to connect to Mongo. Default is true.
 	UseSsl any
-	// User name to connect to Mongo.
 	UserName any
 }
 
-type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties struct {
-	// List of Mongo Collections to be migrated.
+type SqlmigrationDatabaseMigrationCosmosDbMongo_Value_Properties struct {
 	CollectionList any
-	// Mongo Connection
 	SourceMongoConnection any
-	// Mongo Connection
 	TargetMongoConnection any
+}
+
+type SqlmigrationDatabaseMigrationCosmosDbMongo_Value struct {
+	Properties any
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongoConfig struct {
 	ApiVersion any
-	MigrationName any
 	ResourceGroupName any
 	SubscriptionId any
 	TargetResourceName any
@@ -53,19 +47,17 @@ type SqlmigrationDatabaseMigrationCosmosDbMongoConfig struct {
 
 type SqlmigrationDatabaseMigrationCosmosDbMongoAttrs struct {
 	ApiVersion any
-	MigrationName any
-	// Database Migration Resource properties for CosmosDb for Mongo.
-	Properties any
+	NextLink any
 	ResourceGroupName any
 	SubscriptionId any
 	TargetResourceName any
+	Value any
 }
 
 var SqlmigrationDatabaseMigrationCosmosDbMongo = ubx.DataSourceBinding{
 	WireType: "azure_datamigration_sqlmigration_database_migration_cosmos_db_mongo",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"MigrationName": ubx.FieldSpec{WireName: "migration_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 		"TargetResourceName": ubx.FieldSpec{WireName: "target_resource_name"},

@@ -3,56 +3,43 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiSiteConfigResource_Properties_ApiDefinition struct {
-	// The URL of the API definition.
+type OpenapiSiteConfigResource_Value_Properties_ApiDefinition struct {
 	Url any
 }
 
-type OpenapiSiteConfigResource_Properties_ApiManagementConfig struct {
-	// APIM-Api Identifier.
+type OpenapiSiteConfigResource_Value_Properties_ApiManagementConfig struct {
 	Id any
 }
 
-type OpenapiSiteConfigResource_Properties_AppSettings struct {
+type OpenapiSiteConfigResource_Value_Properties_AppSettings struct {
 	Name any
 	Value any
 }
 
-type OpenapiSiteConfigResource_Properties_AutoHealRules_Actions_CustomAction struct {
-	// Executable to be run.
+type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Actions_CustomAction struct {
 	Exe any
-	// Parameters for the executable.
 	Parameters any
 }
 
-type OpenapiSiteConfigResource_Properties_AutoHealRules_Actions struct {
-	// Predefined action to be taken.
+type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Actions struct {
 	ActionType any
-	// Custom action to be executed when an auto heal rule is triggered.
 	CustomAction any
-	// Minimum time the process must execute before taking the action
 	MinProcessExecutionTime any
 }
 
-type OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_Requests struct {
-	// Request Count.
+type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Triggers_Requests struct {
 	Count any
-	// Time interval.
 	TimeInterval any
 }
 
-type OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_SlowRequests struct {
-	// Request Count.
+type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Triggers_SlowRequests struct {
 	Count any
-	// Request Path.
 	Path any
-	// Time interval.
 	TimeInterval any
-	// Time taken.
 	TimeTaken any
 }
 
-type OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_StatusCodes struct {
+type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Triggers_StatusCodes struct {
 	Count any
 	Path any
 	Status any
@@ -61,36 +48,28 @@ type OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_StatusCodes str
 	Win32Status any
 }
 
-type OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_StatusCodesRange struct {
+type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Triggers_StatusCodesRange struct {
 	Count any
 	Path any
 	StatusCodes any
 	TimeInterval any
 }
 
-type OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers struct {
-	// A rule based on private bytes.
+type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Triggers struct {
 	PrivateBytesInKb any
-	// Trigger based on total requests.
 	Requests any
-	// Trigger based on request execution time.
 	SlowRequests any
-	// A rule based on multiple Slow Requests Rule with path
 	SlowRequestsWithPath any
-	// A rule based on status codes.
 	StatusCodes any
-	// A rule based on status codes ranges.
 	StatusCodesRange any
 }
 
-type OpenapiSiteConfigResource_Properties_AutoHealRules struct {
-	// Actions which to take by the auto-heal module when a rule is triggered.
+type OpenapiSiteConfigResource_Value_Properties_AutoHealRules struct {
 	Actions any
-	// Triggers for auto-heal.
 	Triggers any
 }
 
-type OpenapiSiteConfigResource_Properties_AzureStorageAccounts struct {
+type OpenapiSiteConfigResource_Value_Properties_AzureStorageAccounts struct {
 	AccessKey any
 	AccountName any
 	MountPath any
@@ -100,20 +79,18 @@ type OpenapiSiteConfigResource_Properties_AzureStorageAccounts struct {
 	Type any
 }
 
-type OpenapiSiteConfigResource_Properties_ConnectionStrings struct {
+type OpenapiSiteConfigResource_Value_Properties_ConnectionStrings struct {
 	ConnectionString any
 	Name any
 	Type any
 }
 
-type OpenapiSiteConfigResource_Properties_Cors struct {
-	// Gets or sets the list of origins that should be allowed to make cross-origin calls (for example: http://example.com:12345). Use "*" to allow all.
+type OpenapiSiteConfigResource_Value_Properties_Cors struct {
 	AllowedOrigins any
-	// Gets or sets whether CORS requests with credentials are allowed. See https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Requests_with_credentials for more details.
 	SupportCredentials any
 }
 
-type OpenapiSiteConfigResource_Properties_Experiments_RampUpRules struct {
+type OpenapiSiteConfigResource_Value_Properties_Experiments_RampUpRules struct {
 	ActionHostName any
 	ChangeDecisionCallbackUrl any
 	ChangeIntervalInMinutes any
@@ -124,18 +101,17 @@ type OpenapiSiteConfigResource_Properties_Experiments_RampUpRules struct {
 	ReroutePercentage any
 }
 
-type OpenapiSiteConfigResource_Properties_Experiments struct {
-	// List of ramp-up rules.
+type OpenapiSiteConfigResource_Value_Properties_Experiments struct {
 	RampUpRules any
 }
 
-type OpenapiSiteConfigResource_Properties_HandlerMappings struct {
+type OpenapiSiteConfigResource_Value_Properties_HandlerMappings struct {
 	Arguments any
 	Extension any
 	ScriptProcessor any
 }
 
-type OpenapiSiteConfigResource_Properties_IpSecurityRestrictions struct {
+type OpenapiSiteConfigResource_Value_Properties_IpSecurityRestrictions struct {
 	Action any
 	Description any
 	Headers any
@@ -149,201 +125,121 @@ type OpenapiSiteConfigResource_Properties_IpSecurityRestrictions struct {
 	VnetTrafficTag any
 }
 
-type OpenapiSiteConfigResource_Properties_Limits struct {
-	// Maximum allowed disk size usage in MB.
+type OpenapiSiteConfigResource_Value_Properties_Limits struct {
 	MaxDiskSizeInMb any
-	// Maximum allowed memory usage in MB.
 	MaxMemoryInMb any
-	// Maximum allowed CPU usage percentage.
 	MaxPercentageCpu any
 }
 
-type OpenapiSiteConfigResource_Properties_MachineKey struct {
-	// Algorithm used for decryption.
+type OpenapiSiteConfigResource_Value_Properties_MachineKey struct {
 	Decryption any
-	// Decryption key.
 	DecryptionKey any
-	// MachineKey validation.
 	Validation any
-	// Validation key.
 	ValidationKey any
 }
 
-type OpenapiSiteConfigResource_Properties_Push_Properties struct {
-	// Gets or sets a JSON string containing a list of dynamic tags that will be evaluated from user claims in the push registration endpoint.
+type OpenapiSiteConfigResource_Value_Properties_Push_Properties struct {
 	DynamicTagsJson any
-	// Gets or sets a flag indicating whether the Push endpoint is enabled.
 	IsPushEnabled any
-	// Gets or sets a JSON string containing a list of tags that are whitelisted for use by the push registration endpoint.
 	TagWhitelistJson any
-	// Gets or sets a JSON string containing a list of tags that require user authentication to be used in the push registration endpoint. Tags can consist of alphanumeric characters and the following: '_', '@', '#', '.', ':', '-'. Validation should be performed at the PushRequestHandler.
 	TagsRequiringAuth any
 }
 
-type OpenapiSiteConfigResource_Properties_Push struct {
-	// PushSettings resource specific properties
+type OpenapiSiteConfigResource_Value_Properties_Push struct {
 	Properties any
 }
 
-type OpenapiSiteConfigResource_Properties_VirtualApplications_VirtualDirectories struct {
+type OpenapiSiteConfigResource_Value_Properties_VirtualApplications_VirtualDirectories struct {
 	PhysicalPath any
 	VirtualPath any
 }
 
-type OpenapiSiteConfigResource_Properties_VirtualApplications struct {
+type OpenapiSiteConfigResource_Value_Properties_VirtualApplications struct {
 	PhysicalPath any
 	PreloadEnabled any
 	VirtualDirectories any
 	VirtualPath any
 }
 
-type OpenapiSiteConfigResource_Properties struct {
-	// Flag to use Managed Identity Creds for ACR pull
+type OpenapiSiteConfigResource_Value_Properties struct {
 	AcrUseManagedIdentityCreds any
-	// If using user managed identity, the user managed identity ClientId
 	AcrUserManagedIdentityId any
-	// <code>true</code> if Always On is enabled; otherwise, <code>false</code>.
 	AlwaysOn any
-	// Information about the formal API definition for the app.
 	ApiDefinition any
-	// Azure API management (APIM) configuration linked to the app.
 	ApiManagementConfig any
-	// App command line to launch.
 	AppCommandLine any
-	// Application settings. This property is not returned in response to normal create and read requests since it may contain sensitive information.
 	AppSettings any
-	// <code>true</code> if Auto Heal is enabled; otherwise, <code>false</code>.
 	AutoHealEnabled any
-	// Rules that can be defined for auto-heal.
 	AutoHealRules any
-	// Auto-swap slot name.
 	AutoSwapSlotName any
-	// List of Azure Storage Accounts.
 	AzureStorageAccounts any
-	// Connection strings. This property is not returned in response to normal create and read requests since it may contain sensitive information.
 	ConnectionStrings any
-	// Cross-Origin Resource Sharing (CORS) settings for the app.
 	Cors any
-	// Default documents.
 	DefaultDocuments any
-	// <code>true</code> if detailed error logging is enabled; otherwise, <code>false</code>.
 	DetailedErrorLoggingEnabled any
-	// Document root.
 	DocumentRoot any
-	// Maximum number of workers that a site can scale out to. This setting only applies to apps in plans where ElasticScaleEnabled is <code>true</code>
 	ElasticWebAppScaleLimit any
-	// Routing rules in production experiments.
 	Experiments any
-	// State of FTP / FTPS service
 	FtpsState any
-	// Maximum number of workers that a site can scale out to. This setting only applies to the Consumption and Elastic Premium Plans
 	FunctionAppScaleLimit any
-	// Gets or sets a value indicating whether functions runtime scale monitoring is enabled. When enabled, the ScaleController will not monitor event sources directly, but will instead call to the runtime to get scale status.
 	FunctionsRuntimeScaleMonitoringEnabled any
-	// Handler mappings.
 	HandlerMappings any
-	// Health check path
 	HealthCheckPath any
-	// Http20Enabled: configures a web site to allow clients to connect over http2.0
 	Http20Enabled any
-	// Http20ProxyFlag: Configures a website to allow http2.0 to pass be proxied all the way to the app. 0 = disabled, 1 = pass through all http2 traffic, 2 = pass through gRPC only.
 	Http20ProxyFlag any
-	// <code>true</code> if HTTP logging is enabled; otherwise, <code>false</code>.
 	HttpLoggingEnabled any
-	// IP security restrictions for main.
 	IpSecurityRestrictions any
-	// Default action for main access restriction if no rules are matched.
 	IpSecurityRestrictionsDefaultAction any
-	// Java container.
 	JavaContainer any
-	// Java container version.
 	JavaContainerVersion any
-	// Java version.
 	JavaVersion any
-	// Identity to use for Key Vault Reference authentication.
 	KeyVaultReferenceIdentity any
-	// Metric limits set on an app.
 	Limits any
-	// Linux App Framework and version
 	LinuxFxVersion any
-	// Site load balancing.
 	LoadBalancing any
-	// <code>true</code> to enable local MySQL; otherwise, <code>false</code>.
 	LocalMySqlEnabled any
-	// HTTP logs directory size limit.
 	LogsDirectorySizeLimit any
-	// MachineKey of an app.
 	MachineKey any
-	// Managed pipeline mode.
 	ManagedPipelineMode any
-	// Managed Service Identity Id
 	ManagedServiceIdentityId any
-	// Application metadata. This property cannot be retrieved, since it may contain secrets.
 	Metadata any
-	// The minimum strength TLS cipher suite allowed for an application
 	MinTlsCipherSuite any
-	// MinTlsVersion: configures the minimum version of TLS required for SSL requests
 	MinTlsVersion any
-	// Number of minimum instance count for a site This setting only applies to the Elastic Plans
 	MinimumElasticInstanceCount any
-	// .NET Framework version.
 	NetFrameworkVersion any
-	// Version of Node.js.
 	NodeVersion any
-	// Number of workers.
 	NumberOfWorkers any
-	// Version of PHP.
 	PhpVersion any
-	// Version of PowerShell.
 	PowerShellVersion any
-	// Number of preWarmed instances. This setting only applies to the Consumption and Elastic Plans
 	PreWarmedInstanceCount any
-	// Property to allow or block all public traffic.
 	PublicNetworkAccess any
-	// Publishing user name.
 	PublishingUsername any
-	// Push settings for the App.
 	Push any
-	// Version of Python.
 	PythonVersion any
-	// <code>true</code> if remote debugging is enabled; otherwise, <code>false</code>.
 	RemoteDebuggingEnabled any
-	// Remote debugging version.
 	RemoteDebuggingVersion any
-	// <code>true</code> if request tracing is enabled; otherwise, <code>false</code>.
 	RequestTracingEnabled any
-	// Request tracing expiration time.
 	RequestTracingExpirationTime any
-	// IP security restrictions for scm.
 	ScmIpSecurityRestrictions any
-	// Default action for main access restriction if no rules are matched.
 	ScmIpSecurityRestrictionsDefaultAction any
-	// IP security restrictions for scm to use main.
 	ScmIpSecurityRestrictionsUseMain any
-	// MinTlsVersion: configures the minimum version of TLS required for SSL requests
 	ScmMinTlsVersion any
-	// SCM type.
 	ScmType any
-	// Tracing options.
 	TracingOptions any
-	// <code>true</code> to use 32-bit worker process; otherwise, <code>false</code>.
 	Use32BitWorkerProcess any
-	// Virtual applications.
 	VirtualApplications any
-	// Virtual Network name.
 	VnetName any
-	// The number of private ports assigned to this app. These will be assigned dynamically on runtime.
 	VnetPrivatePortsCount any
-	// Virtual Network Route All enabled. This causes all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied.
 	VnetRouteAllEnabled any
-	// <code>true</code> if WebSocket is enabled; otherwise, <code>false</code>.
 	WebSocketsEnabled any
-	// Sets the time zone a site uses for generating timestamps. Compatible with Linux and Windows App Service. Setting the WEBSITE_TIME_ZONE app setting takes precedence over this config. For Linux, expects tz database values https://www.iana.org/time-zones (for a quick reference see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For Windows, expects one of the time zones listed under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones
 	WebsiteTimeZone any
-	// Xenon App Framework and version
 	WindowsFxVersion any
-	// Explicit Managed Service Identity Id
 	XManagedServiceIdentityId any
+}
+
+type OpenapiSiteConfigResource_Value struct {
+	Kind any
+	Properties any
 }
 
 type OpenapiSiteConfigResourceConfig struct {
@@ -351,11 +247,11 @@ type OpenapiSiteConfigResourceConfig struct {
 }
 
 type OpenapiSiteConfigResourceAttrs struct {
-	// Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
-	Kind any
 	Name any
-	// Configuration of an App Service app.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The SiteConfigResource items on this page
+	Value any
 }
 
 var OpenapiSiteConfigResource = ubx.DataSourceBinding{

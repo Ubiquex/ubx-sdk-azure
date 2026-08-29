@@ -4,10 +4,9 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .accounts_list_response import AccountsListResponse, AccountsListResponseConfig
-from .monitored_subscription_properties_list import MonitoredSubscriptionPropertiesList, MonitoredSubscriptionPropertiesListConfig
-from .new_relic_monitor_resource_list_result import NewRelicMonitorResourceListResult, NewRelicMonitorResourceListResultConfig
-from .new_relic_observability import NewRelicObservability, NewRelicObservabilityConfig
-from .organizations_list_response import OrganizationsListResponse, OrganizationsListResponseConfig
-from .plan_data_list_response import PlanDataListResponse, PlanDataListResponseConfig
-from .tag_rule_list_result import TagRuleListResult, TagRuleListResultConfig
+from .account_resource import AccountResource, AccountResourceConfig
+from .monitored_subscription_properties import MonitoredSubscriptionProperties, MonitoredSubscriptionPropertiesConfig
+from .new_relic_monitor_resource import NewRelicMonitorResource, NewRelicMonitorResourceConfig
+from .organization_resource import OrganizationResource, OrganizationResourceConfig
+from .plan_data_resource import PlanDataResource, PlanDataResourceConfig
+from .tag_rule import TagRule, TagRuleConfig

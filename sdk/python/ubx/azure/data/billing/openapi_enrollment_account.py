@@ -7,49 +7,59 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiEnrollmentAccount_Properties:
-    # The owner of the enrollment account.
+class OpenapiEnrollmentAccount_Value_Properties:
     account_owner: Any = None
-    # The authorization type of the enrollment account.
     auth_type: Any = None
-    # The cost center associated with the enrollment account.
     cost_center: Any = None
-    # The name of the department under which the enrollment account exists.
     department_display_name: Any = None
-    # The ID that uniquely identifies the department.
     department_id: Any = None
-    # The name of the enrollment account.
     display_name: Any = None
-    # The date of expiration of the enrollment account.
     end_date: Any = None
-    # Boolean flag which enables subscribers to run development and testing workloads on Azure at special Dev/Test rates.
     is_dev_test_enabled: Any = None
-    # The date from which the enrollment account became valid and functional.
     start_date: Any = None
-    # The status of the enrollment account.
     status: Any = None
+
+@dataclasses.dataclass
+class OpenapiEnrollmentAccount_Value:
+    properties: Any = None
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiEnrollmentAccountConfig:
     billing_account_name: Any = None
+    count: Any = None
     department_name: Any = None
-    enrollment_account_name: Any = None
+    filter: Any = None
+    order_by: Any = None
+    search: Any = None
+    skip: Any = None
+    top: Any = None
 
 @dataclasses.dataclass
 class OpenapiEnrollmentAccountAttrs:
     billing_account_name: Any = None
+    count: Any = None
     department_name: Any = None
-    enrollment_account_name: Any = None
-    # It is an organizational hierarchy within a billing account to administer and manage azure costs.
-    properties: Any = None
-    # Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
-    tags: Any = None
+    filter: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    order_by: Any = None
+    search: Any = None
+    skip: Any = None
+    top: Any = None
+    # The EnrollmentAccount items on this page
+    value: Any = None
 
 OpenapiEnrollmentAccount = ubx.DataSourceBinding(
     wire_type="azure_billing_openapi_enrollment_account",
     fields={
         "billing_account_name": ubx.FieldSpec(wire_name="billing_account_name"),
+        "count": ubx.FieldSpec(wire_name="count"),
         "department_name": ubx.FieldSpec(wire_name="department_name"),
-        "enrollment_account_name": ubx.FieldSpec(wire_name="enrollment_account_name"),
+        "filter": ubx.FieldSpec(wire_name="filter"),
+        "order_by": ubx.FieldSpec(wire_name="order_by"),
+        "search": ubx.FieldSpec(wire_name="search"),
+        "skip": ubx.FieldSpec(wire_name="skip"),
+        "top": ubx.FieldSpec(wire_name="top"),
     },
 )

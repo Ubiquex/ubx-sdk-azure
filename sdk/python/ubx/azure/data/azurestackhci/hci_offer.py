@@ -7,43 +7,38 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class HciOffer_Properties_SkuMappings:
+class HciOffer_Value_Properties_SkuMappings:
     catalog_plan_id: Any = None
     marketplace_sku_id: Any = None
     marketplace_sku_versions: Any = None
 
 @dataclasses.dataclass
-class HciOffer_Properties:
-    # JSON serialized catalog content of the offer
+class HciOffer_Value_Properties:
     content: Any = None
-    # The API version of the catalog service used to serve the catalog content
     content_version: Any = None
-    # Provisioning State
     provisioning_state: Any = None
-    # Identifier of the Publisher for the offer
     publisher_id: Any = None
-    # Array of SKU mappings
     sku_mappings: Any = None
+
+@dataclasses.dataclass
+class HciOffer_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class HciOfferConfig:
     cluster_name: Any = None
-    offer_name: Any = None
-    publisher_name: Any = None
 
 @dataclasses.dataclass
 class HciOfferAttrs:
     cluster_name: Any = None
-    offer_name: Any = None
-    # Publisher properties.
-    properties: Any = None
-    publisher_name: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Offer items on this page
+    value: Any = None
 
 HciOffer = ubx.DataSourceBinding(
     wire_type="azure_azurestackhci_hci_offer",
     fields={
         "cluster_name": ubx.FieldSpec(wire_name="cluster_name"),
-        "offer_name": ubx.FieldSpec(wire_name="offer_name"),
-        "publisher_name": ubx.FieldSpec(wire_name="publisher_name"),
     },
 )

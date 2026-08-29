@@ -7,22 +7,27 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class SqlpoolSqlPoolTable_Value:
+    pass
+
+@dataclasses.dataclass
 class SqlpoolSqlPoolTableConfig:
     schema_name: Any = None
     sql_pool_name: Any = None
-    table_name: Any = None
 
 @dataclasses.dataclass
 class SqlpoolSqlPoolTableAttrs:
+    # Link to retrieve next page of results.
+    next_link: Any = None
     schema_name: Any = None
     sql_pool_name: Any = None
-    table_name: Any = None
+    # Array of results.
+    value: Any = None
 
 SqlpoolSqlPoolTable = ubx.DataSourceBinding(
     wire_type="azure_synapse_sqlpool_sql_pool_table",
     fields={
         "schema_name": ubx.FieldSpec(wire_name="schema_name"),
         "sql_pool_name": ubx.FieldSpec(wire_name="sql_pool_name"),
-        "table_name": ubx.FieldSpec(wire_name="table_name"),
     },
 )

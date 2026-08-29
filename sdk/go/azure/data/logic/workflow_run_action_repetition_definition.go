@@ -3,20 +3,22 @@ package logic
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type WorkflowRunActionRepetitionDefinition_Properties_RepetitionIndexes struct {
+type WorkflowRunActionRepetitionDefinition_Value_Properties_RepetitionIndexes struct {
 	ItemIndex any
 	ScopeName any
 }
 
-type WorkflowRunActionRepetitionDefinition_Properties struct {
-	// The repetition indexes.
+type WorkflowRunActionRepetitionDefinition_Value_Properties struct {
 	RepetitionIndexes any
+}
+
+type WorkflowRunActionRepetitionDefinition_Value struct {
+	Properties any
 }
 
 type WorkflowRunActionRepetitionDefinitionConfig struct {
 	ActionName any
 	ApiVersion any
-	RepetitionName any
 	ResourceGroupName any
 	RunName any
 	SubscriptionId any
@@ -26,12 +28,12 @@ type WorkflowRunActionRepetitionDefinitionConfig struct {
 type WorkflowRunActionRepetitionDefinitionAttrs struct {
 	ActionName any
 	ApiVersion any
-	// The workflow run action repetition properties definition.
-	Properties any
-	RepetitionName any
+	// The link used to get the next page of recommendations.
+	NextLink any
 	ResourceGroupName any
 	RunName any
 	SubscriptionId any
+	Value any
 	WorkflowName any
 }
 
@@ -40,7 +42,6 @@ var WorkflowRunActionRepetitionDefinition = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"ActionName": ubx.FieldSpec{WireName: "action_name"},
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"RepetitionName": ubx.FieldSpec{WireName: "repetition_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"RunName": ubx.FieldSpec{WireName: "run_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},

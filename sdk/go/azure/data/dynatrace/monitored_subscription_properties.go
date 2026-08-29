@@ -3,44 +3,45 @@ package dynatrace
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags struct {
+type MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags struct {
 	Action any
 	Name any
 	Value any
 }
 
-type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules struct {
+type MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules_LogRules struct {
 	FilteringTags any
 	SendAadLogs any
 	SendActivityLogs any
 	SendSubscriptionLogs any
 }
 
-type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_MetricRules struct {
+type MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules_MetricRules struct {
 	FilteringTags any
 	SendingMetrics any
 }
 
-type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules struct {
+type MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules struct {
 	LogRules any
 	MetricRules any
 	ProvisioningState any
 }
 
-type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList struct {
+type MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList struct {
 	Error any
 	Status any
 	SubscriptionId any
 	TagRules any
 }
 
-type MonitoredSubscriptionProperties_Properties struct {
-	// List of subscriptions and the state of the monitoring.
+type MonitoredSubscriptionProperties_Value_Properties struct {
 	MonitoredSubscriptionList any
-	// The operation for the patch on the resource.
 	Operation any
-	// Provisioning state of the monitoring resource
 	ProvisioningState any
+}
+
+type MonitoredSubscriptionProperties_Value struct {
+	Properties any
 }
 
 type MonitoredSubscriptionPropertiesConfig struct {
@@ -49,8 +50,10 @@ type MonitoredSubscriptionPropertiesConfig struct {
 
 type MonitoredSubscriptionPropertiesAttrs struct {
 	MonitorName any
-	// The request to update subscriptions needed to be monitored by the Dynatrace monitor resource.
-	Properties any
+	// The link to the next page of items
+	NextLink any
+	// The MonitoredSubscriptionProperties items on this page
+	Value any
 }
 
 var MonitoredSubscriptionProperties = ubx.DataSourceBinding{

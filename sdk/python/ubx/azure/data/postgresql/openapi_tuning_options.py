@@ -7,26 +7,28 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiTuningOptions_Properties:
-    # State of the tuning option.
+class OpenapiTuningOptions_Value_Properties:
     state: Any = None
+
+@dataclasses.dataclass
+class OpenapiTuningOptions_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiTuningOptionsConfig:
     server_name: Any = None
-    tuning_option: Any = None
 
 @dataclasses.dataclass
 class OpenapiTuningOptionsAttrs:
-    # Properties of a tuning option.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     server_name: Any = None
-    tuning_option: Any = None
+    # The TuningOptions items on this page
+    value: Any = None
 
 OpenapiTuningOptions = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_tuning_options",
     fields={
         "server_name": ubx.FieldSpec(wire_name="server_name"),
-        "tuning_option": ubx.FieldSpec(wire_name="tuning_option"),
     },
 )

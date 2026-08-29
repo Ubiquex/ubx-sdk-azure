@@ -7,77 +7,53 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiCertificate_Properties_HostingEnvironmentProfile:
-    # Resource ID of the App Service Environment.
+class OpenapiCertificate_Value_Properties_HostingEnvironmentProfile:
     id: Any = None
-    # Name of the App Service Environment.
     name: Any = None
-    # Resource type of the App Service Environment.
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiCertificate_Properties:
-    # CNAME of the certificate to be issued via free certificate
+class OpenapiCertificate_Value_Properties:
     canonical_name: Any = None
-    # Raw bytes of .cer file
     cer_blob: Any = None
-    # Method of domain validation for free cert
     domain_validation_method: Any = None
-    # Certificate expiration date.
     expiration_date: Any = None
-    # Friendly name of the certificate.
     friendly_name: Any = None
-    # Host names the certificate applies to.
     host_names: Any = None
-    # Specification for an App Service Environment to use for this resource.
     hosting_environment_profile: Any = None
-    # Certificate issue Date.
     issue_date: Any = None
-    # Certificate issuer.
     issuer: Any = None
-    # Azure Key Vault Csm resource Id.
     key_vault_id: Any = None
-    # Azure Key Vault secret name.
     key_vault_secret_name: Any = None
-    # Status of the Key Vault secret.
     key_vault_secret_status: Any = None
-    # Certificate password.
     password: Any = None
-    # Pfx blob.
     pfx_blob: Any = None
-    # Public key hash.
     public_key_hash: Any = None
-    # Self link.
     self_link: Any = None
-    # Resource ID of the associated App Service plan.
     server_farm_id: Any = None
-    # App name.
     site_name: Any = None
-    # Subject name of the certificate.
     subject_name: Any = None
-    # Certificate thumbprint.
     thumbprint: Any = None
-    # Is the certificate valid?.
     valid: Any = None
 
 @dataclasses.dataclass
+class OpenapiCertificate_Value:
+    kind: Any = None
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiCertificateConfig:
-    certificate_name: Any = None
-    name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiCertificateAttrs:
-    certificate_name: Any = None
-    # Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
-    kind: Any = None
-    name: Any = None
-    # Certificate resource specific properties
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The Certificate items on this page
+    value: Any = None
 
 OpenapiCertificate = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_certificate",
     fields={
-        "certificate_name": ubx.FieldSpec(wire_name="certificate_name"),
-        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

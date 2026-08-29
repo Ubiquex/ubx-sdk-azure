@@ -3,20 +3,72 @@ package automation
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type OpenapiRunbook_Value_Properties_Draft_DraftContentLink_ContentHash struct {
+	Algorithm any
+	Value any
+}
+
+type OpenapiRunbook_Value_Properties_Draft_DraftContentLink struct {
+	ContentHash any
+	Uri any
+	Version any
+}
+
+type OpenapiRunbook_Value_Properties_Draft_Parameters struct {
+	DefaultValue any
+	IsMandatory any
+	Position any
+	Type any
+}
+
+type OpenapiRunbook_Value_Properties_Draft struct {
+	CreationTime any
+	DraftContentLink any
+	InEdit any
+	LastModifiedTime any
+	OutputTypes any
+	Parameters any
+}
+
+type OpenapiRunbook_Value_Properties struct {
+	CreationTime any
+	Description any
+	Draft any
+	JobCount any
+	LastModifiedBy any
+	LastModifiedTime any
+	LogActivityTrace any
+	LogProgress any
+	LogVerbose any
+	OutputTypes any
+	Parameters any
+	ProvisioningState any
+	PublishContentLink any
+	RunbookType any
+	RuntimeEnvironment any
+	State any
+}
+
+type OpenapiRunbook_Value struct {
+	Etag any
+	Properties any
+}
+
 type OpenapiRunbookConfig struct {
 	AutomationAccountName any
-	RunbookName any
 }
 
 type OpenapiRunbookAttrs struct {
 	AutomationAccountName any
-	RunbookName any
+	// The link to the next page of items
+	NextLink any
+	// The Runbook items on this page
+	Value any
 }
 
 var OpenapiRunbook = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_runbook",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"RunbookName": ubx.FieldSpec{WireName: "runbook_name"},
 	},
 }

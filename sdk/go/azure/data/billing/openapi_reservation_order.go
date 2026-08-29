@@ -3,27 +3,22 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiReservationOrder_Properties_ExtendedStatusInfo_Properties struct {
-	// Subscription Id
+type OpenapiReservationOrder_Value_Properties_ExtendedStatusInfo_Properties struct {
 	SubscriptionId any
 }
 
-type OpenapiReservationOrder_Properties_ExtendedStatusInfo struct {
-	// The message giving detailed information about the status code.
+type OpenapiReservationOrder_Value_Properties_ExtendedStatusInfo struct {
 	Message any
-	// Extended status definition properties
 	Properties any
-	// The status of the reservation.
 	StatusCode any
 }
 
-type OpenapiReservationOrder_Properties_PlanInformation_PricingCurrencyTotal struct {
+type OpenapiReservationOrder_Value_Properties_PlanInformation_PricingCurrencyTotal struct {
 	Amount any
-	// The ISO 4217 3-letter currency code for the currency used by this purchase record.
 	CurrencyCode any
 }
 
-type OpenapiReservationOrder_Properties_PlanInformation_Transactions struct {
+type OpenapiReservationOrder_Value_Properties_PlanInformation_Transactions struct {
 	BillingAccount any
 	BillingCurrencyTotal any
 	DueDate any
@@ -33,17 +28,14 @@ type OpenapiReservationOrder_Properties_PlanInformation_Transactions struct {
 	Status any
 }
 
-type OpenapiReservationOrder_Properties_PlanInformation struct {
-	// For recurring billing plans, indicates the date when next payment will be processed. Null when total is paid off.
+type OpenapiReservationOrder_Value_Properties_PlanInformation struct {
 	NextPaymentDueDate any
-	// The price.
 	PricingCurrencyTotal any
-	// Date when the billing plan has started.
 	StartDate any
 	Transactions any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties_AppliedScopeProperties struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties_AppliedScopeProperties struct {
 	DisplayName any
 	ManagementGroupId any
 	ResourceGroupId any
@@ -51,16 +43,16 @@ type OpenapiReservationOrder_Properties_Reservations_Properties_AppliedScopeProp
 	TenantId any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties_MergeProperties struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties_MergeProperties struct {
 	MergeDestination any
 	MergeSources any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties struct {
 	InstanceFlexibility any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties struct {
 	AppliedScopeProperties any
 	AppliedScopeType any
 	AppliedScopes any
@@ -76,45 +68,45 @@ type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_
 	Term any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku struct {
 	Name any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties struct {
 	Location any
 	Properties any
 	Sku any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties_RenewProperties struct {
 	BillingCurrencyTotal any
 	PricingCurrencyTotal any
 	PurchaseProperties any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties_SplitProperties struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties_SplitProperties struct {
 	SplitDestinations any
 	SplitSource any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties_SwapProperties struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties_SwapProperties struct {
 	SwapDestination any
 	SwapSource any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties_Utilization_Aggregates struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties_Utilization_Aggregates struct {
 	Grain any
 	GrainUnit any
 	Value any
 	ValueUnit any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties_Utilization struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties_Utilization struct {
 	Aggregates any
 	Trend any
 }
 
-type OpenapiReservationOrder_Properties_Reservations_Properties struct {
+type OpenapiReservationOrder_Value_Properties_Reservations_Properties struct {
 	AppliedScopeProperties any
 	AppliedScopeType any
 	AppliedScopes any
@@ -153,7 +145,7 @@ type OpenapiReservationOrder_Properties_Reservations_Properties struct {
 	Utilization any
 }
 
-type OpenapiReservationOrder_Properties_Reservations struct {
+type OpenapiReservationOrder_Value_Properties_Reservations struct {
 	Etag any
 	Location any
 	Properties any
@@ -161,68 +153,58 @@ type OpenapiReservationOrder_Properties_Reservations struct {
 	Tags any
 }
 
-type OpenapiReservationOrder_Properties struct {
-	// This is the DateTime when the reservation benefit started.
+type OpenapiReservationOrder_Value_Properties struct {
 	BenefitStartTime any
-	// Billing account Id associated to this reservation order.
 	BillingAccountId any
-	// Represent the billing plans.
 	BillingPlan any
-	// Billing profile Id associated to this reservation order.
 	BillingProfileId any
-	// This is the DateTime when the reservation order was created.
 	CreatedDateTime any
-	// Fully-qualified identifier of the customerId where the benefit is applied. Present only for Enterprise Agreement PartnerLed customers.
 	CustomerId any
-	// Friendly name for user to easily identified the reservation order.
 	DisplayName any
-	// Enrollment id of the reservation order.
 	EnrollmentId any
-	// This is the date when the reservation order will expire.
 	ExpiryDate any
-	// This is the date-time when the reservation order will expire.
 	ExpiryDateTime any
-	// Extended status information for the reservation.
 	ExtendedStatusInfo any
-	// Total original quantity of the skus purchased in the reservation order.
 	OriginalQuantity any
-	// Information describing the type of billing plan for this reservation order.
 	PlanInformation any
-	// Represents UPN
 	ProductCode any
-	// The provisioning state of the reservation, e.g. Succeeded
 	ProvisioningState any
-	// This is the DateTime when the reservation order was initially requested for purchase.
 	RequestDateTime any
 	Reservations any
-	// This is the date-time when the Azure Hybrid Benefit needs to be reviewed.
 	ReviewDateTime any
-	// The term of the reservation, e.g. P1Y
 	Term any
+}
+
+type OpenapiReservationOrder_Value struct {
+	Etag any
+	Properties any
+	Tags any
 }
 
 type OpenapiReservationOrderConfig struct {
 	BillingAccountName any
-	Expand any
-	ReservationOrderId any
+	Filter any
+	OrderBy any
+	Skiptoken any
 }
 
 type OpenapiReservationOrderAttrs struct {
 	BillingAccountName any
-	Etag any
-	Expand any
-	// Properties of a reservation order.
-	Properties any
-	ReservationOrderId any
-	// Tags for this reservation
-	Tags any
+	Filter any
+	// The link to the next page of items
+	NextLink any
+	OrderBy any
+	Skiptoken any
+	// The ReservationOrder items on this page
+	Value any
 }
 
 var OpenapiReservationOrder = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_reservation_order",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Expand": ubx.FieldSpec{WireName: "expand"},
-		"ReservationOrderId": ubx.FieldSpec{WireName: "reservation_order_id"},
+		"Filter": ubx.FieldSpec{WireName: "filter"},
+		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
+		"Skiptoken": ubx.FieldSpec{WireName: "skiptoken"},
 	},
 }

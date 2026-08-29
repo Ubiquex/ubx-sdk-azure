@@ -3,234 +3,198 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiReservation_Properties_AppliedScopeProperties struct {
-	// Display name
+type OpenapiReservation_Summary struct {
+	// The number of reservation in Cancelled state
+	CancelledCount any
+	// The number of reservation in Expired state
+	ExpiredCount any
+	// The number of reservation in Expiring state
+	ExpiringCount any
+	// The number of reservation in Failed state
+	FailedCount any
+	// The number of reservation in 'No Benefit' state
+	NoBenefitCount any
+	// The number of reservation in Pending state
+	PendingCount any
+	// The number of reservation in Processing state
+	ProcessingCount any
+	// The number of reservation in Succeeded state
+	SucceededCount any
+	// The number of reservation in Warning state
+	WarningCount any
+}
+
+type OpenapiReservation_Value_Properties_AppliedScopeProperties struct {
 	DisplayName any
-	// Fully-qualified identifier of the management group where the benefit must be applied.
 	ManagementGroupId any
-	// Fully-qualified identifier of the resource group.
 	ResourceGroupId any
-	// Fully-qualified identifier of the subscription.
 	SubscriptionId any
-	// Tenant ID where the reservation should apply benefit.
 	TenantId any
 }
 
-type OpenapiReservation_Properties_ExtendedStatusInfo_Properties struct {
-	// Subscription Id
+type OpenapiReservation_Value_Properties_ExtendedStatusInfo_Properties struct {
 	SubscriptionId any
 }
 
-type OpenapiReservation_Properties_ExtendedStatusInfo struct {
-	// The message giving detailed information about the status code.
+type OpenapiReservation_Value_Properties_ExtendedStatusInfo struct {
 	Message any
-	// Extended status definition properties
 	Properties any
-	// The status of the reservation.
 	StatusCode any
 }
 
-type OpenapiReservation_Properties_MergeProperties struct {
-	// Reservation resource id Created due to the merge. Format of the resource id is /providers/Microsoft.Capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
+type OpenapiReservation_Value_Properties_MergeProperties struct {
 	MergeDestination any
-	// Resource ids of the source reservation's merged to form this reservation. Format of the resource id is /providers/Microsoft.Capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
 	MergeSources any
 }
 
-type OpenapiReservation_Properties_RenewProperties_BillingCurrencyTotal struct {
+type OpenapiReservation_Value_Properties_RenewProperties_BillingCurrencyTotal struct {
 	Amount any
-	// The ISO 4217 3-letter currency code for the currency used by this purchase record.
 	CurrencyCode any
 }
 
-type OpenapiReservation_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties struct {
-	// Turning this on will apply the reservation discount to other VMs in the same VM size group. Only specify for VirtualMachines reserved resource type.
+type OpenapiReservation_Value_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties struct {
 	InstanceFlexibility any
 }
 
-type OpenapiReservation_Properties_RenewProperties_PurchaseProperties_Properties struct {
-	// Properties specific to applied scope type. Not required if not applicable. Required and need to provide tenantId and managementGroupId if AppliedScopeType is ManagementGroup
+type OpenapiReservation_Value_Properties_RenewProperties_PurchaseProperties_Properties struct {
 	AppliedScopeProperties any
-	// Type of the Applied Scope.
 	AppliedScopeType any
-	// List of the subscriptions that the benefit will be applied. Do not specify if AppliedScopeType is Shared.
 	AppliedScopes any
-	// Represent the billing plans.
 	BillingPlan any
-	// Subscription that will be charged for purchasing reservation or savings plan
 	BillingScopeId any
-	// Friendly name of the reservation
 	DisplayName any
-	// Turning this on will apply the reservation discount to other VMs in the same VM size group. Only specify for VirtualMachines reserved resource type.
 	InstanceFlexibility any
-	// Quantity of the skus that are part of the reservation. Must be greater than zero.
 	Quantity any
-	// Setting this to true will automatically purchase a new benefit on the expiration date time.
 	Renew any
-	// Properties specific to each reserved resource type. Not required if not applicable.
 	ReservedResourceProperties any
-	// The reserved source type of the reservation, e.g. virtual machine.
 	ReservedResourceType any
-	// This is the date-time when the Azure hybrid benefit needs to be reviewed.
 	ReviewDateTime any
-	// The term of the reservation, e.g. P1Y
 	Term any
 }
 
-type OpenapiReservation_Properties_RenewProperties_PurchaseProperties_Sku struct {
+type OpenapiReservation_Value_Properties_RenewProperties_PurchaseProperties_Sku struct {
 	Name any
 }
 
-type OpenapiReservation_Properties_RenewProperties_PurchaseProperties struct {
-	// The Azure region where the reserved resource lives.
+type OpenapiReservation_Value_Properties_RenewProperties_PurchaseProperties struct {
 	Location any
-	// Properties of reservation purchase request
 	Properties any
-	// The name of sku
 	Sku any
 }
 
-type OpenapiReservation_Properties_RenewProperties struct {
-	// The price.
+type OpenapiReservation_Value_Properties_RenewProperties struct {
 	BillingCurrencyTotal any
-	// The price.
 	PricingCurrencyTotal any
-	// The request for reservation purchase
 	PurchaseProperties any
 }
 
-type OpenapiReservation_Properties_SplitProperties struct {
-	// List of destination resource id that are created due to split. Format of the resource id is /providers/Microsoft.Capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
+type OpenapiReservation_Value_Properties_SplitProperties struct {
 	SplitDestinations any
-	// Resource id of the reservation from which this is split. Format of the resource id is /providers/Microsoft.Capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
 	SplitSource any
 }
 
-type OpenapiReservation_Properties_SwapProperties struct {
-	// Reservation resource id that the original resource gets swapped to. Format of the resource id is /providers/microsoft.capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
+type OpenapiReservation_Value_Properties_SwapProperties struct {
 	SwapDestination any
-	// Resource id of the source reservation that gets swapped. Format of the resource id is /providers/microsoft.capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
 	SwapSource any
 }
 
-type OpenapiReservation_Properties_Utilization_Aggregates struct {
+type OpenapiReservation_Value_Properties_Utilization_Aggregates struct {
 	Grain any
 	GrainUnit any
 	Value any
 	ValueUnit any
 }
 
-type OpenapiReservation_Properties_Utilization struct {
-	// The array of aggregates of a reservation's utilization
+type OpenapiReservation_Value_Properties_Utilization struct {
 	Aggregates any
-	// last 7 day utilization trend for a reservation
 	Trend any
 }
 
-type OpenapiReservation_Properties struct {
-	// Properties specific to applied scope type. Not required if not applicable. Required and need to provide tenantId and managementGroupId if AppliedScopeType is ManagementGroup
+type OpenapiReservation_Value_Properties struct {
 	AppliedScopeProperties any
-	// The applied scope type of the reservation.
 	AppliedScopeType any
-	// The array of applied scopes of a reservation. Will be null if the reservation is in Shared scope
 	AppliedScopes any
-	// Indicates if the reservation is archived
 	Archived any
-	// This is the DateTime when the reservation benefit started.
 	BenefitStartTime any
-	// Represent the billing plans.
 	BillingPlan any
-	// Subscription that will be charged for purchasing reservation or savings plan
 	BillingScopeId any
-	// Capabilities of the reservation
 	Capabilities any
-	// The display name of the reservation
 	DisplayName any
-	// The provisioning state of the reservation for display, e.g. Succeeded
 	DisplayProvisioningState any
-	// The effective date time of the reservation
 	EffectiveDateTime any
-	// The expiry date of the reservation
 	ExpiryDate any
-	// This is the date-time when the reservation will expire.
 	ExpiryDateTime any
-	// Extended status information for the reservation.
 	ExtendedStatusInfo any
-	// Turning this on will apply the reservation discount to other VMs in the same VM size group. Only specify for VirtualMachines reserved resource type.
 	InstanceFlexibility any
-	// DateTime of the last time the reservation was updated.
 	LastUpdatedDateTime any
-	// Properties of reservation merge
 	MergeProperties any
-	// Represents UPN
 	ProductCode any
-	// The provisioning state of the reservation, e.g. Succeeded
 	ProvisioningState any
-	// The provisioning state of the reservation, e.g. Succeeded
 	ProvisioningSubState any
-	// This is the date when the reservation was purchased.
 	PurchaseDate any
-	// This is the date-time when the reservation was purchased.
 	PurchaseDateTime any
-	// The number of the reservation.
 	Quantity any
-	// The renew state of the reservation
 	Renew any
-	// Reservation Id of the reservation which is purchased because of renew. Format of the resource Id is /providers/Microsoft.Capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}.
 	RenewDestination any
-	// The renew properties for a reservation.
 	RenewProperties any
-	// The renew source of the reservation
 	RenewSource any
-	// The reserved source type of the reservation, e.g. virtual machine.
 	ReservedResourceType any
-	// This is the date-time when the Azure Hybrid Benefit needs to be reviewed.
 	ReviewDateTime any
-	// The sku description of the reservation
 	SkuDescription any
-	// Properties of reservation split
 	SplitProperties any
-	// Properties of reservation swap
 	SwapProperties any
-	// The term of the reservation, e.g. P1Y
 	Term any
-	// The applied scope type of the reservation for display, e.g. Shared
 	UserFriendlyAppliedScopeType any
-	// The renew state of the reservation for display, e.g. On
 	UserFriendlyRenewState any
-	// Reservation utilization
 	Utilization any
+}
+
+type OpenapiReservation_Value struct {
+	Etag any
+	Location any
+	Properties any
+	Sku any
+	Tags any
 }
 
 type OpenapiReservationConfig struct {
 	BillingAccountName any
-	Expand any
-	ReservationId any
-	ReservationOrderId any
+	BillingProfileName any
+	Filter any
+	OrderBy any
+	RefreshSummary any
+	SelectedState any
+	Skiptoken any
+	Take any
 }
 
 type OpenapiReservationAttrs struct {
 	BillingAccountName any
-	Etag any
-	Expand any
-	// The location of the reservation.
-	Location any
-	// The property of reservation object.
-	Properties any
-	ReservationId any
-	ReservationOrderId any
-	// The property of reservation sku object.
-	Sku any
-	// Tags for this reservation
-	Tags any
+	BillingProfileName any
+	Filter any
+	// The link (url) to the next page of results.
+	NextLink any
+	OrderBy any
+	RefreshSummary any
+	SelectedState any
+	Skiptoken any
+	// The roll up count summary of reservations in each state
+	Summary any
+	Take any
+	// The list of reservations.
+	Value any
 }
 
 var OpenapiReservation = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_reservation",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Expand": ubx.FieldSpec{WireName: "expand"},
-		"ReservationId": ubx.FieldSpec{WireName: "reservation_id"},
-		"ReservationOrderId": ubx.FieldSpec{WireName: "reservation_order_id"},
+		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
+		"Filter": ubx.FieldSpec{WireName: "filter"},
+		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
+		"RefreshSummary": ubx.FieldSpec{WireName: "refresh_summary"},
+		"SelectedState": ubx.FieldSpec{WireName: "selected_state"},
+		"Skiptoken": ubx.FieldSpec{WireName: "skiptoken"},
+		"Take": ubx.FieldSpec{WireName: "take"},
 	},
 }

@@ -3,23 +3,20 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServiceReplicationProtectionCluster_Properties_ClusterRegisteredNodes struct {
+type ServiceReplicationProtectionCluster_Value_Properties_ClusterRegisteredNodes struct {
 	BiosId any
 	ClusterNodeFqdn any
 	IsSharedDiskVirtualNode any
 	MachineId any
 }
 
-type ServiceReplicationProtectionCluster_Properties_CurrentScenario struct {
-	// ARM Id of the job being executed.
+type ServiceReplicationProtectionCluster_Value_Properties_CurrentScenario struct {
 	JobId any
-	// Scenario name.
 	ScenarioName any
-	// Start time of the workflow.
 	StartTime any
 }
 
-type ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErrors struct {
+type ServiceReplicationProtectionCluster_Value_Properties_HealthErrors_InnerHealthErrors struct {
 	CreationTimeUtc any
 	CustomerResolvability any
 	EntityId any
@@ -36,7 +33,7 @@ type ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErro
 	SummaryMessage any
 }
 
-type ServiceReplicationProtectionCluster_Properties_HealthErrors struct {
+type ServiceReplicationProtectionCluster_Value_Properties_HealthErrors struct {
 	CreationTimeUtc any
 	CustomerResolvability any
 	EntityId any
@@ -54,118 +51,79 @@ type ServiceReplicationProtectionCluster_Properties_HealthErrors struct {
 	SummaryMessage any
 }
 
-type ServiceReplicationProtectionCluster_Properties_ProviderSpecificDetails struct {
-	// Gets the Instance type.
+type ServiceReplicationProtectionCluster_Value_Properties_ProviderSpecificDetails struct {
 	InstanceType any
 }
 
-type ServiceReplicationProtectionCluster_Properties_SharedDiskProperties struct {
-	// The Current active location of the PE.
+type ServiceReplicationProtectionCluster_Value_Properties_SharedDiskProperties struct {
 	ActiveLocation any
-	// The allowed operations on the Replication protected item.
 	AllowedOperations any
-	// Current scenario details of the protected entity.
 	CurrentScenario any
-	// List of health errors.
 	HealthErrors any
-	// The protection state of shared disk.
 	ProtectionState any
-	// The consolidated protection health for the VM taking any issues with SRS as well as all the replication units associated with the VM's replication group into account. This is a string representation of the ProtectionHealth enumeration.
 	ReplicationHealth any
-	// Replication provider specific settings.
 	SharedDiskProviderSpecificDetails any
-	// The tfo state of shared disk.
 	TestFailoverState any
 }
 
-type ServiceReplicationProtectionCluster_Properties struct {
-	// The Current active location of the Protection cluster.
+type ServiceReplicationProtectionCluster_Value_Properties struct {
 	ActiveLocation any
-	// The Agent cluster Id.
 	AgentClusterId any
-	// The allowed operations on the Replication protection cluster.
 	AllowedOperations any
-	// A value indicating whether all nodes of the cluster are registered or not.
 	AreAllClusterNodesRegistered any
-	// The cluster FQDN.
 	ClusterFqdn any
-	// The List of cluster Node FQDNs.
 	ClusterNodeFqdns any
-	// The List of Protected Item Id's.
 	ClusterProtectedItemIds any
-	// The registered node details.
 	ClusterRegisteredNodes any
-	// Current scenario details of the protected entity.
 	CurrentScenario any
-	// List of health errors.
 	HealthErrors any
-	// The last successful failover time.
 	LastSuccessfulFailoverTime any
-	// The last successful test failover time.
 	LastSuccessfulTestFailoverTime any
-	// The name of Policy governing this PE.
 	PolicyFriendlyName any
-	// The Policy Id.
 	PolicyId any
-	// The friendly name of the primary fabric.
 	PrimaryFabricFriendlyName any
-	// The fabric provider of the primary fabric.
 	PrimaryFabricProvider any
-	// The name of primary protection container friendly name.
 	PrimaryProtectionContainerFriendlyName any
-	// The type of protection cluster type.
 	ProtectionClusterType any
-	// The protection status.
 	ProtectionState any
-	// The protection state description.
 	ProtectionStateDescription any
-	// Replication cluster provider specific settings.
 	ProviderSpecificDetails any
-	// The provisioning state of the cluster.
 	ProvisioningState any
-	// The recovery container Id.
 	RecoveryContainerId any
-	// The friendly name of recovery fabric.
 	RecoveryFabricFriendlyName any
-	// The Arm Id of recovery fabric.
 	RecoveryFabricId any
-	// The name of recovery container friendly name.
 	RecoveryProtectionContainerFriendlyName any
-	// The consolidated protection health for the VM taking any issues with SRS as well as all the replication units associated with the VM's replication group into account. This is a string representation of the ProtectionHealth enumeration.
 	ReplicationHealth any
-	// Shared Disk Replication item custom data details.
 	SharedDiskProperties any
-	// The Test failover state.
 	TestFailoverState any
-	// The Test failover state description.
 	TestFailoverStateDescription any
+}
+
+type ServiceReplicationProtectionCluster_Value struct {
+	Properties any
 }
 
 type ServiceReplicationProtectionClusterConfig struct {
 	FabricName any
-	JobId any
 	ProtectionContainerName any
-	ReplicationProtectionClusterName any
 	ResourceName any
 }
 
 type ServiceReplicationProtectionClusterAttrs struct {
 	FabricName any
-	JobId any
-	// Replication protection cluster custom data details.
-	Properties any
+	// The link to the next page of items
+	NextLink any
 	ProtectionContainerName any
-	ReplicationProtectionClusterName any
 	ResourceName any
+	// The ReplicationProtectionCluster items on this page
+	Value any
 }
 
 var ServiceReplicationProtectionCluster = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_replication_protection_cluster",
 	Fields: ubx.FieldMap{
 		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"JobId": ubx.FieldSpec{WireName: "job_id"},
 		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
-		"ReplicationProtectionClusterName": ubx.FieldSpec{WireName: "replication_protection_cluster_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

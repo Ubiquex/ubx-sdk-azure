@@ -7,214 +7,146 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_AppliedScopeProperties:
-    # Display name
+class ReservationResponse_Value_Properties_AppliedScopeProperties:
     display_name: Any = None
-    # Fully-qualified identifier of the management group where the benefit must be applied.
     management_group_id: Any = None
-    # Fully-qualified identifier of the resource group.
     resource_group_id: Any = None
-    # Fully-qualified identifier of the subscription.
     subscription_id: Any = None
-    # Tenant ID where the savings plan should apply benefit.
     tenant_id: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_ExtendedStatusInfo:
-    # The message giving detailed information about the status code.
+class ReservationResponse_Value_Properties_ExtendedStatusInfo:
     message: Any = None
     status_code: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_MergeProperties:
-    # Reservation resource id Created due to the merge. Format of the resource id is /providers/Microsoft.Capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
+class ReservationResponse_Value_Properties_MergeProperties:
     merge_destination: Any = None
-    # Resource ids of the source reservation's merged to form this reservation. Format of the resource id is /providers/Microsoft.Capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
     merge_sources: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_RenewProperties_BillingCurrencyTotal:
+class ReservationResponse_Value_Properties_RenewProperties_BillingCurrencyTotal:
     amount: Any = None
-    # The ISO 4217 3-letter currency code for the currency used by this purchase record.
     currency_code: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties:
-    # Turning this on will apply the reservation discount to other VMs in the same VM size group. Only specify for VirtualMachines reserved resource type.
+class ReservationResponse_Value_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties:
     instance_flexibility: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_RenewProperties_PurchaseProperties_Properties:
-    # Properties specific to applied scope type. Not required if not applicable. Required and need to provide tenantId and managementGroupId if AppliedScopeType is ManagementGroup
+class ReservationResponse_Value_Properties_RenewProperties_PurchaseProperties_Properties:
     applied_scope_properties: Any = None
-    # Type of the Applied Scope.
     applied_scope_type: Any = None
-    # List of the subscriptions that the benefit will be applied. Do not specify if AppliedScopeType is Shared. This property will be deprecated and replaced by appliedScopeProperties instead for Single AppliedScopeType.
     applied_scopes: Any = None
-    # Represent the billing plans.
     billing_plan: Any = None
-    # Subscription that will be charged for purchasing reservation or savings plan
     billing_scope_id: Any = None
-    # Friendly name of the reservation
     display_name: Any = None
-    # Quantity of the skus that are part of the reservation.
     quantity: Any = None
-    # Setting this to true will automatically purchase a new reservation on the expiration date time.
     renew: Any = None
-    # Properties specific to each reserved resource type. Not required if not applicable.
     reserved_resource_properties: Any = None
-    # The type of the resource that is being reserved. In addition to below types we have also added the following: OpenAIPTU, MDC, Sentinel.
     reserved_resource_type: Any = None
-    # This is the date-time when the Azure hybrid benefit needs to be reviewed.
     review_date_time: Any = None
-    # Represent the term of reservation.
     term: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_RenewProperties_PurchaseProperties_Sku:
+class ReservationResponse_Value_Properties_RenewProperties_PurchaseProperties_Sku:
     name: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_RenewProperties_PurchaseProperties:
-    # The Azure region where the reserved resource lives.
+class ReservationResponse_Value_Properties_RenewProperties_PurchaseProperties:
     location: Any = None
-    # Properties of reservation purchase request
     properties: Any = None
-    # The name of sku
     sku: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_RenewProperties:
-    # Currency and amount that customer will be charged in customer's local currency for renewal purchase. Tax is not included.
+class ReservationResponse_Value_Properties_RenewProperties:
     billing_currency_total: Any = None
-    # Amount that Microsoft uses for record. Used during refund for calculating refund limit. Tax is not included. This is locked price 30 days before expiry.
     pricing_currency_total: Any = None
-    # The request for reservation purchase
     purchase_properties: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_SplitProperties:
-    # List of destination resource id that are created due to split. Format of the resource id is /providers/Microsoft.Capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
+class ReservationResponse_Value_Properties_SplitProperties:
     split_destinations: Any = None
-    # Resource id of the reservation from which this is split. Format of the resource id is /providers/Microsoft.Capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
     split_source: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_SwapProperties:
-    # Reservation resource id that the original resource gets swapped to. Format of the resource id is /providers/microsoft.capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
+class ReservationResponse_Value_Properties_SwapProperties:
     swap_destination: Any = None
-    # Resource id of the source reservation that gets swapped. Format of the resource id is /providers/microsoft.capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}
     swap_source: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_Utilization_Aggregates:
+class ReservationResponse_Value_Properties_Utilization_Aggregates:
     grain: Any = None
     grain_unit: Any = None
     value: Any = None
     value_unit: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties_Utilization:
-    # The array of aggregates of a reservation's utilization
+class ReservationResponse_Value_Properties_Utilization:
     aggregates: Any = None
-    # last 7 day utilization trend for a reservation
     trend: Any = None
 
 @dataclasses.dataclass
-class ReservationResponse_Properties:
-    # Properties specific to applied scope type. Not required if not applicable. Required and need to provide tenantId and managementGroupId if AppliedScopeType is ManagementGroup
+class ReservationResponse_Value_Properties:
     applied_scope_properties: Any = None
-    # Type of the Applied Scope.
     applied_scope_type: Any = None
-    # The list of applied scopes
     applied_scopes: Any = None
-    # Indicates if the reservation is archived
     archived: Any = None
-    # This is the DateTime when the reservation benefit started.
     benefit_start_time: Any = None
-    # Represent the billing plans.
     billing_plan: Any = None
-    # Subscription that will be charged for purchasing reservation or savings plan
     billing_scope_id: Any = None
-    # Capabilities of the reservation
     capabilities: Any = None
-    # Friendly name for user to easily identify the reservation
     display_name: Any = None
-    # The provisioning state of the reservation for display, e.g. Succeeded
     display_provisioning_state: Any = None
-    # DateTime of the reservation starting when this version is effective from.
     effective_date_time: Any = None
-    # This is the date when the reservation will expire.
     expiry_date: Any = None
-    # This is the date-time when the reservation will expire.
     expiry_date_time: Any = None
     extended_status_info: Any = None
-    # Turning this on will apply the reservation discount to other VMs in the same VM size group. Only specify for VirtualMachines reserved resource type.
     instance_flexibility: Any = None
-    # DateTime of the last time the reservation was updated.
     last_updated_date_time: Any = None
-    # Properties of reservation merge
     merge_properties: Any = None
-    # Represent the current state of the Reservation.
     provisioning_state: Any = None
-    # The provisioning sub-state of the reservation, e.g. Succeeded
     provisioning_sub_state: Any = None
-    # This is the date when the reservation was purchased.
     purchase_date: Any = None
-    # This is the date-time when the reservation was purchased.
     purchase_date_time: Any = None
-    # Quantity of the skus that are part of the reservation. Must be greater than zero.
     quantity: Any = None
-    # Setting this to true will automatically purchase a new reservation on the expiration date time.
     renew: Any = None
-    # Reservation Id of the reservation which is purchased because of renew. Format of the resource Id is /providers/Microsoft.Capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}.
     renew_destination: Any = None
-    # The renew properties for a reservation.
     renew_properties: Any = None
-    # Reservation Id of the reservation from which this reservation is renewed. Format of the resource Id is /providers/Microsoft.Capacity/reservationOrders/{reservationOrderId}/reservations/{reservationId}.
     renew_source: Any = None
-    # The type of the resource that is being reserved. In addition to below types we have also added the following: OpenAIPTU, MDC, Sentinel.
     reserved_resource_type: Any = None
-    # This is the date-time when the Azure Hybrid Benefit needs to be reviewed.
     review_date_time: Any = None
-    # Description of the sku in english.
     sku_description: Any = None
-    # Properties of reservation split
     split_properties: Any = None
-    # Properties of reservation swap
     swap_properties: Any = None
-    # Represent the term of reservation.
     term: Any = None
-    # The applied scope type of the reservation for display, e.g. Shared
     user_friendly_applied_scope_type: Any = None
-    # The renew state of the reservation for display, e.g. On
     user_friendly_renew_state: Any = None
-    # Reservation utilization
     utilization: Any = None
 
 @dataclasses.dataclass
+class ReservationResponse_Value:
+    etag: Any = None
+    kind: Any = None
+    location: Any = None
+    properties: Any = None
+    sku: Any = None
+
+@dataclasses.dataclass
 class ReservationResponseConfig:
-    reservation_id: Any = None
     reservation_order_id: Any = None
 
 @dataclasses.dataclass
 class ReservationResponseAttrs:
-    etag: Any = None
-    # Resource Provider type to be reserved.
-    kind: Any = None
-    # The Azure region where the reserved resource lives.
-    location: Any = None
-    # The properties of the reservations
-    properties: Any = None
-    reservation_id: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     reservation_order_id: Any = None
-    # The name of sku
-    sku: Any = None
+    # The ReservationResponse items on this page
+    value: Any = None
 
 ReservationResponse = ubx.DataSourceBinding(
     wire_type="azure_reservations_reservation_response",
     fields={
-        "reservation_id": ubx.FieldSpec(wire_name="reservation_id"),
         "reservation_order_id": ubx.FieldSpec(wire_name="reservation_order_id"),
     },
 )

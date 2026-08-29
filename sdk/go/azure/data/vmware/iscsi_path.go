@@ -3,11 +3,13 @@ package vmware
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type IscsiPath_Properties struct {
-	// CIDR Block for iSCSI path.
+type IscsiPath_Value_Properties struct {
 	NetworkBlock any
-	// private cloud provisioning state
 	ProvisioningState any
+}
+
+type IscsiPath_Value struct {
+	Properties any
 }
 
 type IscsiPathConfig struct {
@@ -15,9 +17,11 @@ type IscsiPathConfig struct {
 }
 
 type IscsiPathAttrs struct {
+	// The link to the next page of items
+	NextLink any
 	PrivateCloudName any
-	// The properties of an iSCSI path resource
-	Properties any
+	// The IscsiPath items on this page
+	Value any
 }
 
 var IscsiPath = ubx.DataSourceBinding{

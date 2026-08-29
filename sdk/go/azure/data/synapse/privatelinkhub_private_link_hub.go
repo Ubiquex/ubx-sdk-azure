@@ -3,34 +3,43 @@ package synapse
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateEndpoint struct {
+type PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
 	Id any
 }
 
-type PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateLinkServiceConnectionState struct {
+type PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
 	Description any
 	Status any
 }
 
-type PrivatelinkhubPrivateLinkHub_Value_Properties struct {
+type PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateEndpointConnections_Properties struct {
 	PrivateEndpoint any
 	PrivateLinkServiceConnectionState any
 	ProvisioningState any
 }
 
-type PrivatelinkhubPrivateLinkHub_Value struct {
+type PrivatelinkhubPrivateLinkHub_Value_Properties_PrivateEndpointConnections struct {
 	Id any
-	Name any
 	Properties any
-	Type any
+}
+
+type PrivatelinkhubPrivateLinkHub_Value_Properties struct {
+	PrivateEndpointConnections any
+	ProvisioningState any
+}
+
+type PrivatelinkhubPrivateLinkHub_Value struct {
+	Properties any
 }
 
 type PrivatelinkhubPrivateLinkHubConfig struct {
 }
 
 type PrivatelinkhubPrivateLinkHubAttrs struct {
+	// Link to the next page of results
 	NextLink any
+	// List of privateLinkHubs
 	Value any
 }
 

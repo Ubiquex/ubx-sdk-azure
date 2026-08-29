@@ -3,32 +3,30 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiIdentifier_Properties struct {
-	// String representation of the identity.
+type OpenapiIdentifier_Value_Properties struct {
 	Id any
 }
 
+type OpenapiIdentifier_Value struct {
+	Kind any
+	Properties any
+}
+
 type OpenapiIdentifierConfig struct {
-	DomainOwnershipIdentifierName any
 	Name any
-	Slot any
 }
 
 type OpenapiIdentifierAttrs struct {
-	DomainOwnershipIdentifierName any
-	// Kind of resource.
-	Kind any
 	Name any
-	// Identifier resource specific properties
-	Properties any
-	Slot any
+	// The link to the next page of items
+	NextLink any
+	// The Identifier items on this page
+	Value any
 }
 
 var OpenapiIdentifier = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_identifier",
 	Fields: ubx.FieldMap{
-		"DomainOwnershipIdentifierName": ubx.FieldSpec{WireName: "domain_ownership_identifier_name"},
 		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
 	},
 }

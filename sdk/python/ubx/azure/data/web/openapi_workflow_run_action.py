@@ -7,41 +7,33 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiWorkflowRunAction_Properties_Correlation:
-    # The action tracking identifier.
+class OpenapiWorkflowRunAction_Value_Properties_Correlation:
     action_tracking_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowRunAction_Properties_InputsLink_ContentHash:
-    # The algorithm of the content hash.
+class OpenapiWorkflowRunAction_Value_Properties_InputsLink_ContentHash:
     algorithm: Any = None
-    # The value of the content hash.
     value: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowRunAction_Properties_InputsLink:
-    # The content hash.
+class OpenapiWorkflowRunAction_Value_Properties_InputsLink:
     content_hash: Any = None
-    # The content size.
     content_size: Any = None
-    # The content version.
     content_version: Any = None
-    # The metadata.
     metadata: Any = None
-    # The content link URI.
     uri: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowRunAction_Properties_RetryHistory_Error_Error:
+class OpenapiWorkflowRunAction_Value_Properties_RetryHistory_Error_Error:
     code: Any = None
     message: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowRunAction_Properties_RetryHistory_Error:
+class OpenapiWorkflowRunAction_Value_Properties_RetryHistory_Error:
     error: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowRunAction_Properties_RetryHistory:
+class OpenapiWorkflowRunAction_Value_Properties_RetryHistory:
     client_request_id: Any = None
     code: Any = None
     end_time: Any = None
@@ -50,50 +42,42 @@ class OpenapiWorkflowRunAction_Properties_RetryHistory:
     start_time: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowRunAction_Properties:
-    # Gets the code.
+class OpenapiWorkflowRunAction_Value_Properties:
     code: Any = None
-    # The workflow run action correlation properties.
     correlation: Any = None
-    # Gets the end time.
     end_time: Any = None
-    # Gets the error.
     error: Any = None
-    # The content link.
     inputs_link: Any = None
-    # The content link.
     outputs_link: Any = None
-    # Gets the retry histories.
     retry_history: Any = None
-    # Gets the start time.
     start_time: Any = None
-    # The workflow status.
     status: Any = None
-    # Gets the tracked properties.
     tracked_properties: Any = None
-    # Gets the tracking id.
     tracking_id: Any = None
 
 @dataclasses.dataclass
+class OpenapiWorkflowRunAction_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiWorkflowRunActionConfig:
-    action_name: Any = None
     name: Any = None
     run_name: Any = None
     workflow_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkflowRunActionAttrs:
-    action_name: Any = None
     name: Any = None
-    # The workflow run action properties.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     run_name: Any = None
+    # The WorkflowRunAction items on this page
+    value: Any = None
     workflow_name: Any = None
 
 OpenapiWorkflowRunAction = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_workflow_run_action",
     fields={
-        "action_name": ubx.FieldSpec(wire_name="action_name"),
         "name": ubx.FieldSpec(wire_name="name"),
         "run_name": ubx.FieldSpec(wire_name="run_name"),
         "workflow_name": ubx.FieldSpec(wire_name="workflow_name"),

@@ -7,29 +7,29 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class DeploymentscriptsScriptLog_Properties:
-    # Script execution logs in text format.
+class DeploymentscriptsScriptLog_Value_Properties:
     log: Any = None
+
+@dataclasses.dataclass
+class DeploymentscriptsScriptLog_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class DeploymentscriptsScriptLogConfig:
     resource_group_name: Any = None
     script_name: Any = None
-    tail: Any = None
 
 @dataclasses.dataclass
 class DeploymentscriptsScriptLogAttrs:
-    # Script log properties.
-    properties: Any = None
     resource_group_name: Any = None
     script_name: Any = None
-    tail: Any = None
+    # Deployment scripts logs.
+    value: Any = None
 
 DeploymentscriptsScriptLog = ubx.DataSourceBinding(
     wire_type="azure_resources_deploymentscripts_script_log",
     fields={
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "script_name": ubx.FieldSpec(wire_name="script_name"),
-        "tail": ubx.FieldSpec(wire_name="tail"),
     },
 )

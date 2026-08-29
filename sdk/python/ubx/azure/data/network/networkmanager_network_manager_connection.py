@@ -7,44 +7,40 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class NetworkmanagerNetworkManagerConnection_Properties:
-    # The current scope connection state.
+class NetworkmanagerNetworkManagerConnection_Value_Properties:
     connection_state: Any = None
-    # A description of the network manager connection.
     description: Any = None
-    # Network Manager Id.
     network_manager_id: Any = None
 
 @dataclasses.dataclass
-class NetworkmanagerNetworkManagerConnection_SystemData:
-    # The timestamp of resource creation (UTC).
+class NetworkmanagerNetworkManagerConnection_Value_SystemData:
     created_at: Any = None
-    # The identity that created the resource.
     created_by: Any = None
-    # The type of identity that created the resource.
     created_by_type: Any = None
-    # The timestamp of resource last modification (UTC)
     last_modified_at: Any = None
-    # The identity that last modified the resource.
     last_modified_by: Any = None
-    # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
 
 @dataclasses.dataclass
+class NetworkmanagerNetworkManagerConnection_Value:
+    properties: Any = None
+    system_data: Any = None
+
+@dataclasses.dataclass
 class NetworkmanagerNetworkManagerConnectionConfig:
-    network_manager_connection_name: Any = None
+    management_group_id: Any = None
 
 @dataclasses.dataclass
 class NetworkmanagerNetworkManagerConnectionAttrs:
-    network_manager_connection_name: Any = None
-    # Information about the network manager connection.
-    properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
+    management_group_id: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The NetworkManagerConnection items on this page
+    value: Any = None
 
 NetworkmanagerNetworkManagerConnection = ubx.DataSourceBinding(
     wire_type="azure_network_networkmanager_network_manager_connection",
     fields={
-        "network_manager_connection_name": ubx.FieldSpec(wire_name="network_manager_connection_name"),
+        "management_group_id": ubx.FieldSpec(wire_name="management_group_id"),
     },
 )

@@ -3,20 +3,17 @@ package operationalinsights
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter struct {
-	// Fully qualified Azure resource ID of the NSP resource
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter struct {
 	Id any
-	// Location of the network security perimeter
 	Location any
-	// Universal unique ID (UUID) of the network security perimeter
 	PerimeterGuid any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties_Subscriptions struct {
 	Id any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties struct {
 	AddressPrefixes any
 	Direction any
 	EmailAddresses any
@@ -26,25 +23,20 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules
 	Subscriptions any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules struct {
 	Name any
 	Properties any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile struct {
-	// List of Access Rules
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile struct {
 	AccessRules any
-	// Current access rules version
 	AccessRulesVersion any
-	// Current diagnostic settings version
 	DiagnosticSettingsVersion any
-	// List of log categories that are enabled
 	EnabledLogCategories any
-	// Name of the profile
 	Name any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties struct {
 	Description any
 	IssueType any
 	Severity any
@@ -52,47 +44,43 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_
 	SuggestedResourceIds any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues struct {
 	Name any
 	Properties any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation struct {
-	// Access mode of the resource association
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation struct {
 	AccessMode any
-	// Name of the resource association
 	Name any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Properties struct {
-	// Information about a network security perimeter (NSP)
+type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties struct {
 	NetworkSecurityPerimeter any
-	// Network security perimeter configuration profile
 	Profile any
-	// List of provisioning issues, if any
 	ProvisioningIssues any
-	// Provisioning state of a network security perimeter configuration that is being created or updated.
 	ProvisioningState any
-	// Information about resource association
 	ResourceAssociation any
 }
 
+type OpenapiNetworkSecurityPerimeterConfiguration_Value struct {
+	Properties any
+}
+
 type OpenapiNetworkSecurityPerimeterConfigurationConfig struct {
-	NetworkSecurityPerimeterConfigurationName any
 	WorkspaceName any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationAttrs struct {
-	NetworkSecurityPerimeterConfigurationName any
-	// Network security configuration properties.
-	Properties any
+	// The link used to get the next page of results.
+	NextLink any
+	// Array of network security perimeter results.
+	Value any
 	WorkspaceName any
 }
 
 var OpenapiNetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_operationalinsights_openapi_network_security_perimeter_configuration",
 	Fields: ubx.FieldMap{
-		"NetworkSecurityPerimeterConfigurationName": ubx.FieldSpec{WireName: "network_security_perimeter_configuration_name"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

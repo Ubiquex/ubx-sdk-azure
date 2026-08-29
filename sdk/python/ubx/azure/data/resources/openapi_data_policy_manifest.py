@@ -7,44 +7,42 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDataPolicyManifest_Properties_Effects:
+class OpenapiDataPolicyManifest_Value_Properties_Effects:
     details_schema: Any = None
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiDataPolicyManifest_Properties_ResourceFunctions_Custom:
+class OpenapiDataPolicyManifest_Value_Properties_ResourceFunctions_Custom:
     allow_custom_properties: Any = None
     default_properties: Any = None
     fully_qualified_resource_type: Any = None
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiDataPolicyManifest_Properties_ResourceFunctions:
-    # An array of data manifest custom resource definitions.
+class OpenapiDataPolicyManifest_Value_Properties_ResourceFunctions:
     custom: Any = None
-    # The standard resource functions (subscription and/or resourceGroup).
     standard: Any = None
 
 @dataclasses.dataclass
-class OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases_DefaultMetadata:
+class OpenapiDataPolicyManifest_Value_Properties_ResourceTypeAliases_Aliases_DefaultMetadata:
     attributes: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases_DefaultPattern:
+class OpenapiDataPolicyManifest_Value_Properties_ResourceTypeAliases_Aliases_DefaultPattern:
     phrase: Any = None
     type: Any = None
     variable: Any = None
 
 @dataclasses.dataclass
-class OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases_Paths:
+class OpenapiDataPolicyManifest_Value_Properties_ResourceTypeAliases_Aliases_Paths:
     api_versions: Any = None
     metadata: Any = None
     path: Any = None
     pattern: Any = None
 
 @dataclasses.dataclass
-class OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases:
+class OpenapiDataPolicyManifest_Value_Properties_ResourceTypeAliases_Aliases:
     default_metadata: Any = None
     default_path: Any = None
     default_pattern: Any = None
@@ -53,40 +51,37 @@ class OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases:
     type: Any = None
 
 @dataclasses.dataclass
-class OpenapiDataPolicyManifest_Properties_ResourceTypeAliases:
+class OpenapiDataPolicyManifest_Value_Properties_ResourceTypeAliases:
     aliases: Any = None
     resource_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiDataPolicyManifest_Properties:
-    # The effect definition.
+class OpenapiDataPolicyManifest_Value_Properties:
     effects: Any = None
-    # The non-alias field accessor values that can be used in the policy rule.
     field_values: Any = None
-    # A value indicating whether policy mode is allowed only in built-in definitions.
     is_built_in_only: Any = None
-    # The list of namespaces for the data policy manifest.
     namespaces: Any = None
-    # The policy mode of the data policy manifest.
     policy_mode: Any = None
-    # The resource functions supported by a manifest.
     resource_functions: Any = None
-    # An array of resource type aliases.
     resource_type_aliases: Any = None
 
 @dataclasses.dataclass
+class OpenapiDataPolicyManifest_Value:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiDataPolicyManifestConfig:
-    policy_mode: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiDataPolicyManifestAttrs:
-    policy_mode: Any = None
-    # The properties of the data policy manifest.
-    properties: Any = None
+    # The link to the next page of items
+    next_link: Any = None
+    # The DataPolicyManifest items on this page
+    value: Any = None
 
 OpenapiDataPolicyManifest = ubx.DataSourceBinding(
     wire_type="azure_resources_openapi_data_policy_manifest",
     fields={
-        "policy_mode": ubx.FieldSpec(wire_name="policy_mode"),
     },
 )

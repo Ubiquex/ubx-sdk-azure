@@ -7,30 +7,80 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiCloudHsmCluster_Value_Properties:
-    group_id: Any = None
-    required_members: Any = None
-    required_zone_names: Any = None
+class OpenapiCloudHsmCluster_Value_Identity_UserAssignedIdentities:
+    client_id: Any = None
+    principal_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiCloudHsmCluster_Value:
+class OpenapiCloudHsmCluster_Value_Identity:
+    principal_id: Any = None
+    tenant_id: Any = None
+    type: Any = None
+    user_assigned_identities: Any = None
+
+@dataclasses.dataclass
+class OpenapiCloudHsmCluster_Value_Properties_Hsms:
+    fqdn: Any = None
+    state: Any = None
+    state_message: Any = None
+
+@dataclasses.dataclass
+class OpenapiCloudHsmCluster_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    id: Any = None
+
+@dataclasses.dataclass
+class OpenapiCloudHsmCluster_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    actions_required: Any = None
+    description: Any = None
+    status: Any = None
+
+@dataclasses.dataclass
+class OpenapiCloudHsmCluster_Value_Properties_PrivateEndpointConnections_Properties:
+    group_ids: Any = None
+    private_endpoint: Any = None
+    private_link_service_connection_state: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class OpenapiCloudHsmCluster_Value_Properties_PrivateEndpointConnections:
+    etag: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
+class OpenapiCloudHsmCluster_Value_Properties:
+    activation_state: Any = None
+    auto_generated_domain_name_label_scope: Any = None
+    hsms: Any = None
+    private_endpoint_connections: Any = None
+    provisioning_state: Any = None
+    public_network_access: Any = None
+    status_message: Any = None
+
+@dataclasses.dataclass
+class OpenapiCloudHsmCluster_Value_Sku:
+    capacity: Any = None
+    family: Any = None
+    name: Any = None
+
+@dataclasses.dataclass
+class OpenapiCloudHsmCluster_Value:
+    identity: Any = None
+    properties: Any = None
+    sku: Any = None
+
+@dataclasses.dataclass
 class OpenapiCloudHsmClusterConfig:
-    cloud_hsm_cluster_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiCloudHsmClusterAttrs:
-    cloud_hsm_cluster_name: Any = None
-    # URL to get the next set of operation list results (if there are any).
+    # The link to the next page of items
     next_link: Any = None
-    # Array of private link resources
+    # The CloudHsmCluster items on this page
     value: Any = None
 
 OpenapiCloudHsmCluster = ubx.DataSourceBinding(
     wire_type="azure_hardwaresecuritymodules_openapi_cloud_hsm_cluster",
     fields={
-        "cloud_hsm_cluster_name": ubx.FieldSpec(wire_name="cloud_hsm_cluster_name"),
     },
 )

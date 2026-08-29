@@ -7,29 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiExtensionValue_Properties:
-    # The type of the Extension being received.
+class OpenapiExtensionValue_Value_Properties:
     extension_type: Any = None
-    # The publisher of the Extension being received.
     publisher: Any = None
-    # The version of the Extension being received.
     version: Any = None
+
+@dataclasses.dataclass
+class OpenapiExtensionValue_Value:
+    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiExtensionValueConfig:
     extension_type: Any = None
     location: Any = None
     publisher: Any = None
-    version: Any = None
 
 @dataclasses.dataclass
 class OpenapiExtensionValueAttrs:
     extension_type: Any = None
     location: Any = None
-    # Describes Extension Metadata properties
-    properties: Any = None
+    # The URL to get the next set of results.
+    next_link: Any = None
     publisher: Any = None
-    version: Any = None
+    # The list of extension metadata
+    value: Any = None
 
 OpenapiExtensionValue = ubx.DataSourceBinding(
     wire_type="azure_hybridcompute_openapi_extension_value",
@@ -37,6 +38,5 @@ OpenapiExtensionValue = ubx.DataSourceBinding(
         "extension_type": ubx.FieldSpec(wire_name="extension_type"),
         "location": ubx.FieldSpec(wire_name="location"),
         "publisher": ubx.FieldSpec(wire_name="publisher"),
-        "version": ubx.FieldSpec(wire_name="version"),
     },
 )

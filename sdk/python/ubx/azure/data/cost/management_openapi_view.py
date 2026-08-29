@@ -7,135 +7,102 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties_Kpis:
+class ManagementOpenapiView_Value_Properties_Kpis:
     enabled: Any = None
     id: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties_Pivots:
+class ManagementOpenapiView_Value_Properties_Pivots:
     name: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties_Query_DataSet_Aggregation:
+class ManagementOpenapiView_Value_Properties_Query_DataSet_Aggregation:
     function: Any = None
     name: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties_Query_DataSet_Configuration:
-    # Array of column names to be included in the report. Any valid report column name is allowed. If not provided, then report includes all columns.
+class ManagementOpenapiView_Value_Properties_Query_DataSet_Configuration:
     columns: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties_Query_DataSet_Filter_And:
+class ManagementOpenapiView_Value_Properties_Query_DataSet_Filter_And:
     pass
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties_Query_DataSet_Filter_Dimensions:
-    # The name of the column to use in comparison.
+class ManagementOpenapiView_Value_Properties_Query_DataSet_Filter_Dimensions:
     name: Any = None
-    # The operator to use for comparison.
     operator: Any = None
-    # Array of values to use for comparison
     values: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties_Query_DataSet_Filter:
-    # The logical "AND" expression. Must have at least 2 items.
+class ManagementOpenapiView_Value_Properties_Query_DataSet_Filter:
     and_: Any = None
-    # The comparison expression to be used in the report.
     dimensions: Any = None
-    # The logical "OR" expression. Must have at least 2 items.
     or_: Any = None
-    # The comparison expression to be used in the report.
     tags: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties_Query_DataSet_Sorting:
+class ManagementOpenapiView_Value_Properties_Query_DataSet_Sorting:
     direction: Any = None
     name: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties_Query_DataSet:
-    # Dictionary of aggregation expression to use in the report. The key of each item in the dictionary is the alias for the aggregated column. Report can have up to 2 aggregation clauses.
+class ManagementOpenapiView_Value_Properties_Query_DataSet:
     aggregation: Any = None
-    # The configuration of dataset in the report.
     configuration: Any = None
-    # The filter expression to be used in the report.
     filter: Any = None
-    # The granularity of rows in the report.
     granularity: Any = None
-    # Array of group by expression to use in the report. Report can have up to 2 group by clauses.
     grouping: Any = None
-    # Array of order by expression to use in the report.
     sorting: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties_Query_TimePeriod:
-    # The start date to pull data from.
+class ManagementOpenapiView_Value_Properties_Query_TimePeriod:
     from_: Any = None
-    # The end date to pull data to.
     to: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties_Query:
-    # The definition of data present in the report.
+class ManagementOpenapiView_Value_Properties_Query:
     data_set: Any = None
-    # If true, report includes monetary commitment.
     include_monetary_commitment: Any = None
-    # The start and end date for pulling data for the report.
     time_period: Any = None
-    # The time frame for pulling data for the report. If custom, then a specific time period must be provided.
     timeframe: Any = None
-    # The type of the report. Usage represents actual usage, forecast represents forecasted data and UsageAndForecast represents both usage and forecasted data. Actual usage and forecasted data can be differentiated based on dates.
     type: Any = None
 
 @dataclasses.dataclass
-class ManagementOpenapiView_Properties:
-    # Show costs accumulated over time.
+class ManagementOpenapiView_Value_Properties:
     accumulated: Any = None
-    # Chart type of the main view in Cost Analysis. Required.
     chart: Any = None
-    # Date the user created this view.
     created_on: Any = None
-    # Currency of the current view.
     currency: Any = None
-    # Date range of the current view.
     date_range: Any = None
-    # User input name of the view. Required.
     display_name: Any = None
-    # List of KPIs to show in Cost Analysis UI.
     kpis: Any = None
-    # Metric to use when displaying costs.
     metric: Any = None
-    # Date when the user last modified this view.
     modified_on: Any = None
-    # Configuration of 3 sub-views in the Cost Analysis UI.
     pivots: Any = None
-    # The definition of a report config.
     query: Any = None
-    # Cost Management scope to save the view on. This includes 'subscriptions/{subscriptionId}' for subscription scope, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' for resourceGroup scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' for Billing Account scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' for Department scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{enrollmentAccountId}' for EnrollmentAccount scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' for BillingProfile scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/invoiceSections/{invoiceSectionId}' for InvoiceSection scope, 'providers/Microsoft.Management/managementGroups/{managementGroupId}' for Management Group scope, '/providers/Microsoft.CostManagement/externalBillingAccounts/{externalBillingAccountName}' for ExternalBillingAccount scope, and '/providers/Microsoft.CostManagement/externalSubscriptions/{externalSubscriptionName}' for ExternalSubscription scope.
     scope: Any = None
+
+@dataclasses.dataclass
+class ManagementOpenapiView_Value:
+    e_tag: Any = None
+    properties: Any = None
 
 @dataclasses.dataclass
 class ManagementOpenapiViewConfig:
-    scope: Any = None
-    view_name: Any = None
+    pass
 
 @dataclasses.dataclass
 class ManagementOpenapiViewAttrs:
-    # The ETag (or entity tag) HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content was not changed. It is a string of ASCII characters placed between double quotes, like "675af34563dc-tr34".
-    e_tag: Any = None
-    # The properties of the view.
-    properties: Any = None
-    scope: Any = None
-    view_name: Any = None
+    # The link (url) to the next page of results.
+    next_link: Any = None
+    # The list of views.
+    value: Any = None
 
 ManagementOpenapiView = ubx.DataSourceBinding(
     wire_type="azure_cost_management_openapi_view",
     fields={
-        "scope": ubx.FieldSpec(wire_name="scope"),
-        "view_name": ubx.FieldSpec(wire_name="view_name"),
     },
 )
