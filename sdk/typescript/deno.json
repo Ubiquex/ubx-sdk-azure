@@ -1,6 +1,6 @@
 {
   "name": "@ubx/sdk-azure",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "Apache-2.0",
   "exports": {
     "./azure/advisor/arm_error_response": "./azure/advisor/arm_error_response.ts",
