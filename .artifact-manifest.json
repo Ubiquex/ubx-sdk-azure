@@ -1,0 +1,13 @@
+{
+  "runbook": "write-artifacts",
+  "target": "azure",
+  "started": "2026-09-04",
+  "updated": "2026-09-04",
+  "hops": [
+    {
+      "id": "close-ubi250-field-gaps",
+      "status": "done",
+      "note": "UBI-250's fix (BuildTopLevel resolves top-level allOf composition) added new depth-0 fields to resources and data sources that already existed and were already fully covered. Real coverage check against a fresh --dump-ir found 377 gaps (255 missing intro, 122 missing field description), 0 missing category. Field descriptions authored individually against each wire's own real context (Azure's own corpus text is bespoke per operation, not a generic reusable convention the way other providers' envelope fields are, confirmed directly before assuming a canonical pass would apply). Intros: 176 generated from a real, per-entity API Management description table (API Management dominates the gap, ~170 of 255, one real intro per distinct APIM entity type reused across its resource/data-source pair and workspace-scoped variants), 17 from a real private-endpoint-connection/private-link-resource pattern scoped per service, 62 authored individually. Verified via a live coverage_check.py recompute: 0 gaps."
+    }
+  ]
+}
