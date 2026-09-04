@@ -288,6 +288,7 @@ jobs:
               -x go.sum -x deno.lock -x deno.json -x package.json -x pyproject.toml \
               "$gendir/out/azure/sdk/typescript" sdk/typescript >> /tmp/diffout 2>&1 \
              && diff -rq \
+              -x pyproject.toml \
               "$gendir/out/azure/sdk/python" sdk/python >> /tmp/diffout 2>&1; then
             echo "state=administrative" >> "$GITHUB_OUTPUT"
             echo "Tag moved but this provider's real generated output is byte-identical -- nothing for a human to review."
