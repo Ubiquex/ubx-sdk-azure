@@ -480,6 +480,7 @@ type ReservationOrderResponseConfig struct {
 }
 
 type ReservationOrderResponseAttrs struct {
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
 	Etag any
 	// The Azure region where the reserved resource lives.
 	Location any

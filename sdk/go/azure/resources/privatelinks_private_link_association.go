@@ -5,7 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivatelinksPrivateLinkAssociation_Properties struct {
 	// The rmpl Resource ID.
-	PrivateLink         any
+	PrivateLink any
+	// Whether public network access is enabled for resources covered by this private link association. (AI-inferred)
 	PublicNetworkAccess any
 	// The scope of the private link association.
 	Scope any
@@ -21,6 +22,7 @@ var PrivatelinksPrivateLinkAssociation_PropertiesFields = ubx.FieldMap{
 }
 
 type PrivatelinksPrivateLinkAssociationConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
@@ -28,7 +30,8 @@ type PrivatelinksPrivateLinkAssociationAttrs struct {
 	// The plaResourceID.
 	Id any
 	// The pla name.
-	Name       any
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// The operation type.
 	Type any

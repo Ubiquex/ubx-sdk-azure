@@ -2,28 +2,38 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface SwaggerNginxConfigurationResponse_Properties_Files {
+  /** The literal content of this configuration file. (AI-inferred) */
   content?: string | Computed<string>;
+  /** The path this file is mounted at inside the NGINX deployment. (AI-inferred) */
   virtualPath?: string | Computed<string>;
 }
 
 export interface SwaggerNginxConfigurationResponse_Properties_Package {
+  /** The literal content of this field. (AI-inferred) */
   data?: string | Computed<string>;
+  /** The configuration file(s) whose own content is protected and never returned in subsequent reads. (AI-inferred) */
   protectedFiles?: string[] | Computed<string[]>;
 }
 
 export interface SwaggerNginxConfigurationResponse_Properties_ProtectedFiles {
+  /** The literal content of this configuration file. (AI-inferred) */
   content?: string | Computed<string>;
+  /** A hash of this content, used to detect changes. (AI-inferred) */
   contentHash?: string | Computed<string>;
+  /** The path this file is mounted at inside the NGINX deployment. (AI-inferred) */
   virtualPath?: string | Computed<string>;
 }
 
 export interface SwaggerNginxConfigurationResponse_Properties {
+  /** The configuration file(s) making up this deployment. (AI-inferred) */
   files?: SwaggerNginxConfigurationResponse_Properties_Files[] | Computed<SwaggerNginxConfigurationResponse_Properties_Files[]>;
   /** Nginx Configuration Package */
   package?: SwaggerNginxConfigurationResponse_Properties_Package | Computed<SwaggerNginxConfigurationResponse_Properties_Package>;
+  /** The configuration file(s) whose own content is protected and never returned in subsequent reads. (AI-inferred) */
   protectedFiles?: SwaggerNginxConfigurationResponse_Properties_ProtectedFiles[] | Computed<SwaggerNginxConfigurationResponse_Properties_ProtectedFiles[]>;
   /** Provisioning State */
   provisioningState?: string | Computed<string>;
+  /** The path to the top-level NGINX configuration file. (AI-inferred) */
   rootFile?: string | Computed<string>;
 }
 
@@ -84,12 +94,15 @@ export interface SwaggerNginxConfigurationResponseConfig {
 }
 
 export interface SwaggerNginxConfigurationResponseAttrs {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id: string;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name: string;
   /** Nginx Configuration Request Properties */
   properties: SwaggerNginxConfigurationResponse_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: SwaggerNginxConfigurationResponse_SystemData;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type: string;
 }
 

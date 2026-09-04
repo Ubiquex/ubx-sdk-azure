@@ -2,10 +2,12 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface RecordSet_Properties_ARecords {
+  /** The IPv4 address this A record resolves to. (AI-inferred) */
   ipv4Address?: string | Computed<string>;
 }
 
 export interface RecordSet_Properties_AaaaRecords {
+  /** The IPv6 address this AAAA record resolves to. (AI-inferred) */
   ipv6Address?: string | Computed<string>;
 }
 
@@ -15,11 +17,14 @@ export interface RecordSet_Properties_CnameRecord {
 }
 
 export interface RecordSet_Properties_MxRecords {
+  /** The mail server hostname this MX record points to. (AI-inferred) */
   exchange?: string | Computed<string>;
+  /** This MX record's own priority -- lower values are preferred over higher ones. (AI-inferred) */
   preference?: number | Computed<number>;
 }
 
 export interface RecordSet_Properties_PtrRecords {
+  /** The domain name this PTR record resolves to. (AI-inferred) */
   ptrdname?: string | Computed<string>;
 }
 
@@ -41,13 +46,18 @@ export interface RecordSet_Properties_SoaRecord {
 }
 
 export interface RecordSet_Properties_SrvRecords {
+  /** The port the service is available on. (AI-inferred) */
   port?: number | Computed<number>;
+  /** This SRV record's own priority -- lower values are preferred over higher ones. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The hostname of the machine providing the service. (AI-inferred) */
   target?: string | Computed<string>;
+  /** A relative weight for records with the same priority, used to load-balance between them. (AI-inferred) */
   weight?: number | Computed<number>;
 }
 
 export interface RecordSet_Properties_TxtRecords {
+  /** The text string(s) making up this TXT record's own value. (AI-inferred) */
   value?: string[] | Computed<string[]>;
 }
 

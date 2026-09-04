@@ -2,19 +2,27 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties {
+  /** The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred) */
   groupIds?: string[] | Computed<string[]>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState | Computed<PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** A reference to the Private Link service this connection targets. (AI-inferred) */
   privateLinkServiceId?: string | Computed<string>;
+  /** A message the requester attaches when asking to connect to this Private Link-enabled resource. (AI-inferred) */
   requestMessage?: string | Computed<string>;
 }
 
 export interface PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties | Computed<PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties>;
 }
 

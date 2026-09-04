@@ -4,6 +4,7 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface VirtualnetworkIpamPool_Properties {
   /** List of IP address prefixes of the resource. */
   addressPrefixes: string[] | Computed<string[]>;
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
   /** String representing a friendly name for the resource. */
   displayName?: string | Computed<string>;

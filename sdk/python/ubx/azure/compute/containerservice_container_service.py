@@ -8,10 +8,15 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ContainerserviceContainerService_Properties_AgentPoolProfiles:
+    # The number of agent node(s) in this pool. (AI-inferred)
     count: Any = None
+    # The DNS name prefix used to construct this agent pool's own fully qualified domain name. (AI-inferred)
     dns_prefix: Any = None
+    # Output only. The fully qualified domain name assigned to this agent pool. (AI-inferred)
     fqdn: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The VM size this agent pool's own nodes are provisioned as. (AI-inferred)
     vm_size: Any = None
 
 @dataclasses.dataclass
@@ -33,6 +38,7 @@ class ContainerserviceContainerService_Properties_DiagnosticsProfile:
 
 @dataclasses.dataclass
 class ContainerserviceContainerService_Properties_LinuxProfile_Ssh_PublicKeys:
+    # The SSH public key data used to authenticate to Linux nodes in this cluster. (AI-inferred)
     key_data: Any = None
 
 @dataclasses.dataclass
@@ -81,6 +87,7 @@ class ContainerserviceContainerService_Properties:
     agent_pool_profiles: Any = None
     # Properties to configure a custom container service cluster.
     custom_profile: Any = None
+    # Configuration for collecting diagnostic data from this container service's own VMs. (AI-inferred)
     diagnostics_profile: Any = None
     # Profile for Linux VMs in the container service cluster.
     linux_profile: Any = None

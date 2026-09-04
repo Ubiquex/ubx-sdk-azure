@@ -10,6 +10,7 @@ import ubx_sdk as ubx
 class GrafanaIntegrationFabric_Properties:
     # The resource Id of the Azure resource which is used to configure Grafana data source. E.g., an Azure Monitor Workspace, an Azure Data Explorer cluster, etc.
     data_source_resource_id: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
     # A list of integration scenarios covered by this integration fabric
     scenarios: Any = None
@@ -27,6 +28,7 @@ _GrafanaIntegrationFabric_PropertiesFields = {
 class GrafanaIntegrationFabricConfig:
     # The geo-location where the resource lives
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # Resource tags.
     tags: Any = None
@@ -35,6 +37,7 @@ class GrafanaIntegrationFabricConfig:
 class GrafanaIntegrationFabricAttrs:
     # The geo-location where the resource lives
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # Resource tags.
     tags: Any = None

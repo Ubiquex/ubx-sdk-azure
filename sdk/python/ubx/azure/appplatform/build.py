@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Build_Properties_Apms:
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
 
 @dataclasses.dataclass

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface HciArcSetting_Properties_ConnectivityProperties_ServiceConfigurations {
+  /** A network port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** The name of the service this applies to. (AI-inferred) */
   serviceName?: string | Computed<string>;
 }
 
@@ -14,14 +16,20 @@ export interface HciArcSetting_Properties_ConnectivityProperties {
 }
 
 export interface HciArcSetting_Properties_DefaultExtensions {
+  /** The category this belongs to. (AI-inferred) */
   category?: string | Computed<string>;
+  /** When consent for this operation was granted. (AI-inferred) */
   consentTime?: string | Computed<string>;
 }
 
 export interface HciArcSetting_Properties_PerNodeDetails {
+  /** A reference to the Azure Arc-enabled server instance this applies to. (AI-inferred) */
   arcInstance?: string | Computed<string>;
+  /** The object ID of the service principal used to Arc-enable this node. (AI-inferred) */
   arcNodeServicePrincipalObjectId?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The current lifecycle state of this resource. (AI-inferred) */
   state?: string | Computed<string>;
 }
 

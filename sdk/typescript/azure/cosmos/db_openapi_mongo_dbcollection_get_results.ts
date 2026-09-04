@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DbOpenapiMongoDbcollectionGetResults_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -23,28 +25,37 @@ export interface DbOpenapiMongoDbcollectionGetResults_Properties_Options_Autosca
 }
 
 export interface DbOpenapiMongoDbcollectionGetResults_Properties_Options {
+  /** Configuration for automatically scaling throughput within a defined maximum. (AI-inferred) */
   autoscaleSettings?: DbOpenapiMongoDbcollectionGetResults_Properties_Options_AutoscaleSettings | Computed<DbOpenapiMongoDbcollectionGetResults_Properties_Options_AutoscaleSettings>;
   /** Request Units per second. For example, "throughput": 10000. */
   throughput?: number | Computed<number>;
 }
 
 export interface DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Key {
+  /** The access key(s) for this account. (AI-inferred) */
   keys?: string[] | Computed<string[]>;
 }
 
 export interface DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Options {
+  /** How long, in seconds, an item lives before automatically expiring. (AI-inferred) */
   expireAfterSeconds?: number | Computed<number>;
+  /** Whether this constraint enforces uniqueness. (AI-inferred) */
   unique?: boolean | Computed<boolean>;
 }
 
 export interface DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes {
+  /** The key of this key/value pair. (AI-inferred) */
   key?: DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Key | Computed<DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Key>;
+  /** Additional option(s) configuring this request or resource. (AI-inferred) */
   options?: DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Options | Computed<DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Options>;
 }
 
 export interface DbOpenapiMongoDbcollectionGetResults_Properties_Resource_RestoreParameters {
+  /** A reference to the source account this account is restored from. (AI-inferred) */
   restoreSource?: string | Computed<string>;
+  /** The point in time this account is restored to, in UTC. (AI-inferred) */
   restoreTimestampInUtc?: string | Computed<string>;
+  /** Whether time-to-live expiration is disabled on the restored data. (AI-inferred) */
   restoreWithTtlDisabled?: boolean | Computed<boolean>;
 }
 

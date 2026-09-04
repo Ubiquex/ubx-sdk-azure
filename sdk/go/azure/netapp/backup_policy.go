@@ -4,9 +4,13 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BackupPolicy_Properties_VolumeBackups struct {
-	BackupsCount     any
-	PolicyEnabled    any
-	VolumeName       any
+	// The number of backup(s) associated with this resource. (AI-inferred)
+	BackupsCount any
+	// Whether this policy is currently active. (AI-inferred)
+	PolicyEnabled any
+	// The name of this volume. (AI-inferred)
+	VolumeName any
+	// A reference to the volume this applies to. (AI-inferred)
 	VolumeResourceId any
 }
 

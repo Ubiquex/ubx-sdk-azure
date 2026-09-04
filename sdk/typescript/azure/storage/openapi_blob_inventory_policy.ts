@@ -2,31 +2,48 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters_CreationTime {
+  /** The number of most recent day(s) this report or query covers. (AI-inferred) */
   lastNdays?: number | Computed<number>;
 }
 
 export interface OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters {
+  /** The blob type(s) (e.g. block blob) this rule applies to. (AI-inferred) */
   blobTypes?: string[] | Computed<string[]>;
+  /** When this resource was created. (AI-inferred) */
   creationTime?: OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters_CreationTime | Computed<OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters_CreationTime>;
+  /** The blob name prefix(es) excluded from this rule. (AI-inferred) */
   excludePrefix?: string[] | Computed<string[]>;
+  /** Whether this rule also applies to previous, versioned copies of a blob. (AI-inferred) */
   includeBlobVersions?: boolean | Computed<boolean>;
+  /** Whether soft-deleted items are included. (AI-inferred) */
   includeDeleted?: boolean | Computed<boolean>;
+  /** Whether this rule also applies to a blob's own snapshots. (AI-inferred) */
   includeSnapshots?: boolean | Computed<boolean>;
+  /** The blob name prefix(es) this rule matches. (AI-inferred) */
   prefixMatch?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition {
+  /** The condition(s) restricting which blob(s) this rule applies to. (AI-inferred) */
   filters?: OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters | Computed<OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters>;
+  /** The format this data is expressed in. (AI-inferred) */
   format?: string | Computed<string>;
+  /** The category of Microsoft Entra ID object this permission applies to, e.g. user or group. (AI-inferred) */
   objectType?: string | Computed<string>;
+  /** The recurrence schedule this applies to. (AI-inferred) */
   schedule?: string | Computed<string>;
+  /** The field(s) making up this schema. (AI-inferred) */
   schemaFields?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiBlobInventoryPolicy_Properties_Policy_Rules {
+  /** The schema or configuration defining this rule. (AI-inferred) */
   definition?: OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition | Computed<OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition>;
+  /** Where this data is sent. (AI-inferred) */
   destination?: string | Computed<string>;
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 

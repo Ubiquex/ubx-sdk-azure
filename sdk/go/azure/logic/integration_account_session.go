@@ -6,7 +6,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type IntegrationAccountSession_Properties struct {
 	// The changed time.
 	ChangedTime any
-	Content     any
+	// The literal content of this schema or configuration. (AI-inferred)
+	Content any
 	// The created time.
 	CreatedTime any
 }

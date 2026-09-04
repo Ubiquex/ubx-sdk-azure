@@ -22,9 +22,13 @@ class OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute:
 
 @dataclasses.dataclass
 class OpenapiEnvironmentVersion_Properties_InferenceConfig:
+    # The endpoint path checked to determine whether this deployment is alive. (AI-inferred)
     liveness_route: Any = None
+    # The endpoint path checked to determine whether this deployment is ready to serve traffic. (AI-inferred)
     readiness_route: Any = None
+    # The endpoint path inference requests are sent to. (AI-inferred)
     scoring_route: Any = None
+    # The endpoint path checked during this deployment's own startup phase. (AI-inferred)
     startup_route: Any = None
 
 @dataclasses.dataclass
@@ -39,6 +43,7 @@ class OpenapiEnvironmentVersion_Properties:
     environment_type: Any = None
     # Name of the image that will be used for the environment. <seealso href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-custom-docker-image#use-a-custom-base-image" />
     image: Any = None
+    # Configuration for this deployment's own inference behavior. (AI-inferred)
     inference_config: Any = None
     # The type of operating system.
     os_type: Any = None

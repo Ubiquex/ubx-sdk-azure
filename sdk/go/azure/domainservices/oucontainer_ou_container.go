@@ -4,9 +4,12 @@ package domainservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OucontainerOuContainer_Properties_Accounts struct {
+	// The name of this service account created within the managed domain's own organizational unit. (AI-inferred)
 	AccountName any
-	Password    any
-	Spn         any
+	// The password for this service account. (AI-inferred)
+	Password any
+	// The Service Principal Name registered for this service account. (AI-inferred)
+	Spn any
 }
 
 type OucontainerOuContainer_Properties struct {

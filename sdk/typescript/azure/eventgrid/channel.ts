@@ -2,9 +2,13 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Channel_Properties_PartnerTopicInfo_EventTypeInfo_InlineEventTypes {
+  /** A URL pointing to the schema describing this event's own data payload. (AI-inferred) */
   dataSchemaUrl?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** A URL pointing to documentation for this event type. (AI-inferred) */
   documentationUrl?: string | Computed<string>;
 }
 

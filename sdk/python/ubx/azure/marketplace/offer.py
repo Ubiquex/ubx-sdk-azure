@@ -8,12 +8,19 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Offer_Properties_Plans:
+    # The visibility level this offer is published at. (AI-inferred)
     accessibility: Any = None
+    # A reference to an alternate technology stack this offer is also available under. (AI-inferred)
     alt_stack_reference: Any = None
+    # Whether this plan is no longer available for new purchases. (AI-inferred)
     is_stop_sell: Any = None
+    # A human-readable name for this plan. (AI-inferred)
     plan_display_name: Any = None
+    # A reference to the specific plan this applies to. (AI-inferred)
     plan_id: Any = None
+    # A reference to the SKU this applies to. (AI-inferred)
     sku_id: Any = None
+    # The technology stack this offer is built on. (AI-inferred)
     stack_type: Any = None
 
 @dataclasses.dataclass
@@ -74,10 +81,12 @@ _Offer_PropertiesFields = {
 
 @dataclasses.dataclass
 class OfferConfig:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class OfferAttrs:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 Offer = ubx.ResourceBinding(

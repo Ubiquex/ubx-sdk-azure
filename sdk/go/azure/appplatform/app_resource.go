@@ -4,7 +4,9 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AppResource_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,16 +22,23 @@ type AppResource_Identity struct {
 }
 
 type AppResource_Properties_CustomPersistentDisks_CustomPersistentDiskProperties struct {
+	// Whether requests are forwarded with the matched prefix stripped from the path. (AI-inferred)
 	EnableSubPath any
-	MountOptions  any
-	MountPath     any
-	ReadOnly      any
-	Type          any
+	// Additional mount option(s) applied to this volume. (AI-inferred)
+	MountOptions any
+	// The path this volume is mounted at inside the container. (AI-inferred)
+	MountPath any
+	// Whether this volume is mounted read-only. (AI-inferred)
+	ReadOnly any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type AppResource_Properties_CustomPersistentDisks struct {
+	// Configuration specific to this custom persistent disk's own storage type. (AI-inferred)
 	CustomPersistentDiskProperties any
-	StorageId                      any
+	// A reference to the storage resource this applies to. (AI-inferred)
+	StorageId any
 }
 
 type AppResource_Properties_IngressSettings_ClientAuth struct {
@@ -53,8 +62,10 @@ type AppResource_Properties_IngressSettings struct {
 }
 
 type AppResource_Properties_LoadedCertificates struct {
+	// Whether a custom trust store is loaded for validating outbound TLS connections. (AI-inferred)
 	LoadTrustStore any
-	ResourceId     any
+	// A reference to the resource this applies to. (AI-inferred)
+	ResourceId any
 }
 
 type AppResource_Properties_PersistentDisk struct {

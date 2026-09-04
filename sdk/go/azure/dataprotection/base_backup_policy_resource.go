@@ -6,7 +6,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type BaseBackupPolicyResource_Properties struct {
 	// Type of datasource for the backup management
 	DatasourceTypes any
-	ObjectType      any
+	// A discriminator identifying this object's own concrete type, used when a field can hold more than one shape. (AI-inferred)
+	ObjectType any
 }
 
 var BaseBackupPolicyResource_PropertiesFields = ubx.FieldMap{

@@ -2,40 +2,57 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Identity {
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The user-assigned managed identities associated with this resource, keyed by their own resource ID. (AI-inferred) */
   userAssignedIdentities?: Record<string, ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Identity_UserAssignedIdentities> | Computed<Record<string, ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Identity_UserAssignedIdentities>>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AuthenticationCertificates_Properties {
+  /** The literal data payload of this field. (AI-inferred) */
   data?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AuthenticationCertificates {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AuthenticationCertificates_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AuthenticationCertificates_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AutoscaleConfiguration {
+  /** The maximum number of instance(s) autoscaling is allowed to scale up to. (AI-inferred) */
   maxCapacity?: number | Computed<number>;
+  /** The minimum number of instance(s) autoscaling is allowed to scale down to. (AI-inferred) */
   minCapacity?: number | Computed<number>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendAddresses {
+  /** The fully qualified domain name assigned to this resource. (AI-inferred) */
   fqdn?: string | Computed<string>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
 }
 
@@ -43,2994 +60,4999 @@ export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_Appli
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties {
+  /** The backend address(es) (by IP or NIC IP configuration) this pool routes traffic to. (AI-inferred) */
   backendAddresses?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendAddresses[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendAddresses[]>;
+  /** The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred) */
   backendIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping {
+  /** The port on the backend instance this rule forwards matched traffic to. (AI-inferred) */
   backendPort?: number | Computed<number>;
+  /** The external port this load-balancing or NAT rule listens on. (AI-inferred) */
   frontendPort?: number | Computed<number>;
+  /** The name of the inbound NAT rule this port mapping belongs to. (AI-inferred) */
   inboundNatRuleName?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties {
+  /** An administrative override for this rule's own health-probe-driven forwarding state -- `Up` forces new connections through regardless of probe results, `Down` forces them away. (AI-inferred) */
   adminState?: string | Computed<string>;
+  /** Output only. The specific frontend-to-backend port mapping(s) this backend instance received from an inbound NAT pool. (AI-inferred) */
   inboundNatRulesPortMapping?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping[]>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the load balancer's own frontend IP configuration this applies to. (AI-inferred) */
   loadBalancerFrontendIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the network interface IP configuration this applies to. (AI-inferred) */
   networkInterfaceIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the virtual network this resource is associated with. (AI-inferred) */
   virtualNetwork?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces {
+  /** A unique identifier for this resource or configuration. (AI-inferred) */
   identifier?: number | Computed<number>;
+  /** A TCP or UDP port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties {
+  /** The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred) */
   backendIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** How long a backend instance stays reachable for existing connections after being marked for removal, before the load balancer stops routing to it entirely. (AI-inferred) */
   drainPeriodInSeconds?: number | Computed<number>;
+  /** The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred) */
   inboundNatRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The backend address(es) registered directly on the load balancer resource itself, rather than sourced from a NIC's own IP configuration. (AI-inferred) */
   loadBalancerBackendAddresses?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses[]>;
+  /** The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred) */
   loadBalancingRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** A reference to the outbound NAT rule associated with this resource. (AI-inferred) */
   outboundRule?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred) */
   outboundRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this backend pool's own membership is synced `Automatic`ally from attached NICs, or managed `Manual`ly via `load_balancer_backend_addresses`. (AI-inferred) */
   syncMode?: string | Computed<string>;
+  /** The tunnel endpoint(s) (their own IP addresses and roles) making up this VPN connection, one per active/standby tunnel instance. (AI-inferred) */
   tunnelInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces[]>;
+  /** A reference to the virtual network this resource is associated with. (AI-inferred) */
   virtualNetwork?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules_Properties {
+  /** A reference to the backend address pool this rule sends matched traffic to. (AI-inferred) */
   backendAddressPool?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the backend network interface IP configuration this applies to. (AI-inferred) */
   backendIpconfiguration?: unknown | Computed<unknown>;
+  /** The port on the backend instance this rule forwards matched traffic to. (AI-inferred) */
   backendPort?: number | Computed<number>;
+  /** Whether this rule uses Floating IP (Direct Server Return) -- the backend sees the frontend's own IP as the destination, rather than its own. (AI-inferred) */
   enableFloatingIp?: boolean | Computed<boolean>;
+  /** Whether the load balancer sends a TCP reset when a connection is idle-timed-out or the backend becomes unavailable, so the client fails fast instead of hanging. (AI-inferred) */
   enableTcpReset?: boolean | Computed<boolean>;
+  /** A reference to the frontend IP configuration this rule listens on. (AI-inferred) */
   frontendIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The external port this load-balancing or NAT rule listens on. (AI-inferred) */
   frontendPort?: number | Computed<number>;
+  /** The last port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred) */
   frontendPortRangeEnd?: number | Computed<number>;
+  /** The first port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred) */
   frontendPortRangeStart?: number | Computed<number>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties {
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The sub-resource this connection targets on the destination service, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred) */
   groupId?: string | Computed<string>;
+  /** The name a resource must be created with to participate in a specific availability/failover grouping. (AI-inferred) */
   requiredMemberName?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings {
+  /** A reference to a custom DDoS protection policy to apply, overriding the subscription's own default DDoS policy. (AI-inferred) */
   ddosCustomPolicy?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the DDoS Protection Plan covering this virtual network. (AI-inferred) */
   ddosProtectionPlan?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether DDoS protection for this resource is `Enabled`, `Disabled`, or inherits from the containing virtual network. (AI-inferred) */
   protectionMode?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings {
+  /** The DNS label whose concatenation with the region's own DNS zone forms this public IP address's fully qualified domain name. (AI-inferred) */
   domainNameLabel?: string | Computed<string>;
+  /** How uniquely `domain_name_label` must be scoped -- e.g. tenant-wide or subscription-wide -- when generating this address's own FQDN. (AI-inferred) */
   domainNameLabelScope?: string | Computed<string>;
+  /** The fully qualified domain name assigned to this resource. (AI-inferred) */
   fqdn?: string | Computed<string>;
+  /** A fully qualified domain name that resolves to this public IP address, creating a matching reverse-DNS (PTR) record. (AI-inferred) */
   reverseFqdn?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_Properties {
+  /** The action(s) this rule or policy applies. (AI-inferred) */
   actions?: string[] | Computed<string[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The name of the Azure service this configuration applies to or connects with. (AI-inferred) */
   serviceName?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations {
+  /** Output only. The specific address ranges actually allocated from this pool. (AI-inferred) */
   allocatedAddressPrefixes?: string[] | Computed<string[]>;
+  /** How many IP addresses to allocate from this pool. (AI-inferred) */
   numberOfIpAddresses?: string | Computed<string>;
+  /** A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred) */
   pool?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties {
+  /** Whether this security rule's own match is `Allow`ed or `Deny`ed. (AI-inferred) */
   access?: string | Computed<string>;
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The destination IP address range (CIDR) or tag this rule matches, e.g. `10.0.0.0/24` or `Internet`. (AI-inferred) */
   destinationAddressPrefix?: string | Computed<string>;
+  /** The destination IP address ranges (CIDR) this rule matches, when more than one applies. (AI-inferred) */
   destinationAddressPrefixes?: string[] | Computed<string[]>;
+  /** The Application Security Groups this rule matches traffic destined for, instead of a raw address prefix. (AI-inferred) */
   destinationApplicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** The destination port range this rule matches, e.g. `80` or `1000-2000`. (AI-inferred) */
   destinationPortRange?: string | Computed<string>;
+  /** The destination port ranges this rule matches, when more than one applies. (AI-inferred) */
   destinationPortRanges?: string[] | Computed<string[]>;
+  /** Whether this security rule applies to `Inbound` or `Outbound` traffic. (AI-inferred) */
   direction?: string | Computed<string>;
+  /** The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The source IP address range (CIDR) or tag this rule matches, e.g. `10.0.0.0/24` or `Internet`. (AI-inferred) */
   sourceAddressPrefix?: string | Computed<string>;
+  /** The source IP address ranges (CIDR) this rule matches, when more than one applies. (AI-inferred) */
   sourceAddressPrefixes?: string[] | Computed<string[]>;
+  /** The Application Security Groups this rule matches traffic originating from, instead of a raw address prefix. (AI-inferred) */
   sourceApplicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** The source port range this rule matches, e.g. `*` for any port. (AI-inferred) */
   sourcePortRange?: string | Computed<string>;
+  /** The source port ranges this rule matches, when more than one applies. (AI-inferred) */
   sourcePortRanges?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration {
+  /** Whether this feature or setting is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** How often, in minutes, Traffic Analytics processes this flow log's own data into insights. (AI-inferred) */
   trafficAnalyticsInterval?: number | Computed<number>;
+  /** The Log Analytics workspace ID Traffic Analytics results are sent to. (AI-inferred) */
   workspaceId?: string | Computed<string>;
+  /** The Azure region the target Log Analytics workspace is deployed in. (AI-inferred) */
   workspaceRegion?: string | Computed<string>;
+  /** The full Azure Resource Manager resource ID of the target Log Analytics workspace. (AI-inferred) */
   workspaceResourceId?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration {
+  /** Traffic Analytics settings (workspace, interval) applied to this Network Watcher flow log. (AI-inferred) */
   networkWatcherFlowAnalyticsConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format {
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The format or schema version this data conforms to. (AI-inferred) */
   version?: number | Computed<number>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy {
+  /** The number of days data is retained before automatic deletion. (AI-inferred) */
   days?: number | Computed<number>;
+  /** Whether this feature or setting is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties {
+  /** Whether this feature or setting is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** Which traffic characteristics this flow log filters on before recording. (AI-inferred) */
   enabledFilteringCriteria?: string | Computed<string>;
+  /** Configuration for deriving Traffic Analytics insights from this flow log's own recorded data. (AI-inferred) */
   flowAnalyticsConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration>;
+  /** The output format this data is written in. (AI-inferred) */
   format?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Which categories of record this configuration includes. (AI-inferred) */
   recordTypes?: string | Computed<string>;
+  /** How long this flow log's own recorded data is kept before automatic deletion. (AI-inferred) */
   retentionPolicy?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy>;
+  /** The resource ID of the storage account this flow log's own data is written to. (AI-inferred) */
   storageId?: string | Computed<string>;
+  /** Output only. The stable `resource_guid` of the resource this flow log is enabled on. (AI-inferred) */
   targetResourceGuid?: string | Computed<string>;
+  /** The resource ID this configuration applies to, e.g. the NSG or virtual network a flow log is enabled on. (AI-inferred) */
   targetResourceId?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Identity | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Identity>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings {
+  /** Output only. The effective DNS server IP addresses this network interface actually uses, resolved from `dns_servers` or the virtual network's own defaults. (AI-inferred) */
   appliedDnsServers?: string[] | Computed<string[]>;
+  /** Custom DNS server IP addresses this resource uses, overriding the virtual network's own default DNS. (AI-inferred) */
   dnsServers?: string[] | Computed<string[]>;
+  /** A DNS label for this network interface, resolvable from within the virtual network as `{label}.{internal_domain_name_suffix}`. (AI-inferred) */
   internalDnsNameLabel?: string | Computed<string>;
+  /** Output only. The DNS suffix appended to `internal_dns_name_label` to form this network interface's own internal FQDN. (AI-inferred) */
   internalDomainNameSuffix?: string | Computed<string>;
+  /** Output only. This network interface's own resolvable internal fully qualified domain name. (AI-inferred) */
   internalFqdn?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs {
+  /** The fully qualified domain name assigned to this resource. (AI-inferred) */
   fqdn?: string | Computed<string>;
+  /** The IP address(es) associated with this resource. (AI-inferred) */
   ipAddresses?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties {
+  /** The sub-resource this connection targets on the destination service, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred) */
   groupId?: string | Computed<string>;
+  /** The name identifying this member within its own containing group or set. (AI-inferred) */
   memberName?: string | Computed<string>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the Private Link service owner still needs to take on this connection beyond the basic approve/reject/disconnect workflow, or `None` if nothing further is needed. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this connection, resource, or operation, e.g. `Approved`, `Pending`, `Rejected`, or `Disconnected`. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties {
+  /** The sub-resource(s) of the target service this private endpoint connects to, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred) */
   groupIds?: string[] | Computed<string[]>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred) */
   privateLinkServiceConnectionState?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The resource ID of the Private Link service (or Private Link-enabled PaaS resource) this private endpoint connects to. (AI-inferred) */
   privateLinkServiceId?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A message the requester attaches when asking to connect to this Private Link-enabled or ExpressRoute-peered resource, shown to the approver alongside the connection request. (AI-inferred) */
   requestMessage?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties {
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred) */
   billingSku?: string | Computed<string>;
+  /** DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred) */
   customDnsConfigs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[]>;
+  /** A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred) */
   customNetworkInterfaceName?: string | Computed<string>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[]>;
+  /** Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred) */
   ipVersionType?: string | Computed<string>;
+  /** Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred) */
   manualPrivateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** The Private Link service connection(s) this private endpoint establishes. (AI-inferred) */
   privateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval {
+  /** The subscription ID(s) this auto-approval or visibility rule applies to. (AI-inferred) */
   subscriptions?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties {
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings {
+  /** A reference to a custom DDoS protection policy to apply, overriding the subscription's own default DDoS policy. (AI-inferred) */
   ddosCustomPolicy?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred) */
   tier?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: unknown | Computed<unknown>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings>;
+  /** Whether this rule tracks individual connections for graceful behavior on backend pool membership changes, rather than treating every packet independently. (AI-inferred) */
   enableConnectionTracking?: boolean | Computed<boolean>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A range of ports reserved on the load balancer's own frontend, auto-allocated one-to-one to backend instances for inbound NAT (typically used by a scale set). (AI-inferred) */
   inboundNatPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred) */
   inboundNatRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred) */
   loadBalancingRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred) */
   outboundRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties {
+  /** Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred) */
   linkIdentifier?: string | Computed<string>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint>;
+  /** The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred) */
   privateEndpointLocation?: string | Computed<string>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred) */
   privateLinkServiceConnectionState?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties {
+  /** The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationLoadBalancerFrontEndIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations>;
+  /** The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationNetworkInterfaceIpconfiguration?: unknown | Computed<unknown>;
+  /** The port this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationPort?: number | Computed<number>;
+  /** The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred) */
   networkInterfaceTapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred) */
   virtualNetworkTap?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: unknown | Computed<unknown>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties {
+  /** Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred) */
   defaultSecurityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The flow log(s) configured on this Network Security Group. (AI-inferred) */
   flowLogs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[]>;
+  /** Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred) */
   flushConnection?: boolean | Computed<boolean>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom (non-default) security rules on this Network Security Group. (AI-inferred) */
   securityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties {
+  /** Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred) */
   defaultSecurityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The flow log(s) configured on this Network Security Group. (AI-inferred) */
   flowLogs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[]>;
+  /** Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred) */
   flushConnection?: boolean | Computed<boolean>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom (non-default) security rules on this Network Security Group. (AI-inferred) */
   securityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties {
+  /** Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred) */
   linkIdentifier?: string | Computed<string>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: unknown | Computed<unknown>;
+  /** The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred) */
   privateEndpointLocation?: string | Computed<string>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred) */
   privateLinkServiceConnectionState?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: unknown | Computed<unknown>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties {
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred) */
   billingSku?: string | Computed<string>;
+  /** DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred) */
   customDnsConfigs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[]>;
+  /** A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred) */
   customNetworkInterfaceName?: string | Computed<string>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[]>;
+  /** Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred) */
   ipVersionType?: string | Computed<string>;
+  /** Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred) */
   manualPrivateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces[]>;
+  /** The Private Link service connection(s) this private endpoint establishes. (AI-inferred) */
   privateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_Properties {
+  /** A reference to a related resource. (AI-inferred) */
   link?: string | Computed<string>;
+  /** The Azure resource type of the resource `link` points to. (AI-inferred) */
   linkedResourceType?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHop {
+  /** Output only. The effective next-hop IP address(es) actually in use for this route. (AI-inferred) */
   nextHopIpAddresses?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** Whether a static route on this route table overrides the equivalent route learned via BGP. (AI-inferred) */
   hasBgpOverride?: boolean | Computed<boolean>;
+  /** Where traffic matching this route is sent next. (AI-inferred) */
   nextHop?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHop | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHop>;
+  /** The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred) */
   nextHopIpAddress?: string | Computed<string>;
+  /** The kind of next hop this route uses, e.g. `VirtualAppliance`, `VnetLocal`, `Internet`, or `None`. (AI-inferred) */
   nextHopType?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties {
+  /** Whether routes learned via BGP are prevented from propagating into this route table. (AI-inferred) */
   disableBgpRoutePropagation?: boolean | Computed<boolean>;
+  /** Whether this route is withheld from propagating to a peered virtual network. (AI-inferred) */
   disablePeeringRoute?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom routes making up this route table. (AI-inferred) */
   routes?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_Properties {
+  /** Whether this resource can be deleted directly, or is protected because something else still depends on it. (AI-inferred) */
   allowDelete?: boolean | Computed<boolean>;
+  /** A reference to a related resource. (AI-inferred) */
   link?: string | Computed<string>;
+  /** The Azure resource type of the resource `link` points to. (AI-inferred) */
   linkedResourceType?: string | Computed<string>;
+  /** The Azure region(s) this configuration or availability applies to. (AI-inferred) */
   locations?: string[] | Computed<string[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_Properties {
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The Azure service (e.g. a specific Private Link-enabled PaaS service) this configuration applies to. (AI-inferred) */
   service?: string | Computed<string>;
+  /** The specific service resource(s) a service endpoint policy definition grants access to. (AI-inferred) */
   serviceResources?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties {
+  /** Service endpoint policies that apply to this subnet only in specific contexts (e.g. a specific service alias), layered on top of its own regular `service_endpoint_policies`. (AI-inferred) */
   contextualServiceEndpointPolicies?: string[] | Computed<string[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The alias identifying the specific PaaS service resource a service endpoint policy definition grants access to. (AI-inferred) */
   serviceAlias?: string | Computed<string>;
+  /** The individual rules making up a service endpoint policy, each granting subnet traffic access to a specific Azure service resource. (AI-inferred) */
   serviceEndpointPolicyDefinitions?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints {
+  /** The Azure region(s) this configuration or availability applies to. (AI-inferred) */
   locations?: string[] | Computed<string[]>;
+  /** An identifier for the network this configuration is scoped to. (AI-inferred) */
   networkIdentifier?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The Azure service (e.g. a specific Private Link-enabled PaaS service) this configuration applies to. (AI-inferred) */
   service?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred) */
   applicationGatewayIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[]>;
+  /** Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundAccess?: boolean | Computed<boolean>;
+  /** Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred) */
   delegations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[]>;
+  /** References to IP address pool allocations reserved for this subnet. (AI-inferred) */
   ipAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** Reusable IP configuration templates associated with this resource. (AI-inferred) */
   ipConfigurationProfiles?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred) */
   ipamPoolPrefixAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[]>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred) */
   privateEndpointNetworkPolicies?: string | Computed<string>;
+  /** The Private Endpoint resources deployed in this subnet. (AI-inferred) */
   privateEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[]>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred) */
   privateLinkServiceNetworkPolicies?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred) */
   purpose?: string | Computed<string>;
+  /** Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred) */
   resourceNavigationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[]>;
+  /** A reference to the route table associated with this subnet. (AI-inferred) */
   routeTable?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable>;
+  /** Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred) */
   serviceAssociationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[]>;
+  /** Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred) */
   serviceEndpointPolicies?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[]>;
+  /** The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred) */
   serviceEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[]>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred) */
   sharingScope?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: unknown | Computed<unknown>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags {
+  /** The identifier of the Microsoft first-party service tag this IP tag is associated with. (AI-inferred) */
   firstPartyServiceTagId?: string | Computed<string>;
+  /** The category this IP tag belongs to, e.g. `FirstPartyUsage`. (AI-inferred) */
   ipTagType?: string | Computed<string>;
+  /** The literal tag value. (AI-inferred) */
   tag?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Properties {
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** Whether NAT64 (IPv6-to-IPv4 translation) is enabled for this configuration. (AI-inferred) */
   nat64?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The IPv4 Public IP Address resources associated with this configuration. (AI-inferred) */
   publicIpAddresses?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The IPv6 Public IP Address resources associated with this configuration. (AI-inferred) */
   publicIpAddressesV6?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The IPv4 Public IP Prefix resources associated with this configuration. (AI-inferred) */
   publicIpPrefixes?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The IPv6 Public IP Prefix resources associated with this configuration. (AI-inferred) */
   publicIpPrefixesV6?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the virtual network this resource is sourced from. (AI-inferred) */
   sourceVirtualNetwork?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Sku {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Sku | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings>;
+  /** What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred) */
   deleteOption?: string | Computed<string>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the IP configuration this resource is associated with. (AI-inferred) */
   ipConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration>;
+  /** IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred) */
   ipTags?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[]>;
+  /** A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred) */
   linkedPublicIpaddress?: unknown | Computed<unknown>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
+  /** Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred) */
   publicIpallocationMethod?: string | Computed<string>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred) */
   servicePublicIpaddress?: unknown | Computed<unknown>;
+  /** Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred) */
   upgradedToV2?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings>;
+  /** What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred) */
   deleteOption?: string | Computed<string>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the IP configuration this resource is associated with. (AI-inferred) */
   ipConfiguration?: unknown | Computed<unknown>;
+  /** IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred) */
   ipTags?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[]>;
+  /** A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred) */
   linkedPublicIpaddress?: unknown | Computed<unknown>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
+  /** Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred) */
   publicIpallocationMethod?: string | Computed<string>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred) */
   servicePublicIpaddress?: unknown | Computed<unknown>;
+  /** Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred) */
   upgradedToV2?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings>;
+  /** What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred) */
   deleteOption?: string | Computed<string>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the IP configuration this resource is associated with. (AI-inferred) */
   ipConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration>;
+  /** IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred) */
   ipTags?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[]>;
+  /** A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred) */
   linkedPublicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
+  /** Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred) */
   publicIpallocationMethod?: string | Computed<string>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred) */
   servicePublicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress>;
+  /** Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred) */
   upgradedToV2?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings>;
+  /** Whether this rule tracks individual connections for graceful behavior on backend pool membership changes, rather than treating every packet independently. (AI-inferred) */
   enableConnectionTracking?: boolean | Computed<boolean>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A range of ports reserved on the load balancer's own frontend, auto-allocated one-to-one to backend instances for inbound NAT (typically used by a scale set). (AI-inferred) */
   inboundNatPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred) */
   inboundNatRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred) */
   loadBalancingRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred) */
   outboundRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties {
+  /** The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationLoadBalancerFrontEndIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations>;
+  /** The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationNetworkInterfaceIpconfiguration?: unknown | Computed<unknown>;
+  /** The port this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationPort?: number | Computed<number>;
+  /** The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred) */
   networkInterfaceTapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred) */
   virtualNetworkTap?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: unknown | Computed<unknown>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties {
+  /** Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred) */
   defaultSecurityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The flow log(s) configured on this Network Security Group. (AI-inferred) */
   flowLogs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[]>;
+  /** Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred) */
   flushConnection?: boolean | Computed<boolean>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom (non-default) security rules on this Network Security Group. (AI-inferred) */
   securityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: unknown | Computed<unknown>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties {
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred) */
   billingSku?: string | Computed<string>;
+  /** DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred) */
   customDnsConfigs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[]>;
+  /** A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred) */
   customNetworkInterfaceName?: string | Computed<string>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[]>;
+  /** Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred) */
   ipVersionType?: string | Computed<string>;
+  /** Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred) */
   manualPrivateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces[]>;
+  /** The Private Link service connection(s) this private endpoint establishes. (AI-inferred) */
   privateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred) */
   applicationGatewayIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[]>;
+  /** Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundAccess?: boolean | Computed<boolean>;
+  /** Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred) */
   delegations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[]>;
+  /** References to IP address pool allocations reserved for this subnet. (AI-inferred) */
   ipAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** Reusable IP configuration templates associated with this resource. (AI-inferred) */
   ipConfigurationProfiles?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations[]>;
+  /** Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred) */
   ipamPoolPrefixAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[]>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred) */
   privateEndpointNetworkPolicies?: string | Computed<string>;
+  /** The Private Endpoint resources deployed in this subnet. (AI-inferred) */
   privateEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints[]>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred) */
   privateLinkServiceNetworkPolicies?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred) */
   purpose?: string | Computed<string>;
+  /** Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred) */
   resourceNavigationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[]>;
+  /** A reference to the route table associated with this subnet. (AI-inferred) */
   routeTable?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable>;
+  /** Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred) */
   serviceAssociationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[]>;
+  /** Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred) */
   serviceEndpointPolicies?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[]>;
+  /** The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred) */
   serviceEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[]>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred) */
   sharingScope?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred) */
   virtualNetworkTap?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: unknown | Computed<unknown>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties {
+  /** Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred) */
   defaultSecurityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The flow log(s) configured on this Network Security Group. (AI-inferred) */
   flowLogs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[]>;
+  /** Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred) */
   flushConnection?: boolean | Computed<boolean>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom (non-default) security rules on this Network Security Group. (AI-inferred) */
   securityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: unknown | Computed<unknown>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties {
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred) */
   billingSku?: string | Computed<string>;
+  /** DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred) */
   customDnsConfigs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[]>;
+  /** A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred) */
   customNetworkInterfaceName?: string | Computed<string>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[]>;
+  /** Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred) */
   ipVersionType?: string | Computed<string>;
+  /** Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred) */
   manualPrivateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces[]>;
+  /** The Private Link service connection(s) this private endpoint establishes. (AI-inferred) */
   privateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred) */
   applicationGatewayIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[]>;
+  /** Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundAccess?: boolean | Computed<boolean>;
+  /** Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred) */
   delegations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[]>;
+  /** References to IP address pool allocations reserved for this subnet. (AI-inferred) */
   ipAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** Reusable IP configuration templates associated with this resource. (AI-inferred) */
   ipConfigurationProfiles?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred) */
   ipamPoolPrefixAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[]>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred) */
   privateEndpointNetworkPolicies?: string | Computed<string>;
+  /** The Private Endpoint resources deployed in this subnet. (AI-inferred) */
   privateEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[]>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred) */
   privateLinkServiceNetworkPolicies?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred) */
   purpose?: string | Computed<string>;
+  /** Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred) */
   resourceNavigationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[]>;
+  /** A reference to the route table associated with this subnet. (AI-inferred) */
   routeTable?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable>;
+  /** Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred) */
   serviceAssociationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[]>;
+  /** Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred) */
   serviceEndpointPolicies?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[]>;
+  /** The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred) */
   serviceEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[]>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred) */
   sharingScope?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings>;
+  /** What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred) */
   deleteOption?: string | Computed<string>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the IP configuration this resource is associated with. (AI-inferred) */
   ipConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration>;
+  /** IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred) */
   ipTags?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[]>;
+  /** A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred) */
   linkedPublicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
+  /** Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred) */
   publicIpallocationMethod?: string | Computed<string>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred) */
   servicePublicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress>;
+  /** Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred) */
   upgradedToV2?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties {
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred) */
   billingSku?: string | Computed<string>;
+  /** DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred) */
   customDnsConfigs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[]>;
+  /** A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred) */
   customNetworkInterfaceName?: string | Computed<string>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[]>;
+  /** Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred) */
   ipVersionType?: string | Computed<string>;
+  /** Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred) */
   manualPrivateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** The Private Link service connection(s) this private endpoint establishes. (AI-inferred) */
   privateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties {
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties {
+  /** Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred) */
   linkIdentifier?: string | Computed<string>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint>;
+  /** The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred) */
   privateEndpointLocation?: string | Computed<string>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred) */
   privateLinkServiceConnectionState?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: unknown | Computed<unknown>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties {
+  /** Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred) */
   defaultSecurityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The flow log(s) configured on this Network Security Group. (AI-inferred) */
   flowLogs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[]>;
+  /** Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred) */
   flushConnection?: boolean | Computed<boolean>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom (non-default) security rules on this Network Security Group. (AI-inferred) */
   securityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties {
+  /** Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred) */
   defaultSecurityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The flow log(s) configured on this Network Security Group. (AI-inferred) */
   flowLogs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[]>;
+  /** Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred) */
   flushConnection?: boolean | Computed<boolean>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom (non-default) security rules on this Network Security Group. (AI-inferred) */
   securityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: unknown | Computed<unknown>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties {
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred) */
   billingSku?: string | Computed<string>;
+  /** DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred) */
   customDnsConfigs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[]>;
+  /** A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred) */
   customNetworkInterfaceName?: string | Computed<string>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[]>;
+  /** Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred) */
   ipVersionType?: string | Computed<string>;
+  /** Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred) */
   manualPrivateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces[]>;
+  /** The Private Link service connection(s) this private endpoint establishes. (AI-inferred) */
   privateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable_Properties {
+  /** Whether routes learned via BGP are prevented from propagating into this route table. (AI-inferred) */
   disableBgpRoutePropagation?: boolean | Computed<boolean>;
+  /** Whether this route is withheld from propagating to a peered virtual network. (AI-inferred) */
   disablePeeringRoute?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom routes making up this route table. (AI-inferred) */
   routes?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties {
+  /** Service endpoint policies that apply to this subnet only in specific contexts (e.g. a specific service alias), layered on top of its own regular `service_endpoint_policies`. (AI-inferred) */
   contextualServiceEndpointPolicies?: string[] | Computed<string[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The alias identifying the specific PaaS service resource a service endpoint policy definition grants access to. (AI-inferred) */
   serviceAlias?: string | Computed<string>;
+  /** The individual rules making up a service endpoint policy, each granting subnet traffic access to a specific Azure service resource. (AI-inferred) */
   serviceEndpointPolicyDefinitions?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred) */
   applicationGatewayIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[]>;
+  /** Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundAccess?: boolean | Computed<boolean>;
+  /** Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred) */
   delegations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[]>;
+  /** References to IP address pool allocations reserved for this subnet. (AI-inferred) */
   ipAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** Reusable IP configuration templates associated with this resource. (AI-inferred) */
   ipConfigurationProfiles?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations[]>;
+  /** Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred) */
   ipamPoolPrefixAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[]>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred) */
   privateEndpointNetworkPolicies?: string | Computed<string>;
+  /** The Private Endpoint resources deployed in this subnet. (AI-inferred) */
   privateEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints[]>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred) */
   privateLinkServiceNetworkPolicies?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred) */
   purpose?: string | Computed<string>;
+  /** Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred) */
   resourceNavigationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[]>;
+  /** A reference to the route table associated with this subnet. (AI-inferred) */
   routeTable?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable>;
+  /** Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred) */
   serviceAssociationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[]>;
+  /** Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred) */
   serviceEndpointPolicies?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[]>;
+  /** The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred) */
   serviceEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[]>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred) */
   sharingScope?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings>;
+  /** Whether this rule tracks individual connections for graceful behavior on backend pool membership changes, rather than treating every packet independently. (AI-inferred) */
   enableConnectionTracking?: boolean | Computed<boolean>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A range of ports reserved on the load balancer's own frontend, auto-allocated one-to-one to backend instances for inbound NAT (typically used by a scale set). (AI-inferred) */
   inboundNatPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred) */
   inboundNatRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred) */
   loadBalancingRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred) */
   outboundRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties {
+  /** The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationLoadBalancerFrontEndIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration>;
+  /** The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationNetworkInterfaceIpconfiguration?: unknown | Computed<unknown>;
+  /** The port this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationPort?: number | Computed<number>;
+  /** The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred) */
   networkInterfaceTapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties {
+  /** The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   applicationGatewayBackendAddressPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools[]>;
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   loadBalancerBackendAddressPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools[]>;
+  /** The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred) */
   loadBalancerInboundNatRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules[]>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred) */
   privateIpaddressPrefixLength?: number | Computed<number>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred) */
   privateLinkConnectionProperties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet>;
+  /** The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred) */
   virtualNetworkTaps?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties {
+  /** The backend address(es) (by IP or NIC IP configuration) this pool routes traffic to. (AI-inferred) */
   backendAddresses?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendAddresses[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendAddresses[]>;
+  /** The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred) */
   backendIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection_Properties_ConnectionDraining {
+  /** How long, in seconds, a backend member being drained remains reachable for its own existing connections. (AI-inferred) */
   drainTimeoutInSec?: number | Computed<number>;
+  /** Whether this feature or setting is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection_Properties {
+  /** The name of the cookie used for session affinity. (AI-inferred) */
   affinityCookieName?: string | Computed<string>;
+  /** The trusted root certificate(s) used to authenticate the backend server's own TLS certificate. (AI-inferred) */
   authenticationCertificates?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** Configuration for gracefully deregistering a backend member, allowing existing connections to complete before removal. (AI-inferred) */
   connectionDraining?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection_Properties_ConnectionDraining | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection_Properties_ConnectionDraining>;
+  /** Whether session affinity via a gateway-managed cookie is `Enabled` or `Disabled`. (AI-inferred) */
   cookieBasedAffinity?: string | Computed<string>;
+  /** Whether backend connections are dedicated per client, rather than pooled and reused across clients. (AI-inferred) */
   dedicatedBackendConnection?: boolean | Computed<boolean>;
+  /** The hostname this rule matches or targets. (AI-inferred) */
   hostName?: string | Computed<string>;
+  /** The URL path this rule matches or targets. (AI-inferred) */
   path?: string | Computed<string>;
+  /** Whether the `Host` header sent to the backend is derived from its own backend address, rather than a fixed value. (AI-inferred) */
   pickHostNameFromBackendAddress?: boolean | Computed<boolean>;
+  /** A TCP or UDP port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** A reference to the health probe applied to this backend. (AI-inferred) */
   probe?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether a custom health probe is used, rather than the default probe behavior. (AI-inferred) */
   probeEnabled?: boolean | Computed<boolean>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** How long, in seconds, the gateway waits for a backend response before timing out. (AI-inferred) */
   requestTimeout?: number | Computed<number>;
+  /** The Server Name Indication value this listener expects. (AI-inferred) */
   sniName?: string | Computed<string>;
+  /** The root certificate(s) trusted when validating a backend server's own TLS certificate. (AI-inferred) */
   trustedRootCertificates?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** Whether the client certificate's own chain and expiry are validated, beyond simply checking against trusted roots. (AI-inferred) */
   validateCertChainAndExpiry?: boolean | Computed<boolean>;
+  /** Whether SNI on this connection is validated against the presented certificate. (AI-inferred) */
   validateSni?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendSettingsCollection_Properties {
+  /** Whether the original client IP address is preserved for Layer 4 traffic. (AI-inferred) */
   enableL4ClientIpPreservation?: boolean | Computed<boolean>;
+  /** The hostname this rule matches or targets. (AI-inferred) */
   hostName?: string | Computed<string>;
+  /** Whether the `Host` header sent to the backend is derived from its own backend address, rather than a fixed value. (AI-inferred) */
   pickHostNameFromBackendAddress?: boolean | Computed<boolean>;
+  /** A TCP or UDP port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** A reference to the health probe applied to this backend. (AI-inferred) */
   probe?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** How long, in seconds, this operation waits before timing out. (AI-inferred) */
   timeout?: number | Computed<number>;
+  /** The root certificate(s) trusted when validating a backend server's own TLS certificate. (AI-inferred) */
   trustedRootCertificates?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendSettingsCollection {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendSettingsCollection_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendSettingsCollection_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_CustomErrorConfigurations {
+  /** The URL of the custom error page served for this status code. (AI-inferred) */
   customErrorPageUrl?: string | Computed<string>;
+  /** The HTTP status code returned. (AI-inferred) */
   statusCode?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_EntraJwtvalidationConfigs_Properties {
+  /** The intended audience value(s) a validated JWT must carry. (AI-inferred) */
   audiences?: string[] | Computed<string[]>;
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
+  /** What happens to a request that fails JWT validation. (AI-inferred) */
   unAuthorizedRequestAction?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_EntraJwtvalidationConfigs {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_EntraJwtvalidationConfigs_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_EntraJwtvalidationConfigs_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendIpconfigurations_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** A reference to the Private Link configuration exposing this Application Gateway frontend. (AI-inferred) */
   privateLinkConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendIpconfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendIpconfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendIpconfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendPorts_Properties {
+  /** A TCP or UDP port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendPorts {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendPorts_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendPorts_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_GlobalConfiguration {
+  /** Whether the default `Server` response header is suppressed. (AI-inferred) */
   disableDefaultServerHeaderInResponse?: boolean | Computed<boolean>;
+  /** Whether request bodies are fully buffered before being forwarded to the backend. (AI-inferred) */
   enableRequestBuffering?: boolean | Computed<boolean>;
+  /** Whether response bodies are fully buffered before being returned to the client. (AI-inferred) */
   enableResponseBuffering?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_HttpListeners_Properties {
+  /** Custom error page(s) served for specific HTTP status codes, instead of the default Azure error page. (AI-inferred) */
   customErrorConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_CustomErrorConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_CustomErrorConfigurations[]>;
+  /** A reference to the Web Application Firewall policy applied to this resource. (AI-inferred) */
   firewallPolicy?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the frontend IP configuration this rule listens on. (AI-inferred) */
   frontendIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The external port this load-balancing or NAT rule listens on. (AI-inferred) */
   frontendPort?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The hostname this rule matches or targets. (AI-inferred) */
   hostName?: string | Computed<string>;
+  /** The hostname(s) this rule matches. (AI-inferred) */
   hostNames?: string[] | Computed<string[]>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether the client must send SNI for this listener to accept the connection. (AI-inferred) */
   requireServerNameIndication?: boolean | Computed<boolean>;
+  /** A reference to the TLS/SSL certificate this listener presents. (AI-inferred) */
   sslCertificate?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the TLS/SSL profile applied to this listener. (AI-inferred) */
   sslProfile?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_HttpListeners {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_HttpListeners_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_HttpListeners_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Listeners_Properties {
+  /** A reference to the frontend IP configuration this rule listens on. (AI-inferred) */
   frontendIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The external port this load-balancing or NAT rule listens on. (AI-inferred) */
   frontendPort?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The hostname(s) this rule matches. (AI-inferred) */
   hostNames?: string[] | Computed<string[]>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the TLS/SSL certificate this listener presents. (AI-inferred) */
   sslCertificate?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the TLS/SSL profile applied to this listener. (AI-inferred) */
   sslProfile?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Listeners {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Listeners_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Listeners_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets_Properties {
+  /** A reference to the backend address pool this rule sends matched traffic to. (AI-inferred) */
   backendAddressPool?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The relative weight assigned to each backend server for load distribution. (AI-inferred) */
   weightPerServer?: number | Computed<number>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties {
+  /** The algorithm used to distribute matching traffic across backend targets, e.g. round-robin or IP hash. (AI-inferred) */
   loadDistributionAlgorithm?: string | Computed<string>;
+  /** The weighted backend target(s) this load distribution policy routes traffic across. (AI-inferred) */
   loadDistributionTargets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties {
+  /** The backend address(es) (by IP or NIC IP configuration) this pool routes traffic to. (AI-inferred) */
   backendAddresses?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendAddresses[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendAddresses[]>;
+  /** The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred) */
   backendIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties {
+  /** The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred) */
   backendIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** How long a backend instance stays reachable for existing connections after being marked for removal, before the load balancer stops routing to it entirely. (AI-inferred) */
   drainPeriodInSeconds?: number | Computed<number>;
+  /** The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred) */
   inboundNatRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The backend address(es) registered directly on the load balancer resource itself, rather than sourced from a NIC's own IP configuration. (AI-inferred) */
   loadBalancerBackendAddresses?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses[]>;
+  /** The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred) */
   loadBalancingRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** A reference to the outbound NAT rule associated with this resource. (AI-inferred) */
   outboundRule?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred) */
   outboundRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this backend pool's own membership is synced `Automatic`ally from attached NICs, or managed `Manual`ly via `load_balancer_backend_addresses`. (AI-inferred) */
   syncMode?: string | Computed<string>;
+  /** The tunnel endpoint(s) (their own IP addresses and roles) making up this VPN connection, one per active/standby tunnel instance. (AI-inferred) */
   tunnelInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces[]>;
+  /** A reference to the virtual network this resource is associated with. (AI-inferred) */
   virtualNetwork?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties {
+  /** A reference to the backend address pool this rule sends matched traffic to. (AI-inferred) */
   backendAddressPool?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the backend network interface IP configuration this applies to. (AI-inferred) */
   backendIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations>;
+  /** The port on the backend instance this rule forwards matched traffic to. (AI-inferred) */
   backendPort?: number | Computed<number>;
+  /** Whether this rule uses Floating IP (Direct Server Return) -- the backend sees the frontend's own IP as the destination, rather than its own. (AI-inferred) */
   enableFloatingIp?: boolean | Computed<boolean>;
+  /** Whether the load balancer sends a TCP reset when a connection is idle-timed-out or the backend becomes unavailable, so the client fails fast instead of hanging. (AI-inferred) */
   enableTcpReset?: boolean | Computed<boolean>;
+  /** A reference to the frontend IP configuration this rule listens on. (AI-inferred) */
   frontendIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The external port this load-balancing or NAT rule listens on. (AI-inferred) */
   frontendPort?: number | Computed<number>;
+  /** The last port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred) */
   frontendPortRangeEnd?: number | Computed<number>;
+  /** The first port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred) */
   frontendPortRangeStart?: number | Computed<number>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred) */
   applicationGatewayIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[]>;
+  /** Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundAccess?: boolean | Computed<boolean>;
+  /** Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred) */
   delegations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[]>;
+  /** References to IP address pool allocations reserved for this subnet. (AI-inferred) */
   ipAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** Reusable IP configuration templates associated with this resource. (AI-inferred) */
   ipConfigurationProfiles?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred) */
   ipamPoolPrefixAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[]>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred) */
   privateEndpointNetworkPolicies?: string | Computed<string>;
+  /** The Private Endpoint resources deployed in this subnet. (AI-inferred) */
   privateEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[]>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred) */
   privateLinkServiceNetworkPolicies?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred) */
   purpose?: string | Computed<string>;
+  /** Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred) */
   resourceNavigationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[]>;
+  /** A reference to the route table associated with this subnet. (AI-inferred) */
   routeTable?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable>;
+  /** Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred) */
   serviceAssociationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[]>;
+  /** Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred) */
   serviceEndpointPolicies?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[]>;
+  /** The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred) */
   serviceEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[]>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred) */
   sharingScope?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: unknown | Computed<unknown>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings>;
+  /** What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred) */
   deleteOption?: string | Computed<string>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the IP configuration this resource is associated with. (AI-inferred) */
   ipConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration>;
+  /** IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred) */
   ipTags?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[]>;
+  /** A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred) */
   linkedPublicIpaddress?: unknown | Computed<unknown>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
+  /** Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred) */
   publicIpallocationMethod?: string | Computed<string>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred) */
   servicePublicIpaddress?: unknown | Computed<unknown>;
+  /** Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred) */
   upgradedToV2?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred) */
   applicationGatewayIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[]>;
+  /** Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundAccess?: boolean | Computed<boolean>;
+  /** Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred) */
   delegations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[]>;
+  /** References to IP address pool allocations reserved for this subnet. (AI-inferred) */
   ipAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** Reusable IP configuration templates associated with this resource. (AI-inferred) */
   ipConfigurationProfiles?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations[]>;
+  /** Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred) */
   ipamPoolPrefixAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[]>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred) */
   privateEndpointNetworkPolicies?: string | Computed<string>;
+  /** The Private Endpoint resources deployed in this subnet. (AI-inferred) */
   privateEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[]>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred) */
   privateLinkServiceNetworkPolicies?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred) */
   purpose?: string | Computed<string>;
+  /** Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred) */
   resourceNavigationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[]>;
+  /** A reference to the route table associated with this subnet. (AI-inferred) */
   routeTable?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable>;
+  /** Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred) */
   serviceAssociationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[]>;
+  /** Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred) */
   serviceEndpointPolicies?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[]>;
+  /** The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred) */
   serviceEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[]>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred) */
   sharingScope?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings>;
+  /** What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred) */
   deleteOption?: string | Computed<string>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the IP configuration this resource is associated with. (AI-inferred) */
   ipConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration>;
+  /** IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred) */
   ipTags?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[]>;
+  /** A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred) */
   linkedPublicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
+  /** Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred) */
   publicIpallocationMethod?: string | Computed<string>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred) */
   servicePublicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress>;
+  /** Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred) */
   upgradedToV2?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred) */
   applicationGatewayIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[]>;
+  /** Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundAccess?: boolean | Computed<boolean>;
+  /** Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred) */
   delegations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[]>;
+  /** References to IP address pool allocations reserved for this subnet. (AI-inferred) */
   ipAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** Reusable IP configuration templates associated with this resource. (AI-inferred) */
   ipConfigurationProfiles?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations[]>;
+  /** Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred) */
   ipamPoolPrefixAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[]>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred) */
   privateEndpointNetworkPolicies?: string | Computed<string>;
+  /** The Private Endpoint resources deployed in this subnet. (AI-inferred) */
   privateEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[]>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred) */
   privateLinkServiceNetworkPolicies?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred) */
   purpose?: string | Computed<string>;
+  /** Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred) */
   resourceNavigationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[]>;
+  /** A reference to the route table associated with this subnet. (AI-inferred) */
   routeTable?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable>;
+  /** Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred) */
   serviceAssociationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[]>;
+  /** Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred) */
   serviceEndpointPolicies?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[]>;
+  /** The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred) */
   serviceEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[]>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred) */
   sharingScope?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings>;
+  /** Whether this rule tracks individual connections for graceful behavior on backend pool membership changes, rather than treating every packet independently. (AI-inferred) */
   enableConnectionTracking?: boolean | Computed<boolean>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A range of ports reserved on the load balancer's own frontend, auto-allocated one-to-one to backend instances for inbound NAT (typically used by a scale set). (AI-inferred) */
   inboundNatPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred) */
   inboundNatRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred) */
   loadBalancingRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred) */
   outboundRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties {
+  /** The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationLoadBalancerFrontEndIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration>;
+  /** The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationNetworkInterfaceIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations>;
+  /** The port this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationPort?: number | Computed<number>;
+  /** The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred) */
   networkInterfaceTapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties {
+  /** The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   applicationGatewayBackendAddressPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools[]>;
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   loadBalancerBackendAddressPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools[]>;
+  /** The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred) */
   loadBalancerInboundNatRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules[]>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred) */
   privateIpaddressPrefixLength?: number | Computed<number>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred) */
   privateLinkConnectionProperties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet>;
+  /** The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred) */
   virtualNetworkTaps?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred) */
   applicationGatewayIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[]>;
+  /** Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundAccess?: boolean | Computed<boolean>;
+  /** Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred) */
   delegations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[]>;
+  /** References to IP address pool allocations reserved for this subnet. (AI-inferred) */
   ipAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** Reusable IP configuration templates associated with this resource. (AI-inferred) */
   ipConfigurationProfiles?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations[]>;
+  /** Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred) */
   ipamPoolPrefixAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[]>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: unknown | Computed<unknown>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred) */
   privateEndpointNetworkPolicies?: string | Computed<string>;
+  /** The Private Endpoint resources deployed in this subnet. (AI-inferred) */
   privateEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[]>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred) */
   privateLinkServiceNetworkPolicies?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred) */
   purpose?: string | Computed<string>;
+  /** Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred) */
   resourceNavigationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[]>;
+  /** A reference to the route table associated with this subnet. (AI-inferred) */
   routeTable?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable>;
+  /** Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred) */
   serviceAssociationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[]>;
+  /** Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred) */
   serviceEndpointPolicies?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[]>;
+  /** The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred) */
   serviceEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[]>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred) */
   sharingScope?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties {
+  /** Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred) */
   defaultSecurityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The flow log(s) configured on this Network Security Group. (AI-inferred) */
   flowLogs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[]>;
+  /** Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred) */
   flushConnection?: boolean | Computed<boolean>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom (non-default) security rules on this Network Security Group. (AI-inferred) */
   securityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties {
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties {
+  /** Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred) */
   linkIdentifier?: string | Computed<string>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints>;
+  /** The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred) */
   privateEndpointLocation?: string | Computed<string>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred) */
   privateLinkServiceConnectionState?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties {
+  /** The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   applicationGatewayBackendAddressPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools[]>;
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   loadBalancerBackendAddressPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools[]>;
+  /** The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred) */
   loadBalancerInboundNatRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules[]>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred) */
   privateIpaddressPrefixLength?: number | Computed<number>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred) */
   privateLinkConnectionProperties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet>;
+  /** The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred) */
   virtualNetworkTaps?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties {
+  /** The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationLoadBalancerFrontEndIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration>;
+  /** The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationNetworkInterfaceIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration>;
+  /** The port this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationPort?: number | Computed<number>;
+  /** The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred) */
   networkInterfaceTapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred) */
   virtualNetworkTap?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: unknown | Computed<unknown>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings>;
+  /** What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred) */
   deleteOption?: string | Computed<string>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the IP configuration this resource is associated with. (AI-inferred) */
   ipConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration>;
+  /** IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred) */
   ipTags?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags[]>;
+  /** A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred) */
   linkedPublicIpaddress?: unknown | Computed<unknown>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
+  /** Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred) */
   publicIpallocationMethod?: string | Computed<string>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred) */
   servicePublicIpaddress?: unknown | Computed<unknown>;
+  /** Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred) */
   upgradedToV2?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties {
+  /** The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationLoadBalancerFrontEndIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations>;
+  /** The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationNetworkInterfaceIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations>;
+  /** The port this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationPort?: number | Computed<number>;
+  /** The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred) */
   networkInterfaceTapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties {
+  /** The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   applicationGatewayBackendAddressPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools[]>;
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   loadBalancerBackendAddressPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools[]>;
+  /** The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred) */
   loadBalancerInboundNatRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules[]>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred) */
   privateIpaddressPrefixLength?: number | Computed<number>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred) */
   privateLinkConnectionProperties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
+  /** The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred) */
   virtualNetworkTaps?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties {
+  /** The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   applicationGatewayBackendAddressPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools[]>;
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   loadBalancerBackendAddressPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools[]>;
+  /** The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred) */
   loadBalancerInboundNatRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules[]>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred) */
   privateIpaddressPrefixLength?: number | Computed<number>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred) */
   privateLinkConnectionProperties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
+  /** The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred) */
   virtualNetworkTaps?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties {
+  /** The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationLoadBalancerFrontEndIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations>;
+  /** The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationNetworkInterfaceIpconfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration>;
+  /** The port this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationPort?: number | Computed<number>;
+  /** The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred) */
   networkInterfaceTapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred) */
   virtualNetworkTap?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: unknown | Computed<unknown>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties {
+  /** Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred) */
   defaultSecurityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The flow log(s) configured on this Network Security Group. (AI-inferred) */
   flowLogs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs[]>;
+  /** Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred) */
   flushConnection?: boolean | Computed<boolean>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom (non-default) security rules on this Network Security Group. (AI-inferred) */
   securityRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred) */
   applicationGatewayIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[]>;
+  /** Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundAccess?: boolean | Computed<boolean>;
+  /** Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred) */
   delegations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations[]>;
+  /** References to IP address pool allocations reserved for this subnet. (AI-inferred) */
   ipAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** Reusable IP configuration templates associated with this resource. (AI-inferred) */
   ipConfigurationProfiles?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations[]>;
+  /** Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred) */
   ipamPoolPrefixAllocations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations[]>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred) */
   privateEndpointNetworkPolicies?: string | Computed<string>;
+  /** The Private Endpoint resources deployed in this subnet. (AI-inferred) */
   privateEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints[]>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred) */
   privateLinkServiceNetworkPolicies?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred) */
   purpose?: string | Computed<string>;
+  /** Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred) */
   resourceNavigationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks[]>;
+  /** A reference to the route table associated with this subnet. (AI-inferred) */
   routeTable?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable>;
+  /** Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred) */
   serviceAssociationLinks?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks[]>;
+  /** Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred) */
   serviceEndpointPolicies?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies[]>;
+  /** The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred) */
   serviceEndpoints?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints[]>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred) */
   sharingScope?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties {
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups[]>;
+  /** The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred) */
   billingSku?: string | Computed<string>;
+  /** DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred) */
   customDnsConfigs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[]>;
+  /** A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred) */
   customNetworkInterfaceName?: string | Computed<string>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[]>;
+  /** Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred) */
   ipVersionType?: string | Computed<string>;
+  /** Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred) */
   manualPrivateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces[]>;
+  /** The Private Link service connection(s) this private endpoint establishes. (AI-inferred) */
   privateLinkServiceConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties {
+  /** Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred) */
   linkIdentifier?: string | Computed<string>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred) */
   privateLinkServiceConnectionState?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties {
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties {
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties_IpConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties_IpConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes_Properties_Match {
+  /** The body content of this fixed response. (AI-inferred) */
   body?: string | Computed<string>;
+  /** The HTTP status code(s) this rule matches. (AI-inferred) */
   statusCodes?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes_Properties {
+  /** Whether PROXY protocol headers are prepended when this health probe connects to the backend. (AI-inferred) */
   enableProbeProxyProtocolHeader?: boolean | Computed<boolean>;
+  /** The hostname this rule matches or targets. (AI-inferred) */
   host?: string | Computed<string>;
+  /** How often, in seconds, this health probe runs. (AI-inferred) */
   interval?: number | Computed<number>;
+  /** The condition this rule matches against. (AI-inferred) */
   match?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes_Properties_Match | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes_Properties_Match>;
+  /** The minimum number of backend server(s) kept warm, even when idle. (AI-inferred) */
   minServers?: number | Computed<number>;
+  /** The URL path this rule matches or targets. (AI-inferred) */
   path?: string | Computed<string>;
+  /** Whether the health probe's own host header is derived from the associated backend HTTP settings, rather than a fixed value. (AI-inferred) */
   pickHostNameFromBackendHttpSettings?: boolean | Computed<boolean>;
+  /** Whether the health probe's own host header is derived from the associated backend settings, rather than a fixed value. (AI-inferred) */
   pickHostNameFromBackendSettings?: boolean | Computed<boolean>;
+  /** A TCP or UDP port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** How long, in seconds, this operation waits before timing out. (AI-inferred) */
   timeout?: number | Computed<number>;
+  /** How many consecutive failed probes mark a backend instance unhealthy. (AI-inferred) */
   unhealthyThreshold?: number | Computed<number>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RedirectConfigurations_Properties {
+  /** Whether the request path is included when computing session affinity or matching. (AI-inferred) */
   includePath?: boolean | Computed<boolean>;
+  /** Whether the query string is included when computing session affinity or matching. (AI-inferred) */
   includeQueryString?: boolean | Computed<boolean>;
+  /** The path-based routing rule(s) making up this URL path map. (AI-inferred) */
   pathRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** The kind of HTTP redirect issued, e.g. `Permanent` or `Found`. (AI-inferred) */
   redirectType?: string | Computed<string>;
+  /** The routing rule(s) mapping incoming listener traffic to a backend or redirect. (AI-inferred) */
   requestRoutingRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
+  /** A reference to the listener traffic is redirected to. (AI-inferred) */
   targetListener?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The URL traffic is redirected to. (AI-inferred) */
   targetUrl?: string | Computed<string>;
+  /** The URL path map(s) available for routing rules to use. (AI-inferred) */
   urlPathMaps?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RedirectConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RedirectConfigurations_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RedirectConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RequestRoutingRules_Properties {
+  /** A reference to the backend address pool this rule sends matched traffic to. (AI-inferred) */
   backendAddressPool?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The HTTP setting(s) (protocol, port, timeout) applied when forwarding to a backend pool. (AI-inferred) */
   backendHttpSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Configuration for validating a Microsoft Entra ID-issued JWT presented by the client. (AI-inferred) */
   entraJwtvalidationConfig?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the HTTP listener this rule applies to. (AI-inferred) */
   httpListener?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the load distribution policy applied by this rule. (AI-inferred) */
   loadDistributionPolicy?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the redirect configuration applied by this rule. (AI-inferred) */
   redirectConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the rewrite rule set applied by this rule. (AI-inferred) */
   rewriteRuleSet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The kind of matching this rule performs, e.g. `Basic` or `PathBasedRouting`. (AI-inferred) */
   ruleType?: string | Computed<string>;
+  /** A reference to the URL path map this rule uses for path-based routing. (AI-inferred) */
   urlPathMap?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RequestRoutingRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RequestRoutingRules_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RequestRoutingRules_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations_HeaderValueMatcher {
+  /** Whether this pattern match is case-insensitive. (AI-inferred) */
   ignoreCase?: boolean | Computed<boolean>;
+  /** Whether this condition's own result is inverted. (AI-inferred) */
   negate?: boolean | Computed<boolean>;
+  /** The pattern matched against. (AI-inferred) */
   pattern?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations {
+  /** The name of the HTTP header this rule reads or sets. (AI-inferred) */
   headerName?: string | Computed<string>;
+  /** The value the HTTP header is set to. (AI-inferred) */
   headerValue?: string | Computed<string>;
+  /** The pattern this header's own value is matched against. (AI-inferred) */
   headerValueMatcher?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations_HeaderValueMatcher | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations_HeaderValueMatcher>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_UrlConfiguration {
+  /** The path substituted in place of the matched URL path. (AI-inferred) */
   modifiedPath?: string | Computed<string>;
+  /** The query string substituted in place of the matched one. (AI-inferred) */
   modifiedQueryString?: string | Computed<string>;
+  /** Whether matching traffic is rerouted to a different target. (AI-inferred) */
   reroute?: boolean | Computed<boolean>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet {
+  /** Request header modification(s) applied by this rewrite rule. (AI-inferred) */
   requestHeaderConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations[]>;
+  /** Response header modification(s) applied by this rewrite rule. (AI-inferred) */
   responseHeaderConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations[]>;
+  /** URL rewrite configuration applied by this rewrite rule. (AI-inferred) */
   urlConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_UrlConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_UrlConfiguration>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_Conditions {
+  /** Whether this pattern match is case-insensitive. (AI-inferred) */
   ignoreCase?: boolean | Computed<boolean>;
+  /** Whether this condition's own result is inverted. (AI-inferred) */
   negate?: boolean | Computed<boolean>;
+  /** The pattern matched against. (AI-inferred) */
   pattern?: string | Computed<string>;
+  /** The request attribute this rewrite rule reads from or writes to. (AI-inferred) */
   variable?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules {
+  /** The set of action(s) taken when this rewrite rule's own condition matches. (AI-inferred) */
   actionSet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet>;
+  /** The condition(s) that must be satisfied for this rule to apply. (AI-inferred) */
   conditions?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_Conditions[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_Conditions[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The relative evaluation order of this rule. (AI-inferred) */
   ruleSequence?: number | Computed<number>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The individual rewrite rule(s) making up this rewrite rule set. (AI-inferred) */
   rewriteRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RoutingRules_Properties {
+  /** A reference to the backend address pool this rule sends matched traffic to. (AI-inferred) */
   backendAddressPool?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The setting(s) applied when forwarding traffic to a backend pool. (AI-inferred) */
   backendSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the listener this rule applies to. (AI-inferred) */
   listener?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The kind of matching this rule performs, e.g. `Basic` or `PathBasedRouting`. (AI-inferred) */
   ruleType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RoutingRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RoutingRules_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RoutingRules_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Sku {
+  /** The number of instance(s) this resource is provisioned with. (AI-inferred) */
   capacity?: number | Computed<number>;
+  /** The generation or family this SKU belongs to. (AI-inferred) */
   family?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred) */
   tier?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates_Properties_Hsm {
+  /** A reference to the Key Vault key used to protect this resource. (AI-inferred) */
   keyId?: string | Computed<string>;
+  /** The base64-encoded public certificate data used to authenticate a point-to-site VPN client. (AI-inferred) */
   publicCertData?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates_Properties {
+  /** The literal data payload of this field. (AI-inferred) */
   data?: string | Computed<string>;
+  /** Whether this key is stored in a Hardware Security Module. (AI-inferred) */
   hsm?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates_Properties_Hsm | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates_Properties_Hsm>;
+  /** A reference to the Key Vault secret holding this resource's own certificate. (AI-inferred) */
   keyVaultSecretId?: string | Computed<string>;
+  /** The password credential used to authenticate. (AI-inferred) */
   password?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The base64-encoded public certificate data used to authenticate a point-to-site VPN client. (AI-inferred) */
   publicCertData?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslPolicy {
+  /** The TLS cipher suite(s) permitted for connections to this resource. (AI-inferred) */
   cipherSuites?: string[] | Computed<string[]>;
+  /** The TLS/SSL protocol version(s) explicitly disallowed for connections to this resource. (AI-inferred) */
   disabledSslProtocols?: string[] | Computed<string[]>;
+  /** The minimum TLS protocol version accepted for connections to this resource. (AI-inferred) */
   minProtocolVersion?: string | Computed<string>;
+  /** The name of this policy. (AI-inferred) */
   policyName?: string | Computed<string>;
+  /** The kind of policy this represents, e.g. custom or managed. (AI-inferred) */
   policyType?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles_Properties_ClientAuthConfiguration {
+  /** Whether mutual TLS client authentication is required or optional. (AI-inferred) */
   verifyClientAuthMode?: string | Computed<string>;
+  /** The issuer distinguished name a client certificate must match to be accepted. (AI-inferred) */
   verifyClientCertIssuerDn?: boolean | Computed<boolean>;
+  /** Whether the client certificate's own revocation status is checked. (AI-inferred) */
   verifyClientRevocation?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles_Properties {
+  /** Configuration for verifying the client's own TLS certificate. (AI-inferred) */
   clientAuthConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles_Properties_ClientAuthConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles_Properties_ClientAuthConfiguration>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The TLS/SSL policy (protocol versions, cipher suites) enforced by this Application Gateway. (AI-inferred) */
   sslPolicy?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslPolicy | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslPolicy>;
+  /** The client certificate(s) trusted for mutual TLS authentication. (AI-inferred) */
   trustedClientCertificates?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedClientCertificates_Properties {
+  /** The distinguished name of the issuer of the client certificate presented for this connection. (AI-inferred) */
   clientCertIssuerDn?: string | Computed<string>;
+  /** The literal data payload of this field. (AI-inferred) */
   data?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. The validated certificate data derived from this trusted client certificate. (AI-inferred) */
   validatedCertData?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedClientCertificates {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedClientCertificates_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedClientCertificates_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedRootCertificates_Properties {
+  /** The literal data payload of this field. (AI-inferred) */
   data?: string | Computed<string>;
+  /** A reference to the Key Vault secret holding this resource's own certificate. (AI-inferred) */
   keyVaultSecretId?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedRootCertificates {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedRootCertificates_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedRootCertificates_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties_PathRules_Properties {
+  /** A reference to the backend address pool this rule sends matched traffic to. (AI-inferred) */
   backendAddressPool?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The HTTP setting(s) (protocol, port, timeout) applied when forwarding to a backend pool. (AI-inferred) */
   backendHttpSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the Web Application Firewall policy applied to this resource. (AI-inferred) */
   firewallPolicy?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the load distribution policy applied by this rule. (AI-inferred) */
   loadDistributionPolicy?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The URL path(s) this rule matches. (AI-inferred) */
   paths?: string[] | Computed<string[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the redirect configuration applied by this rule. (AI-inferred) */
   redirectConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the rewrite rule set applied by this rule. (AI-inferred) */
   rewriteRuleSet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties_PathRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties_PathRules_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties_PathRules_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties {
+  /** A reference to the backend address pool used when no more specific routing rule matches. (AI-inferred) */
   defaultBackendAddressPool?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the backend HTTP settings used when no more specific routing rule matches. (AI-inferred) */
   defaultBackendHttpSettings?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the load distribution policy applied when no more specific path rule matches. (AI-inferred) */
   defaultLoadDistributionPolicy?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the redirect configuration applied when no more specific path rule matches. (AI-inferred) */
   defaultRedirectConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** A reference to the rewrite rule set applied when no more specific path rule matches. (AI-inferred) */
   defaultRewriteRuleSet?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** The path-based routing rule(s) making up this URL path map. (AI-inferred) */
   pathRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties_PathRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties_PathRules[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration_DisabledRuleGroups {
+  /** The name of the managed WAF rule group this applies to. (AI-inferred) */
   ruleGroupName?: string | Computed<string>;
+  /** The rule(s) making up this policy or configuration. (AI-inferred) */
   rules?: number[] | Computed<number[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration_Exclusions {
+  /** The request attribute this condition evaluates. (AI-inferred) */
   matchVariable?: string | Computed<string>;
+  /** The specific field name a match condition targets, e.g. a header or cookie name. (AI-inferred) */
   selector?: string | Computed<string>;
+  /** How `selector` itself is matched, e.g. `Equals` or `StartsWith`. (AI-inferred) */
   selectorMatchOperator?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration {
+  /** The managed WAF rule group(s), or specific rule(s) within them, disabled for this policy. (AI-inferred) */
   disabledRuleGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration_DisabledRuleGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration_DisabledRuleGroups[]>;
+  /** Whether this feature or setting is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** The field(s) or value(s) excluded from WAF inspection. (AI-inferred) */
   exclusions?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration_Exclusions[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration_Exclusions[]>;
+  /** The maximum size, in megabytes, of a file upload the WAF permits. (AI-inferred) */
   fileUploadLimitInMb?: number | Computed<number>;
+  /** Whether the WAF actively blocks matching requests (`Prevention`) or only logs them (`Detection`). (AI-inferred) */
   firewallMode?: string | Computed<string>;
+  /** The maximum request body size, in bytes, the WAF permits. (AI-inferred) */
   maxRequestBodySize?: number | Computed<number>;
+  /** The maximum request body size, in kilobytes, the WAF permits. (AI-inferred) */
   maxRequestBodySizeInKb?: number | Computed<number>;
+  /** Whether the WAF inspects the request body, in addition to headers and URL. (AI-inferred) */
   requestBodyCheck?: boolean | Computed<boolean>;
+  /** The managed WAF rule set family this belongs to, e.g. `OWASP` or `Microsoft_BotManagerRuleSet`. (AI-inferred) */
   ruleSetType?: string | Computed<string>;
+  /** The version of the managed WAF rule set this belongs to. (AI-inferred) */
   ruleSetVersion?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties {
+  /** The trusted root certificate(s) used to authenticate the backend server's own TLS certificate. (AI-inferred) */
   authenticationCertificates?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AuthenticationCertificates[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AuthenticationCertificates[]>;
+  /** Configuration for automatically scaling this Application Gateway's own instance count within a defined range. (AI-inferred) */
   autoscaleConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AutoscaleConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AutoscaleConfiguration>;
+  /** The backend address pool(s) traffic can be routed to. (AI-inferred) */
   backendAddressPools?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools[]>;
+  /** The HTTP setting(s) (protocol, port, timeout) applied when forwarding to a backend pool. (AI-inferred) */
   backendHttpSettingsCollection?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection[]>;
+  /** The setting(s) applied when forwarding traffic to a backend pool. (AI-inferred) */
   backendSettingsCollection?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendSettingsCollection[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendSettingsCollection[]>;
+  /** Custom error page(s) served for specific HTTP status codes, instead of the default Azure error page. (AI-inferred) */
   customErrorConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_CustomErrorConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_CustomErrorConfigurations[]>;
+  /** The name of the predefined TLS policy applied by default. (AI-inferred) */
   defaultPredefinedSslPolicy?: string | Computed<string>;
+  /** Whether FIPS 140-2 compliant cryptography is enforced. (AI-inferred) */
   enableFips?: boolean | Computed<boolean>;
+  /** Whether HTTP/2 support is enabled. (AI-inferred) */
   enableHttp2?: boolean | Computed<boolean>;
+  /** Configuration for validating Microsoft Entra ID-issued JWT(s) presented by the client. (AI-inferred) */
   entraJwtvalidationConfigs?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_EntraJwtvalidationConfigs[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_EntraJwtvalidationConfigs[]>;
+  /** A reference to the Web Application Firewall policy applied to this resource. (AI-inferred) */
   firewallPolicy?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers>;
+  /** Whether this listener is required to have a Web Application Firewall policy associated. (AI-inferred) */
   forceFirewallPolicyAssociation?: boolean | Computed<boolean>;
+  /** The frontend IP configuration(s) this Application Gateway listens on. (AI-inferred) */
   frontendIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendIpconfigurations[]>;
+  /** The frontend port(s) available for listeners to bind to. (AI-inferred) */
   frontendPorts?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendPorts[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendPorts[]>;
+  /** The subnet configuration(s) this Application Gateway is deployed into. (AI-inferred) */
   gatewayIpconfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations[]>;
+  /** Configuration applied globally across this Application Gateway, rather than per-listener. (AI-inferred) */
   globalConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_GlobalConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_GlobalConfiguration>;
+  /** The HTTP listener(s) accepting incoming traffic on this Application Gateway. (AI-inferred) */
   httpListeners?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_HttpListeners[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_HttpListeners[]>;
+  /** The listener(s) configured on this resource. (AI-inferred) */
   listeners?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Listeners[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Listeners[]>;
+  /** The load distribution policy/policies (algorithm, target weighting) available for routing rules to use. (AI-inferred) */
   loadDistributionPolicies?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies[]>;
+  /** The current running status of this resource. (AI-inferred) */
   operationalState?: string | Computed<string>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections[]>;
+  /** Private Link configuration(s) exposing this Application Gateway's own frontend IP(s) to other virtual networks. (AI-inferred) */
   privateLinkConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations[]>;
+  /** The health probe(s) configured on this Application Gateway. (AI-inferred) */
   probes?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The redirect configuration(s) available for routing rules to use. (AI-inferred) */
   redirectConfigurations?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RedirectConfigurations[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RedirectConfigurations[]>;
+  /** The routing rule(s) mapping incoming listener traffic to a backend or redirect. (AI-inferred) */
   requestRoutingRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RequestRoutingRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RequestRoutingRules[]>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The rewrite rule set(s) available for routing rules to use. (AI-inferred) */
   rewriteRuleSets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets[]>;
+  /** The routing rule(s) mapping incoming traffic to a backend or redirect. (AI-inferred) */
   routingRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RoutingRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RoutingRules[]>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Sku | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Sku>;
+  /** The TLS/SSL certificate(s) available for listeners to use. (AI-inferred) */
   sslCertificates?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates[]>;
+  /** The TLS/SSL policy (protocol versions, cipher suites) enforced by this Application Gateway. (AI-inferred) */
   sslPolicy?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslPolicy | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslPolicy>;
+  /** The TLS/SSL profile(s) (client authentication, policy) available for listeners to use. (AI-inferred) */
   sslProfiles?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles[]>;
+  /** The client certificate(s) trusted for mutual TLS authentication. (AI-inferred) */
   trustedClientCertificates?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedClientCertificates[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedClientCertificates[]>;
+  /** The root certificate(s) trusted when validating a backend server's own TLS certificate. (AI-inferred) */
   trustedRootCertificates?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedRootCertificates[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedRootCertificates[]>;
+  /** The URL path map(s) available for routing rules to use. (AI-inferred) */
   urlPathMaps?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps[]>;
+  /** Web Application Firewall configuration (mode, rule set) applied to this Application Gateway. (AI-inferred) */
   webApplicationFirewallConfiguration?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Identity | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Identity>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_GroupByUserSession_GroupByVariables {
+  /** The name of the variable this rewrite rule reads from or writes to. (AI-inferred) */
   variableName?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_GroupByUserSession {
+  /** The request attribute(s) (e.g. client IP) rate-limit counting is grouped by. (AI-inferred) */
   groupByVariables?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_GroupByUserSession_GroupByVariables[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_GroupByUserSession_GroupByVariables[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_MatchConditions_MatchVariables {
+  /** The specific field name a match condition targets, e.g. a header or cookie name. (AI-inferred) */
   selector?: string | Computed<string>;
+  /** The name of the variable this rewrite rule reads from or writes to. (AI-inferred) */
   variableName?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_MatchConditions {
+  /** The value(s) this condition matches against. (AI-inferred) */
   matchValues?: string[] | Computed<string[]>;
+  /** The request attribute(s) this condition evaluates. (AI-inferred) */
   matchVariables?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_MatchConditions_MatchVariables[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_MatchConditions_MatchVariables[]>;
+  /** Whether this match condition's own result is inverted. (AI-inferred) */
   negationConditon?: boolean | Computed<boolean>;
+  /** How this condition's own operands are compared. (AI-inferred) */
   operator?: string | Computed<string>;
+  /** The transformation(s) (e.g. lowercase, trim) applied to the matched value before comparison. (AI-inferred) */
   transforms?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules {
+  /** The action taken when this rule or condition matches. (AI-inferred) */
   action?: string | Computed<string>;
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** Whether rate-limit counting is grouped per user session, rather than globally. (AI-inferred) */
   groupByUserSession?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_GroupByUserSession[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_GroupByUserSession[]>;
+  /** The condition(s) that must all be satisfied for this rule to match. (AI-inferred) */
   matchConditions?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_MatchConditions[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_MatchConditions[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The time window rate-limit request counts are measured over. (AI-inferred) */
   rateLimitDuration?: string | Computed<string>;
+  /** The maximum number of requests permitted within `rate_limit_duration` before this rule triggers. (AI-inferred) */
   rateLimitThreshold?: number | Computed<number>;
+  /** The kind of matching this rule performs, e.g. `Basic` or `PathBasedRouting`. (AI-inferred) */
   ruleType?: string | Computed<string>;
+  /** The current operational state of this resource. (AI-inferred) */
   state?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets_RuleGroups_Rules {
+  /** The identifier of the specific WAF rule this applies to. (AI-inferred) */
   ruleId?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets_RuleGroups {
+  /** The name of the managed WAF rule group this applies to. (AI-inferred) */
   ruleGroupName?: string | Computed<string>;
+  /** The rule(s) making up this policy or configuration. (AI-inferred) */
   rules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets_RuleGroups_Rules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets_RuleGroups_Rules[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets {
+  /** The managed WAF rule group(s) making up this rule set. (AI-inferred) */
   ruleGroups?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets_RuleGroups[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets_RuleGroups[]>;
+  /** The managed WAF rule set family this belongs to, e.g. `OWASP` or `Microsoft_BotManagerRuleSet`. (AI-inferred) */
   ruleSetType?: string | Computed<string>;
+  /** The version of the managed WAF rule set this belongs to. (AI-inferred) */
   ruleSetVersion?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions {
+  /** The managed WAF rule set(s) a matching exception is exempted from. (AI-inferred) */
   exceptionManagedRuleSets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets[]>;
+  /** The request attribute this condition evaluates. (AI-inferred) */
   matchVariable?: string | Computed<string>;
+  /** The specific field name a match condition targets, e.g. a header or cookie name. (AI-inferred) */
   selector?: string | Computed<string>;
+  /** How `selector` itself is matched, e.g. `Equals` or `StartsWith`. (AI-inferred) */
   selectorMatchOperator?: string | Computed<string>;
+  /** How the matched value is compared, e.g. `Equal` or `Contains`. (AI-inferred) */
   valueMatchOperator?: string | Computed<string>;
+  /** The value(s) making up this field. (AI-inferred) */
   values?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exclusions {
+  /** The managed WAF rule set(s), or specific rule(s) within them, this exclusion applies to. (AI-inferred) */
   exclusionManagedRuleSets?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets[]>;
+  /** The request attribute this condition evaluates. (AI-inferred) */
   matchVariable?: string | Computed<string>;
+  /** The specific field name a match condition targets, e.g. a header or cookie name. (AI-inferred) */
   selector?: string | Computed<string>;
+  /** How `selector` itself is matched, e.g. `Equals` or `StartsWith`. (AI-inferred) */
   selectorMatchOperator?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_ComputedDisabledRules {
+  /** The name of the managed WAF rule group this applies to. (AI-inferred) */
   ruleGroupName?: string | Computed<string>;
+  /** The rule(s) making up this policy or configuration. (AI-inferred) */
   rules?: string[] | Computed<string[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_Rules {
+  /** The action taken when this rule or condition matches. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The identifier of the specific WAF rule this applies to. (AI-inferred) */
   ruleId?: string | Computed<string>;
+  /** How aggressively bot detection is applied. (AI-inferred) */
   sensitivity?: string | Computed<string>;
+  /** The current operational state of this resource. (AI-inferred) */
   state?: string | Computed<string>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides {
+  /** The name of the managed WAF rule group this applies to. (AI-inferred) */
   ruleGroupName?: string | Computed<string>;
+  /** The rule(s) making up this policy or configuration. (AI-inferred) */
   rules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_Rules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_Rules[]>;
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets {
+  /** Output only. The specific WAF rule(s) actually disabled after resolving this policy's own overrides. (AI-inferred) */
   computedDisabledRules?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_ComputedDisabledRules[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_ComputedDisabledRules[]>;
+  /** Override(s) applied to specific rule(s) within a managed WAF rule group. (AI-inferred) */
   ruleGroupOverrides?: ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides[] | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides[]>;
+  /** The managed WAF rule set family this belongs to, e.g. `OWASP` or `Microsoft_BotManagerRuleSet`. (AI-inferred) */
   ruleSetType?: string | Computed<string>;
+  /** The version of the managed WAF rule set this belongs to. (AI-inferred) */
   ruleSetVersion?: string | Computed<string>;
 }
 
@@ -3044,9 +5066,13 @@ export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_Manag
 }
 
 export interface ApplicationgatewayWebApplicationFirewallPolicy_Properties_PolicySettings_LogScrubbing_ScrubbingRules {
+  /** The request attribute this condition evaluates. (AI-inferred) */
   matchVariable?: string | Computed<string>;
+  /** The specific field name a match condition targets, e.g. a header or cookie name. (AI-inferred) */
   selector?: string | Computed<string>;
+  /** How `selector` itself is matched, e.g. `Equals` or `StartsWith`. (AI-inferred) */
   selectorMatchOperator?: string | Computed<string>;
+  /** The current operational state of this resource. (AI-inferred) */
   state?: string | Computed<string>;
 }
 

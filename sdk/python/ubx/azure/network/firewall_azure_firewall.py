@@ -20,34 +20,51 @@ class FirewallAzureFirewall_Properties_AfcConfiguration:
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Action:
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules_Protocols:
+    # A TCP or UDP port number. (AI-inferred)
     port: Any = None
+    # The network protocol this rule applies to. (AI-inferred)
     protocol_type: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules:
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
+    # The predefined FQDN tag(s) (e.g. for well-known Microsoft services) this rule allows. (AI-inferred)
     fqdn_tags: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The network protocol(s) this rule applies to. (AI-inferred)
     protocols: Any = None
+    # The source IP address(es) or range(s) this rule matches. (AI-inferred)
     source_addresses: Any = None
+    # The source IP group(s) this rule matches. (AI-inferred)
     source_ip_groups: Any = None
+    # The fully qualified domain name(s) this rule allows traffic to. (AI-inferred)
     target_fqdns: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties:
+    # The action taken when this rule matches. (AI-inferred)
     action: Any = None
+    # The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
     priority: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The rule(s) making up this collection. (AI-inferred)
     rules: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_ApplicationRuleCollections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
@@ -64,6 +81,7 @@ class FirewallAzureFirewall_Properties_FirewallPolicy:
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_HubIpaddresses_PublicIps_Addresses:
+    # The network address this applies to. (AI-inferred)
     address: Any = None
 
 @dataclasses.dataclass
@@ -82,72 +100,115 @@ class FirewallAzureFirewall_Properties_HubIpaddresses:
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_IpConfigurations_Properties:
+    # The private (internal) IP address assigned to this IP configuration. (AI-inferred)
     private_ipaddress: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
     public_ipaddress: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_IpConfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_IpGroups:
+    # A value incremented each time this rule collection's own content changes. (AI-inferred)
     change_number: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_NatRuleCollections_Properties_Rules:
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
+    # The destination IP address(es) or range(s) this rule matches. (AI-inferred)
     destination_addresses: Any = None
+    # The destination port(s) this rule matches. (AI-inferred)
     destination_ports: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The network protocol(s) this rule applies to. (AI-inferred)
     protocols: Any = None
+    # The source IP address(es) or range(s) this rule matches. (AI-inferred)
     source_addresses: Any = None
+    # The source IP group(s) this rule matches. (AI-inferred)
     source_ip_groups: Any = None
+    # The IP address matching traffic is translated to. (AI-inferred)
     translated_address: Any = None
+    # The fully qualified domain name matching traffic is translated to. (AI-inferred)
     translated_fqdn: Any = None
+    # The port matching traffic is translated to. (AI-inferred)
     translated_port: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_NatRuleCollections_Properties:
+    # The action taken when this rule matches. (AI-inferred)
     action: Any = None
+    # The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
     priority: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The rule(s) making up this collection. (AI-inferred)
     rules: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_NatRuleCollections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties_Rules:
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
+    # The destination IP address(es) or range(s) this rule matches. (AI-inferred)
     destination_addresses: Any = None
+    # The destination fully qualified domain name(s) this rule matches. (AI-inferred)
     destination_fqdns: Any = None
+    # The destination IP group(s) this rule matches. (AI-inferred)
     destination_ip_groups: Any = None
+    # The destination port(s) this rule matches. (AI-inferred)
     destination_ports: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The network protocol(s) this rule applies to. (AI-inferred)
     protocols: Any = None
+    # The source IP address(es) or range(s) this rule matches. (AI-inferred)
     source_addresses: Any = None
+    # The source IP group(s) this rule matches. (AI-inferred)
     source_ip_groups: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties:
+    # The action taken when this rule matches. (AI-inferred)
     action: Any = None
+    # The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
     priority: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The rule(s) making up this collection. (AI-inferred)
     rules: Any = None
 
 @dataclasses.dataclass
 class FirewallAzureFirewall_Properties_NetworkRuleCollections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

@@ -2,11 +2,14 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiModelVersion_Properties_Datasets {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface OpenapiModelVersion_Properties_Flavors {
+  /** The literal data payload of this field. (AI-inferred) */
   data?: Record<string, string> | Computed<Record<string, string>>;
 }
 

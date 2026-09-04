@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface GrafanaManagedGrafana_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -79,35 +81,47 @@ export interface GrafanaManagedGrafana_Properties_GrafanaConfigurations {
 }
 
 export interface GrafanaManagedGrafana_Properties_GrafanaIntegrations_AzureMonitorWorkspaceIntegrations {
+  /** A reference to the Azure Monitor workspace this applies to. (AI-inferred) */
   azureMonitorWorkspaceResourceId?: string | Computed<string>;
 }
 
 export interface GrafanaManagedGrafana_Properties_GrafanaIntegrations {
+  /** The Azure Monitor workspace(s) this Grafana instance is integrated with. (AI-inferred) */
   azureMonitorWorkspaceIntegrations?: GrafanaManagedGrafana_Properties_GrafanaIntegrations_AzureMonitorWorkspaceIntegrations[] | Computed<GrafanaManagedGrafana_Properties_GrafanaIntegrations_AzureMonitorWorkspaceIntegrations[]>;
 }
 
 export interface GrafanaManagedGrafana_Properties_GrafanaPlugins {
+  /** A reference to the Grafana plugin this applies to. (AI-inferred) */
   pluginId?: string | Computed<string>;
 }
 
 export interface GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties {
+  /** The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred) */
   groupIds?: string[] | Computed<string[]>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface GrafanaManagedGrafana_Properties_PrivateEndpointConnections {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties | Computed<GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties>;
 }
 
@@ -138,6 +152,7 @@ export interface GrafanaManagedGrafana_Properties {
   outboundIps?: string[] | Computed<string[]>;
   /** The private endpoint connections of the Grafana instance. */
   privateEndpointConnections?: GrafanaManagedGrafana_Properties_PrivateEndpointConnections[] | Computed<GrafanaManagedGrafana_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
   /** Indicate the state for enable or disable traffic over the public interface. */
   publicNetworkAccess?: string | Computed<string>;

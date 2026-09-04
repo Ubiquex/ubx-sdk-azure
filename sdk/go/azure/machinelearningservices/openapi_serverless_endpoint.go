@@ -4,7 +4,9 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiServerlessEndpoint_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -37,14 +39,18 @@ type OpenapiServerlessEndpoint_Properties_ModelSettings struct {
 }
 
 type OpenapiServerlessEndpoint_Properties struct {
-	AuthMode      any
+	// The authentication mode used, e.g. key-based or Microsoft Entra ID token-based. (AI-inferred)
+	AuthMode any
+	// Configuration for content safety filtering. (AI-inferred)
 	ContentSafety any
 	// State of the Serverless Endpoint.
-	EndpointState     any
+	EndpointState any
+	// The endpoint used to send inference requests to this deployment. (AI-inferred)
 	InferenceEndpoint any
 	// The MarketplaceSubscription Azure ID associated to this ServerlessEndpoint.
 	MarketplaceSubscriptionId any
-	ModelSettings             any
+	// Configuration specific to the deployed model. (AI-inferred)
+	ModelSettings any
 	// State of endpoint provisioning.
 	ProvisioningState any
 }
@@ -127,7 +133,8 @@ type OpenapiServerlessEndpointConfig struct {
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
 	Kind any
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
@@ -143,7 +150,8 @@ type OpenapiServerlessEndpointAttrs struct {
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
 	Kind any
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// The resource model definition representing SKU
 	Sku any

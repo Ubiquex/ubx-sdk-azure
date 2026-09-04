@@ -22,12 +22,14 @@ var ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Pro
 }
 
 type ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceAttrs struct {
 	// ETag of the resource.
-	Etag       any
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

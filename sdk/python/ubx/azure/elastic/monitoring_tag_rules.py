@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class MonitoringTagRules_Properties_LogRules_FilteringTags:
+    # The action to perform. (AI-inferred)
     action: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

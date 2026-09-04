@@ -4,6 +4,7 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface VirtualnetworkStaticCidr_Properties {
   /** List of IP address prefixes of the resource. */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
   /** Number of IP addresses to allocate for a static CIDR resource. The IP addresses will be assigned based on IpamPools available space. */
   numberOfIpaddressesToAllocate?: string | Computed<string>;

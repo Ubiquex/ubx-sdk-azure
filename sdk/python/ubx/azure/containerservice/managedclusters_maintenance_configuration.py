@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_NotAllowedDates:
+    # The end of this range or window. (AI-inferred)
     end: Any = None
+    # The start of this range or window. (AI-inferred)
     start: Any = None
 
 @dataclasses.dataclass
@@ -67,7 +69,9 @@ class ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow:
 
 @dataclasses.dataclass
 class ManagedclustersMaintenanceConfiguration_Properties_TimeInWeek:
+    # The day-of-week component of this schedule. (AI-inferred)
     day: Any = None
+    # The hour(s) within this day this schedule is active. (AI-inferred)
     hour_slots: Any = None
 
 @dataclasses.dataclass

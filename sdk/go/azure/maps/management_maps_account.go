@@ -4,7 +4,9 @@ package maps
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementMapsAccount_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,6 +22,7 @@ type ManagementMapsAccount_Identity struct {
 }
 
 type ManagementMapsAccount_Properties_Cors_CorsRules struct {
+	// The origin(s) this CORS rule permits requests from. (AI-inferred)
 	AllowedOrigins any
 }
 
@@ -52,7 +55,9 @@ type ManagementMapsAccount_Properties_Encryption struct {
 }
 
 type ManagementMapsAccount_Properties_LinkedResources struct {
-	Id         any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// A caller-chosen name uniquely identifying this linked resource within the account. (AI-inferred)
 	UniqueName any
 }
 

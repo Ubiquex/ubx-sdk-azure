@@ -15,26 +15,38 @@ class OpenapiKubeEnvironment_ExtendedLocation:
 
 @dataclasses.dataclass
 class OpenapiKubeEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfiguration:
+    # The Log Analytics workspace customer ID this applies to. (AI-inferred)
     customer_id: Any = None
+    # A shared access key credential. (AI-inferred)
     shared_key: Any = None
 
 @dataclasses.dataclass
 class OpenapiKubeEnvironment_Properties_AppLogsConfiguration:
+    # Where this data or traffic is sent. (AI-inferred)
     destination: Any = None
+    # Configuration for sending this app's own diagnostic data to a Log Analytics workspace. (AI-inferred)
     log_analytics_configuration: Any = None
 
 @dataclasses.dataclass
 class OpenapiKubeEnvironment_Properties_ArcConfiguration_FrontEndServiceConfiguration:
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
 
 @dataclasses.dataclass
 class OpenapiKubeEnvironment_Properties_ArcConfiguration:
+    # Whether the artifact storage volume is mounted read-only or read-write. (AI-inferred)
     artifact_storage_access_mode: Any = None
+    # The Kubernetes storage class used to provision the artifact storage volume. (AI-inferred)
     artifact_storage_class_name: Any = None
+    # The path the artifact storage volume is mounted at. (AI-inferred)
     artifact_storage_mount_path: Any = None
+    # The specific node the artifact storage volume is affinitized to. (AI-inferred)
     artifact_storage_node_name: Any = None
+    # The kind of storage backing this app's own build artifacts. (AI-inferred)
     artifacts_storage_type: Any = None
+    # Configuration for the front-end service handling this app's own traffic. (AI-inferred)
     front_end_service_configuration: Any = None
+    # The Kubernetes configuration used to connect to this cluster. (AI-inferred)
     kube_config: Any = None
 
 @dataclasses.dataclass
@@ -54,9 +66,13 @@ class OpenapiKubeEnvironment_Properties_ContainerAppsConfiguration:
 
 @dataclasses.dataclass
 class OpenapiKubeEnvironment_Properties:
+    # A reference to the Azure Kubernetes Service cluster this applies to. (AI-inferred)
     aks_resource_id: Any = None
+    # Configuration for collecting this app's own application logs. (AI-inferred)
     app_logs_configuration: Any = None
+    # Configuration specific to an Azure Arc-enabled deployment. (AI-inferred)
     arc_configuration: Any = None
+    # Configuration specific to deploying on Azure Container Apps. (AI-inferred)
     container_apps_configuration: Any = None
     # Default Domain Name for the cluster
     default_domain: Any = None

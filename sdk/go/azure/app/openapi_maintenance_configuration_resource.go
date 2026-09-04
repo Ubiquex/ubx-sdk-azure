@@ -4,9 +4,12 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMaintenanceConfigurationResource_Properties_ScheduledEntries struct {
+	// How long, in hours, this configuration applies. (AI-inferred)
 	DurationHours any
-	StartHourUtc  any
-	WeekDay       any
+	// The hour, in UTC, this scheduled configuration begins. (AI-inferred)
+	StartHourUtc any
+	// The day of the week this schedule applies to. (AI-inferred)
+	WeekDay any
 }
 
 type OpenapiMaintenanceConfigurationResource_Properties struct {

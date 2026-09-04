@@ -15,7 +15,9 @@ class ManagementOpenapiCostDetailsOperationResults_Error:
 
 @dataclasses.dataclass
 class ManagementOpenapiCostDetailsOperationResults_Manifest_Blobs:
+    # A URL pointing to the generated report file. (AI-inferred)
     blob_link: Any = None
+    # The size of this file, in bytes. (AI-inferred)
     byte_count: Any = None
 
 @dataclasses.dataclass

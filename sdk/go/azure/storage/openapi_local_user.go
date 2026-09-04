@@ -4,14 +4,19 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLocalUser_Properties_PermissionScopes struct {
-	Permissions  any
+	// The access permission(s) granted. (AI-inferred)
+	Permissions any
+	// The name of this resource. (AI-inferred)
 	ResourceName any
-	Service      any
+	// The storage service (e.g. blob, file, queue) this applies to. (AI-inferred)
+	Service any
 }
 
 type OpenapiLocalUser_Properties_SshAuthorizedKeys struct {
+	// A human-readable description of this resource. (AI-inferred)
 	Description any
-	Key         any
+	// The key of this key/value pair. (AI-inferred)
+	Key any
 }
 
 type OpenapiLocalUser_Properties struct {

@@ -8,27 +8,37 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class WebPubSubHub_Properties_EventHandlers_Auth_ManagedIdentity:
+    # A reference to the resource this applies to. (AI-inferred)
     resource: Any = None
 
 @dataclasses.dataclass
 class WebPubSubHub_Properties_EventHandlers_Auth:
+    # The managed identity used to authenticate requests to this upstream endpoint. (AI-inferred)
     managed_identity: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class WebPubSubHub_Properties_EventHandlers:
+    # Authentication configuration for this upstream endpoint. (AI-inferred)
     auth: Any = None
+    # The system event type(s) this event handler subscribes to. (AI-inferred)
     system_events: Any = None
+    # The URL template used to construct the upstream endpoint address for a matching event. (AI-inferred)
     url_template: Any = None
+    # The user event name pattern this event handler matches. (AI-inferred)
     user_event_pattern: Any = None
 
 @dataclasses.dataclass
 class WebPubSubHub_Properties_EventListeners_Endpoint:
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class WebPubSubHub_Properties_EventListeners:
+    # The endpoint this resource is reachable at. (AI-inferred)
     endpoint: Any = None
+    # Restricts this rule to matching event(s). (AI-inferred)
     filter: Any = None
 
 @dataclasses.dataclass

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiStaticSiteArmresource_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -37,23 +39,35 @@ export interface OpenapiStaticSiteArmresource_Properties_BuildProperties {
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_DatabaseConnections_ConfigurationFiles {
+  /** The literal content of this resource. (AI-inferred) */
   contents?: string | Computed<string>;
+  /** The name of this file. (AI-inferred) */
   fileName?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_DatabaseConnections {
+  /** The configuration file(s) associated with this resource. (AI-inferred) */
   configurationFiles?: OpenapiStaticSiteArmresource_Properties_DatabaseConnections_ConfigurationFiles[] | Computed<OpenapiStaticSiteArmresource_Properties_DatabaseConnections_ConfigurationFiles[]>;
+  /** The managed identity used to authenticate this connection. (AI-inferred) */
   connectionIdentity?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure region this applies to. (AI-inferred) */
   region?: string | Computed<string>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_LinkedBackends {
+  /** A reference to the backend resource this applies to. (AI-inferred) */
   backendResourceId?: string | Computed<string>;
+  /** When this resource was created. (AI-inferred) */
   createdOn?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The Azure region this applies to. (AI-inferred) */
   region?: string | Computed<string>;
 }
 
@@ -61,82 +75,132 @@ export interface OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnecti
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_Details[] | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_Details[]>;
+  /** An extended, more specific error code. (AI-inferred) */
   extendedCode?: string | Computed<string>;
+  /** The underlying error(s) that caused this failure. (AI-inferred) */
   innerErrors?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_Details[] | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A template used to format a generated message. (AI-inferred) */
   messageTemplate?: string | Computed<string>;
+  /** The parameter(s) making up this configuration. (AI-inferred) */
   parameters?: string[] | Computed<string[]>;
+  /** The destination this applies to. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Plan {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The product this applies to. (AI-inferred) */
   product?: string | Computed<string>;
+  /** A promotional code applied to this resource. (AI-inferred) */
   promotionCode?: string | Computed<string>;
+  /** The publisher of this extension or resource. (AI-inferred) */
   publisher?: string | Computed<string>;
+  /** The version identifier this applies to. (AI-inferred) */
   version?: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties {
+  /** The IP address(es) associated with this resource. (AI-inferred) */
   ipAddresses?: string[] | Computed<string[]>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateEndpoint | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateLinkServiceConnectionState | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_Capabilities {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A machine-readable reason code. (AI-inferred) */
   reason?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_SkuCapacity {
+  /** The default value used when none is explicitly provided. (AI-inferred) */
   default?: number | Computed<number>;
+  /** The maximum number of worker instances this plan can elastically scale out to. (AI-inferred) */
   elasticMaximum?: number | Computed<number>;
+  /** The maximum value allowed. (AI-inferred) */
   maximum?: number | Computed<number>;
+  /** The minimum value allowed. (AI-inferred) */
   minimum?: number | Computed<number>;
+  /** How this resource scales, e.g. by CPU or a custom metric. (AI-inferred) */
   scaleType?: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku {
+  /** The capability/capabilities this resource supports. (AI-inferred) */
   capabilities?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_Capabilities[] | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_Capabilities[]>;
+  /** The number of instance(s) this resource is provisioned with. (AI-inferred) */
   capacity?: number | Computed<number>;
+  /** The generation or family this SKU belongs to. (AI-inferred) */
   family?: string | Computed<string>;
+  /** The Azure region(s) this applies to. (AI-inferred) */
   locations?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The size of this resource. (AI-inferred) */
   size?: string | Computed<string>;
+  /** The provisioned capacity for this SKU. (AI-inferred) */
   skuCapacity?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_SkuCapacity | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_SkuCapacity>;
+  /** The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred) */
   tier?: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections {
+  /** Detail about an error that occurred. (AI-inferred) */
   error?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: OpenapiStaticSiteArmresource_Identity | Computed<OpenapiStaticSiteArmresource_Identity>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A reference to the App Service plan this app runs on. (AI-inferred) */
   plan?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Plan | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Plan>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags?: Record<string, string> | Computed<Record<string, string>>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
@@ -154,12 +218,16 @@ export interface OpenapiStaticSiteArmresource_Properties_TemplateProperties {
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps_Properties {
+  /** When this resource was created. (AI-inferred) */
   createdOn?: string | Computed<string>;
+  /** The Azure region the associated Function App is deployed in. (AI-inferred) */
   functionAppRegion?: string | Computed<string>;
+  /** A reference to the associated Function App resource. (AI-inferred) */
   functionAppResourceId?: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps_Properties | Computed<OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps_Properties>;
 }
 

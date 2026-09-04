@@ -4,6 +4,7 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface OpenapiServerBackupV2_Properties {
   /** Backup name */
   backupNameV2?: string | Computed<string>;
+  /** The category of backup this represents, e.g. full or differential. (AI-inferred) */
   backupType?: string | Computed<string>;
   /** Backup completed time (ISO8601 format). */
   completedTime?: string | Computed<string>;

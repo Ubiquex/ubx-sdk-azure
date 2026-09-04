@@ -4,9 +4,12 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector_MatchExpressions struct {
-	Key      any
+	// The key of this attribute or label. (AI-inferred)
+	Key any
+	// Whether all or any of this rule collection's own rules must match. (AI-inferred)
 	Operator any
-	Values   any
+	// The value(s) making up this field. (AI-inferred)
+	Values any
 }
 
 type FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector struct {

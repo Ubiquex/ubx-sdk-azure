@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector_MatchExpressions {
+  /** The key of this attribute or label. (AI-inferred) */
   key?: string | Computed<string>;
+  /** Whether all or any of this rule collection's own rules must match. (AI-inferred) */
   operator?: string | Computed<string>;
+  /** The value(s) making up this field. (AI-inferred) */
   values?: string[] | Computed<string[]>;
 }
 

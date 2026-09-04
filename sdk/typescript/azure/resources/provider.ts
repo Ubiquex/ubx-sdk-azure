@@ -2,58 +2,90 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Provider_ResourceTypes_Aliases_DefaultMetadata {
+  /** Free-form key/value metadata attached to this resource. (AI-inferred) */
   attributes?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface Provider_ResourceTypes_Aliases_DefaultPattern {
+  /** The specific phrase this pattern matches. (AI-inferred) */
   phrase?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** A caller-defined variable referenced within this template. (AI-inferred) */
   variable?: string | Computed<string>;
 }
 
 export interface Provider_ResourceTypes_Aliases_Paths {
+  /** The API version(s) this resource type supports. (AI-inferred) */
   apiVersions?: string[] | Computed<string[]>;
+  /** Additional, free-form metadata associated with this resource. (AI-inferred) */
   metadata?: Provider_ResourceTypes_Aliases_DefaultMetadata | Computed<Provider_ResourceTypes_Aliases_DefaultMetadata>;
+  /** The property path this alias applies to. (AI-inferred) */
   path?: string | Computed<string>;
+  /** The pattern matched against. (AI-inferred) */
   pattern?: Provider_ResourceTypes_Aliases_DefaultPattern | Computed<Provider_ResourceTypes_Aliases_DefaultPattern>;
 }
 
 export interface Provider_ResourceTypes_Aliases {
+  /** The default metadata applied when this alias is used. (AI-inferred) */
   defaultMetadata?: Provider_ResourceTypes_Aliases_DefaultMetadata | Computed<Provider_ResourceTypes_Aliases_DefaultMetadata>;
+  /** The path used when none is explicitly specified. (AI-inferred) */
   defaultPath?: string | Computed<string>;
+  /** The pattern applied when none is explicitly specified. (AI-inferred) */
   defaultPattern?: Provider_ResourceTypes_Aliases_DefaultPattern | Computed<Provider_ResourceTypes_Aliases_DefaultPattern>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The property path(s) this alias applies to. (AI-inferred) */
   paths?: Provider_ResourceTypes_Aliases_Paths[] | Computed<Provider_ResourceTypes_Aliases_Paths[]>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface Provider_ResourceTypes_ApiProfiles {
+  /** The API version used for this resource. (AI-inferred) */
   apiVersion?: string | Computed<string>;
+  /** The version of this API profile. (AI-inferred) */
   profileVersion?: string | Computed<string>;
 }
 
 export interface Provider_ResourceTypes_LocationMappings {
+  /** The edge or custom location(s) this resource type can be deployed to. (AI-inferred) */
   extendedLocations?: string[] | Computed<string[]>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface Provider_ResourceTypes_ZoneMappings {
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface Provider_ResourceTypes {
+  /** Alternate name(s) this also resolves under. (AI-inferred) */
   aliases?: Provider_ResourceTypes_Aliases[] | Computed<Provider_ResourceTypes_Aliases[]>;
+  /** The API profile(s) (bundled API version sets) this provider supports. (AI-inferred) */
   apiProfiles?: Provider_ResourceTypes_ApiProfiles[] | Computed<Provider_ResourceTypes_ApiProfiles[]>;
+  /** The API version(s) this resource type supports. (AI-inferred) */
   apiVersions?: string[] | Computed<string[]>;
+  /** The capability/capabilities this resource type supports. (AI-inferred) */
   capabilities?: string | Computed<string>;
+  /** The API version used when none is explicitly specified. (AI-inferred) */
   defaultApiVersion?: string | Computed<string>;
+  /** How logical location name(s) map to actual Azure region(s). (AI-inferred) */
   locationMappings?: Provider_ResourceTypes_LocationMappings[] | Computed<Provider_ResourceTypes_LocationMappings[]>;
+  /** The Azure region(s) this resource type is available in. (AI-inferred) */
   locations?: string[] | Computed<string[]>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Record<string, string> | Computed<Record<string, string>>;
+  /** The category of resource this applies to. (AI-inferred) */
   resourceType?: string | Computed<string>;
+  /** How logical zone name(s) map to actual availability zone(s). (AI-inferred) */
   zoneMappings?: Provider_ResourceTypes_ZoneMappings[] | Computed<Provider_ResourceTypes_ZoneMappings[]>;
 }
 

@@ -8,41 +8,59 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiHttpRouteConfig_Properties_CustomDomains:
+    # Whether this service binding is created automatically or supplied manually by the caller. (AI-inferred)
     binding_type: Any = None
+    # A reference to the certificate this applies to. (AI-inferred)
     certificate_id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiHttpRouteConfig_Properties_ProvisioningErrors:
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # When this event occurred. (AI-inferred)
     timestamp: Any = None
 
 @dataclasses.dataclass
 class OpenapiHttpRouteConfig_Properties_Rules_Routes_Action:
+    # The prefix substituted in place of the matched path prefix. (AI-inferred)
     prefix_rewrite: Any = None
 
 @dataclasses.dataclass
 class OpenapiHttpRouteConfig_Properties_Rules_Routes_Match:
+    # Whether this path match is case-sensitive. (AI-inferred)
     case_sensitive: Any = None
+    # A file or URL path. (AI-inferred)
     path: Any = None
+    # Whether the matched prefix must align on a path segment boundary, rather than matching a partial segment. (AI-inferred)
     path_separated_prefix: Any = None
+    # Matches values starting with this prefix. (AI-inferred)
     prefix: Any = None
 
 @dataclasses.dataclass
 class OpenapiHttpRouteConfig_Properties_Rules_Routes:
+    # The action to perform. (AI-inferred)
     action: Any = None
+    # The condition this rule matches against. (AI-inferred)
     match: Any = None
 
 @dataclasses.dataclass
 class OpenapiHttpRouteConfig_Properties_Rules_Targets:
+    # A reference to the Container App this applies to. (AI-inferred)
     container_app: Any = None
+    # A human-readable label for this item. (AI-inferred)
     label: Any = None
+    # A reference to a specific revision. (AI-inferred)
     revision: Any = None
 
 @dataclasses.dataclass
 class OpenapiHttpRouteConfig_Properties_Rules:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The route(s) this configuration applies to. (AI-inferred)
     routes: Any = None
+    # The target(s) this rule applies to. (AI-inferred)
     targets: Any = None
 
 @dataclasses.dataclass

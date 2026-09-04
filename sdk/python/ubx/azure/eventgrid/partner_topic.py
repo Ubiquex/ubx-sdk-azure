@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class PartnerTopic_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,9 +26,13 @@ class PartnerTopic_Identity:
 
 @dataclasses.dataclass
 class PartnerTopic_Properties_EventTypeInfo_InlineEventTypes:
+    # A URL pointing to the schema describing this event's own data payload. (AI-inferred)
     data_schema_url: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # A URL pointing to documentation for this event type. (AI-inferred)
     documentation_url: Any = None
 
 @dataclasses.dataclass

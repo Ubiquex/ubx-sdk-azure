@@ -10,6 +10,7 @@ import ubx_sdk as ubx
 class VirtualnetworkStaticCidr_Properties:
     # List of IP address prefixes of the resource.
     address_prefixes: Any = None
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
     # Number of IP addresses to allocate for a static CIDR resource. The IP addresses will be assigned based on IpamPools available space.
     number_of_ipaddresses_to_allocate: Any = None

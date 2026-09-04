@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DtlLabCost_Properties_LabCostDetails {
+  /** The cost amount this applies to. (AI-inferred) */
   cost?: number | Computed<number>;
+  /** Whether this cost is a projected estimate or an actual incurred charge. (AI-inferred) */
   costType?: string | Computed<string>;
+  /** The date this applies to. (AI-inferred) */
   date?: string | Computed<string>;
 }
 
@@ -13,26 +16,41 @@ export interface DtlLabCost_Properties_LabCostSummary {
 }
 
 export interface DtlLabCost_Properties_ResourceCosts {
+  /** A reference to the underlying Azure resource this cost applies to, outside the lab itself. (AI-inferred) */
   externalResourceId?: string | Computed<string>;
+  /** The cost associated with this resource. (AI-inferred) */
   resourceCost?: number | Computed<number>;
+  /** A reference to the underlying Azure resource. (AI-inferred) */
   resourceId?: string | Computed<string>;
+  /** The owner of this resource. (AI-inferred) */
   resourceOwner?: string | Computed<string>;
+  /** The pricing tier this resource is provisioned at. (AI-inferred) */
   resourcePricingTier?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   resourceStatus?: string | Computed<string>;
+  /** The type of this resource. (AI-inferred) */
   resourceType?: string | Computed<string>;
+  /** A stable, unique identifier for this resource. (AI-inferred) */
   resourceUid?: string | Computed<string>;
+  /** The name of this resource. (AI-inferred) */
   resourcename?: string | Computed<string>;
 }
 
 export interface DtlLabCost_Properties_TargetCost_CostThresholds_PercentageThreshold {
+  /** The literal value that triggers a notification. (AI-inferred) */
   thresholdValue?: number | Computed<number>;
 }
 
 export interface DtlLabCost_Properties_TargetCost_CostThresholds {
+  /** Whether this cost item is shown on the cost summary chart. (AI-inferred) */
   displayOnChart?: string | Computed<string>;
+  /** When a threshold notification was last sent for this item, if any. (AI-inferred) */
   notificationSent?: string | Computed<string>;
+  /** The percentage-of-budget threshold that triggers a notification. (AI-inferred) */
   percentageThreshold?: DtlLabCost_Properties_TargetCost_CostThresholds_PercentageThreshold | Computed<DtlLabCost_Properties_TargetCost_CostThresholds_PercentageThreshold>;
+  /** Whether to send a notification when this threshold is exceeded. (AI-inferred) */
   sendNotificationWhenExceeded?: string | Computed<string>;
+  /** An identifier for this specific threshold. (AI-inferred) */
   thresholdId?: string | Computed<string>;
 }
 

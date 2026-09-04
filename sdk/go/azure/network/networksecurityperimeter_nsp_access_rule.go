@@ -4,12 +4,16 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworksecurityperimeterNspAccessRule_Properties_NetworkSecurityPerimeters struct {
-	Id            any
-	Location      any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// The globally unique identifier of the associated network security perimeter. (AI-inferred)
 	PerimeterGuid any
 }
 
 type NetworksecurityperimeterNspAccessRule_Properties_Subscriptions struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 

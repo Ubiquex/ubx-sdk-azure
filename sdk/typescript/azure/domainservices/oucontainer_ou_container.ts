@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OucontainerOuContainer_Properties_Accounts {
+  /** The name of this service account created within the managed domain's own organizational unit. (AI-inferred) */
   accountName?: string | Computed<string>;
+  /** The password for this service account. (AI-inferred) */
   password?: string | Computed<string>;
+  /** The Service Principal Name registered for this service account. (AI-inferred) */
   spn?: string | Computed<string>;
 }
 

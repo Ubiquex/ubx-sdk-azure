@@ -2,12 +2,19 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Offer_Properties_Plans {
+  /** The visibility level this offer is published at. (AI-inferred) */
   accessibility?: string | Computed<string>;
+  /** A reference to an alternate technology stack this offer is also available under. (AI-inferred) */
   altStackReference?: string | Computed<string>;
+  /** Whether this plan is no longer available for new purchases. (AI-inferred) */
   isStopSell?: boolean | Computed<boolean>;
+  /** A human-readable name for this plan. (AI-inferred) */
   planDisplayName?: string | Computed<string>;
+  /** A reference to the specific plan this applies to. (AI-inferred) */
   planId?: string | Computed<string>;
+  /** A reference to the SKU this applies to. (AI-inferred) */
   skuId?: string | Computed<string>;
+  /** The technology stack this offer is built on. (AI-inferred) */
   stackType?: string | Computed<string>;
 }
 
@@ -68,10 +75,12 @@ const Offer_PropertiesFields: FieldMap = {
 };
 
 export interface OfferConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Offer_Properties | Computed<Offer_Properties>;
 }
 
 export interface OfferAttrs {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: Offer_Properties;
 }
 

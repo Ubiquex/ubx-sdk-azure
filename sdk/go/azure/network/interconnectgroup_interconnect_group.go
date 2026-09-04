@@ -13,17 +13,23 @@ type InterconnectgroupInterconnectGroup_Properties_SubgroupProfile struct {
 }
 
 type InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlock struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties struct {
-	InterconnectBlock  any
+	// The interconnect address block allocated to this subgroup. (AI-inferred)
+	InterconnectBlock any
+	// A unique identifier for this subgroup within its own containing interconnect group. (AI-inferred)
 	InternalSubgroupId any
-	ProvisioningState  any
-	VirtualMachines    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The virtual machine(s) belonging to this subgroup. (AI-inferred)
+	VirtualMachines any
 }
 
 type InterconnectgroupInterconnectGroup_Properties_Subgroups struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

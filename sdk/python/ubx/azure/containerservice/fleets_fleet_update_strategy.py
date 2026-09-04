@@ -8,23 +8,35 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates:
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class FleetsFleetUpdateStrategy_Properties_Strategy_Stages_Groups:
+    # The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
     after_gates: Any = None
+    # The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
     before_gates: Any = None
+    # The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
     max_concurrency: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class FleetsFleetUpdateStrategy_Properties_Strategy_Stages:
+    # The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
     after_gates: Any = None
+    # How long to wait, in seconds, after this stage completes before continuing. (AI-inferred)
     after_stage_wait_in_seconds: Any = None
+    # The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
     before_gates: Any = None
+    # The group(s) this update run's own member clusters are batched into. (AI-inferred)
     groups: Any = None
+    # The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
     max_concurrency: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass

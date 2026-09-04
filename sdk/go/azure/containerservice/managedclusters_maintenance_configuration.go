@@ -4,7 +4,9 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_NotAllowedDates struct {
-	End   any
+	// The end of this range or window. (AI-inferred)
+	End any
+	// The start of this range or window. (AI-inferred)
 	Start any
 }
 
@@ -63,7 +65,9 @@ type ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow struct
 }
 
 type ManagedclustersMaintenanceConfiguration_Properties_TimeInWeek struct {
-	Day       any
+	// The day-of-week component of this schedule. (AI-inferred)
+	Day any
+	// The hour(s) within this day this schedule is active. (AI-inferred)
 	HourSlots any
 }
 

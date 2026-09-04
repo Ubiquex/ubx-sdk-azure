@@ -46,6 +46,7 @@ class OpenapiAfdoriginGroup_Properties_LoadBalancingSettings:
 class OpenapiAfdoriginGroup_Properties:
     # The JSON object that contains the properties of the origin authentication settings.
     authentication: Any = None
+    # The current deployment status of this configuration. (AI-inferred)
     deployment_status: Any = None
     # The JSON object that contains the properties to send health probes to origin.
     health_probe_settings: Any = None

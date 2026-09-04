@@ -48,7 +48,9 @@ type NetworkwatcherConnectionAnalyzer_Properties_OutputSettings struct {
 }
 
 type NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettings_HttpConfiguration_Headers struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 

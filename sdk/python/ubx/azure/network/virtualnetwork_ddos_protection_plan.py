@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualnetworkDdosProtectionPlan_Properties_PublicIpaddresses:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass

@@ -19,10 +19,12 @@ const SingleSignOnResource_PropertiesFields: FieldMap = {
 };
 
 export interface SingleSignOnResourceConfig {
+  /** This Datadog single sign-on integration's own real configuration and status. (AI-inferred) */
   properties?: SingleSignOnResource_Properties | Computed<SingleSignOnResource_Properties>;
 }
 
 export interface SingleSignOnResourceAttrs {
+  /** This Datadog single sign-on integration's own real configuration and status. (AI-inferred) */
   properties: SingleSignOnResource_Properties;
 }
 

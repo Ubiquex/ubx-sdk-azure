@@ -7,6 +7,7 @@ export interface OpenapiCluster_Properties_PlatformCapabilities_ConfidentialComp
 }
 
 export interface OpenapiCluster_Properties_PlatformCapabilities {
+  /** Whether this namespace runs on confidential computing infrastructure. (AI-inferred) */
   confidentialCompute?: OpenapiCluster_Properties_PlatformCapabilities_ConfidentialCompute | Computed<OpenapiCluster_Properties_PlatformCapabilities_ConfidentialCompute>;
 }
 
@@ -15,6 +16,7 @@ export interface OpenapiCluster_Properties {
   createdAt?: string | Computed<string>;
   /** The metric ID of the cluster resource. Provided by the service and not modifiable by the user. */
   metricId?: string | Computed<string>;
+  /** The platform-level capability/capabilities this namespace supports. (AI-inferred) */
   platformCapabilities?: OpenapiCluster_Properties_PlatformCapabilities | Computed<OpenapiCluster_Properties_PlatformCapabilities>;
   /** Provisioning state of the Cluster. */
   provisioningState?: string | Computed<string>;

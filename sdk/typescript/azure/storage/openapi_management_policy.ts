@@ -2,61 +2,93 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete {
+  /** The minimum number of days since creation for this lifecycle condition to match. (AI-inferred) */
   daysAfterCreationGreaterThan?: number | Computed<number>;
+  /** The minimum number of days since last access for this lifecycle condition to match. (AI-inferred) */
   daysAfterLastAccessTimeGreaterThan?: number | Computed<number>;
+  /** The minimum number of days since the last tier change for this lifecycle condition to match. (AI-inferred) */
   daysAfterLastTierChangeGreaterThan?: number | Computed<number>;
+  /** The minimum number of days since last modification for this lifecycle condition to match. (AI-inferred) */
   daysAfterModificationGreaterThan?: number | Computed<number>;
 }
 
 export interface OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob {
+  /** The deletion action applied by this lifecycle rule. (AI-inferred) */
   delete?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete>;
+  /** Whether a blob is automatically moved back to the Hot tier the moment it's accessed, after having cooled. (AI-inferred) */
   enableAutoTierToHotFromCool?: boolean | Computed<boolean>;
+  /** Automatically moves matching blobs to the Archive storage tier. (AI-inferred) */
   tierToArchive?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete>;
+  /** Automatically moves matching blobs to the Cold storage tier. (AI-inferred) */
   tierToCold?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete>;
+  /** Automatically moves matching blobs to the Cool storage tier. (AI-inferred) */
   tierToCool?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete>;
+  /** Automatically moves matching blobs to the Hot storage tier. (AI-inferred) */
   tierToHot?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete>;
 }
 
 export interface OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete {
+  /** The minimum number of days since creation for this lifecycle condition to match. (AI-inferred) */
   daysAfterCreationGreaterThan?: number | Computed<number>;
+  /** The minimum number of days since the last tier change for this lifecycle condition to match. (AI-inferred) */
   daysAfterLastTierChangeGreaterThan?: number | Computed<number>;
 }
 
 export interface OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot {
+  /** The deletion action applied by this lifecycle rule. (AI-inferred) */
   delete?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete>;
+  /** Automatically moves matching blobs to the Archive storage tier. (AI-inferred) */
   tierToArchive?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete>;
+  /** Automatically moves matching blobs to the Cold storage tier. (AI-inferred) */
   tierToCold?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete>;
+  /** Automatically moves matching blobs to the Cool storage tier. (AI-inferred) */
   tierToCool?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete>;
+  /** Automatically moves matching blobs to the Hot storage tier. (AI-inferred) */
   tierToHot?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete>;
 }
 
 export interface OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions {
+  /** Configuration governing the lifecycle of a base (non-versioned) blob. (AI-inferred) */
   baseBlob?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob>;
+  /** A reference to the snapshot this applies to. (AI-inferred) */
   snapshot?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot>;
+  /** The version identifier this applies to. (AI-inferred) */
   version?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot>;
 }
 
 export interface OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters_BlobIndexMatch {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The operation performed. (AI-inferred) */
   op?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters {
+  /** The blob index tag condition(s) a blob must match for this rule to apply. (AI-inferred) */
   blobIndexMatch?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters_BlobIndexMatch[] | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters_BlobIndexMatch[]>;
+  /** The blob type(s) (e.g. block blob) this rule applies to. (AI-inferred) */
   blobTypes?: string[] | Computed<string[]>;
+  /** The blob name prefix(es) this rule matches. (AI-inferred) */
   prefixMatch?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiManagementPolicy_Properties_Policy_Rules_Definition {
+  /** The action(s) this policy applies. (AI-inferred) */
   actions?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions>;
+  /** The condition(s) restricting which blob(s) this rule applies to. (AI-inferred) */
   filters?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters>;
 }
 
 export interface OpenapiManagementPolicy_Properties_Policy_Rules {
+  /** The schema or configuration defining this rule. (AI-inferred) */
   definition?: OpenapiManagementPolicy_Properties_Policy_Rules_Definition | Computed<OpenapiManagementPolicy_Properties_Policy_Rules_Definition>;
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

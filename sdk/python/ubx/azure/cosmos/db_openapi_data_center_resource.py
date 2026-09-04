@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapProperties_ServerCertificates:
+    # A certificate, PEM-encoded. (AI-inferred)
     pem: Any = None
 
 @dataclasses.dataclass
@@ -18,6 +19,7 @@ class DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapProperties:
     search_base_distinguished_name: Any = None
     # Template to use for searching. Defaults to (cn=%s) where %s will be replaced by the username used to login.
     search_filter_template: Any = None
+    # The trusted TLS server certificate(s) for connecting to this data source. (AI-inferred)
     server_certificates: Any = None
     # Hostname of the LDAP server.
     server_hostname: Any = None
@@ -41,6 +43,7 @@ class DbOpenapiDataCenterResource_Properties_ProvisionError:
 
 @dataclasses.dataclass
 class DbOpenapiDataCenterResource_Properties_SeedNodes:
+    # An IP address value. (AI-inferred)
     ip_address: Any = None
 
 @dataclasses.dataclass
@@ -69,6 +72,7 @@ class DbOpenapiDataCenterResource_Properties:
     node_count: Any = None
     # Ip of the VPN Endpoint for this data center.
     private_endpoint_ip_address: Any = None
+    # Detail about an error encountered while provisioning this resource. (AI-inferred)
     provision_error: Any = None
     # The status of the resource at the time the operation was called.
     provisioning_state: Any = None

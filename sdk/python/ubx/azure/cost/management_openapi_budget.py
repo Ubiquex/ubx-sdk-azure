@@ -15,13 +15,18 @@ class ManagementOpenapiBudget_Properties_CurrentSpend:
 
 @dataclasses.dataclass
 class ManagementOpenapiBudget_Properties_Filter_And_Dimensions:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # How this condition's own operands are compared. (AI-inferred)
     operator: Any = None
+    # The value(s) making up this field. (AI-inferred)
     values: Any = None
 
 @dataclasses.dataclass
 class ManagementOpenapiBudget_Properties_Filter_And:
+    # The dimension(s) this data is grouped or filtered by. (AI-inferred)
     dimensions: Any = None
+    # User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
     tags: Any = None
 
 @dataclasses.dataclass
@@ -35,14 +40,23 @@ class ManagementOpenapiBudget_Properties_Filter:
 
 @dataclasses.dataclass
 class ManagementOpenapiBudget_Properties_Notifications:
+    # The email address(es) notified for this alert. (AI-inferred)
     contact_emails: Any = None
+    # The Action Group(s) notified for this alert. (AI-inferred)
     contact_groups: Any = None
+    # The Azure RBAC role(s) whose own members are notified for this alert. (AI-inferred)
     contact_roles: Any = None
+    # Whether this feature is turned on. (AI-inferred)
     enabled: Any = None
+    # How often this schedule recurs. (AI-inferred)
     frequency: Any = None
+    # The locale this content is expressed in. (AI-inferred)
     locale: Any = None
+    # How this condition's own operands are compared. (AI-inferred)
     operator: Any = None
+    # The value that must be crossed for this condition to trigger. (AI-inferred)
     threshold: Any = None
+    # The kind of threshold this represents, e.g. actual or forecasted cost. (AI-inferred)
     threshold_type: Any = None
 
 @dataclasses.dataclass

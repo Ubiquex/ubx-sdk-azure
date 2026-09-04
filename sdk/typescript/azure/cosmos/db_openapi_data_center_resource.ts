@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapProperties_ServerCertificates {
+  /** A certificate, PEM-encoded. (AI-inferred) */
   pem?: string | Computed<string>;
 }
 
@@ -12,6 +13,7 @@ export interface DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdap
   searchBaseDistinguishedName?: string | Computed<string>;
   /** Template to use for searching. Defaults to (cn=%s) where %s will be replaced by the username used to login. */
   searchFilterTemplate?: string | Computed<string>;
+  /** The trusted TLS server certificate(s) for connecting to this data source. (AI-inferred) */
   serverCertificates?: DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapProperties_ServerCertificates[] | Computed<DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapProperties_ServerCertificates[]>;
   /** Hostname of the LDAP server. */
   serverHostname?: string | Computed<string>;
@@ -35,6 +37,7 @@ export interface DbOpenapiDataCenterResource_Properties_ProvisionError {
 }
 
 export interface DbOpenapiDataCenterResource_Properties_SeedNodes {
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
 }
 
@@ -63,6 +66,7 @@ export interface DbOpenapiDataCenterResource_Properties {
   nodeCount?: number | Computed<number>;
   /** Ip of the VPN Endpoint for this data center. */
   privateEndpointIpAddress?: string | Computed<string>;
+  /** Detail about an error encountered while provisioning this resource. (AI-inferred) */
   provisionError?: DbOpenapiDataCenterResource_Properties_ProvisionError | Computed<DbOpenapiDataCenterResource_Properties_ProvisionError>;
   /** The status of the resource at the time the operation was called. */
   provisioningState?: string | Computed<string>;

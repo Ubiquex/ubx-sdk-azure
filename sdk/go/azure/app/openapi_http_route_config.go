@@ -4,42 +4,60 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiHttpRouteConfig_Properties_CustomDomains struct {
-	BindingType   any
+	// Whether this service binding is created automatically or supplied manually by the caller. (AI-inferred)
+	BindingType any
+	// A reference to the certificate this applies to. (AI-inferred)
 	CertificateId any
-	Name          any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiHttpRouteConfig_Properties_ProvisioningErrors struct {
-	Message   any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// When this event occurred. (AI-inferred)
 	Timestamp any
 }
 
 type OpenapiHttpRouteConfig_Properties_Rules_Routes_Action struct {
+	// The prefix substituted in place of the matched path prefix. (AI-inferred)
 	PrefixRewrite any
 }
 
 type OpenapiHttpRouteConfig_Properties_Rules_Routes_Match struct {
-	CaseSensitive       any
-	Path                any
+	// Whether this path match is case-sensitive. (AI-inferred)
+	CaseSensitive any
+	// A file or URL path. (AI-inferred)
+	Path any
+	// Whether the matched prefix must align on a path segment boundary, rather than matching a partial segment. (AI-inferred)
 	PathSeparatedPrefix any
-	Prefix              any
+	// Matches values starting with this prefix. (AI-inferred)
+	Prefix any
 }
 
 type OpenapiHttpRouteConfig_Properties_Rules_Routes struct {
+	// The action to perform. (AI-inferred)
 	Action any
-	Match  any
+	// The condition this rule matches against. (AI-inferred)
+	Match any
 }
 
 type OpenapiHttpRouteConfig_Properties_Rules_Targets struct {
+	// A reference to the Container App this applies to. (AI-inferred)
 	ContainerApp any
-	Label        any
-	Revision     any
+	// A human-readable label for this item. (AI-inferred)
+	Label any
+	// A reference to a specific revision. (AI-inferred)
+	Revision any
 }
 
 type OpenapiHttpRouteConfig_Properties_Rules struct {
+	// A human-readable description of this resource. (AI-inferred)
 	Description any
-	Routes      any
-	Targets     any
+	// The route(s) this configuration applies to. (AI-inferred)
+	Routes any
+	// The target(s) this rule applies to. (AI-inferred)
+	Targets any
 }
 
 type OpenapiHttpRouteConfig_Properties struct {

@@ -42,10 +42,12 @@ var NetworksecurityperimeterNspAssociation_PropertiesFields = ubx.FieldMap{
 }
 
 type NetworksecurityperimeterNspAssociationConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type NetworksecurityperimeterNspAssociationAttrs struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

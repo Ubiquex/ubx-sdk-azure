@@ -45,6 +45,7 @@ export interface OpenapiAfddomain_Properties_ValidationProperties {
 export interface OpenapiAfddomain_Properties {
   /** Reference to another resource. */
   azureDnsZone?: OpenapiAfddomain_Properties_AzureDnsZone | Computed<OpenapiAfddomain_Properties_AzureDnsZone>;
+  /** The current deployment status of this configuration. (AI-inferred) */
   deploymentStatus?: string | Computed<string>;
   /** Provisioning substate shows the progress of custom HTTPS enabling/disabling process step by step. DCV stands for DomainControlValidation. */
   domainValidationState?: string | Computed<string>;

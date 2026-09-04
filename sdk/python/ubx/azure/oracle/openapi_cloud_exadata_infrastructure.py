@@ -8,13 +8,18 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiCloudExadataInfrastructure_Properties_CustomerContacts:
+    # An email address associated with this resource. (AI-inferred)
     email: Any = None
 
 @dataclasses.dataclass
 class OpenapiCloudExadataInfrastructure_Properties_DefinedFileSystemConfiguration:
+    # Whether this partition is reserved for backup storage. (AI-inferred)
     is_backup_partition: Any = None
+    # Whether this resource's own capacity can be resized after creation. (AI-inferred)
     is_resizable: Any = None
+    # The minimum size, in gibibytes, this resource can be provisioned at. (AI-inferred)
     min_size_gb: Any = None
+    # The path this file system is mounted at. (AI-inferred)
     mount_point: Any = None
 
 @dataclasses.dataclass
@@ -37,6 +42,7 @@ class OpenapiCloudExadataInfrastructure_Properties_ExascaleConfig:
 
 @dataclasses.dataclass
 class OpenapiCloudExadataInfrastructure_Properties_MaintenanceWindow_DaysOfWeek:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass

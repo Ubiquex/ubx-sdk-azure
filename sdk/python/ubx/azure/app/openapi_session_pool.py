@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiSessionPool_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,22 +26,33 @@ class OpenapiSessionPool_Identity:
 
 @dataclasses.dataclass
 class OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Env:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A reference to the secret holding this value. (AI-inferred)
     secret_ref: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Resources:
+    # The number of CPU core(s) allocated. (AI-inferred)
     cpu: Any = None
+    # The amount of memory allocated. (AI-inferred)
     memory: Any = None
 
 @dataclasses.dataclass
 class OpenapiSessionPool_Properties_CustomContainerTemplate_Containers:
+    # The argument(s) passed to the container's own command. (AI-inferred)
     args: Any = None
+    # The container entrypoint command, overriding the image's own default. (AI-inferred)
     command: Any = None
+    # Environment variable(s) set in the container. (AI-inferred)
     env: Any = None
+    # The container image reference to run. (AI-inferred)
     image: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The compute resource requirement(s) (CPU, memory) for this container. (AI-inferred)
     resources: Any = None
 
 @dataclasses.dataclass
@@ -83,7 +96,9 @@ class OpenapiSessionPool_Properties_DynamicPoolConfiguration:
 
 @dataclasses.dataclass
 class OpenapiSessionPool_Properties_ManagedIdentitySettings:
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # Hook(s) run at specific points in this container's own lifecycle. (AI-inferred)
     lifecycle: Any = None
 
 @dataclasses.dataclass
@@ -95,7 +110,9 @@ class OpenapiSessionPool_Properties_ScaleConfiguration:
 
 @dataclasses.dataclass
 class OpenapiSessionPool_Properties_Secrets:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

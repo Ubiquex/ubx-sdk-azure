@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class NetworkmanagerSecurityUserRule_Properties_Destinations:
+    # An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
     address_prefix: Any = None
+    # Whether this address prefix is an IP prefix or a reference to another resource. (AI-inferred)
     address_prefix_type: Any = None
 
 @dataclasses.dataclass

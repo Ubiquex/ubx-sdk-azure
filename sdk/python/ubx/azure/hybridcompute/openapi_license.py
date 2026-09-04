@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiLicense_Properties_LicenseDetails_VolumeLicenseDetails:
+    # The invoice number associated with this volume license. (AI-inferred)
     invoice_id: Any = None
+    # The program year this Software Assurance/subscription benefit applies to. (AI-inferred)
     program_year: Any = None
 
 @dataclasses.dataclass

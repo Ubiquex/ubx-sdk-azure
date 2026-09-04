@@ -16,7 +16,9 @@ export interface OpenapiDatasetResource_Properties_LinkedServiceName {
 }
 
 export interface OpenapiDatasetResource_Properties_Parameters {
+  /** The value used when this field is left unset. (AI-inferred) */
   defaultValue?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

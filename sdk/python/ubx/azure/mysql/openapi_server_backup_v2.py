@@ -10,6 +10,7 @@ import ubx_sdk as ubx
 class OpenapiServerBackupV2_Properties:
     # Backup name
     backup_name_v2: Any = None
+    # The category of backup this represents, e.g. full or differential. (AI-inferred)
     backup_type: Any = None
     # Backup completed time (ISO8601 format).
     completed_time: Any = None

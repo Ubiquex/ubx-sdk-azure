@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface BackupVaultResource_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,6 +20,7 @@ export interface BackupVaultResource_Identity {
 }
 
 export interface BackupVaultResource_Properties_CostManagementSettings {
+  /** The level of detail this applies at. (AI-inferred) */
   granularityLevel?: string | Computed<string>;
 }
 
@@ -27,12 +30,14 @@ export interface BackupVaultResource_Properties_FeatureSettings_CrossRegionResto
 }
 
 export interface BackupVaultResource_Properties_FeatureSettings {
+  /** Configuration for restoring backup data into a different Azure region than where it was backed up from. (AI-inferred) */
   crossRegionRestoreSettings?: BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettings | Computed<BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettings>;
   /** CrossSubscriptionRestore Settings */
   crossSubscriptionRestoreSettings?: BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettings | Computed<BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettings>;
 }
 
 export interface BackupVaultResource_Properties_MonitoringSettings_AzureMonitorAlertSettings {
+  /** Whether alerts are raised for every failed backup job, not just critical ones. (AI-inferred) */
   alertsForAllJobFailures?: string | Computed<string>;
 }
 
@@ -94,7 +99,9 @@ export interface BackupVaultResource_Properties_SecuritySettings {
 }
 
 export interface BackupVaultResource_Properties_StorageSettings {
+  /** The type of datastore this applies to. (AI-inferred) */
   datastoreType?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

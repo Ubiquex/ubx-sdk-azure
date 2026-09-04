@@ -29,7 +29,9 @@ export interface OpenapiFactory_Properties_Encryption {
 }
 
 export interface OpenapiFactory_Properties_GlobalParameters {
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 

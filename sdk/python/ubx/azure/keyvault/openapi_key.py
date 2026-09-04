@@ -41,20 +41,26 @@ class OpenapiKey_Properties_RotationPolicy_Attributes:
 
 @dataclasses.dataclass
 class OpenapiKey_Properties_RotationPolicy_LifetimeActions_Action:
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiKey_Properties_RotationPolicy_LifetimeActions_Trigger:
+    # How long after creation this key is automatically rotated. (AI-inferred)
     time_after_create: Any = None
+    # How long before expiry a notification or rotation action is triggered. (AI-inferred)
     time_before_expiry: Any = None
 
 @dataclasses.dataclass
 class OpenapiKey_Properties_RotationPolicy_LifetimeActions:
+    # The action to perform. (AI-inferred)
     action: Any = None
+    # The condition that triggers this action. (AI-inferred)
     trigger: Any = None
 
 @dataclasses.dataclass
 class OpenapiKey_Properties_RotationPolicy:
+    # Metadata (enabled state, expiry, creation/update time) attached to this key, secret, or certificate. (AI-inferred)
     attributes: Any = None
     # The lifetimeActions for key rotation action.
     lifetime_actions: Any = None
@@ -65,6 +71,7 @@ class OpenapiKey_Properties:
     attributes: Any = None
     # The elliptic curve name. For valid values, see JsonWebKeyCurveName. Default for EC and EC-HSM keys is P-256
     curve_name: Any = None
+    # The cryptographic operation(s) this key is permitted to perform. (AI-inferred)
     key_ops: Any = None
     # The key size in bits. For example: 2048, 3072, or 4096 for RSA. Default for RSA and RSA-HSM keys is 2048. Exception made for bring your own key (BYOK), key exchange keys default to 4096.
     key_size: Any = None
@@ -74,7 +81,9 @@ class OpenapiKey_Properties:
     key_uri_with_version: Any = None
     # The type of the key. For valid values, see JsonWebKeyType.
     kty: Any = None
+    # The policy defining under what conditions this key may be released for use outside the vault. (AI-inferred)
     release_policy: Any = None
+    # The policy governing how and when this key is automatically rotated. (AI-inferred)
     rotation_policy: Any = None
 
 _OpenapiKey_Properties_AttributesFields = {

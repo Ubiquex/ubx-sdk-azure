@@ -8,21 +8,31 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties_RecordSets:
+    # The fully qualified domain name assigned to this resource. (AI-inferred)
     fqdn: Any = None
+    # The IP address(es) associated with this resource. (AI-inferred)
     ip_addresses: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The name of this DNS record set. (AI-inferred)
     record_set_name: Any = None
+    # The DNS record type this applies to, e.g. `A` or `CNAME`. (AI-inferred)
     record_type: Any = None
+    # The time-to-live applied to this DNS record. (AI-inferred)
     ttl: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties:
+    # A reference to the Private DNS zone this record belongs to. (AI-inferred)
     private_dns_zone_id: Any = None
+    # The DNS record set(s) making up this zone. (AI-inferred)
     record_sets: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

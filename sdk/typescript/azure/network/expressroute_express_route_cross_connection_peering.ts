@@ -2,9 +2,13 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo {
+  /** An IP address prefix, in CIDR notation. (AI-inferred) */
   prefix?: string | Computed<string>;
+  /** A cryptographic signature validating this resource's own configuration or authorization. (AI-inferred) */
   signature?: string | Computed<string>;
+  /** An identifier for a pending validation request on this resource, e.g. an ExpressRoute prefix ownership check. (AI-inferred) */
   validationId?: string | Computed<string>;
+  /** The current outcome of validating this resource's own configuration, e.g. whether an advertised prefix passed ownership verification. (AI-inferred) */
   validationState?: string | Computed<string>;
 }
 

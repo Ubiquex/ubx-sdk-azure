@@ -4,7 +4,9 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFeaturesetVersion_Properties_MaterializationSettings_Notification_Webhooks struct {
-	EventType   any
+	// The category of event this represents. (AI-inferred)
+	EventType any
+	// The kind of webhook this represents. (AI-inferred)
 	WebhookType any
 }
 
@@ -38,6 +40,7 @@ type OpenapiFeaturesetVersion_Properties_MaterializationSettings_Schedule struct
 	Frequency any
 	// [Required] Specifies schedule interval in conjunction with frequency
 	Interval any
+	// The recurrence schedule this applies to. (AI-inferred)
 	Schedule any
 }
 
@@ -46,6 +49,7 @@ type OpenapiFeaturesetVersion_Properties_MaterializationSettings struct {
 	Notification any
 	// DTO object representing compute resource
 	Resource any
+	// The recurrence schedule this applies to. (AI-inferred)
 	Schedule any
 	// Specifies the spark compute settings
 	SparkConfiguration any
@@ -60,7 +64,8 @@ type OpenapiFeaturesetVersion_Properties_Specification struct {
 
 type OpenapiFeaturesetVersion_Properties struct {
 	// Specifies list of entities
-	Entities                any
+	Entities any
+	// Configuration for computing and storing feature values ahead of time. (AI-inferred)
 	MaterializationSettings any
 	// Provisioning state of registry asset.
 	ProvisioningState any

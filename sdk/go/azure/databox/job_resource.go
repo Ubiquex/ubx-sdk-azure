@@ -4,7 +4,9 @@ package databox
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JobResource_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -25,8 +27,10 @@ type JobResource_Properties_DeliveryInfo struct {
 }
 
 type JobResource_Properties_Details_ContactDetails_NotificationPreference struct {
+	// Whether notification email(s) are sent for this order's own status updates. (AI-inferred)
 	SendNotification any
-	StageName        any
+	// The name of this processing stage. (AI-inferred)
+	StageName any
 }
 
 type JobResource_Properties_Details_ContactDetails struct {
@@ -45,66 +49,94 @@ type JobResource_Properties_Details_ContactDetails struct {
 }
 
 type JobResource_Properties_Details_CopyLogDetails struct {
+	// The category of copy log this represents. (AI-inferred)
 	CopyLogDetailsType any
 }
 
 type JobResource_Properties_Details_DataExportDetails_AccountDetails struct {
+	// The kind of storage account this transfer targets. (AI-inferred)
 	DataAccountType any
-	SharePassword   any
+	// The password used to access this device's own shares. (AI-inferred)
+	SharePassword any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails_Include struct {
-	DataAccountType  any
+	// The kind of storage account this transfer targets. (AI-inferred)
+	DataAccountType any
+	// Whether every blob in the account is transferred, rather than a filtered subset. (AI-inferred)
 	TransferAllBlobs any
+	// Whether every file in the account is transferred, rather than a filtered subset. (AI-inferred)
 	TransferAllFiles any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails struct {
+	// Whether matching content is included in, rather than excluded from, this transfer. (AI-inferred)
 	Include any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_AzureFileFilterDetails struct {
-	FilePathList   any
+	// The specific file path(s) included in this transfer. (AI-inferred)
+	FilePathList any
+	// The file name prefix(es) included in this transfer. (AI-inferred)
 	FilePrefixList any
-	FileShareList  any
+	// The specific file share(s) included in this transfer. (AI-inferred)
+	FileShareList any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_BlobFilterDetails struct {
-	BlobPathList   any
+	// The specific blob path(s) included in this transfer. (AI-inferred)
+	BlobPathList any
+	// The blob name prefix(es) included in this transfer. (AI-inferred)
 	BlobPrefixList any
-	ContainerList  any
+	// The specific container(s) included in this transfer. (AI-inferred)
+	ContainerList any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_FilterFileDetails struct {
+	// The path to the filter file restricting this transfer's own scope. (AI-inferred)
 	FilterFilePath any
+	// The format of the filter file, e.g. `AzureFile` or `BlockBlob`. (AI-inferred)
 	FilterFileType any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include struct {
+	// Filter(s) restricting which Azure Files content is transferred. (AI-inferred)
 	AzureFileFilterDetails any
-	BlobFilterDetails      any
-	DataAccountType        any
-	FilterFileDetails      any
+	// Filter(s) restricting which blob content is transferred. (AI-inferred)
+	BlobFilterDetails any
+	// The kind of storage account this transfer targets. (AI-inferred)
+	DataAccountType any
+	// Detail about the filter file restricting this transfer's own scope. (AI-inferred)
+	FilterFileDetails any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails struct {
+	// Whether matching content is included in, rather than excluded from, this transfer. (AI-inferred)
 	Include any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration struct {
-	TransferAllDetails        any
+	// Configuration for transferring every item, rather than a filtered subset. (AI-inferred)
+	TransferAllDetails any
+	// Whether this transfer includes all data or only a filtered subset. (AI-inferred)
 	TransferConfigurationType any
-	TransferFilterDetails     any
+	// Filter(s) restricting which data is included in this transfer. (AI-inferred)
+	TransferFilterDetails any
 }
 
 type JobResource_Properties_Details_DataExportDetails struct {
-	AccountDetails        any
-	LogCollectionLevel    any
+	// Detail about the destination storage account this order transfers data to. (AI-inferred)
+	AccountDetails any
+	// How much diagnostic log detail is collected for this order. (AI-inferred)
+	LogCollectionLevel any
+	// Configuration controlling which data is included in this transfer. (AI-inferred)
 	TransferConfiguration any
 }
 
 type JobResource_Properties_Details_DataImportDetails struct {
-	AccountDetails     any
+	// Detail about the destination storage account this order transfers data to. (AI-inferred)
+	AccountDetails any
+	// How much diagnostic log detail is collected for this order. (AI-inferred)
 	LogCollectionLevel any
 }
 
@@ -136,20 +168,31 @@ type JobResource_Properties_Details_DeviceErasureDetails struct {
 }
 
 type JobResource_Properties_Details_JobStages_DelayInformation struct {
-	Description    any
-	ErrorCode      any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// A machine-readable error code. (AI-inferred)
+	ErrorCode any
+	// When this issue was resolved. (AI-inferred)
 	ResolutionTime any
-	StartTime      any
-	Status         any
+	// When this event or window started. (AI-inferred)
+	StartTime any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type JobResource_Properties_Details_JobStages struct {
+	// Detail about a delay affecting this order. (AI-inferred)
 	DelayInformation any
-	DisplayName      any
-	JobStageDetails  any
-	StageName        any
-	StageStatus      any
-	StageTime        any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// Detail about this order's own current processing stage. (AI-inferred)
+	JobStageDetails any
+	// The name of this processing stage. (AI-inferred)
+	StageName any
+	// The current status of this processing stage. (AI-inferred)
+	StageStatus any
+	// When this processing stage was reached. (AI-inferred)
+	StageTime any
 }
 
 type JobResource_Properties_Details_KeyEncryptionKey_IdentityProperties_UserAssigned struct {
@@ -302,7 +345,9 @@ type JobResource_Properties_Details struct {
 }
 
 type JobResource_Properties_Error_AdditionalInfo struct {
+	// Additional detail about this result. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 

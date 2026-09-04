@@ -37,28 +37,39 @@ class FleetsFleetManagedNamespace_Properties_ManagedNamespaceProperties:
 
 @dataclasses.dataclass
 class FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector_MatchExpressions:
+    # The key of this label or taint. (AI-inferred)
     key: Any = None
+    # How this condition's own operands are compared. (AI-inferred)
     operator: Any = None
+    # The value(s) making up this field. (AI-inferred)
     values: Any = None
 
 @dataclasses.dataclass
 class FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector:
+    # The expression-based label match condition(s) making up this selector. (AI-inferred)
     match_expressions: Any = None
+    # The exact label key/value pair(s) this selector requires. (AI-inferred)
     match_labels: Any = None
 
 @dataclasses.dataclass
 class FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector_MatchExpressions:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # How this condition's own operands are compared. (AI-inferred)
     operator: Any = None
+    # The value(s) making up this field. (AI-inferred)
     values: Any = None
 
 @dataclasses.dataclass
 class FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector:
+    # The expression-based label match condition(s) making up this selector. (AI-inferred)
     match_expressions: Any = None
 
 @dataclasses.dataclass
 class FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms:
+    # Selects member cluster(s) by matching label(s), rather than by explicit name. (AI-inferred)
     label_selector: Any = None
+    # Selects member cluster(s) by matching a specific property, rather than by explicit name. (AI-inferred)
     property_selector: Any = None
 
 @dataclasses.dataclass
@@ -78,9 +89,13 @@ class FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_
 
 @dataclasses.dataclass
 class FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Tolerations:
+    # What happens to a pod that doesn't tolerate this taint. (AI-inferred)
     effect: Any = None
+    # The key of this label or taint. (AI-inferred)
     key: Any = None
+    # How this condition's own operands are compared. (AI-inferred)
     operator: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -113,7 +128,9 @@ class FleetsFleetManagedNamespace_Properties_PropagationPolicy:
 
 @dataclasses.dataclass
 class FleetsFleetManagedNamespace_Properties_Status_LastOperationError_AdditionalInfo:
+    # Additional detail about this result. (AI-inferred)
     info: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -122,10 +139,15 @@ class FleetsFleetManagedNamespace_Properties_Status_LastOperationError_Details_D
 
 @dataclasses.dataclass
 class FleetsFleetManagedNamespace_Properties_Status_LastOperationError_Details:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass

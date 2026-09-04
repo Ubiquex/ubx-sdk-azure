@@ -18,14 +18,23 @@ export interface OpenapiAutonomousDatabase_Properties_ConnectionStrings_AllConne
 }
 
 export interface OpenapiAutonomousDatabase_Properties_ConnectionStrings_Profiles {
+  /** The Oracle database service consumer group this connection uses. (AI-inferred) */
   consumerGroup?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** Whether the connection string identifies the host by IP address or hostname. (AI-inferred) */
   hostFormat?: string | Computed<string>;
+  /** Whether this resource spans multiple availability domains within its own region. (AI-inferred) */
   isRegional?: boolean | Computed<boolean>;
+  /** The network protocol used. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** Whether this connection is direct or routed through a shared session pool. (AI-inferred) */
   sessionMode?: string | Computed<string>;
+  /** The format this connection string is expressed in, e.g. long or Easy Connect. (AI-inferred) */
   syntaxFormat?: string | Computed<string>;
+  /** Whether the client, the server, or both must authenticate via TLS for this connection. (AI-inferred) */
   tlsAuthentication?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -62,6 +71,7 @@ export interface OpenapiAutonomousDatabase_Properties_ConnectionUrls {
 }
 
 export interface OpenapiAutonomousDatabase_Properties_CustomerContacts {
+  /** An email address associated with this resource. (AI-inferred) */
   email?: string | Computed<string>;
 }
 
@@ -101,12 +111,16 @@ export interface OpenapiAutonomousDatabase_Properties_RemoteDisasterRecoveryConf
 }
 
 export interface OpenapiAutonomousDatabase_Properties_ScheduledOperationsList_DayOfWeek {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface OpenapiAutonomousDatabase_Properties_ScheduledOperationsList {
+  /** The day of the week this applies to. (AI-inferred) */
   dayOfWeek?: OpenapiAutonomousDatabase_Properties_ScheduledOperationsList_DayOfWeek | Computed<OpenapiAutonomousDatabase_Properties_ScheduledOperationsList_DayOfWeek>;
+  /** When this scheduled operation is set to start. (AI-inferred) */
   scheduledStartTime?: string | Computed<string>;
+  /** When this scheduled operation is set to stop. (AI-inferred) */
   scheduledStopTime?: string | Computed<string>;
 }
 

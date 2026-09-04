@@ -4,9 +4,12 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDatabaseConnection_Properties_ConfigurationFiles struct {
+	// The literal content of this resource. (AI-inferred)
 	Contents any
+	// The name of this file. (AI-inferred)
 	FileName any
-	Type     any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiDatabaseConnection_Properties struct {

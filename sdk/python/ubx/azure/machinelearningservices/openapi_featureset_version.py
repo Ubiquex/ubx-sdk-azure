@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiFeaturesetVersion_Properties_MaterializationSettings_Notification_Webhooks:
+    # The category of event this represents. (AI-inferred)
     event_type: Any = None
+    # The kind of webhook this represents. (AI-inferred)
     webhook_type: Any = None
 
 @dataclasses.dataclass
@@ -42,6 +44,7 @@ class OpenapiFeaturesetVersion_Properties_MaterializationSettings_Schedule:
     frequency: Any = None
     # [Required] Specifies schedule interval in conjunction with frequency
     interval: Any = None
+    # The recurrence schedule this applies to. (AI-inferred)
     schedule: Any = None
 
 @dataclasses.dataclass
@@ -50,6 +53,7 @@ class OpenapiFeaturesetVersion_Properties_MaterializationSettings:
     notification: Any = None
     # DTO object representing compute resource
     resource: Any = None
+    # The recurrence schedule this applies to. (AI-inferred)
     schedule: Any = None
     # Specifies the spark compute settings
     spark_configuration: Any = None
@@ -65,6 +69,7 @@ class OpenapiFeaturesetVersion_Properties_Specification:
 class OpenapiFeaturesetVersion_Properties:
     # Specifies list of entities
     entities: Any = None
+    # Configuration for computing and storing feature values ahead of time. (AI-inferred)
     materialization_settings: Any = None
     # Provisioning state of registry asset.
     provisioning_state: Any = None

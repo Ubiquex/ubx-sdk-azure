@@ -24,6 +24,7 @@ class PrivatelinksResourceManagementPrivateLinkAttrs:
     location: Any = None
     # The rmpl Name.
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # The operation type.
     type: Any = None

@@ -4,14 +4,20 @@ package applicationinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkbooksWorkbook_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
 type WorkbooksWorkbook_Identity struct {
-	PrincipalId            any
-	TenantId               any
-	Type                   any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
+	PrincipalId any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The user-assigned managed identity/identities associated with this workbook, keyed by resource ID. (AI-inferred)
 	UserAssignedIdentities any
 }
 

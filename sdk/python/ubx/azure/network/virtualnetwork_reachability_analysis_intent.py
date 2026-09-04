@@ -12,6 +12,7 @@ class VirtualnetworkReachabilityAnalysisIntent_Properties_IpTraffic:
     destination_ips: Any = None
     # The destination ports of the traffic.
     destination_ports: Any = None
+    # The network protocol(s) this applies to. (AI-inferred)
     protocols: Any = None
     # List of source IP addresses of the traffic..
     source_ips: Any = None
@@ -20,6 +21,7 @@ class VirtualnetworkReachabilityAnalysisIntent_Properties_IpTraffic:
 
 @dataclasses.dataclass
 class VirtualnetworkReachabilityAnalysisIntent_Properties:
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
     # Destination resource id to verify the reachability path of.
     destination_resource_id: Any = None

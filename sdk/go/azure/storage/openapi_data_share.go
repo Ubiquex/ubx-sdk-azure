@@ -4,13 +4,18 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDataShare_Properties_AccessPolicies struct {
-	Permission  any
+	// The access permission granted, e.g. read or write. (AI-inferred)
+	Permission any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
-	TenantId    any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
 }
 
 type OpenapiDataShare_Properties_Assets struct {
-	AssetPath   any
+	// The path to this asset within the associated repository. (AI-inferred)
+	AssetPath any
+	// A human-readable name for this resource. (AI-inferred)
 	DisplayName any
 }
 

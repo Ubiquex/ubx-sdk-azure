@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ConfigurationServiceResource_Properties_Instances {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
@@ -16,18 +18,31 @@ export interface ConfigurationServiceResource_Properties_ResourceRequests {
 }
 
 export interface ConfigurationServiceResource_Properties_Settings_GitProperty_Repositories {
+  /** A reference to the CA certificate resource used to validate this connection. (AI-inferred) */
   caCertResourceId?: string | Computed<string>;
+  /** Which Git client implementation is used to fetch this repository. (AI-inferred) */
   gitImplementation?: string | Computed<string>;
+  /** The SSH host key used to verify this Git server's own identity. (AI-inferred) */
   hostKey?: string | Computed<string>;
+  /** The algorithm `host_key` uses. (AI-inferred) */
   hostKeyAlgorithm?: string | Computed<string>;
+  /** A human-readable label for this item. (AI-inferred) */
   label?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The password credential used to authenticate. (AI-inferred) */
   password?: string | Computed<string>;
+  /** The pattern(s) this rule matches. (AI-inferred) */
   patterns?: string[] | Computed<string[]>;
+  /** The private key credential used to authenticate. (AI-inferred) */
   privateKey?: string | Computed<string>;
+  /** The path(s) within the repository searched for configuration files. (AI-inferred) */
   searchPaths?: string[] | Computed<string[]>;
+  /** Whether the Git server's own host key must strictly match `host_key` before connecting. (AI-inferred) */
   strictHostKeyChecking?: boolean | Computed<boolean>;
+  /** A resource URI. (AI-inferred) */
   uri?: string | Computed<string>;
+  /** The username used to authenticate. (AI-inferred) */
   username?: string | Computed<string>;
 }
 

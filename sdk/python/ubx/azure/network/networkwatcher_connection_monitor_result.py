@@ -17,46 +17,66 @@ class NetworkwatcherConnectionMonitorResult_Properties_Destination:
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter_Items:
+    # The network address this applies to. (AI-inferred)
     address: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter:
+    # The individual entries making up this collection. (AI-inferred)
     items: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_Endpoints_LocationDetails:
+    # The Azure region this applies to. (AI-inferred)
     region: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_Exclude:
+    # The network address this applies to. (AI-inferred)
     address: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope:
+    # The item(s) excluded from this scope. (AI-inferred)
     exclude: Any = None
+    # The item(s) included in this scope. (AI-inferred)
     include: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_Endpoints:
+    # The network address this applies to. (AI-inferred)
     address: Any = None
+    # How thoroughly this connectivity test's own path is probed. (AI-inferred)
     coverage_level: Any = None
+    # Restricts this result to matching item(s). (AI-inferred)
     filter: Any = None
+    # Detail about the physical location this test point is running from. (AI-inferred)
     location_details: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
+    # What this configuration's own scope covers. (AI-inferred)
     scope: Any = None
+    # The identifier of the associated Azure subscription. (AI-inferred)
     subscription_id: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_Outputs_WorkspaceSettings:
+    # The full Azure Resource Manager resource ID of the target Log Analytics workspace. (AI-inferred)
     workspace_resource_id: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_Outputs:
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The Log Analytics workspace this monitor's own results are sent to. (AI-inferred)
     workspace_settings: Any = None
 
 @dataclasses.dataclass
@@ -68,50 +88,77 @@ class NetworkwatcherConnectionMonitorResult_Properties_Source:
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration_RequestHeaders:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration:
+    # The HTTP method this applies to. (AI-inferred)
     method: Any = None
+    # The URL path this applies to. (AI-inferred)
     path: Any = None
+    # A TCP or UDP port number. (AI-inferred)
     port: Any = None
+    # Whether HTTPS is preferred over HTTP when testing this endpoint. (AI-inferred)
     prefer_https: Any = None
+    # The HTTP header(s) sent with this test request. (AI-inferred)
     request_headers: Any = None
+    # The HTTP status code range(s) considered a successful result. (AI-inferred)
     valid_status_code_ranges: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_IcmpConfiguration:
+    # Whether hop-by-hop trace route data is excluded from this connectivity test's own result. (AI-inferred)
     disable_trace_route: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_SuccessThreshold:
+    # The percentage of health checks that failed within this test's own reporting interval. (AI-inferred)
     checks_failed_percent: Any = None
+    # The observed round-trip latency, in milliseconds. (AI-inferred)
     round_trip_time_ms: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_TcpConfiguration:
+    # How the destination port is chosen when none is explicitly specified. (AI-inferred)
     destination_port_behavior: Any = None
+    # Whether hop-by-hop trace route data is excluded from this connectivity test's own result. (AI-inferred)
     disable_trace_route: Any = None
+    # A TCP or UDP port number. (AI-inferred)
     port: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations:
+    # Configuration specific to an HTTP-based connectivity test. (AI-inferred)
     http_configuration: Any = None
+    # Configuration specific to an ICMP-based connectivity test. (AI-inferred)
     icmp_configuration: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Whether IPv4 or IPv6 is preferred for this test. (AI-inferred)
     preferred_ipversion: Any = None
+    # The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
     protocol: Any = None
+    # The threshold that must be met for this test to be considered successful. (AI-inferred)
     success_threshold: Any = None
+    # Configuration specific to a TCP-based connectivity test. (AI-inferred)
     tcp_configuration: Any = None
+    # How often, in seconds, this test runs. (AI-inferred)
     test_frequency_sec: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResult_Properties_TestGroups:
+    # The destination(s) this test evaluates connectivity to. (AI-inferred)
     destinations: Any = None
+    # Whether this feature is turned off. (AI-inferred)
     disable: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The source(s) this test evaluates connectivity from. (AI-inferred)
     sources: Any = None
+    # The test configuration(s) making up this connection monitor. (AI-inferred)
     test_configurations: Any = None
 
 @dataclasses.dataclass

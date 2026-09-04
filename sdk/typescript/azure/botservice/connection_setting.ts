@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ConnectionSetting_Properties_Parameters {
+  /** The name of this connection setting parameter. (AI-inferred) */
   key?: string | Computed<string>;
+  /** The value of this connection setting parameter. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

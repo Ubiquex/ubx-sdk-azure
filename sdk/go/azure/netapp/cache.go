@@ -4,21 +4,36 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Cache_Properties_ExportPolicy_Rules struct {
-	AllowedClients      any
-	ChownMode           any
-	Cifs                any
-	HasRootAccess       any
-	Kerberos5ReadOnly   any
-	Kerberos5ReadWrite  any
-	Kerberos5iReadOnly  any
+	// The client IP address range(s), in CIDR notation, permitted to access this export. (AI-inferred)
+	AllowedClients any
+	// Who is permitted to change file ownership on this volume, e.g. only root or any user. (AI-inferred)
+	ChownMode any
+	// Whether the SMB/CIFS protocol is enabled for this volume. (AI-inferred)
+	Cifs any
+	// Whether this client is granted root access. (AI-inferred)
+	HasRootAccess any
+	// Whether Kerberos v5 authenticated clients are granted read-only access. (AI-inferred)
+	Kerberos5ReadOnly any
+	// Whether Kerberos v5 authenticated clients are granted read-write access. (AI-inferred)
+	Kerberos5ReadWrite any
+	// Whether Kerberos v5 with integrity checking authenticated clients are granted read-only access. (AI-inferred)
+	Kerberos5iReadOnly any
+	// Whether Kerberos v5 with integrity checking authenticated clients are granted read-write access. (AI-inferred)
 	Kerberos5iReadWrite any
-	Kerberos5pReadOnly  any
+	// Whether Kerberos v5 with privacy protection authenticated clients are granted read-only access. (AI-inferred)
+	Kerberos5pReadOnly any
+	// Whether Kerberos v5 with privacy protection authenticated clients are granted read-write access. (AI-inferred)
 	Kerberos5pReadWrite any
-	Nfsv3               any
-	Nfsv41              any
-	RuleIndex           any
-	UnixReadOnly        any
-	UnixReadWrite       any
+	// Whether the NFSv3 protocol is enabled for this volume. (AI-inferred)
+	Nfsv3 any
+	// Whether the NFSv4.1 protocol is enabled for this volume. (AI-inferred)
+	Nfsv41 any
+	// This rule's own relative evaluation order. (AI-inferred)
+	RuleIndex any
+	// Whether UNIX clients are granted read-only access. (AI-inferred)
+	UnixReadOnly any
+	// Whether UNIX clients are granted read-write access. (AI-inferred)
+	UnixReadWrite any
 }
 
 type Cache_Properties_ExportPolicy struct {
@@ -27,8 +42,11 @@ type Cache_Properties_ExportPolicy struct {
 }
 
 type Cache_Properties_MountTargets struct {
-	IpAddress     any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// A unique identifier for this volume's own mount target. (AI-inferred)
 	MountTargetId any
+	// The fully qualified domain name of the SMB server hosting this volume. (AI-inferred)
 	SmbServerFqdn any
 }
 

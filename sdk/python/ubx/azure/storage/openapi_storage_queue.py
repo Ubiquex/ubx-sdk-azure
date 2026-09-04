@@ -20,10 +20,12 @@ _OpenapiStorageQueue_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiStorageQueueConfig:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiStorageQueueAttrs:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 OpenapiStorageQueue = ubx.ResourceBinding(

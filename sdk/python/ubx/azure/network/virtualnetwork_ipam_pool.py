@@ -10,6 +10,7 @@ import ubx_sdk as ubx
 class VirtualnetworkIpamPool_Properties:
     # List of IP address prefixes of the resource.
     address_prefixes: Any = None
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
     # String representing a friendly name for the resource.
     display_name: Any = None

@@ -2,28 +2,39 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface PartnerNamespace_Properties_InboundIpRules {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The IP address range, in CIDR notation, this rule matches. (AI-inferred) */
   ipMask?: string | Computed<string>;
 }
 
 export interface PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface PartnerNamespace_Properties_PrivateEndpointConnections_Properties {
+  /** The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred) */
   groupIds?: string[] | Computed<string[]>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface PartnerNamespace_Properties_PrivateEndpointConnections {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: PartnerNamespace_Properties_PrivateEndpointConnections_Properties | Computed<PartnerNamespace_Properties_PrivateEndpointConnections_Properties>;
 }
 

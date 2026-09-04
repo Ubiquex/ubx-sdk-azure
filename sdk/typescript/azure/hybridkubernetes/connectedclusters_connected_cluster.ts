@@ -20,16 +20,24 @@ export interface ConnectedclustersConnectedCluster_Properties_AadProfile {
 }
 
 export interface ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_AgentErrors {
+  /** The specific software component this applies to. (AI-inferred) */
   component?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** How serious this event is. (AI-inferred) */
   severity?: string | Computed<string>;
+  /** When this event occurred. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
 export interface ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_SystemComponents {
+  /** The version currently installed. (AI-inferred) */
   currentVersion?: string | Computed<string>;
+  /** The major version component this applies to. (AI-inferred) */
   majorVersion?: number | Computed<number>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The version explicitly requested by the caller, overriding the default. (AI-inferred) */
   userSpecifiedVersion?: string | Computed<string>;
 }
 
@@ -47,8 +55,11 @@ export interface ConnectedclustersConnectedCluster_Properties_ArcAgentProfile {
 }
 
 export interface ConnectedclustersConnectedCluster_Properties_ArcAgentryConfigurations {
+  /** The specific feature this applies to. (AI-inferred) */
   feature?: string | Computed<string>;
+  /** Extension setting(s) encrypted at rest and never returned in subsequent reads. (AI-inferred) */
   protectedSettings?: Record<string, string> | Computed<Record<string, string>>;
+  /** The setting(s) configuring this extension. (AI-inferred) */
   settings?: Record<string, string> | Computed<Record<string, string>>;
 }
 
@@ -90,6 +101,7 @@ export interface ConnectedclustersConnectedCluster_Properties {
   distribution?: string | Computed<string>;
   /** The Kubernetes distribution version on this connected cluster. */
   distributionVersion?: string | Computed<string>;
+  /** Configuration for the gateway used to connect this cluster back to Azure. (AI-inferred) */
   gateway?: ConnectedclustersConnectedCluster_Properties_Gateway | Computed<ConnectedclustersConnectedCluster_Properties_Gateway>;
   /** The infrastructure on which the Kubernetes cluster represented by this connected cluster is running on. */
   infrastructure?: string | Computed<string>;

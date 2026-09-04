@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpoint:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
@@ -27,6 +28,7 @@ class OpenapiRemotePrivateEndpointConnectionArmresource_Properties:
     private_endpoint: Any = None
     # The state of a private link connection
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 _OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpointFields = {

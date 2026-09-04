@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class SreagentAgentSpace_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -33,14 +35,20 @@ class SreagentAgentSpace_Properties_ComplianceStatus:
 
 @dataclasses.dataclass
 class SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions_ActionParameters:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions:
+    # The name identifying the specific automated action this policy permits the agent to take. (AI-inferred)
     action_name: Any = None
+    # The parameter(s) configuring how this permitted action is executed. (AI-inferred)
     action_parameters: Any = None
+    # Whether a human must approve this action before the agent is allowed to run it. (AI-inferred)
     approval_required: Any = None
+    # The extension or plugin this permitted action belongs to. (AI-inferred)
     extension: Any = None
 
 @dataclasses.dataclass

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenShiftCluster_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -47,8 +49,11 @@ export interface OpenShiftCluster_Properties_ConsoleProfile {
 }
 
 export interface OpenShiftCluster_Properties_IngressProfiles {
+  /** An IP address. (AI-inferred) */
   ip?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Whether this endpoint is publicly or privately reachable. (AI-inferred) */
   visibility?: string | Computed<string>;
 }
 
@@ -64,6 +69,7 @@ export interface OpenShiftCluster_Properties_MasterProfile {
 }
 
 export interface OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIps {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
@@ -93,8 +99,11 @@ export interface OpenShiftCluster_Properties_NetworkProfile {
 }
 
 export interface OpenShiftCluster_Properties_PlatformWorkloadIdentityProfile_PlatformWorkloadIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** The Microsoft Entra ID object identifier this applies to. (AI-inferred) */
   objectId?: string | Computed<string>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
 }
 
@@ -113,12 +122,19 @@ export interface OpenShiftCluster_Properties_ServicePrincipalProfile {
 }
 
 export interface OpenShiftCluster_Properties_WorkerProfiles {
+  /** How many of this item there are. (AI-inferred) */
   count?: number | Computed<number>;
+  /** A reference to the disk encryption set used to encrypt this node's own disks. (AI-inferred) */
   diskEncryptionSetId?: string | Computed<string>;
+  /** The size of this disk, in gibibytes. (AI-inferred) */
   diskSizeGb?: number | Computed<number>;
+  /** Whether encryption of temporary and cache disk data at the host is enabled for this node. (AI-inferred) */
   encryptionAtHost?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A reference to the subnet this resource is deployed into. (AI-inferred) */
   subnetId?: string | Computed<string>;
+  /** The VM size this node is provisioned as. (AI-inferred) */
   vmSize?: string | Computed<string>;
 }
 

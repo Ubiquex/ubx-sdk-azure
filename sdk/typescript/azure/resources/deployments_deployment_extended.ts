@@ -78,11 +78,14 @@ export interface DeploymentsDeploymentExtended_Properties_Extensions {
 }
 
 export interface DeploymentsDeploymentExtended_Properties_ExternalInputDefinitions {
+  /** The configuration defining how this external input is sourced and validated. (AI-inferred) */
   config?: unknown | Computed<unknown>;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
 }
 
 export interface DeploymentsDeploymentExtended_Properties_ExternalInputs {
+  /** The resolved value supplied for this external input. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 
@@ -104,8 +107,11 @@ export interface DeploymentsDeploymentExtended_Properties_OutputResources {
 }
 
 export interface DeploymentsDeploymentExtended_Properties_Parameters {
+  /** A template expression evaluated to produce this parameter's own value. (AI-inferred) */
   expression?: string | Computed<string>;
+  /** A reference to a Key Vault secret this parameter's own value is sourced from. (AI-inferred) */
   reference?: DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReference | Computed<DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReference>;
+  /** The literal value supplied for this parameter. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 

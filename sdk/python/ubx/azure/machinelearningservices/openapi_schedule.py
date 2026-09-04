@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiSchedule_Properties_Action:
+    # The category of action this represents. (AI-inferred)
     action_type: Any = None
 
 @dataclasses.dataclass
@@ -18,16 +19,20 @@ class OpenapiSchedule_Properties_Trigger:
     start_time: Any = None
     # Specifies time zone in which the schedule runs. TimeZone should follow Windows time zone format. Refer: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11
     time_zone: Any = None
+    # The category of trigger this represents, e.g. recurring or cron. (AI-inferred)
     trigger_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiSchedule_Properties:
+    # The action to perform. (AI-inferred)
     action: Any = None
     # Display name of schedule.
     display_name: Any = None
     # Is the schedule enabled?
     is_enabled: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The condition or schedule causing this to run. (AI-inferred)
     trigger: Any = None
 
 _OpenapiSchedule_Properties_ActionFields = {

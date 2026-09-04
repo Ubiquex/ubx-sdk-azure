@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiServerlessEndpoint_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -35,13 +37,17 @@ export interface OpenapiServerlessEndpoint_Properties_ModelSettings {
 }
 
 export interface OpenapiServerlessEndpoint_Properties {
+  /** The authentication mode used, e.g. key-based or Microsoft Entra ID token-based. (AI-inferred) */
   authMode: string | Computed<string>;
+  /** Configuration for content safety filtering. (AI-inferred) */
   contentSafety?: OpenapiServerlessEndpoint_Properties_ContentSafety | Computed<OpenapiServerlessEndpoint_Properties_ContentSafety>;
   /** State of the Serverless Endpoint. */
   endpointState?: string | Computed<string>;
+  /** The endpoint used to send inference requests to this deployment. (AI-inferred) */
   inferenceEndpoint?: OpenapiServerlessEndpoint_Properties_InferenceEndpoint | Computed<OpenapiServerlessEndpoint_Properties_InferenceEndpoint>;
   /** The MarketplaceSubscription Azure ID associated to this ServerlessEndpoint. */
   marketplaceSubscriptionId?: string | Computed<string>;
+  /** Configuration specific to the deployed model. (AI-inferred) */
   modelSettings?: OpenapiServerlessEndpoint_Properties_ModelSettings | Computed<OpenapiServerlessEndpoint_Properties_ModelSettings>;
   /** State of endpoint provisioning. */
   provisioningState?: string | Computed<string>;
@@ -126,6 +132,7 @@ export interface OpenapiServerlessEndpointConfig {
   kind?: string | Computed<string>;
   /** The geo-location where the resource lives */
   location: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiServerlessEndpoint_Properties | Computed<OpenapiServerlessEndpoint_Properties>;
   /** The resource model definition representing SKU */
   sku?: OpenapiServerlessEndpoint_Sku | Computed<OpenapiServerlessEndpoint_Sku>;
@@ -142,6 +149,7 @@ export interface OpenapiServerlessEndpointAttrs {
   kind: string;
   /** The geo-location where the resource lives */
   location: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiServerlessEndpoint_Properties;
   /** The resource model definition representing SKU */
   sku: OpenapiServerlessEndpoint_Sku;

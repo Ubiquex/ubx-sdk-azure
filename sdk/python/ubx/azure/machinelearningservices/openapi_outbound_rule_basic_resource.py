@@ -12,6 +12,7 @@ class OpenapiOutboundRuleBasicResource_Properties:
     category: Any = None
     # Error information about an outbound rule of a machine learning workspace if RuleStatus is failed.
     error_information: Any = None
+    # The name(s) of the parent rule(s) this suggestion or association derives from. (AI-inferred)
     parent_rule_names: Any = None
     # Type of a managed network Outbound Rule of a machine learning workspace.
     status: Any = None

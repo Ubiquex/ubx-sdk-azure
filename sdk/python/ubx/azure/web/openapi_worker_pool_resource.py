@@ -21,8 +21,11 @@ class OpenapiWorkerPoolResource_Properties:
 
 @dataclasses.dataclass
 class OpenapiWorkerPoolResource_Sku_Capabilities:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A machine-readable reason code. (AI-inferred)
     reason: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

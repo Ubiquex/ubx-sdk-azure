@@ -8,10 +8,15 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualwanHubRouteTable_Properties_Routes:
+    # The category of destination this rule applies to. (AI-inferred)
     destination_type: Any = None
+    # The destination(s) this rule applies to. (AI-inferred)
     destinations: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Where traffic matching this route is sent next. (AI-inferred)
     next_hop: Any = None
+    # The kind of next hop this route uses, e.g. `VirtualAppliance`, `VnetLocal`, `Internet`, or `None`. (AI-inferred)
     next_hop_type: Any = None
 
 @dataclasses.dataclass

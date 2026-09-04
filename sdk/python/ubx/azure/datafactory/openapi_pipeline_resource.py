@@ -8,22 +8,33 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiPipelineResource_Properties_Activities_DependsOn:
+    # A reference to the pipeline activity this applies to. (AI-inferred)
     activity: Any = None
+    # The condition(s) (e.g. `Succeeded`, `Failed`) a dependency must satisfy for this activity to run. (AI-inferred)
     dependency_conditions: Any = None
 
 @dataclasses.dataclass
 class OpenapiPipelineResource_Properties_Activities_UserProperties:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiPipelineResource_Properties_Activities:
+    # The activity/activities that must complete before this one runs. (AI-inferred)
     depends_on: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The status applied to this activity when it's skipped due to an inactive trigger. (AI-inferred)
     on_inactive_mark_as: Any = None
+    # The current status of this resource. (AI-inferred)
     state: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # Caller-defined key/value property(s) surfaced in the monitoring view for this activity. (AI-inferred)
     user_properties: Any = None
 
 @dataclasses.dataclass
@@ -33,7 +44,9 @@ class OpenapiPipelineResource_Properties_Folder:
 
 @dataclasses.dataclass
 class OpenapiPipelineResource_Properties_Parameters:
+    # The value used when this field is left unset. (AI-inferred)
     default_value: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

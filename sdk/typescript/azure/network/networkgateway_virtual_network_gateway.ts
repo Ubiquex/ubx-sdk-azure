@@ -9,7 +9,9 @@ export interface NetworkgatewayVirtualNetworkGateway_ExtendedLocation {
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -32,13 +34,18 @@ export interface NetworkgatewayVirtualNetworkGateway_Properties_AutoScaleConfigu
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_AutoScaleConfiguration {
+  /** The permitted lower and upper bound for this value. (AI-inferred) */
   bounds?: NetworkgatewayVirtualNetworkGateway_Properties_AutoScaleConfiguration_Bounds | Computed<NetworkgatewayVirtualNetworkGateway_Properties_AutoScaleConfiguration_Bounds>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_BgpSettings_BgpPeeringAddresses {
+  /** Caller-chosen BGP peering IP addresses to use for this connection, instead of Azure's own auto-allocated defaults. (AI-inferred) */
   customBgpIpAddresses?: string[] | Computed<string[]>;
+  /** Output only. The BGP peering IP address(es) Azure auto-allocated for this connection. (AI-inferred) */
   defaultBgpIpAddresses?: string[] | Computed<string[]>;
+  /** A reference to the IP configuration this applies to. (AI-inferred) */
   ipconfigurationId?: string | Computed<string>;
+  /** Output only. The public IP address(es) of this VPN gateway's own tunnel endpoint(s). (AI-inferred) */
   tunnelIpAddresses?: string[] | Computed<string[]>;
 }
 
@@ -54,12 +61,16 @@ export interface NetworkgatewayVirtualNetworkGateway_Properties_BgpSettings {
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations {
+  /** Output only. The specific address ranges actually allocated from this pool. (AI-inferred) */
   allocatedAddressPrefixes?: string[] | Computed<string[]>;
+  /** How many IP addresses to allocate from this pool. (AI-inferred) */
   numberOfIpAddresses?: string | Computed<string>;
+  /** A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred) */
   pool?: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool | Computed<NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool>;
 }
 
@@ -71,35 +82,53 @@ export interface NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes {
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurations_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool | Computed<NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool | Computed<NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurations_Properties | Computed<NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurations_Properties>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties_ExternalMappings {
+  /** The virtual network's own address range(s), in CIDR notation. (AI-inferred) */
   addressSpace?: string | Computed<string>;
+  /** A range of ports, e.g. `1000-2000`. (AI-inferred) */
   portRange?: string | Computed<string>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties {
+  /** Address mapping(s) this configuration exposes to external systems. (AI-inferred) */
   externalMappings?: NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties_ExternalMappings[] | Computed<NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties_ExternalMappings[]>;
+  /** Address mapping(s) used internally by this configuration. (AI-inferred) */
   internalMappings?: NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties_ExternalMappings[] | Computed<NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties_ExternalMappings[]>;
+  /** A reference to the IP configuration this applies to. (AI-inferred) */
   ipConfigurationId?: string | Computed<string>;
+  /** The operating mode this configuration uses. (AI-inferred) */
   mode?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_NatRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties | Computed<NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties>;
 }
 
@@ -122,73 +151,111 @@ export interface NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGa
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_Properties_PolicyMembers {
+  /** The kind of attribute this policy rule matches on. (AI-inferred) */
   attributeType?: string | Computed<string>;
+  /** The value this policy rule matches against. (AI-inferred) */
   attributeValue?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_Properties {
+  /** Whether this is the default configuration used when none is explicitly specified. (AI-inferred) */
   isDefault?: boolean | Computed<boolean>;
+  /** The member(s) this policy group applies to. (AI-inferred) */
   policyMembers?: NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_Properties_PolicyMembers[] | Computed<NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_Properties_PolicyMembers[]>;
+  /** The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Point-to-site client connection configuration(s) available on this gateway. (AI-inferred) */
   vngClientConnectionConfigurations?: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool[] | Computed<NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool[]>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_Properties | Computed<NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_Properties>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_RadiusServers {
+  /** The IP address of the RADIUS authentication server. (AI-inferred) */
   radiusServerAddress?: string | Computed<string>;
+  /** The relative priority of this RADIUS server among several configured. (AI-inferred) */
   radiusServerScore?: number | Computed<number>;
+  /** The shared secret used to authenticate to this RADIUS server. (AI-inferred) */
   radiusServerSecret?: string | Computed<string>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurations_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Point-to-site configuration policy group(s) this virtual network gateway offers. (AI-inferred) */
   virtualNetworkGatewayPolicyGroups?: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool[] | Computed<NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool[]>;
+  /** The IP address pool point-to-site VPN clients are assigned addresses from. (AI-inferred) */
   vpnClientAddressPool?: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes | Computed<NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurations_Properties | Computed<NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurations_Properties>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientIpsecPolicies {
+  /** The Diffie-Hellman group used for IKE Phase 1 key exchange, e.g. `DHGroup14` or `DHGroup24`. (AI-inferred) */
   dhGroup?: string | Computed<string>;
+  /** The encryption algorithm used for IKE Phase 1 (establishing the secure channel itself), e.g. `AES256`. (AI-inferred) */
   ikeEncryption?: string | Computed<string>;
+  /** The integrity (hashing) algorithm used for IKE Phase 1, e.g. `SHA384`. (AI-inferred) */
   ikeIntegrity?: string | Computed<string>;
+  /** The encryption algorithm used for IKE Phase 2 (the actual IPsec data tunnel), e.g. `AES256`. (AI-inferred) */
   ipsecEncryption?: string | Computed<string>;
+  /** The integrity (hashing) algorithm used for IKE Phase 2, e.g. `SHA256`. (AI-inferred) */
   ipsecIntegrity?: string | Computed<string>;
+  /** The Perfect Forward Secrecy group used when establishing a new IKE Phase 2 security association, or `None` to disable PFS. (AI-inferred) */
   pfsGroup?: string | Computed<string>;
+  /** The IPsec security association's own data-volume lifetime, in kilobytes -- the tunnel rekeys once either this or `sa_life_time_seconds` is reached. (AI-inferred) */
   saDataSizeKilobytes?: number | Computed<number>;
+  /** The IPsec security association's own time-based lifetime, in seconds -- the tunnel rekeys once either this or `sa_data_size_kilobytes` is reached. (AI-inferred) */
   saLifeTimeSeconds?: number | Computed<number>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificates_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A cryptographic thumbprint of this certificate. (AI-inferred) */
   thumbprint?: string | Computed<string>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificates {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificates_Properties | Computed<NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificates_Properties>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificates_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The base64-encoded public certificate data used to authenticate a point-to-site VPN client. (AI-inferred) */
   publicCertData?: string | Computed<string>;
 }
 
 export interface NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificates {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificates_Properties | Computed<NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificates_Properties>;
 }
 

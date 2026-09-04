@@ -4,11 +4,16 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanHubRouteTable_Properties_Routes struct {
+	// The category of destination this rule applies to. (AI-inferred)
 	DestinationType any
-	Destinations    any
-	Name            any
-	NextHop         any
-	NextHopType     any
+	// The destination(s) this rule applies to. (AI-inferred)
+	Destinations any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Where traffic matching this route is sent next. (AI-inferred)
+	NextHop any
+	// The kind of next hop this route uses, e.g. `VirtualAppliance`, `VnetLocal`, `Internet`, or `None`. (AI-inferred)
+	NextHopType any
 }
 
 type VirtualwanHubRouteTable_Properties struct {

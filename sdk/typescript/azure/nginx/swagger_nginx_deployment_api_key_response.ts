@@ -37,12 +37,15 @@ export interface SwaggerNginxDeploymentApiKeyResponseConfig {
 }
 
 export interface SwaggerNginxDeploymentApiKeyResponseAttrs {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id: string;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name: string;
   /** Nginx Deployment Api Key Request Properties */
   properties: SwaggerNginxDeploymentApiKeyResponse_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: SwaggerNginxDeploymentApiKeyResponse_SystemData;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type: string;
 }
 

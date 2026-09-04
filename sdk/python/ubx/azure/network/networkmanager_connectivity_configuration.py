@@ -8,9 +8,13 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class NetworkmanagerConnectivityConfiguration_Properties_AppliesToGroups:
+    # Whether direct connectivity is established between all members of this network group. (AI-inferred)
     group_connectivity: Any = None
+    # Whether this connectivity configuration spans multiple regions. (AI-inferred)
     is_global: Any = None
+    # A reference to the network group this applies to. (AI-inferred)
     network_group_id: Any = None
+    # Whether traffic between spoke virtual networks is routed through the hub's own gateway. (AI-inferred)
     use_hub_gateway: Any = None
 
 @dataclasses.dataclass
@@ -24,7 +28,9 @@ class NetworkmanagerConnectivityConfiguration_Properties_ConnectivityCapabilitie
 
 @dataclasses.dataclass
 class NetworkmanagerConnectivityConfiguration_Properties_Hubs:
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
+    # The category of resource this applies to. (AI-inferred)
     resource_type: Any = None
 
 @dataclasses.dataclass

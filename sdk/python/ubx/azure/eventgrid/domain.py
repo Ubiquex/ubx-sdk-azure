@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Domain_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,9 +26,13 @@ class Domain_Identity:
 
 @dataclasses.dataclass
 class Domain_Properties_EventTypeInfo_InlineEventTypes:
+    # A URL pointing to the schema describing this event's own data payload. (AI-inferred)
     data_schema_url: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # A URL pointing to documentation for this event type. (AI-inferred)
     documentation_url: Any = None
 
 @dataclasses.dataclass
@@ -38,7 +44,9 @@ class Domain_Properties_EventTypeInfo:
 
 @dataclasses.dataclass
 class Domain_Properties_InboundIpRules:
+    # The action to perform. (AI-inferred)
     action: Any = None
+    # The IP address range, in CIDR notation, this rule matches. (AI-inferred)
     ip_mask: Any = None
 
 @dataclasses.dataclass
@@ -48,23 +56,32 @@ class Domain_Properties_InputSchemaMapping:
 
 @dataclasses.dataclass
 class Domain_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class Domain_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class Domain_Properties_PrivateEndpointConnections_Properties:
+    # The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
     group_ids: Any = None
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class Domain_Properties_PrivateEndpointConnections:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

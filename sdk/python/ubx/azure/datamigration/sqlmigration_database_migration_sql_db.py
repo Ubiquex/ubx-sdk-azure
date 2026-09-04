@@ -8,16 +8,27 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class SqlmigrationDatabaseMigrationSqlDb_Properties_MigrationStatusDetails_ListOfCopyProgressDetails:
+    # How long this copy operation took. (AI-inferred)
     copy_duration: Any = None
+    # When this copy operation started. (AI-inferred)
     copy_start: Any = None
+    # The observed data transfer rate for this copy operation. (AI-inferred)
     copy_throughput: Any = None
+    # The amount of data read so far. (AI-inferred)
     data_read: Any = None
+    # The amount of data written so far. (AI-inferred)
     data_written: Any = None
+    # How data is partitioned for parallel copying during migration. (AI-inferred)
     parallel_copy_type: Any = None
+    # The number of rows copied so far. (AI-inferred)
     rows_copied: Any = None
+    # The number of rows read so far. (AI-inferred)
     rows_read: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The name of this table. (AI-inferred)
     table_name: Any = None
+    # The number of parallel copy operation(s) actually used. (AI-inferred)
     used_parallel_copies: Any = None
 
 @dataclasses.dataclass

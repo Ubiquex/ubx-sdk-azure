@@ -4,25 +4,36 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiVault_Properties_AccessPolicies_Permissions struct {
+	// The permission(s) this access policy grants over certificates. (AI-inferred)
 	Certificates any
-	Keys         any
-	Secrets      any
-	Storage      any
+	// The permission(s) this access policy grants over keys. (AI-inferred)
+	Keys any
+	// The permission(s) this access policy grants over secrets. (AI-inferred)
+	Secrets any
+	// The permission(s) this access policy grants over managed storage accounts. (AI-inferred)
+	Storage any
 }
 
 type OpenapiVault_Properties_AccessPolicies struct {
+	// The application ID this access policy applies to. (AI-inferred)
 	ApplicationId any
-	ObjectId      any
-	Permissions   any
-	TenantId      any
+	// The Microsoft Entra ID object identifier this access policy applies to. (AI-inferred)
+	ObjectId any
+	// The permission(s) this access policy grants. (AI-inferred)
+	Permissions any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
 }
 
 type OpenapiVault_Properties_NetworkAcls_IpRules struct {
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type OpenapiVault_Properties_NetworkAcls_VirtualNetworkRules struct {
-	Id                               any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// Whether this rule is accepted even if the referenced subnet doesn't yet have the required service endpoint enabled. (AI-inferred)
 	IgnoreMissingVnetServiceEndpoint any
 }
 
@@ -38,24 +49,34 @@ type OpenapiVault_Properties_NetworkAcls struct {
 }
 
 type OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type OpenapiVault_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint                   any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type OpenapiVault_Properties_PrivateEndpointConnections struct {
-	Etag       any
-	Id         any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

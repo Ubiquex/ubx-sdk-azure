@@ -4,12 +4,18 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkInboundSecurityRule_Properties_Rules struct {
-	AppliesOn             any
-	DestinationPortRange  any
+	// The interface or direction this rule applies on. (AI-inferred)
+	AppliesOn any
+	// The destination port range this rule matches, e.g. `80` or `1000-2000`. (AI-inferred)
+	DestinationPortRange any
+	// The destination port ranges this rule matches, when more than one applies. (AI-inferred)
 	DestinationPortRanges any
-	Name                  any
-	Protocol              any
-	SourceAddressPrefix   any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The source IP address range (CIDR) or tag this rule matches, e.g. `10.0.0.0/24` or `Internet`. (AI-inferred)
+	SourceAddressPrefix any
 }
 
 type VirtualnetworkInboundSecurityRule_Properties struct {

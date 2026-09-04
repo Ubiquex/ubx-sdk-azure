@@ -8,13 +8,18 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiDataShare_Properties_AccessPolicies:
+    # The access permission granted, e.g. read or write. (AI-inferred)
     permission: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiDataShare_Properties_Assets:
+    # The path to this asset within the associated repository. (AI-inferred)
     asset_path: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
 
 @dataclasses.dataclass

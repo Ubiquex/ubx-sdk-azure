@@ -4,21 +4,29 @@ package nginx
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SwaggerNginxCertificate_Properties_CertificateError struct {
-	Code    any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// A human-readable description of this result. (AI-inferred)
 	Message any
 }
 
 type SwaggerNginxCertificate_Properties struct {
 	// Nginx Certificate Error Response Body
-	CertificateError       any
+	CertificateError any
+	// The path this certificate is mounted at inside the NGINX deployment. (AI-inferred)
 	CertificateVirtualPath any
-	KeyVaultSecretCreated  any
-	KeyVaultSecretId       any
-	KeyVaultSecretVersion  any
-	KeyVirtualPath         any
+	// When the associated Key Vault secret was created. (AI-inferred)
+	KeyVaultSecretCreated any
+	// A reference to the Key Vault secret this value is sourced from. (AI-inferred)
+	KeyVaultSecretId any
+	// The specific version of the associated Key Vault secret. (AI-inferred)
+	KeyVaultSecretVersion any
+	// The path this key is mounted at inside the NGINX deployment. (AI-inferred)
+	KeyVirtualPath any
 	// Provisioning State
 	ProvisioningState any
-	Sha1Thumbprint    any
+	// A SHA-1 thumbprint of this certificate. (AI-inferred)
+	Sha1Thumbprint any
 }
 
 var SwaggerNginxCertificate_Properties_CertificateErrorFields = ubx.FieldMap{

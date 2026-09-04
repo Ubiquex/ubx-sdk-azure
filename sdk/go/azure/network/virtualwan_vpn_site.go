@@ -4,13 +4,17 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations_Pool struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations struct {
+	// Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses      any
-	Pool                     any
+	// How many IP addresses to allocate from this pool. (AI-inferred)
+	NumberOfIpAddresses any
+	// A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
+	Pool any
 }
 
 type VirtualwanVpnSite_Properties_AddressSpace struct {
@@ -21,10 +25,14 @@ type VirtualwanVpnSite_Properties_AddressSpace struct {
 }
 
 type VirtualwanVpnSite_Properties_BgpProperties_BgpPeeringAddresses struct {
-	CustomBgpIpAddresses  any
+	// Caller-chosen BGP peering IP addresses to use for this connection, instead of Azure's own auto-allocated defaults. (AI-inferred)
+	CustomBgpIpAddresses any
+	// Output only. The BGP peering IP address(es) Azure auto-allocated for this connection. (AI-inferred)
 	DefaultBgpIpAddresses any
-	IpconfigurationId     any
-	TunnelIpAddresses     any
+	// A reference to the IP configuration this applies to. (AI-inferred)
+	IpconfigurationId any
+	// Output only. The public IP address(es) of this VPN gateway's own tunnel endpoint(s). (AI-inferred)
+	TunnelIpAddresses any
 }
 
 type VirtualwanVpnSite_Properties_BgpProperties struct {
@@ -62,25 +70,36 @@ type VirtualwanVpnSite_Properties_O365Policy struct {
 }
 
 type VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_BgpProperties struct {
-	Asn               any
+	// The BGP Autonomous System Number this applies to. (AI-inferred)
+	Asn any
+	// The IP address used for BGP peering. (AI-inferred)
 	BgpPeeringAddress any
 }
 
 type VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_LinkProperties struct {
+	// The name of the ISP providing this VPN site link. (AI-inferred)
 	LinkProviderName any
-	LinkSpeedInMbps  any
+	// The link speed, in Mbps, of this VPN site link. (AI-inferred)
+	LinkSpeedInMbps any
 }
 
 type VirtualwanVpnSite_Properties_VpnSiteLinks_Properties struct {
-	BgpProperties     any
-	Fqdn              any
-	IpAddress         any
-	LinkProperties    any
+	// BGP configuration (ASN, peering address) for this gateway or connection. (AI-inferred)
+	BgpProperties any
+	// The fully qualified domain name assigned to this resource. (AI-inferred)
+	Fqdn any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// Properties (name, provider, speed) describing this VPN site's own physical network link. (AI-inferred)
+	LinkProperties any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
 type VirtualwanVpnSite_Properties_VpnSiteLinks struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

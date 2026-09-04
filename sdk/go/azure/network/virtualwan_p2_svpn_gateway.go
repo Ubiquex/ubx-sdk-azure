@@ -4,81 +4,121 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_ConfigurationPolicyGroupAssociations struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_PreviousConfigurationPolicyGroupAssociations_Properties_PolicyMembers struct {
-	AttributeType  any
+	// The kind of attribute this policy rule matches on. (AI-inferred)
+	AttributeType any
+	// The value this policy rule matches against. (AI-inferred)
 	AttributeValue any
-	Name           any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_PreviousConfigurationPolicyGroupAssociations_Properties struct {
-	IsDefault                   any
+	// Whether this is the default configuration used when none is explicitly specified. (AI-inferred)
+	IsDefault any
+	// Point-to-site VPN configuration(s) (address pool, protocol, authentication) available on this gateway. (AI-inferred)
 	P2SconnectionConfigurations any
-	PolicyMembers               any
-	Priority                    any
-	ProvisioningState           any
+	// The member(s) this policy group applies to. (AI-inferred)
+	PolicyMembers any
+	// The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
+	Priority any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_PreviousConfigurationPolicyGroupAssociations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids    any
+	// The identifier(s) this applies to. (AI-inferred)
+	Ids any
+	// The label(s) attached to this route table, used to group it with others for association/propagation. (AI-inferred)
 	Labels any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes  any
-	Name             any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
 	NextHopIpAddress any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes          any
+	// Whether this connection's own static routes are propagated to the hub's own route table(s). (AI-inferred)
+	PropagateStaticRoutes any
+	// The criteria under which locally learned virtual network routes override otherwise equal-priority learned routes. (AI-inferred)
 	VnetLocalRouteOverrideCriteria any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections     any
-	StaticRoutes       any
+	// The BGP peering connection(s) established on this virtual hub. (AI-inferred)
+	BgpConnections any
+	// The caller-defined static route(s) on this connection. (AI-inferred)
+	StaticRoutes any
+	// Configuration controlling how static routes are propagated for this connection. (AI-inferred)
 	StaticRoutesConfig any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable  any
-	InboundRouteMap       any
-	OutboundRouteMap      any
+	// A reference to the route table this connection's own traffic is associated with. (AI-inferred)
+	AssociatedRouteTable any
+	// A reference to the route map applied to routes received on this connection. (AI-inferred)
+	InboundRouteMap any
+	// A reference to the route map applied to routes advertised on this connection. (AI-inferred)
+	OutboundRouteMap any
+	// The route table(s) routes from this connection are propagated into. (AI-inferred)
 	PropagatedRouteTables any
-	VnetRoutes            any
+	// The route(s) learned from virtual network connections attached to this hub. (AI-inferred)
+	VnetRoutes any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool_IpamPoolPrefixAllocations struct {
+	// Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses      any
-	Pool                     any
+	// How many IP addresses to allocate from this pool. (AI-inferred)
+	NumberOfIpAddresses any
+	// A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
+	Pool any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool struct {
-	AddressPrefixes           any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
 	IpamPoolPrefixAllocations any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties struct {
-	ConfigurationPolicyGroupAssociations         any
-	EnableInternetSecurity                       any
+	// The point-to-site configuration policy group(s) this applies to. (AI-inferred)
+	ConfigurationPolicyGroupAssociations any
+	// Whether traffic is routed through a security provider before reaching the internet. (AI-inferred)
+	EnableInternetSecurity any
+	// The configuration policy group association(s) this connection had prior to its own most recent change. (AI-inferred)
 	PreviousConfigurationPolicyGroupAssociations any
-	ProvisioningState                            any
-	RoutingConfiguration                         any
-	VpnClientAddressPool                         any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Routing configuration (associated/propagated route tables) applied to this connection. (AI-inferred)
+	RoutingConfiguration any
+	// The IP address pool point-to-site VPN clients are assigned addresses from. (AI-inferred)
+	VpnClientAddressPool any
 }
 
 type VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

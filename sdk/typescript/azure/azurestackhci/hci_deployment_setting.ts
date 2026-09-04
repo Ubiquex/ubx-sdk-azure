@@ -2,228 +2,355 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo_Payload {
+  /** The name of this file. (AI-inferred) */
   fileName?: string | Computed<string>;
+  /** A cryptographic hash of this content. (AI-inferred) */
   hash?: string | Computed<string>;
+  /** A unique identifier for this resource. (AI-inferred) */
   identifier?: string | Computed<string>;
+  /** A URL this applies to. (AI-inferred) */
   url?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo {
+  /** The version of this software package. (AI-inferred) */
   packageVersion?: string | Computed<string>;
+  /** The literal content of this message or request. (AI-inferred) */
   payload?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo_Payload[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo_Payload[]>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Cluster {
+  /** The Azure service endpoint this cluster connects to. (AI-inferred) */
   azureServiceEndpoint?: string | Computed<string>;
+  /** The name of the associated Azure cloud account. (AI-inferred) */
   cloudAccountName?: string | Computed<string>;
+  /** The deployment topology pattern this cluster follows. (AI-inferred) */
   clusterPattern?: string | Computed<string>;
+  /** The certified hardware class this node belongs to. (AI-inferred) */
   hardwareClass?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The file share path used as this cluster's own witness for quorum. (AI-inferred) */
   witnessPath?: string | Computed<string>;
+  /** The kind of quorum witness used, e.g. a file share or cloud witness. (AI-inferred) */
   witnessType?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_AdapterPropertyOverrides {
+  /** Whether jumbo frames are enabled on this network adapter. (AI-inferred) */
   jumboPacket?: string | Computed<string>;
+  /** Whether RDMA (Network Direct) is enabled on this network adapter. (AI-inferred) */
   networkDirect?: string | Computed<string>;
+  /** The RDMA technology used, e.g. `RoCEv2` or `iWARP`. (AI-inferred) */
   networkDirectTechnology?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_QosPolicyOverrides {
+  /** The percentage of link bandwidth reserved for SMB traffic. (AI-inferred) */
   bandwidthPercentageSmb?: string | Computed<string>;
+  /** The 802.1p priority value assigned to cluster heartbeat traffic. (AI-inferred) */
   priorityValue8021ActionCluster?: string | Computed<string>;
+  /** The 802.1p priority value assigned to SMB (storage) traffic. (AI-inferred) */
   priorityValue8021ActionSmb?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_VirtualSwitchConfigurationOverrides {
+  /** Whether SR-IOV (I/O virtualization) is enabled on this network adapter. (AI-inferred) */
   enableIov?: string | Computed<string>;
+  /** The algorithm used to distribute network traffic across adapter(s) in this team. (AI-inferred) */
   loadBalancingAlgorithm?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents {
+  /** A reference to the network adapter this applies to. (AI-inferred) */
   adapter?: string[] | Computed<string[]>;
+  /** Property override(s) applied to this network adapter, beyond the discovered defaults. (AI-inferred) */
   adapterPropertyOverrides?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_AdapterPropertyOverrides | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_AdapterPropertyOverrides>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Whether a discovered network adapter property is overridden with a caller-supplied value. (AI-inferred) */
   overrideAdapterProperty?: boolean | Computed<boolean>;
+  /** Whether the default Quality of Service policy is overridden for this network. (AI-inferred) */
   overrideQosPolicy?: boolean | Computed<boolean>;
+  /** Whether the default virtual switch configuration is overridden. (AI-inferred) */
   overrideVirtualSwitchConfiguration?: boolean | Computed<boolean>;
+  /** Quality of Service policy setting(s) overridden from their own discovered defaults. (AI-inferred) */
   qosPolicyOverrides?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_QosPolicyOverrides | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_QosPolicyOverrides>;
+  /** The category of network traffic (e.g. management, compute, storage) this applies to. (AI-inferred) */
   trafficType?: string[] | Computed<string[]>;
+  /** Virtual switch configuration setting(s) overridden from their own discovered defaults. (AI-inferred) */
   virtualSwitchConfigurationOverrides?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_VirtualSwitchConfigurationOverrides | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_VirtualSwitchConfigurationOverrides>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterIpconfig {
+  /** An IP address range, in CIDR notation. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The name of this network adapter. (AI-inferred) */
   networkAdapterName?: string | Computed<string>;
+  /** The VLAN identifier assigned to this network. (AI-inferred) */
   vlanId?: number | Computed<number>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterProperties {
+  /** The percentage of link bandwidth reserved for SMB traffic. (AI-inferred) */
   bandwidthPercentageSmb?: number | Computed<number>;
+  /** Whether jumbo frames are enabled on this network adapter. (AI-inferred) */
   jumboPacket?: number | Computed<number>;
+  /** The 802.1p priority value assigned to cluster heartbeat traffic. (AI-inferred) */
   priorityValue8021ActionCluster?: number | Computed<number>;
+  /** The 802.1p priority value assigned to SMB (storage) traffic. (AI-inferred) */
   priorityValue8021ActionSmb?: number | Computed<number>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig {
+  /** IP configuration for this network adapter. (AI-inferred) */
   adapterIpconfig?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterIpconfig[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterIpconfig[]>;
+  /** Configuration properties for this network adapter. (AI-inferred) */
   adapterProperties?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterProperties | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterProperties>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks {
+  /** Network configuration applied across this cluster. (AI-inferred) */
   clusterNetworkConfig?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks_StorageAdapterIpinfo {
+  /** An IPv4 address. (AI-inferred) */
   ipv4Address?: string | Computed<string>;
+  /** A reference to the physical node this applies to. (AI-inferred) */
   physicalNode?: string | Computed<string>;
+  /** The subnet mask applied to this address range. (AI-inferred) */
   subnetMask?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The name of this network adapter. (AI-inferred) */
   networkAdapterName?: string | Computed<string>;
+  /** IP configuration for this storage network adapter. (AI-inferred) */
   storageAdapterIpinfo?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks_StorageAdapterIpinfo[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks_StorageAdapterIpinfo[]>;
+  /** The VLAN identifier assigned to this network. (AI-inferred) */
   vlanId?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork {
+  /** Whether storage network IP addresses are assigned automatically. (AI-inferred) */
   enableStorageAutoIp?: boolean | Computed<boolean>;
+  /** The declared network traffic intent(s) (e.g. management, compute, storage) this adapter serves. (AI-inferred) */
   intents?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents[]>;
+  /** The Storage Area Network(s) this cluster connects to. (AI-inferred) */
   sanNetworks?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks>;
+  /** Whether storage nodes connect directly to each other, without a switch. (AI-inferred) */
   storageConnectivitySwitchless?: boolean | Computed<boolean>;
+  /** The storage network(s) configured on this cluster. (AI-inferred) */
   storageNetworks?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks[]>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_DnsZones {
+  /** The upstream DNS server this cluster forwards unresolved queries to. (AI-inferred) */
   dnsForwarder?: string[] | Computed<string[]>;
+  /** The name of the DNS zone this applies to. (AI-inferred) */
   dnsZoneName?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_IpPools {
+  /** The last address in this range, inclusive. (AI-inferred) */
   endingAddress?: string | Computed<string>;
+  /** The first address in this range, inclusive. (AI-inferred) */
   startingAddress?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork {
+  /** DNS server configuration for this cluster. (AI-inferred) */
   dnsServerConfig?: string | Computed<string>;
+  /** The DNS server IP address(es) this resource uses. (AI-inferred) */
   dnsServers?: string[] | Computed<string[]>;
+  /** The DNS zone(s) this applies to. (AI-inferred) */
   dnsZones?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_DnsZones[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_DnsZones[]>;
+  /** The default gateway IP address for this network. (AI-inferred) */
   gateway?: string | Computed<string>;
+  /** The IP address pool(s) available for allocation. (AI-inferred) */
   ipPools?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_IpPools[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_IpPools[]>;
+  /** The subnet mask applied to this address range. (AI-inferred) */
   subnetMask?: string | Computed<string>;
+  /** Whether IP address(es) are assigned automatically via DHCP, rather than statically. (AI-inferred) */
   useDhcp?: boolean | Computed<boolean>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_LocalAvailabilityZones {
+  /** The name of the local availability zone this applies to. (AI-inferred) */
   localAvailabilityZoneName?: string | Computed<string>;
+  /** The node(s) making up this cluster. (AI-inferred) */
   nodes?: string[] | Computed<string[]>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Observability {
+  /** Whether telemetry data is periodically uploaded to Azure. (AI-inferred) */
   episodicDataUpload?: boolean | Computed<boolean>;
+  /** Whether this data is stored within the European Union. (AI-inferred) */
   euLocation?: boolean | Computed<boolean>;
+  /** The client used to stream diagnostic data. (AI-inferred) */
   streamingDataClient?: boolean | Computed<boolean>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_OptionalServices {
+  /** A reference to the custom location this resource is deployed to. (AI-inferred) */
   customLocation?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_PhysicalNodes {
+  /** An IPv4 address. (AI-inferred) */
   ipv4Address?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration_NetworkController {
+  /** The first MAC address in this pool, inclusive. (AI-inferred) */
   macAddressPoolStart?: string | Computed<string>;
+  /** The last MAC address in this pool, inclusive. (AI-inferred) */
   macAddressPoolStop?: string | Computed<string>;
+  /** Whether network virtualization (Hyper-V Network Virtualization) is enabled. (AI-inferred) */
   networkVirtualizationEnabled?: boolean | Computed<boolean>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration {
+  /** A reference to the network controller managing this configuration. (AI-inferred) */
   networkController?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration_NetworkController | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration_NetworkController>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Secrets {
+  /** The name of the secret holding Extension Configuration Engine credentials. (AI-inferred) */
   eceSecretName?: string | Computed<string>;
+  /** Where this secret's own value is stored. (AI-inferred) */
   secretLocation?: string | Computed<string>;
+  /** The name of this secret. (AI-inferred) */
   secretName?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecuritySettings {
+  /** Whether BitLocker encryption is enabled on the boot volume. (AI-inferred) */
   bitlockerBootVolume?: boolean | Computed<boolean>;
+  /** Whether BitLocker encryption is enabled on data volumes. (AI-inferred) */
   bitlockerDataVolumes?: boolean | Computed<boolean>;
+  /** Whether Windows Credential Guard is enforced on this cluster. (AI-inferred) */
   credentialGuardEnforced?: boolean | Computed<boolean>;
+  /** Whether configuration drift control is enforced on this cluster. (AI-inferred) */
   driftControlEnforced?: boolean | Computed<boolean>;
+  /** Whether Dynamic Root of Trust for Measurement protection is enabled. (AI-inferred) */
   drtmProtection?: boolean | Computed<boolean>;
+  /** Whether Hypervisor-protected Code Integrity is enabled. (AI-inferred) */
   hvciProtection?: boolean | Computed<boolean>;
+  /** Whether side-channel attack mitigations are enforced. (AI-inferred) */
   sideChannelMitigationEnforced?: boolean | Computed<boolean>;
+  /** Whether SMB traffic between cluster nodes is encrypted. (AI-inferred) */
   smbClusterEncryption?: boolean | Computed<boolean>;
+  /** Whether SMB signing is required for this cluster's own traffic. (AI-inferred) */
   smbSigningEnforced?: boolean | Computed<boolean>;
+  /** Whether Windows Defender Application Control is enforced. (AI-inferred) */
   wdacEnforced?: boolean | Computed<boolean>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_S2d {
+  /** The ratio of virtual to physical resources assumed when planning capacity. (AI-inferred) */
   overprovisioningRatio?: string | Computed<string>;
+  /** The category of storage volume this represents. (AI-inferred) */
   volumeType?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_San {
+  /** The LUN identifier for the infrastructure performance volume. (AI-inferred) */
   infraPerfLunId?: string | Computed<string>;
+  /** The LUN identifier for the infrastructure volume. (AI-inferred) */
   infraVolLunId?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage {
+  /** How this resource's own configuration is managed, e.g. automatically or manually. (AI-inferred) */
   configurationMode?: string | Computed<string>;
+  /** Whether Storage Spaces Direct is enabled on this cluster. (AI-inferred) */
   s2d?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_S2d | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_S2d>;
+  /** The Subject Alternative Name(s) on this certificate. (AI-inferred) */
   san?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_San | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_San>;
+  /** The category of storage this applies to. (AI-inferred) */
   storageType?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData {
+  /** The Active Directory Organizational Unit path this cluster's own computer objects are placed in. (AI-inferred) */
   adouPath?: string | Computed<string>;
+  /** Version information for the software assembly this applies to. (AI-inferred) */
   assemblyInfo?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo>;
+  /** A reference to the cluster this applies to. (AI-inferred) */
   cluster?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Cluster | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Cluster>;
+  /** The fully qualified domain name of the Active Directory domain this cluster joins. (AI-inferred) */
   domainFqdn?: string | Computed<string>;
+  /** Network configuration for the physical host. (AI-inferred) */
   hostNetwork?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork>;
+  /** The identity provider used to authenticate for this resource. (AI-inferred) */
   identityProvider?: string | Computed<string>;
+  /** Network configuration reserved for cluster infrastructure traffic. (AI-inferred) */
   infrastructureNetwork?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork[]>;
+  /** Whether this cluster is the management cluster for a multi-cluster deployment. (AI-inferred) */
   isManagementCluster?: boolean | Computed<boolean>;
+  /** The local availability zone(s) this applies to. (AI-inferred) */
   localAvailabilityZones?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_LocalAvailabilityZones[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_LocalAvailabilityZones[]>;
+  /** The prefix applied when automatically generating name(s) for this resource. (AI-inferred) */
   namingPrefix?: string | Computed<string>;
+  /** Configuration for collecting diagnostic and telemetry data from this cluster. (AI-inferred) */
   observability?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Observability | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Observability>;
+  /** The optional service(s) enabled on this cluster. (AI-inferred) */
   optionalServices?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_OptionalServices | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_OptionalServices>;
+  /** The physical node(s) making up this cluster. (AI-inferred) */
   physicalNodes?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_PhysicalNodes[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_PhysicalNodes[]>;
+  /** Whether Software Defined Networking integration is enabled. (AI-inferred) */
   sdnIntegration?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration>;
+  /** The secret(s) associated with this resource. (AI-inferred) */
   secrets?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Secrets[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Secrets[]>;
+  /** Where this resource's own secret(s) are stored. (AI-inferred) */
   secretsLocation?: string | Computed<string>;
+  /** Security configuration applied to this cluster. (AI-inferred) */
   securitySettings?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecuritySettings | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecuritySettings>;
+  /** Storage configuration for this resource. (AI-inferred) */
   storage?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_PartnerProperties {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_SbeDeploymentInfo {
+  /** The generation or family this belongs to. (AI-inferred) */
   family?: string | Computed<string>;
+  /** The publisher of this extension or resource. (AI-inferred) */
   publisher?: string | Computed<string>;
+  /** When this Solution Builder Extension manifest was created. (AI-inferred) */
   sbeManifestCreationDate?: string | Computed<string>;
+  /** Where this Solution Builder Extension manifest was sourced from. (AI-inferred) */
   sbeManifestSource?: string | Computed<string>;
+  /** The version identifier this applies to. (AI-inferred) */
   version?: string | Computed<string>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo {
+  /** The credential(s) associated with this resource. (AI-inferred) */
   credentialList?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Secrets[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Secrets[]>;
+  /** Additional properties supplied by an OEM hardware partner. (AI-inferred) */
   partnerProperties?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_PartnerProperties[] | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_PartnerProperties[]>;
+  /** Deployment information for this Solution Builder Extension. (AI-inferred) */
   sbeDeploymentInfo?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_SbeDeploymentInfo | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_SbeDeploymentInfo>;
 }
 
 export interface HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits {
+  /** The configuration data used to deploy this cluster. (AI-inferred) */
   deploymentData?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData>;
+  /** Information about the OEM partner providing this Solution Builder Extension. (AI-inferred) */
   sbePartnerInfo?: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo | Computed<HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo>;
 }
 
@@ -238,13 +365,21 @@ export interface HciDeploymentSetting_Properties_ReportedProperties_DeploymentSt
 }
 
 export interface HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_Steps {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** When this event or window ended, in UTC. (AI-inferred) */
   endTimeUtc?: string | Computed<string>;
+  /** Detail about an exception that occurred. (AI-inferred) */
   exception?: string[] | Computed<string[]>;
+  /** The complete, hierarchical index identifying this step within its own containing process. (AI-inferred) */
   fullStepIndex?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** When this event or window started, in UTC. (AI-inferred) */
   startTimeUtc?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** The ordered step(s) making up this process. (AI-inferred) */
   steps?: HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_Steps_Steps[] | Computed<HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_Steps_Steps[]>;
 }
 

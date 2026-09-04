@@ -8,11 +8,17 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class RequestApprovalResource_Properties_PlansDetails:
+    # The stated reason supporting this request. (AI-inferred)
     justification: Any = None
+    # A reference to the specific plan this applies to. (AI-inferred)
     plan_id: Any = None
+    # When this request was submitted. (AI-inferred)
     request_date: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The identifier of the associated Azure subscription. (AI-inferred)
     subscription_id: Any = None
+    # The name of the associated Azure subscription. (AI-inferred)
     subscription_name: Any = None
 
 @dataclasses.dataclass

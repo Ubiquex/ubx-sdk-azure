@@ -14,17 +14,25 @@ class OpenapiWorkspaceConnectionPropertiesV2BasicResource_Properties:
     category: Any = None
     # A type definition that refers the id to an Azure Resource Manager resource.
     created_by_workspace_arm_id: Any = None
+    # Detail about an error that occurred. (AI-inferred)
     error: Any = None
+    # When this resource or grant expires. (AI-inferred)
     expiry_time: Any = None
     # Group based on connection category
     group: Any = None
+    # Whether this resource is shared with every project, rather than a specific subset. (AI-inferred)
     is_shared_to_all: Any = None
     # Store user metadata for this connection
     metadata: Any = None
+    # Whether a private endpoint connection is required, optional, or not applicable for this resource. (AI-inferred)
     pe_requirement: Any = None
+    # The current status of this resource's own private endpoint connection(s). (AI-inferred)
     pe_status: Any = None
+    # The user(s) this resource is shared with. (AI-inferred)
     shared_user_list: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
+    # Whether the workspace's own managed identity is used to authenticate, rather than a caller-supplied credential. (AI-inferred)
     use_workspace_managed_identity: Any = None
 
 _OpenapiWorkspaceConnectionPropertiesV2BasicResource_PropertiesFields = {
@@ -45,10 +53,12 @@ _OpenapiWorkspaceConnectionPropertiesV2BasicResource_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiWorkspaceConnectionPropertiesV2BasicResourceConfig:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspaceConnectionPropertiesV2BasicResourceAttrs:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 OpenapiWorkspaceConnectionPropertiesV2BasicResource = ubx.ResourceBinding(

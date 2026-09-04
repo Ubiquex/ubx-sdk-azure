@@ -19,7 +19,9 @@ type OpenapiIncident_Properties_AdditionalData struct {
 }
 
 type OpenapiIncident_Properties_Labels struct {
+	// The name of this label. (AI-inferred)
 	LabelName any
+	// The category this label belongs to. (AI-inferred)
 	LabelType any
 }
 

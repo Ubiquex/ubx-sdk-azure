@@ -8,13 +8,21 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualwanVpnConnection_Properties_IpsecPolicies:
+    # The Diffie-Hellman group used for IKE Phase 1 key exchange, e.g. `DHGroup14` or `DHGroup24`. (AI-inferred)
     dh_group: Any = None
+    # The encryption algorithm used for IKE Phase 1 (establishing the secure channel itself), e.g. `AES256`. (AI-inferred)
     ike_encryption: Any = None
+    # The integrity (hashing) algorithm used for IKE Phase 1, e.g. `SHA384`. (AI-inferred)
     ike_integrity: Any = None
+    # The encryption algorithm used for IKE Phase 2 (the actual IPsec data tunnel), e.g. `AES256`. (AI-inferred)
     ipsec_encryption: Any = None
+    # The integrity (hashing) algorithm used for IKE Phase 2, e.g. `SHA256`. (AI-inferred)
     ipsec_integrity: Any = None
+    # The Perfect Forward Secrecy group used when establishing a new IKE Phase 2 security association, or `None` to disable PFS. (AI-inferred)
     pfs_group: Any = None
+    # The IPsec security association's own data-volume lifetime, in kilobytes -- the tunnel rekeys once either this or `sa_life_time_seconds` is reached. (AI-inferred)
     sa_data_size_kilobytes: Any = None
+    # The IPsec security association's own time-based lifetime, in seconds -- the tunnel rekeys once either this or `sa_data_size_kilobytes` is reached. (AI-inferred)
     sa_life_time_seconds: Any = None
 
 @dataclasses.dataclass
@@ -31,8 +39,11 @@ class VirtualwanVpnConnection_Properties_RoutingConfiguration_PropagatedRouteTab
 
 @dataclasses.dataclass
 class VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes:
+    # The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
     address_prefixes: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
     next_hop_ip_address: Any = None
 
 @dataclasses.dataclass
@@ -66,39 +77,64 @@ class VirtualwanVpnConnection_Properties_RoutingConfiguration:
 
 @dataclasses.dataclass
 class VirtualwanVpnConnection_Properties_TrafficSelectorPolicies:
+    # The local (on-premises) IP address range(s) this traffic selector matches. (AI-inferred)
     local_address_ranges: Any = None
+    # The remote IP address range(s) this traffic selector matches. (AI-inferred)
     remote_address_ranges: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnConnection_Properties_VpnLinkConnections_Properties_VpnGatewayCustomBgpAddresses:
+    # A caller-chosen BGP peering IP address, instead of Azure's own auto-allocated default. (AI-inferred)
     custom_bgp_ip_address: Any = None
+    # A reference to the IP configuration this applies to. (AI-inferred)
     ip_configuration_id: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnConnection_Properties_VpnLinkConnections_Properties:
+    # The provisioned bandwidth, in Mbps, for this connection. (AI-inferred)
     connection_bandwidth: Any = None
+    # The current connectivity status of this connection. (AI-inferred)
     connection_status: Any = None
+    # How long, in seconds, before an unresponsive IKE peer is considered dead. (AI-inferred)
     dpd_timeout_seconds: Any = None
+    # The total number of bytes transferred outbound. (AI-inferred)
     egress_bytes_transferred: Any = None
+    # The outbound NAT rule(s) applied to this connection. (AI-inferred)
     egress_nat_rules: Any = None
+    # Whether BGP routing is enabled for this connection. (AI-inferred)
     enable_bgp: Any = None
+    # Whether rate limiting is enabled for this configuration. (AI-inferred)
     enable_rate_limiting: Any = None
+    # The total number of bytes transferred inbound. (AI-inferred)
     ingress_bytes_transferred: Any = None
+    # The inbound NAT rule(s) applied to this connection. (AI-inferred)
     ingress_nat_rules: Any = None
+    # The IPsec/IKE policy/policies (encryption, integrity, lifetimes) applied to this connection. (AI-inferred)
     ipsec_policies: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The relative weight of this route among several possible paths. (AI-inferred)
     routing_weight: Any = None
+    # A pre-shared key used to establish this connection. (AI-inferred)
     shared_key: Any = None
+    # Whether this gateway uses its own local Azure IP address, rather than a public one, for this connection. (AI-inferred)
     use_local_azure_ip_address: Any = None
+    # Whether policy-based (rather than route-based) traffic selectors are used for this IPsec tunnel. (AI-inferred)
     use_policy_based_traffic_selectors: Any = None
+    # The VPN protocol used for this connection, e.g. `IKEv2` or `OpenVPN`. (AI-inferred)
     vpn_connection_protocol_type: Any = None
+    # Caller-chosen BGP peering IP address(es) for this VPN gateway, instead of Azure's own auto-allocated defaults. (AI-inferred)
     vpn_gateway_custom_bgp_addresses: Any = None
+    # Whether this VPN site link connection is `Default`, `InitiatorOnly`, or `ResponderOnly`. (AI-inferred)
     vpn_link_connection_mode: Any = None
+    # A reference to the specific VPN site link this connection uses. (AI-inferred)
     vpn_site_link: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnConnection_Properties_VpnLinkConnections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

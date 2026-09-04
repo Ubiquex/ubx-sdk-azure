@@ -4,7 +4,9 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Collection_Properties_AppliedRules struct {
-	Type  any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 

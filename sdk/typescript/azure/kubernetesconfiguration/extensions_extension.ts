@@ -24,7 +24,9 @@ export interface ExtensionsExtension_Plan {
 }
 
 export interface ExtensionsExtension_Properties_ErrorInfo_AdditionalInfo {
+  /** Additional detail about this result. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -32,10 +34,15 @@ export interface ExtensionsExtension_Properties_ErrorInfo_Details_Details {
 }
 
 export interface ExtensionsExtension_Properties_ErrorInfo_Details {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: ExtensionsExtension_Properties_ErrorInfo_AdditionalInfo[] | Computed<ExtensionsExtension_Properties_ErrorInfo_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: ExtensionsExtension_Properties_ErrorInfo_Details_Details[] | Computed<ExtensionsExtension_Properties_ErrorInfo_Details_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
@@ -70,10 +77,15 @@ export interface ExtensionsExtension_Properties_Scope {
 }
 
 export interface ExtensionsExtension_Properties_Statuses {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable summary of this resource's own current status. (AI-inferred) */
   displayStatus?: string | Computed<string>;
+  /** The severity level of this event. (AI-inferred) */
   level?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** When this event occurred. (AI-inferred) */
   time?: string | Computed<string>;
 }
 

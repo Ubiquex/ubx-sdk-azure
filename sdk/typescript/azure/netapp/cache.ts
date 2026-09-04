@@ -2,20 +2,35 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Cache_Properties_ExportPolicy_Rules {
+  /** The client IP address range(s), in CIDR notation, permitted to access this export. (AI-inferred) */
   allowedClients?: string | Computed<string>;
+  /** Who is permitted to change file ownership on this volume, e.g. only root or any user. (AI-inferred) */
   chownMode?: string | Computed<string>;
+  /** Whether the SMB/CIFS protocol is enabled for this volume. (AI-inferred) */
   cifs?: boolean | Computed<boolean>;
+  /** Whether this client is granted root access. (AI-inferred) */
   hasRootAccess?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 authenticated clients are granted read-only access. (AI-inferred) */
   kerberos5ReadOnly?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 authenticated clients are granted read-write access. (AI-inferred) */
   kerberos5ReadWrite?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 with integrity checking authenticated clients are granted read-only access. (AI-inferred) */
   kerberos5iReadOnly?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 with integrity checking authenticated clients are granted read-write access. (AI-inferred) */
   kerberos5iReadWrite?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 with privacy protection authenticated clients are granted read-only access. (AI-inferred) */
   kerberos5pReadOnly?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 with privacy protection authenticated clients are granted read-write access. (AI-inferred) */
   kerberos5pReadWrite?: boolean | Computed<boolean>;
+  /** Whether the NFSv3 protocol is enabled for this volume. (AI-inferred) */
   nfsv3?: boolean | Computed<boolean>;
+  /** Whether the NFSv4.1 protocol is enabled for this volume. (AI-inferred) */
   nfsv41?: boolean | Computed<boolean>;
+  /** This rule's own relative evaluation order. (AI-inferred) */
   ruleIndex?: number | Computed<number>;
+  /** Whether UNIX clients are granted read-only access. (AI-inferred) */
   unixReadOnly?: boolean | Computed<boolean>;
+  /** Whether UNIX clients are granted read-write access. (AI-inferred) */
   unixReadWrite?: boolean | Computed<boolean>;
 }
 
@@ -25,8 +40,11 @@ export interface Cache_Properties_ExportPolicy {
 }
 
 export interface Cache_Properties_MountTargets {
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A unique identifier for this volume's own mount target. (AI-inferred) */
   mountTargetId?: string | Computed<string>;
+  /** The fully qualified domain name of the SMB server hosting this volume. (AI-inferred) */
   smbServerFqdn?: string | Computed<string>;
 }
 

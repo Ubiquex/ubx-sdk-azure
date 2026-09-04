@@ -10,17 +10,23 @@ export interface ConnectionPropertiesV2BasicResource_Properties {
   createdByWorkspaceArmId?: string | Computed<string>;
   /** Provides the error message if the connection fails */
   error?: string | Computed<string>;
+  /** When this resource or grant expires. (AI-inferred) */
   expiryTime?: string | Computed<string>;
   /** Group based on connection category */
   group?: string | Computed<string>;
+  /** Whether this resource is shared with every project, rather than a specific subset. (AI-inferred) */
   isSharedToAll?: boolean | Computed<boolean>;
   /** Store user metadata for this connection */
   metadata?: Record<string, string> | Computed<Record<string, string>>;
+  /** Whether a private endpoint connection is required, optional, or not applicable for this resource. (AI-inferred) */
   peRequirement?: string | Computed<string>;
+  /** The current status of this resource's own private endpoint connection(s). (AI-inferred) */
   peStatus?: string | Computed<string>;
+  /** The user(s) this resource is shared with. (AI-inferred) */
   sharedUserList?: string[] | Computed<string[]>;
   /** The connection URL to be used. */
   target?: string | Computed<string>;
+  /** Whether the workspace's own managed identity is used to authenticate, rather than a caller-supplied credential. (AI-inferred) */
   useWorkspaceManagedIdentity?: boolean | Computed<boolean>;
 }
 

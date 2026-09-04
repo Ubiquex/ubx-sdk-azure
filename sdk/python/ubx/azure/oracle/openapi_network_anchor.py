@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiNetworkAnchor_Properties_DnsForwardingRules:
+    # The domain name(s) associated with this resource. (AI-inferred)
     domain_names: Any = None
+    # The IP address traffic is forwarded to. (AI-inferred)
     forwarding_ip_address: Any = None
 
 @dataclasses.dataclass

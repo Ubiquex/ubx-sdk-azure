@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ManagedapplicationsApplication_Identity_UserAssignedIdentities:
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
 
 @dataclasses.dataclass
@@ -37,13 +39,18 @@ class ManagedapplicationsApplication_Plan:
 
 @dataclasses.dataclass
 class ManagedapplicationsApplication_Properties_Artifacts:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # A resource URI. (AI-inferred)
     uri: Any = None
 
 @dataclasses.dataclass
 class ManagedapplicationsApplication_Properties_Authorizations:
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
+    # A reference to the role definition granted to the publisher for managing this application. (AI-inferred)
     role_definition_id: Any = None
 
 @dataclasses.dataclass
@@ -71,8 +78,11 @@ class ManagedapplicationsApplication_Properties_CustomerSupport:
 
 @dataclasses.dataclass
 class ManagedapplicationsApplication_Properties_JitAccessPolicy_JitApprovers:
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

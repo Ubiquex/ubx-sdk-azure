@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiPolicyAssignment_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,29 +26,41 @@ class OpenapiPolicyAssignment_Identity:
 
 @dataclasses.dataclass
 class OpenapiPolicyAssignment_Properties_NonComplianceMessages:
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to a specific policy definition within this initiative. (AI-inferred)
     policy_definition_reference_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiPolicyAssignment_Properties_Overrides_Selectors:
+    # Matches when the field's own value is one of this set. (AI-inferred)
     in_: Any = None
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
+    # Matches when the field's own value is not one of this set. (AI-inferred)
     not_in: Any = None
+    # How far this operation has progressed. (AI-inferred)
     progress: Any = None
 
 @dataclasses.dataclass
 class OpenapiPolicyAssignment_Properties_Overrides:
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
+    # Restricts which policy definition version(s) within a range this reference resolves to. (AI-inferred)
     selectors: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiPolicyAssignment_Properties_Parameters:
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiPolicyAssignment_Properties_ResourceSelectors:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Restricts which policy definition version(s) within a range this reference resolves to. (AI-inferred)
     selectors: Any = None
 
 @dataclasses.dataclass

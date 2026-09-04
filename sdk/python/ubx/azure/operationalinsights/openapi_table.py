@@ -28,12 +28,19 @@ class OpenapiTable_Properties_ResultStatistics:
 
 @dataclasses.dataclass
 class OpenapiTable_Properties_Schema_Columns:
+    # A hint indicating this custom field's own intended data type. (AI-inferred)
     data_type_hint: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # Whether this column is shown by default in the query results view. (AI-inferred)
     is_default_display: Any = None
+    # Whether this column is hidden from the query results view. (AI-inferred)
     is_hidden: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

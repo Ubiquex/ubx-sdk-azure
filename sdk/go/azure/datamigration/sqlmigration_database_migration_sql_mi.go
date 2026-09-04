@@ -4,7 +4,9 @@ package datamigration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_AzureBlob_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -65,28 +67,47 @@ type SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration struct {
 }
 
 type SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSets_ListOfBackupFiles struct {
-	CopyDuration         any
-	CopyThroughput       any
-	DataRead             any
-	DataWritten          any
+	// How long this copy operation took. (AI-inferred)
+	CopyDuration any
+	// The observed data transfer rate for this copy operation. (AI-inferred)
+	CopyThroughput any
+	// The amount of data read so far. (AI-inferred)
+	DataRead any
+	// The amount of data written so far. (AI-inferred)
+	DataWritten any
+	// This file's own position within its containing backup set. (AI-inferred)
 	FamilySequenceNumber any
-	FileName             any
-	Status               any
-	TotalSize            any
+	// The name of this file. (AI-inferred)
+	FileName any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The total size of this data. (AI-inferred)
+	TotalSize any
 }
 
 type SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSets struct {
-	BackupFinishDate   any
-	BackupSetId        any
-	BackupStartDate    any
-	BackupType         any
-	FamilyCount        any
-	FirstLsn           any
+	// When this backup completed. (AI-inferred)
+	BackupFinishDate any
+	// A unique identifier for this backup set. (AI-inferred)
+	BackupSetId any
+	// When this backup started. (AI-inferred)
+	BackupStartDate any
+	// The category of backup this represents, e.g. full, differential, or log. (AI-inferred)
+	BackupType any
+	// The total number of files making up this backup set. (AI-inferred)
+	FamilyCount any
+	// The first log sequence number contained in this backup. (AI-inferred)
+	FirstLsn any
+	// Whether checksums were computed and verified for this backup. (AI-inferred)
 	HasBackupChecksums any
-	IgnoreReasons      any
-	IsBackupRestored   any
-	LastLsn            any
-	ListOfBackupFiles  any
+	// Why this backup file was excluded from the restore sequence. (AI-inferred)
+	IgnoreReasons any
+	// Whether this backup has already been applied to the target database. (AI-inferred)
+	IsBackupRestored any
+	// The last log sequence number contained in this backup. (AI-inferred)
+	LastLsn any
+	// The backup file(s) making up this backup set. (AI-inferred)
+	ListOfBackupFiles any
 }
 
 type SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails struct {

@@ -22,12 +22,18 @@ type Cloud_Properties_CloudCapacity struct {
 }
 
 type Cloud_Properties_StorageQoSpolicies struct {
+	// The maximum network bandwidth, in Mbps, this virtual network adapter is permitted to use. (AI-inferred)
 	BandwidthLimit any
-	Id             any
-	IopsMaximum    any
-	IopsMinimum    any
-	Name           any
-	PolicyId       any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The maximum I/O operations per second permitted for this disk. (AI-inferred)
+	IopsMaximum any
+	// The minimum I/O operations per second reserved for this disk. (AI-inferred)
+	IopsMinimum any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the storage QoS policy this applies to. (AI-inferred)
+	PolicyId any
 }
 
 type Cloud_Properties struct {

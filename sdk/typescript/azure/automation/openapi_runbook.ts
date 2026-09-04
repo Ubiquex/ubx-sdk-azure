@@ -18,9 +18,13 @@ export interface OpenapiRunbook_Properties_Draft_DraftContentLink {
 }
 
 export interface OpenapiRunbook_Properties_Draft_Parameters {
+  /** The value used when this parameter is left unset. (AI-inferred) */
   defaultValue?: string | Computed<string>;
+  /** Whether this parameter must be supplied. (AI-inferred) */
   isMandatory?: boolean | Computed<boolean>;
+  /** This parameter's own position within its containing argument list. (AI-inferred) */
   position?: number | Computed<number>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -44,6 +48,7 @@ export interface OpenapiRunbook_Properties {
   creationTime?: string | Computed<string>;
   /** Gets or sets the description of the runbook. */
   description?: string | Computed<string>;
+  /** The draft (unpublished) content of this runbook. (AI-inferred) */
   draft?: OpenapiRunbook_Properties_Draft | Computed<OpenapiRunbook_Properties_Draft>;
   /** Gets or sets the job count of the runbook. */
   jobCount?: number | Computed<number>;

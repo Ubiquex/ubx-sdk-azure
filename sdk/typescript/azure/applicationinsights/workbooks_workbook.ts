@@ -2,14 +2,20 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface WorkbooksWorkbook_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
 export interface WorkbooksWorkbook_Identity {
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The user-assigned managed identity/identities associated with this workbook, keyed by resource ID. (AI-inferred) */
   userAssignedIdentities?: Record<string, WorkbooksWorkbook_Identity_UserAssignedIdentities> | Computed<Record<string, WorkbooksWorkbook_Identity_UserAssignedIdentities>>;
 }
 

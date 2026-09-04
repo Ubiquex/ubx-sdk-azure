@@ -17,6 +17,7 @@ type GatewayResource_Properties_ApiMetadataProperties struct {
 }
 
 type GatewayResource_Properties_Apms struct {
+	// A reference to the resource this applies to. (AI-inferred)
 	ResourceId any
 }
 
@@ -52,7 +53,9 @@ type GatewayResource_Properties_EnvironmentVariables struct {
 }
 
 type GatewayResource_Properties_Instances struct {
-	Name   any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The current status of this resource. (AI-inferred)
 	Status any
 }
 

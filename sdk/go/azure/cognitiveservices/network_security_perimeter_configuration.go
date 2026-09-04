@@ -13,23 +13,32 @@ type NetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter s
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes           any
-	Direction                 any
+	// The IP address range(s), in CIDR notation, this rule applies to. (AI-inferred)
+	AddressPrefixes any
+	// Whether this rule applies to inbound or outbound traffic. (AI-inferred)
+	Direction any
+	// The fully qualified domain name(s) this resource is reachable at. (AI-inferred)
 	FullyQualifiedDomainNames any
+	// The network security perimeter(s) this resource participates in. (AI-inferred)
 	NetworkSecurityPerimeters any
-	Subscriptions             any
+	// The subscription ID(s) this rule applies to. (AI-inferred)
+	Subscriptions any
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_Profile struct {
+	// The network access rule(s) governing this resource. (AI-inferred)
 	AccessRules any
 	// Access rules version of the resource profile
 	AccessRulesVersion any
@@ -42,15 +51,22 @@ type NetworkSecurityPerimeterConfiguration_Properties_Profile struct {
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
-	Description          any
-	IssueType            any
-	Severity             any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The category of issue detected. (AI-inferred)
+	IssueType any
+	// How serious this finding is. (AI-inferred)
+	Severity any
+	// The access rule(s) recommended to resolve this issue. (AI-inferred)
 	SuggestedAccessRules any
+	// The resource ID(s) recommended to resolve this issue. (AI-inferred)
 	SuggestedResourceIds any
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

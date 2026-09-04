@@ -16,7 +16,8 @@ type SqlpoolSensitivityLabel_Properties struct {
 	LabelId any
 	// The label name.
 	LabelName any
-	Rank      any
+	// The sensitivity level of this label, from `Low` to `Critical`. (AI-inferred)
+	Rank any
 	// The schema name.
 	SchemaName any
 	// The table name.

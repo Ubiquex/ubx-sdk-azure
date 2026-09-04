@@ -2,28 +2,39 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ApigatewayApiManagementGatewayResource_Properties_Backend_Subnet {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface ApigatewayApiManagementGatewayResource_Properties_Backend {
+  /** A reference to the subnet this resource is deployed into. (AI-inferred) */
   subnet?: ApigatewayApiManagementGatewayResource_Properties_Backend_Subnet | Computed<ApigatewayApiManagementGatewayResource_Properties_Backend_Subnet>;
 }
 
 export interface ApigatewayApiManagementGatewayResource_Properties_ConfigurationApi {
+  /** The hostname this applies to. (AI-inferred) */
   hostname?: string | Computed<string>;
 }
 
 export interface ApigatewayApiManagementGatewayResource_Properties_Frontend {
+  /** The default hostname assigned to this gateway. (AI-inferred) */
   defaultHostname?: string | Computed<string>;
 }
 
 export interface ApigatewayApiManagementGatewayResource_Properties {
+  /** Configuration for the backend this gateway connects to. (AI-inferred) */
   backend?: ApigatewayApiManagementGatewayResource_Properties_Backend | Computed<ApigatewayApiManagementGatewayResource_Properties_Backend>;
+  /** Configuration for the gateway's own configuration API endpoint. (AI-inferred) */
   configurationApi?: ApigatewayApiManagementGatewayResource_Properties_ConfigurationApi | Computed<ApigatewayApiManagementGatewayResource_Properties_ConfigurationApi>;
+  /** When this resource was created, in UTC. (AI-inferred) */
   createdAtUtc?: string | Computed<string>;
+  /** Configuration for the frontend this gateway exposes. (AI-inferred) */
   frontend?: ApigatewayApiManagementGatewayResource_Properties_Frontend | Computed<ApigatewayApiManagementGatewayResource_Properties_Frontend>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The provisioning status this resource is transitioning toward. (AI-inferred) */
   targetProvisioningState?: string | Computed<string>;
+  /** Whether this gateway is deployed externally, internally, or not integrated with a virtual network. (AI-inferred) */
   virtualNetworkType?: string | Computed<string>;
 }
 

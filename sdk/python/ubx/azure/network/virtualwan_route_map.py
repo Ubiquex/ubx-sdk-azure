@@ -8,27 +8,40 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualwanRouteMap_Properties_Rules_Actions_Parameters:
+    # The BGP AS-path attribute observed for this route. (AI-inferred)
     as_path: Any = None
+    # A BGP community value attached to this route. (AI-inferred)
     community: Any = None
+    # The route prefix this rule matches. (AI-inferred)
     route_prefix: Any = None
 
 @dataclasses.dataclass
 class VirtualwanRouteMap_Properties_Rules_Actions:
+    # The parameter(s) making up this configuration. (AI-inferred)
     parameters: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class VirtualwanRouteMap_Properties_Rules_MatchCriteria:
+    # The BGP AS-path attribute observed for this route. (AI-inferred)
     as_path: Any = None
+    # A BGP community value attached to this route. (AI-inferred)
     community: Any = None
+    # The condition that must hold for this rule to apply. (AI-inferred)
     match_condition: Any = None
+    # The route prefix this rule matches. (AI-inferred)
     route_prefix: Any = None
 
 @dataclasses.dataclass
 class VirtualwanRouteMap_Properties_Rules:
+    # The action(s) this rule or policy applies. (AI-inferred)
     actions: Any = None
+    # Whether all or any of this rule's own conditions must match. (AI-inferred)
     match_criteria: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # What happens next when this rule's own condition matches. (AI-inferred)
     next_step_if_matched: Any = None
 
 @dataclasses.dataclass

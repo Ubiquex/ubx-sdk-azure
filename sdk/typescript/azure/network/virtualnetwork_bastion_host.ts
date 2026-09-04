@@ -2,24 +2,34 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddress {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface VirtualnetworkBastionHost_Properties_IpConfigurations_Properties {
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddress | Computed<VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddress | Computed<VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddress>;
 }
 
 export interface VirtualnetworkBastionHost_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualnetworkBastionHost_Properties_IpConfigurations_Properties | Computed<VirtualnetworkBastionHost_Properties_IpConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface VirtualnetworkBastionHost_Properties_NetworkAcls_IpRules {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
 }
 
@@ -49,6 +59,7 @@ export interface VirtualnetworkBastionHost_Properties {
   enableTunneling?: boolean | Computed<boolean>;
   /** IP configuration of the Bastion Host resource. */
   ipConfigurations?: VirtualnetworkBastionHost_Properties_IpConfigurations[] | Computed<VirtualnetworkBastionHost_Properties_IpConfigurations[]>;
+  /** Network access rule(s) restricting which network(s) can reach this resource. (AI-inferred) */
   networkAcls?: VirtualnetworkBastionHost_Properties_NetworkAcls | Computed<VirtualnetworkBastionHost_Properties_NetworkAcls>;
   /** Provisioning states of a resource. */
   provisioningState?: string | Computed<string>;

@@ -4,13 +4,20 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRelayServiceConnectionEntity_Properties struct {
-	BiztalkUri               any
-	EntityConnectionString   any
-	EntityName               any
-	Hostname                 any
-	Port                     any
+	// The BizTalk endpoint URI this connection targets. (AI-inferred)
+	BiztalkUri any
+	// The connection string for the specific entity (e.g. queue or topic) this applies to. (AI-inferred)
+	EntityConnectionString any
+	// The name of the specific entity (e.g. queue or topic) this applies to. (AI-inferred)
+	EntityName any
+	// The hostname this applies to. (AI-inferred)
+	Hostname any
+	// A network port number. (AI-inferred)
+	Port any
+	// The connection string for the underlying resource. (AI-inferred)
 	ResourceConnectionString any
-	ResourceType             any
+	// The category of resource this applies to. (AI-inferred)
+	ResourceType any
 }
 
 var OpenapiRelayServiceConnectionEntity_PropertiesFields = ubx.FieldMap{

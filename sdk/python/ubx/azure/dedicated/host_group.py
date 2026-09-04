@@ -17,6 +17,7 @@ class HostGroup_Properties_Hosts:
 
 @dataclasses.dataclass
 class HostGroup_Properties_InstanceView_Hosts:
+    # The name of the dedicated host. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass

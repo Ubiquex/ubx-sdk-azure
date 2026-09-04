@@ -15,8 +15,11 @@ export interface OpenapiWorkerPoolResource_Properties {
 }
 
 export interface OpenapiWorkerPoolResource_Sku_Capabilities {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A machine-readable reason code. (AI-inferred) */
   reason?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

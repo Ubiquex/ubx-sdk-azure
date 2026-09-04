@@ -16,7 +16,9 @@ export interface OpenapiRecipientTransferDetails_Properties_DetailedTransferStat
 }
 
 export interface OpenapiRecipientTransferDetails_Properties_ProductDetails {
+  /** A reference to the product this applies to. (AI-inferred) */
   productId?: string | Computed<string>;
+  /** The category of product this represents. (AI-inferred) */
   productType?: string | Computed<string>;
 }
 

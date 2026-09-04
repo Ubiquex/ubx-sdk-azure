@@ -26,16 +26,24 @@ class ConnectedclustersConnectedCluster_Properties_AadProfile:
 
 @dataclasses.dataclass
 class ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_AgentErrors:
+    # The specific software component this applies to. (AI-inferred)
     component: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # How serious this event is. (AI-inferred)
     severity: Any = None
+    # When this event occurred. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
 class ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_SystemComponents:
+    # The version currently installed. (AI-inferred)
     current_version: Any = None
+    # The major version component this applies to. (AI-inferred)
     major_version: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The version explicitly requested by the caller, overriding the default. (AI-inferred)
     user_specified_version: Any = None
 
 @dataclasses.dataclass
@@ -53,8 +61,11 @@ class ConnectedclustersConnectedCluster_Properties_ArcAgentProfile:
 
 @dataclasses.dataclass
 class ConnectedclustersConnectedCluster_Properties_ArcAgentryConfigurations:
+    # The specific feature this applies to. (AI-inferred)
     feature: Any = None
+    # Extension setting(s) encrypted at rest and never returned in subsequent reads. (AI-inferred)
     protected_settings: Any = None
+    # The setting(s) configuring this extension. (AI-inferred)
     settings: Any = None
 
 @dataclasses.dataclass
@@ -96,6 +107,7 @@ class ConnectedclustersConnectedCluster_Properties:
     distribution: Any = None
     # The Kubernetes distribution version on this connected cluster.
     distribution_version: Any = None
+    # Configuration for the gateway used to connect this cluster back to Azure. (AI-inferred)
     gateway: Any = None
     # The infrastructure on which the Kubernetes cluster represented by this connected cluster is running on.
     infrastructure: Any = None

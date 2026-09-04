@@ -4,9 +4,12 @@ package dynatrace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TagRule_Properties_LogRules_FilteringTags struct {
+	// Whether resources carrying this tag are included in or excluded from log forwarding. (AI-inferred)
 	Action any
-	Name   any
-	Value  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The tag value this log filtering rule matches. (AI-inferred)
+	Value any
 }
 
 type TagRule_Properties_LogRules struct {

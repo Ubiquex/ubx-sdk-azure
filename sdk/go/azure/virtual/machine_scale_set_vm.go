@@ -4,7 +4,9 @@ package virtual
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MachineScaleSetVm_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client ID (GUID) of the user-assigned managed identity, used to identify it when requesting tokens. (AI-inferred)
+	ClientId any
+	// The principal ID of the user-assigned identity assigned to the virtual machine scale set VM. (AI-inferred)
 	PrincipalId any
 }
 
@@ -45,6 +47,7 @@ type MachineScaleSetVm_Properties_AvailabilitySet struct {
 }
 
 type MachineScaleSetVm_Properties_CapacityReservation struct {
+	// Specifies the capacity reservation group to associate with the virtual machine scale set VM. This allows the VM to use reserved capacity from the specified group. (AI-inferred)
 	CapacityReservationGroup any
 	// Specifies whether the virtual machine is explicitly opted out from being associated with any capacity reservation. When set to true, the virtual machine will not be allowed to implicitly or explicitly associate with any type of capacity reservation and will consume capacity from the publicly available capacity. Minimum api-version: 2026-04-01.
 	DisableCapacityReservationAssignment any
@@ -101,33 +104,48 @@ type MachineScaleSetVm_Properties_InstanceView_BootDiagnostics struct {
 }
 
 type MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings_DiskEncryptionKey struct {
-	SecretUrl   any
+	// The secret URL of the disk encryption key in the Key Vault. This URL points to the secret containing the encryption key used for disk encryption. (AI-inferred)
+	SecretUrl any
+	// Specifies the Azure Key Vault that contains the disk encryption key used for encrypting the disk. (AI-inferred)
 	SourceVault any
 }
 
 type MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings_KeyEncryptionKey struct {
-	KeyUrl      any
+	// The URL of the key encryption key (KEK) used to wrap the disk encryption key. (AI-inferred)
+	KeyUrl any
+	// The Key Vault that contains the key encryption key used for disk encryption. (AI-inferred)
 	SourceVault any
 }
 
 type MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings struct {
+	// The disk encryption key used for encrypting the disk, containing a reference to the Azure Key Vault secret (secret URL and source vault). (AI-inferred)
 	DiskEncryptionKey any
-	Enabled           any
-	KeyEncryptionKey  any
+	// Indicates whether encryption is enabled for the disk. (AI-inferred)
+	Enabled any
+	// Represents the Key Encryption Key (KEK) used to wrap the disk encryption key. Includes the key URL and the source vault reference. (AI-inferred)
+	KeyEncryptionKey any
 }
 
 type MachineScaleSetVm_Properties_InstanceView_Disks struct {
-	EncryptionSettings     any
-	Name                   any
-	Statuses               any
+	// The encryption settings for the disk, as observed in the instance view. Each object represents the encryption configuration applied to this disk, typically including encryption status and key references. (AI-inferred)
+	EncryptionSettings any
+	Name               any
+	// A list of statuses reported for the disk, with each status containing details such as code, level, display status, and message. (AI-inferred)
+	Statuses any
+	// The storage alignment status of the disk. Possible values are 'Aligned' and 'Unaligned'. (AI-inferred)
 	StorageAlignmentStatus any
 }
 
 type MachineScaleSetVm_Properties_InstanceView_Extensions struct {
-	Name               any
-	Statuses           any
-	Substatuses        any
-	Type               any
+	// The name of the virtual machine extension as reported in the instance view. (AI-inferred)
+	Name any
+	// The list of statuses for the extension instance view, including status code, level, display status, message, and time. (AI-inferred)
+	Statuses any
+	// The list of sub-statuses for the extension instance view, providing additional status information beyond the primary status. (AI-inferred)
+	Substatuses any
+	// The type of the virtual machine extension, specifying the publisher and extension type (e.g., Microsoft.Azure.Extensions.CustomScript). (AI-inferred)
+	Type any
+	// The version number of the extension handler running on the VM instance. (AI-inferred)
 	TypeHandlerVersion any
 }
 
@@ -154,8 +172,11 @@ type MachineScaleSetVm_Properties_InstanceView_MaintenanceRedeployStatus struct 
 }
 
 type MachineScaleSetVm_Properties_InstanceView_VmAgent_ExtensionHandlers struct {
-	Status             any
-	Type               any
+	// The status of the extension handler, containing properties such as code, level (e.g., Info, Warning, Error), displayStatus, message, and time. (AI-inferred)
+	Status any
+	// The type of the extension handler, such as Microsoft.Compute.CustomScriptExtension. (AI-inferred)
+	Type any
+	// The version of the extension handler type installed on the virtual machine. (AI-inferred)
 	TypeHandlerVersion any
 }
 
@@ -224,84 +245,124 @@ type MachineScaleSetVm_Properties_NetworkProfile_InterconnectGroupProfile struct
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_DnsSettings struct {
+	// Specifies the list of custom DNS server IP addresses to use for the network interface. (AI-inferred)
 	DnsServers any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_DnsSettings struct {
-	DomainNameLabel      any
+	// The domain name label for the DNS settings of the public IP address. This label is used to construct the FQDN as <label>.<region>.cloudapp.azure.com. (AI-inferred)
+	DomainNameLabel any
+	// Specifies the scope of domain name label reuse. Allowed values are TenantReuse, SubscriptionReuse, ResourceGroupReuse, and NoReuse, which indicate whether the label can be reused at the tenant, subscription, resource group, or not at all. (AI-inferred)
 	DomainNameLabelScope any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_IpTags struct {
+	// The unique identifier of the first-party service tag associated with this IP tag. (AI-inferred)
 	FirstPartyServiceTagId any
-	IpTagType              any
-	Tag                    any
+	// The type of the IP tag, which indicates the category or purpose of the tag (e.g., 'FirstPartyUsage' for first-party services). (AI-inferred)
+	IpTagType any
+	// The value of the IP tag. This is paired with the IP tag type to specify a classification for the public IP address, such as routing preference or usage category. (AI-inferred)
+	Tag any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties struct {
-	DeleteOption             any
-	DnsSettings              any
-	IdleTimeoutInMinutes     any
-	IpTags                   any
-	PublicIpaddressVersion   any
+	// Specifies whether the public IP address is deleted or detached when the VM is deleted. Allowed values: 'Delete' (delete the public IP) and 'Detach' (retain the public IP, but detach it from the VM). (AI-inferred)
+	DeleteOption any
+	// Configuration for DNS settings on the public IP address, including domain name label and fully qualified domain name (FQDN). (AI-inferred)
+	DnsSettings any
+	// The idle timeout in minutes for the public IP address. This specifies how long a connection can remain idle before being closed by Azure; valid values are typically between 4 and 30 minutes. (AI-inferred)
+	IdleTimeoutInMinutes any
+	// A list of IP tags to associate with the public IP address. Each IP tag is used to classify traffic for Microsoft and partner services, typically containing a tag type and a tag value. (AI-inferred)
+	IpTags any
+	// The IP version of the public IP address. Valid values are 'IPv4' and 'IPv6'. (AI-inferred)
+	PublicIpaddressVersion any
+	// Specifies the public IP address allocation method. Allowed values are 'Dynamic' (the IP address can change) and 'Static' (a fixed IP address is assigned). (AI-inferred)
 	PublicIpallocationMethod any
-	PublicIpprefix           any
+	// The public IP prefix resource to associate with the public IP address. This allows the IP address to be allocated from a predefined range. (AI-inferred)
+	PublicIpprefix any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Sku struct {
+	// The SKU name for the public IP address. Allowed values are Basic and Standard. (AI-inferred)
 	Name any
+	// The tier of the public IP address SKU. Allowed values are 'Regional' or 'Global'. (AI-inferred)
 	Tier any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration struct {
 	Name       any
 	Properties any
-	Sku        any
-	Tags       any
+	// The SKU (stock keeping unit) for the public IP address configuration, defining the pricing tier and available features. (AI-inferred)
+	Sku any
+	// A map of key-value pairs used to tag the public IP address configuration for management and organization purposes. (AI-inferred)
+	Tags any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties struct {
+	// A list of references to backend address pools of an Azure Application Gateway. Each entry is a SubResource containing the resource ID of the backend pool. The IP configuration is associated with these pools so that the VM can receive traffic routed by the application gateway. (AI-inferred)
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups             any
-	LoadBalancerBackendAddressPools       any
-	Primary                               any
-	PrivateIpaddressVersion               any
-	PublicIpaddressConfiguration          any
-	Subnet                                any
+	// The list of Application Security Groups (ASGs) associated with the IP configuration. Each object references an ASG by its resource ID, enabling the grouping of virtual machines for security policy enforcement. (AI-inferred)
+	ApplicationSecurityGroups any
+	// Specifies the backend address pools of a load balancer to which this IP configuration is associated. In Azure, this is typically an array of references (resource IDs) to the load balancer's backend address pools. (AI-inferred)
+	LoadBalancerBackendAddressPools any
+	// Indicates whether this IP configuration is the primary configuration for the network interface. When true, this configuration is the primary IP configuration. (AI-inferred)
+	Primary any
+	// The private IP address version for the IP configuration, either IPv4 or IPv6. (AI-inferred)
+	PrivateIpaddressVersion      any
+	PublicIpaddressConfiguration any
+	// A reference to the subnet resource within the virtual network to which this IP configuration is attached. (AI-inferred)
+	Subnet any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations struct {
+	// The name of the IP configuration. This name must be unique within the network interface. (AI-inferred)
 	Name       any
 	Properties any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties struct {
-	AuxiliaryMode               any
-	AuxiliarySku                any
-	DeleteOption                any
-	DisableTcpStateTracking     any
-	DnsSettings                 any
-	DscpConfiguration           any
+	// Specifies the auxiliary mode of the network interface configuration. Allowed values: `None`, `AcceleratedConnections`, and `Floating`. (AI-inferred)
+	AuxiliaryMode any
+	// The SKU for the auxiliary mode of the network interface configuration. Allowed values are 'None', 'A1', 'A2', 'A4', and 'A8'. (AI-inferred)
+	AuxiliarySku any
+	// Specifies whether the network interface is deleted or detached when the virtual machine scale set VM is deleted. Allowed values: 'Delete' (delete the NIC) and 'Detach' (keep the NIC, remove association). (AI-inferred)
+	DeleteOption any
+	// Whether TCP state tracking is disabled on this network interface configuration. Set to true to disable the Azure platform's TCP state tracking, typically for network virtual appliances that manage their own connection state. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS settings for the network interface configuration, used to specify custom DNS server IP addresses for the VMSS instance's network interface. (AI-inferred)
+	DnsSettings any
+	// The DSCP configuration associated with this network interface. This is a reference object containing the resource ID of an existing DSCP configuration. (AI-inferred)
+	DscpConfiguration any
+	// Indicates whether accelerated networking is enabled on the network interface. When enabled, this enables single root I/O virtualization (SR-IOV) for the VM, which can improve network performance. (AI-inferred)
 	EnableAcceleratedNetworking any
-	EnableFpga                  any
-	EnableIpforwarding          any
-	IpConfigurations            any
-	NetworkSecurityGroup        any
-	Primary                     any
+	// Whether to enable FPGA-based network acceleration on this network interface. When true, the interface uses FPGA (Field-Programmable Gate Array) capabilities to offload network processing. (AI-inferred)
+	EnableFpga any
+	// Enables IP forwarding on this network interface, allowing the VM to forward traffic from other network interfaces or sources, commonly used for network virtual appliances. (AI-inferred)
+	EnableIpforwarding any
+	// A list of IP configurations for this network interface configuration. Each IP configuration defines the private IP address, subnet, and optional public IP address for the virtual machine scale set VM. (AI-inferred)
+	IpConfigurations any
+	// The network security group (NSG) associated with this network interface configuration within the virtual machine scale set. (AI-inferred)
+	NetworkSecurityGroup any
+	// Specifies whether this network interface is the primary network interface for the virtual machine. Only one network interface configuration in the scale set can be marked as primary. (AI-inferred)
+	Primary any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations struct {
+	// The name of the network interface configuration. This name is used to identify the NIC configuration within the network profile of the VM scale set instance. (AI-inferred)
 	Name       any
 	Properties any
 	Tags       any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaces_Properties struct {
+	// Specifies whether the network interface should be deleted or detached when the VM is deleted. 'Delete' removes the NIC, while 'Detach' keeps it but removes the association. (AI-inferred)
 	DeleteOption any
-	Primary      any
+	// Indicates whether this is the primary network interface for the virtual machine. One network interface must be marked as primary. (AI-inferred)
+	Primary any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaces struct {
+	// The configuration properties of the network interface, including its IP configurations and whether it is the primary network interface. (AI-inferred)
 	Properties any
 }
 
@@ -317,49 +378,78 @@ type MachineScaleSetVm_Properties_NetworkProfile struct {
 }
 
 type MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties struct {
-	DeleteOption           any
-	DnsSettings            any
-	IdleTimeoutInMinutes   any
-	IpTags                 any
+	// Specifies the behavior for the public IP address when the VM is deleted. Allowed values are "Delete" (the public IP is deleted along with the VM) and "Detach" (the public IP is detached and remains in the subscription). (AI-inferred)
+	DeleteOption any
+	// DNS settings for the public IP address, including the domain name label, fully qualified domain name (FQDN), and reverse FQDN. (AI-inferred)
+	DnsSettings any
+	// The number of minutes that a connection to the public IP address can remain idle before it is terminated by Azure. (AI-inferred)
+	IdleTimeoutInMinutes any
+	// A list of IP tags for the public IP address. Each tag is an object containing a tag type and a tag value. (AI-inferred)
+	IpTags any
+	// The version of the public IP address assigned to this IP configuration. Allowed values are IPv4 or IPv6. (AI-inferred)
 	PublicIpaddressVersion any
-	PublicIpprefix         any
+	// Specifies the public IP prefix from which the public IP address is allocated. This is a reference to a public IP prefix resource. (AI-inferred)
+	PublicIpprefix any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration struct {
+	// The name of the public IP address configuration within the IP configuration of a network interface. (AI-inferred)
 	Name       any
 	Properties any
-	Sku        any
-	Tags       any
+	// The SKU of the public IP address, defining its tier and performance characteristics. (AI-inferred)
+	Sku any
+	// A mapping of user-defined key-value pairs to attach to the public IP address in this configuration. These tags can be used for categorizing and organizing Azure resources. (AI-inferred)
+	Tags any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties struct {
+	// Specifies the list of application gateway backend address pools associated with this IP configuration. Each object in the list represents a reference to a backend address pool resource. (AI-inferred)
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups             any
-	LoadBalancerBackendAddressPools       any
-	LoadBalancerInboundNatPools           any
-	Primary                               any
-	PrivateIpaddressVersion               any
-	PublicIpaddressConfiguration          any
-	Subnet                                any
+	// Specifies the application security groups that the network interface IP configuration belongs to. Each item contains the resource ID of an application security group. (AI-inferred)
+	ApplicationSecurityGroups any
+	// Specifies the list of load balancer backend address pools to which this IP configuration is assigned, enabling the virtual machine to receive inbound traffic from a load balancer. Each item is a reference to an existing backend pool in the associated load balancer. (AI-inferred)
+	LoadBalancerBackendAddressPools any
+	// List of references to load balancer inbound NAT pools associated with this IP configuration. Each element specifies a load balancer inbound NAT pool to use for port forwarding or traffic routing. (AI-inferred)
+	LoadBalancerInboundNatPools any
+	// Specifies whether this IP configuration is the primary IP configuration for the network interface. Only one IP configuration per network interface can be set as primary. (AI-inferred)
+	Primary any
+	// The IP version of the private IP address, either IPv4 or IPv6. (AI-inferred)
+	PrivateIpaddressVersion any
+	// The public IP address configuration for this IP configuration, used to define settings for the public IP address assigned to the network interface in the virtual machine scale set. (AI-inferred)
+	PublicIpaddressConfiguration any
+	// Specifies the subnet to which the IP configuration is attached. This is a reference object containing the resource ID of the subnet within a virtual network. (AI-inferred)
+	Subnet any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations struct {
-	Name       any
+	Name any
+	// The specific configuration properties for this IP configuration, including settings such as the subnet, private IP address allocation, and any associated load balancer backend pools. (AI-inferred)
 	Properties any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties struct {
-	AuxiliaryMode               any
-	AuxiliarySku                any
-	DeleteOption                any
-	DisableTcpStateTracking     any
-	DnsSettings                 any
+	// Specifies the auxiliary mode for the network interface configuration. Possible values are: None, AcceleratedConnections, and Floating. (AI-inferred)
+	AuxiliaryMode any
+	// Specifies the auxiliary SKU for the network interface, which determines the auxiliary network capability. Allowed values are None (no auxiliary SKU) and A1, A2, A4, A8, with higher values indicating increased auxiliary network configuration. (AI-inferred)
+	AuxiliarySku any
+	// Determines whether the network interface is deleted or detached when the virtual machine is deleted. Allowed values: 'Delete' or 'Detach'. (AI-inferred)
+	DeleteOption any
+	// Indicates whether TCP state tracking is disabled for the IP configuration. When set to true, the network interface does not track TCP connection state, which can be useful for asymmetric routing scenarios. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS settings for the network interface, including DNS servers and internal DNS name label. (AI-inferred)
+	DnsSettings any
+	// Enables accelerated networking on the network interface, which uses Single Root I/O Virtualization (SR-IOV) to provide higher networking performance and lower latency. Set to true to enable, false to disable. (AI-inferred)
 	EnableAcceleratedNetworking any
-	EnableFpga                  any
-	EnableIpforwarding          any
-	IpConfigurations            any
-	NetworkSecurityGroup        any
-	Primary                     any
+	// Whether to enable FPGA (Field Programmable Gate Array) acceleration on this network interface configuration. Set to true only for VM sizes that support FPGA-accelerated networking. (AI-inferred)
+	EnableFpga any
+	// Indicates whether IP forwarding is enabled on this network interface. When enabled, the virtual machine can forward packets not addressed to itself, which is useful for scenarios such as routing or network virtual appliances. (AI-inferred)
+	EnableIpforwarding any
+	// Specifies the IP configurations for the network interface. Each IP configuration defines settings such as subnet, private IP address allocation, and associated public IP address. (AI-inferred)
+	IpConfigurations any
+	// The network security group (NSG) to associate with this network interface configuration. This is a reference to an existing NSG resource, typically specified via its resource ID. (AI-inferred)
+	NetworkSecurityGroup any
+	// Indicates whether this network interface is the primary NIC for the virtual machine scale set VM. When multiple network interfaces are configured, one must be marked as primary. (AI-inferred)
+	Primary any
 }
 
 type MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations struct {
@@ -392,8 +482,10 @@ type MachineScaleSetVm_Properties_OsProfile_LinuxConfiguration_PatchSettings str
 }
 
 type MachineScaleSetVm_Properties_OsProfile_LinuxConfiguration_Ssh_PublicKeys struct {
+	// The SSH public key data, typically the contents of a public key file in PEM format, used for authenticating to the virtual machine. (AI-inferred)
 	KeyData any
-	Path    any
+	// The full path on the Linux VM where the SSH public key is placed, typically ending in .ssh/authorized_keys for a specific user. (AI-inferred)
+	Path any
 }
 
 type MachineScaleSetVm_Properties_OsProfile_LinuxConfiguration_Ssh struct {
@@ -415,20 +507,28 @@ type MachineScaleSetVm_Properties_OsProfile_LinuxConfiguration struct {
 }
 
 type MachineScaleSetVm_Properties_OsProfile_Secrets_VaultCertificates struct {
+	// The name of the certificate store on the Windows virtual machine where the certificate is added, such as 'My' or 'Root'. This is used when installing certificates from Azure Key Vault. (AI-inferred)
 	CertificateStore any
-	CertificateUrl   any
+	// The URL of the certificate in the Azure Key Vault, including the certificate version. This URL identifies the certificate to install on the virtual machine. (AI-inferred)
+	CertificateUrl any
 }
 
 type MachineScaleSetVm_Properties_OsProfile_Secrets struct {
-	SourceVault       any
+	// The Azure Key Vault that contains the certificates to be installed. Each secret in the OS profile must specify a source vault, and the certificates are referenced by their URLs within that vault. (AI-inferred)
+	SourceVault any
+	// A list of Key Vault certificates to be installed on the virtual machine. Each item references a certificate URL in Azure Key Vault. (AI-inferred)
 	VaultCertificates any
 }
 
 type MachineScaleSetVm_Properties_OsProfile_WindowsConfiguration_AdditionalUnattendContent struct {
+	// The name of the Windows component to configure during unattended installation. The only allowed value is 'Microsoft-Windows-Shell-Setup'. (AI-inferred)
 	ComponentName any
-	Content       any
-	PassName      any
-	SettingName   any
+	// Specifies the XML formatted content that is added to the unattend.xml file for the Windows configuration. (AI-inferred)
+	Content any
+	// The name of the Windows unattend pass for the additional unattended content. The allowed value is 'OobeSystem', which specifies the Out-of-Box Experience pass. (AI-inferred)
+	PassName any
+	// Specifies the name of the additional Unattended Content setting. Allowed values: AutoLogon, FirstLogonCommands. (AI-inferred)
+	SettingName any
 }
 
 type MachineScaleSetVm_Properties_OsProfile_WindowsConfiguration_PatchSettings struct {
@@ -443,8 +543,10 @@ type MachineScaleSetVm_Properties_OsProfile_WindowsConfiguration_PatchSettings s
 }
 
 type MachineScaleSetVm_Properties_OsProfile_WindowsConfiguration_WinRm_Listeners struct {
+	// The URL of the certificate in Azure Key Vault used for the HTTPS WinRM listener on the virtual machine. (AI-inferred)
 	CertificateUrl any
-	Protocol       any
+	// Specifies the protocol used by the WinRM listener. Allowed values are 'Http' and 'Https'. (AI-inferred)
+	Protocol any
 }
 
 type MachineScaleSetVm_Properties_OsProfile_WindowsConfiguration_WinRm struct {
@@ -547,25 +649,36 @@ type MachineScaleSetVm_Properties_SecurityProfile struct {
 }
 
 type MachineScaleSetVm_Properties_StorageProfile_DataDisks_Image struct {
+	// The URI of the virtual hard disk (VHD) blob used as the image for the data disk. This applies to unmanaged disks, where the image is referenced by its blob storage URI. (AI-inferred)
 	Uri any
 }
 
 type MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy struct {
+	// The action to take when a disk delay is detected. Allowed values are 'None' (no action) and 'AutomaticReattach' (automatically reattach the disk). (AI-inferred)
 	ActionOnDiskDelay any
 }
 
 type MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties struct {
-	AvailabilityPolicy         any
-	BurstingEnabled            any
-	DiskAccessId               any
-	DiskIopsreadOnly           any
-	DiskMbpsReadOnly           any
-	LogicalSectorSize          any
-	MaxShares                  any
-	NetworkAccessPolicy        any
+	AvailabilityPolicy any
+	// Whether performance bursting is enabled for the managed disk, allowing it to exceed its provisioned performance limits temporarily. (AI-inferred)
+	BurstingEnabled any
+	// Specifies the Azure resource ID of the DiskAccess resource to associate with the managed disk for enabling private endpoint access to the disk. (AI-inferred)
+	DiskAccessId any
+	// The provisioned read-only IOPS limit for the managed disk, expressed in operations per second. This value applies to scenarios where the disk is used in a read-only or shared configuration. (AI-inferred)
+	DiskIopsreadOnly any
+	// The maximum read throughput, in MB/s, that the managed disk can support when mounted in read-only mode. This performance limit applies to certain disk types (e.g., Ultra disks or Premium SSD v2) within the VMSS VM's data disk configuration. (AI-inferred)
+	DiskMbpsReadOnly  any
+	LogicalSectorSize any
+	// The maximum number of VMs that can share the disk. The value must be at least 1. (AI-inferred)
+	MaxShares any
+	// The network access policy for the managed data disk. Allowed values are 'AllowAll' (allow all network access), 'AllowPrivate' (allow only private network access), and 'DenyAll' (deny all network access). (AI-inferred)
+	NetworkAccessPolicy any
+	// Boolean flag indicating whether the managed disk is optimized for frequent attach/detach operations. When true, the disk is configured to reduce the time for attaching and detaching, which is useful for scenarios like cluster failover. (AI-inferred)
 	OptimizedForFrequentAttach any
-	PerformancePlus            any
-	Tier                       any
+	// Specifies whether to enable Azure Managed Disk Performance Plus, which provides higher IOPS and throughput limits on the disk for an additional cost. (AI-inferred)
+	PerformancePlus any
+	// Specifies the performance tier of the managed disk (e.g., P10, E10). (AI-inferred)
+	Tier any
 }
 
 type MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties struct {
@@ -573,34 +686,51 @@ type MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_Additiona
 }
 
 type MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_SecurityProfile struct {
-	DiskEncryptionSet      any
+	// The disk encryption set used to encrypt this managed disk at rest using customer-managed keys. (AI-inferred)
+	DiskEncryptionSet any
+	// Specifies the security encryption type for the managed disk. Allowed values: VMGuestStateOnly (encrypts only the VM guest state), DiskWithVMGuestState (encrypts both the disk and the VM guest state), NonPersistedTPM (uses a non-persisted TPM). (AI-inferred)
 	SecurityEncryptionType any
 }
 
 type MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk struct {
 	AdditionalDiskProperties any
-	DiskEncryptionSet        any
-	SecurityProfile          any
-	StorageAccountType       any
+	// Specifies the customer-managed disk encryption set to use for encrypting this managed data disk. Provide the resource ID of the disk encryption set in the 'id' property. (AI-inferred)
+	DiskEncryptionSet any
+	// The security profile of the managed data disk, used to configure disk-level security options such as Trusted Launch or confidential VM disk encryption. (AI-inferred)
+	SecurityProfile any
+	// Specifies the storage account type for the managed disk. Allowed values are Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, and PremiumV2_LRS. (AI-inferred)
+	StorageAccountType any
 }
 
 type MachineScaleSetVm_Properties_StorageProfile_DataDisks struct {
-	Caching                     any
-	CreateOption                any
-	DeleteOption                any
-	DetachOption                any
-	DiskIopsreadWrite           any
-	DiskMbpsReadWrite           any
-	DiskSizeGb                  any
-	Image                       any
-	Lun                         any
-	ManagedDisk                 any
-	Name                        any
-	SourceResource              any
+	// Specifies the caching requirements for the data disk. Possible values are None, ReadOnly, and ReadWrite. (AI-inferred)
+	Caching any
+	// Specifies how the data disk should be created. Allowed values are `FromImage` (use the data disk from the image), `Empty` (create a new blank disk), `Attach` (attach an existing managed disk), `Copy` (create the disk by copying from an existing disk or snapshot), and `Restore` (create the disk from a restore point). (AI-inferred)
+	CreateOption any
+	// Specifies the behavior of the data disk when the VM is deleted. When set to 'Delete', the disk is deleted along with the VM; when set to 'Detach', the disk is detached and retained. (AI-inferred)
+	DeleteOption any
+	// Specifies the detach option for the data disk. The only supported value is 'ForceDetach', which allows detaching the disk even if it is currently in use or has pending operations. (AI-inferred)
+	DetachOption any
+	// The number of I/O operations per second (IOPS) that the disk can support for both read and write operations. This is configurable for certain disk types, such as Ultra disks. (AI-inferred)
+	DiskIopsreadWrite any
+	// The maximum read/write throughput in megabytes per second (MB/s) that the data disk can sustain. This value is used to define the performance tier of the disk. (AI-inferred)
+	DiskMbpsReadWrite any
+	DiskSizeGb        any
+	// Specifies the image reference for the data disk, containing the URI to a VHD in a storage account. Used when the disk is created from an image (createOption = 'FromImage'). (AI-inferred)
+	Image any
+	// The Logical Unit Number (LUN) assigned to the data disk. This value uniquely identifies the disk within the virtual machine and is used by the operating system to address the disk. (AI-inferred)
+	Lun            any
+	ManagedDisk    any
+	Name           any
+	SourceResource any
+	// Specifies the fault domain alignment mode for the data disk. Possible values are 'Aligned' (disk is placed in the same fault domain as the VM) and 'BestEffortAligned' (alignment is attempted but not guaranteed). (AI-inferred)
 	StorageFaultDomainAlignment any
-	ToBeDetached                any
-	Vhd                         any
-	WriteAcceleratorEnabled     any
+	// Specifies whether the data disk should be detached from the virtual machine instead of being deleted when the VM is deleted. Set to true to detach the disk, false to delete it with the VM. (AI-inferred)
+	ToBeDetached any
+	// The virtual hard disk (VHD) settings for the data disk, typically containing the URI of the VHD blob that backs the disk when using unmanaged storage. (AI-inferred)
+	Vhd any
+	// Specifies whether write accelerator is enabled for this data disk. (AI-inferred)
+	WriteAcceleratorEnabled any
 }
 
 type MachineScaleSetVm_Properties_StorageProfile_ImageReference struct {
@@ -720,19 +850,32 @@ type MachineScaleSetVm_Properties struct {
 }
 
 type MachineScaleSetVm_Resources_Properties struct {
-	AutoUpgradeMinorVersion       any
-	EnableAutomaticUpgrade        any
-	ForceUpdateTag                any
-	InstanceView                  any
-	ProtectedSettings             any
+	// Specifies whether the virtual machine automatically upgrades to the latest minor version of the operating system image when it becomes available. (AI-inferred)
+	AutoUpgradeMinorVersion any
+	// Enable or disable automatic upgrades for this virtual machine scale set VM instance. (AI-inferred)
+	EnableAutomaticUpgrade any
+	// A user-specified tag value that, when changed, forces the virtual machine instance to be updated or reimaged even if it already has the latest scale set model. (AI-inferred)
+	ForceUpdateTag any
+	// Contains the runtime state and status of the virtual machine instance, including health statuses, disk and extension statuses, as viewed by Azure. (AI-inferred)
+	InstanceView any
+	// The protected settings for the VM extension, containing sensitive configuration that is encrypted and not visible in plaintext. These settings are transmitted securely to the VM. (AI-inferred)
+	ProtectedSettings any
+	// Specifies a reference to an Azure Key Vault secret that contains the protected settings for the extension. This allows sensitive configuration data to be stored securely in Key Vault rather than being exposed in the template. (AI-inferred)
 	ProtectedSettingsFromKeyVault any
-	ProvisionAfterExtensions      any
-	ProvisioningState             any
-	Publisher                     any
-	Settings                      any
-	SuppressFailures              any
-	Type                          any
-	TypeHandlerVersion            any
+	// Specifies the names of extensions that must be provisioned before this extension. This extension will only be provisioned after all referenced extensions have been successfully provisioned. (AI-inferred)
+	ProvisionAfterExtensions any
+	// The current provisioning state of the virtual machine scale set instance, indicating whether the VM has been successfully provisioned or is still in progress. (AI-inferred)
+	ProvisioningState any
+	// The publisher of the VM extension, such as Microsoft.Compute or Microsoft.Azure.Extensions. (AI-inferred)
+	Publisher any
+	// The configuration settings for the virtual machine scale set VM extension. This dynamic JSON object contains extension-specific properties, and its structure and valid values depend on the extension publisher and type. (AI-inferred)
+	Settings any
+	// Indicates whether failures reported by the extension should be suppressed. When true, an extension failure does not mark the virtual machine as failed; when false or omitted, the failure affects the VM's provisioning state. (AI-inferred)
+	SuppressFailures any
+	// The type of the resource or extension defined in the properties block, e.g., 'CustomScriptExtension' for a VM extension. (AI-inferred)
+	Type any
+	// Specifies the version of the extension handler that is used by the VM extension. (AI-inferred)
+	TypeHandlerVersion any
 }
 
 type MachineScaleSetVm_Resources struct {

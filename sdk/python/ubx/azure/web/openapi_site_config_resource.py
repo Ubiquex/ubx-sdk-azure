@@ -18,7 +18,9 @@ class OpenapiSiteConfigResource_Properties_ApiManagementConfig:
 
 @dataclasses.dataclass
 class OpenapiSiteConfigResource_Properties_AppSettings:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -57,18 +59,28 @@ class OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_SlowRequests:
 
 @dataclasses.dataclass
 class OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_StatusCodes:
+    # How many of this item there are. (AI-inferred)
     count: Any = None
+    # A file or URL path. (AI-inferred)
     path: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # A more specific status code, refining `status`. (AI-inferred)
     sub_status: Any = None
+    # The time window this measurement or rule applies over. (AI-inferred)
     time_interval: Any = None
+    # A Windows-specific status code. (AI-inferred)
     win32_status: Any = None
 
 @dataclasses.dataclass
 class OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_StatusCodesRange:
+    # How many of this item there are. (AI-inferred)
     count: Any = None
+    # A file or URL path. (AI-inferred)
     path: Any = None
+    # The HTTP status code(s) triggering this rule. (AI-inferred)
     status_codes: Any = None
+    # The time window this measurement or rule applies over. (AI-inferred)
     time_interval: Any = None
 
 @dataclasses.dataclass
@@ -95,18 +107,28 @@ class OpenapiSiteConfigResource_Properties_AutoHealRules:
 
 @dataclasses.dataclass
 class OpenapiSiteConfigResource_Properties_AzureStorageAccounts:
+    # The access key credential used to authenticate. (AI-inferred)
     access_key: Any = None
+    # The name of the associated storage account. (AI-inferred)
     account_name: Any = None
+    # The path this volume is mounted at. (AI-inferred)
     mount_path: Any = None
+    # The network protocol used. (AI-inferred)
     protocol: Any = None
+    # The name of the file share this applies to. (AI-inferred)
     share_name: Any = None
+    # The current lifecycle state of this resource. (AI-inferred)
     state: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiSiteConfigResource_Properties_ConnectionStrings:
+    # The connection string used to reach this resource. (AI-inferred)
     connection_string: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -118,13 +140,21 @@ class OpenapiSiteConfigResource_Properties_Cors:
 
 @dataclasses.dataclass
 class OpenapiSiteConfigResource_Properties_Experiments_RampUpRules:
+    # The hostname traffic is routed to after this action. (AI-inferred)
     action_host_name: Any = None
+    # The URL called back to decide whether a pending network configuration change should proceed. (AI-inferred)
     change_decision_callback_url: Any = None
+    # How often, in minutes, this configuration is permitted to change. (AI-inferred)
     change_interval_in_minutes: Any = None
+    # The specific step size permitted for this change. (AI-inferred)
     change_step: Any = None
+    # The maximum percentage of traffic permitted to be rerouted. (AI-inferred)
     max_reroute_percentage: Any = None
+    # The minimum percentage of traffic permitted to be rerouted. (AI-inferred)
     min_reroute_percentage: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The percentage of traffic currently rerouted. (AI-inferred)
     reroute_percentage: Any = None
 
 @dataclasses.dataclass
@@ -134,22 +164,36 @@ class OpenapiSiteConfigResource_Properties_Experiments:
 
 @dataclasses.dataclass
 class OpenapiSiteConfigResource_Properties_HandlerMappings:
+    # The argument(s) passed to this operation. (AI-inferred)
     arguments: Any = None
+    # A reference to the site extension this applies to. (AI-inferred)
     extension: Any = None
+    # The interpreter used to run this script. (AI-inferred)
     script_processor: Any = None
 
 @dataclasses.dataclass
 class OpenapiSiteConfigResource_Properties_IpSecurityRestrictions:
+    # The action to perform. (AI-inferred)
     action: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The HTTP header(s) this applies to. (AI-inferred)
     headers: Any = None
+    # An IP address. (AI-inferred)
     ip_address: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The relative priority of this item. (AI-inferred)
     priority: Any = None
+    # The subnet mask applied to this address range. (AI-inferred)
     subnet_mask: Any = None
+    # A tag identifying traffic routed through this subnet. (AI-inferred)
     subnet_traffic_tag: Any = None
+    # A label attached to this resource. (AI-inferred)
     tag: Any = None
+    # A reference to the virtual network subnet this app integrates with. (AI-inferred)
     vnet_subnet_resource_id: Any = None
+    # A tag identifying traffic routed through this virtual network integration. (AI-inferred)
     vnet_traffic_tag: Any = None
 
 @dataclasses.dataclass
@@ -190,14 +234,20 @@ class OpenapiSiteConfigResource_Properties_Push:
 
 @dataclasses.dataclass
 class OpenapiSiteConfigResource_Properties_VirtualApplications_VirtualDirectories:
+    # The physical file system path this virtual directory maps to. (AI-inferred)
     physical_path: Any = None
+    # The virtual path this directory mapping applies to. (AI-inferred)
     virtual_path: Any = None
 
 @dataclasses.dataclass
 class OpenapiSiteConfigResource_Properties_VirtualApplications:
+    # The physical file system path this virtual directory maps to. (AI-inferred)
     physical_path: Any = None
+    # Whether this app is kept preloaded, avoiding a cold start on the first request after idling. (AI-inferred)
     preload_enabled: Any = None
+    # The virtual directory/directories mapped for this app. (AI-inferred)
     virtual_directories: Any = None
+    # The virtual path this directory mapping applies to. (AI-inferred)
     virtual_path: Any = None
 
 @dataclasses.dataclass

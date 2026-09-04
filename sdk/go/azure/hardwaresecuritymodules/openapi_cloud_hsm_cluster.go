@@ -4,7 +4,9 @@ package hardwaresecuritymodules
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCloudHsmCluster_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,30 +22,43 @@ type OpenapiCloudHsmCluster_Identity struct {
 }
 
 type OpenapiCloudHsmCluster_Properties_Hsms struct {
-	Fqdn         any
-	State        any
+	// The fully qualified domain name this applies to. (AI-inferred)
+	Fqdn any
+	// The current lifecycle state of this resource. (AI-inferred)
+	State any
+	// A human-readable description of this resource's own current state. (AI-inferred)
 	StateMessage any
 }
 
 type OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds                          any
-	PrivateEndpoint                   any
+	// The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
+	GroupIds any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

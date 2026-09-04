@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiMachine_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,7 +26,9 @@ class OpenapiMachine_Identity:
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_AgentConfiguration_ExtensionsAllowList:
+    # The publisher of this VM extension. (AI-inferred)
     publisher: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -70,7 +74,9 @@ class OpenapiMachine_Properties_CloudMetadata:
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_ErrorDetails_AdditionalInfo:
+    # Additional detail about this result. (AI-inferred)
     info: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -79,33 +85,52 @@ class OpenapiMachine_Properties_ErrorDetails_Details_Details:
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_ErrorDetails_Details:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_ErrorDetails:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_Extensions_Status:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # A human-readable summary of this status. (AI-inferred)
     display_status: Any = None
+    # The severity level of this status, e.g. `Info`, `Warning`, or `Error`. (AI-inferred)
     level: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # When this status was last reported. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_Extensions:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The version of the extension handler. (AI-inferred)
     type_handler_version: Any = None
 
 @dataclasses.dataclass
@@ -117,7 +142,9 @@ class OpenapiMachine_Properties_FirmwareProfile:
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_HardwareProfile_Processors:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The number of processor cores. (AI-inferred)
     number_of_cores: Any = None
 
 @dataclasses.dataclass
@@ -131,7 +158,9 @@ class OpenapiMachine_Properties_HardwareProfile:
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetails_VolumeLicenseDetails:
+    # The invoice number associated with this volume license. (AI-inferred)
     invoice_id: Any = None
+    # The program year this Software Assurance/subscription benefit applies to. (AI-inferred)
     program_year: Any = None
 
 @dataclasses.dataclass
@@ -178,12 +207,19 @@ class OpenapiMachine_Properties_LicenseProfile_EsuProfile:
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_LicenseProfile_ProductProfile_ProductFeatures:
+    # When billing for this product feature ends. (AI-inferred)
     billing_end_date: Any = None
+    # When billing for this product feature starts. (AI-inferred)
     billing_start_date: Any = None
+    # When this machine was disenrolled from this product feature. (AI-inferred)
     disenrollment_date: Any = None
+    # When this machine was enrolled in this product feature. (AI-inferred)
     enrollment_date: Any = None
+    # Detail about an error that occurred. (AI-inferred)
     error: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # This product feature's own current subscription status. (AI-inferred)
     subscription_status: Any = None
 
 @dataclasses.dataclass
@@ -220,6 +256,7 @@ class OpenapiMachine_Properties_LicenseProfile:
     license_status: Any = None
     # Describes the properties of a Product License Profile ARM model.
     product_profile: Any = None
+    # This machine's Software Assurance/subscription benefit status, used to determine Extended Security Update eligibility. (AI-inferred)
     software_assurance: Any = None
 
 @dataclasses.dataclass
@@ -235,19 +272,27 @@ class OpenapiMachine_Properties_LocationData:
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses_Subnet:
+    # The subnet's own address range, in CIDR notation. (AI-inferred)
     address_prefix: Any = None
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses:
+    # The literal IP address. (AI-inferred)
     address: Any = None
+    # Whether this is an IPv4 or IPv6 address. (AI-inferred)
     ip_address_version: Any = None
+    # The subnet this IP address belongs to. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The IP address(es) assigned to this network interface. (AI-inferred)
     ip_addresses: Any = None
+    # This network interface's own MAC address. (AI-inferred)
     mac_address: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
@@ -303,12 +348,19 @@ class OpenapiMachine_Properties_ServiceStatuses:
 
 @dataclasses.dataclass
 class OpenapiMachine_Properties_StorageProfile_Disks:
+    # The type of this disk, e.g. `Managed` or `Unmanaged`. (AI-inferred)
     disk_type: Any = None
+    # A machine-generated unique identifier for this disk. (AI-inferred)
     generated_id: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # This disk's own maximum size, in bytes. (AI-inferred)
     max_size_in_bytes: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # This disk's own file system path. (AI-inferred)
     path: Any = None
+    # This disk's own currently-used space, in bytes. (AI-inferred)
     used_space_in_bytes: Any = None
 
 @dataclasses.dataclass
@@ -397,19 +449,30 @@ class OpenapiMachine_Properties:
 
 @dataclasses.dataclass
 class OpenapiMachine_Resources_Properties:
+    # Whether this extension automatically upgrades to the latest minor version as new versions become available. (AI-inferred)
     auto_upgrade_minor_version: Any = None
+    # Whether Azure automatically upgrades this extension to newer versions as they're released. (AI-inferred)
     enable_automatic_upgrade: Any = None
+    # An opaque value that, when changed, forces this extension to re-run even though its own configuration is otherwise unchanged. (AI-inferred)
     force_update_tag: Any = None
+    # Real-time status information about this extension's own current runtime state. (AI-inferred)
     instance_view: Any = None
+    # Extension-specific configuration that's encrypted before being sent to the machine, never returned on a read. (AI-inferred)
     protected_settings: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The publisher of this VM extension. (AI-inferred)
     publisher: Any = None
+    # Extension-specific configuration, in JSON. (AI-inferred)
     settings: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The version of the extension handler. (AI-inferred)
     type_handler_version: Any = None
 
 @dataclasses.dataclass
 class OpenapiMachine_Resources:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 _OpenapiMachine_Identity_UserAssignedIdentitiesFields = {

@@ -4,10 +4,14 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDscConfiguration_Properties_Parameters struct {
+	// The value used when this parameter is left unset. (AI-inferred)
 	DefaultValue any
-	IsMandatory  any
-	Position     any
-	Type         any
+	// Whether this parameter must be supplied. (AI-inferred)
+	IsMandatory any
+	// This parameter's own position within its containing argument list. (AI-inferred)
+	Position any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiDscConfiguration_Properties_Source_Hash struct {

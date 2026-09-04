@@ -21,6 +21,7 @@ class KafkaConfiguration_Properties:
     credentials: Any = None
     # Optional partition Id for notification event hub. If not set, all partitions will be leveraged.
     event_hub_partition_id: Any = None
+    # A reference to the Event Hubs namespace this account's own Kafka-compatible endpoints connect through. (AI-inferred)
     event_hub_resource_id: Any = None
     # The event hub type.
     event_hub_type: Any = None

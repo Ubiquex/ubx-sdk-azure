@@ -9,6 +9,7 @@ type OpenapiCluster_Properties_PlatformCapabilities_ConfidentialCompute struct {
 }
 
 type OpenapiCluster_Properties_PlatformCapabilities struct {
+	// Whether this namespace runs on confidential computing infrastructure. (AI-inferred)
 	ConfidentialCompute any
 }
 
@@ -16,7 +17,8 @@ type OpenapiCluster_Properties struct {
 	// The UTC time when the Event Hubs Cluster was created.
 	CreatedAt any
 	// The metric ID of the cluster resource. Provided by the service and not modifiable by the user.
-	MetricId             any
+	MetricId any
+	// The platform-level capability/capabilities this namespace supports. (AI-inferred)
 	PlatformCapabilities any
 	// Provisioning state of the Cluster.
 	ProvisioningState any

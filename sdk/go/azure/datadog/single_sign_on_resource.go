@@ -21,10 +21,12 @@ var SingleSignOnResource_PropertiesFields = ubx.FieldMap{
 }
 
 type SingleSignOnResourceConfig struct {
+	// This Datadog single sign-on integration's own real configuration and status. (AI-inferred)
 	Properties any
 }
 
 type SingleSignOnResourceAttrs struct {
+	// This Datadog single sign-on integration's own real configuration and status. (AI-inferred)
 	Properties any
 }
 

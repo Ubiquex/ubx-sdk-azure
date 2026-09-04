@@ -2,14 +2,20 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Authorizations_Properties {
+  /** A pre-shared key used to authorize connecting to this ExpressRoute circuit. (AI-inferred) */
   authorizationKey?: string | Computed<string>;
+  /** Whether `authorization_key` has already been redeemed to establish a connection. (AI-inferred) */
   authorizationUseStatus?: string | Computed<string>;
+  /** A reference to the connection resource this applies to. (AI-inferred) */
   connectionResourceUri?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Authorizations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteExpressRouteCircuit_Properties_Authorizations_Properties | Computed<ExpressrouteExpressRouteCircuit_Properties_Authorizations_Properties>;
 }
 
@@ -19,97 +25,159 @@ export interface ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort {
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties_Ipv6CircuitConnectionConfig {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred) */
   circuitConnectionStatus?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** A pre-shared key used to authorize connecting to this ExpressRoute circuit. (AI-inferred) */
   authorizationKey?: string | Computed<string>;
+  /** The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred) */
   circuitConnectionStatus?: string | Computed<string>;
+  /** A reference to the ExpressRoute circuit peering this connection uses. (AI-inferred) */
   expressRouteCircuitPeering?: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort | Computed<ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort>;
+  /** IPv6-specific configuration for this circuit connection. (AI-inferred) */
   ipv6CircuitConnectionConfig?: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties_Ipv6CircuitConnectionConfig | Computed<ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties_Ipv6CircuitConnectionConfig>;
+  /** A reference to the peer ExpressRoute circuit's own matching peering, for a circuit connecting two ExpressRoute circuits directly. (AI-inferred) */
   peerExpressRouteCircuitPeering?: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort | Computed<ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties | Computed<ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties>;
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo {
+  /** An IP address prefix, in CIDR notation. (AI-inferred) */
   prefix?: string | Computed<string>;
+  /** A cryptographic signature validating this resource's own configuration or authorization. (AI-inferred) */
   signature?: string | Computed<string>;
+  /** An identifier for a pending validation request on this resource, e.g. an ExpressRoute prefix ownership check. (AI-inferred) */
   validationId?: string | Computed<string>;
+  /** The current outcome of validating this resource's own configuration, e.g. whether an advertised prefix passed ownership verification. (AI-inferred) */
   validationState?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig {
+  /** The BGP community value(s) attached to routes this peering advertises. (AI-inferred) */
   advertisedCommunities?: string[] | Computed<string[]>;
+  /** Output only. Per-prefix validation detail for each of this peering's own `advertised_public_prefixes`. (AI-inferred) */
   advertisedPublicPrefixInfo?: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo[] | Computed<ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo[]>;
+  /** The public IP address prefix(es) this Microsoft Peering advertises, e.g. `123.1.0.0/24` -- ownership of each is verified before routes go live. (AI-inferred) */
   advertisedPublicPrefixes?: string[] | Computed<string[]>;
+  /** Output only. Whether `advertised_public_prefixes` has passed ownership validation, e.g. `Configured` or `ValidationNeeded`. (AI-inferred) */
   advertisedPublicPrefixesState?: string | Computed<string>;
+  /** The customer's own public BGP Autonomous System Number, required for Microsoft Peering. (AI-inferred) */
   customerAsn?: number | Computed<number>;
+  /** Whether this ExpressRoute circuit uses the older, pre-IPv6-split routing configuration for Microsoft Peering. (AI-inferred) */
   legacyMode?: number | Computed<number>;
+  /** The Internet routing registry (e.g. `ARIN`, `RIPE`) `advertised_public_prefixes` ownership is validated against. (AI-inferred) */
   routingRegistryName?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig {
+  /** Configuration for this ExpressRoute circuit's own Microsoft Peering -- routes to Microsoft SaaS services (e.g. Microsoft 365) advertised over the circuit. (AI-inferred) */
   microsoftPeeringConfig?: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig | Computed<ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig>;
+  /** The `/30` subnet used for the primary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred) */
   primaryPeerAddressPrefix?: string | Computed<string>;
+  /** A reference to the route filter restricting which BGP routes are advertised over this Microsoft Peering. (AI-inferred) */
   routeFilter?: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort | Computed<ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort>;
+  /** The `/30` subnet used for the secondary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred) */
   secondaryPeerAddressPrefix?: string | Computed<string>;
+  /** The current operational state of this resource. (AI-inferred) */
   state?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The resource GUID of the resource this authorization was created for. (AI-inferred) */
   authResourceGuid?: string | Computed<string>;
+  /** The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred) */
   circuitConnectionStatus?: string | Computed<string>;
+  /** The name of this connection. (AI-inferred) */
   connectionName?: string | Computed<string>;
+  /** A reference to the ExpressRoute circuit peering this connection uses. (AI-inferred) */
   expressRouteCircuitPeering?: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort | Computed<ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort>;
+  /** A reference to the peer ExpressRoute circuit's own matching peering, for a circuit connecting two ExpressRoute circuits directly. (AI-inferred) */
   peerExpressRouteCircuitPeering?: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort | Computed<ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections_Properties | Computed<ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections_Properties>;
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Stats {
+  /** The total inbound bytes transferred over the primary link. (AI-inferred) */
   primarybytesIn?: number | Computed<number>;
+  /** The total outbound bytes transferred over the primary link. (AI-inferred) */
   primarybytesOut?: number | Computed<number>;
+  /** The total inbound bytes transferred over the secondary link. (AI-inferred) */
   secondarybytesIn?: number | Computed<number>;
+  /** The total outbound bytes transferred over the secondary link. (AI-inferred) */
   secondarybytesOut?: number | Computed<number>;
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties {
+  /** The BGP Autonomous System Number Microsoft's own edge uses for this peering. (AI-inferred) */
   azureAsn?: number | Computed<number>;
+  /** The connection(s) associated with this resource. (AI-inferred) */
   connections?: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections[] | Computed<ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections[]>;
+  /** A reference to the ExpressRoute connection this applies to. (AI-inferred) */
   expressRouteConnection?: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort | Computed<ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort>;
+  /** A concurrency-control value set by the gateway manager for this resource. (AI-inferred) */
   gatewayManagerEtag?: string | Computed<string>;
+  /** IPv6-specific configuration for this ExpressRoute peering. (AI-inferred) */
   ipv6PeeringConfig?: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig | Computed<ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig>;
+  /** The identity that last modified this resource. (AI-inferred) */
   lastModifiedBy?: string | Computed<string>;
+  /** Configuration for this ExpressRoute circuit's own Microsoft Peering -- routes to Microsoft SaaS services (e.g. Microsoft 365) advertised over the circuit. (AI-inferred) */
   microsoftPeeringConfig?: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig | Computed<ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig>;
+  /** The BGP Autonomous System Number of the peer this session is established with. (AI-inferred) */
   peerAsn?: number | Computed<number>;
+  /** The connection(s) established through this peering. (AI-inferred) */
   peeredConnections?: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections[] | Computed<ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections[]>;
+  /** The kind of ExpressRoute peering this represents, e.g. `AzurePrivatePeering` or `MicrosoftPeering`. (AI-inferred) */
   peeringType?: string | Computed<string>;
+  /** The name of the primary Microsoft Enterprise Edge router port this circuit connects to. (AI-inferred) */
   primaryAzurePort?: string | Computed<string>;
+  /** The `/30` subnet used for the primary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred) */
   primaryPeerAddressPrefix?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the route filter restricting which BGP routes are advertised over this Microsoft Peering. (AI-inferred) */
   routeFilter?: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort | Computed<ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort>;
+  /** The name of the secondary Microsoft Enterprise Edge router port this circuit connects to. (AI-inferred) */
   secondaryAzurePort?: string | Computed<string>;
+  /** The `/30` subnet used for the secondary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred) */
   secondaryPeerAddressPrefix?: string | Computed<string>;
+  /** A pre-shared key used to establish this connection. (AI-inferred) */
   sharedKey?: string | Computed<string>;
+  /** The current operational state of this resource. (AI-inferred) */
   state?: string | Computed<string>;
+  /** Traffic statistics for this resource. (AI-inferred) */
   stats?: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Stats | Computed<ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Stats>;
+  /** The VLAN identifier assigned to this circuit. (AI-inferred) */
   vlanId?: number | Computed<number>;
 }
 
 export interface ExpressrouteExpressRouteCircuit_Properties_Peerings {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties | Computed<ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties>;
 }
 

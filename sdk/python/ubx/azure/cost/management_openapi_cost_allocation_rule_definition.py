@@ -8,16 +8,21 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_SourceResources:
+    # The value(s) making up this field. (AI-inferred)
     values: Any = None
 
 @dataclasses.dataclass
 class ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources_Values:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The percentage value this threshold or notification applies at. (AI-inferred)
     percentage: Any = None
 
 @dataclasses.dataclass
 class ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources:
+    # The category of policy this represents. (AI-inferred)
     policy_type: Any = None
+    # The value(s) making up this field. (AI-inferred)
     values: Any = None
 
 @dataclasses.dataclass

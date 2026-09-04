@@ -68,6 +68,7 @@ class BmsErrorResponseConfig:
     e_tag: Any = None
     # Represents an Azure geography region where supported resource providers live.
     location: Any = None
+    # This backup error's own real, structured detail. (AI-inferred)
     properties: Any = None
     # Resource tags.
     tags: Any = None
@@ -84,6 +85,7 @@ class BmsErrorResponseAttrs:
     location: Any = None
     # The name of the resource
     name: Any = None
+    # This backup error's own real, structured detail. (AI-inferred)
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None

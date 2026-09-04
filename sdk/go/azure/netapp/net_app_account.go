@@ -4,7 +4,9 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetAppAccount_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,35 +22,61 @@ type NetAppAccount_Identity struct {
 }
 
 type NetAppAccount_Properties_ActiveDirectories_LdapSearchScope struct {
-	GroupDn               any
+	// The distinguished name of the LDAP group search base. (AI-inferred)
+	GroupDn any
+	// The LDAP filter used to determine a user's own group memberships. (AI-inferred)
 	GroupMembershipFilter any
-	UserDn                any
+	// The distinguished name of the LDAP user search base. (AI-inferred)
+	UserDn any
 }
 
 type NetAppAccount_Properties_ActiveDirectories struct {
-	ActiveDirectoryId             any
-	AdName                        any
-	Administrators                any
-	AesEncryption                 any
-	AllowLocalNfsUsersWithLdap    any
-	BackupOperators               any
-	Dns                           any
-	Domain                        any
-	EncryptDcconnections          any
-	KdcIp                         any
-	LdapOverTls                   any
-	LdapSearchScope               any
-	LdapSigning                   any
-	OrganizationalUnit            any
-	Password                      any
+	// A reference to the Active Directory connection this applies to. (AI-inferred)
+	ActiveDirectoryId any
+	// The NetBIOS name of the Active Directory domain. (AI-inferred)
+	AdName any
+	// The account(s) granted administrative access. (AI-inferred)
+	Administrators any
+	// Whether AES encryption is used for this Active Directory connection. (AI-inferred)
+	AesEncryption any
+	// Whether local NFS users are permitted to access this volume in addition to LDAP users. (AI-inferred)
+	AllowLocalNfsUsersWithLdap any
+	// The account(s) granted permission to manage backups. (AI-inferred)
+	BackupOperators any
+	// The DNS server IP address(es) used for this Active Directory connection. (AI-inferred)
+	Dns any
+	// The Active Directory domain this connection joins. (AI-inferred)
+	Domain any
+	// Whether the connection to Domain Controllers is encrypted. (AI-inferred)
+	EncryptDcconnections any
+	// The IP address of the Kerberos Key Distribution Center. (AI-inferred)
+	KdcIp any
+	// Whether LDAP traffic is encrypted using TLS. (AI-inferred)
+	LdapOverTls any
+	// The base distinguished name(s) LDAP searches for users and groups are scoped to. (AI-inferred)
+	LdapSearchScope any
+	// Whether LDAP signing is required for this Active Directory connection. (AI-inferred)
+	LdapSigning any
+	// The Active Directory Organizational Unit this connection's own computer objects are placed in. (AI-inferred)
+	OrganizationalUnit any
+	// The password credential used to authenticate. (AI-inferred)
+	Password any
+	// The Domain Controller server(s) preferred for LDAP client connections. (AI-inferred)
 	PreferredServersForLdapClient any
-	SecurityOperators             any
-	ServerRootCacertificate       any
-	Site                          any
-	SmbServerName                 any
-	Status                        any
-	StatusDetails                 any
-	Username                      any
+	// The account(s) granted permission to manage security settings. (AI-inferred)
+	SecurityOperators any
+	// The root CA certificate used to validate connections to this LDAP server. (AI-inferred)
+	ServerRootCacertificate any
+	// The Active Directory site this connection is associated with. (AI-inferred)
+	Site any
+	// The NetBIOS name of the SMB server hosting this volume. (AI-inferred)
+	SmbServerName any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// Additional detail about this resource's own current status. (AI-inferred)
+	StatusDetails any
+	// The username used to authenticate. (AI-inferred)
+	Username any
 }
 
 type NetAppAccount_Properties_Encryption_Identity struct {
@@ -91,6 +119,7 @@ type NetAppAccount_Properties struct {
 	Encryption any
 	// MultiAD Status for the account
 	MultiAdStatus any
+	// The domain used to map NFSv4 user and group names to numeric IDs. (AI-inferred)
 	NfsV4Iddomain any
 	// Azure lifecycle management
 	ProvisioningState any

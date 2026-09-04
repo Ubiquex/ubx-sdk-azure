@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class NetworkmanagerRoutingRuleCollection_Properties_AppliesTo:
+    # A reference to the network group this applies to. (AI-inferred)
     network_group_id: Any = None
 
 @dataclasses.dataclass

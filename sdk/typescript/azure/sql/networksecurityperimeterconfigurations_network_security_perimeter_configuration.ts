@@ -2,54 +2,82 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** The globally unique identifier of the associated network security perimeter. (AI-inferred) */
   perimeterGuid?: string | Computed<string>;
 }
 
 export interface NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties {
+  /** The IP address range(s), in CIDR notation, this rule applies to. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** Whether this rule applies to inbound or outbound traffic. (AI-inferred) */
   direction?: string | Computed<string>;
+  /** The fully qualified domain name(s) this rule applies to. (AI-inferred) */
   fullyQualifiedDomainNames?: string[] | Computed<string[]>;
+  /** The network security perimeter(s) this resource participates in. (AI-inferred) */
   networkSecurityPerimeters?: NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter[] | Computed<NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter[]>;
+  /** The service tag(s) this rule matches. (AI-inferred) */
   serviceTags?: string[] | Computed<string[]>;
+  /** The subscription ID(s) this rule applies to. (AI-inferred) */
   subscriptions?: string[] | Computed<string[]>;
 }
 
 export interface NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties | Computed<NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties>;
 }
 
 export interface NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile {
+  /** The access rule(s) making up this network security perimeter profile. (AI-inferred) */
   accessRules?: NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules[] | Computed<NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules[]>;
+  /** The version of this profile's own access rule set. (AI-inferred) */
   accessRulesVersion?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The category of issue detected. (AI-inferred) */
   issueType?: string | Computed<string>;
+  /** How serious this issue is. (AI-inferred) */
   severity?: string | Computed<string>;
+  /** The access rule(s) recommended to resolve this issue. (AI-inferred) */
   suggestedAccessRules?: string[] | Computed<string[]>;
+  /** The resource ID(s) recommended to resolve this issue. (AI-inferred) */
   suggestedResourceIds?: string[] | Computed<string[]>;
 }
 
 export interface NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties | Computed<NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties>;
 }
 
 export interface NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation {
+  /** Whether this network security perimeter is enforced or only auditing (learning mode). (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties {
+  /** A reference to the network security perimeter this applies to. (AI-inferred) */
   networkSecurityPerimeter?: NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter | Computed<NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter>;
+  /** A reference to the network security perimeter profile this applies to. (AI-inferred) */
   profile?: NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile | Computed<NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile>;
+  /** Issue(s) detected while provisioning this network security perimeter association. (AI-inferred) */
   provisioningIssues?: NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues[] | Computed<NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The association linking this resource to a network security perimeter profile. (AI-inferred) */
   resourceAssociation?: NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation | Computed<NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation>;
 }
 

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VolumeGroupDetails_Properties_GroupMetaData_GlobalPlacementRules {
+  /** The key of this metadata entry. (AI-inferred) */
   key?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -20,157 +22,273 @@ export interface VolumeGroupDetails_Properties_GroupMetaData {
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Backup {
+  /** A reference to the backup policy this applies to. (AI-inferred) */
   backupPolicyId?: string | Computed<string>;
+  /** A reference to the backup vault this applies to. (AI-inferred) */
   backupVaultId?: string | Computed<string>;
+  /** Whether this policy's own rules are actively enforced, rather than only evaluated. (AI-inferred) */
   policyEnforced?: boolean | Computed<boolean>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_RansomwareProtection {
+  /** Output only. The ransomware protection state this volume is actually currently in. (AI-inferred) */
   actualRansomwareProtectionState?: string | Computed<string>;
+  /** The ransomware protection state requested for this volume. (AI-inferred) */
   desiredRansomwareProtectionState?: string | Computed<string>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication_DestinationReplications {
+  /** The Azure region this applies to. (AI-inferred) */
   region?: string | Computed<string>;
+  /** The kind of replication relationship this represents, e.g. cross-region or cross-zone. (AI-inferred) */
   replicationType?: string | Computed<string>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
+  /** The availability zone this resource is provisioned in. (AI-inferred) */
   zone?: string | Computed<string>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication_RemotePath {
+  /** The hostname a client outside the peered network uses to reach this volume. (AI-inferred) */
   externalHostName?: string | Computed<string>;
+  /** The name of this server. (AI-inferred) */
   serverName?: string | Computed<string>;
+  /** The name of this volume. (AI-inferred) */
   volumeName?: string | Computed<string>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication {
+  /** The replication relationship/relationships where this volume acts as the destination. (AI-inferred) */
   destinationReplications?: VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication_DestinationReplications[] | Computed<VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication_DestinationReplications[]>;
+  /** Whether this volume is the source or destination endpoint of a replication relationship. (AI-inferred) */
   endpointType?: string | Computed<string>;
+  /** Detail about setting up replication to an externally hosted destination. (AI-inferred) */
   externalReplicationSetupInfo?: string | Computed<string>;
+  /** The current status of setting up replication to an externally hosted destination. (AI-inferred) */
   externalReplicationSetupStatus?: string | Computed<string>;
+  /** The current synchronization state of this replication relationship. (AI-inferred) */
   mirrorState?: string | Computed<string>;
+  /** The current status of this replication relationship. (AI-inferred) */
   relationshipStatus?: string | Computed<string>;
+  /** The path on the remote system this configuration connects to. (AI-inferred) */
   remotePath?: VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication_RemotePath | Computed<VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication_RemotePath>;
+  /** The Azure region the replication source or destination volume is deployed in. (AI-inferred) */
   remoteVolumeRegion?: string | Computed<string>;
+  /** A reference to the replication source or destination volume. (AI-inferred) */
   remoteVolumeResourceId?: string | Computed<string>;
+  /** A unique identifier for this replication relationship. (AI-inferred) */
   replicationId?: string | Computed<string>;
+  /** How often data is replicated, e.g. hourly or daily. (AI-inferred) */
   replicationSchedule?: string | Computed<string>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Snapshot {
+  /** A reference to the snapshot policy this applies to. (AI-inferred) */
   snapshotPolicyId?: string | Computed<string>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_VolumeRelocation {
+  /** Whether this clone split has completed enough to be finalized. (AI-inferred) */
   readyToBeFinalized?: boolean | Computed<boolean>;
+  /** Whether relocation of this resource to different underlying infrastructure has been requested. (AI-inferred) */
   relocationRequested?: boolean | Computed<boolean>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties_DataProtection {
+  /** A reference to the backup this applies to. (AI-inferred) */
   backup?: VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Backup | Computed<VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Backup>;
+  /** Ransomware protection configuration for this volume. (AI-inferred) */
   ransomwareProtection?: VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_RansomwareProtection | Computed<VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_RansomwareProtection>;
+  /** Replication configuration for this volume. (AI-inferred) */
   replication?: VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication | Computed<VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication>;
+  /** A reference to the snapshot this applies to. (AI-inferred) */
   snapshot?: VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Snapshot | Computed<VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Snapshot>;
+  /** Configuration for relocating this volume to different underlying infrastructure. (AI-inferred) */
   volumeRelocation?: VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_VolumeRelocation | Computed<VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_VolumeRelocation>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties_ExportPolicy_Rules {
+  /** The client IP address range(s), in CIDR notation, permitted to access this export. (AI-inferred) */
   allowedClients?: string | Computed<string>;
+  /** Who is permitted to change file ownership on this volume, e.g. only root or any user. (AI-inferred) */
   chownMode?: string | Computed<string>;
+  /** Whether the SMB/CIFS protocol is enabled for this volume. (AI-inferred) */
   cifs?: boolean | Computed<boolean>;
+  /** Whether this client is granted root access. (AI-inferred) */
   hasRootAccess?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 authenticated clients are granted read-only access. (AI-inferred) */
   kerberos5ReadOnly?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 authenticated clients are granted read-write access. (AI-inferred) */
   kerberos5ReadWrite?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 with integrity checking authenticated clients are granted read-only access. (AI-inferred) */
   kerberos5iReadOnly?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 with integrity checking authenticated clients are granted read-write access. (AI-inferred) */
   kerberos5iReadWrite?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 with privacy protection authenticated clients are granted read-only access. (AI-inferred) */
   kerberos5pReadOnly?: boolean | Computed<boolean>;
+  /** Whether Kerberos v5 with privacy protection authenticated clients are granted read-write access. (AI-inferred) */
   kerberos5pReadWrite?: boolean | Computed<boolean>;
+  /** Whether the NFSv3 protocol is enabled for this volume. (AI-inferred) */
   nfsv3?: boolean | Computed<boolean>;
+  /** Whether the NFSv4.1 protocol is enabled for this volume. (AI-inferred) */
   nfsv41?: boolean | Computed<boolean>;
+  /** This rule's own relative evaluation order. (AI-inferred) */
   ruleIndex?: number | Computed<number>;
+  /** Whether UNIX clients are granted read-only access. (AI-inferred) */
   unixReadOnly?: boolean | Computed<boolean>;
+  /** Whether UNIX clients are granted read-write access. (AI-inferred) */
   unixReadWrite?: boolean | Computed<boolean>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties_ExportPolicy {
+  /** The rule(s) making up this policy. (AI-inferred) */
   rules?: VolumeGroupDetails_Properties_Volumes_Properties_ExportPolicy_Rules[] | Computed<VolumeGroupDetails_Properties_Volumes_Properties_ExportPolicy_Rules[]>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties_MountTargets {
+  /** A unique identifier for this volume's own file system. (AI-inferred) */
   fileSystemId?: string | Computed<string>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A unique identifier for this volume's own mount target. (AI-inferred) */
   mountTargetId?: string | Computed<string>;
+  /** The fully qualified domain name of the SMB server hosting this volume. (AI-inferred) */
   smbServerFqdn?: string | Computed<string>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes_Properties {
+  /** Whether the capacity pool is allowed to grow automatically to accommodate splitting a short-term clone. (AI-inferred) */
   acceptGrowCapacityPoolForShortTermCloneSplit?: string | Computed<string>;
+  /** Output only. The throughput, in MiB/s, this volume actually currently has provisioned. (AI-inferred) */
   actualThroughputMibps?: number | Computed<number>;
+  /** Whether this volume is enabled for use as an Azure VMware Solution datastore. (AI-inferred) */
   avsDataStore?: string | Computed<string>;
+  /** A reference to the backup this applies to. (AI-inferred) */
   backupId?: string | Computed<string>;
+  /** The identifier of the bare-metal tenant this volume is hosted on. (AI-inferred) */
   baremetalTenantId?: string | Computed<string>;
+  /** Whether specific processes are permitted to bypass cool access retrieval throttling. (AI-inferred) */
   breakthroughMode?: string | Computed<string>;
+  /** A reference to the capacity pool this volume belongs to. (AI-inferred) */
   capacityPoolResourceId?: string | Computed<string>;
+  /** How far this clone operation has progressed, as a percentage. (AI-inferred) */
   cloneProgress?: number | Computed<number>;
+  /** Whether inactive data on this volume is automatically tiered to a cooler, lower-cost storage tier. (AI-inferred) */
   coolAccess?: boolean | Computed<boolean>;
+  /** How aggressively cold, tiered data is retrieved back to the hot tier when accessed. (AI-inferred) */
   coolAccessRetrievalPolicy?: string | Computed<string>;
+  /** Which data on this volume is eligible for tiering to the cool access tier. (AI-inferred) */
   coolAccessTieringPolicy?: string | Computed<string>;
+  /** How many days data must remain inactive before becoming eligible for cool access tiering. (AI-inferred) */
   coolnessPeriod?: number | Computed<number>;
+  /** A unique name identifying this volume within its own capacity pool, used to construct its own mount path. (AI-inferred) */
   creationToken?: string | Computed<string>;
+  /** Data protection configuration (replication, snapshot policy, backup) for this volume. (AI-inferred) */
   dataProtection?: VolumeGroupDetails_Properties_Volumes_Properties_DataProtection | Computed<VolumeGroupDetails_Properties_Volumes_Properties_DataProtection>;
+  /** A reference to the datastore this volume backs. (AI-inferred) */
   dataStoreResourceId?: string[] | Computed<string[]>;
+  /** The default storage quota, in kibibytes, applied to a group without an explicit quota rule. (AI-inferred) */
   defaultGroupQuotaInKiBs?: number | Computed<number>;
+  /** The default storage quota, in kibibytes, applied to a user without an explicit quota rule. (AI-inferred) */
   defaultUserQuotaInKiBs?: number | Computed<number>;
+  /** Whether the snapshot this clone was created from is deleted once the clone split completes. (AI-inferred) */
   deleteBaseSnapshot?: boolean | Computed<boolean>;
+  /** Output only. The network feature level actually currently in effect for this volume. (AI-inferred) */
   effectiveNetworkFeatures?: string | Computed<string>;
+  /** Whether subvolume management is enabled for this volume. (AI-inferred) */
   enableSubvolumes?: string | Computed<string>;
+  /** Whether this resource's own data is encrypted at rest. (AI-inferred) */
   encrypted?: boolean | Computed<boolean>;
+  /** Whether this volume is encrypted with a Microsoft-managed or customer-managed key. (AI-inferred) */
   encryptionKeySource?: string | Computed<string>;
+  /** The NFS/SMB export rule(s) controlling which clients may access this volume. (AI-inferred) */
   exportPolicy?: VolumeGroupDetails_Properties_Volumes_Properties_ExportPolicy | Computed<VolumeGroupDetails_Properties_Volumes_Properties_ExportPolicy>;
+  /** Whether file access auditing is enabled for this volume. (AI-inferred) */
   fileAccessLogs?: string | Computed<string>;
+  /** A unique identifier for this volume's own file system. (AI-inferred) */
   fileSystemId?: string | Computed<string>;
+  /** The size, in bytes, this volume inherited from its own parent (e.g. when cloned from a snapshot). (AI-inferred) */
   inheritedSizeInBytes?: number | Computed<number>;
+  /** Whether default user/group quotas are enforced on this volume. (AI-inferred) */
   isDefaultQuotaEnabled?: boolean | Computed<boolean>;
+  /** Whether this volume is provisioned as a large volume, above the standard size limit. (AI-inferred) */
   isLargeVolume?: boolean | Computed<boolean>;
+  /** Whether this volume is currently being restored from a backup. (AI-inferred) */
   isRestoring?: boolean | Computed<boolean>;
+  /** Whether Kerberos authentication is enabled for this volume. (AI-inferred) */
   kerberosEnabled?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint used to reach the Key Vault holding this resource's own encryption key. (AI-inferred) */
   keyVaultPrivateEndpointResourceId?: string | Computed<string>;
+  /** Whether LDAP is enabled for this Active Directory connection. (AI-inferred) */
   ldapEnabled?: boolean | Computed<boolean>;
+  /** The maximum number of files this volume is provisioned to hold. (AI-inferred) */
   maximumNumberOfFiles?: number | Computed<number>;
+  /** The mount target(s) exposing this volume to clients. (AI-inferred) */
   mountTargets?: VolumeGroupDetails_Properties_Volumes_Properties_MountTargets[] | Computed<VolumeGroupDetails_Properties_Volumes_Properties_MountTargets[]>;
+  /** The network feature level (Basic or Standard) this volume uses. (AI-inferred) */
   networkFeatures?: string | Computed<string>;
+  /** An identifier grouping volume(s) that share the same underlying network configuration. (AI-inferred) */
   networkSiblingSetId?: string | Computed<string>;
+  /** A reference to the resource this data or configuration originated from. (AI-inferred) */
   originatingResourceId?: string | Computed<string>;
+  /** Rule(s) constraining which underlying infrastructure this volume can be placed on. (AI-inferred) */
   placementRules?: VolumeGroupDetails_Properties_GroupMetaData_GlobalPlacementRules[] | Computed<VolumeGroupDetails_Properties_GroupMetaData_GlobalPlacementRules[]>;
+  /** The file access protocol(s) (NFSv3, NFSv4.1, SMB) enabled for this volume. (AI-inferred) */
   protocolTypes?: string[] | Computed<string[]>;
+  /** Output only. The availability zone this volume was actually provisioned in. (AI-inferred) */
   provisionedAvailabilityZone?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the proximity placement group this resource is deployed with. (AI-inferred) */
   proximityPlacementGroup?: string | Computed<string>;
+  /** Whether this volume's own permission model is `unix` or `ntfs`. (AI-inferred) */
   securityStyle?: string | Computed<string>;
+  /** The performance tier this resource is provisioned at, e.g. `Standard`, `Premium`, or `Ultra`. (AI-inferred) */
   serviceLevel?: string | Computed<string>;
+  /** Whether users only see the SMB share content they have permission to access. (AI-inferred) */
   smbAccessBasedEnumeration?: string | Computed<string>;
+  /** Whether SMB Continuous Availability is enabled, for transparent failover during planned maintenance. (AI-inferred) */
   smbContinuouslyAvailable?: boolean | Computed<boolean>;
+  /** Whether SMB traffic to this volume is encrypted. (AI-inferred) */
   smbEncryption?: boolean | Computed<boolean>;
+  /** Whether this SMB share is hidden from casual browsing. (AI-inferred) */
   smbNonBrowsable?: string | Computed<string>;
+  /** Whether the hidden `.snapshot` directory is visible to clients. (AI-inferred) */
   snapshotDirectoryVisible?: boolean | Computed<boolean>;
+  /** A reference to the snapshot this applies to. (AI-inferred) */
   snapshotId?: string | Computed<string>;
+  /** How close, network-wise, this volume is provisioned to its own storage. (AI-inferred) */
   storageToNetworkProximity?: string | Computed<string>;
+  /** A reference to the subnet this resource is deployed into. (AI-inferred) */
   subnetId?: string | Computed<string>;
+  /** The network identifier this volume's own storage infrastructure uses. (AI-inferred) */
   t2Network?: string | Computed<string>;
+  /** The provisioned throughput, in MiB/s. (AI-inferred) */
   throughputMibps?: number | Computed<number>;
+  /** The UNIX-style file permission bits applied to this volume's own root. (AI-inferred) */
   unixPermissions?: string | Computed<string>;
+  /** The provisioned storage quota for this volume, in bytes. (AI-inferred) */
   usageThreshold?: number | Computed<number>;
+  /** The name of the application volume group this volume belongs to. (AI-inferred) */
   volumeGroupName?: string | Computed<string>;
+  /** The role this volume plays within its own containing application volume group, e.g. `data` or `log`. (AI-inferred) */
   volumeSpecName?: string | Computed<string>;
+  /** The category of volume this represents. (AI-inferred) */
   volumeType?: string | Computed<string>;
 }
 
 export interface VolumeGroupDetails_Properties_Volumes {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VolumeGroupDetails_Properties_Volumes_Properties | Computed<VolumeGroupDetails_Properties_Volumes_Properties>;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags?: Record<string, string> | Computed<Record<string, string>>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 

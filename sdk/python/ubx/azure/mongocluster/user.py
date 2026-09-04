@@ -13,7 +13,9 @@ class User_Properties_IdentityProvider:
 
 @dataclasses.dataclass
 class User_Properties_Roles:
+    # A reference to the database this applies to. (AI-inferred)
     db: Any = None
+    # The role granted by this assignment. (AI-inferred)
     role: Any = None
 
 @dataclasses.dataclass

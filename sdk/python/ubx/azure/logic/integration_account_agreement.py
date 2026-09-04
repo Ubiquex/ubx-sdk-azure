@@ -171,35 +171,62 @@ class IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_Pr
 
 @dataclasses.dataclass
 class IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EdifactDelimiterOverrides:
+    # The character separating individual data elements within a composite element. (AI-inferred)
     component_separator: Any = None
+    # The character separating individual data elements within a segment. (AI-inferred)
     data_element_separator: Any = None
+    # The character used as the decimal point in numeric values. (AI-inferred)
     decimal_point_indicator: Any = None
+    # The code identifying the association responsible for this specific message type. (AI-inferred)
     message_association_assigned_code: Any = None
+    # The identifier for this message type. (AI-inferred)
     message_id: Any = None
+    # The release number of this message definition. (AI-inferred)
     message_release: Any = None
+    # The version number of this message definition. (AI-inferred)
     message_version: Any = None
+    # The character marking a subsequent character as an escaped literal, rather than a delimiter. (AI-inferred)
     release_indicator: Any = None
+    # The character separating repeated instances of a data element. (AI-inferred)
     repetition_separator: Any = None
+    # The character marking the end of a segment. (AI-inferred)
     segment_terminator: Any = None
+    # An additional character appended after the segment terminator, e.g. a line break. (AI-inferred)
     segment_terminator_suffix: Any = None
+    # The XML namespace this schema is defined in. (AI-inferred)
     target_namespace: Any = None
 
 @dataclasses.dataclass
 class IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeOverrides:
+    # The password used to authenticate this trading partner agreement's own application. (AI-inferred)
     application_password: Any = None
+    # The code identifying the association responsible for this message definition. (AI-inferred)
     association_assigned_code: Any = None
+    # The code identifying the standards agency governing this message definition. (AI-inferred)
     controlling_agency_code: Any = None
+    # The identifier for this X12 functional group. (AI-inferred)
     functional_group_id: Any = None
+    # The release number declared in this EDIFACT group header. (AI-inferred)
     group_header_message_release: Any = None
+    # The version number declared in this EDIFACT group header. (AI-inferred)
     group_header_message_version: Any = None
+    # The code identifying the association responsible for this specific message type. (AI-inferred)
     message_association_assigned_code: Any = None
+    # The identifier for this message type. (AI-inferred)
     message_id: Any = None
+    # The release number of this message definition. (AI-inferred)
     message_release: Any = None
+    # The version number of this message definition. (AI-inferred)
     message_version: Any = None
+    # The identifier of the receiving trading partner's own application. (AI-inferred)
     receiver_application_id: Any = None
+    # The code qualifying the type of `receiver_application_id`. (AI-inferred)
     receiver_application_qualifier: Any = None
+    # The identifier of the sending trading partner's own application. (AI-inferred)
     sender_application_id: Any = None
+    # The code qualifying the type of `sender_application_id`. (AI-inferred)
     sender_application_qualifier: Any = None
+    # The XML namespace this schema is defined in. (AI-inferred)
     target_namespace: Any = None
 
 @dataclasses.dataclass
@@ -319,6 +346,7 @@ class IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_Pr
 
 @dataclasses.dataclass
 class IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterList:
+    # The identifier for this message type. (AI-inferred)
     message_id: Any = None
 
 @dataclasses.dataclass
@@ -336,22 +364,36 @@ class IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_Pr
 
 @dataclasses.dataclass
 class IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_SchemaReferences:
+    # The code identifying the association responsible for this message definition. (AI-inferred)
     association_assigned_code: Any = None
+    # The identifier for this message type. (AI-inferred)
     message_id: Any = None
+    # The release number of this message definition. (AI-inferred)
     message_release: Any = None
+    # The version number of this message definition. (AI-inferred)
     message_version: Any = None
+    # The name of this schema. (AI-inferred)
     schema_name: Any = None
+    # The identifier of the sending trading partner's own application. (AI-inferred)
     sender_application_id: Any = None
+    # The code qualifying the type of `sender_application_id`. (AI-inferred)
     sender_application_qualifier: Any = None
 
 @dataclasses.dataclass
 class IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationOverrides:
+    # Whether leading/trailing spaces and leading zeroes are permitted in a value. (AI-inferred)
     allow_leading_and_trailing_spaces_and_zeroes: Any = None
+    # Whether values are validated against the permitted character set. (AI-inferred)
     enforce_character_set: Any = None
+    # The identifier for this message type. (AI-inferred)
     message_id: Any = None
+    # How trailing, otherwise-empty separators at the end of a segment are handled. (AI-inferred)
     trailing_separator_policy: Any = None
+    # Whether leading/trailing spaces and leading zeroes are stripped from a value. (AI-inferred)
     trim_leading_and_trailing_spaces_and_zeroes: Any = None
+    # Whether EDI data types are validated against the schema. (AI-inferred)
     validate_editypes: Any = None
+    # Whether values are validated against their own declared XSD types. (AI-inferred)
     validate_xsdtypes: Any = None
 
 @dataclasses.dataclass
@@ -453,15 +495,25 @@ class IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_Protoc
 
 @dataclasses.dataclass
 class IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeOverrides:
+    # The format dates are expressed in. (AI-inferred)
     date_format: Any = None
+    # The code identifying the kind of transaction set(s) in this functional group. (AI-inferred)
     functional_identifier_code: Any = None
+    # The version identifier declared in this message header. (AI-inferred)
     header_version: Any = None
+    # The identifier for this message type. (AI-inferred)
     message_id: Any = None
+    # The version of the underlying EDI protocol this agreement uses. (AI-inferred)
     protocol_version: Any = None
+    # The identifier of the receiving trading partner's own application. (AI-inferred)
     receiver_application_id: Any = None
+    # The code identifying the agency responsible for this message definition. (AI-inferred)
     responsible_agency_code: Any = None
+    # The identifier of the sending trading partner's own application. (AI-inferred)
     sender_application_id: Any = None
+    # The XML namespace this schema is defined in. (AI-inferred)
     target_namespace: Any = None
+    # The format times are expressed in. (AI-inferred)
     time_format: Any = None
 
 @dataclasses.dataclass
@@ -549,9 +601,13 @@ class IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_Protoc
 
 @dataclasses.dataclass
 class IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SchemaReferences:
+    # The identifier for this message type. (AI-inferred)
     message_id: Any = None
+    # The name of this schema. (AI-inferred)
     schema_name: Any = None
+    # The version of this schema. (AI-inferred)
     schema_version: Any = None
+    # The identifier of the sending trading partner's own application. (AI-inferred)
     sender_application_id: Any = None
 
 @dataclasses.dataclass
@@ -567,24 +623,40 @@ class IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_Protoc
 
 @dataclasses.dataclass
 class IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ValidationOverrides:
+    # Whether leading/trailing spaces and leading zeroes are permitted in a value. (AI-inferred)
     allow_leading_and_trailing_spaces_and_zeroes: Any = None
+    # The identifier for this message type. (AI-inferred)
     message_id: Any = None
+    # How trailing, otherwise-empty separators at the end of a segment are handled. (AI-inferred)
     trailing_separator_policy: Any = None
+    # Whether leading/trailing spaces and leading zeroes are stripped from a value. (AI-inferred)
     trim_leading_and_trailing_spaces_and_zeroes: Any = None
+    # Whether values are validated against the permitted character set. (AI-inferred)
     validate_character_set: Any = None
+    # Whether EDI data types are validated against the schema. (AI-inferred)
     validate_editypes: Any = None
+    # Whether values are validated against their own declared XSD types. (AI-inferred)
     validate_xsdtypes: Any = None
 
 @dataclasses.dataclass
 class IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_X12DelimiterOverrides:
+    # The character separating individual data elements within a composite element. (AI-inferred)
     component_separator: Any = None
+    # The character separating individual data elements within a segment. (AI-inferred)
     data_element_separator: Any = None
+    # The identifier for this message type. (AI-inferred)
     message_id: Any = None
+    # The version of the underlying EDI protocol this agreement uses. (AI-inferred)
     protocol_version: Any = None
+    # The character substituted in place of a disallowed one. (AI-inferred)
     replace_character: Any = None
+    # Whether delimiter characters appearing inside data values are replaced, to avoid ambiguity with the message's own structural delimiters. (AI-inferred)
     replace_separators_in_payload: Any = None
+    # The character marking the end of a segment. (AI-inferred)
     segment_terminator: Any = None
+    # An additional character appended after the segment terminator, e.g. a line break. (AI-inferred)
     segment_terminator_suffix: Any = None
+    # The XML namespace this schema is defined in. (AI-inferred)
     target_namespace: Any = None
 
 @dataclasses.dataclass

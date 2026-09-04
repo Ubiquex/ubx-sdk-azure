@@ -4,9 +4,13 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Channel_Properties_PartnerTopicInfo_EventTypeInfo_InlineEventTypes struct {
-	DataSchemaUrl    any
-	Description      any
-	DisplayName      any
+	// A URL pointing to the schema describing this event's own data payload. (AI-inferred)
+	DataSchemaUrl any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// A URL pointing to documentation for this event type. (AI-inferred)
 	DocumentationUrl any
 }
 

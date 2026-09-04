@@ -4,8 +4,10 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappings struct {
+	// The virtual network's own address range(s), in CIDR notation. (AI-inferred)
 	AddressSpace any
-	PortRange    any
+	// A range of ports, e.g. `1000-2000`. (AI-inferred)
+	PortRange any
 }
 
 type NetworkgatewayVirtualNetworkGatewayNatRule_Properties struct {

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiComputeResource_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,7 +20,9 @@ export interface OpenapiComputeResource_Identity {
 }
 
 export interface OpenapiComputeResource_Properties_ProvisioningErrors_Error_AdditionalInfo {
+  /** Additional detail about this result. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -26,14 +30,20 @@ export interface OpenapiComputeResource_Properties_ProvisioningErrors_Error_Deta
 }
 
 export interface OpenapiComputeResource_Properties_ProvisioningErrors_Error {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: OpenapiComputeResource_Properties_ProvisioningErrors_Error_AdditionalInfo[] | Computed<OpenapiComputeResource_Properties_ProvisioningErrors_Error_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: OpenapiComputeResource_Properties_ProvisioningErrors_Error_Details[] | Computed<OpenapiComputeResource_Properties_ProvisioningErrors_Error_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface OpenapiComputeResource_Properties_ProvisioningErrors {
+  /** Detail about an error that occurred. (AI-inferred) */
   error?: OpenapiComputeResource_Properties_ProvisioningErrors_Error | Computed<OpenapiComputeResource_Properties_ProvisioningErrors_Error>;
 }
 

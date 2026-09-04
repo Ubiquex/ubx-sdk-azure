@@ -2,13 +2,18 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiCloudExadataInfrastructure_Properties_CustomerContacts {
+  /** An email address associated with this resource. (AI-inferred) */
   email?: string | Computed<string>;
 }
 
 export interface OpenapiCloudExadataInfrastructure_Properties_DefinedFileSystemConfiguration {
+  /** Whether this partition is reserved for backup storage. (AI-inferred) */
   isBackupPartition?: boolean | Computed<boolean>;
+  /** Whether this resource's own capacity can be resized after creation. (AI-inferred) */
   isResizable?: boolean | Computed<boolean>;
+  /** The minimum size, in gibibytes, this resource can be provisioned at. (AI-inferred) */
   minSizeGb?: number | Computed<number>;
+  /** The path this file system is mounted at. (AI-inferred) */
   mountPoint?: string | Computed<string>;
 }
 
@@ -31,6 +36,7 @@ export interface OpenapiCloudExadataInfrastructure_Properties_ExascaleConfig {
 }
 
 export interface OpenapiCloudExadataInfrastructure_Properties_MaintenanceWindow_DaysOfWeek {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 

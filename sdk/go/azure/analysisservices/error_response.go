@@ -4,7 +4,9 @@ package analysisservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ErrorResponse_Error_AdditionalInfo struct {
+	// Additional structured detail supporting this error. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 

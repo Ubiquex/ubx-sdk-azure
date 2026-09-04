@@ -62,7 +62,8 @@ type BmsErrorResponseConfig struct {
 	// Optional ETag.
 	ETag any
 	// Represents an Azure geography region where supported resource providers live.
-	Location   any
+	Location any
+	// This backup error's own real, structured detail. (AI-inferred)
 	Properties any
 	// Resource tags.
 	Tags any
@@ -78,7 +79,8 @@ type BmsErrorResponseAttrs struct {
 	// Represents an Azure geography region where supported resource providers live.
 	Location any
 	// The name of the resource
-	Name       any
+	Name any
+	// This backup error's own real, structured detail. (AI-inferred)
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any

@@ -4,7 +4,9 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FleetsFleetMember_Properties_Status_LastOperationError_AdditionalInfo struct {
+	// Additional detail about this result. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
@@ -12,11 +14,16 @@ type FleetsFleetMember_Properties_Status_LastOperationError_Details_Details stru
 }
 
 type FleetsFleetMember_Properties_Status_LastOperationError_Details struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type FleetsFleetMember_Properties_Status_LastOperationError struct {

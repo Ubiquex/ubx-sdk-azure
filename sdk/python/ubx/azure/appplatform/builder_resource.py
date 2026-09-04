@@ -8,11 +8,14 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class BuilderResource_Properties_BuildpackGroups_Buildpacks:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class BuilderResource_Properties_BuildpackGroups:
+    # The buildpack(s) applied when building this application. (AI-inferred)
     buildpacks: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass

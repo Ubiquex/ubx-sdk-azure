@@ -13,8 +13,11 @@ class InputsInput_Properties_Compression:
 
 @dataclasses.dataclass
 class InputsInput_Properties_Diagnostics_Conditions:
+    # A short, machine-readable diagnostic code identifying this input condition, e.g. `INP-3`. (AI-inferred)
     code: Any = None
+    # A human-readable description of this input diagnostic condition. (AI-inferred)
     message: Any = None
+    # When this diagnostic condition was first observed. (AI-inferred)
     since: Any = None
 
 @dataclasses.dataclass

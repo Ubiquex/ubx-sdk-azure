@@ -2,81 +2,118 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Capacity {
+  /** The maximum number of node(s) autoscaling is allowed to scale up to. (AI-inferred) */
   maxInstanceCount?: number | Computed<number>;
+  /** The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred) */
   minInstanceCount?: number | Computed<number>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity {
+  /** The maximum number of node(s) autoscaling is allowed to scale up to. (AI-inferred) */
   maxInstanceCount?: number | Computed<number>;
+  /** The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred) */
   minInstanceCount?: number | Computed<number>;
+  /** The time this scheduled action runs at. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule {
+  /** The day(s) this schedule applies to. (AI-inferred) */
   days?: string[] | Computed<string[]>;
+  /** A fixed-time autoscale rule specifying node capacity for a specific time of day. (AI-inferred) */
   timeAndCapacity?: ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence {
+  /** The recurrence schedule this applies to. (AI-inferred) */
   schedule?: ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule[] | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule[]>;
+  /** The time zone this schedule is evaluated in. (AI-inferred) */
   timeZone?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale {
+  /** The number of instance(s) this resource is provisioned with. (AI-inferred) */
   capacity?: ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Capacity | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Capacity>;
+  /** How often this autoscale schedule recurs. (AI-inferred) */
   recurrence?: ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_DataDisksGroups {
+  /** The size of this disk, in gibibytes. (AI-inferred) */
   diskSizeGb?: number | Computed<number>;
+  /** The number of data disk(s) attached to each node. (AI-inferred) */
   disksPerNode?: number | Computed<number>;
+  /** The replication/performance type of the associated storage account. (AI-inferred) */
   storageAccountType?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_HardwareProfile {
+  /** The VM size this role's own nodes are provisioned as. (AI-inferred) */
   vmSize?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeys {
+  /** The certificate content, base64-encoded. (AI-inferred) */
   certificateData?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile {
+  /** The SSH public key(s) used to authenticate. (AI-inferred) */
   publicKeys?: ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeys[] | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeys[]>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile {
+  /** The password credential used to authenticate. (AI-inferred) */
   password?: string | Computed<string>;
+  /** SSH configuration for connecting to this cluster's own nodes. (AI-inferred) */
   sshProfile?: ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile>;
+  /** The username used to authenticate. (AI-inferred) */
   username?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile {
+  /** Configuration specific to a Linux-based cluster node. (AI-inferred) */
   linuxOperatingSystemProfile?: ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_ScriptActions {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The parameter(s) making up this configuration. (AI-inferred) */
   parameters?: string | Computed<string>;
+  /** A resource URI. (AI-inferred) */
   uri?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles_VirtualNetworkProfile {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** A reference to the subnet this resource is deployed into. (AI-inferred) */
   subnet?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_ComputeProfile_Roles {
+  /** Configuration for automatically scaling this cluster's own node count. (AI-inferred) */
   autoscale?: ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale>;
+  /** Configuration for the data disk(s) attached to nodes in this role. (AI-inferred) */
   dataDisksGroups?: ApplicationsApplication_Properties_ComputeProfile_Roles_DataDisksGroups[] | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_DataDisksGroups[]>;
+  /** Whether data disks attached to this cluster are encrypted. (AI-inferred) */
   encryptDataDisks?: boolean | Computed<boolean>;
+  /** The VM size this role's own nodes are provisioned as. (AI-inferred) */
   hardwareProfile?: ApplicationsApplication_Properties_ComputeProfile_Roles_HardwareProfile | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_HardwareProfile>;
+  /** The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred) */
   minInstanceCount?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Operating system configuration for this cluster's own nodes. (AI-inferred) */
   osProfile?: ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile>;
+  /** Custom script(s) run on cluster nodes during provisioning. (AI-inferred) */
   scriptActions?: ApplicationsApplication_Properties_ComputeProfile_Roles_ScriptActions[] | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_ScriptActions[]>;
+  /** The desired number of node(s) this role should be scaled to. (AI-inferred) */
   targetInstanceCount?: number | Computed<number>;
+  /** The virtual network this cluster is deployed into. (AI-inferred) */
   virtualNetworkProfile?: ApplicationsApplication_Properties_ComputeProfile_Roles_VirtualNetworkProfile | Computed<ApplicationsApplication_Properties_ComputeProfile_Roles_VirtualNetworkProfile>;
+  /** The name of the VM group this node belongs to. (AI-inferred) */
   vmgroupName?: string | Computed<string>;
 }
 
@@ -86,64 +123,99 @@ export interface ApplicationsApplication_Properties_ComputeProfile {
 }
 
 export interface ApplicationsApplication_Properties_Errors {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_HttpsEndpoints {
+  /** The network access mode(s) permitted for this endpoint. (AI-inferred) */
   accessModes?: string[] | Computed<string[]>;
+  /** The port on the cluster this endpoint forwards traffic to. (AI-inferred) */
   destinationPort?: number | Computed<number>;
+  /** Whether HTTP basic authentication for the cluster gateway is disabled. (AI-inferred) */
   disableGatewayAuth?: boolean | Computed<boolean>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** The private (internal) IP address assigned to this configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** The externally reachable port this endpoint listens on. (AI-inferred) */
   publicPort?: number | Computed<number>;
+  /** The subdomain suffix used to construct this application's own access URL. (AI-inferred) */
   subDomainSuffix?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_InstallScriptActions {
+  /** The name of this application. (AI-inferred) */
   applicationName?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The parameter(s) making up this configuration. (AI-inferred) */
   parameters?: string | Computed<string>;
+  /** The node role(s) (e.g. head node, worker node) making up this cluster. (AI-inferred) */
   roles?: string[] | Computed<string[]>;
+  /** A resource URI. (AI-inferred) */
   uri?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_Subnet {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties {
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address is statically assigned or dynamically allocated. (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is deployed into. (AI-inferred) */
   subnet?: ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_Subnet | Computed<ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_Subnet>;
 }
 
 export interface ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties | Computed<ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties {
+  /** A reference to the role group this applies to. (AI-inferred) */
   groupId?: string | Computed<string>;
+  /** The IP configuration(s) for this endpoint. (AI-inferred) */
   ipConfigurations?: ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations[] | Computed<ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_PrivateLinkConfigurations {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties | Computed<ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ApplicationsApplication_Properties_SshEndpoints {
+  /** The port on the cluster this endpoint forwards traffic to. (AI-inferred) */
   destinationPort?: number | Computed<number>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** The private (internal) IP address assigned to this configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** The externally reachable port this endpoint listens on. (AI-inferred) */
   publicPort?: number | Computed<number>;
 }
 

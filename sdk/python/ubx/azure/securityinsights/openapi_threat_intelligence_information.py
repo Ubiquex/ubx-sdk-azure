@@ -8,31 +8,45 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiThreatIntelligenceInformation_Properties_ExternalReferences:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # An identifier for this content item in an external catalog. (AI-inferred)
     external_id: Any = None
+    # The cryptographic hash(es) associated with this indicator. (AI-inferred)
     hashes: Any = None
+    # The name of the source this content item came from. (AI-inferred)
     source_name: Any = None
+    # A URL this applies to. (AI-inferred)
     url: Any = None
 
 @dataclasses.dataclass
 class OpenapiThreatIntelligenceInformation_Properties_GranularMarkings:
+    # The language content is provided in. (AI-inferred)
     language: Any = None
+    # A reference to the data marking (e.g. TLP classification) this applies to. (AI-inferred)
     marking_ref: Any = None
+    # Value(s) used to select which specific resource(s) this applies to. (AI-inferred)
     selectors: Any = None
 
 @dataclasses.dataclass
 class OpenapiThreatIntelligenceInformation_Properties_KillChainPhases:
+    # The name of the kill-chain model this phase belongs to. (AI-inferred)
     kill_chain_name: Any = None
+    # The name of this kill-chain phase. (AI-inferred)
     phase_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiThreatIntelligenceInformation_Properties_ParsedPattern_PatternTypeValues:
+    # The literal value of this field. (AI-inferred)
     value: Any = None
+    # The data type of this value. (AI-inferred)
     value_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiThreatIntelligenceInformation_Properties_ParsedPattern:
+    # The category key this indicator pattern is expressed in. (AI-inferred)
     pattern_type_key: Any = None
+    # The value(s) this indicator pattern matches. (AI-inferred)
     pattern_type_values: Any = None
 
 @dataclasses.dataclass

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ErrorResponse_Error_AdditionalInfo {
+  /** Additional structured detail supporting this error. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

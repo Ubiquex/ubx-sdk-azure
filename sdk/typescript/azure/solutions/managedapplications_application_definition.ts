@@ -2,13 +2,18 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ManagedapplicationsApplicationDefinition_Properties_Artifacts {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** A resource URI. (AI-inferred) */
   uri?: string | Computed<string>;
 }
 
 export interface ManagedapplicationsApplicationDefinition_Properties_Authorizations {
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** A reference to the role definition granted to the publisher for managing this application. (AI-inferred) */
   roleDefinitionId?: string | Computed<string>;
 }
 
@@ -30,6 +35,7 @@ export interface ManagedapplicationsApplicationDefinition_Properties_ManagementP
 }
 
 export interface ManagedapplicationsApplicationDefinition_Properties_NotificationPolicy_NotificationEndpoints {
+  /** A resource URI. (AI-inferred) */
   uri?: string | Computed<string>;
 }
 
@@ -39,8 +45,11 @@ export interface ManagedapplicationsApplicationDefinition_Properties_Notificatio
 }
 
 export interface ManagedapplicationsApplicationDefinition_Properties_Policies {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The parameter(s) making up this configuration. (AI-inferred) */
   parameters?: string | Computed<string>;
+  /** A reference to the policy definition this applies to. (AI-inferred) */
   policyDefinitionId?: string | Computed<string>;
 }
 

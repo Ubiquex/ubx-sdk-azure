@@ -18,7 +18,9 @@ type OpenapiRecipientTransferDetails_Properties_DetailedTransferStatus struct {
 }
 
 type OpenapiRecipientTransferDetails_Properties_ProductDetails struct {
-	ProductId   any
+	// A reference to the product this applies to. (AI-inferred)
+	ProductId any
+	// The category of product this represents. (AI-inferred)
 	ProductType any
 }
 

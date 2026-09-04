@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ConnectionSetting_Properties_Parameters:
+    # The name of this connection setting parameter. (AI-inferred)
     key: Any = None
+    # The value of this connection setting parameter. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

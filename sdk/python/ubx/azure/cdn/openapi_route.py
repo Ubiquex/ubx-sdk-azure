@@ -24,7 +24,9 @@ class OpenapiRoute_Properties_CacheConfiguration:
 
 @dataclasses.dataclass
 class OpenapiRoute_Properties_CustomDomains:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # Whether this custom domain is currently active and serving traffic. (AI-inferred)
     is_active: Any = None
 
 @dataclasses.dataclass
@@ -38,6 +40,7 @@ class OpenapiRoute_Properties:
     cache_configuration: Any = None
     # Domains referenced by this endpoint.
     custom_domains: Any = None
+    # The current deployment status of this configuration. (AI-inferred)
     deployment_status: Any = None
     # Whether to enable use of this rule. Permitted values are 'Enabled' or 'Disabled'
     enabled_state: Any = None

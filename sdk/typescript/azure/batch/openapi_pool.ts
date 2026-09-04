@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiPool_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -14,7 +16,9 @@ export interface OpenapiPool_Identity {
 }
 
 export interface OpenapiPool_Properties_ApplicationPackages {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The version identifier this applies to. (AI-inferred) */
   version?: string | Computed<string>;
 }
 
@@ -40,13 +44,18 @@ export interface OpenapiPool_Properties_AutoScaleRun {
 }
 
 export interface OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReference {
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
 }
 
 export interface OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries {
+  /** A reference to the managed identity used to authenticate. (AI-inferred) */
   identityReference?: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReference | Computed<OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReference>;
+  /** The password credential used to authenticate. (AI-inferred) */
   password?: string | Computed<string>;
+  /** The container registry server this image is pulled from. (AI-inferred) */
   registryServer?: string | Computed<string>;
+  /** The username used to authenticate. (AI-inferred) */
   username?: string | Computed<string>;
 }
 
@@ -60,24 +69,34 @@ export interface OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineCo
 }
 
 export interface OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSet {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_SecurityProfile {
+  /** A reference to the disk encryption set used to encrypt this managed disk. (AI-inferred) */
   diskEncryptionSet?: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSet | Computed<OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSet>;
+  /** The confidential computing encryption type applied to this disk. (AI-inferred) */
   securityEncryptionType?: string | Computed<string>;
 }
 
 export interface OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk {
+  /** A reference to the disk encryption set used to encrypt this managed disk. (AI-inferred) */
   diskEncryptionSet?: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSet | Computed<OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSet>;
+  /** Security configuration (e.g. Trusted Launch) applied to this compute node. (AI-inferred) */
   securityProfile?: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_SecurityProfile | Computed<OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_SecurityProfile>;
+  /** The replication/performance type of the associated storage account. (AI-inferred) */
   storageAccountType?: string | Computed<string>;
 }
 
 export interface OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks {
+  /** The disk caching mode used, e.g. `ReadOnly` or `ReadWrite`. (AI-inferred) */
   caching?: string | Computed<string>;
+  /** The size of this disk, in gibibytes. (AI-inferred) */
   diskSizeGb?: number | Computed<number>;
+  /** The logical unit number this disk is attached at. (AI-inferred) */
   lun?: number | Computed<number>;
+  /** Configuration for a managed disk attached to this compute node. (AI-inferred) */
   managedDisk?: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk | Computed<OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk>;
 }
 
@@ -98,14 +117,23 @@ export interface OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineCo
 }
 
 export interface OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_Extensions {
+  /** Whether this extension automatically upgrades to newer minor versions as they're released. (AI-inferred) */
   autoUpgradeMinorVersion?: boolean | Computed<boolean>;
+  /** Whether this extension automatically upgrades to newer versions as they're released. (AI-inferred) */
   enableAutomaticUpgrade?: boolean | Computed<boolean>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Extension setting(s) encrypted at rest and never returned in subsequent reads. (AI-inferred) */
   protectedSettings?: unknown | Computed<unknown>;
+  /** The extension(s) that must be provisioned before this one runs. (AI-inferred) */
   provisionAfterExtensions?: string[] | Computed<string[]>;
+  /** The publisher of this extension. (AI-inferred) */
   publisher?: string | Computed<string>;
+  /** The setting(s) configuring this extension. (AI-inferred) */
   settings?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The version of the extension handler processing this resource. (AI-inferred) */
   typeHandlerVersion?: string | Computed<string>;
 }
 
@@ -221,62 +249,98 @@ export interface OpenapiPool_Properties_DeploymentConfiguration {
 }
 
 export interface OpenapiPool_Properties_Metadata {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface OpenapiPool_Properties_MountConfiguration_AzureBlobFileSystemConfiguration {
+  /** The access key credential used to authenticate to this storage account. (AI-inferred) */
   accountKey?: string | Computed<string>;
+  /** The name of this storage account. (AI-inferred) */
   accountName?: string | Computed<string>;
+  /** Additional command-line option(s) passed to blobfuse. (AI-inferred) */
   blobfuseOptions?: string | Computed<string>;
+  /** The name of the storage container this applies to. (AI-inferred) */
   containerName?: string | Computed<string>;
+  /** A reference to the managed identity used to authenticate. (AI-inferred) */
   identityReference?: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReference | Computed<OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReference>;
+  /** The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred) */
   relativeMountPath?: string | Computed<string>;
+  /** A shared access signature used to authenticate. (AI-inferred) */
   sasKey?: string | Computed<string>;
 }
 
 export interface OpenapiPool_Properties_MountConfiguration_AzureFileShareConfiguration {
+  /** The access key credential used to authenticate to this storage account. (AI-inferred) */
   accountKey?: string | Computed<string>;
+  /** The name of this storage account. (AI-inferred) */
   accountName?: string | Computed<string>;
+  /** The URL of the Azure Files share this applies to. (AI-inferred) */
   azureFileUrl?: string | Computed<string>;
+  /** Additional mount option(s) applied to this volume. (AI-inferred) */
   mountOptions?: string | Computed<string>;
+  /** The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred) */
   relativeMountPath?: string | Computed<string>;
 }
 
 export interface OpenapiPool_Properties_MountConfiguration_CifsMountConfiguration {
+  /** Additional mount option(s) applied to this volume. (AI-inferred) */
   mountOptions?: string | Computed<string>;
+  /** The password credential used to authenticate. (AI-inferred) */
   password?: string | Computed<string>;
+  /** The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred) */
   relativeMountPath?: string | Computed<string>;
+  /** Where this content is sourced from. (AI-inferred) */
   source?: string | Computed<string>;
+  /** The username used to authenticate. (AI-inferred) */
   userName?: string | Computed<string>;
 }
 
 export interface OpenapiPool_Properties_MountConfiguration_NfsMountConfiguration {
+  /** Additional mount option(s) applied to this volume. (AI-inferred) */
   mountOptions?: string | Computed<string>;
+  /** The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred) */
   relativeMountPath?: string | Computed<string>;
+  /** Where this content is sourced from. (AI-inferred) */
   source?: string | Computed<string>;
 }
 
 export interface OpenapiPool_Properties_MountConfiguration {
+  /** Configuration for mounting a Blob container via blobfuse. (AI-inferred) */
   azureBlobFileSystemConfiguration?: OpenapiPool_Properties_MountConfiguration_AzureBlobFileSystemConfiguration | Computed<OpenapiPool_Properties_MountConfiguration_AzureBlobFileSystemConfiguration>;
+  /** Configuration for mounting an Azure Files share. (AI-inferred) */
   azureFileShareConfiguration?: OpenapiPool_Properties_MountConfiguration_AzureFileShareConfiguration | Computed<OpenapiPool_Properties_MountConfiguration_AzureFileShareConfiguration>;
+  /** Configuration for mounting an SMB/CIFS file share. (AI-inferred) */
   cifsMountConfiguration?: OpenapiPool_Properties_MountConfiguration_CifsMountConfiguration | Computed<OpenapiPool_Properties_MountConfiguration_CifsMountConfiguration>;
+  /** Configuration for mounting an NFS file share. (AI-inferred) */
   nfsMountConfiguration?: OpenapiPool_Properties_MountConfiguration_NfsMountConfiguration | Computed<OpenapiPool_Properties_MountConfiguration_NfsMountConfiguration>;
 }
 
 export interface OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools_NetworkSecurityGroupRules {
+  /** The access permission granted. (AI-inferred) */
   access?: string | Computed<string>;
+  /** The relative priority of this item. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The source IP address range this rule matches. (AI-inferred) */
   sourceAddressPrefix?: string | Computed<string>;
+  /** The source port range(s) this rule matches. (AI-inferred) */
   sourcePortRanges?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools {
+  /** The port on the compute node this rule forwards traffic to. (AI-inferred) */
   backendPort?: number | Computed<number>;
+  /** The last port, inclusive, in this frontend port range. (AI-inferred) */
   frontendPortRangeEnd?: number | Computed<number>;
+  /** The first port, inclusive, in this frontend port range. (AI-inferred) */
   frontendPortRangeStart?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The network security rule(s) applied to this pool's own endpoint configuration. (AI-inferred) */
   networkSecurityGroupRules?: OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools_NetworkSecurityGroupRules[] | Computed<OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools_NetworkSecurityGroupRules[]>;
+  /** The network protocol used. (AI-inferred) */
   protocol?: string | Computed<string>;
 }
 
@@ -286,7 +350,9 @@ export interface OpenapiPool_Properties_NetworkConfiguration_EndpointConfigurati
 }
 
 export interface OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfiguration_IpTags {
+  /** The category this IP tag belongs to. (AI-inferred) */
   ipTagType?: string | Computed<string>;
+  /** A label attached to this resource. (AI-inferred) */
   tag?: string | Computed<string>;
 }
 
@@ -355,7 +421,9 @@ export interface OpenapiPool_Properties_ScaleSettings {
 }
 
 export interface OpenapiPool_Properties_StartTask_ContainerSettings_ContainerHostBatchBindMounts {
+  /** Whether this volume is mounted read-only. (AI-inferred) */
   isReadOnly?: boolean | Computed<boolean>;
+  /** Where this content is sourced from. (AI-inferred) */
   source?: string | Computed<string>;
 }
 
@@ -373,12 +441,19 @@ export interface OpenapiPool_Properties_StartTask_ContainerSettings {
 }
 
 export interface OpenapiPool_Properties_StartTask_ResourceFiles {
+  /** The name of the auto-storage container this applies to. (AI-inferred) */
   autoStorageContainerName?: string | Computed<string>;
+  /** Restricts this mount to blob(s) matching this name prefix. (AI-inferred) */
   blobPrefix?: string | Computed<string>;
+  /** The file permission mode applied. (AI-inferred) */
   fileMode?: string | Computed<string>;
+  /** The path to this file. (AI-inferred) */
   filePath?: string | Computed<string>;
+  /** The URL this resource is downloaded from. (AI-inferred) */
   httpUrl?: string | Computed<string>;
+  /** A reference to the managed identity used to authenticate. (AI-inferred) */
   identityReference?: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReference | Computed<OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReference>;
+  /** The URL of the storage container this resource is read from. (AI-inferred) */
   storageContainerUrl?: string | Computed<string>;
 }
 
@@ -458,20 +533,29 @@ export interface OpenapiPool_Properties_UpgradePolicy {
 }
 
 export interface OpenapiPool_Properties_UserAccounts_LinuxUserConfiguration {
+  /** The group ID applied to this file or process. (AI-inferred) */
   gid?: number | Computed<number>;
+  /** The private key used for SSH authentication. (AI-inferred) */
   sshPrivateKey?: string | Computed<string>;
+  /** The user ID applied to this file or process. (AI-inferred) */
   uid?: number | Computed<number>;
 }
 
 export interface OpenapiPool_Properties_UserAccounts_WindowsUserConfiguration {
+  /** Whether this task runs in a batch or interactive login session. (AI-inferred) */
   loginMode?: string | Computed<string>;
 }
 
 export interface OpenapiPool_Properties_UserAccounts {
+  /** Whether this task runs with standard user or elevated (admin) permissions. (AI-inferred) */
   elevationLevel?: string | Computed<string>;
+  /** Configuration specific to a user account on a Linux compute node. (AI-inferred) */
   linuxUserConfiguration?: OpenapiPool_Properties_UserAccounts_LinuxUserConfiguration | Computed<OpenapiPool_Properties_UserAccounts_LinuxUserConfiguration>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The password credential used to authenticate. (AI-inferred) */
   password?: string | Computed<string>;
+  /** Configuration specific to a user account on a Windows compute node. (AI-inferred) */
   windowsUserConfiguration?: OpenapiPool_Properties_UserAccounts_WindowsUserConfiguration | Computed<OpenapiPool_Properties_UserAccounts_WindowsUserConfiguration>;
 }
 

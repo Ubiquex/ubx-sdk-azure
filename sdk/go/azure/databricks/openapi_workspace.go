@@ -13,7 +13,9 @@ type OpenapiWorkspace_Properties_AccessConnector struct {
 }
 
 type OpenapiWorkspace_Properties_Authorizations struct {
-	PrincipalId      any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
+	PrincipalId any
+	// A reference to the role definition this applies to. (AI-inferred)
 	RoleDefinitionId any
 }
 
@@ -71,13 +73,15 @@ type OpenapiWorkspace_Properties_Encryption struct {
 }
 
 type OpenapiWorkspace_Properties_EnhancedSecurityCompliance_AutomaticClusterUpdate struct {
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type OpenapiWorkspace_Properties_EnhancedSecurityCompliance_ComplianceSecurityProfile struct {
 	// Compliance standards associated with the workspace.
 	ComplianceStandards any
-	Value               any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiWorkspace_Properties_EnhancedSecurityCompliance struct {
@@ -173,23 +177,32 @@ type OpenapiWorkspace_Properties_Parameters struct {
 }
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds                          any
-	PrivateEndpoint                   any
+	// The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
+	GroupIds any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

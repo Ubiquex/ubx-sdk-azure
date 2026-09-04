@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiExperiment_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,27 +20,37 @@ export interface OpenapiExperiment_Identity {
 }
 
 export interface OpenapiExperiment_Properties_Selectors_Filter {
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiExperiment_Properties_Selectors {
+  /** Restricts this selector to target resource(s) matching additional query filter criteria. (AI-inferred) */
   filter?: OpenapiExperiment_Properties_Selectors_Filter | Computed<OpenapiExperiment_Properties_Selectors_Filter>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiExperiment_Properties_Steps_Branches_Actions {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiExperiment_Properties_Steps_Branches {
+  /** The fault-injection action(s) run sequentially within this branch. (AI-inferred) */
   actions?: OpenapiExperiment_Properties_Steps_Branches_Actions[] | Computed<OpenapiExperiment_Properties_Steps_Branches_Actions[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface OpenapiExperiment_Properties_Steps {
+  /** The parallel branch(es) of fault-injection action(s) making up this experiment step. (AI-inferred) */
   branches?: OpenapiExperiment_Properties_Steps_Branches[] | Computed<OpenapiExperiment_Properties_Steps_Branches[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 

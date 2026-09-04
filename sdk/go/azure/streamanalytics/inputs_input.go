@@ -9,9 +9,12 @@ type InputsInput_Properties_Compression struct {
 }
 
 type InputsInput_Properties_Diagnostics_Conditions struct {
-	Code    any
+	// A short, machine-readable diagnostic code identifying this input condition, e.g. `INP-3`. (AI-inferred)
+	Code any
+	// A human-readable description of this input diagnostic condition. (AI-inferred)
 	Message any
-	Since   any
+	// When this diagnostic condition was first observed. (AI-inferred)
+	Since any
 }
 
 type InputsInput_Properties_Diagnostics struct {

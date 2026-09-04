@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector_MatchExpressions:
+    # The key of this attribute or label. (AI-inferred)
     key: Any = None
+    # Whether all or any of this rule collection's own rules must match. (AI-inferred)
     operator: Any = None
+    # The value(s) making up this field. (AI-inferred)
     values: Any = None
 
 @dataclasses.dataclass

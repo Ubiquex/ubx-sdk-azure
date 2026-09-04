@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -53,24 +55,34 @@ class OpenapiWorkspace_Properties_Encryption:
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_FeatureStoreSettings_ComputeRuntime:
+    # The Spark runtime version this compute instance uses. (AI-inferred)
     spark_runtime_version: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_FeatureStoreSettings:
+    # The compute runtime this resource uses. (AI-inferred)
     compute_runtime: Any = None
+    # A reference to the data store connection used for offline feature retrieval. (AI-inferred)
     offline_store_connection_name: Any = None
+    # A reference to the data store connection used for online feature retrieval. (AI-inferred)
     online_store_connection_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_ManagedNetwork_OutboundRules:
+    # The category this belongs to. (AI-inferred)
     category: Any = None
+    # Additional detail about this error. (AI-inferred)
     error_information: Any = None
+    # The name(s) of the parent rule(s) this suggestion or association derives from. (AI-inferred)
     parent_rule_names: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_ManagedNetwork_Status:
+    # Whether this compute instance is configured to run Spark jobs. (AI-inferred)
     spark_ready: Any = None
     # Status for the managed network of a machine learning workspace.
     status: Any = None
@@ -87,6 +99,7 @@ class OpenapiWorkspace_Properties_ManagedNetwork:
     isolation_mode: Any = None
     # The Kind of the managed network. Users can switch from V1 to V2 for granular access controls, but cannot switch back to V1 once V2 is enabled.
     managed_network_kind: Any = None
+    # A reference to the virtual network this applies to. (AI-inferred)
     network_id: Any = None
     # Dictionary of <OutboundRule>
     outbound_rules: Any = None
@@ -95,48 +108,71 @@ class OpenapiWorkspace_Properties_ManagedNetwork:
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_NotebookInfo_NotebookPreparationError:
+    # A human-readable description of the error. (AI-inferred)
     error_message: Any = None
+    # The HTTP status code returned. (AI-inferred)
     status_code: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_NotebookInfo:
+    # The fully qualified domain name this applies to. (AI-inferred)
     fqdn: Any = None
+    # Whether Private Link connectivity is enabled for this resource. (AI-inferred)
     is_private_link_enabled: Any = None
+    # Detail about an error encountered while preparing the notebook environment. (AI-inferred)
     notebook_preparation_error: Any = None
     # the data plane resourceId that used to initialize notebook component
     resource_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # A reference to the subnet this resource is injected into. (AI-inferred)
     subnet_arm_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties:
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_PrivateEndpointConnections_Sku:
+    # The number of instance(s) this resource is provisioned with. (AI-inferred)
     capacity: Any = None
+    # The generation or family this SKU belongs to. (AI-inferred)
     family: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The size of this resource. (AI-inferred)
     size: Any = None
+    # The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred)
     tier: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_PrivateEndpointConnections:
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The pricing tier and capacity this resource is provisioned at. (AI-inferred)
     sku: Any = None
+    # User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
     tags: Any = None
 
 @dataclasses.dataclass
@@ -148,27 +184,37 @@ class OpenapiWorkspace_Properties_ServerlessComputeSettings:
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_ServiceManagedResourcesSettings_CosmosDb:
+    # The provisioned throughput allocated to Cosmos DB collections backing this workspace. (AI-inferred)
     collections_throughput: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_ServiceManagedResourcesSettings:
+    # Configuration for the Cosmos DB account backing this workspace. (AI-inferred)
     cosmos_db: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_SharedPrivateLinkResources_Properties:
+    # The sub-resource this connection targets on the destination service. (AI-inferred)
     group_id: Any = None
+    # A reference to the Private Link resource this applies to. (AI-inferred)
     private_link_resource_id: Any = None
+    # A message the requester attaches when asking to connect to this resource. (AI-inferred)
     request_message: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_SharedPrivateLinkResources:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_WorkspaceHubConfig:
+    # Extra storage account(s) associated with this workspace, beyond its own primary one. (AI-inferred)
     additional_workspace_storage_accounts: Any = None
+    # The resource group new workspace-associated resources are created in by default. (AI-inferred)
     default_workspace_resource_group: Any = None
 
 @dataclasses.dataclass
@@ -177,6 +223,7 @@ class OpenapiWorkspace_Properties:
     allow_public_access_when_behind_vnet: Any = None
     # ARM id of the application insights associated with this workspace.
     application_insights: Any = None
+    # The workspace(s) associated with this hub or registry. (AI-inferred)
     associated_workspaces: Any = None
     # ARM id of the container registry associated with this workspace.
     container_registry: Any = None
@@ -184,14 +231,19 @@ class OpenapiWorkspace_Properties:
     description: Any = None
     # Url for the discovery service to identify regional endpoints for machine learning experimentation services
     discovery_url: Any = None
+    # Whether this workspace's own data is isolated from other workspaces sharing the same hub. (AI-inferred)
     enable_data_isolation: Any = None
+    # Whether service-side resources are also encrypted with this workspace's own customer-managed key. (AI-inferred)
     enable_service_side_cmkencryption: Any = None
+    # Encryption configuration for this resource. (AI-inferred)
     encryption: Any = None
+    # Configuration for this workspace's own feature store capability. (AI-inferred)
     feature_store_settings: Any = None
     # The friendly name for this workspace. This name in mutable
     friendly_name: Any = None
     # The flag to signal HBI data in the workspace and reduce diagnostic data collected by the service
     hbi_workspace: Any = None
+    # A reference to the parent hub this project belongs to. (AI-inferred)
     hub_resource_id: Any = None
     # The compute name for image build
     image_build_compute: Any = None
@@ -201,6 +253,7 @@ class OpenapiWorkspace_Properties:
     managed_network: Any = None
     # The URI associated with this workspace that machine learning flow must point at to set up tracking.
     ml_flow_tracking_uri: Any = None
+    # Detail about this workspace's own associated notebook resource. (AI-inferred)
     notebook_info: Any = None
     # The user assigned identity resource id that represents the workspace identity.
     primary_user_assigned_identity: Any = None
@@ -214,7 +267,9 @@ class OpenapiWorkspace_Properties:
     provisioning_state: Any = None
     # Enum to determine whether PublicNetworkAccess is Enabled or Disabled.
     public_network_access: Any = None
+    # Configuration for using serverless compute, rather than a dedicated cluster. (AI-inferred)
     serverless_compute_settings: Any = None
+    # Configuration for resources Azure Machine Learning provisions and manages on the caller's own behalf. (AI-inferred)
     service_managed_resources_settings: Any = None
     # The name of the managed resource group created by workspace RP in customer subscription if the workspace is CMK workspace
     service_provisioned_resource_group: Any = None
@@ -509,24 +564,30 @@ _OpenapiWorkspace_PropertiesFields = {
 class OpenapiWorkspaceConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
     # The properties of a machine learning workspace.
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
     tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspaceAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
     # The properties of a machine learning workspace.
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
     tags: Any = None
 
 OpenapiWorkspace = ubx.ResourceBinding(

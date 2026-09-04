@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_AdditionalInfo:
+    # Additional detail about this result. (AI-inferred)
     info: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -17,10 +19,15 @@ class FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerEr
 
 @dataclasses.dataclass
 class FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_Details:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass

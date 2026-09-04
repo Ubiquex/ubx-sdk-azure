@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Build_Properties_Apms {
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
 }
 

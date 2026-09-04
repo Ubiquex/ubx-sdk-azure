@@ -4,24 +4,36 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates struct {
+	// A human-readable name for this resource. (AI-inferred)
 	DisplayName any
-	Type        any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type FleetsFleetUpdateStrategy_Properties_Strategy_Stages_Groups struct {
-	AfterGates     any
-	BeforeGates    any
+	// The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
+	AfterGates any
+	// The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
+	BeforeGates any
+	// The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
 	MaxConcurrency any
-	Name           any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type FleetsFleetUpdateStrategy_Properties_Strategy_Stages struct {
-	AfterGates              any
+	// The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
+	AfterGates any
+	// How long to wait, in seconds, after this stage completes before continuing. (AI-inferred)
 	AfterStageWaitInSeconds any
-	BeforeGates             any
-	Groups                  any
-	MaxConcurrency          any
-	Name                    any
+	// The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
+	BeforeGates any
+	// The group(s) this update run's own member clusters are batched into. (AI-inferred)
+	Groups any
+	// The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
+	MaxConcurrency any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type FleetsFleetUpdateStrategy_Properties_Strategy struct {

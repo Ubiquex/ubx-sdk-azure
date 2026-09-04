@@ -8,7 +8,8 @@ type OutboundRuleBasicResource_Properties struct {
 	Category any
 	// Error information about an outbound rule of a cognitive services account if RuleStatus is failed.
 	ErrorInformation any
-	ParentRuleNames  any
+	// The name(s) of the parent rule(s) this suggestion or association derives from. (AI-inferred)
+	ParentRuleNames any
 	// Type of a managed network Outbound Rule of a cognitive services account.
 	Status any
 	// Type of a managed network Outbound Rule of a cognitive services account.

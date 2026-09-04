@@ -8,58 +8,99 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiBillingAccount_Properties_EnrollmentDetails_IndirectRelationshipInfo:
+    # A reference to the billing account this applies to. (AI-inferred)
     billing_account_name: Any = None
+    # A reference to the billing profile this applies to. (AI-inferred)
     billing_profile_name: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingAccount_Properties_EnrollmentDetails:
+    # How often this billing profile is invoiced. (AI-inferred)
     billing_cycle: Any = None
+    # The sales channel this applies to. (AI-inferred)
     channel: Any = None
+    # The Azure cloud environment this applies to. (AI-inferred)
     cloud: Any = None
+    # The two-letter country code this applies to. (AI-inferred)
     country_code: Any = None
+    # The currency amounts are expressed in. (AI-inferred)
     currency: Any = None
+    # When this window or period ends. (AI-inferred)
     end_date: Any = None
+    # Whether an extended term is available for this offer. (AI-inferred)
     extended_term_option: Any = None
+    # Detail about this account's own indirect (reseller-mediated) billing relationship. (AI-inferred)
     indirect_relationship_info: Any = None
+    # The recipient this invoice is sent to. (AI-inferred)
     invoice_recipient: Any = None
+    # The language content is provided in. (AI-inferred)
     language: Any = None
+    # Whether markup on this billed amount is currently active. (AI-inferred)
     markup_status: Any = None
+    # A purchase order number associated with this invoice. (AI-inferred)
     po_number: Any = None
+    # When this window or period starts. (AI-inferred)
     start_date: Any = None
+    # The support coverage level associated with this account. (AI-inferred)
     support_coverage: Any = None
+    # The tier of support this account is entitled to. (AI-inferred)
     support_level: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingAccount_Properties_RegistrationNumber:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # Whether this field must be present. (AI-inferred)
     required: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingAccount_Properties_SoldTo:
+    # The first line of this postal address. (AI-inferred)
     address_line1: Any = None
+    # The second line of this postal address. (AI-inferred)
     address_line2: Any = None
+    # The third line of this postal address. (AI-inferred)
     address_line3: Any = None
+    # The city component of this postal address. (AI-inferred)
     city: Any = None
+    # The name of this company. (AI-inferred)
     company_name: Any = None
+    # The country component of this postal address. (AI-inferred)
     country: Any = None
+    # The district or region component of this postal address. (AI-inferred)
     district: Any = None
+    # An email address associated with this resource. (AI-inferred)
     email: Any = None
+    # The given name of this contact. (AI-inferred)
     first_name: Any = None
+    # Whether this address passed validation. (AI-inferred)
     is_valid_address: Any = None
+    # The family name of this contact. (AI-inferred)
     last_name: Any = None
+    # The middle name of this contact. (AI-inferred)
     middle_name: Any = None
+    # A phone number associated with this resource. (AI-inferred)
     phone_number: Any = None
+    # The postal code component of this address. (AI-inferred)
     postal_code: Any = None
+    # The billing region this applies to. (AI-inferred)
     region: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingAccount_Properties_TaxIds:
+    # The country component of this postal address. (AI-inferred)
     country: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # What this configuration's own scope covers. (AI-inferred)
     scope: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

@@ -4,7 +4,9 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Workflow_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,17 +22,22 @@ type Workflow_Identity struct {
 }
 
 type Workflow_Properties_AccessControl_Actions_AllowedCallerIpAddresses struct {
+	// The permitted range of addresses for this endpoint. (AI-inferred)
 	AddressRange any
 }
 
 type Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies struct {
+	// The claim(s) required in the token presented for authentication. (AI-inferred)
 	Claims any
-	Type   any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies struct {
@@ -57,6 +64,7 @@ type Workflow_Properties_AccessControl struct {
 }
 
 type Workflow_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddresses struct {
+	// The address this endpoint is reached at. (AI-inferred)
 	Address any
 }
 
@@ -84,10 +92,14 @@ type Workflow_Properties_IntegrationAccount struct {
 }
 
 type Workflow_Properties_Parameters struct {
+	// A human-readable description of this resource. (AI-inferred)
 	Description any
-	Metadata    any
-	Type        any
-	Value       any
+	// Free-form key/value metadata attached to this resource. (AI-inferred)
+	Metadata any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type Workflow_Properties_Sku struct {
@@ -106,7 +118,8 @@ type Workflow_Properties struct {
 	ChangedTime any
 	// Gets the created time.
 	CreatedTime any
-	Definition  any
+	// The schema or configuration defining this artifact. (AI-inferred)
+	Definition any
 	// The endpoints configuration.
 	EndpointsConfiguration any
 	// The resource reference.

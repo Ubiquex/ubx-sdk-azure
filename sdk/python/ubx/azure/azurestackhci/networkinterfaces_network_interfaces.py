@@ -20,18 +20,25 @@ class NetworkinterfacesNetworkInterfaces_Properties_DnsSettings:
 
 @dataclasses.dataclass
 class NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties_Subnet:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties:
+    # The default gateway IP address for this IP configuration. (AI-inferred)
     gateway: Any = None
+    # The subnet mask length (CIDR prefix) applied to this IP configuration's own address. (AI-inferred)
     prefix_length: Any = None
+    # The private (internal) IP address assigned to this IP configuration. (AI-inferred)
     private_ipaddress: Any = None
+    # A reference to the logical network subnet this IP configuration is drawn from. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
@@ -47,10 +54,12 @@ class NetworkinterfacesNetworkInterfaces_Properties_Status:
     error_code: Any = None
     # Descriptive error message
     error_message: Any = None
+    # The current provisioning status of this network interface. (AI-inferred)
     provisioning_status: Any = None
 
 @dataclasses.dataclass
 class NetworkinterfacesNetworkInterfaces_Properties:
+    # DNS server configuration applied to this network interface. (AI-inferred)
     dns_settings: Any = None
     # IPConfigurations - A list of IPConfigurations of the network interface.
     ip_configurations: Any = None

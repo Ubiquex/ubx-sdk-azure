@@ -4,26 +4,37 @@ package portal
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Dashboard_Properties_Lenses_Parts_Metadata struct {
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type Dashboard_Properties_Lenses_Parts_Position struct {
-	ColSpan  any
+	// How many grid columns this tile spans. (AI-inferred)
+	ColSpan any
+	// Additional, free-form metadata associated with this resource. (AI-inferred)
 	Metadata any
-	RowSpan  any
-	X        any
-	Y        any
+	// How many grid rows this tile spans. (AI-inferred)
+	RowSpan any
+	// The horizontal grid coordinate this tile is placed at. (AI-inferred)
+	X any
+	// The vertical grid coordinate this tile is placed at. (AI-inferred)
+	Y any
 }
 
 type Dashboard_Properties_Lenses_Parts struct {
+	// Additional, free-form metadata associated with this resource. (AI-inferred)
 	Metadata any
+	// The layout position of this item within its own containing grid. (AI-inferred)
 	Position any
 }
 
 type Dashboard_Properties_Lenses struct {
+	// Additional, free-form metadata associated with this resource. (AI-inferred)
 	Metadata any
-	Order    any
-	Parts    any
+	// The relative ordering position of this item. (AI-inferred)
+	Order any
+	// The individual tile(s) making up this dashboard. (AI-inferred)
+	Parts any
 }
 
 type Dashboard_Properties struct {

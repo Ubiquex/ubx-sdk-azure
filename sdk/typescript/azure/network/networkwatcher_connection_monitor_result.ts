@@ -11,46 +11,66 @@ export interface NetworkwatcherConnectionMonitorResult_Properties_Destination {
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter_Items {
+  /** The network address this applies to. (AI-inferred) */
   address?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter {
+  /** The individual entries making up this collection. (AI-inferred) */
   items?: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter_Items[] | Computed<NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter_Items[]>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_Endpoints_LocationDetails {
+  /** The Azure region this applies to. (AI-inferred) */
   region?: string | Computed<string>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_Exclude {
+  /** The network address this applies to. (AI-inferred) */
   address?: string | Computed<string>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope {
+  /** The item(s) excluded from this scope. (AI-inferred) */
   exclude?: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_Exclude[] | Computed<NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_Exclude[]>;
+  /** The item(s) included in this scope. (AI-inferred) */
   include?: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_Exclude[] | Computed<NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_Exclude[]>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_Endpoints {
+  /** The network address this applies to. (AI-inferred) */
   address?: string | Computed<string>;
+  /** How thoroughly this connectivity test's own path is probed. (AI-inferred) */
   coverageLevel?: string | Computed<string>;
+  /** Restricts this result to matching item(s). (AI-inferred) */
   filter?: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter | Computed<NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter>;
+  /** Detail about the physical location this test point is running from. (AI-inferred) */
   locationDetails?: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_LocationDetails | Computed<NetworkwatcherConnectionMonitorResult_Properties_Endpoints_LocationDetails>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
+  /** What this configuration's own scope covers. (AI-inferred) */
   scope?: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope | Computed<NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope>;
+  /** The identifier of the associated Azure subscription. (AI-inferred) */
   subscriptionId?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_Outputs_WorkspaceSettings {
+  /** The full Azure Resource Manager resource ID of the target Log Analytics workspace. (AI-inferred) */
   workspaceResourceId?: string | Computed<string>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_Outputs {
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The Log Analytics workspace this monitor's own results are sent to. (AI-inferred) */
   workspaceSettings?: NetworkwatcherConnectionMonitorResult_Properties_Outputs_WorkspaceSettings | Computed<NetworkwatcherConnectionMonitorResult_Properties_Outputs_WorkspaceSettings>;
 }
 
@@ -62,50 +82,77 @@ export interface NetworkwatcherConnectionMonitorResult_Properties_Source {
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration_RequestHeaders {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration {
+  /** The HTTP method this applies to. (AI-inferred) */
   method?: string | Computed<string>;
+  /** The URL path this applies to. (AI-inferred) */
   path?: string | Computed<string>;
+  /** A TCP or UDP port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** Whether HTTPS is preferred over HTTP when testing this endpoint. (AI-inferred) */
   preferHttps?: boolean | Computed<boolean>;
+  /** The HTTP header(s) sent with this test request. (AI-inferred) */
   requestHeaders?: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration_RequestHeaders[] | Computed<NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration_RequestHeaders[]>;
+  /** The HTTP status code range(s) considered a successful result. (AI-inferred) */
   validStatusCodeRanges?: string[] | Computed<string[]>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_IcmpConfiguration {
+  /** Whether hop-by-hop trace route data is excluded from this connectivity test's own result. (AI-inferred) */
   disableTraceRoute?: boolean | Computed<boolean>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_SuccessThreshold {
+  /** The percentage of health checks that failed within this test's own reporting interval. (AI-inferred) */
   checksFailedPercent?: number | Computed<number>;
+  /** The observed round-trip latency, in milliseconds. (AI-inferred) */
   roundTripTimeMs?: number | Computed<number>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_TcpConfiguration {
+  /** How the destination port is chosen when none is explicitly specified. (AI-inferred) */
   destinationPortBehavior?: string | Computed<string>;
+  /** Whether hop-by-hop trace route data is excluded from this connectivity test's own result. (AI-inferred) */
   disableTraceRoute?: boolean | Computed<boolean>;
+  /** A TCP or UDP port number. (AI-inferred) */
   port?: number | Computed<number>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations {
+  /** Configuration specific to an HTTP-based connectivity test. (AI-inferred) */
   httpConfiguration?: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration | Computed<NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration>;
+  /** Configuration specific to an ICMP-based connectivity test. (AI-inferred) */
   icmpConfiguration?: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_IcmpConfiguration | Computed<NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_IcmpConfiguration>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Whether IPv4 or IPv6 is preferred for this test. (AI-inferred) */
   preferredIpversion?: string | Computed<string>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The threshold that must be met for this test to be considered successful. (AI-inferred) */
   successThreshold?: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_SuccessThreshold | Computed<NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_SuccessThreshold>;
+  /** Configuration specific to a TCP-based connectivity test. (AI-inferred) */
   tcpConfiguration?: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_TcpConfiguration | Computed<NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_TcpConfiguration>;
+  /** How often, in seconds, this test runs. (AI-inferred) */
   testFrequencySec?: number | Computed<number>;
 }
 
 export interface NetworkwatcherConnectionMonitorResult_Properties_TestGroups {
+  /** The destination(s) this test evaluates connectivity to. (AI-inferred) */
   destinations?: string[] | Computed<string[]>;
+  /** Whether this feature is turned off. (AI-inferred) */
   disable?: boolean | Computed<boolean>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The source(s) this test evaluates connectivity from. (AI-inferred) */
   sources?: string[] | Computed<string[]>;
+  /** The test configuration(s) making up this connection monitor. (AI-inferred) */
   testConfigurations?: string[] | Computed<string[]>;
 }
 

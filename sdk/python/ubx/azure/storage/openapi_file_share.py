@@ -17,13 +17,18 @@ class OpenapiFileShare_Properties_FileSharePaidBursting:
 
 @dataclasses.dataclass
 class OpenapiFileShare_Properties_SignedIdentifiers_AccessPolicy:
+    # When this resource or grant expires. (AI-inferred)
     expiry_time: Any = None
+    # The access permission granted, e.g. read or write. (AI-inferred)
     permission: Any = None
+    # When this event or window started. (AI-inferred)
     start_time: Any = None
 
 @dataclasses.dataclass
 class OpenapiFileShare_Properties_SignedIdentifiers:
+    # A stored access policy defining shared permissions and validity period for associated shared access signatures. (AI-inferred)
     access_policy: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass

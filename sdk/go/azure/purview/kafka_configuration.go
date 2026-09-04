@@ -17,7 +17,8 @@ type KafkaConfiguration_Properties struct {
 	Credentials any
 	// Optional partition Id for notification event hub. If not set, all partitions will be leveraged.
 	EventHubPartitionId any
-	EventHubResourceId  any
+	// A reference to the Event Hubs namespace this account's own Kafka-compatible endpoints connect through. (AI-inferred)
+	EventHubResourceId any
 	// The event hub type.
 	EventHubType any
 	// The state of the event streaming service

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiOnlineDeployment_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,9 +20,13 @@ export interface OpenapiOnlineDeployment_Identity {
 }
 
 export interface OpenapiOnlineDeployment_Properties_DataCollector_Collections {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Whether data collection is enabled, disabled, or disabled with data deletion. (AI-inferred) */
   dataCollectionMode?: string | Computed<string>;
+  /** A reference to the data asset this applies to. (AI-inferred) */
   dataId?: string | Computed<string>;
+  /** The fraction of requests sampled for data collection. (AI-inferred) */
   samplingRate?: number | Computed<number>;
 }
 
@@ -32,6 +38,7 @@ export interface OpenapiOnlineDeployment_Properties_DataCollector_RequestLogging
 export interface OpenapiOnlineDeployment_Properties_DataCollector {
   /** [Required] The collection configuration. Each collection has it own configuration to collect model data and the name of collection can be arbitrary string. Model data collector can be used for either payload logging or custom logging or both of them. Collection request and response are reserved for payload logging, others are for custom logging. */
   collections: Record<string, OpenapiOnlineDeployment_Properties_DataCollector_Collections> | Computed<Record<string, OpenapiOnlineDeployment_Properties_DataCollector_Collections>>;
+  /** Configuration for logging inference request/response payloads. (AI-inferred) */
   requestLogging?: OpenapiOnlineDeployment_Properties_DataCollector_RequestLogging | Computed<OpenapiOnlineDeployment_Properties_DataCollector_RequestLogging>;
   /** When model data is collected to blob storage, we need to roll the data to different path to avoid logging all of them in a single blob file. If the rolling rate is hour, all data will be collected in the blob path /yyyy/MM/dd/HH/. If it's day, all data will be collected in blob path /yyyy/MM/dd/. The other benefit of rolling path is that model monitoring ui is able to select a time range of data very quickly. */
   rollingRate?: string | Computed<string>;
@@ -60,12 +67,14 @@ export interface OpenapiOnlineDeployment_Properties_RequestSettings {
 }
 
 export interface OpenapiOnlineDeployment_Properties_ScaleSettings {
+  /** How this resource scales, e.g. manually or automatically. (AI-inferred) */
   scaleType: string | Computed<string>;
 }
 
 export interface OpenapiOnlineDeployment_Properties {
   /** If true, enables Application Insights logging. */
   appInsightsEnabled?: boolean | Computed<boolean>;
+  /** Configuration for collecting inference request/response data. (AI-inferred) */
   dataCollector?: OpenapiOnlineDeployment_Properties_DataCollector | Computed<OpenapiOnlineDeployment_Properties_DataCollector>;
   /** Enum to determine whether PublicNetworkAccess is Enabled or Disabled for egress of a deployment. */
   egressPublicNetworkAccess?: string | Computed<string>;
@@ -218,6 +227,7 @@ export interface OpenapiOnlineDeploymentConfig {
   kind?: string | Computed<string>;
   /** The geo-location where the resource lives */
   location: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiOnlineDeployment_Properties | Computed<OpenapiOnlineDeployment_Properties>;
   /** The resource model definition representing SKU */
   sku?: OpenapiOnlineDeployment_Sku | Computed<OpenapiOnlineDeployment_Sku>;
@@ -232,6 +242,7 @@ export interface OpenapiOnlineDeploymentAttrs {
   kind: string;
   /** The geo-location where the resource lives */
   location: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiOnlineDeployment_Properties;
   /** The resource model definition representing SKU */
   sku: OpenapiOnlineDeployment_Sku;

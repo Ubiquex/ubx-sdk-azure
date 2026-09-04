@@ -68,15 +68,25 @@ export interface PrivateCloud_Properties_Endpoints {
 }
 
 export interface PrivateCloud_Properties_IdentitySources {
+  /** An alternate name this resource is also known by. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The distinguished name of the LDAP group search base. (AI-inferred) */
   baseGroupDn?: string | Computed<string>;
+  /** The distinguished name of the LDAP user search base. (AI-inferred) */
   baseUserDn?: string | Computed<string>;
+  /** The Active Directory domain this connection joins. (AI-inferred) */
   domain?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The password credential used to authenticate. (AI-inferred) */
   password?: string | Computed<string>;
+  /** The address of the primary Active Directory server. (AI-inferred) */
   primaryServer?: string | Computed<string>;
+  /** The address of the secondary (failover) Active Directory server. (AI-inferred) */
   secondaryServer?: string | Computed<string>;
+  /** Whether SSL/TLS is used for this connection. (AI-inferred) */
   ssl?: string | Computed<string>;
+  /** The username used to authenticate. (AI-inferred) */
   username?: string | Computed<string>;
 }
 

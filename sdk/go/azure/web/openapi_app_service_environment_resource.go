@@ -4,7 +4,9 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAppServiceEnvironmentResource_Properties_ClusterSettings struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
@@ -15,8 +17,10 @@ type OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffixConfiguratio
 	DnsSuffix any
 	// The user-assigned identity to use for resolving the key vault certificate reference. If not specified, the system-assigned ASE identity will be used if available.
 	KeyVaultReferenceIdentity any
-	ProvisioningDetails       any
-	ProvisioningState         any
+	// Additional detail about this resource's own provisioning progress. (AI-inferred)
+	ProvisioningDetails any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffixConfiguration struct {
@@ -29,15 +33,19 @@ type OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffixConfiguratio
 type OpenapiAppServiceEnvironmentResource_Properties_NetworkingConfiguration_Properties struct {
 	// Property to enable and disable new private endpoint connection creation on ASE
 	AllowNewPrivateEndpointConnections any
-	ExternalInboundIpAddresses         any
+	// The externally reachable inbound IP address(es) for this app, when running behind an App Service Environment. (AI-inferred)
+	ExternalInboundIpAddresses any
 	// Property to enable and disable FTP on ASEV3
 	FtpEnabled any
 	// Customer provided Inbound IP Address. Only able to be set on Ase create.
-	InboundIpAddressOverride   any
+	InboundIpAddressOverride any
+	// The internally reachable inbound IP address(es) for this app, when running behind an App Service Environment. (AI-inferred)
 	InternalInboundIpAddresses any
-	LinuxOutboundIpAddresses   any
+	// The outbound IP address(es) this Linux app uses to reach external resources. (AI-inferred)
+	LinuxOutboundIpAddresses any
 	// Property to enable and disable Remote Debug on ASEV3
-	RemoteDebugEnabled         any
+	RemoteDebugEnabled any
+	// The outbound IP address(es) this Windows app uses to reach external resources. (AI-inferred)
 	WindowsOutboundIpAddresses any
 }
 

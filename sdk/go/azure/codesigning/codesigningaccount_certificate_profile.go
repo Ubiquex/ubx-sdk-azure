@@ -4,23 +4,37 @@ package codesigning
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CodesigningaccountCertificateProfile_Properties_Certificates_Revocation struct {
-	EffectiveAt   any
+	// The timestamp revocation takes effect from -- signatures made with this certificate after this time are treated as invalid. (AI-inferred)
+	EffectiveAt any
+	// Why the revocation request failed, if `status` is `Failed`. (AI-inferred)
 	FailureReason any
-	Reason        any
-	Remarks       any
-	RequestedAt   any
-	Status        any
+	// The reason given for revoking this certificate. (AI-inferred)
+	Reason any
+	// Free-text notes attached to this revocation request. (AI-inferred)
+	Remarks any
+	// When revocation of this certificate was requested. (AI-inferred)
+	RequestedAt any
+	// The current status of this revocation request: `InProgress`, `Succeeded`, or `Failed`. (AI-inferred)
+	Status any
 }
 
 type CodesigningaccountCertificateProfile_Properties_Certificates struct {
-	CreatedDate      any
+	// When this signing certificate was issued. (AI-inferred)
+	CreatedDate any
+	// The X.509 Enhanced Key Usage extension value declaring what this certificate may be used for, e.g. code signing. (AI-inferred)
 	EnhancedKeyUsage any
-	ExpiryDate       any
-	Revocation       any
-	SerialNumber     any
-	Status           any
-	SubjectName      any
-	Thumbprint       any
+	// When this signing certificate expires. (AI-inferred)
+	ExpiryDate any
+	// The revocation request and outcome for this certificate, present only if revocation was ever requested. (AI-inferred)
+	Revocation any
+	// This certificate's own serial number. (AI-inferred)
+	SerialNumber any
+	// This certificate's own current status: `Active`, `Expired`, or `Revoked`. (AI-inferred)
+	Status any
+	// This certificate's own subject (the signing identity it represents). (AI-inferred)
+	SubjectName any
+	// A SHA-1 hash of this certificate's own raw bytes, used to identify it (e.g. when requesting revocation). (AI-inferred)
+	Thumbprint any
 }
 
 type CodesigningaccountCertificateProfile_Properties struct {

@@ -4,21 +4,30 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources_Errors struct {
-	ActionRequired  any
-	Details         any
-	ErrorCode       any
-	Name            any
+	// The action needed to resolve this issue. (AI-inferred)
+	ActionRequired any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A machine-readable error code. (AI-inferred)
+	ErrorCode any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Guidance for resolving this issue. (AI-inferred)
 	ResolutionSteps any
 }
 
 type Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources struct {
+	// The error(s) encountered. (AI-inferred)
 	Errors any
-	Id     any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
 }
 
 type Maintenance_Properties_MaintenanceReadiness_FailedChecks struct {
+	// The resource(s) affected by this issue. (AI-inferred)
 	ImpactedResources any
-	Name              any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type Maintenance_Properties_MaintenanceReadiness struct {
@@ -35,6 +44,7 @@ type Maintenance_Properties_MaintenanceReadiness struct {
 }
 
 type Maintenance_Properties_Operations struct {
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
 	Kind any
 }
 

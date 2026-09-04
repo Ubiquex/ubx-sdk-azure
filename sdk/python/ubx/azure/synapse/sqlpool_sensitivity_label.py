@@ -20,6 +20,7 @@ class SqlpoolSensitivityLabel_Properties:
     label_id: Any = None
     # The label name.
     label_name: Any = None
+    # The sensitivity level of this label, from `Low` to `Critical`. (AI-inferred)
     rank: Any = None
     # The schema name.
     schema_name: Any = None

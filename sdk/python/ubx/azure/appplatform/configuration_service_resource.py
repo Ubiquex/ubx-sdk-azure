@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ConfigurationServiceResource_Properties_Instances:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
@@ -22,18 +24,31 @@ class ConfigurationServiceResource_Properties_ResourceRequests:
 
 @dataclasses.dataclass
 class ConfigurationServiceResource_Properties_Settings_GitProperty_Repositories:
+    # A reference to the CA certificate resource used to validate this connection. (AI-inferred)
     ca_cert_resource_id: Any = None
+    # Which Git client implementation is used to fetch this repository. (AI-inferred)
     git_implementation: Any = None
+    # The SSH host key used to verify this Git server's own identity. (AI-inferred)
     host_key: Any = None
+    # The algorithm `host_key` uses. (AI-inferred)
     host_key_algorithm: Any = None
+    # A human-readable label for this item. (AI-inferred)
     label: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The password credential used to authenticate. (AI-inferred)
     password: Any = None
+    # The pattern(s) this rule matches. (AI-inferred)
     patterns: Any = None
+    # The private key credential used to authenticate. (AI-inferred)
     private_key: Any = None
+    # The path(s) within the repository searched for configuration files. (AI-inferred)
     search_paths: Any = None
+    # Whether the Git server's own host key must strictly match `host_key` before connecting. (AI-inferred)
     strict_host_key_checking: Any = None
+    # A resource URI. (AI-inferred)
     uri: Any = None
+    # The username used to authenticate. (AI-inferred)
     username: Any = None
 
 @dataclasses.dataclass

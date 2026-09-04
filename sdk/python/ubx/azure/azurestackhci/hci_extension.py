@@ -27,25 +27,39 @@ class HciExtension_Properties_ExtensionParameters:
 
 @dataclasses.dataclass
 class HciExtension_Properties_PerNodeExtensionDetails_InstanceView_Status:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # A human-readable summary of this resource's own current status. (AI-inferred)
     display_status: Any = None
+    # The severity level of this event. (AI-inferred)
     level: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # The time this event occurred. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
 class HciExtension_Properties_PerNodeExtensionDetails_InstanceView:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The version of the extension handler processing this resource. (AI-inferred)
     type_handler_version: Any = None
 
 @dataclasses.dataclass
 class HciExtension_Properties_PerNodeExtensionDetails:
+    # A reference to the cluster extension this applies to. (AI-inferred)
     extension: Any = None
+    # The current runtime status of this resource. (AI-inferred)
     instance_view: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The current lifecycle state of this resource. (AI-inferred)
     state: Any = None
+    # The version of the extension handler processing this resource. (AI-inferred)
     type_handler_version: Any = None
 
 @dataclasses.dataclass

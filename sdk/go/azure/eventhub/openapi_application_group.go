@@ -4,7 +4,9 @@ package eventhub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiApplicationGroup_Properties_Policies struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
@@ -33,12 +35,14 @@ var OpenapiApplicationGroup_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiApplicationGroupConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type OpenapiApplicationGroupAttrs struct {
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

@@ -13,8 +13,11 @@ class PrivateEndpointConnection_Properties_PrivateEndpoint:
 
 @dataclasses.dataclass
 class PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass

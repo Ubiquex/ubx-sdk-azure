@@ -2,14 +2,20 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiSiteContainer_Properties_EnvironmentVariables {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface OpenapiSiteContainer_Properties_VolumeMounts {
+  /** The path this volume is mounted at inside the container. (AI-inferred) */
   containerMountPath?: string | Computed<string>;
+  /** The literal data payload of this field. (AI-inferred) */
   data?: string | Computed<string>;
+  /** Whether this volume is mounted read-only. (AI-inferred) */
   readOnly?: boolean | Computed<boolean>;
+  /** A specific subdirectory within the volume to mount, rather than its own root. (AI-inferred) */
   volumeSubPath?: string | Computed<string>;
 }
 

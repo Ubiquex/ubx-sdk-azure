@@ -18,12 +18,19 @@ export interface BigdatapoolBigDataPoolResourceInfo_Properties_AutoScale {
 }
 
 export interface BigdatapoolBigDataPoolResourceInfo_Properties_CustomLibraries {
+  /** The name of the storage container this custom library is uploaded to. (AI-inferred) */
   containerName?: string | Computed<string>;
+  /** An identifier for the identity that uploaded this custom library. (AI-inferred) */
   creatorId?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The path to this custom library's own file within its containing storage container. (AI-inferred) */
   path?: string | Computed<string>;
+  /** The current provisioning status of this custom library. (AI-inferred) */
   provisioningStatus?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** When this custom library was uploaded. (AI-inferred) */
   uploadedTimestamp?: string | Computed<string>;
 }
 

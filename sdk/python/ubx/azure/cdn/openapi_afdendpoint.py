@@ -10,6 +10,7 @@ import ubx_sdk as ubx
 class OpenapiAfdendpoint_Properties:
     # Indicates the endpoint name reuse scope. The default value is TenantReuse.
     auto_generated_domain_name_label_scope: Any = None
+    # The current deployment status of this configuration. (AI-inferred)
     deployment_status: Any = None
     # Whether to enable use of this rule. Permitted values are 'Enabled' or 'Disabled'
     enabled_state: Any = None

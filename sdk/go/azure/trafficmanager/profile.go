@@ -13,39 +13,61 @@ type Profile_Properties_DnsConfig struct {
 }
 
 type Profile_Properties_Endpoints_Properties_CustomHeaders struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type Profile_Properties_Endpoints_Properties_Subnets struct {
+	// The first address in this range, inclusive. (AI-inferred)
 	First any
-	Last  any
+	// The last address in this range, inclusive. (AI-inferred)
+	Last any
+	// The subnet or IP range this endpoint applies to, for subnet-based routing. (AI-inferred)
 	Scope any
 }
 
 type Profile_Properties_Endpoints_Properties struct {
-	AlwaysServe           any
-	CustomHeaders         any
-	EndpointLocation      any
+	// Whether this endpoint continues to receive traffic even when it's reported unhealthy. (AI-inferred)
+	AlwaysServe any
+	// Additional HTTP header(s) sent with this endpoint's own health check probes. (AI-inferred)
+	CustomHeaders any
+	// The Azure region or geographic location this endpoint is associated with. (AI-inferred)
+	EndpointLocation any
+	// The current health-check status of this endpoint. (AI-inferred)
 	EndpointMonitorStatus any
-	EndpointStatus        any
-	GeoMapping            any
-	MinChildEndpoints     any
+	// Whether this endpoint is enabled or disabled. (AI-inferred)
+	EndpointStatus any
+	// The geographic region(s) this endpoint is mapped to, for geographic routing. (AI-inferred)
+	GeoMapping any
+	// The minimum number of healthy child endpoints required before this nested profile itself is considered healthy. (AI-inferred)
+	MinChildEndpoints any
+	// The minimum number of healthy IPv4 child endpoints required before this nested profile itself is considered healthy. (AI-inferred)
 	MinChildEndpointsIpv4 any
+	// The minimum number of healthy IPv6 child endpoints required before this nested profile itself is considered healthy. (AI-inferred)
 	MinChildEndpointsIpv6 any
-	Priority              any
-	Subnets               any
-	Target                any
-	TargetResourceId      any
-	Weight                any
+	// The relative priority of this endpoint -- lower numbers are preferred first. (AI-inferred)
+	Priority any
+	// The subnet or IP range(s) mapped to this endpoint, for subnet-based routing. (AI-inferred)
+	Subnets any
+	// The domain name or IP address traffic is routed to. (AI-inferred)
+	Target any
+	// A reference to the Azure resource this endpoint targets. (AI-inferred)
+	TargetResourceId any
+	// The relative weight of this endpoint, for weighted routing. (AI-inferred)
+	Weight any
 }
 
 type Profile_Properties_Endpoints struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type Profile_Properties_MonitorConfig_ExpectedStatusCodeRanges struct {
+	// The maximum value allowed. (AI-inferred)
 	Max any
+	// The minimum value allowed. (AI-inferred)
 	Min any
 }
 

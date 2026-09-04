@@ -8,18 +8,25 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ManagementOpenapiView_Properties_Kpis:
+    # Whether this feature is turned on. (AI-inferred)
     enabled: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ManagementOpenapiView_Properties_Pivots:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ManagementOpenapiView_Properties_Query_DataSet_Aggregation:
+    # The aggregation function applied to this value. (AI-inferred)
     function: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
@@ -53,7 +60,9 @@ class ManagementOpenapiView_Properties_Query_DataSet_Filter:
 
 @dataclasses.dataclass
 class ManagementOpenapiView_Properties_Query_DataSet_Sorting:
+    # Whether this schedule is triggered by an increase or decrease. (AI-inferred)
     direction: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass

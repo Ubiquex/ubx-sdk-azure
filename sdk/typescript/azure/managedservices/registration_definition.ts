@@ -13,27 +13,40 @@ export interface RegistrationDefinition_Plan {
 }
 
 export interface RegistrationDefinition_Properties_Authorizations {
+  /** The role definition ID(s) delegated to the managing tenant's own principal(s). (AI-inferred) */
   delegatedRoleDefinitionIds?: string[] | Computed<string[]>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** A human-readable name for the delegated principal. (AI-inferred) */
   principalIdDisplayName?: string | Computed<string>;
+  /** A reference to the role definition this delegation grants. (AI-inferred) */
   roleDefinitionId?: string | Computed<string>;
 }
 
 export interface RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApprovers {
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** A human-readable name for the delegated principal. (AI-inferred) */
   principalIdDisplayName?: string | Computed<string>;
 }
 
 export interface RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy {
+  /** The principal(s) in the managing tenant authorized to approve just-in-time access requests. (AI-inferred) */
   managedByTenantApprovers?: RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApprovers[] | Computed<RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApprovers[]>;
+  /** The maximum duration a just-in-time access grant may remain active for. (AI-inferred) */
   maximumActivationDuration?: string | Computed<string>;
+  /** The multi-factor authentication provider required to approve or request access. (AI-inferred) */
   multiFactorAuthProvider?: string | Computed<string>;
 }
 
 export interface RegistrationDefinition_Properties_EligibleAuthorizations {
+  /** Policy configuration for temporary, approval-gated access to this delegation. (AI-inferred) */
   justInTimeAccessPolicy?: RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy | Computed<RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** A human-readable name for the delegated principal. (AI-inferred) */
   principalIdDisplayName?: string | Computed<string>;
+  /** A reference to the role definition this delegation grants. (AI-inferred) */
   roleDefinitionId?: string | Computed<string>;
 }
 

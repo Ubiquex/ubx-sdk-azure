@@ -23,22 +23,32 @@ type Account_Properties_AccountStatus_ErrorDetails_Details_Details struct {
 }
 
 type Account_Properties_AccountStatus_ErrorDetails_Details struct {
-	Code    any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
 	Details any
+	// A human-readable description of this result. (AI-inferred)
 	Message any
-	Target  any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type Account_Properties_AccountStatus_ErrorDetails struct {
-	Code    any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
 	Details any
+	// A human-readable description of this result. (AI-inferred)
 	Message any
-	Target  any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type Account_Properties_AccountStatus struct {
+	// The last, current provisioning status of this account. (AI-inferred)
 	AccountProvisioningState any
-	ErrorDetails             any
+	// Additional detail about this error. (AI-inferred)
+	ErrorDetails any
 }
 
 type Account_Properties_CloudConnectors struct {
@@ -47,34 +57,48 @@ type Account_Properties_CloudConnectors struct {
 }
 
 type Account_Properties_Endpoints struct {
-	Catalog  any
+	// A reference to the data catalog endpoint for this account. (AI-inferred)
+	Catalog any
+	// A reference to this account's own governance/guardian endpoint. (AI-inferred)
 	Guardian any
-	Scan     any
+	// A reference to this account's own scan endpoint. (AI-inferred)
+	Scan any
 }
 
 type Account_Properties_ManagedResources struct {
+	// The Event Hubs namespace this account's own Kafka-compatible endpoints connect through. (AI-inferred)
 	EventHubNamespace any
-	ResourceGroup     any
-	StorageAccount    any
+	// The resource group this applies to. (AI-inferred)
+	ResourceGroup any
+	// A reference to the managed storage account backing this resource. (AI-inferred)
+	StorageAccount any
 }
 
 type Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type Account_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint                   any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type Account_Properties_PrivateEndpointConnections struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
@@ -110,8 +134,10 @@ type Account_Properties struct {
 }
 
 type Account_Sku struct {
+	// The number of instance(s) this resource is provisioned with. (AI-inferred)
 	Capacity any
-	Name     any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type Account_SystemData struct {

@@ -4,11 +4,16 @@ package virtual
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MachineScaleSetVmextension_Properties_InstanceView_Statuses struct {
-	Code          any
+	// The machine-readable status code for the extension instance view, such as 'ProvisioningState/succeeded' or 'ProvisioningState/failed'. (AI-inferred)
+	Code any
+	// The short, human-readable label for the status. (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The level of the status message, indicating severity. Possible values are Info, Warning, and Error. (AI-inferred)
+	Level any
+	// A human-readable message providing additional details about the status. (AI-inferred)
+	Message any
+	// The timestamp when the status was recorded, in ISO 8601 format (e.g., 2024-01-01T12:00:00Z). (AI-inferred)
+	Time any
 }
 
 type MachineScaleSetVmextension_Properties_InstanceView struct {
@@ -31,7 +36,8 @@ type MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault_SourceV
 
 type MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault struct {
 	// The URL referencing a secret in a Key Vault.
-	SecretUrl   any
+	SecretUrl any
+	// Specifies the Azure Key Vault from which the secret for the protected settings is retrieved. This is required when using protected settings from a Key Vault. (AI-inferred)
 	SourceVault any
 }
 

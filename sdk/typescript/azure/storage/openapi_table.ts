@@ -2,13 +2,18 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiTable_Properties_SignedIdentifiers_AccessPolicy {
+  /** When this resource or grant expires. (AI-inferred) */
   expiryTime?: string | Computed<string>;
+  /** The access permission granted, e.g. read or write. (AI-inferred) */
   permission?: string | Computed<string>;
+  /** When this event or window started. (AI-inferred) */
   startTime?: string | Computed<string>;
 }
 
 export interface OpenapiTable_Properties_SignedIdentifiers {
+  /** A stored access policy defining shared permissions and validity period for associated shared access signatures. (AI-inferred) */
   accessPolicy?: OpenapiTable_Properties_SignedIdentifiers_AccessPolicy | Computed<OpenapiTable_Properties_SignedIdentifiers_AccessPolicy>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
@@ -44,10 +49,12 @@ const OpenapiTable_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiTableConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiTable_Properties | Computed<OpenapiTable_Properties>;
 }
 
 export interface OpenapiTableAttrs {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiTable_Properties;
 }
 

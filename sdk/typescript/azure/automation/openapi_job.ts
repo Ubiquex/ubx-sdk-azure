@@ -79,10 +79,12 @@ const OpenapiJob_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiJobConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiJob_Properties | Computed<OpenapiJob_Properties>;
 }
 
 export interface OpenapiJobAttrs {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiJob_Properties;
 }
 

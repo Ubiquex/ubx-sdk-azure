@@ -4,8 +4,10 @@ package securityinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAutomationRule_Properties_Actions struct {
+	// The category of action this content item performs. (AI-inferred)
 	ActionType any
-	Order      any
+	// The relative evaluation order of this item. (AI-inferred)
+	Order any
 }
 
 type OpenapiAutomationRule_Properties_CreatedBy struct {
@@ -20,6 +22,7 @@ type OpenapiAutomationRule_Properties_CreatedBy struct {
 }
 
 type OpenapiAutomationRule_Properties_TriggeringLogic_Conditions struct {
+	// The category of condition this represents. (AI-inferred)
 	ConditionType any
 }
 
@@ -29,8 +32,10 @@ type OpenapiAutomationRule_Properties_TriggeringLogic struct {
 	// Determines when the automation rule should automatically expire and be disabled.
 	ExpirationTimeUtc any
 	// Determines whether the automation rule is enabled or disabled.
-	IsEnabled    any
-	TriggersOn   any
+	IsEnabled any
+	// The event category (e.g. alerts or incidents) this automation rule triggers on. (AI-inferred)
+	TriggersOn any
+	// The specific lifecycle event that triggers this automation rule. (AI-inferred)
 	TriggersWhen any
 }
 

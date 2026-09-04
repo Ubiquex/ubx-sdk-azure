@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class HciCluster_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -54,24 +56,37 @@ class HciCluster_Properties_IsolatedVmAttestationConfiguration:
 
 @dataclasses.dataclass
 class HciCluster_Properties_LocalAvailabilityZones:
+    # The name of the local availability zone this applies to. (AI-inferred)
     local_availability_zone_name: Any = None
+    # The node(s) making up this cluster. (AI-inferred)
     nodes: Any = None
 
 @dataclasses.dataclass
 class HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails_LogCollectionError:
+    # A machine-readable error code. (AI-inferred)
     error_code: Any = None
+    # A human-readable description of the error. (AI-inferred)
     error_message: Any = None
 
 @dataclasses.dataclass
 class HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails:
+    # An identifier correlating related events or requests together. (AI-inferred)
     correlation_id: Any = None
+    # When log collection for this range ended. (AI-inferred)
     end_time_collected: Any = None
+    # Detail about an error encountered during log collection. (AI-inferred)
     log_collection_error: Any = None
+    # The kind of log collection job this represents. (AI-inferred)
     log_collection_job_type: Any = None
+    # The current status of this log collection job. (AI-inferred)
     log_collection_status: Any = None
+    # When the collected log range ends. (AI-inferred)
     log_end_time: Any = None
+    # The size of the collected log data. (AI-inferred)
     log_size: Any = None
+    # When the collected log range starts. (AI-inferred)
     log_start_time: Any = None
+    # When this diagnostic data was collected. (AI-inferred)
     time_collected: Any = None
 
 @dataclasses.dataclass
@@ -80,27 +95,41 @@ class HciCluster_Properties_LogCollectionProperties:
     from_date: Any = None
     # Recent DateTimeStamp where logs are successfully generated
     last_log_generated: Any = None
+    # Detail about this log collection session. (AI-inferred)
     log_collection_session_details: Any = None
     # To DateTimeStamp till when logs need to be connected
     to_date: Any = None
 
 @dataclasses.dataclass
 class HciCluster_Properties_RemoteSupportProperties_RemoteSupportNodeSettings:
+    # A reference to the Azure Arc resource this applies to. (AI-inferred)
     arc_resource_id: Any = None
+    # A human-readable description of an error encountered while connecting. (AI-inferred)
     connection_error_message: Any = None
+    # The current connectivity status of this resource. (AI-inferred)
     connection_status: Any = None
+    # When this resource was created. (AI-inferred)
     created_at: Any = None
+    # The current lifecycle state of this resource. (AI-inferred)
     state: Any = None
+    # The file share path this remote support session's own transcript is written to. (AI-inferred)
     transcript_location: Any = None
+    # When this resource was last updated. (AI-inferred)
     updated_at: Any = None
 
 @dataclasses.dataclass
 class HciCluster_Properties_RemoteSupportProperties_RemoteSupportSessionDetails:
+    # Whether access through this resource is read-only or read-write. (AI-inferred)
     access_level: Any = None
+    # How long this operation took or is expected to take. (AI-inferred)
     duration: Any = None
+    # The name of this cluster node. (AI-inferred)
     node_name: Any = None
+    # When this session ended. (AI-inferred)
     session_end_time: Any = None
+    # When this session started. (AI-inferred)
     session_start_time: Any = None
+    # The file share path this remote support session's own transcript is written to. (AI-inferred)
     transcript_location: Any = None
 
 @dataclasses.dataclass
@@ -109,29 +138,46 @@ class HciCluster_Properties_RemoteSupportProperties:
     access_level: Any = None
     # Expiration DateTimeStamp when Remote Support Access will be expired
     expiration_time_stamp: Any = None
+    # Per-node configuration for the remote support connection. (AI-inferred)
     remote_support_node_settings: Any = None
     # Remote Support Provisioning State
     remote_support_provisioning_state: Any = None
+    # Detail about an active or past remote support session. (AI-inferred)
     remote_support_session_details: Any = None
     # Remote Support Type for cluster
     remote_support_type: Any = None
 
 @dataclasses.dataclass
 class HciCluster_Properties_ReportedProperties_Nodes:
+    # The number of CPU core(s) this resource has. (AI-inferred)
     core_count: Any = None
+    # A reference to the Azure Stack HCI resource this applies to. (AI-inferred)
     ehc_resource_id: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # When this resource's own license status was last checked. (AI-inferred)
     last_licensing_timestamp: Any = None
+    # The manufacturer of this hardware. (AI-inferred)
     manufacturer: Any = None
+    # The amount of memory, in gibibytes. (AI-inferred)
     memory_in_gi_b: Any = None
+    # The hardware model this resource represents. (AI-inferred)
     model: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The category of node this represents. (AI-inferred)
     node_type: Any = None
+    # Whether this deployment uses OEM activation licensing. (AI-inferred)
     oem_activation: Any = None
+    # A human-readable version label for this node's own operating system. (AI-inferred)
     os_display_version: Any = None
+    # The name of the operating system running on this node. (AI-inferred)
     os_name: Any = None
+    # The operating system version running on this node. (AI-inferred)
     os_version: Any = None
+    # The manufacturer-assigned serial number of this hardware. (AI-inferred)
     serial_number: Any = None
+    # The Windows Server subscription edition this cluster is licensed under. (AI-inferred)
     windows_server_subscription: Any = None
 
 @dataclasses.dataclass
@@ -165,7 +211,9 @@ class HciCluster_Properties_ReportedProperties:
 
 @dataclasses.dataclass
 class HciCluster_Properties_SecretsLocations:
+    # Where this resource's own secret(s) are stored. (AI-inferred)
     secrets_location: Any = None
+    # The category of secret this represents. (AI-inferred)
     secrets_type: Any = None
 
 @dataclasses.dataclass

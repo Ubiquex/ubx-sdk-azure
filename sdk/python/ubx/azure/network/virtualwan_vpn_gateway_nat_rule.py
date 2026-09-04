@@ -8,11 +8,14 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualwanVpnGatewayNatRule_Properties_EgressVpnSiteLinkConnections:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnGatewayNatRule_Properties_ExternalMappings:
+    # The virtual network's own address range(s), in CIDR notation. (AI-inferred)
     address_space: Any = None
+    # A range of ports, e.g. `1000-2000`. (AI-inferred)
     port_range: Any = None
 
 @dataclasses.dataclass

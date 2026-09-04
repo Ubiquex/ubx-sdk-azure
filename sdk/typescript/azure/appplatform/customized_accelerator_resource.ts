@@ -24,12 +24,17 @@ export interface CustomizedAcceleratorResource_Properties_GitRepository {
 }
 
 export interface CustomizedAcceleratorResource_Properties {
+  /** The tag(s) categorizing this application accelerator. (AI-inferred) */
   acceleratorTags?: string[] | Computed<string[]>;
   /** Type of the customized accelerator. */
   acceleratorType?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** The Git repository this configuration is sourced from. (AI-inferred) */
   gitRepository: CustomizedAcceleratorResource_Properties_GitRepository | Computed<CustomizedAcceleratorResource_Properties_GitRepository>;
+  /** A URL pointing to this resource's own icon image. (AI-inferred) */
   iconUrl?: string | Computed<string>;
   /** Imports references all imports that this accelerator/fragment depends upon. */
   imports?: string[] | Computed<string[]>;

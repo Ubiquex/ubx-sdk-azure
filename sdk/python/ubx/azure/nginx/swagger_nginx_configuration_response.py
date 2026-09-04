@@ -8,28 +8,38 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class SwaggerNginxConfigurationResponse_Properties_Files:
+    # The literal content of this configuration file. (AI-inferred)
     content: Any = None
+    # The path this file is mounted at inside the NGINX deployment. (AI-inferred)
     virtual_path: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxConfigurationResponse_Properties_Package:
+    # The literal content of this field. (AI-inferred)
     data: Any = None
+    # The configuration file(s) whose own content is protected and never returned in subsequent reads. (AI-inferred)
     protected_files: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxConfigurationResponse_Properties_ProtectedFiles:
+    # The literal content of this configuration file. (AI-inferred)
     content: Any = None
+    # A hash of this content, used to detect changes. (AI-inferred)
     content_hash: Any = None
+    # The path this file is mounted at inside the NGINX deployment. (AI-inferred)
     virtual_path: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxConfigurationResponse_Properties:
+    # The configuration file(s) making up this deployment. (AI-inferred)
     files: Any = None
     # Nginx Configuration Package
     package: Any = None
+    # The configuration file(s) whose own content is protected and never returned in subsequent reads. (AI-inferred)
     protected_files: Any = None
     # Provisioning State
     provisioning_state: Any = None
+    # The path to the top-level NGINX configuration file. (AI-inferred)
     root_file: Any = None
 
 @dataclasses.dataclass
@@ -90,12 +100,15 @@ class SwaggerNginxConfigurationResponseConfig:
 
 @dataclasses.dataclass
 class SwaggerNginxConfigurationResponseAttrs:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
     # Nginx Configuration Request Properties
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 SwaggerNginxConfigurationResponse = ubx.ResourceBinding(

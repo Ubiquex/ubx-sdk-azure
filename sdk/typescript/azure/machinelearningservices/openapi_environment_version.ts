@@ -16,9 +16,13 @@ export interface OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRo
 }
 
 export interface OpenapiEnvironmentVersion_Properties_InferenceConfig {
+  /** The endpoint path checked to determine whether this deployment is alive. (AI-inferred) */
   livenessRoute?: OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute | Computed<OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute>;
+  /** The endpoint path checked to determine whether this deployment is ready to serve traffic. (AI-inferred) */
   readinessRoute?: OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute | Computed<OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute>;
+  /** The endpoint path inference requests are sent to. (AI-inferred) */
   scoringRoute?: OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute | Computed<OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute>;
+  /** The endpoint path checked during this deployment's own startup phase. (AI-inferred) */
   startupRoute?: OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute | Computed<OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute>;
 }
 
@@ -33,6 +37,7 @@ export interface OpenapiEnvironmentVersion_Properties {
   environmentType?: string | Computed<string>;
   /** Name of the image that will be used for the environment. <seealso href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-custom-docker-image#use-a-custom-base-image" /> */
   image?: string | Computed<string>;
+  /** Configuration for this deployment's own inference behavior. (AI-inferred) */
   inferenceConfig?: OpenapiEnvironmentVersion_Properties_InferenceConfig | Computed<OpenapiEnvironmentVersion_Properties_InferenceConfig>;
   /** The type of operating system. */
   osType?: string | Computed<string>;

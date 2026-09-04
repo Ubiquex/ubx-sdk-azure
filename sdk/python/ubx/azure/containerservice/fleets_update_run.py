@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelection_CustomNodeImageVersions:
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass
@@ -19,6 +20,7 @@ class FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelection:
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_ManagedClusterUpdate_Upgrade:
+    # The Kubernetes version this applies to. (AI-inferred)
     kubernetes_version: Any = None
     # The type of upgrade to perform when targeting ManagedClusters.
     type: Any = None
@@ -37,7 +39,9 @@ class FleetsUpdateRun_Properties_Status_NodeImageSelection:
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfo:
+    # Additional detail about this result. (AI-inferred)
     info: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -46,63 +50,100 @@ class FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details_D
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status:
+    # When this operation completed. (AI-inferred)
     completed_time: Any = None
+    # Detail about an error that occurred. (AI-inferred)
     error: Any = None
+    # When this event or window started. (AI-inferred)
     start_time: Any = None
+    # The current lifecycle state of this resource. (AI-inferred)
     state: Any = None
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Status_Stages_AfterGates:
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # A reference to the specific approval gate this applies to. (AI-inferred)
     gate_id: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Status_Stages_AfterStageWaitStatus:
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # How long, in seconds, this wait stage pauses for. (AI-inferred)
     wait_duration_in_seconds: Any = None
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Status_Stages_Groups_Members:
+    # A reference to the member cluster this applies to. (AI-inferred)
     cluster_resource_id: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # An identifier for this specific operation. (AI-inferred)
     operation_id: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Status_Stages_Groups:
+    # The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
     after_gates: Any = None
+    # The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
     before_gates: Any = None
+    # The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
     max_concurrency: Any = None
+    # The member cluster(s) belonging to this fleet. (AI-inferred)
     members: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Status_Stages:
+    # The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
     after_gates: Any = None
+    # The current status of the post-stage wait period. (AI-inferred)
     after_stage_wait_status: Any = None
+    # The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
     before_gates: Any = None
+    # The group(s) this update run's own member clusters are batched into. (AI-inferred)
     groups: Any = None
+    # The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
     max_concurrency: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
@@ -116,23 +157,35 @@ class FleetsUpdateRun_Properties_Status:
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Strategy_Stages_AfterGates:
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Strategy_Stages_Groups:
+    # The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
     after_gates: Any = None
+    # The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
     before_gates: Any = None
+    # The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
     max_concurrency: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class FleetsUpdateRun_Properties_Strategy_Stages:
+    # The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
     after_gates: Any = None
+    # How long to wait, in seconds, after this stage completes before continuing. (AI-inferred)
     after_stage_wait_in_seconds: Any = None
+    # The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
     before_gates: Any = None
+    # The group(s) this update run's own member clusters are batched into. (AI-inferred)
     groups: Any = None
+    # The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
     max_concurrency: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass

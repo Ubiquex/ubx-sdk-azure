@@ -8,9 +8,13 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Channel_Properties_PartnerTopicInfo_EventTypeInfo_InlineEventTypes:
+    # A URL pointing to the schema describing this event's own data payload. (AI-inferred)
     data_schema_url: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # A URL pointing to documentation for this event type. (AI-inferred)
     documentation_url: Any = None
 
 @dataclasses.dataclass

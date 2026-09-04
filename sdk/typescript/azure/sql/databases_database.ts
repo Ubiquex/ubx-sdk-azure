@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DatabasesDatabase_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -29,10 +31,15 @@ export interface DatabasesDatabase_Properties_CurrentSku {
 }
 
 export interface DatabasesDatabase_Properties_Keys {
+  /** When this transparent data encryption protector key was created. (AI-inferred) */
   creationDate?: string | Computed<string>;
+  /** The specific version of this encryption key. (AI-inferred) */
   keyVersion?: string | Computed<string>;
+  /** The Azure subregion this key is available in. (AI-inferred) */
   subregion?: string | Computed<string>;
+  /** A cryptographic thumbprint of this key. (AI-inferred) */
   thumbprint?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

@@ -90,57 +90,91 @@ export interface FluxconfigurationFluxConfiguration_Properties_GitRepository {
 }
 
 export interface FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild_SubstituteFrom {
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Whether this dependency is optional, rather than required. (AI-inferred) */
   optional?: boolean | Computed<boolean>;
 }
 
 export interface FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild {
+  /** Fixed key/value substitution(s) applied to manifests during post-build. (AI-inferred) */
   substitute?: Record<string, string> | Computed<Record<string, string>>;
+  /** A reference to a ConfigMap or Secret whose own key/value pairs are substituted into manifests during post-build. (AI-inferred) */
   substituteFrom?: FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild_SubstituteFrom[] | Computed<FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild_SubstituteFrom[]>;
 }
 
 export interface FluxconfigurationFluxConfiguration_Properties_Kustomizations {
+  /** The Kustomization(s) that must be applied before this one runs. (AI-inferred) */
   dependsOn?: string[] | Computed<string[]>;
+  /** Whether this Kustomization is applied with `--force`, recreating resources it can't otherwise patch. (AI-inferred) */
   force?: boolean | Computed<boolean>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The path within the source repository this Kustomization applies. (AI-inferred) */
   path?: string | Computed<string>;
+  /** Substitution(s) applied to manifests after they're built, before being applied to the cluster. (AI-inferred) */
   postBuild?: FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild | Computed<FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild>;
+  /** Whether resources no longer present in the source are automatically removed from the cluster. (AI-inferred) */
   prune?: boolean | Computed<boolean>;
+  /** How long, in seconds, to wait before retrying after a failed reconciliation. (AI-inferred) */
   retryIntervalInSeconds?: number | Computed<number>;
+  /** How often, in seconds, this configuration is reconciled against its own source. (AI-inferred) */
   syncIntervalInSeconds?: number | Computed<number>;
+  /** How long, in seconds, this operation waits before timing out. (AI-inferred) */
   timeoutInSeconds?: number | Computed<number>;
+  /** Whether reconciliation waits for all applied resources to become ready before being marked complete. (AI-inferred) */
   wait?: boolean | Computed<boolean>;
 }
 
 export interface FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedBy {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Kubernetes namespace this applies to. (AI-inferred) */
   namespace?: string | Computed<string>;
 }
 
 export interface FluxconfigurationFluxConfiguration_Properties_Statuses_HelmReleaseProperties {
+  /** The number of times this reconciliation has failed. (AI-inferred) */
   failureCount?: number | Computed<number>;
+  /** A reference to the Helm chart this release deploys. (AI-inferred) */
   helmChartRef?: FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedBy | Computed<FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedBy>;
+  /** The number of times the initial install of this Helm release has failed. (AI-inferred) */
   installFailureCount?: number | Computed<number>;
+  /** The most recent source revision successfully applied. (AI-inferred) */
   lastRevisionApplied?: number | Computed<number>;
+  /** The number of times an upgrade of this Helm release has failed. (AI-inferred) */
   upgradeFailureCount?: number | Computed<number>;
 }
 
 export interface FluxconfigurationFluxConfiguration_Properties_Statuses_StatusConditions {
+  /** When this condition last changed from one status to another. (AI-inferred) */
   lastTransitionTime?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A machine-readable reason code. (AI-inferred) */
   reason?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface FluxconfigurationFluxConfiguration_Properties_Statuses {
+  /** The component that applied this configuration. (AI-inferred) */
   appliedBy?: FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedBy | Computed<FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedBy>;
+  /** Whether this configuration's own live state matches its declared, desired state. (AI-inferred) */
   complianceState?: string | Computed<string>;
+  /** Configuration specific to this Helm release. (AI-inferred) */
   helmReleaseProperties?: FluxconfigurationFluxConfiguration_Properties_Statuses_HelmReleaseProperties | Computed<FluxconfigurationFluxConfiguration_Properties_Statuses_HelmReleaseProperties>;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Kubernetes namespace this applies to. (AI-inferred) */
   namespace?: string | Computed<string>;
+  /** The current condition(s) affecting this resource's own status. (AI-inferred) */
   statusConditions?: FluxconfigurationFluxConfiguration_Properties_Statuses_StatusConditions[] | Computed<FluxconfigurationFluxConfiguration_Properties_Statuses_StatusConditions[]>;
 }
 

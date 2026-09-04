@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiManagedHsm_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,14 +26,17 @@ class OpenapiManagedHsm_Identity:
 
 @dataclasses.dataclass
 class OpenapiManagedHsm_Properties_NetworkAcls_IpRules:
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagedHsm_Properties_NetworkAcls_ServiceTags:
+    # A label attached to this resource. (AI-inferred)
     tag: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagedHsm_Properties_NetworkAcls_VirtualNetworkRules:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
@@ -49,26 +54,38 @@ class OpenapiManagedHsm_Properties_NetworkAcls:
 
 @dataclasses.dataclass
 class OpenapiManagedHsm_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagedHsm_Properties_PrivateEndpointConnections_Properties:
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagedHsm_Properties_PrivateEndpointConnections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagedHsm_Properties_Regions:
+    # Whether this contact is the primary contact for certificate notifications. (AI-inferred)
     is_primary: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass

@@ -2,37 +2,60 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface HciUpdate_Properties_ComponentVersions {
+  /** When this resource was last updated. (AI-inferred) */
   lastUpdated?: string | Computed<string>;
+  /** The category of software package this represents. (AI-inferred) */
   packageType?: string | Computed<string>;
+  /** The version identifier this applies to. (AI-inferred) */
   version?: string | Computed<string>;
 }
 
 export interface HciUpdate_Properties_HealthCheckResult_Tags {
+  /** The key of this attribute or label. (AI-inferred) */
   key?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface HciUpdate_Properties_HealthCheckResult {
+  /** Additional, caller-defined data attached to this resource. (AI-inferred) */
   additionalData?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** The system that produced this health check result. (AI-inferred) */
   healthCheckSource?: string | Computed<string>;
+  /** Label(s) categorizing this health check. (AI-inferred) */
   healthCheckTags?: unknown | Computed<unknown>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Guidance for resolving this issue. (AI-inferred) */
   remediation?: string | Computed<string>;
+  /** How serious this event is. (AI-inferred) */
   severity?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags?: HciUpdate_Properties_HealthCheckResult_Tags | Computed<HciUpdate_Properties_HealthCheckResult_Tags>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   targetResourceId?: string | Computed<string>;
+  /** The name of the resource this applies to. (AI-inferred) */
   targetResourceName?: string | Computed<string>;
+  /** The category of resource this applies to. (AI-inferred) */
   targetResourceType?: string | Computed<string>;
+  /** When this event occurred. (AI-inferred) */
   timestamp?: string | Computed<string>;
+  /** A human-readable title for this item. (AI-inferred) */
   title?: string | Computed<string>;
 }
 
 export interface HciUpdate_Properties_Prerequisites {
+  /** The name of this software package. (AI-inferred) */
   packageName?: string | Computed<string>;
+  /** The category of update this represents. (AI-inferred) */
   updateType?: string | Computed<string>;
+  /** The version identifier this applies to. (AI-inferred) */
   version?: string | Computed<string>;
 }
 

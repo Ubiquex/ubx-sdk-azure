@@ -11,23 +11,32 @@ export interface NetworkSecurityPerimeterConfiguration_Properties_NetworkSecurit
 }
 
 export interface NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties {
+  /** The IP address range(s), in CIDR notation, this rule applies to. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** Whether this rule applies to inbound or outbound traffic. (AI-inferred) */
   direction?: string | Computed<string>;
+  /** The fully qualified domain name(s) this resource is reachable at. (AI-inferred) */
   fullyQualifiedDomainNames?: string[] | Computed<string[]>;
+  /** The network security perimeter(s) this resource participates in. (AI-inferred) */
   networkSecurityPerimeters?: NetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter[] | Computed<NetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter[]>;
+  /** The subscription ID(s) this rule applies to. (AI-inferred) */
   subscriptions?: NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions[] | Computed<NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions[]>;
 }
 
 export interface NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties | Computed<NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties>;
 }
 
 export interface NetworkSecurityPerimeterConfiguration_Properties_Profile {
+  /** The network access rule(s) governing this resource. (AI-inferred) */
   accessRules?: NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules[] | Computed<NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules[]>;
   /** Access rules version of the resource profile */
   accessRulesVersion?: number | Computed<number>;
@@ -40,15 +49,22 @@ export interface NetworkSecurityPerimeterConfiguration_Properties_Profile {
 }
 
 export interface NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The category of issue detected. (AI-inferred) */
   issueType?: string | Computed<string>;
+  /** How serious this finding is. (AI-inferred) */
   severity?: string | Computed<string>;
+  /** The access rule(s) recommended to resolve this issue. (AI-inferred) */
   suggestedAccessRules?: NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules[] | Computed<NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules[]>;
+  /** The resource ID(s) recommended to resolve this issue. (AI-inferred) */
   suggestedResourceIds?: string[] | Computed<string[]>;
 }
 
 export interface NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties | Computed<NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties>;
 }
 

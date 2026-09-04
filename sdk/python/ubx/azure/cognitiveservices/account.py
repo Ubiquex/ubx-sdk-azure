@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Account_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -63,16 +65,24 @@ class Account_Properties_ApiProperties:
 
 @dataclasses.dataclass
 class Account_Properties_CallRateLimit_Rules_MatchPatterns:
+    # The HTTP method this applies to. (AI-inferred)
     method: Any = None
+    # A file or resource path. (AI-inferred)
     path: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_CallRateLimit_Rules:
+    # How many of this item there are. (AI-inferred)
     count: Any = None
+    # Whether request throttling is dynamically adjusted based on observed load. (AI-inferred)
     dynamic_throttling_enabled: Any = None
+    # The key of this attribute or label. (AI-inferred)
     key: Any = None
+    # The pattern(s) a matching request must satisfy. (AI-inferred)
     match_patterns: Any = None
+    # The minimum count required for this condition to be satisfied. (AI-inferred)
     min_count: Any = None
+    # How often this quota or commitment period automatically renews. (AI-inferred)
     renewal_period: Any = None
 
 @dataclasses.dataclass
@@ -81,20 +91,26 @@ class Account_Properties_CallRateLimit:
     count: Any = None
     # The renewal period in seconds of Call Rate Limit.
     renewal_period: Any = None
+    # The rule(s) making up this policy. (AI-inferred)
     rules: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_Capabilities:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_CommitmentPlanAssociations:
+    # A reference to the commitment plan this applies to. (AI-inferred)
     commitment_plan_id: Any = None
+    # The Azure region the associated commitment plan is deployed in. (AI-inferred)
     commitment_plan_location: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_Encryption_KeyVaultProperties:
+    # The client ID of the managed identity used. (AI-inferred)
     identity_client_id: Any = None
     # Name of the Key from KeyVault
     key_name: Any = None
@@ -112,24 +128,32 @@ class Account_Properties_Encryption:
 
 @dataclasses.dataclass
 class Account_Properties_Locations_Regions:
+    # The custom subdomain name assigned to this resource, used for token-based authentication. (AI-inferred)
     customsubdomain: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_Locations:
+    # The Azure region(s) this applies to. (AI-inferred)
     regions: Any = None
     # Multiregion routing methods.
     routing_method: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_NetworkAcls_IpRules:
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_NetworkAcls_VirtualNetworkRules:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # Whether this rule is accepted even if the referenced subnet doesn't yet have the required service endpoint enabled. (AI-inferred)
     ignore_missing_vnet_service_endpoint: Any = None
+    # The current status of this resource. (AI-inferred)
     state: Any = None
 
 @dataclasses.dataclass
@@ -145,31 +169,45 @@ class Account_Properties_NetworkAcls:
 
 @dataclasses.dataclass
 class Account_Properties_NetworkInjections:
+    # The usage scenario this configuration applies to. (AI-inferred)
     scenario: Any = None
+    # A reference to the subnet this resource is injected into. (AI-inferred)
     subnet_arm_id: Any = None
+    # Whether the Microsoft-managed network is used, rather than a customer-managed one. (AI-inferred)
     use_microsoft_managed_network: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_PrivateEndpointConnections_Properties:
+    # The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
     group_ids: Any = None
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_PrivateEndpointConnections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
@@ -194,6 +232,7 @@ class Account_Properties:
     abuse_penalty: Any = None
     # Specifies whether this resource support project management as child resources, used as containers for access management, data isolation and cost in AI Foundry.
     allow_project_management: Any = None
+    # The fully qualified domain name(s) outbound traffic is permitted to reach. (AI-inferred)
     allowed_fqdn_list: Any = None
     # The user owned AML account for Cognitive Services account.
     aml_workspace: Any = None
@@ -215,6 +254,7 @@ class Account_Properties:
     default_project: Any = None
     # The deletion date, only available for deleted account.
     deletion_date: Any = None
+    # Whether authentication via API key is disabled, requiring Microsoft Entra ID authentication instead. (AI-inferred)
     disable_local_auth: Any = None
     # The flag to enable dynamic throttling.
     dynamic_throttling_enabled: Any = None
@@ -234,6 +274,7 @@ class Account_Properties:
     migration_token: Any = None
     # A set of rules governing the network accessibility.
     network_acls: Any = None
+    # Configuration for injecting this resource's own compute into a customer virtual network. (AI-inferred)
     network_injections: Any = None
     # The private endpoint connection associated with the Cognitive Services account.
     private_endpoint_connections: Any = None
@@ -241,10 +282,13 @@ class Account_Properties:
     provisioning_state: Any = None
     # Whether or not public endpoint access is allowed for this account.
     public_network_access: Any = None
+    # The maximum usage allowed within this quota's own period. (AI-inferred)
     quota_limit: Any = None
     # Cognitive Services Rai Monitor Config.
     rai_monitor_config: Any = None
+    # Whether this soft-deleted resource is being restored, rather than newly created. (AI-inferred)
     restore: Any = None
+    # Whether outbound network access from this resource is restricted to explicitly allowed destinations. (AI-inferred)
     restrict_outbound_network_access: Any = None
     # The scheduled purge date, only available for deleted account.
     scheduled_purge_date: Any = None

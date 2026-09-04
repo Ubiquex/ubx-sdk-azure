@@ -8,12 +8,16 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class InstancefailovergroupsInstanceFailoverGroup_Properties_ManagedInstancePairs:
+    # A reference to the partner managed instance in this failover pairing. (AI-inferred)
     partner_managed_instance_id: Any = None
+    # A reference to the primary managed instance in this failover pairing. (AI-inferred)
     primary_managed_instance_id: Any = None
 
 @dataclasses.dataclass
 class InstancefailovergroupsInstanceFailoverGroup_Properties_PartnerRegions:
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # Whether this partner region acts as the primary or a secondary in the failover group. (AI-inferred)
     replication_role: Any = None
 
 @dataclasses.dataclass

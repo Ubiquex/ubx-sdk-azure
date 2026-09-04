@@ -4,7 +4,9 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Account_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -59,17 +61,25 @@ type Account_Properties_ApiProperties struct {
 }
 
 type Account_Properties_CallRateLimit_Rules_MatchPatterns struct {
+	// The HTTP method this applies to. (AI-inferred)
 	Method any
-	Path   any
+	// A file or resource path. (AI-inferred)
+	Path any
 }
 
 type Account_Properties_CallRateLimit_Rules struct {
-	Count                    any
+	// How many of this item there are. (AI-inferred)
+	Count any
+	// Whether request throttling is dynamically adjusted based on observed load. (AI-inferred)
 	DynamicThrottlingEnabled any
-	Key                      any
-	MatchPatterns            any
-	MinCount                 any
-	RenewalPeriod            any
+	// The key of this attribute or label. (AI-inferred)
+	Key any
+	// The pattern(s) a matching request must satisfy. (AI-inferred)
+	MatchPatterns any
+	// The minimum count required for this condition to be satisfied. (AI-inferred)
+	MinCount any
+	// How often this quota or commitment period automatically renews. (AI-inferred)
+	RenewalPeriod any
 }
 
 type Account_Properties_CallRateLimit struct {
@@ -77,20 +87,26 @@ type Account_Properties_CallRateLimit struct {
 	Count any
 	// The renewal period in seconds of Call Rate Limit.
 	RenewalPeriod any
-	Rules         any
+	// The rule(s) making up this policy. (AI-inferred)
+	Rules any
 }
 
 type Account_Properties_Capabilities struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type Account_Properties_CommitmentPlanAssociations struct {
-	CommitmentPlanId       any
+	// A reference to the commitment plan this applies to. (AI-inferred)
+	CommitmentPlanId any
+	// The Azure region the associated commitment plan is deployed in. (AI-inferred)
 	CommitmentPlanLocation any
 }
 
 type Account_Properties_Encryption_KeyVaultProperties struct {
+	// The client ID of the managed identity used. (AI-inferred)
 	IdentityClientId any
 	// Name of the Key from KeyVault
 	KeyName any
@@ -108,25 +124,33 @@ type Account_Properties_Encryption struct {
 }
 
 type Account_Properties_Locations_Regions struct {
+	// The custom subdomain name assigned to this resource, used for token-based authentication. (AI-inferred)
 	Customsubdomain any
-	Name            any
-	Value           any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type Account_Properties_Locations struct {
+	// The Azure region(s) this applies to. (AI-inferred)
 	Regions any
 	// Multiregion routing methods.
 	RoutingMethod any
 }
 
 type Account_Properties_NetworkAcls_IpRules struct {
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type Account_Properties_NetworkAcls_VirtualNetworkRules struct {
-	Id                               any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// Whether this rule is accepted even if the referenced subnet doesn't yet have the required service endpoint enabled. (AI-inferred)
 	IgnoreMissingVnetServiceEndpoint any
-	State                            any
+	// The current status of this resource. (AI-inferred)
+	State any
 }
 
 type Account_Properties_NetworkAcls struct {
@@ -141,31 +165,45 @@ type Account_Properties_NetworkAcls struct {
 }
 
 type Account_Properties_NetworkInjections struct {
-	Scenario                   any
-	SubnetArmId                any
+	// The usage scenario this configuration applies to. (AI-inferred)
+	Scenario any
+	// A reference to the subnet this resource is injected into. (AI-inferred)
+	SubnetArmId any
+	// Whether the Microsoft-managed network is used, rather than a customer-managed one. (AI-inferred)
 	UseMicrosoftManagedNetwork any
 }
 
 type Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type Account_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds                          any
-	PrivateEndpoint                   any
+	// The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
+	GroupIds any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type Account_Properties_PrivateEndpointConnections struct {
-	Etag       any
-	Location   any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
@@ -190,7 +228,8 @@ type Account_Properties struct {
 	AbusePenalty any
 	// Specifies whether this resource support project management as child resources, used as containers for access management, data isolation and cost in AI Foundry.
 	AllowProjectManagement any
-	AllowedFqdnList        any
+	// The fully qualified domain name(s) outbound traffic is permitted to reach. (AI-inferred)
+	AllowedFqdnList any
 	// The user owned AML account for Cognitive Services account.
 	AmlWorkspace any
 	// The api properties for special APIs.
@@ -210,7 +249,8 @@ type Account_Properties struct {
 	// Specifies the project, by project name, that is targeted when data plane endpoints are called without a project parameter.
 	DefaultProject any
 	// The deletion date, only available for deleted account.
-	DeletionDate     any
+	DeletionDate any
+	// Whether authentication via API key is disabled, requiring Microsoft Entra ID authentication instead. (AI-inferred)
 	DisableLocalAuth any
 	// The flag to enable dynamic throttling.
 	DynamicThrottlingEnabled any
@@ -229,7 +269,8 @@ type Account_Properties struct {
 	// Resource migration token.
 	MigrationToken any
 	// A set of rules governing the network accessibility.
-	NetworkAcls       any
+	NetworkAcls any
+	// Configuration for injecting this resource's own compute into a customer virtual network. (AI-inferred)
 	NetworkInjections any
 	// The private endpoint connection associated with the Cognitive Services account.
 	PrivateEndpointConnections any
@@ -237,10 +278,13 @@ type Account_Properties struct {
 	ProvisioningState any
 	// Whether or not public endpoint access is allowed for this account.
 	PublicNetworkAccess any
-	QuotaLimit          any
+	// The maximum usage allowed within this quota's own period. (AI-inferred)
+	QuotaLimit any
 	// Cognitive Services Rai Monitor Config.
-	RaiMonitorConfig              any
-	Restore                       any
+	RaiMonitorConfig any
+	// Whether this soft-deleted resource is being restored, rather than newly created. (AI-inferred)
+	Restore any
+	// Whether outbound network access from this resource is restricted to explicitly allowed destinations. (AI-inferred)
 	RestrictOutboundNetworkAccess any
 	// The scheduled purge date, only available for deleted account.
 	ScheduledPurgeDate any

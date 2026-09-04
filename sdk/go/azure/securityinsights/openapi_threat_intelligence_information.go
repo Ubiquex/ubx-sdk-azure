@@ -4,31 +4,45 @@ package securityinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiThreatIntelligenceInformation_Properties_ExternalReferences struct {
+	// A human-readable description of this resource. (AI-inferred)
 	Description any
-	ExternalId  any
-	Hashes      any
-	SourceName  any
-	Url         any
+	// An identifier for this content item in an external catalog. (AI-inferred)
+	ExternalId any
+	// The cryptographic hash(es) associated with this indicator. (AI-inferred)
+	Hashes any
+	// The name of the source this content item came from. (AI-inferred)
+	SourceName any
+	// A URL this applies to. (AI-inferred)
+	Url any
 }
 
 type OpenapiThreatIntelligenceInformation_Properties_GranularMarkings struct {
-	Language   any
+	// The language content is provided in. (AI-inferred)
+	Language any
+	// A reference to the data marking (e.g. TLP classification) this applies to. (AI-inferred)
 	MarkingRef any
-	Selectors  any
+	// Value(s) used to select which specific resource(s) this applies to. (AI-inferred)
+	Selectors any
 }
 
 type OpenapiThreatIntelligenceInformation_Properties_KillChainPhases struct {
+	// The name of the kill-chain model this phase belongs to. (AI-inferred)
 	KillChainName any
-	PhaseName     any
+	// The name of this kill-chain phase. (AI-inferred)
+	PhaseName any
 }
 
 type OpenapiThreatIntelligenceInformation_Properties_ParsedPattern_PatternTypeValues struct {
-	Value     any
+	// The literal value of this field. (AI-inferred)
+	Value any
+	// The data type of this value. (AI-inferred)
 	ValueType any
 }
 
 type OpenapiThreatIntelligenceInformation_Properties_ParsedPattern struct {
-	PatternTypeKey    any
+	// The category key this indicator pattern is expressed in. (AI-inferred)
+	PatternTypeKey any
+	// The value(s) this indicator pattern matches. (AI-inferred)
 	PatternTypeValues any
 }
 

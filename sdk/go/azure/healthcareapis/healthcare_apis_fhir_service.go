@@ -20,8 +20,11 @@ type HealthcareApisFhirService_Identity struct {
 }
 
 type HealthcareApisFhirService_Properties_AcrConfiguration_OciArtifacts struct {
-	Digest      any
-	ImageName   any
+	// A content digest identifying this specific artifact version. (AI-inferred)
+	Digest any
+	// The name of this container image. (AI-inferred)
+	ImageName any
+	// The hostname of this container registry's own login server. (AI-inferred)
 	LoginServer any
 }
 
@@ -33,14 +36,19 @@ type HealthcareApisFhirService_Properties_AcrConfiguration struct {
 }
 
 type HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProviders_Applications struct {
+	// The specific data-plane action(s) this role definition grants. (AI-inferred)
 	AllowedDataActions any
-	Audience           any
-	ClientId           any
+	// The intended audience value(s) a validated token must carry. (AI-inferred)
+	Audience any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
 }
 
 type HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProviders struct {
+	// The application(s) registered with this service. (AI-inferred)
 	Applications any
-	Authority    any
+	// The identity provider authority URL trusted for authentication. (AI-inferred)
+	Authority any
 }
 
 type HealthcareApisFhirService_Properties_AuthenticationConfiguration struct {
@@ -97,22 +105,30 @@ type HealthcareApisFhirService_Properties_ImportConfiguration struct {
 }
 
 type HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint                   any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type HealthcareApisFhirService_Properties_PrivateEndpointConnections struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

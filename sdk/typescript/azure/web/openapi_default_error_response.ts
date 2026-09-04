@@ -2,14 +2,18 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiDefaultErrorResponse_Error_Details {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The destination this applies to. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface OpenapiDefaultErrorResponse_Error {
   /** Standardized string to programmatically identify the error. */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: OpenapiDefaultErrorResponse_Error_Details[] | Computed<OpenapiDefaultErrorResponse_Error_Details[]>;
   /** More information to debug error. */
   innererror?: string | Computed<string>;

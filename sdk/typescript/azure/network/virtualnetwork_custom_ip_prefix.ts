@@ -9,6 +9,7 @@ export interface VirtualnetworkCustomIpPrefix_ExtendedLocation {
 }
 
 export interface VirtualnetworkCustomIpPrefix_Properties_ChildCustomIpPrefixes {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 

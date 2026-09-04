@@ -21,6 +21,7 @@ class GatewayResource_Properties_ApiMetadataProperties:
 
 @dataclasses.dataclass
 class GatewayResource_Properties_Apms:
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
 
 @dataclasses.dataclass
@@ -56,7 +57,9 @@ class GatewayResource_Properties_EnvironmentVariables:
 
 @dataclasses.dataclass
 class GatewayResource_Properties_Instances:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass

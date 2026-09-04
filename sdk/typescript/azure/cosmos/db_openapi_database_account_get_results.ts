@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DbOpenapiDatabaseAccountGetResults_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -44,6 +46,7 @@ export interface DbOpenapiDatabaseAccountGetResults_Properties_BackupPolicy {
 }
 
 export interface DbOpenapiDatabaseAccountGetResults_Properties_Capabilities {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -62,10 +65,15 @@ export interface DbOpenapiDatabaseAccountGetResults_Properties_ConsistencyPolicy
 }
 
 export interface DbOpenapiDatabaseAccountGetResults_Properties_Cors {
+  /** The request header(s) the CORS policy allows. (AI-inferred) */
   allowedHeaders?: string | Computed<string>;
+  /** The HTTP method(s) the CORS policy allows. (AI-inferred) */
   allowedMethods?: string | Computed<string>;
+  /** The origin(s) the CORS policy allows. (AI-inferred) */
   allowedOrigins?: string | Computed<string>;
+  /** The response header(s) the CORS policy exposes to the calling origin. (AI-inferred) */
   exposedHeaders?: string | Computed<string>;
+  /** How long, in seconds, the CORS preflight response may be cached by the browser. (AI-inferred) */
   maxAgeInSeconds?: number | Computed<number>;
 }
 
@@ -76,6 +84,7 @@ export interface DbOpenapiDatabaseAccountGetResults_Properties_FailoverPolicies 
 }
 
 export interface DbOpenapiDatabaseAccountGetResults_Properties_IpRules {
+  /** An IP address or address range, in CIDR notation, permitted to access this account. (AI-inferred) */
   ipAddressOrRange?: string | Computed<string>;
 }
 
@@ -96,11 +105,17 @@ export interface DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata {
 }
 
 export interface DbOpenapiDatabaseAccountGetResults_Properties_Locations {
+  /** Output only. The URI used to connect to this account's own document API. (AI-inferred) */
   documentEndpoint?: string | Computed<string>;
+  /** The order in which this region is failed over to during a manual failover, `0` being the write region. (AI-inferred) */
   failoverPriority?: number | Computed<number>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** Whether this region is provisioned as zone-redundant. (AI-inferred) */
   isZoneRedundant?: boolean | Computed<boolean>;
+  /** The Azure region this configuration applies to. (AI-inferred) */
   locationName?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
@@ -126,12 +141,16 @@ export interface DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointCo
 }
 
 export interface DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_DatabasesToRestore {
+  /** The collection name(s) this applies to. (AI-inferred) */
   collectionNames?: string[] | Computed<string[]>;
+  /** The name of the database this applies to. (AI-inferred) */
   databaseName?: string | Computed<string>;
 }
 
 export interface DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_GremlinDatabasesToRestore {
+  /** The name of the database this applies to. (AI-inferred) */
   databaseName?: string | Computed<string>;
+  /** The graph name(s) this applies to. (AI-inferred) */
   graphNames?: string[] | Computed<string[]>;
 }
 
@@ -153,13 +172,16 @@ export interface DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters
 }
 
 export interface DbOpenapiDatabaseAccountGetResults_Properties_VirtualNetworkRules {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** Whether this rule is accepted even if the referenced subnet doesn't yet have the required service endpoint enabled. (AI-inferred) */
   ignoreMissingVnetServiceEndpoint?: boolean | Computed<boolean>;
 }
 
 export interface DbOpenapiDatabaseAccountGetResults_Properties {
   /** Analytical storage specific properties. */
   analyticalStorageConfiguration?: DbOpenapiDatabaseAccountGetResults_Properties_AnalyticalStorageConfiguration | Computed<DbOpenapiDatabaseAccountGetResults_Properties_AnalyticalStorageConfiguration>;
+  /** Configuration specific to this account's own enabled API surface (e.g. MongoDB server version). (AI-inferred) */
   apiProperties?: DbOpenapiDatabaseAccountGetResults_Properties_ApiProperties | Computed<DbOpenapiDatabaseAccountGetResults_Properties_ApiProperties>;
   /** The object representing the policy for taking backups on an account. */
   backupPolicy?: DbOpenapiDatabaseAccountGetResults_Properties_BackupPolicy | Computed<DbOpenapiDatabaseAccountGetResults_Properties_BackupPolicy>;

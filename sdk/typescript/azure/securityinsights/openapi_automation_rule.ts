@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiAutomationRule_Properties_Actions {
+  /** The category of action this content item performs. (AI-inferred) */
   actionType?: string | Computed<string>;
+  /** The relative evaluation order of this item. (AI-inferred) */
   order?: number | Computed<number>;
 }
 
@@ -18,6 +20,7 @@ export interface OpenapiAutomationRule_Properties_CreatedBy {
 }
 
 export interface OpenapiAutomationRule_Properties_TriggeringLogic_Conditions {
+  /** The category of condition this represents. (AI-inferred) */
   conditionType?: string | Computed<string>;
 }
 
@@ -28,7 +31,9 @@ export interface OpenapiAutomationRule_Properties_TriggeringLogic {
   expirationTimeUtc?: string | Computed<string>;
   /** Determines whether the automation rule is enabled or disabled. */
   isEnabled: boolean | Computed<boolean>;
+  /** The event category (e.g. alerts or incidents) this automation rule triggers on. (AI-inferred) */
   triggersOn: string | Computed<string>;
+  /** The specific lifecycle event that triggers this automation rule. (AI-inferred) */
   triggersWhen: string | Computed<string>;
 }
 

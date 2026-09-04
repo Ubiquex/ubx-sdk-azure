@@ -4,28 +4,38 @@ package webpubsub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WebPubSubHub_Properties_EventHandlers_Auth_ManagedIdentity struct {
+	// A reference to the resource this applies to. (AI-inferred)
 	Resource any
 }
 
 type WebPubSubHub_Properties_EventHandlers_Auth struct {
+	// The managed identity used to authenticate requests to this upstream endpoint. (AI-inferred)
 	ManagedIdentity any
-	Type            any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type WebPubSubHub_Properties_EventHandlers struct {
-	Auth             any
-	SystemEvents     any
-	UrlTemplate      any
+	// Authentication configuration for this upstream endpoint. (AI-inferred)
+	Auth any
+	// The system event type(s) this event handler subscribes to. (AI-inferred)
+	SystemEvents any
+	// The URL template used to construct the upstream endpoint address for a matching event. (AI-inferred)
+	UrlTemplate any
+	// The user event name pattern this event handler matches. (AI-inferred)
 	UserEventPattern any
 }
 
 type WebPubSubHub_Properties_EventListeners_Endpoint struct {
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type WebPubSubHub_Properties_EventListeners struct {
+	// The endpoint this resource is reachable at. (AI-inferred)
 	Endpoint any
-	Filter   any
+	// Restricts this rule to matching event(s). (AI-inferred)
+	Filter any
 }
 
 type WebPubSubHub_Properties struct {

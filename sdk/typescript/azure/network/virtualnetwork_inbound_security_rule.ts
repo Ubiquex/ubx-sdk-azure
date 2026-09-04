@@ -2,11 +2,17 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualnetworkInboundSecurityRule_Properties_Rules {
+  /** The interface or direction this rule applies on. (AI-inferred) */
   appliesOn?: string[] | Computed<string[]>;
+  /** The destination port range this rule matches, e.g. `80` or `1000-2000`. (AI-inferred) */
   destinationPortRange?: number | Computed<number>;
+  /** The destination port ranges this rule matches, when more than one applies. (AI-inferred) */
   destinationPortRanges?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The source IP address range (CIDR) or tag this rule matches, e.g. `10.0.0.0/24` or `Internet`. (AI-inferred) */
   sourceAddressPrefix?: string | Computed<string>;
 }
 

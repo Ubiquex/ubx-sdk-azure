@@ -85,10 +85,12 @@ _OpenapiJob_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiJobConfig:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiJobAttrs:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 OpenapiJob = ubx.ResourceBinding(

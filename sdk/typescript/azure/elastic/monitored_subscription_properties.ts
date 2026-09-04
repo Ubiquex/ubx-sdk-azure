@@ -2,27 +2,40 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules {
+  /** The tag(s) used to include or exclude specific resource(s) from monitoring. (AI-inferred) */
   filteringTags?: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags[] | Computed<MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags[]>;
+  /** Whether Microsoft Entra ID audit logs are sent to Elastic. (AI-inferred) */
   sendAadLogs?: boolean | Computed<boolean>;
+  /** Whether Azure subscription-level activity logs are sent to Elastic. (AI-inferred) */
   sendActivityLogs?: boolean | Computed<boolean>;
+  /** Whether Azure subscription-level activity logs are sent to Elastic. (AI-inferred) */
   sendSubscriptionLogs?: boolean | Computed<boolean>;
 }
 
 export interface MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules {
+  /** The rule(s) governing which log data is sent to Elastic. (AI-inferred) */
   logRules?: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules | Computed<MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList {
+  /** Detail about an error that occurred. (AI-inferred) */
   error?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** The identifier of the associated Azure subscription. (AI-inferred) */
   subscriptionId?: string | Computed<string>;
+  /** Configuration for which resource tags are sent to Elastic and which resources are monitored. (AI-inferred) */
   tagRules?: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules | Computed<MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules>;
 }
 

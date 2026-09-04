@@ -2,31 +2,45 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiThreatIntelligenceInformation_Properties_ExternalReferences {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** An identifier for this content item in an external catalog. (AI-inferred) */
   externalId?: string | Computed<string>;
+  /** The cryptographic hash(es) associated with this indicator. (AI-inferred) */
   hashes?: Record<string, string> | Computed<Record<string, string>>;
+  /** The name of the source this content item came from. (AI-inferred) */
   sourceName?: string | Computed<string>;
+  /** A URL this applies to. (AI-inferred) */
   url?: string | Computed<string>;
 }
 
 export interface OpenapiThreatIntelligenceInformation_Properties_GranularMarkings {
+  /** The language content is provided in. (AI-inferred) */
   language?: string | Computed<string>;
+  /** A reference to the data marking (e.g. TLP classification) this applies to. (AI-inferred) */
   markingRef?: number | Computed<number>;
+  /** Value(s) used to select which specific resource(s) this applies to. (AI-inferred) */
   selectors?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiThreatIntelligenceInformation_Properties_KillChainPhases {
+  /** The name of the kill-chain model this phase belongs to. (AI-inferred) */
   killChainName?: string | Computed<string>;
+  /** The name of this kill-chain phase. (AI-inferred) */
   phaseName?: string | Computed<string>;
 }
 
 export interface OpenapiThreatIntelligenceInformation_Properties_ParsedPattern_PatternTypeValues {
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
+  /** The data type of this value. (AI-inferred) */
   valueType?: string | Computed<string>;
 }
 
 export interface OpenapiThreatIntelligenceInformation_Properties_ParsedPattern {
+  /** The category key this indicator pattern is expressed in. (AI-inferred) */
   patternTypeKey?: string | Computed<string>;
+  /** The value(s) this indicator pattern matches. (AI-inferred) */
   patternTypeValues?: OpenapiThreatIntelligenceInformation_Properties_ParsedPattern_PatternTypeValues[] | Computed<OpenapiThreatIntelligenceInformation_Properties_ParsedPattern_PatternTypeValues[]>;
 }
 

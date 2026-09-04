@@ -17,39 +17,61 @@ class Profile_Properties_DnsConfig:
 
 @dataclasses.dataclass
 class Profile_Properties_Endpoints_Properties_CustomHeaders:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class Profile_Properties_Endpoints_Properties_Subnets:
+    # The first address in this range, inclusive. (AI-inferred)
     first: Any = None
+    # The last address in this range, inclusive. (AI-inferred)
     last: Any = None
+    # The subnet or IP range this endpoint applies to, for subnet-based routing. (AI-inferred)
     scope: Any = None
 
 @dataclasses.dataclass
 class Profile_Properties_Endpoints_Properties:
+    # Whether this endpoint continues to receive traffic even when it's reported unhealthy. (AI-inferred)
     always_serve: Any = None
+    # Additional HTTP header(s) sent with this endpoint's own health check probes. (AI-inferred)
     custom_headers: Any = None
+    # The Azure region or geographic location this endpoint is associated with. (AI-inferred)
     endpoint_location: Any = None
+    # The current health-check status of this endpoint. (AI-inferred)
     endpoint_monitor_status: Any = None
+    # Whether this endpoint is enabled or disabled. (AI-inferred)
     endpoint_status: Any = None
+    # The geographic region(s) this endpoint is mapped to, for geographic routing. (AI-inferred)
     geo_mapping: Any = None
+    # The minimum number of healthy child endpoints required before this nested profile itself is considered healthy. (AI-inferred)
     min_child_endpoints: Any = None
+    # The minimum number of healthy IPv4 child endpoints required before this nested profile itself is considered healthy. (AI-inferred)
     min_child_endpoints_ipv4: Any = None
+    # The minimum number of healthy IPv6 child endpoints required before this nested profile itself is considered healthy. (AI-inferred)
     min_child_endpoints_ipv6: Any = None
+    # The relative priority of this endpoint -- lower numbers are preferred first. (AI-inferred)
     priority: Any = None
+    # The subnet or IP range(s) mapped to this endpoint, for subnet-based routing. (AI-inferred)
     subnets: Any = None
+    # The domain name or IP address traffic is routed to. (AI-inferred)
     target: Any = None
+    # A reference to the Azure resource this endpoint targets. (AI-inferred)
     target_resource_id: Any = None
+    # The relative weight of this endpoint, for weighted routing. (AI-inferred)
     weight: Any = None
 
 @dataclasses.dataclass
 class Profile_Properties_Endpoints:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class Profile_Properties_MonitorConfig_ExpectedStatusCodeRanges:
+    # The maximum value allowed. (AI-inferred)
     max: Any = None
+    # The minimum value allowed. (AI-inferred)
     min: Any = None
 
 @dataclasses.dataclass

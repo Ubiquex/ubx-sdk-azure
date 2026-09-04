@@ -40,14 +40,23 @@ export interface NotificationHubResource_Properties_ApnsCredential {
 }
 
 export interface NotificationHubResource_Properties_AuthorizationRules {
+  /** The type of claim this authorization rule's own token must carry. (AI-inferred) */
   claimType?: string | Computed<string>;
+  /** The expected value of `claim_type`. (AI-inferred) */
   claimValue?: string | Computed<string>;
+  /** When this resource was created. (AI-inferred) */
   createdTime?: string | Computed<string>;
+  /** The name of this shared access policy. (AI-inferred) */
   keyName?: string | Computed<string>;
+  /** When this resource was last modified. (AI-inferred) */
   modifiedTime?: string | Computed<string>;
+  /** The primary shared access key for this policy. (AI-inferred) */
   primaryKey?: string | Computed<string>;
+  /** A number incremented each time this resource is significantly modified. (AI-inferred) */
   revision?: number | Computed<number>;
+  /** The permission(s) this shared access policy grants. (AI-inferred) */
   rights?: string[] | Computed<string[]>;
+  /** The secondary shared access key for this policy. (AI-inferred) */
   secondaryKey?: string | Computed<string>;
 }
 
@@ -146,6 +155,7 @@ export interface NotificationHubResource_Properties {
   baiduCredential?: NotificationHubResource_Properties_BaiduCredential | Computed<NotificationHubResource_Properties_BaiduCredential>;
   /** Description of a NotificationHub BrowserCredential. */
   browserCredential?: NotificationHubResource_Properties_BrowserCredential | Computed<NotificationHubResource_Properties_BrowserCredential>;
+  /** The maximum number of active device(s) permitted per day under this SKU. (AI-inferred) */
   dailyMaxActiveDevices?: number | Computed<number>;
   /** Description of a NotificationHub GcmCredential. */
   gcmCredential?: NotificationHubResource_Properties_GcmCredential | Computed<NotificationHubResource_Properties_GcmCredential>;

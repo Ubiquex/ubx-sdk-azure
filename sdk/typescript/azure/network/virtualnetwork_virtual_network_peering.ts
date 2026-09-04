@@ -2,12 +2,16 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations_Pool {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations {
+  /** Output only. The specific address ranges actually allocated from this pool. (AI-inferred) */
   allocatedAddressPrefixes?: string[] | Computed<string[]>;
+  /** How many IP addresses to allocate from this pool. (AI-inferred) */
   numberOfIpAddresses?: string | Computed<string>;
+  /** A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred) */
   pool?: VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations_Pool | Computed<VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations_Pool>;
 }
 

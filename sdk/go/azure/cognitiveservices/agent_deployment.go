@@ -4,12 +4,15 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AgentDeployment_Properties_Agents struct {
+	// The version of this agent. (AI-inferred)
 	AgentVersion any
 }
 
 type AgentDeployment_Properties_Protocols struct {
+	// The network protocol used. (AI-inferred)
 	Protocol any
-	Version  any
+	// The version identifier this applies to. (AI-inferred)
+	Version any
 }
 
 type AgentDeployment_Properties struct {

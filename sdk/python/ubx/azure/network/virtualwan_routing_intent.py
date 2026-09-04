@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualwanRoutingIntent_Properties_RoutingPolicies:
+    # The destination(s) this rule applies to. (AI-inferred)
     destinations: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Where traffic matching this route is sent next. (AI-inferred)
     next_hop: Any = None
 
 @dataclasses.dataclass

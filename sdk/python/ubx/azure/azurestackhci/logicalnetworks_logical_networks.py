@@ -31,59 +31,86 @@ class LogicalnetworksLogicalNetworks_Properties_Status:
     error_code: Any = None
     # Descriptive error message
     error_message: Any = None
+    # The current provisioning status of this resource. (AI-inferred)
     provisioning_status: Any = None
 
 @dataclasses.dataclass
 class LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpConfigurationReferences:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools_Info:
+    # The number of IP address(es) currently available for allocation. (AI-inferred)
     available: Any = None
+    # The number of IP address(es) currently allocated from this pool. (AI-inferred)
     used: Any = None
 
 @dataclasses.dataclass
 class LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools:
+    # The last address in this range, inclusive. (AI-inferred)
     end: Any = None
+    # Additional detail about this result. (AI-inferred)
     info: Any = None
+    # The category of IP address pool this represents. (AI-inferred)
     ip_pool_type: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The first address in this range, inclusive. (AI-inferred)
     start: Any = None
 
 @dataclasses.dataclass
 class LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties:
+    # An IP address range, in CIDR notation. (AI-inferred)
     address_prefix: Any = None
+    # The IP address traffic matching this route is forwarded to. (AI-inferred)
     next_hop_ip_address: Any = None
 
 @dataclasses.dataclass
 class LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties:
+    # The custom route(s) making up this route table. (AI-inferred)
     routes: Any = None
 
 @dataclasses.dataclass
 class LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class LogicalnetworksLogicalNetworks_Properties_Subnets_Properties:
+    # An IP address range, in CIDR notation. (AI-inferred)
     address_prefix: Any = None
+    # The IP address range(s), in CIDR notation, this applies to. (AI-inferred)
     address_prefixes: Any = None
+    # Whether IP addresses on this network are assigned statically or dynamically. (AI-inferred)
     ip_allocation_method: Any = None
+    # The IP configuration(s) currently using addresses from this pool. (AI-inferred)
     ip_configuration_references: Any = None
+    # The IP address pool(s) available for allocation on this network. (AI-inferred)
     ip_pools: Any = None
+    # The route table applied to this network. (AI-inferred)
     route_table: Any = None
+    # The VLAN identifier assigned to this network. (AI-inferred)
     vlan: Any = None
 
 @dataclasses.dataclass
 class LogicalnetworksLogicalNetworks_Properties_Subnets:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

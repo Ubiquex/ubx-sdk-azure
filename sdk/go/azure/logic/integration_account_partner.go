@@ -4,8 +4,10 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationAccountPartner_Properties_Content_B2b_BusinessIdentities struct {
+	// A code qualifying the meaning of the associated identifier. (AI-inferred)
 	Qualifier any
-	Value     any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type IntegrationAccountPartner_Properties_Content_B2b struct {

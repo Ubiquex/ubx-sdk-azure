@@ -8,25 +8,35 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Point_Properties_ExcludeDisks:
+    # The ARM resource ID of the disk to exclude from the restore point. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status:
+    # The status code for the replication of a disk restore point, indicating the current state of the replication process. (AI-inferred)
     code: Any = None
+    # A human-readable description of the current replication status for the disk restore point. (AI-inferred)
     display_status: Any = None
+    # The severity level of the replication status. Possible values are 'Info', 'Warning', and 'Error'. (AI-inferred)
     level: Any = None
+    # A human-readable message providing additional details about the current replication status. (AI-inferred)
     message: Any = None
+    # The time, in ISO 8601 format, when the replication status was last updated. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus:
+    # The percentage of replication completed for the disk restore point. (AI-inferred)
     completion_percent: Any = None
+    # The replication status of the disk restore point, providing information about the progress and current state of the replication operation. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_InstanceView_DiskRestorePoints:
+    # The unique Azure Resource Manager resource ID of the disk restore point. (AI-inferred)
     id: Any = None
     replication_status: Any = None
+    # Indicates the access state of the snapshot for the disk restore point. Possible values are Unknown, Pending, Available, InstantAccess, and AvailableWithInstantAccess. (AI-inferred)
     snapshot_access_state: Any = None
 
 @dataclasses.dataclass
@@ -82,7 +92,9 @@ class Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh_PublicKeys:
+    # The SSH public key data, in OpenSSH format (e.g., 'ssh-rsa AAAA...'), used to authenticate to the Linux VM. The key must be at least 2048-bit and in ssh-rsa format. (AI-inferred)
     key_data: Any = None
+    # The full file path on the virtual machine where the SSH public key will be stored, such as `/home/{username}/.ssh/authorized_keys`. (AI-inferred)
     path: Any = None
 
 @dataclasses.dataclass
@@ -105,19 +117,27 @@ class Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration:
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificates:
+    # The name of the certificate store on the virtual machine where the certificate is added. This property is required for Windows virtual machines. (AI-inferred)
     certificate_store: Any = None
+    # The URL of the Azure Key Vault secret which contains the certificate. (AI-inferred)
     certificate_url: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_OsProfile_Secrets:
+    # The Key Vault where the certificate or secret is stored. (AI-inferred)
     source_vault: Any = None
+    # A list of certificates to be installed on the virtual machine from an Azure Key Vault, referenced within the OS profile's secret configuration. (AI-inferred)
     vault_certificates: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_AdditionalUnattendContent:
+    # Specifies the name of the component to configure, such as 'Microsoft-Windows-Shell-Setup', for which the additional unattend content applies. (AI-inferred)
     component_name: Any = None
+    # The XML formatted content that is added to the unattend.xml file for the specified pass and component. This content is included during the Windows installation process. (AI-inferred)
     content: Any = None
+    # The pass name for the unattended content. For this field, the allowed value is 'OobeSystem', indicating the Windows Out-of-Box Experience pass in the additional unattended content configuration. (AI-inferred)
     pass_name: Any = None
+    # Specifies the name of the setting that the unattended content applies to. Allowed values are 'AutoLogon' and 'FirstLogonCommands'. (AI-inferred)
     setting_name: Any = None
 
 @dataclasses.dataclass
@@ -133,7 +153,9 @@ class Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSettin
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm_Listeners:
+    # The URL to a certificate stored in Azure Key Vault that is used for the WinRM HTTPS listener. This is required when the listener protocol is HTTPS. (AI-inferred)
     certificate_url: Any = None
+    # Specifies the protocol used by the WinRM listener, which can be either Http or Https. (AI-inferred)
     protocol: Any = None
 
 @dataclasses.dataclass
@@ -230,30 +252,44 @@ class Point_Properties_SourceMetadata_SecurityProfile:
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_Encryption:
+    # The customer-managed disk encryption set used to encrypt the disk. This is a reference to a Microsoft.Compute/diskEncryptionSets resource, typically containing its resource ID. (AI-inferred)
     disk_encryption_set: Any = None
+    # The type of encryption applied to the disk restore point. Allowed values: EncryptionAtRestWithPlatformKey, EncryptionAtRestWithCustomerKey, EncryptionAtRestWithPlatformAndCustomerKeys. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint:
     encryption: Any = None
+    # A reference to the source disk restore point from which this disk restore point was created, typically used when the restore point is copied or replicated across regions. (AI-inferred)
     source_disk_restore_point: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy:
+    # Specifies the action to be taken when a disk delay occurs. Allowed values are 'None' and 'AutomaticReattach'. 'AutomaticReattach' automatically reattaches the disk after the delay is cleared. (AI-inferred)
     action_on_disk_delay: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties:
     availability_policy: Any = None
+    # Specifies whether bursting is enabled for the managed disk. When enabled, the disk can burst beyond its provisioned performance limits. (AI-inferred)
     bursting_enabled: Any = None
+    # The resource ID of the Disk Access resource associated with the managed disk. (AI-inferred)
     disk_access_id: Any = None
+    # The number of read-only IOPS (input/output operations per second) that the managed disk can support. (AI-inferred)
     disk_iopsread_only: Any = None
+    # The maximum read-only bandwidth (in MB/s) allowed for this managed disk as part of its performance configuration. (AI-inferred)
     disk_mbps_read_only: Any = None
+    # The logical sector size of the managed disk, in bytes. Common values are 512 and 4096, depending on the disk type and configuration. (AI-inferred)
     logical_sector_size: Any = None
+    # The maximum number of virtual machines that can concurrently attach to the shared managed disk. The minimum allowed value is 1. (AI-inferred)
     max_shares: Any = None
+    # Specifies the network access policy for the managed disk. Valid values are `AllowAll` (allow public access), `AllowPrivate` (restrict to private endpoints), and `DenyAll` (deny all network access). (AI-inferred)
     network_access_policy: Any = None
+    # Indicates whether the managed disk is optimized for frequent attach/detach operations. When set to true, the disk is optimized for scenarios involving frequent attaching and detaching, though this may come at the cost of reduced performance in other aspects. (AI-inferred)
     optimized_for_frequent_attach: Any = None
+    # Indicates whether performance plus is enabled for the managed disk, which allows the disk to achieve higher IOPS and throughput limits rather than being constrained to standard performance tiers. (AI-inferred)
     performance_plus: Any = None
+    # The SKU tier of the Azure managed disk, indicating its performance class (e.g., Standard or Premium). (AI-inferred)
     tier: Any = None
 
 @dataclasses.dataclass
@@ -262,36 +298,50 @@ class Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_Addit
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfile:
+    # Specifies the disk encryption set to use for encrypting the managed disk at rest with customer-managed keys. This is a reference object containing the resource ID of the Disk Encryption Set. (AI-inferred)
     disk_encryption_set: Any = None
+    # Specifies the security encryption type for the managed disk. Allowed values: VMGuestStateOnly (encrypts only the VM guest state), DiskWithVMGuestState (encrypts both the disk and VM guest state), and NonPersistedTPM (uses non-persisted TPM). (AI-inferred)
     security_encryption_type: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk:
     additional_disk_properties: Any = None
+    # The disk encryption set associated with the managed disk, used for encryption with customer-managed keys. (AI-inferred)
     disk_encryption_set: Any = None
+    # Security-related configuration for the managed disk, including its security type (e.g., TrustedLaunch, ConfidentialVM) and associated encryption settings. (AI-inferred)
     security_profile: Any = None
+    # The storage account type for the managed disk. Possible values are: Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, and PremiumV2_LRS. (AI-inferred)
     storage_account_type: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_StorageProfile_DataDisks:
+    # Specifies the caching mode for the disk. Possible values are None, ReadOnly, and ReadWrite. (AI-inferred)
     caching: Any = None
+    # Contains the resource identifier of the disk restore point corresponding to this data disk in the restore point. (AI-inferred)
     disk_restore_point: Any = None
+    # The size of the data disk in gigabytes. (AI-inferred)
     disk_size_gb: Any = None
+    # The Logical Unit Number (LUN) that identifies this data disk in the virtual machine's storage configuration. (AI-inferred)
     lun: Any = None
+    # The managed disk configuration for the data disk, including properties such as the disk resource ID and associated encryption settings. (AI-inferred)
     managed_disk: Any = None
+    # The name of the data disk in the storage profile. (AI-inferred)
     name: Any = None
+    # Specifies whether Write Accelerator is enabled for this data disk. When enabled, the disk uses Azure Write Accelerator to reduce I/O latency for small writes. (AI-inferred)
     write_accelerator_enabled: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_DiskEncryptionKey:
     # The URL referencing a secret in a Key Vault.
     secret_url: Any = None
+    # Reference to the Azure Key Vault that holds the disk encryption key or secret used for encrypting the OS disk. This required object identifies the source vault via its resource ID. (AI-inferred)
     source_vault: Any = None
 
 @dataclasses.dataclass
 class Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_KeyEncryptionKey:
     # The URL referencing a key encryption key in Key Vault.
     key_url: Any = None
+    # The Azure Key Vault that contains the key encryption key (KEK). This is a reference to the Key Vault resource. (AI-inferred)
     source_vault: Any = None
 
 @dataclasses.dataclass

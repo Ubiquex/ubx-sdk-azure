@@ -8,61 +8,93 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete:
+    # The minimum number of days since creation for this lifecycle condition to match. (AI-inferred)
     days_after_creation_greater_than: Any = None
+    # The minimum number of days since last access for this lifecycle condition to match. (AI-inferred)
     days_after_last_access_time_greater_than: Any = None
+    # The minimum number of days since the last tier change for this lifecycle condition to match. (AI-inferred)
     days_after_last_tier_change_greater_than: Any = None
+    # The minimum number of days since last modification for this lifecycle condition to match. (AI-inferred)
     days_after_modification_greater_than: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob:
+    # The deletion action applied by this lifecycle rule. (AI-inferred)
     delete: Any = None
+    # Whether a blob is automatically moved back to the Hot tier the moment it's accessed, after having cooled. (AI-inferred)
     enable_auto_tier_to_hot_from_cool: Any = None
+    # Automatically moves matching blobs to the Archive storage tier. (AI-inferred)
     tier_to_archive: Any = None
+    # Automatically moves matching blobs to the Cold storage tier. (AI-inferred)
     tier_to_cold: Any = None
+    # Automatically moves matching blobs to the Cool storage tier. (AI-inferred)
     tier_to_cool: Any = None
+    # Automatically moves matching blobs to the Hot storage tier. (AI-inferred)
     tier_to_hot: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete:
+    # The minimum number of days since creation for this lifecycle condition to match. (AI-inferred)
     days_after_creation_greater_than: Any = None
+    # The minimum number of days since the last tier change for this lifecycle condition to match. (AI-inferred)
     days_after_last_tier_change_greater_than: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot:
+    # The deletion action applied by this lifecycle rule. (AI-inferred)
     delete: Any = None
+    # Automatically moves matching blobs to the Archive storage tier. (AI-inferred)
     tier_to_archive: Any = None
+    # Automatically moves matching blobs to the Cold storage tier. (AI-inferred)
     tier_to_cold: Any = None
+    # Automatically moves matching blobs to the Cool storage tier. (AI-inferred)
     tier_to_cool: Any = None
+    # Automatically moves matching blobs to the Hot storage tier. (AI-inferred)
     tier_to_hot: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions:
+    # Configuration governing the lifecycle of a base (non-versioned) blob. (AI-inferred)
     base_blob: Any = None
+    # A reference to the snapshot this applies to. (AI-inferred)
     snapshot: Any = None
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters_BlobIndexMatch:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The operation performed. (AI-inferred)
     op: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters:
+    # The blob index tag condition(s) a blob must match for this rule to apply. (AI-inferred)
     blob_index_match: Any = None
+    # The blob type(s) (e.g. block blob) this rule applies to. (AI-inferred)
     blob_types: Any = None
+    # The blob name prefix(es) this rule matches. (AI-inferred)
     prefix_match: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagementPolicy_Properties_Policy_Rules_Definition:
+    # The action(s) this policy applies. (AI-inferred)
     actions: Any = None
+    # The condition(s) restricting which blob(s) this rule applies to. (AI-inferred)
     filters: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagementPolicy_Properties_Policy_Rules:
+    # The schema or configuration defining this rule. (AI-inferred)
     definition: Any = None
+    # Whether this feature is turned on. (AI-inferred)
     enabled: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

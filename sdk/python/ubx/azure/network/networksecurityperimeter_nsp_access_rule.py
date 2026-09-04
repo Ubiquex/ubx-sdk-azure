@@ -8,12 +8,16 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class NetworksecurityperimeterNspAccessRule_Properties_NetworkSecurityPerimeters:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # The globally unique identifier of the associated network security perimeter. (AI-inferred)
     perimeter_guid: Any = None
 
 @dataclasses.dataclass
 class NetworksecurityperimeterNspAccessRule_Properties_Subscriptions:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass

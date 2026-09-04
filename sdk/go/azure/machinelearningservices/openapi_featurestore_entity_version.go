@@ -4,8 +4,10 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFeaturestoreEntityVersion_Properties_IndexColumns struct {
+	// The name of this column. (AI-inferred)
 	ColumnName any
-	DataType   any
+	// The data type of this asset or column. (AI-inferred)
+	DataType any
 }
 
 type OpenapiFeaturestoreEntityVersion_Properties struct {

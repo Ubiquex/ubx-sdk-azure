@@ -15,6 +15,7 @@ export interface KafkaConfiguration_Properties {
   credentials?: KafkaConfiguration_Properties_Credentials | Computed<KafkaConfiguration_Properties_Credentials>;
   /** Optional partition Id for notification event hub. If not set, all partitions will be leveraged. */
   eventHubPartitionId?: string | Computed<string>;
+  /** A reference to the Event Hubs namespace this account's own Kafka-compatible endpoints connect through. (AI-inferred) */
   eventHubResourceId?: string | Computed<string>;
   /** The event hub type. */
   eventHubType?: string | Computed<string>;

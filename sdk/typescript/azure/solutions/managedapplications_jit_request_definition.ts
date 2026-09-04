@@ -11,11 +11,14 @@ export interface ManagedapplicationsJitRequestDefinition_Properties_CreatedBy {
 }
 
 export interface ManagedapplicationsJitRequestDefinition_Properties_JitAuthorizationPolicies {
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** A reference to the role definition granted to the publisher for managing this application. (AI-inferred) */
   roleDefinitionId?: string | Computed<string>;
 }
 
 export interface ManagedapplicationsJitRequestDefinition_Properties_JitSchedulingPolicy {
+  /** How long this operation is expected to take. (AI-inferred) */
   duration: string | Computed<string>;
   /** The start time of the request. */
   startTime: string | Computed<string>;

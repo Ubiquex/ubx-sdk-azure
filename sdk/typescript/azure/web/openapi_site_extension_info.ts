@@ -38,6 +38,7 @@ export interface OpenapiSiteExtensionInfo_Properties {
   publishedDateTime?: string | Computed<string>;
   /** Summary description. */
   summary?: string | Computed<string>;
+  /** A human-readable title for this item. (AI-inferred) */
   title?: string | Computed<string>;
   /** Version information. */
   version?: string | Computed<string>;

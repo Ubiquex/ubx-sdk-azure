@@ -2,14 +2,20 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DomainService_Properties_ConfigDiagnostics_ValidatorResults_Issues {
+  /** Parameter value(s) substituted into this alert's own description template. (AI-inferred) */
   descriptionParams?: string[] | Computed<string[]>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface DomainService_Properties_ConfigDiagnostics_ValidatorResults {
+  /** The issue(s) detected. (AI-inferred) */
   issues?: DomainService_Properties_ConfigDiagnostics_ValidatorResults_Issues[] | Computed<DomainService_Properties_ConfigDiagnostics_ValidatorResults_Issues[]>;
+  /** A human-readable name for the subnet this replica set is deployed into. (AI-inferred) */
   replicaSetSubnetDisplayName?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** A reference to the health validator that produced this result. (AI-inferred) */
   validatorId?: string | Computed<string>;
 }
 
@@ -84,39 +90,64 @@ export interface DomainService_Properties_NotificationSettings {
 }
 
 export interface DomainService_Properties_ReplicaSets_HealthAlerts {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** A description of the detected issue. (AI-inferred) */
   issue?: string | Computed<string>;
+  /** When this issue was last detected. (AI-inferred) */
   lastDetected?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** When this alert was raised. (AI-inferred) */
   raised?: string | Computed<string>;
+  /** A URL with guidance for resolving this issue. (AI-inferred) */
   resolutionUri?: string | Computed<string>;
+  /** How serious this alert is. (AI-inferred) */
   severity?: string | Computed<string>;
 }
 
 export interface DomainService_Properties_ReplicaSets_HealthMonitors {
+  /** Additional detail about this result. (AI-inferred) */
   details?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface DomainService_Properties_ReplicaSets {
+  /** The IP address(es) of the domain controller(s) for this managed domain. (AI-inferred) */
   domainControllerIpAddress?: string[] | Computed<string[]>;
+  /** The externally reachable IP address for secure LDAP access to this managed domain. (AI-inferred) */
   externalAccessIpAddress?: string | Computed<string>;
+  /** The active health alert(s) affecting this managed domain. (AI-inferred) */
   healthAlerts?: DomainService_Properties_ReplicaSets_HealthAlerts[] | Computed<DomainService_Properties_ReplicaSets_HealthAlerts[]>;
+  /** When this managed domain's own health was last evaluated. (AI-inferred) */
   healthLastEvaluated?: string | Computed<string>;
+  /** The health monitor(s) evaluating this managed domain's own status. (AI-inferred) */
   healthMonitors?: DomainService_Properties_ReplicaSets_HealthMonitors[] | Computed<DomainService_Properties_ReplicaSets_HealthMonitors[]>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** A unique identifier for this replica set. (AI-inferred) */
   replicaSetId?: string | Computed<string>;
+  /** The current operational status of this managed domain. (AI-inferred) */
   serviceStatus?: string | Computed<string>;
+  /** A reference to the subnet this resource is deployed into. (AI-inferred) */
   subnetId?: string | Computed<string>;
+  /** A reference to the virtual network site this replica set is associated with. (AI-inferred) */
   vnetSiteId?: string | Computed<string>;
 }
 
 export interface DomainService_Properties_ResourceForestSettings_Settings {
+  /** A human-readable name for this resource. (AI-inferred) */
   friendlyName?: string | Computed<string>;
+  /** The DNS server IP address(es) this managed domain forwards unresolved queries to. (AI-inferred) */
   remoteDnsIps?: string | Computed<string>;
+  /** Whether this trust is one-way or bidirectional. (AI-inferred) */
   trustDirection?: string | Computed<string>;
+  /** The shared secret used to establish this trust relationship. (AI-inferred) */
   trustPassword?: string | Computed<string>;
+  /** The fully qualified name of the domain this trust is established with. (AI-inferred) */
   trustedDomainFqdn?: string | Computed<string>;
 }
 

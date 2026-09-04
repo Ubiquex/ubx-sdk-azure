@@ -17,16 +17,21 @@ class DbOpenapiClusterResource_Identity:
 
 @dataclasses.dataclass
 class DbOpenapiClusterResource_Properties_BackupSchedules:
+    # The cron expression this scheduled operation runs on. (AI-inferred)
     cron_expression: Any = None
+    # How many hours of backup history are retained. (AI-inferred)
     retention_in_hours: Any = None
+    # The name of this schedule. (AI-inferred)
     schedule_name: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiClusterResource_Properties_ClientCertificates:
+    # A certificate, PEM-encoded. (AI-inferred)
     pem: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiClusterResource_Properties_ExternalSeedNodes:
+    # An IP address value. (AI-inferred)
     ip_address: Any = None
 
 @dataclasses.dataclass
@@ -78,7 +83,9 @@ class DbOpenapiClusterResource_Properties:
     initial_cassandra_admin_password: Any = None
     # If the Connection Method is Vpn, this is the Id of the private link resource that the datacenters need to connect to.
     private_link_resource_id: Any = None
+    # Output only. The URI metrics are exposed at in Prometheus format. (AI-inferred)
     prometheus_endpoint: Any = None
+    # Detail about an error encountered while provisioning this resource. (AI-inferred)
     provision_error: Any = None
     # The status of the resource at the time the operation was called.
     provisioning_state: Any = None

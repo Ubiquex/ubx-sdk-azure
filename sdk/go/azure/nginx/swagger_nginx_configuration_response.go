@@ -4,29 +4,39 @@ package nginx
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SwaggerNginxConfigurationResponse_Properties_Files struct {
-	Content     any
+	// The literal content of this configuration file. (AI-inferred)
+	Content any
+	// The path this file is mounted at inside the NGINX deployment. (AI-inferred)
 	VirtualPath any
 }
 
 type SwaggerNginxConfigurationResponse_Properties_Package struct {
-	Data           any
+	// The literal content of this field. (AI-inferred)
+	Data any
+	// The configuration file(s) whose own content is protected and never returned in subsequent reads. (AI-inferred)
 	ProtectedFiles any
 }
 
 type SwaggerNginxConfigurationResponse_Properties_ProtectedFiles struct {
-	Content     any
+	// The literal content of this configuration file. (AI-inferred)
+	Content any
+	// A hash of this content, used to detect changes. (AI-inferred)
 	ContentHash any
+	// The path this file is mounted at inside the NGINX deployment. (AI-inferred)
 	VirtualPath any
 }
 
 type SwaggerNginxConfigurationResponse_Properties struct {
+	// The configuration file(s) making up this deployment. (AI-inferred)
 	Files any
 	// Nginx Configuration Package
-	Package        any
+	Package any
+	// The configuration file(s) whose own content is protected and never returned in subsequent reads. (AI-inferred)
 	ProtectedFiles any
 	// Provisioning State
 	ProvisioningState any
-	RootFile          any
+	// The path to the top-level NGINX configuration file. (AI-inferred)
+	RootFile any
 }
 
 type SwaggerNginxConfigurationResponse_SystemData struct {
@@ -86,13 +96,16 @@ type SwaggerNginxConfigurationResponseConfig struct {
 }
 
 type SwaggerNginxConfigurationResponseAttrs struct {
-	Id   any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 	// Nginx Configuration Request Properties
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 var SwaggerNginxConfigurationResponse = ubx.ResourceBinding{

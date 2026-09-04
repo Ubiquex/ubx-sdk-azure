@@ -4,7 +4,9 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMhsmprivateEndpointConnection_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 

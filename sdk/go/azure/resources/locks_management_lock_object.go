@@ -4,6 +4,7 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type LocksManagementLockObject_Properties_Owners struct {
+	// The application (service principal) ID of this lock's own owner. (AI-inferred)
 	ApplicationId any
 }
 

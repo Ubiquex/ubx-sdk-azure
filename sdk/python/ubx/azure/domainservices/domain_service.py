@@ -8,14 +8,20 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DomainService_Properties_ConfigDiagnostics_ValidatorResults_Issues:
+    # Parameter value(s) substituted into this alert's own description template. (AI-inferred)
     description_params: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class DomainService_Properties_ConfigDiagnostics_ValidatorResults:
+    # The issue(s) detected. (AI-inferred)
     issues: Any = None
+    # A human-readable name for the subnet this replica set is deployed into. (AI-inferred)
     replica_set_subnet_display_name: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # A reference to the health validator that produced this result. (AI-inferred)
     validator_id: Any = None
 
 @dataclasses.dataclass
@@ -90,39 +96,64 @@ class DomainService_Properties_NotificationSettings:
 
 @dataclasses.dataclass
 class DomainService_Properties_ReplicaSets_HealthAlerts:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # A description of the detected issue. (AI-inferred)
     issue: Any = None
+    # When this issue was last detected. (AI-inferred)
     last_detected: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # When this alert was raised. (AI-inferred)
     raised: Any = None
+    # A URL with guidance for resolving this issue. (AI-inferred)
     resolution_uri: Any = None
+    # How serious this alert is. (AI-inferred)
     severity: Any = None
 
 @dataclasses.dataclass
 class DomainService_Properties_ReplicaSets_HealthMonitors:
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class DomainService_Properties_ReplicaSets:
+    # The IP address(es) of the domain controller(s) for this managed domain. (AI-inferred)
     domain_controller_ip_address: Any = None
+    # The externally reachable IP address for secure LDAP access to this managed domain. (AI-inferred)
     external_access_ip_address: Any = None
+    # The active health alert(s) affecting this managed domain. (AI-inferred)
     health_alerts: Any = None
+    # When this managed domain's own health was last evaluated. (AI-inferred)
     health_last_evaluated: Any = None
+    # The health monitor(s) evaluating this managed domain's own status. (AI-inferred)
     health_monitors: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # A unique identifier for this replica set. (AI-inferred)
     replica_set_id: Any = None
+    # The current operational status of this managed domain. (AI-inferred)
     service_status: Any = None
+    # A reference to the subnet this resource is deployed into. (AI-inferred)
     subnet_id: Any = None
+    # A reference to the virtual network site this replica set is associated with. (AI-inferred)
     vnet_site_id: Any = None
 
 @dataclasses.dataclass
 class DomainService_Properties_ResourceForestSettings_Settings:
+    # A human-readable name for this resource. (AI-inferred)
     friendly_name: Any = None
+    # The DNS server IP address(es) this managed domain forwards unresolved queries to. (AI-inferred)
     remote_dns_ips: Any = None
+    # Whether this trust is one-way or bidirectional. (AI-inferred)
     trust_direction: Any = None
+    # The shared secret used to establish this trust relationship. (AI-inferred)
     trust_password: Any = None
+    # The fully qualified name of the domain this trust is established with. (AI-inferred)
     trusted_domain_fqdn: Any = None
 
 @dataclasses.dataclass

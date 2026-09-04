@@ -4,14 +4,19 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCloudExadataInfrastructure_Properties_CustomerContacts struct {
+	// An email address associated with this resource. (AI-inferred)
 	Email any
 }
 
 type OpenapiCloudExadataInfrastructure_Properties_DefinedFileSystemConfiguration struct {
+	// Whether this partition is reserved for backup storage. (AI-inferred)
 	IsBackupPartition any
-	IsResizable       any
-	MinSizeGb         any
-	MountPoint        any
+	// Whether this resource's own capacity can be resized after creation. (AI-inferred)
+	IsResizable any
+	// The minimum size, in gibibytes, this resource can be provisioned at. (AI-inferred)
+	MinSizeGb any
+	// The path this file system is mounted at. (AI-inferred)
+	MountPoint any
 }
 
 type OpenapiCloudExadataInfrastructure_Properties_EstimatedPatchingTime struct {
@@ -33,6 +38,7 @@ type OpenapiCloudExadataInfrastructure_Properties_ExascaleConfig struct {
 }
 
 type OpenapiCloudExadataInfrastructure_Properties_MaintenanceWindow_DaysOfWeek struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 

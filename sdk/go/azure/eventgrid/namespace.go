@@ -4,7 +4,9 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Namespace_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,58 +22,83 @@ type Namespace_Identity struct {
 }
 
 type Namespace_Properties_InboundIpRules struct {
+	// The action to perform. (AI-inferred)
 	Action any
+	// The IP address range, in CIDR notation, this rule matches. (AI-inferred)
 	IpMask any
 }
 
 type Namespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type Namespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type Namespace_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds                          any
-	PrivateEndpoint                   any
+	// The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
+	GroupIds any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type Namespace_Properties_PrivateEndpointConnections struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type Namespace_Properties_TopicSpacesConfiguration_CustomDomains_Identity struct {
-	Type                 any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// A reference to the user-assigned managed identity used. (AI-inferred)
 	UserAssignedIdentity any
 }
 
 type Namespace_Properties_TopicSpacesConfiguration_CustomDomains struct {
-	CertificateUrl           any
-	ExpectedTxtRecordName    any
-	ExpectedTxtRecordValue   any
+	// A URL pointing to this event source's own certificate. (AI-inferred)
+	CertificateUrl any
+	// The DNS TXT record name expected to validate ownership of this domain. (AI-inferred)
+	ExpectedTxtRecordName any
+	// The DNS TXT record value expected to validate ownership of this domain. (AI-inferred)
+	ExpectedTxtRecordValue any
+	// The fully qualified domain name this applies to. (AI-inferred)
 	FullyQualifiedDomainName any
-	Identity                 any
-	ValidationState          any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// Whether this domain has passed ownership validation. (AI-inferred)
+	ValidationState any
 }
 
 type Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_Dynamic struct {
-	Key   any
+	// The key of this enrichment or attribute. (AI-inferred)
+	Key any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_Static struct {
-	Key       any
+	// The key of this enrichment or attribute. (AI-inferred)
+	Key any
+	// The data type of this value. (AI-inferred)
 	ValueType any
 }
 
 type Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments struct {
+	// Whether this routing enrichment value is computed dynamically from the event's own payload. (AI-inferred)
 	Dynamic any
-	Static  any
+	// Whether this routing enrichment value is a fixed, caller-supplied constant. (AI-inferred)
+	Static any
 }
 
 type Namespace_Properties_TopicSpacesConfiguration struct {
@@ -85,7 +112,8 @@ type Namespace_Properties_TopicSpacesConfiguration struct {
 	MaximumSessionExpiryInHours any
 	// Fully qualified Azure Resource Id for the Event Grid Topic to which events will be routed to from TopicSpaces under a namespace. This property should be in the following format '/subscriptions/{subId}/resourcegroups/{resourceGroupName}/providers/microsoft.EventGrid/topics/{topicName}'. This topic should reside in the same region where namespace is located.
 	RouteTopicResourceId any
-	RoutingEnrichments   any
+	// Additional, static or dynamic value(s) attached to matching events before delivery. (AI-inferred)
+	RoutingEnrichments any
 	// Routing identity info for topic spaces configuration.
 	RoutingIdentityInfo any
 	// Indicate if Topic Spaces Configuration is enabled for the namespace. Default is Disabled.

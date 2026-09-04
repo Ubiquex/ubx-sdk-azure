@@ -2,16 +2,24 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface AdminRequestApprovalsResource_Properties_Plans_Requesters {
+  /** The date this event occurred. (AI-inferred) */
   date?: string | Computed<string>;
+  /** The stated reason supporting this request. (AI-inferred) */
   justification?: string | Computed<string>;
+  /** The identifier of the associated Azure subscription. (AI-inferred) */
   subscriptionId?: string | Computed<string>;
+  /** The name of the associated Azure subscription. (AI-inferred) */
   subscriptionName?: string | Computed<string>;
+  /** The identity associated with this action. (AI-inferred) */
   user?: string | Computed<string>;
 }
 
 export interface AdminRequestApprovalsResource_Properties_Plans {
+  /** A human-readable name for this plan. (AI-inferred) */
   planDisplayName?: string | Computed<string>;
+  /** A reference to the specific plan this applies to. (AI-inferred) */
   planId?: string | Computed<string>;
+  /** The identity/identities that submitted this request. (AI-inferred) */
   requesters?: AdminRequestApprovalsResource_Properties_Plans_Requesters[] | Computed<AdminRequestApprovalsResource_Properties_Plans_Requesters[]>;
 }
 

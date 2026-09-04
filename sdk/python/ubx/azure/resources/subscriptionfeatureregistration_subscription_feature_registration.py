@@ -81,6 +81,7 @@ _SubscriptionfeatureregistrationSubscriptionFeatureRegistration_PropertiesFields
 
 @dataclasses.dataclass
 class SubscriptionfeatureregistrationSubscriptionFeatureRegistrationConfig:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
@@ -89,6 +90,7 @@ class SubscriptionfeatureregistrationSubscriptionFeatureRegistrationAttrs:
     id: Any = None
     # Azure resource name.
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # Azure resource type.
     type: Any = None

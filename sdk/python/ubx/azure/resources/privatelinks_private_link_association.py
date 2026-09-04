@@ -10,6 +10,7 @@ import ubx_sdk as ubx
 class PrivatelinksPrivateLinkAssociation_Properties:
     # The rmpl Resource ID.
     private_link: Any = None
+    # Whether public network access is enabled for resources covered by this private link association. (AI-inferred)
     public_network_access: Any = None
     # The scope of the private link association.
     scope: Any = None
@@ -25,6 +26,7 @@ _PrivatelinksPrivateLinkAssociation_PropertiesFields = {
 
 @dataclasses.dataclass
 class PrivatelinksPrivateLinkAssociationConfig:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
@@ -33,6 +35,7 @@ class PrivatelinksPrivateLinkAssociationAttrs:
     id: Any = None
     # The pla name.
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # The operation type.
     type: Any = None

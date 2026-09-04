@@ -8,12 +8,19 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiRelayServiceConnectionEntity_Properties:
+    # The BizTalk endpoint URI this connection targets. (AI-inferred)
     biztalk_uri: Any = None
+    # The connection string for the specific entity (e.g. queue or topic) this applies to. (AI-inferred)
     entity_connection_string: Any = None
+    # The name of the specific entity (e.g. queue or topic) this applies to. (AI-inferred)
     entity_name: Any = None
+    # The hostname this applies to. (AI-inferred)
     hostname: Any = None
+    # A network port number. (AI-inferred)
     port: Any = None
+    # The connection string for the underlying resource. (AI-inferred)
     resource_connection_string: Any = None
+    # The category of resource this applies to. (AI-inferred)
     resource_type: Any = None
 
 _OpenapiRelayServiceConnectionEntity_PropertiesFields = {

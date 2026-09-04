@@ -20,8 +20,11 @@ class VirtualwanConnectionPolicy_Properties_RoutingConfiguration_PropagatedRoute
 
 @dataclasses.dataclass
 class VirtualwanConnectionPolicy_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes:
+    # The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
     address_prefixes: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
     next_hop_ip_address: Any = None
 
 @dataclasses.dataclass

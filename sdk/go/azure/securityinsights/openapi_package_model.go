@@ -4,13 +4,18 @@ package securityinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPackageModel_Properties_Author struct {
+	// An email address associated with this resource. (AI-inferred)
 	Email any
-	Link  any
-	Name  any
+	// A URL linking to related content or documentation. (AI-inferred)
+	Link any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiPackageModel_Properties_Categories struct {
-	Domains   any
+	// The security domain(s) this content item applies to. (AI-inferred)
+	Domains any
+	// The industry vertical(s) this content item applies to. (AI-inferred)
 	Verticals any
 }
 
@@ -18,51 +23,87 @@ type OpenapiPackageModel_Properties_Dependencies_Criteria struct {
 }
 
 type OpenapiPackageModel_Properties_Dependencies struct {
+	// A unique identifier for this content item. (AI-inferred)
 	ContentId any
-	Criteria  any
-	Kind      any
-	Name      any
-	Operator  any
-	Version   any
+	// The condition(s) this rule evaluates. (AI-inferred)
+	Criteria any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// How this condition's own operands are compared. (AI-inferred)
+	Operator any
+	// The version identifier this applies to. (AI-inferred)
+	Version any
 }
 
 type OpenapiPackageModel_Properties_Source struct {
-	Kind     any
-	Name     any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// An identifier for the source this content item came from. (AI-inferred)
 	SourceId any
 }
 
 type OpenapiPackageModel_Properties_Support struct {
+	// An email address associated with this resource. (AI-inferred)
 	Email any
-	Link  any
-	Name  any
-	Tier  any
+	// A URL linking to related content or documentation. (AI-inferred)
+	Link any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred)
+	Tier any
 }
 
 type OpenapiPackageModel_Properties struct {
-	Author                   any
-	Categories               any
-	ContentId                any
-	ContentKind              any
-	ContentProductId         any
-	ContentSchemaVersion     any
-	Dependencies             any
-	Description              any
-	DisplayName              any
-	FirstPublishDate         any
-	Icon                     any
-	IsDeprecated             any
-	IsFeatured               any
-	IsNew                    any
-	IsPreview                any
-	LastPublishDate          any
-	Providers                any
-	PublisherDisplayName     any
-	Source                   any
-	Support                  any
-	ThreatAnalysisTactics    any
+	// The author of this content item. (AI-inferred)
+	Author any
+	// The category/categories this content item belongs to. (AI-inferred)
+	Categories any
+	// A unique identifier for this content item. (AI-inferred)
+	ContentId any
+	// The category of Sentinel content this represents, e.g. analytics rule or workbook. (AI-inferred)
+	ContentKind any
+	// A unique identifier for this content item within the content catalog. (AI-inferred)
+	ContentProductId any
+	// The schema version this content item conforms to. (AI-inferred)
+	ContentSchemaVersion any
+	// The other content item(s) this one requires to function. (AI-inferred)
+	Dependencies any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// When this content item was first published. (AI-inferred)
+	FirstPublishDate any
+	// An icon representing this content item. (AI-inferred)
+	Icon any
+	// Whether this content item is deprecated and no longer recommended for use. (AI-inferred)
+	IsDeprecated any
+	// Whether this content item is highlighted as featured in the content hub. (AI-inferred)
+	IsFeatured any
+	// Whether this content item was recently added. (AI-inferred)
+	IsNew any
+	// Whether this content item is still in preview. (AI-inferred)
+	IsPreview any
+	// When this content item was last published. (AI-inferred)
+	LastPublishDate any
+	// The data source provider(s) this content item requires. (AI-inferred)
+	Providers any
+	// A human-readable name for the publisher of this content item. (AI-inferred)
+	PublisherDisplayName any
+	// Where this data or content originated from. (AI-inferred)
+	Source any
+	// Support tier information for this content item. (AI-inferred)
+	Support any
+	// The MITRE ATT&CK tactic(s) this rule maps to. (AI-inferred)
+	ThreatAnalysisTactics any
+	// The MITRE ATT&CK technique(s) this rule maps to. (AI-inferred)
 	ThreatAnalysisTechniques any
-	Version                  any
+	// The version identifier this applies to. (AI-inferred)
+	Version any
 }
 
 var OpenapiPackageModel_Properties_AuthorFields = ubx.FieldMap{

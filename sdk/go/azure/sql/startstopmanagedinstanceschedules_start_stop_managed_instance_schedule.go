@@ -4,10 +4,14 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_Properties_ScheduleList struct {
-	StartDay  any
+	// The day of the week this scheduled entry starts the managed instance. (AI-inferred)
+	StartDay any
+	// The time of day this scheduled entry starts the managed instance. (AI-inferred)
 	StartTime any
-	StopDay   any
-	StopTime  any
+	// The day of the week this scheduled entry stops the managed instance. (AI-inferred)
+	StopDay any
+	// The time of day this scheduled entry stops the managed instance. (AI-inferred)
+	StopTime any
 }
 
 type StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_Properties struct {

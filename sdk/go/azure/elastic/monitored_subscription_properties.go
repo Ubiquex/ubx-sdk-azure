@@ -4,28 +4,41 @@ package elastic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags struct {
+	// The action to perform. (AI-inferred)
 	Action any
-	Name   any
-	Value  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules struct {
-	FilteringTags        any
-	SendAadLogs          any
-	SendActivityLogs     any
+	// The tag(s) used to include or exclude specific resource(s) from monitoring. (AI-inferred)
+	FilteringTags any
+	// Whether Microsoft Entra ID audit logs are sent to Elastic. (AI-inferred)
+	SendAadLogs any
+	// Whether Azure subscription-level activity logs are sent to Elastic. (AI-inferred)
+	SendActivityLogs any
+	// Whether Azure subscription-level activity logs are sent to Elastic. (AI-inferred)
 	SendSubscriptionLogs any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules struct {
-	LogRules          any
+	// The rule(s) governing which log data is sent to Elastic. (AI-inferred)
+	LogRules any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList struct {
-	Error          any
-	Status         any
+	// Detail about an error that occurred. (AI-inferred)
+	Error any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The identifier of the associated Azure subscription. (AI-inferred)
 	SubscriptionId any
-	TagRules       any
+	// Configuration for which resource tags are sent to Elastic and which resources are monitored. (AI-inferred)
+	TagRules any
 }
 
 type MonitoredSubscriptionProperties_Properties struct {

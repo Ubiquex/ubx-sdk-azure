@@ -7,14 +7,23 @@ export interface GatewayRouteConfigResource_Properties_OpenApi {
 }
 
 export interface GatewayRouteConfigResource_Properties_Routes {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The condition(s) restricting which request(s) this rule applies to. (AI-inferred) */
   filters?: string[] | Computed<string[]>;
+  /** The relative evaluation order of this item. (AI-inferred) */
   order?: number | Computed<number>;
+  /** The condition(s) a request must satisfy for this route to match. (AI-inferred) */
   predicates?: string[] | Computed<string[]>;
+  /** Whether single sign-on is enabled for this application. (AI-inferred) */
   ssoEnabled?: boolean | Computed<boolean>;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags?: string[] | Computed<string[]>;
+  /** A human-readable title for this item. (AI-inferred) */
   title?: string | Computed<string>;
+  /** Whether the caller's own OAuth access token is forwarded to backend services. (AI-inferred) */
   tokenRelay?: boolean | Computed<boolean>;
+  /** A resource URI. (AI-inferred) */
   uri?: string | Computed<string>;
 }
 

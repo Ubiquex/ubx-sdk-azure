@@ -11,16 +11,21 @@ export interface DbOpenapiClusterResource_Identity {
 }
 
 export interface DbOpenapiClusterResource_Properties_BackupSchedules {
+  /** The cron expression this scheduled operation runs on. (AI-inferred) */
   cronExpression?: string | Computed<string>;
+  /** How many hours of backup history are retained. (AI-inferred) */
   retentionInHours?: number | Computed<number>;
+  /** The name of this schedule. (AI-inferred) */
   scheduleName?: string | Computed<string>;
 }
 
 export interface DbOpenapiClusterResource_Properties_ClientCertificates {
+  /** A certificate, PEM-encoded. (AI-inferred) */
   pem?: string | Computed<string>;
 }
 
 export interface DbOpenapiClusterResource_Properties_ExternalSeedNodes {
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
 }
 
@@ -72,7 +77,9 @@ export interface DbOpenapiClusterResource_Properties {
   initialCassandraAdminPassword?: string | Computed<string>;
   /** If the Connection Method is Vpn, this is the Id of the private link resource that the datacenters need to connect to. */
   privateLinkResourceId?: string | Computed<string>;
+  /** Output only. The URI metrics are exposed at in Prometheus format. (AI-inferred) */
   prometheusEndpoint?: DbOpenapiClusterResource_Properties_ExternalSeedNodes | Computed<DbOpenapiClusterResource_Properties_ExternalSeedNodes>;
+  /** Detail about an error encountered while provisioning this resource. (AI-inferred) */
   provisionError?: DbOpenapiClusterResource_Properties_ProvisionError | Computed<DbOpenapiClusterResource_Properties_ProvisionError>;
   /** The status of the resource at the time the operation was called. */
   provisioningState?: string | Computed<string>;

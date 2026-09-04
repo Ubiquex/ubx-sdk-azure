@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ScheduledqueryruleApiScheduledQueryRuleResource_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -27,29 +29,47 @@ export interface ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Acti
 }
 
 export interface ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_Dimensions {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** How this condition's own operands are compared. (AI-inferred) */
   operator?: string | Computed<string>;
+  /** The value(s) making up this field. (AI-inferred) */
   values?: string[] | Computed<string[]>;
 }
 
 export interface ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_FailingPeriods {
+  /** The minimum number of failing evaluation period(s) required to trigger this alert. (AI-inferred) */
   minFailingPeriodsToAlert?: number | Computed<number>;
+  /** How many recent evaluation period(s) this condition considers. (AI-inferred) */
   numberOfEvaluationPeriods?: number | Computed<number>;
 }
 
 export interface ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf {
+  /** How sensitive this dynamic threshold is to deviations in the metric. (AI-inferred) */
   alertSensitivity?: string | Computed<string>;
+  /** The category of alert criterion this represents, e.g. static or dynamic threshold. (AI-inferred) */
   criterionType?: string | Computed<string>;
+  /** The dimension(s) this alert condition is evaluated across. (AI-inferred) */
   dimensions?: ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_Dimensions[] | Computed<ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_Dimensions[]>;
+  /** The number of failing evaluation period(s), out of the last `number_of_evaluation_periods`, required to trigger this alert. (AI-inferred) */
   failingPeriods?: ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_FailingPeriods | Computed<ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_FailingPeriods>;
+  /** Data before this date is excluded when learning a dynamic threshold's own baseline. (AI-inferred) */
   ignoreDataBefore?: string | Computed<string>;
+  /** The result column holding the metric value this condition evaluates. (AI-inferred) */
   metricMeasureColumn?: string | Computed<string>;
+  /** The name of the metric this applies to. (AI-inferred) */
   metricName?: string | Computed<string>;
+  /** The minimum number of times this pattern must recur to trigger the alert. (AI-inferred) */
   minRecurrenceCount?: number | Computed<number>;
+  /** How this condition's own operands are compared. (AI-inferred) */
   operator?: string | Computed<string>;
+  /** The log query text this condition evaluates. (AI-inferred) */
   query?: string | Computed<string>;
+  /** The result column identifying which resource each row belongs to. (AI-inferred) */
   resourceIdColumn?: string | Computed<string>;
+  /** The value that must be crossed for this condition to trigger. (AI-inferred) */
   threshold?: number | Computed<number>;
+  /** How values are aggregated over each evaluation period, e.g. average or count. (AI-inferred) */
   timeAggregation?: string | Computed<string>;
 }
 

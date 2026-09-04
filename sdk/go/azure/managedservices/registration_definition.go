@@ -15,28 +15,41 @@ type RegistrationDefinition_Plan struct {
 }
 
 type RegistrationDefinition_Properties_Authorizations struct {
+	// The role definition ID(s) delegated to the managing tenant's own principal(s). (AI-inferred)
 	DelegatedRoleDefinitionIds any
-	PrincipalId                any
-	PrincipalIdDisplayName     any
-	RoleDefinitionId           any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
+	PrincipalId any
+	// A human-readable name for the delegated principal. (AI-inferred)
+	PrincipalIdDisplayName any
+	// A reference to the role definition this delegation grants. (AI-inferred)
+	RoleDefinitionId any
 }
 
 type RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApprovers struct {
-	PrincipalId            any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
+	PrincipalId any
+	// A human-readable name for the delegated principal. (AI-inferred)
 	PrincipalIdDisplayName any
 }
 
 type RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy struct {
-	ManagedByTenantApprovers  any
+	// The principal(s) in the managing tenant authorized to approve just-in-time access requests. (AI-inferred)
+	ManagedByTenantApprovers any
+	// The maximum duration a just-in-time access grant may remain active for. (AI-inferred)
 	MaximumActivationDuration any
-	MultiFactorAuthProvider   any
+	// The multi-factor authentication provider required to approve or request access. (AI-inferred)
+	MultiFactorAuthProvider any
 }
 
 type RegistrationDefinition_Properties_EligibleAuthorizations struct {
+	// Policy configuration for temporary, approval-gated access to this delegation. (AI-inferred)
 	JustInTimeAccessPolicy any
-	PrincipalId            any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
+	PrincipalId any
+	// A human-readable name for the delegated principal. (AI-inferred)
 	PrincipalIdDisplayName any
-	RoleDefinitionId       any
+	// A reference to the role definition this delegation grants. (AI-inferred)
+	RoleDefinitionId any
 }
 
 type RegistrationDefinition_Properties struct {

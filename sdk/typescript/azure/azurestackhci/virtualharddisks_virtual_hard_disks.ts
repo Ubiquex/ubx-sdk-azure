@@ -20,10 +20,12 @@ export interface VirtualharddisksVirtualHardDisks_Properties_Status {
   errorCode?: string | Computed<string>;
   /** Descriptive error message */
   errorMessage?: string | Computed<string>;
+  /** The outcome of the most recent operation performed on this virtual hard disk, e.g. `Succeeded`, `Failed`, or `InProgress`. (AI-inferred) */
   provisioningStatus?: VirtualharddisksVirtualHardDisks_Properties_Status_ProvisioningStatus | Computed<VirtualharddisksVirtualHardDisks_Properties_Status_ProvisioningStatus>;
 }
 
 export interface VirtualharddisksVirtualHardDisks_Properties {
+  /** The block size, in bytes, this virtual hard disk was formatted with. (AI-inferred) */
   blockSizeBytes?: number | Computed<number>;
   /** Storage ContainerID of the storage container to be used for VHD */
   containerId?: string | Computed<string>;
@@ -35,7 +37,9 @@ export interface VirtualharddisksVirtualHardDisks_Properties {
   dynamic?: boolean | Computed<boolean>;
   /** The hypervisor generation of the Virtual Machine [V1, V2] */
   hyperVgeneration?: string | Computed<string>;
+  /** The logical sector size, in bytes, this virtual hard disk presents to the guest OS. (AI-inferred) */
   logicalSectorBytes?: number | Computed<number>;
+  /** The physical sector size, in bytes, of the underlying storage backing this virtual hard disk. (AI-inferred) */
   physicalSectorBytes?: number | Computed<number>;
   /** Provisioning state of the virtual hard disk. */
   provisioningState?: string | Computed<string>;

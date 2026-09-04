@@ -9,7 +9,9 @@ type OpenapiJobBase_Properties_Identity struct {
 }
 
 type OpenapiJobBase_Properties_NotificationSetting_Webhooks struct {
-	EventType   any
+	// The category of event this represents. (AI-inferred)
+	EventType any
+	// The kind of webhook this represents. (AI-inferred)
 	WebhookType any
 }
 
@@ -23,17 +25,25 @@ type OpenapiJobBase_Properties_NotificationSetting struct {
 }
 
 type OpenapiJobBase_Properties_Services_Nodes struct {
+	// Whether `nodes` specifies a fixed count or a dedicated/scale setting. (AI-inferred)
 	NodesValueType any
 }
 
 type OpenapiJobBase_Properties_Services struct {
-	Endpoint       any
-	ErrorMessage   any
+	// The endpoint this resource is reachable at. (AI-inferred)
+	Endpoint any
+	// A human-readable description of the error. (AI-inferred)
+	ErrorMessage any
+	// The category of interactive service exposed by this job, e.g. a Jupyter notebook or VS Code. (AI-inferred)
 	JobServiceType any
-	Nodes          any
-	Port           any
-	Properties     any
-	Status         any
+	// The compute node(s) making up this cluster. (AI-inferred)
+	Nodes any
+	// A network port number. (AI-inferred)
+	Port any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type OpenapiJobBase_Properties struct {

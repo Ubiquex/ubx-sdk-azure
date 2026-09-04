@@ -9,8 +9,10 @@ type RaiToolLabel_Properties_AccountScope struct {
 }
 
 type RaiToolLabel_Properties_ProjectScopes struct {
+	// The label value(s) assigned during data collection. (AI-inferred)
 	LabelValues any
-	Project     any
+	// A reference to the AI Foundry project this applies to. (AI-inferred)
+	Project any
 }
 
 type RaiToolLabel_Properties struct {

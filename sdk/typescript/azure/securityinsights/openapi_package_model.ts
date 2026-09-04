@@ -2,13 +2,18 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiPackageModel_Properties_Author {
+  /** An email address associated with this resource. (AI-inferred) */
   email?: string | Computed<string>;
+  /** A URL linking to related content or documentation. (AI-inferred) */
   link?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface OpenapiPackageModel_Properties_Categories {
+  /** The security domain(s) this content item applies to. (AI-inferred) */
   domains?: string[] | Computed<string[]>;
+  /** The industry vertical(s) this content item applies to. (AI-inferred) */
   verticals?: string[] | Computed<string[]>;
 }
 
@@ -16,50 +21,86 @@ export interface OpenapiPackageModel_Properties_Dependencies_Criteria {
 }
 
 export interface OpenapiPackageModel_Properties_Dependencies {
+  /** A unique identifier for this content item. (AI-inferred) */
   contentId?: string | Computed<string>;
+  /** The condition(s) this rule evaluates. (AI-inferred) */
   criteria?: OpenapiPackageModel_Properties_Dependencies_Criteria[] | Computed<OpenapiPackageModel_Properties_Dependencies_Criteria[]>;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** How this condition's own operands are compared. (AI-inferred) */
   operator?: string | Computed<string>;
+  /** The version identifier this applies to. (AI-inferred) */
   version?: string | Computed<string>;
 }
 
 export interface OpenapiPackageModel_Properties_Source {
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** An identifier for the source this content item came from. (AI-inferred) */
   sourceId?: string | Computed<string>;
 }
 
 export interface OpenapiPackageModel_Properties_Support {
+  /** An email address associated with this resource. (AI-inferred) */
   email?: string | Computed<string>;
+  /** A URL linking to related content or documentation. (AI-inferred) */
   link?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred) */
   tier?: string | Computed<string>;
 }
 
 export interface OpenapiPackageModel_Properties {
+  /** The author of this content item. (AI-inferred) */
   author?: OpenapiPackageModel_Properties_Author | Computed<OpenapiPackageModel_Properties_Author>;
+  /** The category/categories this content item belongs to. (AI-inferred) */
   categories?: OpenapiPackageModel_Properties_Categories | Computed<OpenapiPackageModel_Properties_Categories>;
+  /** A unique identifier for this content item. (AI-inferred) */
   contentId?: string | Computed<string>;
+  /** The category of Sentinel content this represents, e.g. analytics rule or workbook. (AI-inferred) */
   contentKind?: string | Computed<string>;
+  /** A unique identifier for this content item within the content catalog. (AI-inferred) */
   contentProductId?: string | Computed<string>;
+  /** The schema version this content item conforms to. (AI-inferred) */
   contentSchemaVersion?: string | Computed<string>;
+  /** The other content item(s) this one requires to function. (AI-inferred) */
   dependencies?: OpenapiPackageModel_Properties_Dependencies | Computed<OpenapiPackageModel_Properties_Dependencies>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** When this content item was first published. (AI-inferred) */
   firstPublishDate?: string | Computed<string>;
+  /** An icon representing this content item. (AI-inferred) */
   icon?: string | Computed<string>;
+  /** Whether this content item is deprecated and no longer recommended for use. (AI-inferred) */
   isDeprecated?: string | Computed<string>;
+  /** Whether this content item is highlighted as featured in the content hub. (AI-inferred) */
   isFeatured?: string | Computed<string>;
+  /** Whether this content item was recently added. (AI-inferred) */
   isNew?: string | Computed<string>;
+  /** Whether this content item is still in preview. (AI-inferred) */
   isPreview?: string | Computed<string>;
+  /** When this content item was last published. (AI-inferred) */
   lastPublishDate?: string | Computed<string>;
+  /** The data source provider(s) this content item requires. (AI-inferred) */
   providers?: string[] | Computed<string[]>;
+  /** A human-readable name for the publisher of this content item. (AI-inferred) */
   publisherDisplayName?: string | Computed<string>;
+  /** Where this data or content originated from. (AI-inferred) */
   source?: OpenapiPackageModel_Properties_Source | Computed<OpenapiPackageModel_Properties_Source>;
+  /** Support tier information for this content item. (AI-inferred) */
   support?: OpenapiPackageModel_Properties_Support | Computed<OpenapiPackageModel_Properties_Support>;
+  /** The MITRE ATT&CK tactic(s) this rule maps to. (AI-inferred) */
   threatAnalysisTactics?: string[] | Computed<string[]>;
+  /** The MITRE ATT&CK technique(s) this rule maps to. (AI-inferred) */
   threatAnalysisTechniques?: string[] | Computed<string[]>;
+  /** The version identifier this applies to. (AI-inferred) */
   version?: string | Computed<string>;
 }
 

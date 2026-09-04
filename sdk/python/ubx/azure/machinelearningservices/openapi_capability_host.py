@@ -41,12 +41,14 @@ _OpenapiCapabilityHost_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiCapabilityHostConfig:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiCapabilityHostAttrs:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None

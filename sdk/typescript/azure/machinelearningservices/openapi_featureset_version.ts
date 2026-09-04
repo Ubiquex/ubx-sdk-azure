@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiFeaturesetVersion_Properties_MaterializationSettings_Notification_Webhooks {
+  /** The category of event this represents. (AI-inferred) */
   eventType?: string | Computed<string>;
+  /** The kind of webhook this represents. (AI-inferred) */
   webhookType?: string | Computed<string>;
 }
 
@@ -36,6 +38,7 @@ export interface OpenapiFeaturesetVersion_Properties_MaterializationSettings_Sch
   frequency: string | Computed<string>;
   /** [Required] Specifies schedule interval in conjunction with frequency */
   interval: number | Computed<number>;
+  /** The recurrence schedule this applies to. (AI-inferred) */
   schedule?: OpenapiFeaturesetVersion_Properties_MaterializationSettings_Schedule_Schedule | Computed<OpenapiFeaturesetVersion_Properties_MaterializationSettings_Schedule_Schedule>;
 }
 
@@ -44,6 +47,7 @@ export interface OpenapiFeaturesetVersion_Properties_MaterializationSettings {
   notification?: OpenapiFeaturesetVersion_Properties_MaterializationSettings_Notification | Computed<OpenapiFeaturesetVersion_Properties_MaterializationSettings_Notification>;
   /** DTO object representing compute resource */
   resource?: OpenapiFeaturesetVersion_Properties_MaterializationSettings_Resource | Computed<OpenapiFeaturesetVersion_Properties_MaterializationSettings_Resource>;
+  /** The recurrence schedule this applies to. (AI-inferred) */
   schedule?: OpenapiFeaturesetVersion_Properties_MaterializationSettings_Schedule | Computed<OpenapiFeaturesetVersion_Properties_MaterializationSettings_Schedule>;
   /** Specifies the spark compute settings */
   sparkConfiguration?: Record<string, string> | Computed<Record<string, string>>;
@@ -59,6 +63,7 @@ export interface OpenapiFeaturesetVersion_Properties_Specification {
 export interface OpenapiFeaturesetVersion_Properties {
   /** Specifies list of entities */
   entities?: string[] | Computed<string[]>;
+  /** Configuration for computing and storing feature values ahead of time. (AI-inferred) */
   materializationSettings?: OpenapiFeaturesetVersion_Properties_MaterializationSettings | Computed<OpenapiFeaturesetVersion_Properties_MaterializationSettings>;
   /** Provisioning state of registry asset. */
   provisioningState?: string | Computed<string>;

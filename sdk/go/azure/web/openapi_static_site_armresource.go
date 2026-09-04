@@ -4,7 +4,9 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStaticSiteArmresource_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -39,107 +41,169 @@ type OpenapiStaticSiteArmresource_Properties_BuildProperties struct {
 }
 
 type OpenapiStaticSiteArmresource_Properties_DatabaseConnections_ConfigurationFiles struct {
+	// The literal content of this resource. (AI-inferred)
 	Contents any
+	// The name of this file. (AI-inferred)
 	FileName any
-	Type     any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiStaticSiteArmresource_Properties_DatabaseConnections struct {
+	// The configuration file(s) associated with this resource. (AI-inferred)
 	ConfigurationFiles any
+	// The managed identity used to authenticate this connection. (AI-inferred)
 	ConnectionIdentity any
-	Name               any
-	Region             any
-	ResourceId         any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The Azure region this applies to. (AI-inferred)
+	Region any
+	// A reference to the resource this applies to. (AI-inferred)
+	ResourceId any
 }
 
 type OpenapiStaticSiteArmresource_Properties_LinkedBackends struct {
+	// A reference to the backend resource this applies to. (AI-inferred)
 	BackendResourceId any
-	CreatedOn         any
+	// When this resource was created. (AI-inferred)
+	CreatedOn any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Region            any
+	// The Azure region this applies to. (AI-inferred)
+	Region any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_Details struct {
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error struct {
-	Code            any
-	Details         any
-	ExtendedCode    any
-	InnerErrors     any
-	Message         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// An extended, more specific error code. (AI-inferred)
+	ExtendedCode any
+	// The underlying error(s) that caused this failure. (AI-inferred)
+	InnerErrors any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A template used to format a generated message. (AI-inferred)
 	MessageTemplate any
-	Parameters      any
-	Target          any
+	// The parameter(s) making up this configuration. (AI-inferred)
+	Parameters any
+	// The destination this applies to. (AI-inferred)
+	Target any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Plan struct {
-	Name          any
-	Product       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The product this applies to. (AI-inferred)
+	Product any
+	// A promotional code applied to this resource. (AI-inferred)
 	PromotionCode any
-	Publisher     any
-	Version       any
+	// The publisher of this extension or resource. (AI-inferred)
+	Publisher any
+	// The version identifier this applies to. (AI-inferred)
+	Version any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties struct {
-	IpAddresses                       any
-	PrivateEndpoint                   any
+	// The IP address(es) associated with this resource. (AI-inferred)
+	IpAddresses any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_Capabilities struct {
-	Name   any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A machine-readable reason code. (AI-inferred)
 	Reason any
-	Value  any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_SkuCapacity struct {
-	Default        any
+	// The default value used when none is explicitly provided. (AI-inferred)
+	Default any
+	// The maximum number of worker instances this plan can elastically scale out to. (AI-inferred)
 	ElasticMaximum any
-	Maximum        any
-	Minimum        any
-	ScaleType      any
+	// The maximum value allowed. (AI-inferred)
+	Maximum any
+	// The minimum value allowed. (AI-inferred)
+	Minimum any
+	// How this resource scales, e.g. by CPU or a custom metric. (AI-inferred)
+	ScaleType any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku struct {
+	// The capability/capabilities this resource supports. (AI-inferred)
 	Capabilities any
-	Capacity     any
-	Family       any
-	Locations    any
-	Name         any
-	Size         any
-	SkuCapacity  any
-	Tier         any
+	// The number of instance(s) this resource is provisioned with. (AI-inferred)
+	Capacity any
+	// The generation or family this SKU belongs to. (AI-inferred)
+	Family any
+	// The Azure region(s) this applies to. (AI-inferred)
+	Locations any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The size of this resource. (AI-inferred)
+	Size any
+	// The provisioned capacity for this SKU. (AI-inferred)
+	SkuCapacity any
+	// The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred)
+	Tier any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections struct {
-	Error      any
-	Id         any
-	Identity   any
-	Location   any
-	Name       any
-	Plan       any
+	// Detail about an error that occurred. (AI-inferred)
+	Error any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the App Service plan this app runs on. (AI-inferred)
+	Plan any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Sku        any
-	Status     any
-	Tags       any
-	Type       any
-	Zones      any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
+	Tags any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type OpenapiStaticSiteArmresource_Properties_TemplateProperties struct {
@@ -156,12 +220,16 @@ type OpenapiStaticSiteArmresource_Properties_TemplateProperties struct {
 }
 
 type OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps_Properties struct {
-	CreatedOn             any
-	FunctionAppRegion     any
+	// When this resource was created. (AI-inferred)
+	CreatedOn any
+	// The Azure region the associated Function App is deployed in. (AI-inferred)
+	FunctionAppRegion any
+	// A reference to the associated Function App resource. (AI-inferred)
 	FunctionAppResourceId any
 }
 
 type OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

@@ -17,9 +17,13 @@ export interface OpenapiBackupItem_Properties_BackupSchedule {
 }
 
 export interface OpenapiBackupItem_Properties_Databases {
+  /** The connection string used to reach this resource. (AI-inferred) */
   connectionString?: string | Computed<string>;
+  /** The name of the app setting or connection string this applies to. (AI-inferred) */
   connectionStringName?: string | Computed<string>;
+  /** The kind of database this connection targets, e.g. `SQLAzure` or `MySql`. (AI-inferred) */
   databaseType?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 

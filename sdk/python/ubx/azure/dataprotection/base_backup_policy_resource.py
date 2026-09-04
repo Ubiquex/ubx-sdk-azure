@@ -10,6 +10,7 @@ import ubx_sdk as ubx
 class BaseBackupPolicyResource_Properties:
     # Type of datasource for the backup management
     datasource_types: Any = None
+    # A discriminator identifying this object's own concrete type, used when a field can hold more than one shape. (AI-inferred)
     object_type: Any = None
 
 _BaseBackupPolicyResource_PropertiesFields = {

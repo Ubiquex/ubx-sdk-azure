@@ -9,7 +9,9 @@ type OpenapiLicenseProfile_Properties_EsuProfile struct {
 }
 
 type OpenapiLicenseProfile_Properties_ProductProfile_Error_AdditionalInfo struct {
+	// Additional detail about this result. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
@@ -17,11 +19,16 @@ type OpenapiLicenseProfile_Properties_ProductProfile_Error_Details_Details struc
 }
 
 type OpenapiLicenseProfile_Properties_ProductProfile_Error_Details struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type OpenapiLicenseProfile_Properties_ProductProfile_Error struct {
@@ -38,12 +45,19 @@ type OpenapiLicenseProfile_Properties_ProductProfile_Error struct {
 }
 
 type OpenapiLicenseProfile_Properties_ProductProfile_ProductFeatures struct {
-	BillingEndDate     any
-	BillingStartDate   any
-	DisenrollmentDate  any
-	EnrollmentDate     any
-	Error              any
-	Name               any
+	// When billing for this product feature ends. (AI-inferred)
+	BillingEndDate any
+	// When billing for this product feature starts. (AI-inferred)
+	BillingStartDate any
+	// When this machine was disenrolled from this product feature. (AI-inferred)
+	DisenrollmentDate any
+	// When this machine was enrolled in this product feature. (AI-inferred)
+	EnrollmentDate any
+	// Detail about an error that occurred. (AI-inferred)
+	Error any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// This product feature's own current subscription status. (AI-inferred)
 	SubscriptionStatus any
 }
 
@@ -78,6 +92,7 @@ type OpenapiLicenseProfile_Properties struct {
 	ProductProfile any
 	// The provisioning state, which only appears in the response.
 	ProvisioningState any
+	// This machine's Software Assurance/subscription benefit status, used to determine Extended Security Update eligibility. (AI-inferred)
 	SoftwareAssurance any
 }
 

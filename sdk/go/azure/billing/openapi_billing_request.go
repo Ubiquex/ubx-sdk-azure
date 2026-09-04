@@ -4,9 +4,12 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingRequest_Properties_CreatedBy struct {
+	// The Microsoft Entra ID object identifier this applies to. (AI-inferred)
 	ObjectId any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
 	TenantId any
-	Upn      any
+	// The User Principal Name this applies to. (AI-inferred)
+	Upn any
 }
 
 type OpenapiBillingRequest_Properties struct {

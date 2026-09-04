@@ -20,34 +20,50 @@ type DeploymentstacksDeploymentStack_Properties_DebugSetting struct {
 }
 
 type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference_KeyVault struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference struct {
-	KeyVault      any
-	SecretName    any
+	// A reference to the Key Vault this secret is sourced from. (AI-inferred)
+	KeyVault any
+	// The name of this secret. (AI-inferred)
+	SecretName any
+	// The specific version of this secret. (AI-inferred)
 	SecretVersion any
 }
 
 type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config struct {
+	// A reference to the Key Vault secret this value is sourced from. (AI-inferred)
 	KeyVaultReference any
-	Type              any
-	Value             any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension struct {
-	Config   any
+	// The configuration for this resource. (AI-inferred)
+	Config any
+	// A reference to the configuration this applies to. (AI-inferred)
 	ConfigId any
-	Name     any
-	Version  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The version identifier this applies to. (AI-inferred)
+	Version any
 }
 
 type DeploymentstacksDeploymentStack_Properties_DeletedResources struct {
-	ApiVersion  any
-	Extension   any
-	Id          any
+	// The API version used for this resource. (AI-inferred)
+	ApiVersion any
+	// A reference to a Bicep extension used by this template. (AI-inferred)
+	Extension any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The property/properties identifying this resource for matching purposes. (AI-inferred)
 	Identifiers any
-	Type        any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type DeploymentstacksDeploymentStack_Properties_DenySettings struct {
@@ -62,7 +78,9 @@ type DeploymentstacksDeploymentStack_Properties_DenySettings struct {
 }
 
 type DeploymentstacksDeploymentStack_Properties_Error_AdditionalInfo struct {
+	// Additional structured detail supporting this error. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
@@ -70,11 +88,16 @@ type DeploymentstacksDeploymentStack_Properties_Error_Details_Details struct {
 }
 
 type DeploymentstacksDeploymentStack_Properties_Error_Details struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type DeploymentstacksDeploymentStack_Properties_Error struct {
@@ -91,28 +114,41 @@ type DeploymentstacksDeploymentStack_Properties_Error struct {
 }
 
 type DeploymentstacksDeploymentStack_Properties_ExternalInputDefinitions struct {
+	// The configuration for this resource. (AI-inferred)
 	Config any
-	Kind   any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
 }
 
 type DeploymentstacksDeploymentStack_Properties_ExternalInputs struct {
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type DeploymentstacksDeploymentStack_Properties_FailedResources struct {
-	ApiVersion  any
-	Error       any
-	Extension   any
-	Id          any
+	// The API version used for this resource. (AI-inferred)
+	ApiVersion any
+	// Detail about an error that occurred. (AI-inferred)
+	Error any
+	// A reference to a Bicep extension used by this template. (AI-inferred)
+	Extension any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The property/properties identifying this resource for matching purposes. (AI-inferred)
 	Identifiers any
-	Type        any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type DeploymentstacksDeploymentStack_Properties_Parameters struct {
+	// The template expression this value was evaluated from. (AI-inferred)
 	Expression any
-	Reference  any
-	Type       any
-	Value      any
+	// A reference to a related resource or value. (AI-inferred)
+	Reference any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type DeploymentstacksDeploymentStack_Properties_ParametersLink struct {
@@ -123,8 +159,10 @@ type DeploymentstacksDeploymentStack_Properties_ParametersLink struct {
 }
 
 type DeploymentstacksDeploymentStack_Properties_Resources struct {
+	// Whether resources managed by this stack are protected from deletion or modification outside the stack. (AI-inferred)
 	DenyStatus any
-	Status     any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type DeploymentstacksDeploymentStack_Properties_TemplateLink struct {

@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class SqlmigrationDatabaseMigrationSqlVm_Properties_BackupConfiguration_SourceLocation_AzureBlob_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -69,27 +71,46 @@ class SqlmigrationDatabaseMigrationSqlVm_Properties_BackupConfiguration:
 
 @dataclasses.dataclass
 class SqlmigrationDatabaseMigrationSqlVm_Properties_MigrationStatusDetails_ActiveBackupSets_ListOfBackupFiles:
+    # How long this copy operation took. (AI-inferred)
     copy_duration: Any = None
+    # The observed data transfer rate for this copy operation. (AI-inferred)
     copy_throughput: Any = None
+    # The amount of data read so far. (AI-inferred)
     data_read: Any = None
+    # The amount of data written so far. (AI-inferred)
     data_written: Any = None
+    # This file's own position within its containing backup set. (AI-inferred)
     family_sequence_number: Any = None
+    # The name of this file. (AI-inferred)
     file_name: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The total size of this data. (AI-inferred)
     total_size: Any = None
 
 @dataclasses.dataclass
 class SqlmigrationDatabaseMigrationSqlVm_Properties_MigrationStatusDetails_ActiveBackupSets:
+    # When this backup completed. (AI-inferred)
     backup_finish_date: Any = None
+    # A unique identifier for this backup set. (AI-inferred)
     backup_set_id: Any = None
+    # When this backup started. (AI-inferred)
     backup_start_date: Any = None
+    # The category of backup this represents, e.g. full, differential, or log. (AI-inferred)
     backup_type: Any = None
+    # The total number of files making up this backup set. (AI-inferred)
     family_count: Any = None
+    # The first log sequence number contained in this backup. (AI-inferred)
     first_lsn: Any = None
+    # Whether checksums were computed and verified for this backup. (AI-inferred)
     has_backup_checksums: Any = None
+    # Why this backup file was excluded from the restore sequence. (AI-inferred)
     ignore_reasons: Any = None
+    # Whether this backup has already been applied to the target database. (AI-inferred)
     is_backup_restored: Any = None
+    # The last log sequence number contained in this backup. (AI-inferred)
     last_lsn: Any = None
+    # The backup file(s) making up this backup set. (AI-inferred)
     list_of_backup_files: Any = None
 
 @dataclasses.dataclass

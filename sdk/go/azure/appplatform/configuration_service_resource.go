@@ -4,7 +4,9 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConfigurationServiceResource_Properties_Instances struct {
-	Name   any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The current status of this resource. (AI-inferred)
 	Status any
 }
 
@@ -18,19 +20,32 @@ type ConfigurationServiceResource_Properties_ResourceRequests struct {
 }
 
 type ConfigurationServiceResource_Properties_Settings_GitProperty_Repositories struct {
-	CaCertResourceId      any
-	GitImplementation     any
-	HostKey               any
-	HostKeyAlgorithm      any
-	Label                 any
-	Name                  any
-	Password              any
-	Patterns              any
-	PrivateKey            any
-	SearchPaths           any
+	// A reference to the CA certificate resource used to validate this connection. (AI-inferred)
+	CaCertResourceId any
+	// Which Git client implementation is used to fetch this repository. (AI-inferred)
+	GitImplementation any
+	// The SSH host key used to verify this Git server's own identity. (AI-inferred)
+	HostKey any
+	// The algorithm `host_key` uses. (AI-inferred)
+	HostKeyAlgorithm any
+	// A human-readable label for this item. (AI-inferred)
+	Label any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The password credential used to authenticate. (AI-inferred)
+	Password any
+	// The pattern(s) this rule matches. (AI-inferred)
+	Patterns any
+	// The private key credential used to authenticate. (AI-inferred)
+	PrivateKey any
+	// The path(s) within the repository searched for configuration files. (AI-inferred)
+	SearchPaths any
+	// Whether the Git server's own host key must strictly match `host_key` before connecting. (AI-inferred)
 	StrictHostKeyChecking any
-	Uri                   any
-	Username              any
+	// A resource URI. (AI-inferred)
+	Uri any
+	// The username used to authenticate. (AI-inferred)
+	Username any
 }
 
 type ConfigurationServiceResource_Properties_Settings_GitProperty struct {

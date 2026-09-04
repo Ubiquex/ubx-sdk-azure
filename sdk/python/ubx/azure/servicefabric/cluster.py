@@ -13,8 +13,11 @@ class Cluster_Properties_ApplicationTypeVersionsCleanupPolicy:
 
 @dataclasses.dataclass
 class Cluster_Properties_AvailableClusterVersions:
+    # The Service Fabric runtime version this cluster runs. (AI-inferred)
     code_version: Any = None
+    # The operating system environment this cluster runs on, e.g. `Windows` or `Linux`. (AI-inferred)
     environment: Any = None
+    # When support for this cluster's own current code version ends, in UTC. (AI-inferred)
     support_expiry_utc: Any = None
 
 @dataclasses.dataclass
@@ -37,7 +40,9 @@ class Cluster_Properties_Certificate:
 
 @dataclasses.dataclass
 class Cluster_Properties_CertificateCommonNames_CommonNames:
+    # The Common Name of the certificate trusted for cluster authentication. (AI-inferred)
     certificate_common_name: Any = None
+    # The thumbprint of the CA that issued the cluster certificate. (AI-inferred)
     certificate_issuer_thumbprint: Any = None
 
 @dataclasses.dataclass
@@ -49,13 +54,18 @@ class Cluster_Properties_CertificateCommonNames:
 
 @dataclasses.dataclass
 class Cluster_Properties_ClientCertificateCommonNames:
+    # The Common Name of the certificate trusted for cluster authentication. (AI-inferred)
     certificate_common_name: Any = None
+    # The thumbprint of the CA that issued the cluster certificate. (AI-inferred)
     certificate_issuer_thumbprint: Any = None
+    # Whether this client certificate is granted administrative access. (AI-inferred)
     is_admin: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ClientCertificateThumbprints:
+    # A cryptographic thumbprint of this certificate. (AI-inferred)
     certificate_thumbprint: Any = None
+    # Whether this client certificate is granted administrative access. (AI-inferred)
     is_admin: Any = None
 
 @dataclasses.dataclass
@@ -75,54 +85,82 @@ class Cluster_Properties_DiagnosticsStorageAccountConfig:
 
 @dataclasses.dataclass
 class Cluster_Properties_FabricSettings_Parameters:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_FabricSettings:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The parameter(s) making up this configuration. (AI-inferred)
     parameters: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_NodeTypes_ApplicationPorts:
+    # The last port, inclusive, in this range. (AI-inferred)
     end_port: Any = None
+    # The first port, inclusive, in this range. (AI-inferred)
     start_port: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_NodeTypes:
+    # The port range reserved for applications deployed to this cluster. (AI-inferred)
     application_ports: Any = None
+    # The named resource capacity/capacities (e.g. memory, disk) this node type provides. (AI-inferred)
     capacities: Any = None
+    # The port clients use to connect to this cluster. (AI-inferred)
     client_connection_endpoint_port: Any = None
+    # The durability guarantee this node type provides, e.g. `Bronze`, `Silver`, or `Gold`. (AI-inferred)
     durability_level: Any = None
+    # The port range reserved for ephemeral (dynamic) connections on this cluster. (AI-inferred)
     ephemeral_ports: Any = None
+    # The port used for the cluster's own HTTP management endpoint. (AI-inferred)
     http_gateway_endpoint_port: Any = None
+    # Whether this is the primary node type for the cluster. (AI-inferred)
     is_primary: Any = None
+    # Whether this service is stateless, rather than stateful. (AI-inferred)
     is_stateless: Any = None
+    # Whether this node type is spread across multiple availability zones. (AI-inferred)
     multiple_availability_zones: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Custom key/value property(s) used to constrain where services are placed on this node type. (AI-inferred)
     placement_properties: Any = None
+    # The port used for the cluster's own reverse proxy. (AI-inferred)
     reverse_proxy_endpoint_port: Any = None
+    # The number of virtual machine instance(s) in this node type. (AI-inferred)
     vm_instance_count: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_Notifications_NotificationTargets:
+    # The channel this notification is delivered through. (AI-inferred)
     notification_channel: Any = None
+    # The recipient(s) this notification is delivered to. (AI-inferred)
     receivers: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_Notifications:
+    # Whether this feature is turned on. (AI-inferred)
     is_enabled: Any = None
+    # The category of event this notification setting applies to. (AI-inferred)
     notification_category: Any = None
+    # The minimum severity level that triggers this notification. (AI-inferred)
     notification_level: Any = None
+    # The recipient(s) this notification is delivered to. (AI-inferred)
     notification_targets: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicy:
+    # The maximum percentage of services permitted to become newly unhealthy during an upgrade. (AI-inferred)
     max_percent_delta_unhealthy_services: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies:
+    # The default health policy applied to a service type's own delta (upgrade-time) health evaluation. (AI-inferred)
     default_service_type_delta_health_policy: Any = None
+    # Per-service-type health policy override(s) for delta (upgrade-time) health evaluation. (AI-inferred)
     service_type_delta_health_policies: Any = None
 
 @dataclasses.dataclass
@@ -138,11 +176,14 @@ class Cluster_Properties_UpgradeDescription_DeltaHealthPolicy:
 
 @dataclasses.dataclass
 class Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicy:
+    # The maximum percentage of services permitted to be unhealthy at steady state. (AI-inferred)
     max_percent_unhealthy_services: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies:
+    # The default health policy applied to a service type's own steady-state health evaluation. (AI-inferred)
     default_service_type_health_policy: Any = None
+    # Per-service-type health policy override(s) for steady-state health evaluation. (AI-inferred)
     service_type_health_policies: Any = None
 
 @dataclasses.dataclass
@@ -179,6 +220,7 @@ class Cluster_Properties_UpgradeDescription:
 class Cluster_Properties:
     # The list of add-on features to enable in the cluster.
     add_on_features: Any = None
+    # Configuration for automatically removing unused application type versions. (AI-inferred)
     application_type_versions_cleanup_policy: Any = None
     # The Service Fabric runtime versions available for this cluster.
     available_cluster_versions: Any = None

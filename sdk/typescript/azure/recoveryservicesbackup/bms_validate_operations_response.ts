@@ -7,8 +7,11 @@ export interface BmsValidateOperationsResponse_Properties {
 }
 
 export interface BmsValidateOperationsResponse_ValidateOperationResponse_ValidationResults {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** Guidance for resolving this issue. (AI-inferred) */
   recommendations?: string[] | Computed<string[]>;
 }
 

@@ -4,55 +4,83 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter struct {
-	Id            any
-	Location      any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// The globally unique identifier of the associated network security perimeter. (AI-inferred)
 	PerimeterGuid any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes           any
-	Direction                 any
+	// The IP address range(s), in CIDR notation, this rule applies to. (AI-inferred)
+	AddressPrefixes any
+	// Whether this rule applies to inbound or outbound traffic. (AI-inferred)
+	Direction any
+	// The fully qualified domain name(s) this rule applies to. (AI-inferred)
 	FullyQualifiedDomainNames any
+	// The network security perimeter(s) this resource participates in. (AI-inferred)
 	NetworkSecurityPerimeters any
-	ServiceTags               any
-	Subscriptions             any
+	// The service tag(s) this rule matches. (AI-inferred)
+	ServiceTags any
+	// The subscription ID(s) this rule applies to. (AI-inferred)
+	Subscriptions any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile struct {
-	AccessRules        any
+	// The access rule(s) making up this network security perimeter profile. (AI-inferred)
+	AccessRules any
+	// The version of this profile's own access rule set. (AI-inferred)
 	AccessRulesVersion any
-	Name               any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
-	Description          any
-	IssueType            any
-	Severity             any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The category of issue detected. (AI-inferred)
+	IssueType any
+	// How serious this issue is. (AI-inferred)
+	Severity any
+	// The access rule(s) recommended to resolve this issue. (AI-inferred)
 	SuggestedAccessRules any
+	// The resource ID(s) recommended to resolve this issue. (AI-inferred)
 	SuggestedResourceIds any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation struct {
+	// Whether this network security perimeter is enforced or only auditing (learning mode). (AI-inferred)
 	AccessMode any
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties struct {
+	// A reference to the network security perimeter this applies to. (AI-inferred)
 	NetworkSecurityPerimeter any
-	Profile                  any
-	ProvisioningIssues       any
-	ProvisioningState        any
-	ResourceAssociation      any
+	// A reference to the network security perimeter profile this applies to. (AI-inferred)
+	Profile any
+	// Issue(s) detected while provisioning this network security perimeter association. (AI-inferred)
+	ProvisioningIssues any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The association linking this resource to a network security perimeter profile. (AI-inferred)
+	ResourceAssociation any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfigurationConfig struct {

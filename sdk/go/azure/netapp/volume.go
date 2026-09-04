@@ -20,10 +20,14 @@ type Volume_Properties_DataProtection_RansomwareProtection struct {
 }
 
 type Volume_Properties_DataProtection_Replication_DestinationReplications struct {
-	Region          any
+	// The Azure region this applies to. (AI-inferred)
+	Region any
+	// The kind of replication relationship this represents, e.g. cross-region or cross-zone. (AI-inferred)
 	ReplicationType any
-	ResourceId      any
-	Zone            any
+	// A reference to the resource this applies to. (AI-inferred)
+	ResourceId any
+	// The availability zone this resource is provisioned in. (AI-inferred)
+	Zone any
 }
 
 type Volume_Properties_DataProtection_Replication_RemotePath struct {
@@ -86,21 +90,36 @@ type Volume_Properties_DataProtection struct {
 }
 
 type Volume_Properties_ExportPolicy_Rules struct {
-	AllowedClients      any
-	ChownMode           any
-	Cifs                any
-	HasRootAccess       any
-	Kerberos5ReadOnly   any
-	Kerberos5ReadWrite  any
-	Kerberos5iReadOnly  any
+	// The client IP address range(s), in CIDR notation, permitted to access this export. (AI-inferred)
+	AllowedClients any
+	// Who is permitted to change file ownership on this volume, e.g. only root or any user. (AI-inferred)
+	ChownMode any
+	// Whether the SMB/CIFS protocol is enabled for this volume. (AI-inferred)
+	Cifs any
+	// Whether this client is granted root access. (AI-inferred)
+	HasRootAccess any
+	// Whether Kerberos v5 authenticated clients are granted read-only access. (AI-inferred)
+	Kerberos5ReadOnly any
+	// Whether Kerberos v5 authenticated clients are granted read-write access. (AI-inferred)
+	Kerberos5ReadWrite any
+	// Whether Kerberos v5 with integrity checking authenticated clients are granted read-only access. (AI-inferred)
+	Kerberos5iReadOnly any
+	// Whether Kerberos v5 with integrity checking authenticated clients are granted read-write access. (AI-inferred)
 	Kerberos5iReadWrite any
-	Kerberos5pReadOnly  any
+	// Whether Kerberos v5 with privacy protection authenticated clients are granted read-only access. (AI-inferred)
+	Kerberos5pReadOnly any
+	// Whether Kerberos v5 with privacy protection authenticated clients are granted read-write access. (AI-inferred)
 	Kerberos5pReadWrite any
-	Nfsv3               any
-	Nfsv41              any
-	RuleIndex           any
-	UnixReadOnly        any
-	UnixReadWrite       any
+	// Whether the NFSv3 protocol is enabled for this volume. (AI-inferred)
+	Nfsv3 any
+	// Whether the NFSv4.1 protocol is enabled for this volume. (AI-inferred)
+	Nfsv41 any
+	// This rule's own relative evaluation order. (AI-inferred)
+	RuleIndex any
+	// Whether UNIX clients are granted read-only access. (AI-inferred)
+	UnixReadOnly any
+	// Whether UNIX clients are granted read-write access. (AI-inferred)
+	UnixReadWrite any
 }
 
 type Volume_Properties_ExportPolicy struct {
@@ -109,14 +128,20 @@ type Volume_Properties_ExportPolicy struct {
 }
 
 type Volume_Properties_MountTargets struct {
-	FileSystemId  any
-	IpAddress     any
+	// A unique identifier for this volume's own file system. (AI-inferred)
+	FileSystemId any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// A unique identifier for this volume's own mount target. (AI-inferred)
 	MountTargetId any
+	// The fully qualified domain name of the SMB server hosting this volume. (AI-inferred)
 	SmbServerFqdn any
 }
 
 type Volume_Properties_PlacementRules struct {
-	Key   any
+	// The key of this metadata entry. (AI-inferred)
+	Key any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
@@ -229,6 +254,7 @@ type Volume_Properties struct {
 	T2Network any
 	// Maximum throughput in MiB/s that can be achieved by this volume and this will be accepted as input only for manual qosType volume
 	ThroughputMibps any
+	// The UNIX-style file permission bits applied to this volume's own root. (AI-inferred)
 	UnixPermissions any
 	// Maximum storage quota allowed for a file system in bytes. This is a soft quota used for alerting only. For regular volumes, valid values are in the range 50GiB to 100TiB. For large volumes, valid values are in the range 100TiB to 500TiB, and on an exceptional basis, from to 2400GiB to 2400TiB. Values expressed in bytes as multiples of 1 GiB.
 	UsageThreshold any

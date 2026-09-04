@@ -2,10 +2,15 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualwanHubRouteTable_Properties_Routes {
+  /** The category of destination this rule applies to. (AI-inferred) */
   destinationType?: string | Computed<string>;
+  /** The destination(s) this rule applies to. (AI-inferred) */
   destinations?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Where traffic matching this route is sent next. (AI-inferred) */
   nextHop?: string | Computed<string>;
+  /** The kind of next hop this route uses, e.g. `VirtualAppliance`, `VnetLocal`, `Internet`, or `None`. (AI-inferred) */
   nextHopType?: string | Computed<string>;
 }
 

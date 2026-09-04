@@ -26,13 +26,18 @@ type CustomizedAcceleratorResource_Properties_GitRepository struct {
 }
 
 type CustomizedAcceleratorResource_Properties struct {
+	// The tag(s) categorizing this application accelerator. (AI-inferred)
 	AcceleratorTags any
 	// Type of the customized accelerator.
 	AcceleratorType any
-	Description     any
-	DisplayName     any
-	GitRepository   any
-	IconUrl         any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// The Git repository this configuration is sourced from. (AI-inferred)
+	GitRepository any
+	// A URL pointing to this resource's own icon image. (AI-inferred)
+	IconUrl any
 	// Imports references all imports that this accelerator/fragment depends upon.
 	Imports any
 	// State of the customized accelerator.

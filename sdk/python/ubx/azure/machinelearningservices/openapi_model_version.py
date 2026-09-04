@@ -8,11 +8,14 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiModelVersion_Properties_Datasets:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiModelVersion_Properties_Flavors:
+    # The literal data payload of this field. (AI-inferred)
     data: Any = None
 
 @dataclasses.dataclass

@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DbOpenapiDatabaseAccountGetResults_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -50,6 +52,7 @@ class DbOpenapiDatabaseAccountGetResults_Properties_BackupPolicy:
 
 @dataclasses.dataclass
 class DbOpenapiDatabaseAccountGetResults_Properties_Capabilities:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
@@ -68,10 +71,15 @@ class DbOpenapiDatabaseAccountGetResults_Properties_ConsistencyPolicy:
 
 @dataclasses.dataclass
 class DbOpenapiDatabaseAccountGetResults_Properties_Cors:
+    # The request header(s) the CORS policy allows. (AI-inferred)
     allowed_headers: Any = None
+    # The HTTP method(s) the CORS policy allows. (AI-inferred)
     allowed_methods: Any = None
+    # The origin(s) the CORS policy allows. (AI-inferred)
     allowed_origins: Any = None
+    # The response header(s) the CORS policy exposes to the calling origin. (AI-inferred)
     exposed_headers: Any = None
+    # How long, in seconds, the CORS preflight response may be cached by the browser. (AI-inferred)
     max_age_in_seconds: Any = None
 
 @dataclasses.dataclass
@@ -82,6 +90,7 @@ class DbOpenapiDatabaseAccountGetResults_Properties_FailoverPolicies:
 
 @dataclasses.dataclass
 class DbOpenapiDatabaseAccountGetResults_Properties_IpRules:
+    # An IP address or address range, in CIDR notation, permitted to access this account. (AI-inferred)
     ip_address_or_range: Any = None
 
 @dataclasses.dataclass
@@ -102,11 +111,17 @@ class DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata:
 
 @dataclasses.dataclass
 class DbOpenapiDatabaseAccountGetResults_Properties_Locations:
+    # Output only. The URI used to connect to this account's own document API. (AI-inferred)
     document_endpoint: Any = None
+    # The order in which this region is failed over to during a manual failover, `0` being the write region. (AI-inferred)
     failover_priority: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # Whether this region is provisioned as zone-redundant. (AI-inferred)
     is_zone_redundant: Any = None
+    # The Azure region this configuration applies to. (AI-inferred)
     location_name: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
@@ -132,12 +147,16 @@ class DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections:
 
 @dataclasses.dataclass
 class DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_DatabasesToRestore:
+    # The collection name(s) this applies to. (AI-inferred)
     collection_names: Any = None
+    # The name of the database this applies to. (AI-inferred)
     database_name: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_GremlinDatabasesToRestore:
+    # The name of the database this applies to. (AI-inferred)
     database_name: Any = None
+    # The graph name(s) this applies to. (AI-inferred)
     graph_names: Any = None
 
 @dataclasses.dataclass
@@ -159,13 +178,16 @@ class DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters:
 
 @dataclasses.dataclass
 class DbOpenapiDatabaseAccountGetResults_Properties_VirtualNetworkRules:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # Whether this rule is accepted even if the referenced subnet doesn't yet have the required service endpoint enabled. (AI-inferred)
     ignore_missing_vnet_service_endpoint: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiDatabaseAccountGetResults_Properties:
     # Analytical storage specific properties.
     analytical_storage_configuration: Any = None
+    # Configuration specific to this account's own enabled API surface (e.g. MongoDB server version). (AI-inferred)
     api_properties: Any = None
     # The object representing the policy for taking backups on an account.
     backup_policy: Any = None

@@ -4,17 +4,23 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges_Resource struct {
+	// A reference to the collection this applies to. (AI-inferred)
 	Collection any
-	Db         any
+	// A reference to the database this applies to. (AI-inferred)
+	Db any
 }
 
 type DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges struct {
-	Actions  any
+	// The action(s) this permission or rule applies to. (AI-inferred)
+	Actions any
+	// The resource this permission applies to. (AI-inferred)
 	Resource any
 }
 
 type DbOpenapiMongoRoleDefinitionGetResults_Properties_Roles struct {
-	Db   any
+	// A reference to the database this applies to. (AI-inferred)
+	Db any
+	// The role granted by this assignment. (AI-inferred)
 	Role any
 }
 

@@ -9,6 +9,7 @@ type WebtestsWebTest_Properties_Configuration struct {
 }
 
 type WebtestsWebTest_Properties_Locations struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 

@@ -30,12 +30,17 @@ class CustomizedAcceleratorResource_Properties_GitRepository:
 
 @dataclasses.dataclass
 class CustomizedAcceleratorResource_Properties:
+    # The tag(s) categorizing this application accelerator. (AI-inferred)
     accelerator_tags: Any = None
     # Type of the customized accelerator.
     accelerator_type: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # The Git repository this configuration is sourced from. (AI-inferred)
     git_repository: Any = None
+    # A URL pointing to this resource's own icon image. (AI-inferred)
     icon_url: Any = None
     # Imports references all imports that this accelerator/fragment depends upon.
     imports: Any = None

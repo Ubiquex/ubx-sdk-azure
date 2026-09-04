@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualwanRoutingIntent_Properties_RoutingPolicies {
+  /** The destination(s) this rule applies to. (AI-inferred) */
   destinations?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Where traffic matching this route is sent next. (AI-inferred) */
   nextHop?: string | Computed<string>;
 }
 

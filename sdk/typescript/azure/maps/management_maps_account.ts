@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ManagementMapsAccount_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,6 +20,7 @@ export interface ManagementMapsAccount_Identity {
 }
 
 export interface ManagementMapsAccount_Properties_Cors_CorsRules {
+  /** The origin(s) this CORS rule permits requests from. (AI-inferred) */
   allowedOrigins?: string[] | Computed<string[]>;
 }
 
@@ -50,7 +53,9 @@ export interface ManagementMapsAccount_Properties_Encryption {
 }
 
 export interface ManagementMapsAccount_Properties_LinkedResources {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** A caller-chosen name uniquely identifying this linked resource within the account. (AI-inferred) */
   uniqueName?: string | Computed<string>;
 }
 

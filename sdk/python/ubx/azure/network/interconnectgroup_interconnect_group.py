@@ -17,17 +17,23 @@ class InterconnectgroupInterconnectGroup_Properties_SubgroupProfile:
 
 @dataclasses.dataclass
 class InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlock:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties:
+    # The interconnect address block allocated to this subgroup. (AI-inferred)
     interconnect_block: Any = None
+    # A unique identifier for this subgroup within its own containing interconnect group. (AI-inferred)
     internal_subgroup_id: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The virtual machine(s) belonging to this subgroup. (AI-inferred)
     virtual_machines: Any = None
 
 @dataclasses.dataclass
 class InterconnectgroupInterconnectGroup_Properties_Subgroups:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

@@ -34,7 +34,9 @@ class EventSubscription_Properties_DeliveryWithResourceIdentity:
 
 @dataclasses.dataclass
 class EventSubscription_Properties_Filter_AdvancedFilters:
+    # The key of this enrichment or attribute. (AI-inferred)
     key: Any = None
+    # How this condition's own operands are compared. (AI-inferred)
     operator_type: Any = None
 
 @dataclasses.dataclass

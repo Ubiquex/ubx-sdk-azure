@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiConnectionType_Properties_FieldDefinitions {
+  /** Whether this variable's own value is encrypted at rest. (AI-inferred) */
   isEncrypted?: boolean | Computed<boolean>;
+  /** Whether supplying this parameter is optional. (AI-inferred) */
   isOptional?: boolean | Computed<boolean>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

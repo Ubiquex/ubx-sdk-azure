@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiBillingRequest_Properties_CreatedBy:
+    # The Microsoft Entra ID object identifier this applies to. (AI-inferred)
     object_id: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
+    # The User Principal Name this applies to. (AI-inferred)
     upn: Any = None
 
 @dataclasses.dataclass

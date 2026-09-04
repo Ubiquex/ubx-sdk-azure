@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class LocksManagementLockObject_Properties_Owners:
+    # The application (service principal) ID of this lock's own owner. (AI-inferred)
     application_id: Any = None
 
 @dataclasses.dataclass

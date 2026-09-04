@@ -8,9 +8,13 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiCustomerPolicy_Properties_Policies:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The category of policy this represents. (AI-inferred)
     policy_type: Any = None
+    # What this configuration's own scope covers. (AI-inferred)
     scope: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

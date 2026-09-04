@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class JobResource_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -29,7 +31,9 @@ class JobResource_Properties_DeliveryInfo:
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_ContactDetails_NotificationPreference:
+    # Whether notification email(s) are sent for this order's own status updates. (AI-inferred)
     send_notification: Any = None
+    # The name of this processing stage. (AI-inferred)
     stage_name: Any = None
 
 @dataclasses.dataclass
@@ -49,66 +53,94 @@ class JobResource_Properties_Details_ContactDetails:
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_CopyLogDetails:
+    # The category of copy log this represents. (AI-inferred)
     copy_log_details_type: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_DataExportDetails_AccountDetails:
+    # The kind of storage account this transfer targets. (AI-inferred)
     data_account_type: Any = None
+    # The password used to access this device's own shares. (AI-inferred)
     share_password: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails_Include:
+    # The kind of storage account this transfer targets. (AI-inferred)
     data_account_type: Any = None
+    # Whether every blob in the account is transferred, rather than a filtered subset. (AI-inferred)
     transfer_all_blobs: Any = None
+    # Whether every file in the account is transferred, rather than a filtered subset. (AI-inferred)
     transfer_all_files: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails:
+    # Whether matching content is included in, rather than excluded from, this transfer. (AI-inferred)
     include: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_AzureFileFilterDetails:
+    # The specific file path(s) included in this transfer. (AI-inferred)
     file_path_list: Any = None
+    # The file name prefix(es) included in this transfer. (AI-inferred)
     file_prefix_list: Any = None
+    # The specific file share(s) included in this transfer. (AI-inferred)
     file_share_list: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_BlobFilterDetails:
+    # The specific blob path(s) included in this transfer. (AI-inferred)
     blob_path_list: Any = None
+    # The blob name prefix(es) included in this transfer. (AI-inferred)
     blob_prefix_list: Any = None
+    # The specific container(s) included in this transfer. (AI-inferred)
     container_list: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_FilterFileDetails:
+    # The path to the filter file restricting this transfer's own scope. (AI-inferred)
     filter_file_path: Any = None
+    # The format of the filter file, e.g. `AzureFile` or `BlockBlob`. (AI-inferred)
     filter_file_type: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include:
+    # Filter(s) restricting which Azure Files content is transferred. (AI-inferred)
     azure_file_filter_details: Any = None
+    # Filter(s) restricting which blob content is transferred. (AI-inferred)
     blob_filter_details: Any = None
+    # The kind of storage account this transfer targets. (AI-inferred)
     data_account_type: Any = None
+    # Detail about the filter file restricting this transfer's own scope. (AI-inferred)
     filter_file_details: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails:
+    # Whether matching content is included in, rather than excluded from, this transfer. (AI-inferred)
     include: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_DataExportDetails_TransferConfiguration:
+    # Configuration for transferring every item, rather than a filtered subset. (AI-inferred)
     transfer_all_details: Any = None
+    # Whether this transfer includes all data or only a filtered subset. (AI-inferred)
     transfer_configuration_type: Any = None
+    # Filter(s) restricting which data is included in this transfer. (AI-inferred)
     transfer_filter_details: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_DataExportDetails:
+    # Detail about the destination storage account this order transfers data to. (AI-inferred)
     account_details: Any = None
+    # How much diagnostic log detail is collected for this order. (AI-inferred)
     log_collection_level: Any = None
+    # Configuration controlling which data is included in this transfer. (AI-inferred)
     transfer_configuration: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_DataImportDetails:
+    # Detail about the destination storage account this order transfers data to. (AI-inferred)
     account_details: Any = None
+    # How much diagnostic log detail is collected for this order. (AI-inferred)
     log_collection_level: Any = None
 
 @dataclasses.dataclass
@@ -140,19 +172,30 @@ class JobResource_Properties_Details_DeviceErasureDetails:
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_JobStages_DelayInformation:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A machine-readable error code. (AI-inferred)
     error_code: Any = None
+    # When this issue was resolved. (AI-inferred)
     resolution_time: Any = None
+    # When this event or window started. (AI-inferred)
     start_time: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class JobResource_Properties_Details_JobStages:
+    # Detail about a delay affecting this order. (AI-inferred)
     delay_information: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # Detail about this order's own current processing stage. (AI-inferred)
     job_stage_details: Any = None
+    # The name of this processing stage. (AI-inferred)
     stage_name: Any = None
+    # The current status of this processing stage. (AI-inferred)
     stage_status: Any = None
+    # When this processing stage was reached. (AI-inferred)
     stage_time: Any = None
 
 @dataclasses.dataclass
@@ -306,7 +349,9 @@ class JobResource_Properties_Details:
 
 @dataclasses.dataclass
 class JobResource_Properties_Error_AdditionalInfo:
+    # Additional detail about this result. (AI-inferred)
     info: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

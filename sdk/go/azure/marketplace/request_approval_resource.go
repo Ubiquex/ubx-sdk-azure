@@ -4,11 +4,17 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RequestApprovalResource_Properties_PlansDetails struct {
-	Justification    any
-	PlanId           any
-	RequestDate      any
-	Status           any
-	SubscriptionId   any
+	// The stated reason supporting this request. (AI-inferred)
+	Justification any
+	// A reference to the specific plan this applies to. (AI-inferred)
+	PlanId any
+	// When this request was submitted. (AI-inferred)
+	RequestDate any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The identifier of the associated Azure subscription. (AI-inferred)
+	SubscriptionId any
+	// The name of the associated Azure subscription. (AI-inferred)
 	SubscriptionName any
 }
 

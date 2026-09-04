@@ -8,39 +8,64 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_DbDetails:
+    # The number of change(s) applied so far. (AI-inferred)
     applied_changes: Any = None
+    # The number of delete operation(s) captured by change data capture. (AI-inferred)
     cdc_delete_counter: Any = None
+    # The number of insert operation(s) captured by change data capture. (AI-inferred)
     cdc_insert_counter: Any = None
+    # The number of update operation(s) captured by change data capture. (AI-inferred)
     cdc_update_counter: Any = None
+    # The name of the database this applies to. (AI-inferred)
     database_name: Any = None
+    # When this migration ended. (AI-inferred)
     ended_on: Any = None
+    # The number of table(s) that completed the full-load phase. (AI-inferred)
     full_load_completed_tables: Any = None
+    # The number of table(s) that errored during the full-load phase. (AI-inferred)
     full_load_errored_tables: Any = None
+    # The number of table(s) currently being loaded in the full-load phase. (AI-inferred)
     full_load_loading_tables: Any = None
+    # The number of table(s) still queued for the full-load phase. (AI-inferred)
     full_load_queued_tables: Any = None
+    # The number of change(s) received so far, awaiting application. (AI-inferred)
     incoming_changes: Any = None
+    # The observed replication lag. (AI-inferred)
     latency: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # The specific migration action being performed. (AI-inferred)
     migration_operation: Any = None
+    # The current status of this migration. (AI-inferred)
     migration_state: Any = None
+    # When this migration started. (AI-inferred)
     started_on: Any = None
 
 @dataclasses.dataclass
 class OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary_Messages:
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # The current status of this resource. (AI-inferred)
     state: Any = None
 
 @dataclasses.dataclass
 class OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary:
+    # The message(s) associated with this result. (AI-inferred)
     messages: Any = None
+    # The current status of this resource. (AI-inferred)
     state: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails:
+    # The name of the database this applies to. (AI-inferred)
     database_name: Any = None
+    # When this migration ended. (AI-inferred)
     ended_on: Any = None
+    # When this migration started. (AI-inferred)
     started_on: Any = None
+    # A short, human-readable summary of this result. (AI-inferred)
     summary: Any = None
 
 @dataclasses.dataclass
@@ -60,6 +85,7 @@ class OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_Validatio
 class OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails:
     # Substate of migration.
     current_sub_state: Any = None
+    # Detail about this specific database's own migration progress. (AI-inferred)
     db_details: Any = None
     # Details for the validation for migration.
     validation_details: Any = None

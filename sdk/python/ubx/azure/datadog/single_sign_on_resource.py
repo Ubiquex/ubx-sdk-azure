@@ -25,10 +25,12 @@ _SingleSignOnResource_PropertiesFields = {
 
 @dataclasses.dataclass
 class SingleSignOnResourceConfig:
+    # This Datadog single sign-on integration's own real configuration and status. (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class SingleSignOnResourceAttrs:
+    # This Datadog single sign-on integration's own real configuration and status. (AI-inferred)
     properties: Any = None
 
 SingleSignOnResource = ubx.ResourceBinding(

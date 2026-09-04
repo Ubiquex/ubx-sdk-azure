@@ -40,6 +40,7 @@ export interface OpenapiAfdoriginGroup_Properties_LoadBalancingSettings {
 export interface OpenapiAfdoriginGroup_Properties {
   /** The JSON object that contains the properties of the origin authentication settings. */
   authentication?: OpenapiAfdoriginGroup_Properties_Authentication | Computed<OpenapiAfdoriginGroup_Properties_Authentication>;
+  /** The current deployment status of this configuration. (AI-inferred) */
   deploymentStatus?: string | Computed<string>;
   /** The JSON object that contains the properties to send health probes to origin. */
   healthProbeSettings?: OpenapiAfdoriginGroup_Properties_HealthProbeSettings | Computed<OpenapiAfdoriginGroup_Properties_HealthProbeSettings>;

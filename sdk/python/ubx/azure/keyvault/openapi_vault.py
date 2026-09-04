@@ -8,25 +8,36 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiVault_Properties_AccessPolicies_Permissions:
+    # The permission(s) this access policy grants over certificates. (AI-inferred)
     certificates: Any = None
+    # The permission(s) this access policy grants over keys. (AI-inferred)
     keys: Any = None
+    # The permission(s) this access policy grants over secrets. (AI-inferred)
     secrets: Any = None
+    # The permission(s) this access policy grants over managed storage accounts. (AI-inferred)
     storage: Any = None
 
 @dataclasses.dataclass
 class OpenapiVault_Properties_AccessPolicies:
+    # The application ID this access policy applies to. (AI-inferred)
     application_id: Any = None
+    # The Microsoft Entra ID object identifier this access policy applies to. (AI-inferred)
     object_id: Any = None
+    # The permission(s) this access policy grants. (AI-inferred)
     permissions: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiVault_Properties_NetworkAcls_IpRules:
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiVault_Properties_NetworkAcls_VirtualNetworkRules:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # Whether this rule is accepted even if the referenced subnet doesn't yet have the required service endpoint enabled. (AI-inferred)
     ignore_missing_vnet_service_endpoint: Any = None
 
 @dataclasses.dataclass
@@ -42,24 +53,34 @@ class OpenapiVault_Properties_NetworkAcls:
 
 @dataclasses.dataclass
 class OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class OpenapiVault_Properties_PrivateEndpointConnections_Properties:
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class OpenapiVault_Properties_PrivateEndpointConnections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiSchedule_Properties_AdvancedSchedule_MonthlyOccurrences {
+  /** The day-of-week or day-of-month component of this schedule. (AI-inferred) */
   day?: string | Computed<string>;
+  /** Which specific occurrence of the matching day within the schedule's own recurrence this applies to. (AI-inferred) */
   occurrence?: number | Computed<number>;
 }
 

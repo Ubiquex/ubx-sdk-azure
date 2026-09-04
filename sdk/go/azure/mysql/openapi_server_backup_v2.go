@@ -6,7 +6,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiServerBackupV2_Properties struct {
 	// Backup name
 	BackupNameV2 any
-	BackupType   any
+	// The category of backup this represents, e.g. full or differential. (AI-inferred)
+	BackupType any
 	// Backup completed time (ISO8601 format).
 	CompletedTime any
 	// The current provisioning state.

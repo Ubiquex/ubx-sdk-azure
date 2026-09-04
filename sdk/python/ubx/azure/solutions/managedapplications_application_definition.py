@@ -8,13 +8,18 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ManagedapplicationsApplicationDefinition_Properties_Artifacts:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # A resource URI. (AI-inferred)
     uri: Any = None
 
 @dataclasses.dataclass
 class ManagedapplicationsApplicationDefinition_Properties_Authorizations:
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
+    # A reference to the role definition granted to the publisher for managing this application. (AI-inferred)
     role_definition_id: Any = None
 
 @dataclasses.dataclass
@@ -36,6 +41,7 @@ class ManagedapplicationsApplicationDefinition_Properties_ManagementPolicy:
 
 @dataclasses.dataclass
 class ManagedapplicationsApplicationDefinition_Properties_NotificationPolicy_NotificationEndpoints:
+    # A resource URI. (AI-inferred)
     uri: Any = None
 
 @dataclasses.dataclass
@@ -45,8 +51,11 @@ class ManagedapplicationsApplicationDefinition_Properties_NotificationPolicy:
 
 @dataclasses.dataclass
 class ManagedapplicationsApplicationDefinition_Properties_Policies:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The parameter(s) making up this configuration. (AI-inferred)
     parameters: Any = None
+    # A reference to the policy definition this applies to. (AI-inferred)
     policy_definition_id: Any = None
 
 @dataclasses.dataclass

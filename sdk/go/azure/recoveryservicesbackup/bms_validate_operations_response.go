@@ -9,8 +9,11 @@ type BmsValidateOperationsResponse_Properties struct {
 }
 
 type BmsValidateOperationsResponse_ValidateOperationResponse_ValidationResults struct {
-	Code            any
-	Message         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// Guidance for resolving this issue. (AI-inferred)
 	Recommendations any
 }
 

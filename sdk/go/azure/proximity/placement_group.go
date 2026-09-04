@@ -4,11 +4,15 @@ package proximity
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PlacementGroup_Properties_AvailabilitySets_ColocationStatus struct {
+	// The machine-readable status code for the colocation status of the availability set within the proximity placement group. (AI-inferred)
 	Code          any
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of the colocation status, indicating whether the message is informational (Info), a warning (Warning), or an error (Error). (AI-inferred)
+	Level any
+	// A human-readable message providing details about the colocation status of the availability set. (AI-inferred)
+	Message any
+	// The time (in UTC) when the colocation status was last observed, typically in ISO 8601 format. (AI-inferred)
+	Time any
 }
 
 type PlacementGroup_Properties_AvailabilitySets struct {

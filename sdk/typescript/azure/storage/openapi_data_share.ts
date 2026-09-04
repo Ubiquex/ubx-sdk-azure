@@ -2,13 +2,18 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiDataShare_Properties_AccessPolicies {
+  /** The access permission granted, e.g. read or write. (AI-inferred) */
   permission?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
 }
 
 export interface OpenapiDataShare_Properties_Assets {
+  /** The path to this asset within the associated repository. (AI-inferred) */
   assetPath?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
 }
 

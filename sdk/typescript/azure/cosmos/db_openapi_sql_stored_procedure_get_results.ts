@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DbOpenapiSqlStoredProcedureGetResults_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -23,6 +25,7 @@ export interface DbOpenapiSqlStoredProcedureGetResults_Properties_Options_Autosc
 }
 
 export interface DbOpenapiSqlStoredProcedureGetResults_Properties_Options {
+  /** Configuration for automatically scaling throughput within a defined maximum. (AI-inferred) */
   autoscaleSettings?: DbOpenapiSqlStoredProcedureGetResults_Properties_Options_AutoscaleSettings | Computed<DbOpenapiSqlStoredProcedureGetResults_Properties_Options_AutoscaleSettings>;
   /** Request Units per second. For example, "throughput": 10000. */
   throughput?: number | Computed<number>;

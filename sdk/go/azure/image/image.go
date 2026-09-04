@@ -16,6 +16,7 @@ type Image_Properties_SourceVirtualMachine struct {
 }
 
 type Image_Properties_StorageProfile_DataDisks struct {
+	// The logical unit number (LUN) for the data disk, which uniquely identifies the disk within the virtual machine. (AI-inferred)
 	Lun any
 }
 
@@ -39,7 +40,8 @@ type Image_Properties struct {
 	// Specifies the HyperVGeneration Type
 	HyperVgeneration any
 	// The provisioning state.
-	ProvisioningState    any
+	ProvisioningState any
+	// The virtual machine from which this image is created. (AI-inferred)
 	SourceVirtualMachine any
 	// Describes a storage profile.
 	StorageProfile any

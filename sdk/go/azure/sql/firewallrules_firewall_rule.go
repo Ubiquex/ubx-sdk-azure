@@ -11,6 +11,7 @@ type FirewallrulesFirewallRule_Properties struct {
 }
 
 type FirewallrulesFirewallRule_Values struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
@@ -28,13 +29,15 @@ var FirewallrulesFirewallRule_ValuesFields = ubx.FieldMap{
 }
 
 type FirewallrulesFirewallRuleConfig struct {
+	// The firewall rule(s) making up this collection. (AI-inferred)
 	Values any
 }
 
 type FirewallrulesFirewallRuleAttrs struct {
 	// The properties of a server firewall rule.
 	Properties any
-	Values     any
+	// The firewall rule(s) making up this collection. (AI-inferred)
+	Values any
 }
 
 var FirewallrulesFirewallRule = ubx.ResourceBinding{

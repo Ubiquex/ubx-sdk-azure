@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiFeaturestoreEntityVersion_Properties_IndexColumns:
+    # The name of this column. (AI-inferred)
     column_name: Any = None
+    # The data type of this asset or column. (AI-inferred)
     data_type: Any = None
 
 @dataclasses.dataclass

@@ -13,26 +13,37 @@ type ServiceRecoveryPlan_Properties_CurrentScenario struct {
 }
 
 type ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetails struct {
+	// The specific subtype this resource is, distinguishing it within its own broader category. (AI-inferred)
 	InstanceType any
 }
 
 type ServiceRecoveryPlan_Properties_Groups_EndGroupActions struct {
-	ActionName         any
-	CustomDetails      any
+	// The name of this recovery plan action. (AI-inferred)
+	ActionName any
+	// Additional, type-specific detail about this task. (AI-inferred)
+	CustomDetails any
+	// The direction(s) (e.g. primary-to-recovery) this operation supports failing over in. (AI-inferred)
 	FailoverDirections any
-	FailoverTypes      any
+	// The failover type(s) (e.g. planned, unplanned, test) this operation supports. (AI-inferred)
+	FailoverTypes any
 }
 
 type ServiceRecoveryPlan_Properties_Groups_ReplicationProtectedItems struct {
-	Id               any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// A reference to the virtual machine this applies to. (AI-inferred)
 	VirtualMachineId any
 }
 
 type ServiceRecoveryPlan_Properties_Groups struct {
-	EndGroupActions           any
-	GroupType                 any
+	// The action(s) run at the end of this recovery plan group. (AI-inferred)
+	EndGroupActions any
+	// The category of recovery plan group this represents. (AI-inferred)
+	GroupType any
+	// The protected item(s) this applies to. (AI-inferred)
 	ReplicationProtectedItems any
-	StartGroupActions         any
+	// The action(s) run at the start of this recovery plan group. (AI-inferred)
+	StartGroupActions any
 }
 
 type ServiceRecoveryPlan_Properties struct {

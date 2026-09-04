@@ -8,12 +8,16 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class SwaggerNginxDeployment_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxDeployment_Identity:
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
     # Identity Type
     type: Any = None
@@ -27,7 +31,9 @@ class SwaggerNginxDeployment_Properties_AutoUpgradeProfile:
 
 @dataclasses.dataclass
 class SwaggerNginxDeployment_Properties_Logging_StorageAccount:
+    # The name of the associated storage account. (AI-inferred)
     account_name: Any = None
+    # The name of the storage container this applies to. (AI-inferred)
     container_name: Any = None
 
 @dataclasses.dataclass
@@ -37,21 +43,28 @@ class SwaggerNginxDeployment_Properties_Logging:
 
 @dataclasses.dataclass
 class SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PrivateIpaddresses:
+    # The private (internal) IP address assigned to this resource. (AI-inferred)
     private_ipaddress: Any = None
+    # Whether the private IP address is statically assigned or dynamically allocated. (AI-inferred)
     private_ipallocation_method: Any = None
+    # A reference to the subnet this resource is deployed into. (AI-inferred)
     subnet_id: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PublicIpaddresses:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration:
+    # The private (internal) IP address(es) assigned to this resource. (AI-inferred)
     private_ipaddresses: Any = None
+    # The public IP address(es) assigned to this resource. (AI-inferred)
     public_ipaddresses: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxDeployment_Properties_NetworkProfile_NetworkInterfaceConfiguration:
+    # A reference to the subnet this resource is deployed into. (AI-inferred)
     subnet_id: Any = None
 
 @dataclasses.dataclass
@@ -102,22 +115,28 @@ class SwaggerNginxDeployment_Properties_NginxAppProtect:
 
 @dataclasses.dataclass
 class SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles_Capacity:
+    # The maximum value allowed. (AI-inferred)
     max: Any = None
+    # The minimum value allowed. (AI-inferred)
     min: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles:
+    # The number of instance(s) this resource is provisioned with. (AI-inferred)
     capacity: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings:
+    # The scaling profile(s) available for this deployment. (AI-inferred)
     profiles: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxDeployment_Properties_ScalingProperties:
     # The settings for enabling automatic scaling of the deployment. If this field is specified, 'scale.capacity' must be empty.
     auto_scale_settings: Any = None
+    # The number of instance(s) this resource is provisioned with. (AI-inferred)
     capacity: Any = None
 
 @dataclasses.dataclass
@@ -131,6 +150,7 @@ class SwaggerNginxDeployment_Properties:
     auto_upgrade_profile: Any = None
     # Dataplane API endpoint for the caller to update the NGINX state of the deployment.
     dataplane_api_endpoint: Any = None
+    # Whether diagnostic data collection is enabled for this deployment. (AI-inferred)
     enable_diagnostics_support: Any = None
     # The IP address of the deployment.
     ip_address: Any = None
@@ -140,6 +160,7 @@ class SwaggerNginxDeployment_Properties:
     network_profile: Any = None
     # Settings for NGINX App Protect (NAP)
     nginx_app_protect: Any = None
+    # The NGINX version this deployment runs. (AI-inferred)
     nginx_version: Any = None
     # Provisioning State
     provisioning_state: Any = None

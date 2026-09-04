@@ -27,6 +27,7 @@ class GrafanaManagedPrivateEndpointModel_Properties:
     private_link_service_private_ip: Any = None
     # The URL of the data store behind the private link service. It would be the URL in the Grafana data source configuration page without the protocol and port.
     private_link_service_url: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
     # User input request message of the managed private endpoint.
     request_message: Any = None

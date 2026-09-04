@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiDatabaseConnection_Properties_ConfigurationFiles {
+  /** The literal content of this resource. (AI-inferred) */
   contents?: string | Computed<string>;
+  /** The name of this file. (AI-inferred) */
   fileName?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class WorkloadNetworkSegment_Properties_PortVif:
+    # The name of this physical network port. (AI-inferred)
     port_name: Any = None
 
 @dataclasses.dataclass

@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiAccessConnector_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -56,6 +58,7 @@ class OpenapiAccessConnectorConfig:
     identity: Any = None
     # The geo-location where the resource lives
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # Resource tags.
     tags: Any = None
@@ -66,6 +69,7 @@ class OpenapiAccessConnectorAttrs:
     identity: Any = None
     # The geo-location where the resource lives
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # Resource tags.
     tags: Any = None

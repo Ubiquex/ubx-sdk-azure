@@ -11,14 +11,19 @@ type ManagementOpenapiBudget_Properties_CurrentSpend struct {
 }
 
 type ManagementOpenapiBudget_Properties_Filter_And_Dimensions struct {
-	Name     any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// How this condition's own operands are compared. (AI-inferred)
 	Operator any
-	Values   any
+	// The value(s) making up this field. (AI-inferred)
+	Values any
 }
 
 type ManagementOpenapiBudget_Properties_Filter_And struct {
+	// The dimension(s) this data is grouped or filtered by. (AI-inferred)
 	Dimensions any
-	Tags       any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
+	Tags any
 }
 
 type ManagementOpenapiBudget_Properties_Filter struct {
@@ -31,14 +36,23 @@ type ManagementOpenapiBudget_Properties_Filter struct {
 }
 
 type ManagementOpenapiBudget_Properties_Notifications struct {
+	// The email address(es) notified for this alert. (AI-inferred)
 	ContactEmails any
+	// The Action Group(s) notified for this alert. (AI-inferred)
 	ContactGroups any
-	ContactRoles  any
-	Enabled       any
-	Frequency     any
-	Locale        any
-	Operator      any
-	Threshold     any
+	// The Azure RBAC role(s) whose own members are notified for this alert. (AI-inferred)
+	ContactRoles any
+	// Whether this feature is turned on. (AI-inferred)
+	Enabled any
+	// How often this schedule recurs. (AI-inferred)
+	Frequency any
+	// The locale this content is expressed in. (AI-inferred)
+	Locale any
+	// How this condition's own operands are compared. (AI-inferred)
+	Operator any
+	// The value that must be crossed for this condition to trigger. (AI-inferred)
+	Threshold any
+	// The kind of threshold this represents, e.g. actual or forecasted cost. (AI-inferred)
 	ThresholdType any
 }
 

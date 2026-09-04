@@ -28,7 +28,9 @@ export interface EventSubscription_Properties_DeliveryWithResourceIdentity {
 }
 
 export interface EventSubscription_Properties_Filter_AdvancedFilters {
+  /** The key of this enrichment or attribute. (AI-inferred) */
   key?: string | Computed<string>;
+  /** How this condition's own operands are compared. (AI-inferred) */
   operatorType?: string | Computed<string>;
 }
 

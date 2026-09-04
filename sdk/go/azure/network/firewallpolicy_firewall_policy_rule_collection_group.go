@@ -4,8 +4,11 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties_RuleCollections struct {
-	Name               any
-	Priority           any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
+	Priority any
+	// The category of rule collection this represents. (AI-inferred)
 	RuleCollectionType any
 }
 

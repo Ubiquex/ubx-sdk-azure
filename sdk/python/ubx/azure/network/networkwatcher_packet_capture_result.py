@@ -17,10 +17,15 @@ class NetworkwatcherPacketCaptureResult_Properties_CaptureSettings:
 
 @dataclasses.dataclass
 class NetworkwatcherPacketCaptureResult_Properties_Filters:
+    # The source IP address this test originates from. (AI-inferred)
     local_ipaddress: Any = None
+    # The source port this test originates from. (AI-inferred)
     local_port: Any = None
+    # The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
     protocol: Any = None
+    # The destination IP address this test targets. (AI-inferred)
     remote_ipaddress: Any = None
+    # The destination port this test targets. (AI-inferred)
     remote_port: Any = None
 
 @dataclasses.dataclass

@@ -23,7 +23,8 @@ type GrafanaManagedPrivateEndpointModel_Properties struct {
 	PrivateLinkServicePrivateIp any
 	// The URL of the data store behind the private link service. It would be the URL in the Grafana data source configuration page without the protocol and port.
 	PrivateLinkServiceUrl any
-	ProvisioningState     any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 	// User input request message of the managed private endpoint.
 	RequestMessage any
 }

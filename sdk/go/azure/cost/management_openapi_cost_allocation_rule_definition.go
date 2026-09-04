@@ -4,17 +4,22 @@ package cost
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_SourceResources struct {
+	// The value(s) making up this field. (AI-inferred)
 	Values any
 }
 
 type ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources_Values struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The percentage value this threshold or notification applies at. (AI-inferred)
 	Percentage any
 }
 
 type ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources struct {
+	// The category of policy this represents. (AI-inferred)
 	PolicyType any
-	Values     any
+	// The value(s) making up this field. (AI-inferred)
+	Values any
 }
 
 type ManagementOpenapiCostAllocationRuleDefinition_Properties_Details struct {

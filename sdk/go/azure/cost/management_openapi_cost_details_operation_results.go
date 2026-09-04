@@ -11,7 +11,9 @@ type ManagementOpenapiCostDetailsOperationResults_Error struct {
 }
 
 type ManagementOpenapiCostDetailsOperationResults_Manifest_Blobs struct {
-	BlobLink  any
+	// A URL pointing to the generated report file. (AI-inferred)
+	BlobLink any
+	// The size of this file, in bytes. (AI-inferred)
 	ByteCount any
 }
 

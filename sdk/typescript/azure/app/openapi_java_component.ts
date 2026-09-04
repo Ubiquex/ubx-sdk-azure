@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiJavaComponent_Properties_Configurations {
+  /** The name of the property this applies to. (AI-inferred) */
   propertyName?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -14,7 +16,9 @@ export interface OpenapiJavaComponent_Properties_Scale {
 }
 
 export interface OpenapiJavaComponent_Properties_ServiceBinds {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A reference to the connected service this applies to. (AI-inferred) */
   serviceId?: string | Computed<string>;
 }
 

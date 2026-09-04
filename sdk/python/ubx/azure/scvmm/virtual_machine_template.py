@@ -15,38 +15,65 @@ class VirtualMachineTemplate_ExtendedLocation:
 
 @dataclasses.dataclass
 class VirtualMachineTemplate_Properties_Disks_StorageQoSpolicy:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class VirtualMachineTemplate_Properties_Disks:
+    # The bus number this device is attached to. (AI-inferred)
     bus: Any = None
+    # The type of bus this device is attached to, e.g. `IDE` or `SCSI`. (AI-inferred)
     bus_type: Any = None
+    # Whether this disk is created as a differencing disk against its own source. (AI-inferred)
     create_diff_disk: Any = None
+    # A reference to the virtual disk this applies to. (AI-inferred)
     disk_id: Any = None
+    # The size of this disk, in gibibytes. (AI-inferred)
     disk_size_gb: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # The logical unit number this disk is attached at. (AI-inferred)
     lun: Any = None
+    # The maximum size, in gibibytes, this disk is allowed to grow to. (AI-inferred)
     max_disk_size_gb: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The storage Quality of Service policy applied to this disk. (AI-inferred)
     storage_qo_spolicy: Any = None
+    # A reference to the source template disk this virtual disk is created from. (AI-inferred)
     template_disk_id: Any = None
+    # The virtual hard disk format used, e.g. `VHD` or `VHDX`. (AI-inferred)
     vhd_format_type: Any = None
+    # Whether this virtual hard disk is `Dynamic`, `Fixed`, or a `Differencing` disk. (AI-inferred)
     vhd_type: Any = None
+    # The category of storage volume this represents. (AI-inferred)
     volume_type: Any = None
 
 @dataclasses.dataclass
 class VirtualMachineTemplate_Properties_NetworkInterfaces:
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # Whether this network adapter's own IPv4 address is `Static` or `Dynamic`. (AI-inferred)
     ipv4_address_type: Any = None
+    # The IPv4 address(es) assigned to this network adapter. (AI-inferred)
     ipv4_addresses: Any = None
+    # Whether this network adapter's own IPv6 address is `Static` or `Dynamic`. (AI-inferred)
     ipv6_address_type: Any = None
+    # The IPv6 address(es) assigned to this network adapter. (AI-inferred)
     ipv6_addresses: Any = None
+    # The MAC address assigned to this network adapter. (AI-inferred)
     mac_address: Any = None
+    # Whether this network adapter's own MAC address is `Static` or `Dynamic`. (AI-inferred)
     mac_address_type: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The name of the virtual network this adapter connects to. (AI-inferred)
     network_name: Any = None
+    # A reference to this network interface. (AI-inferred)
     nic_id: Any = None
+    # A reference to the virtual network this applies to. (AI-inferred)
     virtual_network_id: Any = None
 
 @dataclasses.dataclass

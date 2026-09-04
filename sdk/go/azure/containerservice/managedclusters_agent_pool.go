@@ -119,13 +119,21 @@ type ManagedclustersAgentPool_Properties_LinuxOsconfig struct {
 }
 
 type ManagedclustersAgentPool_Properties_LocalDnsprofile_KubeDnsoverrides struct {
-	CacheDurationInSeconds      any
-	ForwardDestination          any
-	ForwardPolicy               any
-	MaxConcurrent               any
-	Protocol                    any
-	QueryLogging                any
-	ServeStale                  any
+	// How long, in seconds, a DNS response is cached. (AI-inferred)
+	CacheDurationInSeconds any
+	// The upstream DNS server(s) matching queries are forwarded to. (AI-inferred)
+	ForwardDestination any
+	// How queries are distributed across multiple forward destinations, e.g. round-robin or sequential. (AI-inferred)
+	ForwardPolicy any
+	// The maximum number of operation(s) permitted to run concurrently. (AI-inferred)
+	MaxConcurrent any
+	// The network protocol used. (AI-inferred)
+	Protocol any
+	// Whether DNS query logging is enabled. (AI-inferred)
+	QueryLogging any
+	// Whether stale (expired) cached DNS responses are served while a fresh answer is fetched. (AI-inferred)
+	ServeStale any
+	// How long, in seconds, a stale cached DNS response may continue being served. (AI-inferred)
 	ServeStaleDurationInSeconds any
 }
 
@@ -141,14 +149,19 @@ type ManagedclustersAgentPool_Properties_LocalDnsprofile struct {
 }
 
 type ManagedclustersAgentPool_Properties_NetworkProfile_AllowedHostPorts struct {
-	PortEnd   any
+	// The last port, inclusive, in this range. (AI-inferred)
+	PortEnd any
+	// The first port, inclusive, in this range. (AI-inferred)
 	PortStart any
-	Protocol  any
+	// The network protocol used. (AI-inferred)
+	Protocol any
 }
 
 type ManagedclustersAgentPool_Properties_NetworkProfile_NodePublicIptags struct {
+	// The category this IP tag belongs to. (AI-inferred)
 	IpTagType any
-	Tag       any
+	// A label attached to this resource. (AI-inferred)
+	Tag any
 }
 
 type ManagedclustersAgentPool_Properties_NetworkProfile struct {
@@ -175,7 +188,9 @@ type ManagedclustersAgentPool_Properties_SecurityProfile struct {
 }
 
 type ManagedclustersAgentPool_Properties_Status_ProvisioningError_AdditionalInfo struct {
+	// Additional detail about this result. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
@@ -183,11 +198,16 @@ type ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details_Detail
 }
 
 type ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type ManagedclustersAgentPool_Properties_Status_ProvisioningError struct {
@@ -222,14 +242,19 @@ type ManagedclustersAgentPool_Properties_UpgradeSettings struct {
 }
 
 type ManagedclustersAgentPool_Properties_VirtualMachineNodesStatus struct {
+	// How many of this item there are. (AI-inferred)
 	Count any
-	Size  any
+	// The size of this resource. (AI-inferred)
+	Size any
 }
 
 type ManagedclustersAgentPool_Properties_VirtualMachinesProfile_Scale_Autoscale struct {
+	// The maximum count allowed. (AI-inferred)
 	MaxCount any
+	// The minimum count required. (AI-inferred)
 	MinCount any
-	Size     any
+	// The size of this resource. (AI-inferred)
+	Size any
 }
 
 type ManagedclustersAgentPool_Properties_VirtualMachinesProfile_Scale struct {

@@ -14,34 +14,51 @@ export interface FirewallAzureFirewall_Properties_AfcConfiguration {
 }
 
 export interface FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Action {
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules_Protocols {
+  /** A TCP or UDP port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** The network protocol this rule applies to. (AI-inferred) */
   protocolType?: string | Computed<string>;
 }
 
 export interface FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules {
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The predefined FQDN tag(s) (e.g. for well-known Microsoft services) this rule allows. (AI-inferred) */
   fqdnTags?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The network protocol(s) this rule applies to. (AI-inferred) */
   protocols?: FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules_Protocols[] | Computed<FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules_Protocols[]>;
+  /** The source IP address(es) or range(s) this rule matches. (AI-inferred) */
   sourceAddresses?: string[] | Computed<string[]>;
+  /** The source IP group(s) this rule matches. (AI-inferred) */
   sourceIpGroups?: string[] | Computed<string[]>;
+  /** The fully qualified domain name(s) this rule allows traffic to. (AI-inferred) */
   targetFqdns?: string[] | Computed<string[]>;
 }
 
 export interface FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties {
+  /** The action taken when this rule matches. (AI-inferred) */
   action?: FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Action | Computed<FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Action>;
+  /** The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The rule(s) making up this collection. (AI-inferred) */
   rules?: FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules[] | Computed<FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules[]>;
 }
 
 export interface FirewallAzureFirewall_Properties_ApplicationRuleCollections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties | Computed<FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties>;
 }
 
@@ -58,6 +75,7 @@ export interface FirewallAzureFirewall_Properties_FirewallPolicy {
 }
 
 export interface FirewallAzureFirewall_Properties_HubIpaddresses_PublicIps_Addresses {
+  /** The network address this applies to. (AI-inferred) */
   address?: string | Computed<string>;
 }
 
@@ -76,72 +94,115 @@ export interface FirewallAzureFirewall_Properties_HubIpaddresses {
 }
 
 export interface FirewallAzureFirewall_Properties_IpConfigurations_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: FirewallAzureFirewall_Properties_FirewallPolicy | Computed<FirewallAzureFirewall_Properties_FirewallPolicy>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: FirewallAzureFirewall_Properties_FirewallPolicy | Computed<FirewallAzureFirewall_Properties_FirewallPolicy>;
 }
 
 export interface FirewallAzureFirewall_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: FirewallAzureFirewall_Properties_IpConfigurations_Properties | Computed<FirewallAzureFirewall_Properties_IpConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface FirewallAzureFirewall_Properties_IpGroups {
+  /** A value incremented each time this rule collection's own content changes. (AI-inferred) */
   changeNumber?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface FirewallAzureFirewall_Properties_NatRuleCollections_Properties_Rules {
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The destination IP address(es) or range(s) this rule matches. (AI-inferred) */
   destinationAddresses?: string[] | Computed<string[]>;
+  /** The destination port(s) this rule matches. (AI-inferred) */
   destinationPorts?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The network protocol(s) this rule applies to. (AI-inferred) */
   protocols?: string[] | Computed<string[]>;
+  /** The source IP address(es) or range(s) this rule matches. (AI-inferred) */
   sourceAddresses?: string[] | Computed<string[]>;
+  /** The source IP group(s) this rule matches. (AI-inferred) */
   sourceIpGroups?: string[] | Computed<string[]>;
+  /** The IP address matching traffic is translated to. (AI-inferred) */
   translatedAddress?: string | Computed<string>;
+  /** The fully qualified domain name matching traffic is translated to. (AI-inferred) */
   translatedFqdn?: string | Computed<string>;
+  /** The port matching traffic is translated to. (AI-inferred) */
   translatedPort?: string | Computed<string>;
 }
 
 export interface FirewallAzureFirewall_Properties_NatRuleCollections_Properties {
+  /** The action taken when this rule matches. (AI-inferred) */
   action?: FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Action | Computed<FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Action>;
+  /** The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The rule(s) making up this collection. (AI-inferred) */
   rules?: FirewallAzureFirewall_Properties_NatRuleCollections_Properties_Rules[] | Computed<FirewallAzureFirewall_Properties_NatRuleCollections_Properties_Rules[]>;
 }
 
 export interface FirewallAzureFirewall_Properties_NatRuleCollections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: FirewallAzureFirewall_Properties_NatRuleCollections_Properties | Computed<FirewallAzureFirewall_Properties_NatRuleCollections_Properties>;
 }
 
 export interface FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties_Rules {
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The destination IP address(es) or range(s) this rule matches. (AI-inferred) */
   destinationAddresses?: string[] | Computed<string[]>;
+  /** The destination fully qualified domain name(s) this rule matches. (AI-inferred) */
   destinationFqdns?: string[] | Computed<string[]>;
+  /** The destination IP group(s) this rule matches. (AI-inferred) */
   destinationIpGroups?: string[] | Computed<string[]>;
+  /** The destination port(s) this rule matches. (AI-inferred) */
   destinationPorts?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The network protocol(s) this rule applies to. (AI-inferred) */
   protocols?: string[] | Computed<string[]>;
+  /** The source IP address(es) or range(s) this rule matches. (AI-inferred) */
   sourceAddresses?: string[] | Computed<string[]>;
+  /** The source IP group(s) this rule matches. (AI-inferred) */
   sourceIpGroups?: string[] | Computed<string[]>;
 }
 
 export interface FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties {
+  /** The action taken when this rule matches. (AI-inferred) */
   action?: FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Action | Computed<FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Action>;
+  /** The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The rule(s) making up this collection. (AI-inferred) */
   rules?: FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties_Rules[] | Computed<FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties_Rules[]>;
 }
 
 export interface FirewallAzureFirewall_Properties_NetworkRuleCollections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties | Computed<FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties>;
 }
 

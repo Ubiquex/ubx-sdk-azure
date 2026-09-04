@@ -4,12 +4,16 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	ResourceGuid      any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
 }
 
 type VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

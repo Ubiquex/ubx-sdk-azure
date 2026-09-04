@@ -4,6 +4,7 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
@@ -23,7 +24,8 @@ type OpenapiRemotePrivateEndpointConnectionArmresource_Properties struct {
 	PrivateEndpoint any
 	// The state of a private link connection
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 var OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpointFields = ubx.FieldMap{

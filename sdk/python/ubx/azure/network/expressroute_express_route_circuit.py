@@ -8,14 +8,20 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Authorizations_Properties:
+    # A pre-shared key used to authorize connecting to this ExpressRoute circuit. (AI-inferred)
     authorization_key: Any = None
+    # Whether `authorization_key` has already been redeemed to establish a connection. (AI-inferred)
     authorization_use_status: Any = None
+    # A reference to the connection resource this applies to. (AI-inferred)
     connection_resource_uri: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Authorizations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
@@ -25,97 +31,159 @@ class ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort:
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties_Ipv6CircuitConnectionConfig:
+    # An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
     address_prefix: Any = None
+    # The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred)
     circuit_connection_status: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties:
+    # An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
     address_prefix: Any = None
+    # A pre-shared key used to authorize connecting to this ExpressRoute circuit. (AI-inferred)
     authorization_key: Any = None
+    # The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred)
     circuit_connection_status: Any = None
+    # A reference to the ExpressRoute circuit peering this connection uses. (AI-inferred)
     express_route_circuit_peering: Any = None
+    # IPv6-specific configuration for this circuit connection. (AI-inferred)
     ipv6_circuit_connection_config: Any = None
+    # A reference to the peer ExpressRoute circuit's own matching peering, for a circuit connecting two ExpressRoute circuits directly. (AI-inferred)
     peer_express_route_circuit_peering: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo:
+    # An IP address prefix, in CIDR notation. (AI-inferred)
     prefix: Any = None
+    # A cryptographic signature validating this resource's own configuration or authorization. (AI-inferred)
     signature: Any = None
+    # An identifier for a pending validation request on this resource, e.g. an ExpressRoute prefix ownership check. (AI-inferred)
     validation_id: Any = None
+    # The current outcome of validating this resource's own configuration, e.g. whether an advertised prefix passed ownership verification. (AI-inferred)
     validation_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig:
+    # The BGP community value(s) attached to routes this peering advertises. (AI-inferred)
     advertised_communities: Any = None
+    # Output only. Per-prefix validation detail for each of this peering's own `advertised_public_prefixes`. (AI-inferred)
     advertised_public_prefix_info: Any = None
+    # The public IP address prefix(es) this Microsoft Peering advertises, e.g. `123.1.0.0/24` -- ownership of each is verified before routes go live. (AI-inferred)
     advertised_public_prefixes: Any = None
+    # Output only. Whether `advertised_public_prefixes` has passed ownership validation, e.g. `Configured` or `ValidationNeeded`. (AI-inferred)
     advertised_public_prefixes_state: Any = None
+    # The customer's own public BGP Autonomous System Number, required for Microsoft Peering. (AI-inferred)
     customer_asn: Any = None
+    # Whether this ExpressRoute circuit uses the older, pre-IPv6-split routing configuration for Microsoft Peering. (AI-inferred)
     legacy_mode: Any = None
+    # The Internet routing registry (e.g. `ARIN`, `RIPE`) `advertised_public_prefixes` ownership is validated against. (AI-inferred)
     routing_registry_name: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig:
+    # Configuration for this ExpressRoute circuit's own Microsoft Peering -- routes to Microsoft SaaS services (e.g. Microsoft 365) advertised over the circuit. (AI-inferred)
     microsoft_peering_config: Any = None
+    # The `/30` subnet used for the primary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred)
     primary_peer_address_prefix: Any = None
+    # A reference to the route filter restricting which BGP routes are advertised over this Microsoft Peering. (AI-inferred)
     route_filter: Any = None
+    # The `/30` subnet used for the secondary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred)
     secondary_peer_address_prefix: Any = None
+    # The current operational state of this resource. (AI-inferred)
     state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections_Properties:
+    # An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
     address_prefix: Any = None
+    # The resource GUID of the resource this authorization was created for. (AI-inferred)
     auth_resource_guid: Any = None
+    # The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred)
     circuit_connection_status: Any = None
+    # The name of this connection. (AI-inferred)
     connection_name: Any = None
+    # A reference to the ExpressRoute circuit peering this connection uses. (AI-inferred)
     express_route_circuit_peering: Any = None
+    # A reference to the peer ExpressRoute circuit's own matching peering, for a circuit connecting two ExpressRoute circuits directly. (AI-inferred)
     peer_express_route_circuit_peering: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Stats:
+    # The total inbound bytes transferred over the primary link. (AI-inferred)
     primarybytes_in: Any = None
+    # The total outbound bytes transferred over the primary link. (AI-inferred)
     primarybytes_out: Any = None
+    # The total inbound bytes transferred over the secondary link. (AI-inferred)
     secondarybytes_in: Any = None
+    # The total outbound bytes transferred over the secondary link. (AI-inferred)
     secondarybytes_out: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties:
+    # The BGP Autonomous System Number Microsoft's own edge uses for this peering. (AI-inferred)
     azure_asn: Any = None
+    # The connection(s) associated with this resource. (AI-inferred)
     connections: Any = None
+    # A reference to the ExpressRoute connection this applies to. (AI-inferred)
     express_route_connection: Any = None
+    # A concurrency-control value set by the gateway manager for this resource. (AI-inferred)
     gateway_manager_etag: Any = None
+    # IPv6-specific configuration for this ExpressRoute peering. (AI-inferred)
     ipv6_peering_config: Any = None
+    # The identity that last modified this resource. (AI-inferred)
     last_modified_by: Any = None
+    # Configuration for this ExpressRoute circuit's own Microsoft Peering -- routes to Microsoft SaaS services (e.g. Microsoft 365) advertised over the circuit. (AI-inferred)
     microsoft_peering_config: Any = None
+    # The BGP Autonomous System Number of the peer this session is established with. (AI-inferred)
     peer_asn: Any = None
+    # The connection(s) established through this peering. (AI-inferred)
     peered_connections: Any = None
+    # The kind of ExpressRoute peering this represents, e.g. `AzurePrivatePeering` or `MicrosoftPeering`. (AI-inferred)
     peering_type: Any = None
+    # The name of the primary Microsoft Enterprise Edge router port this circuit connects to. (AI-inferred)
     primary_azure_port: Any = None
+    # The `/30` subnet used for the primary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred)
     primary_peer_address_prefix: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the route filter restricting which BGP routes are advertised over this Microsoft Peering. (AI-inferred)
     route_filter: Any = None
+    # The name of the secondary Microsoft Enterprise Edge router port this circuit connects to. (AI-inferred)
     secondary_azure_port: Any = None
+    # The `/30` subnet used for the secondary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred)
     secondary_peer_address_prefix: Any = None
+    # A pre-shared key used to establish this connection. (AI-inferred)
     shared_key: Any = None
+    # The current operational state of this resource. (AI-inferred)
     state: Any = None
+    # Traffic statistics for this resource. (AI-inferred)
     stats: Any = None
+    # The VLAN identifier assigned to this circuit. (AI-inferred)
     vlan_id: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuit_Properties_Peerings:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

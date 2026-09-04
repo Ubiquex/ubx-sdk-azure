@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiRestoreResult_Properties_Error_AdditionalInfo {
+  /** Additional detail about this result. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -10,10 +12,15 @@ export interface OpenapiRestoreResult_Properties_Error_Details_Details {
 }
 
 export interface OpenapiRestoreResult_Properties_Error_Details {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: OpenapiRestoreResult_Properties_Error_AdditionalInfo[] | Computed<OpenapiRestoreResult_Properties_Error_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: OpenapiRestoreResult_Properties_Error_Details_Details[] | Computed<OpenapiRestoreResult_Properties_Error_Details_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 

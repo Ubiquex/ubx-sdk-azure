@@ -2,10 +2,15 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiSecret_Properties_Attributes {
+  /** When this resource was created. (AI-inferred) */
   created?: number | Computed<number>;
+  /** Whether this key, secret, or certificate is currently enabled for use. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** When this key, secret, or certificate expires. (AI-inferred) */
   exp?: number | Computed<number>;
+  /** The time before which this key, secret, or certificate isn't yet valid. (AI-inferred) */
   nbf?: number | Computed<number>;
+  /** When this resource was last updated. (AI-inferred) */
   updated?: number | Computed<number>;
 }
 

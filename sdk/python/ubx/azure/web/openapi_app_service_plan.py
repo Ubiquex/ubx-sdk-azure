@@ -15,7 +15,9 @@ class OpenapiAppServicePlan_ExtendedLocation:
 
 @dataclasses.dataclass
 class OpenapiAppServicePlan_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -40,12 +42,16 @@ class OpenapiAppServicePlan_Properties_HostingEnvironmentProfile:
 
 @dataclasses.dataclass
 class OpenapiAppServicePlan_Properties_InstallScripts_Source:
+    # The URI content is read from. (AI-inferred)
     source_uri: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiAppServicePlan_Properties_InstallScripts:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Where this content is sourced from. (AI-inferred)
     source: Any = None
 
 @dataclasses.dataclass
@@ -57,25 +63,36 @@ class OpenapiAppServicePlan_Properties_Network:
 class OpenapiAppServicePlan_Properties_PlanDefaultIdentity:
     # Type of managed service identity.
     identity_type: Any = None
+    # A reference to the user-assigned managed identity used. (AI-inferred)
     user_assigned_identity_resource_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReference:
+    # The current status of this reference. (AI-inferred)
     reference_status: Any = None
+    # A reference to the Key Vault secret this value is sourced from. (AI-inferred)
     secret_uri: Any = None
 
 @dataclasses.dataclass
 class OpenapiAppServicePlan_Properties_RegistryAdapters:
+    # A reference to the Key Vault secret holding this value. (AI-inferred)
     key_vault_secret_reference: Any = None
+    # A reference to a specific registry key. (AI-inferred)
     registry_key: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiAppServicePlan_Properties_StorageMounts:
+    # A reference to the Key Vault secret holding this connection's own credentials. (AI-inferred)
     credentials_key_vault_reference: Any = None
+    # The path content is written to. (AI-inferred)
     destination_path: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Where this content is sourced from. (AI-inferred)
     source: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -114,6 +131,7 @@ class OpenapiAppServicePlan_Properties:
     number_of_workers: Any = None
     # If <code>true</code>, apps assigned to this App Service plan can be scaled independently. If <code>false</code>, apps assigned to this App Service plan will scale to all instances of the plan.
     per_site_scaling: Any = None
+    # The default managed identity associated with this app's own hosting plan. (AI-inferred)
     plan_default_identity: Any = None
     # Provisioning state of the App Service Plan.
     provisioning_state: Any = None
@@ -144,8 +162,11 @@ class OpenapiAppServicePlan_Properties:
 
 @dataclasses.dataclass
 class OpenapiAppServicePlan_Sku_Capabilities:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A machine-readable reason code. (AI-inferred)
     reason: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

@@ -35,7 +35,9 @@ class OpenapiFactory_Properties_Encryption:
 
 @dataclasses.dataclass
 class OpenapiFactory_Properties_GlobalParameters:
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_NetworkInterfaces {
+  /** The private (internal) IP address assigned to this resource. (AI-inferred) */
   privateIpAddress?: string | Computed<string>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
 }
 

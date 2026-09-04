@@ -34,16 +34,22 @@ export interface Set_Properties_ScheduledEventsPolicy {
 }
 
 export interface Set_Properties_Statuses {
+  /** The status code that identifies the current state of the availability set, such as 'ProvisioningState/succeeded'. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable, user-facing description of the current status of the availability set, as part of a list of status objects that may also include a code, level, and timestamp. (AI-inferred) */
   displayStatus?: string | Computed<string>;
+  /** The severity level of the status, which can be one of Info, Warning, or Error. It indicates the impact or importance of the status message. (AI-inferred) */
   level?: string | Computed<string>;
+  /** The message provides additional information or details about the status of the availability set. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The timestamp when the status was recorded. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
 export interface Set_Properties_VirtualMachineScaleSetMigrationInfo_DefaultVirtualMachineScaleSetInfo {
   /** Indicates if the the maximum capacity of the default migrated Virtual Machine Scale Set after its migration will be constrained to a limited number of VMs. */
   constrainedMaximumCapacity?: boolean | Computed<boolean>;
+  /** The default virtual machine scale set that serves as the primary target when migrating the availability set to a scale set. (AI-inferred) */
   defaultVirtualMachineScaleSet?: Set_Properties_ProximityPlacementGroup | Computed<Set_Properties_ProximityPlacementGroup>;
 }
 
@@ -58,6 +64,7 @@ export interface Set_Properties {
   platformFaultDomainCount?: number | Computed<number>;
   /** Update Domain count. */
   platformUpdateDomainCount?: number | Computed<number>;
+  /** Specifies the proximity placement group that the availability set should be associated with, enabling co-location of resources for low network latency. (AI-inferred) */
   proximityPlacementGroup?: Set_Properties_ProximityPlacementGroup | Computed<Set_Properties_ProximityPlacementGroup>;
   /** Specifies Redeploy, Reboot and ScheduledEventsAdditionalPublishingTargets Scheduled Event related configurations. */
   scheduledEventsPolicy?: Set_Properties_ScheduledEventsPolicy | Computed<Set_Properties_ScheduledEventsPolicy>;

@@ -2,9 +2,13 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface NetworkmanagerConnectivityConfiguration_Properties_AppliesToGroups {
+  /** Whether direct connectivity is established between all members of this network group. (AI-inferred) */
   groupConnectivity?: string | Computed<string>;
+  /** Whether this connectivity configuration spans multiple regions. (AI-inferred) */
   isGlobal?: string | Computed<string>;
+  /** A reference to the network group this applies to. (AI-inferred) */
   networkGroupId?: string | Computed<string>;
+  /** Whether traffic between spoke virtual networks is routed through the hub's own gateway. (AI-inferred) */
   useHubGateway?: string | Computed<string>;
 }
 
@@ -18,7 +22,9 @@ export interface NetworkmanagerConnectivityConfiguration_Properties_Connectivity
 }
 
 export interface NetworkmanagerConnectivityConfiguration_Properties_Hubs {
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
+  /** The category of resource this applies to. (AI-inferred) */
   resourceType?: string | Computed<string>;
 }
 

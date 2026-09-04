@@ -117,13 +117,21 @@ export interface ManagedclustersAgentPool_Properties_LinuxOsconfig {
 }
 
 export interface ManagedclustersAgentPool_Properties_LocalDnsprofile_KubeDnsoverrides {
+  /** How long, in seconds, a DNS response is cached. (AI-inferred) */
   cacheDurationInSeconds?: number | Computed<number>;
+  /** The upstream DNS server(s) matching queries are forwarded to. (AI-inferred) */
   forwardDestination?: string | Computed<string>;
+  /** How queries are distributed across multiple forward destinations, e.g. round-robin or sequential. (AI-inferred) */
   forwardPolicy?: string | Computed<string>;
+  /** The maximum number of operation(s) permitted to run concurrently. (AI-inferred) */
   maxConcurrent?: number | Computed<number>;
+  /** The network protocol used. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** Whether DNS query logging is enabled. (AI-inferred) */
   queryLogging?: string | Computed<string>;
+  /** Whether stale (expired) cached DNS responses are served while a fresh answer is fetched. (AI-inferred) */
   serveStale?: string | Computed<string>;
+  /** How long, in seconds, a stale cached DNS response may continue being served. (AI-inferred) */
   serveStaleDurationInSeconds?: number | Computed<number>;
 }
 
@@ -139,13 +147,18 @@ export interface ManagedclustersAgentPool_Properties_LocalDnsprofile {
 }
 
 export interface ManagedclustersAgentPool_Properties_NetworkProfile_AllowedHostPorts {
+  /** The last port, inclusive, in this range. (AI-inferred) */
   portEnd?: number | Computed<number>;
+  /** The first port, inclusive, in this range. (AI-inferred) */
   portStart?: number | Computed<number>;
+  /** The network protocol used. (AI-inferred) */
   protocol?: string | Computed<string>;
 }
 
 export interface ManagedclustersAgentPool_Properties_NetworkProfile_NodePublicIptags {
+  /** The category this IP tag belongs to. (AI-inferred) */
   ipTagType?: string | Computed<string>;
+  /** A label attached to this resource. (AI-inferred) */
   tag?: string | Computed<string>;
 }
 
@@ -173,7 +186,9 @@ export interface ManagedclustersAgentPool_Properties_SecurityProfile {
 }
 
 export interface ManagedclustersAgentPool_Properties_Status_ProvisioningError_AdditionalInfo {
+  /** Additional detail about this result. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -181,10 +196,15 @@ export interface ManagedclustersAgentPool_Properties_Status_ProvisioningError_De
 }
 
 export interface ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: ManagedclustersAgentPool_Properties_Status_ProvisioningError_AdditionalInfo[] | Computed<ManagedclustersAgentPool_Properties_Status_ProvisioningError_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details_Details[] | Computed<ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
@@ -220,13 +240,18 @@ export interface ManagedclustersAgentPool_Properties_UpgradeSettings {
 }
 
 export interface ManagedclustersAgentPool_Properties_VirtualMachineNodesStatus {
+  /** How many of this item there are. (AI-inferred) */
   count?: number | Computed<number>;
+  /** The size of this resource. (AI-inferred) */
   size?: string | Computed<string>;
 }
 
 export interface ManagedclustersAgentPool_Properties_VirtualMachinesProfile_Scale_Autoscale {
+  /** The maximum count allowed. (AI-inferred) */
   maxCount?: number | Computed<number>;
+  /** The minimum count required. (AI-inferred) */
   minCount?: number | Computed<number>;
+  /** The size of this resource. (AI-inferred) */
   size?: string | Computed<string>;
 }
 

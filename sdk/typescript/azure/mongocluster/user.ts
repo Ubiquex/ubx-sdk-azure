@@ -7,7 +7,9 @@ export interface User_Properties_IdentityProvider {
 }
 
 export interface User_Properties_Roles {
+  /** A reference to the database this applies to. (AI-inferred) */
   db?: string | Computed<string>;
+  /** The role granted by this assignment. (AI-inferred) */
   role?: string | Computed<string>;
 }
 

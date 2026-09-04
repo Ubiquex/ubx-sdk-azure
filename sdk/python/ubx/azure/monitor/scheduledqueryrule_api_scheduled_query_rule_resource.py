@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ScheduledqueryruleApiScheduledQueryRuleResource_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -33,29 +35,47 @@ class ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Actions:
 
 @dataclasses.dataclass
 class ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_Dimensions:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # How this condition's own operands are compared. (AI-inferred)
     operator: Any = None
+    # The value(s) making up this field. (AI-inferred)
     values: Any = None
 
 @dataclasses.dataclass
 class ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_FailingPeriods:
+    # The minimum number of failing evaluation period(s) required to trigger this alert. (AI-inferred)
     min_failing_periods_to_alert: Any = None
+    # How many recent evaluation period(s) this condition considers. (AI-inferred)
     number_of_evaluation_periods: Any = None
 
 @dataclasses.dataclass
 class ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf:
+    # How sensitive this dynamic threshold is to deviations in the metric. (AI-inferred)
     alert_sensitivity: Any = None
+    # The category of alert criterion this represents, e.g. static or dynamic threshold. (AI-inferred)
     criterion_type: Any = None
+    # The dimension(s) this alert condition is evaluated across. (AI-inferred)
     dimensions: Any = None
+    # The number of failing evaluation period(s), out of the last `number_of_evaluation_periods`, required to trigger this alert. (AI-inferred)
     failing_periods: Any = None
+    # Data before this date is excluded when learning a dynamic threshold's own baseline. (AI-inferred)
     ignore_data_before: Any = None
+    # The result column holding the metric value this condition evaluates. (AI-inferred)
     metric_measure_column: Any = None
+    # The name of the metric this applies to. (AI-inferred)
     metric_name: Any = None
+    # The minimum number of times this pattern must recur to trigger the alert. (AI-inferred)
     min_recurrence_count: Any = None
+    # How this condition's own operands are compared. (AI-inferred)
     operator: Any = None
+    # The log query text this condition evaluates. (AI-inferred)
     query: Any = None
+    # The result column identifying which resource each row belongs to. (AI-inferred)
     resource_id_column: Any = None
+    # The value that must be crossed for this condition to trigger. (AI-inferred)
     threshold: Any = None
+    # How values are aggregated over each evaluation period, e.g. average or count. (AI-inferred)
     time_aggregation: Any = None
 
 @dataclasses.dataclass

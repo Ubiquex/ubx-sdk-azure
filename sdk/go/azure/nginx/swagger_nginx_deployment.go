@@ -4,13 +4,17 @@ package nginx
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SwaggerNginxDeployment_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
 type SwaggerNginxDeployment_Identity struct {
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
-	TenantId    any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
 	// Identity Type
 	Type any
 	// Dictionary of <UserIdentityProperties>
@@ -23,7 +27,9 @@ type SwaggerNginxDeployment_Properties_AutoUpgradeProfile struct {
 }
 
 type SwaggerNginxDeployment_Properties_Logging_StorageAccount struct {
-	AccountName   any
+	// The name of the associated storage account. (AI-inferred)
+	AccountName any
+	// The name of the storage container this applies to. (AI-inferred)
 	ContainerName any
 }
 
@@ -33,21 +39,28 @@ type SwaggerNginxDeployment_Properties_Logging struct {
 }
 
 type SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PrivateIpaddresses struct {
-	PrivateIpaddress          any
+	// The private (internal) IP address assigned to this resource. (AI-inferred)
+	PrivateIpaddress any
+	// Whether the private IP address is statically assigned or dynamically allocated. (AI-inferred)
 	PrivateIpallocationMethod any
-	SubnetId                  any
+	// A reference to the subnet this resource is deployed into. (AI-inferred)
+	SubnetId any
 }
 
 type SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PublicIpaddresses struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration struct {
+	// The private (internal) IP address(es) assigned to this resource. (AI-inferred)
 	PrivateIpaddresses any
-	PublicIpaddresses  any
+	// The public IP address(es) assigned to this resource. (AI-inferred)
+	PublicIpaddresses any
 }
 
 type SwaggerNginxDeployment_Properties_NetworkProfile_NetworkInterfaceConfiguration struct {
+	// A reference to the subnet this resource is deployed into. (AI-inferred)
 	SubnetId any
 }
 
@@ -98,23 +111,29 @@ type SwaggerNginxDeployment_Properties_NginxAppProtect struct {
 }
 
 type SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles_Capacity struct {
+	// The maximum value allowed. (AI-inferred)
 	Max any
+	// The minimum value allowed. (AI-inferred)
 	Min any
 }
 
 type SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles struct {
+	// The number of instance(s) this resource is provisioned with. (AI-inferred)
 	Capacity any
-	Name     any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings struct {
+	// The scaling profile(s) available for this deployment. (AI-inferred)
 	Profiles any
 }
 
 type SwaggerNginxDeployment_Properties_ScalingProperties struct {
 	// The settings for enabling automatic scaling of the deployment. If this field is specified, 'scale.capacity' must be empty.
 	AutoScaleSettings any
-	Capacity          any
+	// The number of instance(s) this resource is provisioned with. (AI-inferred)
+	Capacity any
 }
 
 type SwaggerNginxDeployment_Properties_UserProfile struct {
@@ -126,7 +145,8 @@ type SwaggerNginxDeployment_Properties struct {
 	// Autoupgrade settings of a deployment.
 	AutoUpgradeProfile any
 	// Dataplane API endpoint for the caller to update the NGINX state of the deployment.
-	DataplaneApiEndpoint     any
+	DataplaneApiEndpoint any
+	// Whether diagnostic data collection is enabled for this deployment. (AI-inferred)
 	EnableDiagnosticsSupport any
 	// The IP address of the deployment.
 	IpAddress any
@@ -136,7 +156,8 @@ type SwaggerNginxDeployment_Properties struct {
 	NetworkProfile any
 	// Settings for NGINX App Protect (NAP)
 	NginxAppProtect any
-	NginxVersion    any
+	// The NGINX version this deployment runs. (AI-inferred)
+	NginxVersion any
 	// Provisioning State
 	ProvisioningState any
 	// Information on how the deployment will be scaled.

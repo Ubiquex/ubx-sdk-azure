@@ -4,8 +4,10 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiJavaComponent_Properties_Configurations struct {
+	// The name of the property this applies to. (AI-inferred)
 	PropertyName any
-	Value        any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiJavaComponent_Properties_Scale struct {
@@ -16,7 +18,9 @@ type OpenapiJavaComponent_Properties_Scale struct {
 }
 
 type OpenapiJavaComponent_Properties_ServiceBinds struct {
-	Name      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the connected service this applies to. (AI-inferred)
 	ServiceId any
 }
 

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Namespace_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,57 +20,82 @@ export interface Namespace_Identity {
 }
 
 export interface Namespace_Properties_InboundIpRules {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The IP address range, in CIDR notation, this rule matches. (AI-inferred) */
   ipMask?: string | Computed<string>;
 }
 
 export interface Namespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface Namespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface Namespace_Properties_PrivateEndpointConnections_Properties {
+  /** The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred) */
   groupIds?: string[] | Computed<string[]>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: Namespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<Namespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: Namespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<Namespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface Namespace_Properties_PrivateEndpointConnections {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Namespace_Properties_PrivateEndpointConnections_Properties | Computed<Namespace_Properties_PrivateEndpointConnections_Properties>;
 }
 
 export interface Namespace_Properties_TopicSpacesConfiguration_CustomDomains_Identity {
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** A reference to the user-assigned managed identity used. (AI-inferred) */
   userAssignedIdentity?: string | Computed<string>;
 }
 
 export interface Namespace_Properties_TopicSpacesConfiguration_CustomDomains {
+  /** A URL pointing to this event source's own certificate. (AI-inferred) */
   certificateUrl?: string | Computed<string>;
+  /** The DNS TXT record name expected to validate ownership of this domain. (AI-inferred) */
   expectedTxtRecordName?: string | Computed<string>;
+  /** The DNS TXT record value expected to validate ownership of this domain. (AI-inferred) */
   expectedTxtRecordValue?: string | Computed<string>;
+  /** The fully qualified domain name this applies to. (AI-inferred) */
   fullyQualifiedDomainName?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: Namespace_Properties_TopicSpacesConfiguration_CustomDomains_Identity | Computed<Namespace_Properties_TopicSpacesConfiguration_CustomDomains_Identity>;
+  /** Whether this domain has passed ownership validation. (AI-inferred) */
   validationState?: string | Computed<string>;
 }
 
 export interface Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_Dynamic {
+  /** The key of this enrichment or attribute. (AI-inferred) */
   key?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_Static {
+  /** The key of this enrichment or attribute. (AI-inferred) */
   key?: string | Computed<string>;
+  /** The data type of this value. (AI-inferred) */
   valueType?: string | Computed<string>;
 }
 
 export interface Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments {
+  /** Whether this routing enrichment value is computed dynamically from the event's own payload. (AI-inferred) */
   dynamic?: Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_Dynamic[] | Computed<Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_Dynamic[]>;
+  /** Whether this routing enrichment value is a fixed, caller-supplied constant. (AI-inferred) */
   static?: Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_Static[] | Computed<Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_Static[]>;
 }
 
@@ -83,6 +110,7 @@ export interface Namespace_Properties_TopicSpacesConfiguration {
   maximumSessionExpiryInHours?: number | Computed<number>;
   /** Fully qualified Azure Resource Id for the Event Grid Topic to which events will be routed to from TopicSpaces under a namespace. This property should be in the following format '/subscriptions/{subId}/resourcegroups/{resourceGroupName}/providers/microsoft.EventGrid/topics/{topicName}'. This topic should reside in the same region where namespace is located. */
   routeTopicResourceId?: string | Computed<string>;
+  /** Additional, static or dynamic value(s) attached to matching events before delivery. (AI-inferred) */
   routingEnrichments?: Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments | Computed<Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments>;
   /** Routing identity info for topic spaces configuration. */
   routingIdentityInfo?: Namespace_Properties_TopicSpacesConfiguration_CustomDomains_Identity | Computed<Namespace_Properties_TopicSpacesConfiguration_CustomDomains_Identity>;

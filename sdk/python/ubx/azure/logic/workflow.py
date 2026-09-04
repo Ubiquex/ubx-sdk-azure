@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Workflow_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,16 +26,21 @@ class Workflow_Identity:
 
 @dataclasses.dataclass
 class Workflow_Properties_AccessControl_Actions_AllowedCallerIpAddresses:
+    # The permitted range of addresses for this endpoint. (AI-inferred)
     address_range: Any = None
 
 @dataclasses.dataclass
 class Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies:
+    # The claim(s) required in the token presented for authentication. (AI-inferred)
     claims: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -61,6 +68,7 @@ class Workflow_Properties_AccessControl:
 
 @dataclasses.dataclass
 class Workflow_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddresses:
+    # The address this endpoint is reached at. (AI-inferred)
     address: Any = None
 
 @dataclasses.dataclass
@@ -88,9 +96,13 @@ class Workflow_Properties_IntegrationAccount:
 
 @dataclasses.dataclass
 class Workflow_Properties_Parameters:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # Free-form key/value metadata attached to this resource. (AI-inferred)
     metadata: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -110,6 +122,7 @@ class Workflow_Properties:
     changed_time: Any = None
     # Gets the created time.
     created_time: Any = None
+    # The schema or configuration defining this artifact. (AI-inferred)
     definition: Any = None
     # The endpoints configuration.
     endpoints_configuration: Any = None

@@ -33,7 +33,9 @@ export interface OperationJobExtendedInfo_BackupInstance_IdentityDetails {
 }
 
 export interface OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters_DataStoreParametersList {
+  /** The type of datastore this backup data is retained in, e.g. `OperationalStore` or `VaultStore`. (AI-inferred) */
   dataStoreType?: string | Computed<string>;
+  /** A discriminator identifying this object's own concrete type, used when a field can hold more than one shape. (AI-inferred) */
   objectType?: string | Computed<string>;
 }
 
@@ -45,9 +47,11 @@ export interface OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParame
 }
 
 export interface OperationJobExtendedInfo_BackupInstance_PolicyInfo {
+  /** A reference to the backup policy this applies to. (AI-inferred) */
   policyId: string | Computed<string>;
   /** Parameters in Policy */
   policyParameters?: OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters | Computed<OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters>;
+  /** The version of the backup policy in effect when this was created. (AI-inferred) */
   policyVersion?: string | Computed<string>;
 }
 
@@ -74,6 +78,7 @@ export interface OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails 
   isRetryable?: boolean | Computed<boolean>;
   /** Whether the operation is due to a user error or service error */
   isUserError?: boolean | Computed<boolean>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
   /** Any key value pairs that can be injected inside error object */
   properties?: Record<string, string> | Computed<Record<string, string>>;
@@ -101,7 +106,9 @@ export interface OperationJobExtendedInfo_BackupInstance {
   datasourceAuthCredentials?: OperationJobExtendedInfo_BackupInstance_DataSourceInfo_ResourceProperties | Computed<OperationJobExtendedInfo_BackupInstance_DataSourceInfo_ResourceProperties>;
   /** Gets or sets the Backup Instance friendly name. */
   friendlyName?: string | Computed<string>;
+  /** Detail about the managed identity used to protect or access this resource. (AI-inferred) */
   identityDetails?: OperationJobExtendedInfo_BackupInstance_IdentityDetails | Computed<OperationJobExtendedInfo_BackupInstance_IdentityDetails>;
+  /** A discriminator identifying this object's own concrete type, used when a field can hold more than one shape. (AI-inferred) */
   objectType: string | Computed<string>;
   /** Policy Info in backupInstance */
   policyInfo: OperationJobExtendedInfo_BackupInstance_PolicyInfo | Computed<OperationJobExtendedInfo_BackupInstance_PolicyInfo>;

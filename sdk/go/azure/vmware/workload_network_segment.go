@@ -4,6 +4,7 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkloadNetworkSegment_Properties_PortVif struct {
+	// The name of this physical network port. (AI-inferred)
 	PortName any
 }
 

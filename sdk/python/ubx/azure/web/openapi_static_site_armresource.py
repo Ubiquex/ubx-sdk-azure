@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -43,23 +45,35 @@ class OpenapiStaticSiteArmresource_Properties_BuildProperties:
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_DatabaseConnections_ConfigurationFiles:
+    # The literal content of this resource. (AI-inferred)
     contents: Any = None
+    # The name of this file. (AI-inferred)
     file_name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_DatabaseConnections:
+    # The configuration file(s) associated with this resource. (AI-inferred)
     configuration_files: Any = None
+    # The managed identity used to authenticate this connection. (AI-inferred)
     connection_identity: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure region this applies to. (AI-inferred)
     region: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_LinkedBackends:
+    # A reference to the backend resource this applies to. (AI-inferred)
     backend_resource_id: Any = None
+    # When this resource was created. (AI-inferred)
     created_on: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The Azure region this applies to. (AI-inferred)
     region: Any = None
 
 @dataclasses.dataclass
@@ -68,82 +82,132 @@ class OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_D
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # An extended, more specific error code. (AI-inferred)
     extended_code: Any = None
+    # The underlying error(s) that caused this failure. (AI-inferred)
     inner_errors: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A template used to format a generated message. (AI-inferred)
     message_template: Any = None
+    # The parameter(s) making up this configuration. (AI-inferred)
     parameters: Any = None
+    # The destination this applies to. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Plan:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The product this applies to. (AI-inferred)
     product: Any = None
+    # A promotional code applied to this resource. (AI-inferred)
     promotion_code: Any = None
+    # The publisher of this extension or resource. (AI-inferred)
     publisher: Any = None
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateEndpoint:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties:
+    # The IP address(es) associated with this resource. (AI-inferred)
     ip_addresses: Any = None
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_Capabilities:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A machine-readable reason code. (AI-inferred)
     reason: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_SkuCapacity:
+    # The default value used when none is explicitly provided. (AI-inferred)
     default: Any = None
+    # The maximum number of worker instances this plan can elastically scale out to. (AI-inferred)
     elastic_maximum: Any = None
+    # The maximum value allowed. (AI-inferred)
     maximum: Any = None
+    # The minimum value allowed. (AI-inferred)
     minimum: Any = None
+    # How this resource scales, e.g. by CPU or a custom metric. (AI-inferred)
     scale_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku:
+    # The capability/capabilities this resource supports. (AI-inferred)
     capabilities: Any = None
+    # The number of instance(s) this resource is provisioned with. (AI-inferred)
     capacity: Any = None
+    # The generation or family this SKU belongs to. (AI-inferred)
     family: Any = None
+    # The Azure region(s) this applies to. (AI-inferred)
     locations: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The size of this resource. (AI-inferred)
     size: Any = None
+    # The provisioned capacity for this SKU. (AI-inferred)
     sku_capacity: Any = None
+    # The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred)
     tier: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections:
+    # Detail about an error that occurred. (AI-inferred)
     error: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A reference to the App Service plan this app runs on. (AI-inferred)
     plan: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The pricing tier and capacity this resource is provisioned at. (AI-inferred)
     sku: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
     tags: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
     zones: Any = None
 
 @dataclasses.dataclass
@@ -161,12 +225,16 @@ class OpenapiStaticSiteArmresource_Properties_TemplateProperties:
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps_Properties:
+    # When this resource was created. (AI-inferred)
     created_on: Any = None
+    # The Azure region the associated Function App is deployed in. (AI-inferred)
     function_app_region: Any = None
+    # A reference to the associated Function App resource. (AI-inferred)
     function_app_resource_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

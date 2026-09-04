@@ -2,15 +2,22 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface RaiPolicy_Properties_ContentFilters {
+  /** The action taken when this rule matches. (AI-inferred) */
   action?: string | Computed<string>;
+  /** Whether this content filter blocks matching content, rather than only flagging it. (AI-inferred) */
   blocking?: boolean | Computed<boolean>;
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The minimum severity level at which this content filter takes action. (AI-inferred) */
   severityThreshold?: string | Computed<string>;
+  /** Where this data or configuration is sourced from. (AI-inferred) */
   source?: string | Computed<string>;
 }
 
 export interface RaiPolicy_Properties_CustomBlocklists {
+  /** Where this data or configuration is sourced from. (AI-inferred) */
   source?: string | Computed<string>;
 }
 

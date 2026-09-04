@@ -13,6 +13,7 @@ class WebtestsWebTest_Properties_Configuration:
 
 @dataclasses.dataclass
 class WebtestsWebTest_Properties_Locations:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass

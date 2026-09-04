@@ -23,11 +23,16 @@ type ServiceResource_Properties_NetworkProfile_OutboundIps struct {
 }
 
 type ServiceResource_Properties_NetworkProfile_RequiredTraffics struct {
+	// Whether this rule applies to inbound or outbound traffic. (AI-inferred)
 	Direction any
-	Fqdns     any
-	Ips       any
-	Port      any
-	Protocol  any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The IP address(es) associated with this resource. (AI-inferred)
+	Ips any
+	// A network port number. (AI-inferred)
+	Port any
+	// The network protocol used. (AI-inferred)
+	Protocol any
 }
 
 type ServiceResource_Properties_NetworkProfile struct {
@@ -74,7 +79,8 @@ type ServiceResource_Properties struct {
 	// Version of the Service
 	Version any
 	// Additional Service settings in vnet injection instance
-	VnetAddons    any
+	VnetAddons any
+	// Whether this resource is provisioned redundantly across availability zones. (AI-inferred)
 	ZoneRedundant any
 }
 

@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiMaintenanceConfigurationResource_Properties_ScheduledEntries:
+    # How long, in hours, this configuration applies. (AI-inferred)
     duration_hours: Any = None
+    # The hour, in UTC, this scheduled configuration begins. (AI-inferred)
     start_hour_utc: Any = None
+    # The day of the week this schedule applies to. (AI-inferred)
     week_day: Any = None
 
 @dataclasses.dataclass

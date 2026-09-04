@@ -4,13 +4,20 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JobtargetgroupsJobTargetGroup_Properties_Members struct {
-	DatabaseName      any
-	ElasticPoolName   any
-	MembershipType    any
+	// The name of the specific database this job target group member applies to. (AI-inferred)
+	DatabaseName any
+	// The name of the elastic pool this job target group member applies to. (AI-inferred)
+	ElasticPoolName any
+	// Whether this member is explicitly included in, or excluded from, the target group. (AI-inferred)
+	MembershipType any
+	// A reference to the credential used to refresh this member's own dynamic target list, e.g. for an elastic pool or shard map. (AI-inferred)
 	RefreshCredential any
-	ServerName        any
-	ShardMapName      any
-	Type              any
+	// The name of the logical SQL server this job target group member applies to. (AI-inferred)
+	ServerName any
+	// The name of the shard map this job target group member applies to. (AI-inferred)
+	ShardMapName any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type JobtargetgroupsJobTargetGroup_Properties struct {

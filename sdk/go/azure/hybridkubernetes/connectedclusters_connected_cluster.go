@@ -22,16 +22,24 @@ type ConnectedclustersConnectedCluster_Properties_AadProfile struct {
 }
 
 type ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_AgentErrors struct {
+	// The specific software component this applies to. (AI-inferred)
 	Component any
-	Message   any
-	Severity  any
-	Time      any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// How serious this event is. (AI-inferred)
+	Severity any
+	// When this event occurred. (AI-inferred)
+	Time any
 }
 
 type ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_SystemComponents struct {
-	CurrentVersion       any
-	MajorVersion         any
-	Type                 any
+	// The version currently installed. (AI-inferred)
+	CurrentVersion any
+	// The major version component this applies to. (AI-inferred)
+	MajorVersion any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The version explicitly requested by the caller, overriding the default. (AI-inferred)
 	UserSpecifiedVersion any
 }
 
@@ -49,9 +57,12 @@ type ConnectedclustersConnectedCluster_Properties_ArcAgentProfile struct {
 }
 
 type ConnectedclustersConnectedCluster_Properties_ArcAgentryConfigurations struct {
-	Feature           any
+	// The specific feature this applies to. (AI-inferred)
+	Feature any
+	// Extension setting(s) encrypted at rest and never returned in subsequent reads. (AI-inferred)
 	ProtectedSettings any
-	Settings          any
+	// The setting(s) configuring this extension. (AI-inferred)
+	Settings any
 }
 
 type ConnectedclustersConnectedCluster_Properties_Gateway struct {
@@ -92,7 +103,8 @@ type ConnectedclustersConnectedCluster_Properties struct {
 	Distribution any
 	// The Kubernetes distribution version on this connected cluster.
 	DistributionVersion any
-	Gateway             any
+	// Configuration for the gateway used to connect this cluster back to Azure. (AI-inferred)
+	Gateway any
 	// The infrastructure on which the Kubernetes cluster represented by this connected cluster is running on.
 	Infrastructure any
 	// The Kubernetes version of the connected cluster resource

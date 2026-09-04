@@ -2,12 +2,16 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface InstancefailovergroupsInstanceFailoverGroup_Properties_ManagedInstancePairs {
+  /** A reference to the partner managed instance in this failover pairing. (AI-inferred) */
   partnerManagedInstanceId?: string | Computed<string>;
+  /** A reference to the primary managed instance in this failover pairing. (AI-inferred) */
   primaryManagedInstanceId?: string | Computed<string>;
 }
 
 export interface InstancefailovergroupsInstanceFailoverGroup_Properties_PartnerRegions {
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** Whether this partner region acts as the primary or a secondary in the failover group. (AI-inferred) */
   replicationRole?: string | Computed<string>;
 }
 

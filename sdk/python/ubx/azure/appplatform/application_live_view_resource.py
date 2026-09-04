@@ -8,19 +8,27 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ApplicationLiveViewResource_Properties_Components_Instances:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class ApplicationLiveViewResource_Properties_Components_ResourceRequests:
+    # The number of CPU core(s) allocated. (AI-inferred)
     cpu: Any = None
+    # The number of instance(s) provisioned. (AI-inferred)
     instance_count: Any = None
+    # The amount of memory allocated. (AI-inferred)
     memory: Any = None
 
 @dataclasses.dataclass
 class ApplicationLiveViewResource_Properties_Components:
+    # The instance(s) making up this deployment. (AI-inferred)
     instances: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The compute resource requirement(s) (CPU, memory) for this deployment. (AI-inferred)
     resource_requests: Any = None
 
 @dataclasses.dataclass

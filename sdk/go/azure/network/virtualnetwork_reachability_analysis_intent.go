@@ -8,7 +8,8 @@ type VirtualnetworkReachabilityAnalysisIntent_Properties_IpTraffic struct {
 	DestinationIps any
 	// The destination ports of the traffic.
 	DestinationPorts any
-	Protocols        any
+	// The network protocol(s) this applies to. (AI-inferred)
+	Protocols any
 	// List of source IP addresses of the traffic..
 	SourceIps any
 	// The source ports of the traffic.
@@ -16,6 +17,7 @@ type VirtualnetworkReachabilityAnalysisIntent_Properties_IpTraffic struct {
 }
 
 type VirtualnetworkReachabilityAnalysisIntent_Properties struct {
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
 	Description any
 	// Destination resource id to verify the reachability path of.
 	DestinationResourceId any

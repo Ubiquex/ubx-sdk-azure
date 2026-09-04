@@ -8,13 +8,18 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class SyncgroupsSyncGroup_Properties_Schema_Tables_Columns:
+    # The size (e.g. length/precision) of this column's own data type. (AI-inferred)
     data_size: Any = None
+    # This column's own SQL data type. (AI-inferred)
     data_type: Any = None
+    # This column's own name, quoted as needed for use in SQL statements. (AI-inferred)
     quoted_name: Any = None
 
 @dataclasses.dataclass
 class SyncgroupsSyncGroup_Properties_Schema_Tables:
+    # The column(s) of this table included in the sync group's own schema. (AI-inferred)
     columns: Any = None
+    # This table's own name, quoted as needed for use in SQL statements. (AI-inferred)
     quoted_name: Any = None
 
 @dataclasses.dataclass

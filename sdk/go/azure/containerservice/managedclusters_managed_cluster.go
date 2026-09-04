@@ -11,14 +11,20 @@ type ManagedclustersManagedCluster_ExtendedLocation struct {
 }
 
 type ManagedclustersManagedCluster_Identity_DelegatedResources struct {
-	Location         any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// A reference to the resource this DNS zone referral applies to. (AI-inferred)
 	ReferralResource any
-	ResourceId       any
-	TenantId         any
+	// A reference to the resource this applies to. (AI-inferred)
+	ResourceId any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
 }
 
 type ManagedclustersManagedCluster_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -53,18 +59,25 @@ type ManagedclustersManagedCluster_Properties_AadProfile struct {
 }
 
 type ManagedclustersManagedCluster_Properties_AddonProfiles_Identity struct {
-	ClientId   any
-	ObjectId   any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// The Microsoft Entra ID object identifier this applies to. (AI-inferred)
+	ObjectId any
+	// A reference to the resource this applies to. (AI-inferred)
 	ResourceId any
 }
 
 type ManagedclustersManagedCluster_Properties_AddonProfiles struct {
-	Config   any
-	Enabled  any
+	// The configuration for this resource. (AI-inferred)
+	Config any
+	// Whether this feature is turned on. (AI-inferred)
+	Enabled any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
 	Identity any
 }
 
 type ManagedclustersManagedCluster_Properties_AgentPoolProfiles struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 
@@ -238,6 +251,7 @@ type ManagedclustersManagedCluster_Properties_IngressProfile struct {
 }
 
 type ManagedclustersManagedCluster_Properties_LinuxProfile_Ssh_PublicKeys struct {
+	// The public key data used for authentication. (AI-inferred)
 	KeyData any
 }
 
@@ -289,6 +303,7 @@ type ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworking 
 }
 
 type ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIps struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
@@ -402,32 +417,47 @@ type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIde
 }
 
 type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error struct {
-	Code    any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
 	Details any
+	// A human-readable description of this result. (AI-inferred)
 	Message any
-	Target  any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error struct {
+	// Detail about an error that occurred. (AI-inferred)
 	Error any
 }
 
 type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo struct {
+	// Detail about an error that occurred. (AI-inferred)
 	Error any
 }
 
 type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities struct {
-	BindingSelector   any
-	Identity          any
-	Name              any
-	Namespace         any
-	ProvisioningInfo  any
+	// Selects which resource(s) this DNS binding applies to. (AI-inferred)
+	BindingSelector any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The Kubernetes namespace this applies to. (AI-inferred)
+	Namespace any
+	// Additional detail about this resource's own provisioning progress. (AI-inferred)
+	ProvisioningInfo any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
 type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentityExceptions struct {
-	Name      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The Kubernetes namespace this applies to. (AI-inferred)
 	Namespace any
+	// The Kubernetes pod label(s) this applies to. (AI-inferred)
 	PodLabels any
 }
 
@@ -448,12 +478,18 @@ type ManagedclustersManagedCluster_Properties_PowerState struct {
 }
 
 type ManagedclustersManagedCluster_Properties_PrivateLinkResources struct {
-	GroupId              any
-	Id                   any
-	Name                 any
+	// The sub-resource this connection targets on the destination service. (AI-inferred)
+	GroupId any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the Private Link service this connects to. (AI-inferred)
 	PrivateLinkServiceId any
-	RequiredMembers      any
-	Type                 any
+	// The member(s) required for this rule to be satisfied. (AI-inferred)
+	RequiredMembers any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ManagedclustersManagedCluster_Properties_SchedulerProfile_Upstream struct {
@@ -478,8 +514,10 @@ type ManagedclustersManagedCluster_Properties_SecurityProfile_AzureKeyVaultKms s
 }
 
 type ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGating_Identities struct {
+	// A reference to the Azure Container Registry this applies to. (AI-inferred)
 	AzureContainerRegistry any
-	Identity               any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
 }
 
 type ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGating struct {
@@ -539,15 +577,21 @@ type ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Certifica
 }
 
 type ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_EgressGateways struct {
-	Enabled                  any
+	// Whether this feature is turned on. (AI-inferred)
+	Enabled any
+	// A reference to the gateway configuration this applies to. (AI-inferred)
 	GatewayConfigurationName any
-	Name                     any
-	Namespace                any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The Kubernetes namespace this applies to. (AI-inferred)
+	Namespace any
 }
 
 type ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_IngressGateways struct {
+	// Whether this feature is turned on. (AI-inferred)
 	Enabled any
-	Mode    any
+	// The operating mode this configuration uses. (AI-inferred)
+	Mode any
 }
 
 type ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components struct {
@@ -583,16 +627,23 @@ type ManagedclustersManagedCluster_Properties_ServicePrincipalProfile struct {
 }
 
 type ManagedclustersManagedCluster_Properties_Status_ProvisioningError_AdditionalInfo struct {
+	// Additional detail about this result. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type ManagedclustersManagedCluster_Properties_Status_ProvisioningError_Details struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type ManagedclustersManagedCluster_Properties_Status_ProvisioningError struct {

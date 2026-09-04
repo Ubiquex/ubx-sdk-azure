@@ -4,25 +4,36 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_Properties_TrafficDetectionRule struct {
+	// The observed packet rate. (AI-inferred)
 	PacketsPerSecond any
-	TrafficType      any
+	// The category of traffic this applies to. (AI-inferred)
+	TrafficType any
 }
 
 type VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_Properties struct {
-	DetectionMode        any
-	ProvisioningState    any
+	// How this traffic anomaly is detected. (AI-inferred)
+	DetectionMode any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The rule used to detect this traffic pattern. (AI-inferred)
 	TrafficDetectionRule any
 }
 
 type VirtualnetworkDdosCustomPolicy_Properties_DetectionRules struct {
-	Etag       any
-	Id         any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type VirtualnetworkDdosCustomPolicy_Properties_FrontEndIpConfiguration struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 

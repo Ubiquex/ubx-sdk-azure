@@ -38,10 +38,12 @@ export interface GalleryimagesGalleryImages_Properties_Status {
   errorMessage?: string | Computed<string>;
   /** The progress of the operation in percentage */
   progressPercentage?: number | Computed<number>;
+  /** The outcome of the most recent operation performed on this gallery image, e.g. `Succeeded`, `Failed`, or `InProgress`. (AI-inferred) */
   provisioningStatus?: GalleryimagesGalleryImages_Properties_Status_ProvisioningStatus | Computed<GalleryimagesGalleryImages_Properties_Status_ProvisioningStatus>;
 }
 
 export interface GalleryimagesGalleryImages_Properties_Version_Properties_StorageProfile_OsDiskImage {
+  /** The size, in MB, of the OS disk image for this gallery image version. (AI-inferred) */
   sizeInMb?: number | Computed<number>;
 }
 

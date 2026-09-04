@@ -7,14 +7,20 @@ export interface OpenapiObjectReplicationPolicy_Properties_Metrics {
 }
 
 export interface OpenapiObjectReplicationPolicy_Properties_Rules_Filters {
+  /** The earliest creation time this filter matches. (AI-inferred) */
   minCreationTime?: string | Computed<string>;
+  /** The blob name prefix(es) this rule matches. (AI-inferred) */
   prefixMatch?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiObjectReplicationPolicy_Properties_Rules {
+  /** The target container objects are copied or moved into. (AI-inferred) */
   destinationContainer?: string | Computed<string>;
+  /** The condition(s) restricting which blob(s) this rule applies to. (AI-inferred) */
   filters?: OpenapiObjectReplicationPolicy_Properties_Rules_Filters | Computed<OpenapiObjectReplicationPolicy_Properties_Rules_Filters>;
+  /** A reference to the specific rule this applies to. (AI-inferred) */
   ruleId?: string | Computed<string>;
+  /** The container objects are copied or moved from. (AI-inferred) */
   sourceContainer?: string | Computed<string>;
 }
 

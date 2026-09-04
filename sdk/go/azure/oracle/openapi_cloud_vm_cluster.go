@@ -13,14 +13,19 @@ type OpenapiCloudVmCluster_Properties_DataCollectionOptions struct {
 }
 
 type OpenapiCloudVmCluster_Properties_FileSystemConfigurationDetails struct {
+	// The size of this file system, in gibibytes. (AI-inferred)
 	FileSystemSizeGb any
-	MountPoint       any
+	// The path this file system is mounted at. (AI-inferred)
+	MountPoint any
 }
 
 type OpenapiCloudVmCluster_Properties_IormConfigCache_DbPlans struct {
-	DbName          any
+	// The name of this database. (AI-inferred)
+	DbName any
+	// The maximum amount of flash cache allocated. (AI-inferred)
 	FlashCacheLimit any
-	Share           any
+	// The file share this applies to. (AI-inferred)
+	Share any
 }
 
 type OpenapiCloudVmCluster_Properties_IormConfigCache struct {
@@ -35,13 +40,17 @@ type OpenapiCloudVmCluster_Properties_IormConfigCache struct {
 }
 
 type OpenapiCloudVmCluster_Properties_NsgCidrs_DestinationPortRange struct {
+	// The maximum value allowed. (AI-inferred)
 	Max any
+	// The minimum value allowed. (AI-inferred)
 	Min any
 }
 
 type OpenapiCloudVmCluster_Properties_NsgCidrs struct {
+	// The destination port range this rule matches. (AI-inferred)
 	DestinationPortRange any
-	Source               any
+	// Where this data or configuration is sourced from. (AI-inferred)
+	Source any
 }
 
 type OpenapiCloudVmCluster_Properties struct {

@@ -6,6 +6,7 @@ export interface VirtualnetworkReachabilityAnalysisIntent_Properties_IpTraffic {
   destinationIps: string[] | Computed<string[]>;
   /** The destination ports of the traffic. */
   destinationPorts: string[] | Computed<string[]>;
+  /** The network protocol(s) this applies to. (AI-inferred) */
   protocols: string[] | Computed<string[]>;
   /** List of source IP addresses of the traffic.. */
   sourceIps: string[] | Computed<string[]>;
@@ -14,6 +15,7 @@ export interface VirtualnetworkReachabilityAnalysisIntent_Properties_IpTraffic {
 }
 
 export interface VirtualnetworkReachabilityAnalysisIntent_Properties {
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
   /** Destination resource id to verify the reachability path of. */
   destinationResourceId: string | Computed<string>;

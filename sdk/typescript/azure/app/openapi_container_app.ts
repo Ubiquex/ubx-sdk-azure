@@ -9,7 +9,9 @@ export interface OpenapiContainerApp_ExtendedLocation {
 }
 
 export interface OpenapiContainerApp_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -61,13 +63,18 @@ export interface OpenapiContainerApp_Properties_Configuration_Dapr {
 }
 
 export interface OpenapiContainerApp_Properties_Configuration_IdentitySettings {
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: string | Computed<string>;
+  /** Hook(s) run at specific points in this container's own lifecycle. (AI-inferred) */
   lifecycle?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Configuration_Ingress_AdditionalPortMappings {
+  /** The port this container exposes. (AI-inferred) */
   exposedPort?: number | Computed<number>;
+  /** Whether this endpoint is reachable from outside the environment. (AI-inferred) */
   external?: boolean | Computed<boolean>;
+  /** The port on the container this rule forwards traffic to. (AI-inferred) */
   targetPort?: number | Computed<number>;
 }
 
@@ -87,15 +94,22 @@ export interface OpenapiContainerApp_Properties_Configuration_Ingress_CorsPolicy
 }
 
 export interface OpenapiContainerApp_Properties_Configuration_Ingress_CustomDomains {
+  /** Whether this service binding is created automatically or supplied manually by the caller. (AI-inferred) */
   bindingType?: string | Computed<string>;
+  /** A reference to the certificate this applies to. (AI-inferred) */
   certificateId?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Configuration_Ingress_IpSecurityRestrictions {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The IP address range, in CIDR notation, this applies to. (AI-inferred) */
   ipAddressRange?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -105,9 +119,13 @@ export interface OpenapiContainerApp_Properties_Configuration_Ingress_StickySess
 }
 
 export interface OpenapiContainerApp_Properties_Configuration_Ingress_Traffic {
+  /** A human-readable label for this item. (AI-inferred) */
   label?: string | Computed<string>;
+  /** Whether traffic is routed to the most recently deployed revision. (AI-inferred) */
   latestRevision?: boolean | Computed<boolean>;
+  /** The name of this revision. (AI-inferred) */
   revisionName?: string | Computed<string>;
+  /** The relative weight of this destination. (AI-inferred) */
   weight?: number | Computed<number>;
 }
 
@@ -141,9 +159,13 @@ export interface OpenapiContainerApp_Properties_Configuration_Ingress {
 }
 
 export interface OpenapiContainerApp_Properties_Configuration_Registries {
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: string | Computed<string>;
+  /** A reference to the secret holding the password credential. (AI-inferred) */
   passwordSecretRef?: string | Computed<string>;
+  /** The server hostname or address this connects to. (AI-inferred) */
   server?: string | Computed<string>;
+  /** The username used to authenticate. (AI-inferred) */
   username?: string | Computed<string>;
 }
 
@@ -158,9 +180,13 @@ export interface OpenapiContainerApp_Properties_Configuration_Runtime {
 }
 
 export interface OpenapiContainerApp_Properties_Configuration_Secrets {
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: string | Computed<string>;
+  /** A reference to the Key Vault secret this value is sourced from. (AI-inferred) */
   keyVaultUrl?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -191,98 +217,152 @@ export interface OpenapiContainerApp_Properties_Configuration {
 }
 
 export interface OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet_HttpHeaders {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet {
+  /** The hostname this applies to. (AI-inferred) */
   host?: string | Computed<string>;
+  /** Extra HTTP headers this probe sends with its request. (AI-inferred) */
   httpHeaders?: OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet_HttpHeaders[] | Computed<OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet_HttpHeaders[]>;
+  /** A file or URL path. (AI-inferred) */
   path?: string | Computed<string>;
+  /** A network port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** The URI scheme (`HTTP` or `HTTPS`) this probe uses. (AI-inferred) */
   scheme?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_Containers_Probes_TcpSocket {
+  /** The hostname this applies to. (AI-inferred) */
   host?: string | Computed<string>;
+  /** A network port number. (AI-inferred) */
   port?: number | Computed<number>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_Containers_Probes {
+  /** How many consecutive probe failures are tolerated before the container is considered unhealthy. (AI-inferred) */
   failureThreshold?: number | Computed<number>;
+  /** Configures this probe to send an HTTP GET request to the container. (AI-inferred) */
   httpGet?: OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet | Computed<OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet>;
+  /** How long to wait after the container starts before running this probe for the first time. (AI-inferred) */
   initialDelaySeconds?: number | Computed<number>;
+  /** How often, in seconds, this probe runs. (AI-inferred) */
   periodSeconds?: number | Computed<number>;
+  /** How many consecutive successful probes mark the container healthy again. (AI-inferred) */
   successThreshold?: number | Computed<number>;
+  /** Configures this probe to check the container's own port is accepting TCP connections. (AI-inferred) */
   tcpSocket?: OpenapiContainerApp_Properties_Template_Containers_Probes_TcpSocket | Computed<OpenapiContainerApp_Properties_Template_Containers_Probes_TcpSocket>;
+  /** How long, in seconds, the container is given to shut down gracefully before being forcibly stopped. (AI-inferred) */
   terminationGracePeriodSeconds?: number | Computed<number>;
+  /** How long this probe waits for a response before treating the attempt as a failure. (AI-inferred) */
   timeoutSeconds?: number | Computed<number>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_Containers {
+  /** The health probe(s) configured on this container. (AI-inferred) */
   probes?: OpenapiContainerApp_Properties_Template_Containers_Probes[] | Computed<OpenapiContainerApp_Properties_Template_Containers_Probes[]>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_InitContainers_Env {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A reference to the secret holding this value. (AI-inferred) */
   secretRef?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_InitContainers_Resources {
+  /** The number of CPU core(s) allocated. (AI-inferred) */
   cpu?: number | Computed<number>;
+  /** The amount of ephemeral (scratch) storage allocated. (AI-inferred) */
   ephemeralStorage?: string | Computed<string>;
+  /** The amount of memory allocated. (AI-inferred) */
   memory?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_InitContainers_VolumeMounts {
+  /** The path this volume is mounted at inside the container. (AI-inferred) */
   mountPath?: string | Computed<string>;
+  /** A specific subdirectory within the volume to mount, rather than its own root. (AI-inferred) */
   subPath?: string | Computed<string>;
+  /** The name of this volume. (AI-inferred) */
   volumeName?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_InitContainers {
+  /** The argument(s) passed to the container's own command. (AI-inferred) */
   args?: string[] | Computed<string[]>;
+  /** The container entrypoint command, overriding the image's own default. (AI-inferred) */
   command?: string[] | Computed<string[]>;
+  /** Environment variable(s) set in the container. (AI-inferred) */
   env?: OpenapiContainerApp_Properties_Template_InitContainers_Env[] | Computed<OpenapiContainerApp_Properties_Template_InitContainers_Env[]>;
+  /** The container image reference to run. (AI-inferred) */
   image?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The compute resource requirement(s) (CPU, memory) for this container. (AI-inferred) */
   resources?: OpenapiContainerApp_Properties_Template_InitContainers_Resources | Computed<OpenapiContainerApp_Properties_Template_InitContainers_Resources>;
+  /** The volume(s) mounted into this container. (AI-inferred) */
   volumeMounts?: OpenapiContainerApp_Properties_Template_InitContainers_VolumeMounts[] | Computed<OpenapiContainerApp_Properties_Template_InitContainers_VolumeMounts[]>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_Auth {
+  /** A reference to the secret holding this value. (AI-inferred) */
   secretRef?: string | Computed<string>;
+  /** The parameter this scaling trigger reads from. (AI-inferred) */
   triggerParameter?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue {
+  /** The name of the associated storage account. (AI-inferred) */
   accountName?: string | Computed<string>;
+  /** Authentication configuration for this app. (AI-inferred) */
   auth?: OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_Auth[] | Computed<OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_Auth[]>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: string | Computed<string>;
+  /** The queue message count threshold that triggers scaling. (AI-inferred) */
   queueLength?: number | Computed<number>;
+  /** The name of the queue this applies to. (AI-inferred) */
   queueName?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_Scale_Rules_Custom {
+  /** Authentication configuration for this app. (AI-inferred) */
   auth?: OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_Auth[] | Computed<OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_Auth[]>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: string | Computed<string>;
+  /** Additional, free-form metadata associated with this resource. (AI-inferred) */
   metadata?: Record<string, string> | Computed<Record<string, string>>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_Scale_Rules_Http {
+  /** Authentication configuration for this app. (AI-inferred) */
   auth?: OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_Auth[] | Computed<OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_Auth[]>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: string | Computed<string>;
+  /** Additional, free-form metadata associated with this resource. (AI-inferred) */
   metadata?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_Scale_Rules {
+  /** Configuration for scaling based on an Azure Storage Queue's own message count. (AI-inferred) */
   azureQueue?: OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue | Computed<OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue>;
+  /** A caller-defined authentication provider configuration. (AI-inferred) */
   custom?: OpenapiContainerApp_Properties_Template_Scale_Rules_Custom | Computed<OpenapiContainerApp_Properties_Template_Scale_Rules_Custom>;
+  /** Configuration for scaling based on concurrent HTTP request count. (AI-inferred) */
   http?: OpenapiContainerApp_Properties_Template_Scale_Rules_Http | Computed<OpenapiContainerApp_Properties_Template_Scale_Rules_Http>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Configures this probe to check the container's own port is accepting TCP connections. (AI-inferred) */
   tcp?: OpenapiContainerApp_Properties_Template_Scale_Rules_Http | Computed<OpenapiContainerApp_Properties_Template_Scale_Rules_Http>;
 }
 
@@ -300,20 +380,29 @@ export interface OpenapiContainerApp_Properties_Template_Scale {
 }
 
 export interface OpenapiContainerApp_Properties_Template_ServiceBinds {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A reference to the connected service this applies to. (AI-inferred) */
   serviceId?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_Volumes_Secrets {
+  /** A file or URL path. (AI-inferred) */
   path?: string | Computed<string>;
+  /** A reference to the secret holding this value. (AI-inferred) */
   secretRef?: string | Computed<string>;
 }
 
 export interface OpenapiContainerApp_Properties_Template_Volumes {
+  /** Additional mount option(s) applied to this volume. (AI-inferred) */
   mountOptions?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The secret(s) defined on this app. (AI-inferred) */
   secrets?: OpenapiContainerApp_Properties_Template_Volumes_Secrets[] | Computed<OpenapiContainerApp_Properties_Template_Volumes_Secrets[]>;
+  /** The name of the storage resource this applies to. (AI-inferred) */
   storageName?: string | Computed<string>;
+  /** The category of storage this volume uses. (AI-inferred) */
   storageType?: string | Computed<string>;
 }
 

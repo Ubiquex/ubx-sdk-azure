@@ -8,9 +8,13 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class RoledefinitionscallsRoleDefinition_Properties_Permissions:
+    # The control-plane operation(s) this role grants, e.g. `Microsoft.Compute/virtualMachines/write`; wildcards are supported. (AI-inferred)
     actions: Any = None
+    # The data-plane operation(s) this role grants -- actions on the data inside a resource, rather than the resource itself. (AI-inferred)
     data_actions: Any = None
+    # Control-plane operation(s) explicitly excluded from `actions`, even if they'd otherwise match a wildcard. (AI-inferred)
     not_actions: Any = None
+    # Data-plane operation(s) explicitly excluded from `data_actions`, even if they'd otherwise match a wildcard. (AI-inferred)
     not_data_actions: Any = None
 
 @dataclasses.dataclass

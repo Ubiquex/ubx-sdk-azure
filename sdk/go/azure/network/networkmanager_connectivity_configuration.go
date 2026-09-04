@@ -4,10 +4,14 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerConnectivityConfiguration_Properties_AppliesToGroups struct {
+	// Whether direct connectivity is established between all members of this network group. (AI-inferred)
 	GroupConnectivity any
-	IsGlobal          any
-	NetworkGroupId    any
-	UseHubGateway     any
+	// Whether this connectivity configuration spans multiple regions. (AI-inferred)
+	IsGlobal any
+	// A reference to the network group this applies to. (AI-inferred)
+	NetworkGroupId any
+	// Whether traffic between spoke virtual networks is routed through the hub's own gateway. (AI-inferred)
+	UseHubGateway any
 }
 
 type NetworkmanagerConnectivityConfiguration_Properties_ConnectivityCapabilities struct {
@@ -20,7 +24,9 @@ type NetworkmanagerConnectivityConfiguration_Properties_ConnectivityCapabilities
 }
 
 type NetworkmanagerConnectivityConfiguration_Properties_Hubs struct {
-	ResourceId   any
+	// A reference to the resource this applies to. (AI-inferred)
+	ResourceId any
+	// The category of resource this applies to. (AI-inferred)
 	ResourceType any
 }
 

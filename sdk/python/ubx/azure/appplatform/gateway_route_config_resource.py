@@ -13,14 +13,23 @@ class GatewayRouteConfigResource_Properties_OpenApi:
 
 @dataclasses.dataclass
 class GatewayRouteConfigResource_Properties_Routes:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The condition(s) restricting which request(s) this rule applies to. (AI-inferred)
     filters: Any = None
+    # The relative evaluation order of this item. (AI-inferred)
     order: Any = None
+    # The condition(s) a request must satisfy for this route to match. (AI-inferred)
     predicates: Any = None
+    # Whether single sign-on is enabled for this application. (AI-inferred)
     sso_enabled: Any = None
+    # User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
     tags: Any = None
+    # A human-readable title for this item. (AI-inferred)
     title: Any = None
+    # Whether the caller's own OAuth access token is forwarded to backend services. (AI-inferred)
     token_relay: Any = None
+    # A resource URI. (AI-inferred)
     uri: Any = None
 
 @dataclasses.dataclass

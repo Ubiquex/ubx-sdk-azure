@@ -24,13 +24,20 @@ type OpenapiTable_Properties_ResultStatistics struct {
 }
 
 type OpenapiTable_Properties_Schema_Columns struct {
-	DataTypeHint     any
-	Description      any
-	DisplayName      any
+	// A hint indicating this custom field's own intended data type. (AI-inferred)
+	DataTypeHint any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// Whether this column is shown by default in the query results view. (AI-inferred)
 	IsDefaultDisplay any
-	IsHidden         any
-	Name             any
-	Type             any
+	// Whether this column is hidden from the query results view. (AI-inferred)
+	IsHidden any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiTable_Properties_Schema struct {

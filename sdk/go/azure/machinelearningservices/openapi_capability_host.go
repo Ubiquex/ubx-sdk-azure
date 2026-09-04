@@ -37,12 +37,14 @@ var OpenapiCapabilityHost_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiCapabilityHostConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
 
 type OpenapiCapabilityHostAttrs struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// path parameter, not part of the API's own resource representation
 	Name any

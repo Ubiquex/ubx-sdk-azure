@@ -11,11 +11,16 @@ type OpenapiMachineRunCommand_Properties_ErrorBlobManagedIdentity struct {
 }
 
 type OpenapiMachineRunCommand_Properties_InstanceView_Statuses struct {
-	Code          any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// A human-readable summary of this status. (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of this status, e.g. `Info`, `Warning`, or `Error`. (AI-inferred)
+	Level any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// When this status was last reported. (AI-inferred)
+	Time any
 }
 
 type OpenapiMachineRunCommand_Properties_InstanceView struct {
@@ -38,7 +43,9 @@ type OpenapiMachineRunCommand_Properties_InstanceView struct {
 }
 
 type OpenapiMachineRunCommand_Properties_Parameters struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// This parameter's own value. (AI-inferred)
 	Value any
 }
 

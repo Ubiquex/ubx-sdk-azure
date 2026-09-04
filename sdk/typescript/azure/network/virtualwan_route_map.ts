@@ -2,27 +2,40 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualwanRouteMap_Properties_Rules_Actions_Parameters {
+  /** The BGP AS-path attribute observed for this route. (AI-inferred) */
   asPath?: string[] | Computed<string[]>;
+  /** A BGP community value attached to this route. (AI-inferred) */
   community?: string[] | Computed<string[]>;
+  /** The route prefix this rule matches. (AI-inferred) */
   routePrefix?: string[] | Computed<string[]>;
 }
 
 export interface VirtualwanRouteMap_Properties_Rules_Actions {
+  /** The parameter(s) making up this configuration. (AI-inferred) */
   parameters?: VirtualwanRouteMap_Properties_Rules_Actions_Parameters[] | Computed<VirtualwanRouteMap_Properties_Rules_Actions_Parameters[]>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface VirtualwanRouteMap_Properties_Rules_MatchCriteria {
+  /** The BGP AS-path attribute observed for this route. (AI-inferred) */
   asPath?: string[] | Computed<string[]>;
+  /** A BGP community value attached to this route. (AI-inferred) */
   community?: string[] | Computed<string[]>;
+  /** The condition that must hold for this rule to apply. (AI-inferred) */
   matchCondition?: string | Computed<string>;
+  /** The route prefix this rule matches. (AI-inferred) */
   routePrefix?: string[] | Computed<string[]>;
 }
 
 export interface VirtualwanRouteMap_Properties_Rules {
+  /** The action(s) this rule or policy applies. (AI-inferred) */
   actions?: VirtualwanRouteMap_Properties_Rules_Actions[] | Computed<VirtualwanRouteMap_Properties_Rules_Actions[]>;
+  /** Whether all or any of this rule's own conditions must match. (AI-inferred) */
   matchCriteria?: VirtualwanRouteMap_Properties_Rules_MatchCriteria[] | Computed<VirtualwanRouteMap_Properties_Rules_MatchCriteria[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** What happens next when this rule's own condition matches. (AI-inferred) */
   nextStepIfMatched?: string | Computed<string>;
 }
 

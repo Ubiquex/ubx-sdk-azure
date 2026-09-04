@@ -8,15 +8,22 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiRuleSet_Properties_Rules_Actions:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiRuleSet_Properties_Rules:
+    # The action(s) this rule applies. (AI-inferred)
     actions: Any = None
+    # The condition(s) that must all be satisfied for this rule to match. (AI-inferred)
     conditions: Any = None
+    # Whether rule processing stops after this rule matches, or continues to subsequent rules. (AI-inferred)
     match_processing_behavior: Any = None
+    # The relative evaluation order of this item. (AI-inferred)
     order: Any = None
+    # The name of this rule. (AI-inferred)
     rule_name: Any = None
+    # The name of this managed rule set. (AI-inferred)
     rule_set_name: Any = None
 
 @dataclasses.dataclass

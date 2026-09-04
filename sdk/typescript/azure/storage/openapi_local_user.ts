@@ -2,13 +2,18 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiLocalUser_Properties_PermissionScopes {
+  /** The access permission(s) granted. (AI-inferred) */
   permissions?: string | Computed<string>;
+  /** The name of this resource. (AI-inferred) */
   resourceName?: string | Computed<string>;
+  /** The storage service (e.g. blob, file, queue) this applies to. (AI-inferred) */
   service?: string | Computed<string>;
 }
 
 export interface OpenapiLocalUser_Properties_SshAuthorizedKeys {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The key of this key/value pair. (AI-inferred) */
   key?: string | Computed<string>;
 }
 

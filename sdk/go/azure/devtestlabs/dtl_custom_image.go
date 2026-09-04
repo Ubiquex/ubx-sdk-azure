@@ -13,7 +13,9 @@ type DtlCustomImage_Properties_CustomImagePlan struct {
 }
 
 type DtlCustomImage_Properties_DataDiskStorageInfo struct {
-	Lun         any
+	// This disk's own logical unit number. (AI-inferred)
+	Lun any
+	// The type of storage this uses. (AI-inferred)
 	StorageType any
 }
 

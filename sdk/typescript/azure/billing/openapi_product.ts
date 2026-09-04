@@ -2,12 +2,16 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiProduct_Properties_LastCharge {
+  /** The currency amounts are expressed in. (AI-inferred) */
   currency?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: number | Computed<number>;
 }
 
 export interface OpenapiProduct_Properties_Reseller {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A reference to the reseller associated with this account. (AI-inferred) */
   resellerId?: string | Computed<string>;
 }
 

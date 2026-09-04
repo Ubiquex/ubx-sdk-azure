@@ -33,6 +33,7 @@ class OpenapiSourceControl_Properties:
     publish_runbook: Any = None
     # The repo url of the source control.
     repo_url: Any = None
+    # The credential used to authenticate this webhook. (AI-inferred)
     security_token: Any = None
     # The source type. Must be one of VsoGit, VsoTfvc, GitHub.
     source_type: Any = None

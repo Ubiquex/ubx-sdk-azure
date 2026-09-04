@@ -18,10 +18,14 @@ type OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute struct {
 }
 
 type OpenapiEnvironmentVersion_Properties_InferenceConfig struct {
-	LivenessRoute  any
+	// The endpoint path checked to determine whether this deployment is alive. (AI-inferred)
+	LivenessRoute any
+	// The endpoint path checked to determine whether this deployment is ready to serve traffic. (AI-inferred)
 	ReadinessRoute any
-	ScoringRoute   any
-	StartupRoute   any
+	// The endpoint path inference requests are sent to. (AI-inferred)
+	ScoringRoute any
+	// The endpoint path checked during this deployment's own startup phase. (AI-inferred)
+	StartupRoute any
 }
 
 type OpenapiEnvironmentVersion_Properties struct {
@@ -34,7 +38,8 @@ type OpenapiEnvironmentVersion_Properties struct {
 	// Environment type is either user created or curated by Azure ML service
 	EnvironmentType any
 	// Name of the image that will be used for the environment. <seealso href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-custom-docker-image#use-a-custom-base-image" />
-	Image           any
+	Image any
+	// Configuration for this deployment's own inference behavior. (AI-inferred)
 	InferenceConfig any
 	// The type of operating system.
 	OsType any

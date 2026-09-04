@@ -4,10 +4,15 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSecret_Properties_Attributes struct {
+	// When this resource was created. (AI-inferred)
 	Created any
+	// Whether this key, secret, or certificate is currently enabled for use. (AI-inferred)
 	Enabled any
-	Exp     any
-	Nbf     any
+	// When this key, secret, or certificate expires. (AI-inferred)
+	Exp any
+	// The time before which this key, secret, or certificate isn't yet valid. (AI-inferred)
+	Nbf any
+	// When this resource was last updated. (AI-inferred)
 	Updated any
 }
 

@@ -7,7 +7,9 @@ export interface OpenapiJobBase_Properties_Identity {
 }
 
 export interface OpenapiJobBase_Properties_NotificationSetting_Webhooks {
+  /** The category of event this represents. (AI-inferred) */
   eventType?: string | Computed<string>;
+  /** The kind of webhook this represents. (AI-inferred) */
   webhookType?: string | Computed<string>;
 }
 
@@ -21,16 +23,24 @@ export interface OpenapiJobBase_Properties_NotificationSetting {
 }
 
 export interface OpenapiJobBase_Properties_Services_Nodes {
+  /** Whether `nodes` specifies a fixed count or a dedicated/scale setting. (AI-inferred) */
   nodesValueType?: string | Computed<string>;
 }
 
 export interface OpenapiJobBase_Properties_Services {
+  /** The endpoint this resource is reachable at. (AI-inferred) */
   endpoint?: string | Computed<string>;
+  /** A human-readable description of the error. (AI-inferred) */
   errorMessage?: string | Computed<string>;
+  /** The category of interactive service exposed by this job, e.g. a Jupyter notebook or VS Code. (AI-inferred) */
   jobServiceType?: string | Computed<string>;
+  /** The compute node(s) making up this cluster. (AI-inferred) */
   nodes?: OpenapiJobBase_Properties_Services_Nodes | Computed<OpenapiJobBase_Properties_Services_Nodes>;
+  /** A network port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Record<string, string> | Computed<Record<string, string>>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 

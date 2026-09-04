@@ -4,7 +4,9 @@ package paloaltonetworks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CloudngfwFirewallResource_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -29,7 +31,9 @@ type CloudngfwFirewallResource_Properties_AssociatedRulestack struct {
 }
 
 type CloudngfwFirewallResource_Properties_DnsSettings_DnsServers struct {
-	Address    any
+	// The network address this applies to. (AI-inferred)
+	Address any
+	// A reference to the resource this applies to. (AI-inferred)
 	ResourceId any
 }
 
@@ -43,15 +47,21 @@ type CloudngfwFirewallResource_Properties_DnsSettings struct {
 }
 
 type CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfiguration struct {
+	// The network address this applies to. (AI-inferred)
 	Address any
-	Port    any
+	// A network port number. (AI-inferred)
+	Port any
 }
 
 type CloudngfwFirewallResource_Properties_FrontEndSettings struct {
-	BackendConfiguration  any
+	// Configuration for the backend service this rule forwards traffic to. (AI-inferred)
+	BackendConfiguration any
+	// Configuration for the frontend endpoint this rule listens on. (AI-inferred)
 	FrontendConfiguration any
-	Name                  any
-	Protocol              any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The network protocol used. (AI-inferred)
+	Protocol any
 }
 
 type CloudngfwFirewallResource_Properties_MarketplaceDetails struct {

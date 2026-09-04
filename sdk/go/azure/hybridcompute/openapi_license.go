@@ -4,7 +4,9 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLicense_Properties_LicenseDetails_VolumeLicenseDetails struct {
-	InvoiceId   any
+	// The invoice number associated with this volume license. (AI-inferred)
+	InvoiceId any
+	// The program year this Software Assurance/subscription benefit applies to. (AI-inferred)
 	ProgramYear any
 }
 

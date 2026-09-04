@@ -2,9 +2,13 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualwanVirtualHubRouteTableV2_Properties_Routes {
+  /** The category of destination this rule applies to. (AI-inferred) */
   destinationType?: string | Computed<string>;
+  /** The destination(s) this rule applies to. (AI-inferred) */
   destinations?: string[] | Computed<string[]>;
+  /** The kind of next hop this route uses, e.g. `VirtualAppliance`, `VnetLocal`, `Internet`, or `None`. (AI-inferred) */
   nextHopType?: string | Computed<string>;
+  /** The next hop(s) traffic matching this route is forwarded to. (AI-inferred) */
   nextHops?: string[] | Computed<string[]>;
 }
 

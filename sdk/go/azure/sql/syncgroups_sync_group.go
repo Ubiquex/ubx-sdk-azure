@@ -4,13 +4,18 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SyncgroupsSyncGroup_Properties_Schema_Tables_Columns struct {
-	DataSize   any
-	DataType   any
+	// The size (e.g. length/precision) of this column's own data type. (AI-inferred)
+	DataSize any
+	// This column's own SQL data type. (AI-inferred)
+	DataType any
+	// This column's own name, quoted as needed for use in SQL statements. (AI-inferred)
 	QuotedName any
 }
 
 type SyncgroupsSyncGroup_Properties_Schema_Tables struct {
-	Columns    any
+	// The column(s) of this table included in the sync group's own schema. (AI-inferred)
+	Columns any
+	// This table's own name, quoted as needed for use in SQL statements. (AI-inferred)
 	QuotedName any
 }
 

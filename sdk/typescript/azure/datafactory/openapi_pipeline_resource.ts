@@ -2,22 +2,33 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiPipelineResource_Properties_Activities_DependsOn {
+  /** A reference to the pipeline activity this applies to. (AI-inferred) */
   activity?: string | Computed<string>;
+  /** The condition(s) (e.g. `Succeeded`, `Failed`) a dependency must satisfy for this activity to run. (AI-inferred) */
   dependencyConditions?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiPipelineResource_Properties_Activities_UserProperties {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 
 export interface OpenapiPipelineResource_Properties_Activities {
+  /** The activity/activities that must complete before this one runs. (AI-inferred) */
   dependsOn?: OpenapiPipelineResource_Properties_Activities_DependsOn[] | Computed<OpenapiPipelineResource_Properties_Activities_DependsOn[]>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The status applied to this activity when it's skipped due to an inactive trigger. (AI-inferred) */
   onInactiveMarkAs?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   state?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** Caller-defined key/value property(s) surfaced in the monitoring view for this activity. (AI-inferred) */
   userProperties?: OpenapiPipelineResource_Properties_Activities_UserProperties[] | Computed<OpenapiPipelineResource_Properties_Activities_UserProperties[]>;
 }
 
@@ -27,7 +38,9 @@ export interface OpenapiPipelineResource_Properties_Folder {
 }
 
 export interface OpenapiPipelineResource_Properties_Parameters {
+  /** The value used when this field is left unset. (AI-inferred) */
   defaultValue?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

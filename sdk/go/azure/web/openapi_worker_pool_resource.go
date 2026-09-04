@@ -17,9 +17,12 @@ type OpenapiWorkerPoolResource_Properties struct {
 }
 
 type OpenapiWorkerPoolResource_Sku_Capabilities struct {
-	Name   any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A machine-readable reason code. (AI-inferred)
 	Reason any
-	Value  any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiWorkerPoolResource_Sku_SkuCapacity struct {

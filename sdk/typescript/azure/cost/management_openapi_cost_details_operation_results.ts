@@ -9,7 +9,9 @@ export interface ManagementOpenapiCostDetailsOperationResults_Error {
 }
 
 export interface ManagementOpenapiCostDetailsOperationResults_Manifest_Blobs {
+  /** A URL pointing to the generated report file. (AI-inferred) */
   blobLink?: string | Computed<string>;
+  /** The size of this file, in bytes. (AI-inferred) */
   byteCount?: number | Computed<number>;
 }
 

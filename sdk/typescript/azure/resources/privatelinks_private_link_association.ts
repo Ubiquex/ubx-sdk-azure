@@ -4,6 +4,7 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface PrivatelinksPrivateLinkAssociation_Properties {
   /** The rmpl Resource ID. */
   privateLink?: string | Computed<string>;
+  /** Whether public network access is enabled for resources covered by this private link association. (AI-inferred) */
   publicNetworkAccess?: string | Computed<string>;
   /** The scope of the private link association. */
   scope?: string | Computed<string>;
@@ -19,6 +20,7 @@ const PrivatelinksPrivateLinkAssociation_PropertiesFields: FieldMap = {
 };
 
 export interface PrivatelinksPrivateLinkAssociationConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: PrivatelinksPrivateLinkAssociation_Properties | Computed<PrivatelinksPrivateLinkAssociation_Properties>;
 }
 
@@ -27,6 +29,7 @@ export interface PrivatelinksPrivateLinkAssociationAttrs {
   id: string;
   /** The pla name. */
   name: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: PrivatelinksPrivateLinkAssociation_Properties;
   /** The operation type. */
   type: string;

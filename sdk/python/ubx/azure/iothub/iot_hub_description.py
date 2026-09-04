@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class IotHubDescription_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -19,13 +21,18 @@ class IotHubDescription_Identity:
     tenant_id: Any = None
     # The type of identity used for the resource. The type 'SystemAssigned, UserAssigned' includes both an implicitly created identity and a set of user assigned identities. The type 'None' will remove any identities from the service.
     type: Any = None
+    # The user-assigned managed identities associated with this resource. (AI-inferred)
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_AuthorizationPolicies:
+    # The name of this shared access policy. (AI-inferred)
     key_name: Any = None
+    # The primary shared access key for this policy. (AI-inferred)
     primary_key: Any = None
+    # The permission(s) this shared access policy grants. (AI-inferred)
     rights: Any = None
+    # The secondary shared access key for this policy. (AI-inferred)
     secondary_key: Any = None
 
 @dataclasses.dataclass
@@ -48,21 +55,31 @@ class IotHubDescription_Properties_CloudToDevice:
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_EventHubEndpoints:
+    # A reference to the routing endpoint this applies to. (AI-inferred)
     endpoint: Any = None
+    # The number of partition(s) this Event Hub-compatible endpoint has. (AI-inferred)
     partition_count: Any = None
+    # The partition identifier(s) making up this endpoint. (AI-inferred)
     partition_ids: Any = None
+    # The path identifying the specific entity this endpoint targets. (AI-inferred)
     path: Any = None
+    # How many days messages are retained for. (AI-inferred)
     retention_time_in_days: Any = None
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_IpFilterRules:
+    # The action to perform. (AI-inferred)
     action: Any = None
+    # The name of this filter. (AI-inferred)
     filter_name: Any = None
+    # The IP address range, in CIDR notation, this rule matches. (AI-inferred)
     ip_mask: Any = None
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_Locations:
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # The role assigned. (AI-inferred)
     role: Any = None
 
 @dataclasses.dataclass
@@ -76,72 +93,118 @@ class IotHubDescription_Properties_NetworkRuleSets:
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_PrivateEndpointConnections_Properties:
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_PrivateEndpointConnections:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity:
+    # A reference to the user-assigned managed identity used to authenticate this connection. (AI-inferred)
     user_assigned_identity: Any = None
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers:
+    # Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred)
     authentication_type: Any = None
+    # The name of the storage container this applies to. (AI-inferred)
     container_name: Any = None
+    # The name of the database this applies to. (AI-inferred)
     database_name: Any = None
+    # The URI of this routing endpoint. (AI-inferred)
     endpoint_uri: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The name of the property used as the partition key. (AI-inferred)
     partition_key_name: Any = None
+    # The template used to derive a blob's own partition path. (AI-inferred)
     partition_key_template: Any = None
+    # The primary shared access key for this policy. (AI-inferred)
     primary_key: Any = None
+    # The resource group this applies to. (AI-inferred)
     resource_group: Any = None
+    # The secondary shared access key for this policy. (AI-inferred)
     secondary_key: Any = None
+    # The identifier of the associated Azure subscription. (AI-inferred)
     subscription_id: Any = None
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_Routing_Endpoints_EventHubs:
+    # Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred)
     authentication_type: Any = None
+    # The connection string used to reach this endpoint. (AI-inferred)
     connection_string: Any = None
+    # The URI of this routing endpoint. (AI-inferred)
     endpoint_uri: Any = None
+    # The path identifying the specific entity (e.g. queue or topic) this endpoint targets. (AI-inferred)
     entity_path: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource group this applies to. (AI-inferred)
     resource_group: Any = None
+    # The identifier of the associated Azure subscription. (AI-inferred)
     subscription_id: Any = None
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_Routing_Endpoints_StorageContainers:
+    # Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred)
     authentication_type: Any = None
+    # How often, in seconds, batched messages are flushed to this endpoint. (AI-inferred)
     batch_frequency_in_seconds: Any = None
+    # The connection string used to reach this endpoint. (AI-inferred)
     connection_string: Any = None
+    # The name of the storage container this applies to. (AI-inferred)
     container_name: Any = None
+    # The format messages are encoded in when delivered to this endpoint. (AI-inferred)
     encoding: Any = None
+    # The URI of this routing endpoint. (AI-inferred)
     endpoint_uri: Any = None
+    # The naming pattern applied to files written to this storage endpoint. (AI-inferred)
     file_name_format: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # The maximum size, in bytes, of a single batched file written to this storage endpoint. (AI-inferred)
     max_chunk_size_in_bytes: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource group this applies to. (AI-inferred)
     resource_group: Any = None
+    # The identifier of the associated Azure subscription. (AI-inferred)
     subscription_id: Any = None
 
 @dataclasses.dataclass
@@ -159,8 +222,11 @@ class IotHubDescription_Properties_Routing_Endpoints:
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_Routing_Enrichments:
+    # The routing endpoint(s) this rule delivers matching messages to. (AI-inferred)
     endpoint_names: Any = None
+    # The shared access key value. (AI-inferred)
     key: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -189,10 +255,15 @@ class IotHubDescription_Properties_Routing:
 
 @dataclasses.dataclass
 class IotHubDescription_Properties_StorageEndpoints:
+    # Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred)
     authentication_type: Any = None
+    # The connection string used to reach this endpoint. (AI-inferred)
     connection_string: Any = None
+    # The name of the storage container this applies to. (AI-inferred)
     container_name: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # How long, in ISO 8601 duration format, a generated shared access signature remains valid. (AI-inferred)
     sas_ttl_as_iso8601: Any = None
 
 @dataclasses.dataclass
@@ -586,6 +657,7 @@ _IotHubDescription_SkuFields = {
 class IotHubDescriptionConfig:
     # The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention.
     etag: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
     # The resource location.
     location: Any = None
@@ -602,6 +674,7 @@ class IotHubDescriptionAttrs:
     etag: Any = None
     # The resource identifier.
     id: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
     # The resource location.
     location: Any = None

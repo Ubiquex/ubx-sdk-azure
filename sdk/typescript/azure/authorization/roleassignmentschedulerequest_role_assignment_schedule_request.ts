@@ -62,6 +62,7 @@ export interface RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Prop
   conditionVersion?: string | Computed<string>;
   /** DateTime when role assignment schedule request was created */
   createdOn?: string | Computed<string>;
+  /** Additional, denormalized detail about the principal, role definition, and scope this request applies to, included for convenience. (AI-inferred) */
   expandedProperties?: RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedProperties | Computed<RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedProperties>;
   /** Justification for the role assignment */
   justification?: string | Computed<string>;

@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DtlNotificationChannel_Properties_Events {
+  /** The name of this event. (AI-inferred) */
   eventName?: string | Computed<string>;
 }
 

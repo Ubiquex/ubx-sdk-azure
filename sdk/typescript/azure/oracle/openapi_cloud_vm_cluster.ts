@@ -11,13 +11,18 @@ export interface OpenapiCloudVmCluster_Properties_DataCollectionOptions {
 }
 
 export interface OpenapiCloudVmCluster_Properties_FileSystemConfigurationDetails {
+  /** The size of this file system, in gibibytes. (AI-inferred) */
   fileSystemSizeGb?: number | Computed<number>;
+  /** The path this file system is mounted at. (AI-inferred) */
   mountPoint?: string | Computed<string>;
 }
 
 export interface OpenapiCloudVmCluster_Properties_IormConfigCache_DbPlans {
+  /** The name of this database. (AI-inferred) */
   dbName?: string | Computed<string>;
+  /** The maximum amount of flash cache allocated. (AI-inferred) */
   flashCacheLimit?: string | Computed<string>;
+  /** The file share this applies to. (AI-inferred) */
   share?: number | Computed<number>;
 }
 
@@ -33,12 +38,16 @@ export interface OpenapiCloudVmCluster_Properties_IormConfigCache {
 }
 
 export interface OpenapiCloudVmCluster_Properties_NsgCidrs_DestinationPortRange {
+  /** The maximum value allowed. (AI-inferred) */
   max?: number | Computed<number>;
+  /** The minimum value allowed. (AI-inferred) */
   min?: number | Computed<number>;
 }
 
 export interface OpenapiCloudVmCluster_Properties_NsgCidrs {
+  /** The destination port range this rule matches. (AI-inferred) */
   destinationPortRange?: OpenapiCloudVmCluster_Properties_NsgCidrs_DestinationPortRange | Computed<OpenapiCloudVmCluster_Properties_NsgCidrs_DestinationPortRange>;
+  /** Where this data or configuration is sourced from. (AI-inferred) */
   source?: string | Computed<string>;
 }
 

@@ -2,9 +2,13 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface NetworkgatewayLocalNetworkGateway_Properties_BgpSettings_BgpPeeringAddresses {
+  /** Caller-chosen BGP peering IP addresses to use for this connection, instead of Azure's own auto-allocated defaults. (AI-inferred) */
   customBgpIpAddresses?: string[] | Computed<string[]>;
+  /** Output only. The BGP peering IP address(es) Azure auto-allocated for this connection. (AI-inferred) */
   defaultBgpIpAddresses?: string[] | Computed<string[]>;
+  /** A reference to the IP configuration this applies to. (AI-inferred) */
   ipconfigurationId?: string | Computed<string>;
+  /** Output only. The public IP address(es) of this VPN gateway's own tunnel endpoint(s). (AI-inferred) */
   tunnelIpAddresses?: string[] | Computed<string[]>;
 }
 
@@ -20,12 +24,16 @@ export interface NetworkgatewayLocalNetworkGateway_Properties_BgpSettings {
 }
 
 export interface NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations_Pool {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations {
+  /** Output only. The specific address ranges actually allocated from this pool. (AI-inferred) */
   allocatedAddressPrefixes?: string[] | Computed<string[]>;
+  /** How many IP addresses to allocate from this pool. (AI-inferred) */
   numberOfIpAddresses?: string | Computed<string>;
+  /** A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred) */
   pool?: NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations_Pool | Computed<NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations_Pool>;
 }
 

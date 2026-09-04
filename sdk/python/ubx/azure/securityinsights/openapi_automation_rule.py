@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiAutomationRule_Properties_Actions:
+    # The category of action this content item performs. (AI-inferred)
     action_type: Any = None
+    # The relative evaluation order of this item. (AI-inferred)
     order: Any = None
 
 @dataclasses.dataclass
@@ -24,6 +26,7 @@ class OpenapiAutomationRule_Properties_CreatedBy:
 
 @dataclasses.dataclass
 class OpenapiAutomationRule_Properties_TriggeringLogic_Conditions:
+    # The category of condition this represents. (AI-inferred)
     condition_type: Any = None
 
 @dataclasses.dataclass
@@ -34,7 +37,9 @@ class OpenapiAutomationRule_Properties_TriggeringLogic:
     expiration_time_utc: Any = None
     # Determines whether the automation rule is enabled or disabled.
     is_enabled: Any = None
+    # The event category (e.g. alerts or incidents) this automation rule triggers on. (AI-inferred)
     triggers_on: Any = None
+    # The specific lifecycle event that triggers this automation rule. (AI-inferred)
     triggers_when: Any = None
 
 @dataclasses.dataclass

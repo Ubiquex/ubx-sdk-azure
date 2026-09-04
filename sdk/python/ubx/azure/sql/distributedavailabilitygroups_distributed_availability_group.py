@@ -8,31 +8,54 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_Databases_PartnerAuthCertValidity:
+    # The name of the partner authentication certificate. (AI-inferred)
     certificate_name: Any = None
+    # When the partner authentication certificate expires. (AI-inferred)
     expiry_date: Any = None
 
 @dataclasses.dataclass
 class DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_Databases:
+    # Whether this database's own replication link is currently `CONNECTED` or `DISCONNECTED`. (AI-inferred)
     connected_state: Any = None
+    # The name of the database participating in this distributed availability group. (AI-inferred)
     database_name: Any = None
+    # How many seconds behind the instance's own redo (apply) of replicated log records currently is. (AI-inferred)
     instance_redo_replication_lag_seconds: Any = None
+    # The identifier of this database's own replica on the local instance. (AI-inferred)
     instance_replica_id: Any = None
+    # How many seconds behind the instance's own sending of log records to the partner currently is. (AI-inferred)
     instance_send_replication_lag_seconds: Any = None
+    # The log sequence number of the most recent backup taken of this database. (AI-inferred)
     last_backup_lsn: Any = None
+    # When the most recent backup of this database was taken. (AI-inferred)
     last_backup_time: Any = None
+    # The log sequence number of the most recently committed transaction. (AI-inferred)
     last_commit_lsn: Any = None
+    # When the most recently committed transaction occurred. (AI-inferred)
     last_commit_time: Any = None
+    # The log sequence number of the most recent log record durably written (hardened) to disk on the replica. (AI-inferred)
     last_hardened_lsn: Any = None
+    # When the most recent log record was durably written (hardened) to disk on the replica. (AI-inferred)
     last_hardened_time: Any = None
+    # The log sequence number of the most recent log record received from the partner. (AI-inferred)
     last_received_lsn: Any = None
+    # When the most recent log record was received from the partner. (AI-inferred)
     last_received_time: Any = None
+    # The log sequence number of the most recent log record sent to the partner. (AI-inferred)
     last_sent_lsn: Any = None
+    # When the most recent log record was sent to the partner. (AI-inferred)
     last_sent_time: Any = None
+    # The most recent error, if any, reported on this database's own replication link. (AI-inferred)
     most_recent_link_error: Any = None
+    # The validity period of the authentication certificate used to secure this database's own link to its partner. (AI-inferred)
     partner_auth_cert_validity: Any = None
+    # The identifier of this database's own replica on the partner instance. (AI-inferred)
     partner_replica_id: Any = None
+    # The current role/state of this database's own replica, e.g. primary or secondary. (AI-inferred)
     replica_state: Any = None
+    # How far along automatic seeding (initial data transfer) of this database's own replica is. (AI-inferred)
     seeding_progress: Any = None
+    # The overall replication health of this database: `HEALTHY`, `PARTIALLY_HEALTHY`, or `NOT_HEALTHY`. (AI-inferred)
     synchronization_health: Any = None
 
 @dataclasses.dataclass

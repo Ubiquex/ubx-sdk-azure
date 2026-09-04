@@ -4,7 +4,9 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiNetworkAnchor_Properties_DnsForwardingRules struct {
-	DomainNames         any
+	// The domain name(s) associated with this resource. (AI-inferred)
+	DomainNames any
+	// The IP address traffic is forwarded to. (AI-inferred)
 	ForwardingIpAddress any
 }
 

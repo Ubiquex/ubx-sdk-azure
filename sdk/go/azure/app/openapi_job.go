@@ -4,7 +4,9 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiJob_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,16 +22,23 @@ type OpenapiJob_Identity struct {
 }
 
 type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules_Auth struct {
-	SecretRef        any
+	// A reference to the secret holding this value. (AI-inferred)
+	SecretRef any
+	// The parameter this scaling trigger reads from. (AI-inferred)
 	TriggerParameter any
 }
 
 type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules struct {
-	Auth     any
+	// Authentication configuration for this app. (AI-inferred)
+	Auth any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
 	Identity any
+	// Additional, free-form metadata associated with this resource. (AI-inferred)
 	Metadata any
-	Name     any
-	Type     any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale struct {
@@ -53,7 +62,9 @@ type OpenapiJob_Properties_Configuration_EventTriggerConfig struct {
 }
 
 type OpenapiJob_Properties_Configuration_IdentitySettings struct {
-	Identity  any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// Hook(s) run at specific points in this container's own lifecycle. (AI-inferred)
 	Lifecycle any
 }
 
@@ -65,10 +76,14 @@ type OpenapiJob_Properties_Configuration_ManualTriggerConfig struct {
 }
 
 type OpenapiJob_Properties_Configuration_Registries struct {
-	Identity          any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// A reference to the secret holding the password credential. (AI-inferred)
 	PasswordSecretRef any
-	Server            any
-	Username          any
+	// The server hostname or address this connects to. (AI-inferred)
+	Server any
+	// The username used to authenticate. (AI-inferred)
+	Username any
 }
 
 type OpenapiJob_Properties_Configuration_ScheduleTriggerConfig struct {
@@ -81,10 +96,14 @@ type OpenapiJob_Properties_Configuration_ScheduleTriggerConfig struct {
 }
 
 type OpenapiJob_Properties_Configuration_Secrets struct {
-	Identity    any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// A reference to the Key Vault secret this value is sourced from. (AI-inferred)
 	KeyVaultUrl any
-	Name        any
-	Value       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiJob_Properties_Configuration struct {
@@ -109,78 +128,120 @@ type OpenapiJob_Properties_Configuration struct {
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes_HttpGet_HttpHeaders struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes_HttpGet struct {
-	Host        any
+	// The hostname this applies to. (AI-inferred)
+	Host any
+	// Extra HTTP headers this probe sends with its request. (AI-inferred)
 	HttpHeaders any
-	Path        any
-	Port        any
-	Scheme      any
+	// A file or URL path. (AI-inferred)
+	Path any
+	// A network port number. (AI-inferred)
+	Port any
+	// The URI scheme (`HTTP` or `HTTPS`) this probe uses. (AI-inferred)
+	Scheme any
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes_TcpSocket struct {
+	// The hostname this applies to. (AI-inferred)
 	Host any
+	// A network port number. (AI-inferred)
 	Port any
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes struct {
-	FailureThreshold              any
-	HttpGet                       any
-	InitialDelaySeconds           any
-	PeriodSeconds                 any
-	SuccessThreshold              any
-	TcpSocket                     any
+	// How many consecutive probe failures are tolerated before the container is considered unhealthy. (AI-inferred)
+	FailureThreshold any
+	// Configures this probe to send an HTTP GET request to the container. (AI-inferred)
+	HttpGet any
+	// How long to wait after the container starts before running this probe for the first time. (AI-inferred)
+	InitialDelaySeconds any
+	// How often, in seconds, this probe runs. (AI-inferred)
+	PeriodSeconds any
+	// How many consecutive successful probes mark the container healthy again. (AI-inferred)
+	SuccessThreshold any
+	// Configures this probe to check the container's own port is accepting TCP connections. (AI-inferred)
+	TcpSocket any
+	// How long, in seconds, the container is given to shut down gracefully before being forcibly stopped. (AI-inferred)
 	TerminationGracePeriodSeconds any
-	TimeoutSeconds                any
-	Type                          any
+	// How long this probe waits for a response before treating the attempt as a failure. (AI-inferred)
+	TimeoutSeconds any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiJob_Properties_Template_Containers struct {
+	// The health probe(s) configured on this container. (AI-inferred)
 	Probes any
 }
 
 type OpenapiJob_Properties_Template_InitContainers_Env struct {
-	Name      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the secret holding this value. (AI-inferred)
 	SecretRef any
-	Value     any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiJob_Properties_Template_InitContainers_Resources struct {
-	Cpu              any
+	// The number of CPU core(s) allocated. (AI-inferred)
+	Cpu any
+	// The amount of ephemeral (scratch) storage allocated. (AI-inferred)
 	EphemeralStorage any
-	Memory           any
+	// The amount of memory allocated. (AI-inferred)
+	Memory any
 }
 
 type OpenapiJob_Properties_Template_InitContainers_VolumeMounts struct {
-	MountPath  any
-	SubPath    any
+	// The path this volume is mounted at inside the container. (AI-inferred)
+	MountPath any
+	// A specific subdirectory within the volume to mount, rather than its own root. (AI-inferred)
+	SubPath any
+	// The name of this volume. (AI-inferred)
 	VolumeName any
 }
 
 type OpenapiJob_Properties_Template_InitContainers struct {
-	Args         any
-	Command      any
-	Env          any
-	Image        any
-	Name         any
-	Resources    any
+	// The argument(s) passed to the container's own command. (AI-inferred)
+	Args any
+	// The container entrypoint command, overriding the image's own default. (AI-inferred)
+	Command any
+	// Environment variable(s) set in the container. (AI-inferred)
+	Env any
+	// The container image reference to run. (AI-inferred)
+	Image any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The compute resource requirement(s) (CPU, memory) for this container. (AI-inferred)
+	Resources any
+	// The volume(s) mounted into this container. (AI-inferred)
 	VolumeMounts any
 }
 
 type OpenapiJob_Properties_Template_Volumes_Secrets struct {
-	Path      any
+	// A file or URL path. (AI-inferred)
+	Path any
+	// A reference to the secret holding this value. (AI-inferred)
 	SecretRef any
 }
 
 type OpenapiJob_Properties_Template_Volumes struct {
+	// Additional mount option(s) applied to this volume. (AI-inferred)
 	MountOptions any
-	Name         any
-	Secrets      any
-	StorageName  any
-	StorageType  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The secret(s) defined on this app. (AI-inferred)
+	Secrets any
+	// The name of the storage resource this applies to. (AI-inferred)
+	StorageName any
+	// The category of storage this volume uses. (AI-inferred)
+	StorageType any
 }
 
 type OpenapiJob_Properties_Template struct {

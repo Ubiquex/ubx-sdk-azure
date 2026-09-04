@@ -4,27 +4,40 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanRouteMap_Properties_Rules_Actions_Parameters struct {
-	AsPath      any
-	Community   any
+	// The BGP AS-path attribute observed for this route. (AI-inferred)
+	AsPath any
+	// A BGP community value attached to this route. (AI-inferred)
+	Community any
+	// The route prefix this rule matches. (AI-inferred)
 	RoutePrefix any
 }
 
 type VirtualwanRouteMap_Properties_Rules_Actions struct {
+	// The parameter(s) making up this configuration. (AI-inferred)
 	Parameters any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type VirtualwanRouteMap_Properties_Rules_MatchCriteria struct {
-	AsPath         any
-	Community      any
+	// The BGP AS-path attribute observed for this route. (AI-inferred)
+	AsPath any
+	// A BGP community value attached to this route. (AI-inferred)
+	Community any
+	// The condition that must hold for this rule to apply. (AI-inferred)
 	MatchCondition any
-	RoutePrefix    any
+	// The route prefix this rule matches. (AI-inferred)
+	RoutePrefix any
 }
 
 type VirtualwanRouteMap_Properties_Rules struct {
-	Actions           any
-	MatchCriteria     any
-	Name              any
+	// The action(s) this rule or policy applies. (AI-inferred)
+	Actions any
+	// Whether all or any of this rule's own conditions must match. (AI-inferred)
+	MatchCriteria any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// What happens next when this rule's own condition matches. (AI-inferred)
 	NextStepIfMatched any
 }
 

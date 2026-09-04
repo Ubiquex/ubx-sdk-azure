@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiConnectionType_Properties_FieldDefinitions:
+    # Whether this variable's own value is encrypted at rest. (AI-inferred)
     is_encrypted: Any = None
+    # Whether supplying this parameter is optional. (AI-inferred)
     is_optional: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

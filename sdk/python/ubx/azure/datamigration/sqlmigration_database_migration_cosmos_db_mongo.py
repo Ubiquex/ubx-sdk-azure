@@ -8,18 +8,28 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList_MigrationProgressDetails:
+    # How long this operation took, in seconds. (AI-inferred)
     duration_in_seconds: Any = None
+    # Detail about an error encountered during migration. (AI-inferred)
     migration_error: Any = None
+    # The current status of this migration. (AI-inferred)
     migration_status: Any = None
+    # The number of documents processed so far. (AI-inferred)
     processed_document_count: Any = None
+    # The total number of documents in the source. (AI-inferred)
     source_document_count: Any = None
 
 @dataclasses.dataclass
 class SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList:
+    # Detailed progress information for this migration. (AI-inferred)
     migration_progress_details: Any = None
+    # The source collection this migration reads from. (AI-inferred)
     source_collection: Any = None
+    # The source database this migration reads from. (AI-inferred)
     source_database: Any = None
+    # The destination collection this migration writes to. (AI-inferred)
     target_collection: Any = None
+    # The destination database this migration writes to. (AI-inferred)
     target_database: Any = None
 
 @dataclasses.dataclass

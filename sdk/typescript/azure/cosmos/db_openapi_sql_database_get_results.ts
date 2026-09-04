@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DbOpenapiSqlDatabaseGetResults_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -23,14 +25,18 @@ export interface DbOpenapiSqlDatabaseGetResults_Properties_Options_AutoscaleSett
 }
 
 export interface DbOpenapiSqlDatabaseGetResults_Properties_Options {
+  /** Configuration for automatically scaling throughput within a defined maximum. (AI-inferred) */
   autoscaleSettings?: DbOpenapiSqlDatabaseGetResults_Properties_Options_AutoscaleSettings | Computed<DbOpenapiSqlDatabaseGetResults_Properties_Options_AutoscaleSettings>;
   /** Request Units per second. For example, "throughput": 10000. */
   throughput?: number | Computed<number>;
 }
 
 export interface DbOpenapiSqlDatabaseGetResults_Properties_Resource_RestoreParameters {
+  /** A reference to the source account this account is restored from. (AI-inferred) */
   restoreSource?: string | Computed<string>;
+  /** The point in time this account is restored to, in UTC. (AI-inferred) */
   restoreTimestampInUtc?: string | Computed<string>;
+  /** Whether time-to-live expiration is disabled on the restored data. (AI-inferred) */
   restoreWithTtlDisabled?: boolean | Computed<boolean>;
 }
 

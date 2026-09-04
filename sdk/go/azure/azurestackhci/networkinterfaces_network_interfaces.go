@@ -16,18 +16,25 @@ type NetworkinterfacesNetworkInterfaces_Properties_DnsSettings struct {
 }
 
 type NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties_Subnet struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties struct {
-	Gateway          any
-	PrefixLength     any
+	// The default gateway IP address for this IP configuration. (AI-inferred)
+	Gateway any
+	// The subnet mask length (CIDR prefix) applied to this IP configuration's own address. (AI-inferred)
+	PrefixLength any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
 	PrivateIpaddress any
-	Subnet           any
+	// A reference to the logical network subnet this IP configuration is drawn from. (AI-inferred)
+	Subnet any
 }
 
 type NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
@@ -42,11 +49,13 @@ type NetworkinterfacesNetworkInterfaces_Properties_Status struct {
 	// NetworkInterface provisioning error code
 	ErrorCode any
 	// Descriptive error message
-	ErrorMessage       any
+	ErrorMessage any
+	// The current provisioning status of this network interface. (AI-inferred)
 	ProvisioningStatus any
 }
 
 type NetworkinterfacesNetworkInterfaces_Properties struct {
+	// DNS server configuration applied to this network interface. (AI-inferred)
 	DnsSettings any
 	// IPConfigurations - A list of IPConfigurations of the network interface.
 	IpConfigurations any

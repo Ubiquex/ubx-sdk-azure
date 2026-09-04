@@ -4,7 +4,9 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Cluster_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,14 +22,19 @@ type Cluster_Identity struct {
 }
 
 type Cluster_Properties_AcceptedAudiences struct {
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type Cluster_Properties_CalloutPolicies struct {
-	CalloutId       any
-	CalloutType     any
+	// A unique identifier for this outbound callout policy. (AI-inferred)
+	CalloutId any
+	// The category of external resource this callout policy permits access to. (AI-inferred)
+	CalloutType any
+	// A regular expression restricting which outbound URI(s) this callout policy permits. (AI-inferred)
 	CalloutUriRegex any
-	OutboundAccess  any
+	// Whether outbound network access from this cluster is restricted. (AI-inferred)
+	OutboundAccess any
 }
 
 type Cluster_Properties_KeyVaultProperties struct {
@@ -44,9 +51,12 @@ type Cluster_Properties_KeyVaultProperties struct {
 }
 
 type Cluster_Properties_LanguageExtensions_Value struct {
+	// The name of the custom container image this language extension runs. (AI-inferred)
 	LanguageExtensionCustomImageName any
-	LanguageExtensionImageName       any
-	LanguageExtensionName            any
+	// The name of the built-in container image this language extension runs. (AI-inferred)
+	LanguageExtensionImageName any
+	// The name of this language extension, e.g. `PYTHON` or `R`. (AI-inferred)
+	LanguageExtensionName any
 }
 
 type Cluster_Properties_LanguageExtensions struct {
@@ -79,23 +89,32 @@ type Cluster_Properties_OptimizedAutoscale struct {
 }
 
 type Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type Cluster_Properties_PrivateEndpointConnections_Properties struct {
-	GroupId                           any
-	PrivateEndpoint                   any
+	// The sub-resource this connection targets on the destination service. (AI-inferred)
+	GroupId any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type Cluster_Properties_PrivateEndpointConnections struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

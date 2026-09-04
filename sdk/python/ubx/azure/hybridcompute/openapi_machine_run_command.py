@@ -15,10 +15,15 @@ class OpenapiMachineRunCommand_Properties_ErrorBlobManagedIdentity:
 
 @dataclasses.dataclass
 class OpenapiMachineRunCommand_Properties_InstanceView_Statuses:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # A human-readable summary of this status. (AI-inferred)
     display_status: Any = None
+    # The severity level of this status, e.g. `Info`, `Warning`, or `Error`. (AI-inferred)
     level: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # When this status was last reported. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
@@ -42,7 +47,9 @@ class OpenapiMachineRunCommand_Properties_InstanceView:
 
 @dataclasses.dataclass
 class OpenapiMachineRunCommand_Properties_Parameters:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # This parameter's own value. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

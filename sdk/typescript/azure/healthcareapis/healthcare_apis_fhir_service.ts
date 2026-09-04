@@ -18,8 +18,11 @@ export interface HealthcareApisFhirService_Identity {
 }
 
 export interface HealthcareApisFhirService_Properties_AcrConfiguration_OciArtifacts {
+  /** A content digest identifying this specific artifact version. (AI-inferred) */
   digest?: string | Computed<string>;
+  /** The name of this container image. (AI-inferred) */
   imageName?: string | Computed<string>;
+  /** The hostname of this container registry's own login server. (AI-inferred) */
   loginServer?: string | Computed<string>;
 }
 
@@ -31,13 +34,18 @@ export interface HealthcareApisFhirService_Properties_AcrConfiguration {
 }
 
 export interface HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProviders_Applications {
+  /** The specific data-plane action(s) this role definition grants. (AI-inferred) */
   allowedDataActions?: string[] | Computed<string[]>;
+  /** The intended audience value(s) a validated token must carry. (AI-inferred) */
   audience?: string | Computed<string>;
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
 }
 
 export interface HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProviders {
+  /** The application(s) registered with this service. (AI-inferred) */
   applications?: HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProviders_Applications[] | Computed<HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProviders_Applications[]>;
+  /** The identity provider authority URL trusted for authentication. (AI-inferred) */
   authority?: string | Computed<string>;
 }
 
@@ -95,22 +103,30 @@ export interface HealthcareApisFhirService_Properties_ImportConfiguration {
 }
 
 export interface HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties {
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface HealthcareApisFhirService_Properties_PrivateEndpointConnections {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties | Computed<HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties>;
 }
 

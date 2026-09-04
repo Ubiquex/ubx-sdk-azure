@@ -40,10 +40,12 @@ type GalleryimagesGalleryImages_Properties_Status struct {
 	ErrorMessage any
 	// The progress of the operation in percentage
 	ProgressPercentage any
+	// The outcome of the most recent operation performed on this gallery image, e.g. `Succeeded`, `Failed`, or `InProgress`. (AI-inferred)
 	ProvisioningStatus any
 }
 
 type GalleryimagesGalleryImages_Properties_Version_Properties_StorageProfile_OsDiskImage struct {
+	// The size, in MB, of the OS disk image for this gallery image version. (AI-inferred)
 	SizeInMb any
 }
 

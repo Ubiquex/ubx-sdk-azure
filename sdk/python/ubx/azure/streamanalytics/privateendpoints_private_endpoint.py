@@ -8,19 +8,27 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties:
+    # The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
     group_ids: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # A reference to the Private Link service this connection targets. (AI-inferred)
     private_link_service_id: Any = None
+    # A message the requester attaches when asking to connect to this Private Link-enabled resource. (AI-inferred)
     request_message: Any = None
 
 @dataclasses.dataclass
 class PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

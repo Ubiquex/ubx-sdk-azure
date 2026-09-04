@@ -4,7 +4,9 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerSecurityUserRule_Properties_Destinations struct {
-	AddressPrefix     any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// Whether this address prefix is an IP prefix or a reference to another resource. (AI-inferred)
 	AddressPrefixType any
 }
 

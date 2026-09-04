@@ -2,11 +2,14 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ManagedNetworkSettingsPropertiesBasicResource_Properties_ManagedNetwork {
+  /** The network isolation mode(s) this resource may be transitioned to. (AI-inferred) */
   changeableIsolationModes?: string[] | Computed<string[]>;
 }
 
 export interface ManagedNetworkSettingsPropertiesBasicResource_Properties {
+  /** Configuration for this workspace's own managed virtual network. (AI-inferred) */
   managedNetwork?: ManagedNetworkSettingsPropertiesBasicResource_Properties_ManagedNetwork | Computed<ManagedNetworkSettingsPropertiesBasicResource_Properties_ManagedNetwork>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 

@@ -13,7 +13,9 @@ class VirtualwanVirtualHub_Properties_AzureFirewall:
 
 @dataclasses.dataclass
 class VirtualwanVirtualHub_Properties_RouteTable_Routes:
+    # The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
     address_prefixes: Any = None
+    # The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
     next_hop_ip_address: Any = None
 
 @dataclasses.dataclass
@@ -23,21 +25,31 @@ class VirtualwanVirtualHub_Properties_RouteTable:
 
 @dataclasses.dataclass
 class VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties_Routes:
+    # The category of destination this rule applies to. (AI-inferred)
     destination_type: Any = None
+    # The destination(s) this rule applies to. (AI-inferred)
     destinations: Any = None
+    # The kind of next hop this route uses, e.g. `VirtualAppliance`, `VnetLocal`, `Internet`, or `None`. (AI-inferred)
     next_hop_type: Any = None
+    # The next hop(s) traffic matching this route is forwarded to. (AI-inferred)
     next_hops: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties:
+    # The connection(s) attached to this routing configuration. (AI-inferred)
     attached_connections: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The custom routes making up this route table. (AI-inferred)
     routes: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ResourceGuardResource_Properties_ResourceGuardOperations {
+  /** The resource type this request applies to. (AI-inferred) */
   requestResourceType?: string | Computed<string>;
+  /** The type of security-critical operation this applies to, e.g. disabling soft delete or changing immutability. (AI-inferred) */
   vaultCriticalOperation?: string | Computed<string>;
 }
 
@@ -41,6 +43,7 @@ export interface ResourceGuardResourceConfig {
   eTag?: string | Computed<string>;
   /** The geo-location where the resource lives */
   location: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ResourceGuardResource_Properties | Computed<ResourceGuardResource_Properties>;
   /** Resource tags. */
   tags?: Record<string, string> | Computed<Record<string, string>>;
@@ -51,6 +54,7 @@ export interface ResourceGuardResourceAttrs {
   eTag: string;
   /** The geo-location where the resource lives */
   location: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: ResourceGuardResource_Properties;
   /** Resource tags. */
   tags: Record<string, string>;

@@ -4,11 +4,14 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiModelVersion_Properties_Datasets struct {
-	Id   any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 
 type OpenapiModelVersion_Properties_Flavors struct {
+	// The literal data payload of this field. (AI-inferred)
 	Data any
 }
 

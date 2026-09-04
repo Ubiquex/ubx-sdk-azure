@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappings {
+  /** The virtual network's own address range(s), in CIDR notation. (AI-inferred) */
   addressSpace?: string | Computed<string>;
+  /** A range of ports, e.g. `1000-2000`. (AI-inferred) */
   portRange?: string | Computed<string>;
 }
 

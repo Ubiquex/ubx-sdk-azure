@@ -4,9 +4,12 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlLabCost_Properties_LabCostDetails struct {
-	Cost     any
+	// The cost amount this applies to. (AI-inferred)
+	Cost any
+	// Whether this cost is a projected estimate or an actual incurred charge. (AI-inferred)
 	CostType any
-	Date     any
+	// The date this applies to. (AI-inferred)
+	Date any
 }
 
 type DtlLabCost_Properties_LabCostSummary struct {
@@ -15,27 +18,42 @@ type DtlLabCost_Properties_LabCostSummary struct {
 }
 
 type DtlLabCost_Properties_ResourceCosts struct {
-	ExternalResourceId  any
-	ResourceCost        any
-	ResourceId          any
-	ResourceOwner       any
+	// A reference to the underlying Azure resource this cost applies to, outside the lab itself. (AI-inferred)
+	ExternalResourceId any
+	// The cost associated with this resource. (AI-inferred)
+	ResourceCost any
+	// A reference to the underlying Azure resource. (AI-inferred)
+	ResourceId any
+	// The owner of this resource. (AI-inferred)
+	ResourceOwner any
+	// The pricing tier this resource is provisioned at. (AI-inferred)
 	ResourcePricingTier any
-	ResourceStatus      any
-	ResourceType        any
-	ResourceUid         any
-	Resourcename        any
+	// The current status of this resource. (AI-inferred)
+	ResourceStatus any
+	// The type of this resource. (AI-inferred)
+	ResourceType any
+	// A stable, unique identifier for this resource. (AI-inferred)
+	ResourceUid any
+	// The name of this resource. (AI-inferred)
+	Resourcename any
 }
 
 type DtlLabCost_Properties_TargetCost_CostThresholds_PercentageThreshold struct {
+	// The literal value that triggers a notification. (AI-inferred)
 	ThresholdValue any
 }
 
 type DtlLabCost_Properties_TargetCost_CostThresholds struct {
-	DisplayOnChart               any
-	NotificationSent             any
-	PercentageThreshold          any
+	// Whether this cost item is shown on the cost summary chart. (AI-inferred)
+	DisplayOnChart any
+	// When a threshold notification was last sent for this item, if any. (AI-inferred)
+	NotificationSent any
+	// The percentage-of-budget threshold that triggers a notification. (AI-inferred)
+	PercentageThreshold any
+	// Whether to send a notification when this threshold is exceeded. (AI-inferred)
 	SendNotificationWhenExceeded any
-	ThresholdId                  any
+	// An identifier for this specific threshold. (AI-inferred)
+	ThresholdId any
 }
 
 type DtlLabCost_Properties_TargetCost struct {

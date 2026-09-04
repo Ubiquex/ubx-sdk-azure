@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class TagRule_Properties_LogRules_FilteringTags:
+    # Whether resources carrying this tag are included in or excluded from log forwarding. (AI-inferred)
     action: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The tag value this log filtering rule matches. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

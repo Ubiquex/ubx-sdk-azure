@@ -17,7 +17,9 @@ export interface OpenapiIncident_Properties_AdditionalData {
 }
 
 export interface OpenapiIncident_Properties_Labels {
+  /** The name of this label. (AI-inferred) */
   labelName?: string | Computed<string>;
+  /** The category this label belongs to. (AI-inferred) */
   labelType?: string | Computed<string>;
 }
 

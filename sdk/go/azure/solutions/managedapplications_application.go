@@ -4,8 +4,10 @@ package solutions
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedapplicationsApplication_Identity_UserAssignedIdentities struct {
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
-	TenantId    any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
 }
 
 type ManagedapplicationsApplication_Identity struct {
@@ -33,13 +35,18 @@ type ManagedapplicationsApplication_Plan struct {
 }
 
 type ManagedapplicationsApplication_Properties_Artifacts struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
-	Uri  any
+	// A resource URI. (AI-inferred)
+	Uri any
 }
 
 type ManagedapplicationsApplication_Properties_Authorizations struct {
-	PrincipalId      any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
+	PrincipalId any
+	// A reference to the role definition granted to the publisher for managing this application. (AI-inferred)
 	RoleDefinitionId any
 }
 
@@ -67,9 +74,12 @@ type ManagedapplicationsApplication_Properties_CustomerSupport struct {
 }
 
 type ManagedapplicationsApplication_Properties_JitAccessPolicy_JitApprovers struct {
+	// A human-readable name for this resource. (AI-inferred)
 	DisplayName any
-	Id          any
-	Type        any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ManagedapplicationsApplication_Properties_JitAccessPolicy struct {

@@ -4,6 +4,7 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkVerifierWorkspace_Properties struct {
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
 	Description any
 	// Provisioning states of a resource.
 	ProvisioningState any

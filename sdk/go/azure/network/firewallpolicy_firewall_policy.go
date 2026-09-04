@@ -4,7 +4,9 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallpolicyFirewallPolicy_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -49,7 +51,9 @@ type FirewallpolicyFirewallPolicy_Properties_ExplicitProxy struct {
 }
 
 type FirewallpolicyFirewallPolicy_Properties_Insights_LogAnalyticsResources_Workspaces struct {
-	Region      any
+	// The Azure region this applies to. (AI-inferred)
+	Region any
+	// The Log Analytics workspace ID Traffic Analytics results are sent to. (AI-inferred)
 	WorkspaceId any
 }
 
@@ -70,18 +74,28 @@ type FirewallpolicyFirewallPolicy_Properties_Insights struct {
 }
 
 type FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_BypassTrafficSettings struct {
-	Description          any
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
+	Description any
+	// The destination IP address(es) or range(s) this rule matches. (AI-inferred)
 	DestinationAddresses any
-	DestinationIpGroups  any
-	DestinationPorts     any
-	Name                 any
-	Protocol             any
-	SourceAddresses      any
-	SourceIpGroups       any
+	// The destination IP group(s) this rule matches. (AI-inferred)
+	DestinationIpGroups any
+	// The destination port(s) this rule matches. (AI-inferred)
+	DestinationPorts any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The source IP address(es) or range(s) this rule matches. (AI-inferred)
+	SourceAddresses any
+	// The source IP group(s) this rule matches. (AI-inferred)
+	SourceIpGroups any
 }
 
 type FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_SignatureOverrides struct {
-	Id   any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// Whether this feature is set to alert-only or alert-and-deny. (AI-inferred)
 	Mode any
 }
 

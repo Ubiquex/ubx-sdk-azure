@@ -4,9 +4,12 @@ package newrelic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TagRule_Properties_LogRules_FilteringTags struct {
+	// The action to perform. (AI-inferred)
 	Action any
-	Name   any
-	Value  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type TagRule_Properties_LogRules struct {

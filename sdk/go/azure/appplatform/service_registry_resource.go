@@ -4,7 +4,9 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceRegistryResource_Properties_Instances struct {
-	Name   any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The current status of this resource. (AI-inferred)
 	Status any
 }
 

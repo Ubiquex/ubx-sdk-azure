@@ -9,30 +9,46 @@ export interface ServiceJob_Properties_CustomDetails {
 }
 
 export interface ServiceJob_Properties_Errors_ProviderErrorDetails {
+  /** A machine-readable error code. (AI-inferred) */
   errorCode?: number | Computed<number>;
+  /** A unique identifier for this specific error occurrence. (AI-inferred) */
   errorId?: string | Computed<string>;
+  /** A human-readable description of the error. (AI-inferred) */
   errorMessage?: string | Computed<string>;
+  /** Likely cause(s) of this issue. (AI-inferred) */
   possibleCauses?: string | Computed<string>;
+  /** Guidance for resolving this issue. (AI-inferred) */
   recommendedAction?: string | Computed<string>;
 }
 
 export interface ServiceJob_Properties_Errors_ServiceErrorDetails {
+  /** A unique identifier for this activity, for correlation and tracing. (AI-inferred) */
   activityId?: string | Computed<string>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** Likely cause(s) of this issue. (AI-inferred) */
   possibleCauses?: string | Computed<string>;
+  /** Guidance for resolving this issue. (AI-inferred) */
   recommendedAction?: string | Computed<string>;
 }
 
 export interface ServiceJob_Properties_Errors {
+  /** When this resource was created. (AI-inferred) */
   creationTime?: string | Computed<string>;
+  /** How severe this error is. (AI-inferred) */
   errorLevel?: string | Computed<string>;
+  /** Detail about this error, as reported by the underlying replication provider. (AI-inferred) */
   providerErrorDetails?: ServiceJob_Properties_Errors_ProviderErrorDetails | Computed<ServiceJob_Properties_Errors_ProviderErrorDetails>;
+  /** Detail about this error, as reported by the Site Recovery service. (AI-inferred) */
   serviceErrorDetails?: ServiceJob_Properties_Errors_ServiceErrorDetails | Computed<ServiceJob_Properties_Errors_ServiceErrorDetails>;
+  /** A unique identifier for this task. (AI-inferred) */
   taskId?: string | Computed<string>;
 }
 
 export interface ServiceJob_Properties_Tasks_CustomDetails {
+  /** The specific subtype this resource is, distinguishing it within its own broader category. (AI-inferred) */
   instanceType?: string | Computed<string>;
 }
 
@@ -40,22 +56,36 @@ export interface ServiceJob_Properties_Tasks_GroupTaskCustomDetails_ChildTasks {
 }
 
 export interface ServiceJob_Properties_Tasks_GroupTaskCustomDetails {
+  /** The subordinate task(s) making up this operation. (AI-inferred) */
   childTasks?: ServiceJob_Properties_Tasks_GroupTaskCustomDetails_ChildTasks[] | Computed<ServiceJob_Properties_Tasks_GroupTaskCustomDetails_ChildTasks[]>;
+  /** The specific subtype this resource is, distinguishing it within its own broader category. (AI-inferred) */
   instanceType?: string | Computed<string>;
 }
 
 export interface ServiceJob_Properties_Tasks {
+  /** The action(s) permitted on this task in its own current state. (AI-inferred) */
   allowedActions?: string[] | Computed<string[]>;
+  /** Additional, type-specific detail about this task. (AI-inferred) */
   customDetails?: ServiceJob_Properties_Tasks_CustomDetails | Computed<ServiceJob_Properties_Tasks_CustomDetails>;
+  /** When this event or window ended. (AI-inferred) */
   endTime?: string | Computed<string>;
+  /** The error(s) encountered. (AI-inferred) */
   errors?: ServiceJob_Properties_Errors[] | Computed<ServiceJob_Properties_Errors[]>;
+  /** A human-readable name for this resource. (AI-inferred) */
   friendlyName?: string | Computed<string>;
+  /** Additional detail specific to this recovery plan group task. (AI-inferred) */
   groupTaskCustomDetails?: ServiceJob_Properties_Tasks_GroupTaskCustomDetails | Computed<ServiceJob_Properties_Tasks_GroupTaskCustomDetails>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** When this event or window started. (AI-inferred) */
   startTime?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   state?: string | Computed<string>;
+  /** A human-readable description of this resource's own current state. (AI-inferred) */
   stateDescription?: string | Computed<string>;
+  /** A unique identifier for this task. (AI-inferred) */
   taskId?: string | Computed<string>;
+  /** The category of task this represents. (AI-inferred) */
   taskType?: string | Computed<string>;
 }
 

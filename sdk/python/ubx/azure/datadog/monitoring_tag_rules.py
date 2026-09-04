@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class MonitoringTagRules_Properties_AgentRules_FilteringTags:
+    # The action to perform. (AI-inferred)
     action: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -47,6 +50,7 @@ class MonitoringTagRules_Properties:
     log_rules: Any = None
     # Set of rules for sending metrics for the Monitor resource.
     metric_rules: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 _MonitoringTagRules_Properties_AgentRules_FilteringTagsFields = {

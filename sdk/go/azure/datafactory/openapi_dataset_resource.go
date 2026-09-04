@@ -18,8 +18,10 @@ type OpenapiDatasetResource_Properties_LinkedServiceName struct {
 }
 
 type OpenapiDatasetResource_Properties_Parameters struct {
+	// The value used when this field is left unset. (AI-inferred)
 	DefaultValue any
-	Type         any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiDatasetResource_Properties struct {

@@ -4,8 +4,11 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FailovergroupsFailoverGroup_Properties_PartnerServers struct {
-	Id              any
-	Location        any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// Whether this partner server acts as the primary or a secondary in the failover group. (AI-inferred)
 	ReplicationRole any
 }
 

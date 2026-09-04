@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_GroupMetaData_GlobalPlacementRules:
+    # The key of this metadata entry. (AI-inferred)
     key: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -26,157 +28,273 @@ class VolumeGroupDetails_Properties_GroupMetaData:
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Backup:
+    # A reference to the backup policy this applies to. (AI-inferred)
     backup_policy_id: Any = None
+    # A reference to the backup vault this applies to. (AI-inferred)
     backup_vault_id: Any = None
+    # Whether this policy's own rules are actively enforced, rather than only evaluated. (AI-inferred)
     policy_enforced: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_RansomwareProtection:
+    # Output only. The ransomware protection state this volume is actually currently in. (AI-inferred)
     actual_ransomware_protection_state: Any = None
+    # The ransomware protection state requested for this volume. (AI-inferred)
     desired_ransomware_protection_state: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication_DestinationReplications:
+    # The Azure region this applies to. (AI-inferred)
     region: Any = None
+    # The kind of replication relationship this represents, e.g. cross-region or cross-zone. (AI-inferred)
     replication_type: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
+    # The availability zone this resource is provisioned in. (AI-inferred)
     zone: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication_RemotePath:
+    # The hostname a client outside the peered network uses to reach this volume. (AI-inferred)
     external_host_name: Any = None
+    # The name of this server. (AI-inferred)
     server_name: Any = None
+    # The name of this volume. (AI-inferred)
     volume_name: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication:
+    # The replication relationship/relationships where this volume acts as the destination. (AI-inferred)
     destination_replications: Any = None
+    # Whether this volume is the source or destination endpoint of a replication relationship. (AI-inferred)
     endpoint_type: Any = None
+    # Detail about setting up replication to an externally hosted destination. (AI-inferred)
     external_replication_setup_info: Any = None
+    # The current status of setting up replication to an externally hosted destination. (AI-inferred)
     external_replication_setup_status: Any = None
+    # The current synchronization state of this replication relationship. (AI-inferred)
     mirror_state: Any = None
+    # The current status of this replication relationship. (AI-inferred)
     relationship_status: Any = None
+    # The path on the remote system this configuration connects to. (AI-inferred)
     remote_path: Any = None
+    # The Azure region the replication source or destination volume is deployed in. (AI-inferred)
     remote_volume_region: Any = None
+    # A reference to the replication source or destination volume. (AI-inferred)
     remote_volume_resource_id: Any = None
+    # A unique identifier for this replication relationship. (AI-inferred)
     replication_id: Any = None
+    # How often data is replicated, e.g. hourly or daily. (AI-inferred)
     replication_schedule: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Snapshot:
+    # A reference to the snapshot policy this applies to. (AI-inferred)
     snapshot_policy_id: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_VolumeRelocation:
+    # Whether this clone split has completed enough to be finalized. (AI-inferred)
     ready_to_be_finalized: Any = None
+    # Whether relocation of this resource to different underlying infrastructure has been requested. (AI-inferred)
     relocation_requested: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties_DataProtection:
+    # A reference to the backup this applies to. (AI-inferred)
     backup: Any = None
+    # Ransomware protection configuration for this volume. (AI-inferred)
     ransomware_protection: Any = None
+    # Replication configuration for this volume. (AI-inferred)
     replication: Any = None
+    # A reference to the snapshot this applies to. (AI-inferred)
     snapshot: Any = None
+    # Configuration for relocating this volume to different underlying infrastructure. (AI-inferred)
     volume_relocation: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties_ExportPolicy_Rules:
+    # The client IP address range(s), in CIDR notation, permitted to access this export. (AI-inferred)
     allowed_clients: Any = None
+    # Who is permitted to change file ownership on this volume, e.g. only root or any user. (AI-inferred)
     chown_mode: Any = None
+    # Whether the SMB/CIFS protocol is enabled for this volume. (AI-inferred)
     cifs: Any = None
+    # Whether this client is granted root access. (AI-inferred)
     has_root_access: Any = None
+    # Whether Kerberos v5 authenticated clients are granted read-only access. (AI-inferred)
     kerberos5_read_only: Any = None
+    # Whether Kerberos v5 authenticated clients are granted read-write access. (AI-inferred)
     kerberos5_read_write: Any = None
+    # Whether Kerberos v5 with integrity checking authenticated clients are granted read-only access. (AI-inferred)
     kerberos5i_read_only: Any = None
+    # Whether Kerberos v5 with integrity checking authenticated clients are granted read-write access. (AI-inferred)
     kerberos5i_read_write: Any = None
+    # Whether Kerberos v5 with privacy protection authenticated clients are granted read-only access. (AI-inferred)
     kerberos5p_read_only: Any = None
+    # Whether Kerberos v5 with privacy protection authenticated clients are granted read-write access. (AI-inferred)
     kerberos5p_read_write: Any = None
+    # Whether the NFSv3 protocol is enabled for this volume. (AI-inferred)
     nfsv3: Any = None
+    # Whether the NFSv4.1 protocol is enabled for this volume. (AI-inferred)
     nfsv41: Any = None
+    # This rule's own relative evaluation order. (AI-inferred)
     rule_index: Any = None
+    # Whether UNIX clients are granted read-only access. (AI-inferred)
     unix_read_only: Any = None
+    # Whether UNIX clients are granted read-write access. (AI-inferred)
     unix_read_write: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties_ExportPolicy:
+    # The rule(s) making up this policy. (AI-inferred)
     rules: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties_MountTargets:
+    # A unique identifier for this volume's own file system. (AI-inferred)
     file_system_id: Any = None
+    # An IP address value. (AI-inferred)
     ip_address: Any = None
+    # A unique identifier for this volume's own mount target. (AI-inferred)
     mount_target_id: Any = None
+    # The fully qualified domain name of the SMB server hosting this volume. (AI-inferred)
     smb_server_fqdn: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes_Properties:
+    # Whether the capacity pool is allowed to grow automatically to accommodate splitting a short-term clone. (AI-inferred)
     accept_grow_capacity_pool_for_short_term_clone_split: Any = None
+    # Output only. The throughput, in MiB/s, this volume actually currently has provisioned. (AI-inferred)
     actual_throughput_mibps: Any = None
+    # Whether this volume is enabled for use as an Azure VMware Solution datastore. (AI-inferred)
     avs_data_store: Any = None
+    # A reference to the backup this applies to. (AI-inferred)
     backup_id: Any = None
+    # The identifier of the bare-metal tenant this volume is hosted on. (AI-inferred)
     baremetal_tenant_id: Any = None
+    # Whether specific processes are permitted to bypass cool access retrieval throttling. (AI-inferred)
     breakthrough_mode: Any = None
+    # A reference to the capacity pool this volume belongs to. (AI-inferred)
     capacity_pool_resource_id: Any = None
+    # How far this clone operation has progressed, as a percentage. (AI-inferred)
     clone_progress: Any = None
+    # Whether inactive data on this volume is automatically tiered to a cooler, lower-cost storage tier. (AI-inferred)
     cool_access: Any = None
+    # How aggressively cold, tiered data is retrieved back to the hot tier when accessed. (AI-inferred)
     cool_access_retrieval_policy: Any = None
+    # Which data on this volume is eligible for tiering to the cool access tier. (AI-inferred)
     cool_access_tiering_policy: Any = None
+    # How many days data must remain inactive before becoming eligible for cool access tiering. (AI-inferred)
     coolness_period: Any = None
+    # A unique name identifying this volume within its own capacity pool, used to construct its own mount path. (AI-inferred)
     creation_token: Any = None
+    # Data protection configuration (replication, snapshot policy, backup) for this volume. (AI-inferred)
     data_protection: Any = None
+    # A reference to the datastore this volume backs. (AI-inferred)
     data_store_resource_id: Any = None
+    # The default storage quota, in kibibytes, applied to a group without an explicit quota rule. (AI-inferred)
     default_group_quota_in_ki_bs: Any = None
+    # The default storage quota, in kibibytes, applied to a user without an explicit quota rule. (AI-inferred)
     default_user_quota_in_ki_bs: Any = None
+    # Whether the snapshot this clone was created from is deleted once the clone split completes. (AI-inferred)
     delete_base_snapshot: Any = None
+    # Output only. The network feature level actually currently in effect for this volume. (AI-inferred)
     effective_network_features: Any = None
+    # Whether subvolume management is enabled for this volume. (AI-inferred)
     enable_subvolumes: Any = None
+    # Whether this resource's own data is encrypted at rest. (AI-inferred)
     encrypted: Any = None
+    # Whether this volume is encrypted with a Microsoft-managed or customer-managed key. (AI-inferred)
     encryption_key_source: Any = None
+    # The NFS/SMB export rule(s) controlling which clients may access this volume. (AI-inferred)
     export_policy: Any = None
+    # Whether file access auditing is enabled for this volume. (AI-inferred)
     file_access_logs: Any = None
+    # A unique identifier for this volume's own file system. (AI-inferred)
     file_system_id: Any = None
+    # The size, in bytes, this volume inherited from its own parent (e.g. when cloned from a snapshot). (AI-inferred)
     inherited_size_in_bytes: Any = None
+    # Whether default user/group quotas are enforced on this volume. (AI-inferred)
     is_default_quota_enabled: Any = None
+    # Whether this volume is provisioned as a large volume, above the standard size limit. (AI-inferred)
     is_large_volume: Any = None
+    # Whether this volume is currently being restored from a backup. (AI-inferred)
     is_restoring: Any = None
+    # Whether Kerberos authentication is enabled for this volume. (AI-inferred)
     kerberos_enabled: Any = None
+    # A reference to the Private Endpoint used to reach the Key Vault holding this resource's own encryption key. (AI-inferred)
     key_vault_private_endpoint_resource_id: Any = None
+    # Whether LDAP is enabled for this Active Directory connection. (AI-inferred)
     ldap_enabled: Any = None
+    # The maximum number of files this volume is provisioned to hold. (AI-inferred)
     maximum_number_of_files: Any = None
+    # The mount target(s) exposing this volume to clients. (AI-inferred)
     mount_targets: Any = None
+    # The network feature level (Basic or Standard) this volume uses. (AI-inferred)
     network_features: Any = None
+    # An identifier grouping volume(s) that share the same underlying network configuration. (AI-inferred)
     network_sibling_set_id: Any = None
+    # A reference to the resource this data or configuration originated from. (AI-inferred)
     originating_resource_id: Any = None
+    # Rule(s) constraining which underlying infrastructure this volume can be placed on. (AI-inferred)
     placement_rules: Any = None
+    # The file access protocol(s) (NFSv3, NFSv4.1, SMB) enabled for this volume. (AI-inferred)
     protocol_types: Any = None
+    # Output only. The availability zone this volume was actually provisioned in. (AI-inferred)
     provisioned_availability_zone: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the proximity placement group this resource is deployed with. (AI-inferred)
     proximity_placement_group: Any = None
+    # Whether this volume's own permission model is `unix` or `ntfs`. (AI-inferred)
     security_style: Any = None
+    # The performance tier this resource is provisioned at, e.g. `Standard`, `Premium`, or `Ultra`. (AI-inferred)
     service_level: Any = None
+    # Whether users only see the SMB share content they have permission to access. (AI-inferred)
     smb_access_based_enumeration: Any = None
+    # Whether SMB Continuous Availability is enabled, for transparent failover during planned maintenance. (AI-inferred)
     smb_continuously_available: Any = None
+    # Whether SMB traffic to this volume is encrypted. (AI-inferred)
     smb_encryption: Any = None
+    # Whether this SMB share is hidden from casual browsing. (AI-inferred)
     smb_non_browsable: Any = None
+    # Whether the hidden `.snapshot` directory is visible to clients. (AI-inferred)
     snapshot_directory_visible: Any = None
+    # A reference to the snapshot this applies to. (AI-inferred)
     snapshot_id: Any = None
+    # How close, network-wise, this volume is provisioned to its own storage. (AI-inferred)
     storage_to_network_proximity: Any = None
+    # A reference to the subnet this resource is deployed into. (AI-inferred)
     subnet_id: Any = None
+    # The network identifier this volume's own storage infrastructure uses. (AI-inferred)
     t2_network: Any = None
+    # The provisioned throughput, in MiB/s. (AI-inferred)
     throughput_mibps: Any = None
+    # The UNIX-style file permission bits applied to this volume's own root. (AI-inferred)
     unix_permissions: Any = None
+    # The provisioned storage quota for this volume, in bytes. (AI-inferred)
     usage_threshold: Any = None
+    # The name of the application volume group this volume belongs to. (AI-inferred)
     volume_group_name: Any = None
+    # The role this volume plays within its own containing application volume group, e.g. `data` or `log`. (AI-inferred)
     volume_spec_name: Any = None
+    # The category of volume this represents. (AI-inferred)
     volume_type: Any = None
 
 @dataclasses.dataclass
 class VolumeGroupDetails_Properties_Volumes:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
     tags: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
     zones: Any = None
 
 @dataclasses.dataclass

@@ -13,8 +13,11 @@ class BmsValidateOperationsResponse_Properties:
 
 @dataclasses.dataclass
 class BmsValidateOperationsResponse_ValidateOperationResponse_ValidationResults:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # Guidance for resolving this issue. (AI-inferred)
     recommendations: Any = None
 
 @dataclasses.dataclass

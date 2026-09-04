@@ -8,16 +8,24 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Deployment_Properties_CallRateLimit_Rules_MatchPatterns:
+    # The HTTP method this applies to. (AI-inferred)
     method: Any = None
+    # A file or resource path. (AI-inferred)
     path: Any = None
 
 @dataclasses.dataclass
 class Deployment_Properties_CallRateLimit_Rules:
+    # How many of this item there are. (AI-inferred)
     count: Any = None
+    # Whether request throttling is dynamically adjusted based on observed load. (AI-inferred)
     dynamic_throttling_enabled: Any = None
+    # The key of this attribute or label. (AI-inferred)
     key: Any = None
+    # The pattern(s) a matching request must satisfy. (AI-inferred)
     match_patterns: Any = None
+    # The minimum count required for this condition to be satisfied. (AI-inferred)
     min_count: Any = None
+    # How often this quota or commitment period automatically renews. (AI-inferred)
     renewal_period: Any = None
 
 @dataclasses.dataclass
@@ -26,6 +34,7 @@ class Deployment_Properties_CallRateLimit:
     count: Any = None
     # The renewal period in seconds of Call Rate Limit.
     renewal_period: Any = None
+    # The rule(s) making up this policy. (AI-inferred)
     rules: Any = None
 
 @dataclasses.dataclass
@@ -90,6 +99,7 @@ class Deployment_Properties:
     provisioning_state: Any = None
     # The name of RAI policy.
     rai_policy_name: Any = None
+    # The rate limit(s) applied to this deployment or resource. (AI-inferred)
     rate_limits: Any = None
     # Routing configuration for the model-router deployment. Specifies how requests are routed across multiple models.
     routing: Any = None

@@ -2,13 +2,18 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiVnetInfoResource_Properties_Routes_Properties {
+  /** The last address in this range, inclusive. (AI-inferred) */
   endAddress?: string | Computed<string>;
+  /** How this route was learned, e.g. static or default. (AI-inferred) */
   routeType?: string | Computed<string>;
+  /** The first address in this range, inclusive. (AI-inferred) */
   startAddress?: string | Computed<string>;
 }
 
 export interface OpenapiVnetInfoResource_Properties_Routes {
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiVnetInfoResource_Properties_Routes_Properties | Computed<OpenapiVnetInfoResource_Properties_Routes_Properties>;
 }
 

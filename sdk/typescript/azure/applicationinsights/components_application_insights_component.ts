@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ComponentsApplicationInsightsComponent_Properties_PrivateLinkScopedResources {
+  /** A reference to the Private Link Scope resource this component is linked to. (AI-inferred) */
   resourceId?: string | Computed<string>;
+  /** The Private Link Scope's own identifier. (AI-inferred) */
   scopeId?: string | Computed<string>;
 }
 

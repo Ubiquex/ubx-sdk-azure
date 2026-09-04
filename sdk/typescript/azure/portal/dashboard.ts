@@ -2,25 +2,36 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Dashboard_Properties_Lenses_Parts_Metadata {
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface Dashboard_Properties_Lenses_Parts_Position {
+  /** How many grid columns this tile spans. (AI-inferred) */
   colSpan?: number | Computed<number>;
+  /** Additional, free-form metadata associated with this resource. (AI-inferred) */
   metadata?: unknown | Computed<unknown>;
+  /** How many grid rows this tile spans. (AI-inferred) */
   rowSpan?: number | Computed<number>;
+  /** The horizontal grid coordinate this tile is placed at. (AI-inferred) */
   x?: number | Computed<number>;
+  /** The vertical grid coordinate this tile is placed at. (AI-inferred) */
   y?: number | Computed<number>;
 }
 
 export interface Dashboard_Properties_Lenses_Parts {
+  /** Additional, free-form metadata associated with this resource. (AI-inferred) */
   metadata?: Dashboard_Properties_Lenses_Parts_Metadata | Computed<Dashboard_Properties_Lenses_Parts_Metadata>;
+  /** The layout position of this item within its own containing grid. (AI-inferred) */
   position?: Dashboard_Properties_Lenses_Parts_Position | Computed<Dashboard_Properties_Lenses_Parts_Position>;
 }
 
 export interface Dashboard_Properties_Lenses {
+  /** Additional, free-form metadata associated with this resource. (AI-inferred) */
   metadata?: unknown | Computed<unknown>;
+  /** The relative ordering position of this item. (AI-inferred) */
   order?: number | Computed<number>;
+  /** The individual tile(s) making up this dashboard. (AI-inferred) */
   parts?: Dashboard_Properties_Lenses_Parts[] | Computed<Dashboard_Properties_Lenses_Parts[]>;
 }
 

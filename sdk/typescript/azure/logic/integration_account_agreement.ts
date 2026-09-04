@@ -165,35 +165,62 @@ export interface IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveA
 }
 
 export interface IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EdifactDelimiterOverrides {
+  /** The character separating individual data elements within a composite element. (AI-inferred) */
   componentSeparator?: number | Computed<number>;
+  /** The character separating individual data elements within a segment. (AI-inferred) */
   dataElementSeparator?: number | Computed<number>;
+  /** The character used as the decimal point in numeric values. (AI-inferred) */
   decimalPointIndicator?: string | Computed<string>;
+  /** The code identifying the association responsible for this specific message type. (AI-inferred) */
   messageAssociationAssignedCode?: string | Computed<string>;
+  /** The identifier for this message type. (AI-inferred) */
   messageId?: string | Computed<string>;
+  /** The release number of this message definition. (AI-inferred) */
   messageRelease?: string | Computed<string>;
+  /** The version number of this message definition. (AI-inferred) */
   messageVersion?: string | Computed<string>;
+  /** The character marking a subsequent character as an escaped literal, rather than a delimiter. (AI-inferred) */
   releaseIndicator?: number | Computed<number>;
+  /** The character separating repeated instances of a data element. (AI-inferred) */
   repetitionSeparator?: number | Computed<number>;
+  /** The character marking the end of a segment. (AI-inferred) */
   segmentTerminator?: number | Computed<number>;
+  /** An additional character appended after the segment terminator, e.g. a line break. (AI-inferred) */
   segmentTerminatorSuffix?: string | Computed<string>;
+  /** The XML namespace this schema is defined in. (AI-inferred) */
   targetNamespace?: string | Computed<string>;
 }
 
 export interface IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeOverrides {
+  /** The password used to authenticate this trading partner agreement's own application. (AI-inferred) */
   applicationPassword?: string | Computed<string>;
+  /** The code identifying the association responsible for this message definition. (AI-inferred) */
   associationAssignedCode?: string | Computed<string>;
+  /** The code identifying the standards agency governing this message definition. (AI-inferred) */
   controllingAgencyCode?: string | Computed<string>;
+  /** The identifier for this X12 functional group. (AI-inferred) */
   functionalGroupId?: string | Computed<string>;
+  /** The release number declared in this EDIFACT group header. (AI-inferred) */
   groupHeaderMessageRelease?: string | Computed<string>;
+  /** The version number declared in this EDIFACT group header. (AI-inferred) */
   groupHeaderMessageVersion?: string | Computed<string>;
+  /** The code identifying the association responsible for this specific message type. (AI-inferred) */
   messageAssociationAssignedCode?: string | Computed<string>;
+  /** The identifier for this message type. (AI-inferred) */
   messageId?: string | Computed<string>;
+  /** The release number of this message definition. (AI-inferred) */
   messageRelease?: string | Computed<string>;
+  /** The version number of this message definition. (AI-inferred) */
   messageVersion?: string | Computed<string>;
+  /** The identifier of the receiving trading partner's own application. (AI-inferred) */
   receiverApplicationId?: string | Computed<string>;
+  /** The code qualifying the type of `receiver_application_id`. (AI-inferred) */
   receiverApplicationQualifier?: string | Computed<string>;
+  /** The identifier of the sending trading partner's own application. (AI-inferred) */
   senderApplicationId?: string | Computed<string>;
+  /** The code qualifying the type of `sender_application_id`. (AI-inferred) */
   senderApplicationQualifier?: string | Computed<string>;
+  /** The XML namespace this schema is defined in. (AI-inferred) */
   targetNamespace?: string | Computed<string>;
 }
 
@@ -313,6 +340,7 @@ export interface IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveA
 }
 
 export interface IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterList {
+  /** The identifier for this message type. (AI-inferred) */
   messageId?: string | Computed<string>;
 }
 
@@ -330,22 +358,36 @@ export interface IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveA
 }
 
 export interface IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_SchemaReferences {
+  /** The code identifying the association responsible for this message definition. (AI-inferred) */
   associationAssignedCode?: string | Computed<string>;
+  /** The identifier for this message type. (AI-inferred) */
   messageId?: string | Computed<string>;
+  /** The release number of this message definition. (AI-inferred) */
   messageRelease?: string | Computed<string>;
+  /** The version number of this message definition. (AI-inferred) */
   messageVersion?: string | Computed<string>;
+  /** The name of this schema. (AI-inferred) */
   schemaName?: string | Computed<string>;
+  /** The identifier of the sending trading partner's own application. (AI-inferred) */
   senderApplicationId?: string | Computed<string>;
+  /** The code qualifying the type of `sender_application_id`. (AI-inferred) */
   senderApplicationQualifier?: string | Computed<string>;
 }
 
 export interface IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationOverrides {
+  /** Whether leading/trailing spaces and leading zeroes are permitted in a value. (AI-inferred) */
   allowLeadingAndTrailingSpacesAndZeroes?: boolean | Computed<boolean>;
+  /** Whether values are validated against the permitted character set. (AI-inferred) */
   enforceCharacterSet?: boolean | Computed<boolean>;
+  /** The identifier for this message type. (AI-inferred) */
   messageId?: string | Computed<string>;
+  /** How trailing, otherwise-empty separators at the end of a segment are handled. (AI-inferred) */
   trailingSeparatorPolicy?: string | Computed<string>;
+  /** Whether leading/trailing spaces and leading zeroes are stripped from a value. (AI-inferred) */
   trimLeadingAndTrailingSpacesAndZeroes?: boolean | Computed<boolean>;
+  /** Whether EDI data types are validated against the schema. (AI-inferred) */
   validateEditypes?: boolean | Computed<boolean>;
+  /** Whether values are validated against their own declared XSD types. (AI-inferred) */
   validateXsdtypes?: boolean | Computed<boolean>;
 }
 
@@ -447,15 +489,25 @@ export interface IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgree
 }
 
 export interface IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeOverrides {
+  /** The format dates are expressed in. (AI-inferred) */
   dateFormat?: string | Computed<string>;
+  /** The code identifying the kind of transaction set(s) in this functional group. (AI-inferred) */
   functionalIdentifierCode?: string | Computed<string>;
+  /** The version identifier declared in this message header. (AI-inferred) */
   headerVersion?: string | Computed<string>;
+  /** The identifier for this message type. (AI-inferred) */
   messageId?: string | Computed<string>;
+  /** The version of the underlying EDI protocol this agreement uses. (AI-inferred) */
   protocolVersion?: string | Computed<string>;
+  /** The identifier of the receiving trading partner's own application. (AI-inferred) */
   receiverApplicationId?: string | Computed<string>;
+  /** The code identifying the agency responsible for this message definition. (AI-inferred) */
   responsibleAgencyCode?: string | Computed<string>;
+  /** The identifier of the sending trading partner's own application. (AI-inferred) */
   senderApplicationId?: string | Computed<string>;
+  /** The XML namespace this schema is defined in. (AI-inferred) */
   targetNamespace?: string | Computed<string>;
+  /** The format times are expressed in. (AI-inferred) */
   timeFormat?: string | Computed<string>;
 }
 
@@ -543,9 +595,13 @@ export interface IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgree
 }
 
 export interface IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SchemaReferences {
+  /** The identifier for this message type. (AI-inferred) */
   messageId?: string | Computed<string>;
+  /** The name of this schema. (AI-inferred) */
   schemaName?: string | Computed<string>;
+  /** The version of this schema. (AI-inferred) */
   schemaVersion?: string | Computed<string>;
+  /** The identifier of the sending trading partner's own application. (AI-inferred) */
   senderApplicationId?: string | Computed<string>;
 }
 
@@ -561,24 +617,40 @@ export interface IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgree
 }
 
 export interface IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ValidationOverrides {
+  /** Whether leading/trailing spaces and leading zeroes are permitted in a value. (AI-inferred) */
   allowLeadingAndTrailingSpacesAndZeroes?: boolean | Computed<boolean>;
+  /** The identifier for this message type. (AI-inferred) */
   messageId?: string | Computed<string>;
+  /** How trailing, otherwise-empty separators at the end of a segment are handled. (AI-inferred) */
   trailingSeparatorPolicy?: string | Computed<string>;
+  /** Whether leading/trailing spaces and leading zeroes are stripped from a value. (AI-inferred) */
   trimLeadingAndTrailingSpacesAndZeroes?: boolean | Computed<boolean>;
+  /** Whether values are validated against the permitted character set. (AI-inferred) */
   validateCharacterSet?: boolean | Computed<boolean>;
+  /** Whether EDI data types are validated against the schema. (AI-inferred) */
   validateEditypes?: boolean | Computed<boolean>;
+  /** Whether values are validated against their own declared XSD types. (AI-inferred) */
   validateXsdtypes?: boolean | Computed<boolean>;
 }
 
 export interface IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_X12DelimiterOverrides {
+  /** The character separating individual data elements within a composite element. (AI-inferred) */
   componentSeparator?: number | Computed<number>;
+  /** The character separating individual data elements within a segment. (AI-inferred) */
   dataElementSeparator?: number | Computed<number>;
+  /** The identifier for this message type. (AI-inferred) */
   messageId?: string | Computed<string>;
+  /** The version of the underlying EDI protocol this agreement uses. (AI-inferred) */
   protocolVersion?: string | Computed<string>;
+  /** The character substituted in place of a disallowed one. (AI-inferred) */
   replaceCharacter?: number | Computed<number>;
+  /** Whether delimiter characters appearing inside data values are replaced, to avoid ambiguity with the message's own structural delimiters. (AI-inferred) */
   replaceSeparatorsInPayload?: boolean | Computed<boolean>;
+  /** The character marking the end of a segment. (AI-inferred) */
   segmentTerminator?: number | Computed<number>;
+  /** An additional character appended after the segment terminator, e.g. a line break. (AI-inferred) */
   segmentTerminatorSuffix?: string | Computed<string>;
+  /** The XML namespace this schema is defined in. (AI-inferred) */
   targetNamespace?: string | Computed<string>;
 }
 

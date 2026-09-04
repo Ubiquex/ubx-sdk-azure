@@ -4,13 +4,18 @@ package trafficmanager
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Endpoint_Properties_CustomHeaders struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type Endpoint_Properties_Subnets struct {
+	// The first address in this range, inclusive. (AI-inferred)
 	First any
-	Last  any
+	// The last address in this range, inclusive. (AI-inferred)
+	Last any
+	// The subnet or IP range this endpoint applies to, for subnet-based routing. (AI-inferred)
 	Scope any
 }
 

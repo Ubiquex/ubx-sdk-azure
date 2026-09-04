@@ -8,11 +8,14 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class AgentDeployment_Properties_Agents:
+    # The version of this agent. (AI-inferred)
     agent_version: Any = None
 
 @dataclasses.dataclass
 class AgentDeployment_Properties_Protocols:
+    # The network protocol used. (AI-inferred)
     protocol: Any = None
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass

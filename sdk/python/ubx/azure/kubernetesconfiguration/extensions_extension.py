@@ -30,7 +30,9 @@ class ExtensionsExtension_Plan:
 
 @dataclasses.dataclass
 class ExtensionsExtension_Properties_ErrorInfo_AdditionalInfo:
+    # Additional detail about this result. (AI-inferred)
     info: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -39,10 +41,15 @@ class ExtensionsExtension_Properties_ErrorInfo_Details_Details:
 
 @dataclasses.dataclass
 class ExtensionsExtension_Properties_ErrorInfo_Details:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
@@ -77,10 +84,15 @@ class ExtensionsExtension_Properties_Scope:
 
 @dataclasses.dataclass
 class ExtensionsExtension_Properties_Statuses:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # A human-readable summary of this resource's own current status. (AI-inferred)
     display_status: Any = None
+    # The severity level of this event. (AI-inferred)
     level: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # When this event occurred. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass

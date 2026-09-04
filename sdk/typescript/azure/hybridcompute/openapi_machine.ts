@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiMachine_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,7 +20,9 @@ export interface OpenapiMachine_Identity {
 }
 
 export interface OpenapiMachine_Properties_AgentConfiguration_ExtensionsAllowList {
+  /** The publisher of this VM extension. (AI-inferred) */
   publisher?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -64,7 +68,9 @@ export interface OpenapiMachine_Properties_CloudMetadata {
 }
 
 export interface OpenapiMachine_Properties_ErrorDetails_AdditionalInfo {
+  /** Additional detail about this result. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -72,33 +78,52 @@ export interface OpenapiMachine_Properties_ErrorDetails_Details_Details {
 }
 
 export interface OpenapiMachine_Properties_ErrorDetails_Details {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: OpenapiMachine_Properties_ErrorDetails_AdditionalInfo[] | Computed<OpenapiMachine_Properties_ErrorDetails_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: OpenapiMachine_Properties_ErrorDetails_Details_Details[] | Computed<OpenapiMachine_Properties_ErrorDetails_Details_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface OpenapiMachine_Properties_ErrorDetails {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: OpenapiMachine_Properties_ErrorDetails_AdditionalInfo[] | Computed<OpenapiMachine_Properties_ErrorDetails_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: OpenapiMachine_Properties_ErrorDetails_Details[] | Computed<OpenapiMachine_Properties_ErrorDetails_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface OpenapiMachine_Properties_Extensions_Status {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable summary of this status. (AI-inferred) */
   displayStatus?: string | Computed<string>;
+  /** The severity level of this status, e.g. `Info`, `Warning`, or `Error`. (AI-inferred) */
   level?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** When this status was last reported. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
 export interface OpenapiMachine_Properties_Extensions {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: OpenapiMachine_Properties_Extensions_Status | Computed<OpenapiMachine_Properties_Extensions_Status>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The version of the extension handler. (AI-inferred) */
   typeHandlerVersion?: string | Computed<string>;
 }
 
@@ -110,7 +135,9 @@ export interface OpenapiMachine_Properties_FirmwareProfile {
 }
 
 export interface OpenapiMachine_Properties_HardwareProfile_Processors {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The number of processor cores. (AI-inferred) */
   numberOfCores?: number | Computed<number>;
 }
 
@@ -124,7 +151,9 @@ export interface OpenapiMachine_Properties_HardwareProfile {
 }
 
 export interface OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetails_VolumeLicenseDetails {
+  /** The invoice number associated with this volume license. (AI-inferred) */
   invoiceId?: string | Computed<string>;
+  /** The program year this Software Assurance/subscription benefit applies to. (AI-inferred) */
   programYear?: string | Computed<string>;
 }
 
@@ -171,12 +200,19 @@ export interface OpenapiMachine_Properties_LicenseProfile_EsuProfile {
 }
 
 export interface OpenapiMachine_Properties_LicenseProfile_ProductProfile_ProductFeatures {
+  /** When billing for this product feature ends. (AI-inferred) */
   billingEndDate?: string | Computed<string>;
+  /** When billing for this product feature starts. (AI-inferred) */
   billingStartDate?: string | Computed<string>;
+  /** When this machine was disenrolled from this product feature. (AI-inferred) */
   disenrollmentDate?: string | Computed<string>;
+  /** When this machine was enrolled in this product feature. (AI-inferred) */
   enrollmentDate?: string | Computed<string>;
+  /** Detail about an error that occurred. (AI-inferred) */
   error?: OpenapiMachine_Properties_ErrorDetails | Computed<OpenapiMachine_Properties_ErrorDetails>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** This product feature's own current subscription status. (AI-inferred) */
   subscriptionStatus?: string | Computed<string>;
 }
 
@@ -213,6 +249,7 @@ export interface OpenapiMachine_Properties_LicenseProfile {
   licenseStatus?: string | Computed<string>;
   /** Describes the properties of a Product License Profile ARM model. */
   productProfile?: OpenapiMachine_Properties_LicenseProfile_ProductProfile | Computed<OpenapiMachine_Properties_LicenseProfile_ProductProfile>;
+  /** This machine's Software Assurance/subscription benefit status, used to determine Extended Security Update eligibility. (AI-inferred) */
   softwareAssurance?: OpenapiMachine_Properties_LicenseProfile_SoftwareAssurance | Computed<OpenapiMachine_Properties_LicenseProfile_SoftwareAssurance>;
 }
 
@@ -228,19 +265,27 @@ export interface OpenapiMachine_Properties_LocationData {
 }
 
 export interface OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses_Subnet {
+  /** The subnet's own address range, in CIDR notation. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
 }
 
 export interface OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses {
+  /** The literal IP address. (AI-inferred) */
   address?: string | Computed<string>;
+  /** Whether this is an IPv4 or IPv6 address. (AI-inferred) */
   ipAddressVersion?: string | Computed<string>;
+  /** The subnet this IP address belongs to. (AI-inferred) */
   subnet?: OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses_Subnet | Computed<OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses_Subnet>;
 }
 
 export interface OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The IP address(es) assigned to this network interface. (AI-inferred) */
   ipAddresses?: OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses[] | Computed<OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses[]>;
+  /** This network interface's own MAC address. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -296,12 +341,19 @@ export interface OpenapiMachine_Properties_ServiceStatuses {
 }
 
 export interface OpenapiMachine_Properties_StorageProfile_Disks {
+  /** The type of this disk, e.g. `Managed` or `Unmanaged`. (AI-inferred) */
   diskType?: string | Computed<string>;
+  /** A machine-generated unique identifier for this disk. (AI-inferred) */
   generatedId?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** This disk's own maximum size, in bytes. (AI-inferred) */
   maxSizeInBytes?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** This disk's own file system path. (AI-inferred) */
   path?: string | Computed<string>;
+  /** This disk's own currently-used space, in bytes. (AI-inferred) */
   usedSpaceInBytes?: number | Computed<number>;
 }
 
@@ -390,19 +442,30 @@ export interface OpenapiMachine_Properties {
 }
 
 export interface OpenapiMachine_Resources_Properties {
+  /** Whether this extension automatically upgrades to the latest minor version as new versions become available. (AI-inferred) */
   autoUpgradeMinorVersion?: boolean | Computed<boolean>;
+  /** Whether Azure automatically upgrades this extension to newer versions as they're released. (AI-inferred) */
   enableAutomaticUpgrade?: boolean | Computed<boolean>;
+  /** An opaque value that, when changed, forces this extension to re-run even though its own configuration is otherwise unchanged. (AI-inferred) */
   forceUpdateTag?: string | Computed<string>;
+  /** Real-time status information about this extension's own current runtime state. (AI-inferred) */
   instanceView?: OpenapiMachine_Properties_Extensions | Computed<OpenapiMachine_Properties_Extensions>;
+  /** Extension-specific configuration that's encrypted before being sent to the machine, never returned on a read. (AI-inferred) */
   protectedSettings?: Record<string, unknown> | Computed<Record<string, unknown>>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The publisher of this VM extension. (AI-inferred) */
   publisher?: string | Computed<string>;
+  /** Extension-specific configuration, in JSON. (AI-inferred) */
   settings?: Record<string, unknown> | Computed<Record<string, unknown>>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The version of the extension handler. (AI-inferred) */
   typeHandlerVersion?: string | Computed<string>;
 }
 
 export interface OpenapiMachine_Resources {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiMachine_Resources_Properties | Computed<OpenapiMachine_Resources_Properties>;
 }
 

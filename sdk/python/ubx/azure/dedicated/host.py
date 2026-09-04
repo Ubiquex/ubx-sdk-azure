@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Host_Properties_InstanceView_AvailableCapacity_AllocatableVms:
+    # The number of VMs of the specified size that can be allocated on the dedicated host. (AI-inferred)
     count: Any = None
+    # The VM size that can be allocated on the dedicated host. (AI-inferred)
     vm_size: Any = None
 
 @dataclasses.dataclass
@@ -18,10 +20,15 @@ class Host_Properties_InstanceView_AvailableCapacity:
 
 @dataclasses.dataclass
 class Host_Properties_InstanceView_Statuses:
+    # The code that identifies the specific status of the dedicated host instance view, used to programmatically determine the state. (AI-inferred)
     code: Any = None
+    # The user-friendly display status of the dedicated host, providing a human-readable description of the current state (e.g., 'Provisioning succeeded'). (AI-inferred)
     display_status: Any = None
+    # The severity level of the status message, indicating whether it is informational, a warning, or an error. Possible values are: Info, Warning, Error. (AI-inferred)
     level: Any = None
+    # A human-readable message providing additional details about the status of the dedicated host. (AI-inferred)
     message: Any = None
+    # The timestamp indicating when the status was observed or last updated. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
@@ -35,6 +42,7 @@ class Host_Properties_InstanceView:
 
 @dataclasses.dataclass
 class Host_Properties_VirtualMachines:
+    # The Azure resource ID of a virtual machine associated with the dedicated host. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass

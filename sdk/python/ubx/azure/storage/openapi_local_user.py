@@ -8,13 +8,18 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiLocalUser_Properties_PermissionScopes:
+    # The access permission(s) granted. (AI-inferred)
     permissions: Any = None
+    # The name of this resource. (AI-inferred)
     resource_name: Any = None
+    # The storage service (e.g. blob, file, queue) this applies to. (AI-inferred)
     service: Any = None
 
 @dataclasses.dataclass
 class OpenapiLocalUser_Properties_SshAuthorizedKeys:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The key of this key/value pair. (AI-inferred)
     key: Any = None
 
 @dataclasses.dataclass

@@ -20,52 +20,78 @@ class VirtualwanExpressRouteGateway_Properties_AutoScaleConfiguration:
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_PropagatedRouteTables:
+    # The identifier(s) this applies to. (AI-inferred)
     ids: Any = None
+    # The label(s) attached to this route table, used to group it with others for association/propagation. (AI-inferred)
     labels: Any = None
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes:
+    # The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
     address_prefixes: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
     next_hop_ip_address: Any = None
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig:
+    # Whether this connection's own static routes are propagated to the hub's own route table(s). (AI-inferred)
     propagate_static_routes: Any = None
+    # The criteria under which locally learned virtual network routes override otherwise equal-priority learned routes. (AI-inferred)
     vnet_local_route_override_criteria: Any = None
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes:
+    # The BGP peering connection(s) established on this virtual hub. (AI-inferred)
     bgp_connections: Any = None
+    # The caller-defined static route(s) on this connection. (AI-inferred)
     static_routes: Any = None
+    # Configuration controlling how static routes are propagated for this connection. (AI-inferred)
     static_routes_config: Any = None
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration:
+    # A reference to the route table this connection's own traffic is associated with. (AI-inferred)
     associated_route_table: Any = None
+    # A reference to the route map applied to routes received on this connection. (AI-inferred)
     inbound_route_map: Any = None
+    # A reference to the route map applied to routes advertised on this connection. (AI-inferred)
     outbound_route_map: Any = None
+    # The route table(s) routes from this connection are propagated into. (AI-inferred)
     propagated_route_tables: Any = None
+    # The route(s) learned from virtual network connections attached to this hub. (AI-inferred)
     vnet_routes: Any = None
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties:
+    # A pre-shared key used to authorize this connection. (AI-inferred)
     authorization_key: Any = None
+    # Whether traffic is routed through a security provider before reaching the internet. (AI-inferred)
     enable_internet_security: Any = None
+    # Whether traffic to Private Link resources bypasses the hub's own Azure Firewall or NVA, for lower latency. (AI-inferred)
     enable_private_link_fast_path: Any = None
+    # A reference to the ExpressRoute circuit peering this connection uses. (AI-inferred)
     express_route_circuit_peering: Any = None
+    # Whether traffic bypasses the ExpressRoute gateway when a more direct path is available. (AI-inferred)
     express_route_gateway_bypass: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # Routing configuration (associated/propagated route tables) applied to this connection. (AI-inferred)
     routing_configuration: Any = None
+    # The relative weight of this route among several possible paths. (AI-inferred)
     routing_weight: Any = None
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

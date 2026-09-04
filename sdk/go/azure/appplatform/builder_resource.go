@@ -4,12 +4,15 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BuilderResource_Properties_BuildpackGroups_Buildpacks struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type BuilderResource_Properties_BuildpackGroups struct {
+	// The buildpack(s) applied when building this application. (AI-inferred)
 	Buildpacks any
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type BuilderResource_Properties_Stack struct {

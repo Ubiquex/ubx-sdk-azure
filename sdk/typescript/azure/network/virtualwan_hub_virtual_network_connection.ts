@@ -14,8 +14,11 @@ export interface VirtualwanHubVirtualNetworkConnection_Properties_RoutingConfigu
 }
 
 export interface VirtualwanHubVirtualNetworkConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes {
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred) */
   nextHopIpAddress?: string | Computed<string>;
 }
 

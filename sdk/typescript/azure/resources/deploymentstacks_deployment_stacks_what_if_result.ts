@@ -27,10 +27,15 @@ export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta {
+  /** The value this field will hold after the change is applied. (AI-inferred) */
   after?: unknown | Computed<unknown>;
+  /** The value this field currently holds, before the change is applied. (AI-inferred) */
   before?: unknown | Computed<unknown>;
+  /** The category of change this represents, e.g. `Create`, `Modify`, or `Delete`. (AI-inferred) */
   changeType?: string | Computed<string>;
+  /** The nested change(s) within this resource. (AI-inferred) */
   children?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_Children[] | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_Children[]>;
+  /** The property path this applies to. (AI-inferred) */
   path?: string | Computed<string>;
 }
 
@@ -51,47 +56,74 @@ export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVault {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference {
+  /** A reference to the Key Vault this secret is sourced from. (AI-inferred) */
   keyVault?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVault | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVault>;
+  /** The name of this secret. (AI-inferred) */
   secretName?: string | Computed<string>;
+  /** The specific version of this secret. (AI-inferred) */
   secretVersion?: string | Computed<string>;
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config {
+  /** A reference to the Key Vault secret this value is sourced from. (AI-inferred) */
   keyVaultReference?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension {
+  /** The configuration for this resource. (AI-inferred) */
   config?: Record<string, DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config> | Computed<Record<string, DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config>>;
+  /** A reference to the configuration this applies to. (AI-inferred) */
   configId?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The version identifier this applies to. (AI-inferred) */
   version?: string | Computed<string>;
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChanges {
+  /** The value this field will hold after the change is applied. (AI-inferred) */
   after?: Record<string, unknown> | Computed<Record<string, unknown>>;
+  /** The value this field currently holds, before the change is applied. (AI-inferred) */
   before?: Record<string, unknown> | Computed<Record<string, unknown>>;
+  /** The individual field-level difference/differences making up this change. (AI-inferred) */
   delta?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta[] | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta[]>;
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges {
+  /** The API version used for this resource. (AI-inferred) */
   apiVersion?: string | Computed<string>;
+  /** How confident this preview is in the predicted change, e.g. `Certain` or `Unknown`. (AI-inferred) */
   changeCertainty?: string | Computed<string>;
+  /** The category of change this represents, e.g. `Create`, `Modify`, or `Delete`. (AI-inferred) */
   changeType?: string | Computed<string>;
+  /** How `deny_status` will change as a result of applying this deployment. (AI-inferred) */
   denyStatusChange?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChange | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChange>;
+  /** A reference to the deployment this applies to. (AI-inferred) */
   deploymentId?: string | Computed<string>;
+  /** A reference to a Bicep extension used by this template. (AI-inferred) */
   extension?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The property/properties identifying this resource for matching purposes. (AI-inferred) */
   identifiers?: Record<string, unknown> | Computed<Record<string, unknown>>;
+  /** How this resource's own stack-managed status will change as a result of applying this deployment. (AI-inferred) */
   managementStatusChange?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChange | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChange>;
+  /** The configuration change(s) this deployment would make to this resource. (AI-inferred) */
   resourceConfigurationChanges?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChanges | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChanges>;
+  /** The template-local name identifying this resource within its own deployment. (AI-inferred) */
   symbolicName?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** Why this action or configuration isn't supported. (AI-inferred) */
   unsupportedReason?: string | Computed<string>;
 }
 
@@ -110,23 +142,35 @@ export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_DebugSe
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfo {
+  /** Additional structured detail supporting this error. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfo[] | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** The severity level of this message. (AI-inferred) */
   level?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_Details {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfo[] | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_Children[] | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_Children[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
@@ -144,18 +188,25 @@ export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error {
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputDefinitions {
+  /** The configuration for this resource. (AI-inferred) */
   config?: unknown | Computed<unknown>;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputs {
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 
 export interface DeploymentstacksDeploymentStacksWhatIfResult_Properties_Parameters {
+  /** The template expression this value was evaluated from. (AI-inferred) */
   expression?: string | Computed<string>;
+  /** A reference to a related resource or value. (AI-inferred) */
   reference?: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference | Computed<DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 

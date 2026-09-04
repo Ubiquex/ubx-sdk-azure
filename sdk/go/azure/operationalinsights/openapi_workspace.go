@@ -4,7 +4,9 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWorkspace_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -46,8 +48,10 @@ type OpenapiWorkspace_Properties_Features struct {
 }
 
 type OpenapiWorkspace_Properties_PrivateLinkScopedResources struct {
+	// A reference to the resource this applies to. (AI-inferred)
 	ResourceId any
-	ScopeId    any
+	// A reference to the scope this configuration applies to. (AI-inferred)
+	ScopeId any
 }
 
 type OpenapiWorkspace_Properties_Replication struct {

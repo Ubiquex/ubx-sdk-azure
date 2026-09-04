@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class CloudngfwFirewallResource_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -33,7 +35,9 @@ class CloudngfwFirewallResource_Properties_AssociatedRulestack:
 
 @dataclasses.dataclass
 class CloudngfwFirewallResource_Properties_DnsSettings_DnsServers:
+    # The network address this applies to. (AI-inferred)
     address: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
 
 @dataclasses.dataclass
@@ -47,14 +51,20 @@ class CloudngfwFirewallResource_Properties_DnsSettings:
 
 @dataclasses.dataclass
 class CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfiguration:
+    # The network address this applies to. (AI-inferred)
     address: Any = None
+    # A network port number. (AI-inferred)
     port: Any = None
 
 @dataclasses.dataclass
 class CloudngfwFirewallResource_Properties_FrontEndSettings:
+    # Configuration for the backend service this rule forwards traffic to. (AI-inferred)
     backend_configuration: Any = None
+    # Configuration for the frontend endpoint this rule listens on. (AI-inferred)
     frontend_configuration: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The network protocol used. (AI-inferred)
     protocol: Any = None
 
 @dataclasses.dataclass

@@ -8,15 +8,22 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiDaprComponent_Properties_Metadata:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A reference to the secret holding this value. (AI-inferred)
     secret_ref: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiDaprComponent_Properties_Secrets:
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # A reference to the Key Vault secret this value is sourced from. (AI-inferred)
     key_vault_url: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

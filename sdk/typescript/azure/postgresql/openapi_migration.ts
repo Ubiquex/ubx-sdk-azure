@@ -2,39 +2,64 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_DbDetails {
+  /** The number of change(s) applied so far. (AI-inferred) */
   appliedChanges?: number | Computed<number>;
+  /** The number of delete operation(s) captured by change data capture. (AI-inferred) */
   cdcDeleteCounter?: number | Computed<number>;
+  /** The number of insert operation(s) captured by change data capture. (AI-inferred) */
   cdcInsertCounter?: number | Computed<number>;
+  /** The number of update operation(s) captured by change data capture. (AI-inferred) */
   cdcUpdateCounter?: number | Computed<number>;
+  /** The name of the database this applies to. (AI-inferred) */
   databaseName?: string | Computed<string>;
+  /** When this migration ended. (AI-inferred) */
   endedOn?: string | Computed<string>;
+  /** The number of table(s) that completed the full-load phase. (AI-inferred) */
   fullLoadCompletedTables?: number | Computed<number>;
+  /** The number of table(s) that errored during the full-load phase. (AI-inferred) */
   fullLoadErroredTables?: number | Computed<number>;
+  /** The number of table(s) currently being loaded in the full-load phase. (AI-inferred) */
   fullLoadLoadingTables?: number | Computed<number>;
+  /** The number of table(s) still queued for the full-load phase. (AI-inferred) */
   fullLoadQueuedTables?: number | Computed<number>;
+  /** The number of change(s) received so far, awaiting application. (AI-inferred) */
   incomingChanges?: number | Computed<number>;
+  /** The observed replication lag. (AI-inferred) */
   latency?: number | Computed<number>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The specific migration action being performed. (AI-inferred) */
   migrationOperation?: string | Computed<string>;
+  /** The current status of this migration. (AI-inferred) */
   migrationState?: string | Computed<string>;
+  /** When this migration started. (AI-inferred) */
   startedOn?: string | Computed<string>;
 }
 
 export interface OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary_Messages {
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   state?: string | Computed<string>;
 }
 
 export interface OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary {
+  /** The message(s) associated with this result. (AI-inferred) */
   messages?: OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary_Messages[] | Computed<OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary_Messages[]>;
+  /** The current status of this resource. (AI-inferred) */
   state?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails {
+  /** The name of the database this applies to. (AI-inferred) */
   databaseName?: string | Computed<string>;
+  /** When this migration ended. (AI-inferred) */
   endedOn?: string | Computed<string>;
+  /** When this migration started. (AI-inferred) */
   startedOn?: string | Computed<string>;
+  /** A short, human-readable summary of this result. (AI-inferred) */
   summary?: OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary[] | Computed<OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary[]>;
 }
 
@@ -54,6 +79,7 @@ export interface OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetail
 export interface OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails {
   /** Substate of migration. */
   currentSubState?: string | Computed<string>;
+  /** Detail about this specific database's own migration progress. (AI-inferred) */
   dbDetails?: Record<string, OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_DbDetails> | Computed<Record<string, OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_DbDetails>>;
   /** Details for the validation for migration. */
   validationDetails?: OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails | Computed<OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails>;

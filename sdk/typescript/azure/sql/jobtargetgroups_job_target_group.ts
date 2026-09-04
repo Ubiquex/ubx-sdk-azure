@@ -2,12 +2,19 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface JobtargetgroupsJobTargetGroup_Properties_Members {
+  /** The name of the specific database this job target group member applies to. (AI-inferred) */
   databaseName?: string | Computed<string>;
+  /** The name of the elastic pool this job target group member applies to. (AI-inferred) */
   elasticPoolName?: string | Computed<string>;
+  /** Whether this member is explicitly included in, or excluded from, the target group. (AI-inferred) */
   membershipType?: string | Computed<string>;
+  /** A reference to the credential used to refresh this member's own dynamic target list, e.g. for an elastic pool or shard map. (AI-inferred) */
   refreshCredential?: string | Computed<string>;
+  /** The name of the logical SQL server this job target group member applies to. (AI-inferred) */
   serverName?: string | Computed<string>;
+  /** The name of the shard map this job target group member applies to. (AI-inferred) */
   shardMapName?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

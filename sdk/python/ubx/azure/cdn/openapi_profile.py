@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiProfile_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,9 +26,13 @@ class OpenapiProfile_Identity:
 
 @dataclasses.dataclass
 class OpenapiProfile_Properties_LogScrubbing_ScrubbingRules:
+    # The request attribute this condition evaluates. (AI-inferred)
     match_variable: Any = None
+    # The specific field name a match condition targets. (AI-inferred)
     selector: Any = None
+    # How `selector` itself is matched. (AI-inferred)
     selector_match_operator: Any = None
+    # The current status of this resource. (AI-inferred)
     state: Any = None
 
 @dataclasses.dataclass

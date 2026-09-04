@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DbOpenapiCassandraRoleDefinitionResource_Properties_Permissions {
+  /** The specific data-plane action(s) this role definition grants. (AI-inferred) */
   dataActions?: string[] | Computed<string[]>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The specific data-plane action(s) explicitly excluded from this role definition's own grant. (AI-inferred) */
   notDataActions?: string[] | Computed<string[]>;
 }
 

@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DbOpenapiGremlinDatabaseGetResults_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -29,14 +31,18 @@ class DbOpenapiGremlinDatabaseGetResults_Properties_Options_AutoscaleSettings:
 
 @dataclasses.dataclass
 class DbOpenapiGremlinDatabaseGetResults_Properties_Options:
+    # Configuration for automatically scaling throughput within a defined maximum. (AI-inferred)
     autoscale_settings: Any = None
     # Request Units per second. For example, "throughput": 10000.
     throughput: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiGremlinDatabaseGetResults_Properties_Resource_RestoreParameters:
+    # A reference to the source account this account is restored from. (AI-inferred)
     restore_source: Any = None
+    # The point in time this account is restored to, in UTC. (AI-inferred)
     restore_timestamp_in_utc: Any = None
+    # Whether time-to-live expiration is disabled on the restored data. (AI-inferred)
     restore_with_ttl_disabled: Any = None
 
 @dataclasses.dataclass

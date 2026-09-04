@@ -68,6 +68,7 @@ class RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties:
     condition_version: Any = None
     # DateTime when role assignment schedule request was created
     created_on: Any = None
+    # Additional, denormalized detail about the principal, role definition, and scope this request applies to, included for convenience. (AI-inferred)
     expanded_properties: Any = None
     # Justification for the role assignment
     justification: Any = None

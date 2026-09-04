@@ -2,19 +2,27 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DevToolPortalResource_Properties_Components_Instances {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface DevToolPortalResource_Properties_Components_ResourceRequests {
+  /** The number of CPU core(s) allocated. (AI-inferred) */
   cpu?: string | Computed<string>;
+  /** The number of instance(s) provisioned. (AI-inferred) */
   instanceCount?: number | Computed<number>;
+  /** The amount of memory allocated. (AI-inferred) */
   memory?: string | Computed<string>;
 }
 
 export interface DevToolPortalResource_Properties_Components {
+  /** The instance(s) making up this deployment. (AI-inferred) */
   instances?: DevToolPortalResource_Properties_Components_Instances[] | Computed<DevToolPortalResource_Properties_Components_Instances[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The compute resource requirement(s) (CPU, memory) for this deployment. (AI-inferred) */
   resourceRequests?: DevToolPortalResource_Properties_Components_ResourceRequests | Computed<DevToolPortalResource_Properties_Components_ResourceRequests>;
 }
 

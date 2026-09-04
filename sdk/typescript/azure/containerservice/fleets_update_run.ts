@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelection_CustomNodeImageVersions {
+  /** The version identifier this applies to. (AI-inferred) */
   version?: string | Computed<string>;
 }
 
@@ -13,6 +14,7 @@ export interface FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelect
 }
 
 export interface FleetsUpdateRun_Properties_ManagedClusterUpdate_Upgrade {
+  /** The Kubernetes version this applies to. (AI-inferred) */
   kubernetesVersion?: string | Computed<string>;
   /** The type of upgrade to perform when targeting ManagedClusters. */
   type: string | Computed<string>;
@@ -31,7 +33,9 @@ export interface FleetsUpdateRun_Properties_Status_NodeImageSelection {
 }
 
 export interface FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfo {
+  /** Additional detail about this result. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -39,63 +43,100 @@ export interface FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Erro
 }
 
 export interface FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfo[] | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details_Details[] | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfo[] | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details[] | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status {
+  /** When this operation completed. (AI-inferred) */
   completedTime?: string | Computed<string>;
+  /** Detail about an error that occurred. (AI-inferred) */
   error?: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error>;
+  /** When this event or window started. (AI-inferred) */
   startTime?: string | Computed<string>;
+  /** The current lifecycle state of this resource. (AI-inferred) */
   state?: string | Computed<string>;
 }
 
 export interface FleetsUpdateRun_Properties_Status_Stages_AfterGates {
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** A reference to the specific approval gate this applies to. (AI-inferred) */
   gateId?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status>;
 }
 
 export interface FleetsUpdateRun_Properties_Status_Stages_AfterStageWaitStatus {
+  /** The current status of this resource. (AI-inferred) */
   status?: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status>;
+  /** How long, in seconds, this wait stage pauses for. (AI-inferred) */
   waitDurationInSeconds?: number | Computed<number>;
 }
 
 export interface FleetsUpdateRun_Properties_Status_Stages_Groups_Members {
+  /** A reference to the member cluster this applies to. (AI-inferred) */
   clusterResourceId?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** An identifier for this specific operation. (AI-inferred) */
   operationId?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status>;
 }
 
 export interface FleetsUpdateRun_Properties_Status_Stages_Groups {
+  /** The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred) */
   afterGates?: FleetsUpdateRun_Properties_Status_Stages_AfterGates[] | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates[]>;
+  /** The approval gate(s) that must be satisfied before this stage begins. (AI-inferred) */
   beforeGates?: FleetsUpdateRun_Properties_Status_Stages_AfterGates[] | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates[]>;
+  /** The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred) */
   maxConcurrency?: number | Computed<number>;
+  /** The member cluster(s) belonging to this fleet. (AI-inferred) */
   members?: FleetsUpdateRun_Properties_Status_Stages_Groups_Members[] | Computed<FleetsUpdateRun_Properties_Status_Stages_Groups_Members[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status>;
 }
 
 export interface FleetsUpdateRun_Properties_Status_Stages {
+  /** The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred) */
   afterGates?: FleetsUpdateRun_Properties_Status_Stages_AfterGates[] | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates[]>;
+  /** The current status of the post-stage wait period. (AI-inferred) */
   afterStageWaitStatus?: FleetsUpdateRun_Properties_Status_Stages_AfterStageWaitStatus | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterStageWaitStatus>;
+  /** The approval gate(s) that must be satisfied before this stage begins. (AI-inferred) */
   beforeGates?: FleetsUpdateRun_Properties_Status_Stages_AfterGates[] | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates[]>;
+  /** The group(s) this update run's own member clusters are batched into. (AI-inferred) */
   groups?: FleetsUpdateRun_Properties_Status_Stages_Groups[] | Computed<FleetsUpdateRun_Properties_Status_Stages_Groups[]>;
+  /** The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred) */
   maxConcurrency?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status | Computed<FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status>;
 }
 
@@ -109,23 +150,35 @@ export interface FleetsUpdateRun_Properties_Status {
 }
 
 export interface FleetsUpdateRun_Properties_Strategy_Stages_AfterGates {
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface FleetsUpdateRun_Properties_Strategy_Stages_Groups {
+  /** The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred) */
   afterGates?: FleetsUpdateRun_Properties_Strategy_Stages_AfterGates[] | Computed<FleetsUpdateRun_Properties_Strategy_Stages_AfterGates[]>;
+  /** The approval gate(s) that must be satisfied before this stage begins. (AI-inferred) */
   beforeGates?: FleetsUpdateRun_Properties_Strategy_Stages_AfterGates[] | Computed<FleetsUpdateRun_Properties_Strategy_Stages_AfterGates[]>;
+  /** The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred) */
   maxConcurrency?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface FleetsUpdateRun_Properties_Strategy_Stages {
+  /** The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred) */
   afterGates?: FleetsUpdateRun_Properties_Strategy_Stages_AfterGates[] | Computed<FleetsUpdateRun_Properties_Strategy_Stages_AfterGates[]>;
+  /** How long to wait, in seconds, after this stage completes before continuing. (AI-inferred) */
   afterStageWaitInSeconds?: number | Computed<number>;
+  /** The approval gate(s) that must be satisfied before this stage begins. (AI-inferred) */
   beforeGates?: FleetsUpdateRun_Properties_Strategy_Stages_AfterGates[] | Computed<FleetsUpdateRun_Properties_Strategy_Stages_AfterGates[]>;
+  /** The group(s) this update run's own member clusters are batched into. (AI-inferred) */
   groups?: FleetsUpdateRun_Properties_Strategy_Stages_Groups[] | Computed<FleetsUpdateRun_Properties_Strategy_Stages_Groups[]>;
+  /** The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred) */
   maxConcurrency?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 

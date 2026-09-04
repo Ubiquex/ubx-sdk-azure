@@ -4,66 +4,100 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiEndpoint_Properties_CustomDomains_Properties struct {
-	HostName       any
+	// The hostname this applies to. (AI-inferred)
+	HostName any
+	// The data used to validate ownership of this custom domain. (AI-inferred)
 	ValidationData any
 }
 
 type OpenapiEndpoint_Properties_CustomDomains struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type OpenapiEndpoint_Properties_OriginGroups_Properties_HealthProbeSettings struct {
+	// How often, in seconds, this health probe runs. (AI-inferred)
 	ProbeIntervalInSeconds any
-	ProbePath              any
-	ProbeProtocol          any
-	ProbeRequestType       any
+	// The URL path this health probe requests. (AI-inferred)
+	ProbePath any
+	// The protocol this health probe uses, e.g. `Http` or `Https`. (AI-inferred)
+	ProbeProtocol any
+	// The HTTP method this health probe uses, e.g. `GET` or `HEAD`. (AI-inferred)
+	ProbeRequestType any
 }
 
 type OpenapiEndpoint_Properties_OriginGroups_Properties_Origins struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings_HttpErrorRanges struct {
+	// The first byte position of this range, inclusive. (AI-inferred)
 	Begin any
-	End   any
+	// The last byte position of this range, inclusive. (AI-inferred)
+	End any
 }
 
 type OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings struct {
-	HttpErrorRanges                          any
-	ResponseBasedDetectedErrorTypes          any
+	// The HTTP status code range(s) this origin health check treats as an error. (AI-inferred)
+	HttpErrorRanges any
+	// The kind of error response(s) (e.g. 5xx status codes) that mark an origin unhealthy. (AI-inferred)
+	ResponseBasedDetectedErrorTypes any
+	// The percentage of failed requests that triggers failover away from this origin. (AI-inferred)
 	ResponseBasedFailoverThresholdPercentage any
 }
 
 type OpenapiEndpoint_Properties_OriginGroups_Properties struct {
-	HealthProbeSettings                                   any
-	Origins                                               any
-	ResponseBasedOriginErrorDetectionSettings             any
+	// Configuration for periodically checking this origin's own health. (AI-inferred)
+	HealthProbeSettings any
+	// The origin server(s) this endpoint retrieves content from. (AI-inferred)
+	Origins any
+	// Configuration for detecting an unhealthy origin based on live response behavior, rather than only active probes. (AI-inferred)
+	ResponseBasedOriginErrorDetectionSettings any
+	// How long, in minutes, traffic gradually shifts back to an origin once it recovers or a new origin is added. (AI-inferred)
 	TrafficRestorationTimeToHealedOrNewEndpointsInMinutes any
 }
 
 type OpenapiEndpoint_Properties_OriginGroups struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type OpenapiEndpoint_Properties_Origins_Properties struct {
-	Enabled                    any
-	HostName                   any
-	HttpPort                   any
-	HttpsPort                  any
-	OriginHostHeader           any
-	Priority                   any
-	PrivateEndpointStatus      any
-	PrivateLinkAlias           any
+	// Whether this feature is turned on. (AI-inferred)
+	Enabled any
+	// The hostname this applies to. (AI-inferred)
+	HostName any
+	// The port used for HTTP (unencrypted) traffic. (AI-inferred)
+	HttpPort any
+	// The port used for HTTPS (encrypted) traffic. (AI-inferred)
+	HttpsPort any
+	// The `Host` header sent to the origin, when different from the requested hostname. (AI-inferred)
+	OriginHostHeader any
+	// The relative priority of this item. (AI-inferred)
+	Priority any
+	// The current approval status of this Private Link connection. (AI-inferred)
+	PrivateEndpointStatus any
+	// The alias identifying the Private Link resource this endpoint connects to. (AI-inferred)
+	PrivateLinkAlias any
+	// A message shown to the resource owner when requesting approval for this Private Link connection. (AI-inferred)
 	PrivateLinkApprovalMessage any
-	PrivateLinkLocation        any
-	PrivateLinkResourceId      any
-	Weight                     any
+	// The Azure region the target Private Link resource is deployed in. (AI-inferred)
+	PrivateLinkLocation any
+	// A reference to the Private Link resource this endpoint connects to. (AI-inferred)
+	PrivateLinkResourceId any
+	// The relative weight of this item. (AI-inferred)
+	Weight any
 }
 
 type OpenapiEndpoint_Properties_Origins struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

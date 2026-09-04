@@ -22,7 +22,9 @@ class OpenapiRecipientTransferDetails_Properties_DetailedTransferStatus:
 
 @dataclasses.dataclass
 class OpenapiRecipientTransferDetails_Properties_ProductDetails:
+    # A reference to the product this applies to. (AI-inferred)
     product_id: Any = None
+    # The category of product this represents. (AI-inferred)
     product_type: Any = None
 
 @dataclasses.dataclass

@@ -9,9 +9,12 @@ type PrivateEndpointConnection_Properties_PrivateEndpoint struct {
 }
 
 type PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type PrivateEndpointConnection_Properties struct {

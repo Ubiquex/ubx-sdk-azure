@@ -41,7 +41,8 @@ type OpenapiAfdoriginGroup_Properties_LoadBalancingSettings struct {
 
 type OpenapiAfdoriginGroup_Properties struct {
 	// The JSON object that contains the properties of the origin authentication settings.
-	Authentication   any
+	Authentication any
+	// The current deployment status of this configuration. (AI-inferred)
 	DeploymentStatus any
 	// The JSON object that contains the properties to send health probes to origin.
 	HealthProbeSettings any

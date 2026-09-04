@@ -23,7 +23,9 @@ class OpenapiIncident_Properties_AdditionalData:
 
 @dataclasses.dataclass
 class OpenapiIncident_Properties_Labels:
+    # The name of this label. (AI-inferred)
     label_name: Any = None
+    # The category this label belongs to. (AI-inferred)
     label_type: Any = None
 
 @dataclasses.dataclass

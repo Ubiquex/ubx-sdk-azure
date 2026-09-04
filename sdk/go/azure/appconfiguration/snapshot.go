@@ -4,7 +4,9 @@ package appconfiguration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Snapshot_Properties_Filters struct {
-	Key   any
+	// The configuration key name (or prefix pattern) this snapshot filter matches. (AI-inferred)
+	Key any
+	// The configuration key label this snapshot filter matches. (AI-inferred)
 	Label any
 }
 

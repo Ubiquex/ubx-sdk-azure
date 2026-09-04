@@ -4,7 +4,9 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSavedSearch_Properties_Tags struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 

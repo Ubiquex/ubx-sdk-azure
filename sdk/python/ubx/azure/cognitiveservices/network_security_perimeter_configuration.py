@@ -17,23 +17,32 @@ class NetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter:
 
 @dataclasses.dataclass
 class NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties:
+    # The IP address range(s), in CIDR notation, this rule applies to. (AI-inferred)
     address_prefixes: Any = None
+    # Whether this rule applies to inbound or outbound traffic. (AI-inferred)
     direction: Any = None
+    # The fully qualified domain name(s) this resource is reachable at. (AI-inferred)
     fully_qualified_domain_names: Any = None
+    # The network security perimeter(s) this resource participates in. (AI-inferred)
     network_security_perimeters: Any = None
+    # The subscription ID(s) this rule applies to. (AI-inferred)
     subscriptions: Any = None
 
 @dataclasses.dataclass
 class NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class NetworkSecurityPerimeterConfiguration_Properties_Profile:
+    # The network access rule(s) governing this resource. (AI-inferred)
     access_rules: Any = None
     # Access rules version of the resource profile
     access_rules_version: Any = None
@@ -46,15 +55,22 @@ class NetworkSecurityPerimeterConfiguration_Properties_Profile:
 
 @dataclasses.dataclass
 class NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The category of issue detected. (AI-inferred)
     issue_type: Any = None
+    # How serious this finding is. (AI-inferred)
     severity: Any = None
+    # The access rule(s) recommended to resolve this issue. (AI-inferred)
     suggested_access_rules: Any = None
+    # The resource ID(s) recommended to resolve this issue. (AI-inferred)
     suggested_resource_ids: Any = None
 
 @dataclasses.dataclass
 class NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

@@ -4,6 +4,7 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface IntegrationAccountSession_Properties {
   /** The changed time. */
   changedTime?: string | Computed<string>;
+  /** The literal content of this schema or configuration. (AI-inferred) */
   content?: unknown | Computed<unknown>;
   /** The created time. */
   createdTime?: string | Computed<string>;

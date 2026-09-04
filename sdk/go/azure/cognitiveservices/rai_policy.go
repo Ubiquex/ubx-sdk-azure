@@ -4,15 +4,22 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RaiPolicy_Properties_ContentFilters struct {
-	Action            any
-	Blocking          any
-	Enabled           any
-	Name              any
+	// The action taken when this rule matches. (AI-inferred)
+	Action any
+	// Whether this content filter blocks matching content, rather than only flagging it. (AI-inferred)
+	Blocking any
+	// Whether this feature is turned on. (AI-inferred)
+	Enabled any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The minimum severity level at which this content filter takes action. (AI-inferred)
 	SeverityThreshold any
-	Source            any
+	// Where this data or configuration is sourced from. (AI-inferred)
+	Source any
 }
 
 type RaiPolicy_Properties_CustomBlocklists struct {
+	// Where this data or configuration is sourced from. (AI-inferred)
 	Source any
 }
 

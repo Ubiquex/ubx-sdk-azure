@@ -4,7 +4,9 @@ package chaos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiExperiment_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,28 +22,38 @@ type OpenapiExperiment_Identity struct {
 }
 
 type OpenapiExperiment_Properties_Selectors_Filter struct {
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type OpenapiExperiment_Properties_Selectors struct {
+	// Restricts this selector to target resource(s) matching additional query filter criteria. (AI-inferred)
 	Filter any
-	Id     any
-	Type   any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiExperiment_Properties_Steps_Branches_Actions struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type OpenapiExperiment_Properties_Steps_Branches struct {
+	// The fault-injection action(s) run sequentially within this branch. (AI-inferred)
 	Actions any
-	Name    any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiExperiment_Properties_Steps struct {
+	// The parallel branch(es) of fault-injection action(s) making up this experiment step. (AI-inferred)
 	Branches any
-	Name     any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiExperiment_Properties struct {

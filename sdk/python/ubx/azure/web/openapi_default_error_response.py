@@ -8,14 +8,18 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiDefaultErrorResponse_Error_Details:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # The destination this applies to. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class OpenapiDefaultErrorResponse_Error:
     # Standardized string to programmatically identify the error.
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
     # More information to debug error.
     innererror: Any = None

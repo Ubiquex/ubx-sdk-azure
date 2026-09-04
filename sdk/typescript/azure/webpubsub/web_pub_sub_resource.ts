@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface WebPubSubResource_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,7 +20,9 @@ export interface WebPubSubResource_Identity {
 }
 
 export interface WebPubSubResource_Properties_LiveTraceConfiguration_Categories {
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -30,11 +34,14 @@ export interface WebPubSubResource_Properties_LiveTraceConfiguration {
 }
 
 export interface WebPubSubResource_Properties_NetworkAcls_IpRules {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface WebPubSubResource_Properties_NetworkAcls_PrivateEndpoints {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -57,23 +64,32 @@ export interface WebPubSubResource_Properties_NetworkAcls {
 }
 
 export interface WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface WebPubSubResource_Properties_PrivateEndpointConnections_Properties {
+  /** The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred) */
   groupIds?: string[] | Computed<string[]>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface WebPubSubResource_Properties_PrivateEndpointConnections {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: WebPubSubResource_Properties_PrivateEndpointConnections_Properties | Computed<WebPubSubResource_Properties_PrivateEndpointConnections_Properties>;
 }
 
@@ -83,14 +99,20 @@ export interface WebPubSubResource_Properties_ResourceLogConfiguration {
 }
 
 export interface WebPubSubResource_Properties_SharedPrivateLinkResources_Properties {
+  /** The sub-resource this connection targets on the destination service. (AI-inferred) */
   groupId?: string | Computed<string>;
+  /** A reference to the Private Link resource this applies to. (AI-inferred) */
   privateLinkResourceId?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A message the requester attaches when asking to connect to this resource. (AI-inferred) */
   requestMessage?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface WebPubSubResource_Properties_SharedPrivateLinkResources {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: WebPubSubResource_Properties_SharedPrivateLinkResources_Properties | Computed<WebPubSubResource_Properties_SharedPrivateLinkResources_Properties>;
 }
 

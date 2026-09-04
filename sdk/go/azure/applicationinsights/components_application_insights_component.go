@@ -4,8 +4,10 @@ package applicationinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ComponentsApplicationInsightsComponent_Properties_PrivateLinkScopedResources struct {
+	// A reference to the Private Link Scope resource this component is linked to. (AI-inferred)
 	ResourceId any
-	ScopeId    any
+	// The Private Link Scope's own identifier. (AI-inferred)
+	ScopeId any
 }
 
 type ComponentsApplicationInsightsComponent_Properties struct {

@@ -8,12 +8,19 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class JobtargetgroupsJobTargetGroup_Properties_Members:
+    # The name of the specific database this job target group member applies to. (AI-inferred)
     database_name: Any = None
+    # The name of the elastic pool this job target group member applies to. (AI-inferred)
     elastic_pool_name: Any = None
+    # Whether this member is explicitly included in, or excluded from, the target group. (AI-inferred)
     membership_type: Any = None
+    # A reference to the credential used to refresh this member's own dynamic target list, e.g. for an elastic pool or shard map. (AI-inferred)
     refresh_credential: Any = None
+    # The name of the logical SQL server this job target group member applies to. (AI-inferred)
     server_name: Any = None
+    # The name of the shard map this job target group member applies to. (AI-inferred)
     shard_map_name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

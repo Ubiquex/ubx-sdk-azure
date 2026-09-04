@@ -8,10 +8,15 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class MachineExtension_Properties_InstanceView_Statuses:
+    # The machine-readable status code for the extension instance view status, such as 'ProvisioningState/succeeded' or 'ProvisioningState/failed'. (AI-inferred)
     code: Any = None
+    # The localized, human-readable status message displayed for the extension instance view status. (AI-inferred)
     display_status: Any = None
+    # The severity level of the status, indicating whether it is informational, a warning, or an error. Allowed values: Info, Warning, Error. (AI-inferred)
     level: Any = None
+    # A human-readable message providing additional details about the extension's status, as part of the instance view statuses. (AI-inferred)
     message: Any = None
+    # The time at which the status was recorded, typically in ISO 8601 format. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
@@ -36,6 +41,7 @@ class MachineExtension_Properties_ProtectedSettingsFromKeyVault_SourceVault:
 class MachineExtension_Properties_ProtectedSettingsFromKeyVault:
     # The URL referencing a secret in a Key Vault.
     secret_url: Any = None
+    # The Key Vault that holds the protected settings. This is a reference to the vault (e.g., its resource ID) and is required when supplying protected settings via a Key Vault. (AI-inferred)
     source_vault: Any = None
 
 @dataclasses.dataclass

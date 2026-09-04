@@ -2,14 +2,20 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface BmsResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetails {
+  /** The default compute resource(s) allocated for this operation. (AI-inferred) */
   defaultResourceRequest?: string | Computed<string>;
+  /** The specific critical operation this protection applies to. (AI-inferred) */
   vaultCriticalOperation?: string | Computed<string>;
 }
 
 export interface BmsResourceGuardProxyBaseResource_Properties {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** When this resource was last updated. (AI-inferred) */
   lastUpdatedTime?: string | Computed<string>;
+  /** Detail about the resource guard protecting this critical operation. (AI-inferred) */
   resourceGuardOperationDetails?: BmsResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetails[] | Computed<BmsResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetails[]>;
+  /** A reference to the resource guard protecting this vault. (AI-inferred) */
   resourceGuardResourceId: string | Computed<string>;
 }
 
@@ -34,6 +40,7 @@ export interface BmsResourceGuardProxyBaseResourceConfig {
   eTag?: string | Computed<string>;
   /** Represents an Azure geography region where supported resource providers live. */
   location?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: BmsResourceGuardProxyBaseResource_Properties | Computed<BmsResourceGuardProxyBaseResource_Properties>;
   /** Resource tags. */
   tags?: Record<string, string> | Computed<Record<string, string>>;
@@ -44,6 +51,7 @@ export interface BmsResourceGuardProxyBaseResourceAttrs {
   eTag: string;
   /** Represents an Azure geography region where supported resource providers live. */
   location: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: BmsResourceGuardProxyBaseResource_Properties;
   /** Resource tags. */
   tags: Record<string, string>;

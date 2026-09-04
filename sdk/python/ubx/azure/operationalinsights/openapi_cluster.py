@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiCluster_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,9 +26,13 @@ class OpenapiCluster_Identity:
 
 @dataclasses.dataclass
 class OpenapiCluster_Properties_AssociatedWorkspaces:
+    # When this resource was associated. (AI-inferred)
     associate_date: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
+    # A reference to the Log Analytics workspace this applies to. (AI-inferred)
     workspace_id: Any = None
+    # The name of the associated Log Analytics workspace. (AI-inferred)
     workspace_name: Any = None
 
 @dataclasses.dataclass

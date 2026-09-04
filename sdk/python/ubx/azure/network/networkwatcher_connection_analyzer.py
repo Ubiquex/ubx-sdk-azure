@@ -52,7 +52,9 @@ class NetworkwatcherConnectionAnalyzer_Properties_OutputSettings:
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettings_HttpConfiguration_Headers:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

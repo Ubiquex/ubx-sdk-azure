@@ -9,10 +9,15 @@ export interface OpenapiMachineRunCommand_Properties_ErrorBlobManagedIdentity {
 }
 
 export interface OpenapiMachineRunCommand_Properties_InstanceView_Statuses {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable summary of this status. (AI-inferred) */
   displayStatus?: string | Computed<string>;
+  /** The severity level of this status, e.g. `Info`, `Warning`, or `Error`. (AI-inferred) */
   level?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** When this status was last reported. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
@@ -36,7 +41,9 @@ export interface OpenapiMachineRunCommand_Properties_InstanceView {
 }
 
 export interface OpenapiMachineRunCommand_Properties_Parameters {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** This parameter's own value. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

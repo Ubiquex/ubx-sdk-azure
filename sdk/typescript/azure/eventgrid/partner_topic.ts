@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface PartnerTopic_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,9 +20,13 @@ export interface PartnerTopic_Identity {
 }
 
 export interface PartnerTopic_Properties_EventTypeInfo_InlineEventTypes {
+  /** A URL pointing to the schema describing this event's own data payload. (AI-inferred) */
   dataSchemaUrl?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** A URL pointing to documentation for this event type. (AI-inferred) */
   documentationUrl?: string | Computed<string>;
 }
 

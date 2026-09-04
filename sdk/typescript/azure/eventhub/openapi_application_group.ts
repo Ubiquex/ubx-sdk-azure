@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiApplicationGroup_Properties_Policies {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -31,12 +33,14 @@ const OpenapiApplicationGroup_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiApplicationGroupConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiApplicationGroup_Properties | Computed<OpenapiApplicationGroup_Properties>;
 }
 
 export interface OpenapiApplicationGroupAttrs {
   /** The geo-location where the resource lives */
   location: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiApplicationGroup_Properties;
 }
 

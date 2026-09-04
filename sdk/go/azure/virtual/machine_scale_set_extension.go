@@ -10,7 +10,8 @@ type MachineScaleSetExtension_Properties_ProtectedSettingsFromKeyVault_SourceVau
 
 type MachineScaleSetExtension_Properties_ProtectedSettingsFromKeyVault struct {
 	// The URL referencing a secret in a Key Vault.
-	SecretUrl   any
+	SecretUrl any
+	// Specifies the Key Vault resource that contains the secret for the protected settings. The object typically includes the Azure resource ID of the Key Vault. (AI-inferred)
 	SourceVault any
 }
 

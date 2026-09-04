@@ -28,21 +28,31 @@ class Account_Properties_AccountStatus_ErrorDetails_Details_Details:
 
 @dataclasses.dataclass
 class Account_Properties_AccountStatus_ErrorDetails_Details:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_AccountStatus_ErrorDetails:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_AccountStatus:
+    # The last, current provisioning status of this account. (AI-inferred)
     account_provisioning_state: Any = None
+    # Additional detail about this error. (AI-inferred)
     error_details: Any = None
 
 @dataclasses.dataclass
@@ -52,34 +62,48 @@ class Account_Properties_CloudConnectors:
 
 @dataclasses.dataclass
 class Account_Properties_Endpoints:
+    # A reference to the data catalog endpoint for this account. (AI-inferred)
     catalog: Any = None
+    # A reference to this account's own governance/guardian endpoint. (AI-inferred)
     guardian: Any = None
+    # A reference to this account's own scan endpoint. (AI-inferred)
     scan: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_ManagedResources:
+    # The Event Hubs namespace this account's own Kafka-compatible endpoints connect through. (AI-inferred)
     event_hub_namespace: Any = None
+    # The resource group this applies to. (AI-inferred)
     resource_group: Any = None
+    # A reference to the managed storage account backing this resource. (AI-inferred)
     storage_account: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_PrivateEndpointConnections_Properties:
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class Account_Properties_PrivateEndpointConnections:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
@@ -115,7 +139,9 @@ class Account_Properties:
 
 @dataclasses.dataclass
 class Account_Sku:
+    # The number of instance(s) this resource is provisioned with. (AI-inferred)
     capacity: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass

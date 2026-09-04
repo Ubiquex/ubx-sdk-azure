@@ -4,10 +4,12 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimcontenttypesContentItemContract2Config struct {
+	// This developer portal content item's own real, structured content payload. (AI-inferred)
 	Properties any
 }
 
 type ApimcontenttypesContentItemContract2Attrs struct {
+	// This developer portal content item's own real, structured content payload. (AI-inferred)
 	Properties any
 }
 

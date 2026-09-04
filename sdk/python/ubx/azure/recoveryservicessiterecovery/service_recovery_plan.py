@@ -17,25 +17,36 @@ class ServiceRecoveryPlan_Properties_CurrentScenario:
 
 @dataclasses.dataclass
 class ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetails:
+    # The specific subtype this resource is, distinguishing it within its own broader category. (AI-inferred)
     instance_type: Any = None
 
 @dataclasses.dataclass
 class ServiceRecoveryPlan_Properties_Groups_EndGroupActions:
+    # The name of this recovery plan action. (AI-inferred)
     action_name: Any = None
+    # Additional, type-specific detail about this task. (AI-inferred)
     custom_details: Any = None
+    # The direction(s) (e.g. primary-to-recovery) this operation supports failing over in. (AI-inferred)
     failover_directions: Any = None
+    # The failover type(s) (e.g. planned, unplanned, test) this operation supports. (AI-inferred)
     failover_types: Any = None
 
 @dataclasses.dataclass
 class ServiceRecoveryPlan_Properties_Groups_ReplicationProtectedItems:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # A reference to the virtual machine this applies to. (AI-inferred)
     virtual_machine_id: Any = None
 
 @dataclasses.dataclass
 class ServiceRecoveryPlan_Properties_Groups:
+    # The action(s) run at the end of this recovery plan group. (AI-inferred)
     end_group_actions: Any = None
+    # The category of recovery plan group this represents. (AI-inferred)
     group_type: Any = None
+    # The protected item(s) this applies to. (AI-inferred)
     replication_protected_items: Any = None
+    # The action(s) run at the start of this recovery plan group. (AI-inferred)
     start_group_actions: Any = None
 
 @dataclasses.dataclass

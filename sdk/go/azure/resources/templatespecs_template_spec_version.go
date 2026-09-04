@@ -4,7 +4,9 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TemplatespecsTemplateSpecVersion_Properties_LinkedTemplates struct {
-	Path     any
+	// The relative path identifying this linked template within the parent template's own deployment. (AI-inferred)
+	Path any
+	// The linked ARM template's own JSON content. (AI-inferred)
 	Template any
 }
 

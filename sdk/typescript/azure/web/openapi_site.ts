@@ -9,7 +9,9 @@ export interface OpenapiSite_ExtendedLocation {
 }
 
 export interface OpenapiSite_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -25,10 +27,15 @@ export interface OpenapiSite_Identity {
 }
 
 export interface OpenapiSite_Properties_AiIntegration_Mcp_Servers {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** The endpoint this connection targets. (AI-inferred) */
   endpoint?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The set of diagnostic tool(s) available. (AI-inferred) */
   toolList?: string[] | Computed<string[]>;
 }
 
@@ -147,7 +154,9 @@ export interface OpenapiSite_Properties_FunctionAppConfig_Runtime {
 }
 
 export interface OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_AlwaysReady {
+  /** The number of instance(s) provisioned. (AI-inferred) */
   instanceCount?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -189,11 +198,17 @@ export interface OpenapiSite_Properties_FunctionAppConfig {
 }
 
 export interface OpenapiSite_Properties_HostNameSslStates {
+  /** Whether this hostname is the app's own standard hostname or a repository-only hostname. (AI-inferred) */
   hostType?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Whether TLS/SSL for this hostname binding is disabled, using SNI-based, or using IP-based certificate matching. (AI-inferred) */
   sslState?: string | Computed<string>;
+  /** A cryptographic thumbprint of this certificate. (AI-inferred) */
   thumbprint?: string | Computed<string>;
+  /** The value this configuration will be changed to. (AI-inferred) */
   toUpdate?: boolean | Computed<boolean>;
+  /** The virtual IP address assigned to this resource. (AI-inferred) */
   virtualIp?: string | Computed<string>;
 }
 
@@ -239,7 +254,9 @@ export interface OpenapiSite_Properties_SiteConfig_ApiManagementConfig {
 }
 
 export interface OpenapiSite_Properties_SiteConfig_AppSettings {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -278,18 +295,28 @@ export interface OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_SlowRe
 }
 
 export interface OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodes {
+  /** How many of this item there are. (AI-inferred) */
   count?: number | Computed<number>;
+  /** A file or URL path. (AI-inferred) */
   path?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: number | Computed<number>;
+  /** A more specific status code, refining `status`. (AI-inferred) */
   subStatus?: number | Computed<number>;
+  /** The time window this measurement or rule applies over. (AI-inferred) */
   timeInterval?: string | Computed<string>;
+  /** A Windows-specific status code. (AI-inferred) */
   win32Status?: number | Computed<number>;
 }
 
 export interface OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesRange {
+  /** How many of this item there are. (AI-inferred) */
   count?: number | Computed<number>;
+  /** A file or URL path. (AI-inferred) */
   path?: string | Computed<string>;
+  /** The HTTP status code(s) triggering this rule. (AI-inferred) */
   statusCodes?: string | Computed<string>;
+  /** The time window this measurement or rule applies over. (AI-inferred) */
   timeInterval?: string | Computed<string>;
 }
 
@@ -316,18 +343,28 @@ export interface OpenapiSite_Properties_SiteConfig_AutoHealRules {
 }
 
 export interface OpenapiSite_Properties_SiteConfig_AzureStorageAccounts {
+  /** The access key credential used to authenticate. (AI-inferred) */
   accessKey?: string | Computed<string>;
+  /** The name of the associated storage account. (AI-inferred) */
   accountName?: string | Computed<string>;
+  /** The path this volume is mounted at. (AI-inferred) */
   mountPath?: string | Computed<string>;
+  /** The network protocol used. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The name of the file share this applies to. (AI-inferred) */
   shareName?: string | Computed<string>;
+  /** The current lifecycle state of this resource. (AI-inferred) */
   state?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiSite_Properties_SiteConfig_ConnectionStrings {
+  /** The connection string used to reach this resource. (AI-inferred) */
   connectionString?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -339,13 +376,21 @@ export interface OpenapiSite_Properties_SiteConfig_Cors {
 }
 
 export interface OpenapiSite_Properties_SiteConfig_Experiments_RampUpRules {
+  /** The hostname traffic is routed to after this action. (AI-inferred) */
   actionHostName?: string | Computed<string>;
+  /** The URL called back to decide whether a pending network configuration change should proceed. (AI-inferred) */
   changeDecisionCallbackUrl?: string | Computed<string>;
+  /** How often, in minutes, this configuration is permitted to change. (AI-inferred) */
   changeIntervalInMinutes?: number | Computed<number>;
+  /** The specific step size permitted for this change. (AI-inferred) */
   changeStep?: number | Computed<number>;
+  /** The maximum percentage of traffic permitted to be rerouted. (AI-inferred) */
   maxReroutePercentage?: number | Computed<number>;
+  /** The minimum percentage of traffic permitted to be rerouted. (AI-inferred) */
   minReroutePercentage?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The percentage of traffic currently rerouted. (AI-inferred) */
   reroutePercentage?: number | Computed<number>;
 }
 
@@ -355,22 +400,36 @@ export interface OpenapiSite_Properties_SiteConfig_Experiments {
 }
 
 export interface OpenapiSite_Properties_SiteConfig_HandlerMappings {
+  /** The argument(s) passed to this operation. (AI-inferred) */
   arguments?: string | Computed<string>;
+  /** A reference to the site extension this applies to. (AI-inferred) */
   extension?: string | Computed<string>;
+  /** The interpreter used to run this script. (AI-inferred) */
   scriptProcessor?: string | Computed<string>;
 }
 
 export interface OpenapiSite_Properties_SiteConfig_IpSecurityRestrictions {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The HTTP header(s) this applies to. (AI-inferred) */
   headers?: Record<string, string[]> | Computed<Record<string, string[]>>;
+  /** An IP address. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The relative priority of this item. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The subnet mask applied to this address range. (AI-inferred) */
   subnetMask?: string | Computed<string>;
+  /** A tag identifying traffic routed through this subnet. (AI-inferred) */
   subnetTrafficTag?: number | Computed<number>;
+  /** A label attached to this resource. (AI-inferred) */
   tag?: string | Computed<string>;
+  /** A reference to the virtual network subnet this app integrates with. (AI-inferred) */
   vnetSubnetResourceId?: string | Computed<string>;
+  /** A tag identifying traffic routed through this virtual network integration. (AI-inferred) */
   vnetTrafficTag?: number | Computed<number>;
 }
 
@@ -411,14 +470,20 @@ export interface OpenapiSite_Properties_SiteConfig_Push {
 }
 
 export interface OpenapiSite_Properties_SiteConfig_VirtualApplications_VirtualDirectories {
+  /** The physical file system path this virtual directory maps to. (AI-inferred) */
   physicalPath?: string | Computed<string>;
+  /** The virtual path this directory mapping applies to. (AI-inferred) */
   virtualPath?: string | Computed<string>;
 }
 
 export interface OpenapiSite_Properties_SiteConfig_VirtualApplications {
+  /** The physical file system path this virtual directory maps to. (AI-inferred) */
   physicalPath?: string | Computed<string>;
+  /** Whether this app is kept preloaded, avoiding a cold start on the first request after idling. (AI-inferred) */
   preloadEnabled?: boolean | Computed<boolean>;
+  /** The virtual directory/directories mapped for this app. (AI-inferred) */
   virtualDirectories?: OpenapiSite_Properties_SiteConfig_VirtualApplications_VirtualDirectories[] | Computed<OpenapiSite_Properties_SiteConfig_VirtualApplications_VirtualDirectories[]>;
+  /** The virtual path this directory mapping applies to. (AI-inferred) */
   virtualPath?: string | Computed<string>;
 }
 
@@ -611,6 +676,7 @@ export interface OpenapiSite_Properties {
   daprConfig?: OpenapiSite_Properties_DaprConfig | Computed<OpenapiSite_Properties_DaprConfig>;
   /** Default hostname of the app. Read-only. */
   defaultHostName?: string | Computed<string>;
+  /** DNS resolution configuration for this app. (AI-inferred) */
   dnsConfiguration?: OpenapiSite_Properties_DnsConfiguration | Computed<OpenapiSite_Properties_DnsConfiguration>;
   /** <code>true</code> if the app is enabled; otherwise, <code>false</code>. Setting this value to false disables the app (takes the app offline). */
   enabled?: boolean | Computed<boolean>;

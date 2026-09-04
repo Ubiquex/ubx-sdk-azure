@@ -484,6 +484,7 @@ class ReservationOrderResponseConfig:
 
 @dataclasses.dataclass
 class ReservationOrderResponseAttrs:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
     # The Azure region where the reserved resource lives.
     location: Any = None

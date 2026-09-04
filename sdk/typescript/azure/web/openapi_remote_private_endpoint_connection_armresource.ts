@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
@@ -21,6 +22,7 @@ export interface OpenapiRemotePrivateEndpointConnectionArmresource_Properties {
   privateEndpoint?: OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpoint | Computed<OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpoint>;
   /** The state of a private link connection */
   privateLinkServiceConnectionState?: OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateLinkServiceConnectionState | Computed<OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 

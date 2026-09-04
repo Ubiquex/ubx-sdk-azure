@@ -8,25 +8,36 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Dashboard_Properties_Lenses_Parts_Metadata:
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class Dashboard_Properties_Lenses_Parts_Position:
+    # How many grid columns this tile spans. (AI-inferred)
     col_span: Any = None
+    # Additional, free-form metadata associated with this resource. (AI-inferred)
     metadata: Any = None
+    # How many grid rows this tile spans. (AI-inferred)
     row_span: Any = None
+    # The horizontal grid coordinate this tile is placed at. (AI-inferred)
     x: Any = None
+    # The vertical grid coordinate this tile is placed at. (AI-inferred)
     y: Any = None
 
 @dataclasses.dataclass
 class Dashboard_Properties_Lenses_Parts:
+    # Additional, free-form metadata associated with this resource. (AI-inferred)
     metadata: Any = None
+    # The layout position of this item within its own containing grid. (AI-inferred)
     position: Any = None
 
 @dataclasses.dataclass
 class Dashboard_Properties_Lenses:
+    # Additional, free-form metadata associated with this resource. (AI-inferred)
     metadata: Any = None
+    # The relative ordering position of this item. (AI-inferred)
     order: Any = None
+    # The individual tile(s) making up this dashboard. (AI-inferred)
     parts: Any = None
 
 @dataclasses.dataclass

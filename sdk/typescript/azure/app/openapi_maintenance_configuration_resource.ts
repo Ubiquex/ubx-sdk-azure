@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiMaintenanceConfigurationResource_Properties_ScheduledEntries {
+  /** How long, in hours, this configuration applies. (AI-inferred) */
   durationHours?: number | Computed<number>;
+  /** The hour, in UTC, this scheduled configuration begins. (AI-inferred) */
   startHourUtc?: number | Computed<number>;
+  /** The day of the week this schedule applies to. (AI-inferred) */
   weekDay?: string | Computed<string>;
 }
 

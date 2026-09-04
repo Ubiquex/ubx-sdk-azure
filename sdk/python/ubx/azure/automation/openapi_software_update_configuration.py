@@ -15,7 +15,9 @@ class OpenapiSoftwareUpdateConfiguration_Properties_Error:
 
 @dataclasses.dataclass
 class OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfo_AdvancedSchedule_MonthlyOccurrences:
+    # The day-of-week or day-of-month component of this schedule. (AI-inferred)
     day: Any = None
+    # Which specific occurrence of the matching day within the schedule's own recurrence this applies to. (AI-inferred)
     occurrence: Any = None
 
 @dataclasses.dataclass
@@ -85,18 +87,25 @@ class OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Linux:
 
 @dataclasses.dataclass
 class OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries_TagSettings:
+    # Whether all or any of this filter's own conditions must match. (AI-inferred)
     filter_operator: Any = None
+    # User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
     tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries:
+    # The Azure region(s) this applies to. (AI-inferred)
     locations: Any = None
+    # What this configuration's own scope covers. (AI-inferred)
     scope: Any = None
+    # Configuration for which resource tag(s) this applies to. (AI-inferred)
     tag_settings: Any = None
 
 @dataclasses.dataclass
 class OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_NonAzureQueries:
+    # The name this DSC configuration function is aliased as. (AI-inferred)
     function_alias: Any = None
+    # A reference to the Log Analytics workspace this applies to. (AI-inferred)
     workspace_id: Any = None
 
 @dataclasses.dataclass

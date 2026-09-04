@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface TemplatespecsTemplateSpecVersion_Properties_LinkedTemplates {
+  /** The relative path identifying this linked template within the parent template's own deployment. (AI-inferred) */
   path?: string | Computed<string>;
+  /** The linked ARM template's own JSON content. (AI-inferred) */
   template?: unknown | Computed<unknown>;
 }
 

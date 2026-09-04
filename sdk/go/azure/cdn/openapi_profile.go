@@ -4,7 +4,9 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiProfile_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,10 +22,14 @@ type OpenapiProfile_Identity struct {
 }
 
 type OpenapiProfile_Properties_LogScrubbing_ScrubbingRules struct {
-	MatchVariable         any
-	Selector              any
+	// The request attribute this condition evaluates. (AI-inferred)
+	MatchVariable any
+	// The specific field name a match condition targets. (AI-inferred)
+	Selector any
+	// How `selector` itself is matched. (AI-inferred)
 	SelectorMatchOperator any
-	State                 any
+	// The current status of this resource. (AI-inferred)
+	State any
 }
 
 type OpenapiProfile_Properties_LogScrubbing struct {

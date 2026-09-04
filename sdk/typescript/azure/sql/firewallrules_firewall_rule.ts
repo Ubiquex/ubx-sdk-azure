@@ -9,6 +9,7 @@ export interface FirewallrulesFirewallRule_Properties {
 }
 
 export interface FirewallrulesFirewallRule_Values {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: FirewallrulesFirewallRule_Properties | Computed<FirewallrulesFirewallRule_Properties>;
 }
 
@@ -26,12 +27,14 @@ const FirewallrulesFirewallRule_ValuesFields: FieldMap = {
 };
 
 export interface FirewallrulesFirewallRuleConfig {
+  /** The firewall rule(s) making up this collection. (AI-inferred) */
   values?: FirewallrulesFirewallRule_Values[] | Computed<FirewallrulesFirewallRule_Values[]>;
 }
 
 export interface FirewallrulesFirewallRuleAttrs {
   /** The properties of a server firewall rule. */
   properties: FirewallrulesFirewallRule_Properties;
+  /** The firewall rule(s) making up this collection. (AI-inferred) */
   values: FirewallrulesFirewallRule_Values[];
 }
 

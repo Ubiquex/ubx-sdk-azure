@@ -11,11 +11,16 @@ type MachineRunCommand_Properties_ErrorBlobManagedIdentity struct {
 }
 
 type MachineRunCommand_Properties_InstanceView_Statuses struct {
-	Code          any
+	// The status code of the run command instance view, representing the current state (e.g., 'ProvisioningState/succeeded'). (AI-inferred)
+	Code any
+	// The localized, human-readable status message for the run command instance, providing a user-friendly description of the current state (e.g., 'Provisioning succeeded' or 'Failed'). (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of the status, one of Info, Warning, or Error. (AI-inferred)
+	Level any
+	// The human-readable status message associated with the instance view of the virtual machine run command. (AI-inferred)
+	Message any
+	// The timestamp when the status was observed, typically in ISO 8601 format. (AI-inferred)
+	Time any
 }
 
 type MachineRunCommand_Properties_InstanceView struct {
@@ -38,7 +43,9 @@ type MachineRunCommand_Properties_InstanceView struct {
 }
 
 type MachineRunCommand_Properties_Parameters struct {
-	Name  any
+	// The name of the parameter to be passed to the run command. This name is used as the key for the parameter value. (AI-inferred)
+	Name any
+	// The value of a parameter used by the virtual machine run command. (AI-inferred)
 	Value any
 }
 

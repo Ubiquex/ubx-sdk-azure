@@ -17,10 +17,13 @@ class OpenapiMarketplaceSubscription_Properties_MarketplacePlan:
 
 @dataclasses.dataclass
 class OpenapiMarketplaceSubscription_Properties:
+    # A reference to the Azure Marketplace plan this model is licensed under. (AI-inferred)
     marketplace_plan: Any = None
+    # The current status of the Azure Marketplace subscription backing this model. (AI-inferred)
     marketplace_subscription_status: Any = None
     # [Required] Target Marketplace Model ID to create a Marketplace Subscription for.
     model_id: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 _OpenapiMarketplaceSubscription_Properties_MarketplacePlanFields = {
@@ -42,12 +45,14 @@ _OpenapiMarketplaceSubscription_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiMarketplaceSubscriptionConfig:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiMarketplaceSubscriptionAttrs:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None

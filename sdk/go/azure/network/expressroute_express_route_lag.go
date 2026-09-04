@@ -4,7 +4,9 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteLag_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,45 +22,72 @@ type ExpressrouteExpressRouteLag_Identity struct {
 }
 
 type ExpressrouteExpressRouteLag_Properties_Links_Properties_MacSecConfig struct {
+	// A reference to the Key Vault secret holding the MACsec Connectivity Association Key. (AI-inferred)
 	CakSecretIdentifier any
-	Cipher              any
+	// The MACsec cipher suite used to encrypt this link. (AI-inferred)
+	Cipher any
+	// A reference to the Key Vault secret holding the MACsec Connectivity Association Key Name. (AI-inferred)
 	CknSecretIdentifier any
-	SciState            any
+	// Whether MACsec Secure Channel Identifier (SCI) is enabled on this link. (AI-inferred)
+	SciState any
 }
 
 type ExpressrouteExpressRouteLag_Properties_Links_Properties_Members_Properties struct {
-	AdminState        any
-	ColoLocation      any
-	ConnectorType     any
-	InterfaceName     any
-	PatchPanelId      any
+	// An administrative override for this rule's own health-probe-driven forwarding state -- `Up` forces new connections through regardless of probe results, `Down` forces them away. (AI-inferred)
+	AdminState any
+	// The physical co-location facility this ExpressRoute port is provisioned in. (AI-inferred)
+	ColoLocation any
+	// The kind of physical connector used by this ExpressRoute port. (AI-inferred)
+	ConnectorType any
+	// The name of this network interface. (AI-inferred)
+	InterfaceName any
+	// The identifier of the physical patch panel this port is connected through. (AI-inferred)
+	PatchPanelId any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	RackId            any
+	// The identifier of the physical rack this ExpressRoute port is located in. (AI-inferred)
+	RackId any
 }
 
 type ExpressrouteExpressRouteLag_Properties_Links_Properties_Members struct {
-	Etag       any
-	Id         any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ExpressrouteExpressRouteLag_Properties_Links_Properties struct {
-	AdminState        any
-	InterfaceName     any
-	MacSecConfig      any
-	Members           any
+	// An administrative override for this rule's own health-probe-driven forwarding state -- `Up` forces new connections through regardless of probe results, `Down` forces them away. (AI-inferred)
+	AdminState any
+	// The name of this network interface. (AI-inferred)
+	InterfaceName any
+	// MACsec (link-layer encryption) configuration for this ExpressRoute port link. (AI-inferred)
+	MacSecConfig any
+	// The member(s) making up this resource. (AI-inferred)
+	Members any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	RouterName        any
+	// The name of the router this applies to. (AI-inferred)
+	RouterName any
 }
 
 type ExpressrouteExpressRouteLag_Properties_Links struct {
-	Etag       any
-	Id         any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ExpressrouteExpressRouteLag_Properties struct {

@@ -4,40 +4,65 @@ package postgresql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_DbDetails struct {
-	AppliedChanges          any
-	CdcDeleteCounter        any
-	CdcInsertCounter        any
-	CdcUpdateCounter        any
-	DatabaseName            any
-	EndedOn                 any
+	// The number of change(s) applied so far. (AI-inferred)
+	AppliedChanges any
+	// The number of delete operation(s) captured by change data capture. (AI-inferred)
+	CdcDeleteCounter any
+	// The number of insert operation(s) captured by change data capture. (AI-inferred)
+	CdcInsertCounter any
+	// The number of update operation(s) captured by change data capture. (AI-inferred)
+	CdcUpdateCounter any
+	// The name of the database this applies to. (AI-inferred)
+	DatabaseName any
+	// When this migration ended. (AI-inferred)
+	EndedOn any
+	// The number of table(s) that completed the full-load phase. (AI-inferred)
 	FullLoadCompletedTables any
-	FullLoadErroredTables   any
-	FullLoadLoadingTables   any
-	FullLoadQueuedTables    any
-	IncomingChanges         any
-	Latency                 any
-	Message                 any
-	MigrationOperation      any
-	MigrationState          any
-	StartedOn               any
+	// The number of table(s) that errored during the full-load phase. (AI-inferred)
+	FullLoadErroredTables any
+	// The number of table(s) currently being loaded in the full-load phase. (AI-inferred)
+	FullLoadLoadingTables any
+	// The number of table(s) still queued for the full-load phase. (AI-inferred)
+	FullLoadQueuedTables any
+	// The number of change(s) received so far, awaiting application. (AI-inferred)
+	IncomingChanges any
+	// The observed replication lag. (AI-inferred)
+	Latency any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// The specific migration action being performed. (AI-inferred)
+	MigrationOperation any
+	// The current status of this migration. (AI-inferred)
+	MigrationState any
+	// When this migration started. (AI-inferred)
+	StartedOn any
 }
 
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary_Messages struct {
+	// A human-readable description of this result. (AI-inferred)
 	Message any
-	State   any
+	// The current status of this resource. (AI-inferred)
+	State any
 }
 
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary struct {
+	// The message(s) associated with this result. (AI-inferred)
 	Messages any
-	State    any
-	Type     any
+	// The current status of this resource. (AI-inferred)
+	State any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails struct {
+	// The name of the database this applies to. (AI-inferred)
 	DatabaseName any
-	EndedOn      any
-	StartedOn    any
-	Summary      any
+	// When this migration ended. (AI-inferred)
+	EndedOn any
+	// When this migration started. (AI-inferred)
+	StartedOn any
+	// A short, human-readable summary of this result. (AI-inferred)
+	Summary any
 }
 
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails struct {
@@ -56,7 +81,8 @@ type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_Validation
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails struct {
 	// Substate of migration.
 	CurrentSubState any
-	DbDetails       any
+	// Detail about this specific database's own migration progress. (AI-inferred)
+	DbDetails any
 	// Details for the validation for migration.
 	ValidationDetails any
 }

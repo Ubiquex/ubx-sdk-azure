@@ -21,21 +21,31 @@ export interface Account_Properties_AccountStatus_ErrorDetails_Details_Details {
 }
 
 export interface Account_Properties_AccountStatus_ErrorDetails_Details {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: Account_Properties_AccountStatus_ErrorDetails_Details_Details[] | Computed<Account_Properties_AccountStatus_ErrorDetails_Details_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface Account_Properties_AccountStatus_ErrorDetails {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: Account_Properties_AccountStatus_ErrorDetails_Details[] | Computed<Account_Properties_AccountStatus_ErrorDetails_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface Account_Properties_AccountStatus {
+  /** The last, current provisioning status of this account. (AI-inferred) */
   accountProvisioningState?: string | Computed<string>;
+  /** Additional detail about this error. (AI-inferred) */
   errorDetails?: Account_Properties_AccountStatus_ErrorDetails | Computed<Account_Properties_AccountStatus_ErrorDetails>;
 }
 
@@ -45,34 +55,48 @@ export interface Account_Properties_CloudConnectors {
 }
 
 export interface Account_Properties_Endpoints {
+  /** A reference to the data catalog endpoint for this account. (AI-inferred) */
   catalog?: string | Computed<string>;
+  /** A reference to this account's own governance/guardian endpoint. (AI-inferred) */
   guardian?: string | Computed<string>;
+  /** A reference to this account's own scan endpoint. (AI-inferred) */
   scan?: string | Computed<string>;
 }
 
 export interface Account_Properties_ManagedResources {
+  /** The Event Hubs namespace this account's own Kafka-compatible endpoints connect through. (AI-inferred) */
   eventHubNamespace?: string | Computed<string>;
+  /** The resource group this applies to. (AI-inferred) */
   resourceGroup?: string | Computed<string>;
+  /** A reference to the managed storage account backing this resource. (AI-inferred) */
   storageAccount?: string | Computed<string>;
 }
 
 export interface Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface Account_Properties_PrivateEndpointConnections_Properties {
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface Account_Properties_PrivateEndpointConnections {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Account_Properties_PrivateEndpointConnections_Properties | Computed<Account_Properties_PrivateEndpointConnections_Properties>;
 }
 
@@ -108,7 +132,9 @@ export interface Account_Properties {
 }
 
 export interface Account_Sku {
+  /** The number of instance(s) this resource is provisioned with. (AI-inferred) */
   capacity?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 

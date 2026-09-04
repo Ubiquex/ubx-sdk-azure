@@ -8,17 +8,23 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges_Resource:
+    # A reference to the collection this applies to. (AI-inferred)
     collection: Any = None
+    # A reference to the database this applies to. (AI-inferred)
     db: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges:
+    # The action(s) this permission or rule applies to. (AI-inferred)
     actions: Any = None
+    # The resource this permission applies to. (AI-inferred)
     resource: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiMongoRoleDefinitionGetResults_Properties_Roles:
+    # A reference to the database this applies to. (AI-inferred)
     db: Any = None
+    # The role granted by this assignment. (AI-inferred)
     role: Any = None
 
 @dataclasses.dataclass

@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface TagRule_Properties_LogRules_FilteringTags {
+  /** Whether resources carrying this tag are included in or excluded from log forwarding. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The tag value this log filtering rule matches. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

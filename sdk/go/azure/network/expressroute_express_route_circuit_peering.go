@@ -4,33 +4,49 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_ExpressRouteCircuitPeering struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_Ipv6CircuitConnectionConfig struct {
-	AddressPrefix           any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred)
 	CircuitConnectionStatus any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties struct {
-	AddressPrefix                  any
-	AuthorizationKey               any
-	CircuitConnectionStatus        any
-	ExpressRouteCircuitPeering     any
-	Ipv6CircuitConnectionConfig    any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// A pre-shared key used to authorize connecting to this ExpressRoute circuit. (AI-inferred)
+	AuthorizationKey any
+	// The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred)
+	CircuitConnectionStatus any
+	// A reference to the ExpressRoute circuit peering this connection uses. (AI-inferred)
+	ExpressRouteCircuitPeering any
+	// IPv6-specific configuration for this circuit connection. (AI-inferred)
+	Ipv6CircuitConnectionConfig any
+	// A reference to the peer ExpressRoute circuit's own matching peering, for a circuit connecting two ExpressRoute circuits directly. (AI-inferred)
 	PeerExpressRouteCircuitPeering any
-	ProvisioningState              any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Properties_Connections struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo struct {
-	Prefix          any
-	Signature       any
-	ValidationId    any
+	// An IP address prefix, in CIDR notation. (AI-inferred)
+	Prefix any
+	// A cryptographic signature validating this resource's own configuration or authorization. (AI-inferred)
+	Signature any
+	// An identifier for a pending validation request on this resource, e.g. an ExpressRoute prefix ownership check. (AI-inferred)
+	ValidationId any
+	// The current outcome of validating this resource's own configuration, e.g. whether an advertised prefix passed ownership verification. (AI-inferred)
 	ValidationState any
 }
 
@@ -65,17 +81,26 @@ type ExpressrouteExpressRouteCircuitPeering_Properties_Ipv6PeeringConfig struct 
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Properties_PeeredConnections_Properties struct {
-	AddressPrefix                  any
-	AuthResourceGuid               any
-	CircuitConnectionStatus        any
-	ConnectionName                 any
-	ExpressRouteCircuitPeering     any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// The resource GUID of the resource this authorization was created for. (AI-inferred)
+	AuthResourceGuid any
+	// The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred)
+	CircuitConnectionStatus any
+	// The name of this connection. (AI-inferred)
+	ConnectionName any
+	// A reference to the ExpressRoute circuit peering this connection uses. (AI-inferred)
+	ExpressRouteCircuitPeering any
+	// A reference to the peer ExpressRoute circuit's own matching peering, for a circuit connecting two ExpressRoute circuits directly. (AI-inferred)
 	PeerExpressRouteCircuitPeering any
-	ProvisioningState              any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Properties_PeeredConnections struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

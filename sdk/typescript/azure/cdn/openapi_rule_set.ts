@@ -2,15 +2,22 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiRuleSet_Properties_Rules_Actions {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface OpenapiRuleSet_Properties_Rules {
+  /** The action(s) this rule applies. (AI-inferred) */
   actions?: OpenapiRuleSet_Properties_Rules_Actions[] | Computed<OpenapiRuleSet_Properties_Rules_Actions[]>;
+  /** The condition(s) that must all be satisfied for this rule to match. (AI-inferred) */
   conditions?: OpenapiRuleSet_Properties_Rules_Actions[] | Computed<OpenapiRuleSet_Properties_Rules_Actions[]>;
+  /** Whether rule processing stops after this rule matches, or continues to subsequent rules. (AI-inferred) */
   matchProcessingBehavior?: string | Computed<string>;
+  /** The relative evaluation order of this item. (AI-inferred) */
   order?: number | Computed<number>;
+  /** The name of this rule. (AI-inferred) */
   ruleName?: string | Computed<string>;
+  /** The name of this managed rule set. (AI-inferred) */
   ruleSetName?: string | Computed<string>;
 }
 

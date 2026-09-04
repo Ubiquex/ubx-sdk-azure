@@ -4,7 +4,9 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiMongoDbcollectionGetResults_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -25,28 +27,37 @@ type DbOpenapiMongoDbcollectionGetResults_Properties_Options_AutoscaleSettings s
 }
 
 type DbOpenapiMongoDbcollectionGetResults_Properties_Options struct {
+	// Configuration for automatically scaling throughput within a defined maximum. (AI-inferred)
 	AutoscaleSettings any
 	// Request Units per second. For example, "throughput": 10000.
 	Throughput any
 }
 
 type DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Key struct {
+	// The access key(s) for this account. (AI-inferred)
 	Keys any
 }
 
 type DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Options struct {
+	// How long, in seconds, an item lives before automatically expiring. (AI-inferred)
 	ExpireAfterSeconds any
-	Unique             any
+	// Whether this constraint enforces uniqueness. (AI-inferred)
+	Unique any
 }
 
 type DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes struct {
-	Key     any
+	// The key of this key/value pair. (AI-inferred)
+	Key any
+	// Additional option(s) configuring this request or resource. (AI-inferred)
 	Options any
 }
 
 type DbOpenapiMongoDbcollectionGetResults_Properties_Resource_RestoreParameters struct {
-	RestoreSource          any
-	RestoreTimestampInUtc  any
+	// A reference to the source account this account is restored from. (AI-inferred)
+	RestoreSource any
+	// The point in time this account is restored to, in UTC. (AI-inferred)
+	RestoreTimestampInUtc any
+	// Whether time-to-live expiration is disabled on the restored data. (AI-inferred)
 	RestoreWithTtlDisabled any
 }
 

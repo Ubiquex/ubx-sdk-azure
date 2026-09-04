@@ -5,28 +5,42 @@ export interface DiagnosticResource_Properties_Diagnostics_Error_Details {
 }
 
 export interface DiagnosticResource_Properties_Diagnostics_Error {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: DiagnosticResource_Properties_Diagnostics_Error_Details[] | Computed<DiagnosticResource_Properties_Diagnostics_Error_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface DiagnosticResource_Properties_Diagnostics_Insights {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** How significant this insight or solution is judged to be. (AI-inferred) */
   importanceLevel?: string | Computed<string>;
+  /** The result(s) produced by this operation. (AI-inferred) */
   results?: string | Computed<string>;
+  /** A human-readable title for this item. (AI-inferred) */
   title?: string | Computed<string>;
 }
 
 export interface DiagnosticResource_Properties_Diagnostics {
+  /** Detail about an error that occurred. (AI-inferred) */
   error?: DiagnosticResource_Properties_Diagnostics_Error | Computed<DiagnosticResource_Properties_Diagnostics_Error>;
+  /** Diagnostic insight(s) generated for this resource. (AI-inferred) */
   insights?: DiagnosticResource_Properties_Diagnostics_Insights[] | Computed<DiagnosticResource_Properties_Diagnostics_Insights[]>;
+  /** A reference to the specific troubleshooting solution this applies to. (AI-inferred) */
   solutionId?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface DiagnosticResource_Properties_Insights {
+  /** Extra parameter(s) supplied alongside this request. (AI-inferred) */
   additionalParameters?: Record<string, string> | Computed<Record<string, string>>;
+  /** A reference to the specific troubleshooting solution this applies to. (AI-inferred) */
   solutionId?: string | Computed<string>;
 }
 

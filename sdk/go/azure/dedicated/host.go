@@ -4,7 +4,9 @@ package dedicated
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Host_Properties_InstanceView_AvailableCapacity_AllocatableVms struct {
-	Count  any
+	// The number of VMs of the specified size that can be allocated on the dedicated host. (AI-inferred)
+	Count any
+	// The VM size that can be allocated on the dedicated host. (AI-inferred)
 	VmSize any
 }
 
@@ -14,11 +16,16 @@ type Host_Properties_InstanceView_AvailableCapacity struct {
 }
 
 type Host_Properties_InstanceView_Statuses struct {
-	Code          any
+	// The code that identifies the specific status of the dedicated host instance view, used to programmatically determine the state. (AI-inferred)
+	Code any
+	// The user-friendly display status of the dedicated host, providing a human-readable description of the current state (e.g., 'Provisioning succeeded'). (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of the status message, indicating whether it is informational, a warning, or an error. Possible values are: Info, Warning, Error. (AI-inferred)
+	Level any
+	// A human-readable message providing additional details about the status of the dedicated host. (AI-inferred)
+	Message any
+	// The timestamp indicating when the status was observed or last updated. (AI-inferred)
+	Time any
 }
 
 type Host_Properties_InstanceView struct {
@@ -31,6 +38,7 @@ type Host_Properties_InstanceView struct {
 }
 
 type Host_Properties_VirtualMachines struct {
+	// The Azure resource ID of a virtual machine associated with the dedicated host. (AI-inferred)
 	Id any
 }
 

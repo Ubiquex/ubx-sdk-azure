@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface AppResource_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,15 +20,22 @@ export interface AppResource_Identity {
 }
 
 export interface AppResource_Properties_CustomPersistentDisks_CustomPersistentDiskProperties {
+  /** Whether requests are forwarded with the matched prefix stripped from the path. (AI-inferred) */
   enableSubPath?: boolean | Computed<boolean>;
+  /** Additional mount option(s) applied to this volume. (AI-inferred) */
   mountOptions?: string[] | Computed<string[]>;
+  /** The path this volume is mounted at inside the container. (AI-inferred) */
   mountPath?: string | Computed<string>;
+  /** Whether this volume is mounted read-only. (AI-inferred) */
   readOnly?: boolean | Computed<boolean>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface AppResource_Properties_CustomPersistentDisks {
+  /** Configuration specific to this custom persistent disk's own storage type. (AI-inferred) */
   customPersistentDiskProperties?: AppResource_Properties_CustomPersistentDisks_CustomPersistentDiskProperties | Computed<AppResource_Properties_CustomPersistentDisks_CustomPersistentDiskProperties>;
+  /** A reference to the storage resource this applies to. (AI-inferred) */
   storageId?: string | Computed<string>;
 }
 
@@ -51,7 +60,9 @@ export interface AppResource_Properties_IngressSettings {
 }
 
 export interface AppResource_Properties_LoadedCertificates {
+  /** Whether a custom trust store is loaded for validating outbound TLS connections. (AI-inferred) */
   loadTrustStore?: boolean | Computed<boolean>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
 }
 

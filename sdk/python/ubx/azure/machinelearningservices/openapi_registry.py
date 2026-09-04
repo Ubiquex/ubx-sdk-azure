@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiRegistry_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -29,6 +31,7 @@ class OpenapiRegistry_Properties_ManagedResourceGroup:
 
 @dataclasses.dataclass
 class OpenapiRegistry_Properties_ManagedResourceGroupSettings_AssignedIdentities:
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -38,53 +41,77 @@ class OpenapiRegistry_Properties_ManagedResourceGroupSettings:
 
 @dataclasses.dataclass
 class OpenapiRegistry_Properties_RegionDetails_AcrDetails_SystemCreatedAcrAccount:
+    # The name of the associated Azure Container Registry account. (AI-inferred)
     acr_account_name: Any = None
+    # The SKU of the associated Azure Container Registry account. (AI-inferred)
     acr_account_sku: Any = None
+    # A reference to the associated Azure Resource Manager resource. (AI-inferred)
     arm_resource_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiRegistry_Properties_RegionDetails_AcrDetails:
+    # Whether the associated Azure Container Registry account was created automatically by the system. (AI-inferred)
     system_created_acr_account: Any = None
 
 @dataclasses.dataclass
 class OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails_SystemCreatedStorageAccount:
+    # Whether public (anonymous) access to blobs is permitted on the associated storage account. (AI-inferred)
     allow_blob_public_access: Any = None
+    # A reference to the associated Azure Resource Manager resource. (AI-inferred)
     arm_resource_id: Any = None
+    # Whether the associated storage account has hierarchical namespace (Data Lake) enabled. (AI-inferred)
     storage_account_hns_enabled: Any = None
+    # The name of the associated storage account. (AI-inferred)
     storage_account_name: Any = None
+    # The replication/performance type of the associated storage account. (AI-inferred)
     storage_account_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails:
+    # Whether the associated storage account was created automatically by the system. (AI-inferred)
     system_created_storage_account: Any = None
 
 @dataclasses.dataclass
 class OpenapiRegistry_Properties_RegionDetails:
+    # Detail about the Azure Container Registry associated with this workspace. (AI-inferred)
     acr_details: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # Detail about the storage account associated with this workspace. (AI-inferred)
     storage_account_details: Any = None
 
 @dataclasses.dataclass
 class OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_PrivateEndpoint:
+    # A reference to the subnet this resource is injected into. (AI-inferred)
     subnet_arm_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_RegistryPrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties:
+    # The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
     group_ids: Any = None
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The current approval state of this registry's own Private Link connection. (AI-inferred)
     registry_private_link_service_connection_state: Any = None
 
 @dataclasses.dataclass
 class OpenapiRegistry_Properties_RegistryPrivateEndpointConnections:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

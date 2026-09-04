@@ -8,16 +8,21 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class RecordSet_Properties_Aaaarecords:
+    # An IPv6 address. (AI-inferred)
     ipv6_address: Any = None
 
 @dataclasses.dataclass
 class RecordSet_Properties_Arecords:
+    # An IPv4 address. (AI-inferred)
     ipv4_address: Any = None
 
 @dataclasses.dataclass
 class RecordSet_Properties_CaaRecords:
+    # Bit flags controlling how this CAA record is interpreted. (AI-inferred)
     flags: Any = None
+    # The property this CAA record constrains, e.g. `issue` or `issuewild`. (AI-inferred)
     tag: Any = None
+    # The literal value of this record. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -27,15 +32,19 @@ class RecordSet_Properties_Cnamerecord:
 
 @dataclasses.dataclass
 class RecordSet_Properties_Mxrecords:
+    # The mail server hostname this MX record points to. (AI-inferred)
     exchange: Any = None
+    # The relative preference of this record -- lower values are preferred first. (AI-inferred)
     preference: Any = None
 
 @dataclasses.dataclass
 class RecordSet_Properties_Nsrecords:
+    # The name server hostname this NS record points to. (AI-inferred)
     nsdname: Any = None
 
 @dataclasses.dataclass
 class RecordSet_Properties_Ptrrecords:
+    # The hostname this PTR record points to. (AI-inferred)
     ptrdname: Any = None
 
 @dataclasses.dataclass
@@ -57,9 +66,13 @@ class RecordSet_Properties_Soarecord:
 
 @dataclasses.dataclass
 class RecordSet_Properties_Srvrecords:
+    # The port this SRV record points to. (AI-inferred)
     port: Any = None
+    # The relative priority of this record -- lower values are preferred first. (AI-inferred)
     priority: Any = None
+    # The hostname this record points to. (AI-inferred)
     target: Any = None
+    # The relative weight used to distribute traffic among records sharing the same priority. (AI-inferred)
     weight: Any = None
 
 @dataclasses.dataclass
@@ -69,6 +82,7 @@ class RecordSet_Properties_TargetResource:
 
 @dataclasses.dataclass
 class RecordSet_Properties_Txtrecords:
+    # The literal value of this record. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

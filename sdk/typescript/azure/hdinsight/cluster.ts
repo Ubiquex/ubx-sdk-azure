@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Cluster_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
 }
 
@@ -37,81 +40,118 @@ export interface Cluster_Properties_ComputeIsolationProperties {
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_Autoscale_Capacity {
+  /** The maximum number of node(s) autoscaling is allowed to scale up to. (AI-inferred) */
   maxInstanceCount?: number | Computed<number>;
+  /** The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred) */
   minInstanceCount?: number | Computed<number>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity {
+  /** The maximum number of node(s) autoscaling is allowed to scale up to. (AI-inferred) */
   maxInstanceCount?: number | Computed<number>;
+  /** The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred) */
   minInstanceCount?: number | Computed<number>;
+  /** The time this scheduled action runs at. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule {
+  /** The day(s) this schedule applies to. (AI-inferred) */
   days?: string[] | Computed<string[]>;
+  /** A fixed-time autoscale rule specifying node capacity for a specific time of day. (AI-inferred) */
   timeAndCapacity?: Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity | Computed<Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence {
+  /** The recurrence schedule this applies to. (AI-inferred) */
   schedule?: Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule[] | Computed<Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule[]>;
+  /** The time zone this schedule is evaluated in. (AI-inferred) */
   timeZone?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_Autoscale {
+  /** The number of instance(s) this resource is provisioned with. (AI-inferred) */
   capacity?: Cluster_Properties_ComputeProfile_Roles_Autoscale_Capacity | Computed<Cluster_Properties_ComputeProfile_Roles_Autoscale_Capacity>;
+  /** How often this autoscale schedule recurs. (AI-inferred) */
   recurrence?: Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence | Computed<Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_DataDisksGroups {
+  /** The size of this disk, in gibibytes. (AI-inferred) */
   diskSizeGb?: number | Computed<number>;
+  /** The number of data disk(s) attached to each node. (AI-inferred) */
   disksPerNode?: number | Computed<number>;
+  /** The replication/performance type of the associated storage account. (AI-inferred) */
   storageAccountType?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_HardwareProfile {
+  /** The VM size this role's own nodes are provisioned as. (AI-inferred) */
   vmSize?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeys {
+  /** The certificate content, base64-encoded. (AI-inferred) */
   certificateData?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile {
+  /** The SSH public key(s) used to authenticate. (AI-inferred) */
   publicKeys?: Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeys[] | Computed<Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeys[]>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile {
+  /** The password credential used to authenticate. (AI-inferred) */
   password?: string | Computed<string>;
+  /** SSH configuration for connecting to this cluster's own nodes. (AI-inferred) */
   sshProfile?: Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile | Computed<Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile>;
+  /** The username used to authenticate. (AI-inferred) */
   username?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_OsProfile {
+  /** Configuration specific to a Linux-based cluster node. (AI-inferred) */
   linuxOperatingSystemProfile?: Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile | Computed<Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_ScriptActions {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The parameter(s) making up this configuration. (AI-inferred) */
   parameters?: string | Computed<string>;
+  /** A resource URI. (AI-inferred) */
   uri?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles_VirtualNetworkProfile {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** A reference to the subnet this resource is deployed into. (AI-inferred) */
   subnet?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_ComputeProfile_Roles {
+  /** Configuration for automatically scaling this cluster's own node count. (AI-inferred) */
   autoscale?: Cluster_Properties_ComputeProfile_Roles_Autoscale | Computed<Cluster_Properties_ComputeProfile_Roles_Autoscale>;
+  /** Configuration for the data disk(s) attached to nodes in this role. (AI-inferred) */
   dataDisksGroups?: Cluster_Properties_ComputeProfile_Roles_DataDisksGroups[] | Computed<Cluster_Properties_ComputeProfile_Roles_DataDisksGroups[]>;
+  /** Whether data disks attached to this cluster are encrypted. (AI-inferred) */
   encryptDataDisks?: boolean | Computed<boolean>;
+  /** The VM size this role's own nodes are provisioned as. (AI-inferred) */
   hardwareProfile?: Cluster_Properties_ComputeProfile_Roles_HardwareProfile | Computed<Cluster_Properties_ComputeProfile_Roles_HardwareProfile>;
+  /** The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred) */
   minInstanceCount?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Operating system configuration for this cluster's own nodes. (AI-inferred) */
   osProfile?: Cluster_Properties_ComputeProfile_Roles_OsProfile | Computed<Cluster_Properties_ComputeProfile_Roles_OsProfile>;
+  /** Custom script(s) run on cluster nodes during provisioning. (AI-inferred) */
   scriptActions?: Cluster_Properties_ComputeProfile_Roles_ScriptActions[] | Computed<Cluster_Properties_ComputeProfile_Roles_ScriptActions[]>;
+  /** The desired number of node(s) this role should be scaled to. (AI-inferred) */
   targetInstanceCount?: number | Computed<number>;
+  /** The virtual network this cluster is deployed into. (AI-inferred) */
   virtualNetworkProfile?: Cluster_Properties_ComputeProfile_Roles_VirtualNetworkProfile | Computed<Cluster_Properties_ComputeProfile_Roles_VirtualNetworkProfile>;
+  /** The name of the VM group this node belongs to. (AI-inferred) */
   vmgroupName?: string | Computed<string>;
 }
 
@@ -213,30 +253,46 @@ export interface Cluster_Properties_PrivateEndpointConnections {
 }
 
 export interface Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties {
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address is statically assigned or dynamically allocated. (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is deployed into. (AI-inferred) */
   subnet?: Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
 }
 
 export interface Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties | Computed<Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_PrivateLinkConfigurations_Properties {
+  /** A reference to the role group this applies to. (AI-inferred) */
   groupId?: string | Computed<string>;
+  /** The IP configuration(s) for this endpoint. (AI-inferred) */
   ipConfigurations?: Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations[] | Computed<Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_PrivateLinkConfigurations {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Cluster_Properties_PrivateLinkConfigurations_Properties | Computed<Cluster_Properties_PrivateLinkConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -267,14 +323,23 @@ export interface Cluster_Properties_SecurityProfile {
 }
 
 export interface Cluster_Properties_StorageProfile_Storageaccounts {
+  /** A reference to the storage container this applies to. (AI-inferred) */
   container?: string | Computed<string>;
+  /** The default file system used by this cluster. (AI-inferred) */
   fileSystem?: string | Computed<string>;
+  /** The Azure Files share used as this cluster's own default storage. (AI-inferred) */
   fileshare?: string | Computed<string>;
+  /** Whether this is the default storage account for this cluster. (AI-inferred) */
   isDefault?: boolean | Computed<boolean>;
+  /** The storage account access key. (AI-inferred) */
   key?: string | Computed<string>;
+  /** A reference to the managed identity used to access this storage account. (AI-inferred) */
   msiResourceId?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
+  /** A shared access signature used to authenticate to this storage account. (AI-inferred) */
   saskey?: string | Computed<string>;
 }
 

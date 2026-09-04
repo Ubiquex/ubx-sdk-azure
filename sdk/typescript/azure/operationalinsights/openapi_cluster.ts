@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiCluster_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,9 +20,13 @@ export interface OpenapiCluster_Identity {
 }
 
 export interface OpenapiCluster_Properties_AssociatedWorkspaces {
+  /** When this resource was associated. (AI-inferred) */
   associateDate?: string | Computed<string>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
+  /** A reference to the Log Analytics workspace this applies to. (AI-inferred) */
   workspaceId?: string | Computed<string>;
+  /** The name of the associated Log Analytics workspace. (AI-inferred) */
   workspaceName?: string | Computed<string>;
 }
 

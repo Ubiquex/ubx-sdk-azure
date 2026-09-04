@@ -8,28 +8,39 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ApigatewayApiManagementGatewayResource_Properties_Backend_Subnet:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class ApigatewayApiManagementGatewayResource_Properties_Backend:
+    # A reference to the subnet this resource is deployed into. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class ApigatewayApiManagementGatewayResource_Properties_ConfigurationApi:
+    # The hostname this applies to. (AI-inferred)
     hostname: Any = None
 
 @dataclasses.dataclass
 class ApigatewayApiManagementGatewayResource_Properties_Frontend:
+    # The default hostname assigned to this gateway. (AI-inferred)
     default_hostname: Any = None
 
 @dataclasses.dataclass
 class ApigatewayApiManagementGatewayResource_Properties:
+    # Configuration for the backend this gateway connects to. (AI-inferred)
     backend: Any = None
+    # Configuration for the gateway's own configuration API endpoint. (AI-inferred)
     configuration_api: Any = None
+    # When this resource was created, in UTC. (AI-inferred)
     created_at_utc: Any = None
+    # Configuration for the frontend this gateway exposes. (AI-inferred)
     frontend: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The provisioning status this resource is transitioning toward. (AI-inferred)
     target_provisioning_state: Any = None
+    # Whether this gateway is deployed externally, internally, or not integrated with a virtual network. (AI-inferred)
     virtual_network_type: Any = None
 
 @dataclasses.dataclass

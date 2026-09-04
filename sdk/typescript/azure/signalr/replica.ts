@@ -40,6 +40,7 @@ const Replica_SkuFields: FieldMap = {
 export interface ReplicaConfig {
   /** The geo-location where the resource lives */
   location: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Replica_Properties | Computed<Replica_Properties>;
   /** The billing information of the resource. */
   sku?: Replica_Sku | Computed<Replica_Sku>;
@@ -50,6 +51,7 @@ export interface ReplicaConfig {
 export interface ReplicaAttrs {
   /** The geo-location where the resource lives */
   location: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: Replica_Properties;
   /** The billing information of the resource. */
   sku: Replica_Sku;

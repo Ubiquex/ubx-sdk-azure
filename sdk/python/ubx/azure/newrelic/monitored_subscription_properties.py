@@ -8,34 +8,51 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags:
+    # The action to perform. (AI-inferred)
     action: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules:
+    # The tag(s) used to include or exclude specific resource(s) from monitoring. (AI-inferred)
     filtering_tags: Any = None
+    # Whether Microsoft Entra ID audit logs are sent to New Relic. (AI-inferred)
     send_aad_logs: Any = None
+    # Whether Azure subscription-level activity logs are sent to New Relic. (AI-inferred)
     send_activity_logs: Any = None
+    # Whether Azure subscription-level activity logs are sent to New Relic. (AI-inferred)
     send_subscription_logs: Any = None
 
 @dataclasses.dataclass
 class MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_MetricRules:
+    # The tag(s) used to include or exclude specific resource(s) from monitoring. (AI-inferred)
     filtering_tags: Any = None
+    # Whether Azure platform metrics are sent to New Relic. (AI-inferred)
     send_metrics: Any = None
+    # The email address of the user associated with this account. (AI-inferred)
     user_email: Any = None
 
 @dataclasses.dataclass
 class MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules:
+    # The rule(s) governing which log data is sent to New Relic. (AI-inferred)
     log_rules: Any = None
+    # The rule(s) governing which metric data is sent to New Relic. (AI-inferred)
     metric_rules: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList:
+    # Detail about an error that occurred. (AI-inferred)
     error: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The identifier of the associated Azure subscription. (AI-inferred)
     subscription_id: Any = None
+    # Configuration for which resource tags are sent to New Relic and which resources are monitored. (AI-inferred)
     tag_rules: Any = None
 
 @dataclasses.dataclass

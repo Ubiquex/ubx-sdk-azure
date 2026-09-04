@@ -17,13 +17,18 @@ class OpenapiCloudVmCluster_Properties_DataCollectionOptions:
 
 @dataclasses.dataclass
 class OpenapiCloudVmCluster_Properties_FileSystemConfigurationDetails:
+    # The size of this file system, in gibibytes. (AI-inferred)
     file_system_size_gb: Any = None
+    # The path this file system is mounted at. (AI-inferred)
     mount_point: Any = None
 
 @dataclasses.dataclass
 class OpenapiCloudVmCluster_Properties_IormConfigCache_DbPlans:
+    # The name of this database. (AI-inferred)
     db_name: Any = None
+    # The maximum amount of flash cache allocated. (AI-inferred)
     flash_cache_limit: Any = None
+    # The file share this applies to. (AI-inferred)
     share: Any = None
 
 @dataclasses.dataclass
@@ -39,12 +44,16 @@ class OpenapiCloudVmCluster_Properties_IormConfigCache:
 
 @dataclasses.dataclass
 class OpenapiCloudVmCluster_Properties_NsgCidrs_DestinationPortRange:
+    # The maximum value allowed. (AI-inferred)
     max: Any = None
+    # The minimum value allowed. (AI-inferred)
     min: Any = None
 
 @dataclasses.dataclass
 class OpenapiCloudVmCluster_Properties_NsgCidrs:
+    # The destination port range this rule matches. (AI-inferred)
     destination_port_range: Any = None
+    # Where this data or configuration is sourced from. (AI-inferred)
     source: Any = None
 
 @dataclasses.dataclass

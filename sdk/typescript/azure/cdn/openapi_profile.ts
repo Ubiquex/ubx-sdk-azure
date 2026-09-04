@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiProfile_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,9 +20,13 @@ export interface OpenapiProfile_Identity {
 }
 
 export interface OpenapiProfile_Properties_LogScrubbing_ScrubbingRules {
+  /** The request attribute this condition evaluates. (AI-inferred) */
   matchVariable?: string | Computed<string>;
+  /** The specific field name a match condition targets. (AI-inferred) */
   selector?: string | Computed<string>;
+  /** How `selector` itself is matched. (AI-inferred) */
   selectorMatchOperator?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   state?: string | Computed<string>;
 }
 

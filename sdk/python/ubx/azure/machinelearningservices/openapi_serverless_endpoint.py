@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiServerlessEndpoint_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -41,13 +43,17 @@ class OpenapiServerlessEndpoint_Properties_ModelSettings:
 
 @dataclasses.dataclass
 class OpenapiServerlessEndpoint_Properties:
+    # The authentication mode used, e.g. key-based or Microsoft Entra ID token-based. (AI-inferred)
     auth_mode: Any = None
+    # Configuration for content safety filtering. (AI-inferred)
     content_safety: Any = None
     # State of the Serverless Endpoint.
     endpoint_state: Any = None
+    # The endpoint used to send inference requests to this deployment. (AI-inferred)
     inference_endpoint: Any = None
     # The MarketplaceSubscription Azure ID associated to this ServerlessEndpoint.
     marketplace_subscription_id: Any = None
+    # Configuration specific to the deployed model. (AI-inferred)
     model_settings: Any = None
     # State of endpoint provisioning.
     provisioning_state: Any = None
@@ -132,6 +138,7 @@ class OpenapiServerlessEndpointConfig:
     kind: Any = None
     # The geo-location where the resource lives
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
@@ -148,6 +155,7 @@ class OpenapiServerlessEndpointAttrs:
     kind: Any = None
     # The geo-location where the resource lives
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None

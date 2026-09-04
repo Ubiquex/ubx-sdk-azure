@@ -16,10 +16,12 @@ var OpenapiStorageQueue_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiStorageQueueConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type OpenapiStorageQueueAttrs struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

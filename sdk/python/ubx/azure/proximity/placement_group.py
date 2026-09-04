@@ -8,10 +8,14 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class PlacementGroup_Properties_AvailabilitySets_ColocationStatus:
+    # The machine-readable status code for the colocation status of the availability set within the proximity placement group. (AI-inferred)
     code: Any = None
     display_status: Any = None
+    # The severity level of the colocation status, indicating whether the message is informational (Info), a warning (Warning), or an error (Error). (AI-inferred)
     level: Any = None
+    # A human-readable message providing details about the colocation status of the availability set. (AI-inferred)
     message: Any = None
+    # The time (in UTC) when the colocation status was last observed, typically in ISO 8601 format. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass

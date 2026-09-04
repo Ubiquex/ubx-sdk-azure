@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappings:
+    # The virtual network's own address range(s), in CIDR notation. (AI-inferred)
     address_space: Any = None
+    # A range of ports, e.g. `1000-2000`. (AI-inferred)
     port_range: Any = None
 
 @dataclasses.dataclass
