@@ -11,7 +11,9 @@ type OpenapiContainerApp_ExtendedLocation struct {
 }
 
 type OpenapiContainerApp_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -63,14 +65,19 @@ type OpenapiContainerApp_Properties_Configuration_Dapr struct {
 }
 
 type OpenapiContainerApp_Properties_Configuration_IdentitySettings struct {
-	Identity  any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// Hook(s) run at specific points in this container's own lifecycle. (AI-inferred)
 	Lifecycle any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_AdditionalPortMappings struct {
+	// The port this container exposes. (AI-inferred)
 	ExposedPort any
-	External    any
-	TargetPort  any
+	// Whether this endpoint is reachable from outside the environment. (AI-inferred)
+	External any
+	// The port on the container this rule forwards traffic to. (AI-inferred)
+	TargetPort any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_CorsPolicy struct {
@@ -89,16 +96,23 @@ type OpenapiContainerApp_Properties_Configuration_Ingress_CorsPolicy struct {
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_CustomDomains struct {
-	BindingType   any
+	// Whether this service binding is created automatically or supplied manually by the caller. (AI-inferred)
+	BindingType any
+	// A reference to the certificate this applies to. (AI-inferred)
 	CertificateId any
-	Name          any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_IpSecurityRestrictions struct {
-	Action         any
-	Description    any
+	// The action to perform. (AI-inferred)
+	Action any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The IP address range, in CIDR notation, this applies to. (AI-inferred)
 	IpAddressRange any
-	Name           any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_StickySessions struct {
@@ -107,10 +121,14 @@ type OpenapiContainerApp_Properties_Configuration_Ingress_StickySessions struct 
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_Traffic struct {
-	Label          any
+	// A human-readable label for this item. (AI-inferred)
+	Label any
+	// Whether traffic is routed to the most recently deployed revision. (AI-inferred)
 	LatestRevision any
-	RevisionName   any
-	Weight         any
+	// The name of this revision. (AI-inferred)
+	RevisionName any
+	// The relative weight of this destination. (AI-inferred)
+	Weight any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress struct {
@@ -143,10 +161,14 @@ type OpenapiContainerApp_Properties_Configuration_Ingress struct {
 }
 
 type OpenapiContainerApp_Properties_Configuration_Registries struct {
-	Identity          any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// A reference to the secret holding the password credential. (AI-inferred)
 	PasswordSecretRef any
-	Server            any
-	Username          any
+	// The server hostname or address this connects to. (AI-inferred)
+	Server any
+	// The username used to authenticate. (AI-inferred)
+	Username any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Runtime_Java struct {
@@ -160,10 +182,14 @@ type OpenapiContainerApp_Properties_Configuration_Runtime struct {
 }
 
 type OpenapiContainerApp_Properties_Configuration_Secrets struct {
-	Identity    any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// A reference to the Key Vault secret this value is sourced from. (AI-inferred)
 	KeyVaultUrl any
-	Name        any
-	Value       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Service struct {
@@ -193,99 +219,153 @@ type OpenapiContainerApp_Properties_Configuration struct {
 }
 
 type OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet_HttpHeaders struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet struct {
-	Host        any
+	// The hostname this applies to. (AI-inferred)
+	Host any
+	// Extra HTTP headers this probe sends with its request. (AI-inferred)
 	HttpHeaders any
-	Path        any
-	Port        any
-	Scheme      any
+	// A file or URL path. (AI-inferred)
+	Path any
+	// A network port number. (AI-inferred)
+	Port any
+	// The URI scheme (`HTTP` or `HTTPS`) this probe uses. (AI-inferred)
+	Scheme any
 }
 
 type OpenapiContainerApp_Properties_Template_Containers_Probes_TcpSocket struct {
+	// The hostname this applies to. (AI-inferred)
 	Host any
+	// A network port number. (AI-inferred)
 	Port any
 }
 
 type OpenapiContainerApp_Properties_Template_Containers_Probes struct {
-	FailureThreshold              any
-	HttpGet                       any
-	InitialDelaySeconds           any
-	PeriodSeconds                 any
-	SuccessThreshold              any
-	TcpSocket                     any
+	// How many consecutive probe failures are tolerated before the container is considered unhealthy. (AI-inferred)
+	FailureThreshold any
+	// Configures this probe to send an HTTP GET request to the container. (AI-inferred)
+	HttpGet any
+	// How long to wait after the container starts before running this probe for the first time. (AI-inferred)
+	InitialDelaySeconds any
+	// How often, in seconds, this probe runs. (AI-inferred)
+	PeriodSeconds any
+	// How many consecutive successful probes mark the container healthy again. (AI-inferred)
+	SuccessThreshold any
+	// Configures this probe to check the container's own port is accepting TCP connections. (AI-inferred)
+	TcpSocket any
+	// How long, in seconds, the container is given to shut down gracefully before being forcibly stopped. (AI-inferred)
 	TerminationGracePeriodSeconds any
-	TimeoutSeconds                any
-	Type                          any
+	// How long this probe waits for a response before treating the attempt as a failure. (AI-inferred)
+	TimeoutSeconds any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiContainerApp_Properties_Template_Containers struct {
+	// The health probe(s) configured on this container. (AI-inferred)
 	Probes any
 }
 
 type OpenapiContainerApp_Properties_Template_InitContainers_Env struct {
-	Name      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the secret holding this value. (AI-inferred)
 	SecretRef any
-	Value     any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiContainerApp_Properties_Template_InitContainers_Resources struct {
-	Cpu              any
+	// The number of CPU core(s) allocated. (AI-inferred)
+	Cpu any
+	// The amount of ephemeral (scratch) storage allocated. (AI-inferred)
 	EphemeralStorage any
-	Memory           any
+	// The amount of memory allocated. (AI-inferred)
+	Memory any
 }
 
 type OpenapiContainerApp_Properties_Template_InitContainers_VolumeMounts struct {
-	MountPath  any
-	SubPath    any
+	// The path this volume is mounted at inside the container. (AI-inferred)
+	MountPath any
+	// A specific subdirectory within the volume to mount, rather than its own root. (AI-inferred)
+	SubPath any
+	// The name of this volume. (AI-inferred)
 	VolumeName any
 }
 
 type OpenapiContainerApp_Properties_Template_InitContainers struct {
-	Args         any
-	Command      any
-	Env          any
-	Image        any
-	Name         any
-	Resources    any
+	// The argument(s) passed to the container's own command. (AI-inferred)
+	Args any
+	// The container entrypoint command, overriding the image's own default. (AI-inferred)
+	Command any
+	// Environment variable(s) set in the container. (AI-inferred)
+	Env any
+	// The container image reference to run. (AI-inferred)
+	Image any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The compute resource requirement(s) (CPU, memory) for this container. (AI-inferred)
+	Resources any
+	// The volume(s) mounted into this container. (AI-inferred)
 	VolumeMounts any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_Auth struct {
-	SecretRef        any
+	// A reference to the secret holding this value. (AI-inferred)
+	SecretRef any
+	// The parameter this scaling trigger reads from. (AI-inferred)
 	TriggerParameter any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue struct {
+	// The name of the associated storage account. (AI-inferred)
 	AccountName any
-	Auth        any
-	Identity    any
+	// Authentication configuration for this app. (AI-inferred)
+	Auth any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// The queue message count threshold that triggers scaling. (AI-inferred)
 	QueueLength any
-	QueueName   any
+	// The name of the queue this applies to. (AI-inferred)
+	QueueName any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale_Rules_Custom struct {
-	Auth     any
+	// Authentication configuration for this app. (AI-inferred)
+	Auth any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
 	Identity any
+	// Additional, free-form metadata associated with this resource. (AI-inferred)
 	Metadata any
-	Type     any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale_Rules_Http struct {
-	Auth     any
+	// Authentication configuration for this app. (AI-inferred)
+	Auth any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
 	Identity any
+	// Additional, free-form metadata associated with this resource. (AI-inferred)
 	Metadata any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale_Rules struct {
+	// Configuration for scaling based on an Azure Storage Queue's own message count. (AI-inferred)
 	AzureQueue any
-	Custom     any
-	Http       any
-	Name       any
-	Tcp        any
+	// A caller-defined authentication provider configuration. (AI-inferred)
+	Custom any
+	// Configuration for scaling based on concurrent HTTP request count. (AI-inferred)
+	Http any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Configures this probe to check the container's own port is accepting TCP connections. (AI-inferred)
+	Tcp any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale struct {
@@ -302,21 +382,30 @@ type OpenapiContainerApp_Properties_Template_Scale struct {
 }
 
 type OpenapiContainerApp_Properties_Template_ServiceBinds struct {
-	Name      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the connected service this applies to. (AI-inferred)
 	ServiceId any
 }
 
 type OpenapiContainerApp_Properties_Template_Volumes_Secrets struct {
-	Path      any
+	// A file or URL path. (AI-inferred)
+	Path any
+	// A reference to the secret holding this value. (AI-inferred)
 	SecretRef any
 }
 
 type OpenapiContainerApp_Properties_Template_Volumes struct {
+	// Additional mount option(s) applied to this volume. (AI-inferred)
 	MountOptions any
-	Name         any
-	Secrets      any
-	StorageName  any
-	StorageType  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The secret(s) defined on this app. (AI-inferred)
+	Secrets any
+	// The name of the storage resource this applies to. (AI-inferred)
+	StorageName any
+	// The category of storage this volume uses. (AI-inferred)
+	StorageType any
 }
 
 type OpenapiContainerApp_Properties_Template struct {

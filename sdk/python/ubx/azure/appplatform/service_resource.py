@@ -27,10 +27,15 @@ class ServiceResource_Properties_NetworkProfile_OutboundIps:
 
 @dataclasses.dataclass
 class ServiceResource_Properties_NetworkProfile_RequiredTraffics:
+    # Whether this rule applies to inbound or outbound traffic. (AI-inferred)
     direction: Any = None
+    # The fully qualified domain name(s) associated with this resource. (AI-inferred)
     fqdns: Any = None
+    # The IP address(es) associated with this resource. (AI-inferred)
     ips: Any = None
+    # A network port number. (AI-inferred)
     port: Any = None
+    # The network protocol used. (AI-inferred)
     protocol: Any = None
 
 @dataclasses.dataclass
@@ -79,6 +84,7 @@ class ServiceResource_Properties:
     version: Any = None
     # Additional Service settings in vnet injection instance
     vnet_addons: Any = None
+    # Whether this resource is provisioned redundantly across availability zones. (AI-inferred)
     zone_redundant: Any = None
 
 @dataclasses.dataclass

@@ -74,15 +74,25 @@ class PrivateCloud_Properties_Endpoints:
 
 @dataclasses.dataclass
 class PrivateCloud_Properties_IdentitySources:
+    # An alternate name this resource is also known by. (AI-inferred)
     alias: Any = None
+    # The distinguished name of the LDAP group search base. (AI-inferred)
     base_group_dn: Any = None
+    # The distinguished name of the LDAP user search base. (AI-inferred)
     base_user_dn: Any = None
+    # The Active Directory domain this connection joins. (AI-inferred)
     domain: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The password credential used to authenticate. (AI-inferred)
     password: Any = None
+    # The address of the primary Active Directory server. (AI-inferred)
     primary_server: Any = None
+    # The address of the secondary (failover) Active Directory server. (AI-inferred)
     secondary_server: Any = None
+    # Whether SSL/TLS is used for this connection. (AI-inferred)
     ssl: Any = None
+    # The username used to authenticate. (AI-inferred)
     username: Any = None
 
 @dataclasses.dataclass

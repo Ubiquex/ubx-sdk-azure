@@ -21,11 +21,13 @@ type VirtualharddisksVirtualHardDisks_Properties_Status struct {
 	// VirtualHardDisk provisioning error code
 	ErrorCode any
 	// Descriptive error message
-	ErrorMessage       any
+	ErrorMessage any
+	// The outcome of the most recent operation performed on this virtual hard disk, e.g. `Succeeded`, `Failed`, or `InProgress`. (AI-inferred)
 	ProvisioningStatus any
 }
 
 type VirtualharddisksVirtualHardDisks_Properties struct {
+	// The block size, in bytes, this virtual hard disk was formatted with. (AI-inferred)
 	BlockSizeBytes any
 	// Storage ContainerID of the storage container to be used for VHD
 	ContainerId any
@@ -36,8 +38,10 @@ type VirtualharddisksVirtualHardDisks_Properties struct {
 	// Boolean for enabling dynamic sizing on the virtual hard disk
 	Dynamic any
 	// The hypervisor generation of the Virtual Machine [V1, V2]
-	HyperVgeneration    any
-	LogicalSectorBytes  any
+	HyperVgeneration any
+	// The logical sector size, in bytes, this virtual hard disk presents to the guest OS. (AI-inferred)
+	LogicalSectorBytes any
+	// The physical sector size, in bytes, of the underlying storage backing this virtual hard disk. (AI-inferred)
 	PhysicalSectorBytes any
 	// Provisioning state of the virtual hard disk.
 	ProvisioningState any

@@ -2,10 +2,15 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ContainerserviceContainerService_Properties_AgentPoolProfiles {
+  /** The number of agent node(s) in this pool. (AI-inferred) */
   count?: number | Computed<number>;
+  /** The DNS name prefix used to construct this agent pool's own fully qualified domain name. (AI-inferred) */
   dnsPrefix?: string | Computed<string>;
+  /** Output only. The fully qualified domain name assigned to this agent pool. (AI-inferred) */
   fqdn?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The VM size this agent pool's own nodes are provisioned as. (AI-inferred) */
   vmSize?: string | Computed<string>;
 }
 
@@ -27,6 +32,7 @@ export interface ContainerserviceContainerService_Properties_DiagnosticsProfile 
 }
 
 export interface ContainerserviceContainerService_Properties_LinuxProfile_Ssh_PublicKeys {
+  /** The SSH public key data used to authenticate to Linux nodes in this cluster. (AI-inferred) */
   keyData?: string | Computed<string>;
 }
 
@@ -75,6 +81,7 @@ export interface ContainerserviceContainerService_Properties {
   agentPoolProfiles: ContainerserviceContainerService_Properties_AgentPoolProfiles[] | Computed<ContainerserviceContainerService_Properties_AgentPoolProfiles[]>;
   /** Properties to configure a custom container service cluster. */
   customProfile?: ContainerserviceContainerService_Properties_CustomProfile | Computed<ContainerserviceContainerService_Properties_CustomProfile>;
+  /** Configuration for collecting diagnostic data from this container service's own VMs. (AI-inferred) */
   diagnosticsProfile?: ContainerserviceContainerService_Properties_DiagnosticsProfile | Computed<ContainerserviceContainerService_Properties_DiagnosticsProfile>;
   /** Profile for Linux VMs in the container service cluster. */
   linuxProfile: ContainerserviceContainerService_Properties_LinuxProfile | Computed<ContainerserviceContainerService_Properties_LinuxProfile>;

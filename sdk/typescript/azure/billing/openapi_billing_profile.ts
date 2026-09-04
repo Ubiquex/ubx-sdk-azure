@@ -2,48 +2,79 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiBillingProfile_Properties_BillTo {
+  /** The first line of this postal address. (AI-inferred) */
   addressLine1?: string | Computed<string>;
+  /** The second line of this postal address. (AI-inferred) */
   addressLine2?: string | Computed<string>;
+  /** The third line of this postal address. (AI-inferred) */
   addressLine3?: string | Computed<string>;
+  /** The city component of this postal address. (AI-inferred) */
   city?: string | Computed<string>;
+  /** The name of this company. (AI-inferred) */
   companyName?: string | Computed<string>;
+  /** The country component of this postal address. (AI-inferred) */
   country?: string | Computed<string>;
+  /** The district or region component of this postal address. (AI-inferred) */
   district?: string | Computed<string>;
+  /** An email address associated with this resource. (AI-inferred) */
   email?: string | Computed<string>;
+  /** The given name of this contact. (AI-inferred) */
   firstName?: string | Computed<string>;
+  /** Whether this address passed validation. (AI-inferred) */
   isValidAddress?: boolean | Computed<boolean>;
+  /** The family name of this contact. (AI-inferred) */
   lastName?: string | Computed<string>;
+  /** The middle name of this contact. (AI-inferred) */
   middleName?: string | Computed<string>;
+  /** A phone number associated with this resource. (AI-inferred) */
   phoneNumber?: string | Computed<string>;
+  /** The postal code component of this address. (AI-inferred) */
   postalCode?: string | Computed<string>;
+  /** The billing region this applies to. (AI-inferred) */
   region?: string | Computed<string>;
 }
 
 export interface OpenapiBillingProfile_Properties_CurrentPaymentTerm {
+  /** When this window or period ends. (AI-inferred) */
   endDate?: string | Computed<string>;
+  /** Whether this is the default value used when none is explicitly specified. (AI-inferred) */
   isDefault?: boolean | Computed<boolean>;
+  /** When this window or period starts. (AI-inferred) */
   startDate?: string | Computed<string>;
+  /** The commitment term this offer or agreement runs for. (AI-inferred) */
   term?: string | Computed<string>;
 }
 
 export interface OpenapiBillingProfile_Properties_EnabledAzurePlans {
+  /** A reference to the product this applies to. (AI-inferred) */
   productId?: string | Computed<string>;
+  /** A human-readable description of this SKU. (AI-inferred) */
   skuDescription?: string | Computed<string>;
+  /** A reference to the SKU this applies to. (AI-inferred) */
   skuId?: string | Computed<string>;
 }
 
 export interface OpenapiBillingProfile_Properties_IndirectRelationshipInfo {
+  /** A reference to the billing account this applies to. (AI-inferred) */
   billingAccountName?: string | Computed<string>;
+  /** A reference to the billing profile this applies to. (AI-inferred) */
   billingProfileName?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
 }
 
 export interface OpenapiBillingProfile_Properties_SpendingLimitDetails {
+  /** A monetary amount. (AI-inferred) */
   amount?: number | Computed<number>;
+  /** The currency amounts are expressed in. (AI-inferred) */
   currency?: string | Computed<string>;
+  /** When this window or period ends. (AI-inferred) */
   endDate?: string | Computed<string>;
+  /** When this window or period starts. (AI-inferred) */
   startDate?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

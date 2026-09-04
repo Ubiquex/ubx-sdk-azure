@@ -2,19 +2,30 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_Rules_MatchConditions {
+  /** The value this condition matches against. (AI-inferred) */
   matchValue?: string[] | Computed<string[]>;
+  /** The request attribute this condition evaluates. (AI-inferred) */
   matchVariable?: string | Computed<string>;
+  /** Whether this condition's own result is inverted. (AI-inferred) */
   negateCondition?: boolean | Computed<boolean>;
+  /** How this condition's own operands are compared. (AI-inferred) */
   operator?: string | Computed<string>;
+  /** The specific field name a match condition targets. (AI-inferred) */
   selector?: string | Computed<string>;
+  /** The transformation(s) (e.g. lowercase, trim) applied to the matched value before comparison. (AI-inferred) */
   transforms?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_Rules {
+  /** The action taken when this rule matches. (AI-inferred) */
   action?: string | Computed<string>;
+  /** Whether this feature is enabled or disabled. (AI-inferred) */
   enabledState?: string | Computed<string>;
+  /** The condition(s) that must all be satisfied for this rule to match. (AI-inferred) */
   matchConditions?: OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_Rules_MatchConditions[] | Computed<OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_Rules_MatchConditions[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The relative priority of this item. (AI-inferred) */
   priority?: number | Computed<number>;
 }
 
@@ -24,24 +35,34 @@ export interface OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules {
 }
 
 export interface OpenapiCdnWebApplicationFirewallPolicy_Properties_EndpointLinks {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_Rules {
+  /** The action taken when this rule matches. (AI-inferred) */
   action?: string | Computed<string>;
+  /** Whether this feature is enabled or disabled. (AI-inferred) */
   enabledState?: string | Computed<string>;
+  /** The identifier of the specific WAF rule this applies to. (AI-inferred) */
   ruleId?: string | Computed<string>;
 }
 
 export interface OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides {
+  /** The name of the managed WAF rule group this applies to. (AI-inferred) */
   ruleGroupName?: string | Computed<string>;
+  /** The rule(s) making up this policy. (AI-inferred) */
   rules?: OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_Rules[] | Computed<OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_Rules[]>;
 }
 
 export interface OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets {
+  /** The cumulative anomaly score this WAF rule set assigns to a matching request. (AI-inferred) */
   anomalyScore?: number | Computed<number>;
+  /** Override(s) applied to specific rule(s) within a managed WAF rule group. (AI-inferred) */
   ruleGroupOverrides?: OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides[] | Computed<OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides[]>;
+  /** The managed rule set family this belongs to. (AI-inferred) */
   ruleSetType?: string | Computed<string>;
+  /** The version of this managed rule set. (AI-inferred) */
   ruleSetVersion?: string | Computed<string>;
 }
 
@@ -64,7 +85,9 @@ export interface OpenapiCdnWebApplicationFirewallPolicy_Properties_PolicySetting
 }
 
 export interface OpenapiCdnWebApplicationFirewallPolicy_Properties_RateLimitRules_Rules {
+  /** The time window rate-limit request counts are measured over. (AI-inferred) */
   rateLimitDurationInMinutes?: number | Computed<number>;
+  /** The maximum number of requests permitted within `rate_limit_duration_in_minutes`. (AI-inferred) */
   rateLimitThreshold?: number | Computed<number>;
 }
 

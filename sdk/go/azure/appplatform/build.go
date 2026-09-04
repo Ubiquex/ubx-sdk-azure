@@ -4,6 +4,7 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Build_Properties_Apms struct {
+	// A reference to the resource this applies to. (AI-inferred)
 	ResourceId any
 }
 

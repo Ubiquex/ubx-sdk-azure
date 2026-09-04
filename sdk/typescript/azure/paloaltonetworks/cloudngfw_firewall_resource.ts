@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface CloudngfwFirewallResource_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -27,7 +29,9 @@ export interface CloudngfwFirewallResource_Properties_AssociatedRulestack {
 }
 
 export interface CloudngfwFirewallResource_Properties_DnsSettings_DnsServers {
+  /** The network address this applies to. (AI-inferred) */
   address?: string | Computed<string>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
 }
 
@@ -41,14 +45,20 @@ export interface CloudngfwFirewallResource_Properties_DnsSettings {
 }
 
 export interface CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfiguration {
+  /** The network address this applies to. (AI-inferred) */
   address?: CloudngfwFirewallResource_Properties_DnsSettings_DnsServers | Computed<CloudngfwFirewallResource_Properties_DnsSettings_DnsServers>;
+  /** A network port number. (AI-inferred) */
   port?: string | Computed<string>;
 }
 
 export interface CloudngfwFirewallResource_Properties_FrontEndSettings {
+  /** Configuration for the backend service this rule forwards traffic to. (AI-inferred) */
   backendConfiguration?: CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfiguration | Computed<CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfiguration>;
+  /** Configuration for the frontend endpoint this rule listens on. (AI-inferred) */
   frontendConfiguration?: CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfiguration | Computed<CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfiguration>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The network protocol used. (AI-inferred) */
   protocol?: string | Computed<string>;
 }
 

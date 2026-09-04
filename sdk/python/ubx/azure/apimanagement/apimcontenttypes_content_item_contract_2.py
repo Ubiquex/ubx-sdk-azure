@@ -8,10 +8,12 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ApimcontenttypesContentItemContract2Config:
+    # This developer portal content item's own real, structured content payload. (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ApimcontenttypesContentItemContract2Attrs:
+    # This developer portal content item's own real, structured content payload. (AI-inferred)
     properties: Any = None
 
 ApimcontenttypesContentItemContract2 = ubx.ResourceBinding(

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DbOpenapiCassandraTableGetResults_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -23,22 +25,28 @@ export interface DbOpenapiCassandraTableGetResults_Properties_Options_AutoscaleS
 }
 
 export interface DbOpenapiCassandraTableGetResults_Properties_Options {
+  /** Configuration for automatically scaling throughput within a defined maximum. (AI-inferred) */
   autoscaleSettings?: DbOpenapiCassandraTableGetResults_Properties_Options_AutoscaleSettings | Computed<DbOpenapiCassandraTableGetResults_Properties_Options_AutoscaleSettings>;
   /** Request Units per second. For example, "throughput": 10000. */
   throughput?: number | Computed<number>;
 }
 
 export interface DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_ClusterKeys {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The field(s) results are sorted by. (AI-inferred) */
   orderBy?: string | Computed<string>;
 }
 
 export interface DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_Columns {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_PartitionKeys {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 

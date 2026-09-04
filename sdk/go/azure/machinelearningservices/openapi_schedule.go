@@ -4,6 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSchedule_Properties_Action struct {
+	// The category of action this represents. (AI-inferred)
 	ActionType any
 }
 
@@ -13,18 +14,22 @@ type OpenapiSchedule_Properties_Trigger struct {
 	// Specifies start time of schedule in ISO 8601 format, but without a UTC offset.
 	StartTime any
 	// Specifies time zone in which the schedule runs. TimeZone should follow Windows time zone format. Refer: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11
-	TimeZone    any
+	TimeZone any
+	// The category of trigger this represents, e.g. recurring or cron. (AI-inferred)
 	TriggerType any
 }
 
 type OpenapiSchedule_Properties struct {
+	// The action to perform. (AI-inferred)
 	Action any
 	// Display name of schedule.
 	DisplayName any
 	// Is the schedule enabled?
-	IsEnabled         any
+	IsEnabled any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Trigger           any
+	// The condition or schedule causing this to run. (AI-inferred)
+	Trigger any
 }
 
 var OpenapiSchedule_Properties_ActionFields = ubx.FieldMap{

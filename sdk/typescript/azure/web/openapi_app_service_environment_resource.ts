@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiAppServiceEnvironmentResource_Properties_ClusterSettings {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -13,7 +15,9 @@ export interface OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffix
   dnsSuffix?: string | Computed<string>;
   /** The user-assigned identity to use for resolving the key vault certificate reference. If not specified, the system-assigned ASE identity will be used if available. */
   keyVaultReferenceIdentity?: string | Computed<string>;
+  /** Additional detail about this resource's own provisioning progress. (AI-inferred) */
   provisioningDetails?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
@@ -27,15 +31,19 @@ export interface OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffix
 export interface OpenapiAppServiceEnvironmentResource_Properties_NetworkingConfiguration_Properties {
   /** Property to enable and disable new private endpoint connection creation on ASE */
   allowNewPrivateEndpointConnections?: boolean | Computed<boolean>;
+  /** The externally reachable inbound IP address(es) for this app, when running behind an App Service Environment. (AI-inferred) */
   externalInboundIpAddresses?: string[] | Computed<string[]>;
   /** Property to enable and disable FTP on ASEV3 */
   ftpEnabled?: boolean | Computed<boolean>;
   /** Customer provided Inbound IP Address. Only able to be set on Ase create. */
   inboundIpAddressOverride?: string | Computed<string>;
+  /** The internally reachable inbound IP address(es) for this app, when running behind an App Service Environment. (AI-inferred) */
   internalInboundIpAddresses?: string[] | Computed<string[]>;
+  /** The outbound IP address(es) this Linux app uses to reach external resources. (AI-inferred) */
   linuxOutboundIpAddresses?: string[] | Computed<string[]>;
   /** Property to enable and disable Remote Debug on ASEV3 */
   remoteDebugEnabled?: boolean | Computed<boolean>;
+  /** The outbound IP address(es) this Windows app uses to reach external resources. (AI-inferred) */
   windowsOutboundIpAddresses?: string[] | Computed<string[]>;
 }
 

@@ -4,7 +4,9 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiMongoUserDefinitionGetResults_Properties_Roles struct {
-	Db   any
+	// A reference to the database this applies to. (AI-inferred)
+	Db any
+	// The role granted by this assignment. (AI-inferred)
 	Role any
 }
 

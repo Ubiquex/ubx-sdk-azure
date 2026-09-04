@@ -4,7 +4,9 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciArcSetting_Properties_ConnectivityProperties_ServiceConfigurations struct {
-	Port        any
+	// A network port number. (AI-inferred)
+	Port any
+	// The name of the service this applies to. (AI-inferred)
 	ServiceName any
 }
 
@@ -16,15 +18,21 @@ type HciArcSetting_Properties_ConnectivityProperties struct {
 }
 
 type HciArcSetting_Properties_DefaultExtensions struct {
-	Category    any
+	// The category this belongs to. (AI-inferred)
+	Category any
+	// When consent for this operation was granted. (AI-inferred)
 	ConsentTime any
 }
 
 type HciArcSetting_Properties_PerNodeDetails struct {
-	ArcInstance                     any
+	// A reference to the Azure Arc-enabled server instance this applies to. (AI-inferred)
+	ArcInstance any
+	// The object ID of the service principal used to Arc-enable this node. (AI-inferred)
 	ArcNodeServicePrincipalObjectId any
-	Name                            any
-	State                           any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The current lifecycle state of this resource. (AI-inferred)
+	State any
 }
 
 type HciArcSetting_Properties struct {

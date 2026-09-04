@@ -21,80 +21,119 @@ export interface OpenapiChangeDataCaptureResource_Properties_Policy {
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorProperties {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_LinkedService {
+  /** The parameter(s) making up this configuration. (AI-inferred) */
   parameters?: Record<string, unknown> | Computed<Record<string, unknown>>;
+  /** The name of the resource this reference points to. (AI-inferred) */
   referenceName?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection {
+  /** Configuration properties shared across data flow connectors of this kind. (AI-inferred) */
   commonDslConnectorProperties?: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorProperties[] | Computed<OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorProperties[]>;
+  /** Whether this dataset is defined inline, rather than as a separate, reusable resource. (AI-inferred) */
   isInlineDataset?: boolean | Computed<boolean>;
+  /** A reference to the linked service this applies to. (AI-inferred) */
   linkedService?: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_LinkedService | Computed<OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_LinkedService>;
+  /** The category of linked service this represents. (AI-inferred) */
   linkedServiceType?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties_Schema {
+  /** The data type of this value or column. (AI-inferred) */
   dataType?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties {
+  /** Configuration properties specific to this data flow connector. (AI-inferred) */
   dslConnectorProperties?: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorProperties[] | Computed<OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorProperties[]>;
+  /** The schema defining this resource's own structure. (AI-inferred) */
   schema?: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties_Schema[] | Computed<OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties_Schema[]>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties | Computed<OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo {
+  /** A reference to the connection this applies to. (AI-inferred) */
   connection?: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection | Computed<OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection>;
+  /** The source entity/entities this mapping reads from. (AI-inferred) */
   sourceEntities?: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities[] | Computed<OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities[]>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReference {
+  /** The name of this connection. (AI-inferred) */
   connectionName?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference {
+  /** A reference to the entity this applies to. (AI-inferred) */
   entity?: string | Computed<string>;
+  /** A reference to the connection this entity is sourced from. (AI-inferred) */
   entityConnectionReference?: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReference | Computed<OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReference>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings {
+  /** A reference to a specific attribute. (AI-inferred) */
   attributeReference?: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference | Computed<OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference>;
+  /** The attribute reference(s) this applies to. (AI-inferred) */
   attributeReferences?: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference[] | Computed<OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference[]>;
+  /** The expression evaluated to produce this value. (AI-inferred) */
   expression?: string | Computed<string>;
+  /** The name of the function invoked. (AI-inferred) */
   functionName?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo {
+  /** The attribute mapping(s) making up this configuration. (AI-inferred) */
   attributeMappings?: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings[] | Computed<OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings[]>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings {
+  /** Configuration for mapping source attributes onto destination attributes. (AI-inferred) */
   attributeMappingInfo?: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo | Computed<OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo>;
+  /** A reference to the connection data is read from. (AI-inferred) */
   sourceConnectionReference?: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReference | Computed<OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReference>;
+  /** Configuration for denormalizing related source data into a single flattened output. (AI-inferred) */
   sourceDenormalizeInfo?: unknown | Computed<unknown>;
+  /** The name of the source entity this mapping reads from. (AI-inferred) */
   sourceEntityName?: string | Computed<string>;
+  /** The name of the destination entity this mapping writes to. (AI-inferred) */
   targetEntityName?: string | Computed<string>;
 }
 
 export interface OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo {
+  /** A reference to the connection this applies to. (AI-inferred) */
   connection?: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection | Computed<OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection>;
+  /** The Data Mapper mapping(s) making up this configuration. (AI-inferred) */
   dataMapperMappings?: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings[] | Computed<OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings[]>;
+  /** The relationship(s) between entities in this mapping. (AI-inferred) */
   relationships?: unknown[] | Computed<unknown[]>;
+  /** The destination entity/entities this mapping writes to. (AI-inferred) */
   targetEntities?: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities[] | Computed<OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities[]>;
 }
 

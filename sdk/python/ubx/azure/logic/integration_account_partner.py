@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class IntegrationAccountPartner_Properties_Content_B2b_BusinessIdentities:
+    # A code qualifying the meaning of the associated identifier. (AI-inferred)
     qualifier: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

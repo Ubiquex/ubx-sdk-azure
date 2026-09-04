@@ -2,9 +2,13 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiDscConfiguration_Properties_Parameters {
+  /** The value used when this parameter is left unset. (AI-inferred) */
   defaultValue?: string | Computed<string>;
+  /** Whether this parameter must be supplied. (AI-inferred) */
   isMandatory?: boolean | Computed<boolean>;
+  /** This parameter's own position within its containing argument list. (AI-inferred) */
   position?: number | Computed<number>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

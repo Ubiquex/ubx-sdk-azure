@@ -43,12 +43,15 @@ class SwaggerNginxDeploymentApiKeyResponseConfig:
 
 @dataclasses.dataclass
 class SwaggerNginxDeploymentApiKeyResponseAttrs:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
     # Nginx Deployment Api Key Request Properties
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 SwaggerNginxDeploymentApiKeyResponse = ubx.ResourceBinding(

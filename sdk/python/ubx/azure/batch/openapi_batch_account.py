@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiBatchAccount_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -64,7 +66,9 @@ class OpenapiBatchAccount_Properties_KeyVaultReference:
 
 @dataclasses.dataclass
 class OpenapiBatchAccount_Properties_NetworkProfile_AccountAccess_IpRules:
+    # The action to perform. (AI-inferred)
     action: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

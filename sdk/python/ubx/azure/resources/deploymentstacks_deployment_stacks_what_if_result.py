@@ -34,10 +34,15 @@ class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettin
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta:
+    # The value this field will hold after the change is applied. (AI-inferred)
     after: Any = None
+    # The value this field currently holds, before the change is applied. (AI-inferred)
     before: Any = None
+    # The category of change this represents, e.g. `Create`, `Modify`, or `Delete`. (AI-inferred)
     change_type: Any = None
+    # The nested change(s) within this resource. (AI-inferred)
     children: Any = None
+    # The property path this applies to. (AI-inferred)
     path: Any = None
 
 @dataclasses.dataclass
@@ -58,47 +63,74 @@ class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_Deployment
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVault:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference:
+    # A reference to the Key Vault this secret is sourced from. (AI-inferred)
     key_vault: Any = None
+    # The name of this secret. (AI-inferred)
     secret_name: Any = None
+    # The specific version of this secret. (AI-inferred)
     secret_version: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config:
+    # A reference to the Key Vault secret this value is sourced from. (AI-inferred)
     key_vault_reference: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension:
+    # The configuration for this resource. (AI-inferred)
     config: Any = None
+    # A reference to the configuration this applies to. (AI-inferred)
     config_id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChanges:
+    # The value this field will hold after the change is applied. (AI-inferred)
     after: Any = None
+    # The value this field currently holds, before the change is applied. (AI-inferred)
     before: Any = None
+    # The individual field-level difference/differences making up this change. (AI-inferred)
     delta: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges:
+    # The API version used for this resource. (AI-inferred)
     api_version: Any = None
+    # How confident this preview is in the predicted change, e.g. `Certain` or `Unknown`. (AI-inferred)
     change_certainty: Any = None
+    # The category of change this represents, e.g. `Create`, `Modify`, or `Delete`. (AI-inferred)
     change_type: Any = None
+    # How `deny_status` will change as a result of applying this deployment. (AI-inferred)
     deny_status_change: Any = None
+    # A reference to the deployment this applies to. (AI-inferred)
     deployment_id: Any = None
+    # A reference to a Bicep extension used by this template. (AI-inferred)
     extension: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The property/properties identifying this resource for matching purposes. (AI-inferred)
     identifiers: Any = None
+    # How this resource's own stack-managed status will change as a result of applying this deployment. (AI-inferred)
     management_status_change: Any = None
+    # The configuration change(s) this deployment would make to this resource. (AI-inferred)
     resource_configuration_changes: Any = None
+    # The template-local name identifying this resource within its own deployment. (AI-inferred)
     symbolic_name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # Why this action or configuration isn't supported. (AI-inferred)
     unsupported_reason: Any = None
 
 @dataclasses.dataclass
@@ -117,23 +149,35 @@ class DeploymentstacksDeploymentStacksWhatIfResult_Properties_DebugSetting:
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfo:
+    # Additional structured detail supporting this error. (AI-inferred)
     info: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # The severity level of this message. (AI-inferred)
     level: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_Details:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
@@ -151,18 +195,25 @@ class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error:
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputDefinitions:
+    # The configuration for this resource. (AI-inferred)
     config: Any = None
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputs:
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStacksWhatIfResult_Properties_Parameters:
+    # The template expression this value was evaluated from. (AI-inferred)
     expression: Any = None
+    # A reference to a related resource or value. (AI-inferred)
     reference: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

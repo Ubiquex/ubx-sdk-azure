@@ -20,6 +20,7 @@ class Image_Properties_SourceVirtualMachine:
 
 @dataclasses.dataclass
 class Image_Properties_StorageProfile_DataDisks:
+    # The logical unit number (LUN) for the data disk, which uniquely identifies the disk within the virtual machine. (AI-inferred)
     lun: Any = None
 
 @dataclasses.dataclass
@@ -44,6 +45,7 @@ class Image_Properties:
     hyper_vgeneration: Any = None
     # The provisioning state.
     provisioning_state: Any = None
+    # The virtual machine from which this image is created. (AI-inferred)
     source_virtual_machine: Any = None
     # Describes a storage profile.
     storage_profile: Any = None

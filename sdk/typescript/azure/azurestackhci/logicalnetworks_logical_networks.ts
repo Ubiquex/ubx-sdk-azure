@@ -25,59 +25,86 @@ export interface LogicalnetworksLogicalNetworks_Properties_Status {
   errorCode?: string | Computed<string>;
   /** Descriptive error message */
   errorMessage?: string | Computed<string>;
+  /** The current provisioning status of this resource. (AI-inferred) */
   provisioningStatus?: LogicalnetworksLogicalNetworks_Properties_Status_ProvisioningStatus | Computed<LogicalnetworksLogicalNetworks_Properties_Status_ProvisioningStatus>;
 }
 
 export interface LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpConfigurationReferences {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools_Info {
+  /** The number of IP address(es) currently available for allocation. (AI-inferred) */
   available?: string | Computed<string>;
+  /** The number of IP address(es) currently allocated from this pool. (AI-inferred) */
   used?: string | Computed<string>;
 }
 
 export interface LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools {
+  /** The last address in this range, inclusive. (AI-inferred) */
   end?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   info?: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools_Info | Computed<LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools_Info>;
+  /** The category of IP address pool this represents. (AI-inferred) */
   ipPoolType?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The first address in this range, inclusive. (AI-inferred) */
   start?: string | Computed<string>;
 }
 
 export interface LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties {
+  /** An IP address range, in CIDR notation. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address traffic matching this route is forwarded to. (AI-inferred) */
   nextHopIpAddress?: string | Computed<string>;
 }
 
 export interface LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties | Computed<LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties>;
 }
 
 export interface LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties {
+  /** The custom route(s) making up this route table. (AI-inferred) */
   routes?: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes[] | Computed<LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes[]>;
 }
 
 export interface LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties | Computed<LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface LogicalnetworksLogicalNetworks_Properties_Subnets_Properties {
+  /** An IP address range, in CIDR notation. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address range(s), in CIDR notation, this applies to. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** Whether IP addresses on this network are assigned statically or dynamically. (AI-inferred) */
   ipAllocationMethod?: string | Computed<string>;
+  /** The IP configuration(s) currently using addresses from this pool. (AI-inferred) */
   ipConfigurationReferences?: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpConfigurationReferences[] | Computed<LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpConfigurationReferences[]>;
+  /** The IP address pool(s) available for allocation on this network. (AI-inferred) */
   ipPools?: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools[] | Computed<LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools[]>;
+  /** The route table applied to this network. (AI-inferred) */
   routeTable?: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable | Computed<LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable>;
+  /** The VLAN identifier assigned to this network. (AI-inferred) */
   vlan?: number | Computed<number>;
 }
 
 export interface LogicalnetworksLogicalNetworks_Properties_Subnets {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties | Computed<LogicalnetworksLogicalNetworks_Properties_Subnets_Properties>;
 }
 

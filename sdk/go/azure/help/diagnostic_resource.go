@@ -7,29 +7,43 @@ type DiagnosticResource_Properties_Diagnostics_Error_Details struct {
 }
 
 type DiagnosticResource_Properties_Diagnostics_Error struct {
-	Code    any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
 	Details any
+	// A human-readable description of this result. (AI-inferred)
 	Message any
-	Type    any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type DiagnosticResource_Properties_Diagnostics_Insights struct {
-	Id              any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// How significant this insight or solution is judged to be. (AI-inferred)
 	ImportanceLevel any
-	Results         any
-	Title           any
+	// The result(s) produced by this operation. (AI-inferred)
+	Results any
+	// A human-readable title for this item. (AI-inferred)
+	Title any
 }
 
 type DiagnosticResource_Properties_Diagnostics struct {
-	Error      any
-	Insights   any
+	// Detail about an error that occurred. (AI-inferred)
+	Error any
+	// Diagnostic insight(s) generated for this resource. (AI-inferred)
+	Insights any
+	// A reference to the specific troubleshooting solution this applies to. (AI-inferred)
 	SolutionId any
-	Status     any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type DiagnosticResource_Properties_Insights struct {
+	// Extra parameter(s) supplied alongside this request. (AI-inferred)
 	AdditionalParameters any
-	SolutionId           any
+	// A reference to the specific troubleshooting solution this applies to. (AI-inferred)
+	SolutionId any
 }
 
 type DiagnosticResource_Properties struct {

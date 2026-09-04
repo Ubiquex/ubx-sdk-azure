@@ -9,26 +9,38 @@ export interface OpenapiKubeEnvironment_ExtendedLocation {
 }
 
 export interface OpenapiKubeEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfiguration {
+  /** The Log Analytics workspace customer ID this applies to. (AI-inferred) */
   customerId?: string | Computed<string>;
+  /** A shared access key credential. (AI-inferred) */
   sharedKey?: string | Computed<string>;
 }
 
 export interface OpenapiKubeEnvironment_Properties_AppLogsConfiguration {
+  /** Where this data or traffic is sent. (AI-inferred) */
   destination?: string | Computed<string>;
+  /** Configuration for sending this app's own diagnostic data to a Log Analytics workspace. (AI-inferred) */
   logAnalyticsConfiguration?: OpenapiKubeEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfiguration | Computed<OpenapiKubeEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfiguration>;
 }
 
 export interface OpenapiKubeEnvironment_Properties_ArcConfiguration_FrontEndServiceConfiguration {
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
 }
 
 export interface OpenapiKubeEnvironment_Properties_ArcConfiguration {
+  /** Whether the artifact storage volume is mounted read-only or read-write. (AI-inferred) */
   artifactStorageAccessMode?: string | Computed<string>;
+  /** The Kubernetes storage class used to provision the artifact storage volume. (AI-inferred) */
   artifactStorageClassName?: string | Computed<string>;
+  /** The path the artifact storage volume is mounted at. (AI-inferred) */
   artifactStorageMountPath?: string | Computed<string>;
+  /** The specific node the artifact storage volume is affinitized to. (AI-inferred) */
   artifactStorageNodeName?: string | Computed<string>;
+  /** The kind of storage backing this app's own build artifacts. (AI-inferred) */
   artifactsStorageType?: string | Computed<string>;
+  /** Configuration for the front-end service handling this app's own traffic. (AI-inferred) */
   frontEndServiceConfiguration?: OpenapiKubeEnvironment_Properties_ArcConfiguration_FrontEndServiceConfiguration | Computed<OpenapiKubeEnvironment_Properties_ArcConfiguration_FrontEndServiceConfiguration>;
+  /** The Kubernetes configuration used to connect to this cluster. (AI-inferred) */
   kubeConfig?: string | Computed<string>;
 }
 
@@ -48,9 +60,13 @@ export interface OpenapiKubeEnvironment_Properties_ContainerAppsConfiguration {
 }
 
 export interface OpenapiKubeEnvironment_Properties {
+  /** A reference to the Azure Kubernetes Service cluster this applies to. (AI-inferred) */
   aksResourceId?: string | Computed<string>;
+  /** Configuration for collecting this app's own application logs. (AI-inferred) */
   appLogsConfiguration?: OpenapiKubeEnvironment_Properties_AppLogsConfiguration | Computed<OpenapiKubeEnvironment_Properties_AppLogsConfiguration>;
+  /** Configuration specific to an Azure Arc-enabled deployment. (AI-inferred) */
   arcConfiguration?: OpenapiKubeEnvironment_Properties_ArcConfiguration | Computed<OpenapiKubeEnvironment_Properties_ArcConfiguration>;
+  /** Configuration specific to deploying on Azure Container Apps. (AI-inferred) */
   containerAppsConfiguration?: OpenapiKubeEnvironment_Properties_ContainerAppsConfiguration | Computed<OpenapiKubeEnvironment_Properties_ContainerAppsConfiguration>;
   /** Default Domain Name for the cluster */
   defaultDomain?: string | Computed<string>;

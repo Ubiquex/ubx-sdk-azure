@@ -9,38 +9,65 @@ export interface VirtualMachineTemplate_ExtendedLocation {
 }
 
 export interface VirtualMachineTemplate_Properties_Disks_StorageQoSpolicy {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface VirtualMachineTemplate_Properties_Disks {
+  /** The bus number this device is attached to. (AI-inferred) */
   bus?: number | Computed<number>;
+  /** The type of bus this device is attached to, e.g. `IDE` or `SCSI`. (AI-inferred) */
   busType?: string | Computed<string>;
+  /** Whether this disk is created as a differencing disk against its own source. (AI-inferred) */
   createDiffDisk?: string | Computed<string>;
+  /** A reference to the virtual disk this applies to. (AI-inferred) */
   diskId?: string | Computed<string>;
+  /** The size of this disk, in gibibytes. (AI-inferred) */
   diskSizeGb?: number | Computed<number>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** The logical unit number this disk is attached at. (AI-inferred) */
   lun?: number | Computed<number>;
+  /** The maximum size, in gibibytes, this disk is allowed to grow to. (AI-inferred) */
   maxDiskSizeGb?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The storage Quality of Service policy applied to this disk. (AI-inferred) */
   storageQoSpolicy?: VirtualMachineTemplate_Properties_Disks_StorageQoSpolicy | Computed<VirtualMachineTemplate_Properties_Disks_StorageQoSpolicy>;
+  /** A reference to the source template disk this virtual disk is created from. (AI-inferred) */
   templateDiskId?: string | Computed<string>;
+  /** The virtual hard disk format used, e.g. `VHD` or `VHDX`. (AI-inferred) */
   vhdFormatType?: string | Computed<string>;
+  /** Whether this virtual hard disk is `Dynamic`, `Fixed`, or a `Differencing` disk. (AI-inferred) */
   vhdType?: string | Computed<string>;
+  /** The category of storage volume this represents. (AI-inferred) */
   volumeType?: string | Computed<string>;
 }
 
 export interface VirtualMachineTemplate_Properties_NetworkInterfaces {
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** Whether this network adapter's own IPv4 address is `Static` or `Dynamic`. (AI-inferred) */
   ipv4AddressType?: string | Computed<string>;
+  /** The IPv4 address(es) assigned to this network adapter. (AI-inferred) */
   ipv4Addresses?: string[] | Computed<string[]>;
+  /** Whether this network adapter's own IPv6 address is `Static` or `Dynamic`. (AI-inferred) */
   ipv6AddressType?: string | Computed<string>;
+  /** The IPv6 address(es) assigned to this network adapter. (AI-inferred) */
   ipv6Addresses?: string[] | Computed<string[]>;
+  /** The MAC address assigned to this network adapter. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Whether this network adapter's own MAC address is `Static` or `Dynamic`. (AI-inferred) */
   macAddressType?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The name of the virtual network this adapter connects to. (AI-inferred) */
   networkName?: string | Computed<string>;
+  /** A reference to this network interface. (AI-inferred) */
   nicId?: string | Computed<string>;
+  /** A reference to the virtual network this applies to. (AI-inferred) */
   virtualNetworkId?: string | Computed<string>;
 }
 

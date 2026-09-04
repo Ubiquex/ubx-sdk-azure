@@ -4,7 +4,9 @@ package dataprotection
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BackupVaultResource_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,6 +22,7 @@ type BackupVaultResource_Identity struct {
 }
 
 type BackupVaultResource_Properties_CostManagementSettings struct {
+	// The level of detail this applies at. (AI-inferred)
 	GranularityLevel any
 }
 
@@ -29,12 +32,14 @@ type BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettings s
 }
 
 type BackupVaultResource_Properties_FeatureSettings struct {
+	// Configuration for restoring backup data into a different Azure region than where it was backed up from. (AI-inferred)
 	CrossRegionRestoreSettings any
 	// CrossSubscriptionRestore Settings
 	CrossSubscriptionRestoreSettings any
 }
 
 type BackupVaultResource_Properties_MonitoringSettings_AzureMonitorAlertSettings struct {
+	// Whether alerts are raised for every failed backup job, not just critical ones. (AI-inferred)
 	AlertsForAllJobFailures any
 }
 
@@ -96,8 +101,10 @@ type BackupVaultResource_Properties_SecuritySettings struct {
 }
 
 type BackupVaultResource_Properties_StorageSettings struct {
+	// The type of datastore this applies to. (AI-inferred)
 	DatastoreType any
-	Type          any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type BackupVaultResource_Properties struct {

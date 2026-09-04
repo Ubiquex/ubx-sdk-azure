@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class NetworkmanagerNetworkManager_Properties_NetworkManagerScopes_CrossTenantScopes:
+    # The management group(s) this scope covers. (AI-inferred)
     management_groups: Any = None
+    # The subscription ID(s) this auto-approval or visibility rule applies to. (AI-inferred)
     subscriptions: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
 
 @dataclasses.dataclass

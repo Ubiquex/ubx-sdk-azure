@@ -11,7 +11,9 @@ type OpenapiStorageAccount_ExtendedLocation struct {
 }
 
 type OpenapiStorageAccount_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -228,19 +230,26 @@ type OpenapiStorageAccount_Properties_KeyPolicy struct {
 }
 
 type OpenapiStorageAccount_Properties_NetworkAcls_IpRules struct {
+	// The action taken when this rule matches. (AI-inferred)
 	Action any
-	Value  any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiStorageAccount_Properties_NetworkAcls_ResourceAccessRules struct {
+	// A reference to the resource this applies to. (AI-inferred)
 	ResourceId any
-	TenantId   any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
 }
 
 type OpenapiStorageAccount_Properties_NetworkAcls_VirtualNetworkRules struct {
+	// The action taken when this rule matches. (AI-inferred)
 	Action any
-	Id     any
-	State  any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The current status of this resource. (AI-inferred)
+	State any
 }
 
 type OpenapiStorageAccount_Properties_NetworkAcls struct {

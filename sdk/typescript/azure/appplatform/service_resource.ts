@@ -21,10 +21,15 @@ export interface ServiceResource_Properties_NetworkProfile_OutboundIps {
 }
 
 export interface ServiceResource_Properties_NetworkProfile_RequiredTraffics {
+  /** Whether this rule applies to inbound or outbound traffic. (AI-inferred) */
   direction?: string | Computed<string>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP address(es) associated with this resource. (AI-inferred) */
   ips?: string[] | Computed<string[]>;
+  /** A network port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** The network protocol used. (AI-inferred) */
   protocol?: string | Computed<string>;
 }
 
@@ -73,6 +78,7 @@ export interface ServiceResource_Properties {
   version?: number | Computed<number>;
   /** Additional Service settings in vnet injection instance */
   vnetAddons?: ServiceResource_Properties_VnetAddons | Computed<ServiceResource_Properties_VnetAddons>;
+  /** Whether this resource is provisioned redundantly across availability zones. (AI-inferred) */
   zoneRedundant?: boolean | Computed<boolean>;
 }
 

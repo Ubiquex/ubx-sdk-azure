@@ -167,36 +167,63 @@ type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_Pro
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EdifactDelimiterOverrides struct {
-	ComponentSeparator             any
-	DataElementSeparator           any
-	DecimalPointIndicator          any
+	// The character separating individual data elements within a composite element. (AI-inferred)
+	ComponentSeparator any
+	// The character separating individual data elements within a segment. (AI-inferred)
+	DataElementSeparator any
+	// The character used as the decimal point in numeric values. (AI-inferred)
+	DecimalPointIndicator any
+	// The code identifying the association responsible for this specific message type. (AI-inferred)
 	MessageAssociationAssignedCode any
-	MessageId                      any
-	MessageRelease                 any
-	MessageVersion                 any
-	ReleaseIndicator               any
-	RepetitionSeparator            any
-	SegmentTerminator              any
-	SegmentTerminatorSuffix        any
-	TargetNamespace                any
+	// The identifier for this message type. (AI-inferred)
+	MessageId any
+	// The release number of this message definition. (AI-inferred)
+	MessageRelease any
+	// The version number of this message definition. (AI-inferred)
+	MessageVersion any
+	// The character marking a subsequent character as an escaped literal, rather than a delimiter. (AI-inferred)
+	ReleaseIndicator any
+	// The character separating repeated instances of a data element. (AI-inferred)
+	RepetitionSeparator any
+	// The character marking the end of a segment. (AI-inferred)
+	SegmentTerminator any
+	// An additional character appended after the segment terminator, e.g. a line break. (AI-inferred)
+	SegmentTerminatorSuffix any
+	// The XML namespace this schema is defined in. (AI-inferred)
+	TargetNamespace any
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeOverrides struct {
-	ApplicationPassword            any
-	AssociationAssignedCode        any
-	ControllingAgencyCode          any
-	FunctionalGroupId              any
-	GroupHeaderMessageRelease      any
-	GroupHeaderMessageVersion      any
+	// The password used to authenticate this trading partner agreement's own application. (AI-inferred)
+	ApplicationPassword any
+	// The code identifying the association responsible for this message definition. (AI-inferred)
+	AssociationAssignedCode any
+	// The code identifying the standards agency governing this message definition. (AI-inferred)
+	ControllingAgencyCode any
+	// The identifier for this X12 functional group. (AI-inferred)
+	FunctionalGroupId any
+	// The release number declared in this EDIFACT group header. (AI-inferred)
+	GroupHeaderMessageRelease any
+	// The version number declared in this EDIFACT group header. (AI-inferred)
+	GroupHeaderMessageVersion any
+	// The code identifying the association responsible for this specific message type. (AI-inferred)
 	MessageAssociationAssignedCode any
-	MessageId                      any
-	MessageRelease                 any
-	MessageVersion                 any
-	ReceiverApplicationId          any
-	ReceiverApplicationQualifier   any
-	SenderApplicationId            any
-	SenderApplicationQualifier     any
-	TargetNamespace                any
+	// The identifier for this message type. (AI-inferred)
+	MessageId any
+	// The release number of this message definition. (AI-inferred)
+	MessageRelease any
+	// The version number of this message definition. (AI-inferred)
+	MessageVersion any
+	// The identifier of the receiving trading partner's own application. (AI-inferred)
+	ReceiverApplicationId any
+	// The code qualifying the type of `receiver_application_id`. (AI-inferred)
+	ReceiverApplicationQualifier any
+	// The identifier of the sending trading partner's own application. (AI-inferred)
+	SenderApplicationId any
+	// The code qualifying the type of `sender_application_id`. (AI-inferred)
+	SenderApplicationQualifier any
+	// The XML namespace this schema is defined in. (AI-inferred)
+	TargetNamespace any
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeSettings struct {
@@ -315,6 +342,7 @@ type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_Pro
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterList struct {
+	// The identifier for this message type. (AI-inferred)
 	MessageId any
 }
 
@@ -332,23 +360,37 @@ type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_Pro
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_SchemaReferences struct {
-	AssociationAssignedCode    any
-	MessageId                  any
-	MessageRelease             any
-	MessageVersion             any
-	SchemaName                 any
-	SenderApplicationId        any
+	// The code identifying the association responsible for this message definition. (AI-inferred)
+	AssociationAssignedCode any
+	// The identifier for this message type. (AI-inferred)
+	MessageId any
+	// The release number of this message definition. (AI-inferred)
+	MessageRelease any
+	// The version number of this message definition. (AI-inferred)
+	MessageVersion any
+	// The name of this schema. (AI-inferred)
+	SchemaName any
+	// The identifier of the sending trading partner's own application. (AI-inferred)
+	SenderApplicationId any
+	// The code qualifying the type of `sender_application_id`. (AI-inferred)
 	SenderApplicationQualifier any
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationOverrides struct {
+	// Whether leading/trailing spaces and leading zeroes are permitted in a value. (AI-inferred)
 	AllowLeadingAndTrailingSpacesAndZeroes any
-	EnforceCharacterSet                    any
-	MessageId                              any
-	TrailingSeparatorPolicy                any
-	TrimLeadingAndTrailingSpacesAndZeroes  any
-	ValidateEditypes                       any
-	ValidateXsdtypes                       any
+	// Whether values are validated against the permitted character set. (AI-inferred)
+	EnforceCharacterSet any
+	// The identifier for this message type. (AI-inferred)
+	MessageId any
+	// How trailing, otherwise-empty separators at the end of a segment are handled. (AI-inferred)
+	TrailingSeparatorPolicy any
+	// Whether leading/trailing spaces and leading zeroes are stripped from a value. (AI-inferred)
+	TrimLeadingAndTrailingSpacesAndZeroes any
+	// Whether EDI data types are validated against the schema. (AI-inferred)
+	ValidateEditypes any
+	// Whether values are validated against their own declared XSD types. (AI-inferred)
+	ValidateXsdtypes any
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationSettings struct {
@@ -449,16 +491,26 @@ type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_Protoco
 }
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeOverrides struct {
-	DateFormat               any
+	// The format dates are expressed in. (AI-inferred)
+	DateFormat any
+	// The code identifying the kind of transaction set(s) in this functional group. (AI-inferred)
 	FunctionalIdentifierCode any
-	HeaderVersion            any
-	MessageId                any
-	ProtocolVersion          any
-	ReceiverApplicationId    any
-	ResponsibleAgencyCode    any
-	SenderApplicationId      any
-	TargetNamespace          any
-	TimeFormat               any
+	// The version identifier declared in this message header. (AI-inferred)
+	HeaderVersion any
+	// The identifier for this message type. (AI-inferred)
+	MessageId any
+	// The version of the underlying EDI protocol this agreement uses. (AI-inferred)
+	ProtocolVersion any
+	// The identifier of the receiving trading partner's own application. (AI-inferred)
+	ReceiverApplicationId any
+	// The code identifying the agency responsible for this message definition. (AI-inferred)
+	ResponsibleAgencyCode any
+	// The identifier of the sending trading partner's own application. (AI-inferred)
+	SenderApplicationId any
+	// The XML namespace this schema is defined in. (AI-inferred)
+	TargetNamespace any
+	// The format times are expressed in. (AI-inferred)
+	TimeFormat any
 }
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeSettings struct {
@@ -545,9 +597,13 @@ type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_Protoco
 }
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SchemaReferences struct {
-	MessageId           any
-	SchemaName          any
-	SchemaVersion       any
+	// The identifier for this message type. (AI-inferred)
+	MessageId any
+	// The name of this schema. (AI-inferred)
+	SchemaName any
+	// The version of this schema. (AI-inferred)
+	SchemaVersion any
+	// The identifier of the sending trading partner's own application. (AI-inferred)
 	SenderApplicationId any
 }
 
@@ -563,25 +619,41 @@ type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_Protoco
 }
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ValidationOverrides struct {
+	// Whether leading/trailing spaces and leading zeroes are permitted in a value. (AI-inferred)
 	AllowLeadingAndTrailingSpacesAndZeroes any
-	MessageId                              any
-	TrailingSeparatorPolicy                any
-	TrimLeadingAndTrailingSpacesAndZeroes  any
-	ValidateCharacterSet                   any
-	ValidateEditypes                       any
-	ValidateXsdtypes                       any
+	// The identifier for this message type. (AI-inferred)
+	MessageId any
+	// How trailing, otherwise-empty separators at the end of a segment are handled. (AI-inferred)
+	TrailingSeparatorPolicy any
+	// Whether leading/trailing spaces and leading zeroes are stripped from a value. (AI-inferred)
+	TrimLeadingAndTrailingSpacesAndZeroes any
+	// Whether values are validated against the permitted character set. (AI-inferred)
+	ValidateCharacterSet any
+	// Whether EDI data types are validated against the schema. (AI-inferred)
+	ValidateEditypes any
+	// Whether values are validated against their own declared XSD types. (AI-inferred)
+	ValidateXsdtypes any
 }
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_X12DelimiterOverrides struct {
-	ComponentSeparator         any
-	DataElementSeparator       any
-	MessageId                  any
-	ProtocolVersion            any
-	ReplaceCharacter           any
+	// The character separating individual data elements within a composite element. (AI-inferred)
+	ComponentSeparator any
+	// The character separating individual data elements within a segment. (AI-inferred)
+	DataElementSeparator any
+	// The identifier for this message type. (AI-inferred)
+	MessageId any
+	// The version of the underlying EDI protocol this agreement uses. (AI-inferred)
+	ProtocolVersion any
+	// The character substituted in place of a disallowed one. (AI-inferred)
+	ReplaceCharacter any
+	// Whether delimiter characters appearing inside data values are replaced, to avoid ambiguity with the message's own structural delimiters. (AI-inferred)
 	ReplaceSeparatorsInPayload any
-	SegmentTerminator          any
-	SegmentTerminatorSuffix    any
-	TargetNamespace            any
+	// The character marking the end of a segment. (AI-inferred)
+	SegmentTerminator any
+	// An additional character appended after the segment terminator, e.g. a line break. (AI-inferred)
+	SegmentTerminatorSuffix any
+	// The XML namespace this schema is defined in. (AI-inferred)
+	TargetNamespace any
 }
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings struct {

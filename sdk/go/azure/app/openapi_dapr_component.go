@@ -4,16 +4,23 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDaprComponent_Properties_Metadata struct {
-	Name      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the secret holding this value. (AI-inferred)
 	SecretRef any
-	Value     any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiDaprComponent_Properties_Secrets struct {
-	Identity    any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// A reference to the Key Vault secret this value is sourced from. (AI-inferred)
 	KeyVaultUrl any
-	Name        any
-	Value       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiDaprComponent_Properties struct {

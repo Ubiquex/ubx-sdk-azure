@@ -4,13 +4,17 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations_Pool struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations struct {
+	// Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses      any
-	Pool                     any
+	// How many IP addresses to allocate from this pool. (AI-inferred)
+	NumberOfIpAddresses any
+	// A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
+	Pool any
 }
 
 type VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace struct {

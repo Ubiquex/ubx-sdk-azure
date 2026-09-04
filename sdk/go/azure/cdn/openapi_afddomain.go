@@ -46,7 +46,8 @@ type OpenapiAfddomain_Properties_ValidationProperties struct {
 
 type OpenapiAfddomain_Properties struct {
 	// Reference to another resource.
-	AzureDnsZone     any
+	AzureDnsZone any
+	// The current deployment status of this configuration. (AI-inferred)
 	DeploymentStatus any
 	// Provisioning substate shows the progress of custom HTTPS enabling/disabling process step by step. DCV stands for DomainControlValidation.
 	DomainValidationState any

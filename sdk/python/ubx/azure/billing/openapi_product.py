@@ -8,12 +8,16 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiProduct_Properties_LastCharge:
+    # The currency amounts are expressed in. (AI-inferred)
     currency: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiProduct_Properties_Reseller:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A reference to the reseller associated with this account. (AI-inferred)
     reseller_id: Any = None
 
 @dataclasses.dataclass

@@ -4,7 +4,9 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SreagentAgentSpace_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -29,15 +31,21 @@ type SreagentAgentSpace_Properties_ComplianceStatus struct {
 }
 
 type SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions_ActionParameters struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions struct {
-	ActionName       any
+	// The name identifying the specific automated action this policy permits the agent to take. (AI-inferred)
+	ActionName any
+	// The parameter(s) configuring how this permitted action is executed. (AI-inferred)
 	ActionParameters any
+	// Whether a human must approve this action before the agent is allowed to run it. (AI-inferred)
 	ApprovalRequired any
-	Extension        any
+	// The extension or plugin this permitted action belongs to. (AI-inferred)
+	Extension any
 }
 
 type SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration struct {

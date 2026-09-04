@@ -4,7 +4,9 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiGremlinGraphGetResults_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -25,6 +27,7 @@ type DbOpenapiGremlinGraphGetResults_Properties_Options_AutoscaleSettings struct
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Options struct {
+	// Configuration for automatically scaling throughput within a defined maximum. (AI-inferred)
 	AutoscaleSettings any
 	// Request Units per second. For example, "throughput": 10000.
 	Throughput any
@@ -45,31 +48,44 @@ type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_Composit
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_ExcludedPaths struct {
+	// The JSON path this rule applies to. (AI-inferred)
 	Path any
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_Indexes struct {
-	DataType  any
-	Kind      any
+	// The data type of this indexed or partitioned value. (AI-inferred)
+	DataType any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
+	// The numeric precision retained for this indexed value. (AI-inferred)
 	Precision any
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPaths struct {
+	// The index(es) defined on this container. (AI-inferred)
 	Indexes any
-	Path    any
+	// The JSON path this rule applies to. (AI-inferred)
+	Path any
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_SpatialIndexes struct {
-	Path  any
+	// The JSON path this rule applies to. (AI-inferred)
+	Path any
+	// The category/categories this applies to. (AI-inferred)
 	Types any
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_VectorIndexes struct {
+	// The size of the candidate list explored when building this vector search index. (AI-inferred)
 	IndexingSearchListSize any
-	Path                   any
-	QuantizationByteSize   any
-	Type                   any
-	VectorIndexShardKey    any
+	// The JSON path this rule applies to. (AI-inferred)
+	Path any
+	// The number of bytes each vector dimension is quantized to. (AI-inferred)
+	QuantizationByteSize any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The field(s) used to shard this vector index for scale-out. (AI-inferred)
+	VectorIndexShardKey any
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy struct {
@@ -103,12 +119,16 @@ type DbOpenapiGremlinGraphGetResults_Properties_Resource_PartitionKey struct {
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_RestoreParameters struct {
-	RestoreSource          any
-	RestoreTimestampInUtc  any
+	// A reference to the source account this account is restored from. (AI-inferred)
+	RestoreSource any
+	// The point in time this account is restored to, in UTC. (AI-inferred)
+	RestoreTimestampInUtc any
+	// Whether time-to-live expiration is disabled on the restored data. (AI-inferred)
 	RestoreWithTtlDisabled any
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicy_UniqueKeys struct {
+	// The JSON path(s) this index or policy applies to. (AI-inferred)
 	Paths any
 }
 

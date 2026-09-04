@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Workflow_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,16 +20,21 @@ export interface Workflow_Identity {
 }
 
 export interface Workflow_Properties_AccessControl_Actions_AllowedCallerIpAddresses {
+  /** The permitted range of addresses for this endpoint. (AI-inferred) */
   addressRange?: string | Computed<string>;
 }
 
 export interface Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies {
+  /** The claim(s) required in the token presented for authentication. (AI-inferred) */
   claims?: Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims[] | Computed<Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims[]>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -55,6 +62,7 @@ export interface Workflow_Properties_AccessControl {
 }
 
 export interface Workflow_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddresses {
+  /** The address this endpoint is reached at. (AI-inferred) */
   address?: string | Computed<string>;
 }
 
@@ -82,9 +90,13 @@ export interface Workflow_Properties_IntegrationAccount {
 }
 
 export interface Workflow_Properties_Parameters {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** Free-form key/value metadata attached to this resource. (AI-inferred) */
   metadata?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 
@@ -104,6 +116,7 @@ export interface Workflow_Properties {
   changedTime?: string | Computed<string>;
   /** Gets the created time. */
   createdTime?: string | Computed<string>;
+  /** The schema or configuration defining this artifact. (AI-inferred) */
   definition?: unknown | Computed<unknown>;
   /** The endpoints configuration. */
   endpointsConfiguration?: Workflow_Properties_EndpointsConfiguration | Computed<Workflow_Properties_EndpointsConfiguration>;

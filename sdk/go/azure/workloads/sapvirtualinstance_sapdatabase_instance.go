@@ -21,12 +21,16 @@ type SapvirtualinstanceSapdatabaseInstance_Properties_Errors struct {
 }
 
 type SapvirtualinstanceSapdatabaseInstance_Properties_LoadBalancerDetails struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type SapvirtualinstanceSapdatabaseInstance_Properties_VmDetails struct {
-	Status           any
-	StorageDetails   any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// Detail about the storage volume(s) attached to this SAP database instance's own virtual machine. (AI-inferred)
+	StorageDetails any
+	// A reference to the virtual machine backing this SAP database instance. (AI-inferred)
 	VirtualMachineId any
 }
 

@@ -24,9 +24,13 @@ class OpenapiRunbook_Properties_Draft_DraftContentLink:
 
 @dataclasses.dataclass
 class OpenapiRunbook_Properties_Draft_Parameters:
+    # The value used when this parameter is left unset. (AI-inferred)
     default_value: Any = None
+    # Whether this parameter must be supplied. (AI-inferred)
     is_mandatory: Any = None
+    # This parameter's own position within its containing argument list. (AI-inferred)
     position: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -50,6 +54,7 @@ class OpenapiRunbook_Properties:
     creation_time: Any = None
     # Gets or sets the description of the runbook.
     description: Any = None
+    # The draft (unpublished) content of this runbook. (AI-inferred)
     draft: Any = None
     # Gets or sets the job count of the runbook.
     job_count: Any = None

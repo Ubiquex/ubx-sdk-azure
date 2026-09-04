@@ -4,14 +4,22 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanVpnConnection_Properties_IpsecPolicies struct {
-	DhGroup             any
-	IkeEncryption       any
-	IkeIntegrity        any
-	IpsecEncryption     any
-	IpsecIntegrity      any
-	PfsGroup            any
+	// The Diffie-Hellman group used for IKE Phase 1 key exchange, e.g. `DHGroup14` or `DHGroup24`. (AI-inferred)
+	DhGroup any
+	// The encryption algorithm used for IKE Phase 1 (establishing the secure channel itself), e.g. `AES256`. (AI-inferred)
+	IkeEncryption any
+	// The integrity (hashing) algorithm used for IKE Phase 1, e.g. `SHA384`. (AI-inferred)
+	IkeIntegrity any
+	// The encryption algorithm used for IKE Phase 2 (the actual IPsec data tunnel), e.g. `AES256`. (AI-inferred)
+	IpsecEncryption any
+	// The integrity (hashing) algorithm used for IKE Phase 2, e.g. `SHA256`. (AI-inferred)
+	IpsecIntegrity any
+	// The Perfect Forward Secrecy group used when establishing a new IKE Phase 2 security association, or `None` to disable PFS. (AI-inferred)
+	PfsGroup any
+	// The IPsec security association's own data-volume lifetime, in kilobytes -- the tunnel rekeys once either this or `sa_life_time_seconds` is reached. (AI-inferred)
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds   any
+	// The IPsec security association's own time-based lifetime, in seconds -- the tunnel rekeys once either this or `sa_data_size_kilobytes` is reached. (AI-inferred)
+	SaLifeTimeSeconds any
 }
 
 type VirtualwanVpnConnection_Properties_RemoteVpnSite struct {
@@ -27,8 +35,11 @@ type VirtualwanVpnConnection_Properties_RoutingConfiguration_PropagatedRouteTabl
 }
 
 type VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes  any
-	Name             any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
 	NextHopIpAddress any
 }
 
@@ -62,39 +73,64 @@ type VirtualwanVpnConnection_Properties_RoutingConfiguration struct {
 }
 
 type VirtualwanVpnConnection_Properties_TrafficSelectorPolicies struct {
-	LocalAddressRanges  any
+	// The local (on-premises) IP address range(s) this traffic selector matches. (AI-inferred)
+	LocalAddressRanges any
+	// The remote IP address range(s) this traffic selector matches. (AI-inferred)
 	RemoteAddressRanges any
 }
 
 type VirtualwanVpnConnection_Properties_VpnLinkConnections_Properties_VpnGatewayCustomBgpAddresses struct {
+	// A caller-chosen BGP peering IP address, instead of Azure's own auto-allocated default. (AI-inferred)
 	CustomBgpIpAddress any
-	IpConfigurationId  any
+	// A reference to the IP configuration this applies to. (AI-inferred)
+	IpConfigurationId any
 }
 
 type VirtualwanVpnConnection_Properties_VpnLinkConnections_Properties struct {
-	ConnectionBandwidth            any
-	ConnectionStatus               any
-	DpdTimeoutSeconds              any
-	EgressBytesTransferred         any
-	EgressNatRules                 any
-	EnableBgp                      any
-	EnableRateLimiting             any
-	IngressBytesTransferred        any
-	IngressNatRules                any
-	IpsecPolicies                  any
-	ProvisioningState              any
-	RoutingWeight                  any
-	SharedKey                      any
-	UseLocalAzureIpAddress         any
+	// The provisioned bandwidth, in Mbps, for this connection. (AI-inferred)
+	ConnectionBandwidth any
+	// The current connectivity status of this connection. (AI-inferred)
+	ConnectionStatus any
+	// How long, in seconds, before an unresponsive IKE peer is considered dead. (AI-inferred)
+	DpdTimeoutSeconds any
+	// The total number of bytes transferred outbound. (AI-inferred)
+	EgressBytesTransferred any
+	// The outbound NAT rule(s) applied to this connection. (AI-inferred)
+	EgressNatRules any
+	// Whether BGP routing is enabled for this connection. (AI-inferred)
+	EnableBgp any
+	// Whether rate limiting is enabled for this configuration. (AI-inferred)
+	EnableRateLimiting any
+	// The total number of bytes transferred inbound. (AI-inferred)
+	IngressBytesTransferred any
+	// The inbound NAT rule(s) applied to this connection. (AI-inferred)
+	IngressNatRules any
+	// The IPsec/IKE policy/policies (encryption, integrity, lifetimes) applied to this connection. (AI-inferred)
+	IpsecPolicies any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The relative weight of this route among several possible paths. (AI-inferred)
+	RoutingWeight any
+	// A pre-shared key used to establish this connection. (AI-inferred)
+	SharedKey any
+	// Whether this gateway uses its own local Azure IP address, rather than a public one, for this connection. (AI-inferred)
+	UseLocalAzureIpAddress any
+	// Whether policy-based (rather than route-based) traffic selectors are used for this IPsec tunnel. (AI-inferred)
 	UsePolicyBasedTrafficSelectors any
-	VpnConnectionProtocolType      any
-	VpnGatewayCustomBgpAddresses   any
-	VpnLinkConnectionMode          any
-	VpnSiteLink                    any
+	// The VPN protocol used for this connection, e.g. `IKEv2` or `OpenVPN`. (AI-inferred)
+	VpnConnectionProtocolType any
+	// Caller-chosen BGP peering IP address(es) for this VPN gateway, instead of Azure's own auto-allocated defaults. (AI-inferred)
+	VpnGatewayCustomBgpAddresses any
+	// Whether this VPN site link connection is `Default`, `InitiatorOnly`, or `ResponderOnly`. (AI-inferred)
+	VpnLinkConnectionMode any
+	// A reference to the specific VPN site link this connection uses. (AI-inferred)
+	VpnSiteLink any
 }
 
 type VirtualwanVpnConnection_Properties_VpnLinkConnections struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

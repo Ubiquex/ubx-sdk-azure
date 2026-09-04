@@ -96,57 +96,91 @@ class FluxconfigurationFluxConfiguration_Properties_GitRepository:
 
 @dataclasses.dataclass
 class FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild_SubstituteFrom:
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Whether this dependency is optional, rather than required. (AI-inferred)
     optional: Any = None
 
 @dataclasses.dataclass
 class FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild:
+    # Fixed key/value substitution(s) applied to manifests during post-build. (AI-inferred)
     substitute: Any = None
+    # A reference to a ConfigMap or Secret whose own key/value pairs are substituted into manifests during post-build. (AI-inferred)
     substitute_from: Any = None
 
 @dataclasses.dataclass
 class FluxconfigurationFluxConfiguration_Properties_Kustomizations:
+    # The Kustomization(s) that must be applied before this one runs. (AI-inferred)
     depends_on: Any = None
+    # Whether this Kustomization is applied with `--force`, recreating resources it can't otherwise patch. (AI-inferred)
     force: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The path within the source repository this Kustomization applies. (AI-inferred)
     path: Any = None
+    # Substitution(s) applied to manifests after they're built, before being applied to the cluster. (AI-inferred)
     post_build: Any = None
+    # Whether resources no longer present in the source are automatically removed from the cluster. (AI-inferred)
     prune: Any = None
+    # How long, in seconds, to wait before retrying after a failed reconciliation. (AI-inferred)
     retry_interval_in_seconds: Any = None
+    # How often, in seconds, this configuration is reconciled against its own source. (AI-inferred)
     sync_interval_in_seconds: Any = None
+    # How long, in seconds, this operation waits before timing out. (AI-inferred)
     timeout_in_seconds: Any = None
+    # Whether reconciliation waits for all applied resources to become ready before being marked complete. (AI-inferred)
     wait: Any = None
 
 @dataclasses.dataclass
 class FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedBy:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Kubernetes namespace this applies to. (AI-inferred)
     namespace: Any = None
 
 @dataclasses.dataclass
 class FluxconfigurationFluxConfiguration_Properties_Statuses_HelmReleaseProperties:
+    # The number of times this reconciliation has failed. (AI-inferred)
     failure_count: Any = None
+    # A reference to the Helm chart this release deploys. (AI-inferred)
     helm_chart_ref: Any = None
+    # The number of times the initial install of this Helm release has failed. (AI-inferred)
     install_failure_count: Any = None
+    # The most recent source revision successfully applied. (AI-inferred)
     last_revision_applied: Any = None
+    # The number of times an upgrade of this Helm release has failed. (AI-inferred)
     upgrade_failure_count: Any = None
 
 @dataclasses.dataclass
 class FluxconfigurationFluxConfiguration_Properties_Statuses_StatusConditions:
+    # When this condition last changed from one status to another. (AI-inferred)
     last_transition_time: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A machine-readable reason code. (AI-inferred)
     reason: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class FluxconfigurationFluxConfiguration_Properties_Statuses:
+    # The component that applied this configuration. (AI-inferred)
     applied_by: Any = None
+    # Whether this configuration's own live state matches its declared, desired state. (AI-inferred)
     compliance_state: Any = None
+    # Configuration specific to this Helm release. (AI-inferred)
     helm_release_properties: Any = None
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Kubernetes namespace this applies to. (AI-inferred)
     namespace: Any = None
+    # The current condition(s) affecting this resource's own status. (AI-inferred)
     status_conditions: Any = None
 
 @dataclasses.dataclass

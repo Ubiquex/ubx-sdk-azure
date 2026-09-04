@@ -21,7 +21,9 @@ type AgentApplication_Properties_AgentIdentityBlueprint struct {
 }
 
 type AgentApplication_Properties_Agents struct {
-	AgentId   any
+	// A reference to the agent this applies to. (AI-inferred)
+	AgentId any
+	// The name of this agent. (AI-inferred)
 	AgentName any
 }
 
@@ -31,9 +33,13 @@ type AgentApplication_Properties_AuthorizationPolicy struct {
 }
 
 type AgentApplication_Properties_TrafficRoutingPolicy_Rules struct {
-	DeploymentId      any
-	Description       any
-	RuleId            any
+	// A reference to the model deployment this applies to. (AI-inferred)
+	DeploymentId any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// A reference to the specific rule this applies to. (AI-inferred)
+	RuleId any
+	// The percentage of traffic routed to this target. (AI-inferred)
 	TrafficPercentage any
 }
 

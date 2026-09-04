@@ -4,7 +4,9 @@ package monitor
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -29,30 +31,48 @@ type ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Actions struct {
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_Dimensions struct {
-	Name     any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// How this condition's own operands are compared. (AI-inferred)
 	Operator any
-	Values   any
+	// The value(s) making up this field. (AI-inferred)
+	Values any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_FailingPeriods struct {
-	MinFailingPeriodsToAlert  any
+	// The minimum number of failing evaluation period(s) required to trigger this alert. (AI-inferred)
+	MinFailingPeriodsToAlert any
+	// How many recent evaluation period(s) this condition considers. (AI-inferred)
 	NumberOfEvaluationPeriods any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf struct {
-	AlertSensitivity    any
-	CriterionType       any
-	Dimensions          any
-	FailingPeriods      any
-	IgnoreDataBefore    any
+	// How sensitive this dynamic threshold is to deviations in the metric. (AI-inferred)
+	AlertSensitivity any
+	// The category of alert criterion this represents, e.g. static or dynamic threshold. (AI-inferred)
+	CriterionType any
+	// The dimension(s) this alert condition is evaluated across. (AI-inferred)
+	Dimensions any
+	// The number of failing evaluation period(s), out of the last `number_of_evaluation_periods`, required to trigger this alert. (AI-inferred)
+	FailingPeriods any
+	// Data before this date is excluded when learning a dynamic threshold's own baseline. (AI-inferred)
+	IgnoreDataBefore any
+	// The result column holding the metric value this condition evaluates. (AI-inferred)
 	MetricMeasureColumn any
-	MetricName          any
-	MinRecurrenceCount  any
-	Operator            any
-	Query               any
-	ResourceIdColumn    any
-	Threshold           any
-	TimeAggregation     any
+	// The name of the metric this applies to. (AI-inferred)
+	MetricName any
+	// The minimum number of times this pattern must recur to trigger the alert. (AI-inferred)
+	MinRecurrenceCount any
+	// How this condition's own operands are compared. (AI-inferred)
+	Operator any
+	// The log query text this condition evaluates. (AI-inferred)
+	Query any
+	// The result column identifying which resource each row belongs to. (AI-inferred)
+	ResourceIdColumn any
+	// The value that must be crossed for this condition to trigger. (AI-inferred)
+	Threshold any
+	// How values are aggregated over each evaluation period, e.g. average or count. (AI-inferred)
+	TimeAggregation any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria struct {

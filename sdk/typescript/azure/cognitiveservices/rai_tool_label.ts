@@ -7,7 +7,9 @@ export interface RaiToolLabel_Properties_AccountScope {
 }
 
 export interface RaiToolLabel_Properties_ProjectScopes {
+  /** The label value(s) assigned during data collection. (AI-inferred) */
   labelValues?: Record<string, string> | Computed<Record<string, string>>;
+  /** A reference to the AI Foundry project this applies to. (AI-inferred) */
   project?: string | Computed<string>;
 }
 

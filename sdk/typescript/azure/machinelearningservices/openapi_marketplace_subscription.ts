@@ -11,10 +11,13 @@ export interface OpenapiMarketplaceSubscription_Properties_MarketplacePlan {
 }
 
 export interface OpenapiMarketplaceSubscription_Properties {
+  /** A reference to the Azure Marketplace plan this model is licensed under. (AI-inferred) */
   marketplacePlan?: OpenapiMarketplaceSubscription_Properties_MarketplacePlan | Computed<OpenapiMarketplaceSubscription_Properties_MarketplacePlan>;
+  /** The current status of the Azure Marketplace subscription backing this model. (AI-inferred) */
   marketplaceSubscriptionStatus?: string | Computed<string>;
   /** [Required] Target Marketplace Model ID to create a Marketplace Subscription for. */
   modelId: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
@@ -36,12 +39,14 @@ const OpenapiMarketplaceSubscription_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiMarketplaceSubscriptionConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiMarketplaceSubscription_Properties | Computed<OpenapiMarketplaceSubscription_Properties>;
   /** path parameter, not part of the API's own resource representation */
   name: string | Computed<string>;
 }
 
 export interface OpenapiMarketplaceSubscriptionAttrs {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiMarketplaceSubscription_Properties;
   /** path parameter, not part of the API's own resource representation */
   name: string;

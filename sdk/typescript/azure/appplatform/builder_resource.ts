@@ -2,11 +2,14 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface BuilderResource_Properties_BuildpackGroups_Buildpacks {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface BuilderResource_Properties_BuildpackGroups {
+  /** The buildpack(s) applied when building this application. (AI-inferred) */
   buildpacks?: BuilderResource_Properties_BuildpackGroups_Buildpacks[] | Computed<BuilderResource_Properties_BuildpackGroups_Buildpacks[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 

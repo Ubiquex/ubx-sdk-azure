@@ -8,20 +8,29 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources_Errors:
+    # The action needed to resolve this issue. (AI-inferred)
     action_required: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A machine-readable error code. (AI-inferred)
     error_code: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Guidance for resolving this issue. (AI-inferred)
     resolution_steps: Any = None
 
 @dataclasses.dataclass
 class Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources:
+    # The error(s) encountered. (AI-inferred)
     errors: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class Maintenance_Properties_MaintenanceReadiness_FailedChecks:
+    # The resource(s) affected by this issue. (AI-inferred)
     impacted_resources: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
@@ -39,6 +48,7 @@ class Maintenance_Properties_MaintenanceReadiness:
 
 @dataclasses.dataclass
 class Maintenance_Properties_Operations:
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
 
 @dataclasses.dataclass

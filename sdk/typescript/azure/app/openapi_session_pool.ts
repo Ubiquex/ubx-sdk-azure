@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiSessionPool_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,22 +20,33 @@ export interface OpenapiSessionPool_Identity {
 }
 
 export interface OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Env {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A reference to the secret holding this value. (AI-inferred) */
   secretRef?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Resources {
+  /** The number of CPU core(s) allocated. (AI-inferred) */
   cpu?: number | Computed<number>;
+  /** The amount of memory allocated. (AI-inferred) */
   memory?: string | Computed<string>;
 }
 
 export interface OpenapiSessionPool_Properties_CustomContainerTemplate_Containers {
+  /** The argument(s) passed to the container's own command. (AI-inferred) */
   args?: string[] | Computed<string[]>;
+  /** The container entrypoint command, overriding the image's own default. (AI-inferred) */
   command?: string[] | Computed<string[]>;
+  /** Environment variable(s) set in the container. (AI-inferred) */
   env?: OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Env[] | Computed<OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Env[]>;
+  /** The container image reference to run. (AI-inferred) */
   image?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The compute resource requirement(s) (CPU, memory) for this container. (AI-inferred) */
   resources?: OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Resources | Computed<OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Resources>;
 }
 
@@ -77,7 +90,9 @@ export interface OpenapiSessionPool_Properties_DynamicPoolConfiguration {
 }
 
 export interface OpenapiSessionPool_Properties_ManagedIdentitySettings {
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: string | Computed<string>;
+  /** Hook(s) run at specific points in this container's own lifecycle. (AI-inferred) */
   lifecycle?: string | Computed<string>;
 }
 
@@ -89,7 +104,9 @@ export interface OpenapiSessionPool_Properties_ScaleConfiguration {
 }
 
 export interface OpenapiSessionPool_Properties_Secrets {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

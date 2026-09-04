@@ -2,25 +2,36 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_Properties_TrafficDetectionRule {
+  /** The observed packet rate. (AI-inferred) */
   packetsPerSecond?: number | Computed<number>;
+  /** The category of traffic this applies to. (AI-inferred) */
   trafficType?: string | Computed<string>;
 }
 
 export interface VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_Properties {
+  /** How this traffic anomaly is detected. (AI-inferred) */
   detectionMode?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The rule used to detect this traffic pattern. (AI-inferred) */
   trafficDetectionRule?: VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_Properties_TrafficDetectionRule | Computed<VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_Properties_TrafficDetectionRule>;
 }
 
 export interface VirtualnetworkDdosCustomPolicy_Properties_DetectionRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_Properties | Computed<VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface VirtualnetworkDdosCustomPolicy_Properties_FrontEndIpConfiguration {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 

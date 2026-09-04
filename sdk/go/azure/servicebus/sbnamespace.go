@@ -4,7 +4,9 @@ package servicebus
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Sbnamespace_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,14 +22,19 @@ type Sbnamespace_Identity struct {
 }
 
 type Sbnamespace_Properties_Encryption_KeyVaultProperties_Identity struct {
+	// A reference to the user-assigned managed identity used. (AI-inferred)
 	UserAssignedIdentity any
 }
 
 type Sbnamespace_Properties_Encryption_KeyVaultProperties struct {
-	Identity    any
-	KeyName     any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// The name of this shared access policy. (AI-inferred)
+	KeyName any
+	// The URI of the Key Vault holding this resource's own encryption key. (AI-inferred)
 	KeyVaultUri any
-	KeyVersion  any
+	// The specific version of the Key Vault key used. (AI-inferred)
+	KeyVersion any
 }
 
 type Sbnamespace_Properties_Encryption struct {
@@ -40,8 +47,10 @@ type Sbnamespace_Properties_Encryption struct {
 }
 
 type Sbnamespace_Properties_GeoDataReplication_Locations struct {
+	// The Azure region this configuration applies to. (AI-inferred)
 	LocationName any
-	RoleType     any
+	// Whether this replica is the primary or a secondary. (AI-inferred)
+	RoleType any
 }
 
 type Sbnamespace_Properties_GeoDataReplication struct {
@@ -57,26 +66,35 @@ type Sbnamespace_Properties_PlatformCapabilities_ConfidentialCompute struct {
 }
 
 type Sbnamespace_Properties_PlatformCapabilities struct {
+	// Whether this namespace runs on confidential computing infrastructure. (AI-inferred)
 	ConfidentialCompute any
 }
 
 type Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// A human-readable description of this resource. (AI-inferred)
 	Description any
-	Status      any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type Sbnamespace_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint                   any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type Sbnamespace_Properties_PrivateEndpointConnections struct {
-	Location   any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
@@ -96,7 +114,8 @@ type Sbnamespace_Properties struct {
 	// Identifier for Azure Insights metrics
 	MetricId any
 	// The minimum TLS version for the cluster to support, e.g. '1.3'
-	MinimumTlsVersion    any
+	MinimumTlsVersion any
+	// The platform-level capability/capabilities this namespace supports. (AI-inferred)
 	PlatformCapabilities any
 	// The number of partitions of a Service Bus namespace. This property is only applicable to Premium SKU namespaces. The default value is 1 and possible values are 1, 2 and 4
 	PremiumMessagingPartitions any

@@ -8,12 +8,16 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualwanVpnServerConfigurationPolicyGroup_Properties_P2SconnectionConfigurations:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnServerConfigurationPolicyGroup_Properties_PolicyMembers:
+    # The kind of attribute this policy rule matches on. (AI-inferred)
     attribute_type: Any = None
+    # The value this policy rule matches against. (AI-inferred)
     attribute_value: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass

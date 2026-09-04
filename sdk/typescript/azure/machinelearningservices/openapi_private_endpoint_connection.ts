@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiPrivateEndpointConnection_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -113,6 +115,7 @@ export interface OpenapiPrivateEndpointConnectionConfig {
   properties?: OpenapiPrivateEndpointConnection_Properties | Computed<OpenapiPrivateEndpointConnection_Properties>;
   /** The resource model definition representing SKU */
   sku?: OpenapiPrivateEndpointConnection_Sku | Computed<OpenapiPrivateEndpointConnection_Sku>;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
@@ -125,6 +128,7 @@ export interface OpenapiPrivateEndpointConnectionAttrs {
   properties: OpenapiPrivateEndpointConnection_Properties;
   /** The resource model definition representing SKU */
   sku: OpenapiPrivateEndpointConnection_Sku;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags: Record<string, string>;
 }
 

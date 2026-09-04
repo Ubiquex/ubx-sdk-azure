@@ -12,38 +12,59 @@ class AzureBackupJobResource_Properties_ErrorDetails_Details:
 
 @dataclasses.dataclass
 class AzureBackupJobResource_Properties_ErrorDetails_InnerError:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # A further-nested inner error, when the error chain is more than one level deep. (AI-inferred)
     embedded_inner_error: Any = None
 
 @dataclasses.dataclass
 class AzureBackupJobResource_Properties_ErrorDetails:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A more specific, nested error underlying this one. (AI-inferred)
     inner_error: Any = None
+    # Whether retrying the operation that produced this error might succeed. (AI-inferred)
     is_retryable: Any = None
+    # Whether this error was caused by the caller's own request rather than a service-side failure. (AI-inferred)
     is_user_error: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # Suggested step(s) to resolve this error. (AI-inferred)
     recommended_action: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class AzureBackupJobResource_Properties_ExtendedInfo_SourceRecoverPoint:
+    # A reference to the specific recovery point this applies to. (AI-inferred)
     recovery_point_id: Any = None
+    # The point in time this recovery point represents. (AI-inferred)
     recovery_point_time: Any = None
 
 @dataclasses.dataclass
 class AzureBackupJobResource_Properties_ExtendedInfo_SubTasks:
+    # Further detail about this operation. (AI-inferred)
     additional_details: Any = None
+    # An identifier for this specific task within the job. (AI-inferred)
     task_id: Any = None
+    # A human-readable name for this task. (AI-inferred)
     task_name: Any = None
+    # This task's own current progress. (AI-inferred)
     task_progress: Any = None
+    # This task's own current status. (AI-inferred)
     task_status: Any = None
 
 @dataclasses.dataclass
 class AzureBackupJobResource_Properties_ExtendedInfo_WarningDetails:
+    # The name of the resource this applies to. (AI-inferred)
     resource_name: Any = None
+    # A non-fatal warning encountered during this operation. (AI-inferred)
     warning: Any = None
 
 @dataclasses.dataclass
@@ -56,9 +77,11 @@ class AzureBackupJobResource_Properties_ExtendedInfo:
     data_transferred_in_bytes: Any = None
     # Destination where restore is done
     recovery_destination: Any = None
+    # A reference to the recovery point this restore operation restores from. (AI-inferred)
     source_recover_point: Any = None
     # List of Sub Tasks of the job
     sub_tasks: Any = None
+    # A reference to the recovery point this restore operation is restoring to. (AI-inferred)
     target_recover_point: Any = None
     # A List, detailing the warnings related to the job
     warning_details: Any = None
@@ -81,6 +104,7 @@ class AzureBackupJobResource_Properties:
     data_source_set_name: Any = None
     # Type of DataSource
     data_source_type: Any = None
+    # The name of the datastore this data is being copied to. (AI-inferred)
     destination_data_store_name: Any = None
     # Total run time of the job. ISO 8601 format.
     duration: Any = None
@@ -88,6 +112,7 @@ class AzureBackupJobResource_Properties:
     end_time: Any = None
     # A List, detailing the errors related to the job
     error_details: Any = None
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
     # Extended Information about the job
     extended_info: Any = None
@@ -109,6 +134,7 @@ class AzureBackupJobResource_Properties:
     rehydration_priority: Any = None
     # It indicates the sub type of operation i.e. in case of Restore it can be ALR/OLR
     restore_type: Any = None
+    # The name of the datastore this data is being copied from. (AI-inferred)
     source_data_store_name: Any = None
     # Resource Group Name of the Datasource
     source_resource_group: Any = None
@@ -127,18 +153,24 @@ class AzureBackupJobResource_Properties:
 
 @dataclasses.dataclass
 class AzureBackupJobResourceConfig:
+    # A reference to the backup or restore job this applies to. (AI-inferred)
     job_id: Any = None
+    # A reference to the backup vault this data originates from. (AI-inferred)
     source_backup_vault_id: Any = None
+    # The Azure region this data originates from. (AI-inferred)
     source_region: Any = None
     # path parameter, not part of the API's own resource representation
     location: Any = None
 
 @dataclasses.dataclass
 class AzureBackupJobResourceAttrs:
+    # A reference to the backup or restore job this applies to. (AI-inferred)
     job_id: Any = None
     # AzureBackup Job Class
     properties: Any = None
+    # A reference to the backup vault this data originates from. (AI-inferred)
     source_backup_vault_id: Any = None
+    # The Azure region this data originates from. (AI-inferred)
     source_region: Any = None
     # path parameter, not part of the API's own resource representation
     location: Any = None

@@ -4,7 +4,9 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPrivateEndpointConnection_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -114,7 +116,8 @@ type OpenapiPrivateEndpointConnectionConfig struct {
 	// Private endpoint connection properties.
 	Properties any
 	// The resource model definition representing SKU
-	Sku  any
+	Sku any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
 	Tags any
 }
 
@@ -126,7 +129,8 @@ type OpenapiPrivateEndpointConnectionAttrs struct {
 	// Private endpoint connection properties.
 	Properties any
 	// The resource model definition representing SKU
-	Sku  any
+	Sku any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
 	Tags any
 }
 

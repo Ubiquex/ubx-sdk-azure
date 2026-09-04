@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -50,7 +52,9 @@ class OpenapiWorkspace_Properties_Features:
 
 @dataclasses.dataclass
 class OpenapiWorkspace_Properties_PrivateLinkScopedResources:
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
+    # A reference to the scope this configuration applies to. (AI-inferred)
     scope_id: Any = None
 
 @dataclasses.dataclass

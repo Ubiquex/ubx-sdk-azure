@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicy_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -53,7 +55,9 @@ class FirewallpolicyFirewallPolicy_Properties_ExplicitProxy:
 
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicy_Properties_Insights_LogAnalyticsResources_Workspaces:
+    # The Azure region this applies to. (AI-inferred)
     region: Any = None
+    # The Log Analytics workspace ID Traffic Analytics results are sent to. (AI-inferred)
     workspace_id: Any = None
 
 @dataclasses.dataclass
@@ -74,18 +78,28 @@ class FirewallpolicyFirewallPolicy_Properties_Insights:
 
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_BypassTrafficSettings:
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
+    # The destination IP address(es) or range(s) this rule matches. (AI-inferred)
     destination_addresses: Any = None
+    # The destination IP group(s) this rule matches. (AI-inferred)
     destination_ip_groups: Any = None
+    # The destination port(s) this rule matches. (AI-inferred)
     destination_ports: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
     protocol: Any = None
+    # The source IP address(es) or range(s) this rule matches. (AI-inferred)
     source_addresses: Any = None
+    # The source IP group(s) this rule matches. (AI-inferred)
     source_ip_groups: Any = None
 
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_SignatureOverrides:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # Whether this feature is set to alert-only or alert-and-deny. (AI-inferred)
     mode: Any = None
 
 @dataclasses.dataclass

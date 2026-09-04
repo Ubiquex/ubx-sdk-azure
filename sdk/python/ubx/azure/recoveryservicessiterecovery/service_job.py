@@ -15,30 +15,46 @@ class ServiceJob_Properties_CustomDetails:
 
 @dataclasses.dataclass
 class ServiceJob_Properties_Errors_ProviderErrorDetails:
+    # A machine-readable error code. (AI-inferred)
     error_code: Any = None
+    # A unique identifier for this specific error occurrence. (AI-inferred)
     error_id: Any = None
+    # A human-readable description of the error. (AI-inferred)
     error_message: Any = None
+    # Likely cause(s) of this issue. (AI-inferred)
     possible_causes: Any = None
+    # Guidance for resolving this issue. (AI-inferred)
     recommended_action: Any = None
 
 @dataclasses.dataclass
 class ServiceJob_Properties_Errors_ServiceErrorDetails:
+    # A unique identifier for this activity, for correlation and tracing. (AI-inferred)
     activity_id: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # Likely cause(s) of this issue. (AI-inferred)
     possible_causes: Any = None
+    # Guidance for resolving this issue. (AI-inferred)
     recommended_action: Any = None
 
 @dataclasses.dataclass
 class ServiceJob_Properties_Errors:
+    # When this resource was created. (AI-inferred)
     creation_time: Any = None
+    # How severe this error is. (AI-inferred)
     error_level: Any = None
+    # Detail about this error, as reported by the underlying replication provider. (AI-inferred)
     provider_error_details: Any = None
+    # Detail about this error, as reported by the Site Recovery service. (AI-inferred)
     service_error_details: Any = None
+    # A unique identifier for this task. (AI-inferred)
     task_id: Any = None
 
 @dataclasses.dataclass
 class ServiceJob_Properties_Tasks_CustomDetails:
+    # The specific subtype this resource is, distinguishing it within its own broader category. (AI-inferred)
     instance_type: Any = None
 
 @dataclasses.dataclass
@@ -47,22 +63,36 @@ class ServiceJob_Properties_Tasks_GroupTaskCustomDetails_ChildTasks:
 
 @dataclasses.dataclass
 class ServiceJob_Properties_Tasks_GroupTaskCustomDetails:
+    # The subordinate task(s) making up this operation. (AI-inferred)
     child_tasks: Any = None
+    # The specific subtype this resource is, distinguishing it within its own broader category. (AI-inferred)
     instance_type: Any = None
 
 @dataclasses.dataclass
 class ServiceJob_Properties_Tasks:
+    # The action(s) permitted on this task in its own current state. (AI-inferred)
     allowed_actions: Any = None
+    # Additional, type-specific detail about this task. (AI-inferred)
     custom_details: Any = None
+    # When this event or window ended. (AI-inferred)
     end_time: Any = None
+    # The error(s) encountered. (AI-inferred)
     errors: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     friendly_name: Any = None
+    # Additional detail specific to this recovery plan group task. (AI-inferred)
     group_task_custom_details: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # When this event or window started. (AI-inferred)
     start_time: Any = None
+    # The current status of this resource. (AI-inferred)
     state: Any = None
+    # A human-readable description of this resource's own current state. (AI-inferred)
     state_description: Any = None
+    # A unique identifier for this task. (AI-inferred)
     task_id: Any = None
+    # The category of task this represents. (AI-inferred)
     task_type: Any = None
 
 @dataclasses.dataclass

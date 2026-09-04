@@ -2,13 +2,18 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiConfidentialLedger_Properties_AadBasedSecurityPrincipals {
+  /** The ledger role (e.g. Administrator, Contributor, Reader) granted to this Microsoft Entra ID principal. (AI-inferred) */
   ledgerRoleName?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
 }
 
 export interface OpenapiConfidentialLedger_Properties_CertBasedSecurityPrincipals {
+  /** The client certificate identifying this security principal. (AI-inferred) */
   cert?: string | Computed<string>;
+  /** The ledger role (e.g. Administrator, Contributor, Reader) granted to this certificate-based principal. (AI-inferred) */
   ledgerRoleName?: string | Computed<string>;
 }
 

@@ -23,25 +23,39 @@ type HciExtension_Properties_ExtensionParameters struct {
 }
 
 type HciExtension_Properties_PerNodeExtensionDetails_InstanceView_Status struct {
-	Code          any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// A human-readable summary of this resource's own current status. (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of this event. (AI-inferred)
+	Level any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// The time this event occurred. (AI-inferred)
+	Time any
 }
 
 type HciExtension_Properties_PerNodeExtensionDetails_InstanceView struct {
-	Name               any
-	Status             any
-	Type               any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The version of the extension handler processing this resource. (AI-inferred)
 	TypeHandlerVersion any
 }
 
 type HciExtension_Properties_PerNodeExtensionDetails struct {
-	Extension          any
-	InstanceView       any
-	Name               any
-	State              any
+	// A reference to the cluster extension this applies to. (AI-inferred)
+	Extension any
+	// The current runtime status of this resource. (AI-inferred)
+	InstanceView any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The current lifecycle state of this resource. (AI-inferred)
+	State any
+	// The version of the extension handler processing this resource. (AI-inferred)
 	TypeHandlerVersion any
 }
 

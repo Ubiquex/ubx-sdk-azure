@@ -4,16 +4,27 @@ package datamigration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlmigrationDatabaseMigrationSqlDb_Properties_MigrationStatusDetails_ListOfCopyProgressDetails struct {
-	CopyDuration       any
-	CopyStart          any
-	CopyThroughput     any
-	DataRead           any
-	DataWritten        any
-	ParallelCopyType   any
-	RowsCopied         any
-	RowsRead           any
-	Status             any
-	TableName          any
+	// How long this copy operation took. (AI-inferred)
+	CopyDuration any
+	// When this copy operation started. (AI-inferred)
+	CopyStart any
+	// The observed data transfer rate for this copy operation. (AI-inferred)
+	CopyThroughput any
+	// The amount of data read so far. (AI-inferred)
+	DataRead any
+	// The amount of data written so far. (AI-inferred)
+	DataWritten any
+	// How data is partitioned for parallel copying during migration. (AI-inferred)
+	ParallelCopyType any
+	// The number of rows copied so far. (AI-inferred)
+	RowsCopied any
+	// The number of rows read so far. (AI-inferred)
+	RowsRead any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The name of this table. (AI-inferred)
+	TableName any
+	// The number of parallel copy operation(s) actually used. (AI-inferred)
 	UsedParallelCopies any
 }
 

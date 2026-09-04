@@ -19,13 +19,21 @@ class OpenapiBlobContainer_Properties_ImmutabilityPolicy_Properties:
 
 @dataclasses.dataclass
 class OpenapiBlobContainer_Properties_ImmutabilityPolicy_UpdateHistory:
+    # Whether new blocks can still be appended to an append blob under legal hold or an active immutability policy. (AI-inferred)
     allow_protected_append_writes: Any = None
+    # Whether new blocks can still be appended to any protected blob type under legal hold or an active immutability policy. (AI-inferred)
     allow_protected_append_writes_all: Any = None
+    # How many days after creation a blob remains immutable under this policy. (AI-inferred)
     immutability_period_since_creation_in_days: Any = None
+    # The Microsoft Entra ID object identifier this permission applies to. (AI-inferred)
     object_identifier: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
+    # When this event occurred. (AI-inferred)
     timestamp: Any = None
+    # The update applied. (AI-inferred)
     update: Any = None
+    # The User Principal Name this permission applies to. (AI-inferred)
     upn: Any = None
 
 @dataclasses.dataclass
@@ -55,10 +63,15 @@ class OpenapiBlobContainer_Properties_LegalHold_ProtectedAppendWritesHistory:
 
 @dataclasses.dataclass
 class OpenapiBlobContainer_Properties_LegalHold_Tags:
+    # The Microsoft Entra ID object identifier this permission applies to. (AI-inferred)
     object_identifier: Any = None
+    # A label attached to this resource. (AI-inferred)
     tag: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
+    # When this event occurred. (AI-inferred)
     timestamp: Any = None
+    # The User Principal Name this permission applies to. (AI-inferred)
     upn: Any = None
 
 @dataclasses.dataclass

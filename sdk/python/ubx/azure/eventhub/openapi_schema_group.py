@@ -14,7 +14,9 @@ class OpenapiSchemaGroup_Properties:
     e_tag: Any = None
     # dictionary object for SchemaGroup group properties
     group_properties: Any = None
+    # How strictly a new schema version must be compatible with previous ones, e.g. `Forward` or `Backward`. (AI-inferred)
     schema_compatibility: Any = None
+    # The serialization format this schema is expressed in, e.g. Avro. (AI-inferred)
     schema_type: Any = None
     # Exact time the Schema Group was updated
     updated_at_utc: Any = None
@@ -30,12 +32,14 @@ _OpenapiSchemaGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiSchemaGroupConfig:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiSchemaGroupAttrs:
     # The geo-location where the resource lives
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 OpenapiSchemaGroup = ubx.ResourceBinding(

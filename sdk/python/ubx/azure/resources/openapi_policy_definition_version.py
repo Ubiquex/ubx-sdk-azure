@@ -26,17 +26,26 @@ class OpenapiPolicyDefinitionVersion_Properties_ExternalEvaluationEnforcementSet
 
 @dataclasses.dataclass
 class OpenapiPolicyDefinitionVersion_Properties_Parameters_Metadata:
+    # Whether the identity performing this deployment is automatically granted permissions needed by its own template resources. (AI-inferred)
     assign_permissions: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # A UI hint identifying a well-known Azure resource type this parameter's own value should be picked from. (AI-inferred)
     strong_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiPolicyDefinitionVersion_Properties_Parameters:
+    # The set of values permitted for this parameter. (AI-inferred)
     allowed_values: Any = None
+    # The value used when this parameter is left unset. (AI-inferred)
     default_value: Any = None
+    # Additional, free-form metadata associated with this resource. (AI-inferred)
     metadata: Any = None
+    # The JSON schema defining this parameter's own permitted value(s). (AI-inferred)
     schema: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

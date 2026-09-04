@@ -4,7 +4,9 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiComputeResource_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,7 +22,9 @@ type OpenapiComputeResource_Identity struct {
 }
 
 type OpenapiComputeResource_Properties_ProvisioningErrors_Error_AdditionalInfo struct {
+	// Additional detail about this result. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
@@ -28,14 +32,20 @@ type OpenapiComputeResource_Properties_ProvisioningErrors_Error_Details struct {
 }
 
 type OpenapiComputeResource_Properties_ProvisioningErrors_Error struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type OpenapiComputeResource_Properties_ProvisioningErrors struct {
+	// Detail about an error that occurred. (AI-inferred)
 	Error any
 }
 

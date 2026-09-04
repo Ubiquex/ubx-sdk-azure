@@ -46,7 +46,9 @@ export interface NetworkwatcherConnectionAnalyzer_Properties_OutputSettings {
 }
 
 export interface NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettings_HttpConfiguration_Headers {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

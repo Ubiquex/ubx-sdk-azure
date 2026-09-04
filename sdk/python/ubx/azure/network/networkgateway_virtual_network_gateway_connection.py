@@ -17,29 +17,44 @@ class NetworkgatewayVirtualNetworkGatewayConnection_Properties_CertificateAuthen
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_EgressNatRules:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_GatewayCustomBgpIpAddresses:
+    # A caller-chosen BGP peering IP address, instead of Azure's own auto-allocated default. (AI-inferred)
     custom_bgp_ip_address: Any = None
+    # A reference to the IP configuration this applies to. (AI-inferred)
     ip_configuration_id: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_IpsecPolicies:
+    # The Diffie-Hellman group used for IKE Phase 1 key exchange, e.g. `DHGroup14` or `DHGroup24`. (AI-inferred)
     dh_group: Any = None
+    # The encryption algorithm used for IKE Phase 1 (establishing the secure channel itself), e.g. `AES256`. (AI-inferred)
     ike_encryption: Any = None
+    # The integrity (hashing) algorithm used for IKE Phase 1, e.g. `SHA384`. (AI-inferred)
     ike_integrity: Any = None
+    # The encryption algorithm used for IKE Phase 2 (the actual IPsec data tunnel), e.g. `AES256`. (AI-inferred)
     ipsec_encryption: Any = None
+    # The integrity (hashing) algorithm used for IKE Phase 2, e.g. `SHA256`. (AI-inferred)
     ipsec_integrity: Any = None
+    # The Perfect Forward Secrecy group used when establishing a new IKE Phase 2 security association, or `None` to disable PFS. (AI-inferred)
     pfs_group: Any = None
+    # The IPsec security association's own data-volume lifetime, in kilobytes -- the tunnel rekeys once either this or `sa_life_time_seconds` is reached. (AI-inferred)
     sa_data_size_kilobytes: Any = None
+    # The IPsec security association's own time-based lifetime, in seconds -- the tunnel rekeys once either this or `sa_data_size_kilobytes` is reached. (AI-inferred)
     sa_life_time_seconds: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_LocalNetworkGateway2_Properties_BgpSettings_BgpPeeringAddresses:
+    # Caller-chosen BGP peering IP addresses to use for this connection, instead of Azure's own auto-allocated defaults. (AI-inferred)
     custom_bgp_ip_addresses: Any = None
+    # Output only. The BGP peering IP address(es) Azure auto-allocated for this connection. (AI-inferred)
     default_bgp_ip_addresses: Any = None
+    # A reference to the IP configuration this applies to. (AI-inferred)
     ipconfiguration_id: Any = None
+    # Output only. The public IP address(es) of this VPN gateway's own tunnel endpoint(s). (AI-inferred)
     tunnel_ip_addresses: Any = None
 
 @dataclasses.dataclass
@@ -55,8 +70,11 @@ class NetworkgatewayVirtualNetworkGatewayConnection_Properties_LocalNetworkGatew
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_LocalNetworkGateway2_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations:
+    # Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
     allocated_address_prefixes: Any = None
+    # How many IP addresses to allocate from this pool. (AI-inferred)
     number_of_ip_addresses: Any = None
+    # A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
     pool: Any = None
 
 @dataclasses.dataclass
@@ -97,8 +115,11 @@ class NetworkgatewayVirtualNetworkGatewayConnection_Properties_RoutingConfigurat
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes:
+    # The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
     address_prefixes: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
     next_hop_ip_address: Any = None
 
 @dataclasses.dataclass
@@ -132,20 +153,29 @@ class NetworkgatewayVirtualNetworkGatewayConnection_Properties_RoutingConfigurat
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_TrafficSelectorPolicies:
+    # The local (on-premises) IP address range(s) this traffic selector matches. (AI-inferred)
     local_address_ranges: Any = None
+    # The remote IP address range(s) this traffic selector matches. (AI-inferred)
     remote_address_ranges: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_TunnelConnectionStatus:
+    # The current connectivity status of this connection. (AI-inferred)
     connection_status: Any = None
+    # The total number of bytes transferred outbound. (AI-inferred)
     egress_bytes_transferred: Any = None
+    # The total number of bytes transferred inbound. (AI-inferred)
     ingress_bytes_transferred: Any = None
+    # When this connection was last successfully established, in UTC. (AI-inferred)
     last_connection_established_utc_time: Any = None
+    # A reference to the VPN tunnel this applies to. (AI-inferred)
     tunnel: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_TunnelProperties:
+    # The IP address used for BGP peering. (AI-inferred)
     bgp_peering_address: Any = None
+    # The IP address of this VPN gateway's own tunnel endpoint. (AI-inferred)
     tunnel_ip_address: Any = None
 
 @dataclasses.dataclass
@@ -157,7 +187,9 @@ class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGat
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -180,39 +212,58 @@ class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGat
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_AutoScaleConfiguration:
+    # The permitted lower and upper bound for this value. (AI-inferred)
     bounds: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_IpConfigurations_Properties:
+    # The private (internal) IP address assigned to this IP configuration. (AI-inferred)
     private_ipaddress: Any = None
+    # Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
     private_ipallocation_method: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
     public_ipaddress: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_IpConfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_NatRules_Properties_ExternalMappings:
+    # The virtual network's own address range(s), in CIDR notation. (AI-inferred)
     address_space: Any = None
+    # A range of ports, e.g. `1000-2000`. (AI-inferred)
     port_range: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_NatRules_Properties:
+    # Address mapping(s) this configuration exposes to external systems. (AI-inferred)
     external_mappings: Any = None
+    # Address mapping(s) used internally by this configuration. (AI-inferred)
     internal_mappings: Any = None
+    # A reference to the IP configuration this applies to. (AI-inferred)
     ip_configuration_id: Any = None
+    # The operating mode this configuration uses. (AI-inferred)
     mode: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_NatRules:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
@@ -235,62 +286,92 @@ class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGat
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VirtualNetworkGatewayPolicyGroups_Properties_PolicyMembers:
+    # The kind of attribute this policy rule matches on. (AI-inferred)
     attribute_type: Any = None
+    # The value this policy rule matches against. (AI-inferred)
     attribute_value: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VirtualNetworkGatewayPolicyGroups_Properties:
+    # Whether this is the default configuration used when none is explicitly specified. (AI-inferred)
     is_default: Any = None
+    # The member(s) this policy group applies to. (AI-inferred)
     policy_members: Any = None
+    # The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
     priority: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # Point-to-site client connection configuration(s) available on this gateway. (AI-inferred)
     vng_client_connection_configurations: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VirtualNetworkGatewayPolicyGroups:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_RadiusServers:
+    # The IP address of the RADIUS authentication server. (AI-inferred)
     radius_server_address: Any = None
+    # The relative priority of this RADIUS server among several configured. (AI-inferred)
     radius_server_score: Any = None
+    # The shared secret used to authenticate to this RADIUS server. (AI-inferred)
     radius_server_secret: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VngClientConnectionConfigurations_Properties:
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # Point-to-site configuration policy group(s) this virtual network gateway offers. (AI-inferred)
     virtual_network_gateway_policy_groups: Any = None
+    # The IP address pool point-to-site VPN clients are assigned addresses from. (AI-inferred)
     vpn_client_address_pool: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VngClientConnectionConfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VpnClientRevokedCertificates_Properties:
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A cryptographic thumbprint of this certificate. (AI-inferred)
     thumbprint: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VpnClientRevokedCertificates:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VpnClientRootCertificates_Properties:
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The base64-encoded public certificate data used to authenticate a point-to-site VPN client. (AI-inferred)
     public_cert_data: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VpnClientRootCertificates:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

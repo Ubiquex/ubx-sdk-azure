@@ -40,7 +40,8 @@ type OpenapiSiteExtensionInfo_Properties struct {
 	PublishedDateTime any
 	// Summary description.
 	Summary any
-	Title   any
+	// A human-readable title for this item. (AI-inferred)
+	Title any
 	// Version information.
 	Version any
 }

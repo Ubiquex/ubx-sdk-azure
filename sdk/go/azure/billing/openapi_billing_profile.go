@@ -4,49 +4,80 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingProfile_Properties_BillTo struct {
-	AddressLine1   any
-	AddressLine2   any
-	AddressLine3   any
-	City           any
-	CompanyName    any
-	Country        any
-	District       any
-	Email          any
-	FirstName      any
+	// The first line of this postal address. (AI-inferred)
+	AddressLine1 any
+	// The second line of this postal address. (AI-inferred)
+	AddressLine2 any
+	// The third line of this postal address. (AI-inferred)
+	AddressLine3 any
+	// The city component of this postal address. (AI-inferred)
+	City any
+	// The name of this company. (AI-inferred)
+	CompanyName any
+	// The country component of this postal address. (AI-inferred)
+	Country any
+	// The district or region component of this postal address. (AI-inferred)
+	District any
+	// An email address associated with this resource. (AI-inferred)
+	Email any
+	// The given name of this contact. (AI-inferred)
+	FirstName any
+	// Whether this address passed validation. (AI-inferred)
 	IsValidAddress any
-	LastName       any
-	MiddleName     any
-	PhoneNumber    any
-	PostalCode     any
-	Region         any
+	// The family name of this contact. (AI-inferred)
+	LastName any
+	// The middle name of this contact. (AI-inferred)
+	MiddleName any
+	// A phone number associated with this resource. (AI-inferred)
+	PhoneNumber any
+	// The postal code component of this address. (AI-inferred)
+	PostalCode any
+	// The billing region this applies to. (AI-inferred)
+	Region any
 }
 
 type OpenapiBillingProfile_Properties_CurrentPaymentTerm struct {
-	EndDate   any
+	// When this window or period ends. (AI-inferred)
+	EndDate any
+	// Whether this is the default value used when none is explicitly specified. (AI-inferred)
 	IsDefault any
+	// When this window or period starts. (AI-inferred)
 	StartDate any
-	Term      any
+	// The commitment term this offer or agreement runs for. (AI-inferred)
+	Term any
 }
 
 type OpenapiBillingProfile_Properties_EnabledAzurePlans struct {
-	ProductId      any
+	// A reference to the product this applies to. (AI-inferred)
+	ProductId any
+	// A human-readable description of this SKU. (AI-inferred)
 	SkuDescription any
-	SkuId          any
+	// A reference to the SKU this applies to. (AI-inferred)
+	SkuId any
 }
 
 type OpenapiBillingProfile_Properties_IndirectRelationshipInfo struct {
+	// A reference to the billing account this applies to. (AI-inferred)
 	BillingAccountName any
+	// A reference to the billing profile this applies to. (AI-inferred)
 	BillingProfileName any
-	DisplayName        any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
 }
 
 type OpenapiBillingProfile_Properties_SpendingLimitDetails struct {
-	Amount    any
-	Currency  any
-	EndDate   any
+	// A monetary amount. (AI-inferred)
+	Amount any
+	// The currency amounts are expressed in. (AI-inferred)
+	Currency any
+	// When this window or period ends. (AI-inferred)
+	EndDate any
+	// When this window or period starts. (AI-inferred)
 	StartDate any
-	Status    any
-	Type      any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiBillingProfile_Properties struct {

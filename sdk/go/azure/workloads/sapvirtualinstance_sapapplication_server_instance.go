@@ -21,12 +21,16 @@ type SapvirtualinstanceSapapplicationServerInstance_Properties_Errors struct {
 }
 
 type SapvirtualinstanceSapapplicationServerInstance_Properties_LoadBalancerDetails struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type SapvirtualinstanceSapapplicationServerInstance_Properties_VmDetails struct {
-	StorageDetails   any
-	Type             any
+	// Detail about the storage volume(s) attached to this SAP application server instance's own virtual machine. (AI-inferred)
+	StorageDetails any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// A reference to the virtual machine backing this SAP application server instance. (AI-inferred)
 	VirtualMachineId any
 }
 

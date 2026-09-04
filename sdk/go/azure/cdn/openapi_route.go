@@ -20,7 +20,9 @@ type OpenapiRoute_Properties_CacheConfiguration struct {
 }
 
 type OpenapiRoute_Properties_CustomDomains struct {
-	Id       any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// Whether this custom domain is currently active and serving traffic. (AI-inferred)
 	IsActive any
 }
 
@@ -33,7 +35,8 @@ type OpenapiRoute_Properties struct {
 	// Caching settings for a caching-type route. To disable caching, do not provide a cacheConfiguration object.
 	CacheConfiguration any
 	// Domains referenced by this endpoint.
-	CustomDomains    any
+	CustomDomains any
+	// The current deployment status of this configuration. (AI-inferred)
 	DeploymentStatus any
 	// Whether to enable use of this rule. Permitted values are 'Enabled' or 'Disabled'
 	EnabledState any

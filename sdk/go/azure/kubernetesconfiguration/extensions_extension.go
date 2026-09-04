@@ -26,7 +26,9 @@ type ExtensionsExtension_Plan struct {
 }
 
 type ExtensionsExtension_Properties_ErrorInfo_AdditionalInfo struct {
+	// Additional detail about this result. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
@@ -34,11 +36,16 @@ type ExtensionsExtension_Properties_ErrorInfo_Details_Details struct {
 }
 
 type ExtensionsExtension_Properties_ErrorInfo_Details struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type ExtensionsExtension_Properties_ErrorInfo struct {
@@ -72,11 +79,16 @@ type ExtensionsExtension_Properties_Scope struct {
 }
 
 type ExtensionsExtension_Properties_Statuses struct {
-	Code          any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// A human-readable summary of this resource's own current status. (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of this event. (AI-inferred)
+	Level any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// When this event occurred. (AI-inferred)
+	Time any
 }
 
 type ExtensionsExtension_Properties struct {

@@ -75,6 +75,7 @@ const SubscriptionfeatureregistrationSubscriptionFeatureRegistration_PropertiesF
 };
 
 export interface SubscriptionfeatureregistrationSubscriptionFeatureRegistrationConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Properties | Computed<SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Properties>;
 }
 
@@ -83,6 +84,7 @@ export interface SubscriptionfeatureregistrationSubscriptionFeatureRegistrationA
   id: string;
   /** Azure resource name. */
   name: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Properties;
   /** Azure resource type. */
   type: string;

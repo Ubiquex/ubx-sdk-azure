@@ -12,6 +12,7 @@ class VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent_IpTraffic:
     destination_ips: Any = None
     # The destination ports of the traffic.
     destination_ports: Any = None
+    # The network protocol(s) this applies to. (AI-inferred)
     protocols: Any = None
     # List of source IP addresses of the traffic..
     source_ips: Any = None
@@ -20,6 +21,7 @@ class VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent_IpTraffic:
 
 @dataclasses.dataclass
 class VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent:
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
     # Destination resource id of the intent.
     destination_resource_id: Any = None
@@ -30,8 +32,11 @@ class VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent:
 
 @dataclasses.dataclass
 class VirtualnetworkReachabilityAnalysisRun_Properties:
+    # The outcome of analyzing this traffic pattern. (AI-inferred)
     analysis_result: Any = None
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
+    # A human-readable description of the error. (AI-inferred)
     error_message: Any = None
     # Intent information.
     intent_content: Any = None

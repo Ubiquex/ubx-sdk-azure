@@ -10,17 +10,25 @@ type OpenapiWorkspaceConnectionPropertiesV2BasicResource_Properties struct {
 	Category any
 	// A type definition that refers the id to an Azure Resource Manager resource.
 	CreatedByWorkspaceArmId any
-	Error                   any
-	ExpiryTime              any
+	// Detail about an error that occurred. (AI-inferred)
+	Error any
+	// When this resource or grant expires. (AI-inferred)
+	ExpiryTime any
 	// Group based on connection category
-	Group         any
+	Group any
+	// Whether this resource is shared with every project, rather than a specific subset. (AI-inferred)
 	IsSharedToAll any
 	// Store user metadata for this connection
-	Metadata                    any
-	PeRequirement               any
-	PeStatus                    any
-	SharedUserList              any
-	Target                      any
+	Metadata any
+	// Whether a private endpoint connection is required, optional, or not applicable for this resource. (AI-inferred)
+	PeRequirement any
+	// The current status of this resource's own private endpoint connection(s). (AI-inferred)
+	PeStatus any
+	// The user(s) this resource is shared with. (AI-inferred)
+	SharedUserList any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
+	// Whether the workspace's own managed identity is used to authenticate, rather than a caller-supplied credential. (AI-inferred)
 	UseWorkspaceManagedIdentity any
 }
 
@@ -41,10 +49,12 @@ var OpenapiWorkspaceConnectionPropertiesV2BasicResource_PropertiesFields = ubx.F
 }
 
 type OpenapiWorkspaceConnectionPropertiesV2BasicResourceConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type OpenapiWorkspaceConnectionPropertiesV2BasicResourceAttrs struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

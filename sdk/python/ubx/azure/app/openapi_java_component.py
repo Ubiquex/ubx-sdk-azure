@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiJavaComponent_Properties_Configurations:
+    # The name of the property this applies to. (AI-inferred)
     property_name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -20,7 +22,9 @@ class OpenapiJavaComponent_Properties_Scale:
 
 @dataclasses.dataclass
 class OpenapiJavaComponent_Properties_ServiceBinds:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A reference to the connected service this applies to. (AI-inferred)
     service_id: Any = None
 
 @dataclasses.dataclass

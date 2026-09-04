@@ -33,11 +33,14 @@ export interface CloudngfwPreRulesResource_Properties_Source {
 }
 
 export interface CloudngfwPreRulesResource_Properties_Tags {
+  /** The key of this attribute or label. (AI-inferred) */
   key?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface CloudngfwPreRulesResource_Properties {
+  /** The action taken when this rule matches. (AI-inferred) */
   actionType?: string | Computed<string>;
   /** array of rule applications */
   applications?: string[] | Computed<string[]>;
@@ -45,6 +48,7 @@ export interface CloudngfwPreRulesResource_Properties {
   auditComment?: string | Computed<string>;
   /** URL/EDL to match */
   category?: CloudngfwPreRulesResource_Properties_Category | Computed<CloudngfwPreRulesResource_Properties_Category>;
+  /** The category of TLS decryption rule this represents. (AI-inferred) */
   decryptionRuleType?: string | Computed<string>;
   /** rule description */
   description?: string | Computed<string>;
@@ -60,6 +64,7 @@ export interface CloudngfwPreRulesResource_Properties {
   negateDestination?: string | Computed<string>;
   /** Boolean Enum */
   negateSource?: string | Computed<string>;
+  /** The relative priority of this item. (AI-inferred) */
   priority?: number | Computed<number>;
   /** any, application-default, TCP:number, UDP:number */
   protocol?: string | Computed<string>;

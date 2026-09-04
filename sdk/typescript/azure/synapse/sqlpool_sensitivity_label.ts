@@ -14,6 +14,7 @@ export interface SqlpoolSensitivityLabel_Properties {
   labelId?: string | Computed<string>;
   /** The label name. */
   labelName?: string | Computed<string>;
+  /** The sensitivity level of this label, from `Low` to `Critical`. (AI-inferred) */
   rank?: string | Computed<string>;
   /** The schema name. */
   schemaName?: string | Computed<string>;

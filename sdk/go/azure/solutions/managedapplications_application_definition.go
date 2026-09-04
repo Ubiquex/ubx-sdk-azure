@@ -4,13 +4,18 @@ package solutions
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedapplicationsApplicationDefinition_Properties_Artifacts struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
-	Uri  any
+	// A resource URI. (AI-inferred)
+	Uri any
 }
 
 type ManagedapplicationsApplicationDefinition_Properties_Authorizations struct {
-	PrincipalId      any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
+	PrincipalId any
+	// A reference to the role definition granted to the publisher for managing this application. (AI-inferred)
 	RoleDefinitionId any
 }
 
@@ -32,6 +37,7 @@ type ManagedapplicationsApplicationDefinition_Properties_ManagementPolicy struct
 }
 
 type ManagedapplicationsApplicationDefinition_Properties_NotificationPolicy_NotificationEndpoints struct {
+	// A resource URI. (AI-inferred)
 	Uri any
 }
 
@@ -41,8 +47,11 @@ type ManagedapplicationsApplicationDefinition_Properties_NotificationPolicy stru
 }
 
 type ManagedapplicationsApplicationDefinition_Properties_Policies struct {
-	Name               any
-	Parameters         any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The parameter(s) making up this configuration. (AI-inferred)
+	Parameters any
+	// A reference to the policy definition this applies to. (AI-inferred)
 	PolicyDefinitionId any
 }
 

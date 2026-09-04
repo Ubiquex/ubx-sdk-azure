@@ -4,19 +4,26 @@ package cost
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementOpenapiView_Properties_Kpis struct {
+	// Whether this feature is turned on. (AI-inferred)
 	Enabled any
-	Id      any
-	Type    any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ManagementOpenapiView_Properties_Pivots struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type ManagementOpenapiView_Properties_Query_DataSet_Aggregation struct {
+	// The aggregation function applied to this value. (AI-inferred)
 	Function any
-	Name     any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type ManagementOpenapiView_Properties_Query_DataSet_Configuration struct {
@@ -48,8 +55,10 @@ type ManagementOpenapiView_Properties_Query_DataSet_Filter struct {
 }
 
 type ManagementOpenapiView_Properties_Query_DataSet_Sorting struct {
+	// Whether this schedule is triggered by an increase or decrease. (AI-inferred)
 	Direction any
-	Name      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type ManagementOpenapiView_Properties_Query_DataSet struct {

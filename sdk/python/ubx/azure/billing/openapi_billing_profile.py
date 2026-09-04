@@ -8,48 +8,79 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiBillingProfile_Properties_BillTo:
+    # The first line of this postal address. (AI-inferred)
     address_line1: Any = None
+    # The second line of this postal address. (AI-inferred)
     address_line2: Any = None
+    # The third line of this postal address. (AI-inferred)
     address_line3: Any = None
+    # The city component of this postal address. (AI-inferred)
     city: Any = None
+    # The name of this company. (AI-inferred)
     company_name: Any = None
+    # The country component of this postal address. (AI-inferred)
     country: Any = None
+    # The district or region component of this postal address. (AI-inferred)
     district: Any = None
+    # An email address associated with this resource. (AI-inferred)
     email: Any = None
+    # The given name of this contact. (AI-inferred)
     first_name: Any = None
+    # Whether this address passed validation. (AI-inferred)
     is_valid_address: Any = None
+    # The family name of this contact. (AI-inferred)
     last_name: Any = None
+    # The middle name of this contact. (AI-inferred)
     middle_name: Any = None
+    # A phone number associated with this resource. (AI-inferred)
     phone_number: Any = None
+    # The postal code component of this address. (AI-inferred)
     postal_code: Any = None
+    # The billing region this applies to. (AI-inferred)
     region: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingProfile_Properties_CurrentPaymentTerm:
+    # When this window or period ends. (AI-inferred)
     end_date: Any = None
+    # Whether this is the default value used when none is explicitly specified. (AI-inferred)
     is_default: Any = None
+    # When this window or period starts. (AI-inferred)
     start_date: Any = None
+    # The commitment term this offer or agreement runs for. (AI-inferred)
     term: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingProfile_Properties_EnabledAzurePlans:
+    # A reference to the product this applies to. (AI-inferred)
     product_id: Any = None
+    # A human-readable description of this SKU. (AI-inferred)
     sku_description: Any = None
+    # A reference to the SKU this applies to. (AI-inferred)
     sku_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingProfile_Properties_IndirectRelationshipInfo:
+    # A reference to the billing account this applies to. (AI-inferred)
     billing_account_name: Any = None
+    # A reference to the billing profile this applies to. (AI-inferred)
     billing_profile_name: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiBillingProfile_Properties_SpendingLimitDetails:
+    # A monetary amount. (AI-inferred)
     amount: Any = None
+    # The currency amounts are expressed in. (AI-inferred)
     currency: Any = None
+    # When this window or period ends. (AI-inferred)
     end_date: Any = None
+    # When this window or period starts. (AI-inferred)
     start_date: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

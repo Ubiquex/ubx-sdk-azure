@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualnetworkNetworkVirtualAppliance_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,7 +20,9 @@ export interface VirtualnetworkNetworkVirtualAppliance_Identity {
 }
 
 export interface VirtualnetworkNetworkVirtualAppliance_Properties_AdditionalNics {
+  /** Whether this resource has a public IP address assigned. (AI-inferred) */
   hasPublicIp?: boolean | Computed<boolean>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -30,6 +34,7 @@ export interface VirtualnetworkNetworkVirtualAppliance_Properties_Delegation {
 }
 
 export interface VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRules {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
@@ -43,30 +48,40 @@ export interface VirtualnetworkNetworkVirtualAppliance_Properties_MigrationStatu
 }
 
 export interface VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties {
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
 }
 
 export interface VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties | Computed<VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties>;
 }
 
 export interface VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties {
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations[] | Computed<VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations[]>;
 }
 
 export interface VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties | Computed<VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile {
+  /** The network interface configuration(s) applied to instance(s) in this set. (AI-inferred) */
   networkInterfaceConfigurations?: VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations[] | Computed<VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations[]>;
 }
 
 export interface VirtualnetworkNetworkVirtualAppliance_Properties_NvaInterfaceConfigurations {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRules | Computed<VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRules>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string[] | Computed<string[]>;
 }
 
@@ -89,12 +104,19 @@ export interface VirtualnetworkNetworkVirtualAppliance_Properties_PartnerManaged
 }
 
 export interface VirtualnetworkNetworkVirtualAppliance_Properties_VirtualApplianceNics {
+  /** The name of this specific instance. (AI-inferred) */
   instanceName?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** The private (internal) IPv4 address assigned to this resource. (AI-inferred) */
   privateIpAddress?: string | Computed<string>;
+  /** The private (internal) IPv6 address assigned to this resource. (AI-inferred) */
   privateIpAddressV6?: string | Computed<string>;
+  /** The public IPv4 address assigned to this resource. (AI-inferred) */
   publicIpAddress?: string | Computed<string>;
+  /** The public IPv6 address assigned to this resource. (AI-inferred) */
   publicIpAddressV6?: string | Computed<string>;
 }
 

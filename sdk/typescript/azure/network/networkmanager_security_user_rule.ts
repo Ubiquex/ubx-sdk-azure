@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface NetworkmanagerSecurityUserRule_Properties_Destinations {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** Whether this address prefix is an IP prefix or a reference to another resource. (AI-inferred) */
   addressPrefixType?: string | Computed<string>;
 }
 

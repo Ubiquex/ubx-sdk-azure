@@ -4,59 +4,100 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingAccount_Properties_EnrollmentDetails_IndirectRelationshipInfo struct {
+	// A reference to the billing account this applies to. (AI-inferred)
 	BillingAccountName any
+	// A reference to the billing profile this applies to. (AI-inferred)
 	BillingProfileName any
-	DisplayName        any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
 }
 
 type OpenapiBillingAccount_Properties_EnrollmentDetails struct {
-	BillingCycle             any
-	Channel                  any
-	Cloud                    any
-	CountryCode              any
-	Currency                 any
-	EndDate                  any
-	ExtendedTermOption       any
+	// How often this billing profile is invoiced. (AI-inferred)
+	BillingCycle any
+	// The sales channel this applies to. (AI-inferred)
+	Channel any
+	// The Azure cloud environment this applies to. (AI-inferred)
+	Cloud any
+	// The two-letter country code this applies to. (AI-inferred)
+	CountryCode any
+	// The currency amounts are expressed in. (AI-inferred)
+	Currency any
+	// When this window or period ends. (AI-inferred)
+	EndDate any
+	// Whether an extended term is available for this offer. (AI-inferred)
+	ExtendedTermOption any
+	// Detail about this account's own indirect (reseller-mediated) billing relationship. (AI-inferred)
 	IndirectRelationshipInfo any
-	InvoiceRecipient         any
-	Language                 any
-	MarkupStatus             any
-	PoNumber                 any
-	StartDate                any
-	SupportCoverage          any
-	SupportLevel             any
+	// The recipient this invoice is sent to. (AI-inferred)
+	InvoiceRecipient any
+	// The language content is provided in. (AI-inferred)
+	Language any
+	// Whether markup on this billed amount is currently active. (AI-inferred)
+	MarkupStatus any
+	// A purchase order number associated with this invoice. (AI-inferred)
+	PoNumber any
+	// When this window or period starts. (AI-inferred)
+	StartDate any
+	// The support coverage level associated with this account. (AI-inferred)
+	SupportCoverage any
+	// The tier of support this account is entitled to. (AI-inferred)
+	SupportLevel any
 }
 
 type OpenapiBillingAccount_Properties_RegistrationNumber struct {
-	Id       any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// Whether this field must be present. (AI-inferred)
 	Required any
-	Type     any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiBillingAccount_Properties_SoldTo struct {
-	AddressLine1   any
-	AddressLine2   any
-	AddressLine3   any
-	City           any
-	CompanyName    any
-	Country        any
-	District       any
-	Email          any
-	FirstName      any
+	// The first line of this postal address. (AI-inferred)
+	AddressLine1 any
+	// The second line of this postal address. (AI-inferred)
+	AddressLine2 any
+	// The third line of this postal address. (AI-inferred)
+	AddressLine3 any
+	// The city component of this postal address. (AI-inferred)
+	City any
+	// The name of this company. (AI-inferred)
+	CompanyName any
+	// The country component of this postal address. (AI-inferred)
+	Country any
+	// The district or region component of this postal address. (AI-inferred)
+	District any
+	// An email address associated with this resource. (AI-inferred)
+	Email any
+	// The given name of this contact. (AI-inferred)
+	FirstName any
+	// Whether this address passed validation. (AI-inferred)
 	IsValidAddress any
-	LastName       any
-	MiddleName     any
-	PhoneNumber    any
-	PostalCode     any
-	Region         any
+	// The family name of this contact. (AI-inferred)
+	LastName any
+	// The middle name of this contact. (AI-inferred)
+	MiddleName any
+	// A phone number associated with this resource. (AI-inferred)
+	PhoneNumber any
+	// The postal code component of this address. (AI-inferred)
+	PostalCode any
+	// The billing region this applies to. (AI-inferred)
+	Region any
 }
 
 type OpenapiBillingAccount_Properties_TaxIds struct {
+	// The country component of this postal address. (AI-inferred)
 	Country any
-	Id      any
-	Scope   any
-	Status  any
-	Type    any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// What this configuration's own scope covers. (AI-inferred)
+	Scope any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiBillingAccount_Properties struct {

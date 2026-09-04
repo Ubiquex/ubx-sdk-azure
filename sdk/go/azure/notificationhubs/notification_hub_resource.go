@@ -42,14 +42,23 @@ type NotificationHubResource_Properties_ApnsCredential struct {
 }
 
 type NotificationHubResource_Properties_AuthorizationRules struct {
-	ClaimType    any
-	ClaimValue   any
-	CreatedTime  any
-	KeyName      any
+	// The type of claim this authorization rule's own token must carry. (AI-inferred)
+	ClaimType any
+	// The expected value of `claim_type`. (AI-inferred)
+	ClaimValue any
+	// When this resource was created. (AI-inferred)
+	CreatedTime any
+	// The name of this shared access policy. (AI-inferred)
+	KeyName any
+	// When this resource was last modified. (AI-inferred)
 	ModifiedTime any
-	PrimaryKey   any
-	Revision     any
-	Rights       any
+	// The primary shared access key for this policy. (AI-inferred)
+	PrimaryKey any
+	// A number incremented each time this resource is significantly modified. (AI-inferred)
+	Revision any
+	// The permission(s) this shared access policy grants. (AI-inferred)
+	Rights any
+	// The secondary shared access key for this policy. (AI-inferred)
 	SecondaryKey any
 }
 
@@ -147,7 +156,8 @@ type NotificationHubResource_Properties struct {
 	// Description of a NotificationHub BaiduCredential.
 	BaiduCredential any
 	// Description of a NotificationHub BrowserCredential.
-	BrowserCredential     any
+	BrowserCredential any
+	// The maximum number of active device(s) permitted per day under this SKU. (AI-inferred)
 	DailyMaxActiveDevices any
 	// Description of a NotificationHub GcmCredential.
 	GcmCredential any

@@ -26,12 +26,16 @@ class SapvirtualinstanceSapapplicationServerInstance_Properties_Errors:
 
 @dataclasses.dataclass
 class SapvirtualinstanceSapapplicationServerInstance_Properties_LoadBalancerDetails:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class SapvirtualinstanceSapapplicationServerInstance_Properties_VmDetails:
+    # Detail about the storage volume(s) attached to this SAP application server instance's own virtual machine. (AI-inferred)
     storage_details: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # A reference to the virtual machine backing this SAP application server instance. (AI-inferred)
     virtual_machine_id: Any = None
 
 @dataclasses.dataclass

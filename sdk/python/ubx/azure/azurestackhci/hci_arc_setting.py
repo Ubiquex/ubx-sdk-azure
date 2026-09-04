@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class HciArcSetting_Properties_ConnectivityProperties_ServiceConfigurations:
+    # A network port number. (AI-inferred)
     port: Any = None
+    # The name of the service this applies to. (AI-inferred)
     service_name: Any = None
 
 @dataclasses.dataclass
@@ -20,14 +22,20 @@ class HciArcSetting_Properties_ConnectivityProperties:
 
 @dataclasses.dataclass
 class HciArcSetting_Properties_DefaultExtensions:
+    # The category this belongs to. (AI-inferred)
     category: Any = None
+    # When consent for this operation was granted. (AI-inferred)
     consent_time: Any = None
 
 @dataclasses.dataclass
 class HciArcSetting_Properties_PerNodeDetails:
+    # A reference to the Azure Arc-enabled server instance this applies to. (AI-inferred)
     arc_instance: Any = None
+    # The object ID of the service principal used to Arc-enable this node. (AI-inferred)
     arc_node_service_principal_object_id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The current lifecycle state of this resource. (AI-inferred)
     state: Any = None
 
 @dataclasses.dataclass

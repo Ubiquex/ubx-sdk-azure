@@ -4,9 +4,13 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo struct {
-	Prefix          any
-	Signature       any
-	ValidationId    any
+	// An IP address prefix, in CIDR notation. (AI-inferred)
+	Prefix any
+	// A cryptographic signature validating this resource's own configuration or authorization. (AI-inferred)
+	Signature any
+	// An identifier for a pending validation request on this resource, e.g. an ExpressRoute prefix ownership check. (AI-inferred)
+	ValidationId any
+	// The current outcome of validating this resource's own configuration, e.g. whether an advertised prefix passed ownership verification. (AI-inferred)
 	ValidationState any
 }
 

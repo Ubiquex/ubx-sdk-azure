@@ -97,30 +97,46 @@ class DtlLabVirtualMachine_Properties_ArtifactDeploymentStatus:
 
 @dataclasses.dataclass
 class DtlLabVirtualMachine_Properties_Artifacts_Parameters:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class DtlLabVirtualMachine_Properties_Artifacts:
+    # A reference to the artifact this applies to. (AI-inferred)
     artifact_id: Any = None
+    # A human-readable title for this artifact. (AI-inferred)
     artifact_title: Any = None
+    # A human-readable message describing this deployment's own current status. (AI-inferred)
     deployment_status_message: Any = None
+    # When this artifact was installed. (AI-inferred)
     install_time: Any = None
+    # The parameter value(s) supplied to this artifact or template. (AI-inferred)
     parameters: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # A human-readable message describing this VM extension's own current status. (AI-inferred)
     vm_extension_status_message: Any = None
 
 @dataclasses.dataclass
 class DtlLabVirtualMachine_Properties_ComputeVm_DataDisks:
+    # This disk's own size, in gibibytes. (AI-inferred)
     disk_size_gi_b: Any = None
+    # This disk's own storage URI. (AI-inferred)
     disk_uri: Any = None
+    # A reference to the underlying managed disk. (AI-inferred)
     managed_disk_id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class DtlLabVirtualMachine_Properties_ComputeVm_Statuses:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # A human-readable summary of this status. (AI-inferred)
     display_status: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
 
 @dataclasses.dataclass
@@ -142,14 +158,20 @@ class DtlLabVirtualMachine_Properties_ComputeVm:
 
 @dataclasses.dataclass
 class DtlLabVirtualMachine_Properties_DataDiskParameters_AttachNewDataDiskOptions:
+    # The name of this disk. (AI-inferred)
     disk_name: Any = None
+    # This disk's own size, in gibibytes. (AI-inferred)
     disk_size_gi_b: Any = None
+    # The type of storage this disk uses, e.g. `Standard` or `Premium`. (AI-inferred)
     disk_type: Any = None
 
 @dataclasses.dataclass
 class DtlLabVirtualMachine_Properties_DataDiskParameters:
+    # Configuration for a new data disk to attach when creating this environment. (AI-inferred)
     attach_new_data_disk_options: Any = None
+    # A reference to an existing lab disk to attach, rather than creating a new one. (AI-inferred)
     existing_lab_disk_id: Any = None
+    # The disk caching policy, e.g. `None`, `ReadOnly`, or `ReadWrite`. (AI-inferred)
     host_caching: Any = None
 
 @dataclasses.dataclass
@@ -167,8 +189,11 @@ class DtlLabVirtualMachine_Properties_GalleryImageReference:
 
 @dataclasses.dataclass
 class DtlLabVirtualMachine_Properties_NetworkInterface_SharedPublicIpAddressConfiguration_InboundNatRules:
+    # The backend port traffic is forwarded to. (AI-inferred)
     backend_port: Any = None
+    # The public-facing port this rule applies to. (AI-inferred)
     frontend_port: Any = None
+    # The transport protocol this rule applies to, e.g. `Tcp` or `Udp`. (AI-inferred)
     transport_protocol: Any = None
 
 @dataclasses.dataclass
@@ -199,20 +224,32 @@ class DtlLabVirtualMachine_Properties_NetworkInterface:
 
 @dataclasses.dataclass
 class DtlLabVirtualMachine_Properties_ScheduleParameters_Properties:
+    # A schedule that recurs once per day, at a specific time. (AI-inferred)
     daily_recurrence: Any = None
+    # A schedule that recurs at a fixed interval, in minutes, throughout the day. (AI-inferred)
     hourly_recurrence: Any = None
+    # Configuration for a notification sent ahead of this schedule taking effect. (AI-inferred)
     notification_settings: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     target_resource_id: Any = None
+    # The type of task this applies to. (AI-inferred)
     task_type: Any = None
+    # The time zone this schedule's own times are interpreted in, e.g. `Pacific Standard Time`. (AI-inferred)
     time_zone_id: Any = None
+    # A schedule that recurs on specific day(s) of the week, at a specific time. (AI-inferred)
     weekly_recurrence: Any = None
 
 @dataclasses.dataclass
 class DtlLabVirtualMachine_Properties_ScheduleParameters:
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
     tags: Any = None
 
 @dataclasses.dataclass

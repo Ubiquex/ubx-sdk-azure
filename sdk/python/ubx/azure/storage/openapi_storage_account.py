@@ -15,7 +15,9 @@ class OpenapiStorageAccount_ExtendedLocation:
 
 @dataclasses.dataclass
 class OpenapiStorageAccount_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -232,18 +234,25 @@ class OpenapiStorageAccount_Properties_KeyPolicy:
 
 @dataclasses.dataclass
 class OpenapiStorageAccount_Properties_NetworkAcls_IpRules:
+    # The action taken when this rule matches. (AI-inferred)
     action: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiStorageAccount_Properties_NetworkAcls_ResourceAccessRules:
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiStorageAccount_Properties_NetworkAcls_VirtualNetworkRules:
+    # The action taken when this rule matches. (AI-inferred)
     action: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The current status of this resource. (AI-inferred)
     state: Any = None
 
 @dataclasses.dataclass

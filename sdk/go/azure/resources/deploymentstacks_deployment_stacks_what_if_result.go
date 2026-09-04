@@ -29,11 +29,16 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySetting
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta struct {
-	After      any
-	Before     any
+	// The value this field will hold after the change is applied. (AI-inferred)
+	After any
+	// The value this field currently holds, before the change is applied. (AI-inferred)
+	Before any
+	// The category of change this represents, e.g. `Create`, `Modify`, or `Delete`. (AI-inferred)
 	ChangeType any
-	Children   any
-	Path       any
+	// The nested change(s) within this resource. (AI-inferred)
+	Children any
+	// The property path this applies to. (AI-inferred)
+	Path any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange struct {
@@ -53,48 +58,75 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentS
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVault struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference struct {
-	KeyVault      any
-	SecretName    any
+	// A reference to the Key Vault this secret is sourced from. (AI-inferred)
+	KeyVault any
+	// The name of this secret. (AI-inferred)
+	SecretName any
+	// The specific version of this secret. (AI-inferred)
 	SecretVersion any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config struct {
+	// A reference to the Key Vault secret this value is sourced from. (AI-inferred)
 	KeyVaultReference any
-	Type              any
-	Value             any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension struct {
-	Config   any
+	// The configuration for this resource. (AI-inferred)
+	Config any
+	// A reference to the configuration this applies to. (AI-inferred)
 	ConfigId any
-	Name     any
-	Version  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The version identifier this applies to. (AI-inferred)
+	Version any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChanges struct {
-	After  any
+	// The value this field will hold after the change is applied. (AI-inferred)
+	After any
+	// The value this field currently holds, before the change is applied. (AI-inferred)
 	Before any
-	Delta  any
+	// The individual field-level difference/differences making up this change. (AI-inferred)
+	Delta any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges struct {
-	ApiVersion                   any
-	ChangeCertainty              any
-	ChangeType                   any
-	DenyStatusChange             any
-	DeploymentId                 any
-	Extension                    any
-	Id                           any
-	Identifiers                  any
-	ManagementStatusChange       any
+	// The API version used for this resource. (AI-inferred)
+	ApiVersion any
+	// How confident this preview is in the predicted change, e.g. `Certain` or `Unknown`. (AI-inferred)
+	ChangeCertainty any
+	// The category of change this represents, e.g. `Create`, `Modify`, or `Delete`. (AI-inferred)
+	ChangeType any
+	// How `deny_status` will change as a result of applying this deployment. (AI-inferred)
+	DenyStatusChange any
+	// A reference to the deployment this applies to. (AI-inferred)
+	DeploymentId any
+	// A reference to a Bicep extension used by this template. (AI-inferred)
+	Extension any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The property/properties identifying this resource for matching purposes. (AI-inferred)
+	Identifiers any
+	// How this resource's own stack-managed status will change as a result of applying this deployment. (AI-inferred)
+	ManagementStatusChange any
+	// The configuration change(s) this deployment would make to this resource. (AI-inferred)
 	ResourceConfigurationChanges any
-	SymbolicName                 any
-	Type                         any
-	UnsupportedReason            any
+	// The template-local name identifying this resource within its own deployment. (AI-inferred)
+	SymbolicName any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// Why this action or configuration isn't supported. (AI-inferred)
+	UnsupportedReason any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes struct {
@@ -112,24 +144,36 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_DebugSetting struct
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfo struct {
+	// Additional structured detail supporting this error. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Level          any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// The severity level of this message. (AI-inferred)
+	Level any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_Details struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error struct {
@@ -146,19 +190,26 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error struct {
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputDefinitions struct {
+	// The configuration for this resource. (AI-inferred)
 	Config any
-	Kind   any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputs struct {
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Parameters struct {
+	// The template expression this value was evaluated from. (AI-inferred)
 	Expression any
-	Reference  any
-	Type       any
-	Value      any
+	// A reference to a related resource or value. (AI-inferred)
+	Reference any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ParametersLink struct {

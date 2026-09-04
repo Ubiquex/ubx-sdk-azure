@@ -2,554 +2,890 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_ServiceEndpointPolicyDefinitions_Properties {
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The Azure service (e.g. a specific Private Link-enabled PaaS service) this configuration applies to. (AI-inferred) */
   service?: string | Computed<string>;
+  /** The specific service resource(s) a service endpoint policy definition grants access to. (AI-inferred) */
   serviceResources?: string[] | Computed<string[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_ServiceEndpointPolicyDefinitions {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_ServiceEndpointPolicyDefinitions_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_ServiceEndpointPolicyDefinitions_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_Delegations_Properties {
+  /** The action(s) this rule or policy applies. (AI-inferred) */
   actions?: string[] | Computed<string[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The name of the Azure service this configuration applies to or connects with. (AI-inferred) */
   serviceName?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_Delegations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_Delegations_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_Delegations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: unknown | Computed<unknown>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DdosSettings {
+  /** A reference to a custom DDoS protection policy to apply, overriding the subscription's own default DDoS policy. (AI-inferred) */
   ddosCustomPolicy?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A reference to the DDoS Protection Plan covering this virtual network. (AI-inferred) */
   ddosProtectionPlan?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** Whether DDoS protection for this resource is `Enabled`, `Disabled`, or inherits from the containing virtual network. (AI-inferred) */
   protectionMode?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DnsSettings {
+  /** The DNS label whose concatenation with the region's own DNS zone forms this public IP address's fully qualified domain name. (AI-inferred) */
   domainNameLabel?: string | Computed<string>;
+  /** How uniquely `domain_name_label` must be scoped -- e.g. tenant-wide or subscription-wide -- when generating this address's own FQDN. (AI-inferred) */
   domainNameLabelScope?: string | Computed<string>;
+  /** The fully qualified domain name assigned to this resource. (AI-inferred) */
   fqdn?: string | Computed<string>;
+  /** A fully qualified domain name that resolves to this public IP address, creating a matching reverse-DNS (PTR) record. (AI-inferred) */
   reverseFqdn?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpTags {
+  /** The identifier of the Microsoft first-party service tag this IP tag is associated with. (AI-inferred) */
   firstPartyServiceTagId?: string | Computed<string>;
+  /** The category this IP tag belongs to, e.g. `FirstPartyUsage`. (AI-inferred) */
   ipTagType?: string | Computed<string>;
+  /** The literal tag value. (AI-inferred) */
   tag?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway_Properties {
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** Whether NAT64 (IPv6-to-IPv4 translation) is enabled for this configuration. (AI-inferred) */
   nat64?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The IPv4 Public IP Address resources associated with this configuration. (AI-inferred) */
   publicIpAddresses?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The IPv6 Public IP Address resources associated with this configuration. (AI-inferred) */
   publicIpAddressesV6?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The IPv4 Public IP Prefix resources associated with this configuration. (AI-inferred) */
   publicIpPrefixes?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The IPv6 Public IP Prefix resources associated with this configuration. (AI-inferred) */
   publicIpPrefixesV6?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A reference to the virtual network this resource is sourced from. (AI-inferred) */
   sourceVirtualNetwork?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway_Sku {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway_Sku | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DdosSettings | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DdosSettings>;
+  /** What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred) */
   deleteOption?: string | Computed<string>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DnsSettings | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DnsSettings>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the IP configuration this resource is associated with. (AI-inferred) */
   ipConfiguration?: unknown | Computed<unknown>;
+  /** IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred) */
   ipTags?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpTags[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpTags[]>;
+  /** A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred) */
   linkedPublicIpaddress?: unknown | Computed<unknown>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
+  /** Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred) */
   publicIpallocationMethod?: string | Computed<string>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred) */
   servicePublicIpaddress?: unknown | Computed<unknown>;
+  /** Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred) */
   upgradedToV2?: boolean | Computed<boolean>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Sku {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred) */
   tier?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Sku | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpamPoolPrefixAllocations {
+  /** Output only. The specific address ranges actually allocated from this pool. (AI-inferred) */
   allocatedAddressPrefixes?: string[] | Computed<string[]>;
+  /** How many IP addresses to allocate from this pool. (AI-inferred) */
   numberOfIpAddresses?: string | Computed<string>;
+  /** A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred) */
   pool?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties {
+  /** Whether this security rule's own match is `Allow`ed or `Deny`ed. (AI-inferred) */
   access?: string | Computed<string>;
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The destination IP address range (CIDR) or tag this rule matches, e.g. `10.0.0.0/24` or `Internet`. (AI-inferred) */
   destinationAddressPrefix?: string | Computed<string>;
+  /** The destination IP address ranges (CIDR) this rule matches, when more than one applies. (AI-inferred) */
   destinationAddressPrefixes?: string[] | Computed<string[]>;
+  /** The Application Security Groups this rule matches traffic destined for, instead of a raw address prefix. (AI-inferred) */
   destinationApplicationSecurityGroups?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[]>;
+  /** The destination port range this rule matches, e.g. `80` or `1000-2000`. (AI-inferred) */
   destinationPortRange?: string | Computed<string>;
+  /** The destination port ranges this rule matches, when more than one applies. (AI-inferred) */
   destinationPortRanges?: string[] | Computed<string[]>;
+  /** Whether this security rule applies to `Inbound` or `Outbound` traffic. (AI-inferred) */
   direction?: string | Computed<string>;
+  /** The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The source IP address range (CIDR) or tag this rule matches, e.g. `10.0.0.0/24` or `Internet`. (AI-inferred) */
   sourceAddressPrefix?: string | Computed<string>;
+  /** The source IP address ranges (CIDR) this rule matches, when more than one applies. (AI-inferred) */
   sourceAddressPrefixes?: string[] | Computed<string[]>;
+  /** The Application Security Groups this rule matches traffic originating from, instead of a raw address prefix. (AI-inferred) */
   sourceApplicationSecurityGroups?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[]>;
+  /** The source port range this rule matches, e.g. `*` for any port. (AI-inferred) */
   sourcePortRange?: string | Computed<string>;
+  /** The source port ranges this rule matches, when more than one applies. (AI-inferred) */
   sourcePortRanges?: string[] | Computed<string[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity {
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The user-assigned managed identities associated with this resource, keyed by their own resource ID. (AI-inferred) */
   userAssignedIdentities?: Record<string, ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity_UserAssignedIdentities> | Computed<Record<string, ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity_UserAssignedIdentities>>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration {
+  /** Whether this feature or setting is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** How often, in minutes, Traffic Analytics processes this flow log's own data into insights. (AI-inferred) */
   trafficAnalyticsInterval?: number | Computed<number>;
+  /** The Log Analytics workspace ID Traffic Analytics results are sent to. (AI-inferred) */
   workspaceId?: string | Computed<string>;
+  /** The Azure region the target Log Analytics workspace is deployed in. (AI-inferred) */
   workspaceRegion?: string | Computed<string>;
+  /** The full Azure Resource Manager resource ID of the target Log Analytics workspace. (AI-inferred) */
   workspaceResourceId?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration {
+  /** Traffic Analytics settings (workspace, interval) applied to this Network Watcher flow log. (AI-inferred) */
   networkWatcherFlowAnalyticsConfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format {
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The format or schema version this data conforms to. (AI-inferred) */
   version?: number | Computed<number>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy {
+  /** The number of days data is retained before automatic deletion. (AI-inferred) */
   days?: number | Computed<number>;
+  /** Whether this feature or setting is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties {
+  /** Whether this feature or setting is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** Which traffic characteristics this flow log filters on before recording. (AI-inferred) */
   enabledFilteringCriteria?: string | Computed<string>;
+  /** Configuration for deriving Traffic Analytics insights from this flow log's own recorded data. (AI-inferred) */
   flowAnalyticsConfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration>;
+  /** The output format this data is written in. (AI-inferred) */
   format?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Which categories of record this configuration includes. (AI-inferred) */
   recordTypes?: string | Computed<string>;
+  /** How long this flow log's own recorded data is kept before automatic deletion. (AI-inferred) */
   retentionPolicy?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy>;
+  /** The resource ID of the storage account this flow log's own data is written to. (AI-inferred) */
   storageId?: string | Computed<string>;
+  /** Output only. The stable `resource_guid` of the resource this flow log is enabled on. (AI-inferred) */
   targetResourceGuid?: string | Computed<string>;
+  /** The resource ID this configuration applies to, e.g. the NSG or virtual network a flow log is enabled on. (AI-inferred) */
   targetResourceId?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings {
+  /** Output only. The effective DNS server IP addresses this network interface actually uses, resolved from `dns_servers` or the virtual network's own defaults. (AI-inferred) */
   appliedDnsServers?: string[] | Computed<string[]>;
+  /** Custom DNS server IP addresses this resource uses, overriding the virtual network's own default DNS. (AI-inferred) */
   dnsServers?: string[] | Computed<string[]>;
+  /** A DNS label for this network interface, resolvable from within the virtual network as `{label}.{internal_domain_name_suffix}`. (AI-inferred) */
   internalDnsNameLabel?: string | Computed<string>;
+  /** Output only. The DNS suffix appended to `internal_dns_name_label` to form this network interface's own internal FQDN. (AI-inferred) */
   internalDomainNameSuffix?: string | Computed<string>;
+  /** Output only. This network interface's own resolvable internal fully qualified domain name. (AI-inferred) */
   internalFqdn?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddresses {
+  /** The fully qualified domain name assigned to this resource. (AI-inferred) */
   fqdn?: string | Computed<string>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties {
+  /** The backend address(es) (by IP or NIC IP configuration) this pool routes traffic to. (AI-inferred) */
   backendAddresses?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddresses[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddresses[]>;
+  /** The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred) */
   backendIpconfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping {
+  /** The port on the backend instance this rule forwards matched traffic to. (AI-inferred) */
   backendPort?: number | Computed<number>;
+  /** The external port this load-balancing or NAT rule listens on. (AI-inferred) */
   frontendPort?: number | Computed<number>;
+  /** The name of the inbound NAT rule this port mapping belongs to. (AI-inferred) */
   inboundNatRuleName?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties {
+  /** An administrative override for this rule's own health-probe-driven forwarding state -- `Up` forces new connections through regardless of probe results, `Down` forces them away. (AI-inferred) */
   adminState?: string | Computed<string>;
+  /** Output only. The specific frontend-to-backend port mapping(s) this backend instance received from an inbound NAT pool. (AI-inferred) */
   inboundNatRulesPortMapping?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping[]>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the load balancer's own frontend IP configuration this applies to. (AI-inferred) */
   loadBalancerFrontendIpconfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A reference to the network interface IP configuration this applies to. (AI-inferred) */
   networkInterfaceIpconfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A reference to the virtual network this resource is associated with. (AI-inferred) */
   virtualNetwork?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces {
+  /** A unique identifier for this resource or configuration. (AI-inferred) */
   identifier?: number | Computed<number>;
+  /** A TCP or UDP port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties {
+  /** The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred) */
   backendIpconfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[]>;
+  /** How long a backend instance stays reachable for existing connections after being marked for removal, before the load balancer stops routing to it entirely. (AI-inferred) */
   drainPeriodInSeconds?: number | Computed<number>;
+  /** The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred) */
   inboundNatRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The backend address(es) registered directly on the load balancer resource itself, rather than sourced from a NIC's own IP configuration. (AI-inferred) */
   loadBalancerBackendAddresses?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses[]>;
+  /** The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred) */
   loadBalancingRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** A reference to the outbound NAT rule associated with this resource. (AI-inferred) */
   outboundRule?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred) */
   outboundRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this backend pool's own membership is synced `Automatic`ally from attached NICs, or managed `Manual`ly via `load_balancer_backend_addresses`. (AI-inferred) */
   syncMode?: string | Computed<string>;
+  /** The tunnel endpoint(s) (their own IP addresses and roles) making up this VPN connection, one per active/standby tunnel instance. (AI-inferred) */
   tunnelInterfaces?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces[]>;
+  /** A reference to the virtual network this resource is associated with. (AI-inferred) */
   virtualNetwork?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties {
+  /** A reference to the backend address pool this rule sends matched traffic to. (AI-inferred) */
   backendAddressPool?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A reference to the backend network interface IP configuration this applies to. (AI-inferred) */
   backendIpconfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet>;
+  /** The port on the backend instance this rule forwards matched traffic to. (AI-inferred) */
   backendPort?: number | Computed<number>;
+  /** Whether this rule uses Floating IP (Direct Server Return) -- the backend sees the frontend's own IP as the destination, rather than its own. (AI-inferred) */
   enableFloatingIp?: boolean | Computed<boolean>;
+  /** Whether the load balancer sends a TCP reset when a connection is idle-timed-out or the backend becomes unavailable, so the client fails fast instead of hanging. (AI-inferred) */
   enableTcpReset?: boolean | Computed<boolean>;
+  /** A reference to the frontend IP configuration this rule listens on. (AI-inferred) */
   frontendIpconfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** The external port this load-balancing or NAT rule listens on. (AI-inferred) */
   frontendPort?: number | Computed<number>;
+  /** The last port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred) */
   frontendPortRangeEnd?: number | Computed<number>;
+  /** The first port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred) */
   frontendPortRangeStart?: number | Computed<number>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionProperties {
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The sub-resource this connection targets on the destination service, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred) */
   groupId?: string | Computed<string>;
+  /** The name a resource must be created with to participate in a specific availability/failover grouping. (AI-inferred) */
   requiredMemberName?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: unknown | Computed<unknown>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DdosSettings | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DdosSettings>;
+  /** What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred) */
   deleteOption?: string | Computed<string>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DnsSettings | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DnsSettings>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the IP configuration this resource is associated with. (AI-inferred) */
   ipConfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration>;
+  /** IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred) */
   ipTags?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpTags[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpTags[]>;
+  /** A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred) */
   linkedPublicIpaddress?: unknown | Computed<unknown>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
+  /** Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred) */
   publicIpallocationMethod?: string | Computed<string>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred) */
   servicePublicIpaddress?: unknown | Computed<unknown>;
+  /** Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred) */
   upgradedToV2?: boolean | Computed<boolean>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Sku | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_DdosSettings {
+  /** A reference to a custom DDoS protection policy to apply, overriding the subscription's own default DDoS policy. (AI-inferred) */
   ddosCustomPolicy?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: unknown | Computed<unknown>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Sku | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties {
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DdosSettings | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DdosSettings>;
+  /** What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred) */
   deleteOption?: string | Computed<string>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DnsSettings | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DnsSettings>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** A reference to the IP configuration this resource is associated with. (AI-inferred) */
   ipConfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration>;
+  /** IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred) */
   ipTags?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpTags[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpTags[]>;
+  /** A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred) */
   linkedPublicIpaddress?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
+  /** Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred) */
   publicIpallocationMethod?: string | Computed<string>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred) */
   servicePublicIpaddress?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress>;
+  /** Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred) */
   upgradedToV2?: boolean | Computed<boolean>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Sku | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties {
+  /** DDoS protection configuration for this public IP or virtual network. (AI-inferred) */
   ddosSettings?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_DdosSettings | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_DdosSettings>;
+  /** Whether this rule tracks individual connections for graceful behavior on backend pool membership changes, rather than treating every packet independently. (AI-inferred) */
   enableConnectionTracking?: boolean | Computed<boolean>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A range of ports reserved on the load balancer's own frontend, auto-allocated one-to-one to backend instances for inbound NAT (typically used by a scale set). (AI-inferred) */
   inboundNatPools?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred) */
   inboundNatRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred) */
   loadBalancingRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred) */
   outboundRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress>;
+  /** A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred) */
   publicIpprefix?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: unknown | Computed<unknown>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties>;
+  /** The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred) */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred) */
   virtualNetworkTap?: unknown | Computed<unknown>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties {
+  /** The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationLoadBalancerFrontEndIpconfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration>;
+  /** The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationNetworkInterfaceIpconfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet>;
+  /** The port this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationPort?: number | Computed<number>;
+  /** The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred) */
   networkInterfaceTapConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties {
+  /** The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   applicationGatewayBackendAddressPools?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools[]>;
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[]>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   loadBalancerBackendAddressPools?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools[]>;
+  /** The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred) */
   loadBalancerInboundNatRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules[]>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred) */
   privateIpaddressPrefixLength?: number | Computed<number>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred) */
   privateLinkConnectionProperties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionProperties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionProperties>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet>;
+  /** The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred) */
   virtualNetworkTaps?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs {
+  /** The fully qualified domain name assigned to this resource. (AI-inferred) */
   fqdn?: string | Computed<string>;
+  /** The IP address(es) associated with this resource. (AI-inferred) */
   ipAddresses?: string[] | Computed<string[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties {
+  /** The sub-resource this connection targets on the destination service, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred) */
   groupId?: string | Computed<string>;
+  /** The name identifying this member within its own containing group or set. (AI-inferred) */
   memberName?: string | Computed<string>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the Private Link service owner still needs to take on this connection beyond the basic approve/reject/disconnect workflow, or `None` if nothing further is needed. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this connection, resource, or operation, e.g. `Approved`, `Pending`, `Rejected`, or `Disconnected`. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties {
+  /** The sub-resource(s) of the target service this private endpoint connects to, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred) */
   groupIds?: string[] | Computed<string[]>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred) */
   privateLinkServiceConnectionState?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The resource ID of the Private Link service (or Private Link-enabled PaaS resource) this private endpoint connects to. (AI-inferred) */
   privateLinkServiceId?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A message the requester attaches when asking to connect to this Private Link-enabled or ExpressRoute-peered resource, shown to the approver alongside the connection request. (AI-inferred) */
   requestMessage?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -557,440 +893,731 @@ export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties {
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[]>;
+  /** The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred) */
   billingSku?: string | Computed<string>;
+  /** DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred) */
   customDnsConfigs?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[]>;
+  /** A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred) */
   customNetworkInterfaceName?: string | Computed<string>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[]>;
+  /** Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred) */
   ipVersionType?: string | Computed<string>;
+  /** Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred) */
   manualPrivateLinkServiceConnections?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[]>;
+  /** The Private Link service connection(s) this private endpoint establishes. (AI-inferred) */
   privateLinkServiceConnections?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval {
+  /** The subscription ID(s) this auto-approval or visibility rule applies to. (AI-inferred) */
   subscriptions?: string[] | Computed<string[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties {
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties {
+  /** Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred) */
   linkIdentifier?: string | Computed<string>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint>;
+  /** The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred) */
   privateEndpointLocation?: string | Computed<string>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred) */
   privateLinkServiceConnectionState?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools_Properties {
+  /** The backend address(es) (by IP or NIC IP configuration) this pool routes traffic to. (AI-inferred) */
   backendAddresses?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddresses[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddresses[]>;
+  /** The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred) */
   backendIpconfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools_Properties {
+  /** The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred) */
   backendIpconfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[]>;
+  /** How long a backend instance stays reachable for existing connections after being marked for removal, before the load balancer stops routing to it entirely. (AI-inferred) */
   drainPeriodInSeconds?: number | Computed<number>;
+  /** The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred) */
   inboundNatRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The backend address(es) registered directly on the load balancer resource itself, rather than sourced from a NIC's own IP configuration. (AI-inferred) */
   loadBalancerBackendAddresses?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses[]>;
+  /** The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred) */
   loadBalancingRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** A reference to the outbound NAT rule associated with this resource. (AI-inferred) */
   outboundRule?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred) */
   outboundRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Whether this backend pool's own membership is synced `Automatic`ally from attached NICs, or managed `Manual`ly via `load_balancer_backend_addresses`. (AI-inferred) */
   syncMode?: string | Computed<string>;
+  /** The tunnel endpoint(s) (their own IP addresses and roles) making up this VPN connection, one per active/standby tunnel instance. (AI-inferred) */
   tunnelInterfaces?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces[]>;
+  /** A reference to the virtual network this resource is associated with. (AI-inferred) */
   virtualNetwork?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules_Properties {
+  /** A reference to the backend address pool this rule sends matched traffic to. (AI-inferred) */
   backendAddressPool?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A reference to the backend network interface IP configuration this applies to. (AI-inferred) */
   backendIpconfiguration?: unknown | Computed<unknown>;
+  /** The port on the backend instance this rule forwards matched traffic to. (AI-inferred) */
   backendPort?: number | Computed<number>;
+  /** Whether this rule uses Floating IP (Direct Server Return) -- the backend sees the frontend's own IP as the destination, rather than its own. (AI-inferred) */
   enableFloatingIp?: boolean | Computed<boolean>;
+  /** Whether the load balancer sends a TCP reset when a connection is idle-timed-out or the backend becomes unavailable, so the client fails fast instead of hanging. (AI-inferred) */
   enableTcpReset?: boolean | Computed<boolean>;
+  /** A reference to the frontend IP configuration this rule listens on. (AI-inferred) */
   frontendIpconfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** The external port this load-balancing or NAT rule listens on. (AI-inferred) */
   frontendPort?: number | Computed<number>;
+  /** The last port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred) */
   frontendPortRangeEnd?: number | Computed<number>;
+  /** The first port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred) */
   frontendPortRangeStart?: number | Computed<number>;
+  /** How many minutes an idle connection is kept open before this resource closes it. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties {
+  /** The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   applicationGatewayBackendAddressPools?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools[]>;
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[]>;
+  /** A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred) */
   gatewayLoadBalancer?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred) */
   loadBalancerBackendAddressPools?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools[]>;
+  /** The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred) */
   loadBalancerInboundNatRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules[]>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred) */
   privateIpaddressPrefixLength?: number | Computed<number>;
+  /** Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
+  /** Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred) */
   privateLinkConnectionProperties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionProperties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionProperties>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred) */
   publicIpaddress?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet>;
+  /** The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred) */
   virtualNetworkTaps?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties {
+  /** The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationLoadBalancerFrontEndIpconfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration>;
+  /** The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred) */
   destinationNetworkInterfaceIpconfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration>;
+  /** The port this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationPort?: number | Computed<number>;
+  /** The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred) */
   networkInterfaceTapConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred) */
   virtualNetworkTap?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: unknown | Computed<unknown>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties {
+  /** Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred) */
   defaultSecurityRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The flow log(s) configured on this Network Security Group. (AI-inferred) */
   flowLogs?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs[]>;
+  /** Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred) */
   flushConnection?: boolean | Computed<boolean>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom (non-default) security rules on this Network Security Group. (AI-inferred) */
   securityRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties {
+  /** Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred) */
   defaultSecurityRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The flow log(s) configured on this Network Security Group. (AI-inferred) */
   flowLogs?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs[]>;
+  /** Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred) */
   flushConnection?: boolean | Computed<boolean>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom (non-default) security rules on this Network Security Group. (AI-inferred) */
   securityRules?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties {
+  /** Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred) */
   linkIdentifier?: string | Computed<string>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: unknown | Computed<unknown>;
+  /** The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred) */
   privateEndpointLocation?: string | Computed<string>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred) */
   privateLinkServiceConnectionState?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties {
+  /** Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred) */
   accessMode?: string | Computed<string>;
+  /** Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred) */
   alias?: string | Computed<string>;
+  /** The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred) */
   autoApproval?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
+  /** The IP address this NAT rule forwards matched traffic to. (AI-inferred) */
   destinationIpaddress?: string | Computed<string>;
+  /** Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred) */
   enableProxyProtocol?: boolean | Computed<boolean>;
+  /** The fully qualified domain name(s) associated with this resource. (AI-inferred) */
   fqdns?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations[]>;
+  /** The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred) */
   loadBalancerFrontendIpConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[]>;
+  /** Output only. The Private Endpoint connections currently established to this resource. (AI-inferred) */
   privateEndpointConnections?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred) */
   visibility?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties {
+  /** The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
+  /** The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
+  /** Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundConnectivityEnabled?: boolean | Computed<boolean>;
+  /** Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
+  /** DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred) */
   dnsSettings?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings>;
+  /** A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred) */
   dscpConfiguration?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
+  /** Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
+  /** Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred) */
   hostedWorkloads?: string[] | Computed<string[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations[]>;
+  /** Output only. The MAC address assigned to this network interface. (AI-inferred) */
   macAddress?: string | Computed<string>;
+  /** Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred) */
   migrationPhase?: string | Computed<string>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup>;
+  /** Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred) */
   nicType?: string | Computed<string>;
+  /** Whether this is the primary configuration among several attached to the same resource. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: unknown | Computed<unknown>;
+  /** A reference to the Private Link service this resource connects to or exposes. (AI-inferred) */
   privateLinkService?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred) */
   tapConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations[]>;
+  /** A reference to the virtual machine this network interface is attached to. (AI-inferred) */
   virtualMachine?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred) */
   vnetEncryptionSupported?: boolean | Computed<boolean>;
+  /** The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred) */
   workloadType?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties {
+  /** The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred) */
   applicationSecurityGroups?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups[]>;
+  /** The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred) */
   billingSku?: string | Computed<string>;
+  /** DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred) */
   customDnsConfigs?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs[]>;
+  /** A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred) */
   customNetworkInterfaceName?: string | Computed<string>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations[]>;
+  /** Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred) */
   ipVersionType?: string | Computed<string>;
+  /** Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred) */
   manualPrivateLinkServiceConnections?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The network interface(s) attached to this resource. (AI-inferred) */
   networkInterfaces?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces[]>;
+  /** The Private Link service connection(s) this private endpoint establishes. (AI-inferred) */
   privateLinkServiceConnections?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the subnet this resource is associated with. (AI-inferred) */
   subnet?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred) */
   extendedLocation?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ResourceNavigationLinks_Properties {
+  /** A reference to a related resource. (AI-inferred) */
   link?: string | Computed<string>;
+  /** The Azure resource type of the resource `link` points to. (AI-inferred) */
   linkedResourceType?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ResourceNavigationLinks {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ResourceNavigationLinks_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ResourceNavigationLinks_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties_NextHop {
+  /** Output only. The effective next-hop IP address(es) actually in use for this route. (AI-inferred) */
   nextHopIpAddresses?: string[] | Computed<string[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** Whether a static route on this route table overrides the equivalent route learned via BGP. (AI-inferred) */
   hasBgpOverride?: boolean | Computed<boolean>;
+  /** Where traffic matching this route is sent next. (AI-inferred) */
   nextHop?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties_NextHop | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties_NextHop>;
+  /** The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred) */
   nextHopIpAddress?: string | Computed<string>;
+  /** The kind of next hop this route uses, e.g. `VirtualAppliance`, `VnetLocal`, `Internet`, or `None`. (AI-inferred) */
   nextHopType?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties {
+  /** Whether routes learned via BGP are prevented from propagating into this route table. (AI-inferred) */
   disableBgpRoutePropagation?: boolean | Computed<boolean>;
+  /** Whether this route is withheld from propagating to a peered virtual network. (AI-inferred) */
   disablePeeringRoute?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The custom routes making up this route table. (AI-inferred) */
   routes?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceAssociationLinks_Properties {
+  /** Whether this resource can be deleted directly, or is protected because something else still depends on it. (AI-inferred) */
   allowDelete?: boolean | Computed<boolean>;
+  /** A reference to a related resource. (AI-inferred) */
   link?: string | Computed<string>;
+  /** The Azure resource type of the resource `link` points to. (AI-inferred) */
   linkedResourceType?: string | Computed<string>;
+  /** The Azure region(s) this configuration or availability applies to. (AI-inferred) */
   locations?: string[] | Computed<string[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceAssociationLinks {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceAssociationLinks_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceAssociationLinks_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpointPolicies_Properties {
+  /** Service endpoint policies that apply to this subnet only in specific contexts (e.g. a specific service alias), layered on top of its own regular `service_endpoint_policies`. (AI-inferred) */
   contextualServiceEndpointPolicies?: string[] | Computed<string[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
+  /** The alias identifying the specific PaaS service resource a service endpoint policy definition grants access to. (AI-inferred) */
   serviceAlias?: string | Computed<string>;
+  /** The individual rules making up a service endpoint policy, each granting subnet traffic access to a specific Azure service resource. (AI-inferred) */
   serviceEndpointPolicyDefinitions?: ExpressrouteServiceEndpointPolicy_Properties_ServiceEndpointPolicyDefinitions[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_ServiceEndpointPolicyDefinitions[]>;
+  /** The subnets belonging to this virtual network or gateway. (AI-inferred) */
   subnets?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_NetworkInterfaces[]>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpointPolicies {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpointPolicies_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpointPolicies_Properties>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpoints {
+  /** The Azure region(s) this configuration or availability applies to. (AI-inferred) */
   locations?: string[] | Computed<string[]>;
+  /** An identifier for the network this configuration is scoped to. (AI-inferred) */
   networkIdentifier?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The Azure service (e.g. a specific Private Link-enabled PaaS service) this configuration applies to. (AI-inferred) */
   service?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred) */
   applicationGatewayIpconfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations[]>;
+  /** Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred) */
   defaultOutboundAccess?: boolean | Computed<boolean>;
+  /** Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred) */
   delegations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_Delegations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_Delegations[]>;
+  /** References to IP address pool allocations reserved for this subnet. (AI-inferred) */
   ipAllocations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet[]>;
+  /** Reusable IP configuration templates associated with this resource. (AI-inferred) */
   ipConfigurationProfiles?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles[]>;
+  /** The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred) */
   ipConfigurations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations[]>;
+  /** Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred) */
   ipamPoolPrefixAllocations?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpamPoolPrefixAllocations[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpamPoolPrefixAllocations[]>;
+  /** A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred) */
   natGateway?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred) */
   networkSecurityGroup?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred) */
   privateEndpointNetworkPolicies?: string | Computed<string>;
+  /** The Private Endpoint resources deployed in this subnet. (AI-inferred) */
   privateEndpoints?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints[]>;
+  /** Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred) */
   privateLinkServiceNetworkPolicies?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred) */
   purpose?: string | Computed<string>;
+  /** Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred) */
   resourceNavigationLinks?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ResourceNavigationLinks[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ResourceNavigationLinks[]>;
+  /** A reference to the route table associated with this subnet. (AI-inferred) */
   routeTable?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable>;
+  /** Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred) */
   serviceAssociationLinks?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceAssociationLinks[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceAssociationLinks[]>;
+  /** Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred) */
   serviceEndpointPolicies?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpointPolicies[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpointPolicies[]>;
+  /** The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred) */
   serviceEndpoints?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpoints[] | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpoints[]>;
+  /** A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred) */
   serviceGateway?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet>;
+  /** How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred) */
   sharingScope?: string | Computed<string>;
 }
 
 export interface ExpressrouteServiceEndpointPolicy_Properties_Subnets {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties>;
 }
 

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiAccessConnector_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -50,6 +52,7 @@ export interface OpenapiAccessConnectorConfig {
   identity?: OpenapiAccessConnector_Identity | Computed<OpenapiAccessConnector_Identity>;
   /** The geo-location where the resource lives */
   location: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiAccessConnector_Properties | Computed<OpenapiAccessConnector_Properties>;
   /** Resource tags. */
   tags?: Record<string, string> | Computed<Record<string, string>>;
@@ -60,6 +63,7 @@ export interface OpenapiAccessConnectorAttrs {
   identity: OpenapiAccessConnector_Identity;
   /** The geo-location where the resource lives */
   location: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiAccessConnector_Properties;
   /** Resource tags. */
   tags: Record<string, string>;

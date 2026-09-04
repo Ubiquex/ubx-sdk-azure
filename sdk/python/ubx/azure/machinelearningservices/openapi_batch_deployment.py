@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiBatchDeployment_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -34,8 +36,11 @@ class OpenapiBatchDeployment_Properties_Model:
 
 @dataclasses.dataclass
 class OpenapiBatchDeployment_Properties_Resources:
+    # The number of compute instance(s) provisioned. (AI-inferred)
     instance_count: Any = None
+    # The compute instance type (e.g. VM size) this resource uses. (AI-inferred)
     instance_type: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
@@ -67,6 +72,7 @@ class OpenapiBatchDeployment_Properties:
     output_file_name: Any = None
     # Possible values for DeploymentProvisioningState.
     provisioning_state: Any = None
+    # The compute resource(s) this applies to. (AI-inferred)
     resources: Any = None
     # Retry settings for a batch inference operation.
     retry_settings: Any = None

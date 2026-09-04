@@ -2,9 +2,13 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ServiceReplicationProtectionCluster_Properties_ClusterRegisteredNodes {
+  /** A unique identifier read from the protected machine's own BIOS. (AI-inferred) */
   biosId?: string | Computed<string>;
+  /** The fully qualified domain name of this cluster node. (AI-inferred) */
   clusterNodeFqdn?: string | Computed<string>;
+  /** Whether this virtual machine node represents a shared-disk cluster node. (AI-inferred) */
   isSharedDiskVirtualNode?: boolean | Computed<boolean>;
+  /** A reference to the protected machine this applies to. (AI-inferred) */
   machineId?: string | Computed<string>;
 }
 
@@ -18,37 +22,66 @@ export interface ServiceReplicationProtectionCluster_Properties_CurrentScenario 
 }
 
 export interface ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErrors {
+  /** When this resource was created, in UTC. (AI-inferred) */
   creationTimeUtc?: string | Computed<string>;
+  /** Whether this issue can be resolved by the customer directly. (AI-inferred) */
   customerResolvability?: string | Computed<string>;
+  /** A reference to the protected entity this applies to. (AI-inferred) */
   entityId?: string | Computed<string>;
+  /** The category this error belongs to. (AI-inferred) */
   errorCategory?: string | Computed<string>;
+  /** A machine-readable error code. (AI-inferred) */
   errorCode?: string | Computed<string>;
+  /** A unique identifier for this specific error occurrence. (AI-inferred) */
   errorId?: string | Computed<string>;
+  /** How severe this error is. (AI-inferred) */
   errorLevel?: string | Computed<string>;
+  /** A human-readable description of the error. (AI-inferred) */
   errorMessage?: string | Computed<string>;
+  /** Which component produced this error. (AI-inferred) */
   errorSource?: string | Computed<string>;
+  /** The category of error this represents. (AI-inferred) */
   errorType?: string | Computed<string>;
+  /** Likely cause(s) of this issue. (AI-inferred) */
   possibleCauses?: string | Computed<string>;
+  /** Guidance for resolving this issue. (AI-inferred) */
   recommendedAction?: string | Computed<string>;
+  /** The error message reported by the recovery provider. (AI-inferred) */
   recoveryProviderErrorMessage?: string | Computed<string>;
+  /** A short, human-readable summary of this result. (AI-inferred) */
   summaryMessage?: string | Computed<string>;
 }
 
 export interface ServiceReplicationProtectionCluster_Properties_HealthErrors {
+  /** When this resource was created, in UTC. (AI-inferred) */
   creationTimeUtc?: string | Computed<string>;
+  /** Whether this issue can be resolved by the customer directly. (AI-inferred) */
   customerResolvability?: string | Computed<string>;
+  /** A reference to the protected entity this applies to. (AI-inferred) */
   entityId?: string | Computed<string>;
+  /** The category this error belongs to. (AI-inferred) */
   errorCategory?: string | Computed<string>;
+  /** A machine-readable error code. (AI-inferred) */
   errorCode?: string | Computed<string>;
+  /** A unique identifier for this specific error occurrence. (AI-inferred) */
   errorId?: string | Computed<string>;
+  /** How severe this error is. (AI-inferred) */
   errorLevel?: string | Computed<string>;
+  /** A human-readable description of the error. (AI-inferred) */
   errorMessage?: string | Computed<string>;
+  /** Which component produced this error. (AI-inferred) */
   errorSource?: string | Computed<string>;
+  /** The category of error this represents. (AI-inferred) */
   errorType?: string | Computed<string>;
+  /** The underlying health issue(s) contributing to this error. (AI-inferred) */
   innerHealthErrors?: ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErrors[] | Computed<ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErrors[]>;
+  /** Likely cause(s) of this issue. (AI-inferred) */
   possibleCauses?: string | Computed<string>;
+  /** Guidance for resolving this issue. (AI-inferred) */
   recommendedAction?: string | Computed<string>;
+  /** The error message reported by the recovery provider. (AI-inferred) */
   recoveryProviderErrorMessage?: string | Computed<string>;
+  /** A short, human-readable summary of this result. (AI-inferred) */
   summaryMessage?: string | Computed<string>;
 }
 

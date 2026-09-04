@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkVirtualAppliance_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,7 +26,9 @@ class VirtualnetworkNetworkVirtualAppliance_Identity:
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkVirtualAppliance_Properties_AdditionalNics:
+    # Whether this resource has a public IP address assigned. (AI-inferred)
     has_public_ip: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
@@ -36,6 +40,7 @@ class VirtualnetworkNetworkVirtualAppliance_Properties_Delegation:
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRules:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
@@ -49,30 +54,40 @@ class VirtualnetworkNetworkVirtualAppliance_Properties_MigrationStatus:
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties:
+    # Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
     primary: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties:
+    # The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
     ip_configurations: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile:
+    # The network interface configuration(s) applied to instance(s) in this set. (AI-inferred)
     network_interface_configurations: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkVirtualAppliance_Properties_NvaInterfaceConfigurations:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -95,12 +110,19 @@ class VirtualnetworkNetworkVirtualAppliance_Properties_PartnerManagedResource:
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkVirtualAppliance_Properties_VirtualApplianceNics:
+    # The name of this specific instance. (AI-inferred)
     instance_name: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
     nic_type: Any = None
+    # The private (internal) IPv4 address assigned to this resource. (AI-inferred)
     private_ip_address: Any = None
+    # The private (internal) IPv6 address assigned to this resource. (AI-inferred)
     private_ip_address_v6: Any = None
+    # The public IPv4 address assigned to this resource. (AI-inferred)
     public_ip_address: Any = None
+    # The public IPv6 address assigned to this resource. (AI-inferred)
     public_ip_address_v6: Any = None
 
 @dataclasses.dataclass

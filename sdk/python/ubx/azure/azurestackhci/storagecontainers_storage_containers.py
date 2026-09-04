@@ -30,6 +30,7 @@ class StoragecontainersStorageContainers_Properties_Status:
     error_code: Any = None
     # Descriptive error message
     error_message: Any = None
+    # The outcome of the most recent operation performed on this storage container, e.g. `Succeeded`, `Failed`, or `InProgress`. (AI-inferred)
     provisioning_status: Any = None
 
 @dataclasses.dataclass

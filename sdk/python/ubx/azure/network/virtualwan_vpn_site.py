@@ -8,12 +8,16 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations_Pool:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations:
+    # Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
     allocated_address_prefixes: Any = None
+    # How many IP addresses to allocate from this pool. (AI-inferred)
     number_of_ip_addresses: Any = None
+    # A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
     pool: Any = None
 
 @dataclasses.dataclass
@@ -25,9 +29,13 @@ class VirtualwanVpnSite_Properties_AddressSpace:
 
 @dataclasses.dataclass
 class VirtualwanVpnSite_Properties_BgpProperties_BgpPeeringAddresses:
+    # Caller-chosen BGP peering IP addresses to use for this connection, instead of Azure's own auto-allocated defaults. (AI-inferred)
     custom_bgp_ip_addresses: Any = None
+    # Output only. The BGP peering IP address(es) Azure auto-allocated for this connection. (AI-inferred)
     default_bgp_ip_addresses: Any = None
+    # A reference to the IP configuration this applies to. (AI-inferred)
     ipconfiguration_id: Any = None
+    # Output only. The public IP address(es) of this VPN gateway's own tunnel endpoint(s). (AI-inferred)
     tunnel_ip_addresses: Any = None
 
 @dataclasses.dataclass
@@ -66,25 +74,36 @@ class VirtualwanVpnSite_Properties_O365Policy:
 
 @dataclasses.dataclass
 class VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_BgpProperties:
+    # The BGP Autonomous System Number this applies to. (AI-inferred)
     asn: Any = None
+    # The IP address used for BGP peering. (AI-inferred)
     bgp_peering_address: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_LinkProperties:
+    # The name of the ISP providing this VPN site link. (AI-inferred)
     link_provider_name: Any = None
+    # The link speed, in Mbps, of this VPN site link. (AI-inferred)
     link_speed_in_mbps: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnSite_Properties_VpnSiteLinks_Properties:
+    # BGP configuration (ASN, peering address) for this gateway or connection. (AI-inferred)
     bgp_properties: Any = None
+    # The fully qualified domain name assigned to this resource. (AI-inferred)
     fqdn: Any = None
+    # An IP address value. (AI-inferred)
     ip_address: Any = None
+    # Properties (name, provider, speed) describing this VPN site's own physical network link. (AI-inferred)
     link_properties: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnSite_Properties_VpnSiteLinks:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

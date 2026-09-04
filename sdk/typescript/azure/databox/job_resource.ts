@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface JobResource_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -23,7 +25,9 @@ export interface JobResource_Properties_DeliveryInfo {
 }
 
 export interface JobResource_Properties_Details_ContactDetails_NotificationPreference {
+  /** Whether notification email(s) are sent for this order's own status updates. (AI-inferred) */
   sendNotification?: boolean | Computed<boolean>;
+  /** The name of this processing stage. (AI-inferred) */
   stageName?: string | Computed<string>;
 }
 
@@ -43,66 +47,94 @@ export interface JobResource_Properties_Details_ContactDetails {
 }
 
 export interface JobResource_Properties_Details_CopyLogDetails {
+  /** The category of copy log this represents. (AI-inferred) */
   copyLogDetailsType?: string | Computed<string>;
 }
 
 export interface JobResource_Properties_Details_DataExportDetails_AccountDetails {
+  /** The kind of storage account this transfer targets. (AI-inferred) */
   dataAccountType?: string | Computed<string>;
+  /** The password used to access this device's own shares. (AI-inferred) */
   sharePassword?: string | Computed<string>;
 }
 
 export interface JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails_Include {
+  /** The kind of storage account this transfer targets. (AI-inferred) */
   dataAccountType?: string | Computed<string>;
+  /** Whether every blob in the account is transferred, rather than a filtered subset. (AI-inferred) */
   transferAllBlobs?: boolean | Computed<boolean>;
+  /** Whether every file in the account is transferred, rather than a filtered subset. (AI-inferred) */
   transferAllFiles?: boolean | Computed<boolean>;
 }
 
 export interface JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails {
+  /** Whether matching content is included in, rather than excluded from, this transfer. (AI-inferred) */
   include?: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails_Include | Computed<JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails_Include>;
 }
 
 export interface JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_AzureFileFilterDetails {
+  /** The specific file path(s) included in this transfer. (AI-inferred) */
   filePathList?: string[] | Computed<string[]>;
+  /** The file name prefix(es) included in this transfer. (AI-inferred) */
   filePrefixList?: string[] | Computed<string[]>;
+  /** The specific file share(s) included in this transfer. (AI-inferred) */
   fileShareList?: string[] | Computed<string[]>;
 }
 
 export interface JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_BlobFilterDetails {
+  /** The specific blob path(s) included in this transfer. (AI-inferred) */
   blobPathList?: string[] | Computed<string[]>;
+  /** The blob name prefix(es) included in this transfer. (AI-inferred) */
   blobPrefixList?: string[] | Computed<string[]>;
+  /** The specific container(s) included in this transfer. (AI-inferred) */
   containerList?: string[] | Computed<string[]>;
 }
 
 export interface JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_FilterFileDetails {
+  /** The path to the filter file restricting this transfer's own scope. (AI-inferred) */
   filterFilePath?: string | Computed<string>;
+  /** The format of the filter file, e.g. `AzureFile` or `BlockBlob`. (AI-inferred) */
   filterFileType?: string | Computed<string>;
 }
 
 export interface JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include {
+  /** Filter(s) restricting which Azure Files content is transferred. (AI-inferred) */
   azureFileFilterDetails?: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_AzureFileFilterDetails | Computed<JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_AzureFileFilterDetails>;
+  /** Filter(s) restricting which blob content is transferred. (AI-inferred) */
   blobFilterDetails?: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_BlobFilterDetails | Computed<JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_BlobFilterDetails>;
+  /** The kind of storage account this transfer targets. (AI-inferred) */
   dataAccountType?: string | Computed<string>;
+  /** Detail about the filter file restricting this transfer's own scope. (AI-inferred) */
   filterFileDetails?: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_FilterFileDetails[] | Computed<JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_FilterFileDetails[]>;
 }
 
 export interface JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails {
+  /** Whether matching content is included in, rather than excluded from, this transfer. (AI-inferred) */
   include?: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include | Computed<JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include>;
 }
 
 export interface JobResource_Properties_Details_DataExportDetails_TransferConfiguration {
+  /** Configuration for transferring every item, rather than a filtered subset. (AI-inferred) */
   transferAllDetails?: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails | Computed<JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails>;
+  /** Whether this transfer includes all data or only a filtered subset. (AI-inferred) */
   transferConfigurationType?: string | Computed<string>;
+  /** Filter(s) restricting which data is included in this transfer. (AI-inferred) */
   transferFilterDetails?: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails | Computed<JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails>;
 }
 
 export interface JobResource_Properties_Details_DataExportDetails {
+  /** Detail about the destination storage account this order transfers data to. (AI-inferred) */
   accountDetails?: JobResource_Properties_Details_DataExportDetails_AccountDetails | Computed<JobResource_Properties_Details_DataExportDetails_AccountDetails>;
+  /** How much diagnostic log detail is collected for this order. (AI-inferred) */
   logCollectionLevel?: string | Computed<string>;
+  /** Configuration controlling which data is included in this transfer. (AI-inferred) */
   transferConfiguration?: JobResource_Properties_Details_DataExportDetails_TransferConfiguration | Computed<JobResource_Properties_Details_DataExportDetails_TransferConfiguration>;
 }
 
 export interface JobResource_Properties_Details_DataImportDetails {
+  /** Detail about the destination storage account this order transfers data to. (AI-inferred) */
   accountDetails?: JobResource_Properties_Details_DataExportDetails_AccountDetails | Computed<JobResource_Properties_Details_DataExportDetails_AccountDetails>;
+  /** How much diagnostic log detail is collected for this order. (AI-inferred) */
   logCollectionLevel?: string | Computed<string>;
 }
 
@@ -134,19 +166,30 @@ export interface JobResource_Properties_Details_DeviceErasureDetails {
 }
 
 export interface JobResource_Properties_Details_JobStages_DelayInformation {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A machine-readable error code. (AI-inferred) */
   errorCode?: string | Computed<string>;
+  /** When this issue was resolved. (AI-inferred) */
   resolutionTime?: string | Computed<string>;
+  /** When this event or window started. (AI-inferred) */
   startTime?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface JobResource_Properties_Details_JobStages {
+  /** Detail about a delay affecting this order. (AI-inferred) */
   delayInformation?: JobResource_Properties_Details_JobStages_DelayInformation[] | Computed<JobResource_Properties_Details_JobStages_DelayInformation[]>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** Detail about this order's own current processing stage. (AI-inferred) */
   jobStageDetails?: unknown | Computed<unknown>;
+  /** The name of this processing stage. (AI-inferred) */
   stageName?: string | Computed<string>;
+  /** The current status of this processing stage. (AI-inferred) */
   stageStatus?: string | Computed<string>;
+  /** When this processing stage was reached. (AI-inferred) */
   stageTime?: string | Computed<string>;
 }
 
@@ -300,7 +343,9 @@ export interface JobResource_Properties_Details {
 }
 
 export interface JobResource_Properties_Error_AdditionalInfo {
+  /** Additional detail about this result. (AI-inferred) */
   info?: Record<string, unknown> | Computed<Record<string, unknown>>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

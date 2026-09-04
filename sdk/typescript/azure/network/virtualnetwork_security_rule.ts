@@ -2,12 +2,16 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups_Properties {
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred) */
   resourceGuid?: string | Computed<string>;
 }
 
 export interface VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups_Properties | Computed<VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups_Properties>;
 }
 

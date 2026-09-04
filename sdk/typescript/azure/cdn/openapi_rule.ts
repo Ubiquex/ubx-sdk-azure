@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiRule_Properties_Actions {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -10,6 +11,7 @@ export interface OpenapiRule_Properties {
   actions?: OpenapiRule_Properties_Actions[] | Computed<OpenapiRule_Properties_Actions[]>;
   /** A list of conditions that must be matched for the actions to be executed */
   conditions?: OpenapiRule_Properties_Actions[] | Computed<OpenapiRule_Properties_Actions[]>;
+  /** The current deployment status of this configuration. (AI-inferred) */
   deploymentStatus?: string | Computed<string>;
   /** If this rule is a match should the rules engine continue running the remaining rules or stop. If not present, defaults to Continue. */
   matchProcessingBehavior?: string | Computed<string>;

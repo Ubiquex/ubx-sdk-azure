@@ -4,9 +4,13 @@ package authorization
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RoledefinitionscallsRoleDefinition_Properties_Permissions struct {
-	Actions        any
-	DataActions    any
-	NotActions     any
+	// The control-plane operation(s) this role grants, e.g. `Microsoft.Compute/virtualMachines/write`; wildcards are supported. (AI-inferred)
+	Actions any
+	// The data-plane operation(s) this role grants -- actions on the data inside a resource, rather than the resource itself. (AI-inferred)
+	DataActions any
+	// Control-plane operation(s) explicitly excluded from `actions`, even if they'd otherwise match a wildcard. (AI-inferred)
+	NotActions any
+	// Data-plane operation(s) explicitly excluded from `data_actions`, even if they'd otherwise match a wildcard. (AI-inferred)
 	NotDataActions any
 }
 

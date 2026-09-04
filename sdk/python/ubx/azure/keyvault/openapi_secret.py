@@ -8,10 +8,15 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiSecret_Properties_Attributes:
+    # When this resource was created. (AI-inferred)
     created: Any = None
+    # Whether this key, secret, or certificate is currently enabled for use. (AI-inferred)
     enabled: Any = None
+    # When this key, secret, or certificate expires. (AI-inferred)
     exp: Any = None
+    # The time before which this key, secret, or certificate isn't yet valid. (AI-inferred)
     nbf: Any = None
+    # When this resource was last updated. (AI-inferred)
     updated: Any = None
 
 @dataclasses.dataclass

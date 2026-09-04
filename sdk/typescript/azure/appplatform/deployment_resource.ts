@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DeploymentResource_Properties_DeploymentSettings_Apms {
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
 }
 
@@ -61,11 +62,17 @@ export interface DeploymentResource_Properties_DeploymentSettings {
 }
 
 export interface DeploymentResource_Properties_Instances {
+  /** The current service-discovery registration status of this resource. (AI-inferred) */
   discoveryStatus?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A machine-readable reason code. (AI-inferred) */
   reason?: string | Computed<string>;
+  /** When this event or window started. (AI-inferred) */
   startTime?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** The availability zone this resource is provisioned in. (AI-inferred) */
   zone?: string | Computed<string>;
 }
 

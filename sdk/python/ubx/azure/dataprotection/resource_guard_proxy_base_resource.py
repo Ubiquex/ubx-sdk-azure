@@ -8,14 +8,20 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetails:
+    # The default request payload used when performing this operation, before any Resource Guard-required approval overrides. (AI-inferred)
     default_resource_request: Any = None
+    # The type of security-critical operation this applies to, e.g. disabling soft delete or changing immutability. (AI-inferred)
     vault_critical_operation: Any = None
 
 @dataclasses.dataclass
 class ResourceGuardProxyBaseResource_Properties:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # When this was last updated. (AI-inferred)
     last_updated_time: Any = None
+    # Detail about the security-critical operation(s) this Resource Guard protects. (AI-inferred)
     resource_guard_operation_details: Any = None
+    # A reference to the Resource Guard protecting this critical operation. (AI-inferred)
     resource_guard_resource_id: Any = None
 
 _ResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetailsFields = {

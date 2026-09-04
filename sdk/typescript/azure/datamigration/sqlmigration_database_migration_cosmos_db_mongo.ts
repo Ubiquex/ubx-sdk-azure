@@ -2,18 +2,28 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList_MigrationProgressDetails {
+  /** How long this operation took, in seconds. (AI-inferred) */
   durationInSeconds?: number | Computed<number>;
+  /** Detail about an error encountered during migration. (AI-inferred) */
   migrationError?: string | Computed<string>;
+  /** The current status of this migration. (AI-inferred) */
   migrationStatus?: string | Computed<string>;
+  /** The number of documents processed so far. (AI-inferred) */
   processedDocumentCount?: number | Computed<number>;
+  /** The total number of documents in the source. (AI-inferred) */
   sourceDocumentCount?: number | Computed<number>;
 }
 
 export interface SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList {
+  /** Detailed progress information for this migration. (AI-inferred) */
   migrationProgressDetails?: SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList_MigrationProgressDetails | Computed<SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList_MigrationProgressDetails>;
+  /** The source collection this migration reads from. (AI-inferred) */
   sourceCollection?: string | Computed<string>;
+  /** The source database this migration reads from. (AI-inferred) */
   sourceDatabase?: string | Computed<string>;
+  /** The destination collection this migration writes to. (AI-inferred) */
   targetCollection?: string | Computed<string>;
+  /** The destination database this migration writes to. (AI-inferred) */
   targetDatabase?: string | Computed<string>;
 }
 

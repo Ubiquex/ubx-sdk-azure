@@ -2,12 +2,16 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface SwaggerNginxDeployment_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
 export interface SwaggerNginxDeployment_Identity {
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
   /** Identity Type */
   type?: string | Computed<string>;
@@ -21,7 +25,9 @@ export interface SwaggerNginxDeployment_Properties_AutoUpgradeProfile {
 }
 
 export interface SwaggerNginxDeployment_Properties_Logging_StorageAccount {
+  /** The name of the associated storage account. (AI-inferred) */
   accountName?: string | Computed<string>;
+  /** The name of the storage container this applies to. (AI-inferred) */
   containerName?: string | Computed<string>;
 }
 
@@ -31,21 +37,28 @@ export interface SwaggerNginxDeployment_Properties_Logging {
 }
 
 export interface SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PrivateIpaddresses {
+  /** The private (internal) IP address assigned to this resource. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** Whether the private IP address is statically assigned or dynamically allocated. (AI-inferred) */
   privateIpallocationMethod?: string | Computed<string>;
+  /** A reference to the subnet this resource is deployed into. (AI-inferred) */
   subnetId?: string | Computed<string>;
 }
 
 export interface SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PublicIpaddresses {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration {
+  /** The private (internal) IP address(es) assigned to this resource. (AI-inferred) */
   privateIpaddresses?: SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PrivateIpaddresses[] | Computed<SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PrivateIpaddresses[]>;
+  /** The public IP address(es) assigned to this resource. (AI-inferred) */
   publicIpaddresses?: SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PublicIpaddresses[] | Computed<SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PublicIpaddresses[]>;
 }
 
 export interface SwaggerNginxDeployment_Properties_NetworkProfile_NetworkInterfaceConfiguration {
+  /** A reference to the subnet this resource is deployed into. (AI-inferred) */
   subnetId?: string | Computed<string>;
 }
 
@@ -96,22 +109,28 @@ export interface SwaggerNginxDeployment_Properties_NginxAppProtect {
 }
 
 export interface SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles_Capacity {
+  /** The maximum value allowed. (AI-inferred) */
   max?: number | Computed<number>;
+  /** The minimum value allowed. (AI-inferred) */
   min?: number | Computed<number>;
 }
 
 export interface SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles {
+  /** The number of instance(s) this resource is provisioned with. (AI-inferred) */
   capacity?: SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles_Capacity | Computed<SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles_Capacity>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings {
+  /** The scaling profile(s) available for this deployment. (AI-inferred) */
   profiles: SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles[] | Computed<SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles[]>;
 }
 
 export interface SwaggerNginxDeployment_Properties_ScalingProperties {
   /** The settings for enabling automatic scaling of the deployment. If this field is specified, 'scale.capacity' must be empty. */
   autoScaleSettings?: SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings | Computed<SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings>;
+  /** The number of instance(s) this resource is provisioned with. (AI-inferred) */
   capacity?: number | Computed<number>;
 }
 
@@ -125,6 +144,7 @@ export interface SwaggerNginxDeployment_Properties {
   autoUpgradeProfile?: SwaggerNginxDeployment_Properties_AutoUpgradeProfile | Computed<SwaggerNginxDeployment_Properties_AutoUpgradeProfile>;
   /** Dataplane API endpoint for the caller to update the NGINX state of the deployment. */
   dataplaneApiEndpoint?: string | Computed<string>;
+  /** Whether diagnostic data collection is enabled for this deployment. (AI-inferred) */
   enableDiagnosticsSupport?: boolean | Computed<boolean>;
   /** The IP address of the deployment. */
   ipAddress?: string | Computed<string>;
@@ -134,6 +154,7 @@ export interface SwaggerNginxDeployment_Properties {
   networkProfile?: SwaggerNginxDeployment_Properties_NetworkProfile | Computed<SwaggerNginxDeployment_Properties_NetworkProfile>;
   /** Settings for NGINX App Protect (NAP) */
   nginxAppProtect?: SwaggerNginxDeployment_Properties_NginxAppProtect | Computed<SwaggerNginxDeployment_Properties_NginxAppProtect>;
+  /** The NGINX version this deployment runs. (AI-inferred) */
   nginxVersion?: string | Computed<string>;
   /** Provisioning State */
   provisioningState?: string | Computed<string>;

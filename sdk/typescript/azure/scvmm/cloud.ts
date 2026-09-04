@@ -20,11 +20,17 @@ export interface Cloud_Properties_CloudCapacity {
 }
 
 export interface Cloud_Properties_StorageQoSpolicies {
+  /** The maximum network bandwidth, in Mbps, this virtual network adapter is permitted to use. (AI-inferred) */
   bandwidthLimit?: number | Computed<number>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The maximum I/O operations per second permitted for this disk. (AI-inferred) */
   iopsMaximum?: number | Computed<number>;
+  /** The minimum I/O operations per second reserved for this disk. (AI-inferred) */
   iopsMinimum?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A reference to the storage QoS policy this applies to. (AI-inferred) */
   policyId?: string | Computed<string>;
 }
 

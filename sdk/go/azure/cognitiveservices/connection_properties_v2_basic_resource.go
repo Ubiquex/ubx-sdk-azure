@@ -11,18 +11,24 @@ type ConnectionPropertiesV2BasicResource_Properties struct {
 	// A type definition that refers the id to an Azure Resource Manager resource.
 	CreatedByWorkspaceArmId any
 	// Provides the error message if the connection fails
-	Error      any
+	Error any
+	// When this resource or grant expires. (AI-inferred)
 	ExpiryTime any
 	// Group based on connection category
-	Group         any
+	Group any
+	// Whether this resource is shared with every project, rather than a specific subset. (AI-inferred)
 	IsSharedToAll any
 	// Store user metadata for this connection
-	Metadata       any
-	PeRequirement  any
-	PeStatus       any
+	Metadata any
+	// Whether a private endpoint connection is required, optional, or not applicable for this resource. (AI-inferred)
+	PeRequirement any
+	// The current status of this resource's own private endpoint connection(s). (AI-inferred)
+	PeStatus any
+	// The user(s) this resource is shared with. (AI-inferred)
 	SharedUserList any
 	// The connection URL to be used.
-	Target                      any
+	Target any
+	// Whether the workspace's own managed identity is used to authenticate, rather than a caller-supplied credential. (AI-inferred)
 	UseWorkspaceManagedIdentity any
 }
 

@@ -123,13 +123,21 @@ class ManagedclustersAgentPool_Properties_LinuxOsconfig:
 
 @dataclasses.dataclass
 class ManagedclustersAgentPool_Properties_LocalDnsprofile_KubeDnsoverrides:
+    # How long, in seconds, a DNS response is cached. (AI-inferred)
     cache_duration_in_seconds: Any = None
+    # The upstream DNS server(s) matching queries are forwarded to. (AI-inferred)
     forward_destination: Any = None
+    # How queries are distributed across multiple forward destinations, e.g. round-robin or sequential. (AI-inferred)
     forward_policy: Any = None
+    # The maximum number of operation(s) permitted to run concurrently. (AI-inferred)
     max_concurrent: Any = None
+    # The network protocol used. (AI-inferred)
     protocol: Any = None
+    # Whether DNS query logging is enabled. (AI-inferred)
     query_logging: Any = None
+    # Whether stale (expired) cached DNS responses are served while a fresh answer is fetched. (AI-inferred)
     serve_stale: Any = None
+    # How long, in seconds, a stale cached DNS response may continue being served. (AI-inferred)
     serve_stale_duration_in_seconds: Any = None
 
 @dataclasses.dataclass
@@ -145,13 +153,18 @@ class ManagedclustersAgentPool_Properties_LocalDnsprofile:
 
 @dataclasses.dataclass
 class ManagedclustersAgentPool_Properties_NetworkProfile_AllowedHostPorts:
+    # The last port, inclusive, in this range. (AI-inferred)
     port_end: Any = None
+    # The first port, inclusive, in this range. (AI-inferred)
     port_start: Any = None
+    # The network protocol used. (AI-inferred)
     protocol: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersAgentPool_Properties_NetworkProfile_NodePublicIptags:
+    # The category this IP tag belongs to. (AI-inferred)
     ip_tag_type: Any = None
+    # A label attached to this resource. (AI-inferred)
     tag: Any = None
 
 @dataclasses.dataclass
@@ -179,7 +192,9 @@ class ManagedclustersAgentPool_Properties_SecurityProfile:
 
 @dataclasses.dataclass
 class ManagedclustersAgentPool_Properties_Status_ProvisioningError_AdditionalInfo:
+    # Additional detail about this result. (AI-inferred)
     info: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -188,10 +203,15 @@ class ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details_Detai
 
 @dataclasses.dataclass
 class ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
@@ -227,13 +247,18 @@ class ManagedclustersAgentPool_Properties_UpgradeSettings:
 
 @dataclasses.dataclass
 class ManagedclustersAgentPool_Properties_VirtualMachineNodesStatus:
+    # How many of this item there are. (AI-inferred)
     count: Any = None
+    # The size of this resource. (AI-inferred)
     size: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersAgentPool_Properties_VirtualMachinesProfile_Scale_Autoscale:
+    # The maximum count allowed. (AI-inferred)
     max_count: Any = None
+    # The minimum count required. (AI-inferred)
     min_count: Any = None
+    # The size of this resource. (AI-inferred)
     size: Any = None
 
 @dataclasses.dataclass

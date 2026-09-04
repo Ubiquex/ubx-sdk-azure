@@ -4,62 +4,94 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_Delete struct {
-	DaysAfterCreationGreaterThan       any
+	// The minimum number of days since creation for this lifecycle condition to match. (AI-inferred)
+	DaysAfterCreationGreaterThan any
+	// The minimum number of days since last access for this lifecycle condition to match. (AI-inferred)
 	DaysAfterLastAccessTimeGreaterThan any
+	// The minimum number of days since the last tier change for this lifecycle condition to match. (AI-inferred)
 	DaysAfterLastTierChangeGreaterThan any
-	DaysAfterModificationGreaterThan   any
+	// The minimum number of days since last modification for this lifecycle condition to match. (AI-inferred)
+	DaysAfterModificationGreaterThan any
 }
 
 type OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob struct {
-	Delete                      any
+	// The deletion action applied by this lifecycle rule. (AI-inferred)
+	Delete any
+	// Whether a blob is automatically moved back to the Hot tier the moment it's accessed, after having cooled. (AI-inferred)
 	EnableAutoTierToHotFromCool any
-	TierToArchive               any
-	TierToCold                  any
-	TierToCool                  any
-	TierToHot                   any
+	// Automatically moves matching blobs to the Archive storage tier. (AI-inferred)
+	TierToArchive any
+	// Automatically moves matching blobs to the Cold storage tier. (AI-inferred)
+	TierToCold any
+	// Automatically moves matching blobs to the Cool storage tier. (AI-inferred)
+	TierToCool any
+	// Automatically moves matching blobs to the Hot storage tier. (AI-inferred)
+	TierToHot any
 }
 
 type OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_Delete struct {
-	DaysAfterCreationGreaterThan       any
+	// The minimum number of days since creation for this lifecycle condition to match. (AI-inferred)
+	DaysAfterCreationGreaterThan any
+	// The minimum number of days since the last tier change for this lifecycle condition to match. (AI-inferred)
 	DaysAfterLastTierChangeGreaterThan any
 }
 
 type OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot struct {
-	Delete        any
+	// The deletion action applied by this lifecycle rule. (AI-inferred)
+	Delete any
+	// Automatically moves matching blobs to the Archive storage tier. (AI-inferred)
 	TierToArchive any
-	TierToCold    any
-	TierToCool    any
-	TierToHot     any
+	// Automatically moves matching blobs to the Cold storage tier. (AI-inferred)
+	TierToCold any
+	// Automatically moves matching blobs to the Cool storage tier. (AI-inferred)
+	TierToCool any
+	// Automatically moves matching blobs to the Hot storage tier. (AI-inferred)
+	TierToHot any
 }
 
 type OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions struct {
+	// Configuration governing the lifecycle of a base (non-versioned) blob. (AI-inferred)
 	BaseBlob any
+	// A reference to the snapshot this applies to. (AI-inferred)
 	Snapshot any
-	Version  any
+	// The version identifier this applies to. (AI-inferred)
+	Version any
 }
 
 type OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters_BlobIndexMatch struct {
-	Name  any
-	Op    any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The operation performed. (AI-inferred)
+	Op any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters struct {
+	// The blob index tag condition(s) a blob must match for this rule to apply. (AI-inferred)
 	BlobIndexMatch any
-	BlobTypes      any
-	PrefixMatch    any
+	// The blob type(s) (e.g. block blob) this rule applies to. (AI-inferred)
+	BlobTypes any
+	// The blob name prefix(es) this rule matches. (AI-inferred)
+	PrefixMatch any
 }
 
 type OpenapiManagementPolicy_Properties_Policy_Rules_Definition struct {
+	// The action(s) this policy applies. (AI-inferred)
 	Actions any
+	// The condition(s) restricting which blob(s) this rule applies to. (AI-inferred)
 	Filters any
 }
 
 type OpenapiManagementPolicy_Properties_Policy_Rules struct {
+	// The schema or configuration defining this rule. (AI-inferred)
 	Definition any
-	Enabled    any
-	Name       any
-	Type       any
+	// Whether this feature is turned on. (AI-inferred)
+	Enabled any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiManagementPolicy_Properties_Policy struct {

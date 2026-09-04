@@ -39,13 +39,16 @@ type SwaggerNginxDeploymentApiKeyResponseConfig struct {
 }
 
 type SwaggerNginxDeploymentApiKeyResponseAttrs struct {
-	Id   any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 	// Nginx Deployment Api Key Request Properties
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 var SwaggerNginxDeploymentApiKeyResponse = ubx.ResourceBinding{

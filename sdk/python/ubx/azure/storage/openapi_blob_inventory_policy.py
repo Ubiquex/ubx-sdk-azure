@@ -8,31 +8,48 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters_CreationTime:
+    # The number of most recent day(s) this report or query covers. (AI-inferred)
     last_ndays: Any = None
 
 @dataclasses.dataclass
 class OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters:
+    # The blob type(s) (e.g. block blob) this rule applies to. (AI-inferred)
     blob_types: Any = None
+    # When this resource was created. (AI-inferred)
     creation_time: Any = None
+    # The blob name prefix(es) excluded from this rule. (AI-inferred)
     exclude_prefix: Any = None
+    # Whether this rule also applies to previous, versioned copies of a blob. (AI-inferred)
     include_blob_versions: Any = None
+    # Whether soft-deleted items are included. (AI-inferred)
     include_deleted: Any = None
+    # Whether this rule also applies to a blob's own snapshots. (AI-inferred)
     include_snapshots: Any = None
+    # The blob name prefix(es) this rule matches. (AI-inferred)
     prefix_match: Any = None
 
 @dataclasses.dataclass
 class OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition:
+    # The condition(s) restricting which blob(s) this rule applies to. (AI-inferred)
     filters: Any = None
+    # The format this data is expressed in. (AI-inferred)
     format: Any = None
+    # The category of Microsoft Entra ID object this permission applies to, e.g. user or group. (AI-inferred)
     object_type: Any = None
+    # The recurrence schedule this applies to. (AI-inferred)
     schedule: Any = None
+    # The field(s) making up this schema. (AI-inferred)
     schema_fields: Any = None
 
 @dataclasses.dataclass
 class OpenapiBlobInventoryPolicy_Properties_Policy_Rules:
+    # The schema or configuration defining this rule. (AI-inferred)
     definition: Any = None
+    # Where this data is sent. (AI-inferred)
     destination: Any = None
+    # Whether this feature is turned on. (AI-inferred)
     enabled: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass

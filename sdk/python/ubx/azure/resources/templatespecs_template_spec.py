@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class TemplatespecsTemplateSpec_Properties_Versions:
+    # A human-readable description of this template spec version. (AI-inferred)
     description: Any = None
+    # Output only. When this template spec version was created. (AI-inferred)
     time_created: Any = None
+    # Output only. When this template spec version was last modified. (AI-inferred)
     time_modified: Any = None
 
 @dataclasses.dataclass

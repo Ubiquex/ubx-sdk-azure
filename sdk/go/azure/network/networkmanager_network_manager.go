@@ -4,9 +4,12 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerNetworkManager_Properties_NetworkManagerScopes_CrossTenantScopes struct {
+	// The management group(s) this scope covers. (AI-inferred)
 	ManagementGroups any
-	Subscriptions    any
-	TenantId         any
+	// The subscription ID(s) this auto-approval or visibility rule applies to. (AI-inferred)
+	Subscriptions any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
 }
 
 type NetworkmanagerNetworkManager_Properties_NetworkManagerScopes struct {

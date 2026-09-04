@@ -11,6 +11,7 @@ type VirtualnetworkCustomIpPrefix_ExtendedLocation struct {
 }
 
 type VirtualnetworkCustomIpPrefix_Properties_ChildCustomIpPrefixes struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 

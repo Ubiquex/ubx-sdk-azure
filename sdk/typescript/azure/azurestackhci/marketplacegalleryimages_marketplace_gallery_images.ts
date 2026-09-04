@@ -38,10 +38,12 @@ export interface MarketplacegalleryimagesMarketplaceGalleryImages_Properties_Sta
   errorMessage?: string | Computed<string>;
   /** The progress of the operation in percentage */
   progressPercentage?: number | Computed<number>;
+  /** The outcome of the most recent operation performed on this marketplace gallery image, e.g. `Succeeded`, `Failed`, or `InProgress`. (AI-inferred) */
   provisioningStatus?: MarketplacegalleryimagesMarketplaceGalleryImages_Properties_Status_ProvisioningStatus | Computed<MarketplacegalleryimagesMarketplaceGalleryImages_Properties_Status_ProvisioningStatus>;
 }
 
 export interface MarketplacegalleryimagesMarketplaceGalleryImages_Properties_Version_Properties_StorageProfile_OsDiskImage {
+  /** The size, in MB, of the OS disk image for this marketplace gallery image version. (AI-inferred) */
   sizeInMb?: number | Computed<number>;
 }
 

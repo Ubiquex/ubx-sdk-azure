@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiOnlineDeployment_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,9 +26,13 @@ class OpenapiOnlineDeployment_Identity:
 
 @dataclasses.dataclass
 class OpenapiOnlineDeployment_Properties_DataCollector_Collections:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Whether data collection is enabled, disabled, or disabled with data deletion. (AI-inferred)
     data_collection_mode: Any = None
+    # A reference to the data asset this applies to. (AI-inferred)
     data_id: Any = None
+    # The fraction of requests sampled for data collection. (AI-inferred)
     sampling_rate: Any = None
 
 @dataclasses.dataclass
@@ -38,6 +44,7 @@ class OpenapiOnlineDeployment_Properties_DataCollector_RequestLogging:
 class OpenapiOnlineDeployment_Properties_DataCollector:
     # [Required] The collection configuration. Each collection has it own configuration to collect model data and the name of collection can be arbitrary string. Model data collector can be used for either payload logging or custom logging or both of them. Collection request and response are reserved for payload logging, others are for custom logging.
     collections: Any = None
+    # Configuration for logging inference request/response payloads. (AI-inferred)
     request_logging: Any = None
     # When model data is collected to blob storage, we need to roll the data to different path to avoid logging all of them in a single blob file. If the rolling rate is hour, all data will be collected in the blob path /yyyy/MM/dd/HH/. If it's day, all data will be collected in blob path /yyyy/MM/dd/. The other benefit of rolling path is that model monitoring ui is able to select a time range of data very quickly.
     rolling_rate: Any = None
@@ -66,12 +73,14 @@ class OpenapiOnlineDeployment_Properties_RequestSettings:
 
 @dataclasses.dataclass
 class OpenapiOnlineDeployment_Properties_ScaleSettings:
+    # How this resource scales, e.g. manually or automatically. (AI-inferred)
     scale_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiOnlineDeployment_Properties:
     # If true, enables Application Insights logging.
     app_insights_enabled: Any = None
+    # Configuration for collecting inference request/response data. (AI-inferred)
     data_collector: Any = None
     # Enum to determine whether PublicNetworkAccess is Enabled or Disabled for egress of a deployment.
     egress_public_network_access: Any = None
@@ -224,6 +233,7 @@ class OpenapiOnlineDeploymentConfig:
     kind: Any = None
     # The geo-location where the resource lives
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
@@ -238,6 +248,7 @@ class OpenapiOnlineDeploymentAttrs:
     kind: Any = None
     # The geo-location where the resource lives
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None

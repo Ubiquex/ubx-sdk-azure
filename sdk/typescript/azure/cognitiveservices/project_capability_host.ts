@@ -23,10 +23,12 @@ const ProjectCapabilityHost_PropertiesFields: FieldMap = {
 };
 
 export interface ProjectCapabilityHostConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: ProjectCapabilityHost_Properties | Computed<ProjectCapabilityHost_Properties>;
 }
 
 export interface ProjectCapabilityHostAttrs {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: ProjectCapabilityHost_Properties;
 }
 

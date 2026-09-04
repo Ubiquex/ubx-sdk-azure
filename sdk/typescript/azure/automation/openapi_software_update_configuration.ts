@@ -9,7 +9,9 @@ export interface OpenapiSoftwareUpdateConfiguration_Properties_Error {
 }
 
 export interface OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfo_AdvancedSchedule_MonthlyOccurrences {
+  /** The day-of-week or day-of-month component of this schedule. (AI-inferred) */
   day?: string | Computed<string>;
+  /** Which specific occurrence of the matching day within the schedule's own recurrence this applies to. (AI-inferred) */
   occurrence?: number | Computed<number>;
 }
 
@@ -79,18 +81,25 @@ export interface OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfigurati
 }
 
 export interface OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries_TagSettings {
+  /** Whether all or any of this filter's own conditions must match. (AI-inferred) */
   filterOperator?: string | Computed<string>;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags?: Record<string, string[]> | Computed<Record<string, string[]>>;
 }
 
 export interface OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries {
+  /** The Azure region(s) this applies to. (AI-inferred) */
   locations?: string[] | Computed<string[]>;
+  /** What this configuration's own scope covers. (AI-inferred) */
   scope?: string[] | Computed<string[]>;
+  /** Configuration for which resource tag(s) this applies to. (AI-inferred) */
   tagSettings?: OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries_TagSettings | Computed<OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries_TagSettings>;
 }
 
 export interface OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_NonAzureQueries {
+  /** The name this DSC configuration function is aliased as. (AI-inferred) */
   functionAlias?: string | Computed<string>;
+  /** A reference to the Log Analytics workspace this applies to. (AI-inferred) */
   workspaceId?: string | Computed<string>;
 }
 

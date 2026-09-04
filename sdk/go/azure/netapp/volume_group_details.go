@@ -4,7 +4,9 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VolumeGroupDetails_Properties_GroupMetaData_GlobalPlacementRules struct {
-	Key   any
+	// The key of this metadata entry. (AI-inferred)
+	Key any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
@@ -22,158 +24,274 @@ type VolumeGroupDetails_Properties_GroupMetaData struct {
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Backup struct {
+	// A reference to the backup policy this applies to. (AI-inferred)
 	BackupPolicyId any
-	BackupVaultId  any
+	// A reference to the backup vault this applies to. (AI-inferred)
+	BackupVaultId any
+	// Whether this policy's own rules are actively enforced, rather than only evaluated. (AI-inferred)
 	PolicyEnforced any
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_RansomwareProtection struct {
-	ActualRansomwareProtectionState  any
+	// Output only. The ransomware protection state this volume is actually currently in. (AI-inferred)
+	ActualRansomwareProtectionState any
+	// The ransomware protection state requested for this volume. (AI-inferred)
 	DesiredRansomwareProtectionState any
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication_DestinationReplications struct {
-	Region          any
+	// The Azure region this applies to. (AI-inferred)
+	Region any
+	// The kind of replication relationship this represents, e.g. cross-region or cross-zone. (AI-inferred)
 	ReplicationType any
-	ResourceId      any
-	Zone            any
+	// A reference to the resource this applies to. (AI-inferred)
+	ResourceId any
+	// The availability zone this resource is provisioned in. (AI-inferred)
+	Zone any
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication_RemotePath struct {
+	// The hostname a client outside the peered network uses to reach this volume. (AI-inferred)
 	ExternalHostName any
-	ServerName       any
-	VolumeName       any
+	// The name of this server. (AI-inferred)
+	ServerName any
+	// The name of this volume. (AI-inferred)
+	VolumeName any
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Replication struct {
-	DestinationReplications        any
-	EndpointType                   any
-	ExternalReplicationSetupInfo   any
+	// The replication relationship/relationships where this volume acts as the destination. (AI-inferred)
+	DestinationReplications any
+	// Whether this volume is the source or destination endpoint of a replication relationship. (AI-inferred)
+	EndpointType any
+	// Detail about setting up replication to an externally hosted destination. (AI-inferred)
+	ExternalReplicationSetupInfo any
+	// The current status of setting up replication to an externally hosted destination. (AI-inferred)
 	ExternalReplicationSetupStatus any
-	MirrorState                    any
-	RelationshipStatus             any
-	RemotePath                     any
-	RemoteVolumeRegion             any
-	RemoteVolumeResourceId         any
-	ReplicationId                  any
-	ReplicationSchedule            any
+	// The current synchronization state of this replication relationship. (AI-inferred)
+	MirrorState any
+	// The current status of this replication relationship. (AI-inferred)
+	RelationshipStatus any
+	// The path on the remote system this configuration connects to. (AI-inferred)
+	RemotePath any
+	// The Azure region the replication source or destination volume is deployed in. (AI-inferred)
+	RemoteVolumeRegion any
+	// A reference to the replication source or destination volume. (AI-inferred)
+	RemoteVolumeResourceId any
+	// A unique identifier for this replication relationship. (AI-inferred)
+	ReplicationId any
+	// How often data is replicated, e.g. hourly or daily. (AI-inferred)
+	ReplicationSchedule any
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_Snapshot struct {
+	// A reference to the snapshot policy this applies to. (AI-inferred)
 	SnapshotPolicyId any
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties_DataProtection_VolumeRelocation struct {
-	ReadyToBeFinalized  any
+	// Whether this clone split has completed enough to be finalized. (AI-inferred)
+	ReadyToBeFinalized any
+	// Whether relocation of this resource to different underlying infrastructure has been requested. (AI-inferred)
 	RelocationRequested any
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties_DataProtection struct {
-	Backup               any
+	// A reference to the backup this applies to. (AI-inferred)
+	Backup any
+	// Ransomware protection configuration for this volume. (AI-inferred)
 	RansomwareProtection any
-	Replication          any
-	Snapshot             any
-	VolumeRelocation     any
+	// Replication configuration for this volume. (AI-inferred)
+	Replication any
+	// A reference to the snapshot this applies to. (AI-inferred)
+	Snapshot any
+	// Configuration for relocating this volume to different underlying infrastructure. (AI-inferred)
+	VolumeRelocation any
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties_ExportPolicy_Rules struct {
-	AllowedClients      any
-	ChownMode           any
-	Cifs                any
-	HasRootAccess       any
-	Kerberos5ReadOnly   any
-	Kerberos5ReadWrite  any
-	Kerberos5iReadOnly  any
+	// The client IP address range(s), in CIDR notation, permitted to access this export. (AI-inferred)
+	AllowedClients any
+	// Who is permitted to change file ownership on this volume, e.g. only root or any user. (AI-inferred)
+	ChownMode any
+	// Whether the SMB/CIFS protocol is enabled for this volume. (AI-inferred)
+	Cifs any
+	// Whether this client is granted root access. (AI-inferred)
+	HasRootAccess any
+	// Whether Kerberos v5 authenticated clients are granted read-only access. (AI-inferred)
+	Kerberos5ReadOnly any
+	// Whether Kerberos v5 authenticated clients are granted read-write access. (AI-inferred)
+	Kerberos5ReadWrite any
+	// Whether Kerberos v5 with integrity checking authenticated clients are granted read-only access. (AI-inferred)
+	Kerberos5iReadOnly any
+	// Whether Kerberos v5 with integrity checking authenticated clients are granted read-write access. (AI-inferred)
 	Kerberos5iReadWrite any
-	Kerberos5pReadOnly  any
+	// Whether Kerberos v5 with privacy protection authenticated clients are granted read-only access. (AI-inferred)
+	Kerberos5pReadOnly any
+	// Whether Kerberos v5 with privacy protection authenticated clients are granted read-write access. (AI-inferred)
 	Kerberos5pReadWrite any
-	Nfsv3               any
-	Nfsv41              any
-	RuleIndex           any
-	UnixReadOnly        any
-	UnixReadWrite       any
+	// Whether the NFSv3 protocol is enabled for this volume. (AI-inferred)
+	Nfsv3 any
+	// Whether the NFSv4.1 protocol is enabled for this volume. (AI-inferred)
+	Nfsv41 any
+	// This rule's own relative evaluation order. (AI-inferred)
+	RuleIndex any
+	// Whether UNIX clients are granted read-only access. (AI-inferred)
+	UnixReadOnly any
+	// Whether UNIX clients are granted read-write access. (AI-inferred)
+	UnixReadWrite any
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties_ExportPolicy struct {
+	// The rule(s) making up this policy. (AI-inferred)
 	Rules any
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties_MountTargets struct {
-	FileSystemId  any
-	IpAddress     any
+	// A unique identifier for this volume's own file system. (AI-inferred)
+	FileSystemId any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// A unique identifier for this volume's own mount target. (AI-inferred)
 	MountTargetId any
+	// The fully qualified domain name of the SMB server hosting this volume. (AI-inferred)
 	SmbServerFqdn any
 }
 
 type VolumeGroupDetails_Properties_Volumes_Properties struct {
+	// Whether the capacity pool is allowed to grow automatically to accommodate splitting a short-term clone. (AI-inferred)
 	AcceptGrowCapacityPoolForShortTermCloneSplit any
-	ActualThroughputMibps                        any
-	AvsDataStore                                 any
-	BackupId                                     any
-	BaremetalTenantId                            any
-	BreakthroughMode                             any
-	CapacityPoolResourceId                       any
-	CloneProgress                                any
-	CoolAccess                                   any
-	CoolAccessRetrievalPolicy                    any
-	CoolAccessTieringPolicy                      any
-	CoolnessPeriod                               any
-	CreationToken                                any
-	DataProtection                               any
-	DataStoreResourceId                          any
-	DefaultGroupQuotaInKiBs                      any
-	DefaultUserQuotaInKiBs                       any
-	DeleteBaseSnapshot                           any
-	EffectiveNetworkFeatures                     any
-	EnableSubvolumes                             any
-	Encrypted                                    any
-	EncryptionKeySource                          any
-	ExportPolicy                                 any
-	FileAccessLogs                               any
-	FileSystemId                                 any
-	InheritedSizeInBytes                         any
-	IsDefaultQuotaEnabled                        any
-	IsLargeVolume                                any
-	IsRestoring                                  any
-	KerberosEnabled                              any
-	KeyVaultPrivateEndpointResourceId            any
-	LdapEnabled                                  any
-	MaximumNumberOfFiles                         any
-	MountTargets                                 any
-	NetworkFeatures                              any
-	NetworkSiblingSetId                          any
-	OriginatingResourceId                        any
-	PlacementRules                               any
-	ProtocolTypes                                any
-	ProvisionedAvailabilityZone                  any
-	ProvisioningState                            any
-	ProximityPlacementGroup                      any
-	SecurityStyle                                any
-	ServiceLevel                                 any
-	SmbAccessBasedEnumeration                    any
-	SmbContinuouslyAvailable                     any
-	SmbEncryption                                any
-	SmbNonBrowsable                              any
-	SnapshotDirectoryVisible                     any
-	SnapshotId                                   any
-	StorageToNetworkProximity                    any
-	SubnetId                                     any
-	T2Network                                    any
-	ThroughputMibps                              any
-	UnixPermissions                              any
-	UsageThreshold                               any
-	VolumeGroupName                              any
-	VolumeSpecName                               any
-	VolumeType                                   any
+	// Output only. The throughput, in MiB/s, this volume actually currently has provisioned. (AI-inferred)
+	ActualThroughputMibps any
+	// Whether this volume is enabled for use as an Azure VMware Solution datastore. (AI-inferred)
+	AvsDataStore any
+	// A reference to the backup this applies to. (AI-inferred)
+	BackupId any
+	// The identifier of the bare-metal tenant this volume is hosted on. (AI-inferred)
+	BaremetalTenantId any
+	// Whether specific processes are permitted to bypass cool access retrieval throttling. (AI-inferred)
+	BreakthroughMode any
+	// A reference to the capacity pool this volume belongs to. (AI-inferred)
+	CapacityPoolResourceId any
+	// How far this clone operation has progressed, as a percentage. (AI-inferred)
+	CloneProgress any
+	// Whether inactive data on this volume is automatically tiered to a cooler, lower-cost storage tier. (AI-inferred)
+	CoolAccess any
+	// How aggressively cold, tiered data is retrieved back to the hot tier when accessed. (AI-inferred)
+	CoolAccessRetrievalPolicy any
+	// Which data on this volume is eligible for tiering to the cool access tier. (AI-inferred)
+	CoolAccessTieringPolicy any
+	// How many days data must remain inactive before becoming eligible for cool access tiering. (AI-inferred)
+	CoolnessPeriod any
+	// A unique name identifying this volume within its own capacity pool, used to construct its own mount path. (AI-inferred)
+	CreationToken any
+	// Data protection configuration (replication, snapshot policy, backup) for this volume. (AI-inferred)
+	DataProtection any
+	// A reference to the datastore this volume backs. (AI-inferred)
+	DataStoreResourceId any
+	// The default storage quota, in kibibytes, applied to a group without an explicit quota rule. (AI-inferred)
+	DefaultGroupQuotaInKiBs any
+	// The default storage quota, in kibibytes, applied to a user without an explicit quota rule. (AI-inferred)
+	DefaultUserQuotaInKiBs any
+	// Whether the snapshot this clone was created from is deleted once the clone split completes. (AI-inferred)
+	DeleteBaseSnapshot any
+	// Output only. The network feature level actually currently in effect for this volume. (AI-inferred)
+	EffectiveNetworkFeatures any
+	// Whether subvolume management is enabled for this volume. (AI-inferred)
+	EnableSubvolumes any
+	// Whether this resource's own data is encrypted at rest. (AI-inferred)
+	Encrypted any
+	// Whether this volume is encrypted with a Microsoft-managed or customer-managed key. (AI-inferred)
+	EncryptionKeySource any
+	// The NFS/SMB export rule(s) controlling which clients may access this volume. (AI-inferred)
+	ExportPolicy any
+	// Whether file access auditing is enabled for this volume. (AI-inferred)
+	FileAccessLogs any
+	// A unique identifier for this volume's own file system. (AI-inferred)
+	FileSystemId any
+	// The size, in bytes, this volume inherited from its own parent (e.g. when cloned from a snapshot). (AI-inferred)
+	InheritedSizeInBytes any
+	// Whether default user/group quotas are enforced on this volume. (AI-inferred)
+	IsDefaultQuotaEnabled any
+	// Whether this volume is provisioned as a large volume, above the standard size limit. (AI-inferred)
+	IsLargeVolume any
+	// Whether this volume is currently being restored from a backup. (AI-inferred)
+	IsRestoring any
+	// Whether Kerberos authentication is enabled for this volume. (AI-inferred)
+	KerberosEnabled any
+	// A reference to the Private Endpoint used to reach the Key Vault holding this resource's own encryption key. (AI-inferred)
+	KeyVaultPrivateEndpointResourceId any
+	// Whether LDAP is enabled for this Active Directory connection. (AI-inferred)
+	LdapEnabled any
+	// The maximum number of files this volume is provisioned to hold. (AI-inferred)
+	MaximumNumberOfFiles any
+	// The mount target(s) exposing this volume to clients. (AI-inferred)
+	MountTargets any
+	// The network feature level (Basic or Standard) this volume uses. (AI-inferred)
+	NetworkFeatures any
+	// An identifier grouping volume(s) that share the same underlying network configuration. (AI-inferred)
+	NetworkSiblingSetId any
+	// A reference to the resource this data or configuration originated from. (AI-inferred)
+	OriginatingResourceId any
+	// Rule(s) constraining which underlying infrastructure this volume can be placed on. (AI-inferred)
+	PlacementRules any
+	// The file access protocol(s) (NFSv3, NFSv4.1, SMB) enabled for this volume. (AI-inferred)
+	ProtocolTypes any
+	// Output only. The availability zone this volume was actually provisioned in. (AI-inferred)
+	ProvisionedAvailabilityZone any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the proximity placement group this resource is deployed with. (AI-inferred)
+	ProximityPlacementGroup any
+	// Whether this volume's own permission model is `unix` or `ntfs`. (AI-inferred)
+	SecurityStyle any
+	// The performance tier this resource is provisioned at, e.g. `Standard`, `Premium`, or `Ultra`. (AI-inferred)
+	ServiceLevel any
+	// Whether users only see the SMB share content they have permission to access. (AI-inferred)
+	SmbAccessBasedEnumeration any
+	// Whether SMB Continuous Availability is enabled, for transparent failover during planned maintenance. (AI-inferred)
+	SmbContinuouslyAvailable any
+	// Whether SMB traffic to this volume is encrypted. (AI-inferred)
+	SmbEncryption any
+	// Whether this SMB share is hidden from casual browsing. (AI-inferred)
+	SmbNonBrowsable any
+	// Whether the hidden `.snapshot` directory is visible to clients. (AI-inferred)
+	SnapshotDirectoryVisible any
+	// A reference to the snapshot this applies to. (AI-inferred)
+	SnapshotId any
+	// How close, network-wise, this volume is provisioned to its own storage. (AI-inferred)
+	StorageToNetworkProximity any
+	// A reference to the subnet this resource is deployed into. (AI-inferred)
+	SubnetId any
+	// The network identifier this volume's own storage infrastructure uses. (AI-inferred)
+	T2Network any
+	// The provisioned throughput, in MiB/s. (AI-inferred)
+	ThroughputMibps any
+	// The UNIX-style file permission bits applied to this volume's own root. (AI-inferred)
+	UnixPermissions any
+	// The provisioned storage quota for this volume, in bytes. (AI-inferred)
+	UsageThreshold any
+	// The name of the application volume group this volume belongs to. (AI-inferred)
+	VolumeGroupName any
+	// The role this volume plays within its own containing application volume group, e.g. `data` or `log`. (AI-inferred)
+	VolumeSpecName any
+	// The category of volume this represents. (AI-inferred)
+	VolumeType any
 }
 
 type VolumeGroupDetails_Properties_Volumes struct {
-	Id         any
-	Name       any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Tags       any
-	Type       any
-	Zones      any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
+	Tags any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type VolumeGroupDetails_Properties struct {

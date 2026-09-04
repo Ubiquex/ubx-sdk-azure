@@ -4,7 +4,9 @@ package batch
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPool_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -16,7 +18,9 @@ type OpenapiPool_Identity struct {
 }
 
 type OpenapiPool_Properties_ApplicationPackages struct {
-	Id      any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The version identifier this applies to. (AI-inferred)
 	Version any
 }
 
@@ -42,14 +46,19 @@ type OpenapiPool_Properties_AutoScaleRun struct {
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReference struct {
+	// A reference to the resource this applies to. (AI-inferred)
 	ResourceId any
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries struct {
+	// A reference to the managed identity used to authenticate. (AI-inferred)
 	IdentityReference any
-	Password          any
-	RegistryServer    any
-	Username          any
+	// The password credential used to authenticate. (AI-inferred)
+	Password any
+	// The container registry server this image is pulled from. (AI-inferred)
+	RegistryServer any
+	// The username used to authenticate. (AI-inferred)
+	Username any
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration struct {
@@ -62,24 +71,34 @@ type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSet struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_SecurityProfile struct {
-	DiskEncryptionSet      any
+	// A reference to the disk encryption set used to encrypt this managed disk. (AI-inferred)
+	DiskEncryptionSet any
+	// The confidential computing encryption type applied to this disk. (AI-inferred)
 	SecurityEncryptionType any
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk struct {
-	DiskEncryptionSet  any
-	SecurityProfile    any
+	// A reference to the disk encryption set used to encrypt this managed disk. (AI-inferred)
+	DiskEncryptionSet any
+	// Security configuration (e.g. Trusted Launch) applied to this compute node. (AI-inferred)
+	SecurityProfile any
+	// The replication/performance type of the associated storage account. (AI-inferred)
 	StorageAccountType any
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks struct {
-	Caching     any
-	DiskSizeGb  any
-	Lun         any
+	// The disk caching mode used, e.g. `ReadOnly` or `ReadWrite`. (AI-inferred)
+	Caching any
+	// The size of this disk, in gibibytes. (AI-inferred)
+	DiskSizeGb any
+	// The logical unit number this disk is attached at. (AI-inferred)
+	Lun any
+	// Configuration for a managed disk attached to this compute node. (AI-inferred)
 	ManagedDisk any
 }
 
@@ -100,15 +119,24 @@ type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_Extensions struct {
-	AutoUpgradeMinorVersion  any
-	EnableAutomaticUpgrade   any
-	Name                     any
-	ProtectedSettings        any
+	// Whether this extension automatically upgrades to newer minor versions as they're released. (AI-inferred)
+	AutoUpgradeMinorVersion any
+	// Whether this extension automatically upgrades to newer versions as they're released. (AI-inferred)
+	EnableAutomaticUpgrade any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Extension setting(s) encrypted at rest and never returned in subsequent reads. (AI-inferred)
+	ProtectedSettings any
+	// The extension(s) that must be provisioned before this one runs. (AI-inferred)
 	ProvisionAfterExtensions any
-	Publisher                any
-	Settings                 any
-	Type                     any
-	TypeHandlerVersion       any
+	// The publisher of this extension. (AI-inferred)
+	Publisher any
+	// The setting(s) configuring this extension. (AI-inferred)
+	Settings any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The version of the extension handler processing this resource. (AI-inferred)
+	TypeHandlerVersion any
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ImageReference struct {
@@ -223,63 +251,99 @@ type OpenapiPool_Properties_DeploymentConfiguration struct {
 }
 
 type OpenapiPool_Properties_Metadata struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type OpenapiPool_Properties_MountConfiguration_AzureBlobFileSystemConfiguration struct {
-	AccountKey        any
-	AccountName       any
-	BlobfuseOptions   any
-	ContainerName     any
+	// The access key credential used to authenticate to this storage account. (AI-inferred)
+	AccountKey any
+	// The name of this storage account. (AI-inferred)
+	AccountName any
+	// Additional command-line option(s) passed to blobfuse. (AI-inferred)
+	BlobfuseOptions any
+	// The name of the storage container this applies to. (AI-inferred)
+	ContainerName any
+	// A reference to the managed identity used to authenticate. (AI-inferred)
 	IdentityReference any
+	// The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred)
 	RelativeMountPath any
-	SasKey            any
+	// A shared access signature used to authenticate. (AI-inferred)
+	SasKey any
 }
 
 type OpenapiPool_Properties_MountConfiguration_AzureFileShareConfiguration struct {
-	AccountKey        any
-	AccountName       any
-	AzureFileUrl      any
-	MountOptions      any
+	// The access key credential used to authenticate to this storage account. (AI-inferred)
+	AccountKey any
+	// The name of this storage account. (AI-inferred)
+	AccountName any
+	// The URL of the Azure Files share this applies to. (AI-inferred)
+	AzureFileUrl any
+	// Additional mount option(s) applied to this volume. (AI-inferred)
+	MountOptions any
+	// The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred)
 	RelativeMountPath any
 }
 
 type OpenapiPool_Properties_MountConfiguration_CifsMountConfiguration struct {
-	MountOptions      any
-	Password          any
+	// Additional mount option(s) applied to this volume. (AI-inferred)
+	MountOptions any
+	// The password credential used to authenticate. (AI-inferred)
+	Password any
+	// The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred)
 	RelativeMountPath any
-	Source            any
-	UserName          any
+	// Where this content is sourced from. (AI-inferred)
+	Source any
+	// The username used to authenticate. (AI-inferred)
+	UserName any
 }
 
 type OpenapiPool_Properties_MountConfiguration_NfsMountConfiguration struct {
-	MountOptions      any
+	// Additional mount option(s) applied to this volume. (AI-inferred)
+	MountOptions any
+	// The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred)
 	RelativeMountPath any
-	Source            any
+	// Where this content is sourced from. (AI-inferred)
+	Source any
 }
 
 type OpenapiPool_Properties_MountConfiguration struct {
+	// Configuration for mounting a Blob container via blobfuse. (AI-inferred)
 	AzureBlobFileSystemConfiguration any
-	AzureFileShareConfiguration      any
-	CifsMountConfiguration           any
-	NfsMountConfiguration            any
+	// Configuration for mounting an Azure Files share. (AI-inferred)
+	AzureFileShareConfiguration any
+	// Configuration for mounting an SMB/CIFS file share. (AI-inferred)
+	CifsMountConfiguration any
+	// Configuration for mounting an NFS file share. (AI-inferred)
+	NfsMountConfiguration any
 }
 
 type OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools_NetworkSecurityGroupRules struct {
-	Access              any
-	Priority            any
+	// The access permission granted. (AI-inferred)
+	Access any
+	// The relative priority of this item. (AI-inferred)
+	Priority any
+	// The source IP address range this rule matches. (AI-inferred)
 	SourceAddressPrefix any
-	SourcePortRanges    any
+	// The source port range(s) this rule matches. (AI-inferred)
+	SourcePortRanges any
 }
 
 type OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools struct {
-	BackendPort               any
-	FrontendPortRangeEnd      any
-	FrontendPortRangeStart    any
-	Name                      any
+	// The port on the compute node this rule forwards traffic to. (AI-inferred)
+	BackendPort any
+	// The last port, inclusive, in this frontend port range. (AI-inferred)
+	FrontendPortRangeEnd any
+	// The first port, inclusive, in this frontend port range. (AI-inferred)
+	FrontendPortRangeStart any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The network security rule(s) applied to this pool's own endpoint configuration. (AI-inferred)
 	NetworkSecurityGroupRules any
-	Protocol                  any
+	// The network protocol used. (AI-inferred)
+	Protocol any
 }
 
 type OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration struct {
@@ -288,8 +352,10 @@ type OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration struct {
 }
 
 type OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfiguration_IpTags struct {
+	// The category this IP tag belongs to. (AI-inferred)
 	IpTagType any
-	Tag       any
+	// A label attached to this resource. (AI-inferred)
+	Tag any
 }
 
 type OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfiguration struct {
@@ -357,8 +423,10 @@ type OpenapiPool_Properties_ScaleSettings struct {
 }
 
 type OpenapiPool_Properties_StartTask_ContainerSettings_ContainerHostBatchBindMounts struct {
+	// Whether this volume is mounted read-only. (AI-inferred)
 	IsReadOnly any
-	Source     any
+	// Where this content is sourced from. (AI-inferred)
+	Source any
 }
 
 type OpenapiPool_Properties_StartTask_ContainerSettings struct {
@@ -375,13 +443,20 @@ type OpenapiPool_Properties_StartTask_ContainerSettings struct {
 }
 
 type OpenapiPool_Properties_StartTask_ResourceFiles struct {
+	// The name of the auto-storage container this applies to. (AI-inferred)
 	AutoStorageContainerName any
-	BlobPrefix               any
-	FileMode                 any
-	FilePath                 any
-	HttpUrl                  any
-	IdentityReference        any
-	StorageContainerUrl      any
+	// Restricts this mount to blob(s) matching this name prefix. (AI-inferred)
+	BlobPrefix any
+	// The file permission mode applied. (AI-inferred)
+	FileMode any
+	// The path to this file. (AI-inferred)
+	FilePath any
+	// The URL this resource is downloaded from. (AI-inferred)
+	HttpUrl any
+	// A reference to the managed identity used to authenticate. (AI-inferred)
+	IdentityReference any
+	// The URL of the storage container this resource is read from. (AI-inferred)
+	StorageContainerUrl any
 }
 
 type OpenapiPool_Properties_StartTask_UserIdentity_AutoUser struct {
@@ -460,20 +535,29 @@ type OpenapiPool_Properties_UpgradePolicy struct {
 }
 
 type OpenapiPool_Properties_UserAccounts_LinuxUserConfiguration struct {
-	Gid           any
+	// The group ID applied to this file or process. (AI-inferred)
+	Gid any
+	// The private key used for SSH authentication. (AI-inferred)
 	SshPrivateKey any
-	Uid           any
+	// The user ID applied to this file or process. (AI-inferred)
+	Uid any
 }
 
 type OpenapiPool_Properties_UserAccounts_WindowsUserConfiguration struct {
+	// Whether this task runs in a batch or interactive login session. (AI-inferred)
 	LoginMode any
 }
 
 type OpenapiPool_Properties_UserAccounts struct {
-	ElevationLevel           any
-	LinuxUserConfiguration   any
-	Name                     any
-	Password                 any
+	// Whether this task runs with standard user or elevated (admin) permissions. (AI-inferred)
+	ElevationLevel any
+	// Configuration specific to a user account on a Linux compute node. (AI-inferred)
+	LinuxUserConfiguration any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The password credential used to authenticate. (AI-inferred)
+	Password any
+	// Configuration specific to a user account on a Windows compute node. (AI-inferred)
 	WindowsUserConfiguration any
 }
 

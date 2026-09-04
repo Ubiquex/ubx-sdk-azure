@@ -4,6 +4,7 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRule_Properties_Actions struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 
@@ -11,7 +12,8 @@ type OpenapiRule_Properties struct {
 	// A list of actions that are executed when all the conditions of a rule are satisfied.
 	Actions any
 	// A list of conditions that must be matched for the actions to be executed
-	Conditions       any
+	Conditions any
+	// The current deployment status of this configuration. (AI-inferred)
 	DeploymentStatus any
 	// If this rule is a match should the rules engine continue running the remaining rules or stop. If not present, defaults to Continue.
 	MatchProcessingBehavior any

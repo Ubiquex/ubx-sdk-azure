@@ -8,13 +8,18 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiPackageModel_Properties_Author:
+    # An email address associated with this resource. (AI-inferred)
     email: Any = None
+    # A URL linking to related content or documentation. (AI-inferred)
     link: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiPackageModel_Properties_Categories:
+    # The security domain(s) this content item applies to. (AI-inferred)
     domains: Any = None
+    # The industry vertical(s) this content item applies to. (AI-inferred)
     verticals: Any = None
 
 @dataclasses.dataclass
@@ -23,50 +28,86 @@ class OpenapiPackageModel_Properties_Dependencies_Criteria:
 
 @dataclasses.dataclass
 class OpenapiPackageModel_Properties_Dependencies:
+    # A unique identifier for this content item. (AI-inferred)
     content_id: Any = None
+    # The condition(s) this rule evaluates. (AI-inferred)
     criteria: Any = None
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # How this condition's own operands are compared. (AI-inferred)
     operator: Any = None
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass
 class OpenapiPackageModel_Properties_Source:
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # An identifier for the source this content item came from. (AI-inferred)
     source_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiPackageModel_Properties_Support:
+    # An email address associated with this resource. (AI-inferred)
     email: Any = None
+    # A URL linking to related content or documentation. (AI-inferred)
     link: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred)
     tier: Any = None
 
 @dataclasses.dataclass
 class OpenapiPackageModel_Properties:
+    # The author of this content item. (AI-inferred)
     author: Any = None
+    # The category/categories this content item belongs to. (AI-inferred)
     categories: Any = None
+    # A unique identifier for this content item. (AI-inferred)
     content_id: Any = None
+    # The category of Sentinel content this represents, e.g. analytics rule or workbook. (AI-inferred)
     content_kind: Any = None
+    # A unique identifier for this content item within the content catalog. (AI-inferred)
     content_product_id: Any = None
+    # The schema version this content item conforms to. (AI-inferred)
     content_schema_version: Any = None
+    # The other content item(s) this one requires to function. (AI-inferred)
     dependencies: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # When this content item was first published. (AI-inferred)
     first_publish_date: Any = None
+    # An icon representing this content item. (AI-inferred)
     icon: Any = None
+    # Whether this content item is deprecated and no longer recommended for use. (AI-inferred)
     is_deprecated: Any = None
+    # Whether this content item is highlighted as featured in the content hub. (AI-inferred)
     is_featured: Any = None
+    # Whether this content item was recently added. (AI-inferred)
     is_new: Any = None
+    # Whether this content item is still in preview. (AI-inferred)
     is_preview: Any = None
+    # When this content item was last published. (AI-inferred)
     last_publish_date: Any = None
+    # The data source provider(s) this content item requires. (AI-inferred)
     providers: Any = None
+    # A human-readable name for the publisher of this content item. (AI-inferred)
     publisher_display_name: Any = None
+    # Where this data or content originated from. (AI-inferred)
     source: Any = None
+    # Support tier information for this content item. (AI-inferred)
     support: Any = None
+    # The MITRE ATT&CK tactic(s) this rule maps to. (AI-inferred)
     threat_analysis_tactics: Any = None
+    # The MITRE ATT&CK technique(s) this rule maps to. (AI-inferred)
     threat_analysis_techniques: Any = None
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 _OpenapiPackageModel_Properties_AuthorFields = {

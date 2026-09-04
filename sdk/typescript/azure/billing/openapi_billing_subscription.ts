@@ -52,7 +52,9 @@ export interface OpenapiBillingSubscription_Properties_Reseller {
 }
 
 export interface OpenapiBillingSubscription_Properties_SuspensionReasonDetails {
+  /** When this change or agreement takes effect. (AI-inferred) */
   effectiveDate?: string | Computed<string>;
+  /** A machine-readable reason code. (AI-inferred) */
   reason?: string | Computed<string>;
 }
 

@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ManagementMapsAccount_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,6 +26,7 @@ class ManagementMapsAccount_Identity:
 
 @dataclasses.dataclass
 class ManagementMapsAccount_Properties_Cors_CorsRules:
+    # The origin(s) this CORS rule permits requests from. (AI-inferred)
     allowed_origins: Any = None
 
 @dataclasses.dataclass
@@ -56,7 +59,9 @@ class ManagementMapsAccount_Properties_Encryption:
 
 @dataclasses.dataclass
 class ManagementMapsAccount_Properties_LinkedResources:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # A caller-chosen name uniquely identifying this linked resource within the account. (AI-inferred)
     unique_name: Any = None
 
 @dataclasses.dataclass

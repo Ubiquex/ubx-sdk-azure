@@ -4,7 +4,9 @@ package iothub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IotHubDescription_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -14,14 +16,19 @@ type IotHubDescription_Identity struct {
 	// Tenant Id
 	TenantId any
 	// The type of identity used for the resource. The type 'SystemAssigned, UserAssigned' includes both an implicitly created identity and a set of user assigned identities. The type 'None' will remove any identities from the service.
-	Type                   any
+	Type any
+	// The user-assigned managed identities associated with this resource. (AI-inferred)
 	UserAssignedIdentities any
 }
 
 type IotHubDescription_Properties_AuthorizationPolicies struct {
-	KeyName      any
-	PrimaryKey   any
-	Rights       any
+	// The name of this shared access policy. (AI-inferred)
+	KeyName any
+	// The primary shared access key for this policy. (AI-inferred)
+	PrimaryKey any
+	// The permission(s) this shared access policy grants. (AI-inferred)
+	Rights any
+	// The secondary shared access key for this policy. (AI-inferred)
 	SecondaryKey any
 }
 
@@ -44,22 +51,32 @@ type IotHubDescription_Properties_CloudToDevice struct {
 }
 
 type IotHubDescription_Properties_EventHubEndpoints struct {
-	Endpoint            any
-	PartitionCount      any
-	PartitionIds        any
-	Path                any
+	// A reference to the routing endpoint this applies to. (AI-inferred)
+	Endpoint any
+	// The number of partition(s) this Event Hub-compatible endpoint has. (AI-inferred)
+	PartitionCount any
+	// The partition identifier(s) making up this endpoint. (AI-inferred)
+	PartitionIds any
+	// The path identifying the specific entity this endpoint targets. (AI-inferred)
+	Path any
+	// How many days messages are retained for. (AI-inferred)
 	RetentionTimeInDays any
 }
 
 type IotHubDescription_Properties_IpFilterRules struct {
-	Action     any
+	// The action to perform. (AI-inferred)
+	Action any
+	// The name of this filter. (AI-inferred)
 	FilterName any
-	IpMask     any
+	// The IP address range, in CIDR notation, this rule matches. (AI-inferred)
+	IpMask any
 }
 
 type IotHubDescription_Properties_Locations struct {
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
 	Location any
-	Role     any
+	// The role assigned. (AI-inferred)
+	Role any
 }
 
 type IotHubDescription_Properties_NetworkRuleSets struct {
@@ -72,73 +89,119 @@ type IotHubDescription_Properties_NetworkRuleSets struct {
 }
 
 type IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type IotHubDescription_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint                   any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
 }
 
 type IotHubDescription_Properties_PrivateEndpointConnections struct {
-	Id         any
-	Name       any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity struct {
+	// A reference to the user-assigned managed identity used to authenticate this connection. (AI-inferred)
 	UserAssignedIdentity any
 }
 
 type IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers struct {
-	AuthenticationType   any
-	ContainerName        any
-	DatabaseName         any
-	EndpointUri          any
-	Id                   any
-	Identity             any
-	Name                 any
-	PartitionKeyName     any
+	// Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred)
+	AuthenticationType any
+	// The name of the storage container this applies to. (AI-inferred)
+	ContainerName any
+	// The name of the database this applies to. (AI-inferred)
+	DatabaseName any
+	// The URI of this routing endpoint. (AI-inferred)
+	EndpointUri any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The name of the property used as the partition key. (AI-inferred)
+	PartitionKeyName any
+	// The template used to derive a blob's own partition path. (AI-inferred)
 	PartitionKeyTemplate any
-	PrimaryKey           any
-	ResourceGroup        any
-	SecondaryKey         any
-	SubscriptionId       any
+	// The primary shared access key for this policy. (AI-inferred)
+	PrimaryKey any
+	// The resource group this applies to. (AI-inferred)
+	ResourceGroup any
+	// The secondary shared access key for this policy. (AI-inferred)
+	SecondaryKey any
+	// The identifier of the associated Azure subscription. (AI-inferred)
+	SubscriptionId any
 }
 
 type IotHubDescription_Properties_Routing_Endpoints_EventHubs struct {
+	// Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred)
 	AuthenticationType any
-	ConnectionString   any
-	EndpointUri        any
-	EntityPath         any
-	Id                 any
-	Identity           any
-	Name               any
-	ResourceGroup      any
-	SubscriptionId     any
+	// The connection string used to reach this endpoint. (AI-inferred)
+	ConnectionString any
+	// The URI of this routing endpoint. (AI-inferred)
+	EndpointUri any
+	// The path identifying the specific entity (e.g. queue or topic) this endpoint targets. (AI-inferred)
+	EntityPath any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource group this applies to. (AI-inferred)
+	ResourceGroup any
+	// The identifier of the associated Azure subscription. (AI-inferred)
+	SubscriptionId any
 }
 
 type IotHubDescription_Properties_Routing_Endpoints_StorageContainers struct {
-	AuthenticationType      any
+	// Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred)
+	AuthenticationType any
+	// How often, in seconds, batched messages are flushed to this endpoint. (AI-inferred)
 	BatchFrequencyInSeconds any
-	ConnectionString        any
-	ContainerName           any
-	Encoding                any
-	EndpointUri             any
-	FileNameFormat          any
-	Id                      any
-	Identity                any
-	MaxChunkSizeInBytes     any
-	Name                    any
-	ResourceGroup           any
-	SubscriptionId          any
+	// The connection string used to reach this endpoint. (AI-inferred)
+	ConnectionString any
+	// The name of the storage container this applies to. (AI-inferred)
+	ContainerName any
+	// The format messages are encoded in when delivered to this endpoint. (AI-inferred)
+	Encoding any
+	// The URI of this routing endpoint. (AI-inferred)
+	EndpointUri any
+	// The naming pattern applied to files written to this storage endpoint. (AI-inferred)
+	FileNameFormat any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// The maximum size, in bytes, of a single batched file written to this storage endpoint. (AI-inferred)
+	MaxChunkSizeInBytes any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource group this applies to. (AI-inferred)
+	ResourceGroup any
+	// The identifier of the associated Azure subscription. (AI-inferred)
+	SubscriptionId any
 }
 
 type IotHubDescription_Properties_Routing_Endpoints struct {
@@ -155,9 +218,12 @@ type IotHubDescription_Properties_Routing_Endpoints struct {
 }
 
 type IotHubDescription_Properties_Routing_Enrichments struct {
+	// The routing endpoint(s) this rule delivers matching messages to. (AI-inferred)
 	EndpointNames any
-	Key           any
-	Value         any
+	// The shared access key value. (AI-inferred)
+	Key any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type IotHubDescription_Properties_Routing_FallbackRoute struct {
@@ -185,11 +251,16 @@ type IotHubDescription_Properties_Routing struct {
 }
 
 type IotHubDescription_Properties_StorageEndpoints struct {
+	// Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred)
 	AuthenticationType any
-	ConnectionString   any
-	ContainerName      any
-	Identity           any
-	SasTtlAsIso8601    any
+	// The connection string used to reach this endpoint. (AI-inferred)
+	ConnectionString any
+	// The name of the storage container this applies to. (AI-inferred)
+	ContainerName any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// How long, in ISO 8601 duration format, a generated shared access signature remains valid. (AI-inferred)
+	SasTtlAsIso8601 any
 }
 
 type IotHubDescription_Properties struct {
@@ -581,7 +652,8 @@ var IotHubDescription_SkuFields = ubx.FieldMap{
 
 type IotHubDescriptionConfig struct {
 	// The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention.
-	Etag     any
+	Etag any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
 	Identity any
 	// The resource location.
 	Location any
@@ -597,7 +669,8 @@ type IotHubDescriptionAttrs struct {
 	// The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention.
 	Etag any
 	// The resource identifier.
-	Id       any
+	Id any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
 	Identity any
 	// The resource location.
 	Location any

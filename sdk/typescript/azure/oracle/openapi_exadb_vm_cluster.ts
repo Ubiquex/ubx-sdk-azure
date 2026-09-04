@@ -11,8 +11,11 @@ export interface OpenapiExadbVmCluster_Properties_DataCollectionOptions {
 }
 
 export interface OpenapiExadbVmCluster_Properties_IormConfigCache_DbPlans {
+  /** The name of this database. (AI-inferred) */
   dbName?: string | Computed<string>;
+  /** The maximum amount of flash cache allocated. (AI-inferred) */
   flashCacheLimit?: string | Computed<string>;
+  /** The file share this applies to. (AI-inferred) */
   share?: number | Computed<number>;
 }
 
@@ -28,12 +31,16 @@ export interface OpenapiExadbVmCluster_Properties_IormConfigCache {
 }
 
 export interface OpenapiExadbVmCluster_Properties_NsgCidrs_DestinationPortRange {
+  /** The maximum value allowed. (AI-inferred) */
   max?: number | Computed<number>;
+  /** The minimum value allowed. (AI-inferred) */
   min?: number | Computed<number>;
 }
 
 export interface OpenapiExadbVmCluster_Properties_NsgCidrs {
+  /** The destination port range this rule matches. (AI-inferred) */
   destinationPortRange?: OpenapiExadbVmCluster_Properties_NsgCidrs_DestinationPortRange | Computed<OpenapiExadbVmCluster_Properties_NsgCidrs_DestinationPortRange>;
+  /** Where this data or configuration is sourced from. (AI-inferred) */
   source?: string | Computed<string>;
 }
 

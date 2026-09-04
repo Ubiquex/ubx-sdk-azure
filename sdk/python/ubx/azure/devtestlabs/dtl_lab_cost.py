@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DtlLabCost_Properties_LabCostDetails:
+    # The cost amount this applies to. (AI-inferred)
     cost: Any = None
+    # Whether this cost is a projected estimate or an actual incurred charge. (AI-inferred)
     cost_type: Any = None
+    # The date this applies to. (AI-inferred)
     date: Any = None
 
 @dataclasses.dataclass
@@ -19,26 +22,41 @@ class DtlLabCost_Properties_LabCostSummary:
 
 @dataclasses.dataclass
 class DtlLabCost_Properties_ResourceCosts:
+    # A reference to the underlying Azure resource this cost applies to, outside the lab itself. (AI-inferred)
     external_resource_id: Any = None
+    # The cost associated with this resource. (AI-inferred)
     resource_cost: Any = None
+    # A reference to the underlying Azure resource. (AI-inferred)
     resource_id: Any = None
+    # The owner of this resource. (AI-inferred)
     resource_owner: Any = None
+    # The pricing tier this resource is provisioned at. (AI-inferred)
     resource_pricing_tier: Any = None
+    # The current status of this resource. (AI-inferred)
     resource_status: Any = None
+    # The type of this resource. (AI-inferred)
     resource_type: Any = None
+    # A stable, unique identifier for this resource. (AI-inferred)
     resource_uid: Any = None
+    # The name of this resource. (AI-inferred)
     resourcename: Any = None
 
 @dataclasses.dataclass
 class DtlLabCost_Properties_TargetCost_CostThresholds_PercentageThreshold:
+    # The literal value that triggers a notification. (AI-inferred)
     threshold_value: Any = None
 
 @dataclasses.dataclass
 class DtlLabCost_Properties_TargetCost_CostThresholds:
+    # Whether this cost item is shown on the cost summary chart. (AI-inferred)
     display_on_chart: Any = None
+    # When a threshold notification was last sent for this item, if any. (AI-inferred)
     notification_sent: Any = None
+    # The percentage-of-budget threshold that triggers a notification. (AI-inferred)
     percentage_threshold: Any = None
+    # Whether to send a notification when this threshold is exceeded. (AI-inferred)
     send_notification_when_exceeded: Any = None
+    # An identifier for this specific threshold. (AI-inferred)
     threshold_id: Any = None
 
 @dataclasses.dataclass

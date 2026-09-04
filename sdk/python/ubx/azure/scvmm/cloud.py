@@ -26,11 +26,17 @@ class Cloud_Properties_CloudCapacity:
 
 @dataclasses.dataclass
 class Cloud_Properties_StorageQoSpolicies:
+    # The maximum network bandwidth, in Mbps, this virtual network adapter is permitted to use. (AI-inferred)
     bandwidth_limit: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The maximum I/O operations per second permitted for this disk. (AI-inferred)
     iops_maximum: Any = None
+    # The minimum I/O operations per second reserved for this disk. (AI-inferred)
     iops_minimum: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A reference to the storage QoS policy this applies to. (AI-inferred)
     policy_id: Any = None
 
 @dataclasses.dataclass

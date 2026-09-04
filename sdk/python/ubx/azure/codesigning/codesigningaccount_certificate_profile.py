@@ -8,22 +8,36 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class CodesigningaccountCertificateProfile_Properties_Certificates_Revocation:
+    # The timestamp revocation takes effect from -- signatures made with this certificate after this time are treated as invalid. (AI-inferred)
     effective_at: Any = None
+    # Why the revocation request failed, if `status` is `Failed`. (AI-inferred)
     failure_reason: Any = None
+    # The reason given for revoking this certificate. (AI-inferred)
     reason: Any = None
+    # Free-text notes attached to this revocation request. (AI-inferred)
     remarks: Any = None
+    # When revocation of this certificate was requested. (AI-inferred)
     requested_at: Any = None
+    # The current status of this revocation request: `InProgress`, `Succeeded`, or `Failed`. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class CodesigningaccountCertificateProfile_Properties_Certificates:
+    # When this signing certificate was issued. (AI-inferred)
     created_date: Any = None
+    # The X.509 Enhanced Key Usage extension value declaring what this certificate may be used for, e.g. code signing. (AI-inferred)
     enhanced_key_usage: Any = None
+    # When this signing certificate expires. (AI-inferred)
     expiry_date: Any = None
+    # The revocation request and outcome for this certificate, present only if revocation was ever requested. (AI-inferred)
     revocation: Any = None
+    # This certificate's own serial number. (AI-inferred)
     serial_number: Any = None
+    # This certificate's own current status: `Active`, `Expired`, or `Revoked`. (AI-inferred)
     status: Any = None
+    # This certificate's own subject (the signing identity it represents). (AI-inferred)
     subject_name: Any = None
+    # A SHA-1 hash of this certificate's own raw bytes, used to identify it (e.g. when requesting revocation). (AI-inferred)
     thumbprint: Any = None
 
 @dataclasses.dataclass

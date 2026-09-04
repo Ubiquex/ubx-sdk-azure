@@ -35,18 +35,22 @@ type CloudngfwPostRulesResource_Properties_Source struct {
 }
 
 type CloudngfwPostRulesResource_Properties_Tags struct {
-	Key   any
+	// The key of this attribute or label. (AI-inferred)
+	Key any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type CloudngfwPostRulesResource_Properties struct {
+	// The action taken when this rule matches. (AI-inferred)
 	ActionType any
 	// array of rule applications
 	Applications any
 	// rule comment
 	AuditComment any
 	// URL/EDL to match
-	Category           any
+	Category any
+	// The category of TLS decryption rule this represents. (AI-inferred)
 	DecryptionRuleType any
 	// rule description
 	Description any
@@ -62,7 +66,8 @@ type CloudngfwPostRulesResource_Properties struct {
 	NegateDestination any
 	// Boolean Enum
 	NegateSource any
-	Priority     any
+	// The relative priority of this item. (AI-inferred)
+	Priority any
 	// any, application-default, TCP:number, UDP:number
 	Protocol any
 	// prot port list

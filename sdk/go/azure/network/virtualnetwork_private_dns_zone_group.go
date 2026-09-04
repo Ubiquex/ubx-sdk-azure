@@ -4,21 +4,31 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties_RecordSets struct {
-	Fqdn              any
-	IpAddresses       any
+	// The fully qualified domain name assigned to this resource. (AI-inferred)
+	Fqdn any
+	// The IP address(es) associated with this resource. (AI-inferred)
+	IpAddresses any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	RecordSetName     any
-	RecordType        any
-	Ttl               any
+	// The name of this DNS record set. (AI-inferred)
+	RecordSetName any
+	// The DNS record type this applies to, e.g. `A` or `CNAME`. (AI-inferred)
+	RecordType any
+	// The time-to-live applied to this DNS record. (AI-inferred)
+	Ttl any
 }
 
 type VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties struct {
+	// A reference to the Private DNS zone this record belongs to. (AI-inferred)
 	PrivateDnsZoneId any
-	RecordSets       any
+	// The DNS record set(s) making up this zone. (AI-inferred)
+	RecordSets any
 }
 
 type VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

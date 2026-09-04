@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface LocksManagementLockObject_Properties_Owners {
+  /** The application (service principal) ID of this lock's own owner. (AI-inferred) */
   applicationId?: string | Computed<string>;
 }
 

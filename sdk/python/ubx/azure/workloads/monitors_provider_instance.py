@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class MonitorsProviderInstance_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,34 +26,51 @@ class MonitorsProviderInstance_Properties_Errors_Details_Details:
 
 @dataclasses.dataclass
 class MonitorsProviderInstance_Properties_Errors_Details_InnerError:
+    # The underlying error that caused this failure. (AI-inferred)
     inner_error: Any = None
 
 @dataclasses.dataclass
 class MonitorsProviderInstance_Properties_Errors_Details:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # The underlying error that caused this failure. (AI-inferred)
     inner_error: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class MonitorsProviderInstance_Properties_Errors_InnerError_InnerError:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # The underlying error that caused this failure. (AI-inferred)
     inner_error: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class MonitorsProviderInstance_Properties_Errors_InnerError:
+    # The underlying error that caused this failure. (AI-inferred)
     inner_error: Any = None
 
 @dataclasses.dataclass
 class MonitorsProviderInstance_Properties_Errors:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # The underlying error that caused this failure. (AI-inferred)
     inner_error: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass

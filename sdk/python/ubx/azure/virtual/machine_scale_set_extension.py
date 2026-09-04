@@ -15,6 +15,7 @@ class MachineScaleSetExtension_Properties_ProtectedSettingsFromKeyVault_SourceVa
 class MachineScaleSetExtension_Properties_ProtectedSettingsFromKeyVault:
     # The URL referencing a secret in a Key Vault.
     secret_url: Any = None
+    # Specifies the Key Vault resource that contains the secret for the protected settings. The object typically includes the Azure resource ID of the Key Vault. (AI-inferred)
     source_vault: Any = None
 
 @dataclasses.dataclass

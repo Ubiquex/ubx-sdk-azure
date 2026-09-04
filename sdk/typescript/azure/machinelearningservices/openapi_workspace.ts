@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiWorkspace_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -47,24 +49,34 @@ export interface OpenapiWorkspace_Properties_Encryption {
 }
 
 export interface OpenapiWorkspace_Properties_FeatureStoreSettings_ComputeRuntime {
+  /** The Spark runtime version this compute instance uses. (AI-inferred) */
   sparkRuntimeVersion?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_FeatureStoreSettings {
+  /** The compute runtime this resource uses. (AI-inferred) */
   computeRuntime?: OpenapiWorkspace_Properties_FeatureStoreSettings_ComputeRuntime | Computed<OpenapiWorkspace_Properties_FeatureStoreSettings_ComputeRuntime>;
+  /** A reference to the data store connection used for offline feature retrieval. (AI-inferred) */
   offlineStoreConnectionName?: string | Computed<string>;
+  /** A reference to the data store connection used for online feature retrieval. (AI-inferred) */
   onlineStoreConnectionName?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_ManagedNetwork_OutboundRules {
+  /** The category this belongs to. (AI-inferred) */
   category?: string | Computed<string>;
+  /** Additional detail about this error. (AI-inferred) */
   errorInformation?: string | Computed<string>;
+  /** The name(s) of the parent rule(s) this suggestion or association derives from. (AI-inferred) */
   parentRuleNames?: string[] | Computed<string[]>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_ManagedNetwork_Status {
+  /** Whether this compute instance is configured to run Spark jobs. (AI-inferred) */
   sparkReady?: boolean | Computed<boolean>;
   /** Status for the managed network of a machine learning workspace. */
   status?: string | Computed<string>;
@@ -81,6 +93,7 @@ export interface OpenapiWorkspace_Properties_ManagedNetwork {
   isolationMode?: string | Computed<string>;
   /** The Kind of the managed network. Users can switch from V1 to V2 for granular access controls, but cannot switch back to V1 once V2 is enabled. */
   managedNetworkKind?: string | Computed<string>;
+  /** A reference to the virtual network this applies to. (AI-inferred) */
   networkId?: string | Computed<string>;
   /** Dictionary of <OutboundRule> */
   outboundRules?: Record<string, OpenapiWorkspace_Properties_ManagedNetwork_OutboundRules> | Computed<Record<string, OpenapiWorkspace_Properties_ManagedNetwork_OutboundRules>>;
@@ -89,48 +102,71 @@ export interface OpenapiWorkspace_Properties_ManagedNetwork {
 }
 
 export interface OpenapiWorkspace_Properties_NotebookInfo_NotebookPreparationError {
+  /** A human-readable description of the error. (AI-inferred) */
   errorMessage?: string | Computed<string>;
+  /** The HTTP status code returned. (AI-inferred) */
   statusCode?: number | Computed<number>;
 }
 
 export interface OpenapiWorkspace_Properties_NotebookInfo {
+  /** The fully qualified domain name this applies to. (AI-inferred) */
   fqdn?: string | Computed<string>;
+  /** Whether Private Link connectivity is enabled for this resource. (AI-inferred) */
   isPrivateLinkEnabled?: boolean | Computed<boolean>;
+  /** Detail about an error encountered while preparing the notebook environment. (AI-inferred) */
   notebookPreparationError?: OpenapiWorkspace_Properties_NotebookInfo_NotebookPreparationError | Computed<OpenapiWorkspace_Properties_NotebookInfo_NotebookPreparationError>;
   /** the data plane resourceId that used to initialize notebook component */
   resourceId?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** A reference to the subnet this resource is injected into. (AI-inferred) */
   subnetArmId?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties {
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_PrivateEndpointConnections_Sku {
+  /** The number of instance(s) this resource is provisioned with. (AI-inferred) */
   capacity?: number | Computed<number>;
+  /** The generation or family this SKU belongs to. (AI-inferred) */
   family?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The size of this resource. (AI-inferred) */
   size?: string | Computed<string>;
+  /** The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred) */
   tier?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_PrivateEndpointConnections {
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: OpenapiWorkspace_Identity | Computed<OpenapiWorkspace_Identity>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties | Computed<OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties>;
+  /** The pricing tier and capacity this resource is provisioned at. (AI-inferred) */
   sku?: OpenapiWorkspace_Properties_PrivateEndpointConnections_Sku | Computed<OpenapiWorkspace_Properties_PrivateEndpointConnections_Sku>;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
@@ -142,27 +178,37 @@ export interface OpenapiWorkspace_Properties_ServerlessComputeSettings {
 }
 
 export interface OpenapiWorkspace_Properties_ServiceManagedResourcesSettings_CosmosDb {
+  /** The provisioned throughput allocated to Cosmos DB collections backing this workspace. (AI-inferred) */
   collectionsThroughput?: number | Computed<number>;
 }
 
 export interface OpenapiWorkspace_Properties_ServiceManagedResourcesSettings {
+  /** Configuration for the Cosmos DB account backing this workspace. (AI-inferred) */
   cosmosDb?: OpenapiWorkspace_Properties_ServiceManagedResourcesSettings_CosmosDb | Computed<OpenapiWorkspace_Properties_ServiceManagedResourcesSettings_CosmosDb>;
 }
 
 export interface OpenapiWorkspace_Properties_SharedPrivateLinkResources_Properties {
+  /** The sub-resource this connection targets on the destination service. (AI-inferred) */
   groupId?: string | Computed<string>;
+  /** A reference to the Private Link resource this applies to. (AI-inferred) */
   privateLinkResourceId?: string | Computed<string>;
+  /** A message the requester attaches when asking to connect to this resource. (AI-inferred) */
   requestMessage?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_SharedPrivateLinkResources {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiWorkspace_Properties_SharedPrivateLinkResources_Properties | Computed<OpenapiWorkspace_Properties_SharedPrivateLinkResources_Properties>;
 }
 
 export interface OpenapiWorkspace_Properties_WorkspaceHubConfig {
+  /** Extra storage account(s) associated with this workspace, beyond its own primary one. (AI-inferred) */
   additionalWorkspaceStorageAccounts?: string[] | Computed<string[]>;
+  /** The resource group new workspace-associated resources are created in by default. (AI-inferred) */
   defaultWorkspaceResourceGroup?: string | Computed<string>;
 }
 
@@ -171,6 +217,7 @@ export interface OpenapiWorkspace_Properties {
   allowPublicAccessWhenBehindVnet?: boolean | Computed<boolean>;
   /** ARM id of the application insights associated with this workspace. */
   applicationInsights?: string | Computed<string>;
+  /** The workspace(s) associated with this hub or registry. (AI-inferred) */
   associatedWorkspaces?: string[] | Computed<string[]>;
   /** ARM id of the container registry associated with this workspace. */
   containerRegistry?: string | Computed<string>;
@@ -178,14 +225,19 @@ export interface OpenapiWorkspace_Properties {
   description?: string | Computed<string>;
   /** Url for the discovery service to identify regional endpoints for machine learning experimentation services */
   discoveryUrl?: string | Computed<string>;
+  /** Whether this workspace's own data is isolated from other workspaces sharing the same hub. (AI-inferred) */
   enableDataIsolation?: boolean | Computed<boolean>;
+  /** Whether service-side resources are also encrypted with this workspace's own customer-managed key. (AI-inferred) */
   enableServiceSideCmkencryption?: boolean | Computed<boolean>;
+  /** Encryption configuration for this resource. (AI-inferred) */
   encryption?: OpenapiWorkspace_Properties_Encryption | Computed<OpenapiWorkspace_Properties_Encryption>;
+  /** Configuration for this workspace's own feature store capability. (AI-inferred) */
   featureStoreSettings?: OpenapiWorkspace_Properties_FeatureStoreSettings | Computed<OpenapiWorkspace_Properties_FeatureStoreSettings>;
   /** The friendly name for this workspace. This name in mutable */
   friendlyName?: string | Computed<string>;
   /** The flag to signal HBI data in the workspace and reduce diagnostic data collected by the service */
   hbiWorkspace?: boolean | Computed<boolean>;
+  /** A reference to the parent hub this project belongs to. (AI-inferred) */
   hubResourceId?: string | Computed<string>;
   /** The compute name for image build */
   imageBuildCompute?: string | Computed<string>;
@@ -195,6 +247,7 @@ export interface OpenapiWorkspace_Properties {
   managedNetwork?: OpenapiWorkspace_Properties_ManagedNetwork | Computed<OpenapiWorkspace_Properties_ManagedNetwork>;
   /** The URI associated with this workspace that machine learning flow must point at to set up tracking. */
   mlFlowTrackingUri?: string | Computed<string>;
+  /** Detail about this workspace's own associated notebook resource. (AI-inferred) */
   notebookInfo?: OpenapiWorkspace_Properties_NotebookInfo | Computed<OpenapiWorkspace_Properties_NotebookInfo>;
   /** The user assigned identity resource id that represents the workspace identity. */
   primaryUserAssignedIdentity?: string | Computed<string>;
@@ -208,7 +261,9 @@ export interface OpenapiWorkspace_Properties {
   provisioningState?: string | Computed<string>;
   /** Enum to determine whether PublicNetworkAccess is Enabled or Disabled. */
   publicNetworkAccess?: string | Computed<string>;
+  /** Configuration for using serverless compute, rather than a dedicated cluster. (AI-inferred) */
   serverlessComputeSettings?: OpenapiWorkspace_Properties_ServerlessComputeSettings | Computed<OpenapiWorkspace_Properties_ServerlessComputeSettings>;
+  /** Configuration for resources Azure Machine Learning provisions and manages on the caller's own behalf. (AI-inferred) */
   serviceManagedResourcesSettings?: OpenapiWorkspace_Properties_ServiceManagedResourcesSettings | Computed<OpenapiWorkspace_Properties_ServiceManagedResourcesSettings>;
   /** The name of the managed resource group created by workspace RP in customer subscription if the workspace is CMK workspace */
   serviceProvisionedResourceGroup?: string | Computed<string>;
@@ -503,24 +558,30 @@ const OpenapiWorkspace_PropertiesFields: FieldMap = {
 export interface OpenapiWorkspaceConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: OpenapiWorkspace_Identity | Computed<OpenapiWorkspace_Identity>;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
   /** The properties of a machine learning workspace. */
   properties: OpenapiWorkspace_Properties | Computed<OpenapiWorkspace_Properties>;
   /** The resource model definition representing SKU */
   sku?: OpenapiWorkspace_Properties_PrivateEndpointConnections_Sku | Computed<OpenapiWorkspace_Properties_PrivateEndpointConnections_Sku>;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiWorkspaceAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: OpenapiWorkspace_Identity;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind: string;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location: string;
   /** The properties of a machine learning workspace. */
   properties: OpenapiWorkspace_Properties;
   /** The resource model definition representing SKU */
   sku: OpenapiWorkspace_Properties_PrivateEndpointConnections_Sku;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags: Record<string, string>;
 }
 

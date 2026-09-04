@@ -2,13 +2,18 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Endpoint_Properties_CustomHeaders {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface Endpoint_Properties_Subnets {
+  /** The first address in this range, inclusive. (AI-inferred) */
   first?: string | Computed<string>;
+  /** The last address in this range, inclusive. (AI-inferred) */
   last?: string | Computed<string>;
+  /** The subnet or IP range this endpoint applies to, for subnet-based routing. (AI-inferred) */
   scope?: number | Computed<number>;
 }
 

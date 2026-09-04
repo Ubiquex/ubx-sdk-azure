@@ -4,10 +4,14 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceReplicationProtectionCluster_Properties_ClusterRegisteredNodes struct {
-	BiosId                  any
-	ClusterNodeFqdn         any
+	// A unique identifier read from the protected machine's own BIOS. (AI-inferred)
+	BiosId any
+	// The fully qualified domain name of this cluster node. (AI-inferred)
+	ClusterNodeFqdn any
+	// Whether this virtual machine node represents a shared-disk cluster node. (AI-inferred)
 	IsSharedDiskVirtualNode any
-	MachineId               any
+	// A reference to the protected machine this applies to. (AI-inferred)
+	MachineId any
 }
 
 type ServiceReplicationProtectionCluster_Properties_CurrentScenario struct {
@@ -20,38 +24,67 @@ type ServiceReplicationProtectionCluster_Properties_CurrentScenario struct {
 }
 
 type ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErrors struct {
-	CreationTimeUtc              any
-	CustomerResolvability        any
-	EntityId                     any
-	ErrorCategory                any
-	ErrorCode                    any
-	ErrorId                      any
-	ErrorLevel                   any
-	ErrorMessage                 any
-	ErrorSource                  any
-	ErrorType                    any
-	PossibleCauses               any
-	RecommendedAction            any
+	// When this resource was created, in UTC. (AI-inferred)
+	CreationTimeUtc any
+	// Whether this issue can be resolved by the customer directly. (AI-inferred)
+	CustomerResolvability any
+	// A reference to the protected entity this applies to. (AI-inferred)
+	EntityId any
+	// The category this error belongs to. (AI-inferred)
+	ErrorCategory any
+	// A machine-readable error code. (AI-inferred)
+	ErrorCode any
+	// A unique identifier for this specific error occurrence. (AI-inferred)
+	ErrorId any
+	// How severe this error is. (AI-inferred)
+	ErrorLevel any
+	// A human-readable description of the error. (AI-inferred)
+	ErrorMessage any
+	// Which component produced this error. (AI-inferred)
+	ErrorSource any
+	// The category of error this represents. (AI-inferred)
+	ErrorType any
+	// Likely cause(s) of this issue. (AI-inferred)
+	PossibleCauses any
+	// Guidance for resolving this issue. (AI-inferred)
+	RecommendedAction any
+	// The error message reported by the recovery provider. (AI-inferred)
 	RecoveryProviderErrorMessage any
-	SummaryMessage               any
+	// A short, human-readable summary of this result. (AI-inferred)
+	SummaryMessage any
 }
 
 type ServiceReplicationProtectionCluster_Properties_HealthErrors struct {
-	CreationTimeUtc              any
-	CustomerResolvability        any
-	EntityId                     any
-	ErrorCategory                any
-	ErrorCode                    any
-	ErrorId                      any
-	ErrorLevel                   any
-	ErrorMessage                 any
-	ErrorSource                  any
-	ErrorType                    any
-	InnerHealthErrors            any
-	PossibleCauses               any
-	RecommendedAction            any
+	// When this resource was created, in UTC. (AI-inferred)
+	CreationTimeUtc any
+	// Whether this issue can be resolved by the customer directly. (AI-inferred)
+	CustomerResolvability any
+	// A reference to the protected entity this applies to. (AI-inferred)
+	EntityId any
+	// The category this error belongs to. (AI-inferred)
+	ErrorCategory any
+	// A machine-readable error code. (AI-inferred)
+	ErrorCode any
+	// A unique identifier for this specific error occurrence. (AI-inferred)
+	ErrorId any
+	// How severe this error is. (AI-inferred)
+	ErrorLevel any
+	// A human-readable description of the error. (AI-inferred)
+	ErrorMessage any
+	// Which component produced this error. (AI-inferred)
+	ErrorSource any
+	// The category of error this represents. (AI-inferred)
+	ErrorType any
+	// The underlying health issue(s) contributing to this error. (AI-inferred)
+	InnerHealthErrors any
+	// Likely cause(s) of this issue. (AI-inferred)
+	PossibleCauses any
+	// Guidance for resolving this issue. (AI-inferred)
+	RecommendedAction any
+	// The error message reported by the recovery provider. (AI-inferred)
 	RecoveryProviderErrorMessage any
-	SummaryMessage               any
+	// A short, human-readable summary of this result. (AI-inferred)
+	SummaryMessage any
 }
 
 type ServiceReplicationProtectionCluster_Properties_ProviderSpecificDetails struct {

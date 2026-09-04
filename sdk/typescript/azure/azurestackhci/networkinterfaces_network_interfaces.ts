@@ -14,18 +14,25 @@ export interface NetworkinterfacesNetworkInterfaces_Properties_DnsSettings {
 }
 
 export interface NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties_Subnet {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties {
+  /** The default gateway IP address for this IP configuration. (AI-inferred) */
   gateway?: string | Computed<string>;
+  /** The subnet mask length (CIDR prefix) applied to this IP configuration's own address. (AI-inferred) */
   prefixLength?: string | Computed<string>;
+  /** The private (internal) IP address assigned to this IP configuration. (AI-inferred) */
   privateIpaddress?: string | Computed<string>;
+  /** A reference to the logical network subnet this IP configuration is drawn from. (AI-inferred) */
   subnet?: NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties_Subnet | Computed<NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties_Subnet>;
 }
 
 export interface NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties | Computed<NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties>;
 }
 
@@ -41,10 +48,12 @@ export interface NetworkinterfacesNetworkInterfaces_Properties_Status {
   errorCode?: string | Computed<string>;
   /** Descriptive error message */
   errorMessage?: string | Computed<string>;
+  /** The current provisioning status of this network interface. (AI-inferred) */
   provisioningStatus?: NetworkinterfacesNetworkInterfaces_Properties_Status_ProvisioningStatus | Computed<NetworkinterfacesNetworkInterfaces_Properties_Status_ProvisioningStatus>;
 }
 
 export interface NetworkinterfacesNetworkInterfaces_Properties {
+  /** DNS server configuration applied to this network interface. (AI-inferred) */
   dnsSettings?: NetworkinterfacesNetworkInterfaces_Properties_DnsSettings | Computed<NetworkinterfacesNetworkInterfaces_Properties_DnsSettings>;
   /** IPConfigurations - A list of IPConfigurations of the network interface. */
   ipConfigurations?: NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations[] | Computed<NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations[]>;

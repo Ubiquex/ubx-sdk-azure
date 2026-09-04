@@ -14,8 +14,11 @@ export interface VirtualnetworkPublicIpprefix_Properties_CustomIpprefix {
 }
 
 export interface VirtualnetworkPublicIpprefix_Properties_IpTags {
+  /** The identifier of the Microsoft first-party service tag this IP tag is associated with. (AI-inferred) */
   firstPartyServiceTagId?: string | Computed<string>;
+  /** The category this IP tag belongs to, e.g. `FirstPartyUsage`. (AI-inferred) */
   ipTagType?: string | Computed<string>;
+  /** The literal tag value. (AI-inferred) */
   tag?: string | Computed<string>;
 }
 

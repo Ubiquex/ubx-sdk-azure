@@ -37,20 +37,26 @@ type OpenapiKey_Properties_RotationPolicy_Attributes struct {
 }
 
 type OpenapiKey_Properties_RotationPolicy_LifetimeActions_Action struct {
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type OpenapiKey_Properties_RotationPolicy_LifetimeActions_Trigger struct {
-	TimeAfterCreate  any
+	// How long after creation this key is automatically rotated. (AI-inferred)
+	TimeAfterCreate any
+	// How long before expiry a notification or rotation action is triggered. (AI-inferred)
 	TimeBeforeExpiry any
 }
 
 type OpenapiKey_Properties_RotationPolicy_LifetimeActions struct {
-	Action  any
+	// The action to perform. (AI-inferred)
+	Action any
+	// The condition that triggers this action. (AI-inferred)
 	Trigger any
 }
 
 type OpenapiKey_Properties_RotationPolicy struct {
+	// Metadata (enabled state, expiry, creation/update time) attached to this key, secret, or certificate. (AI-inferred)
 	Attributes any
 	// The lifetimeActions for key rotation action.
 	LifetimeActions any
@@ -61,7 +67,8 @@ type OpenapiKey_Properties struct {
 	Attributes any
 	// The elliptic curve name. For valid values, see JsonWebKeyCurveName. Default for EC and EC-HSM keys is P-256
 	CurveName any
-	KeyOps    any
+	// The cryptographic operation(s) this key is permitted to perform. (AI-inferred)
+	KeyOps any
 	// The key size in bits. For example: 2048, 3072, or 4096 for RSA. Default for RSA and RSA-HSM keys is 2048. Exception made for bring your own key (BYOK), key exchange keys default to 4096.
 	KeySize any
 	// The URI to retrieve the current version of the key.
@@ -69,8 +76,10 @@ type OpenapiKey_Properties struct {
 	// The URI to retrieve the specific version of the key.
 	KeyUriWithVersion any
 	// The type of the key. For valid values, see JsonWebKeyType.
-	Kty            any
-	ReleasePolicy  any
+	Kty any
+	// The policy defining under what conditions this key may be released for use outside the vault. (AI-inferred)
+	ReleasePolicy any
+	// The policy governing how and when this key is automatically rotated. (AI-inferred)
 	RotationPolicy any
 }
 

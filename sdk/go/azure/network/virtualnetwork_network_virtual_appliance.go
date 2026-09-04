@@ -4,7 +4,9 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkNetworkVirtualAppliance_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,8 +22,10 @@ type VirtualnetworkNetworkVirtualAppliance_Identity struct {
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties_AdditionalNics struct {
+	// Whether this resource has a public IP address assigned. (AI-inferred)
 	HasPublicIp any
-	Name        any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties_Delegation struct {
@@ -32,6 +36,7 @@ type VirtualnetworkNetworkVirtualAppliance_Properties_Delegation struct {
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRules struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
@@ -45,31 +50,41 @@ type VirtualnetworkNetworkVirtualAppliance_Properties_MigrationStatus struct {
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties struct {
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
 	Primary any
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties struct {
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
 	IpConfigurations any
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile struct {
+	// The network interface configuration(s) applied to instance(s) in this set. (AI-inferred)
 	NetworkInterfaceConfigurations any
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties_NvaInterfaceConfigurations struct {
-	Name   any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
 	Subnet any
-	Type   any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties_NvaSku struct {
@@ -91,13 +106,20 @@ type VirtualnetworkNetworkVirtualAppliance_Properties_PartnerManagedResource str
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties_VirtualApplianceNics struct {
-	InstanceName       any
-	Name               any
-	NicType            any
-	PrivateIpAddress   any
+	// The name of this specific instance. (AI-inferred)
+	InstanceName any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
+	NicType any
+	// The private (internal) IPv4 address assigned to this resource. (AI-inferred)
+	PrivateIpAddress any
+	// The private (internal) IPv6 address assigned to this resource. (AI-inferred)
 	PrivateIpAddressV6 any
-	PublicIpAddress    any
-	PublicIpAddressV6  any
+	// The public IPv4 address assigned to this resource. (AI-inferred)
+	PublicIpAddress any
+	// The public IPv6 address assigned to this resource. (AI-inferred)
+	PublicIpAddressV6 any
 }
 
 type VirtualnetworkNetworkVirtualAppliance_Properties struct {

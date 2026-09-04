@@ -4,9 +4,12 @@ package hdinsight
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Cluster_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
-	TenantId    any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
 }
 
 type Cluster_Identity struct {
@@ -39,82 +42,119 @@ type Cluster_Properties_ComputeIsolationProperties struct {
 }
 
 type Cluster_Properties_ComputeProfile_Roles_Autoscale_Capacity struct {
+	// The maximum number of node(s) autoscaling is allowed to scale up to. (AI-inferred)
 	MaxInstanceCount any
+	// The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred)
 	MinInstanceCount any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity struct {
+	// The maximum number of node(s) autoscaling is allowed to scale up to. (AI-inferred)
 	MaxInstanceCount any
+	// The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred)
 	MinInstanceCount any
-	Time             any
+	// The time this scheduled action runs at. (AI-inferred)
+	Time any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule struct {
-	Days            any
+	// The day(s) this schedule applies to. (AI-inferred)
+	Days any
+	// A fixed-time autoscale rule specifying node capacity for a specific time of day. (AI-inferred)
 	TimeAndCapacity any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence struct {
+	// The recurrence schedule this applies to. (AI-inferred)
 	Schedule any
+	// The time zone this schedule is evaluated in. (AI-inferred)
 	TimeZone any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_Autoscale struct {
-	Capacity   any
+	// The number of instance(s) this resource is provisioned with. (AI-inferred)
+	Capacity any
+	// How often this autoscale schedule recurs. (AI-inferred)
 	Recurrence any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_DataDisksGroups struct {
-	DiskSizeGb         any
-	DisksPerNode       any
+	// The size of this disk, in gibibytes. (AI-inferred)
+	DiskSizeGb any
+	// The number of data disk(s) attached to each node. (AI-inferred)
+	DisksPerNode any
+	// The replication/performance type of the associated storage account. (AI-inferred)
 	StorageAccountType any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_HardwareProfile struct {
+	// The VM size this role's own nodes are provisioned as. (AI-inferred)
 	VmSize any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeys struct {
+	// The certificate content, base64-encoded. (AI-inferred)
 	CertificateData any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile struct {
+	// The SSH public key(s) used to authenticate. (AI-inferred)
 	PublicKeys any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile struct {
-	Password   any
+	// The password credential used to authenticate. (AI-inferred)
+	Password any
+	// SSH configuration for connecting to this cluster's own nodes. (AI-inferred)
 	SshProfile any
-	Username   any
+	// The username used to authenticate. (AI-inferred)
+	Username any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_OsProfile struct {
+	// Configuration specific to a Linux-based cluster node. (AI-inferred)
 	LinuxOperatingSystemProfile any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_ScriptActions struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The parameter(s) making up this configuration. (AI-inferred)
 	Parameters any
-	Uri        any
+	// A resource URI. (AI-inferred)
+	Uri any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_VirtualNetworkProfile struct {
-	Id     any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// A reference to the subnet this resource is deployed into. (AI-inferred)
 	Subnet any
 }
 
 type Cluster_Properties_ComputeProfile_Roles struct {
-	Autoscale             any
-	DataDisksGroups       any
-	EncryptDataDisks      any
-	HardwareProfile       any
-	MinInstanceCount      any
-	Name                  any
-	OsProfile             any
-	ScriptActions         any
-	TargetInstanceCount   any
+	// Configuration for automatically scaling this cluster's own node count. (AI-inferred)
+	Autoscale any
+	// Configuration for the data disk(s) attached to nodes in this role. (AI-inferred)
+	DataDisksGroups any
+	// Whether data disks attached to this cluster are encrypted. (AI-inferred)
+	EncryptDataDisks any
+	// The VM size this role's own nodes are provisioned as. (AI-inferred)
+	HardwareProfile any
+	// The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred)
+	MinInstanceCount any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Operating system configuration for this cluster's own nodes. (AI-inferred)
+	OsProfile any
+	// Custom script(s) run on cluster nodes during provisioning. (AI-inferred)
+	ScriptActions any
+	// The desired number of node(s) this role should be scaled to. (AI-inferred)
+	TargetInstanceCount any
+	// The virtual network this cluster is deployed into. (AI-inferred)
 	VirtualNetworkProfile any
-	VmgroupName           any
+	// The name of the VM group this node belongs to. (AI-inferred)
+	VmgroupName any
 }
 
 type Cluster_Properties_ComputeProfile struct {
@@ -215,31 +255,47 @@ type Cluster_Properties_PrivateEndpointConnections struct {
 }
 
 type Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties struct {
-	Primary                   any
-	PrivateIpaddress          any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// The private (internal) IP address assigned to this configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether the private IP address is statically assigned or dynamically allocated. (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is deployed into. (AI-inferred)
+	Subnet any
 }
 
 type Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations struct {
-	Id         any
-	Name       any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type Cluster_Properties_PrivateLinkConfigurations_Properties struct {
-	GroupId           any
-	IpConfigurations  any
+	// A reference to the role group this applies to. (AI-inferred)
+	GroupId any
+	// The IP configuration(s) for this endpoint. (AI-inferred)
+	IpConfigurations any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
 type Cluster_Properties_PrivateLinkConfigurations struct {
-	Id         any
-	Name       any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type Cluster_Properties_QuotaInfo struct {
@@ -269,15 +325,24 @@ type Cluster_Properties_SecurityProfile struct {
 }
 
 type Cluster_Properties_StorageProfile_Storageaccounts struct {
-	Container     any
-	FileSystem    any
-	Fileshare     any
-	IsDefault     any
-	Key           any
+	// A reference to the storage container this applies to. (AI-inferred)
+	Container any
+	// The default file system used by this cluster. (AI-inferred)
+	FileSystem any
+	// The Azure Files share used as this cluster's own default storage. (AI-inferred)
+	Fileshare any
+	// Whether this is the default storage account for this cluster. (AI-inferred)
+	IsDefault any
+	// The storage account access key. (AI-inferred)
+	Key any
+	// A reference to the managed identity used to access this storage account. (AI-inferred)
 	MsiResourceId any
-	Name          any
-	ResourceId    any
-	Saskey        any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the resource this applies to. (AI-inferred)
+	ResourceId any
+	// A shared access signature used to authenticate to this storage account. (AI-inferred)
+	Saskey any
 }
 
 type Cluster_Properties_StorageProfile struct {

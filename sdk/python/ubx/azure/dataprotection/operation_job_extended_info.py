@@ -39,7 +39,9 @@ class OperationJobExtendedInfo_BackupInstance_IdentityDetails:
 
 @dataclasses.dataclass
 class OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters_DataStoreParametersList:
+    # The type of datastore this backup data is retained in, e.g. `OperationalStore` or `VaultStore`. (AI-inferred)
     data_store_type: Any = None
+    # A discriminator identifying this object's own concrete type, used when a field can hold more than one shape. (AI-inferred)
     object_type: Any = None
 
 @dataclasses.dataclass
@@ -51,9 +53,11 @@ class OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters:
 
 @dataclasses.dataclass
 class OperationJobExtendedInfo_BackupInstance_PolicyInfo:
+    # A reference to the backup policy this applies to. (AI-inferred)
     policy_id: Any = None
     # Parameters in Policy
     policy_parameters: Any = None
+    # The version of the backup policy in effect when this was created. (AI-inferred)
     policy_version: Any = None
 
 @dataclasses.dataclass
@@ -81,6 +85,7 @@ class OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails:
     is_retryable: Any = None
     # Whether the operation is due to a user error or service error
     is_user_error: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
     # Any key value pairs that can be injected inside error object
     properties: Any = None
@@ -108,7 +113,9 @@ class OperationJobExtendedInfo_BackupInstance:
     datasource_auth_credentials: Any = None
     # Gets or sets the Backup Instance friendly name.
     friendly_name: Any = None
+    # Detail about the managed identity used to protect or access this resource. (AI-inferred)
     identity_details: Any = None
+    # A discriminator identifying this object's own concrete type, used when a field can hold more than one shape. (AI-inferred)
     object_type: Any = None
     # Policy Info in backupInstance
     policy_info: Any = None

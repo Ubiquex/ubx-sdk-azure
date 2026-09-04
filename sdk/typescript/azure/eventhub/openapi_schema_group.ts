@@ -8,7 +8,9 @@ export interface OpenapiSchemaGroup_Properties {
   eTag?: string | Computed<string>;
   /** dictionary object for SchemaGroup group properties */
   groupProperties?: Record<string, string> | Computed<Record<string, string>>;
+  /** How strictly a new schema version must be compatible with previous ones, e.g. `Forward` or `Backward`. (AI-inferred) */
   schemaCompatibility?: string | Computed<string>;
+  /** The serialization format this schema is expressed in, e.g. Avro. (AI-inferred) */
   schemaType?: string | Computed<string>;
   /** Exact time the Schema Group was updated */
   updatedAtUtc?: string | Computed<string>;
@@ -24,12 +26,14 @@ const OpenapiSchemaGroup_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiSchemaGroupConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiSchemaGroup_Properties | Computed<OpenapiSchemaGroup_Properties>;
 }
 
 export interface OpenapiSchemaGroupAttrs {
   /** The geo-location where the resource lives */
   location: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiSchemaGroup_Properties;
 }
 

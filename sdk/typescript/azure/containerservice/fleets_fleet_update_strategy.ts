@@ -2,23 +2,35 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates {
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface FleetsFleetUpdateStrategy_Properties_Strategy_Stages_Groups {
+  /** The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred) */
   afterGates?: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates[] | Computed<FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates[]>;
+  /** The approval gate(s) that must be satisfied before this stage begins. (AI-inferred) */
   beforeGates?: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates[] | Computed<FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates[]>;
+  /** The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred) */
   maxConcurrency?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface FleetsFleetUpdateStrategy_Properties_Strategy_Stages {
+  /** The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred) */
   afterGates?: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates[] | Computed<FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates[]>;
+  /** How long to wait, in seconds, after this stage completes before continuing. (AI-inferred) */
   afterStageWaitInSeconds?: number | Computed<number>;
+  /** The approval gate(s) that must be satisfied before this stage begins. (AI-inferred) */
   beforeGates?: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates[] | Computed<FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates[]>;
+  /** The group(s) this update run's own member clusters are batched into. (AI-inferred) */
   groups?: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_Groups[] | Computed<FleetsFleetUpdateStrategy_Properties_Strategy_Stages_Groups[]>;
+  /** The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred) */
   maxConcurrency?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 

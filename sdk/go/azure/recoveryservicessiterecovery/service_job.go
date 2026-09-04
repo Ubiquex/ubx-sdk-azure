@@ -11,30 +11,46 @@ type ServiceJob_Properties_CustomDetails struct {
 }
 
 type ServiceJob_Properties_Errors_ProviderErrorDetails struct {
-	ErrorCode         any
-	ErrorId           any
-	ErrorMessage      any
-	PossibleCauses    any
+	// A machine-readable error code. (AI-inferred)
+	ErrorCode any
+	// A unique identifier for this specific error occurrence. (AI-inferred)
+	ErrorId any
+	// A human-readable description of the error. (AI-inferred)
+	ErrorMessage any
+	// Likely cause(s) of this issue. (AI-inferred)
+	PossibleCauses any
+	// Guidance for resolving this issue. (AI-inferred)
 	RecommendedAction any
 }
 
 type ServiceJob_Properties_Errors_ServiceErrorDetails struct {
-	ActivityId        any
-	Code              any
-	Message           any
-	PossibleCauses    any
+	// A unique identifier for this activity, for correlation and tracing. (AI-inferred)
+	ActivityId any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// Likely cause(s) of this issue. (AI-inferred)
+	PossibleCauses any
+	// Guidance for resolving this issue. (AI-inferred)
 	RecommendedAction any
 }
 
 type ServiceJob_Properties_Errors struct {
-	CreationTime         any
-	ErrorLevel           any
+	// When this resource was created. (AI-inferred)
+	CreationTime any
+	// How severe this error is. (AI-inferred)
+	ErrorLevel any
+	// Detail about this error, as reported by the underlying replication provider. (AI-inferred)
 	ProviderErrorDetails any
-	ServiceErrorDetails  any
-	TaskId               any
+	// Detail about this error, as reported by the Site Recovery service. (AI-inferred)
+	ServiceErrorDetails any
+	// A unique identifier for this task. (AI-inferred)
+	TaskId any
 }
 
 type ServiceJob_Properties_Tasks_CustomDetails struct {
+	// The specific subtype this resource is, distinguishing it within its own broader category. (AI-inferred)
 	InstanceType any
 }
 
@@ -42,23 +58,37 @@ type ServiceJob_Properties_Tasks_GroupTaskCustomDetails_ChildTasks struct {
 }
 
 type ServiceJob_Properties_Tasks_GroupTaskCustomDetails struct {
-	ChildTasks   any
+	// The subordinate task(s) making up this operation. (AI-inferred)
+	ChildTasks any
+	// The specific subtype this resource is, distinguishing it within its own broader category. (AI-inferred)
 	InstanceType any
 }
 
 type ServiceJob_Properties_Tasks struct {
-	AllowedActions         any
-	CustomDetails          any
-	EndTime                any
-	Errors                 any
-	FriendlyName           any
+	// The action(s) permitted on this task in its own current state. (AI-inferred)
+	AllowedActions any
+	// Additional, type-specific detail about this task. (AI-inferred)
+	CustomDetails any
+	// When this event or window ended. (AI-inferred)
+	EndTime any
+	// The error(s) encountered. (AI-inferred)
+	Errors any
+	// A human-readable name for this resource. (AI-inferred)
+	FriendlyName any
+	// Additional detail specific to this recovery plan group task. (AI-inferred)
 	GroupTaskCustomDetails any
-	Name                   any
-	StartTime              any
-	State                  any
-	StateDescription       any
-	TaskId                 any
-	TaskType               any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// When this event or window started. (AI-inferred)
+	StartTime any
+	// The current status of this resource. (AI-inferred)
+	State any
+	// A human-readable description of this resource's own current state. (AI-inferred)
+	StateDescription any
+	// A unique identifier for this task. (AI-inferred)
+	TaskId any
+	// The category of task this represents. (AI-inferred)
+	TaskType any
 }
 
 type ServiceJob_Properties struct {

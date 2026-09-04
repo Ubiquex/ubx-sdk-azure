@@ -141,32 +141,47 @@ type OpenapiAuthConfig_Properties_IdentityProviders_AzureStaticWebApps struct {
 }
 
 type OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Login struct {
+	// Which JWT claim is used as the authenticated user's own display name. (AI-inferred)
 	NameClaimType any
-	Scopes        any
+	// The OAuth scope(s) requested. (AI-inferred)
+	Scopes any
 }
 
 type OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_ClientCredential struct {
+	// The name of the app setting holding the OAuth client secret. (AI-inferred)
 	ClientSecretSettingName any
-	Method                  any
+	// The HTTP method this applies to. (AI-inferred)
+	Method any
 }
 
 type OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_OpenIdConnectConfiguration struct {
-	AuthorizationEndpoint        any
-	CertificationUri             any
-	Issuer                       any
-	TokenEndpoint                any
+	// The OAuth authorization endpoint URL. (AI-inferred)
+	AuthorizationEndpoint any
+	// The URI content is certified against. (AI-inferred)
+	CertificationUri any
+	// The identity provider issuer URL trusted for this authentication. (AI-inferred)
+	Issuer any
+	// The OAuth token endpoint URL. (AI-inferred)
+	TokenEndpoint any
+	// The URL of this identity provider's own OpenID Connect discovery document. (AI-inferred)
 	WellKnownOpenIdConfiguration any
 }
 
 type OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration struct {
-	ClientCredential           any
-	ClientId                   any
+	// The credential used to authenticate this OAuth client. (AI-inferred)
+	ClientCredential any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// OpenID Connect endpoint configuration for this authentication provider. (AI-inferred)
 	OpenIdConnectConfiguration any
 }
 
 type OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders struct {
-	Enabled      any
-	Login        any
+	// Whether this feature is turned on. (AI-inferred)
+	Enabled any
+	// Login configuration for this authentication provider. (AI-inferred)
+	Login any
+	// Registration configuration (client ID/secret, issuer) for this authentication provider. (AI-inferred)
 	Registration any
 }
 

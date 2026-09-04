@@ -22,7 +22,9 @@ class OpenapiDatasetResource_Properties_LinkedServiceName:
 
 @dataclasses.dataclass
 class OpenapiDatasetResource_Properties_Parameters:
+    # The value used when this field is left unset. (AI-inferred)
     default_value: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

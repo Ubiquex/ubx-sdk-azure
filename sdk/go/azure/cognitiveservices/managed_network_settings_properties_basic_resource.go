@@ -4,11 +4,14 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedNetworkSettingsPropertiesBasicResource_Properties_ManagedNetwork struct {
+	// The network isolation mode(s) this resource may be transitioned to. (AI-inferred)
 	ChangeableIsolationModes any
 }
 
 type ManagedNetworkSettingsPropertiesBasicResource_Properties struct {
-	ManagedNetwork    any
+	// Configuration for this workspace's own managed virtual network. (AI-inferred)
+	ManagedNetwork any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 

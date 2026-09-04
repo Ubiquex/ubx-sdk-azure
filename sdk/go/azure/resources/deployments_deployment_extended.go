@@ -80,11 +80,14 @@ type DeploymentsDeploymentExtended_Properties_Extensions struct {
 }
 
 type DeploymentsDeploymentExtended_Properties_ExternalInputDefinitions struct {
+	// The configuration defining how this external input is sourced and validated. (AI-inferred)
 	Config any
-	Kind   any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
 }
 
 type DeploymentsDeploymentExtended_Properties_ExternalInputs struct {
+	// The resolved value supplied for this external input. (AI-inferred)
 	Value any
 }
 
@@ -106,9 +109,12 @@ type DeploymentsDeploymentExtended_Properties_OutputResources struct {
 }
 
 type DeploymentsDeploymentExtended_Properties_Parameters struct {
+	// A template expression evaluated to produce this parameter's own value. (AI-inferred)
 	Expression any
-	Reference  any
-	Value      any
+	// A reference to a Key Vault secret this parameter's own value is sourced from. (AI-inferred)
+	Reference any
+	// The literal value supplied for this parameter. (AI-inferred)
+	Value any
 }
 
 type DeploymentsDeploymentExtended_Properties_ParametersLink struct {

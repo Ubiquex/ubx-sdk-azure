@@ -4,13 +4,17 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanVpnServerConfigurationPolicyGroup_Properties_P2SconnectionConfigurations struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type VirtualwanVpnServerConfigurationPolicyGroup_Properties_PolicyMembers struct {
-	AttributeType  any
+	// The kind of attribute this policy rule matches on. (AI-inferred)
+	AttributeType any
+	// The value this policy rule matches against. (AI-inferred)
 	AttributeValue any
-	Name           any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type VirtualwanVpnServerConfigurationPolicyGroup_Properties struct {

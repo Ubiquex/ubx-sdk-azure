@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ManagedapplicationsApplication_Identity_UserAssignedIdentities {
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
 }
 
@@ -31,13 +33,18 @@ export interface ManagedapplicationsApplication_Plan {
 }
 
 export interface ManagedapplicationsApplication_Properties_Artifacts {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** A resource URI. (AI-inferred) */
   uri?: string | Computed<string>;
 }
 
 export interface ManagedapplicationsApplication_Properties_Authorizations {
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** A reference to the role definition granted to the publisher for managing this application. (AI-inferred) */
   roleDefinitionId?: string | Computed<string>;
 }
 
@@ -65,8 +72,11 @@ export interface ManagedapplicationsApplication_Properties_CustomerSupport {
 }
 
 export interface ManagedapplicationsApplication_Properties_JitAccessPolicy_JitApprovers {
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

@@ -4,7 +4,9 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRegistry_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -25,6 +27,7 @@ type OpenapiRegistry_Properties_ManagedResourceGroup struct {
 }
 
 type OpenapiRegistry_Properties_ManagedResourceGroupSettings_AssignedIdentities struct {
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -34,53 +37,77 @@ type OpenapiRegistry_Properties_ManagedResourceGroupSettings struct {
 }
 
 type OpenapiRegistry_Properties_RegionDetails_AcrDetails_SystemCreatedAcrAccount struct {
+	// The name of the associated Azure Container Registry account. (AI-inferred)
 	AcrAccountName any
-	AcrAccountSku  any
-	ArmResourceId  any
+	// The SKU of the associated Azure Container Registry account. (AI-inferred)
+	AcrAccountSku any
+	// A reference to the associated Azure Resource Manager resource. (AI-inferred)
+	ArmResourceId any
 }
 
 type OpenapiRegistry_Properties_RegionDetails_AcrDetails struct {
+	// Whether the associated Azure Container Registry account was created automatically by the system. (AI-inferred)
 	SystemCreatedAcrAccount any
 }
 
 type OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails_SystemCreatedStorageAccount struct {
-	AllowBlobPublicAccess    any
-	ArmResourceId            any
+	// Whether public (anonymous) access to blobs is permitted on the associated storage account. (AI-inferred)
+	AllowBlobPublicAccess any
+	// A reference to the associated Azure Resource Manager resource. (AI-inferred)
+	ArmResourceId any
+	// Whether the associated storage account has hierarchical namespace (Data Lake) enabled. (AI-inferred)
 	StorageAccountHnsEnabled any
-	StorageAccountName       any
-	StorageAccountType       any
+	// The name of the associated storage account. (AI-inferred)
+	StorageAccountName any
+	// The replication/performance type of the associated storage account. (AI-inferred)
+	StorageAccountType any
 }
 
 type OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails struct {
+	// Whether the associated storage account was created automatically by the system. (AI-inferred)
 	SystemCreatedStorageAccount any
 }
 
 type OpenapiRegistry_Properties_RegionDetails struct {
-	AcrDetails            any
-	Location              any
+	// Detail about the Azure Container Registry associated with this workspace. (AI-inferred)
+	AcrDetails any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// Detail about the storage account associated with this workspace. (AI-inferred)
 	StorageAccountDetails any
 }
 
 type OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// A reference to the subnet this resource is injected into. (AI-inferred)
 	SubnetArmId any
 }
 
 type OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_RegistryPrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties struct {
-	GroupIds                                  any
-	PrivateEndpoint                           any
-	ProvisioningState                         any
+	// The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
+	GroupIds any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The current approval state of this registry's own Private Link connection. (AI-inferred)
 	RegistryPrivateLinkServiceConnectionState any
 }
 
 type OpenapiRegistry_Properties_RegistryPrivateEndpointConnections struct {
-	Id         any
-	Location   any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

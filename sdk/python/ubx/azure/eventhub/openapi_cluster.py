@@ -13,6 +13,7 @@ class OpenapiCluster_Properties_PlatformCapabilities_ConfidentialCompute:
 
 @dataclasses.dataclass
 class OpenapiCluster_Properties_PlatformCapabilities:
+    # Whether this namespace runs on confidential computing infrastructure. (AI-inferred)
     confidential_compute: Any = None
 
 @dataclasses.dataclass
@@ -21,6 +22,7 @@ class OpenapiCluster_Properties:
     created_at: Any = None
     # The metric ID of the cluster resource. Provided by the service and not modifiable by the user.
     metric_id: Any = None
+    # The platform-level capability/capabilities this namespace supports. (AI-inferred)
     platform_capabilities: Any = None
     # Provisioning state of the Cluster.
     provisioning_state: Any = None

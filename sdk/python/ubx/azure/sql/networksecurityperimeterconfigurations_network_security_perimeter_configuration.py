@@ -8,54 +8,82 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # The globally unique identifier of the associated network security perimeter. (AI-inferred)
     perimeter_guid: Any = None
 
 @dataclasses.dataclass
 class NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties:
+    # The IP address range(s), in CIDR notation, this rule applies to. (AI-inferred)
     address_prefixes: Any = None
+    # Whether this rule applies to inbound or outbound traffic. (AI-inferred)
     direction: Any = None
+    # The fully qualified domain name(s) this rule applies to. (AI-inferred)
     fully_qualified_domain_names: Any = None
+    # The network security perimeter(s) this resource participates in. (AI-inferred)
     network_security_perimeters: Any = None
+    # The service tag(s) this rule matches. (AI-inferred)
     service_tags: Any = None
+    # The subscription ID(s) this rule applies to. (AI-inferred)
     subscriptions: Any = None
 
 @dataclasses.dataclass
 class NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_Profile:
+    # The access rule(s) making up this network security perimeter profile. (AI-inferred)
     access_rules: Any = None
+    # The version of this profile's own access rule set. (AI-inferred)
     access_rules_version: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The category of issue detected. (AI-inferred)
     issue_type: Any = None
+    # How serious this issue is. (AI-inferred)
     severity: Any = None
+    # The access rule(s) recommended to resolve this issue. (AI-inferred)
     suggested_access_rules: Any = None
+    # The resource ID(s) recommended to resolve this issue. (AI-inferred)
     suggested_resource_ids: Any = None
 
 @dataclasses.dataclass
 class NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation:
+    # Whether this network security perimeter is enforced or only auditing (learning mode). (AI-inferred)
     access_mode: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Properties:
+    # A reference to the network security perimeter this applies to. (AI-inferred)
     network_security_perimeter: Any = None
+    # A reference to the network security perimeter profile this applies to. (AI-inferred)
     profile: Any = None
+    # Issue(s) detected while provisioning this network security perimeter association. (AI-inferred)
     provisioning_issues: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The association linking this resource to a network security perimeter profile. (AI-inferred)
     resource_association: Any = None
 
 @dataclasses.dataclass

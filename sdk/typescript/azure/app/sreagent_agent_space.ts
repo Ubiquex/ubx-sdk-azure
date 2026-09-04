@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface SreagentAgentSpace_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -27,14 +29,20 @@ export interface SreagentAgentSpace_Properties_ComplianceStatus {
 }
 
 export interface SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions_ActionParameters {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions {
+  /** The name identifying the specific automated action this policy permits the agent to take. (AI-inferred) */
   actionName?: string | Computed<string>;
+  /** The parameter(s) configuring how this permitted action is executed. (AI-inferred) */
   actionParameters?: SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions_ActionParameters[] | Computed<SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions_ActionParameters[]>;
+  /** Whether a human must approve this action before the agent is allowed to run it. (AI-inferred) */
   approvalRequired?: boolean | Computed<boolean>;
+  /** The extension or plugin this permitted action belongs to. (AI-inferred) */
   extension?: string | Computed<string>;
 }
 

@@ -11,39 +11,61 @@ export interface Profile_Properties_DnsConfig {
 }
 
 export interface Profile_Properties_Endpoints_Properties_CustomHeaders {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface Profile_Properties_Endpoints_Properties_Subnets {
+  /** The first address in this range, inclusive. (AI-inferred) */
   first?: string | Computed<string>;
+  /** The last address in this range, inclusive. (AI-inferred) */
   last?: string | Computed<string>;
+  /** The subnet or IP range this endpoint applies to, for subnet-based routing. (AI-inferred) */
   scope?: number | Computed<number>;
 }
 
 export interface Profile_Properties_Endpoints_Properties {
+  /** Whether this endpoint continues to receive traffic even when it's reported unhealthy. (AI-inferred) */
   alwaysServe?: string | Computed<string>;
+  /** Additional HTTP header(s) sent with this endpoint's own health check probes. (AI-inferred) */
   customHeaders?: Profile_Properties_Endpoints_Properties_CustomHeaders[] | Computed<Profile_Properties_Endpoints_Properties_CustomHeaders[]>;
+  /** The Azure region or geographic location this endpoint is associated with. (AI-inferred) */
   endpointLocation?: string | Computed<string>;
+  /** The current health-check status of this endpoint. (AI-inferred) */
   endpointMonitorStatus?: string | Computed<string>;
+  /** Whether this endpoint is enabled or disabled. (AI-inferred) */
   endpointStatus?: string | Computed<string>;
+  /** The geographic region(s) this endpoint is mapped to, for geographic routing. (AI-inferred) */
   geoMapping?: string[] | Computed<string[]>;
+  /** The minimum number of healthy child endpoints required before this nested profile itself is considered healthy. (AI-inferred) */
   minChildEndpoints?: number | Computed<number>;
+  /** The minimum number of healthy IPv4 child endpoints required before this nested profile itself is considered healthy. (AI-inferred) */
   minChildEndpointsIpv4?: number | Computed<number>;
+  /** The minimum number of healthy IPv6 child endpoints required before this nested profile itself is considered healthy. (AI-inferred) */
   minChildEndpointsIpv6?: number | Computed<number>;
+  /** The relative priority of this endpoint -- lower numbers are preferred first. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The subnet or IP range(s) mapped to this endpoint, for subnet-based routing. (AI-inferred) */
   subnets?: Profile_Properties_Endpoints_Properties_Subnets[] | Computed<Profile_Properties_Endpoints_Properties_Subnets[]>;
+  /** The domain name or IP address traffic is routed to. (AI-inferred) */
   target?: string | Computed<string>;
+  /** A reference to the Azure resource this endpoint targets. (AI-inferred) */
   targetResourceId?: string | Computed<string>;
+  /** The relative weight of this endpoint, for weighted routing. (AI-inferred) */
   weight?: number | Computed<number>;
 }
 
 export interface Profile_Properties_Endpoints {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Profile_Properties_Endpoints_Properties | Computed<Profile_Properties_Endpoints_Properties>;
 }
 
 export interface Profile_Properties_MonitorConfig_ExpectedStatusCodeRanges {
+  /** The maximum value allowed. (AI-inferred) */
   max?: number | Computed<number>;
+  /** The minimum value allowed. (AI-inferred) */
   min?: number | Computed<number>;
 }
 

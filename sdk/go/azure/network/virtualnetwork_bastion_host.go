@@ -4,24 +4,34 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddress struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type VirtualnetworkBastionHost_Properties_IpConfigurations_Properties struct {
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type VirtualnetworkBastionHost_Properties_IpConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type VirtualnetworkBastionHost_Properties_NetworkAcls_IpRules struct {
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
 	AddressPrefix any
 }
 
@@ -51,7 +61,8 @@ type VirtualnetworkBastionHost_Properties struct {
 	EnableTunneling any
 	// IP configuration of the Bastion Host resource.
 	IpConfigurations any
-	NetworkAcls      any
+	// Network access rule(s) restricting which network(s) can reach this resource. (AI-inferred)
+	NetworkAcls any
 	// Provisioning states of a resource.
 	ProvisioningState any
 	// The scale units for the Bastion Host resource.

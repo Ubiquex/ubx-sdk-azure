@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OucontainerOuContainer_Properties_Accounts:
+    # The name of this service account created within the managed domain's own organizational unit. (AI-inferred)
     account_name: Any = None
+    # The password for this service account. (AI-inferred)
     password: Any = None
+    # The Service Principal Name registered for this service account. (AI-inferred)
     spn: Any = None
 
 @dataclasses.dataclass

@@ -6,7 +6,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type CapabilityHost_Properties struct {
 	// List of AI services connections.
 	AiServicesConnections any
-	CapabilityHostKind    any
+	// The category of capability host this represents. (AI-inferred)
+	CapabilityHostKind any
 	// Customer subnet info to help set up this capability host.
 	CustomerSubnet any
 	// Whether public hosting environment is enabled for the capability host
@@ -33,10 +34,12 @@ var CapabilityHost_PropertiesFields = ubx.FieldMap{
 }
 
 type CapabilityHostConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type CapabilityHostAttrs struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

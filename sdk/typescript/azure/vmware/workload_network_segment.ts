@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface WorkloadNetworkSegment_Properties_PortVif {
+  /** The name of this physical network port. (AI-inferred) */
   portName?: string | Computed<string>;
 }
 

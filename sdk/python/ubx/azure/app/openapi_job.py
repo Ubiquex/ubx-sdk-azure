@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiJob_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,15 +26,22 @@ class OpenapiJob_Identity:
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules_Auth:
+    # A reference to the secret holding this value. (AI-inferred)
     secret_ref: Any = None
+    # The parameter this scaling trigger reads from. (AI-inferred)
     trigger_parameter: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules:
+    # Authentication configuration for this app. (AI-inferred)
     auth: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # Additional, free-form metadata associated with this resource. (AI-inferred)
     metadata: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -57,7 +66,9 @@ class OpenapiJob_Properties_Configuration_EventTriggerConfig:
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Configuration_IdentitySettings:
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # Hook(s) run at specific points in this container's own lifecycle. (AI-inferred)
     lifecycle: Any = None
 
 @dataclasses.dataclass
@@ -69,9 +80,13 @@ class OpenapiJob_Properties_Configuration_ManualTriggerConfig:
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Configuration_Registries:
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # A reference to the secret holding the password credential. (AI-inferred)
     password_secret_ref: Any = None
+    # The server hostname or address this connects to. (AI-inferred)
     server: Any = None
+    # The username used to authenticate. (AI-inferred)
     username: Any = None
 
 @dataclasses.dataclass
@@ -85,9 +100,13 @@ class OpenapiJob_Properties_Configuration_ScheduleTriggerConfig:
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Configuration_Secrets:
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # A reference to the Key Vault secret this value is sourced from. (AI-inferred)
     key_vault_url: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -113,77 +132,119 @@ class OpenapiJob_Properties_Configuration:
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Template_Containers_Probes_HttpGet_HttpHeaders:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Template_Containers_Probes_HttpGet:
+    # The hostname this applies to. (AI-inferred)
     host: Any = None
+    # Extra HTTP headers this probe sends with its request. (AI-inferred)
     http_headers: Any = None
+    # A file or URL path. (AI-inferred)
     path: Any = None
+    # A network port number. (AI-inferred)
     port: Any = None
+    # The URI scheme (`HTTP` or `HTTPS`) this probe uses. (AI-inferred)
     scheme: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Template_Containers_Probes_TcpSocket:
+    # The hostname this applies to. (AI-inferred)
     host: Any = None
+    # A network port number. (AI-inferred)
     port: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Template_Containers_Probes:
+    # How many consecutive probe failures are tolerated before the container is considered unhealthy. (AI-inferred)
     failure_threshold: Any = None
+    # Configures this probe to send an HTTP GET request to the container. (AI-inferred)
     http_get: Any = None
+    # How long to wait after the container starts before running this probe for the first time. (AI-inferred)
     initial_delay_seconds: Any = None
+    # How often, in seconds, this probe runs. (AI-inferred)
     period_seconds: Any = None
+    # How many consecutive successful probes mark the container healthy again. (AI-inferred)
     success_threshold: Any = None
+    # Configures this probe to check the container's own port is accepting TCP connections. (AI-inferred)
     tcp_socket: Any = None
+    # How long, in seconds, the container is given to shut down gracefully before being forcibly stopped. (AI-inferred)
     termination_grace_period_seconds: Any = None
+    # How long this probe waits for a response before treating the attempt as a failure. (AI-inferred)
     timeout_seconds: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Template_Containers:
+    # The health probe(s) configured on this container. (AI-inferred)
     probes: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Template_InitContainers_Env:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A reference to the secret holding this value. (AI-inferred)
     secret_ref: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Template_InitContainers_Resources:
+    # The number of CPU core(s) allocated. (AI-inferred)
     cpu: Any = None
+    # The amount of ephemeral (scratch) storage allocated. (AI-inferred)
     ephemeral_storage: Any = None
+    # The amount of memory allocated. (AI-inferred)
     memory: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Template_InitContainers_VolumeMounts:
+    # The path this volume is mounted at inside the container. (AI-inferred)
     mount_path: Any = None
+    # A specific subdirectory within the volume to mount, rather than its own root. (AI-inferred)
     sub_path: Any = None
+    # The name of this volume. (AI-inferred)
     volume_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Template_InitContainers:
+    # The argument(s) passed to the container's own command. (AI-inferred)
     args: Any = None
+    # The container entrypoint command, overriding the image's own default. (AI-inferred)
     command: Any = None
+    # Environment variable(s) set in the container. (AI-inferred)
     env: Any = None
+    # The container image reference to run. (AI-inferred)
     image: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The compute resource requirement(s) (CPU, memory) for this container. (AI-inferred)
     resources: Any = None
+    # The volume(s) mounted into this container. (AI-inferred)
     volume_mounts: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Template_Volumes_Secrets:
+    # A file or URL path. (AI-inferred)
     path: Any = None
+    # A reference to the secret holding this value. (AI-inferred)
     secret_ref: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties_Template_Volumes:
+    # Additional mount option(s) applied to this volume. (AI-inferred)
     mount_options: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The secret(s) defined on this app. (AI-inferred)
     secrets: Any = None
+    # The name of the storage resource this applies to. (AI-inferred)
     storage_name: Any = None
+    # The category of storage this volume uses. (AI-inferred)
     storage_type: Any = None
 
 @dataclasses.dataclass

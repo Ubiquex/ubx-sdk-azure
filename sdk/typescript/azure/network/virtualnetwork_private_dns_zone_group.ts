@@ -2,21 +2,31 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties_RecordSets {
+  /** The fully qualified domain name assigned to this resource. (AI-inferred) */
   fqdn?: string | Computed<string>;
+  /** The IP address(es) associated with this resource. (AI-inferred) */
   ipAddresses?: string[] | Computed<string[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The name of this DNS record set. (AI-inferred) */
   recordSetName?: string | Computed<string>;
+  /** The DNS record type this applies to, e.g. `A` or `CNAME`. (AI-inferred) */
   recordType?: string | Computed<string>;
+  /** The time-to-live applied to this DNS record. (AI-inferred) */
   ttl?: number | Computed<number>;
 }
 
 export interface VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties {
+  /** A reference to the Private DNS zone this record belongs to. (AI-inferred) */
   privateDnsZoneId?: string | Computed<string>;
+  /** The DNS record set(s) making up this zone. (AI-inferred) */
   recordSets?: VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties_RecordSets[] | Computed<VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties_RecordSets[]>;
 }
 
 export interface VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties | Computed<VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties>;
 }
 

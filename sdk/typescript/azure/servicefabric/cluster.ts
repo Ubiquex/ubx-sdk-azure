@@ -7,8 +7,11 @@ export interface Cluster_Properties_ApplicationTypeVersionsCleanupPolicy {
 }
 
 export interface Cluster_Properties_AvailableClusterVersions {
+  /** The Service Fabric runtime version this cluster runs. (AI-inferred) */
   codeVersion?: string | Computed<string>;
+  /** The operating system environment this cluster runs on, e.g. `Windows` or `Linux`. (AI-inferred) */
   environment?: string | Computed<string>;
+  /** When support for this cluster's own current code version ends, in UTC. (AI-inferred) */
   supportExpiryUtc?: string | Computed<string>;
 }
 
@@ -31,7 +34,9 @@ export interface Cluster_Properties_Certificate {
 }
 
 export interface Cluster_Properties_CertificateCommonNames_CommonNames {
+  /** The Common Name of the certificate trusted for cluster authentication. (AI-inferred) */
   certificateCommonName?: string | Computed<string>;
+  /** The thumbprint of the CA that issued the cluster certificate. (AI-inferred) */
   certificateIssuerThumbprint?: string | Computed<string>;
 }
 
@@ -43,13 +48,18 @@ export interface Cluster_Properties_CertificateCommonNames {
 }
 
 export interface Cluster_Properties_ClientCertificateCommonNames {
+  /** The Common Name of the certificate trusted for cluster authentication. (AI-inferred) */
   certificateCommonName?: string | Computed<string>;
+  /** The thumbprint of the CA that issued the cluster certificate. (AI-inferred) */
   certificateIssuerThumbprint?: string | Computed<string>;
+  /** Whether this client certificate is granted administrative access. (AI-inferred) */
   isAdmin?: boolean | Computed<boolean>;
 }
 
 export interface Cluster_Properties_ClientCertificateThumbprints {
+  /** A cryptographic thumbprint of this certificate. (AI-inferred) */
   certificateThumbprint?: string | Computed<string>;
+  /** Whether this client certificate is granted administrative access. (AI-inferred) */
   isAdmin?: boolean | Computed<boolean>;
 }
 
@@ -69,54 +79,82 @@ export interface Cluster_Properties_DiagnosticsStorageAccountConfig {
 }
 
 export interface Cluster_Properties_FabricSettings_Parameters {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_FabricSettings {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The parameter(s) making up this configuration. (AI-inferred) */
   parameters?: Cluster_Properties_FabricSettings_Parameters[] | Computed<Cluster_Properties_FabricSettings_Parameters[]>;
 }
 
 export interface Cluster_Properties_NodeTypes_ApplicationPorts {
+  /** The last port, inclusive, in this range. (AI-inferred) */
   endPort?: number | Computed<number>;
+  /** The first port, inclusive, in this range. (AI-inferred) */
   startPort?: number | Computed<number>;
 }
 
 export interface Cluster_Properties_NodeTypes {
+  /** The port range reserved for applications deployed to this cluster. (AI-inferred) */
   applicationPorts?: Cluster_Properties_NodeTypes_ApplicationPorts | Computed<Cluster_Properties_NodeTypes_ApplicationPorts>;
+  /** The named resource capacity/capacities (e.g. memory, disk) this node type provides. (AI-inferred) */
   capacities?: Record<string, string> | Computed<Record<string, string>>;
+  /** The port clients use to connect to this cluster. (AI-inferred) */
   clientConnectionEndpointPort?: number | Computed<number>;
+  /** The durability guarantee this node type provides, e.g. `Bronze`, `Silver`, or `Gold`. (AI-inferred) */
   durabilityLevel?: string | Computed<string>;
+  /** The port range reserved for ephemeral (dynamic) connections on this cluster. (AI-inferred) */
   ephemeralPorts?: Cluster_Properties_NodeTypes_ApplicationPorts | Computed<Cluster_Properties_NodeTypes_ApplicationPorts>;
+  /** The port used for the cluster's own HTTP management endpoint. (AI-inferred) */
   httpGatewayEndpointPort?: number | Computed<number>;
+  /** Whether this is the primary node type for the cluster. (AI-inferred) */
   isPrimary?: boolean | Computed<boolean>;
+  /** Whether this service is stateless, rather than stateful. (AI-inferred) */
   isStateless?: boolean | Computed<boolean>;
+  /** Whether this node type is spread across multiple availability zones. (AI-inferred) */
   multipleAvailabilityZones?: boolean | Computed<boolean>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Custom key/value property(s) used to constrain where services are placed on this node type. (AI-inferred) */
   placementProperties?: Record<string, string> | Computed<Record<string, string>>;
+  /** The port used for the cluster's own reverse proxy. (AI-inferred) */
   reverseProxyEndpointPort?: number | Computed<number>;
+  /** The number of virtual machine instance(s) in this node type. (AI-inferred) */
   vmInstanceCount?: number | Computed<number>;
 }
 
 export interface Cluster_Properties_Notifications_NotificationTargets {
+  /** The channel this notification is delivered through. (AI-inferred) */
   notificationChannel?: string | Computed<string>;
+  /** The recipient(s) this notification is delivered to. (AI-inferred) */
   receivers?: string[] | Computed<string[]>;
 }
 
 export interface Cluster_Properties_Notifications {
+  /** Whether this feature is turned on. (AI-inferred) */
   isEnabled?: boolean | Computed<boolean>;
+  /** The category of event this notification setting applies to. (AI-inferred) */
   notificationCategory?: string | Computed<string>;
+  /** The minimum severity level that triggers this notification. (AI-inferred) */
   notificationLevel?: string | Computed<string>;
+  /** The recipient(s) this notification is delivered to. (AI-inferred) */
   notificationTargets?: Cluster_Properties_Notifications_NotificationTargets[] | Computed<Cluster_Properties_Notifications_NotificationTargets[]>;
 }
 
 export interface Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicy {
+  /** The maximum percentage of services permitted to become newly unhealthy during an upgrade. (AI-inferred) */
   maxPercentDeltaUnhealthyServices?: number | Computed<number>;
 }
 
 export interface Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies {
+  /** The default health policy applied to a service type's own delta (upgrade-time) health evaluation. (AI-inferred) */
   defaultServiceTypeDeltaHealthPolicy?: Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicy | Computed<Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicy>;
+  /** Per-service-type health policy override(s) for delta (upgrade-time) health evaluation. (AI-inferred) */
   serviceTypeDeltaHealthPolicies?: Record<string, Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicy> | Computed<Record<string, Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicy>>;
 }
 
@@ -132,11 +170,14 @@ export interface Cluster_Properties_UpgradeDescription_DeltaHealthPolicy {
 }
 
 export interface Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicy {
+  /** The maximum percentage of services permitted to be unhealthy at steady state. (AI-inferred) */
   maxPercentUnhealthyServices?: number | Computed<number>;
 }
 
 export interface Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies {
+  /** The default health policy applied to a service type's own steady-state health evaluation. (AI-inferred) */
   defaultServiceTypeHealthPolicy?: Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicy | Computed<Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicy>;
+  /** Per-service-type health policy override(s) for steady-state health evaluation. (AI-inferred) */
   serviceTypeHealthPolicies?: Record<string, Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicy> | Computed<Record<string, Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicy>>;
 }
 
@@ -173,6 +214,7 @@ export interface Cluster_Properties_UpgradeDescription {
 export interface Cluster_Properties {
   /** The list of add-on features to enable in the cluster. */
   addOnFeatures?: string[] | Computed<string[]>;
+  /** Configuration for automatically removing unused application type versions. (AI-inferred) */
   applicationTypeVersionsCleanupPolicy?: Cluster_Properties_ApplicationTypeVersionsCleanupPolicy | Computed<Cluster_Properties_ApplicationTypeVersionsCleanupPolicy>;
   /** The Service Fabric runtime versions available for this cluster. */
   availableClusterVersions?: Cluster_Properties_AvailableClusterVersions[] | Computed<Cluster_Properties_AvailableClusterVersions[]>;

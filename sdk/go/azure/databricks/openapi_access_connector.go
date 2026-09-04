@@ -4,7 +4,9 @@ package databricks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAccessConnector_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -51,7 +53,8 @@ type OpenapiAccessConnectorConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// Resource tags.
 	Tags any
@@ -61,7 +64,8 @@ type OpenapiAccessConnectorAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// Resource tags.
 	Tags any

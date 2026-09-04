@@ -35,20 +35,26 @@ export interface OpenapiKey_Properties_RotationPolicy_Attributes {
 }
 
 export interface OpenapiKey_Properties_RotationPolicy_LifetimeActions_Action {
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiKey_Properties_RotationPolicy_LifetimeActions_Trigger {
+  /** How long after creation this key is automatically rotated. (AI-inferred) */
   timeAfterCreate?: string | Computed<string>;
+  /** How long before expiry a notification or rotation action is triggered. (AI-inferred) */
   timeBeforeExpiry?: string | Computed<string>;
 }
 
 export interface OpenapiKey_Properties_RotationPolicy_LifetimeActions {
+  /** The action to perform. (AI-inferred) */
   action?: OpenapiKey_Properties_RotationPolicy_LifetimeActions_Action | Computed<OpenapiKey_Properties_RotationPolicy_LifetimeActions_Action>;
+  /** The condition that triggers this action. (AI-inferred) */
   trigger?: OpenapiKey_Properties_RotationPolicy_LifetimeActions_Trigger | Computed<OpenapiKey_Properties_RotationPolicy_LifetimeActions_Trigger>;
 }
 
 export interface OpenapiKey_Properties_RotationPolicy {
+  /** Metadata (enabled state, expiry, creation/update time) attached to this key, secret, or certificate. (AI-inferred) */
   attributes?: OpenapiKey_Properties_RotationPolicy_Attributes | Computed<OpenapiKey_Properties_RotationPolicy_Attributes>;
   /** The lifetimeActions for key rotation action. */
   lifetimeActions?: OpenapiKey_Properties_RotationPolicy_LifetimeActions[] | Computed<OpenapiKey_Properties_RotationPolicy_LifetimeActions[]>;
@@ -59,6 +65,7 @@ export interface OpenapiKey_Properties {
   attributes?: OpenapiKey_Properties_Attributes | Computed<OpenapiKey_Properties_Attributes>;
   /** The elliptic curve name. For valid values, see JsonWebKeyCurveName. Default for EC and EC-HSM keys is P-256 */
   curveName?: string | Computed<string>;
+  /** The cryptographic operation(s) this key is permitted to perform. (AI-inferred) */
   keyOps?: string[] | Computed<string[]>;
   /** The key size in bits. For example: 2048, 3072, or 4096 for RSA. Default for RSA and RSA-HSM keys is 2048. Exception made for bring your own key (BYOK), key exchange keys default to 4096. */
   keySize?: number | Computed<number>;
@@ -68,7 +75,9 @@ export interface OpenapiKey_Properties {
   keyUriWithVersion?: string | Computed<string>;
   /** The type of the key. For valid values, see JsonWebKeyType. */
   kty?: string | Computed<string>;
+  /** The policy defining under what conditions this key may be released for use outside the vault. (AI-inferred) */
   releasePolicy?: OpenapiKey_Properties_ReleasePolicy | Computed<OpenapiKey_Properties_ReleasePolicy>;
+  /** The policy governing how and when this key is automatically rotated. (AI-inferred) */
   rotationPolicy?: OpenapiKey_Properties_RotationPolicy | Computed<OpenapiKey_Properties_RotationPolicy>;
 }
 

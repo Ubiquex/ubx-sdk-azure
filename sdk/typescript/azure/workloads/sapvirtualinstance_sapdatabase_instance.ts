@@ -19,12 +19,16 @@ export interface SapvirtualinstanceSapdatabaseInstance_Properties_Errors {
 }
 
 export interface SapvirtualinstanceSapdatabaseInstance_Properties_LoadBalancerDetails {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface SapvirtualinstanceSapdatabaseInstance_Properties_VmDetails {
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** Detail about the storage volume(s) attached to this SAP database instance's own virtual machine. (AI-inferred) */
   storageDetails?: SapvirtualinstanceSapdatabaseInstance_Properties_LoadBalancerDetails[] | Computed<SapvirtualinstanceSapdatabaseInstance_Properties_LoadBalancerDetails[]>;
+  /** A reference to the virtual machine backing this SAP database instance. (AI-inferred) */
   virtualMachineId?: string | Computed<string>;
 }
 

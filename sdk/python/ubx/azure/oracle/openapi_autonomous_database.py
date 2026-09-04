@@ -24,14 +24,23 @@ class OpenapiAutonomousDatabase_Properties_ConnectionStrings_AllConnectionString
 
 @dataclasses.dataclass
 class OpenapiAutonomousDatabase_Properties_ConnectionStrings_Profiles:
+    # The Oracle database service consumer group this connection uses. (AI-inferred)
     consumer_group: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # Whether the connection string identifies the host by IP address or hostname. (AI-inferred)
     host_format: Any = None
+    # Whether this resource spans multiple availability domains within its own region. (AI-inferred)
     is_regional: Any = None
+    # The network protocol used. (AI-inferred)
     protocol: Any = None
+    # Whether this connection is direct or routed through a shared session pool. (AI-inferred)
     session_mode: Any = None
+    # The format this connection string is expressed in, e.g. long or Easy Connect. (AI-inferred)
     syntax_format: Any = None
+    # Whether the client, the server, or both must authenticate via TLS for this connection. (AI-inferred)
     tls_authentication: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -68,6 +77,7 @@ class OpenapiAutonomousDatabase_Properties_ConnectionUrls:
 
 @dataclasses.dataclass
 class OpenapiAutonomousDatabase_Properties_CustomerContacts:
+    # An email address associated with this resource. (AI-inferred)
     email: Any = None
 
 @dataclasses.dataclass
@@ -107,12 +117,16 @@ class OpenapiAutonomousDatabase_Properties_RemoteDisasterRecoveryConfiguration:
 
 @dataclasses.dataclass
 class OpenapiAutonomousDatabase_Properties_ScheduledOperationsList_DayOfWeek:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiAutonomousDatabase_Properties_ScheduledOperationsList:
+    # The day of the week this applies to. (AI-inferred)
     day_of_week: Any = None
+    # When this scheduled operation is set to start. (AI-inferred)
     scheduled_start_time: Any = None
+    # When this scheduled operation is set to stop. (AI-inferred)
     scheduled_stop_time: Any = None
 
 @dataclasses.dataclass

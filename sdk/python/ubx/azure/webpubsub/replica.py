@@ -46,6 +46,7 @@ _Replica_SkuFields = {
 class ReplicaConfig:
     # The geo-location where the resource lives
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # The billing information of the resource.
     sku: Any = None
@@ -56,6 +57,7 @@ class ReplicaConfig:
 class ReplicaAttrs:
     # The geo-location where the resource lives
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # The billing information of the resource.
     sku: Any = None

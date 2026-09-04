@@ -8,12 +8,16 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations_Pool:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations:
+    # Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
     allocated_address_prefixes: Any = None
+    # How many IP addresses to allocate from this pool. (AI-inferred)
     number_of_ip_addresses: Any = None
+    # A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
     pool: Any = None
 
 @dataclasses.dataclass

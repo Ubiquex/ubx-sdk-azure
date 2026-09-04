@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_NotAllowedDates {
+  /** The end of this range or window. (AI-inferred) */
   end?: string | Computed<string>;
+  /** The start of this range or window. (AI-inferred) */
   start?: string | Computed<string>;
 }
 
@@ -61,7 +63,9 @@ export interface ManagedclustersMaintenanceConfiguration_Properties_MaintenanceW
 }
 
 export interface ManagedclustersMaintenanceConfiguration_Properties_TimeInWeek {
+  /** The day-of-week component of this schedule. (AI-inferred) */
   day?: string | Computed<string>;
+  /** The hour(s) within this day this schedule is active. (AI-inferred) */
   hourSlots?: number[] | Computed<number[]>;
 }
 

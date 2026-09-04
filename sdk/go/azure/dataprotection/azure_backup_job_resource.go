@@ -7,39 +7,60 @@ type AzureBackupJobResource_Properties_ErrorDetails_Details struct {
 }
 
 type AzureBackupJobResource_Properties_ErrorDetails_InnerError struct {
-	AdditionalInfo     any
-	Code               any
+	// Additional detail about this result. (AI-inferred)
+	AdditionalInfo any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// A further-nested inner error, when the error chain is more than one level deep. (AI-inferred)
 	EmbeddedInnerError any
 }
 
 type AzureBackupJobResource_Properties_ErrorDetails struct {
-	Code              any
-	Details           any
-	InnerError        any
-	IsRetryable       any
-	IsUserError       any
-	Message           any
-	Properties        any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A more specific, nested error underlying this one. (AI-inferred)
+	InnerError any
+	// Whether retrying the operation that produced this error might succeed. (AI-inferred)
+	IsRetryable any
+	// Whether this error was caused by the caller's own request rather than a service-side failure. (AI-inferred)
+	IsUserError any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
+	// Suggested step(s) to resolve this error. (AI-inferred)
 	RecommendedAction any
-	Target            any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type AzureBackupJobResource_Properties_ExtendedInfo_SourceRecoverPoint struct {
-	RecoveryPointId   any
+	// A reference to the specific recovery point this applies to. (AI-inferred)
+	RecoveryPointId any
+	// The point in time this recovery point represents. (AI-inferred)
 	RecoveryPointTime any
 }
 
 type AzureBackupJobResource_Properties_ExtendedInfo_SubTasks struct {
+	// Further detail about this operation. (AI-inferred)
 	AdditionalDetails any
-	TaskId            any
-	TaskName          any
-	TaskProgress      any
-	TaskStatus        any
+	// An identifier for this specific task within the job. (AI-inferred)
+	TaskId any
+	// A human-readable name for this task. (AI-inferred)
+	TaskName any
+	// This task's own current progress. (AI-inferred)
+	TaskProgress any
+	// This task's own current status. (AI-inferred)
+	TaskStatus any
 }
 
 type AzureBackupJobResource_Properties_ExtendedInfo_WarningDetails struct {
+	// The name of the resource this applies to. (AI-inferred)
 	ResourceName any
-	Warning      any
+	// A non-fatal warning encountered during this operation. (AI-inferred)
+	Warning any
 }
 
 type AzureBackupJobResource_Properties_ExtendedInfo struct {
@@ -51,9 +72,11 @@ type AzureBackupJobResource_Properties_ExtendedInfo struct {
 	DataTransferredInBytes any
 	// Destination where restore is done
 	RecoveryDestination any
-	SourceRecoverPoint  any
+	// A reference to the recovery point this restore operation restores from. (AI-inferred)
+	SourceRecoverPoint any
 	// List of Sub Tasks of the job
-	SubTasks           any
+	SubTasks any
+	// A reference to the recovery point this restore operation is restoring to. (AI-inferred)
 	TargetRecoverPoint any
 	// A List, detailing the warnings related to the job
 	WarningDetails any
@@ -75,7 +98,8 @@ type AzureBackupJobResource_Properties struct {
 	// Data Source Set Name of the DataSource
 	DataSourceSetName any
 	// Type of DataSource
-	DataSourceType           any
+	DataSourceType any
+	// The name of the datastore this data is being copied to. (AI-inferred)
 	DestinationDataStoreName any
 	// Total run time of the job. ISO 8601 format.
 	Duration any
@@ -83,7 +107,8 @@ type AzureBackupJobResource_Properties struct {
 	EndTime any
 	// A List, detailing the errors related to the job
 	ErrorDetails any
-	Etag         any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
 	// Extended Information about the job
 	ExtendedInfo any
 	// Indicated that whether the job is adhoc(true) or scheduled(false)
@@ -103,7 +128,8 @@ type AzureBackupJobResource_Properties struct {
 	// Priority to be used for rehydration
 	RehydrationPriority any
 	// It indicates the sub type of operation i.e. in case of Restore it can be ALR/OLR
-	RestoreType         any
+	RestoreType any
+	// The name of the datastore this data is being copied from. (AI-inferred)
 	SourceDataStoreName any
 	// Resource Group Name of the Datasource
 	SourceResourceGroup any
@@ -122,19 +148,25 @@ type AzureBackupJobResource_Properties struct {
 }
 
 type AzureBackupJobResourceConfig struct {
-	JobId               any
+	// A reference to the backup or restore job this applies to. (AI-inferred)
+	JobId any
+	// A reference to the backup vault this data originates from. (AI-inferred)
 	SourceBackupVaultId any
-	SourceRegion        any
+	// The Azure region this data originates from. (AI-inferred)
+	SourceRegion any
 	// path parameter, not part of the API's own resource representation
 	Location any
 }
 
 type AzureBackupJobResourceAttrs struct {
+	// A reference to the backup or restore job this applies to. (AI-inferred)
 	JobId any
 	// AzureBackup Job Class
-	Properties          any
+	Properties any
+	// A reference to the backup vault this data originates from. (AI-inferred)
 	SourceBackupVaultId any
-	SourceRegion        any
+	// The Azure region this data originates from. (AI-inferred)
+	SourceRegion any
 	// path parameter, not part of the API's own resource representation
 	Location any
 }

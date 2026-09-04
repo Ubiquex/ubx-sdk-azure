@@ -8,20 +8,28 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class SwaggerNginxCertificate_Properties_CertificateError:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxCertificate_Properties:
     # Nginx Certificate Error Response Body
     certificate_error: Any = None
+    # The path this certificate is mounted at inside the NGINX deployment. (AI-inferred)
     certificate_virtual_path: Any = None
+    # When the associated Key Vault secret was created. (AI-inferred)
     key_vault_secret_created: Any = None
+    # A reference to the Key Vault secret this value is sourced from. (AI-inferred)
     key_vault_secret_id: Any = None
+    # The specific version of the associated Key Vault secret. (AI-inferred)
     key_vault_secret_version: Any = None
+    # The path this key is mounted at inside the NGINX deployment. (AI-inferred)
     key_virtual_path: Any = None
     # Provisioning State
     provisioning_state: Any = None
+    # A SHA-1 thumbprint of this certificate. (AI-inferred)
     sha1_thumbprint: Any = None
 
 _SwaggerNginxCertificate_Properties_CertificateErrorFields = {

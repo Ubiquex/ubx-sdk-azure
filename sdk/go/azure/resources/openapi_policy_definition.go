@@ -22,18 +22,27 @@ type OpenapiPolicyDefinition_Properties_ExternalEvaluationEnforcementSettings st
 }
 
 type OpenapiPolicyDefinition_Properties_Parameters_Metadata struct {
+	// Whether the identity performing this deployment is automatically granted permissions needed by its own template resources. (AI-inferred)
 	AssignPermissions any
-	Description       any
-	DisplayName       any
-	StrongType        any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// A UI hint identifying a well-known Azure resource type this parameter's own value should be picked from. (AI-inferred)
+	StrongType any
 }
 
 type OpenapiPolicyDefinition_Properties_Parameters struct {
+	// The set of values permitted for this parameter. (AI-inferred)
 	AllowedValues any
-	DefaultValue  any
-	Metadata      any
-	Schema        any
-	Type          any
+	// The value used when this parameter is left unset. (AI-inferred)
+	DefaultValue any
+	// Additional, free-form metadata associated with this resource. (AI-inferred)
+	Metadata any
+	// The JSON schema defining this parameter's own permitted value(s). (AI-inferred)
+	Schema any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiPolicyDefinition_Properties struct {

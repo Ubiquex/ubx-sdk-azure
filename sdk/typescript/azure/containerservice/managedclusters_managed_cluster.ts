@@ -9,14 +9,20 @@ export interface ManagedclustersManagedCluster_ExtendedLocation {
 }
 
 export interface ManagedclustersManagedCluster_Identity_DelegatedResources {
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** A reference to the resource this DNS zone referral applies to. (AI-inferred) */
   referralResource?: string | Computed<string>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
 }
 
 export interface ManagedclustersManagedCluster_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -51,18 +57,25 @@ export interface ManagedclustersManagedCluster_Properties_AadProfile {
 }
 
 export interface ManagedclustersManagedCluster_Properties_AddonProfiles_Identity {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** The Microsoft Entra ID object identifier this applies to. (AI-inferred) */
   objectId?: string | Computed<string>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
 }
 
 export interface ManagedclustersManagedCluster_Properties_AddonProfiles {
+  /** The configuration for this resource. (AI-inferred) */
   config?: Record<string, string> | Computed<Record<string, string>>;
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: ManagedclustersManagedCluster_Properties_AddonProfiles_Identity | Computed<ManagedclustersManagedCluster_Properties_AddonProfiles_Identity>;
 }
 
 export interface ManagedclustersManagedCluster_Properties_AgentPoolProfiles {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -236,6 +249,7 @@ export interface ManagedclustersManagedCluster_Properties_IngressProfile {
 }
 
 export interface ManagedclustersManagedCluster_Properties_LinuxProfile_Ssh_PublicKeys {
+  /** The public key data used for authentication. (AI-inferred) */
   keyData?: string | Computed<string>;
 }
 
@@ -287,6 +301,7 @@ export interface ManagedclustersManagedCluster_Properties_NetworkProfile_Advance
 }
 
 export interface ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIps {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
@@ -400,32 +415,47 @@ export interface ManagedclustersManagedCluster_Properties_PodIdentityProfile_Use
 }
 
 export interface ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error_Details[] | Computed<ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error {
+  /** Detail about an error that occurred. (AI-inferred) */
   error?: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error | Computed<ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error>;
 }
 
 export interface ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo {
+  /** Detail about an error that occurred. (AI-inferred) */
   error?: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error | Computed<ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error>;
 }
 
 export interface ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities {
+  /** Selects which resource(s) this DNS binding applies to. (AI-inferred) */
   bindingSelector?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: ManagedclustersManagedCluster_Properties_AddonProfiles_Identity | Computed<ManagedclustersManagedCluster_Properties_AddonProfiles_Identity>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Kubernetes namespace this applies to. (AI-inferred) */
   namespace?: string | Computed<string>;
+  /** Additional detail about this resource's own provisioning progress. (AI-inferred) */
   provisioningInfo?: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo | Computed<ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentityExceptions {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Kubernetes namespace this applies to. (AI-inferred) */
   namespace?: string | Computed<string>;
+  /** The Kubernetes pod label(s) this applies to. (AI-inferred) */
   podLabels?: Record<string, string> | Computed<Record<string, string>>;
 }
 
@@ -446,11 +476,17 @@ export interface ManagedclustersManagedCluster_Properties_PowerState {
 }
 
 export interface ManagedclustersManagedCluster_Properties_PrivateLinkResources {
+  /** The sub-resource this connection targets on the destination service. (AI-inferred) */
   groupId?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A reference to the Private Link service this connects to. (AI-inferred) */
   privateLinkServiceId?: string | Computed<string>;
+  /** The member(s) required for this rule to be satisfied. (AI-inferred) */
   requiredMembers?: string[] | Computed<string[]>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -476,7 +512,9 @@ export interface ManagedclustersManagedCluster_Properties_SecurityProfile_AzureK
 }
 
 export interface ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGating_Identities {
+  /** A reference to the Azure Container Registry this applies to. (AI-inferred) */
   azureContainerRegistry?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: ManagedclustersManagedCluster_Properties_AddonProfiles_Identity | Computed<ManagedclustersManagedCluster_Properties_AddonProfiles_Identity>;
 }
 
@@ -537,14 +575,20 @@ export interface ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Ist
 }
 
 export interface ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_EgressGateways {
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** A reference to the gateway configuration this applies to. (AI-inferred) */
   gatewayConfigurationName?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Kubernetes namespace this applies to. (AI-inferred) */
   namespace?: string | Computed<string>;
 }
 
 export interface ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_IngressGateways {
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** The operating mode this configuration uses. (AI-inferred) */
   mode?: string | Computed<string>;
 }
 
@@ -581,15 +625,22 @@ export interface ManagedclustersManagedCluster_Properties_ServicePrincipalProfil
 }
 
 export interface ManagedclustersManagedCluster_Properties_Status_ProvisioningError_AdditionalInfo {
+  /** Additional detail about this result. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface ManagedclustersManagedCluster_Properties_Status_ProvisioningError_Details {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: ManagedclustersManagedCluster_Properties_Status_ProvisioningError_AdditionalInfo[] | Computed<ManagedclustersManagedCluster_Properties_Status_ProvisioningError_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error_Details[] | Computed<ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 

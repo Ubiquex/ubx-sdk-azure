@@ -24,12 +24,19 @@ class BigdatapoolBigDataPoolResourceInfo_Properties_AutoScale:
 
 @dataclasses.dataclass
 class BigdatapoolBigDataPoolResourceInfo_Properties_CustomLibraries:
+    # The name of the storage container this custom library is uploaded to. (AI-inferred)
     container_name: Any = None
+    # An identifier for the identity that uploaded this custom library. (AI-inferred)
     creator_id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The path to this custom library's own file within its containing storage container. (AI-inferred)
     path: Any = None
+    # The current provisioning status of this custom library. (AI-inferred)
     provisioning_status: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # When this custom library was uploaded. (AI-inferred)
     uploaded_timestamp: Any = None
 
 @dataclasses.dataclass

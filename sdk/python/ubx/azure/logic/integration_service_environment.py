@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class IntegrationServiceEnvironment_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -47,6 +49,7 @@ class IntegrationServiceEnvironment_Properties_EncryptionConfiguration:
 
 @dataclasses.dataclass
 class IntegrationServiceEnvironment_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddresses:
+    # The address this endpoint is reached at. (AI-inferred)
     address: Any = None
 
 @dataclasses.dataclass

@@ -4,6 +4,7 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface CapabilityHost_Properties {
   /** List of AI services connections. */
   aiServicesConnections?: string[] | Computed<string[]>;
+  /** The category of capability host this represents. (AI-inferred) */
   capabilityHostKind?: string | Computed<string>;
   /** Customer subnet info to help set up this capability host. */
   customerSubnet?: string | Computed<string>;
@@ -31,10 +32,12 @@ const CapabilityHost_PropertiesFields: FieldMap = {
 };
 
 export interface CapabilityHostConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: CapabilityHost_Properties | Computed<CapabilityHost_Properties>;
 }
 
 export interface CapabilityHostAttrs {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: CapabilityHost_Properties;
 }
 

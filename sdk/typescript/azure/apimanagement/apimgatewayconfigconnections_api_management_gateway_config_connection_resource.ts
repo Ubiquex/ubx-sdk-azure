@@ -20,12 +20,14 @@ const ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_P
 };
 
 export interface ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Properties | Computed<ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Properties>;
 }
 
 export interface ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceAttrs {
   /** ETag of the resource. */
   etag: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Properties;
 }
 

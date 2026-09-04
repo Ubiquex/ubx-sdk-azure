@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DbOpenapiCassandraRoleDefinitionResource_Properties_Permissions:
+    # The specific data-plane action(s) this role definition grants. (AI-inferred)
     data_actions: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The specific data-plane action(s) explicitly excluded from this role definition's own grant. (AI-inferred)
     not_data_actions: Any = None
 
 @dataclasses.dataclass

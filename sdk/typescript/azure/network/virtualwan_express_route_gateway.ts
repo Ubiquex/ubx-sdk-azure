@@ -14,52 +14,78 @@ export interface VirtualwanExpressRouteGateway_Properties_AutoScaleConfiguration
 }
 
 export interface VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_PropagatedRouteTables {
+  /** The identifier(s) this applies to. (AI-inferred) */
   ids?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering[] | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering[]>;
+  /** The label(s) attached to this route table, used to group it with others for association/propagation. (AI-inferred) */
   labels?: string[] | Computed<string[]>;
 }
 
 export interface VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes {
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred) */
   nextHopIpAddress?: string | Computed<string>;
 }
 
 export interface VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig {
+  /** Whether this connection's own static routes are propagated to the hub's own route table(s). (AI-inferred) */
   propagateStaticRoutes?: boolean | Computed<boolean>;
+  /** The criteria under which locally learned virtual network routes override otherwise equal-priority learned routes. (AI-inferred) */
   vnetLocalRouteOverrideCriteria?: string | Computed<string>;
 }
 
 export interface VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes {
+  /** The BGP peering connection(s) established on this virtual hub. (AI-inferred) */
   bgpConnections?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering[] | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering[]>;
+  /** The caller-defined static route(s) on this connection. (AI-inferred) */
   staticRoutes?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes[] | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes[]>;
+  /** Configuration controlling how static routes are propagated for this connection. (AI-inferred) */
   staticRoutesConfig?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig>;
 }
 
 export interface VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration {
+  /** A reference to the route table this connection's own traffic is associated with. (AI-inferred) */
   associatedRouteTable?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering>;
+  /** A reference to the route map applied to routes received on this connection. (AI-inferred) */
   inboundRouteMap?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering>;
+  /** A reference to the route map applied to routes advertised on this connection. (AI-inferred) */
   outboundRouteMap?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering>;
+  /** The route table(s) routes from this connection are propagated into. (AI-inferred) */
   propagatedRouteTables?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_PropagatedRouteTables | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_PropagatedRouteTables>;
+  /** The route(s) learned from virtual network connections attached to this hub. (AI-inferred) */
   vnetRoutes?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes>;
 }
 
 export interface VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties {
+  /** A pre-shared key used to authorize this connection. (AI-inferred) */
   authorizationKey?: string | Computed<string>;
+  /** Whether traffic is routed through a security provider before reaching the internet. (AI-inferred) */
   enableInternetSecurity?: boolean | Computed<boolean>;
+  /** Whether traffic to Private Link resources bypasses the hub's own Azure Firewall or NVA, for lower latency. (AI-inferred) */
   enablePrivateLinkFastPath?: boolean | Computed<boolean>;
+  /** A reference to the ExpressRoute circuit peering this connection uses. (AI-inferred) */
   expressRouteCircuitPeering?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering>;
+  /** Whether traffic bypasses the ExpressRoute gateway when a more direct path is available. (AI-inferred) */
   expressRouteGatewayBypass?: boolean | Computed<boolean>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Routing configuration (associated/propagated route tables) applied to this connection. (AI-inferred) */
   routingConfiguration?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration>;
+  /** The relative weight of this route among several possible paths. (AI-inferred) */
   routingWeight?: number | Computed<number>;
 }
 
 export interface VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties | Computed<VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties>;
 }
 

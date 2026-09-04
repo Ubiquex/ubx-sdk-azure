@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class BatchConfiguration_Properties_ReleaseCriteria_Recurrence_Schedule_MonthlyOccurrences:
+    # The day-of-month component of a date. (AI-inferred)
     day: Any = None
+    # How many times this element is permitted to occur. (AI-inferred)
     occurrence: Any = None
 
 @dataclasses.dataclass

@@ -11,38 +11,65 @@ type VirtualMachineTemplate_ExtendedLocation struct {
 }
 
 type VirtualMachineTemplate_Properties_Disks_StorageQoSpolicy struct {
-	Id   any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 
 type VirtualMachineTemplate_Properties_Disks struct {
-	Bus              any
-	BusType          any
-	CreateDiffDisk   any
-	DiskId           any
-	DiskSizeGb       any
-	DisplayName      any
-	Lun              any
-	MaxDiskSizeGb    any
-	Name             any
+	// The bus number this device is attached to. (AI-inferred)
+	Bus any
+	// The type of bus this device is attached to, e.g. `IDE` or `SCSI`. (AI-inferred)
+	BusType any
+	// Whether this disk is created as a differencing disk against its own source. (AI-inferred)
+	CreateDiffDisk any
+	// A reference to the virtual disk this applies to. (AI-inferred)
+	DiskId any
+	// The size of this disk, in gibibytes. (AI-inferred)
+	DiskSizeGb any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// The logical unit number this disk is attached at. (AI-inferred)
+	Lun any
+	// The maximum size, in gibibytes, this disk is allowed to grow to. (AI-inferred)
+	MaxDiskSizeGb any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The storage Quality of Service policy applied to this disk. (AI-inferred)
 	StorageQoSpolicy any
-	TemplateDiskId   any
-	VhdFormatType    any
-	VhdType          any
-	VolumeType       any
+	// A reference to the source template disk this virtual disk is created from. (AI-inferred)
+	TemplateDiskId any
+	// The virtual hard disk format used, e.g. `VHD` or `VHDX`. (AI-inferred)
+	VhdFormatType any
+	// Whether this virtual hard disk is `Dynamic`, `Fixed`, or a `Differencing` disk. (AI-inferred)
+	VhdType any
+	// The category of storage volume this represents. (AI-inferred)
+	VolumeType any
 }
 
 type VirtualMachineTemplate_Properties_NetworkInterfaces struct {
-	DisplayName      any
-	Ipv4AddressType  any
-	Ipv4Addresses    any
-	Ipv6AddressType  any
-	Ipv6Addresses    any
-	MacAddress       any
-	MacAddressType   any
-	Name             any
-	NetworkName      any
-	NicId            any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// Whether this network adapter's own IPv4 address is `Static` or `Dynamic`. (AI-inferred)
+	Ipv4AddressType any
+	// The IPv4 address(es) assigned to this network adapter. (AI-inferred)
+	Ipv4Addresses any
+	// Whether this network adapter's own IPv6 address is `Static` or `Dynamic`. (AI-inferred)
+	Ipv6AddressType any
+	// The IPv6 address(es) assigned to this network adapter. (AI-inferred)
+	Ipv6Addresses any
+	// The MAC address assigned to this network adapter. (AI-inferred)
+	MacAddress any
+	// Whether this network adapter's own MAC address is `Static` or `Dynamic`. (AI-inferred)
+	MacAddressType any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The name of the virtual network this adapter connects to. (AI-inferred)
+	NetworkName any
+	// A reference to this network interface. (AI-inferred)
+	NicId any
+	// A reference to the virtual network this applies to. (AI-inferred)
 	VirtualNetworkId any
 }
 

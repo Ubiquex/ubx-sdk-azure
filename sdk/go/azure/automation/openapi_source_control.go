@@ -28,7 +28,8 @@ type OpenapiSourceControl_Properties struct {
 	// The auto publish of the source control. Default is true.
 	PublishRunbook any
 	// The repo url of the source control.
-	RepoUrl       any
+	RepoUrl any
+	// The credential used to authenticate this webhook. (AI-inferred)
 	SecurityToken any
 	// The source type. Must be one of VsoGit, VsoTfvc, GitHub.
 	SourceType any

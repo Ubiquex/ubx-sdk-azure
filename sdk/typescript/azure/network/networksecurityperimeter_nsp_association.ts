@@ -40,10 +40,12 @@ const NetworksecurityperimeterNspAssociation_PropertiesFields: FieldMap = {
 };
 
 export interface NetworksecurityperimeterNspAssociationConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: NetworksecurityperimeterNspAssociation_Properties | Computed<NetworksecurityperimeterNspAssociation_Properties>;
 }
 
 export interface NetworksecurityperimeterNspAssociationAttrs {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: NetworksecurityperimeterNspAssociation_Properties;
 }
 

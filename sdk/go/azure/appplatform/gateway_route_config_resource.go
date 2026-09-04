@@ -9,15 +9,24 @@ type GatewayRouteConfigResource_Properties_OpenApi struct {
 }
 
 type GatewayRouteConfigResource_Properties_Routes struct {
+	// A human-readable description of this resource. (AI-inferred)
 	Description any
-	Filters     any
-	Order       any
-	Predicates  any
-	SsoEnabled  any
-	Tags        any
-	Title       any
-	TokenRelay  any
-	Uri         any
+	// The condition(s) restricting which request(s) this rule applies to. (AI-inferred)
+	Filters any
+	// The relative evaluation order of this item. (AI-inferred)
+	Order any
+	// The condition(s) a request must satisfy for this route to match. (AI-inferred)
+	Predicates any
+	// Whether single sign-on is enabled for this application. (AI-inferred)
+	SsoEnabled any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
+	Tags any
+	// A human-readable title for this item. (AI-inferred)
+	Title any
+	// Whether the caller's own OAuth access token is forwarded to backend services. (AI-inferred)
+	TokenRelay any
+	// A resource URI. (AI-inferred)
+	Uri any
 }
 
 type GatewayRouteConfigResource_Properties struct {

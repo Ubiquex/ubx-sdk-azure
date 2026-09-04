@@ -4,7 +4,9 @@ package liftrqumulo
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type QumuloStorageLiftrBaseStorageFileSystemResource_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 

@@ -11,7 +11,9 @@ type OpenapiAppServicePlan_ExtendedLocation struct {
 }
 
 type OpenapiAppServicePlan_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -36,12 +38,16 @@ type OpenapiAppServicePlan_Properties_HostingEnvironmentProfile struct {
 }
 
 type OpenapiAppServicePlan_Properties_InstallScripts_Source struct {
+	// The URI content is read from. (AI-inferred)
 	SourceUri any
-	Type      any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiAppServicePlan_Properties_InstallScripts struct {
-	Name   any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Where this content is sourced from. (AI-inferred)
 	Source any
 }
 
@@ -52,27 +58,38 @@ type OpenapiAppServicePlan_Properties_Network struct {
 
 type OpenapiAppServicePlan_Properties_PlanDefaultIdentity struct {
 	// Type of managed service identity.
-	IdentityType                   any
+	IdentityType any
+	// A reference to the user-assigned managed identity used. (AI-inferred)
 	UserAssignedIdentityResourceId any
 }
 
 type OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReference struct {
+	// The current status of this reference. (AI-inferred)
 	ReferenceStatus any
-	SecretUri       any
+	// A reference to the Key Vault secret this value is sourced from. (AI-inferred)
+	SecretUri any
 }
 
 type OpenapiAppServicePlan_Properties_RegistryAdapters struct {
+	// A reference to the Key Vault secret holding this value. (AI-inferred)
 	KeyVaultSecretReference any
-	RegistryKey             any
-	Type                    any
+	// A reference to a specific registry key. (AI-inferred)
+	RegistryKey any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiAppServicePlan_Properties_StorageMounts struct {
+	// A reference to the Key Vault secret holding this connection's own credentials. (AI-inferred)
 	CredentialsKeyVaultReference any
-	DestinationPath              any
-	Name                         any
-	Source                       any
-	Type                         any
+	// The path content is written to. (AI-inferred)
+	DestinationPath any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Where this content is sourced from. (AI-inferred)
+	Source any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiAppServicePlan_Properties struct {
@@ -109,7 +126,8 @@ type OpenapiAppServicePlan_Properties struct {
 	// The number of instances that are assigned to this App Service plan.
 	NumberOfWorkers any
 	// If <code>true</code>, apps assigned to this App Service plan can be scaled independently. If <code>false</code>, apps assigned to this App Service plan will scale to all instances of the plan.
-	PerSiteScaling      any
+	PerSiteScaling any
+	// The default managed identity associated with this app's own hosting plan. (AI-inferred)
 	PlanDefaultIdentity any
 	// Provisioning state of the App Service Plan.
 	ProvisioningState any
@@ -140,9 +158,12 @@ type OpenapiAppServicePlan_Properties struct {
 }
 
 type OpenapiAppServicePlan_Sku_Capabilities struct {
-	Name   any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A machine-readable reason code. (AI-inferred)
 	Reason any
-	Value  any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiAppServicePlan_Sku_SkuCapacity struct {

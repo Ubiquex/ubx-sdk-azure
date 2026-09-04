@@ -10,6 +10,7 @@ import ubx_sdk as ubx
 class CapabilityHost_Properties:
     # List of AI services connections.
     ai_services_connections: Any = None
+    # The category of capability host this represents. (AI-inferred)
     capability_host_kind: Any = None
     # Customer subnet info to help set up this capability host.
     customer_subnet: Any = None
@@ -37,10 +38,12 @@ _CapabilityHost_PropertiesFields = {
 
 @dataclasses.dataclass
 class CapabilityHostConfig:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class CapabilityHostAttrs:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 CapabilityHost = ubx.ResourceBinding(

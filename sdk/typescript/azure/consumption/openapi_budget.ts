@@ -9,13 +9,18 @@ export interface OpenapiBudget_Properties_CurrentSpend {
 }
 
 export interface OpenapiBudget_Properties_Filter_And_Dimensions {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** How this condition's own operands are compared. (AI-inferred) */
   operator?: string | Computed<string>;
+  /** The value(s) making up this field. (AI-inferred) */
   values?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiBudget_Properties_Filter_And {
+  /** The dimension(s) this budget is filtered by. (AI-inferred) */
   dimensions?: OpenapiBudget_Properties_Filter_And_Dimensions | Computed<OpenapiBudget_Properties_Filter_And_Dimensions>;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags?: OpenapiBudget_Properties_Filter_And_Dimensions | Computed<OpenapiBudget_Properties_Filter_And_Dimensions>;
 }
 
@@ -29,13 +34,21 @@ export interface OpenapiBudget_Properties_Filter {
 }
 
 export interface OpenapiBudget_Properties_Notifications {
+  /** The email address(es) notified for this alert. (AI-inferred) */
   contactEmails?: string[] | Computed<string[]>;
+  /** The Action Group(s) notified for this alert. (AI-inferred) */
   contactGroups?: string[] | Computed<string[]>;
+  /** The Azure RBAC role(s) whose own members are notified for this alert. (AI-inferred) */
   contactRoles?: string[] | Computed<string[]>;
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** The locale this content is expressed in. (AI-inferred) */
   locale?: string | Computed<string>;
+  /** How this condition's own operands are compared. (AI-inferred) */
   operator?: string | Computed<string>;
+  /** The value that must be crossed for this condition to trigger. (AI-inferred) */
   threshold?: number | Computed<number>;
+  /** The kind of threshold this represents, e.g. actual or forecasted cost. (AI-inferred) */
   thresholdType?: string | Computed<string>;
 }
 

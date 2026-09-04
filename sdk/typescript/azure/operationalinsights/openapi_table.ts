@@ -22,12 +22,19 @@ export interface OpenapiTable_Properties_ResultStatistics {
 }
 
 export interface OpenapiTable_Properties_Schema_Columns {
+  /** A hint indicating this custom field's own intended data type. (AI-inferred) */
   dataTypeHint?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** Whether this column is shown by default in the query results view. (AI-inferred) */
   isDefaultDisplay?: boolean | Computed<boolean>;
+  /** Whether this column is hidden from the query results view. (AI-inferred) */
   isHidden?: boolean | Computed<boolean>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

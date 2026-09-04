@@ -4,19 +4,27 @@ package streamanalytics
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties struct {
-	GroupIds                          any
+	// The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
+	GroupIds any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	PrivateLinkServiceId              any
-	RequestMessage                    any
+	// A reference to the Private Link service this connection targets. (AI-inferred)
+	PrivateLinkServiceId any
+	// A message the requester attaches when asking to connect to this Private Link-enabled resource. (AI-inferred)
+	RequestMessage any
 }
 
 type PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

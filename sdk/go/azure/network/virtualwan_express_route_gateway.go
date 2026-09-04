@@ -16,52 +16,78 @@ type VirtualwanExpressRouteGateway_Properties_AutoScaleConfiguration struct {
 }
 
 type VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_ExpressRouteCircuitPeering struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids    any
+	// The identifier(s) this applies to. (AI-inferred)
+	Ids any
+	// The label(s) attached to this route table, used to group it with others for association/propagation. (AI-inferred)
 	Labels any
 }
 
 type VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes  any
-	Name             any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
 	NextHopIpAddress any
 }
 
 type VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes          any
+	// Whether this connection's own static routes are propagated to the hub's own route table(s). (AI-inferred)
+	PropagateStaticRoutes any
+	// The criteria under which locally learned virtual network routes override otherwise equal-priority learned routes. (AI-inferred)
 	VnetLocalRouteOverrideCriteria any
 }
 
 type VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections     any
-	StaticRoutes       any
+	// The BGP peering connection(s) established on this virtual hub. (AI-inferred)
+	BgpConnections any
+	// The caller-defined static route(s) on this connection. (AI-inferred)
+	StaticRoutes any
+	// Configuration controlling how static routes are propagated for this connection. (AI-inferred)
 	StaticRoutesConfig any
 }
 
 type VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable  any
-	InboundRouteMap       any
-	OutboundRouteMap      any
+	// A reference to the route table this connection's own traffic is associated with. (AI-inferred)
+	AssociatedRouteTable any
+	// A reference to the route map applied to routes received on this connection. (AI-inferred)
+	InboundRouteMap any
+	// A reference to the route map applied to routes advertised on this connection. (AI-inferred)
+	OutboundRouteMap any
+	// The route table(s) routes from this connection are propagated into. (AI-inferred)
 	PropagatedRouteTables any
-	VnetRoutes            any
+	// The route(s) learned from virtual network connections attached to this hub. (AI-inferred)
+	VnetRoutes any
 }
 
 type VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections_Properties struct {
-	AuthorizationKey           any
-	EnableInternetSecurity     any
-	EnablePrivateLinkFastPath  any
+	// A pre-shared key used to authorize this connection. (AI-inferred)
+	AuthorizationKey any
+	// Whether traffic is routed through a security provider before reaching the internet. (AI-inferred)
+	EnableInternetSecurity any
+	// Whether traffic to Private Link resources bypasses the hub's own Azure Firewall or NVA, for lower latency. (AI-inferred)
+	EnablePrivateLinkFastPath any
+	// A reference to the ExpressRoute circuit peering this connection uses. (AI-inferred)
 	ExpressRouteCircuitPeering any
-	ExpressRouteGatewayBypass  any
-	ProvisioningState          any
-	RoutingConfiguration       any
-	RoutingWeight              any
+	// Whether traffic bypasses the ExpressRoute gateway when a more direct path is available. (AI-inferred)
+	ExpressRouteGatewayBypass any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Routing configuration (associated/propagated route tables) applied to this connection. (AI-inferred)
+	RoutingConfiguration any
+	// The relative weight of this route among several possible paths. (AI-inferred)
+	RoutingWeight any
 }
 
 type VirtualwanExpressRouteGateway_Properties_ExpressRouteConnections struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

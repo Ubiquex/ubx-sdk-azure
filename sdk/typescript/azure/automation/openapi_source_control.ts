@@ -27,6 +27,7 @@ export interface OpenapiSourceControl_Properties {
   publishRunbook?: boolean | Computed<boolean>;
   /** The repo url of the source control. */
   repoUrl?: string | Computed<string>;
+  /** The credential used to authenticate this webhook. (AI-inferred) */
   securityToken?: OpenapiSourceControl_Properties_SecurityToken | Computed<OpenapiSourceControl_Properties_SecurityToken>;
   /** The source type. Must be one of VsoGit, VsoTfvc, GitHub. */
   sourceType?: string | Computed<string>;

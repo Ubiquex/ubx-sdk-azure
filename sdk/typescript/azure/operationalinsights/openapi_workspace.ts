@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiWorkspace_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -44,7 +46,9 @@ export interface OpenapiWorkspace_Properties_Features {
 }
 
 export interface OpenapiWorkspace_Properties_PrivateLinkScopedResources {
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
+  /** A reference to the scope this configuration applies to. (AI-inferred) */
   scopeId?: string | Computed<string>;
 }
 

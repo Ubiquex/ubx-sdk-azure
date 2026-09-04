@@ -4,6 +4,7 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapProperties_ServerCertificates struct {
+	// A certificate, PEM-encoded. (AI-inferred)
 	Pem any
 }
 
@@ -14,7 +15,8 @@ type DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapProperties s
 	SearchBaseDistinguishedName any
 	// Template to use for searching. Defaults to (cn=%s) where %s will be replaced by the username used to login.
 	SearchFilterTemplate any
-	ServerCertificates   any
+	// The trusted TLS server certificate(s) for connecting to this data source. (AI-inferred)
+	ServerCertificates any
 	// Hostname of the LDAP server.
 	ServerHostname any
 	// Port of the LDAP server.
@@ -37,6 +39,7 @@ type DbOpenapiDataCenterResource_Properties_ProvisionError struct {
 }
 
 type DbOpenapiDataCenterResource_Properties_SeedNodes struct {
+	// An IP address value. (AI-inferred)
 	IpAddress any
 }
 
@@ -65,7 +68,8 @@ type DbOpenapiDataCenterResource_Properties struct {
 	NodeCount any
 	// Ip of the VPN Endpoint for this data center.
 	PrivateEndpointIpAddress any
-	ProvisionError           any
+	// Detail about an error encountered while provisioning this resource. (AI-inferred)
+	ProvisionError any
 	// The status of the resource at the time the operation was called.
 	ProvisioningState any
 	// IP addresses for seed nodes in this data center. This is for reference. Generally you will want to use the seedNodes property on the cluster, which aggregates the seed nodes from all data centers in the cluster.

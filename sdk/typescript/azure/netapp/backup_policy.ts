@@ -2,9 +2,13 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface BackupPolicy_Properties_VolumeBackups {
+  /** The number of backup(s) associated with this resource. (AI-inferred) */
   backupsCount?: number | Computed<number>;
+  /** Whether this policy is currently active. (AI-inferred) */
   policyEnabled?: boolean | Computed<boolean>;
+  /** The name of this volume. (AI-inferred) */
   volumeName?: string | Computed<string>;
+  /** A reference to the volume this applies to. (AI-inferred) */
   volumeResourceId?: string | Computed<string>;
 }
 

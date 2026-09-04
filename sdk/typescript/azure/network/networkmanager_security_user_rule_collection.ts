@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface NetworkmanagerSecurityUserRuleCollection_Properties_AppliesToGroups {
+  /** A reference to the network group this applies to. (AI-inferred) */
   networkGroupId?: string | Computed<string>;
 }
 

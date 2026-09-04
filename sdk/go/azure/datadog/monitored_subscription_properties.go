@@ -4,41 +4,61 @@ package datadog
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_AgentRules_FilteringTags struct {
+	// The action to perform. (AI-inferred)
 	Action any
-	Name   any
-	Value  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_AgentRules struct {
+	// Whether Datadog agent-based monitoring is enabled for eligible resources. (AI-inferred)
 	EnableAgentMonitoring any
-	FilteringTags         any
+	// The tag(s) used to include or exclude specific resource(s) from monitoring. (AI-inferred)
+	FilteringTags any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules struct {
-	FilteringTags        any
-	SendAadLogs          any
-	SendResourceLogs     any
+	// The tag(s) used to include or exclude specific resource(s) from monitoring. (AI-inferred)
+	FilteringTags any
+	// Whether Microsoft Entra ID audit logs are sent to Datadog. (AI-inferred)
+	SendAadLogs any
+	// Whether Azure resource logs are sent to Datadog. (AI-inferred)
+	SendResourceLogs any
+	// Whether Azure subscription-level activity logs are sent to Datadog. (AI-inferred)
 	SendSubscriptionLogs any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_MetricRules struct {
+	// The tag(s) used to include or exclude specific resource(s) from monitoring. (AI-inferred)
 	FilteringTags any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules struct {
-	AgentRules        any
-	Automuting        any
-	CustomMetrics     any
-	LogRules          any
-	MetricRules       any
+	// The rule(s) governing which resource(s) the monitoring agent covers. (AI-inferred)
+	AgentRules any
+	// Whether alerts are automatically muted for resources undergoing a known state change, e.g. scaling. (AI-inferred)
+	Automuting any
+	// Whether custom metrics are sent to Datadog, in addition to platform metrics. (AI-inferred)
+	CustomMetrics any
+	// The rule(s) governing which log data is sent to Datadog. (AI-inferred)
+	LogRules any
+	// The rule(s) governing which metric data is sent to Datadog. (AI-inferred)
+	MetricRules any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList struct {
-	Error          any
-	Status         any
+	// Detail about an error that occurred. (AI-inferred)
+	Error any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The identifier of the associated Azure subscription. (AI-inferred)
 	SubscriptionId any
-	TagRules       any
+	// Configuration for which resource tags are sent to Datadog and which resources are monitored. (AI-inferred)
+	TagRules any
 }
 
 type MonitoredSubscriptionProperties_Properties struct {

@@ -4,59 +4,91 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Provider_ResourceTypes_Aliases_DefaultMetadata struct {
+	// Free-form key/value metadata attached to this resource. (AI-inferred)
 	Attributes any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type Provider_ResourceTypes_Aliases_DefaultPattern struct {
-	Phrase   any
-	Type     any
+	// The specific phrase this pattern matches. (AI-inferred)
+	Phrase any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// A caller-defined variable referenced within this template. (AI-inferred)
 	Variable any
 }
 
 type Provider_ResourceTypes_Aliases_Paths struct {
+	// The API version(s) this resource type supports. (AI-inferred)
 	ApiVersions any
-	Metadata    any
-	Path        any
-	Pattern     any
+	// Additional, free-form metadata associated with this resource. (AI-inferred)
+	Metadata any
+	// The property path this alias applies to. (AI-inferred)
+	Path any
+	// The pattern matched against. (AI-inferred)
+	Pattern any
 }
 
 type Provider_ResourceTypes_Aliases struct {
+	// The default metadata applied when this alias is used. (AI-inferred)
 	DefaultMetadata any
-	DefaultPath     any
-	DefaultPattern  any
-	Name            any
-	Paths           any
-	Type            any
+	// The path used when none is explicitly specified. (AI-inferred)
+	DefaultPath any
+	// The pattern applied when none is explicitly specified. (AI-inferred)
+	DefaultPattern any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The property path(s) this alias applies to. (AI-inferred)
+	Paths any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type Provider_ResourceTypes_ApiProfiles struct {
-	ApiVersion     any
+	// The API version used for this resource. (AI-inferred)
+	ApiVersion any
+	// The version of this API profile. (AI-inferred)
 	ProfileVersion any
 }
 
 type Provider_ResourceTypes_LocationMappings struct {
+	// The edge or custom location(s) this resource type can be deployed to. (AI-inferred)
 	ExtendedLocations any
-	Location          any
-	Type              any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type Provider_ResourceTypes_ZoneMappings struct {
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
 	Location any
-	Zones    any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type Provider_ResourceTypes struct {
-	Aliases           any
-	ApiProfiles       any
-	ApiVersions       any
-	Capabilities      any
+	// Alternate name(s) this also resolves under. (AI-inferred)
+	Aliases any
+	// The API profile(s) (bundled API version sets) this provider supports. (AI-inferred)
+	ApiProfiles any
+	// The API version(s) this resource type supports. (AI-inferred)
+	ApiVersions any
+	// The capability/capabilities this resource type supports. (AI-inferred)
+	Capabilities any
+	// The API version used when none is explicitly specified. (AI-inferred)
 	DefaultApiVersion any
-	LocationMappings  any
-	Locations         any
-	Properties        any
-	ResourceType      any
-	ZoneMappings      any
+	// How logical location name(s) map to actual Azure region(s). (AI-inferred)
+	LocationMappings any
+	// The Azure region(s) this resource type is available in. (AI-inferred)
+	Locations any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
+	// The category of resource this applies to. (AI-inferred)
+	ResourceType any
+	// How logical zone name(s) map to actual availability zone(s). (AI-inferred)
+	ZoneMappings any
 }
 
 type Provider_ThirdPartyProviderConsent struct {

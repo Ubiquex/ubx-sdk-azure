@@ -13,13 +13,21 @@ export interface OpenapiBlobContainer_Properties_ImmutabilityPolicy_Properties {
 }
 
 export interface OpenapiBlobContainer_Properties_ImmutabilityPolicy_UpdateHistory {
+  /** Whether new blocks can still be appended to an append blob under legal hold or an active immutability policy. (AI-inferred) */
   allowProtectedAppendWrites?: boolean | Computed<boolean>;
+  /** Whether new blocks can still be appended to any protected blob type under legal hold or an active immutability policy. (AI-inferred) */
   allowProtectedAppendWritesAll?: boolean | Computed<boolean>;
+  /** How many days after creation a blob remains immutable under this policy. (AI-inferred) */
   immutabilityPeriodSinceCreationInDays?: number | Computed<number>;
+  /** The Microsoft Entra ID object identifier this permission applies to. (AI-inferred) */
   objectIdentifier?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
+  /** When this event occurred. (AI-inferred) */
   timestamp?: string | Computed<string>;
+  /** The update applied. (AI-inferred) */
   update?: string | Computed<string>;
+  /** The User Principal Name this permission applies to. (AI-inferred) */
   upn?: string | Computed<string>;
 }
 
@@ -49,10 +57,15 @@ export interface OpenapiBlobContainer_Properties_LegalHold_ProtectedAppendWrites
 }
 
 export interface OpenapiBlobContainer_Properties_LegalHold_Tags {
+  /** The Microsoft Entra ID object identifier this permission applies to. (AI-inferred) */
   objectIdentifier?: string | Computed<string>;
+  /** A label attached to this resource. (AI-inferred) */
   tag?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
+  /** When this event occurred. (AI-inferred) */
   timestamp?: string | Computed<string>;
+  /** The User Principal Name this permission applies to. (AI-inferred) */
   upn?: string | Computed<string>;
 }
 

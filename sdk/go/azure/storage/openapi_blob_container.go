@@ -15,14 +15,22 @@ type OpenapiBlobContainer_Properties_ImmutabilityPolicy_Properties struct {
 }
 
 type OpenapiBlobContainer_Properties_ImmutabilityPolicy_UpdateHistory struct {
-	AllowProtectedAppendWrites            any
-	AllowProtectedAppendWritesAll         any
+	// Whether new blocks can still be appended to an append blob under legal hold or an active immutability policy. (AI-inferred)
+	AllowProtectedAppendWrites any
+	// Whether new blocks can still be appended to any protected blob type under legal hold or an active immutability policy. (AI-inferred)
+	AllowProtectedAppendWritesAll any
+	// How many days after creation a blob remains immutable under this policy. (AI-inferred)
 	ImmutabilityPeriodSinceCreationInDays any
-	ObjectIdentifier                      any
-	TenantId                              any
-	Timestamp                             any
-	Update                                any
-	Upn                                   any
+	// The Microsoft Entra ID object identifier this permission applies to. (AI-inferred)
+	ObjectIdentifier any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
+	// When this event occurred. (AI-inferred)
+	Timestamp any
+	// The update applied. (AI-inferred)
+	Update any
+	// The User Principal Name this permission applies to. (AI-inferred)
+	Upn any
 }
 
 type OpenapiBlobContainer_Properties_ImmutabilityPolicy struct {
@@ -51,11 +59,16 @@ type OpenapiBlobContainer_Properties_LegalHold_ProtectedAppendWritesHistory stru
 }
 
 type OpenapiBlobContainer_Properties_LegalHold_Tags struct {
+	// The Microsoft Entra ID object identifier this permission applies to. (AI-inferred)
 	ObjectIdentifier any
-	Tag              any
-	TenantId         any
-	Timestamp        any
-	Upn              any
+	// A label attached to this resource. (AI-inferred)
+	Tag any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
+	// When this event occurred. (AI-inferred)
+	Timestamp any
+	// The User Principal Name this permission applies to. (AI-inferred)
+	Upn any
 }
 
 type OpenapiBlobContainer_Properties_LegalHold struct {

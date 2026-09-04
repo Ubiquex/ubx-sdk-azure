@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiFeaturestoreEntityVersion_Properties_IndexColumns {
+  /** The name of this column. (AI-inferred) */
   columnName?: string | Computed<string>;
+  /** The data type of this asset or column. (AI-inferred) */
   dataType?: string | Computed<string>;
 }
 

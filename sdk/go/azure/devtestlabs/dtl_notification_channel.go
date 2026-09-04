@@ -4,6 +4,7 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlNotificationChannel_Properties_Events struct {
+	// The name of this event. (AI-inferred)
 	EventName any
 }
 

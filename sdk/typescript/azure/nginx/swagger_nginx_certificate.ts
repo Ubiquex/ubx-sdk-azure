@@ -2,20 +2,28 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface SwaggerNginxCertificate_Properties_CertificateError {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
 }
 
 export interface SwaggerNginxCertificate_Properties {
   /** Nginx Certificate Error Response Body */
   certificateError?: SwaggerNginxCertificate_Properties_CertificateError | Computed<SwaggerNginxCertificate_Properties_CertificateError>;
+  /** The path this certificate is mounted at inside the NGINX deployment. (AI-inferred) */
   certificateVirtualPath?: string | Computed<string>;
+  /** When the associated Key Vault secret was created. (AI-inferred) */
   keyVaultSecretCreated?: string | Computed<string>;
+  /** A reference to the Key Vault secret this value is sourced from. (AI-inferred) */
   keyVaultSecretId?: string | Computed<string>;
+  /** The specific version of the associated Key Vault secret. (AI-inferred) */
   keyVaultSecretVersion?: string | Computed<string>;
+  /** The path this key is mounted at inside the NGINX deployment. (AI-inferred) */
   keyVirtualPath?: string | Computed<string>;
   /** Provisioning State */
   provisioningState?: string | Computed<string>;
+  /** A SHA-1 thumbprint of this certificate. (AI-inferred) */
   sha1Thumbprint?: string | Computed<string>;
 }
 

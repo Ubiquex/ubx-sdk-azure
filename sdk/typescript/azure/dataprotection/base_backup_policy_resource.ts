@@ -4,6 +4,7 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface BaseBackupPolicyResource_Properties {
   /** Type of datasource for the backup management */
   datasourceTypes: string[] | Computed<string[]>;
+  /** A discriminator identifying this object's own concrete type, used when a field can hold more than one shape. (AI-inferred) */
   objectType: string | Computed<string>;
 }
 

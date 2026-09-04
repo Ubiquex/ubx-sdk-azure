@@ -2,16 +2,21 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_SourceResources {
+  /** The value(s) making up this field. (AI-inferred) */
   values?: string[] | Computed<string[]>;
 }
 
 export interface ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources_Values {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The percentage value this threshold or notification applies at. (AI-inferred) */
   percentage?: number | Computed<number>;
 }
 
 export interface ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources {
+  /** The category of policy this represents. (AI-inferred) */
   policyType?: string | Computed<string>;
+  /** The value(s) making up this field. (AI-inferred) */
   values?: ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources_Values[] | Computed<ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources_Values[]>;
 }
 

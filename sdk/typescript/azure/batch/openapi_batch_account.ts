@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiBatchAccount_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -58,7 +60,9 @@ export interface OpenapiBatchAccount_Properties_KeyVaultReference {
 }
 
 export interface OpenapiBatchAccount_Properties_NetworkProfile_AccountAccess_IpRules {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

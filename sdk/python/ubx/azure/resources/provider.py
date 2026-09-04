@@ -8,58 +8,90 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Provider_ResourceTypes_Aliases_DefaultMetadata:
+    # Free-form key/value metadata attached to this resource. (AI-inferred)
     attributes: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class Provider_ResourceTypes_Aliases_DefaultPattern:
+    # The specific phrase this pattern matches. (AI-inferred)
     phrase: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # A caller-defined variable referenced within this template. (AI-inferred)
     variable: Any = None
 
 @dataclasses.dataclass
 class Provider_ResourceTypes_Aliases_Paths:
+    # The API version(s) this resource type supports. (AI-inferred)
     api_versions: Any = None
+    # Additional, free-form metadata associated with this resource. (AI-inferred)
     metadata: Any = None
+    # The property path this alias applies to. (AI-inferred)
     path: Any = None
+    # The pattern matched against. (AI-inferred)
     pattern: Any = None
 
 @dataclasses.dataclass
 class Provider_ResourceTypes_Aliases:
+    # The default metadata applied when this alias is used. (AI-inferred)
     default_metadata: Any = None
+    # The path used when none is explicitly specified. (AI-inferred)
     default_path: Any = None
+    # The pattern applied when none is explicitly specified. (AI-inferred)
     default_pattern: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The property path(s) this alias applies to. (AI-inferred)
     paths: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class Provider_ResourceTypes_ApiProfiles:
+    # The API version used for this resource. (AI-inferred)
     api_version: Any = None
+    # The version of this API profile. (AI-inferred)
     profile_version: Any = None
 
 @dataclasses.dataclass
 class Provider_ResourceTypes_LocationMappings:
+    # The edge or custom location(s) this resource type can be deployed to. (AI-inferred)
     extended_locations: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class Provider_ResourceTypes_ZoneMappings:
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
     zones: Any = None
 
 @dataclasses.dataclass
 class Provider_ResourceTypes:
+    # Alternate name(s) this also resolves under. (AI-inferred)
     aliases: Any = None
+    # The API profile(s) (bundled API version sets) this provider supports. (AI-inferred)
     api_profiles: Any = None
+    # The API version(s) this resource type supports. (AI-inferred)
     api_versions: Any = None
+    # The capability/capabilities this resource type supports. (AI-inferred)
     capabilities: Any = None
+    # The API version used when none is explicitly specified. (AI-inferred)
     default_api_version: Any = None
+    # How logical location name(s) map to actual Azure region(s). (AI-inferred)
     location_mappings: Any = None
+    # The Azure region(s) this resource type is available in. (AI-inferred)
     locations: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The category of resource this applies to. (AI-inferred)
     resource_type: Any = None
+    # How logical zone name(s) map to actual availability zone(s). (AI-inferred)
     zone_mappings: Any = None
 
 @dataclasses.dataclass

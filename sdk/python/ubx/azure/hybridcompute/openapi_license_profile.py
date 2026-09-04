@@ -13,7 +13,9 @@ class OpenapiLicenseProfile_Properties_EsuProfile:
 
 @dataclasses.dataclass
 class OpenapiLicenseProfile_Properties_ProductProfile_Error_AdditionalInfo:
+    # Additional detail about this result. (AI-inferred)
     info: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -22,10 +24,15 @@ class OpenapiLicenseProfile_Properties_ProductProfile_Error_Details_Details:
 
 @dataclasses.dataclass
 class OpenapiLicenseProfile_Properties_ProductProfile_Error_Details:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
@@ -43,12 +50,19 @@ class OpenapiLicenseProfile_Properties_ProductProfile_Error:
 
 @dataclasses.dataclass
 class OpenapiLicenseProfile_Properties_ProductProfile_ProductFeatures:
+    # When billing for this product feature ends. (AI-inferred)
     billing_end_date: Any = None
+    # When billing for this product feature starts. (AI-inferred)
     billing_start_date: Any = None
+    # When this machine was disenrolled from this product feature. (AI-inferred)
     disenrollment_date: Any = None
+    # When this machine was enrolled in this product feature. (AI-inferred)
     enrollment_date: Any = None
+    # Detail about an error that occurred. (AI-inferred)
     error: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # This product feature's own current subscription status. (AI-inferred)
     subscription_status: Any = None
 
 @dataclasses.dataclass
@@ -83,6 +97,7 @@ class OpenapiLicenseProfile_Properties:
     product_profile: Any = None
     # The provisioning state, which only appears in the response.
     provisioning_state: Any = None
+    # This machine's Software Assurance/subscription benefit status, used to determine Extended Security Update eligibility. (AI-inferred)
     software_assurance: Any = None
 
 _OpenapiLicenseProfile_Properties_EsuProfileFields = {

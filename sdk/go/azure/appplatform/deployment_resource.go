@@ -4,6 +4,7 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DeploymentResource_Properties_DeploymentSettings_Apms struct {
+	// A reference to the resource this applies to. (AI-inferred)
 	ResourceId any
 }
 
@@ -63,12 +64,18 @@ type DeploymentResource_Properties_DeploymentSettings struct {
 }
 
 type DeploymentResource_Properties_Instances struct {
+	// The current service-discovery registration status of this resource. (AI-inferred)
 	DiscoveryStatus any
-	Name            any
-	Reason          any
-	StartTime       any
-	Status          any
-	Zone            any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A machine-readable reason code. (AI-inferred)
+	Reason any
+	// When this event or window started. (AI-inferred)
+	StartTime any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The availability zone this resource is provisioned in. (AI-inferred)
+	Zone any
 }
 
 type DeploymentResource_Properties_Source struct {

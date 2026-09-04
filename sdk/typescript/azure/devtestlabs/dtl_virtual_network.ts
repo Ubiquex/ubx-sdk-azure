@@ -2,31 +2,45 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DtlVirtualNetwork_Properties_AllowedSubnets {
+  /** Whether a public IP address is allowed on virtual machines created from this virtual network. (AI-inferred) */
   allowPublicIp?: string | Computed<string>;
+  /** The name of the lab's own virtual network subnet this applies to. (AI-inferred) */
   labSubnetName?: string | Computed<string>;
+  /** A reference to the underlying Azure resource. (AI-inferred) */
   resourceId?: string | Computed<string>;
 }
 
 export interface DtlVirtualNetwork_Properties_ExternalSubnets {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration_AllowedPorts {
+  /** The backend port traffic is forwarded to. (AI-inferred) */
   backendPort?: number | Computed<number>;
+  /** The transport protocol this rule applies to, e.g. `Tcp` or `Udp`. (AI-inferred) */
   transportProtocol?: string | Computed<string>;
 }
 
 export interface DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration {
+  /** The port(s) allowed through this shared public IP's own inbound NAT rule(s). (AI-inferred) */
   allowedPorts?: DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration_AllowedPorts[] | Computed<DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration_AllowedPorts[]>;
 }
 
 export interface DtlVirtualNetwork_Properties_SubnetOverrides {
+  /** The name of the lab's own virtual network subnet this applies to. (AI-inferred) */
   labSubnetName?: string | Computed<string>;
+  /** A reference to the underlying Azure resource. (AI-inferred) */
   resourceId?: string | Computed<string>;
+  /** Configuration for a public IP address shared across multiple virtual machines on this subnet. (AI-inferred) */
   sharedPublicIpAddressConfiguration?: DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration | Computed<DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration>;
+  /** Whether lab users are allowed, denied, or given a default choice to use this subnet when creating a virtual machine. (AI-inferred) */
   useInVmCreationPermission?: string | Computed<string>;
+  /** Whether lab users are allowed, denied, or given a default choice to assign a public IP address on this subnet. (AI-inferred) */
   usePublicIpAddressPermission?: string | Computed<string>;
+  /** The name of the shared IP pool this subnet's own virtual machines draw addresses from. (AI-inferred) */
   virtualNetworkPoolName?: string | Computed<string>;
 }
 

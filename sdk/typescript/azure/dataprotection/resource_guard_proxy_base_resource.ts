@@ -2,14 +2,20 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetails {
+  /** The default request payload used when performing this operation, before any Resource Guard-required approval overrides. (AI-inferred) */
   defaultResourceRequest?: string | Computed<string>;
+  /** The type of security-critical operation this applies to, e.g. disabling soft delete or changing immutability. (AI-inferred) */
   vaultCriticalOperation?: string | Computed<string>;
 }
 
 export interface ResourceGuardProxyBaseResource_Properties {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** When this was last updated. (AI-inferred) */
   lastUpdatedTime?: string | Computed<string>;
+  /** Detail about the security-critical operation(s) this Resource Guard protects. (AI-inferred) */
   resourceGuardOperationDetails?: ResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetails[] | Computed<ResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetails[]>;
+  /** A reference to the Resource Guard protecting this critical operation. (AI-inferred) */
   resourceGuardResourceId?: string | Computed<string>;
 }
 

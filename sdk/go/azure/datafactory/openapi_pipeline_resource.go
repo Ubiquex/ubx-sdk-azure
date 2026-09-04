@@ -4,23 +4,34 @@ package datafactory
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPipelineResource_Properties_Activities_DependsOn struct {
-	Activity             any
+	// A reference to the pipeline activity this applies to. (AI-inferred)
+	Activity any
+	// The condition(s) (e.g. `Succeeded`, `Failed`) a dependency must satisfy for this activity to run. (AI-inferred)
 	DependencyConditions any
 }
 
 type OpenapiPipelineResource_Properties_Activities_UserProperties struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type OpenapiPipelineResource_Properties_Activities struct {
-	DependsOn        any
-	Description      any
-	Name             any
+	// The activity/activities that must complete before this one runs. (AI-inferred)
+	DependsOn any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The status applied to this activity when it's skipped due to an inactive trigger. (AI-inferred)
 	OnInactiveMarkAs any
-	State            any
-	Type             any
-	UserProperties   any
+	// The current status of this resource. (AI-inferred)
+	State any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// Caller-defined key/value property(s) surfaced in the monitoring view for this activity. (AI-inferred)
+	UserProperties any
 }
 
 type OpenapiPipelineResource_Properties_Folder struct {
@@ -29,8 +40,10 @@ type OpenapiPipelineResource_Properties_Folder struct {
 }
 
 type OpenapiPipelineResource_Properties_Parameters struct {
+	// The value used when this field is left unset. (AI-inferred)
 	DefaultValue any
-	Type         any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiPipelineResource_Properties_Policy_ElapsedTimeMetric struct {

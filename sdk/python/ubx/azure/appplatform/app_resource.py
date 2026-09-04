@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class AppResource_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,15 +26,22 @@ class AppResource_Identity:
 
 @dataclasses.dataclass
 class AppResource_Properties_CustomPersistentDisks_CustomPersistentDiskProperties:
+    # Whether requests are forwarded with the matched prefix stripped from the path. (AI-inferred)
     enable_sub_path: Any = None
+    # Additional mount option(s) applied to this volume. (AI-inferred)
     mount_options: Any = None
+    # The path this volume is mounted at inside the container. (AI-inferred)
     mount_path: Any = None
+    # Whether this volume is mounted read-only. (AI-inferred)
     read_only: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class AppResource_Properties_CustomPersistentDisks:
+    # Configuration specific to this custom persistent disk's own storage type. (AI-inferred)
     custom_persistent_disk_properties: Any = None
+    # A reference to the storage resource this applies to. (AI-inferred)
     storage_id: Any = None
 
 @dataclasses.dataclass
@@ -57,7 +66,9 @@ class AppResource_Properties_IngressSettings:
 
 @dataclasses.dataclass
 class AppResource_Properties_LoadedCertificates:
+    # Whether a custom trust store is loaded for validating outbound TLS connections. (AI-inferred)
     load_trust_store: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
 
 @dataclasses.dataclass

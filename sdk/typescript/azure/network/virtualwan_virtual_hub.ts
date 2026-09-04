@@ -7,7 +7,9 @@ export interface VirtualwanVirtualHub_Properties_AzureFirewall {
 }
 
 export interface VirtualwanVirtualHub_Properties_RouteTable_Routes {
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred) */
   nextHopIpAddress?: string | Computed<string>;
 }
 
@@ -17,21 +19,31 @@ export interface VirtualwanVirtualHub_Properties_RouteTable {
 }
 
 export interface VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties_Routes {
+  /** The category of destination this rule applies to. (AI-inferred) */
   destinationType?: string | Computed<string>;
+  /** The destination(s) this rule applies to. (AI-inferred) */
   destinations?: string[] | Computed<string[]>;
+  /** The kind of next hop this route uses, e.g. `VirtualAppliance`, `VnetLocal`, `Internet`, or `None`. (AI-inferred) */
   nextHopType?: string | Computed<string>;
+  /** The next hop(s) traffic matching this route is forwarded to. (AI-inferred) */
   nextHops?: string[] | Computed<string[]>;
 }
 
 export interface VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties {
+  /** The connection(s) attached to this routing configuration. (AI-inferred) */
   attachedConnections?: string[] | Computed<string[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The custom routes making up this route table. (AI-inferred) */
   routes?: VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties_Routes[] | Computed<VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties_Routes[]>;
 }
 
 export interface VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties | Computed<VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties>;
 }
 

@@ -4,10 +4,12 @@ package privatedns
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RecordSet_Properties_ARecords struct {
+	// The IPv4 address this A record resolves to. (AI-inferred)
 	Ipv4Address any
 }
 
 type RecordSet_Properties_AaaaRecords struct {
+	// The IPv6 address this AAAA record resolves to. (AI-inferred)
 	Ipv6Address any
 }
 
@@ -17,11 +19,14 @@ type RecordSet_Properties_CnameRecord struct {
 }
 
 type RecordSet_Properties_MxRecords struct {
-	Exchange   any
+	// The mail server hostname this MX record points to. (AI-inferred)
+	Exchange any
+	// This MX record's own priority -- lower values are preferred over higher ones. (AI-inferred)
 	Preference any
 }
 
 type RecordSet_Properties_PtrRecords struct {
+	// The domain name this PTR record resolves to. (AI-inferred)
 	Ptrdname any
 }
 
@@ -43,13 +48,18 @@ type RecordSet_Properties_SoaRecord struct {
 }
 
 type RecordSet_Properties_SrvRecords struct {
-	Port     any
+	// The port the service is available on. (AI-inferred)
+	Port any
+	// This SRV record's own priority -- lower values are preferred over higher ones. (AI-inferred)
 	Priority any
-	Target   any
-	Weight   any
+	// The hostname of the machine providing the service. (AI-inferred)
+	Target any
+	// A relative weight for records with the same priority, used to load-balance between them. (AI-inferred)
+	Weight any
 }
 
 type RecordSet_Properties_TxtRecords struct {
+	// The text string(s) making up this TXT record's own value. (AI-inferred)
 	Value any
 }
 

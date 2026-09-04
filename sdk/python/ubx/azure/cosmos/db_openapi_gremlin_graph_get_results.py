@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DbOpenapiGremlinGraphGetResults_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -29,6 +31,7 @@ class DbOpenapiGremlinGraphGetResults_Properties_Options_AutoscaleSettings:
 
 @dataclasses.dataclass
 class DbOpenapiGremlinGraphGetResults_Properties_Options:
+    # Configuration for automatically scaling throughput within a defined maximum. (AI-inferred)
     autoscale_settings: Any = None
     # Request Units per second. For example, "throughput": 10000.
     throughput: Any = None
@@ -49,30 +52,43 @@ class DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_Composi
 
 @dataclasses.dataclass
 class DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_ExcludedPaths:
+    # The JSON path this rule applies to. (AI-inferred)
     path: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_Indexes:
+    # The data type of this indexed or partitioned value. (AI-inferred)
     data_type: Any = None
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
+    # The numeric precision retained for this indexed value. (AI-inferred)
     precision: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPaths:
+    # The index(es) defined on this container. (AI-inferred)
     indexes: Any = None
+    # The JSON path this rule applies to. (AI-inferred)
     path: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_SpatialIndexes:
+    # The JSON path this rule applies to. (AI-inferred)
     path: Any = None
+    # The category/categories this applies to. (AI-inferred)
     types: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_VectorIndexes:
+    # The size of the candidate list explored when building this vector search index. (AI-inferred)
     indexing_search_list_size: Any = None
+    # The JSON path this rule applies to. (AI-inferred)
     path: Any = None
+    # The number of bytes each vector dimension is quantized to. (AI-inferred)
     quantization_byte_size: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The field(s) used to shard this vector index for scale-out. (AI-inferred)
     vector_index_shard_key: Any = None
 
 @dataclasses.dataclass
@@ -107,12 +123,16 @@ class DbOpenapiGremlinGraphGetResults_Properties_Resource_PartitionKey:
 
 @dataclasses.dataclass
 class DbOpenapiGremlinGraphGetResults_Properties_Resource_RestoreParameters:
+    # A reference to the source account this account is restored from. (AI-inferred)
     restore_source: Any = None
+    # The point in time this account is restored to, in UTC. (AI-inferred)
     restore_timestamp_in_utc: Any = None
+    # Whether time-to-live expiration is disabled on the restored data. (AI-inferred)
     restore_with_ttl_disabled: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicy_UniqueKeys:
+    # The JSON path(s) this index or policy applies to. (AI-inferred)
     paths: Any = None
 
 @dataclasses.dataclass

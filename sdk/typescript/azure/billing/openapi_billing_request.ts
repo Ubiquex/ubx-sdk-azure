@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiBillingRequest_Properties_CreatedBy {
+  /** The Microsoft Entra ID object identifier this applies to. (AI-inferred) */
   objectId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
+  /** The User Principal Name this applies to. (AI-inferred) */
   upn?: string | Computed<string>;
 }
 

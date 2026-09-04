@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualnetworkVerifierWorkspace_Properties:
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
     # Provisioning states of a resource.
     provisioning_state: Any = None

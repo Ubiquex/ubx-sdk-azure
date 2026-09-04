@@ -4,8 +4,11 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiSqlRoleDefinitionGetResults_Properties_Permissions struct {
-	DataActions    any
-	Id             any
+	// The specific data-plane action(s) this role definition grants. (AI-inferred)
+	DataActions any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The specific data-plane action(s) explicitly excluded from this role definition's own grant. (AI-inferred)
 	NotDataActions any
 }
 

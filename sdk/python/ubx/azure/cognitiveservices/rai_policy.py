@@ -8,15 +8,22 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class RaiPolicy_Properties_ContentFilters:
+    # The action taken when this rule matches. (AI-inferred)
     action: Any = None
+    # Whether this content filter blocks matching content, rather than only flagging it. (AI-inferred)
     blocking: Any = None
+    # Whether this feature is turned on. (AI-inferred)
     enabled: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The minimum severity level at which this content filter takes action. (AI-inferred)
     severity_threshold: Any = None
+    # Where this data or configuration is sourced from. (AI-inferred)
     source: Any = None
 
 @dataclasses.dataclass
 class RaiPolicy_Properties_CustomBlocklists:
+    # Where this data or configuration is sourced from. (AI-inferred)
     source: Any = None
 
 @dataclasses.dataclass

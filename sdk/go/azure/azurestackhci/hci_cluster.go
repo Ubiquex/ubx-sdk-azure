@@ -4,7 +4,9 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciCluster_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -50,53 +52,80 @@ type HciCluster_Properties_IsolatedVmAttestationConfiguration struct {
 }
 
 type HciCluster_Properties_LocalAvailabilityZones struct {
+	// The name of the local availability zone this applies to. (AI-inferred)
 	LocalAvailabilityZoneName any
-	Nodes                     any
+	// The node(s) making up this cluster. (AI-inferred)
+	Nodes any
 }
 
 type HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails_LogCollectionError struct {
-	ErrorCode    any
+	// A machine-readable error code. (AI-inferred)
+	ErrorCode any
+	// A human-readable description of the error. (AI-inferred)
 	ErrorMessage any
 }
 
 type HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails struct {
-	CorrelationId        any
-	EndTimeCollected     any
-	LogCollectionError   any
+	// An identifier correlating related events or requests together. (AI-inferred)
+	CorrelationId any
+	// When log collection for this range ended. (AI-inferred)
+	EndTimeCollected any
+	// Detail about an error encountered during log collection. (AI-inferred)
+	LogCollectionError any
+	// The kind of log collection job this represents. (AI-inferred)
 	LogCollectionJobType any
-	LogCollectionStatus  any
-	LogEndTime           any
-	LogSize              any
-	LogStartTime         any
-	TimeCollected        any
+	// The current status of this log collection job. (AI-inferred)
+	LogCollectionStatus any
+	// When the collected log range ends. (AI-inferred)
+	LogEndTime any
+	// The size of the collected log data. (AI-inferred)
+	LogSize any
+	// When the collected log range starts. (AI-inferred)
+	LogStartTime any
+	// When this diagnostic data was collected. (AI-inferred)
+	TimeCollected any
 }
 
 type HciCluster_Properties_LogCollectionProperties struct {
 	// From DateTimeStamp from when logs need to be connected
 	FromDate any
 	// Recent DateTimeStamp where logs are successfully generated
-	LastLogGenerated            any
+	LastLogGenerated any
+	// Detail about this log collection session. (AI-inferred)
 	LogCollectionSessionDetails any
 	// To DateTimeStamp till when logs need to be connected
 	ToDate any
 }
 
 type HciCluster_Properties_RemoteSupportProperties_RemoteSupportNodeSettings struct {
-	ArcResourceId          any
+	// A reference to the Azure Arc resource this applies to. (AI-inferred)
+	ArcResourceId any
+	// A human-readable description of an error encountered while connecting. (AI-inferred)
 	ConnectionErrorMessage any
-	ConnectionStatus       any
-	CreatedAt              any
-	State                  any
-	TranscriptLocation     any
-	UpdatedAt              any
+	// The current connectivity status of this resource. (AI-inferred)
+	ConnectionStatus any
+	// When this resource was created. (AI-inferred)
+	CreatedAt any
+	// The current lifecycle state of this resource. (AI-inferred)
+	State any
+	// The file share path this remote support session's own transcript is written to. (AI-inferred)
+	TranscriptLocation any
+	// When this resource was last updated. (AI-inferred)
+	UpdatedAt any
 }
 
 type HciCluster_Properties_RemoteSupportProperties_RemoteSupportSessionDetails struct {
-	AccessLevel        any
-	Duration           any
-	NodeName           any
-	SessionEndTime     any
-	SessionStartTime   any
+	// Whether access through this resource is read-only or read-write. (AI-inferred)
+	AccessLevel any
+	// How long this operation took or is expected to take. (AI-inferred)
+	Duration any
+	// The name of this cluster node. (AI-inferred)
+	NodeName any
+	// When this session ended. (AI-inferred)
+	SessionEndTime any
+	// When this session started. (AI-inferred)
+	SessionStartTime any
+	// The file share path this remote support session's own transcript is written to. (AI-inferred)
 	TranscriptLocation any
 }
 
@@ -104,30 +133,47 @@ type HciCluster_Properties_RemoteSupportProperties struct {
 	// Remote Support Access Level
 	AccessLevel any
 	// Expiration DateTimeStamp when Remote Support Access will be expired
-	ExpirationTimeStamp       any
+	ExpirationTimeStamp any
+	// Per-node configuration for the remote support connection. (AI-inferred)
 	RemoteSupportNodeSettings any
 	// Remote Support Provisioning State
 	RemoteSupportProvisioningState any
-	RemoteSupportSessionDetails    any
+	// Detail about an active or past remote support session. (AI-inferred)
+	RemoteSupportSessionDetails any
 	// Remote Support Type for cluster
 	RemoteSupportType any
 }
 
 type HciCluster_Properties_ReportedProperties_Nodes struct {
-	CoreCount                 any
-	EhcResourceId             any
-	Id                        any
-	LastLicensingTimestamp    any
-	Manufacturer              any
-	MemoryInGiB               any
-	Model                     any
-	Name                      any
-	NodeType                  any
-	OemActivation             any
-	OsDisplayVersion          any
-	OsName                    any
-	OsVersion                 any
-	SerialNumber              any
+	// The number of CPU core(s) this resource has. (AI-inferred)
+	CoreCount any
+	// A reference to the Azure Stack HCI resource this applies to. (AI-inferred)
+	EhcResourceId any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// When this resource's own license status was last checked. (AI-inferred)
+	LastLicensingTimestamp any
+	// The manufacturer of this hardware. (AI-inferred)
+	Manufacturer any
+	// The amount of memory, in gibibytes. (AI-inferred)
+	MemoryInGiB any
+	// The hardware model this resource represents. (AI-inferred)
+	Model any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The category of node this represents. (AI-inferred)
+	NodeType any
+	// Whether this deployment uses OEM activation licensing. (AI-inferred)
+	OemActivation any
+	// A human-readable version label for this node's own operating system. (AI-inferred)
+	OsDisplayVersion any
+	// The name of the operating system running on this node. (AI-inferred)
+	OsName any
+	// The operating system version running on this node. (AI-inferred)
+	OsVersion any
+	// The manufacturer-assigned serial number of this hardware. (AI-inferred)
+	SerialNumber any
+	// The Windows Server subscription edition this cluster is licensed under. (AI-inferred)
 	WindowsServerSubscription any
 }
 
@@ -161,8 +207,10 @@ type HciCluster_Properties_ReportedProperties struct {
 }
 
 type HciCluster_Properties_SecretsLocations struct {
+	// Where this resource's own secret(s) are stored. (AI-inferred)
 	SecretsLocation any
-	SecretsType     any
+	// The category of secret this represents. (AI-inferred)
+	SecretsType any
 }
 
 type HciCluster_Properties_SoftwareAssuranceProperties struct {

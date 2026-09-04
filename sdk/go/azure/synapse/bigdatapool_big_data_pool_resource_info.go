@@ -20,13 +20,20 @@ type BigdatapoolBigDataPoolResourceInfo_Properties_AutoScale struct {
 }
 
 type BigdatapoolBigDataPoolResourceInfo_Properties_CustomLibraries struct {
-	ContainerName      any
-	CreatorId          any
-	Name               any
-	Path               any
+	// The name of the storage container this custom library is uploaded to. (AI-inferred)
+	ContainerName any
+	// An identifier for the identity that uploaded this custom library. (AI-inferred)
+	CreatorId any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The path to this custom library's own file within its containing storage container. (AI-inferred)
+	Path any
+	// The current provisioning status of this custom library. (AI-inferred)
 	ProvisioningStatus any
-	Type               any
-	UploadedTimestamp  any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// When this custom library was uploaded. (AI-inferred)
+	UploadedTimestamp any
 }
 
 type BigdatapoolBigDataPoolResourceInfo_Properties_DynamicExecutorAllocation struct {

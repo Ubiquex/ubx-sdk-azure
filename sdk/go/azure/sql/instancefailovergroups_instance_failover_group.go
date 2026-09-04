@@ -4,12 +4,16 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type InstancefailovergroupsInstanceFailoverGroup_Properties_ManagedInstancePairs struct {
+	// A reference to the partner managed instance in this failover pairing. (AI-inferred)
 	PartnerManagedInstanceId any
+	// A reference to the primary managed instance in this failover pairing. (AI-inferred)
 	PrimaryManagedInstanceId any
 }
 
 type InstancefailovergroupsInstanceFailoverGroup_Properties_PartnerRegions struct {
-	Location        any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// Whether this partner region acts as the primary or a secondary in the failover group. (AI-inferred)
 	ReplicationRole any
 }
 

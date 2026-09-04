@@ -4,20 +4,31 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_Rules_MatchConditions struct {
-	MatchValue      any
-	MatchVariable   any
+	// The value this condition matches against. (AI-inferred)
+	MatchValue any
+	// The request attribute this condition evaluates. (AI-inferred)
+	MatchVariable any
+	// Whether this condition's own result is inverted. (AI-inferred)
 	NegateCondition any
-	Operator        any
-	Selector        any
-	Transforms      any
+	// How this condition's own operands are compared. (AI-inferred)
+	Operator any
+	// The specific field name a match condition targets. (AI-inferred)
+	Selector any
+	// The transformation(s) (e.g. lowercase, trim) applied to the matched value before comparison. (AI-inferred)
+	Transforms any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_Rules struct {
-	Action          any
-	EnabledState    any
+	// The action taken when this rule matches. (AI-inferred)
+	Action any
+	// Whether this feature is enabled or disabled. (AI-inferred)
+	EnabledState any
+	// The condition(s) that must all be satisfied for this rule to match. (AI-inferred)
 	MatchConditions any
-	Name            any
-	Priority        any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The relative priority of this item. (AI-inferred)
+	Priority any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules struct {
@@ -26,25 +37,35 @@ type OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules struct {
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Properties_EndpointLinks struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_Rules struct {
-	Action       any
+	// The action taken when this rule matches. (AI-inferred)
+	Action any
+	// Whether this feature is enabled or disabled. (AI-inferred)
 	EnabledState any
-	RuleId       any
+	// The identifier of the specific WAF rule this applies to. (AI-inferred)
+	RuleId any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides struct {
+	// The name of the managed WAF rule group this applies to. (AI-inferred)
 	RuleGroupName any
-	Rules         any
+	// The rule(s) making up this policy. (AI-inferred)
+	Rules any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets struct {
-	AnomalyScore       any
+	// The cumulative anomaly score this WAF rule set assigns to a matching request. (AI-inferred)
+	AnomalyScore any
+	// Override(s) applied to specific rule(s) within a managed WAF rule group. (AI-inferred)
 	RuleGroupOverrides any
-	RuleSetType        any
-	RuleSetVersion     any
+	// The managed rule set family this belongs to. (AI-inferred)
+	RuleSetType any
+	// The version of this managed rule set. (AI-inferred)
+	RuleSetVersion any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules struct {
@@ -66,8 +87,10 @@ type OpenapiCdnWebApplicationFirewallPolicy_Properties_PolicySettings struct {
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Properties_RateLimitRules_Rules struct {
+	// The time window rate-limit request counts are measured over. (AI-inferred)
 	RateLimitDurationInMinutes any
-	RateLimitThreshold         any
+	// The maximum number of requests permitted within `rate_limit_duration_in_minutes`. (AI-inferred)
+	RateLimitThreshold any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Properties_RateLimitRules struct {

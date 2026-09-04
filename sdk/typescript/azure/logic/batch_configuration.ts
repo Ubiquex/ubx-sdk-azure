@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface BatchConfiguration_Properties_ReleaseCriteria_Recurrence_Schedule_MonthlyOccurrences {
+  /** The day-of-month component of a date. (AI-inferred) */
   day?: string | Computed<string>;
+  /** How many times this element is permitted to occur. (AI-inferred) */
   occurrence?: number | Computed<number>;
 }
 

@@ -17,12 +17,16 @@ class HealthcareApisServicesDescription_Identity:
 
 @dataclasses.dataclass
 class HealthcareApisServicesDescription_Properties_AccessPolicies:
+    # The Microsoft Entra ID object identifier this applies to. (AI-inferred)
     object_id: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisServicesDescription_Properties_AcrConfiguration_OciArtifacts:
+    # A content digest identifying this specific artifact version. (AI-inferred)
     digest: Any = None
+    # The name of this container image. (AI-inferred)
     image_name: Any = None
+    # The hostname of this container registry's own login server. (AI-inferred)
     login_server: Any = None
 
 @dataclasses.dataclass
@@ -79,22 +83,30 @@ class HealthcareApisServicesDescription_Properties_ImportConfiguration:
 
 @dataclasses.dataclass
 class HealthcareApisServicesDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisServicesDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisServicesDescription_Properties_PrivateEndpointConnections_Properties:
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisServicesDescription_Properties_PrivateEndpointConnections:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

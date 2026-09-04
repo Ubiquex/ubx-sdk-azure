@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DeploymentResource_Properties_DeploymentSettings_Apms:
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
 
 @dataclasses.dataclass
@@ -67,11 +68,17 @@ class DeploymentResource_Properties_DeploymentSettings:
 
 @dataclasses.dataclass
 class DeploymentResource_Properties_Instances:
+    # The current service-discovery registration status of this resource. (AI-inferred)
     discovery_status: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A machine-readable reason code. (AI-inferred)
     reason: Any = None
+    # When this event or window started. (AI-inferred)
     start_time: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The availability zone this resource is provisioned in. (AI-inferred)
     zone: Any = None
 
 @dataclasses.dataclass

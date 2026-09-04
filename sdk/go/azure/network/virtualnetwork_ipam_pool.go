@@ -6,7 +6,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type VirtualnetworkIpamPool_Properties struct {
 	// List of IP address prefixes of the resource.
 	AddressPrefixes any
-	Description     any
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
+	Description any
 	// String representing a friendly name for the resource.
 	DisplayName any
 	// List of IP address type for the IpamPool.

@@ -36,16 +36,22 @@ type Set_Properties_ScheduledEventsPolicy struct {
 }
 
 type Set_Properties_Statuses struct {
-	Code          any
+	// The status code that identifies the current state of the availability set, such as 'ProvisioningState/succeeded'. (AI-inferred)
+	Code any
+	// A human-readable, user-facing description of the current status of the availability set, as part of a list of status objects that may also include a code, level, and timestamp. (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of the status, which can be one of Info, Warning, or Error. It indicates the impact or importance of the status message. (AI-inferred)
+	Level any
+	// The message provides additional information or details about the status of the availability set. (AI-inferred)
+	Message any
+	// The timestamp when the status was recorded. (AI-inferred)
+	Time any
 }
 
 type Set_Properties_VirtualMachineScaleSetMigrationInfo_DefaultVirtualMachineScaleSetInfo struct {
 	// Indicates if the the maximum capacity of the default migrated Virtual Machine Scale Set after its migration will be constrained to a limited number of VMs.
-	ConstrainedMaximumCapacity    any
+	ConstrainedMaximumCapacity any
+	// The default virtual machine scale set that serves as the primary target when migrating the availability set to a scale set. (AI-inferred)
 	DefaultVirtualMachineScaleSet any
 }
 
@@ -60,7 +66,8 @@ type Set_Properties struct {
 	PlatformFaultDomainCount any
 	// Update Domain count.
 	PlatformUpdateDomainCount any
-	ProximityPlacementGroup   any
+	// Specifies the proximity placement group that the availability set should be associated with, enabling co-location of resources for low network latency. (AI-inferred)
+	ProximityPlacementGroup any
 	// Specifies Redeploy, Reboot and ScheduledEventsAdditionalPublishingTargets Scheduled Event related configurations.
 	ScheduledEventsPolicy any
 	// The resource status information.

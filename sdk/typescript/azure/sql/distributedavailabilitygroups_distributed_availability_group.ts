@@ -2,31 +2,54 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_Databases_PartnerAuthCertValidity {
+  /** The name of the partner authentication certificate. (AI-inferred) */
   certificateName?: string | Computed<string>;
+  /** When the partner authentication certificate expires. (AI-inferred) */
   expiryDate?: string | Computed<string>;
 }
 
 export interface DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_Databases {
+  /** Whether this database's own replication link is currently `CONNECTED` or `DISCONNECTED`. (AI-inferred) */
   connectedState?: string | Computed<string>;
+  /** The name of the database participating in this distributed availability group. (AI-inferred) */
   databaseName?: string | Computed<string>;
+  /** How many seconds behind the instance's own redo (apply) of replicated log records currently is. (AI-inferred) */
   instanceRedoReplicationLagSeconds?: number | Computed<number>;
+  /** The identifier of this database's own replica on the local instance. (AI-inferred) */
   instanceReplicaId?: string | Computed<string>;
+  /** How many seconds behind the instance's own sending of log records to the partner currently is. (AI-inferred) */
   instanceSendReplicationLagSeconds?: number | Computed<number>;
+  /** The log sequence number of the most recent backup taken of this database. (AI-inferred) */
   lastBackupLsn?: string | Computed<string>;
+  /** When the most recent backup of this database was taken. (AI-inferred) */
   lastBackupTime?: string | Computed<string>;
+  /** The log sequence number of the most recently committed transaction. (AI-inferred) */
   lastCommitLsn?: string | Computed<string>;
+  /** When the most recently committed transaction occurred. (AI-inferred) */
   lastCommitTime?: string | Computed<string>;
+  /** The log sequence number of the most recent log record durably written (hardened) to disk on the replica. (AI-inferred) */
   lastHardenedLsn?: string | Computed<string>;
+  /** When the most recent log record was durably written (hardened) to disk on the replica. (AI-inferred) */
   lastHardenedTime?: string | Computed<string>;
+  /** The log sequence number of the most recent log record received from the partner. (AI-inferred) */
   lastReceivedLsn?: string | Computed<string>;
+  /** When the most recent log record was received from the partner. (AI-inferred) */
   lastReceivedTime?: string | Computed<string>;
+  /** The log sequence number of the most recent log record sent to the partner. (AI-inferred) */
   lastSentLsn?: string | Computed<string>;
+  /** When the most recent log record was sent to the partner. (AI-inferred) */
   lastSentTime?: string | Computed<string>;
+  /** The most recent error, if any, reported on this database's own replication link. (AI-inferred) */
   mostRecentLinkError?: string | Computed<string>;
+  /** The validity period of the authentication certificate used to secure this database's own link to its partner. (AI-inferred) */
   partnerAuthCertValidity?: DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_Databases_PartnerAuthCertValidity | Computed<DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_Databases_PartnerAuthCertValidity>;
+  /** The identifier of this database's own replica on the partner instance. (AI-inferred) */
   partnerReplicaId?: string | Computed<string>;
+  /** The current role/state of this database's own replica, e.g. primary or secondary. (AI-inferred) */
   replicaState?: string | Computed<string>;
+  /** How far along automatic seeding (initial data transfer) of this database's own replica is. (AI-inferred) */
   seedingProgress?: string | Computed<string>;
+  /** The overall replication health of this database: `HEALTHY`, `PARTIALLY_HEALTHY`, or `NOT_HEALTHY`. (AI-inferred) */
   synchronizationHealth?: string | Computed<string>;
 }
 

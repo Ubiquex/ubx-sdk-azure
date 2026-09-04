@@ -2,16 +2,21 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface RecordSet_Properties_Aaaarecords {
+  /** An IPv6 address. (AI-inferred) */
   ipv6Address?: string | Computed<string>;
 }
 
 export interface RecordSet_Properties_Arecords {
+  /** An IPv4 address. (AI-inferred) */
   ipv4Address?: string | Computed<string>;
 }
 
 export interface RecordSet_Properties_CaaRecords {
+  /** Bit flags controlling how this CAA record is interpreted. (AI-inferred) */
   flags?: number | Computed<number>;
+  /** The property this CAA record constrains, e.g. `issue` or `issuewild`. (AI-inferred) */
   tag?: string | Computed<string>;
+  /** The literal value of this record. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -21,15 +26,19 @@ export interface RecordSet_Properties_Cnamerecord {
 }
 
 export interface RecordSet_Properties_Mxrecords {
+  /** The mail server hostname this MX record points to. (AI-inferred) */
   exchange?: string | Computed<string>;
+  /** The relative preference of this record -- lower values are preferred first. (AI-inferred) */
   preference?: number | Computed<number>;
 }
 
 export interface RecordSet_Properties_Nsrecords {
+  /** The name server hostname this NS record points to. (AI-inferred) */
   nsdname?: string | Computed<string>;
 }
 
 export interface RecordSet_Properties_Ptrrecords {
+  /** The hostname this PTR record points to. (AI-inferred) */
   ptrdname?: string | Computed<string>;
 }
 
@@ -51,9 +60,13 @@ export interface RecordSet_Properties_Soarecord {
 }
 
 export interface RecordSet_Properties_Srvrecords {
+  /** The port this SRV record points to. (AI-inferred) */
   port?: number | Computed<number>;
+  /** The relative priority of this record -- lower values are preferred first. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The hostname this record points to. (AI-inferred) */
   target?: string | Computed<string>;
+  /** The relative weight used to distribute traffic among records sharing the same priority. (AI-inferred) */
   weight?: number | Computed<number>;
 }
 
@@ -63,6 +76,7 @@ export interface RecordSet_Properties_TargetResource {
 }
 
 export interface RecordSet_Properties_Txtrecords {
+  /** The literal value of this record. (AI-inferred) */
   value?: string[] | Computed<string[]>;
 }
 

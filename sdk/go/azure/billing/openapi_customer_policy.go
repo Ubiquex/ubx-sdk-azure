@@ -4,10 +4,14 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCustomerPolicy_Properties_Policies struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The category of policy this represents. (AI-inferred)
 	PolicyType any
-	Scope      any
-	Value      any
+	// What this configuration's own scope covers. (AI-inferred)
+	Scope any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiCustomerPolicy_Properties struct {

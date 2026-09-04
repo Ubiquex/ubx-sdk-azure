@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface IntegrationAccountPartner_Properties_Content_B2b_BusinessIdentities {
+  /** A code qualifying the meaning of the associated identifier. (AI-inferred) */
   qualifier?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

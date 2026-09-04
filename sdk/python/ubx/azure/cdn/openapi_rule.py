@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiRule_Properties_Actions:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
@@ -16,6 +17,7 @@ class OpenapiRule_Properties:
     actions: Any = None
     # A list of conditions that must be matched for the actions to be executed
     conditions: Any = None
+    # The current deployment status of this configuration. (AI-inferred)
     deployment_status: Any = None
     # If this rule is a match should the rules engine continue running the remaining rules or stop. If not present, defaults to Continue.
     match_processing_behavior: Any = None

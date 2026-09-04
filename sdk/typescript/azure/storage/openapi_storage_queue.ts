@@ -14,10 +14,12 @@ const OpenapiStorageQueue_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiStorageQueueConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiStorageQueue_Properties | Computed<OpenapiStorageQueue_Properties>;
 }
 
 export interface OpenapiStorageQueueAttrs {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiStorageQueue_Properties;
 }
 

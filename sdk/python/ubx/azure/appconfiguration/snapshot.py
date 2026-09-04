@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Snapshot_Properties_Filters:
+    # The configuration key name (or prefix pattern) this snapshot filter matches. (AI-inferred)
     key: Any = None
+    # The configuration key label this snapshot filter matches. (AI-inferred)
     label: Any = None
 
 @dataclasses.dataclass

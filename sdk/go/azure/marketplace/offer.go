@@ -4,13 +4,20 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Offer_Properties_Plans struct {
-	Accessibility     any
+	// The visibility level this offer is published at. (AI-inferred)
+	Accessibility any
+	// A reference to an alternate technology stack this offer is also available under. (AI-inferred)
 	AltStackReference any
-	IsStopSell        any
-	PlanDisplayName   any
-	PlanId            any
-	SkuId             any
-	StackType         any
+	// Whether this plan is no longer available for new purchases. (AI-inferred)
+	IsStopSell any
+	// A human-readable name for this plan. (AI-inferred)
+	PlanDisplayName any
+	// A reference to the specific plan this applies to. (AI-inferred)
+	PlanId any
+	// A reference to the SKU this applies to. (AI-inferred)
+	SkuId any
+	// The technology stack this offer is built on. (AI-inferred)
+	StackType any
 }
 
 type Offer_Properties struct {
@@ -70,10 +77,12 @@ var Offer_PropertiesFields = ubx.FieldMap{
 }
 
 type OfferConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type OfferAttrs struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

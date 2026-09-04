@@ -4,6 +4,7 @@ package dashboard
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GrafanaManagedDashboard_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 

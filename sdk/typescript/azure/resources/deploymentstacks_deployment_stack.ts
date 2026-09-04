@@ -18,33 +18,49 @@ export interface DeploymentstacksDeploymentStack_Properties_DebugSetting {
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference_KeyVault {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference {
+  /** A reference to the Key Vault this secret is sourced from. (AI-inferred) */
   keyVault?: DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference_KeyVault | Computed<DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference_KeyVault>;
+  /** The name of this secret. (AI-inferred) */
   secretName?: string | Computed<string>;
+  /** The specific version of this secret. (AI-inferred) */
   secretVersion?: string | Computed<string>;
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config {
+  /** A reference to the Key Vault secret this value is sourced from. (AI-inferred) */
   keyVaultReference?: DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference | Computed<DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension {
+  /** The configuration for this resource. (AI-inferred) */
   config?: Record<string, DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config> | Computed<Record<string, DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config>>;
+  /** A reference to the configuration this applies to. (AI-inferred) */
   configId?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The version identifier this applies to. (AI-inferred) */
   version?: string | Computed<string>;
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_DeletedResources {
+  /** The API version used for this resource. (AI-inferred) */
   apiVersion?: string | Computed<string>;
+  /** A reference to a Bicep extension used by this template. (AI-inferred) */
   extension?: DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension | Computed<DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The property/properties identifying this resource for matching purposes. (AI-inferred) */
   identifiers?: Record<string, unknown> | Computed<Record<string, unknown>>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -60,7 +76,9 @@ export interface DeploymentstacksDeploymentStack_Properties_DenySettings {
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_Error_AdditionalInfo {
+  /** Additional structured detail supporting this error. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -68,10 +86,15 @@ export interface DeploymentstacksDeploymentStack_Properties_Error_Details_Detail
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_Error_Details {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: DeploymentstacksDeploymentStack_Properties_Error_AdditionalInfo[] | Computed<DeploymentstacksDeploymentStack_Properties_Error_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: DeploymentstacksDeploymentStack_Properties_Error_Details_Details[] | Computed<DeploymentstacksDeploymentStack_Properties_Error_Details_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
@@ -89,27 +112,40 @@ export interface DeploymentstacksDeploymentStack_Properties_Error {
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_ExternalInputDefinitions {
+  /** The configuration for this resource. (AI-inferred) */
   config?: unknown | Computed<unknown>;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_ExternalInputs {
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_FailedResources {
+  /** The API version used for this resource. (AI-inferred) */
   apiVersion?: string | Computed<string>;
+  /** Detail about an error that occurred. (AI-inferred) */
   error?: DeploymentstacksDeploymentStack_Properties_Error | Computed<DeploymentstacksDeploymentStack_Properties_Error>;
+  /** A reference to a Bicep extension used by this template. (AI-inferred) */
   extension?: DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension | Computed<DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The property/properties identifying this resource for matching purposes. (AI-inferred) */
   identifiers?: Record<string, unknown> | Computed<Record<string, unknown>>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_Parameters {
+  /** The template expression this value was evaluated from. (AI-inferred) */
   expression?: string | Computed<string>;
+  /** A reference to a related resource or value. (AI-inferred) */
   reference?: DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference | Computed<DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 
@@ -121,7 +157,9 @@ export interface DeploymentstacksDeploymentStack_Properties_ParametersLink {
 }
 
 export interface DeploymentstacksDeploymentStack_Properties_Resources {
+  /** Whether resources managed by this stack are protected from deletion or modification outside the stack. (AI-inferred) */
   denyStatus?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 

@@ -39,11 +39,14 @@ class CloudngfwPostRulesResource_Properties_Source:
 
 @dataclasses.dataclass
 class CloudngfwPostRulesResource_Properties_Tags:
+    # The key of this attribute or label. (AI-inferred)
     key: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class CloudngfwPostRulesResource_Properties:
+    # The action taken when this rule matches. (AI-inferred)
     action_type: Any = None
     # array of rule applications
     applications: Any = None
@@ -51,6 +54,7 @@ class CloudngfwPostRulesResource_Properties:
     audit_comment: Any = None
     # URL/EDL to match
     category: Any = None
+    # The category of TLS decryption rule this represents. (AI-inferred)
     decryption_rule_type: Any = None
     # rule description
     description: Any = None
@@ -66,6 +70,7 @@ class CloudngfwPostRulesResource_Properties:
     negate_destination: Any = None
     # Boolean Enum
     negate_source: Any = None
+    # The relative priority of this item. (AI-inferred)
     priority: Any = None
     # any, application-default, TCP:number, UDP:number
     protocol: Any = None

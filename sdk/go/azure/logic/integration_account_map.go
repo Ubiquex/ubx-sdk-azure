@@ -17,7 +17,8 @@ type IntegrationAccountMap_Properties_ContentLink struct {
 	ContentSize any
 	// The content version.
 	ContentVersion any
-	Metadata       any
+	// Free-form key/value metadata attached to this resource. (AI-inferred)
+	Metadata any
 	// The content link URI.
 	Uri any
 }

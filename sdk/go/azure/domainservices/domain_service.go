@@ -4,15 +4,21 @@ package domainservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DomainService_Properties_ConfigDiagnostics_ValidatorResults_Issues struct {
+	// Parameter value(s) substituted into this alert's own description template. (AI-inferred)
 	DescriptionParams any
-	Id                any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
 }
 
 type DomainService_Properties_ConfigDiagnostics_ValidatorResults struct {
-	Issues                      any
+	// The issue(s) detected. (AI-inferred)
+	Issues any
+	// A human-readable name for the subnet this replica set is deployed into. (AI-inferred)
 	ReplicaSetSubnetDisplayName any
-	Status                      any
-	ValidatorId                 any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// A reference to the health validator that produced this result. (AI-inferred)
+	ValidatorId any
 }
 
 type DomainService_Properties_ConfigDiagnostics struct {
@@ -86,39 +92,64 @@ type DomainService_Properties_NotificationSettings struct {
 }
 
 type DomainService_Properties_ReplicaSets_HealthAlerts struct {
-	Id            any
-	Issue         any
-	LastDetected  any
-	Name          any
-	Raised        any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// A description of the detected issue. (AI-inferred)
+	Issue any
+	// When this issue was last detected. (AI-inferred)
+	LastDetected any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// When this alert was raised. (AI-inferred)
+	Raised any
+	// A URL with guidance for resolving this issue. (AI-inferred)
 	ResolutionUri any
-	Severity      any
+	// How serious this alert is. (AI-inferred)
+	Severity any
 }
 
 type DomainService_Properties_ReplicaSets_HealthMonitors struct {
+	// Additional detail about this result. (AI-inferred)
 	Details any
-	Id      any
-	Name    any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type DomainService_Properties_ReplicaSets struct {
+	// The IP address(es) of the domain controller(s) for this managed domain. (AI-inferred)
 	DomainControllerIpAddress any
-	ExternalAccessIpAddress   any
-	HealthAlerts              any
-	HealthLastEvaluated       any
-	HealthMonitors            any
-	Location                  any
-	ReplicaSetId              any
-	ServiceStatus             any
-	SubnetId                  any
-	VnetSiteId                any
+	// The externally reachable IP address for secure LDAP access to this managed domain. (AI-inferred)
+	ExternalAccessIpAddress any
+	// The active health alert(s) affecting this managed domain. (AI-inferred)
+	HealthAlerts any
+	// When this managed domain's own health was last evaluated. (AI-inferred)
+	HealthLastEvaluated any
+	// The health monitor(s) evaluating this managed domain's own status. (AI-inferred)
+	HealthMonitors any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// A unique identifier for this replica set. (AI-inferred)
+	ReplicaSetId any
+	// The current operational status of this managed domain. (AI-inferred)
+	ServiceStatus any
+	// A reference to the subnet this resource is deployed into. (AI-inferred)
+	SubnetId any
+	// A reference to the virtual network site this replica set is associated with. (AI-inferred)
+	VnetSiteId any
 }
 
 type DomainService_Properties_ResourceForestSettings_Settings struct {
-	FriendlyName      any
-	RemoteDnsIps      any
-	TrustDirection    any
-	TrustPassword     any
+	// A human-readable name for this resource. (AI-inferred)
+	FriendlyName any
+	// The DNS server IP address(es) this managed domain forwards unresolved queries to. (AI-inferred)
+	RemoteDnsIps any
+	// Whether this trust is one-way or bidirectional. (AI-inferred)
+	TrustDirection any
+	// The shared secret used to establish this trust relationship. (AI-inferred)
+	TrustPassword any
+	// The fully qualified name of the domain this trust is established with. (AI-inferred)
 	TrustedDomainFqdn any
 }
 

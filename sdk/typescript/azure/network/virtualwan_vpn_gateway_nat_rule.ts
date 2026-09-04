@@ -2,11 +2,14 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualwanVpnGatewayNatRule_Properties_EgressVpnSiteLinkConnections {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnGatewayNatRule_Properties_ExternalMappings {
+  /** The virtual network's own address range(s), in CIDR notation. (AI-inferred) */
   addressSpace?: string | Computed<string>;
+  /** A range of ports, e.g. `1000-2000`. (AI-inferred) */
   portRange?: string | Computed<string>;
 }
 

@@ -32,6 +32,7 @@ class OpenapiAfdorigin_Properties:
     certificate_name_check_validation_mode: Any = None
     # The list of custom certificate subjects to validate against. Only applicable when certificateNameCheckValidationMode is 'CustomCertificateSubject'. Must contain 1 or 2 entries.
     custom_certificate_subjects: Any = None
+    # The current deployment status of this configuration. (AI-inferred)
     deployment_status: Any = None
     # Whether to enable use of this rule. Permitted values are 'Enabled' or 'Disabled'
     enabled_state: Any = None

@@ -35,12 +35,14 @@ const OpenapiCapabilityHost_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiCapabilityHostConfig {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiCapabilityHost_Properties | Computed<OpenapiCapabilityHost_Properties>;
   /** path parameter, not part of the API's own resource representation */
   name: string | Computed<string>;
 }
 
 export interface OpenapiCapabilityHostAttrs {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: OpenapiCapabilityHost_Properties;
   /** path parameter, not part of the API's own resource representation */
   name: string;

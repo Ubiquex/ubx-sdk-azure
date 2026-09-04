@@ -4,29 +4,40 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApigatewayApiManagementGatewayResource_Properties_Backend_Subnet struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type ApigatewayApiManagementGatewayResource_Properties_Backend struct {
+	// A reference to the subnet this resource is deployed into. (AI-inferred)
 	Subnet any
 }
 
 type ApigatewayApiManagementGatewayResource_Properties_ConfigurationApi struct {
+	// The hostname this applies to. (AI-inferred)
 	Hostname any
 }
 
 type ApigatewayApiManagementGatewayResource_Properties_Frontend struct {
+	// The default hostname assigned to this gateway. (AI-inferred)
 	DefaultHostname any
 }
 
 type ApigatewayApiManagementGatewayResource_Properties struct {
-	Backend                 any
-	ConfigurationApi        any
-	CreatedAtUtc            any
-	Frontend                any
-	ProvisioningState       any
+	// Configuration for the backend this gateway connects to. (AI-inferred)
+	Backend any
+	// Configuration for the gateway's own configuration API endpoint. (AI-inferred)
+	ConfigurationApi any
+	// When this resource was created, in UTC. (AI-inferred)
+	CreatedAtUtc any
+	// Configuration for the frontend this gateway exposes. (AI-inferred)
+	Frontend any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The provisioning status this resource is transitioning toward. (AI-inferred)
 	TargetProvisioningState any
-	VirtualNetworkType      any
+	// Whether this gateway is deployed externally, internally, or not integrated with a virtual network. (AI-inferred)
+	VirtualNetworkType any
 }
 
 type ApigatewayApiManagementGatewayResource_Sku struct {

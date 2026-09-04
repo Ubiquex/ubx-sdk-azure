@@ -24,7 +24,9 @@ class PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateLink
 class PrivateendpointconnectionsPrivateEndpointConnection_Properties:
     # Group IDs.
     group_ids: Any = None
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the SQL server -- whether it's been approved, rejected, or is still pending, and any action the owner still needs to take. (AI-inferred)
     private_link_service_connection_state: Any = None
     # State of the private endpoint connection.
     provisioning_state: Any = None

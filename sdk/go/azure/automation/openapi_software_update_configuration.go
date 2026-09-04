@@ -11,7 +11,9 @@ type OpenapiSoftwareUpdateConfiguration_Properties_Error struct {
 }
 
 type OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfo_AdvancedSchedule_MonthlyOccurrences struct {
-	Day        any
+	// The day-of-week or day-of-month component of this schedule. (AI-inferred)
+	Day any
+	// Which specific occurrence of the matching day within the schedule's own recurrence this applies to. (AI-inferred)
 	Occurrence any
 }
 
@@ -81,19 +83,26 @@ type OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Linux str
 }
 
 type OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries_TagSettings struct {
+	// Whether all or any of this filter's own conditions must match. (AI-inferred)
 	FilterOperator any
-	Tags           any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
+	Tags any
 }
 
 type OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries struct {
-	Locations   any
-	Scope       any
+	// The Azure region(s) this applies to. (AI-inferred)
+	Locations any
+	// What this configuration's own scope covers. (AI-inferred)
+	Scope any
+	// Configuration for which resource tag(s) this applies to. (AI-inferred)
 	TagSettings any
 }
 
 type OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_NonAzureQueries struct {
+	// The name this DSC configuration function is aliased as. (AI-inferred)
 	FunctionAlias any
-	WorkspaceId   any
+	// A reference to the Log Analytics workspace this applies to. (AI-inferred)
+	WorkspaceId any
 }
 
 type OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets struct {

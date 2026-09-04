@@ -4,14 +4,18 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDefaultErrorResponse_Error_Details struct {
-	Code    any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// A human-readable description of this result. (AI-inferred)
 	Message any
-	Target  any
+	// The destination this applies to. (AI-inferred)
+	Target any
 }
 
 type OpenapiDefaultErrorResponse_Error struct {
 	// Standardized string to programmatically identify the error.
-	Code    any
+	Code any
+	// Additional detail about this result. (AI-inferred)
 	Details any
 	// More information to debug error.
 	Innererror any

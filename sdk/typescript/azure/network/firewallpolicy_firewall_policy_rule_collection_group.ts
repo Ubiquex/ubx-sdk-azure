@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties_RuleCollections {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The category of rule collection this represents. (AI-inferred) */
   ruleCollectionType?: string | Computed<string>;
 }
 

@@ -58,7 +58,9 @@ class OpenapiBillingSubscription_Properties_Reseller:
 
 @dataclasses.dataclass
 class OpenapiBillingSubscription_Properties_SuspensionReasonDetails:
+    # When this change or agreement takes effect. (AI-inferred)
     effective_date: Any = None
+    # A machine-readable reason code. (AI-inferred)
     reason: Any = None
 
 @dataclasses.dataclass

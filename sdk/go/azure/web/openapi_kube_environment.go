@@ -11,27 +11,39 @@ type OpenapiKubeEnvironment_ExtendedLocation struct {
 }
 
 type OpenapiKubeEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfiguration struct {
+	// The Log Analytics workspace customer ID this applies to. (AI-inferred)
 	CustomerId any
-	SharedKey  any
+	// A shared access key credential. (AI-inferred)
+	SharedKey any
 }
 
 type OpenapiKubeEnvironment_Properties_AppLogsConfiguration struct {
-	Destination               any
+	// Where this data or traffic is sent. (AI-inferred)
+	Destination any
+	// Configuration for sending this app's own diagnostic data to a Log Analytics workspace. (AI-inferred)
 	LogAnalyticsConfiguration any
 }
 
 type OpenapiKubeEnvironment_Properties_ArcConfiguration_FrontEndServiceConfiguration struct {
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
 	Kind any
 }
 
 type OpenapiKubeEnvironment_Properties_ArcConfiguration struct {
-	ArtifactStorageAccessMode    any
-	ArtifactStorageClassName     any
-	ArtifactStorageMountPath     any
-	ArtifactStorageNodeName      any
-	ArtifactsStorageType         any
+	// Whether the artifact storage volume is mounted read-only or read-write. (AI-inferred)
+	ArtifactStorageAccessMode any
+	// The Kubernetes storage class used to provision the artifact storage volume. (AI-inferred)
+	ArtifactStorageClassName any
+	// The path the artifact storage volume is mounted at. (AI-inferred)
+	ArtifactStorageMountPath any
+	// The specific node the artifact storage volume is affinitized to. (AI-inferred)
+	ArtifactStorageNodeName any
+	// The kind of storage backing this app's own build artifacts. (AI-inferred)
+	ArtifactsStorageType any
+	// Configuration for the front-end service handling this app's own traffic. (AI-inferred)
 	FrontEndServiceConfiguration any
-	KubeConfig                   any
+	// The Kubernetes configuration used to connect to this cluster. (AI-inferred)
+	KubeConfig any
 }
 
 type OpenapiKubeEnvironment_Properties_ContainerAppsConfiguration struct {
@@ -50,9 +62,13 @@ type OpenapiKubeEnvironment_Properties_ContainerAppsConfiguration struct {
 }
 
 type OpenapiKubeEnvironment_Properties struct {
-	AksResourceId              any
-	AppLogsConfiguration       any
-	ArcConfiguration           any
+	// A reference to the Azure Kubernetes Service cluster this applies to. (AI-inferred)
+	AksResourceId any
+	// Configuration for collecting this app's own application logs. (AI-inferred)
+	AppLogsConfiguration any
+	// Configuration specific to an Azure Arc-enabled deployment. (AI-inferred)
+	ArcConfiguration any
+	// Configuration specific to deploying on Azure Container Apps. (AI-inferred)
 	ContainerAppsConfiguration any
 	// Default Domain Name for the cluster
 	DefaultDomain any

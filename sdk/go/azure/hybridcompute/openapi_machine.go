@@ -4,7 +4,9 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMachine_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,8 +22,10 @@ type OpenapiMachine_Identity struct {
 }
 
 type OpenapiMachine_Properties_AgentConfiguration_ExtensionsAllowList struct {
+	// The publisher of this VM extension. (AI-inferred)
 	Publisher any
-	Type      any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiMachine_Properties_AgentConfiguration struct {
@@ -66,7 +70,9 @@ type OpenapiMachine_Properties_CloudMetadata struct {
 }
 
 type OpenapiMachine_Properties_ErrorDetails_AdditionalInfo struct {
+	// Additional detail about this result. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
@@ -74,33 +80,52 @@ type OpenapiMachine_Properties_ErrorDetails_Details_Details struct {
 }
 
 type OpenapiMachine_Properties_ErrorDetails_Details struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type OpenapiMachine_Properties_ErrorDetails struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type OpenapiMachine_Properties_Extensions_Status struct {
-	Code          any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// A human-readable summary of this status. (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of this status, e.g. `Info`, `Warning`, or `Error`. (AI-inferred)
+	Level any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// When this status was last reported. (AI-inferred)
+	Time any
 }
 
 type OpenapiMachine_Properties_Extensions struct {
-	Name               any
-	Status             any
-	Type               any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The version of the extension handler. (AI-inferred)
 	TypeHandlerVersion any
 }
 
@@ -112,7 +137,9 @@ type OpenapiMachine_Properties_FirmwareProfile struct {
 }
 
 type OpenapiMachine_Properties_HardwareProfile_Processors struct {
-	Name          any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The number of processor cores. (AI-inferred)
 	NumberOfCores any
 }
 
@@ -126,7 +153,9 @@ type OpenapiMachine_Properties_HardwareProfile struct {
 }
 
 type OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetails_VolumeLicenseDetails struct {
-	InvoiceId   any
+	// The invoice number associated with this volume license. (AI-inferred)
+	InvoiceId any
+	// The program year this Software Assurance/subscription benefit applies to. (AI-inferred)
 	ProgramYear any
 }
 
@@ -173,12 +202,19 @@ type OpenapiMachine_Properties_LicenseProfile_EsuProfile struct {
 }
 
 type OpenapiMachine_Properties_LicenseProfile_ProductProfile_ProductFeatures struct {
-	BillingEndDate     any
-	BillingStartDate   any
-	DisenrollmentDate  any
-	EnrollmentDate     any
-	Error              any
-	Name               any
+	// When billing for this product feature ends. (AI-inferred)
+	BillingEndDate any
+	// When billing for this product feature starts. (AI-inferred)
+	BillingStartDate any
+	// When this machine was disenrolled from this product feature. (AI-inferred)
+	DisenrollmentDate any
+	// When this machine was enrolled in this product feature. (AI-inferred)
+	EnrollmentDate any
+	// Detail about an error that occurred. (AI-inferred)
+	Error any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// This product feature's own current subscription status. (AI-inferred)
 	SubscriptionStatus any
 }
 
@@ -214,7 +250,8 @@ type OpenapiMachine_Properties_LicenseProfile struct {
 	// The license status.
 	LicenseStatus any
 	// Describes the properties of a Product License Profile ARM model.
-	ProductProfile    any
+	ProductProfile any
+	// This machine's Software Assurance/subscription benefit status, used to determine Extended Security Update eligibility. (AI-inferred)
 	SoftwareAssurance any
 }
 
@@ -230,20 +267,28 @@ type OpenapiMachine_Properties_LocationData struct {
 }
 
 type OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses_Subnet struct {
+	// The subnet's own address range, in CIDR notation. (AI-inferred)
 	AddressPrefix any
 }
 
 type OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses struct {
-	Address          any
+	// The literal IP address. (AI-inferred)
+	Address any
+	// Whether this is an IPv4 or IPv6 address. (AI-inferred)
 	IpAddressVersion any
-	Subnet           any
+	// The subnet this IP address belongs to. (AI-inferred)
+	Subnet any
 }
 
 type OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces struct {
-	Id          any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The IP address(es) assigned to this network interface. (AI-inferred)
 	IpAddresses any
-	MacAddress  any
-	Name        any
+	// This network interface's own MAC address. (AI-inferred)
+	MacAddress any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiMachine_Properties_NetworkProfile struct {
@@ -298,12 +343,19 @@ type OpenapiMachine_Properties_ServiceStatuses struct {
 }
 
 type OpenapiMachine_Properties_StorageProfile_Disks struct {
-	DiskType         any
-	GeneratedId      any
-	Id               any
-	MaxSizeInBytes   any
-	Name             any
-	Path             any
+	// The type of this disk, e.g. `Managed` or `Unmanaged`. (AI-inferred)
+	DiskType any
+	// A machine-generated unique identifier for this disk. (AI-inferred)
+	GeneratedId any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// This disk's own maximum size, in bytes. (AI-inferred)
+	MaxSizeInBytes any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// This disk's own file system path. (AI-inferred)
+	Path any
+	// This disk's own currently-used space, in bytes. (AI-inferred)
 	UsedSpaceInBytes any
 }
 
@@ -392,19 +444,30 @@ type OpenapiMachine_Properties struct {
 }
 
 type OpenapiMachine_Resources_Properties struct {
+	// Whether this extension automatically upgrades to the latest minor version as new versions become available. (AI-inferred)
 	AutoUpgradeMinorVersion any
-	EnableAutomaticUpgrade  any
-	ForceUpdateTag          any
-	InstanceView            any
-	ProtectedSettings       any
-	ProvisioningState       any
-	Publisher               any
-	Settings                any
-	Type                    any
-	TypeHandlerVersion      any
+	// Whether Azure automatically upgrades this extension to newer versions as they're released. (AI-inferred)
+	EnableAutomaticUpgrade any
+	// An opaque value that, when changed, forces this extension to re-run even though its own configuration is otherwise unchanged. (AI-inferred)
+	ForceUpdateTag any
+	// Real-time status information about this extension's own current runtime state. (AI-inferred)
+	InstanceView any
+	// Extension-specific configuration that's encrypted before being sent to the machine, never returned on a read. (AI-inferred)
+	ProtectedSettings any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The publisher of this VM extension. (AI-inferred)
+	Publisher any
+	// Extension-specific configuration, in JSON. (AI-inferred)
+	Settings any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The version of the extension handler. (AI-inferred)
+	TypeHandlerVersion any
 }
 
 type OpenapiMachine_Resources struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

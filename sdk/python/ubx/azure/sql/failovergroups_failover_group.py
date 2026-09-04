@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class FailovergroupsFailoverGroup_Properties_PartnerServers:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # Whether this partner server acts as the primary or a secondary in the failover group. (AI-inferred)
     replication_role: Any = None
 
 @dataclasses.dataclass

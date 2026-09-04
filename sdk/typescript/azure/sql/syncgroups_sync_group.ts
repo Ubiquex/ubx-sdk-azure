@@ -2,13 +2,18 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface SyncgroupsSyncGroup_Properties_Schema_Tables_Columns {
+  /** The size (e.g. length/precision) of this column's own data type. (AI-inferred) */
   dataSize?: string | Computed<string>;
+  /** This column's own SQL data type. (AI-inferred) */
   dataType?: string | Computed<string>;
+  /** This column's own name, quoted as needed for use in SQL statements. (AI-inferred) */
   quotedName?: string | Computed<string>;
 }
 
 export interface SyncgroupsSyncGroup_Properties_Schema_Tables {
+  /** The column(s) of this table included in the sync group's own schema. (AI-inferred) */
   columns?: SyncgroupsSyncGroup_Properties_Schema_Tables_Columns[] | Computed<SyncgroupsSyncGroup_Properties_Schema_Tables_Columns[]>;
+  /** This table's own name, quoted as needed for use in SQL statements. (AI-inferred) */
   quotedName?: string | Computed<string>;
 }
 

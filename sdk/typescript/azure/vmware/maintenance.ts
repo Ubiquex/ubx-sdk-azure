@@ -2,20 +2,29 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources_Errors {
+  /** The action needed to resolve this issue. (AI-inferred) */
   actionRequired?: boolean | Computed<boolean>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: string | Computed<string>;
+  /** A machine-readable error code. (AI-inferred) */
   errorCode?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Guidance for resolving this issue. (AI-inferred) */
   resolutionSteps?: string[] | Computed<string[]>;
 }
 
 export interface Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources {
+  /** The error(s) encountered. (AI-inferred) */
   errors?: Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources_Errors[] | Computed<Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources_Errors[]>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface Maintenance_Properties_MaintenanceReadiness_FailedChecks {
+  /** The resource(s) affected by this issue. (AI-inferred) */
   impactedResources?: Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources[] | Computed<Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -33,6 +42,7 @@ export interface Maintenance_Properties_MaintenanceReadiness {
 }
 
 export interface Maintenance_Properties_Operations {
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
 }
 

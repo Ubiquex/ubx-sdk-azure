@@ -7,8 +7,11 @@ export interface InputsInput_Properties_Compression {
 }
 
 export interface InputsInput_Properties_Diagnostics_Conditions {
+  /** A short, machine-readable diagnostic code identifying this input condition, e.g. `INP-3`. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable description of this input diagnostic condition. (AI-inferred) */
   message?: string | Computed<string>;
+  /** When this diagnostic condition was first observed. (AI-inferred) */
   since?: string | Computed<string>;
 }
 

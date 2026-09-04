@@ -4,11 +4,16 @@ package virtual
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MachineExtension_Properties_InstanceView_Statuses struct {
-	Code          any
+	// The machine-readable status code for the extension instance view status, such as 'ProvisioningState/succeeded' or 'ProvisioningState/failed'. (AI-inferred)
+	Code any
+	// The localized, human-readable status message displayed for the extension instance view status. (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of the status, indicating whether it is informational, a warning, or an error. Allowed values: Info, Warning, Error. (AI-inferred)
+	Level any
+	// A human-readable message providing additional details about the extension's status, as part of the instance view statuses. (AI-inferred)
+	Message any
+	// The time at which the status was recorded, typically in ISO 8601 format. (AI-inferred)
+	Time any
 }
 
 type MachineExtension_Properties_InstanceView struct {
@@ -31,7 +36,8 @@ type MachineExtension_Properties_ProtectedSettingsFromKeyVault_SourceVault struc
 
 type MachineExtension_Properties_ProtectedSettingsFromKeyVault struct {
 	// The URL referencing a secret in a Key Vault.
-	SecretUrl   any
+	SecretUrl any
+	// The Key Vault that holds the protected settings. This is a reference to the vault (e.g., its resource ID) and is required when supplying protected settings via a Key Vault. (AI-inferred)
 	SourceVault any
 }
 

@@ -18,7 +18,9 @@ type ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConn
 }
 
 type ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties struct {
-	PrivateEndpoint                   any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the managed instance -- whether it's been approved, rejected, or is still pending, and any action the owner still needs to take. (AI-inferred)
 	PrivateLinkServiceConnectionState any
 	// State of the Private Endpoint Connection.
 	ProvisioningState any

@@ -4,13 +4,17 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiProduct_Properties_LastCharge struct {
+	// The currency amounts are expressed in. (AI-inferred)
 	Currency any
-	Value    any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiProduct_Properties_Reseller struct {
+	// A human-readable description of this resource. (AI-inferred)
 	Description any
-	ResellerId  any
+	// A reference to the reseller associated with this account. (AI-inferred)
+	ResellerId any
 }
 
 type OpenapiProduct_Properties struct {

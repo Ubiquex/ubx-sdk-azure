@@ -2,17 +2,23 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges_Resource {
+  /** A reference to the collection this applies to. (AI-inferred) */
   collection?: string | Computed<string>;
+  /** A reference to the database this applies to. (AI-inferred) */
   db?: string | Computed<string>;
 }
 
 export interface DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges {
+  /** The action(s) this permission or rule applies to. (AI-inferred) */
   actions?: string[] | Computed<string[]>;
+  /** The resource this permission applies to. (AI-inferred) */
   resource?: DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges_Resource | Computed<DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges_Resource>;
 }
 
 export interface DbOpenapiMongoRoleDefinitionGetResults_Properties_Roles {
+  /** A reference to the database this applies to. (AI-inferred) */
   db?: string | Computed<string>;
+  /** The role granted by this assignment. (AI-inferred) */
   role?: string | Computed<string>;
 }
 

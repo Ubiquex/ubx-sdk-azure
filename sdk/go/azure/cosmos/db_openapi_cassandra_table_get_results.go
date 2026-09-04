@@ -4,7 +4,9 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiCassandraTableGetResults_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -25,22 +27,28 @@ type DbOpenapiCassandraTableGetResults_Properties_Options_AutoscaleSettings stru
 }
 
 type DbOpenapiCassandraTableGetResults_Properties_Options struct {
+	// Configuration for automatically scaling throughput within a defined maximum. (AI-inferred)
 	AutoscaleSettings any
 	// Request Units per second. For example, "throughput": 10000.
 	Throughput any
 }
 
 type DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_ClusterKeys struct {
-	Name    any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The field(s) results are sorted by. (AI-inferred)
 	OrderBy any
 }
 
 type DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_Columns struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_PartitionKeys struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 

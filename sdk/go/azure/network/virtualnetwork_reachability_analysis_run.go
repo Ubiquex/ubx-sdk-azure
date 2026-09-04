@@ -8,7 +8,8 @@ type VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent_IpTraffic st
 	DestinationIps any
 	// The destination ports of the traffic.
 	DestinationPorts any
-	Protocols        any
+	// The network protocol(s) this applies to. (AI-inferred)
+	Protocols any
 	// List of source IP addresses of the traffic..
 	SourceIps any
 	// The source ports of the traffic.
@@ -16,6 +17,7 @@ type VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent_IpTraffic st
 }
 
 type VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent struct {
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
 	Description any
 	// Destination resource id of the intent.
 	DestinationResourceId any
@@ -26,9 +28,12 @@ type VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent struct {
 }
 
 type VirtualnetworkReachabilityAnalysisRun_Properties struct {
+	// The outcome of analyzing this traffic pattern. (AI-inferred)
 	AnalysisResult any
-	Description    any
-	ErrorMessage   any
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
+	Description any
+	// A human-readable description of the error. (AI-inferred)
+	ErrorMessage any
 	// Intent information.
 	IntentContent any
 	// Id of the intent resource to run analysis on.

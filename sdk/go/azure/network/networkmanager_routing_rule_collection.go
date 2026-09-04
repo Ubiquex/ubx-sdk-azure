@@ -4,6 +4,7 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerRoutingRuleCollection_Properties_AppliesTo struct {
+	// A reference to the network group this applies to. (AI-inferred)
 	NetworkGroupId any
 }
 

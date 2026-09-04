@@ -4,7 +4,9 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCluster_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,9 +22,13 @@ type OpenapiCluster_Identity struct {
 }
 
 type OpenapiCluster_Properties_AssociatedWorkspaces struct {
+	// When this resource was associated. (AI-inferred)
 	AssociateDate any
-	ResourceId    any
-	WorkspaceId   any
+	// A reference to the resource this applies to. (AI-inferred)
+	ResourceId any
+	// A reference to the Log Analytics workspace this applies to. (AI-inferred)
+	WorkspaceId any
+	// The name of the associated Log Analytics workspace. (AI-inferred)
 	WorkspaceName any
 }
 

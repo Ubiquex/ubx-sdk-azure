@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VdiPool_Properties_HealthStatusDetails:
+    # A short, machine-readable code identifying this pool health issue. (AI-inferred)
     code: Any = None
+    # A human-readable description of this pool health issue. (AI-inferred)
     message: Any = None
 
 @dataclasses.dataclass

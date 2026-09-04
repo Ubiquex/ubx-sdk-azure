@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DatabasesDatabase_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -35,10 +37,15 @@ class DatabasesDatabase_Properties_CurrentSku:
 
 @dataclasses.dataclass
 class DatabasesDatabase_Properties_Keys:
+    # When this transparent data encryption protector key was created. (AI-inferred)
     creation_date: Any = None
+    # The specific version of this encryption key. (AI-inferred)
     key_version: Any = None
+    # The Azure subregion this key is available in. (AI-inferred)
     subregion: Any = None
+    # A cryptographic thumbprint of this key. (AI-inferred)
     thumbprint: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

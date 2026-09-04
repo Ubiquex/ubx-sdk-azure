@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiGlobalParameterResource_Properties:
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 _OpenapiGlobalParameterResource_PropertiesFields = {

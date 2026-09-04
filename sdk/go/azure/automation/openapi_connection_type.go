@@ -4,9 +4,12 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiConnectionType_Properties_FieldDefinitions struct {
+	// Whether this variable's own value is encrypted at rest. (AI-inferred)
 	IsEncrypted any
-	IsOptional  any
-	Type        any
+	// Whether supplying this parameter is optional. (AI-inferred)
+	IsOptional any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiConnectionType_Properties struct {

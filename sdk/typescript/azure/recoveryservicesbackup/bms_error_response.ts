@@ -61,6 +61,7 @@ export interface BmsErrorResponseConfig {
   eTag?: string | Computed<string>;
   /** Represents an Azure geography region where supported resource providers live. */
   location?: string | Computed<string>;
+  /** This backup error's own real, structured detail. (AI-inferred) */
   properties?: BmsErrorResponse_Properties | Computed<BmsErrorResponse_Properties>;
   /** Resource tags. */
   tags?: Record<string, string> | Computed<Record<string, string>>;
@@ -77,6 +78,7 @@ export interface BmsErrorResponseAttrs {
   location: string;
   /** The name of the resource */
   name: string;
+  /** This backup error's own real, structured detail. (AI-inferred) */
   properties: BmsErrorResponse_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: BmsErrorResponse_SystemData;

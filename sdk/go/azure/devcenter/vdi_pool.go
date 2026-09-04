@@ -4,7 +4,9 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VdiPool_Properties_HealthStatusDetails struct {
-	Code    any
+	// A short, machine-readable code identifying this pool health issue. (AI-inferred)
+	Code any
+	// A human-readable description of this pool health issue. (AI-inferred)
 	Message any
 }
 

@@ -4,7 +4,9 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOnlineDeployment_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,10 +22,14 @@ type OpenapiOnlineDeployment_Identity struct {
 }
 
 type OpenapiOnlineDeployment_Properties_DataCollector_Collections struct {
-	ClientId           any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Whether data collection is enabled, disabled, or disabled with data deletion. (AI-inferred)
 	DataCollectionMode any
-	DataId             any
-	SamplingRate       any
+	// A reference to the data asset this applies to. (AI-inferred)
+	DataId any
+	// The fraction of requests sampled for data collection. (AI-inferred)
+	SamplingRate any
 }
 
 type OpenapiOnlineDeployment_Properties_DataCollector_RequestLogging struct {
@@ -33,7 +39,8 @@ type OpenapiOnlineDeployment_Properties_DataCollector_RequestLogging struct {
 
 type OpenapiOnlineDeployment_Properties_DataCollector struct {
 	// [Required] The collection configuration. Each collection has it own configuration to collect model data and the name of collection can be arbitrary string. Model data collector can be used for either payload logging or custom logging or both of them. Collection request and response are reserved for payload logging, others are for custom logging.
-	Collections    any
+	Collections any
+	// Configuration for logging inference request/response payloads. (AI-inferred)
 	RequestLogging any
 	// When model data is collected to blob storage, we need to roll the data to different path to avoid logging all of them in a single blob file. If the rolling rate is hour, all data will be collected in the blob path /yyyy/MM/dd/HH/. If it's day, all data will be collected in blob path /yyyy/MM/dd/. The other benefit of rolling path is that model monitoring ui is able to select a time range of data very quickly.
 	RollingRate any
@@ -62,13 +69,15 @@ type OpenapiOnlineDeployment_Properties_RequestSettings struct {
 }
 
 type OpenapiOnlineDeployment_Properties_ScaleSettings struct {
+	// How this resource scales, e.g. manually or automatically. (AI-inferred)
 	ScaleType any
 }
 
 type OpenapiOnlineDeployment_Properties struct {
 	// If true, enables Application Insights logging.
 	AppInsightsEnabled any
-	DataCollector      any
+	// Configuration for collecting inference request/response data. (AI-inferred)
+	DataCollector any
 	// Enum to determine whether PublicNetworkAccess is Enabled or Disabled for egress of a deployment.
 	EgressPublicNetworkAccess any
 	// Enum to determine endpoint compute type.
@@ -219,7 +228,8 @@ type OpenapiOnlineDeploymentConfig struct {
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
 	Kind any
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
@@ -233,7 +243,8 @@ type OpenapiOnlineDeploymentAttrs struct {
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
 	Kind any
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// The resource model definition representing SKU
 	Sku any

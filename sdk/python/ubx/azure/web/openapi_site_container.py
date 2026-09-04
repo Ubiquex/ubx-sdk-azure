@@ -8,14 +8,20 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiSiteContainer_Properties_EnvironmentVariables:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiSiteContainer_Properties_VolumeMounts:
+    # The path this volume is mounted at inside the container. (AI-inferred)
     container_mount_path: Any = None
+    # The literal data payload of this field. (AI-inferred)
     data: Any = None
+    # Whether this volume is mounted read-only. (AI-inferred)
     read_only: Any = None
+    # A specific subdirectory within the volume to mount, rather than its own root. (AI-inferred)
     volume_sub_path: Any = None
 
 @dataclasses.dataclass

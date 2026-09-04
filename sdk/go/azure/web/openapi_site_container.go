@@ -4,15 +4,21 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSiteContainer_Properties_EnvironmentVariables struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type OpenapiSiteContainer_Properties_VolumeMounts struct {
+	// The path this volume is mounted at inside the container. (AI-inferred)
 	ContainerMountPath any
-	Data               any
-	ReadOnly           any
-	VolumeSubPath      any
+	// The literal data payload of this field. (AI-inferred)
+	Data any
+	// Whether this volume is mounted read-only. (AI-inferred)
+	ReadOnly any
+	// A specific subdirectory within the volume to mount, rather than its own root. (AI-inferred)
+	VolumeSubPath any
 }
 
 type OpenapiSiteContainer_Properties struct {

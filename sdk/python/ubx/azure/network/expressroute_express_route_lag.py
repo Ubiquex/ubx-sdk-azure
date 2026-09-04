@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLag_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,44 +26,71 @@ class ExpressrouteExpressRouteLag_Identity:
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLag_Properties_Links_Properties_MacSecConfig:
+    # A reference to the Key Vault secret holding the MACsec Connectivity Association Key. (AI-inferred)
     cak_secret_identifier: Any = None
+    # The MACsec cipher suite used to encrypt this link. (AI-inferred)
     cipher: Any = None
+    # A reference to the Key Vault secret holding the MACsec Connectivity Association Key Name. (AI-inferred)
     ckn_secret_identifier: Any = None
+    # Whether MACsec Secure Channel Identifier (SCI) is enabled on this link. (AI-inferred)
     sci_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLag_Properties_Links_Properties_Members_Properties:
+    # An administrative override for this rule's own health-probe-driven forwarding state -- `Up` forces new connections through regardless of probe results, `Down` forces them away. (AI-inferred)
     admin_state: Any = None
+    # The physical co-location facility this ExpressRoute port is provisioned in. (AI-inferred)
     colo_location: Any = None
+    # The kind of physical connector used by this ExpressRoute port. (AI-inferred)
     connector_type: Any = None
+    # The name of this network interface. (AI-inferred)
     interface_name: Any = None
+    # The identifier of the physical patch panel this port is connected through. (AI-inferred)
     patch_panel_id: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The identifier of the physical rack this ExpressRoute port is located in. (AI-inferred)
     rack_id: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLag_Properties_Links_Properties_Members:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLag_Properties_Links_Properties:
+    # An administrative override for this rule's own health-probe-driven forwarding state -- `Up` forces new connections through regardless of probe results, `Down` forces them away. (AI-inferred)
     admin_state: Any = None
+    # The name of this network interface. (AI-inferred)
     interface_name: Any = None
+    # MACsec (link-layer encryption) configuration for this ExpressRoute port link. (AI-inferred)
     mac_sec_config: Any = None
+    # The member(s) making up this resource. (AI-inferred)
     members: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The name of the router this applies to. (AI-inferred)
     router_name: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLag_Properties_Links:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

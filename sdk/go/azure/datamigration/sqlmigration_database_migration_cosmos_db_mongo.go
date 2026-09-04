@@ -4,19 +4,29 @@ package datamigration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList_MigrationProgressDetails struct {
-	DurationInSeconds      any
-	MigrationError         any
-	MigrationStatus        any
+	// How long this operation took, in seconds. (AI-inferred)
+	DurationInSeconds any
+	// Detail about an error encountered during migration. (AI-inferred)
+	MigrationError any
+	// The current status of this migration. (AI-inferred)
+	MigrationStatus any
+	// The number of documents processed so far. (AI-inferred)
 	ProcessedDocumentCount any
-	SourceDocumentCount    any
+	// The total number of documents in the source. (AI-inferred)
+	SourceDocumentCount any
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList struct {
+	// Detailed progress information for this migration. (AI-inferred)
 	MigrationProgressDetails any
-	SourceCollection         any
-	SourceDatabase           any
-	TargetCollection         any
-	TargetDatabase           any
+	// The source collection this migration reads from. (AI-inferred)
+	SourceCollection any
+	// The source database this migration reads from. (AI-inferred)
+	SourceDatabase any
+	// The destination collection this migration writes to. (AI-inferred)
+	TargetCollection any
+	// The destination database this migration writes to. (AI-inferred)
+	TargetDatabase any
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_SourceMongoConnection struct {

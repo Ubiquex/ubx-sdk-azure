@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DtlNotificationChannel_Properties_Events:
+    # The name of this event. (AI-inferred)
     event_name: Any = None
 
 @dataclasses.dataclass

@@ -2,9 +2,13 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiCustomerPolicy_Properties_Policies {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The category of policy this represents. (AI-inferred) */
   policyType?: string | Computed<string>;
+  /** What this configuration's own scope covers. (AI-inferred) */
   scope?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

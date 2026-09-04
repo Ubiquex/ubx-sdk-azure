@@ -19,7 +19,9 @@ export interface AgentApplication_Properties_AgentIdentityBlueprint {
 }
 
 export interface AgentApplication_Properties_Agents {
+  /** A reference to the agent this applies to. (AI-inferred) */
   agentId?: string | Computed<string>;
+  /** The name of this agent. (AI-inferred) */
   agentName?: string | Computed<string>;
 }
 
@@ -29,9 +31,13 @@ export interface AgentApplication_Properties_AuthorizationPolicy {
 }
 
 export interface AgentApplication_Properties_TrafficRoutingPolicy_Rules {
+  /** A reference to the model deployment this applies to. (AI-inferred) */
   deploymentId?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A reference to the specific rule this applies to. (AI-inferred) */
   ruleId?: string | Computed<string>;
+  /** The percentage of traffic routed to this target. (AI-inferred) */
   trafficPercentage?: number | Computed<number>;
 }
 

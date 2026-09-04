@@ -13,14 +13,20 @@ class OpenapiObjectReplicationPolicy_Properties_Metrics:
 
 @dataclasses.dataclass
 class OpenapiObjectReplicationPolicy_Properties_Rules_Filters:
+    # The earliest creation time this filter matches. (AI-inferred)
     min_creation_time: Any = None
+    # The blob name prefix(es) this rule matches. (AI-inferred)
     prefix_match: Any = None
 
 @dataclasses.dataclass
 class OpenapiObjectReplicationPolicy_Properties_Rules:
+    # The target container objects are copied or moved into. (AI-inferred)
     destination_container: Any = None
+    # The condition(s) restricting which blob(s) this rule applies to. (AI-inferred)
     filters: Any = None
+    # A reference to the specific rule this applies to. (AI-inferred)
     rule_id: Any = None
+    # The container objects are copied or moved from. (AI-inferred)
     source_container: Any = None
 
 @dataclasses.dataclass

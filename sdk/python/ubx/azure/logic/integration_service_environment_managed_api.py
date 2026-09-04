@@ -21,6 +21,7 @@ class IntegrationServiceEnvironmentManagedApi_Properties_DeploymentParameters_Co
     content_size: Any = None
     # The content version.
     content_version: Any = None
+    # Free-form key/value metadata attached to this resource. (AI-inferred)
     metadata: Any = None
     # The content link URI.
     uri: Any = None

@@ -85,11 +85,14 @@ class DeploymentsDeploymentExtended_Properties_Extensions:
 
 @dataclasses.dataclass
 class DeploymentsDeploymentExtended_Properties_ExternalInputDefinitions:
+    # The configuration defining how this external input is sourced and validated. (AI-inferred)
     config: Any = None
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
 
 @dataclasses.dataclass
 class DeploymentsDeploymentExtended_Properties_ExternalInputs:
+    # The resolved value supplied for this external input. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -111,8 +114,11 @@ class DeploymentsDeploymentExtended_Properties_OutputResources:
 
 @dataclasses.dataclass
 class DeploymentsDeploymentExtended_Properties_Parameters:
+    # A template expression evaluated to produce this parameter's own value. (AI-inferred)
     expression: Any = None
+    # A reference to a Key Vault secret this parameter's own value is sourced from. (AI-inferred)
     reference: Any = None
+    # The literal value supplied for this parameter. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

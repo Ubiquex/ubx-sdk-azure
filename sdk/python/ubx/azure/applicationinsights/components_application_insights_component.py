@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ComponentsApplicationInsightsComponent_Properties_PrivateLinkScopedResources:
+    # A reference to the Private Link Scope resource this component is linked to. (AI-inferred)
     resource_id: Any = None
+    # The Private Link Scope's own identifier. (AI-inferred)
     scope_id: Any = None
 
 @dataclasses.dataclass

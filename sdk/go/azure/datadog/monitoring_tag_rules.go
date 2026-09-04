@@ -4,9 +4,12 @@ package datadog
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitoringTagRules_Properties_AgentRules_FilteringTags struct {
+	// The action to perform. (AI-inferred)
 	Action any
-	Name   any
-	Value  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type MonitoringTagRules_Properties_AgentRules struct {
@@ -42,7 +45,8 @@ type MonitoringTagRules_Properties struct {
 	// Set of rules for sending logs for the Monitor resource.
 	LogRules any
 	// Set of rules for sending metrics for the Monitor resource.
-	MetricRules       any
+	MetricRules any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 

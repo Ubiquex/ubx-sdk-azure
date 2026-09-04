@@ -4,8 +4,11 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TemplatespecsTemplateSpec_Properties_Versions struct {
-	Description  any
-	TimeCreated  any
+	// A human-readable description of this template spec version. (AI-inferred)
+	Description any
+	// Output only. When this template spec version was created. (AI-inferred)
+	TimeCreated any
+	// Output only. When this template spec version was last modified. (AI-inferred)
 	TimeModified any
 }
 

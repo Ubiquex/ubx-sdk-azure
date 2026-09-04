@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface SqlmigrationDatabaseMigrationSqlVm_Properties_BackupConfiguration_SourceLocation_AzureBlob_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -63,27 +65,46 @@ export interface SqlmigrationDatabaseMigrationSqlVm_Properties_BackupConfigurati
 }
 
 export interface SqlmigrationDatabaseMigrationSqlVm_Properties_MigrationStatusDetails_ActiveBackupSets_ListOfBackupFiles {
+  /** How long this copy operation took. (AI-inferred) */
   copyDuration?: number | Computed<number>;
+  /** The observed data transfer rate for this copy operation. (AI-inferred) */
   copyThroughput?: number | Computed<number>;
+  /** The amount of data read so far. (AI-inferred) */
   dataRead?: number | Computed<number>;
+  /** The amount of data written so far. (AI-inferred) */
   dataWritten?: number | Computed<number>;
+  /** This file's own position within its containing backup set. (AI-inferred) */
   familySequenceNumber?: number | Computed<number>;
+  /** The name of this file. (AI-inferred) */
   fileName?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** The total size of this data. (AI-inferred) */
   totalSize?: number | Computed<number>;
 }
 
 export interface SqlmigrationDatabaseMigrationSqlVm_Properties_MigrationStatusDetails_ActiveBackupSets {
+  /** When this backup completed. (AI-inferred) */
   backupFinishDate?: string | Computed<string>;
+  /** A unique identifier for this backup set. (AI-inferred) */
   backupSetId?: string | Computed<string>;
+  /** When this backup started. (AI-inferred) */
   backupStartDate?: string | Computed<string>;
+  /** The category of backup this represents, e.g. full, differential, or log. (AI-inferred) */
   backupType?: string | Computed<string>;
+  /** The total number of files making up this backup set. (AI-inferred) */
   familyCount?: number | Computed<number>;
+  /** The first log sequence number contained in this backup. (AI-inferred) */
   firstLsn?: string | Computed<string>;
+  /** Whether checksums were computed and verified for this backup. (AI-inferred) */
   hasBackupChecksums?: boolean | Computed<boolean>;
+  /** Why this backup file was excluded from the restore sequence. (AI-inferred) */
   ignoreReasons?: string[] | Computed<string[]>;
+  /** Whether this backup has already been applied to the target database. (AI-inferred) */
   isBackupRestored?: boolean | Computed<boolean>;
+  /** The last log sequence number contained in this backup. (AI-inferred) */
   lastLsn?: string | Computed<string>;
+  /** The backup file(s) making up this backup set. (AI-inferred) */
   listOfBackupFiles?: SqlmigrationDatabaseMigrationSqlVm_Properties_MigrationStatusDetails_ActiveBackupSets_ListOfBackupFiles[] | Computed<SqlmigrationDatabaseMigrationSqlVm_Properties_MigrationStatusDetails_ActiveBackupSets_ListOfBackupFiles[]>;
 }
 

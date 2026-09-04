@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VdiPool_Properties_HealthStatusDetails {
+  /** A short, machine-readable code identifying this pool health issue. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable description of this pool health issue. (AI-inferred) */
   message?: string | Computed<string>;
 }
 

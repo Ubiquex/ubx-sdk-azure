@@ -2,12 +2,19 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiRelayServiceConnectionEntity_Properties {
+  /** The BizTalk endpoint URI this connection targets. (AI-inferred) */
   biztalkUri?: string | Computed<string>;
+  /** The connection string for the specific entity (e.g. queue or topic) this applies to. (AI-inferred) */
   entityConnectionString?: string | Computed<string>;
+  /** The name of the specific entity (e.g. queue or topic) this applies to. (AI-inferred) */
   entityName?: string | Computed<string>;
+  /** The hostname this applies to. (AI-inferred) */
   hostname?: string | Computed<string>;
+  /** A network port number. (AI-inferred) */
   port?: number | Computed<number>;
+  /** The connection string for the underlying resource. (AI-inferred) */
   resourceConnectionString?: string | Computed<string>;
+  /** The category of resource this applies to. (AI-inferred) */
   resourceType?: string | Computed<string>;
 }
 

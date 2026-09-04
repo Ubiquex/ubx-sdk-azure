@@ -8,554 +8,890 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_ServiceEndpointPolicyDefinitions_Properties:
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The Azure service (e.g. a specific Private Link-enabled PaaS service) this configuration applies to. (AI-inferred)
     service: Any = None
+    # The specific service resource(s) a service endpoint policy definition grants access to. (AI-inferred)
     service_resources: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_ServiceEndpointPolicyDefinitions:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties_Subnet:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations_Properties:
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ApplicationGatewayIpconfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_Delegations_Properties:
+    # The action(s) this rule or policy applies. (AI-inferred)
     actions: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The name of the Azure service this configuration applies to or connects with. (AI-inferred)
     service_name: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_Delegations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties_Subnet:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles_Properties:
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurationProfiles:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_ExtendedLocation:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DdosSettings:
+    # A reference to a custom DDoS protection policy to apply, overriding the subscription's own default DDoS policy. (AI-inferred)
     ddos_custom_policy: Any = None
+    # A reference to the DDoS Protection Plan covering this virtual network. (AI-inferred)
     ddos_protection_plan: Any = None
+    # Whether DDoS protection for this resource is `Enabled`, `Disabled`, or inherits from the containing virtual network. (AI-inferred)
     protection_mode: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_DnsSettings:
+    # The DNS label whose concatenation with the region's own DNS zone forms this public IP address's fully qualified domain name. (AI-inferred)
     domain_name_label: Any = None
+    # How uniquely `domain_name_label` must be scoped -- e.g. tenant-wide or subscription-wide -- when generating this address's own FQDN. (AI-inferred)
     domain_name_label_scope: Any = None
+    # The fully qualified domain name assigned to this resource. (AI-inferred)
     fqdn: Any = None
+    # A fully qualified domain name that resolves to this public IP address, creating a matching reverse-DNS (PTR) record. (AI-inferred)
     reverse_fqdn: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpTags:
+    # The identifier of the Microsoft first-party service tag this IP tag is associated with. (AI-inferred)
     first_party_service_tag_id: Any = None
+    # The category this IP tag belongs to, e.g. `FirstPartyUsage`. (AI-inferred)
     ip_tag_type: Any = None
+    # The literal tag value. (AI-inferred)
     tag: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway_Properties:
+    # How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
     idle_timeout_in_minutes: Any = None
+    # Whether NAT64 (IPv6-to-IPv4 translation) is enabled for this configuration. (AI-inferred)
     nat64: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The IPv4 Public IP Address resources associated with this configuration. (AI-inferred)
     public_ip_addresses: Any = None
+    # The IPv6 Public IP Address resources associated with this configuration. (AI-inferred)
     public_ip_addresses_v6: Any = None
+    # The IPv4 Public IP Prefix resources associated with this configuration. (AI-inferred)
     public_ip_prefixes: Any = None
+    # The IPv6 Public IP Prefix resources associated with this configuration. (AI-inferred)
     public_ip_prefixes_v6: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
+    # A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
     service_gateway: Any = None
+    # A reference to the virtual network this resource is sourced from. (AI-inferred)
     source_virtual_network: Any = None
+    # The subnets belonging to this virtual network or gateway. (AI-inferred)
     subnets: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway_Sku:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_NatGateway:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The pricing tier and capacity this resource is provisioned at. (AI-inferred)
     sku: Any = None
+    # The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
     zones: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Properties:
+    # DDoS protection configuration for this public IP or virtual network. (AI-inferred)
     ddos_settings: Any = None
+    # What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred)
     delete_option: Any = None
+    # DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
     dns_settings: Any = None
+    # How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
     idle_timeout_in_minutes: Any = None
+    # An IP address value. (AI-inferred)
     ip_address: Any = None
+    # A reference to the IP configuration this resource is associated with. (AI-inferred)
     ip_configuration: Any = None
+    # IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred)
     ip_tags: Any = None
+    # A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred)
     linked_public_ipaddress: Any = None
+    # Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
     migration_phase: Any = None
+    # A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
     nat_gateway: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred)
     public_ipaddress_version: Any = None
+    # Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred)
     public_ipallocation_method: Any = None
+    # A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
     public_ipprefix: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
+    # The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred)
     service_public_ipaddress: Any = None
+    # Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred)
     upgraded_to_v2: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress_Sku:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred)
     tier: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties_PublicIpaddress:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
     extended_location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The pricing tier and capacity this resource is provisioned at. (AI-inferred)
     sku: Any = None
+    # The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
     zones: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations_Properties:
+    # The private (internal) IP address assigned to this IP configuration. (AI-inferred)
     private_ipaddress: Any = None
+    # Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
     private_ipallocation_method: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
     public_ipaddress: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpConfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_IpamPoolPrefixAllocations:
+    # Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
     allocated_address_prefixes: Any = None
+    # How many IP addresses to allocate from this pool. (AI-inferred)
     number_of_ip_addresses: Any = None
+    # A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
     pool: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups_Properties:
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties:
+    # Whether this security rule's own match is `Allow`ed or `Deny`ed. (AI-inferred)
     access: Any = None
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
+    # The destination IP address range (CIDR) or tag this rule matches, e.g. `10.0.0.0/24` or `Internet`. (AI-inferred)
     destination_address_prefix: Any = None
+    # The destination IP address ranges (CIDR) this rule matches, when more than one applies. (AI-inferred)
     destination_address_prefixes: Any = None
+    # The Application Security Groups this rule matches traffic destined for, instead of a raw address prefix. (AI-inferred)
     destination_application_security_groups: Any = None
+    # The destination port range this rule matches, e.g. `80` or `1000-2000`. (AI-inferred)
     destination_port_range: Any = None
+    # The destination port ranges this rule matches, when more than one applies. (AI-inferred)
     destination_port_ranges: Any = None
+    # Whether this security rule applies to `Inbound` or `Outbound` traffic. (AI-inferred)
     direction: Any = None
+    # The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
     priority: Any = None
+    # The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
     protocol: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The source IP address range (CIDR) or tag this rule matches, e.g. `10.0.0.0/24` or `Internet`. (AI-inferred)
     source_address_prefix: Any = None
+    # The source IP address ranges (CIDR) this rule matches, when more than one applies. (AI-inferred)
     source_address_prefixes: Any = None
+    # The Application Security Groups this rule matches traffic originating from, instead of a raw address prefix. (AI-inferred)
     source_application_security_groups: Any = None
+    # The source port range this rule matches, e.g. `*` for any port. (AI-inferred)
     source_port_range: Any = None
+    # The source port ranges this rule matches, when more than one applies. (AI-inferred)
     source_port_ranges: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity:
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The user-assigned managed identities associated with this resource, keyed by their own resource ID. (AI-inferred)
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration:
+    # Whether this feature or setting is turned on. (AI-inferred)
     enabled: Any = None
+    # How often, in minutes, Traffic Analytics processes this flow log's own data into insights. (AI-inferred)
     traffic_analytics_interval: Any = None
+    # The Log Analytics workspace ID Traffic Analytics results are sent to. (AI-inferred)
     workspace_id: Any = None
+    # The Azure region the target Log Analytics workspace is deployed in. (AI-inferred)
     workspace_region: Any = None
+    # The full Azure Resource Manager resource ID of the target Log Analytics workspace. (AI-inferred)
     workspace_resource_id: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration:
+    # Traffic Analytics settings (workspace, interval) applied to this Network Watcher flow log. (AI-inferred)
     network_watcher_flow_analytics_configuration: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format:
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The format or schema version this data conforms to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy:
+    # The number of days data is retained before automatic deletion. (AI-inferred)
     days: Any = None
+    # Whether this feature or setting is turned on. (AI-inferred)
     enabled: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties:
+    # Whether this feature or setting is turned on. (AI-inferred)
     enabled: Any = None
+    # Which traffic characteristics this flow log filters on before recording. (AI-inferred)
     enabled_filtering_criteria: Any = None
+    # Configuration for deriving Traffic Analytics insights from this flow log's own recorded data. (AI-inferred)
     flow_analytics_configuration: Any = None
+    # The output format this data is written in. (AI-inferred)
     format: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # Which categories of record this configuration includes. (AI-inferred)
     record_types: Any = None
+    # How long this flow log's own recorded data is kept before automatic deletion. (AI-inferred)
     retention_policy: Any = None
+    # The resource ID of the storage account this flow log's own data is written to. (AI-inferred)
     storage_id: Any = None
+    # Output only. The stable `resource_guid` of the resource this flow log is enabled on. (AI-inferred)
     target_resource_guid: Any = None
+    # The resource ID this configuration applies to, e.g. the NSG or virtual network a flow log is enabled on. (AI-inferred)
     target_resource_id: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_FlowLogs:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings:
+    # Output only. The effective DNS server IP addresses this network interface actually uses, resolved from `dns_servers` or the virtual network's own defaults. (AI-inferred)
     applied_dns_servers: Any = None
+    # Custom DNS server IP addresses this resource uses, overriding the virtual network's own default DNS. (AI-inferred)
     dns_servers: Any = None
+    # A DNS label for this network interface, resolvable from within the virtual network as `{label}.{internal_domain_name_suffix}`. (AI-inferred)
     internal_dns_name_label: Any = None
+    # Output only. The DNS suffix appended to `internal_dns_name_label` to form this network interface's own internal FQDN. (AI-inferred)
     internal_domain_name_suffix: Any = None
+    # Output only. This network interface's own resolvable internal fully qualified domain name. (AI-inferred)
     internal_fqdn: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddresses:
+    # The fully qualified domain name assigned to this resource. (AI-inferred)
     fqdn: Any = None
+    # An IP address value. (AI-inferred)
     ip_address: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties:
+    # The backend address(es) (by IP or NIC IP configuration) this pool routes traffic to. (AI-inferred)
     backend_addresses: Any = None
+    # The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred)
     backend_ipconfigurations: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping:
+    # The port on the backend instance this rule forwards matched traffic to. (AI-inferred)
     backend_port: Any = None
+    # The external port this load-balancing or NAT rule listens on. (AI-inferred)
     frontend_port: Any = None
+    # The name of the inbound NAT rule this port mapping belongs to. (AI-inferred)
     inbound_nat_rule_name: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties:
+    # An administrative override for this rule's own health-probe-driven forwarding state -- `Up` forces new connections through regardless of probe results, `Down` forces them away. (AI-inferred)
     admin_state: Any = None
+    # Output only. The specific frontend-to-backend port mapping(s) this backend instance received from an inbound NAT pool. (AI-inferred)
     inbound_nat_rules_port_mapping: Any = None
+    # An IP address value. (AI-inferred)
     ip_address: Any = None
+    # A reference to the load balancer's own frontend IP configuration this applies to. (AI-inferred)
     load_balancer_frontend_ipconfiguration: Any = None
+    # A reference to the network interface IP configuration this applies to. (AI-inferred)
     network_interface_ipconfiguration: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
+    # A reference to the virtual network this resource is associated with. (AI-inferred)
     virtual_network: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces:
+    # A unique identifier for this resource or configuration. (AI-inferred)
     identifier: Any = None
+    # A TCP or UDP port number. (AI-inferred)
     port: Any = None
+    # The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
     protocol: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties:
+    # The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred)
     backend_ipconfigurations: Any = None
+    # How long a backend instance stays reachable for existing connections after being marked for removal, before the load balancer stops routing to it entirely. (AI-inferred)
     drain_period_in_seconds: Any = None
+    # The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred)
     inbound_nat_rules: Any = None
+    # The backend address(es) registered directly on the load balancer resource itself, rather than sourced from a NIC's own IP configuration. (AI-inferred)
     load_balancer_backend_addresses: Any = None
+    # The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred)
     load_balancing_rules: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # A reference to the outbound NAT rule associated with this resource. (AI-inferred)
     outbound_rule: Any = None
+    # The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred)
     outbound_rules: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # Whether this backend pool's own membership is synced `Automatic`ally from attached NICs, or managed `Manual`ly via `load_balancer_backend_addresses`. (AI-inferred)
     sync_mode: Any = None
+    # The tunnel endpoint(s) (their own IP addresses and roles) making up this VPN connection, one per active/standby tunnel instance. (AI-inferred)
     tunnel_interfaces: Any = None
+    # A reference to the virtual network this resource is associated with. (AI-inferred)
     virtual_network: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties:
+    # A reference to the backend address pool this rule sends matched traffic to. (AI-inferred)
     backend_address_pool: Any = None
+    # A reference to the backend network interface IP configuration this applies to. (AI-inferred)
     backend_ipconfiguration: Any = None
+    # The port on the backend instance this rule forwards matched traffic to. (AI-inferred)
     backend_port: Any = None
+    # Whether this rule uses Floating IP (Direct Server Return) -- the backend sees the frontend's own IP as the destination, rather than its own. (AI-inferred)
     enable_floating_ip: Any = None
+    # Whether the load balancer sends a TCP reset when a connection is idle-timed-out or the backend becomes unavailable, so the client fails fast instead of hanging. (AI-inferred)
     enable_tcp_reset: Any = None
+    # A reference to the frontend IP configuration this rule listens on. (AI-inferred)
     frontend_ipconfiguration: Any = None
+    # The external port this load-balancing or NAT rule listens on. (AI-inferred)
     frontend_port: Any = None
+    # The last port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred)
     frontend_port_range_end: Any = None
+    # The first port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred)
     frontend_port_range_start: Any = None
+    # How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
     idle_timeout_in_minutes: Any = None
+    # The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
     protocol: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionProperties:
+    # The fully qualified domain name(s) associated with this resource. (AI-inferred)
     fqdns: Any = None
+    # The sub-resource this connection targets on the destination service, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred)
     group_id: Any = None
+    # The name a resource must be created with to participate in a specific availability/failover grouping. (AI-inferred)
     required_member_name: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties:
+    # The private (internal) IP address assigned to this IP configuration. (AI-inferred)
     private_ipaddress: Any = None
+    # Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
     private_ipallocation_method: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
     public_ipaddress: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties:
+    # DDoS protection configuration for this public IP or virtual network. (AI-inferred)
     ddos_settings: Any = None
+    # What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred)
     delete_option: Any = None
+    # DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
     dns_settings: Any = None
+    # How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
     idle_timeout_in_minutes: Any = None
+    # An IP address value. (AI-inferred)
     ip_address: Any = None
+    # A reference to the IP configuration this resource is associated with. (AI-inferred)
     ip_configuration: Any = None
+    # IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred)
     ip_tags: Any = None
+    # A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred)
     linked_public_ipaddress: Any = None
+    # Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
     migration_phase: Any = None
+    # A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
     nat_gateway: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred)
     public_ipaddress_version: Any = None
+    # Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred)
     public_ipallocation_method: Any = None
+    # A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
     public_ipprefix: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
+    # The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred)
     service_public_ipaddress: Any = None
+    # Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred)
     upgraded_to_v2: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
     extended_location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The pricing tier and capacity this resource is provisioned at. (AI-inferred)
     sku: Any = None
+    # The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
     zones: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_DdosSettings:
+    # A reference to a custom DDoS protection policy to apply, overriding the subscription's own default DDoS policy. (AI-inferred)
     ddos_custom_policy: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
     extended_location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The pricing tier and capacity this resource is provisioned at. (AI-inferred)
     sku: Any = None
+    # The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
     zones: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties:
+    # The private (internal) IP address assigned to this IP configuration. (AI-inferred)
     private_ipaddress: Any = None
+    # Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
     private_ipallocation_method: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
     public_ipaddress: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties:
+    # DDoS protection configuration for this public IP or virtual network. (AI-inferred)
     ddos_settings: Any = None
+    # What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred)
     delete_option: Any = None
+    # DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
     dns_settings: Any = None
+    # How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
     idle_timeout_in_minutes: Any = None
+    # An IP address value. (AI-inferred)
     ip_address: Any = None
+    # A reference to the IP configuration this resource is associated with. (AI-inferred)
     ip_configuration: Any = None
+    # IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred)
     ip_tags: Any = None
+    # A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred)
     linked_public_ipaddress: Any = None
+    # Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
     migration_phase: Any = None
+    # A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
     nat_gateway: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred)
     public_ipaddress_version: Any = None
+    # Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred)
     public_ipallocation_method: Any = None
+    # A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
     public_ipprefix: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
+    # The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred)
     service_public_ipaddress: Any = None
+    # Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred)
     upgraded_to_v2: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
     extended_location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The pricing tier and capacity this resource is provisioned at. (AI-inferred)
     sku: Any = None
+    # The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
     zones: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties:
+    # DDoS protection configuration for this public IP or virtual network. (AI-inferred)
     ddos_settings: Any = None
+    # Whether this rule tracks individual connections for graceful behavior on backend pool membership changes, rather than treating every packet independently. (AI-inferred)
     enable_connection_tracking: Any = None
+    # A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
     gateway_load_balancer: Any = None
+    # A range of ports reserved on the load balancer's own frontend, auto-allocated one-to-one to backend instances for inbound NAT (typically used by a scale set). (AI-inferred)
     inbound_nat_pools: Any = None
+    # The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred)
     inbound_nat_rules: Any = None
+    # The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred)
     load_balancing_rules: Any = None
+    # The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred)
     outbound_rules: Any = None
+    # The private (internal) IP address assigned to this IP configuration. (AI-inferred)
     private_ipaddress: Any = None
+    # Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
     private_ipaddress_version: Any = None
+    # Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
     private_ipallocation_method: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
     public_ipaddress: Any = None
+    # A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
     public_ipprefix: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
     zones: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations_Properties:
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred)
     virtual_network_tap: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties:
+    # The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
     destination_load_balancer_front_end_ipconfiguration: Any = None
+    # The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
     destination_network_interface_ipconfiguration: Any = None
+    # The port this NAT rule forwards matched traffic to. (AI-inferred)
     destination_port: Any = None
+    # The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred)
     network_interface_tap_configurations: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties:
+    # The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
     application_gateway_backend_address_pools: Any = None
+    # The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
     application_security_groups: Any = None
+    # A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
     gateway_load_balancer: Any = None
+    # The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
     load_balancer_backend_address_pools: Any = None
+    # The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred)
     load_balancer_inbound_nat_rules: Any = None
+    # Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
     primary: Any = None
+    # The private (internal) IP address assigned to this IP configuration. (AI-inferred)
     private_ipaddress: Any = None
+    # The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred)
     private_ipaddress_prefix_length: Any = None
+    # Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
     private_ipaddress_version: Any = None
+    # Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
     private_ipallocation_method: Any = None
+    # The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred)
     private_link_connection_properties: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
     public_ipaddress: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
+    # The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred)
     virtual_network_taps: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs:
+    # The fully qualified domain name assigned to this resource. (AI-inferred)
     fqdn: Any = None
+    # The IP address(es) associated with this resource. (AI-inferred)
     ip_addresses: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties:
+    # The sub-resource this connection targets on the destination service, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred)
     group_id: Any = None
+    # The name identifying this member within its own containing group or set. (AI-inferred)
     member_name: Any = None
+    # The private (internal) IP address assigned to this IP configuration. (AI-inferred)
     private_ipaddress: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the Private Link service owner still needs to take on this connection beyond the basic approve/reject/disconnect workflow, or `None` if nothing further is needed. (AI-inferred)
     actions_required: Any = None
+    # A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
     description: Any = None
+    # The current status of this connection, resource, or operation, e.g. `Approved`, `Pending`, `Rejected`, or `Disconnected`. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties:
+    # The sub-resource(s) of the target service this private endpoint connects to, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred)
     group_ids: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The resource ID of the Private Link service (or Private Link-enabled PaaS resource) this private endpoint connects to. (AI-inferred)
     private_link_service_id: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A message the requester attaches when asking to connect to this Private Link-enabled or ExpressRoute-peered resource, shown to the approver alongside the connection request. (AI-inferred)
     request_message: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -564,440 +900,731 @@ class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSec
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties:
+    # The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
     application_security_groups: Any = None
+    # The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred)
     billing_sku: Any = None
+    # DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred)
     custom_dns_configs: Any = None
+    # A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred)
     custom_network_interface_name: Any = None
+    # The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
     ip_configurations: Any = None
+    # Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred)
     ip_version_type: Any = None
+    # Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred)
     manual_private_link_service_connections: Any = None
+    # The network interface(s) attached to this resource. (AI-inferred)
     network_interfaces: Any = None
+    # The Private Link service connection(s) this private endpoint establishes. (AI-inferred)
     private_link_service_connections: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
     extended_location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval:
+    # The subscription ID(s) this auto-approval or visibility rule applies to. (AI-inferred)
     subscriptions: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties:
+    # Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
     primary: Any = None
+    # The private (internal) IP address assigned to this IP configuration. (AI-inferred)
     private_ipaddress: Any = None
+    # Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
     private_ipaddress_version: Any = None
+    # Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
     private_ipallocation_method: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties:
+    # Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred)
     link_identifier: Any = None
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred)
     private_endpoint_location: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    # Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
     access_mode: Any = None
+    # Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
     alias: Any = None
+    # The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
     auto_approval: Any = None
+    # The IP address this NAT rule forwards matched traffic to. (AI-inferred)
     destination_ipaddress: Any = None
+    # Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
     enable_proxy_protocol: Any = None
+    # The fully qualified domain name(s) associated with this resource. (AI-inferred)
     fqdns: Any = None
+    # The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
     ip_configurations: Any = None
+    # The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
     load_balancer_frontend_ip_configurations: Any = None
+    # The network interface(s) attached to this resource. (AI-inferred)
     network_interfaces: Any = None
+    # Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
     private_endpoint_connections: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
     visibility: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
     extended_location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools_Properties:
+    # The backend address(es) (by IP or NIC IP configuration) this pool routes traffic to. (AI-inferred)
     backend_addresses: Any = None
+    # The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred)
     backend_ipconfigurations: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools_Properties:
+    # The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred)
     backend_ipconfigurations: Any = None
+    # How long a backend instance stays reachable for existing connections after being marked for removal, before the load balancer stops routing to it entirely. (AI-inferred)
     drain_period_in_seconds: Any = None
+    # The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred)
     inbound_nat_rules: Any = None
+    # The backend address(es) registered directly on the load balancer resource itself, rather than sourced from a NIC's own IP configuration. (AI-inferred)
     load_balancer_backend_addresses: Any = None
+    # The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred)
     load_balancing_rules: Any = None
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # A reference to the outbound NAT rule associated with this resource. (AI-inferred)
     outbound_rule: Any = None
+    # The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred)
     outbound_rules: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # Whether this backend pool's own membership is synced `Automatic`ally from attached NICs, or managed `Manual`ly via `load_balancer_backend_addresses`. (AI-inferred)
     sync_mode: Any = None
+    # The tunnel endpoint(s) (their own IP addresses and roles) making up this VPN connection, one per active/standby tunnel instance. (AI-inferred)
     tunnel_interfaces: Any = None
+    # A reference to the virtual network this resource is associated with. (AI-inferred)
     virtual_network: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules_Properties:
+    # A reference to the backend address pool this rule sends matched traffic to. (AI-inferred)
     backend_address_pool: Any = None
+    # A reference to the backend network interface IP configuration this applies to. (AI-inferred)
     backend_ipconfiguration: Any = None
+    # The port on the backend instance this rule forwards matched traffic to. (AI-inferred)
     backend_port: Any = None
+    # Whether this rule uses Floating IP (Direct Server Return) -- the backend sees the frontend's own IP as the destination, rather than its own. (AI-inferred)
     enable_floating_ip: Any = None
+    # Whether the load balancer sends a TCP reset when a connection is idle-timed-out or the backend becomes unavailable, so the client fails fast instead of hanging. (AI-inferred)
     enable_tcp_reset: Any = None
+    # A reference to the frontend IP configuration this rule listens on. (AI-inferred)
     frontend_ipconfiguration: Any = None
+    # The external port this load-balancing or NAT rule listens on. (AI-inferred)
     frontend_port: Any = None
+    # The last port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred)
     frontend_port_range_end: Any = None
+    # The first port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred)
     frontend_port_range_start: Any = None
+    # How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
     idle_timeout_in_minutes: Any = None
+    # The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
     protocol: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties:
+    # The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
     application_gateway_backend_address_pools: Any = None
+    # The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
     application_security_groups: Any = None
+    # A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
     gateway_load_balancer: Any = None
+    # The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
     load_balancer_backend_address_pools: Any = None
+    # The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred)
     load_balancer_inbound_nat_rules: Any = None
+    # Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
     primary: Any = None
+    # The private (internal) IP address assigned to this IP configuration. (AI-inferred)
     private_ipaddress: Any = None
+    # The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred)
     private_ipaddress_prefix_length: Any = None
+    # Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
     private_ipaddress_version: Any = None
+    # Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
     private_ipallocation_method: Any = None
+    # The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred)
     private_link_connection_properties: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
     public_ipaddress: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
+    # The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred)
     virtual_network_taps: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties:
+    # The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
     destination_load_balancer_front_end_ipconfiguration: Any = None
+    # The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
     destination_network_interface_ipconfiguration: Any = None
+    # The port this NAT rule forwards matched traffic to. (AI-inferred)
     destination_port: Any = None
+    # The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred)
     network_interface_tap_configurations: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties:
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred)
     virtual_network_tap: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties:
+    # The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
     auxiliary_mode: Any = None
+    # The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
     auxiliary_sku: Any = None
+    # Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
     default_outbound_connectivity_enabled: Any = None
+    # Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
     disable_tcp_state_tracking: Any = None
+    # DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
     dns_settings: Any = None
+    # A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
     dscp_configuration: Any = None
+    # Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
     enable_accelerated_networking: Any = None
+    # Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
     enable_ipforwarding: Any = None
+    # Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
     hosted_workloads: Any = None
+    # The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
     ip_configurations: Any = None
+    # Output only. The MAC address assigned to this network interface. (AI-inferred)
     mac_address: Any = None
+    # Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
     migration_phase: Any = None
+    # A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
     network_security_group: Any = None
+    # Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
     nic_type: Any = None
+    # Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
     primary: Any = None
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
     private_link_service: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
+    # The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
     tap_configurations: Any = None
+    # A reference to the virtual machine this network interface is attached to. (AI-inferred)
     virtual_machine: Any = None
+    # Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
     vnet_encryption_supported: Any = None
+    # The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
     workload_type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
     extended_location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup_Properties:
+    # Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred)
     default_security_rules: Any = None
+    # The flow log(s) configured on this Network Security Group. (AI-inferred)
     flow_logs: Any = None
+    # Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred)
     flush_connection: Any = None
+    # The network interface(s) attached to this resource. (AI-inferred)
     network_interfaces: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
+    # The custom (non-default) security rules on this Network Security Group. (AI-inferred)
     security_rules: Any = None
+    # The subnets belonging to this virtual network or gateway. (AI-inferred)
     subnets: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_NetworkSecurityGroup:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties:
+    # Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred)
     default_security_rules: Any = None
+    # The flow log(s) configured on this Network Security Group. (AI-inferred)
     flow_logs: Any = None
+    # Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred)
     flush_connection: Any = None
+    # The network interface(s) attached to this resource. (AI-inferred)
     network_interfaces: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
+    # The custom (non-default) security rules on this Network Security Group. (AI-inferred)
     security_rules: Any = None
+    # The subnets belonging to this virtual network or gateway. (AI-inferred)
     subnets: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties:
+    # Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred)
     link_identifier: Any = None
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred)
     private_endpoint_location: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties:
+    # Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
     access_mode: Any = None
+    # Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
     alias: Any = None
+    # The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
     auto_approval: Any = None
+    # The IP address this NAT rule forwards matched traffic to. (AI-inferred)
     destination_ipaddress: Any = None
+    # Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
     enable_proxy_protocol: Any = None
+    # The fully qualified domain name(s) associated with this resource. (AI-inferred)
     fqdns: Any = None
+    # The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
     ip_configurations: Any = None
+    # The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
     load_balancer_frontend_ip_configurations: Any = None
+    # The network interface(s) attached to this resource. (AI-inferred)
     network_interfaces: Any = None
+    # Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
     private_endpoint_connections: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
     visibility: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
     extended_location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties:
+    # The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
     auxiliary_mode: Any = None
+    # The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
     auxiliary_sku: Any = None
+    # Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
     default_outbound_connectivity_enabled: Any = None
+    # Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
     disable_tcp_state_tracking: Any = None
+    # DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
     dns_settings: Any = None
+    # A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
     dscp_configuration: Any = None
+    # Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
     enable_accelerated_networking: Any = None
+    # Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
     enable_ipforwarding: Any = None
+    # Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
     hosted_workloads: Any = None
+    # The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
     ip_configurations: Any = None
+    # Output only. The MAC address assigned to this network interface. (AI-inferred)
     mac_address: Any = None
+    # Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
     migration_phase: Any = None
+    # A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
     network_security_group: Any = None
+    # Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
     nic_type: Any = None
+    # Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
     primary: Any = None
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
     private_link_service: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
+    # The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
     tap_configurations: Any = None
+    # A reference to the virtual machine this network interface is attached to. (AI-inferred)
     virtual_machine: Any = None
+    # Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
     vnet_encryption_supported: Any = None
+    # The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
     workload_type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties_NetworkInterfaces:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
     extended_location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints_Properties:
+    # The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
     application_security_groups: Any = None
+    # The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred)
     billing_sku: Any = None
+    # DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred)
     custom_dns_configs: Any = None
+    # A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred)
     custom_network_interface_name: Any = None
+    # The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
     ip_configurations: Any = None
+    # Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred)
     ip_version_type: Any = None
+    # Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred)
     manual_private_link_service_connections: Any = None
+    # The network interface(s) attached to this resource. (AI-inferred)
     network_interfaces: Any = None
+    # The Private Link service connection(s) this private endpoint establishes. (AI-inferred)
     private_link_service_connections: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_PrivateEndpoints:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
     extended_location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ResourceNavigationLinks_Properties:
+    # A reference to a related resource. (AI-inferred)
     link: Any = None
+    # The Azure resource type of the resource `link` points to. (AI-inferred)
     linked_resource_type: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ResourceNavigationLinks:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties_NextHop:
+    # Output only. The effective next-hop IP address(es) actually in use for this route. (AI-inferred)
     next_hop_ip_addresses: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties:
+    # An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
     address_prefix: Any = None
+    # Whether a static route on this route table overrides the equivalent route learned via BGP. (AI-inferred)
     has_bgp_override: Any = None
+    # Where traffic matching this route is sent next. (AI-inferred)
     next_hop: Any = None
+    # The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
     next_hop_ip_address: Any = None
+    # The kind of next hop this route uses, e.g. `VirtualAppliance`, `VnetLocal`, `Internet`, or `None`. (AI-inferred)
     next_hop_type: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties_Routes:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable_Properties:
+    # Whether routes learned via BGP are prevented from propagating into this route table. (AI-inferred)
     disable_bgp_route_propagation: Any = None
+    # Whether this route is withheld from propagating to a peered virtual network. (AI-inferred)
     disable_peering_route: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
+    # The custom routes making up this route table. (AI-inferred)
     routes: Any = None
+    # The subnets belonging to this virtual network or gateway. (AI-inferred)
     subnets: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_RouteTable:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceAssociationLinks_Properties:
+    # Whether this resource can be deleted directly, or is protected because something else still depends on it. (AI-inferred)
     allow_delete: Any = None
+    # A reference to a related resource. (AI-inferred)
     link: Any = None
+    # The Azure resource type of the resource `link` points to. (AI-inferred)
     linked_resource_type: Any = None
+    # The Azure region(s) this configuration or availability applies to. (AI-inferred)
     locations: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceAssociationLinks:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpointPolicies_Properties:
+    # Service endpoint policies that apply to this subnet only in specific contexts (e.g. a specific service alias), layered on top of its own regular `service_endpoint_policies`. (AI-inferred)
     contextual_service_endpoint_policies: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
     resource_guid: Any = None
+    # The alias identifying the specific PaaS service resource a service endpoint policy definition grants access to. (AI-inferred)
     service_alias: Any = None
+    # The individual rules making up a service endpoint policy, each granting subnet traffic access to a specific Azure service resource. (AI-inferred)
     service_endpoint_policy_definitions: Any = None
+    # The subnets belonging to this virtual network or gateway. (AI-inferred)
     subnets: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpointPolicies:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties_ServiceEndpoints:
+    # The Azure region(s) this configuration or availability applies to. (AI-inferred)
     locations: Any = None
+    # An identifier for the network this configuration is scoped to. (AI-inferred)
     network_identifier: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # The Azure service (e.g. a specific Private Link-enabled PaaS service) this configuration applies to. (AI-inferred)
     service: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets_Properties:
+    # An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
     address_prefix: Any = None
+    # The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
     address_prefixes: Any = None
+    # The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred)
     application_gateway_ipconfigurations: Any = None
+    # Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
     default_outbound_access: Any = None
+    # Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred)
     delegations: Any = None
+    # References to IP address pool allocations reserved for this subnet. (AI-inferred)
     ip_allocations: Any = None
+    # Reusable IP configuration templates associated with this resource. (AI-inferred)
     ip_configuration_profiles: Any = None
+    # The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
     ip_configurations: Any = None
+    # Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
     ipam_pool_prefix_allocations: Any = None
+    # A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
     nat_gateway: Any = None
+    # A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
     network_security_group: Any = None
+    # Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred)
     private_endpoint_network_policies: Any = None
+    # The Private Endpoint resources deployed in this subnet. (AI-inferred)
     private_endpoints: Any = None
+    # Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred)
     private_link_service_network_policies: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred)
     purpose: Any = None
+    # Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred)
     resource_navigation_links: Any = None
+    # A reference to the route table associated with this subnet. (AI-inferred)
     route_table: Any = None
+    # Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred)
     service_association_links: Any = None
+    # Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred)
     service_endpoint_policies: Any = None
+    # The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred)
     service_endpoints: Any = None
+    # A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
     service_gateway: Any = None
+    # How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred)
     sharing_scope: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicy_Properties_Subnets:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

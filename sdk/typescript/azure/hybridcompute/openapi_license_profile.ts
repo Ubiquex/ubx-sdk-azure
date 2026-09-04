@@ -7,7 +7,9 @@ export interface OpenapiLicenseProfile_Properties_EsuProfile {
 }
 
 export interface OpenapiLicenseProfile_Properties_ProductProfile_Error_AdditionalInfo {
+  /** Additional detail about this result. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -15,10 +17,15 @@ export interface OpenapiLicenseProfile_Properties_ProductProfile_Error_Details_D
 }
 
 export interface OpenapiLicenseProfile_Properties_ProductProfile_Error_Details {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: OpenapiLicenseProfile_Properties_ProductProfile_Error_AdditionalInfo[] | Computed<OpenapiLicenseProfile_Properties_ProductProfile_Error_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: OpenapiLicenseProfile_Properties_ProductProfile_Error_Details_Details[] | Computed<OpenapiLicenseProfile_Properties_ProductProfile_Error_Details_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
@@ -36,12 +43,19 @@ export interface OpenapiLicenseProfile_Properties_ProductProfile_Error {
 }
 
 export interface OpenapiLicenseProfile_Properties_ProductProfile_ProductFeatures {
+  /** When billing for this product feature ends. (AI-inferred) */
   billingEndDate?: string | Computed<string>;
+  /** When billing for this product feature starts. (AI-inferred) */
   billingStartDate?: string | Computed<string>;
+  /** When this machine was disenrolled from this product feature. (AI-inferred) */
   disenrollmentDate?: string | Computed<string>;
+  /** When this machine was enrolled in this product feature. (AI-inferred) */
   enrollmentDate?: string | Computed<string>;
+  /** Detail about an error that occurred. (AI-inferred) */
   error?: OpenapiLicenseProfile_Properties_ProductProfile_Error | Computed<OpenapiLicenseProfile_Properties_ProductProfile_Error>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** This product feature's own current subscription status. (AI-inferred) */
   subscriptionStatus?: string | Computed<string>;
 }
 
@@ -76,6 +90,7 @@ export interface OpenapiLicenseProfile_Properties {
   productProfile?: OpenapiLicenseProfile_Properties_ProductProfile | Computed<OpenapiLicenseProfile_Properties_ProductProfile>;
   /** The provisioning state, which only appears in the response. */
   provisioningState?: string | Computed<string>;
+  /** This machine's Software Assurance/subscription benefit status, used to determine Extended Security Update eligibility. (AI-inferred) */
   softwareAssurance?: OpenapiLicenseProfile_Properties_SoftwareAssurance | Computed<OpenapiLicenseProfile_Properties_SoftwareAssurance>;
 }
 

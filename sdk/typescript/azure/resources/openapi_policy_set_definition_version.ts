@@ -2,39 +2,61 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiPolicySetDefinitionVersion_Properties_Parameters_Metadata {
+  /** Whether the identity performing this deployment is automatically granted permissions needed by its own template resources. (AI-inferred) */
   assignPermissions?: boolean | Computed<boolean>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** A UI hint identifying a well-known Azure resource type this parameter's own value should be picked from. (AI-inferred) */
   strongType?: string | Computed<string>;
 }
 
 export interface OpenapiPolicySetDefinitionVersion_Properties_Parameters {
+  /** The set of values permitted for this parameter. (AI-inferred) */
   allowedValues?: unknown[] | Computed<unknown[]>;
+  /** The value used when this parameter is left unset. (AI-inferred) */
   defaultValue?: unknown | Computed<unknown>;
+  /** Additional, free-form metadata associated with this resource. (AI-inferred) */
   metadata?: OpenapiPolicySetDefinitionVersion_Properties_Parameters_Metadata | Computed<OpenapiPolicySetDefinitionVersion_Properties_Parameters_Metadata>;
+  /** The JSON schema defining this parameter's own permitted value(s). (AI-inferred) */
   schema?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitionGroups {
+  /** A reference to additional, externally hosted metadata for this policy. (AI-inferred) */
   additionalMetadataId?: string | Computed<string>;
+  /** The category this belongs to. (AI-inferred) */
   category?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_Parameters {
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 
 export interface OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions {
+  /** The specific version of this policy definition. (AI-inferred) */
   definitionVersion?: string | Computed<string>;
+  /** The policy definition version actually in effect, after resolving any version range. (AI-inferred) */
   effectiveDefinitionVersion?: string | Computed<string>;
+  /** The policy definition group(s) this reference belongs to. (AI-inferred) */
   groupNames?: string[] | Computed<string[]>;
+  /** The most recent available version of this policy definition. (AI-inferred) */
   latestDefinitionVersion?: string | Computed<string>;
+  /** The parameter(s) making up this definition. (AI-inferred) */
   parameters?: Record<string, OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_Parameters> | Computed<Record<string, OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_Parameters>>;
+  /** A reference to the policy definition this applies to. (AI-inferred) */
   policyDefinitionId?: string | Computed<string>;
+  /** A reference to a specific policy definition within this initiative. (AI-inferred) */
   policyDefinitionReferenceId?: string | Computed<string>;
 }
 

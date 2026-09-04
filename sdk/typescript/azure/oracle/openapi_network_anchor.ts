@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiNetworkAnchor_Properties_DnsForwardingRules {
+  /** The domain name(s) associated with this resource. (AI-inferred) */
   domainNames?: string | Computed<string>;
+  /** The IP address traffic is forwarded to. (AI-inferred) */
   forwardingIpAddress?: string | Computed<string>;
 }
 

@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties_RuleCollections:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
     priority: Any = None
+    # The category of rule collection this represents. (AI-inferred)
     rule_collection_type: Any = None
 
 @dataclasses.dataclass

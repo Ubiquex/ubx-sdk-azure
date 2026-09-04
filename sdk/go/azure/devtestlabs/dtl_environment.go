@@ -4,7 +4,9 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlEnvironment_Properties_DeploymentProperties_Parameters struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 

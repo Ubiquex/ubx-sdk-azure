@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DbOpenapiSqlContainerGetResults_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -23,15 +25,20 @@ export interface DbOpenapiSqlContainerGetResults_Properties_Options_AutoscaleSet
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Options {
+  /** Configuration for automatically scaling throughput within a defined maximum. (AI-inferred) */
   autoscaleSettings?: DbOpenapiSqlContainerGetResults_Properties_Options_AutoscaleSettings | Computed<DbOpenapiSqlContainerGetResults_Properties_Options_AutoscaleSettings>;
   /** Request Units per second. For example, "throughput": 10000. */
   throughput?: number | Computed<number>;
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource_ClientEncryptionPolicy_IncludedPaths {
+  /** A reference to the client-side encryption key used to encrypt this field. (AI-inferred) */
   clientEncryptionKeyId?: string | Computed<string>;
+  /** The algorithm used to encrypt this field. (AI-inferred) */
   encryptionAlgorithm?: string | Computed<string>;
+  /** Whether this field is encrypted deterministically or randomized. (AI-inferred) */
   encryptionType?: string | Computed<string>;
+  /** The JSON path this rule applies to. (AI-inferred) */
   path?: string | Computed<string>;
 }
 
@@ -43,7 +50,9 @@ export interface DbOpenapiSqlContainerGetResults_Properties_Resource_ClientEncry
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource_ComputedProperties {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The query text or expression. (AI-inferred) */
   query?: string | Computed<string>;
 }
 
@@ -57,7 +66,9 @@ export interface DbOpenapiSqlContainerGetResults_Properties_Resource_ConflictRes
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource_FullTextPolicy_FullTextPaths {
+  /** The language this full-text index is analyzed for. (AI-inferred) */
   language?: string | Computed<string>;
+  /** The JSON path this rule applies to. (AI-inferred) */
   path?: string | Computed<string>;
 }
 
@@ -74,30 +85,43 @@ export interface DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPol
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_ExcludedPaths {
+  /** The JSON path this rule applies to. (AI-inferred) */
   path?: string | Computed<string>;
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_Indexes {
+  /** The data type of this indexed or partitioned value. (AI-inferred) */
   dataType?: string | Computed<string>;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** The numeric precision retained for this indexed value. (AI-inferred) */
   precision?: number | Computed<number>;
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_IncludedPaths {
+  /** The index(es) defined on this container. (AI-inferred) */
   indexes?: DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_Indexes[] | Computed<DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_Indexes[]>;
+  /** The JSON path this rule applies to. (AI-inferred) */
   path?: string | Computed<string>;
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_SpatialIndexes {
+  /** The JSON path this rule applies to. (AI-inferred) */
   path?: string | Computed<string>;
+  /** The category/categories this applies to. (AI-inferred) */
   types?: string[] | Computed<string[]>;
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_VectorIndexes {
+  /** The size of the candidate list explored when building this vector search index. (AI-inferred) */
   indexingSearchListSize?: number | Computed<number>;
+  /** The JSON path this rule applies to. (AI-inferred) */
   path?: string | Computed<string>;
+  /** The number of bytes each vector dimension is quantized to. (AI-inferred) */
   quantizationByteSize?: number | Computed<number>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The field(s) used to shard this vector index for scale-out. (AI-inferred) */
   vectorIndexShardKey?: string[] | Computed<string[]>;
 }
 
@@ -132,12 +156,16 @@ export interface DbOpenapiSqlContainerGetResults_Properties_Resource_PartitionKe
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource_RestoreParameters {
+  /** A reference to the source account this account is restored from. (AI-inferred) */
   restoreSource?: string | Computed<string>;
+  /** The point in time this account is restored to, in UTC. (AI-inferred) */
   restoreTimestampInUtc?: string | Computed<string>;
+  /** Whether time-to-live expiration is disabled on the restored data. (AI-inferred) */
   restoreWithTtlDisabled?: boolean | Computed<boolean>;
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource_UniqueKeyPolicy_UniqueKeys {
+  /** The JSON path(s) this index or policy applies to. (AI-inferred) */
   paths?: string[] | Computed<string[]>;
 }
 
@@ -147,9 +175,13 @@ export interface DbOpenapiSqlContainerGetResults_Properties_Resource_UniqueKeyPo
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource_VectorEmbeddingPolicy_VectorEmbeddings {
+  /** The data type of this indexed or partitioned value. (AI-inferred) */
   dataType?: string | Computed<string>;
+  /** The number of dimensions in this vector. (AI-inferred) */
   dimensions?: number | Computed<number>;
+  /** The function used to measure distance between vectors, e.g. `cosine` or `euclidean`. (AI-inferred) */
   distanceFunction?: string | Computed<string>;
+  /** The JSON path this rule applies to. (AI-inferred) */
   path?: string | Computed<string>;
 }
 

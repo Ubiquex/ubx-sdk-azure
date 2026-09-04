@@ -4,11 +4,16 @@ package compute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ContainerserviceContainerService_Properties_AgentPoolProfiles struct {
-	Count     any
+	// The number of agent node(s) in this pool. (AI-inferred)
+	Count any
+	// The DNS name prefix used to construct this agent pool's own fully qualified domain name. (AI-inferred)
 	DnsPrefix any
-	Fqdn      any
-	Name      any
-	VmSize    any
+	// Output only. The fully qualified domain name assigned to this agent pool. (AI-inferred)
+	Fqdn any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The VM size this agent pool's own nodes are provisioned as. (AI-inferred)
+	VmSize any
 }
 
 type ContainerserviceContainerService_Properties_CustomProfile struct {
@@ -29,6 +34,7 @@ type ContainerserviceContainerService_Properties_DiagnosticsProfile struct {
 }
 
 type ContainerserviceContainerService_Properties_LinuxProfile_Ssh_PublicKeys struct {
+	// The SSH public key data used to authenticate to Linux nodes in this cluster. (AI-inferred)
 	KeyData any
 }
 
@@ -76,7 +82,8 @@ type ContainerserviceContainerService_Properties struct {
 	// Properties of the agent pool.
 	AgentPoolProfiles any
 	// Properties to configure a custom container service cluster.
-	CustomProfile      any
+	CustomProfile any
+	// Configuration for collecting diagnostic data from this container service's own VMs. (AI-inferred)
 	DiagnosticsProfile any
 	// Profile for Linux VMs in the container service cluster.
 	LinuxProfile any

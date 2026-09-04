@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface HciCluster_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -48,24 +50,37 @@ export interface HciCluster_Properties_IsolatedVmAttestationConfiguration {
 }
 
 export interface HciCluster_Properties_LocalAvailabilityZones {
+  /** The name of the local availability zone this applies to. (AI-inferred) */
   localAvailabilityZoneName?: string | Computed<string>;
+  /** The node(s) making up this cluster. (AI-inferred) */
   nodes?: string[] | Computed<string[]>;
 }
 
 export interface HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails_LogCollectionError {
+  /** A machine-readable error code. (AI-inferred) */
   errorCode?: string | Computed<string>;
+  /** A human-readable description of the error. (AI-inferred) */
   errorMessage?: string | Computed<string>;
 }
 
 export interface HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails {
+  /** An identifier correlating related events or requests together. (AI-inferred) */
   correlationId?: string | Computed<string>;
+  /** When log collection for this range ended. (AI-inferred) */
   endTimeCollected?: string | Computed<string>;
+  /** Detail about an error encountered during log collection. (AI-inferred) */
   logCollectionError?: HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails_LogCollectionError | Computed<HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails_LogCollectionError>;
+  /** The kind of log collection job this represents. (AI-inferred) */
   logCollectionJobType?: string | Computed<string>;
+  /** The current status of this log collection job. (AI-inferred) */
   logCollectionStatus?: string | Computed<string>;
+  /** When the collected log range ends. (AI-inferred) */
   logEndTime?: string | Computed<string>;
+  /** The size of the collected log data. (AI-inferred) */
   logSize?: number | Computed<number>;
+  /** When the collected log range starts. (AI-inferred) */
   logStartTime?: string | Computed<string>;
+  /** When this diagnostic data was collected. (AI-inferred) */
   timeCollected?: string | Computed<string>;
 }
 
@@ -74,27 +89,41 @@ export interface HciCluster_Properties_LogCollectionProperties {
   fromDate?: string | Computed<string>;
   /** Recent DateTimeStamp where logs are successfully generated */
   lastLogGenerated?: string | Computed<string>;
+  /** Detail about this log collection session. (AI-inferred) */
   logCollectionSessionDetails?: HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails[] | Computed<HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails[]>;
   /** To DateTimeStamp till when logs need to be connected */
   toDate?: string | Computed<string>;
 }
 
 export interface HciCluster_Properties_RemoteSupportProperties_RemoteSupportNodeSettings {
+  /** A reference to the Azure Arc resource this applies to. (AI-inferred) */
   arcResourceId?: string | Computed<string>;
+  /** A human-readable description of an error encountered while connecting. (AI-inferred) */
   connectionErrorMessage?: string | Computed<string>;
+  /** The current connectivity status of this resource. (AI-inferred) */
   connectionStatus?: string | Computed<string>;
+  /** When this resource was created. (AI-inferred) */
   createdAt?: string | Computed<string>;
+  /** The current lifecycle state of this resource. (AI-inferred) */
   state?: string | Computed<string>;
+  /** The file share path this remote support session's own transcript is written to. (AI-inferred) */
   transcriptLocation?: string | Computed<string>;
+  /** When this resource was last updated. (AI-inferred) */
   updatedAt?: string | Computed<string>;
 }
 
 export interface HciCluster_Properties_RemoteSupportProperties_RemoteSupportSessionDetails {
+  /** Whether access through this resource is read-only or read-write. (AI-inferred) */
   accessLevel?: string | Computed<string>;
+  /** How long this operation took or is expected to take. (AI-inferred) */
   duration?: number | Computed<number>;
+  /** The name of this cluster node. (AI-inferred) */
   nodeName?: string | Computed<string>;
+  /** When this session ended. (AI-inferred) */
   sessionEndTime?: string | Computed<string>;
+  /** When this session started. (AI-inferred) */
   sessionStartTime?: string | Computed<string>;
+  /** The file share path this remote support session's own transcript is written to. (AI-inferred) */
   transcriptLocation?: string | Computed<string>;
 }
 
@@ -103,29 +132,46 @@ export interface HciCluster_Properties_RemoteSupportProperties {
   accessLevel?: string | Computed<string>;
   /** Expiration DateTimeStamp when Remote Support Access will be expired */
   expirationTimeStamp?: string | Computed<string>;
+  /** Per-node configuration for the remote support connection. (AI-inferred) */
   remoteSupportNodeSettings?: HciCluster_Properties_RemoteSupportProperties_RemoteSupportNodeSettings[] | Computed<HciCluster_Properties_RemoteSupportProperties_RemoteSupportNodeSettings[]>;
   /** Remote Support Provisioning State */
   remoteSupportProvisioningState?: string | Computed<string>;
+  /** Detail about an active or past remote support session. (AI-inferred) */
   remoteSupportSessionDetails?: HciCluster_Properties_RemoteSupportProperties_RemoteSupportSessionDetails[] | Computed<HciCluster_Properties_RemoteSupportProperties_RemoteSupportSessionDetails[]>;
   /** Remote Support Type for cluster */
   remoteSupportType?: string | Computed<string>;
 }
 
 export interface HciCluster_Properties_ReportedProperties_Nodes {
+  /** The number of CPU core(s) this resource has. (AI-inferred) */
   coreCount?: number | Computed<number>;
+  /** A reference to the Azure Stack HCI resource this applies to. (AI-inferred) */
   ehcResourceId?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: number | Computed<number>;
+  /** When this resource's own license status was last checked. (AI-inferred) */
   lastLicensingTimestamp?: string | Computed<string>;
+  /** The manufacturer of this hardware. (AI-inferred) */
   manufacturer?: string | Computed<string>;
+  /** The amount of memory, in gibibytes. (AI-inferred) */
   memoryInGiB?: number | Computed<number>;
+  /** The hardware model this resource represents. (AI-inferred) */
   model?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The category of node this represents. (AI-inferred) */
   nodeType?: string | Computed<string>;
+  /** Whether this deployment uses OEM activation licensing. (AI-inferred) */
   oemActivation?: string | Computed<string>;
+  /** A human-readable version label for this node's own operating system. (AI-inferred) */
   osDisplayVersion?: string | Computed<string>;
+  /** The name of the operating system running on this node. (AI-inferred) */
   osName?: string | Computed<string>;
+  /** The operating system version running on this node. (AI-inferred) */
   osVersion?: string | Computed<string>;
+  /** The manufacturer-assigned serial number of this hardware. (AI-inferred) */
   serialNumber?: string | Computed<string>;
+  /** The Windows Server subscription edition this cluster is licensed under. (AI-inferred) */
   windowsServerSubscription?: string | Computed<string>;
 }
 
@@ -159,7 +205,9 @@ export interface HciCluster_Properties_ReportedProperties {
 }
 
 export interface HciCluster_Properties_SecretsLocations {
+  /** Where this resource's own secret(s) are stored. (AI-inferred) */
   secretsLocation?: string | Computed<string>;
+  /** The category of secret this represents. (AI-inferred) */
   secretsType?: string | Computed<string>;
 }
 

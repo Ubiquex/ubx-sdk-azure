@@ -5,38 +5,59 @@ export interface AzureBackupJobResource_Properties_ErrorDetails_Details {
 }
 
 export interface AzureBackupJobResource_Properties_ErrorDetails_InnerError {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: Record<string, string> | Computed<Record<string, string>>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A further-nested inner error, when the error chain is more than one level deep. (AI-inferred) */
   embeddedInnerError?: unknown | Computed<unknown>;
 }
 
 export interface AzureBackupJobResource_Properties_ErrorDetails {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: AzureBackupJobResource_Properties_ErrorDetails_Details[] | Computed<AzureBackupJobResource_Properties_ErrorDetails_Details[]>;
+  /** A more specific, nested error underlying this one. (AI-inferred) */
   innerError?: AzureBackupJobResource_Properties_ErrorDetails_InnerError | Computed<AzureBackupJobResource_Properties_ErrorDetails_InnerError>;
+  /** Whether retrying the operation that produced this error might succeed. (AI-inferred) */
   isRetryable?: boolean | Computed<boolean>;
+  /** Whether this error was caused by the caller's own request rather than a service-side failure. (AI-inferred) */
   isUserError?: boolean | Computed<boolean>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Record<string, string> | Computed<Record<string, string>>;
+  /** Suggested step(s) to resolve this error. (AI-inferred) */
   recommendedAction?: string[] | Computed<string[]>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 
 export interface AzureBackupJobResource_Properties_ExtendedInfo_SourceRecoverPoint {
+  /** A reference to the specific recovery point this applies to. (AI-inferred) */
   recoveryPointId?: string | Computed<string>;
+  /** The point in time this recovery point represents. (AI-inferred) */
   recoveryPointTime?: string | Computed<string>;
 }
 
 export interface AzureBackupJobResource_Properties_ExtendedInfo_SubTasks {
+  /** Further detail about this operation. (AI-inferred) */
   additionalDetails?: Record<string, string> | Computed<Record<string, string>>;
+  /** An identifier for this specific task within the job. (AI-inferred) */
   taskId?: number | Computed<number>;
+  /** A human-readable name for this task. (AI-inferred) */
   taskName?: string | Computed<string>;
+  /** This task's own current progress. (AI-inferred) */
   taskProgress?: string | Computed<string>;
+  /** This task's own current status. (AI-inferred) */
   taskStatus?: string | Computed<string>;
 }
 
 export interface AzureBackupJobResource_Properties_ExtendedInfo_WarningDetails {
+  /** The name of the resource this applies to. (AI-inferred) */
   resourceName?: string | Computed<string>;
+  /** A non-fatal warning encountered during this operation. (AI-inferred) */
   warning?: AzureBackupJobResource_Properties_ErrorDetails | Computed<AzureBackupJobResource_Properties_ErrorDetails>;
 }
 
@@ -49,9 +70,11 @@ export interface AzureBackupJobResource_Properties_ExtendedInfo {
   dataTransferredInBytes?: number | Computed<number>;
   /** Destination where restore is done */
   recoveryDestination?: string | Computed<string>;
+  /** A reference to the recovery point this restore operation restores from. (AI-inferred) */
   sourceRecoverPoint?: AzureBackupJobResource_Properties_ExtendedInfo_SourceRecoverPoint | Computed<AzureBackupJobResource_Properties_ExtendedInfo_SourceRecoverPoint>;
   /** List of Sub Tasks of the job */
   subTasks?: AzureBackupJobResource_Properties_ExtendedInfo_SubTasks[] | Computed<AzureBackupJobResource_Properties_ExtendedInfo_SubTasks[]>;
+  /** A reference to the recovery point this restore operation is restoring to. (AI-inferred) */
   targetRecoverPoint?: AzureBackupJobResource_Properties_ExtendedInfo_SourceRecoverPoint | Computed<AzureBackupJobResource_Properties_ExtendedInfo_SourceRecoverPoint>;
   /** A List, detailing the warnings related to the job */
   warningDetails?: AzureBackupJobResource_Properties_ExtendedInfo_WarningDetails[] | Computed<AzureBackupJobResource_Properties_ExtendedInfo_WarningDetails[]>;
@@ -74,6 +97,7 @@ export interface AzureBackupJobResource_Properties {
   dataSourceSetName?: string | Computed<string>;
   /** Type of DataSource */
   dataSourceType: string | Computed<string>;
+  /** The name of the datastore this data is being copied to. (AI-inferred) */
   destinationDataStoreName?: string | Computed<string>;
   /** Total run time of the job. ISO 8601 format. */
   duration?: string | Computed<string>;
@@ -81,6 +105,7 @@ export interface AzureBackupJobResource_Properties {
   endTime?: string | Computed<string>;
   /** A List, detailing the errors related to the job */
   errorDetails?: AzureBackupJobResource_Properties_ErrorDetails[] | Computed<AzureBackupJobResource_Properties_ErrorDetails[]>;
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
   /** Extended Information about the job */
   extendedInfo?: AzureBackupJobResource_Properties_ExtendedInfo | Computed<AzureBackupJobResource_Properties_ExtendedInfo>;
@@ -102,6 +127,7 @@ export interface AzureBackupJobResource_Properties {
   rehydrationPriority?: string | Computed<string>;
   /** It indicates the sub type of operation i.e. in case of Restore it can be ALR/OLR */
   restoreType?: string | Computed<string>;
+  /** The name of the datastore this data is being copied from. (AI-inferred) */
   sourceDataStoreName?: string | Computed<string>;
   /** Resource Group Name of the Datasource */
   sourceResourceGroup: string | Computed<string>;
@@ -120,18 +146,24 @@ export interface AzureBackupJobResource_Properties {
 }
 
 export interface AzureBackupJobResourceConfig {
+  /** A reference to the backup or restore job this applies to. (AI-inferred) */
   jobId: string | Computed<string>;
+  /** A reference to the backup vault this data originates from. (AI-inferred) */
   sourceBackupVaultId: string | Computed<string>;
+  /** The Azure region this data originates from. (AI-inferred) */
   sourceRegion: string | Computed<string>;
   /** path parameter, not part of the API's own resource representation */
   location: string | Computed<string>;
 }
 
 export interface AzureBackupJobResourceAttrs {
+  /** A reference to the backup or restore job this applies to. (AI-inferred) */
   jobId: string;
   /** AzureBackup Job Class */
   properties: AzureBackupJobResource_Properties;
+  /** A reference to the backup vault this data originates from. (AI-inferred) */
   sourceBackupVaultId: string;
+  /** The Azure region this data originates from. (AI-inferred) */
   sourceRegion: string;
   /** path parameter, not part of the API's own resource representation */
   location: string;

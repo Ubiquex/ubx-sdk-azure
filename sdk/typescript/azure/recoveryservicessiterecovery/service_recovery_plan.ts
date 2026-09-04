@@ -11,25 +11,36 @@ export interface ServiceRecoveryPlan_Properties_CurrentScenario {
 }
 
 export interface ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetails {
+  /** The specific subtype this resource is, distinguishing it within its own broader category. (AI-inferred) */
   instanceType?: string | Computed<string>;
 }
 
 export interface ServiceRecoveryPlan_Properties_Groups_EndGroupActions {
+  /** The name of this recovery plan action. (AI-inferred) */
   actionName?: string | Computed<string>;
+  /** Additional, type-specific detail about this task. (AI-inferred) */
   customDetails?: ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetails | Computed<ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetails>;
+  /** The direction(s) (e.g. primary-to-recovery) this operation supports failing over in. (AI-inferred) */
   failoverDirections?: string[] | Computed<string[]>;
+  /** The failover type(s) (e.g. planned, unplanned, test) this operation supports. (AI-inferred) */
   failoverTypes?: string[] | Computed<string[]>;
 }
 
 export interface ServiceRecoveryPlan_Properties_Groups_ReplicationProtectedItems {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** A reference to the virtual machine this applies to. (AI-inferred) */
   virtualMachineId?: string | Computed<string>;
 }
 
 export interface ServiceRecoveryPlan_Properties_Groups {
+  /** The action(s) run at the end of this recovery plan group. (AI-inferred) */
   endGroupActions?: ServiceRecoveryPlan_Properties_Groups_EndGroupActions[] | Computed<ServiceRecoveryPlan_Properties_Groups_EndGroupActions[]>;
+  /** The category of recovery plan group this represents. (AI-inferred) */
   groupType?: string | Computed<string>;
+  /** The protected item(s) this applies to. (AI-inferred) */
   replicationProtectedItems?: ServiceRecoveryPlan_Properties_Groups_ReplicationProtectedItems[] | Computed<ServiceRecoveryPlan_Properties_Groups_ReplicationProtectedItems[]>;
+  /** The action(s) run at the start of this recovery plan group. (AI-inferred) */
   startGroupActions?: ServiceRecoveryPlan_Properties_Groups_EndGroupActions[] | Computed<ServiceRecoveryPlan_Properties_Groups_EndGroupActions[]>;
 }
 

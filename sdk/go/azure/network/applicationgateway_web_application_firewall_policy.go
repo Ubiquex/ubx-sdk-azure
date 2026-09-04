@@ -4,40 +4,57 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewayForContainers struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Identity struct {
-	PrincipalId            any
-	TenantId               any
-	Type                   any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
+	PrincipalId any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The user-assigned managed identities associated with this resource, keyed by their own resource ID. (AI-inferred)
 	UserAssignedIdentities any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AuthenticationCertificates_Properties struct {
-	Data              any
+	// The literal data payload of this field. (AI-inferred)
+	Data any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AuthenticationCertificates struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_AutoscaleConfiguration struct {
+	// The maximum number of instance(s) autoscaling is allowed to scale up to. (AI-inferred)
 	MaxCapacity any
+	// The minimum number of instance(s) autoscaling is allowed to scale down to. (AI-inferred)
 	MinCapacity any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendAddresses struct {
-	Fqdn      any
+	// The fully qualified domain name assigned to this resource. (AI-inferred)
+	Fqdn any
+	// An IP address value. (AI-inferred)
 	IpAddress any
 }
 
@@ -45,2995 +62,5000 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGatewa
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties struct {
-	BackendAddresses        any
+	// The backend address(es) (by IP or NIC IP configuration) this pool routes traffic to. (AI-inferred)
+	BackendAddresses any
+	// The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred)
 	BackendIpconfigurations any
-	ProvisioningState       any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	ResourceGuid      any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping struct {
-	BackendPort        any
-	FrontendPort       any
+	// The port on the backend instance this rule forwards matched traffic to. (AI-inferred)
+	BackendPort any
+	// The external port this load-balancing or NAT rule listens on. (AI-inferred)
+	FrontendPort any
+	// The name of the inbound NAT rule this port mapping belongs to. (AI-inferred)
 	InboundNatRuleName any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties struct {
-	AdminState                          any
-	InboundNatRulesPortMapping          any
-	IpAddress                           any
+	// An administrative override for this rule's own health-probe-driven forwarding state -- `Up` forces new connections through regardless of probe results, `Down` forces them away. (AI-inferred)
+	AdminState any
+	// Output only. The specific frontend-to-backend port mapping(s) this backend instance received from an inbound NAT pool. (AI-inferred)
+	InboundNatRulesPortMapping any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// A reference to the load balancer's own frontend IP configuration this applies to. (AI-inferred)
 	LoadBalancerFrontendIpconfiguration any
-	NetworkInterfaceIpconfiguration     any
-	Subnet                              any
-	VirtualNetwork                      any
+	// A reference to the network interface IP configuration this applies to. (AI-inferred)
+	NetworkInterfaceIpconfiguration any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
+	// A reference to the virtual network this resource is associated with. (AI-inferred)
+	VirtualNetwork any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces struct {
+	// A unique identifier for this resource or configuration. (AI-inferred)
 	Identifier any
-	Port       any
-	Protocol   any
-	Type       any
+	// A TCP or UDP port number. (AI-inferred)
+	Port any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties struct {
-	BackendIpconfigurations      any
-	DrainPeriodInSeconds         any
-	InboundNatRules              any
+	// The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred)
+	BackendIpconfigurations any
+	// How long a backend instance stays reachable for existing connections after being marked for removal, before the load balancer stops routing to it entirely. (AI-inferred)
+	DrainPeriodInSeconds any
+	// The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred)
+	InboundNatRules any
+	// The backend address(es) registered directly on the load balancer resource itself, rather than sourced from a NIC's own IP configuration. (AI-inferred)
 	LoadBalancerBackendAddresses any
-	LoadBalancingRules           any
-	Location                     any
-	OutboundRule                 any
-	OutboundRules                any
-	ProvisioningState            any
-	SyncMode                     any
-	TunnelInterfaces             any
-	VirtualNetwork               any
+	// The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred)
+	LoadBalancingRules any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// A reference to the outbound NAT rule associated with this resource. (AI-inferred)
+	OutboundRule any
+	// The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred)
+	OutboundRules any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Whether this backend pool's own membership is synced `Automatic`ally from attached NICs, or managed `Manual`ly via `load_balancer_backend_addresses`. (AI-inferred)
+	SyncMode any
+	// The tunnel endpoint(s) (their own IP addresses and roles) making up this VPN connection, one per active/standby tunnel instance. (AI-inferred)
+	TunnelInterfaces any
+	// A reference to the virtual network this resource is associated with. (AI-inferred)
+	VirtualNetwork any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules_Properties struct {
-	BackendAddressPool      any
-	BackendIpconfiguration  any
-	BackendPort             any
-	EnableFloatingIp        any
-	EnableTcpReset          any
+	// A reference to the backend address pool this rule sends matched traffic to. (AI-inferred)
+	BackendAddressPool any
+	// A reference to the backend network interface IP configuration this applies to. (AI-inferred)
+	BackendIpconfiguration any
+	// The port on the backend instance this rule forwards matched traffic to. (AI-inferred)
+	BackendPort any
+	// Whether this rule uses Floating IP (Direct Server Return) -- the backend sees the frontend's own IP as the destination, rather than its own. (AI-inferred)
+	EnableFloatingIp any
+	// Whether the load balancer sends a TCP reset when a connection is idle-timed-out or the backend becomes unavailable, so the client fails fast instead of hanging. (AI-inferred)
+	EnableTcpReset any
+	// A reference to the frontend IP configuration this rule listens on. (AI-inferred)
 	FrontendIpconfiguration any
-	FrontendPort            any
-	FrontendPortRangeEnd    any
-	FrontendPortRangeStart  any
-	IdleTimeoutInMinutes    any
-	Protocol                any
-	ProvisioningState       any
+	// The external port this load-balancing or NAT rule listens on. (AI-inferred)
+	FrontendPort any
+	// The last port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred)
+	FrontendPortRangeEnd any
+	// The first port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred)
+	FrontendPortRangeStart any
+	// How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
+	IdleTimeoutInMinutes any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties struct {
-	Fqdns              any
-	GroupId            any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The sub-resource this connection targets on the destination service, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred)
+	GroupId any
+	// The name a resource must be created with to participate in a specific availability/failover grouping. (AI-inferred)
 	RequiredMemberName any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocation struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings struct {
-	DdosCustomPolicy   any
+	// A reference to a custom DDoS protection policy to apply, overriding the subscription's own default DDoS policy. (AI-inferred)
+	DdosCustomPolicy any
+	// A reference to the DDoS Protection Plan covering this virtual network. (AI-inferred)
 	DdosProtectionPlan any
-	ProtectionMode     any
+	// Whether DDoS protection for this resource is `Enabled`, `Disabled`, or inherits from the containing virtual network. (AI-inferred)
+	ProtectionMode any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings struct {
-	DomainNameLabel      any
+	// The DNS label whose concatenation with the region's own DNS zone forms this public IP address's fully qualified domain name. (AI-inferred)
+	DomainNameLabel any
+	// How uniquely `domain_name_label` must be scoped -- e.g. tenant-wide or subscription-wide -- when generating this address's own FQDN. (AI-inferred)
 	DomainNameLabelScope any
-	Fqdn                 any
-	ReverseFqdn          any
+	// The fully qualified domain name assigned to this resource. (AI-inferred)
+	Fqdn any
+	// A fully qualified domain name that resolves to this public IP address, creating a matching reverse-DNS (PTR) record. (AI-inferred)
+	ReverseFqdn any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Subnet            any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_Properties struct {
-	Actions           any
+	// The action(s) this rule or policy applies. (AI-inferred)
+	Actions any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	ServiceName       any
+	// The name of the Azure service this configuration applies to or connects with. (AI-inferred)
+	ServiceName any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Subnet            any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations struct {
+	// Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses      any
-	Pool                     any
+	// How many IP addresses to allocate from this pool. (AI-inferred)
+	NumberOfIpAddresses any
+	// A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
+	Pool any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties struct {
-	Access                               any
-	Description                          any
-	DestinationAddressPrefix             any
-	DestinationAddressPrefixes           any
+	// Whether this security rule's own match is `Allow`ed or `Deny`ed. (AI-inferred)
+	Access any
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
+	Description any
+	// The destination IP address range (CIDR) or tag this rule matches, e.g. `10.0.0.0/24` or `Internet`. (AI-inferred)
+	DestinationAddressPrefix any
+	// The destination IP address ranges (CIDR) this rule matches, when more than one applies. (AI-inferred)
+	DestinationAddressPrefixes any
+	// The Application Security Groups this rule matches traffic destined for, instead of a raw address prefix. (AI-inferred)
 	DestinationApplicationSecurityGroups any
-	DestinationPortRange                 any
-	DestinationPortRanges                any
-	Direction                            any
-	Priority                             any
-	Protocol                             any
-	ProvisioningState                    any
-	SourceAddressPrefix                  any
-	SourceAddressPrefixes                any
-	SourceApplicationSecurityGroups      any
-	SourcePortRange                      any
-	SourcePortRanges                     any
+	// The destination port range this rule matches, e.g. `80` or `1000-2000`. (AI-inferred)
+	DestinationPortRange any
+	// The destination port ranges this rule matches, when more than one applies. (AI-inferred)
+	DestinationPortRanges any
+	// Whether this security rule applies to `Inbound` or `Outbound` traffic. (AI-inferred)
+	Direction any
+	// The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
+	Priority any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The source IP address range (CIDR) or tag this rule matches, e.g. `10.0.0.0/24` or `Internet`. (AI-inferred)
+	SourceAddressPrefix any
+	// The source IP address ranges (CIDR) this rule matches, when more than one applies. (AI-inferred)
+	SourceAddressPrefixes any
+	// The Application Security Groups this rule matches traffic originating from, instead of a raw address prefix. (AI-inferred)
+	SourceApplicationSecurityGroups any
+	// The source port range this rule matches, e.g. `*` for any port. (AI-inferred)
+	SourcePortRange any
+	// The source port ranges this rule matches, when more than one applies. (AI-inferred)
+	SourcePortRanges any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration struct {
-	Enabled                  any
+	// Whether this feature or setting is turned on. (AI-inferred)
+	Enabled any
+	// How often, in minutes, Traffic Analytics processes this flow log's own data into insights. (AI-inferred)
 	TrafficAnalyticsInterval any
-	WorkspaceId              any
-	WorkspaceRegion          any
-	WorkspaceResourceId      any
+	// The Log Analytics workspace ID Traffic Analytics results are sent to. (AI-inferred)
+	WorkspaceId any
+	// The Azure region the target Log Analytics workspace is deployed in. (AI-inferred)
+	WorkspaceRegion any
+	// The full Azure Resource Manager resource ID of the target Log Analytics workspace. (AI-inferred)
+	WorkspaceResourceId any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration struct {
+	// Traffic Analytics settings (workspace, interval) applied to this Network Watcher flow log. (AI-inferred)
 	NetworkWatcherFlowAnalyticsConfiguration any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format struct {
-	Type    any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The format or schema version this data conforms to. (AI-inferred)
 	Version any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy struct {
-	Days    any
+	// The number of days data is retained before automatic deletion. (AI-inferred)
+	Days any
+	// Whether this feature or setting is turned on. (AI-inferred)
 	Enabled any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties struct {
-	Enabled                    any
-	EnabledFilteringCriteria   any
+	// Whether this feature or setting is turned on. (AI-inferred)
+	Enabled any
+	// Which traffic characteristics this flow log filters on before recording. (AI-inferred)
+	EnabledFilteringCriteria any
+	// Configuration for deriving Traffic Analytics insights from this flow log's own recorded data. (AI-inferred)
 	FlowAnalyticsConfiguration any
-	Format                     any
-	ProvisioningState          any
-	RecordTypes                any
-	RetentionPolicy            any
-	StorageId                  any
-	TargetResourceGuid         any
-	TargetResourceId           any
+	// The output format this data is written in. (AI-inferred)
+	Format any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Which categories of record this configuration includes. (AI-inferred)
+	RecordTypes any
+	// How long this flow log's own recorded data is kept before automatic deletion. (AI-inferred)
+	RetentionPolicy any
+	// The resource ID of the storage account this flow log's own data is written to. (AI-inferred)
+	StorageId any
+	// Output only. The stable `resource_guid` of the resource this flow log is enabled on. (AI-inferred)
+	TargetResourceGuid any
+	// The resource ID this configuration applies to, e.g. the NSG or virtual network a flow log is enabled on. (AI-inferred)
+	TargetResourceId any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs struct {
-	Etag       any
-	Identity   any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings struct {
-	AppliedDnsServers        any
-	DnsServers               any
-	InternalDnsNameLabel     any
+	// Output only. The effective DNS server IP addresses this network interface actually uses, resolved from `dns_servers` or the virtual network's own defaults. (AI-inferred)
+	AppliedDnsServers any
+	// Custom DNS server IP addresses this resource uses, overriding the virtual network's own default DNS. (AI-inferred)
+	DnsServers any
+	// A DNS label for this network interface, resolvable from within the virtual network as `{label}.{internal_domain_name_suffix}`. (AI-inferred)
+	InternalDnsNameLabel any
+	// Output only. The DNS suffix appended to `internal_dns_name_label` to form this network interface's own internal FQDN. (AI-inferred)
 	InternalDomainNameSuffix any
-	InternalFqdn             any
+	// Output only. This network interface's own resolvable internal fully qualified domain name. (AI-inferred)
+	InternalFqdn any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs struct {
-	Fqdn        any
+	// The fully qualified domain name assigned to this resource. (AI-inferred)
+	Fqdn any
+	// The IP address(es) associated with this resource. (AI-inferred)
 	IpAddresses any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties struct {
-	GroupId          any
-	MemberName       any
+	// The sub-resource this connection targets on the destination service, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred)
+	GroupId any
+	// The name identifying this member within its own containing group or set. (AI-inferred)
+	MemberName any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
 	PrivateIpaddress any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the Private Link service owner still needs to take on this connection beyond the basic approve/reject/disconnect workflow, or `None` if nothing further is needed. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
+	Description any
+	// The current status of this connection, resource, or operation, e.g. `Approved`, `Pending`, `Rejected`, or `Disconnected`. (AI-inferred)
+	Status any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties struct {
-	GroupIds                          any
+	// The sub-resource(s) of the target service this private endpoint connects to, e.g. `blob` for a Storage account's blob endpoint. (AI-inferred)
+	GroupIds any
+	// The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	PrivateLinkServiceId              any
-	ProvisioningState                 any
-	RequestMessage                    any
+	// The resource ID of the Private Link service (or Private Link-enabled PaaS resource) this private endpoint connects to. (AI-inferred)
+	PrivateLinkServiceId any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A message the requester attaches when asking to connect to this Private Link-enabled or ExpressRoute-peered resource, shown to the approver alongside the connection request. (AI-inferred)
+	RequestMessage any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties struct {
-	ApplicationSecurityGroups           any
-	BillingSku                          any
-	CustomDnsConfigs                    any
-	CustomNetworkInterfaceName          any
-	IpConfigurations                    any
-	IpVersionType                       any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred)
+	BillingSku any
+	// DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred)
+	CustomDnsConfigs any
+	// A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred)
+	CustomNetworkInterfaceName any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred)
+	IpVersionType any
+	// Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred)
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces                   any
-	PrivateLinkServiceConnections       any
-	ProvisioningState                   any
-	Subnet                              any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The Private Link service connection(s) this private endpoint establishes. (AI-inferred)
+	PrivateLinkServiceConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval struct {
+	// The subscription ID(s) this auto-approval or visibility rule applies to. (AI-inferred)
 	Subscriptions any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties struct {
-	Primary                   any
-	PrivateIpaddress          any
-	PrivateIpaddressVersion   any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings struct {
+	// A reference to a custom DDoS protection policy to apply, overriding the subscription's own default DDoS policy. (AI-inferred)
 	DdosCustomPolicy any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
+	// The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred)
 	Tier any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
-	Sku              any
-	Zones            any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties struct {
-	DdosSettings              any
-	EnableConnectionTracking  any
-	GatewayLoadBalancer       any
-	InboundNatPools           any
-	InboundNatRules           any
-	LoadBalancingRules        any
-	OutboundRules             any
-	PrivateIpaddress          any
-	PrivateIpaddressVersion   any
+	// DDoS protection configuration for this public IP or virtual network. (AI-inferred)
+	DdosSettings any
+	// Whether this rule tracks individual connections for graceful behavior on backend pool membership changes, rather than treating every packet independently. (AI-inferred)
+	EnableConnectionTracking any
+	// A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
+	GatewayLoadBalancer any
+	// A range of ports reserved on the load balancer's own frontend, auto-allocated one-to-one to backend instances for inbound NAT (typically used by a scale set). (AI-inferred)
+	InboundNatPools any
+	// The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred)
+	InboundNatRules any
+	// The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred)
+	LoadBalancingRules any
+	// The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred)
+	OutboundRules any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	PublicIpprefix            any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
+	PublicIpprefix any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Zones      any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier                    any
-	PrivateEndpoint                   any
-	PrivateEndpointLocation           any
+	// Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred)
+	LinkIdentifier any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred)
+	PrivateEndpointLocation any
+	// The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode                           any
-	Alias                                any
-	AutoApproval                         any
-	DestinationIpaddress                 any
-	EnableProxyProtocol                  any
-	Fqdns                                any
-	IpConfigurations                     any
+	// Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
+	AccessMode any
+	// Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
+	Alias any
+	// The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
+	AutoApproval any
+	// The IP address this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationIpaddress any
+	// Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
+	EnableProxyProtocol any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces                    any
-	PrivateEndpointConnections           any
-	ProvisioningState                    any
-	Visibility                           any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
+	PrivateEndpointConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
+	Visibility any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
+	// The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration     any
-	DestinationPort                                any
-	NetworkInterfaceTapConfigurations              any
-	ProvisioningState                              any
-	ResourceGuid                                   any
+	// The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
+	DestinationNetworkInterfaceIpconfiguration any
+	// The port this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationPort any
+	// The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred)
+	NetworkInterfaceTapConfigurations any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
+	// A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred)
 	VirtualNetworkTap any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode                      any
-	AuxiliarySku                       any
+	// The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
+	AuxiliaryMode any
+	// The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
+	AuxiliarySku any
+	// Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking            any
-	DnsSettings                        any
-	DscpConfiguration                  any
-	EnableAcceleratedNetworking        any
-	EnableIpforwarding                 any
-	HostedWorkloads                    any
-	IpConfigurations                   any
-	MacAddress                         any
-	MigrationPhase                     any
-	NetworkSecurityGroup               any
-	NicType                            any
-	Primary                            any
-	PrivateEndpoint                    any
-	PrivateLinkService                 any
-	ProvisioningState                  any
-	ResourceGuid                       any
-	TapConfigurations                  any
-	VirtualMachine                     any
-	VnetEncryptionSupported            any
-	WorkloadType                       any
+	// Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
+	DscpConfiguration any
+	// Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
+	EnableAcceleratedNetworking any
+	// Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
+	EnableIpforwarding any
+	// Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
+	HostedWorkloads any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Output only. The MAC address assigned to this network interface. (AI-inferred)
+	MacAddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
+	NicType any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
+	PrivateLinkService any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
+	TapConfigurations any
+	// A reference to the virtual machine this network interface is attached to. (AI-inferred)
+	VirtualMachine any
+	// Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
+	VnetEncryptionSupported any
+	// The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
+	WorkloadType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
+	// Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred)
 	DefaultSecurityRules any
-	FlowLogs             any
-	FlushConnection      any
-	NetworkInterfaces    any
-	ProvisioningState    any
-	ResourceGuid         any
-	SecurityRules        any
-	Subnets              any
+	// The flow log(s) configured on this Network Security Group. (AI-inferred)
+	FlowLogs any
+	// Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred)
+	FlushConnection any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The custom (non-default) security rules on this Network Security Group. (AI-inferred)
+	SecurityRules any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties struct {
+	// Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred)
 	DefaultSecurityRules any
-	FlowLogs             any
-	FlushConnection      any
-	NetworkInterfaces    any
-	ProvisioningState    any
-	ResourceGuid         any
-	SecurityRules        any
-	Subnets              any
+	// The flow log(s) configured on this Network Security Group. (AI-inferred)
+	FlowLogs any
+	// Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred)
+	FlushConnection any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The custom (non-default) security rules on this Network Security Group. (AI-inferred)
+	SecurityRules any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier                    any
-	PrivateEndpoint                   any
-	PrivateEndpointLocation           any
+	// Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred)
+	LinkIdentifier any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred)
+	PrivateEndpointLocation any
+	// The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode                           any
-	Alias                                any
-	AutoApproval                         any
-	DestinationIpaddress                 any
-	EnableProxyProtocol                  any
-	Fqdns                                any
-	IpConfigurations                     any
+	// Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
+	AccessMode any
+	// Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
+	Alias any
+	// The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
+	AutoApproval any
+	// The IP address this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationIpaddress any
+	// Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
+	EnableProxyProtocol any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces                    any
-	PrivateEndpointConnections           any
-	ProvisioningState                    any
-	Visibility                           any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
+	PrivateEndpointConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
+	Visibility any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode                      any
-	AuxiliarySku                       any
+	// The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
+	AuxiliaryMode any
+	// The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
+	AuxiliarySku any
+	// Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking            any
-	DnsSettings                        any
-	DscpConfiguration                  any
-	EnableAcceleratedNetworking        any
-	EnableIpforwarding                 any
-	HostedWorkloads                    any
-	IpConfigurations                   any
-	MacAddress                         any
-	MigrationPhase                     any
-	NetworkSecurityGroup               any
-	NicType                            any
-	Primary                            any
-	PrivateEndpoint                    any
-	PrivateLinkService                 any
-	ProvisioningState                  any
-	ResourceGuid                       any
-	TapConfigurations                  any
-	VirtualMachine                     any
-	VnetEncryptionSupported            any
-	WorkloadType                       any
+	// Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
+	DscpConfiguration any
+	// Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
+	EnableAcceleratedNetworking any
+	// Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
+	EnableIpforwarding any
+	// Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
+	HostedWorkloads any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Output only. The MAC address assigned to this network interface. (AI-inferred)
+	MacAddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
+	NicType any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
+	PrivateLinkService any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
+	TapConfigurations any
+	// A reference to the virtual machine this network interface is attached to. (AI-inferred)
+	VirtualMachine any
+	// Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
+	VnetEncryptionSupported any
+	// The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
+	WorkloadType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups           any
-	BillingSku                          any
-	CustomDnsConfigs                    any
-	CustomNetworkInterfaceName          any
-	IpConfigurations                    any
-	IpVersionType                       any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred)
+	BillingSku any
+	// DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred)
+	CustomDnsConfigs any
+	// A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred)
+	CustomNetworkInterfaceName any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred)
+	IpVersionType any
+	// Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred)
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces                   any
-	PrivateLinkServiceConnections       any
-	ProvisioningState                   any
-	Subnet                              any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The Private Link service connection(s) this private endpoint establishes. (AI-inferred)
+	PrivateLinkServiceConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_Properties struct {
-	Link               any
+	// A reference to a related resource. (AI-inferred)
+	Link any
+	// The Azure resource type of the resource `link` points to. (AI-inferred)
 	LinkedResourceType any
-	ProvisioningState  any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks struct {
-	Etag       any
-	Id         any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHop struct {
+	// Output only. The effective next-hop IP address(es) actually in use for this route. (AI-inferred)
 	NextHopIpAddresses any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties struct {
-	AddressPrefix     any
-	HasBgpOverride    any
-	NextHop           any
-	NextHopIpAddress  any
-	NextHopType       any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// Whether a static route on this route table overrides the equivalent route learned via BGP. (AI-inferred)
+	HasBgpOverride any
+	// Where traffic matching this route is sent next. (AI-inferred)
+	NextHop any
+	// The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
+	NextHopIpAddress any
+	// The kind of next hop this route uses, e.g. `VirtualAppliance`, `VnetLocal`, `Internet`, or `None`. (AI-inferred)
+	NextHopType any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties struct {
+	// Whether routes learned via BGP are prevented from propagating into this route table. (AI-inferred)
 	DisableBgpRoutePropagation any
-	DisablePeeringRoute        any
-	ProvisioningState          any
-	ResourceGuid               any
-	Routes                     any
-	Subnets                    any
+	// Whether this route is withheld from propagating to a peered virtual network. (AI-inferred)
+	DisablePeeringRoute any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The custom routes making up this route table. (AI-inferred)
+	Routes any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_Properties struct {
-	AllowDelete        any
-	Link               any
+	// Whether this resource can be deleted directly, or is protected because something else still depends on it. (AI-inferred)
+	AllowDelete any
+	// A reference to a related resource. (AI-inferred)
+	Link any
+	// The Azure resource type of the resource `link` points to. (AI-inferred)
 	LinkedResourceType any
-	Locations          any
-	ProvisioningState  any
+	// The Azure region(s) this configuration or availability applies to. (AI-inferred)
+	Locations any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_Properties struct {
-	Description       any
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
+	Description any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Service           any
-	ServiceResources  any
+	// The Azure service (e.g. a specific Private Link-enabled PaaS service) this configuration applies to. (AI-inferred)
+	Service any
+	// The specific service resource(s) a service endpoint policy definition grants access to. (AI-inferred)
+	ServiceResources any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties struct {
+	// Service endpoint policies that apply to this subnet only in specific contexts (e.g. a specific service alias), layered on top of its own regular `service_endpoint_policies`. (AI-inferred)
 	ContextualServiceEndpointPolicies any
-	ProvisioningState                 any
-	ResourceGuid                      any
-	ServiceAlias                      any
-	ServiceEndpointPolicyDefinitions  any
-	Subnets                           any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The alias identifying the specific PaaS service resource a service endpoint policy definition grants access to. (AI-inferred)
+	ServiceAlias any
+	// The individual rules making up a service endpoint policy, each granting subnet traffic access to a specific Azure service resource. (AI-inferred)
+	ServiceEndpointPolicyDefinitions any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies struct {
-	Etag       any
-	Kind       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints struct {
-	Locations         any
+	// The Azure region(s) this configuration or availability applies to. (AI-inferred)
+	Locations any
+	// An identifier for the network this configuration is scoped to. (AI-inferred)
 	NetworkIdentifier any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Service           any
+	// The Azure service (e.g. a specific Private Link-enabled PaaS service) this configuration applies to. (AI-inferred)
+	Service any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties struct {
-	AddressPrefix                      any
-	AddressPrefixes                    any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred)
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess              any
-	Delegations                        any
-	IpAllocations                      any
-	IpConfigurationProfiles            any
-	IpConfigurations                   any
-	IpamPoolPrefixAllocations          any
-	NatGateway                         any
-	NetworkSecurityGroup               any
-	PrivateEndpointNetworkPolicies     any
-	PrivateEndpoints                   any
-	PrivateLinkServiceNetworkPolicies  any
-	ProvisioningState                  any
-	Purpose                            any
-	ResourceNavigationLinks            any
-	RouteTable                         any
-	ServiceAssociationLinks            any
-	ServiceEndpointPolicies            any
-	ServiceEndpoints                   any
-	ServiceGateway                     any
-	SharingScope                       any
+	// Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
+	DefaultOutboundAccess any
+	// Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred)
+	Delegations any
+	// References to IP address pool allocations reserved for this subnet. (AI-inferred)
+	IpAllocations any
+	// Reusable IP configuration templates associated with this resource. (AI-inferred)
+	IpConfigurationProfiles any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
+	IpamPoolPrefixAllocations any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred)
+	PrivateEndpointNetworkPolicies any
+	// The Private Endpoint resources deployed in this subnet. (AI-inferred)
+	PrivateEndpoints any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred)
+	PrivateLinkServiceNetworkPolicies any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred)
+	Purpose any
+	// Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred)
+	ResourceNavigationLinks any
+	// A reference to the route table associated with this subnet. (AI-inferred)
+	RouteTable any
+	// Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred)
+	ServiceAssociationLinks any
+	// Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred)
+	ServiceEndpointPolicies any
+	// The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred)
+	ServiceEndpoints any
+	// A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
+	ServiceGateway any
+	// How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred)
+	SharingScope any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress          any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags struct {
+	// The identifier of the Microsoft first-party service tag this IP tag is associated with. (AI-inferred)
 	FirstPartyServiceTagId any
-	IpTagType              any
-	Tag                    any
+	// The category this IP tag belongs to, e.g. `FirstPartyUsage`. (AI-inferred)
+	IpTagType any
+	// The literal tag value. (AI-inferred)
+	Tag any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Properties struct {
+	// How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
 	IdleTimeoutInMinutes any
-	Nat64                any
-	ProvisioningState    any
-	PublicIpAddresses    any
-	PublicIpAddressesV6  any
-	PublicIpPrefixes     any
-	PublicIpPrefixesV6   any
-	ResourceGuid         any
-	ServiceGateway       any
+	// Whether NAT64 (IPv6-to-IPv4 translation) is enabled for this configuration. (AI-inferred)
+	Nat64 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The IPv4 Public IP Address resources associated with this configuration. (AI-inferred)
+	PublicIpAddresses any
+	// The IPv6 Public IP Address resources associated with this configuration. (AI-inferred)
+	PublicIpAddressesV6 any
+	// The IPv4 Public IP Prefix resources associated with this configuration. (AI-inferred)
+	PublicIpPrefixes any
+	// The IPv6 Public IP Prefix resources associated with this configuration. (AI-inferred)
+	PublicIpPrefixesV6 any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
+	ServiceGateway any
+	// A reference to the virtual network this resource is sourced from. (AI-inferred)
 	SourceVirtualNetwork any
-	Subnets              any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Sku struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Sku        any
-	Zones      any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings             any
-	DeleteOption             any
-	DnsSettings              any
-	IdleTimeoutInMinutes     any
-	IpAddress                any
-	IpConfiguration          any
-	IpTags                   any
-	LinkedPublicIpaddress    any
-	MigrationPhase           any
-	NatGateway               any
-	ProvisioningState        any
-	PublicIpaddressVersion   any
+	// DDoS protection configuration for this public IP or virtual network. (AI-inferred)
+	DdosSettings any
+	// What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred)
+	DeleteOption any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
+	IdleTimeoutInMinutes any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// A reference to the IP configuration this resource is associated with. (AI-inferred)
+	IpConfiguration any
+	// IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred)
+	IpTags any
+	// A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred)
+	LinkedPublicIpaddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred)
+	PublicIpaddressVersion any
+	// Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred)
 	PublicIpallocationMethod any
-	PublicIpprefix           any
-	ResourceGuid             any
-	ServicePublicIpaddress   any
-	UpgradedToV2             any
+	// A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
+	PublicIpprefix any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred)
+	ServicePublicIpaddress any
+	// Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred)
+	UpgradedToV2 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
-	Sku              any
-	Zones            any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings             any
-	DeleteOption             any
-	DnsSettings              any
-	IdleTimeoutInMinutes     any
-	IpAddress                any
-	IpConfiguration          any
-	IpTags                   any
-	LinkedPublicIpaddress    any
-	MigrationPhase           any
-	NatGateway               any
-	ProvisioningState        any
-	PublicIpaddressVersion   any
+	// DDoS protection configuration for this public IP or virtual network. (AI-inferred)
+	DdosSettings any
+	// What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred)
+	DeleteOption any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
+	IdleTimeoutInMinutes any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// A reference to the IP configuration this resource is associated with. (AI-inferred)
+	IpConfiguration any
+	// IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred)
+	IpTags any
+	// A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred)
+	LinkedPublicIpaddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred)
+	PublicIpaddressVersion any
+	// Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred)
 	PublicIpallocationMethod any
-	PublicIpprefix           any
-	ResourceGuid             any
-	ServicePublicIpaddress   any
-	UpgradedToV2             any
+	// A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
+	PublicIpprefix any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred)
+	ServicePublicIpaddress any
+	// Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred)
+	UpgradedToV2 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
-	Sku              any
-	Zones            any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties struct {
-	PrivateIpaddress          any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress          any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings             any
-	DeleteOption             any
-	DnsSettings              any
-	IdleTimeoutInMinutes     any
-	IpAddress                any
-	IpConfiguration          any
-	IpTags                   any
-	LinkedPublicIpaddress    any
-	MigrationPhase           any
-	NatGateway               any
-	ProvisioningState        any
-	PublicIpaddressVersion   any
+	// DDoS protection configuration for this public IP or virtual network. (AI-inferred)
+	DdosSettings any
+	// What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred)
+	DeleteOption any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
+	IdleTimeoutInMinutes any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// A reference to the IP configuration this resource is associated with. (AI-inferred)
+	IpConfiguration any
+	// IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred)
+	IpTags any
+	// A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred)
+	LinkedPublicIpaddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred)
+	PublicIpaddressVersion any
+	// Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred)
 	PublicIpallocationMethod any
-	PublicIpprefix           any
-	ResourceGuid             any
-	ServicePublicIpaddress   any
-	UpgradedToV2             any
+	// A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
+	PublicIpprefix any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred)
+	ServicePublicIpaddress any
+	// Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred)
+	UpgradedToV2 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
-	Sku              any
-	Zones            any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties struct {
-	DdosSettings              any
-	EnableConnectionTracking  any
-	GatewayLoadBalancer       any
-	InboundNatPools           any
-	InboundNatRules           any
-	LoadBalancingRules        any
-	OutboundRules             any
-	PrivateIpaddress          any
-	PrivateIpaddressVersion   any
+	// DDoS protection configuration for this public IP or virtual network. (AI-inferred)
+	DdosSettings any
+	// Whether this rule tracks individual connections for graceful behavior on backend pool membership changes, rather than treating every packet independently. (AI-inferred)
+	EnableConnectionTracking any
+	// A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
+	GatewayLoadBalancer any
+	// A range of ports reserved on the load balancer's own frontend, auto-allocated one-to-one to backend instances for inbound NAT (typically used by a scale set). (AI-inferred)
+	InboundNatPools any
+	// The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred)
+	InboundNatRules any
+	// The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred)
+	LoadBalancingRules any
+	// The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred)
+	OutboundRules any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	PublicIpprefix            any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
+	PublicIpprefix any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Zones      any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode                           any
-	Alias                                any
-	AutoApproval                         any
-	DestinationIpaddress                 any
-	EnableProxyProtocol                  any
-	Fqdns                                any
-	IpConfigurations                     any
+	// Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
+	AccessMode any
+	// Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
+	Alias any
+	// The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
+	AutoApproval any
+	// The IP address this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationIpaddress any
+	// Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
+	EnableProxyProtocol any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces                    any
-	PrivateEndpointConnections           any
-	ProvisioningState                    any
-	Visibility                           any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
+	PrivateEndpointConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
+	Visibility any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
+	// The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration     any
-	DestinationPort                                any
-	NetworkInterfaceTapConfigurations              any
-	ProvisioningState                              any
-	ResourceGuid                                   any
+	// The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
+	DestinationNetworkInterfaceIpconfiguration any
+	// The port this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationPort any
+	// The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred)
+	NetworkInterfaceTapConfigurations any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
+	// A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred)
 	VirtualNetworkTap any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode                      any
-	AuxiliarySku                       any
+	// The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
+	AuxiliaryMode any
+	// The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
+	AuxiliarySku any
+	// Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking            any
-	DnsSettings                        any
-	DscpConfiguration                  any
-	EnableAcceleratedNetworking        any
-	EnableIpforwarding                 any
-	HostedWorkloads                    any
-	IpConfigurations                   any
-	MacAddress                         any
-	MigrationPhase                     any
-	NetworkSecurityGroup               any
-	NicType                            any
-	Primary                            any
-	PrivateEndpoint                    any
-	PrivateLinkService                 any
-	ProvisioningState                  any
-	ResourceGuid                       any
-	TapConfigurations                  any
-	VirtualMachine                     any
-	VnetEncryptionSupported            any
-	WorkloadType                       any
+	// Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
+	DscpConfiguration any
+	// Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
+	EnableAcceleratedNetworking any
+	// Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
+	EnableIpforwarding any
+	// Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
+	HostedWorkloads any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Output only. The MAC address assigned to this network interface. (AI-inferred)
+	MacAddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
+	NicType any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
+	PrivateLinkService any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
+	TapConfigurations any
+	// A reference to the virtual machine this network interface is attached to. (AI-inferred)
+	VirtualMachine any
+	// Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
+	VnetEncryptionSupported any
+	// The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
+	WorkloadType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
+	// Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred)
 	DefaultSecurityRules any
-	FlowLogs             any
-	FlushConnection      any
-	NetworkInterfaces    any
-	ProvisioningState    any
-	ResourceGuid         any
-	SecurityRules        any
-	Subnets              any
+	// The flow log(s) configured on this Network Security Group. (AI-inferred)
+	FlowLogs any
+	// Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred)
+	FlushConnection any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The custom (non-default) security rules on this Network Security Group. (AI-inferred)
+	SecurityRules any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode                           any
-	Alias                                any
-	AutoApproval                         any
-	DestinationIpaddress                 any
-	EnableProxyProtocol                  any
-	Fqdns                                any
-	IpConfigurations                     any
+	// Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
+	AccessMode any
+	// Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
+	Alias any
+	// The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
+	AutoApproval any
+	// The IP address this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationIpaddress any
+	// Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
+	EnableProxyProtocol any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces                    any
-	PrivateEndpointConnections           any
-	ProvisioningState                    any
-	Visibility                           any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
+	PrivateEndpointConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
+	Visibility any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode                      any
-	AuxiliarySku                       any
+	// The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
+	AuxiliaryMode any
+	// The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
+	AuxiliarySku any
+	// Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking            any
-	DnsSettings                        any
-	DscpConfiguration                  any
-	EnableAcceleratedNetworking        any
-	EnableIpforwarding                 any
-	HostedWorkloads                    any
-	IpConfigurations                   any
-	MacAddress                         any
-	MigrationPhase                     any
-	NetworkSecurityGroup               any
-	NicType                            any
-	Primary                            any
-	PrivateEndpoint                    any
-	PrivateLinkService                 any
-	ProvisioningState                  any
-	ResourceGuid                       any
-	TapConfigurations                  any
-	VirtualMachine                     any
-	VnetEncryptionSupported            any
-	WorkloadType                       any
+	// Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
+	DscpConfiguration any
+	// Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
+	EnableAcceleratedNetworking any
+	// Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
+	EnableIpforwarding any
+	// Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
+	HostedWorkloads any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Output only. The MAC address assigned to this network interface. (AI-inferred)
+	MacAddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
+	NicType any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
+	PrivateLinkService any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
+	TapConfigurations any
+	// A reference to the virtual machine this network interface is attached to. (AI-inferred)
+	VirtualMachine any
+	// Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
+	VnetEncryptionSupported any
+	// The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
+	WorkloadType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups           any
-	BillingSku                          any
-	CustomDnsConfigs                    any
-	CustomNetworkInterfaceName          any
-	IpConfigurations                    any
-	IpVersionType                       any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred)
+	BillingSku any
+	// DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred)
+	CustomDnsConfigs any
+	// A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred)
+	CustomNetworkInterfaceName any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred)
+	IpVersionType any
+	// Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred)
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces                   any
-	PrivateLinkServiceConnections       any
-	ProvisioningState                   any
-	Subnet                              any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The Private Link service connection(s) this private endpoint establishes. (AI-inferred)
+	PrivateLinkServiceConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties struct {
-	AddressPrefix                      any
-	AddressPrefixes                    any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred)
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess              any
-	Delegations                        any
-	IpAllocations                      any
-	IpConfigurationProfiles            any
-	IpConfigurations                   any
-	IpamPoolPrefixAllocations          any
-	NatGateway                         any
-	NetworkSecurityGroup               any
-	PrivateEndpointNetworkPolicies     any
-	PrivateEndpoints                   any
-	PrivateLinkServiceNetworkPolicies  any
-	ProvisioningState                  any
-	Purpose                            any
-	ResourceNavigationLinks            any
-	RouteTable                         any
-	ServiceAssociationLinks            any
-	ServiceEndpointPolicies            any
-	ServiceEndpoints                   any
-	ServiceGateway                     any
-	SharingScope                       any
+	// Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
+	DefaultOutboundAccess any
+	// Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred)
+	Delegations any
+	// References to IP address pool allocations reserved for this subnet. (AI-inferred)
+	IpAllocations any
+	// Reusable IP configuration templates associated with this resource. (AI-inferred)
+	IpConfigurationProfiles any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
+	IpamPoolPrefixAllocations any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred)
+	PrivateEndpointNetworkPolicies any
+	// The Private Endpoint resources deployed in this subnet. (AI-inferred)
+	PrivateEndpoints any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred)
+	PrivateLinkServiceNetworkPolicies any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred)
+	Purpose any
+	// Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred)
+	ResourceNavigationLinks any
+	// A reference to the route table associated with this subnet. (AI-inferred)
+	RouteTable any
+	// Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred)
+	ServiceAssociationLinks any
+	// Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred)
+	ServiceEndpointPolicies any
+	// The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred)
+	ServiceEndpoints any
+	// A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
+	ServiceGateway any
+	// How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred)
+	SharingScope any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode                           any
-	Alias                                any
-	AutoApproval                         any
-	DestinationIpaddress                 any
-	EnableProxyProtocol                  any
-	Fqdns                                any
-	IpConfigurations                     any
+	// Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
+	AccessMode any
+	// Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
+	Alias any
+	// The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
+	AutoApproval any
+	// The IP address this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationIpaddress any
+	// Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
+	EnableProxyProtocol any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces                    any
-	PrivateEndpointConnections           any
-	ProvisioningState                    any
-	Visibility                           any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
+	PrivateEndpointConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
+	Visibility any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
+	// A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred)
 	VirtualNetworkTap any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode                      any
-	AuxiliarySku                       any
+	// The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
+	AuxiliaryMode any
+	// The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
+	AuxiliarySku any
+	// Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking            any
-	DnsSettings                        any
-	DscpConfiguration                  any
-	EnableAcceleratedNetworking        any
-	EnableIpforwarding                 any
-	HostedWorkloads                    any
-	IpConfigurations                   any
-	MacAddress                         any
-	MigrationPhase                     any
-	NetworkSecurityGroup               any
-	NicType                            any
-	Primary                            any
-	PrivateEndpoint                    any
-	PrivateLinkService                 any
-	ProvisioningState                  any
-	ResourceGuid                       any
-	TapConfigurations                  any
-	VirtualMachine                     any
-	VnetEncryptionSupported            any
-	WorkloadType                       any
+	// Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
+	DscpConfiguration any
+	// Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
+	EnableAcceleratedNetworking any
+	// Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
+	EnableIpforwarding any
+	// Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
+	HostedWorkloads any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Output only. The MAC address assigned to this network interface. (AI-inferred)
+	MacAddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
+	NicType any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
+	PrivateLinkService any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
+	TapConfigurations any
+	// A reference to the virtual machine this network interface is attached to. (AI-inferred)
+	VirtualMachine any
+	// Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
+	VnetEncryptionSupported any
+	// The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
+	WorkloadType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
+	// Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred)
 	DefaultSecurityRules any
-	FlowLogs             any
-	FlushConnection      any
-	NetworkInterfaces    any
-	ProvisioningState    any
-	ResourceGuid         any
-	SecurityRules        any
-	Subnets              any
+	// The flow log(s) configured on this Network Security Group. (AI-inferred)
+	FlowLogs any
+	// Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred)
+	FlushConnection any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The custom (non-default) security rules on this Network Security Group. (AI-inferred)
+	SecurityRules any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode                           any
-	Alias                                any
-	AutoApproval                         any
-	DestinationIpaddress                 any
-	EnableProxyProtocol                  any
-	Fqdns                                any
-	IpConfigurations                     any
+	// Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
+	AccessMode any
+	// Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
+	Alias any
+	// The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
+	AutoApproval any
+	// The IP address this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationIpaddress any
+	// Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
+	EnableProxyProtocol any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces                    any
-	PrivateEndpointConnections           any
-	ProvisioningState                    any
-	Visibility                           any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
+	PrivateEndpointConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
+	Visibility any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode                      any
-	AuxiliarySku                       any
+	// The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
+	AuxiliaryMode any
+	// The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
+	AuxiliarySku any
+	// Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking            any
-	DnsSettings                        any
-	DscpConfiguration                  any
-	EnableAcceleratedNetworking        any
-	EnableIpforwarding                 any
-	HostedWorkloads                    any
-	IpConfigurations                   any
-	MacAddress                         any
-	MigrationPhase                     any
-	NetworkSecurityGroup               any
-	NicType                            any
-	Primary                            any
-	PrivateEndpoint                    any
-	PrivateLinkService                 any
-	ProvisioningState                  any
-	ResourceGuid                       any
-	TapConfigurations                  any
-	VirtualMachine                     any
-	VnetEncryptionSupported            any
-	WorkloadType                       any
+	// Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
+	DscpConfiguration any
+	// Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
+	EnableAcceleratedNetworking any
+	// Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
+	EnableIpforwarding any
+	// Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
+	HostedWorkloads any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Output only. The MAC address assigned to this network interface. (AI-inferred)
+	MacAddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
+	NicType any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
+	PrivateLinkService any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
+	TapConfigurations any
+	// A reference to the virtual machine this network interface is attached to. (AI-inferred)
+	VirtualMachine any
+	// Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
+	VnetEncryptionSupported any
+	// The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
+	WorkloadType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups           any
-	BillingSku                          any
-	CustomDnsConfigs                    any
-	CustomNetworkInterfaceName          any
-	IpConfigurations                    any
-	IpVersionType                       any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred)
+	BillingSku any
+	// DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred)
+	CustomDnsConfigs any
+	// A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred)
+	CustomNetworkInterfaceName any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred)
+	IpVersionType any
+	// Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred)
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces                   any
-	PrivateLinkServiceConnections       any
-	ProvisioningState                   any
-	Subnet                              any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The Private Link service connection(s) this private endpoint establishes. (AI-inferred)
+	PrivateLinkServiceConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties struct {
-	AddressPrefix                      any
-	AddressPrefixes                    any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred)
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess              any
-	Delegations                        any
-	IpAllocations                      any
-	IpConfigurationProfiles            any
-	IpConfigurations                   any
-	IpamPoolPrefixAllocations          any
-	NatGateway                         any
-	NetworkSecurityGroup               any
-	PrivateEndpointNetworkPolicies     any
-	PrivateEndpoints                   any
-	PrivateLinkServiceNetworkPolicies  any
-	ProvisioningState                  any
-	Purpose                            any
-	ResourceNavigationLinks            any
-	RouteTable                         any
-	ServiceAssociationLinks            any
-	ServiceEndpointPolicies            any
-	ServiceEndpoints                   any
-	ServiceGateway                     any
-	SharingScope                       any
+	// Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
+	DefaultOutboundAccess any
+	// Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred)
+	Delegations any
+	// References to IP address pool allocations reserved for this subnet. (AI-inferred)
+	IpAllocations any
+	// Reusable IP configuration templates associated with this resource. (AI-inferred)
+	IpConfigurationProfiles any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
+	IpamPoolPrefixAllocations any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred)
+	PrivateEndpointNetworkPolicies any
+	// The Private Endpoint resources deployed in this subnet. (AI-inferred)
+	PrivateEndpoints any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred)
+	PrivateLinkServiceNetworkPolicies any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred)
+	Purpose any
+	// Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred)
+	ResourceNavigationLinks any
+	// A reference to the route table associated with this subnet. (AI-inferred)
+	RouteTable any
+	// Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred)
+	ServiceAssociationLinks any
+	// Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred)
+	ServiceEndpointPolicies any
+	// The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred)
+	ServiceEndpoints any
+	// A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
+	ServiceGateway any
+	// How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred)
+	SharingScope any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress          any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties struct {
-	DdosSettings             any
-	DeleteOption             any
-	DnsSettings              any
-	IdleTimeoutInMinutes     any
-	IpAddress                any
-	IpConfiguration          any
-	IpTags                   any
-	LinkedPublicIpaddress    any
-	MigrationPhase           any
-	NatGateway               any
-	ProvisioningState        any
-	PublicIpaddressVersion   any
+	// DDoS protection configuration for this public IP or virtual network. (AI-inferred)
+	DdosSettings any
+	// What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred)
+	DeleteOption any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
+	IdleTimeoutInMinutes any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// A reference to the IP configuration this resource is associated with. (AI-inferred)
+	IpConfiguration any
+	// IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred)
+	IpTags any
+	// A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred)
+	LinkedPublicIpaddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred)
+	PublicIpaddressVersion any
+	// Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred)
 	PublicIpallocationMethod any
-	PublicIpprefix           any
-	ResourceGuid             any
-	ServicePublicIpaddress   any
-	UpgradedToV2             any
+	// A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
+	PublicIpprefix any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred)
+	ServicePublicIpaddress any
+	// Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred)
+	UpgradedToV2 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
-	Sku              any
-	Zones            any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Subnet            any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations_Properties struct {
-	PrivateIpaddress          any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties struct {
-	ApplicationSecurityGroups           any
-	BillingSku                          any
-	CustomDnsConfigs                    any
-	CustomNetworkInterfaceName          any
-	IpConfigurations                    any
-	IpVersionType                       any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred)
+	BillingSku any
+	// DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred)
+	CustomDnsConfigs any
+	// A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred)
+	CustomNetworkInterfaceName any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred)
+	IpVersionType any
+	// Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred)
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces                   any
-	PrivateLinkServiceConnections       any
-	ProvisioningState                   any
-	Subnet                              any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The Private Link service connection(s) this private endpoint establishes. (AI-inferred)
+	PrivateLinkServiceConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties struct {
-	Primary                   any
-	PrivateIpaddress          any
-	PrivateIpaddressVersion   any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier                    any
-	PrivateEndpoint                   any
-	PrivateEndpointLocation           any
+	// Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred)
+	LinkIdentifier any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred)
+	PrivateEndpointLocation any
+	// The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode                           any
-	Alias                                any
-	AutoApproval                         any
-	DestinationIpaddress                 any
-	EnableProxyProtocol                  any
-	Fqdns                                any
-	IpConfigurations                     any
+	// Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
+	AccessMode any
+	// Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
+	Alias any
+	// The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
+	AutoApproval any
+	// The IP address this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationIpaddress any
+	// Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
+	EnableProxyProtocol any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces                    any
-	PrivateEndpointConnections           any
-	ProvisioningState                    any
-	Visibility                           any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
+	PrivateEndpointConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
+	Visibility any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode                      any
-	AuxiliarySku                       any
+	// The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
+	AuxiliaryMode any
+	// The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
+	AuxiliarySku any
+	// Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking            any
-	DnsSettings                        any
-	DscpConfiguration                  any
-	EnableAcceleratedNetworking        any
-	EnableIpforwarding                 any
-	HostedWorkloads                    any
-	IpConfigurations                   any
-	MacAddress                         any
-	MigrationPhase                     any
-	NetworkSecurityGroup               any
-	NicType                            any
-	Primary                            any
-	PrivateEndpoint                    any
-	PrivateLinkService                 any
-	ProvisioningState                  any
-	ResourceGuid                       any
-	TapConfigurations                  any
-	VirtualMachine                     any
-	VnetEncryptionSupported            any
-	WorkloadType                       any
+	// Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
+	DscpConfiguration any
+	// Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
+	EnableAcceleratedNetworking any
+	// Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
+	EnableIpforwarding any
+	// Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
+	HostedWorkloads any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Output only. The MAC address assigned to this network interface. (AI-inferred)
+	MacAddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
+	NicType any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
+	PrivateLinkService any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
+	TapConfigurations any
+	// A reference to the virtual machine this network interface is attached to. (AI-inferred)
+	VirtualMachine any
+	// Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
+	VnetEncryptionSupported any
+	// The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
+	WorkloadType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
+	// Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred)
 	DefaultSecurityRules any
-	FlowLogs             any
-	FlushConnection      any
-	NetworkInterfaces    any
-	ProvisioningState    any
-	ResourceGuid         any
-	SecurityRules        any
-	Subnets              any
+	// The flow log(s) configured on this Network Security Group. (AI-inferred)
+	FlowLogs any
+	// Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred)
+	FlushConnection any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The custom (non-default) security rules on this Network Security Group. (AI-inferred)
+	SecurityRules any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties struct {
+	// Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred)
 	DefaultSecurityRules any
-	FlowLogs             any
-	FlushConnection      any
-	NetworkInterfaces    any
-	ProvisioningState    any
-	ResourceGuid         any
-	SecurityRules        any
-	Subnets              any
+	// The flow log(s) configured on this Network Security Group. (AI-inferred)
+	FlowLogs any
+	// Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred)
+	FlushConnection any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The custom (non-default) security rules on this Network Security Group. (AI-inferred)
+	SecurityRules any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode                           any
-	Alias                                any
-	AutoApproval                         any
-	DestinationIpaddress                 any
-	EnableProxyProtocol                  any
-	Fqdns                                any
-	IpConfigurations                     any
+	// Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
+	AccessMode any
+	// Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
+	Alias any
+	// The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
+	AutoApproval any
+	// The IP address this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationIpaddress any
+	// Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
+	EnableProxyProtocol any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces                    any
-	PrivateEndpointConnections           any
-	ProvisioningState                    any
-	Visibility                           any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
+	PrivateEndpointConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
+	Visibility any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode                      any
-	AuxiliarySku                       any
+	// The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
+	AuxiliaryMode any
+	// The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
+	AuxiliarySku any
+	// Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking            any
-	DnsSettings                        any
-	DscpConfiguration                  any
-	EnableAcceleratedNetworking        any
-	EnableIpforwarding                 any
-	HostedWorkloads                    any
-	IpConfigurations                   any
-	MacAddress                         any
-	MigrationPhase                     any
-	NetworkSecurityGroup               any
-	NicType                            any
-	Primary                            any
-	PrivateEndpoint                    any
-	PrivateLinkService                 any
-	ProvisioningState                  any
-	ResourceGuid                       any
-	TapConfigurations                  any
-	VirtualMachine                     any
-	VnetEncryptionSupported            any
-	WorkloadType                       any
+	// Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
+	DscpConfiguration any
+	// Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
+	EnableAcceleratedNetworking any
+	// Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
+	EnableIpforwarding any
+	// Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
+	HostedWorkloads any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Output only. The MAC address assigned to this network interface. (AI-inferred)
+	MacAddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
+	NicType any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
+	PrivateLinkService any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
+	TapConfigurations any
+	// A reference to the virtual machine this network interface is attached to. (AI-inferred)
+	VirtualMachine any
+	// Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
+	VnetEncryptionSupported any
+	// The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
+	WorkloadType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups           any
-	BillingSku                          any
-	CustomDnsConfigs                    any
-	CustomNetworkInterfaceName          any
-	IpConfigurations                    any
-	IpVersionType                       any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred)
+	BillingSku any
+	// DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred)
+	CustomDnsConfigs any
+	// A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred)
+	CustomNetworkInterfaceName any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred)
+	IpVersionType any
+	// Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred)
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces                   any
-	PrivateLinkServiceConnections       any
-	ProvisioningState                   any
-	Subnet                              any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The Private Link service connection(s) this private endpoint establishes. (AI-inferred)
+	PrivateLinkServiceConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable_Properties struct {
+	// Whether routes learned via BGP are prevented from propagating into this route table. (AI-inferred)
 	DisableBgpRoutePropagation any
-	DisablePeeringRoute        any
-	ProvisioningState          any
-	ResourceGuid               any
-	Routes                     any
-	Subnets                    any
+	// Whether this route is withheld from propagating to a peered virtual network. (AI-inferred)
+	DisablePeeringRoute any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The custom routes making up this route table. (AI-inferred)
+	Routes any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties struct {
+	// Service endpoint policies that apply to this subnet only in specific contexts (e.g. a specific service alias), layered on top of its own regular `service_endpoint_policies`. (AI-inferred)
 	ContextualServiceEndpointPolicies any
-	ProvisioningState                 any
-	ResourceGuid                      any
-	ServiceAlias                      any
-	ServiceEndpointPolicyDefinitions  any
-	Subnets                           any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The alias identifying the specific PaaS service resource a service endpoint policy definition grants access to. (AI-inferred)
+	ServiceAlias any
+	// The individual rules making up a service endpoint policy, each granting subnet traffic access to a specific Azure service resource. (AI-inferred)
+	ServiceEndpointPolicyDefinitions any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies struct {
-	Etag       any
-	Kind       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties struct {
-	AddressPrefix                      any
-	AddressPrefixes                    any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred)
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess              any
-	Delegations                        any
-	IpAllocations                      any
-	IpConfigurationProfiles            any
-	IpConfigurations                   any
-	IpamPoolPrefixAllocations          any
-	NatGateway                         any
-	NetworkSecurityGroup               any
-	PrivateEndpointNetworkPolicies     any
-	PrivateEndpoints                   any
-	PrivateLinkServiceNetworkPolicies  any
-	ProvisioningState                  any
-	Purpose                            any
-	ResourceNavigationLinks            any
-	RouteTable                         any
-	ServiceAssociationLinks            any
-	ServiceEndpointPolicies            any
-	ServiceEndpoints                   any
-	ServiceGateway                     any
-	SharingScope                       any
+	// Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
+	DefaultOutboundAccess any
+	// Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred)
+	Delegations any
+	// References to IP address pool allocations reserved for this subnet. (AI-inferred)
+	IpAllocations any
+	// Reusable IP configuration templates associated with this resource. (AI-inferred)
+	IpConfigurationProfiles any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
+	IpamPoolPrefixAllocations any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred)
+	PrivateEndpointNetworkPolicies any
+	// The Private Endpoint resources deployed in this subnet. (AI-inferred)
+	PrivateEndpoints any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred)
+	PrivateLinkServiceNetworkPolicies any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred)
+	Purpose any
+	// Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred)
+	ResourceNavigationLinks any
+	// A reference to the route table associated with this subnet. (AI-inferred)
+	RouteTable any
+	// Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred)
+	ServiceAssociationLinks any
+	// Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred)
+	ServiceEndpointPolicies any
+	// The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred)
+	ServiceEndpoints any
+	// A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
+	ServiceGateway any
+	// How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred)
+	SharingScope any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties struct {
-	DdosSettings              any
-	EnableConnectionTracking  any
-	GatewayLoadBalancer       any
-	InboundNatPools           any
-	InboundNatRules           any
-	LoadBalancingRules        any
-	OutboundRules             any
-	PrivateIpaddress          any
-	PrivateIpaddressVersion   any
+	// DDoS protection configuration for this public IP or virtual network. (AI-inferred)
+	DdosSettings any
+	// Whether this rule tracks individual connections for graceful behavior on backend pool membership changes, rather than treating every packet independently. (AI-inferred)
+	EnableConnectionTracking any
+	// A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
+	GatewayLoadBalancer any
+	// A range of ports reserved on the load balancer's own frontend, auto-allocated one-to-one to backend instances for inbound NAT (typically used by a scale set). (AI-inferred)
+	InboundNatPools any
+	// The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred)
+	InboundNatRules any
+	// The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred)
+	LoadBalancingRules any
+	// The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred)
+	OutboundRules any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	PublicIpprefix            any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
+	PublicIpprefix any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Zones      any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties struct {
+	// The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration     any
-	DestinationPort                                any
-	NetworkInterfaceTapConfigurations              any
-	ProvisioningState                              any
-	ResourceGuid                                   any
+	// The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
+	DestinationNetworkInterfaceIpconfiguration any
+	// The port this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationPort any
+	// The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred)
+	NetworkInterfaceTapConfigurations any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties struct {
+	// The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups             any
-	GatewayLoadBalancer                   any
-	LoadBalancerBackendAddressPools       any
-	LoadBalancerInboundNatRules           any
-	Primary                               any
-	PrivateIpaddress                      any
-	PrivateIpaddressPrefixLength          any
-	PrivateIpaddressVersion               any
-	PrivateIpallocationMethod             any
-	PrivateLinkConnectionProperties       any
-	ProvisioningState                     any
-	PublicIpaddress                       any
-	Subnet                                any
-	VirtualNetworkTaps                    any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
+	GatewayLoadBalancer any
+	// The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
+	LoadBalancerBackendAddressPools any
+	// The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred)
+	LoadBalancerInboundNatRules any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred)
+	PrivateIpaddressPrefixLength any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
+	PrivateIpallocationMethod any
+	// The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred)
+	PrivateLinkConnectionProperties any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
+	// The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred)
+	VirtualNetworkTaps any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties struct {
-	BackendAddresses        any
+	// The backend address(es) (by IP or NIC IP configuration) this pool routes traffic to. (AI-inferred)
+	BackendAddresses any
+	// The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred)
 	BackendIpconfigurations any
-	ProvisioningState       any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendAddressPools struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection_Properties_ConnectionDraining struct {
+	// How long, in seconds, a backend member being drained remains reachable for its own existing connections. (AI-inferred)
 	DrainTimeoutInSec any
-	Enabled           any
+	// Whether this feature or setting is turned on. (AI-inferred)
+	Enabled any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection_Properties struct {
-	AffinityCookieName             any
-	AuthenticationCertificates     any
-	ConnectionDraining             any
-	CookieBasedAffinity            any
-	DedicatedBackendConnection     any
-	HostName                       any
-	Path                           any
+	// The name of the cookie used for session affinity. (AI-inferred)
+	AffinityCookieName any
+	// The trusted root certificate(s) used to authenticate the backend server's own TLS certificate. (AI-inferred)
+	AuthenticationCertificates any
+	// Configuration for gracefully deregistering a backend member, allowing existing connections to complete before removal. (AI-inferred)
+	ConnectionDraining any
+	// Whether session affinity via a gateway-managed cookie is `Enabled` or `Disabled`. (AI-inferred)
+	CookieBasedAffinity any
+	// Whether backend connections are dedicated per client, rather than pooled and reused across clients. (AI-inferred)
+	DedicatedBackendConnection any
+	// The hostname this rule matches or targets. (AI-inferred)
+	HostName any
+	// The URL path this rule matches or targets. (AI-inferred)
+	Path any
+	// Whether the `Host` header sent to the backend is derived from its own backend address, rather than a fixed value. (AI-inferred)
 	PickHostNameFromBackendAddress any
-	Port                           any
-	Probe                          any
-	ProbeEnabled                   any
-	Protocol                       any
-	ProvisioningState              any
-	RequestTimeout                 any
-	SniName                        any
-	TrustedRootCertificates        any
-	ValidateCertChainAndExpiry     any
-	ValidateSni                    any
+	// A TCP or UDP port number. (AI-inferred)
+	Port any
+	// A reference to the health probe applied to this backend. (AI-inferred)
+	Probe any
+	// Whether a custom health probe is used, rather than the default probe behavior. (AI-inferred)
+	ProbeEnabled any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// How long, in seconds, the gateway waits for a backend response before timing out. (AI-inferred)
+	RequestTimeout any
+	// The Server Name Indication value this listener expects. (AI-inferred)
+	SniName any
+	// The root certificate(s) trusted when validating a backend server's own TLS certificate. (AI-inferred)
+	TrustedRootCertificates any
+	// Whether the client certificate's own chain and expiry are validated, beyond simply checking against trusted roots. (AI-inferred)
+	ValidateCertChainAndExpiry any
+	// Whether SNI on this connection is validated against the presented certificate. (AI-inferred)
+	ValidateSni any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendSettingsCollection_Properties struct {
-	EnableL4ClientIpPreservation   any
-	HostName                       any
+	// Whether the original client IP address is preserved for Layer 4 traffic. (AI-inferred)
+	EnableL4ClientIpPreservation any
+	// The hostname this rule matches or targets. (AI-inferred)
+	HostName any
+	// Whether the `Host` header sent to the backend is derived from its own backend address, rather than a fixed value. (AI-inferred)
 	PickHostNameFromBackendAddress any
-	Port                           any
-	Probe                          any
-	Protocol                       any
-	ProvisioningState              any
-	Timeout                        any
-	TrustedRootCertificates        any
+	// A TCP or UDP port number. (AI-inferred)
+	Port any
+	// A reference to the health probe applied to this backend. (AI-inferred)
+	Probe any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// How long, in seconds, this operation waits before timing out. (AI-inferred)
+	Timeout any
+	// The root certificate(s) trusted when validating a backend server's own TLS certificate. (AI-inferred)
+	TrustedRootCertificates any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_BackendSettingsCollection struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_CustomErrorConfigurations struct {
+	// The URL of the custom error page served for this status code. (AI-inferred)
 	CustomErrorPageUrl any
-	StatusCode         any
+	// The HTTP status code returned. (AI-inferred)
+	StatusCode any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_EntraJwtvalidationConfigs_Properties struct {
-	Audiences                 any
-	ClientId                  any
-	ProvisioningState         any
-	TenantId                  any
+	// The intended audience value(s) a validated JWT must carry. (AI-inferred)
+	Audiences any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
+	// What happens to a request that fails JWT validation. (AI-inferred)
 	UnAuthorizedRequestAction any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_EntraJwtvalidationConfigs struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendIpconfigurations_Properties struct {
-	PrivateIpaddress          any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	PrivateLinkConfiguration  any
-	ProvisioningState         any
-	PublicIpaddress           any
-	Subnet                    any
+	// A reference to the Private Link configuration exposing this Application Gateway frontend. (AI-inferred)
+	PrivateLinkConfiguration any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendIpconfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendPorts_Properties struct {
-	Port              any
+	// A TCP or UDP port number. (AI-inferred)
+	Port any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_FrontendPorts struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_GlobalConfiguration struct {
+	// Whether the default `Server` response header is suppressed. (AI-inferred)
 	DisableDefaultServerHeaderInResponse any
-	EnableRequestBuffering               any
-	EnableResponseBuffering              any
+	// Whether request bodies are fully buffered before being forwarded to the backend. (AI-inferred)
+	EnableRequestBuffering any
+	// Whether response bodies are fully buffered before being returned to the client. (AI-inferred)
+	EnableResponseBuffering any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_HttpListeners_Properties struct {
-	CustomErrorConfigurations   any
-	FirewallPolicy              any
-	FrontendIpconfiguration     any
-	FrontendPort                any
-	HostName                    any
-	HostNames                   any
-	Protocol                    any
-	ProvisioningState           any
+	// Custom error page(s) served for specific HTTP status codes, instead of the default Azure error page. (AI-inferred)
+	CustomErrorConfigurations any
+	// A reference to the Web Application Firewall policy applied to this resource. (AI-inferred)
+	FirewallPolicy any
+	// A reference to the frontend IP configuration this rule listens on. (AI-inferred)
+	FrontendIpconfiguration any
+	// The external port this load-balancing or NAT rule listens on. (AI-inferred)
+	FrontendPort any
+	// The hostname this rule matches or targets. (AI-inferred)
+	HostName any
+	// The hostname(s) this rule matches. (AI-inferred)
+	HostNames any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Whether the client must send SNI for this listener to accept the connection. (AI-inferred)
 	RequireServerNameIndication any
-	SslCertificate              any
-	SslProfile                  any
+	// A reference to the TLS/SSL certificate this listener presents. (AI-inferred)
+	SslCertificate any
+	// A reference to the TLS/SSL profile applied to this listener. (AI-inferred)
+	SslProfile any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_HttpListeners struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Listeners_Properties struct {
+	// A reference to the frontend IP configuration this rule listens on. (AI-inferred)
 	FrontendIpconfiguration any
-	FrontendPort            any
-	HostNames               any
-	Protocol                any
-	ProvisioningState       any
-	SslCertificate          any
-	SslProfile              any
+	// The external port this load-balancing or NAT rule listens on. (AI-inferred)
+	FrontendPort any
+	// The hostname(s) this rule matches. (AI-inferred)
+	HostNames any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the TLS/SSL certificate this listener presents. (AI-inferred)
+	SslCertificate any
+	// A reference to the TLS/SSL profile applied to this listener. (AI-inferred)
+	SslProfile any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Listeners struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets_Properties struct {
+	// A reference to the backend address pool this rule sends matched traffic to. (AI-inferred)
 	BackendAddressPool any
-	WeightPerServer    any
+	// The relative weight assigned to each backend server for load distribution. (AI-inferred)
+	WeightPerServer any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties struct {
+	// The algorithm used to distribute matching traffic across backend targets, e.g. round-robin or IP hash. (AI-inferred)
 	LoadDistributionAlgorithm any
-	LoadDistributionTargets   any
-	ProvisioningState         any
+	// The weighted backend target(s) this load distribution policy routes traffic across. (AI-inferred)
+	LoadDistributionTargets any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_LoadDistributionPolicies struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties struct {
-	BackendAddresses        any
+	// The backend address(es) (by IP or NIC IP configuration) this pool routes traffic to. (AI-inferred)
+	BackendAddresses any
+	// The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred)
 	BackendIpconfigurations any
-	ProvisioningState       any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties struct {
-	BackendIpconfigurations      any
-	DrainPeriodInSeconds         any
-	InboundNatRules              any
+	// The backend IP configuration(s) (e.g. NIC IP configs) that make up this backend pool. (AI-inferred)
+	BackendIpconfigurations any
+	// How long a backend instance stays reachable for existing connections after being marked for removal, before the load balancer stops routing to it entirely. (AI-inferred)
+	DrainPeriodInSeconds any
+	// The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred)
+	InboundNatRules any
+	// The backend address(es) registered directly on the load balancer resource itself, rather than sourced from a NIC's own IP configuration. (AI-inferred)
 	LoadBalancerBackendAddresses any
-	LoadBalancingRules           any
-	Location                     any
-	OutboundRule                 any
-	OutboundRules                any
-	ProvisioningState            any
-	SyncMode                     any
-	TunnelInterfaces             any
-	VirtualNetwork               any
+	// The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred)
+	LoadBalancingRules any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// A reference to the outbound NAT rule associated with this resource. (AI-inferred)
+	OutboundRule any
+	// The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred)
+	OutboundRules any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Whether this backend pool's own membership is synced `Automatic`ally from attached NICs, or managed `Manual`ly via `load_balancer_backend_addresses`. (AI-inferred)
+	SyncMode any
+	// The tunnel endpoint(s) (their own IP addresses and roles) making up this VPN connection, one per active/standby tunnel instance. (AI-inferred)
+	TunnelInterfaces any
+	// A reference to the virtual network this resource is associated with. (AI-inferred)
+	VirtualNetwork any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties struct {
-	BackendAddressPool      any
-	BackendIpconfiguration  any
-	BackendPort             any
-	EnableFloatingIp        any
-	EnableTcpReset          any
+	// A reference to the backend address pool this rule sends matched traffic to. (AI-inferred)
+	BackendAddressPool any
+	// A reference to the backend network interface IP configuration this applies to. (AI-inferred)
+	BackendIpconfiguration any
+	// The port on the backend instance this rule forwards matched traffic to. (AI-inferred)
+	BackendPort any
+	// Whether this rule uses Floating IP (Direct Server Return) -- the backend sees the frontend's own IP as the destination, rather than its own. (AI-inferred)
+	EnableFloatingIp any
+	// Whether the load balancer sends a TCP reset when a connection is idle-timed-out or the backend becomes unavailable, so the client fails fast instead of hanging. (AI-inferred)
+	EnableTcpReset any
+	// A reference to the frontend IP configuration this rule listens on. (AI-inferred)
 	FrontendIpconfiguration any
-	FrontendPort            any
-	FrontendPortRangeEnd    any
-	FrontendPortRangeStart  any
-	IdleTimeoutInMinutes    any
-	Protocol                any
-	ProvisioningState       any
+	// The external port this load-balancing or NAT rule listens on. (AI-inferred)
+	FrontendPort any
+	// The last port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred)
+	FrontendPortRangeEnd any
+	// The first port, inclusive, in this inbound NAT pool's own frontend port range. (AI-inferred)
+	FrontendPortRangeStart any
+	// How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
+	IdleTimeoutInMinutes any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties struct {
-	AddressPrefix                      any
-	AddressPrefixes                    any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred)
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess              any
-	Delegations                        any
-	IpAllocations                      any
-	IpConfigurationProfiles            any
-	IpConfigurations                   any
-	IpamPoolPrefixAllocations          any
-	NatGateway                         any
-	NetworkSecurityGroup               any
-	PrivateEndpointNetworkPolicies     any
-	PrivateEndpoints                   any
-	PrivateLinkServiceNetworkPolicies  any
-	ProvisioningState                  any
-	Purpose                            any
-	ResourceNavigationLinks            any
-	RouteTable                         any
-	ServiceAssociationLinks            any
-	ServiceEndpointPolicies            any
-	ServiceEndpoints                   any
-	ServiceGateway                     any
-	SharingScope                       any
+	// Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
+	DefaultOutboundAccess any
+	// Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred)
+	Delegations any
+	// References to IP address pool allocations reserved for this subnet. (AI-inferred)
+	IpAllocations any
+	// Reusable IP configuration templates associated with this resource. (AI-inferred)
+	IpConfigurationProfiles any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
+	IpamPoolPrefixAllocations any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred)
+	PrivateEndpointNetworkPolicies any
+	// The Private Endpoint resources deployed in this subnet. (AI-inferred)
+	PrivateEndpoints any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred)
+	PrivateLinkServiceNetworkPolicies any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred)
+	Purpose any
+	// Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred)
+	ResourceNavigationLinks any
+	// A reference to the route table associated with this subnet. (AI-inferred)
+	RouteTable any
+	// Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred)
+	ServiceAssociationLinks any
+	// Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred)
+	ServiceEndpointPolicies any
+	// The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred)
+	ServiceEndpoints any
+	// A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
+	ServiceGateway any
+	// How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred)
+	SharingScope any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress          any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings             any
-	DeleteOption             any
-	DnsSettings              any
-	IdleTimeoutInMinutes     any
-	IpAddress                any
-	IpConfiguration          any
-	IpTags                   any
-	LinkedPublicIpaddress    any
-	MigrationPhase           any
-	NatGateway               any
-	ProvisioningState        any
-	PublicIpaddressVersion   any
+	// DDoS protection configuration for this public IP or virtual network. (AI-inferred)
+	DdosSettings any
+	// What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred)
+	DeleteOption any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
+	IdleTimeoutInMinutes any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// A reference to the IP configuration this resource is associated with. (AI-inferred)
+	IpConfiguration any
+	// IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred)
+	IpTags any
+	// A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred)
+	LinkedPublicIpaddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred)
+	PublicIpaddressVersion any
+	// Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred)
 	PublicIpallocationMethod any
-	PublicIpprefix           any
-	ResourceGuid             any
-	ServicePublicIpaddress   any
-	UpgradedToV2             any
+	// A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
+	PublicIpprefix any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred)
+	ServicePublicIpaddress any
+	// Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred)
+	UpgradedToV2 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
-	Sku              any
-	Zones            any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet_Properties struct {
-	AddressPrefix                      any
-	AddressPrefixes                    any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred)
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess              any
-	Delegations                        any
-	IpAllocations                      any
-	IpConfigurationProfiles            any
-	IpConfigurations                   any
-	IpamPoolPrefixAllocations          any
-	NatGateway                         any
-	NetworkSecurityGroup               any
-	PrivateEndpointNetworkPolicies     any
-	PrivateEndpoints                   any
-	PrivateLinkServiceNetworkPolicies  any
-	ProvisioningState                  any
-	Purpose                            any
-	ResourceNavigationLinks            any
-	RouteTable                         any
-	ServiceAssociationLinks            any
-	ServiceEndpointPolicies            any
-	ServiceEndpoints                   any
-	ServiceGateway                     any
-	SharingScope                       any
+	// Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
+	DefaultOutboundAccess any
+	// Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred)
+	Delegations any
+	// References to IP address pool allocations reserved for this subnet. (AI-inferred)
+	IpAllocations any
+	// Reusable IP configuration templates associated with this resource. (AI-inferred)
+	IpConfigurationProfiles any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
+	IpamPoolPrefixAllocations any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred)
+	PrivateEndpointNetworkPolicies any
+	// The Private Endpoint resources deployed in this subnet. (AI-inferred)
+	PrivateEndpoints any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred)
+	PrivateLinkServiceNetworkPolicies any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred)
+	Purpose any
+	// Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred)
+	ResourceNavigationLinks any
+	// A reference to the route table associated with this subnet. (AI-inferred)
+	RouteTable any
+	// Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred)
+	ServiceAssociationLinks any
+	// Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred)
+	ServiceEndpointPolicies any
+	// The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred)
+	ServiceEndpoints any
+	// A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
+	ServiceGateway any
+	// How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred)
+	SharingScope any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress          any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties struct {
-	DdosSettings             any
-	DeleteOption             any
-	DnsSettings              any
-	IdleTimeoutInMinutes     any
-	IpAddress                any
-	IpConfiguration          any
-	IpTags                   any
-	LinkedPublicIpaddress    any
-	MigrationPhase           any
-	NatGateway               any
-	ProvisioningState        any
-	PublicIpaddressVersion   any
+	// DDoS protection configuration for this public IP or virtual network. (AI-inferred)
+	DdosSettings any
+	// What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred)
+	DeleteOption any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
+	IdleTimeoutInMinutes any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// A reference to the IP configuration this resource is associated with. (AI-inferred)
+	IpConfiguration any
+	// IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred)
+	IpTags any
+	// A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred)
+	LinkedPublicIpaddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred)
+	PublicIpaddressVersion any
+	// Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred)
 	PublicIpallocationMethod any
-	PublicIpprefix           any
-	ResourceGuid             any
-	ServicePublicIpaddress   any
-	UpgradedToV2             any
+	// A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
+	PublicIpprefix any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred)
+	ServicePublicIpaddress any
+	// Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred)
+	UpgradedToV2 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
-	Sku              any
-	Zones            any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties struct {
-	AddressPrefix                      any
-	AddressPrefixes                    any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred)
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess              any
-	Delegations                        any
-	IpAllocations                      any
-	IpConfigurationProfiles            any
-	IpConfigurations                   any
-	IpamPoolPrefixAllocations          any
-	NatGateway                         any
-	NetworkSecurityGroup               any
-	PrivateEndpointNetworkPolicies     any
-	PrivateEndpoints                   any
-	PrivateLinkServiceNetworkPolicies  any
-	ProvisioningState                  any
-	Purpose                            any
-	ResourceNavigationLinks            any
-	RouteTable                         any
-	ServiceAssociationLinks            any
-	ServiceEndpointPolicies            any
-	ServiceEndpoints                   any
-	ServiceGateway                     any
-	SharingScope                       any
+	// Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
+	DefaultOutboundAccess any
+	// Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred)
+	Delegations any
+	// References to IP address pool allocations reserved for this subnet. (AI-inferred)
+	IpAllocations any
+	// Reusable IP configuration templates associated with this resource. (AI-inferred)
+	IpConfigurationProfiles any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
+	IpamPoolPrefixAllocations any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred)
+	PrivateEndpointNetworkPolicies any
+	// The Private Endpoint resources deployed in this subnet. (AI-inferred)
+	PrivateEndpoints any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred)
+	PrivateLinkServiceNetworkPolicies any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred)
+	Purpose any
+	// Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred)
+	ResourceNavigationLinks any
+	// A reference to the route table associated with this subnet. (AI-inferred)
+	RouteTable any
+	// Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred)
+	ServiceAssociationLinks any
+	// Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred)
+	ServiceEndpointPolicies any
+	// The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred)
+	ServiceEndpoints any
+	// A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
+	ServiceGateway any
+	// How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred)
+	SharingScope any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties struct {
-	DdosSettings              any
-	EnableConnectionTracking  any
-	GatewayLoadBalancer       any
-	InboundNatPools           any
-	InboundNatRules           any
-	LoadBalancingRules        any
-	OutboundRules             any
-	PrivateIpaddress          any
-	PrivateIpaddressVersion   any
+	// DDoS protection configuration for this public IP or virtual network. (AI-inferred)
+	DdosSettings any
+	// Whether this rule tracks individual connections for graceful behavior on backend pool membership changes, rather than treating every packet independently. (AI-inferred)
+	EnableConnectionTracking any
+	// A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
+	GatewayLoadBalancer any
+	// A range of ports reserved on the load balancer's own frontend, auto-allocated one-to-one to backend instances for inbound NAT (typically used by a scale set). (AI-inferred)
+	InboundNatPools any
+	// The inbound NAT rules on this load balancer, each forwarding one external port to one specific backend instance. (AI-inferred)
+	InboundNatRules any
+	// The load-balancing rules on this load balancer, each mapping a frontend IP/port to a backend pool. (AI-inferred)
+	LoadBalancingRules any
+	// The outbound NAT rules on this load balancer, controlling how backend instances reach the internet through it. (AI-inferred)
+	OutboundRules any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	PublicIpprefix            any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
+	PublicIpprefix any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Zones      any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties struct {
+	// The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration     any
-	DestinationPort                                any
-	NetworkInterfaceTapConfigurations              any
-	ProvisioningState                              any
-	ResourceGuid                                   any
+	// The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
+	DestinationNetworkInterfaceIpconfiguration any
+	// The port this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationPort any
+	// The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred)
+	NetworkInterfaceTapConfigurations any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties struct {
+	// The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups             any
-	GatewayLoadBalancer                   any
-	LoadBalancerBackendAddressPools       any
-	LoadBalancerInboundNatRules           any
-	Primary                               any
-	PrivateIpaddress                      any
-	PrivateIpaddressPrefixLength          any
-	PrivateIpaddressVersion               any
-	PrivateIpallocationMethod             any
-	PrivateLinkConnectionProperties       any
-	ProvisioningState                     any
-	PublicIpaddress                       any
-	Subnet                                any
-	VirtualNetworkTaps                    any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
+	GatewayLoadBalancer any
+	// The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
+	LoadBalancerBackendAddressPools any
+	// The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred)
+	LoadBalancerInboundNatRules any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred)
+	PrivateIpaddressPrefixLength any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
+	PrivateIpallocationMethod any
+	// The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred)
+	PrivateLinkConnectionProperties any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
+	// The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred)
+	VirtualNetworkTaps any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets_Properties struct {
-	AddressPrefix                      any
-	AddressPrefixes                    any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred)
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess              any
-	Delegations                        any
-	IpAllocations                      any
-	IpConfigurationProfiles            any
-	IpConfigurations                   any
-	IpamPoolPrefixAllocations          any
-	NatGateway                         any
-	NetworkSecurityGroup               any
-	PrivateEndpointNetworkPolicies     any
-	PrivateEndpoints                   any
-	PrivateLinkServiceNetworkPolicies  any
-	ProvisioningState                  any
-	Purpose                            any
-	ResourceNavigationLinks            any
-	RouteTable                         any
-	ServiceAssociationLinks            any
-	ServiceEndpointPolicies            any
-	ServiceEndpoints                   any
-	ServiceGateway                     any
-	SharingScope                       any
+	// Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
+	DefaultOutboundAccess any
+	// Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred)
+	Delegations any
+	// References to IP address pool allocations reserved for this subnet. (AI-inferred)
+	IpAllocations any
+	// Reusable IP configuration templates associated with this resource. (AI-inferred)
+	IpConfigurationProfiles any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
+	IpamPoolPrefixAllocations any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred)
+	PrivateEndpointNetworkPolicies any
+	// The Private Endpoint resources deployed in this subnet. (AI-inferred)
+	PrivateEndpoints any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred)
+	PrivateLinkServiceNetworkPolicies any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred)
+	Purpose any
+	// Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred)
+	ResourceNavigationLinks any
+	// A reference to the route table associated with this subnet. (AI-inferred)
+	RouteTable any
+	// Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred)
+	ServiceAssociationLinks any
+	// Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred)
+	ServiceEndpointPolicies any
+	// The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred)
+	ServiceEndpoints any
+	// A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
+	ServiceGateway any
+	// How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred)
+	SharingScope any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties struct {
+	// Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred)
 	DefaultSecurityRules any
-	FlowLogs             any
-	FlushConnection      any
-	NetworkInterfaces    any
-	ProvisioningState    any
-	ResourceGuid         any
-	SecurityRules        any
-	Subnets              any
+	// The flow log(s) configured on this Network Security Group. (AI-inferred)
+	FlowLogs any
+	// Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred)
+	FlushConnection any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The custom (non-default) security rules on this Network Security Group. (AI-inferred)
+	SecurityRules any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties struct {
-	Primary                   any
-	PrivateIpaddress          any
-	PrivateIpaddressVersion   any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier                    any
-	PrivateEndpoint                   any
-	PrivateEndpointLocation           any
+	// Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred)
+	LinkIdentifier any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The region a private endpoint connecting to this Private Link service is created in, when different from the service's own region. (AI-inferred)
+	PrivateEndpointLocation any
+	// The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode                           any
-	Alias                                any
-	AutoApproval                         any
-	DestinationIpaddress                 any
-	EnableProxyProtocol                  any
-	Fqdns                                any
-	IpConfigurations                     any
+	// Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
+	AccessMode any
+	// Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
+	Alias any
+	// The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
+	AutoApproval any
+	// The IP address this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationIpaddress any
+	// Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
+	EnableProxyProtocol any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces                    any
-	PrivateEndpointConnections           any
-	ProvisioningState                    any
-	Visibility                           any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
+	PrivateEndpointConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
+	Visibility any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties struct {
+	// The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups             any
-	GatewayLoadBalancer                   any
-	LoadBalancerBackendAddressPools       any
-	LoadBalancerInboundNatRules           any
-	Primary                               any
-	PrivateIpaddress                      any
-	PrivateIpaddressPrefixLength          any
-	PrivateIpaddressVersion               any
-	PrivateIpallocationMethod             any
-	PrivateLinkConnectionProperties       any
-	ProvisioningState                     any
-	PublicIpaddress                       any
-	Subnet                                any
-	VirtualNetworkTaps                    any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
+	GatewayLoadBalancer any
+	// The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
+	LoadBalancerBackendAddressPools any
+	// The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred)
+	LoadBalancerInboundNatRules any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred)
+	PrivateIpaddressPrefixLength any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
+	PrivateIpallocationMethod any
+	// The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred)
+	PrivateLinkConnectionProperties any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
+	// The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred)
+	VirtualNetworkTaps any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
+	// The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration     any
-	DestinationPort                                any
-	NetworkInterfaceTapConfigurations              any
-	ProvisioningState                              any
-	ResourceGuid                                   any
+	// The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
+	DestinationNetworkInterfaceIpconfiguration any
+	// The port this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationPort any
+	// The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred)
+	NetworkInterfaceTapConfigurations any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
+	// A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred)
 	VirtualNetworkTap any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode                      any
-	AuxiliarySku                       any
+	// The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
+	AuxiliaryMode any
+	// The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
+	AuxiliarySku any
+	// Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking            any
-	DnsSettings                        any
-	DscpConfiguration                  any
-	EnableAcceleratedNetworking        any
-	EnableIpforwarding                 any
-	HostedWorkloads                    any
-	IpConfigurations                   any
-	MacAddress                         any
-	MigrationPhase                     any
-	NetworkSecurityGroup               any
-	NicType                            any
-	Primary                            any
-	PrivateEndpoint                    any
-	PrivateLinkService                 any
-	ProvisioningState                  any
-	ResourceGuid                       any
-	TapConfigurations                  any
-	VirtualMachine                     any
-	VnetEncryptionSupported            any
-	WorkloadType                       any
+	// Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
+	DscpConfiguration any
+	// Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
+	EnableAcceleratedNetworking any
+	// Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
+	EnableIpforwarding any
+	// Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
+	HostedWorkloads any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Output only. The MAC address assigned to this network interface. (AI-inferred)
+	MacAddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
+	NicType any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
+	PrivateLinkService any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
+	TapConfigurations any
+	// A reference to the virtual machine this network interface is attached to. (AI-inferred)
+	VirtualMachine any
+	// Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
+	VnetEncryptionSupported any
+	// The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
+	WorkloadType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress          any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings             any
-	DeleteOption             any
-	DnsSettings              any
-	IdleTimeoutInMinutes     any
-	IpAddress                any
-	IpConfiguration          any
-	IpTags                   any
-	LinkedPublicIpaddress    any
-	MigrationPhase           any
-	NatGateway               any
-	ProvisioningState        any
-	PublicIpaddressVersion   any
+	// DDoS protection configuration for this public IP or virtual network. (AI-inferred)
+	DdosSettings any
+	// What happens to this resource when its own parent (e.g. the VM or NIC it's attached to) is deleted -- `Delete` it too, or `Detach` and leave it standing. (AI-inferred)
+	DeleteOption any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// How many minutes an idle connection is kept open before this resource closes it. (AI-inferred)
+	IdleTimeoutInMinutes any
+	// An IP address value. (AI-inferred)
+	IpAddress any
+	// A reference to the IP configuration this resource is associated with. (AI-inferred)
+	IpConfiguration any
+	// IP address tags -- provider-assigned category labels (e.g. for a specific Azure service edge) attached to this public IP address. (AI-inferred)
+	IpTags any
+	// A reference to a second Public IP Address resource this one is linked to, e.g. its own IPv4/IPv6 counterpart. (AI-inferred)
+	LinkedPublicIpaddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Whether this public IP address is `IPv4` or `IPv6`. (AI-inferred)
+	PublicIpaddressVersion any
+	// Whether this public IP address is `Static` (fixed for the resource's lifetime) or `Dynamic` (may change if the resource is deleted and recreated). (AI-inferred)
 	PublicIpallocationMethod any
-	PublicIpprefix           any
-	ResourceGuid             any
-	ServicePublicIpaddress   any
-	UpgradedToV2             any
+	// A reference to the Public IP Prefix resource this address is allocated from. (AI-inferred)
+	PublicIpprefix any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Public IP Address resource this managed service uses for outbound/inbound connectivity. (AI-inferred)
+	ServicePublicIpaddress any
+	// Whether this resource has been upgraded to its own newer, v2 SKU/architecture. (AI-inferred)
+	UpgradedToV2 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
-	Sku              any
-	Zones            any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties struct {
+	// The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration     any
-	DestinationPort                                any
-	NetworkInterfaceTapConfigurations              any
-	ProvisioningState                              any
-	ResourceGuid                                   any
+	// The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
+	DestinationNetworkInterfaceIpconfiguration any
+	// The port this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationPort any
+	// The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred)
+	NetworkInterfaceTapConfigurations any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties struct {
+	// The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups             any
-	GatewayLoadBalancer                   any
-	LoadBalancerBackendAddressPools       any
-	LoadBalancerInboundNatRules           any
-	Primary                               any
-	PrivateIpaddress                      any
-	PrivateIpaddressPrefixLength          any
-	PrivateIpaddressVersion               any
-	PrivateIpallocationMethod             any
-	PrivateLinkConnectionProperties       any
-	ProvisioningState                     any
-	PublicIpaddress                       any
-	Subnet                                any
-	VirtualNetworkTaps                    any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
+	GatewayLoadBalancer any
+	// The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
+	LoadBalancerBackendAddressPools any
+	// The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred)
+	LoadBalancerInboundNatRules any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred)
+	PrivateIpaddressPrefixLength any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
+	PrivateIpallocationMethod any
+	// The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred)
+	PrivateLinkConnectionProperties any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
+	// The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred)
+	VirtualNetworkTaps any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode                           any
-	Alias                                any
-	AutoApproval                         any
-	DestinationIpaddress                 any
-	EnableProxyProtocol                  any
-	Fqdns                                any
-	IpConfigurations                     any
+	// Whether access through this resource is `Auto` (Azure-managed) or `Manual`. (AI-inferred)
+	AccessMode any
+	// Output only. An auto-generated, globally unique moniker for this Private Link service, given to consumers instead of its full resource ID. (AI-inferred)
+	Alias any
+	// The subscription(s) whose private endpoint connection requests to this Private Link service are approved automatically, without the owner reviewing each one. (AI-inferred)
+	AutoApproval any
+	// The IP address this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationIpaddress any
+	// Whether this resource prepends PROXY protocol headers (carrying the original client IP) to forwarded connections, so the backend can see the real source despite NAT. (AI-inferred)
+	EnableProxyProtocol any
+	// The fully qualified domain name(s) associated with this resource. (AI-inferred)
+	Fqdns any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// The load balancer frontend IP configuration(s) this Private Link service is exposed through. (AI-inferred)
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces                    any
-	PrivateEndpointConnections           any
-	ProvisioningState                    any
-	Visibility                           any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
+	PrivateEndpointConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The subscription(s) allowed to see and request a connection to this Private Link service at all -- narrower than, and a prerequisite for, `auto_approval`. (AI-inferred)
+	Visibility any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties struct {
+	// The Application Gateway backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups             any
-	GatewayLoadBalancer                   any
-	LoadBalancerBackendAddressPools       any
-	LoadBalancerInboundNatRules           any
-	Primary                               any
-	PrivateIpaddress                      any
-	PrivateIpaddressPrefixLength          any
-	PrivateIpaddressVersion               any
-	PrivateIpallocationMethod             any
-	PrivateLinkConnectionProperties       any
-	ProvisioningState                     any
-	PublicIpaddress                       any
-	Subnet                                any
-	VirtualNetworkTaps                    any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// A reference to a Gateway Load Balancer this resource chains its traffic through, for third-party network virtual appliance inspection. (AI-inferred)
+	GatewayLoadBalancer any
+	// The Load Balancer backend address pool(s) this network interface's IP configuration belongs to. (AI-inferred)
+	LoadBalancerBackendAddressPools any
+	// The Load Balancer inbound NAT rule(s) this network interface's IP configuration is a target of. (AI-inferred)
+	LoadBalancerInboundNatRules any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// The subnet mask length (CIDR prefix) applied to `private_ipaddress`. (AI-inferred)
+	PrivateIpaddressPrefixLength any
+	// Whether the private IP address for this configuration is `IPv4` or `IPv6`. (AI-inferred)
+	PrivateIpaddressVersion any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
+	PrivateIpallocationMethod any
+	// The connection-specific properties (group ID, FQDNs, request message) carried by this Private Link connection. (AI-inferred)
+	PrivateLinkConnectionProperties any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
+	// The Virtual Network TAP(s) mirroring this resource's own traffic. (AI-inferred)
+	VirtualNetworkTaps any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
+	// The load balancer frontend IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration     any
-	DestinationPort                                any
-	NetworkInterfaceTapConfigurations              any
-	ProvisioningState                              any
-	ResourceGuid                                   any
+	// The network interface IP configuration this Virtual Network TAP mirrors traffic to. (AI-inferred)
+	DestinationNetworkInterfaceIpconfiguration any
+	// The port this NAT rule forwards matched traffic to. (AI-inferred)
+	DestinationPort any
+	// The Virtual Network TAP configuration(s) attached to this network interface. (AI-inferred)
+	NetworkInterfaceTapConfigurations any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
+	// A reference to the Virtual Network TAP this configuration mirrors traffic to. (AI-inferred)
 	VirtualNetworkTap any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode                      any
-	AuxiliarySku                       any
+	// The auxiliary networking mode for this network interface -- e.g. `MaxConnections` or `Floating`, used for network appliance scenarios needing more than the standard connection limits. (AI-inferred)
+	AuxiliaryMode any
+	// The SKU sizing the auxiliary networking capacity `auxiliary_mode` provides for this network interface. (AI-inferred)
+	AuxiliarySku any
+	// Whether this network interface gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking            any
-	DnsSettings                        any
-	DscpConfiguration                  any
-	EnableAcceleratedNetworking        any
-	EnableIpforwarding                 any
-	HostedWorkloads                    any
-	IpConfigurations                   any
-	MacAddress                         any
-	MigrationPhase                     any
-	NetworkSecurityGroup               any
-	NicType                            any
-	Primary                            any
-	PrivateEndpoint                    any
-	PrivateLinkService                 any
-	ProvisioningState                  any
-	ResourceGuid                       any
-	TapConfigurations                  any
-	VirtualMachine                     any
-	VnetEncryptionSupported            any
-	WorkloadType                       any
+	// Whether this network interface skips TCP connection state tracking, typically for network virtual appliances that need to see raw, untracked packet flow. (AI-inferred)
+	DisableTcpStateTracking any
+	// DNS configuration for this public IP address, controlling its own domain name label and reverse DNS record. (AI-inferred)
+	DnsSettings any
+	// A reference to the DSCP (traffic prioritization) configuration applied to this network interface. (AI-inferred)
+	DscpConfiguration any
+	// Whether accelerated networking (SR-IOV-based, lower-latency networking) is enabled on this network interface. (AI-inferred)
+	EnableAcceleratedNetworking any
+	// Whether this network interface can forward traffic not addressed to one of its own IP addresses -- required for network virtual appliance scenarios. (AI-inferred)
+	EnableIpforwarding any
+	// Output only. The resource ID(s) of workloads (e.g. Private Link services) currently hosted on this network interface. (AI-inferred)
+	HostedWorkloads any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Output only. The MAC address assigned to this network interface. (AI-inferred)
+	MacAddress any
+	// Which phase of a live migration (e.g. between IP address versions or gateway SKUs) this resource is currently in. (AI-inferred)
+	MigrationPhase any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether this is a `Standard` network interface or `Elastic` (used by certain high-performance appliance scenarios). (AI-inferred)
+	NicType any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// A reference to the Private Link service this resource connects to or exposes. (AI-inferred)
+	PrivateLinkService any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The Virtual Network TAP configuration(s) mirroring this network interface's own traffic. (AI-inferred)
+	TapConfigurations any
+	// A reference to the virtual machine this network interface is attached to. (AI-inferred)
+	VirtualMachine any
+	// Output only. Whether the virtual network this network interface is attached to supports VNet encryption. (AI-inferred)
+	VnetEncryptionSupported any
+	// The kind of workload hosted on this network interface, when it's dedicated to a specific managed service. (AI-inferred)
+	WorkloadType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
+	// Output only. The built-in security rules Azure automatically adds to every Network Security Group, which can't be removed (only overridden by a higher-priority custom rule). (AI-inferred)
 	DefaultSecurityRules any
-	FlowLogs             any
-	FlushConnection      any
-	NetworkInterfaces    any
-	ProvisioningState    any
-	ResourceGuid         any
-	SecurityRules        any
-	Subnets              any
+	// The flow log(s) configured on this Network Security Group. (AI-inferred)
+	FlowLogs any
+	// Whether existing, already-established connections are re-evaluated (and dropped if no longer allowed) immediately when this security rule changes, rather than only affecting new connections. (AI-inferred)
+	FlushConnection any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The custom (non-default) security rules on this Network Security Group. (AI-inferred)
+	SecurityRules any
+	// The subnets belonging to this virtual network or gateway. (AI-inferred)
+	Subnets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties struct {
-	AddressPrefix                      any
-	AddressPrefixes                    any
+	// An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
+	AddressPrefix any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The IP configuration(s) an Application Gateway uses within this subnet. (AI-inferred)
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess              any
-	Delegations                        any
-	IpAllocations                      any
-	IpConfigurationProfiles            any
-	IpConfigurations                   any
-	IpamPoolPrefixAllocations          any
-	NatGateway                         any
-	NetworkSecurityGroup               any
-	PrivateEndpointNetworkPolicies     any
-	PrivateEndpoints                   any
-	PrivateLinkServiceNetworkPolicies  any
-	ProvisioningState                  any
-	Purpose                            any
-	ResourceNavigationLinks            any
-	RouteTable                         any
-	ServiceAssociationLinks            any
-	ServiceEndpointPolicies            any
-	ServiceEndpoints                   any
-	ServiceGateway                     any
-	SharingScope                       any
+	// Whether this subnet gets default outbound internet access without an explicit NAT Gateway, load balancer, or public IP. (AI-inferred)
+	DefaultOutboundAccess any
+	// Delegates this subnet's own control to a specific Azure PaaS service, letting that service manage resources directly inside it. (AI-inferred)
+	Delegations any
+	// References to IP address pool allocations reserved for this subnet. (AI-inferred)
+	IpAllocations any
+	// Reusable IP configuration templates associated with this resource. (AI-inferred)
+	IpConfigurationProfiles any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
+	IpamPoolPrefixAllocations any
+	// A reference to the NAT Gateway this subnet or IP configuration routes outbound traffic through. (AI-inferred)
+	NatGateway any
+	// A reference to the Network Security Group applied to this subnet or network interface. (AI-inferred)
+	NetworkSecurityGroup any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for private endpoints in this subnet. (AI-inferred)
+	PrivateEndpointNetworkPolicies any
+	// The Private Endpoint resources deployed in this subnet. (AI-inferred)
+	PrivateEndpoints any
+	// Whether network security group and route table policies are enforced (`Enabled`) or bypassed (`Disabled`) for Private Link services in this subnet. (AI-inferred)
+	PrivateLinkServiceNetworkPolicies any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Output only. What this resource is being used for, when it was created automatically on behalf of another resource. (AI-inferred)
+	Purpose any
+	// Output only. Links to the specific external resource(s) that own or manage this subnet, when it was delegated to or created by another Azure service. (AI-inferred)
+	ResourceNavigationLinks any
+	// A reference to the route table associated with this subnet. (AI-inferred)
+	RouteTable any
+	// Output only. Links identifying the Azure service(s) this subnet has been associated with, e.g. by delegation. (AI-inferred)
+	ServiceAssociationLinks any
+	// Service endpoint policies restricting which specific service resources this subnet's own service endpoint traffic can reach. (AI-inferred)
+	ServiceEndpointPolicies any
+	// The Azure service(s) (e.g. `Microsoft.Storage`) this subnet has a direct, private route to via service endpoints, bypassing the public internet. (AI-inferred)
+	ServiceEndpoints any
+	// A reference to the service (VPN/ExpressRoute) gateway associated with this resource. (AI-inferred)
+	ServiceGateway any
+	// How broadly this resource can be shared -- e.g. `Tenant` (any resource in the tenant) or `DelegatedServices` (only specific delegated Azure services). (AI-inferred)
+	SharingScope any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties struct {
-	ApplicationSecurityGroups           any
-	BillingSku                          any
-	CustomDnsConfigs                    any
-	CustomNetworkInterfaceName          any
-	IpConfigurations                    any
-	IpVersionType                       any
+	// The Application Security Group(s) this network interface's IP configuration belongs to, letting security rules elsewhere match traffic to/from it by group membership instead of by raw IP. (AI-inferred)
+	ApplicationSecurityGroups any
+	// The billing tier for this ExpressRoute circuit, e.g. `MeteredData` (pay per GB) or `UnlimitedData` (flat rate). (AI-inferred)
+	BillingSku any
+	// DNS records this private endpoint registers for the target service's own FQDN(s), resolved to the endpoint's private IP address. (AI-inferred)
+	CustomDnsConfigs any
+	// A caller-chosen name for the network interface this private endpoint automatically creates, instead of an auto-generated one. (AI-inferred)
+	CustomNetworkInterfaceName any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// Whether this configuration applies to `IPv4`, `IPv6`, or both. (AI-inferred)
+	IpVersionType any
+	// Private Link service connection(s) requiring manual approval by the service owner, rather than automatic approval. (AI-inferred)
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces                   any
-	PrivateLinkServiceConnections       any
-	ProvisioningState                   any
-	Subnet                              any
+	// The network interface(s) attached to this resource. (AI-inferred)
+	NetworkInterfaces any
+	// The Private Link service connection(s) this private endpoint establishes. (AI-inferred)
+	PrivateLinkServiceConnections any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
-	Etag             any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The edge or custom location (e.g. an Azure Extended Zone or Arc-connected site) this resource is deployed to, when it isn't a standard Azure region. (AI-inferred)
 	ExtendedLocation any
-	Properties       any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier                    any
-	PrivateEndpoint                   any
+	// Output only. A unique identifier for this specific ExpressRoute physical link within its own port. (AI-inferred)
+	LinkIdentifier any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service -- whether it's been approved, rejected, or still pending, and any action the service owner still needs to take. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateEndpointConnections struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties struct {
-	Primary                   any
-	PrivateIpaddress          any
+	// Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
+	Primary any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties_IpConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties struct {
-	IpConfigurations  any
+	// The IP configuration(s) (private/public address, subnet) attached to this resource. (AI-inferred)
+	IpConfigurations any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes_Properties_Match struct {
-	Body        any
+	// The body content of this fixed response. (AI-inferred)
+	Body any
+	// The HTTP status code(s) this rule matches. (AI-inferred)
 	StatusCodes any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes_Properties struct {
-	EnableProbeProxyProtocolHeader      any
-	Host                                any
-	Interval                            any
-	Match                               any
-	MinServers                          any
-	Path                                any
+	// Whether PROXY protocol headers are prepended when this health probe connects to the backend. (AI-inferred)
+	EnableProbeProxyProtocolHeader any
+	// The hostname this rule matches or targets. (AI-inferred)
+	Host any
+	// How often, in seconds, this health probe runs. (AI-inferred)
+	Interval any
+	// The condition this rule matches against. (AI-inferred)
+	Match any
+	// The minimum number of backend server(s) kept warm, even when idle. (AI-inferred)
+	MinServers any
+	// The URL path this rule matches or targets. (AI-inferred)
+	Path any
+	// Whether the health probe's own host header is derived from the associated backend HTTP settings, rather than a fixed value. (AI-inferred)
 	PickHostNameFromBackendHttpSettings any
-	PickHostNameFromBackendSettings     any
-	Port                                any
-	Protocol                            any
-	ProvisioningState                   any
-	Timeout                             any
-	UnhealthyThreshold                  any
+	// Whether the health probe's own host header is derived from the associated backend settings, rather than a fixed value. (AI-inferred)
+	PickHostNameFromBackendSettings any
+	// A TCP or UDP port number. (AI-inferred)
+	Port any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// How long, in seconds, this operation waits before timing out. (AI-inferred)
+	Timeout any
+	// How many consecutive failed probes mark a backend instance unhealthy. (AI-inferred)
+	UnhealthyThreshold any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Probes struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RedirectConfigurations_Properties struct {
-	IncludePath         any
-	IncludeQueryString  any
-	PathRules           any
-	RedirectType        any
+	// Whether the request path is included when computing session affinity or matching. (AI-inferred)
+	IncludePath any
+	// Whether the query string is included when computing session affinity or matching. (AI-inferred)
+	IncludeQueryString any
+	// The path-based routing rule(s) making up this URL path map. (AI-inferred)
+	PathRules any
+	// The kind of HTTP redirect issued, e.g. `Permanent` or `Found`. (AI-inferred)
+	RedirectType any
+	// The routing rule(s) mapping incoming listener traffic to a backend or redirect. (AI-inferred)
 	RequestRoutingRules any
-	TargetListener      any
-	TargetUrl           any
-	UrlPathMaps         any
+	// A reference to the listener traffic is redirected to. (AI-inferred)
+	TargetListener any
+	// The URL traffic is redirected to. (AI-inferred)
+	TargetUrl any
+	// The URL path map(s) available for routing rules to use. (AI-inferred)
+	UrlPathMaps any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RedirectConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RequestRoutingRules_Properties struct {
-	BackendAddressPool       any
-	BackendHttpSettings      any
+	// A reference to the backend address pool this rule sends matched traffic to. (AI-inferred)
+	BackendAddressPool any
+	// The HTTP setting(s) (protocol, port, timeout) applied when forwarding to a backend pool. (AI-inferred)
+	BackendHttpSettings any
+	// Configuration for validating a Microsoft Entra ID-issued JWT presented by the client. (AI-inferred)
 	EntraJwtvalidationConfig any
-	HttpListener             any
-	LoadDistributionPolicy   any
-	Priority                 any
-	ProvisioningState        any
-	RedirectConfiguration    any
-	RewriteRuleSet           any
-	RuleType                 any
-	UrlPathMap               any
+	// A reference to the HTTP listener this rule applies to. (AI-inferred)
+	HttpListener any
+	// A reference to the load distribution policy applied by this rule. (AI-inferred)
+	LoadDistributionPolicy any
+	// The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
+	Priority any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the redirect configuration applied by this rule. (AI-inferred)
+	RedirectConfiguration any
+	// A reference to the rewrite rule set applied by this rule. (AI-inferred)
+	RewriteRuleSet any
+	// The kind of matching this rule performs, e.g. `Basic` or `PathBasedRouting`. (AI-inferred)
+	RuleType any
+	// A reference to the URL path map this rule uses for path-based routing. (AI-inferred)
+	UrlPathMap any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RequestRoutingRules struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations_HeaderValueMatcher struct {
+	// Whether this pattern match is case-insensitive. (AI-inferred)
 	IgnoreCase any
-	Negate     any
-	Pattern    any
+	// Whether this condition's own result is inverted. (AI-inferred)
+	Negate any
+	// The pattern matched against. (AI-inferred)
+	Pattern any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations struct {
-	HeaderName         any
-	HeaderValue        any
+	// The name of the HTTP header this rule reads or sets. (AI-inferred)
+	HeaderName any
+	// The value the HTTP header is set to. (AI-inferred)
+	HeaderValue any
+	// The pattern this header's own value is matched against. (AI-inferred)
 	HeaderValueMatcher any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_UrlConfiguration struct {
-	ModifiedPath        any
+	// The path substituted in place of the matched URL path. (AI-inferred)
+	ModifiedPath any
+	// The query string substituted in place of the matched one. (AI-inferred)
 	ModifiedQueryString any
-	Reroute             any
+	// Whether matching traffic is rerouted to a different target. (AI-inferred)
+	Reroute any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet struct {
-	RequestHeaderConfigurations  any
+	// Request header modification(s) applied by this rewrite rule. (AI-inferred)
+	RequestHeaderConfigurations any
+	// Response header modification(s) applied by this rewrite rule. (AI-inferred)
 	ResponseHeaderConfigurations any
-	UrlConfiguration             any
+	// URL rewrite configuration applied by this rewrite rule. (AI-inferred)
+	UrlConfiguration any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_Conditions struct {
+	// Whether this pattern match is case-insensitive. (AI-inferred)
 	IgnoreCase any
-	Negate     any
-	Pattern    any
-	Variable   any
+	// Whether this condition's own result is inverted. (AI-inferred)
+	Negate any
+	// The pattern matched against. (AI-inferred)
+	Pattern any
+	// The request attribute this rewrite rule reads from or writes to. (AI-inferred)
+	Variable any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules struct {
-	ActionSet    any
-	Conditions   any
-	Name         any
+	// The set of action(s) taken when this rewrite rule's own condition matches. (AI-inferred)
+	ActionSet any
+	// The condition(s) that must be satisfied for this rule to apply. (AI-inferred)
+	Conditions any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The relative evaluation order of this rule. (AI-inferred)
 	RuleSequence any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	RewriteRules      any
+	// The individual rewrite rule(s) making up this rewrite rule set. (AI-inferred)
+	RewriteRules any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RewriteRuleSets struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RoutingRules_Properties struct {
+	// A reference to the backend address pool this rule sends matched traffic to. (AI-inferred)
 	BackendAddressPool any
-	BackendSettings    any
-	Listener           any
-	Priority           any
-	ProvisioningState  any
-	RuleType           any
+	// The setting(s) applied when forwarding traffic to a backend pool. (AI-inferred)
+	BackendSettings any
+	// A reference to the listener this rule applies to. (AI-inferred)
+	Listener any
+	// The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
+	Priority any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The kind of matching this rule performs, e.g. `Basic` or `PathBasedRouting`. (AI-inferred)
+	RuleType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_RoutingRules struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_Sku struct {
+	// The number of instance(s) this resource is provisioned with. (AI-inferred)
 	Capacity any
-	Family   any
-	Name     any
-	Tier     any
+	// The generation or family this SKU belongs to. (AI-inferred)
+	Family any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred)
+	Tier any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates_Properties_Hsm struct {
-	KeyId          any
+	// A reference to the Key Vault key used to protect this resource. (AI-inferred)
+	KeyId any
+	// The base64-encoded public certificate data used to authenticate a point-to-site VPN client. (AI-inferred)
 	PublicCertData any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates_Properties struct {
-	Data              any
-	Hsm               any
-	KeyVaultSecretId  any
-	Password          any
+	// The literal data payload of this field. (AI-inferred)
+	Data any
+	// Whether this key is stored in a Hardware Security Module. (AI-inferred)
+	Hsm any
+	// A reference to the Key Vault secret holding this resource's own certificate. (AI-inferred)
+	KeyVaultSecretId any
+	// The password credential used to authenticate. (AI-inferred)
+	Password any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	PublicCertData    any
+	// The base64-encoded public certificate data used to authenticate a point-to-site VPN client. (AI-inferred)
+	PublicCertData any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslCertificates struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslPolicy struct {
-	CipherSuites         any
+	// The TLS cipher suite(s) permitted for connections to this resource. (AI-inferred)
+	CipherSuites any
+	// The TLS/SSL protocol version(s) explicitly disallowed for connections to this resource. (AI-inferred)
 	DisabledSslProtocols any
-	MinProtocolVersion   any
-	PolicyName           any
-	PolicyType           any
+	// The minimum TLS protocol version accepted for connections to this resource. (AI-inferred)
+	MinProtocolVersion any
+	// The name of this policy. (AI-inferred)
+	PolicyName any
+	// The kind of policy this represents, e.g. custom or managed. (AI-inferred)
+	PolicyType any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles_Properties_ClientAuthConfiguration struct {
-	VerifyClientAuthMode     any
+	// Whether mutual TLS client authentication is required or optional. (AI-inferred)
+	VerifyClientAuthMode any
+	// The issuer distinguished name a client certificate must match to be accepted. (AI-inferred)
 	VerifyClientCertIssuerDn any
-	VerifyClientRevocation   any
+	// Whether the client certificate's own revocation status is checked. (AI-inferred)
+	VerifyClientRevocation any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles_Properties struct {
-	ClientAuthConfiguration   any
-	ProvisioningState         any
-	SslPolicy                 any
+	// Configuration for verifying the client's own TLS certificate. (AI-inferred)
+	ClientAuthConfiguration any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The TLS/SSL policy (protocol versions, cipher suites) enforced by this Application Gateway. (AI-inferred)
+	SslPolicy any
+	// The client certificate(s) trusted for mutual TLS authentication. (AI-inferred)
 	TrustedClientCertificates any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_SslProfiles struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedClientCertificates_Properties struct {
+	// The distinguished name of the issuer of the client certificate presented for this connection. (AI-inferred)
 	ClientCertIssuerDn any
-	Data               any
-	ProvisioningState  any
-	ValidatedCertData  any
+	// The literal data payload of this field. (AI-inferred)
+	Data any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Output only. The validated certificate data derived from this trusted client certificate. (AI-inferred)
+	ValidatedCertData any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedClientCertificates struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedRootCertificates_Properties struct {
-	Data              any
-	KeyVaultSecretId  any
+	// The literal data payload of this field. (AI-inferred)
+	Data any
+	// A reference to the Key Vault secret holding this resource's own certificate. (AI-inferred)
+	KeyVaultSecretId any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_TrustedRootCertificates struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties_PathRules_Properties struct {
-	BackendAddressPool     any
-	BackendHttpSettings    any
-	FirewallPolicy         any
+	// A reference to the backend address pool this rule sends matched traffic to. (AI-inferred)
+	BackendAddressPool any
+	// The HTTP setting(s) (protocol, port, timeout) applied when forwarding to a backend pool. (AI-inferred)
+	BackendHttpSettings any
+	// A reference to the Web Application Firewall policy applied to this resource. (AI-inferred)
+	FirewallPolicy any
+	// A reference to the load distribution policy applied by this rule. (AI-inferred)
 	LoadDistributionPolicy any
-	Paths                  any
-	ProvisioningState      any
-	RedirectConfiguration  any
-	RewriteRuleSet         any
+	// The URL path(s) this rule matches. (AI-inferred)
+	Paths any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the redirect configuration applied by this rule. (AI-inferred)
+	RedirectConfiguration any
+	// A reference to the rewrite rule set applied by this rule. (AI-inferred)
+	RewriteRuleSet any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties_PathRules struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties struct {
-	DefaultBackendAddressPool     any
-	DefaultBackendHttpSettings    any
+	// A reference to the backend address pool used when no more specific routing rule matches. (AI-inferred)
+	DefaultBackendAddressPool any
+	// A reference to the backend HTTP settings used when no more specific routing rule matches. (AI-inferred)
+	DefaultBackendHttpSettings any
+	// A reference to the load distribution policy applied when no more specific path rule matches. (AI-inferred)
 	DefaultLoadDistributionPolicy any
-	DefaultRedirectConfiguration  any
-	DefaultRewriteRuleSet         any
-	PathRules                     any
-	ProvisioningState             any
+	// A reference to the redirect configuration applied when no more specific path rule matches. (AI-inferred)
+	DefaultRedirectConfiguration any
+	// A reference to the rewrite rule set applied when no more specific path rule matches. (AI-inferred)
+	DefaultRewriteRuleSet any
+	// The path-based routing rule(s) making up this URL path map. (AI-inferred)
+	PathRules any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_UrlPathMaps struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration_DisabledRuleGroups struct {
+	// The name of the managed WAF rule group this applies to. (AI-inferred)
 	RuleGroupName any
-	Rules         any
+	// The rule(s) making up this policy or configuration. (AI-inferred)
+	Rules any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration_Exclusions struct {
-	MatchVariable         any
-	Selector              any
+	// The request attribute this condition evaluates. (AI-inferred)
+	MatchVariable any
+	// The specific field name a match condition targets, e.g. a header or cookie name. (AI-inferred)
+	Selector any
+	// How `selector` itself is matched, e.g. `Equals` or `StartsWith`. (AI-inferred)
 	SelectorMatchOperator any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration struct {
-	DisabledRuleGroups     any
-	Enabled                any
-	Exclusions             any
-	FileUploadLimitInMb    any
-	FirewallMode           any
-	MaxRequestBodySize     any
+	// The managed WAF rule group(s), or specific rule(s) within them, disabled for this policy. (AI-inferred)
+	DisabledRuleGroups any
+	// Whether this feature or setting is turned on. (AI-inferred)
+	Enabled any
+	// The field(s) or value(s) excluded from WAF inspection. (AI-inferred)
+	Exclusions any
+	// The maximum size, in megabytes, of a file upload the WAF permits. (AI-inferred)
+	FileUploadLimitInMb any
+	// Whether the WAF actively blocks matching requests (`Prevention`) or only logs them (`Detection`). (AI-inferred)
+	FirewallMode any
+	// The maximum request body size, in bytes, the WAF permits. (AI-inferred)
+	MaxRequestBodySize any
+	// The maximum request body size, in kilobytes, the WAF permits. (AI-inferred)
 	MaxRequestBodySizeInKb any
-	RequestBodyCheck       any
-	RuleSetType            any
-	RuleSetVersion         any
+	// Whether the WAF inspects the request body, in addition to headers and URL. (AI-inferred)
+	RequestBodyCheck any
+	// The managed WAF rule set family this belongs to, e.g. `OWASP` or `Microsoft_BotManagerRuleSet`. (AI-inferred)
+	RuleSetType any
+	// The version of the managed WAF rule set this belongs to. (AI-inferred)
+	RuleSetVersion any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways_Properties struct {
-	AuthenticationCertificates          any
-	AutoscaleConfiguration              any
-	BackendAddressPools                 any
-	BackendHttpSettingsCollection       any
-	BackendSettingsCollection           any
-	CustomErrorConfigurations           any
-	DefaultPredefinedSslPolicy          any
-	EnableFips                          any
-	EnableHttp2                         any
-	EntraJwtvalidationConfigs           any
-	FirewallPolicy                      any
-	ForceFirewallPolicyAssociation      any
-	FrontendIpconfigurations            any
-	FrontendPorts                       any
-	GatewayIpconfigurations             any
-	GlobalConfiguration                 any
-	HttpListeners                       any
-	Listeners                           any
-	LoadDistributionPolicies            any
-	OperationalState                    any
-	PrivateEndpointConnections          any
-	PrivateLinkConfigurations           any
-	Probes                              any
-	ProvisioningState                   any
-	RedirectConfigurations              any
-	RequestRoutingRules                 any
-	ResourceGuid                        any
-	RewriteRuleSets                     any
-	RoutingRules                        any
-	Sku                                 any
-	SslCertificates                     any
-	SslPolicy                           any
-	SslProfiles                         any
-	TrustedClientCertificates           any
-	TrustedRootCertificates             any
-	UrlPathMaps                         any
+	// The trusted root certificate(s) used to authenticate the backend server's own TLS certificate. (AI-inferred)
+	AuthenticationCertificates any
+	// Configuration for automatically scaling this Application Gateway's own instance count within a defined range. (AI-inferred)
+	AutoscaleConfiguration any
+	// The backend address pool(s) traffic can be routed to. (AI-inferred)
+	BackendAddressPools any
+	// The HTTP setting(s) (protocol, port, timeout) applied when forwarding to a backend pool. (AI-inferred)
+	BackendHttpSettingsCollection any
+	// The setting(s) applied when forwarding traffic to a backend pool. (AI-inferred)
+	BackendSettingsCollection any
+	// Custom error page(s) served for specific HTTP status codes, instead of the default Azure error page. (AI-inferred)
+	CustomErrorConfigurations any
+	// The name of the predefined TLS policy applied by default. (AI-inferred)
+	DefaultPredefinedSslPolicy any
+	// Whether FIPS 140-2 compliant cryptography is enforced. (AI-inferred)
+	EnableFips any
+	// Whether HTTP/2 support is enabled. (AI-inferred)
+	EnableHttp2 any
+	// Configuration for validating Microsoft Entra ID-issued JWT(s) presented by the client. (AI-inferred)
+	EntraJwtvalidationConfigs any
+	// A reference to the Web Application Firewall policy applied to this resource. (AI-inferred)
+	FirewallPolicy any
+	// Whether this listener is required to have a Web Application Firewall policy associated. (AI-inferred)
+	ForceFirewallPolicyAssociation any
+	// The frontend IP configuration(s) this Application Gateway listens on. (AI-inferred)
+	FrontendIpconfigurations any
+	// The frontend port(s) available for listeners to bind to. (AI-inferred)
+	FrontendPorts any
+	// The subnet configuration(s) this Application Gateway is deployed into. (AI-inferred)
+	GatewayIpconfigurations any
+	// Configuration applied globally across this Application Gateway, rather than per-listener. (AI-inferred)
+	GlobalConfiguration any
+	// The HTTP listener(s) accepting incoming traffic on this Application Gateway. (AI-inferred)
+	HttpListeners any
+	// The listener(s) configured on this resource. (AI-inferred)
+	Listeners any
+	// The load distribution policy/policies (algorithm, target weighting) available for routing rules to use. (AI-inferred)
+	LoadDistributionPolicies any
+	// The current running status of this resource. (AI-inferred)
+	OperationalState any
+	// Output only. The Private Endpoint connections currently established to this resource. (AI-inferred)
+	PrivateEndpointConnections any
+	// Private Link configuration(s) exposing this Application Gateway's own frontend IP(s) to other virtual networks. (AI-inferred)
+	PrivateLinkConfigurations any
+	// The health probe(s) configured on this Application Gateway. (AI-inferred)
+	Probes any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The redirect configuration(s) available for routing rules to use. (AI-inferred)
+	RedirectConfigurations any
+	// The routing rule(s) mapping incoming listener traffic to a backend or redirect. (AI-inferred)
+	RequestRoutingRules any
+	// A stable, ARM-assigned unique identifier for this resource that survives a rename or a move across resource groups/subscriptions -- unlike `id`, which changes when either of those happens. (AI-inferred)
+	ResourceGuid any
+	// The rewrite rule set(s) available for routing rules to use. (AI-inferred)
+	RewriteRuleSets any
+	// The routing rule(s) mapping incoming traffic to a backend or redirect. (AI-inferred)
+	RoutingRules any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// The TLS/SSL certificate(s) available for listeners to use. (AI-inferred)
+	SslCertificates any
+	// The TLS/SSL policy (protocol versions, cipher suites) enforced by this Application Gateway. (AI-inferred)
+	SslPolicy any
+	// The TLS/SSL profile(s) (client authentication, policy) available for listeners to use. (AI-inferred)
+	SslProfiles any
+	// The client certificate(s) trusted for mutual TLS authentication. (AI-inferred)
+	TrustedClientCertificates any
+	// The root certificate(s) trusted when validating a backend server's own TLS certificate. (AI-inferred)
+	TrustedRootCertificates any
+	// The URL path map(s) available for routing rules to use. (AI-inferred)
+	UrlPathMaps any
+	// Web Application Firewall configuration (mode, rule set) applied to this Application Gateway. (AI-inferred)
 	WebApplicationFirewallConfiguration any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ApplicationGateways struct {
-	Etag       any
-	Identity   any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Zones      any
+	// The Availability Zone(s) this resource is pinned to, within its own region. (AI-inferred)
+	Zones any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_GroupByUserSession_GroupByVariables struct {
+	// The name of the variable this rewrite rule reads from or writes to. (AI-inferred)
 	VariableName any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_GroupByUserSession struct {
+	// The request attribute(s) (e.g. client IP) rate-limit counting is grouped by. (AI-inferred)
 	GroupByVariables any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_MatchConditions_MatchVariables struct {
-	Selector     any
+	// The specific field name a match condition targets, e.g. a header or cookie name. (AI-inferred)
+	Selector any
+	// The name of the variable this rewrite rule reads from or writes to. (AI-inferred)
 	VariableName any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules_MatchConditions struct {
-	MatchValues      any
-	MatchVariables   any
+	// The value(s) this condition matches against. (AI-inferred)
+	MatchValues any
+	// The request attribute(s) this condition evaluates. (AI-inferred)
+	MatchVariables any
+	// Whether this match condition's own result is inverted. (AI-inferred)
 	NegationConditon any
-	Operator         any
-	Transforms       any
+	// How this condition's own operands are compared. (AI-inferred)
+	Operator any
+	// The transformation(s) (e.g. lowercase, trim) applied to the matched value before comparison. (AI-inferred)
+	Transforms any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_CustomRules struct {
-	Action             any
-	Etag               any
+	// The action taken when this rule or condition matches. (AI-inferred)
+	Action any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// Whether rate-limit counting is grouped per user session, rather than globally. (AI-inferred)
 	GroupByUserSession any
-	MatchConditions    any
-	Name               any
-	Priority           any
-	RateLimitDuration  any
+	// The condition(s) that must all be satisfied for this rule to match. (AI-inferred)
+	MatchConditions any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
+	Priority any
+	// The time window rate-limit request counts are measured over. (AI-inferred)
+	RateLimitDuration any
+	// The maximum number of requests permitted within `rate_limit_duration` before this rule triggers. (AI-inferred)
 	RateLimitThreshold any
-	RuleType           any
-	State              any
+	// The kind of matching this rule performs, e.g. `Basic` or `PathBasedRouting`. (AI-inferred)
+	RuleType any
+	// The current operational state of this resource. (AI-inferred)
+	State any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets_RuleGroups_Rules struct {
+	// The identifier of the specific WAF rule this applies to. (AI-inferred)
 	RuleId any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets_RuleGroups struct {
+	// The name of the managed WAF rule group this applies to. (AI-inferred)
 	RuleGroupName any
-	Rules         any
+	// The rule(s) making up this policy or configuration. (AI-inferred)
+	Rules any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets struct {
-	RuleGroups     any
-	RuleSetType    any
+	// The managed WAF rule group(s) making up this rule set. (AI-inferred)
+	RuleGroups any
+	// The managed WAF rule set family this belongs to, e.g. `OWASP` or `Microsoft_BotManagerRuleSet`. (AI-inferred)
+	RuleSetType any
+	// The version of the managed WAF rule set this belongs to. (AI-inferred)
 	RuleSetVersion any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exceptions struct {
+	// The managed WAF rule set(s) a matching exception is exempted from. (AI-inferred)
 	ExceptionManagedRuleSets any
-	MatchVariable            any
-	Selector                 any
-	SelectorMatchOperator    any
-	ValueMatchOperator       any
-	Values                   any
+	// The request attribute this condition evaluates. (AI-inferred)
+	MatchVariable any
+	// The specific field name a match condition targets, e.g. a header or cookie name. (AI-inferred)
+	Selector any
+	// How `selector` itself is matched, e.g. `Equals` or `StartsWith`. (AI-inferred)
+	SelectorMatchOperator any
+	// How the matched value is compared, e.g. `Equal` or `Contains`. (AI-inferred)
+	ValueMatchOperator any
+	// The value(s) making up this field. (AI-inferred)
+	Values any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_Exclusions struct {
+	// The managed WAF rule set(s), or specific rule(s) within them, this exclusion applies to. (AI-inferred)
 	ExclusionManagedRuleSets any
-	MatchVariable            any
-	Selector                 any
-	SelectorMatchOperator    any
+	// The request attribute this condition evaluates. (AI-inferred)
+	MatchVariable any
+	// The specific field name a match condition targets, e.g. a header or cookie name. (AI-inferred)
+	Selector any
+	// How `selector` itself is matched, e.g. `Equals` or `StartsWith`. (AI-inferred)
+	SelectorMatchOperator any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_ComputedDisabledRules struct {
+	// The name of the managed WAF rule group this applies to. (AI-inferred)
 	RuleGroupName any
-	Rules         any
+	// The rule(s) making up this policy or configuration. (AI-inferred)
+	Rules any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_Rules struct {
-	Action      any
-	RuleId      any
+	// The action taken when this rule or condition matches. (AI-inferred)
+	Action any
+	// The identifier of the specific WAF rule this applies to. (AI-inferred)
+	RuleId any
+	// How aggressively bot detection is applied. (AI-inferred)
 	Sensitivity any
-	State       any
+	// The current operational state of this resource. (AI-inferred)
+	State any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides struct {
+	// The name of the managed WAF rule group this applies to. (AI-inferred)
 	RuleGroupName any
-	Rules         any
+	// The rule(s) making up this policy or configuration. (AI-inferred)
+	Rules any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets struct {
+	// Output only. The specific WAF rule(s) actually disabled after resolving this policy's own overrides. (AI-inferred)
 	ComputedDisabledRules any
-	RuleGroupOverrides    any
-	RuleSetType           any
-	RuleSetVersion        any
+	// Override(s) applied to specific rule(s) within a managed WAF rule group. (AI-inferred)
+	RuleGroupOverrides any
+	// The managed WAF rule set family this belongs to, e.g. `OWASP` or `Microsoft_BotManagerRuleSet`. (AI-inferred)
+	RuleSetType any
+	// The version of the managed WAF rule set this belongs to. (AI-inferred)
+	RuleSetVersion any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules struct {
@@ -3046,10 +5068,14 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Properties_ManagedRules stru
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_PolicySettings_LogScrubbing_ScrubbingRules struct {
-	MatchVariable         any
-	Selector              any
+	// The request attribute this condition evaluates. (AI-inferred)
+	MatchVariable any
+	// The specific field name a match condition targets, e.g. a header or cookie name. (AI-inferred)
+	Selector any
+	// How `selector` itself is matched, e.g. `Equals` or `StartsWith`. (AI-inferred)
 	SelectorMatchOperator any
-	State                 any
+	// The current operational state of this resource. (AI-inferred)
+	State any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Properties_PolicySettings_LogScrubbing struct {

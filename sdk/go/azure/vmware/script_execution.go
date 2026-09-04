@@ -4,7 +4,9 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ScriptExecution_Properties_HiddenParameters struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 

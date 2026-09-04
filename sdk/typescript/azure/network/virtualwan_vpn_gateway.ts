@@ -2,9 +2,13 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualwanVpnGateway_Properties_BgpSettings_BgpPeeringAddresses {
+  /** Caller-chosen BGP peering IP addresses to use for this connection, instead of Azure's own auto-allocated defaults. (AI-inferred) */
   customBgpIpAddresses?: string[] | Computed<string[]>;
+  /** Output only. The BGP peering IP address(es) Azure auto-allocated for this connection. (AI-inferred) */
   defaultBgpIpAddresses?: string[] | Computed<string[]>;
+  /** A reference to the IP configuration this applies to. (AI-inferred) */
   ipconfigurationId?: string | Computed<string>;
+  /** Output only. The public IP address(es) of this VPN gateway's own tunnel endpoint(s). (AI-inferred) */
   tunnelIpAddresses?: string[] | Computed<string[]>;
 }
 
@@ -20,139 +24,225 @@ export interface VirtualwanVpnGateway_Properties_BgpSettings {
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties_IpsecPolicies {
+  /** The Diffie-Hellman group used for IKE Phase 1 key exchange, e.g. `DHGroup14` or `DHGroup24`. (AI-inferred) */
   dhGroup?: string | Computed<string>;
+  /** The encryption algorithm used for IKE Phase 1 (establishing the secure channel itself), e.g. `AES256`. (AI-inferred) */
   ikeEncryption?: string | Computed<string>;
+  /** The integrity (hashing) algorithm used for IKE Phase 1, e.g. `SHA384`. (AI-inferred) */
   ikeIntegrity?: string | Computed<string>;
+  /** The encryption algorithm used for IKE Phase 2 (the actual IPsec data tunnel), e.g. `AES256`. (AI-inferred) */
   ipsecEncryption?: string | Computed<string>;
+  /** The integrity (hashing) algorithm used for IKE Phase 2, e.g. `SHA256`. (AI-inferred) */
   ipsecIntegrity?: string | Computed<string>;
+  /** The Perfect Forward Secrecy group used when establishing a new IKE Phase 2 security association, or `None` to disable PFS. (AI-inferred) */
   pfsGroup?: string | Computed<string>;
+  /** The IPsec security association's own data-volume lifetime, in kilobytes -- the tunnel rekeys once either this or `sa_life_time_seconds` is reached. (AI-inferred) */
   saDataSizeKilobytes?: number | Computed<number>;
+  /** The IPsec security association's own time-based lifetime, in seconds -- the tunnel rekeys once either this or `sa_data_size_kilobytes` is reached. (AI-inferred) */
   saLifeTimeSeconds?: number | Computed<number>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_PropagatedRouteTables {
+  /** The identifier(s) this applies to. (AI-inferred) */
   ids?: VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[]>;
+  /** The label(s) attached to this route table, used to group it with others for association/propagation. (AI-inferred) */
   labels?: string[] | Computed<string[]>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes {
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred) */
   nextHopIpAddress?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig {
+  /** Whether this connection's own static routes are propagated to the hub's own route table(s). (AI-inferred) */
   propagateStaticRoutes?: boolean | Computed<boolean>;
+  /** The criteria under which locally learned virtual network routes override otherwise equal-priority learned routes. (AI-inferred) */
   vnetLocalRouteOverrideCriteria?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_VnetRoutes {
+  /** The BGP peering connection(s) established on this virtual hub. (AI-inferred) */
   bgpConnections?: VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[]>;
+  /** The caller-defined static route(s) on this connection. (AI-inferred) */
   staticRoutes?: VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes[]>;
+  /** Configuration controlling how static routes are propagated for this connection. (AI-inferred) */
   staticRoutesConfig?: VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration {
+  /** A reference to the route table this connection's own traffic is associated with. (AI-inferred) */
   associatedRouteTable?: VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite>;
+  /** A reference to the route map applied to routes received on this connection. (AI-inferred) */
   inboundRouteMap?: VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite>;
+  /** A reference to the route map applied to routes advertised on this connection. (AI-inferred) */
   outboundRouteMap?: VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite>;
+  /** The route table(s) routes from this connection are propagated into. (AI-inferred) */
   propagatedRouteTables?: VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_PropagatedRouteTables | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_PropagatedRouteTables>;
+  /** The route(s) learned from virtual network connections attached to this hub. (AI-inferred) */
   vnetRoutes?: VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_VnetRoutes | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration_VnetRoutes>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties_TrafficSelectorPolicies {
+  /** The local (on-premises) IP address range(s) this traffic selector matches. (AI-inferred) */
   localAddressRanges?: string[] | Computed<string[]>;
+  /** The remote IP address range(s) this traffic selector matches. (AI-inferred) */
   remoteAddressRanges?: string[] | Computed<string[]>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties_VpnLinkConnections_Properties_VpnGatewayCustomBgpAddresses {
+  /** A caller-chosen BGP peering IP address, instead of Azure's own auto-allocated default. (AI-inferred) */
   customBgpIpAddress?: string | Computed<string>;
+  /** A reference to the IP configuration this applies to. (AI-inferred) */
   ipConfigurationId?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties_VpnLinkConnections_Properties {
+  /** The provisioned bandwidth, in Mbps, for this connection. (AI-inferred) */
   connectionBandwidth?: number | Computed<number>;
+  /** The current connectivity status of this connection. (AI-inferred) */
   connectionStatus?: string | Computed<string>;
+  /** How long, in seconds, before an unresponsive IKE peer is considered dead. (AI-inferred) */
   dpdTimeoutSeconds?: number | Computed<number>;
+  /** The total number of bytes transferred outbound. (AI-inferred) */
   egressBytesTransferred?: number | Computed<number>;
+  /** The outbound NAT rule(s) applied to this connection. (AI-inferred) */
   egressNatRules?: VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[]>;
+  /** Whether BGP routing is enabled for this connection. (AI-inferred) */
   enableBgp?: boolean | Computed<boolean>;
+  /** Whether rate limiting is enabled for this configuration. (AI-inferred) */
   enableRateLimiting?: boolean | Computed<boolean>;
+  /** The total number of bytes transferred inbound. (AI-inferred) */
   ingressBytesTransferred?: number | Computed<number>;
+  /** The inbound NAT rule(s) applied to this connection. (AI-inferred) */
   ingressNatRules?: VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[]>;
+  /** The IPsec/IKE policy/policies (encryption, integrity, lifetimes) applied to this connection. (AI-inferred) */
   ipsecPolicies?: VirtualwanVpnGateway_Properties_Connections_Properties_IpsecPolicies[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_IpsecPolicies[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The relative weight of this route among several possible paths. (AI-inferred) */
   routingWeight?: number | Computed<number>;
+  /** A pre-shared key used to establish this connection. (AI-inferred) */
   sharedKey?: string | Computed<string>;
+  /** Whether this gateway uses its own local Azure IP address, rather than a public one, for this connection. (AI-inferred) */
   useLocalAzureIpAddress?: boolean | Computed<boolean>;
+  /** Whether policy-based (rather than route-based) traffic selectors are used for this IPsec tunnel. (AI-inferred) */
   usePolicyBasedTrafficSelectors?: boolean | Computed<boolean>;
+  /** The VPN protocol used for this connection, e.g. `IKEv2` or `OpenVPN`. (AI-inferred) */
   vpnConnectionProtocolType?: string | Computed<string>;
+  /** Caller-chosen BGP peering IP address(es) for this VPN gateway, instead of Azure's own auto-allocated defaults. (AI-inferred) */
   vpnGatewayCustomBgpAddresses?: VirtualwanVpnGateway_Properties_Connections_Properties_VpnLinkConnections_Properties_VpnGatewayCustomBgpAddresses[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_VpnLinkConnections_Properties_VpnGatewayCustomBgpAddresses[]>;
+  /** Whether this VPN site link connection is `Default`, `InitiatorOnly`, or `ResponderOnly`. (AI-inferred) */
   vpnLinkConnectionMode?: string | Computed<string>;
+  /** A reference to the specific VPN site link this connection uses. (AI-inferred) */
   vpnSiteLink?: VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties_VpnLinkConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualwanVpnGateway_Properties_Connections_Properties_VpnLinkConnections_Properties | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_VpnLinkConnections_Properties>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections_Properties {
+  /** The provisioned bandwidth, in Mbps, for this connection. (AI-inferred) */
   connectionBandwidth?: number | Computed<number>;
+  /** The current connectivity status of this connection. (AI-inferred) */
   connectionStatus?: string | Computed<string>;
+  /** How long, in seconds, before an unresponsive IKE peer is considered dead. (AI-inferred) */
   dpdTimeoutSeconds?: number | Computed<number>;
+  /** The total number of bytes transferred outbound. (AI-inferred) */
   egressBytesTransferred?: number | Computed<number>;
+  /** Whether BGP routing is enabled for this connection. (AI-inferred) */
   enableBgp?: boolean | Computed<boolean>;
+  /** Whether traffic is routed through a security provider before reaching the internet. (AI-inferred) */
   enableInternetSecurity?: boolean | Computed<boolean>;
+  /** Whether rate limiting is enabled for this configuration. (AI-inferred) */
   enableRateLimiting?: boolean | Computed<boolean>;
+  /** The total number of bytes transferred inbound. (AI-inferred) */
   ingressBytesTransferred?: number | Computed<number>;
+  /** The IPsec/IKE policy/policies (encryption, integrity, lifetimes) applied to this connection. (AI-inferred) */
   ipsecPolicies?: VirtualwanVpnGateway_Properties_Connections_Properties_IpsecPolicies[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_IpsecPolicies[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the remote VPN site this connection terminates at. (AI-inferred) */
   remoteVpnSite?: VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite>;
+  /** Routing configuration (associated/propagated route tables) applied to this connection. (AI-inferred) */
   routingConfiguration?: VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RoutingConfiguration>;
+  /** The relative weight of this route among several possible paths. (AI-inferred) */
   routingWeight?: number | Computed<number>;
+  /** A pre-shared key used to establish this connection. (AI-inferred) */
   sharedKey?: string | Computed<string>;
+  /** The traffic selector policy/policies (local/remote address ranges) restricting this connection's own IPsec tunnel. (AI-inferred) */
   trafficSelectorPolicies?: VirtualwanVpnGateway_Properties_Connections_Properties_TrafficSelectorPolicies[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_TrafficSelectorPolicies[]>;
+  /** Whether this gateway uses its own local Azure IP address, rather than a public one, for this connection. (AI-inferred) */
   useLocalAzureIpAddress?: boolean | Computed<boolean>;
+  /** Whether policy-based (rather than route-based) traffic selectors are used for this IPsec tunnel. (AI-inferred) */
   usePolicyBasedTrafficSelectors?: boolean | Computed<boolean>;
+  /** The VPN protocol used for this connection, e.g. `IKEv2` or `OpenVPN`. (AI-inferred) */
   vpnConnectionProtocolType?: string | Computed<string>;
+  /** The individual VPN tunnel connection(s) making up this site-to-site connection, one per link. (AI-inferred) */
   vpnLinkConnections?: VirtualwanVpnGateway_Properties_Connections_Properties_VpnLinkConnections[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_VpnLinkConnections[]>;
 }
 
 export interface VirtualwanVpnGateway_Properties_Connections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualwanVpnGateway_Properties_Connections_Properties | Computed<VirtualwanVpnGateway_Properties_Connections_Properties>;
 }
 
 export interface VirtualwanVpnGateway_Properties_IpConfigurations {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The private (internal) IP address assigned to this resource. (AI-inferred) */
   privateIpAddress?: string | Computed<string>;
+  /** The public IP address assigned to this resource. (AI-inferred) */
   publicIpAddress?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnGateway_Properties_NatRules_Properties_ExternalMappings {
+  /** The virtual network's own address range(s), in CIDR notation. (AI-inferred) */
   addressSpace?: string | Computed<string>;
+  /** A range of ports, e.g. `1000-2000`. (AI-inferred) */
   portRange?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnGateway_Properties_NatRules_Properties {
+  /** The VPN site link connection(s) carrying outbound traffic for this configuration. (AI-inferred) */
   egressVpnSiteLinkConnections?: VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[]>;
+  /** Address mapping(s) this configuration exposes to external systems. (AI-inferred) */
   externalMappings?: VirtualwanVpnGateway_Properties_NatRules_Properties_ExternalMappings[] | Computed<VirtualwanVpnGateway_Properties_NatRules_Properties_ExternalMappings[]>;
+  /** The VPN site link connection(s) carrying inbound traffic for this configuration. (AI-inferred) */
   ingressVpnSiteLinkConnections?: VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[] | Computed<VirtualwanVpnGateway_Properties_Connections_Properties_RemoteVpnSite[]>;
+  /** Address mapping(s) used internally by this configuration. (AI-inferred) */
   internalMappings?: VirtualwanVpnGateway_Properties_NatRules_Properties_ExternalMappings[] | Computed<VirtualwanVpnGateway_Properties_NatRules_Properties_ExternalMappings[]>;
+  /** A reference to the IP configuration this applies to. (AI-inferred) */
   ipConfigurationId?: string | Computed<string>;
+  /** The operating mode this configuration uses. (AI-inferred) */
   mode?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnGateway_Properties_NatRules {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualwanVpnGateway_Properties_NatRules_Properties | Computed<VirtualwanVpnGateway_Properties_NatRules_Properties>;
 }
 

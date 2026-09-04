@@ -139,32 +139,47 @@ export interface OpenapiAuthConfig_Properties_IdentityProviders_AzureStaticWebAp
 }
 
 export interface OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Login {
+  /** Which JWT claim is used as the authenticated user's own display name. (AI-inferred) */
   nameClaimType?: string | Computed<string>;
+  /** The OAuth scope(s) requested. (AI-inferred) */
   scopes?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_ClientCredential {
+  /** The name of the app setting holding the OAuth client secret. (AI-inferred) */
   clientSecretSettingName?: string | Computed<string>;
+  /** The HTTP method this applies to. (AI-inferred) */
   method?: string | Computed<string>;
 }
 
 export interface OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_OpenIdConnectConfiguration {
+  /** The OAuth authorization endpoint URL. (AI-inferred) */
   authorizationEndpoint?: string | Computed<string>;
+  /** The URI content is certified against. (AI-inferred) */
   certificationUri?: string | Computed<string>;
+  /** The identity provider issuer URL trusted for this authentication. (AI-inferred) */
   issuer?: string | Computed<string>;
+  /** The OAuth token endpoint URL. (AI-inferred) */
   tokenEndpoint?: string | Computed<string>;
+  /** The URL of this identity provider's own OpenID Connect discovery document. (AI-inferred) */
   wellKnownOpenIdConfiguration?: string | Computed<string>;
 }
 
 export interface OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration {
+  /** The credential used to authenticate this OAuth client. (AI-inferred) */
   clientCredential?: OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_ClientCredential | Computed<OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_ClientCredential>;
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** OpenID Connect endpoint configuration for this authentication provider. (AI-inferred) */
   openIdConnectConfiguration?: OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_OpenIdConnectConfiguration | Computed<OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_OpenIdConnectConfiguration>;
 }
 
 export interface OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders {
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** Login configuration for this authentication provider. (AI-inferred) */
   login?: OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Login | Computed<OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Login>;
+  /** Registration configuration (client ID/secret, issuer) for this authentication provider. (AI-inferred) */
   registration?: OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration | Computed<OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration>;
 }
 

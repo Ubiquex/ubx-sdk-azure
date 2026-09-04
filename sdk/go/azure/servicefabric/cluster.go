@@ -9,8 +9,11 @@ type Cluster_Properties_ApplicationTypeVersionsCleanupPolicy struct {
 }
 
 type Cluster_Properties_AvailableClusterVersions struct {
-	CodeVersion      any
-	Environment      any
+	// The Service Fabric runtime version this cluster runs. (AI-inferred)
+	CodeVersion any
+	// The operating system environment this cluster runs on, e.g. `Windows` or `Linux`. (AI-inferred)
+	Environment any
+	// When support for this cluster's own current code version ends, in UTC. (AI-inferred)
 	SupportExpiryUtc any
 }
 
@@ -33,7 +36,9 @@ type Cluster_Properties_Certificate struct {
 }
 
 type Cluster_Properties_CertificateCommonNames_CommonNames struct {
-	CertificateCommonName       any
+	// The Common Name of the certificate trusted for cluster authentication. (AI-inferred)
+	CertificateCommonName any
+	// The thumbprint of the CA that issued the cluster certificate. (AI-inferred)
 	CertificateIssuerThumbprint any
 }
 
@@ -45,14 +50,19 @@ type Cluster_Properties_CertificateCommonNames struct {
 }
 
 type Cluster_Properties_ClientCertificateCommonNames struct {
-	CertificateCommonName       any
+	// The Common Name of the certificate trusted for cluster authentication. (AI-inferred)
+	CertificateCommonName any
+	// The thumbprint of the CA that issued the cluster certificate. (AI-inferred)
 	CertificateIssuerThumbprint any
-	IsAdmin                     any
+	// Whether this client certificate is granted administrative access. (AI-inferred)
+	IsAdmin any
 }
 
 type Cluster_Properties_ClientCertificateThumbprints struct {
+	// A cryptographic thumbprint of this certificate. (AI-inferred)
 	CertificateThumbprint any
-	IsAdmin               any
+	// Whether this client certificate is granted administrative access. (AI-inferred)
+	IsAdmin any
 }
 
 type Cluster_Properties_DiagnosticsStorageAccountConfig struct {
@@ -71,55 +81,83 @@ type Cluster_Properties_DiagnosticsStorageAccountConfig struct {
 }
 
 type Cluster_Properties_FabricSettings_Parameters struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type Cluster_Properties_FabricSettings struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The parameter(s) making up this configuration. (AI-inferred)
 	Parameters any
 }
 
 type Cluster_Properties_NodeTypes_ApplicationPorts struct {
-	EndPort   any
+	// The last port, inclusive, in this range. (AI-inferred)
+	EndPort any
+	// The first port, inclusive, in this range. (AI-inferred)
 	StartPort any
 }
 
 type Cluster_Properties_NodeTypes struct {
-	ApplicationPorts             any
-	Capacities                   any
+	// The port range reserved for applications deployed to this cluster. (AI-inferred)
+	ApplicationPorts any
+	// The named resource capacity/capacities (e.g. memory, disk) this node type provides. (AI-inferred)
+	Capacities any
+	// The port clients use to connect to this cluster. (AI-inferred)
 	ClientConnectionEndpointPort any
-	DurabilityLevel              any
-	EphemeralPorts               any
-	HttpGatewayEndpointPort      any
-	IsPrimary                    any
-	IsStateless                  any
-	MultipleAvailabilityZones    any
-	Name                         any
-	PlacementProperties          any
-	ReverseProxyEndpointPort     any
-	VmInstanceCount              any
+	// The durability guarantee this node type provides, e.g. `Bronze`, `Silver`, or `Gold`. (AI-inferred)
+	DurabilityLevel any
+	// The port range reserved for ephemeral (dynamic) connections on this cluster. (AI-inferred)
+	EphemeralPorts any
+	// The port used for the cluster's own HTTP management endpoint. (AI-inferred)
+	HttpGatewayEndpointPort any
+	// Whether this is the primary node type for the cluster. (AI-inferred)
+	IsPrimary any
+	// Whether this service is stateless, rather than stateful. (AI-inferred)
+	IsStateless any
+	// Whether this node type is spread across multiple availability zones. (AI-inferred)
+	MultipleAvailabilityZones any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Custom key/value property(s) used to constrain where services are placed on this node type. (AI-inferred)
+	PlacementProperties any
+	// The port used for the cluster's own reverse proxy. (AI-inferred)
+	ReverseProxyEndpointPort any
+	// The number of virtual machine instance(s) in this node type. (AI-inferred)
+	VmInstanceCount any
 }
 
 type Cluster_Properties_Notifications_NotificationTargets struct {
+	// The channel this notification is delivered through. (AI-inferred)
 	NotificationChannel any
-	Receivers           any
+	// The recipient(s) this notification is delivered to. (AI-inferred)
+	Receivers any
 }
 
 type Cluster_Properties_Notifications struct {
-	IsEnabled            any
+	// Whether this feature is turned on. (AI-inferred)
+	IsEnabled any
+	// The category of event this notification setting applies to. (AI-inferred)
 	NotificationCategory any
-	NotificationLevel    any
-	NotificationTargets  any
+	// The minimum severity level that triggers this notification. (AI-inferred)
+	NotificationLevel any
+	// The recipient(s) this notification is delivered to. (AI-inferred)
+	NotificationTargets any
 }
 
 type Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicy struct {
+	// The maximum percentage of services permitted to become newly unhealthy during an upgrade. (AI-inferred)
 	MaxPercentDeltaUnhealthyServices any
 }
 
 type Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies struct {
+	// The default health policy applied to a service type's own delta (upgrade-time) health evaluation. (AI-inferred)
 	DefaultServiceTypeDeltaHealthPolicy any
-	ServiceTypeDeltaHealthPolicies      any
+	// Per-service-type health policy override(s) for delta (upgrade-time) health evaluation. (AI-inferred)
+	ServiceTypeDeltaHealthPolicies any
 }
 
 type Cluster_Properties_UpgradeDescription_DeltaHealthPolicy struct {
@@ -134,12 +172,15 @@ type Cluster_Properties_UpgradeDescription_DeltaHealthPolicy struct {
 }
 
 type Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicy struct {
+	// The maximum percentage of services permitted to be unhealthy at steady state. (AI-inferred)
 	MaxPercentUnhealthyServices any
 }
 
 type Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies struct {
+	// The default health policy applied to a service type's own steady-state health evaluation. (AI-inferred)
 	DefaultServiceTypeHealthPolicy any
-	ServiceTypeHealthPolicies      any
+	// Per-service-type health policy override(s) for steady-state health evaluation. (AI-inferred)
+	ServiceTypeHealthPolicies any
 }
 
 type Cluster_Properties_UpgradeDescription_HealthPolicy struct {
@@ -174,7 +215,8 @@ type Cluster_Properties_UpgradeDescription struct {
 
 type Cluster_Properties struct {
 	// The list of add-on features to enable in the cluster.
-	AddOnFeatures                        any
+	AddOnFeatures any
+	// Configuration for automatically removing unused application type versions. (AI-inferred)
 	ApplicationTypeVersionsCleanupPolicy any
 	// The Service Fabric runtime versions available for this cluster.
 	AvailableClusterVersions any

@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface NetworkmanagerNetworkManager_Properties_NetworkManagerScopes_CrossTenantScopes {
+  /** The management group(s) this scope covers. (AI-inferred) */
   managementGroups?: string[] | Computed<string[]>;
+  /** The subscription ID(s) this auto-approval or visibility rule applies to. (AI-inferred) */
   subscriptions?: string[] | Computed<string[]>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
 }
 

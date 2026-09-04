@@ -16,34 +16,51 @@ type FirewallAzureFirewall_Properties_AfcConfiguration struct {
 }
 
 type FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Action struct {
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
 type FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules_Protocols struct {
-	Port         any
+	// A TCP or UDP port number. (AI-inferred)
+	Port any
+	// The network protocol this rule applies to. (AI-inferred)
 	ProtocolType any
 }
 
 type FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules struct {
-	Description     any
-	FqdnTags        any
-	Name            any
-	Protocols       any
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
+	Description any
+	// The predefined FQDN tag(s) (e.g. for well-known Microsoft services) this rule allows. (AI-inferred)
+	FqdnTags any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The network protocol(s) this rule applies to. (AI-inferred)
+	Protocols any
+	// The source IP address(es) or range(s) this rule matches. (AI-inferred)
 	SourceAddresses any
-	SourceIpGroups  any
-	TargetFqdns     any
+	// The source IP group(s) this rule matches. (AI-inferred)
+	SourceIpGroups any
+	// The fully qualified domain name(s) this rule allows traffic to. (AI-inferred)
+	TargetFqdns any
 }
 
 type FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties struct {
-	Action            any
-	Priority          any
+	// The action taken when this rule matches. (AI-inferred)
+	Action any
+	// The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
+	Priority any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Rules             any
+	// The rule(s) making up this collection. (AI-inferred)
+	Rules any
 }
 
 type FirewallAzureFirewall_Properties_ApplicationRuleCollections struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
@@ -60,6 +77,7 @@ type FirewallAzureFirewall_Properties_FirewallPolicy struct {
 }
 
 type FirewallAzureFirewall_Properties_HubIpaddresses_PublicIps_Addresses struct {
+	// The network address this applies to. (AI-inferred)
 	Address any
 }
 
@@ -78,72 +96,115 @@ type FirewallAzureFirewall_Properties_HubIpaddresses struct {
 }
 
 type FirewallAzureFirewall_Properties_IpConfigurations_Properties struct {
-	PrivateIpaddress  any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	PublicIpaddress   any
-	Subnet            any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type FirewallAzureFirewall_Properties_IpConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type FirewallAzureFirewall_Properties_IpGroups struct {
+	// A value incremented each time this rule collection's own content changes. (AI-inferred)
 	ChangeNumber any
-	Id           any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
 }
 
 type FirewallAzureFirewall_Properties_NatRuleCollections_Properties_Rules struct {
-	Description          any
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
+	Description any
+	// The destination IP address(es) or range(s) this rule matches. (AI-inferred)
 	DestinationAddresses any
-	DestinationPorts     any
-	Name                 any
-	Protocols            any
-	SourceAddresses      any
-	SourceIpGroups       any
-	TranslatedAddress    any
-	TranslatedFqdn       any
-	TranslatedPort       any
+	// The destination port(s) this rule matches. (AI-inferred)
+	DestinationPorts any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The network protocol(s) this rule applies to. (AI-inferred)
+	Protocols any
+	// The source IP address(es) or range(s) this rule matches. (AI-inferred)
+	SourceAddresses any
+	// The source IP group(s) this rule matches. (AI-inferred)
+	SourceIpGroups any
+	// The IP address matching traffic is translated to. (AI-inferred)
+	TranslatedAddress any
+	// The fully qualified domain name matching traffic is translated to. (AI-inferred)
+	TranslatedFqdn any
+	// The port matching traffic is translated to. (AI-inferred)
+	TranslatedPort any
 }
 
 type FirewallAzureFirewall_Properties_NatRuleCollections_Properties struct {
-	Action            any
-	Priority          any
+	// The action taken when this rule matches. (AI-inferred)
+	Action any
+	// The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
+	Priority any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Rules             any
+	// The rule(s) making up this collection. (AI-inferred)
+	Rules any
 }
 
 type FirewallAzureFirewall_Properties_NatRuleCollections struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties_Rules struct {
-	Description          any
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
+	Description any
+	// The destination IP address(es) or range(s) this rule matches. (AI-inferred)
 	DestinationAddresses any
-	DestinationFqdns     any
-	DestinationIpGroups  any
-	DestinationPorts     any
-	Name                 any
-	Protocols            any
-	SourceAddresses      any
-	SourceIpGroups       any
+	// The destination fully qualified domain name(s) this rule matches. (AI-inferred)
+	DestinationFqdns any
+	// The destination IP group(s) this rule matches. (AI-inferred)
+	DestinationIpGroups any
+	// The destination port(s) this rule matches. (AI-inferred)
+	DestinationPorts any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The network protocol(s) this rule applies to. (AI-inferred)
+	Protocols any
+	// The source IP address(es) or range(s) this rule matches. (AI-inferred)
+	SourceAddresses any
+	// The source IP group(s) this rule matches. (AI-inferred)
+	SourceIpGroups any
 }
 
 type FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties struct {
-	Action            any
-	Priority          any
+	// The action taken when this rule matches. (AI-inferred)
+	Action any
+	// The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
+	Priority any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Rules             any
+	// The rule(s) making up this collection. (AI-inferred)
+	Rules any
 }
 
 type FirewallAzureFirewall_Properties_NetworkRuleCollections struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

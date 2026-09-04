@@ -92,58 +92,92 @@ type FluxconfigurationFluxConfiguration_Properties_GitRepository struct {
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild_SubstituteFrom struct {
-	Kind     any
-	Name     any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Whether this dependency is optional, rather than required. (AI-inferred)
 	Optional any
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild struct {
-	Substitute     any
+	// Fixed key/value substitution(s) applied to manifests during post-build. (AI-inferred)
+	Substitute any
+	// A reference to a ConfigMap or Secret whose own key/value pairs are substituted into manifests during post-build. (AI-inferred)
 	SubstituteFrom any
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Kustomizations struct {
-	DependsOn              any
-	Force                  any
-	Name                   any
-	Path                   any
-	PostBuild              any
-	Prune                  any
+	// The Kustomization(s) that must be applied before this one runs. (AI-inferred)
+	DependsOn any
+	// Whether this Kustomization is applied with `--force`, recreating resources it can't otherwise patch. (AI-inferred)
+	Force any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The path within the source repository this Kustomization applies. (AI-inferred)
+	Path any
+	// Substitution(s) applied to manifests after they're built, before being applied to the cluster. (AI-inferred)
+	PostBuild any
+	// Whether resources no longer present in the source are automatically removed from the cluster. (AI-inferred)
+	Prune any
+	// How long, in seconds, to wait before retrying after a failed reconciliation. (AI-inferred)
 	RetryIntervalInSeconds any
-	SyncIntervalInSeconds  any
-	TimeoutInSeconds       any
-	Wait                   any
+	// How often, in seconds, this configuration is reconciled against its own source. (AI-inferred)
+	SyncIntervalInSeconds any
+	// How long, in seconds, this operation waits before timing out. (AI-inferred)
+	TimeoutInSeconds any
+	// Whether reconciliation waits for all applied resources to become ready before being marked complete. (AI-inferred)
+	Wait any
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedBy struct {
-	Name      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The Kubernetes namespace this applies to. (AI-inferred)
 	Namespace any
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Statuses_HelmReleaseProperties struct {
-	FailureCount        any
-	HelmChartRef        any
+	// The number of times this reconciliation has failed. (AI-inferred)
+	FailureCount any
+	// A reference to the Helm chart this release deploys. (AI-inferred)
+	HelmChartRef any
+	// The number of times the initial install of this Helm release has failed. (AI-inferred)
 	InstallFailureCount any
+	// The most recent source revision successfully applied. (AI-inferred)
 	LastRevisionApplied any
+	// The number of times an upgrade of this Helm release has failed. (AI-inferred)
 	UpgradeFailureCount any
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Statuses_StatusConditions struct {
+	// When this condition last changed from one status to another. (AI-inferred)
 	LastTransitionTime any
-	Message            any
-	Reason             any
-	Status             any
-	Type               any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A machine-readable reason code. (AI-inferred)
+	Reason any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Statuses struct {
-	AppliedBy             any
-	ComplianceState       any
+	// The component that applied this configuration. (AI-inferred)
+	AppliedBy any
+	// Whether this configuration's own live state matches its declared, desired state. (AI-inferred)
+	ComplianceState any
+	// Configuration specific to this Helm release. (AI-inferred)
 	HelmReleaseProperties any
-	Kind                  any
-	Name                  any
-	Namespace             any
-	StatusConditions      any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The Kubernetes namespace this applies to. (AI-inferred)
+	Namespace any
+	// The current condition(s) affecting this resource's own status. (AI-inferred)
+	StatusConditions any
 }
 
 type FluxconfigurationFluxConfiguration_Properties struct {

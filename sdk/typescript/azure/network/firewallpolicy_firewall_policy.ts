@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface FirewallpolicyFirewallPolicy_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -47,7 +49,9 @@ export interface FirewallpolicyFirewallPolicy_Properties_ExplicitProxy {
 }
 
 export interface FirewallpolicyFirewallPolicy_Properties_Insights_LogAnalyticsResources_Workspaces {
+  /** The Azure region this applies to. (AI-inferred) */
   region?: string | Computed<string>;
+  /** The Log Analytics workspace ID Traffic Analytics results are sent to. (AI-inferred) */
   workspaceId?: FirewallpolicyFirewallPolicy_Properties_BasePolicy | Computed<FirewallpolicyFirewallPolicy_Properties_BasePolicy>;
 }
 
@@ -68,18 +72,28 @@ export interface FirewallpolicyFirewallPolicy_Properties_Insights {
 }
 
 export interface FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_BypassTrafficSettings {
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The destination IP address(es) or range(s) this rule matches. (AI-inferred) */
   destinationAddresses?: string[] | Computed<string[]>;
+  /** The destination IP group(s) this rule matches. (AI-inferred) */
   destinationIpGroups?: string[] | Computed<string[]>;
+  /** The destination port(s) this rule matches. (AI-inferred) */
   destinationPorts?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The source IP address(es) or range(s) this rule matches. (AI-inferred) */
   sourceAddresses?: string[] | Computed<string[]>;
+  /** The source IP group(s) this rule matches. (AI-inferred) */
   sourceIpGroups?: string[] | Computed<string[]>;
 }
 
 export interface FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_SignatureOverrides {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** Whether this feature is set to alert-only or alert-and-deny. (AI-inferred) */
   mode?: string | Computed<string>;
 }
 

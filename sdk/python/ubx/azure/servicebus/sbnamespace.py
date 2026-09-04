@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Sbnamespace_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,13 +26,18 @@ class Sbnamespace_Identity:
 
 @dataclasses.dataclass
 class Sbnamespace_Properties_Encryption_KeyVaultProperties_Identity:
+    # A reference to the user-assigned managed identity used. (AI-inferred)
     user_assigned_identity: Any = None
 
 @dataclasses.dataclass
 class Sbnamespace_Properties_Encryption_KeyVaultProperties:
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # The name of this shared access policy. (AI-inferred)
     key_name: Any = None
+    # The URI of the Key Vault holding this resource's own encryption key. (AI-inferred)
     key_vault_uri: Any = None
+    # The specific version of the Key Vault key used. (AI-inferred)
     key_version: Any = None
 
 @dataclasses.dataclass
@@ -44,7 +51,9 @@ class Sbnamespace_Properties_Encryption:
 
 @dataclasses.dataclass
 class Sbnamespace_Properties_GeoDataReplication_Locations:
+    # The Azure region this configuration applies to. (AI-inferred)
     location_name: Any = None
+    # Whether this replica is the primary or a secondary. (AI-inferred)
     role_type: Any = None
 
 @dataclasses.dataclass
@@ -61,26 +70,35 @@ class Sbnamespace_Properties_PlatformCapabilities_ConfidentialCompute:
 
 @dataclasses.dataclass
 class Sbnamespace_Properties_PlatformCapabilities:
+    # Whether this namespace runs on confidential computing infrastructure. (AI-inferred)
     confidential_compute: Any = None
 
 @dataclasses.dataclass
 class Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class Sbnamespace_Properties_PrivateEndpointConnections_Properties:
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class Sbnamespace_Properties_PrivateEndpointConnections:
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
@@ -101,6 +119,7 @@ class Sbnamespace_Properties:
     metric_id: Any = None
     # The minimum TLS version for the cluster to support, e.g. '1.3'
     minimum_tls_version: Any = None
+    # The platform-level capability/capabilities this namespace supports. (AI-inferred)
     platform_capabilities: Any = None
     # The number of partitions of a Service Bus namespace. This property is only applicable to Premium SKU namespaces. The default value is 1 and possible values are 1, 2 and 4
     premium_messaging_partitions: Any = None

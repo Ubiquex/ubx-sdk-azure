@@ -2,16 +2,24 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Deployment_Properties_CallRateLimit_Rules_MatchPatterns {
+  /** The HTTP method this applies to. (AI-inferred) */
   method?: string | Computed<string>;
+  /** A file or resource path. (AI-inferred) */
   path?: string | Computed<string>;
 }
 
 export interface Deployment_Properties_CallRateLimit_Rules {
+  /** How many of this item there are. (AI-inferred) */
   count?: number | Computed<number>;
+  /** Whether request throttling is dynamically adjusted based on observed load. (AI-inferred) */
   dynamicThrottlingEnabled?: boolean | Computed<boolean>;
+  /** The key of this attribute or label. (AI-inferred) */
   key?: string | Computed<string>;
+  /** The pattern(s) a matching request must satisfy. (AI-inferred) */
   matchPatterns?: Deployment_Properties_CallRateLimit_Rules_MatchPatterns[] | Computed<Deployment_Properties_CallRateLimit_Rules_MatchPatterns[]>;
+  /** The minimum count required for this condition to be satisfied. (AI-inferred) */
   minCount?: number | Computed<number>;
+  /** How often this quota or commitment period automatically renews. (AI-inferred) */
   renewalPeriod?: number | Computed<number>;
 }
 
@@ -20,6 +28,7 @@ export interface Deployment_Properties_CallRateLimit {
   count?: number | Computed<number>;
   /** The renewal period in seconds of Call Rate Limit. */
   renewalPeriod?: number | Computed<number>;
+  /** The rule(s) making up this policy. (AI-inferred) */
   rules?: Deployment_Properties_CallRateLimit_Rules[] | Computed<Deployment_Properties_CallRateLimit_Rules[]>;
 }
 
@@ -84,6 +93,7 @@ export interface Deployment_Properties {
   provisioningState?: string | Computed<string>;
   /** The name of RAI policy. */
   raiPolicyName?: string | Computed<string>;
+  /** The rate limit(s) applied to this deployment or resource. (AI-inferred) */
   rateLimits?: Deployment_Properties_CallRateLimit_Rules[] | Computed<Deployment_Properties_CallRateLimit_Rules[]>;
   /** Routing configuration for the model-router deployment. Specifies how requests are routed across multiple models. */
   routing?: Deployment_Properties_Routing | Computed<Deployment_Properties_Routing>;

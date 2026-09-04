@@ -11,10 +11,15 @@ export interface NetworkwatcherPacketCaptureResult_Properties_CaptureSettings {
 }
 
 export interface NetworkwatcherPacketCaptureResult_Properties_Filters {
+  /** The source IP address this test originates from. (AI-inferred) */
   localIpaddress?: string | Computed<string>;
+  /** The source port this test originates from. (AI-inferred) */
   localPort?: string | Computed<string>;
+  /** The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The destination IP address this test targets. (AI-inferred) */
   remoteIpaddress?: string | Computed<string>;
+  /** The destination port this test targets. (AI-inferred) */
   remotePort?: string | Computed<string>;
 }
 

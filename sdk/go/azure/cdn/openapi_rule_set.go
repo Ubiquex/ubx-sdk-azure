@@ -4,16 +4,23 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRuleSet_Properties_Rules_Actions struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 
 type OpenapiRuleSet_Properties_Rules struct {
-	Actions                 any
-	Conditions              any
+	// The action(s) this rule applies. (AI-inferred)
+	Actions any
+	// The condition(s) that must all be satisfied for this rule to match. (AI-inferred)
+	Conditions any
+	// Whether rule processing stops after this rule matches, or continues to subsequent rules. (AI-inferred)
 	MatchProcessingBehavior any
-	Order                   any
-	RuleName                any
-	RuleSetName             any
+	// The relative evaluation order of this item. (AI-inferred)
+	Order any
+	// The name of this rule. (AI-inferred)
+	RuleName any
+	// The name of this managed rule set. (AI-inferred)
+	RuleSetName any
 }
 
 type OpenapiRuleSet_Properties struct {

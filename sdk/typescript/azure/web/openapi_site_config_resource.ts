@@ -12,7 +12,9 @@ export interface OpenapiSiteConfigResource_Properties_ApiManagementConfig {
 }
 
 export interface OpenapiSiteConfigResource_Properties_AppSettings {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -51,18 +53,28 @@ export interface OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_Slo
 }
 
 export interface OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_StatusCodes {
+  /** How many of this item there are. (AI-inferred) */
   count?: number | Computed<number>;
+  /** A file or URL path. (AI-inferred) */
   path?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: number | Computed<number>;
+  /** A more specific status code, refining `status`. (AI-inferred) */
   subStatus?: number | Computed<number>;
+  /** The time window this measurement or rule applies over. (AI-inferred) */
   timeInterval?: string | Computed<string>;
+  /** A Windows-specific status code. (AI-inferred) */
   win32Status?: number | Computed<number>;
 }
 
 export interface OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_StatusCodesRange {
+  /** How many of this item there are. (AI-inferred) */
   count?: number | Computed<number>;
+  /** A file or URL path. (AI-inferred) */
   path?: string | Computed<string>;
+  /** The HTTP status code(s) triggering this rule. (AI-inferred) */
   statusCodes?: string | Computed<string>;
+  /** The time window this measurement or rule applies over. (AI-inferred) */
   timeInterval?: string | Computed<string>;
 }
 
@@ -89,18 +101,28 @@ export interface OpenapiSiteConfigResource_Properties_AutoHealRules {
 }
 
 export interface OpenapiSiteConfigResource_Properties_AzureStorageAccounts {
+  /** The access key credential used to authenticate. (AI-inferred) */
   accessKey?: string | Computed<string>;
+  /** The name of the associated storage account. (AI-inferred) */
   accountName?: string | Computed<string>;
+  /** The path this volume is mounted at. (AI-inferred) */
   mountPath?: string | Computed<string>;
+  /** The network protocol used. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The name of the file share this applies to. (AI-inferred) */
   shareName?: string | Computed<string>;
+  /** The current lifecycle state of this resource. (AI-inferred) */
   state?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiSiteConfigResource_Properties_ConnectionStrings {
+  /** The connection string used to reach this resource. (AI-inferred) */
   connectionString?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -112,13 +134,21 @@ export interface OpenapiSiteConfigResource_Properties_Cors {
 }
 
 export interface OpenapiSiteConfigResource_Properties_Experiments_RampUpRules {
+  /** The hostname traffic is routed to after this action. (AI-inferred) */
   actionHostName?: string | Computed<string>;
+  /** The URL called back to decide whether a pending network configuration change should proceed. (AI-inferred) */
   changeDecisionCallbackUrl?: string | Computed<string>;
+  /** How often, in minutes, this configuration is permitted to change. (AI-inferred) */
   changeIntervalInMinutes?: number | Computed<number>;
+  /** The specific step size permitted for this change. (AI-inferred) */
   changeStep?: number | Computed<number>;
+  /** The maximum percentage of traffic permitted to be rerouted. (AI-inferred) */
   maxReroutePercentage?: number | Computed<number>;
+  /** The minimum percentage of traffic permitted to be rerouted. (AI-inferred) */
   minReroutePercentage?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The percentage of traffic currently rerouted. (AI-inferred) */
   reroutePercentage?: number | Computed<number>;
 }
 
@@ -128,22 +158,36 @@ export interface OpenapiSiteConfigResource_Properties_Experiments {
 }
 
 export interface OpenapiSiteConfigResource_Properties_HandlerMappings {
+  /** The argument(s) passed to this operation. (AI-inferred) */
   arguments?: string | Computed<string>;
+  /** A reference to the site extension this applies to. (AI-inferred) */
   extension?: string | Computed<string>;
+  /** The interpreter used to run this script. (AI-inferred) */
   scriptProcessor?: string | Computed<string>;
 }
 
 export interface OpenapiSiteConfigResource_Properties_IpSecurityRestrictions {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The HTTP header(s) this applies to. (AI-inferred) */
   headers?: Record<string, string[]> | Computed<Record<string, string[]>>;
+  /** An IP address. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The relative priority of this item. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The subnet mask applied to this address range. (AI-inferred) */
   subnetMask?: string | Computed<string>;
+  /** A tag identifying traffic routed through this subnet. (AI-inferred) */
   subnetTrafficTag?: number | Computed<number>;
+  /** A label attached to this resource. (AI-inferred) */
   tag?: string | Computed<string>;
+  /** A reference to the virtual network subnet this app integrates with. (AI-inferred) */
   vnetSubnetResourceId?: string | Computed<string>;
+  /** A tag identifying traffic routed through this virtual network integration. (AI-inferred) */
   vnetTrafficTag?: number | Computed<number>;
 }
 
@@ -184,14 +228,20 @@ export interface OpenapiSiteConfigResource_Properties_Push {
 }
 
 export interface OpenapiSiteConfigResource_Properties_VirtualApplications_VirtualDirectories {
+  /** The physical file system path this virtual directory maps to. (AI-inferred) */
   physicalPath?: string | Computed<string>;
+  /** The virtual path this directory mapping applies to. (AI-inferred) */
   virtualPath?: string | Computed<string>;
 }
 
 export interface OpenapiSiteConfigResource_Properties_VirtualApplications {
+  /** The physical file system path this virtual directory maps to. (AI-inferred) */
   physicalPath?: string | Computed<string>;
+  /** Whether this app is kept preloaded, avoiding a cold start on the first request after idling. (AI-inferred) */
   preloadEnabled?: boolean | Computed<boolean>;
+  /** The virtual directory/directories mapped for this app. (AI-inferred) */
   virtualDirectories?: OpenapiSiteConfigResource_Properties_VirtualApplications_VirtualDirectories[] | Computed<OpenapiSiteConfigResource_Properties_VirtualApplications_VirtualDirectories[]>;
+  /** The virtual path this directory mapping applies to. (AI-inferred) */
   virtualPath?: string | Computed<string>;
 }
 

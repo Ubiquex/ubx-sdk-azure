@@ -4,7 +4,9 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiDatabaseAccountGetResults_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -46,6 +48,7 @@ type DbOpenapiDatabaseAccountGetResults_Properties_BackupPolicy struct {
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_Capabilities struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 
@@ -64,10 +67,15 @@ type DbOpenapiDatabaseAccountGetResults_Properties_ConsistencyPolicy struct {
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_Cors struct {
-	AllowedHeaders  any
-	AllowedMethods  any
-	AllowedOrigins  any
-	ExposedHeaders  any
+	// The request header(s) the CORS policy allows. (AI-inferred)
+	AllowedHeaders any
+	// The HTTP method(s) the CORS policy allows. (AI-inferred)
+	AllowedMethods any
+	// The origin(s) the CORS policy allows. (AI-inferred)
+	AllowedOrigins any
+	// The response header(s) the CORS policy exposes to the calling origin. (AI-inferred)
+	ExposedHeaders any
+	// How long, in seconds, the CORS preflight response may be cached by the browser. (AI-inferred)
 	MaxAgeInSeconds any
 }
 
@@ -78,6 +86,7 @@ type DbOpenapiDatabaseAccountGetResults_Properties_FailoverPolicies struct {
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_IpRules struct {
+	// An IP address or address range, in CIDR notation, permitted to access this account. (AI-inferred)
 	IpAddressOrRange any
 }
 
@@ -98,11 +107,17 @@ type DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata struct {
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_Locations struct {
-	DocumentEndpoint  any
-	FailoverPriority  any
-	Id                any
-	IsZoneRedundant   any
-	LocationName      any
+	// Output only. The URI used to connect to this account's own document API. (AI-inferred)
+	DocumentEndpoint any
+	// The order in which this region is failed over to during a manual failover, `0` being the write region. (AI-inferred)
+	FailoverPriority any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// Whether this region is provisioned as zone-redundant. (AI-inferred)
+	IsZoneRedundant any
+	// The Azure region this configuration applies to. (AI-inferred)
+	LocationName any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
@@ -128,13 +143,17 @@ type DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections st
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_DatabasesToRestore struct {
+	// The collection name(s) this applies to. (AI-inferred)
 	CollectionNames any
-	DatabaseName    any
+	// The name of the database this applies to. (AI-inferred)
+	DatabaseName any
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_GremlinDatabasesToRestore struct {
+	// The name of the database this applies to. (AI-inferred)
 	DatabaseName any
-	GraphNames   any
+	// The graph name(s) this applies to. (AI-inferred)
+	GraphNames any
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters struct {
@@ -155,14 +174,17 @@ type DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters struct {
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_VirtualNetworkRules struct {
-	Id                               any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// Whether this rule is accepted even if the referenced subnet doesn't yet have the required service endpoint enabled. (AI-inferred)
 	IgnoreMissingVnetServiceEndpoint any
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties struct {
 	// Analytical storage specific properties.
 	AnalyticalStorageConfiguration any
-	ApiProperties                  any
+	// Configuration specific to this account's own enabled API surface (e.g. MongoDB server version). (AI-inferred)
+	ApiProperties any
 	// The object representing the policy for taking backups on an account.
 	BackupPolicy any
 	// List of Cosmos DB capabilities for the account

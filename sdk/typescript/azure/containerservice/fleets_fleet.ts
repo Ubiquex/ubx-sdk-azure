@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface FleetsFleet_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -49,7 +51,9 @@ export interface FleetsFleet_Properties_HubProfile {
 }
 
 export interface FleetsFleet_Properties_Status_LastOperationError_AdditionalInfo {
+  /** Additional detail about this result. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -57,10 +61,15 @@ export interface FleetsFleet_Properties_Status_LastOperationError_Details_Detail
 }
 
 export interface FleetsFleet_Properties_Status_LastOperationError_Details {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: FleetsFleet_Properties_Status_LastOperationError_AdditionalInfo[] | Computed<FleetsFleet_Properties_Status_LastOperationError_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: FleetsFleet_Properties_Status_LastOperationError_Details_Details[] | Computed<FleetsFleet_Properties_Status_LastOperationError_Details_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 

@@ -2,10 +2,15 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface MachineScaleSetVmextension_Properties_InstanceView_Statuses {
+  /** The machine-readable status code for the extension instance view, such as 'ProvisioningState/succeeded' or 'ProvisioningState/failed'. (AI-inferred) */
   code?: string | Computed<string>;
+  /** The short, human-readable label for the status. (AI-inferred) */
   displayStatus?: string | Computed<string>;
+  /** The level of the status message, indicating severity. Possible values are Info, Warning, and Error. (AI-inferred) */
   level?: string | Computed<string>;
+  /** A human-readable message providing additional details about the status. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The timestamp when the status was recorded, in ISO 8601 format (e.g., 2024-01-01T12:00:00Z). (AI-inferred) */
   time?: string | Computed<string>;
 }
 
@@ -30,6 +35,7 @@ export interface MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyV
 export interface MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault {
   /** The URL referencing a secret in a Key Vault. */
   secretUrl: string | Computed<string>;
+  /** Specifies the Azure Key Vault from which the secret for the protected settings is retrieved. This is required when using protected settings from a Key Vault. (AI-inferred) */
   sourceVault: MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault_SourceVault | Computed<MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault_SourceVault>;
 }
 

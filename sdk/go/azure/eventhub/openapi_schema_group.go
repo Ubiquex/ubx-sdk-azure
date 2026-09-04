@@ -9,9 +9,11 @@ type OpenapiSchemaGroup_Properties struct {
 	// The ETag value.
 	ETag any
 	// dictionary object for SchemaGroup group properties
-	GroupProperties     any
+	GroupProperties any
+	// How strictly a new schema version must be compatible with previous ones, e.g. `Forward` or `Backward`. (AI-inferred)
 	SchemaCompatibility any
-	SchemaType          any
+	// The serialization format this schema is expressed in, e.g. Avro. (AI-inferred)
+	SchemaType any
 	// Exact time the Schema Group was updated
 	UpdatedAtUtc any
 }
@@ -26,12 +28,14 @@ var OpenapiSchemaGroup_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiSchemaGroupConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type OpenapiSchemaGroupAttrs struct {
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

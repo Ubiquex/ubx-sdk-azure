@@ -15,6 +15,7 @@ export interface IntegrationServiceEnvironmentManagedApi_Properties_DeploymentPa
   contentSize?: number | Computed<number>;
   /** The content version. */
   contentVersion?: string | Computed<string>;
+  /** Free-form key/value metadata attached to this resource. (AI-inferred) */
   metadata?: unknown | Computed<unknown>;
   /** The content link URI. */
   uri?: string | Computed<string>;

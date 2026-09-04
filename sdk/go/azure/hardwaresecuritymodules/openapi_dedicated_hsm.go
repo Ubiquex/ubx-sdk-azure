@@ -4,8 +4,10 @@ package hardwaresecuritymodules
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_NetworkInterfaces struct {
+	// The private (internal) IP address assigned to this resource. (AI-inferred)
 	PrivateIpAddress any
-	ResourceId       any
+	// A reference to the resource this applies to. (AI-inferred)
+	ResourceId any
 }
 
 type OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_Subnet struct {

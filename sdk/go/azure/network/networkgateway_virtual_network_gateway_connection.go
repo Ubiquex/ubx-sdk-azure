@@ -13,30 +13,45 @@ type NetworkgatewayVirtualNetworkGatewayConnection_Properties_CertificateAuthent
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_EgressNatRules struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_GatewayCustomBgpIpAddresses struct {
+	// A caller-chosen BGP peering IP address, instead of Azure's own auto-allocated default. (AI-inferred)
 	CustomBgpIpAddress any
-	IpConfigurationId  any
+	// A reference to the IP configuration this applies to. (AI-inferred)
+	IpConfigurationId any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_IpsecPolicies struct {
-	DhGroup             any
-	IkeEncryption       any
-	IkeIntegrity        any
-	IpsecEncryption     any
-	IpsecIntegrity      any
-	PfsGroup            any
+	// The Diffie-Hellman group used for IKE Phase 1 key exchange, e.g. `DHGroup14` or `DHGroup24`. (AI-inferred)
+	DhGroup any
+	// The encryption algorithm used for IKE Phase 1 (establishing the secure channel itself), e.g. `AES256`. (AI-inferred)
+	IkeEncryption any
+	// The integrity (hashing) algorithm used for IKE Phase 1, e.g. `SHA384`. (AI-inferred)
+	IkeIntegrity any
+	// The encryption algorithm used for IKE Phase 2 (the actual IPsec data tunnel), e.g. `AES256`. (AI-inferred)
+	IpsecEncryption any
+	// The integrity (hashing) algorithm used for IKE Phase 2, e.g. `SHA256`. (AI-inferred)
+	IpsecIntegrity any
+	// The Perfect Forward Secrecy group used when establishing a new IKE Phase 2 security association, or `None` to disable PFS. (AI-inferred)
+	PfsGroup any
+	// The IPsec security association's own data-volume lifetime, in kilobytes -- the tunnel rekeys once either this or `sa_life_time_seconds` is reached. (AI-inferred)
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds   any
+	// The IPsec security association's own time-based lifetime, in seconds -- the tunnel rekeys once either this or `sa_data_size_kilobytes` is reached. (AI-inferred)
+	SaLifeTimeSeconds any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_LocalNetworkGateway2_Properties_BgpSettings_BgpPeeringAddresses struct {
-	CustomBgpIpAddresses  any
+	// Caller-chosen BGP peering IP addresses to use for this connection, instead of Azure's own auto-allocated defaults. (AI-inferred)
+	CustomBgpIpAddresses any
+	// Output only. The BGP peering IP address(es) Azure auto-allocated for this connection. (AI-inferred)
 	DefaultBgpIpAddresses any
-	IpconfigurationId     any
-	TunnelIpAddresses     any
+	// A reference to the IP configuration this applies to. (AI-inferred)
+	IpconfigurationId any
+	// Output only. The public IP address(es) of this VPN gateway's own tunnel endpoint(s). (AI-inferred)
+	TunnelIpAddresses any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_LocalNetworkGateway2_Properties_BgpSettings struct {
@@ -51,9 +66,12 @@ type NetworkgatewayVirtualNetworkGatewayConnection_Properties_LocalNetworkGatewa
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_LocalNetworkGateway2_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations struct {
+	// Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses      any
-	Pool                     any
+	// How many IP addresses to allocate from this pool. (AI-inferred)
+	NumberOfIpAddresses any
+	// A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
+	Pool any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_LocalNetworkGateway2_Properties_LocalNetworkAddressSpace struct {
@@ -93,8 +111,11 @@ type NetworkgatewayVirtualNetworkGatewayConnection_Properties_RoutingConfigurati
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes  any
-	Name             any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
 	NextHopIpAddress any
 }
 
@@ -128,21 +149,30 @@ type NetworkgatewayVirtualNetworkGatewayConnection_Properties_RoutingConfigurati
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_TrafficSelectorPolicies struct {
-	LocalAddressRanges  any
+	// The local (on-premises) IP address range(s) this traffic selector matches. (AI-inferred)
+	LocalAddressRanges any
+	// The remote IP address range(s) this traffic selector matches. (AI-inferred)
 	RemoteAddressRanges any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_TunnelConnectionStatus struct {
-	ConnectionStatus                 any
-	EgressBytesTransferred           any
-	IngressBytesTransferred          any
+	// The current connectivity status of this connection. (AI-inferred)
+	ConnectionStatus any
+	// The total number of bytes transferred outbound. (AI-inferred)
+	EgressBytesTransferred any
+	// The total number of bytes transferred inbound. (AI-inferred)
+	IngressBytesTransferred any
+	// When this connection was last successfully established, in UTC. (AI-inferred)
 	LastConnectionEstablishedUtcTime any
-	Tunnel                           any
+	// A reference to the VPN tunnel this applies to. (AI-inferred)
+	Tunnel any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_TunnelProperties struct {
+	// The IP address used for BGP peering. (AI-inferred)
 	BgpPeeringAddress any
-	TunnelIpAddress   any
+	// The IP address of this VPN gateway's own tunnel endpoint. (AI-inferred)
+	TunnelIpAddress any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_ExtendedLocation struct {
@@ -153,7 +183,9 @@ type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGate
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -176,39 +208,58 @@ type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGate
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_AutoScaleConfiguration struct {
+	// The permitted lower and upper bound for this value. (AI-inferred)
 	Bounds any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_IpConfigurations_Properties struct {
-	PrivateIpaddress          any
+	// The private (internal) IP address assigned to this IP configuration. (AI-inferred)
+	PrivateIpaddress any
+	// Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
 	PrivateIpallocationMethod any
-	ProvisioningState         any
-	PublicIpaddress           any
-	Subnet                    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
+	PublicIpaddress any
+	// A reference to the subnet this resource is associated with. (AI-inferred)
+	Subnet any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_IpConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_NatRules_Properties_ExternalMappings struct {
+	// The virtual network's own address range(s), in CIDR notation. (AI-inferred)
 	AddressSpace any
-	PortRange    any
+	// A range of ports, e.g. `1000-2000`. (AI-inferred)
+	PortRange any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_NatRules_Properties struct {
-	ExternalMappings  any
-	InternalMappings  any
+	// Address mapping(s) this configuration exposes to external systems. (AI-inferred)
+	ExternalMappings any
+	// Address mapping(s) used internally by this configuration. (AI-inferred)
+	InternalMappings any
+	// A reference to the IP configuration this applies to. (AI-inferred)
 	IpConfigurationId any
-	Mode              any
+	// The operating mode this configuration uses. (AI-inferred)
+	Mode any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Type              any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_NatRules struct {
-	Etag       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
@@ -231,62 +282,92 @@ type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGate
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VirtualNetworkGatewayPolicyGroups_Properties_PolicyMembers struct {
-	AttributeType  any
+	// The kind of attribute this policy rule matches on. (AI-inferred)
+	AttributeType any
+	// The value this policy rule matches against. (AI-inferred)
 	AttributeValue any
-	Name           any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VirtualNetworkGatewayPolicyGroups_Properties struct {
-	IsDefault                         any
-	PolicyMembers                     any
-	Priority                          any
-	ProvisioningState                 any
+	// Whether this is the default configuration used when none is explicitly specified. (AI-inferred)
+	IsDefault any
+	// The member(s) this policy group applies to. (AI-inferred)
+	PolicyMembers any
+	// The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
+	Priority any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Point-to-site client connection configuration(s) available on this gateway. (AI-inferred)
 	VngClientConnectionConfigurations any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VirtualNetworkGatewayPolicyGroups struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_RadiusServers struct {
+	// The IP address of the RADIUS authentication server. (AI-inferred)
 	RadiusServerAddress any
-	RadiusServerScore   any
-	RadiusServerSecret  any
+	// The relative priority of this RADIUS server among several configured. (AI-inferred)
+	RadiusServerScore any
+	// The shared secret used to authenticate to this RADIUS server. (AI-inferred)
+	RadiusServerSecret any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VngClientConnectionConfigurations_Properties struct {
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// Point-to-site configuration policy group(s) this virtual network gateway offers. (AI-inferred)
 	VirtualNetworkGatewayPolicyGroups any
-	VpnClientAddressPool              any
+	// The IP address pool point-to-site VPN clients are assigned addresses from. (AI-inferred)
+	VpnClientAddressPool any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VngClientConnectionConfigurations struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VpnClientRevokedCertificates_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	Thumbprint        any
+	// A cryptographic thumbprint of this certificate. (AI-inferred)
+	Thumbprint any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VpnClientRevokedCertificates struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VpnClientRootCertificates_Properties struct {
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
-	PublicCertData    any
+	// The base64-encoded public certificate data used to authenticate a point-to-site VPN client. (AI-inferred)
+	PublicCertData any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnection_Properties_VirtualNetworkGateway1_Properties_VpnClientConfiguration_VpnClientRootCertificates struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

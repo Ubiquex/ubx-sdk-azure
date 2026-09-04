@@ -24,6 +24,7 @@ export interface StoragecontainersStorageContainers_Properties_Status {
   errorCode?: string | Computed<string>;
   /** Descriptive error message */
   errorMessage?: string | Computed<string>;
+  /** The outcome of the most recent operation performed on this storage container, e.g. `Succeeded`, `Failed`, or `InProgress`. (AI-inferred) */
   provisioningStatus?: StoragecontainersStorageContainers_Properties_Status_ProvisioningStatus | Computed<StoragecontainersStorageContainers_Properties_Status_ProvisioningStatus>;
 }
 

@@ -26,12 +26,14 @@ _ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Proper
 
 @dataclasses.dataclass
 class ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceConfig:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceAttrs:
     # ETag of the resource.
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource = ubx.ResourceBinding(

@@ -46,14 +46,23 @@ class NotificationHubResource_Properties_ApnsCredential:
 
 @dataclasses.dataclass
 class NotificationHubResource_Properties_AuthorizationRules:
+    # The type of claim this authorization rule's own token must carry. (AI-inferred)
     claim_type: Any = None
+    # The expected value of `claim_type`. (AI-inferred)
     claim_value: Any = None
+    # When this resource was created. (AI-inferred)
     created_time: Any = None
+    # The name of this shared access policy. (AI-inferred)
     key_name: Any = None
+    # When this resource was last modified. (AI-inferred)
     modified_time: Any = None
+    # The primary shared access key for this policy. (AI-inferred)
     primary_key: Any = None
+    # A number incremented each time this resource is significantly modified. (AI-inferred)
     revision: Any = None
+    # The permission(s) this shared access policy grants. (AI-inferred)
     rights: Any = None
+    # The secondary shared access key for this policy. (AI-inferred)
     secondary_key: Any = None
 
 @dataclasses.dataclass
@@ -152,6 +161,7 @@ class NotificationHubResource_Properties:
     baidu_credential: Any = None
     # Description of a NotificationHub BrowserCredential.
     browser_credential: Any = None
+    # The maximum number of active device(s) permitted per day under this SKU. (AI-inferred)
     daily_max_active_devices: Any = None
     # Description of a NotificationHub GcmCredential.
     gcm_credential: Any = None

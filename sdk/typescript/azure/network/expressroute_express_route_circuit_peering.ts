@@ -2,33 +2,49 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_ExpressRouteCircuitPeering {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_Ipv6CircuitConnectionConfig {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred) */
   circuitConnectionStatus?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** A pre-shared key used to authorize connecting to this ExpressRoute circuit. (AI-inferred) */
   authorizationKey?: string | Computed<string>;
+  /** The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred) */
   circuitConnectionStatus?: string | Computed<string>;
+  /** A reference to the ExpressRoute circuit peering this connection uses. (AI-inferred) */
   expressRouteCircuitPeering?: ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_ExpressRouteCircuitPeering | Computed<ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_ExpressRouteCircuitPeering>;
+  /** IPv6-specific configuration for this circuit connection. (AI-inferred) */
   ipv6CircuitConnectionConfig?: ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_Ipv6CircuitConnectionConfig | Computed<ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_Ipv6CircuitConnectionConfig>;
+  /** A reference to the peer ExpressRoute circuit's own matching peering, for a circuit connecting two ExpressRoute circuits directly. (AI-inferred) */
   peerExpressRouteCircuitPeering?: ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_ExpressRouteCircuitPeering | Computed<ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_ExpressRouteCircuitPeering>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteCircuitPeering_Properties_Connections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties | Computed<ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties>;
 }
 
 export interface ExpressrouteExpressRouteCircuitPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo {
+  /** An IP address prefix, in CIDR notation. (AI-inferred) */
   prefix?: string | Computed<string>;
+  /** A cryptographic signature validating this resource's own configuration or authorization. (AI-inferred) */
   signature?: string | Computed<string>;
+  /** An identifier for a pending validation request on this resource, e.g. an ExpressRoute prefix ownership check. (AI-inferred) */
   validationId?: string | Computed<string>;
+  /** The current outcome of validating this resource's own configuration, e.g. whether an advertised prefix passed ownership verification. (AI-inferred) */
   validationState?: string | Computed<string>;
 }
 
@@ -63,17 +79,26 @@ export interface ExpressrouteExpressRouteCircuitPeering_Properties_Ipv6PeeringCo
 }
 
 export interface ExpressrouteExpressRouteCircuitPeering_Properties_PeeredConnections_Properties {
+  /** An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred) */
   addressPrefix?: string | Computed<string>;
+  /** The resource GUID of the resource this authorization was created for. (AI-inferred) */
   authResourceGuid?: string | Computed<string>;
+  /** The connectivity state of this ExpressRoute circuit connection, e.g. `Connected` or `Connecting`. (AI-inferred) */
   circuitConnectionStatus?: string | Computed<string>;
+  /** The name of this connection. (AI-inferred) */
   connectionName?: string | Computed<string>;
+  /** A reference to the ExpressRoute circuit peering this connection uses. (AI-inferred) */
   expressRouteCircuitPeering?: ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_ExpressRouteCircuitPeering | Computed<ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_ExpressRouteCircuitPeering>;
+  /** A reference to the peer ExpressRoute circuit's own matching peering, for a circuit connecting two ExpressRoute circuits directly. (AI-inferred) */
   peerExpressRouteCircuitPeering?: ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_ExpressRouteCircuitPeering | Computed<ExpressrouteExpressRouteCircuitPeering_Properties_Connections_Properties_ExpressRouteCircuitPeering>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteCircuitPeering_Properties_PeeredConnections {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: ExpressrouteExpressRouteCircuitPeering_Properties_PeeredConnections_Properties | Computed<ExpressrouteExpressRouteCircuitPeering_Properties_PeeredConnections_Properties>;
 }
 

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface IotHubDescription_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -13,13 +15,18 @@ export interface IotHubDescription_Identity {
   tenantId?: string | Computed<string>;
   /** The type of identity used for the resource. The type 'SystemAssigned, UserAssigned' includes both an implicitly created identity and a set of user assigned identities. The type 'None' will remove any identities from the service. */
   type?: string | Computed<string>;
+  /** The user-assigned managed identities associated with this resource. (AI-inferred) */
   userAssignedIdentities?: Record<string, IotHubDescription_Identity_UserAssignedIdentities> | Computed<Record<string, IotHubDescription_Identity_UserAssignedIdentities>>;
 }
 
 export interface IotHubDescription_Properties_AuthorizationPolicies {
+  /** The name of this shared access policy. (AI-inferred) */
   keyName?: string | Computed<string>;
+  /** The primary shared access key for this policy. (AI-inferred) */
   primaryKey?: string | Computed<string>;
+  /** The permission(s) this shared access policy grants. (AI-inferred) */
   rights?: string | Computed<string>;
+  /** The secondary shared access key for this policy. (AI-inferred) */
   secondaryKey?: string | Computed<string>;
 }
 
@@ -42,21 +49,31 @@ export interface IotHubDescription_Properties_CloudToDevice {
 }
 
 export interface IotHubDescription_Properties_EventHubEndpoints {
+  /** A reference to the routing endpoint this applies to. (AI-inferred) */
   endpoint?: string | Computed<string>;
+  /** The number of partition(s) this Event Hub-compatible endpoint has. (AI-inferred) */
   partitionCount?: number | Computed<number>;
+  /** The partition identifier(s) making up this endpoint. (AI-inferred) */
   partitionIds?: string[] | Computed<string[]>;
+  /** The path identifying the specific entity this endpoint targets. (AI-inferred) */
   path?: string | Computed<string>;
+  /** How many days messages are retained for. (AI-inferred) */
   retentionTimeInDays?: number | Computed<number>;
 }
 
 export interface IotHubDescription_Properties_IpFilterRules {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The name of this filter. (AI-inferred) */
   filterName?: string | Computed<string>;
+  /** The IP address range, in CIDR notation, this rule matches. (AI-inferred) */
   ipMask?: string | Computed<string>;
 }
 
 export interface IotHubDescription_Properties_Locations {
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** The role assigned. (AI-inferred) */
   role?: string | Computed<string>;
 }
 
@@ -70,72 +87,118 @@ export interface IotHubDescription_Properties_NetworkRuleSets {
 }
 
 export interface IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface IotHubDescription_Properties_PrivateEndpointConnections_Properties {
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
 }
 
 export interface IotHubDescription_Properties_PrivateEndpointConnections {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: IotHubDescription_Properties_PrivateEndpointConnections_Properties | Computed<IotHubDescription_Properties_PrivateEndpointConnections_Properties>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity {
+  /** A reference to the user-assigned managed identity used to authenticate this connection. (AI-inferred) */
   userAssignedIdentity?: string | Computed<string>;
 }
 
 export interface IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers {
+  /** Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred) */
   authenticationType?: string | Computed<string>;
+  /** The name of the storage container this applies to. (AI-inferred) */
   containerName?: string | Computed<string>;
+  /** The name of the database this applies to. (AI-inferred) */
   databaseName?: string | Computed<string>;
+  /** The URI of this routing endpoint. (AI-inferred) */
   endpointUri?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity | Computed<IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The name of the property used as the partition key. (AI-inferred) */
   partitionKeyName?: string | Computed<string>;
+  /** The template used to derive a blob's own partition path. (AI-inferred) */
   partitionKeyTemplate?: string | Computed<string>;
+  /** The primary shared access key for this policy. (AI-inferred) */
   primaryKey?: string | Computed<string>;
+  /** The resource group this applies to. (AI-inferred) */
   resourceGroup?: string | Computed<string>;
+  /** The secondary shared access key for this policy. (AI-inferred) */
   secondaryKey?: string | Computed<string>;
+  /** The identifier of the associated Azure subscription. (AI-inferred) */
   subscriptionId?: string | Computed<string>;
 }
 
 export interface IotHubDescription_Properties_Routing_Endpoints_EventHubs {
+  /** Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred) */
   authenticationType?: string | Computed<string>;
+  /** The connection string used to reach this endpoint. (AI-inferred) */
   connectionString?: string | Computed<string>;
+  /** The URI of this routing endpoint. (AI-inferred) */
   endpointUri?: string | Computed<string>;
+  /** The path identifying the specific entity (e.g. queue or topic) this endpoint targets. (AI-inferred) */
   entityPath?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity | Computed<IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource group this applies to. (AI-inferred) */
   resourceGroup?: string | Computed<string>;
+  /** The identifier of the associated Azure subscription. (AI-inferred) */
   subscriptionId?: string | Computed<string>;
 }
 
 export interface IotHubDescription_Properties_Routing_Endpoints_StorageContainers {
+  /** Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred) */
   authenticationType?: string | Computed<string>;
+  /** How often, in seconds, batched messages are flushed to this endpoint. (AI-inferred) */
   batchFrequencyInSeconds?: number | Computed<number>;
+  /** The connection string used to reach this endpoint. (AI-inferred) */
   connectionString?: string | Computed<string>;
+  /** The name of the storage container this applies to. (AI-inferred) */
   containerName?: string | Computed<string>;
+  /** The format messages are encoded in when delivered to this endpoint. (AI-inferred) */
   encoding?: string | Computed<string>;
+  /** The URI of this routing endpoint. (AI-inferred) */
   endpointUri?: string | Computed<string>;
+  /** The naming pattern applied to files written to this storage endpoint. (AI-inferred) */
   fileNameFormat?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity | Computed<IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity>;
+  /** The maximum size, in bytes, of a single batched file written to this storage endpoint. (AI-inferred) */
   maxChunkSizeInBytes?: number | Computed<number>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource group this applies to. (AI-inferred) */
   resourceGroup?: string | Computed<string>;
+  /** The identifier of the associated Azure subscription. (AI-inferred) */
   subscriptionId?: string | Computed<string>;
 }
 
@@ -153,8 +216,11 @@ export interface IotHubDescription_Properties_Routing_Endpoints {
 }
 
 export interface IotHubDescription_Properties_Routing_Enrichments {
+  /** The routing endpoint(s) this rule delivers matching messages to. (AI-inferred) */
   endpointNames?: string[] | Computed<string[]>;
+  /** The shared access key value. (AI-inferred) */
   key?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -183,10 +249,15 @@ export interface IotHubDescription_Properties_Routing {
 }
 
 export interface IotHubDescription_Properties_StorageEndpoints {
+  /** Whether this connection authenticates via a shared access key or a managed identity. (AI-inferred) */
   authenticationType?: string | Computed<string>;
+  /** The connection string used to reach this endpoint. (AI-inferred) */
   connectionString?: string | Computed<string>;
+  /** The name of the storage container this applies to. (AI-inferred) */
   containerName?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity | Computed<IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity>;
+  /** How long, in ISO 8601 duration format, a generated shared access signature remains valid. (AI-inferred) */
   sasTtlAsIso8601?: string | Computed<string>;
 }
 
@@ -580,6 +651,7 @@ const IotHubDescription_SkuFields: FieldMap = {
 export interface IotHubDescriptionConfig {
   /** The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention. */
   etag?: string | Computed<string>;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: IotHubDescription_Identity | Computed<IotHubDescription_Identity>;
   /** The resource location. */
   location: string | Computed<string>;
@@ -596,6 +668,7 @@ export interface IotHubDescriptionAttrs {
   etag: string;
   /** The resource identifier. */
   id: string;
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity: IotHubDescription_Identity;
   /** The resource location. */
   location: string;

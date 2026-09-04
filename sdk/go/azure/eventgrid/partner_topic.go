@@ -4,7 +4,9 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PartnerTopic_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,9 +22,13 @@ type PartnerTopic_Identity struct {
 }
 
 type PartnerTopic_Properties_EventTypeInfo_InlineEventTypes struct {
-	DataSchemaUrl    any
-	Description      any
-	DisplayName      any
+	// A URL pointing to the schema describing this event's own data payload. (AI-inferred)
+	DataSchemaUrl any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// A URL pointing to documentation for this event type. (AI-inferred)
 	DocumentationUrl any
 }
 

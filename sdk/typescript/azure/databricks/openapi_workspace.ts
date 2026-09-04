@@ -11,7 +11,9 @@ export interface OpenapiWorkspace_Properties_AccessConnector {
 }
 
 export interface OpenapiWorkspace_Properties_Authorizations {
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
+  /** A reference to the role definition this applies to. (AI-inferred) */
   roleDefinitionId?: string | Computed<string>;
 }
 
@@ -69,12 +71,14 @@ export interface OpenapiWorkspace_Properties_Encryption {
 }
 
 export interface OpenapiWorkspace_Properties_EnhancedSecurityCompliance_AutomaticClusterUpdate {
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_EnhancedSecurityCompliance_ComplianceSecurityProfile {
   /** Compliance standards associated with the workspace. */
   complianceStandards?: string[] | Computed<string[]>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -171,23 +175,32 @@ export interface OpenapiWorkspace_Properties_Parameters {
 }
 
 export interface OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties {
+  /** The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred) */
   groupIds?: string[] | Computed<string[]>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface OpenapiWorkspace_Properties_PrivateEndpointConnections {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties | Computed<OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties>;
 }
 

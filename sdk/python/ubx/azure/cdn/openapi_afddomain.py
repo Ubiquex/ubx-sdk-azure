@@ -51,6 +51,7 @@ class OpenapiAfddomain_Properties_ValidationProperties:
 class OpenapiAfddomain_Properties:
     # Reference to another resource.
     azure_dns_zone: Any = None
+    # The current deployment status of this configuration. (AI-inferred)
     deployment_status: Any = None
     # Provisioning substate shows the progress of custom HTTPS enabling/disabling process step by step. DCV stands for DomainControlValidation.
     domain_validation_state: Any = None

@@ -6,6 +6,7 @@ export interface OpenapiOutboundRuleBasicResource_Properties {
   category?: string | Computed<string>;
   /** Error information about an outbound rule of a machine learning workspace if RuleStatus is failed. */
   errorInformation?: string | Computed<string>;
+  /** The name(s) of the parent rule(s) this suggestion or association derives from. (AI-inferred) */
   parentRuleNames?: string[] | Computed<string[]>;
   /** Type of a managed network Outbound Rule of a machine learning workspace. */
   status?: string | Computed<string>;

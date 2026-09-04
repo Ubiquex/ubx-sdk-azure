@@ -4,6 +4,7 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface GrafanaIntegrationFabric_Properties {
   /** The resource Id of the Azure resource which is used to configure Grafana data source. E.g., an Azure Monitor Workspace, an Azure Data Explorer cluster, etc. */
   dataSourceResourceId?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
   /** A list of integration scenarios covered by this integration fabric */
   scenarios?: string[] | Computed<string[]>;
@@ -21,6 +22,7 @@ const GrafanaIntegrationFabric_PropertiesFields: FieldMap = {
 export interface GrafanaIntegrationFabricConfig {
   /** The geo-location where the resource lives */
   location: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: GrafanaIntegrationFabric_Properties | Computed<GrafanaIntegrationFabric_Properties>;
   /** Resource tags. */
   tags?: Record<string, string> | Computed<Record<string, string>>;
@@ -29,6 +31,7 @@ export interface GrafanaIntegrationFabricConfig {
 export interface GrafanaIntegrationFabricAttrs {
   /** The geo-location where the resource lives */
   location: string;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties: GrafanaIntegrationFabric_Properties;
   /** Resource tags. */
   tags: Record<string, string>;

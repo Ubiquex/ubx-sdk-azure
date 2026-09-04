@@ -2,9 +2,13 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_Properties_ScheduleList {
+  /** The day of the week this scheduled entry starts the managed instance. (AI-inferred) */
   startDay?: string | Computed<string>;
+  /** The time of day this scheduled entry starts the managed instance. (AI-inferred) */
   startTime?: string | Computed<string>;
+  /** The day of the week this scheduled entry stops the managed instance. (AI-inferred) */
   stopDay?: string | Computed<string>;
+  /** The time of day this scheduled entry stops the managed instance. (AI-inferred) */
   stopTime?: string | Computed<string>;
 }
 

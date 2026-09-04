@@ -15,7 +15,9 @@ class MachineScaleSet_ExtendedLocation:
 
 @dataclasses.dataclass
 class MachineScaleSet_Identity_UserAssignedIdentities:
+    # The client ID (application ID) of the user-assigned managed identity associated with the virtual machine scale set. (AI-inferred)
     client_id: Any = None
+    # The principal ID (object ID in Azure AD) of the user-assigned identity assigned to the virtual machine scale set. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -83,8 +85,11 @@ class MachineScaleSet_Properties_HostGroup:
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_LifecycleHooksProfile_LifecycleHooks:
+    # The default action to take when a lifecycle hook is triggered. Allowed values are 'Approve' or 'Reject'. (AI-inferred)
     default_action: Any = None
+    # The type of the lifecycle hook. Allowed values are 'UpgradeAutoOSScheduling' (when an automatic OS upgrade is scheduled) and 'UpgradeAutoOSRollingBatchStarting' (when a rolling batch starts for an automatic OS upgrade). (AI-inferred)
     type: Any = None
+    # The maximum duration (in ISO 8601 format, e.g., 'PT5M') that the platform waits for all lifecycle hooks to complete before proceeding with the scale-set operation. (AI-inferred)
     wait_duration: Any = None
 
 @dataclasses.dataclass
@@ -187,6 +192,7 @@ class MachineScaleSet_Properties_ScheduledEventsPolicy:
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_SkuProfile_VmSizes:
+    # The name of the virtual machine size, such as 'Standard_D2s_v3'. (AI-inferred)
     name: Any = None
     rank: Any = None
 
@@ -247,11 +253,16 @@ class MachineScaleSet_Properties_UpgradePolicy:
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_ApplicationProfile_GalleryApplications:
+    # Specifies the URI (typically a SAS URI) of the configuration file for the gallery application. This configuration file is downloaded and executed on the virtual machine. (AI-inferred)
     configuration_reference: Any = None
+    # Indicates whether the gallery application should be automatically upgraded to the latest version when a new version is released. If true, the virtual machine scale set automatically applies upgrades for this application. (AI-inferred)
     enable_automatic_upgrade: Any = None
+    # Specifies the order in which the gallery applications are installed. Lower values are installed first. (AI-inferred)
     order: Any = None
+    # The resource ID of the gallery application version to be installed on the virtual machine scale set. (AI-inferred)
     package_reference_id: Any = None
     tags: Any = None
+    # Indicates whether a failure to install or configure the gallery application on the VM should be treated as a failure of the VM deployment, causing the VM to be marked as failed. If true, any error during application provisioning will fail the deployment; if false, such failures are logged but do not fail the deployment. (AI-inferred)
     treat_failure_as_deployment_failure: Any = None
 
 @dataclasses.dataclass
@@ -266,6 +277,7 @@ class MachineScaleSet_Properties_VirtualMachineProfile_BillingProfile:
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_CapacityReservation:
+    # The capacity reservation group to associate with the virtual machine scale set. This allows the scale set's instances to use pre-reserved compute capacity. (AI-inferred)
     capacity_reservation_group: Any = None
     # Specifies whether the virtual machine is explicitly opted out from being associated with any capacity reservation. When set to true, the virtual machine will not be allowed to implicitly or explicitly associate with any type of capacity reservation and will consume capacity from the publicly available capacity. Minimum api-version: 2026-04-01.
     disable_capacity_reservation_assignment: Any = None
@@ -284,28 +296,44 @@ class MachineScaleSet_Properties_VirtualMachineProfile_DiagnosticsProfile:
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_ExtensionProfile_Extensions_Properties_ProtectedSettingsFromKeyVault:
+    # The URL of the Key Vault secret that contains the protected settings for the extension. This URL typically points to a secret version, e.g., https://myvault.vault.azure.net/secrets/mysecret/version. (AI-inferred)
     secret_url: Any = None
+    # The Key Vault resource that contains the secret used to protect the extension settings. This is a reference to an existing Key Vault, identified by its resource ID. (AI-inferred)
     source_vault: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_ExtensionProfile_Extensions_Properties:
+    # Indicates whether the extension handler version will be automatically upgraded to a newer minor version when a new version becomes available. (AI-inferred)
     auto_upgrade_minor_version: Any = None
+    # Indicates whether the extension should be automatically upgraded by the platform when a newer extension version is available. (AI-inferred)
     enable_automatic_upgrade: Any = None
+    # A string value used to force the extension to be re-applied even if the extension configuration has not changed. Changing this value (e.g., to a new timestamp) triggers a re-provisioning of the extension on all instances. (AI-inferred)
     force_update_tag: Any = None
+    # Sensitive, encrypted configuration settings for the extension (e.g., credentials or keys). These settings are not returned in read operations and are stored securely. (AI-inferred)
     protected_settings: Any = None
+    # Specifies a reference to a Key Vault secret that contains the protected settings for the extension, instead of providing them inline. The object typically includes the source vault and secret URL. (AI-inferred)
     protected_settings_from_key_vault: Any = None
+    # Specifies a list of extension names that must be provisioned before this extension. Enables ordering of extensions within the scale set. (AI-inferred)
     provision_after_extensions: Any = None
+    # The current provisioning state of the extension in the Azure VM scale set, indicating whether deployment has succeeded or failed. (AI-inferred)
     provisioning_state: Any = None
+    # The name of the publisher of the virtual machine extension, such as Microsoft.Azure.Extensions or Microsoft.Compute. This is required when configuring an extension. (AI-inferred)
     publisher: Any = None
+    # The public configuration settings for the VM extension. The schema varies by extension type; refer to the specific extension's documentation for expected keys and values. (AI-inferred)
     settings: Any = None
+    # Indicates whether to suppress extension failures. When set to true, a failure in this extension does not cause the virtual machine scale set deployment or update to fail, and the failure is not surfaced as a deployment error. (AI-inferred)
     suppress_failures: Any = None
+    # The type of the extension, such as CustomScript or IaaSAntimalware, which identifies the extension handler to use. (AI-inferred)
     type: Any = None
+    # The version of the extension handler. Specifies which version of the extension type to use, such as '1.0' or '2.0'. (AI-inferred)
     type_handler_version: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_ExtensionProfile_Extensions:
     name: Any = None
+    # The properties of the extension, including publisher, type, type handler version, settings, and protected settings. (AI-inferred)
     properties: Any = None
+    # The type of the virtual machine extension, such as 'CustomScriptExtension' or 'DscExtension'. This value identifies the extension handler and works with the publisher and version to define extension behavior. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -342,72 +370,110 @@ class MachineScaleSet_Properties_VirtualMachineProfile_NetworkProfile_Interconne
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_NetworkProfile_NetworkInterfaceConfigurations_Properties_DnsSettings:
+    # The list of DNS server IP addresses assigned to the network interface. (AI-inferred)
     dns_servers: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_DnsSettings:
+    # The domain name label for the public IP address. Combined with the regional DNS zone, it forms the fully qualified domain name. If set, an A record is created for this public IP in Azure DNS. (AI-inferred)
     domain_name_label: Any = None
+    # Specifies the scope for reusing the domain name label. Allowed values are TenantReuse, SubscriptionReuse, ResourceGroupReuse, and NoReuse. (AI-inferred)
     domain_name_label_scope: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_IpTags:
     first_party_service_tag_id: Any = None
+    # The type of the IP tag. Common types include 'FirstPartyUsage' and 'RoutingPreference'. (AI-inferred)
     ip_tag_type: Any = None
+    # The value for an IP tag in the public IP address configuration. It pairs with the IP tag type to apply a classification to the public IP address. (AI-inferred)
     tag: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties:
+    # Specifies whether the public IP address is deleted or detached when the associated virtual machine is deleted. Valid values are 'Delete' (the IP is removed) and 'Detach' (the IP is kept and becomes a standalone resource). (AI-inferred)
     delete_option: Any = None
+    # DNS settings for the public IP address associated with the IP configuration. Typically includes a domain name label that is used to derive the fully qualified domain name (FQDN). (AI-inferred)
     dns_settings: Any = None
+    # The idle timeout for the public IP address in minutes, which controls how long a connection is kept open without activity. Valid values are between 4 and 30 minutes. (AI-inferred)
     idle_timeout_in_minutes: Any = None
+    # A list of IP tags associated with the public IP address. Each IP tag includes a tag type (e.g., FirstPartyUsage) and a tag value, used to categorize or apply metadata to the public IP. (AI-inferred)
     ip_tags: Any = None
+    # The IP version of the public IP address. Allowed values are IPv4 or IPv6. (AI-inferred)
     public_ipaddress_version: Any = None
+    # Defines the Public IP Prefix to use for the public IP address associated with the network interface. When specified, the public IP address is allocated from this prefix. (AI-inferred)
     public_ipprefix: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Sku:
+    # The SKU name for the public IP address configuration. Allowed values are 'Basic' and 'Standard'. (AI-inferred)
     name: Any = None
+    # The tier of the public IP address SKU, indicating whether the public IP is regional (Regional) or global (Global). (AI-inferred)
     tier: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration:
+    # The name of the public IP address configuration associated with the network interface's IP configuration in the virtual machine scale set. (AI-inferred)
     name: Any = None
     properties: Any = None
+    # The SKU of the public IP address, which defines its performance tier and features. Contains the name (Basic or Standard) and optionally the tier (Regional or Global). (AI-inferred)
     sku: Any = None
+    # A set of key-value pairs to be applied as tags on the public IP address created from this configuration, used for resource organization and management. (AI-inferred)
     tags: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties:
+    # Specifies the list of Application Gateway backend address pool references (resource IDs) to which this IP configuration is associated. When defined, instances in the scale set using this IP configuration are added to the specified backend pools, enabling the Application Gateway to route traffic to them. (AI-inferred)
     application_gateway_backend_address_pools: Any = None
+    # A list of application security groups to which this IP configuration is associated. Each item contains the resource ID of an Azure application security group. (AI-inferred)
     application_security_groups: Any = None
+    # List of references to load balancer backend address pools that this IP configuration should be associated with. Used to attach the scale set instances to backend pools of an Azure Load Balancer. (AI-inferred)
     load_balancer_backend_address_pools: Any = None
+    # A list of references to load balancer inbound NAT pools associated with this IP configuration. Each item links the IP configuration to a specific inbound NAT pool from the load balancer. (AI-inferred)
     load_balancer_inbound_nat_pools: Any = None
+    # Indicates whether this IP configuration is the primary one for the network interface. Only one IP configuration can be the primary per network interface. (AI-inferred)
     primary: Any = None
+    # Specifies the version of the private IP address assigned to the IP configuration. Allowed values are 'IPv4' or 'IPv6'. (AI-inferred)
     private_ipaddress_version: Any = None
+    # Configuration for the public IP address associated with this IP configuration in the network interface of a VM scale set. (AI-inferred)
     public_ipaddress_configuration: Any = None
+    # Specifies the subnet in a virtual network where the IP configuration is attached. This is typically an object containing the 'id' of the subnet resource. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations:
+    # The name of the IP configuration. (AI-inferred)
     name: Any = None
+    # The properties of the IP configuration in a virtual machine scale set network interface, including subnet, primary, public IP configuration, and load balancer pool references. (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_NetworkProfile_NetworkInterfaceConfigurations_Properties:
+    # Specifies the auxiliary mode for the network interface. Allowed values are 'None' (default), 'AcceleratedConnections' for accelerated networking connections, and 'Floating' for floating IP configurations. (AI-inferred)
     auxiliary_mode: Any = None
+    # Specifies the SKU for the auxiliary network interface. Allowed values are None, A1, A2, A4, and A8, where None indicates no auxiliary network is used and the A-series values represent different sizes of the auxiliary NIC. (AI-inferred)
     auxiliary_sku: Any = None
+    # Specifies the action to take on the network interface when the virtual machine is deleted. Allowed values are 'Delete' (delete the network interface) and 'Detach' (detach and retain it). (AI-inferred)
     delete_option: Any = None
+    # Indicates whether to disable TCP state tracking on the network interface. When true, TCP state tracking is disabled, which can reduce overhead for high-throughput workloads but may impact features that rely on stateful inspection. (AI-inferred)
     disable_tcp_state_tracking: Any = None
+    # DNS settings for the network interface configuration, such as custom DNS servers and the internal DNS name label applied to instances in the scale set. (AI-inferred)
     dns_settings: Any = None
+    # Indicates whether accelerated networking is enabled for the network interface configuration. When enabled, this allows the VM to use Azure's accelerated networking feature (SR-IOV) for improved network performance. (AI-inferred)
     enable_accelerated_networking: Any = None
+    # Specifies whether FPGA (Field-Programmable Gate Array) networking is enabled for this network interface configuration. (AI-inferred)
     enable_fpga: Any = None
+    # Enable or disable IP forwarding on this network interface. When enabled, the VM can forward packets destined for other IP addresses, which is useful for network virtual appliances or routing scenarios. Default is false. (AI-inferred)
     enable_ipforwarding: Any = None
+    # A list of IP configurations for this network interface. Each configuration specifies private IP allocation, subnet, and optional public IP or load balancer backend pool membership. (AI-inferred)
     ip_configurations: Any = None
+    # The network security group (NSG) to associate with the network interface. It specifies the NSG that controls traffic for the network interface in the VM scale set. (AI-inferred)
     network_security_group: Any = None
+    # Specifies whether this network interface configuration is the primary network interface for the virtual machine scale set instances. Only one network interface configuration can be marked as primary. (AI-inferred)
     primary: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_NetworkProfile_NetworkInterfaceConfigurations:
+    # The name of the network interface configuration. Must be unique within the virtual machine scale set. (AI-inferred)
     name: Any = None
     properties: Any = None
     tags: Any = None
@@ -441,7 +507,9 @@ class MachineScaleSet_Properties_VirtualMachineProfile_OsProfile_LinuxConfigurat
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_OsProfile_LinuxConfiguration_Ssh_PublicKeys:
+    # The SSH public key data, typically the contents of a public key file (e.g., 'ssh-rsa AAAAB3NzaC1yc2E...'). This key is used for authentication to the Linux VM. (AI-inferred)
     key_data: Any = None
+    # The full path on the Linux VM where the SSH public key is stored, typically the authorized_keys file for a specific user (e.g., /home/azureuser/.ssh/authorized_keys). (AI-inferred)
     path: Any = None
 
 @dataclasses.dataclass
@@ -464,19 +532,27 @@ class MachineScaleSet_Properties_VirtualMachineProfile_OsProfile_LinuxConfigurat
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_OsProfile_Secrets_VaultCertificates:
+    # Specifies the certificate store on the virtual machine where the certificate should be added. This is used for Windows VMs; for Linux VMs, this value is ignored. (AI-inferred)
     certificate_store: Any = None
+    # The URL of the certificate stored in Azure Key Vault, referencing the secret version of the certificate to be installed on the virtual machine. (AI-inferred)
     certificate_url: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_OsProfile_Secrets:
+    # Specifies the Key Vault that contains the certificates used in the secrets for the virtual machine scale set's OS profile. (AI-inferred)
     source_vault: Any = None
+    # Specifies the list of certificates to install from the referenced Azure Key Vault. Each item contains the certificate URL and, for Windows, the certificate store to place the certificate in. (AI-inferred)
     vault_certificates: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_OsProfile_WindowsConfiguration_AdditionalUnattendContent:
+    # The name of the Windows component to configure. For additional unattend content in a virtual machine scale set, this must be Microsoft-Windows-Shell-Setup. (AI-inferred)
     component_name: Any = None
+    # The base64-encoded XML content that is added to the unattend.xml file for Windows configuration. (AI-inferred)
     content: Any = None
+    # The Windows unattend pass name. The only supported value is OobeSystem. (AI-inferred)
     pass_name: Any = None
+    # Specifies the name of the Windows unattend content setting. Valid values are 'AutoLogon' and 'FirstLogonCommands'. (AI-inferred)
     setting_name: Any = None
 
 @dataclasses.dataclass
@@ -492,7 +568,9 @@ class MachineScaleSet_Properties_VirtualMachineProfile_OsProfile_WindowsConfigur
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_OsProfile_WindowsConfiguration_WinRm_Listeners:
+    # The URL to the certificate used for the WinRM HTTPS listener. The certificate must be stored in Azure Key Vault. (AI-inferred)
     certificate_url: Any = None
+    # Specifies the protocol of the Windows Remote Management (WinRM) listener. Allowed values are 'Http' and 'Https'. (AI-inferred)
     protocol: Any = None
 
 @dataclasses.dataclass
@@ -547,7 +625,9 @@ class MachineScaleSet_Properties_VirtualMachineProfile_ScheduledEventsProfile_Os
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_ScheduledEventsProfile:
+    # Specifies the profile for OS image notifications within the scheduled events configuration of a virtual machine scale set. This optional object defines settings for how and when notifications about OS image updates are delivered. (AI-inferred)
     os_image_notification_profile: Any = None
+    # The profile for configuring terminate notifications, which lets you enable termination notification and specify the notification timeout for scale-in events in Azure Virtual Machine Scale Sets. (AI-inferred)
     terminate_notification_profile: Any = None
 
 @dataclasses.dataclass
@@ -610,20 +690,29 @@ class MachineScaleSet_Properties_VirtualMachineProfile_SecurityProfile:
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy:
+    # Specifies the action to take on a disk when a disk delay is detected. Allowed values are 'None' and 'AutomaticReattach'. (AI-inferred)
     action_on_disk_delay: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties:
     availability_policy: Any = None
+    # Specifies whether bursting is enabled for the managed disk. When enabled, the disk can burst beyond its provisioned performance limits. (AI-inferred)
     bursting_enabled: Any = None
+    # The resource ID of the disk access resource to use for the managed disk, enabling private endpoint connectivity. (AI-inferred)
     disk_access_id: Any = None
+    # The number of IOPS allowed for read-only operations on the managed disk. Used for disk types that support separate read and write IOPS limits, such as Ultra SSDs. (AI-inferred)
     disk_iopsread_only: Any = None
     disk_mbps_read_only: Any = None
+    # The logical sector size in bytes for the managed disk. Allowed values are 512 (default) and 4096. (AI-inferred)
     logical_sector_size: Any = None
+    # The maximum number of virtual machines that can share this managed disk. Value must be at least 1. (AI-inferred)
     max_shares: Any = None
+    # The network access policy for the managed disk. Allowed values: AllowAll (allows all network access), AllowPrivate (allows access only from private endpoints), and DenyAll (denies all network access). (AI-inferred)
     network_access_policy: Any = None
     optimized_for_frequent_attach: Any = None
+    # When true, enables Performance Plus on the managed disk, allowing it to achieve higher IOPS and throughput limits than its baseline for an additional cost. This feature is only available in certain regions and for specific disk sizes. (AI-inferred)
     performance_plus: Any = None
+    # The performance tier of the managed disk, which determines its IOPS and throughput (e.g., P10, P20 for premium disks). (AI-inferred)
     tier: Any = None
 
 @dataclasses.dataclass
@@ -632,27 +721,42 @@ class MachineScaleSet_Properties_VirtualMachineProfile_StorageProfile_DataDisks_
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_StorageProfile_DataDisks_ManagedDisk_SecurityProfile:
+    # Specifies the Disk Encryption Set (DES) resource ID used for encrypting the managed disk with customer-managed keys. Provide the fully qualified resource ID of the Disk Encryption Set. (AI-inferred)
     disk_encryption_set: Any = None
+    # Specifies the security encryption type for the managed disk. Allowed values are VMGuestStateOnly (encrypts only the VM guest state), DiskWithVMGuestState (encrypts both the disk and the VM guest state), and NonPersistedTPM (uses non-persisted TPM for encryption). (AI-inferred)
     security_encryption_type: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_StorageProfile_DataDisks_ManagedDisk:
     additional_disk_properties: Any = None
+    # Specifies the Disk Encryption Set used to encrypt this managed data disk at rest with customer-managed keys. The object should provide the resource ID of the encryption set. (AI-inferred)
     disk_encryption_set: Any = None
+    # Security configuration for the managed data disk, including encryption settings and associated disk encryption set. (AI-inferred)
     security_profile: Any = None
+    # Specifies the storage account type for the managed disk. Allowed values: Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, PremiumV2_LRS. (AI-inferred)
     storage_account_type: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSet_Properties_VirtualMachineProfile_StorageProfile_DataDisks:
+    # The caching mode for the data disk, controlling host caching behavior. Valid values are None, ReadOnly, and ReadWrite. (AI-inferred)
     caching: Any = None
+    # Specifies how the data disk should be created. Allowed values are: FromImage (use the image), Empty (create an empty disk), Attach (attach an existing managed disk), Copy (create from a snapshot), and Restore (create from a restore point). (AI-inferred)
     create_option: Any = None
+    # Specifies the action to take on the data disk when the VM is deleted. Allowed values: Delete or Detach. (AI-inferred)
     delete_option: Any = None
+    # The number of input/output operations per second (IOPS) allowed for the managed data disk. Use this to tune disk performance beyond the default baseline. (AI-inferred)
     disk_iopsread_write: Any = None
+    # The disk throughput in megabytes per second (MB/s) for read/write operations, applicable to Ultra SSD data disks in the scale set. (AI-inferred)
     disk_mbps_read_write: Any = None
+    # Specifies the size of the data disk in gigabytes. (AI-inferred)
     disk_size_gb: Any = None
+    # The logical unit number (LUN) for the data disk. This specifies the slot within the virtual machine where the disk will be attached, and must be unique among all data disks on the VM. (AI-inferred)
     lun: Any = None
+    # Specifies the managed disk settings for the data disk, including the storage account type and encryption configuration. (AI-inferred)
     managed_disk: Any = None
+    # The user-defined name of the data disk in the virtual machine scale set's storage profile. (AI-inferred)
     name: Any = None
+    # Specifies how the data disk's fault domain is aligned with the scale set's VM fault domains. `Aligned` ensures the disk is placed in the same fault domain as the virtual machine, while `BestEffortAligned` attempts to align it but does not guarantee the placement. (AI-inferred)
     storage_fault_domain_alignment: Any = None
     write_accelerator_enabled: Any = None
 
@@ -753,6 +857,7 @@ class MachineScaleSet_Properties_VirtualMachineProfile:
     os_profile: Any = None
     # Specifies the priority for a standalone virtual machine or the virtual machines in the scale set.
     priority: Any = None
+    # Configuration for Scheduled Events on the virtual machine scale set, including settings for OS image notifications and termination notifications. (AI-inferred)
     scheduled_events_profile: Any = None
     # Specifies the security posture to be used in the scale set. Minimum api-version: 2023-03-01
     security_posture_reference: Any = None
@@ -781,6 +886,7 @@ class MachineScaleSet_Properties:
     external_health_policy: Any = None
     # Specifies the high speed interconnect placement for the virtual machine scale set.
     high_speed_interconnect_placement: Any = None
+    # Configuration for the dedicated host group that the virtual machine scale set will be assigned to. This object contains the resource ID of the host group. (AI-inferred)
     host_group: Any = None
     # Specifies the lifecycle hooks profile for the virtual machine scale set.
     lifecycle_hooks_profile: Any = None
@@ -794,6 +900,7 @@ class MachineScaleSet_Properties:
     priority_mix_policy: Any = None
     # The provisioning state, which only appears in the response.
     provisioning_state: Any = None
+    # The resource ID of an existing proximity placement group to place the virtual machine scale set instances in. This optional configuration can reduce network latency between VMs for latency-sensitive workloads. (AI-inferred)
     proximity_placement_group: Any = None
     # Describes an resiliency policy - AutomaticZoneRebalancingPolicy, ResilientVMCreationPolicy, ResilientVMDeletionPolicy and OperationRecoverySettings (version > 2025-11-01).
     resiliency_policy: Any = None

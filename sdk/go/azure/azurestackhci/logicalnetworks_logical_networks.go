@@ -26,60 +26,87 @@ type LogicalnetworksLogicalNetworks_Properties_Status struct {
 	// LogicalNetwork provisioning error code
 	ErrorCode any
 	// Descriptive error message
-	ErrorMessage       any
+	ErrorMessage any
+	// The current provisioning status of this resource. (AI-inferred)
 	ProvisioningStatus any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpConfigurationReferences struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools_Info struct {
+	// The number of IP address(es) currently available for allocation. (AI-inferred)
 	Available any
-	Used      any
+	// The number of IP address(es) currently allocated from this pool. (AI-inferred)
+	Used any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools struct {
-	End        any
-	Info       any
+	// The last address in this range, inclusive. (AI-inferred)
+	End any
+	// Additional detail about this result. (AI-inferred)
+	Info any
+	// The category of IP address pool this represents. (AI-inferred)
 	IpPoolType any
-	Name       any
-	Start      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The first address in this range, inclusive. (AI-inferred)
+	Start any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties struct {
-	AddressPrefix    any
+	// An IP address range, in CIDR notation. (AI-inferred)
+	AddressPrefix any
+	// The IP address traffic matching this route is forwarded to. (AI-inferred)
 	NextHopIpAddress any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties struct {
+	// The custom route(s) making up this route table. (AI-inferred)
 	Routes any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties struct {
-	AddressPrefix             any
-	AddressPrefixes           any
-	IpAllocationMethod        any
+	// An IP address range, in CIDR notation. (AI-inferred)
+	AddressPrefix any
+	// The IP address range(s), in CIDR notation, this applies to. (AI-inferred)
+	AddressPrefixes any
+	// Whether IP addresses on this network are assigned statically or dynamically. (AI-inferred)
+	IpAllocationMethod any
+	// The IP configuration(s) currently using addresses from this pool. (AI-inferred)
 	IpConfigurationReferences any
-	IpPools                   any
-	RouteTable                any
-	Vlan                      any
+	// The IP address pool(s) available for allocation on this network. (AI-inferred)
+	IpPools any
+	// The route table applied to this network. (AI-inferred)
+	RouteTable any
+	// The VLAN identifier assigned to this network. (AI-inferred)
+	Vlan any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

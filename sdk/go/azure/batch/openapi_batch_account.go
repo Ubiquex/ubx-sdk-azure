@@ -4,7 +4,9 @@ package batch
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBatchAccount_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -60,8 +62,10 @@ type OpenapiBatchAccount_Properties_KeyVaultReference struct {
 }
 
 type OpenapiBatchAccount_Properties_NetworkProfile_AccountAccess_IpRules struct {
+	// The action to perform. (AI-inferred)
 	Action any
-	Value  any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiBatchAccount_Properties_NetworkProfile_AccountAccess struct {

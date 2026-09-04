@@ -54,8 +54,10 @@ type OpenapiBillingSubscription_Properties_Reseller struct {
 }
 
 type OpenapiBillingSubscription_Properties_SuspensionReasonDetails struct {
+	// When this change or agreement takes effect. (AI-inferred)
 	EffectiveDate any
-	Reason        any
+	// A machine-readable reason code. (AI-inferred)
+	Reason any
 }
 
 type OpenapiBillingSubscription_Properties_SystemOverrides struct {

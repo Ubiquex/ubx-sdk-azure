@@ -25,7 +25,8 @@ type StoragecontainersStorageContainers_Properties_Status struct {
 	// StorageContainer provisioning error code
 	ErrorCode any
 	// Descriptive error message
-	ErrorMessage       any
+	ErrorMessage any
+	// The outcome of the most recent operation performed on this storage container, e.g. `Succeeded`, `Failed`, or `InProgress`. (AI-inferred)
 	ProvisioningStatus any
 }
 

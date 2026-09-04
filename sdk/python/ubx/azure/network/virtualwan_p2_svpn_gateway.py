@@ -8,81 +8,121 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_ConfigurationPolicyGroupAssociations:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_PreviousConfigurationPolicyGroupAssociations_Properties_PolicyMembers:
+    # The kind of attribute this policy rule matches on. (AI-inferred)
     attribute_type: Any = None
+    # The value this policy rule matches against. (AI-inferred)
     attribute_value: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_PreviousConfigurationPolicyGroupAssociations_Properties:
+    # Whether this is the default configuration used when none is explicitly specified. (AI-inferred)
     is_default: Any = None
+    # Point-to-site VPN configuration(s) (address pool, protocol, authentication) available on this gateway. (AI-inferred)
     p2_sconnection_configurations: Any = None
+    # The member(s) this policy group applies to. (AI-inferred)
     policy_members: Any = None
+    # The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred)
     priority: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_PreviousConfigurationPolicyGroupAssociations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_PropagatedRouteTables:
+    # The identifier(s) this applies to. (AI-inferred)
     ids: Any = None
+    # The label(s) attached to this route table, used to group it with others for association/propagation. (AI-inferred)
     labels: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes:
+    # The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
     address_prefixes: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
     next_hop_ip_address: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig:
+    # Whether this connection's own static routes are propagated to the hub's own route table(s). (AI-inferred)
     propagate_static_routes: Any = None
+    # The criteria under which locally learned virtual network routes override otherwise equal-priority learned routes. (AI-inferred)
     vnet_local_route_override_criteria: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes:
+    # The BGP peering connection(s) established on this virtual hub. (AI-inferred)
     bgp_connections: Any = None
+    # The caller-defined static route(s) on this connection. (AI-inferred)
     static_routes: Any = None
+    # Configuration controlling how static routes are propagated for this connection. (AI-inferred)
     static_routes_config: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration:
+    # A reference to the route table this connection's own traffic is associated with. (AI-inferred)
     associated_route_table: Any = None
+    # A reference to the route map applied to routes received on this connection. (AI-inferred)
     inbound_route_map: Any = None
+    # A reference to the route map applied to routes advertised on this connection. (AI-inferred)
     outbound_route_map: Any = None
+    # The route table(s) routes from this connection are propagated into. (AI-inferred)
     propagated_route_tables: Any = None
+    # The route(s) learned from virtual network connections attached to this hub. (AI-inferred)
     vnet_routes: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool_IpamPoolPrefixAllocations:
+    # Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
     allocated_address_prefixes: Any = None
+    # How many IP addresses to allocate from this pool. (AI-inferred)
     number_of_ip_addresses: Any = None
+    # A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
     pool: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool:
+    # The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
     address_prefixes: Any = None
+    # Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred)
     ipam_pool_prefix_allocations: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations_Properties:
+    # The point-to-site configuration policy group(s) this applies to. (AI-inferred)
     configuration_policy_group_associations: Any = None
+    # Whether traffic is routed through a security provider before reaching the internet. (AI-inferred)
     enable_internet_security: Any = None
+    # The configuration policy group association(s) this connection had prior to its own most recent change. (AI-inferred)
     previous_configuration_policy_group_associations: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # Routing configuration (associated/propagated route tables) applied to this connection. (AI-inferred)
     routing_configuration: Any = None
+    # The IP address pool point-to-site VPN clients are assigned addresses from. (AI-inferred)
     vpn_client_address_pool: Any = None
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGateway_Properties_P2SconnectionConfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

@@ -21,6 +21,7 @@ export interface GrafanaManagedPrivateEndpointModel_Properties {
   privateLinkServicePrivateIp?: string | Computed<string>;
   /** The URL of the data store behind the private link service. It would be the URL in the Grafana data source configuration page without the protocol and port. */
   privateLinkServiceUrl?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
   /** User input request message of the managed private endpoint. */
   requestMessage?: string | Computed<string>;

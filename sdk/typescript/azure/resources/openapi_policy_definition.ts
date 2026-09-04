@@ -20,17 +20,26 @@ export interface OpenapiPolicyDefinition_Properties_ExternalEvaluationEnforcemen
 }
 
 export interface OpenapiPolicyDefinition_Properties_Parameters_Metadata {
+  /** Whether the identity performing this deployment is automatically granted permissions needed by its own template resources. (AI-inferred) */
   assignPermissions?: boolean | Computed<boolean>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
+  /** A UI hint identifying a well-known Azure resource type this parameter's own value should be picked from. (AI-inferred) */
   strongType?: string | Computed<string>;
 }
 
 export interface OpenapiPolicyDefinition_Properties_Parameters {
+  /** The set of values permitted for this parameter. (AI-inferred) */
   allowedValues?: unknown[] | Computed<unknown[]>;
+  /** The value used when this parameter is left unset. (AI-inferred) */
   defaultValue?: unknown | Computed<unknown>;
+  /** Additional, free-form metadata associated with this resource. (AI-inferred) */
   metadata?: OpenapiPolicyDefinition_Properties_Parameters_Metadata | Computed<OpenapiPolicyDefinition_Properties_Parameters_Metadata>;
+  /** The JSON schema defining this parameter's own permitted value(s). (AI-inferred) */
   schema?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

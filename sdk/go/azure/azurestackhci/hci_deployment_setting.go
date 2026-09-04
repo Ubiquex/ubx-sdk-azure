@@ -4,228 +4,355 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo_Payload struct {
-	FileName   any
-	Hash       any
+	// The name of this file. (AI-inferred)
+	FileName any
+	// A cryptographic hash of this content. (AI-inferred)
+	Hash any
+	// A unique identifier for this resource. (AI-inferred)
 	Identifier any
-	Url        any
+	// A URL this applies to. (AI-inferred)
+	Url any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo struct {
+	// The version of this software package. (AI-inferred)
 	PackageVersion any
-	Payload        any
+	// The literal content of this message or request. (AI-inferred)
+	Payload any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Cluster struct {
+	// The Azure service endpoint this cluster connects to. (AI-inferred)
 	AzureServiceEndpoint any
-	CloudAccountName     any
-	ClusterPattern       any
-	HardwareClass        any
-	Name                 any
-	WitnessPath          any
-	WitnessType          any
+	// The name of the associated Azure cloud account. (AI-inferred)
+	CloudAccountName any
+	// The deployment topology pattern this cluster follows. (AI-inferred)
+	ClusterPattern any
+	// The certified hardware class this node belongs to. (AI-inferred)
+	HardwareClass any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The file share path used as this cluster's own witness for quorum. (AI-inferred)
+	WitnessPath any
+	// The kind of quorum witness used, e.g. a file share or cloud witness. (AI-inferred)
+	WitnessType any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_AdapterPropertyOverrides struct {
-	JumboPacket             any
-	NetworkDirect           any
+	// Whether jumbo frames are enabled on this network adapter. (AI-inferred)
+	JumboPacket any
+	// Whether RDMA (Network Direct) is enabled on this network adapter. (AI-inferred)
+	NetworkDirect any
+	// The RDMA technology used, e.g. `RoCEv2` or `iWARP`. (AI-inferred)
 	NetworkDirectTechnology any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_QosPolicyOverrides struct {
-	BandwidthPercentageSmb         any
+	// The percentage of link bandwidth reserved for SMB traffic. (AI-inferred)
+	BandwidthPercentageSmb any
+	// The 802.1p priority value assigned to cluster heartbeat traffic. (AI-inferred)
 	PriorityValue8021ActionCluster any
-	PriorityValue8021ActionSmb     any
+	// The 802.1p priority value assigned to SMB (storage) traffic. (AI-inferred)
+	PriorityValue8021ActionSmb any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_VirtualSwitchConfigurationOverrides struct {
-	EnableIov              any
+	// Whether SR-IOV (I/O virtualization) is enabled on this network adapter. (AI-inferred)
+	EnableIov any
+	// The algorithm used to distribute network traffic across adapter(s) in this team. (AI-inferred)
 	LoadBalancingAlgorithm any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents struct {
-	Adapter                             any
-	AdapterPropertyOverrides            any
-	Name                                any
-	OverrideAdapterProperty             any
-	OverrideQosPolicy                   any
-	OverrideVirtualSwitchConfiguration  any
-	QosPolicyOverrides                  any
-	TrafficType                         any
+	// A reference to the network adapter this applies to. (AI-inferred)
+	Adapter any
+	// Property override(s) applied to this network adapter, beyond the discovered defaults. (AI-inferred)
+	AdapterPropertyOverrides any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Whether a discovered network adapter property is overridden with a caller-supplied value. (AI-inferred)
+	OverrideAdapterProperty any
+	// Whether the default Quality of Service policy is overridden for this network. (AI-inferred)
+	OverrideQosPolicy any
+	// Whether the default virtual switch configuration is overridden. (AI-inferred)
+	OverrideVirtualSwitchConfiguration any
+	// Quality of Service policy setting(s) overridden from their own discovered defaults. (AI-inferred)
+	QosPolicyOverrides any
+	// The category of network traffic (e.g. management, compute, storage) this applies to. (AI-inferred)
+	TrafficType any
+	// Virtual switch configuration setting(s) overridden from their own discovered defaults. (AI-inferred)
 	VirtualSwitchConfigurationOverrides any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterIpconfig struct {
-	AddressPrefix      any
-	Name               any
+	// An IP address range, in CIDR notation. (AI-inferred)
+	AddressPrefix any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The name of this network adapter. (AI-inferred)
 	NetworkAdapterName any
-	VlanId             any
+	// The VLAN identifier assigned to this network. (AI-inferred)
+	VlanId any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterProperties struct {
-	BandwidthPercentageSmb         any
-	JumboPacket                    any
+	// The percentage of link bandwidth reserved for SMB traffic. (AI-inferred)
+	BandwidthPercentageSmb any
+	// Whether jumbo frames are enabled on this network adapter. (AI-inferred)
+	JumboPacket any
+	// The 802.1p priority value assigned to cluster heartbeat traffic. (AI-inferred)
 	PriorityValue8021ActionCluster any
-	PriorityValue8021ActionSmb     any
+	// The 802.1p priority value assigned to SMB (storage) traffic. (AI-inferred)
+	PriorityValue8021ActionSmb any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig struct {
-	AdapterIpconfig   any
+	// IP configuration for this network adapter. (AI-inferred)
+	AdapterIpconfig any
+	// Configuration properties for this network adapter. (AI-inferred)
 	AdapterProperties any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks struct {
+	// Network configuration applied across this cluster. (AI-inferred)
 	ClusterNetworkConfig any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks_StorageAdapterIpinfo struct {
-	Ipv4Address  any
+	// An IPv4 address. (AI-inferred)
+	Ipv4Address any
+	// A reference to the physical node this applies to. (AI-inferred)
 	PhysicalNode any
-	SubnetMask   any
+	// The subnet mask applied to this address range. (AI-inferred)
+	SubnetMask any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks struct {
-	Name                 any
-	NetworkAdapterName   any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The name of this network adapter. (AI-inferred)
+	NetworkAdapterName any
+	// IP configuration for this storage network adapter. (AI-inferred)
 	StorageAdapterIpinfo any
-	VlanId               any
+	// The VLAN identifier assigned to this network. (AI-inferred)
+	VlanId any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork struct {
-	EnableStorageAutoIp           any
-	Intents                       any
-	SanNetworks                   any
+	// Whether storage network IP addresses are assigned automatically. (AI-inferred)
+	EnableStorageAutoIp any
+	// The declared network traffic intent(s) (e.g. management, compute, storage) this adapter serves. (AI-inferred)
+	Intents any
+	// The Storage Area Network(s) this cluster connects to. (AI-inferred)
+	SanNetworks any
+	// Whether storage nodes connect directly to each other, without a switch. (AI-inferred)
 	StorageConnectivitySwitchless any
-	StorageNetworks               any
+	// The storage network(s) configured on this cluster. (AI-inferred)
+	StorageNetworks any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_DnsZones struct {
+	// The upstream DNS server this cluster forwards unresolved queries to. (AI-inferred)
 	DnsForwarder any
-	DnsZoneName  any
+	// The name of the DNS zone this applies to. (AI-inferred)
+	DnsZoneName any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_IpPools struct {
-	EndingAddress   any
+	// The last address in this range, inclusive. (AI-inferred)
+	EndingAddress any
+	// The first address in this range, inclusive. (AI-inferred)
 	StartingAddress any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork struct {
+	// DNS server configuration for this cluster. (AI-inferred)
 	DnsServerConfig any
-	DnsServers      any
-	DnsZones        any
-	Gateway         any
-	IpPools         any
-	SubnetMask      any
-	UseDhcp         any
+	// The DNS server IP address(es) this resource uses. (AI-inferred)
+	DnsServers any
+	// The DNS zone(s) this applies to. (AI-inferred)
+	DnsZones any
+	// The default gateway IP address for this network. (AI-inferred)
+	Gateway any
+	// The IP address pool(s) available for allocation. (AI-inferred)
+	IpPools any
+	// The subnet mask applied to this address range. (AI-inferred)
+	SubnetMask any
+	// Whether IP address(es) are assigned automatically via DHCP, rather than statically. (AI-inferred)
+	UseDhcp any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_LocalAvailabilityZones struct {
+	// The name of the local availability zone this applies to. (AI-inferred)
 	LocalAvailabilityZoneName any
-	Nodes                     any
+	// The node(s) making up this cluster. (AI-inferred)
+	Nodes any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Observability struct {
-	EpisodicDataUpload  any
-	EuLocation          any
+	// Whether telemetry data is periodically uploaded to Azure. (AI-inferred)
+	EpisodicDataUpload any
+	// Whether this data is stored within the European Union. (AI-inferred)
+	EuLocation any
+	// The client used to stream diagnostic data. (AI-inferred)
 	StreamingDataClient any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_OptionalServices struct {
+	// A reference to the custom location this resource is deployed to. (AI-inferred)
 	CustomLocation any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_PhysicalNodes struct {
+	// An IPv4 address. (AI-inferred)
 	Ipv4Address any
-	Name        any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration_NetworkController struct {
-	MacAddressPoolStart          any
-	MacAddressPoolStop           any
+	// The first MAC address in this pool, inclusive. (AI-inferred)
+	MacAddressPoolStart any
+	// The last MAC address in this pool, inclusive. (AI-inferred)
+	MacAddressPoolStop any
+	// Whether network virtualization (Hyper-V Network Virtualization) is enabled. (AI-inferred)
 	NetworkVirtualizationEnabled any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration struct {
+	// A reference to the network controller managing this configuration. (AI-inferred)
 	NetworkController any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Secrets struct {
-	EceSecretName  any
+	// The name of the secret holding Extension Configuration Engine credentials. (AI-inferred)
+	EceSecretName any
+	// Where this secret's own value is stored. (AI-inferred)
 	SecretLocation any
-	SecretName     any
+	// The name of this secret. (AI-inferred)
+	SecretName any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecuritySettings struct {
-	BitlockerBootVolume           any
-	BitlockerDataVolumes          any
-	CredentialGuardEnforced       any
-	DriftControlEnforced          any
-	DrtmProtection                any
-	HvciProtection                any
+	// Whether BitLocker encryption is enabled on the boot volume. (AI-inferred)
+	BitlockerBootVolume any
+	// Whether BitLocker encryption is enabled on data volumes. (AI-inferred)
+	BitlockerDataVolumes any
+	// Whether Windows Credential Guard is enforced on this cluster. (AI-inferred)
+	CredentialGuardEnforced any
+	// Whether configuration drift control is enforced on this cluster. (AI-inferred)
+	DriftControlEnforced any
+	// Whether Dynamic Root of Trust for Measurement protection is enabled. (AI-inferred)
+	DrtmProtection any
+	// Whether Hypervisor-protected Code Integrity is enabled. (AI-inferred)
+	HvciProtection any
+	// Whether side-channel attack mitigations are enforced. (AI-inferred)
 	SideChannelMitigationEnforced any
-	SmbClusterEncryption          any
-	SmbSigningEnforced            any
-	WdacEnforced                  any
+	// Whether SMB traffic between cluster nodes is encrypted. (AI-inferred)
+	SmbClusterEncryption any
+	// Whether SMB signing is required for this cluster's own traffic. (AI-inferred)
+	SmbSigningEnforced any
+	// Whether Windows Defender Application Control is enforced. (AI-inferred)
+	WdacEnforced any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_S2d struct {
+	// The ratio of virtual to physical resources assumed when planning capacity. (AI-inferred)
 	OverprovisioningRatio any
-	VolumeType            any
+	// The category of storage volume this represents. (AI-inferred)
+	VolumeType any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_San struct {
+	// The LUN identifier for the infrastructure performance volume. (AI-inferred)
 	InfraPerfLunId any
-	InfraVolLunId  any
+	// The LUN identifier for the infrastructure volume. (AI-inferred)
+	InfraVolLunId any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage struct {
+	// How this resource's own configuration is managed, e.g. automatically or manually. (AI-inferred)
 	ConfigurationMode any
-	S2d               any
-	San               any
-	StorageType       any
+	// Whether Storage Spaces Direct is enabled on this cluster. (AI-inferred)
+	S2d any
+	// The Subject Alternative Name(s) on this certificate. (AI-inferred)
+	San any
+	// The category of storage this applies to. (AI-inferred)
+	StorageType any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData struct {
-	AdouPath               any
-	AssemblyInfo           any
-	Cluster                any
-	DomainFqdn             any
-	HostNetwork            any
-	IdentityProvider       any
-	InfrastructureNetwork  any
-	IsManagementCluster    any
+	// The Active Directory Organizational Unit path this cluster's own computer objects are placed in. (AI-inferred)
+	AdouPath any
+	// Version information for the software assembly this applies to. (AI-inferred)
+	AssemblyInfo any
+	// A reference to the cluster this applies to. (AI-inferred)
+	Cluster any
+	// The fully qualified domain name of the Active Directory domain this cluster joins. (AI-inferred)
+	DomainFqdn any
+	// Network configuration for the physical host. (AI-inferred)
+	HostNetwork any
+	// The identity provider used to authenticate for this resource. (AI-inferred)
+	IdentityProvider any
+	// Network configuration reserved for cluster infrastructure traffic. (AI-inferred)
+	InfrastructureNetwork any
+	// Whether this cluster is the management cluster for a multi-cluster deployment. (AI-inferred)
+	IsManagementCluster any
+	// The local availability zone(s) this applies to. (AI-inferred)
 	LocalAvailabilityZones any
-	NamingPrefix           any
-	Observability          any
-	OptionalServices       any
-	PhysicalNodes          any
-	SdnIntegration         any
-	Secrets                any
-	SecretsLocation        any
-	SecuritySettings       any
-	Storage                any
+	// The prefix applied when automatically generating name(s) for this resource. (AI-inferred)
+	NamingPrefix any
+	// Configuration for collecting diagnostic and telemetry data from this cluster. (AI-inferred)
+	Observability any
+	// The optional service(s) enabled on this cluster. (AI-inferred)
+	OptionalServices any
+	// The physical node(s) making up this cluster. (AI-inferred)
+	PhysicalNodes any
+	// Whether Software Defined Networking integration is enabled. (AI-inferred)
+	SdnIntegration any
+	// The secret(s) associated with this resource. (AI-inferred)
+	Secrets any
+	// Where this resource's own secret(s) are stored. (AI-inferred)
+	SecretsLocation any
+	// Security configuration applied to this cluster. (AI-inferred)
+	SecuritySettings any
+	// Storage configuration for this resource. (AI-inferred)
+	Storage any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_PartnerProperties struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_SbeDeploymentInfo struct {
-	Family                  any
-	Publisher               any
+	// The generation or family this belongs to. (AI-inferred)
+	Family any
+	// The publisher of this extension or resource. (AI-inferred)
+	Publisher any
+	// When this Solution Builder Extension manifest was created. (AI-inferred)
 	SbeManifestCreationDate any
-	SbeManifestSource       any
-	Version                 any
+	// Where this Solution Builder Extension manifest was sourced from. (AI-inferred)
+	SbeManifestSource any
+	// The version identifier this applies to. (AI-inferred)
+	Version any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo struct {
-	CredentialList    any
+	// The credential(s) associated with this resource. (AI-inferred)
+	CredentialList any
+	// Additional properties supplied by an OEM hardware partner. (AI-inferred)
 	PartnerProperties any
+	// Deployment information for this Solution Builder Extension. (AI-inferred)
 	SbeDeploymentInfo any
 }
 
 type HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits struct {
+	// The configuration data used to deploy this cluster. (AI-inferred)
 	DeploymentData any
+	// Information about the OEM partner providing this Solution Builder Extension. (AI-inferred)
 	SbePartnerInfo any
 }
 
@@ -240,14 +367,22 @@ type HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_Steps_S
 }
 
 type HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_Steps struct {
-	Description   any
-	EndTimeUtc    any
-	Exception     any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// When this event or window ended, in UTC. (AI-inferred)
+	EndTimeUtc any
+	// Detail about an exception that occurred. (AI-inferred)
+	Exception any
+	// The complete, hierarchical index identifying this step within its own containing process. (AI-inferred)
 	FullStepIndex any
-	Name          any
-	StartTimeUtc  any
-	Status        any
-	Steps         any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// When this event or window started, in UTC. (AI-inferred)
+	StartTimeUtc any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The ordered step(s) making up this process. (AI-inferred)
+	Steps any
 }
 
 type HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus struct {

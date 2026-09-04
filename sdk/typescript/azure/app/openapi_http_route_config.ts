@@ -2,41 +2,59 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiHttpRouteConfig_Properties_CustomDomains {
+  /** Whether this service binding is created automatically or supplied manually by the caller. (AI-inferred) */
   bindingType?: string | Computed<string>;
+  /** A reference to the certificate this applies to. (AI-inferred) */
   certificateId?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface OpenapiHttpRouteConfig_Properties_ProvisioningErrors {
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** When this event occurred. (AI-inferred) */
   timestamp?: string | Computed<string>;
 }
 
 export interface OpenapiHttpRouteConfig_Properties_Rules_Routes_Action {
+  /** The prefix substituted in place of the matched path prefix. (AI-inferred) */
   prefixRewrite?: string | Computed<string>;
 }
 
 export interface OpenapiHttpRouteConfig_Properties_Rules_Routes_Match {
+  /** Whether this path match is case-sensitive. (AI-inferred) */
   caseSensitive?: boolean | Computed<boolean>;
+  /** A file or URL path. (AI-inferred) */
   path?: string | Computed<string>;
+  /** Whether the matched prefix must align on a path segment boundary, rather than matching a partial segment. (AI-inferred) */
   pathSeparatedPrefix?: string | Computed<string>;
+  /** Matches values starting with this prefix. (AI-inferred) */
   prefix?: string | Computed<string>;
 }
 
 export interface OpenapiHttpRouteConfig_Properties_Rules_Routes {
+  /** The action to perform. (AI-inferred) */
   action?: OpenapiHttpRouteConfig_Properties_Rules_Routes_Action | Computed<OpenapiHttpRouteConfig_Properties_Rules_Routes_Action>;
+  /** The condition this rule matches against. (AI-inferred) */
   match?: OpenapiHttpRouteConfig_Properties_Rules_Routes_Match | Computed<OpenapiHttpRouteConfig_Properties_Rules_Routes_Match>;
 }
 
 export interface OpenapiHttpRouteConfig_Properties_Rules_Targets {
+  /** A reference to the Container App this applies to. (AI-inferred) */
   containerApp?: string | Computed<string>;
+  /** A human-readable label for this item. (AI-inferred) */
   label?: string | Computed<string>;
+  /** A reference to a specific revision. (AI-inferred) */
   revision?: string | Computed<string>;
 }
 
 export interface OpenapiHttpRouteConfig_Properties_Rules {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The route(s) this configuration applies to. (AI-inferred) */
   routes?: OpenapiHttpRouteConfig_Properties_Rules_Routes[] | Computed<OpenapiHttpRouteConfig_Properties_Rules_Routes[]>;
+  /** The target(s) this rule applies to. (AI-inferred) */
   targets?: OpenapiHttpRouteConfig_Properties_Rules_Targets[] | Computed<OpenapiHttpRouteConfig_Properties_Rules_Targets[]>;
 }
 

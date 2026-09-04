@@ -6,7 +6,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type VirtualnetworkStaticCidr_Properties struct {
 	// List of IP address prefixes of the resource.
 	AddressPrefixes any
-	Description     any
+	// A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred)
+	Description any
 	// Number of IP addresses to allocate for a static CIDR resource. The IP addresses will be assigned based on IpamPools available space.
 	NumberOfIpaddressesToAllocate any
 	// Provisioning states of a resource.

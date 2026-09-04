@@ -4,17 +4,25 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Deployment_Properties_CallRateLimit_Rules_MatchPatterns struct {
+	// The HTTP method this applies to. (AI-inferred)
 	Method any
-	Path   any
+	// A file or resource path. (AI-inferred)
+	Path any
 }
 
 type Deployment_Properties_CallRateLimit_Rules struct {
-	Count                    any
+	// How many of this item there are. (AI-inferred)
+	Count any
+	// Whether request throttling is dynamically adjusted based on observed load. (AI-inferred)
 	DynamicThrottlingEnabled any
-	Key                      any
-	MatchPatterns            any
-	MinCount                 any
-	RenewalPeriod            any
+	// The key of this attribute or label. (AI-inferred)
+	Key any
+	// The pattern(s) a matching request must satisfy. (AI-inferred)
+	MatchPatterns any
+	// The minimum count required for this condition to be satisfied. (AI-inferred)
+	MinCount any
+	// How often this quota or commitment period automatically renews. (AI-inferred)
+	RenewalPeriod any
 }
 
 type Deployment_Properties_CallRateLimit struct {
@@ -22,7 +30,8 @@ type Deployment_Properties_CallRateLimit struct {
 	Count any
 	// The renewal period in seconds of Call Rate Limit.
 	RenewalPeriod any
-	Rules         any
+	// The rule(s) making up this policy. (AI-inferred)
+	Rules any
 }
 
 type Deployment_Properties_CapacitySettings struct {
@@ -86,7 +95,8 @@ type Deployment_Properties struct {
 	ProvisioningState any
 	// The name of RAI policy.
 	RaiPolicyName any
-	RateLimits    any
+	// The rate limit(s) applied to this deployment or resource. (AI-inferred)
+	RateLimits any
 	// Routing configuration for the model-router deployment. Specifies how requests are routed across multiple models.
 	Routing any
 	// Properties of Cognitive Services account deployment model. (Deprecated, please use Deployment.sku instead.)

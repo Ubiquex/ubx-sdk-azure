@@ -13,7 +13,9 @@ class OpenapiJobBase_Properties_Identity:
 
 @dataclasses.dataclass
 class OpenapiJobBase_Properties_NotificationSetting_Webhooks:
+    # The category of event this represents. (AI-inferred)
     event_type: Any = None
+    # The kind of webhook this represents. (AI-inferred)
     webhook_type: Any = None
 
 @dataclasses.dataclass
@@ -27,16 +29,24 @@ class OpenapiJobBase_Properties_NotificationSetting:
 
 @dataclasses.dataclass
 class OpenapiJobBase_Properties_Services_Nodes:
+    # Whether `nodes` specifies a fixed count or a dedicated/scale setting. (AI-inferred)
     nodes_value_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiJobBase_Properties_Services:
+    # The endpoint this resource is reachable at. (AI-inferred)
     endpoint: Any = None
+    # A human-readable description of the error. (AI-inferred)
     error_message: Any = None
+    # The category of interactive service exposed by this job, e.g. a Jupyter notebook or VS Code. (AI-inferred)
     job_service_type: Any = None
+    # The compute node(s) making up this cluster. (AI-inferred)
     nodes: Any = None
+    # A network port number. (AI-inferred)
     port: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass

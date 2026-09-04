@@ -8,9 +8,13 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ServiceReplicationProtectionCluster_Properties_ClusterRegisteredNodes:
+    # A unique identifier read from the protected machine's own BIOS. (AI-inferred)
     bios_id: Any = None
+    # The fully qualified domain name of this cluster node. (AI-inferred)
     cluster_node_fqdn: Any = None
+    # Whether this virtual machine node represents a shared-disk cluster node. (AI-inferred)
     is_shared_disk_virtual_node: Any = None
+    # A reference to the protected machine this applies to. (AI-inferred)
     machine_id: Any = None
 
 @dataclasses.dataclass
@@ -24,37 +28,66 @@ class ServiceReplicationProtectionCluster_Properties_CurrentScenario:
 
 @dataclasses.dataclass
 class ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErrors:
+    # When this resource was created, in UTC. (AI-inferred)
     creation_time_utc: Any = None
+    # Whether this issue can be resolved by the customer directly. (AI-inferred)
     customer_resolvability: Any = None
+    # A reference to the protected entity this applies to. (AI-inferred)
     entity_id: Any = None
+    # The category this error belongs to. (AI-inferred)
     error_category: Any = None
+    # A machine-readable error code. (AI-inferred)
     error_code: Any = None
+    # A unique identifier for this specific error occurrence. (AI-inferred)
     error_id: Any = None
+    # How severe this error is. (AI-inferred)
     error_level: Any = None
+    # A human-readable description of the error. (AI-inferred)
     error_message: Any = None
+    # Which component produced this error. (AI-inferred)
     error_source: Any = None
+    # The category of error this represents. (AI-inferred)
     error_type: Any = None
+    # Likely cause(s) of this issue. (AI-inferred)
     possible_causes: Any = None
+    # Guidance for resolving this issue. (AI-inferred)
     recommended_action: Any = None
+    # The error message reported by the recovery provider. (AI-inferred)
     recovery_provider_error_message: Any = None
+    # A short, human-readable summary of this result. (AI-inferred)
     summary_message: Any = None
 
 @dataclasses.dataclass
 class ServiceReplicationProtectionCluster_Properties_HealthErrors:
+    # When this resource was created, in UTC. (AI-inferred)
     creation_time_utc: Any = None
+    # Whether this issue can be resolved by the customer directly. (AI-inferred)
     customer_resolvability: Any = None
+    # A reference to the protected entity this applies to. (AI-inferred)
     entity_id: Any = None
+    # The category this error belongs to. (AI-inferred)
     error_category: Any = None
+    # A machine-readable error code. (AI-inferred)
     error_code: Any = None
+    # A unique identifier for this specific error occurrence. (AI-inferred)
     error_id: Any = None
+    # How severe this error is. (AI-inferred)
     error_level: Any = None
+    # A human-readable description of the error. (AI-inferred)
     error_message: Any = None
+    # Which component produced this error. (AI-inferred)
     error_source: Any = None
+    # The category of error this represents. (AI-inferred)
     error_type: Any = None
+    # The underlying health issue(s) contributing to this error. (AI-inferred)
     inner_health_errors: Any = None
+    # Likely cause(s) of this issue. (AI-inferred)
     possible_causes: Any = None
+    # Guidance for resolving this issue. (AI-inferred)
     recommended_action: Any = None
+    # The error message reported by the recovery provider. (AI-inferred)
     recovery_provider_error_message: Any = None
+    # A short, human-readable summary of this result. (AI-inferred)
     summary_message: Any = None
 
 @dataclasses.dataclass

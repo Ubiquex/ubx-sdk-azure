@@ -4,17 +4,25 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AdminRequestApprovalsResource_Properties_Plans_Requesters struct {
-	Date             any
-	Justification    any
-	SubscriptionId   any
+	// The date this event occurred. (AI-inferred)
+	Date any
+	// The stated reason supporting this request. (AI-inferred)
+	Justification any
+	// The identifier of the associated Azure subscription. (AI-inferred)
+	SubscriptionId any
+	// The name of the associated Azure subscription. (AI-inferred)
 	SubscriptionName any
-	User             any
+	// The identity associated with this action. (AI-inferred)
+	User any
 }
 
 type AdminRequestApprovalsResource_Properties_Plans struct {
+	// A human-readable name for this plan. (AI-inferred)
 	PlanDisplayName any
-	PlanId          any
-	Requesters      any
+	// A reference to the specific plan this applies to. (AI-inferred)
+	PlanId any
+	// The identity/identities that submitted this request. (AI-inferred)
+	Requesters any
 }
 
 type AdminRequestApprovalsResource_Properties struct {

@@ -9,7 +9,9 @@ export interface OpenapiStorageAccount_ExtendedLocation {
 }
 
 export interface OpenapiStorageAccount_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -226,18 +228,25 @@ export interface OpenapiStorageAccount_Properties_KeyPolicy {
 }
 
 export interface OpenapiStorageAccount_Properties_NetworkAcls_IpRules {
+  /** The action taken when this rule matches. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface OpenapiStorageAccount_Properties_NetworkAcls_ResourceAccessRules {
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred) */
   tenantId?: string | Computed<string>;
 }
 
 export interface OpenapiStorageAccount_Properties_NetworkAcls_VirtualNetworkRules {
+  /** The action taken when this rule matches. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   state?: string | Computed<string>;
 }
 

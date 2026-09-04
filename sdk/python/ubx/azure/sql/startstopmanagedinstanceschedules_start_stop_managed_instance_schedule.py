@@ -8,9 +8,13 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_Properties_ScheduleList:
+    # The day of the week this scheduled entry starts the managed instance. (AI-inferred)
     start_day: Any = None
+    # The time of day this scheduled entry starts the managed instance. (AI-inferred)
     start_time: Any = None
+    # The day of the week this scheduled entry stops the managed instance. (AI-inferred)
     stop_day: Any = None
+    # The time of day this scheduled entry stops the managed instance. (AI-inferred)
     stop_time: Any = None
 
 @dataclasses.dataclass

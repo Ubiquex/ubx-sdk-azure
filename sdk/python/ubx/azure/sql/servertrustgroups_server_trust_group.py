@@ -8,6 +8,7 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ServertrustgroupsServerTrustGroup_Properties_GroupMembers:
+    # The resource ID of a SQL server included in this trust group. (AI-inferred)
     server_id: Any = None
 
 @dataclasses.dataclass

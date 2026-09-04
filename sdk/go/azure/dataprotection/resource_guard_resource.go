@@ -4,7 +4,9 @@ package dataprotection
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ResourceGuardResource_Properties_ResourceGuardOperations struct {
-	RequestResourceType    any
+	// The resource type this request applies to. (AI-inferred)
+	RequestResourceType any
+	// The type of security-critical operation this applies to, e.g. disabling soft delete or changing immutability. (AI-inferred)
 	VaultCriticalOperation any
 }
 
@@ -42,7 +44,8 @@ type ResourceGuardResourceConfig struct {
 	// Optional ETag.
 	ETag any
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// Resource tags.
 	Tags any
@@ -52,7 +55,8 @@ type ResourceGuardResourceAttrs struct {
 	// Optional ETag.
 	ETag any
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// Resource tags.
 	Tags any

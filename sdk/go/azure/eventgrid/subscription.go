@@ -63,7 +63,9 @@ type Subscription_Properties_DeliveryConfiguration struct {
 }
 
 type Subscription_Properties_FiltersConfiguration_Filters struct {
-	Key          any
+	// The key of this enrichment or attribute. (AI-inferred)
+	Key any
+	// How this condition's own operands are compared. (AI-inferred)
 	OperatorType any
 }
 

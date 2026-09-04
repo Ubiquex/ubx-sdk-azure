@@ -70,16 +70,26 @@ type PrivateCloud_Properties_Endpoints struct {
 }
 
 type PrivateCloud_Properties_IdentitySources struct {
-	Alias           any
-	BaseGroupDn     any
-	BaseUserDn      any
-	Domain          any
-	Name            any
-	Password        any
-	PrimaryServer   any
+	// An alternate name this resource is also known by. (AI-inferred)
+	Alias any
+	// The distinguished name of the LDAP group search base. (AI-inferred)
+	BaseGroupDn any
+	// The distinguished name of the LDAP user search base. (AI-inferred)
+	BaseUserDn any
+	// The Active Directory domain this connection joins. (AI-inferred)
+	Domain any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The password credential used to authenticate. (AI-inferred)
+	Password any
+	// The address of the primary Active Directory server. (AI-inferred)
+	PrimaryServer any
+	// The address of the secondary (failover) Active Directory server. (AI-inferred)
 	SecondaryServer any
-	Ssl             any
-	Username        any
+	// Whether SSL/TLS is used for this connection. (AI-inferred)
+	Ssl any
+	// The username used to authenticate. (AI-inferred)
+	Username any
 }
 
 type PrivateCloud_Properties_ManagementCluster struct {

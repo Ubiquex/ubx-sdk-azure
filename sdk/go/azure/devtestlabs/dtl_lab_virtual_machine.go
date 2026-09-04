@@ -93,31 +93,47 @@ type DtlLabVirtualMachine_Properties_ArtifactDeploymentStatus struct {
 }
 
 type DtlLabVirtualMachine_Properties_Artifacts_Parameters struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type DtlLabVirtualMachine_Properties_Artifacts struct {
-	ArtifactId               any
-	ArtifactTitle            any
-	DeploymentStatusMessage  any
-	InstallTime              any
-	Parameters               any
-	Status                   any
+	// A reference to the artifact this applies to. (AI-inferred)
+	ArtifactId any
+	// A human-readable title for this artifact. (AI-inferred)
+	ArtifactTitle any
+	// A human-readable message describing this deployment's own current status. (AI-inferred)
+	DeploymentStatusMessage any
+	// When this artifact was installed. (AI-inferred)
+	InstallTime any
+	// The parameter value(s) supplied to this artifact or template. (AI-inferred)
+	Parameters any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// A human-readable message describing this VM extension's own current status. (AI-inferred)
 	VmExtensionStatusMessage any
 }
 
 type DtlLabVirtualMachine_Properties_ComputeVm_DataDisks struct {
-	DiskSizeGiB   any
-	DiskUri       any
+	// This disk's own size, in gibibytes. (AI-inferred)
+	DiskSizeGiB any
+	// This disk's own storage URI. (AI-inferred)
+	DiskUri any
+	// A reference to the underlying managed disk. (AI-inferred)
 	ManagedDiskId any
-	Name          any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type DtlLabVirtualMachine_Properties_ComputeVm_Statuses struct {
-	Code          any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// A human-readable summary of this status. (AI-inferred)
 	DisplayStatus any
-	Message       any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
 }
 
 type DtlLabVirtualMachine_Properties_ComputeVm struct {
@@ -138,15 +154,21 @@ type DtlLabVirtualMachine_Properties_ComputeVm struct {
 }
 
 type DtlLabVirtualMachine_Properties_DataDiskParameters_AttachNewDataDiskOptions struct {
-	DiskName    any
+	// The name of this disk. (AI-inferred)
+	DiskName any
+	// This disk's own size, in gibibytes. (AI-inferred)
 	DiskSizeGiB any
-	DiskType    any
+	// The type of storage this disk uses, e.g. `Standard` or `Premium`. (AI-inferred)
+	DiskType any
 }
 
 type DtlLabVirtualMachine_Properties_DataDiskParameters struct {
+	// Configuration for a new data disk to attach when creating this environment. (AI-inferred)
 	AttachNewDataDiskOptions any
-	ExistingLabDiskId        any
-	HostCaching              any
+	// A reference to an existing lab disk to attach, rather than creating a new one. (AI-inferred)
+	ExistingLabDiskId any
+	// The disk caching policy, e.g. `None`, `ReadOnly`, or `ReadWrite`. (AI-inferred)
+	HostCaching any
 }
 
 type DtlLabVirtualMachine_Properties_GalleryImageReference struct {
@@ -163,8 +185,11 @@ type DtlLabVirtualMachine_Properties_GalleryImageReference struct {
 }
 
 type DtlLabVirtualMachine_Properties_NetworkInterface_SharedPublicIpAddressConfiguration_InboundNatRules struct {
-	BackendPort       any
-	FrontendPort      any
+	// The backend port traffic is forwarded to. (AI-inferred)
+	BackendPort any
+	// The public-facing port this rule applies to. (AI-inferred)
+	FrontendPort any
+	// The transport protocol this rule applies to, e.g. `Tcp` or `Udp`. (AI-inferred)
 	TransportProtocol any
 }
 
@@ -195,21 +220,33 @@ type DtlLabVirtualMachine_Properties_NetworkInterface struct {
 }
 
 type DtlLabVirtualMachine_Properties_ScheduleParameters_Properties struct {
-	DailyRecurrence      any
-	HourlyRecurrence     any
+	// A schedule that recurs once per day, at a specific time. (AI-inferred)
+	DailyRecurrence any
+	// A schedule that recurs at a fixed interval, in minutes, throughout the day. (AI-inferred)
+	HourlyRecurrence any
+	// Configuration for a notification sent ahead of this schedule taking effect. (AI-inferred)
 	NotificationSettings any
-	Status               any
-	TargetResourceId     any
-	TaskType             any
-	TimeZoneId           any
-	WeeklyRecurrence     any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// A reference to the resource this applies to. (AI-inferred)
+	TargetResourceId any
+	// The type of task this applies to. (AI-inferred)
+	TaskType any
+	// The time zone this schedule's own times are interpreted in, e.g. `Pacific Standard Time`. (AI-inferred)
+	TimeZoneId any
+	// A schedule that recurs on specific day(s) of the week, at a specific time. (AI-inferred)
+	WeeklyRecurrence any
 }
 
 type DtlLabVirtualMachine_Properties_ScheduleParameters struct {
-	Location   any
-	Name       any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Tags       any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
+	Tags any
 }
 
 type DtlLabVirtualMachine_Properties struct {

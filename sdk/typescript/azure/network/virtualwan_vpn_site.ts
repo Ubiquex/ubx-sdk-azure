@@ -2,12 +2,16 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations_Pool {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations {
+  /** Output only. The specific address ranges actually allocated from this pool. (AI-inferred) */
   allocatedAddressPrefixes?: string[] | Computed<string[]>;
+  /** How many IP addresses to allocate from this pool. (AI-inferred) */
   numberOfIpAddresses?: string | Computed<string>;
+  /** A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred) */
   pool?: VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations_Pool | Computed<VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations_Pool>;
 }
 
@@ -19,9 +23,13 @@ export interface VirtualwanVpnSite_Properties_AddressSpace {
 }
 
 export interface VirtualwanVpnSite_Properties_BgpProperties_BgpPeeringAddresses {
+  /** Caller-chosen BGP peering IP addresses to use for this connection, instead of Azure's own auto-allocated defaults. (AI-inferred) */
   customBgpIpAddresses?: string[] | Computed<string[]>;
+  /** Output only. The BGP peering IP address(es) Azure auto-allocated for this connection. (AI-inferred) */
   defaultBgpIpAddresses?: string[] | Computed<string[]>;
+  /** A reference to the IP configuration this applies to. (AI-inferred) */
   ipconfigurationId?: string | Computed<string>;
+  /** Output only. The public IP address(es) of this VPN gateway's own tunnel endpoint(s). (AI-inferred) */
   tunnelIpAddresses?: string[] | Computed<string[]>;
 }
 
@@ -60,25 +68,36 @@ export interface VirtualwanVpnSite_Properties_O365Policy {
 }
 
 export interface VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_BgpProperties {
+  /** The BGP Autonomous System Number this applies to. (AI-inferred) */
   asn?: number | Computed<number>;
+  /** The IP address used for BGP peering. (AI-inferred) */
   bgpPeeringAddress?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_LinkProperties {
+  /** The name of the ISP providing this VPN site link. (AI-inferred) */
   linkProviderName?: string | Computed<string>;
+  /** The link speed, in Mbps, of this VPN site link. (AI-inferred) */
   linkSpeedInMbps?: number | Computed<number>;
 }
 
 export interface VirtualwanVpnSite_Properties_VpnSiteLinks_Properties {
+  /** BGP configuration (ASN, peering address) for this gateway or connection. (AI-inferred) */
   bgpProperties?: VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_BgpProperties | Computed<VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_BgpProperties>;
+  /** The fully qualified domain name assigned to this resource. (AI-inferred) */
   fqdn?: string | Computed<string>;
+  /** An IP address value. (AI-inferred) */
   ipAddress?: string | Computed<string>;
+  /** Properties (name, provider, speed) describing this VPN site's own physical network link. (AI-inferred) */
   linkProperties?: VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_LinkProperties | Computed<VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_LinkProperties>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnSite_Properties_VpnSiteLinks {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualwanVpnSite_Properties_VpnSiteLinks_Properties | Computed<VirtualwanVpnSite_Properties_VpnSiteLinks_Properties>;
 }
 

@@ -8,10 +8,12 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class RecordSet_Properties_ARecords:
+    # The IPv4 address this A record resolves to. (AI-inferred)
     ipv4_address: Any = None
 
 @dataclasses.dataclass
 class RecordSet_Properties_AaaaRecords:
+    # The IPv6 address this AAAA record resolves to. (AI-inferred)
     ipv6_address: Any = None
 
 @dataclasses.dataclass
@@ -21,11 +23,14 @@ class RecordSet_Properties_CnameRecord:
 
 @dataclasses.dataclass
 class RecordSet_Properties_MxRecords:
+    # The mail server hostname this MX record points to. (AI-inferred)
     exchange: Any = None
+    # This MX record's own priority -- lower values are preferred over higher ones. (AI-inferred)
     preference: Any = None
 
 @dataclasses.dataclass
 class RecordSet_Properties_PtrRecords:
+    # The domain name this PTR record resolves to. (AI-inferred)
     ptrdname: Any = None
 
 @dataclasses.dataclass
@@ -47,13 +52,18 @@ class RecordSet_Properties_SoaRecord:
 
 @dataclasses.dataclass
 class RecordSet_Properties_SrvRecords:
+    # The port the service is available on. (AI-inferred)
     port: Any = None
+    # This SRV record's own priority -- lower values are preferred over higher ones. (AI-inferred)
     priority: Any = None
+    # The hostname of the machine providing the service. (AI-inferred)
     target: Any = None
+    # A relative weight for records with the same priority, used to load-balance between them. (AI-inferred)
     weight: Any = None
 
 @dataclasses.dataclass
 class RecordSet_Properties_TxtRecords:
+    # The text string(s) making up this TXT record's own value. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

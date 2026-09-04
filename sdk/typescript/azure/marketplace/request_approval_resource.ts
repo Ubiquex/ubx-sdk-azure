@@ -2,11 +2,17 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface RequestApprovalResource_Properties_PlansDetails {
+  /** The stated reason supporting this request. (AI-inferred) */
   justification?: string | Computed<string>;
+  /** A reference to the specific plan this applies to. (AI-inferred) */
   planId?: string | Computed<string>;
+  /** When this request was submitted. (AI-inferred) */
   requestDate?: unknown | Computed<unknown>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** The identifier of the associated Azure subscription. (AI-inferred) */
   subscriptionId?: string | Computed<string>;
+  /** The name of the associated Azure subscription. (AI-inferred) */
   subscriptionName?: string | Computed<string>;
 }
 

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface SignalRresource_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -23,13 +25,18 @@ export interface SignalRresource_Properties_Cors {
 }
 
 export interface SignalRresource_Properties_Features {
+  /** The specific feature flag this setting applies to. (AI-inferred) */
   flag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Record<string, string> | Computed<Record<string, string>>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface SignalRresource_Properties_LiveTraceConfiguration_Categories {
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -41,11 +48,14 @@ export interface SignalRresource_Properties_LiveTraceConfiguration {
 }
 
 export interface SignalRresource_Properties_NetworkAcls_IpRules {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface SignalRresource_Properties_NetworkAcls_PrivateEndpoints {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
@@ -68,23 +78,32 @@ export interface SignalRresource_Properties_NetworkAcls {
 }
 
 export interface SignalRresource_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface SignalRresource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface SignalRresource_Properties_PrivateEndpointConnections_Properties {
+  /** The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred) */
   groupIds?: string[] | Computed<string[]>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: SignalRresource_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<SignalRresource_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: SignalRresource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<SignalRresource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface SignalRresource_Properties_PrivateEndpointConnections {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: SignalRresource_Properties_PrivateEndpointConnections_Properties | Computed<SignalRresource_Properties_PrivateEndpointConnections_Properties>;
 }
 
@@ -99,14 +118,20 @@ export interface SignalRresource_Properties_Serverless {
 }
 
 export interface SignalRresource_Properties_SharedPrivateLinkResources_Properties {
+  /** The sub-resource this connection targets on the destination service. (AI-inferred) */
   groupId?: string | Computed<string>;
+  /** A reference to the Private Link resource this applies to. (AI-inferred) */
   privateLinkResourceId?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A message the requester attaches when asking to connect to this resource. (AI-inferred) */
   requestMessage?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface SignalRresource_Properties_SharedPrivateLinkResources {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: SignalRresource_Properties_SharedPrivateLinkResources_Properties | Computed<SignalRresource_Properties_SharedPrivateLinkResources_Properties>;
 }
 
@@ -116,19 +141,27 @@ export interface SignalRresource_Properties_Tls {
 }
 
 export interface SignalRresource_Properties_Upstream_Templates_Auth_ManagedIdentity {
+  /** A reference to the resource this applies to. (AI-inferred) */
   resource?: string | Computed<string>;
 }
 
 export interface SignalRresource_Properties_Upstream_Templates_Auth {
+  /** The managed identity used to authenticate requests to this upstream endpoint. (AI-inferred) */
   managedIdentity?: SignalRresource_Properties_Upstream_Templates_Auth_ManagedIdentity | Computed<SignalRresource_Properties_Upstream_Templates_Auth_ManagedIdentity>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface SignalRresource_Properties_Upstream_Templates {
+  /** Authentication configuration for this upstream endpoint. (AI-inferred) */
   auth?: SignalRresource_Properties_Upstream_Templates_Auth | Computed<SignalRresource_Properties_Upstream_Templates_Auth>;
+  /** The message category pattern this event handler matches. (AI-inferred) */
   categoryPattern?: string | Computed<string>;
+  /** The event name pattern this event handler matches. (AI-inferred) */
   eventPattern?: string | Computed<string>;
+  /** The hub name pattern this event handler matches. (AI-inferred) */
   hubPattern?: string | Computed<string>;
+  /** The URL template used to construct the upstream endpoint address for a matching event. (AI-inferred) */
   urlTemplate?: string | Computed<string>;
 }
 

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DbOpenapiMongoUserDefinitionGetResults_Properties_Roles {
+  /** A reference to the database this applies to. (AI-inferred) */
   db?: string | Computed<string>;
+  /** The role granted by this assignment. (AI-inferred) */
   role?: string | Computed<string>;
 }
 

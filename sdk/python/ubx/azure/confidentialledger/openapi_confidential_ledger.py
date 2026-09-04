@@ -8,13 +8,18 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiConfidentialLedger_Properties_AadBasedSecurityPrincipals:
+    # The ledger role (e.g. Administrator, Contributor, Reader) granted to this Microsoft Entra ID principal. (AI-inferred)
     ledger_role_name: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiConfidentialLedger_Properties_CertBasedSecurityPrincipals:
+    # The client certificate identifying this security principal. (AI-inferred)
     cert: Any = None
+    # The ledger role (e.g. Administrator, Contributor, Reader) granted to this certificate-based principal. (AI-inferred)
     ledger_role_name: Any = None
 
 @dataclasses.dataclass

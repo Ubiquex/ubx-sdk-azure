@@ -77,6 +77,7 @@ var SubscriptionfeatureregistrationSubscriptionFeatureRegistration_PropertiesFie
 }
 
 type SubscriptionfeatureregistrationSubscriptionFeatureRegistrationConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
@@ -84,7 +85,8 @@ type SubscriptionfeatureregistrationSubscriptionFeatureRegistrationAttrs struct 
 	// Azure resource Id.
 	Id any
 	// Azure resource name.
-	Name       any
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// Azure resource type.
 	Type any

@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface IntegrationServiceEnvironment_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -41,6 +43,7 @@ export interface IntegrationServiceEnvironment_Properties_EncryptionConfiguratio
 }
 
 export interface IntegrationServiceEnvironment_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddresses {
+  /** The address this endpoint is reached at. (AI-inferred) */
   address?: string | Computed<string>;
 }
 

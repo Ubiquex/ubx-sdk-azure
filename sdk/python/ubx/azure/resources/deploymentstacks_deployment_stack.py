@@ -24,33 +24,49 @@ class DeploymentstacksDeploymentStack_Properties_DebugSetting:
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference_KeyVault:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference:
+    # A reference to the Key Vault this secret is sourced from. (AI-inferred)
     key_vault: Any = None
+    # The name of this secret. (AI-inferred)
     secret_name: Any = None
+    # The specific version of this secret. (AI-inferred)
     secret_version: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config:
+    # A reference to the Key Vault secret this value is sourced from. (AI-inferred)
     key_vault_reference: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension:
+    # The configuration for this resource. (AI-inferred)
     config: Any = None
+    # A reference to the configuration this applies to. (AI-inferred)
     config_id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_DeletedResources:
+    # The API version used for this resource. (AI-inferred)
     api_version: Any = None
+    # A reference to a Bicep extension used by this template. (AI-inferred)
     extension: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The property/properties identifying this resource for matching purposes. (AI-inferred)
     identifiers: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -66,7 +82,9 @@ class DeploymentstacksDeploymentStack_Properties_DenySettings:
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_Error_AdditionalInfo:
+    # Additional structured detail supporting this error. (AI-inferred)
     info: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -75,10 +93,15 @@ class DeploymentstacksDeploymentStack_Properties_Error_Details_Details:
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_Error_Details:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
@@ -96,27 +119,40 @@ class DeploymentstacksDeploymentStack_Properties_Error:
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_ExternalInputDefinitions:
+    # The configuration for this resource. (AI-inferred)
     config: Any = None
+    # A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
     kind: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_ExternalInputs:
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_FailedResources:
+    # The API version used for this resource. (AI-inferred)
     api_version: Any = None
+    # Detail about an error that occurred. (AI-inferred)
     error: Any = None
+    # A reference to a Bicep extension used by this template. (AI-inferred)
     extension: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The property/properties identifying this resource for matching purposes. (AI-inferred)
     identifiers: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_Parameters:
+    # The template expression this value was evaluated from. (AI-inferred)
     expression: Any = None
+    # A reference to a related resource or value. (AI-inferred)
     reference: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -128,7 +164,9 @@ class DeploymentstacksDeploymentStack_Properties_ParametersLink:
 
 @dataclasses.dataclass
 class DeploymentstacksDeploymentStack_Properties_Resources:
+    # Whether resources managed by this stack are protected from deletion or modification outside the stack. (AI-inferred)
     deny_status: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass

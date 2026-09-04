@@ -41,7 +41,8 @@ var Replica_SkuFields = ubx.FieldMap{
 
 type ReplicaConfig struct {
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// The billing information of the resource.
 	Sku any
@@ -51,7 +52,8 @@ type ReplicaConfig struct {
 
 type ReplicaAttrs struct {
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// The billing information of the resource.
 	Sku any

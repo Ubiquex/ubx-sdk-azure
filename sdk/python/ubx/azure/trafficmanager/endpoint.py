@@ -8,13 +8,18 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Endpoint_Properties_CustomHeaders:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class Endpoint_Properties_Subnets:
+    # The first address in this range, inclusive. (AI-inferred)
     first: Any = None
+    # The last address in this range, inclusive. (AI-inferred)
     last: Any = None
+    # The subnet or IP range this endpoint applies to, for subnet-based routing. (AI-inferred)
     scope: Any = None
 
 @dataclasses.dataclass

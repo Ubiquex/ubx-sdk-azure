@@ -4,7 +4,9 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DatabasesDatabase_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -31,11 +33,16 @@ type DatabasesDatabase_Properties_CurrentSku struct {
 }
 
 type DatabasesDatabase_Properties_Keys struct {
+	// When this transparent data encryption protector key was created. (AI-inferred)
 	CreationDate any
-	KeyVersion   any
-	Subregion    any
-	Thumbprint   any
-	Type         any
+	// The specific version of this encryption key. (AI-inferred)
+	KeyVersion any
+	// The Azure subregion this key is available in. (AI-inferred)
+	Subregion any
+	// A cryptographic thumbprint of this key. (AI-inferred)
+	Thumbprint any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type DatabasesDatabase_Properties struct {

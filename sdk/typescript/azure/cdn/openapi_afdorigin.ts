@@ -26,6 +26,7 @@ export interface OpenapiAfdorigin_Properties {
   certificateNameCheckValidationMode?: string | Computed<string>;
   /** The list of custom certificate subjects to validate against. Only applicable when certificateNameCheckValidationMode is 'CustomCertificateSubject'. Must contain 1 or 2 entries. */
   customCertificateSubjects?: string[] | Computed<string[]>;
+  /** The current deployment status of this configuration. (AI-inferred) */
   deploymentStatus?: string | Computed<string>;
   /** Whether to enable use of this rule. Permitted values are 'Enabled' or 'Disabled' */
   enabledState?: string | Computed<string>;

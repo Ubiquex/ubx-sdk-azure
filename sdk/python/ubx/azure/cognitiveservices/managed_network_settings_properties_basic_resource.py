@@ -8,11 +8,14 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ManagedNetworkSettingsPropertiesBasicResource_Properties_ManagedNetwork:
+    # The network isolation mode(s) this resource may be transitioned to. (AI-inferred)
     changeable_isolation_modes: Any = None
 
 @dataclasses.dataclass
 class ManagedNetworkSettingsPropertiesBasicResource_Properties:
+    # Configuration for this workspace's own managed virtual network. (AI-inferred)
     managed_network: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 _ManagedNetworkSettingsPropertiesBasicResource_Properties_ManagedNetworkFields = {

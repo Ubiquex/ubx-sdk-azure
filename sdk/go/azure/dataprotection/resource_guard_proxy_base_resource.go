@@ -4,15 +4,21 @@ package dataprotection
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetails struct {
+	// The default request payload used when performing this operation, before any Resource Guard-required approval overrides. (AI-inferred)
 	DefaultResourceRequest any
+	// The type of security-critical operation this applies to, e.g. disabling soft delete or changing immutability. (AI-inferred)
 	VaultCriticalOperation any
 }
 
 type ResourceGuardProxyBaseResource_Properties struct {
-	Description                   any
-	LastUpdatedTime               any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// When this was last updated. (AI-inferred)
+	LastUpdatedTime any
+	// Detail about the security-critical operation(s) this Resource Guard protects. (AI-inferred)
 	ResourceGuardOperationDetails any
-	ResourceGuardResourceId       any
+	// A reference to the Resource Guard protecting this critical operation. (AI-inferred)
+	ResourceGuardResourceId any
 }
 
 var ResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetailsFields = ubx.FieldMap{

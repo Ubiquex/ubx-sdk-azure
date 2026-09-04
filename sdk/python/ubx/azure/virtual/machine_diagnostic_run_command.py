@@ -15,10 +15,14 @@ class MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentity:
 
 @dataclasses.dataclass
 class MachineDiagnosticRunCommand_Properties_InstanceView_Statuses:
+    # The status code for the instance view status, indicating the state of the diagnostic run command. (AI-inferred)
     code: Any = None
     display_status: Any = None
+    # The severity level of the instance view status. Possible values are 'Info', 'Warning', and 'Error'. (AI-inferred)
     level: Any = None
+    # The message that provides additional details about the status of the diagnostic run command, such as error information or execution progress. (AI-inferred)
     message: Any = None
+    # The timestamp when the status was recorded, in ISO 8601 format. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
@@ -43,6 +47,7 @@ class MachineDiagnosticRunCommand_Properties_InstanceView:
 @dataclasses.dataclass
 class MachineDiagnosticRunCommand_Properties_Parameters:
     name: Any = None
+    # The value of the parameter to pass to the diagnostic run command. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

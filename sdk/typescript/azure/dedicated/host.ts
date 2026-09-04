@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Host_Properties_InstanceView_AvailableCapacity_AllocatableVms {
+  /** The number of VMs of the specified size that can be allocated on the dedicated host. (AI-inferred) */
   count?: number | Computed<number>;
+  /** The VM size that can be allocated on the dedicated host. (AI-inferred) */
   vmSize?: string | Computed<string>;
 }
 
@@ -12,10 +14,15 @@ export interface Host_Properties_InstanceView_AvailableCapacity {
 }
 
 export interface Host_Properties_InstanceView_Statuses {
+  /** The code that identifies the specific status of the dedicated host instance view, used to programmatically determine the state. (AI-inferred) */
   code?: string | Computed<string>;
+  /** The user-friendly display status of the dedicated host, providing a human-readable description of the current state (e.g., 'Provisioning succeeded'). (AI-inferred) */
   displayStatus?: string | Computed<string>;
+  /** The severity level of the status message, indicating whether it is informational, a warning, or an error. Possible values are: Info, Warning, Error. (AI-inferred) */
   level?: string | Computed<string>;
+  /** A human-readable message providing additional details about the status of the dedicated host. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The timestamp indicating when the status was observed or last updated. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
@@ -29,6 +36,7 @@ export interface Host_Properties_InstanceView {
 }
 
 export interface Host_Properties_VirtualMachines {
+  /** The Azure resource ID of a virtual machine associated with the dedicated host. (AI-inferred) */
   id?: string | Computed<string>;
 }
 

@@ -13,6 +13,7 @@ type HostGroup_Properties_Hosts struct {
 }
 
 type HostGroup_Properties_InstanceView_Hosts struct {
+	// The name of the dedicated host. (AI-inferred)
 	Name any
 }
 

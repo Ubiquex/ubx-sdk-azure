@@ -9,7 +9,9 @@ export interface OpenapiAppServicePlan_ExtendedLocation {
 }
 
 export interface OpenapiAppServicePlan_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -34,12 +36,16 @@ export interface OpenapiAppServicePlan_Properties_HostingEnvironmentProfile {
 }
 
 export interface OpenapiAppServicePlan_Properties_InstallScripts_Source {
+  /** The URI content is read from. (AI-inferred) */
   sourceUri?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiAppServicePlan_Properties_InstallScripts {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Where this content is sourced from. (AI-inferred) */
   source?: OpenapiAppServicePlan_Properties_InstallScripts_Source | Computed<OpenapiAppServicePlan_Properties_InstallScripts_Source>;
 }
 
@@ -51,25 +57,36 @@ export interface OpenapiAppServicePlan_Properties_Network {
 export interface OpenapiAppServicePlan_Properties_PlanDefaultIdentity {
   /** Type of managed service identity. */
   identityType?: string | Computed<string>;
+  /** A reference to the user-assigned managed identity used. (AI-inferred) */
   userAssignedIdentityResourceId?: string | Computed<string>;
 }
 
 export interface OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReference {
+  /** The current status of this reference. (AI-inferred) */
   referenceStatus?: string | Computed<string>;
+  /** A reference to the Key Vault secret this value is sourced from. (AI-inferred) */
   secretUri?: string | Computed<string>;
 }
 
 export interface OpenapiAppServicePlan_Properties_RegistryAdapters {
+  /** A reference to the Key Vault secret holding this value. (AI-inferred) */
   keyVaultSecretReference?: OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReference | Computed<OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReference>;
+  /** A reference to a specific registry key. (AI-inferred) */
   registryKey?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface OpenapiAppServicePlan_Properties_StorageMounts {
+  /** A reference to the Key Vault secret holding this connection's own credentials. (AI-inferred) */
   credentialsKeyVaultReference?: OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReference | Computed<OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReference>;
+  /** The path content is written to. (AI-inferred) */
   destinationPath?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Where this content is sourced from. (AI-inferred) */
   source?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -108,6 +125,7 @@ export interface OpenapiAppServicePlan_Properties {
   numberOfWorkers?: number | Computed<number>;
   /** If <code>true</code>, apps assigned to this App Service plan can be scaled independently. If <code>false</code>, apps assigned to this App Service plan will scale to all instances of the plan. */
   perSiteScaling?: boolean | Computed<boolean>;
+  /** The default managed identity associated with this app's own hosting plan. (AI-inferred) */
   planDefaultIdentity?: OpenapiAppServicePlan_Properties_PlanDefaultIdentity | Computed<OpenapiAppServicePlan_Properties_PlanDefaultIdentity>;
   /** Provisioning state of the App Service Plan. */
   provisioningState?: string | Computed<string>;
@@ -138,8 +156,11 @@ export interface OpenapiAppServicePlan_Properties {
 }
 
 export interface OpenapiAppServicePlan_Sku_Capabilities {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A machine-readable reason code. (AI-inferred) */
   reason?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

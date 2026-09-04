@@ -4,7 +4,9 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSchedule_Properties_AdvancedSchedule_MonthlyOccurrences struct {
-	Day        any
+	// The day-of-week or day-of-month component of this schedule. (AI-inferred)
+	Day any
+	// Which specific occurrence of the matching day within the schedule's own recurrence this applies to. (AI-inferred)
 	Occurrence any
 }
 

@@ -2,11 +2,14 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface AgentDeployment_Properties_Agents {
+  /** The version of this agent. (AI-inferred) */
   agentVersion?: string | Computed<string>;
 }
 
 export interface AgentDeployment_Properties_Protocols {
+  /** The network protocol used. (AI-inferred) */
   protocol?: string | Computed<string>;
+  /** The version identifier this applies to. (AI-inferred) */
   version?: string | Computed<string>;
 }
 

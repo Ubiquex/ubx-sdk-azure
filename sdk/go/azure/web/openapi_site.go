@@ -11,7 +11,9 @@ type OpenapiSite_ExtendedLocation struct {
 }
 
 type OpenapiSite_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -27,11 +29,16 @@ type OpenapiSite_Identity struct {
 }
 
 type OpenapiSite_Properties_AiIntegration_Mcp_Servers struct {
+	// A human-readable description of this resource. (AI-inferred)
 	Description any
-	Enabled     any
-	Endpoint    any
-	Name        any
-	ToolList    any
+	// Whether this feature is turned on. (AI-inferred)
+	Enabled any
+	// The endpoint this connection targets. (AI-inferred)
+	Endpoint any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The set of diagnostic tool(s) available. (AI-inferred)
+	ToolList any
 }
 
 type OpenapiSite_Properties_AiIntegration_Mcp struct {
@@ -149,8 +156,10 @@ type OpenapiSite_Properties_FunctionAppConfig_Runtime struct {
 }
 
 type OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_AlwaysReady struct {
+	// The number of instance(s) provisioned. (AI-inferred)
 	InstanceCount any
-	Name          any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_Triggers_Http struct {
@@ -191,12 +200,18 @@ type OpenapiSite_Properties_FunctionAppConfig struct {
 }
 
 type OpenapiSite_Properties_HostNameSslStates struct {
-	HostType   any
-	Name       any
-	SslState   any
+	// Whether this hostname is the app's own standard hostname or a repository-only hostname. (AI-inferred)
+	HostType any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Whether TLS/SSL for this hostname binding is disabled, using SNI-based, or using IP-based certificate matching. (AI-inferred)
+	SslState any
+	// A cryptographic thumbprint of this certificate. (AI-inferred)
 	Thumbprint any
-	ToUpdate   any
-	VirtualIp  any
+	// The value this configuration will be changed to. (AI-inferred)
+	ToUpdate any
+	// The virtual IP address assigned to this resource. (AI-inferred)
+	VirtualIp any
 }
 
 type OpenapiSite_Properties_HostingEnvironmentProfile struct {
@@ -241,7 +256,9 @@ type OpenapiSite_Properties_SiteConfig_ApiManagementConfig struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_AppSettings struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
@@ -280,18 +297,28 @@ type OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_SlowRequests struc
 }
 
 type OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodes struct {
-	Count        any
-	Path         any
-	Status       any
-	SubStatus    any
+	// How many of this item there are. (AI-inferred)
+	Count any
+	// A file or URL path. (AI-inferred)
+	Path any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// A more specific status code, refining `status`. (AI-inferred)
+	SubStatus any
+	// The time window this measurement or rule applies over. (AI-inferred)
 	TimeInterval any
-	Win32Status  any
+	// A Windows-specific status code. (AI-inferred)
+	Win32Status any
 }
 
 type OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesRange struct {
-	Count        any
-	Path         any
-	StatusCodes  any
+	// How many of this item there are. (AI-inferred)
+	Count any
+	// A file or URL path. (AI-inferred)
+	Path any
+	// The HTTP status code(s) triggering this rule. (AI-inferred)
+	StatusCodes any
+	// The time window this measurement or rule applies over. (AI-inferred)
 	TimeInterval any
 }
 
@@ -318,19 +345,29 @@ type OpenapiSite_Properties_SiteConfig_AutoHealRules struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_AzureStorageAccounts struct {
-	AccessKey   any
+	// The access key credential used to authenticate. (AI-inferred)
+	AccessKey any
+	// The name of the associated storage account. (AI-inferred)
 	AccountName any
-	MountPath   any
-	Protocol    any
-	ShareName   any
-	State       any
-	Type        any
+	// The path this volume is mounted at. (AI-inferred)
+	MountPath any
+	// The network protocol used. (AI-inferred)
+	Protocol any
+	// The name of the file share this applies to. (AI-inferred)
+	ShareName any
+	// The current lifecycle state of this resource. (AI-inferred)
+	State any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiSite_Properties_SiteConfig_ConnectionStrings struct {
+	// The connection string used to reach this resource. (AI-inferred)
 	ConnectionString any
-	Name             any
-	Type             any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiSite_Properties_SiteConfig_Cors struct {
@@ -341,14 +378,22 @@ type OpenapiSite_Properties_SiteConfig_Cors struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_Experiments_RampUpRules struct {
-	ActionHostName            any
+	// The hostname traffic is routed to after this action. (AI-inferred)
+	ActionHostName any
+	// The URL called back to decide whether a pending network configuration change should proceed. (AI-inferred)
 	ChangeDecisionCallbackUrl any
-	ChangeIntervalInMinutes   any
-	ChangeStep                any
-	MaxReroutePercentage      any
-	MinReroutePercentage      any
-	Name                      any
-	ReroutePercentage         any
+	// How often, in minutes, this configuration is permitted to change. (AI-inferred)
+	ChangeIntervalInMinutes any
+	// The specific step size permitted for this change. (AI-inferred)
+	ChangeStep any
+	// The maximum percentage of traffic permitted to be rerouted. (AI-inferred)
+	MaxReroutePercentage any
+	// The minimum percentage of traffic permitted to be rerouted. (AI-inferred)
+	MinReroutePercentage any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The percentage of traffic currently rerouted. (AI-inferred)
+	ReroutePercentage any
 }
 
 type OpenapiSite_Properties_SiteConfig_Experiments struct {
@@ -357,23 +402,37 @@ type OpenapiSite_Properties_SiteConfig_Experiments struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_HandlerMappings struct {
-	Arguments       any
-	Extension       any
+	// The argument(s) passed to this operation. (AI-inferred)
+	Arguments any
+	// A reference to the site extension this applies to. (AI-inferred)
+	Extension any
+	// The interpreter used to run this script. (AI-inferred)
 	ScriptProcessor any
 }
 
 type OpenapiSite_Properties_SiteConfig_IpSecurityRestrictions struct {
-	Action               any
-	Description          any
-	Headers              any
-	IpAddress            any
-	Name                 any
-	Priority             any
-	SubnetMask           any
-	SubnetTrafficTag     any
-	Tag                  any
+	// The action to perform. (AI-inferred)
+	Action any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The HTTP header(s) this applies to. (AI-inferred)
+	Headers any
+	// An IP address. (AI-inferred)
+	IpAddress any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The relative priority of this item. (AI-inferred)
+	Priority any
+	// The subnet mask applied to this address range. (AI-inferred)
+	SubnetMask any
+	// A tag identifying traffic routed through this subnet. (AI-inferred)
+	SubnetTrafficTag any
+	// A label attached to this resource. (AI-inferred)
+	Tag any
+	// A reference to the virtual network subnet this app integrates with. (AI-inferred)
 	VnetSubnetResourceId any
-	VnetTrafficTag       any
+	// A tag identifying traffic routed through this virtual network integration. (AI-inferred)
+	VnetTrafficTag any
 }
 
 type OpenapiSite_Properties_SiteConfig_Limits struct {
@@ -413,15 +472,21 @@ type OpenapiSite_Properties_SiteConfig_Push struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_VirtualApplications_VirtualDirectories struct {
+	// The physical file system path this virtual directory maps to. (AI-inferred)
 	PhysicalPath any
-	VirtualPath  any
+	// The virtual path this directory mapping applies to. (AI-inferred)
+	VirtualPath any
 }
 
 type OpenapiSite_Properties_SiteConfig_VirtualApplications struct {
-	PhysicalPath       any
-	PreloadEnabled     any
+	// The physical file system path this virtual directory maps to. (AI-inferred)
+	PhysicalPath any
+	// Whether this app is kept preloaded, avoiding a cold start on the first request after idling. (AI-inferred)
+	PreloadEnabled any
+	// The virtual directory/directories mapped for this app. (AI-inferred)
 	VirtualDirectories any
-	VirtualPath        any
+	// The virtual path this directory mapping applies to. (AI-inferred)
+	VirtualPath any
 }
 
 type OpenapiSite_Properties_SiteConfig struct {
@@ -612,7 +677,8 @@ type OpenapiSite_Properties struct {
 	// App Dapr configuration.
 	DaprConfig any
 	// Default hostname of the app. Read-only.
-	DefaultHostName  any
+	DefaultHostName any
+	// DNS resolution configuration for this app. (AI-inferred)
 	DnsConfiguration any
 	// <code>true</code> if the app is enabled; otherwise, <code>false</code>. Setting this value to false disables the app (takes the app offline).
 	Enabled any

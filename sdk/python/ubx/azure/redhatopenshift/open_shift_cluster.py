@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenShiftCluster_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -53,8 +55,11 @@ class OpenShiftCluster_Properties_ConsoleProfile:
 
 @dataclasses.dataclass
 class OpenShiftCluster_Properties_IngressProfiles:
+    # An IP address. (AI-inferred)
     ip: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Whether this endpoint is publicly or privately reachable. (AI-inferred)
     visibility: Any = None
 
 @dataclasses.dataclass
@@ -70,6 +75,7 @@ class OpenShiftCluster_Properties_MasterProfile:
 
 @dataclasses.dataclass
 class OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIps:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
@@ -99,8 +105,11 @@ class OpenShiftCluster_Properties_NetworkProfile:
 
 @dataclasses.dataclass
 class OpenShiftCluster_Properties_PlatformWorkloadIdentityProfile_PlatformWorkloadIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # The Microsoft Entra ID object identifier this applies to. (AI-inferred)
     object_id: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
 
 @dataclasses.dataclass
@@ -119,12 +128,19 @@ class OpenShiftCluster_Properties_ServicePrincipalProfile:
 
 @dataclasses.dataclass
 class OpenShiftCluster_Properties_WorkerProfiles:
+    # How many of this item there are. (AI-inferred)
     count: Any = None
+    # A reference to the disk encryption set used to encrypt this node's own disks. (AI-inferred)
     disk_encryption_set_id: Any = None
+    # The size of this disk, in gibibytes. (AI-inferred)
     disk_size_gb: Any = None
+    # Whether encryption of temporary and cache disk data at the host is enabled for this node. (AI-inferred)
     encryption_at_host: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A reference to the subnet this resource is deployed into. (AI-inferred)
     subnet_id: Any = None
+    # The VM size this node is provisioned as. (AI-inferred)
     vm_size: Any = None
 
 @dataclasses.dataclass

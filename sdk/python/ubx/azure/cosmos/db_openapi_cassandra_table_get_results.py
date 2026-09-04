@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DbOpenapiCassandraTableGetResults_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -29,22 +31,28 @@ class DbOpenapiCassandraTableGetResults_Properties_Options_AutoscaleSettings:
 
 @dataclasses.dataclass
 class DbOpenapiCassandraTableGetResults_Properties_Options:
+    # Configuration for automatically scaling throughput within a defined maximum. (AI-inferred)
     autoscale_settings: Any = None
     # Request Units per second. For example, "throughput": 10000.
     throughput: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_ClusterKeys:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The field(s) results are sorted by. (AI-inferred)
     order_by: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_Columns:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_PartitionKeys:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass

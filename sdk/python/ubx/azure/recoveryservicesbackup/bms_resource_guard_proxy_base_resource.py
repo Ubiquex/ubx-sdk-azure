@@ -8,14 +8,20 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class BmsResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetails:
+    # The default compute resource(s) allocated for this operation. (AI-inferred)
     default_resource_request: Any = None
+    # The specific critical operation this protection applies to. (AI-inferred)
     vault_critical_operation: Any = None
 
 @dataclasses.dataclass
 class BmsResourceGuardProxyBaseResource_Properties:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # When this resource was last updated. (AI-inferred)
     last_updated_time: Any = None
+    # Detail about the resource guard protecting this critical operation. (AI-inferred)
     resource_guard_operation_details: Any = None
+    # A reference to the resource guard protecting this vault. (AI-inferred)
     resource_guard_resource_id: Any = None
 
 _BmsResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetailsFields = {
@@ -40,6 +46,7 @@ class BmsResourceGuardProxyBaseResourceConfig:
     e_tag: Any = None
     # Represents an Azure geography region where supported resource providers live.
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # Resource tags.
     tags: Any = None
@@ -50,6 +57,7 @@ class BmsResourceGuardProxyBaseResourceAttrs:
     e_tag: Any = None
     # Represents an Azure geography region where supported resource providers live.
     location: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
     # Resource tags.
     tags: Any = None

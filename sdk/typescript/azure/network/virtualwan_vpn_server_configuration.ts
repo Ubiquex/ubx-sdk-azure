@@ -11,131 +11,200 @@ export interface VirtualwanVpnServerConfiguration_Properties_AadAuthenticationPa
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_PolicyMembers {
+  /** The kind of attribute this policy rule matches on. (AI-inferred) */
   attributeType?: string | Computed<string>;
+  /** The value this policy rule matches against. (AI-inferred) */
   attributeValue?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties {
+  /** Whether this is the default configuration used when none is explicitly specified. (AI-inferred) */
   isDefault?: boolean | Computed<boolean>;
+  /** Point-to-site VPN configuration(s) (address pool, protocol, authentication) available on this gateway. (AI-inferred) */
   p2SconnectionConfigurations?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations[] | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations[]>;
+  /** The member(s) this policy group applies to. (AI-inferred) */
   policyMembers?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_PolicyMembers[] | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_PolicyMembers[]>;
+  /** The relative priority of this rule -- lower numbers are evaluated first, and the first matching rule wins. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_PropagatedRouteTables {
+  /** The identifier(s) this applies to. (AI-inferred) */
   ids?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations[] | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations[]>;
+  /** The label(s) attached to this route table, used to group it with others for association/propagation. (AI-inferred) */
   labels?: string[] | Computed<string[]>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes {
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred) */
   nextHopIpAddress?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig {
+  /** Whether this connection's own static routes are propagated to the hub's own route table(s). (AI-inferred) */
   propagateStaticRoutes?: boolean | Computed<boolean>;
+  /** The criteria under which locally learned virtual network routes override otherwise equal-priority learned routes. (AI-inferred) */
   vnetLocalRouteOverrideCriteria?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes {
+  /** The BGP peering connection(s) established on this virtual hub. (AI-inferred) */
   bgpConnections?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations[] | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations[]>;
+  /** The caller-defined static route(s) on this connection. (AI-inferred) */
   staticRoutes?: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes[] | Computed<VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes[]>;
+  /** Configuration controlling how static routes are propagated for this connection. (AI-inferred) */
   staticRoutesConfig?: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig | Computed<VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration {
+  /** A reference to the route table this connection's own traffic is associated with. (AI-inferred) */
   associatedRouteTable?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations>;
+  /** A reference to the route map applied to routes received on this connection. (AI-inferred) */
   inboundRouteMap?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations>;
+  /** A reference to the route map applied to routes advertised on this connection. (AI-inferred) */
   outboundRouteMap?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations>;
+  /** The route table(s) routes from this connection are propagated into. (AI-inferred) */
   propagatedRouteTables?: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_PropagatedRouteTables | Computed<VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_PropagatedRouteTables>;
+  /** The route(s) learned from virtual network connections attached to this hub. (AI-inferred) */
   vnetRoutes?: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes | Computed<VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool_IpamPoolPrefixAllocations {
+  /** Output only. The specific address ranges actually allocated from this pool. (AI-inferred) */
   allocatedAddressPrefixes?: string[] | Computed<string[]>;
+  /** How many IP addresses to allocate from this pool. (AI-inferred) */
   numberOfIpAddresses?: string | Computed<string>;
+  /** A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred) */
   pool?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool {
+  /** The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred) */
   addressPrefixes?: string[] | Computed<string[]>;
+  /** Address prefixes allocated to this virtual network from an IP Address Management (IPAM) pool. (AI-inferred) */
   ipamPoolPrefixAllocations?: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool_IpamPoolPrefixAllocations[] | Computed<VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool_IpamPoolPrefixAllocations[]>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties {
+  /** The point-to-site configuration policy group(s) this applies to. (AI-inferred) */
   configurationPolicyGroupAssociations?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations[] | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations[]>;
+  /** Whether traffic is routed through a security provider before reaching the internet. (AI-inferred) */
   enableInternetSecurity?: boolean | Computed<boolean>;
+  /** The configuration policy group association(s) this connection had prior to its own most recent change. (AI-inferred) */
   previousConfigurationPolicyGroupAssociations?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups[] | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** Routing configuration (associated/propagated route tables) applied to this connection. (AI-inferred) */
   routingConfiguration?: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration | Computed<VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration>;
+  /** The IP address pool point-to-site VPN clients are assigned addresses from. (AI-inferred) */
   vpnClientAddressPool?: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool | Computed<VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties | Computed<VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_VpnClientConnectionHealth {
+  /** Output only. The IP address(es) actually allocated for this connection. (AI-inferred) */
   allocatedIpAddresses?: string[] | Computed<string[]>;
+  /** The cumulative total of outbound bytes transferred. (AI-inferred) */
   totalEgressBytesTransferred?: number | Computed<number>;
+  /** The cumulative total of inbound bytes transferred. (AI-inferred) */
   totalIngressBytesTransferred?: number | Computed<number>;
+  /** The number of currently connected point-to-site VPN clients. (AI-inferred) */
   vpnClientConnectionsCount?: number | Computed<number>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties {
+  /** Custom DNS server IP addresses used instead of the default. (AI-inferred) */
   customDnsServers?: string[] | Computed<string[]>;
+  /** Whether Microsoft's own global network, rather than the customer's own ISP, is preferred for internet-bound traffic. (AI-inferred) */
   isRoutingPreferenceInternet?: boolean | Computed<boolean>;
+  /** Point-to-site VPN configuration(s) (address pool, protocol, authentication) available on this gateway. (AI-inferred) */
   p2SconnectionConfigurations?: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations[] | Computed<VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations[]>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** A reference to the virtual hub this resource belongs to. (AI-inferred) */
   virtualHub?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations>;
+  /** Summary statistics about currently connected point-to-site VPN clients. (AI-inferred) */
   vpnClientConnectionHealth?: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_VpnClientConnectionHealth | Computed<VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_VpnClientConnectionHealth>;
+  /** The number of scale units provisioned for this VPN gateway, determining its own aggregate throughput. (AI-inferred) */
   vpnGatewayScaleUnit?: number | Computed<number>;
+  /** A reference to the point-to-site VPN server configuration this gateway uses. (AI-inferred) */
   vpnServerConfiguration?: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations | Computed<VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways {
+  /** A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred) */
   etag?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties | Computed<VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_RadiusClientRootCertificates {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** A cryptographic thumbprint of this certificate. (AI-inferred) */
   thumbprint?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_RadiusServerRootCertificates {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The base64-encoded public certificate data used to authenticate a point-to-site VPN client. (AI-inferred) */
   publicCertData?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_RadiusServers {
+  /** The IP address of the RADIUS authentication server. (AI-inferred) */
   radiusServerAddress?: string | Computed<string>;
+  /** The relative priority of this RADIUS server among several configured. (AI-inferred) */
   radiusServerScore?: number | Computed<number>;
+  /** The shared secret used to authenticate to this RADIUS server. (AI-inferred) */
   radiusServerSecret?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnServerConfiguration_Properties_VpnClientIpsecPolicies {
+  /** The Diffie-Hellman group used for IKE Phase 1 key exchange, e.g. `DHGroup14` or `DHGroup24`. (AI-inferred) */
   dhGroup?: string | Computed<string>;
+  /** The encryption algorithm used for IKE Phase 1 (establishing the secure channel itself), e.g. `AES256`. (AI-inferred) */
   ikeEncryption?: string | Computed<string>;
+  /** The integrity (hashing) algorithm used for IKE Phase 1, e.g. `SHA384`. (AI-inferred) */
   ikeIntegrity?: string | Computed<string>;
+  /** The encryption algorithm used for IKE Phase 2 (the actual IPsec data tunnel), e.g. `AES256`. (AI-inferred) */
   ipsecEncryption?: string | Computed<string>;
+  /** The integrity (hashing) algorithm used for IKE Phase 2, e.g. `SHA256`. (AI-inferred) */
   ipsecIntegrity?: string | Computed<string>;
+  /** The Perfect Forward Secrecy group used when establishing a new IKE Phase 2 security association, or `None` to disable PFS. (AI-inferred) */
   pfsGroup?: string | Computed<string>;
+  /** The IPsec security association's own data-volume lifetime, in kilobytes -- the tunnel rekeys once either this or `sa_life_time_seconds` is reached. (AI-inferred) */
   saDataSizeKilobytes?: number | Computed<number>;
+  /** The IPsec security association's own time-based lifetime, in seconds -- the tunnel rekeys once either this or `sa_data_size_kilobytes` is reached. (AI-inferred) */
   saLifeTimeSeconds?: number | Computed<number>;
 }
 

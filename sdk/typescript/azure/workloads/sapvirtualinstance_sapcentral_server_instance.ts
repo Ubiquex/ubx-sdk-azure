@@ -54,6 +54,7 @@ export interface SapvirtualinstanceSapcentralServerInstance_Properties_GatewaySe
 }
 
 export interface SapvirtualinstanceSapcentralServerInstance_Properties_LoadBalancerDetails {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
@@ -75,8 +76,11 @@ export interface SapvirtualinstanceSapcentralServerInstance_Properties_MessageSe
 }
 
 export interface SapvirtualinstanceSapcentralServerInstance_Properties_VmDetails {
+  /** Detail about the storage volume(s) attached to this SAP central server instance's own virtual machine. (AI-inferred) */
   storageDetails?: SapvirtualinstanceSapcentralServerInstance_Properties_LoadBalancerDetails[] | Computed<SapvirtualinstanceSapcentralServerInstance_Properties_LoadBalancerDetails[]>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** A reference to the virtual machine backing this SAP central server instance. (AI-inferred) */
   virtualMachineId?: string | Computed<string>;
 }
 

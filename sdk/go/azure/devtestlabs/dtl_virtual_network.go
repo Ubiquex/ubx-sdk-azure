@@ -4,32 +4,46 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlVirtualNetwork_Properties_AllowedSubnets struct {
+	// Whether a public IP address is allowed on virtual machines created from this virtual network. (AI-inferred)
 	AllowPublicIp any
+	// The name of the lab's own virtual network subnet this applies to. (AI-inferred)
 	LabSubnetName any
-	ResourceId    any
+	// A reference to the underlying Azure resource. (AI-inferred)
+	ResourceId any
 }
 
 type DtlVirtualNetwork_Properties_ExternalSubnets struct {
-	Id   any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 
 type DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration_AllowedPorts struct {
-	BackendPort       any
+	// The backend port traffic is forwarded to. (AI-inferred)
+	BackendPort any
+	// The transport protocol this rule applies to, e.g. `Tcp` or `Udp`. (AI-inferred)
 	TransportProtocol any
 }
 
 type DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration struct {
+	// The port(s) allowed through this shared public IP's own inbound NAT rule(s). (AI-inferred)
 	AllowedPorts any
 }
 
 type DtlVirtualNetwork_Properties_SubnetOverrides struct {
-	LabSubnetName                      any
-	ResourceId                         any
+	// The name of the lab's own virtual network subnet this applies to. (AI-inferred)
+	LabSubnetName any
+	// A reference to the underlying Azure resource. (AI-inferred)
+	ResourceId any
+	// Configuration for a public IP address shared across multiple virtual machines on this subnet. (AI-inferred)
 	SharedPublicIpAddressConfiguration any
-	UseInVmCreationPermission          any
-	UsePublicIpAddressPermission       any
-	VirtualNetworkPoolName             any
+	// Whether lab users are allowed, denied, or given a default choice to use this subnet when creating a virtual machine. (AI-inferred)
+	UseInVmCreationPermission any
+	// Whether lab users are allowed, denied, or given a default choice to assign a public IP address on this subnet. (AI-inferred)
+	UsePublicIpAddressPermission any
+	// The name of the shared IP pool this subnet's own virtual machines draw addresses from. (AI-inferred)
+	VirtualNetworkPoolName any
 }
 
 type DtlVirtualNetwork_Properties struct {

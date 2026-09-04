@@ -8,228 +8,355 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo_Payload:
+    # The name of this file. (AI-inferred)
     file_name: Any = None
+    # A cryptographic hash of this content. (AI-inferred)
     hash: Any = None
+    # A unique identifier for this resource. (AI-inferred)
     identifier: Any = None
+    # A URL this applies to. (AI-inferred)
     url: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo:
+    # The version of this software package. (AI-inferred)
     package_version: Any = None
+    # The literal content of this message or request. (AI-inferred)
     payload: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Cluster:
+    # The Azure service endpoint this cluster connects to. (AI-inferred)
     azure_service_endpoint: Any = None
+    # The name of the associated Azure cloud account. (AI-inferred)
     cloud_account_name: Any = None
+    # The deployment topology pattern this cluster follows. (AI-inferred)
     cluster_pattern: Any = None
+    # The certified hardware class this node belongs to. (AI-inferred)
     hardware_class: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The file share path used as this cluster's own witness for quorum. (AI-inferred)
     witness_path: Any = None
+    # The kind of quorum witness used, e.g. a file share or cloud witness. (AI-inferred)
     witness_type: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_AdapterPropertyOverrides:
+    # Whether jumbo frames are enabled on this network adapter. (AI-inferred)
     jumbo_packet: Any = None
+    # Whether RDMA (Network Direct) is enabled on this network adapter. (AI-inferred)
     network_direct: Any = None
+    # The RDMA technology used, e.g. `RoCEv2` or `iWARP`. (AI-inferred)
     network_direct_technology: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_QosPolicyOverrides:
+    # The percentage of link bandwidth reserved for SMB traffic. (AI-inferred)
     bandwidth_percentage_smb: Any = None
+    # The 802.1p priority value assigned to cluster heartbeat traffic. (AI-inferred)
     priority_value8021_action_cluster: Any = None
+    # The 802.1p priority value assigned to SMB (storage) traffic. (AI-inferred)
     priority_value8021_action_smb: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_VirtualSwitchConfigurationOverrides:
+    # Whether SR-IOV (I/O virtualization) is enabled on this network adapter. (AI-inferred)
     enable_iov: Any = None
+    # The algorithm used to distribute network traffic across adapter(s) in this team. (AI-inferred)
     load_balancing_algorithm: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents:
+    # A reference to the network adapter this applies to. (AI-inferred)
     adapter: Any = None
+    # Property override(s) applied to this network adapter, beyond the discovered defaults. (AI-inferred)
     adapter_property_overrides: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Whether a discovered network adapter property is overridden with a caller-supplied value. (AI-inferred)
     override_adapter_property: Any = None
+    # Whether the default Quality of Service policy is overridden for this network. (AI-inferred)
     override_qos_policy: Any = None
+    # Whether the default virtual switch configuration is overridden. (AI-inferred)
     override_virtual_switch_configuration: Any = None
+    # Quality of Service policy setting(s) overridden from their own discovered defaults. (AI-inferred)
     qos_policy_overrides: Any = None
+    # The category of network traffic (e.g. management, compute, storage) this applies to. (AI-inferred)
     traffic_type: Any = None
+    # Virtual switch configuration setting(s) overridden from their own discovered defaults. (AI-inferred)
     virtual_switch_configuration_overrides: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterIpconfig:
+    # An IP address range, in CIDR notation. (AI-inferred)
     address_prefix: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The name of this network adapter. (AI-inferred)
     network_adapter_name: Any = None
+    # The VLAN identifier assigned to this network. (AI-inferred)
     vlan_id: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterProperties:
+    # The percentage of link bandwidth reserved for SMB traffic. (AI-inferred)
     bandwidth_percentage_smb: Any = None
+    # Whether jumbo frames are enabled on this network adapter. (AI-inferred)
     jumbo_packet: Any = None
+    # The 802.1p priority value assigned to cluster heartbeat traffic. (AI-inferred)
     priority_value8021_action_cluster: Any = None
+    # The 802.1p priority value assigned to SMB (storage) traffic. (AI-inferred)
     priority_value8021_action_smb: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig:
+    # IP configuration for this network adapter. (AI-inferred)
     adapter_ipconfig: Any = None
+    # Configuration properties for this network adapter. (AI-inferred)
     adapter_properties: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks:
+    # Network configuration applied across this cluster. (AI-inferred)
     cluster_network_config: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks_StorageAdapterIpinfo:
+    # An IPv4 address. (AI-inferred)
     ipv4_address: Any = None
+    # A reference to the physical node this applies to. (AI-inferred)
     physical_node: Any = None
+    # The subnet mask applied to this address range. (AI-inferred)
     subnet_mask: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The name of this network adapter. (AI-inferred)
     network_adapter_name: Any = None
+    # IP configuration for this storage network adapter. (AI-inferred)
     storage_adapter_ipinfo: Any = None
+    # The VLAN identifier assigned to this network. (AI-inferred)
     vlan_id: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork:
+    # Whether storage network IP addresses are assigned automatically. (AI-inferred)
     enable_storage_auto_ip: Any = None
+    # The declared network traffic intent(s) (e.g. management, compute, storage) this adapter serves. (AI-inferred)
     intents: Any = None
+    # The Storage Area Network(s) this cluster connects to. (AI-inferred)
     san_networks: Any = None
+    # Whether storage nodes connect directly to each other, without a switch. (AI-inferred)
     storage_connectivity_switchless: Any = None
+    # The storage network(s) configured on this cluster. (AI-inferred)
     storage_networks: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_DnsZones:
+    # The upstream DNS server this cluster forwards unresolved queries to. (AI-inferred)
     dns_forwarder: Any = None
+    # The name of the DNS zone this applies to. (AI-inferred)
     dns_zone_name: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_IpPools:
+    # The last address in this range, inclusive. (AI-inferred)
     ending_address: Any = None
+    # The first address in this range, inclusive. (AI-inferred)
     starting_address: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork:
+    # DNS server configuration for this cluster. (AI-inferred)
     dns_server_config: Any = None
+    # The DNS server IP address(es) this resource uses. (AI-inferred)
     dns_servers: Any = None
+    # The DNS zone(s) this applies to. (AI-inferred)
     dns_zones: Any = None
+    # The default gateway IP address for this network. (AI-inferred)
     gateway: Any = None
+    # The IP address pool(s) available for allocation. (AI-inferred)
     ip_pools: Any = None
+    # The subnet mask applied to this address range. (AI-inferred)
     subnet_mask: Any = None
+    # Whether IP address(es) are assigned automatically via DHCP, rather than statically. (AI-inferred)
     use_dhcp: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_LocalAvailabilityZones:
+    # The name of the local availability zone this applies to. (AI-inferred)
     local_availability_zone_name: Any = None
+    # The node(s) making up this cluster. (AI-inferred)
     nodes: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Observability:
+    # Whether telemetry data is periodically uploaded to Azure. (AI-inferred)
     episodic_data_upload: Any = None
+    # Whether this data is stored within the European Union. (AI-inferred)
     eu_location: Any = None
+    # The client used to stream diagnostic data. (AI-inferred)
     streaming_data_client: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_OptionalServices:
+    # A reference to the custom location this resource is deployed to. (AI-inferred)
     custom_location: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_PhysicalNodes:
+    # An IPv4 address. (AI-inferred)
     ipv4_address: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration_NetworkController:
+    # The first MAC address in this pool, inclusive. (AI-inferred)
     mac_address_pool_start: Any = None
+    # The last MAC address in this pool, inclusive. (AI-inferred)
     mac_address_pool_stop: Any = None
+    # Whether network virtualization (Hyper-V Network Virtualization) is enabled. (AI-inferred)
     network_virtualization_enabled: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration:
+    # A reference to the network controller managing this configuration. (AI-inferred)
     network_controller: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Secrets:
+    # The name of the secret holding Extension Configuration Engine credentials. (AI-inferred)
     ece_secret_name: Any = None
+    # Where this secret's own value is stored. (AI-inferred)
     secret_location: Any = None
+    # The name of this secret. (AI-inferred)
     secret_name: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecuritySettings:
+    # Whether BitLocker encryption is enabled on the boot volume. (AI-inferred)
     bitlocker_boot_volume: Any = None
+    # Whether BitLocker encryption is enabled on data volumes. (AI-inferred)
     bitlocker_data_volumes: Any = None
+    # Whether Windows Credential Guard is enforced on this cluster. (AI-inferred)
     credential_guard_enforced: Any = None
+    # Whether configuration drift control is enforced on this cluster. (AI-inferred)
     drift_control_enforced: Any = None
+    # Whether Dynamic Root of Trust for Measurement protection is enabled. (AI-inferred)
     drtm_protection: Any = None
+    # Whether Hypervisor-protected Code Integrity is enabled. (AI-inferred)
     hvci_protection: Any = None
+    # Whether side-channel attack mitigations are enforced. (AI-inferred)
     side_channel_mitigation_enforced: Any = None
+    # Whether SMB traffic between cluster nodes is encrypted. (AI-inferred)
     smb_cluster_encryption: Any = None
+    # Whether SMB signing is required for this cluster's own traffic. (AI-inferred)
     smb_signing_enforced: Any = None
+    # Whether Windows Defender Application Control is enforced. (AI-inferred)
     wdac_enforced: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_S2d:
+    # The ratio of virtual to physical resources assumed when planning capacity. (AI-inferred)
     overprovisioning_ratio: Any = None
+    # The category of storage volume this represents. (AI-inferred)
     volume_type: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_San:
+    # The LUN identifier for the infrastructure performance volume. (AI-inferred)
     infra_perf_lun_id: Any = None
+    # The LUN identifier for the infrastructure volume. (AI-inferred)
     infra_vol_lun_id: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage:
+    # How this resource's own configuration is managed, e.g. automatically or manually. (AI-inferred)
     configuration_mode: Any = None
+    # Whether Storage Spaces Direct is enabled on this cluster. (AI-inferred)
     s2d: Any = None
+    # The Subject Alternative Name(s) on this certificate. (AI-inferred)
     san: Any = None
+    # The category of storage this applies to. (AI-inferred)
     storage_type: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData:
+    # The Active Directory Organizational Unit path this cluster's own computer objects are placed in. (AI-inferred)
     adou_path: Any = None
+    # Version information for the software assembly this applies to. (AI-inferred)
     assembly_info: Any = None
+    # A reference to the cluster this applies to. (AI-inferred)
     cluster: Any = None
+    # The fully qualified domain name of the Active Directory domain this cluster joins. (AI-inferred)
     domain_fqdn: Any = None
+    # Network configuration for the physical host. (AI-inferred)
     host_network: Any = None
+    # The identity provider used to authenticate for this resource. (AI-inferred)
     identity_provider: Any = None
+    # Network configuration reserved for cluster infrastructure traffic. (AI-inferred)
     infrastructure_network: Any = None
+    # Whether this cluster is the management cluster for a multi-cluster deployment. (AI-inferred)
     is_management_cluster: Any = None
+    # The local availability zone(s) this applies to. (AI-inferred)
     local_availability_zones: Any = None
+    # The prefix applied when automatically generating name(s) for this resource. (AI-inferred)
     naming_prefix: Any = None
+    # Configuration for collecting diagnostic and telemetry data from this cluster. (AI-inferred)
     observability: Any = None
+    # The optional service(s) enabled on this cluster. (AI-inferred)
     optional_services: Any = None
+    # The physical node(s) making up this cluster. (AI-inferred)
     physical_nodes: Any = None
+    # Whether Software Defined Networking integration is enabled. (AI-inferred)
     sdn_integration: Any = None
+    # The secret(s) associated with this resource. (AI-inferred)
     secrets: Any = None
+    # Where this resource's own secret(s) are stored. (AI-inferred)
     secrets_location: Any = None
+    # Security configuration applied to this cluster. (AI-inferred)
     security_settings: Any = None
+    # Storage configuration for this resource. (AI-inferred)
     storage: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_PartnerProperties:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_SbeDeploymentInfo:
+    # The generation or family this belongs to. (AI-inferred)
     family: Any = None
+    # The publisher of this extension or resource. (AI-inferred)
     publisher: Any = None
+    # When this Solution Builder Extension manifest was created. (AI-inferred)
     sbe_manifest_creation_date: Any = None
+    # Where this Solution Builder Extension manifest was sourced from. (AI-inferred)
     sbe_manifest_source: Any = None
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo:
+    # The credential(s) associated with this resource. (AI-inferred)
     credential_list: Any = None
+    # Additional properties supplied by an OEM hardware partner. (AI-inferred)
     partner_properties: Any = None
+    # Deployment information for this Solution Builder Extension. (AI-inferred)
     sbe_deployment_info: Any = None
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits:
+    # The configuration data used to deploy this cluster. (AI-inferred)
     deployment_data: Any = None
+    # Information about the OEM partner providing this Solution Builder Extension. (AI-inferred)
     sbe_partner_info: Any = None
 
 @dataclasses.dataclass
@@ -245,13 +372,21 @@ class HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_Steps_
 
 @dataclasses.dataclass
 class HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_Steps:
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # When this event or window ended, in UTC. (AI-inferred)
     end_time_utc: Any = None
+    # Detail about an exception that occurred. (AI-inferred)
     exception: Any = None
+    # The complete, hierarchical index identifying this step within its own containing process. (AI-inferred)
     full_step_index: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # When this event or window started, in UTC. (AI-inferred)
     start_time_utc: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # The ordered step(s) making up this process. (AI-inferred)
     steps: Any = None
 
 @dataclasses.dataclass

@@ -4,7 +4,9 @@ package botservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConnectionSetting_Properties_Parameters struct {
-	Key   any
+	// The name of this connection setting parameter. (AI-inferred)
+	Key any
+	// The value of this connection setting parameter. (AI-inferred)
 	Value any
 }
 

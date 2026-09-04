@@ -27,80 +27,119 @@ class OpenapiChangeDataCaptureResource_Properties_Policy:
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorProperties:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_LinkedService:
+    # The parameter(s) making up this configuration. (AI-inferred)
     parameters: Any = None
+    # The name of the resource this reference points to. (AI-inferred)
     reference_name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection:
+    # Configuration properties shared across data flow connectors of this kind. (AI-inferred)
     common_dsl_connector_properties: Any = None
+    # Whether this dataset is defined inline, rather than as a separate, reusable resource. (AI-inferred)
     is_inline_dataset: Any = None
+    # A reference to the linked service this applies to. (AI-inferred)
     linked_service: Any = None
+    # The category of linked service this represents. (AI-inferred)
     linked_service_type: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties_Schema:
+    # The data type of this value or column. (AI-inferred)
     data_type: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties:
+    # Configuration properties specific to this data flow connector. (AI-inferred)
     dsl_connector_properties: Any = None
+    # The schema defining this resource's own structure. (AI-inferred)
     schema: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo:
+    # A reference to the connection this applies to. (AI-inferred)
     connection: Any = None
+    # The source entity/entities this mapping reads from. (AI-inferred)
     source_entities: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReference:
+    # The name of this connection. (AI-inferred)
     connection_name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference:
+    # A reference to the entity this applies to. (AI-inferred)
     entity: Any = None
+    # A reference to the connection this entity is sourced from. (AI-inferred)
     entity_connection_reference: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings:
+    # A reference to a specific attribute. (AI-inferred)
     attribute_reference: Any = None
+    # The attribute reference(s) this applies to. (AI-inferred)
     attribute_references: Any = None
+    # The expression evaluated to produce this value. (AI-inferred)
     expression: Any = None
+    # The name of the function invoked. (AI-inferred)
     function_name: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo:
+    # The attribute mapping(s) making up this configuration. (AI-inferred)
     attribute_mappings: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings:
+    # Configuration for mapping source attributes onto destination attributes. (AI-inferred)
     attribute_mapping_info: Any = None
+    # A reference to the connection data is read from. (AI-inferred)
     source_connection_reference: Any = None
+    # Configuration for denormalizing related source data into a single flattened output. (AI-inferred)
     source_denormalize_info: Any = None
+    # The name of the source entity this mapping reads from. (AI-inferred)
     source_entity_name: Any = None
+    # The name of the destination entity this mapping writes to. (AI-inferred)
     target_entity_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo:
+    # A reference to the connection this applies to. (AI-inferred)
     connection: Any = None
+    # The Data Mapper mapping(s) making up this configuration. (AI-inferred)
     data_mapper_mappings: Any = None
+    # The relationship(s) between entities in this mapping. (AI-inferred)
     relationships: Any = None
+    # The destination entity/entities this mapping writes to. (AI-inferred)
     target_entities: Any = None
 
 @dataclasses.dataclass

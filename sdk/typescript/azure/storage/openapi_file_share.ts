@@ -11,13 +11,18 @@ export interface OpenapiFileShare_Properties_FileSharePaidBursting {
 }
 
 export interface OpenapiFileShare_Properties_SignedIdentifiers_AccessPolicy {
+  /** When this resource or grant expires. (AI-inferred) */
   expiryTime?: string | Computed<string>;
+  /** The access permission granted, e.g. read or write. (AI-inferred) */
   permission?: string | Computed<string>;
+  /** When this event or window started. (AI-inferred) */
   startTime?: string | Computed<string>;
 }
 
 export interface OpenapiFileShare_Properties_SignedIdentifiers {
+  /** A stored access policy defining shared permissions and validity period for associated shared access signatures. (AI-inferred) */
   accessPolicy?: OpenapiFileShare_Properties_SignedIdentifiers_AccessPolicy | Computed<OpenapiFileShare_Properties_SignedIdentifiers_AccessPolicy>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 

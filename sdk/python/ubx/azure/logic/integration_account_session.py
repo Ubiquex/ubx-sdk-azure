@@ -10,6 +10,7 @@ import ubx_sdk as ubx
 class IntegrationAccountSession_Properties:
     # The changed time.
     changed_time: Any = None
+    # The literal content of this schema or configuration. (AI-inferred)
     content: Any = None
     # The created time.
     created_time: Any = None

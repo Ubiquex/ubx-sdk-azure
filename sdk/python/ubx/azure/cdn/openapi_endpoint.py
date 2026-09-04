@@ -8,66 +8,100 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiEndpoint_Properties_CustomDomains_Properties:
+    # The hostname this applies to. (AI-inferred)
     host_name: Any = None
+    # The data used to validate ownership of this custom domain. (AI-inferred)
     validation_data: Any = None
 
 @dataclasses.dataclass
 class OpenapiEndpoint_Properties_CustomDomains:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiEndpoint_Properties_OriginGroups_Properties_HealthProbeSettings:
+    # How often, in seconds, this health probe runs. (AI-inferred)
     probe_interval_in_seconds: Any = None
+    # The URL path this health probe requests. (AI-inferred)
     probe_path: Any = None
+    # The protocol this health probe uses, e.g. `Http` or `Https`. (AI-inferred)
     probe_protocol: Any = None
+    # The HTTP method this health probe uses, e.g. `GET` or `HEAD`. (AI-inferred)
     probe_request_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiEndpoint_Properties_OriginGroups_Properties_Origins:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings_HttpErrorRanges:
+    # The first byte position of this range, inclusive. (AI-inferred)
     begin: Any = None
+    # The last byte position of this range, inclusive. (AI-inferred)
     end: Any = None
 
 @dataclasses.dataclass
 class OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings:
+    # The HTTP status code range(s) this origin health check treats as an error. (AI-inferred)
     http_error_ranges: Any = None
+    # The kind of error response(s) (e.g. 5xx status codes) that mark an origin unhealthy. (AI-inferred)
     response_based_detected_error_types: Any = None
+    # The percentage of failed requests that triggers failover away from this origin. (AI-inferred)
     response_based_failover_threshold_percentage: Any = None
 
 @dataclasses.dataclass
 class OpenapiEndpoint_Properties_OriginGroups_Properties:
+    # Configuration for periodically checking this origin's own health. (AI-inferred)
     health_probe_settings: Any = None
+    # The origin server(s) this endpoint retrieves content from. (AI-inferred)
     origins: Any = None
+    # Configuration for detecting an unhealthy origin based on live response behavior, rather than only active probes. (AI-inferred)
     response_based_origin_error_detection_settings: Any = None
+    # How long, in minutes, traffic gradually shifts back to an origin once it recovers or a new origin is added. (AI-inferred)
     traffic_restoration_time_to_healed_or_new_endpoints_in_minutes: Any = None
 
 @dataclasses.dataclass
 class OpenapiEndpoint_Properties_OriginGroups:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiEndpoint_Properties_Origins_Properties:
+    # Whether this feature is turned on. (AI-inferred)
     enabled: Any = None
+    # The hostname this applies to. (AI-inferred)
     host_name: Any = None
+    # The port used for HTTP (unencrypted) traffic. (AI-inferred)
     http_port: Any = None
+    # The port used for HTTPS (encrypted) traffic. (AI-inferred)
     https_port: Any = None
+    # The `Host` header sent to the origin, when different from the requested hostname. (AI-inferred)
     origin_host_header: Any = None
+    # The relative priority of this item. (AI-inferred)
     priority: Any = None
+    # The current approval status of this Private Link connection. (AI-inferred)
     private_endpoint_status: Any = None
+    # The alias identifying the Private Link resource this endpoint connects to. (AI-inferred)
     private_link_alias: Any = None
+    # A message shown to the resource owner when requesting approval for this Private Link connection. (AI-inferred)
     private_link_approval_message: Any = None
+    # The Azure region the target Private Link resource is deployed in. (AI-inferred)
     private_link_location: Any = None
+    # A reference to the Private Link resource this endpoint connects to. (AI-inferred)
     private_link_resource_id: Any = None
+    # The relative weight of this item. (AI-inferred)
     weight: Any = None
 
 @dataclasses.dataclass
 class OpenapiEndpoint_Properties_Origins:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass

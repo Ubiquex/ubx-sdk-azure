@@ -20,37 +20,56 @@ type DigitalTwinsDescription_Identity struct {
 }
 
 type DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds                          any
-	PrivateEndpoint                   any
+	// The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
+	GroupIds any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type DigitalTwinsDescription_Properties_PrivateEndpointConnections_SystemData struct {
-	CreatedAt          any
-	CreatedBy          any
-	CreatedByType      any
-	LastModifiedAt     any
-	LastModifiedBy     any
+	// When this resource was created. (AI-inferred)
+	CreatedAt any
+	// The identity that created this resource. (AI-inferred)
+	CreatedBy any
+	// The category of identity (e.g. user or application) that created this resource. (AI-inferred)
+	CreatedByType any
+	// When this resource was last modified. (AI-inferred)
+	LastModifiedAt any
+	// The identity that last modified this resource. (AI-inferred)
+	LastModifiedBy any
+	// The category of identity (e.g. user or application) that last modified this resource. (AI-inferred)
 	LastModifiedByType any
 }
 
 type DigitalTwinsDescription_Properties_PrivateEndpointConnections struct {
-	Id         any
-	Name       any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
+	// Output only. Metadata about this resource's own creation and last modification -- who made the change and when. (AI-inferred)
 	SystemData any
-	Type       any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type DigitalTwinsDescription_Properties struct {

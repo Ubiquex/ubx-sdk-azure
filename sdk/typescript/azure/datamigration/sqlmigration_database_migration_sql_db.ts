@@ -2,16 +2,27 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface SqlmigrationDatabaseMigrationSqlDb_Properties_MigrationStatusDetails_ListOfCopyProgressDetails {
+  /** How long this copy operation took. (AI-inferred) */
   copyDuration?: number | Computed<number>;
+  /** When this copy operation started. (AI-inferred) */
   copyStart?: string | Computed<string>;
+  /** The observed data transfer rate for this copy operation. (AI-inferred) */
   copyThroughput?: number | Computed<number>;
+  /** The amount of data read so far. (AI-inferred) */
   dataRead?: number | Computed<number>;
+  /** The amount of data written so far. (AI-inferred) */
   dataWritten?: number | Computed<number>;
+  /** How data is partitioned for parallel copying during migration. (AI-inferred) */
   parallelCopyType?: string | Computed<string>;
+  /** The number of rows copied so far. (AI-inferred) */
   rowsCopied?: number | Computed<number>;
+  /** The number of rows read so far. (AI-inferred) */
   rowsRead?: number | Computed<number>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** The name of this table. (AI-inferred) */
   tableName?: string | Computed<string>;
+  /** The number of parallel copy operation(s) actually used. (AI-inferred) */
   usedParallelCopies?: number | Computed<number>;
 }
 

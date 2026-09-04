@@ -20,15 +20,24 @@ type OpenapiAutonomousDatabase_Properties_ConnectionStrings_AllConnectionStrings
 }
 
 type OpenapiAutonomousDatabase_Properties_ConnectionStrings_Profiles struct {
-	ConsumerGroup     any
-	DisplayName       any
-	HostFormat        any
-	IsRegional        any
-	Protocol          any
-	SessionMode       any
-	SyntaxFormat      any
+	// The Oracle database service consumer group this connection uses. (AI-inferred)
+	ConsumerGroup any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// Whether the connection string identifies the host by IP address or hostname. (AI-inferred)
+	HostFormat any
+	// Whether this resource spans multiple availability domains within its own region. (AI-inferred)
+	IsRegional any
+	// The network protocol used. (AI-inferred)
+	Protocol any
+	// Whether this connection is direct or routed through a shared session pool. (AI-inferred)
+	SessionMode any
+	// The format this connection string is expressed in, e.g. long or Easy Connect. (AI-inferred)
+	SyntaxFormat any
+	// Whether the client, the server, or both must authenticate via TLS for this connection. (AI-inferred)
 	TlsAuthentication any
-	Value             any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiAutonomousDatabase_Properties_ConnectionStrings struct {
@@ -64,6 +73,7 @@ type OpenapiAutonomousDatabase_Properties_ConnectionUrls struct {
 }
 
 type OpenapiAutonomousDatabase_Properties_CustomerContacts struct {
+	// An email address associated with this resource. (AI-inferred)
 	Email any
 }
 
@@ -103,13 +113,17 @@ type OpenapiAutonomousDatabase_Properties_RemoteDisasterRecoveryConfiguration st
 }
 
 type OpenapiAutonomousDatabase_Properties_ScheduledOperationsList_DayOfWeek struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 
 type OpenapiAutonomousDatabase_Properties_ScheduledOperationsList struct {
-	DayOfWeek          any
+	// The day of the week this applies to. (AI-inferred)
+	DayOfWeek any
+	// When this scheduled operation is set to start. (AI-inferred)
 	ScheduledStartTime any
-	ScheduledStopTime  any
+	// When this scheduled operation is set to stop. (AI-inferred)
+	ScheduledStopTime any
 }
 
 type OpenapiAutonomousDatabase_Properties struct {

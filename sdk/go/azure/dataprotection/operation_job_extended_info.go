@@ -35,8 +35,10 @@ type OperationJobExtendedInfo_BackupInstance_IdentityDetails struct {
 }
 
 type OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters_DataStoreParametersList struct {
+	// The type of datastore this backup data is retained in, e.g. `OperationalStore` or `VaultStore`. (AI-inferred)
 	DataStoreType any
-	ObjectType    any
+	// A discriminator identifying this object's own concrete type, used when a field can hold more than one shape. (AI-inferred)
+	ObjectType any
 }
 
 type OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters struct {
@@ -47,10 +49,12 @@ type OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters struct 
 }
 
 type OperationJobExtendedInfo_BackupInstance_PolicyInfo struct {
+	// A reference to the backup policy this applies to. (AI-inferred)
 	PolicyId any
 	// Parameters in Policy
 	PolicyParameters any
-	PolicyVersion    any
+	// The version of the backup policy in effect when this was created. (AI-inferred)
+	PolicyVersion any
 }
 
 type OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails_Details struct {
@@ -76,7 +80,8 @@ type OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails struct {
 	IsRetryable any
 	// Whether the operation is due to a user error or service error
 	IsUserError any
-	Message     any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
 	// Any key value pairs that can be injected inside error object
 	Properties any
 	// RecommendedAction � localized.
@@ -102,9 +107,11 @@ type OperationJobExtendedInfo_BackupInstance struct {
 	// Base class for different types of authentication credentials.
 	DatasourceAuthCredentials any
 	// Gets or sets the Backup Instance friendly name.
-	FriendlyName    any
+	FriendlyName any
+	// Detail about the managed identity used to protect or access this resource. (AI-inferred)
 	IdentityDetails any
-	ObjectType      any
+	// A discriminator identifying this object's own concrete type, used when a field can hold more than one shape. (AI-inferred)
+	ObjectType any
 	// Policy Info in backupInstance
 	PolicyInfo any
 	// Error object used by layers that have access to localized content, and propagate that to user

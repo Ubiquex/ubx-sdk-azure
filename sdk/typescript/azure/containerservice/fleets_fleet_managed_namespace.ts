@@ -31,28 +31,39 @@ export interface FleetsFleetManagedNamespace_Properties_ManagedNamespaceProperti
 }
 
 export interface FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector_MatchExpressions {
+  /** The key of this label or taint. (AI-inferred) */
   key?: string | Computed<string>;
+  /** How this condition's own operands are compared. (AI-inferred) */
   operator?: string | Computed<string>;
+  /** The value(s) making up this field. (AI-inferred) */
   values?: string[] | Computed<string[]>;
 }
 
 export interface FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector {
+  /** The expression-based label match condition(s) making up this selector. (AI-inferred) */
   matchExpressions?: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector_MatchExpressions[] | Computed<FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector_MatchExpressions[]>;
+  /** The exact label key/value pair(s) this selector requires. (AI-inferred) */
   matchLabels?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector_MatchExpressions {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** How this condition's own operands are compared. (AI-inferred) */
   operator?: string | Computed<string>;
+  /** The value(s) making up this field. (AI-inferred) */
   values?: string[] | Computed<string[]>;
 }
 
 export interface FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector {
+  /** The expression-based label match condition(s) making up this selector. (AI-inferred) */
   matchExpressions?: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector_MatchExpressions[] | Computed<FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector_MatchExpressions[]>;
 }
 
 export interface FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms {
+  /** Selects member cluster(s) by matching label(s), rather than by explicit name. (AI-inferred) */
   labelSelector?: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector | Computed<FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector>;
+  /** Selects member cluster(s) by matching a specific property, rather than by explicit name. (AI-inferred) */
   propertySelector?: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector | Computed<FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector>;
 }
 
@@ -72,9 +83,13 @@ export interface FleetsFleetManagedNamespace_Properties_PropagationPolicy_Placem
 }
 
 export interface FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Tolerations {
+  /** What happens to a pod that doesn't tolerate this taint. (AI-inferred) */
   effect?: string | Computed<string>;
+  /** The key of this label or taint. (AI-inferred) */
   key?: string | Computed<string>;
+  /** How this condition's own operands are compared. (AI-inferred) */
   operator?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -107,7 +122,9 @@ export interface FleetsFleetManagedNamespace_Properties_PropagationPolicy {
 }
 
 export interface FleetsFleetManagedNamespace_Properties_Status_LastOperationError_AdditionalInfo {
+  /** Additional detail about this result. (AI-inferred) */
   info?: unknown | Computed<unknown>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
@@ -115,10 +132,15 @@ export interface FleetsFleetManagedNamespace_Properties_Status_LastOperationErro
 }
 
 export interface FleetsFleetManagedNamespace_Properties_Status_LastOperationError_Details {
+  /** Additional detail about this result. (AI-inferred) */
   additionalInfo?: FleetsFleetManagedNamespace_Properties_Status_LastOperationError_AdditionalInfo[] | Computed<FleetsFleetManagedNamespace_Properties_Status_LastOperationError_AdditionalInfo[]>;
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** Additional detail about this result. (AI-inferred) */
   details?: FleetsFleetManagedNamespace_Properties_Status_LastOperationError_Details_Details[] | Computed<FleetsFleetManagedNamespace_Properties_Status_LastOperationError_Details_Details[]>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to the resource this operation targets. (AI-inferred) */
   target?: string | Computed<string>;
 }
 

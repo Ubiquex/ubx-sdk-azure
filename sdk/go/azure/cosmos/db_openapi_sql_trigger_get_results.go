@@ -4,7 +4,9 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiSqlTriggerGetResults_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -25,6 +27,7 @@ type DbOpenapiSqlTriggerGetResults_Properties_Options_AutoscaleSettings struct {
 }
 
 type DbOpenapiSqlTriggerGetResults_Properties_Options struct {
+	// Configuration for automatically scaling throughput within a defined maximum. (AI-inferred)
 	AutoscaleSettings any
 	// Request Units per second. For example, "throughput": 10000.
 	Throughput any

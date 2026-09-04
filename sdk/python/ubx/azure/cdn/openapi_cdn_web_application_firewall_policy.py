@@ -8,19 +8,30 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_Rules_MatchConditions:
+    # The value this condition matches against. (AI-inferred)
     match_value: Any = None
+    # The request attribute this condition evaluates. (AI-inferred)
     match_variable: Any = None
+    # Whether this condition's own result is inverted. (AI-inferred)
     negate_condition: Any = None
+    # How this condition's own operands are compared. (AI-inferred)
     operator: Any = None
+    # The specific field name a match condition targets. (AI-inferred)
     selector: Any = None
+    # The transformation(s) (e.g. lowercase, trim) applied to the matched value before comparison. (AI-inferred)
     transforms: Any = None
 
 @dataclasses.dataclass
 class OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_Rules:
+    # The action taken when this rule matches. (AI-inferred)
     action: Any = None
+    # Whether this feature is enabled or disabled. (AI-inferred)
     enabled_state: Any = None
+    # The condition(s) that must all be satisfied for this rule to match. (AI-inferred)
     match_conditions: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The relative priority of this item. (AI-inferred)
     priority: Any = None
 
 @dataclasses.dataclass
@@ -30,24 +41,34 @@ class OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules:
 
 @dataclasses.dataclass
 class OpenapiCdnWebApplicationFirewallPolicy_Properties_EndpointLinks:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_Rules:
+    # The action taken when this rule matches. (AI-inferred)
     action: Any = None
+    # Whether this feature is enabled or disabled. (AI-inferred)
     enabled_state: Any = None
+    # The identifier of the specific WAF rule this applies to. (AI-inferred)
     rule_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides:
+    # The name of the managed WAF rule group this applies to. (AI-inferred)
     rule_group_name: Any = None
+    # The rule(s) making up this policy. (AI-inferred)
     rules: Any = None
 
 @dataclasses.dataclass
 class OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets:
+    # The cumulative anomaly score this WAF rule set assigns to a matching request. (AI-inferred)
     anomaly_score: Any = None
+    # Override(s) applied to specific rule(s) within a managed WAF rule group. (AI-inferred)
     rule_group_overrides: Any = None
+    # The managed rule set family this belongs to. (AI-inferred)
     rule_set_type: Any = None
+    # The version of this managed rule set. (AI-inferred)
     rule_set_version: Any = None
 
 @dataclasses.dataclass
@@ -70,7 +91,9 @@ class OpenapiCdnWebApplicationFirewallPolicy_Properties_PolicySettings:
 
 @dataclasses.dataclass
 class OpenapiCdnWebApplicationFirewallPolicy_Properties_RateLimitRules_Rules:
+    # The time window rate-limit request counts are measured over. (AI-inferred)
     rate_limit_duration_in_minutes: Any = None
+    # The maximum number of requests permitted within `rate_limit_duration_in_minutes`. (AI-inferred)
     rate_limit_threshold: Any = None
 
 @dataclasses.dataclass

@@ -8,9 +8,13 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class BackupPolicy_Properties_VolumeBackups:
+    # The number of backup(s) associated with this resource. (AI-inferred)
     backups_count: Any = None
+    # Whether this policy is currently active. (AI-inferred)
     policy_enabled: Any = None
+    # The name of this volume. (AI-inferred)
     volume_name: Any = None
+    # A reference to the volume this applies to. (AI-inferred)
     volume_resource_id: Any = None
 
 @dataclasses.dataclass

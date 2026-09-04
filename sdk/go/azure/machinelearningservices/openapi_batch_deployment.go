@@ -4,7 +4,9 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBatchDeployment_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -30,9 +32,12 @@ type OpenapiBatchDeployment_Properties_Model struct {
 }
 
 type OpenapiBatchDeployment_Properties_Resources struct {
+	// The number of compute instance(s) provisioned. (AI-inferred)
 	InstanceCount any
-	InstanceType  any
-	Properties    any
+	// The compute instance type (e.g. VM size) this resource uses. (AI-inferred)
+	InstanceType any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
+	Properties any
 }
 
 type OpenapiBatchDeployment_Properties_RetrySettings struct {
@@ -63,7 +68,8 @@ type OpenapiBatchDeployment_Properties struct {
 	OutputFileName any
 	// Possible values for DeploymentProvisioningState.
 	ProvisioningState any
-	Resources         any
+	// The compute resource(s) this applies to. (AI-inferred)
+	Resources any
 	// Retry settings for a batch inference operation.
 	RetrySettings any
 }

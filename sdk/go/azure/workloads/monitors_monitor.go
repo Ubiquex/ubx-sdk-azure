@@ -4,7 +4,9 @@ package workloads
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitorsMonitor_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -19,35 +21,52 @@ type MonitorsMonitor_Properties_Errors_Details_Details struct {
 }
 
 type MonitorsMonitor_Properties_Errors_Details_InnerError struct {
+	// The underlying error that caused this failure. (AI-inferred)
 	InnerError any
 }
 
 type MonitorsMonitor_Properties_Errors_Details struct {
-	Code       any
-	Details    any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// The underlying error that caused this failure. (AI-inferred)
 	InnerError any
-	Message    any
-	Target     any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type MonitorsMonitor_Properties_Errors_InnerError_InnerError struct {
-	Code       any
-	Details    any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// The underlying error that caused this failure. (AI-inferred)
 	InnerError any
-	Message    any
-	Target     any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type MonitorsMonitor_Properties_Errors_InnerError struct {
+	// The underlying error that caused this failure. (AI-inferred)
 	InnerError any
 }
 
 type MonitorsMonitor_Properties_Errors struct {
-	Code       any
-	Details    any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// The underlying error that caused this failure. (AI-inferred)
 	InnerError any
-	Message    any
-	Target     any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type MonitorsMonitor_Properties_ManagedResourceGroupConfiguration struct {

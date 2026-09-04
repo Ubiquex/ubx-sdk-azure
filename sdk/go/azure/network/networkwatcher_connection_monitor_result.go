@@ -13,46 +13,66 @@ type NetworkwatcherConnectionMonitorResult_Properties_Destination struct {
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter_Items struct {
+	// The network address this applies to. (AI-inferred)
 	Address any
-	Type    any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter struct {
+	// The individual entries making up this collection. (AI-inferred)
 	Items any
-	Type  any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_Endpoints_LocationDetails struct {
+	// The Azure region this applies to. (AI-inferred)
 	Region any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_Exclude struct {
+	// The network address this applies to. (AI-inferred)
 	Address any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope struct {
+	// The item(s) excluded from this scope. (AI-inferred)
 	Exclude any
+	// The item(s) included in this scope. (AI-inferred)
 	Include any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_Endpoints struct {
-	Address         any
-	CoverageLevel   any
-	Filter          any
+	// The network address this applies to. (AI-inferred)
+	Address any
+	// How thoroughly this connectivity test's own path is probed. (AI-inferred)
+	CoverageLevel any
+	// Restricts this result to matching item(s). (AI-inferred)
+	Filter any
+	// Detail about the physical location this test point is running from. (AI-inferred)
 	LocationDetails any
-	Name            any
-	ResourceId      any
-	Scope           any
-	SubscriptionId  any
-	Type            any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the resource this applies to. (AI-inferred)
+	ResourceId any
+	// What this configuration's own scope covers. (AI-inferred)
+	Scope any
+	// The identifier of the associated Azure subscription. (AI-inferred)
+	SubscriptionId any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_Outputs_WorkspaceSettings struct {
+	// The full Azure Resource Manager resource ID of the target Log Analytics workspace. (AI-inferred)
 	WorkspaceResourceId any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_Outputs struct {
-	Type              any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The Log Analytics workspace this monitor's own results are sent to. (AI-inferred)
 	WorkspaceSettings any
 }
 
@@ -64,50 +84,77 @@ type NetworkwatcherConnectionMonitorResult_Properties_Source struct {
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration_RequestHeaders struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration struct {
-	Method                any
-	Path                  any
-	Port                  any
-	PreferHttps           any
-	RequestHeaders        any
+	// The HTTP method this applies to. (AI-inferred)
+	Method any
+	// The URL path this applies to. (AI-inferred)
+	Path any
+	// A TCP or UDP port number. (AI-inferred)
+	Port any
+	// Whether HTTPS is preferred over HTTP when testing this endpoint. (AI-inferred)
+	PreferHttps any
+	// The HTTP header(s) sent with this test request. (AI-inferred)
+	RequestHeaders any
+	// The HTTP status code range(s) considered a successful result. (AI-inferred)
 	ValidStatusCodeRanges any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_IcmpConfiguration struct {
+	// Whether hop-by-hop trace route data is excluded from this connectivity test's own result. (AI-inferred)
 	DisableTraceRoute any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_SuccessThreshold struct {
+	// The percentage of health checks that failed within this test's own reporting interval. (AI-inferred)
 	ChecksFailedPercent any
-	RoundTripTimeMs     any
+	// The observed round-trip latency, in milliseconds. (AI-inferred)
+	RoundTripTimeMs any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_TcpConfiguration struct {
+	// How the destination port is chosen when none is explicitly specified. (AI-inferred)
 	DestinationPortBehavior any
-	DisableTraceRoute       any
-	Port                    any
+	// Whether hop-by-hop trace route data is excluded from this connectivity test's own result. (AI-inferred)
+	DisableTraceRoute any
+	// A TCP or UDP port number. (AI-inferred)
+	Port any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations struct {
-	HttpConfiguration  any
-	IcmpConfiguration  any
-	Name               any
+	// Configuration specific to an HTTP-based connectivity test. (AI-inferred)
+	HttpConfiguration any
+	// Configuration specific to an ICMP-based connectivity test. (AI-inferred)
+	IcmpConfiguration any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Whether IPv4 or IPv6 is preferred for this test. (AI-inferred)
 	PreferredIpversion any
-	Protocol           any
-	SuccessThreshold   any
-	TcpConfiguration   any
-	TestFrequencySec   any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The threshold that must be met for this test to be considered successful. (AI-inferred)
+	SuccessThreshold any
+	// Configuration specific to a TCP-based connectivity test. (AI-inferred)
+	TcpConfiguration any
+	// How often, in seconds, this test runs. (AI-inferred)
+	TestFrequencySec any
 }
 
 type NetworkwatcherConnectionMonitorResult_Properties_TestGroups struct {
-	Destinations       any
-	Disable            any
-	Name               any
-	Sources            any
+	// The destination(s) this test evaluates connectivity to. (AI-inferred)
+	Destinations any
+	// Whether this feature is turned off. (AI-inferred)
+	Disable any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The source(s) this test evaluates connectivity from. (AI-inferred)
+	Sources any
+	// The test configuration(s) making up this connection monitor. (AI-inferred)
 	TestConfigurations any
 }
 

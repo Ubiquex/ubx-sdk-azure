@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class GrafanaManagedGrafana_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -85,35 +87,47 @@ class GrafanaManagedGrafana_Properties_GrafanaConfigurations:
 
 @dataclasses.dataclass
 class GrafanaManagedGrafana_Properties_GrafanaIntegrations_AzureMonitorWorkspaceIntegrations:
+    # A reference to the Azure Monitor workspace this applies to. (AI-inferred)
     azure_monitor_workspace_resource_id: Any = None
 
 @dataclasses.dataclass
 class GrafanaManagedGrafana_Properties_GrafanaIntegrations:
+    # The Azure Monitor workspace(s) this Grafana instance is integrated with. (AI-inferred)
     azure_monitor_workspace_integrations: Any = None
 
 @dataclasses.dataclass
 class GrafanaManagedGrafana_Properties_GrafanaPlugins:
+    # A reference to the Grafana plugin this applies to. (AI-inferred)
     plugin_id: Any = None
 
 @dataclasses.dataclass
 class GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    # Output only. Any action the connection's own owner still needs to take. (AI-inferred)
     actions_required: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties:
+    # The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
     group_ids: Any = None
+    # A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
     private_endpoint: Any = None
+    # The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
     private_link_service_connection_state: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class GrafanaManagedGrafana_Properties_PrivateEndpointConnections:
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
 
 @dataclasses.dataclass
@@ -144,6 +158,7 @@ class GrafanaManagedGrafana_Properties:
     outbound_ips: Any = None
     # The private endpoint connections of the Grafana instance.
     private_endpoint_connections: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
     # Indicate the state for enable or disable traffic over the public interface.
     public_network_access: Any = None

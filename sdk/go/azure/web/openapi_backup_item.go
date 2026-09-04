@@ -19,10 +19,14 @@ type OpenapiBackupItem_Properties_BackupSchedule struct {
 }
 
 type OpenapiBackupItem_Properties_Databases struct {
-	ConnectionString     any
+	// The connection string used to reach this resource. (AI-inferred)
+	ConnectionString any
+	// The name of the app setting or connection string this applies to. (AI-inferred)
 	ConnectionStringName any
-	DatabaseType         any
-	Name                 any
+	// The kind of database this connection targets, e.g. `SQLAzure` or `MySql`. (AI-inferred)
+	DatabaseType any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiBackupItem_Properties struct {

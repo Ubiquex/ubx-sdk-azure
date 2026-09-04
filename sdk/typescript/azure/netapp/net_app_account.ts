@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface NetAppAccount_Identity_UserAssignedIdentities {
+  /** The client (application) ID used to authenticate. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,34 +20,60 @@ export interface NetAppAccount_Identity {
 }
 
 export interface NetAppAccount_Properties_ActiveDirectories_LdapSearchScope {
+  /** The distinguished name of the LDAP group search base. (AI-inferred) */
   groupDn?: string | Computed<string>;
+  /** The LDAP filter used to determine a user's own group memberships. (AI-inferred) */
   groupMembershipFilter?: string | Computed<string>;
+  /** The distinguished name of the LDAP user search base. (AI-inferred) */
   userDn?: string | Computed<string>;
 }
 
 export interface NetAppAccount_Properties_ActiveDirectories {
+  /** A reference to the Active Directory connection this applies to. (AI-inferred) */
   activeDirectoryId?: string | Computed<string>;
+  /** The NetBIOS name of the Active Directory domain. (AI-inferred) */
   adName?: string | Computed<string>;
+  /** The account(s) granted administrative access. (AI-inferred) */
   administrators?: string[] | Computed<string[]>;
+  /** Whether AES encryption is used for this Active Directory connection. (AI-inferred) */
   aesEncryption?: boolean | Computed<boolean>;
+  /** Whether local NFS users are permitted to access this volume in addition to LDAP users. (AI-inferred) */
   allowLocalNfsUsersWithLdap?: boolean | Computed<boolean>;
+  /** The account(s) granted permission to manage backups. (AI-inferred) */
   backupOperators?: string[] | Computed<string[]>;
+  /** The DNS server IP address(es) used for this Active Directory connection. (AI-inferred) */
   dns?: string | Computed<string>;
+  /** The Active Directory domain this connection joins. (AI-inferred) */
   domain?: string | Computed<string>;
+  /** Whether the connection to Domain Controllers is encrypted. (AI-inferred) */
   encryptDcconnections?: boolean | Computed<boolean>;
+  /** The IP address of the Kerberos Key Distribution Center. (AI-inferred) */
   kdcIp?: string | Computed<string>;
+  /** Whether LDAP traffic is encrypted using TLS. (AI-inferred) */
   ldapOverTls?: boolean | Computed<boolean>;
+  /** The base distinguished name(s) LDAP searches for users and groups are scoped to. (AI-inferred) */
   ldapSearchScope?: NetAppAccount_Properties_ActiveDirectories_LdapSearchScope | Computed<NetAppAccount_Properties_ActiveDirectories_LdapSearchScope>;
+  /** Whether LDAP signing is required for this Active Directory connection. (AI-inferred) */
   ldapSigning?: boolean | Computed<boolean>;
+  /** The Active Directory Organizational Unit this connection's own computer objects are placed in. (AI-inferred) */
   organizationalUnit?: string | Computed<string>;
+  /** The password credential used to authenticate. (AI-inferred) */
   password?: string | Computed<string>;
+  /** The Domain Controller server(s) preferred for LDAP client connections. (AI-inferred) */
   preferredServersForLdapClient?: string | Computed<string>;
+  /** The account(s) granted permission to manage security settings. (AI-inferred) */
   securityOperators?: string[] | Computed<string[]>;
+  /** The root CA certificate used to validate connections to this LDAP server. (AI-inferred) */
   serverRootCacertificate?: string | Computed<string>;
+  /** The Active Directory site this connection is associated with. (AI-inferred) */
   site?: string | Computed<string>;
+  /** The NetBIOS name of the SMB server hosting this volume. (AI-inferred) */
   smbServerName?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** Additional detail about this resource's own current status. (AI-inferred) */
   statusDetails?: string | Computed<string>;
+  /** The username used to authenticate. (AI-inferred) */
   username?: string | Computed<string>;
 }
 
@@ -89,6 +117,7 @@ export interface NetAppAccount_Properties {
   encryption?: NetAppAccount_Properties_Encryption | Computed<NetAppAccount_Properties_Encryption>;
   /** MultiAD Status for the account */
   multiAdStatus?: string | Computed<string>;
+  /** The domain used to map NFSv4 user and group names to numeric IDs. (AI-inferred) */
   nfsV4Iddomain?: string | Computed<string>;
   /** Azure lifecycle management */
   provisioningState?: string | Computed<string>;

@@ -13,11 +13,16 @@ type NetworkwatcherPacketCaptureResult_Properties_CaptureSettings struct {
 }
 
 type NetworkwatcherPacketCaptureResult_Properties_Filters struct {
-	LocalIpaddress  any
-	LocalPort       any
-	Protocol        any
+	// The source IP address this test originates from. (AI-inferred)
+	LocalIpaddress any
+	// The source port this test originates from. (AI-inferred)
+	LocalPort any
+	// The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
+	Protocol any
+	// The destination IP address this test targets. (AI-inferred)
 	RemoteIpaddress any
-	RemotePort      any
+	// The destination port this test targets. (AI-inferred)
+	RemotePort any
 }
 
 type NetworkwatcherPacketCaptureResult_Properties_Scope struct {

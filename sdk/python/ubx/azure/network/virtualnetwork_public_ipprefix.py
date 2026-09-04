@@ -20,8 +20,11 @@ class VirtualnetworkPublicIpprefix_Properties_CustomIpprefix:
 
 @dataclasses.dataclass
 class VirtualnetworkPublicIpprefix_Properties_IpTags:
+    # The identifier of the Microsoft first-party service tag this IP tag is associated with. (AI-inferred)
     first_party_service_tag_id: Any = None
+    # The category this IP tag belongs to, e.g. `FirstPartyUsage`. (AI-inferred)
     ip_tag_type: Any = None
+    # The literal tag value. (AI-inferred)
     tag: Any = None
 
 @dataclasses.dataclass

@@ -4,15 +4,21 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetails struct {
+	// The default compute resource(s) allocated for this operation. (AI-inferred)
 	DefaultResourceRequest any
+	// The specific critical operation this protection applies to. (AI-inferred)
 	VaultCriticalOperation any
 }
 
 type BmsResourceGuardProxyBaseResource_Properties struct {
-	Description                   any
-	LastUpdatedTime               any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// When this resource was last updated. (AI-inferred)
+	LastUpdatedTime any
+	// Detail about the resource guard protecting this critical operation. (AI-inferred)
 	ResourceGuardOperationDetails any
-	ResourceGuardResourceId       any
+	// A reference to the resource guard protecting this vault. (AI-inferred)
+	ResourceGuardResourceId any
 }
 
 var BmsResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetailsFields = ubx.FieldMap{
@@ -35,7 +41,8 @@ type BmsResourceGuardProxyBaseResourceConfig struct {
 	// Optional ETag.
 	ETag any
 	// Represents an Azure geography region where supported resource providers live.
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// Resource tags.
 	Tags any
@@ -45,7 +52,8 @@ type BmsResourceGuardProxyBaseResourceAttrs struct {
 	// Optional ETag.
 	ETag any
 	// Represents an Azure geography region where supported resource providers live.
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// Resource tags.
 	Tags any

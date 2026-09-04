@@ -4,7 +4,9 @@ package redhatopenshift
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenShiftCluster_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -49,8 +51,11 @@ type OpenShiftCluster_Properties_ConsoleProfile struct {
 }
 
 type OpenShiftCluster_Properties_IngressProfiles struct {
-	Ip         any
-	Name       any
+	// An IP address. (AI-inferred)
+	Ip any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Whether this endpoint is publicly or privately reachable. (AI-inferred)
 	Visibility any
 }
 
@@ -66,6 +71,7 @@ type OpenShiftCluster_Properties_MasterProfile struct {
 }
 
 type OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIps struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
@@ -95,8 +101,11 @@ type OpenShiftCluster_Properties_NetworkProfile struct {
 }
 
 type OpenShiftCluster_Properties_PlatformWorkloadIdentityProfile_PlatformWorkloadIdentities struct {
-	ClientId   any
-	ObjectId   any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// The Microsoft Entra ID object identifier this applies to. (AI-inferred)
+	ObjectId any
+	// A reference to the resource this applies to. (AI-inferred)
 	ResourceId any
 }
 
@@ -115,13 +124,20 @@ type OpenShiftCluster_Properties_ServicePrincipalProfile struct {
 }
 
 type OpenShiftCluster_Properties_WorkerProfiles struct {
-	Count               any
+	// How many of this item there are. (AI-inferred)
+	Count any
+	// A reference to the disk encryption set used to encrypt this node's own disks. (AI-inferred)
 	DiskEncryptionSetId any
-	DiskSizeGb          any
-	EncryptionAtHost    any
-	Name                any
-	SubnetId            any
-	VmSize              any
+	// The size of this disk, in gibibytes. (AI-inferred)
+	DiskSizeGb any
+	// Whether encryption of temporary and cache disk data at the host is enabled for this node. (AI-inferred)
+	EncryptionAtHost any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the subnet this resource is deployed into. (AI-inferred)
+	SubnetId any
+	// The VM size this node is provisioned as. (AI-inferred)
+	VmSize any
 }
 
 type OpenShiftCluster_Properties struct {

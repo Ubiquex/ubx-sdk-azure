@@ -63,7 +63,8 @@ type RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties struc
 	// Version of the condition. Currently accepted value is '2.0'
 	ConditionVersion any
 	// DateTime when role assignment schedule request was created
-	CreatedOn          any
+	CreatedOn any
+	// Additional, denormalized detail about the principal, role definition, and scope this request applies to, included for convenience. (AI-inferred)
 	ExpandedProperties any
 	// Justification for the role assignment
 	Justification any

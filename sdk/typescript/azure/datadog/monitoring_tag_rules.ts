@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface MonitoringTagRules_Properties_AgentRules_FilteringTags {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
@@ -41,6 +44,7 @@ export interface MonitoringTagRules_Properties {
   logRules?: MonitoringTagRules_Properties_LogRules | Computed<MonitoringTagRules_Properties_LogRules>;
   /** Set of rules for sending metrics for the Monitor resource. */
   metricRules?: MonitoringTagRules_Properties_MetricRules | Computed<MonitoringTagRules_Properties_MetricRules>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 

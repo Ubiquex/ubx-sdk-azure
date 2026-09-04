@@ -26,10 +26,12 @@ class VirtualharddisksVirtualHardDisks_Properties_Status:
     error_code: Any = None
     # Descriptive error message
     error_message: Any = None
+    # The outcome of the most recent operation performed on this virtual hard disk, e.g. `Succeeded`, `Failed`, or `InProgress`. (AI-inferred)
     provisioning_status: Any = None
 
 @dataclasses.dataclass
 class VirtualharddisksVirtualHardDisks_Properties:
+    # The block size, in bytes, this virtual hard disk was formatted with. (AI-inferred)
     block_size_bytes: Any = None
     # Storage ContainerID of the storage container to be used for VHD
     container_id: Any = None
@@ -41,7 +43,9 @@ class VirtualharddisksVirtualHardDisks_Properties:
     dynamic: Any = None
     # The hypervisor generation of the Virtual Machine [V1, V2]
     hyper_vgeneration: Any = None
+    # The logical sector size, in bytes, this virtual hard disk presents to the guest OS. (AI-inferred)
     logical_sector_bytes: Any = None
+    # The physical sector size, in bytes, of the underlying storage backing this virtual hard disk. (AI-inferred)
     physical_sector_bytes: Any = None
     # Provisioning state of the virtual hard disk.
     provisioning_state: Any = None

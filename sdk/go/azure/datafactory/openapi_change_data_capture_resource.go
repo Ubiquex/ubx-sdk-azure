@@ -23,81 +23,120 @@ type OpenapiChangeDataCaptureResource_Properties_Policy struct {
 }
 
 type OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorProperties struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_LinkedService struct {
-	Parameters    any
+	// The parameter(s) making up this configuration. (AI-inferred)
+	Parameters any
+	// The name of the resource this reference points to. (AI-inferred)
 	ReferenceName any
-	Type          any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection struct {
+	// Configuration properties shared across data flow connectors of this kind. (AI-inferred)
 	CommonDslConnectorProperties any
-	IsInlineDataset              any
-	LinkedService                any
-	LinkedServiceType            any
-	Type                         any
+	// Whether this dataset is defined inline, rather than as a separate, reusable resource. (AI-inferred)
+	IsInlineDataset any
+	// A reference to the linked service this applies to. (AI-inferred)
+	LinkedService any
+	// The category of linked service this represents. (AI-inferred)
+	LinkedServiceType any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties_Schema struct {
+	// The data type of this value or column. (AI-inferred)
 	DataType any
-	Name     any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties struct {
+	// Configuration properties specific to this data flow connector. (AI-inferred)
 	DslConnectorProperties any
-	Schema                 any
+	// The schema defining this resource's own structure. (AI-inferred)
+	Schema any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo struct {
-	Connection     any
+	// A reference to the connection this applies to. (AI-inferred)
+	Connection any
+	// The source entity/entities this mapping reads from. (AI-inferred)
 	SourceEntities any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReference struct {
+	// The name of this connection. (AI-inferred)
 	ConnectionName any
-	Type           any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference struct {
-	Entity                    any
+	// A reference to the entity this applies to. (AI-inferred)
+	Entity any
+	// A reference to the connection this entity is sourced from. (AI-inferred)
 	EntityConnectionReference any
-	Name                      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings struct {
-	AttributeReference  any
+	// A reference to a specific attribute. (AI-inferred)
+	AttributeReference any
+	// The attribute reference(s) this applies to. (AI-inferred)
 	AttributeReferences any
-	Expression          any
-	FunctionName        any
-	Name                any
-	Type                any
+	// The expression evaluated to produce this value. (AI-inferred)
+	Expression any
+	// The name of the function invoked. (AI-inferred)
+	FunctionName any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo struct {
+	// The attribute mapping(s) making up this configuration. (AI-inferred)
 	AttributeMappings any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings struct {
-	AttributeMappingInfo      any
+	// Configuration for mapping source attributes onto destination attributes. (AI-inferred)
+	AttributeMappingInfo any
+	// A reference to the connection data is read from. (AI-inferred)
 	SourceConnectionReference any
-	SourceDenormalizeInfo     any
-	SourceEntityName          any
-	TargetEntityName          any
+	// Configuration for denormalizing related source data into a single flattened output. (AI-inferred)
+	SourceDenormalizeInfo any
+	// The name of the source entity this mapping reads from. (AI-inferred)
+	SourceEntityName any
+	// The name of the destination entity this mapping writes to. (AI-inferred)
+	TargetEntityName any
 }
 
 type OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo struct {
-	Connection         any
+	// A reference to the connection this applies to. (AI-inferred)
+	Connection any
+	// The Data Mapper mapping(s) making up this configuration. (AI-inferred)
 	DataMapperMappings any
-	Relationships      any
-	TargetEntities     any
+	// The relationship(s) between entities in this mapping. (AI-inferred)
+	Relationships any
+	// The destination entity/entities this mapping writes to. (AI-inferred)
+	TargetEntities any
 }
 
 type OpenapiChangeDataCaptureResource_Properties struct {

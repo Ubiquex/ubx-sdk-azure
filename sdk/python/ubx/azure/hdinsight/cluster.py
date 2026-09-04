@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class Cluster_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
 
 @dataclasses.dataclass
@@ -43,81 +46,118 @@ class Cluster_Properties_ComputeIsolationProperties:
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_Autoscale_Capacity:
+    # The maximum number of node(s) autoscaling is allowed to scale up to. (AI-inferred)
     max_instance_count: Any = None
+    # The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred)
     min_instance_count: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity:
+    # The maximum number of node(s) autoscaling is allowed to scale up to. (AI-inferred)
     max_instance_count: Any = None
+    # The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred)
     min_instance_count: Any = None
+    # The time this scheduled action runs at. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule:
+    # The day(s) this schedule applies to. (AI-inferred)
     days: Any = None
+    # A fixed-time autoscale rule specifying node capacity for a specific time of day. (AI-inferred)
     time_and_capacity: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence:
+    # The recurrence schedule this applies to. (AI-inferred)
     schedule: Any = None
+    # The time zone this schedule is evaluated in. (AI-inferred)
     time_zone: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_Autoscale:
+    # The number of instance(s) this resource is provisioned with. (AI-inferred)
     capacity: Any = None
+    # How often this autoscale schedule recurs. (AI-inferred)
     recurrence: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_DataDisksGroups:
+    # The size of this disk, in gibibytes. (AI-inferred)
     disk_size_gb: Any = None
+    # The number of data disk(s) attached to each node. (AI-inferred)
     disks_per_node: Any = None
+    # The replication/performance type of the associated storage account. (AI-inferred)
     storage_account_type: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_HardwareProfile:
+    # The VM size this role's own nodes are provisioned as. (AI-inferred)
     vm_size: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeys:
+    # The certificate content, base64-encoded. (AI-inferred)
     certificate_data: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile:
+    # The SSH public key(s) used to authenticate. (AI-inferred)
     public_keys: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile:
+    # The password credential used to authenticate. (AI-inferred)
     password: Any = None
+    # SSH configuration for connecting to this cluster's own nodes. (AI-inferred)
     ssh_profile: Any = None
+    # The username used to authenticate. (AI-inferred)
     username: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_OsProfile:
+    # Configuration specific to a Linux-based cluster node. (AI-inferred)
     linux_operating_system_profile: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_ScriptActions:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The parameter(s) making up this configuration. (AI-inferred)
     parameters: Any = None
+    # A resource URI. (AI-inferred)
     uri: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles_VirtualNetworkProfile:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # A reference to the subnet this resource is deployed into. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_ComputeProfile_Roles:
+    # Configuration for automatically scaling this cluster's own node count. (AI-inferred)
     autoscale: Any = None
+    # Configuration for the data disk(s) attached to nodes in this role. (AI-inferred)
     data_disks_groups: Any = None
+    # Whether data disks attached to this cluster are encrypted. (AI-inferred)
     encrypt_data_disks: Any = None
+    # The VM size this role's own nodes are provisioned as. (AI-inferred)
     hardware_profile: Any = None
+    # The minimum number of node(s) autoscaling is allowed to scale down to. (AI-inferred)
     min_instance_count: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Operating system configuration for this cluster's own nodes. (AI-inferred)
     os_profile: Any = None
+    # Custom script(s) run on cluster nodes during provisioning. (AI-inferred)
     script_actions: Any = None
+    # The desired number of node(s) this role should be scaled to. (AI-inferred)
     target_instance_count: Any = None
+    # The virtual network this cluster is deployed into. (AI-inferred)
     virtual_network_profile: Any = None
+    # The name of the VM group this node belongs to. (AI-inferred)
     vmgroup_name: Any = None
 
 @dataclasses.dataclass
@@ -219,30 +259,46 @@ class Cluster_Properties_PrivateEndpointConnections:
 
 @dataclasses.dataclass
 class Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties:
+    # Whether this is the primary configuration among several attached to the same resource. (AI-inferred)
     primary: Any = None
+    # The private (internal) IP address assigned to this configuration. (AI-inferred)
     private_ipaddress: Any = None
+    # Whether the private IP address is statically assigned or dynamically allocated. (AI-inferred)
     private_ipallocation_method: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the subnet this resource is deployed into. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_PrivateLinkConfigurations_Properties:
+    # A reference to the role group this applies to. (AI-inferred)
     group_id: Any = None
+    # The IP configuration(s) for this endpoint. (AI-inferred)
     ip_configurations: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_PrivateLinkConfigurations:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -273,14 +329,23 @@ class Cluster_Properties_SecurityProfile:
 
 @dataclasses.dataclass
 class Cluster_Properties_StorageProfile_Storageaccounts:
+    # A reference to the storage container this applies to. (AI-inferred)
     container: Any = None
+    # The default file system used by this cluster. (AI-inferred)
     file_system: Any = None
+    # The Azure Files share used as this cluster's own default storage. (AI-inferred)
     fileshare: Any = None
+    # Whether this is the default storage account for this cluster. (AI-inferred)
     is_default: Any = None
+    # The storage account access key. (AI-inferred)
     key: Any = None
+    # A reference to the managed identity used to access this storage account. (AI-inferred)
     msi_resource_id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
+    # A shared access signature used to authenticate to this storage account. (AI-inferred)
     saskey: Any = None
 
 @dataclasses.dataclass

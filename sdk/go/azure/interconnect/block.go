@@ -13,11 +13,16 @@ type Block_Placement struct {
 }
 
 type Block_Properties_InstanceView_Statuses struct {
-	Code          any
+	// The status code for the instance view of the Azure interconnect block. This is a machine-readable code that indicates the current status. (AI-inferred)
+	Code any
+	// A human-readable string that describes the current status of the Azure interconnect block. (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of the status. Possible values are Info, Warning, and Error. (AI-inferred)
+	Level any
+	// A human-readable message providing additional details about the corresponding status in the instance view. (AI-inferred)
+	Message any
+	// The time at which the status was recorded, typically in a date-time format. (AI-inferred)
+	Time any
 }
 
 type Block_Properties_InstanceView struct {

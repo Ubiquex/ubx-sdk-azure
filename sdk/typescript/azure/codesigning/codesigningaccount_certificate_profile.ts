@@ -2,22 +2,36 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface CodesigningaccountCertificateProfile_Properties_Certificates_Revocation {
+  /** The timestamp revocation takes effect from -- signatures made with this certificate after this time are treated as invalid. (AI-inferred) */
   effectiveAt?: string | Computed<string>;
+  /** Why the revocation request failed, if `status` is `Failed`. (AI-inferred) */
   failureReason?: string | Computed<string>;
+  /** The reason given for revoking this certificate. (AI-inferred) */
   reason?: string | Computed<string>;
+  /** Free-text notes attached to this revocation request. (AI-inferred) */
   remarks?: string | Computed<string>;
+  /** When revocation of this certificate was requested. (AI-inferred) */
   requestedAt?: string | Computed<string>;
+  /** The current status of this revocation request: `InProgress`, `Succeeded`, or `Failed`. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface CodesigningaccountCertificateProfile_Properties_Certificates {
+  /** When this signing certificate was issued. (AI-inferred) */
   createdDate?: string | Computed<string>;
+  /** The X.509 Enhanced Key Usage extension value declaring what this certificate may be used for, e.g. code signing. (AI-inferred) */
   enhancedKeyUsage?: string | Computed<string>;
+  /** When this signing certificate expires. (AI-inferred) */
   expiryDate?: string | Computed<string>;
+  /** The revocation request and outcome for this certificate, present only if revocation was ever requested. (AI-inferred) */
   revocation?: CodesigningaccountCertificateProfile_Properties_Certificates_Revocation | Computed<CodesigningaccountCertificateProfile_Properties_Certificates_Revocation>;
+  /** This certificate's own serial number. (AI-inferred) */
   serialNumber?: string | Computed<string>;
+  /** This certificate's own current status: `Active`, `Expired`, or `Revoked`. (AI-inferred) */
   status?: string | Computed<string>;
+  /** This certificate's own subject (the signing identity it represents). (AI-inferred) */
   subjectName?: string | Computed<string>;
+  /** A SHA-1 hash of this certificate's own raw bytes, used to identify it (e.g. when requesting revocation). (AI-inferred) */
   thumbprint?: string | Computed<string>;
 }
 

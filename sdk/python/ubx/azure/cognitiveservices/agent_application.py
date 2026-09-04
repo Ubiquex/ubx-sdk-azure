@@ -25,7 +25,9 @@ class AgentApplication_Properties_AgentIdentityBlueprint:
 
 @dataclasses.dataclass
 class AgentApplication_Properties_Agents:
+    # A reference to the agent this applies to. (AI-inferred)
     agent_id: Any = None
+    # The name of this agent. (AI-inferred)
     agent_name: Any = None
 
 @dataclasses.dataclass
@@ -35,9 +37,13 @@ class AgentApplication_Properties_AuthorizationPolicy:
 
 @dataclasses.dataclass
 class AgentApplication_Properties_TrafficRoutingPolicy_Rules:
+    # A reference to the model deployment this applies to. (AI-inferred)
     deployment_id: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A reference to the specific rule this applies to. (AI-inferred)
     rule_id: Any = None
+    # The percentage of traffic routed to this target. (AI-inferred)
     traffic_percentage: Any = None
 
 @dataclasses.dataclass

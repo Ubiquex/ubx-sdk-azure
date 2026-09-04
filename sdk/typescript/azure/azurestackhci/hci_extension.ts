@@ -21,25 +21,39 @@ export interface HciExtension_Properties_ExtensionParameters {
 }
 
 export interface HciExtension_Properties_PerNodeExtensionDetails_InstanceView_Status {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable summary of this resource's own current status. (AI-inferred) */
   displayStatus?: string | Computed<string>;
+  /** The severity level of this event. (AI-inferred) */
   level?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The time this event occurred. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
 export interface HciExtension_Properties_PerNodeExtensionDetails_InstanceView {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: HciExtension_Properties_PerNodeExtensionDetails_InstanceView_Status | Computed<HciExtension_Properties_PerNodeExtensionDetails_InstanceView_Status>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
+  /** The version of the extension handler processing this resource. (AI-inferred) */
   typeHandlerVersion?: string | Computed<string>;
 }
 
 export interface HciExtension_Properties_PerNodeExtensionDetails {
+  /** A reference to the cluster extension this applies to. (AI-inferred) */
   extension?: string | Computed<string>;
+  /** The current runtime status of this resource. (AI-inferred) */
   instanceView?: HciExtension_Properties_PerNodeExtensionDetails_InstanceView | Computed<HciExtension_Properties_PerNodeExtensionDetails_InstanceView>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The current lifecycle state of this resource. (AI-inferred) */
   state?: string | Computed<string>;
+  /** The version of the extension handler processing this resource. (AI-inferred) */
   typeHandlerVersion?: string | Computed<string>;
 }
 

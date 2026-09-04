@@ -11,7 +11,9 @@ export interface DtlCustomImage_Properties_CustomImagePlan {
 }
 
 export interface DtlCustomImage_Properties_DataDiskStorageInfo {
+  /** This disk's own logical unit number. (AI-inferred) */
   lun?: string | Computed<string>;
+  /** The type of storage this uses. (AI-inferred) */
   storageType?: string | Computed<string>;
 }
 

@@ -7,8 +7,11 @@ export interface PrivateEndpointConnection_Properties_PrivateEndpoint {
 }
 
 export interface PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 

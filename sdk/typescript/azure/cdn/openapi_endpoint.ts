@@ -2,66 +2,100 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiEndpoint_Properties_CustomDomains_Properties {
+  /** The hostname this applies to. (AI-inferred) */
   hostName?: string | Computed<string>;
+  /** The data used to validate ownership of this custom domain. (AI-inferred) */
   validationData?: string | Computed<string>;
 }
 
 export interface OpenapiEndpoint_Properties_CustomDomains {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiEndpoint_Properties_CustomDomains_Properties | Computed<OpenapiEndpoint_Properties_CustomDomains_Properties>;
 }
 
 export interface OpenapiEndpoint_Properties_OriginGroups_Properties_HealthProbeSettings {
+  /** How often, in seconds, this health probe runs. (AI-inferred) */
   probeIntervalInSeconds?: number | Computed<number>;
+  /** The URL path this health probe requests. (AI-inferred) */
   probePath?: string | Computed<string>;
+  /** The protocol this health probe uses, e.g. `Http` or `Https`. (AI-inferred) */
   probeProtocol?: string | Computed<string>;
+  /** The HTTP method this health probe uses, e.g. `GET` or `HEAD`. (AI-inferred) */
   probeRequestType?: string | Computed<string>;
 }
 
 export interface OpenapiEndpoint_Properties_OriginGroups_Properties_Origins {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings_HttpErrorRanges {
+  /** The first byte position of this range, inclusive. (AI-inferred) */
   begin?: number | Computed<number>;
+  /** The last byte position of this range, inclusive. (AI-inferred) */
   end?: number | Computed<number>;
 }
 
 export interface OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings {
+  /** The HTTP status code range(s) this origin health check treats as an error. (AI-inferred) */
   httpErrorRanges?: OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings_HttpErrorRanges[] | Computed<OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings_HttpErrorRanges[]>;
+  /** The kind of error response(s) (e.g. 5xx status codes) that mark an origin unhealthy. (AI-inferred) */
   responseBasedDetectedErrorTypes?: string | Computed<string>;
+  /** The percentage of failed requests that triggers failover away from this origin. (AI-inferred) */
   responseBasedFailoverThresholdPercentage?: number | Computed<number>;
 }
 
 export interface OpenapiEndpoint_Properties_OriginGroups_Properties {
+  /** Configuration for periodically checking this origin's own health. (AI-inferred) */
   healthProbeSettings?: OpenapiEndpoint_Properties_OriginGroups_Properties_HealthProbeSettings | Computed<OpenapiEndpoint_Properties_OriginGroups_Properties_HealthProbeSettings>;
+  /** The origin server(s) this endpoint retrieves content from. (AI-inferred) */
   origins?: OpenapiEndpoint_Properties_OriginGroups_Properties_Origins[] | Computed<OpenapiEndpoint_Properties_OriginGroups_Properties_Origins[]>;
+  /** Configuration for detecting an unhealthy origin based on live response behavior, rather than only active probes. (AI-inferred) */
   responseBasedOriginErrorDetectionSettings?: OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings | Computed<OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings>;
+  /** How long, in minutes, traffic gradually shifts back to an origin once it recovers or a new origin is added. (AI-inferred) */
   trafficRestorationTimeToHealedOrNewEndpointsInMinutes?: number | Computed<number>;
 }
 
 export interface OpenapiEndpoint_Properties_OriginGroups {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiEndpoint_Properties_OriginGroups_Properties | Computed<OpenapiEndpoint_Properties_OriginGroups_Properties>;
 }
 
 export interface OpenapiEndpoint_Properties_Origins_Properties {
+  /** Whether this feature is turned on. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
+  /** The hostname this applies to. (AI-inferred) */
   hostName?: string | Computed<string>;
+  /** The port used for HTTP (unencrypted) traffic. (AI-inferred) */
   httpPort?: number | Computed<number>;
+  /** The port used for HTTPS (encrypted) traffic. (AI-inferred) */
   httpsPort?: number | Computed<number>;
+  /** The `Host` header sent to the origin, when different from the requested hostname. (AI-inferred) */
   originHostHeader?: string | Computed<string>;
+  /** The relative priority of this item. (AI-inferred) */
   priority?: number | Computed<number>;
+  /** The current approval status of this Private Link connection. (AI-inferred) */
   privateEndpointStatus?: string | Computed<string>;
+  /** The alias identifying the Private Link resource this endpoint connects to. (AI-inferred) */
   privateLinkAlias?: string | Computed<string>;
+  /** A message shown to the resource owner when requesting approval for this Private Link connection. (AI-inferred) */
   privateLinkApprovalMessage?: string | Computed<string>;
+  /** The Azure region the target Private Link resource is deployed in. (AI-inferred) */
   privateLinkLocation?: string | Computed<string>;
+  /** A reference to the Private Link resource this endpoint connects to. (AI-inferred) */
   privateLinkResourceId?: string | Computed<string>;
+  /** The relative weight of this item. (AI-inferred) */
   weight?: number | Computed<number>;
 }
 
 export interface OpenapiEndpoint_Properties_Origins {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiEndpoint_Properties_Origins_Properties | Computed<OpenapiEndpoint_Properties_Origins_Properties>;
 }
 

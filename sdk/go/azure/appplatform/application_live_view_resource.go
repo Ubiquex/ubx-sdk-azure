@@ -4,19 +4,27 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApplicationLiveViewResource_Properties_Components_Instances struct {
-	Name   any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The current status of this resource. (AI-inferred)
 	Status any
 }
 
 type ApplicationLiveViewResource_Properties_Components_ResourceRequests struct {
-	Cpu           any
+	// The number of CPU core(s) allocated. (AI-inferred)
+	Cpu any
+	// The number of instance(s) provisioned. (AI-inferred)
 	InstanceCount any
-	Memory        any
+	// The amount of memory allocated. (AI-inferred)
+	Memory any
 }
 
 type ApplicationLiveViewResource_Properties_Components struct {
-	Instances        any
-	Name             any
+	// The instance(s) making up this deployment. (AI-inferred)
+	Instances any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The compute resource requirement(s) (CPU, memory) for this deployment. (AI-inferred)
 	ResourceRequests any
 }
 

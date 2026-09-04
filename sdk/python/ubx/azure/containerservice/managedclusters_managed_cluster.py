@@ -15,14 +15,20 @@ class ManagedclustersManagedCluster_ExtendedLocation:
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Identity_DelegatedResources:
+    # The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
     location: Any = None
+    # A reference to the resource this DNS zone referral applies to. (AI-inferred)
     referral_resource: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
+    # Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
     tenant_id: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -57,18 +63,25 @@ class ManagedclustersManagedCluster_Properties_AadProfile:
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_AddonProfiles_Identity:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # The Microsoft Entra ID object identifier this applies to. (AI-inferred)
     object_id: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_AddonProfiles:
+    # The configuration for this resource. (AI-inferred)
     config: Any = None
+    # Whether this feature is turned on. (AI-inferred)
     enabled: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_AgentPoolProfiles:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
@@ -242,6 +255,7 @@ class ManagedclustersManagedCluster_Properties_IngressProfile:
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_LinuxProfile_Ssh_PublicKeys:
+    # The public key data used for authentication. (AI-inferred)
     key_data: Any = None
 
 @dataclasses.dataclass
@@ -293,6 +307,7 @@ class ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworking
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIps:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
@@ -407,32 +422,47 @@ class ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedId
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error:
+    # Detail about an error that occurred. (AI-inferred)
     error: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo:
+    # Detail about an error that occurred. (AI-inferred)
     error: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities:
+    # Selects which resource(s) this DNS binding applies to. (AI-inferred)
     binding_selector: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Kubernetes namespace this applies to. (AI-inferred)
     namespace: Any = None
+    # Additional detail about this resource's own provisioning progress. (AI-inferred)
     provisioning_info: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentityExceptions:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Kubernetes namespace this applies to. (AI-inferred)
     namespace: Any = None
+    # The Kubernetes pod label(s) this applies to. (AI-inferred)
     pod_labels: Any = None
 
 @dataclasses.dataclass
@@ -453,11 +483,17 @@ class ManagedclustersManagedCluster_Properties_PowerState:
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_PrivateLinkResources:
+    # The sub-resource this connection targets on the destination service. (AI-inferred)
     group_id: Any = None
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # A reference to the Private Link service this connects to. (AI-inferred)
     private_link_service_id: Any = None
+    # The member(s) required for this rule to be satisfied. (AI-inferred)
     required_members: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
@@ -483,7 +519,9 @@ class ManagedclustersManagedCluster_Properties_SecurityProfile_AzureKeyVaultKms:
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGating_Identities:
+    # A reference to the Azure Container Registry this applies to. (AI-inferred)
     azure_container_registry: Any = None
+    # The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
     identity: Any = None
 
 @dataclasses.dataclass
@@ -544,14 +582,20 @@ class ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Certific
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_EgressGateways:
+    # Whether this feature is turned on. (AI-inferred)
     enabled: Any = None
+    # A reference to the gateway configuration this applies to. (AI-inferred)
     gateway_configuration_name: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The Kubernetes namespace this applies to. (AI-inferred)
     namespace: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_IngressGateways:
+    # Whether this feature is turned on. (AI-inferred)
     enabled: Any = None
+    # The operating mode this configuration uses. (AI-inferred)
     mode: Any = None
 
 @dataclasses.dataclass
@@ -588,15 +632,22 @@ class ManagedclustersManagedCluster_Properties_ServicePrincipalProfile:
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_Status_ProvisioningError_AdditionalInfo:
+    # Additional detail about this result. (AI-inferred)
     info: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersManagedCluster_Properties_Status_ProvisioningError_Details:
+    # Additional detail about this result. (AI-inferred)
     additional_info: Any = None
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # A reference to the resource this operation targets. (AI-inferred)
     target: Any = None
 
 @dataclasses.dataclass

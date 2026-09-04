@@ -8,11 +8,17 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualnetworkInboundSecurityRule_Properties_Rules:
+    # The interface or direction this rule applies on. (AI-inferred)
     applies_on: Any = None
+    # The destination port range this rule matches, e.g. `80` or `1000-2000`. (AI-inferred)
     destination_port_range: Any = None
+    # The destination port ranges this rule matches, when more than one applies. (AI-inferred)
     destination_port_ranges: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The network protocol this rule or listener applies to, e.g. `Tcp`, `Udp`, or `*` for any. (AI-inferred)
     protocol: Any = None
+    # The source IP address range (CIDR) or tag this rule matches, e.g. `10.0.0.0/24` or `Internet`. (AI-inferred)
     source_address_prefix: Any = None
 
 @dataclasses.dataclass

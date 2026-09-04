@@ -4,39 +4,61 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPolicySetDefinitionVersion_Properties_Parameters_Metadata struct {
+	// Whether the identity performing this deployment is automatically granted permissions needed by its own template resources. (AI-inferred)
 	AssignPermissions any
-	Description       any
-	DisplayName       any
-	StrongType        any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// A UI hint identifying a well-known Azure resource type this parameter's own value should be picked from. (AI-inferred)
+	StrongType any
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_Parameters struct {
+	// The set of values permitted for this parameter. (AI-inferred)
 	AllowedValues any
-	DefaultValue  any
-	Metadata      any
-	Schema        any
-	Type          any
+	// The value used when this parameter is left unset. (AI-inferred)
+	DefaultValue any
+	// Additional, free-form metadata associated with this resource. (AI-inferred)
+	Metadata any
+	// The JSON schema defining this parameter's own permitted value(s). (AI-inferred)
+	Schema any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitionGroups struct {
+	// A reference to additional, externally hosted metadata for this policy. (AI-inferred)
 	AdditionalMetadataId any
-	Category             any
-	Description          any
-	DisplayName          any
-	Name                 any
+	// The category this belongs to. (AI-inferred)
+	Category any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_Parameters struct {
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions struct {
-	DefinitionVersion           any
-	EffectiveDefinitionVersion  any
-	GroupNames                  any
-	LatestDefinitionVersion     any
-	Parameters                  any
-	PolicyDefinitionId          any
+	// The specific version of this policy definition. (AI-inferred)
+	DefinitionVersion any
+	// The policy definition version actually in effect, after resolving any version range. (AI-inferred)
+	EffectiveDefinitionVersion any
+	// The policy definition group(s) this reference belongs to. (AI-inferred)
+	GroupNames any
+	// The most recent available version of this policy definition. (AI-inferred)
+	LatestDefinitionVersion any
+	// The parameter(s) making up this definition. (AI-inferred)
+	Parameters any
+	// A reference to the policy definition this applies to. (AI-inferred)
+	PolicyDefinitionId any
+	// A reference to a specific policy definition within this initiative. (AI-inferred)
 	PolicyDefinitionReferenceId any
 }
 

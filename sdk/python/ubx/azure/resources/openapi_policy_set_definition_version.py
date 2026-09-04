@@ -8,39 +8,61 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiPolicySetDefinitionVersion_Properties_Parameters_Metadata:
+    # Whether the identity performing this deployment is automatically granted permissions needed by its own template resources. (AI-inferred)
     assign_permissions: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # A UI hint identifying a well-known Azure resource type this parameter's own value should be picked from. (AI-inferred)
     strong_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiPolicySetDefinitionVersion_Properties_Parameters:
+    # The set of values permitted for this parameter. (AI-inferred)
     allowed_values: Any = None
+    # The value used when this parameter is left unset. (AI-inferred)
     default_value: Any = None
+    # Additional, free-form metadata associated with this resource. (AI-inferred)
     metadata: Any = None
+    # The JSON schema defining this parameter's own permitted value(s). (AI-inferred)
     schema: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitionGroups:
+    # A reference to additional, externally hosted metadata for this policy. (AI-inferred)
     additional_metadata_id: Any = None
+    # The category this belongs to. (AI-inferred)
     category: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_Parameters:
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions:
+    # The specific version of this policy definition. (AI-inferred)
     definition_version: Any = None
+    # The policy definition version actually in effect, after resolving any version range. (AI-inferred)
     effective_definition_version: Any = None
+    # The policy definition group(s) this reference belongs to. (AI-inferred)
     group_names: Any = None
+    # The most recent available version of this policy definition. (AI-inferred)
     latest_definition_version: Any = None
+    # The parameter(s) making up this definition. (AI-inferred)
     parameters: Any = None
+    # A reference to the policy definition this applies to. (AI-inferred)
     policy_definition_id: Any = None
+    # A reference to a specific policy definition within this initiative. (AI-inferred)
     policy_definition_reference_id: Any = None
 
 @dataclasses.dataclass

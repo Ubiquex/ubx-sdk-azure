@@ -8,31 +8,45 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DtlVirtualNetwork_Properties_AllowedSubnets:
+    # Whether a public IP address is allowed on virtual machines created from this virtual network. (AI-inferred)
     allow_public_ip: Any = None
+    # The name of the lab's own virtual network subnet this applies to. (AI-inferred)
     lab_subnet_name: Any = None
+    # A reference to the underlying Azure resource. (AI-inferred)
     resource_id: Any = None
 
 @dataclasses.dataclass
 class DtlVirtualNetwork_Properties_ExternalSubnets:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass
 class DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration_AllowedPorts:
+    # The backend port traffic is forwarded to. (AI-inferred)
     backend_port: Any = None
+    # The transport protocol this rule applies to, e.g. `Tcp` or `Udp`. (AI-inferred)
     transport_protocol: Any = None
 
 @dataclasses.dataclass
 class DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration:
+    # The port(s) allowed through this shared public IP's own inbound NAT rule(s). (AI-inferred)
     allowed_ports: Any = None
 
 @dataclasses.dataclass
 class DtlVirtualNetwork_Properties_SubnetOverrides:
+    # The name of the lab's own virtual network subnet this applies to. (AI-inferred)
     lab_subnet_name: Any = None
+    # A reference to the underlying Azure resource. (AI-inferred)
     resource_id: Any = None
+    # Configuration for a public IP address shared across multiple virtual machines on this subnet. (AI-inferred)
     shared_public_ip_address_configuration: Any = None
+    # Whether lab users are allowed, denied, or given a default choice to use this subnet when creating a virtual machine. (AI-inferred)
     use_in_vm_creation_permission: Any = None
+    # Whether lab users are allowed, denied, or given a default choice to assign a public IP address on this subnet. (AI-inferred)
     use_public_ip_address_permission: Any = None
+    # The name of the shared IP pool this subnet's own virtual machines draw addresses from. (AI-inferred)
     virtual_network_pool_name: Any = None
 
 @dataclasses.dataclass

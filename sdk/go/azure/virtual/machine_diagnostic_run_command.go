@@ -11,11 +11,15 @@ type MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentity struct {
 }
 
 type MachineDiagnosticRunCommand_Properties_InstanceView_Statuses struct {
+	// The status code for the instance view status, indicating the state of the diagnostic run command. (AI-inferred)
 	Code          any
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of the instance view status. Possible values are 'Info', 'Warning', and 'Error'. (AI-inferred)
+	Level any
+	// The message that provides additional details about the status of the diagnostic run command, such as error information or execution progress. (AI-inferred)
+	Message any
+	// The timestamp when the status was recorded, in ISO 8601 format. (AI-inferred)
+	Time any
 }
 
 type MachineDiagnosticRunCommand_Properties_InstanceView struct {
@@ -38,7 +42,8 @@ type MachineDiagnosticRunCommand_Properties_InstanceView struct {
 }
 
 type MachineDiagnosticRunCommand_Properties_Parameters struct {
-	Name  any
+	Name any
+	// The value of the parameter to pass to the diagnostic run command. (AI-inferred)
 	Value any
 }
 

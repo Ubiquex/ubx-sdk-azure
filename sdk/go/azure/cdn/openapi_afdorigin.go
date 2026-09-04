@@ -28,7 +28,8 @@ type OpenapiAfdorigin_Properties struct {
 	CertificateNameCheckValidationMode any
 	// The list of custom certificate subjects to validate against. Only applicable when certificateNameCheckValidationMode is 'CustomCertificateSubject'. Must contain 1 or 2 entries.
 	CustomCertificateSubjects any
-	DeploymentStatus          any
+	// The current deployment status of this configuration. (AI-inferred)
+	DeploymentStatus any
 	// Whether to enable use of this rule. Permitted values are 'Enabled' or 'Disabled'
 	EnabledState any
 	// Whether to enable certificate name check at origin level

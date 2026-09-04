@@ -19,27 +19,40 @@ class RegistrationDefinition_Plan:
 
 @dataclasses.dataclass
 class RegistrationDefinition_Properties_Authorizations:
+    # The role definition ID(s) delegated to the managing tenant's own principal(s). (AI-inferred)
     delegated_role_definition_ids: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
+    # A human-readable name for the delegated principal. (AI-inferred)
     principal_id_display_name: Any = None
+    # A reference to the role definition this delegation grants. (AI-inferred)
     role_definition_id: Any = None
 
 @dataclasses.dataclass
 class RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApprovers:
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
+    # A human-readable name for the delegated principal. (AI-inferred)
     principal_id_display_name: Any = None
 
 @dataclasses.dataclass
 class RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy:
+    # The principal(s) in the managing tenant authorized to approve just-in-time access requests. (AI-inferred)
     managed_by_tenant_approvers: Any = None
+    # The maximum duration a just-in-time access grant may remain active for. (AI-inferred)
     maximum_activation_duration: Any = None
+    # The multi-factor authentication provider required to approve or request access. (AI-inferred)
     multi_factor_auth_provider: Any = None
 
 @dataclasses.dataclass
 class RegistrationDefinition_Properties_EligibleAuthorizations:
+    # Policy configuration for temporary, approval-gated access to this delegation. (AI-inferred)
     just_in_time_access_policy: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
+    # A human-readable name for the delegated principal. (AI-inferred)
     principal_id_display_name: Any = None
+    # A reference to the role definition this delegation grants. (AI-inferred)
     role_definition_id: Any = None
 
 @dataclasses.dataclass

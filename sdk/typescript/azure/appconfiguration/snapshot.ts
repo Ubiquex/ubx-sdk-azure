@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Snapshot_Properties_Filters {
+  /** The configuration key name (or prefix pattern) this snapshot filter matches. (AI-inferred) */
   key?: string | Computed<string>;
+  /** The configuration key label this snapshot filter matches. (AI-inferred) */
   label?: string | Computed<string>;
 }
 

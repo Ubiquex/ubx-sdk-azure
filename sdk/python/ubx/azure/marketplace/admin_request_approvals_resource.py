@@ -8,16 +8,24 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class AdminRequestApprovalsResource_Properties_Plans_Requesters:
+    # The date this event occurred. (AI-inferred)
     date: Any = None
+    # The stated reason supporting this request. (AI-inferred)
     justification: Any = None
+    # The identifier of the associated Azure subscription. (AI-inferred)
     subscription_id: Any = None
+    # The name of the associated Azure subscription. (AI-inferred)
     subscription_name: Any = None
+    # The identity associated with this action. (AI-inferred)
     user: Any = None
 
 @dataclasses.dataclass
 class AdminRequestApprovalsResource_Properties_Plans:
+    # A human-readable name for this plan. (AI-inferred)
     plan_display_name: Any = None
+    # A reference to the specific plan this applies to. (AI-inferred)
     plan_id: Any = None
+    # The identity/identities that submitted this request. (AI-inferred)
     requesters: Any = None
 
 @dataclasses.dataclass

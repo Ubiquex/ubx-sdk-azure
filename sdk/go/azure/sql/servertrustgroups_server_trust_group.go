@@ -4,6 +4,7 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServertrustgroupsServerTrustGroup_Properties_GroupMembers struct {
+	// The resource ID of a SQL server included in this trust group. (AI-inferred)
 	ServerId any
 }
 

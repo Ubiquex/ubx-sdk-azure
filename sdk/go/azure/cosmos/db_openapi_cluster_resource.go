@@ -13,16 +13,21 @@ type DbOpenapiClusterResource_Identity struct {
 }
 
 type DbOpenapiClusterResource_Properties_BackupSchedules struct {
-	CronExpression   any
+	// The cron expression this scheduled operation runs on. (AI-inferred)
+	CronExpression any
+	// How many hours of backup history are retained. (AI-inferred)
 	RetentionInHours any
-	ScheduleName     any
+	// The name of this schedule. (AI-inferred)
+	ScheduleName any
 }
 
 type DbOpenapiClusterResource_Properties_ClientCertificates struct {
+	// A certificate, PEM-encoded. (AI-inferred)
 	Pem any
 }
 
 type DbOpenapiClusterResource_Properties_ExternalSeedNodes struct {
+	// An IP address value. (AI-inferred)
 	IpAddress any
 }
 
@@ -74,8 +79,10 @@ type DbOpenapiClusterResource_Properties struct {
 	InitialCassandraAdminPassword any
 	// If the Connection Method is Vpn, this is the Id of the private link resource that the datacenters need to connect to.
 	PrivateLinkResourceId any
-	PrometheusEndpoint    any
-	ProvisionError        any
+	// Output only. The URI metrics are exposed at in Prometheus format. (AI-inferred)
+	PrometheusEndpoint any
+	// Detail about an error encountered while provisioning this resource. (AI-inferred)
+	ProvisionError any
 	// The status of the resource at the time the operation was called.
 	ProvisioningState any
 	// Should automatic repairs run on this cluster? If omitted, this is true, and should stay true unless you are running a hybrid cluster where you are already doing your own repairs.

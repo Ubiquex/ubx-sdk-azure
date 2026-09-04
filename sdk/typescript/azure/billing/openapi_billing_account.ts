@@ -2,58 +2,99 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiBillingAccount_Properties_EnrollmentDetails_IndirectRelationshipInfo {
+  /** A reference to the billing account this applies to. (AI-inferred) */
   billingAccountName?: string | Computed<string>;
+  /** A reference to the billing profile this applies to. (AI-inferred) */
   billingProfileName?: string | Computed<string>;
+  /** A human-readable name for this resource. (AI-inferred) */
   displayName?: string | Computed<string>;
 }
 
 export interface OpenapiBillingAccount_Properties_EnrollmentDetails {
+  /** How often this billing profile is invoiced. (AI-inferred) */
   billingCycle?: string | Computed<string>;
+  /** The sales channel this applies to. (AI-inferred) */
   channel?: string | Computed<string>;
+  /** The Azure cloud environment this applies to. (AI-inferred) */
   cloud?: string | Computed<string>;
+  /** The two-letter country code this applies to. (AI-inferred) */
   countryCode?: string | Computed<string>;
+  /** The currency amounts are expressed in. (AI-inferred) */
   currency?: string | Computed<string>;
+  /** When this window or period ends. (AI-inferred) */
   endDate?: string | Computed<string>;
+  /** Whether an extended term is available for this offer. (AI-inferred) */
   extendedTermOption?: string | Computed<string>;
+  /** Detail about this account's own indirect (reseller-mediated) billing relationship. (AI-inferred) */
   indirectRelationshipInfo?: OpenapiBillingAccount_Properties_EnrollmentDetails_IndirectRelationshipInfo | Computed<OpenapiBillingAccount_Properties_EnrollmentDetails_IndirectRelationshipInfo>;
+  /** The recipient this invoice is sent to. (AI-inferred) */
   invoiceRecipient?: string | Computed<string>;
+  /** The language content is provided in. (AI-inferred) */
   language?: string | Computed<string>;
+  /** Whether markup on this billed amount is currently active. (AI-inferred) */
   markupStatus?: string | Computed<string>;
+  /** A purchase order number associated with this invoice. (AI-inferred) */
   poNumber?: string | Computed<string>;
+  /** When this window or period starts. (AI-inferred) */
   startDate?: string | Computed<string>;
+  /** The support coverage level associated with this account. (AI-inferred) */
   supportCoverage?: string | Computed<string>;
+  /** The tier of support this account is entitled to. (AI-inferred) */
   supportLevel?: string | Computed<string>;
 }
 
 export interface OpenapiBillingAccount_Properties_RegistrationNumber {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** Whether this field must be present. (AI-inferred) */
   required?: boolean | Computed<boolean>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiBillingAccount_Properties_SoldTo {
+  /** The first line of this postal address. (AI-inferred) */
   addressLine1?: string | Computed<string>;
+  /** The second line of this postal address. (AI-inferred) */
   addressLine2?: string | Computed<string>;
+  /** The third line of this postal address. (AI-inferred) */
   addressLine3?: string | Computed<string>;
+  /** The city component of this postal address. (AI-inferred) */
   city?: string | Computed<string>;
+  /** The name of this company. (AI-inferred) */
   companyName?: string | Computed<string>;
+  /** The country component of this postal address. (AI-inferred) */
   country?: string | Computed<string>;
+  /** The district or region component of this postal address. (AI-inferred) */
   district?: string | Computed<string>;
+  /** An email address associated with this resource. (AI-inferred) */
   email?: string | Computed<string>;
+  /** The given name of this contact. (AI-inferred) */
   firstName?: string | Computed<string>;
+  /** Whether this address passed validation. (AI-inferred) */
   isValidAddress?: boolean | Computed<boolean>;
+  /** The family name of this contact. (AI-inferred) */
   lastName?: string | Computed<string>;
+  /** The middle name of this contact. (AI-inferred) */
   middleName?: string | Computed<string>;
+  /** A phone number associated with this resource. (AI-inferred) */
   phoneNumber?: string | Computed<string>;
+  /** The postal code component of this address. (AI-inferred) */
   postalCode?: string | Computed<string>;
+  /** The billing region this applies to. (AI-inferred) */
   region?: string | Computed<string>;
 }
 
 export interface OpenapiBillingAccount_Properties_TaxIds {
+  /** The country component of this postal address. (AI-inferred) */
   country?: string | Computed<string>;
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** What this configuration's own scope covers. (AI-inferred) */
   scope?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 

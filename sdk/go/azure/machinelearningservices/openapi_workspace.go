@@ -4,7 +4,9 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWorkspace_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -49,24 +51,34 @@ type OpenapiWorkspace_Properties_Encryption struct {
 }
 
 type OpenapiWorkspace_Properties_FeatureStoreSettings_ComputeRuntime struct {
+	// The Spark runtime version this compute instance uses. (AI-inferred)
 	SparkRuntimeVersion any
 }
 
 type OpenapiWorkspace_Properties_FeatureStoreSettings struct {
-	ComputeRuntime             any
+	// The compute runtime this resource uses. (AI-inferred)
+	ComputeRuntime any
+	// A reference to the data store connection used for offline feature retrieval. (AI-inferred)
 	OfflineStoreConnectionName any
-	OnlineStoreConnectionName  any
+	// A reference to the data store connection used for online feature retrieval. (AI-inferred)
+	OnlineStoreConnectionName any
 }
 
 type OpenapiWorkspace_Properties_ManagedNetwork_OutboundRules struct {
-	Category         any
+	// The category this belongs to. (AI-inferred)
+	Category any
+	// Additional detail about this error. (AI-inferred)
 	ErrorInformation any
-	ParentRuleNames  any
-	Status           any
-	Type             any
+	// The name(s) of the parent rule(s) this suggestion or association derives from. (AI-inferred)
+	ParentRuleNames any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type OpenapiWorkspace_Properties_ManagedNetwork_Status struct {
+	// Whether this compute instance is configured to run Spark jobs. (AI-inferred)
 	SparkReady any
 	// Status for the managed network of a machine learning workspace.
 	Status any
@@ -83,7 +95,8 @@ type OpenapiWorkspace_Properties_ManagedNetwork struct {
 	IsolationMode any
 	// The Kind of the managed network. Users can switch from V1 to V2 for granular access controls, but cannot switch back to V1 once V2 is enabled.
 	ManagedNetworkKind any
-	NetworkId          any
+	// A reference to the virtual network this applies to. (AI-inferred)
+	NetworkId any
 	// Dictionary of <OutboundRule>
 	OutboundRules any
 	// Status of the Provisioning for the managed network of a machine learning workspace.
@@ -91,49 +104,72 @@ type OpenapiWorkspace_Properties_ManagedNetwork struct {
 }
 
 type OpenapiWorkspace_Properties_NotebookInfo_NotebookPreparationError struct {
+	// A human-readable description of the error. (AI-inferred)
 	ErrorMessage any
-	StatusCode   any
+	// The HTTP status code returned. (AI-inferred)
+	StatusCode any
 }
 
 type OpenapiWorkspace_Properties_NotebookInfo struct {
-	Fqdn                     any
-	IsPrivateLinkEnabled     any
+	// The fully qualified domain name this applies to. (AI-inferred)
+	Fqdn any
+	// Whether Private Link connectivity is enabled for this resource. (AI-inferred)
+	IsPrivateLinkEnabled any
+	// Detail about an error encountered while preparing the notebook environment. (AI-inferred)
 	NotebookPreparationError any
 	// the data plane resourceId that used to initialize notebook component
 	ResourceId any
 }
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
-	Id          any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
+	// A reference to the subnet this resource is injected into. (AI-inferred)
 	SubnetArmId any
 }
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint                   any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections_Sku struct {
+	// The number of instance(s) this resource is provisioned with. (AI-inferred)
 	Capacity any
-	Family   any
-	Name     any
-	Size     any
-	Tier     any
+	// The generation or family this SKU belongs to. (AI-inferred)
+	Family any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The size of this resource. (AI-inferred)
+	Size any
+	// The service tier this resource (or its `sku`) is provisioned at, e.g. `Standard` or `Premium`. (AI-inferred)
+	Tier any
 }
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections struct {
-	Identity   any
-	Location   any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Sku        any
-	Tags       any
+	// The pricing tier and capacity this resource is provisioned at. (AI-inferred)
+	Sku any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
+	Tags any
 }
 
 type OpenapiWorkspace_Properties_ServerlessComputeSettings struct {
@@ -144,50 +180,66 @@ type OpenapiWorkspace_Properties_ServerlessComputeSettings struct {
 }
 
 type OpenapiWorkspace_Properties_ServiceManagedResourcesSettings_CosmosDb struct {
+	// The provisioned throughput allocated to Cosmos DB collections backing this workspace. (AI-inferred)
 	CollectionsThroughput any
 }
 
 type OpenapiWorkspace_Properties_ServiceManagedResourcesSettings struct {
+	// Configuration for the Cosmos DB account backing this workspace. (AI-inferred)
 	CosmosDb any
 }
 
 type OpenapiWorkspace_Properties_SharedPrivateLinkResources_Properties struct {
-	GroupId               any
+	// The sub-resource this connection targets on the destination service. (AI-inferred)
+	GroupId any
+	// A reference to the Private Link resource this applies to. (AI-inferred)
 	PrivateLinkResourceId any
-	RequestMessage        any
-	Status                any
+	// A message the requester attaches when asking to connect to this resource. (AI-inferred)
+	RequestMessage any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type OpenapiWorkspace_Properties_SharedPrivateLinkResources struct {
-	Name       any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
 type OpenapiWorkspace_Properties_WorkspaceHubConfig struct {
+	// Extra storage account(s) associated with this workspace, beyond its own primary one. (AI-inferred)
 	AdditionalWorkspaceStorageAccounts any
-	DefaultWorkspaceResourceGroup      any
+	// The resource group new workspace-associated resources are created in by default. (AI-inferred)
+	DefaultWorkspaceResourceGroup any
 }
 
 type OpenapiWorkspace_Properties struct {
 	// The flag to indicate whether to allow public access when behind VNet.
 	AllowPublicAccessWhenBehindVnet any
 	// ARM id of the application insights associated with this workspace.
-	ApplicationInsights  any
+	ApplicationInsights any
+	// The workspace(s) associated with this hub or registry. (AI-inferred)
 	AssociatedWorkspaces any
 	// ARM id of the container registry associated with this workspace.
 	ContainerRegistry any
 	// The description of this workspace.
 	Description any
 	// Url for the discovery service to identify regional endpoints for machine learning experimentation services
-	DiscoveryUrl                   any
-	EnableDataIsolation            any
+	DiscoveryUrl any
+	// Whether this workspace's own data is isolated from other workspaces sharing the same hub. (AI-inferred)
+	EnableDataIsolation any
+	// Whether service-side resources are also encrypted with this workspace's own customer-managed key. (AI-inferred)
 	EnableServiceSideCmkencryption any
-	Encryption                     any
-	FeatureStoreSettings           any
+	// Encryption configuration for this resource. (AI-inferred)
+	Encryption any
+	// Configuration for this workspace's own feature store capability. (AI-inferred)
+	FeatureStoreSettings any
 	// The friendly name for this workspace. This name in mutable
 	FriendlyName any
 	// The flag to signal HBI data in the workspace and reduce diagnostic data collected by the service
-	HbiWorkspace  any
+	HbiWorkspace any
+	// A reference to the parent hub this project belongs to. (AI-inferred)
 	HubResourceId any
 	// The compute name for image build
 	ImageBuildCompute any
@@ -197,7 +249,8 @@ type OpenapiWorkspace_Properties struct {
 	ManagedNetwork any
 	// The URI associated with this workspace that machine learning flow must point at to set up tracking.
 	MlFlowTrackingUri any
-	NotebookInfo      any
+	// Detail about this workspace's own associated notebook resource. (AI-inferred)
+	NotebookInfo any
 	// The user assigned identity resource id that represents the workspace identity.
 	PrimaryUserAssignedIdentity any
 	// The list of private endpoint connections in the workspace.
@@ -209,8 +262,10 @@ type OpenapiWorkspace_Properties struct {
 	// The provision state of the cluster. Valid values are Unknown, Updating, Provisioning, Succeeded, and Failed.
 	ProvisioningState any
 	// Enum to determine whether PublicNetworkAccess is Enabled or Disabled.
-	PublicNetworkAccess             any
-	ServerlessComputeSettings       any
+	PublicNetworkAccess any
+	// Configuration for using serverless compute, rather than a dedicated cluster. (AI-inferred)
+	ServerlessComputeSettings any
+	// Configuration for resources Azure Machine Learning provisions and manages on the caller's own behalf. (AI-inferred)
 	ServiceManagedResourcesSettings any
 	// The name of the managed resource group created by workspace RP in customer subscription if the workspace is CMK workspace
 	ServiceProvisionedResourceGroup any
@@ -505,24 +560,30 @@ var OpenapiWorkspace_PropertiesFields = ubx.FieldMap{
 type OpenapiWorkspaceConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
-	Kind     any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
 	Location any
 	// The properties of a machine learning workspace.
 	Properties any
 	// The resource model definition representing SKU
-	Sku  any
+	Sku any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
 	Tags any
 }
 
 type OpenapiWorkspaceAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
-	Kind     any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
+	// The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred)
 	Location any
 	// The properties of a machine learning workspace.
 	Properties any
 	// The resource model definition representing SKU
-	Sku  any
+	Sku any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
 	Tags any
 }
 

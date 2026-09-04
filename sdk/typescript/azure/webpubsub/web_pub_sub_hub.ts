@@ -2,27 +2,37 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface WebPubSubHub_Properties_EventHandlers_Auth_ManagedIdentity {
+  /** A reference to the resource this applies to. (AI-inferred) */
   resource?: string | Computed<string>;
 }
 
 export interface WebPubSubHub_Properties_EventHandlers_Auth {
+  /** The managed identity used to authenticate requests to this upstream endpoint. (AI-inferred) */
   managedIdentity?: WebPubSubHub_Properties_EventHandlers_Auth_ManagedIdentity | Computed<WebPubSubHub_Properties_EventHandlers_Auth_ManagedIdentity>;
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface WebPubSubHub_Properties_EventHandlers {
+  /** Authentication configuration for this upstream endpoint. (AI-inferred) */
   auth?: WebPubSubHub_Properties_EventHandlers_Auth | Computed<WebPubSubHub_Properties_EventHandlers_Auth>;
+  /** The system event type(s) this event handler subscribes to. (AI-inferred) */
   systemEvents?: string[] | Computed<string[]>;
+  /** The URL template used to construct the upstream endpoint address for a matching event. (AI-inferred) */
   urlTemplate?: string | Computed<string>;
+  /** The user event name pattern this event handler matches. (AI-inferred) */
   userEventPattern?: string | Computed<string>;
 }
 
 export interface WebPubSubHub_Properties_EventListeners_Endpoint {
+  /** The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface WebPubSubHub_Properties_EventListeners {
+  /** The endpoint this resource is reachable at. (AI-inferred) */
   endpoint?: WebPubSubHub_Properties_EventListeners_Endpoint | Computed<WebPubSubHub_Properties_EventListeners_Endpoint>;
+  /** Restricts this rule to matching event(s). (AI-inferred) */
   filter?: WebPubSubHub_Properties_EventListeners_Endpoint | Computed<WebPubSubHub_Properties_EventListeners_Endpoint>;
 }
 

@@ -44,10 +44,12 @@ class GalleryimagesGalleryImages_Properties_Status:
     error_message: Any = None
     # The progress of the operation in percentage
     progress_percentage: Any = None
+    # The outcome of the most recent operation performed on this gallery image, e.g. `Succeeded`, `Failed`, or `InProgress`. (AI-inferred)
     provisioning_status: Any = None
 
 @dataclasses.dataclass
 class GalleryimagesGalleryImages_Properties_Version_Properties_StorageProfile_OsDiskImage:
+    # The size, in MB, of the OS disk image for this gallery image version. (AI-inferred)
     size_in_mb: Any = None
 
 @dataclasses.dataclass

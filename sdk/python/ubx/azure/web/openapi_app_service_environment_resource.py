@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiAppServiceEnvironmentResource_Properties_ClusterSettings:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -19,7 +21,9 @@ class OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffixConfigurati
     dns_suffix: Any = None
     # The user-assigned identity to use for resolving the key vault certificate reference. If not specified, the system-assigned ASE identity will be used if available.
     key_vault_reference_identity: Any = None
+    # Additional detail about this resource's own provisioning progress. (AI-inferred)
     provisioning_details: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
 
 @dataclasses.dataclass
@@ -33,15 +37,19 @@ class OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffixConfigurati
 class OpenapiAppServiceEnvironmentResource_Properties_NetworkingConfiguration_Properties:
     # Property to enable and disable new private endpoint connection creation on ASE
     allow_new_private_endpoint_connections: Any = None
+    # The externally reachable inbound IP address(es) for this app, when running behind an App Service Environment. (AI-inferred)
     external_inbound_ip_addresses: Any = None
     # Property to enable and disable FTP on ASEV3
     ftp_enabled: Any = None
     # Customer provided Inbound IP Address. Only able to be set on Ase create.
     inbound_ip_address_override: Any = None
+    # The internally reachable inbound IP address(es) for this app, when running behind an App Service Environment. (AI-inferred)
     internal_inbound_ip_addresses: Any = None
+    # The outbound IP address(es) this Linux app uses to reach external resources. (AI-inferred)
     linux_outbound_ip_addresses: Any = None
     # Property to enable and disable Remote Debug on ASEV3
     remote_debug_enabled: Any = None
+    # The outbound IP address(es) this Windows app uses to reach external resources. (AI-inferred)
     windows_outbound_ip_addresses: Any = None
 
 @dataclasses.dataclass

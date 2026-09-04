@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiPool_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -20,7 +22,9 @@ class OpenapiPool_Identity:
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_ApplicationPackages:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass
@@ -47,13 +51,18 @@ class OpenapiPool_Properties_AutoScaleRun:
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReference:
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries:
+    # A reference to the managed identity used to authenticate. (AI-inferred)
     identity_reference: Any = None
+    # The password credential used to authenticate. (AI-inferred)
     password: Any = None
+    # The container registry server this image is pulled from. (AI-inferred)
     registry_server: Any = None
+    # The username used to authenticate. (AI-inferred)
     username: Any = None
 
 @dataclasses.dataclass
@@ -67,24 +76,34 @@ class OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSet:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_SecurityProfile:
+    # A reference to the disk encryption set used to encrypt this managed disk. (AI-inferred)
     disk_encryption_set: Any = None
+    # The confidential computing encryption type applied to this disk. (AI-inferred)
     security_encryption_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk:
+    # A reference to the disk encryption set used to encrypt this managed disk. (AI-inferred)
     disk_encryption_set: Any = None
+    # Security configuration (e.g. Trusted Launch) applied to this compute node. (AI-inferred)
     security_profile: Any = None
+    # The replication/performance type of the associated storage account. (AI-inferred)
     storage_account_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks:
+    # The disk caching mode used, e.g. `ReadOnly` or `ReadWrite`. (AI-inferred)
     caching: Any = None
+    # The size of this disk, in gibibytes. (AI-inferred)
     disk_size_gb: Any = None
+    # The logical unit number this disk is attached at. (AI-inferred)
     lun: Any = None
+    # Configuration for a managed disk attached to this compute node. (AI-inferred)
     managed_disk: Any = None
 
 @dataclasses.dataclass
@@ -105,14 +124,23 @@ class OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_Extensions:
+    # Whether this extension automatically upgrades to newer minor versions as they're released. (AI-inferred)
     auto_upgrade_minor_version: Any = None
+    # Whether this extension automatically upgrades to newer versions as they're released. (AI-inferred)
     enable_automatic_upgrade: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Extension setting(s) encrypted at rest and never returned in subsequent reads. (AI-inferred)
     protected_settings: Any = None
+    # The extension(s) that must be provisioned before this one runs. (AI-inferred)
     provision_after_extensions: Any = None
+    # The publisher of this extension. (AI-inferred)
     publisher: Any = None
+    # The setting(s) configuring this extension. (AI-inferred)
     settings: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
+    # The version of the extension handler processing this resource. (AI-inferred)
     type_handler_version: Any = None
 
 @dataclasses.dataclass
@@ -228,62 +256,98 @@ class OpenapiPool_Properties_DeploymentConfiguration:
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_Metadata:
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_MountConfiguration_AzureBlobFileSystemConfiguration:
+    # The access key credential used to authenticate to this storage account. (AI-inferred)
     account_key: Any = None
+    # The name of this storage account. (AI-inferred)
     account_name: Any = None
+    # Additional command-line option(s) passed to blobfuse. (AI-inferred)
     blobfuse_options: Any = None
+    # The name of the storage container this applies to. (AI-inferred)
     container_name: Any = None
+    # A reference to the managed identity used to authenticate. (AI-inferred)
     identity_reference: Any = None
+    # The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred)
     relative_mount_path: Any = None
+    # A shared access signature used to authenticate. (AI-inferred)
     sas_key: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_MountConfiguration_AzureFileShareConfiguration:
+    # The access key credential used to authenticate to this storage account. (AI-inferred)
     account_key: Any = None
+    # The name of this storage account. (AI-inferred)
     account_name: Any = None
+    # The URL of the Azure Files share this applies to. (AI-inferred)
     azure_file_url: Any = None
+    # Additional mount option(s) applied to this volume. (AI-inferred)
     mount_options: Any = None
+    # The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred)
     relative_mount_path: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_MountConfiguration_CifsMountConfiguration:
+    # Additional mount option(s) applied to this volume. (AI-inferred)
     mount_options: Any = None
+    # The password credential used to authenticate. (AI-inferred)
     password: Any = None
+    # The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred)
     relative_mount_path: Any = None
+    # Where this content is sourced from. (AI-inferred)
     source: Any = None
+    # The username used to authenticate. (AI-inferred)
     user_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_MountConfiguration_NfsMountConfiguration:
+    # Additional mount option(s) applied to this volume. (AI-inferred)
     mount_options: Any = None
+    # The path, relative to the task's own working directory, this volume is mounted at. (AI-inferred)
     relative_mount_path: Any = None
+    # Where this content is sourced from. (AI-inferred)
     source: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_MountConfiguration:
+    # Configuration for mounting a Blob container via blobfuse. (AI-inferred)
     azure_blob_file_system_configuration: Any = None
+    # Configuration for mounting an Azure Files share. (AI-inferred)
     azure_file_share_configuration: Any = None
+    # Configuration for mounting an SMB/CIFS file share. (AI-inferred)
     cifs_mount_configuration: Any = None
+    # Configuration for mounting an NFS file share. (AI-inferred)
     nfs_mount_configuration: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools_NetworkSecurityGroupRules:
+    # The access permission granted. (AI-inferred)
     access: Any = None
+    # The relative priority of this item. (AI-inferred)
     priority: Any = None
+    # The source IP address range this rule matches. (AI-inferred)
     source_address_prefix: Any = None
+    # The source port range(s) this rule matches. (AI-inferred)
     source_port_ranges: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools:
+    # The port on the compute node this rule forwards traffic to. (AI-inferred)
     backend_port: Any = None
+    # The last port, inclusive, in this frontend port range. (AI-inferred)
     frontend_port_range_end: Any = None
+    # The first port, inclusive, in this frontend port range. (AI-inferred)
     frontend_port_range_start: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The network security rule(s) applied to this pool's own endpoint configuration. (AI-inferred)
     network_security_group_rules: Any = None
+    # The network protocol used. (AI-inferred)
     protocol: Any = None
 
 @dataclasses.dataclass
@@ -293,7 +357,9 @@ class OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration:
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfiguration_IpTags:
+    # The category this IP tag belongs to. (AI-inferred)
     ip_tag_type: Any = None
+    # A label attached to this resource. (AI-inferred)
     tag: Any = None
 
 @dataclasses.dataclass
@@ -362,7 +428,9 @@ class OpenapiPool_Properties_ScaleSettings:
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_StartTask_ContainerSettings_ContainerHostBatchBindMounts:
+    # Whether this volume is mounted read-only. (AI-inferred)
     is_read_only: Any = None
+    # Where this content is sourced from. (AI-inferred)
     source: Any = None
 
 @dataclasses.dataclass
@@ -380,12 +448,19 @@ class OpenapiPool_Properties_StartTask_ContainerSettings:
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_StartTask_ResourceFiles:
+    # The name of the auto-storage container this applies to. (AI-inferred)
     auto_storage_container_name: Any = None
+    # Restricts this mount to blob(s) matching this name prefix. (AI-inferred)
     blob_prefix: Any = None
+    # The file permission mode applied. (AI-inferred)
     file_mode: Any = None
+    # The path to this file. (AI-inferred)
     file_path: Any = None
+    # The URL this resource is downloaded from. (AI-inferred)
     http_url: Any = None
+    # A reference to the managed identity used to authenticate. (AI-inferred)
     identity_reference: Any = None
+    # The URL of the storage container this resource is read from. (AI-inferred)
     storage_container_url: Any = None
 
 @dataclasses.dataclass
@@ -465,20 +540,29 @@ class OpenapiPool_Properties_UpgradePolicy:
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_UserAccounts_LinuxUserConfiguration:
+    # The group ID applied to this file or process. (AI-inferred)
     gid: Any = None
+    # The private key used for SSH authentication. (AI-inferred)
     ssh_private_key: Any = None
+    # The user ID applied to this file or process. (AI-inferred)
     uid: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_UserAccounts_WindowsUserConfiguration:
+    # Whether this task runs in a batch or interactive login session. (AI-inferred)
     login_mode: Any = None
 
 @dataclasses.dataclass
 class OpenapiPool_Properties_UserAccounts:
+    # Whether this task runs with standard user or elevated (admin) permissions. (AI-inferred)
     elevation_level: Any = None
+    # Configuration specific to a user account on a Linux compute node. (AI-inferred)
     linux_user_configuration: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The password credential used to authenticate. (AI-inferred)
     password: Any = None
+    # Configuration specific to a user account on a Windows compute node. (AI-inferred)
     windows_user_configuration: Any = None
 
 @dataclasses.dataclass

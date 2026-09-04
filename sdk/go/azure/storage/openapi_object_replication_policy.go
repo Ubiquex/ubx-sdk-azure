@@ -9,15 +9,21 @@ type OpenapiObjectReplicationPolicy_Properties_Metrics struct {
 }
 
 type OpenapiObjectReplicationPolicy_Properties_Rules_Filters struct {
+	// The earliest creation time this filter matches. (AI-inferred)
 	MinCreationTime any
-	PrefixMatch     any
+	// The blob name prefix(es) this rule matches. (AI-inferred)
+	PrefixMatch any
 }
 
 type OpenapiObjectReplicationPolicy_Properties_Rules struct {
+	// The target container objects are copied or moved into. (AI-inferred)
 	DestinationContainer any
-	Filters              any
-	RuleId               any
-	SourceContainer      any
+	// The condition(s) restricting which blob(s) this rule applies to. (AI-inferred)
+	Filters any
+	// A reference to the specific rule this applies to. (AI-inferred)
+	RuleId any
+	// The container objects are copied or moved from. (AI-inferred)
+	SourceContainer any
 }
 
 type OpenapiObjectReplicationPolicy_Properties struct {

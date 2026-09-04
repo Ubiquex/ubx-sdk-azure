@@ -19,8 +19,10 @@ type PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateLinkS
 
 type PrivateendpointconnectionsPrivateEndpointConnection_Properties struct {
 	// Group IDs.
-	GroupIds                          any
-	PrivateEndpoint                   any
+	GroupIds any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the SQL server -- whether it's been approved, rejected, or is still pending, and any action the owner still needs to take. (AI-inferred)
 	PrivateLinkServiceConnectionState any
 	// State of the private endpoint connection.
 	ProvisioningState any

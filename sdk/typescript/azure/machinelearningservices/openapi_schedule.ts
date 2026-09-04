@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiSchedule_Properties_Action {
+  /** The category of action this represents. (AI-inferred) */
   actionType: string | Computed<string>;
 }
 
@@ -12,16 +13,20 @@ export interface OpenapiSchedule_Properties_Trigger {
   startTime?: string | Computed<string>;
   /** Specifies time zone in which the schedule runs. TimeZone should follow Windows time zone format. Refer: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11 */
   timeZone?: string | Computed<string>;
+  /** The category of trigger this represents, e.g. recurring or cron. (AI-inferred) */
   triggerType: string | Computed<string>;
 }
 
 export interface OpenapiSchedule_Properties {
+  /** The action to perform. (AI-inferred) */
   action: OpenapiSchedule_Properties_Action | Computed<OpenapiSchedule_Properties_Action>;
   /** Display name of schedule. */
   displayName?: string | Computed<string>;
   /** Is the schedule enabled? */
   isEnabled?: boolean | Computed<boolean>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The condition or schedule causing this to run. (AI-inferred) */
   trigger: OpenapiSchedule_Properties_Trigger | Computed<OpenapiSchedule_Properties_Trigger>;
 }
 

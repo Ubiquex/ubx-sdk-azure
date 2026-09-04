@@ -13,7 +13,9 @@ class RaiToolLabel_Properties_AccountScope:
 
 @dataclasses.dataclass
 class RaiToolLabel_Properties_ProjectScopes:
+    # The label value(s) assigned during data collection. (AI-inferred)
     label_values: Any = None
+    # A reference to the AI Foundry project this applies to. (AI-inferred)
     project: Any = None
 
 @dataclasses.dataclass

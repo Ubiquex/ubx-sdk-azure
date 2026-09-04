@@ -4,7 +4,9 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPolicyAssignment_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,29 +22,41 @@ type OpenapiPolicyAssignment_Identity struct {
 }
 
 type OpenapiPolicyAssignment_Properties_NonComplianceMessages struct {
-	Message                     any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to a specific policy definition within this initiative. (AI-inferred)
 	PolicyDefinitionReferenceId any
 }
 
 type OpenapiPolicyAssignment_Properties_Overrides_Selectors struct {
-	In       any
-	Kind     any
-	NotIn    any
+	// Matches when the field's own value is one of this set. (AI-inferred)
+	In any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
+	// Matches when the field's own value is not one of this set. (AI-inferred)
+	NotIn any
+	// How far this operation has progressed. (AI-inferred)
 	Progress any
 }
 
 type OpenapiPolicyAssignment_Properties_Overrides struct {
-	Kind      any
+	// A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred)
+	Kind any
+	// Restricts which policy definition version(s) within a range this reference resolves to. (AI-inferred)
 	Selectors any
-	Value     any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiPolicyAssignment_Properties_Parameters struct {
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type OpenapiPolicyAssignment_Properties_ResourceSelectors struct {
-	Name      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Restricts which policy definition version(s) within a range this reference resolves to. (AI-inferred)
 	Selectors any
 }
 

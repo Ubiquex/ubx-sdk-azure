@@ -67,7 +67,9 @@ class Subscription_Properties_DeliveryConfiguration:
 
 @dataclasses.dataclass
 class Subscription_Properties_FiltersConfiguration_Filters:
+    # The key of this enrichment or attribute. (AI-inferred)
     key: Any = None
+    # How this condition's own operands are compared. (AI-inferred)
     operator_type: Any = None
 
 @dataclasses.dataclass

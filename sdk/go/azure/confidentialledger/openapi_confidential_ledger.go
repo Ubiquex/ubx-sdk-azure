@@ -4,13 +4,18 @@ package confidentialledger
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiConfidentialLedger_Properties_AadBasedSecurityPrincipals struct {
+	// The ledger role (e.g. Administrator, Contributor, Reader) granted to this Microsoft Entra ID principal. (AI-inferred)
 	LedgerRoleName any
-	PrincipalId    any
-	TenantId       any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
+	PrincipalId any
+	// Output only. The Microsoft Entra ID tenant this resource's own managed identity belongs to. (AI-inferred)
+	TenantId any
 }
 
 type OpenapiConfidentialLedger_Properties_CertBasedSecurityPrincipals struct {
-	Cert           any
+	// The client certificate identifying this security principal. (AI-inferred)
+	Cert any
+	// The ledger role (e.g. Administrator, Contributor, Reader) granted to this certificate-based principal. (AI-inferred)
 	LedgerRoleName any
 }
 

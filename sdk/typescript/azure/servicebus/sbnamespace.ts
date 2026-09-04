@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Sbnamespace_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,13 +20,18 @@ export interface Sbnamespace_Identity {
 }
 
 export interface Sbnamespace_Properties_Encryption_KeyVaultProperties_Identity {
+  /** A reference to the user-assigned managed identity used. (AI-inferred) */
   userAssignedIdentity?: string | Computed<string>;
 }
 
 export interface Sbnamespace_Properties_Encryption_KeyVaultProperties {
+  /** The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred) */
   identity?: Sbnamespace_Properties_Encryption_KeyVaultProperties_Identity | Computed<Sbnamespace_Properties_Encryption_KeyVaultProperties_Identity>;
+  /** The name of this shared access policy. (AI-inferred) */
   keyName?: string | Computed<string>;
+  /** The URI of the Key Vault holding this resource's own encryption key. (AI-inferred) */
   keyVaultUri?: string | Computed<string>;
+  /** The specific version of the Key Vault key used. (AI-inferred) */
   keyVersion?: string | Computed<string>;
 }
 
@@ -38,7 +45,9 @@ export interface Sbnamespace_Properties_Encryption {
 }
 
 export interface Sbnamespace_Properties_GeoDataReplication_Locations {
+  /** The Azure region this configuration applies to. (AI-inferred) */
   locationName?: string | Computed<string>;
+  /** Whether this replica is the primary or a secondary. (AI-inferred) */
   roleType?: string | Computed<string>;
 }
 
@@ -55,26 +64,35 @@ export interface Sbnamespace_Properties_PlatformCapabilities_ConfidentialCompute
 }
 
 export interface Sbnamespace_Properties_PlatformCapabilities {
+  /** Whether this namespace runs on confidential computing infrastructure. (AI-inferred) */
   confidentialCompute?: Sbnamespace_Properties_PlatformCapabilities_ConfidentialCompute | Computed<Sbnamespace_Properties_PlatformCapabilities_ConfidentialCompute>;
 }
 
 export interface Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface Sbnamespace_Properties_PrivateEndpointConnections_Properties {
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred) */
   privateLinkServiceConnectionState?: Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface Sbnamespace_Properties_PrivateEndpointConnections {
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: Sbnamespace_Properties_PrivateEndpointConnections_Properties | Computed<Sbnamespace_Properties_PrivateEndpointConnections_Properties>;
 }
 
@@ -95,6 +113,7 @@ export interface Sbnamespace_Properties {
   metricId?: string | Computed<string>;
   /** The minimum TLS version for the cluster to support, e.g. '1.3' */
   minimumTlsVersion?: string | Computed<string>;
+  /** The platform-level capability/capabilities this namespace supports. (AI-inferred) */
   platformCapabilities?: Sbnamespace_Properties_PlatformCapabilities | Computed<Sbnamespace_Properties_PlatformCapabilities>;
   /** The number of partitions of a Service Bus namespace. This property is only applicable to Premium SKU namespaces. The default value is 1 and possible values are 1, 2 and 4 */
   premiumMessagingPartitions?: number | Computed<number>;

@@ -2,10 +2,12 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ApimcontenttypesContentItemContract2Config {
+  /** This developer portal content item's own real, structured content payload. (AI-inferred) */
   properties?: unknown | Computed<unknown>;
 }
 
 export interface ApimcontenttypesContentItemContract2Attrs {
+  /** This developer portal content item's own real, structured content payload. (AI-inferred) */
   properties: unknown;
 }
 

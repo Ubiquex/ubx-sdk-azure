@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiSchedule_Properties_AdvancedSchedule_MonthlyOccurrences:
+    # The day-of-week or day-of-month component of this schedule. (AI-inferred)
     day: Any = None
+    # Which specific occurrence of the matching day within the schedule's own recurrence this applies to. (AI-inferred)
     occurrence: Any = None
 
 @dataclasses.dataclass

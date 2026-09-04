@@ -9,14 +9,20 @@ type Reservation_Properties_InstanceView_ReservationStateInfo struct {
 }
 
 type Reservation_Properties_InstanceView_Statuses struct {
-	Code          any
+	// The status code for the capacity reservation, indicating its current state (e.g., 'ProvisioningState/succeeded'). (AI-inferred)
+	Code any
+	// The human-readable, localized description of the status code associated with the capacity reservation instance. (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of the status, which can be 'Info', 'Warning', or 'Error'. (AI-inferred)
+	Level any
+	// The human-readable message that provides additional details about the status condition. (AI-inferred)
+	Message any
+	// The timestamp indicating when the status was observed. (AI-inferred)
+	Time any
 }
 
 type Reservation_Properties_InstanceView_UtilizationInfo_VirtualMachinesAllocated struct {
+	// The resource ID of a virtual machine that is allocated to this capacity reservation. (AI-inferred)
 	Id any
 }
 

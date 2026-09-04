@@ -6,6 +6,7 @@ export interface VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent_
   destinationIps: string[] | Computed<string[]>;
   /** The destination ports of the traffic. */
   destinationPorts: string[] | Computed<string[]>;
+  /** The network protocol(s) this applies to. (AI-inferred) */
   protocols: string[] | Computed<string[]>;
   /** List of source IP addresses of the traffic.. */
   sourceIps: string[] | Computed<string[]>;
@@ -14,6 +15,7 @@ export interface VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent_
 }
 
 export interface VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent {
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
   /** Destination resource id of the intent. */
   destinationResourceId: string | Computed<string>;
@@ -24,8 +26,11 @@ export interface VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent 
 }
 
 export interface VirtualnetworkReachabilityAnalysisRun_Properties {
+  /** The outcome of analyzing this traffic pattern. (AI-inferred) */
   analysisResult?: string | Computed<string>;
+  /** A user-supplied, human-readable note explaining this resource's own purpose. (AI-inferred) */
   description?: string | Computed<string>;
+  /** A human-readable description of the error. (AI-inferred) */
   errorMessage?: string | Computed<string>;
   /** Intent information. */
   intentContent?: VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent | Computed<VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent>;

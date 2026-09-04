@@ -23,9 +23,13 @@ class OpenapiBackupItem_Properties_BackupSchedule:
 
 @dataclasses.dataclass
 class OpenapiBackupItem_Properties_Databases:
+    # The connection string used to reach this resource. (AI-inferred)
     connection_string: Any = None
+    # The name of the app setting or connection string this applies to. (AI-inferred)
     connection_string_name: Any = None
+    # The kind of database this connection targets, e.g. `SQLAzure` or `MySql`. (AI-inferred)
     database_type: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
 
 @dataclasses.dataclass

@@ -2,12 +2,16 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface VirtualwanVpnServerConfigurationPolicyGroup_Properties_P2SconnectionConfigurations {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface VirtualwanVpnServerConfigurationPolicyGroup_Properties_PolicyMembers {
+  /** The kind of attribute this policy rule matches on. (AI-inferred) */
   attributeType?: string | Computed<string>;
+  /** The value this policy rule matches against. (AI-inferred) */
   attributeValue?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 

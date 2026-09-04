@@ -4,9 +4,12 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanRoutingIntent_Properties_RoutingPolicies struct {
+	// The destination(s) this rule applies to. (AI-inferred)
 	Destinations any
-	Name         any
-	NextHop      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Where traffic matching this route is sent next. (AI-inferred)
+	NextHop any
 }
 
 type VirtualwanRoutingIntent_Properties struct {

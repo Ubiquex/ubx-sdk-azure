@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DbOpenapiMongoDbcollectionGetResults_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -29,28 +31,37 @@ class DbOpenapiMongoDbcollectionGetResults_Properties_Options_AutoscaleSettings:
 
 @dataclasses.dataclass
 class DbOpenapiMongoDbcollectionGetResults_Properties_Options:
+    # Configuration for automatically scaling throughput within a defined maximum. (AI-inferred)
     autoscale_settings: Any = None
     # Request Units per second. For example, "throughput": 10000.
     throughput: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Key:
+    # The access key(s) for this account. (AI-inferred)
     keys: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Options:
+    # How long, in seconds, an item lives before automatically expiring. (AI-inferred)
     expire_after_seconds: Any = None
+    # Whether this constraint enforces uniqueness. (AI-inferred)
     unique: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes:
+    # The key of this key/value pair. (AI-inferred)
     key: Any = None
+    # Additional option(s) configuring this request or resource. (AI-inferred)
     options: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiMongoDbcollectionGetResults_Properties_Resource_RestoreParameters:
+    # A reference to the source account this account is restored from. (AI-inferred)
     restore_source: Any = None
+    # The point in time this account is restored to, in UTC. (AI-inferred)
     restore_timestamp_in_utc: Any = None
+    # Whether time-to-live expiration is disabled on the restored data. (AI-inferred)
     restore_with_ttl_disabled: Any = None
 
 @dataclasses.dataclass

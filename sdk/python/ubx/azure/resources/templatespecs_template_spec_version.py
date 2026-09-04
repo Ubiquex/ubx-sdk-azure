@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class TemplatespecsTemplateSpecVersion_Properties_LinkedTemplates:
+    # The relative path identifying this linked template within the parent template's own deployment. (AI-inferred)
     path: Any = None
+    # The linked ARM template's own JSON content. (AI-inferred)
     template: Any = None
 
 @dataclasses.dataclass

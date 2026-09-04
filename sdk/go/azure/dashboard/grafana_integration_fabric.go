@@ -6,7 +6,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type GrafanaIntegrationFabric_Properties struct {
 	// The resource Id of the Azure resource which is used to configure Grafana data source. E.g., an Azure Monitor Workspace, an Azure Data Explorer cluster, etc.
 	DataSourceResourceId any
-	ProvisioningState    any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 	// A list of integration scenarios covered by this integration fabric
 	Scenarios any
 	// The resource Id of the Azure resource being integrated with Azure Managed Grafana. E.g., an Azure Kubernetes Service cluster.
@@ -22,7 +23,8 @@ var GrafanaIntegrationFabric_PropertiesFields = ubx.FieldMap{
 
 type GrafanaIntegrationFabricConfig struct {
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// Resource tags.
 	Tags any
@@ -30,7 +32,8 @@ type GrafanaIntegrationFabricConfig struct {
 
 type GrafanaIntegrationFabricAttrs struct {
 	// The geo-location where the resource lives
-	Location   any
+	Location any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// Resource tags.
 	Tags any

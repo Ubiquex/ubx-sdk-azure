@@ -8,24 +8,34 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddress:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkBastionHost_Properties_IpConfigurations_Properties:
+    # Whether `private_ipaddress` is `Static` (fixed, caller-assigned) or `Dynamic` (assigned automatically from the subnet's own range). (AI-inferred)
     private_ipallocation_method: Any = None
+    # The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
     provisioning_state: Any = None
+    # A reference to the Public IP Address resource associated with this IP configuration. (AI-inferred)
     public_ipaddress: Any = None
+    # A reference to the subnet this resource is associated with. (AI-inferred)
     subnet: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkBastionHost_Properties_IpConfigurations:
+    # A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
     etag: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
     properties: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkBastionHost_Properties_NetworkAcls_IpRules:
+    # An IP address range in CIDR notation, e.g. `10.0.0.0/24`. (AI-inferred)
     address_prefix: Any = None
 
 @dataclasses.dataclass
@@ -55,6 +65,7 @@ class VirtualnetworkBastionHost_Properties:
     enable_tunneling: Any = None
     # IP configuration of the Bastion Host resource.
     ip_configurations: Any = None
+    # Network access rule(s) restricting which network(s) can reach this resource. (AI-inferred)
     network_acls: Any = None
     # Provisioning states of a resource.
     provisioning_state: Any = None

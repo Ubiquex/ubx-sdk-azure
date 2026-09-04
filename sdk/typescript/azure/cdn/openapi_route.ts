@@ -18,7 +18,9 @@ export interface OpenapiRoute_Properties_CacheConfiguration {
 }
 
 export interface OpenapiRoute_Properties_CustomDomains {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** Whether this custom domain is currently active and serving traffic. (AI-inferred) */
   isActive?: boolean | Computed<boolean>;
 }
 
@@ -32,6 +34,7 @@ export interface OpenapiRoute_Properties {
   cacheConfiguration?: OpenapiRoute_Properties_CacheConfiguration | Computed<OpenapiRoute_Properties_CacheConfiguration>;
   /** Domains referenced by this endpoint. */
   customDomains?: OpenapiRoute_Properties_CustomDomains[] | Computed<OpenapiRoute_Properties_CustomDomains[]>;
+  /** The current deployment status of this configuration. (AI-inferred) */
   deploymentStatus?: string | Computed<string>;
   /** Whether to enable use of this rule. Permitted values are 'Enabled' or 'Disabled' */
   enabledState?: string | Computed<string>;

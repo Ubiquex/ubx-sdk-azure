@@ -15,6 +15,7 @@ export interface GatewayResource_Properties_ApiMetadataProperties {
 }
 
 export interface GatewayResource_Properties_Apms {
+  /** A reference to the resource this applies to. (AI-inferred) */
   resourceId?: string | Computed<string>;
 }
 
@@ -50,7 +51,9 @@ export interface GatewayResource_Properties_EnvironmentVariables {
 }
 
 export interface GatewayResource_Properties_Instances {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 

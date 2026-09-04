@@ -4,7 +4,9 @@ package hardwaresecuritymodules
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRestoreResult_Properties_Error_AdditionalInfo struct {
+	// Additional detail about this result. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
@@ -12,11 +14,16 @@ type OpenapiRestoreResult_Properties_Error_Details_Details struct {
 }
 
 type OpenapiRestoreResult_Properties_Error_Details struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type OpenapiRestoreResult_Properties_Error struct {

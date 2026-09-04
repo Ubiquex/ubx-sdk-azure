@@ -91,30 +91,46 @@ export interface DtlLabVirtualMachine_Properties_ArtifactDeploymentStatus {
 }
 
 export interface DtlLabVirtualMachine_Properties_Artifacts_Parameters {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface DtlLabVirtualMachine_Properties_Artifacts {
+  /** A reference to the artifact this applies to. (AI-inferred) */
   artifactId?: string | Computed<string>;
+  /** A human-readable title for this artifact. (AI-inferred) */
   artifactTitle?: string | Computed<string>;
+  /** A human-readable message describing this deployment's own current status. (AI-inferred) */
   deploymentStatusMessage?: string | Computed<string>;
+  /** When this artifact was installed. (AI-inferred) */
   installTime?: string | Computed<string>;
+  /** The parameter value(s) supplied to this artifact or template. (AI-inferred) */
   parameters?: DtlLabVirtualMachine_Properties_Artifacts_Parameters[] | Computed<DtlLabVirtualMachine_Properties_Artifacts_Parameters[]>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** A human-readable message describing this VM extension's own current status. (AI-inferred) */
   vmExtensionStatusMessage?: string | Computed<string>;
 }
 
 export interface DtlLabVirtualMachine_Properties_ComputeVm_DataDisks {
+  /** This disk's own size, in gibibytes. (AI-inferred) */
   diskSizeGiB?: number | Computed<number>;
+  /** This disk's own storage URI. (AI-inferred) */
   diskUri?: string | Computed<string>;
+  /** A reference to the underlying managed disk. (AI-inferred) */
   managedDiskId?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
 }
 
 export interface DtlLabVirtualMachine_Properties_ComputeVm_Statuses {
+  /** A machine-readable status or error code. (AI-inferred) */
   code?: string | Computed<string>;
+  /** A human-readable summary of this status. (AI-inferred) */
   displayStatus?: string | Computed<string>;
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
 }
 
@@ -136,14 +152,20 @@ export interface DtlLabVirtualMachine_Properties_ComputeVm {
 }
 
 export interface DtlLabVirtualMachine_Properties_DataDiskParameters_AttachNewDataDiskOptions {
+  /** The name of this disk. (AI-inferred) */
   diskName?: string | Computed<string>;
+  /** This disk's own size, in gibibytes. (AI-inferred) */
   diskSizeGiB?: number | Computed<number>;
+  /** The type of storage this disk uses, e.g. `Standard` or `Premium`. (AI-inferred) */
   diskType?: string | Computed<string>;
 }
 
 export interface DtlLabVirtualMachine_Properties_DataDiskParameters {
+  /** Configuration for a new data disk to attach when creating this environment. (AI-inferred) */
   attachNewDataDiskOptions?: DtlLabVirtualMachine_Properties_DataDiskParameters_AttachNewDataDiskOptions | Computed<DtlLabVirtualMachine_Properties_DataDiskParameters_AttachNewDataDiskOptions>;
+  /** A reference to an existing lab disk to attach, rather than creating a new one. (AI-inferred) */
   existingLabDiskId?: string | Computed<string>;
+  /** The disk caching policy, e.g. `None`, `ReadOnly`, or `ReadWrite`. (AI-inferred) */
   hostCaching?: string | Computed<string>;
 }
 
@@ -161,8 +183,11 @@ export interface DtlLabVirtualMachine_Properties_GalleryImageReference {
 }
 
 export interface DtlLabVirtualMachine_Properties_NetworkInterface_SharedPublicIpAddressConfiguration_InboundNatRules {
+  /** The backend port traffic is forwarded to. (AI-inferred) */
   backendPort?: number | Computed<number>;
+  /** The public-facing port this rule applies to. (AI-inferred) */
   frontendPort?: number | Computed<number>;
+  /** The transport protocol this rule applies to, e.g. `Tcp` or `Udp`. (AI-inferred) */
   transportProtocol?: string | Computed<string>;
 }
 
@@ -193,20 +218,32 @@ export interface DtlLabVirtualMachine_Properties_NetworkInterface {
 }
 
 export interface DtlLabVirtualMachine_Properties_ScheduleParameters_Properties {
+  /** A schedule that recurs once per day, at a specific time. (AI-inferred) */
   dailyRecurrence?: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_DailyRecurrence | Computed<DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_DailyRecurrence>;
+  /** A schedule that recurs at a fixed interval, in minutes, throughout the day. (AI-inferred) */
   hourlyRecurrence?: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_HourlyRecurrence | Computed<DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_HourlyRecurrence>;
+  /** Configuration for a notification sent ahead of this schedule taking effect. (AI-inferred) */
   notificationSettings?: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettings | Computed<DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettings>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** A reference to the resource this applies to. (AI-inferred) */
   targetResourceId?: string | Computed<string>;
+  /** The type of task this applies to. (AI-inferred) */
   taskType?: string | Computed<string>;
+  /** The time zone this schedule's own times are interpreted in, e.g. `Pacific Standard Time`. (AI-inferred) */
   timeZoneId?: string | Computed<string>;
+  /** A schedule that recurs on specific day(s) of the week, at a specific time. (AI-inferred) */
   weeklyRecurrence?: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrence | Computed<DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrence>;
 }
 
 export interface DtlLabVirtualMachine_Properties_ScheduleParameters {
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: DtlLabVirtualMachine_Properties_ScheduleParameters_Properties | Computed<DtlLabVirtualMachine_Properties_ScheduleParameters_Properties>;
+  /** User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred) */
   tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 

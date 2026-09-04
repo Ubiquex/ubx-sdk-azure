@@ -4,38 +4,61 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciUpdate_Properties_ComponentVersions struct {
+	// When this resource was last updated. (AI-inferred)
 	LastUpdated any
+	// The category of software package this represents. (AI-inferred)
 	PackageType any
-	Version     any
+	// The version identifier this applies to. (AI-inferred)
+	Version any
 }
 
 type HciUpdate_Properties_HealthCheckResult_Tags struct {
-	Key   any
+	// The key of this attribute or label. (AI-inferred)
+	Key any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
 type HciUpdate_Properties_HealthCheckResult struct {
-	AdditionalData     any
-	Description        any
-	DisplayName        any
-	HealthCheckSource  any
-	HealthCheckTags    any
-	Name               any
-	Remediation        any
-	Severity           any
-	Status             any
-	Tags               any
-	TargetResourceId   any
+	// Additional, caller-defined data attached to this resource. (AI-inferred)
+	AdditionalData any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// A human-readable name for this resource. (AI-inferred)
+	DisplayName any
+	// The system that produced this health check result. (AI-inferred)
+	HealthCheckSource any
+	// Label(s) categorizing this health check. (AI-inferred)
+	HealthCheckTags any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// Guidance for resolving this issue. (AI-inferred)
+	Remediation any
+	// How serious this event is. (AI-inferred)
+	Severity any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
+	Tags any
+	// A reference to the resource this applies to. (AI-inferred)
+	TargetResourceId any
+	// The name of the resource this applies to. (AI-inferred)
 	TargetResourceName any
+	// The category of resource this applies to. (AI-inferred)
 	TargetResourceType any
-	Timestamp          any
-	Title              any
+	// When this event occurred. (AI-inferred)
+	Timestamp any
+	// A human-readable title for this item. (AI-inferred)
+	Title any
 }
 
 type HciUpdate_Properties_Prerequisites struct {
+	// The name of this software package. (AI-inferred)
 	PackageName any
-	UpdateType  any
-	Version     any
+	// The category of update this represents. (AI-inferred)
+	UpdateType any
+	// The version identifier this applies to. (AI-inferred)
+	Version any
 }
 
 type HciUpdate_Properties_UpdateStateProperties struct {

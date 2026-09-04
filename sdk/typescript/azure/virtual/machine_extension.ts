@@ -2,10 +2,15 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface MachineExtension_Properties_InstanceView_Statuses {
+  /** The machine-readable status code for the extension instance view status, such as 'ProvisioningState/succeeded' or 'ProvisioningState/failed'. (AI-inferred) */
   code?: string | Computed<string>;
+  /** The localized, human-readable status message displayed for the extension instance view status. (AI-inferred) */
   displayStatus?: string | Computed<string>;
+  /** The severity level of the status, indicating whether it is informational, a warning, or an error. Allowed values: Info, Warning, Error. (AI-inferred) */
   level?: string | Computed<string>;
+  /** A human-readable message providing additional details about the extension's status, as part of the instance view statuses. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The time at which the status was recorded, typically in ISO 8601 format. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
@@ -30,6 +35,7 @@ export interface MachineExtension_Properties_ProtectedSettingsFromKeyVault_Sourc
 export interface MachineExtension_Properties_ProtectedSettingsFromKeyVault {
   /** The URL referencing a secret in a Key Vault. */
   secretUrl: string | Computed<string>;
+  /** The Key Vault that holds the protected settings. This is a reference to the vault (e.g., its resource ID) and is required when supplying protected settings via a Key Vault. (AI-inferred) */
   sourceVault: MachineExtension_Properties_ProtectedSettingsFromKeyVault_SourceVault | Computed<MachineExtension_Properties_ProtectedSettingsFromKeyVault_SourceVault>;
 }
 

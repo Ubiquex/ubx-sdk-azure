@@ -13,14 +13,19 @@ type OpenapiFileShare_Properties_FileSharePaidBursting struct {
 }
 
 type OpenapiFileShare_Properties_SignedIdentifiers_AccessPolicy struct {
+	// When this resource or grant expires. (AI-inferred)
 	ExpiryTime any
+	// The access permission granted, e.g. read or write. (AI-inferred)
 	Permission any
-	StartTime  any
+	// When this event or window started. (AI-inferred)
+	StartTime any
 }
 
 type OpenapiFileShare_Properties_SignedIdentifiers struct {
+	// A stored access policy defining shared permissions and validity period for associated shared access signatures. (AI-inferred)
 	AccessPolicy any
-	Id           any
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
+	Id any
 }
 
 type OpenapiFileShare_Properties struct {

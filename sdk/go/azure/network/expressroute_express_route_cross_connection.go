@@ -9,51 +9,85 @@ type ExpressrouteExpressRouteCrossConnection_Properties_ExpressRouteCircuit stru
 }
 
 type ExpressrouteExpressRouteCrossConnection_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo struct {
-	Prefix          any
-	Signature       any
-	ValidationId    any
+	// An IP address prefix, in CIDR notation. (AI-inferred)
+	Prefix any
+	// A cryptographic signature validating this resource's own configuration or authorization. (AI-inferred)
+	Signature any
+	// An identifier for a pending validation request on this resource, e.g. an ExpressRoute prefix ownership check. (AI-inferred)
+	ValidationId any
+	// The current outcome of validating this resource's own configuration, e.g. whether an advertised prefix passed ownership verification. (AI-inferred)
 	ValidationState any
 }
 
 type ExpressrouteExpressRouteCrossConnection_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig struct {
-	AdvertisedCommunities         any
-	AdvertisedPublicPrefixInfo    any
-	AdvertisedPublicPrefixes      any
+	// The BGP community value(s) attached to routes this peering advertises. (AI-inferred)
+	AdvertisedCommunities any
+	// Output only. Per-prefix validation detail for each of this peering's own `advertised_public_prefixes`. (AI-inferred)
+	AdvertisedPublicPrefixInfo any
+	// The public IP address prefix(es) this Microsoft Peering advertises, e.g. `123.1.0.0/24` -- ownership of each is verified before routes go live. (AI-inferred)
+	AdvertisedPublicPrefixes any
+	// Output only. Whether `advertised_public_prefixes` has passed ownership validation, e.g. `Configured` or `ValidationNeeded`. (AI-inferred)
 	AdvertisedPublicPrefixesState any
-	CustomerAsn                   any
-	LegacyMode                    any
-	RoutingRegistryName           any
+	// The customer's own public BGP Autonomous System Number, required for Microsoft Peering. (AI-inferred)
+	CustomerAsn any
+	// Whether this ExpressRoute circuit uses the older, pre-IPv6-split routing configuration for Microsoft Peering. (AI-inferred)
+	LegacyMode any
+	// The Internet routing registry (e.g. `ARIN`, `RIPE`) `advertised_public_prefixes` ownership is validated against. (AI-inferred)
+	RoutingRegistryName any
 }
 
 type ExpressrouteExpressRouteCrossConnection_Properties_Peerings_Properties_Ipv6PeeringConfig struct {
-	MicrosoftPeeringConfig     any
-	PrimaryPeerAddressPrefix   any
-	RouteFilter                any
+	// Configuration for this ExpressRoute circuit's own Microsoft Peering -- routes to Microsoft SaaS services (e.g. Microsoft 365) advertised over the circuit. (AI-inferred)
+	MicrosoftPeeringConfig any
+	// The `/30` subnet used for the primary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred)
+	PrimaryPeerAddressPrefix any
+	// A reference to the route filter restricting which BGP routes are advertised over this Microsoft Peering. (AI-inferred)
+	RouteFilter any
+	// The `/30` subnet used for the secondary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred)
 	SecondaryPeerAddressPrefix any
-	State                      any
+	// The current operational state of this resource. (AI-inferred)
+	State any
 }
 
 type ExpressrouteExpressRouteCrossConnection_Properties_Peerings_Properties struct {
-	AzureAsn                   any
-	GatewayManagerEtag         any
-	Ipv6PeeringConfig          any
-	LastModifiedBy             any
-	MicrosoftPeeringConfig     any
-	PeerAsn                    any
-	PeeringType                any
-	PrimaryAzurePort           any
-	PrimaryPeerAddressPrefix   any
-	ProvisioningState          any
-	SecondaryAzurePort         any
+	// The BGP Autonomous System Number Microsoft's own edge uses for this peering. (AI-inferred)
+	AzureAsn any
+	// A concurrency-control value set by the gateway manager for this resource. (AI-inferred)
+	GatewayManagerEtag any
+	// IPv6-specific configuration for this ExpressRoute peering. (AI-inferred)
+	Ipv6PeeringConfig any
+	// The identity that last modified this resource. (AI-inferred)
+	LastModifiedBy any
+	// Configuration for this ExpressRoute circuit's own Microsoft Peering -- routes to Microsoft SaaS services (e.g. Microsoft 365) advertised over the circuit. (AI-inferred)
+	MicrosoftPeeringConfig any
+	// The BGP Autonomous System Number of the peer this session is established with. (AI-inferred)
+	PeerAsn any
+	// The kind of ExpressRoute peering this represents, e.g. `AzurePrivatePeering` or `MicrosoftPeering`. (AI-inferred)
+	PeeringType any
+	// The name of the primary Microsoft Enterprise Edge router port this circuit connects to. (AI-inferred)
+	PrimaryAzurePort any
+	// The `/30` subnet used for the primary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred)
+	PrimaryPeerAddressPrefix any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The name of the secondary Microsoft Enterprise Edge router port this circuit connects to. (AI-inferred)
+	SecondaryAzurePort any
+	// The `/30` subnet used for the secondary (redundant) link's own point-to-point connection between the customer and Microsoft edge routers. (AI-inferred)
 	SecondaryPeerAddressPrefix any
-	SharedKey                  any
-	State                      any
-	VlanId                     any
+	// A pre-shared key used to establish this connection. (AI-inferred)
+	SharedKey any
+	// The current operational state of this resource. (AI-inferred)
+	State any
+	// The VLAN identifier assigned to this circuit. (AI-inferred)
+	VlanId any
 }
 
 type ExpressrouteExpressRouteCrossConnection_Properties_Peerings struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

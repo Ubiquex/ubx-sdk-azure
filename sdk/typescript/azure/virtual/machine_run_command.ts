@@ -9,10 +9,15 @@ export interface MachineRunCommand_Properties_ErrorBlobManagedIdentity {
 }
 
 export interface MachineRunCommand_Properties_InstanceView_Statuses {
+  /** The status code of the run command instance view, representing the current state (e.g., 'ProvisioningState/succeeded'). (AI-inferred) */
   code?: string | Computed<string>;
+  /** The localized, human-readable status message for the run command instance, providing a user-friendly description of the current state (e.g., 'Provisioning succeeded' or 'Failed'). (AI-inferred) */
   displayStatus?: string | Computed<string>;
+  /** The severity level of the status, one of Info, Warning, or Error. (AI-inferred) */
   level?: string | Computed<string>;
+  /** The human-readable status message associated with the instance view of the virtual machine run command. (AI-inferred) */
   message?: string | Computed<string>;
+  /** The timestamp when the status was observed, typically in ISO 8601 format. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
@@ -36,7 +41,9 @@ export interface MachineRunCommand_Properties_InstanceView {
 }
 
 export interface MachineRunCommand_Properties_Parameters {
+  /** The name of the parameter to be passed to the run command. This name is used as the key for the parameter value. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The value of a parameter used by the virtual machine run command. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

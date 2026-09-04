@@ -18,7 +18,9 @@ export interface PrivateendpointconnectionsPrivateEndpointConnection_Properties_
 export interface PrivateendpointconnectionsPrivateEndpointConnection_Properties {
   /** Group IDs. */
   groupIds?: string[] | Computed<string[]>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateEndpoint | Computed<PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the SQL server -- whether it's been approved, rejected, or is still pending, and any action the owner still needs to take. (AI-inferred) */
   privateLinkServiceConnectionState?: PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState | Computed<PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState>;
   /** State of the private endpoint connection. */
   provisioningState?: string | Computed<string>;

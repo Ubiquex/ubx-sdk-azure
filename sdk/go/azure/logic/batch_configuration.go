@@ -4,7 +4,9 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BatchConfiguration_Properties_ReleaseCriteria_Recurrence_Schedule_MonthlyOccurrences struct {
-	Day        any
+	// The day-of-month component of a date. (AI-inferred)
+	Day any
+	// How many times this element is permitted to occur. (AI-inferred)
 	Occurrence any
 }
 

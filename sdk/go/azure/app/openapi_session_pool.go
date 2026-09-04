@@ -4,7 +4,9 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSessionPool_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID used to authenticate. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -20,22 +22,33 @@ type OpenapiSessionPool_Identity struct {
 }
 
 type OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Env struct {
-	Name      any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// A reference to the secret holding this value. (AI-inferred)
 	SecretRef any
-	Value     any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Resources struct {
-	Cpu    any
+	// The number of CPU core(s) allocated. (AI-inferred)
+	Cpu any
+	// The amount of memory allocated. (AI-inferred)
 	Memory any
 }
 
 type OpenapiSessionPool_Properties_CustomContainerTemplate_Containers struct {
-	Args      any
-	Command   any
-	Env       any
-	Image     any
-	Name      any
+	// The argument(s) passed to the container's own command. (AI-inferred)
+	Args any
+	// The container entrypoint command, overriding the image's own default. (AI-inferred)
+	Command any
+	// Environment variable(s) set in the container. (AI-inferred)
+	Env any
+	// The container image reference to run. (AI-inferred)
+	Image any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The compute resource requirement(s) (CPU, memory) for this container. (AI-inferred)
 	Resources any
 }
 
@@ -79,7 +92,9 @@ type OpenapiSessionPool_Properties_DynamicPoolConfiguration struct {
 }
 
 type OpenapiSessionPool_Properties_ManagedIdentitySettings struct {
-	Identity  any
+	// The managed identity (or identities) this resource uses to authenticate to other Azure services. (AI-inferred)
+	Identity any
+	// Hook(s) run at specific points in this container's own lifecycle. (AI-inferred)
 	Lifecycle any
 }
 
@@ -91,7 +106,9 @@ type OpenapiSessionPool_Properties_ScaleConfiguration struct {
 }
 
 type OpenapiSessionPool_Properties_Secrets struct {
-	Name  any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 

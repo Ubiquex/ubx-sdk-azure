@@ -8,37 +8,60 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class HciUpdate_Properties_ComponentVersions:
+    # When this resource was last updated. (AI-inferred)
     last_updated: Any = None
+    # The category of software package this represents. (AI-inferred)
     package_type: Any = None
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass
 class HciUpdate_Properties_HealthCheckResult_Tags:
+    # The key of this attribute or label. (AI-inferred)
     key: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
 class HciUpdate_Properties_HealthCheckResult:
+    # Additional, caller-defined data attached to this resource. (AI-inferred)
     additional_data: Any = None
+    # A human-readable description of this resource. (AI-inferred)
     description: Any = None
+    # A human-readable name for this resource. (AI-inferred)
     display_name: Any = None
+    # The system that produced this health check result. (AI-inferred)
     health_check_source: Any = None
+    # Label(s) categorizing this health check. (AI-inferred)
     health_check_tags: Any = None
+    # The resource's own name, unique within its parent scope. (AI-inferred)
     name: Any = None
+    # Guidance for resolving this issue. (AI-inferred)
     remediation: Any = None
+    # How serious this event is. (AI-inferred)
     severity: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # User-defined key/value tags on this resource, usable for organizing and filtering resources across the subscription. (AI-inferred)
     tags: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     target_resource_id: Any = None
+    # The name of the resource this applies to. (AI-inferred)
     target_resource_name: Any = None
+    # The category of resource this applies to. (AI-inferred)
     target_resource_type: Any = None
+    # When this event occurred. (AI-inferred)
     timestamp: Any = None
+    # A human-readable title for this item. (AI-inferred)
     title: Any = None
 
 @dataclasses.dataclass
 class HciUpdate_Properties_Prerequisites:
+    # The name of this software package. (AI-inferred)
     package_name: Any = None
+    # The category of update this represents. (AI-inferred)
     update_type: Any = None
+    # The version identifier this applies to. (AI-inferred)
     version: Any = None
 
 @dataclasses.dataclass

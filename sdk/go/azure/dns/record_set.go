@@ -4,16 +4,21 @@ package dns
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RecordSet_Properties_Aaaarecords struct {
+	// An IPv6 address. (AI-inferred)
 	Ipv6Address any
 }
 
 type RecordSet_Properties_Arecords struct {
+	// An IPv4 address. (AI-inferred)
 	Ipv4Address any
 }
 
 type RecordSet_Properties_CaaRecords struct {
+	// Bit flags controlling how this CAA record is interpreted. (AI-inferred)
 	Flags any
-	Tag   any
+	// The property this CAA record constrains, e.g. `issue` or `issuewild`. (AI-inferred)
+	Tag any
+	// The literal value of this record. (AI-inferred)
 	Value any
 }
 
@@ -23,15 +28,19 @@ type RecordSet_Properties_Cnamerecord struct {
 }
 
 type RecordSet_Properties_Mxrecords struct {
-	Exchange   any
+	// The mail server hostname this MX record points to. (AI-inferred)
+	Exchange any
+	// The relative preference of this record -- lower values are preferred first. (AI-inferred)
 	Preference any
 }
 
 type RecordSet_Properties_Nsrecords struct {
+	// The name server hostname this NS record points to. (AI-inferred)
 	Nsdname any
 }
 
 type RecordSet_Properties_Ptrrecords struct {
+	// The hostname this PTR record points to. (AI-inferred)
 	Ptrdname any
 }
 
@@ -53,10 +62,14 @@ type RecordSet_Properties_Soarecord struct {
 }
 
 type RecordSet_Properties_Srvrecords struct {
-	Port     any
+	// The port this SRV record points to. (AI-inferred)
+	Port any
+	// The relative priority of this record -- lower values are preferred first. (AI-inferred)
 	Priority any
-	Target   any
-	Weight   any
+	// The hostname this record points to. (AI-inferred)
+	Target any
+	// The relative weight used to distribute traffic among records sharing the same priority. (AI-inferred)
+	Weight any
 }
 
 type RecordSet_Properties_TargetResource struct {
@@ -65,6 +78,7 @@ type RecordSet_Properties_TargetResource struct {
 }
 
 type RecordSet_Properties_Txtrecords struct {
+	// The literal value of this record. (AI-inferred)
 	Value any
 }
 

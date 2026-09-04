@@ -11,17 +11,23 @@ export interface InterconnectgroupInterconnectGroup_Properties_SubgroupProfile {
 }
 
 export interface InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlock {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties {
+  /** The interconnect address block allocated to this subgroup. (AI-inferred) */
   interconnectBlock?: InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlock | Computed<InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlock>;
+  /** A unique identifier for this subgroup within its own containing interconnect group. (AI-inferred) */
   internalSubgroupId?: string | Computed<string>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The virtual machine(s) belonging to this subgroup. (AI-inferred) */
   virtualMachines?: InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlock[] | Computed<InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlock[]>;
 }
 
 export interface InterconnectgroupInterconnectGroup_Properties_Subgroups {
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties | Computed<InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties>;
 }
 

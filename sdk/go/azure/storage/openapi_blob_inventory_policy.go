@@ -4,32 +4,49 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters_CreationTime struct {
+	// The number of most recent day(s) this report or query covers. (AI-inferred)
 	LastNdays any
 }
 
 type OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters struct {
-	BlobTypes           any
-	CreationTime        any
-	ExcludePrefix       any
+	// The blob type(s) (e.g. block blob) this rule applies to. (AI-inferred)
+	BlobTypes any
+	// When this resource was created. (AI-inferred)
+	CreationTime any
+	// The blob name prefix(es) excluded from this rule. (AI-inferred)
+	ExcludePrefix any
+	// Whether this rule also applies to previous, versioned copies of a blob. (AI-inferred)
 	IncludeBlobVersions any
-	IncludeDeleted      any
-	IncludeSnapshots    any
-	PrefixMatch         any
+	// Whether soft-deleted items are included. (AI-inferred)
+	IncludeDeleted any
+	// Whether this rule also applies to a blob's own snapshots. (AI-inferred)
+	IncludeSnapshots any
+	// The blob name prefix(es) this rule matches. (AI-inferred)
+	PrefixMatch any
 }
 
 type OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition struct {
-	Filters      any
-	Format       any
-	ObjectType   any
-	Schedule     any
+	// The condition(s) restricting which blob(s) this rule applies to. (AI-inferred)
+	Filters any
+	// The format this data is expressed in. (AI-inferred)
+	Format any
+	// The category of Microsoft Entra ID object this permission applies to, e.g. user or group. (AI-inferred)
+	ObjectType any
+	// The recurrence schedule this applies to. (AI-inferred)
+	Schedule any
+	// The field(s) making up this schema. (AI-inferred)
 	SchemaFields any
 }
 
 type OpenapiBlobInventoryPolicy_Properties_Policy_Rules struct {
-	Definition  any
+	// The schema or configuration defining this rule. (AI-inferred)
+	Definition any
+	// Where this data is sent. (AI-inferred)
 	Destination any
-	Enabled     any
-	Name        any
+	// Whether this feature is turned on. (AI-inferred)
+	Enabled any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type OpenapiBlobInventoryPolicy_Properties_Policy struct {

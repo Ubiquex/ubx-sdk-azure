@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiLicense_Properties_LicenseDetails_VolumeLicenseDetails {
+  /** The invoice number associated with this volume license. (AI-inferred) */
   invoiceId?: string | Computed<string>;
+  /** The program year this Software Assurance/subscription benefit applies to. (AI-inferred) */
   programYear?: string | Computed<string>;
 }
 

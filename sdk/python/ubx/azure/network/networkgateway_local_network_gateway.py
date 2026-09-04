@@ -8,9 +8,13 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class NetworkgatewayLocalNetworkGateway_Properties_BgpSettings_BgpPeeringAddresses:
+    # Caller-chosen BGP peering IP addresses to use for this connection, instead of Azure's own auto-allocated defaults. (AI-inferred)
     custom_bgp_ip_addresses: Any = None
+    # Output only. The BGP peering IP address(es) Azure auto-allocated for this connection. (AI-inferred)
     default_bgp_ip_addresses: Any = None
+    # A reference to the IP configuration this applies to. (AI-inferred)
     ipconfiguration_id: Any = None
+    # Output only. The public IP address(es) of this VPN gateway's own tunnel endpoint(s). (AI-inferred)
     tunnel_ip_addresses: Any = None
 
 @dataclasses.dataclass
@@ -26,12 +30,16 @@ class NetworkgatewayLocalNetworkGateway_Properties_BgpSettings:
 
 @dataclasses.dataclass
 class NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations_Pool:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations:
+    # Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
     allocated_address_prefixes: Any = None
+    # How many IP addresses to allocate from this pool. (AI-inferred)
     number_of_ip_addresses: Any = None
+    # A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
     pool: Any = None
 
 @dataclasses.dataclass

@@ -2,8 +2,11 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface TemplatespecsTemplateSpec_Properties_Versions {
+  /** A human-readable description of this template spec version. (AI-inferred) */
   description?: string | Computed<string>;
+  /** Output only. When this template spec version was created. (AI-inferred) */
   timeCreated?: string | Computed<string>;
+  /** Output only. When this template spec version was last modified. (AI-inferred) */
   timeModified?: string | Computed<string>;
 }
 

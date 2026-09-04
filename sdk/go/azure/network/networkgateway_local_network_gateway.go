@@ -4,10 +4,14 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkgatewayLocalNetworkGateway_Properties_BgpSettings_BgpPeeringAddresses struct {
-	CustomBgpIpAddresses  any
+	// Caller-chosen BGP peering IP addresses to use for this connection, instead of Azure's own auto-allocated defaults. (AI-inferred)
+	CustomBgpIpAddresses any
+	// Output only. The BGP peering IP address(es) Azure auto-allocated for this connection. (AI-inferred)
 	DefaultBgpIpAddresses any
-	IpconfigurationId     any
-	TunnelIpAddresses     any
+	// A reference to the IP configuration this applies to. (AI-inferred)
+	IpconfigurationId any
+	// Output only. The public IP address(es) of this VPN gateway's own tunnel endpoint(s). (AI-inferred)
+	TunnelIpAddresses any
 }
 
 type NetworkgatewayLocalNetworkGateway_Properties_BgpSettings struct {
@@ -22,13 +26,17 @@ type NetworkgatewayLocalNetworkGateway_Properties_BgpSettings struct {
 }
 
 type NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations_Pool struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations struct {
+	// Output only. The specific address ranges actually allocated from this pool. (AI-inferred)
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses      any
-	Pool                     any
+	// How many IP addresses to allocate from this pool. (AI-inferred)
+	NumberOfIpAddresses any
+	// A reference to the address or backend pool this resource draws from or belongs to. (AI-inferred)
+	Pool any
 }
 
 type NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace struct {

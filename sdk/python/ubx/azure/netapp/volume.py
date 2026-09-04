@@ -24,9 +24,13 @@ class Volume_Properties_DataProtection_RansomwareProtection:
 
 @dataclasses.dataclass
 class Volume_Properties_DataProtection_Replication_DestinationReplications:
+    # The Azure region this applies to. (AI-inferred)
     region: Any = None
+    # The kind of replication relationship this represents, e.g. cross-region or cross-zone. (AI-inferred)
     replication_type: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
+    # The availability zone this resource is provisioned in. (AI-inferred)
     zone: Any = None
 
 @dataclasses.dataclass
@@ -90,20 +94,35 @@ class Volume_Properties_DataProtection:
 
 @dataclasses.dataclass
 class Volume_Properties_ExportPolicy_Rules:
+    # The client IP address range(s), in CIDR notation, permitted to access this export. (AI-inferred)
     allowed_clients: Any = None
+    # Who is permitted to change file ownership on this volume, e.g. only root or any user. (AI-inferred)
     chown_mode: Any = None
+    # Whether the SMB/CIFS protocol is enabled for this volume. (AI-inferred)
     cifs: Any = None
+    # Whether this client is granted root access. (AI-inferred)
     has_root_access: Any = None
+    # Whether Kerberos v5 authenticated clients are granted read-only access. (AI-inferred)
     kerberos5_read_only: Any = None
+    # Whether Kerberos v5 authenticated clients are granted read-write access. (AI-inferred)
     kerberos5_read_write: Any = None
+    # Whether Kerberos v5 with integrity checking authenticated clients are granted read-only access. (AI-inferred)
     kerberos5i_read_only: Any = None
+    # Whether Kerberos v5 with integrity checking authenticated clients are granted read-write access. (AI-inferred)
     kerberos5i_read_write: Any = None
+    # Whether Kerberos v5 with privacy protection authenticated clients are granted read-only access. (AI-inferred)
     kerberos5p_read_only: Any = None
+    # Whether Kerberos v5 with privacy protection authenticated clients are granted read-write access. (AI-inferred)
     kerberos5p_read_write: Any = None
+    # Whether the NFSv3 protocol is enabled for this volume. (AI-inferred)
     nfsv3: Any = None
+    # Whether the NFSv4.1 protocol is enabled for this volume. (AI-inferred)
     nfsv41: Any = None
+    # This rule's own relative evaluation order. (AI-inferred)
     rule_index: Any = None
+    # Whether UNIX clients are granted read-only access. (AI-inferred)
     unix_read_only: Any = None
+    # Whether UNIX clients are granted read-write access. (AI-inferred)
     unix_read_write: Any = None
 
 @dataclasses.dataclass
@@ -113,14 +132,20 @@ class Volume_Properties_ExportPolicy:
 
 @dataclasses.dataclass
 class Volume_Properties_MountTargets:
+    # A unique identifier for this volume's own file system. (AI-inferred)
     file_system_id: Any = None
+    # An IP address value. (AI-inferred)
     ip_address: Any = None
+    # A unique identifier for this volume's own mount target. (AI-inferred)
     mount_target_id: Any = None
+    # The fully qualified domain name of the SMB server hosting this volume. (AI-inferred)
     smb_server_fqdn: Any = None
 
 @dataclasses.dataclass
 class Volume_Properties_PlacementRules:
+    # The key of this metadata entry. (AI-inferred)
     key: Any = None
+    # The literal value of this field. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass
@@ -233,6 +258,7 @@ class Volume_Properties:
     t2_network: Any = None
     # Maximum throughput in MiB/s that can be achieved by this volume and this will be accepted as input only for manual qosType volume
     throughput_mibps: Any = None
+    # The UNIX-style file permission bits applied to this volume's own root. (AI-inferred)
     unix_permissions: Any = None
     # Maximum storage quota allowed for a file system in bytes. This is a soft quota used for alerting only. For regular volumes, valid values are in the range 50GiB to 100TiB. For large volumes, valid values are in the range 100TiB to 500TiB, and on an exceptional basis, from to 2400GiB to 2400TiB. Values expressed in bytes as multiples of 1 GiB.
     usage_threshold: Any = None

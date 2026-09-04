@@ -2,34 +2,51 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags {
+  /** The action to perform. (AI-inferred) */
   action?: string | Computed<string>;
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules {
+  /** The tag(s) used to include or exclude specific resource(s) from monitoring. (AI-inferred) */
   filteringTags?: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags[] | Computed<MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags[]>;
+  /** Whether Microsoft Entra ID audit logs are sent to New Relic. (AI-inferred) */
   sendAadLogs?: string | Computed<string>;
+  /** Whether Azure subscription-level activity logs are sent to New Relic. (AI-inferred) */
   sendActivityLogs?: string | Computed<string>;
+  /** Whether Azure subscription-level activity logs are sent to New Relic. (AI-inferred) */
   sendSubscriptionLogs?: string | Computed<string>;
 }
 
 export interface MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_MetricRules {
+  /** The tag(s) used to include or exclude specific resource(s) from monitoring. (AI-inferred) */
   filteringTags?: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags[] | Computed<MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags[]>;
+  /** Whether Azure platform metrics are sent to New Relic. (AI-inferred) */
   sendMetrics?: string | Computed<string>;
+  /** The email address of the user associated with this account. (AI-inferred) */
   userEmail?: string | Computed<string>;
 }
 
 export interface MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules {
+  /** The rule(s) governing which log data is sent to New Relic. (AI-inferred) */
   logRules?: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules | Computed<MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules>;
+  /** The rule(s) governing which metric data is sent to New Relic. (AI-inferred) */
   metricRules?: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_MetricRules | Computed<MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_MetricRules>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
 }
 
 export interface MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList {
+  /** Detail about an error that occurred. (AI-inferred) */
   error?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
+  /** The identifier of the associated Azure subscription. (AI-inferred) */
   subscriptionId?: string | Computed<string>;
+  /** Configuration for which resource tags are sent to New Relic and which resources are monitored. (AI-inferred) */
   tagRules?: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules | Computed<MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules>;
 }
 

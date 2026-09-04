@@ -30,7 +30,9 @@ type EventSubscription_Properties_DeliveryWithResourceIdentity struct {
 }
 
 type EventSubscription_Properties_Filter_AdvancedFilters struct {
-	Key          any
+	// The key of this enrichment or attribute. (AI-inferred)
+	Key any
+	// How this condition's own operands are compared. (AI-inferred)
 	OperatorType any
 }
 

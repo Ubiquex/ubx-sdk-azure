@@ -4,7 +4,9 @@ package signalr
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SignalRresource_Identity_UserAssignedIdentities struct {
-	ClientId    any
+	// The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
+	ClientId any
+	// Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
 	PrincipalId any
 }
 
@@ -25,14 +27,19 @@ type SignalRresource_Properties_Cors struct {
 }
 
 type SignalRresource_Properties_Features struct {
-	Flag       any
+	// The specific feature flag this setting applies to. (AI-inferred)
+	Flag any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
-	Value      any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type SignalRresource_Properties_LiveTraceConfiguration_Categories struct {
+	// Whether this feature is turned on. (AI-inferred)
 	Enabled any
-	Name    any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type SignalRresource_Properties_LiveTraceConfiguration struct {
@@ -43,11 +50,14 @@ type SignalRresource_Properties_LiveTraceConfiguration struct {
 }
 
 type SignalRresource_Properties_NetworkAcls_IpRules struct {
+	// The action to perform. (AI-inferred)
 	Action any
-	Value  any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type SignalRresource_Properties_NetworkAcls_PrivateEndpoints struct {
+	// The resource's own name, unique within its parent scope. (AI-inferred)
 	Name any
 }
 
@@ -70,23 +80,32 @@ type SignalRresource_Properties_NetworkAcls struct {
 }
 
 type SignalRresource_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	// The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
 	Id any
 }
 
 type SignalRresource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	// Output only. Any action the connection's own owner still needs to take. (AI-inferred)
 	ActionsRequired any
-	Description     any
-	Status          any
+	// A human-readable description of this resource. (AI-inferred)
+	Description any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type SignalRresource_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds                          any
-	PrivateEndpoint                   any
+	// The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred)
+	GroupIds any
+	// A reference to the Private Endpoint resource this connection belongs to. (AI-inferred)
+	PrivateEndpoint any
+	// The current approval state of this private endpoint's own connection to the target Private Link service. (AI-inferred)
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
 }
 
 type SignalRresource_Properties_PrivateEndpointConnections struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
@@ -101,14 +120,20 @@ type SignalRresource_Properties_Serverless struct {
 }
 
 type SignalRresource_Properties_SharedPrivateLinkResources_Properties struct {
-	GroupId               any
+	// The sub-resource this connection targets on the destination service. (AI-inferred)
+	GroupId any
+	// A reference to the Private Link resource this applies to. (AI-inferred)
 	PrivateLinkResourceId any
-	ProvisioningState     any
-	RequestMessage        any
-	Status                any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// A message the requester attaches when asking to connect to this resource. (AI-inferred)
+	RequestMessage any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type SignalRresource_Properties_SharedPrivateLinkResources struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 
@@ -118,20 +143,28 @@ type SignalRresource_Properties_Tls struct {
 }
 
 type SignalRresource_Properties_Upstream_Templates_Auth_ManagedIdentity struct {
+	// A reference to the resource this applies to. (AI-inferred)
 	Resource any
 }
 
 type SignalRresource_Properties_Upstream_Templates_Auth struct {
+	// The managed identity used to authenticate requests to this upstream endpoint. (AI-inferred)
 	ManagedIdentity any
-	Type            any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type SignalRresource_Properties_Upstream_Templates struct {
-	Auth            any
+	// Authentication configuration for this upstream endpoint. (AI-inferred)
+	Auth any
+	// The message category pattern this event handler matches. (AI-inferred)
 	CategoryPattern any
-	EventPattern    any
-	HubPattern      any
-	UrlTemplate     any
+	// The event name pattern this event handler matches. (AI-inferred)
+	EventPattern any
+	// The hub name pattern this event handler matches. (AI-inferred)
+	HubPattern any
+	// The URL template used to construct the upstream endpoint address for a matching event. (AI-inferred)
+	UrlTemplate any
 }
 
 type SignalRresource_Properties_Upstream struct {

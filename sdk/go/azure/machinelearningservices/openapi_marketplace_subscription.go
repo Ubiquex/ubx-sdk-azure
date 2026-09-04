@@ -13,10 +13,13 @@ type OpenapiMarketplaceSubscription_Properties_MarketplacePlan struct {
 }
 
 type OpenapiMarketplaceSubscription_Properties struct {
-	MarketplacePlan               any
+	// A reference to the Azure Marketplace plan this model is licensed under. (AI-inferred)
+	MarketplacePlan any
+	// The current status of the Azure Marketplace subscription backing this model. (AI-inferred)
 	MarketplaceSubscriptionStatus any
 	// [Required] Target Marketplace Model ID to create a Marketplace Subscription for.
-	ModelId           any
+	ModelId any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
 	ProvisioningState any
 }
 
@@ -38,12 +41,14 @@ var OpenapiMarketplaceSubscription_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiMarketplaceSubscriptionConfig struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
 
 type OpenapiMarketplaceSubscriptionAttrs struct {
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 	// path parameter, not part of the API's own resource representation
 	Name any

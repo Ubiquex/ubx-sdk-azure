@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_NetworkInterfaces:
+    # The private (internal) IP address assigned to this resource. (AI-inferred)
     private_ip_address: Any = None
+    # A reference to the resource this applies to. (AI-inferred)
     resource_id: Any = None
 
 @dataclasses.dataclass

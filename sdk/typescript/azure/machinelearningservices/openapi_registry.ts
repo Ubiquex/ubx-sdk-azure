@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiRegistry_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -23,6 +25,7 @@ export interface OpenapiRegistry_Properties_ManagedResourceGroup {
 }
 
 export interface OpenapiRegistry_Properties_ManagedResourceGroupSettings_AssignedIdentities {
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -32,53 +35,77 @@ export interface OpenapiRegistry_Properties_ManagedResourceGroupSettings {
 }
 
 export interface OpenapiRegistry_Properties_RegionDetails_AcrDetails_SystemCreatedAcrAccount {
+  /** The name of the associated Azure Container Registry account. (AI-inferred) */
   acrAccountName?: string | Computed<string>;
+  /** The SKU of the associated Azure Container Registry account. (AI-inferred) */
   acrAccountSku?: string | Computed<string>;
+  /** A reference to the associated Azure Resource Manager resource. (AI-inferred) */
   armResourceId?: OpenapiRegistry_Properties_ManagedResourceGroup | Computed<OpenapiRegistry_Properties_ManagedResourceGroup>;
 }
 
 export interface OpenapiRegistry_Properties_RegionDetails_AcrDetails {
+  /** Whether the associated Azure Container Registry account was created automatically by the system. (AI-inferred) */
   systemCreatedAcrAccount?: OpenapiRegistry_Properties_RegionDetails_AcrDetails_SystemCreatedAcrAccount | Computed<OpenapiRegistry_Properties_RegionDetails_AcrDetails_SystemCreatedAcrAccount>;
 }
 
 export interface OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails_SystemCreatedStorageAccount {
+  /** Whether public (anonymous) access to blobs is permitted on the associated storage account. (AI-inferred) */
   allowBlobPublicAccess?: boolean | Computed<boolean>;
+  /** A reference to the associated Azure Resource Manager resource. (AI-inferred) */
   armResourceId?: OpenapiRegistry_Properties_ManagedResourceGroup | Computed<OpenapiRegistry_Properties_ManagedResourceGroup>;
+  /** Whether the associated storage account has hierarchical namespace (Data Lake) enabled. (AI-inferred) */
   storageAccountHnsEnabled?: boolean | Computed<boolean>;
+  /** The name of the associated storage account. (AI-inferred) */
   storageAccountName?: string | Computed<string>;
+  /** The replication/performance type of the associated storage account. (AI-inferred) */
   storageAccountType?: string | Computed<string>;
 }
 
 export interface OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails {
+  /** Whether the associated storage account was created automatically by the system. (AI-inferred) */
   systemCreatedStorageAccount?: OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails_SystemCreatedStorageAccount | Computed<OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails_SystemCreatedStorageAccount>;
 }
 
 export interface OpenapiRegistry_Properties_RegionDetails {
+  /** Detail about the Azure Container Registry associated with this workspace. (AI-inferred) */
   acrDetails?: OpenapiRegistry_Properties_RegionDetails_AcrDetails[] | Computed<OpenapiRegistry_Properties_RegionDetails_AcrDetails[]>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** Detail about the storage account associated with this workspace. (AI-inferred) */
   storageAccountDetails?: OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails[] | Computed<OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails[]>;
 }
 
 export interface OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_PrivateEndpoint {
+  /** A reference to the subnet this resource is injected into. (AI-inferred) */
   subnetArmId?: string | Computed<string>;
 }
 
 export interface OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_RegistryPrivateLinkServiceConnectionState {
+  /** Output only. Any action the connection's own owner still needs to take. (AI-inferred) */
   actionsRequired?: string | Computed<string>;
+  /** A human-readable description of this resource. (AI-inferred) */
   description?: string | Computed<string>;
+  /** The current status of this resource. (AI-inferred) */
   status?: string | Computed<string>;
 }
 
 export interface OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties {
+  /** The sub-resource(s) of the target service this private endpoint connects to. (AI-inferred) */
   groupIds?: string[] | Computed<string[]>;
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_PrivateEndpoint | Computed<OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_PrivateEndpoint>;
+  /** The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred) */
   provisioningState?: string | Computed<string>;
+  /** The current approval state of this registry's own Private Link connection. (AI-inferred) */
   registryPrivateLinkServiceConnectionState?: OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_RegistryPrivateLinkServiceConnectionState | Computed<OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_RegistryPrivateLinkServiceConnectionState>;
 }
 
 export interface OpenapiRegistry_Properties_RegistryPrivateEndpointConnections {
+  /** The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred) */
   id?: string | Computed<string>;
+  /** The Azure region this resource is deployed to, e.g. `eastus`. (AI-inferred) */
   location?: string | Computed<string>;
+  /** The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred) */
   properties?: OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties | Computed<OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties>;
 }
 

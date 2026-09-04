@@ -2,7 +2,9 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiPolicyAssignment_Identity_UserAssignedIdentities {
+  /** The client (application) ID of the user-assigned managed identity to use. (AI-inferred) */
   clientId?: string | Computed<string>;
+  /** Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -18,29 +20,41 @@ export interface OpenapiPolicyAssignment_Identity {
 }
 
 export interface OpenapiPolicyAssignment_Properties_NonComplianceMessages {
+  /** A human-readable description of this result. (AI-inferred) */
   message?: string | Computed<string>;
+  /** A reference to a specific policy definition within this initiative. (AI-inferred) */
   policyDefinitionReferenceId?: string | Computed<string>;
 }
 
 export interface OpenapiPolicyAssignment_Properties_Overrides_Selectors {
+  /** Matches when the field's own value is one of this set. (AI-inferred) */
   in?: string[] | Computed<string[]>;
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** Matches when the field's own value is not one of this set. (AI-inferred) */
   notIn?: string[] | Computed<string[]>;
+  /** How far this operation has progressed. (AI-inferred) */
   progress?: number | Computed<number>;
 }
 
 export interface OpenapiPolicyAssignment_Properties_Overrides {
+  /** A finer-grained classification of this resource within its own resource type, when the type supports more than one variant. (AI-inferred) */
   kind?: string | Computed<string>;
+  /** Restricts which policy definition version(s) within a range this reference resolves to. (AI-inferred) */
   selectors?: OpenapiPolicyAssignment_Properties_Overrides_Selectors[] | Computed<OpenapiPolicyAssignment_Properties_Overrides_Selectors[]>;
+  /** The literal value of this field. (AI-inferred) */
   value?: string | Computed<string>;
 }
 
 export interface OpenapiPolicyAssignment_Properties_Parameters {
+  /** The literal value of this field. (AI-inferred) */
   value?: unknown | Computed<unknown>;
 }
 
 export interface OpenapiPolicyAssignment_Properties_ResourceSelectors {
+  /** The resource's own name, unique within its parent scope. (AI-inferred) */
   name?: string | Computed<string>;
+  /** Restricts which policy definition version(s) within a range this reference resolves to. (AI-inferred) */
   selectors?: OpenapiPolicyAssignment_Properties_Overrides_Selectors[] | Computed<OpenapiPolicyAssignment_Properties_Overrides_Selectors[]>;
 }
 

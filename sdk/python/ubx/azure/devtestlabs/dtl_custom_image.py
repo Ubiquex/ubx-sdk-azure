@@ -17,7 +17,9 @@ class DtlCustomImage_Properties_CustomImagePlan:
 
 @dataclasses.dataclass
 class DtlCustomImage_Properties_DataDiskStorageInfo:
+    # This disk's own logical unit number. (AI-inferred)
     lun: Any = None
+    # The type of storage this uses. (AI-inferred)
     storage_type: Any = None
 
 @dataclasses.dataclass

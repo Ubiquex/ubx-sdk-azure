@@ -44,6 +44,7 @@ class OpenapiSiteExtensionInfo_Properties:
     published_date_time: Any = None
     # Summary description.
     summary: Any = None
+    # A human-readable title for this item. (AI-inferred)
     title: Any = None
     # Version information.
     version: Any = None

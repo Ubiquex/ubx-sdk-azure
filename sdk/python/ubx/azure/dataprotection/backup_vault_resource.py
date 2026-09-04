@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class BackupVaultResource_Identity_UserAssignedIdentities:
+    # The client (application) ID of the user-assigned managed identity to use. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,6 +26,7 @@ class BackupVaultResource_Identity:
 
 @dataclasses.dataclass
 class BackupVaultResource_Properties_CostManagementSettings:
+    # The level of detail this applies at. (AI-inferred)
     granularity_level: Any = None
 
 @dataclasses.dataclass
@@ -33,12 +36,14 @@ class BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettings:
 
 @dataclasses.dataclass
 class BackupVaultResource_Properties_FeatureSettings:
+    # Configuration for restoring backup data into a different Azure region than where it was backed up from. (AI-inferred)
     cross_region_restore_settings: Any = None
     # CrossSubscriptionRestore Settings
     cross_subscription_restore_settings: Any = None
 
 @dataclasses.dataclass
 class BackupVaultResource_Properties_MonitoringSettings_AzureMonitorAlertSettings:
+    # Whether alerts are raised for every failed backup job, not just critical ones. (AI-inferred)
     alerts_for_all_job_failures: Any = None
 
 @dataclasses.dataclass
@@ -100,7 +105,9 @@ class BackupVaultResource_Properties_SecuritySettings:
 
 @dataclasses.dataclass
 class BackupVaultResource_Properties_StorageSettings:
+    # The type of datastore this applies to. (AI-inferred)
     datastore_type: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

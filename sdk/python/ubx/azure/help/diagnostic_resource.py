@@ -12,28 +12,42 @@ class DiagnosticResource_Properties_Diagnostics_Error_Details:
 
 @dataclasses.dataclass
 class DiagnosticResource_Properties_Diagnostics_Error:
+    # A machine-readable status or error code. (AI-inferred)
     code: Any = None
+    # Additional detail about this result. (AI-inferred)
     details: Any = None
+    # A human-readable description of this result. (AI-inferred)
     message: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass
 class DiagnosticResource_Properties_Diagnostics_Insights:
+    # The fully qualified Azure Resource Manager resource ID, in the form `/subscriptions/{id}/resourceGroups/{group}/providers/{provider}/.../{name}`. (AI-inferred)
     id: Any = None
+    # How significant this insight or solution is judged to be. (AI-inferred)
     importance_level: Any = None
+    # The result(s) produced by this operation. (AI-inferred)
     results: Any = None
+    # A human-readable title for this item. (AI-inferred)
     title: Any = None
 
 @dataclasses.dataclass
 class DiagnosticResource_Properties_Diagnostics:
+    # Detail about an error that occurred. (AI-inferred)
     error: Any = None
+    # Diagnostic insight(s) generated for this resource. (AI-inferred)
     insights: Any = None
+    # A reference to the specific troubleshooting solution this applies to. (AI-inferred)
     solution_id: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
 
 @dataclasses.dataclass
 class DiagnosticResource_Properties_Insights:
+    # Extra parameter(s) supplied alongside this request. (AI-inferred)
     additional_parameters: Any = None
+    # A reference to the specific troubleshooting solution this applies to. (AI-inferred)
     solution_id: Any = None
 
 @dataclasses.dataclass

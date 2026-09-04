@@ -4,6 +4,7 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelection_CustomNodeImageVersions struct {
+	// The version identifier this applies to. (AI-inferred)
 	Version any
 }
 
@@ -15,6 +16,7 @@ type FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelection struct {
 }
 
 type FleetsUpdateRun_Properties_ManagedClusterUpdate_Upgrade struct {
+	// The Kubernetes version this applies to. (AI-inferred)
 	KubernetesVersion any
 	// The type of upgrade to perform when targeting ManagedClusters.
 	Type any
@@ -33,7 +35,9 @@ type FleetsUpdateRun_Properties_Status_NodeImageSelection struct {
 }
 
 type FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfo struct {
+	// Additional detail about this result. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
@@ -41,64 +45,101 @@ type FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details_De
 }
 
 type FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status struct {
+	// When this operation completed. (AI-inferred)
 	CompletedTime any
-	Error         any
-	StartTime     any
-	State         any
+	// Detail about an error that occurred. (AI-inferred)
+	Error any
+	// When this event or window started. (AI-inferred)
+	StartTime any
+	// The current lifecycle state of this resource. (AI-inferred)
+	State any
 }
 
 type FleetsUpdateRun_Properties_Status_Stages_AfterGates struct {
+	// A human-readable name for this resource. (AI-inferred)
 	DisplayName any
-	GateId      any
-	Status      any
+	// A reference to the specific approval gate this applies to. (AI-inferred)
+	GateId any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type FleetsUpdateRun_Properties_Status_Stages_AfterStageWaitStatus struct {
-	Status                any
+	// The current status of this resource. (AI-inferred)
+	Status any
+	// How long, in seconds, this wait stage pauses for. (AI-inferred)
 	WaitDurationInSeconds any
 }
 
 type FleetsUpdateRun_Properties_Status_Stages_Groups_Members struct {
+	// A reference to the member cluster this applies to. (AI-inferred)
 	ClusterResourceId any
-	Message           any
-	Name              any
-	OperationId       any
-	Status            any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// An identifier for this specific operation. (AI-inferred)
+	OperationId any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type FleetsUpdateRun_Properties_Status_Stages_Groups struct {
-	AfterGates     any
-	BeforeGates    any
+	// The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
+	AfterGates any
+	// The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
+	BeforeGates any
+	// The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
 	MaxConcurrency any
-	Members        any
-	Name           any
-	Status         any
+	// The member cluster(s) belonging to this fleet. (AI-inferred)
+	Members any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type FleetsUpdateRun_Properties_Status_Stages struct {
-	AfterGates           any
+	// The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
+	AfterGates any
+	// The current status of the post-stage wait period. (AI-inferred)
 	AfterStageWaitStatus any
-	BeforeGates          any
-	Groups               any
-	MaxConcurrency       any
-	Name                 any
-	Status               any
+	// The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
+	BeforeGates any
+	// The group(s) this update run's own member clusters are batched into. (AI-inferred)
+	Groups any
+	// The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
+	MaxConcurrency any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The current status of this resource. (AI-inferred)
+	Status any
 }
 
 type FleetsUpdateRun_Properties_Status struct {
@@ -111,24 +152,36 @@ type FleetsUpdateRun_Properties_Status struct {
 }
 
 type FleetsUpdateRun_Properties_Strategy_Stages_AfterGates struct {
+	// A human-readable name for this resource. (AI-inferred)
 	DisplayName any
-	Type        any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
 }
 
 type FleetsUpdateRun_Properties_Strategy_Stages_Groups struct {
-	AfterGates     any
-	BeforeGates    any
+	// The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
+	AfterGates any
+	// The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
+	BeforeGates any
+	// The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
 	MaxConcurrency any
-	Name           any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type FleetsUpdateRun_Properties_Strategy_Stages struct {
-	AfterGates              any
+	// The approval gate(s) that must be satisfied after this stage completes, before continuing. (AI-inferred)
+	AfterGates any
+	// How long to wait, in seconds, after this stage completes before continuing. (AI-inferred)
 	AfterStageWaitInSeconds any
-	BeforeGates             any
-	Groups                  any
-	MaxConcurrency          any
-	Name                    any
+	// The approval gate(s) that must be satisfied before this stage begins. (AI-inferred)
+	BeforeGates any
+	// The group(s) this update run's own member clusters are batched into. (AI-inferred)
+	Groups any
+	// The maximum number of member cluster(s) updated concurrently within this group. (AI-inferred)
+	MaxConcurrency any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
 }
 
 type FleetsUpdateRun_Properties_Strategy struct {

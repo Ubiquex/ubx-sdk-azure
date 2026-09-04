@@ -33,28 +33,39 @@ type FleetsFleetManagedNamespace_Properties_ManagedNamespaceProperties struct {
 }
 
 type FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector_MatchExpressions struct {
-	Key      any
+	// The key of this label or taint. (AI-inferred)
+	Key any
+	// How this condition's own operands are compared. (AI-inferred)
 	Operator any
-	Values   any
+	// The value(s) making up this field. (AI-inferred)
+	Values any
 }
 
 type FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector struct {
+	// The expression-based label match condition(s) making up this selector. (AI-inferred)
 	MatchExpressions any
-	MatchLabels      any
+	// The exact label key/value pair(s) this selector requires. (AI-inferred)
+	MatchLabels any
 }
 
 type FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector_MatchExpressions struct {
-	Name     any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// How this condition's own operands are compared. (AI-inferred)
 	Operator any
-	Values   any
+	// The value(s) making up this field. (AI-inferred)
+	Values any
 }
 
 type FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector struct {
+	// The expression-based label match condition(s) making up this selector. (AI-inferred)
 	MatchExpressions any
 }
 
 type FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms struct {
-	LabelSelector    any
+	// Selects member cluster(s) by matching label(s), rather than by explicit name. (AI-inferred)
+	LabelSelector any
+	// Selects member cluster(s) by matching a specific property, rather than by explicit name. (AI-inferred)
 	PropertySelector any
 }
 
@@ -74,10 +85,14 @@ type FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_D
 }
 
 type FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Tolerations struct {
-	Effect   any
-	Key      any
+	// What happens to a pod that doesn't tolerate this taint. (AI-inferred)
+	Effect any
+	// The key of this label or taint. (AI-inferred)
+	Key any
+	// How this condition's own operands are compared. (AI-inferred)
 	Operator any
-	Value    any
+	// The literal value of this field. (AI-inferred)
+	Value any
 }
 
 type FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy struct {
@@ -109,7 +124,9 @@ type FleetsFleetManagedNamespace_Properties_PropagationPolicy struct {
 }
 
 type FleetsFleetManagedNamespace_Properties_Status_LastOperationError_AdditionalInfo struct {
+	// Additional detail about this result. (AI-inferred)
 	Info any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
 	Type any
 }
 
@@ -117,11 +134,16 @@ type FleetsFleetManagedNamespace_Properties_Status_LastOperationError_Details_De
 }
 
 type FleetsFleetManagedNamespace_Properties_Status_LastOperationError_Details struct {
+	// Additional detail about this result. (AI-inferred)
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// A machine-readable status or error code. (AI-inferred)
+	Code any
+	// Additional detail about this result. (AI-inferred)
+	Details any
+	// A human-readable description of this result. (AI-inferred)
+	Message any
+	// A reference to the resource this operation targets. (AI-inferred)
+	Target any
 }
 
 type FleetsFleetManagedNamespace_Properties_Status_LastOperationError struct {

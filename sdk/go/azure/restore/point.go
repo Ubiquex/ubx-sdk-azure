@@ -4,25 +4,35 @@ package restore
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Point_Properties_ExcludeDisks struct {
+	// The ARM resource ID of the disk to exclude from the restore point. (AI-inferred)
 	Id any
 }
 
 type Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status struct {
-	Code          any
+	// The status code for the replication of a disk restore point, indicating the current state of the replication process. (AI-inferred)
+	Code any
+	// A human-readable description of the current replication status for the disk restore point. (AI-inferred)
 	DisplayStatus any
-	Level         any
-	Message       any
-	Time          any
+	// The severity level of the replication status. Possible values are 'Info', 'Warning', and 'Error'. (AI-inferred)
+	Level any
+	// A human-readable message providing additional details about the current replication status. (AI-inferred)
+	Message any
+	// The time, in ISO 8601 format, when the replication status was last updated. (AI-inferred)
+	Time any
 }
 
 type Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus struct {
+	// The percentage of replication completed for the disk restore point. (AI-inferred)
 	CompletionPercent any
-	Status            any
+	// The replication status of the disk restore point, providing information about the progress and current state of the replication operation. (AI-inferred)
+	Status any
 }
 
 type Point_Properties_InstanceView_DiskRestorePoints struct {
-	Id                  any
-	ReplicationStatus   any
+	// The unique Azure Resource Manager resource ID of the disk restore point. (AI-inferred)
+	Id                any
+	ReplicationStatus any
+	// Indicates the access state of the snapshot for the disk restore point. Possible values are Unknown, Pending, Available, InstantAccess, and AvailableWithInstantAccess. (AI-inferred)
 	SnapshotAccessState any
 }
 
@@ -78,8 +88,10 @@ type Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings 
 }
 
 type Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh_PublicKeys struct {
+	// The SSH public key data, in OpenSSH format (e.g., 'ssh-rsa AAAA...'), used to authenticate to the Linux VM. The key must be at least 2048-bit and in ssh-rsa format. (AI-inferred)
 	KeyData any
-	Path    any
+	// The full file path on the virtual machine where the SSH public key will be stored, such as `/home/{username}/.ssh/authorized_keys`. (AI-inferred)
+	Path any
 }
 
 type Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh struct {
@@ -101,20 +113,28 @@ type Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration struct {
 }
 
 type Point_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificates struct {
+	// The name of the certificate store on the virtual machine where the certificate is added. This property is required for Windows virtual machines. (AI-inferred)
 	CertificateStore any
-	CertificateUrl   any
+	// The URL of the Azure Key Vault secret which contains the certificate. (AI-inferred)
+	CertificateUrl any
 }
 
 type Point_Properties_SourceMetadata_OsProfile_Secrets struct {
-	SourceVault       any
+	// The Key Vault where the certificate or secret is stored. (AI-inferred)
+	SourceVault any
+	// A list of certificates to be installed on the virtual machine from an Azure Key Vault, referenced within the OS profile's secret configuration. (AI-inferred)
 	VaultCertificates any
 }
 
 type Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_AdditionalUnattendContent struct {
+	// Specifies the name of the component to configure, such as 'Microsoft-Windows-Shell-Setup', for which the additional unattend content applies. (AI-inferred)
 	ComponentName any
-	Content       any
-	PassName      any
-	SettingName   any
+	// The XML formatted content that is added to the unattend.xml file for the specified pass and component. This content is included during the Windows installation process. (AI-inferred)
+	Content any
+	// The pass name for the unattended content. For this field, the allowed value is 'OobeSystem', indicating the Windows Out-of-Box Experience pass in the additional unattended content configuration. (AI-inferred)
+	PassName any
+	// Specifies the name of the setting that the unattended content applies to. Allowed values are 'AutoLogon' and 'FirstLogonCommands'. (AI-inferred)
+	SettingName any
 }
 
 type Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSettings struct {
@@ -129,8 +149,10 @@ type Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSetting
 }
 
 type Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm_Listeners struct {
+	// The URL to a certificate stored in Azure Key Vault that is used for the WinRM HTTPS listener. This is required when the listener protocol is HTTPS. (AI-inferred)
 	CertificateUrl any
-	Protocol       any
+	// Specifies the protocol used by the WinRM listener, which can be either Http or Https. (AI-inferred)
+	Protocol any
 }
 
 type Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm struct {
@@ -226,31 +248,45 @@ type Point_Properties_SourceMetadata_SecurityProfile struct {
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_Encryption struct {
+	// The customer-managed disk encryption set used to encrypt the disk. This is a reference to a Microsoft.Compute/diskEncryptionSets resource, typically containing its resource ID. (AI-inferred)
 	DiskEncryptionSet any
-	Type              any
+	// The type of encryption applied to the disk restore point. Allowed values: EncryptionAtRestWithPlatformKey, EncryptionAtRestWithCustomerKey, EncryptionAtRestWithPlatformAndCustomerKeys. (AI-inferred)
+	Type any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint struct {
-	Encryption             any
+	Encryption any
+	// A reference to the source disk restore point from which this disk restore point was created, typically used when the restore point is copied or replicated across regions. (AI-inferred)
 	SourceDiskRestorePoint any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy struct {
+	// Specifies the action to be taken when a disk delay occurs. Allowed values are 'None' and 'AutomaticReattach'. 'AutomaticReattach' automatically reattaches the disk after the delay is cleared. (AI-inferred)
 	ActionOnDiskDelay any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties struct {
-	AvailabilityPolicy         any
-	BurstingEnabled            any
-	DiskAccessId               any
-	DiskIopsreadOnly           any
-	DiskMbpsReadOnly           any
-	LogicalSectorSize          any
-	MaxShares                  any
-	NetworkAccessPolicy        any
+	AvailabilityPolicy any
+	// Specifies whether bursting is enabled for the managed disk. When enabled, the disk can burst beyond its provisioned performance limits. (AI-inferred)
+	BurstingEnabled any
+	// The resource ID of the Disk Access resource associated with the managed disk. (AI-inferred)
+	DiskAccessId any
+	// The number of read-only IOPS (input/output operations per second) that the managed disk can support. (AI-inferred)
+	DiskIopsreadOnly any
+	// The maximum read-only bandwidth (in MB/s) allowed for this managed disk as part of its performance configuration. (AI-inferred)
+	DiskMbpsReadOnly any
+	// The logical sector size of the managed disk, in bytes. Common values are 512 and 4096, depending on the disk type and configuration. (AI-inferred)
+	LogicalSectorSize any
+	// The maximum number of virtual machines that can concurrently attach to the shared managed disk. The minimum allowed value is 1. (AI-inferred)
+	MaxShares any
+	// Specifies the network access policy for the managed disk. Valid values are `AllowAll` (allow public access), `AllowPrivate` (restrict to private endpoints), and `DenyAll` (deny all network access). (AI-inferred)
+	NetworkAccessPolicy any
+	// Indicates whether the managed disk is optimized for frequent attach/detach operations. When set to true, the disk is optimized for scenarios involving frequent attaching and detaching, though this may come at the cost of reduced performance in other aspects. (AI-inferred)
 	OptimizedForFrequentAttach any
-	PerformancePlus            any
-	Tier                       any
+	// Indicates whether performance plus is enabled for the managed disk, which allows the disk to achieve higher IOPS and throughput limits rather than being constrained to standard performance tiers. (AI-inferred)
+	PerformancePlus any
+	// The SKU tier of the Azure managed disk, indicating its performance class (e.g., Standard or Premium). (AI-inferred)
+	Tier any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties struct {
@@ -258,36 +294,50 @@ type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_Additi
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfile struct {
-	DiskEncryptionSet      any
+	// Specifies the disk encryption set to use for encrypting the managed disk at rest with customer-managed keys. This is a reference object containing the resource ID of the Disk Encryption Set. (AI-inferred)
+	DiskEncryptionSet any
+	// Specifies the security encryption type for the managed disk. Allowed values: VMGuestStateOnly (encrypts only the VM guest state), DiskWithVMGuestState (encrypts both the disk and VM guest state), and NonPersistedTPM (uses non-persisted TPM). (AI-inferred)
 	SecurityEncryptionType any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk struct {
 	AdditionalDiskProperties any
-	DiskEncryptionSet        any
-	SecurityProfile          any
-	StorageAccountType       any
+	// The disk encryption set associated with the managed disk, used for encryption with customer-managed keys. (AI-inferred)
+	DiskEncryptionSet any
+	// Security-related configuration for the managed disk, including its security type (e.g., TrustedLaunch, ConfidentialVM) and associated encryption settings. (AI-inferred)
+	SecurityProfile any
+	// The storage account type for the managed disk. Possible values are: Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, and PremiumV2_LRS. (AI-inferred)
+	StorageAccountType any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks struct {
-	Caching                 any
-	DiskRestorePoint        any
-	DiskSizeGb              any
-	Lun                     any
-	ManagedDisk             any
-	Name                    any
+	// Specifies the caching mode for the disk. Possible values are None, ReadOnly, and ReadWrite. (AI-inferred)
+	Caching any
+	// Contains the resource identifier of the disk restore point corresponding to this data disk in the restore point. (AI-inferred)
+	DiskRestorePoint any
+	// The size of the data disk in gigabytes. (AI-inferred)
+	DiskSizeGb any
+	// The Logical Unit Number (LUN) that identifies this data disk in the virtual machine's storage configuration. (AI-inferred)
+	Lun any
+	// The managed disk configuration for the data disk, including properties such as the disk resource ID and associated encryption settings. (AI-inferred)
+	ManagedDisk any
+	// The name of the data disk in the storage profile. (AI-inferred)
+	Name any
+	// Specifies whether Write Accelerator is enabled for this data disk. When enabled, the disk uses Azure Write Accelerator to reduce I/O latency for small writes. (AI-inferred)
 	WriteAcceleratorEnabled any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_DiskEncryptionKey struct {
 	// The URL referencing a secret in a Key Vault.
-	SecretUrl   any
+	SecretUrl any
+	// Reference to the Azure Key Vault that holds the disk encryption key or secret used for encrypting the OS disk. This required object identifies the source vault via its resource ID. (AI-inferred)
 	SourceVault any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_KeyEncryptionKey struct {
 	// The URL referencing a key encryption key in Key Vault.
-	KeyUrl      any
+	KeyUrl any
+	// The Azure Key Vault that contains the key encryption key (KEK). This is a reference to the Key Vault resource. (AI-inferred)
 	SourceVault any
 }
 

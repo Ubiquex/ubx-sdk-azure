@@ -16,9 +16,12 @@ type VirtualnetworkPublicIpprefix_Properties_CustomIpprefix struct {
 }
 
 type VirtualnetworkPublicIpprefix_Properties_IpTags struct {
+	// The identifier of the Microsoft first-party service tag this IP tag is associated with. (AI-inferred)
 	FirstPartyServiceTagId any
-	IpTagType              any
-	Tag                    any
+	// The category this IP tag belongs to, e.g. `FirstPartyUsage`. (AI-inferred)
+	IpTagType any
+	// The literal tag value. (AI-inferred)
+	Tag any
 }
 
 type VirtualnetworkPublicIpprefix_Properties_NatGateway_Properties struct {

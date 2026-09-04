@@ -8,8 +8,11 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiDatabaseConnection_Properties_ConfigurationFiles:
+    # The literal content of this resource. (AI-inferred)
     contents: Any = None
+    # The name of this file. (AI-inferred)
     file_name: Any = None
+    # The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
     type: Any = None
 
 @dataclasses.dataclass

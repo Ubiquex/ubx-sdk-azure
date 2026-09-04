@@ -9,7 +9,9 @@ type VirtualwanVirtualHub_Properties_AzureFirewall struct {
 }
 
 type VirtualwanVirtualHub_Properties_RouteTable_Routes struct {
-	AddressPrefixes  any
+	// The IP address ranges (CIDR), in the plural form, this resource covers. (AI-inferred)
+	AddressPrefixes any
+	// The IP address traffic matching this route is forwarded to, when `next_hop_type` is `VirtualAppliance`. (AI-inferred)
 	NextHopIpAddress any
 }
 
@@ -19,21 +21,31 @@ type VirtualwanVirtualHub_Properties_RouteTable struct {
 }
 
 type VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties_Routes struct {
+	// The category of destination this rule applies to. (AI-inferred)
 	DestinationType any
-	Destinations    any
-	NextHopType     any
-	NextHops        any
+	// The destination(s) this rule applies to. (AI-inferred)
+	Destinations any
+	// The kind of next hop this route uses, e.g. `VirtualAppliance`, `VnetLocal`, `Internet`, or `None`. (AI-inferred)
+	NextHopType any
+	// The next hop(s) traffic matching this route is forwarded to. (AI-inferred)
+	NextHops any
 }
 
 type VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties struct {
+	// The connection(s) attached to this routing configuration. (AI-inferred)
 	AttachedConnections any
-	ProvisioningState   any
-	Routes              any
+	// The last, current provisioning status ARM reported for this resource, e.g. `Succeeded`, `Failed`, or `Updating`. (AI-inferred)
+	ProvisioningState any
+	// The custom routes making up this route table. (AI-inferred)
+	Routes any
 }
 
 type VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s struct {
-	Etag       any
-	Name       any
+	// A read-only, server-generated value used for optimistic concurrency control -- an update whose own `etag` doesn't match the resource's current value is rejected rather than silently overwriting a concurrent change. (AI-inferred)
+	Etag any
+	// The resource's own name, unique within its parent scope. (AI-inferred)
+	Name any
+	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
 	Properties any
 }
 

@@ -16,7 +16,9 @@ export interface ManagedinstanceprivateendpointconnectionsManagedInstancePrivate
 }
 
 export interface ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties {
+  /** A reference to the Private Endpoint resource this connection belongs to. (AI-inferred) */
   privateEndpoint?: ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties_PrivateEndpoint | Computed<ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties_PrivateEndpoint>;
+  /** The current approval state of this private endpoint's own connection to the managed instance -- whether it's been approved, rejected, or is still pending, and any action the owner still needs to take. (AI-inferred) */
   privateLinkServiceConnectionState?: ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState | Computed<ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState>;
   /** State of the Private Endpoint Connection. */
   provisioningState?: string | Computed<string>;

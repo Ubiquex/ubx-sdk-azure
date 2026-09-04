@@ -2,6 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ServertrustgroupsServerTrustGroup_Properties_GroupMembers {
+  /** The resource ID of a SQL server included in this trust group. (AI-inferred) */
   serverId?: string | Computed<string>;
 }
 

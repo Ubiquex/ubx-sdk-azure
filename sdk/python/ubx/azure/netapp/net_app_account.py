@@ -8,7 +8,9 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class NetAppAccount_Identity_UserAssignedIdentities:
+    # The client (application) ID used to authenticate. (AI-inferred)
     client_id: Any = None
+    # Output only. The Microsoft Entra ID object ID of this resource's own managed identity or service principal. (AI-inferred)
     principal_id: Any = None
 
 @dataclasses.dataclass
@@ -24,34 +26,60 @@ class NetAppAccount_Identity:
 
 @dataclasses.dataclass
 class NetAppAccount_Properties_ActiveDirectories_LdapSearchScope:
+    # The distinguished name of the LDAP group search base. (AI-inferred)
     group_dn: Any = None
+    # The LDAP filter used to determine a user's own group memberships. (AI-inferred)
     group_membership_filter: Any = None
+    # The distinguished name of the LDAP user search base. (AI-inferred)
     user_dn: Any = None
 
 @dataclasses.dataclass
 class NetAppAccount_Properties_ActiveDirectories:
+    # A reference to the Active Directory connection this applies to. (AI-inferred)
     active_directory_id: Any = None
+    # The NetBIOS name of the Active Directory domain. (AI-inferred)
     ad_name: Any = None
+    # The account(s) granted administrative access. (AI-inferred)
     administrators: Any = None
+    # Whether AES encryption is used for this Active Directory connection. (AI-inferred)
     aes_encryption: Any = None
+    # Whether local NFS users are permitted to access this volume in addition to LDAP users. (AI-inferred)
     allow_local_nfs_users_with_ldap: Any = None
+    # The account(s) granted permission to manage backups. (AI-inferred)
     backup_operators: Any = None
+    # The DNS server IP address(es) used for this Active Directory connection. (AI-inferred)
     dns: Any = None
+    # The Active Directory domain this connection joins. (AI-inferred)
     domain: Any = None
+    # Whether the connection to Domain Controllers is encrypted. (AI-inferred)
     encrypt_dcconnections: Any = None
+    # The IP address of the Kerberos Key Distribution Center. (AI-inferred)
     kdc_ip: Any = None
+    # Whether LDAP traffic is encrypted using TLS. (AI-inferred)
     ldap_over_tls: Any = None
+    # The base distinguished name(s) LDAP searches for users and groups are scoped to. (AI-inferred)
     ldap_search_scope: Any = None
+    # Whether LDAP signing is required for this Active Directory connection. (AI-inferred)
     ldap_signing: Any = None
+    # The Active Directory Organizational Unit this connection's own computer objects are placed in. (AI-inferred)
     organizational_unit: Any = None
+    # The password credential used to authenticate. (AI-inferred)
     password: Any = None
+    # The Domain Controller server(s) preferred for LDAP client connections. (AI-inferred)
     preferred_servers_for_ldap_client: Any = None
+    # The account(s) granted permission to manage security settings. (AI-inferred)
     security_operators: Any = None
+    # The root CA certificate used to validate connections to this LDAP server. (AI-inferred)
     server_root_cacertificate: Any = None
+    # The Active Directory site this connection is associated with. (AI-inferred)
     site: Any = None
+    # The NetBIOS name of the SMB server hosting this volume. (AI-inferred)
     smb_server_name: Any = None
+    # The current status of this resource. (AI-inferred)
     status: Any = None
+    # Additional detail about this resource's own current status. (AI-inferred)
     status_details: Any = None
+    # The username used to authenticate. (AI-inferred)
     username: Any = None
 
 @dataclasses.dataclass
@@ -95,6 +123,7 @@ class NetAppAccount_Properties:
     encryption: Any = None
     # MultiAD Status for the account
     multi_ad_status: Any = None
+    # The domain used to map NFSv4 user and group names to numeric IDs. (AI-inferred)
     nfs_v4_iddomain: Any = None
     # Azure lifecycle management
     provisioning_state: Any = None

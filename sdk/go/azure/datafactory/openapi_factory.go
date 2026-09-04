@@ -31,7 +31,9 @@ type OpenapiFactory_Properties_Encryption struct {
 }
 
 type OpenapiFactory_Properties_GlobalParameters struct {
-	Type  any
+	// The Azure resource type, in the form `{resource-provider}/{resource-type}`, e.g. `Microsoft.Network/loadBalancers`. (AI-inferred)
+	Type any
+	// The literal value of this field. (AI-inferred)
 	Value any
 }
 
