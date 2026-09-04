@@ -10,8 +10,8 @@ type PrivateEndpointConnection_Properties_PrivateEndpoint struct {
 
 type PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivateEndpointConnection_Properties struct {
@@ -41,50 +41,33 @@ type PrivateEndpointConnection_SystemData struct {
 }
 
 var PrivateEndpointConnection_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var PrivateEndpointConnection_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: PrivateEndpointConnection_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
-
-var PrivateEndpointConnection_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   PrivateEndpointConnection_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type PrivateEndpointConnectionConfig struct {
-	// The resource identifier.
-	Id any
-	// The resource name.
-	Name any
 	// The properties of a private endpoint connection.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
-	// The resource type.
-	Type any
 }
 
 type PrivateEndpointConnectionAttrs struct {
@@ -103,18 +86,10 @@ type PrivateEndpointConnectionAttrs struct {
 var PrivateEndpointConnection = ubx.ResourceBinding{
 	WireType: "azure_digitaltwins_private_endpoint_connection",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PrivateEndpointConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   PrivateEndpointConnection_PropertiesFields,
 		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: PrivateEndpointConnection_SystemDataFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

@@ -4,18 +4,16 @@ package datafactory
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiGlobalParameterResource_Properties struct {
-	Type any
+	Type  any
 	Value any
 }
 
 var OpenapiGlobalParameterResource_PropertiesFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Type":  ubx.FieldSpec{WireName: "type"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 type OpenapiGlobalParameterResourceConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// Properties of the global parameter.
 	Properties any
 }
@@ -30,11 +28,10 @@ type OpenapiGlobalParameterResourceAttrs struct {
 var OpenapiGlobalParameterResource = ubx.ResourceBinding{
 	WireType: "azure_datafactory_openapi_global_parameter_resource",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "map",
-			Fields: OpenapiGlobalParameterResource_PropertiesFields,
+			Kind:     "map",
+			Fields:   OpenapiGlobalParameterResource_PropertiesFields,
 		},
 	},
 }

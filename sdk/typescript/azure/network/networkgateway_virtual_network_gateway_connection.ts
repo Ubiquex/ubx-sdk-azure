@@ -1037,8 +1037,6 @@ const NetworkgatewayVirtualNetworkGatewayConnection_PropertiesFields: FieldMap =
 };
 
 export interface NetworkgatewayVirtualNetworkGatewayConnectionConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** VirtualNetworkGatewayConnection properties. */
   properties: NetworkgatewayVirtualNetworkGatewayConnection_Properties | Computed<NetworkgatewayVirtualNetworkGatewayConnection_Properties>;
 }
@@ -1053,7 +1051,6 @@ export interface NetworkgatewayVirtualNetworkGatewayConnectionAttrs {
 export const NetworkgatewayVirtualNetworkGatewayConnection: ResourceBinding<NetworkgatewayVirtualNetworkGatewayConnectionConfig, NetworkgatewayVirtualNetworkGatewayConnectionAttrs> = {
   wireType: "azure_network_networkgateway_virtual_network_gateway_connection",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -8,28 +8,28 @@ type OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters_Creat
 }
 
 type OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters struct {
-	BlobTypes any
-	CreationTime any
-	ExcludePrefix any
+	BlobTypes           any
+	CreationTime        any
+	ExcludePrefix       any
 	IncludeBlobVersions any
-	IncludeDeleted any
-	IncludeSnapshots any
-	PrefixMatch any
+	IncludeDeleted      any
+	IncludeSnapshots    any
+	PrefixMatch         any
 }
 
 type OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition struct {
-	Filters any
-	Format any
-	ObjectType any
-	Schedule any
+	Filters      any
+	Format       any
+	ObjectType   any
+	Schedule     any
 	SchemaFields any
 }
 
 type OpenapiBlobInventoryPolicy_Properties_Policy_Rules struct {
-	Definition any
+	Definition  any
 	Destination any
-	Enabled any
-	Name any
+	Enabled     any
+	Name        any
 }
 
 type OpenapiBlobInventoryPolicy_Properties_Policy struct {
@@ -51,65 +51,65 @@ type OpenapiBlobInventoryPolicy_Properties struct {
 }
 
 var OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters_CreationTimeFields = ubx.FieldMap{
-		"LastNdays": ubx.FieldSpec{WireName: "last_ndays"},
-	}
+	"LastNdays": ubx.FieldSpec{WireName: "last_ndays"},
+}
 
 var OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_FiltersFields = ubx.FieldMap{
-		"BlobTypes": ubx.FieldSpec{WireName: "blob_types"},
-		"CreationTime": ubx.FieldSpec{
-			WireName: "creation_time",
-			Kind: "object",
-			Fields: OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters_CreationTimeFields,
-		},
-		"ExcludePrefix": ubx.FieldSpec{WireName: "exclude_prefix"},
-		"IncludeBlobVersions": ubx.FieldSpec{WireName: "include_blob_versions"},
-		"IncludeDeleted": ubx.FieldSpec{WireName: "include_deleted"},
-		"IncludeSnapshots": ubx.FieldSpec{WireName: "include_snapshots"},
-		"PrefixMatch": ubx.FieldSpec{WireName: "prefix_match"},
-	}
+	"BlobTypes": ubx.FieldSpec{WireName: "blob_types"},
+	"CreationTime": ubx.FieldSpec{
+		WireName: "creation_time",
+		Kind:     "object",
+		Fields:   OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_Filters_CreationTimeFields,
+	},
+	"ExcludePrefix":       ubx.FieldSpec{WireName: "exclude_prefix"},
+	"IncludeBlobVersions": ubx.FieldSpec{WireName: "include_blob_versions"},
+	"IncludeDeleted":      ubx.FieldSpec{WireName: "include_deleted"},
+	"IncludeSnapshots":    ubx.FieldSpec{WireName: "include_snapshots"},
+	"PrefixMatch":         ubx.FieldSpec{WireName: "prefix_match"},
+}
 
 var OpenapiBlobInventoryPolicy_Properties_Policy_Rules_DefinitionFields = ubx.FieldMap{
-		"Filters": ubx.FieldSpec{
-			WireName: "filters",
-			Kind: "object",
-			Fields: OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_FiltersFields,
-		},
-		"Format": ubx.FieldSpec{WireName: "format"},
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
-		"Schedule": ubx.FieldSpec{WireName: "schedule"},
-		"SchemaFields": ubx.FieldSpec{WireName: "schema_fields"},
-	}
+	"Filters": ubx.FieldSpec{
+		WireName: "filters",
+		Kind:     "object",
+		Fields:   OpenapiBlobInventoryPolicy_Properties_Policy_Rules_Definition_FiltersFields,
+	},
+	"Format":       ubx.FieldSpec{WireName: "format"},
+	"ObjectType":   ubx.FieldSpec{WireName: "object_type"},
+	"Schedule":     ubx.FieldSpec{WireName: "schedule"},
+	"SchemaFields": ubx.FieldSpec{WireName: "schema_fields"},
+}
 
 var OpenapiBlobInventoryPolicy_Properties_Policy_RulesFields = ubx.FieldMap{
-		"Definition": ubx.FieldSpec{
-			WireName: "definition",
-			Kind: "object",
-			Fields: OpenapiBlobInventoryPolicy_Properties_Policy_Rules_DefinitionFields,
-		},
-		"Destination": ubx.FieldSpec{WireName: "destination"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Definition": ubx.FieldSpec{
+		WireName: "definition",
+		Kind:     "object",
+		Fields:   OpenapiBlobInventoryPolicy_Properties_Policy_Rules_DefinitionFields,
+	},
+	"Destination": ubx.FieldSpec{WireName: "destination"},
+	"Enabled":     ubx.FieldSpec{WireName: "enabled"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiBlobInventoryPolicy_Properties_PolicyFields = ubx.FieldMap{
-		"Destination": ubx.FieldSpec{WireName: "destination"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: OpenapiBlobInventoryPolicy_Properties_Policy_RulesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Destination": ubx.FieldSpec{WireName: "destination"},
+	"Enabled":     ubx.FieldSpec{WireName: "enabled"},
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   OpenapiBlobInventoryPolicy_Properties_Policy_RulesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiBlobInventoryPolicy_PropertiesFields = ubx.FieldMap{
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"Policy": ubx.FieldSpec{
-			WireName: "policy",
-			Kind: "object",
-			Fields: OpenapiBlobInventoryPolicy_Properties_PolicyFields,
-		},
-	}
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"Policy": ubx.FieldSpec{
+		WireName: "policy",
+		Kind:     "object",
+		Fields:   OpenapiBlobInventoryPolicy_Properties_PolicyFields,
+	},
+}
 
 type OpenapiBlobInventoryPolicyConfig struct {
 	// The storage account blob inventory policy properties.
@@ -126,8 +126,8 @@ var OpenapiBlobInventoryPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiBlobInventoryPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiBlobInventoryPolicy_PropertiesFields,
 		},
 	},
 }

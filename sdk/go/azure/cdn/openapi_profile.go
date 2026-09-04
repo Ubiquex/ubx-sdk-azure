@@ -4,7 +4,7 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiProfile_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -20,10 +20,10 @@ type OpenapiProfile_Identity struct {
 }
 
 type OpenapiProfile_Properties_LogScrubbing_ScrubbingRules struct {
-	MatchVariable any
-	Selector any
+	MatchVariable         any
+	Selector              any
 	SelectorMatchOperator any
-	State any
+	State                 any
 }
 
 type OpenapiProfile_Properties_LogScrubbing struct {
@@ -54,59 +54,57 @@ type OpenapiProfile_Sku struct {
 }
 
 var OpenapiProfile_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiProfile_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiProfile_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiProfile_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiProfile_Properties_LogScrubbing_ScrubbingRulesFields = ubx.FieldMap{
-		"MatchVariable": ubx.FieldSpec{WireName: "match_variable"},
-		"Selector": ubx.FieldSpec{WireName: "selector"},
-		"SelectorMatchOperator": ubx.FieldSpec{WireName: "selector_match_operator"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"MatchVariable":         ubx.FieldSpec{WireName: "match_variable"},
+	"Selector":              ubx.FieldSpec{WireName: "selector"},
+	"SelectorMatchOperator": ubx.FieldSpec{WireName: "selector_match_operator"},
+	"State":                 ubx.FieldSpec{WireName: "state"},
+}
 
 var OpenapiProfile_Properties_LogScrubbingFields = ubx.FieldMap{
-		"ScrubbingRules": ubx.FieldSpec{
-			WireName: "scrubbing_rules",
-			Kind: "list",
-			Fields: OpenapiProfile_Properties_LogScrubbing_ScrubbingRulesFields,
-		},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"ScrubbingRules": ubx.FieldSpec{
+		WireName: "scrubbing_rules",
+		Kind:     "list",
+		Fields:   OpenapiProfile_Properties_LogScrubbing_ScrubbingRulesFields,
+	},
+	"State": ubx.FieldSpec{WireName: "state"},
+}
 
 var OpenapiProfile_PropertiesFields = ubx.FieldMap{
-		"ExtendedProperties": ubx.FieldSpec{WireName: "extended_properties"},
-		"FrontDoorId": ubx.FieldSpec{WireName: "front_door_id"},
-		"LogScrubbing": ubx.FieldSpec{
-			WireName: "log_scrubbing",
-			Kind: "object",
-			Fields: OpenapiProfile_Properties_LogScrubbingFields,
-		},
-		"OriginResponseTimeoutSeconds": ubx.FieldSpec{WireName: "origin_response_timeout_seconds"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceState": ubx.FieldSpec{WireName: "resource_state"},
-	}
+	"ExtendedProperties": ubx.FieldSpec{WireName: "extended_properties"},
+	"FrontDoorId":        ubx.FieldSpec{WireName: "front_door_id"},
+	"LogScrubbing": ubx.FieldSpec{
+		WireName: "log_scrubbing",
+		Kind:     "object",
+		Fields:   OpenapiProfile_Properties_LogScrubbingFields,
+	},
+	"OriginResponseTimeoutSeconds": ubx.FieldSpec{WireName: "origin_response_timeout_seconds"},
+	"ProvisioningState":            ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceState":                ubx.FieldSpec{WireName: "resource_state"},
+}
 
 var OpenapiProfile_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type OpenapiProfileConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
-	// Kind of the profile. Used by portal to differentiate traditional CDN profile and new AFD profile.
-	Kind any
 	// The JSON object that contains the properties required to create a profile.
 	Properties any
 	// Standard_Verizon = The SKU name for a Standard Verizon CDN profile. Premium_Verizon = The SKU name for a Premium Verizon CDN profile. Custom_Verizon = The SKU name for a Custom Verizon CDN profile. Standard_Akamai = The SKU name for an Akamai CDN profile. Standard_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using GB based billing model. Standard_Microsoft = The SKU name for a Standard Microsoft CDN profile. Standard_AzureFrontDoor = The SKU name for an Azure Front Door Standard profile. Premium_AzureFrontDoor = The SKU name for an Azure Front Door Premium profile. Standard_955BandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using 95-5 peak bandwidth billing model. Standard_AvgBandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using monthly average peak bandwidth billing model. StandardPlus_ChinaCdn = The SKU name for a China CDN profile for live-streaming using GB based billing model. StandardPlus_955BandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using 95-5 peak bandwidth billing model. StandardPlus_AvgBandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using monthly average peak bandwidth billing model.
@@ -129,19 +127,18 @@ var OpenapiProfile = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiProfile_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiProfile_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiProfile_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiProfile_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiProfile_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiProfile_SkuFields,
 		},
 	},
 }

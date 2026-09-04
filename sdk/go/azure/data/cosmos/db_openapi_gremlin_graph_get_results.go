@@ -4,14 +4,14 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiGremlinGraphGetResults_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type DbOpenapiGremlinGraphGetResults_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,36 +21,36 @@ type DbOpenapiGremlinGraphGetResults_Value_Properties_Options_AutoscaleSettings 
 
 type DbOpenapiGremlinGraphGetResults_Value_Properties_Options struct {
 	AutoscaleSettings any
-	Throughput any
+	Throughput        any
 }
 
 type DbOpenapiGremlinGraphGetResults_Value_Properties_Resource struct {
 	Etag any
-	Rid any
-	Ts any
+	Rid  any
+	Ts   any
 }
 
 type DbOpenapiGremlinGraphGetResults_Value_Properties struct {
-	Options any
+	Options  any
 	Resource any
 }
 
 type DbOpenapiGremlinGraphGetResults_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DbOpenapiGremlinGraphGetResultsConfig struct {
-	AccountName any
+	AccountName  any
 	DatabaseName any
 }
 
 type DbOpenapiGremlinGraphGetResultsAttrs struct {
-	AccountName any
+	AccountName  any
 	DatabaseName any
-	NextLink any
+	NextLink     any
 	// List of graphs and their properties.
 	Value any
 }
@@ -58,7 +58,7 @@ type DbOpenapiGremlinGraphGetResultsAttrs struct {
 var DbOpenapiGremlinGraphGetResults = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_gremlin_graph_get_results",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":  ubx.FieldSpec{WireName: "account_name"},
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
 	},
 }

@@ -3081,8 +3081,6 @@ const VirtualnetworkapplianceVirtualNetworkAppliance_PropertiesFields: FieldMap 
 };
 
 export interface VirtualnetworkapplianceVirtualNetworkApplianceConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** VirtualNetworkAppliance properties. */
   properties?: VirtualnetworkapplianceVirtualNetworkAppliance_Properties | Computed<VirtualnetworkapplianceVirtualNetworkAppliance_Properties>;
 }
@@ -3097,7 +3095,6 @@ export interface VirtualnetworkapplianceVirtualNetworkApplianceAttrs {
 export const VirtualnetworkapplianceVirtualNetworkAppliance: ResourceBinding<VirtualnetworkapplianceVirtualNetworkApplianceConfig, VirtualnetworkapplianceVirtualNetworkApplianceAttrs> = {
   wireType: "azure_network_virtualnetworkappliance_virtual_network_appliance",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

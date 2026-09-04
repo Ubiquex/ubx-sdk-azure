@@ -37,8 +37,6 @@ _OpenapiApplicationGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiApplicationGroupConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
@@ -50,7 +48,6 @@ class OpenapiApplicationGroupAttrs:
 OpenapiApplicationGroup = ubx.ResourceBinding(
     wire_type="azure_eventhub_openapi_application_group",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

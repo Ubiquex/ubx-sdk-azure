@@ -8,7 +8,7 @@ type ContainerRegistryResource_Value_Properties_Credentials struct {
 }
 
 type ContainerRegistryResource_Value_Properties struct {
-	Credentials any
+	Credentials       any
 	ProvisioningState any
 }
 
@@ -17,19 +17,19 @@ type ContainerRegistryResource_Value struct {
 }
 
 type ContainerRegistryResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type ContainerRegistryResourceAttrs struct {
 	ApiVersion any
 	// The link to next page of storage list.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// The container registry resources list.
 	Value any
 }
@@ -37,9 +37,9 @@ type ContainerRegistryResourceAttrs struct {
 var ContainerRegistryResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_container_registry_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

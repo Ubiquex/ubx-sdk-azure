@@ -9,8 +9,8 @@ type DbOpenapiFleetResource_Properties struct {
 }
 
 var DbOpenapiFleetResource_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type DbOpenapiFleetResourceConfig struct {
 	// Properties to update Azure Cosmos DB fleet resource.
@@ -27,8 +27,8 @@ var DbOpenapiFleetResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiFleetResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiFleetResource_PropertiesFields,
 		},
 	},
 }

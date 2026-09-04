@@ -11,7 +11,7 @@ type OpenapiSoftwareUpdateConfiguration_Properties_Error struct {
 }
 
 type OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfo_AdvancedSchedule_MonthlyOccurrences struct {
-	Day any
+	Day        any
 	Occurrence any
 }
 
@@ -82,18 +82,18 @@ type OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Linux str
 
 type OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries_TagSettings struct {
 	FilterOperator any
-	Tags any
+	Tags           any
 }
 
 type OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries struct {
-	Locations any
-	Scope any
+	Locations   any
+	Scope       any
 	TagSettings any
 }
 
 type OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_NonAzureQueries struct {
 	FunctionAlias any
-	WorkspaceId any
+	WorkspaceId   any
 }
 
 type OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets struct {
@@ -153,160 +153,160 @@ type OpenapiSoftwareUpdateConfiguration_Properties struct {
 }
 
 var OpenapiSoftwareUpdateConfiguration_Properties_ErrorFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfo_AdvancedSchedule_MonthlyOccurrencesFields = ubx.FieldMap{
-		"Day": ubx.FieldSpec{WireName: "day"},
-		"Occurrence": ubx.FieldSpec{WireName: "occurrence"},
-	}
+	"Day":        ubx.FieldSpec{WireName: "day"},
+	"Occurrence": ubx.FieldSpec{WireName: "occurrence"},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfo_AdvancedScheduleFields = ubx.FieldMap{
-		"MonthDays": ubx.FieldSpec{WireName: "month_days"},
-		"MonthlyOccurrences": ubx.FieldSpec{
-			WireName: "monthly_occurrences",
-			Kind: "list",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfo_AdvancedSchedule_MonthlyOccurrencesFields,
-		},
-		"WeekDays": ubx.FieldSpec{WireName: "week_days"},
-	}
+	"MonthDays": ubx.FieldSpec{WireName: "month_days"},
+	"MonthlyOccurrences": ubx.FieldSpec{
+		WireName: "monthly_occurrences",
+		Kind:     "list",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfo_AdvancedSchedule_MonthlyOccurrencesFields,
+	},
+	"WeekDays": ubx.FieldSpec{WireName: "week_days"},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfoFields = ubx.FieldMap{
-		"AdvancedSchedule": ubx.FieldSpec{
-			WireName: "advanced_schedule",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfo_AdvancedScheduleFields,
-		},
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
-		"ExpiryTimeOffsetMinutes": ubx.FieldSpec{WireName: "expiry_time_offset_minutes"},
-		"Frequency": ubx.FieldSpec{WireName: "frequency"},
-		"Interval": ubx.FieldSpec{WireName: "interval"},
-		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"NextRun": ubx.FieldSpec{WireName: "next_run"},
-		"NextRunOffsetMinutes": ubx.FieldSpec{WireName: "next_run_offset_minutes"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"StartTimeOffsetMinutes": ubx.FieldSpec{WireName: "start_time_offset_minutes"},
-		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
-	}
+	"AdvancedSchedule": ubx.FieldSpec{
+		WireName: "advanced_schedule",
+		Kind:     "object",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfo_AdvancedScheduleFields,
+	},
+	"CreationTime":            ubx.FieldSpec{WireName: "creation_time"},
+	"Description":             ubx.FieldSpec{WireName: "description"},
+	"ExpiryTime":              ubx.FieldSpec{WireName: "expiry_time"},
+	"ExpiryTimeOffsetMinutes": ubx.FieldSpec{WireName: "expiry_time_offset_minutes"},
+	"Frequency":               ubx.FieldSpec{WireName: "frequency"},
+	"Interval":                ubx.FieldSpec{WireName: "interval"},
+	"IsEnabled":               ubx.FieldSpec{WireName: "is_enabled"},
+	"LastModifiedTime":        ubx.FieldSpec{WireName: "last_modified_time"},
+	"NextRun":                 ubx.FieldSpec{WireName: "next_run"},
+	"NextRunOffsetMinutes":    ubx.FieldSpec{WireName: "next_run_offset_minutes"},
+	"StartTime":               ubx.FieldSpec{WireName: "start_time"},
+	"StartTimeOffsetMinutes":  ubx.FieldSpec{WireName: "start_time_offset_minutes"},
+	"TimeZone":                ubx.FieldSpec{WireName: "time_zone"},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_Tasks_PostTaskFields = ubx.FieldMap{
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-	}
+	"Parameters": ubx.FieldSpec{WireName: "parameters"},
+	"Source":     ubx.FieldSpec{WireName: "source"},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_TasksFields = ubx.FieldMap{
-		"PostTask": ubx.FieldSpec{
-			WireName: "post_task",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_Tasks_PostTaskFields,
-		},
-		"PreTask": ubx.FieldSpec{
-			WireName: "pre_task",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_Tasks_PostTaskFields,
-		},
-	}
+	"PostTask": ubx.FieldSpec{
+		WireName: "post_task",
+		Kind:     "object",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_Tasks_PostTaskFields,
+	},
+	"PreTask": ubx.FieldSpec{
+		WireName: "pre_task",
+		Kind:     "object",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_Tasks_PostTaskFields,
+	},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_LinuxFields = ubx.FieldMap{
-		"ExcludedPackageNameMasks": ubx.FieldSpec{WireName: "excluded_package_name_masks"},
-		"IncludedPackageClassifications": ubx.FieldSpec{WireName: "included_package_classifications"},
-		"IncludedPackageNameMasks": ubx.FieldSpec{WireName: "included_package_name_masks"},
-		"RebootSetting": ubx.FieldSpec{WireName: "reboot_setting"},
-	}
+	"ExcludedPackageNameMasks":       ubx.FieldSpec{WireName: "excluded_package_name_masks"},
+	"IncludedPackageClassifications": ubx.FieldSpec{WireName: "included_package_classifications"},
+	"IncludedPackageNameMasks":       ubx.FieldSpec{WireName: "included_package_name_masks"},
+	"RebootSetting":                  ubx.FieldSpec{WireName: "reboot_setting"},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries_TagSettingsFields = ubx.FieldMap{
-		"FilterOperator": ubx.FieldSpec{WireName: "filter_operator"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"FilterOperator": ubx.FieldSpec{WireName: "filter_operator"},
+	"Tags":           ubx.FieldSpec{WireName: "tags"},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueriesFields = ubx.FieldMap{
-		"Locations": ubx.FieldSpec{WireName: "locations"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"TagSettings": ubx.FieldSpec{
-			WireName: "tag_settings",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries_TagSettingsFields,
-		},
-	}
+	"Locations": ubx.FieldSpec{WireName: "locations"},
+	"Scope":     ubx.FieldSpec{WireName: "scope"},
+	"TagSettings": ubx.FieldSpec{
+		WireName: "tag_settings",
+		Kind:     "object",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueries_TagSettingsFields,
+	},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_NonAzureQueriesFields = ubx.FieldMap{
-		"FunctionAlias": ubx.FieldSpec{WireName: "function_alias"},
-		"WorkspaceId": ubx.FieldSpec{WireName: "workspace_id"},
-	}
+	"FunctionAlias": ubx.FieldSpec{WireName: "function_alias"},
+	"WorkspaceId":   ubx.FieldSpec{WireName: "workspace_id"},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_TargetsFields = ubx.FieldMap{
-		"AzureQueries": ubx.FieldSpec{
-			WireName: "azure_queries",
-			Kind: "list",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueriesFields,
-		},
-		"NonAzureQueries": ubx.FieldSpec{
-			WireName: "non_azure_queries",
-			Kind: "list",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_NonAzureQueriesFields,
-		},
-	}
+	"AzureQueries": ubx.FieldSpec{
+		WireName: "azure_queries",
+		Kind:     "list",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_AzureQueriesFields,
+	},
+	"NonAzureQueries": ubx.FieldSpec{
+		WireName: "non_azure_queries",
+		Kind:     "list",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_Targets_NonAzureQueriesFields,
+	},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_WindowsFields = ubx.FieldMap{
-		"ExcludedKbNumbers": ubx.FieldSpec{WireName: "excluded_kb_numbers"},
-		"IncludedKbNumbers": ubx.FieldSpec{WireName: "included_kb_numbers"},
-		"IncludedUpdateClassifications": ubx.FieldSpec{WireName: "included_update_classifications"},
-		"RebootSetting": ubx.FieldSpec{WireName: "reboot_setting"},
-	}
+	"ExcludedKbNumbers":             ubx.FieldSpec{WireName: "excluded_kb_numbers"},
+	"IncludedKbNumbers":             ubx.FieldSpec{WireName: "included_kb_numbers"},
+	"IncludedUpdateClassifications": ubx.FieldSpec{WireName: "included_update_classifications"},
+	"RebootSetting":                 ubx.FieldSpec{WireName: "reboot_setting"},
+}
 
 var OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfigurationFields = ubx.FieldMap{
-		"AzureVirtualMachines": ubx.FieldSpec{WireName: "azure_virtual_machines"},
-		"Duration": ubx.FieldSpec{WireName: "duration"},
-		"Linux": ubx.FieldSpec{
-			WireName: "linux",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_LinuxFields,
-		},
-		"NonAzureComputerNames": ubx.FieldSpec{WireName: "non_azure_computer_names"},
-		"OperatingSystem": ubx.FieldSpec{WireName: "operating_system"},
-		"Targets": ubx.FieldSpec{
-			WireName: "targets",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_TargetsFields,
-		},
-		"Windows": ubx.FieldSpec{
-			WireName: "windows",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_WindowsFields,
-		},
-	}
+	"AzureVirtualMachines": ubx.FieldSpec{WireName: "azure_virtual_machines"},
+	"Duration":             ubx.FieldSpec{WireName: "duration"},
+	"Linux": ubx.FieldSpec{
+		WireName: "linux",
+		Kind:     "object",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_LinuxFields,
+	},
+	"NonAzureComputerNames": ubx.FieldSpec{WireName: "non_azure_computer_names"},
+	"OperatingSystem":       ubx.FieldSpec{WireName: "operating_system"},
+	"Targets": ubx.FieldSpec{
+		WireName: "targets",
+		Kind:     "object",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_TargetsFields,
+	},
+	"Windows": ubx.FieldSpec{
+		WireName: "windows",
+		Kind:     "object",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfiguration_WindowsFields,
+	},
+}
 
 var OpenapiSoftwareUpdateConfiguration_PropertiesFields = ubx.FieldMap{
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_ErrorFields,
-		},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ScheduleInfo": ubx.FieldSpec{
-			WireName: "schedule_info",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfoFields,
-		},
-		"Tasks": ubx.FieldSpec{
-			WireName: "tasks",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_TasksFields,
-		},
-		"UpdateConfiguration": ubx.FieldSpec{
-			WireName: "update_configuration",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfigurationFields,
-		},
-	}
+	"CreatedBy":    ubx.FieldSpec{WireName: "created_by"},
+	"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_ErrorFields,
+	},
+	"LastModifiedBy":    ubx.FieldSpec{WireName: "last_modified_by"},
+	"LastModifiedTime":  ubx.FieldSpec{WireName: "last_modified_time"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ScheduleInfo": ubx.FieldSpec{
+		WireName: "schedule_info",
+		Kind:     "object",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_ScheduleInfoFields,
+	},
+	"Tasks": ubx.FieldSpec{
+		WireName: "tasks",
+		Kind:     "object",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_TasksFields,
+	},
+	"UpdateConfiguration": ubx.FieldSpec{
+		WireName: "update_configuration",
+		Kind:     "object",
+		Fields:   OpenapiSoftwareUpdateConfiguration_Properties_UpdateConfigurationFields,
+	},
+}
 
 type OpenapiSoftwareUpdateConfigurationConfig struct {
 	// Software update configuration properties.
@@ -323,8 +323,8 @@ var OpenapiSoftwareUpdateConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSoftwareUpdateConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSoftwareUpdateConfiguration_PropertiesFields,
 		},
 	},
 }

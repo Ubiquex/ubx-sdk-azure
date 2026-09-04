@@ -204,32 +204,13 @@ const NetworkwatcherConnectionAnalyzer_PropertiesFields: FieldMap = {
   status: "status",
 };
 
-const NetworkwatcherConnectionAnalyzer_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkwatcherConnectionAnalyzerConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
-  /** Resource ID of the connection analyzer. */
-  id?: string | Computed<string>;
   /** Resource location. */
   location: string | Computed<string>;
-  /** Name of the connection analyzer. */
-  name?: string | Computed<string>;
   /** Properties of a connection analyzer. */
   properties: NetworkwatcherConnectionAnalyzer_Properties | Computed<NetworkwatcherConnectionAnalyzer_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkwatcherConnectionAnalyzer_SystemData | Computed<NetworkwatcherConnectionAnalyzer_SystemData>;
   /** Resource tags. */
   tags?: Record<string, string> | Computed<Record<string, string>>;
-  /** Resource type. */
-  type?: string | Computed<string>;
 }
 
 export interface NetworkwatcherConnectionAnalyzerAttrs {
@@ -254,21 +235,12 @@ export interface NetworkwatcherConnectionAnalyzerAttrs {
 export const NetworkwatcherConnectionAnalyzer: ResourceBinding<NetworkwatcherConnectionAnalyzerConfig, NetworkwatcherConnectionAnalyzerAttrs> = {
   wireType: "azure_network_networkwatcher_connection_analyzer",
   fields: {
-    etag: "etag",
-    id: "id",
     location: "location",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetworkwatcherConnectionAnalyzer_PropertiesFields,
     },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkwatcherConnectionAnalyzer_SystemDataFields,
-    },
     tags: "tags",
-    type: "type",
   },
 };

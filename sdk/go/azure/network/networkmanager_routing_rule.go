@@ -46,45 +46,34 @@ type NetworkmanagerRoutingRule_SystemData struct {
 }
 
 var NetworkmanagerRoutingRule_Properties_DestinationFields = ubx.FieldMap{
-		"DestinationAddress": ubx.FieldSpec{WireName: "destination_address"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DestinationAddress": ubx.FieldSpec{WireName: "destination_address"},
+	"Type":               ubx.FieldSpec{WireName: "type"},
+}
 
 var NetworkmanagerRoutingRule_Properties_NextHopFields = ubx.FieldMap{
-		"NextHopAddress": ubx.FieldSpec{WireName: "next_hop_address"},
-		"NextHopType": ubx.FieldSpec{WireName: "next_hop_type"},
-	}
+	"NextHopAddress": ubx.FieldSpec{WireName: "next_hop_address"},
+	"NextHopType":    ubx.FieldSpec{WireName: "next_hop_type"},
+}
 
 var NetworkmanagerRoutingRule_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Destination": ubx.FieldSpec{
-			WireName: "destination",
-			Kind: "object",
-			Fields: NetworkmanagerRoutingRule_Properties_DestinationFields,
-		},
-		"NextHop": ubx.FieldSpec{
-			WireName: "next_hop",
-			Kind: "object",
-			Fields: NetworkmanagerRoutingRule_Properties_NextHopFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
-
-var NetworkmanagerRoutingRule_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Destination": ubx.FieldSpec{
+		WireName: "destination",
+		Kind:     "object",
+		Fields:   NetworkmanagerRoutingRule_Properties_DestinationFields,
+	},
+	"NextHop": ubx.FieldSpec{
+		WireName: "next_hop",
+		Kind:     "object",
+		Fields:   NetworkmanagerRoutingRule_Properties_NextHopFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type NetworkmanagerRoutingRuleConfig struct {
 	// Routing rule resource.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerRoutingRuleAttrs struct {
@@ -99,13 +88,8 @@ var NetworkmanagerRoutingRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerRoutingRule_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerRoutingRule_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerRoutingRule_PropertiesFields,
 		},
 	},
 }

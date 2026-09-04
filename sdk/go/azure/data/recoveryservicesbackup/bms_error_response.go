@@ -25,24 +25,24 @@ type BmsErrorResponse_Error struct {
 }
 
 type BmsErrorResponseConfig struct {
-	JobName any
+	JobName     any
 	OperationId any
-	VaultName any
+	VaultName   any
 }
 
 type BmsErrorResponseAttrs struct {
 	// The error detail.
-	Error any
-	JobName any
+	Error       any
+	JobName     any
 	OperationId any
-	VaultName any
+	VaultName   any
 }
 
 var BmsErrorResponse = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_error_response",
 	Fields: ubx.FieldMap{
-		"JobName": ubx.FieldSpec{WireName: "job_name"},
+		"JobName":     ubx.FieldSpec{WireName: "job_name"},
 		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"VaultName":   ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

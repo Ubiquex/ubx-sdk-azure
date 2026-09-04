@@ -87,20 +87,9 @@ const HealthcareApisWorkspace_PropertiesFields: FieldMap = {
   publicNetworkAccess: "public_network_access",
 };
 
-const HealthcareApisWorkspace_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface HealthcareApisWorkspaceConfig {
   /** Workspaces resource specific properties. */
   properties?: HealthcareApisWorkspace_Properties | Computed<HealthcareApisWorkspace_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: HealthcareApisWorkspace_SystemData | Computed<HealthcareApisWorkspace_SystemData>;
 }
 
 export interface HealthcareApisWorkspaceAttrs {
@@ -117,11 +106,6 @@ export const HealthcareApisWorkspace: ResourceBinding<HealthcareApisWorkspaceCon
       wireName: "properties",
       kind: "object",
       fields: HealthcareApisWorkspace_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: HealthcareApisWorkspace_SystemDataFields,
     },
   },
 };

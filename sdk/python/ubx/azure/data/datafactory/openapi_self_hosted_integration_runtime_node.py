@@ -10,7 +10,6 @@ import ubx_sdk as ubx
 class OpenapiSelfHostedIntegrationRuntimeNodeConfig:
     factory_name: Any = None
     integration_runtime_name: Any = None
-    node_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiSelfHostedIntegrationRuntimeNodeAttrs:
@@ -57,6 +56,5 @@ OpenapiSelfHostedIntegrationRuntimeNode = ubx.DataSourceBinding(
     fields={
         "factory_name": ubx.FieldSpec(wire_name="factory_name"),
         "integration_runtime_name": ubx.FieldSpec(wire_name="integration_runtime_name"),
-        "node_name": ubx.FieldSpec(wire_name="node_name"),
     },
 )

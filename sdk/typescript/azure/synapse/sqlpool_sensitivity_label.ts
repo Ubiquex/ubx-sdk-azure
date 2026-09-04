@@ -34,8 +34,6 @@ const SqlpoolSensitivityLabel_PropertiesFields: FieldMap = {
 };
 
 export interface SqlpoolSensitivityLabelConfig {
-  /** managed by */
-  managedBy?: string | Computed<string>;
   /** Properties of a sensitivity label. */
   properties?: SqlpoolSensitivityLabel_Properties | Computed<SqlpoolSensitivityLabel_Properties>;
 }
@@ -50,7 +48,6 @@ export interface SqlpoolSensitivityLabelAttrs {
 export const SqlpoolSensitivityLabel: ResourceBinding<SqlpoolSensitivityLabelConfig, SqlpoolSensitivityLabelAttrs> = {
   wireType: "azure_synapse_sqlpool_sensitivity_label",
   fields: {
-    managedBy: "managed_by",
     properties: {
       wireName: "properties",
       kind: "object",

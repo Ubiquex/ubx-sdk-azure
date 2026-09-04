@@ -44,13 +44,13 @@ type PrivatelinkforazureadPrivateLinkPolicyAttrs struct {
 var PrivatelinkforazureadPrivateLinkPolicy = ubx.ResourceBinding{
 	WireType: "azure_azureactivedirectory_privatelinkforazuread_private_link_policy",
 	Fields: ubx.FieldMap{
-		"AllTenants": ubx.FieldSpec{WireName: "all_tenants"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"OwnerTenantId": ubx.FieldSpec{WireName: "owner_tenant_id"},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"AllTenants":     ubx.FieldSpec{WireName: "all_tenants"},
+		"Name":           ubx.FieldSpec{WireName: "name"},
+		"OwnerTenantId":  ubx.FieldSpec{WireName: "owner_tenant_id"},
+		"ResourceGroup":  ubx.FieldSpec{WireName: "resource_group"},
+		"ResourceName":   ubx.FieldSpec{WireName: "resource_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Tenants": ubx.FieldSpec{WireName: "tenants"},
+		"Tags":           ubx.FieldSpec{WireName: "tags"},
+		"Tenants":        ubx.FieldSpec{WireName: "tenants"},
 	},
 }

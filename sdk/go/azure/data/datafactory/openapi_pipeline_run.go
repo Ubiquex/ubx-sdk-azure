@@ -18,13 +18,12 @@ type OpenapiPipelineRun_InvokedBy struct {
 
 type OpenapiPipelineRunConfig struct {
 	FactoryName any
-	RunId any
 }
 
 type OpenapiPipelineRunAttrs struct {
 	// The duration of a pipeline run.
 	DurationInMs any
-	FactoryName any
+	FactoryName  any
 	// Provides entity name and id that started the pipeline run.
 	InvokedBy any
 	// Indicates if the recovered pipeline run is the latest in its group.
@@ -43,7 +42,7 @@ type OpenapiPipelineRunAttrs struct {
 	RunEnd any
 	// Identifier that correlates all the recovery runs of a pipeline run.
 	RunGroupId any
-	RunId any
+	RunId      any
 	// The start time of a pipeline run in ISO8601 format.
 	RunStart any
 	// The status of a pipeline run. Possible values: Queued, InProgress, Succeeded, Failed, Canceling, Cancelled
@@ -54,6 +53,5 @@ var OpenapiPipelineRun = ubx.DataSourceBinding{
 	WireType: "azure_datafactory_openapi_pipeline_run",
 	Fields: ubx.FieldMap{
 		"FactoryName": ubx.FieldSpec{WireName: "factory_name"},
-		"RunId": ubx.FieldSpec{WireName: "run_id"},
 	},
 }

@@ -22,8 +22,8 @@ type ManagedidentitySystemAssignedIdentityAttrs struct {
 	Location any
 	// The properties associated with the system assigned identity.
 	Properties any
-	Scope any
-	Tags any
+	Scope      any
+	Tags       any
 }
 
 var ManagedidentitySystemAssignedIdentity = ubx.DataSourceBinding{

@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRoute_Value_Properties_CacheConfiguration_CompressionSettings struct {
 	ContentTypesToCompress any
-	IsCompressionEnabled any
+	IsCompressionEnabled   any
 }
 
 type OpenapiRoute_Value_Properties_CacheConfiguration struct {
-	CompressionSettings any
-	QueryParameters any
+	CompressionSettings        any
+	QueryParameters            any
 	QueryStringCachingBehavior any
 }
 
 type OpenapiRoute_Value_Properties_CustomDomains struct {
-	Id any
+	Id       any
 	IsActive any
 }
 
@@ -24,20 +24,20 @@ type OpenapiRoute_Value_Properties_OriginGroup struct {
 }
 
 type OpenapiRoute_Value_Properties struct {
-	CacheConfiguration any
-	CustomDomains any
-	DeploymentStatus any
-	EnabledState any
-	EndpointName any
-	ForwardingProtocol any
-	HttpsRedirect any
+	CacheConfiguration  any
+	CustomDomains       any
+	DeploymentStatus    any
+	EnabledState        any
+	EndpointName        any
+	ForwardingProtocol  any
+	HttpsRedirect       any
 	LinkToDefaultDomain any
-	OriginGroup any
-	OriginPath any
-	PatternsToMatch any
-	ProvisioningState any
-	RuleSets any
-	SupportedProtocols any
+	OriginGroup         any
+	OriginPath          any
+	PatternsToMatch     any
+	ProvisioningState   any
+	RuleSets            any
+	SupportedProtocols  any
 }
 
 type OpenapiRoute_Value struct {
@@ -46,13 +46,13 @@ type OpenapiRoute_Value struct {
 
 type OpenapiRouteConfig struct {
 	EndpointName any
-	ProfileName any
+	ProfileName  any
 }
 
 type OpenapiRouteAttrs struct {
 	EndpointName any
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	// The Route items on this page
 	Value any
@@ -62,6 +62,6 @@ var OpenapiRoute = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_route",
 	Fields: ubx.FieldMap{
 		"EndpointName": ubx.FieldSpec{WireName: "endpoint_name"},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
+		"ProfileName":  ubx.FieldSpec{WireName: "profile_name"},
 	},
 }

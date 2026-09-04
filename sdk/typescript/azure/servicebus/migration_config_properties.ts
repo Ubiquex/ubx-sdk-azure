@@ -23,8 +23,6 @@ const MigrationConfigProperties_PropertiesFields: FieldMap = {
 };
 
 export interface MigrationConfigPropertiesConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Properties required to the Create Migration Configuration */
   properties?: MigrationConfigProperties_Properties | Computed<MigrationConfigProperties_Properties>;
 }
@@ -39,7 +37,6 @@ export interface MigrationConfigPropertiesAttrs {
 export const MigrationConfigProperties: ResourceBinding<MigrationConfigPropertiesConfig, MigrationConfigPropertiesAttrs> = {
   wireType: "azure_servicebus_migration_config_properties",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

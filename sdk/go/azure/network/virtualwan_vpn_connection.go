@@ -4,14 +4,14 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanVpnConnection_Properties_IpsecPolicies struct {
-	DhGroup any
-	IkeEncryption any
-	IkeIntegrity any
-	IpsecEncryption any
-	IpsecIntegrity any
-	PfsGroup any
+	DhGroup             any
+	IkeEncryption       any
+	IkeIntegrity        any
+	IpsecEncryption     any
+	IpsecIntegrity      any
+	PfsGroup            any
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds any
+	SaLifeTimeSeconds   any
 }
 
 type VirtualwanVpnConnection_Properties_RemoteVpnSite struct {
@@ -27,8 +27,8 @@ type VirtualwanVpnConnection_Properties_RoutingConfiguration_PropagatedRouteTabl
 }
 
 type VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
@@ -62,39 +62,39 @@ type VirtualwanVpnConnection_Properties_RoutingConfiguration struct {
 }
 
 type VirtualwanVpnConnection_Properties_TrafficSelectorPolicies struct {
-	LocalAddressRanges any
+	LocalAddressRanges  any
 	RemoteAddressRanges any
 }
 
 type VirtualwanVpnConnection_Properties_VpnLinkConnections_Properties_VpnGatewayCustomBgpAddresses struct {
 	CustomBgpIpAddress any
-	IpConfigurationId any
+	IpConfigurationId  any
 }
 
 type VirtualwanVpnConnection_Properties_VpnLinkConnections_Properties struct {
-	ConnectionBandwidth any
-	ConnectionStatus any
-	DpdTimeoutSeconds any
-	EgressBytesTransferred any
-	EgressNatRules any
-	EnableBgp any
-	EnableRateLimiting any
-	IngressBytesTransferred any
-	IngressNatRules any
-	IpsecPolicies any
-	ProvisioningState any
-	RoutingWeight any
-	SharedKey any
-	UseLocalAzureIpAddress any
+	ConnectionBandwidth            any
+	ConnectionStatus               any
+	DpdTimeoutSeconds              any
+	EgressBytesTransferred         any
+	EgressNatRules                 any
+	EnableBgp                      any
+	EnableRateLimiting             any
+	IngressBytesTransferred        any
+	IngressNatRules                any
+	IpsecPolicies                  any
+	ProvisioningState              any
+	RoutingWeight                  any
+	SharedKey                      any
+	UseLocalAzureIpAddress         any
 	UsePolicyBasedTrafficSelectors any
-	VpnConnectionProtocolType any
-	VpnGatewayCustomBgpAddresses any
-	VpnLinkConnectionMode any
-	VpnSiteLink any
+	VpnConnectionProtocolType      any
+	VpnGatewayCustomBgpAddresses   any
+	VpnLinkConnectionMode          any
+	VpnSiteLink                    any
 }
 
 type VirtualwanVpnConnection_Properties_VpnLinkConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -140,192 +140,190 @@ type VirtualwanVpnConnection_Properties struct {
 }
 
 var VirtualwanVpnConnection_Properties_IpsecPoliciesFields = ubx.FieldMap{
-		"DhGroup": ubx.FieldSpec{WireName: "dh_group"},
-		"IkeEncryption": ubx.FieldSpec{WireName: "ike_encryption"},
-		"IkeIntegrity": ubx.FieldSpec{WireName: "ike_integrity"},
-		"IpsecEncryption": ubx.FieldSpec{WireName: "ipsec_encryption"},
-		"IpsecIntegrity": ubx.FieldSpec{WireName: "ipsec_integrity"},
-		"PfsGroup": ubx.FieldSpec{WireName: "pfs_group"},
-		"SaDataSizeKilobytes": ubx.FieldSpec{WireName: "sa_data_size_kilobytes"},
-		"SaLifeTimeSeconds": ubx.FieldSpec{WireName: "sa_life_time_seconds"},
-	}
+	"DhGroup":             ubx.FieldSpec{WireName: "dh_group"},
+	"IkeEncryption":       ubx.FieldSpec{WireName: "ike_encryption"},
+	"IkeIntegrity":        ubx.FieldSpec{WireName: "ike_integrity"},
+	"IpsecEncryption":     ubx.FieldSpec{WireName: "ipsec_encryption"},
+	"IpsecIntegrity":      ubx.FieldSpec{WireName: "ipsec_integrity"},
+	"PfsGroup":            ubx.FieldSpec{WireName: "pfs_group"},
+	"SaDataSizeKilobytes": ubx.FieldSpec{WireName: "sa_data_size_kilobytes"},
+	"SaLifeTimeSeconds":   ubx.FieldSpec{WireName: "sa_life_time_seconds"},
+}
 
 var VirtualwanVpnConnection_Properties_RemoteVpnSiteFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualwanVpnConnection_Properties_RoutingConfiguration_PropagatedRouteTablesFields = ubx.FieldMap{
-		"Ids": ubx.FieldSpec{
-			WireName: "ids",
-			Kind: "list",
-			Fields: VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
-		},
-		"Labels": ubx.FieldSpec{WireName: "labels"},
-	}
+	"Ids": ubx.FieldSpec{
+		WireName: "ids",
+		Kind:     "list",
+		Fields:   VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
+	},
+	"Labels": ubx.FieldSpec{WireName: "labels"},
+}
 
 var VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
-	}
+	"AddressPrefixes":  ubx.FieldSpec{WireName: "address_prefixes"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+	"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
+}
 
 var VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields = ubx.FieldMap{
-		"PropagateStaticRoutes": ubx.FieldSpec{WireName: "propagate_static_routes"},
-		"VnetLocalRouteOverrideCriteria": ubx.FieldSpec{WireName: "vnet_local_route_override_criteria"},
-	}
+	"PropagateStaticRoutes":          ubx.FieldSpec{WireName: "propagate_static_routes"},
+	"VnetLocalRouteOverrideCriteria": ubx.FieldSpec{WireName: "vnet_local_route_override_criteria"},
+}
 
 var VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutesFields = ubx.FieldMap{
-		"BgpConnections": ubx.FieldSpec{
-			WireName: "bgp_connections",
-			Kind: "list",
-			Fields: VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
-		},
-		"StaticRoutes": ubx.FieldSpec{
-			WireName: "static_routes",
-			Kind: "list",
-			Fields: VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields,
-		},
-		"StaticRoutesConfig": ubx.FieldSpec{
-			WireName: "static_routes_config",
-			Kind: "object",
-			Fields: VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields,
-		},
-	}
+	"BgpConnections": ubx.FieldSpec{
+		WireName: "bgp_connections",
+		Kind:     "list",
+		Fields:   VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
+	},
+	"StaticRoutes": ubx.FieldSpec{
+		WireName: "static_routes",
+		Kind:     "list",
+		Fields:   VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields,
+	},
+	"StaticRoutesConfig": ubx.FieldSpec{
+		WireName: "static_routes_config",
+		Kind:     "object",
+		Fields:   VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields,
+	},
+}
 
 var VirtualwanVpnConnection_Properties_RoutingConfigurationFields = ubx.FieldMap{
-		"AssociatedRouteTable": ubx.FieldSpec{
-			WireName: "associated_route_table",
-			Kind: "object",
-			Fields: VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
-		},
-		"InboundRouteMap": ubx.FieldSpec{
-			WireName: "inbound_route_map",
-			Kind: "object",
-			Fields: VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
-		},
-		"OutboundRouteMap": ubx.FieldSpec{
-			WireName: "outbound_route_map",
-			Kind: "object",
-			Fields: VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
-		},
-		"PropagatedRouteTables": ubx.FieldSpec{
-			WireName: "propagated_route_tables",
-			Kind: "object",
-			Fields: VirtualwanVpnConnection_Properties_RoutingConfiguration_PropagatedRouteTablesFields,
-		},
-		"VnetRoutes": ubx.FieldSpec{
-			WireName: "vnet_routes",
-			Kind: "object",
-			Fields: VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutesFields,
-		},
-	}
+	"AssociatedRouteTable": ubx.FieldSpec{
+		WireName: "associated_route_table",
+		Kind:     "object",
+		Fields:   VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
+	},
+	"InboundRouteMap": ubx.FieldSpec{
+		WireName: "inbound_route_map",
+		Kind:     "object",
+		Fields:   VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
+	},
+	"OutboundRouteMap": ubx.FieldSpec{
+		WireName: "outbound_route_map",
+		Kind:     "object",
+		Fields:   VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
+	},
+	"PropagatedRouteTables": ubx.FieldSpec{
+		WireName: "propagated_route_tables",
+		Kind:     "object",
+		Fields:   VirtualwanVpnConnection_Properties_RoutingConfiguration_PropagatedRouteTablesFields,
+	},
+	"VnetRoutes": ubx.FieldSpec{
+		WireName: "vnet_routes",
+		Kind:     "object",
+		Fields:   VirtualwanVpnConnection_Properties_RoutingConfiguration_VnetRoutesFields,
+	},
+}
 
 var VirtualwanVpnConnection_Properties_TrafficSelectorPoliciesFields = ubx.FieldMap{
-		"LocalAddressRanges": ubx.FieldSpec{WireName: "local_address_ranges"},
-		"RemoteAddressRanges": ubx.FieldSpec{WireName: "remote_address_ranges"},
-	}
+	"LocalAddressRanges":  ubx.FieldSpec{WireName: "local_address_ranges"},
+	"RemoteAddressRanges": ubx.FieldSpec{WireName: "remote_address_ranges"},
+}
 
 var VirtualwanVpnConnection_Properties_VpnLinkConnections_Properties_VpnGatewayCustomBgpAddressesFields = ubx.FieldMap{
-		"CustomBgpIpAddress": ubx.FieldSpec{WireName: "custom_bgp_ip_address"},
-		"IpConfigurationId": ubx.FieldSpec{WireName: "ip_configuration_id"},
-	}
+	"CustomBgpIpAddress": ubx.FieldSpec{WireName: "custom_bgp_ip_address"},
+	"IpConfigurationId":  ubx.FieldSpec{WireName: "ip_configuration_id"},
+}
 
 var VirtualwanVpnConnection_Properties_VpnLinkConnections_PropertiesFields = ubx.FieldMap{
-		"ConnectionBandwidth": ubx.FieldSpec{WireName: "connection_bandwidth"},
-		"ConnectionStatus": ubx.FieldSpec{WireName: "connection_status"},
-		"DpdTimeoutSeconds": ubx.FieldSpec{WireName: "dpd_timeout_seconds"},
-		"EgressBytesTransferred": ubx.FieldSpec{WireName: "egress_bytes_transferred"},
-		"EgressNatRules": ubx.FieldSpec{
-			WireName: "egress_nat_rules",
-			Kind: "list",
-			Fields: VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
-		},
-		"EnableBgp": ubx.FieldSpec{WireName: "enable_bgp"},
-		"EnableRateLimiting": ubx.FieldSpec{WireName: "enable_rate_limiting"},
-		"IngressBytesTransferred": ubx.FieldSpec{WireName: "ingress_bytes_transferred"},
-		"IngressNatRules": ubx.FieldSpec{
-			WireName: "ingress_nat_rules",
-			Kind: "list",
-			Fields: VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
-		},
-		"IpsecPolicies": ubx.FieldSpec{
-			WireName: "ipsec_policies",
-			Kind: "list",
-			Fields: VirtualwanVpnConnection_Properties_IpsecPoliciesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RoutingWeight": ubx.FieldSpec{WireName: "routing_weight"},
-		"SharedKey": ubx.FieldSpec{WireName: "shared_key"},
-		"UseLocalAzureIpAddress": ubx.FieldSpec{WireName: "use_local_azure_ip_address"},
-		"UsePolicyBasedTrafficSelectors": ubx.FieldSpec{WireName: "use_policy_based_traffic_selectors"},
-		"VpnConnectionProtocolType": ubx.FieldSpec{WireName: "vpn_connection_protocol_type"},
-		"VpnGatewayCustomBgpAddresses": ubx.FieldSpec{
-			WireName: "vpn_gateway_custom_bgp_addresses",
-			Kind: "list",
-			Fields: VirtualwanVpnConnection_Properties_VpnLinkConnections_Properties_VpnGatewayCustomBgpAddressesFields,
-		},
-		"VpnLinkConnectionMode": ubx.FieldSpec{WireName: "vpn_link_connection_mode"},
-		"VpnSiteLink": ubx.FieldSpec{
-			WireName: "vpn_site_link",
-			Kind: "object",
-			Fields: VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
-		},
-	}
+	"ConnectionBandwidth":    ubx.FieldSpec{WireName: "connection_bandwidth"},
+	"ConnectionStatus":       ubx.FieldSpec{WireName: "connection_status"},
+	"DpdTimeoutSeconds":      ubx.FieldSpec{WireName: "dpd_timeout_seconds"},
+	"EgressBytesTransferred": ubx.FieldSpec{WireName: "egress_bytes_transferred"},
+	"EgressNatRules": ubx.FieldSpec{
+		WireName: "egress_nat_rules",
+		Kind:     "list",
+		Fields:   VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
+	},
+	"EnableBgp":               ubx.FieldSpec{WireName: "enable_bgp"},
+	"EnableRateLimiting":      ubx.FieldSpec{WireName: "enable_rate_limiting"},
+	"IngressBytesTransferred": ubx.FieldSpec{WireName: "ingress_bytes_transferred"},
+	"IngressNatRules": ubx.FieldSpec{
+		WireName: "ingress_nat_rules",
+		Kind:     "list",
+		Fields:   VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
+	},
+	"IpsecPolicies": ubx.FieldSpec{
+		WireName: "ipsec_policies",
+		Kind:     "list",
+		Fields:   VirtualwanVpnConnection_Properties_IpsecPoliciesFields,
+	},
+	"ProvisioningState":              ubx.FieldSpec{WireName: "provisioning_state"},
+	"RoutingWeight":                  ubx.FieldSpec{WireName: "routing_weight"},
+	"SharedKey":                      ubx.FieldSpec{WireName: "shared_key"},
+	"UseLocalAzureIpAddress":         ubx.FieldSpec{WireName: "use_local_azure_ip_address"},
+	"UsePolicyBasedTrafficSelectors": ubx.FieldSpec{WireName: "use_policy_based_traffic_selectors"},
+	"VpnConnectionProtocolType":      ubx.FieldSpec{WireName: "vpn_connection_protocol_type"},
+	"VpnGatewayCustomBgpAddresses": ubx.FieldSpec{
+		WireName: "vpn_gateway_custom_bgp_addresses",
+		Kind:     "list",
+		Fields:   VirtualwanVpnConnection_Properties_VpnLinkConnections_Properties_VpnGatewayCustomBgpAddressesFields,
+	},
+	"VpnLinkConnectionMode": ubx.FieldSpec{WireName: "vpn_link_connection_mode"},
+	"VpnSiteLink": ubx.FieldSpec{
+		WireName: "vpn_site_link",
+		Kind:     "object",
+		Fields:   VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
+	},
+}
 
 var VirtualwanVpnConnection_Properties_VpnLinkConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVpnConnection_Properties_VpnLinkConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanVpnConnection_Properties_VpnLinkConnections_PropertiesFields,
+	},
+}
 
 var VirtualwanVpnConnection_PropertiesFields = ubx.FieldMap{
-		"ConnectionBandwidth": ubx.FieldSpec{WireName: "connection_bandwidth"},
-		"ConnectionStatus": ubx.FieldSpec{WireName: "connection_status"},
-		"DpdTimeoutSeconds": ubx.FieldSpec{WireName: "dpd_timeout_seconds"},
-		"EgressBytesTransferred": ubx.FieldSpec{WireName: "egress_bytes_transferred"},
-		"EnableBgp": ubx.FieldSpec{WireName: "enable_bgp"},
-		"EnableInternetSecurity": ubx.FieldSpec{WireName: "enable_internet_security"},
-		"EnableRateLimiting": ubx.FieldSpec{WireName: "enable_rate_limiting"},
-		"IngressBytesTransferred": ubx.FieldSpec{WireName: "ingress_bytes_transferred"},
-		"IpsecPolicies": ubx.FieldSpec{
-			WireName: "ipsec_policies",
-			Kind: "list",
-			Fields: VirtualwanVpnConnection_Properties_IpsecPoliciesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RemoteVpnSite": ubx.FieldSpec{
-			WireName: "remote_vpn_site",
-			Kind: "object",
-			Fields: VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
-		},
-		"RoutingConfiguration": ubx.FieldSpec{
-			WireName: "routing_configuration",
-			Kind: "object",
-			Fields: VirtualwanVpnConnection_Properties_RoutingConfigurationFields,
-		},
-		"RoutingWeight": ubx.FieldSpec{WireName: "routing_weight"},
-		"SharedKey": ubx.FieldSpec{WireName: "shared_key"},
-		"TrafficSelectorPolicies": ubx.FieldSpec{
-			WireName: "traffic_selector_policies",
-			Kind: "list",
-			Fields: VirtualwanVpnConnection_Properties_TrafficSelectorPoliciesFields,
-		},
-		"UseLocalAzureIpAddress": ubx.FieldSpec{WireName: "use_local_azure_ip_address"},
-		"UsePolicyBasedTrafficSelectors": ubx.FieldSpec{WireName: "use_policy_based_traffic_selectors"},
-		"VpnConnectionProtocolType": ubx.FieldSpec{WireName: "vpn_connection_protocol_type"},
-		"VpnLinkConnections": ubx.FieldSpec{
-			WireName: "vpn_link_connections",
-			Kind: "list",
-			Fields: VirtualwanVpnConnection_Properties_VpnLinkConnectionsFields,
-		},
-	}
+	"ConnectionBandwidth":     ubx.FieldSpec{WireName: "connection_bandwidth"},
+	"ConnectionStatus":        ubx.FieldSpec{WireName: "connection_status"},
+	"DpdTimeoutSeconds":       ubx.FieldSpec{WireName: "dpd_timeout_seconds"},
+	"EgressBytesTransferred":  ubx.FieldSpec{WireName: "egress_bytes_transferred"},
+	"EnableBgp":               ubx.FieldSpec{WireName: "enable_bgp"},
+	"EnableInternetSecurity":  ubx.FieldSpec{WireName: "enable_internet_security"},
+	"EnableRateLimiting":      ubx.FieldSpec{WireName: "enable_rate_limiting"},
+	"IngressBytesTransferred": ubx.FieldSpec{WireName: "ingress_bytes_transferred"},
+	"IpsecPolicies": ubx.FieldSpec{
+		WireName: "ipsec_policies",
+		Kind:     "list",
+		Fields:   VirtualwanVpnConnection_Properties_IpsecPoliciesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RemoteVpnSite": ubx.FieldSpec{
+		WireName: "remote_vpn_site",
+		Kind:     "object",
+		Fields:   VirtualwanVpnConnection_Properties_RemoteVpnSiteFields,
+	},
+	"RoutingConfiguration": ubx.FieldSpec{
+		WireName: "routing_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanVpnConnection_Properties_RoutingConfigurationFields,
+	},
+	"RoutingWeight": ubx.FieldSpec{WireName: "routing_weight"},
+	"SharedKey":     ubx.FieldSpec{WireName: "shared_key"},
+	"TrafficSelectorPolicies": ubx.FieldSpec{
+		WireName: "traffic_selector_policies",
+		Kind:     "list",
+		Fields:   VirtualwanVpnConnection_Properties_TrafficSelectorPoliciesFields,
+	},
+	"UseLocalAzureIpAddress":         ubx.FieldSpec{WireName: "use_local_azure_ip_address"},
+	"UsePolicyBasedTrafficSelectors": ubx.FieldSpec{WireName: "use_policy_based_traffic_selectors"},
+	"VpnConnectionProtocolType":      ubx.FieldSpec{WireName: "vpn_connection_protocol_type"},
+	"VpnLinkConnections": ubx.FieldSpec{
+		WireName: "vpn_link_connections",
+		Kind:     "list",
+		Fields:   VirtualwanVpnConnection_Properties_VpnLinkConnectionsFields,
+	},
+}
 
 type VirtualwanVpnConnectionConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Parameters for VpnConnection.
@@ -344,12 +342,11 @@ type VirtualwanVpnConnectionAttrs struct {
 var VirtualwanVpnConnection = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_vpn_connection",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVpnConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanVpnConnection_PropertiesFields,
 		},
 	},
 }

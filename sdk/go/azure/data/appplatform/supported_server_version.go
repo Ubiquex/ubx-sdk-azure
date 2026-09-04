@@ -4,25 +4,25 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SupportedServerVersion_Value struct {
-	Server any
-	Value any
+	Server  any
+	Value   any
 	Version any
 }
 
 type SupportedServerVersionConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type SupportedServerVersionAttrs struct {
 	ApiVersion any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of the supported server versions.
 	Value any
 }
@@ -30,9 +30,9 @@ type SupportedServerVersionAttrs struct {
 var SupportedServerVersion = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_supported_server_version",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

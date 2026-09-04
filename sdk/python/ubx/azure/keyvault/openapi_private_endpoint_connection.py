@@ -57,12 +57,8 @@ _OpenapiPrivateEndpointConnection_PropertiesFields = {
 class OpenapiPrivateEndpointConnectionConfig:
     # The ETag (or entity tag) HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content was not changed. It is a string of ASCII characters placed between double quotes, like "675af34563dc-tr34".
     etag: Any = None
-    # Azure location of the key vault resource.
-    location: Any = None
     # Properties of the private endpoint connection resource.
     properties: Any = None
-    # Tags assigned to the key vault resource.
-    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiPrivateEndpointConnectionAttrs:
@@ -79,12 +75,10 @@ OpenapiPrivateEndpointConnection = ubx.ResourceBinding(
     wire_type="azure_keyvault_openapi_private_endpoint_connection",
     fields={
         "etag": ubx.FieldSpec(wire_name="etag"),
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiPrivateEndpointConnection_PropertiesFields,
         ),
-        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -3,14 +3,51 @@ package cdn
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type OpenapiCustomDomain_Properties_CustomHttpsParameters struct {
+	// Defines the source of the SSL certificate.
+	CertificateSource any
+	// TLS protocol version that will be used for Https
+	MinimumTlsVersion any
+	// Defines the TLS extension protocol that is used for secure delivery.
+	ProtocolType any
+}
+
 type OpenapiCustomDomain_Properties struct {
+	// The JSON object that contains the properties to secure a custom domain.
+	CustomHttpsParameters any
+	// Provisioning status of the custom domain.
+	CustomHttpsProvisioningState any
+	// Provisioning substate shows the progress of custom HTTPS enabling/disabling process step by step.
+	CustomHttpsProvisioningSubstate any
 	// The host name of the custom domain. Must be a domain name.
 	HostName any
+	// Provisioning status of the custom domain.
+	ProvisioningState any
+	// Resource status of the custom domain.
+	ResourceState any
+	// Special validation or data may be required when delivering CDN to some regions due to local compliance reasons. E.g. ICP license number of a custom domain is required to deliver content in China.
+	ValidationData any
+}
+
+var OpenapiCustomDomain_Properties_CustomHttpsParametersFields = ubx.FieldMap{
+	"CertificateSource": ubx.FieldSpec{WireName: "certificate_source"},
+	"MinimumTlsVersion": ubx.FieldSpec{WireName: "minimum_tls_version"},
+	"ProtocolType":      ubx.FieldSpec{WireName: "protocol_type"},
 }
 
 var OpenapiCustomDomain_PropertiesFields = ubx.FieldMap{
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-	}
+	"CustomHttpsParameters": ubx.FieldSpec{
+		WireName: "custom_https_parameters",
+		Kind:     "object",
+		Fields:   OpenapiCustomDomain_Properties_CustomHttpsParametersFields,
+	},
+	"CustomHttpsProvisioningState":    ubx.FieldSpec{WireName: "custom_https_provisioning_state"},
+	"CustomHttpsProvisioningSubstate": ubx.FieldSpec{WireName: "custom_https_provisioning_substate"},
+	"HostName":                        ubx.FieldSpec{WireName: "host_name"},
+	"ProvisioningState":               ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceState":                   ubx.FieldSpec{WireName: "resource_state"},
+	"ValidationData":                  ubx.FieldSpec{WireName: "validation_data"},
+}
 
 type OpenapiCustomDomainConfig struct {
 	// The JSON object that contains the properties of the custom domain to create.
@@ -27,8 +64,8 @@ var OpenapiCustomDomain = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCustomDomain_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCustomDomain_PropertiesFields,
 		},
 	},
 }

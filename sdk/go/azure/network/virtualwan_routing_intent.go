@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanRoutingIntent_Properties_RoutingPolicies struct {
 	Destinations any
-	Name any
-	NextHop any
+	Name         any
+	NextHop      any
 }
 
 type VirtualwanRoutingIntent_Properties struct {
@@ -17,23 +17,21 @@ type VirtualwanRoutingIntent_Properties struct {
 }
 
 var VirtualwanRoutingIntent_Properties_RoutingPoliciesFields = ubx.FieldMap{
-		"Destinations": ubx.FieldSpec{WireName: "destinations"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NextHop": ubx.FieldSpec{WireName: "next_hop"},
-	}
+	"Destinations": ubx.FieldSpec{WireName: "destinations"},
+	"Name":         ubx.FieldSpec{WireName: "name"},
+	"NextHop":      ubx.FieldSpec{WireName: "next_hop"},
+}
 
 var VirtualwanRoutingIntent_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RoutingPolicies": ubx.FieldSpec{
-			WireName: "routing_policies",
-			Kind: "list",
-			Fields: VirtualwanRoutingIntent_Properties_RoutingPoliciesFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RoutingPolicies": ubx.FieldSpec{
+		WireName: "routing_policies",
+		Kind:     "list",
+		Fields:   VirtualwanRoutingIntent_Properties_RoutingPoliciesFields,
+	},
+}
 
 type VirtualwanRoutingIntentConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// The properties of a RoutingIntent resource.
 	Properties any
 }
@@ -48,11 +46,10 @@ type VirtualwanRoutingIntentAttrs struct {
 var VirtualwanRoutingIntent = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_routing_intent",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanRoutingIntent_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanRoutingIntent_PropertiesFields,
 		},
 	},
 }

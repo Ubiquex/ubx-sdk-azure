@@ -20,90 +20,90 @@ type ManagedclustersAgentPool_Value_Properties_GpuProfile struct {
 }
 
 type ManagedclustersAgentPool_Value_Properties_KubeletConfig struct {
-	AllowedUnsafeSysctls any
-	ContainerLogMaxFiles any
+	AllowedUnsafeSysctls  any
+	ContainerLogMaxFiles  any
 	ContainerLogMaxSizeMb any
-	CpuCfsQuota any
-	CpuCfsQuotaPeriod any
-	CpuManagerPolicy any
-	FailSwapOn any
-	ImageGcHighThreshold any
-	ImageGcLowThreshold any
-	PodMaxPids any
+	CpuCfsQuota           any
+	CpuCfsQuotaPeriod     any
+	CpuManagerPolicy      any
+	FailSwapOn            any
+	ImageGcHighThreshold  any
+	ImageGcLowThreshold   any
+	PodMaxPids            any
 	TopologyManagerPolicy any
 }
 
 type ManagedclustersAgentPool_Value_Properties_LinuxOsconfig_Sysctls struct {
-	FsAioMaxNr any
-	FsFileMax any
-	FsInotifyMaxUserWatches any
-	FsNrOpen any
-	KernelThreadsMax any
-	NetCoreNetdevMaxBacklog any
-	NetCoreOptmemMax any
-	NetCoreRmemDefault any
-	NetCoreRmemMax any
-	NetCoreSomaxconn any
-	NetCoreWmemDefault any
-	NetCoreWmemMax any
-	NetIpv4IpLocalPortRange any
-	NetIpv4NeighDefaultGcThresh1 any
-	NetIpv4NeighDefaultGcThresh2 any
-	NetIpv4NeighDefaultGcThresh3 any
-	NetIpv4TcpFinTimeout any
-	NetIpv4TcpKeepaliveProbes any
-	NetIpv4TcpKeepaliveTime any
-	NetIpv4TcpMaxSynBacklog any
-	NetIpv4TcpMaxTwBuckets any
-	NetIpv4TcpTwReuse any
-	NetIpv4TcpkeepaliveIntvl any
+	FsAioMaxNr                     any
+	FsFileMax                      any
+	FsInotifyMaxUserWatches        any
+	FsNrOpen                       any
+	KernelThreadsMax               any
+	NetCoreNetdevMaxBacklog        any
+	NetCoreOptmemMax               any
+	NetCoreRmemDefault             any
+	NetCoreRmemMax                 any
+	NetCoreSomaxconn               any
+	NetCoreWmemDefault             any
+	NetCoreWmemMax                 any
+	NetIpv4IpLocalPortRange        any
+	NetIpv4NeighDefaultGcThresh1   any
+	NetIpv4NeighDefaultGcThresh2   any
+	NetIpv4NeighDefaultGcThresh3   any
+	NetIpv4TcpFinTimeout           any
+	NetIpv4TcpKeepaliveProbes      any
+	NetIpv4TcpKeepaliveTime        any
+	NetIpv4TcpMaxSynBacklog        any
+	NetIpv4TcpMaxTwBuckets         any
+	NetIpv4TcpTwReuse              any
+	NetIpv4TcpkeepaliveIntvl       any
 	NetNetfilterNfConntrackBuckets any
-	NetNetfilterNfConntrackMax any
-	VmMaxMapCount any
-	VmSwappiness any
-	VmVfsCachePressure any
+	NetNetfilterNfConntrackMax     any
+	VmMaxMapCount                  any
+	VmSwappiness                   any
+	VmVfsCachePressure             any
 }
 
 type ManagedclustersAgentPool_Value_Properties_LinuxOsconfig struct {
-	SwapFileSizeMb any
-	Sysctls any
-	TransparentHugePageDefrag any
+	SwapFileSizeMb             any
+	Sysctls                    any
+	TransparentHugePageDefrag  any
 	TransparentHugePageEnabled any
 }
 
 type ManagedclustersAgentPool_Value_Properties_LocalDnsprofile_KubeDnsoverrides struct {
-	CacheDurationInSeconds any
-	ForwardDestination any
-	ForwardPolicy any
-	MaxConcurrent any
-	Protocol any
-	QueryLogging any
-	ServeStale any
+	CacheDurationInSeconds      any
+	ForwardDestination          any
+	ForwardPolicy               any
+	MaxConcurrent               any
+	Protocol                    any
+	QueryLogging                any
+	ServeStale                  any
 	ServeStaleDurationInSeconds any
 }
 
 type ManagedclustersAgentPool_Value_Properties_LocalDnsprofile struct {
 	KubeDnsoverrides any
-	Mode any
-	State any
+	Mode             any
+	State            any
 	VnetDnsoverrides any
 }
 
 type ManagedclustersAgentPool_Value_Properties_NetworkProfile_AllowedHostPorts struct {
-	PortEnd any
+	PortEnd   any
 	PortStart any
-	Protocol any
+	Protocol  any
 }
 
 type ManagedclustersAgentPool_Value_Properties_NetworkProfile_NodePublicIptags struct {
 	IpTagType any
-	Tag any
+	Tag       any
 }
 
 type ManagedclustersAgentPool_Value_Properties_NetworkProfile struct {
-	AllowedHostPorts any
+	AllowedHostPorts          any
 	ApplicationSecurityGroups any
-	NodePublicIptags any
+	NodePublicIptags          any
 }
 
 type ManagedclustersAgentPool_Value_Properties_PowerState struct {
@@ -112,8 +112,8 @@ type ManagedclustersAgentPool_Value_Properties_PowerState struct {
 
 type ManagedclustersAgentPool_Value_Properties_SecurityProfile struct {
 	EnableSecureBoot any
-	EnableVtpm any
-	SshAccess any
+	EnableVtpm       any
+	SshAccess        any
 }
 
 type ManagedclustersAgentPool_Value_Properties_Status_ProvisioningError_AdditionalInfo struct {
@@ -126,18 +126,18 @@ type ManagedclustersAgentPool_Value_Properties_Status_ProvisioningError_Details_
 
 type ManagedclustersAgentPool_Value_Properties_Status_ProvisioningError_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type ManagedclustersAgentPool_Value_Properties_Status_ProvisioningError struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type ManagedclustersAgentPool_Value_Properties_Status struct {
@@ -145,27 +145,27 @@ type ManagedclustersAgentPool_Value_Properties_Status struct {
 }
 
 type ManagedclustersAgentPool_Value_Properties_UpgradeSettings struct {
-	DrainTimeoutInMinutes any
-	MaxSurge any
-	MaxUnavailable any
+	DrainTimeoutInMinutes     any
+	MaxSurge                  any
+	MaxUnavailable            any
 	NodeSoakDurationInMinutes any
-	UndrainableNodeBehavior any
+	UndrainableNodeBehavior   any
 }
 
 type ManagedclustersAgentPool_Value_Properties_VirtualMachineNodesStatus struct {
 	Count any
-	Size any
+	Size  any
 }
 
 type ManagedclustersAgentPool_Value_Properties_VirtualMachinesProfile_Scale_Autoscale struct {
 	MaxCount any
 	MinCount any
-	Size any
+	Size     any
 }
 
 type ManagedclustersAgentPool_Value_Properties_VirtualMachinesProfile_Scale struct {
 	Autoscale any
-	Manual any
+	Manual    any
 }
 
 type ManagedclustersAgentPool_Value_Properties_VirtualMachinesProfile struct {
@@ -177,61 +177,61 @@ type ManagedclustersAgentPool_Value_Properties_WindowsProfile struct {
 }
 
 type ManagedclustersAgentPool_Value_Properties struct {
-	ArtifactStreamingProfile any
-	AvailabilityZones any
+	ArtifactStreamingProfile   any
+	AvailabilityZones          any
 	CapacityReservationGroupId any
-	Count any
-	CreationData any
+	Count                      any
+	CreationData               any
 	CurrentOrchestratorVersion any
-	ETag any
-	EnableAutoScaling any
-	EnableEncryptionAtHost any
-	EnableFips any
-	EnableNodePublicIp any
-	EnableUltraSsd any
-	GatewayProfile any
-	GpuInstanceProfile any
-	GpuProfile any
-	HostGroupId any
-	KubeletConfig any
-	KubeletDiskType any
-	LinuxOsconfig any
-	LocalDnsprofile any
-	MaxCount any
-	MaxPods any
-	MessageOfTheDay any
-	MinCount any
-	Mode any
-	NetworkProfile any
-	NodeImageVersion any
-	NodeLabels any
-	NodePublicIpprefixId any
-	NodeTaints any
-	OrchestratorVersion any
-	OsDiskSizeGb any
-	OsDiskType any
-	OsSku any
-	OsType any
-	PodIpallocationMode any
-	PodSubnetId any
-	PowerState any
-	ProvisioningState any
-	ProximityPlacementGroupId any
-	ScaleDownMode any
-	ScaleSetEvictionPolicy any
-	ScaleSetPriority any
-	SecurityProfile any
-	SpotMaxPrice any
-	Status any
-	Tags any
-	Type any
-	UpgradeSettings any
-	VirtualMachineNodesStatus any
-	VirtualMachinesProfile any
-	VmSize any
-	VnetSubnetId any
-	WindowsProfile any
-	WorkloadRuntime any
+	ETag                       any
+	EnableAutoScaling          any
+	EnableEncryptionAtHost     any
+	EnableFips                 any
+	EnableNodePublicIp         any
+	EnableUltraSsd             any
+	GatewayProfile             any
+	GpuInstanceProfile         any
+	GpuProfile                 any
+	HostGroupId                any
+	KubeletConfig              any
+	KubeletDiskType            any
+	LinuxOsconfig              any
+	LocalDnsprofile            any
+	MaxCount                   any
+	MaxPods                    any
+	MessageOfTheDay            any
+	MinCount                   any
+	Mode                       any
+	NetworkProfile             any
+	NodeImageVersion           any
+	NodeLabels                 any
+	NodePublicIpprefixId       any
+	NodeTaints                 any
+	OrchestratorVersion        any
+	OsDiskSizeGb               any
+	OsDiskType                 any
+	OsSku                      any
+	OsType                     any
+	PodIpallocationMode        any
+	PodSubnetId                any
+	PowerState                 any
+	ProvisioningState          any
+	ProximityPlacementGroupId  any
+	ScaleDownMode              any
+	ScaleSetEvictionPolicy     any
+	ScaleSetPriority           any
+	SecurityProfile            any
+	SpotMaxPrice               any
+	Status                     any
+	Tags                       any
+	Type                       any
+	UpgradeSettings            any
+	VirtualMachineNodesStatus  any
+	VirtualMachinesProfile     any
+	VmSize                     any
+	VnetSubnetId               any
+	WindowsProfile             any
+	WorkloadRuntime            any
 }
 
 type ManagedclustersAgentPool_Value struct {
@@ -244,7 +244,7 @@ type ManagedclustersAgentPoolConfig struct {
 
 type ManagedclustersAgentPoolAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The AgentPool items on this page
 	Value any

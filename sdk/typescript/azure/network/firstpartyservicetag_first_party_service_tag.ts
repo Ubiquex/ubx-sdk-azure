@@ -20,14 +20,8 @@ const FirstpartyservicetagFirstPartyServiceTag_PropertiesFields: FieldMap = {
 };
 
 export interface FirstpartyservicetagFirstPartyServiceTagConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
-  /** The unique identifier of the resource. */
-  id?: string | Computed<string>;
   /** Properties of the first party service tag. */
   properties?: FirstpartyservicetagFirstPartyServiceTag_Properties | Computed<FirstpartyservicetagFirstPartyServiceTag_Properties>;
-  /** The type of the resource. */
-  type?: string | Computed<string>;
 }
 
 export interface FirstpartyservicetagFirstPartyServiceTagAttrs {
@@ -44,13 +38,10 @@ export interface FirstpartyservicetagFirstPartyServiceTagAttrs {
 export const FirstpartyservicetagFirstPartyServiceTag: ResourceBinding<FirstpartyservicetagFirstPartyServiceTagConfig, FirstpartyservicetagFirstPartyServiceTagAttrs> = {
   wireType: "azure_network_firstpartyservicetag_first_party_service_tag",
   fields: {
-    etag: "etag",
-    id: "id",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: FirstpartyservicetagFirstPartyServiceTag_PropertiesFields,
     },
-    type: "type",
   },
 };

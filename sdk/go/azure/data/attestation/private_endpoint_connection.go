@@ -9,14 +9,14 @@ type PrivateEndpointConnection_Value_Properties_PrivateEndpoint struct {
 
 type PrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivateEndpointConnection_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type PrivateEndpointConnection_Value struct {
@@ -29,7 +29,7 @@ type PrivateEndpointConnectionConfig struct {
 
 type PrivateEndpointConnectionAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ProviderName any
 	// The PrivateEndpointConnection items on this page
 	Value any

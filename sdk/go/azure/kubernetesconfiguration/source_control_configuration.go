@@ -66,55 +66,44 @@ type SourceControlConfiguration_SystemData struct {
 }
 
 var SourceControlConfiguration_Properties_ComplianceStatusFields = ubx.FieldMap{
-		"ComplianceState": ubx.FieldSpec{WireName: "compliance_state"},
-		"LastConfigApplied": ubx.FieldSpec{WireName: "last_config_applied"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"MessageLevel": ubx.FieldSpec{WireName: "message_level"},
-	}
+	"ComplianceState":   ubx.FieldSpec{WireName: "compliance_state"},
+	"LastConfigApplied": ubx.FieldSpec{WireName: "last_config_applied"},
+	"Message":           ubx.FieldSpec{WireName: "message"},
+	"MessageLevel":      ubx.FieldSpec{WireName: "message_level"},
+}
 
 var SourceControlConfiguration_Properties_HelmOperatorPropertiesFields = ubx.FieldMap{
-		"ChartValues": ubx.FieldSpec{WireName: "chart_values"},
-		"ChartVersion": ubx.FieldSpec{WireName: "chart_version"},
-	}
+	"ChartValues":  ubx.FieldSpec{WireName: "chart_values"},
+	"ChartVersion": ubx.FieldSpec{WireName: "chart_version"},
+}
 
 var SourceControlConfiguration_PropertiesFields = ubx.FieldMap{
-		"ComplianceStatus": ubx.FieldSpec{
-			WireName: "compliance_status",
-			Kind: "object",
-			Fields: SourceControlConfiguration_Properties_ComplianceStatusFields,
-		},
-		"ConfigurationProtectedSettings": ubx.FieldSpec{WireName: "configuration_protected_settings"},
-		"EnableHelmOperator": ubx.FieldSpec{WireName: "enable_helm_operator"},
-		"HelmOperatorProperties": ubx.FieldSpec{
-			WireName: "helm_operator_properties",
-			Kind: "object",
-			Fields: SourceControlConfiguration_Properties_HelmOperatorPropertiesFields,
-		},
-		"OperatorInstanceName": ubx.FieldSpec{WireName: "operator_instance_name"},
-		"OperatorNamespace": ubx.FieldSpec{WireName: "operator_namespace"},
-		"OperatorParams": ubx.FieldSpec{WireName: "operator_params"},
-		"OperatorScope": ubx.FieldSpec{WireName: "operator_scope"},
-		"OperatorType": ubx.FieldSpec{WireName: "operator_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RepositoryPublicKey": ubx.FieldSpec{WireName: "repository_public_key"},
-		"RepositoryUrl": ubx.FieldSpec{WireName: "repository_url"},
-		"SshKnownHostsContents": ubx.FieldSpec{WireName: "ssh_known_hosts_contents"},
-	}
-
-var SourceControlConfiguration_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"ComplianceStatus": ubx.FieldSpec{
+		WireName: "compliance_status",
+		Kind:     "object",
+		Fields:   SourceControlConfiguration_Properties_ComplianceStatusFields,
+	},
+	"ConfigurationProtectedSettings": ubx.FieldSpec{WireName: "configuration_protected_settings"},
+	"EnableHelmOperator":             ubx.FieldSpec{WireName: "enable_helm_operator"},
+	"HelmOperatorProperties": ubx.FieldSpec{
+		WireName: "helm_operator_properties",
+		Kind:     "object",
+		Fields:   SourceControlConfiguration_Properties_HelmOperatorPropertiesFields,
+	},
+	"OperatorInstanceName":  ubx.FieldSpec{WireName: "operator_instance_name"},
+	"OperatorNamespace":     ubx.FieldSpec{WireName: "operator_namespace"},
+	"OperatorParams":        ubx.FieldSpec{WireName: "operator_params"},
+	"OperatorScope":         ubx.FieldSpec{WireName: "operator_scope"},
+	"OperatorType":          ubx.FieldSpec{WireName: "operator_type"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"RepositoryPublicKey":   ubx.FieldSpec{WireName: "repository_public_key"},
+	"RepositoryUrl":         ubx.FieldSpec{WireName: "repository_url"},
+	"SshKnownHostsContents": ubx.FieldSpec{WireName: "ssh_known_hosts_contents"},
+}
 
 type SourceControlConfigurationConfig struct {
 	// Properties to create a Source Control Configuration resource
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type SourceControlConfigurationAttrs struct {
@@ -129,13 +118,8 @@ var SourceControlConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SourceControlConfiguration_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: SourceControlConfiguration_SystemDataFields,
+			Kind:     "object",
+			Fields:   SourceControlConfiguration_PropertiesFields,
 		},
 	},
 }

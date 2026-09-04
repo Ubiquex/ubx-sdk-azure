@@ -12,19 +12,19 @@ type StorageResource_Value struct {
 }
 
 type StorageResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type StorageResourceAttrs struct {
 	ApiVersion any
 	// The link to next page of storage list.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// The storage resources list.
 	Value any
 }
@@ -32,9 +32,9 @@ type StorageResourceAttrs struct {
 var StorageResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_storage_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

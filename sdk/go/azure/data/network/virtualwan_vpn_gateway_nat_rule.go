@@ -9,22 +9,22 @@ type VirtualwanVpnGatewayNatRule_Value_Properties_EgressVpnSiteLinkConnections s
 
 type VirtualwanVpnGatewayNatRule_Value_Properties_ExternalMappings struct {
 	AddressSpace any
-	PortRange any
+	PortRange    any
 }
 
 type VirtualwanVpnGatewayNatRule_Value_Properties struct {
-	EgressVpnSiteLinkConnections any
-	ExternalMappings any
+	EgressVpnSiteLinkConnections  any
+	ExternalMappings              any
 	IngressVpnSiteLinkConnections any
-	InternalMappings any
-	IpConfigurationId any
-	Mode any
-	ProvisioningState any
-	Type any
+	InternalMappings              any
+	IpConfigurationId             any
+	Mode                          any
+	ProvisioningState             any
+	Type                          any
 }
 
 type VirtualwanVpnGatewayNatRule_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

@@ -13,10 +13,10 @@ type FirewallRule_Properties struct {
 }
 
 var FirewallRule_PropertiesFields = ubx.FieldMap{
-		"EndIpAddress": ubx.FieldSpec{WireName: "end_ip_address"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StartIpAddress": ubx.FieldSpec{WireName: "start_ip_address"},
-	}
+	"EndIpAddress":      ubx.FieldSpec{WireName: "end_ip_address"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"StartIpAddress":    ubx.FieldSpec{WireName: "start_ip_address"},
+}
 
 type FirewallRuleConfig struct {
 	// The properties of a mongo cluster firewall rule.
@@ -33,8 +33,8 @@ var FirewallRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FirewallRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   FirewallRule_PropertiesFields,
 		},
 	},
 }

@@ -10,6 +10,8 @@ import ubx_sdk as ubx
 class ApimtenantAccessInformationContract2_Properties:
     # Determines whether direct access is enabled.
     enabled: Any = None
+    # Access Information type ('access' or 'gitAccess')
+    id: Any = None
     # Primary access key. This property will not be filled on 'GET' operations! Use '/listSecrets' POST request to get the value.
     primary_key: Any = None
     # Principal (User) Identifier.
@@ -19,6 +21,7 @@ class ApimtenantAccessInformationContract2_Properties:
 
 _ApimtenantAccessInformationContract2_PropertiesFields = {
     "enabled": ubx.FieldSpec(wire_name="enabled"),
+    "id": ubx.FieldSpec(wire_name="id"),
     "primary_key": ubx.FieldSpec(wire_name="primary_key"),
     "principal_id": ubx.FieldSpec(wire_name="principal_id"),
     "secondary_key": ubx.FieldSpec(wire_name="secondary_key"),

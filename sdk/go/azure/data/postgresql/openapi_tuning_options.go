@@ -17,7 +17,7 @@ type OpenapiTuningOptionsConfig struct {
 
 type OpenapiTuningOptionsAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The TuningOptions items on this page
 	Value any

@@ -51,8 +51,6 @@ const VirtualwanVpnServerConfigurationPolicyGroup_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanVpnServerConfigurationPolicyGroupConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Parameters for VpnServerConfigurationPolicyGroup. */
   properties?: VirtualwanVpnServerConfigurationPolicyGroup_Properties | Computed<VirtualwanVpnServerConfigurationPolicyGroup_Properties>;
 }
@@ -67,7 +65,6 @@ export interface VirtualwanVpnServerConfigurationPolicyGroupAttrs {
 export const VirtualwanVpnServerConfigurationPolicyGroup: ResourceBinding<VirtualwanVpnServerConfigurationPolicyGroupConfig, VirtualwanVpnServerConfigurationPolicyGroupAttrs> = {
   wireType: "azure_network_virtualwan_vpn_server_configuration_policy_group",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

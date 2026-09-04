@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAutomationRule_Properties_Actions struct {
 	ActionType any
-	Order any
+	Order      any
 }
 
 type OpenapiAutomationRule_Properties_CreatedBy struct {
@@ -29,8 +29,8 @@ type OpenapiAutomationRule_Properties_TriggeringLogic struct {
 	// Determines when the automation rule should automatically expire and be disabled.
 	ExpirationTimeUtc any
 	// Determines whether the automation rule is enabled or disabled.
-	IsEnabled any
-	TriggersOn any
+	IsEnabled    any
+	TriggersOn   any
 	TriggersWhen any
 }
 
@@ -54,59 +54,59 @@ type OpenapiAutomationRule_Properties struct {
 }
 
 var OpenapiAutomationRule_Properties_ActionsFields = ubx.FieldMap{
-		"ActionType": ubx.FieldSpec{WireName: "action_type"},
-		"Order": ubx.FieldSpec{WireName: "order"},
-	}
+	"ActionType": ubx.FieldSpec{WireName: "action_type"},
+	"Order":      ubx.FieldSpec{WireName: "order"},
+}
 
 var OpenapiAutomationRule_Properties_CreatedByFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"UserPrincipalName": ubx.FieldSpec{WireName: "user_principal_name"},
-	}
+	"Email":             ubx.FieldSpec{WireName: "email"},
+	"Name":              ubx.FieldSpec{WireName: "name"},
+	"ObjectId":          ubx.FieldSpec{WireName: "object_id"},
+	"UserPrincipalName": ubx.FieldSpec{WireName: "user_principal_name"},
+}
 
 var OpenapiAutomationRule_Properties_TriggeringLogic_ConditionsFields = ubx.FieldMap{
-		"ConditionType": ubx.FieldSpec{WireName: "condition_type"},
-	}
+	"ConditionType": ubx.FieldSpec{WireName: "condition_type"},
+}
 
 var OpenapiAutomationRule_Properties_TriggeringLogicFields = ubx.FieldMap{
-		"Conditions": ubx.FieldSpec{
-			WireName: "conditions",
-			Kind: "list",
-			Fields: OpenapiAutomationRule_Properties_TriggeringLogic_ConditionsFields,
-		},
-		"ExpirationTimeUtc": ubx.FieldSpec{WireName: "expiration_time_utc"},
-		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
-		"TriggersOn": ubx.FieldSpec{WireName: "triggers_on"},
-		"TriggersWhen": ubx.FieldSpec{WireName: "triggers_when"},
-	}
+	"Conditions": ubx.FieldSpec{
+		WireName: "conditions",
+		Kind:     "list",
+		Fields:   OpenapiAutomationRule_Properties_TriggeringLogic_ConditionsFields,
+	},
+	"ExpirationTimeUtc": ubx.FieldSpec{WireName: "expiration_time_utc"},
+	"IsEnabled":         ubx.FieldSpec{WireName: "is_enabled"},
+	"TriggersOn":        ubx.FieldSpec{WireName: "triggers_on"},
+	"TriggersWhen":      ubx.FieldSpec{WireName: "triggers_when"},
+}
 
 var OpenapiAutomationRule_PropertiesFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{
-			WireName: "actions",
-			Kind: "list",
-			Fields: OpenapiAutomationRule_Properties_ActionsFields,
-		},
-		"CreatedBy": ubx.FieldSpec{
-			WireName: "created_by",
-			Kind: "object",
-			Fields: OpenapiAutomationRule_Properties_CreatedByFields,
-		},
-		"CreatedTimeUtc": ubx.FieldSpec{WireName: "created_time_utc"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"LastModifiedBy": ubx.FieldSpec{
-			WireName: "last_modified_by",
-			Kind: "object",
-			Fields: OpenapiAutomationRule_Properties_CreatedByFields,
-		},
-		"LastModifiedTimeUtc": ubx.FieldSpec{WireName: "last_modified_time_utc"},
-		"Order": ubx.FieldSpec{WireName: "order"},
-		"TriggeringLogic": ubx.FieldSpec{
-			WireName: "triggering_logic",
-			Kind: "object",
-			Fields: OpenapiAutomationRule_Properties_TriggeringLogicFields,
-		},
-	}
+	"Actions": ubx.FieldSpec{
+		WireName: "actions",
+		Kind:     "list",
+		Fields:   OpenapiAutomationRule_Properties_ActionsFields,
+	},
+	"CreatedBy": ubx.FieldSpec{
+		WireName: "created_by",
+		Kind:     "object",
+		Fields:   OpenapiAutomationRule_Properties_CreatedByFields,
+	},
+	"CreatedTimeUtc": ubx.FieldSpec{WireName: "created_time_utc"},
+	"DisplayName":    ubx.FieldSpec{WireName: "display_name"},
+	"LastModifiedBy": ubx.FieldSpec{
+		WireName: "last_modified_by",
+		Kind:     "object",
+		Fields:   OpenapiAutomationRule_Properties_CreatedByFields,
+	},
+	"LastModifiedTimeUtc": ubx.FieldSpec{WireName: "last_modified_time_utc"},
+	"Order":               ubx.FieldSpec{WireName: "order"},
+	"TriggeringLogic": ubx.FieldSpec{
+		WireName: "triggering_logic",
+		Kind:     "object",
+		Fields:   OpenapiAutomationRule_Properties_TriggeringLogicFields,
+	},
+}
 
 type OpenapiAutomationRuleConfig struct {
 	// Etag of the azure resource
@@ -128,8 +128,8 @@ var OpenapiAutomationRule = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAutomationRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAutomationRule_PropertiesFields,
 		},
 	},
 }

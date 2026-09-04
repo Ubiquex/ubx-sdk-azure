@@ -9,7 +9,7 @@ type AgentDeployment_Properties_Agents struct {
 
 type AgentDeployment_Properties_Protocols struct {
 	Protocol any
-	Version any
+	Version  any
 }
 
 type AgentDeployment_Properties struct {
@@ -30,31 +30,31 @@ type AgentDeployment_Properties struct {
 }
 
 var AgentDeployment_Properties_AgentsFields = ubx.FieldMap{
-		"AgentVersion": ubx.FieldSpec{WireName: "agent_version"},
-	}
+	"AgentVersion": ubx.FieldSpec{WireName: "agent_version"},
+}
 
 var AgentDeployment_Properties_ProtocolsFields = ubx.FieldMap{
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Protocol": ubx.FieldSpec{WireName: "protocol"},
+	"Version":  ubx.FieldSpec{WireName: "version"},
+}
 
 var AgentDeployment_PropertiesFields = ubx.FieldMap{
-		"Agents": ubx.FieldSpec{
-			WireName: "agents",
-			Kind: "list",
-			Fields: AgentDeployment_Properties_AgentsFields,
-		},
-		"DeploymentId": ubx.FieldSpec{WireName: "deployment_id"},
-		"DeploymentType": ubx.FieldSpec{WireName: "deployment_type"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Protocols": ubx.FieldSpec{
-			WireName: "protocols",
-			Kind: "list",
-			Fields: AgentDeployment_Properties_ProtocolsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"Agents": ubx.FieldSpec{
+		WireName: "agents",
+		Kind:     "list",
+		Fields:   AgentDeployment_Properties_AgentsFields,
+	},
+	"DeploymentId":   ubx.FieldSpec{WireName: "deployment_id"},
+	"DeploymentType": ubx.FieldSpec{WireName: "deployment_type"},
+	"DisplayName":    ubx.FieldSpec{WireName: "display_name"},
+	"Protocols": ubx.FieldSpec{
+		WireName: "protocols",
+		Kind:     "list",
+		Fields:   AgentDeployment_Properties_ProtocolsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"State":             ubx.FieldSpec{WireName: "state"},
+}
 
 type AgentDeploymentConfig struct {
 	// Type representing an agent deployment as a management construct.
@@ -71,8 +71,8 @@ var AgentDeployment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AgentDeployment_PropertiesFields,
+			Kind:     "object",
+			Fields:   AgentDeployment_PropertiesFields,
 		},
 	},
 }

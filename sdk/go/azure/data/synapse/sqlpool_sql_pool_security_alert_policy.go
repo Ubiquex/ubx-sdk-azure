@@ -4,14 +4,14 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolSqlPoolSecurityAlertPolicy_Value_Properties struct {
-	CreationTime any
-	DisabledAlerts any
-	EmailAccountAdmins any
-	EmailAddresses any
-	RetentionDays any
-	State any
+	CreationTime            any
+	DisabledAlerts          any
+	EmailAccountAdmins      any
+	EmailAddresses          any
+	RetentionDays           any
+	State                   any
 	StorageAccountAccessKey any
-	StorageEndpoint any
+	StorageEndpoint         any
 }
 
 type SqlpoolSqlPoolSecurityAlertPolicy_Value struct {
@@ -24,7 +24,7 @@ type SqlpoolSqlPoolSecurityAlertPolicyConfig struct {
 
 type SqlpoolSqlPoolSecurityAlertPolicyAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink    any
 	SqlPoolName any
 	// Array of results.
 	Value any

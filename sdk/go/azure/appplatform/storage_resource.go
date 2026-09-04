@@ -9,8 +9,8 @@ type StorageResource_Properties struct {
 }
 
 var StorageResource_PropertiesFields = ubx.FieldMap{
-		"StorageType": ubx.FieldSpec{WireName: "storage_type"},
-	}
+	"StorageType": ubx.FieldSpec{WireName: "storage_type"},
+}
 
 type StorageResourceConfig struct {
 	// Storage resource payload.
@@ -27,8 +27,8 @@ var StorageResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: StorageResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   StorageResource_PropertiesFields,
 		},
 	},
 }

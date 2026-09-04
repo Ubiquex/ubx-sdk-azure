@@ -10,9 +10,9 @@ type MachineImageResource_Value_ExtendedLocation struct {
 
 type MachineImageResource_Value struct {
 	ExtendedLocation any
-	Location any
-	Name any
-	Tags any
+	Location         any
+	Name             any
+	Tags             any
 }
 
 type MachineImageResourceConfig struct {

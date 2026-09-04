@@ -208,8 +208,6 @@ const VirtualnetworkPublicIpprefix_SkuFields: FieldMap = {
 };
 
 export interface VirtualnetworkPublicIpprefixConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkPublicIpprefix_ExtendedLocation | Computed<VirtualnetworkPublicIpprefix_ExtendedLocation>;
   /** Public IP prefix properties. */
@@ -236,7 +234,6 @@ export interface VirtualnetworkPublicIpprefixAttrs {
 export const VirtualnetworkPublicIpprefix: ResourceBinding<VirtualnetworkPublicIpprefixConfig, VirtualnetworkPublicIpprefixAttrs> = {
   wireType: "azure_network_virtualnetwork_public_ipprefix",
   fields: {
-    etag: "etag",
     extendedLocation: {
       wireName: "extended_location",
       kind: "object",

@@ -7,31 +7,16 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiSnapshot_Value_Properties:
-    time: Any = None
-
-@dataclasses.dataclass
-class OpenapiSnapshot_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiSnapshotConfig:
-    name: Any = None
-    slot: Any = None
+    deleted_site_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiSnapshotAttrs:
-    name: Any = None
-    # The link to the next page of items
-    next_link: Any = None
-    slot: Any = None
-    # The Snapshot items on this page
-    value: Any = None
+    deleted_site_id: Any = None
 
 OpenapiSnapshot = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_snapshot",
     fields={
-        "name": ubx.FieldSpec(wire_name="name"),
-        "slot": ubx.FieldSpec(wire_name="slot"),
+        "deleted_site_id": ubx.FieldSpec(wire_name="deleted_site_id"),
     },
 )

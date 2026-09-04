@@ -58,8 +58,6 @@ _PrivateEndpointConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class PrivateEndpointConnectionConfig:
-    # Resource Etag.
-    etag: Any = None
     # The location of the private endpoint connection
     location: Any = None
     # Properties of the PrivateEndpointConnectProperties.
@@ -77,7 +75,6 @@ class PrivateEndpointConnectionAttrs:
 PrivateEndpointConnection = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_private_endpoint_connection",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",

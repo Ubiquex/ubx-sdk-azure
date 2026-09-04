@@ -59,55 +59,55 @@ type DtlSchedule_Properties struct {
 }
 
 var DtlSchedule_Properties_DailyRecurrenceFields = ubx.FieldMap{
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Time": ubx.FieldSpec{WireName: "time"},
+}
 
 var DtlSchedule_Properties_HourlyRecurrenceFields = ubx.FieldMap{
-		"Minute": ubx.FieldSpec{WireName: "minute"},
-	}
+	"Minute": ubx.FieldSpec{WireName: "minute"},
+}
 
 var DtlSchedule_Properties_NotificationSettingsFields = ubx.FieldMap{
-		"EmailRecipient": ubx.FieldSpec{WireName: "email_recipient"},
-		"NotificationLocale": ubx.FieldSpec{WireName: "notification_locale"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TimeInMinutes": ubx.FieldSpec{WireName: "time_in_minutes"},
-		"WebhookUrl": ubx.FieldSpec{WireName: "webhook_url"},
-	}
+	"EmailRecipient":     ubx.FieldSpec{WireName: "email_recipient"},
+	"NotificationLocale": ubx.FieldSpec{WireName: "notification_locale"},
+	"Status":             ubx.FieldSpec{WireName: "status"},
+	"TimeInMinutes":      ubx.FieldSpec{WireName: "time_in_minutes"},
+	"WebhookUrl":         ubx.FieldSpec{WireName: "webhook_url"},
+}
 
 var DtlSchedule_Properties_WeeklyRecurrenceFields = ubx.FieldMap{
-		"Time": ubx.FieldSpec{WireName: "time"},
-		"Weekdays": ubx.FieldSpec{WireName: "weekdays"},
-	}
+	"Time":     ubx.FieldSpec{WireName: "time"},
+	"Weekdays": ubx.FieldSpec{WireName: "weekdays"},
+}
 
 var DtlSchedule_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"DailyRecurrence": ubx.FieldSpec{
-			WireName: "daily_recurrence",
-			Kind: "object",
-			Fields: DtlSchedule_Properties_DailyRecurrenceFields,
-		},
-		"HourlyRecurrence": ubx.FieldSpec{
-			WireName: "hourly_recurrence",
-			Kind: "object",
-			Fields: DtlSchedule_Properties_HourlyRecurrenceFields,
-		},
-		"NotificationSettings": ubx.FieldSpec{
-			WireName: "notification_settings",
-			Kind: "object",
-			Fields: DtlSchedule_Properties_NotificationSettingsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
-		"TaskType": ubx.FieldSpec{WireName: "task_type"},
-		"TimeZoneId": ubx.FieldSpec{WireName: "time_zone_id"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-		"WeeklyRecurrence": ubx.FieldSpec{
-			WireName: "weekly_recurrence",
-			Kind: "object",
-			Fields: DtlSchedule_Properties_WeeklyRecurrenceFields,
-		},
-	}
+	"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
+	"DailyRecurrence": ubx.FieldSpec{
+		WireName: "daily_recurrence",
+		Kind:     "object",
+		Fields:   DtlSchedule_Properties_DailyRecurrenceFields,
+	},
+	"HourlyRecurrence": ubx.FieldSpec{
+		WireName: "hourly_recurrence",
+		Kind:     "object",
+		Fields:   DtlSchedule_Properties_HourlyRecurrenceFields,
+	},
+	"NotificationSettings": ubx.FieldSpec{
+		WireName: "notification_settings",
+		Kind:     "object",
+		Fields:   DtlSchedule_Properties_NotificationSettingsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"TargetResourceId":  ubx.FieldSpec{WireName: "target_resource_id"},
+	"TaskType":          ubx.FieldSpec{WireName: "task_type"},
+	"TimeZoneId":        ubx.FieldSpec{WireName: "time_zone_id"},
+	"UniqueIdentifier":  ubx.FieldSpec{WireName: "unique_identifier"},
+	"WeeklyRecurrence": ubx.FieldSpec{
+		WireName: "weekly_recurrence",
+		Kind:     "object",
+		Fields:   DtlSchedule_Properties_WeeklyRecurrenceFields,
+	},
+}
 
 type DtlScheduleConfig struct {
 	// The geo-location where the resource lives
@@ -137,8 +137,8 @@ var DtlSchedule = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlSchedule_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlSchedule_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

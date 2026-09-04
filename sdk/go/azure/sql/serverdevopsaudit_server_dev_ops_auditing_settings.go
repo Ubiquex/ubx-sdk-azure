@@ -19,13 +19,13 @@ type ServerdevopsauditServerDevOpsAuditingSettings_Properties struct {
 }
 
 var ServerdevopsauditServerDevOpsAuditingSettings_PropertiesFields = ubx.FieldMap{
-		"IsAzureMonitorTargetEnabled": ubx.FieldSpec{WireName: "is_azure_monitor_target_enabled"},
-		"IsManagedIdentityInUse": ubx.FieldSpec{WireName: "is_managed_identity_in_use"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StorageAccountAccessKey": ubx.FieldSpec{WireName: "storage_account_access_key"},
-		"StorageAccountSubscriptionId": ubx.FieldSpec{WireName: "storage_account_subscription_id"},
-		"StorageEndpoint": ubx.FieldSpec{WireName: "storage_endpoint"},
-	}
+	"IsAzureMonitorTargetEnabled":  ubx.FieldSpec{WireName: "is_azure_monitor_target_enabled"},
+	"IsManagedIdentityInUse":       ubx.FieldSpec{WireName: "is_managed_identity_in_use"},
+	"State":                        ubx.FieldSpec{WireName: "state"},
+	"StorageAccountAccessKey":      ubx.FieldSpec{WireName: "storage_account_access_key"},
+	"StorageAccountSubscriptionId": ubx.FieldSpec{WireName: "storage_account_subscription_id"},
+	"StorageEndpoint":              ubx.FieldSpec{WireName: "storage_endpoint"},
+}
 
 type ServerdevopsauditServerDevOpsAuditingSettingsConfig struct {
 	// Properties of a server DevOps audit settings.
@@ -42,8 +42,8 @@ var ServerdevopsauditServerDevOpsAuditingSettings = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServerdevopsauditServerDevOpsAuditingSettings_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServerdevopsauditServerDevOpsAuditingSettings_PropertiesFields,
 		},
 	},
 }

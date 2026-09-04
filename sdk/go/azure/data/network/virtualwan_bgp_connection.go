@@ -8,46 +8,46 @@ type VirtualwanBgpConnection_Value_Properties_HubVirtualNetworkConnection struct
 }
 
 type VirtualwanBgpConnection_Value_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids any
+	Ids    any
 	Labels any
 }
 
 type VirtualwanBgpConnection_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
 type VirtualwanBgpConnection_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes any
+	PropagateStaticRoutes          any
 	VnetLocalRouteOverrideCriteria any
 }
 
 type VirtualwanBgpConnection_Value_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections any
-	StaticRoutes any
+	BgpConnections     any
+	StaticRoutes       any
 	StaticRoutesConfig any
 }
 
 type VirtualwanBgpConnection_Value_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable any
-	InboundRouteMap any
-	OutboundRouteMap any
+	AssociatedRouteTable  any
+	InboundRouteMap       any
+	OutboundRouteMap      any
 	PropagatedRouteTables any
-	VnetRoutes any
+	VnetRoutes            any
 }
 
 type VirtualwanBgpConnection_Value_Properties struct {
-	ConnectionState any
+	ConnectionState             any
 	HubVirtualNetworkConnection any
-	PeerAsn any
-	PeerIp any
-	ProvisioningState any
-	RoutingConfiguration any
+	PeerAsn                     any
+	PeerIp                      any
+	ProvisioningState           any
+	RoutingConfiguration        any
 }
 
 type VirtualwanBgpConnection_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -59,7 +59,7 @@ type VirtualwanBgpConnectionAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The BgpConnection items on this page
-	Value any
+	Value          any
 	VirtualHubName any
 }
 

@@ -29,6 +29,12 @@ export interface DbOpenapiCassandraKeyspaceGetResults_Properties_Options {
 }
 
 export interface DbOpenapiCassandraKeyspaceGetResults_Properties_Resource {
+  /** A system generated property representing the resource etag required for optimistic concurrency control. */
+  etag?: string | Computed<string>;
+  /** A system generated property. A unique identifier. */
+  rid?: string | Computed<string>;
+  /** A system generated property that denotes the last updated timestamp of the resource. */
+  ts?: number | Computed<number>;
   /** Name of the Cosmos DB Cassandra keyspace */
   id: string | Computed<string>;
 }
@@ -54,6 +60,9 @@ const DbOpenapiCassandraKeyspaceGetResults_Properties_OptionsFields: FieldMap = 
 };
 
 const DbOpenapiCassandraKeyspaceGetResults_Properties_ResourceFields: FieldMap = {
+  etag: "_etag",
+  rid: "_rid",
+  ts: "_ts",
   id: "id",
 };
 

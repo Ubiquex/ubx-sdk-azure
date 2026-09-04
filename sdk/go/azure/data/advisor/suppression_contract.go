@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SuppressionContract_Value_Properties struct {
 	ExpirationTimeStamp any
-	SuppressionId any
-	Ttl any
+	SuppressionId       any
+	Ttl                 any
 }
 
 type SuppressionContract_Value struct {
@@ -14,14 +14,14 @@ type SuppressionContract_Value struct {
 }
 
 type SuppressionContractConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type SuppressionContractAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of suppressions.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The list of suppressions.
 	Value any
@@ -30,7 +30,7 @@ type SuppressionContractAttrs struct {
 var SuppressionContract = ubx.DataSourceBinding{
 	WireType: "azure_advisor_suppression_contract",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

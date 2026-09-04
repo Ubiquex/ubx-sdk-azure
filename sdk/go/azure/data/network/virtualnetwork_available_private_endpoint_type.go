@@ -4,11 +4,11 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkAvailablePrivateEndpointType_Value struct {
-	DisplayName any
-	Id any
-	Name any
+	DisplayName  any
+	Id           any
+	Name         any
 	ResourceName any
-	Type any
+	Type         any
 }
 
 type VirtualnetworkAvailablePrivateEndpointTypeConfig struct {
@@ -23,6 +23,5 @@ type VirtualnetworkAvailablePrivateEndpointTypeAttrs struct {
 
 var VirtualnetworkAvailablePrivateEndpointType = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_available_private_endpoint_type",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

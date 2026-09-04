@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPrivateEndpointConnection_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -58,53 +58,53 @@ type OpenapiPrivateEndpointConnection_Sku struct {
 }
 
 var OpenapiPrivateEndpointConnection_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiPrivateEndpointConnection_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiPrivateEndpointConnection_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiPrivateEndpointConnection_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiPrivateEndpointConnection_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"SubnetArmId": ubx.FieldSpec{WireName: "subnet_arm_id"},
-	}
+	"Id":          ubx.FieldSpec{WireName: "id"},
+	"SubnetArmId": ubx.FieldSpec{WireName: "subnet_arm_id"},
+}
 
 var OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiPrivateEndpointConnection_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiPrivateEndpointConnection_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiPrivateEndpointConnection_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiPrivateEndpointConnection_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type OpenapiPrivateEndpointConnectionConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -114,7 +114,7 @@ type OpenapiPrivateEndpointConnectionConfig struct {
 	// Private endpoint connection properties.
 	Properties any
 	// The resource model definition representing SKU
-	Sku any
+	Sku  any
 	Tags any
 }
 
@@ -126,7 +126,7 @@ type OpenapiPrivateEndpointConnectionAttrs struct {
 	// Private endpoint connection properties.
 	Properties any
 	// The resource model definition representing SKU
-	Sku any
+	Sku  any
 	Tags any
 }
 
@@ -135,19 +135,19 @@ var OpenapiPrivateEndpointConnection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiPrivateEndpointConnection_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiPrivateEndpointConnection_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiPrivateEndpointConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiPrivateEndpointConnection_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiPrivateEndpointConnection_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiPrivateEndpointConnection_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

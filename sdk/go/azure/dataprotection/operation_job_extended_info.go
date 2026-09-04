@@ -36,7 +36,7 @@ type OperationJobExtendedInfo_BackupInstance_IdentityDetails struct {
 
 type OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters_DataStoreParametersList struct {
 	DataStoreType any
-	ObjectType any
+	ObjectType    any
 }
 
 type OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters struct {
@@ -50,7 +50,7 @@ type OperationJobExtendedInfo_BackupInstance_PolicyInfo struct {
 	PolicyId any
 	// Parameters in Policy
 	PolicyParameters any
-	PolicyVersion any
+	PolicyVersion    any
 }
 
 type OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails_Details struct {
@@ -76,7 +76,7 @@ type OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails struct {
 	IsRetryable any
 	// Whether the operation is due to a user error or service error
 	IsUserError any
-	Message any
+	Message     any
 	// Any key value pairs that can be injected inside error object
 	Properties any
 	// RecommendedAction � localized.
@@ -102,9 +102,9 @@ type OperationJobExtendedInfo_BackupInstance struct {
 	// Base class for different types of authentication credentials.
 	DatasourceAuthCredentials any
 	// Gets or sets the Backup Instance friendly name.
-	FriendlyName any
+	FriendlyName    any
 	IdentityDetails any
-	ObjectType any
+	ObjectType      any
 	// Policy Info in backupInstance
 	PolicyInfo any
 	// Error object used by layers that have access to localized content, and propagate that to user
@@ -120,138 +120,137 @@ type OperationJobExtendedInfo_BackupInstance struct {
 }
 
 var OperationJobExtendedInfo_BackupInstance_DataSourceInfo_ResourcePropertiesFields = ubx.FieldMap{
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
-	}
+	"ObjectType": ubx.FieldSpec{WireName: "object_type"},
+}
 
 var OperationJobExtendedInfo_BackupInstance_DataSourceInfoFields = ubx.FieldMap{
-		"DatasourceType": ubx.FieldSpec{WireName: "datasource_type"},
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"ResourceLocation": ubx.FieldSpec{WireName: "resource_location"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"ResourceProperties": ubx.FieldSpec{
-			WireName: "resource_properties",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstance_DataSourceInfo_ResourcePropertiesFields,
-		},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-		"ResourceUri": ubx.FieldSpec{WireName: "resource_uri"},
-	}
+	"DatasourceType":   ubx.FieldSpec{WireName: "datasource_type"},
+	"ObjectType":       ubx.FieldSpec{WireName: "object_type"},
+	"ResourceId":       ubx.FieldSpec{WireName: "resource_id"},
+	"ResourceLocation": ubx.FieldSpec{WireName: "resource_location"},
+	"ResourceName":     ubx.FieldSpec{WireName: "resource_name"},
+	"ResourceProperties": ubx.FieldSpec{
+		WireName: "resource_properties",
+		Kind:     "object",
+		Fields:   OperationJobExtendedInfo_BackupInstance_DataSourceInfo_ResourcePropertiesFields,
+	},
+	"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
+	"ResourceUri":  ubx.FieldSpec{WireName: "resource_uri"},
+}
 
 var OperationJobExtendedInfo_BackupInstance_IdentityDetailsFields = ubx.FieldMap{
-		"UseSystemAssignedIdentity": ubx.FieldSpec{WireName: "use_system_assigned_identity"},
-		"UserAssignedIdentityArmUrl": ubx.FieldSpec{WireName: "user_assigned_identity_arm_url"},
-	}
+	"UseSystemAssignedIdentity":  ubx.FieldSpec{WireName: "use_system_assigned_identity"},
+	"UserAssignedIdentityArmUrl": ubx.FieldSpec{WireName: "user_assigned_identity_arm_url"},
+}
 
 var OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters_DataStoreParametersListFields = ubx.FieldMap{
-		"DataStoreType": ubx.FieldSpec{WireName: "data_store_type"},
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
-	}
+	"DataStoreType": ubx.FieldSpec{WireName: "data_store_type"},
+	"ObjectType":    ubx.FieldSpec{WireName: "object_type"},
+}
 
 var OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParametersFields = ubx.FieldMap{
-		"BackupDatasourceParametersList": ubx.FieldSpec{
-			WireName: "backup_datasource_parameters_list",
-			Kind: "list",
-			Fields: OperationJobExtendedInfo_BackupInstance_DataSourceInfo_ResourcePropertiesFields,
-		},
-		"DataStoreParametersList": ubx.FieldSpec{
-			WireName: "data_store_parameters_list",
-			Kind: "list",
-			Fields: OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters_DataStoreParametersListFields,
-		},
-	}
+	"BackupDatasourceParametersList": ubx.FieldSpec{
+		WireName: "backup_datasource_parameters_list",
+		Kind:     "list",
+		Fields:   OperationJobExtendedInfo_BackupInstance_DataSourceInfo_ResourcePropertiesFields,
+	},
+	"DataStoreParametersList": ubx.FieldSpec{
+		WireName: "data_store_parameters_list",
+		Kind:     "list",
+		Fields:   OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParameters_DataStoreParametersListFields,
+	},
+}
 
 var OperationJobExtendedInfo_BackupInstance_PolicyInfoFields = ubx.FieldMap{
-		"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
-		"PolicyParameters": ubx.FieldSpec{
-			WireName: "policy_parameters",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParametersFields,
-		},
-		"PolicyVersion": ubx.FieldSpec{WireName: "policy_version"},
-	}
+	"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
+	"PolicyParameters": ubx.FieldSpec{
+		WireName: "policy_parameters",
+		Kind:     "object",
+		Fields:   OperationJobExtendedInfo_BackupInstance_PolicyInfo_PolicyParametersFields,
+	},
+	"PolicyVersion": ubx.FieldSpec{WireName: "policy_version"},
+}
 
-var OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails_DetailsFields = ubx.FieldMap{
-	}
+var OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails_DetailsFields = ubx.FieldMap{}
 
 var OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails_InnerErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{WireName: "additional_info"},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"EmbeddedInnerError": ubx.FieldSpec{WireName: "embedded_inner_error"},
-	}
+	"AdditionalInfo":     ubx.FieldSpec{WireName: "additional_info"},
+	"Code":               ubx.FieldSpec{WireName: "code"},
+	"EmbeddedInnerError": ubx.FieldSpec{WireName: "embedded_inner_error"},
+}
 
 var OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetailsFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails_DetailsFields,
-		},
-		"InnerError": ubx.FieldSpec{
-			WireName: "inner_error",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails_InnerErrorFields,
-		},
-		"IsRetryable": ubx.FieldSpec{WireName: "is_retryable"},
-		"IsUserError": ubx.FieldSpec{WireName: "is_user_error"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"RecommendedAction": ubx.FieldSpec{WireName: "recommended_action"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails_DetailsFields,
+	},
+	"InnerError": ubx.FieldSpec{
+		WireName: "inner_error",
+		Kind:     "object",
+		Fields:   OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetails_InnerErrorFields,
+	},
+	"IsRetryable":       ubx.FieldSpec{WireName: "is_retryable"},
+	"IsUserError":       ubx.FieldSpec{WireName: "is_user_error"},
+	"Message":           ubx.FieldSpec{WireName: "message"},
+	"Properties":        ubx.FieldSpec{WireName: "properties"},
+	"RecommendedAction": ubx.FieldSpec{WireName: "recommended_action"},
+	"Target":            ubx.FieldSpec{WireName: "target"},
+}
 
 var OperationJobExtendedInfo_BackupInstance_ProtectionStatusFields = ubx.FieldMap{
-		"ErrorDetails": ubx.FieldSpec{
-			WireName: "error_details",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetailsFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ErrorDetails": ubx.FieldSpec{
+		WireName: "error_details",
+		Kind:     "object",
+		Fields:   OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetailsFields,
+	},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var OperationJobExtendedInfo_BackupInstanceFields = ubx.FieldMap{
-		"CurrentProtectionState": ubx.FieldSpec{WireName: "current_protection_state"},
-		"DataSourceInfo": ubx.FieldSpec{
-			WireName: "data_source_info",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstance_DataSourceInfoFields,
-		},
-		"DataSourceSetInfo": ubx.FieldSpec{
-			WireName: "data_source_set_info",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstance_DataSourceInfoFields,
-		},
-		"DatasourceAuthCredentials": ubx.FieldSpec{
-			WireName: "datasource_auth_credentials",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstance_DataSourceInfo_ResourcePropertiesFields,
-		},
-		"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
-		"IdentityDetails": ubx.FieldSpec{
-			WireName: "identity_details",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstance_IdentityDetailsFields,
-		},
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
-		"PolicyInfo": ubx.FieldSpec{
-			WireName: "policy_info",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstance_PolicyInfoFields,
-		},
-		"ProtectionErrorDetails": ubx.FieldSpec{
-			WireName: "protection_error_details",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetailsFields,
-		},
-		"ProtectionStatus": ubx.FieldSpec{
-			WireName: "protection_status",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstance_ProtectionStatusFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuardOperationRequests": ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
-		"ValidationType": ubx.FieldSpec{WireName: "validation_type"},
-	}
+	"CurrentProtectionState": ubx.FieldSpec{WireName: "current_protection_state"},
+	"DataSourceInfo": ubx.FieldSpec{
+		WireName: "data_source_info",
+		Kind:     "object",
+		Fields:   OperationJobExtendedInfo_BackupInstance_DataSourceInfoFields,
+	},
+	"DataSourceSetInfo": ubx.FieldSpec{
+		WireName: "data_source_set_info",
+		Kind:     "object",
+		Fields:   OperationJobExtendedInfo_BackupInstance_DataSourceInfoFields,
+	},
+	"DatasourceAuthCredentials": ubx.FieldSpec{
+		WireName: "datasource_auth_credentials",
+		Kind:     "object",
+		Fields:   OperationJobExtendedInfo_BackupInstance_DataSourceInfo_ResourcePropertiesFields,
+	},
+	"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
+	"IdentityDetails": ubx.FieldSpec{
+		WireName: "identity_details",
+		Kind:     "object",
+		Fields:   OperationJobExtendedInfo_BackupInstance_IdentityDetailsFields,
+	},
+	"ObjectType": ubx.FieldSpec{WireName: "object_type"},
+	"PolicyInfo": ubx.FieldSpec{
+		WireName: "policy_info",
+		Kind:     "object",
+		Fields:   OperationJobExtendedInfo_BackupInstance_PolicyInfoFields,
+	},
+	"ProtectionErrorDetails": ubx.FieldSpec{
+		WireName: "protection_error_details",
+		Kind:     "object",
+		Fields:   OperationJobExtendedInfo_BackupInstance_ProtectionErrorDetailsFields,
+	},
+	"ProtectionStatus": ubx.FieldSpec{
+		WireName: "protection_status",
+		Kind:     "object",
+		Fields:   OperationJobExtendedInfo_BackupInstance_ProtectionStatusFields,
+	},
+	"ProvisioningState":              ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuardOperationRequests": ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
+	"ValidationType":                 ubx.FieldSpec{WireName: "validation_type"},
+}
 
 type OperationJobExtendedInfoConfig struct {
 	// Backup Instance
@@ -274,8 +273,8 @@ var OperationJobExtendedInfo = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"BackupInstance": ubx.FieldSpec{
 			WireName: "backup_instance",
-			Kind: "object",
-			Fields: OperationJobExtendedInfo_BackupInstanceFields,
+			Kind:     "object",
+			Fields:   OperationJobExtendedInfo_BackupInstanceFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 	},

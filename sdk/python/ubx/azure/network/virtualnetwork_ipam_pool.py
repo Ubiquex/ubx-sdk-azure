@@ -31,8 +31,6 @@ _VirtualnetworkIpamPool_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkIpamPoolConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of IpamPool resource properties which are specific to the Pool resource.
     properties: Any = None
 
@@ -46,7 +44,6 @@ class VirtualnetworkIpamPoolAttrs:
 VirtualnetworkIpamPool = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_ipam_pool",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

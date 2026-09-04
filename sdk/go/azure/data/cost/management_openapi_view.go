@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementOpenapiView_Value_Properties_Kpis struct {
 	Enabled any
-	Id any
-	Type any
+	Id      any
+	Type    any
 }
 
 type ManagementOpenapiView_Value_Properties_Pivots struct {
@@ -16,7 +16,7 @@ type ManagementOpenapiView_Value_Properties_Pivots struct {
 
 type ManagementOpenapiView_Value_Properties_Query_DataSet_Aggregation struct {
 	Function any
-	Name any
+	Name     any
 }
 
 type ManagementOpenapiView_Value_Properties_Query_DataSet_Configuration struct {
@@ -27,62 +27,62 @@ type ManagementOpenapiView_Value_Properties_Query_DataSet_Filter_And struct {
 }
 
 type ManagementOpenapiView_Value_Properties_Query_DataSet_Filter_Dimensions struct {
-	Name any
+	Name     any
 	Operator any
-	Values any
+	Values   any
 }
 
 type ManagementOpenapiView_Value_Properties_Query_DataSet_Filter struct {
-	And any
+	And        any
 	Dimensions any
-	Or any
-	Tags any
+	Or         any
+	Tags       any
 }
 
 type ManagementOpenapiView_Value_Properties_Query_DataSet_Sorting struct {
 	Direction any
-	Name any
+	Name      any
 }
 
 type ManagementOpenapiView_Value_Properties_Query_DataSet struct {
-	Aggregation any
+	Aggregation   any
 	Configuration any
-	Filter any
-	Granularity any
-	Grouping any
-	Sorting any
+	Filter        any
+	Granularity   any
+	Grouping      any
+	Sorting       any
 }
 
 type ManagementOpenapiView_Value_Properties_Query_TimePeriod struct {
 	From any
-	To any
+	To   any
 }
 
 type ManagementOpenapiView_Value_Properties_Query struct {
-	DataSet any
+	DataSet                   any
 	IncludeMonetaryCommitment any
-	TimePeriod any
-	Timeframe any
-	Type any
+	TimePeriod                any
+	Timeframe                 any
+	Type                      any
 }
 
 type ManagementOpenapiView_Value_Properties struct {
 	Accumulated any
-	Chart any
-	CreatedOn any
-	Currency any
-	DateRange any
+	Chart       any
+	CreatedOn   any
+	Currency    any
+	DateRange   any
 	DisplayName any
-	Kpis any
-	Metric any
-	ModifiedOn any
-	Pivots any
-	Query any
-	Scope any
+	Kpis        any
+	Metric      any
+	ModifiedOn  any
+	Pivots      any
+	Query       any
+	Scope       any
 }
 
 type ManagementOpenapiView_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 
@@ -98,6 +98,5 @@ type ManagementOpenapiViewAttrs struct {
 
 var ManagementOpenapiView = ubx.DataSourceBinding{
 	WireType: "azure_cost_management_openapi_view",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

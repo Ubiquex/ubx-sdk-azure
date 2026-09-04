@@ -4,17 +4,17 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiFleetspaceResource_Value_Properties_ThroughputPoolConfiguration struct {
-	DedicatedRus any
+	DedicatedRus     any
 	MaxConsumableRus any
-	MaxThroughput any
-	MinThroughput any
+	MaxThroughput    any
+	MinThroughput    any
 }
 
 type DbOpenapiFleetspaceResource_Value_Properties struct {
-	DataRegions any
-	FleetspaceApiKind any
-	ProvisioningState any
-	ServiceTier any
+	DataRegions                 any
+	FleetspaceApiKind           any
+	ProvisioningState           any
+	ServiceTier                 any
 	ThroughputPoolConfiguration any
 }
 

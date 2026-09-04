@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ComponentsApplicationInsightsComponent_Properties_PrivateLinkScopedResources struct {
 	ResourceId any
-	ScopeId any
+	ScopeId    any
 }
 
 type ComponentsApplicationInsightsComponent_Properties struct {
@@ -48,34 +48,34 @@ type ComponentsApplicationInsightsComponent_Properties struct {
 }
 
 var ComponentsApplicationInsightsComponent_Properties_PrivateLinkScopedResourcesFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"ScopeId": ubx.FieldSpec{WireName: "scope_id"},
-	}
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+	"ScopeId":    ubx.FieldSpec{WireName: "scope_id"},
+}
 
 var ComponentsApplicationInsightsComponent_PropertiesFields = ubx.FieldMap{
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
-		"ApplicationType": ubx.FieldSpec{WireName: "application_type"},
-		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"DisableIpMasking": ubx.FieldSpec{WireName: "disable_ip_masking"},
-		"FlowType": ubx.FieldSpec{WireName: "flow_type"},
-		"HockeyAppId": ubx.FieldSpec{WireName: "hockey_app_id"},
-		"HockeyAppToken": ubx.FieldSpec{WireName: "hockey_app_token"},
-		"ImmediatePurgeDataOn30Days": ubx.FieldSpec{WireName: "immediate_purge_data_on30_days"},
-		"IngestionMode": ubx.FieldSpec{WireName: "ingestion_mode"},
-		"InstrumentationKey": ubx.FieldSpec{WireName: "instrumentation_key"},
-		"PrivateLinkScopedResources": ubx.FieldSpec{
-			WireName: "private_link_scoped_resources",
-			Kind: "list",
-			Fields: ComponentsApplicationInsightsComponent_Properties_PrivateLinkScopedResourcesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequestSource": ubx.FieldSpec{WireName: "request_source"},
-		"RetentionInDays": ubx.FieldSpec{WireName: "retention_in_days"},
-		"SamplingPercentage": ubx.FieldSpec{WireName: "sampling_percentage"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AppId":                      ubx.FieldSpec{WireName: "app_id"},
+	"ApplicationId":              ubx.FieldSpec{WireName: "application_id"},
+	"ApplicationType":            ubx.FieldSpec{WireName: "application_type"},
+	"ConnectionString":           ubx.FieldSpec{WireName: "connection_string"},
+	"CreationDate":               ubx.FieldSpec{WireName: "creation_date"},
+	"DisableIpMasking":           ubx.FieldSpec{WireName: "disable_ip_masking"},
+	"FlowType":                   ubx.FieldSpec{WireName: "flow_type"},
+	"HockeyAppId":                ubx.FieldSpec{WireName: "hockey_app_id"},
+	"HockeyAppToken":             ubx.FieldSpec{WireName: "hockey_app_token"},
+	"ImmediatePurgeDataOn30Days": ubx.FieldSpec{WireName: "immediate_purge_data_on30_days"},
+	"IngestionMode":              ubx.FieldSpec{WireName: "ingestion_mode"},
+	"InstrumentationKey":         ubx.FieldSpec{WireName: "instrumentation_key"},
+	"PrivateLinkScopedResources": ubx.FieldSpec{
+		WireName: "private_link_scoped_resources",
+		Kind:     "list",
+		Fields:   ComponentsApplicationInsightsComponent_Properties_PrivateLinkScopedResourcesFields,
+	},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequestSource":      ubx.FieldSpec{WireName: "request_source"},
+	"RetentionInDays":    ubx.FieldSpec{WireName: "retention_in_days"},
+	"SamplingPercentage": ubx.FieldSpec{WireName: "sampling_percentage"},
+	"TenantId":           ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type ComponentsApplicationInsightsComponentConfig struct {
 	// The kind of application that this component refers to, used to customize UI. This value is a freeform string, values should typically be one of the following: web, ios, other, store, java, phone.
@@ -97,8 +97,8 @@ var ComponentsApplicationInsightsComponent = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ComponentsApplicationInsightsComponent_PropertiesFields,
+			Kind:     "object",
+			Fields:   ComponentsApplicationInsightsComponent_PropertiesFields,
 		},
 	},
 }

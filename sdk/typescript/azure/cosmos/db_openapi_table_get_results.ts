@@ -35,6 +35,12 @@ export interface DbOpenapiTableGetResults_Properties_Resource_RestoreParameters 
 }
 
 export interface DbOpenapiTableGetResults_Properties_Resource {
+  /** A system generated property representing the resource etag required for optimistic concurrency control. */
+  etag?: string | Computed<string>;
+  /** A system generated property. A unique identifier. */
+  rid?: string | Computed<string>;
+  /** A system generated property that denotes the last updated timestamp of the resource. */
+  ts?: number | Computed<number>;
   /** Enum to indicate the mode of account creation. */
   createMode?: string | Computed<string>;
   /** Name of the Cosmos DB table */
@@ -70,6 +76,9 @@ const DbOpenapiTableGetResults_Properties_Resource_RestoreParametersFields: Fiel
 };
 
 const DbOpenapiTableGetResults_Properties_ResourceFields: FieldMap = {
+  etag: "_etag",
+  rid: "_rid",
+  ts: "_ts",
   createMode: "create_mode",
   id: "id",
   restoreParameters: {

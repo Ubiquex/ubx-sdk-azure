@@ -28,20 +28,9 @@ const ManagementCreator_PropertiesFields: FieldMap = {
   storageUnits: "storage_units",
 };
 
-const ManagementCreator_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ManagementCreatorConfig {
   /** Creator resource properties */
   properties: ManagementCreator_Properties | Computed<ManagementCreator_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ManagementCreator_SystemData | Computed<ManagementCreator_SystemData>;
 }
 
 export interface ManagementCreatorAttrs {
@@ -58,11 +47,6 @@ export const ManagementCreator: ResourceBinding<ManagementCreatorConfig, Managem
       wireName: "properties",
       kind: "object",
       fields: ManagementCreator_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ManagementCreator_SystemDataFields,
     },
   },
 };

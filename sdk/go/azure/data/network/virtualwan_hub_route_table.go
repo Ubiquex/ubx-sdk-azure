@@ -5,22 +5,22 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanHubRouteTable_Value_Properties_Routes struct {
 	DestinationType any
-	Destinations any
-	Name any
-	NextHop any
-	NextHopType any
+	Destinations    any
+	Name            any
+	NextHop         any
+	NextHopType     any
 }
 
 type VirtualwanHubRouteTable_Value_Properties struct {
-	AssociatedConnections any
-	Labels any
+	AssociatedConnections  any
+	Labels                 any
 	PropagatingConnections any
-	ProvisioningState any
-	Routes any
+	ProvisioningState      any
+	Routes                 any
 }
 
 type VirtualwanHubRouteTable_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -32,7 +32,7 @@ type VirtualwanHubRouteTableAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The HubRouteTable items on this page
-	Value any
+	Value          any
 	VirtualHubName any
 }
 

@@ -36,27 +36,27 @@ type Catalog_Properties struct {
 }
 
 var Catalog_Properties_LastSyncStatsFields = ubx.FieldMap{
-		"Added": ubx.FieldSpec{WireName: "added"},
-		"Removed": ubx.FieldSpec{WireName: "removed"},
-		"SyncedCatalogItemTypes": ubx.FieldSpec{WireName: "synced_catalog_item_types"},
-		"SynchronizationErrors": ubx.FieldSpec{WireName: "synchronization_errors"},
-		"Unchanged": ubx.FieldSpec{WireName: "unchanged"},
-		"Updated": ubx.FieldSpec{WireName: "updated"},
-		"ValidationErrors": ubx.FieldSpec{WireName: "validation_errors"},
-	}
+	"Added":                  ubx.FieldSpec{WireName: "added"},
+	"Removed":                ubx.FieldSpec{WireName: "removed"},
+	"SyncedCatalogItemTypes": ubx.FieldSpec{WireName: "synced_catalog_item_types"},
+	"SynchronizationErrors":  ubx.FieldSpec{WireName: "synchronization_errors"},
+	"Unchanged":              ubx.FieldSpec{WireName: "unchanged"},
+	"Updated":                ubx.FieldSpec{WireName: "updated"},
+	"ValidationErrors":       ubx.FieldSpec{WireName: "validation_errors"},
+}
 
 var Catalog_PropertiesFields = ubx.FieldMap{
-		"ConnectionState": ubx.FieldSpec{WireName: "connection_state"},
-		"LastConnectionTime": ubx.FieldSpec{WireName: "last_connection_time"},
-		"LastSyncStats": ubx.FieldSpec{
-			WireName: "last_sync_stats",
-			Kind: "object",
-			Fields: Catalog_Properties_LastSyncStatsFields,
-		},
-		"LastSyncTime": ubx.FieldSpec{WireName: "last_sync_time"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SyncState": ubx.FieldSpec{WireName: "sync_state"},
-	}
+	"ConnectionState":    ubx.FieldSpec{WireName: "connection_state"},
+	"LastConnectionTime": ubx.FieldSpec{WireName: "last_connection_time"},
+	"LastSyncStats": ubx.FieldSpec{
+		WireName: "last_sync_stats",
+		Kind:     "object",
+		Fields:   Catalog_Properties_LastSyncStatsFields,
+	},
+	"LastSyncTime":      ubx.FieldSpec{WireName: "last_sync_time"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SyncState":         ubx.FieldSpec{WireName: "sync_state"},
+}
 
 type CatalogConfig struct {
 	// Properties of a catalog.
@@ -73,8 +73,8 @@ var Catalog = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Catalog_PropertiesFields,
+			Kind:     "object",
+			Fields:   Catalog_PropertiesFields,
 		},
 	},
 }

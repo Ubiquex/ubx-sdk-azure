@@ -20,19 +20,19 @@ type OpenapiRuntimeEnvironment_Properties struct {
 }
 
 var OpenapiRuntimeEnvironment_Properties_RuntimeFields = ubx.FieldMap{
-		"Language": ubx.FieldSpec{WireName: "language"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Language": ubx.FieldSpec{WireName: "language"},
+	"Version":  ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiRuntimeEnvironment_PropertiesFields = ubx.FieldMap{
-		"DefaultPackages": ubx.FieldSpec{WireName: "default_packages"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Runtime": ubx.FieldSpec{
-			WireName: "runtime",
-			Kind: "object",
-			Fields: OpenapiRuntimeEnvironment_Properties_RuntimeFields,
-		},
-	}
+	"DefaultPackages": ubx.FieldSpec{WireName: "default_packages"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Runtime": ubx.FieldSpec{
+		WireName: "runtime",
+		Kind:     "object",
+		Fields:   OpenapiRuntimeEnvironment_Properties_RuntimeFields,
+	},
+}
 
 type OpenapiRuntimeEnvironmentConfig struct {
 	// Runtime Environment properties.
@@ -49,8 +49,8 @@ var OpenapiRuntimeEnvironment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiRuntimeEnvironment_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiRuntimeEnvironment_PropertiesFields,
 		},
 	},
 }

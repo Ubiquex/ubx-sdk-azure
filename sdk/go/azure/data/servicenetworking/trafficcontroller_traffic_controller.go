@@ -12,11 +12,11 @@ type TrafficcontrollerTrafficController_Value_Properties_SecurityPolicyConfigura
 }
 
 type TrafficcontrollerTrafficController_Value_Properties struct {
-	Associations any
-	ConfigurationEndpoints any
-	Frontends any
-	ProvisioningState any
-	SecurityPolicies any
+	Associations                 any
+	ConfigurationEndpoints       any
+	Frontends                    any
+	ProvisioningState            any
+	SecurityPolicies             any
 	SecurityPolicyConfigurations any
 }
 
@@ -36,6 +36,5 @@ type TrafficcontrollerTrafficControllerAttrs struct {
 
 var TrafficcontrollerTrafficController = ubx.DataSourceBinding{
 	WireType: "azure_servicenetworking_trafficcontroller_traffic_controller",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

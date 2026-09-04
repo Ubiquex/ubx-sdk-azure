@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiInboundEnvironmentEndpoint_Value struct {
 	Description any
-	Endpoints any
-	Ports any
+	Endpoints   any
+	Ports       any
 }
 
 type OpenapiInboundEnvironmentEndpointConfig struct {

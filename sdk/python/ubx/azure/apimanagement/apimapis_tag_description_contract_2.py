@@ -10,15 +10,21 @@ import ubx_sdk as ubx
 class ApimapisTagDescriptionContract2_Properties:
     # Description of the Tag.
     description: Any = None
+    # Tag name.
+    display_name: Any = None
     # Description of the external resources describing the tag.
     external_docs_description: Any = None
     # Absolute URL of external resources describing the tag.
     external_docs_url: Any = None
+    # Identifier of the tag in the form of /tags/{tagId}
+    tag_id: Any = None
 
 _ApimapisTagDescriptionContract2_PropertiesFields = {
     "description": ubx.FieldSpec(wire_name="description"),
+    "display_name": ubx.FieldSpec(wire_name="display_name"),
     "external_docs_description": ubx.FieldSpec(wire_name="external_docs_description"),
     "external_docs_url": ubx.FieldSpec(wire_name="external_docs_url"),
+    "tag_id": ubx.FieldSpec(wire_name="tag_id"),
 }
 
 @dataclasses.dataclass

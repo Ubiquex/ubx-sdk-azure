@@ -4,28 +4,28 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Value_Properties_AuthorizationProfile struct {
-	ApprovedTime any
-	Approver any
-	RequestedTime any
-	Requester any
+	ApprovedTime      any
+	Approver          any
+	RequestedTime     any
+	Requester         any
 	RequesterObjectId any
 }
 
 type SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Value_Properties struct {
-	ApprovalType any
-	AuthorizationProfile any
-	Description any
-	DisplayName any
-	DocumentationLink any
-	FeatureName any
-	Metadata any
-	ProviderNamespace any
-	RegistrationDate any
-	ReleaseDate any
+	ApprovalType                 any
+	AuthorizationProfile         any
+	Description                  any
+	DisplayName                  any
+	DocumentationLink            any
+	FeatureName                  any
+	Metadata                     any
+	ProviderNamespace            any
+	RegistrationDate             any
+	ReleaseDate                  any
 	ShouldFeatureDisplayInPortal any
-	State any
-	SubscriptionId any
-	TenantId any
+	State                        any
+	SubscriptionId               any
+	TenantId                     any
 }
 
 type SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Value struct {
@@ -33,17 +33,17 @@ type SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Value struct
 }
 
 type SubscriptionfeatureregistrationSubscriptionFeatureRegistrationConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ProviderNamespace any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type SubscriptionfeatureregistrationSubscriptionFeatureRegistrationAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of subscription feature registrations list.
-	NextLink any
+	NextLink          any
 	ProviderNamespace any
-	SubscriptionId any
+	SubscriptionId    any
 	// The list of subscription feature registrations.
 	Value any
 }
@@ -51,8 +51,8 @@ type SubscriptionfeatureregistrationSubscriptionFeatureRegistrationAttrs struct 
 var SubscriptionfeatureregistrationSubscriptionFeatureRegistration = ubx.DataSourceBinding{
 	WireType: "azure_resources_subscriptionfeatureregistration_subscription_feature_registration",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ProviderNamespace": ubx.FieldSpec{WireName: "provider_namespace"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

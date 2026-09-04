@@ -11,25 +11,53 @@ type ServiceNetworkMapping_Properties_FabricSpecificDetails struct {
 type ServiceNetworkMapping_Properties struct {
 	// Input details specific to fabrics during Network Mapping.
 	FabricSpecificDetails any
+	// Network Mapping fabric specific settings.
+	FabricSpecificSettings any
+	// The primary fabric friendly name.
+	PrimaryFabricFriendlyName any
+	// The primary network friendly name.
+	PrimaryNetworkFriendlyName any
+	// The primary network id for network mapping.
+	PrimaryNetworkId any
+	// The recovery fabric ARM id.
+	RecoveryFabricArmId any
+	// The recovery fabric friendly name.
+	RecoveryFabricFriendlyName any
 	// Recovery fabric Name.
 	RecoveryFabricName any
+	// The recovery network friendly name.
+	RecoveryNetworkFriendlyName any
 	// Recovery network Id.
 	RecoveryNetworkId any
+	// The pairing state for network mapping.
+	State any
 }
 
 var ServiceNetworkMapping_Properties_FabricSpecificDetailsFields = ubx.FieldMap{
-		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-	}
+	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+}
 
 var ServiceNetworkMapping_PropertiesFields = ubx.FieldMap{
-		"FabricSpecificDetails": ubx.FieldSpec{
-			WireName: "fabric_specific_details",
-			Kind: "object",
-			Fields: ServiceNetworkMapping_Properties_FabricSpecificDetailsFields,
-		},
-		"RecoveryFabricName": ubx.FieldSpec{WireName: "recovery_fabric_name"},
-		"RecoveryNetworkId": ubx.FieldSpec{WireName: "recovery_network_id"},
-	}
+	"FabricSpecificDetails": ubx.FieldSpec{
+		WireName: "fabric_specific_details",
+		Kind:     "object",
+		Fields:   ServiceNetworkMapping_Properties_FabricSpecificDetailsFields,
+	},
+	"FabricSpecificSettings": ubx.FieldSpec{
+		WireName: "fabric_specific_settings",
+		Kind:     "object",
+		Fields:   ServiceNetworkMapping_Properties_FabricSpecificDetailsFields,
+	},
+	"PrimaryFabricFriendlyName":   ubx.FieldSpec{WireName: "primary_fabric_friendly_name"},
+	"PrimaryNetworkFriendlyName":  ubx.FieldSpec{WireName: "primary_network_friendly_name"},
+	"PrimaryNetworkId":            ubx.FieldSpec{WireName: "primary_network_id"},
+	"RecoveryFabricArmId":         ubx.FieldSpec{WireName: "recovery_fabric_arm_id"},
+	"RecoveryFabricFriendlyName":  ubx.FieldSpec{WireName: "recovery_fabric_friendly_name"},
+	"RecoveryFabricName":          ubx.FieldSpec{WireName: "recovery_fabric_name"},
+	"RecoveryNetworkFriendlyName": ubx.FieldSpec{WireName: "recovery_network_friendly_name"},
+	"RecoveryNetworkId":           ubx.FieldSpec{WireName: "recovery_network_id"},
+	"State":                       ubx.FieldSpec{WireName: "state"},
+}
 
 type ServiceNetworkMappingConfig struct {
 	// Common input details for network mapping operation.
@@ -48,8 +76,8 @@ var ServiceNetworkMapping = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceNetworkMapping_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceNetworkMapping_PropertiesFields,
 		},
 	},
 }

@@ -9,31 +9,31 @@ type OpenapiPrivateEndpointConnection_Value_Properties_PrivateEndpoint struct {
 
 type OpenapiPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiPrivateEndpointConnection_Value_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiPrivateEndpointConnection_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiPrivateEndpointConnectionConfig struct {
 	AccountName any
-	Maxresults any
+	Maxresults  any
 }
 
 type OpenapiPrivateEndpointConnectionAttrs struct {
 	AccountName any
-	Maxresults any
+	Maxresults  any
 	// The link to the next page of items
 	NextLink any
 	// The PrivateEndpointConnection items on this page
@@ -44,6 +44,6 @@ var OpenapiPrivateEndpointConnection = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_private_endpoint_connection",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"Maxresults": ubx.FieldSpec{WireName: "maxresults"},
+		"Maxresults":  ubx.FieldSpec{WireName: "maxresults"},
 	},
 }

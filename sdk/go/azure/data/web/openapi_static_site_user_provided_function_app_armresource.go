@@ -4,24 +4,24 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStaticSiteUserProvidedFunctionAppArmresource_Value_Properties struct {
-	CreatedOn any
-	FunctionAppRegion any
+	CreatedOn             any
+	FunctionAppRegion     any
 	FunctionAppResourceId any
 }
 
 type OpenapiStaticSiteUserProvidedFunctionAppArmresource_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiStaticSiteUserProvidedFunctionAppArmresourceConfig struct {
 	EnvironmentName any
-	Name any
+	Name            any
 }
 
 type OpenapiStaticSiteUserProvidedFunctionAppArmresourceAttrs struct {
 	EnvironmentName any
-	Name any
+	Name            any
 	// The link to the next page of items
 	NextLink any
 	// The StaticSiteUserProvidedFunctionAppARMResource items on this page
@@ -32,6 +32,6 @@ var OpenapiStaticSiteUserProvidedFunctionAppArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_static_site_user_provided_function_app_armresource",
 	Fields: ubx.FieldMap{
 		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":            ubx.FieldSpec{WireName: "name"},
 	},
 }

@@ -28,27 +28,16 @@ type ConfigurationProfileAssignment_SystemData struct {
 }
 
 var ConfigurationProfileAssignment_PropertiesFields = ubx.FieldMap{
-		"ConfigurationProfile": ubx.FieldSpec{WireName: "configuration_profile"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TargetId": ubx.FieldSpec{WireName: "target_id"},
-	}
-
-var ConfigurationProfileAssignment_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"ConfigurationProfile": ubx.FieldSpec{WireName: "configuration_profile"},
+	"Status":               ubx.FieldSpec{WireName: "status"},
+	"TargetId":             ubx.FieldSpec{WireName: "target_id"},
+}
 
 type ConfigurationProfileAssignmentConfig struct {
 	// Azure resource id. Indicates if this resource is managed by another Azure resource.
 	ManagedBy any
 	// Automanage configuration profile assignment properties.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type ConfigurationProfileAssignmentAttrs struct {
@@ -66,13 +55,8 @@ var ConfigurationProfileAssignment = ubx.ResourceBinding{
 		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ConfigurationProfileAssignment_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: ConfigurationProfileAssignment_SystemDataFields,
+			Kind:     "object",
+			Fields:   ConfigurationProfileAssignment_PropertiesFields,
 		},
 	},
 }

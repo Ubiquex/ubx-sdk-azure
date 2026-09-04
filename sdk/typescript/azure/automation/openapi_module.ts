@@ -17,9 +17,36 @@ export interface OpenapiModule_Properties_ContentLink {
   version?: string | Computed<string>;
 }
 
+export interface OpenapiModule_Properties_Error {
+  /** Gets or sets the error code. */
+  code?: string | Computed<string>;
+  /** Gets or sets the error message. */
+  message?: string | Computed<string>;
+}
+
 export interface OpenapiModule_Properties {
+  /** Gets or sets the activity count of the module. */
+  activityCount?: number | Computed<number>;
   /** Definition of the content link. */
   contentLink: OpenapiModule_Properties_ContentLink | Computed<OpenapiModule_Properties_ContentLink>;
+  /** Gets or sets the creation time. */
+  creationTime?: string | Computed<string>;
+  /** Gets or sets the description. */
+  description?: string | Computed<string>;
+  /** Definition of the module error info type. */
+  error?: OpenapiModule_Properties_Error | Computed<OpenapiModule_Properties_Error>;
+  /** Gets or sets type of module, if its composite or not. */
+  isComposite?: boolean | Computed<boolean>;
+  /** Gets or sets the isGlobal flag of the module. */
+  isGlobal?: boolean | Computed<boolean>;
+  /** Gets or sets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
+  /** Gets or sets the provisioning state of the module. */
+  provisioningState?: string | Computed<string>;
+  /** Gets or sets the size in bytes of the module. */
+  sizeInBytes?: number | Computed<number>;
+  /** Gets or sets the version of the module. */
+  version?: string | Computed<string>;
 }
 
 const OpenapiModule_Properties_ContentLink_ContentHashFields: FieldMap = {
@@ -37,12 +64,31 @@ const OpenapiModule_Properties_ContentLinkFields: FieldMap = {
   version: "version",
 };
 
+const OpenapiModule_Properties_ErrorFields: FieldMap = {
+  code: "code",
+  message: "message",
+};
+
 const OpenapiModule_PropertiesFields: FieldMap = {
+  activityCount: "activity_count",
   contentLink: {
     wireName: "content_link",
     kind: "object",
     fields: OpenapiModule_Properties_ContentLinkFields,
   },
+  creationTime: "creation_time",
+  description: "description",
+  error: {
+    wireName: "error",
+    kind: "object",
+    fields: OpenapiModule_Properties_ErrorFields,
+  },
+  isComposite: "is_composite",
+  isGlobal: "is_global",
+  lastModifiedTime: "last_modified_time",
+  provisioningState: "provisioning_state",
+  sizeInBytes: "size_in_bytes",
+  version: "version",
 };
 
 export interface OpenapiModuleConfig {

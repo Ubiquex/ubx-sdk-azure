@@ -20,34 +20,34 @@ type ApigatewayApiManagementGatewayResource_Value_Properties_Frontend struct {
 }
 
 type ApigatewayApiManagementGatewayResource_Value_Properties struct {
-	Backend any
-	ConfigurationApi any
-	CreatedAtUtc any
-	Frontend any
-	ProvisioningState any
+	Backend                 any
+	ConfigurationApi        any
+	CreatedAtUtc            any
+	Frontend                any
+	ProvisioningState       any
 	TargetProvisioningState any
-	VirtualNetworkType any
+	VirtualNetworkType      any
 }
 
 type ApigatewayApiManagementGatewayResource_Value_Sku struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
 type ApigatewayApiManagementGatewayResource_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type ApigatewayApiManagementGatewayResource_Value struct {
-	Etag any
-	Location any
+	Etag       any
+	Location   any
 	Properties any
-	Sku any
+	Sku        any
 	SystemData any
 }
 
@@ -63,6 +63,5 @@ type ApigatewayApiManagementGatewayResourceAttrs struct {
 
 var ApigatewayApiManagementGatewayResource = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apigateway_api_management_gateway_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

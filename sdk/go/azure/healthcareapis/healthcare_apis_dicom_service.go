@@ -39,14 +39,14 @@ type HealthcareApisDicomService_Properties_PrivateEndpointConnections_Properties
 
 type HealthcareApisDicomService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type HealthcareApisDicomService_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type HealthcareApisDicomService_Properties_PrivateEndpointConnections struct {
@@ -99,114 +99,103 @@ type HealthcareApisDicomService_SystemData struct {
 }
 
 var HealthcareApisDicomService_Properties_AuthenticationConfigurationFields = ubx.FieldMap{
-		"Audiences": ubx.FieldSpec{WireName: "audiences"},
-		"Authority": ubx.FieldSpec{WireName: "authority"},
-	}
+	"Audiences": ubx.FieldSpec{WireName: "audiences"},
+	"Authority": ubx.FieldSpec{WireName: "authority"},
+}
 
 var HealthcareApisDicomService_Properties_CorsConfigurationFields = ubx.FieldMap{
-		"AllowCredentials": ubx.FieldSpec{WireName: "allow_credentials"},
-		"Headers": ubx.FieldSpec{WireName: "headers"},
-		"MaxAge": ubx.FieldSpec{WireName: "max_age"},
-		"Methods": ubx.FieldSpec{WireName: "methods"},
-		"Origins": ubx.FieldSpec{WireName: "origins"},
-	}
+	"AllowCredentials": ubx.FieldSpec{WireName: "allow_credentials"},
+	"Headers":          ubx.FieldSpec{WireName: "headers"},
+	"MaxAge":           ubx.FieldSpec{WireName: "max_age"},
+	"Methods":          ubx.FieldSpec{WireName: "methods"},
+	"Origins":          ubx.FieldSpec{WireName: "origins"},
+}
 
 var HealthcareApisDicomService_Properties_Encryption_CustomerManagedKeyEncryptionFields = ubx.FieldMap{
-		"KeyEncryptionKeyUrl": ubx.FieldSpec{WireName: "key_encryption_key_url"},
-	}
+	"KeyEncryptionKeyUrl": ubx.FieldSpec{WireName: "key_encryption_key_url"},
+}
 
 var HealthcareApisDicomService_Properties_EncryptionFields = ubx.FieldMap{
-		"CustomerManagedKeyEncryption": ubx.FieldSpec{
-			WireName: "customer_managed_key_encryption",
-			Kind: "object",
-			Fields: HealthcareApisDicomService_Properties_Encryption_CustomerManagedKeyEncryptionFields,
-		},
-	}
+	"CustomerManagedKeyEncryption": ubx.FieldSpec{
+		WireName: "customer_managed_key_encryption",
+		Kind:     "object",
+		Fields:   HealthcareApisDicomService_Properties_Encryption_CustomerManagedKeyEncryptionFields,
+	},
+}
 
 var HealthcareApisDicomService_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var HealthcareApisDicomService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var HealthcareApisDicomService_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: HealthcareApisDicomService_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: HealthcareApisDicomService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   HealthcareApisDicomService_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   HealthcareApisDicomService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var HealthcareApisDicomService_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: HealthcareApisDicomService_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   HealthcareApisDicomService_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var HealthcareApisDicomService_Properties_StorageConfigurationFields = ubx.FieldMap{
-		"FileSystemName": ubx.FieldSpec{WireName: "file_system_name"},
-		"StorageResourceId": ubx.FieldSpec{WireName: "storage_resource_id"},
-	}
+	"FileSystemName":    ubx.FieldSpec{WireName: "file_system_name"},
+	"StorageResourceId": ubx.FieldSpec{WireName: "storage_resource_id"},
+}
 
 var HealthcareApisDicomService_PropertiesFields = ubx.FieldMap{
-		"AuthenticationConfiguration": ubx.FieldSpec{
-			WireName: "authentication_configuration",
-			Kind: "object",
-			Fields: HealthcareApisDicomService_Properties_AuthenticationConfigurationFields,
-		},
-		"CorsConfiguration": ubx.FieldSpec{
-			WireName: "cors_configuration",
-			Kind: "object",
-			Fields: HealthcareApisDicomService_Properties_CorsConfigurationFields,
-		},
-		"EnableDataPartitions": ubx.FieldSpec{WireName: "enable_data_partitions"},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: HealthcareApisDicomService_Properties_EncryptionFields,
-		},
-		"EventState": ubx.FieldSpec{WireName: "event_state"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: HealthcareApisDicomService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"ServiceUrl": ubx.FieldSpec{WireName: "service_url"},
-		"StorageConfiguration": ubx.FieldSpec{
-			WireName: "storage_configuration",
-			Kind: "object",
-			Fields: HealthcareApisDicomService_Properties_StorageConfigurationFields,
-		},
-	}
-
-var HealthcareApisDicomService_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"AuthenticationConfiguration": ubx.FieldSpec{
+		WireName: "authentication_configuration",
+		Kind:     "object",
+		Fields:   HealthcareApisDicomService_Properties_AuthenticationConfigurationFields,
+	},
+	"CorsConfiguration": ubx.FieldSpec{
+		WireName: "cors_configuration",
+		Kind:     "object",
+		Fields:   HealthcareApisDicomService_Properties_CorsConfigurationFields,
+	},
+	"EnableDataPartitions": ubx.FieldSpec{WireName: "enable_data_partitions"},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   HealthcareApisDicomService_Properties_EncryptionFields,
+	},
+	"EventState": ubx.FieldSpec{WireName: "event_state"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   HealthcareApisDicomService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"ServiceUrl":          ubx.FieldSpec{WireName: "service_url"},
+	"StorageConfiguration": ubx.FieldSpec{
+		WireName: "storage_configuration",
+		Kind:     "object",
+		Fields:   HealthcareApisDicomService_Properties_StorageConfigurationFields,
+	},
+}
 
 type HealthcareApisDicomServiceConfig struct {
 	// Dicom Service properties.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type HealthcareApisDicomServiceAttrs struct {
@@ -221,13 +210,8 @@ var HealthcareApisDicomService = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HealthcareApisDicomService_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: HealthcareApisDicomService_SystemDataFields,
+			Kind:     "object",
+			Fields:   HealthcareApisDicomService_PropertiesFields,
 		},
 	},
 }

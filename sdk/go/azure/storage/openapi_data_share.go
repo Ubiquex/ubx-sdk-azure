@@ -4,13 +4,13 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDataShare_Properties_AccessPolicies struct {
-	Permission any
+	Permission  any
 	PrincipalId any
-	TenantId any
+	TenantId    any
 }
 
 type OpenapiDataShare_Properties_Assets struct {
-	AssetPath any
+	AssetPath   any
 	DisplayName any
 }
 
@@ -30,32 +30,32 @@ type OpenapiDataShare_Properties struct {
 }
 
 var OpenapiDataShare_Properties_AccessPoliciesFields = ubx.FieldMap{
-		"Permission": ubx.FieldSpec{WireName: "permission"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"Permission":  ubx.FieldSpec{WireName: "permission"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var OpenapiDataShare_Properties_AssetsFields = ubx.FieldMap{
-		"AssetPath": ubx.FieldSpec{WireName: "asset_path"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-	}
+	"AssetPath":   ubx.FieldSpec{WireName: "asset_path"},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+}
 
 var OpenapiDataShare_PropertiesFields = ubx.FieldMap{
-		"AccessPolicies": ubx.FieldSpec{
-			WireName: "access_policies",
-			Kind: "list",
-			Fields: OpenapiDataShare_Properties_AccessPoliciesFields,
-		},
-		"Assets": ubx.FieldSpec{
-			WireName: "assets",
-			Kind: "list",
-			Fields: OpenapiDataShare_Properties_AssetsFields,
-		},
-		"DataShareIdentifier": ubx.FieldSpec{WireName: "data_share_identifier"},
-		"DataShareUri": ubx.FieldSpec{WireName: "data_share_uri"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AccessPolicies": ubx.FieldSpec{
+		WireName: "access_policies",
+		Kind:     "list",
+		Fields:   OpenapiDataShare_Properties_AccessPoliciesFields,
+	},
+	"Assets": ubx.FieldSpec{
+		WireName: "assets",
+		Kind:     "list",
+		Fields:   OpenapiDataShare_Properties_AssetsFields,
+	},
+	"DataShareIdentifier": ubx.FieldSpec{WireName: "data_share_identifier"},
+	"DataShareUri":        ubx.FieldSpec{WireName: "data_share_uri"},
+	"Description":         ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiDataShareConfig struct {
 	// The storage datashare properties
@@ -72,8 +72,8 @@ var OpenapiDataShare = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDataShare_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDataShare_PropertiesFields,
 		},
 	},
 }

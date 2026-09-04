@@ -15,10 +15,14 @@ class OpenapiConnection_Properties_ConnectionType:
 class OpenapiConnection_Properties:
     # The connection type property associated with the entity.
     connection_type: Any = None
+    # Gets the creation time.
+    creation_time: Any = None
     # Gets or sets the description of the connection.
     description: Any = None
     # Gets or sets the field definition properties of the connection.
     field_definition_values: Any = None
+    # Gets the last modified time.
+    last_modified_time: Any = None
 
 _OpenapiConnection_Properties_ConnectionTypeFields = {
     "name": ubx.FieldSpec(wire_name="name"),
@@ -30,8 +34,10 @@ _OpenapiConnection_PropertiesFields = {
         kind="object",
         fields=_OpenapiConnection_Properties_ConnectionTypeFields,
     ),
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
     "description": ubx.FieldSpec(wire_name="description"),
     "field_definition_values": ubx.FieldSpec(wire_name="field_definition_values"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
 }
 
 @dataclasses.dataclass

@@ -5,15 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SignalRusage_Value_Name struct {
 	LocalizedValue any
-	Value any
+	Value          any
 }
 
 type SignalRusage_Value struct {
 	CurrentValue any
-	Id any
-	Limit any
-	Name any
-	Unit any
+	Id           any
+	Limit        any
+	Name         any
+	Unit         any
 }
 
 type SignalRusageConfig struct {

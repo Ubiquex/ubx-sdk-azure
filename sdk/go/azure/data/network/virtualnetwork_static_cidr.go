@@ -4,11 +4,11 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkStaticCidr_Value_Properties struct {
-	AddressPrefixes any
-	Description any
+	AddressPrefixes               any
+	Description                   any
 	NumberOfIpaddressesToAllocate any
-	ProvisioningState any
-	TotalNumberOfIpaddresses any
+	ProvisioningState             any
+	TotalNumberOfIpaddresses      any
 }
 
 type VirtualnetworkStaticCidr_Value struct {
@@ -17,24 +17,24 @@ type VirtualnetworkStaticCidr_Value struct {
 
 type VirtualnetworkStaticCidrConfig struct {
 	NetworkManagerName any
-	PoolName any
-	Skip any
-	SkipToken any
-	SortKey any
-	SortValue any
-	Top any
+	PoolName           any
+	Skip               any
+	SkipToken          any
+	SortKey            any
+	SortValue          any
+	Top                any
 }
 
 type VirtualnetworkStaticCidrAttrs struct {
 	NetworkManagerName any
 	// The link to the next page of items
-	NextLink any
-	PoolName any
-	Skip any
+	NextLink  any
+	PoolName  any
+	Skip      any
 	SkipToken any
-	SortKey any
+	SortKey   any
 	SortValue any
-	Top any
+	Top       any
 	// The StaticCidr items on this page
 	Value any
 }
@@ -43,11 +43,11 @@ var VirtualnetworkStaticCidr = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_static_cidr",
 	Fields: ubx.FieldMap{
 		"NetworkManagerName": ubx.FieldSpec{WireName: "network_manager_name"},
-		"PoolName": ubx.FieldSpec{WireName: "pool_name"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"SkipToken": ubx.FieldSpec{WireName: "skip_token"},
-		"SortKey": ubx.FieldSpec{WireName: "sort_key"},
-		"SortValue": ubx.FieldSpec{WireName: "sort_value"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"PoolName":           ubx.FieldSpec{WireName: "pool_name"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"SkipToken":          ubx.FieldSpec{WireName: "skip_token"},
+		"SortKey":            ubx.FieldSpec{WireName: "sort_key"},
+		"SortValue":          ubx.FieldSpec{WireName: "sort_value"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

@@ -215,22 +215,11 @@ const Domain_PropertiesFields: FieldMap = {
   publicNetworkAccess: "public_network_access",
 };
 
-const Domain_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface DomainConfig {
   /** The identity information for the resource. */
   identity?: Domain_Identity | Computed<Domain_Identity>;
   /** Properties of the Event Grid Domain Resource. */
   properties?: Domain_Properties | Computed<Domain_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: Domain_SystemData | Computed<Domain_SystemData>;
 }
 
 export interface DomainAttrs {
@@ -254,11 +243,6 @@ export const Domain: ResourceBinding<DomainConfig, DomainAttrs> = {
       wireName: "properties",
       kind: "object",
       fields: Domain_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: Domain_SystemDataFields,
     },
   },
 };

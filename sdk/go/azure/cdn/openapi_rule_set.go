@@ -8,12 +8,12 @@ type OpenapiRuleSet_Properties_Rules_Actions struct {
 }
 
 type OpenapiRuleSet_Properties_Rules struct {
-	Actions any
-	Conditions any
+	Actions                 any
+	Conditions              any
 	MatchProcessingBehavior any
-	Order any
-	RuleName any
-	RuleSetName any
+	Order                   any
+	RuleName                any
+	RuleSetName             any
 }
 
 type OpenapiRuleSet_Properties struct {
@@ -26,35 +26,35 @@ type OpenapiRuleSet_Properties struct {
 }
 
 var OpenapiRuleSet_Properties_Rules_ActionsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiRuleSet_Properties_RulesFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{
-			WireName: "actions",
-			Kind: "list",
-			Fields: OpenapiRuleSet_Properties_Rules_ActionsFields,
-		},
-		"Conditions": ubx.FieldSpec{
-			WireName: "conditions",
-			Kind: "list",
-			Fields: OpenapiRuleSet_Properties_Rules_ActionsFields,
-		},
-		"MatchProcessingBehavior": ubx.FieldSpec{WireName: "match_processing_behavior"},
-		"Order": ubx.FieldSpec{WireName: "order"},
-		"RuleName": ubx.FieldSpec{WireName: "rule_name"},
-		"RuleSetName": ubx.FieldSpec{WireName: "rule_set_name"},
-	}
+	"Actions": ubx.FieldSpec{
+		WireName: "actions",
+		Kind:     "list",
+		Fields:   OpenapiRuleSet_Properties_Rules_ActionsFields,
+	},
+	"Conditions": ubx.FieldSpec{
+		WireName: "conditions",
+		Kind:     "list",
+		Fields:   OpenapiRuleSet_Properties_Rules_ActionsFields,
+	},
+	"MatchProcessingBehavior": ubx.FieldSpec{WireName: "match_processing_behavior"},
+	"Order":                   ubx.FieldSpec{WireName: "order"},
+	"RuleName":                ubx.FieldSpec{WireName: "rule_name"},
+	"RuleSetName":             ubx.FieldSpec{WireName: "rule_set_name"},
+}
 
 var OpenapiRuleSet_PropertiesFields = ubx.FieldMap{
-		"BatchMode": ubx.FieldSpec{WireName: "batch_mode"},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: OpenapiRuleSet_Properties_RulesFields,
-		},
-	}
+	"BatchMode":   ubx.FieldSpec{WireName: "batch_mode"},
+	"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   OpenapiRuleSet_Properties_RulesFields,
+	},
+}
 
 type OpenapiRuleSetConfig struct {
 	// The JSON object that contains the properties of the Rule Set to create.
@@ -71,8 +71,8 @@ var OpenapiRuleSet = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiRuleSet_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiRuleSet_PropertiesFields,
 		},
 	},
 }

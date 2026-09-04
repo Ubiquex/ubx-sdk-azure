@@ -3,6 +3,21 @@ package apimanagement
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type ApimworkspacesApiContract2_Properties_ApiVersionSet struct {
+	// Description of API Version Set.
+	Description any
+	// Identifier for existing API Version Set. Omit this value to create a new Version Set.
+	Id any
+	// The display Name of the API Version Set.
+	Name any
+	// Name of HTTP header parameter that indicates the API Version if versioningScheme is set to `header`.
+	VersionHeaderName any
+	// Name of query parameter that indicates the API Version if versioningScheme is set to `query`.
+	VersionQueryName any
+	// An value that determines where the API Version identifier will be located in a HTTP request.
+	VersioningScheme any
+}
+
 type ApimworkspacesApiContract2_Properties_WsdlSelector struct {
 	// Name of endpoint(port) to import from WSDL
 	WsdlEndpointName any
@@ -13,8 +28,22 @@ type ApimworkspacesApiContract2_Properties_WsdlSelector struct {
 type ApimworkspacesApiContract2_Properties struct {
 	// Type of API to create. * `http` creates a REST API * `soap` creates a SOAP pass-through API * `websocket` creates websocket API * `graphql` creates GraphQL API. New types can be added in the future.
 	ApiType any
+	// An API Version Set contains the common configuration for a set of API Versions relating
+	ApiVersionSet any
+	// API name. Must be 1 to 300 characters long.
+	DisplayName any
 	// Format of the Content in which the API is getting imported. New formats can be added in the future
 	Format any
+	// Relative URL uniquely identifying this API and all of its resource paths within the API Management service instance. It is appended to the API endpoint base URL specified during the service instance creation to form a public URL for this API.
+	Path any
+	// Describes on which protocols the operations in this API can be invoked.
+	Protocols any
+	// The provisioning state
+	ProvisioningState any
+	// Absolute URL of the backend service implementing this API. Cannot be more than 2000 characters long.
+	ServiceUrl any
+	// API identifier of the source API.
+	SourceApiId any
 	// Strategy of translating required query parameters to template ones. By default has value 'template'. Possible values: 'template', 'query'
 	TranslateRequiredQueryParameters any
 	// Content value when Importing an API.
@@ -23,22 +52,42 @@ type ApimworkspacesApiContract2_Properties struct {
 	WsdlSelector any
 }
 
+var ApimworkspacesApiContract2_Properties_ApiVersionSetFields = ubx.FieldMap{
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"Id":                ubx.FieldSpec{WireName: "id"},
+	"Name":              ubx.FieldSpec{WireName: "name"},
+	"VersionHeaderName": ubx.FieldSpec{WireName: "version_header_name"},
+	"VersionQueryName":  ubx.FieldSpec{WireName: "version_query_name"},
+	"VersioningScheme":  ubx.FieldSpec{WireName: "versioning_scheme"},
+}
+
 var ApimworkspacesApiContract2_Properties_WsdlSelectorFields = ubx.FieldMap{
-		"WsdlEndpointName": ubx.FieldSpec{WireName: "wsdl_endpoint_name"},
-		"WsdlServiceName": ubx.FieldSpec{WireName: "wsdl_service_name"},
-	}
+	"WsdlEndpointName": ubx.FieldSpec{WireName: "wsdl_endpoint_name"},
+	"WsdlServiceName":  ubx.FieldSpec{WireName: "wsdl_service_name"},
+}
 
 var ApimworkspacesApiContract2_PropertiesFields = ubx.FieldMap{
-		"ApiType": ubx.FieldSpec{WireName: "api_type"},
-		"Format": ubx.FieldSpec{WireName: "format"},
-		"TranslateRequiredQueryParameters": ubx.FieldSpec{WireName: "translate_required_query_parameters"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-		"WsdlSelector": ubx.FieldSpec{
-			WireName: "wsdl_selector",
-			Kind: "object",
-			Fields: ApimworkspacesApiContract2_Properties_WsdlSelectorFields,
-		},
-	}
+	"ApiType": ubx.FieldSpec{WireName: "api_type"},
+	"ApiVersionSet": ubx.FieldSpec{
+		WireName: "api_version_set",
+		Kind:     "object",
+		Fields:   ApimworkspacesApiContract2_Properties_ApiVersionSetFields,
+	},
+	"DisplayName":                      ubx.FieldSpec{WireName: "display_name"},
+	"Format":                           ubx.FieldSpec{WireName: "format"},
+	"Path":                             ubx.FieldSpec{WireName: "path"},
+	"Protocols":                        ubx.FieldSpec{WireName: "protocols"},
+	"ProvisioningState":                ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServiceUrl":                       ubx.FieldSpec{WireName: "service_url"},
+	"SourceApiId":                      ubx.FieldSpec{WireName: "source_api_id"},
+	"TranslateRequiredQueryParameters": ubx.FieldSpec{WireName: "translate_required_query_parameters"},
+	"Value":                            ubx.FieldSpec{WireName: "value"},
+	"WsdlSelector": ubx.FieldSpec{
+		WireName: "wsdl_selector",
+		Kind:     "object",
+		Fields:   ApimworkspacesApiContract2_Properties_WsdlSelectorFields,
+	},
+}
 
 type ApimworkspacesApiContract2Config struct {
 	// API Create or Update Properties.
@@ -55,8 +104,8 @@ var ApimworkspacesApiContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacesApiContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacesApiContract2_PropertiesFields,
 		},
 	},
 }

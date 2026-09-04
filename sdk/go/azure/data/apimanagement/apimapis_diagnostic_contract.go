@@ -8,42 +8,42 @@ type ApimapisDiagnosticContract_Value_Properties_Backend_Request_Body struct {
 }
 
 type ApimapisDiagnosticContract_Value_Properties_Backend_Request_DataMasking_Headers struct {
-	Mode any
+	Mode  any
 	Value any
 }
 
 type ApimapisDiagnosticContract_Value_Properties_Backend_Request_DataMasking struct {
-	Headers any
+	Headers     any
 	QueryParams any
 }
 
 type ApimapisDiagnosticContract_Value_Properties_Backend_Request struct {
-	Body any
+	Body        any
 	DataMasking any
-	Headers any
+	Headers     any
 }
 
 type ApimapisDiagnosticContract_Value_Properties_Backend struct {
-	Request any
+	Request  any
 	Response any
 }
 
 type ApimapisDiagnosticContract_Value_Properties_Sampling struct {
-	Percentage any
+	Percentage   any
 	SamplingType any
 }
 
 type ApimapisDiagnosticContract_Value_Properties struct {
-	AlwaysLog any
-	Backend any
-	Frontend any
+	AlwaysLog               any
+	Backend                 any
+	Frontend                any
 	HttpCorrelationProtocol any
-	LogClientIp any
-	LoggerId any
-	Metrics any
-	OperationNameFormat any
-	Sampling any
-	Verbosity any
+	LogClientIp             any
+	LoggerId                any
+	Metrics                 any
+	OperationNameFormat     any
+	Sampling                any
+	Verbosity               any
 }
 
 type ApimapisDiagnosticContract_Value struct {
@@ -64,6 +64,5 @@ type ApimapisDiagnosticContractAttrs struct {
 
 var ApimapisDiagnosticContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimapis_diagnostic_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

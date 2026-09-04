@@ -27,38 +27,32 @@ type PrivateEndpointConnection_Properties struct {
 }
 
 var PrivateEndpointConnection_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var PrivateEndpointConnection_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: PrivateEndpointConnection_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   PrivateEndpointConnection_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type PrivateEndpointConnectionConfig struct {
-	// The resource ID.
-	Id any
-	// The name of the resource.
-	Name any
 	// Properties of a private endpoint connection.
 	Properties any
-	// The type of the resource.
-	Type any
 }
 
 type PrivateEndpointConnectionAttrs struct {
@@ -75,13 +69,10 @@ type PrivateEndpointConnectionAttrs struct {
 var PrivateEndpointConnection = ubx.ResourceBinding{
 	WireType: "azure_appconfiguration_private_endpoint_connection",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PrivateEndpointConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   PrivateEndpointConnection_PropertiesFields,
 		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

@@ -4,14 +4,14 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanVpnConnection_Value_Properties_IpsecPolicies struct {
-	DhGroup any
-	IkeEncryption any
-	IkeIntegrity any
-	IpsecEncryption any
-	IpsecIntegrity any
-	PfsGroup any
+	DhGroup             any
+	IkeEncryption       any
+	IkeIntegrity        any
+	IpsecEncryption     any
+	IpsecIntegrity      any
+	PfsGroup            any
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds any
+	SaLifeTimeSeconds   any
 }
 
 type VirtualwanVpnConnection_Value_Properties_RemoteVpnSite struct {
@@ -19,97 +19,97 @@ type VirtualwanVpnConnection_Value_Properties_RemoteVpnSite struct {
 }
 
 type VirtualwanVpnConnection_Value_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids any
+	Ids    any
 	Labels any
 }
 
 type VirtualwanVpnConnection_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
 type VirtualwanVpnConnection_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes any
+	PropagateStaticRoutes          any
 	VnetLocalRouteOverrideCriteria any
 }
 
 type VirtualwanVpnConnection_Value_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections any
-	StaticRoutes any
+	BgpConnections     any
+	StaticRoutes       any
 	StaticRoutesConfig any
 }
 
 type VirtualwanVpnConnection_Value_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable any
-	InboundRouteMap any
-	OutboundRouteMap any
+	AssociatedRouteTable  any
+	InboundRouteMap       any
+	OutboundRouteMap      any
 	PropagatedRouteTables any
-	VnetRoutes any
+	VnetRoutes            any
 }
 
 type VirtualwanVpnConnection_Value_Properties_TrafficSelectorPolicies struct {
-	LocalAddressRanges any
+	LocalAddressRanges  any
 	RemoteAddressRanges any
 }
 
 type VirtualwanVpnConnection_Value_Properties_VpnLinkConnections_Properties_VpnGatewayCustomBgpAddresses struct {
 	CustomBgpIpAddress any
-	IpConfigurationId any
+	IpConfigurationId  any
 }
 
 type VirtualwanVpnConnection_Value_Properties_VpnLinkConnections_Properties struct {
-	ConnectionBandwidth any
-	ConnectionStatus any
-	DpdTimeoutSeconds any
-	EgressBytesTransferred any
-	EgressNatRules any
-	EnableBgp any
-	EnableRateLimiting any
-	IngressBytesTransferred any
-	IngressNatRules any
-	IpsecPolicies any
-	ProvisioningState any
-	RoutingWeight any
-	SharedKey any
-	UseLocalAzureIpAddress any
+	ConnectionBandwidth            any
+	ConnectionStatus               any
+	DpdTimeoutSeconds              any
+	EgressBytesTransferred         any
+	EgressNatRules                 any
+	EnableBgp                      any
+	EnableRateLimiting             any
+	IngressBytesTransferred        any
+	IngressNatRules                any
+	IpsecPolicies                  any
+	ProvisioningState              any
+	RoutingWeight                  any
+	SharedKey                      any
+	UseLocalAzureIpAddress         any
 	UsePolicyBasedTrafficSelectors any
-	VpnConnectionProtocolType any
-	VpnGatewayCustomBgpAddresses any
-	VpnLinkConnectionMode any
-	VpnSiteLink any
+	VpnConnectionProtocolType      any
+	VpnGatewayCustomBgpAddresses   any
+	VpnLinkConnectionMode          any
+	VpnSiteLink                    any
 }
 
 type VirtualwanVpnConnection_Value_Properties_VpnLinkConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanVpnConnection_Value_Properties struct {
-	ConnectionBandwidth any
-	ConnectionStatus any
-	DpdTimeoutSeconds any
-	EgressBytesTransferred any
-	EnableBgp any
-	EnableInternetSecurity any
-	EnableRateLimiting any
-	IngressBytesTransferred any
-	IpsecPolicies any
-	ProvisioningState any
-	RemoteVpnSite any
-	RoutingConfiguration any
-	RoutingWeight any
-	SharedKey any
-	TrafficSelectorPolicies any
-	UseLocalAzureIpAddress any
+	ConnectionBandwidth            any
+	ConnectionStatus               any
+	DpdTimeoutSeconds              any
+	EgressBytesTransferred         any
+	EnableBgp                      any
+	EnableInternetSecurity         any
+	EnableRateLimiting             any
+	IngressBytesTransferred        any
+	IpsecPolicies                  any
+	ProvisioningState              any
+	RemoteVpnSite                  any
+	RoutingConfiguration           any
+	RoutingWeight                  any
+	SharedKey                      any
+	TrafficSelectorPolicies        any
+	UseLocalAzureIpAddress         any
 	UsePolicyBasedTrafficSelectors any
-	VpnConnectionProtocolType any
-	VpnLinkConnections any
+	VpnConnectionProtocolType      any
+	VpnLinkConnections             any
 }
 
 type VirtualwanVpnConnection_Value struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 

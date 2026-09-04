@@ -4,24 +4,24 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApplicationLiveViewResource_Value_Properties_Components_Instances struct {
-	Name any
+	Name   any
 	Status any
 }
 
 type ApplicationLiveViewResource_Value_Properties_Components_ResourceRequests struct {
-	Cpu any
+	Cpu           any
 	InstanceCount any
-	Memory any
+	Memory        any
 }
 
 type ApplicationLiveViewResource_Value_Properties_Components struct {
-	Instances any
-	Name any
+	Instances        any
+	Name             any
 	ResourceRequests any
 }
 
 type ApplicationLiveViewResource_Value_Properties struct {
-	Components any
+	Components        any
 	ProvisioningState any
 }
 
@@ -30,19 +30,19 @@ type ApplicationLiveViewResource_Value struct {
 }
 
 type ApplicationLiveViewResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type ApplicationLiveViewResourceAttrs struct {
 	ApiVersion any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of Application Live View resources
 	Value any
 }
@@ -50,9 +50,9 @@ type ApplicationLiveViewResourceAttrs struct {
 var ApplicationLiveViewResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_application_live_view_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

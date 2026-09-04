@@ -64,11 +64,11 @@ type DeploymentResource_Properties_DeploymentSettings struct {
 
 type DeploymentResource_Properties_Instances struct {
 	DiscoveryStatus any
-	Name any
-	Reason any
-	StartTime any
-	Status any
-	Zone any
+	Name            any
+	Reason          any
+	StartTime       any
+	Status          any
+	Zone            any
 }
 
 type DeploymentResource_Properties_Source struct {
@@ -103,112 +103,112 @@ type DeploymentResource_Sku struct {
 }
 
 var DeploymentResource_Properties_DeploymentSettings_ApmsFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var DeploymentResource_Properties_DeploymentSettings_ContainerProbeSettingsFields = ubx.FieldMap{
-		"DisableProbe": ubx.FieldSpec{WireName: "disable_probe"},
-	}
+	"DisableProbe": ubx.FieldSpec{WireName: "disable_probe"},
+}
 
 var DeploymentResource_Properties_DeploymentSettings_LivenessProbe_ProbeActionFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var DeploymentResource_Properties_DeploymentSettings_LivenessProbeFields = ubx.FieldMap{
-		"DisableProbe": ubx.FieldSpec{WireName: "disable_probe"},
-		"FailureThreshold": ubx.FieldSpec{WireName: "failure_threshold"},
-		"InitialDelaySeconds": ubx.FieldSpec{WireName: "initial_delay_seconds"},
-		"PeriodSeconds": ubx.FieldSpec{WireName: "period_seconds"},
-		"ProbeAction": ubx.FieldSpec{
-			WireName: "probe_action",
-			Kind: "object",
-			Fields: DeploymentResource_Properties_DeploymentSettings_LivenessProbe_ProbeActionFields,
-		},
-		"SuccessThreshold": ubx.FieldSpec{WireName: "success_threshold"},
-		"TimeoutSeconds": ubx.FieldSpec{WireName: "timeout_seconds"},
-	}
+	"DisableProbe":        ubx.FieldSpec{WireName: "disable_probe"},
+	"FailureThreshold":    ubx.FieldSpec{WireName: "failure_threshold"},
+	"InitialDelaySeconds": ubx.FieldSpec{WireName: "initial_delay_seconds"},
+	"PeriodSeconds":       ubx.FieldSpec{WireName: "period_seconds"},
+	"ProbeAction": ubx.FieldSpec{
+		WireName: "probe_action",
+		Kind:     "object",
+		Fields:   DeploymentResource_Properties_DeploymentSettings_LivenessProbe_ProbeActionFields,
+	},
+	"SuccessThreshold": ubx.FieldSpec{WireName: "success_threshold"},
+	"TimeoutSeconds":   ubx.FieldSpec{WireName: "timeout_seconds"},
+}
 
 var DeploymentResource_Properties_DeploymentSettings_ResourceRequestsFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":    ubx.FieldSpec{WireName: "cpu"},
+	"Memory": ubx.FieldSpec{WireName: "memory"},
+}
 
 var DeploymentResource_Properties_DeploymentSettingsFields = ubx.FieldMap{
-		"AddonConfigs": ubx.FieldSpec{WireName: "addon_configs"},
-		"Apms": ubx.FieldSpec{
-			WireName: "apms",
-			Kind: "list",
-			Fields: DeploymentResource_Properties_DeploymentSettings_ApmsFields,
-		},
-		"ContainerProbeSettings": ubx.FieldSpec{
-			WireName: "container_probe_settings",
-			Kind: "object",
-			Fields: DeploymentResource_Properties_DeploymentSettings_ContainerProbeSettingsFields,
-		},
-		"EnvironmentVariables": ubx.FieldSpec{WireName: "environment_variables"},
-		"LivenessProbe": ubx.FieldSpec{
-			WireName: "liveness_probe",
-			Kind: "object",
-			Fields: DeploymentResource_Properties_DeploymentSettings_LivenessProbeFields,
-		},
-		"ReadinessProbe": ubx.FieldSpec{
-			WireName: "readiness_probe",
-			Kind: "object",
-			Fields: DeploymentResource_Properties_DeploymentSettings_LivenessProbeFields,
-		},
-		"ResourceRequests": ubx.FieldSpec{
-			WireName: "resource_requests",
-			Kind: "object",
-			Fields: DeploymentResource_Properties_DeploymentSettings_ResourceRequestsFields,
-		},
-		"StartupProbe": ubx.FieldSpec{
-			WireName: "startup_probe",
-			Kind: "object",
-			Fields: DeploymentResource_Properties_DeploymentSettings_LivenessProbeFields,
-		},
-		"TerminationGracePeriodSeconds": ubx.FieldSpec{WireName: "termination_grace_period_seconds"},
-	}
+	"AddonConfigs": ubx.FieldSpec{WireName: "addon_configs"},
+	"Apms": ubx.FieldSpec{
+		WireName: "apms",
+		Kind:     "list",
+		Fields:   DeploymentResource_Properties_DeploymentSettings_ApmsFields,
+	},
+	"ContainerProbeSettings": ubx.FieldSpec{
+		WireName: "container_probe_settings",
+		Kind:     "object",
+		Fields:   DeploymentResource_Properties_DeploymentSettings_ContainerProbeSettingsFields,
+	},
+	"EnvironmentVariables": ubx.FieldSpec{WireName: "environment_variables"},
+	"LivenessProbe": ubx.FieldSpec{
+		WireName: "liveness_probe",
+		Kind:     "object",
+		Fields:   DeploymentResource_Properties_DeploymentSettings_LivenessProbeFields,
+	},
+	"ReadinessProbe": ubx.FieldSpec{
+		WireName: "readiness_probe",
+		Kind:     "object",
+		Fields:   DeploymentResource_Properties_DeploymentSettings_LivenessProbeFields,
+	},
+	"ResourceRequests": ubx.FieldSpec{
+		WireName: "resource_requests",
+		Kind:     "object",
+		Fields:   DeploymentResource_Properties_DeploymentSettings_ResourceRequestsFields,
+	},
+	"StartupProbe": ubx.FieldSpec{
+		WireName: "startup_probe",
+		Kind:     "object",
+		Fields:   DeploymentResource_Properties_DeploymentSettings_LivenessProbeFields,
+	},
+	"TerminationGracePeriodSeconds": ubx.FieldSpec{WireName: "termination_grace_period_seconds"},
+}
 
 var DeploymentResource_Properties_InstancesFields = ubx.FieldMap{
-		"DiscoveryStatus": ubx.FieldSpec{WireName: "discovery_status"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Reason": ubx.FieldSpec{WireName: "reason"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Zone": ubx.FieldSpec{WireName: "zone"},
-	}
+	"DiscoveryStatus": ubx.FieldSpec{WireName: "discovery_status"},
+	"Name":            ubx.FieldSpec{WireName: "name"},
+	"Reason":          ubx.FieldSpec{WireName: "reason"},
+	"StartTime":       ubx.FieldSpec{WireName: "start_time"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+	"Zone":            ubx.FieldSpec{WireName: "zone"},
+}
 
 var DeploymentResource_Properties_SourceFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Type":    ubx.FieldSpec{WireName: "type"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var DeploymentResource_PropertiesFields = ubx.FieldMap{
-		"Active": ubx.FieldSpec{WireName: "active"},
-		"DeploymentSettings": ubx.FieldSpec{
-			WireName: "deployment_settings",
-			Kind: "object",
-			Fields: DeploymentResource_Properties_DeploymentSettingsFields,
-		},
-		"Instances": ubx.FieldSpec{
-			WireName: "instances",
-			Kind: "list",
-			Fields: DeploymentResource_Properties_InstancesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Source": ubx.FieldSpec{
-			WireName: "source",
-			Kind: "object",
-			Fields: DeploymentResource_Properties_SourceFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Active": ubx.FieldSpec{WireName: "active"},
+	"DeploymentSettings": ubx.FieldSpec{
+		WireName: "deployment_settings",
+		Kind:     "object",
+		Fields:   DeploymentResource_Properties_DeploymentSettingsFields,
+	},
+	"Instances": ubx.FieldSpec{
+		WireName: "instances",
+		Kind:     "list",
+		Fields:   DeploymentResource_Properties_InstancesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Source": ubx.FieldSpec{
+		WireName: "source",
+		Kind:     "object",
+		Fields:   DeploymentResource_Properties_SourceFields,
+	},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var DeploymentResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type DeploymentResourceConfig struct {
 	// Deployment resource properties payload
@@ -229,13 +229,13 @@ var DeploymentResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DeploymentResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DeploymentResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: DeploymentResource_SkuFields,
+			Kind:     "object",
+			Fields:   DeploymentResource_SkuFields,
 		},
 	},
 }

@@ -4,43 +4,43 @@ package paloaltonetworks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CloudngfwGlobalRulestackResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type CloudngfwGlobalRulestackResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type CloudngfwGlobalRulestackResource_Value_Properties_SecurityServices struct {
-	AntiSpywareProfile any
-	AntiVirusProfile any
-	DnsSubscription any
-	FileBlockingProfile any
-	OutboundTrustCertificate any
+	AntiSpywareProfile         any
+	AntiVirusProfile           any
+	DnsSubscription            any
+	FileBlockingProfile        any
+	OutboundTrustCertificate   any
 	OutboundUnTrustCertificate any
-	UrlFilteringProfile any
-	VulnerabilityProfile any
+	UrlFilteringProfile        any
+	VulnerabilityProfile       any
 }
 
 type CloudngfwGlobalRulestackResource_Value_Properties struct {
 	AssociatedSubscriptions any
-	DefaultMode any
-	Description any
-	MinAppIdVersion any
-	PanEtag any
-	PanLocation any
-	ProvisioningState any
-	Scope any
-	SecurityServices any
+	DefaultMode             any
+	Description             any
+	MinAppIdVersion         any
+	PanEtag                 any
+	PanLocation             any
+	ProvisioningState       any
+	Scope                   any
+	SecurityServices        any
 }
 
 type CloudngfwGlobalRulestackResource_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
 }
 
@@ -56,6 +56,5 @@ type CloudngfwGlobalRulestackResourceAttrs struct {
 
 var CloudngfwGlobalRulestackResource = ubx.DataSourceBinding{
 	WireType: "azure_paloaltonetworks_cloudngfw_global_rulestack_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

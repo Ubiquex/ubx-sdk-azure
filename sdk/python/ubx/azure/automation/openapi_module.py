@@ -23,9 +23,36 @@ class OpenapiModule_Properties_ContentLink:
     version: Any = None
 
 @dataclasses.dataclass
+class OpenapiModule_Properties_Error:
+    # Gets or sets the error code.
+    code: Any = None
+    # Gets or sets the error message.
+    message: Any = None
+
+@dataclasses.dataclass
 class OpenapiModule_Properties:
+    # Gets or sets the activity count of the module.
+    activity_count: Any = None
     # Definition of the content link.
     content_link: Any = None
+    # Gets or sets the creation time.
+    creation_time: Any = None
+    # Gets or sets the description.
+    description: Any = None
+    # Definition of the module error info type.
+    error: Any = None
+    # Gets or sets type of module, if its composite or not.
+    is_composite: Any = None
+    # Gets or sets the isGlobal flag of the module.
+    is_global: Any = None
+    # Gets or sets the last modified time.
+    last_modified_time: Any = None
+    # Gets or sets the provisioning state of the module.
+    provisioning_state: Any = None
+    # Gets or sets the size in bytes of the module.
+    size_in_bytes: Any = None
+    # Gets or sets the version of the module.
+    version: Any = None
 
 _OpenapiModule_Properties_ContentLink_ContentHashFields = {
     "algorithm": ubx.FieldSpec(wire_name="algorithm"),
@@ -42,12 +69,31 @@ _OpenapiModule_Properties_ContentLinkFields = {
     "version": ubx.FieldSpec(wire_name="version"),
 }
 
+_OpenapiModule_Properties_ErrorFields = {
+    "code": ubx.FieldSpec(wire_name="code"),
+    "message": ubx.FieldSpec(wire_name="message"),
+}
+
 _OpenapiModule_PropertiesFields = {
+    "activity_count": ubx.FieldSpec(wire_name="activity_count"),
     "content_link": ubx.FieldSpec(
         wire_name="content_link",
         kind="object",
         fields=_OpenapiModule_Properties_ContentLinkFields,
     ),
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
+    "description": ubx.FieldSpec(wire_name="description"),
+    "error": ubx.FieldSpec(
+        wire_name="error",
+        kind="object",
+        fields=_OpenapiModule_Properties_ErrorFields,
+    ),
+    "is_composite": ubx.FieldSpec(wire_name="is_composite"),
+    "is_global": ubx.FieldSpec(wire_name="is_global"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+    "size_in_bytes": ubx.FieldSpec(wire_name="size_in_bytes"),
+    "version": ubx.FieldSpec(wire_name="version"),
 }
 
 @dataclasses.dataclass

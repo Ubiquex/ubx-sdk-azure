@@ -7,11 +7,16 @@ type Group_Properties_Children_Children struct {
 }
 
 type Group_Properties_Children struct {
-	Children any
+	Children    any
 	DisplayName any
-	Id any
-	Name any
-	Type any
+	Id          any
+	Name        any
+	Type        any
+}
+
+type Group_Properties_Details_ManagementGroupAncestorsChain struct {
+	DisplayName any
+	Name        any
 }
 
 type Group_Properties_Details_Parent struct {
@@ -24,8 +29,14 @@ type Group_Properties_Details_Parent struct {
 }
 
 type Group_Properties_Details struct {
+	// The ancestors of the management group.
+	ManagementGroupAncestors any
+	// The ancestors of the management group displayed in reversed order, from immediate parent to the root.
+	ManagementGroupAncestorsChain any
 	// (Optional) The ID of the parent management group used during creation.
 	Parent any
+	// The path from the root to the current group.
+	Path any
 	// The identity of the principal or process that updated the object.
 	UpdatedBy any
 	// The date and time when this object was last updated.
@@ -45,52 +56,67 @@ type Group_Properties struct {
 	TenantId any
 }
 
-var Group_Properties_Children_ChildrenFields = ubx.FieldMap{
-	}
+var Group_Properties_Children_ChildrenFields = ubx.FieldMap{}
 
 var Group_Properties_ChildrenFields = ubx.FieldMap{
-		"Children": ubx.FieldSpec{
-			WireName: "children",
-			Kind: "list",
-			Fields: Group_Properties_Children_ChildrenFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Children": ubx.FieldSpec{
+		WireName: "children",
+		Kind:     "list",
+		Fields:   Group_Properties_Children_ChildrenFields,
+	},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Id":          ubx.FieldSpec{WireName: "id"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
+
+var Group_Properties_Details_ManagementGroupAncestorsChainFields = ubx.FieldMap{
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+}
 
 var Group_Properties_Details_ParentFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Id":          ubx.FieldSpec{WireName: "id"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+}
 
 var Group_Properties_DetailsFields = ubx.FieldMap{
-		"Parent": ubx.FieldSpec{
-			WireName: "parent",
-			Kind: "object",
-			Fields: Group_Properties_Details_ParentFields,
-		},
-		"UpdatedBy": ubx.FieldSpec{WireName: "updated_by"},
-		"UpdatedTime": ubx.FieldSpec{WireName: "updated_time"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ManagementGroupAncestors": ubx.FieldSpec{WireName: "management_group_ancestors"},
+	"ManagementGroupAncestorsChain": ubx.FieldSpec{
+		WireName: "management_group_ancestors_chain",
+		Kind:     "list",
+		Fields:   Group_Properties_Details_ManagementGroupAncestorsChainFields,
+	},
+	"Parent": ubx.FieldSpec{
+		WireName: "parent",
+		Kind:     "object",
+		Fields:   Group_Properties_Details_ParentFields,
+	},
+	"Path": ubx.FieldSpec{
+		WireName: "path",
+		Kind:     "list",
+		Fields:   Group_Properties_Details_ManagementGroupAncestorsChainFields,
+	},
+	"UpdatedBy":   ubx.FieldSpec{WireName: "updated_by"},
+	"UpdatedTime": ubx.FieldSpec{WireName: "updated_time"},
+	"Version":     ubx.FieldSpec{WireName: "version"},
+}
 
 var Group_PropertiesFields = ubx.FieldMap{
-		"Children": ubx.FieldSpec{
-			WireName: "children",
-			Kind: "list",
-			Fields: Group_Properties_ChildrenFields,
-		},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "object",
-			Fields: Group_Properties_DetailsFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"Children": ubx.FieldSpec{
+		WireName: "children",
+		Kind:     "list",
+		Fields:   Group_Properties_ChildrenFields,
+	},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "object",
+		Fields:   Group_Properties_DetailsFields,
+	},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type GroupConfig struct {
 	// The name of the management group. For example, 00000000-0000-0000-0000-000000000000
@@ -116,8 +142,8 @@ var Group = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Group_PropertiesFields,
+			Kind:     "object",
+			Fields:   Group_PropertiesFields,
 		},
 	},
 }

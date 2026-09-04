@@ -855,31 +855,6 @@ const OpenapiMachine_PropertiesFields: FieldMap = {
   vmUuid: "vm_uuid",
 };
 
-const OpenapiMachine_Resources_PropertiesFields: FieldMap = {
-  autoUpgradeMinorVersion: "auto_upgrade_minor_version",
-  enableAutomaticUpgrade: "enable_automatic_upgrade",
-  forceUpdateTag: "force_update_tag",
-  instanceView: {
-    wireName: "instance_view",
-    kind: "object",
-    fields: OpenapiMachine_Properties_ExtensionsFields,
-  },
-  protectedSettings: "protected_settings",
-  provisioningState: "provisioning_state",
-  publisher: "publisher",
-  settings: "settings",
-  type: "type",
-  typeHandlerVersion: "type_handler_version",
-};
-
-const OpenapiMachine_ResourcesFields: FieldMap = {
-  properties: {
-    wireName: "properties",
-    kind: "object",
-    fields: OpenapiMachine_Resources_PropertiesFields,
-  },
-};
-
 export interface OpenapiMachineConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: OpenapiMachine_Identity | Computed<OpenapiMachine_Identity>;
@@ -887,8 +862,6 @@ export interface OpenapiMachineConfig {
   kind?: string | Computed<string>;
   /** Describes the properties of a hybrid machine. */
   properties?: OpenapiMachine_Properties | Computed<OpenapiMachine_Properties>;
-  /** The list of extensions affiliated to the machine */
-  resources?: OpenapiMachine_Resources[] | Computed<OpenapiMachine_Resources[]>;
 }
 
 export interface OpenapiMachineAttrs {
@@ -915,11 +888,6 @@ export const OpenapiMachine: ResourceBinding<OpenapiMachineConfig, OpenapiMachin
       wireName: "properties",
       kind: "object",
       fields: OpenapiMachine_PropertiesFields,
-    },
-    resources: {
-      wireName: "resources",
-      kind: "list",
-      fields: OpenapiMachine_ResourcesFields,
     },
   },
 };

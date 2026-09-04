@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiEncryptionScope_Value_Properties_KeyVaultProperties struct {
 	CurrentVersionedKeyIdentifier any
-	KeyUri any
-	LastKeyRotationTimestamp any
+	KeyUri                        any
+	LastKeyRotationTimestamp      any
 }
 
 type OpenapiEncryptionScope_Value_Properties struct {
-	CreationTime any
-	KeyVaultProperties any
-	LastModifiedTime any
+	CreationTime                    any
+	KeyVaultProperties              any
+	LastModifiedTime                any
 	RequireInfrastructureEncryption any
-	Source any
-	State any
+	Source                          any
+	State                           any
 }
 
 type OpenapiEncryptionScope_Value struct {

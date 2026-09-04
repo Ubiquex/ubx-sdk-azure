@@ -12,9 +12,9 @@ type OpenapiVnetGateway_Properties struct {
 
 type OpenapiVnetGatewayConfig struct {
 	GatewayName any
-	Name any
-	Slot any
-	VnetName any
+	Name        any
+	Slot        any
+	VnetName    any
 }
 
 type OpenapiVnetGatewayAttrs struct {
@@ -24,16 +24,16 @@ type OpenapiVnetGatewayAttrs struct {
 	Name any
 	// VnetGateway resource specific properties
 	Properties any
-	Slot any
-	VnetName any
+	Slot       any
+	VnetName   any
 }
 
 var OpenapiVnetGateway = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_vnet_gateway",
 	Fields: ubx.FieldMap{
 		"GatewayName": ubx.FieldSpec{WireName: "gateway_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
-		"VnetName": ubx.FieldSpec{WireName: "vnet_name"},
+		"Name":        ubx.FieldSpec{WireName: "name"},
+		"Slot":        ubx.FieldSpec{WireName: "slot"},
+		"VnetName":    ubx.FieldSpec{WireName: "vnet_name"},
 	},
 }

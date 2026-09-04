@@ -43,8 +43,6 @@ const VirtualwanHubRouteTable_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanHubRouteTableConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Parameters for RouteTable. */
   properties?: VirtualwanHubRouteTable_Properties | Computed<VirtualwanHubRouteTable_Properties>;
 }
@@ -59,7 +57,6 @@ export interface VirtualwanHubRouteTableAttrs {
 export const VirtualwanHubRouteTable: ResourceBinding<VirtualwanHubRouteTableConfig, VirtualwanHubRouteTableAttrs> = {
   wireType: "azure_network_virtualwan_hub_route_table",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

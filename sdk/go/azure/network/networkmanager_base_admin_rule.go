@@ -18,20 +18,9 @@ type NetworkmanagerBaseAdminRule_SystemData struct {
 	LastModifiedByType any
 }
 
-var NetworkmanagerBaseAdminRule_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
-
 type NetworkmanagerBaseAdminRuleConfig struct {
 	// Whether the rule is custom or default.
 	Kind any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerBaseAdminRuleAttrs struct {
@@ -45,10 +34,5 @@ var NetworkmanagerBaseAdminRule = ubx.ResourceBinding{
 	WireType: "azure_network_networkmanager_base_admin_rule",
 	Fields: ubx.FieldMap{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerBaseAdminRule_SystemDataFields,
-		},
 	},
 }

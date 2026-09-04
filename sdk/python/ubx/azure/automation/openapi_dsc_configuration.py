@@ -33,16 +33,28 @@ class OpenapiDscConfiguration_Properties_Source:
 
 @dataclasses.dataclass
 class OpenapiDscConfiguration_Properties:
+    # Gets or sets the creation time.
+    creation_time: Any = None
     # Gets or sets the description of the configuration.
     description: Any = None
+    # Gets or sets the job count of the configuration.
+    job_count: Any = None
+    # Gets or sets the last modified time.
+    last_modified_time: Any = None
     # Gets or sets progress log option.
     log_progress: Any = None
     # Gets or sets verbose log option.
     log_verbose: Any = None
+    # Gets the number of compiled node configurations.
+    node_configuration_count: Any = None
     # Gets or sets the configuration parameters.
     parameters: Any = None
+    # Gets or sets the provisioning state of the configuration.
+    provisioning_state: Any = None
     # Definition of the content source.
     source: Any = None
+    # Gets or sets the state of the configuration.
+    state: Any = None
 
 _OpenapiDscConfiguration_Properties_ParametersFields = {
     "default_value": ubx.FieldSpec(wire_name="default_value"),
@@ -68,19 +80,25 @@ _OpenapiDscConfiguration_Properties_SourceFields = {
 }
 
 _OpenapiDscConfiguration_PropertiesFields = {
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
     "description": ubx.FieldSpec(wire_name="description"),
+    "job_count": ubx.FieldSpec(wire_name="job_count"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
     "log_progress": ubx.FieldSpec(wire_name="log_progress"),
     "log_verbose": ubx.FieldSpec(wire_name="log_verbose"),
+    "node_configuration_count": ubx.FieldSpec(wire_name="node_configuration_count"),
     "parameters": ubx.FieldSpec(
         wire_name="parameters",
         kind="map",
         fields=_OpenapiDscConfiguration_Properties_ParametersFields,
     ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
     "source": ubx.FieldSpec(
         wire_name="source",
         kind="object",
         fields=_OpenapiDscConfiguration_Properties_SourceFields,
     ),
+    "state": ubx.FieldSpec(wire_name="state"),
 }
 
 @dataclasses.dataclass

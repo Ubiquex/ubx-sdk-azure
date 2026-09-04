@@ -5,12 +5,12 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Bucket_Value_Properties_AkvDetails_CertificateAkvDetails struct {
 	CertificateKeyVaultUri any
-	CertificateName any
+	CertificateName        any
 }
 
 type Bucket_Value_Properties_AkvDetails_CredentialsAkvDetails struct {
 	CredentialsKeyVaultUri any
-	SecretName any
+	SecretName             any
 }
 
 type Bucket_Value_Properties_AkvDetails struct {
@@ -24,31 +24,31 @@ type Bucket_Value_Properties_FileSystemUser_CifsUser struct {
 
 type Bucket_Value_Properties_FileSystemUser_NfsUser struct {
 	GroupId any
-	UserId any
+	UserId  any
 }
 
 type Bucket_Value_Properties_FileSystemUser struct {
 	CifsUser any
-	NfsUser any
+	NfsUser  any
 }
 
 type Bucket_Value_Properties_Server struct {
-	CertificateCommonName any
-	CertificateExpiryDate any
-	CertificateObject any
-	Fqdn any
-	IpAddress any
+	CertificateCommonName       any
+	CertificateExpiryDate       any
+	CertificateObject           any
+	Fqdn                        any
+	IpAddress                   any
 	OnCertificateConflictAction any
 }
 
 type Bucket_Value_Properties struct {
-	AkvDetails any
-	FileSystemUser any
-	Path any
-	Permissions any
+	AkvDetails        any
+	FileSystemUser    any
+	Path              any
+	Permissions       any
 	ProvisioningState any
-	Server any
-	Status any
+	Server            any
+	Status            any
 }
 
 type Bucket_Value struct {
@@ -57,8 +57,8 @@ type Bucket_Value struct {
 
 type BucketConfig struct {
 	AccountName any
-	PoolName any
-	VolumeName any
+	PoolName    any
+	VolumeName  any
 }
 
 type BucketAttrs struct {
@@ -67,7 +67,7 @@ type BucketAttrs struct {
 	NextLink any
 	PoolName any
 	// The Bucket items on this page
-	Value any
+	Value      any
 	VolumeName any
 }
 
@@ -75,7 +75,7 @@ var Bucket = ubx.DataSourceBinding{
 	WireType: "azure_netapp_bucket",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PoolName": ubx.FieldSpec{WireName: "pool_name"},
-		"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
+		"PoolName":    ubx.FieldSpec{WireName: "pool_name"},
+		"VolumeName":  ubx.FieldSpec{WireName: "volume_name"},
 	},
 }

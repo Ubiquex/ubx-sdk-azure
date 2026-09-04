@@ -14,19 +14,19 @@ type NetworkRuleSet_Value_Properties_VirtualNetworkRules_Subnet struct {
 
 type NetworkRuleSet_Value_Properties_VirtualNetworkRules struct {
 	IgnoreMissingVnetServiceEndpoint any
-	Subnet any
+	Subnet                           any
 }
 
 type NetworkRuleSet_Value_Properties struct {
-	DefaultAction any
-	IpRules any
-	PublicNetworkAccess any
+	DefaultAction               any
+	IpRules                     any
+	PublicNetworkAccess         any
 	TrustedServiceAccessEnabled any
-	VirtualNetworkRules any
+	VirtualNetworkRules         any
 }
 
 type NetworkRuleSet_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

@@ -4,46 +4,46 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPartnerTransferDetails_Value_Properties_DetailedTransferStatus_ErrorDetails struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type OpenapiPartnerTransferDetails_Value_Properties_DetailedTransferStatus struct {
-	ErrorDetails any
-	ProductId any
-	ProductName any
-	ProductType any
+	ErrorDetails   any
+	ProductId      any
+	ProductName    any
+	ProductType    any
 	SkuDescription any
 	TransferStatus any
 }
 
 type OpenapiPartnerTransferDetails_Value_Properties struct {
-	CanceledBy any
+	CanceledBy             any
 	DetailedTransferStatus any
-	ExpirationTime any
-	InitiatorCustomerType any
-	InitiatorEmailId any
-	RecipientEmailId any
-	ResellerId any
-	ResellerName any
-	TransferStatus any
+	ExpirationTime         any
+	InitiatorCustomerType  any
+	InitiatorEmailId       any
+	RecipientEmailId       any
+	ResellerId             any
+	ResellerName           any
+	TransferStatus         any
 }
 
 type OpenapiPartnerTransferDetails_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiPartnerTransferDetailsConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	CustomerName any
+	CustomerName       any
 }
 
 type OpenapiPartnerTransferDetailsAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	CustomerName any
+	CustomerName       any
 	// The link to the next page of items
 	NextLink any
 	// The PartnerTransferDetails items on this page
@@ -55,6 +55,6 @@ var OpenapiPartnerTransferDetails = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"CustomerName": ubx.FieldSpec{WireName: "customer_name"},
+		"CustomerName":       ubx.FieldSpec{WireName: "customer_name"},
 	},
 }

@@ -53,6 +53,5 @@ type OpenapiWorkflowEnvelopeAttrs struct {
 
 var OpenapiWorkflowEnvelope = ubx.ResourceBinding{
 	WireType: "azure_app_openapi_workflow_envelope",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

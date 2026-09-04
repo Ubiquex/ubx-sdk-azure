@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementOpenapiView_Properties_Kpis struct {
 	Enabled any
-	Id any
-	Type any
+	Id      any
+	Type    any
 }
 
 type ManagementOpenapiView_Properties_Pivots struct {
@@ -16,7 +16,7 @@ type ManagementOpenapiView_Properties_Pivots struct {
 
 type ManagementOpenapiView_Properties_Query_DataSet_Aggregation struct {
 	Function any
-	Name any
+	Name     any
 }
 
 type ManagementOpenapiView_Properties_Query_DataSet_Configuration struct {
@@ -49,7 +49,7 @@ type ManagementOpenapiView_Properties_Query_DataSet_Filter struct {
 
 type ManagementOpenapiView_Properties_Query_DataSet_Sorting struct {
 	Direction any
-	Name any
+	Name      any
 }
 
 type ManagementOpenapiView_Properties_Query_DataSet struct {
@@ -115,138 +115,137 @@ type ManagementOpenapiView_Properties struct {
 }
 
 var ManagementOpenapiView_Properties_KpisFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Id":      ubx.FieldSpec{WireName: "id"},
+	"Type":    ubx.FieldSpec{WireName: "type"},
+}
 
 var ManagementOpenapiView_Properties_PivotsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ManagementOpenapiView_Properties_Query_DataSet_AggregationFields = ubx.FieldMap{
-		"Function": ubx.FieldSpec{WireName: "function"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Function": ubx.FieldSpec{WireName: "function"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+}
 
 var ManagementOpenapiView_Properties_Query_DataSet_ConfigurationFields = ubx.FieldMap{
-		"Columns": ubx.FieldSpec{WireName: "columns"},
-	}
+	"Columns": ubx.FieldSpec{WireName: "columns"},
+}
 
-var ManagementOpenapiView_Properties_Query_DataSet_Filter_AndFields = ubx.FieldMap{
-	}
+var ManagementOpenapiView_Properties_Query_DataSet_Filter_AndFields = ubx.FieldMap{}
 
 var ManagementOpenapiView_Properties_Query_DataSet_Filter_DimensionsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Operator": ubx.FieldSpec{WireName: "operator"},
-		"Values": ubx.FieldSpec{WireName: "values"},
-	}
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Operator": ubx.FieldSpec{WireName: "operator"},
+	"Values":   ubx.FieldSpec{WireName: "values"},
+}
 
 var ManagementOpenapiView_Properties_Query_DataSet_FilterFields = ubx.FieldMap{
-		"And": ubx.FieldSpec{
-			WireName: "and",
-			Kind: "list",
-			Fields: ManagementOpenapiView_Properties_Query_DataSet_Filter_AndFields,
-		},
-		"Dimensions": ubx.FieldSpec{
-			WireName: "dimensions",
-			Kind: "object",
-			Fields: ManagementOpenapiView_Properties_Query_DataSet_Filter_DimensionsFields,
-		},
-		"Or": ubx.FieldSpec{
-			WireName: "or",
-			Kind: "list",
-			Fields: ManagementOpenapiView_Properties_Query_DataSet_Filter_AndFields,
-		},
-		"Tags": ubx.FieldSpec{
-			WireName: "tags",
-			Kind: "object",
-			Fields: ManagementOpenapiView_Properties_Query_DataSet_Filter_DimensionsFields,
-		},
-	}
+	"And": ubx.FieldSpec{
+		WireName: "and",
+		Kind:     "list",
+		Fields:   ManagementOpenapiView_Properties_Query_DataSet_Filter_AndFields,
+	},
+	"Dimensions": ubx.FieldSpec{
+		WireName: "dimensions",
+		Kind:     "object",
+		Fields:   ManagementOpenapiView_Properties_Query_DataSet_Filter_DimensionsFields,
+	},
+	"Or": ubx.FieldSpec{
+		WireName: "or",
+		Kind:     "list",
+		Fields:   ManagementOpenapiView_Properties_Query_DataSet_Filter_AndFields,
+	},
+	"Tags": ubx.FieldSpec{
+		WireName: "tags",
+		Kind:     "object",
+		Fields:   ManagementOpenapiView_Properties_Query_DataSet_Filter_DimensionsFields,
+	},
+}
 
 var ManagementOpenapiView_Properties_Query_DataSet_SortingFields = ubx.FieldMap{
-		"Direction": ubx.FieldSpec{WireName: "direction"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Direction": ubx.FieldSpec{WireName: "direction"},
+	"Name":      ubx.FieldSpec{WireName: "name"},
+}
 
 var ManagementOpenapiView_Properties_Query_DataSetFields = ubx.FieldMap{
-		"Aggregation": ubx.FieldSpec{
-			WireName: "aggregation",
-			Kind: "map",
-			Fields: ManagementOpenapiView_Properties_Query_DataSet_AggregationFields,
-		},
-		"Configuration": ubx.FieldSpec{
-			WireName: "configuration",
-			Kind: "object",
-			Fields: ManagementOpenapiView_Properties_Query_DataSet_ConfigurationFields,
-		},
-		"Filter": ubx.FieldSpec{
-			WireName: "filter",
-			Kind: "object",
-			Fields: ManagementOpenapiView_Properties_Query_DataSet_FilterFields,
-		},
-		"Granularity": ubx.FieldSpec{WireName: "granularity"},
-		"Grouping": ubx.FieldSpec{
-			WireName: "grouping",
-			Kind: "list",
-			Fields: ManagementOpenapiView_Properties_PivotsFields,
-		},
-		"Sorting": ubx.FieldSpec{
-			WireName: "sorting",
-			Kind: "list",
-			Fields: ManagementOpenapiView_Properties_Query_DataSet_SortingFields,
-		},
-	}
+	"Aggregation": ubx.FieldSpec{
+		WireName: "aggregation",
+		Kind:     "map",
+		Fields:   ManagementOpenapiView_Properties_Query_DataSet_AggregationFields,
+	},
+	"Configuration": ubx.FieldSpec{
+		WireName: "configuration",
+		Kind:     "object",
+		Fields:   ManagementOpenapiView_Properties_Query_DataSet_ConfigurationFields,
+	},
+	"Filter": ubx.FieldSpec{
+		WireName: "filter",
+		Kind:     "object",
+		Fields:   ManagementOpenapiView_Properties_Query_DataSet_FilterFields,
+	},
+	"Granularity": ubx.FieldSpec{WireName: "granularity"},
+	"Grouping": ubx.FieldSpec{
+		WireName: "grouping",
+		Kind:     "list",
+		Fields:   ManagementOpenapiView_Properties_PivotsFields,
+	},
+	"Sorting": ubx.FieldSpec{
+		WireName: "sorting",
+		Kind:     "list",
+		Fields:   ManagementOpenapiView_Properties_Query_DataSet_SortingFields,
+	},
+}
 
 var ManagementOpenapiView_Properties_Query_TimePeriodFields = ubx.FieldMap{
-		"From": ubx.FieldSpec{WireName: "from"},
-		"To": ubx.FieldSpec{WireName: "to"},
-	}
+	"From": ubx.FieldSpec{WireName: "from"},
+	"To":   ubx.FieldSpec{WireName: "to"},
+}
 
 var ManagementOpenapiView_Properties_QueryFields = ubx.FieldMap{
-		"DataSet": ubx.FieldSpec{
-			WireName: "data_set",
-			Kind: "object",
-			Fields: ManagementOpenapiView_Properties_Query_DataSetFields,
-		},
-		"IncludeMonetaryCommitment": ubx.FieldSpec{WireName: "include_monetary_commitment"},
-		"TimePeriod": ubx.FieldSpec{
-			WireName: "time_period",
-			Kind: "object",
-			Fields: ManagementOpenapiView_Properties_Query_TimePeriodFields,
-		},
-		"Timeframe": ubx.FieldSpec{WireName: "timeframe"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DataSet": ubx.FieldSpec{
+		WireName: "data_set",
+		Kind:     "object",
+		Fields:   ManagementOpenapiView_Properties_Query_DataSetFields,
+	},
+	"IncludeMonetaryCommitment": ubx.FieldSpec{WireName: "include_monetary_commitment"},
+	"TimePeriod": ubx.FieldSpec{
+		WireName: "time_period",
+		Kind:     "object",
+		Fields:   ManagementOpenapiView_Properties_Query_TimePeriodFields,
+	},
+	"Timeframe": ubx.FieldSpec{WireName: "timeframe"},
+	"Type":      ubx.FieldSpec{WireName: "type"},
+}
 
 var ManagementOpenapiView_PropertiesFields = ubx.FieldMap{
-		"Accumulated": ubx.FieldSpec{WireName: "accumulated"},
-		"Chart": ubx.FieldSpec{WireName: "chart"},
-		"CreatedOn": ubx.FieldSpec{WireName: "created_on"},
-		"Currency": ubx.FieldSpec{WireName: "currency"},
-		"DateRange": ubx.FieldSpec{WireName: "date_range"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Kpis": ubx.FieldSpec{
-			WireName: "kpis",
-			Kind: "list",
-			Fields: ManagementOpenapiView_Properties_KpisFields,
-		},
-		"Metric": ubx.FieldSpec{WireName: "metric"},
-		"ModifiedOn": ubx.FieldSpec{WireName: "modified_on"},
-		"Pivots": ubx.FieldSpec{
-			WireName: "pivots",
-			Kind: "list",
-			Fields: ManagementOpenapiView_Properties_PivotsFields,
-		},
-		"Query": ubx.FieldSpec{
-			WireName: "query",
-			Kind: "object",
-			Fields: ManagementOpenapiView_Properties_QueryFields,
-		},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"Accumulated": ubx.FieldSpec{WireName: "accumulated"},
+	"Chart":       ubx.FieldSpec{WireName: "chart"},
+	"CreatedOn":   ubx.FieldSpec{WireName: "created_on"},
+	"Currency":    ubx.FieldSpec{WireName: "currency"},
+	"DateRange":   ubx.FieldSpec{WireName: "date_range"},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Kpis": ubx.FieldSpec{
+		WireName: "kpis",
+		Kind:     "list",
+		Fields:   ManagementOpenapiView_Properties_KpisFields,
+	},
+	"Metric":     ubx.FieldSpec{WireName: "metric"},
+	"ModifiedOn": ubx.FieldSpec{WireName: "modified_on"},
+	"Pivots": ubx.FieldSpec{
+		WireName: "pivots",
+		Kind:     "list",
+		Fields:   ManagementOpenapiView_Properties_PivotsFields,
+	},
+	"Query": ubx.FieldSpec{
+		WireName: "query",
+		Kind:     "object",
+		Fields:   ManagementOpenapiView_Properties_QueryFields,
+	},
+	"Scope": ubx.FieldSpec{WireName: "scope"},
+}
 
 type ManagementOpenapiViewConfig struct {
 	// The ETag (or entity tag) HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content was not changed. It is a string of ASCII characters placed between double quotes, like "675af34563dc-tr34".
@@ -268,8 +267,8 @@ var ManagementOpenapiView = ubx.ResourceBinding{
 		"ETag": ubx.FieldSpec{WireName: "e_tag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagementOpenapiView_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagementOpenapiView_PropertiesFields,
 		},
 	},
 }

@@ -4,25 +4,25 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VerifiedPartner_Value_Properties_PartnerTopicDetails struct {
-	Description any
+	Description     any
 	LongDescription any
-	SetupUri any
+	SetupUri        any
 }
 
 type VerifiedPartner_Value_Properties struct {
-	OrganizationName any
-	PartnerDisplayName any
+	OrganizationName               any
+	PartnerDisplayName             any
 	PartnerRegistrationImmutableId any
-	PartnerTopicDetails any
-	ProvisioningState any
+	PartnerTopicDetails            any
+	ProvisioningState              any
 }
 
 type VerifiedPartner_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 

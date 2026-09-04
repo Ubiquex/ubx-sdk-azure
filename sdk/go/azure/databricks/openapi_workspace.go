@@ -13,7 +13,7 @@ type OpenapiWorkspace_Properties_AccessConnector struct {
 }
 
 type OpenapiWorkspace_Properties_Authorizations struct {
-	PrincipalId any
+	PrincipalId      any
 	RoleDefinitionId any
 }
 
@@ -77,7 +77,7 @@ type OpenapiWorkspace_Properties_EnhancedSecurityCompliance_AutomaticClusterUpda
 type OpenapiWorkspace_Properties_EnhancedSecurityCompliance_ComplianceSecurityProfile struct {
 	// Compliance standards associated with the workspace.
 	ComplianceStandards any
-	Value any
+	Value               any
 }
 
 type OpenapiWorkspace_Properties_EnhancedSecurityCompliance struct {
@@ -178,15 +178,15 @@ type OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEn
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiWorkspace_Properties_PrivateEndpointConnections struct {
@@ -250,327 +250,327 @@ type OpenapiWorkspace_Sku struct {
 }
 
 var OpenapiWorkspace_Properties_AccessConnectorFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"IdentityType": ubx.FieldSpec{WireName: "identity_type"},
-		"UserAssignedIdentityId": ubx.FieldSpec{WireName: "user_assigned_identity_id"},
-	}
+	"Id":                     ubx.FieldSpec{WireName: "id"},
+	"IdentityType":           ubx.FieldSpec{WireName: "identity_type"},
+	"UserAssignedIdentityId": ubx.FieldSpec{WireName: "user_assigned_identity_id"},
+}
 
 var OpenapiWorkspace_Properties_AuthorizationsFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-	}
+	"PrincipalId":      ubx.FieldSpec{WireName: "principal_id"},
+	"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
+}
 
 var OpenapiWorkspace_Properties_CreatedByFields = ubx.FieldMap{
-		"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
-		"Oid": ubx.FieldSpec{WireName: "oid"},
-		"Puid": ubx.FieldSpec{WireName: "puid"},
-	}
+	"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
+	"Oid":           ubx.FieldSpec{WireName: "oid"},
+	"Puid":          ubx.FieldSpec{WireName: "puid"},
+}
 
 var OpenapiWorkspace_Properties_DefaultCatalogFields = ubx.FieldMap{
-		"InitialName": ubx.FieldSpec{WireName: "initial_name"},
-		"InitialType": ubx.FieldSpec{WireName: "initial_type"},
-	}
+	"InitialName": ubx.FieldSpec{WireName: "initial_name"},
+	"InitialType": ubx.FieldSpec{WireName: "initial_type"},
+}
 
 var OpenapiWorkspace_Properties_Encryption_Entities_ManagedDisk_KeyVaultPropertiesFields = ubx.FieldMap{
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-	}
+	"KeyName":     ubx.FieldSpec{WireName: "key_name"},
+	"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
+	"KeyVersion":  ubx.FieldSpec{WireName: "key_version"},
+}
 
 var OpenapiWorkspace_Properties_Encryption_Entities_ManagedDiskFields = ubx.FieldMap{
-		"KeySource": ubx.FieldSpec{WireName: "key_source"},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Encryption_Entities_ManagedDisk_KeyVaultPropertiesFields,
-		},
-		"RotationToLatestKeyVersionEnabled": ubx.FieldSpec{WireName: "rotation_to_latest_key_version_enabled"},
-	}
+	"KeySource": ubx.FieldSpec{WireName: "key_source"},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Encryption_Entities_ManagedDisk_KeyVaultPropertiesFields,
+	},
+	"RotationToLatestKeyVersionEnabled": ubx.FieldSpec{WireName: "rotation_to_latest_key_version_enabled"},
+}
 
 var OpenapiWorkspace_Properties_Encryption_Entities_ManagedServicesFields = ubx.FieldMap{
-		"KeySource": ubx.FieldSpec{WireName: "key_source"},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Encryption_Entities_ManagedDisk_KeyVaultPropertiesFields,
-		},
-	}
+	"KeySource": ubx.FieldSpec{WireName: "key_source"},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Encryption_Entities_ManagedDisk_KeyVaultPropertiesFields,
+	},
+}
 
 var OpenapiWorkspace_Properties_Encryption_EntitiesFields = ubx.FieldMap{
-		"ManagedDisk": ubx.FieldSpec{
-			WireName: "managed_disk",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Encryption_Entities_ManagedDiskFields,
-		},
-		"ManagedServices": ubx.FieldSpec{
-			WireName: "managed_services",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Encryption_Entities_ManagedServicesFields,
-		},
-	}
+	"ManagedDisk": ubx.FieldSpec{
+		WireName: "managed_disk",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Encryption_Entities_ManagedDiskFields,
+	},
+	"ManagedServices": ubx.FieldSpec{
+		WireName: "managed_services",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Encryption_Entities_ManagedServicesFields,
+	},
+}
 
 var OpenapiWorkspace_Properties_EncryptionFields = ubx.FieldMap{
-		"Entities": ubx.FieldSpec{
-			WireName: "entities",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Encryption_EntitiesFields,
-		},
-	}
+	"Entities": ubx.FieldSpec{
+		WireName: "entities",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Encryption_EntitiesFields,
+	},
+}
 
 var OpenapiWorkspace_Properties_EnhancedSecurityCompliance_AutomaticClusterUpdateFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiWorkspace_Properties_EnhancedSecurityCompliance_ComplianceSecurityProfileFields = ubx.FieldMap{
-		"ComplianceStandards": ubx.FieldSpec{WireName: "compliance_standards"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"ComplianceStandards": ubx.FieldSpec{WireName: "compliance_standards"},
+	"Value":               ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiWorkspace_Properties_EnhancedSecurityComplianceFields = ubx.FieldMap{
-		"AutomaticClusterUpdate": ubx.FieldSpec{
-			WireName: "automatic_cluster_update",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_EnhancedSecurityCompliance_AutomaticClusterUpdateFields,
-		},
-		"ComplianceSecurityProfile": ubx.FieldSpec{
-			WireName: "compliance_security_profile",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_EnhancedSecurityCompliance_ComplianceSecurityProfileFields,
-		},
-		"EnhancedSecurityMonitoring": ubx.FieldSpec{
-			WireName: "enhanced_security_monitoring",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_EnhancedSecurityCompliance_AutomaticClusterUpdateFields,
-		},
-	}
+	"AutomaticClusterUpdate": ubx.FieldSpec{
+		WireName: "automatic_cluster_update",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_EnhancedSecurityCompliance_AutomaticClusterUpdateFields,
+	},
+	"ComplianceSecurityProfile": ubx.FieldSpec{
+		WireName: "compliance_security_profile",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_EnhancedSecurityCompliance_ComplianceSecurityProfileFields,
+	},
+	"EnhancedSecurityMonitoring": ubx.FieldSpec{
+		WireName: "enhanced_security_monitoring",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_EnhancedSecurityCompliance_AutomaticClusterUpdateFields,
+	},
+}
 
 var OpenapiWorkspace_Properties_ManagedDiskIdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Type":  ubx.FieldSpec{WireName: "type"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiWorkspace_Properties_Parameters_EnableNoPublicIpFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Type":  ubx.FieldSpec{WireName: "type"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiWorkspace_Properties_Parameters_Encryption_ValueFields = ubx.FieldMap{
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeySource": ubx.FieldSpec{WireName: "key_source"},
-		"Keyvaulturi": ubx.FieldSpec{WireName: "keyvaulturi"},
-		"Keyversion": ubx.FieldSpec{WireName: "keyversion"},
-	}
+	"KeyName":     ubx.FieldSpec{WireName: "key_name"},
+	"KeySource":   ubx.FieldSpec{WireName: "key_source"},
+	"Keyvaulturi": ubx.FieldSpec{WireName: "keyvaulturi"},
+	"Keyversion":  ubx.FieldSpec{WireName: "keyversion"},
+}
 
 var OpenapiWorkspace_Properties_Parameters_EncryptionFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{
-			WireName: "value",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_Encryption_ValueFields,
-		},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+	"Value": ubx.FieldSpec{
+		WireName: "value",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_Encryption_ValueFields,
+	},
+}
 
 var OpenapiWorkspace_Properties_Parameters_ResourceTagsFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Type":  ubx.FieldSpec{WireName: "type"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiWorkspace_Properties_ParametersFields = ubx.FieldMap{
-		"AmlWorkspaceId": ubx.FieldSpec{
-			WireName: "aml_workspace_id",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
-		},
-		"CustomPrivateSubnetName": ubx.FieldSpec{
-			WireName: "custom_private_subnet_name",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
-		},
-		"CustomPublicSubnetName": ubx.FieldSpec{
-			WireName: "custom_public_subnet_name",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
-		},
-		"CustomVirtualNetworkId": ubx.FieldSpec{
-			WireName: "custom_virtual_network_id",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
-		},
-		"EnableNoPublicIp": ubx.FieldSpec{
-			WireName: "enable_no_public_ip",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_EnableNoPublicIpFields,
-		},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_EncryptionFields,
-		},
-		"LoadBalancerBackendPoolName": ubx.FieldSpec{
-			WireName: "load_balancer_backend_pool_name",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
-		},
-		"LoadBalancerId": ubx.FieldSpec{
-			WireName: "load_balancer_id",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
-		},
-		"NatGatewayName": ubx.FieldSpec{
-			WireName: "nat_gateway_name",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
-		},
-		"PrepareEncryption": ubx.FieldSpec{
-			WireName: "prepare_encryption",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_EnableNoPublicIpFields,
-		},
-		"PublicIpName": ubx.FieldSpec{
-			WireName: "public_ip_name",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
-		},
-		"RequireInfrastructureEncryption": ubx.FieldSpec{
-			WireName: "require_infrastructure_encryption",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_EnableNoPublicIpFields,
-		},
-		"ResourceTags": ubx.FieldSpec{
-			WireName: "resource_tags",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_ResourceTagsFields,
-		},
-		"StorageAccountName": ubx.FieldSpec{
-			WireName: "storage_account_name",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
-		},
-		"StorageAccountSkuName": ubx.FieldSpec{
-			WireName: "storage_account_sku_name",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
-		},
-		"VnetAddressPrefix": ubx.FieldSpec{
-			WireName: "vnet_address_prefix",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
-		},
-	}
+	"AmlWorkspaceId": ubx.FieldSpec{
+		WireName: "aml_workspace_id",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
+	},
+	"CustomPrivateSubnetName": ubx.FieldSpec{
+		WireName: "custom_private_subnet_name",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
+	},
+	"CustomPublicSubnetName": ubx.FieldSpec{
+		WireName: "custom_public_subnet_name",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
+	},
+	"CustomVirtualNetworkId": ubx.FieldSpec{
+		WireName: "custom_virtual_network_id",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
+	},
+	"EnableNoPublicIp": ubx.FieldSpec{
+		WireName: "enable_no_public_ip",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_EnableNoPublicIpFields,
+	},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_EncryptionFields,
+	},
+	"LoadBalancerBackendPoolName": ubx.FieldSpec{
+		WireName: "load_balancer_backend_pool_name",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
+	},
+	"LoadBalancerId": ubx.FieldSpec{
+		WireName: "load_balancer_id",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
+	},
+	"NatGatewayName": ubx.FieldSpec{
+		WireName: "nat_gateway_name",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
+	},
+	"PrepareEncryption": ubx.FieldSpec{
+		WireName: "prepare_encryption",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_EnableNoPublicIpFields,
+	},
+	"PublicIpName": ubx.FieldSpec{
+		WireName: "public_ip_name",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
+	},
+	"RequireInfrastructureEncryption": ubx.FieldSpec{
+		WireName: "require_infrastructure_encryption",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_EnableNoPublicIpFields,
+	},
+	"ResourceTags": ubx.FieldSpec{
+		WireName: "resource_tags",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_ResourceTagsFields,
+	},
+	"StorageAccountName": ubx.FieldSpec{
+		WireName: "storage_account_name",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
+	},
+	"StorageAccountSkuName": ubx.FieldSpec{
+		WireName: "storage_account_sku_name",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
+	},
+	"VnetAddressPrefix": ubx.FieldSpec{
+		WireName: "vnet_address_prefix",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_Parameters_AmlWorkspaceIdFields,
+	},
+}
 
 var OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiWorkspace_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiWorkspace_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var OpenapiWorkspace_PropertiesFields = ubx.FieldMap{
-		"AccessConnector": ubx.FieldSpec{
-			WireName: "access_connector",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_AccessConnectorFields,
-		},
-		"Authorizations": ubx.FieldSpec{
-			WireName: "authorizations",
-			Kind: "list",
-			Fields: OpenapiWorkspace_Properties_AuthorizationsFields,
-		},
-		"ComputeMode": ubx.FieldSpec{WireName: "compute_mode"},
-		"CreatedBy": ubx.FieldSpec{
-			WireName: "created_by",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_CreatedByFields,
-		},
-		"CreatedDateTime": ubx.FieldSpec{WireName: "created_date_time"},
-		"DefaultCatalog": ubx.FieldSpec{
-			WireName: "default_catalog",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_DefaultCatalogFields,
-		},
-		"DefaultStorageFirewall": ubx.FieldSpec{WireName: "default_storage_firewall"},
-		"DiskEncryptionSetId": ubx.FieldSpec{WireName: "disk_encryption_set_id"},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_EncryptionFields,
-		},
-		"EnhancedSecurityCompliance": ubx.FieldSpec{
-			WireName: "enhanced_security_compliance",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_EnhancedSecurityComplianceFields,
-		},
-		"IsUcEnabled": ubx.FieldSpec{WireName: "is_uc_enabled"},
-		"ManagedDiskIdentity": ubx.FieldSpec{
-			WireName: "managed_disk_identity",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_ManagedDiskIdentityFields,
-		},
-		"ManagedResourceGroupId": ubx.FieldSpec{WireName: "managed_resource_group_id"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_ParametersFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: OpenapiWorkspace_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"RequiredNsgRules": ubx.FieldSpec{WireName: "required_nsg_rules"},
-		"StorageAccountIdentity": ubx.FieldSpec{
-			WireName: "storage_account_identity",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_ManagedDiskIdentityFields,
-		},
-		"UiDefinitionUri": ubx.FieldSpec{WireName: "ui_definition_uri"},
-		"UpdatedBy": ubx.FieldSpec{
-			WireName: "updated_by",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_CreatedByFields,
-		},
-		"WorkspaceId": ubx.FieldSpec{WireName: "workspace_id"},
-		"WorkspaceUrl": ubx.FieldSpec{WireName: "workspace_url"},
-	}
+	"AccessConnector": ubx.FieldSpec{
+		WireName: "access_connector",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_AccessConnectorFields,
+	},
+	"Authorizations": ubx.FieldSpec{
+		WireName: "authorizations",
+		Kind:     "list",
+		Fields:   OpenapiWorkspace_Properties_AuthorizationsFields,
+	},
+	"ComputeMode": ubx.FieldSpec{WireName: "compute_mode"},
+	"CreatedBy": ubx.FieldSpec{
+		WireName: "created_by",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_CreatedByFields,
+	},
+	"CreatedDateTime": ubx.FieldSpec{WireName: "created_date_time"},
+	"DefaultCatalog": ubx.FieldSpec{
+		WireName: "default_catalog",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_DefaultCatalogFields,
+	},
+	"DefaultStorageFirewall": ubx.FieldSpec{WireName: "default_storage_firewall"},
+	"DiskEncryptionSetId":    ubx.FieldSpec{WireName: "disk_encryption_set_id"},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_EncryptionFields,
+	},
+	"EnhancedSecurityCompliance": ubx.FieldSpec{
+		WireName: "enhanced_security_compliance",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_EnhancedSecurityComplianceFields,
+	},
+	"IsUcEnabled": ubx.FieldSpec{WireName: "is_uc_enabled"},
+	"ManagedDiskIdentity": ubx.FieldSpec{
+		WireName: "managed_disk_identity",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_ManagedDiskIdentityFields,
+	},
+	"ManagedResourceGroupId": ubx.FieldSpec{WireName: "managed_resource_group_id"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_ParametersFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   OpenapiWorkspace_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"RequiredNsgRules":    ubx.FieldSpec{WireName: "required_nsg_rules"},
+	"StorageAccountIdentity": ubx.FieldSpec{
+		WireName: "storage_account_identity",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_ManagedDiskIdentityFields,
+	},
+	"UiDefinitionUri": ubx.FieldSpec{WireName: "ui_definition_uri"},
+	"UpdatedBy": ubx.FieldSpec{
+		WireName: "updated_by",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_CreatedByFields,
+	},
+	"WorkspaceId":  ubx.FieldSpec{WireName: "workspace_id"},
+	"WorkspaceUrl": ubx.FieldSpec{WireName: "workspace_url"},
+}
 
 var OpenapiWorkspace_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type OpenapiWorkspaceConfig struct {
 	// The workspace properties.
@@ -591,13 +591,13 @@ var OpenapiWorkspace = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiWorkspace_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiWorkspace_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiWorkspace_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiWorkspace_SkuFields,
 		},
 	},
 }

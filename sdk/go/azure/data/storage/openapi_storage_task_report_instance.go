@@ -4,20 +4,20 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStorageTaskReportInstance_Value_Properties struct {
-	FinishTime any
-	ObjectFailedCount any
+	FinishTime             any
+	ObjectFailedCount      any
 	ObjectsOperatedOnCount any
-	ObjectsSucceededCount any
-	ObjectsTargetedCount any
-	RunResult any
-	RunStatusEnum any
-	RunStatusError any
-	StartTime any
-	StorageAccountId any
-	SummaryReportPath any
-	TaskAssignmentId any
-	TaskId any
-	TaskVersion any
+	ObjectsSucceededCount  any
+	ObjectsTargetedCount   any
+	RunResult              any
+	RunStatusEnum          any
+	RunStatusError         any
+	StartTime              any
+	StorageAccountId       any
+	SummaryReportPath      any
+	TaskAssignmentId       any
+	TaskId                 any
+	TaskVersion            any
 }
 
 type OpenapiStorageTaskReportInstance_Value struct {

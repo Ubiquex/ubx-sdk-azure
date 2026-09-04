@@ -12078,8 +12078,6 @@ const VirtualnetworkNetworkProfile_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkNetworkProfileConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Network profile properties. */
   properties?: VirtualnetworkNetworkProfile_Properties | Computed<VirtualnetworkNetworkProfile_Properties>;
 }
@@ -12094,7 +12092,6 @@ export interface VirtualnetworkNetworkProfileAttrs {
 export const VirtualnetworkNetworkProfile: ResourceBinding<VirtualnetworkNetworkProfileConfig, VirtualnetworkNetworkProfileAttrs> = {
   wireType: "azure_network_virtualnetwork_network_profile",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

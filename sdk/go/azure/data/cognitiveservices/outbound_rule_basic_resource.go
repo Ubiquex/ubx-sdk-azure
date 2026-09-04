@@ -4,11 +4,11 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OutboundRuleBasicResource_Value_Properties struct {
-	Category any
+	Category         any
 	ErrorInformation any
-	ParentRuleNames any
-	Status any
-	Type any
+	ParentRuleNames  any
+	Status           any
+	Type             any
 }
 
 type OutboundRuleBasicResource_Value struct {
@@ -16,12 +16,12 @@ type OutboundRuleBasicResource_Value struct {
 }
 
 type OutboundRuleBasicResourceConfig struct {
-	AccountName any
+	AccountName        any
 	ManagedNetworkName any
 }
 
 type OutboundRuleBasicResourceAttrs struct {
-	AccountName any
+	AccountName        any
 	ManagedNetworkName any
 	// The link to the next page constructed using the continuationToken. If null, there are no additional pages.
 	NextLink any
@@ -32,7 +32,7 @@ type OutboundRuleBasicResourceAttrs struct {
 var OutboundRuleBasicResource = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_outbound_rule_basic_resource",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":        ubx.FieldSpec{WireName: "account_name"},
 		"ManagedNetworkName": ubx.FieldSpec{WireName: "managed_network_name"},
 	},
 }

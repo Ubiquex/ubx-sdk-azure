@@ -60,8 +60,6 @@ const PrivateendpointsPrivateEndpoint_PropertiesFields: FieldMap = {
 };
 
 export interface PrivateendpointsPrivateEndpointConfig {
-  /** Unique opaque string (generally a GUID) that represents the metadata state of the resource (private endpoint) and changes whenever the resource is updated. Required on PUT (CreateOrUpdate) requests. */
-  etag?: string | Computed<string>;
   /** The properties associated with a private endpoint. */
   properties?: PrivateendpointsPrivateEndpoint_Properties | Computed<PrivateendpointsPrivateEndpoint_Properties>;
 }
@@ -76,7 +74,6 @@ export interface PrivateendpointsPrivateEndpointAttrs {
 export const PrivateendpointsPrivateEndpoint: ResourceBinding<PrivateendpointsPrivateEndpointConfig, PrivateendpointsPrivateEndpointAttrs> = {
   wireType: "azure_streamanalytics_privateendpoints_private_endpoint",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

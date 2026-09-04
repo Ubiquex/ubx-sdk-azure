@@ -7,14 +7,70 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class OpenapiRecipientTransferDetails_Properties_DetailedTransferStatus_ErrorDetails:
+    code: Any = None
+    message: Any = None
+
+@dataclasses.dataclass
+class OpenapiRecipientTransferDetails_Properties_DetailedTransferStatus:
+    error_details: Any = None
+    product_id: Any = None
+    product_name: Any = None
+    product_type: Any = None
+    sku_description: Any = None
+    transfer_status: Any = None
+
+@dataclasses.dataclass
 class OpenapiRecipientTransferDetails_Properties_ProductDetails:
     product_id: Any = None
     product_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiRecipientTransferDetails_Properties:
+    # Type of subscriptions that can be transferred.
+    allowed_product_type: Any = None
+    # The email ID of the user who canceled the transfer request.
+    canceled_by: Any = None
+    # The customer tenant id.
+    customer_tenant_id: Any = None
+    # Detailed transfer status.
+    detailed_transfer_status: Any = None
+    # The time at which the transfer request expires.
+    expiration_time: Any = None
+    # The type of customer of the transfer initiator.
+    initiator_customer_type: Any = None
+    # The email ID of the user who sent the transfer request.
+    initiator_email_id: Any = None
     # Request parameters to accept transfer.
     product_details: Any = None
+    # The email ID of the user to whom the transfer request was sent.
+    recipient_email_id: Any = None
+    # Optional MPN ID of the reseller for transfer requests that are sent from a Microsoft Partner Agreement billing account.
+    reseller_id: Any = None
+    # Optional name of the reseller for transfer requests that are sent from Microsoft Partner Agreement billing account.
+    reseller_name: Any = None
+    # List of supported account types.
+    supported_accounts: Any = None
+    # The status of a transfer.
+    transfer_status: Any = None
+
+_OpenapiRecipientTransferDetails_Properties_DetailedTransferStatus_ErrorDetailsFields = {
+    "code": ubx.FieldSpec(wire_name="code"),
+    "message": ubx.FieldSpec(wire_name="message"),
+}
+
+_OpenapiRecipientTransferDetails_Properties_DetailedTransferStatusFields = {
+    "error_details": ubx.FieldSpec(
+        wire_name="error_details",
+        kind="object",
+        fields=_OpenapiRecipientTransferDetails_Properties_DetailedTransferStatus_ErrorDetailsFields,
+    ),
+    "product_id": ubx.FieldSpec(wire_name="product_id"),
+    "product_name": ubx.FieldSpec(wire_name="product_name"),
+    "product_type": ubx.FieldSpec(wire_name="product_type"),
+    "sku_description": ubx.FieldSpec(wire_name="sku_description"),
+    "transfer_status": ubx.FieldSpec(wire_name="transfer_status"),
+}
 
 _OpenapiRecipientTransferDetails_Properties_ProductDetailsFields = {
     "product_id": ubx.FieldSpec(wire_name="product_id"),
@@ -22,11 +78,27 @@ _OpenapiRecipientTransferDetails_Properties_ProductDetailsFields = {
 }
 
 _OpenapiRecipientTransferDetails_PropertiesFields = {
+    "allowed_product_type": ubx.FieldSpec(wire_name="allowed_product_type"),
+    "canceled_by": ubx.FieldSpec(wire_name="canceled_by"),
+    "customer_tenant_id": ubx.FieldSpec(wire_name="customer_tenant_id"),
+    "detailed_transfer_status": ubx.FieldSpec(
+        wire_name="detailed_transfer_status",
+        kind="list",
+        fields=_OpenapiRecipientTransferDetails_Properties_DetailedTransferStatusFields,
+    ),
+    "expiration_time": ubx.FieldSpec(wire_name="expiration_time"),
+    "initiator_customer_type": ubx.FieldSpec(wire_name="initiator_customer_type"),
+    "initiator_email_id": ubx.FieldSpec(wire_name="initiator_email_id"),
     "product_details": ubx.FieldSpec(
         wire_name="product_details",
         kind="list",
         fields=_OpenapiRecipientTransferDetails_Properties_ProductDetailsFields,
     ),
+    "recipient_email_id": ubx.FieldSpec(wire_name="recipient_email_id"),
+    "reseller_id": ubx.FieldSpec(wire_name="reseller_id"),
+    "reseller_name": ubx.FieldSpec(wire_name="reseller_name"),
+    "supported_accounts": ubx.FieldSpec(wire_name="supported_accounts"),
+    "transfer_status": ubx.FieldSpec(wire_name="transfer_status"),
 }
 
 @dataclasses.dataclass

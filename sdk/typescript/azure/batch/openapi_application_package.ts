@@ -23,8 +23,6 @@ const OpenapiApplicationPackage_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiApplicationPackageConfig {
-  /** The ETag of the resource, used for concurrency statements. */
-  etag?: string | Computed<string>;
   /** Properties of an application package */
   properties?: OpenapiApplicationPackage_Properties | Computed<OpenapiApplicationPackage_Properties>;
   /** The tags of the resource. */
@@ -43,7 +41,6 @@ export interface OpenapiApplicationPackageAttrs {
 export const OpenapiApplicationPackage: ResourceBinding<OpenapiApplicationPackageConfig, OpenapiApplicationPackageAttrs> = {
   wireType: "azure_batch_openapi_application_package",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

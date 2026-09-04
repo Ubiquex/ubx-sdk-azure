@@ -39,8 +39,6 @@ _VirtualnetworkSecurityPartnerProvider_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkSecurityPartnerProviderConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of the Security Partner Provider.
     properties: Any = None
 
@@ -54,7 +52,6 @@ class VirtualnetworkSecurityPartnerProviderAttrs:
 VirtualnetworkSecurityPartnerProvider = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_security_partner_provider",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -4,34 +4,34 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSkuInfo_Value_Capacity struct {
-	Default any
+	Default        any
 	ElasticMaximum any
-	Maximum any
-	Minimum any
-	ScaleType any
+	Maximum        any
+	Minimum        any
+	ScaleType      any
 }
 
 type OpenapiSkuInfo_Value_Sku_Capabilities struct {
-	Name any
+	Name   any
 	Reason any
-	Value any
+	Value  any
 }
 
 type OpenapiSkuInfo_Value_Sku struct {
 	Capabilities any
-	Capacity any
-	Family any
-	Locations any
-	Name any
-	Size any
-	SkuCapacity any
-	Tier any
+	Capacity     any
+	Family       any
+	Locations    any
+	Name         any
+	Size         any
+	SkuCapacity  any
+	Tier         any
 }
 
 type OpenapiSkuInfo_Value struct {
-	Capacity any
+	Capacity     any
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type OpenapiSkuInfoConfig struct {

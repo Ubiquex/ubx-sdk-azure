@@ -44,8 +44,6 @@ const RaiToolLabel_PropertiesFields: FieldMap = {
 };
 
 export interface RaiToolLabelConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** RAI Tool Label properties. */
   properties?: RaiToolLabel_Properties | Computed<RaiToolLabel_Properties>;
   /** Resource tags. */
@@ -64,7 +62,6 @@ export interface RaiToolLabelAttrs {
 export const RaiToolLabel: ResourceBinding<RaiToolLabelConfig, RaiToolLabelAttrs> = {
   wireType: "azure_cognitiveservices_rai_tool_label",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

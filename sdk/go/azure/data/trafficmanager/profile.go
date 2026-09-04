@@ -4,37 +4,37 @@ package trafficmanager
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Profile_Value_Properties_DnsConfig struct {
-	Fqdn any
+	Fqdn         any
 	RelativeName any
-	Ttl any
+	Ttl          any
 }
 
 type Profile_Value_Properties_Endpoints_Properties_CustomHeaders struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type Profile_Value_Properties_Endpoints_Properties_Subnets struct {
 	First any
-	Last any
+	Last  any
 	Scope any
 }
 
 type Profile_Value_Properties_Endpoints_Properties struct {
-	AlwaysServe any
-	CustomHeaders any
-	EndpointLocation any
+	AlwaysServe           any
+	CustomHeaders         any
+	EndpointLocation      any
 	EndpointMonitorStatus any
-	EndpointStatus any
-	GeoMapping any
-	MinChildEndpoints any
+	EndpointStatus        any
+	GeoMapping            any
+	MinChildEndpoints     any
 	MinChildEndpointsIpv4 any
 	MinChildEndpointsIpv6 any
-	Priority any
-	Subnets any
-	Target any
-	TargetResourceId any
-	Weight any
+	Priority              any
+	Subnets               any
+	Target                any
+	TargetResourceId      any
+	Weight                any
 }
 
 type Profile_Value_Properties_Endpoints struct {
@@ -47,25 +47,25 @@ type Profile_Value_Properties_MonitorConfig_ExpectedStatusCodeRanges struct {
 }
 
 type Profile_Value_Properties_MonitorConfig struct {
-	CustomHeaders any
-	ExpectedStatusCodeRanges any
-	IntervalInSeconds any
-	Path any
-	Port any
-	ProfileMonitorStatus any
-	Protocol any
-	TimeoutInSeconds any
+	CustomHeaders             any
+	ExpectedStatusCodeRanges  any
+	IntervalInSeconds         any
+	Path                      any
+	Port                      any
+	ProfileMonitorStatus      any
+	Protocol                  any
+	TimeoutInSeconds          any
 	ToleratedNumberOfFailures any
 }
 
 type Profile_Value_Properties struct {
-	AllowedEndpointRecordTypes any
-	DnsConfig any
-	Endpoints any
-	MaxReturn any
-	MonitorConfig any
-	ProfileStatus any
-	TrafficRoutingMethod any
+	AllowedEndpointRecordTypes  any
+	DnsConfig                   any
+	Endpoints                   any
+	MaxReturn                   any
+	MonitorConfig               any
+	ProfileStatus               any
+	TrafficRoutingMethod        any
 	TrafficViewEnrollmentStatus any
 }
 
@@ -85,6 +85,5 @@ type ProfileAttrs struct {
 
 var Profile = ubx.DataSourceBinding{
 	WireType: "azure_trafficmanager_profile",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

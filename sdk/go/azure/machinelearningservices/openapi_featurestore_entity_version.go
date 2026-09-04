@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFeaturestoreEntityVersion_Properties_IndexColumns struct {
 	ColumnName any
-	DataType any
+	DataType   any
 }
 
 type OpenapiFeaturestoreEntityVersion_Properties struct {
@@ -18,19 +18,19 @@ type OpenapiFeaturestoreEntityVersion_Properties struct {
 }
 
 var OpenapiFeaturestoreEntityVersion_Properties_IndexColumnsFields = ubx.FieldMap{
-		"ColumnName": ubx.FieldSpec{WireName: "column_name"},
-		"DataType": ubx.FieldSpec{WireName: "data_type"},
-	}
+	"ColumnName": ubx.FieldSpec{WireName: "column_name"},
+	"DataType":   ubx.FieldSpec{WireName: "data_type"},
+}
 
 var OpenapiFeaturestoreEntityVersion_PropertiesFields = ubx.FieldMap{
-		"IndexColumns": ubx.FieldSpec{
-			WireName: "index_columns",
-			Kind: "list",
-			Fields: OpenapiFeaturestoreEntityVersion_Properties_IndexColumnsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Stage": ubx.FieldSpec{WireName: "stage"},
-	}
+	"IndexColumns": ubx.FieldSpec{
+		WireName: "index_columns",
+		Kind:     "list",
+		Fields:   OpenapiFeaturestoreEntityVersion_Properties_IndexColumnsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Stage":             ubx.FieldSpec{WireName: "stage"},
+}
 
 type OpenapiFeaturestoreEntityVersionConfig struct {
 	// DTO object representing feature entity version
@@ -55,10 +55,10 @@ var OpenapiFeaturestoreEntityVersion = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiFeaturestoreEntityVersion_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiFeaturestoreEntityVersion_PropertiesFields,
 		},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":    ubx.FieldSpec{WireName: "name"},
 		"Version": ubx.FieldSpec{WireName: "version"},
 	},
 }

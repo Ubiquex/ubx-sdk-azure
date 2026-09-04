@@ -75,6 +75,12 @@ class DbOpenapiDatabaseAccountGetResults_Properties_Cors:
     max_age_in_seconds: Any = None
 
 @dataclasses.dataclass
+class DbOpenapiDatabaseAccountGetResults_Properties_FailoverPolicies:
+    failover_priority: Any = None
+    id: Any = None
+    location_name: Any = None
+
+@dataclasses.dataclass
 class DbOpenapiDatabaseAccountGetResults_Properties_IpRules:
     ip_address_or_range: Any = None
 
@@ -102,6 +108,27 @@ class DbOpenapiDatabaseAccountGetResults_Properties_Locations:
     is_zone_redundant: Any = None
     location_name: Any = None
     provisioning_state: Any = None
+
+@dataclasses.dataclass
+class DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    id: Any = None
+
+@dataclasses.dataclass
+class DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    actions_required: Any = None
+    description: Any = None
+    status: Any = None
+
+@dataclasses.dataclass
+class DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties:
+    group_id: Any = None
+    private_endpoint: Any = None
+    private_link_service_connection_state: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections:
+    properties: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_DatabasesToRestore:
@@ -166,6 +193,8 @@ class DbOpenapiDatabaseAccountGetResults_Properties:
     disable_key_based_metadata_write_access: Any = None
     # Opt-out of local authentication and ensure only MSI and AAD can be used exclusively for authentication.
     disable_local_auth: Any = None
+    # The connection endpoint for the Cosmos DB database account.
+    document_endpoint: Any = None
     # Flag to indicate whether to enable storage analytics.
     enable_analytical_storage: Any = None
     # Enables automatic failover of the write region in the rare event that the region is unavailable due to an outage. Automatic failover will result in a new write region for the account and is chosen based on the failover priorities configured for the account.
@@ -186,12 +215,18 @@ class DbOpenapiDatabaseAccountGetResults_Properties:
     enable_priority_based_execution: Any = None
     # Flag to indicate enabling/disabling of hierarchical partition key ID last level enforcement on the account.
     enforce_hierarchical_partition_key_id_last_level: Any = None
+    # An array that contains the regions ordered by their failover priorities.
+    failover_policies: Any = None
+    # A unique identifier assigned to the database account
+    instance_id: Any = None
     # List of IpRules.
     ip_rules: Any = None
     # Flag to indicate whether to enable/disable Virtual Network ACL rules.
     is_virtual_network_filter_enabled: Any = None
     # The URI of the key vault
     key_vault_key_uri: Any = None
+    # The version of the Customer Managed Key currently being used by the account
+    key_vault_key_uri_version: Any = None
     # The metadata related to each access key for the given Cosmos DB database account.
     keys_metadata: Any = None
     # An array that contains the georeplication locations enabled for the Cosmos DB account.
@@ -202,12 +237,20 @@ class DbOpenapiDatabaseAccountGetResults_Properties:
     network_acl_bypass: Any = None
     # An array that contains the Resource Ids for Network Acl Bypass for the Cosmos DB account.
     network_acl_bypass_resource_ids: Any = None
+    # List of Private Endpoint Connections configured for the Cosmos DB account.
+    private_endpoint_connections: Any = None
+    # The provisioning state of the resource.
+    provisioning_state: Any = None
     # Whether requests from Public Network are allowed
     public_network_access: Any = None
+    # An array that contains of the read locations enabled for the Cosmos DB account.
+    read_locations: Any = None
     # Parameters to indicate the information about the restore.
     restore_parameters: Any = None
     # List of Virtual Network ACL rules configured for the Cosmos DB account.
     virtual_network_rules: Any = None
+    # An array that contains the write location for the Cosmos DB account.
+    write_locations: Any = None
 
 _DbOpenapiDatabaseAccountGetResults_Identity_UserAssignedIdentitiesFields = {
     "client_id": ubx.FieldSpec(wire_name="client_id"),
@@ -270,6 +313,12 @@ _DbOpenapiDatabaseAccountGetResults_Properties_CorsFields = {
     "max_age_in_seconds": ubx.FieldSpec(wire_name="max_age_in_seconds"),
 }
 
+_DbOpenapiDatabaseAccountGetResults_Properties_FailoverPoliciesFields = {
+    "failover_priority": ubx.FieldSpec(wire_name="failover_priority"),
+    "id": ubx.FieldSpec(wire_name="id"),
+    "location_name": ubx.FieldSpec(wire_name="location_name"),
+}
+
 _DbOpenapiDatabaseAccountGetResults_Properties_IpRulesFields = {
     "ip_address_or_range": ubx.FieldSpec(wire_name="ip_address_or_range"),
 }
@@ -308,6 +357,39 @@ _DbOpenapiDatabaseAccountGetResults_Properties_LocationsFields = {
     "is_zone_redundant": ubx.FieldSpec(wire_name="is_zone_redundant"),
     "location_name": ubx.FieldSpec(wire_name="location_name"),
     "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+}
+
+_DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = {
+    "id": ubx.FieldSpec(wire_name="id"),
+}
+
+_DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = {
+    "actions_required": ubx.FieldSpec(wire_name="actions_required"),
+    "description": ubx.FieldSpec(wire_name="description"),
+    "status": ubx.FieldSpec(wire_name="status"),
+}
+
+_DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_PropertiesFields = {
+    "group_id": ubx.FieldSpec(wire_name="group_id"),
+    "private_endpoint": ubx.FieldSpec(
+        wire_name="private_endpoint",
+        kind="object",
+        fields=_DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+    ),
+    "private_link_service_connection_state": ubx.FieldSpec(
+        wire_name="private_link_service_connection_state",
+        kind="object",
+        fields=_DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+}
+
+_DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnectionsFields = {
+    "properties": ubx.FieldSpec(
+        wire_name="properties",
+        kind="object",
+        fields=_DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_PropertiesFields,
+    ),
 }
 
 _DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_DatabasesToRestoreFields = {
@@ -387,6 +469,7 @@ _DbOpenapiDatabaseAccountGetResults_PropertiesFields = {
     "default_priority_level": ubx.FieldSpec(wire_name="default_priority_level"),
     "disable_key_based_metadata_write_access": ubx.FieldSpec(wire_name="disable_key_based_metadata_write_access"),
     "disable_local_auth": ubx.FieldSpec(wire_name="disable_local_auth"),
+    "document_endpoint": ubx.FieldSpec(wire_name="document_endpoint"),
     "enable_analytical_storage": ubx.FieldSpec(wire_name="enable_analytical_storage"),
     "enable_automatic_failover": ubx.FieldSpec(wire_name="enable_automatic_failover"),
     "enable_burst_capacity": ubx.FieldSpec(wire_name="enable_burst_capacity"),
@@ -397,6 +480,12 @@ _DbOpenapiDatabaseAccountGetResults_PropertiesFields = {
     "enable_per_region_per_partition_autoscale": ubx.FieldSpec(wire_name="enable_per_region_per_partition_autoscale"),
     "enable_priority_based_execution": ubx.FieldSpec(wire_name="enable_priority_based_execution"),
     "enforce_hierarchical_partition_key_id_last_level": ubx.FieldSpec(wire_name="enforce_hierarchical_partition_key_id_last_level"),
+    "failover_policies": ubx.FieldSpec(
+        wire_name="failover_policies",
+        kind="list",
+        fields=_DbOpenapiDatabaseAccountGetResults_Properties_FailoverPoliciesFields,
+    ),
+    "instance_id": ubx.FieldSpec(wire_name="instance_id"),
     "ip_rules": ubx.FieldSpec(
         wire_name="ip_rules",
         kind="list",
@@ -404,6 +493,7 @@ _DbOpenapiDatabaseAccountGetResults_PropertiesFields = {
     ),
     "is_virtual_network_filter_enabled": ubx.FieldSpec(wire_name="is_virtual_network_filter_enabled"),
     "key_vault_key_uri": ubx.FieldSpec(wire_name="key_vault_key_uri"),
+    "key_vault_key_uri_version": ubx.FieldSpec(wire_name="key_vault_key_uri_version"),
     "keys_metadata": ubx.FieldSpec(
         wire_name="keys_metadata",
         kind="object",
@@ -417,7 +507,18 @@ _DbOpenapiDatabaseAccountGetResults_PropertiesFields = {
     "minimal_tls_version": ubx.FieldSpec(wire_name="minimal_tls_version"),
     "network_acl_bypass": ubx.FieldSpec(wire_name="network_acl_bypass"),
     "network_acl_bypass_resource_ids": ubx.FieldSpec(wire_name="network_acl_bypass_resource_ids"),
+    "private_endpoint_connections": ubx.FieldSpec(
+        wire_name="private_endpoint_connections",
+        kind="list",
+        fields=_DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnectionsFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
     "public_network_access": ubx.FieldSpec(wire_name="public_network_access"),
+    "read_locations": ubx.FieldSpec(
+        wire_name="read_locations",
+        kind="list",
+        fields=_DbOpenapiDatabaseAccountGetResults_Properties_LocationsFields,
+    ),
     "restore_parameters": ubx.FieldSpec(
         wire_name="restore_parameters",
         kind="object",
@@ -427,6 +528,11 @@ _DbOpenapiDatabaseAccountGetResults_PropertiesFields = {
         wire_name="virtual_network_rules",
         kind="list",
         fields=_DbOpenapiDatabaseAccountGetResults_Properties_VirtualNetworkRulesFields,
+    ),
+    "write_locations": ubx.FieldSpec(
+        wire_name="write_locations",
+        kind="list",
+        fields=_DbOpenapiDatabaseAccountGetResults_Properties_LocationsFields,
     ),
 }
 

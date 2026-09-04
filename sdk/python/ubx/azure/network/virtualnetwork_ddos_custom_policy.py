@@ -95,8 +95,6 @@ _VirtualnetworkDdosCustomPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkDdosCustomPolicyConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # DDoS custom policy properties.
     properties: Any = None
 
@@ -110,7 +108,6 @@ class VirtualnetworkDdosCustomPolicyAttrs:
 VirtualnetworkDdosCustomPolicy = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_ddos_custom_policy",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

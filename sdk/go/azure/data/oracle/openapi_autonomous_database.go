@@ -9,40 +9,40 @@ type OpenapiAutonomousDatabase_Value_Properties_ApexDetails struct {
 }
 
 type OpenapiAutonomousDatabase_Value_Properties_ConnectionStrings_AllConnectionStrings struct {
-	High any
-	Low any
+	High   any
+	Low    any
 	Medium any
 }
 
 type OpenapiAutonomousDatabase_Value_Properties_ConnectionStrings_Profiles struct {
-	ConsumerGroup any
-	DisplayName any
-	HostFormat any
-	IsRegional any
-	Protocol any
-	SessionMode any
-	SyntaxFormat any
+	ConsumerGroup     any
+	DisplayName       any
+	HostFormat        any
+	IsRegional        any
+	Protocol          any
+	SessionMode       any
+	SyntaxFormat      any
 	TlsAuthentication any
-	Value any
+	Value             any
 }
 
 type OpenapiAutonomousDatabase_Value_Properties_ConnectionStrings struct {
 	AllConnectionStrings any
-	Dedicated any
-	High any
-	Low any
-	Medium any
-	Profiles any
+	Dedicated            any
+	High                 any
+	Low                  any
+	Medium               any
+	Profiles             any
 }
 
 type OpenapiAutonomousDatabase_Value_Properties_ConnectionUrls struct {
-	ApexUrl any
-	DatabaseTransformsUrl any
-	GraphStudioUrl any
+	ApexUrl                    any
+	DatabaseTransformsUrl      any
+	GraphStudioUrl             any
 	MachineLearningNotebookUrl any
-	MongoDbUrl any
-	OrdsUrl any
-	SqlDevWebUrl any
+	MongoDbUrl                 any
+	OrdsUrl                    any
+	SqlDevWebUrl               any
 }
 
 type OpenapiAutonomousDatabase_Value_Properties_CustomerContacts struct {
@@ -50,24 +50,24 @@ type OpenapiAutonomousDatabase_Value_Properties_CustomerContacts struct {
 }
 
 type OpenapiAutonomousDatabase_Value_Properties_LocalStandbyDb struct {
-	LagTimeInSeconds any
-	LifecycleDetails any
-	LifecycleState any
-	TimeDataGuardRoleChanged any
+	LagTimeInSeconds                any
+	LifecycleDetails                any
+	LifecycleState                  any
+	TimeDataGuardRoleChanged        any
 	TimeDisasterRecoveryRoleChanged any
 }
 
 type OpenapiAutonomousDatabase_Value_Properties_LongTermBackupSchedule struct {
-	IsDisabled any
-	RepeatCadence any
+	IsDisabled            any
+	RepeatCadence         any
 	RetentionPeriodInDays any
-	TimeOfBackup any
+	TimeOfBackup          any
 }
 
 type OpenapiAutonomousDatabase_Value_Properties_RemoteDisasterRecoveryConfiguration struct {
-	DisasterRecoveryType any
-	IsReplicateAutomaticBackups any
-	IsSnapshotStandby any
+	DisasterRecoveryType           any
+	IsReplicateAutomaticBackups    any
+	IsSnapshotStandby              any
 	TimeSnapshotStandbyEnabledTill any
 }
 
@@ -76,89 +76,89 @@ type OpenapiAutonomousDatabase_Value_Properties_ScheduledOperationsList_DayOfWee
 }
 
 type OpenapiAutonomousDatabase_Value_Properties_ScheduledOperationsList struct {
-	DayOfWeek any
+	DayOfWeek          any
 	ScheduledStartTime any
-	ScheduledStopTime any
+	ScheduledStopTime  any
 }
 
 type OpenapiAutonomousDatabase_Value_Properties struct {
-	ActualUsedDataStorageSizeInTbs any
-	AdminPassword any
-	AllocatedStorageSizeInTbs any
-	ApexDetails any
-	AutonomousDatabaseId any
-	AutonomousMaintenanceScheduleType any
-	AvailableUpgradeVersions any
-	BackupRetentionPeriodInDays any
-	CharacterSet any
-	ComputeCount any
-	ComputeModel any
-	ConnectionStrings any
-	ConnectionUrls any
-	CpuCoreCount any
-	CustomerContacts any
-	DataBaseType any
-	DataSafeStatus any
-	DataStorageSizeInGbs any
-	DataStorageSizeInTbs any
-	DatabaseEdition any
-	DbVersion any
-	DbWorkload any
-	DisplayName any
-	FailedDataRecoveryInSeconds any
-	InMemoryAreaInGbs any
-	IsAutoScalingEnabled any
-	IsAutoScalingForStorageEnabled any
-	IsLocalDataGuardEnabled any
-	IsMtlsConnectionRequired any
-	IsPreview any
+	ActualUsedDataStorageSizeInTbs           any
+	AdminPassword                            any
+	AllocatedStorageSizeInTbs                any
+	ApexDetails                              any
+	AutonomousDatabaseId                     any
+	AutonomousMaintenanceScheduleType        any
+	AvailableUpgradeVersions                 any
+	BackupRetentionPeriodInDays              any
+	CharacterSet                             any
+	ComputeCount                             any
+	ComputeModel                             any
+	ConnectionStrings                        any
+	ConnectionUrls                           any
+	CpuCoreCount                             any
+	CustomerContacts                         any
+	DataBaseType                             any
+	DataSafeStatus                           any
+	DataStorageSizeInGbs                     any
+	DataStorageSizeInTbs                     any
+	DatabaseEdition                          any
+	DbVersion                                any
+	DbWorkload                               any
+	DisplayName                              any
+	FailedDataRecoveryInSeconds              any
+	InMemoryAreaInGbs                        any
+	IsAutoScalingEnabled                     any
+	IsAutoScalingForStorageEnabled           any
+	IsLocalDataGuardEnabled                  any
+	IsMtlsConnectionRequired                 any
+	IsPreview                                any
 	IsPreviewVersionWithServiceTermsAccepted any
-	IsRemoteDataGuardEnabled any
-	LicenseModel any
-	LifecycleDetails any
-	LifecycleState any
-	LocalAdgAutoFailoverMaxDataLossLimit any
-	LocalDisasterRecoveryType any
-	LocalStandbyDb any
-	LongTermBackupSchedule any
-	MemoryPerOracleComputeUnitInGbs any
-	NcharacterSet any
-	NextLongTermBackupTimeStamp any
-	OciUrl any
-	Ocid any
-	OpenMode any
-	OperationsInsightsStatus any
-	PeerDbId any
-	PeerDbIds any
-	PermissionLevel any
-	PrivateEndpoint any
-	PrivateEndpointIp any
-	PrivateEndpointLabel any
-	ProvisionableCpus any
-	ProvisioningState any
-	RemoteDisasterRecoveryConfiguration any
-	Role any
-	ScheduledOperationsList any
-	ServiceConsoleUrl any
-	SqlWebDeveloperUrl any
-	SubnetId any
-	SupportedRegionsToCloneTo any
-	TimeCreated any
-	TimeDataGuardRoleChanged any
-	TimeDeletionOfFreeAutonomousDatabase any
-	TimeDisasterRecoveryRoleChanged any
-	TimeLocalDataGuardEnabled any
-	TimeMaintenanceBegin any
-	TimeMaintenanceEnd any
-	TimeOfLastFailover any
-	TimeOfLastRefresh any
-	TimeOfLastRefreshPoint any
-	TimeOfLastSwitchover any
-	TimeReclamationOfFreeAutonomousDatabase any
-	UsedDataStorageSizeInGbs any
-	UsedDataStorageSizeInTbs any
-	VnetId any
-	WhitelistedIps any
+	IsRemoteDataGuardEnabled                 any
+	LicenseModel                             any
+	LifecycleDetails                         any
+	LifecycleState                           any
+	LocalAdgAutoFailoverMaxDataLossLimit     any
+	LocalDisasterRecoveryType                any
+	LocalStandbyDb                           any
+	LongTermBackupSchedule                   any
+	MemoryPerOracleComputeUnitInGbs          any
+	NcharacterSet                            any
+	NextLongTermBackupTimeStamp              any
+	OciUrl                                   any
+	Ocid                                     any
+	OpenMode                                 any
+	OperationsInsightsStatus                 any
+	PeerDbId                                 any
+	PeerDbIds                                any
+	PermissionLevel                          any
+	PrivateEndpoint                          any
+	PrivateEndpointIp                        any
+	PrivateEndpointLabel                     any
+	ProvisionableCpus                        any
+	ProvisioningState                        any
+	RemoteDisasterRecoveryConfiguration      any
+	Role                                     any
+	ScheduledOperationsList                  any
+	ServiceConsoleUrl                        any
+	SqlWebDeveloperUrl                       any
+	SubnetId                                 any
+	SupportedRegionsToCloneTo                any
+	TimeCreated                              any
+	TimeDataGuardRoleChanged                 any
+	TimeDeletionOfFreeAutonomousDatabase     any
+	TimeDisasterRecoveryRoleChanged          any
+	TimeLocalDataGuardEnabled                any
+	TimeMaintenanceBegin                     any
+	TimeMaintenanceEnd                       any
+	TimeOfLastFailover                       any
+	TimeOfLastRefresh                        any
+	TimeOfLastRefreshPoint                   any
+	TimeOfLastSwitchover                     any
+	TimeReclamationOfFreeAutonomousDatabase  any
+	UsedDataStorageSizeInGbs                 any
+	UsedDataStorageSizeInTbs                 any
+	VnetId                                   any
+	WhitelistedIps                           any
 }
 
 type OpenapiAutonomousDatabase_Value struct {
@@ -177,6 +177,5 @@ type OpenapiAutonomousDatabaseAttrs struct {
 
 var OpenapiAutonomousDatabase = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_autonomous_database",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

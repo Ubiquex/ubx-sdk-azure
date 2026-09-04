@@ -35,10 +35,6 @@ _EncryptionprotectorsEncryptionProtector_PropertiesFields = {
 
 @dataclasses.dataclass
 class EncryptionprotectorsEncryptionProtectorConfig:
-    # Kind of encryption protector. This is metadata used for the Azure portal experience.
-    kind: Any = None
-    # Resource location.
-    location: Any = None
     # Properties for an encryption protector execution.
     properties: Any = None
 
@@ -54,8 +50,6 @@ class EncryptionprotectorsEncryptionProtectorAttrs:
 EncryptionprotectorsEncryptionProtector = ubx.ResourceBinding(
     wire_type="azure_sql_encryptionprotectors_encryption_protector",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

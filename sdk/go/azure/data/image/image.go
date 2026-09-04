@@ -18,25 +18,25 @@ type Image_Value_Properties_StorageProfile_DataDisks struct {
 
 type Image_Value_Properties_StorageProfile_OsDisk struct {
 	OsState any
-	OsType any
+	OsType  any
 }
 
 type Image_Value_Properties_StorageProfile struct {
-	DataDisks any
-	OsDisk any
+	DataDisks     any
+	OsDisk        any
 	ZoneResilient any
 }
 
 type Image_Value_Properties struct {
-	HyperVgeneration any
-	ProvisioningState any
+	HyperVgeneration     any
+	ProvisioningState    any
 	SourceVirtualMachine any
-	StorageProfile any
+	StorageProfile       any
 }
 
 type Image_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ImageConfig struct {
@@ -51,6 +51,5 @@ type ImageAttrs struct {
 
 var Image = ubx.DataSourceBinding{
 	WireType: "azure_image",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

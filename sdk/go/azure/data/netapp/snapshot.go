@@ -4,20 +4,20 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Snapshot_Value_Properties struct {
-	Created any
+	Created           any
 	ProvisioningState any
-	SnapshotId any
+	SnapshotId        any
 }
 
 type Snapshot_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type SnapshotConfig struct {
 	AccountName any
-	PoolName any
-	VolumeName any
+	PoolName    any
+	VolumeName  any
 }
 
 type SnapshotAttrs struct {
@@ -26,7 +26,7 @@ type SnapshotAttrs struct {
 	NextLink any
 	PoolName any
 	// The Snapshot items on this page
-	Value any
+	Value      any
 	VolumeName any
 }
 
@@ -34,7 +34,7 @@ var Snapshot = ubx.DataSourceBinding{
 	WireType: "azure_netapp_snapshot",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PoolName": ubx.FieldSpec{WireName: "pool_name"},
-		"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
+		"PoolName":    ubx.FieldSpec{WireName: "pool_name"},
+		"VolumeName":  ubx.FieldSpec{WireName: "volume_name"},
 	},
 }

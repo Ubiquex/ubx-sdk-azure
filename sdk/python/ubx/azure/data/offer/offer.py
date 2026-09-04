@@ -9,20 +9,17 @@ import ubx_sdk as ubx
 @dataclasses.dataclass
 class OfferConfig:
     edge_zone: Any = None
-    offer: Any = None
     publisher_name: Any = None
 
 @dataclasses.dataclass
 class OfferAttrs:
     edge_zone: Any = None
-    offer: Any = None
     publisher_name: Any = None
 
 Offer = ubx.DataSourceBinding(
     wire_type="azure_offer",
     fields={
         "edge_zone": ubx.FieldSpec(wire_name="edge_zone"),
-        "offer": ubx.FieldSpec(wire_name="offer"),
         "publisher_name": ubx.FieldSpec(wire_name="publisher_name"),
     },
 )

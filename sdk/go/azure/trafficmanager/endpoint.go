@@ -4,13 +4,13 @@ package trafficmanager
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Endpoint_Properties_CustomHeaders struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type Endpoint_Properties_Subnets struct {
 	First any
-	Last any
+	Last  any
 	Scope any
 }
 
@@ -46,40 +46,40 @@ type Endpoint_Properties struct {
 }
 
 var Endpoint_Properties_CustomHeadersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var Endpoint_Properties_SubnetsFields = ubx.FieldMap{
-		"First": ubx.FieldSpec{WireName: "first"},
-		"Last": ubx.FieldSpec{WireName: "last"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"First": ubx.FieldSpec{WireName: "first"},
+	"Last":  ubx.FieldSpec{WireName: "last"},
+	"Scope": ubx.FieldSpec{WireName: "scope"},
+}
 
 var Endpoint_PropertiesFields = ubx.FieldMap{
-		"AlwaysServe": ubx.FieldSpec{WireName: "always_serve"},
-		"CustomHeaders": ubx.FieldSpec{
-			WireName: "custom_headers",
-			Kind: "list",
-			Fields: Endpoint_Properties_CustomHeadersFields,
-		},
-		"EndpointLocation": ubx.FieldSpec{WireName: "endpoint_location"},
-		"EndpointMonitorStatus": ubx.FieldSpec{WireName: "endpoint_monitor_status"},
-		"EndpointStatus": ubx.FieldSpec{WireName: "endpoint_status"},
-		"GeoMapping": ubx.FieldSpec{WireName: "geo_mapping"},
-		"MinChildEndpoints": ubx.FieldSpec{WireName: "min_child_endpoints"},
-		"MinChildEndpointsIpv4": ubx.FieldSpec{WireName: "min_child_endpoints_ipv4"},
-		"MinChildEndpointsIpv6": ubx.FieldSpec{WireName: "min_child_endpoints_ipv6"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: Endpoint_Properties_SubnetsFields,
-		},
-		"Target": ubx.FieldSpec{WireName: "target"},
-		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
-		"Weight": ubx.FieldSpec{WireName: "weight"},
-	}
+	"AlwaysServe": ubx.FieldSpec{WireName: "always_serve"},
+	"CustomHeaders": ubx.FieldSpec{
+		WireName: "custom_headers",
+		Kind:     "list",
+		Fields:   Endpoint_Properties_CustomHeadersFields,
+	},
+	"EndpointLocation":      ubx.FieldSpec{WireName: "endpoint_location"},
+	"EndpointMonitorStatus": ubx.FieldSpec{WireName: "endpoint_monitor_status"},
+	"EndpointStatus":        ubx.FieldSpec{WireName: "endpoint_status"},
+	"GeoMapping":            ubx.FieldSpec{WireName: "geo_mapping"},
+	"MinChildEndpoints":     ubx.FieldSpec{WireName: "min_child_endpoints"},
+	"MinChildEndpointsIpv4": ubx.FieldSpec{WireName: "min_child_endpoints_ipv4"},
+	"MinChildEndpointsIpv6": ubx.FieldSpec{WireName: "min_child_endpoints_ipv6"},
+	"Priority":              ubx.FieldSpec{WireName: "priority"},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   Endpoint_Properties_SubnetsFields,
+	},
+	"Target":           ubx.FieldSpec{WireName: "target"},
+	"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
+	"Weight":           ubx.FieldSpec{WireName: "weight"},
+}
 
 type EndpointConfig struct {
 	// Class representing a Traffic Manager endpoint properties.
@@ -96,8 +96,8 @@ var Endpoint = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Endpoint_PropertiesFields,
+			Kind:     "object",
+			Fields:   Endpoint_PropertiesFields,
 		},
 	},
 }

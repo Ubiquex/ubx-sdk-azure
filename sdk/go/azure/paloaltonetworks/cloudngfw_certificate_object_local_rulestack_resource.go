@@ -19,13 +19,13 @@ type CloudngfwCertificateObjectLocalRulestackResource_Properties struct {
 }
 
 var CloudngfwCertificateObjectLocalRulestackResource_PropertiesFields = ubx.FieldMap{
-		"AuditComment": ubx.FieldSpec{WireName: "audit_comment"},
-		"CertificateSelfSigned": ubx.FieldSpec{WireName: "certificate_self_signed"},
-		"CertificateSignerResourceId": ubx.FieldSpec{WireName: "certificate_signer_resource_id"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AuditComment":                ubx.FieldSpec{WireName: "audit_comment"},
+	"CertificateSelfSigned":       ubx.FieldSpec{WireName: "certificate_self_signed"},
+	"CertificateSignerResourceId": ubx.FieldSpec{WireName: "certificate_signer_resource_id"},
+	"Description":                 ubx.FieldSpec{WireName: "description"},
+	"Etag":                        ubx.FieldSpec{WireName: "etag"},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type CloudngfwCertificateObjectLocalRulestackResourceConfig struct {
 	// certificate used for inbound and outbound decryption
@@ -46,8 +46,8 @@ var CloudngfwCertificateObjectLocalRulestackResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CloudngfwCertificateObjectLocalRulestackResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   CloudngfwCertificateObjectLocalRulestackResource_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

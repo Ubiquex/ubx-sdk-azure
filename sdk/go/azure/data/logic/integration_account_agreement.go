@@ -5,190 +5,190 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationAccountAgreement_Value_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_AcknowledgementConnectionSettings struct {
 	IgnoreCertificateNameMismatch any
-	KeepHttpConnectionAlive any
+	KeepHttpConnectionAlive       any
 	SupportHttpStatusCodeContinue any
-	UnfoldHttpHeaders any
+	UnfoldHttpHeaders             any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_EnvelopeSettings struct {
-	AutogenerateFileName any
-	FileNameTemplate any
-	MessageContentType any
+	AutogenerateFileName                    any
+	FileNameTemplate                        any
+	MessageContentType                      any
 	SuspendMessageOnFileNameGenerationError any
-	TransmitFileNameInMimeHeader any
+	TransmitFileNameInMimeHeader            any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_ErrorSettings struct {
-	ResendIfMdnnotReceived any
+	ResendIfMdnnotReceived  any
 	SuspendDuplicateMessage any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_MdnSettings struct {
-	DispositionNotificationTo any
-	MdnText any
-	MicHashingAlgorithm any
-	NeedMdn any
-	ReceiptDeliveryUrl any
+	DispositionNotificationTo  any
+	MdnText                    any
+	MicHashingAlgorithm        any
+	NeedMdn                    any
+	ReceiptDeliveryUrl         any
 	SendInboundMdntoMessageBox any
-	SendMdnasynchronously any
-	SignMdn any
-	SignOutboundMdnifOptional any
+	SendMdnasynchronously      any
+	SignMdn                    any
+	SignOutboundMdnifOptional  any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_SecuritySettings struct {
-	EnableNrrforInboundDecodedMessages any
-	EnableNrrforInboundEncodedMessages any
-	EnableNrrforInboundMdn any
+	EnableNrrforInboundDecodedMessages  any
+	EnableNrrforInboundEncodedMessages  any
+	EnableNrrforInboundMdn              any
 	EnableNrrforOutboundDecodedMessages any
 	EnableNrrforOutboundEncodedMessages any
-	EnableNrrforOutboundMdn any
-	EncryptionCertificateName any
-	OverrideGroupSigningCertificate any
-	Sha2AlgorithmFormat any
-	SigningCertificateName any
+	EnableNrrforOutboundMdn             any
+	EncryptionCertificateName           any
+	OverrideGroupSigningCertificate     any
+	Sha2AlgorithmFormat                 any
+	SigningCertificateName              any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_ValidationSettings struct {
 	CheckCertificateRevocationListOnReceive any
-	CheckCertificateRevocationListOnSend any
-	CheckDuplicateMessage any
-	CompressMessage any
-	EncryptMessage any
-	EncryptionAlgorithm any
-	InterchangeDuplicatesValidityDays any
-	OverrideMessageProperties any
-	SignMessage any
-	SigningAlgorithm any
+	CheckCertificateRevocationListOnSend    any
+	CheckDuplicateMessage                   any
+	CompressMessage                         any
+	EncryptMessage                          any
+	EncryptionAlgorithm                     any
+	InterchangeDuplicatesValidityDays       any
+	OverrideMessageProperties               any
+	SignMessage                             any
+	SigningAlgorithm                        any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings struct {
 	AcknowledgementConnectionSettings any
-	EnvelopeSettings any
-	ErrorSettings any
-	MdnSettings any
-	MessageConnectionSettings any
-	SecuritySettings any
-	ValidationSettings any
+	EnvelopeSettings                  any
+	ErrorSettings                     any
+	MdnSettings                       any
+	MessageConnectionSettings         any
+	SecuritySettings                  any
+	ValidationSettings                any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentity struct {
 	Qualifier any
-	Value any
+	Value     any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_AS2_ReceiveAgreement struct {
-	ProtocolSettings any
+	ProtocolSettings         any
 	ReceiverBusinessIdentity any
-	SenderBusinessIdentity any
+	SenderBusinessIdentity   any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_AS2 struct {
 	ReceiveAgreement any
-	SendAgreement any
+	SendAgreement    any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_AcknowledgementSettings struct {
 	AcknowledgementControlNumberLowerBound any
-	AcknowledgementControlNumberPrefix any
-	AcknowledgementControlNumberSuffix any
+	AcknowledgementControlNumberPrefix     any
+	AcknowledgementControlNumberSuffix     any
 	AcknowledgementControlNumberUpperBound any
-	BatchFunctionalAcknowledgements any
-	BatchTechnicalAcknowledgements any
-	NeedFunctionalAcknowledgement any
-	NeedLoopForValidMessages any
-	NeedTechnicalAcknowledgement any
-	RolloverAcknowledgementControlNumber any
-	SendSynchronousAcknowledgement any
+	BatchFunctionalAcknowledgements        any
+	BatchTechnicalAcknowledgements         any
+	NeedFunctionalAcknowledgement          any
+	NeedLoopForValidMessages               any
+	NeedTechnicalAcknowledgement           any
+	RolloverAcknowledgementControlNumber   any
+	SendSynchronousAcknowledgement         any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EdifactDelimiterOverrides struct {
-	ComponentSeparator any
-	DataElementSeparator any
-	DecimalPointIndicator any
+	ComponentSeparator             any
+	DataElementSeparator           any
+	DecimalPointIndicator          any
 	MessageAssociationAssignedCode any
-	MessageId any
-	MessageRelease any
-	MessageVersion any
-	ReleaseIndicator any
-	RepetitionSeparator any
-	SegmentTerminator any
-	SegmentTerminatorSuffix any
-	TargetNamespace any
+	MessageId                      any
+	MessageRelease                 any
+	MessageVersion                 any
+	ReleaseIndicator               any
+	RepetitionSeparator            any
+	SegmentTerminator              any
+	SegmentTerminatorSuffix        any
+	TargetNamespace                any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeOverrides struct {
-	ApplicationPassword any
-	AssociationAssignedCode any
-	ControllingAgencyCode any
-	FunctionalGroupId any
-	GroupHeaderMessageRelease any
-	GroupHeaderMessageVersion any
+	ApplicationPassword            any
+	AssociationAssignedCode        any
+	ControllingAgencyCode          any
+	FunctionalGroupId              any
+	GroupHeaderMessageRelease      any
+	GroupHeaderMessageVersion      any
 	MessageAssociationAssignedCode any
-	MessageId any
-	MessageRelease any
-	MessageVersion any
-	ReceiverApplicationId any
-	ReceiverApplicationQualifier any
-	SenderApplicationId any
-	SenderApplicationQualifier any
-	TargetNamespace any
+	MessageId                      any
+	MessageRelease                 any
+	MessageVersion                 any
+	ReceiverApplicationId          any
+	ReceiverApplicationQualifier   any
+	SenderApplicationId            any
+	SenderApplicationQualifier     any
+	TargetNamespace                any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeSettings struct {
-	ApplicationReferenceId any
-	ApplyDelimiterStringAdvice any
-	CommunicationAgreementId any
-	CreateGroupingSegments any
-	EnableDefaultGroupHeaders any
-	FunctionalGroupId any
-	GroupApplicationPassword any
-	GroupApplicationReceiverId any
-	GroupApplicationReceiverQualifier any
-	GroupApplicationSenderId any
-	GroupApplicationSenderQualifier any
-	GroupAssociationAssignedCode any
-	GroupControlNumberLowerBound any
-	GroupControlNumberPrefix any
-	GroupControlNumberSuffix any
-	GroupControlNumberUpperBound any
-	GroupControllingAgencyCode any
-	GroupMessageRelease any
-	GroupMessageVersion any
-	InterchangeControlNumberLowerBound any
-	InterchangeControlNumberPrefix any
-	InterchangeControlNumberSuffix any
-	InterchangeControlNumberUpperBound any
-	IsTestInterchange any
+	ApplicationReferenceId                       any
+	ApplyDelimiterStringAdvice                   any
+	CommunicationAgreementId                     any
+	CreateGroupingSegments                       any
+	EnableDefaultGroupHeaders                    any
+	FunctionalGroupId                            any
+	GroupApplicationPassword                     any
+	GroupApplicationReceiverId                   any
+	GroupApplicationReceiverQualifier            any
+	GroupApplicationSenderId                     any
+	GroupApplicationSenderQualifier              any
+	GroupAssociationAssignedCode                 any
+	GroupControlNumberLowerBound                 any
+	GroupControlNumberPrefix                     any
+	GroupControlNumberSuffix                     any
+	GroupControlNumberUpperBound                 any
+	GroupControllingAgencyCode                   any
+	GroupMessageRelease                          any
+	GroupMessageVersion                          any
+	InterchangeControlNumberLowerBound           any
+	InterchangeControlNumberPrefix               any
+	InterchangeControlNumberSuffix               any
+	InterchangeControlNumberUpperBound           any
+	IsTestInterchange                            any
 	OverwriteExistingTransactionSetControlNumber any
-	ProcessingPriorityCode any
-	ReceiverInternalIdentification any
-	ReceiverInternalSubIdentification any
-	ReceiverReverseRoutingAddress any
-	RecipientReferencePasswordQualifier any
-	RecipientReferencePasswordValue any
-	RolloverGroupControlNumber any
-	RolloverInterchangeControlNumber any
-	RolloverTransactionSetControlNumber any
-	SenderInternalIdentification any
-	SenderInternalSubIdentification any
-	SenderReverseRoutingAddress any
-	TransactionSetControlNumberLowerBound any
-	TransactionSetControlNumberPrefix any
-	TransactionSetControlNumberSuffix any
-	TransactionSetControlNumberUpperBound any
+	ProcessingPriorityCode                       any
+	ReceiverInternalIdentification               any
+	ReceiverInternalSubIdentification            any
+	ReceiverReverseRoutingAddress                any
+	RecipientReferencePasswordQualifier          any
+	RecipientReferencePasswordValue              any
+	RolloverGroupControlNumber                   any
+	RolloverInterchangeControlNumber             any
+	RolloverTransactionSetControlNumber          any
+	SenderInternalIdentification                 any
+	SenderInternalSubIdentification              any
+	SenderReverseRoutingAddress                  any
+	TransactionSetControlNumberLowerBound        any
+	TransactionSetControlNumberPrefix            any
+	TransactionSetControlNumberSuffix            any
+	TransactionSetControlNumberUpperBound        any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_FramingSettings struct {
-	CharacterEncoding any
-	CharacterSet any
-	ComponentSeparator any
-	DataElementSeparator any
-	DecimalPointIndicator any
-	ProtocolVersion any
-	ReleaseIndicator any
-	RepetitionSeparator any
-	SegmentTerminator any
-	SegmentTerminatorSuffix any
+	CharacterEncoding               any
+	CharacterSet                    any
+	ComponentSeparator              any
+	DataElementSeparator            any
+	DecimalPointIndicator           any
+	ProtocolVersion                 any
+	ReleaseIndicator                any
+	RepetitionSeparator             any
+	SegmentTerminator               any
+	SegmentTerminatorSuffix         any
 	ServiceCodeListDirectoryVersion any
 }
 
@@ -202,225 +202,225 @@ type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreeme
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ProcessingSettings struct {
 	CreateEmptyXmlTagsForTrailingSeparators any
-	MaskSecurityInfo any
-	PreserveInterchange any
-	SuspendInterchangeOnError any
-	UseDotAsDecimalSeparator any
+	MaskSecurityInfo                        any
+	PreserveInterchange                     any
+	SuspendInterchangeOnError               any
+	UseDotAsDecimalSeparator                any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_SchemaReferences struct {
-	AssociationAssignedCode any
-	MessageId any
-	MessageRelease any
-	MessageVersion any
-	SchemaName any
-	SenderApplicationId any
+	AssociationAssignedCode    any
+	MessageId                  any
+	MessageRelease             any
+	MessageVersion             any
+	SchemaName                 any
+	SenderApplicationId        any
 	SenderApplicationQualifier any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationOverrides struct {
 	AllowLeadingAndTrailingSpacesAndZeroes any
-	EnforceCharacterSet any
-	MessageId any
-	TrailingSeparatorPolicy any
-	TrimLeadingAndTrailingSpacesAndZeroes any
-	ValidateEditypes any
-	ValidateXsdtypes any
+	EnforceCharacterSet                    any
+	MessageId                              any
+	TrailingSeparatorPolicy                any
+	TrimLeadingAndTrailingSpacesAndZeroes  any
+	ValidateEditypes                       any
+	ValidateXsdtypes                       any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationSettings struct {
-	AllowLeadingAndTrailingSpacesAndZeroes any
-	CheckDuplicateGroupControlNumber any
-	CheckDuplicateInterchangeControlNumber any
+	AllowLeadingAndTrailingSpacesAndZeroes    any
+	CheckDuplicateGroupControlNumber          any
+	CheckDuplicateInterchangeControlNumber    any
 	CheckDuplicateTransactionSetControlNumber any
-	InterchangeControlNumberValidityDays any
-	TrailingSeparatorPolicy any
-	TrimLeadingAndTrailingSpacesAndZeroes any
-	ValidateCharacterSet any
-	ValidateEditypes any
-	ValidateXsdtypes any
+	InterchangeControlNumberValidityDays      any
+	TrailingSeparatorPolicy                   any
+	TrimLeadingAndTrailingSpacesAndZeroes     any
+	ValidateCharacterSet                      any
+	ValidateEditypes                          any
+	ValidateXsdtypes                          any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings struct {
-	AcknowledgementSettings any
+	AcknowledgementSettings   any
 	EdifactDelimiterOverrides any
-	EnvelopeOverrides any
-	EnvelopeSettings any
-	FramingSettings any
-	MessageFilter any
-	MessageFilterList any
-	ProcessingSettings any
-	SchemaReferences any
-	ValidationOverrides any
-	ValidationSettings any
+	EnvelopeOverrides         any
+	EnvelopeSettings          any
+	FramingSettings           any
+	MessageFilter             any
+	MessageFilterList         any
+	ProcessingSettings        any
+	SchemaReferences          any
+	ValidationOverrides       any
+	ValidationSettings        any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact_ReceiveAgreement struct {
-	ProtocolSettings any
+	ProtocolSettings         any
 	ReceiverBusinessIdentity any
-	SenderBusinessIdentity any
+	SenderBusinessIdentity   any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_Edifact struct {
 	ReceiveAgreement any
-	SendAgreement any
+	SendAgreement    any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_AcknowledgementSettings struct {
 	AcknowledgementControlNumberLowerBound any
-	AcknowledgementControlNumberPrefix any
-	AcknowledgementControlNumberSuffix any
+	AcknowledgementControlNumberPrefix     any
+	AcknowledgementControlNumberSuffix     any
 	AcknowledgementControlNumberUpperBound any
-	BatchFunctionalAcknowledgements any
-	BatchImplementationAcknowledgements any
-	BatchTechnicalAcknowledgements any
-	FunctionalAcknowledgementVersion any
-	ImplementationAcknowledgementVersion any
-	NeedFunctionalAcknowledgement any
-	NeedImplementationAcknowledgement any
-	NeedLoopForValidMessages any
-	NeedTechnicalAcknowledgement any
-	RolloverAcknowledgementControlNumber any
-	SendSynchronousAcknowledgement any
+	BatchFunctionalAcknowledgements        any
+	BatchImplementationAcknowledgements    any
+	BatchTechnicalAcknowledgements         any
+	FunctionalAcknowledgementVersion       any
+	ImplementationAcknowledgementVersion   any
+	NeedFunctionalAcknowledgement          any
+	NeedImplementationAcknowledgement      any
+	NeedLoopForValidMessages               any
+	NeedTechnicalAcknowledgement           any
+	RolloverAcknowledgementControlNumber   any
+	SendSynchronousAcknowledgement         any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeOverrides struct {
-	DateFormat any
+	DateFormat               any
 	FunctionalIdentifierCode any
-	HeaderVersion any
-	MessageId any
-	ProtocolVersion any
-	ReceiverApplicationId any
-	ResponsibleAgencyCode any
-	SenderApplicationId any
-	TargetNamespace any
-	TimeFormat any
+	HeaderVersion            any
+	MessageId                any
+	ProtocolVersion          any
+	ReceiverApplicationId    any
+	ResponsibleAgencyCode    any
+	SenderApplicationId      any
+	TargetNamespace          any
+	TimeFormat               any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeSettings struct {
-	ControlStandardsId any
-	ControlVersionNumber any
-	EnableDefaultGroupHeaders any
-	FunctionalGroupId any
-	GroupControlNumberLowerBound any
-	GroupControlNumberUpperBound any
-	GroupHeaderAgencyCode any
-	GroupHeaderDateFormat any
-	GroupHeaderTimeFormat any
-	GroupHeaderVersion any
-	InterchangeControlNumberLowerBound any
-	InterchangeControlNumberUpperBound any
+	ControlStandardsId                           any
+	ControlVersionNumber                         any
+	EnableDefaultGroupHeaders                    any
+	FunctionalGroupId                            any
+	GroupControlNumberLowerBound                 any
+	GroupControlNumberUpperBound                 any
+	GroupHeaderAgencyCode                        any
+	GroupHeaderDateFormat                        any
+	GroupHeaderTimeFormat                        any
+	GroupHeaderVersion                           any
+	InterchangeControlNumberLowerBound           any
+	InterchangeControlNumberUpperBound           any
 	OverwriteExistingTransactionSetControlNumber any
-	ReceiverApplicationId any
-	RolloverGroupControlNumber any
-	RolloverInterchangeControlNumber any
-	RolloverTransactionSetControlNumber any
-	SenderApplicationId any
-	TransactionSetControlNumberLowerBound any
-	TransactionSetControlNumberPrefix any
-	TransactionSetControlNumberSuffix any
-	TransactionSetControlNumberUpperBound any
-	UsageIndicator any
-	UseControlStandardsIdAsRepetitionCharacter any
+	ReceiverApplicationId                        any
+	RolloverGroupControlNumber                   any
+	RolloverInterchangeControlNumber             any
+	RolloverTransactionSetControlNumber          any
+	SenderApplicationId                          any
+	TransactionSetControlNumberLowerBound        any
+	TransactionSetControlNumberPrefix            any
+	TransactionSetControlNumberSuffix            any
+	TransactionSetControlNumberUpperBound        any
+	UsageIndicator                               any
+	UseControlStandardsIdAsRepetitionCharacter   any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_FramingSettings struct {
-	CharacterSet any
-	ComponentSeparator any
-	DataElementSeparator any
-	ReplaceCharacter any
+	CharacterSet               any
+	ComponentSeparator         any
+	DataElementSeparator       any
+	ReplaceCharacter           any
 	ReplaceSeparatorsInPayload any
-	SegmentTerminator any
-	SegmentTerminatorSuffix any
+	SegmentTerminator          any
+	SegmentTerminatorSuffix    any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ProcessingSettings struct {
-	ConvertImpliedDecimal any
+	ConvertImpliedDecimal                   any
 	CreateEmptyXmlTagsForTrailingSeparators any
-	MaskSecurityInfo any
-	PreserveInterchange any
-	SuspendInterchangeOnError any
-	UseDotAsDecimalSeparator any
+	MaskSecurityInfo                        any
+	PreserveInterchange                     any
+	SuspendInterchangeOnError               any
+	UseDotAsDecimalSeparator                any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SchemaReferences struct {
-	MessageId any
-	SchemaName any
-	SchemaVersion any
+	MessageId           any
+	SchemaName          any
+	SchemaVersion       any
 	SenderApplicationId any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SecuritySettings struct {
 	AuthorizationQualifier any
-	AuthorizationValue any
-	PasswordValue any
-	SecurityQualifier any
+	AuthorizationValue     any
+	PasswordValue          any
+	SecurityQualifier      any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ValidationOverrides struct {
 	AllowLeadingAndTrailingSpacesAndZeroes any
-	MessageId any
-	TrailingSeparatorPolicy any
-	TrimLeadingAndTrailingSpacesAndZeroes any
-	ValidateCharacterSet any
-	ValidateEditypes any
-	ValidateXsdtypes any
+	MessageId                              any
+	TrailingSeparatorPolicy                any
+	TrimLeadingAndTrailingSpacesAndZeroes  any
+	ValidateCharacterSet                   any
+	ValidateEditypes                       any
+	ValidateXsdtypes                       any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_X12DelimiterOverrides struct {
-	ComponentSeparator any
-	DataElementSeparator any
-	MessageId any
-	ProtocolVersion any
-	ReplaceCharacter any
+	ComponentSeparator         any
+	DataElementSeparator       any
+	MessageId                  any
+	ProtocolVersion            any
+	ReplaceCharacter           any
 	ReplaceSeparatorsInPayload any
-	SegmentTerminator any
-	SegmentTerminatorSuffix any
-	TargetNamespace any
+	SegmentTerminator          any
+	SegmentTerminatorSuffix    any
+	TargetNamespace            any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12_ReceiveAgreement_ProtocolSettings struct {
 	AcknowledgementSettings any
-	EnvelopeOverrides any
-	EnvelopeSettings any
-	FramingSettings any
-	MessageFilter any
-	MessageFilterList any
-	ProcessingSettings any
-	SchemaReferences any
-	SecuritySettings any
-	ValidationOverrides any
-	ValidationSettings any
-	X12DelimiterOverrides any
+	EnvelopeOverrides       any
+	EnvelopeSettings        any
+	FramingSettings         any
+	MessageFilter           any
+	MessageFilterList       any
+	ProcessingSettings      any
+	SchemaReferences        any
+	SecuritySettings        any
+	ValidationOverrides     any
+	ValidationSettings      any
+	X12DelimiterOverrides   any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12_ReceiveAgreement struct {
-	ProtocolSettings any
+	ProtocolSettings         any
 	ReceiverBusinessIdentity any
-	SenderBusinessIdentity any
+	SenderBusinessIdentity   any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content_X12 struct {
 	ReceiveAgreement any
-	SendAgreement any
+	SendAgreement    any
 }
 
 type IntegrationAccountAgreement_Value_Properties_Content struct {
-	AS2 any
+	AS2     any
 	Edifact any
-	X12 any
+	X12     any
 }
 
 type IntegrationAccountAgreement_Value_Properties struct {
 	AgreementType any
-	ChangedTime any
-	Content any
-	CreatedTime any
+	ChangedTime   any
+	Content       any
+	CreatedTime   any
 	GuestIdentity any
-	GuestPartner any
-	HostIdentity any
-	HostPartner any
-	Metadata any
+	GuestPartner  any
+	HostIdentity  any
+	HostPartner   any
+	Metadata      any
 }
 
 type IntegrationAccountAgreement_Value struct {
@@ -428,19 +428,19 @@ type IntegrationAccountAgreement_Value struct {
 }
 
 type IntegrationAccountAgreementConfig struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
-	ResourceGroupName any
-	SubscriptionId any
+	ResourceGroupName      any
+	SubscriptionId         any
 }
 
 type IntegrationAccountAgreementAttrs struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The list of integration account agreements.
 	Value any
 }
@@ -448,9 +448,9 @@ type IntegrationAccountAgreementAttrs struct {
 var IntegrationAccountAgreement = ubx.DataSourceBinding{
 	WireType: "azure_logic_integration_account_agreement",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":             ubx.FieldSpec{WireName: "api_version"},
 		"IntegrationAccountName": ubx.FieldSpec{WireName: "integration_account_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":      ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":         ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

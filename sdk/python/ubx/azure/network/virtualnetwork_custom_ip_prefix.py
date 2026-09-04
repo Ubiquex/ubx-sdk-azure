@@ -91,8 +91,6 @@ _VirtualnetworkCustomIpPrefix_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkCustomIpPrefixConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
     # Custom IP prefix properties.
@@ -114,7 +112,6 @@ class VirtualnetworkCustomIpPrefixAttrs:
 VirtualnetworkCustomIpPrefix = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_custom_ip_prefix",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "extended_location": ubx.FieldSpec(
             wire_name="extended_location",
             kind="object",

@@ -6,7 +6,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type GrafanaIntegrationFabric_Properties struct {
 	// The resource Id of the Azure resource which is used to configure Grafana data source. E.g., an Azure Monitor Workspace, an Azure Data Explorer cluster, etc.
 	DataSourceResourceId any
-	ProvisioningState any
+	ProvisioningState    any
 	// A list of integration scenarios covered by this integration fabric
 	Scenarios any
 	// The resource Id of the Azure resource being integrated with Azure Managed Grafana. E.g., an Azure Kubernetes Service cluster.
@@ -14,11 +14,11 @@ type GrafanaIntegrationFabric_Properties struct {
 }
 
 var GrafanaIntegrationFabric_PropertiesFields = ubx.FieldMap{
-		"DataSourceResourceId": ubx.FieldSpec{WireName: "data_source_resource_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Scenarios": ubx.FieldSpec{WireName: "scenarios"},
-		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
-	}
+	"DataSourceResourceId": ubx.FieldSpec{WireName: "data_source_resource_id"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"Scenarios":            ubx.FieldSpec{WireName: "scenarios"},
+	"TargetResourceId":     ubx.FieldSpec{WireName: "target_resource_id"},
+}
 
 type GrafanaIntegrationFabricConfig struct {
 	Properties any
@@ -33,8 +33,8 @@ var GrafanaIntegrationFabric = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: GrafanaIntegrationFabric_PropertiesFields,
+			Kind:     "object",
+			Fields:   GrafanaIntegrationFabric_PropertiesFields,
 		},
 	},
 }

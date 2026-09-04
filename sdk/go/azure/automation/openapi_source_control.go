@@ -17,39 +17,45 @@ type OpenapiSourceControl_Properties struct {
 	AutoSync any
 	// The repo branch of the source control. Include branch as empty string for VsoTfvc.
 	Branch any
+	// The creation time.
+	CreationTime any
 	// The user description of the source control.
 	Description any
 	// The folder path of the source control. Path must be relative.
 	FolderPath any
+	// The last modified time.
+	LastModifiedTime any
 	// The auto publish of the source control. Default is true.
 	PublishRunbook any
 	// The repo url of the source control.
-	RepoUrl any
+	RepoUrl       any
 	SecurityToken any
 	// The source type. Must be one of VsoGit, VsoTfvc, GitHub.
 	SourceType any
 }
 
 var OpenapiSourceControl_Properties_SecurityTokenFields = ubx.FieldMap{
-		"AccessToken": ubx.FieldSpec{WireName: "access_token"},
-		"RefreshToken": ubx.FieldSpec{WireName: "refresh_token"},
-		"TokenType": ubx.FieldSpec{WireName: "token_type"},
-	}
+	"AccessToken":  ubx.FieldSpec{WireName: "access_token"},
+	"RefreshToken": ubx.FieldSpec{WireName: "refresh_token"},
+	"TokenType":    ubx.FieldSpec{WireName: "token_type"},
+}
 
 var OpenapiSourceControl_PropertiesFields = ubx.FieldMap{
-		"AutoSync": ubx.FieldSpec{WireName: "auto_sync"},
-		"Branch": ubx.FieldSpec{WireName: "branch"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"FolderPath": ubx.FieldSpec{WireName: "folder_path"},
-		"PublishRunbook": ubx.FieldSpec{WireName: "publish_runbook"},
-		"RepoUrl": ubx.FieldSpec{WireName: "repo_url"},
-		"SecurityToken": ubx.FieldSpec{
-			WireName: "security_token",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_SecurityTokenFields,
-		},
-		"SourceType": ubx.FieldSpec{WireName: "source_type"},
-	}
+	"AutoSync":         ubx.FieldSpec{WireName: "auto_sync"},
+	"Branch":           ubx.FieldSpec{WireName: "branch"},
+	"CreationTime":     ubx.FieldSpec{WireName: "creation_time"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"FolderPath":       ubx.FieldSpec{WireName: "folder_path"},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"PublishRunbook":   ubx.FieldSpec{WireName: "publish_runbook"},
+	"RepoUrl":          ubx.FieldSpec{WireName: "repo_url"},
+	"SecurityToken": ubx.FieldSpec{
+		WireName: "security_token",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_SecurityTokenFields,
+	},
+	"SourceType": ubx.FieldSpec{WireName: "source_type"},
+}
 
 type OpenapiSourceControlConfig struct {
 	// The properties of the create source control operation.
@@ -66,8 +72,8 @@ var OpenapiSourceControl = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSourceControl_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSourceControl_PropertiesFields,
 		},
 	},
 }

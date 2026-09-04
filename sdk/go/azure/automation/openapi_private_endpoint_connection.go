@@ -27,28 +27,28 @@ type OpenapiPrivateEndpointConnection_Properties struct {
 }
 
 var OpenapiPrivateEndpointConnection_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiPrivateEndpointConnection_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiPrivateEndpointConnection_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiPrivateEndpointConnection_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+}
 
 type OpenapiPrivateEndpointConnectionConfig struct {
 	// Properties of a private endpoint connection.
@@ -65,8 +65,8 @@ var OpenapiPrivateEndpointConnection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiPrivateEndpointConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiPrivateEndpointConnection_PropertiesFields,
 		},
 	},
 }

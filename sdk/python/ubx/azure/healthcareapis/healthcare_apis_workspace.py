@@ -92,21 +92,10 @@ _HealthcareApisWorkspace_PropertiesFields = {
     "public_network_access": ubx.FieldSpec(wire_name="public_network_access"),
 }
 
-_HealthcareApisWorkspace_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class HealthcareApisWorkspaceConfig:
     # Workspaces resource specific properties.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisWorkspaceAttrs:
@@ -122,11 +111,6 @@ HealthcareApisWorkspace = ubx.ResourceBinding(
             wire_name="properties",
             kind="object",
             fields=_HealthcareApisWorkspace_PropertiesFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_HealthcareApisWorkspace_SystemDataFields,
         ),
     },
 )

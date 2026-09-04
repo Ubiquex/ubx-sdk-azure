@@ -9,8 +9,8 @@ type VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPr
 
 type VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace struct {
@@ -78,92 +78,90 @@ type VirtualnetworkVirtualNetworkPeering_Properties struct {
 }
 
 var VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations_PoolFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocationsFields = ubx.FieldMap{
-		"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
-		"NumberOfIpAddresses": ubx.FieldSpec{WireName: "number_of_ip_addresses"},
-		"Pool": ubx.FieldSpec{
-			WireName: "pool",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations_PoolFields,
-		},
-	}
+	"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
+	"NumberOfIpAddresses":      ubx.FieldSpec{WireName: "number_of_ip_addresses"},
+	"Pool": ubx.FieldSpec{
+		WireName: "pool",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations_PoolFields,
+	},
+}
 
 var VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpaceFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocationsFields,
-		},
-	}
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocationsFields,
+	},
+}
 
 var VirtualnetworkVirtualNetworkPeering_Properties_RemoteBgpCommunitiesFields = ubx.FieldMap{
-		"RegionalCommunity": ubx.FieldSpec{WireName: "regional_community"},
-		"VirtualNetworkCommunity": ubx.FieldSpec{WireName: "virtual_network_community"},
-	}
+	"RegionalCommunity":       ubx.FieldSpec{WireName: "regional_community"},
+	"VirtualNetworkCommunity": ubx.FieldSpec{WireName: "virtual_network_community"},
+}
 
 var VirtualnetworkVirtualNetworkPeering_Properties_RemoteVirtualNetworkEncryptionFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Enforcement": ubx.FieldSpec{WireName: "enforcement"},
-	}
+	"Enabled":     ubx.FieldSpec{WireName: "enabled"},
+	"Enforcement": ubx.FieldSpec{WireName: "enforcement"},
+}
 
 var VirtualnetworkVirtualNetworkPeering_PropertiesFields = ubx.FieldMap{
-		"AllowForwardedTraffic": ubx.FieldSpec{WireName: "allow_forwarded_traffic"},
-		"AllowGatewayTransit": ubx.FieldSpec{WireName: "allow_gateway_transit"},
-		"AllowVirtualNetworkAccess": ubx.FieldSpec{WireName: "allow_virtual_network_access"},
-		"DoNotVerifyRemoteGateways": ubx.FieldSpec{WireName: "do_not_verify_remote_gateways"},
-		"EnableOnlyIpv6Peering": ubx.FieldSpec{WireName: "enable_only_ipv6_peering"},
-		"LocalAddressSpace": ubx.FieldSpec{
-			WireName: "local_address_space",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpaceFields,
-		},
-		"LocalSubnetNames": ubx.FieldSpec{WireName: "local_subnet_names"},
-		"LocalVirtualNetworkAddressSpace": ubx.FieldSpec{
-			WireName: "local_virtual_network_address_space",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpaceFields,
-		},
-		"PeerCompleteVnets": ubx.FieldSpec{WireName: "peer_complete_vnets"},
-		"PeeringState": ubx.FieldSpec{WireName: "peering_state"},
-		"PeeringSyncLevel": ubx.FieldSpec{WireName: "peering_sync_level"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RemoteAddressSpace": ubx.FieldSpec{
-			WireName: "remote_address_space",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpaceFields,
-		},
-		"RemoteBgpCommunities": ubx.FieldSpec{
-			WireName: "remote_bgp_communities",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualNetworkPeering_Properties_RemoteBgpCommunitiesFields,
-		},
-		"RemoteSubnetNames": ubx.FieldSpec{WireName: "remote_subnet_names"},
-		"RemoteVirtualNetwork": ubx.FieldSpec{
-			WireName: "remote_virtual_network",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations_PoolFields,
-		},
-		"RemoteVirtualNetworkAddressSpace": ubx.FieldSpec{
-			WireName: "remote_virtual_network_address_space",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpaceFields,
-		},
-		"RemoteVirtualNetworkEncryption": ubx.FieldSpec{
-			WireName: "remote_virtual_network_encryption",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualNetworkPeering_Properties_RemoteVirtualNetworkEncryptionFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"UseRemoteGateways": ubx.FieldSpec{WireName: "use_remote_gateways"},
-	}
+	"AllowForwardedTraffic":     ubx.FieldSpec{WireName: "allow_forwarded_traffic"},
+	"AllowGatewayTransit":       ubx.FieldSpec{WireName: "allow_gateway_transit"},
+	"AllowVirtualNetworkAccess": ubx.FieldSpec{WireName: "allow_virtual_network_access"},
+	"DoNotVerifyRemoteGateways": ubx.FieldSpec{WireName: "do_not_verify_remote_gateways"},
+	"EnableOnlyIpv6Peering":     ubx.FieldSpec{WireName: "enable_only_ipv6_peering"},
+	"LocalAddressSpace": ubx.FieldSpec{
+		WireName: "local_address_space",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpaceFields,
+	},
+	"LocalSubnetNames": ubx.FieldSpec{WireName: "local_subnet_names"},
+	"LocalVirtualNetworkAddressSpace": ubx.FieldSpec{
+		WireName: "local_virtual_network_address_space",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpaceFields,
+	},
+	"PeerCompleteVnets": ubx.FieldSpec{WireName: "peer_complete_vnets"},
+	"PeeringState":      ubx.FieldSpec{WireName: "peering_state"},
+	"PeeringSyncLevel":  ubx.FieldSpec{WireName: "peering_sync_level"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RemoteAddressSpace": ubx.FieldSpec{
+		WireName: "remote_address_space",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpaceFields,
+	},
+	"RemoteBgpCommunities": ubx.FieldSpec{
+		WireName: "remote_bgp_communities",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualNetworkPeering_Properties_RemoteBgpCommunitiesFields,
+	},
+	"RemoteSubnetNames": ubx.FieldSpec{WireName: "remote_subnet_names"},
+	"RemoteVirtualNetwork": ubx.FieldSpec{
+		WireName: "remote_virtual_network",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpace_IpamPoolPrefixAllocations_PoolFields,
+	},
+	"RemoteVirtualNetworkAddressSpace": ubx.FieldSpec{
+		WireName: "remote_virtual_network_address_space",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualNetworkPeering_Properties_LocalAddressSpaceFields,
+	},
+	"RemoteVirtualNetworkEncryption": ubx.FieldSpec{
+		WireName: "remote_virtual_network_encryption",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualNetworkPeering_Properties_RemoteVirtualNetworkEncryptionFields,
+	},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"UseRemoteGateways": ubx.FieldSpec{WireName: "use_remote_gateways"},
+}
 
 type VirtualnetworkVirtualNetworkPeeringConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of the virtual network peering.
 	Properties any
 }
@@ -178,11 +176,10 @@ type VirtualnetworkVirtualNetworkPeeringAttrs struct {
 var VirtualnetworkVirtualNetworkPeering = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_virtual_network_peering",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualNetworkPeering_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkVirtualNetworkPeering_PropertiesFields,
 		},
 	},
 }

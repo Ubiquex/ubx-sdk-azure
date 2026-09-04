@@ -4,7 +4,7 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteLag_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -21,44 +21,44 @@ type ExpressrouteExpressRouteLag_Identity struct {
 
 type ExpressrouteExpressRouteLag_Properties_Links_Properties_MacSecConfig struct {
 	CakSecretIdentifier any
-	Cipher any
+	Cipher              any
 	CknSecretIdentifier any
-	SciState any
+	SciState            any
 }
 
 type ExpressrouteExpressRouteLag_Properties_Links_Properties_Members_Properties struct {
-	AdminState any
-	ColoLocation any
-	ConnectorType any
-	InterfaceName any
-	PatchPanelId any
+	AdminState        any
+	ColoLocation      any
+	ConnectorType     any
+	InterfaceName     any
+	PatchPanelId      any
 	ProvisioningState any
-	RackId any
+	RackId            any
 }
 
 type ExpressrouteExpressRouteLag_Properties_Links_Properties_Members struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ExpressrouteExpressRouteLag_Properties_Links_Properties struct {
-	AdminState any
-	InterfaceName any
-	MacSecConfig any
-	Members any
+	AdminState        any
+	InterfaceName     any
+	MacSecConfig      any
+	Members           any
 	ProvisioningState any
-	RouterName any
+	RouterName        any
 }
 
 type ExpressrouteExpressRouteLag_Properties_Links struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ExpressrouteExpressRouteLag_Properties struct {
@@ -93,111 +93,105 @@ type ExpressrouteExpressRouteLag_Properties struct {
 }
 
 var ExpressrouteExpressRouteLag_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var ExpressrouteExpressRouteLag_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: ExpressrouteExpressRouteLag_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   ExpressrouteExpressRouteLag_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var ExpressrouteExpressRouteLag_Properties_Links_Properties_MacSecConfigFields = ubx.FieldMap{
-		"CakSecretIdentifier": ubx.FieldSpec{WireName: "cak_secret_identifier"},
-		"Cipher": ubx.FieldSpec{WireName: "cipher"},
-		"CknSecretIdentifier": ubx.FieldSpec{WireName: "ckn_secret_identifier"},
-		"SciState": ubx.FieldSpec{WireName: "sci_state"},
-	}
+	"CakSecretIdentifier": ubx.FieldSpec{WireName: "cak_secret_identifier"},
+	"Cipher":              ubx.FieldSpec{WireName: "cipher"},
+	"CknSecretIdentifier": ubx.FieldSpec{WireName: "ckn_secret_identifier"},
+	"SciState":            ubx.FieldSpec{WireName: "sci_state"},
+}
 
 var ExpressrouteExpressRouteLag_Properties_Links_Properties_Members_PropertiesFields = ubx.FieldMap{
-		"AdminState": ubx.FieldSpec{WireName: "admin_state"},
-		"ColoLocation": ubx.FieldSpec{WireName: "colo_location"},
-		"ConnectorType": ubx.FieldSpec{WireName: "connector_type"},
-		"InterfaceName": ubx.FieldSpec{WireName: "interface_name"},
-		"PatchPanelId": ubx.FieldSpec{WireName: "patch_panel_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RackId": ubx.FieldSpec{WireName: "rack_id"},
-	}
+	"AdminState":        ubx.FieldSpec{WireName: "admin_state"},
+	"ColoLocation":      ubx.FieldSpec{WireName: "colo_location"},
+	"ConnectorType":     ubx.FieldSpec{WireName: "connector_type"},
+	"InterfaceName":     ubx.FieldSpec{WireName: "interface_name"},
+	"PatchPanelId":      ubx.FieldSpec{WireName: "patch_panel_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RackId":            ubx.FieldSpec{WireName: "rack_id"},
+}
 
 var ExpressrouteExpressRouteLag_Properties_Links_Properties_MembersFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteLag_Properties_Links_Properties_Members_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteLag_Properties_Links_Properties_Members_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ExpressrouteExpressRouteLag_Properties_Links_PropertiesFields = ubx.FieldMap{
-		"AdminState": ubx.FieldSpec{WireName: "admin_state"},
-		"InterfaceName": ubx.FieldSpec{WireName: "interface_name"},
-		"MacSecConfig": ubx.FieldSpec{
-			WireName: "mac_sec_config",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteLag_Properties_Links_Properties_MacSecConfigFields,
-		},
-		"Members": ubx.FieldSpec{
-			WireName: "members",
-			Kind: "list",
-			Fields: ExpressrouteExpressRouteLag_Properties_Links_Properties_MembersFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RouterName": ubx.FieldSpec{WireName: "router_name"},
-	}
+	"AdminState":    ubx.FieldSpec{WireName: "admin_state"},
+	"InterfaceName": ubx.FieldSpec{WireName: "interface_name"},
+	"MacSecConfig": ubx.FieldSpec{
+		WireName: "mac_sec_config",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteLag_Properties_Links_Properties_MacSecConfigFields,
+	},
+	"Members": ubx.FieldSpec{
+		WireName: "members",
+		Kind:     "list",
+		Fields:   ExpressrouteExpressRouteLag_Properties_Links_Properties_MembersFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RouterName":        ubx.FieldSpec{WireName: "router_name"},
+}
 
 var ExpressrouteExpressRouteLag_Properties_LinksFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteLag_Properties_Links_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteLag_Properties_Links_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ExpressrouteExpressRouteLag_PropertiesFields = ubx.FieldMap{
-		"AllocationDate": ubx.FieldSpec{WireName: "allocation_date"},
-		"BandwidthInGbps": ubx.FieldSpec{WireName: "bandwidth_in_gbps"},
-		"BillingType": ubx.FieldSpec{WireName: "billing_type"},
-		"Encapsulation": ubx.FieldSpec{WireName: "encapsulation"},
-		"EtherType": ubx.FieldSpec{WireName: "ether_type"},
-		"LacpTimer": ubx.FieldSpec{WireName: "lacp_timer"},
-		"Links": ubx.FieldSpec{
-			WireName: "links",
-			Kind: "list",
-			Fields: ExpressrouteExpressRouteLag_Properties_LinksFields,
-		},
-		"MinimumActivePortsRequired": ubx.FieldSpec{WireName: "minimum_active_ports_required"},
-		"Mtu": ubx.FieldSpec{WireName: "mtu"},
-		"NumberOfPorts": ubx.FieldSpec{WireName: "number_of_ports"},
-		"PeeringLocation": ubx.FieldSpec{WireName: "peering_location"},
-		"ProvisionedBandwidthInGbps": ubx.FieldSpec{WireName: "provisioned_bandwidth_in_gbps"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"AllocationDate":  ubx.FieldSpec{WireName: "allocation_date"},
+	"BandwidthInGbps": ubx.FieldSpec{WireName: "bandwidth_in_gbps"},
+	"BillingType":     ubx.FieldSpec{WireName: "billing_type"},
+	"Encapsulation":   ubx.FieldSpec{WireName: "encapsulation"},
+	"EtherType":       ubx.FieldSpec{WireName: "ether_type"},
+	"LacpTimer":       ubx.FieldSpec{WireName: "lacp_timer"},
+	"Links": ubx.FieldSpec{
+		WireName: "links",
+		Kind:     "list",
+		Fields:   ExpressrouteExpressRouteLag_Properties_LinksFields,
+	},
+	"MinimumActivePortsRequired": ubx.FieldSpec{WireName: "minimum_active_ports_required"},
+	"Mtu":                        ubx.FieldSpec{WireName: "mtu"},
+	"NumberOfPorts":              ubx.FieldSpec{WireName: "number_of_ports"},
+	"PeeringLocation":            ubx.FieldSpec{WireName: "peering_location"},
+	"ProvisionedBandwidthInGbps": ubx.FieldSpec{WireName: "provisioned_bandwidth_in_gbps"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":               ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type ExpressrouteExpressRouteLagConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
-	// The unique identifier of the resource.
-	Id any
 	// Identity for the resource.
 	Identity any
 	// Properties specific to ExpressRouteLag resources.
 	Properties any
-	// The type of the resource.
-	Type any
 }
 
 type ExpressrouteExpressRouteLagAttrs struct {
@@ -216,18 +210,15 @@ type ExpressrouteExpressRouteLagAttrs struct {
 var ExpressrouteExpressRouteLag = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_express_route_lag",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Id": ubx.FieldSpec{WireName: "id"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteLag_IdentityFields,
+			Kind:     "object",
+			Fields:   ExpressrouteExpressRouteLag_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteLag_PropertiesFields,
+			Kind:     "object",
+			Fields:   ExpressrouteExpressRouteLag_PropertiesFields,
 		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

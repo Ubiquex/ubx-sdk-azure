@@ -4,10 +4,10 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersIdentityBinding_Value_Properties_ManagedIdentity struct {
-	ClientId any
-	ObjectId any
+	ClientId   any
+	ObjectId   any
 	ResourceId any
-	TenantId any
+	TenantId   any
 }
 
 type ManagedclustersIdentityBinding_Value_Properties_OidcIssuer struct {
@@ -15,13 +15,13 @@ type ManagedclustersIdentityBinding_Value_Properties_OidcIssuer struct {
 }
 
 type ManagedclustersIdentityBinding_Value_Properties struct {
-	ManagedIdentity any
-	OidcIssuer any
+	ManagedIdentity   any
+	OidcIssuer        any
 	ProvisioningState any
 }
 
 type ManagedclustersIdentityBinding_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 
@@ -31,7 +31,7 @@ type ManagedclustersIdentityBindingConfig struct {
 
 type ManagedclustersIdentityBindingAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The IdentityBinding items on this page
 	Value any

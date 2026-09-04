@@ -37,20 +37,9 @@ const PermissionBinding_PropertiesFields: FieldMap = {
   topicSpaceName: "topic_space_name",
 };
 
-const PermissionBinding_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface PermissionBindingConfig {
   /** The properties of permission binding. */
   properties?: PermissionBinding_Properties | Computed<PermissionBinding_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: PermissionBinding_SystemData | Computed<PermissionBinding_SystemData>;
 }
 
 export interface PermissionBindingAttrs {
@@ -67,11 +56,6 @@ export const PermissionBinding: ResourceBinding<PermissionBindingConfig, Permiss
       wireName: "properties",
       kind: "object",
       fields: PermissionBinding_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: PermissionBinding_SystemDataFields,
     },
   },
 };

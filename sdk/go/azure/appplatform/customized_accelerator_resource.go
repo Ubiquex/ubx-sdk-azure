@@ -29,10 +29,10 @@ type CustomizedAcceleratorResource_Properties struct {
 	AcceleratorTags any
 	// Type of the customized accelerator.
 	AcceleratorType any
-	Description any
-	DisplayName any
-	GitRepository any
-	IconUrl any
+	Description     any
+	DisplayName     any
+	GitRepository   any
+	IconUrl         any
 	// Imports references all imports that this accelerator/fragment depends upon.
 	Imports any
 	// State of the customized accelerator.
@@ -49,43 +49,43 @@ type CustomizedAcceleratorResource_Sku struct {
 }
 
 var CustomizedAcceleratorResource_Properties_GitRepository_AuthSettingFields = ubx.FieldMap{
-		"AuthType": ubx.FieldSpec{WireName: "auth_type"},
-	}
+	"AuthType": ubx.FieldSpec{WireName: "auth_type"},
+}
 
 var CustomizedAcceleratorResource_Properties_GitRepositoryFields = ubx.FieldMap{
-		"AuthSetting": ubx.FieldSpec{
-			WireName: "auth_setting",
-			Kind: "object",
-			Fields: CustomizedAcceleratorResource_Properties_GitRepository_AuthSettingFields,
-		},
-		"Branch": ubx.FieldSpec{WireName: "branch"},
-		"Commit": ubx.FieldSpec{WireName: "commit"},
-		"GitTag": ubx.FieldSpec{WireName: "git_tag"},
-		"IntervalInSeconds": ubx.FieldSpec{WireName: "interval_in_seconds"},
-		"SubPath": ubx.FieldSpec{WireName: "sub_path"},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"AuthSetting": ubx.FieldSpec{
+		WireName: "auth_setting",
+		Kind:     "object",
+		Fields:   CustomizedAcceleratorResource_Properties_GitRepository_AuthSettingFields,
+	},
+	"Branch":            ubx.FieldSpec{WireName: "branch"},
+	"Commit":            ubx.FieldSpec{WireName: "commit"},
+	"GitTag":            ubx.FieldSpec{WireName: "git_tag"},
+	"IntervalInSeconds": ubx.FieldSpec{WireName: "interval_in_seconds"},
+	"SubPath":           ubx.FieldSpec{WireName: "sub_path"},
+	"Url":               ubx.FieldSpec{WireName: "url"},
+}
 
 var CustomizedAcceleratorResource_PropertiesFields = ubx.FieldMap{
-		"AcceleratorTags": ubx.FieldSpec{WireName: "accelerator_tags"},
-		"AcceleratorType": ubx.FieldSpec{WireName: "accelerator_type"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"GitRepository": ubx.FieldSpec{
-			WireName: "git_repository",
-			Kind: "object",
-			Fields: CustomizedAcceleratorResource_Properties_GitRepositoryFields,
-		},
-		"IconUrl": ubx.FieldSpec{WireName: "icon_url"},
-		"Imports": ubx.FieldSpec{WireName: "imports"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AcceleratorTags": ubx.FieldSpec{WireName: "accelerator_tags"},
+	"AcceleratorType": ubx.FieldSpec{WireName: "accelerator_type"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"DisplayName":     ubx.FieldSpec{WireName: "display_name"},
+	"GitRepository": ubx.FieldSpec{
+		WireName: "git_repository",
+		Kind:     "object",
+		Fields:   CustomizedAcceleratorResource_Properties_GitRepositoryFields,
+	},
+	"IconUrl":           ubx.FieldSpec{WireName: "icon_url"},
+	"Imports":           ubx.FieldSpec{WireName: "imports"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var CustomizedAcceleratorResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type CustomizedAcceleratorResourceConfig struct {
 	// Customized accelerator properties payload
@@ -106,13 +106,13 @@ var CustomizedAcceleratorResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CustomizedAcceleratorResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   CustomizedAcceleratorResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: CustomizedAcceleratorResource_SkuFields,
+			Kind:     "object",
+			Fields:   CustomizedAcceleratorResource_SkuFields,
 		},
 	},
 }

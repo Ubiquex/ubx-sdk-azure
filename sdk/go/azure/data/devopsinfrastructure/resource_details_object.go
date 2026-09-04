@@ -4,9 +4,9 @@ package devopsinfrastructure
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ResourceDetailsObject_Value_Properties struct {
-	Image any
+	Image        any
 	ImageVersion any
-	Status any
+	Status       any
 }
 
 type ResourceDetailsObject_Value struct {

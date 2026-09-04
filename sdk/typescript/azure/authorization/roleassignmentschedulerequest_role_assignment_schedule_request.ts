@@ -176,14 +176,8 @@ const RoleassignmentschedulerequestRoleAssignmentScheduleRequest_PropertiesField
 };
 
 export interface RoleassignmentschedulerequestRoleAssignmentScheduleRequestConfig {
-  /** The role assignment schedule request ID. */
-  id?: string | Computed<string>;
-  /** The role assignment schedule request name. */
-  name?: string | Computed<string>;
   /** Role assignment schedule request properties with scope. */
   properties?: RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties | Computed<RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties>;
-  /** The role assignment schedule request type. */
-  type?: string | Computed<string>;
   /** path parameter, not part of the API's own resource representation */
   scope: string | Computed<string>;
 }
@@ -204,14 +198,11 @@ export interface RoleassignmentschedulerequestRoleAssignmentScheduleRequestAttrs
 export const RoleassignmentschedulerequestRoleAssignmentScheduleRequest: ResourceBinding<RoleassignmentschedulerequestRoleAssignmentScheduleRequestConfig, RoleassignmentschedulerequestRoleAssignmentScheduleRequestAttrs> = {
   wireType: "azure_authorization_roleassignmentschedulerequest_role_assignment_schedule_request",
   fields: {
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: RoleassignmentschedulerequestRoleAssignmentScheduleRequest_PropertiesFields,
     },
-    type: "type",
     scope: "scope",
   },
 };

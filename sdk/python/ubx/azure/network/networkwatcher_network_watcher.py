@@ -17,8 +17,6 @@ _NetworkwatcherNetworkWatcher_PropertiesFields = {
 
 @dataclasses.dataclass
 class NetworkwatcherNetworkWatcherConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # The network watcher properties.
     properties: Any = None
 
@@ -32,7 +30,6 @@ class NetworkwatcherNetworkWatcherAttrs:
 NetworkwatcherNetworkWatcher = ubx.ResourceBinding(
     wire_type="azure_network_networkwatcher_network_watcher",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

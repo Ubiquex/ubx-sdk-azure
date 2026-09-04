@@ -6,16 +6,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type IntegrationAccountSession_Properties struct {
 	// The changed time.
 	ChangedTime any
-	Content any
+	Content     any
 	// The created time.
 	CreatedTime any
 }
 
 var IntegrationAccountSession_PropertiesFields = ubx.FieldMap{
-		"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
-		"Content": ubx.FieldSpec{WireName: "content"},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-	}
+	"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
+	"Content":     ubx.FieldSpec{WireName: "content"},
+	"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
+}
 
 type IntegrationAccountSessionConfig struct {
 	// The integration account session properties.
@@ -32,8 +32,8 @@ var IntegrationAccountSession = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: IntegrationAccountSession_PropertiesFields,
+			Kind:     "object",
+			Fields:   IntegrationAccountSession_PropertiesFields,
 		},
 	},
 }

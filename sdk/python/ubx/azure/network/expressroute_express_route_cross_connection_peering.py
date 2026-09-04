@@ -150,8 +150,6 @@ _ExpressrouteExpressRouteCrossConnectionPeering_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCrossConnectionPeeringConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # The name of the resource that is unique within a resource group. This name can be used to access the resource.
     name: Any = None
     # Properties of express route cross connection peering.
@@ -169,7 +167,6 @@ class ExpressrouteExpressRouteCrossConnectionPeeringAttrs:
 ExpressrouteExpressRouteCrossConnectionPeering = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_express_route_cross_connection_peering",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",

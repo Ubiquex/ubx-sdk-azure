@@ -449,22 +449,11 @@ const ApplicationsApplication_PropertiesFields: FieldMap = {
   },
 };
 
-const ApplicationsApplication_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ApplicationsApplicationConfig {
   /** The ETag for the application */
   etag?: string | Computed<string>;
   /** The HDInsight cluster application GET response. */
   properties?: ApplicationsApplication_Properties | Computed<ApplicationsApplication_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ApplicationsApplication_SystemData | Computed<ApplicationsApplication_SystemData>;
   /** The tags for the application. */
   tags?: Record<string, string> | Computed<Record<string, string>>;
 }
@@ -488,11 +477,6 @@ export const ApplicationsApplication: ResourceBinding<ApplicationsApplicationCon
       wireName: "properties",
       kind: "object",
       fields: ApplicationsApplication_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ApplicationsApplication_SystemDataFields,
     },
     tags: "tags",
   },

@@ -86,93 +86,93 @@ type GalleryimagesGalleryImages_Properties struct {
 }
 
 var GalleryimagesGalleryImages_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var GalleryimagesGalleryImages_Properties_IdentifierFields = ubx.FieldMap{
-		"Offer": ubx.FieldSpec{WireName: "offer"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Sku": ubx.FieldSpec{WireName: "sku"},
-	}
+	"Offer":     ubx.FieldSpec{WireName: "offer"},
+	"Publisher": ubx.FieldSpec{WireName: "publisher"},
+	"Sku":       ubx.FieldSpec{WireName: "sku"},
+}
 
 var GalleryimagesGalleryImages_Properties_Status_DownloadStatusFields = ubx.FieldMap{
-		"DownloadSizeInMb": ubx.FieldSpec{WireName: "download_size_in_mb"},
-	}
+	"DownloadSizeInMb": ubx.FieldSpec{WireName: "download_size_in_mb"},
+}
 
 var GalleryimagesGalleryImages_Properties_Status_ProvisioningStatusFields = ubx.FieldMap{
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"OperationId": ubx.FieldSpec{WireName: "operation_id"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 var GalleryimagesGalleryImages_Properties_StatusFields = ubx.FieldMap{
-		"DownloadStatus": ubx.FieldSpec{
-			WireName: "download_status",
-			Kind: "object",
-			Fields: GalleryimagesGalleryImages_Properties_Status_DownloadStatusFields,
-		},
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"ProgressPercentage": ubx.FieldSpec{WireName: "progress_percentage"},
-		"ProvisioningStatus": ubx.FieldSpec{
-			WireName: "provisioning_status",
-			Kind: "object",
-			Fields: GalleryimagesGalleryImages_Properties_Status_ProvisioningStatusFields,
-		},
-	}
+	"DownloadStatus": ubx.FieldSpec{
+		WireName: "download_status",
+		Kind:     "object",
+		Fields:   GalleryimagesGalleryImages_Properties_Status_DownloadStatusFields,
+	},
+	"ErrorCode":          ubx.FieldSpec{WireName: "error_code"},
+	"ErrorMessage":       ubx.FieldSpec{WireName: "error_message"},
+	"ProgressPercentage": ubx.FieldSpec{WireName: "progress_percentage"},
+	"ProvisioningStatus": ubx.FieldSpec{
+		WireName: "provisioning_status",
+		Kind:     "object",
+		Fields:   GalleryimagesGalleryImages_Properties_Status_ProvisioningStatusFields,
+	},
+}
 
 var GalleryimagesGalleryImages_Properties_Version_Properties_StorageProfile_OsDiskImageFields = ubx.FieldMap{
-		"SizeInMb": ubx.FieldSpec{WireName: "size_in_mb"},
-	}
+	"SizeInMb": ubx.FieldSpec{WireName: "size_in_mb"},
+}
 
 var GalleryimagesGalleryImages_Properties_Version_Properties_StorageProfileFields = ubx.FieldMap{
-		"OsDiskImage": ubx.FieldSpec{
-			WireName: "os_disk_image",
-			Kind: "object",
-			Fields: GalleryimagesGalleryImages_Properties_Version_Properties_StorageProfile_OsDiskImageFields,
-		},
-	}
+	"OsDiskImage": ubx.FieldSpec{
+		WireName: "os_disk_image",
+		Kind:     "object",
+		Fields:   GalleryimagesGalleryImages_Properties_Version_Properties_StorageProfile_OsDiskImageFields,
+	},
+}
 
 var GalleryimagesGalleryImages_Properties_Version_PropertiesFields = ubx.FieldMap{
-		"StorageProfile": ubx.FieldSpec{
-			WireName: "storage_profile",
-			Kind: "object",
-			Fields: GalleryimagesGalleryImages_Properties_Version_Properties_StorageProfileFields,
-		},
-	}
+	"StorageProfile": ubx.FieldSpec{
+		WireName: "storage_profile",
+		Kind:     "object",
+		Fields:   GalleryimagesGalleryImages_Properties_Version_Properties_StorageProfileFields,
+	},
+}
 
 var GalleryimagesGalleryImages_Properties_VersionFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: GalleryimagesGalleryImages_Properties_Version_PropertiesFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   GalleryimagesGalleryImages_Properties_Version_PropertiesFields,
+	},
+}
 
 var GalleryimagesGalleryImages_PropertiesFields = ubx.FieldMap{
-		"CloudInitDataSource": ubx.FieldSpec{WireName: "cloud_init_data_source"},
-		"ContainerId": ubx.FieldSpec{WireName: "container_id"},
-		"HyperVgeneration": ubx.FieldSpec{WireName: "hyper_vgeneration"},
-		"Identifier": ubx.FieldSpec{
-			WireName: "identifier",
-			Kind: "object",
-			Fields: GalleryimagesGalleryImages_Properties_IdentifierFields,
-		},
-		"ImagePath": ubx.FieldSpec{WireName: "image_path"},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: GalleryimagesGalleryImages_Properties_StatusFields,
-		},
-		"Version": ubx.FieldSpec{
-			WireName: "version",
-			Kind: "object",
-			Fields: GalleryimagesGalleryImages_Properties_VersionFields,
-		},
-	}
+	"CloudInitDataSource": ubx.FieldSpec{WireName: "cloud_init_data_source"},
+	"ContainerId":         ubx.FieldSpec{WireName: "container_id"},
+	"HyperVgeneration":    ubx.FieldSpec{WireName: "hyper_vgeneration"},
+	"Identifier": ubx.FieldSpec{
+		WireName: "identifier",
+		Kind:     "object",
+		Fields:   GalleryimagesGalleryImages_Properties_IdentifierFields,
+	},
+	"ImagePath":         ubx.FieldSpec{WireName: "image_path"},
+	"OsType":            ubx.FieldSpec{WireName: "os_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   GalleryimagesGalleryImages_Properties_StatusFields,
+	},
+	"Version": ubx.FieldSpec{
+		WireName: "version",
+		Kind:     "object",
+		Fields:   GalleryimagesGalleryImages_Properties_VersionFields,
+	},
+}
 
 type GalleryimagesGalleryImagesConfig struct {
 	// The complex type of the extended location.
@@ -193,13 +193,13 @@ var GalleryimagesGalleryImages = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: GalleryimagesGalleryImages_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   GalleryimagesGalleryImages_ExtendedLocationFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: GalleryimagesGalleryImages_PropertiesFields,
+			Kind:     "object",
+			Fields:   GalleryimagesGalleryImages_PropertiesFields,
 		},
 	},
 }

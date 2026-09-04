@@ -4,28 +4,28 @@ package virtual
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MachineScaleSetVm_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type MachineScaleSetVm_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type MachineScaleSetVm_Value_Plan struct {
-	Name any
-	Product any
+	Name          any
+	Product       any
 	PromotionCode any
-	Publisher any
+	Publisher     any
 }
 
 type MachineScaleSetVm_Value_Properties_AdditionalCapabilities struct {
 	EnableFips1403Encryption any
-	HibernationEnabled any
-	UltraSsdenabled any
+	HibernationEnabled       any
+	UltraSsdenabled          any
 }
 
 type MachineScaleSetVm_Value_Properties_AvailabilitySet struct {
@@ -33,12 +33,12 @@ type MachineScaleSetVm_Value_Properties_AvailabilitySet struct {
 }
 
 type MachineScaleSetVm_Value_Properties_CapacityReservation struct {
-	CapacityReservationGroup any
+	CapacityReservationGroup             any
 	DisableCapacityReservationAssignment any
 }
 
 type MachineScaleSetVm_Value_Properties_DiagnosticsProfile_BootDiagnostics struct {
-	Enabled any
+	Enabled    any
 	StorageUri any
 }
 
@@ -48,57 +48,57 @@ type MachineScaleSetVm_Value_Properties_DiagnosticsProfile struct {
 
 type MachineScaleSetVm_Value_Properties_HardwareProfile_VmSizeProperties struct {
 	VCpusAvailable any
-	VCpusPerCore any
+	VCpusPerCore   any
 }
 
 type MachineScaleSetVm_Value_Properties_HardwareProfile struct {
-	ProcessorMode any
-	VmSize any
+	ProcessorMode    any
+	VmSize           any
 	VmSizeProperties any
 }
 
 type MachineScaleSetVm_Value_Properties_InstanceView_BootDiagnostics_Status struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type MachineScaleSetVm_Value_Properties_InstanceView_BootDiagnostics struct {
 	ConsoleScreenshotBlobUri any
-	SerialConsoleLogBlobUri any
-	Status any
+	SerialConsoleLogBlobUri  any
+	Status                   any
 }
 
 type MachineScaleSetVm_Value_Properties_InstanceView_Disks_EncryptionSettings_DiskEncryptionKey struct {
-	SecretUrl any
+	SecretUrl   any
 	SourceVault any
 }
 
 type MachineScaleSetVm_Value_Properties_InstanceView_Disks_EncryptionSettings_KeyEncryptionKey struct {
-	KeyUrl any
+	KeyUrl      any
 	SourceVault any
 }
 
 type MachineScaleSetVm_Value_Properties_InstanceView_Disks_EncryptionSettings struct {
 	DiskEncryptionKey any
-	Enabled any
-	KeyEncryptionKey any
+	Enabled           any
+	KeyEncryptionKey  any
 }
 
 type MachineScaleSetVm_Value_Properties_InstanceView_Disks struct {
-	EncryptionSettings any
-	Name any
-	Statuses any
+	EncryptionSettings     any
+	Name                   any
+	Statuses               any
 	StorageAlignmentStatus any
 }
 
 type MachineScaleSetVm_Value_Properties_InstanceView_Extensions struct {
-	Name any
-	Statuses any
-	Substatuses any
-	Type any
+	Name               any
+	Statuses           any
+	Substatuses        any
+	Type               any
 	TypeHandlerVersion any
 }
 
@@ -108,24 +108,24 @@ type MachineScaleSetVm_Value_Properties_InstanceView_InterconnectInstanceView st
 
 type MachineScaleSetVm_Value_Properties_InstanceView_MaintenanceRedeployStatus struct {
 	IsCustomerInitiatedMaintenanceAllowed any
-	LastOperationMessage any
-	LastOperationResultCode any
-	MaintenanceWindowEndTime any
-	MaintenanceWindowStartTime any
-	PreMaintenanceWindowEndTime any
-	PreMaintenanceWindowStartTime any
+	LastOperationMessage                  any
+	LastOperationResultCode               any
+	MaintenanceWindowEndTime              any
+	MaintenanceWindowStartTime            any
+	PreMaintenanceWindowEndTime           any
+	PreMaintenanceWindowStartTime         any
 }
 
 type MachineScaleSetVm_Value_Properties_InstanceView_VmAgent_ExtensionHandlers struct {
-	Status any
-	Type any
+	Status             any
+	Type               any
 	TypeHandlerVersion any
 }
 
 type MachineScaleSetVm_Value_Properties_InstanceView_VmAgent struct {
 	ExtensionHandlers any
-	Statuses any
-	VmAgentVersion any
+	Statuses          any
+	VmAgentVersion    any
 }
 
 type MachineScaleSetVm_Value_Properties_InstanceView_VmHealth struct {
@@ -133,24 +133,24 @@ type MachineScaleSetVm_Value_Properties_InstanceView_VmHealth struct {
 }
 
 type MachineScaleSetVm_Value_Properties_InstanceView struct {
-	AssignedHost any
-	BootDiagnostics any
-	CapacityReservationType any
-	ComputerName any
-	Disks any
-	Extensions any
-	HyperVgeneration any
-	InterconnectInstanceView any
+	AssignedHost              any
+	BootDiagnostics           any
+	CapacityReservationType   any
+	ComputerName              any
+	Disks                     any
+	Extensions                any
+	HyperVgeneration          any
+	InterconnectInstanceView  any
 	MaintenanceRedeployStatus any
-	OsName any
-	OsVersion any
-	PlacementGroupId any
-	PlatformFaultDomain any
-	PlatformUpdateDomain any
-	RdpThumbPrint any
-	Statuses any
-	VmAgent any
-	VmHealth any
+	OsName                    any
+	OsVersion                 any
+	PlacementGroupId          any
+	PlatformFaultDomain       any
+	PlatformUpdateDomain      any
+	RdpThumbPrint             any
+	Statuses                  any
+	VmAgent                   any
+	VmHealth                  any
 }
 
 type MachineScaleSetVm_Value_Properties_InterconnectBlockProfile struct {
@@ -159,7 +159,7 @@ type MachineScaleSetVm_Value_Properties_InterconnectBlockProfile struct {
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_InterconnectGroupProfile struct {
 	InterconnectGroup any
-	Subgroups any
+	Subgroups         any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_DnsSettings struct {
@@ -167,24 +167,24 @@ type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigura
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_DnsSettings struct {
-	DomainNameLabel any
+	DomainNameLabel      any
 	DomainNameLabelScope any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_IpTags struct {
 	FirstPartyServiceTagId any
-	IpTagType any
-	Tag any
+	IpTagType              any
+	Tag                    any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties struct {
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpTags any
-	PublicIpaddressVersion any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpTags                   any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
+	PublicIpprefix           any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Sku struct {
@@ -193,51 +193,51 @@ type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigura
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration struct {
-	Name any
+	Name       any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	LoadBalancerBackendAddressPools any
-	Primary any
-	PrivateIpaddressVersion any
-	PublicIpaddressConfiguration any
-	Subnet any
+	ApplicationSecurityGroups             any
+	LoadBalancerBackendAddressPools       any
+	Primary                               any
+	PrivateIpaddressVersion               any
+	PublicIpaddressConfiguration          any
+	Subnet                                any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
-	DeleteOption any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
+	AuxiliaryMode               any
+	AuxiliarySku                any
+	DeleteOption                any
+	DisableTcpStateTracking     any
+	DnsSettings                 any
+	DscpConfiguration           any
 	EnableAcceleratedNetworking any
-	EnableFpga any
-	EnableIpforwarding any
-	IpConfigurations any
-	NetworkSecurityGroup any
-	Primary any
+	EnableFpga                  any
+	EnableIpforwarding          any
+	IpConfigurations            any
+	NetworkSecurityGroup        any
+	Primary                     any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations struct {
-	Name any
+	Name       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaces_Properties struct {
 	DeleteOption any
-	Primary any
+	Primary      any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaces struct {
@@ -245,83 +245,83 @@ type MachineScaleSetVm_Value_Properties_NetworkProfile_NetworkInterfaces struct 
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfile struct {
-	InterconnectGroupProfile any
-	NetworkApiVersion any
+	InterconnectGroupProfile       any
+	NetworkApiVersion              any
 	NetworkInterfaceConfigurations any
-	NetworkInterfaces any
+	NetworkInterfaces              any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties struct {
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpTags any
+	DeleteOption           any
+	DnsSettings            any
+	IdleTimeoutInMinutes   any
+	IpTags                 any
 	PublicIpaddressVersion any
-	PublicIpprefix any
+	PublicIpprefix         any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration struct {
-	Name any
+	Name       any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatPools any
-	Primary any
-	PrivateIpaddressVersion any
-	PublicIpaddressConfiguration any
-	Subnet any
+	ApplicationSecurityGroups             any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatPools           any
+	Primary                               any
+	PrivateIpaddressVersion               any
+	PublicIpaddressConfiguration          any
+	Subnet                                any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
-	DeleteOption any
-	DisableTcpStateTracking any
-	DnsSettings any
+	AuxiliaryMode               any
+	AuxiliarySku                any
+	DeleteOption                any
+	DisableTcpStateTracking     any
+	DnsSettings                 any
 	EnableAcceleratedNetworking any
-	EnableFpga any
-	EnableIpforwarding any
-	IpConfigurations any
-	NetworkSecurityGroup any
-	Primary any
+	EnableFpga                  any
+	EnableIpforwarding          any
+	IpConfigurations            any
+	NetworkSecurityGroup        any
+	Primary                     any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations struct {
-	Name any
+	Name       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type MachineScaleSetVm_Value_Properties_NetworkProfileConfiguration struct {
-	InterconnectGroupProfile any
+	InterconnectGroupProfile       any
 	NetworkInterfaceConfigurations any
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettings struct {
 	BypassPlatformSafetyChecksOnUserSchedule any
-	RebootSetting any
+	RebootSetting                            any
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile_LinuxConfiguration_PatchSettings struct {
-	AssessmentMode any
+	AssessmentMode              any
 	AutomaticByPlatformSettings any
-	PatchMode any
+	PatchMode                   any
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile_LinuxConfiguration_Ssh_PublicKeys struct {
 	KeyData any
-	Path any
+	Path    any
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile_LinuxConfiguration_Ssh struct {
@@ -330,39 +330,39 @@ type MachineScaleSetVm_Value_Properties_OsProfile_LinuxConfiguration_Ssh struct 
 
 type MachineScaleSetVm_Value_Properties_OsProfile_LinuxConfiguration struct {
 	DisablePasswordAuthentication any
-	EnableVmagentPlatformUpdates any
-	PatchSettings any
-	ProvisionVmagent any
-	Ssh any
+	EnableVmagentPlatformUpdates  any
+	PatchSettings                 any
+	ProvisionVmagent              any
+	Ssh                           any
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile_Secrets_VaultCertificates struct {
 	CertificateStore any
-	CertificateUrl any
+	CertificateUrl   any
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile_Secrets struct {
-	SourceVault any
+	SourceVault       any
 	VaultCertificates any
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile_WindowsConfiguration_AdditionalUnattendContent struct {
 	ComponentName any
-	Content any
-	PassName any
-	SettingName any
+	Content       any
+	PassName      any
+	SettingName   any
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile_WindowsConfiguration_PatchSettings struct {
-	AssessmentMode any
+	AssessmentMode              any
 	AutomaticByPlatformSettings any
-	EnableHotpatching any
-	PatchMode any
+	EnableHotpatching           any
+	PatchMode                   any
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile_WindowsConfiguration_WinRm_Listeners struct {
 	CertificateUrl any
-	Protocol any
+	Protocol       any
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile_WindowsConfiguration_WinRm struct {
@@ -370,29 +370,29 @@ type MachineScaleSetVm_Value_Properties_OsProfile_WindowsConfiguration_WinRm str
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile_WindowsConfiguration struct {
-	AdditionalUnattendContent any
-	EnableAutomaticUpdates any
+	AdditionalUnattendContent    any
+	EnableAutomaticUpdates       any
 	EnableVmagentPlatformUpdates any
-	PatchSettings any
-	ProvisionVmagent any
-	TimeZone any
-	WinRm any
+	PatchSettings                any
+	ProvisionVmagent             any
+	TimeZone                     any
+	WinRm                        any
 }
 
 type MachineScaleSetVm_Value_Properties_OsProfile struct {
-	AdminPassword any
-	AdminUsername any
-	AllowExtensionOperations any
-	ComputerName any
-	CustomData any
-	LinuxConfiguration any
+	AdminPassword               any
+	AdminUsername               any
+	AllowExtensionOperations    any
+	ComputerName                any
+	CustomData                  any
+	LinuxConfiguration          any
 	RequireGuestProvisionSignal any
-	Secrets any
-	WindowsConfiguration any
+	Secrets                     any
+	WindowsConfiguration        any
 }
 
 type MachineScaleSetVm_Value_Properties_ProtectionPolicy struct {
-	ProtectFromScaleIn any
+	ProtectFromScaleIn         any
 	ProtectFromScaleSetActions any
 }
 
@@ -402,30 +402,30 @@ type MachineScaleSetVm_Value_Properties_SecurityProfile_EncryptionIdentity struc
 
 type MachineScaleSetVm_Value_Properties_SecurityProfile_ProxyAgentSettings_Imds struct {
 	InVmaccessControlProfileReferenceId any
-	Mode any
-	UseLocalFileRules any
+	Mode                                any
+	UseLocalFileRules                   any
 }
 
 type MachineScaleSetVm_Value_Properties_SecurityProfile_ProxyAgentSettings struct {
 	AddProxyAgentExtension any
-	Enabled any
-	Imds any
-	KeyIncarnationId any
-	Mode any
-	WireServer any
+	Enabled                any
+	Imds                   any
+	KeyIncarnationId       any
+	Mode                   any
+	WireServer             any
 }
 
 type MachineScaleSetVm_Value_Properties_SecurityProfile_UefiSettings struct {
 	SecureBootEnabled any
-	VTpmEnabled any
+	VTpmEnabled       any
 }
 
 type MachineScaleSetVm_Value_Properties_SecurityProfile struct {
-	EncryptionAtHost any
+	EncryptionAtHost   any
 	EncryptionIdentity any
 	ProxyAgentSettings any
-	SecurityType any
-	UefiSettings any
+	SecurityType       any
+	UefiSettings       any
 }
 
 type MachineScaleSetVm_Value_Properties_StorageProfile_DataDisks_Image struct {
@@ -437,17 +437,17 @@ type MachineScaleSetVm_Value_Properties_StorageProfile_DataDisks_ManagedDisk_Add
 }
 
 type MachineScaleSetVm_Value_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties struct {
-	AvailabilityPolicy any
-	BurstingEnabled any
-	DiskAccessId any
-	DiskIopsreadOnly any
-	DiskMbpsReadOnly any
-	LogicalSectorSize any
-	MaxShares any
-	NetworkAccessPolicy any
+	AvailabilityPolicy         any
+	BurstingEnabled            any
+	DiskAccessId               any
+	DiskIopsreadOnly           any
+	DiskMbpsReadOnly           any
+	LogicalSectorSize          any
+	MaxShares                  any
+	NetworkAccessPolicy        any
 	OptimizedForFrequentAttach any
-	PerformancePlus any
-	Tier any
+	PerformancePlus            any
+	Tier                       any
 }
 
 type MachineScaleSetVm_Value_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties struct {
@@ -455,116 +455,116 @@ type MachineScaleSetVm_Value_Properties_StorageProfile_DataDisks_ManagedDisk_Add
 }
 
 type MachineScaleSetVm_Value_Properties_StorageProfile_DataDisks_ManagedDisk_SecurityProfile struct {
-	DiskEncryptionSet any
+	DiskEncryptionSet      any
 	SecurityEncryptionType any
 }
 
 type MachineScaleSetVm_Value_Properties_StorageProfile_DataDisks_ManagedDisk struct {
 	AdditionalDiskProperties any
-	DiskEncryptionSet any
-	SecurityProfile any
-	StorageAccountType any
+	DiskEncryptionSet        any
+	SecurityProfile          any
+	StorageAccountType       any
 }
 
 type MachineScaleSetVm_Value_Properties_StorageProfile_DataDisks struct {
-	Caching any
-	CreateOption any
-	DeleteOption any
-	DetachOption any
-	DiskIopsreadWrite any
-	DiskMbpsReadWrite any
-	DiskSizeGb any
-	Image any
-	Lun any
-	ManagedDisk any
-	Name any
-	SourceResource any
+	Caching                     any
+	CreateOption                any
+	DeleteOption                any
+	DetachOption                any
+	DiskIopsreadWrite           any
+	DiskMbpsReadWrite           any
+	DiskSizeGb                  any
+	Image                       any
+	Lun                         any
+	ManagedDisk                 any
+	Name                        any
+	SourceResource              any
 	StorageFaultDomainAlignment any
-	ToBeDetached any
-	Vhd any
-	WriteAcceleratorEnabled any
+	ToBeDetached                any
+	Vhd                         any
+	WriteAcceleratorEnabled     any
 }
 
 type MachineScaleSetVm_Value_Properties_StorageProfile_ImageReference struct {
 	CommunityGalleryImageId any
-	ExactVersion any
-	Offer any
-	Publisher any
-	SharedGalleryImageId any
-	Sku any
-	Version any
+	ExactVersion            any
+	Offer                   any
+	Publisher               any
+	SharedGalleryImageId    any
+	Sku                     any
+	Version                 any
 }
 
 type MachineScaleSetVm_Value_Properties_StorageProfile_OsDisk_DiffDiskSettings struct {
 	EnableFullCaching any
-	Option any
-	Placement any
+	Option            any
+	Placement         any
 }
 
 type MachineScaleSetVm_Value_Properties_StorageProfile_OsDisk struct {
-	Caching any
-	CreateOption any
-	DeleteOption any
-	DiffDiskSettings any
-	DiskSizeGb any
-	EncryptionSettings any
-	Image any
-	ManagedDisk any
-	Name any
-	OsType any
+	Caching                     any
+	CreateOption                any
+	DeleteOption                any
+	DiffDiskSettings            any
+	DiskSizeGb                  any
+	EncryptionSettings          any
+	Image                       any
+	ManagedDisk                 any
+	Name                        any
+	OsType                      any
 	StorageFaultDomainAlignment any
-	Vhd any
-	WriteAcceleratorEnabled any
+	Vhd                         any
+	WriteAcceleratorEnabled     any
 }
 
 type MachineScaleSetVm_Value_Properties_StorageProfile struct {
 	AlignRegionalDisksToVmzone any
-	DataDisks any
-	DiskApiVersion any
-	DiskControllerType any
-	ImageReference any
-	OsDisk any
+	DataDisks                  any
+	DiskApiVersion             any
+	DiskControllerType         any
+	ImageReference             any
+	OsDisk                     any
 }
 
 type MachineScaleSetVm_Value_Properties struct {
-	AdditionalCapabilities any
-	AvailabilitySet any
-	CapacityReservation any
-	DiagnosticsProfile any
-	HardwareProfile any
-	InstanceView any
-	InterconnectBlockProfile any
-	LatestModelApplied any
-	LicenseType any
-	ModelDefinitionApplied any
-	NetworkProfile any
+	AdditionalCapabilities      any
+	AvailabilitySet             any
+	CapacityReservation         any
+	DiagnosticsProfile          any
+	HardwareProfile             any
+	InstanceView                any
+	InterconnectBlockProfile    any
+	LatestModelApplied          any
+	LicenseType                 any
+	ModelDefinitionApplied      any
+	NetworkProfile              any
 	NetworkProfileConfiguration any
-	OsProfile any
-	ProtectionPolicy any
-	ProvisioningState any
-	ResilientVmdeletionStatus any
-	SecurityProfile any
-	StorageProfile any
-	TimeCreated any
-	UserData any
-	VirtualMachineResourceId any
-	VmId any
+	OsProfile                   any
+	ProtectionPolicy            any
+	ProvisioningState           any
+	ResilientVmdeletionStatus   any
+	SecurityProfile             any
+	StorageProfile              any
+	TimeCreated                 any
+	UserData                    any
+	VirtualMachineResourceId    any
+	VmId                        any
 }
 
 type MachineScaleSetVm_Value_Resources_Properties struct {
-	AutoUpgradeMinorVersion any
-	EnableAutomaticUpgrade any
-	ForceUpdateTag any
-	InstanceView any
-	ProtectedSettings any
+	AutoUpgradeMinorVersion       any
+	EnableAutomaticUpgrade        any
+	ForceUpdateTag                any
+	InstanceView                  any
+	ProtectedSettings             any
 	ProtectedSettingsFromKeyVault any
-	ProvisionAfterExtensions any
-	ProvisioningState any
-	Publisher any
-	Settings any
-	SuppressFailures any
-	Type any
-	TypeHandlerVersion any
+	ProvisionAfterExtensions      any
+	ProvisioningState             any
+	Publisher                     any
+	Settings                      any
+	SuppressFailures              any
+	Type                          any
+	TypeHandlerVersion            any
 }
 
 type MachineScaleSetVm_Value_Resources struct {
@@ -573,19 +573,19 @@ type MachineScaleSetVm_Value_Resources struct {
 
 type MachineScaleSetVm_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type MachineScaleSetVm_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	InstanceId any
-	Plan any
+	Plan       any
 	Properties any
-	Resources any
-	Sku any
-	Zones any
+	Resources  any
+	Sku        any
+	Zones      any
 }
 
 type MachineScaleSetVmConfig struct {
@@ -596,7 +596,7 @@ type MachineScaleSetVmAttrs struct {
 	// The uri to fetch the next page of Virtual Machine Scale Set VMs. Call ListNext() with this to fetch the next page of VMSS VMs.
 	NextLink any
 	// The list of virtual machine scale sets VMs.
-	Value any
+	Value                      any
 	VirtualMachineScaleSetName any
 }
 

@@ -7,39 +7,39 @@ type AzureBackupJobResource_Properties_ErrorDetails_Details struct {
 }
 
 type AzureBackupJobResource_Properties_ErrorDetails_InnerError struct {
-	AdditionalInfo any
-	Code any
+	AdditionalInfo     any
+	Code               any
 	EmbeddedInnerError any
 }
 
 type AzureBackupJobResource_Properties_ErrorDetails struct {
-	Code any
-	Details any
-	InnerError any
-	IsRetryable any
-	IsUserError any
-	Message any
-	Properties any
+	Code              any
+	Details           any
+	InnerError        any
+	IsRetryable       any
+	IsUserError       any
+	Message           any
+	Properties        any
 	RecommendedAction any
-	Target any
+	Target            any
 }
 
 type AzureBackupJobResource_Properties_ExtendedInfo_SourceRecoverPoint struct {
-	RecoveryPointId any
+	RecoveryPointId   any
 	RecoveryPointTime any
 }
 
 type AzureBackupJobResource_Properties_ExtendedInfo_SubTasks struct {
 	AdditionalDetails any
-	TaskId any
-	TaskName any
-	TaskProgress any
-	TaskStatus any
+	TaskId            any
+	TaskName          any
+	TaskProgress      any
+	TaskStatus        any
 }
 
 type AzureBackupJobResource_Properties_ExtendedInfo_WarningDetails struct {
 	ResourceName any
-	Warning any
+	Warning      any
 }
 
 type AzureBackupJobResource_Properties_ExtendedInfo struct {
@@ -51,9 +51,9 @@ type AzureBackupJobResource_Properties_ExtendedInfo struct {
 	DataTransferredInBytes any
 	// Destination where restore is done
 	RecoveryDestination any
-	SourceRecoverPoint any
+	SourceRecoverPoint  any
 	// List of Sub Tasks of the job
-	SubTasks any
+	SubTasks           any
 	TargetRecoverPoint any
 	// A List, detailing the warnings related to the job
 	WarningDetails any
@@ -75,7 +75,7 @@ type AzureBackupJobResource_Properties struct {
 	// Data Source Set Name of the DataSource
 	DataSourceSetName any
 	// Type of DataSource
-	DataSourceType any
+	DataSourceType           any
 	DestinationDataStoreName any
 	// Total run time of the job. ISO 8601 format.
 	Duration any
@@ -83,7 +83,7 @@ type AzureBackupJobResource_Properties struct {
 	EndTime any
 	// A List, detailing the errors related to the job
 	ErrorDetails any
-	Etag any
+	Etag         any
 	// Extended Information about the job
 	ExtendedInfo any
 	// Indicated that whether the job is adhoc(true) or scheduled(false)
@@ -103,7 +103,7 @@ type AzureBackupJobResource_Properties struct {
 	// Priority to be used for rehydration
 	RehydrationPriority any
 	// It indicates the sub type of operation i.e. in case of Restore it can be ALR/OLR
-	RestoreType any
+	RestoreType         any
 	SourceDataStoreName any
 	// Resource Group Name of the Datasource
 	SourceResourceGroup any
@@ -122,9 +122,9 @@ type AzureBackupJobResource_Properties struct {
 }
 
 type AzureBackupJobResourceConfig struct {
-	JobId any
+	JobId               any
 	SourceBackupVaultId any
-	SourceRegion any
+	SourceRegion        any
 	// path parameter, not part of the API's own resource representation
 	Location any
 }
@@ -132,9 +132,9 @@ type AzureBackupJobResourceConfig struct {
 type AzureBackupJobResourceAttrs struct {
 	JobId any
 	// AzureBackup Job Class
-	Properties any
+	Properties          any
 	SourceBackupVaultId any
-	SourceRegion any
+	SourceRegion        any
 	// path parameter, not part of the API's own resource representation
 	Location any
 }
@@ -142,9 +142,9 @@ type AzureBackupJobResourceAttrs struct {
 var AzureBackupJobResource = ubx.ResourceBinding{
 	WireType: "azure_dataprotection_azure_backup_job_resource",
 	Fields: ubx.FieldMap{
-		"JobId": ubx.FieldSpec{WireName: "job_id"},
+		"JobId":               ubx.FieldSpec{WireName: "job_id"},
 		"SourceBackupVaultId": ubx.FieldSpec{WireName: "source_backup_vault_id"},
-		"SourceRegion": ubx.FieldSpec{WireName: "source_region"},
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"SourceRegion":        ubx.FieldSpec{WireName: "source_region"},
+		"Location":            ubx.FieldSpec{WireName: "location"},
 	},
 }

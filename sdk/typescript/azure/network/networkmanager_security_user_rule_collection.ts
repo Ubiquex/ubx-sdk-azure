@@ -46,20 +46,9 @@ const NetworkmanagerSecurityUserRuleCollection_PropertiesFields: FieldMap = {
   resourceGuid: "resource_guid",
 };
 
-const NetworkmanagerSecurityUserRuleCollection_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerSecurityUserRuleCollectionConfig {
   /** Defines the security user rule collection properties. */
   properties?: NetworkmanagerSecurityUserRuleCollection_Properties | Computed<NetworkmanagerSecurityUserRuleCollection_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerSecurityUserRuleCollection_SystemData | Computed<NetworkmanagerSecurityUserRuleCollection_SystemData>;
 }
 
 export interface NetworkmanagerSecurityUserRuleCollectionAttrs {
@@ -76,11 +65,6 @@ export const NetworkmanagerSecurityUserRuleCollection: ResourceBinding<Networkma
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerSecurityUserRuleCollection_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerSecurityUserRuleCollection_SystemDataFields,
     },
   },
 };

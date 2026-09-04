@@ -4,17 +4,17 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlserverExtendedServerBlobAuditingPolicy_Value_Properties struct {
-	AuditActionsAndGroups any
-	IsAzureMonitorTargetEnabled any
-	IsDevopsAuditEnabled any
-	IsStorageSecondaryKeyInUse any
-	PredicateExpression any
-	QueueDelayMs any
-	RetentionDays any
-	State any
-	StorageAccountAccessKey any
+	AuditActionsAndGroups        any
+	IsAzureMonitorTargetEnabled  any
+	IsDevopsAuditEnabled         any
+	IsStorageSecondaryKeyInUse   any
+	PredicateExpression          any
+	QueueDelayMs                 any
+	RetentionDays                any
+	State                        any
+	StorageAccountAccessKey      any
 	StorageAccountSubscriptionId any
-	StorageEndpoint any
+	StorageEndpoint              any
 }
 
 type SqlserverExtendedServerBlobAuditingPolicy_Value struct {
@@ -33,6 +33,5 @@ type SqlserverExtendedServerBlobAuditingPolicyAttrs struct {
 
 var SqlserverExtendedServerBlobAuditingPolicy = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlserver_extended_server_blob_auditing_policy",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

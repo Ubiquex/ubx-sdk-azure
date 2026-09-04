@@ -61,8 +61,6 @@ _Project_PropertiesFields = {
 
 @dataclasses.dataclass
 class ProjectConfig:
-    # Resource Etag.
-    etag: Any = None
     # Identity for the resource.
     identity: Any = None
     # The geo-location where the resource lives
@@ -88,7 +86,6 @@ class ProjectAttrs:
 Project = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_project",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",

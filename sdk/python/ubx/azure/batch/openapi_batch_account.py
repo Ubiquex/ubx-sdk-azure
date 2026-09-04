@@ -31,10 +31,17 @@ class OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReference:
 class OpenapiBatchAccount_Properties_AutoStorage:
     # The authentication mode which the Batch service will use to manage the auto-storage account.
     authentication_mode: Any = None
+    # The UTC time at which storage keys were last synchronized with the Batch account.
+    last_key_sync: Any = None
     # The reference to a user assigned identity associated with the Batch pool which a compute node will use.
     node_identity_reference: Any = None
     # The resource ID of the storage account to be used for auto-storage account.
     storage_account_id: Any = None
+
+@dataclasses.dataclass
+class OpenapiBatchAccount_Properties_DedicatedCoreQuotaPerVmfamily:
+    core_quota: Any = None
+    name: Any = None
 
 @dataclasses.dataclass
 class OpenapiBatchAccount_Properties_Encryption_KeyVaultProperties:
@@ -75,19 +82,62 @@ class OpenapiBatchAccount_Properties_NetworkProfile:
     node_management_access: Any = None
 
 @dataclasses.dataclass
+class OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    id: Any = None
+
+@dataclasses.dataclass
+class OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    actions_required: Any = None
+    description: Any = None
+    status: Any = None
+
+@dataclasses.dataclass
+class OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties:
+    group_ids: Any = None
+    private_endpoint: Any = None
+    private_link_service_connection_state: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class OpenapiBatchAccount_Properties_PrivateEndpointConnections:
+    etag: Any = None
+    properties: Any = None
+    tags: Any = None
+
+@dataclasses.dataclass
 class OpenapiBatchAccount_Properties:
+    # The account endpoint used to interact with the Batch service.
+    account_endpoint: Any = None
+    # The active job and job schedule quota for the Batch account.
+    active_job_and_job_schedule_quota: Any = None
     # List of allowed authentication modes for the Batch account that can be used to authenticate with the data plane. This does not affect authentication with the control plane.
     allowed_authentication_modes: Any = None
     # The properties related to the auto-storage account.
     auto_storage: Any = None
+    # For accounts with PoolAllocationMode set to UserSubscription, quota is managed on the subscription so this value is not returned.
+    dedicated_core_quota: Any = None
+    # A list of the dedicated core quota per Virtual Machine family for the Batch account. For accounts with PoolAllocationMode set to UserSubscription, quota is managed on the subscription so this value is not returned.
+    dedicated_core_quota_per_vmfamily: Any = None
+    # If this flag is true, dedicated core quota is enforced via both the dedicatedCoreQuotaPerVMFamily and dedicatedCoreQuota properties on the account. If this flag is false, dedicated core quota is enforced only via the dedicatedCoreQuota property on the account and does not consider Virtual Machine family.
+    dedicated_core_quota_per_vmfamily_enforced: Any = None
     # Configures how customer data is encrypted inside the Batch account. By default, accounts are encrypted using a Microsoft managed key. For additional control, a customer-managed key can be used instead.
     encryption: Any = None
     # Identifies the Azure key vault associated with a Batch account.
     key_vault_reference: Any = None
+    # For accounts with PoolAllocationMode set to UserSubscription, quota is managed on the subscription so this value is not returned.
+    low_priority_core_quota: Any = None
     # Network profile for Batch account, which contains network rule settings for each endpoint.
     network_profile: Any = None
+    # The endpoint used by compute node to connect to the Batch node management service.
+    node_management_endpoint: Any = None
     # The allocation mode for creating pools in the Batch account.
     pool_allocation_mode: Any = None
+    # The pool quota for the Batch account.
+    pool_quota: Any = None
+    # List of private endpoint connections associated with the Batch account
+    private_endpoint_connections: Any = None
+    # The provisioned state of the resource
+    provisioning_state: Any = None
     # The network access type for operating on the resources in the Batch account.
     public_network_access: Any = None
 
@@ -113,12 +163,18 @@ _OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReferenceFields = {
 
 _OpenapiBatchAccount_Properties_AutoStorageFields = {
     "authentication_mode": ubx.FieldSpec(wire_name="authentication_mode"),
+    "last_key_sync": ubx.FieldSpec(wire_name="last_key_sync"),
     "node_identity_reference": ubx.FieldSpec(
         wire_name="node_identity_reference",
         kind="object",
         fields=_OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReferenceFields,
     ),
     "storage_account_id": ubx.FieldSpec(wire_name="storage_account_id"),
+}
+
+_OpenapiBatchAccount_Properties_DedicatedCoreQuotaPerVmfamilyFields = {
+    "core_quota": ubx.FieldSpec(wire_name="core_quota"),
+    "name": ubx.FieldSpec(wire_name="name"),
 }
 
 _OpenapiBatchAccount_Properties_Encryption_KeyVaultPropertiesFields = {
@@ -166,13 +222,57 @@ _OpenapiBatchAccount_Properties_NetworkProfileFields = {
     ),
 }
 
+_OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = {
+    "id": ubx.FieldSpec(wire_name="id"),
+}
+
+_OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = {
+    "actions_required": ubx.FieldSpec(wire_name="actions_required"),
+    "description": ubx.FieldSpec(wire_name="description"),
+    "status": ubx.FieldSpec(wire_name="status"),
+}
+
+_OpenapiBatchAccount_Properties_PrivateEndpointConnections_PropertiesFields = {
+    "group_ids": ubx.FieldSpec(wire_name="group_ids"),
+    "private_endpoint": ubx.FieldSpec(
+        wire_name="private_endpoint",
+        kind="object",
+        fields=_OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+    ),
+    "private_link_service_connection_state": ubx.FieldSpec(
+        wire_name="private_link_service_connection_state",
+        kind="object",
+        fields=_OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+}
+
+_OpenapiBatchAccount_Properties_PrivateEndpointConnectionsFields = {
+    "etag": ubx.FieldSpec(wire_name="etag"),
+    "properties": ubx.FieldSpec(
+        wire_name="properties",
+        kind="object",
+        fields=_OpenapiBatchAccount_Properties_PrivateEndpointConnections_PropertiesFields,
+    ),
+    "tags": ubx.FieldSpec(wire_name="tags"),
+}
+
 _OpenapiBatchAccount_PropertiesFields = {
+    "account_endpoint": ubx.FieldSpec(wire_name="account_endpoint"),
+    "active_job_and_job_schedule_quota": ubx.FieldSpec(wire_name="active_job_and_job_schedule_quota"),
     "allowed_authentication_modes": ubx.FieldSpec(wire_name="allowed_authentication_modes"),
     "auto_storage": ubx.FieldSpec(
         wire_name="auto_storage",
         kind="object",
         fields=_OpenapiBatchAccount_Properties_AutoStorageFields,
     ),
+    "dedicated_core_quota": ubx.FieldSpec(wire_name="dedicated_core_quota"),
+    "dedicated_core_quota_per_vmfamily": ubx.FieldSpec(
+        wire_name="dedicated_core_quota_per_vmfamily",
+        kind="list",
+        fields=_OpenapiBatchAccount_Properties_DedicatedCoreQuotaPerVmfamilyFields,
+    ),
+    "dedicated_core_quota_per_vmfamily_enforced": ubx.FieldSpec(wire_name="dedicated_core_quota_per_vmfamily_enforced"),
     "encryption": ubx.FieldSpec(
         wire_name="encryption",
         kind="object",
@@ -183,12 +283,21 @@ _OpenapiBatchAccount_PropertiesFields = {
         kind="object",
         fields=_OpenapiBatchAccount_Properties_KeyVaultReferenceFields,
     ),
+    "low_priority_core_quota": ubx.FieldSpec(wire_name="low_priority_core_quota"),
     "network_profile": ubx.FieldSpec(
         wire_name="network_profile",
         kind="object",
         fields=_OpenapiBatchAccount_Properties_NetworkProfileFields,
     ),
+    "node_management_endpoint": ubx.FieldSpec(wire_name="node_management_endpoint"),
     "pool_allocation_mode": ubx.FieldSpec(wire_name="pool_allocation_mode"),
+    "pool_quota": ubx.FieldSpec(wire_name="pool_quota"),
+    "private_endpoint_connections": ubx.FieldSpec(
+        wire_name="private_endpoint_connections",
+        kind="list",
+        fields=_OpenapiBatchAccount_Properties_PrivateEndpointConnectionsFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
     "public_network_access": ubx.FieldSpec(wire_name="public_network_access"),
 }
 

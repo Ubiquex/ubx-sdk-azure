@@ -5,15 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AccountSku_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type AccountSku_Value struct {
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type AccountSkuConfig struct {

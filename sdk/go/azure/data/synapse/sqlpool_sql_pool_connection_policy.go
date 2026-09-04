@@ -22,7 +22,7 @@ type SqlpoolSqlPoolConnectionPolicy_Properties struct {
 
 type SqlpoolSqlPoolConnectionPolicyConfig struct {
 	ConnectionPolicyName any
-	SqlPoolName any
+	SqlPoolName          any
 }
 
 type SqlpoolSqlPoolConnectionPolicyAttrs struct {
@@ -32,7 +32,7 @@ type SqlpoolSqlPoolConnectionPolicyAttrs struct {
 	// Resource location.
 	Location any
 	// Properties of a Sql pool connection policy.
-	Properties any
+	Properties  any
 	SqlPoolName any
 }
 
@@ -40,6 +40,6 @@ var SqlpoolSqlPoolConnectionPolicy = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_sql_pool_connection_policy",
 	Fields: ubx.FieldMap{
 		"ConnectionPolicyName": ubx.FieldSpec{WireName: "connection_policy_name"},
-		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
+		"SqlPoolName":          ubx.FieldSpec{WireName: "sql_pool_name"},
 	},
 }

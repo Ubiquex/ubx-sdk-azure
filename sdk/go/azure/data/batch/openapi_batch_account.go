@@ -4,14 +4,14 @@ package batch
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBatchAccount_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiBatchAccount_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,7 +21,7 @@ type OpenapiBatchAccount_Value_Properties_AutoStorage struct {
 
 type OpenapiBatchAccount_Value_Properties_DedicatedCoreQuotaPerVmfamily struct {
 	CoreQuota any
-	Name any
+	Name      any
 }
 
 type OpenapiBatchAccount_Value_Properties_Encryption_KeyVaultProperties struct {
@@ -29,27 +29,27 @@ type OpenapiBatchAccount_Value_Properties_Encryption_KeyVaultProperties struct {
 }
 
 type OpenapiBatchAccount_Value_Properties_Encryption struct {
-	KeySource any
+	KeySource          any
 	KeyVaultProperties any
 }
 
 type OpenapiBatchAccount_Value_Properties_KeyVaultReference struct {
-	Id any
+	Id  any
 	Url any
 }
 
 type OpenapiBatchAccount_Value_Properties_NetworkProfile_AccountAccess_IpRules struct {
 	Action any
-	Value any
+	Value  any
 }
 
 type OpenapiBatchAccount_Value_Properties_NetworkProfile_AccountAccess struct {
 	DefaultAction any
-	IpRules any
+	IpRules       any
 }
 
 type OpenapiBatchAccount_Value_Properties_NetworkProfile struct {
-	AccountAccess any
+	AccountAccess        any
 	NodeManagementAccess any
 }
 
@@ -59,45 +59,45 @@ type OpenapiBatchAccount_Value_Properties_PrivateEndpointConnections_Properties_
 
 type OpenapiBatchAccount_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiBatchAccount_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiBatchAccount_Value_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiBatchAccount_Value_Properties struct {
-	AccountEndpoint any
-	ActiveJobAndJobScheduleQuota any
-	AllowedAuthenticationModes any
-	AutoStorage any
-	DedicatedCoreQuota any
-	DedicatedCoreQuotaPerVmfamily any
+	AccountEndpoint                       any
+	ActiveJobAndJobScheduleQuota          any
+	AllowedAuthenticationModes            any
+	AutoStorage                           any
+	DedicatedCoreQuota                    any
+	DedicatedCoreQuotaPerVmfamily         any
 	DedicatedCoreQuotaPerVmfamilyEnforced any
-	Encryption any
-	KeyVaultReference any
-	LowPriorityCoreQuota any
-	NetworkProfile any
-	NodeManagementEndpoint any
-	PoolAllocationMode any
-	PoolQuota any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
+	Encryption                            any
+	KeyVaultReference                     any
+	LowPriorityCoreQuota                  any
+	NetworkProfile                        any
+	NodeManagementEndpoint                any
+	PoolAllocationMode                    any
+	PoolQuota                             any
+	PrivateEndpointConnections            any
+	ProvisioningState                     any
+	PublicNetworkAccess                   any
 }
 
 type OpenapiBatchAccount_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -113,6 +113,5 @@ type OpenapiBatchAccountAttrs struct {
 
 var OpenapiBatchAccount = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_batch_account",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

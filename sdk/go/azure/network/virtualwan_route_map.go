@@ -4,27 +4,27 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanRouteMap_Properties_Rules_Actions_Parameters struct {
-	AsPath any
-	Community any
+	AsPath      any
+	Community   any
 	RoutePrefix any
 }
 
 type VirtualwanRouteMap_Properties_Rules_Actions struct {
 	Parameters any
-	Type any
+	Type       any
 }
 
 type VirtualwanRouteMap_Properties_Rules_MatchCriteria struct {
-	AsPath any
-	Community any
+	AsPath         any
+	Community      any
 	MatchCondition any
-	RoutePrefix any
+	RoutePrefix    any
 }
 
 type VirtualwanRouteMap_Properties_Rules struct {
-	Actions any
-	MatchCriteria any
-	Name any
+	Actions           any
+	MatchCriteria     any
+	Name              any
 	NextStepIfMatched any
 }
 
@@ -40,56 +40,54 @@ type VirtualwanRouteMap_Properties struct {
 }
 
 var VirtualwanRouteMap_Properties_Rules_Actions_ParametersFields = ubx.FieldMap{
-		"AsPath": ubx.FieldSpec{WireName: "as_path"},
-		"Community": ubx.FieldSpec{WireName: "community"},
-		"RoutePrefix": ubx.FieldSpec{WireName: "route_prefix"},
-	}
+	"AsPath":      ubx.FieldSpec{WireName: "as_path"},
+	"Community":   ubx.FieldSpec{WireName: "community"},
+	"RoutePrefix": ubx.FieldSpec{WireName: "route_prefix"},
+}
 
 var VirtualwanRouteMap_Properties_Rules_ActionsFields = ubx.FieldMap{
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "list",
-			Fields: VirtualwanRouteMap_Properties_Rules_Actions_ParametersFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "list",
+		Fields:   VirtualwanRouteMap_Properties_Rules_Actions_ParametersFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanRouteMap_Properties_Rules_MatchCriteriaFields = ubx.FieldMap{
-		"AsPath": ubx.FieldSpec{WireName: "as_path"},
-		"Community": ubx.FieldSpec{WireName: "community"},
-		"MatchCondition": ubx.FieldSpec{WireName: "match_condition"},
-		"RoutePrefix": ubx.FieldSpec{WireName: "route_prefix"},
-	}
+	"AsPath":         ubx.FieldSpec{WireName: "as_path"},
+	"Community":      ubx.FieldSpec{WireName: "community"},
+	"MatchCondition": ubx.FieldSpec{WireName: "match_condition"},
+	"RoutePrefix":    ubx.FieldSpec{WireName: "route_prefix"},
+}
 
 var VirtualwanRouteMap_Properties_RulesFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{
-			WireName: "actions",
-			Kind: "list",
-			Fields: VirtualwanRouteMap_Properties_Rules_ActionsFields,
-		},
-		"MatchCriteria": ubx.FieldSpec{
-			WireName: "match_criteria",
-			Kind: "list",
-			Fields: VirtualwanRouteMap_Properties_Rules_MatchCriteriaFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NextStepIfMatched": ubx.FieldSpec{WireName: "next_step_if_matched"},
-	}
+	"Actions": ubx.FieldSpec{
+		WireName: "actions",
+		Kind:     "list",
+		Fields:   VirtualwanRouteMap_Properties_Rules_ActionsFields,
+	},
+	"MatchCriteria": ubx.FieldSpec{
+		WireName: "match_criteria",
+		Kind:     "list",
+		Fields:   VirtualwanRouteMap_Properties_Rules_MatchCriteriaFields,
+	},
+	"Name":              ubx.FieldSpec{WireName: "name"},
+	"NextStepIfMatched": ubx.FieldSpec{WireName: "next_step_if_matched"},
+}
 
 var VirtualwanRouteMap_PropertiesFields = ubx.FieldMap{
-		"AssociatedInboundConnections": ubx.FieldSpec{WireName: "associated_inbound_connections"},
-		"AssociatedOutboundConnections": ubx.FieldSpec{WireName: "associated_outbound_connections"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: VirtualwanRouteMap_Properties_RulesFields,
-		},
-	}
+	"AssociatedInboundConnections":  ubx.FieldSpec{WireName: "associated_inbound_connections"},
+	"AssociatedOutboundConnections": ubx.FieldSpec{WireName: "associated_outbound_connections"},
+	"ProvisioningState":             ubx.FieldSpec{WireName: "provisioning_state"},
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   VirtualwanRouteMap_Properties_RulesFields,
+	},
+}
 
 type VirtualwanRouteMapConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of RouteMap resource
 	Properties any
 }
@@ -104,11 +102,10 @@ type VirtualwanRouteMapAttrs struct {
 var VirtualwanRouteMap = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_route_map",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanRouteMap_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanRouteMap_PropertiesFields,
 		},
 	},
 }

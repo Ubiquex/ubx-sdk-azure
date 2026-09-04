@@ -4,7 +4,7 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagedHsm_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -46,25 +46,25 @@ type OpenapiManagedHsm_Properties_NetworkAcls struct {
 
 type OpenapiManagedHsm_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiManagedHsm_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiManagedHsm_Properties_PrivateEndpointConnections struct {
-	Etag any
-	Id any
+	Etag       any
+	Id         any
 	Properties any
 }
 
 type OpenapiManagedHsm_Properties_Regions struct {
-	IsPrimary any
-	Name any
+	IsPrimary         any
+	Name              any
 	ProvisioningState any
 }
 
@@ -116,132 +116,132 @@ type OpenapiManagedHsm_Sku struct {
 }
 
 var OpenapiManagedHsm_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiManagedHsm_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiManagedHsm_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiManagedHsm_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiManagedHsm_Properties_NetworkAcls_IpRulesFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiManagedHsm_Properties_NetworkAcls_ServiceTagsFields = ubx.FieldMap{
-		"Tag": ubx.FieldSpec{WireName: "tag"},
-	}
+	"Tag": ubx.FieldSpec{WireName: "tag"},
+}
 
 var OpenapiManagedHsm_Properties_NetworkAcls_VirtualNetworkRulesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiManagedHsm_Properties_NetworkAclsFields = ubx.FieldMap{
-		"Bypass": ubx.FieldSpec{WireName: "bypass"},
-		"DefaultAction": ubx.FieldSpec{WireName: "default_action"},
-		"IpRules": ubx.FieldSpec{
-			WireName: "ip_rules",
-			Kind: "list",
-			Fields: OpenapiManagedHsm_Properties_NetworkAcls_IpRulesFields,
-		},
-		"ServiceTags": ubx.FieldSpec{
-			WireName: "service_tags",
-			Kind: "list",
-			Fields: OpenapiManagedHsm_Properties_NetworkAcls_ServiceTagsFields,
-		},
-		"VirtualNetworkRules": ubx.FieldSpec{
-			WireName: "virtual_network_rules",
-			Kind: "list",
-			Fields: OpenapiManagedHsm_Properties_NetworkAcls_VirtualNetworkRulesFields,
-		},
-	}
+	"Bypass":        ubx.FieldSpec{WireName: "bypass"},
+	"DefaultAction": ubx.FieldSpec{WireName: "default_action"},
+	"IpRules": ubx.FieldSpec{
+		WireName: "ip_rules",
+		Kind:     "list",
+		Fields:   OpenapiManagedHsm_Properties_NetworkAcls_IpRulesFields,
+	},
+	"ServiceTags": ubx.FieldSpec{
+		WireName: "service_tags",
+		Kind:     "list",
+		Fields:   OpenapiManagedHsm_Properties_NetworkAcls_ServiceTagsFields,
+	},
+	"VirtualNetworkRules": ubx.FieldSpec{
+		WireName: "virtual_network_rules",
+		Kind:     "list",
+		Fields:   OpenapiManagedHsm_Properties_NetworkAcls_VirtualNetworkRulesFields,
+	},
+}
 
 var OpenapiManagedHsm_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiManagedHsm_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiManagedHsm_Properties_NetworkAcls_VirtualNetworkRulesFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiManagedHsm_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiManagedHsm_Properties_NetworkAcls_VirtualNetworkRulesFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiManagedHsm_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiManagedHsm_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiManagedHsm_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiManagedHsm_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var OpenapiManagedHsm_Properties_RegionsFields = ubx.FieldMap{
-		"IsPrimary": ubx.FieldSpec{WireName: "is_primary"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"IsPrimary":         ubx.FieldSpec{WireName: "is_primary"},
+	"Name":              ubx.FieldSpec{WireName: "name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiManagedHsm_Properties_SecurityDomainPropertiesFields = ubx.FieldMap{
-		"ActivationStatus": ubx.FieldSpec{WireName: "activation_status"},
-		"ActivationStatusMessage": ubx.FieldSpec{WireName: "activation_status_message"},
-	}
+	"ActivationStatus":        ubx.FieldSpec{WireName: "activation_status"},
+	"ActivationStatusMessage": ubx.FieldSpec{WireName: "activation_status_message"},
+}
 
 var OpenapiManagedHsm_PropertiesFields = ubx.FieldMap{
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"EnablePurgeProtection": ubx.FieldSpec{WireName: "enable_purge_protection"},
-		"EnableSoftDelete": ubx.FieldSpec{WireName: "enable_soft_delete"},
-		"HsmUri": ubx.FieldSpec{WireName: "hsm_uri"},
-		"InitialAdminObjectIds": ubx.FieldSpec{WireName: "initial_admin_object_ids"},
-		"NetworkAcls": ubx.FieldSpec{
-			WireName: "network_acls",
-			Kind: "object",
-			Fields: OpenapiManagedHsm_Properties_NetworkAclsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: OpenapiManagedHsm_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"Regions": ubx.FieldSpec{
-			WireName: "regions",
-			Kind: "list",
-			Fields: OpenapiManagedHsm_Properties_RegionsFields,
-		},
-		"ScheduledPurgeDate": ubx.FieldSpec{WireName: "scheduled_purge_date"},
-		"SecurityDomainProperties": ubx.FieldSpec{
-			WireName: "security_domain_properties",
-			Kind: "object",
-			Fields: OpenapiManagedHsm_Properties_SecurityDomainPropertiesFields,
-		},
-		"SoftDeleteRetentionInDays": ubx.FieldSpec{WireName: "soft_delete_retention_in_days"},
-		"StatusMessage": ubx.FieldSpec{WireName: "status_message"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"CreateMode":            ubx.FieldSpec{WireName: "create_mode"},
+	"EnablePurgeProtection": ubx.FieldSpec{WireName: "enable_purge_protection"},
+	"EnableSoftDelete":      ubx.FieldSpec{WireName: "enable_soft_delete"},
+	"HsmUri":                ubx.FieldSpec{WireName: "hsm_uri"},
+	"InitialAdminObjectIds": ubx.FieldSpec{WireName: "initial_admin_object_ids"},
+	"NetworkAcls": ubx.FieldSpec{
+		WireName: "network_acls",
+		Kind:     "object",
+		Fields:   OpenapiManagedHsm_Properties_NetworkAclsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   OpenapiManagedHsm_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"Regions": ubx.FieldSpec{
+		WireName: "regions",
+		Kind:     "list",
+		Fields:   OpenapiManagedHsm_Properties_RegionsFields,
+	},
+	"ScheduledPurgeDate": ubx.FieldSpec{WireName: "scheduled_purge_date"},
+	"SecurityDomainProperties": ubx.FieldSpec{
+		WireName: "security_domain_properties",
+		Kind:     "object",
+		Fields:   OpenapiManagedHsm_Properties_SecurityDomainPropertiesFields,
+	},
+	"SoftDeleteRetentionInDays": ubx.FieldSpec{WireName: "soft_delete_retention_in_days"},
+	"StatusMessage":             ubx.FieldSpec{WireName: "status_message"},
+	"TenantId":                  ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var OpenapiManagedHsm_SkuFields = ubx.FieldMap{
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Family": ubx.FieldSpec{WireName: "family"},
+	"Name":   ubx.FieldSpec{WireName: "name"},
+}
 
 type OpenapiManagedHsmConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -278,19 +278,19 @@ var OpenapiManagedHsm = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiManagedHsm_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiManagedHsm_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiManagedHsm_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiManagedHsm_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiManagedHsm_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiManagedHsm_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

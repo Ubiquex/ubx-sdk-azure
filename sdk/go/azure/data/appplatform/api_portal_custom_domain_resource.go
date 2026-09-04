@@ -12,21 +12,21 @@ type ApiPortalCustomDomainResource_Value struct {
 }
 
 type ApiPortalCustomDomainResourceConfig struct {
-	ApiPortalName any
-	ApiVersion any
+	ApiPortalName     any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type ApiPortalCustomDomainResourceAttrs struct {
 	ApiPortalName any
-	ApiVersion any
+	ApiVersion    any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of API portal custom domain resources
 	Value any
 }
@@ -34,10 +34,10 @@ type ApiPortalCustomDomainResourceAttrs struct {
 var ApiPortalCustomDomainResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_api_portal_custom_domain_resource",
 	Fields: ubx.FieldMap{
-		"ApiPortalName": ubx.FieldSpec{WireName: "api_portal_name"},
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiPortalName":     ubx.FieldSpec{WireName: "api_portal_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

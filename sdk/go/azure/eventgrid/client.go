@@ -41,37 +41,26 @@ type Client_SystemData struct {
 }
 
 var Client_Properties_ClientCertificateAuthenticationFields = ubx.FieldMap{
-		"AllowedThumbprints": ubx.FieldSpec{WireName: "allowed_thumbprints"},
-		"ValidationScheme": ubx.FieldSpec{WireName: "validation_scheme"},
-	}
+	"AllowedThumbprints": ubx.FieldSpec{WireName: "allowed_thumbprints"},
+	"ValidationScheme":   ubx.FieldSpec{WireName: "validation_scheme"},
+}
 
 var Client_PropertiesFields = ubx.FieldMap{
-		"Attributes": ubx.FieldSpec{WireName: "attributes"},
-		"AuthenticationName": ubx.FieldSpec{WireName: "authentication_name"},
-		"ClientCertificateAuthentication": ubx.FieldSpec{
-			WireName: "client_certificate_authentication",
-			Kind: "object",
-			Fields: Client_Properties_ClientCertificateAuthenticationFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
-
-var Client_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Attributes":         ubx.FieldSpec{WireName: "attributes"},
+	"AuthenticationName": ubx.FieldSpec{WireName: "authentication_name"},
+	"ClientCertificateAuthentication": ubx.FieldSpec{
+		WireName: "client_certificate_authentication",
+		Kind:     "object",
+		Fields:   Client_Properties_ClientCertificateAuthenticationFields,
+	},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"State":             ubx.FieldSpec{WireName: "state"},
+}
 
 type ClientConfig struct {
 	// The properties of client.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type ClientAttrs struct {
@@ -86,13 +75,8 @@ var Client = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Client_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: Client_SystemDataFields,
+			Kind:     "object",
+			Fields:   Client_PropertiesFields,
 		},
 	},
 }

@@ -5,31 +5,31 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_Databases_PartnerAuthCertValidity struct {
 	CertificateName any
-	ExpiryDate any
+	ExpiryDate      any
 }
 
 type DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_Databases struct {
-	ConnectedState any
-	DatabaseName any
+	ConnectedState                    any
+	DatabaseName                      any
 	InstanceRedoReplicationLagSeconds any
-	InstanceReplicaId any
+	InstanceReplicaId                 any
 	InstanceSendReplicationLagSeconds any
-	LastBackupLsn any
-	LastBackupTime any
-	LastCommitLsn any
-	LastCommitTime any
-	LastHardenedLsn any
-	LastHardenedTime any
-	LastReceivedLsn any
-	LastReceivedTime any
-	LastSentLsn any
-	LastSentTime any
-	MostRecentLinkError any
-	PartnerAuthCertValidity any
-	PartnerReplicaId any
-	ReplicaState any
-	SeedingProgress any
-	SynchronizationHealth any
+	LastBackupLsn                     any
+	LastBackupTime                    any
+	LastCommitLsn                     any
+	LastCommitTime                    any
+	LastHardenedLsn                   any
+	LastHardenedTime                  any
+	LastReceivedLsn                   any
+	LastReceivedTime                  any
+	LastSentLsn                       any
+	LastSentTime                      any
+	MostRecentLinkError               any
+	PartnerAuthCertValidity           any
+	PartnerReplicaId                  any
+	ReplicaState                      any
+	SeedingProgress                   any
+	SynchronizationHealth             any
 }
 
 type DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties struct {
@@ -58,55 +58,55 @@ type DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties struct
 }
 
 var DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_Databases_PartnerAuthCertValidityFields = ubx.FieldMap{
-		"CertificateName": ubx.FieldSpec{WireName: "certificate_name"},
-		"ExpiryDate": ubx.FieldSpec{WireName: "expiry_date"},
-	}
+	"CertificateName": ubx.FieldSpec{WireName: "certificate_name"},
+	"ExpiryDate":      ubx.FieldSpec{WireName: "expiry_date"},
+}
 
 var DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_DatabasesFields = ubx.FieldMap{
-		"ConnectedState": ubx.FieldSpec{WireName: "connected_state"},
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"InstanceRedoReplicationLagSeconds": ubx.FieldSpec{WireName: "instance_redo_replication_lag_seconds"},
-		"InstanceReplicaId": ubx.FieldSpec{WireName: "instance_replica_id"},
-		"InstanceSendReplicationLagSeconds": ubx.FieldSpec{WireName: "instance_send_replication_lag_seconds"},
-		"LastBackupLsn": ubx.FieldSpec{WireName: "last_backup_lsn"},
-		"LastBackupTime": ubx.FieldSpec{WireName: "last_backup_time"},
-		"LastCommitLsn": ubx.FieldSpec{WireName: "last_commit_lsn"},
-		"LastCommitTime": ubx.FieldSpec{WireName: "last_commit_time"},
-		"LastHardenedLsn": ubx.FieldSpec{WireName: "last_hardened_lsn"},
-		"LastHardenedTime": ubx.FieldSpec{WireName: "last_hardened_time"},
-		"LastReceivedLsn": ubx.FieldSpec{WireName: "last_received_lsn"},
-		"LastReceivedTime": ubx.FieldSpec{WireName: "last_received_time"},
-		"LastSentLsn": ubx.FieldSpec{WireName: "last_sent_lsn"},
-		"LastSentTime": ubx.FieldSpec{WireName: "last_sent_time"},
-		"MostRecentLinkError": ubx.FieldSpec{WireName: "most_recent_link_error"},
-		"PartnerAuthCertValidity": ubx.FieldSpec{
-			WireName: "partner_auth_cert_validity",
-			Kind: "object",
-			Fields: DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_Databases_PartnerAuthCertValidityFields,
-		},
-		"PartnerReplicaId": ubx.FieldSpec{WireName: "partner_replica_id"},
-		"ReplicaState": ubx.FieldSpec{WireName: "replica_state"},
-		"SeedingProgress": ubx.FieldSpec{WireName: "seeding_progress"},
-		"SynchronizationHealth": ubx.FieldSpec{WireName: "synchronization_health"},
-	}
+	"ConnectedState":                    ubx.FieldSpec{WireName: "connected_state"},
+	"DatabaseName":                      ubx.FieldSpec{WireName: "database_name"},
+	"InstanceRedoReplicationLagSeconds": ubx.FieldSpec{WireName: "instance_redo_replication_lag_seconds"},
+	"InstanceReplicaId":                 ubx.FieldSpec{WireName: "instance_replica_id"},
+	"InstanceSendReplicationLagSeconds": ubx.FieldSpec{WireName: "instance_send_replication_lag_seconds"},
+	"LastBackupLsn":                     ubx.FieldSpec{WireName: "last_backup_lsn"},
+	"LastBackupTime":                    ubx.FieldSpec{WireName: "last_backup_time"},
+	"LastCommitLsn":                     ubx.FieldSpec{WireName: "last_commit_lsn"},
+	"LastCommitTime":                    ubx.FieldSpec{WireName: "last_commit_time"},
+	"LastHardenedLsn":                   ubx.FieldSpec{WireName: "last_hardened_lsn"},
+	"LastHardenedTime":                  ubx.FieldSpec{WireName: "last_hardened_time"},
+	"LastReceivedLsn":                   ubx.FieldSpec{WireName: "last_received_lsn"},
+	"LastReceivedTime":                  ubx.FieldSpec{WireName: "last_received_time"},
+	"LastSentLsn":                       ubx.FieldSpec{WireName: "last_sent_lsn"},
+	"LastSentTime":                      ubx.FieldSpec{WireName: "last_sent_time"},
+	"MostRecentLinkError":               ubx.FieldSpec{WireName: "most_recent_link_error"},
+	"PartnerAuthCertValidity": ubx.FieldSpec{
+		WireName: "partner_auth_cert_validity",
+		Kind:     "object",
+		Fields:   DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_Databases_PartnerAuthCertValidityFields,
+	},
+	"PartnerReplicaId":      ubx.FieldSpec{WireName: "partner_replica_id"},
+	"ReplicaState":          ubx.FieldSpec{WireName: "replica_state"},
+	"SeedingProgress":       ubx.FieldSpec{WireName: "seeding_progress"},
+	"SynchronizationHealth": ubx.FieldSpec{WireName: "synchronization_health"},
+}
 
 var DistributedavailabilitygroupsDistributedAvailabilityGroup_PropertiesFields = ubx.FieldMap{
-		"Databases": ubx.FieldSpec{
-			WireName: "databases",
-			Kind: "list",
-			Fields: DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_DatabasesFields,
-		},
-		"DistributedAvailabilityGroupId": ubx.FieldSpec{WireName: "distributed_availability_group_id"},
-		"DistributedAvailabilityGroupName": ubx.FieldSpec{WireName: "distributed_availability_group_name"},
-		"FailoverMode": ubx.FieldSpec{WireName: "failover_mode"},
-		"InstanceAvailabilityGroupName": ubx.FieldSpec{WireName: "instance_availability_group_name"},
-		"InstanceLinkRole": ubx.FieldSpec{WireName: "instance_link_role"},
-		"PartnerAvailabilityGroupName": ubx.FieldSpec{WireName: "partner_availability_group_name"},
-		"PartnerEndpoint": ubx.FieldSpec{WireName: "partner_endpoint"},
-		"PartnerLinkRole": ubx.FieldSpec{WireName: "partner_link_role"},
-		"ReplicationMode": ubx.FieldSpec{WireName: "replication_mode"},
-		"SeedingMode": ubx.FieldSpec{WireName: "seeding_mode"},
-	}
+	"Databases": ubx.FieldSpec{
+		WireName: "databases",
+		Kind:     "list",
+		Fields:   DistributedavailabilitygroupsDistributedAvailabilityGroup_Properties_DatabasesFields,
+	},
+	"DistributedAvailabilityGroupId":   ubx.FieldSpec{WireName: "distributed_availability_group_id"},
+	"DistributedAvailabilityGroupName": ubx.FieldSpec{WireName: "distributed_availability_group_name"},
+	"FailoverMode":                     ubx.FieldSpec{WireName: "failover_mode"},
+	"InstanceAvailabilityGroupName":    ubx.FieldSpec{WireName: "instance_availability_group_name"},
+	"InstanceLinkRole":                 ubx.FieldSpec{WireName: "instance_link_role"},
+	"PartnerAvailabilityGroupName":     ubx.FieldSpec{WireName: "partner_availability_group_name"},
+	"PartnerEndpoint":                  ubx.FieldSpec{WireName: "partner_endpoint"},
+	"PartnerLinkRole":                  ubx.FieldSpec{WireName: "partner_link_role"},
+	"ReplicationMode":                  ubx.FieldSpec{WireName: "replication_mode"},
+	"SeedingMode":                      ubx.FieldSpec{WireName: "seeding_mode"},
+}
 
 type DistributedavailabilitygroupsDistributedAvailabilityGroupConfig struct {
 	// The properties of a distributed availability group.
@@ -123,8 +123,8 @@ var DistributedavailabilitygroupsDistributedAvailabilityGroup = ubx.ResourceBind
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DistributedavailabilitygroupsDistributedAvailabilityGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   DistributedavailabilitygroupsDistributedAvailabilityGroup_PropertiesFields,
 		},
 	},
 }

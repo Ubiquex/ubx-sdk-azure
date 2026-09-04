@@ -7,12 +7,49 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class OpenapiCustomDomain_Properties_CustomHttpsParameters:
+    # Defines the source of the SSL certificate.
+    certificate_source: Any = None
+    # TLS protocol version that will be used for Https
+    minimum_tls_version: Any = None
+    # Defines the TLS extension protocol that is used for secure delivery.
+    protocol_type: Any = None
+
+@dataclasses.dataclass
 class OpenapiCustomDomain_Properties:
+    # The JSON object that contains the properties to secure a custom domain.
+    custom_https_parameters: Any = None
+    # Provisioning status of the custom domain.
+    custom_https_provisioning_state: Any = None
+    # Provisioning substate shows the progress of custom HTTPS enabling/disabling process step by step.
+    custom_https_provisioning_substate: Any = None
     # The host name of the custom domain. Must be a domain name.
     host_name: Any = None
+    # Provisioning status of the custom domain.
+    provisioning_state: Any = None
+    # Resource status of the custom domain.
+    resource_state: Any = None
+    # Special validation or data may be required when delivering CDN to some regions due to local compliance reasons. E.g. ICP license number of a custom domain is required to deliver content in China.
+    validation_data: Any = None
+
+_OpenapiCustomDomain_Properties_CustomHttpsParametersFields = {
+    "certificate_source": ubx.FieldSpec(wire_name="certificate_source"),
+    "minimum_tls_version": ubx.FieldSpec(wire_name="minimum_tls_version"),
+    "protocol_type": ubx.FieldSpec(wire_name="protocol_type"),
+}
 
 _OpenapiCustomDomain_PropertiesFields = {
+    "custom_https_parameters": ubx.FieldSpec(
+        wire_name="custom_https_parameters",
+        kind="object",
+        fields=_OpenapiCustomDomain_Properties_CustomHttpsParametersFields,
+    ),
+    "custom_https_provisioning_state": ubx.FieldSpec(wire_name="custom_https_provisioning_state"),
+    "custom_https_provisioning_substate": ubx.FieldSpec(wire_name="custom_https_provisioning_substate"),
     "host_name": ubx.FieldSpec(wire_name="host_name"),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+    "resource_state": ubx.FieldSpec(wire_name="resource_state"),
+    "validation_data": ubx.FieldSpec(wire_name="validation_data"),
 }
 
 @dataclasses.dataclass

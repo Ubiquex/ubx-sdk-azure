@@ -8,8 +8,8 @@ type HealthcareApisServicesDescription_Value_Properties_AccessPolicies struct {
 }
 
 type HealthcareApisServicesDescription_Value_Properties_AcrConfiguration_OciArtifacts struct {
-	Digest any
-	ImageName any
+	Digest      any
+	ImageName   any
 	LoginServer any
 }
 
@@ -19,23 +19,23 @@ type HealthcareApisServicesDescription_Value_Properties_AcrConfiguration struct 
 }
 
 type HealthcareApisServicesDescription_Value_Properties_AuthenticationConfiguration struct {
-	Audience any
-	Authority any
+	Audience          any
+	Authority         any
 	SmartProxyEnabled any
 }
 
 type HealthcareApisServicesDescription_Value_Properties_CorsConfiguration struct {
 	AllowCredentials any
-	Headers any
-	MaxAge any
-	Methods any
-	Origins any
+	Headers          any
+	MaxAge           any
+	Methods          any
+	Origins          any
 }
 
 type HealthcareApisServicesDescription_Value_Properties_CosmosDbConfiguration struct {
 	CrossTenantCmkApplicationId any
-	KeyVaultKeyUri any
-	OfferThroughput any
+	KeyVaultKeyUri              any
+	OfferThroughput             any
 }
 
 type HealthcareApisServicesDescription_Value_Properties_ExportConfiguration struct {
@@ -43,8 +43,8 @@ type HealthcareApisServicesDescription_Value_Properties_ExportConfiguration stru
 }
 
 type HealthcareApisServicesDescription_Value_Properties_ImportConfiguration struct {
-	Enabled any
-	InitialImportMode any
+	Enabled              any
+	InitialImportMode    any
 	IntegrationDataStore any
 }
 
@@ -54,14 +54,14 @@ type HealthcareApisServicesDescription_Value_Properties_PrivateEndpointConnectio
 
 type HealthcareApisServicesDescription_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type HealthcareApisServicesDescription_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type HealthcareApisServicesDescription_Value_Properties_PrivateEndpointConnections struct {
@@ -69,24 +69,24 @@ type HealthcareApisServicesDescription_Value_Properties_PrivateEndpointConnectio
 }
 
 type HealthcareApisServicesDescription_Value_Properties struct {
-	AccessPolicies any
-	AcrConfiguration any
+	AccessPolicies              any
+	AcrConfiguration            any
 	AuthenticationConfiguration any
-	CorsConfiguration any
-	CosmosDbConfiguration any
-	ExportConfiguration any
-	ImportConfiguration any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
+	CorsConfiguration           any
+	CosmosDbConfiguration       any
+	ExportConfiguration         any
+	ImportConfiguration         any
+	PrivateEndpointConnections  any
+	ProvisioningState           any
+	PublicNetworkAccess         any
 }
 
 type HealthcareApisServicesDescription_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -107,6 +107,5 @@ type HealthcareApisServicesDescriptionAttrs struct {
 
 var HealthcareApisServicesDescription = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_services_description",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,44 +4,44 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiNetworkFeatures_Properties_HybridConnections_Properties struct {
-	BiztalkUri any
-	EntityConnectionString any
-	EntityName any
-	Hostname any
-	Port any
+	BiztalkUri               any
+	EntityConnectionString   any
+	EntityName               any
+	Hostname                 any
+	Port                     any
 	ResourceConnectionString any
-	ResourceType any
+	ResourceType             any
 }
 
 type OpenapiNetworkFeatures_Properties_HybridConnections struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiNetworkFeatures_Properties_HybridConnectionsV2_Properties struct {
-	Hostname any
-	Port any
-	RelayArmUri any
-	RelayName any
-	SendKeyName any
-	SendKeyValue any
+	Hostname            any
+	Port                any
+	RelayArmUri         any
+	RelayName           any
+	SendKeyName         any
+	SendKeyValue        any
 	ServiceBusNamespace any
-	ServiceBusSuffix any
+	ServiceBusSuffix    any
 }
 
 type OpenapiNetworkFeatures_Properties_HybridConnectionsV2 struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiNetworkFeatures_Properties_VirtualNetworkConnection_Routes_Properties struct {
-	EndAddress any
-	RouteType any
+	EndAddress   any
+	RouteType    any
 	StartAddress any
 }
 
 type OpenapiNetworkFeatures_Properties_VirtualNetworkConnection_Routes struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -84,7 +84,7 @@ type OpenapiNetworkFeaturesAttrs struct {
 	Name any
 	// NetworkFeatures resource specific properties
 	Properties any
-	View any
+	View       any
 }
 
 var OpenapiNetworkFeatures = ubx.DataSourceBinding{

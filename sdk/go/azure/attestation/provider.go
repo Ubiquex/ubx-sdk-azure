@@ -6,21 +6,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type Provider_Properties_PolicySigningCertificates_Keys struct {
 	Alg any
 	Crv any
-	D any
-	Dp any
-	Dq any
-	E any
-	K any
+	D   any
+	Dp  any
+	Dq  any
+	E   any
+	K   any
 	Kid any
 	Kty any
-	N any
-	P any
-	Q any
-	Qi any
+	N   any
+	P   any
+	Q   any
+	Qi  any
 	Use any
-	X any
+	X   any
 	X5c any
-	Y any
+	Y   any
 }
 
 type Provider_Properties_PolicySigningCertificates struct {
@@ -28,51 +28,119 @@ type Provider_Properties_PolicySigningCertificates struct {
 	Keys any
 }
 
+type Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	Id any
+}
+
+type Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	ActionsRequired any
+	Description     any
+	Status          any
+}
+
+type Provider_Properties_PrivateEndpointConnections_Properties struct {
+	PrivateEndpoint                   any
+	PrivateLinkServiceConnectionState any
+	ProvisioningState                 any
+}
+
+type Provider_Properties_PrivateEndpointConnections struct {
+	Properties any
+}
+
 type Provider_Properties struct {
+	// Gets the uri of attestation service
+	AttestUri                 any
 	PolicySigningCertificates any
+	// List of private endpoint connections associated with the attestation provider.
+	PrivateEndpointConnections any
 	// Controls whether traffic from the public network is allowed to access the Attestation Provider APIs.
 	PublicNetworkAccess any
+	// Status of attestation service.
+	Status any
 	// The setting that controls whether authentication is enabled or disabled for TPM Attestation REST APIs.
 	TpmAttestationAuthentication any
+	// Trust model for the attestation provider.
+	TrustModel any
 }
 
 var Provider_Properties_PolicySigningCertificates_KeysFields = ubx.FieldMap{
-		"Alg": ubx.FieldSpec{WireName: "alg"},
-		"Crv": ubx.FieldSpec{WireName: "crv"},
-		"D": ubx.FieldSpec{WireName: "d"},
-		"Dp": ubx.FieldSpec{WireName: "dp"},
-		"Dq": ubx.FieldSpec{WireName: "dq"},
-		"E": ubx.FieldSpec{WireName: "e"},
-		"K": ubx.FieldSpec{WireName: "k"},
-		"Kid": ubx.FieldSpec{WireName: "kid"},
-		"Kty": ubx.FieldSpec{WireName: "kty"},
-		"N": ubx.FieldSpec{WireName: "n"},
-		"P": ubx.FieldSpec{WireName: "p"},
-		"Q": ubx.FieldSpec{WireName: "q"},
-		"Qi": ubx.FieldSpec{WireName: "qi"},
-		"Use": ubx.FieldSpec{WireName: "use"},
-		"X": ubx.FieldSpec{WireName: "x"},
-		"X5c": ubx.FieldSpec{WireName: "x5c"},
-		"Y": ubx.FieldSpec{WireName: "y"},
-	}
+	"Alg": ubx.FieldSpec{WireName: "alg"},
+	"Crv": ubx.FieldSpec{WireName: "crv"},
+	"D":   ubx.FieldSpec{WireName: "d"},
+	"Dp":  ubx.FieldSpec{WireName: "dp"},
+	"Dq":  ubx.FieldSpec{WireName: "dq"},
+	"E":   ubx.FieldSpec{WireName: "e"},
+	"K":   ubx.FieldSpec{WireName: "k"},
+	"Kid": ubx.FieldSpec{WireName: "kid"},
+	"Kty": ubx.FieldSpec{WireName: "kty"},
+	"N":   ubx.FieldSpec{WireName: "n"},
+	"P":   ubx.FieldSpec{WireName: "p"},
+	"Q":   ubx.FieldSpec{WireName: "q"},
+	"Qi":  ubx.FieldSpec{WireName: "qi"},
+	"Use": ubx.FieldSpec{WireName: "use"},
+	"X":   ubx.FieldSpec{WireName: "x"},
+	"X5c": ubx.FieldSpec{WireName: "x5c"},
+	"Y":   ubx.FieldSpec{WireName: "y"},
+}
 
 var Provider_Properties_PolicySigningCertificatesFields = ubx.FieldMap{
-		"Keys": ubx.FieldSpec{
-			WireName: "keys",
-			Kind: "list",
-			Fields: Provider_Properties_PolicySigningCertificates_KeysFields,
-		},
-	}
+	"Keys": ubx.FieldSpec{
+		WireName: "keys",
+		Kind:     "list",
+		Fields:   Provider_Properties_PolicySigningCertificates_KeysFields,
+	},
+}
+
+var Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
+
+var Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
+
+var Provider_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
+
+var Provider_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Provider_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var Provider_PropertiesFields = ubx.FieldMap{
-		"PolicySigningCertificates": ubx.FieldSpec{
-			WireName: "policy_signing_certificates",
-			Kind: "object",
-			Fields: Provider_Properties_PolicySigningCertificatesFields,
-		},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"TpmAttestationAuthentication": ubx.FieldSpec{WireName: "tpm_attestation_authentication"},
-	}
+	"AttestUri": ubx.FieldSpec{WireName: "attest_uri"},
+	"PolicySigningCertificates": ubx.FieldSpec{
+		WireName: "policy_signing_certificates",
+		Kind:     "object",
+		Fields:   Provider_Properties_PolicySigningCertificatesFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   Provider_Properties_PrivateEndpointConnectionsFields,
+	},
+	"PublicNetworkAccess":          ubx.FieldSpec{WireName: "public_network_access"},
+	"Status":                       ubx.FieldSpec{WireName: "status"},
+	"TpmAttestationAuthentication": ubx.FieldSpec{WireName: "tpm_attestation_authentication"},
+	"TrustModel":                   ubx.FieldSpec{WireName: "trust_model"},
+}
 
 type ProviderConfig struct {
 	// The supported Azure location where the attestation provider should be created.
@@ -98,8 +166,8 @@ var Provider = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Provider_PropertiesFields,
+			Kind:     "object",
+			Fields:   Provider_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

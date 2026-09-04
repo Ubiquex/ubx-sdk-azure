@@ -4,7 +4,7 @@ package servicefabric
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApplicationResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -27,25 +27,25 @@ type ApplicationResource_Properties struct {
 }
 
 var ApplicationResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var ApplicationResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: ApplicationResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   ApplicationResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var ApplicationResource_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TypeName": ubx.FieldSpec{WireName: "type_name"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"TypeName":          ubx.FieldSpec{WireName: "type_name"},
+}
 
 type ApplicationResourceConfig struct {
 	// Describes the managed identities for an Azure resource.
@@ -66,13 +66,13 @@ var ApplicationResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ApplicationResource_IdentityFields,
+			Kind:     "object",
+			Fields:   ApplicationResource_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApplicationResource_PropertiesFields,
 		},
 	},
 }

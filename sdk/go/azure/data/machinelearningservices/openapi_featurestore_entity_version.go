@@ -5,13 +5,13 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFeaturestoreEntityVersion_Value_Properties_IndexColumns struct {
 	ColumnName any
-	DataType any
+	DataType   any
 }
 
 type OpenapiFeaturestoreEntityVersion_Value_Properties struct {
-	IndexColumns any
+	IndexColumns      any
 	ProvisioningState any
-	Stage any
+	Stage             any
 }
 
 type OpenapiFeaturestoreEntityVersion_Value struct {
@@ -19,47 +19,47 @@ type OpenapiFeaturestoreEntityVersion_Value struct {
 }
 
 type OpenapiFeaturestoreEntityVersionConfig struct {
-	CreatedBy any
-	Description any
-	ListViewType any
-	Name any
-	PageSize any
-	Stage any
-	Tags any
-	Version any
-	VersionName any
+	CreatedBy     any
+	Description   any
+	ListViewType  any
+	Name          any
+	PageSize      any
+	Stage         any
+	Tags          any
+	Version       any
+	VersionName   any
 	WorkspaceName any
 }
 
 type OpenapiFeaturestoreEntityVersionAttrs struct {
-	CreatedBy any
-	Description any
+	CreatedBy    any
+	Description  any
 	ListViewType any
-	Name any
+	Name         any
 	// The link to the next page of items
 	NextLink any
 	PageSize any
-	Stage any
-	Tags any
+	Stage    any
+	Tags     any
 	// The FeaturestoreEntityVersion items on this page
-	Value any
-	Version any
-	VersionName any
+	Value         any
+	Version       any
+	VersionName   any
 	WorkspaceName any
 }
 
 var OpenapiFeaturestoreEntityVersion = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_featurestore_entity_version",
 	Fields: ubx.FieldMap{
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"PageSize": ubx.FieldSpec{WireName: "page_size"},
-		"Stage": ubx.FieldSpec{WireName: "stage"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-		"VersionName": ubx.FieldSpec{WireName: "version_name"},
+		"CreatedBy":     ubx.FieldSpec{WireName: "created_by"},
+		"Description":   ubx.FieldSpec{WireName: "description"},
+		"ListViewType":  ubx.FieldSpec{WireName: "list_view_type"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
+		"PageSize":      ubx.FieldSpec{WireName: "page_size"},
+		"Stage":         ubx.FieldSpec{WireName: "stage"},
+		"Tags":          ubx.FieldSpec{WireName: "tags"},
+		"Version":       ubx.FieldSpec{WireName: "version"},
+		"VersionName":   ubx.FieldSpec{WireName: "version_name"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

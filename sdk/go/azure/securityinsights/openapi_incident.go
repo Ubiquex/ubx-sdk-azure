@@ -78,60 +78,60 @@ type OpenapiIncident_Properties struct {
 }
 
 var OpenapiIncident_Properties_AdditionalDataFields = ubx.FieldMap{
-		"AlertProductNames": ubx.FieldSpec{WireName: "alert_product_names"},
-		"AlertsCount": ubx.FieldSpec{WireName: "alerts_count"},
-		"BookmarksCount": ubx.FieldSpec{WireName: "bookmarks_count"},
-		"CommentsCount": ubx.FieldSpec{WireName: "comments_count"},
-		"ProviderIncidentUrl": ubx.FieldSpec{WireName: "provider_incident_url"},
-		"Tactics": ubx.FieldSpec{WireName: "tactics"},
-	}
+	"AlertProductNames":   ubx.FieldSpec{WireName: "alert_product_names"},
+	"AlertsCount":         ubx.FieldSpec{WireName: "alerts_count"},
+	"BookmarksCount":      ubx.FieldSpec{WireName: "bookmarks_count"},
+	"CommentsCount":       ubx.FieldSpec{WireName: "comments_count"},
+	"ProviderIncidentUrl": ubx.FieldSpec{WireName: "provider_incident_url"},
+	"Tactics":             ubx.FieldSpec{WireName: "tactics"},
+}
 
 var OpenapiIncident_Properties_LabelsFields = ubx.FieldMap{
-		"LabelName": ubx.FieldSpec{WireName: "label_name"},
-		"LabelType": ubx.FieldSpec{WireName: "label_type"},
-	}
+	"LabelName": ubx.FieldSpec{WireName: "label_name"},
+	"LabelType": ubx.FieldSpec{WireName: "label_type"},
+}
 
 var OpenapiIncident_Properties_OwnerFields = ubx.FieldMap{
-		"AssignedTo": ubx.FieldSpec{WireName: "assigned_to"},
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"OwnerType": ubx.FieldSpec{WireName: "owner_type"},
-		"UserPrincipalName": ubx.FieldSpec{WireName: "user_principal_name"},
-	}
+	"AssignedTo":        ubx.FieldSpec{WireName: "assigned_to"},
+	"Email":             ubx.FieldSpec{WireName: "email"},
+	"ObjectId":          ubx.FieldSpec{WireName: "object_id"},
+	"OwnerType":         ubx.FieldSpec{WireName: "owner_type"},
+	"UserPrincipalName": ubx.FieldSpec{WireName: "user_principal_name"},
+}
 
 var OpenapiIncident_PropertiesFields = ubx.FieldMap{
-		"AdditionalData": ubx.FieldSpec{
-			WireName: "additional_data",
-			Kind: "object",
-			Fields: OpenapiIncident_Properties_AdditionalDataFields,
-		},
-		"Classification": ubx.FieldSpec{WireName: "classification"},
-		"ClassificationComment": ubx.FieldSpec{WireName: "classification_comment"},
-		"ClassificationReason": ubx.FieldSpec{WireName: "classification_reason"},
-		"CreatedTimeUtc": ubx.FieldSpec{WireName: "created_time_utc"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"FirstActivityTimeUtc": ubx.FieldSpec{WireName: "first_activity_time_utc"},
-		"IncidentNumber": ubx.FieldSpec{WireName: "incident_number"},
-		"IncidentUrl": ubx.FieldSpec{WireName: "incident_url"},
-		"Labels": ubx.FieldSpec{
-			WireName: "labels",
-			Kind: "list",
-			Fields: OpenapiIncident_Properties_LabelsFields,
-		},
-		"LastActivityTimeUtc": ubx.FieldSpec{WireName: "last_activity_time_utc"},
-		"LastModifiedTimeUtc": ubx.FieldSpec{WireName: "last_modified_time_utc"},
-		"Owner": ubx.FieldSpec{
-			WireName: "owner",
-			Kind: "object",
-			Fields: OpenapiIncident_Properties_OwnerFields,
-		},
-		"ProviderIncidentId": ubx.FieldSpec{WireName: "provider_incident_id"},
-		"ProviderName": ubx.FieldSpec{WireName: "provider_name"},
-		"RelatedAnalyticRuleIds": ubx.FieldSpec{WireName: "related_analytic_rule_ids"},
-		"Severity": ubx.FieldSpec{WireName: "severity"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-	}
+	"AdditionalData": ubx.FieldSpec{
+		WireName: "additional_data",
+		Kind:     "object",
+		Fields:   OpenapiIncident_Properties_AdditionalDataFields,
+	},
+	"Classification":        ubx.FieldSpec{WireName: "classification"},
+	"ClassificationComment": ubx.FieldSpec{WireName: "classification_comment"},
+	"ClassificationReason":  ubx.FieldSpec{WireName: "classification_reason"},
+	"CreatedTimeUtc":        ubx.FieldSpec{WireName: "created_time_utc"},
+	"Description":           ubx.FieldSpec{WireName: "description"},
+	"FirstActivityTimeUtc":  ubx.FieldSpec{WireName: "first_activity_time_utc"},
+	"IncidentNumber":        ubx.FieldSpec{WireName: "incident_number"},
+	"IncidentUrl":           ubx.FieldSpec{WireName: "incident_url"},
+	"Labels": ubx.FieldSpec{
+		WireName: "labels",
+		Kind:     "list",
+		Fields:   OpenapiIncident_Properties_LabelsFields,
+	},
+	"LastActivityTimeUtc": ubx.FieldSpec{WireName: "last_activity_time_utc"},
+	"LastModifiedTimeUtc": ubx.FieldSpec{WireName: "last_modified_time_utc"},
+	"Owner": ubx.FieldSpec{
+		WireName: "owner",
+		Kind:     "object",
+		Fields:   OpenapiIncident_Properties_OwnerFields,
+	},
+	"ProviderIncidentId":     ubx.FieldSpec{WireName: "provider_incident_id"},
+	"ProviderName":           ubx.FieldSpec{WireName: "provider_name"},
+	"RelatedAnalyticRuleIds": ubx.FieldSpec{WireName: "related_analytic_rule_ids"},
+	"Severity":               ubx.FieldSpec{WireName: "severity"},
+	"Status":                 ubx.FieldSpec{WireName: "status"},
+	"Title":                  ubx.FieldSpec{WireName: "title"},
+}
 
 type OpenapiIncidentConfig struct {
 	// Etag of the azure resource
@@ -153,8 +153,8 @@ var OpenapiIncident = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiIncident_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiIncident_PropertiesFields,
 		},
 	},
 }

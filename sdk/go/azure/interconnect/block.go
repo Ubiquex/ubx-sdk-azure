@@ -13,16 +13,11 @@ type Block_Placement struct {
 }
 
 type Block_Properties_InstanceView_Statuses struct {
-	// The status code for the instance view of the Azure interconnect block. This is a machine-readable code that indicates the current status. (AI-inferred)
-	Code any
-	// A human-readable string that describes the current status of the Azure interconnect block. (AI-inferred)
+	Code          any
 	DisplayStatus any
-	// The severity level of the status. Possible values are Info, Warning, and Error. (AI-inferred)
-	Level any
-	// A human-readable message providing additional details about the corresponding status in the instance view. (AI-inferred)
-	Message any
-	// The time at which the status was recorded, typically in a date-time format. (AI-inferred)
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type Block_Properties_InstanceView struct {
@@ -64,59 +59,59 @@ type Block_Sku struct {
 }
 
 var Block_PlacementFields = ubx.FieldMap{
-		"ExcludeZones": ubx.FieldSpec{WireName: "exclude_zones"},
-		"IncludeZones": ubx.FieldSpec{WireName: "include_zones"},
-		"ZonePlacementPolicy": ubx.FieldSpec{WireName: "zone_placement_policy"},
-	}
+	"ExcludeZones":        ubx.FieldSpec{WireName: "exclude_zones"},
+	"IncludeZones":        ubx.FieldSpec{WireName: "include_zones"},
+	"ZonePlacementPolicy": ubx.FieldSpec{WireName: "zone_placement_policy"},
+}
 
 var Block_Properties_InstanceView_StatusesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var Block_Properties_InstanceViewFields = ubx.FieldMap{
-		"CurrentCapacity": ubx.FieldSpec{WireName: "current_capacity"},
-		"Statuses": ubx.FieldSpec{
-			WireName: "statuses",
-			Kind: "list",
-			Fields: Block_Properties_InstanceView_StatusesFields,
-		},
-	}
+	"CurrentCapacity": ubx.FieldSpec{WireName: "current_capacity"},
+	"Statuses": ubx.FieldSpec{
+		WireName: "statuses",
+		Kind:     "list",
+		Fields:   Block_Properties_InstanceView_StatusesFields,
+	},
+}
 
 var Block_Properties_InterconnectGroupFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Block_PropertiesFields = ubx.FieldMap{
-		"InstanceView": ubx.FieldSpec{
-			WireName: "instance_view",
-			Kind: "object",
-			Fields: Block_Properties_InstanceViewFields,
-		},
-		"InterconnectBlockId": ubx.FieldSpec{WireName: "interconnect_block_id"},
-		"InterconnectGroup": ubx.FieldSpec{
-			WireName: "interconnect_group",
-			Kind: "object",
-			Fields: Block_Properties_InterconnectGroupFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ProvisioningTime": ubx.FieldSpec{WireName: "provisioning_time"},
-		"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
-		"VirtualMachinesAssociated": ubx.FieldSpec{
-			WireName: "virtual_machines_associated",
-			Kind: "list",
-			Fields: Block_Properties_InterconnectGroupFields,
-		},
-	}
+	"InstanceView": ubx.FieldSpec{
+		WireName: "instance_view",
+		Kind:     "object",
+		Fields:   Block_Properties_InstanceViewFields,
+	},
+	"InterconnectBlockId": ubx.FieldSpec{WireName: "interconnect_block_id"},
+	"InterconnectGroup": ubx.FieldSpec{
+		WireName: "interconnect_group",
+		Kind:     "object",
+		Fields:   Block_Properties_InterconnectGroupFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ProvisioningTime":  ubx.FieldSpec{WireName: "provisioning_time"},
+	"TimeCreated":       ubx.FieldSpec{WireName: "time_created"},
+	"VirtualMachinesAssociated": ubx.FieldSpec{
+		WireName: "virtual_machines_associated",
+		Kind:     "list",
+		Fields:   Block_Properties_InterconnectGroupFields,
+	},
+}
 
 var Block_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type BlockConfig struct {
 	// Describes the user-defined constraints for resource hardware placement.
@@ -145,18 +140,18 @@ var Block = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Placement": ubx.FieldSpec{
 			WireName: "placement",
-			Kind: "object",
-			Fields: Block_PlacementFields,
+			Kind:     "object",
+			Fields:   Block_PlacementFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Block_PropertiesFields,
+			Kind:     "object",
+			Fields:   Block_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Block_SkuFields,
+			Kind:     "object",
+			Fields:   Block_SkuFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

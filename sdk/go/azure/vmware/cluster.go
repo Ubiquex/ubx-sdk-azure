@@ -30,20 +30,20 @@ type Cluster_Sku struct {
 }
 
 var Cluster_PropertiesFields = ubx.FieldMap{
-		"ClusterId": ubx.FieldSpec{WireName: "cluster_id"},
-		"ClusterSize": ubx.FieldSpec{WireName: "cluster_size"},
-		"Hosts": ubx.FieldSpec{WireName: "hosts"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VsanDatastoreName": ubx.FieldSpec{WireName: "vsan_datastore_name"},
-	}
+	"ClusterId":         ubx.FieldSpec{WireName: "cluster_id"},
+	"ClusterSize":       ubx.FieldSpec{WireName: "cluster_size"},
+	"Hosts":             ubx.FieldSpec{WireName: "hosts"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VsanDatastoreName": ubx.FieldSpec{WireName: "vsan_datastore_name"},
+}
 
 var Cluster_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type ClusterConfig struct {
 	// The properties of a cluster
@@ -64,13 +64,13 @@ var Cluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Cluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   Cluster_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Cluster_SkuFields,
+			Kind:     "object",
+			Fields:   Cluster_SkuFields,
 		},
 	},
 }

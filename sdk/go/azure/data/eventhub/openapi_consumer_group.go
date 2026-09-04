@@ -4,23 +4,23 @@ package eventhub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiConsumerGroup_Value_Properties struct {
-	CreatedAt any
-	UpdatedAt any
+	CreatedAt    any
+	UpdatedAt    any
 	UserMetadata any
 }
 
 type OpenapiConsumerGroup_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type OpenapiConsumerGroupConfig struct {
-	EventHubName any
+	EventHubName  any
 	NamespaceName any
 }
 
 type OpenapiConsumerGroupAttrs struct {
-	EventHubName any
+	EventHubName  any
 	NamespaceName any
 	// The link to the next page of items
 	NextLink any
@@ -31,7 +31,7 @@ type OpenapiConsumerGroupAttrs struct {
 var OpenapiConsumerGroup = ubx.DataSourceBinding{
 	WireType: "azure_eventhub_openapi_consumer_group",
 	Fields: ubx.FieldMap{
-		"EventHubName": ubx.FieldSpec{WireName: "event_hub_name"},
+		"EventHubName":  ubx.FieldSpec{WireName: "event_hub_name"},
 		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
 	},
 }

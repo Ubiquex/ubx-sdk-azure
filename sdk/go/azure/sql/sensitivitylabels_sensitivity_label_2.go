@@ -17,7 +17,7 @@ type SensitivitylabelsSensitivityLabel2_Properties struct {
 	LabelId any
 	// The label name.
 	LabelName any
-	Rank any
+	Rank      any
 	// The schema name.
 	SchemaName any
 	// The table name.
@@ -25,21 +25,19 @@ type SensitivitylabelsSensitivityLabel2_Properties struct {
 }
 
 var SensitivitylabelsSensitivityLabel2_PropertiesFields = ubx.FieldMap{
-		"ClientClassificationSource": ubx.FieldSpec{WireName: "client_classification_source"},
-		"ColumnName": ubx.FieldSpec{WireName: "column_name"},
-		"InformationType": ubx.FieldSpec{WireName: "information_type"},
-		"InformationTypeId": ubx.FieldSpec{WireName: "information_type_id"},
-		"IsDisabled": ubx.FieldSpec{WireName: "is_disabled"},
-		"LabelId": ubx.FieldSpec{WireName: "label_id"},
-		"LabelName": ubx.FieldSpec{WireName: "label_name"},
-		"Rank": ubx.FieldSpec{WireName: "rank"},
-		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
-		"TableName": ubx.FieldSpec{WireName: "table_name"},
-	}
+	"ClientClassificationSource": ubx.FieldSpec{WireName: "client_classification_source"},
+	"ColumnName":                 ubx.FieldSpec{WireName: "column_name"},
+	"InformationType":            ubx.FieldSpec{WireName: "information_type"},
+	"InformationTypeId":          ubx.FieldSpec{WireName: "information_type_id"},
+	"IsDisabled":                 ubx.FieldSpec{WireName: "is_disabled"},
+	"LabelId":                    ubx.FieldSpec{WireName: "label_id"},
+	"LabelName":                  ubx.FieldSpec{WireName: "label_name"},
+	"Rank":                       ubx.FieldSpec{WireName: "rank"},
+	"SchemaName":                 ubx.FieldSpec{WireName: "schema_name"},
+	"TableName":                  ubx.FieldSpec{WireName: "table_name"},
+}
 
 type SensitivitylabelsSensitivityLabel2Config struct {
-	// Resource that manages the sensitivity label.
-	ManagedBy any
 	// Properties of a sensitivity label.
 	Properties any
 }
@@ -54,11 +52,10 @@ type SensitivitylabelsSensitivityLabel2Attrs struct {
 var SensitivitylabelsSensitivityLabel2 = ubx.ResourceBinding{
 	WireType: "azure_sql_sensitivitylabels_sensitivity_label_2",
 	Fields: ubx.FieldMap{
-		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SensitivitylabelsSensitivityLabel2_PropertiesFields,
+			Kind:     "object",
+			Fields:   SensitivitylabelsSensitivityLabel2_PropertiesFields,
 		},
 	},
 }

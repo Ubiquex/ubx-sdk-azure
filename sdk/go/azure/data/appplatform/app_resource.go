@@ -4,28 +4,28 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AppResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type AppResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type AppResource_Value_Properties_CustomPersistentDisks_CustomPersistentDiskProperties struct {
 	EnableSubPath any
-	MountOptions any
-	MountPath any
-	ReadOnly any
-	Type any
+	MountOptions  any
+	MountPath     any
+	ReadOnly      any
+	Type          any
 }
 
 type AppResource_Value_Properties_CustomPersistentDisks struct {
 	CustomPersistentDiskProperties any
-	StorageId any
+	StorageId                      any
 }
 
 type AppResource_Value_Properties_IngressSettings_ClientAuth struct {
@@ -33,71 +33,71 @@ type AppResource_Value_Properties_IngressSettings_ClientAuth struct {
 }
 
 type AppResource_Value_Properties_IngressSettings struct {
-	BackendProtocol any
-	ClientAuth any
+	BackendProtocol      any
+	ClientAuth           any
 	ReadTimeoutInSeconds any
 	SendTimeoutInSeconds any
-	SessionAffinity any
-	SessionCookieMaxAge any
+	SessionAffinity      any
+	SessionCookieMaxAge  any
 }
 
 type AppResource_Value_Properties_LoadedCertificates struct {
 	LoadTrustStore any
-	ResourceId any
+	ResourceId     any
 }
 
 type AppResource_Value_Properties_PersistentDisk struct {
 	MountPath any
-	SizeInGb any
-	UsedInGb any
+	SizeInGb  any
+	UsedInGb  any
 }
 
 type AppResource_Value_Properties_TemporaryDisk struct {
 	MountPath any
-	SizeInGb any
+	SizeInGb  any
 }
 
 type AppResource_Value_Properties_VnetAddons struct {
-	PublicEndpoint any
+	PublicEndpoint    any
 	PublicEndpointUrl any
 }
 
 type AppResource_Value_Properties struct {
-	AddonConfigs any
+	AddonConfigs          any
 	CustomPersistentDisks any
-	EnableEndToEndTls any
-	Fqdn any
-	HttpsOnly any
-	IngressSettings any
-	LoadedCertificates any
-	PersistentDisk any
-	ProvisioningState any
-	Public any
-	TemporaryDisk any
-	Url any
-	VnetAddons any
+	EnableEndToEndTls     any
+	Fqdn                  any
+	HttpsOnly             any
+	IngressSettings       any
+	LoadedCertificates    any
+	PersistentDisk        any
+	ProvisioningState     any
+	Public                any
+	TemporaryDisk         any
+	Url                   any
+	VnetAddons            any
 }
 
 type AppResource_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
 }
 
 type AppResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type AppResourceAttrs struct {
 	ApiVersion any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of App resources
 	Value any
 }
@@ -105,9 +105,9 @@ type AppResourceAttrs struct {
 var AppResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_app_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

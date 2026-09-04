@@ -4,7 +4,7 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCluster_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -21,8 +21,8 @@ type OpenapiCluster_Identity struct {
 
 type OpenapiCluster_Properties_AssociatedWorkspaces struct {
 	AssociateDate any
-	ResourceId any
-	WorkspaceId any
+	ResourceId    any
+	WorkspaceId   any
 	WorkspaceName any
 }
 
@@ -92,83 +92,83 @@ type OpenapiCluster_Sku struct {
 }
 
 var OpenapiCluster_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiCluster_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiCluster_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiCluster_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiCluster_Properties_AssociatedWorkspacesFields = ubx.FieldMap{
-		"AssociateDate": ubx.FieldSpec{WireName: "associate_date"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"WorkspaceId": ubx.FieldSpec{WireName: "workspace_id"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
-	}
+	"AssociateDate": ubx.FieldSpec{WireName: "associate_date"},
+	"ResourceId":    ubx.FieldSpec{WireName: "resource_id"},
+	"WorkspaceId":   ubx.FieldSpec{WireName: "workspace_id"},
+	"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+}
 
 var OpenapiCluster_Properties_CapacityReservationPropertiesFields = ubx.FieldMap{
-		"LastSkuUpdate": ubx.FieldSpec{WireName: "last_sku_update"},
-		"MinCapacity": ubx.FieldSpec{WireName: "min_capacity"},
-	}
+	"LastSkuUpdate": ubx.FieldSpec{WireName: "last_sku_update"},
+	"MinCapacity":   ubx.FieldSpec{WireName: "min_capacity"},
+}
 
 var OpenapiCluster_Properties_KeyVaultPropertiesFields = ubx.FieldMap{
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyRsaSize": ubx.FieldSpec{WireName: "key_rsa_size"},
-		"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-	}
+	"KeyName":     ubx.FieldSpec{WireName: "key_name"},
+	"KeyRsaSize":  ubx.FieldSpec{WireName: "key_rsa_size"},
+	"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
+	"KeyVersion":  ubx.FieldSpec{WireName: "key_version"},
+}
 
 var OpenapiCluster_Properties_ReplicationFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"IsAvailabilityZonesEnabled": ubx.FieldSpec{WireName: "is_availability_zones_enabled"},
-		"LastModifiedDate": ubx.FieldSpec{WireName: "last_modified_date"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"CreatedDate":                ubx.FieldSpec{WireName: "created_date"},
+	"Enabled":                    ubx.FieldSpec{WireName: "enabled"},
+	"IsAvailabilityZonesEnabled": ubx.FieldSpec{WireName: "is_availability_zones_enabled"},
+	"LastModifiedDate":           ubx.FieldSpec{WireName: "last_modified_date"},
+	"Location":                   ubx.FieldSpec{WireName: "location"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiCluster_PropertiesFields = ubx.FieldMap{
-		"AssociatedWorkspaces": ubx.FieldSpec{
-			WireName: "associated_workspaces",
-			Kind: "list",
-			Fields: OpenapiCluster_Properties_AssociatedWorkspacesFields,
-		},
-		"BillingType": ubx.FieldSpec{WireName: "billing_type"},
-		"CapacityReservationProperties": ubx.FieldSpec{
-			WireName: "capacity_reservation_properties",
-			Kind: "object",
-			Fields: OpenapiCluster_Properties_CapacityReservationPropertiesFields,
-		},
-		"ClusterId": ubx.FieldSpec{WireName: "cluster_id"},
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"IsAvailabilityZonesEnabled": ubx.FieldSpec{WireName: "is_availability_zones_enabled"},
-		"IsDoubleEncryptionEnabled": ubx.FieldSpec{WireName: "is_double_encryption_enabled"},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: OpenapiCluster_Properties_KeyVaultPropertiesFields,
-		},
-		"LastModifiedDate": ubx.FieldSpec{WireName: "last_modified_date"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Replication": ubx.FieldSpec{
-			WireName: "replication",
-			Kind: "object",
-			Fields: OpenapiCluster_Properties_ReplicationFields,
-		},
-	}
+	"AssociatedWorkspaces": ubx.FieldSpec{
+		WireName: "associated_workspaces",
+		Kind:     "list",
+		Fields:   OpenapiCluster_Properties_AssociatedWorkspacesFields,
+	},
+	"BillingType": ubx.FieldSpec{WireName: "billing_type"},
+	"CapacityReservationProperties": ubx.FieldSpec{
+		WireName: "capacity_reservation_properties",
+		Kind:     "object",
+		Fields:   OpenapiCluster_Properties_CapacityReservationPropertiesFields,
+	},
+	"ClusterId":                  ubx.FieldSpec{WireName: "cluster_id"},
+	"CreatedDate":                ubx.FieldSpec{WireName: "created_date"},
+	"IsAvailabilityZonesEnabled": ubx.FieldSpec{WireName: "is_availability_zones_enabled"},
+	"IsDoubleEncryptionEnabled":  ubx.FieldSpec{WireName: "is_double_encryption_enabled"},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   OpenapiCluster_Properties_KeyVaultPropertiesFields,
+	},
+	"LastModifiedDate":  ubx.FieldSpec{WireName: "last_modified_date"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Replication": ubx.FieldSpec{
+		WireName: "replication",
+		Kind:     "object",
+		Fields:   OpenapiCluster_Properties_ReplicationFields,
+	},
+}
 
 var OpenapiCluster_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+}
 
 type OpenapiClusterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -193,18 +193,18 @@ var OpenapiCluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiCluster_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiCluster_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCluster_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiCluster_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiCluster_SkuFields,
 		},
 	},
 }

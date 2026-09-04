@@ -8,7 +8,7 @@ type SqlpoolTransparentDataEncryption_Value_Properties struct {
 }
 
 type SqlpoolTransparentDataEncryption_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -18,7 +18,7 @@ type SqlpoolTransparentDataEncryptionConfig struct {
 
 type SqlpoolTransparentDataEncryptionAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink    any
 	SqlPoolName any
 	// Array of results.
 	Value any

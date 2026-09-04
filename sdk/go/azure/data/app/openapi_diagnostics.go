@@ -4,66 +4,66 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDiagnostics_Value_Properties_DataProviderMetadata_PropertyBag struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiDiagnostics_Value_Properties_DataProviderMetadata struct {
-	PropertyBag any
+	PropertyBag  any
 	ProviderName any
 }
 
 type OpenapiDiagnostics_Value_Properties_Dataset_RenderingProperties struct {
 	Description any
-	IsVisible any
-	Title any
-	Type any
+	IsVisible   any
+	Title       any
+	Type        any
 }
 
 type OpenapiDiagnostics_Value_Properties_Dataset_Table_Columns struct {
 	ColumnName any
 	ColumnType any
-	DataType any
+	DataType   any
 }
 
 type OpenapiDiagnostics_Value_Properties_Dataset_Table struct {
-	Columns any
-	Rows any
+	Columns   any
+	Rows      any
 	TableName any
 }
 
 type OpenapiDiagnostics_Value_Properties_Dataset struct {
 	RenderingProperties any
-	Table any
+	Table               any
 }
 
 type OpenapiDiagnostics_Value_Properties_Metadata_SupportTopicList struct {
-	Id any
+	Id    any
 	PesId any
 }
 
 type OpenapiDiagnostics_Value_Properties_Metadata struct {
-	AnalysisTypes any
-	Author any
-	Category any
-	Description any
-	Id any
-	Name any
-	Score any
+	AnalysisTypes    any
+	Author           any
+	Category         any
+	Description      any
+	Id               any
+	Name             any
+	Score            any
 	SupportTopicList any
-	Type any
+	Type             any
 }
 
 type OpenapiDiagnostics_Value_Properties_Status struct {
-	Message any
+	Message  any
 	StatusId any
 }
 
 type OpenapiDiagnostics_Value_Properties struct {
 	DataProviderMetadata any
-	Dataset any
-	Metadata any
-	Status any
+	Dataset              any
+	Metadata             any
+	Status               any
 }
 
 type OpenapiDiagnostics_Value struct {

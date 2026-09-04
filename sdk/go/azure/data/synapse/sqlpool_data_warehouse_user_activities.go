@@ -10,13 +10,13 @@ type SqlpoolDataWarehouseUserActivities_Properties struct {
 
 type SqlpoolDataWarehouseUserActivitiesConfig struct {
 	DataWarehouseUserActivityName any
-	SqlPoolName any
+	SqlPoolName                   any
 }
 
 type SqlpoolDataWarehouseUserActivitiesAttrs struct {
 	DataWarehouseUserActivityName any
 	// User activities of a data warehouse. This currently includes the count of running or suspended queries. For more information, please view the sys.dm_pdw_exec_requests dynamic management view (DMV).
-	Properties any
+	Properties  any
 	SqlPoolName any
 }
 
@@ -24,6 +24,6 @@ var SqlpoolDataWarehouseUserActivities = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_data_warehouse_user_activities",
 	Fields: ubx.FieldMap{
 		"DataWarehouseUserActivityName": ubx.FieldSpec{WireName: "data_warehouse_user_activity_name"},
-		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
+		"SqlPoolName":                   ubx.FieldSpec{WireName: "sql_pool_name"},
 	},
 }

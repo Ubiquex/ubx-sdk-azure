@@ -29,45 +29,54 @@ type OpenapiDscNodeConfiguration_Properties_Source struct {
 type OpenapiDscNodeConfiguration_Properties struct {
 	// The Dsc configuration property associated with the entity.
 	Configuration any
+	// Gets or sets creation time.
+	CreationTime any
 	// If a new build version of NodeConfiguration is required.
 	IncrementNodeConfigurationBuild any
+	// Gets or sets the last modified time.
+	LastModifiedTime any
+	// Number of nodes with this node configuration assigned
+	NodeCount any
 	// Definition of the content source.
 	Source any
 }
 
 var OpenapiDscNodeConfiguration_Properties_ConfigurationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiDscNodeConfiguration_Properties_Source_HashFields = ubx.FieldMap{
-		"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiDscNodeConfiguration_Properties_SourceFields = ubx.FieldMap{
-		"Hash": ubx.FieldSpec{
-			WireName: "hash",
-			Kind: "object",
-			Fields: OpenapiDscNodeConfiguration_Properties_Source_HashFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Hash": ubx.FieldSpec{
+		WireName: "hash",
+		Kind:     "object",
+		Fields:   OpenapiDscNodeConfiguration_Properties_Source_HashFields,
+	},
+	"Type":    ubx.FieldSpec{WireName: "type"},
+	"Value":   ubx.FieldSpec{WireName: "value"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiDscNodeConfiguration_PropertiesFields = ubx.FieldMap{
-		"Configuration": ubx.FieldSpec{
-			WireName: "configuration",
-			Kind: "object",
-			Fields: OpenapiDscNodeConfiguration_Properties_ConfigurationFields,
-		},
-		"IncrementNodeConfigurationBuild": ubx.FieldSpec{WireName: "increment_node_configuration_build"},
-		"Source": ubx.FieldSpec{
-			WireName: "source",
-			Kind: "object",
-			Fields: OpenapiDscNodeConfiguration_Properties_SourceFields,
-		},
-	}
+	"Configuration": ubx.FieldSpec{
+		WireName: "configuration",
+		Kind:     "object",
+		Fields:   OpenapiDscNodeConfiguration_Properties_ConfigurationFields,
+	},
+	"CreationTime":                    ubx.FieldSpec{WireName: "creation_time"},
+	"IncrementNodeConfigurationBuild": ubx.FieldSpec{WireName: "increment_node_configuration_build"},
+	"LastModifiedTime":                ubx.FieldSpec{WireName: "last_modified_time"},
+	"NodeCount":                       ubx.FieldSpec{WireName: "node_count"},
+	"Source": ubx.FieldSpec{
+		WireName: "source",
+		Kind:     "object",
+		Fields:   OpenapiDscNodeConfiguration_Properties_SourceFields,
+	},
+}
 
 type OpenapiDscNodeConfigurationConfig struct {
 	// Name of the node configuration.
@@ -93,8 +102,8 @@ var OpenapiDscNodeConfiguration = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDscNodeConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDscNodeConfiguration_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

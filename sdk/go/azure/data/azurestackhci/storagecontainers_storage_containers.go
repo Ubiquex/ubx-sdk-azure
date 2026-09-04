@@ -10,26 +10,26 @@ type StoragecontainersStorageContainers_Value_ExtendedLocation struct {
 
 type StoragecontainersStorageContainers_Value_Properties_Status_ProvisioningStatus struct {
 	OperationId any
-	Status any
+	Status      any
 }
 
 type StoragecontainersStorageContainers_Value_Properties_Status struct {
-	AvailableSizeMb any
-	ContainerSizeMb any
-	ErrorCode any
-	ErrorMessage any
+	AvailableSizeMb    any
+	ContainerSizeMb    any
+	ErrorCode          any
+	ErrorMessage       any
 	ProvisioningStatus any
 }
 
 type StoragecontainersStorageContainers_Value_Properties struct {
-	Path any
+	Path              any
 	ProvisioningState any
-	Status any
+	Status            any
 }
 
 type StoragecontainersStorageContainers_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type StoragecontainersStorageContainersConfig struct {
@@ -37,11 +37,10 @@ type StoragecontainersStorageContainersConfig struct {
 
 type StoragecontainersStorageContainersAttrs struct {
 	NextLink any
-	Value any
+	Value    any
 }
 
 var StoragecontainersStorageContainers = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_storagecontainers_storage_containers",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

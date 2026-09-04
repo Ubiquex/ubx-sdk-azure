@@ -4,16 +4,16 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiSqlRoleDefinitionGetResults_Value_Properties_Permissions struct {
-	DataActions any
-	Id any
+	DataActions    any
+	Id             any
 	NotDataActions any
 }
 
 type DbOpenapiSqlRoleDefinitionGetResults_Value_Properties struct {
 	AssignableScopes any
-	Permissions any
-	RoleName any
-	Type any
+	Permissions      any
+	RoleName         any
+	Type             any
 }
 
 type DbOpenapiSqlRoleDefinitionGetResults_Value struct {
@@ -26,7 +26,7 @@ type DbOpenapiSqlRoleDefinitionGetResultsConfig struct {
 
 type DbOpenapiSqlRoleDefinitionGetResultsAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// List of Role Definitions and their properties.
 	Value any
 }

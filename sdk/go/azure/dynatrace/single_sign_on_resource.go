@@ -17,12 +17,12 @@ type SingleSignOnResource_Properties struct {
 }
 
 var SingleSignOnResource_PropertiesFields = ubx.FieldMap{
-		"AadDomains": ubx.FieldSpec{WireName: "aad_domains"},
-		"EnterpriseAppId": ubx.FieldSpec{WireName: "enterprise_app_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SingleSignOnState": ubx.FieldSpec{WireName: "single_sign_on_state"},
-		"SingleSignOnUrl": ubx.FieldSpec{WireName: "single_sign_on_url"},
-	}
+	"AadDomains":        ubx.FieldSpec{WireName: "aad_domains"},
+	"EnterpriseAppId":   ubx.FieldSpec{WireName: "enterprise_app_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SingleSignOnState": ubx.FieldSpec{WireName: "single_sign_on_state"},
+	"SingleSignOnUrl":   ubx.FieldSpec{WireName: "single_sign_on_url"},
+}
 
 type SingleSignOnResourceConfig struct {
 	// The details of a Dynatrace single sign-on.
@@ -39,8 +39,8 @@ var SingleSignOnResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SingleSignOnResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   SingleSignOnResource_PropertiesFields,
 		},
 	},
 }

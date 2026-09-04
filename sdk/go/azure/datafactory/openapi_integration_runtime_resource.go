@@ -11,13 +11,11 @@ type OpenapiIntegrationRuntimeResource_Properties struct {
 }
 
 var OpenapiIntegrationRuntimeResource_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 type OpenapiIntegrationRuntimeResourceConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// Azure Data Factory nested object which serves as a compute resource for activities.
 	Properties any
 }
@@ -32,11 +30,10 @@ type OpenapiIntegrationRuntimeResourceAttrs struct {
 var OpenapiIntegrationRuntimeResource = ubx.ResourceBinding{
 	WireType: "azure_datafactory_openapi_integration_runtime_resource",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiIntegrationRuntimeResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiIntegrationRuntimeResource_PropertiesFields,
 		},
 	},
 }

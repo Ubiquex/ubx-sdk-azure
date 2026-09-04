@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RaiContentFilter_Value_Properties struct {
 	IsMultiLevelFilter any
-	Name any
-	Source any
+	Name               any
+	Source             any
 }
 
 type RaiContentFilter_Value struct {
@@ -25,6 +25,5 @@ type RaiContentFilterAttrs struct {
 
 var RaiContentFilter = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_rai_content_filter",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

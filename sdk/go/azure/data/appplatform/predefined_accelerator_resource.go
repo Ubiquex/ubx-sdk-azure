@@ -4,50 +4,50 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PredefinedAcceleratorResource_Value_Properties struct {
-	AcceleratorTags any
-	Description any
-	DisplayName any
-	IconUrl any
+	AcceleratorTags   any
+	Description       any
+	DisplayName       any
+	IconUrl           any
 	ProvisioningState any
-	State any
+	State             any
 }
 
 type PredefinedAcceleratorResource_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type PredefinedAcceleratorResource_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type PredefinedAcceleratorResourceConfig struct {
-	ApiVersion any
+	ApiVersion                 any
 	ApplicationAcceleratorName any
-	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ResourceGroupName          any
+	ServiceName                any
+	SubscriptionId             any
 }
 
 type PredefinedAcceleratorResourceAttrs struct {
-	ApiVersion any
+	ApiVersion                 any
 	ApplicationAcceleratorName any
-	NextLink any
-	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
-	Value any
+	NextLink                   any
+	ResourceGroupName          any
+	ServiceName                any
+	SubscriptionId             any
+	Value                      any
 }
 
 var PredefinedAcceleratorResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_predefined_accelerator_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":                 ubx.FieldSpec{WireName: "api_version"},
 		"ApplicationAcceleratorName": ubx.FieldSpec{WireName: "application_accelerator_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":          ubx.FieldSpec{WireName: "resource_group_name"},
+		"ServiceName":                ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":             ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

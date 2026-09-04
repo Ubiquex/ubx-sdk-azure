@@ -99,20 +99,9 @@ const Channel_PropertiesFields: FieldMap = {
   readinessState: "readiness_state",
 };
 
-const Channel_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ChannelConfig {
   /** Properties of the Channel. */
   properties?: Channel_Properties | Computed<Channel_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: Channel_SystemData | Computed<Channel_SystemData>;
 }
 
 export interface ChannelAttrs {
@@ -129,11 +118,6 @@ export const Channel: ResourceBinding<ChannelConfig, ChannelAttrs> = {
       wireName: "properties",
       kind: "object",
       fields: Channel_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: Channel_SystemDataFields,
     },
   },
 };

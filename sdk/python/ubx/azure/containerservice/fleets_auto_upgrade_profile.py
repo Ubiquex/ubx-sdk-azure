@@ -147,8 +147,6 @@ _FleetsAutoUpgradeProfile_PropertiesFields = {
 
 @dataclasses.dataclass
 class FleetsAutoUpgradeProfileConfig:
-    # If eTag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.
-    e_tag: Any = None
     # The properties of the AutoUpgradeProfile.
     properties: Any = None
 
@@ -162,7 +160,6 @@ class FleetsAutoUpgradeProfileAttrs:
 FleetsAutoUpgradeProfile = ubx.ResourceBinding(
     wire_type="azure_containerservice_fleets_auto_upgrade_profile",
     fields={
-        "e_tag": ubx.FieldSpec(wire_name="e_tag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

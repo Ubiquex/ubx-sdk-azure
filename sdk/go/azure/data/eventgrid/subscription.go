@@ -8,65 +8,65 @@ type Subscription_Value_Properties_DeliveryConfiguration_Push_DeadLetterDestinat
 }
 
 type Subscription_Value_Properties_DeliveryConfiguration_Push_DeadLetterDestinationWithResourceIdentity_Identity struct {
-	Type any
+	Type                 any
 	UserAssignedIdentity any
 }
 
 type Subscription_Value_Properties_DeliveryConfiguration_Push_DeadLetterDestinationWithResourceIdentity struct {
 	DeadLetterDestination any
-	Identity any
+	Identity              any
 }
 
 type Subscription_Value_Properties_DeliveryConfiguration_Push_DeliveryWithResourceIdentity struct {
 	Destination any
-	Identity any
+	Identity    any
 }
 
 type Subscription_Value_Properties_DeliveryConfiguration_Push struct {
 	DeadLetterDestinationWithResourceIdentity any
-	DeliveryWithResourceIdentity any
-	Destination any
-	EventTimeToLive any
-	MaxDeliveryCount any
+	DeliveryWithResourceIdentity              any
+	Destination                               any
+	EventTimeToLive                           any
+	MaxDeliveryCount                          any
 }
 
 type Subscription_Value_Properties_DeliveryConfiguration_Queue struct {
 	DeadLetterDestinationWithResourceIdentity any
-	EventTimeToLive any
-	MaxDeliveryCount any
-	ReceiveLockDurationInSeconds any
+	EventTimeToLive                           any
+	MaxDeliveryCount                          any
+	ReceiveLockDurationInSeconds              any
 }
 
 type Subscription_Value_Properties_DeliveryConfiguration struct {
 	DeliveryMode any
-	Push any
-	Queue any
+	Push         any
+	Queue        any
 }
 
 type Subscription_Value_Properties_FiltersConfiguration_Filters struct {
-	Key any
+	Key          any
 	OperatorType any
 }
 
 type Subscription_Value_Properties_FiltersConfiguration struct {
-	Filters any
+	Filters            any
 	IncludedEventTypes any
 }
 
 type Subscription_Value_Properties struct {
 	DeliveryConfiguration any
-	EventDeliverySchema any
-	ExpirationTimeUtc any
-	FiltersConfiguration any
-	ProvisioningState any
+	EventDeliverySchema   any
+	ExpirationTimeUtc     any
+	FiltersConfiguration  any
+	ProvisioningState     any
 }
 
 type Subscription_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -76,21 +76,21 @@ type Subscription_Value struct {
 }
 
 type SubscriptionConfig struct {
-	ApiVersion any
-	NamespaceName any
+	ApiVersion        any
+	NamespaceName     any
 	ResourceGroupName any
-	SubscriptionId any
-	TopicName any
+	SubscriptionId    any
+	TopicName         any
 }
 
 type SubscriptionAttrs struct {
-	ApiVersion any
+	ApiVersion    any
 	NamespaceName any
 	// A link for the next page of event subscriptions
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
-	TopicName any
+	SubscriptionId    any
+	TopicName         any
 	// A collection of Subscriptions.
 	Value any
 }
@@ -98,10 +98,10 @@ type SubscriptionAttrs struct {
 var Subscription = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_subscription",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"NamespaceName":     ubx.FieldSpec{WireName: "namespace_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"TopicName": ubx.FieldSpec{WireName: "topic_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"TopicName":         ubx.FieldSpec{WireName: "topic_name"},
 	},
 }

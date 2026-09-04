@@ -4,10 +4,10 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiExtensionValueV2_Value_Properties struct {
-	Architecture any
+	Architecture          any
 	ExtensionSignatureUri any
-	ExtensionUris any
-	OperatingSystem any
+	ExtensionUris         any
+	OperatingSystem       any
 }
 
 type OpenapiExtensionValueV2_Value struct {
@@ -16,15 +16,15 @@ type OpenapiExtensionValueV2_Value struct {
 
 type OpenapiExtensionValueV2Config struct {
 	ExtensionType any
-	Location any
-	Publisher any
+	Location      any
+	Publisher     any
 }
 
 type OpenapiExtensionValueV2Attrs struct {
 	ExtensionType any
-	Location any
+	Location      any
 	// The link to the next page of items
-	NextLink any
+	NextLink  any
 	Publisher any
 	// The ExtensionValueV2 items on this page
 	Value any
@@ -34,7 +34,7 @@ var OpenapiExtensionValueV2 = ubx.DataSourceBinding{
 	WireType: "azure_hybridcompute_openapi_extension_value_v2",
 	Fields: ubx.FieldMap{
 		"ExtensionType": ubx.FieldSpec{WireName: "extension_type"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
+		"Location":      ubx.FieldSpec{WireName: "location"},
+		"Publisher":     ubx.FieldSpec{WireName: "publisher"},
 	},
 }

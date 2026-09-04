@@ -9,8 +9,8 @@ type EnvironmentType_Properties struct {
 }
 
 var EnvironmentType_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type EnvironmentTypeConfig struct {
 	// Properties of an environment type.
@@ -31,8 +31,8 @@ var EnvironmentType = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: EnvironmentType_PropertiesFields,
+			Kind:     "object",
+			Fields:   EnvironmentType_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

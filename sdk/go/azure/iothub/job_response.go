@@ -9,8 +9,8 @@ type JobResponse_Identity struct {
 }
 
 var JobResponse_IdentityFields = ubx.FieldMap{
-		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-	}
+	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
+}
 
 type JobResponseConfig struct {
 	// Specifies authentication type being used for connecting to the storage account.
@@ -65,15 +65,15 @@ type JobResponseAttrs struct {
 var JobResponse = ubx.ResourceBinding{
 	WireType: "azure_iothub_job_response",
 	Fields: ubx.FieldMap{
-		"AuthenticationType": ubx.FieldSpec{WireName: "authentication_type"},
+		"AuthenticationType":     ubx.FieldSpec{WireName: "authentication_type"},
 		"ConfigurationsBlobName": ubx.FieldSpec{WireName: "configurations_blob_name"},
-		"ExcludeKeys": ubx.FieldSpec{WireName: "exclude_keys"},
+		"ExcludeKeys":            ubx.FieldSpec{WireName: "exclude_keys"},
 		"ExportBlobContainerUri": ubx.FieldSpec{WireName: "export_blob_container_uri"},
-		"ExportBlobName": ubx.FieldSpec{WireName: "export_blob_name"},
+		"ExportBlobName":         ubx.FieldSpec{WireName: "export_blob_name"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: JobResponse_IdentityFields,
+			Kind:     "object",
+			Fields:   JobResponse_IdentityFields,
 		},
 		"IncludeConfigurations": ubx.FieldSpec{WireName: "include_configurations"},
 	},

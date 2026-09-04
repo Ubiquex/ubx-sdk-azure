@@ -4,13 +4,13 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRelayServiceConnectionEntity_Properties struct {
-	BiztalkUri any
-	EntityConnectionString any
-	EntityName any
-	Hostname any
-	Port any
+	BiztalkUri               any
+	EntityConnectionString   any
+	EntityName               any
+	Hostname                 any
+	Port                     any
 	ResourceConnectionString any
-	ResourceType any
+	ResourceType             any
 }
 
 type OpenapiRelayServiceConnectionEntityConfig struct {

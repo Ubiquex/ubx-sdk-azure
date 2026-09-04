@@ -21,21 +21,10 @@ class NetworkmanagerBaseAdminRule_SystemData:
     # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
 
-_NetworkmanagerBaseAdminRule_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class NetworkmanagerBaseAdminRuleConfig:
     # Whether the rule is custom or default.
     kind: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class NetworkmanagerBaseAdminRuleAttrs:
@@ -48,10 +37,5 @@ NetworkmanagerBaseAdminRule = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_base_admin_rule",
     fields={
         "kind": ubx.FieldSpec(wire_name="kind"),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_NetworkmanagerBaseAdminRule_SystemDataFields,
-        ),
     },
 )

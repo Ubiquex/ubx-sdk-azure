@@ -3,6 +3,14 @@ package apimanagement
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type ApimusersUserContract2_Properties_Groups struct {
+	BuiltIn     any
+	Description any
+	DisplayName any
+	ExternalId  any
+	Type        any
+}
+
 type ApimusersUserContract2_Properties struct {
 	// Determines the type of application which send the create user request. Default is legacy portal.
 	AppType any
@@ -12,20 +20,38 @@ type ApimusersUserContract2_Properties struct {
 	Email any
 	// First name.
 	FirstName any
+	// Collection of groups user is part of.
+	Groups any
 	// Last name.
 	LastName any
 	// User Password. If no value is provided, a default password is generated.
 	Password any
+	// Date of user registration. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+	RegistrationDate any
+}
+
+var ApimusersUserContract2_Properties_GroupsFields = ubx.FieldMap{
+	"BuiltIn":     ubx.FieldSpec{WireName: "built_in"},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"ExternalId":  ubx.FieldSpec{WireName: "external_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
 }
 
 var ApimusersUserContract2_PropertiesFields = ubx.FieldMap{
-		"AppType": ubx.FieldSpec{WireName: "app_type"},
-		"Confirmation": ubx.FieldSpec{WireName: "confirmation"},
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"FirstName": ubx.FieldSpec{WireName: "first_name"},
-		"LastName": ubx.FieldSpec{WireName: "last_name"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-	}
+	"AppType":      ubx.FieldSpec{WireName: "app_type"},
+	"Confirmation": ubx.FieldSpec{WireName: "confirmation"},
+	"Email":        ubx.FieldSpec{WireName: "email"},
+	"FirstName":    ubx.FieldSpec{WireName: "first_name"},
+	"Groups": ubx.FieldSpec{
+		WireName: "groups",
+		Kind:     "list",
+		Fields:   ApimusersUserContract2_Properties_GroupsFields,
+	},
+	"LastName":         ubx.FieldSpec{WireName: "last_name"},
+	"Password":         ubx.FieldSpec{WireName: "password"},
+	"RegistrationDate": ubx.FieldSpec{WireName: "registration_date"},
+}
 
 type ApimusersUserContract2Config struct {
 	// Parameters supplied to the Create User operation.
@@ -42,8 +68,8 @@ var ApimusersUserContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimusersUserContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimusersUserContract2_PropertiesFields,
 		},
 	},
 }

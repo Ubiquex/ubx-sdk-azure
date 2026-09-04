@@ -4,6 +4,8 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface ApimtenantAccessInformationContract2_Properties {
   /** Determines whether direct access is enabled. */
   enabled?: boolean | Computed<boolean>;
+  /** Access Information type ('access' or 'gitAccess') */
+  id?: string | Computed<string>;
   /** Primary access key. This property will not be filled on 'GET' operations! Use '/listSecrets' POST request to get the value. */
   primaryKey?: string | Computed<string>;
   /** Principal (User) Identifier. */
@@ -14,6 +16,7 @@ export interface ApimtenantAccessInformationContract2_Properties {
 
 const ApimtenantAccessInformationContract2_PropertiesFields: FieldMap = {
   enabled: "enabled",
+  id: "id",
   primaryKey: "primary_key",
   principalId: "principal_id",
   secondaryKey: "secondary_key",

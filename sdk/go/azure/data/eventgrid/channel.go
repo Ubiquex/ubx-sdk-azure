@@ -4,40 +4,40 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Channel_Value_Properties_PartnerTopicInfo_EventTypeInfo_InlineEventTypes struct {
-	DataSchemaUrl any
-	Description any
-	DisplayName any
+	DataSchemaUrl    any
+	Description      any
+	DisplayName      any
 	DocumentationUrl any
 }
 
 type Channel_Value_Properties_PartnerTopicInfo_EventTypeInfo struct {
 	InlineEventTypes any
-	Kind any
+	Kind             any
 }
 
 type Channel_Value_Properties_PartnerTopicInfo struct {
 	AzureSubscriptionId any
-	EventTypeInfo any
-	Name any
-	ResourceGroupName any
-	Source any
+	EventTypeInfo       any
+	Name                any
+	ResourceGroupName   any
+	Source              any
 }
 
 type Channel_Value_Properties struct {
-	ChannelType any
+	ChannelType                     any
 	ExpirationTimeIfNotActivatedUtc any
-	MessageForActivation any
-	PartnerTopicInfo any
-	ProvisioningState any
-	ReadinessState any
+	MessageForActivation            any
+	PartnerTopicInfo                any
+	ProvisioningState               any
+	ReadinessState                  any
 }
 
 type Channel_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -47,19 +47,19 @@ type Channel_Value struct {
 }
 
 type ChannelConfig struct {
-	ApiVersion any
+	ApiVersion           any
 	PartnerNamespaceName any
-	ResourceGroupName any
-	SubscriptionId any
+	ResourceGroupName    any
+	SubscriptionId       any
 }
 
 type ChannelAttrs struct {
 	ApiVersion any
 	// A link for the next page of channels.
-	NextLink any
+	NextLink             any
 	PartnerNamespaceName any
-	ResourceGroupName any
-	SubscriptionId any
+	ResourceGroupName    any
+	SubscriptionId       any
 	// A collection of Channels.
 	Value any
 }
@@ -67,9 +67,9 @@ type ChannelAttrs struct {
 var Channel = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_channel",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":           ubx.FieldSpec{WireName: "api_version"},
 		"PartnerNamespaceName": ubx.FieldSpec{WireName: "partner_namespace_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":    ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":       ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -29,11 +29,11 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySetting
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta struct {
-	After any
-	Before any
+	After      any
+	Before     any
 	ChangeType any
-	Children any
-	Path any
+	Children   any
+	Path       any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange struct {
@@ -57,44 +57,44 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceCha
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference struct {
-	KeyVault any
-	SecretName any
+	KeyVault      any
+	SecretName    any
 	SecretVersion any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config struct {
 	KeyVaultReference any
-	Type any
-	Value any
+	Type              any
+	Value             any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension struct {
-	Config any
+	Config   any
 	ConfigId any
-	Name any
-	Version any
+	Name     any
+	Version  any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChanges struct {
-	After any
+	After  any
 	Before any
-	Delta any
+	Delta  any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges struct {
-	ApiVersion any
-	ChangeCertainty any
-	ChangeType any
-	DenyStatusChange any
-	DeploymentId any
-	Extension any
-	Id any
-	Identifiers any
-	ManagementStatusChange any
+	ApiVersion                   any
+	ChangeCertainty              any
+	ChangeType                   any
+	DenyStatusChange             any
+	DeploymentId                 any
+	Extension                    any
+	Id                           any
+	Identifiers                  any
+	ManagementStatusChange       any
 	ResourceConfigurationChanges any
-	SymbolicName any
-	Type any
-	UnsupportedReason any
+	SymbolicName                 any
+	Type                         any
+	UnsupportedReason            any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes struct {
@@ -118,18 +118,18 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_Additio
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics struct {
 	AdditionalInfo any
-	Code any
-	Level any
-	Message any
-	Target any
+	Code           any
+	Level          any
+	Message        any
+	Target         any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error struct {
@@ -147,7 +147,7 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error struct {
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputDefinitions struct {
 	Config any
-	Kind any
+	Kind   any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputs struct {
@@ -156,9 +156,9 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputs stru
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Parameters struct {
 	Expression any
-	Reference any
-	Type any
-	Value any
+	Reference  any
+	Type       any
+	Value      any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ParametersLink struct {
@@ -227,305 +227,304 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties struct {
 }
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_ActionOnUnmanageFields = ubx.FieldMap{
-		"ManagementGroups": ubx.FieldSpec{WireName: "management_groups"},
-		"ResourceGroups": ubx.FieldSpec{WireName: "resource_groups"},
-		"Resources": ubx.FieldSpec{WireName: "resources"},
-		"ResourcesWithoutDeleteSupport": ubx.FieldSpec{WireName: "resources_without_delete_support"},
-	}
+	"ManagementGroups":              ubx.FieldSpec{WireName: "management_groups"},
+	"ResourceGroups":                ubx.FieldSpec{WireName: "resource_groups"},
+	"Resources":                     ubx.FieldSpec{WireName: "resources"},
+	"ResourcesWithoutDeleteSupport": ubx.FieldSpec{WireName: "resources_without_delete_support"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_AfterFields = ubx.FieldMap{
-		"ApplyToChildScopes": ubx.FieldSpec{WireName: "apply_to_child_scopes"},
-		"ExcludedActions": ubx.FieldSpec{WireName: "excluded_actions"},
-		"ExcludedPrincipals": ubx.FieldSpec{WireName: "excluded_principals"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"ApplyToChildScopes": ubx.FieldSpec{WireName: "apply_to_child_scopes"},
+	"ExcludedActions":    ubx.FieldSpec{WireName: "excluded_actions"},
+	"ExcludedPrincipals": ubx.FieldSpec{WireName: "excluded_principals"},
+	"Mode":               ubx.FieldSpec{WireName: "mode"},
+}
 
-var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_ChildrenFields = ubx.FieldMap{
-	}
+var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_ChildrenFields = ubx.FieldMap{}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_DeltaFields = ubx.FieldMap{
-		"After": ubx.FieldSpec{WireName: "after"},
-		"Before": ubx.FieldSpec{WireName: "before"},
-		"ChangeType": ubx.FieldSpec{WireName: "change_type"},
-		"Children": ubx.FieldSpec{
-			WireName: "children",
-			Kind: "list",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_ChildrenFields,
-		},
-		"Path": ubx.FieldSpec{WireName: "path"},
-	}
+	"After":      ubx.FieldSpec{WireName: "after"},
+	"Before":     ubx.FieldSpec{WireName: "before"},
+	"ChangeType": ubx.FieldSpec{WireName: "change_type"},
+	"Children": ubx.FieldSpec{
+		WireName: "children",
+		Kind:     "list",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_ChildrenFields,
+	},
+	"Path": ubx.FieldSpec{WireName: "path"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChangeFields = ubx.FieldMap{
-		"After": ubx.FieldSpec{
-			WireName: "after",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_AfterFields,
-		},
-		"Before": ubx.FieldSpec{
-			WireName: "before",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_AfterFields,
-		},
-		"Delta": ubx.FieldSpec{
-			WireName: "delta",
-			Kind: "list",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_DeltaFields,
-		},
-	}
+	"After": ubx.FieldSpec{
+		WireName: "after",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_AfterFields,
+	},
+	"Before": ubx.FieldSpec{
+		WireName: "before",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_AfterFields,
+	},
+	"Delta": ubx.FieldSpec{
+		WireName: "delta",
+		Kind:     "list",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_DeltaFields,
+	},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChangeFields = ubx.FieldMap{
-		"After": ubx.FieldSpec{WireName: "after"},
-		"Before": ubx.FieldSpec{WireName: "before"},
-	}
+	"After":  ubx.FieldSpec{WireName: "after"},
+	"Before": ubx.FieldSpec{WireName: "before"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVaultFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReferenceFields = ubx.FieldMap{
-		"KeyVault": ubx.FieldSpec{
-			WireName: "key_vault",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVaultFields,
-		},
-		"SecretName": ubx.FieldSpec{WireName: "secret_name"},
-		"SecretVersion": ubx.FieldSpec{WireName: "secret_version"},
-	}
+	"KeyVault": ubx.FieldSpec{
+		WireName: "key_vault",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference_KeyVaultFields,
+	},
+	"SecretName":    ubx.FieldSpec{WireName: "secret_name"},
+	"SecretVersion": ubx.FieldSpec{WireName: "secret_version"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_ConfigFields = ubx.FieldMap{
-		"KeyVaultReference": ubx.FieldSpec{
-			WireName: "key_vault_reference",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReferenceFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"KeyVaultReference": ubx.FieldSpec{
+		WireName: "key_vault_reference",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReferenceFields,
+	},
+	"Type":  ubx.FieldSpec{WireName: "type"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ExtensionFields = ubx.FieldMap{
-		"Config": ubx.FieldSpec{
-			WireName: "config",
-			Kind: "map",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_ConfigFields,
-		},
-		"ConfigId": ubx.FieldSpec{WireName: "config_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Config": ubx.FieldSpec{
+		WireName: "config",
+		Kind:     "map",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_ConfigFields,
+	},
+	"ConfigId": ubx.FieldSpec{WireName: "config_id"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Version":  ubx.FieldSpec{WireName: "version"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChangesFields = ubx.FieldMap{
-		"After": ubx.FieldSpec{WireName: "after"},
-		"Before": ubx.FieldSpec{WireName: "before"},
-		"Delta": ubx.FieldSpec{
-			WireName: "delta",
-			Kind: "list",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_DeltaFields,
-		},
-	}
+	"After":  ubx.FieldSpec{WireName: "after"},
+	"Before": ubx.FieldSpec{WireName: "before"},
+	"Delta": ubx.FieldSpec{
+		WireName: "delta",
+		Kind:     "list",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_DeltaFields,
+	},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChangesFields = ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ChangeCertainty": ubx.FieldSpec{WireName: "change_certainty"},
-		"ChangeType": ubx.FieldSpec{WireName: "change_type"},
-		"DenyStatusChange": ubx.FieldSpec{
-			WireName: "deny_status_change",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChangeFields,
-		},
-		"DeploymentId": ubx.FieldSpec{WireName: "deployment_id"},
-		"Extension": ubx.FieldSpec{
-			WireName: "extension",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ExtensionFields,
-		},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Identifiers": ubx.FieldSpec{WireName: "identifiers"},
-		"ManagementStatusChange": ubx.FieldSpec{
-			WireName: "management_status_change",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChangeFields,
-		},
-		"ResourceConfigurationChanges": ubx.FieldSpec{
-			WireName: "resource_configuration_changes",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChangesFields,
-		},
-		"SymbolicName": ubx.FieldSpec{WireName: "symbolic_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UnsupportedReason": ubx.FieldSpec{WireName: "unsupported_reason"},
-	}
+	"ApiVersion":      ubx.FieldSpec{WireName: "api_version"},
+	"ChangeCertainty": ubx.FieldSpec{WireName: "change_certainty"},
+	"ChangeType":      ubx.FieldSpec{WireName: "change_type"},
+	"DenyStatusChange": ubx.FieldSpec{
+		WireName: "deny_status_change",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChangeFields,
+	},
+	"DeploymentId": ubx.FieldSpec{WireName: "deployment_id"},
+	"Extension": ubx.FieldSpec{
+		WireName: "extension",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ExtensionFields,
+	},
+	"Id":          ubx.FieldSpec{WireName: "id"},
+	"Identifiers": ubx.FieldSpec{WireName: "identifiers"},
+	"ManagementStatusChange": ubx.FieldSpec{
+		WireName: "management_status_change",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChangeFields,
+	},
+	"ResourceConfigurationChanges": ubx.FieldSpec{
+		WireName: "resource_configuration_changes",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChangesFields,
+	},
+	"SymbolicName":      ubx.FieldSpec{WireName: "symbolic_name"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+	"UnsupportedReason": ubx.FieldSpec{WireName: "unsupported_reason"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_ChangesFields = ubx.FieldMap{
-		"DenySettingsChange": ubx.FieldSpec{
-			WireName: "deny_settings_change",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChangeFields,
-		},
-		"DeploymentScopeChange": ubx.FieldSpec{
-			WireName: "deployment_scope_change",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChangeFields,
-		},
-		"ResourceChanges": ubx.FieldSpec{
-			WireName: "resource_changes",
-			Kind: "list",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChangesFields,
-		},
-	}
+	"DenySettingsChange": ubx.FieldSpec{
+		WireName: "deny_settings_change",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChangeFields,
+	},
+	"DeploymentScopeChange": ubx.FieldSpec{
+		WireName: "deployment_scope_change",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DeploymentScopeChangeFields,
+	},
+	"ResourceChanges": ubx.FieldSpec{
+		WireName: "resource_changes",
+		Kind:     "list",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChangesFields,
+	},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_DebugSettingFields = ubx.FieldMap{
-		"DetailLevel": ubx.FieldSpec{WireName: "detail_level"},
-	}
+	"DetailLevel": ubx.FieldSpec{WireName: "detail_level"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_DiagnosticsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfoFields,
+	},
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Level":   ubx.FieldSpec{WireName: "level"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_DetailsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_ChildrenFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta_ChildrenFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_ErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputDefinitionsFields = ubx.FieldMap{
-		"Config": ubx.FieldSpec{WireName: "config"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-	}
+	"Config": ubx.FieldSpec{WireName: "config"},
+	"Kind":   ubx.FieldSpec{WireName: "kind"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputsFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_ParametersFields = ubx.FieldMap{
-		"Expression": ubx.FieldSpec{WireName: "expression"},
-		"Reference": ubx.FieldSpec{
-			WireName: "reference",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReferenceFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Expression": ubx.FieldSpec{WireName: "expression"},
+	"Reference": ubx.FieldSpec{
+		WireName: "reference",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReferenceFields,
+	},
+	"Type":  ubx.FieldSpec{WireName: "type"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_ParametersLinkFields = ubx.FieldMap{
-		"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
+	"Uri":            ubx.FieldSpec{WireName: "uri"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_Properties_TemplateLinkFields = ubx.FieldMap{
-		"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"QueryString": ubx.FieldSpec{WireName: "query_string"},
-		"RelativePath": ubx.FieldSpec{WireName: "relative_path"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
+	"Id":             ubx.FieldSpec{WireName: "id"},
+	"QueryString":    ubx.FieldSpec{WireName: "query_string"},
+	"RelativePath":   ubx.FieldSpec{WireName: "relative_path"},
+	"Uri":            ubx.FieldSpec{WireName: "uri"},
+}
 
 var DeploymentstacksDeploymentStacksWhatIfResult_PropertiesFields = ubx.FieldMap{
-		"ActionOnUnmanage": ubx.FieldSpec{
-			WireName: "action_on_unmanage",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_ActionOnUnmanageFields,
-		},
-		"Changes": ubx.FieldSpec{
-			WireName: "changes",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_ChangesFields,
-		},
-		"CorrelationId": ubx.FieldSpec{WireName: "correlation_id"},
-		"DebugSetting": ubx.FieldSpec{
-			WireName: "debug_setting",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_DebugSettingFields,
-		},
-		"DenySettings": ubx.FieldSpec{
-			WireName: "deny_settings",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_AfterFields,
-		},
-		"DeploymentScope": ubx.FieldSpec{WireName: "deployment_scope"},
-		"DeploymentStackLastModified": ubx.FieldSpec{WireName: "deployment_stack_last_modified"},
-		"DeploymentStackResourceId": ubx.FieldSpec{WireName: "deployment_stack_resource_id"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Diagnostics": ubx.FieldSpec{
-			WireName: "diagnostics",
-			Kind: "list",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_DiagnosticsFields,
-		},
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_ErrorFields,
-		},
-		"ExtensionConfigs": ubx.FieldSpec{WireName: "extension_configs"},
-		"ExternalInputDefinitions": ubx.FieldSpec{
-			WireName: "external_input_definitions",
-			Kind: "map",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputDefinitionsFields,
-		},
-		"ExternalInputs": ubx.FieldSpec{
-			WireName: "external_inputs",
-			Kind: "map",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputsFields,
-		},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "map",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_ParametersFields,
-		},
-		"ParametersLink": ubx.FieldSpec{
-			WireName: "parameters_link",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_ParametersLinkFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RetentionInterval": ubx.FieldSpec{WireName: "retention_interval"},
-		"Template": ubx.FieldSpec{WireName: "template"},
-		"TemplateLink": ubx.FieldSpec{
-			WireName: "template_link",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_Properties_TemplateLinkFields,
-		},
-		"ValidationLevel": ubx.FieldSpec{WireName: "validation_level"},
-	}
+	"ActionOnUnmanage": ubx.FieldSpec{
+		WireName: "action_on_unmanage",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_ActionOnUnmanageFields,
+	},
+	"Changes": ubx.FieldSpec{
+		WireName: "changes",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_ChangesFields,
+	},
+	"CorrelationId": ubx.FieldSpec{WireName: "correlation_id"},
+	"DebugSetting": ubx.FieldSpec{
+		WireName: "debug_setting",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_DebugSettingFields,
+	},
+	"DenySettings": ubx.FieldSpec{
+		WireName: "deny_settings",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_AfterFields,
+	},
+	"DeploymentScope":             ubx.FieldSpec{WireName: "deployment_scope"},
+	"DeploymentStackLastModified": ubx.FieldSpec{WireName: "deployment_stack_last_modified"},
+	"DeploymentStackResourceId":   ubx.FieldSpec{WireName: "deployment_stack_resource_id"},
+	"Description":                 ubx.FieldSpec{WireName: "description"},
+	"Diagnostics": ubx.FieldSpec{
+		WireName: "diagnostics",
+		Kind:     "list",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_DiagnosticsFields,
+	},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_ErrorFields,
+	},
+	"ExtensionConfigs": ubx.FieldSpec{WireName: "extension_configs"},
+	"ExternalInputDefinitions": ubx.FieldSpec{
+		WireName: "external_input_definitions",
+		Kind:     "map",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputDefinitionsFields,
+	},
+	"ExternalInputs": ubx.FieldSpec{
+		WireName: "external_inputs",
+		Kind:     "map",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputsFields,
+	},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_ParametersFields,
+	},
+	"ParametersLink": ubx.FieldSpec{
+		WireName: "parameters_link",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_ParametersLinkFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RetentionInterval": ubx.FieldSpec{WireName: "retention_interval"},
+	"Template":          ubx.FieldSpec{WireName: "template"},
+	"TemplateLink": ubx.FieldSpec{
+		WireName: "template_link",
+		Kind:     "object",
+		Fields:   DeploymentstacksDeploymentStacksWhatIfResult_Properties_TemplateLinkFields,
+	},
+	"ValidationLevel": ubx.FieldSpec{WireName: "validation_level"},
+}
 
 type DeploymentstacksDeploymentStacksWhatIfResultConfig struct {
 	// The geo-location where the resource lives. Required for subscription and management group scoped stacks. The location is inherited from the resource group for resource group scoped stacks.
@@ -551,8 +550,8 @@ var DeploymentstacksDeploymentStacksWhatIfResult = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DeploymentstacksDeploymentStacksWhatIfResult_PropertiesFields,
+			Kind:     "object",
+			Fields:   DeploymentstacksDeploymentStacksWhatIfResult_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

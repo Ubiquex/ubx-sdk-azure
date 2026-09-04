@@ -40,22 +40,16 @@ class Set_Properties_ScheduledEventsPolicy:
 
 @dataclasses.dataclass
 class Set_Properties_Statuses:
-    # The status code that identifies the current state of the availability set, such as 'ProvisioningState/succeeded'. (AI-inferred)
     code: Any = None
-    # A human-readable, user-facing description of the current status of the availability set, as part of a list of status objects that may also include a code, level, and timestamp. (AI-inferred)
     display_status: Any = None
-    # The severity level of the status, which can be one of Info, Warning, or Error. It indicates the impact or importance of the status message. (AI-inferred)
     level: Any = None
-    # The message provides additional information or details about the status of the availability set. (AI-inferred)
     message: Any = None
-    # The timestamp when the status was recorded. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
 class Set_Properties_VirtualMachineScaleSetMigrationInfo_DefaultVirtualMachineScaleSetInfo:
     # Indicates if the the maximum capacity of the default migrated Virtual Machine Scale Set after its migration will be constrained to a limited number of VMs.
     constrained_maximum_capacity: Any = None
-    # The default virtual machine scale set that serves as the primary target when migrating the availability set to a scale set. (AI-inferred)
     default_virtual_machine_scale_set: Any = None
 
 @dataclasses.dataclass
@@ -70,7 +64,6 @@ class Set_Properties:
     platform_fault_domain_count: Any = None
     # Update Domain count.
     platform_update_domain_count: Any = None
-    # Specifies the proximity placement group that the availability set should be associated with, enabling co-location of resources for low network latency. (AI-inferred)
     proximity_placement_group: Any = None
     # Specifies Redeploy, Reboot and ScheduledEventsAdditionalPublishingTargets Scheduled Event related configurations.
     scheduled_events_policy: Any = None

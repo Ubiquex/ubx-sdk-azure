@@ -9,8 +9,8 @@ type ResourceGroup_Properties struct {
 }
 
 var ResourceGroup_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ResourceGroupConfig struct {
 	// The ID of the resource that manages this resource group.
@@ -32,8 +32,8 @@ var ResourceGroup = ubx.ResourceBinding{
 		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ResourceGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   ResourceGroup_PropertiesFields,
 		},
 	},
 }

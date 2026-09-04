@@ -5,11 +5,11 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups_Properties struct {
 	ProvisioningState any
-	ResourceGuid any
+	ResourceGuid      any
 }
 
 type VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -49,49 +49,47 @@ type VirtualnetworkSecurityRule_Properties struct {
 }
 
 var VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroupsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups_PropertiesFields,
+	},
+}
 
 var VirtualnetworkSecurityRule_PropertiesFields = ubx.FieldMap{
-		"Access": ubx.FieldSpec{WireName: "access"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DestinationAddressPrefix": ubx.FieldSpec{WireName: "destination_address_prefix"},
-		"DestinationAddressPrefixes": ubx.FieldSpec{WireName: "destination_address_prefixes"},
-		"DestinationApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "destination_application_security_groups",
-			Kind: "list",
-			Fields: VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"DestinationPortRange": ubx.FieldSpec{WireName: "destination_port_range"},
-		"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
-		"Direction": ubx.FieldSpec{WireName: "direction"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SourceAddressPrefix": ubx.FieldSpec{WireName: "source_address_prefix"},
-		"SourceAddressPrefixes": ubx.FieldSpec{WireName: "source_address_prefixes"},
-		"SourceApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "source_application_security_groups",
-			Kind: "list",
-			Fields: VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"SourcePortRange": ubx.FieldSpec{WireName: "source_port_range"},
-		"SourcePortRanges": ubx.FieldSpec{WireName: "source_port_ranges"},
-	}
+	"Access":                     ubx.FieldSpec{WireName: "access"},
+	"Description":                ubx.FieldSpec{WireName: "description"},
+	"DestinationAddressPrefix":   ubx.FieldSpec{WireName: "destination_address_prefix"},
+	"DestinationAddressPrefixes": ubx.FieldSpec{WireName: "destination_address_prefixes"},
+	"DestinationApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "destination_application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"DestinationPortRange":  ubx.FieldSpec{WireName: "destination_port_range"},
+	"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
+	"Direction":             ubx.FieldSpec{WireName: "direction"},
+	"Priority":              ubx.FieldSpec{WireName: "priority"},
+	"Protocol":              ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"SourceAddressPrefix":   ubx.FieldSpec{WireName: "source_address_prefix"},
+	"SourceAddressPrefixes": ubx.FieldSpec{WireName: "source_address_prefixes"},
+	"SourceApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "source_application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"SourcePortRange":  ubx.FieldSpec{WireName: "source_port_range"},
+	"SourcePortRanges": ubx.FieldSpec{WireName: "source_port_ranges"},
+}
 
 type VirtualnetworkSecurityRuleConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Security rule resource.
 	Properties any
 }
@@ -106,11 +104,10 @@ type VirtualnetworkSecurityRuleAttrs struct {
 var VirtualnetworkSecurityRule = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_security_rule",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkSecurityRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkSecurityRule_PropertiesFields,
 		},
 	},
 }

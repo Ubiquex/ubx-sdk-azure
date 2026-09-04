@@ -5,36 +5,36 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JobstepsJobStep_Value_Properties_Action struct {
 	Source any
-	Type any
-	Value any
+	Type   any
+	Value  any
 }
 
 type JobstepsJobStep_Value_Properties_ExecutionOptions struct {
-	InitialRetryIntervalSeconds any
-	MaximumRetryIntervalSeconds any
-	RetryAttempts any
+	InitialRetryIntervalSeconds    any
+	MaximumRetryIntervalSeconds    any
+	RetryAttempts                  any
 	RetryIntervalBackoffMultiplier any
-	TimeoutSeconds any
+	TimeoutSeconds                 any
 }
 
 type JobstepsJobStep_Value_Properties_Output struct {
-	Credential any
-	DatabaseName any
+	Credential        any
+	DatabaseName      any
 	ResourceGroupName any
-	SchemaName any
-	ServerName any
-	SubscriptionId any
-	TableName any
-	Type any
+	SchemaName        any
+	ServerName        any
+	SubscriptionId    any
+	TableName         any
+	Type              any
 }
 
 type JobstepsJobStep_Value_Properties struct {
-	Action any
-	Credential any
+	Action           any
+	Credential       any
 	ExecutionOptions any
-	Output any
-	StepId any
-	TargetGroup any
+	Output           any
+	StepId           any
+	TargetGroup      any
 }
 
 type JobstepsJobStep_Value struct {
@@ -43,15 +43,15 @@ type JobstepsJobStep_Value struct {
 
 type JobstepsJobStepConfig struct {
 	JobAgentName any
-	JobName any
-	ServerName any
+	JobName      any
+	ServerName   any
 }
 
 type JobstepsJobStepAttrs struct {
 	JobAgentName any
-	JobName any
+	JobName      any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The JobStep items on this page
 	Value any
@@ -61,7 +61,7 @@ var JobstepsJobStep = ubx.DataSourceBinding{
 	WireType: "azure_sql_jobsteps_job_step",
 	Fields: ubx.FieldMap{
 		"JobAgentName": ubx.FieldSpec{WireName: "job_agent_name"},
-		"JobName": ubx.FieldSpec{WireName: "job_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"JobName":      ubx.FieldSpec{WireName: "job_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

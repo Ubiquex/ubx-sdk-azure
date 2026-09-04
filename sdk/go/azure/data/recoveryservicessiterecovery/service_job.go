@@ -5,31 +5,31 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceJob_Value_Properties_CustomDetails struct {
 	AffectedObjectDetails any
-	InstanceType any
+	InstanceType          any
 }
 
 type ServiceJob_Value_Properties_Errors_ProviderErrorDetails struct {
-	ErrorCode any
-	ErrorId any
-	ErrorMessage any
-	PossibleCauses any
+	ErrorCode         any
+	ErrorId           any
+	ErrorMessage      any
+	PossibleCauses    any
 	RecommendedAction any
 }
 
 type ServiceJob_Value_Properties_Errors_ServiceErrorDetails struct {
-	ActivityId any
-	Code any
-	Message any
-	PossibleCauses any
+	ActivityId        any
+	Code              any
+	Message           any
+	PossibleCauses    any
 	RecommendedAction any
 }
 
 type ServiceJob_Value_Properties_Errors struct {
-	CreationTime any
-	ErrorLevel any
+	CreationTime         any
+	ErrorLevel           any
 	ProviderErrorDetails any
-	ServiceErrorDetails any
-	TaskId any
+	ServiceErrorDetails  any
+	TaskId               any
 }
 
 type ServiceJob_Value_Properties_Tasks_CustomDetails struct {
@@ -40,44 +40,44 @@ type ServiceJob_Value_Properties_Tasks_GroupTaskCustomDetails_ChildTasks struct 
 }
 
 type ServiceJob_Value_Properties_Tasks_GroupTaskCustomDetails struct {
-	ChildTasks any
+	ChildTasks   any
 	InstanceType any
 }
 
 type ServiceJob_Value_Properties_Tasks struct {
-	AllowedActions any
-	CustomDetails any
-	EndTime any
-	Errors any
-	FriendlyName any
+	AllowedActions         any
+	CustomDetails          any
+	EndTime                any
+	Errors                 any
+	FriendlyName           any
 	GroupTaskCustomDetails any
-	Name any
-	StartTime any
-	State any
-	StateDescription any
-	TaskId any
-	TaskType any
+	Name                   any
+	StartTime              any
+	State                  any
+	StateDescription       any
+	TaskId                 any
+	TaskType               any
 }
 
 type ServiceJob_Value_Properties struct {
-	ActivityId any
-	AllowedActions any
-	CustomDetails any
-	EndTime any
-	Errors any
-	FriendlyName any
-	ScenarioName any
-	StartTime any
-	State any
-	StateDescription any
+	ActivityId         any
+	AllowedActions     any
+	CustomDetails      any
+	EndTime            any
+	Errors             any
+	FriendlyName       any
+	ScenarioName       any
+	StartTime          any
+	State              any
+	StateDescription   any
 	TargetInstanceType any
-	TargetObjectId any
-	TargetObjectName any
-	Tasks any
+	TargetObjectId     any
+	TargetObjectName   any
+	Tasks              any
 }
 
 type ServiceJob_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -87,7 +87,7 @@ type ServiceJobConfig struct {
 
 type ServiceJobAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The Job items on this page
 	Value any

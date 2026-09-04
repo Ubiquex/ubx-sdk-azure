@@ -4,9 +4,9 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiSqlRoleAssignmentGetResults_Value_Properties struct {
-	PrincipalId any
+	PrincipalId      any
 	RoleDefinitionId any
-	Scope any
+	Scope            any
 }
 
 type DbOpenapiSqlRoleAssignmentGetResults_Value struct {
@@ -19,7 +19,7 @@ type DbOpenapiSqlRoleAssignmentGetResultsConfig struct {
 
 type DbOpenapiSqlRoleAssignmentGetResultsAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// List of Role Assignments and their properties
 	Value any
 }

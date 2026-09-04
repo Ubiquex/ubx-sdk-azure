@@ -42,8 +42,6 @@ _VirtualnetworkDdosProtectionPlan_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkDdosProtectionPlanConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # DDoS protection plan properties.
     properties: Any = None
 
@@ -57,7 +55,6 @@ class VirtualnetworkDdosProtectionPlanAttrs:
 VirtualnetworkDdosProtectionPlan = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_ddos_protection_plan",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

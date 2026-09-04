@@ -4,31 +4,31 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSchedule_Value_Properties_AdvancedSchedule_MonthlyOccurrences struct {
-	Day any
+	Day        any
 	Occurrence any
 }
 
 type OpenapiSchedule_Value_Properties_AdvancedSchedule struct {
-	MonthDays any
+	MonthDays          any
 	MonthlyOccurrences any
-	WeekDays any
+	WeekDays           any
 }
 
 type OpenapiSchedule_Value_Properties struct {
-	AdvancedSchedule any
-	CreationTime any
-	Description any
-	ExpiryTime any
+	AdvancedSchedule        any
+	CreationTime            any
+	Description             any
+	ExpiryTime              any
 	ExpiryTimeOffsetMinutes any
-	Frequency any
-	Interval any
-	IsEnabled any
-	LastModifiedTime any
-	NextRun any
-	NextRunOffsetMinutes any
-	StartTime any
-	StartTimeOffsetMinutes any
-	TimeZone any
+	Frequency               any
+	Interval                any
+	IsEnabled               any
+	LastModifiedTime        any
+	NextRun                 any
+	NextRunOffsetMinutes    any
+	StartTime               any
+	StartTimeOffsetMinutes  any
+	TimeZone                any
 }
 
 type OpenapiSchedule_Value struct {

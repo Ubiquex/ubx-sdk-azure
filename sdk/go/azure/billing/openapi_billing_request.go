@@ -6,7 +6,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiBillingRequest_Properties_CreatedBy struct {
 	ObjectId any
 	TenantId any
-	Upn any
+	Upn      any
 }
 
 type OpenapiBillingRequest_Properties struct {
@@ -77,61 +77,61 @@ type OpenapiBillingRequest_Properties struct {
 }
 
 var OpenapiBillingRequest_Properties_CreatedByFields = ubx.FieldMap{
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Upn": ubx.FieldSpec{WireName: "upn"},
-	}
+	"ObjectId": ubx.FieldSpec{WireName: "object_id"},
+	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+	"Upn":      ubx.FieldSpec{WireName: "upn"},
+}
 
 var OpenapiBillingRequest_PropertiesFields = ubx.FieldMap{
-		"AdditionalInformation": ubx.FieldSpec{WireName: "additional_information"},
-		"BillingAccountDisplayName": ubx.FieldSpec{WireName: "billing_account_display_name"},
-		"BillingAccountId": ubx.FieldSpec{WireName: "billing_account_id"},
-		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"BillingAccountPrimaryBillingTenantId": ubx.FieldSpec{WireName: "billing_account_primary_billing_tenant_id"},
-		"BillingProfileDisplayName": ubx.FieldSpec{WireName: "billing_profile_display_name"},
-		"BillingProfileId": ubx.FieldSpec{WireName: "billing_profile_id"},
-		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"BillingScope": ubx.FieldSpec{WireName: "billing_scope"},
-		"CreatedBy": ubx.FieldSpec{
-			WireName: "created_by",
-			Kind: "object",
-			Fields: OpenapiBillingRequest_Properties_CreatedByFields,
-		},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"CustomerDisplayName": ubx.FieldSpec{WireName: "customer_display_name"},
-		"CustomerId": ubx.FieldSpec{WireName: "customer_id"},
-		"CustomerName": ubx.FieldSpec{WireName: "customer_name"},
-		"DecisionReason": ubx.FieldSpec{WireName: "decision_reason"},
-		"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
-		"InvoiceSectionDisplayName": ubx.FieldSpec{WireName: "invoice_section_display_name"},
-		"InvoiceSectionId": ubx.FieldSpec{WireName: "invoice_section_id"},
-		"InvoiceSectionName": ubx.FieldSpec{WireName: "invoice_section_name"},
-		"Justification": ubx.FieldSpec{WireName: "justification"},
-		"LastUpdatedBy": ubx.FieldSpec{
-			WireName: "last_updated_by",
-			Kind: "object",
-			Fields: OpenapiBillingRequest_Properties_CreatedByFields,
-		},
-		"LastUpdatedDate": ubx.FieldSpec{WireName: "last_updated_date"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Recipients": ubx.FieldSpec{
-			WireName: "recipients",
-			Kind: "list",
-			Fields: OpenapiBillingRequest_Properties_CreatedByFields,
-		},
-		"RequestScope": ubx.FieldSpec{WireName: "request_scope"},
-		"ReviewalDate": ubx.FieldSpec{WireName: "reviewal_date"},
-		"ReviewedBy": ubx.FieldSpec{
-			WireName: "reviewed_by",
-			Kind: "object",
-			Fields: OpenapiBillingRequest_Properties_CreatedByFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"SubscriptionDisplayName": ubx.FieldSpec{WireName: "subscription_display_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"SubscriptionName": ubx.FieldSpec{WireName: "subscription_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"AdditionalInformation":                ubx.FieldSpec{WireName: "additional_information"},
+	"BillingAccountDisplayName":            ubx.FieldSpec{WireName: "billing_account_display_name"},
+	"BillingAccountId":                     ubx.FieldSpec{WireName: "billing_account_id"},
+	"BillingAccountName":                   ubx.FieldSpec{WireName: "billing_account_name"},
+	"BillingAccountPrimaryBillingTenantId": ubx.FieldSpec{WireName: "billing_account_primary_billing_tenant_id"},
+	"BillingProfileDisplayName":            ubx.FieldSpec{WireName: "billing_profile_display_name"},
+	"BillingProfileId":                     ubx.FieldSpec{WireName: "billing_profile_id"},
+	"BillingProfileName":                   ubx.FieldSpec{WireName: "billing_profile_name"},
+	"BillingScope":                         ubx.FieldSpec{WireName: "billing_scope"},
+	"CreatedBy": ubx.FieldSpec{
+		WireName: "created_by",
+		Kind:     "object",
+		Fields:   OpenapiBillingRequest_Properties_CreatedByFields,
+	},
+	"CreationDate":              ubx.FieldSpec{WireName: "creation_date"},
+	"CustomerDisplayName":       ubx.FieldSpec{WireName: "customer_display_name"},
+	"CustomerId":                ubx.FieldSpec{WireName: "customer_id"},
+	"CustomerName":              ubx.FieldSpec{WireName: "customer_name"},
+	"DecisionReason":            ubx.FieldSpec{WireName: "decision_reason"},
+	"ExpirationDate":            ubx.FieldSpec{WireName: "expiration_date"},
+	"InvoiceSectionDisplayName": ubx.FieldSpec{WireName: "invoice_section_display_name"},
+	"InvoiceSectionId":          ubx.FieldSpec{WireName: "invoice_section_id"},
+	"InvoiceSectionName":        ubx.FieldSpec{WireName: "invoice_section_name"},
+	"Justification":             ubx.FieldSpec{WireName: "justification"},
+	"LastUpdatedBy": ubx.FieldSpec{
+		WireName: "last_updated_by",
+		Kind:     "object",
+		Fields:   OpenapiBillingRequest_Properties_CreatedByFields,
+	},
+	"LastUpdatedDate":   ubx.FieldSpec{WireName: "last_updated_date"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Recipients": ubx.FieldSpec{
+		WireName: "recipients",
+		Kind:     "list",
+		Fields:   OpenapiBillingRequest_Properties_CreatedByFields,
+	},
+	"RequestScope": ubx.FieldSpec{WireName: "request_scope"},
+	"ReviewalDate": ubx.FieldSpec{WireName: "reviewal_date"},
+	"ReviewedBy": ubx.FieldSpec{
+		WireName: "reviewed_by",
+		Kind:     "object",
+		Fields:   OpenapiBillingRequest_Properties_CreatedByFields,
+	},
+	"Status":                  ubx.FieldSpec{WireName: "status"},
+	"SubscriptionDisplayName": ubx.FieldSpec{WireName: "subscription_display_name"},
+	"SubscriptionId":          ubx.FieldSpec{WireName: "subscription_id"},
+	"SubscriptionName":        ubx.FieldSpec{WireName: "subscription_name"},
+	"Type":                    ubx.FieldSpec{WireName: "type"},
+}
 
 type OpenapiBillingRequestConfig struct {
 	// A request submitted by a user to manage billing. Users with an owner role on the scope can approve or decline these requests.
@@ -152,8 +152,8 @@ var OpenapiBillingRequest = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiBillingRequest_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiBillingRequest_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

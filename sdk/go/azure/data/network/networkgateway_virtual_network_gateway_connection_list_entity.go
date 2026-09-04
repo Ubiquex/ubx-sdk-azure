@@ -5,18 +5,18 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties_GatewayCustomBgpIpAddresses struct {
 	CustomBgpIpAddress any
-	IpConfigurationId any
+	IpConfigurationId  any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties_IpsecPolicies struct {
-	DhGroup any
-	IkeEncryption any
-	IkeIntegrity any
-	IpsecEncryption any
-	IpsecIntegrity any
-	PfsGroup any
+	DhGroup             any
+	IkeEncryption       any
+	IkeIntegrity        any
+	IpsecEncryption     any
+	IpsecIntegrity      any
+	PfsGroup            any
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds any
+	SaLifeTimeSeconds   any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties_LocalNetworkGateway2 struct {
@@ -24,77 +24,77 @@ type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties_Lo
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids any
+	Ids    any
 	Labels any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes any
+	PropagateStaticRoutes          any
 	VnetLocalRouteOverrideCriteria any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections any
-	StaticRoutes any
+	BgpConnections     any
+	StaticRoutes       any
 	StaticRoutesConfig any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable any
-	InboundRouteMap any
-	OutboundRouteMap any
+	AssociatedRouteTable  any
+	InboundRouteMap       any
+	OutboundRouteMap      any
 	PropagatedRouteTables any
-	VnetRoutes any
+	VnetRoutes            any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties_TrafficSelectorPolicies struct {
-	LocalAddressRanges any
+	LocalAddressRanges  any
 	RemoteAddressRanges any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties_TunnelConnectionStatus struct {
-	ConnectionStatus any
-	EgressBytesTransferred any
-	IngressBytesTransferred any
+	ConnectionStatus                 any
+	EgressBytesTransferred           any
+	IngressBytesTransferred          any
 	LastConnectionEstablishedUtcTime any
-	Tunnel any
+	Tunnel                           any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value_Properties struct {
-	AuthorizationKey any
-	ConnectionMode any
-	ConnectionProtocol any
-	ConnectionStatus any
-	ConnectionType any
-	EgressBytesTransferred any
-	EnableBgp any
-	EnablePrivateLinkFastPath any
-	ExpressRouteGatewayBypass any
-	GatewayCustomBgpIpAddresses any
-	IngressBytesTransferred any
-	IpsecPolicies any
-	LocalNetworkGateway2 any
-	Peer any
-	ProvisioningState any
-	ResourceGuid any
-	RoutingConfiguration any
-	RoutingWeight any
-	SharedKey any
-	TrafficSelectorPolicies any
-	TunnelConnectionStatus any
+	AuthorizationKey               any
+	ConnectionMode                 any
+	ConnectionProtocol             any
+	ConnectionStatus               any
+	ConnectionType                 any
+	EgressBytesTransferred         any
+	EnableBgp                      any
+	EnablePrivateLinkFastPath      any
+	ExpressRouteGatewayBypass      any
+	GatewayCustomBgpIpAddresses    any
+	IngressBytesTransferred        any
+	IpsecPolicies                  any
+	LocalNetworkGateway2           any
+	Peer                           any
+	ProvisioningState              any
+	ResourceGuid                   any
+	RoutingConfiguration           any
+	RoutingWeight                  any
+	SharedKey                      any
+	TrafficSelectorPolicies        any
+	TunnelConnectionStatus         any
 	UsePolicyBasedTrafficSelectors any
-	VirtualNetworkGateway1 any
-	VirtualNetworkGateway2 any
+	VirtualNetworkGateway1         any
+	VirtualNetworkGateway2         any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionListEntity_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -106,7 +106,7 @@ type NetworkgatewayVirtualNetworkGatewayConnectionListEntityAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The VirtualNetworkGatewayConnectionListEntity items on this page
-	Value any
+	Value                     any
 	VirtualNetworkGatewayName any
 }
 

@@ -101,27 +101,14 @@ _ApigatewayApiManagementGatewayResource_SkuFields = {
     "name": ubx.FieldSpec(wire_name="name"),
 }
 
-_ApigatewayApiManagementGatewayResource_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class ApigatewayApiManagementGatewayResourceConfig:
-    # ETag of the resource.
-    etag: Any = None
     # Resource location.
     location: Any = None
     # Properties of an API Management gateway resource description.
     properties: Any = None
     # API Management gateway resource SKU properties.
     sku: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class ApigatewayApiManagementGatewayResourceAttrs:
@@ -139,7 +126,6 @@ class ApigatewayApiManagementGatewayResourceAttrs:
 ApigatewayApiManagementGatewayResource = ubx.ResourceBinding(
     wire_type="azure_apimanagement_apigateway_api_management_gateway_resource",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
@@ -150,11 +136,6 @@ ApigatewayApiManagementGatewayResource = ubx.ResourceBinding(
             wire_name="sku",
             kind="object",
             fields=_ApigatewayApiManagementGatewayResource_SkuFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_ApigatewayApiManagementGatewayResource_SystemDataFields,
         ),
     },
 )

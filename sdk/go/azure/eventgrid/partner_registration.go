@@ -26,24 +26,13 @@ type PartnerRegistration_SystemData struct {
 }
 
 var PartnerRegistration_PropertiesFields = ubx.FieldMap{
-		"PartnerRegistrationImmutableId": ubx.FieldSpec{WireName: "partner_registration_immutable_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
-
-var PartnerRegistration_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"PartnerRegistrationImmutableId": ubx.FieldSpec{WireName: "partner_registration_immutable_id"},
+	"ProvisioningState":              ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type PartnerRegistrationConfig struct {
 	// Properties of the partner registration.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type PartnerRegistrationAttrs struct {
@@ -58,13 +47,8 @@ var PartnerRegistration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PartnerRegistration_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: PartnerRegistration_SystemDataFields,
+			Kind:     "object",
+			Fields:   PartnerRegistration_PropertiesFields,
 		},
 	},
 }

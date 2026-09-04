@@ -4,7 +4,7 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ProjectEnvironmentType_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -27,25 +27,25 @@ type ProjectEnvironmentType_Properties struct {
 }
 
 var ProjectEnvironmentType_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var ProjectEnvironmentType_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: ProjectEnvironmentType_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   ProjectEnvironmentType_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var ProjectEnvironmentType_PropertiesFields = ubx.FieldMap{
-		"EnvironmentCount": ubx.FieldSpec{WireName: "environment_count"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"EnvironmentCount":  ubx.FieldSpec{WireName: "environment_count"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ProjectEnvironmentTypeConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -74,14 +74,14 @@ var ProjectEnvironmentType = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ProjectEnvironmentType_IdentityFields,
+			Kind:     "object",
+			Fields:   ProjectEnvironmentType_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ProjectEnvironmentType_PropertiesFields,
+			Kind:     "object",
+			Fields:   ProjectEnvironmentType_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

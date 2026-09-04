@@ -8,29 +8,29 @@ type MachineScaleSetExtension_Value_Properties_ProtectedSettingsFromKeyVault_Sou
 }
 
 type MachineScaleSetExtension_Value_Properties_ProtectedSettingsFromKeyVault struct {
-	SecretUrl any
+	SecretUrl   any
 	SourceVault any
 }
 
 type MachineScaleSetExtension_Value_Properties struct {
-	AutoUpgradeMinorVersion any
-	EnableAutomaticUpgrade any
-	ForceUpdateTag any
-	ProtectedSettings any
+	AutoUpgradeMinorVersion       any
+	EnableAutomaticUpgrade        any
+	ForceUpdateTag                any
+	ProtectedSettings             any
 	ProtectedSettingsFromKeyVault any
-	ProvisionAfterExtensions any
-	ProvisioningState any
-	Publisher any
-	Settings any
-	SuppressFailures any
-	Type any
-	TypeHandlerVersion any
+	ProvisionAfterExtensions      any
+	ProvisioningState             any
+	Publisher                     any
+	Settings                      any
+	SuppressFailures              any
+	Type                          any
+	TypeHandlerVersion            any
 }
 
 type MachineScaleSetExtension_Value struct {
-	Name any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type MachineScaleSetExtensionConfig struct {
@@ -41,7 +41,7 @@ type MachineScaleSetExtensionAttrs struct {
 	// The uri to fetch the next page of VM scale set extensions. Call ListNext() with this to fetch the next page of VM scale set extensions.
 	NextLink any
 	// The list of VM scale set extensions.
-	Value any
+	Value          any
 	VmScaleSetName any
 }
 

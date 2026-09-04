@@ -4,17 +4,17 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiMongoUserDefinitionGetResults_Value_Properties_Roles struct {
-	Db any
+	Db   any
 	Role any
 }
 
 type DbOpenapiMongoUserDefinitionGetResults_Value_Properties struct {
-	CustomData any
+	CustomData   any
 	DatabaseName any
-	Mechanisms any
-	Password any
-	Roles any
-	UserName any
+	Mechanisms   any
+	Password     any
+	Roles        any
+	UserName     any
 }
 
 type DbOpenapiMongoUserDefinitionGetResults_Value struct {
@@ -27,7 +27,7 @@ type DbOpenapiMongoUserDefinitionGetResultsConfig struct {
 
 type DbOpenapiMongoUserDefinitionGetResultsAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// List of User Definition and their properties
 	Value any
 }

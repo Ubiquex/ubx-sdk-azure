@@ -8,22 +8,22 @@ type ManagedNetworkSettingsPropertiesBasicResource_Properties_ManagedNetwork str
 }
 
 type ManagedNetworkSettingsPropertiesBasicResource_Properties struct {
-	ManagedNetwork any
+	ManagedNetwork    any
 	ProvisioningState any
 }
 
 var ManagedNetworkSettingsPropertiesBasicResource_Properties_ManagedNetworkFields = ubx.FieldMap{
-		"ChangeableIsolationModes": ubx.FieldSpec{WireName: "changeable_isolation_modes"},
-	}
+	"ChangeableIsolationModes": ubx.FieldSpec{WireName: "changeable_isolation_modes"},
+}
 
 var ManagedNetworkSettingsPropertiesBasicResource_PropertiesFields = ubx.FieldMap{
-		"ManagedNetwork": ubx.FieldSpec{
-			WireName: "managed_network",
-			Kind: "object",
-			Fields: ManagedNetworkSettingsPropertiesBasicResource_Properties_ManagedNetworkFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ManagedNetwork": ubx.FieldSpec{
+		WireName: "managed_network",
+		Kind:     "object",
+		Fields:   ManagedNetworkSettingsPropertiesBasicResource_Properties_ManagedNetworkFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ManagedNetworkSettingsPropertiesBasicResourceConfig struct {
 	// The properties of the managed network settings of a cognitive services account.
@@ -40,8 +40,8 @@ var ManagedNetworkSettingsPropertiesBasicResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedNetworkSettingsPropertiesBasicResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedNetworkSettingsPropertiesBasicResource_PropertiesFields,
 		},
 	},
 }

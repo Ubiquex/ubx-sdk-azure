@@ -4,16 +4,11 @@ package virtual
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MachineScaleSetVmextension_Properties_InstanceView_Statuses struct {
-	// The machine-readable status code for the extension instance view, such as 'ProvisioningState/succeeded' or 'ProvisioningState/failed'. (AI-inferred)
-	Code any
-	// The short, human-readable label for the status. (AI-inferred)
+	Code          any
 	DisplayStatus any
-	// The level of the status message, indicating severity. Possible values are Info, Warning, and Error. (AI-inferred)
-	Level any
-	// A human-readable message providing additional details about the status. (AI-inferred)
-	Message any
-	// The timestamp when the status was recorded, in ISO 8601 format (e.g., 2024-01-01T12:00:00Z). (AI-inferred)
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type MachineScaleSetVmextension_Properties_InstanceView struct {
@@ -36,8 +31,7 @@ type MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault_SourceV
 
 type MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault struct {
 	// The URL referencing a secret in a Key Vault.
-	SecretUrl any
-	// Specifies the Azure Key Vault from which the secret for the protected settings is retrieved. This is required when using protected settings from a Key Vault. (AI-inferred)
+	SecretUrl   any
 	SourceVault any
 }
 
@@ -71,75 +65,71 @@ type MachineScaleSetVmextension_Properties struct {
 }
 
 var MachineScaleSetVmextension_Properties_InstanceView_StatusesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var MachineScaleSetVmextension_Properties_InstanceViewFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Statuses": ubx.FieldSpec{
-			WireName: "statuses",
-			Kind: "list",
-			Fields: MachineScaleSetVmextension_Properties_InstanceView_StatusesFields,
-		},
-		"Substatuses": ubx.FieldSpec{
-			WireName: "substatuses",
-			Kind: "list",
-			Fields: MachineScaleSetVmextension_Properties_InstanceView_StatusesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Statuses": ubx.FieldSpec{
+		WireName: "statuses",
+		Kind:     "list",
+		Fields:   MachineScaleSetVmextension_Properties_InstanceView_StatusesFields,
+	},
+	"Substatuses": ubx.FieldSpec{
+		WireName: "substatuses",
+		Kind:     "list",
+		Fields:   MachineScaleSetVmextension_Properties_InstanceView_StatusesFields,
+	},
+	"Type":               ubx.FieldSpec{WireName: "type"},
+	"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
+}
 
 var MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault_SourceVaultFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVaultFields = ubx.FieldMap{
-		"SecretUrl": ubx.FieldSpec{WireName: "secret_url"},
-		"SourceVault": ubx.FieldSpec{
-			WireName: "source_vault",
-			Kind: "object",
-			Fields: MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault_SourceVaultFields,
-		},
-	}
+	"SecretUrl": ubx.FieldSpec{WireName: "secret_url"},
+	"SourceVault": ubx.FieldSpec{
+		WireName: "source_vault",
+		Kind:     "object",
+		Fields:   MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault_SourceVaultFields,
+	},
+}
 
 var MachineScaleSetVmextension_PropertiesFields = ubx.FieldMap{
-		"AutoUpgradeMinorVersion": ubx.FieldSpec{WireName: "auto_upgrade_minor_version"},
-		"EnableAutomaticUpgrade": ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
-		"ForceUpdateTag": ubx.FieldSpec{WireName: "force_update_tag"},
-		"InstanceView": ubx.FieldSpec{
-			WireName: "instance_view",
-			Kind: "object",
-			Fields: MachineScaleSetVmextension_Properties_InstanceViewFields,
-		},
-		"ProtectedSettings": ubx.FieldSpec{WireName: "protected_settings"},
-		"ProtectedSettingsFromKeyVault": ubx.FieldSpec{
-			WireName: "protected_settings_from_key_vault",
-			Kind: "object",
-			Fields: MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVaultFields,
-		},
-		"ProvisionAfterExtensions": ubx.FieldSpec{WireName: "provision_after_extensions"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Settings": ubx.FieldSpec{WireName: "settings"},
-		"SuppressFailures": ubx.FieldSpec{WireName: "suppress_failures"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-	}
+	"AutoUpgradeMinorVersion": ubx.FieldSpec{WireName: "auto_upgrade_minor_version"},
+	"EnableAutomaticUpgrade":  ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
+	"ForceUpdateTag":          ubx.FieldSpec{WireName: "force_update_tag"},
+	"InstanceView": ubx.FieldSpec{
+		WireName: "instance_view",
+		Kind:     "object",
+		Fields:   MachineScaleSetVmextension_Properties_InstanceViewFields,
+	},
+	"ProtectedSettings": ubx.FieldSpec{WireName: "protected_settings"},
+	"ProtectedSettingsFromKeyVault": ubx.FieldSpec{
+		WireName: "protected_settings_from_key_vault",
+		Kind:     "object",
+		Fields:   MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVaultFields,
+	},
+	"ProvisionAfterExtensions": ubx.FieldSpec{WireName: "provision_after_extensions"},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"Publisher":                ubx.FieldSpec{WireName: "publisher"},
+	"Settings":                 ubx.FieldSpec{WireName: "settings"},
+	"SuppressFailures":         ubx.FieldSpec{WireName: "suppress_failures"},
+	"Type":                     ubx.FieldSpec{WireName: "type"},
+	"TypeHandlerVersion":       ubx.FieldSpec{WireName: "type_handler_version"},
+}
 
 type MachineScaleSetVmextensionConfig struct {
 	// The location of the extension.
 	Location any
-	// Resource name
-	Name any
 	// Describes the properties of a Virtual Machine Extension.
 	Properties any
-	// Resource type
-	Type any
 }
 
 type MachineScaleSetVmextensionAttrs struct {
@@ -157,12 +147,10 @@ var MachineScaleSetVmextension = ubx.ResourceBinding{
 	WireType: "azure_virtual_machine_scale_set_vmextension",
 	Fields: ubx.FieldMap{
 		"Location": ubx.FieldSpec{WireName: "location"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: MachineScaleSetVmextension_PropertiesFields,
+			Kind:     "object",
+			Fields:   MachineScaleSetVmextension_PropertiesFields,
 		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

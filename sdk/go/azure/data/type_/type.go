@@ -5,18 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TypeConfig struct {
 	PublisherName any
-	Type any
 }
 
 type TypeAttrs struct {
 	PublisherName any
-	Type any
 }
 
 var Type = ubx.DataSourceBinding{
 	WireType: "azure_type",
 	Fields: ubx.FieldMap{
 		"PublisherName": ubx.FieldSpec{WireName: "publisher_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

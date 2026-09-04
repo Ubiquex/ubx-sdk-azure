@@ -1043,8 +1043,6 @@ _NetworkgatewayVirtualNetworkGatewayConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnectionConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # VirtualNetworkGatewayConnection properties.
     properties: Any = None
 
@@ -1058,7 +1056,6 @@ class NetworkgatewayVirtualNetworkGatewayConnectionAttrs:
 NetworkgatewayVirtualNetworkGatewayConnection = ubx.ResourceBinding(
     wire_type="azure_network_networkgateway_virtual_network_gateway_connection",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

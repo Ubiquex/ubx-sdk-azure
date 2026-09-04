@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSiteConfigurationSnapshotInfo_Value_Properties struct {
 	SnapshotId any
-	Time any
+	Time       any
 }
 
 type OpenapiSiteConfigurationSnapshotInfo_Value struct {

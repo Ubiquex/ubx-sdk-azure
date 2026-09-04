@@ -4,31 +4,31 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDbSystemShape_Value_Properties struct {
-	AreServerTypesSupported any
-	AvailableCoreCount any
-	AvailableCoreCountPerNode any
-	AvailableDataStorageInTbs any
+	AreServerTypesSupported            any
+	AvailableCoreCount                 any
+	AvailableCoreCountPerNode          any
+	AvailableDataStorageInTbs          any
 	AvailableDataStoragePerServerInTbs any
-	AvailableDbNodePerNodeInGbs any
-	AvailableDbNodeStorageInGbs any
-	AvailableMemoryInGbs any
-	AvailableMemoryPerNodeInGbs any
-	ComputeModel any
-	CoreCountIncrement any
-	DisplayName any
-	MaxStorageCount any
-	MaximumNodeCount any
-	MinCoreCountPerNode any
-	MinDataStorageInTbs any
-	MinDbNodeStoragePerNodeInGbs any
-	MinMemoryPerNodeInGbs any
-	MinStorageCount any
-	MinimumCoreCount any
-	MinimumNodeCount any
-	RuntimeMinimumCoreCount any
-	ShapeAttributes any
-	ShapeFamily any
-	ShapeName any
+	AvailableDbNodePerNodeInGbs        any
+	AvailableDbNodeStorageInGbs        any
+	AvailableMemoryInGbs               any
+	AvailableMemoryPerNodeInGbs        any
+	ComputeModel                       any
+	CoreCountIncrement                 any
+	DisplayName                        any
+	MaxStorageCount                    any
+	MaximumNodeCount                   any
+	MinCoreCountPerNode                any
+	MinDataStorageInTbs                any
+	MinDbNodeStoragePerNodeInGbs       any
+	MinMemoryPerNodeInGbs              any
+	MinStorageCount                    any
+	MinimumCoreCount                   any
+	MinimumNodeCount                   any
+	RuntimeMinimumCoreCount            any
+	ShapeAttributes                    any
+	ShapeFamily                        any
+	ShapeName                          any
 }
 
 type OpenapiDbSystemShape_Value struct {
@@ -37,22 +37,22 @@ type OpenapiDbSystemShape_Value struct {
 
 type OpenapiDbSystemShapeConfig struct {
 	ShapeAttribute any
-	Zone any
+	Zone           any
 }
 
 type OpenapiDbSystemShapeAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink       any
 	ShapeAttribute any
 	// The DbSystemShape items on this page
 	Value any
-	Zone any
+	Zone  any
 }
 
 var OpenapiDbSystemShape = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_db_system_shape",
 	Fields: ubx.FieldMap{
 		"ShapeAttribute": ubx.FieldSpec{WireName: "shape_attribute"},
-		"Zone": ubx.FieldSpec{WireName: "zone"},
+		"Zone":           ubx.FieldSpec{WireName: "zone"},
 	},
 }

@@ -4,7 +4,7 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciArcSetting_Properties_ConnectivityProperties_ServiceConfigurations struct {
-	Port any
+	Port        any
 	ServiceName any
 }
 
@@ -16,15 +16,15 @@ type HciArcSetting_Properties_ConnectivityProperties struct {
 }
 
 type HciArcSetting_Properties_DefaultExtensions struct {
-	Category any
+	Category    any
 	ConsentTime any
 }
 
 type HciArcSetting_Properties_PerNodeDetails struct {
-	ArcInstance any
+	ArcInstance                     any
 	ArcNodeServicePrincipalObjectId any
-	Name any
-	State any
+	Name                            any
+	State                           any
 }
 
 type HciArcSetting_Properties struct {
@@ -51,55 +51,55 @@ type HciArcSetting_Properties struct {
 }
 
 var HciArcSetting_Properties_ConnectivityProperties_ServiceConfigurationsFields = ubx.FieldMap{
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-	}
+	"Port":        ubx.FieldSpec{WireName: "port"},
+	"ServiceName": ubx.FieldSpec{WireName: "service_name"},
+}
 
 var HciArcSetting_Properties_ConnectivityPropertiesFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"ServiceConfigurations": ubx.FieldSpec{
-			WireName: "service_configurations",
-			Kind: "list",
-			Fields: HciArcSetting_Properties_ConnectivityProperties_ServiceConfigurationsFields,
-		},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"ServiceConfigurations": ubx.FieldSpec{
+		WireName: "service_configurations",
+		Kind:     "list",
+		Fields:   HciArcSetting_Properties_ConnectivityProperties_ServiceConfigurationsFields,
+	},
+}
 
 var HciArcSetting_Properties_DefaultExtensionsFields = ubx.FieldMap{
-		"Category": ubx.FieldSpec{WireName: "category"},
-		"ConsentTime": ubx.FieldSpec{WireName: "consent_time"},
-	}
+	"Category":    ubx.FieldSpec{WireName: "category"},
+	"ConsentTime": ubx.FieldSpec{WireName: "consent_time"},
+}
 
 var HciArcSetting_Properties_PerNodeDetailsFields = ubx.FieldMap{
-		"ArcInstance": ubx.FieldSpec{WireName: "arc_instance"},
-		"ArcNodeServicePrincipalObjectId": ubx.FieldSpec{WireName: "arc_node_service_principal_object_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"ArcInstance":                     ubx.FieldSpec{WireName: "arc_instance"},
+	"ArcNodeServicePrincipalObjectId": ubx.FieldSpec{WireName: "arc_node_service_principal_object_id"},
+	"Name":                            ubx.FieldSpec{WireName: "name"},
+	"State":                           ubx.FieldSpec{WireName: "state"},
+}
 
 var HciArcSetting_PropertiesFields = ubx.FieldMap{
-		"AggregateState": ubx.FieldSpec{WireName: "aggregate_state"},
-		"ArcApplicationClientId": ubx.FieldSpec{WireName: "arc_application_client_id"},
-		"ArcApplicationObjectId": ubx.FieldSpec{WireName: "arc_application_object_id"},
-		"ArcApplicationTenantId": ubx.FieldSpec{WireName: "arc_application_tenant_id"},
-		"ArcInstanceResourceGroup": ubx.FieldSpec{WireName: "arc_instance_resource_group"},
-		"ArcServicePrincipalObjectId": ubx.FieldSpec{WireName: "arc_service_principal_object_id"},
-		"ConnectivityProperties": ubx.FieldSpec{
-			WireName: "connectivity_properties",
-			Kind: "object",
-			Fields: HciArcSetting_Properties_ConnectivityPropertiesFields,
-		},
-		"DefaultExtensions": ubx.FieldSpec{
-			WireName: "default_extensions",
-			Kind: "list",
-			Fields: HciArcSetting_Properties_DefaultExtensionsFields,
-		},
-		"PerNodeDetails": ubx.FieldSpec{
-			WireName: "per_node_details",
-			Kind: "list",
-			Fields: HciArcSetting_Properties_PerNodeDetailsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AggregateState":              ubx.FieldSpec{WireName: "aggregate_state"},
+	"ArcApplicationClientId":      ubx.FieldSpec{WireName: "arc_application_client_id"},
+	"ArcApplicationObjectId":      ubx.FieldSpec{WireName: "arc_application_object_id"},
+	"ArcApplicationTenantId":      ubx.FieldSpec{WireName: "arc_application_tenant_id"},
+	"ArcInstanceResourceGroup":    ubx.FieldSpec{WireName: "arc_instance_resource_group"},
+	"ArcServicePrincipalObjectId": ubx.FieldSpec{WireName: "arc_service_principal_object_id"},
+	"ConnectivityProperties": ubx.FieldSpec{
+		WireName: "connectivity_properties",
+		Kind:     "object",
+		Fields:   HciArcSetting_Properties_ConnectivityPropertiesFields,
+	},
+	"DefaultExtensions": ubx.FieldSpec{
+		WireName: "default_extensions",
+		Kind:     "list",
+		Fields:   HciArcSetting_Properties_DefaultExtensionsFields,
+	},
+	"PerNodeDetails": ubx.FieldSpec{
+		WireName: "per_node_details",
+		Kind:     "list",
+		Fields:   HciArcSetting_Properties_PerNodeDetailsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type HciArcSettingConfig struct {
 	// ArcSetting properties.
@@ -116,8 +116,8 @@ var HciArcSetting = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HciArcSetting_PropertiesFields,
+			Kind:     "object",
+			Fields:   HciArcSetting_PropertiesFields,
 		},
 	},
 }

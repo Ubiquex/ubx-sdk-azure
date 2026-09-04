@@ -17,29 +17,29 @@ type OpenapiWorkflowRunActionRepetitionDefinition_Value struct {
 }
 
 type OpenapiWorkflowRunActionRepetitionDefinitionConfig struct {
-	ActionName any
-	Name any
-	RunName any
+	ActionName   any
+	Name         any
+	RunName      any
 	WorkflowName any
 }
 
 type OpenapiWorkflowRunActionRepetitionDefinitionAttrs struct {
 	ActionName any
-	Name any
+	Name       any
 	// The link to the next page of items
 	NextLink any
-	RunName any
+	RunName  any
 	// The WorkflowRunActionRepetitionDefinition items on this page
-	Value any
+	Value        any
 	WorkflowName any
 }
 
 var OpenapiWorkflowRunActionRepetitionDefinition = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_run_action_repetition_definition",
 	Fields: ubx.FieldMap{
-		"ActionName": ubx.FieldSpec{WireName: "action_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"RunName": ubx.FieldSpec{WireName: "run_name"},
+		"ActionName":   ubx.FieldSpec{WireName: "action_name"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
+		"RunName":      ubx.FieldSpec{WireName: "run_name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

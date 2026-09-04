@@ -133,28 +133,11 @@ const RegistrationDefinition_PropertiesFields: FieldMap = {
   registrationDefinitionName: "registration_definition_name",
 };
 
-const RegistrationDefinition_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface RegistrationDefinitionConfig {
-  /** The fully qualified path of the registration definition. */
-  id?: string | Computed<string>;
-  /** The name of the registration definition. */
-  name?: string | Computed<string>;
   /** The details for the Managed Services offer’s plan in Azure Marketplace. */
   plan?: RegistrationDefinition_Plan | Computed<RegistrationDefinition_Plan>;
   /** The properties of a registration definition. */
   properties?: RegistrationDefinition_Properties | Computed<RegistrationDefinition_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: RegistrationDefinition_SystemData | Computed<RegistrationDefinition_SystemData>;
-  /** The type of the Azure resource (Microsoft.ManagedServices/registrationDefinitions). */
-  type?: string | Computed<string>;
   /** path parameter, not part of the API's own resource representation */
   scope: string | Computed<string>;
 }
@@ -179,8 +162,6 @@ export interface RegistrationDefinitionAttrs {
 export const RegistrationDefinition: ResourceBinding<RegistrationDefinitionConfig, RegistrationDefinitionAttrs> = {
   wireType: "azure_managedservices_registration_definition",
   fields: {
-    id: "id",
-    name: "name",
     plan: {
       wireName: "plan",
       kind: "object",
@@ -191,12 +172,6 @@ export const RegistrationDefinition: ResourceBinding<RegistrationDefinitionConfi
       kind: "object",
       fields: RegistrationDefinition_PropertiesFields,
     },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: RegistrationDefinition_SystemDataFields,
-    },
-    type: "type",
     scope: "scope",
   },
 };

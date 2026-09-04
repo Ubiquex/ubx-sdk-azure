@@ -4,10 +4,10 @@ package msi
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedidentityIdentity_Value_Properties struct {
-	ClientId any
+	ClientId       any
 	IsolationScope any
-	PrincipalId any
-	TenantId any
+	PrincipalId    any
+	TenantId       any
 }
 
 type ManagedidentityIdentity_Value struct {
@@ -26,6 +26,5 @@ type ManagedidentityIdentityAttrs struct {
 
 var ManagedidentityIdentity = ubx.DataSourceBinding{
 	WireType: "azure_msi_managedidentity_identity",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

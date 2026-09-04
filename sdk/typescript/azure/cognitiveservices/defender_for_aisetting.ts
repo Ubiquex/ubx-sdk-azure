@@ -11,8 +11,6 @@ const DefenderForAisetting_PropertiesFields: FieldMap = {
 };
 
 export interface DefenderForAisettingConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** The Defender for AI resource properties. */
   properties?: DefenderForAisetting_Properties | Computed<DefenderForAisetting_Properties>;
   /** Resource tags. */
@@ -31,7 +29,6 @@ export interface DefenderForAisettingAttrs {
 export const DefenderForAisetting: ResourceBinding<DefenderForAisettingConfig, DefenderForAisettingAttrs> = {
   wireType: "azure_cognitiveservices_defender_for_aisetting",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -9,7 +9,7 @@ type NetworkgatewayConnectionSharedKeyConfig struct {
 
 type NetworkgatewayConnectionSharedKeyAttrs struct {
 	// The virtual network connection shared key value.
-	Value any
+	Value                               any
 	VirtualNetworkGatewayConnectionName any
 }
 

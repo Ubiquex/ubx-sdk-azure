@@ -13,16 +13,16 @@ type ApimproductsProductContract_Value struct {
 
 type ApimproductsProductContractConfig struct {
 	ExpandGroups any
-	Tags any
+	Tags         any
 }
 
 type ApimproductsProductContractAttrs struct {
 	// Total record count number across all pages.
-	Count any
+	Count        any
 	ExpandGroups any
 	// Next page link if any.
 	NextLink any
-	Tags any
+	Tags     any
 	// Page values.
 	Value any
 }
@@ -31,6 +31,6 @@ var ApimproductsProductContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimproducts_product_contract",
 	Fields: ubx.FieldMap{
 		"ExpandGroups": ubx.FieldSpec{WireName: "expand_groups"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"Tags":         ubx.FieldSpec{WireName: "tags"},
 	},
 }

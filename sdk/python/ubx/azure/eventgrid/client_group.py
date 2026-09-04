@@ -36,21 +36,10 @@ _ClientGroup_PropertiesFields = {
     "query": ubx.FieldSpec(wire_name="query"),
 }
 
-_ClientGroup_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class ClientGroupConfig:
     # The properties of client group.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class ClientGroupAttrs:
@@ -66,11 +55,6 @@ ClientGroup = ubx.ResourceBinding(
             wire_name="properties",
             kind="object",
             fields=_ClientGroup_PropertiesFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_ClientGroup_SystemDataFields,
         ),
     },
 )

@@ -20,7 +20,7 @@ type OpenapiRoute_Properties_CacheConfiguration struct {
 }
 
 type OpenapiRoute_Properties_CustomDomains struct {
-	Id any
+	Id       any
 	IsActive any
 }
 
@@ -33,7 +33,7 @@ type OpenapiRoute_Properties struct {
 	// Caching settings for a caching-type route. To disable caching, do not provide a cacheConfiguration object.
 	CacheConfiguration any
 	// Domains referenced by this endpoint.
-	CustomDomains any
+	CustomDomains    any
 	DeploymentStatus any
 	// Whether to enable use of this rule. Permitted values are 'Enabled' or 'Disabled'
 	EnabledState any
@@ -60,61 +60,61 @@ type OpenapiRoute_Properties struct {
 }
 
 var OpenapiRoute_Properties_CacheConfiguration_CompressionSettingsFields = ubx.FieldMap{
-		"ContentTypesToCompress": ubx.FieldSpec{WireName: "content_types_to_compress"},
-		"IsCompressionEnabled": ubx.FieldSpec{WireName: "is_compression_enabled"},
-	}
+	"ContentTypesToCompress": ubx.FieldSpec{WireName: "content_types_to_compress"},
+	"IsCompressionEnabled":   ubx.FieldSpec{WireName: "is_compression_enabled"},
+}
 
 var OpenapiRoute_Properties_CacheConfigurationFields = ubx.FieldMap{
-		"CompressionSettings": ubx.FieldSpec{
-			WireName: "compression_settings",
-			Kind: "object",
-			Fields: OpenapiRoute_Properties_CacheConfiguration_CompressionSettingsFields,
-		},
-		"QueryParameters": ubx.FieldSpec{WireName: "query_parameters"},
-		"QueryStringCachingBehavior": ubx.FieldSpec{WireName: "query_string_caching_behavior"},
-	}
+	"CompressionSettings": ubx.FieldSpec{
+		WireName: "compression_settings",
+		Kind:     "object",
+		Fields:   OpenapiRoute_Properties_CacheConfiguration_CompressionSettingsFields,
+	},
+	"QueryParameters":            ubx.FieldSpec{WireName: "query_parameters"},
+	"QueryStringCachingBehavior": ubx.FieldSpec{WireName: "query_string_caching_behavior"},
+}
 
 var OpenapiRoute_Properties_CustomDomainsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"IsActive": ubx.FieldSpec{WireName: "is_active"},
-	}
+	"Id":       ubx.FieldSpec{WireName: "id"},
+	"IsActive": ubx.FieldSpec{WireName: "is_active"},
+}
 
 var OpenapiRoute_Properties_OriginGroupFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiRoute_PropertiesFields = ubx.FieldMap{
-		"CacheConfiguration": ubx.FieldSpec{
-			WireName: "cache_configuration",
-			Kind: "object",
-			Fields: OpenapiRoute_Properties_CacheConfigurationFields,
-		},
-		"CustomDomains": ubx.FieldSpec{
-			WireName: "custom_domains",
-			Kind: "list",
-			Fields: OpenapiRoute_Properties_CustomDomainsFields,
-		},
-		"DeploymentStatus": ubx.FieldSpec{WireName: "deployment_status"},
-		"EnabledState": ubx.FieldSpec{WireName: "enabled_state"},
-		"EndpointName": ubx.FieldSpec{WireName: "endpoint_name"},
-		"ForwardingProtocol": ubx.FieldSpec{WireName: "forwarding_protocol"},
-		"HttpsRedirect": ubx.FieldSpec{WireName: "https_redirect"},
-		"LinkToDefaultDomain": ubx.FieldSpec{WireName: "link_to_default_domain"},
-		"OriginGroup": ubx.FieldSpec{
-			WireName: "origin_group",
-			Kind: "object",
-			Fields: OpenapiRoute_Properties_OriginGroupFields,
-		},
-		"OriginPath": ubx.FieldSpec{WireName: "origin_path"},
-		"PatternsToMatch": ubx.FieldSpec{WireName: "patterns_to_match"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RuleSets": ubx.FieldSpec{
-			WireName: "rule_sets",
-			Kind: "list",
-			Fields: OpenapiRoute_Properties_OriginGroupFields,
-		},
-		"SupportedProtocols": ubx.FieldSpec{WireName: "supported_protocols"},
-	}
+	"CacheConfiguration": ubx.FieldSpec{
+		WireName: "cache_configuration",
+		Kind:     "object",
+		Fields:   OpenapiRoute_Properties_CacheConfigurationFields,
+	},
+	"CustomDomains": ubx.FieldSpec{
+		WireName: "custom_domains",
+		Kind:     "list",
+		Fields:   OpenapiRoute_Properties_CustomDomainsFields,
+	},
+	"DeploymentStatus":    ubx.FieldSpec{WireName: "deployment_status"},
+	"EnabledState":        ubx.FieldSpec{WireName: "enabled_state"},
+	"EndpointName":        ubx.FieldSpec{WireName: "endpoint_name"},
+	"ForwardingProtocol":  ubx.FieldSpec{WireName: "forwarding_protocol"},
+	"HttpsRedirect":       ubx.FieldSpec{WireName: "https_redirect"},
+	"LinkToDefaultDomain": ubx.FieldSpec{WireName: "link_to_default_domain"},
+	"OriginGroup": ubx.FieldSpec{
+		WireName: "origin_group",
+		Kind:     "object",
+		Fields:   OpenapiRoute_Properties_OriginGroupFields,
+	},
+	"OriginPath":        ubx.FieldSpec{WireName: "origin_path"},
+	"PatternsToMatch":   ubx.FieldSpec{WireName: "patterns_to_match"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RuleSets": ubx.FieldSpec{
+		WireName: "rule_sets",
+		Kind:     "list",
+		Fields:   OpenapiRoute_Properties_OriginGroupFields,
+	},
+	"SupportedProtocols": ubx.FieldSpec{WireName: "supported_protocols"},
+}
 
 type OpenapiRouteConfig struct {
 	// The JSON object that contains the properties of the Routes to create.
@@ -131,8 +131,8 @@ var OpenapiRoute = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiRoute_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiRoute_PropertiesFields,
 		},
 	},
 }

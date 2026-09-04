@@ -15,6 +15,8 @@ class OpenapiHybridRunbookWorkerGroup_Properties_Credential:
 class OpenapiHybridRunbookWorkerGroup_Properties:
     # Definition of RunAs credential to use for hybrid worker.
     credential: Any = None
+    # Type of the HybridWorkerGroup.
+    group_type: Any = None
 
 _OpenapiHybridRunbookWorkerGroup_Properties_CredentialFields = {
     "name": ubx.FieldSpec(wire_name="name"),
@@ -26,6 +28,7 @@ _OpenapiHybridRunbookWorkerGroup_PropertiesFields = {
         kind="object",
         fields=_OpenapiHybridRunbookWorkerGroup_Properties_CredentialFields,
     ),
+    "group_type": ubx.FieldSpec(wire_name="group_type"),
 }
 
 @dataclasses.dataclass

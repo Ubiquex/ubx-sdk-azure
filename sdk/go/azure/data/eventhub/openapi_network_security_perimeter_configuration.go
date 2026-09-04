@@ -4,8 +4,8 @@ package eventhub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter struct {
-	Id any
-	Location any
+	Id            any
+	Location      any
 	PerimeterGuid any
 }
 
@@ -14,55 +14,55 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_Acces
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes any
-	Direction any
+	AddressPrefixes           any
+	Direction                 any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	Subscriptions any
+	Subscriptions             any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile struct {
-	AccessRules any
+	AccessRules        any
 	AccessRulesVersion any
-	Name any
+	Name               any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties struct {
 	Description any
-	IssueType any
+	IssueType   any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation struct {
 	AccessMode any
-	Name any
+	Name       any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties struct {
-	ApplicableFeatures any
-	IsBackingResource any
+	ApplicableFeatures       any
+	IsBackingResource        any
 	NetworkSecurityPerimeter any
-	ParentAssociationName any
-	Profile any
-	ProvisioningIssues any
-	ProvisioningState any
-	ResourceAssociation any
-	SourceResourceId any
+	ParentAssociationName    any
+	Profile                  any
+	ProvisioningIssues       any
+	ProvisioningState        any
+	ResourceAssociation      any
+	SourceResourceId         any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

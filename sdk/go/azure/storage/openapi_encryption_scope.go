@@ -28,23 +28,23 @@ type OpenapiEncryptionScope_Properties struct {
 }
 
 var OpenapiEncryptionScope_Properties_KeyVaultPropertiesFields = ubx.FieldMap{
-		"CurrentVersionedKeyIdentifier": ubx.FieldSpec{WireName: "current_versioned_key_identifier"},
-		"KeyUri": ubx.FieldSpec{WireName: "key_uri"},
-		"LastKeyRotationTimestamp": ubx.FieldSpec{WireName: "last_key_rotation_timestamp"},
-	}
+	"CurrentVersionedKeyIdentifier": ubx.FieldSpec{WireName: "current_versioned_key_identifier"},
+	"KeyUri":                        ubx.FieldSpec{WireName: "key_uri"},
+	"LastKeyRotationTimestamp":      ubx.FieldSpec{WireName: "last_key_rotation_timestamp"},
+}
 
 var OpenapiEncryptionScope_PropertiesFields = ubx.FieldMap{
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: OpenapiEncryptionScope_Properties_KeyVaultPropertiesFields,
-		},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"RequireInfrastructureEncryption": ubx.FieldSpec{WireName: "require_infrastructure_encryption"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   OpenapiEncryptionScope_Properties_KeyVaultPropertiesFields,
+	},
+	"LastModifiedTime":                ubx.FieldSpec{WireName: "last_modified_time"},
+	"RequireInfrastructureEncryption": ubx.FieldSpec{WireName: "require_infrastructure_encryption"},
+	"Source":                          ubx.FieldSpec{WireName: "source"},
+	"State":                           ubx.FieldSpec{WireName: "state"},
+}
 
 type OpenapiEncryptionScopeConfig struct {
 	// Properties of the encryption scope.
@@ -61,8 +61,8 @@ var OpenapiEncryptionScope = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiEncryptionScope_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiEncryptionScope_PropertiesFields,
 		},
 	},
 }

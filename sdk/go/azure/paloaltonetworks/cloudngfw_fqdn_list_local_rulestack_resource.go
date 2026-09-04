@@ -17,12 +17,12 @@ type CloudngfwFqdnListLocalRulestackResource_Properties struct {
 }
 
 var CloudngfwFqdnListLocalRulestackResource_PropertiesFields = ubx.FieldMap{
-		"AuditComment": ubx.FieldSpec{WireName: "audit_comment"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"FqdnList": ubx.FieldSpec{WireName: "fqdn_list"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AuditComment":      ubx.FieldSpec{WireName: "audit_comment"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"Etag":              ubx.FieldSpec{WireName: "etag"},
+	"FqdnList":          ubx.FieldSpec{WireName: "fqdn_list"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type CloudngfwFqdnListLocalRulestackResourceConfig struct {
 	// fqdn object
@@ -43,8 +43,8 @@ var CloudngfwFqdnListLocalRulestackResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CloudngfwFqdnListLocalRulestackResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   CloudngfwFqdnListLocalRulestackResource_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

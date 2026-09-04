@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsWorkloadProtectableItemResource_Value_Properties struct {
 	BackupManagementType any
-	FriendlyName any
-	ProtectableItemType any
-	ProtectionState any
-	WorkloadType any
+	FriendlyName         any
+	ProtectableItemType  any
+	ProtectionState      any
+	WorkloadType         any
 }
 
 type BmsWorkloadProtectableItemResource_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsWorkloadProtectableItemResourceConfig struct {
@@ -24,7 +24,7 @@ type BmsWorkloadProtectableItemResourceConfig struct {
 
 type BmsWorkloadProtectableItemResourceAttrs struct {
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

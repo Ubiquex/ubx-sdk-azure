@@ -16,7 +16,7 @@ type OpenapiDataConnectorAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The DataConnector items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

@@ -12,19 +12,141 @@ class ServiceFabric_Properties_CustomDetails:
     instance_type: Any = None
 
 @dataclasses.dataclass
+class ServiceFabric_Properties_EncryptionDetails:
+    # The key encryption key certificate expiry date.
+    kek_cert_expiry_date: Any = None
+    # The key encryption key certificate thumbprint.
+    kek_cert_thumbprint: Any = None
+    # The key encryption key state for the Vmm.
+    kek_state: Any = None
+
+@dataclasses.dataclass
+class ServiceFabric_Properties_HealthErrorDetails_InnerHealthErrors:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
+class ServiceFabric_Properties_HealthErrorDetails:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    inner_health_errors: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
 class ServiceFabric_Properties:
+    # BCDR state of the fabric.
+    bcdr_state: Any = None
     # Fabric provider specific settings.
     custom_details: Any = None
+    # Encryption details for the fabric.
+    encryption_details: Any = None
+    # Friendly name of the fabric.
+    friendly_name: Any = None
+    # Health of fabric.
+    health: Any = None
+    # Fabric health error details.
+    health_error_details: Any = None
+    # Dra Registration Id.
+    internal_identifier: Any = None
+    # Encryption details for the fabric.
+    rollover_encryption_details: Any = None
 
 _ServiceFabric_Properties_CustomDetailsFields = {
     "instance_type": ubx.FieldSpec(wire_name="instance_type"),
 }
 
+_ServiceFabric_Properties_EncryptionDetailsFields = {
+    "kek_cert_expiry_date": ubx.FieldSpec(wire_name="kek_cert_expiry_date"),
+    "kek_cert_thumbprint": ubx.FieldSpec(wire_name="kek_cert_thumbprint"),
+    "kek_state": ubx.FieldSpec(wire_name="kek_state"),
+}
+
+_ServiceFabric_Properties_HealthErrorDetails_InnerHealthErrorsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
+
+_ServiceFabric_Properties_HealthErrorDetailsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "inner_health_errors": ubx.FieldSpec(
+        wire_name="inner_health_errors",
+        kind="list",
+        fields=_ServiceFabric_Properties_HealthErrorDetails_InnerHealthErrorsFields,
+    ),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
+
 _ServiceFabric_PropertiesFields = {
+    "bcdr_state": ubx.FieldSpec(wire_name="bcdr_state"),
     "custom_details": ubx.FieldSpec(
         wire_name="custom_details",
         kind="object",
         fields=_ServiceFabric_Properties_CustomDetailsFields,
+    ),
+    "encryption_details": ubx.FieldSpec(
+        wire_name="encryption_details",
+        kind="object",
+        fields=_ServiceFabric_Properties_EncryptionDetailsFields,
+    ),
+    "friendly_name": ubx.FieldSpec(wire_name="friendly_name"),
+    "health": ubx.FieldSpec(wire_name="health"),
+    "health_error_details": ubx.FieldSpec(
+        wire_name="health_error_details",
+        kind="list",
+        fields=_ServiceFabric_Properties_HealthErrorDetailsFields,
+    ),
+    "internal_identifier": ubx.FieldSpec(wire_name="internal_identifier"),
+    "rollover_encryption_details": ubx.FieldSpec(
+        wire_name="rollover_encryption_details",
+        kind="object",
+        fields=_ServiceFabric_Properties_EncryptionDetailsFields,
     ),
 }
 

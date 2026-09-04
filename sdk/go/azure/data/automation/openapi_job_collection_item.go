@@ -12,17 +12,17 @@ type OpenapiJobCollectionItem_Value_Properties_Runbook struct {
 }
 
 type OpenapiJobCollectionItem_Value_Properties struct {
-	CreationTime any
-	EndTime any
-	JobId any
+	CreationTime          any
+	EndTime               any
+	JobId                 any
 	JobRuntimeEnvironment any
-	LastModifiedTime any
-	ProvisioningState any
-	RunOn any
-	Runbook any
-	StartTime any
-	StartedBy any
-	Status any
+	LastModifiedTime      any
+	ProvisioningState     any
+	RunOn                 any
+	Runbook               any
+	StartTime             any
+	StartedBy             any
+	Status                any
 }
 
 type OpenapiJobCollectionItem_Value struct {

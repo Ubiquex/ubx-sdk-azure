@@ -102,8 +102,6 @@ const Sbqueue_PropertiesFields: FieldMap = {
 };
 
 export interface SbqueueConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** The Queue Properties definition. */
   properties?: Sbqueue_Properties | Computed<Sbqueue_Properties>;
 }
@@ -118,7 +116,6 @@ export interface SbqueueAttrs {
 export const Sbqueue: ResourceBinding<SbqueueConfig, SbqueueAttrs> = {
   wireType: "azure_servicebus_sbqueue",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

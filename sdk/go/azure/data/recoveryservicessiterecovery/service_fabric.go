@@ -10,57 +10,57 @@ type ServiceFabric_Value_Properties_CustomDetails struct {
 type ServiceFabric_Value_Properties_EncryptionDetails struct {
 	KekCertExpiryDate any
 	KekCertThumbprint any
-	KekState any
+	KekState          any
 }
 
 type ServiceFabric_Value_Properties_HealthErrorDetails_InnerHealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceFabric_Value_Properties_HealthErrorDetails struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	InnerHealthErrors any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceFabric_Value_Properties struct {
-	BcdrState any
-	CustomDetails any
-	EncryptionDetails any
-	FriendlyName any
-	Health any
-	HealthErrorDetails any
-	InternalIdentifier any
+	BcdrState                 any
+	CustomDetails             any
+	EncryptionDetails         any
+	FriendlyName              any
+	Health                    any
+	HealthErrorDetails        any
+	InternalIdentifier        any
 	RolloverEncryptionDetails any
 }
 
 type ServiceFabric_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -70,7 +70,7 @@ type ServiceFabricConfig struct {
 
 type ServiceFabricAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The Fabric items on this page
 	Value any

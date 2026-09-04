@@ -135,8 +135,6 @@ const OpenapiFileShare_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiFileShareConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** The properties of the file share. */
   properties?: OpenapiFileShare_Properties | Computed<OpenapiFileShare_Properties>;
 }
@@ -151,7 +149,6 @@ export interface OpenapiFileShareAttrs {
 export const OpenapiFileShare: ResourceBinding<OpenapiFileShareConfig, OpenapiFileShareAttrs> = {
   wireType: "azure_storage_openapi_file_share",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

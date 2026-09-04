@@ -4,28 +4,28 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerSecurityUserRule_Value_Properties_Destinations struct {
-	AddressPrefix any
+	AddressPrefix     any
 	AddressPrefixType any
 }
 
 type NetworkmanagerSecurityUserRule_Value_Properties struct {
-	Description any
+	Description           any
 	DestinationPortRanges any
-	Destinations any
-	Direction any
-	Protocol any
-	ProvisioningState any
-	ResourceGuid any
-	SourcePortRanges any
-	Sources any
+	Destinations          any
+	Direction             any
+	Protocol              any
+	ProvisioningState     any
+	ResourceGuid          any
+	SourcePortRanges      any
+	Sources               any
 }
 
 type NetworkmanagerSecurityUserRule_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -35,16 +35,16 @@ type NetworkmanagerSecurityUserRule_Value struct {
 }
 
 type NetworkmanagerSecurityUserRuleConfig struct {
-	ConfigurationName any
+	ConfigurationName  any
 	NetworkManagerName any
 	RuleCollectionName any
 }
 
 type NetworkmanagerSecurityUserRuleAttrs struct {
-	ConfigurationName any
+	ConfigurationName  any
 	NetworkManagerName any
 	// The link to the next page of items
-	NextLink any
+	NextLink           any
 	RuleCollectionName any
 	// The SecurityUserRule items on this page
 	Value any
@@ -53,7 +53,7 @@ type NetworkmanagerSecurityUserRuleAttrs struct {
 var NetworkmanagerSecurityUserRule = ubx.DataSourceBinding{
 	WireType: "azure_network_networkmanager_security_user_rule",
 	Fields: ubx.FieldMap{
-		"ConfigurationName": ubx.FieldSpec{WireName: "configuration_name"},
+		"ConfigurationName":  ubx.FieldSpec{WireName: "configuration_name"},
 		"NetworkManagerName": ubx.FieldSpec{WireName: "network_manager_name"},
 		"RuleCollectionName": ubx.FieldSpec{WireName: "rule_collection_name"},
 	},

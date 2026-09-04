@@ -5,13 +5,13 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type EncryptionScope_Value_Properties struct {
 	ProvisioningState any
-	State any
+	State             any
 }
 
 type EncryptionScope_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type EncryptionScopeConfig struct {

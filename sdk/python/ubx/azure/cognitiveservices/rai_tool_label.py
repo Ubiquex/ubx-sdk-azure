@@ -50,8 +50,6 @@ _RaiToolLabel_PropertiesFields = {
 
 @dataclasses.dataclass
 class RaiToolLabelConfig:
-    # Resource Etag.
-    etag: Any = None
     # RAI Tool Label properties.
     properties: Any = None
     # Resource tags.
@@ -69,7 +67,6 @@ class RaiToolLabelAttrs:
 RaiToolLabel = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_rai_tool_label",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

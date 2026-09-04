@@ -5,16 +5,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Deployment_Properties_CallRateLimit_Rules_MatchPatterns struct {
 	Method any
-	Path any
+	Path   any
 }
 
 type Deployment_Properties_CallRateLimit_Rules struct {
-	Count any
+	Count                    any
 	DynamicThrottlingEnabled any
-	Key any
-	MatchPatterns any
-	MinCount any
-	RenewalPeriod any
+	Key                      any
+	MatchPatterns            any
+	MinCount                 any
+	RenewalPeriod            any
 }
 
 type Deployment_Properties_CallRateLimit struct {
@@ -22,7 +22,7 @@ type Deployment_Properties_CallRateLimit struct {
 	Count any
 	// The renewal period in seconds of Call Rate Limit.
 	RenewalPeriod any
-	Rules any
+	Rules         any
 }
 
 type Deployment_Properties_CapacitySettings struct {
@@ -86,7 +86,7 @@ type Deployment_Properties struct {
 	ProvisioningState any
 	// The name of RAI policy.
 	RaiPolicyName any
-	RateLimits any
+	RateLimits    any
 	// Routing configuration for the model-router deployment. Specifies how requests are routed across multiple models.
 	Routing any
 	// Properties of Cognitive Services account deployment model. (Deprecated, please use Deployment.sku instead.)
@@ -113,121 +113,119 @@ type Deployment_Sku struct {
 }
 
 var Deployment_Properties_CallRateLimit_Rules_MatchPatternsFields = ubx.FieldMap{
-		"Method": ubx.FieldSpec{WireName: "method"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-	}
+	"Method": ubx.FieldSpec{WireName: "method"},
+	"Path":   ubx.FieldSpec{WireName: "path"},
+}
 
 var Deployment_Properties_CallRateLimit_RulesFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"DynamicThrottlingEnabled": ubx.FieldSpec{WireName: "dynamic_throttling_enabled"},
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"MatchPatterns": ubx.FieldSpec{
-			WireName: "match_patterns",
-			Kind: "list",
-			Fields: Deployment_Properties_CallRateLimit_Rules_MatchPatternsFields,
-		},
-		"MinCount": ubx.FieldSpec{WireName: "min_count"},
-		"RenewalPeriod": ubx.FieldSpec{WireName: "renewal_period"},
-	}
+	"Count":                    ubx.FieldSpec{WireName: "count"},
+	"DynamicThrottlingEnabled": ubx.FieldSpec{WireName: "dynamic_throttling_enabled"},
+	"Key":                      ubx.FieldSpec{WireName: "key"},
+	"MatchPatterns": ubx.FieldSpec{
+		WireName: "match_patterns",
+		Kind:     "list",
+		Fields:   Deployment_Properties_CallRateLimit_Rules_MatchPatternsFields,
+	},
+	"MinCount":      ubx.FieldSpec{WireName: "min_count"},
+	"RenewalPeriod": ubx.FieldSpec{WireName: "renewal_period"},
+}
 
 var Deployment_Properties_CallRateLimitFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"RenewalPeriod": ubx.FieldSpec{WireName: "renewal_period"},
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: Deployment_Properties_CallRateLimit_RulesFields,
-		},
-	}
+	"Count":         ubx.FieldSpec{WireName: "count"},
+	"RenewalPeriod": ubx.FieldSpec{WireName: "renewal_period"},
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   Deployment_Properties_CallRateLimit_RulesFields,
+	},
+}
 
 var Deployment_Properties_CapacitySettingsFields = ubx.FieldMap{
-		"DesignatedCapacity": ubx.FieldSpec{WireName: "designated_capacity"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-	}
+	"DesignatedCapacity": ubx.FieldSpec{WireName: "designated_capacity"},
+	"Priority":           ubx.FieldSpec{WireName: "priority"},
+}
 
 var Deployment_Properties_ModelFields = ubx.FieldMap{
-		"CallRateLimit": ubx.FieldSpec{
-			WireName: "call_rate_limit",
-			Kind: "object",
-			Fields: Deployment_Properties_CallRateLimitFields,
-		},
-		"Format": ubx.FieldSpec{WireName: "format"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-		"SourceAccount": ubx.FieldSpec{WireName: "source_account"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"CallRateLimit": ubx.FieldSpec{
+		WireName: "call_rate_limit",
+		Kind:     "object",
+		Fields:   Deployment_Properties_CallRateLimitFields,
+	},
+	"Format":        ubx.FieldSpec{WireName: "format"},
+	"Name":          ubx.FieldSpec{WireName: "name"},
+	"Publisher":     ubx.FieldSpec{WireName: "publisher"},
+	"Source":        ubx.FieldSpec{WireName: "source"},
+	"SourceAccount": ubx.FieldSpec{WireName: "source_account"},
+	"Version":       ubx.FieldSpec{WireName: "version"},
+}
 
 var Deployment_Properties_RoutingFields = ubx.FieldMap{
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"Models": ubx.FieldSpec{
-			WireName: "models",
-			Kind: "list",
-			Fields: Deployment_Properties_ModelFields,
-		},
-	}
+	"Mode": ubx.FieldSpec{WireName: "mode"},
+	"Models": ubx.FieldSpec{
+		WireName: "models",
+		Kind:     "list",
+		Fields:   Deployment_Properties_ModelFields,
+	},
+}
 
 var Deployment_Properties_ScaleSettingsFields = ubx.FieldMap{
-		"ActiveCapacity": ubx.FieldSpec{WireName: "active_capacity"},
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"ScaleType": ubx.FieldSpec{WireName: "scale_type"},
-	}
+	"ActiveCapacity": ubx.FieldSpec{WireName: "active_capacity"},
+	"Capacity":       ubx.FieldSpec{WireName: "capacity"},
+	"ScaleType":      ubx.FieldSpec{WireName: "scale_type"},
+}
 
 var Deployment_PropertiesFields = ubx.FieldMap{
-		"CallRateLimit": ubx.FieldSpec{
-			WireName: "call_rate_limit",
-			Kind: "object",
-			Fields: Deployment_Properties_CallRateLimitFields,
-		},
-		"Capabilities": ubx.FieldSpec{WireName: "capabilities"},
-		"CapacitySettings": ubx.FieldSpec{
-			WireName: "capacity_settings",
-			Kind: "object",
-			Fields: Deployment_Properties_CapacitySettingsFields,
-		},
-		"CurrentCapacity": ubx.FieldSpec{WireName: "current_capacity"},
-		"DeploymentState": ubx.FieldSpec{WireName: "deployment_state"},
-		"DynamicThrottlingEnabled": ubx.FieldSpec{WireName: "dynamic_throttling_enabled"},
-		"Model": ubx.FieldSpec{
-			WireName: "model",
-			Kind: "object",
-			Fields: Deployment_Properties_ModelFields,
-		},
-		"ParentDeploymentName": ubx.FieldSpec{WireName: "parent_deployment_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RaiPolicyName": ubx.FieldSpec{WireName: "rai_policy_name"},
-		"RateLimits": ubx.FieldSpec{
-			WireName: "rate_limits",
-			Kind: "list",
-			Fields: Deployment_Properties_CallRateLimit_RulesFields,
-		},
-		"Routing": ubx.FieldSpec{
-			WireName: "routing",
-			Kind: "object",
-			Fields: Deployment_Properties_RoutingFields,
-		},
-		"ScaleSettings": ubx.FieldSpec{
-			WireName: "scale_settings",
-			Kind: "object",
-			Fields: Deployment_Properties_ScaleSettingsFields,
-		},
-		"ServiceTier": ubx.FieldSpec{WireName: "service_tier"},
-		"SpilloverDeploymentName": ubx.FieldSpec{WireName: "spillover_deployment_name"},
-		"VersionUpgradeOption": ubx.FieldSpec{WireName: "version_upgrade_option"},
-	}
+	"CallRateLimit": ubx.FieldSpec{
+		WireName: "call_rate_limit",
+		Kind:     "object",
+		Fields:   Deployment_Properties_CallRateLimitFields,
+	},
+	"Capabilities": ubx.FieldSpec{WireName: "capabilities"},
+	"CapacitySettings": ubx.FieldSpec{
+		WireName: "capacity_settings",
+		Kind:     "object",
+		Fields:   Deployment_Properties_CapacitySettingsFields,
+	},
+	"CurrentCapacity":          ubx.FieldSpec{WireName: "current_capacity"},
+	"DeploymentState":          ubx.FieldSpec{WireName: "deployment_state"},
+	"DynamicThrottlingEnabled": ubx.FieldSpec{WireName: "dynamic_throttling_enabled"},
+	"Model": ubx.FieldSpec{
+		WireName: "model",
+		Kind:     "object",
+		Fields:   Deployment_Properties_ModelFields,
+	},
+	"ParentDeploymentName": ubx.FieldSpec{WireName: "parent_deployment_name"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"RaiPolicyName":        ubx.FieldSpec{WireName: "rai_policy_name"},
+	"RateLimits": ubx.FieldSpec{
+		WireName: "rate_limits",
+		Kind:     "list",
+		Fields:   Deployment_Properties_CallRateLimit_RulesFields,
+	},
+	"Routing": ubx.FieldSpec{
+		WireName: "routing",
+		Kind:     "object",
+		Fields:   Deployment_Properties_RoutingFields,
+	},
+	"ScaleSettings": ubx.FieldSpec{
+		WireName: "scale_settings",
+		Kind:     "object",
+		Fields:   Deployment_Properties_ScaleSettingsFields,
+	},
+	"ServiceTier":             ubx.FieldSpec{WireName: "service_tier"},
+	"SpilloverDeploymentName": ubx.FieldSpec{WireName: "spillover_deployment_name"},
+	"VersionUpgradeOption":    ubx.FieldSpec{WireName: "version_upgrade_option"},
+}
 
 var Deployment_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type DeploymentConfig struct {
-	// Resource Etag.
-	Etag any
 	// Properties of Cognitive Services account deployment.
 	Properties any
 	// The resource model definition representing SKU
@@ -250,16 +248,15 @@ type DeploymentAttrs struct {
 var Deployment = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_deployment",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Deployment_PropertiesFields,
+			Kind:     "object",
+			Fields:   Deployment_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Deployment_SkuFields,
+			Kind:     "object",
+			Fields:   Deployment_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

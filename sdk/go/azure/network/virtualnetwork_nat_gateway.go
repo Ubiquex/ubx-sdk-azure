@@ -38,58 +38,56 @@ type VirtualnetworkNatGateway_Sku struct {
 }
 
 var VirtualnetworkNatGateway_Properties_PublicIpAddressesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualnetworkNatGateway_PropertiesFields = ubx.FieldMap{
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"Nat64": ubx.FieldSpec{WireName: "nat64"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpAddresses": ubx.FieldSpec{
-			WireName: "public_ip_addresses",
-			Kind: "list",
-			Fields: VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
-		},
-		"PublicIpAddressesV6": ubx.FieldSpec{
-			WireName: "public_ip_addresses_v6",
-			Kind: "list",
-			Fields: VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
-		},
-		"PublicIpPrefixes": ubx.FieldSpec{
-			WireName: "public_ip_prefixes",
-			Kind: "list",
-			Fields: VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
-		},
-		"PublicIpPrefixesV6": ubx.FieldSpec{
-			WireName: "public_ip_prefixes_v6",
-			Kind: "list",
-			Fields: VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
-		},
-		"SourceVirtualNetwork": ubx.FieldSpec{
-			WireName: "source_virtual_network",
-			Kind: "object",
-			Fields: VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
-		},
-	}
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"Nat64":                ubx.FieldSpec{WireName: "nat64"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpAddresses": ubx.FieldSpec{
+		WireName: "public_ip_addresses",
+		Kind:     "list",
+		Fields:   VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
+	},
+	"PublicIpAddressesV6": ubx.FieldSpec{
+		WireName: "public_ip_addresses_v6",
+		Kind:     "list",
+		Fields:   VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
+	},
+	"PublicIpPrefixes": ubx.FieldSpec{
+		WireName: "public_ip_prefixes",
+		Kind:     "list",
+		Fields:   VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
+	},
+	"PublicIpPrefixesV6": ubx.FieldSpec{
+		WireName: "public_ip_prefixes_v6",
+		Kind:     "list",
+		Fields:   VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
+	},
+	"SourceVirtualNetwork": ubx.FieldSpec{
+		WireName: "source_virtual_network",
+		Kind:     "object",
+		Fields:   VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   VirtualnetworkNatGateway_Properties_PublicIpAddressesFields,
+	},
+}
 
 var VirtualnetworkNatGateway_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type VirtualnetworkNatGatewayConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Nat Gateway properties.
 	Properties any
 	// SKU of nat gateway.
@@ -112,16 +110,15 @@ type VirtualnetworkNatGatewayAttrs struct {
 var VirtualnetworkNatGateway = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_nat_gateway",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkNatGateway_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkNatGateway_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: VirtualnetworkNatGateway_SkuFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkNatGateway_SkuFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServerkeysServerKey_Value_Properties struct {
 	AutoRotationEnabled any
-	CreationDate any
-	KeyVersion any
-	ServerKeyType any
-	Subregion any
-	Thumbprint any
-	Uri any
+	CreationDate        any
+	KeyVersion          any
+	ServerKeyType       any
+	Subregion           any
+	Thumbprint          any
+	Uri                 any
 }
 
 type ServerkeysServerKey_Value struct {
-	Kind any
-	Location any
+	Kind       any
+	Location   any
 	Properties any
 }
 
@@ -25,7 +25,7 @@ type ServerkeysServerKeyConfig struct {
 
 type ServerkeysServerKeyAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The ServerKey items on this page
 	Value any

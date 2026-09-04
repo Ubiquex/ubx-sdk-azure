@@ -12323,8 +12323,6 @@ const VirtualnetworkDscpConfiguration_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkDscpConfigurationConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Differentiated Services Code Point configuration properties. */
   properties?: VirtualnetworkDscpConfiguration_Properties | Computed<VirtualnetworkDscpConfiguration_Properties>;
 }
@@ -12339,7 +12337,6 @@ export interface VirtualnetworkDscpConfigurationAttrs {
 export const VirtualnetworkDscpConfiguration: ResourceBinding<VirtualnetworkDscpConfigurationConfig, VirtualnetworkDscpConfigurationAttrs> = {
   wireType: "azure_network_virtualnetwork_dscp_configuration",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

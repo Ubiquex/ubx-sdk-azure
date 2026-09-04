@@ -8,40 +8,40 @@ type OpenapiBlobInventoryPolicy_Value_Properties_Policy_Rules_Definition_Filters
 }
 
 type OpenapiBlobInventoryPolicy_Value_Properties_Policy_Rules_Definition_Filters struct {
-	BlobTypes any
-	CreationTime any
-	ExcludePrefix any
+	BlobTypes           any
+	CreationTime        any
+	ExcludePrefix       any
 	IncludeBlobVersions any
-	IncludeDeleted any
-	IncludeSnapshots any
-	PrefixMatch any
+	IncludeDeleted      any
+	IncludeSnapshots    any
+	PrefixMatch         any
 }
 
 type OpenapiBlobInventoryPolicy_Value_Properties_Policy_Rules_Definition struct {
-	Filters any
-	Format any
-	ObjectType any
-	Schedule any
+	Filters      any
+	Format       any
+	ObjectType   any
+	Schedule     any
 	SchemaFields any
 }
 
 type OpenapiBlobInventoryPolicy_Value_Properties_Policy_Rules struct {
-	Definition any
+	Definition  any
 	Destination any
-	Enabled any
-	Name any
+	Enabled     any
+	Name        any
 }
 
 type OpenapiBlobInventoryPolicy_Value_Properties_Policy struct {
 	Destination any
-	Enabled any
-	Rules any
-	Type any
+	Enabled     any
+	Rules       any
+	Type        any
 }
 
 type OpenapiBlobInventoryPolicy_Value_Properties struct {
 	LastModifiedTime any
-	Policy any
+	Policy           any
 }
 
 type OpenapiBlobInventoryPolicy_Value struct {
@@ -54,7 +54,7 @@ type OpenapiBlobInventoryPolicyConfig struct {
 
 type OpenapiBlobInventoryPolicyAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// List of blob inventory policies.
 	Value any
 }

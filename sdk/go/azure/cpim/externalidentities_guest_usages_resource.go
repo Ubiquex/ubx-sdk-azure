@@ -24,33 +24,16 @@ type ExternalidentitiesGuestUsagesResource_SystemData struct {
 }
 
 var ExternalidentitiesGuestUsagesResource_PropertiesFields = ubx.FieldMap{
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
-
-var ExternalidentitiesGuestUsagesResource_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type ExternalidentitiesGuestUsagesResourceConfig struct {
-	// An identifier that represents the Guest Usages resource.
-	Id any
 	// Location of the Guest Usages resource.
 	Location any
-	// The name of the Guest Usages resource.
-	Name any
 	// Guest Usages Resource Properties
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 	// Key-value pairs of additional resource provisioning properties.
 	Tags any
-	// The type of the Guest Usages resource.
-	Type any
 }
 
 type ExternalidentitiesGuestUsagesResourceAttrs struct {
@@ -73,20 +56,12 @@ type ExternalidentitiesGuestUsagesResourceAttrs struct {
 var ExternalidentitiesGuestUsagesResource = ubx.ResourceBinding{
 	WireType: "azure_cpim_externalidentities_guest_usages_resource",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExternalidentitiesGuestUsagesResource_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: ExternalidentitiesGuestUsagesResource_SystemDataFields,
+			Kind:     "object",
+			Fields:   ExternalidentitiesGuestUsagesResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

@@ -9,8 +9,8 @@ type GatewayCustomDomainResource_Properties struct {
 }
 
 var GatewayCustomDomainResource_PropertiesFields = ubx.FieldMap{
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 type GatewayCustomDomainResourceConfig struct {
 	// The properties of custom domain for Spring Cloud Gateway
@@ -27,8 +27,8 @@ var GatewayCustomDomainResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: GatewayCustomDomainResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   GatewayCustomDomainResource_PropertiesFields,
 		},
 	},
 }

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworksecurityperimeterNspLoggingConfiguration_Value_Properties struct {
 	EnabledLogCategories any
-	Version any
+	Version              any
 }
 
 type NetworksecurityperimeterNspLoggingConfiguration_Value struct {

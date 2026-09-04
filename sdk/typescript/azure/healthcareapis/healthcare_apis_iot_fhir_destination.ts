@@ -44,20 +44,9 @@ const HealthcareApisIotFhirDestination_PropertiesFields: FieldMap = {
   resourceIdentityResolutionType: "resource_identity_resolution_type",
 };
 
-const HealthcareApisIotFhirDestination_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface HealthcareApisIotFhirDestinationConfig {
   /** IoT Connector destination properties for an Azure FHIR service. */
   properties: HealthcareApisIotFhirDestination_Properties | Computed<HealthcareApisIotFhirDestination_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: HealthcareApisIotFhirDestination_SystemData | Computed<HealthcareApisIotFhirDestination_SystemData>;
 }
 
 export interface HealthcareApisIotFhirDestinationAttrs {
@@ -74,11 +63,6 @@ export const HealthcareApisIotFhirDestination: ResourceBinding<HealthcareApisIot
       wireName: "properties",
       kind: "object",
       fields: HealthcareApisIotFhirDestination_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: HealthcareApisIotFhirDestination_SystemDataFields,
     },
   },
 };

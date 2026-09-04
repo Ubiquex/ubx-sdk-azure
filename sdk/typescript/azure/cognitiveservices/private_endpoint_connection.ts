@@ -52,8 +52,6 @@ const PrivateEndpointConnection_PropertiesFields: FieldMap = {
 };
 
 export interface PrivateEndpointConnectionConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** The location of the private endpoint connection */
   location?: string | Computed<string>;
   /** Properties of the PrivateEndpointConnectProperties. */
@@ -72,7 +70,6 @@ export interface PrivateEndpointConnectionAttrs {
 export const PrivateEndpointConnection: ResourceBinding<PrivateEndpointConnectionConfig, PrivateEndpointConnectionAttrs> = {
   wireType: "azure_cognitiveservices_private_endpoint_connection",
   fields: {
-    etag: "etag",
     location: "location",
     properties: {
       wireName: "properties",

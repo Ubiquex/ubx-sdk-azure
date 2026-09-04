@@ -4,38 +4,38 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkServiceAssociationLink_Value_Properties struct {
-	AllowDelete any
-	Link any
+	AllowDelete        any
+	Link               any
 	LinkedResourceType any
-	Locations any
-	ProvisioningState any
+	Locations          any
+	ProvisioningState  any
 }
 
 type VirtualnetworkServiceAssociationLink_Value struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualnetworkServiceAssociationLinkConfig struct {
-	SubnetName any
+	SubnetName         any
 	VirtualNetworkName any
 }
 
 type VirtualnetworkServiceAssociationLinkAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	SubnetName any
 	// The ServiceAssociationLink items on this page
-	Value any
+	Value              any
 	VirtualNetworkName any
 }
 
 var VirtualnetworkServiceAssociationLink = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_service_association_link",
 	Fields: ubx.FieldMap{
-		"SubnetName": ubx.FieldSpec{WireName: "subnet_name"},
+		"SubnetName":         ubx.FieldSpec{WireName: "subnet_name"},
 		"VirtualNetworkName": ubx.FieldSpec{WireName: "virtual_network_name"},
 	},
 }

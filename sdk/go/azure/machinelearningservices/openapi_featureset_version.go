@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFeaturesetVersion_Properties_MaterializationSettings_Notification_Webhooks struct {
-	EventType any
+	EventType   any
 	WebhookType any
 }
 
@@ -60,7 +60,7 @@ type OpenapiFeaturesetVersion_Properties_Specification struct {
 
 type OpenapiFeaturesetVersion_Properties struct {
 	// Specifies list of entities
-	Entities any
+	Entities                any
 	MaterializationSettings any
 	// Provisioning state of registry asset.
 	ProvisioningState any
@@ -71,80 +71,80 @@ type OpenapiFeaturesetVersion_Properties struct {
 }
 
 var OpenapiFeaturesetVersion_Properties_MaterializationSettings_Notification_WebhooksFields = ubx.FieldMap{
-		"EventType": ubx.FieldSpec{WireName: "event_type"},
-		"WebhookType": ubx.FieldSpec{WireName: "webhook_type"},
-	}
+	"EventType":   ubx.FieldSpec{WireName: "event_type"},
+	"WebhookType": ubx.FieldSpec{WireName: "webhook_type"},
+}
 
 var OpenapiFeaturesetVersion_Properties_MaterializationSettings_NotificationFields = ubx.FieldMap{
-		"EmailOn": ubx.FieldSpec{WireName: "email_on"},
-		"Emails": ubx.FieldSpec{WireName: "emails"},
-		"Webhooks": ubx.FieldSpec{
-			WireName: "webhooks",
-			Kind: "map",
-			Fields: OpenapiFeaturesetVersion_Properties_MaterializationSettings_Notification_WebhooksFields,
-		},
-	}
+	"EmailOn": ubx.FieldSpec{WireName: "email_on"},
+	"Emails":  ubx.FieldSpec{WireName: "emails"},
+	"Webhooks": ubx.FieldSpec{
+		WireName: "webhooks",
+		Kind:     "map",
+		Fields:   OpenapiFeaturesetVersion_Properties_MaterializationSettings_Notification_WebhooksFields,
+	},
+}
 
 var OpenapiFeaturesetVersion_Properties_MaterializationSettings_ResourceFields = ubx.FieldMap{
-		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-	}
+	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+}
 
 var OpenapiFeaturesetVersion_Properties_MaterializationSettings_Schedule_ScheduleFields = ubx.FieldMap{
-		"Hours": ubx.FieldSpec{WireName: "hours"},
-		"Minutes": ubx.FieldSpec{WireName: "minutes"},
-		"MonthDays": ubx.FieldSpec{WireName: "month_days"},
-		"WeekDays": ubx.FieldSpec{WireName: "week_days"},
-	}
+	"Hours":     ubx.FieldSpec{WireName: "hours"},
+	"Minutes":   ubx.FieldSpec{WireName: "minutes"},
+	"MonthDays": ubx.FieldSpec{WireName: "month_days"},
+	"WeekDays":  ubx.FieldSpec{WireName: "week_days"},
+}
 
 var OpenapiFeaturesetVersion_Properties_MaterializationSettings_ScheduleFields = ubx.FieldMap{
-		"Frequency": ubx.FieldSpec{WireName: "frequency"},
-		"Interval": ubx.FieldSpec{WireName: "interval"},
-		"Schedule": ubx.FieldSpec{
-			WireName: "schedule",
-			Kind: "object",
-			Fields: OpenapiFeaturesetVersion_Properties_MaterializationSettings_Schedule_ScheduleFields,
-		},
-	}
+	"Frequency": ubx.FieldSpec{WireName: "frequency"},
+	"Interval":  ubx.FieldSpec{WireName: "interval"},
+	"Schedule": ubx.FieldSpec{
+		WireName: "schedule",
+		Kind:     "object",
+		Fields:   OpenapiFeaturesetVersion_Properties_MaterializationSettings_Schedule_ScheduleFields,
+	},
+}
 
 var OpenapiFeaturesetVersion_Properties_MaterializationSettingsFields = ubx.FieldMap{
-		"Notification": ubx.FieldSpec{
-			WireName: "notification",
-			Kind: "object",
-			Fields: OpenapiFeaturesetVersion_Properties_MaterializationSettings_NotificationFields,
-		},
-		"Resource": ubx.FieldSpec{
-			WireName: "resource",
-			Kind: "object",
-			Fields: OpenapiFeaturesetVersion_Properties_MaterializationSettings_ResourceFields,
-		},
-		"Schedule": ubx.FieldSpec{
-			WireName: "schedule",
-			Kind: "object",
-			Fields: OpenapiFeaturesetVersion_Properties_MaterializationSettings_ScheduleFields,
-		},
-		"SparkConfiguration": ubx.FieldSpec{WireName: "spark_configuration"},
-		"StoreType": ubx.FieldSpec{WireName: "store_type"},
-	}
+	"Notification": ubx.FieldSpec{
+		WireName: "notification",
+		Kind:     "object",
+		Fields:   OpenapiFeaturesetVersion_Properties_MaterializationSettings_NotificationFields,
+	},
+	"Resource": ubx.FieldSpec{
+		WireName: "resource",
+		Kind:     "object",
+		Fields:   OpenapiFeaturesetVersion_Properties_MaterializationSettings_ResourceFields,
+	},
+	"Schedule": ubx.FieldSpec{
+		WireName: "schedule",
+		Kind:     "object",
+		Fields:   OpenapiFeaturesetVersion_Properties_MaterializationSettings_ScheduleFields,
+	},
+	"SparkConfiguration": ubx.FieldSpec{WireName: "spark_configuration"},
+	"StoreType":          ubx.FieldSpec{WireName: "store_type"},
+}
 
 var OpenapiFeaturesetVersion_Properties_SpecificationFields = ubx.FieldMap{
-		"Path": ubx.FieldSpec{WireName: "path"},
-	}
+	"Path": ubx.FieldSpec{WireName: "path"},
+}
 
 var OpenapiFeaturesetVersion_PropertiesFields = ubx.FieldMap{
-		"Entities": ubx.FieldSpec{WireName: "entities"},
-		"MaterializationSettings": ubx.FieldSpec{
-			WireName: "materialization_settings",
-			Kind: "object",
-			Fields: OpenapiFeaturesetVersion_Properties_MaterializationSettingsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Specification": ubx.FieldSpec{
-			WireName: "specification",
-			Kind: "object",
-			Fields: OpenapiFeaturesetVersion_Properties_SpecificationFields,
-		},
-		"Stage": ubx.FieldSpec{WireName: "stage"},
-	}
+	"Entities": ubx.FieldSpec{WireName: "entities"},
+	"MaterializationSettings": ubx.FieldSpec{
+		WireName: "materialization_settings",
+		Kind:     "object",
+		Fields:   OpenapiFeaturesetVersion_Properties_MaterializationSettingsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Specification": ubx.FieldSpec{
+		WireName: "specification",
+		Kind:     "object",
+		Fields:   OpenapiFeaturesetVersion_Properties_SpecificationFields,
+	},
+	"Stage": ubx.FieldSpec{WireName: "stage"},
+}
 
 type OpenapiFeaturesetVersionConfig struct {
 	// DTO object representing feature set version
@@ -169,10 +169,10 @@ var OpenapiFeaturesetVersion = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiFeaturesetVersion_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiFeaturesetVersion_PropertiesFields,
 		},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":    ubx.FieldSpec{WireName: "name"},
 		"Version": ubx.FieldSpec{WireName: "version"},
 	},
 }

@@ -77,8 +77,6 @@ const FailovergroupsFailoverGroup_PropertiesFields: FieldMap = {
 };
 
 export interface FailovergroupsFailoverGroupConfig {
-  /** Resource location. */
-  location?: string | Computed<string>;
   /** Properties of a failover group. */
   properties?: FailovergroupsFailoverGroup_Properties | Computed<FailovergroupsFailoverGroup_Properties>;
   /** Resource tags. */
@@ -97,7 +95,6 @@ export interface FailovergroupsFailoverGroupAttrs {
 export const FailovergroupsFailoverGroup: ResourceBinding<FailovergroupsFailoverGroupConfig, FailovergroupsFailoverGroupAttrs> = {
   wireType: "azure_sql_failovergroups_failover_group",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

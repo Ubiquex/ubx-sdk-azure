@@ -9,16 +9,16 @@ type VirtualNetwork_Value_ExtendedLocation struct {
 }
 
 type VirtualNetwork_Value_Properties struct {
-	InventoryItemId any
-	NetworkName any
+	InventoryItemId   any
+	NetworkName       any
 	ProvisioningState any
-	Uuid any
-	VmmServerId any
+	Uuid              any
+	VmmServerId       any
 }
 
 type VirtualNetwork_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualNetworkConfig struct {
@@ -33,6 +33,5 @@ type VirtualNetworkAttrs struct {
 
 var VirtualNetwork = ubx.DataSourceBinding{
 	WireType: "azure_scvmm_virtual_network",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -5,20 +5,20 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagedRuleSetDefinition_Value_Properties_RuleGroups_Rules struct {
 	Description any
-	RuleId any
+	RuleId      any
 }
 
 type OpenapiManagedRuleSetDefinition_Value_Properties_RuleGroups struct {
-	Description any
+	Description   any
 	RuleGroupName any
-	Rules any
+	Rules         any
 }
 
 type OpenapiManagedRuleSetDefinition_Value_Properties struct {
 	ProvisioningState any
-	RuleGroups any
-	RuleSetType any
-	RuleSetVersion any
+	RuleGroups        any
+	RuleSetType       any
+	RuleSetVersion    any
 }
 
 type OpenapiManagedRuleSetDefinition_Value_Sku struct {
@@ -27,7 +27,7 @@ type OpenapiManagedRuleSetDefinition_Value_Sku struct {
 
 type OpenapiManagedRuleSetDefinition_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiManagedRuleSetDefinitionConfig struct {
@@ -42,6 +42,5 @@ type OpenapiManagedRuleSetDefinitionAttrs struct {
 
 var OpenapiManagedRuleSetDefinition = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_managed_rule_set_definition",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,24 +4,24 @@ package consumption
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiReservationRecommendation_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type OpenapiReservationRecommendation_Value struct {
-	Etag any
-	Id any
-	Kind any
-	Location any
-	Name any
-	Sku any
+	Etag       any
+	Id         any
+	Kind       any
+	Location   any
+	Name       any
+	Sku        any
 	SystemData any
-	Tags any
-	Type any
+	Tags       any
+	Type       any
 }
 
 type OpenapiReservationRecommendationConfig struct {
@@ -32,7 +32,7 @@ type OpenapiReservationRecommendationAttrs struct {
 	// The link (url) to the next page of results.
 	NextLink any
 	// The link (url) to the previous page of results.
-	PreviousLink any
+	PreviousLink  any
 	ResourceScope any
 	// The list of reservation recommendations.
 	Value any

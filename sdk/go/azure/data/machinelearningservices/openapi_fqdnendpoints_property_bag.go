@@ -8,12 +8,12 @@ type OpenapiFqdnendpointsPropertyBag_Value_Properties_Endpoints_EndpointDetails 
 }
 
 type OpenapiFqdnendpointsPropertyBag_Value_Properties_Endpoints struct {
-	DomainName any
+	DomainName      any
 	EndpointDetails any
 }
 
 type OpenapiFqdnendpointsPropertyBag_Value_Properties struct {
-	Category any
+	Category  any
 	Endpoints any
 }
 
@@ -26,7 +26,7 @@ type OpenapiFqdnendpointsPropertyBagConfig struct {
 }
 
 type OpenapiFqdnendpointsPropertyBagAttrs struct {
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

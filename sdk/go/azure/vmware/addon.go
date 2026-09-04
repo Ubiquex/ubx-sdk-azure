@@ -11,9 +11,9 @@ type Addon_Properties struct {
 }
 
 var Addon_PropertiesFields = ubx.FieldMap{
-		"AddonType": ubx.FieldSpec{WireName: "addon_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AddonType":         ubx.FieldSpec{WireName: "addon_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type AddonConfig struct {
 	// The properties of an addon
@@ -30,8 +30,8 @@ var Addon = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Addon_PropertiesFields,
+			Kind:     "object",
+			Fields:   Addon_PropertiesFields,
 		},
 	},
 }

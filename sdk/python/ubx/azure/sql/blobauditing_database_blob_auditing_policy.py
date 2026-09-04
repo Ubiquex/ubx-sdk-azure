@@ -44,8 +44,6 @@ _BlobauditingDatabaseBlobAuditingPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class BlobauditingDatabaseBlobAuditingPolicyConfig:
-    # Resource kind.
-    kind: Any = None
     # Properties of a database blob auditing policy.
     properties: Any = None
 
@@ -59,7 +57,6 @@ class BlobauditingDatabaseBlobAuditingPolicyAttrs:
 BlobauditingDatabaseBlobAuditingPolicy = ubx.ResourceBinding(
     wire_type="azure_sql_blobauditing_database_blob_auditing_policy",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

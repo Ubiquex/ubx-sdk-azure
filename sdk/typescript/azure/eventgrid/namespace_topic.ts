@@ -34,20 +34,9 @@ const NamespaceTopic_PropertiesFields: FieldMap = {
   publisherType: "publisher_type",
 };
 
-const NamespaceTopic_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NamespaceTopicConfig {
   /** Properties of the namespace topic. */
   properties?: NamespaceTopic_Properties | Computed<NamespaceTopic_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NamespaceTopic_SystemData | Computed<NamespaceTopic_SystemData>;
 }
 
 export interface NamespaceTopicAttrs {
@@ -64,11 +53,6 @@ export const NamespaceTopic: ResourceBinding<NamespaceTopicConfig, NamespaceTopi
       wireName: "properties",
       kind: "object",
       fields: NamespaceTopic_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NamespaceTopic_SystemDataFields,
     },
   },
 };

@@ -13,14 +13,14 @@ type GuestAgent_Value_Properties_HttpProxyConfig struct {
 }
 
 type GuestAgent_Value_Properties struct {
-	Credentials any
-	CustomResourceName any
-	HttpProxyConfig any
+	Credentials                any
+	CustomResourceName         any
+	HttpProxyConfig            any
 	PrivateLinkScopeResourceId any
-	ProvisioningAction any
-	ProvisioningState any
-	Status any
-	Uuid any
+	ProvisioningAction         any
+	ProvisioningState          any
+	Status                     any
+	Uuid                       any
 }
 
 type GuestAgent_Value struct {
@@ -33,7 +33,7 @@ type GuestAgentConfig struct {
 
 type GuestAgentAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ResourceUri any
 	// The GuestAgent items on this page
 	Value any

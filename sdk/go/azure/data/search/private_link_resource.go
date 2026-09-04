@@ -5,19 +5,19 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateLinkResource_Value_Properties_ShareablePrivateLinkResourceTypes_Properties struct {
 	Description any
-	GroupId any
-	Type any
+	GroupId     any
+	Type        any
 }
 
 type PrivateLinkResource_Value_Properties_ShareablePrivateLinkResourceTypes struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type PrivateLinkResource_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
-	RequiredZoneNames any
+	GroupId                           any
+	RequiredMembers                   any
+	RequiredZoneNames                 any
 	ShareablePrivateLinkResourceTypes any
 }
 
@@ -31,7 +31,7 @@ type PrivateLinkResourceConfig struct {
 
 type PrivateLinkResourceAttrs struct {
 	// The URL to get the next set of private link resources, if there are any.
-	NextLink any
+	NextLink          any
 	SearchServiceName any
 	// The list of supported Private Link Resources.
 	Value any

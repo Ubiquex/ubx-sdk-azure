@@ -4,8 +4,8 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroupDraft_Properties_RuleCollections struct {
-	Name any
-	Priority any
+	Name               any
+	Priority           any
 	RuleCollectionType any
 }
 
@@ -19,21 +19,21 @@ type FirewallpolicyFirewallPolicyRuleCollectionGroupDraft_Properties struct {
 }
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroupDraftConfig struct {
-	FirewallPolicyName any
+	FirewallPolicyName      any
 	RuleCollectionGroupName any
 }
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroupDraftAttrs struct {
 	FirewallPolicyName any
 	// Properties of the rule collection group draft.
-	Properties any
+	Properties              any
 	RuleCollectionGroupName any
 }
 
 var FirewallpolicyFirewallPolicyRuleCollectionGroupDraft = ubx.DataSourceBinding{
 	WireType: "azure_network_firewallpolicy_firewall_policy_rule_collection_group_draft",
 	Fields: ubx.FieldMap{
-		"FirewallPolicyName": ubx.FieldSpec{WireName: "firewall_policy_name"},
+		"FirewallPolicyName":      ubx.FieldSpec{WireName: "firewall_policy_name"},
 		"RuleCollectionGroupName": ubx.FieldSpec{WireName: "rule_collection_group_name"},
 	},
 }

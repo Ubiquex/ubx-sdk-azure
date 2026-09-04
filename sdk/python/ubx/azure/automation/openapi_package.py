@@ -14,6 +14,21 @@ class OpenapiPackage_AllOf:
     tags: Any = None
 
 @dataclasses.dataclass
+class OpenapiPackage_Properties_AllOf:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
 class OpenapiPackage_Properties_ContentLink_ContentHash:
     # Gets or sets the content hash algorithm used to hash the content.
     algorithm: Any = None
@@ -30,13 +45,41 @@ class OpenapiPackage_Properties_ContentLink:
     version: Any = None
 
 @dataclasses.dataclass
+class OpenapiPackage_Properties_Error:
+    # Package import error code.
+    code: Any = None
+    # Package import error message.
+    message: Any = None
+
+@dataclasses.dataclass
 class OpenapiPackage_Properties:
+    # Metadata pertaining to creation and last modification of the resource.
+    all_of: Any = None
     # Definition of the content link.
     content_link: Any = None
+    # Gets or sets the isGlobal flag of the package.
+    default: Any = None
+    # Definition of the package error info type.
+    error: Any = None
+    # Gets or sets the provisioning state of the Package.
+    provisioning_state: Any = None
+    # Gets or sets the size in bytes of the Package.
+    size_in_bytes: Any = None
+    # Gets or sets the version of the Package.
+    version: Any = None
 
 _OpenapiPackage_AllOfFields = {
     "location": ubx.FieldSpec(wire_name="location"),
     "tags": ubx.FieldSpec(wire_name="tags"),
+}
+
+_OpenapiPackage_Properties_AllOfFields = {
+    "created_at": ubx.FieldSpec(wire_name="created_at"),
+    "created_by": ubx.FieldSpec(wire_name="created_by"),
+    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
+    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
+    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
+    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
 }
 
 _OpenapiPackage_Properties_ContentLink_ContentHashFields = {
@@ -54,12 +97,31 @@ _OpenapiPackage_Properties_ContentLinkFields = {
     "version": ubx.FieldSpec(wire_name="version"),
 }
 
+_OpenapiPackage_Properties_ErrorFields = {
+    "code": ubx.FieldSpec(wire_name="code"),
+    "message": ubx.FieldSpec(wire_name="message"),
+}
+
 _OpenapiPackage_PropertiesFields = {
+    "all_of": ubx.FieldSpec(
+        wire_name="all_of",
+        kind="object",
+        fields=_OpenapiPackage_Properties_AllOfFields,
+    ),
     "content_link": ubx.FieldSpec(
         wire_name="content_link",
         kind="object",
         fields=_OpenapiPackage_Properties_ContentLinkFields,
     ),
+    "default": ubx.FieldSpec(wire_name="default"),
+    "error": ubx.FieldSpec(
+        wire_name="error",
+        kind="object",
+        fields=_OpenapiPackage_Properties_ErrorFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+    "size_in_bytes": ubx.FieldSpec(wire_name="size_in_bytes"),
+    "version": ubx.FieldSpec(wire_name="version"),
 }
 
 @dataclasses.dataclass

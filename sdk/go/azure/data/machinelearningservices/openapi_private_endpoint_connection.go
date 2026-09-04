@@ -4,48 +4,48 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPrivateEndpointConnection_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiPrivateEndpointConnection_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiPrivateEndpointConnection_Value_Properties_PrivateEndpoint struct {
-	Id any
+	Id          any
 	SubnetArmId any
 }
 
 type OpenapiPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiPrivateEndpointConnection_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiPrivateEndpointConnection_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type OpenapiPrivateEndpointConnection_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiPrivateEndpointConnectionConfig struct {
@@ -55,7 +55,7 @@ type OpenapiPrivateEndpointConnectionConfig struct {
 type OpenapiPrivateEndpointConnectionAttrs struct {
 	NextLink any
 	// Array of private endpoint connections
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

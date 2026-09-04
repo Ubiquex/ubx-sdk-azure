@@ -32,8 +32,6 @@ const WcfRelay_PropertiesFields: FieldMap = {
 };
 
 export interface WcfRelayConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Properties of the WCF relay. */
   properties?: WcfRelay_Properties | Computed<WcfRelay_Properties>;
 }
@@ -48,7 +46,6 @@ export interface WcfRelayAttrs {
 export const WcfRelay: ResourceBinding<WcfRelayConfig, WcfRelayAttrs> = {
   wireType: "azure_relay_wcf_relay",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

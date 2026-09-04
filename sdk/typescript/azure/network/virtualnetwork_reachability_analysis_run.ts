@@ -82,20 +82,9 @@ const VirtualnetworkReachabilityAnalysisRun_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
-const VirtualnetworkReachabilityAnalysisRun_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface VirtualnetworkReachabilityAnalysisRunConfig {
   /** Represents the Reachability Analysis Run properties. */
   properties: VirtualnetworkReachabilityAnalysisRun_Properties | Computed<VirtualnetworkReachabilityAnalysisRun_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: VirtualnetworkReachabilityAnalysisRun_SystemData | Computed<VirtualnetworkReachabilityAnalysisRun_SystemData>;
 }
 
 export interface VirtualnetworkReachabilityAnalysisRunAttrs {
@@ -112,11 +101,6 @@ export const VirtualnetworkReachabilityAnalysisRun: ResourceBinding<Virtualnetwo
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkReachabilityAnalysisRun_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: VirtualnetworkReachabilityAnalysisRun_SystemDataFields,
     },
   },
 };

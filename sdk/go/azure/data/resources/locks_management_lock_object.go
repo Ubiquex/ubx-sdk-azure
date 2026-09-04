@@ -8,26 +8,26 @@ type LocksManagementLockObject_Value_Properties_Owners struct {
 }
 
 type LocksManagementLockObject_Value_Properties struct {
-	Level any
-	Notes any
+	Level  any
+	Notes  any
 	Owners any
 }
 
 type LocksManagementLockObject_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type LocksManagementLockObject_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
 	SystemData any
-	Type any
+	Type       any
 }
 
 type LocksManagementLockObjectConfig struct {
@@ -36,7 +36,7 @@ type LocksManagementLockObjectConfig struct {
 
 type LocksManagementLockObjectAttrs struct {
 	// The URL to use for getting the next set of results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The list of locks.
 	Value any

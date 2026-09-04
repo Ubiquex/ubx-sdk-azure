@@ -5,24 +5,24 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPaymentMethod_Value_Properties_Logos struct {
 	MimeType any
-	Url any
+	Url      any
 }
 
 type OpenapiPaymentMethod_Value_Properties struct {
 	AccountHolderName any
-	DisplayName any
-	Expiration any
-	Family any
-	Id any
-	LastFourDigits any
-	Logos any
+	DisplayName       any
+	Expiration        any
+	Family            any
+	Id                any
+	LastFourDigits    any
+	Logos             any
 	PaymentMethodType any
-	Status any
+	Status            any
 }
 
 type OpenapiPaymentMethod_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiPaymentMethodConfig struct {

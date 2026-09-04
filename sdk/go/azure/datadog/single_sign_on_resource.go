@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SingleSignOnResource_Properties struct {
 	// The Id of the Enterprise App used for Single sign-on.
-	EnterpriseAppId any
+	EnterpriseAppId   any
 	ProvisioningState any
 	// Various states of the SSO resource
 	SingleSignOnState any
@@ -14,11 +14,11 @@ type SingleSignOnResource_Properties struct {
 }
 
 var SingleSignOnResource_PropertiesFields = ubx.FieldMap{
-		"EnterpriseAppId": ubx.FieldSpec{WireName: "enterprise_app_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SingleSignOnState": ubx.FieldSpec{WireName: "single_sign_on_state"},
-		"SingleSignOnUrl": ubx.FieldSpec{WireName: "single_sign_on_url"},
-	}
+	"EnterpriseAppId":   ubx.FieldSpec{WireName: "enterprise_app_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SingleSignOnState": ubx.FieldSpec{WireName: "single_sign_on_state"},
+	"SingleSignOnUrl":   ubx.FieldSpec{WireName: "single_sign_on_url"},
+}
 
 type SingleSignOnResourceConfig struct {
 	Properties any
@@ -33,8 +33,8 @@ var SingleSignOnResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SingleSignOnResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   SingleSignOnResource_PropertiesFields,
 		},
 	},
 }

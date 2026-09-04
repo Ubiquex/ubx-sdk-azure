@@ -4,7 +4,7 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiMongoDbcollectionGetResults_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -36,21 +36,27 @@ type DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Key struct
 
 type DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_Options struct {
 	ExpireAfterSeconds any
-	Unique any
+	Unique             any
 }
 
 type DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes struct {
-	Key any
+	Key     any
 	Options any
 }
 
 type DbOpenapiMongoDbcollectionGetResults_Properties_Resource_RestoreParameters struct {
-	RestoreSource any
-	RestoreTimestampInUtc any
+	RestoreSource          any
+	RestoreTimestampInUtc  any
 	RestoreWithTtlDisabled any
 }
 
 type DbOpenapiMongoDbcollectionGetResults_Properties_Resource struct {
+	// A system generated property representing the resource etag required for optimistic concurrency control.
+	Etag any
+	// A system generated property. A unique identifier.
+	Rid any
+	// A system generated property that denotes the last updated timestamp of the resource.
+	Ts any
 	// Analytical TTL.
 	AnalyticalStorageTtl any
 	// Enum to indicate the mode of resource creation.
@@ -73,75 +79,78 @@ type DbOpenapiMongoDbcollectionGetResults_Properties struct {
 }
 
 var DbOpenapiMongoDbcollectionGetResults_Properties_Options_AutoscaleSettingsFields = ubx.FieldMap{
-		"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
-	}
+	"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
+}
 
 var DbOpenapiMongoDbcollectionGetResults_Properties_OptionsFields = ubx.FieldMap{
-		"AutoscaleSettings": ubx.FieldSpec{
-			WireName: "autoscale_settings",
-			Kind: "object",
-			Fields: DbOpenapiMongoDbcollectionGetResults_Properties_Options_AutoscaleSettingsFields,
-		},
-		"Throughput": ubx.FieldSpec{WireName: "throughput"},
-	}
+	"AutoscaleSettings": ubx.FieldSpec{
+		WireName: "autoscale_settings",
+		Kind:     "object",
+		Fields:   DbOpenapiMongoDbcollectionGetResults_Properties_Options_AutoscaleSettingsFields,
+	},
+	"Throughput": ubx.FieldSpec{WireName: "throughput"},
+}
 
 var DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_KeyFields = ubx.FieldMap{
-		"Keys": ubx.FieldSpec{WireName: "keys"},
-	}
+	"Keys": ubx.FieldSpec{WireName: "keys"},
+}
 
 var DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_OptionsFields = ubx.FieldMap{
-		"ExpireAfterSeconds": ubx.FieldSpec{WireName: "expire_after_seconds"},
-		"Unique": ubx.FieldSpec{WireName: "unique"},
-	}
+	"ExpireAfterSeconds": ubx.FieldSpec{WireName: "expire_after_seconds"},
+	"Unique":             ubx.FieldSpec{WireName: "unique"},
+}
 
 var DbOpenapiMongoDbcollectionGetResults_Properties_Resource_IndexesFields = ubx.FieldMap{
-		"Key": ubx.FieldSpec{
-			WireName: "key",
-			Kind: "object",
-			Fields: DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_KeyFields,
-		},
-		"Options": ubx.FieldSpec{
-			WireName: "options",
-			Kind: "object",
-			Fields: DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_OptionsFields,
-		},
-	}
+	"Key": ubx.FieldSpec{
+		WireName: "key",
+		Kind:     "object",
+		Fields:   DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_KeyFields,
+	},
+	"Options": ubx.FieldSpec{
+		WireName: "options",
+		Kind:     "object",
+		Fields:   DbOpenapiMongoDbcollectionGetResults_Properties_Resource_Indexes_OptionsFields,
+	},
+}
 
 var DbOpenapiMongoDbcollectionGetResults_Properties_Resource_RestoreParametersFields = ubx.FieldMap{
-		"RestoreSource": ubx.FieldSpec{WireName: "restore_source"},
-		"RestoreTimestampInUtc": ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
-		"RestoreWithTtlDisabled": ubx.FieldSpec{WireName: "restore_with_ttl_disabled"},
-	}
+	"RestoreSource":          ubx.FieldSpec{WireName: "restore_source"},
+	"RestoreTimestampInUtc":  ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
+	"RestoreWithTtlDisabled": ubx.FieldSpec{WireName: "restore_with_ttl_disabled"},
+}
 
 var DbOpenapiMongoDbcollectionGetResults_Properties_ResourceFields = ubx.FieldMap{
-		"AnalyticalStorageTtl": ubx.FieldSpec{WireName: "analytical_storage_ttl"},
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Indexes": ubx.FieldSpec{
-			WireName: "indexes",
-			Kind: "list",
-			Fields: DbOpenapiMongoDbcollectionGetResults_Properties_Resource_IndexesFields,
-		},
-		"RestoreParameters": ubx.FieldSpec{
-			WireName: "restore_parameters",
-			Kind: "object",
-			Fields: DbOpenapiMongoDbcollectionGetResults_Properties_Resource_RestoreParametersFields,
-		},
-		"ShardKey": ubx.FieldSpec{WireName: "shard_key"},
-	}
+	"Etag":                 ubx.FieldSpec{WireName: "_etag"},
+	"Rid":                  ubx.FieldSpec{WireName: "_rid"},
+	"Ts":                   ubx.FieldSpec{WireName: "_ts"},
+	"AnalyticalStorageTtl": ubx.FieldSpec{WireName: "analytical_storage_ttl"},
+	"CreateMode":           ubx.FieldSpec{WireName: "create_mode"},
+	"Id":                   ubx.FieldSpec{WireName: "id"},
+	"Indexes": ubx.FieldSpec{
+		WireName: "indexes",
+		Kind:     "list",
+		Fields:   DbOpenapiMongoDbcollectionGetResults_Properties_Resource_IndexesFields,
+	},
+	"RestoreParameters": ubx.FieldSpec{
+		WireName: "restore_parameters",
+		Kind:     "object",
+		Fields:   DbOpenapiMongoDbcollectionGetResults_Properties_Resource_RestoreParametersFields,
+	},
+	"ShardKey": ubx.FieldSpec{WireName: "shard_key"},
+}
 
 var DbOpenapiMongoDbcollectionGetResults_PropertiesFields = ubx.FieldMap{
-		"Options": ubx.FieldSpec{
-			WireName: "options",
-			Kind: "object",
-			Fields: DbOpenapiMongoDbcollectionGetResults_Properties_OptionsFields,
-		},
-		"Resource": ubx.FieldSpec{
-			WireName: "resource",
-			Kind: "object",
-			Fields: DbOpenapiMongoDbcollectionGetResults_Properties_ResourceFields,
-		},
-	}
+	"Options": ubx.FieldSpec{
+		WireName: "options",
+		Kind:     "object",
+		Fields:   DbOpenapiMongoDbcollectionGetResults_Properties_OptionsFields,
+	},
+	"Resource": ubx.FieldSpec{
+		WireName: "resource",
+		Kind:     "object",
+		Fields:   DbOpenapiMongoDbcollectionGetResults_Properties_ResourceFields,
+	},
+}
 
 type DbOpenapiMongoDbcollectionGetResultsConfig struct {
 	// Properties to create and update Azure Cosmos DB MongoDB collection.
@@ -164,8 +173,8 @@ var DbOpenapiMongoDbcollectionGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiMongoDbcollectionGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiMongoDbcollectionGetResults_PropertiesFields,
 		},
 	},
 }

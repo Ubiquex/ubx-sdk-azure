@@ -13,10 +13,10 @@ type OpenapiRestoreResult_Properties_Error_Details_Details struct {
 
 type OpenapiRestoreResult_Properties_Error_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type OpenapiRestoreResult_Properties_Error struct {

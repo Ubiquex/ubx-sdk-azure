@@ -25,30 +25,13 @@ const ExternalidentitiesGuestUsagesResource_PropertiesFields: FieldMap = {
   tenantId: "tenant_id",
 };
 
-const ExternalidentitiesGuestUsagesResource_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ExternalidentitiesGuestUsagesResourceConfig {
-  /** An identifier that represents the Guest Usages resource. */
-  id?: string | Computed<string>;
   /** Location of the Guest Usages resource. */
   location?: string | Computed<string>;
-  /** The name of the Guest Usages resource. */
-  name?: string | Computed<string>;
   /** Guest Usages Resource Properties */
   properties?: ExternalidentitiesGuestUsagesResource_Properties | Computed<ExternalidentitiesGuestUsagesResource_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ExternalidentitiesGuestUsagesResource_SystemData | Computed<ExternalidentitiesGuestUsagesResource_SystemData>;
   /** Key-value pairs of additional resource provisioning properties. */
   tags?: Record<string, string> | Computed<Record<string, string>>;
-  /** The type of the Guest Usages resource. */
-  type?: string | Computed<string>;
 }
 
 export interface ExternalidentitiesGuestUsagesResourceAttrs {
@@ -71,20 +54,12 @@ export interface ExternalidentitiesGuestUsagesResourceAttrs {
 export const ExternalidentitiesGuestUsagesResource: ResourceBinding<ExternalidentitiesGuestUsagesResourceConfig, ExternalidentitiesGuestUsagesResourceAttrs> = {
   wireType: "azure_cpim_externalidentities_guest_usages_resource",
   fields: {
-    id: "id",
     location: "location",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ExternalidentitiesGuestUsagesResource_PropertiesFields,
     },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ExternalidentitiesGuestUsagesResource_SystemDataFields,
-    },
     tags: "tags",
-    type: "type",
   },
 };

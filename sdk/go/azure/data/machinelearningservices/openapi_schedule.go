@@ -8,18 +8,18 @@ type OpenapiSchedule_Value_Properties_Action struct {
 }
 
 type OpenapiSchedule_Value_Properties_Trigger struct {
-	EndTime any
-	StartTime any
-	TimeZone any
+	EndTime     any
+	StartTime   any
+	TimeZone    any
 	TriggerType any
 }
 
 type OpenapiSchedule_Value_Properties struct {
-	Action any
-	DisplayName any
-	IsEnabled any
+	Action            any
+	DisplayName       any
+	IsEnabled         any
 	ProvisioningState any
-	Trigger any
+	Trigger           any
 }
 
 type OpenapiSchedule_Value struct {
@@ -27,7 +27,7 @@ type OpenapiSchedule_Value struct {
 }
 
 type OpenapiScheduleConfig struct {
-	ListViewType any
+	ListViewType  any
 	WorkspaceName any
 }
 
@@ -36,14 +36,14 @@ type OpenapiScheduleAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The Schedule items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiSchedule = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_schedule",
 	Fields: ubx.FieldMap{
-		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
+		"ListViewType":  ubx.FieldSpec{WireName: "list_view_type"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

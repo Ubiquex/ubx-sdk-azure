@@ -9,7 +9,7 @@ type OpenapiJobBase_Properties_Identity struct {
 }
 
 type OpenapiJobBase_Properties_NotificationSetting_Webhooks struct {
-	EventType any
+	EventType   any
 	WebhookType any
 }
 
@@ -27,13 +27,13 @@ type OpenapiJobBase_Properties_Services_Nodes struct {
 }
 
 type OpenapiJobBase_Properties_Services struct {
-	Endpoint any
-	ErrorMessage any
+	Endpoint       any
+	ErrorMessage   any
 	JobServiceType any
-	Nodes any
-	Port any
-	Properties any
-	Status any
+	Nodes          any
+	Port           any
+	Properties     any
+	Status         any
 }
 
 type OpenapiJobBase_Properties struct {
@@ -60,66 +60,66 @@ type OpenapiJobBase_Properties struct {
 }
 
 var OpenapiJobBase_Properties_IdentityFields = ubx.FieldMap{
-		"IdentityType": ubx.FieldSpec{WireName: "identity_type"},
-	}
+	"IdentityType": ubx.FieldSpec{WireName: "identity_type"},
+}
 
 var OpenapiJobBase_Properties_NotificationSetting_WebhooksFields = ubx.FieldMap{
-		"EventType": ubx.FieldSpec{WireName: "event_type"},
-		"WebhookType": ubx.FieldSpec{WireName: "webhook_type"},
-	}
+	"EventType":   ubx.FieldSpec{WireName: "event_type"},
+	"WebhookType": ubx.FieldSpec{WireName: "webhook_type"},
+}
 
 var OpenapiJobBase_Properties_NotificationSettingFields = ubx.FieldMap{
-		"EmailOn": ubx.FieldSpec{WireName: "email_on"},
-		"Emails": ubx.FieldSpec{WireName: "emails"},
-		"Webhooks": ubx.FieldSpec{
-			WireName: "webhooks",
-			Kind: "map",
-			Fields: OpenapiJobBase_Properties_NotificationSetting_WebhooksFields,
-		},
-	}
+	"EmailOn": ubx.FieldSpec{WireName: "email_on"},
+	"Emails":  ubx.FieldSpec{WireName: "emails"},
+	"Webhooks": ubx.FieldSpec{
+		WireName: "webhooks",
+		Kind:     "map",
+		Fields:   OpenapiJobBase_Properties_NotificationSetting_WebhooksFields,
+	},
+}
 
 var OpenapiJobBase_Properties_Services_NodesFields = ubx.FieldMap{
-		"NodesValueType": ubx.FieldSpec{WireName: "nodes_value_type"},
-	}
+	"NodesValueType": ubx.FieldSpec{WireName: "nodes_value_type"},
+}
 
 var OpenapiJobBase_Properties_ServicesFields = ubx.FieldMap{
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"JobServiceType": ubx.FieldSpec{WireName: "job_service_type"},
-		"Nodes": ubx.FieldSpec{
-			WireName: "nodes",
-			Kind: "object",
-			Fields: OpenapiJobBase_Properties_Services_NodesFields,
-		},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Endpoint":       ubx.FieldSpec{WireName: "endpoint"},
+	"ErrorMessage":   ubx.FieldSpec{WireName: "error_message"},
+	"JobServiceType": ubx.FieldSpec{WireName: "job_service_type"},
+	"Nodes": ubx.FieldSpec{
+		WireName: "nodes",
+		Kind:     "object",
+		Fields:   OpenapiJobBase_Properties_Services_NodesFields,
+	},
+	"Port":       ubx.FieldSpec{WireName: "port"},
+	"Properties": ubx.FieldSpec{WireName: "properties"},
+	"Status":     ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiJobBase_PropertiesFields = ubx.FieldMap{
-		"ComponentId": ubx.FieldSpec{WireName: "component_id"},
-		"ComputeId": ubx.FieldSpec{WireName: "compute_id"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"ExperimentName": ubx.FieldSpec{WireName: "experiment_name"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiJobBase_Properties_IdentityFields,
-		},
-		"IsArchived": ubx.FieldSpec{WireName: "is_archived"},
-		"JobType": ubx.FieldSpec{WireName: "job_type"},
-		"NotificationSetting": ubx.FieldSpec{
-			WireName: "notification_setting",
-			Kind: "object",
-			Fields: OpenapiJobBase_Properties_NotificationSettingFields,
-		},
-		"Services": ubx.FieldSpec{
-			WireName: "services",
-			Kind: "map",
-			Fields: OpenapiJobBase_Properties_ServicesFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ComponentId":    ubx.FieldSpec{WireName: "component_id"},
+	"ComputeId":      ubx.FieldSpec{WireName: "compute_id"},
+	"DisplayName":    ubx.FieldSpec{WireName: "display_name"},
+	"ExperimentName": ubx.FieldSpec{WireName: "experiment_name"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   OpenapiJobBase_Properties_IdentityFields,
+	},
+	"IsArchived": ubx.FieldSpec{WireName: "is_archived"},
+	"JobType":    ubx.FieldSpec{WireName: "job_type"},
+	"NotificationSetting": ubx.FieldSpec{
+		WireName: "notification_setting",
+		Kind:     "object",
+		Fields:   OpenapiJobBase_Properties_NotificationSettingFields,
+	},
+	"Services": ubx.FieldSpec{
+		WireName: "services",
+		Kind:     "map",
+		Fields:   OpenapiJobBase_Properties_ServicesFields,
+	},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 type OpenapiJobBaseConfig struct {
 	// Base definition for a job.
@@ -140,8 +140,8 @@ var OpenapiJobBase = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiJobBase_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiJobBase_PropertiesFields,
 		},
 		"Id": ubx.FieldSpec{WireName: "id"},
 	},

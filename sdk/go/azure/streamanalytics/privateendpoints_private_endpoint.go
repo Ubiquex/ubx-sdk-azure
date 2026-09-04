@@ -5,15 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties struct {
-	GroupIds any
+	GroupIds                          any
 	PrivateLinkServiceConnectionState any
-	PrivateLinkServiceId any
-	RequestMessage any
+	PrivateLinkServiceId              any
+	RequestMessage                    any
 }
 
 type PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections struct {
@@ -28,42 +28,40 @@ type PrivateendpointsPrivateEndpoint_Properties struct {
 }
 
 var PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"PrivateLinkServiceId": ubx.FieldSpec{WireName: "private_link_service_id"},
-		"RequestMessage": ubx.FieldSpec{WireName: "request_message"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"PrivateLinkServiceId": ubx.FieldSpec{WireName: "private_link_service_id"},
+	"RequestMessage":       ubx.FieldSpec{WireName: "request_message"},
+}
 
 var PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_PropertiesFields,
+	},
+}
 
 var PrivateendpointsPrivateEndpoint_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-	}
+	"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   PrivateendpointsPrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+}
 
 type PrivateendpointsPrivateEndpointConfig struct {
-	// Unique opaque string (generally a GUID) that represents the metadata state of the resource (private endpoint) and changes whenever the resource is updated. Required on PUT (CreateOrUpdate) requests.
-	Etag any
 	// The properties associated with a private endpoint.
 	Properties any
 }
@@ -78,11 +76,10 @@ type PrivateendpointsPrivateEndpointAttrs struct {
 var PrivateendpointsPrivateEndpoint = ubx.ResourceBinding{
 	WireType: "azure_streamanalytics_privateendpoints_private_endpoint",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PrivateendpointsPrivateEndpoint_PropertiesFields,
+			Kind:     "object",
+			Fields:   PrivateendpointsPrivateEndpoint_PropertiesFields,
 		},
 	},
 }

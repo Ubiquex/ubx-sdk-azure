@@ -4,31 +4,31 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Project_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type Project_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type Project_Value_Properties struct {
-	Description any
-	DisplayName any
-	Endpoints any
-	IsDefault any
+	Description       any
+	DisplayName       any
+	Endpoints         any
+	IsDefault         any
 	ProvisioningState any
 }
 
 type Project_Value struct {
-	Etag any
-	Identity any
-	Location any
+	Etag       any
+	Identity   any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type ProjectConfig struct {

@@ -13,36 +13,36 @@ type ApplyUpdate_Properties struct {
 }
 
 type ApplyUpdateConfig struct {
-	ApiVersion any
-	ApplyUpdateName any
-	ProviderName any
+	ApiVersion        any
+	ApplyUpdateName   any
+	ProviderName      any
 	ResourceGroupName any
-	ResourceName any
-	ResourceType any
-	SubscriptionId any
+	ResourceName      any
+	ResourceType      any
+	SubscriptionId    any
 }
 
 type ApplyUpdateAttrs struct {
-	ApiVersion any
+	ApiVersion      any
 	ApplyUpdateName any
 	// Properties for apply update
-	Properties any
-	ProviderName any
+	Properties        any
+	ProviderName      any
 	ResourceGroupName any
-	ResourceName any
-	ResourceType any
-	SubscriptionId any
+	ResourceName      any
+	ResourceType      any
+	SubscriptionId    any
 }
 
 var ApplyUpdate = ubx.DataSourceBinding{
 	WireType: "azure_maintenance_apply_update",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ApplyUpdateName": ubx.FieldSpec{WireName: "apply_update_name"},
-		"ProviderName": ubx.FieldSpec{WireName: "provider_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ApplyUpdateName":   ubx.FieldSpec{WireName: "apply_update_name"},
+		"ProviderName":      ubx.FieldSpec{WireName: "provider_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceType":      ubx.FieldSpec{WireName: "resource_type"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

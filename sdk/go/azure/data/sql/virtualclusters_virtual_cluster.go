@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualclustersVirtualCluster_Value_Properties struct {
 	ChildResources any
-	SubnetId any
-	Version any
+	SubnetId       any
+	Version        any
 }
 
 type VirtualclustersVirtualCluster_Value struct {
@@ -25,6 +25,5 @@ type VirtualclustersVirtualClusterAttrs struct {
 
 var VirtualclustersVirtualCluster = ubx.DataSourceBinding{
 	WireType: "azure_sql_virtualclusters_virtual_cluster",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

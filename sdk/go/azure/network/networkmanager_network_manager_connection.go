@@ -28,25 +28,14 @@ type NetworkmanagerNetworkManagerConnection_SystemData struct {
 }
 
 var NetworkmanagerNetworkManagerConnection_PropertiesFields = ubx.FieldMap{
-		"ConnectionState": ubx.FieldSpec{WireName: "connection_state"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"NetworkManagerId": ubx.FieldSpec{WireName: "network_manager_id"},
-	}
-
-var NetworkmanagerNetworkManagerConnection_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"ConnectionState":  ubx.FieldSpec{WireName: "connection_state"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"NetworkManagerId": ubx.FieldSpec{WireName: "network_manager_id"},
+}
 
 type NetworkmanagerNetworkManagerConnectionConfig struct {
 	// Information about the network manager connection.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerNetworkManagerConnectionAttrs struct {
@@ -61,13 +50,8 @@ var NetworkmanagerNetworkManagerConnection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerNetworkManagerConnection_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerNetworkManagerConnection_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerNetworkManagerConnection_PropertiesFields,
 		},
 	},
 }

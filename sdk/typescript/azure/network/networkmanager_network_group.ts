@@ -34,20 +34,9 @@ const NetworkmanagerNetworkGroup_PropertiesFields: FieldMap = {
   resourceGuid: "resource_guid",
 };
 
-const NetworkmanagerNetworkGroup_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerNetworkGroupConfig {
   /** Properties of network group */
   properties?: NetworkmanagerNetworkGroup_Properties | Computed<NetworkmanagerNetworkGroup_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerNetworkGroup_SystemData | Computed<NetworkmanagerNetworkGroup_SystemData>;
 }
 
 export interface NetworkmanagerNetworkGroupAttrs {
@@ -64,11 +53,6 @@ export const NetworkmanagerNetworkGroup: ResourceBinding<NetworkmanagerNetworkGr
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerNetworkGroup_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerNetworkGroup_SystemDataFields,
     },
   },
 };

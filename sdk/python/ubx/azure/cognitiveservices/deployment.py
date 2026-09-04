@@ -230,8 +230,6 @@ _Deployment_SkuFields = {
 
 @dataclasses.dataclass
 class DeploymentConfig:
-    # Resource Etag.
-    etag: Any = None
     # Properties of Cognitive Services account deployment.
     properties: Any = None
     # The resource model definition representing SKU
@@ -253,7 +251,6 @@ class DeploymentAttrs:
 Deployment = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_deployment",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

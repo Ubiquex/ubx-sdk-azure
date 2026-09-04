@@ -5,26 +5,26 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteLink_Value_Properties_MacSecConfig struct {
 	CakSecretIdentifier any
-	Cipher any
+	Cipher              any
 	CknSecretIdentifier any
-	SciState any
+	SciState            any
 }
 
 type ExpressrouteExpressRouteLink_Value_Properties struct {
-	AdminState any
-	ColoLocation any
-	ConnectorType any
-	InterfaceName any
-	MacSecConfig any
-	PatchPanelId any
+	AdminState        any
+	ColoLocation      any
+	ConnectorType     any
+	InterfaceName     any
+	MacSecConfig      any
+	PatchPanelId      any
 	ProvisioningState any
-	RackId any
-	RouterName any
+	RackId            any
+	RouterName        any
 }
 
 type ExpressrouteExpressRouteLink_Value struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 

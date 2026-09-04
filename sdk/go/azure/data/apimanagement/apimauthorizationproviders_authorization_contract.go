@@ -4,16 +4,16 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimauthorizationprovidersAuthorizationContract_Value_Properties_Error struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type ApimauthorizationprovidersAuthorizationContract_Value_Properties struct {
 	AuthorizationType any
-	Error any
-	Oauth2grantType any
-	Parameters any
-	Status any
+	Error             any
+	Oauth2grantType   any
+	Parameters        any
+	Status            any
 }
 
 type ApimauthorizationprovidersAuthorizationContract_Value struct {
@@ -34,6 +34,5 @@ type ApimauthorizationprovidersAuthorizationContractAttrs struct {
 
 var ApimauthorizationprovidersAuthorizationContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimauthorizationproviders_authorization_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

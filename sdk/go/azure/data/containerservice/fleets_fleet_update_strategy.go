@@ -5,23 +5,23 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FleetsFleetUpdateStrategy_Value_Properties_Strategy_Stages_AfterGates struct {
 	DisplayName any
-	Type any
+	Type        any
 }
 
 type FleetsFleetUpdateStrategy_Value_Properties_Strategy_Stages_Groups struct {
-	AfterGates any
-	BeforeGates any
+	AfterGates     any
+	BeforeGates    any
 	MaxConcurrency any
-	Name any
+	Name           any
 }
 
 type FleetsFleetUpdateStrategy_Value_Properties_Strategy_Stages struct {
-	AfterGates any
+	AfterGates              any
 	AfterStageWaitInSeconds any
-	BeforeGates any
-	Groups any
-	MaxConcurrency any
-	Name any
+	BeforeGates             any
+	Groups                  any
+	MaxConcurrency          any
+	Name                    any
 }
 
 type FleetsFleetUpdateStrategy_Value_Properties_Strategy struct {
@@ -30,11 +30,11 @@ type FleetsFleetUpdateStrategy_Value_Properties_Strategy struct {
 
 type FleetsFleetUpdateStrategy_Value_Properties struct {
 	ProvisioningState any
-	Strategy any
+	Strategy          any
 }
 
 type FleetsFleetUpdateStrategy_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 

@@ -8,7 +8,7 @@ type OpenapiCsmPublishingCredentialsPoliciesEntity_Value_Properties struct {
 }
 
 type OpenapiCsmPublishingCredentialsPoliciesEntity_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

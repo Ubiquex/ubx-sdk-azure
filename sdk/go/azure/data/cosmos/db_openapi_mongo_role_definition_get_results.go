@@ -5,25 +5,25 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiMongoRoleDefinitionGetResults_Value_Properties_Privileges_Resource struct {
 	Collection any
-	Db any
+	Db         any
 }
 
 type DbOpenapiMongoRoleDefinitionGetResults_Value_Properties_Privileges struct {
-	Actions any
+	Actions  any
 	Resource any
 }
 
 type DbOpenapiMongoRoleDefinitionGetResults_Value_Properties_Roles struct {
-	Db any
+	Db   any
 	Role any
 }
 
 type DbOpenapiMongoRoleDefinitionGetResults_Value_Properties struct {
 	DatabaseName any
-	Privileges any
-	RoleName any
-	Roles any
-	Type any
+	Privileges   any
+	RoleName     any
+	Roles        any
+	Type         any
 }
 
 type DbOpenapiMongoRoleDefinitionGetResults_Value struct {
@@ -36,7 +36,7 @@ type DbOpenapiMongoRoleDefinitionGetResultsConfig struct {
 
 type DbOpenapiMongoRoleDefinitionGetResultsAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// List of Mongo Role Definitions and their properties.
 	Value any
 }

@@ -161,8 +161,6 @@ const VirtualwanHubVirtualNetworkConnection_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanHubVirtualNetworkConnectionConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** The name of the resource that is unique within a resource group. This name can be used to access the resource. */
   name?: string | Computed<string>;
   /** Parameters for HubVirtualNetworkConnection. */
@@ -181,7 +179,6 @@ export interface VirtualwanHubVirtualNetworkConnectionAttrs {
 export const VirtualwanHubVirtualNetworkConnection: ResourceBinding<VirtualwanHubVirtualNetworkConnectionConfig, VirtualwanHubVirtualNetworkConnectionAttrs> = {
   wireType: "azure_network_virtualwan_hub_virtual_network_connection",
   fields: {
-    etag: "etag",
     name: "name",
     properties: {
       wireName: "properties",

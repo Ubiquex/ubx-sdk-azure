@@ -5,42 +5,42 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPolicyDefinition_Value_Properties_ExternalEvaluationEnforcementSettings_EndpointSettings struct {
 	Details any
-	Kind any
+	Kind    any
 }
 
 type OpenapiPolicyDefinition_Value_Properties_ExternalEvaluationEnforcementSettings struct {
-	EndpointSettings any
+	EndpointSettings   any
 	MissingTokenAction any
-	ResultLifespan any
-	RoleDefinitionIds any
+	ResultLifespan     any
+	RoleDefinitionIds  any
 }
 
 type OpenapiPolicyDefinition_Value_Properties_Parameters_Metadata struct {
 	AssignPermissions any
-	Description any
-	DisplayName any
-	StrongType any
+	Description       any
+	DisplayName       any
+	StrongType        any
 }
 
 type OpenapiPolicyDefinition_Value_Properties_Parameters struct {
 	AllowedValues any
-	DefaultValue any
-	Metadata any
-	Schema any
-	Type any
+	DefaultValue  any
+	Metadata      any
+	Schema        any
+	Type          any
 }
 
 type OpenapiPolicyDefinition_Value_Properties struct {
-	Description any
-	DisplayName any
+	Description                           any
+	DisplayName                           any
 	ExternalEvaluationEnforcementSettings any
-	Metadata any
-	Mode any
-	Parameters any
-	PolicyRule any
-	PolicyType any
-	Version any
-	Versions any
+	Metadata                              any
+	Mode                                  any
+	Parameters                            any
+	PolicyRule                            any
+	PolicyType                            any
+	Version                               any
+	Versions                              any
 }
 
 type OpenapiPolicyDefinition_Value struct {
@@ -59,6 +59,5 @@ type OpenapiPolicyDefinitionAttrs struct {
 
 var OpenapiPolicyDefinition = ubx.DataSourceBinding{
 	WireType: "azure_resources_openapi_policy_definition",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

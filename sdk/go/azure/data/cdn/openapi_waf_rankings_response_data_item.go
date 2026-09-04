@@ -4,50 +4,50 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWafRankingsResponseDataItem_Data_Metrics struct {
-	Metric any
+	Metric     any
 	Percentage any
-	Value any
+	Value      any
 }
 
 type OpenapiWafRankingsResponseDataItem_Data struct {
 	GroupValues any
-	Metrics any
+	Metrics     any
 }
 
 type OpenapiWafRankingsResponseDataItemConfig struct {
-	Actions any
+	Actions       any
 	DateTimeBegin any
-	DateTimeEnd any
-	MaxRanking any
-	Metrics any
-	ProfileName any
-	Rankings any
-	RuleTypes any
+	DateTimeEnd   any
+	MaxRanking    any
+	Metrics       any
+	ProfileName   any
+	Rankings      any
+	RuleTypes     any
 }
 
 type OpenapiWafRankingsResponseDataItemAttrs struct {
-	Actions any
-	Data any
+	Actions       any
+	Data          any
 	DateTimeBegin any
-	DateTimeEnd any
-	Groups any
-	MaxRanking any
-	Metrics any
-	ProfileName any
-	Rankings any
-	RuleTypes any
+	DateTimeEnd   any
+	Groups        any
+	MaxRanking    any
+	Metrics       any
+	ProfileName   any
+	Rankings      any
+	RuleTypes     any
 }
 
 var OpenapiWafRankingsResponseDataItem = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_waf_rankings_response_data_item",
 	Fields: ubx.FieldMap{
-		"Actions": ubx.FieldSpec{WireName: "actions"},
+		"Actions":       ubx.FieldSpec{WireName: "actions"},
 		"DateTimeBegin": ubx.FieldSpec{WireName: "date_time_begin"},
-		"DateTimeEnd": ubx.FieldSpec{WireName: "date_time_end"},
-		"MaxRanking": ubx.FieldSpec{WireName: "max_ranking"},
-		"Metrics": ubx.FieldSpec{WireName: "metrics"},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
-		"Rankings": ubx.FieldSpec{WireName: "rankings"},
-		"RuleTypes": ubx.FieldSpec{WireName: "rule_types"},
+		"DateTimeEnd":   ubx.FieldSpec{WireName: "date_time_end"},
+		"MaxRanking":    ubx.FieldSpec{WireName: "max_ranking"},
+		"Metrics":       ubx.FieldSpec{WireName: "metrics"},
+		"ProfileName":   ubx.FieldSpec{WireName: "profile_name"},
+		"Rankings":      ubx.FieldSpec{WireName: "rankings"},
+		"RuleTypes":     ubx.FieldSpec{WireName: "rule_types"},
 	},
 }

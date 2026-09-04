@@ -9,50 +9,50 @@ type OpenapiMachineRunCommand_Value_Properties_ErrorBlobManagedIdentity struct {
 }
 
 type OpenapiMachineRunCommand_Value_Properties_InstanceView_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type OpenapiMachineRunCommand_Value_Properties_InstanceView struct {
-	EndTime any
-	Error any
+	EndTime          any
+	Error            any
 	ExecutionMessage any
-	ExecutionState any
-	ExitCode any
-	Output any
-	StartTime any
-	Statuses any
+	ExecutionState   any
+	ExitCode         any
+	Output           any
+	StartTime        any
+	Statuses         any
 }
 
 type OpenapiMachineRunCommand_Value_Properties_Parameters struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiMachineRunCommand_Value_Properties_Source struct {
-	CommandId any
-	Script any
-	ScriptUri any
+	CommandId                any
+	Script                   any
+	ScriptUri                any
 	ScriptUriManagedIdentity any
 }
 
 type OpenapiMachineRunCommand_Value_Properties struct {
-	AsyncExecution any
-	ErrorBlobManagedIdentity any
-	ErrorBlobUri any
-	InstanceView any
+	AsyncExecution            any
+	ErrorBlobManagedIdentity  any
+	ErrorBlobUri              any
+	InstanceView              any
 	OutputBlobManagedIdentity any
-	OutputBlobUri any
-	Parameters any
-	ProtectedParameters any
-	ProvisioningState any
-	RunAsPassword any
-	RunAsUser any
-	Source any
-	TimeoutInSeconds any
+	OutputBlobUri             any
+	Parameters                any
+	ProtectedParameters       any
+	ProvisioningState         any
+	RunAsPassword             any
+	RunAsUser                 any
+	Source                    any
+	TimeoutInSeconds          any
 }
 
 type OpenapiMachineRunCommand_Value struct {

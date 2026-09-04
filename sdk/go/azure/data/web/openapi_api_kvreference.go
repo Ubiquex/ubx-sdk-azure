@@ -4,31 +4,31 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiApiKvreference_Value_Properties_IdentityType_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiApiKvreference_Value_Properties_IdentityType struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiApiKvreference_Value_Properties struct {
 	ActiveVersion any
-	Details any
-	IdentityType any
-	Reference any
-	SecretName any
+	Details       any
+	IdentityType  any
+	Reference     any
+	SecretName    any
 	SecretVersion any
-	Source any
-	Status any
-	VaultName any
+	Source        any
+	Status        any
+	VaultName     any
 }
 
 type OpenapiApiKvreference_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

@@ -4,14 +4,14 @@ package eventhub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiEhnamespace_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiEhnamespace_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -20,15 +20,15 @@ type OpenapiEhnamespace_Value_Properties_Encryption_KeyVaultProperties_Identity 
 }
 
 type OpenapiEhnamespace_Value_Properties_Encryption_KeyVaultProperties struct {
-	Identity any
-	KeyName any
+	Identity    any
+	KeyName     any
 	KeyVaultUri any
-	KeyVersion any
+	KeyVersion  any
 }
 
 type OpenapiEhnamespace_Value_Properties_Encryption struct {
-	KeySource any
-	KeyVaultProperties any
+	KeySource                       any
+	KeyVaultProperties              any
 	RequireInfrastructureEncryption any
 }
 
@@ -36,11 +36,11 @@ type OpenapiEhnamespace_Value_Properties_GeoDataReplication_Locations struct {
 	ClusterArmId any
 	LocationName any
 	ReplicaState any
-	RoleType any
+	RoleType     any
 }
 
 type OpenapiEhnamespace_Value_Properties_GeoDataReplication struct {
-	Locations any
+	Locations                          any
 	MaxReplicationLagDurationInSeconds any
 }
 
@@ -58,55 +58,55 @@ type OpenapiEhnamespace_Value_Properties_PrivateEndpointConnections_Properties_P
 
 type OpenapiEhnamespace_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	Description any
-	Status any
+	Status      any
 }
 
 type OpenapiEhnamespace_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiEhnamespace_Value_Properties_PrivateEndpointConnections struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type OpenapiEhnamespace_Value_Properties struct {
-	AlternateName any
-	ClusterArmId any
-	CreatedAt any
-	DisableLocalAuth any
-	Encryption any
-	GeoDataReplication any
-	IpAddressType any
-	IsAutoInflateEnabled any
-	KafkaEnabled any
-	MaximumThroughputUnits any
-	MetricId any
-	MinimumTlsVersion any
-	PlatformCapabilities any
+	AlternateName              any
+	ClusterArmId               any
+	CreatedAt                  any
+	DisableLocalAuth           any
+	Encryption                 any
+	GeoDataReplication         any
+	IpAddressType              any
+	IsAutoInflateEnabled       any
+	KafkaEnabled               any
+	MaximumThroughputUnits     any
+	MetricId                   any
+	MinimumTlsVersion          any
+	PlatformCapabilities       any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	ServiceBusEndpoint any
-	Status any
-	UpdatedAt any
-	ZoneRedundant any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	ServiceBusEndpoint         any
+	Status                     any
+	UpdatedAt                  any
+	ZoneRedundant              any
 }
 
 type OpenapiEhnamespace_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type OpenapiEhnamespace_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiEhnamespaceConfig struct {
@@ -121,6 +121,5 @@ type OpenapiEhnamespaceAttrs struct {
 
 var OpenapiEhnamespace = ubx.DataSourceBinding{
 	WireType: "azure_eventhub_openapi_ehnamespace",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

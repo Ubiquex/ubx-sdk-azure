@@ -8,18 +8,18 @@ type OpenapiRuleSet_Value_Properties_Rules_Actions struct {
 }
 
 type OpenapiRuleSet_Value_Properties_Rules struct {
-	Actions any
-	Conditions any
+	Actions                 any
+	Conditions              any
 	MatchProcessingBehavior any
-	Order any
-	RuleName any
-	RuleSetName any
+	Order                   any
+	RuleName                any
+	RuleSetName             any
 }
 
 type OpenapiRuleSet_Value_Properties struct {
-	BatchMode any
+	BatchMode   any
 	ProfileName any
-	Rules any
+	Rules       any
 }
 
 type OpenapiRuleSet_Value struct {
@@ -32,7 +32,7 @@ type OpenapiRuleSetConfig struct {
 
 type OpenapiRuleSetAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	// The RuleSet items on this page
 	Value any

@@ -4,18 +4,18 @@ package digitaltwins
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DigitalTwinsEndpointResource_Value_Properties_Identity struct {
-	Type any
+	Type                 any
 	UserAssignedIdentity any
 }
 
 type DigitalTwinsEndpointResource_Value_Properties struct {
 	AuthenticationType any
-	CreatedTime any
-	DeadLetterSecret any
-	DeadLetterUri any
-	EndpointType any
-	Identity any
-	ProvisioningState any
+	CreatedTime        any
+	DeadLetterSecret   any
+	DeadLetterUri      any
+	EndpointType       any
+	Identity           any
+	ProvisioningState  any
 }
 
 type DigitalTwinsEndpointResource_Value struct {
@@ -23,19 +23,19 @@ type DigitalTwinsEndpointResource_Value struct {
 }
 
 type DigitalTwinsEndpointResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type DigitalTwinsEndpointResourceAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of DigitalTwinsInstance Endpoints.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 	// A list of DigitalTwinsInstance Endpoints.
 	Value any
 }
@@ -43,9 +43,9 @@ type DigitalTwinsEndpointResourceAttrs struct {
 var DigitalTwinsEndpointResource = ubx.DataSourceBinding{
 	WireType: "azure_digitaltwins_digital_twins_endpoint_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

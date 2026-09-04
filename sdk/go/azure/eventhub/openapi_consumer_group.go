@@ -13,14 +13,12 @@ type OpenapiConsumerGroup_Properties struct {
 }
 
 var OpenapiConsumerGroup_PropertiesFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-		"UserMetadata": ubx.FieldSpec{WireName: "user_metadata"},
-	}
+	"CreatedAt":    ubx.FieldSpec{WireName: "created_at"},
+	"UpdatedAt":    ubx.FieldSpec{WireName: "updated_at"},
+	"UserMetadata": ubx.FieldSpec{WireName: "user_metadata"},
+}
 
 type OpenapiConsumerGroupConfig struct {
-	// The geo-location where the resource lives
-	Location any
 	// Single item in List or Get Consumer group operation
 	Properties any
 }
@@ -35,11 +33,10 @@ type OpenapiConsumerGroupAttrs struct {
 var OpenapiConsumerGroup = ubx.ResourceBinding{
 	WireType: "azure_eventhub_openapi_consumer_group",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiConsumerGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiConsumerGroup_PropertiesFields,
 		},
 	},
 }

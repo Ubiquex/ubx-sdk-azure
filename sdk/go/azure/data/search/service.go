@@ -4,14 +4,14 @@ package search
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Service_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type Service_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,12 +21,12 @@ type Service_Value_Properties_AuthOptions_AadOrApiKey struct {
 
 type Service_Value_Properties_AuthOptions struct {
 	AadOrApiKey any
-	ApiKeyOnly any
+	ApiKeyOnly  any
 }
 
 type Service_Value_Properties_EncryptionWithCmk struct {
 	EncryptionComplianceStatus any
-	Enforcement any
+	Enforcement                any
 }
 
 type Service_Value_Properties_NetworkRuleSet_IpRules struct {
@@ -34,7 +34,7 @@ type Service_Value_Properties_NetworkRuleSet_IpRules struct {
 }
 
 type Service_Value_Properties_NetworkRuleSet struct {
-	Bypass any
+	Bypass  any
 	IpRules any
 }
 
@@ -44,15 +44,15 @@ type Service_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpo
 
 type Service_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Service_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupId any
-	PrivateEndpoint any
+	GroupId                           any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Service_Value_Properties_PrivateEndpointConnections struct {
@@ -60,12 +60,12 @@ type Service_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type Service_Value_Properties_SharedPrivateLinkResources_Properties struct {
-	GroupId any
+	GroupId               any
 	PrivateLinkResourceId any
-	ProvisioningState any
-	RequestMessage any
-	ResourceRegion any
-	Status any
+	ProvisioningState     any
+	RequestMessage        any
+	ResourceRegion        any
+	Status                any
 }
 
 type Service_Value_Properties_SharedPrivateLinkResources struct {
@@ -73,26 +73,26 @@ type Service_Value_Properties_SharedPrivateLinkResources struct {
 }
 
 type Service_Value_Properties struct {
-	AuthOptions any
-	ComputeType any
+	AuthOptions                 any
+	ComputeType                 any
 	DataExfiltrationProtections any
-	DisableLocalAuth any
-	ETag any
-	EncryptionWithCmk any
-	Endpoint any
-	HostingMode any
-	NetworkRuleSet any
-	PartitionCount any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	ReplicaCount any
-	SemanticSearch any
-	ServiceUpgradedAt any
-	SharedPrivateLinkResources any
-	Status any
-	StatusDetails any
-	UpgradeAvailable any
+	DisableLocalAuth            any
+	ETag                        any
+	EncryptionWithCmk           any
+	Endpoint                    any
+	HostingMode                 any
+	NetworkRuleSet              any
+	PartitionCount              any
+	PrivateEndpointConnections  any
+	ProvisioningState           any
+	PublicNetworkAccess         any
+	ReplicaCount                any
+	SemanticSearch              any
+	ServiceUpgradedAt           any
+	SharedPrivateLinkResources  any
+	Status                      any
+	StatusDetails               any
+	UpgradeAvailable            any
 }
 
 type Service_Value_Sku struct {
@@ -100,9 +100,9 @@ type Service_Value_Sku struct {
 }
 
 type Service_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type ServiceConfig struct {
@@ -117,6 +117,5 @@ type ServiceAttrs struct {
 
 var Service = ubx.DataSourceBinding{
 	WireType: "azure_search_service",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,22 +4,19 @@ package offer
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OfferConfig struct {
-	EdgeZone any
-	Offer any
+	EdgeZone      any
 	PublisherName any
 }
 
 type OfferAttrs struct {
-	EdgeZone any
-	Offer any
+	EdgeZone      any
 	PublisherName any
 }
 
 var Offer = ubx.DataSourceBinding{
 	WireType: "azure_offer",
 	Fields: ubx.FieldMap{
-		"EdgeZone": ubx.FieldSpec{WireName: "edge_zone"},
-		"Offer": ubx.FieldSpec{WireName: "offer"},
+		"EdgeZone":      ubx.FieldSpec{WireName: "edge_zone"},
 		"PublisherName": ubx.FieldSpec{WireName: "publisher_name"},
 	},
 }

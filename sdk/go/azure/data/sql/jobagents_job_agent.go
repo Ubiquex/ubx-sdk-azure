@@ -4,33 +4,33 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JobagentsJobAgent_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type JobagentsJobAgent_Value_Identity struct {
-	TenantId any
-	Type any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type JobagentsJobAgent_Value_Properties struct {
 	DatabaseId any
-	State any
+	State      any
 }
 
 type JobagentsJobAgent_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type JobagentsJobAgent_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type JobagentsJobAgentConfig struct {
@@ -39,7 +39,7 @@ type JobagentsJobAgentConfig struct {
 
 type JobagentsJobAgentAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The JobAgent items on this page
 	Value any

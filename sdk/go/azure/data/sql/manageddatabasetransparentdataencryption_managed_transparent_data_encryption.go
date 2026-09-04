@@ -12,12 +12,12 @@ type ManageddatabasetransparentdataencryptionManagedTransparentDataEncryption_Va
 }
 
 type ManageddatabasetransparentdataencryptionManagedTransparentDataEncryptionConfig struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 }
 
 type ManageddatabasetransparentdataencryptionManagedTransparentDataEncryptionAttrs struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 	// The link to the next page of items
 	NextLink any
@@ -28,7 +28,7 @@ type ManageddatabasetransparentdataencryptionManagedTransparentDataEncryptionAtt
 var ManageddatabasetransparentdataencryptionManagedTransparentDataEncryption = ubx.DataSourceBinding{
 	WireType: "azure_sql_manageddatabasetransparentdataencryption_managed_transparent_data_encryption",
 	Fields: ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+		"DatabaseName":        ubx.FieldSpec{WireName: "database_name"},
 		"ManagedInstanceName": ubx.FieldSpec{WireName: "managed_instance_name"},
 	},
 }

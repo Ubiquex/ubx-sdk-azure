@@ -4,20 +4,20 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworksecurityperimeterPerimeterAssociableResource_Value_Properties struct {
-	Description any
-	DisplayName any
+	Description       any
+	DisplayName       any
 	OutboundSupported any
-	PublicDnsZones any
-	ReadinessState any
-	ResourceType any
-	ServiceTags any
+	PublicDnsZones    any
+	ReadinessState    any
+	ResourceType      any
+	ServiceTags       any
 }
 
 type NetworksecurityperimeterPerimeterAssociableResource_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type NetworksecurityperimeterPerimeterAssociableResourceConfig struct {
@@ -32,6 +32,5 @@ type NetworksecurityperimeterPerimeterAssociableResourceAttrs struct {
 
 var NetworksecurityperimeterPerimeterAssociableResource = ubx.DataSourceBinding{
 	WireType: "azure_network_networksecurityperimeter_perimeter_associable_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

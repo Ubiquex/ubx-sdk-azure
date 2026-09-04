@@ -17,12 +17,12 @@ type ApimworkspacesGlobalSchemaContract2_Properties struct {
 }
 
 var ApimworkspacesGlobalSchemaContract2_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Document": ubx.FieldSpec{WireName: "document"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SchemaType": ubx.FieldSpec{WireName: "schema_type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"Document":          ubx.FieldSpec{WireName: "document"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SchemaType":        ubx.FieldSpec{WireName: "schema_type"},
+	"Value":             ubx.FieldSpec{WireName: "value"},
+}
 
 type ApimworkspacesGlobalSchemaContract2Config struct {
 	// Schema create or update contract Properties.
@@ -39,8 +39,8 @@ var ApimworkspacesGlobalSchemaContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacesGlobalSchemaContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacesGlobalSchemaContract2_PropertiesFields,
 		},
 	},
 }

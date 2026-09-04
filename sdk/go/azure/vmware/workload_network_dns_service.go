@@ -23,15 +23,15 @@ type WorkloadNetworkDnsService_Properties struct {
 }
 
 var WorkloadNetworkDnsService_PropertiesFields = ubx.FieldMap{
-		"DefaultDnsZone": ubx.FieldSpec{WireName: "default_dns_zone"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"DnsServiceIp": ubx.FieldSpec{WireName: "dns_service_ip"},
-		"FqdnZones": ubx.FieldSpec{WireName: "fqdn_zones"},
-		"LogLevel": ubx.FieldSpec{WireName: "log_level"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Revision": ubx.FieldSpec{WireName: "revision"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"DefaultDnsZone":    ubx.FieldSpec{WireName: "default_dns_zone"},
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"DnsServiceIp":      ubx.FieldSpec{WireName: "dns_service_ip"},
+	"FqdnZones":         ubx.FieldSpec{WireName: "fqdn_zones"},
+	"LogLevel":          ubx.FieldSpec{WireName: "log_level"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Revision":          ubx.FieldSpec{WireName: "revision"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+}
 
 type WorkloadNetworkDnsServiceConfig struct {
 	// NSX DNS Service Properties
@@ -48,8 +48,8 @@ var WorkloadNetworkDnsService = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: WorkloadNetworkDnsService_PropertiesFields,
+			Kind:     "object",
+			Fields:   WorkloadNetworkDnsService_PropertiesFields,
 		},
 	},
 }

@@ -15,11 +15,11 @@ type DbOpenapiMongoMiroleAssignmentResource_Properties struct {
 }
 
 var DbOpenapiMongoMiroleAssignmentResource_PropertiesFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"PrincipalId":       ubx.FieldSpec{WireName: "principal_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RoleDefinitionId":  ubx.FieldSpec{WireName: "role_definition_id"},
+	"Scope":             ubx.FieldSpec{WireName: "scope"},
+}
 
 type DbOpenapiMongoMiroleAssignmentResourceConfig struct {
 	// Azure Cosmos DB MongoMI Role Assignment resource object.
@@ -36,8 +36,8 @@ var DbOpenapiMongoMiroleAssignmentResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiMongoMiroleAssignmentResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiMongoMiroleAssignmentResource_PropertiesFields,
 		},
 	},
 }

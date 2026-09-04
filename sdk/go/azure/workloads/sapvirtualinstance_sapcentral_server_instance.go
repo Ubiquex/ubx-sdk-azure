@@ -77,8 +77,8 @@ type SapvirtualinstanceSapcentralServerInstance_Properties_MessageServerProperti
 }
 
 type SapvirtualinstanceSapcentralServerInstance_Properties_VmDetails struct {
-	StorageDetails any
-	Type any
+	StorageDetails   any
+	Type             any
 	VirtualMachineId any
 }
 
@@ -114,116 +114,115 @@ type SapvirtualinstanceSapcentralServerInstance_Properties struct {
 }
 
 var SapvirtualinstanceSapcentralServerInstance_Properties_EnqueueReplicationServerPropertiesFields = ubx.FieldMap{
-		"ErsVersion": ubx.FieldSpec{WireName: "ers_version"},
-		"Health": ubx.FieldSpec{WireName: "health"},
-		"Hostname": ubx.FieldSpec{WireName: "hostname"},
-		"InstanceNo": ubx.FieldSpec{WireName: "instance_no"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"KernelPatch": ubx.FieldSpec{WireName: "kernel_patch"},
-		"KernelVersion": ubx.FieldSpec{WireName: "kernel_version"},
-	}
+	"ErsVersion":    ubx.FieldSpec{WireName: "ers_version"},
+	"Health":        ubx.FieldSpec{WireName: "health"},
+	"Hostname":      ubx.FieldSpec{WireName: "hostname"},
+	"InstanceNo":    ubx.FieldSpec{WireName: "instance_no"},
+	"IpAddress":     ubx.FieldSpec{WireName: "ip_address"},
+	"KernelPatch":   ubx.FieldSpec{WireName: "kernel_patch"},
+	"KernelVersion": ubx.FieldSpec{WireName: "kernel_version"},
+}
 
 var SapvirtualinstanceSapcentralServerInstance_Properties_EnqueueServerPropertiesFields = ubx.FieldMap{
-		"Health": ubx.FieldSpec{WireName: "health"},
-		"Hostname": ubx.FieldSpec{WireName: "hostname"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-	}
+	"Health":    ubx.FieldSpec{WireName: "health"},
+	"Hostname":  ubx.FieldSpec{WireName: "hostname"},
+	"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
+	"Port":      ubx.FieldSpec{WireName: "port"},
+}
 
-var SapvirtualinstanceSapcentralServerInstance_Properties_Errors_Properties_DetailsFields = ubx.FieldMap{
-	}
+var SapvirtualinstanceSapcentralServerInstance_Properties_Errors_Properties_DetailsFields = ubx.FieldMap{}
 
 var SapvirtualinstanceSapcentralServerInstance_Properties_Errors_PropertiesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: SapvirtualinstanceSapcentralServerInstance_Properties_Errors_Properties_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   SapvirtualinstanceSapcentralServerInstance_Properties_Errors_Properties_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var SapvirtualinstanceSapcentralServerInstance_Properties_ErrorsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapcentralServerInstance_Properties_Errors_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapcentralServerInstance_Properties_Errors_PropertiesFields,
+	},
+}
 
 var SapvirtualinstanceSapcentralServerInstance_Properties_GatewayServerPropertiesFields = ubx.FieldMap{
-		"Health": ubx.FieldSpec{WireName: "health"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-	}
+	"Health": ubx.FieldSpec{WireName: "health"},
+	"Port":   ubx.FieldSpec{WireName: "port"},
+}
 
 var SapvirtualinstanceSapcentralServerInstance_Properties_LoadBalancerDetailsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var SapvirtualinstanceSapcentralServerInstance_Properties_MessageServerPropertiesFields = ubx.FieldMap{
-		"Health": ubx.FieldSpec{WireName: "health"},
-		"Hostname": ubx.FieldSpec{WireName: "hostname"},
-		"HttpPort": ubx.FieldSpec{WireName: "http_port"},
-		"HttpsPort": ubx.FieldSpec{WireName: "https_port"},
-		"InternalMsPort": ubx.FieldSpec{WireName: "internal_ms_port"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"MsPort": ubx.FieldSpec{WireName: "ms_port"},
-	}
+	"Health":         ubx.FieldSpec{WireName: "health"},
+	"Hostname":       ubx.FieldSpec{WireName: "hostname"},
+	"HttpPort":       ubx.FieldSpec{WireName: "http_port"},
+	"HttpsPort":      ubx.FieldSpec{WireName: "https_port"},
+	"InternalMsPort": ubx.FieldSpec{WireName: "internal_ms_port"},
+	"IpAddress":      ubx.FieldSpec{WireName: "ip_address"},
+	"MsPort":         ubx.FieldSpec{WireName: "ms_port"},
+}
 
 var SapvirtualinstanceSapcentralServerInstance_Properties_VmDetailsFields = ubx.FieldMap{
-		"StorageDetails": ubx.FieldSpec{
-			WireName: "storage_details",
-			Kind: "list",
-			Fields: SapvirtualinstanceSapcentralServerInstance_Properties_LoadBalancerDetailsFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"VirtualMachineId": ubx.FieldSpec{WireName: "virtual_machine_id"},
-	}
+	"StorageDetails": ubx.FieldSpec{
+		WireName: "storage_details",
+		Kind:     "list",
+		Fields:   SapvirtualinstanceSapcentralServerInstance_Properties_LoadBalancerDetailsFields,
+	},
+	"Type":             ubx.FieldSpec{WireName: "type"},
+	"VirtualMachineId": ubx.FieldSpec{WireName: "virtual_machine_id"},
+}
 
 var SapvirtualinstanceSapcentralServerInstance_PropertiesFields = ubx.FieldMap{
-		"EnqueueReplicationServerProperties": ubx.FieldSpec{
-			WireName: "enqueue_replication_server_properties",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapcentralServerInstance_Properties_EnqueueReplicationServerPropertiesFields,
-		},
-		"EnqueueServerProperties": ubx.FieldSpec{
-			WireName: "enqueue_server_properties",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapcentralServerInstance_Properties_EnqueueServerPropertiesFields,
-		},
-		"Errors": ubx.FieldSpec{
-			WireName: "errors",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapcentralServerInstance_Properties_ErrorsFields,
-		},
-		"GatewayServerProperties": ubx.FieldSpec{
-			WireName: "gateway_server_properties",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapcentralServerInstance_Properties_GatewayServerPropertiesFields,
-		},
-		"Health": ubx.FieldSpec{WireName: "health"},
-		"InstanceNo": ubx.FieldSpec{WireName: "instance_no"},
-		"KernelPatch": ubx.FieldSpec{WireName: "kernel_patch"},
-		"KernelVersion": ubx.FieldSpec{WireName: "kernel_version"},
-		"LoadBalancerDetails": ubx.FieldSpec{
-			WireName: "load_balancer_details",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapcentralServerInstance_Properties_LoadBalancerDetailsFields,
-		},
-		"MessageServerProperties": ubx.FieldSpec{
-			WireName: "message_server_properties",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapcentralServerInstance_Properties_MessageServerPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-		"VmDetails": ubx.FieldSpec{
-			WireName: "vm_details",
-			Kind: "list",
-			Fields: SapvirtualinstanceSapcentralServerInstance_Properties_VmDetailsFields,
-		},
-	}
+	"EnqueueReplicationServerProperties": ubx.FieldSpec{
+		WireName: "enqueue_replication_server_properties",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapcentralServerInstance_Properties_EnqueueReplicationServerPropertiesFields,
+	},
+	"EnqueueServerProperties": ubx.FieldSpec{
+		WireName: "enqueue_server_properties",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapcentralServerInstance_Properties_EnqueueServerPropertiesFields,
+	},
+	"Errors": ubx.FieldSpec{
+		WireName: "errors",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapcentralServerInstance_Properties_ErrorsFields,
+	},
+	"GatewayServerProperties": ubx.FieldSpec{
+		WireName: "gateway_server_properties",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapcentralServerInstance_Properties_GatewayServerPropertiesFields,
+	},
+	"Health":        ubx.FieldSpec{WireName: "health"},
+	"InstanceNo":    ubx.FieldSpec{WireName: "instance_no"},
+	"KernelPatch":   ubx.FieldSpec{WireName: "kernel_patch"},
+	"KernelVersion": ubx.FieldSpec{WireName: "kernel_version"},
+	"LoadBalancerDetails": ubx.FieldSpec{
+		WireName: "load_balancer_details",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapcentralServerInstance_Properties_LoadBalancerDetailsFields,
+	},
+	"MessageServerProperties": ubx.FieldSpec{
+		WireName: "message_server_properties",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapcentralServerInstance_Properties_MessageServerPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"Subnet":            ubx.FieldSpec{WireName: "subnet"},
+	"VmDetails": ubx.FieldSpec{
+		WireName: "vm_details",
+		Kind:     "list",
+		Fields:   SapvirtualinstanceSapcentralServerInstance_Properties_VmDetailsFields,
+	},
+}
 
 type SapvirtualinstanceSapcentralServerInstanceConfig struct {
 	// Defines the SAP Central Services Instance properties.
@@ -240,8 +239,8 @@ var SapvirtualinstanceSapcentralServerInstance = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapcentralServerInstance_PropertiesFields,
+			Kind:     "object",
+			Fields:   SapvirtualinstanceSapcentralServerInstance_PropertiesFields,
 		},
 	},
 }

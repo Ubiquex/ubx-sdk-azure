@@ -6,69 +6,69 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type HciUpdate_Value_Properties_ComponentVersions struct {
 	LastUpdated any
 	PackageType any
-	Version any
+	Version     any
 }
 
 type HciUpdate_Value_Properties_HealthCheckResult_Tags struct {
-	Key any
+	Key   any
 	Value any
 }
 
 type HciUpdate_Value_Properties_HealthCheckResult struct {
-	AdditionalData any
-	Description any
-	DisplayName any
-	HealthCheckSource any
-	HealthCheckTags any
-	Name any
-	Remediation any
-	Severity any
-	Status any
-	Tags any
-	TargetResourceId any
+	AdditionalData     any
+	Description        any
+	DisplayName        any
+	HealthCheckSource  any
+	HealthCheckTags    any
+	Name               any
+	Remediation        any
+	Severity           any
+	Status             any
+	Tags               any
+	TargetResourceId   any
 	TargetResourceName any
 	TargetResourceType any
-	Timestamp any
-	Title any
+	Timestamp          any
+	Title              any
 }
 
 type HciUpdate_Value_Properties_Prerequisites struct {
 	PackageName any
-	UpdateType any
-	Version any
+	UpdateType  any
+	Version     any
 }
 
 type HciUpdate_Value_Properties_UpdateStateProperties struct {
-	NotifyMessage any
+	NotifyMessage      any
 	ProgressPercentage any
 }
 
 type HciUpdate_Value_Properties struct {
-	AdditionalProperties any
-	AvailabilityType any
-	ComponentVersions any
-	Description any
-	DisplayName any
-	HealthCheckDate any
-	HealthCheckResult any
-	HealthState any
-	InstalledDate any
+	AdditionalProperties  any
+	AvailabilityType      any
+	ComponentVersions     any
+	Description           any
+	DisplayName           any
+	HealthCheckDate       any
+	HealthCheckResult     any
+	HealthState           any
+	InstalledDate         any
 	MinSbeVersionRequired any
-	PackagePath any
-	PackageSizeInMb any
-	PackageType any
-	Prerequisites any
-	ProvisioningState any
-	Publisher any
-	RebootRequired any
-	ReleaseLink any
-	State any
+	PackagePath           any
+	PackageSizeInMb       any
+	PackageType           any
+	Prerequisites         any
+	ProvisioningState     any
+	Publisher             any
+	RebootRequired        any
+	ReleaseLink           any
+	State                 any
 	UpdateStateProperties any
-	Version any
+	Version               any
 }
 
 type HciUpdate_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

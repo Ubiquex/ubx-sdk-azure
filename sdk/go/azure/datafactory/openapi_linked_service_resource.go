@@ -14,7 +14,7 @@ type OpenapiLinkedServiceResource_Properties_ConnectVia struct {
 
 type OpenapiLinkedServiceResource_Properties_Parameters struct {
 	DefaultValue any
-	Type any
+	Type         any
 }
 
 type OpenapiLinkedServiceResource_Properties struct {
@@ -33,36 +33,34 @@ type OpenapiLinkedServiceResource_Properties struct {
 }
 
 var OpenapiLinkedServiceResource_Properties_ConnectViaFields = ubx.FieldMap{
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"ReferenceName": ubx.FieldSpec{WireName: "reference_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Parameters":    ubx.FieldSpec{WireName: "parameters"},
+	"ReferenceName": ubx.FieldSpec{WireName: "reference_name"},
+	"Type":          ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiLinkedServiceResource_Properties_ParametersFields = ubx.FieldMap{
-		"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
+	"Type":         ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiLinkedServiceResource_PropertiesFields = ubx.FieldMap{
-		"Annotations": ubx.FieldSpec{WireName: "annotations"},
-		"ConnectVia": ubx.FieldSpec{
-			WireName: "connect_via",
-			Kind: "object",
-			Fields: OpenapiLinkedServiceResource_Properties_ConnectViaFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "map",
-			Fields: OpenapiLinkedServiceResource_Properties_ParametersFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Annotations": ubx.FieldSpec{WireName: "annotations"},
+	"ConnectVia": ubx.FieldSpec{
+		WireName: "connect_via",
+		Kind:     "object",
+		Fields:   OpenapiLinkedServiceResource_Properties_ConnectViaFields,
+	},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   OpenapiLinkedServiceResource_Properties_ParametersFields,
+	},
+	"Type":    ubx.FieldSpec{WireName: "type"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiLinkedServiceResourceConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// The nested object which contains the information and credential which can be used to connect with related store or compute resource.
 	Properties any
 }
@@ -77,11 +75,10 @@ type OpenapiLinkedServiceResourceAttrs struct {
 var OpenapiLinkedServiceResource = ubx.ResourceBinding{
 	WireType: "azure_datafactory_openapi_linked_service_resource",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiLinkedServiceResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiLinkedServiceResource_PropertiesFields,
 		},
 	},
 }

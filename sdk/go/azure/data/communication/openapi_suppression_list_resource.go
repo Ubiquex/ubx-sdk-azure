@@ -4,10 +4,10 @@ package communication
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSuppressionListResource_Value_Properties struct {
-	CreatedTimeStamp any
-	DataLocation any
+	CreatedTimeStamp     any
+	DataLocation         any
 	LastUpdatedTimeStamp any
-	ListName any
+	ListName             any
 }
 
 type OpenapiSuppressionListResource_Value struct {
@@ -15,12 +15,12 @@ type OpenapiSuppressionListResource_Value struct {
 }
 
 type OpenapiSuppressionListResourceConfig struct {
-	DomainName any
+	DomainName       any
 	EmailServiceName any
 }
 
 type OpenapiSuppressionListResourceAttrs struct {
-	DomainName any
+	DomainName       any
 	EmailServiceName any
 	// The link to the next page of items
 	NextLink any
@@ -31,7 +31,7 @@ type OpenapiSuppressionListResourceAttrs struct {
 var OpenapiSuppressionListResource = ubx.DataSourceBinding{
 	WireType: "azure_communication_openapi_suppression_list_resource",
 	Fields: ubx.FieldMap{
-		"DomainName": ubx.FieldSpec{WireName: "domain_name"},
+		"DomainName":       ubx.FieldSpec{WireName: "domain_name"},
 		"EmailServiceName": ubx.FieldSpec{WireName: "email_service_name"},
 	},
 }

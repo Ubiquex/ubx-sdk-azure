@@ -49,8 +49,6 @@ const VirtualnetworkIpAllocation_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkIpAllocationConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of the IpAllocation. */
   properties?: VirtualnetworkIpAllocation_Properties | Computed<VirtualnetworkIpAllocation_Properties>;
 }
@@ -65,7 +63,6 @@ export interface VirtualnetworkIpAllocationAttrs {
 export const VirtualnetworkIpAllocation: ResourceBinding<VirtualnetworkIpAllocationConfig, VirtualnetworkIpAllocationAttrs> = {
   wireType: "azure_network_virtualnetwork_ip_allocation",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

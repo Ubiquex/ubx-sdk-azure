@@ -112,18 +112,26 @@ export interface NetworkwatcherConnectionMonitorResult_Properties_TestGroups {
 export interface NetworkwatcherConnectionMonitorResult_Properties {
   /** Determines if the connection monitor will start automatically once created. */
   autoStart?: boolean | Computed<boolean>;
+  /** Type of connection monitor. */
+  connectionMonitorType?: string | Computed<string>;
   /** Describes the destination of connection monitor. */
   destination?: NetworkwatcherConnectionMonitorResult_Properties_Destination | Computed<NetworkwatcherConnectionMonitorResult_Properties_Destination>;
   /** List of connection monitor endpoints. */
   endpoints?: NetworkwatcherConnectionMonitorResult_Properties_Endpoints[] | Computed<NetworkwatcherConnectionMonitorResult_Properties_Endpoints[]>;
   /** Monitoring interval in seconds. */
   monitoringIntervalInSeconds?: number | Computed<number>;
+  /** The monitoring status of the connection monitor. */
+  monitoringStatus?: string | Computed<string>;
   /** Optional notes to be associated with the connection monitor. */
   notes?: string | Computed<string>;
   /** List of connection monitor outputs. */
   outputs?: NetworkwatcherConnectionMonitorResult_Properties_Outputs[] | Computed<NetworkwatcherConnectionMonitorResult_Properties_Outputs[]>;
+  /** Provisioning states of a resource. */
+  provisioningState?: string | Computed<string>;
   /** Describes the source of connection monitor. */
   source?: NetworkwatcherConnectionMonitorResult_Properties_Source | Computed<NetworkwatcherConnectionMonitorResult_Properties_Source>;
+  /** The date and time when the connection monitor was started. */
+  startTime?: string | Computed<string>;
   /** List of connection monitor test configurations. */
   testConfigurations?: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations[] | Computed<NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations[]>;
   /** List of connection monitor test groups. */
@@ -283,6 +291,7 @@ const NetworkwatcherConnectionMonitorResult_Properties_TestGroupsFields: FieldMa
 
 const NetworkwatcherConnectionMonitorResult_PropertiesFields: FieldMap = {
   autoStart: "auto_start",
+  connectionMonitorType: "connection_monitor_type",
   destination: {
     wireName: "destination",
     kind: "object",
@@ -294,17 +303,20 @@ const NetworkwatcherConnectionMonitorResult_PropertiesFields: FieldMap = {
     fields: NetworkwatcherConnectionMonitorResult_Properties_EndpointsFields,
   },
   monitoringIntervalInSeconds: "monitoring_interval_in_seconds",
+  monitoringStatus: "monitoring_status",
   notes: "notes",
   outputs: {
     wireName: "outputs",
     kind: "list",
     fields: NetworkwatcherConnectionMonitorResult_Properties_OutputsFields,
   },
+  provisioningState: "provisioning_state",
   source: {
     wireName: "source",
     kind: "object",
     fields: NetworkwatcherConnectionMonitorResult_Properties_SourceFields,
   },
+  startTime: "start_time",
   testConfigurations: {
     wireName: "test_configurations",
     kind: "list",

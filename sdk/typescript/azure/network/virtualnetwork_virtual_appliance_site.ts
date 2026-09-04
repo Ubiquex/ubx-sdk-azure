@@ -49,8 +49,6 @@ const VirtualnetworkVirtualApplianceSite_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkVirtualApplianceSiteConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of the rule group. */
   properties?: VirtualnetworkVirtualApplianceSite_Properties | Computed<VirtualnetworkVirtualApplianceSite_Properties>;
 }
@@ -65,7 +63,6 @@ export interface VirtualnetworkVirtualApplianceSiteAttrs {
 export const VirtualnetworkVirtualApplianceSite: ResourceBinding<VirtualnetworkVirtualApplianceSiteConfig, VirtualnetworkVirtualApplianceSiteAttrs> = {
   wireType: "azure_network_virtualnetwork_virtual_appliance_site",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

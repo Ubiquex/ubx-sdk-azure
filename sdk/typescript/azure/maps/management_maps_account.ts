@@ -174,15 +174,6 @@ const ManagementMapsAccount_SkuFields: FieldMap = {
   tier: "tier",
 };
 
-const ManagementMapsAccount_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ManagementMapsAccountConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: ManagementMapsAccount_Identity | Computed<ManagementMapsAccount_Identity>;
@@ -192,8 +183,6 @@ export interface ManagementMapsAccountConfig {
   properties?: ManagementMapsAccount_Properties | Computed<ManagementMapsAccount_Properties>;
   /** The SKU of the Maps Account. */
   sku: ManagementMapsAccount_Sku | Computed<ManagementMapsAccount_Sku>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ManagementMapsAccount_SystemData | Computed<ManagementMapsAccount_SystemData>;
 }
 
 export interface ManagementMapsAccountAttrs {
@@ -227,11 +216,6 @@ export const ManagementMapsAccount: ResourceBinding<ManagementMapsAccountConfig,
       wireName: "sku",
       kind: "object",
       fields: ManagementMapsAccount_SkuFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ManagementMapsAccount_SystemDataFields,
     },
   },
 };

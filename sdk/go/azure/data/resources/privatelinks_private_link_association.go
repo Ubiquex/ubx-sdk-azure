@@ -4,27 +4,27 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivatelinksPrivateLinkAssociation_Value_Properties struct {
-	PrivateLink any
+	PrivateLink         any
 	PublicNetworkAccess any
-	Scope any
-	TenantId any
+	Scope               any
+	TenantId            any
 }
 
 type PrivatelinksPrivateLinkAssociation_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type PrivatelinksPrivateLinkAssociationConfig struct {
 	ApiVersion any
-	GroupId any
+	GroupId    any
 }
 
 type PrivatelinksPrivateLinkAssociationAttrs struct {
 	ApiVersion any
-	GroupId any
+	GroupId    any
 	// private link association information.
 	Value any
 }
@@ -33,6 +33,6 @@ var PrivatelinksPrivateLinkAssociation = ubx.DataSourceBinding{
 	WireType: "azure_resources_privatelinks_private_link_association",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
+		"GroupId":    ubx.FieldSpec{WireName: "group_id"},
 	},
 }

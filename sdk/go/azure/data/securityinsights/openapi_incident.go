@@ -4,12 +4,12 @@ package securityinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiIncident_Value_Properties_AdditionalData struct {
-	AlertProductNames any
-	AlertsCount any
-	BookmarksCount any
-	CommentsCount any
+	AlertProductNames   any
+	AlertsCount         any
+	BookmarksCount      any
+	CommentsCount       any
 	ProviderIncidentUrl any
-	Tactics any
+	Tactics             any
 }
 
 type OpenapiIncident_Value_Properties_Labels struct {
@@ -18,37 +18,37 @@ type OpenapiIncident_Value_Properties_Labels struct {
 }
 
 type OpenapiIncident_Value_Properties_Owner struct {
-	AssignedTo any
-	Email any
-	ObjectId any
-	OwnerType any
+	AssignedTo        any
+	Email             any
+	ObjectId          any
+	OwnerType         any
 	UserPrincipalName any
 }
 
 type OpenapiIncident_Value_Properties struct {
-	AdditionalData any
-	Classification any
-	ClassificationComment any
-	ClassificationReason any
-	CreatedTimeUtc any
-	Description any
-	FirstActivityTimeUtc any
-	IncidentNumber any
-	IncidentUrl any
-	Labels any
-	LastActivityTimeUtc any
-	LastModifiedTimeUtc any
-	Owner any
-	ProviderIncidentId any
-	ProviderName any
+	AdditionalData         any
+	Classification         any
+	ClassificationComment  any
+	ClassificationReason   any
+	CreatedTimeUtc         any
+	Description            any
+	FirstActivityTimeUtc   any
+	IncidentNumber         any
+	IncidentUrl            any
+	Labels                 any
+	LastActivityTimeUtc    any
+	LastModifiedTimeUtc    any
+	Owner                  any
+	ProviderIncidentId     any
+	ProviderName           any
 	RelatedAnalyticRuleIds any
-	Severity any
-	Status any
-	Title any
+	Severity               any
+	Status                 any
+	Title                  any
 }
 
 type OpenapiIncident_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -60,7 +60,7 @@ type OpenapiIncidentAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The Incident items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

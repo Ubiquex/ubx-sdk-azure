@@ -4,10 +4,10 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkgatewayLocalNetworkGateway_Properties_BgpSettings_BgpPeeringAddresses struct {
-	CustomBgpIpAddresses any
+	CustomBgpIpAddresses  any
 	DefaultBgpIpAddresses any
-	IpconfigurationId any
-	TunnelIpAddresses any
+	IpconfigurationId     any
+	TunnelIpAddresses     any
 }
 
 type NetworkgatewayLocalNetworkGateway_Properties_BgpSettings struct {
@@ -27,8 +27,8 @@ type NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamP
 
 type NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace struct {
@@ -54,66 +54,64 @@ type NetworkgatewayLocalNetworkGateway_Properties struct {
 }
 
 var NetworkgatewayLocalNetworkGateway_Properties_BgpSettings_BgpPeeringAddressesFields = ubx.FieldMap{
-		"CustomBgpIpAddresses": ubx.FieldSpec{WireName: "custom_bgp_ip_addresses"},
-		"DefaultBgpIpAddresses": ubx.FieldSpec{WireName: "default_bgp_ip_addresses"},
-		"IpconfigurationId": ubx.FieldSpec{WireName: "ipconfiguration_id"},
-		"TunnelIpAddresses": ubx.FieldSpec{WireName: "tunnel_ip_addresses"},
-	}
+	"CustomBgpIpAddresses":  ubx.FieldSpec{WireName: "custom_bgp_ip_addresses"},
+	"DefaultBgpIpAddresses": ubx.FieldSpec{WireName: "default_bgp_ip_addresses"},
+	"IpconfigurationId":     ubx.FieldSpec{WireName: "ipconfiguration_id"},
+	"TunnelIpAddresses":     ubx.FieldSpec{WireName: "tunnel_ip_addresses"},
+}
 
 var NetworkgatewayLocalNetworkGateway_Properties_BgpSettingsFields = ubx.FieldMap{
-		"Asn": ubx.FieldSpec{WireName: "asn"},
-		"BgpPeeringAddress": ubx.FieldSpec{WireName: "bgp_peering_address"},
-		"BgpPeeringAddresses": ubx.FieldSpec{
-			WireName: "bgp_peering_addresses",
-			Kind: "list",
-			Fields: NetworkgatewayLocalNetworkGateway_Properties_BgpSettings_BgpPeeringAddressesFields,
-		},
-		"PeerWeight": ubx.FieldSpec{WireName: "peer_weight"},
-	}
+	"Asn":               ubx.FieldSpec{WireName: "asn"},
+	"BgpPeeringAddress": ubx.FieldSpec{WireName: "bgp_peering_address"},
+	"BgpPeeringAddresses": ubx.FieldSpec{
+		WireName: "bgp_peering_addresses",
+		Kind:     "list",
+		Fields:   NetworkgatewayLocalNetworkGateway_Properties_BgpSettings_BgpPeeringAddressesFields,
+	},
+	"PeerWeight": ubx.FieldSpec{WireName: "peer_weight"},
+}
 
 var NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations_PoolFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocationsFields = ubx.FieldMap{
-		"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
-		"NumberOfIpAddresses": ubx.FieldSpec{WireName: "number_of_ip_addresses"},
-		"Pool": ubx.FieldSpec{
-			WireName: "pool",
-			Kind: "object",
-			Fields: NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations_PoolFields,
-		},
-	}
+	"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
+	"NumberOfIpAddresses":      ubx.FieldSpec{WireName: "number_of_ip_addresses"},
+	"Pool": ubx.FieldSpec{
+		WireName: "pool",
+		Kind:     "object",
+		Fields:   NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations_PoolFields,
+	},
+}
 
 var NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpaceFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocationsFields,
-		},
-	}
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocationsFields,
+	},
+}
 
 var NetworkgatewayLocalNetworkGateway_PropertiesFields = ubx.FieldMap{
-		"BgpSettings": ubx.FieldSpec{
-			WireName: "bgp_settings",
-			Kind: "object",
-			Fields: NetworkgatewayLocalNetworkGateway_Properties_BgpSettingsFields,
-		},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"GatewayIpAddress": ubx.FieldSpec{WireName: "gateway_ip_address"},
-		"LocalNetworkAddressSpace": ubx.FieldSpec{
-			WireName: "local_network_address_space",
-			Kind: "object",
-			Fields: NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpaceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"BgpSettings": ubx.FieldSpec{
+		WireName: "bgp_settings",
+		Kind:     "object",
+		Fields:   NetworkgatewayLocalNetworkGateway_Properties_BgpSettingsFields,
+	},
+	"Fqdn":             ubx.FieldSpec{WireName: "fqdn"},
+	"GatewayIpAddress": ubx.FieldSpec{WireName: "gateway_ip_address"},
+	"LocalNetworkAddressSpace": ubx.FieldSpec{
+		WireName: "local_network_address_space",
+		Kind:     "object",
+		Fields:   NetworkgatewayLocalNetworkGateway_Properties_LocalNetworkAddressSpaceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type NetworkgatewayLocalNetworkGatewayConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// LocalNetworkGateway properties.
 	Properties any
 }
@@ -128,11 +126,10 @@ type NetworkgatewayLocalNetworkGatewayAttrs struct {
 var NetworkgatewayLocalNetworkGateway = ubx.ResourceBinding{
 	WireType: "azure_network_networkgateway_local_network_gateway",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkgatewayLocalNetworkGateway_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkgatewayLocalNetworkGateway_PropertiesFields,
 		},
 	},
 }

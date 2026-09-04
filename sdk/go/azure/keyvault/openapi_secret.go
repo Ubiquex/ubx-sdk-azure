@@ -6,8 +6,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiSecret_Properties_Attributes struct {
 	Created any
 	Enabled any
-	Exp any
-	Nbf any
+	Exp     any
+	Nbf     any
 	Updated any
 }
 
@@ -25,30 +25,28 @@ type OpenapiSecret_Properties struct {
 }
 
 var OpenapiSecret_Properties_AttributesFields = ubx.FieldMap{
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Exp": ubx.FieldSpec{WireName: "exp"},
-		"Nbf": ubx.FieldSpec{WireName: "nbf"},
-		"Updated": ubx.FieldSpec{WireName: "updated"},
-	}
+	"Created": ubx.FieldSpec{WireName: "created"},
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Exp":     ubx.FieldSpec{WireName: "exp"},
+	"Nbf":     ubx.FieldSpec{WireName: "nbf"},
+	"Updated": ubx.FieldSpec{WireName: "updated"},
+}
 
 var OpenapiSecret_PropertiesFields = ubx.FieldMap{
-		"Attributes": ubx.FieldSpec{
-			WireName: "attributes",
-			Kind: "object",
-			Fields: OpenapiSecret_Properties_AttributesFields,
-		},
-		"ContentType": ubx.FieldSpec{WireName: "content_type"},
-		"SecretUri": ubx.FieldSpec{WireName: "secret_uri"},
-		"SecretUriWithVersion": ubx.FieldSpec{WireName: "secret_uri_with_version"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Attributes": ubx.FieldSpec{
+		WireName: "attributes",
+		Kind:     "object",
+		Fields:   OpenapiSecret_Properties_AttributesFields,
+	},
+	"ContentType":          ubx.FieldSpec{WireName: "content_type"},
+	"SecretUri":            ubx.FieldSpec{WireName: "secret_uri"},
+	"SecretUriWithVersion": ubx.FieldSpec{WireName: "secret_uri_with_version"},
+	"Value":                ubx.FieldSpec{WireName: "value"},
+}
 
 type OpenapiSecretConfig struct {
 	// Properties of the secret
 	Properties any
-	// The tags that will be assigned to the secret.
-	Tags any
 }
 
 type OpenapiSecretAttrs struct {
@@ -65,9 +63,8 @@ var OpenapiSecret = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSecret_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSecret_PropertiesFields,
 		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

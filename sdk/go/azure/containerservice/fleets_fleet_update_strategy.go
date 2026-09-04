@@ -5,23 +5,23 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGates struct {
 	DisplayName any
-	Type any
+	Type        any
 }
 
 type FleetsFleetUpdateStrategy_Properties_Strategy_Stages_Groups struct {
-	AfterGates any
-	BeforeGates any
+	AfterGates     any
+	BeforeGates    any
 	MaxConcurrency any
-	Name any
+	Name           any
 }
 
 type FleetsFleetUpdateStrategy_Properties_Strategy_Stages struct {
-	AfterGates any
+	AfterGates              any
 	AfterStageWaitInSeconds any
-	BeforeGates any
-	Groups any
-	MaxConcurrency any
-	Name any
+	BeforeGates             any
+	Groups                  any
+	MaxConcurrency          any
+	Name                    any
 }
 
 type FleetsFleetUpdateStrategy_Properties_Strategy struct {
@@ -37,66 +37,64 @@ type FleetsFleetUpdateStrategy_Properties struct {
 }
 
 var FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var FleetsFleetUpdateStrategy_Properties_Strategy_Stages_GroupsFields = ubx.FieldMap{
-		"AfterGates": ubx.FieldSpec{
-			WireName: "after_gates",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"BeforeGates": ubx.FieldSpec{
-			WireName: "before_gates",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AfterGates": ubx.FieldSpec{
+		WireName: "after_gates",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"BeforeGates": ubx.FieldSpec{
+		WireName: "before_gates",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+}
 
 var FleetsFleetUpdateStrategy_Properties_Strategy_StagesFields = ubx.FieldMap{
-		"AfterGates": ubx.FieldSpec{
-			WireName: "after_gates",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"AfterStageWaitInSeconds": ubx.FieldSpec{WireName: "after_stage_wait_in_seconds"},
-		"BeforeGates": ubx.FieldSpec{
-			WireName: "before_gates",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"Groups": ubx.FieldSpec{
-			WireName: "groups",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_GroupsFields,
-		},
-		"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AfterGates": ubx.FieldSpec{
+		WireName: "after_gates",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"AfterStageWaitInSeconds": ubx.FieldSpec{WireName: "after_stage_wait_in_seconds"},
+	"BeforeGates": ubx.FieldSpec{
+		WireName: "before_gates",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"Groups": ubx.FieldSpec{
+		WireName: "groups",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_Stages_GroupsFields,
+	},
+	"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+}
 
 var FleetsFleetUpdateStrategy_Properties_StrategyFields = ubx.FieldMap{
-		"Stages": ubx.FieldSpec{
-			WireName: "stages",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_StagesFields,
-		},
-	}
+	"Stages": ubx.FieldSpec{
+		WireName: "stages",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_StagesFields,
+	},
+}
 
 var FleetsFleetUpdateStrategy_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Strategy": ubx.FieldSpec{
-			WireName: "strategy",
-			Kind: "object",
-			Fields: FleetsFleetUpdateStrategy_Properties_StrategyFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Strategy": ubx.FieldSpec{
+		WireName: "strategy",
+		Kind:     "object",
+		Fields:   FleetsFleetUpdateStrategy_Properties_StrategyFields,
+	},
+}
 
 type FleetsFleetUpdateStrategyConfig struct {
-	// If eTag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.
-	ETag any
 	// The properties of the UpdateStrategy.
 	Properties any
 }
@@ -111,11 +109,10 @@ type FleetsFleetUpdateStrategyAttrs struct {
 var FleetsFleetUpdateStrategy = ubx.ResourceBinding{
 	WireType: "azure_containerservice_fleets_fleet_update_strategy",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FleetsFleetUpdateStrategy_PropertiesFields,
+			Kind:     "object",
+			Fields:   FleetsFleetUpdateStrategy_PropertiesFields,
 		},
 	},
 }

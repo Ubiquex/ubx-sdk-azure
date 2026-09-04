@@ -4,20 +4,20 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_CustomRules_Rules_MatchConditions struct {
-	MatchValue any
-	MatchVariable any
+	MatchValue      any
+	MatchVariable   any
 	NegateCondition any
-	Operator any
-	Selector any
-	Transforms any
+	Operator        any
+	Selector        any
+	Transforms      any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_CustomRules_Rules struct {
-	Action any
-	EnabledState any
+	Action          any
+	EnabledState    any
 	MatchConditions any
-	Name any
-	Priority any
+	Name            any
+	Priority        any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_CustomRules struct {
@@ -29,21 +29,21 @@ type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_EndpointLinks struc
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_Rules struct {
-	Action any
+	Action       any
 	EnabledState any
-	RuleId any
+	RuleId       any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides struct {
 	RuleGroupName any
-	Rules any
+	Rules         any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_ManagedRules_ManagedRuleSets struct {
-	AnomalyScore any
+	AnomalyScore       any
 	RuleGroupOverrides any
-	RuleSetType any
-	RuleSetVersion any
+	RuleSetType        any
+	RuleSetVersion     any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_ManagedRules struct {
@@ -51,16 +51,16 @@ type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_ManagedRules struct
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_PolicySettings struct {
-	DefaultCustomBlockResponseBody any
+	DefaultCustomBlockResponseBody       any
 	DefaultCustomBlockResponseStatusCode any
-	DefaultRedirectUrl any
-	EnabledState any
-	Mode any
+	DefaultRedirectUrl                   any
+	EnabledState                         any
+	Mode                                 any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_RateLimitRules_Rules struct {
 	RateLimitDurationInMinutes any
-	RateLimitThreshold any
+	RateLimitThreshold         any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_RateLimitRules struct {
@@ -68,14 +68,14 @@ type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties_RateLimitRules stru
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Properties struct {
-	CustomRules any
-	EndpointLinks any
+	CustomRules        any
+	EndpointLinks      any
 	ExtendedProperties any
-	ManagedRules any
-	PolicySettings any
-	ProvisioningState any
-	RateLimitRules any
-	ResourceState any
+	ManagedRules       any
+	PolicySettings     any
+	ProvisioningState  any
+	RateLimitRules     any
+	ResourceState      any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value_Sku struct {
@@ -83,9 +83,9 @@ type OpenapiCdnWebApplicationFirewallPolicy_Value_Sku struct {
 }
 
 type OpenapiCdnWebApplicationFirewallPolicy_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicyConfig struct {
@@ -100,6 +100,5 @@ type OpenapiCdnWebApplicationFirewallPolicyAttrs struct {
 
 var OpenapiCdnWebApplicationFirewallPolicy = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_cdn_web_application_firewall_policy",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

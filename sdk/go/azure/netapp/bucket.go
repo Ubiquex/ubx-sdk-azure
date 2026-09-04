@@ -76,80 +76,80 @@ type Bucket_Properties struct {
 }
 
 var Bucket_Properties_AkvDetails_CertificateAkvDetailsFields = ubx.FieldMap{
-		"CertificateKeyVaultUri": ubx.FieldSpec{WireName: "certificate_key_vault_uri"},
-		"CertificateName": ubx.FieldSpec{WireName: "certificate_name"},
-	}
+	"CertificateKeyVaultUri": ubx.FieldSpec{WireName: "certificate_key_vault_uri"},
+	"CertificateName":        ubx.FieldSpec{WireName: "certificate_name"},
+}
 
 var Bucket_Properties_AkvDetails_CredentialsAkvDetailsFields = ubx.FieldMap{
-		"CredentialsKeyVaultUri": ubx.FieldSpec{WireName: "credentials_key_vault_uri"},
-		"SecretName": ubx.FieldSpec{WireName: "secret_name"},
-	}
+	"CredentialsKeyVaultUri": ubx.FieldSpec{WireName: "credentials_key_vault_uri"},
+	"SecretName":             ubx.FieldSpec{WireName: "secret_name"},
+}
 
 var Bucket_Properties_AkvDetailsFields = ubx.FieldMap{
-		"CertificateAkvDetails": ubx.FieldSpec{
-			WireName: "certificate_akv_details",
-			Kind: "object",
-			Fields: Bucket_Properties_AkvDetails_CertificateAkvDetailsFields,
-		},
-		"CredentialsAkvDetails": ubx.FieldSpec{
-			WireName: "credentials_akv_details",
-			Kind: "object",
-			Fields: Bucket_Properties_AkvDetails_CredentialsAkvDetailsFields,
-		},
-	}
+	"CertificateAkvDetails": ubx.FieldSpec{
+		WireName: "certificate_akv_details",
+		Kind:     "object",
+		Fields:   Bucket_Properties_AkvDetails_CertificateAkvDetailsFields,
+	},
+	"CredentialsAkvDetails": ubx.FieldSpec{
+		WireName: "credentials_akv_details",
+		Kind:     "object",
+		Fields:   Bucket_Properties_AkvDetails_CredentialsAkvDetailsFields,
+	},
+}
 
 var Bucket_Properties_FileSystemUser_CifsUserFields = ubx.FieldMap{
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"Username": ubx.FieldSpec{WireName: "username"},
+}
 
 var Bucket_Properties_FileSystemUser_NfsUserFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"UserId": ubx.FieldSpec{WireName: "user_id"},
-	}
+	"GroupId": ubx.FieldSpec{WireName: "group_id"},
+	"UserId":  ubx.FieldSpec{WireName: "user_id"},
+}
 
 var Bucket_Properties_FileSystemUserFields = ubx.FieldMap{
-		"CifsUser": ubx.FieldSpec{
-			WireName: "cifs_user",
-			Kind: "object",
-			Fields: Bucket_Properties_FileSystemUser_CifsUserFields,
-		},
-		"NfsUser": ubx.FieldSpec{
-			WireName: "nfs_user",
-			Kind: "object",
-			Fields: Bucket_Properties_FileSystemUser_NfsUserFields,
-		},
-	}
+	"CifsUser": ubx.FieldSpec{
+		WireName: "cifs_user",
+		Kind:     "object",
+		Fields:   Bucket_Properties_FileSystemUser_CifsUserFields,
+	},
+	"NfsUser": ubx.FieldSpec{
+		WireName: "nfs_user",
+		Kind:     "object",
+		Fields:   Bucket_Properties_FileSystemUser_NfsUserFields,
+	},
+}
 
 var Bucket_Properties_ServerFields = ubx.FieldMap{
-		"CertificateCommonName": ubx.FieldSpec{WireName: "certificate_common_name"},
-		"CertificateExpiryDate": ubx.FieldSpec{WireName: "certificate_expiry_date"},
-		"CertificateObject": ubx.FieldSpec{WireName: "certificate_object"},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"OnCertificateConflictAction": ubx.FieldSpec{WireName: "on_certificate_conflict_action"},
-	}
+	"CertificateCommonName":       ubx.FieldSpec{WireName: "certificate_common_name"},
+	"CertificateExpiryDate":       ubx.FieldSpec{WireName: "certificate_expiry_date"},
+	"CertificateObject":           ubx.FieldSpec{WireName: "certificate_object"},
+	"Fqdn":                        ubx.FieldSpec{WireName: "fqdn"},
+	"IpAddress":                   ubx.FieldSpec{WireName: "ip_address"},
+	"OnCertificateConflictAction": ubx.FieldSpec{WireName: "on_certificate_conflict_action"},
+}
 
 var Bucket_PropertiesFields = ubx.FieldMap{
-		"AkvDetails": ubx.FieldSpec{
-			WireName: "akv_details",
-			Kind: "object",
-			Fields: Bucket_Properties_AkvDetailsFields,
-		},
-		"FileSystemUser": ubx.FieldSpec{
-			WireName: "file_system_user",
-			Kind: "object",
-			Fields: Bucket_Properties_FileSystemUserFields,
-		},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"Permissions": ubx.FieldSpec{WireName: "permissions"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Server": ubx.FieldSpec{
-			WireName: "server",
-			Kind: "object",
-			Fields: Bucket_Properties_ServerFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"AkvDetails": ubx.FieldSpec{
+		WireName: "akv_details",
+		Kind:     "object",
+		Fields:   Bucket_Properties_AkvDetailsFields,
+	},
+	"FileSystemUser": ubx.FieldSpec{
+		WireName: "file_system_user",
+		Kind:     "object",
+		Fields:   Bucket_Properties_FileSystemUserFields,
+	},
+	"Path":              ubx.FieldSpec{WireName: "path"},
+	"Permissions":       ubx.FieldSpec{WireName: "permissions"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Server": ubx.FieldSpec{
+		WireName: "server",
+		Kind:     "object",
+		Fields:   Bucket_Properties_ServerFields,
+	},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 type BucketConfig struct {
 	// Bucket resource properties
@@ -166,8 +166,8 @@ var Bucket = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Bucket_PropertiesFields,
+			Kind:     "object",
+			Fields:   Bucket_PropertiesFields,
 		},
 	},
 }

@@ -28,31 +28,29 @@ type VirtualnetworkIpAllocation_Properties struct {
 }
 
 var VirtualnetworkIpAllocation_Properties_SubnetFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualnetworkIpAllocation_PropertiesFields = ubx.FieldMap{
-		"AllocationTags": ubx.FieldSpec{WireName: "allocation_tags"},
-		"IpamAllocationId": ubx.FieldSpec{WireName: "ipam_allocation_id"},
-		"Prefix": ubx.FieldSpec{WireName: "prefix"},
-		"PrefixLength": ubx.FieldSpec{WireName: "prefix_length"},
-		"PrefixType": ubx.FieldSpec{WireName: "prefix_type"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualnetworkIpAllocation_Properties_SubnetFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"VirtualNetwork": ubx.FieldSpec{
-			WireName: "virtual_network",
-			Kind: "object",
-			Fields: VirtualnetworkIpAllocation_Properties_SubnetFields,
-		},
-	}
+	"AllocationTags":   ubx.FieldSpec{WireName: "allocation_tags"},
+	"IpamAllocationId": ubx.FieldSpec{WireName: "ipam_allocation_id"},
+	"Prefix":           ubx.FieldSpec{WireName: "prefix"},
+	"PrefixLength":     ubx.FieldSpec{WireName: "prefix_length"},
+	"PrefixType":       ubx.FieldSpec{WireName: "prefix_type"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualnetworkIpAllocation_Properties_SubnetFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+	"VirtualNetwork": ubx.FieldSpec{
+		WireName: "virtual_network",
+		Kind:     "object",
+		Fields:   VirtualnetworkIpAllocation_Properties_SubnetFields,
+	},
+}
 
 type VirtualnetworkIpAllocationConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of the IpAllocation.
 	Properties any
 }
@@ -67,11 +65,10 @@ type VirtualnetworkIpAllocationAttrs struct {
 var VirtualnetworkIpAllocation = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_ip_allocation",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkIpAllocation_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkIpAllocation_PropertiesFields,
 		},
 	},
 }

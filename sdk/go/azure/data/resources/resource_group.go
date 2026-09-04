@@ -8,7 +8,7 @@ type ResourceGroup_Value_Properties struct {
 }
 
 type ResourceGroup_Value struct {
-	ManagedBy any
+	ManagedBy  any
 	Properties any
 }
 
@@ -24,6 +24,5 @@ type ResourceGroupAttrs struct {
 
 var ResourceGroup = ubx.DataSourceBinding{
 	WireType: "azure_resources_resource_group",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

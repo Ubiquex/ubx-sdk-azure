@@ -8,13 +8,13 @@ type OpenapiJobBase_Value_Properties_Identity struct {
 }
 
 type OpenapiJobBase_Value_Properties_NotificationSetting_Webhooks struct {
-	EventType any
+	EventType   any
 	WebhookType any
 }
 
 type OpenapiJobBase_Value_Properties_NotificationSetting struct {
-	EmailOn any
-	Emails any
+	EmailOn  any
+	Emails   any
 	Webhooks any
 }
 
@@ -23,26 +23,26 @@ type OpenapiJobBase_Value_Properties_Services_Nodes struct {
 }
 
 type OpenapiJobBase_Value_Properties_Services struct {
-	Endpoint any
-	ErrorMessage any
+	Endpoint       any
+	ErrorMessage   any
 	JobServiceType any
-	Nodes any
-	Port any
-	Properties any
-	Status any
+	Nodes          any
+	Port           any
+	Properties     any
+	Status         any
 }
 
 type OpenapiJobBase_Value_Properties struct {
-	ComponentId any
-	ComputeId any
-	DisplayName any
-	ExperimentName any
-	Identity any
-	IsArchived any
-	JobType any
+	ComponentId         any
+	ComputeId           any
+	DisplayName         any
+	ExperimentName      any
+	Identity            any
+	IsArchived          any
+	JobType             any
 	NotificationSetting any
-	Services any
-	Status any
+	Services            any
+	Status              any
 }
 
 type OpenapiJobBase_Value struct {
@@ -50,32 +50,32 @@ type OpenapiJobBase_Value struct {
 }
 
 type OpenapiJobBaseConfig struct {
-	JobType any
-	ListViewType any
-	Properties any
-	Tag any
+	JobType       any
+	ListViewType  any
+	Properties    any
+	Tag           any
 	WorkspaceName any
 }
 
 type OpenapiJobBaseAttrs struct {
-	JobType any
+	JobType      any
 	ListViewType any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	Properties any
-	Tag any
+	Tag        any
 	// The JobBase items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiJobBase = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_job_base",
 	Fields: ubx.FieldMap{
-		"JobType": ubx.FieldSpec{WireName: "job_type"},
-		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"Tag": ubx.FieldSpec{WireName: "tag"},
+		"JobType":       ubx.FieldSpec{WireName: "job_type"},
+		"ListViewType":  ubx.FieldSpec{WireName: "list_view_type"},
+		"Properties":    ubx.FieldSpec{WireName: "properties"},
+		"Tag":           ubx.FieldSpec{WireName: "tag"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

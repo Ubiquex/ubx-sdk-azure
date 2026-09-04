@@ -5,58 +5,58 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ProviderResourceType_ResourceTypes_Aliases_DefaultMetadata struct {
 	Attributes any
-	Type any
+	Type       any
 }
 
 type ProviderResourceType_ResourceTypes_Aliases_DefaultPattern struct {
-	Phrase any
-	Type any
+	Phrase   any
+	Type     any
 	Variable any
 }
 
 type ProviderResourceType_ResourceTypes_Aliases_Paths struct {
 	ApiVersions any
-	Metadata any
-	Path any
-	Pattern any
+	Metadata    any
+	Path        any
+	Pattern     any
 }
 
 type ProviderResourceType_ResourceTypes_Aliases struct {
 	DefaultMetadata any
-	DefaultPath any
-	DefaultPattern any
-	Name any
-	Paths any
-	Type any
+	DefaultPath     any
+	DefaultPattern  any
+	Name            any
+	Paths           any
+	Type            any
 }
 
 type ProviderResourceType_ResourceTypes_ApiProfiles struct {
-	ApiVersion any
+	ApiVersion     any
 	ProfileVersion any
 }
 
 type ProviderResourceType_ResourceTypes_LocationMappings struct {
 	ExtendedLocations any
-	Location any
-	Type any
+	Location          any
+	Type              any
 }
 
 type ProviderResourceType_ResourceTypes_ZoneMappings struct {
 	Location any
-	Zones any
+	Zones    any
 }
 
 type ProviderResourceType_ResourceTypes struct {
-	Aliases any
-	ApiProfiles any
-	ApiVersions any
-	Capabilities any
+	Aliases           any
+	ApiProfiles       any
+	ApiVersions       any
+	Capabilities      any
 	DefaultApiVersion any
-	LocationMappings any
-	Locations any
-	Properties any
-	ResourceType any
-	ZoneMappings any
+	LocationMappings  any
+	Locations         any
+	Properties        any
+	ResourceType      any
+	ZoneMappings      any
 }
 
 type ProviderResourceTypeConfig struct {
@@ -73,7 +73,7 @@ type ProviderResourceTypeAttrs struct {
 	// The registration policy of the resource provider.
 	RegistrationPolicy any
 	// The registration state of the resource provider.
-	RegistrationState any
+	RegistrationState         any
 	ResourceProviderNamespace any
 	// The collection of provider resource types.
 	ResourceTypes any

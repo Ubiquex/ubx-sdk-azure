@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanRoutingIntent_Value_Properties_RoutingPolicies struct {
 	Destinations any
-	Name any
-	NextHop any
+	Name         any
+	NextHop      any
 }
 
 type VirtualwanRoutingIntent_Value_Properties struct {
 	ProvisioningState any
-	RoutingPolicies any
+	RoutingPolicies   any
 }
 
 type VirtualwanRoutingIntent_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -27,7 +27,7 @@ type VirtualwanRoutingIntentAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The RoutingIntent items on this page
-	Value any
+	Value          any
 	VirtualHubName any
 }
 

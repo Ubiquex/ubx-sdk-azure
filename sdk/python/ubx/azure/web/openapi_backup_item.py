@@ -34,12 +34,36 @@ class OpenapiBackupItem_Properties:
     backup_name: Any = None
     # Description of a backup schedule. Describes how often should be the backup performed and what should be the retention policy.
     backup_schedule: Any = None
+    # Name of the blob which contains data for this backup.
+    blob_name: Any = None
+    # Unique correlation identifier. Please use this along with the timestamp while communicating with Azure support.
+    correlation_id: Any = None
+    # Timestamp of the backup creation.
+    created: Any = None
     # Databases included in the backup.
     databases: Any = None
     # True if the backup schedule is enabled (must be included in that case), false if the backup schedule should be disabled.
     enabled: Any = None
+    # Timestamp when this backup finished.
+    finished_time_stamp: Any = None
+    # Id of the backup.
+    id: Any = None
+    # Timestamp of a last restore operation which used this backup.
+    last_restore_time_stamp: Any = None
+    # Details regarding this backup. Might contain an error message.
+    log: Any = None
+    # Name of this backup.
+    name: Any = None
+    # True if this backup has been created due to a schedule being triggered.
+    scheduled: Any = None
+    # Size of the backup in bytes.
+    size_in_bytes: Any = None
+    # Backup status.
+    status: Any = None
     # SAS URL to the container.
     storage_account_url: Any = None
+    # Size of the original web app which has been backed up.
+    website_size_in_bytes: Any = None
 
 _OpenapiBackupItem_Properties_BackupScheduleFields = {
     "frequency_interval": ubx.FieldSpec(wire_name="frequency_interval"),
@@ -64,13 +88,25 @@ _OpenapiBackupItem_PropertiesFields = {
         kind="object",
         fields=_OpenapiBackupItem_Properties_BackupScheduleFields,
     ),
+    "blob_name": ubx.FieldSpec(wire_name="blob_name"),
+    "correlation_id": ubx.FieldSpec(wire_name="correlation_id"),
+    "created": ubx.FieldSpec(wire_name="created"),
     "databases": ubx.FieldSpec(
         wire_name="databases",
         kind="list",
         fields=_OpenapiBackupItem_Properties_DatabasesFields,
     ),
     "enabled": ubx.FieldSpec(wire_name="enabled"),
+    "finished_time_stamp": ubx.FieldSpec(wire_name="finished_time_stamp"),
+    "id": ubx.FieldSpec(wire_name="id"),
+    "last_restore_time_stamp": ubx.FieldSpec(wire_name="last_restore_time_stamp"),
+    "log": ubx.FieldSpec(wire_name="log"),
+    "name": ubx.FieldSpec(wire_name="name"),
+    "scheduled": ubx.FieldSpec(wire_name="scheduled"),
+    "size_in_bytes": ubx.FieldSpec(wire_name="size_in_bytes"),
+    "status": ubx.FieldSpec(wire_name="status"),
     "storage_account_url": ubx.FieldSpec(wire_name="storage_account_url"),
+    "website_size_in_bytes": ubx.FieldSpec(wire_name="website_size_in_bytes"),
 }
 
 @dataclasses.dataclass

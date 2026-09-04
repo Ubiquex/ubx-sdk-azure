@@ -11,13 +11,11 @@ type EncryptionScope_Properties struct {
 }
 
 var EncryptionScope_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"State":             ubx.FieldSpec{WireName: "state"},
+}
 
 type EncryptionScopeConfig struct {
-	// Resource Etag.
-	Etag any
 	// Properties to EncryptionScope
 	Properties any
 	// Resource tags.
@@ -36,11 +34,10 @@ type EncryptionScopeAttrs struct {
 var EncryptionScope = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_encryption_scope",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: EncryptionScope_PropertiesFields,
+			Kind:     "object",
+			Fields:   EncryptionScope_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

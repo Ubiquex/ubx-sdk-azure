@@ -86,6 +86,29 @@ class OpenapiStorageAccount_Properties_AzureFilesIdentityBasedAuthentication:
     smb_oauth_settings: Any = None
 
 @dataclasses.dataclass
+class OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters_BlobRanges:
+    end_range: Any = None
+    start_range: Any = None
+
+@dataclasses.dataclass
+class OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters:
+    # Blob ranges to restore.
+    blob_ranges: Any = None
+    # Restore blob to the specified time.
+    time_to_restore: Any = None
+
+@dataclasses.dataclass
+class OpenapiStorageAccount_Properties_BlobRestoreStatus:
+    # Failure reason when blob restore is failed.
+    failure_reason: Any = None
+    # Blob restore parameters
+    parameters: Any = None
+    # Id for tracking blob restore request.
+    restore_id: Any = None
+    # The status of blob restore progress. Possible values are: - InProgress: Indicates that blob restore is ongoing. - Complete: Indicates that blob restore has been completed successfully. - Failed: Indicates that blob restore is failed.
+    status: Any = None
+
+@dataclasses.dataclass
 class OpenapiStorageAccount_Properties_CustomDomain:
     # Gets or sets the custom domain name assigned to the storage account. Name is the CNAME source.
     name: Any = None
@@ -167,6 +190,21 @@ class OpenapiStorageAccount_Properties_GeoPriorityReplicationStatus:
     is_blob_enabled: Any = None
 
 @dataclasses.dataclass
+class OpenapiStorageAccount_Properties_GeoReplicationStats:
+    # A boolean flag which indicates whether or not account failover is supported for the account.
+    can_failover: Any = None
+    # A boolean flag which indicates whether or not planned account failover is supported for the account.
+    can_planned_failover: Any = None
+    # All primary writes preceding this UTC date/time value are guaranteed to be available for read operations. Primary writes following this point in time may or may not be available for reads. Element may be default value if value of LastSyncTime is not available, this can happen if secondary is offline or we are in bootstrap.
+    last_sync_time: Any = None
+    # The redundancy type of the account after an account failover is performed.
+    post_failover_redundancy: Any = None
+    # The redundancy type of the account after a planned account failover is performed.
+    post_planned_failover_redundancy: Any = None
+    # The status of the secondary location. Possible values are: - Live: Indicates that the secondary location is active and operational. - Bootstrap: Indicates initial synchronization from the primary location to the secondary location is in progress.This typically occurs when replication is first enabled. - Unavailable: Indicates that the secondary location is temporarily unavailable.
+    status: Any = None
+
+@dataclasses.dataclass
 class OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning_ImmutabilityPolicy:
     # This property can only be changed for disabled and unlocked time-based retention policies. When enabled, new blocks can be written to an append blob while maintaining immutability protection and compliance. Only new blocks can be added and any existing blocks cannot be modified or deleted.
     allow_protected_append_writes: Any = None
@@ -181,6 +219,11 @@ class OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning:
     enabled: Any = None
     # This defines account-level immutability policy properties.
     immutability_policy: Any = None
+
+@dataclasses.dataclass
+class OpenapiStorageAccount_Properties_KeyCreationTime:
+    key1: Any = None
+    key2: Any = None
 
 @dataclasses.dataclass
 class OpenapiStorageAccount_Properties_KeyPolicy:
@@ -219,6 +262,92 @@ class OpenapiStorageAccount_Properties_NetworkAcls:
     virtual_network_rules: Any = None
 
 @dataclasses.dataclass
+class OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpoints:
+    # Gets the blob endpoint.
+    blob: Any = None
+    # Gets the dfs endpoint.
+    dfs: Any = None
+    # Gets the file endpoint.
+    file: Any = None
+    # Gets the web endpoint.
+    web: Any = None
+
+@dataclasses.dataclass
+class OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpoints:
+    # Gets the blob endpoint.
+    blob: Any = None
+    # Gets the dfs endpoint.
+    dfs: Any = None
+    # Gets the file endpoint.
+    file: Any = None
+    # Gets the queue endpoint.
+    queue: Any = None
+    # Gets the table endpoint.
+    table: Any = None
+    # Gets the web endpoint.
+    web: Any = None
+
+@dataclasses.dataclass
+class OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints:
+    # Gets the blob endpoint.
+    blob: Any = None
+    # Gets the dfs endpoint.
+    dfs: Any = None
+    # Gets the file endpoint.
+    file: Any = None
+    # The URIs that are used to perform a retrieval of a public blob, file, web or dfs object via a internet routing endpoint.
+    internet_endpoints: Any = None
+    # The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object via a microsoft routing endpoint.
+    microsoft_endpoints: Any = None
+    # Gets the queue endpoint.
+    queue: Any = None
+    # Gets the table endpoint.
+    table: Any = None
+    # Gets the web endpoint.
+    web: Any = None
+
+@dataclasses.dataclass
+class OpenapiStorageAccount_Properties_PrimaryEndpoints:
+    # Gets the blob endpoint.
+    blob: Any = None
+    # Gets the dfs endpoint.
+    dfs: Any = None
+    # Gets the file endpoint.
+    file: Any = None
+    # The URIs that are used to perform a retrieval of a public blob, file, web or dfs object via a internet routing endpoint.
+    internet_endpoints: Any = None
+    # The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object via an IPv6 endpoint.
+    ipv6_endpoints: Any = None
+    # The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object via a microsoft routing endpoint.
+    microsoft_endpoints: Any = None
+    # Gets the queue endpoint.
+    queue: Any = None
+    # Gets the table endpoint.
+    table: Any = None
+    # Gets the web endpoint.
+    web: Any = None
+
+@dataclasses.dataclass
+class OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    id: Any = None
+
+@dataclasses.dataclass
+class OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    action_required: Any = None
+    description: Any = None
+    status: Any = None
+
+@dataclasses.dataclass
+class OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties:
+    private_endpoint: Any = None
+    private_link_service_connection_state: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class OpenapiStorageAccount_Properties_PrivateEndpointConnections:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiStorageAccount_Properties_RoutingPreference:
     # A boolean flag which indicates whether internet routing storage endpoints are to be published
     publish_internet_endpoints: Any = None
@@ -235,9 +364,22 @@ class OpenapiStorageAccount_Properties_SasPolicy:
     sas_expiration_period: Any = None
 
 @dataclasses.dataclass
+class OpenapiStorageAccount_Properties_StorageAccountSkuConversionStatus:
+    # This property represents the sku conversion end time.
+    end_time: Any = None
+    # This property indicates the current sku conversion status.
+    sku_conversion_status: Any = None
+    # This property represents the sku conversion start time.
+    start_time: Any = None
+    # The SKU name. Required for account creation; optional for update. Note that in older versions, SKU name was called accountType.
+    target_sku_name: Any = None
+
+@dataclasses.dataclass
 class OpenapiStorageAccount_Properties:
     # The default access tier for block blobs in the storage account. Required for storage accounts where kind = BlobStorage. See more details in: https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview.
     access_tier: Any = None
+    # If customer initiated account migration is in progress, the value will be true else it will be null.
+    account_migration_in_progress: Any = None
     # Allow or disallow public access to all blobs or containers in the storage account. The default interpretation is false for this property.
     allow_blob_public_access: Any = None
     # Allow or disallow cross AAD tenant object replication. Set this property to true for new or existing accounts only if object replication policies will involve storage accounts in different AAD tenants. The default interpretation is false for new accounts to follow best security practices by default.
@@ -250,6 +392,10 @@ class OpenapiStorageAccount_Properties:
     allowed_copy_scope: Any = None
     # Settings for Azure Files identity based authentication.
     azure_files_identity_based_authentication: Any = None
+    # Blob restore status.
+    blob_restore_status: Any = None
+    # Gets the creation date and time of the storage account in UTC.
+    creation_time: Any = None
     # The custom domain assigned to this storage account. This can be set via Update.
     custom_domain: Any = None
     # Defines Data Collaboration Policy for a storage account.
@@ -264,8 +410,12 @@ class OpenapiStorageAccount_Properties:
     enable_extended_groups: Any = None
     # The encryption settings on the storage account.
     encryption: Any = None
+    # If the failover is in progress, the value will be true, otherwise, it will be null.
+    failover_in_progress: Any = None
     # Geo Priority Replication enablement status for the storage account.
     geo_priority_replication_status: Any = None
+    # Statistics related to replication for storage account's Blob, Table, Queue and File services. It is only available when geo-redundant replication is enabled for the storage account.
+    geo_replication_stats: Any = None
     # This property enables and defines account-level immutability. Enabling the feature auto-enables Blob Versioning.
     immutable_storage_with_versioning: Any = None
     # Account HierarchicalNamespace enabled if sets to true.
@@ -276,20 +426,44 @@ class OpenapiStorageAccount_Properties:
     is_nfs_v3_enabled: Any = None
     # Enables Secure File Transfer Protocol, if set to true
     is_sftp_enabled: Any = None
+    # This property will be set to true or false on an event of ongoing migration. Default value is null.
+    is_sku_conversion_blocked: Any = None
+    # Storage account keys creation time.
+    key_creation_time: Any = None
     # KeyPolicy assigned to the storage account.
     key_policy: Any = None
     # Allow large file shares if sets to Enabled. It cannot be disabled once it is enabled.
     large_file_shares_state: Any = None
+    # Gets the timestamp of the most recent instance of a failover to the secondary location. Only the most recent timestamp is retained. This element is not returned if there has never been a failover instance. Only available if the accountType is Standard_GRS or Standard_RAGRS.
+    last_geo_failover_time: Any = None
     # Set the minimum TLS version to be permitted on requests to storage. The default interpretation is TLS 1.0 for this property. Minimum TLS version 1.3 version is not supported.
     minimum_tls_version: Any = None
     # Network rule set
     network_acls: Any = None
+    # The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object.
+    primary_endpoints: Any = None
+    # Gets the location of the primary data center for the storage account.
+    primary_location: Any = None
+    # List of private endpoint connection associated with the specified storage account
+    private_endpoint_connections: Any = None
+    # Gets the status of the storage account at the time the operation was called.
+    provisioning_state: Any = None
     # Allow, disallow, or let Network Security Perimeter configuration to evaluate public network access to Storage Account. Value is optional but if passed in, must be 'Enabled', 'Disabled' or 'SecuredByPerimeter'.
     public_network_access: Any = None
     # Routing preference defines the type of network, either microsoft or internet routing to be used to deliver the user data, the default option is microsoft routing
     routing_preference: Any = None
     # SasPolicy assigned to the storage account.
     sas_policy: Any = None
+    # The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object.
+    secondary_endpoints: Any = None
+    # Gets the location of the geo-replicated secondary for the storage account. Only available if the accountType is Standard_GRS or Standard_RAGRS.
+    secondary_location: Any = None
+    # Gets the status indicating whether the primary location of the storage account is available or unavailable.
+    status_of_primary: Any = None
+    # Gets the status indicating whether the primary location of the storage account is available or unavailable.
+    status_of_secondary: Any = None
+    # This defines the sku conversion status object for asynchronous sku conversions.
+    storage_account_sku_conversion_status: Any = None
     # Allows https traffic only to storage service if sets to true. The default value is true since API version 2019-04-01.
     supports_https_traffic_only: Any = None
 
@@ -382,6 +556,31 @@ _OpenapiStorageAccount_Properties_AzureFilesIdentityBasedAuthenticationFields = 
     ),
 }
 
+_OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters_BlobRangesFields = {
+    "end_range": ubx.FieldSpec(wire_name="end_range"),
+    "start_range": ubx.FieldSpec(wire_name="start_range"),
+}
+
+_OpenapiStorageAccount_Properties_BlobRestoreStatus_ParametersFields = {
+    "blob_ranges": ubx.FieldSpec(
+        wire_name="blob_ranges",
+        kind="list",
+        fields=_OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters_BlobRangesFields,
+    ),
+    "time_to_restore": ubx.FieldSpec(wire_name="time_to_restore"),
+}
+
+_OpenapiStorageAccount_Properties_BlobRestoreStatusFields = {
+    "failure_reason": ubx.FieldSpec(wire_name="failure_reason"),
+    "parameters": ubx.FieldSpec(
+        wire_name="parameters",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_BlobRestoreStatus_ParametersFields,
+    ),
+    "restore_id": ubx.FieldSpec(wire_name="restore_id"),
+    "status": ubx.FieldSpec(wire_name="status"),
+}
+
 _OpenapiStorageAccount_Properties_CustomDomainFields = {
     "name": ubx.FieldSpec(wire_name="name"),
     "use_sub_domain_name": ubx.FieldSpec(wire_name="use_sub_domain_name"),
@@ -464,6 +663,15 @@ _OpenapiStorageAccount_Properties_GeoPriorityReplicationStatusFields = {
     "is_blob_enabled": ubx.FieldSpec(wire_name="is_blob_enabled"),
 }
 
+_OpenapiStorageAccount_Properties_GeoReplicationStatsFields = {
+    "can_failover": ubx.FieldSpec(wire_name="can_failover"),
+    "can_planned_failover": ubx.FieldSpec(wire_name="can_planned_failover"),
+    "last_sync_time": ubx.FieldSpec(wire_name="last_sync_time"),
+    "post_failover_redundancy": ubx.FieldSpec(wire_name="post_failover_redundancy"),
+    "post_planned_failover_redundancy": ubx.FieldSpec(wire_name="post_planned_failover_redundancy"),
+    "status": ubx.FieldSpec(wire_name="status"),
+}
+
 _OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning_ImmutabilityPolicyFields = {
     "allow_protected_append_writes": ubx.FieldSpec(wire_name="allow_protected_append_writes"),
     "immutability_period_since_creation_in_days": ubx.FieldSpec(wire_name="immutability_period_since_creation_in_days"),
@@ -477,6 +685,11 @@ _OpenapiStorageAccount_Properties_ImmutableStorageWithVersioningFields = {
         kind="object",
         fields=_OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning_ImmutabilityPolicyFields,
     ),
+}
+
+_OpenapiStorageAccount_Properties_KeyCreationTimeFields = {
+    "key1": ubx.FieldSpec(wire_name="key1"),
+    "key2": ubx.FieldSpec(wire_name="key2"),
 }
 
 _OpenapiStorageAccount_Properties_KeyPolicyFields = {
@@ -524,6 +737,97 @@ _OpenapiStorageAccount_Properties_NetworkAclsFields = {
     ),
 }
 
+_OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpointsFields = {
+    "blob": ubx.FieldSpec(wire_name="blob"),
+    "dfs": ubx.FieldSpec(wire_name="dfs"),
+    "file": ubx.FieldSpec(wire_name="file"),
+    "web": ubx.FieldSpec(wire_name="web"),
+}
+
+_OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpointsFields = {
+    "blob": ubx.FieldSpec(wire_name="blob"),
+    "dfs": ubx.FieldSpec(wire_name="dfs"),
+    "file": ubx.FieldSpec(wire_name="file"),
+    "queue": ubx.FieldSpec(wire_name="queue"),
+    "table": ubx.FieldSpec(wire_name="table"),
+    "web": ubx.FieldSpec(wire_name="web"),
+}
+
+_OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6EndpointsFields = {
+    "blob": ubx.FieldSpec(wire_name="blob"),
+    "dfs": ubx.FieldSpec(wire_name="dfs"),
+    "file": ubx.FieldSpec(wire_name="file"),
+    "internet_endpoints": ubx.FieldSpec(
+        wire_name="internet_endpoints",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpointsFields,
+    ),
+    "microsoft_endpoints": ubx.FieldSpec(
+        wire_name="microsoft_endpoints",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpointsFields,
+    ),
+    "queue": ubx.FieldSpec(wire_name="queue"),
+    "table": ubx.FieldSpec(wire_name="table"),
+    "web": ubx.FieldSpec(wire_name="web"),
+}
+
+_OpenapiStorageAccount_Properties_PrimaryEndpointsFields = {
+    "blob": ubx.FieldSpec(wire_name="blob"),
+    "dfs": ubx.FieldSpec(wire_name="dfs"),
+    "file": ubx.FieldSpec(wire_name="file"),
+    "internet_endpoints": ubx.FieldSpec(
+        wire_name="internet_endpoints",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpointsFields,
+    ),
+    "ipv6_endpoints": ubx.FieldSpec(
+        wire_name="ipv6_endpoints",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6EndpointsFields,
+    ),
+    "microsoft_endpoints": ubx.FieldSpec(
+        wire_name="microsoft_endpoints",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpointsFields,
+    ),
+    "queue": ubx.FieldSpec(wire_name="queue"),
+    "table": ubx.FieldSpec(wire_name="table"),
+    "web": ubx.FieldSpec(wire_name="web"),
+}
+
+_OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = {
+    "id": ubx.FieldSpec(wire_name="id"),
+}
+
+_OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = {
+    "action_required": ubx.FieldSpec(wire_name="action_required"),
+    "description": ubx.FieldSpec(wire_name="description"),
+    "status": ubx.FieldSpec(wire_name="status"),
+}
+
+_OpenapiStorageAccount_Properties_PrivateEndpointConnections_PropertiesFields = {
+    "private_endpoint": ubx.FieldSpec(
+        wire_name="private_endpoint",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+    ),
+    "private_link_service_connection_state": ubx.FieldSpec(
+        wire_name="private_link_service_connection_state",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+}
+
+_OpenapiStorageAccount_Properties_PrivateEndpointConnectionsFields = {
+    "properties": ubx.FieldSpec(
+        wire_name="properties",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_PrivateEndpointConnections_PropertiesFields,
+    ),
+}
+
 _OpenapiStorageAccount_Properties_RoutingPreferenceFields = {
     "publish_internet_endpoints": ubx.FieldSpec(wire_name="publish_internet_endpoints"),
     "publish_microsoft_endpoints": ubx.FieldSpec(wire_name="publish_microsoft_endpoints"),
@@ -535,8 +839,16 @@ _OpenapiStorageAccount_Properties_SasPolicyFields = {
     "sas_expiration_period": ubx.FieldSpec(wire_name="sas_expiration_period"),
 }
 
+_OpenapiStorageAccount_Properties_StorageAccountSkuConversionStatusFields = {
+    "end_time": ubx.FieldSpec(wire_name="end_time"),
+    "sku_conversion_status": ubx.FieldSpec(wire_name="sku_conversion_status"),
+    "start_time": ubx.FieldSpec(wire_name="start_time"),
+    "target_sku_name": ubx.FieldSpec(wire_name="target_sku_name"),
+}
+
 _OpenapiStorageAccount_PropertiesFields = {
     "access_tier": ubx.FieldSpec(wire_name="access_tier"),
+    "account_migration_in_progress": ubx.FieldSpec(wire_name="account_migration_in_progress"),
     "allow_blob_public_access": ubx.FieldSpec(wire_name="allow_blob_public_access"),
     "allow_cross_tenant_replication": ubx.FieldSpec(wire_name="allow_cross_tenant_replication"),
     "allow_shared_key_access": ubx.FieldSpec(wire_name="allow_shared_key_access"),
@@ -551,6 +863,12 @@ _OpenapiStorageAccount_PropertiesFields = {
         kind="object",
         fields=_OpenapiStorageAccount_Properties_AzureFilesIdentityBasedAuthenticationFields,
     ),
+    "blob_restore_status": ubx.FieldSpec(
+        wire_name="blob_restore_status",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_BlobRestoreStatusFields,
+    ),
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
     "custom_domain": ubx.FieldSpec(
         wire_name="custom_domain",
         kind="object",
@@ -574,10 +892,16 @@ _OpenapiStorageAccount_PropertiesFields = {
         kind="object",
         fields=_OpenapiStorageAccount_Properties_EncryptionFields,
     ),
+    "failover_in_progress": ubx.FieldSpec(wire_name="failover_in_progress"),
     "geo_priority_replication_status": ubx.FieldSpec(
         wire_name="geo_priority_replication_status",
         kind="object",
         fields=_OpenapiStorageAccount_Properties_GeoPriorityReplicationStatusFields,
+    ),
+    "geo_replication_stats": ubx.FieldSpec(
+        wire_name="geo_replication_stats",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_GeoReplicationStatsFields,
     ),
     "immutable_storage_with_versioning": ubx.FieldSpec(
         wire_name="immutable_storage_with_versioning",
@@ -588,18 +912,37 @@ _OpenapiStorageAccount_PropertiesFields = {
     "is_local_user_enabled": ubx.FieldSpec(wire_name="is_local_user_enabled"),
     "is_nfs_v3_enabled": ubx.FieldSpec(wire_name="is_nfs_v3_enabled"),
     "is_sftp_enabled": ubx.FieldSpec(wire_name="is_sftp_enabled"),
+    "is_sku_conversion_blocked": ubx.FieldSpec(wire_name="is_sku_conversion_blocked"),
+    "key_creation_time": ubx.FieldSpec(
+        wire_name="key_creation_time",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_KeyCreationTimeFields,
+    ),
     "key_policy": ubx.FieldSpec(
         wire_name="key_policy",
         kind="object",
         fields=_OpenapiStorageAccount_Properties_KeyPolicyFields,
     ),
     "large_file_shares_state": ubx.FieldSpec(wire_name="large_file_shares_state"),
+    "last_geo_failover_time": ubx.FieldSpec(wire_name="last_geo_failover_time"),
     "minimum_tls_version": ubx.FieldSpec(wire_name="minimum_tls_version"),
     "network_acls": ubx.FieldSpec(
         wire_name="network_acls",
         kind="object",
         fields=_OpenapiStorageAccount_Properties_NetworkAclsFields,
     ),
+    "primary_endpoints": ubx.FieldSpec(
+        wire_name="primary_endpoints",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_PrimaryEndpointsFields,
+    ),
+    "primary_location": ubx.FieldSpec(wire_name="primary_location"),
+    "private_endpoint_connections": ubx.FieldSpec(
+        wire_name="private_endpoint_connections",
+        kind="list",
+        fields=_OpenapiStorageAccount_Properties_PrivateEndpointConnectionsFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
     "public_network_access": ubx.FieldSpec(wire_name="public_network_access"),
     "routing_preference": ubx.FieldSpec(
         wire_name="routing_preference",
@@ -610,6 +953,19 @@ _OpenapiStorageAccount_PropertiesFields = {
         wire_name="sas_policy",
         kind="object",
         fields=_OpenapiStorageAccount_Properties_SasPolicyFields,
+    ),
+    "secondary_endpoints": ubx.FieldSpec(
+        wire_name="secondary_endpoints",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_PrimaryEndpointsFields,
+    ),
+    "secondary_location": ubx.FieldSpec(wire_name="secondary_location"),
+    "status_of_primary": ubx.FieldSpec(wire_name="status_of_primary"),
+    "status_of_secondary": ubx.FieldSpec(wire_name="status_of_secondary"),
+    "storage_account_sku_conversion_status": ubx.FieldSpec(
+        wire_name="storage_account_sku_conversion_status",
+        kind="object",
+        fields=_OpenapiStorageAccount_Properties_StorageAccountSkuConversionStatusFields,
     ),
     "supports_https_traffic_only": ubx.FieldSpec(wire_name="supports_https_traffic_only"),
 }

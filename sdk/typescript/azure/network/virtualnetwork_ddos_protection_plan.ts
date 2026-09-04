@@ -36,8 +36,6 @@ const VirtualnetworkDdosProtectionPlan_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkDdosProtectionPlanConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** DDoS protection plan properties. */
   properties?: VirtualnetworkDdosProtectionPlan_Properties | Computed<VirtualnetworkDdosProtectionPlan_Properties>;
 }
@@ -52,7 +50,6 @@ export interface VirtualnetworkDdosProtectionPlanAttrs {
 export const VirtualnetworkDdosProtectionPlan: ResourceBinding<VirtualnetworkDdosProtectionPlanConfig, VirtualnetworkDdosProtectionPlanAttrs> = {
   wireType: "azure_network_virtualnetwork_ddos_protection_plan",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

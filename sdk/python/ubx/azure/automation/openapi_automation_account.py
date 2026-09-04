@@ -46,6 +46,26 @@ class OpenapiAutomationAccount_Properties_Encryption:
     key_vault_properties: Any = None
 
 @dataclasses.dataclass
+class OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    id: Any = None
+
+@dataclasses.dataclass
+class OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    actions_required: Any = None
+    description: Any = None
+    status: Any = None
+
+@dataclasses.dataclass
+class OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties:
+    group_ids: Any = None
+    private_endpoint: Any = None
+    private_link_service_connection_state: Any = None
+
+@dataclasses.dataclass
+class OpenapiAutomationAccount_Properties_PrivateEndpointConnections:
+    properties: Any = None
+
+@dataclasses.dataclass
 class OpenapiAutomationAccount_Properties_Sku:
     # Gets or sets the SKU capacity.
     capacity: Any = None
@@ -56,14 +76,28 @@ class OpenapiAutomationAccount_Properties_Sku:
 
 @dataclasses.dataclass
 class OpenapiAutomationAccount_Properties:
+    # URL of automation hybrid service which is used for hybrid worker on-boarding.
+    automation_hybrid_service_url: Any = None
+    # Gets the creation time.
+    creation_time: Any = None
+    # Gets or sets the description.
+    description: Any = None
     # Indicates whether requests using non-AAD authentication are blocked
     disable_local_auth: Any = None
     # The encryption settings for automation account
     encryption: Any = None
+    # Gets or sets the last modified by.
+    last_modified_by: Any = None
+    # Gets the last modified time.
+    last_modified_time: Any = None
+    # List of Automation operations supported by the Automation resource provider.
+    private_endpoint_connections: Any = None
     # Indicates whether traffic on the non-ARM endpoint (Webhook/Agent) is allowed from the public internet
     public_network_access: Any = None
     # The account SKU.
     sku: Any = None
+    # Gets status of account.
+    state: Any = None
 
 _OpenapiAutomationAccount_Identity_UserAssignedIdentitiesFields = {
     "client_id": ubx.FieldSpec(wire_name="client_id"),
@@ -105,6 +139,38 @@ _OpenapiAutomationAccount_Properties_EncryptionFields = {
     ),
 }
 
+_OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = {
+    "id": ubx.FieldSpec(wire_name="id"),
+}
+
+_OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = {
+    "actions_required": ubx.FieldSpec(wire_name="actions_required"),
+    "description": ubx.FieldSpec(wire_name="description"),
+    "status": ubx.FieldSpec(wire_name="status"),
+}
+
+_OpenapiAutomationAccount_Properties_PrivateEndpointConnections_PropertiesFields = {
+    "group_ids": ubx.FieldSpec(wire_name="group_ids"),
+    "private_endpoint": ubx.FieldSpec(
+        wire_name="private_endpoint",
+        kind="object",
+        fields=_OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+    ),
+    "private_link_service_connection_state": ubx.FieldSpec(
+        wire_name="private_link_service_connection_state",
+        kind="object",
+        fields=_OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+    ),
+}
+
+_OpenapiAutomationAccount_Properties_PrivateEndpointConnectionsFields = {
+    "properties": ubx.FieldSpec(
+        wire_name="properties",
+        kind="object",
+        fields=_OpenapiAutomationAccount_Properties_PrivateEndpointConnections_PropertiesFields,
+    ),
+}
+
 _OpenapiAutomationAccount_Properties_SkuFields = {
     "capacity": ubx.FieldSpec(wire_name="capacity"),
     "family": ubx.FieldSpec(wire_name="family"),
@@ -112,11 +178,21 @@ _OpenapiAutomationAccount_Properties_SkuFields = {
 }
 
 _OpenapiAutomationAccount_PropertiesFields = {
+    "automation_hybrid_service_url": ubx.FieldSpec(wire_name="automation_hybrid_service_url"),
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
+    "description": ubx.FieldSpec(wire_name="description"),
     "disable_local_auth": ubx.FieldSpec(wire_name="disable_local_auth"),
     "encryption": ubx.FieldSpec(
         wire_name="encryption",
         kind="object",
         fields=_OpenapiAutomationAccount_Properties_EncryptionFields,
+    ),
+    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
+    "private_endpoint_connections": ubx.FieldSpec(
+        wire_name="private_endpoint_connections",
+        kind="list",
+        fields=_OpenapiAutomationAccount_Properties_PrivateEndpointConnectionsFields,
     ),
     "public_network_access": ubx.FieldSpec(wire_name="public_network_access"),
     "sku": ubx.FieldSpec(
@@ -124,6 +200,7 @@ _OpenapiAutomationAccount_PropertiesFields = {
         kind="object",
         fields=_OpenapiAutomationAccount_Properties_SkuFields,
     ),
+    "state": ubx.FieldSpec(wire_name="state"),
 }
 
 @dataclasses.dataclass

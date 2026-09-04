@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type KafkaConfiguration_Value_Properties_Credentials struct {
 	IdentityId any
-	Type any
+	Type       any
 }
 
 type KafkaConfiguration_Value_Properties struct {
-	ConsumerGroup any
-	Credentials any
+	ConsumerGroup       any
+	Credentials         any
 	EventHubPartitionId any
-	EventHubResourceId any
-	EventHubType any
+	EventHubResourceId  any
+	EventHubType        any
 	EventStreamingState any
-	EventStreamingType any
+	EventStreamingType  any
 }
 
 type KafkaConfiguration_Value struct {
@@ -23,19 +23,19 @@ type KafkaConfiguration_Value struct {
 }
 
 type KafkaConfigurationConfig struct {
-	AccountName any
-	ApiVersion any
+	AccountName       any
+	ApiVersion        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type KafkaConfigurationAttrs struct {
 	AccountName any
-	ApiVersion any
+	ApiVersion  any
 	// The Url of next result page.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// Collection of items of type results.
 	Value any
 }
@@ -43,9 +43,9 @@ type KafkaConfigurationAttrs struct {
 var KafkaConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_purview_kafka_configuration",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"AccountName":       ubx.FieldSpec{WireName: "account_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

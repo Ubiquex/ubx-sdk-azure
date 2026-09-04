@@ -206,8 +206,6 @@ const OpenapiBlobContainer_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiBlobContainerConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** The properties of a container. */
   properties?: OpenapiBlobContainer_Properties | Computed<OpenapiBlobContainer_Properties>;
 }
@@ -222,7 +220,6 @@ export interface OpenapiBlobContainerAttrs {
 export const OpenapiBlobContainer: ResourceBinding<OpenapiBlobContainerConfig, OpenapiBlobContainerAttrs> = {
   wireType: "azure_storage_openapi_blob_container",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

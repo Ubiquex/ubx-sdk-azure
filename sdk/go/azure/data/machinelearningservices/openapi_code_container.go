@@ -17,7 +17,7 @@ type OpenapiCodeContainerConfig struct {
 
 type OpenapiCodeContainerAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	RegistryName any
 	// The CodeContainer items on this page
 	Value any

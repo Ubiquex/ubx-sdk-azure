@@ -239,8 +239,6 @@ const VirtualwanVpnSite_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanVpnSiteConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Parameters for VpnSite. */
   properties?: VirtualwanVpnSite_Properties | Computed<VirtualwanVpnSite_Properties>;
 }
@@ -255,7 +253,6 @@ export interface VirtualwanVpnSiteAttrs {
 export const VirtualwanVpnSite: ResourceBinding<VirtualwanVpnSiteConfig, VirtualwanVpnSiteAttrs> = {
   wireType: "azure_network_virtualwan_vpn_site",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

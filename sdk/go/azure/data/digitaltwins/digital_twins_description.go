@@ -9,41 +9,41 @@ type DigitalTwinsDescription_Value_Properties_PrivateEndpointConnections_Propert
 
 type DigitalTwinsDescription_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type DigitalTwinsDescription_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type DigitalTwinsDescription_Value_Properties_PrivateEndpointConnections_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type DigitalTwinsDescription_Value_Properties_PrivateEndpointConnections struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
 	SystemData any
-	Type any
+	Type       any
 }
 
 type DigitalTwinsDescription_Value_Properties struct {
-	CreatedTime any
-	HostName any
-	LastUpdatedTime any
+	CreatedTime                any
+	HostName                   any
+	LastUpdatedTime            any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
+	ProvisioningState          any
+	PublicNetworkAccess        any
 }
 
 type DigitalTwinsDescription_Value struct {
@@ -51,14 +51,14 @@ type DigitalTwinsDescription_Value struct {
 }
 
 type DigitalTwinsDescriptionConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type DigitalTwinsDescriptionAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of DigitalTwins description objects.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// A list of DigitalTwins description objects.
 	Value any
@@ -67,7 +67,7 @@ type DigitalTwinsDescriptionAttrs struct {
 var DigitalTwinsDescription = ubx.DataSourceBinding{
 	WireType: "azure_digitaltwins_digital_twins_description",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

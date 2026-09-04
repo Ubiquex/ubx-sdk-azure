@@ -6,27 +6,27 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiStaticSiteBuildArmresource_Value_Properties_DatabaseConnections_ConfigurationFiles struct {
 	Contents any
 	FileName any
-	Type any
+	Type     any
 }
 
 type OpenapiStaticSiteBuildArmresource_Value_Properties_DatabaseConnections struct {
 	ConfigurationFiles any
 	ConnectionIdentity any
-	Name any
-	Region any
-	ResourceId any
+	Name               any
+	Region             any
+	ResourceId         any
 }
 
 type OpenapiStaticSiteBuildArmresource_Value_Properties_LinkedBackends struct {
 	BackendResourceId any
-	CreatedOn any
+	CreatedOn         any
 	ProvisioningState any
-	Region any
+	Region            any
 }
 
 type OpenapiStaticSiteBuildArmresource_Value_Properties_UserProvidedFunctionApps_Properties struct {
-	CreatedOn any
-	FunctionAppRegion any
+	CreatedOn             any
+	FunctionAppRegion     any
 	FunctionAppResourceId any
 }
 
@@ -35,20 +35,20 @@ type OpenapiStaticSiteBuildArmresource_Value_Properties_UserProvidedFunctionApps
 }
 
 type OpenapiStaticSiteBuildArmresource_Value_Properties struct {
-	BuildId any
-	CreatedTimeUtc any
-	DatabaseConnections any
-	Hostname any
-	LastUpdatedOn any
-	LinkedBackends any
-	PullRequestTitle any
-	SourceBranch any
-	Status any
+	BuildId                  any
+	CreatedTimeUtc           any
+	DatabaseConnections      any
+	Hostname                 any
+	LastUpdatedOn            any
+	LinkedBackends           any
+	PullRequestTitle         any
+	SourceBranch             any
+	Status                   any
 	UserProvidedFunctionApps any
 }
 
 type OpenapiStaticSiteBuildArmresource_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

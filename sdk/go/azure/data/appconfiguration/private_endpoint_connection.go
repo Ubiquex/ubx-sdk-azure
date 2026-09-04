@@ -9,37 +9,37 @@ type PrivateEndpointConnection_Value_Properties_PrivateEndpoint struct {
 
 type PrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivateEndpointConnection_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type PrivateEndpointConnection_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type PrivateEndpointConnectionConfig struct {
-	ApiVersion any
-	ConfigStoreName any
+	ApiVersion        any
+	ConfigStoreName   any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type PrivateEndpointConnectionAttrs struct {
-	ApiVersion any
+	ApiVersion      any
 	ConfigStoreName any
 	// The URI that can be used to request the next set of paged results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The collection value.
 	Value any
 }
@@ -47,9 +47,9 @@ type PrivateEndpointConnectionAttrs struct {
 var PrivateEndpointConnection = ubx.DataSourceBinding{
 	WireType: "azure_appconfiguration_private_endpoint_connection",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ConfigStoreName": ubx.FieldSpec{WireName: "config_store_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ConfigStoreName":   ubx.FieldSpec{WireName: "config_store_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

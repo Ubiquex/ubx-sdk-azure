@@ -4,9 +4,9 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationServiceEnvironmentSkuDefinition_Value_Capacity struct {
-	Default any
-	Maximum any
-	Minimum any
+	Default   any
+	Maximum   any
+	Minimum   any
 	ScaleType any
 }
 
@@ -16,24 +16,24 @@ type IntegrationServiceEnvironmentSkuDefinition_Value_Sku struct {
 }
 
 type IntegrationServiceEnvironmentSkuDefinition_Value struct {
-	Capacity any
+	Capacity     any
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type IntegrationServiceEnvironmentSkuDefinitionConfig struct {
-	ApiVersion any
+	ApiVersion                        any
 	IntegrationServiceEnvironmentName any
-	ResourceGroup any
-	SubscriptionId any
+	ResourceGroup                     any
+	SubscriptionId                    any
 }
 
 type IntegrationServiceEnvironmentSkuDefinitionAttrs struct {
-	ApiVersion any
+	ApiVersion                        any
 	IntegrationServiceEnvironmentName any
 	// The URL to get the next set of results.
-	NextLink any
-	ResourceGroup any
+	NextLink       any
+	ResourceGroup  any
 	SubscriptionId any
 	// The list of integration service environment skus.
 	Value any
@@ -42,9 +42,9 @@ type IntegrationServiceEnvironmentSkuDefinitionAttrs struct {
 var IntegrationServiceEnvironmentSkuDefinition = ubx.DataSourceBinding{
 	WireType: "azure_logic_integration_service_environment_sku_definition",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":                        ubx.FieldSpec{WireName: "api_version"},
 		"IntegrationServiceEnvironmentName": ubx.FieldSpec{WireName: "integration_service_environment_name"},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroup":                     ubx.FieldSpec{WireName: "resource_group"},
+		"SubscriptionId":                    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

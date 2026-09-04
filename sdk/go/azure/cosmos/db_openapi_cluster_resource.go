@@ -13,9 +13,9 @@ type DbOpenapiClusterResource_Identity struct {
 }
 
 type DbOpenapiClusterResource_Properties_BackupSchedules struct {
-	CronExpression any
+	CronExpression   any
 	RetentionInHours any
-	ScheduleName any
+	ScheduleName     any
 }
 
 type DbOpenapiClusterResource_Properties_ClientCertificates struct {
@@ -74,8 +74,8 @@ type DbOpenapiClusterResource_Properties struct {
 	InitialCassandraAdminPassword any
 	// If the Connection Method is Vpn, this is the Id of the private link resource that the datacenters need to connect to.
 	PrivateLinkResourceId any
-	PrometheusEndpoint any
-	ProvisionError any
+	PrometheusEndpoint    any
+	ProvisionError        any
 	// The status of the resource at the time the operation was called.
 	ProvisioningState any
 	// Should automatic repairs run on this cluster? If omitted, this is true, and should stay true unless you are running a hybrid cluster where you are already doing your own repairs.
@@ -89,91 +89,91 @@ type DbOpenapiClusterResource_Properties struct {
 }
 
 var DbOpenapiClusterResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var DbOpenapiClusterResource_Properties_BackupSchedulesFields = ubx.FieldMap{
-		"CronExpression": ubx.FieldSpec{WireName: "cron_expression"},
-		"RetentionInHours": ubx.FieldSpec{WireName: "retention_in_hours"},
-		"ScheduleName": ubx.FieldSpec{WireName: "schedule_name"},
-	}
+	"CronExpression":   ubx.FieldSpec{WireName: "cron_expression"},
+	"RetentionInHours": ubx.FieldSpec{WireName: "retention_in_hours"},
+	"ScheduleName":     ubx.FieldSpec{WireName: "schedule_name"},
+}
 
 var DbOpenapiClusterResource_Properties_ClientCertificatesFields = ubx.FieldMap{
-		"Pem": ubx.FieldSpec{WireName: "pem"},
-	}
+	"Pem": ubx.FieldSpec{WireName: "pem"},
+}
 
 var DbOpenapiClusterResource_Properties_ExternalSeedNodesFields = ubx.FieldMap{
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-	}
+	"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
+}
 
 var DbOpenapiClusterResource_Properties_ProvisionErrorFields = ubx.FieldMap{
-		"AdditionalErrorInfo": ubx.FieldSpec{WireName: "additional_error_info"},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalErrorInfo": ubx.FieldSpec{WireName: "additional_error_info"},
+	"Code":                ubx.FieldSpec{WireName: "code"},
+	"Message":             ubx.FieldSpec{WireName: "message"},
+	"Target":              ubx.FieldSpec{WireName: "target"},
+}
 
 var DbOpenapiClusterResource_PropertiesFields = ubx.FieldMap{
-		"AuthenticationMethod": ubx.FieldSpec{WireName: "authentication_method"},
-		"AutoReplicate": ubx.FieldSpec{WireName: "auto_replicate"},
-		"AzureConnectionMethod": ubx.FieldSpec{WireName: "azure_connection_method"},
-		"BackupSchedules": ubx.FieldSpec{
-			WireName: "backup_schedules",
-			Kind: "list",
-			Fields: DbOpenapiClusterResource_Properties_BackupSchedulesFields,
-		},
-		"CassandraAuditLoggingEnabled": ubx.FieldSpec{WireName: "cassandra_audit_logging_enabled"},
-		"CassandraVersion": ubx.FieldSpec{WireName: "cassandra_version"},
-		"ClientCertificates": ubx.FieldSpec{
-			WireName: "client_certificates",
-			Kind: "list",
-			Fields: DbOpenapiClusterResource_Properties_ClientCertificatesFields,
-		},
-		"ClusterNameOverride": ubx.FieldSpec{WireName: "cluster_name_override"},
-		"Deallocated": ubx.FieldSpec{WireName: "deallocated"},
-		"DelegatedManagementSubnetId": ubx.FieldSpec{WireName: "delegated_management_subnet_id"},
-		"Extensions": ubx.FieldSpec{WireName: "extensions"},
-		"ExternalDataCenters": ubx.FieldSpec{WireName: "external_data_centers"},
-		"ExternalGossipCertificates": ubx.FieldSpec{
-			WireName: "external_gossip_certificates",
-			Kind: "list",
-			Fields: DbOpenapiClusterResource_Properties_ClientCertificatesFields,
-		},
-		"ExternalSeedNodes": ubx.FieldSpec{
-			WireName: "external_seed_nodes",
-			Kind: "list",
-			Fields: DbOpenapiClusterResource_Properties_ExternalSeedNodesFields,
-		},
-		"GossipCertificates": ubx.FieldSpec{
-			WireName: "gossip_certificates",
-			Kind: "list",
-			Fields: DbOpenapiClusterResource_Properties_ClientCertificatesFields,
-		},
-		"HoursBetweenBackups": ubx.FieldSpec{WireName: "hours_between_backups"},
-		"InitialCassandraAdminPassword": ubx.FieldSpec{WireName: "initial_cassandra_admin_password"},
-		"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
-		"PrometheusEndpoint": ubx.FieldSpec{
-			WireName: "prometheus_endpoint",
-			Kind: "object",
-			Fields: DbOpenapiClusterResource_Properties_ExternalSeedNodesFields,
-		},
-		"ProvisionError": ubx.FieldSpec{
-			WireName: "provision_error",
-			Kind: "object",
-			Fields: DbOpenapiClusterResource_Properties_ProvisionErrorFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RepairEnabled": ubx.FieldSpec{WireName: "repair_enabled"},
-		"RestoreFromBackupId": ubx.FieldSpec{WireName: "restore_from_backup_id"},
-		"ScheduledEventStrategy": ubx.FieldSpec{WireName: "scheduled_event_strategy"},
-		"SeedNodes": ubx.FieldSpec{
-			WireName: "seed_nodes",
-			Kind: "list",
-			Fields: DbOpenapiClusterResource_Properties_ExternalSeedNodesFields,
-		},
-	}
+	"AuthenticationMethod":  ubx.FieldSpec{WireName: "authentication_method"},
+	"AutoReplicate":         ubx.FieldSpec{WireName: "auto_replicate"},
+	"AzureConnectionMethod": ubx.FieldSpec{WireName: "azure_connection_method"},
+	"BackupSchedules": ubx.FieldSpec{
+		WireName: "backup_schedules",
+		Kind:     "list",
+		Fields:   DbOpenapiClusterResource_Properties_BackupSchedulesFields,
+	},
+	"CassandraAuditLoggingEnabled": ubx.FieldSpec{WireName: "cassandra_audit_logging_enabled"},
+	"CassandraVersion":             ubx.FieldSpec{WireName: "cassandra_version"},
+	"ClientCertificates": ubx.FieldSpec{
+		WireName: "client_certificates",
+		Kind:     "list",
+		Fields:   DbOpenapiClusterResource_Properties_ClientCertificatesFields,
+	},
+	"ClusterNameOverride":         ubx.FieldSpec{WireName: "cluster_name_override"},
+	"Deallocated":                 ubx.FieldSpec{WireName: "deallocated"},
+	"DelegatedManagementSubnetId": ubx.FieldSpec{WireName: "delegated_management_subnet_id"},
+	"Extensions":                  ubx.FieldSpec{WireName: "extensions"},
+	"ExternalDataCenters":         ubx.FieldSpec{WireName: "external_data_centers"},
+	"ExternalGossipCertificates": ubx.FieldSpec{
+		WireName: "external_gossip_certificates",
+		Kind:     "list",
+		Fields:   DbOpenapiClusterResource_Properties_ClientCertificatesFields,
+	},
+	"ExternalSeedNodes": ubx.FieldSpec{
+		WireName: "external_seed_nodes",
+		Kind:     "list",
+		Fields:   DbOpenapiClusterResource_Properties_ExternalSeedNodesFields,
+	},
+	"GossipCertificates": ubx.FieldSpec{
+		WireName: "gossip_certificates",
+		Kind:     "list",
+		Fields:   DbOpenapiClusterResource_Properties_ClientCertificatesFields,
+	},
+	"HoursBetweenBackups":           ubx.FieldSpec{WireName: "hours_between_backups"},
+	"InitialCassandraAdminPassword": ubx.FieldSpec{WireName: "initial_cassandra_admin_password"},
+	"PrivateLinkResourceId":         ubx.FieldSpec{WireName: "private_link_resource_id"},
+	"PrometheusEndpoint": ubx.FieldSpec{
+		WireName: "prometheus_endpoint",
+		Kind:     "object",
+		Fields:   DbOpenapiClusterResource_Properties_ExternalSeedNodesFields,
+	},
+	"ProvisionError": ubx.FieldSpec{
+		WireName: "provision_error",
+		Kind:     "object",
+		Fields:   DbOpenapiClusterResource_Properties_ProvisionErrorFields,
+	},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"RepairEnabled":          ubx.FieldSpec{WireName: "repair_enabled"},
+	"RestoreFromBackupId":    ubx.FieldSpec{WireName: "restore_from_backup_id"},
+	"ScheduledEventStrategy": ubx.FieldSpec{WireName: "scheduled_event_strategy"},
+	"SeedNodes": ubx.FieldSpec{
+		WireName: "seed_nodes",
+		Kind:     "list",
+		Fields:   DbOpenapiClusterResource_Properties_ExternalSeedNodesFields,
+	},
+}
 
 type DbOpenapiClusterResourceConfig struct {
 	// Identity for the resource.
@@ -202,14 +202,14 @@ var DbOpenapiClusterResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: DbOpenapiClusterResource_IdentityFields,
+			Kind:     "object",
+			Fields:   DbOpenapiClusterResource_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiClusterResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiClusterResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

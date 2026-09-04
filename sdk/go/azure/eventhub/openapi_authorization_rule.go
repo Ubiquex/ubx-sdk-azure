@@ -9,12 +9,10 @@ type OpenapiAuthorizationRule_Properties struct {
 }
 
 var OpenapiAuthorizationRule_PropertiesFields = ubx.FieldMap{
-		"Rights": ubx.FieldSpec{WireName: "rights"},
-	}
+	"Rights": ubx.FieldSpec{WireName: "rights"},
+}
 
 type OpenapiAuthorizationRuleConfig struct {
-	// The geo-location where the resource lives
-	Location any
 	// Properties supplied to create or update AuthorizationRule
 	Properties any
 }
@@ -29,11 +27,10 @@ type OpenapiAuthorizationRuleAttrs struct {
 var OpenapiAuthorizationRule = ubx.ResourceBinding{
 	WireType: "azure_eventhub_openapi_authorization_rule",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAuthorizationRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAuthorizationRule_PropertiesFields,
 		},
 	},
 }

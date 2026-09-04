@@ -3,18 +3,15 @@ import type { Computed, FieldMap, DataSourceBinding } from "@ubx/sdk";
 
 export interface OpenapiVirtualNetworkConnectionConfig {
   name: string | Computed<string>;
-  vnetName: string | Computed<string>;
 }
 
 export interface OpenapiVirtualNetworkConnectionAttrs {
   name: string;
-  vnetName: string;
 }
 
 export const OpenapiVirtualNetworkConnection: DataSourceBinding<OpenapiVirtualNetworkConnectionConfig, OpenapiVirtualNetworkConnectionAttrs> = {
   wireType: "azure_web_openapi_virtual_network_connection",
   fields: {
     name: "name",
-    vnetName: "vnet_name",
   },
 };

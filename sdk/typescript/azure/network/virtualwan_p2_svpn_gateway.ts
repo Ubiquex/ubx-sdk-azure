@@ -300,8 +300,6 @@ const VirtualwanP2SvpnGateway_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanP2SvpnGatewayConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Parameters for P2SVpnGateway. */
   properties?: VirtualwanP2SvpnGateway_Properties | Computed<VirtualwanP2SvpnGateway_Properties>;
 }
@@ -316,7 +314,6 @@ export interface VirtualwanP2SvpnGatewayAttrs {
 export const VirtualwanP2SvpnGateway: ResourceBinding<VirtualwanP2SvpnGatewayConfig, VirtualwanP2SvpnGatewayAttrs> = {
   wireType: "azure_network_virtualwan_p2_svpn_gateway",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

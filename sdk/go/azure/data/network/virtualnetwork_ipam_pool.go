@@ -4,37 +4,37 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkIpamPool_Value_Properties struct {
-	AddressPrefixes any
-	Description any
-	DisplayName any
-	IpAddressType any
-	ParentPoolName any
+	AddressPrefixes   any
+	Description       any
+	DisplayName       any
+	IpAddressType     any
+	ParentPoolName    any
 	ProvisioningState any
 }
 
 type VirtualnetworkIpamPool_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualnetworkIpamPoolConfig struct {
 	NetworkManagerName any
-	Skip any
-	SkipToken any
-	SortKey any
-	SortValue any
-	Top any
+	Skip               any
+	SkipToken          any
+	SortKey            any
+	SortValue          any
+	Top                any
 }
 
 type VirtualnetworkIpamPoolAttrs struct {
 	NetworkManagerName any
 	// The link to the next page of items
-	NextLink any
-	Skip any
+	NextLink  any
+	Skip      any
 	SkipToken any
-	SortKey any
+	SortKey   any
 	SortValue any
-	Top any
+	Top       any
 	// The IpamPool items on this page
 	Value any
 }
@@ -43,10 +43,10 @@ var VirtualnetworkIpamPool = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_ipam_pool",
 	Fields: ubx.FieldMap{
 		"NetworkManagerName": ubx.FieldSpec{WireName: "network_manager_name"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"SkipToken": ubx.FieldSpec{WireName: "skip_token"},
-		"SortKey": ubx.FieldSpec{WireName: "sort_key"},
-		"SortValue": ubx.FieldSpec{WireName: "sort_value"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"SkipToken":          ubx.FieldSpec{WireName: "skip_token"},
+		"SortKey":            ubx.FieldSpec{WireName: "sort_key"},
+		"SortValue":          ubx.FieldSpec{WireName: "sort_value"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

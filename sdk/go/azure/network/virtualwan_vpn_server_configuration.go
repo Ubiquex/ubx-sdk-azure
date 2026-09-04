@@ -17,128 +17,128 @@ type VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Prope
 }
 
 type VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_PolicyMembers struct {
-	AttributeType any
+	AttributeType  any
 	AttributeValue any
-	Name any
+	Name           any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties struct {
-	IsDefault any
+	IsDefault                   any
 	P2SconnectionConfigurations any
-	PolicyMembers any
-	Priority any
-	ProvisioningState any
+	PolicyMembers               any
+	Priority                    any
+	ProvisioningState           any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids any
+	Ids    any
 	Labels any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes any
+	PropagateStaticRoutes          any
 	VnetLocalRouteOverrideCriteria any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections any
-	StaticRoutes any
+	BgpConnections     any
+	StaticRoutes       any
 	StaticRoutesConfig any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable any
-	InboundRouteMap any
-	OutboundRouteMap any
+	AssociatedRouteTable  any
+	InboundRouteMap       any
+	OutboundRouteMap      any
 	PropagatedRouteTables any
-	VnetRoutes any
+	VnetRoutes            any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool struct {
-	AddressPrefixes any
+	AddressPrefixes           any
 	IpamPoolPrefixAllocations any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties struct {
-	ConfigurationPolicyGroupAssociations any
-	EnableInternetSecurity any
+	ConfigurationPolicyGroupAssociations         any
+	EnableInternetSecurity                       any
 	PreviousConfigurationPolicyGroupAssociations any
-	ProvisioningState any
-	RoutingConfiguration any
-	VpnClientAddressPool any
+	ProvisioningState                            any
+	RoutingConfiguration                         any
+	VpnClientAddressPool                         any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_VpnClientConnectionHealth struct {
-	AllocatedIpAddresses any
-	TotalEgressBytesTransferred any
+	AllocatedIpAddresses         any
+	TotalEgressBytesTransferred  any
 	TotalIngressBytesTransferred any
-	VpnClientConnectionsCount any
+	VpnClientConnectionsCount    any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties struct {
-	CustomDnsServers any
+	CustomDnsServers            any
 	IsRoutingPreferenceInternet any
 	P2SconnectionConfigurations any
-	ProvisioningState any
-	VirtualHub any
-	VpnClientConnectionHealth any
-	VpnGatewayScaleUnit any
-	VpnServerConfiguration any
+	ProvisioningState           any
+	VirtualHub                  any
+	VpnClientConnectionHealth   any
+	VpnGatewayScaleUnit         any
+	VpnServerConfiguration      any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_RadiusClientRootCertificates struct {
-	Name any
+	Name       any
 	Thumbprint any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_RadiusServerRootCertificates struct {
-	Name any
+	Name           any
 	PublicCertData any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_RadiusServers struct {
 	RadiusServerAddress any
-	RadiusServerScore any
-	RadiusServerSecret any
+	RadiusServerScore   any
+	RadiusServerSecret  any
 }
 
 type VirtualwanVpnServerConfiguration_Properties_VpnClientIpsecPolicies struct {
-	DhGroup any
-	IkeEncryption any
-	IkeIntegrity any
-	IpsecEncryption any
-	IpsecIntegrity any
-	PfsGroup any
+	DhGroup             any
+	IkeEncryption       any
+	IkeIntegrity        any
+	IpsecEncryption     any
+	IpsecIntegrity      any
+	PfsGroup            any
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds any
+	SaLifeTimeSeconds   any
 }
 
 type VirtualwanVpnServerConfiguration_Properties struct {
@@ -177,294 +177,292 @@ type VirtualwanVpnServerConfiguration_Properties struct {
 }
 
 var VirtualwanVpnServerConfiguration_Properties_AadAuthenticationParametersFields = ubx.FieldMap{
-		"AadAudience": ubx.FieldSpec{WireName: "aad_audience"},
-		"AadIssuer": ubx.FieldSpec{WireName: "aad_issuer"},
-		"AadTenant": ubx.FieldSpec{WireName: "aad_tenant"},
-	}
+	"AadAudience": ubx.FieldSpec{WireName: "aad_audience"},
+	"AadIssuer":   ubx.FieldSpec{WireName: "aad_issuer"},
+	"AadTenant":   ubx.FieldSpec{WireName: "aad_tenant"},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_PolicyMembersFields = ubx.FieldMap{
-		"AttributeType": ubx.FieldSpec{WireName: "attribute_type"},
-		"AttributeValue": ubx.FieldSpec{WireName: "attribute_value"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AttributeType":  ubx.FieldSpec{WireName: "attribute_type"},
+	"AttributeValue": ubx.FieldSpec{WireName: "attribute_value"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_PropertiesFields = ubx.FieldMap{
-		"IsDefault": ubx.FieldSpec{WireName: "is_default"},
-		"P2SconnectionConfigurations": ubx.FieldSpec{
-			WireName: "p2_sconnection_configurations",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
-		},
-		"PolicyMembers": ubx.FieldSpec{
-			WireName: "policy_members",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_PolicyMembersFields,
-		},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"IsDefault": ubx.FieldSpec{WireName: "is_default"},
+	"P2SconnectionConfigurations": ubx.FieldSpec{
+		WireName: "p2_sconnection_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
+	},
+	"PolicyMembers": ubx.FieldSpec{
+		WireName: "policy_members",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_PolicyMembersFields,
+	},
+	"Priority":          ubx.FieldSpec{WireName: "priority"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroupsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_PropertiesFields,
+	},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_PropagatedRouteTablesFields = ubx.FieldMap{
-		"Ids": ubx.FieldSpec{
-			WireName: "ids",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
-		},
-		"Labels": ubx.FieldSpec{WireName: "labels"},
-	}
+	"Ids": ubx.FieldSpec{
+		WireName: "ids",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
+	},
+	"Labels": ubx.FieldSpec{WireName: "labels"},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
-	}
+	"AddressPrefixes":  ubx.FieldSpec{WireName: "address_prefixes"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+	"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields = ubx.FieldMap{
-		"PropagateStaticRoutes": ubx.FieldSpec{WireName: "propagate_static_routes"},
-		"VnetLocalRouteOverrideCriteria": ubx.FieldSpec{WireName: "vnet_local_route_override_criteria"},
-	}
+	"PropagateStaticRoutes":          ubx.FieldSpec{WireName: "propagate_static_routes"},
+	"VnetLocalRouteOverrideCriteria": ubx.FieldSpec{WireName: "vnet_local_route_override_criteria"},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutesFields = ubx.FieldMap{
-		"BgpConnections": ubx.FieldSpec{
-			WireName: "bgp_connections",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
-		},
-		"StaticRoutes": ubx.FieldSpec{
-			WireName: "static_routes",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields,
-		},
-		"StaticRoutesConfig": ubx.FieldSpec{
-			WireName: "static_routes_config",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields,
-		},
-	}
+	"BgpConnections": ubx.FieldSpec{
+		WireName: "bgp_connections",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
+	},
+	"StaticRoutes": ubx.FieldSpec{
+		WireName: "static_routes",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields,
+	},
+	"StaticRoutesConfig": ubx.FieldSpec{
+		WireName: "static_routes_config",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields,
+	},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfigurationFields = ubx.FieldMap{
-		"AssociatedRouteTable": ubx.FieldSpec{
-			WireName: "associated_route_table",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
-		},
-		"InboundRouteMap": ubx.FieldSpec{
-			WireName: "inbound_route_map",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
-		},
-		"OutboundRouteMap": ubx.FieldSpec{
-			WireName: "outbound_route_map",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
-		},
-		"PropagatedRouteTables": ubx.FieldSpec{
-			WireName: "propagated_route_tables",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_PropagatedRouteTablesFields,
-		},
-		"VnetRoutes": ubx.FieldSpec{
-			WireName: "vnet_routes",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutesFields,
-		},
-	}
+	"AssociatedRouteTable": ubx.FieldSpec{
+		WireName: "associated_route_table",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
+	},
+	"InboundRouteMap": ubx.FieldSpec{
+		WireName: "inbound_route_map",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
+	},
+	"OutboundRouteMap": ubx.FieldSpec{
+		WireName: "outbound_route_map",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
+	},
+	"PropagatedRouteTables": ubx.FieldSpec{
+		WireName: "propagated_route_tables",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_PropagatedRouteTablesFields,
+	},
+	"VnetRoutes": ubx.FieldSpec{
+		WireName: "vnet_routes",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutesFields,
+	},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool_IpamPoolPrefixAllocationsFields = ubx.FieldMap{
-		"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
-		"NumberOfIpAddresses": ubx.FieldSpec{WireName: "number_of_ip_addresses"},
-		"Pool": ubx.FieldSpec{
-			WireName: "pool",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
-		},
-	}
+	"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
+	"NumberOfIpAddresses":      ubx.FieldSpec{WireName: "number_of_ip_addresses"},
+	"Pool": ubx.FieldSpec{
+		WireName: "pool",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
+	},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPoolFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool_IpamPoolPrefixAllocationsFields,
-		},
-	}
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool_IpamPoolPrefixAllocationsFields,
+	},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_PropertiesFields = ubx.FieldMap{
-		"ConfigurationPolicyGroupAssociations": ubx.FieldSpec{
-			WireName: "configuration_policy_group_associations",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
-		},
-		"EnableInternetSecurity": ubx.FieldSpec{WireName: "enable_internet_security"},
-		"PreviousConfigurationPolicyGroupAssociations": ubx.FieldSpec{
-			WireName: "previous_configuration_policy_group_associations",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroupsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RoutingConfiguration": ubx.FieldSpec{
-			WireName: "routing_configuration",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfigurationFields,
-		},
-		"VpnClientAddressPool": ubx.FieldSpec{
-			WireName: "vpn_client_address_pool",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPoolFields,
-		},
-	}
+	"ConfigurationPolicyGroupAssociations": ubx.FieldSpec{
+		WireName: "configuration_policy_group_associations",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
+	},
+	"EnableInternetSecurity": ubx.FieldSpec{WireName: "enable_internet_security"},
+	"PreviousConfigurationPolicyGroupAssociations": ubx.FieldSpec{
+		WireName: "previous_configuration_policy_group_associations",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroupsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RoutingConfiguration": ubx.FieldSpec{
+		WireName: "routing_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfigurationFields,
+	},
+	"VpnClientAddressPool": ubx.FieldSpec{
+		WireName: "vpn_client_address_pool",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPoolFields,
+	},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_PropertiesFields,
+	},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_VpnClientConnectionHealthFields = ubx.FieldMap{
-		"AllocatedIpAddresses": ubx.FieldSpec{WireName: "allocated_ip_addresses"},
-		"TotalEgressBytesTransferred": ubx.FieldSpec{WireName: "total_egress_bytes_transferred"},
-		"TotalIngressBytesTransferred": ubx.FieldSpec{WireName: "total_ingress_bytes_transferred"},
-		"VpnClientConnectionsCount": ubx.FieldSpec{WireName: "vpn_client_connections_count"},
-	}
+	"AllocatedIpAddresses":         ubx.FieldSpec{WireName: "allocated_ip_addresses"},
+	"TotalEgressBytesTransferred":  ubx.FieldSpec{WireName: "total_egress_bytes_transferred"},
+	"TotalIngressBytesTransferred": ubx.FieldSpec{WireName: "total_ingress_bytes_transferred"},
+	"VpnClientConnectionsCount":    ubx.FieldSpec{WireName: "vpn_client_connections_count"},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_PropertiesFields = ubx.FieldMap{
-		"CustomDnsServers": ubx.FieldSpec{WireName: "custom_dns_servers"},
-		"IsRoutingPreferenceInternet": ubx.FieldSpec{WireName: "is_routing_preference_internet"},
-		"P2SconnectionConfigurations": ubx.FieldSpec{
-			WireName: "p2_sconnection_configurations",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualHub": ubx.FieldSpec{
-			WireName: "virtual_hub",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
-		},
-		"VpnClientConnectionHealth": ubx.FieldSpec{
-			WireName: "vpn_client_connection_health",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_VpnClientConnectionHealthFields,
-		},
-		"VpnGatewayScaleUnit": ubx.FieldSpec{WireName: "vpn_gateway_scale_unit"},
-		"VpnServerConfiguration": ubx.FieldSpec{
-			WireName: "vpn_server_configuration",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
-		},
-	}
+	"CustomDnsServers":            ubx.FieldSpec{WireName: "custom_dns_servers"},
+	"IsRoutingPreferenceInternet": ubx.FieldSpec{WireName: "is_routing_preference_internet"},
+	"P2SconnectionConfigurations": ubx.FieldSpec{
+		WireName: "p2_sconnection_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualHub": ubx.FieldSpec{
+		WireName: "virtual_hub",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
+	},
+	"VpnClientConnectionHealth": ubx.FieldSpec{
+		WireName: "vpn_client_connection_health",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_Properties_VpnClientConnectionHealthFields,
+	},
+	"VpnGatewayScaleUnit": ubx.FieldSpec{WireName: "vpn_gateway_scale_unit"},
+	"VpnServerConfiguration": ubx.FieldSpec{
+		WireName: "vpn_server_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurationsFields,
+	},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_P2SvpnGatewaysFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGateways_PropertiesFields,
+	},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_RadiusClientRootCertificatesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"Name":       ubx.FieldSpec{WireName: "name"},
+	"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_RadiusServerRootCertificatesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"PublicCertData": ubx.FieldSpec{WireName: "public_cert_data"},
-	}
+	"Name":           ubx.FieldSpec{WireName: "name"},
+	"PublicCertData": ubx.FieldSpec{WireName: "public_cert_data"},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_RadiusServersFields = ubx.FieldMap{
-		"RadiusServerAddress": ubx.FieldSpec{WireName: "radius_server_address"},
-		"RadiusServerScore": ubx.FieldSpec{WireName: "radius_server_score"},
-		"RadiusServerSecret": ubx.FieldSpec{WireName: "radius_server_secret"},
-	}
+	"RadiusServerAddress": ubx.FieldSpec{WireName: "radius_server_address"},
+	"RadiusServerScore":   ubx.FieldSpec{WireName: "radius_server_score"},
+	"RadiusServerSecret":  ubx.FieldSpec{WireName: "radius_server_secret"},
+}
 
 var VirtualwanVpnServerConfiguration_Properties_VpnClientIpsecPoliciesFields = ubx.FieldMap{
-		"DhGroup": ubx.FieldSpec{WireName: "dh_group"},
-		"IkeEncryption": ubx.FieldSpec{WireName: "ike_encryption"},
-		"IkeIntegrity": ubx.FieldSpec{WireName: "ike_integrity"},
-		"IpsecEncryption": ubx.FieldSpec{WireName: "ipsec_encryption"},
-		"IpsecIntegrity": ubx.FieldSpec{WireName: "ipsec_integrity"},
-		"PfsGroup": ubx.FieldSpec{WireName: "pfs_group"},
-		"SaDataSizeKilobytes": ubx.FieldSpec{WireName: "sa_data_size_kilobytes"},
-		"SaLifeTimeSeconds": ubx.FieldSpec{WireName: "sa_life_time_seconds"},
-	}
+	"DhGroup":             ubx.FieldSpec{WireName: "dh_group"},
+	"IkeEncryption":       ubx.FieldSpec{WireName: "ike_encryption"},
+	"IkeIntegrity":        ubx.FieldSpec{WireName: "ike_integrity"},
+	"IpsecEncryption":     ubx.FieldSpec{WireName: "ipsec_encryption"},
+	"IpsecIntegrity":      ubx.FieldSpec{WireName: "ipsec_integrity"},
+	"PfsGroup":            ubx.FieldSpec{WireName: "pfs_group"},
+	"SaDataSizeKilobytes": ubx.FieldSpec{WireName: "sa_data_size_kilobytes"},
+	"SaLifeTimeSeconds":   ubx.FieldSpec{WireName: "sa_life_time_seconds"},
+}
 
 var VirtualwanVpnServerConfiguration_PropertiesFields = ubx.FieldMap{
-		"AadAuthenticationParameters": ubx.FieldSpec{
-			WireName: "aad_authentication_parameters",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_Properties_AadAuthenticationParametersFields,
-		},
-		"ConfigurationPolicyGroups": ubx.FieldSpec{
-			WireName: "configuration_policy_groups",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroupsFields,
-		},
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"P2SvpnGateways": ubx.FieldSpec{
-			WireName: "p2_svpn_gateways",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_P2SvpnGatewaysFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RadiusClientRootCertificates": ubx.FieldSpec{
-			WireName: "radius_client_root_certificates",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_RadiusClientRootCertificatesFields,
-		},
-		"RadiusServerAddress": ubx.FieldSpec{WireName: "radius_server_address"},
-		"RadiusServerRootCertificates": ubx.FieldSpec{
-			WireName: "radius_server_root_certificates",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_RadiusServerRootCertificatesFields,
-		},
-		"RadiusServerSecret": ubx.FieldSpec{WireName: "radius_server_secret"},
-		"RadiusServers": ubx.FieldSpec{
-			WireName: "radius_servers",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_RadiusServersFields,
-		},
-		"VpnAuthenticationTypes": ubx.FieldSpec{WireName: "vpn_authentication_types"},
-		"VpnClientIpsecPolicies": ubx.FieldSpec{
-			WireName: "vpn_client_ipsec_policies",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_VpnClientIpsecPoliciesFields,
-		},
-		"VpnClientRevokedCertificates": ubx.FieldSpec{
-			WireName: "vpn_client_revoked_certificates",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_RadiusClientRootCertificatesFields,
-		},
-		"VpnClientRootCertificates": ubx.FieldSpec{
-			WireName: "vpn_client_root_certificates",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfiguration_Properties_RadiusServerRootCertificatesFields,
-		},
-		"VpnProtocols": ubx.FieldSpec{WireName: "vpn_protocols"},
-	}
+	"AadAuthenticationParameters": ubx.FieldSpec{
+		WireName: "aad_authentication_parameters",
+		Kind:     "object",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_AadAuthenticationParametersFields,
+	},
+	"ConfigurationPolicyGroups": ubx.FieldSpec{
+		WireName: "configuration_policy_groups",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_ConfigurationPolicyGroupsFields,
+	},
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"P2SvpnGateways": ubx.FieldSpec{
+		WireName: "p2_svpn_gateways",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_P2SvpnGatewaysFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RadiusClientRootCertificates": ubx.FieldSpec{
+		WireName: "radius_client_root_certificates",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_RadiusClientRootCertificatesFields,
+	},
+	"RadiusServerAddress": ubx.FieldSpec{WireName: "radius_server_address"},
+	"RadiusServerRootCertificates": ubx.FieldSpec{
+		WireName: "radius_server_root_certificates",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_RadiusServerRootCertificatesFields,
+	},
+	"RadiusServerSecret": ubx.FieldSpec{WireName: "radius_server_secret"},
+	"RadiusServers": ubx.FieldSpec{
+		WireName: "radius_servers",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_RadiusServersFields,
+	},
+	"VpnAuthenticationTypes": ubx.FieldSpec{WireName: "vpn_authentication_types"},
+	"VpnClientIpsecPolicies": ubx.FieldSpec{
+		WireName: "vpn_client_ipsec_policies",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_VpnClientIpsecPoliciesFields,
+	},
+	"VpnClientRevokedCertificates": ubx.FieldSpec{
+		WireName: "vpn_client_revoked_certificates",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_RadiusClientRootCertificatesFields,
+	},
+	"VpnClientRootCertificates": ubx.FieldSpec{
+		WireName: "vpn_client_root_certificates",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfiguration_Properties_RadiusServerRootCertificatesFields,
+	},
+	"VpnProtocols": ubx.FieldSpec{WireName: "vpn_protocols"},
+}
 
 type VirtualwanVpnServerConfigurationConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Parameters for VpnServerConfiguration.
 	Properties any
 }
@@ -479,11 +477,10 @@ type VirtualwanVpnServerConfigurationAttrs struct {
 var VirtualwanVpnServerConfiguration = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_vpn_server_configuration",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanVpnServerConfiguration_PropertiesFields,
 		},
 	},
 }

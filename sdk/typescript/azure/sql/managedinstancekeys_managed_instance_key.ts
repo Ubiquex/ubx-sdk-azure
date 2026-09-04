@@ -23,8 +23,6 @@ const ManagedinstancekeysManagedInstanceKey_PropertiesFields: FieldMap = {
 };
 
 export interface ManagedinstancekeysManagedInstanceKeyConfig {
-  /** Kind of encryption protector. This is metadata used for the Azure portal experience. */
-  kind?: string | Computed<string>;
   /** Properties for a key execution. */
   properties?: ManagedinstancekeysManagedInstanceKey_Properties | Computed<ManagedinstancekeysManagedInstanceKey_Properties>;
 }
@@ -39,7 +37,6 @@ export interface ManagedinstancekeysManagedInstanceKeyAttrs {
 export const ManagedinstancekeysManagedInstanceKey: ResourceBinding<ManagedinstancekeysManagedInstanceKeyConfig, ManagedinstancekeysManagedInstanceKeyAttrs> = {
   wireType: "azure_sql_managedinstancekeys_managed_instance_key",
   fields: {
-    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",

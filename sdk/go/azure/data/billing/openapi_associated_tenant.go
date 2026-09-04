@@ -4,41 +4,41 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAssociatedTenant_Value_Properties struct {
-	BillingManagementState any
-	DisplayName any
+	BillingManagementState       any
+	DisplayName                  any
 	ProvisioningBillingRequestId any
-	ProvisioningManagementState any
-	ProvisioningState any
-	TenantId any
+	ProvisioningManagementState  any
+	ProvisioningState            any
+	TenantId                     any
 }
 
 type OpenapiAssociatedTenant_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiAssociatedTenantConfig struct {
 	BillingAccountName any
-	Count any
-	Filter any
-	IncludeRevoked any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	Count              any
+	Filter             any
+	IncludeRevoked     any
+	OrderBy            any
+	Search             any
+	Skip               any
+	Top                any
 }
 
 type OpenapiAssociatedTenantAttrs struct {
 	BillingAccountName any
-	Count any
-	Filter any
-	IncludeRevoked any
+	Count              any
+	Filter             any
+	IncludeRevoked     any
 	// The link to the next page of items
 	NextLink any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	OrderBy  any
+	Search   any
+	Skip     any
+	Top      any
 	// The AssociatedTenant items on this page
 	Value any
 }
@@ -47,12 +47,12 @@ var OpenapiAssociatedTenant = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_associated_tenant",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"IncludeRevoked": ubx.FieldSpec{WireName: "include_revoked"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Count":              ubx.FieldSpec{WireName: "count"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"IncludeRevoked":     ubx.FieldSpec{WireName: "include_revoked"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

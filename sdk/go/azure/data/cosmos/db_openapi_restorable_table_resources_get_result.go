@@ -4,23 +4,23 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiRestorableTableResourcesGetResult_Value struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type DbOpenapiRestorableTableResourcesGetResultConfig struct {
-	InstanceId any
-	Location any
-	RestoreLocation any
+	InstanceId            any
+	Location              any
+	RestoreLocation       any
 	RestoreTimestampInUtc any
 }
 
 type DbOpenapiRestorableTableResourcesGetResultAttrs struct {
-	InstanceId any
-	Location any
-	NextLink any
-	RestoreLocation any
+	InstanceId            any
+	Location              any
+	NextLink              any
+	RestoreLocation       any
 	RestoreTimestampInUtc any
 	// List of restorable table names.
 	Value any
@@ -29,9 +29,9 @@ type DbOpenapiRestorableTableResourcesGetResultAttrs struct {
 var DbOpenapiRestorableTableResourcesGetResult = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_restorable_table_resources_get_result",
 	Fields: ubx.FieldMap{
-		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"RestoreLocation": ubx.FieldSpec{WireName: "restore_location"},
+		"InstanceId":            ubx.FieldSpec{WireName: "instance_id"},
+		"Location":              ubx.FieldSpec{WireName: "location"},
+		"RestoreLocation":       ubx.FieldSpec{WireName: "restore_location"},
 		"RestoreTimestampInUtc": ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
 	},
 }

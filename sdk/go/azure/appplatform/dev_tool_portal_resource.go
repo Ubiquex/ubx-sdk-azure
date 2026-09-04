@@ -4,19 +4,19 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DevToolPortalResource_Properties_Components_Instances struct {
-	Name any
+	Name   any
 	Status any
 }
 
 type DevToolPortalResource_Properties_Components_ResourceRequests struct {
-	Cpu any
+	Cpu           any
 	InstanceCount any
-	Memory any
+	Memory        any
 }
 
 type DevToolPortalResource_Properties_Components struct {
-	Instances any
-	Name any
+	Instances        any
+	Name             any
 	ResourceRequests any
 }
 
@@ -61,75 +61,75 @@ type DevToolPortalResource_Properties struct {
 }
 
 var DevToolPortalResource_Properties_Components_InstancesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var DevToolPortalResource_Properties_Components_ResourceRequestsFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":           ubx.FieldSpec{WireName: "cpu"},
+	"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
+	"Memory":        ubx.FieldSpec{WireName: "memory"},
+}
 
 var DevToolPortalResource_Properties_ComponentsFields = ubx.FieldMap{
-		"Instances": ubx.FieldSpec{
-			WireName: "instances",
-			Kind: "list",
-			Fields: DevToolPortalResource_Properties_Components_InstancesFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ResourceRequests": ubx.FieldSpec{
-			WireName: "resource_requests",
-			Kind: "object",
-			Fields: DevToolPortalResource_Properties_Components_ResourceRequestsFields,
-		},
-	}
+	"Instances": ubx.FieldSpec{
+		WireName: "instances",
+		Kind:     "list",
+		Fields:   DevToolPortalResource_Properties_Components_InstancesFields,
+	},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"ResourceRequests": ubx.FieldSpec{
+		WireName: "resource_requests",
+		Kind:     "object",
+		Fields:   DevToolPortalResource_Properties_Components_ResourceRequestsFields,
+	},
+}
 
 var DevToolPortalResource_Properties_Features_ApplicationAcceleratorFields = ubx.FieldMap{
-		"Route": ubx.FieldSpec{WireName: "route"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"Route": ubx.FieldSpec{WireName: "route"},
+	"State": ubx.FieldSpec{WireName: "state"},
+}
 
 var DevToolPortalResource_Properties_FeaturesFields = ubx.FieldMap{
-		"ApplicationAccelerator": ubx.FieldSpec{
-			WireName: "application_accelerator",
-			Kind: "object",
-			Fields: DevToolPortalResource_Properties_Features_ApplicationAcceleratorFields,
-		},
-		"ApplicationLiveView": ubx.FieldSpec{
-			WireName: "application_live_view",
-			Kind: "object",
-			Fields: DevToolPortalResource_Properties_Features_ApplicationAcceleratorFields,
-		},
-	}
+	"ApplicationAccelerator": ubx.FieldSpec{
+		WireName: "application_accelerator",
+		Kind:     "object",
+		Fields:   DevToolPortalResource_Properties_Features_ApplicationAcceleratorFields,
+	},
+	"ApplicationLiveView": ubx.FieldSpec{
+		WireName: "application_live_view",
+		Kind:     "object",
+		Fields:   DevToolPortalResource_Properties_Features_ApplicationAcceleratorFields,
+	},
+}
 
 var DevToolPortalResource_Properties_SsoPropertiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-		"MetadataUrl": ubx.FieldSpec{WireName: "metadata_url"},
-		"Scopes": ubx.FieldSpec{WireName: "scopes"},
-	}
+	"ClientId":     ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
+	"MetadataUrl":  ubx.FieldSpec{WireName: "metadata_url"},
+	"Scopes":       ubx.FieldSpec{WireName: "scopes"},
+}
 
 var DevToolPortalResource_PropertiesFields = ubx.FieldMap{
-		"Components": ubx.FieldSpec{
-			WireName: "components",
-			Kind: "list",
-			Fields: DevToolPortalResource_Properties_ComponentsFields,
-		},
-		"Features": ubx.FieldSpec{
-			WireName: "features",
-			Kind: "object",
-			Fields: DevToolPortalResource_Properties_FeaturesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Public": ubx.FieldSpec{WireName: "public"},
-		"SsoProperties": ubx.FieldSpec{
-			WireName: "sso_properties",
-			Kind: "object",
-			Fields: DevToolPortalResource_Properties_SsoPropertiesFields,
-		},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"Components": ubx.FieldSpec{
+		WireName: "components",
+		Kind:     "list",
+		Fields:   DevToolPortalResource_Properties_ComponentsFields,
+	},
+	"Features": ubx.FieldSpec{
+		WireName: "features",
+		Kind:     "object",
+		Fields:   DevToolPortalResource_Properties_FeaturesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Public":            ubx.FieldSpec{WireName: "public"},
+	"SsoProperties": ubx.FieldSpec{
+		WireName: "sso_properties",
+		Kind:     "object",
+		Fields:   DevToolPortalResource_Properties_SsoPropertiesFields,
+	},
+	"Url": ubx.FieldSpec{WireName: "url"},
+}
 
 type DevToolPortalResourceConfig struct {
 	// Dev Tool Portal properties payload
@@ -146,8 +146,8 @@ var DevToolPortalResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DevToolPortalResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DevToolPortalResource_PropertiesFields,
 		},
 	},
 }

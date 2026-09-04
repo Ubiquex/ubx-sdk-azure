@@ -186,16 +186,10 @@ const ExpressrouteExpressRouteLag_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteExpressRouteLagConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
-  /** The unique identifier of the resource. */
-  id?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: ExpressrouteExpressRouteLag_Identity | Computed<ExpressrouteExpressRouteLag_Identity>;
   /** Properties specific to ExpressRouteLag resources. */
   properties?: ExpressrouteExpressRouteLag_Properties | Computed<ExpressrouteExpressRouteLag_Properties>;
-  /** The type of the resource. */
-  type?: string | Computed<string>;
 }
 
 export interface ExpressrouteExpressRouteLagAttrs {
@@ -214,8 +208,6 @@ export interface ExpressrouteExpressRouteLagAttrs {
 export const ExpressrouteExpressRouteLag: ResourceBinding<ExpressrouteExpressRouteLagConfig, ExpressrouteExpressRouteLagAttrs> = {
   wireType: "azure_network_expressroute_express_route_lag",
   fields: {
-    etag: "etag",
-    id: "id",
     identity: {
       wireName: "identity",
       kind: "object",
@@ -226,6 +218,5 @@ export const ExpressrouteExpressRouteLag: ResourceBinding<ExpressrouteExpressRou
       kind: "object",
       fields: ExpressrouteExpressRouteLag_PropertiesFields,
     },
-    type: "type",
   },
 };

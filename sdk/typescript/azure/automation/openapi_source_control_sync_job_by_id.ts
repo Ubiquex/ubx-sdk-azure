@@ -4,10 +4,31 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface OpenapiSourceControlSyncJobById_Properties {
   /** The commit id of the source control sync job. If not syncing to a commitId, enter an empty string. */
   commitId: string | Computed<string>;
+  /** The creation time of the job. */
+  creationTime?: string | Computed<string>;
+  /** The end time of the job. */
+  endTime?: string | Computed<string>;
+  /** The exceptions that occurred while running the sync job. */
+  exception?: string | Computed<string>;
+  /** The provisioning state of the job. */
+  provisioningState?: string | Computed<string>;
+  /** The source control sync job id. */
+  sourceControlSyncJobId?: string | Computed<string>;
+  /** The start time of the job. */
+  startTime?: string | Computed<string>;
+  /** The sync type. */
+  syncType?: string | Computed<string>;
 }
 
 const OpenapiSourceControlSyncJobById_PropertiesFields: FieldMap = {
   commitId: "commit_id",
+  creationTime: "creation_time",
+  endTime: "end_time",
+  exception: "exception",
+  provisioningState: "provisioning_state",
+  sourceControlSyncJobId: "source_control_sync_job_id",
+  startTime: "start_time",
+  syncType: "sync_type",
 };
 
 export interface OpenapiSourceControlSyncJobByIdConfig {

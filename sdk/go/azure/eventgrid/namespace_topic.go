@@ -30,26 +30,15 @@ type NamespaceTopic_SystemData struct {
 }
 
 var NamespaceTopic_PropertiesFields = ubx.FieldMap{
-		"EventRetentionInDays": ubx.FieldSpec{WireName: "event_retention_in_days"},
-		"InputSchema": ubx.FieldSpec{WireName: "input_schema"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublisherType": ubx.FieldSpec{WireName: "publisher_type"},
-	}
-
-var NamespaceTopic_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"EventRetentionInDays": ubx.FieldSpec{WireName: "event_retention_in_days"},
+	"InputSchema":          ubx.FieldSpec{WireName: "input_schema"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublisherType":        ubx.FieldSpec{WireName: "publisher_type"},
+}
 
 type NamespaceTopicConfig struct {
 	// Properties of the namespace topic.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NamespaceTopicAttrs struct {
@@ -64,13 +53,8 @@ var NamespaceTopic = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NamespaceTopic_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NamespaceTopic_SystemDataFields,
+			Kind:     "object",
+			Fields:   NamespaceTopic_PropertiesFields,
 		},
 	},
 }

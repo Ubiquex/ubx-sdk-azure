@@ -17,16 +17,14 @@ type ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_Prope
 }
 
 var ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_PropertiesFields = ubx.FieldMap{
-		"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
-		"ServerKeyName": ubx.FieldSpec{WireName: "server_key_name"},
-		"ServerKeyType": ubx.FieldSpec{WireName: "server_key_type"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
+	"ServerKeyName":       ubx.FieldSpec{WireName: "server_key_name"},
+	"ServerKeyType":       ubx.FieldSpec{WireName: "server_key_type"},
+	"Thumbprint":          ubx.FieldSpec{WireName: "thumbprint"},
+	"Uri":                 ubx.FieldSpec{WireName: "uri"},
+}
 
 type ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtectorConfig struct {
-	// Kind of encryption protector. This is metadata used for the Azure portal experience.
-	Kind any
 	// Properties for an encryption protector execution.
 	Properties any
 }
@@ -41,11 +39,10 @@ type ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtectorAttrs 
 var ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector = ubx.ResourceBinding{
 	WireType: "azure_sql_managedinstanceencryptionprotectors_managed_instance_encryption_protector",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_PropertiesFields,
 		},
 	},
 }

@@ -14,10 +14,16 @@ class OpenapiConnectionType_Properties_FieldDefinitions:
 
 @dataclasses.dataclass
 class OpenapiConnectionType_Properties:
+    # Gets the creation time.
+    creation_time: Any = None
+    # Gets or sets the description.
+    description: Any = None
     # Gets or sets the field definitions of the connection type.
     field_definitions: Any = None
     # Gets or sets a Boolean value to indicate if the connection type is global.
     is_global: Any = None
+    # Gets or sets the last modified time.
+    last_modified_time: Any = None
 
 _OpenapiConnectionType_Properties_FieldDefinitionsFields = {
     "is_encrypted": ubx.FieldSpec(wire_name="is_encrypted"),
@@ -26,12 +32,15 @@ _OpenapiConnectionType_Properties_FieldDefinitionsFields = {
 }
 
 _OpenapiConnectionType_PropertiesFields = {
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
+    "description": ubx.FieldSpec(wire_name="description"),
     "field_definitions": ubx.FieldSpec(
         wire_name="field_definitions",
         kind="map",
         fields=_OpenapiConnectionType_Properties_FieldDefinitionsFields,
     ),
     "is_global": ubx.FieldSpec(wire_name="is_global"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
 }
 
 @dataclasses.dataclass

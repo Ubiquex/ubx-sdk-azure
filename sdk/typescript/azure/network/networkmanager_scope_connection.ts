@@ -34,22 +34,9 @@ const NetworkmanagerScopeConnection_PropertiesFields: FieldMap = {
   tenantId: "tenant_id",
 };
 
-const NetworkmanagerScopeConnection_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerScopeConnectionConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Scope connection. */
   properties?: NetworkmanagerScopeConnection_Properties | Computed<NetworkmanagerScopeConnection_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerScopeConnection_SystemData | Computed<NetworkmanagerScopeConnection_SystemData>;
 }
 
 export interface NetworkmanagerScopeConnectionAttrs {
@@ -64,16 +51,10 @@ export interface NetworkmanagerScopeConnectionAttrs {
 export const NetworkmanagerScopeConnection: ResourceBinding<NetworkmanagerScopeConnectionConfig, NetworkmanagerScopeConnectionAttrs> = {
   wireType: "azure_network_networkmanager_scope_connection",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerScopeConnection_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerScopeConnection_SystemDataFields,
     },
   },
 };

@@ -4,24 +4,24 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DevCenter_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type DevCenter_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type DevCenter_Value_Properties struct {
-	DevCenterUri any
+	DevCenterUri      any
 	ProvisioningState any
 }
 
 type DevCenter_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -37,6 +37,5 @@ type DevCenterAttrs struct {
 
 var DevCenter = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_dev_center",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

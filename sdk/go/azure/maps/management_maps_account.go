@@ -4,7 +4,7 @@ package maps
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementMapsAccount_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -52,7 +52,7 @@ type ManagementMapsAccount_Properties_Encryption struct {
 }
 
 type ManagementMapsAccount_Properties_LinkedResources struct {
-	Id any
+	Id         any
 	UniqueName any
 }
 
@@ -94,96 +94,87 @@ type ManagementMapsAccount_SystemData struct {
 }
 
 var ManagementMapsAccount_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var ManagementMapsAccount_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: ManagementMapsAccount_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   ManagementMapsAccount_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var ManagementMapsAccount_Properties_Cors_CorsRulesFields = ubx.FieldMap{
-		"AllowedOrigins": ubx.FieldSpec{WireName: "allowed_origins"},
-	}
+	"AllowedOrigins": ubx.FieldSpec{WireName: "allowed_origins"},
+}
 
 var ManagementMapsAccount_Properties_CorsFields = ubx.FieldMap{
-		"CorsRules": ubx.FieldSpec{
-			WireName: "cors_rules",
-			Kind: "list",
-			Fields: ManagementMapsAccount_Properties_Cors_CorsRulesFields,
-		},
-	}
+	"CorsRules": ubx.FieldSpec{
+		WireName: "cors_rules",
+		Kind:     "list",
+		Fields:   ManagementMapsAccount_Properties_Cors_CorsRulesFields,
+	},
+}
 
 var ManagementMapsAccount_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentityFields = ubx.FieldMap{
-		"DelegatedIdentityClientId": ubx.FieldSpec{WireName: "delegated_identity_client_id"},
-		"IdentityType": ubx.FieldSpec{WireName: "identity_type"},
-		"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
-	}
+	"DelegatedIdentityClientId":      ubx.FieldSpec{WireName: "delegated_identity_client_id"},
+	"IdentityType":                   ubx.FieldSpec{WireName: "identity_type"},
+	"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
+}
 
 var ManagementMapsAccount_Properties_Encryption_CustomerManagedKeyEncryptionFields = ubx.FieldMap{
-		"KeyEncryptionKeyIdentity": ubx.FieldSpec{
-			WireName: "key_encryption_key_identity",
-			Kind: "object",
-			Fields: ManagementMapsAccount_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentityFields,
-		},
-		"KeyEncryptionKeyUrl": ubx.FieldSpec{WireName: "key_encryption_key_url"},
-	}
+	"KeyEncryptionKeyIdentity": ubx.FieldSpec{
+		WireName: "key_encryption_key_identity",
+		Kind:     "object",
+		Fields:   ManagementMapsAccount_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentityFields,
+	},
+	"KeyEncryptionKeyUrl": ubx.FieldSpec{WireName: "key_encryption_key_url"},
+}
 
 var ManagementMapsAccount_Properties_EncryptionFields = ubx.FieldMap{
-		"CustomerManagedKeyEncryption": ubx.FieldSpec{
-			WireName: "customer_managed_key_encryption",
-			Kind: "object",
-			Fields: ManagementMapsAccount_Properties_Encryption_CustomerManagedKeyEncryptionFields,
-		},
-		"InfrastructureEncryption": ubx.FieldSpec{WireName: "infrastructure_encryption"},
-	}
+	"CustomerManagedKeyEncryption": ubx.FieldSpec{
+		WireName: "customer_managed_key_encryption",
+		Kind:     "object",
+		Fields:   ManagementMapsAccount_Properties_Encryption_CustomerManagedKeyEncryptionFields,
+	},
+	"InfrastructureEncryption": ubx.FieldSpec{WireName: "infrastructure_encryption"},
+}
 
 var ManagementMapsAccount_Properties_LinkedResourcesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"UniqueName": ubx.FieldSpec{WireName: "unique_name"},
-	}
+	"Id":         ubx.FieldSpec{WireName: "id"},
+	"UniqueName": ubx.FieldSpec{WireName: "unique_name"},
+}
 
 var ManagementMapsAccount_PropertiesFields = ubx.FieldMap{
-		"Cors": ubx.FieldSpec{
-			WireName: "cors",
-			Kind: "object",
-			Fields: ManagementMapsAccount_Properties_CorsFields,
-		},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: ManagementMapsAccount_Properties_EncryptionFields,
-		},
-		"LinkedResources": ubx.FieldSpec{
-			WireName: "linked_resources",
-			Kind: "list",
-			Fields: ManagementMapsAccount_Properties_LinkedResourcesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"UniqueId": ubx.FieldSpec{WireName: "unique_id"},
-	}
+	"Cors": ubx.FieldSpec{
+		WireName: "cors",
+		Kind:     "object",
+		Fields:   ManagementMapsAccount_Properties_CorsFields,
+	},
+	"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   ManagementMapsAccount_Properties_EncryptionFields,
+	},
+	"LinkedResources": ubx.FieldSpec{
+		WireName: "linked_resources",
+		Kind:     "list",
+		Fields:   ManagementMapsAccount_Properties_LinkedResourcesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"UniqueId":          ubx.FieldSpec{WireName: "unique_id"},
+}
 
 var ManagementMapsAccount_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
-
-var ManagementMapsAccount_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type ManagementMapsAccountConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -194,8 +185,6 @@ type ManagementMapsAccountConfig struct {
 	Properties any
 	// The SKU of the Maps Account.
 	Sku any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type ManagementMapsAccountAttrs struct {
@@ -216,24 +205,19 @@ var ManagementMapsAccount = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ManagementMapsAccount_IdentityFields,
+			Kind:     "object",
+			Fields:   ManagementMapsAccount_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagementMapsAccount_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagementMapsAccount_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ManagementMapsAccount_SkuFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: ManagementMapsAccount_SystemDataFields,
+			Kind:     "object",
+			Fields:   ManagementMapsAccount_SkuFields,
 		},
 	},
 }

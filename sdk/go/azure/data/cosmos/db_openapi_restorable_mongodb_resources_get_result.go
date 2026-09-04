@@ -5,24 +5,24 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiRestorableMongodbResourcesGetResult_Value struct {
 	CollectionNames any
-	DatabaseName any
-	Id any
-	Name any
-	Type any
+	DatabaseName    any
+	Id              any
+	Name            any
+	Type            any
 }
 
 type DbOpenapiRestorableMongodbResourcesGetResultConfig struct {
-	InstanceId any
-	Location any
-	RestoreLocation any
+	InstanceId            any
+	Location              any
+	RestoreLocation       any
 	RestoreTimestampInUtc any
 }
 
 type DbOpenapiRestorableMongodbResourcesGetResultAttrs struct {
-	InstanceId any
-	Location any
-	NextLink any
-	RestoreLocation any
+	InstanceId            any
+	Location              any
+	NextLink              any
+	RestoreLocation       any
 	RestoreTimestampInUtc any
 	// List of restorable MongoDB resources, including the database and collection names.
 	Value any
@@ -31,9 +31,9 @@ type DbOpenapiRestorableMongodbResourcesGetResultAttrs struct {
 var DbOpenapiRestorableMongodbResourcesGetResult = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_restorable_mongodb_resources_get_result",
 	Fields: ubx.FieldMap{
-		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"RestoreLocation": ubx.FieldSpec{WireName: "restore_location"},
+		"InstanceId":            ubx.FieldSpec{WireName: "instance_id"},
+		"Location":              ubx.FieldSpec{WireName: "location"},
+		"RestoreLocation":       ubx.FieldSpec{WireName: "restore_location"},
 		"RestoreTimestampInUtc": ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
 	},
 }

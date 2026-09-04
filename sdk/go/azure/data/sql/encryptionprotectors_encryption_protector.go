@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type EncryptionprotectorsEncryptionProtector_Value_Properties struct {
 	AutoRotationEnabled any
-	KeyVersion any
-	ServerKeyName any
-	ServerKeyType any
-	Subregion any
-	Thumbprint any
-	Uri any
+	KeyVersion          any
+	ServerKeyName       any
+	ServerKeyType       any
+	Subregion           any
+	Thumbprint          any
+	Uri                 any
 }
 
 type EncryptionprotectorsEncryptionProtector_Value struct {
-	Kind any
-	Location any
+	Kind       any
+	Location   any
 	Properties any
 }
 
@@ -25,7 +25,7 @@ type EncryptionprotectorsEncryptionProtectorConfig struct {
 
 type EncryptionprotectorsEncryptionProtectorAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The EncryptionProtector items on this page
 	Value any

@@ -17,8 +17,6 @@ _SqlserverDedicatedSqlminimalTlsSettings_PropertiesFields = {
 
 @dataclasses.dataclass
 class SqlserverDedicatedSqlminimalTlsSettingsConfig:
-    # Resource location.
-    location: Any = None
     # Properties of a dedicated sql minimal tls settings.
     properties: Any = None
 
@@ -32,7 +30,6 @@ class SqlserverDedicatedSqlminimalTlsSettingsAttrs:
 SqlserverDedicatedSqlminimalTlsSettings = ubx.ResourceBinding(
     wire_type="azure_synapse_sqlserver_dedicated_sqlminimal_tls_settings",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

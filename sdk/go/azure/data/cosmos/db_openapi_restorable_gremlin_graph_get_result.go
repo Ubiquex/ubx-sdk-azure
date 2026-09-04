@@ -4,13 +4,13 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiRestorableGremlinGraphGetResult_Value_Properties_Resource struct {
-	Rid any
-	CanUndelete any
+	Rid               any
+	CanUndelete       any
 	CanUndeleteReason any
-	EventTimestamp any
-	OperationType any
-	OwnerId any
-	OwnerResourceId any
+	EventTimestamp    any
+	OperationType     any
+	OwnerId           any
+	OwnerResourceId   any
 }
 
 type DbOpenapiRestorableGremlinGraphGetResult_Value_Properties struct {
@@ -18,27 +18,27 @@ type DbOpenapiRestorableGremlinGraphGetResult_Value_Properties struct {
 }
 
 type DbOpenapiRestorableGremlinGraphGetResult_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type DbOpenapiRestorableGremlinGraphGetResultConfig struct {
-	EndTime any
-	InstanceId any
-	Location any
+	EndTime                      any
+	InstanceId                   any
+	Location                     any
 	RestorableGremlinDatabaseRid any
-	StartTime any
+	StartTime                    any
 }
 
 type DbOpenapiRestorableGremlinGraphGetResultAttrs struct {
-	EndTime any
-	InstanceId any
-	Location any
-	NextLink any
+	EndTime                      any
+	InstanceId                   any
+	Location                     any
+	NextLink                     any
 	RestorableGremlinDatabaseRid any
-	StartTime any
+	StartTime                    any
 	// List of Gremlin graph events and their properties.
 	Value any
 }
@@ -46,10 +46,10 @@ type DbOpenapiRestorableGremlinGraphGetResultAttrs struct {
 var DbOpenapiRestorableGremlinGraphGetResult = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_restorable_gremlin_graph_get_result",
 	Fields: ubx.FieldMap{
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"EndTime":                      ubx.FieldSpec{WireName: "end_time"},
+		"InstanceId":                   ubx.FieldSpec{WireName: "instance_id"},
+		"Location":                     ubx.FieldSpec{WireName: "location"},
 		"RestorableGremlinDatabaseRid": ubx.FieldSpec{WireName: "restorable_gremlin_database_rid"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
+		"StartTime":                    ubx.FieldSpec{WireName: "start_time"},
 	},
 }

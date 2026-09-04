@@ -11,9 +11,9 @@ type OpenapiResourceAnchor_Properties struct {
 }
 
 var OpenapiResourceAnchor_PropertiesFields = ubx.FieldMap{
-		"LinkedCompartmentId": ubx.FieldSpec{WireName: "linked_compartment_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LinkedCompartmentId": ubx.FieldSpec{WireName: "linked_compartment_id"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiResourceAnchorConfig struct {
 	// Resource Anchor properties.
@@ -30,8 +30,8 @@ var OpenapiResourceAnchor = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiResourceAnchor_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiResourceAnchor_PropertiesFields,
 		},
 	},
 }

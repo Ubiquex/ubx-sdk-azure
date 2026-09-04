@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInput:
+class ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetails:
     # The base authority for Azure Active Directory authentication.
     aad_authority: Any = None
     # The application/client Id for the service principal with which the on-premise management/data plane components would communicate with our Azure services.
@@ -20,21 +20,99 @@ class ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInput:
     tenant_id: Any = None
 
 @dataclasses.dataclass
+class ServiceRecoveryServicesProvider_Properties_HealthErrorDetails_InnerHealthErrors:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
+class ServiceRecoveryServicesProvider_Properties_HealthErrorDetails:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    inner_health_errors: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
+class ServiceRecoveryServicesProvider_Properties_ProviderVersionDetails:
+    # Version expiry date.
+    expiry_date: Any = None
+    # A value indicating whether security update required.
+    status: Any = None
+    # The agent version.
+    version: Any = None
+
+@dataclasses.dataclass
 class ServiceRecoveryServicesProvider_Properties:
+    # The scenarios allowed on this provider.
+    allowed_scenarios: Any = None
+    # Identity provider details.
+    authentication_identity_details: Any = None
     # Identity provider input.
     authentication_identity_input: Any = None
     # The Bios Id of the machine.
     bios_id: Any = None
+    # A value indicating whether DRA is responsive.
+    connection_status: Any = None
+    # Identity provider details.
+    data_plane_authentication_identity_details: Any = None
     # Identity provider input.
     data_plane_authentication_identity_input: Any = None
+    # The DRA Id.
+    dra_identifier: Any = None
+    # The fabric friendly name.
+    fabric_friendly_name: Any = None
+    # Type of the site.
+    fabric_type: Any = None
+    # Friendly name of the DRA.
+    friendly_name: Any = None
+    # The recovery services provider health error details.
+    health_error_details: Any = None
+    # Time when last heartbeat was sent by the DRA.
+    last_heart_beat: Any = None
     # The Id of the machine where the provider is getting added.
     machine_id: Any = None
     # The name of the machine where the provider is getting added.
     machine_name: Any = None
+    # Number of protected VMs currently managed by the DRA.
+    protected_item_count: Any = None
+    # The provider version.
+    provider_version: Any = None
+    # Version related details.
+    provider_version_details: Any = None
+    # Expiry date of the version.
+    provider_version_expiry_date: Any = None
+    # DRA version status.
+    provider_version_state: Any = None
+    # Identity provider details.
+    resource_access_identity_details: Any = None
     # Identity provider input.
     resource_access_identity_input: Any = None
+    # The fabric provider.
+    server_version: Any = None
 
-_ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInputFields = {
+_ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields = {
     "aad_authority": ubx.FieldSpec(wire_name="aad_authority"),
     "application_id": ubx.FieldSpec(wire_name="application_id"),
     "audience": ubx.FieldSpec(wire_name="audience"),
@@ -42,25 +120,107 @@ _ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInputFields = 
     "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
 }
 
+_ServiceRecoveryServicesProvider_Properties_HealthErrorDetails_InnerHealthErrorsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
+
+_ServiceRecoveryServicesProvider_Properties_HealthErrorDetailsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "inner_health_errors": ubx.FieldSpec(
+        wire_name="inner_health_errors",
+        kind="list",
+        fields=_ServiceRecoveryServicesProvider_Properties_HealthErrorDetails_InnerHealthErrorsFields,
+    ),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
+
+_ServiceRecoveryServicesProvider_Properties_ProviderVersionDetailsFields = {
+    "expiry_date": ubx.FieldSpec(wire_name="expiry_date"),
+    "status": ubx.FieldSpec(wire_name="status"),
+    "version": ubx.FieldSpec(wire_name="version"),
+}
+
 _ServiceRecoveryServicesProvider_PropertiesFields = {
+    "allowed_scenarios": ubx.FieldSpec(wire_name="allowed_scenarios"),
+    "authentication_identity_details": ubx.FieldSpec(
+        wire_name="authentication_identity_details",
+        kind="object",
+        fields=_ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
+    ),
     "authentication_identity_input": ubx.FieldSpec(
         wire_name="authentication_identity_input",
         kind="object",
-        fields=_ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInputFields,
+        fields=_ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
     ),
     "bios_id": ubx.FieldSpec(wire_name="bios_id"),
+    "connection_status": ubx.FieldSpec(wire_name="connection_status"),
+    "data_plane_authentication_identity_details": ubx.FieldSpec(
+        wire_name="data_plane_authentication_identity_details",
+        kind="object",
+        fields=_ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
+    ),
     "data_plane_authentication_identity_input": ubx.FieldSpec(
         wire_name="data_plane_authentication_identity_input",
         kind="object",
-        fields=_ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInputFields,
+        fields=_ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
     ),
+    "dra_identifier": ubx.FieldSpec(wire_name="dra_identifier"),
+    "fabric_friendly_name": ubx.FieldSpec(wire_name="fabric_friendly_name"),
+    "fabric_type": ubx.FieldSpec(wire_name="fabric_type"),
+    "friendly_name": ubx.FieldSpec(wire_name="friendly_name"),
+    "health_error_details": ubx.FieldSpec(
+        wire_name="health_error_details",
+        kind="list",
+        fields=_ServiceRecoveryServicesProvider_Properties_HealthErrorDetailsFields,
+    ),
+    "last_heart_beat": ubx.FieldSpec(wire_name="last_heart_beat"),
     "machine_id": ubx.FieldSpec(wire_name="machine_id"),
     "machine_name": ubx.FieldSpec(wire_name="machine_name"),
+    "protected_item_count": ubx.FieldSpec(wire_name="protected_item_count"),
+    "provider_version": ubx.FieldSpec(wire_name="provider_version"),
+    "provider_version_details": ubx.FieldSpec(
+        wire_name="provider_version_details",
+        kind="object",
+        fields=_ServiceRecoveryServicesProvider_Properties_ProviderVersionDetailsFields,
+    ),
+    "provider_version_expiry_date": ubx.FieldSpec(wire_name="provider_version_expiry_date"),
+    "provider_version_state": ubx.FieldSpec(wire_name="provider_version_state"),
+    "resource_access_identity_details": ubx.FieldSpec(
+        wire_name="resource_access_identity_details",
+        kind="object",
+        fields=_ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
+    ),
     "resource_access_identity_input": ubx.FieldSpec(
         wire_name="resource_access_identity_input",
         kind="object",
-        fields=_ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInputFields,
+        fields=_ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
     ),
+    "server_version": ubx.FieldSpec(wire_name="server_version"),
 }
 
 @dataclasses.dataclass

@@ -5,82 +5,82 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Deployment_Value_Properties_CallRateLimit_Rules_MatchPatterns struct {
 	Method any
-	Path any
+	Path   any
 }
 
 type Deployment_Value_Properties_CallRateLimit_Rules struct {
-	Count any
+	Count                    any
 	DynamicThrottlingEnabled any
-	Key any
-	MatchPatterns any
-	MinCount any
-	RenewalPeriod any
+	Key                      any
+	MatchPatterns            any
+	MinCount                 any
+	RenewalPeriod            any
 }
 
 type Deployment_Value_Properties_CallRateLimit struct {
-	Count any
+	Count         any
 	RenewalPeriod any
-	Rules any
+	Rules         any
 }
 
 type Deployment_Value_Properties_CapacitySettings struct {
 	DesignatedCapacity any
-	Priority any
+	Priority           any
 }
 
 type Deployment_Value_Properties_Model struct {
 	CallRateLimit any
-	Format any
-	Name any
-	Publisher any
-	Source any
+	Format        any
+	Name          any
+	Publisher     any
+	Source        any
 	SourceAccount any
-	Version any
+	Version       any
 }
 
 type Deployment_Value_Properties_Routing struct {
-	Mode any
+	Mode   any
 	Models any
 }
 
 type Deployment_Value_Properties_ScaleSettings struct {
 	ActiveCapacity any
-	Capacity any
-	ScaleType any
+	Capacity       any
+	ScaleType      any
 }
 
 type Deployment_Value_Properties struct {
-	CallRateLimit any
-	Capabilities any
-	CapacitySettings any
-	CurrentCapacity any
-	DeploymentState any
+	CallRateLimit            any
+	Capabilities             any
+	CapacitySettings         any
+	CurrentCapacity          any
+	DeploymentState          any
 	DynamicThrottlingEnabled any
-	Model any
-	ParentDeploymentName any
-	ProvisioningState any
-	RaiPolicyName any
-	RateLimits any
-	Routing any
-	ScaleSettings any
-	ServiceTier any
-	SpilloverDeploymentName any
-	VersionUpgradeOption any
+	Model                    any
+	ParentDeploymentName     any
+	ProvisioningState        any
+	RaiPolicyName            any
+	RateLimits               any
+	Routing                  any
+	ScaleSettings            any
+	ServiceTier              any
+	SpilloverDeploymentName  any
+	VersionUpgradeOption     any
 }
 
 type Deployment_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type Deployment_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type DeploymentConfig struct {

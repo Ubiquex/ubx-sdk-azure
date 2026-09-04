@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TransparentdataencryptionsLogicalDatabaseTransparentDataEncryption_Value_Properties struct {
 	ScanState any
-	State any
+	State     any
 }
 
 type TransparentdataencryptionsLogicalDatabaseTransparentDataEncryption_Value struct {
@@ -14,13 +14,13 @@ type TransparentdataencryptionsLogicalDatabaseTransparentDataEncryption_Value st
 
 type TransparentdataencryptionsLogicalDatabaseTransparentDataEncryptionConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type TransparentdataencryptionsLogicalDatabaseTransparentDataEncryptionAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The LogicalDatabaseTransparentDataEncryption items on this page
 	Value any
@@ -30,6 +30,6 @@ var TransparentdataencryptionsLogicalDatabaseTransparentDataEncryption = ubx.Dat
 	WireType: "azure_sql_transparentdataencryptions_logical_database_transparent_data_encryption",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

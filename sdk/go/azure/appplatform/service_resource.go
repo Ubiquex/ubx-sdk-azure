@@ -24,10 +24,10 @@ type ServiceResource_Properties_NetworkProfile_OutboundIps struct {
 
 type ServiceResource_Properties_NetworkProfile_RequiredTraffics struct {
 	Direction any
-	Fqdns any
-	Ips any
-	Port any
-	Protocol any
+	Fqdns     any
+	Ips       any
+	Port      any
+	Protocol  any
 }
 
 type ServiceResource_Properties_NetworkProfile struct {
@@ -74,7 +74,7 @@ type ServiceResource_Properties struct {
 	// Version of the Service
 	Version any
 	// Additional Service settings in vnet injection instance
-	VnetAddons any
+	VnetAddons    any
 	ZoneRedundant any
 }
 
@@ -88,85 +88,85 @@ type ServiceResource_Sku struct {
 }
 
 var ServiceResource_Properties_MarketplaceResourceFields = ubx.FieldMap{
-		"Plan": ubx.FieldSpec{WireName: "plan"},
-		"Product": ubx.FieldSpec{WireName: "product"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-	}
+	"Plan":      ubx.FieldSpec{WireName: "plan"},
+	"Product":   ubx.FieldSpec{WireName: "product"},
+	"Publisher": ubx.FieldSpec{WireName: "publisher"},
+}
 
 var ServiceResource_Properties_NetworkProfile_IngressConfigFields = ubx.FieldMap{
-		"ReadTimeoutInSeconds": ubx.FieldSpec{WireName: "read_timeout_in_seconds"},
-	}
+	"ReadTimeoutInSeconds": ubx.FieldSpec{WireName: "read_timeout_in_seconds"},
+}
 
 var ServiceResource_Properties_NetworkProfile_OutboundIpsFields = ubx.FieldMap{
-		"PublicIps": ubx.FieldSpec{WireName: "public_ips"},
-	}
+	"PublicIps": ubx.FieldSpec{WireName: "public_ips"},
+}
 
 var ServiceResource_Properties_NetworkProfile_RequiredTrafficsFields = ubx.FieldMap{
-		"Direction": ubx.FieldSpec{WireName: "direction"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"Ips": ubx.FieldSpec{WireName: "ips"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-	}
+	"Direction": ubx.FieldSpec{WireName: "direction"},
+	"Fqdns":     ubx.FieldSpec{WireName: "fqdns"},
+	"Ips":       ubx.FieldSpec{WireName: "ips"},
+	"Port":      ubx.FieldSpec{WireName: "port"},
+	"Protocol":  ubx.FieldSpec{WireName: "protocol"},
+}
 
 var ServiceResource_Properties_NetworkProfileFields = ubx.FieldMap{
-		"AppNetworkResourceGroup": ubx.FieldSpec{WireName: "app_network_resource_group"},
-		"AppSubnetId": ubx.FieldSpec{WireName: "app_subnet_id"},
-		"IngressConfig": ubx.FieldSpec{
-			WireName: "ingress_config",
-			Kind: "object",
-			Fields: ServiceResource_Properties_NetworkProfile_IngressConfigFields,
-		},
-		"OutboundIps": ubx.FieldSpec{
-			WireName: "outbound_ips",
-			Kind: "object",
-			Fields: ServiceResource_Properties_NetworkProfile_OutboundIpsFields,
-		},
-		"OutboundType": ubx.FieldSpec{WireName: "outbound_type"},
-		"RequiredTraffics": ubx.FieldSpec{
-			WireName: "required_traffics",
-			Kind: "list",
-			Fields: ServiceResource_Properties_NetworkProfile_RequiredTrafficsFields,
-		},
-		"ServiceCidr": ubx.FieldSpec{WireName: "service_cidr"},
-		"ServiceRuntimeNetworkResourceGroup": ubx.FieldSpec{WireName: "service_runtime_network_resource_group"},
-		"ServiceRuntimeSubnetId": ubx.FieldSpec{WireName: "service_runtime_subnet_id"},
-	}
+	"AppNetworkResourceGroup": ubx.FieldSpec{WireName: "app_network_resource_group"},
+	"AppSubnetId":             ubx.FieldSpec{WireName: "app_subnet_id"},
+	"IngressConfig": ubx.FieldSpec{
+		WireName: "ingress_config",
+		Kind:     "object",
+		Fields:   ServiceResource_Properties_NetworkProfile_IngressConfigFields,
+	},
+	"OutboundIps": ubx.FieldSpec{
+		WireName: "outbound_ips",
+		Kind:     "object",
+		Fields:   ServiceResource_Properties_NetworkProfile_OutboundIpsFields,
+	},
+	"OutboundType": ubx.FieldSpec{WireName: "outbound_type"},
+	"RequiredTraffics": ubx.FieldSpec{
+		WireName: "required_traffics",
+		Kind:     "list",
+		Fields:   ServiceResource_Properties_NetworkProfile_RequiredTrafficsFields,
+	},
+	"ServiceCidr":                        ubx.FieldSpec{WireName: "service_cidr"},
+	"ServiceRuntimeNetworkResourceGroup": ubx.FieldSpec{WireName: "service_runtime_network_resource_group"},
+	"ServiceRuntimeSubnetId":             ubx.FieldSpec{WireName: "service_runtime_subnet_id"},
+}
 
 var ServiceResource_Properties_VnetAddonsFields = ubx.FieldMap{
-		"DataPlanePublicEndpoint": ubx.FieldSpec{WireName: "data_plane_public_endpoint"},
-		"LogStreamPublicEndpoint": ubx.FieldSpec{WireName: "log_stream_public_endpoint"},
-	}
+	"DataPlanePublicEndpoint": ubx.FieldSpec{WireName: "data_plane_public_endpoint"},
+	"LogStreamPublicEndpoint": ubx.FieldSpec{WireName: "log_stream_public_endpoint"},
+}
 
 var ServiceResource_PropertiesFields = ubx.FieldMap{
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"MarketplaceResource": ubx.FieldSpec{
-			WireName: "marketplace_resource",
-			Kind: "object",
-			Fields: ServiceResource_Properties_MarketplaceResourceFields,
-		},
-		"NetworkProfile": ubx.FieldSpec{
-			WireName: "network_profile",
-			Kind: "object",
-			Fields: ServiceResource_Properties_NetworkProfileFields,
-		},
-		"PowerState": ubx.FieldSpec{WireName: "power_state"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServiceId": ubx.FieldSpec{WireName: "service_id"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-		"VnetAddons": ubx.FieldSpec{
-			WireName: "vnet_addons",
-			Kind: "object",
-			Fields: ServiceResource_Properties_VnetAddonsFields,
-		},
-		"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
-	}
+	"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
+	"MarketplaceResource": ubx.FieldSpec{
+		WireName: "marketplace_resource",
+		Kind:     "object",
+		Fields:   ServiceResource_Properties_MarketplaceResourceFields,
+	},
+	"NetworkProfile": ubx.FieldSpec{
+		WireName: "network_profile",
+		Kind:     "object",
+		Fields:   ServiceResource_Properties_NetworkProfileFields,
+	},
+	"PowerState":        ubx.FieldSpec{WireName: "power_state"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServiceId":         ubx.FieldSpec{WireName: "service_id"},
+	"Version":           ubx.FieldSpec{WireName: "version"},
+	"VnetAddons": ubx.FieldSpec{
+		WireName: "vnet_addons",
+		Kind:     "object",
+		Fields:   ServiceResource_Properties_VnetAddonsFields,
+	},
+	"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
+}
 
 var ServiceResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type ServiceResourceConfig struct {
 	// Service properties payload
@@ -187,13 +187,13 @@ var ServiceResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ServiceResource_SkuFields,
+			Kind:     "object",
+			Fields:   ServiceResource_SkuFields,
 		},
 	},
 }

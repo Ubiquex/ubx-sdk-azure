@@ -5,98 +5,98 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Model_Value_Model_BaseModel_CallRateLimit_Rules_MatchPatterns struct {
 	Method any
-	Path any
+	Path   any
 }
 
 type Model_Value_Model_BaseModel_CallRateLimit_Rules struct {
-	Count any
+	Count                    any
 	DynamicThrottlingEnabled any
-	Key any
-	MatchPatterns any
-	MinCount any
-	RenewalPeriod any
+	Key                      any
+	MatchPatterns            any
+	MinCount                 any
+	RenewalPeriod            any
 }
 
 type Model_Value_Model_BaseModel_CallRateLimit struct {
-	Count any
+	Count         any
 	RenewalPeriod any
-	Rules any
+	Rules         any
 }
 
 type Model_Value_Model_BaseModel struct {
 	CallRateLimit any
-	Format any
-	Name any
-	Publisher any
-	Source any
+	Format        any
+	Name          any
+	Publisher     any
+	Source        any
 	SourceAccount any
-	Version any
+	Version       any
 }
 
 type Model_Value_Model_Deprecation struct {
 	DeprecationStatus any
-	FineTune any
-	Inference any
+	FineTune          any
+	Inference         any
 }
 
 type Model_Value_Model_ReplacementConfig struct {
-	AutoUpgradeStartDate any
-	TargetModelName any
-	TargetModelVersion any
+	AutoUpgradeStartDate        any
+	TargetModelName             any
+	TargetModelVersion          any
 	UpgradeOnExpiryLeadTimeDays any
 }
 
 type Model_Value_Model_Skus_Capacity struct {
 	AllowedValues any
-	Default any
-	Maximum any
-	Minimum any
-	Step any
+	Default       any
+	Maximum       any
+	Minimum       any
+	Step          any
 }
 
 type Model_Value_Model_Skus_Cost struct {
 	MeterId any
-	Name any
-	Unit any
+	Name    any
+	Unit    any
 }
 
 type Model_Value_Model_Skus struct {
-	Capacity any
-	Cost any
+	Capacity        any
+	Cost            any
 	DeprecationDate any
-	Name any
-	RateLimits any
-	UsageName any
+	Name            any
+	RateLimits      any
+	UsageName       any
 }
 
 type Model_Value_Model_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type Model_Value_Model struct {
-	BaseModel any
-	Capabilities any
-	Deprecation any
+	BaseModel            any
+	Capabilities         any
+	Deprecation          any
 	FinetuneCapabilities any
-	IsDefaultVersion any
-	LifecycleStatus any
-	MaxCapacity any
-	ModelCatalogAssetId any
-	ReplacementConfig any
-	Skus any
-	SystemData any
+	IsDefaultVersion     any
+	LifecycleStatus      any
+	MaxCapacity          any
+	ModelCatalogAssetId  any
+	ReplacementConfig    any
+	Skus                 any
+	SystemData           any
 }
 
 type Model_Value struct {
 	Description any
-	Kind any
-	Model any
-	SkuName any
+	Kind        any
+	Model       any
+	SkuName     any
 }
 
 type ModelConfig struct {
@@ -111,6 +111,5 @@ type ModelAttrs struct {
 
 var Model = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_model",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -16,7 +16,7 @@ type RecordSet_Value_Properties_CnameRecord struct {
 }
 
 type RecordSet_Value_Properties_MxRecords struct {
-	Exchange any
+	Exchange   any
 	Preference any
 }
 
@@ -25,20 +25,20 @@ type RecordSet_Value_Properties_PtrRecords struct {
 }
 
 type RecordSet_Value_Properties_SoaRecord struct {
-	Email any
-	ExpireTime any
-	Host any
-	MinimumTtl any
-	RefreshTime any
-	RetryTime any
+	Email        any
+	ExpireTime   any
+	Host         any
+	MinimumTtl   any
+	RefreshTime  any
+	RetryTime    any
 	SerialNumber any
 }
 
 type RecordSet_Value_Properties_SrvRecords struct {
-	Port any
+	Port     any
 	Priority any
-	Target any
-	Weight any
+	Target   any
+	Weight   any
 }
 
 type RecordSet_Value_Properties_TxtRecords struct {
@@ -46,22 +46,22 @@ type RecordSet_Value_Properties_TxtRecords struct {
 }
 
 type RecordSet_Value_Properties struct {
-	ARecords any
-	AaaaRecords any
-	CnameRecord any
-	Fqdn any
+	ARecords         any
+	AaaaRecords      any
+	CnameRecord      any
+	Fqdn             any
 	IsAutoRegistered any
-	Metadata any
-	MxRecords any
-	PtrRecords any
-	SoaRecord any
-	SrvRecords any
-	Ttl any
-	TxtRecords any
+	Metadata         any
+	MxRecords        any
+	PtrRecords       any
+	SoaRecord        any
+	SrvRecords       any
+	Ttl              any
+	TxtRecords       any
 }
 
 type RecordSet_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -71,7 +71,7 @@ type RecordSetConfig struct {
 
 type RecordSetAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink        any
 	PrivateZoneName any
 	// The RecordSet items on this page
 	Value any

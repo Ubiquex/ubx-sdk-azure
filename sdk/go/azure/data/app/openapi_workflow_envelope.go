@@ -7,14 +7,14 @@ type OpenapiWorkflowEnvelope_Value_Properties_Health_Error_Details struct {
 }
 
 type OpenapiWorkflowEnvelope_Value_Properties_Health_Error struct {
-	Code any
-	Details any
-	ExtendedCode any
-	InnerErrors any
-	Message any
+	Code            any
+	Details         any
+	ExtendedCode    any
+	InnerErrors     any
+	Message         any
 	MessageTemplate any
-	Parameters any
-	Target any
+	Parameters      any
+	Target          any
 }
 
 type OpenapiWorkflowEnvelope_Value_Properties_Health struct {
@@ -23,24 +23,24 @@ type OpenapiWorkflowEnvelope_Value_Properties_Health struct {
 }
 
 type OpenapiWorkflowEnvelope_Value_Properties struct {
-	Files any
+	Files     any
 	FlowState any
-	Health any
+	Health    any
 }
 
 type OpenapiWorkflowEnvelope_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiWorkflowEnvelopeConfig struct {
 	ContainerAppName any
-	LogicAppName any
+	LogicAppName     any
 }
 
 type OpenapiWorkflowEnvelopeAttrs struct {
 	ContainerAppName any
-	LogicAppName any
+	LogicAppName     any
 	// The link to the next page of items
 	NextLink any
 	// The WorkflowEnvelope items on this page
@@ -51,6 +51,6 @@ var OpenapiWorkflowEnvelope = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_workflow_envelope",
 	Fields: ubx.FieldMap{
 		"ContainerAppName": ubx.FieldSpec{WireName: "container_app_name"},
-		"LogicAppName": ubx.FieldSpec{WireName: "logic_app_name"},
+		"LogicAppName":     ubx.FieldSpec{WireName: "logic_app_name"},
 	},
 }

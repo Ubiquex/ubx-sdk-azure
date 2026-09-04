@@ -3,7 +3,6 @@ import type { Computed, FieldMap, DataSourceBinding } from "@ubx/sdk";
 
 export interface IntegrationruntimeSelfHostedIntegrationRuntimeNodeConfig {
   integrationRuntimeName: string | Computed<string>;
-  nodeName: string | Computed<string>;
 }
 
 export interface IntegrationruntimeSelfHostedIntegrationRuntimeNodeAttrs {
@@ -49,6 +48,5 @@ export const IntegrationruntimeSelfHostedIntegrationRuntimeNode: DataSourceBindi
   wireType: "azure_synapse_integrationruntime_self_hosted_integration_runtime_node",
   fields: {
     integrationRuntimeName: "integration_runtime_name",
-    nodeName: "node_name",
   },
 };

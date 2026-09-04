@@ -4,48 +4,48 @@ package monitor
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Value_Properties_Actions struct {
-	ActionGroups any
+	ActionGroups     any
 	ActionProperties any
 	CustomProperties any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Value_Properties_Criteria_AllOf_Dimensions struct {
-	Name any
+	Name     any
 	Operator any
-	Values any
+	Values   any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Value_Properties_Criteria_AllOf_FailingPeriods struct {
-	MinFailingPeriodsToAlert any
+	MinFailingPeriodsToAlert  any
 	NumberOfEvaluationPeriods any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Value_Properties_Criteria_AllOf struct {
-	AlertSensitivity any
-	CriterionType any
-	Dimensions any
-	FailingPeriods any
-	IgnoreDataBefore any
+	AlertSensitivity    any
+	CriterionType       any
+	Dimensions          any
+	FailingPeriods      any
+	IgnoreDataBefore    any
 	MetricMeasureColumn any
-	MetricName any
-	MinRecurrenceCount any
-	Operator any
-	Query any
-	ResourceIdColumn any
-	Threshold any
-	TimeAggregation any
+	MetricName          any
+	MinRecurrenceCount  any
+	Operator            any
+	Query               any
+	ResourceIdColumn    any
+	Threshold           any
+	TimeAggregation     any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Value_Properties_Criteria struct {
@@ -53,52 +53,52 @@ type ScheduledqueryruleApiScheduledQueryRuleResource_Value_Properties_Criteria s
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Value_Properties_ResolveConfiguration struct {
-	AutoResolved any
+	AutoResolved  any
 	TimeToResolve any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Value_Properties struct {
-	Actions any
-	AutoMitigate any
+	Actions                               any
+	AutoMitigate                          any
 	CheckWorkspaceAlertsStorageConfigured any
-	CreatedWithApiVersion any
-	Criteria any
-	Description any
-	DisplayName any
-	Enabled any
-	EvaluationFrequency any
-	IsLegacyLogAnalyticsRule any
-	IsWorkspaceAlertsStorageConfigured any
-	MuteActionsDuration any
-	OverrideQueryTimeRange any
-	ResolveConfiguration any
-	Scopes any
-	Severity any
-	SkipQueryValidation any
-	TargetResourceTypes any
-	WindowSize any
+	CreatedWithApiVersion                 any
+	Criteria                              any
+	Description                           any
+	DisplayName                           any
+	Enabled                               any
+	EvaluationFrequency                   any
+	IsLegacyLogAnalyticsRule              any
+	IsWorkspaceAlertsStorageConfigured    any
+	MuteActionsDuration                   any
+	OverrideQueryTimeRange                any
+	ResolveConfiguration                  any
+	Scopes                                any
+	Severity                              any
+	SkipQueryValidation                   any
+	TargetResourceTypes                   any
+	WindowSize                            any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResource_Value struct {
-	Etag any
-	Id any
-	Identity any
-	Kind any
-	Location any
-	Name any
+	Etag       any
+	Id         any
+	Identity   any
+	Kind       any
+	Location   any
+	Name       any
 	Properties any
 	SystemData any
-	Tags any
-	Type any
+	Tags       any
+	Type       any
 }
 
 type ScheduledqueryruleApiScheduledQueryRuleResourceConfig struct {
@@ -113,6 +113,5 @@ type ScheduledqueryruleApiScheduledQueryRuleResourceAttrs struct {
 
 var ScheduledqueryruleApiScheduledQueryRuleResource = ubx.DataSourceBinding{
 	WireType: "azure_monitor_scheduledqueryrule_api_scheduled_query_rule_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

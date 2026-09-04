@@ -4,13 +4,13 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkloadNetworkPortMirroring_Value_Properties struct {
-	Destination any
-	Direction any
-	DisplayName any
+	Destination       any
+	Direction         any
+	DisplayName       any
 	ProvisioningState any
-	Revision any
-	Source any
-	Status any
+	Revision          any
+	Source            any
+	Status            any
 }
 
 type WorkloadNetworkPortMirroring_Value struct {
@@ -23,7 +23,7 @@ type WorkloadNetworkPortMirroringConfig struct {
 
 type WorkloadNetworkPortMirroringAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The WorkloadNetworkPortMirroring items on this page
 	Value any

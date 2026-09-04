@@ -5,10 +5,10 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStatistics_Value struct {
 	CounterProperty any
-	CounterValue any
-	EndTime any
-	Id any
-	StartTime any
+	CounterValue    any
+	EndTime         any
+	Id              any
+	StartTime       any
 }
 
 type OpenapiStatisticsConfig struct {
@@ -17,7 +17,7 @@ type OpenapiStatisticsConfig struct {
 
 type OpenapiStatisticsAttrs struct {
 	AutomationAccountName any
-	NextLink any
+	NextLink              any
 	// Gets or sets a list of statistics.
 	Value any
 }

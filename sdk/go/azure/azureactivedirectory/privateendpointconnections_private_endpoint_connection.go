@@ -34,37 +34,37 @@ type PrivateendpointconnectionsPrivateEndpointConnection_Properties struct {
 }
 
 var PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateLinkConnectionTagsFields = ubx.FieldMap{
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"Tags": ubx.FieldSpec{WireName: "tags"},
+}
 
 var PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var PrivateendpointconnectionsPrivateEndpointConnection_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkConnectionTags": ubx.FieldSpec{
-			WireName: "private_link_connection_tags",
-			Kind: "object",
-			Fields: PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateLinkConnectionTagsFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkConnectionTags": ubx.FieldSpec{
+		WireName: "private_link_connection_tags",
+		Kind:     "object",
+		Fields:   PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateLinkConnectionTagsFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   PrivateendpointconnectionsPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type PrivateendpointconnectionsPrivateEndpointConnectionConfig struct {
 	// Properties of the private endpoint connection resource.
@@ -81,8 +81,8 @@ var PrivateendpointconnectionsPrivateEndpointConnection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PrivateendpointconnectionsPrivateEndpointConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   PrivateendpointconnectionsPrivateEndpointConnection_PropertiesFields,
 		},
 	},
 }

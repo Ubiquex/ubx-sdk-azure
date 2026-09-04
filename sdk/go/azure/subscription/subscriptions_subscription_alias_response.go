@@ -15,16 +15,30 @@ type SubscriptionsSubscriptionAliasResponse_Properties_AdditionalProperties stru
 }
 
 type SubscriptionsSubscriptionAliasResponse_Properties struct {
+	// The accept ownership state of the resource.
+	AcceptOwnershipState any
+	// Url to accept ownership of the subscription.
+	AcceptOwnershipUrl any
 	// Put subscription additional properties.
 	AdditionalProperties any
 	// Billing scope of the subscription. For CustomerLed and FieldLed - /billingAccounts/{billingAccountName}/billingProfiles/{billingProfileName}/invoiceSections/{invoiceSectionName} For PartnerLed - /billingAccounts/{billingAccountName}/customers/{customerName} For Legacy EA - /billingAccounts/{billingAccountName}/enrollmentAccounts/{enrollmentAccountName}
 	BillingScope any
+	// Created Time
+	CreatedTime any
 	// The friendly name of the subscription.
 	DisplayName any
+	// The Management Group Id.
+	ManagementGroupId any
+	// The provisioning state of the resource.
+	ProvisioningState any
 	// Reseller Id
 	ResellerId any
 	// This parameter can be used to create alias for existing subscription Id
 	SubscriptionId any
+	// Owner Id of the subscription
+	SubscriptionOwnerId any
+	// Tags for the subscription
+	Tags any
 	// The workload type of the subscription. It can be either Production or DevTest.
 	Workload any
 }
@@ -45,24 +59,31 @@ type SubscriptionsSubscriptionAliasResponse_SystemData struct {
 }
 
 var SubscriptionsSubscriptionAliasResponse_Properties_AdditionalPropertiesFields = ubx.FieldMap{
-		"ManagementGroupId": ubx.FieldSpec{WireName: "management_group_id"},
-		"SubscriptionOwnerId": ubx.FieldSpec{WireName: "subscription_owner_id"},
-		"SubscriptionTenantId": ubx.FieldSpec{WireName: "subscription_tenant_id"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"ManagementGroupId":    ubx.FieldSpec{WireName: "management_group_id"},
+	"SubscriptionOwnerId":  ubx.FieldSpec{WireName: "subscription_owner_id"},
+	"SubscriptionTenantId": ubx.FieldSpec{WireName: "subscription_tenant_id"},
+	"Tags":                 ubx.FieldSpec{WireName: "tags"},
+}
 
 var SubscriptionsSubscriptionAliasResponse_PropertiesFields = ubx.FieldMap{
-		"AdditionalProperties": ubx.FieldSpec{
-			WireName: "additional_properties",
-			Kind: "object",
-			Fields: SubscriptionsSubscriptionAliasResponse_Properties_AdditionalPropertiesFields,
-		},
-		"BillingScope": ubx.FieldSpec{WireName: "billing_scope"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"ResellerId": ubx.FieldSpec{WireName: "reseller_id"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"Workload": ubx.FieldSpec{WireName: "workload"},
-	}
+	"AcceptOwnershipState": ubx.FieldSpec{WireName: "accept_ownership_state"},
+	"AcceptOwnershipUrl":   ubx.FieldSpec{WireName: "accept_ownership_url"},
+	"AdditionalProperties": ubx.FieldSpec{
+		WireName: "additional_properties",
+		Kind:     "object",
+		Fields:   SubscriptionsSubscriptionAliasResponse_Properties_AdditionalPropertiesFields,
+	},
+	"BillingScope":        ubx.FieldSpec{WireName: "billing_scope"},
+	"CreatedTime":         ubx.FieldSpec{WireName: "created_time"},
+	"DisplayName":         ubx.FieldSpec{WireName: "display_name"},
+	"ManagementGroupId":   ubx.FieldSpec{WireName: "management_group_id"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResellerId":          ubx.FieldSpec{WireName: "reseller_id"},
+	"SubscriptionId":      ubx.FieldSpec{WireName: "subscription_id"},
+	"SubscriptionOwnerId": ubx.FieldSpec{WireName: "subscription_owner_id"},
+	"Tags":                ubx.FieldSpec{WireName: "tags"},
+	"Workload":            ubx.FieldSpec{WireName: "workload"},
+}
 
 type SubscriptionsSubscriptionAliasResponseConfig struct {
 	// Put subscription properties.
@@ -87,8 +108,8 @@ var SubscriptionsSubscriptionAliasResponse = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SubscriptionsSubscriptionAliasResponse_PropertiesFields,
+			Kind:     "object",
+			Fields:   SubscriptionsSubscriptionAliasResponse_PropertiesFields,
 		},
 	},
 }

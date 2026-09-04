@@ -17,12 +17,12 @@ type ProjectCapabilityHost_Properties struct {
 }
 
 var ProjectCapabilityHost_PropertiesFields = ubx.FieldMap{
-		"AiServicesConnections": ubx.FieldSpec{WireName: "ai_services_connections"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StorageConnections": ubx.FieldSpec{WireName: "storage_connections"},
-		"ThreadStorageConnections": ubx.FieldSpec{WireName: "thread_storage_connections"},
-		"VectorStoreConnections": ubx.FieldSpec{WireName: "vector_store_connections"},
-	}
+	"AiServicesConnections":    ubx.FieldSpec{WireName: "ai_services_connections"},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"StorageConnections":       ubx.FieldSpec{WireName: "storage_connections"},
+	"ThreadStorageConnections": ubx.FieldSpec{WireName: "thread_storage_connections"},
+	"VectorStoreConnections":   ubx.FieldSpec{WireName: "vector_store_connections"},
+}
 
 type ProjectCapabilityHostConfig struct {
 	Properties any
@@ -37,8 +37,8 @@ var ProjectCapabilityHost = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ProjectCapabilityHost_PropertiesFields,
+			Kind:     "object",
+			Fields:   ProjectCapabilityHost_PropertiesFields,
 		},
 	},
 }

@@ -8,6 +8,21 @@ export interface OpenapiPackage_AllOf {
   tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
+export interface OpenapiPackage_Properties_AllOf {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 export interface OpenapiPackage_Properties_ContentLink_ContentHash {
   /** Gets or sets the content hash algorithm used to hash the content. */
   algorithm: string | Computed<string>;
@@ -24,14 +39,42 @@ export interface OpenapiPackage_Properties_ContentLink {
   version?: string | Computed<string>;
 }
 
+export interface OpenapiPackage_Properties_Error {
+  /** Package import error code. */
+  code?: string | Computed<string>;
+  /** Package import error message. */
+  message?: string | Computed<string>;
+}
+
 export interface OpenapiPackage_Properties {
+  /** Metadata pertaining to creation and last modification of the resource. */
+  allOf?: OpenapiPackage_Properties_AllOf | Computed<OpenapiPackage_Properties_AllOf>;
   /** Definition of the content link. */
   contentLink: OpenapiPackage_Properties_ContentLink | Computed<OpenapiPackage_Properties_ContentLink>;
+  /** Gets or sets the isGlobal flag of the package. */
+  default?: boolean | Computed<boolean>;
+  /** Definition of the package error info type. */
+  error?: OpenapiPackage_Properties_Error | Computed<OpenapiPackage_Properties_Error>;
+  /** Gets or sets the provisioning state of the Package. */
+  provisioningState?: string | Computed<string>;
+  /** Gets or sets the size in bytes of the Package. */
+  sizeInBytes?: number | Computed<number>;
+  /** Gets or sets the version of the Package. */
+  version?: string | Computed<string>;
 }
 
 const OpenapiPackage_AllOfFields: FieldMap = {
   location: "location",
   tags: "tags",
+};
+
+const OpenapiPackage_Properties_AllOfFields: FieldMap = {
+  createdAt: "created_at",
+  createdBy: "created_by",
+  createdByType: "created_by_type",
+  lastModifiedAt: "last_modified_at",
+  lastModifiedBy: "last_modified_by",
+  lastModifiedByType: "last_modified_by_type",
 };
 
 const OpenapiPackage_Properties_ContentLink_ContentHashFields: FieldMap = {
@@ -49,12 +92,31 @@ const OpenapiPackage_Properties_ContentLinkFields: FieldMap = {
   version: "version",
 };
 
+const OpenapiPackage_Properties_ErrorFields: FieldMap = {
+  code: "code",
+  message: "message",
+};
+
 const OpenapiPackage_PropertiesFields: FieldMap = {
+  allOf: {
+    wireName: "all_of",
+    kind: "object",
+    fields: OpenapiPackage_Properties_AllOfFields,
+  },
   contentLink: {
     wireName: "content_link",
     kind: "object",
     fields: OpenapiPackage_Properties_ContentLinkFields,
   },
+  default: "default",
+  error: {
+    wireName: "error",
+    kind: "object",
+    fields: OpenapiPackage_Properties_ErrorFields,
+  },
+  provisioningState: "provisioning_state",
+  sizeInBytes: "size_in_bytes",
+  version: "version",
 };
 
 export interface OpenapiPackageConfig {

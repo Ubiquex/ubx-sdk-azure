@@ -7,6 +7,13 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class ExternalidentitiesB2CtenantResource_Properties_BillingConfig:
+    # The type of billing. Will be MAU for all new customers. If 'Auths', it can be updated to 'MAU'. Cannot be changed if value is 'MAU'. Learn more about Azure AD B2C billing at [aka.ms/b2cBilling](https://aka.ms/b2cbilling).
+    billing_type: Any = None
+    # The data from which the billing type took effect
+    effective_start_date_utc: Any = None
+
+@dataclasses.dataclass
 class ExternalidentitiesB2CtenantResource_Properties_CreateTenantProperties:
     # Country code of Azure tenant (e.g. 'US'). Refer to [aka.ms/B2CDataResidency](https://aka.ms/B2CDataResidency) to see valid country codes and corresponding data residency locations. If you do not see a country code in an valid data residency location, choose one from the list.
     country_code: Any = None
@@ -15,8 +22,12 @@ class ExternalidentitiesB2CtenantResource_Properties_CreateTenantProperties:
 
 @dataclasses.dataclass
 class ExternalidentitiesB2CtenantResource_Properties:
+    # The billing configuration for the tenant.
+    billing_config: Any = None
     # These properties are used to create the Azure AD B2C tenant. These properties are not part of the Azure resource.
     create_tenant_properties: Any = None
+    # An identifier of the Azure AD B2C tenant.
+    tenant_id: Any = None
 
 @dataclasses.dataclass
 class ExternalidentitiesB2CtenantResource_Sku:
@@ -40,17 +51,28 @@ class ExternalidentitiesB2CtenantResource_SystemData:
     # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
 
+_ExternalidentitiesB2CtenantResource_Properties_BillingConfigFields = {
+    "billing_type": ubx.FieldSpec(wire_name="billing_type"),
+    "effective_start_date_utc": ubx.FieldSpec(wire_name="effective_start_date_utc"),
+}
+
 _ExternalidentitiesB2CtenantResource_Properties_CreateTenantPropertiesFields = {
     "country_code": ubx.FieldSpec(wire_name="country_code"),
     "display_name": ubx.FieldSpec(wire_name="display_name"),
 }
 
 _ExternalidentitiesB2CtenantResource_PropertiesFields = {
+    "billing_config": ubx.FieldSpec(
+        wire_name="billing_config",
+        kind="object",
+        fields=_ExternalidentitiesB2CtenantResource_Properties_BillingConfigFields,
+    ),
     "create_tenant_properties": ubx.FieldSpec(
         wire_name="create_tenant_properties",
         kind="object",
         fields=_ExternalidentitiesB2CtenantResource_Properties_CreateTenantPropertiesFields,
     ),
+    "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
 }
 
 _ExternalidentitiesB2CtenantResource_SkuFields = {

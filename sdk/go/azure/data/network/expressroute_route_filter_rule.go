@@ -4,16 +4,16 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteRouteFilterRule_Value_Properties struct {
-	Access any
-	Communities any
-	ProvisioningState any
+	Access              any
+	Communities         any
+	ProvisioningState   any
 	RouteFilterRuleType any
 }
 
 type ExpressrouteRouteFilterRule_Value struct {
-	Etag any
-	Location any
-	Name any
+	Etag       any
+	Location   any
+	Name       any
 	Properties any
 }
 
@@ -23,7 +23,7 @@ type ExpressrouteRouteFilterRuleConfig struct {
 
 type ExpressrouteRouteFilterRuleAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink        any
 	RouteFilterName any
 	// The RouteFilterRule items on this page
 	Value any

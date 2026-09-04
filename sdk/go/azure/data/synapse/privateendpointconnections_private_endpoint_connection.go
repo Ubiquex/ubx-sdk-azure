@@ -9,14 +9,14 @@ type PrivateendpointconnectionsPrivateEndpointConnection_Value_Properties_Privat
 
 type PrivateendpointconnectionsPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivateendpointconnectionsPrivateEndpointConnection_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type PrivateendpointconnectionsPrivateEndpointConnection_Value struct {
@@ -35,6 +35,5 @@ type PrivateendpointconnectionsPrivateEndpointConnectionAttrs struct {
 
 var PrivateendpointconnectionsPrivateEndpointConnection = ubx.DataSourceBinding{
 	WireType: "azure_synapse_privateendpointconnections_private_endpoint_connection",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

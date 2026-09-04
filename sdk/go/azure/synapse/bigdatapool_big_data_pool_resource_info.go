@@ -20,13 +20,13 @@ type BigdatapoolBigDataPoolResourceInfo_Properties_AutoScale struct {
 }
 
 type BigdatapoolBigDataPoolResourceInfo_Properties_CustomLibraries struct {
-	ContainerName any
-	CreatorId any
-	Name any
-	Path any
+	ContainerName      any
+	CreatorId          any
+	Name               any
+	Path               any
 	ProvisioningStatus any
-	Type any
-	UploadedTimestamp any
+	Type               any
+	UploadedTimestamp  any
 }
 
 type BigdatapoolBigDataPoolResourceInfo_Properties_DynamicExecutorAllocation struct {
@@ -100,90 +100,90 @@ type BigdatapoolBigDataPoolResourceInfo_Properties struct {
 }
 
 var BigdatapoolBigDataPoolResourceInfo_Properties_AutoPauseFields = ubx.FieldMap{
-		"DelayInMinutes": ubx.FieldSpec{WireName: "delay_in_minutes"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	}
+	"DelayInMinutes": ubx.FieldSpec{WireName: "delay_in_minutes"},
+	"Enabled":        ubx.FieldSpec{WireName: "enabled"},
+}
 
 var BigdatapoolBigDataPoolResourceInfo_Properties_AutoScaleFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"MaxNodeCount": ubx.FieldSpec{WireName: "max_node_count"},
-		"MinNodeCount": ubx.FieldSpec{WireName: "min_node_count"},
-	}
+	"Enabled":      ubx.FieldSpec{WireName: "enabled"},
+	"MaxNodeCount": ubx.FieldSpec{WireName: "max_node_count"},
+	"MinNodeCount": ubx.FieldSpec{WireName: "min_node_count"},
+}
 
 var BigdatapoolBigDataPoolResourceInfo_Properties_CustomLibrariesFields = ubx.FieldMap{
-		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"CreatorId": ubx.FieldSpec{WireName: "creator_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"ProvisioningStatus": ubx.FieldSpec{WireName: "provisioning_status"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UploadedTimestamp": ubx.FieldSpec{WireName: "uploaded_timestamp"},
-	}
+	"ContainerName":      ubx.FieldSpec{WireName: "container_name"},
+	"CreatorId":          ubx.FieldSpec{WireName: "creator_id"},
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"Path":               ubx.FieldSpec{WireName: "path"},
+	"ProvisioningStatus": ubx.FieldSpec{WireName: "provisioning_status"},
+	"Type":               ubx.FieldSpec{WireName: "type"},
+	"UploadedTimestamp":  ubx.FieldSpec{WireName: "uploaded_timestamp"},
+}
 
 var BigdatapoolBigDataPoolResourceInfo_Properties_DynamicExecutorAllocationFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"MaxExecutors": ubx.FieldSpec{WireName: "max_executors"},
-		"MinExecutors": ubx.FieldSpec{WireName: "min_executors"},
-	}
+	"Enabled":      ubx.FieldSpec{WireName: "enabled"},
+	"MaxExecutors": ubx.FieldSpec{WireName: "max_executors"},
+	"MinExecutors": ubx.FieldSpec{WireName: "min_executors"},
+}
 
 var BigdatapoolBigDataPoolResourceInfo_Properties_LibraryRequirementsFields = ubx.FieldMap{
-		"Content": ubx.FieldSpec{WireName: "content"},
-		"Filename": ubx.FieldSpec{WireName: "filename"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Content":  ubx.FieldSpec{WireName: "content"},
+	"Filename": ubx.FieldSpec{WireName: "filename"},
+	"Time":     ubx.FieldSpec{WireName: "time"},
+}
 
 var BigdatapoolBigDataPoolResourceInfo_Properties_SparkConfigPropertiesFields = ubx.FieldMap{
-		"ConfigurationType": ubx.FieldSpec{WireName: "configuration_type"},
-		"Content": ubx.FieldSpec{WireName: "content"},
-		"Filename": ubx.FieldSpec{WireName: "filename"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"ConfigurationType": ubx.FieldSpec{WireName: "configuration_type"},
+	"Content":           ubx.FieldSpec{WireName: "content"},
+	"Filename":          ubx.FieldSpec{WireName: "filename"},
+	"Time":              ubx.FieldSpec{WireName: "time"},
+}
 
 var BigdatapoolBigDataPoolResourceInfo_PropertiesFields = ubx.FieldMap{
-		"AutoPause": ubx.FieldSpec{
-			WireName: "auto_pause",
-			Kind: "object",
-			Fields: BigdatapoolBigDataPoolResourceInfo_Properties_AutoPauseFields,
-		},
-		"AutoScale": ubx.FieldSpec{
-			WireName: "auto_scale",
-			Kind: "object",
-			Fields: BigdatapoolBigDataPoolResourceInfo_Properties_AutoScaleFields,
-		},
-		"CacheSize": ubx.FieldSpec{WireName: "cache_size"},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"CustomLibraries": ubx.FieldSpec{
-			WireName: "custom_libraries",
-			Kind: "list",
-			Fields: BigdatapoolBigDataPoolResourceInfo_Properties_CustomLibrariesFields,
-		},
-		"DefaultSparkLogFolder": ubx.FieldSpec{WireName: "default_spark_log_folder"},
-		"DynamicExecutorAllocation": ubx.FieldSpec{
-			WireName: "dynamic_executor_allocation",
-			Kind: "object",
-			Fields: BigdatapoolBigDataPoolResourceInfo_Properties_DynamicExecutorAllocationFields,
-		},
-		"IsAutotuneEnabled": ubx.FieldSpec{WireName: "is_autotune_enabled"},
-		"IsComputeIsolationEnabled": ubx.FieldSpec{WireName: "is_compute_isolation_enabled"},
-		"LastSucceededTimestamp": ubx.FieldSpec{WireName: "last_succeeded_timestamp"},
-		"LibraryRequirements": ubx.FieldSpec{
-			WireName: "library_requirements",
-			Kind: "object",
-			Fields: BigdatapoolBigDataPoolResourceInfo_Properties_LibraryRequirementsFields,
-		},
-		"NodeCount": ubx.FieldSpec{WireName: "node_count"},
-		"NodeSize": ubx.FieldSpec{WireName: "node_size"},
-		"NodeSizeFamily": ubx.FieldSpec{WireName: "node_size_family"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SessionLevelPackagesEnabled": ubx.FieldSpec{WireName: "session_level_packages_enabled"},
-		"SparkConfigProperties": ubx.FieldSpec{
-			WireName: "spark_config_properties",
-			Kind: "object",
-			Fields: BigdatapoolBigDataPoolResourceInfo_Properties_SparkConfigPropertiesFields,
-		},
-		"SparkEventsFolder": ubx.FieldSpec{WireName: "spark_events_folder"},
-		"SparkVersion": ubx.FieldSpec{WireName: "spark_version"},
-	}
+	"AutoPause": ubx.FieldSpec{
+		WireName: "auto_pause",
+		Kind:     "object",
+		Fields:   BigdatapoolBigDataPoolResourceInfo_Properties_AutoPauseFields,
+	},
+	"AutoScale": ubx.FieldSpec{
+		WireName: "auto_scale",
+		Kind:     "object",
+		Fields:   BigdatapoolBigDataPoolResourceInfo_Properties_AutoScaleFields,
+	},
+	"CacheSize":    ubx.FieldSpec{WireName: "cache_size"},
+	"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
+	"CustomLibraries": ubx.FieldSpec{
+		WireName: "custom_libraries",
+		Kind:     "list",
+		Fields:   BigdatapoolBigDataPoolResourceInfo_Properties_CustomLibrariesFields,
+	},
+	"DefaultSparkLogFolder": ubx.FieldSpec{WireName: "default_spark_log_folder"},
+	"DynamicExecutorAllocation": ubx.FieldSpec{
+		WireName: "dynamic_executor_allocation",
+		Kind:     "object",
+		Fields:   BigdatapoolBigDataPoolResourceInfo_Properties_DynamicExecutorAllocationFields,
+	},
+	"IsAutotuneEnabled":         ubx.FieldSpec{WireName: "is_autotune_enabled"},
+	"IsComputeIsolationEnabled": ubx.FieldSpec{WireName: "is_compute_isolation_enabled"},
+	"LastSucceededTimestamp":    ubx.FieldSpec{WireName: "last_succeeded_timestamp"},
+	"LibraryRequirements": ubx.FieldSpec{
+		WireName: "library_requirements",
+		Kind:     "object",
+		Fields:   BigdatapoolBigDataPoolResourceInfo_Properties_LibraryRequirementsFields,
+	},
+	"NodeCount":                   ubx.FieldSpec{WireName: "node_count"},
+	"NodeSize":                    ubx.FieldSpec{WireName: "node_size"},
+	"NodeSizeFamily":              ubx.FieldSpec{WireName: "node_size_family"},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+	"SessionLevelPackagesEnabled": ubx.FieldSpec{WireName: "session_level_packages_enabled"},
+	"SparkConfigProperties": ubx.FieldSpec{
+		WireName: "spark_config_properties",
+		Kind:     "object",
+		Fields:   BigdatapoolBigDataPoolResourceInfo_Properties_SparkConfigPropertiesFields,
+	},
+	"SparkEventsFolder": ubx.FieldSpec{WireName: "spark_events_folder"},
+	"SparkVersion":      ubx.FieldSpec{WireName: "spark_version"},
+}
 
 type BigdatapoolBigDataPoolResourceInfoConfig struct {
 	// Properties of a Big Data pool powered by Apache Spark
@@ -200,8 +200,8 @@ var BigdatapoolBigDataPoolResourceInfo = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BigdatapoolBigDataPoolResourceInfo_PropertiesFields,
+			Kind:     "object",
+			Fields:   BigdatapoolBigDataPoolResourceInfo_PropertiesFields,
 		},
 	},
 }

@@ -4,7 +4,7 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiExtensionType_Value struct {
-	Id any
+	Id   any
 	Name any
 }
 
@@ -14,7 +14,7 @@ type OpenapiExtensionTypeConfig struct {
 
 type OpenapiExtensionTypeAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink  any
 	Publisher any
 	// The ExtensionType items on this page
 	Value any

@@ -4,12 +4,12 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCertificate_Value_Properties struct {
-	CreationTime any
-	Description any
-	ExpiryTime any
-	IsExportable any
+	CreationTime     any
+	Description      any
+	ExpiryTime       any
+	IsExportable     any
 	LastModifiedTime any
-	Thumbprint any
+	Thumbprint       any
 }
 
 type OpenapiCertificate_Value struct {

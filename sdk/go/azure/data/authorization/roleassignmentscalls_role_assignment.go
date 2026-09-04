@@ -4,18 +4,18 @@ package authorization
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RoleassignmentscallsRoleAssignment_Value_Properties struct {
-	Condition any
-	ConditionVersion any
-	CreatedBy any
-	CreatedOn any
+	Condition                          any
+	ConditionVersion                   any
+	CreatedBy                          any
+	CreatedOn                          any
 	DelegatedManagedIdentityResourceId any
-	Description any
-	PrincipalId any
-	PrincipalType any
-	RoleDefinitionId any
-	Scope any
-	UpdatedBy any
-	UpdatedOn any
+	Description                        any
+	PrincipalId                        any
+	PrincipalType                      any
+	RoleDefinitionId                   any
+	Scope                              any
+	UpdatedBy                          any
+	UpdatedOn                          any
 }
 
 type RoleassignmentscallsRoleAssignment_Value struct {

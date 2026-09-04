@@ -11,8 +11,6 @@ const SqlserverDedicatedSqlminimalTlsSettings_PropertiesFields: FieldMap = {
 };
 
 export interface SqlserverDedicatedSqlminimalTlsSettingsConfig {
-  /** Resource location. */
-  location?: string | Computed<string>;
   /** Properties of a dedicated sql minimal tls settings. */
   properties?: SqlserverDedicatedSqlminimalTlsSettings_Properties | Computed<SqlserverDedicatedSqlminimalTlsSettings_Properties>;
 }
@@ -27,7 +25,6 @@ export interface SqlserverDedicatedSqlminimalTlsSettingsAttrs {
 export const SqlserverDedicatedSqlminimalTlsSettings: ResourceBinding<SqlserverDedicatedSqlminimalTlsSettingsConfig, SqlserverDedicatedSqlminimalTlsSettingsAttrs> = {
   wireType: "azure_synapse_sqlserver_dedicated_sqlminimal_tls_settings",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

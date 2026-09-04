@@ -4,15 +4,15 @@ package securityinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiThreatIntelligenceMetrics_Value_Properties_PatternTypeMetrics struct {
-	MetricName any
+	MetricName  any
 	MetricValue any
 }
 
 type OpenapiThreatIntelligenceMetrics_Value_Properties struct {
 	LastUpdatedTimeUtc any
 	PatternTypeMetrics any
-	SourceMetrics any
-	ThreatTypeMetrics any
+	SourceMetrics      any
+	ThreatTypeMetrics  any
 }
 
 type OpenapiThreatIntelligenceMetrics_Value struct {
@@ -25,7 +25,7 @@ type OpenapiThreatIntelligenceMetricsConfig struct {
 
 type OpenapiThreatIntelligenceMetricsAttrs struct {
 	// Array of threat intelligence metric fields (type/threat type/source).
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

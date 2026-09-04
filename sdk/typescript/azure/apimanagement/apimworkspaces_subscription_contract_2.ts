@@ -4,8 +4,16 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface ApimworkspacesSubscriptionContract2_Properties {
   /** Determines whether tracing can be enabled */
   allowTracing?: boolean | Computed<boolean>;
+  /** Subscription creation date. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard. */
+  createdDate?: string | Computed<string>;
   /** Subscription name. */
   displayName: string | Computed<string>;
+  /** Date when subscription was cancelled or expired. The setting is for audit purposes only and the subscription is not automatically cancelled. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard. */
+  endDate?: string | Computed<string>;
+  /** Subscription expiration date. The setting is for audit purposes only and the subscription is not automatically expired. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard. */
+  expirationDate?: string | Computed<string>;
+  /** Upcoming subscription expiration notification date. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard. */
+  notificationDate?: string | Computed<string>;
   /** User (user id path) for whom subscription is being created in form /users/{userId} */
   ownerId?: string | Computed<string>;
   /** Primary subscription key. If not specified during request key will be generated automatically. */
@@ -14,18 +22,28 @@ export interface ApimworkspacesSubscriptionContract2_Properties {
   scope: string | Computed<string>;
   /** Secondary subscription key. If not specified during request key will be generated automatically. */
   secondaryKey?: string | Computed<string>;
+  /** Subscription activation date. The setting is for audit purposes only and the subscription is not automatically activated. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard. */
+  startDate?: string | Computed<string>;
   /** Initial subscription state. If no value is specified, subscription is created with Submitted state. Possible states are * active – the subscription is active, * suspended – the subscription is blocked, and the subscriber cannot call any APIs of the product, * submitted – the subscription request has been made by the developer, but has not yet been approved or rejected, * rejected – the subscription request has been denied by an administrator, * cancelled – the subscription has been cancelled by the developer or administrator, * expired – the subscription reached its expiration date and was deactivated. */
   state?: string | Computed<string>;
+  /** Optional subscription comment added by an administrator when the state is changed to the 'rejected'. */
+  stateComment?: string | Computed<string>;
 }
 
 const ApimworkspacesSubscriptionContract2_PropertiesFields: FieldMap = {
   allowTracing: "allow_tracing",
+  createdDate: "created_date",
   displayName: "display_name",
+  endDate: "end_date",
+  expirationDate: "expiration_date",
+  notificationDate: "notification_date",
   ownerId: "owner_id",
   primaryKey: "primary_key",
   scope: "scope",
   secondaryKey: "secondary_key",
+  startDate: "start_date",
   state: "state",
+  stateComment: "state_comment",
 };
 
 export interface ApimworkspacesSubscriptionContract2Config {

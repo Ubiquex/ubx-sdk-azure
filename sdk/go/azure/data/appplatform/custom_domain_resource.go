@@ -4,10 +4,10 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CustomDomainResource_Value_Properties struct {
-	AppName any
-	CertName any
+	AppName           any
+	CertName          any
 	ProvisioningState any
-	Thumbprint any
+	Thumbprint        any
 }
 
 type CustomDomainResource_Value struct {
@@ -15,21 +15,21 @@ type CustomDomainResource_Value struct {
 }
 
 type CustomDomainResourceConfig struct {
-	ApiVersion any
-	AppName any
+	ApiVersion        any
+	AppName           any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type CustomDomainResourceAttrs struct {
 	ApiVersion any
-	AppName any
+	AppName    any
 	// The link to next page of custom domain list.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// The custom domain resources list.
 	Value any
 }
@@ -37,10 +37,10 @@ type CustomDomainResourceAttrs struct {
 var CustomDomainResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_custom_domain_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"AppName": ubx.FieldSpec{WireName: "app_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"AppName":           ubx.FieldSpec{WireName: "app_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

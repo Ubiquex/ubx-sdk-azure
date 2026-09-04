@@ -4,49 +4,49 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SreagentAgent_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type SreagentAgent_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type SreagentAgent_Value_Properties_ActionConfiguration struct {
 	AccessLevel any
-	Identity any
-	Mode any
+	Identity    any
+	Mode        any
 }
 
 type SreagentAgent_Value_Properties_AgentIdentity struct {
-	ClientId any
-	Enabled any
+	ClientId              any
+	Enabled               any
 	InitialSponsorGroupId any
 }
 
 type SreagentAgent_Value_Properties_DefaultModel struct {
-	Name any
+	Name     any
 	Provider any
 }
 
 type SreagentAgent_Value_Properties_IncidentManagementConfiguration struct {
-	ConnectionKey any
+	ConnectionKey  any
 	ConnectionName any
-	ConnectionUrl any
-	OboUser any
-	Type any
+	ConnectionUrl  any
+	OboUser        any
+	Type           any
 }
 
 type SreagentAgent_Value_Properties_KnowledgeGraphConfiguration struct {
-	Identity any
+	Identity         any
 	ManagedResources any
 }
 
 type SreagentAgent_Value_Properties_LogConfiguration_ApplicationInsightsConfiguration struct {
-	AppId any
+	AppId            any
 	ConnectionString any
 }
 
@@ -55,22 +55,22 @@ type SreagentAgent_Value_Properties_LogConfiguration struct {
 }
 
 type SreagentAgent_Value_Properties struct {
-	ActionConfiguration any
-	AgentEndpoint any
-	AgentIdentity any
-	AgentSpaceId any
-	DefaultModel any
+	ActionConfiguration             any
+	AgentEndpoint                   any
+	AgentIdentity                   any
+	AgentSpaceId                    any
+	DefaultModel                    any
 	IncidentManagementConfiguration any
-	KnowledgeGraphConfiguration any
-	LogConfiguration any
-	PowerState any
-	ProvisioningState any
-	RunningState any
-	UpgradeChannel any
+	KnowledgeGraphConfiguration     any
+	LogConfiguration                any
+	PowerState                      any
+	ProvisioningState               any
+	RunningState                    any
+	UpgradeChannel                  any
 }
 
 type SreagentAgent_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -86,6 +86,5 @@ type SreagentAgentAttrs struct {
 
 var SreagentAgent = ubx.DataSourceBinding{
 	WireType: "azure_app_sreagent_agent",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

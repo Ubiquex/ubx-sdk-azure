@@ -4,26 +4,26 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RestorepointsRestorePoint_Value_Properties struct {
-	EarliestRestoreDate any
+	EarliestRestoreDate      any
 	RestorePointCreationDate any
-	RestorePointLabel any
-	RestorePointType any
+	RestorePointLabel        any
+	RestorePointType         any
 }
 
 type RestorepointsRestorePoint_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type RestorepointsRestorePointConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type RestorepointsRestorePointAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The RestorePoint items on this page
 	Value any
@@ -33,6 +33,6 @@ var RestorepointsRestorePoint = ubx.DataSourceBinding{
 	WireType: "azure_sql_restorepoints_restore_point",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

@@ -4,13 +4,13 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiHttpRouteConfig_Value_Properties_CustomDomains struct {
-	BindingType any
+	BindingType   any
 	CertificateId any
-	Name any
+	Name          any
 }
 
 type OpenapiHttpRouteConfig_Value_Properties_ProvisioningErrors struct {
-	Message any
+	Message   any
 	Timestamp any
 }
 
@@ -19,35 +19,35 @@ type OpenapiHttpRouteConfig_Value_Properties_Rules_Routes_Action struct {
 }
 
 type OpenapiHttpRouteConfig_Value_Properties_Rules_Routes_Match struct {
-	CaseSensitive any
-	Path any
+	CaseSensitive       any
+	Path                any
 	PathSeparatedPrefix any
-	Prefix any
+	Prefix              any
 }
 
 type OpenapiHttpRouteConfig_Value_Properties_Rules_Routes struct {
 	Action any
-	Match any
+	Match  any
 }
 
 type OpenapiHttpRouteConfig_Value_Properties_Rules_Targets struct {
 	ContainerApp any
-	Label any
-	Revision any
+	Label        any
+	Revision     any
 }
 
 type OpenapiHttpRouteConfig_Value_Properties_Rules struct {
 	Description any
-	Routes any
-	Targets any
+	Routes      any
+	Targets     any
 }
 
 type OpenapiHttpRouteConfig_Value_Properties struct {
-	CustomDomains any
-	Fqdn any
+	CustomDomains      any
+	Fqdn               any
 	ProvisioningErrors any
-	ProvisioningState any
-	Rules any
+	ProvisioningState  any
+	Rules              any
 }
 
 type OpenapiHttpRouteConfig_Value struct {

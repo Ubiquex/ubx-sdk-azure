@@ -9,8 +9,8 @@ type OpenapiCodeContainer_Properties struct {
 }
 
 var OpenapiCodeContainer_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiCodeContainerConfig struct {
 	// Container for code asset versions.
@@ -27,8 +27,8 @@ var OpenapiCodeContainer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCodeContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCodeContainer_PropertiesFields,
 		},
 	},
 }

@@ -4,14 +4,14 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersMeshRevisionProfile_Value_Properties_MeshRevisions_CompatibleWith struct {
-	Name any
+	Name     any
 	Versions any
 }
 
 type ManagedclustersMeshRevisionProfile_Value_Properties_MeshRevisions struct {
 	CompatibleWith any
-	Revision any
-	Upgrades any
+	Revision       any
+	Upgrades       any
 }
 
 type ManagedclustersMeshRevisionProfile_Value_Properties struct {
@@ -34,6 +34,5 @@ type ManagedclustersMeshRevisionProfileAttrs struct {
 
 var ManagedclustersMeshRevisionProfile = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_managedclusters_mesh_revision_profile",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

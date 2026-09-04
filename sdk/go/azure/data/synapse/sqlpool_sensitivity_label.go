@@ -4,19 +4,19 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolSensitivityLabel_Value_Properties struct {
-	ColumnName any
-	InformationType any
+	ColumnName        any
+	InformationType   any
 	InformationTypeId any
-	IsDisabled any
-	LabelId any
-	LabelName any
-	Rank any
-	SchemaName any
-	TableName any
+	IsDisabled        any
+	LabelId           any
+	LabelName         any
+	Rank              any
+	SchemaName        any
+	TableName         any
 }
 
 type SqlpoolSensitivityLabel_Value struct {
-	ManagedBy any
+	ManagedBy  any
 	Properties any
 }
 
@@ -26,7 +26,7 @@ type SqlpoolSensitivityLabelConfig struct {
 
 type SqlpoolSensitivityLabelAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink    any
 	SqlPoolName any
 	// Array of results.
 	Value any

@@ -20,6 +20,5 @@ type VirtualnetworkEndpointServiceResultAttrs struct {
 
 var VirtualnetworkEndpointServiceResult = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_endpoint_service_result",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,10 +4,10 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApmResource_Value_Properties struct {
-	Properties any
+	Properties        any
 	ProvisioningState any
-	Secrets any
-	Type any
+	Secrets           any
+	Type              any
 }
 
 type ApmResource_Value struct {
@@ -15,19 +15,19 @@ type ApmResource_Value struct {
 }
 
 type ApmResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type ApmResourceAttrs struct {
 	ApiVersion any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of APM resources
 	Value any
 }
@@ -35,9 +35,9 @@ type ApmResourceAttrs struct {
 var ApmResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_apm_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

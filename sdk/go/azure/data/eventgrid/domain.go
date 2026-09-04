@@ -4,27 +4,27 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Domain_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type Domain_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type Domain_Value_Properties_EventTypeInfo_InlineEventTypes struct {
-	DataSchemaUrl any
-	Description any
-	DisplayName any
+	DataSchemaUrl    any
+	Description      any
+	DisplayName      any
 	DocumentationUrl any
 }
 
 type Domain_Value_Properties_EventTypeInfo struct {
 	InlineEventTypes any
-	Kind any
+	Kind             any
 }
 
 type Domain_Value_Properties_InboundIpRules struct {
@@ -42,15 +42,15 @@ type Domain_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoi
 
 type Domain_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Domain_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Domain_Value_Properties_PrivateEndpointConnections struct {
@@ -59,45 +59,45 @@ type Domain_Value_Properties_PrivateEndpointConnections struct {
 
 type Domain_Value_Properties struct {
 	AutoCreateTopicWithFirstSubscription any
-	AutoDeleteTopicWithLastSubscription any
-	DataResidencyBoundary any
-	DisableLocalAuth any
-	Endpoint any
-	EventTypeInfo any
-	InboundIpRules any
-	InputSchema any
-	InputSchemaMapping any
-	MetricResourceId any
-	MinimumTlsVersionAllowed any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
+	AutoDeleteTopicWithLastSubscription  any
+	DataResidencyBoundary                any
+	DisableLocalAuth                     any
+	Endpoint                             any
+	EventTypeInfo                        any
+	InboundIpRules                       any
+	InputSchema                          any
+	InputSchemaMapping                   any
+	MetricResourceId                     any
+	MinimumTlsVersionAllowed             any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	PublicNetworkAccess                  any
 }
 
 type Domain_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type Domain_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 	SystemData any
 }
 
 type DomainConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type DomainAttrs struct {
 	ApiVersion any
 	// A link for the next page of domains.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// A collection of Domains.
 	Value any
@@ -106,7 +106,7 @@ type DomainAttrs struct {
 var Domain = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_domain",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

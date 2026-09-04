@@ -11,11 +11,11 @@ type ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Capacity 
 type ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity struct {
 	MaxInstanceCount any
 	MinInstanceCount any
-	Time any
+	Time             any
 }
 
 type ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule struct {
-	Days any
+	Days            any
 	TimeAndCapacity any
 }
 
@@ -25,13 +25,13 @@ type ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrenc
 }
 
 type ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale struct {
-	Capacity any
+	Capacity   any
 	Recurrence any
 }
 
 type ApplicationsApplication_Properties_ComputeProfile_Roles_DataDisksGroups struct {
-	DiskSizeGb any
-	DisksPerNode any
+	DiskSizeGb         any
+	DisksPerNode       any
 	StorageAccountType any
 }
 
@@ -48,9 +48,9 @@ type ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOper
 }
 
 type ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile struct {
-	Password any
+	Password   any
 	SshProfile any
-	Username any
+	Username   any
 }
 
 type ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile struct {
@@ -58,28 +58,28 @@ type ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile struct {
 }
 
 type ApplicationsApplication_Properties_ComputeProfile_Roles_ScriptActions struct {
-	Name any
+	Name       any
 	Parameters any
-	Uri any
+	Uri        any
 }
 
 type ApplicationsApplication_Properties_ComputeProfile_Roles_VirtualNetworkProfile struct {
-	Id any
+	Id     any
 	Subnet any
 }
 
 type ApplicationsApplication_Properties_ComputeProfile_Roles struct {
-	Autoscale any
-	DataDisksGroups any
-	EncryptDataDisks any
-	HardwareProfile any
-	MinInstanceCount any
-	Name any
-	OsProfile any
-	ScriptActions any
-	TargetInstanceCount any
+	Autoscale             any
+	DataDisksGroups       any
+	EncryptDataDisks      any
+	HardwareProfile       any
+	MinInstanceCount      any
+	Name                  any
+	OsProfile             any
+	ScriptActions         any
+	TargetInstanceCount   any
 	VirtualNetworkProfile any
-	VmgroupName any
+	VmgroupName           any
 }
 
 type ApplicationsApplication_Properties_ComputeProfile struct {
@@ -88,26 +88,26 @@ type ApplicationsApplication_Properties_ComputeProfile struct {
 }
 
 type ApplicationsApplication_Properties_Errors struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type ApplicationsApplication_Properties_HttpsEndpoints struct {
-	AccessModes any
-	DestinationPort any
+	AccessModes        any
+	DestinationPort    any
 	DisableGatewayAuth any
-	Location any
-	PrivateIpaddress any
-	PublicPort any
-	SubDomainSuffix any
+	Location           any
+	PrivateIpaddress   any
+	PublicPort         any
+	SubDomainSuffix    any
 }
 
 type ApplicationsApplication_Properties_InstallScriptActions struct {
 	ApplicationName any
-	Name any
-	Parameters any
-	Roles any
-	Uri any
+	Name            any
+	Parameters      any
+	Roles           any
+	Uri             any
 }
 
 type ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_Subnet struct {
@@ -115,38 +115,38 @@ type ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpC
 }
 
 type ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
+	Primary                   any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties struct {
-	GroupId any
-	IpConfigurations any
+	GroupId           any
+	IpConfigurations  any
 	ProvisioningState any
 }
 
 type ApplicationsApplication_Properties_PrivateLinkConfigurations struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationsApplication_Properties_SshEndpoints struct {
-	DestinationPort any
-	Location any
+	DestinationPort  any
+	Location         any
 	PrivateIpaddress any
-	PublicPort any
+	PublicPort       any
 }
 
 type ApplicationsApplication_Properties struct {
@@ -192,281 +192,270 @@ type ApplicationsApplication_SystemData struct {
 }
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_CapacityFields = ubx.FieldMap{
-		"MaxInstanceCount": ubx.FieldSpec{WireName: "max_instance_count"},
-		"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
-	}
+	"MaxInstanceCount": ubx.FieldSpec{WireName: "max_instance_count"},
+	"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacityFields = ubx.FieldMap{
-		"MaxInstanceCount": ubx.FieldSpec{WireName: "max_instance_count"},
-		"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"MaxInstanceCount": ubx.FieldSpec{WireName: "max_instance_count"},
+	"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
+	"Time":             ubx.FieldSpec{WireName: "time"},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_ScheduleFields = ubx.FieldMap{
-		"Days": ubx.FieldSpec{WireName: "days"},
-		"TimeAndCapacity": ubx.FieldSpec{
-			WireName: "time_and_capacity",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacityFields,
-		},
-	}
+	"Days": ubx.FieldSpec{WireName: "days"},
+	"TimeAndCapacity": ubx.FieldSpec{
+		WireName: "time_and_capacity",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacityFields,
+	},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_RecurrenceFields = ubx.FieldMap{
-		"Schedule": ubx.FieldSpec{
-			WireName: "schedule",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_ScheduleFields,
-		},
-		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
-	}
+	"Schedule": ubx.FieldSpec{
+		WireName: "schedule",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_Recurrence_ScheduleFields,
+	},
+	"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_AutoscaleFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{
-			WireName: "capacity",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_CapacityFields,
-		},
-		"Recurrence": ubx.FieldSpec{
-			WireName: "recurrence",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_RecurrenceFields,
-		},
-	}
+	"Capacity": ubx.FieldSpec{
+		WireName: "capacity",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_CapacityFields,
+	},
+	"Recurrence": ubx.FieldSpec{
+		WireName: "recurrence",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_Autoscale_RecurrenceFields,
+	},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_DataDisksGroupsFields = ubx.FieldMap{
-		"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
-		"DisksPerNode": ubx.FieldSpec{WireName: "disks_per_node"},
-		"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
-	}
+	"DiskSizeGb":         ubx.FieldSpec{WireName: "disk_size_gb"},
+	"DisksPerNode":       ubx.FieldSpec{WireName: "disks_per_node"},
+	"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_HardwareProfileFields = ubx.FieldMap{
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-	}
+	"VmSize": ubx.FieldSpec{WireName: "vm_size"},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeysFields = ubx.FieldMap{
-		"CertificateData": ubx.FieldSpec{WireName: "certificate_data"},
-	}
+	"CertificateData": ubx.FieldSpec{WireName: "certificate_data"},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfileFields = ubx.FieldMap{
-		"PublicKeys": ubx.FieldSpec{
-			WireName: "public_keys",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeysFields,
-		},
-	}
+	"PublicKeys": ubx.FieldSpec{
+		WireName: "public_keys",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeysFields,
+	},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfileFields = ubx.FieldMap{
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"SshProfile": ubx.FieldSpec{
-			WireName: "ssh_profile",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfileFields,
-		},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"Password": ubx.FieldSpec{WireName: "password"},
+	"SshProfile": ubx.FieldSpec{
+		WireName: "ssh_profile",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfileFields,
+	},
+	"Username": ubx.FieldSpec{WireName: "username"},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfileFields = ubx.FieldMap{
-		"LinuxOperatingSystemProfile": ubx.FieldSpec{
-			WireName: "linux_operating_system_profile",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfileFields,
-		},
-	}
+	"LinuxOperatingSystemProfile": ubx.FieldSpec{
+		WireName: "linux_operating_system_profile",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfileFields,
+	},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_ScriptActionsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"Name":       ubx.FieldSpec{WireName: "name"},
+	"Parameters": ubx.FieldSpec{WireName: "parameters"},
+	"Uri":        ubx.FieldSpec{WireName: "uri"},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_Roles_VirtualNetworkProfileFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"Id":     ubx.FieldSpec{WireName: "id"},
+	"Subnet": ubx.FieldSpec{WireName: "subnet"},
+}
 
 var ApplicationsApplication_Properties_ComputeProfile_RolesFields = ubx.FieldMap{
-		"Autoscale": ubx.FieldSpec{
-			WireName: "autoscale",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_AutoscaleFields,
-		},
-		"DataDisksGroups": ubx.FieldSpec{
-			WireName: "data_disks_groups",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_DataDisksGroupsFields,
-		},
-		"EncryptDataDisks": ubx.FieldSpec{WireName: "encrypt_data_disks"},
-		"HardwareProfile": ubx.FieldSpec{
-			WireName: "hardware_profile",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_HardwareProfileFields,
-		},
-		"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"OsProfile": ubx.FieldSpec{
-			WireName: "os_profile",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfileFields,
-		},
-		"ScriptActions": ubx.FieldSpec{
-			WireName: "script_actions",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_ScriptActionsFields,
-		},
-		"TargetInstanceCount": ubx.FieldSpec{WireName: "target_instance_count"},
-		"VirtualNetworkProfile": ubx.FieldSpec{
-			WireName: "virtual_network_profile",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_Roles_VirtualNetworkProfileFields,
-		},
-		"VmgroupName": ubx.FieldSpec{WireName: "vmgroup_name"},
-	}
+	"Autoscale": ubx.FieldSpec{
+		WireName: "autoscale",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_AutoscaleFields,
+	},
+	"DataDisksGroups": ubx.FieldSpec{
+		WireName: "data_disks_groups",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_DataDisksGroupsFields,
+	},
+	"EncryptDataDisks": ubx.FieldSpec{WireName: "encrypt_data_disks"},
+	"HardwareProfile": ubx.FieldSpec{
+		WireName: "hardware_profile",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_HardwareProfileFields,
+	},
+	"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+	"OsProfile": ubx.FieldSpec{
+		WireName: "os_profile",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_OsProfileFields,
+	},
+	"ScriptActions": ubx.FieldSpec{
+		WireName: "script_actions",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_ScriptActionsFields,
+	},
+	"TargetInstanceCount": ubx.FieldSpec{WireName: "target_instance_count"},
+	"VirtualNetworkProfile": ubx.FieldSpec{
+		WireName: "virtual_network_profile",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_Roles_VirtualNetworkProfileFields,
+	},
+	"VmgroupName": ubx.FieldSpec{WireName: "vmgroup_name"},
+}
 
 var ApplicationsApplication_Properties_ComputeProfileFields = ubx.FieldMap{
-		"Roles": ubx.FieldSpec{
-			WireName: "roles",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_ComputeProfile_RolesFields,
-		},
-	}
+	"Roles": ubx.FieldSpec{
+		WireName: "roles",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_ComputeProfile_RolesFields,
+	},
+}
 
 var ApplicationsApplication_Properties_ErrorsFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var ApplicationsApplication_Properties_HttpsEndpointsFields = ubx.FieldMap{
-		"AccessModes": ubx.FieldSpec{WireName: "access_modes"},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"DisableGatewayAuth": ubx.FieldSpec{WireName: "disable_gateway_auth"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PublicPort": ubx.FieldSpec{WireName: "public_port"},
-		"SubDomainSuffix": ubx.FieldSpec{WireName: "sub_domain_suffix"},
-	}
+	"AccessModes":        ubx.FieldSpec{WireName: "access_modes"},
+	"DestinationPort":    ubx.FieldSpec{WireName: "destination_port"},
+	"DisableGatewayAuth": ubx.FieldSpec{WireName: "disable_gateway_auth"},
+	"Location":           ubx.FieldSpec{WireName: "location"},
+	"PrivateIpaddress":   ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PublicPort":         ubx.FieldSpec{WireName: "public_port"},
+	"SubDomainSuffix":    ubx.FieldSpec{WireName: "sub_domain_suffix"},
+}
 
 var ApplicationsApplication_Properties_InstallScriptActionsFields = ubx.FieldMap{
-		"ApplicationName": ubx.FieldSpec{WireName: "application_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"Roles": ubx.FieldSpec{WireName: "roles"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"ApplicationName": ubx.FieldSpec{WireName: "application_name"},
+	"Name":            ubx.FieldSpec{WireName: "name"},
+	"Parameters":      ubx.FieldSpec{WireName: "parameters"},
+	"Roles":           ubx.FieldSpec{WireName: "roles"},
+	"Uri":             ubx.FieldSpec{WireName: "uri"},
+}
 
 var ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_SubnetFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_SubnetFields,
-		},
-	}
+	"Primary":                   ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_SubnetFields,
+	},
+}
 
 var ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationsApplication_Properties_PrivateLinkConfigurations_PropertiesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupId": ubx.FieldSpec{WireName: "group_id"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_PrivateLinkConfigurations_Properties_IpConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationsApplication_Properties_PrivateLinkConfigurationsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_PrivateLinkConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_PrivateLinkConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationsApplication_Properties_SshEndpointsFields = ubx.FieldMap{
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PublicPort": ubx.FieldSpec{WireName: "public_port"},
-	}
+	"DestinationPort":  ubx.FieldSpec{WireName: "destination_port"},
+	"Location":         ubx.FieldSpec{WireName: "location"},
+	"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PublicPort":       ubx.FieldSpec{WireName: "public_port"},
+}
 
 var ApplicationsApplication_PropertiesFields = ubx.FieldMap{
-		"ApplicationState": ubx.FieldSpec{WireName: "application_state"},
-		"ApplicationType": ubx.FieldSpec{WireName: "application_type"},
-		"ComputeProfile": ubx.FieldSpec{
-			WireName: "compute_profile",
-			Kind: "object",
-			Fields: ApplicationsApplication_Properties_ComputeProfileFields,
-		},
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"Errors": ubx.FieldSpec{
-			WireName: "errors",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_ErrorsFields,
-		},
-		"HttpsEndpoints": ubx.FieldSpec{
-			WireName: "https_endpoints",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_HttpsEndpointsFields,
-		},
-		"InstallScriptActions": ubx.FieldSpec{
-			WireName: "install_script_actions",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_InstallScriptActionsFields,
-		},
-		"MarketplaceIdentifier": ubx.FieldSpec{WireName: "marketplace_identifier"},
-		"PrivateLinkConfigurations": ubx.FieldSpec{
-			WireName: "private_link_configurations",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_PrivateLinkConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SshEndpoints": ubx.FieldSpec{
-			WireName: "ssh_endpoints",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_SshEndpointsFields,
-		},
-		"UninstallScriptActions": ubx.FieldSpec{
-			WireName: "uninstall_script_actions",
-			Kind: "list",
-			Fields: ApplicationsApplication_Properties_InstallScriptActionsFields,
-		},
-	}
-
-var ApplicationsApplication_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"ApplicationState": ubx.FieldSpec{WireName: "application_state"},
+	"ApplicationType":  ubx.FieldSpec{WireName: "application_type"},
+	"ComputeProfile": ubx.FieldSpec{
+		WireName: "compute_profile",
+		Kind:     "object",
+		Fields:   ApplicationsApplication_Properties_ComputeProfileFields,
+	},
+	"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
+	"Errors": ubx.FieldSpec{
+		WireName: "errors",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_ErrorsFields,
+	},
+	"HttpsEndpoints": ubx.FieldSpec{
+		WireName: "https_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_HttpsEndpointsFields,
+	},
+	"InstallScriptActions": ubx.FieldSpec{
+		WireName: "install_script_actions",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_InstallScriptActionsFields,
+	},
+	"MarketplaceIdentifier": ubx.FieldSpec{WireName: "marketplace_identifier"},
+	"PrivateLinkConfigurations": ubx.FieldSpec{
+		WireName: "private_link_configurations",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_PrivateLinkConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SshEndpoints": ubx.FieldSpec{
+		WireName: "ssh_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_SshEndpointsFields,
+	},
+	"UninstallScriptActions": ubx.FieldSpec{
+		WireName: "uninstall_script_actions",
+		Kind:     "list",
+		Fields:   ApplicationsApplication_Properties_InstallScriptActionsFields,
+	},
+}
 
 type ApplicationsApplicationConfig struct {
 	// The ETag for the application
 	Etag any
 	// The HDInsight cluster application GET response.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 	// The tags for the application.
 	Tags any
 }
@@ -488,13 +477,8 @@ var ApplicationsApplication = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationsApplication_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: ApplicationsApplication_SystemDataFields,
+			Kind:     "object",
+			Fields:   ApplicationsApplication_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

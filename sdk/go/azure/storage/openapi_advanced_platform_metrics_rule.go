@@ -24,21 +24,21 @@ type OpenapiAdvancedPlatformMetricsRule_Properties struct {
 }
 
 var OpenapiAdvancedPlatformMetricsRule_Properties_RuleConfigFields = ubx.FieldMap{
-		"FilterType": ubx.FieldSpec{WireName: "filter_type"},
-		"FilterValues": ubx.FieldSpec{WireName: "filter_values"},
-	}
+	"FilterType":   ubx.FieldSpec{WireName: "filter_type"},
+	"FilterValues": ubx.FieldSpec{WireName: "filter_values"},
+}
 
 var OpenapiAdvancedPlatformMetricsRule_PropertiesFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"MetricsEmitted": ubx.FieldSpec{WireName: "metrics_emitted"},
-		"RuleConfig": ubx.FieldSpec{
-			WireName: "rule_config",
-			Kind: "object",
-			Fields: OpenapiAdvancedPlatformMetricsRule_Properties_RuleConfigFields,
-		},
-		"RuleType": ubx.FieldSpec{WireName: "rule_type"},
-	}
+	"Enabled":          ubx.FieldSpec{WireName: "enabled"},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"MetricsEmitted":   ubx.FieldSpec{WireName: "metrics_emitted"},
+	"RuleConfig": ubx.FieldSpec{
+		WireName: "rule_config",
+		Kind:     "object",
+		Fields:   OpenapiAdvancedPlatformMetricsRule_Properties_RuleConfigFields,
+	},
+	"RuleType": ubx.FieldSpec{WireName: "rule_type"},
+}
 
 type OpenapiAdvancedPlatformMetricsRuleConfig struct {
 	// An object that defines the advanced platform metrics rule.
@@ -55,8 +55,8 @@ var OpenapiAdvancedPlatformMetricsRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAdvancedPlatformMetricsRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAdvancedPlatformMetricsRule_PropertiesFields,
 		},
 	},
 }

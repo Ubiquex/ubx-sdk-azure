@@ -9,20 +9,14 @@ type Reservation_Properties_InstanceView_ReservationStateInfo struct {
 }
 
 type Reservation_Properties_InstanceView_Statuses struct {
-	// The status code for the capacity reservation, indicating its current state (e.g., 'ProvisioningState/succeeded'). (AI-inferred)
-	Code any
-	// The human-readable, localized description of the status code associated with the capacity reservation instance. (AI-inferred)
+	Code          any
 	DisplayStatus any
-	// The severity level of the status, which can be 'Info', 'Warning', or 'Error'. (AI-inferred)
-	Level any
-	// The human-readable message that provides additional details about the status condition. (AI-inferred)
-	Message any
-	// The timestamp indicating when the status was observed. (AI-inferred)
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type Reservation_Properties_InstanceView_UtilizationInfo_VirtualMachinesAllocated struct {
-	// The resource ID of a virtual machine that is allocated to this capacity reservation. (AI-inferred)
 	Id any
 }
 
@@ -84,84 +78,84 @@ type Reservation_Sku struct {
 }
 
 var Reservation_Properties_InstanceView_ReservationStateInfoFields = ubx.FieldMap{
-		"ReservationState": ubx.FieldSpec{WireName: "reservation_state"},
-	}
+	"ReservationState": ubx.FieldSpec{WireName: "reservation_state"},
+}
 
 var Reservation_Properties_InstanceView_StatusesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var Reservation_Properties_InstanceView_UtilizationInfo_VirtualMachinesAllocatedFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Reservation_Properties_InstanceView_UtilizationInfoFields = ubx.FieldMap{
-		"CurrentCapacity": ubx.FieldSpec{WireName: "current_capacity"},
-		"UsedReservedCountBySubscription": ubx.FieldSpec{WireName: "used_reserved_count_by_subscription"},
-		"VirtualMachinesAllocated": ubx.FieldSpec{
-			WireName: "virtual_machines_allocated",
-			Kind: "list",
-			Fields: Reservation_Properties_InstanceView_UtilizationInfo_VirtualMachinesAllocatedFields,
-		},
-	}
+	"CurrentCapacity":                 ubx.FieldSpec{WireName: "current_capacity"},
+	"UsedReservedCountBySubscription": ubx.FieldSpec{WireName: "used_reserved_count_by_subscription"},
+	"VirtualMachinesAllocated": ubx.FieldSpec{
+		WireName: "virtual_machines_allocated",
+		Kind:     "list",
+		Fields:   Reservation_Properties_InstanceView_UtilizationInfo_VirtualMachinesAllocatedFields,
+	},
+}
 
 var Reservation_Properties_InstanceViewFields = ubx.FieldMap{
-		"ReservationStateInfo": ubx.FieldSpec{
-			WireName: "reservation_state_info",
-			Kind: "object",
-			Fields: Reservation_Properties_InstanceView_ReservationStateInfoFields,
-		},
-		"Statuses": ubx.FieldSpec{
-			WireName: "statuses",
-			Kind: "list",
-			Fields: Reservation_Properties_InstanceView_StatusesFields,
-		},
-		"UtilizationInfo": ubx.FieldSpec{
-			WireName: "utilization_info",
-			Kind: "object",
-			Fields: Reservation_Properties_InstanceView_UtilizationInfoFields,
-		},
-	}
+	"ReservationStateInfo": ubx.FieldSpec{
+		WireName: "reservation_state_info",
+		Kind:     "object",
+		Fields:   Reservation_Properties_InstanceView_ReservationStateInfoFields,
+	},
+	"Statuses": ubx.FieldSpec{
+		WireName: "statuses",
+		Kind:     "list",
+		Fields:   Reservation_Properties_InstanceView_StatusesFields,
+	},
+	"UtilizationInfo": ubx.FieldSpec{
+		WireName: "utilization_info",
+		Kind:     "object",
+		Fields:   Reservation_Properties_InstanceView_UtilizationInfoFields,
+	},
+}
 
 var Reservation_Properties_ScheduleProfileFields = ubx.FieldMap{
-		"End": ubx.FieldSpec{WireName: "end"},
-		"MinimumCommitmentDays": ubx.FieldSpec{WireName: "minimum_commitment_days"},
-		"ModifiableUntil": ubx.FieldSpec{WireName: "modifiable_until"},
-		"Start": ubx.FieldSpec{WireName: "start"},
-	}
+	"End":                   ubx.FieldSpec{WireName: "end"},
+	"MinimumCommitmentDays": ubx.FieldSpec{WireName: "minimum_commitment_days"},
+	"ModifiableUntil":       ubx.FieldSpec{WireName: "modifiable_until"},
+	"Start":                 ubx.FieldSpec{WireName: "start"},
+}
 
 var Reservation_PropertiesFields = ubx.FieldMap{
-		"InstanceView": ubx.FieldSpec{
-			WireName: "instance_view",
-			Kind: "object",
-			Fields: Reservation_Properties_InstanceViewFields,
-		},
-		"PlatformFaultDomainCount": ubx.FieldSpec{WireName: "platform_fault_domain_count"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ProvisioningTime": ubx.FieldSpec{WireName: "provisioning_time"},
-		"ReservationId": ubx.FieldSpec{WireName: "reservation_id"},
-		"ScheduleProfile": ubx.FieldSpec{
-			WireName: "schedule_profile",
-			Kind: "object",
-			Fields: Reservation_Properties_ScheduleProfileFields,
-		},
-		"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
-		"VirtualMachinesAssociated": ubx.FieldSpec{
-			WireName: "virtual_machines_associated",
-			Kind: "list",
-			Fields: Reservation_Properties_InstanceView_UtilizationInfo_VirtualMachinesAllocatedFields,
-		},
-	}
+	"InstanceView": ubx.FieldSpec{
+		WireName: "instance_view",
+		Kind:     "object",
+		Fields:   Reservation_Properties_InstanceViewFields,
+	},
+	"PlatformFaultDomainCount": ubx.FieldSpec{WireName: "platform_fault_domain_count"},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"ProvisioningTime":         ubx.FieldSpec{WireName: "provisioning_time"},
+	"ReservationId":            ubx.FieldSpec{WireName: "reservation_id"},
+	"ScheduleProfile": ubx.FieldSpec{
+		WireName: "schedule_profile",
+		Kind:     "object",
+		Fields:   Reservation_Properties_ScheduleProfileFields,
+	},
+	"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
+	"VirtualMachinesAssociated": ubx.FieldSpec{
+		WireName: "virtual_machines_associated",
+		Kind:     "list",
+		Fields:   Reservation_Properties_InstanceView_UtilizationInfo_VirtualMachinesAllocatedFields,
+	},
+}
 
 var Reservation_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type ReservationConfig struct {
 	// Properties of the Capacity reservation.
@@ -186,13 +180,13 @@ var Reservation = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Reservation_PropertiesFields,
+			Kind:     "object",
+			Fields:   Reservation_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Reservation_SkuFields,
+			Kind:     "object",
+			Fields:   Reservation_SkuFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

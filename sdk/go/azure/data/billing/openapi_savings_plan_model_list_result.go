@@ -26,35 +26,35 @@ type OpenapiSavingsPlanModelListResult_Summary struct {
 
 type OpenapiSavingsPlanModelListResultConfig struct {
 	BillingAccountName any
-	Filter any
-	OrderBy any
-	RefreshSummary any
-	SelectedState any
-	Skiptoken any
-	Take any
+	Filter             any
+	OrderBy            any
+	RefreshSummary     any
+	SelectedState      any
+	Skiptoken          any
+	Take               any
 }
 
 type OpenapiSavingsPlanModelListResultAttrs struct {
 	BillingAccountName any
-	Filter any
-	OrderBy any
-	RefreshSummary any
-	SelectedState any
-	Skiptoken any
+	Filter             any
+	OrderBy            any
+	RefreshSummary     any
+	SelectedState      any
+	Skiptoken          any
 	// The roll up count summary of savings plans in each state
 	Summary any
-	Take any
+	Take    any
 }
 
 var OpenapiSavingsPlanModelListResult = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_savings_plan_model_list_result",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"RefreshSummary": ubx.FieldSpec{WireName: "refresh_summary"},
-		"SelectedState": ubx.FieldSpec{WireName: "selected_state"},
-		"Skiptoken": ubx.FieldSpec{WireName: "skiptoken"},
-		"Take": ubx.FieldSpec{WireName: "take"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"RefreshSummary":     ubx.FieldSpec{WireName: "refresh_summary"},
+		"SelectedState":      ubx.FieldSpec{WireName: "selected_state"},
+		"Skiptoken":          ubx.FieldSpec{WireName: "skiptoken"},
+		"Take":               ubx.FieldSpec{WireName: "take"},
 	},
 }

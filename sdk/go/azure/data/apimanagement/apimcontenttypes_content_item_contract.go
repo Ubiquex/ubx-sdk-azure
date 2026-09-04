@@ -19,6 +19,5 @@ type ApimcontenttypesContentItemContractAttrs struct {
 
 var ApimcontenttypesContentItemContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimcontenttypes_content_item_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

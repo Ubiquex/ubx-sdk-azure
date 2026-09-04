@@ -4,29 +4,29 @@ package healthbot
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HealthBot_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type HealthBot_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type HealthBot_Value_Properties_KeyVaultProperties struct {
-	KeyName any
-	KeyVaultUri any
-	KeyVersion any
+	KeyName      any
+	KeyVaultUri  any
+	KeyVersion   any
 	UserIdentity any
 }
 
 type HealthBot_Value_Properties struct {
-	AccessControlMethod any
+	AccessControlMethod     any
 	BotManagementPortalLink any
-	KeyVaultProperties any
-	ProvisioningState any
+	KeyVaultProperties      any
+	ProvisioningState       any
 }
 
 type HealthBot_Value_Sku struct {
@@ -34,9 +34,9 @@ type HealthBot_Value_Sku struct {
 }
 
 type HealthBot_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type HealthBotConfig struct {
@@ -51,6 +51,5 @@ type HealthBotAttrs struct {
 
 var HealthBot = ubx.DataSourceBinding{
 	WireType: "azure_healthbot_health_bot",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

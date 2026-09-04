@@ -29,8 +29,6 @@ _OpenapiApplicationPackage_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiApplicationPackageConfig:
-    # The ETag of the resource, used for concurrency statements.
-    etag: Any = None
     # Properties of an application package
     properties: Any = None
     # The tags of the resource.
@@ -48,7 +46,6 @@ class OpenapiApplicationPackageAttrs:
 OpenapiApplicationPackage = ubx.ResourceBinding(
     wire_type="azure_batch_openapi_application_package",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

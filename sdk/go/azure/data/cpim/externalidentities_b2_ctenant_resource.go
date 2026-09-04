@@ -4,13 +4,13 @@ package cpim
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExternalidentitiesB2CtenantResource_Value_Properties_BillingConfig struct {
-	BillingType any
+	BillingType           any
 	EffectiveStartDateUtc any
 }
 
 type ExternalidentitiesB2CtenantResource_Value_Properties struct {
 	BillingConfig any
-	TenantId any
+	TenantId      any
 }
 
 type ExternalidentitiesB2CtenantResource_Value_Sku struct {
@@ -19,32 +19,32 @@ type ExternalidentitiesB2CtenantResource_Value_Sku struct {
 }
 
 type ExternalidentitiesB2CtenantResource_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type ExternalidentitiesB2CtenantResource_Value struct {
-	Id any
-	Location any
-	Name any
+	Id         any
+	Location   any
+	Name       any
 	Properties any
-	Sku any
+	Sku        any
 	SystemData any
-	Tags any
-	Type any
+	Tags       any
+	Type       any
 }
 
 type ExternalidentitiesB2CtenantResourceConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ExternalidentitiesB2CtenantResourceAttrs struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 	// List of Azure AD B2C tenant resources
 	Value any
@@ -53,7 +53,7 @@ type ExternalidentitiesB2CtenantResourceAttrs struct {
 var ExternalidentitiesB2CtenantResource = ubx.DataSourceBinding{
 	WireType: "azure_cpim_externalidentities_b2_ctenant_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -51,12 +51,8 @@ const OpenapiPrivateEndpointConnection_PropertiesFields: FieldMap = {
 export interface OpenapiPrivateEndpointConnectionConfig {
   /** The ETag (or entity tag) HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content was not changed. It is a string of ASCII characters placed between double quotes, like "675af34563dc-tr34". */
   etag?: string | Computed<string>;
-  /** Azure location of the key vault resource. */
-  location?: string | Computed<string>;
   /** Properties of the private endpoint connection resource. */
   properties?: OpenapiPrivateEndpointConnection_Properties | Computed<OpenapiPrivateEndpointConnection_Properties>;
-  /** Tags assigned to the key vault resource. */
-  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiPrivateEndpointConnectionAttrs {
@@ -74,12 +70,10 @@ export const OpenapiPrivateEndpointConnection: ResourceBinding<OpenapiPrivateEnd
   wireType: "azure_keyvault_openapi_private_endpoint_connection",
   fields: {
     etag: "etag",
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiPrivateEndpointConnection_PropertiesFields,
     },
-    tags: "tags",
   },
 };

@@ -11,9 +11,9 @@ type ServerconfigurationoptionsServerConfigurationOption_Properties struct {
 }
 
 var ServerconfigurationoptionsServerConfigurationOption_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServerConfigurationOptionValue": ubx.FieldSpec{WireName: "server_configuration_option_value"},
-	}
+	"ProvisioningState":              ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServerConfigurationOptionValue": ubx.FieldSpec{WireName: "server_configuration_option_value"},
+}
 
 type ServerconfigurationoptionsServerConfigurationOptionConfig struct {
 	// The properties of server configuration option.
@@ -30,8 +30,8 @@ var ServerconfigurationoptionsServerConfigurationOption = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServerconfigurationoptionsServerConfigurationOption_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServerconfigurationoptionsServerConfigurationOption_PropertiesFields,
 		},
 	},
 }

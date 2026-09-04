@@ -17,16 +17,14 @@ type HybridConnection_Properties struct {
 }
 
 var HybridConnection_PropertiesFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"ListenerCount": ubx.FieldSpec{WireName: "listener_count"},
-		"RequiresClientAuthorization": ubx.FieldSpec{WireName: "requires_client_authorization"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-		"UserMetadata": ubx.FieldSpec{WireName: "user_metadata"},
-	}
+	"CreatedAt":                   ubx.FieldSpec{WireName: "created_at"},
+	"ListenerCount":               ubx.FieldSpec{WireName: "listener_count"},
+	"RequiresClientAuthorization": ubx.FieldSpec{WireName: "requires_client_authorization"},
+	"UpdatedAt":                   ubx.FieldSpec{WireName: "updated_at"},
+	"UserMetadata":                ubx.FieldSpec{WireName: "user_metadata"},
+}
 
 type HybridConnectionConfig struct {
-	// The geo-location where the resource lives
-	Location any
 	// Properties of the HybridConnection.
 	Properties any
 }
@@ -41,11 +39,10 @@ type HybridConnectionAttrs struct {
 var HybridConnection = ubx.ResourceBinding{
 	WireType: "azure_relay_hybrid_connection",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HybridConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   HybridConnection_PropertiesFields,
 		},
 	},
 }

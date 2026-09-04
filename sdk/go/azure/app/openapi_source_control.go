@@ -58,49 +58,49 @@ type OpenapiSourceControl_Properties struct {
 }
 
 var OpenapiSourceControl_Properties_GithubActionConfiguration_AzureCredentialsFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"ClientId":       ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecret":   ubx.FieldSpec{WireName: "client_secret"},
+	"Kind":           ubx.FieldSpec{WireName: "kind"},
+	"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+	"TenantId":       ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var OpenapiSourceControl_Properties_GithubActionConfiguration_RegistryInfoFields = ubx.FieldMap{
-		"RegistryPassword": ubx.FieldSpec{WireName: "registry_password"},
-		"RegistryUrl": ubx.FieldSpec{WireName: "registry_url"},
-		"RegistryUserName": ubx.FieldSpec{WireName: "registry_user_name"},
-	}
+	"RegistryPassword": ubx.FieldSpec{WireName: "registry_password"},
+	"RegistryUrl":      ubx.FieldSpec{WireName: "registry_url"},
+	"RegistryUserName": ubx.FieldSpec{WireName: "registry_user_name"},
+}
 
 var OpenapiSourceControl_Properties_GithubActionConfigurationFields = ubx.FieldMap{
-		"AzureCredentials": ubx.FieldSpec{
-			WireName: "azure_credentials",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_GithubActionConfiguration_AzureCredentialsFields,
-		},
-		"ContextPath": ubx.FieldSpec{WireName: "context_path"},
-		"GithubPersonalAccessToken": ubx.FieldSpec{WireName: "github_personal_access_token"},
-		"Image": ubx.FieldSpec{WireName: "image"},
-		"Os": ubx.FieldSpec{WireName: "os"},
-		"PublishType": ubx.FieldSpec{WireName: "publish_type"},
-		"RegistryInfo": ubx.FieldSpec{
-			WireName: "registry_info",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_GithubActionConfiguration_RegistryInfoFields,
-		},
-		"RuntimeStack": ubx.FieldSpec{WireName: "runtime_stack"},
-		"RuntimeVersion": ubx.FieldSpec{WireName: "runtime_version"},
-	}
+	"AzureCredentials": ubx.FieldSpec{
+		WireName: "azure_credentials",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_GithubActionConfiguration_AzureCredentialsFields,
+	},
+	"ContextPath":               ubx.FieldSpec{WireName: "context_path"},
+	"GithubPersonalAccessToken": ubx.FieldSpec{WireName: "github_personal_access_token"},
+	"Image":                     ubx.FieldSpec{WireName: "image"},
+	"Os":                        ubx.FieldSpec{WireName: "os"},
+	"PublishType":               ubx.FieldSpec{WireName: "publish_type"},
+	"RegistryInfo": ubx.FieldSpec{
+		WireName: "registry_info",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_GithubActionConfiguration_RegistryInfoFields,
+	},
+	"RuntimeStack":   ubx.FieldSpec{WireName: "runtime_stack"},
+	"RuntimeVersion": ubx.FieldSpec{WireName: "runtime_version"},
+}
 
 var OpenapiSourceControl_PropertiesFields = ubx.FieldMap{
-		"Branch": ubx.FieldSpec{WireName: "branch"},
-		"GithubActionConfiguration": ubx.FieldSpec{
-			WireName: "github_action_configuration",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_GithubActionConfigurationFields,
-		},
-		"OperationState": ubx.FieldSpec{WireName: "operation_state"},
-		"RepoUrl": ubx.FieldSpec{WireName: "repo_url"},
-	}
+	"Branch": ubx.FieldSpec{WireName: "branch"},
+	"GithubActionConfiguration": ubx.FieldSpec{
+		WireName: "github_action_configuration",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_GithubActionConfigurationFields,
+	},
+	"OperationState": ubx.FieldSpec{WireName: "operation_state"},
+	"RepoUrl":        ubx.FieldSpec{WireName: "repo_url"},
+}
 
 type OpenapiSourceControlConfig struct {
 	// SourceControl resource specific properties
@@ -117,8 +117,8 @@ var OpenapiSourceControl = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSourceControl_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSourceControl_PropertiesFields,
 		},
 	},
 }

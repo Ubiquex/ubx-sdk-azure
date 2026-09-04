@@ -4,30 +4,30 @@ package iothub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JobResponse_Value struct {
-	EndTimeUtc any
+	EndTimeUtc    any
 	FailureReason any
-	JobId any
-	ParentJobId any
-	StartTimeUtc any
-	Status any
+	JobId         any
+	ParentJobId   any
+	StartTimeUtc  any
+	Status        any
 	StatusMessage any
-	Type any
+	Type          any
 }
 
 type JobResponseConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type JobResponseAttrs struct {
 	ApiVersion any
 	// The next link.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 	// The array of JobResponse objects.
 	Value any
 }
@@ -35,9 +35,9 @@ type JobResponseAttrs struct {
 var JobResponse = ubx.DataSourceBinding{
 	WireType: "azure_iothub_job_response",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

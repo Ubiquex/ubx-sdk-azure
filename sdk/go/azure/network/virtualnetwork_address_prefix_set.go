@@ -11,9 +11,9 @@ type VirtualnetworkAddressPrefixSet_Properties struct {
 }
 
 var VirtualnetworkAddressPrefixSet_PropertiesFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AddressPrefixes":   ubx.FieldSpec{WireName: "address_prefixes"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VirtualnetworkAddressPrefixSetConfig struct {
 	// Properties of address prefix set.
@@ -30,8 +30,8 @@ var VirtualnetworkAddressPrefixSet = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkAddressPrefixSet_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkAddressPrefixSet_PropertiesFields,
 		},
 	},
 }

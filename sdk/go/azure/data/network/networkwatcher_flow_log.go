@@ -4,23 +4,23 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkwatcherFlowLog_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type NetworkwatcherFlowLog_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type NetworkwatcherFlowLog_Value_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration struct {
-	Enabled any
+	Enabled                  any
 	TrafficAnalyticsInterval any
-	WorkspaceId any
-	WorkspaceRegion any
-	WorkspaceResourceId any
+	WorkspaceId              any
+	WorkspaceRegion          any
+	WorkspaceResourceId      any
 }
 
 type NetworkwatcherFlowLog_Value_Properties_FlowAnalyticsConfiguration struct {
@@ -28,31 +28,31 @@ type NetworkwatcherFlowLog_Value_Properties_FlowAnalyticsConfiguration struct {
 }
 
 type NetworkwatcherFlowLog_Value_Properties_Format struct {
-	Type any
+	Type    any
 	Version any
 }
 
 type NetworkwatcherFlowLog_Value_Properties_RetentionPolicy struct {
-	Days any
+	Days    any
 	Enabled any
 }
 
 type NetworkwatcherFlowLog_Value_Properties struct {
-	Enabled any
-	EnabledFilteringCriteria any
+	Enabled                    any
+	EnabledFilteringCriteria   any
 	FlowAnalyticsConfiguration any
-	Format any
-	ProvisioningState any
-	RecordTypes any
-	RetentionPolicy any
-	StorageId any
-	TargetResourceGuid any
-	TargetResourceId any
+	Format                     any
+	ProvisioningState          any
+	RecordTypes                any
+	RetentionPolicy            any
+	StorageId                  any
+	TargetResourceGuid         any
+	TargetResourceId           any
 }
 
 type NetworkwatcherFlowLog_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
 }
 

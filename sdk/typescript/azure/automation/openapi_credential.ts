@@ -2,16 +2,22 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiCredential_Properties {
+  /** Gets the creation time. */
+  creationTime?: string | Computed<string>;
   /** Gets or sets the description of the credential. */
   description?: string | Computed<string>;
+  /** Gets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
   /** Gets or sets the password of the credential. */
   password: string | Computed<string>;
   /** Gets or sets the user name of the credential. */
-  userName: string | Computed<string>;
+  userName?: string | Computed<string>;
 }
 
 const OpenapiCredential_PropertiesFields: FieldMap = {
+  creationTime: "creation_time",
   description: "description",
+  lastModifiedTime: "last_modified_time",
   password: "password",
   userName: "user_name",
 };

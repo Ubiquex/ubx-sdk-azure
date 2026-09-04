@@ -31,7 +31,7 @@ type OpenapiFactory_Properties_Encryption struct {
 }
 
 type OpenapiFactory_Properties_GlobalParameters struct {
-	Type any
+	Type  any
 	Value any
 }
 
@@ -77,14 +77,14 @@ type OpenapiFactory_Properties struct {
 }
 
 var OpenapiFactory_Properties_RepoConfigurationFields = ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"CollaborationBranch": ubx.FieldSpec{WireName: "collaboration_branch"},
-		"DisablePublish": ubx.FieldSpec{WireName: "disable_publish"},
-		"LastCommitId": ubx.FieldSpec{WireName: "last_commit_id"},
-		"RepositoryName": ubx.FieldSpec{WireName: "repository_name"},
-		"RootFolder": ubx.FieldSpec{WireName: "root_folder"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"AccountName":         ubx.FieldSpec{WireName: "account_name"},
+	"CollaborationBranch": ubx.FieldSpec{WireName: "collaboration_branch"},
+	"DisablePublish":      ubx.FieldSpec{WireName: "disable_publish"},
+	"LastCommitId":        ubx.FieldSpec{WireName: "last_commit_id"},
+	"RepositoryName":      ubx.FieldSpec{WireName: "repository_name"},
+	"RootFolder":          ubx.FieldSpec{WireName: "root_folder"},
+	"Type":                ubx.FieldSpec{WireName: "type"},
+}
 
 type OpenapiFactoryConfig struct {
 	// The factory resource id.
@@ -116,8 +116,8 @@ var OpenapiFactory = ubx.ResourceBinding{
 		"FactoryResourceId": ubx.FieldSpec{WireName: "factory_resource_id"},
 		"RepoConfiguration": ubx.FieldSpec{
 			WireName: "repo_configuration",
-			Kind: "object",
-			Fields: OpenapiFactory_Properties_RepoConfigurationFields,
+			Kind:     "object",
+			Fields:   OpenapiFactory_Properties_RepoConfigurationFields,
 		},
 	},
 }

@@ -9,8 +9,8 @@ type BmsValidateOperationsResponse_Properties struct {
 }
 
 type BmsValidateOperationsResponse_ValidateOperationResponse_ValidationResults struct {
-	Code any
-	Message any
+	Code            any
+	Message         any
 	Recommendations any
 }
 
@@ -20,8 +20,8 @@ type BmsValidateOperationsResponse_ValidateOperationResponse struct {
 }
 
 var BmsValidateOperationsResponse_PropertiesFields = ubx.FieldMap{
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
-	}
+	"ObjectType": ubx.FieldSpec{WireName: "object_type"},
+}
 
 type BmsValidateOperationsResponseConfig struct {
 	// Recovery point ID.
@@ -45,8 +45,8 @@ var BmsValidateOperationsResponse = ubx.ResourceBinding{
 		"Id": ubx.FieldSpec{WireName: "id"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BmsValidateOperationsResponse_PropertiesFields,
+			Kind:     "object",
+			Fields:   BmsValidateOperationsResponse_PropertiesFields,
 		},
 	},
 }

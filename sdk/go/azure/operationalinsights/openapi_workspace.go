@@ -4,7 +4,7 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWorkspace_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -47,7 +47,7 @@ type OpenapiWorkspace_Properties_Features struct {
 
 type OpenapiWorkspace_Properties_PrivateLinkScopedResources struct {
 	ResourceId any
-	ScopeId any
+	ScopeId    any
 }
 
 type OpenapiWorkspace_Properties_Replication struct {
@@ -115,103 +115,103 @@ type OpenapiWorkspace_Properties struct {
 }
 
 var OpenapiWorkspace_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiWorkspace_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiWorkspace_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiWorkspace_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiWorkspace_Properties_FailoverFields = ubx.FieldMap{
-		"LastModifiedDate": ubx.FieldSpec{WireName: "last_modified_date"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"LastModifiedDate": ubx.FieldSpec{WireName: "last_modified_date"},
+	"State":            ubx.FieldSpec{WireName: "state"},
+}
 
 var OpenapiWorkspace_Properties_FeaturesFields = ubx.FieldMap{
-		"Associations": ubx.FieldSpec{WireName: "associations"},
-		"ClusterResourceId": ubx.FieldSpec{WireName: "cluster_resource_id"},
-		"DataAuthorizationMode": ubx.FieldSpec{WireName: "data_authorization_mode"},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"EnableDataExport": ubx.FieldSpec{WireName: "enable_data_export"},
-		"EnableLogAccessUsingOnlyResourcePermissions": ubx.FieldSpec{WireName: "enable_log_access_using_only_resource_permissions"},
-		"ImmediatePurgeDataOn30Days": ubx.FieldSpec{WireName: "immediate_purge_data_on30_days"},
-		"UnifiedSentinelBillingOnly": ubx.FieldSpec{WireName: "unified_sentinel_billing_only"},
-	}
+	"Associations":                                ubx.FieldSpec{WireName: "associations"},
+	"ClusterResourceId":                           ubx.FieldSpec{WireName: "cluster_resource_id"},
+	"DataAuthorizationMode":                       ubx.FieldSpec{WireName: "data_authorization_mode"},
+	"DisableLocalAuth":                            ubx.FieldSpec{WireName: "disable_local_auth"},
+	"EnableDataExport":                            ubx.FieldSpec{WireName: "enable_data_export"},
+	"EnableLogAccessUsingOnlyResourcePermissions": ubx.FieldSpec{WireName: "enable_log_access_using_only_resource_permissions"},
+	"ImmediatePurgeDataOn30Days":                  ubx.FieldSpec{WireName: "immediate_purge_data_on30_days"},
+	"UnifiedSentinelBillingOnly":                  ubx.FieldSpec{WireName: "unified_sentinel_billing_only"},
+}
 
 var OpenapiWorkspace_Properties_PrivateLinkScopedResourcesFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"ScopeId": ubx.FieldSpec{WireName: "scope_id"},
-	}
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+	"ScopeId":    ubx.FieldSpec{WireName: "scope_id"},
+}
 
 var OpenapiWorkspace_Properties_ReplicationFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"LastModifiedDate": ubx.FieldSpec{WireName: "last_modified_date"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"CreatedDate":       ubx.FieldSpec{WireName: "created_date"},
+	"Enabled":           ubx.FieldSpec{WireName: "enabled"},
+	"LastModifiedDate":  ubx.FieldSpec{WireName: "last_modified_date"},
+	"Location":          ubx.FieldSpec{WireName: "location"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiWorkspace_Properties_SkuFields = ubx.FieldMap{
-		"CapacityReservationLevel": ubx.FieldSpec{WireName: "capacity_reservation_level"},
-		"LastSkuUpdate": ubx.FieldSpec{WireName: "last_sku_update"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"CapacityReservationLevel": ubx.FieldSpec{WireName: "capacity_reservation_level"},
+	"LastSkuUpdate":            ubx.FieldSpec{WireName: "last_sku_update"},
+	"Name":                     ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiWorkspace_Properties_WorkspaceCappingFields = ubx.FieldMap{
-		"DailyQuotaGb": ubx.FieldSpec{WireName: "daily_quota_gb"},
-		"DataIngestionStatus": ubx.FieldSpec{WireName: "data_ingestion_status"},
-		"QuotaNextResetTime": ubx.FieldSpec{WireName: "quota_next_reset_time"},
-	}
+	"DailyQuotaGb":        ubx.FieldSpec{WireName: "daily_quota_gb"},
+	"DataIngestionStatus": ubx.FieldSpec{WireName: "data_ingestion_status"},
+	"QuotaNextResetTime":  ubx.FieldSpec{WireName: "quota_next_reset_time"},
+}
 
 var OpenapiWorkspace_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"CustomerId": ubx.FieldSpec{WireName: "customer_id"},
-		"DefaultDataCollectionRuleResourceId": ubx.FieldSpec{WireName: "default_data_collection_rule_resource_id"},
-		"Failover": ubx.FieldSpec{
-			WireName: "failover",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_FailoverFields,
-		},
-		"Features": ubx.FieldSpec{
-			WireName: "features",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_FeaturesFields,
-		},
-		"ForceCmkForQuery": ubx.FieldSpec{WireName: "force_cmk_for_query"},
-		"ModifiedDate": ubx.FieldSpec{WireName: "modified_date"},
-		"PrivateLinkScopedResources": ubx.FieldSpec{
-			WireName: "private_link_scoped_resources",
-			Kind: "list",
-			Fields: OpenapiWorkspace_Properties_PrivateLinkScopedResourcesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccessForIngestion": ubx.FieldSpec{WireName: "public_network_access_for_ingestion"},
-		"PublicNetworkAccessForQuery": ubx.FieldSpec{WireName: "public_network_access_for_query"},
-		"Replication": ubx.FieldSpec{
-			WireName: "replication",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_ReplicationFields,
-		},
-		"RetentionInDays": ubx.FieldSpec{WireName: "retention_in_days"},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_SkuFields,
-		},
-		"WorkspaceCapping": ubx.FieldSpec{
-			WireName: "workspace_capping",
-			Kind: "object",
-			Fields: OpenapiWorkspace_Properties_WorkspaceCappingFields,
-		},
-	}
+	"CreatedDate":                         ubx.FieldSpec{WireName: "created_date"},
+	"CustomerId":                          ubx.FieldSpec{WireName: "customer_id"},
+	"DefaultDataCollectionRuleResourceId": ubx.FieldSpec{WireName: "default_data_collection_rule_resource_id"},
+	"Failover": ubx.FieldSpec{
+		WireName: "failover",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_FailoverFields,
+	},
+	"Features": ubx.FieldSpec{
+		WireName: "features",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_FeaturesFields,
+	},
+	"ForceCmkForQuery": ubx.FieldSpec{WireName: "force_cmk_for_query"},
+	"ModifiedDate":     ubx.FieldSpec{WireName: "modified_date"},
+	"PrivateLinkScopedResources": ubx.FieldSpec{
+		WireName: "private_link_scoped_resources",
+		Kind:     "list",
+		Fields:   OpenapiWorkspace_Properties_PrivateLinkScopedResourcesFields,
+	},
+	"ProvisioningState":               ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccessForIngestion": ubx.FieldSpec{WireName: "public_network_access_for_ingestion"},
+	"PublicNetworkAccessForQuery":     ubx.FieldSpec{WireName: "public_network_access_for_query"},
+	"Replication": ubx.FieldSpec{
+		WireName: "replication",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_ReplicationFields,
+	},
+	"RetentionInDays": ubx.FieldSpec{WireName: "retention_in_days"},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_SkuFields,
+	},
+	"WorkspaceCapping": ubx.FieldSpec{
+		WireName: "workspace_capping",
+		Kind:     "object",
+		Fields:   OpenapiWorkspace_Properties_WorkspaceCappingFields,
+	},
+}
 
 type OpenapiWorkspaceConfig struct {
 	// The etag of the workspace.
@@ -237,13 +237,13 @@ var OpenapiWorkspace = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiWorkspace_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiWorkspace_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiWorkspace_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiWorkspace_PropertiesFields,
 		},
 	},
 }

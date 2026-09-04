@@ -17,12 +17,12 @@ type ServerazureadadministratorsServerAzureAdadministrator_Properties struct {
 }
 
 var ServerazureadadministratorsServerAzureAdadministrator_PropertiesFields = ubx.FieldMap{
-		"AdministratorType": ubx.FieldSpec{WireName: "administrator_type"},
-		"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
-		"Login": ubx.FieldSpec{WireName: "login"},
-		"Sid": ubx.FieldSpec{WireName: "sid"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AdministratorType":         ubx.FieldSpec{WireName: "administrator_type"},
+	"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
+	"Login":                     ubx.FieldSpec{WireName: "login"},
+	"Sid":                       ubx.FieldSpec{WireName: "sid"},
+	"TenantId":                  ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type ServerazureadadministratorsServerAzureAdadministratorConfig struct {
 	// Properties of a active directory administrator.
@@ -39,8 +39,8 @@ var ServerazureadadministratorsServerAzureAdadministrator = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServerazureadadministratorsServerAzureAdadministrator_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServerazureadadministratorsServerAzureAdadministrator_PropertiesFields,
 		},
 	},
 }

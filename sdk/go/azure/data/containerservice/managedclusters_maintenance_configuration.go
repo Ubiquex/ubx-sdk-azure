@@ -4,12 +4,12 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersMaintenanceConfiguration_Value_Properties_MaintenanceWindow_NotAllowedDates struct {
-	End any
+	End   any
 	Start any
 }
 
 type ManagedclustersMaintenanceConfiguration_Value_Properties_MaintenanceWindow_Schedule_AbsoluteMonthly struct {
-	DayOfMonth any
+	DayOfMonth     any
 	IntervalMonths any
 }
 
@@ -18,41 +18,41 @@ type ManagedclustersMaintenanceConfiguration_Value_Properties_MaintenanceWindow_
 }
 
 type ManagedclustersMaintenanceConfiguration_Value_Properties_MaintenanceWindow_Schedule_RelativeMonthly struct {
-	DayOfWeek any
+	DayOfWeek      any
 	IntervalMonths any
-	WeekIndex any
+	WeekIndex      any
 }
 
 type ManagedclustersMaintenanceConfiguration_Value_Properties_MaintenanceWindow_Schedule_Weekly struct {
-	DayOfWeek any
+	DayOfWeek     any
 	IntervalWeeks any
 }
 
 type ManagedclustersMaintenanceConfiguration_Value_Properties_MaintenanceWindow_Schedule struct {
 	AbsoluteMonthly any
-	Daily any
+	Daily           any
 	RelativeMonthly any
-	Weekly any
+	Weekly          any
 }
 
 type ManagedclustersMaintenanceConfiguration_Value_Properties_MaintenanceWindow struct {
-	DurationHours any
+	DurationHours   any
 	NotAllowedDates any
-	Schedule any
-	StartDate any
-	StartTime any
-	UtcOffset any
+	Schedule        any
+	StartDate       any
+	StartTime       any
+	UtcOffset       any
 }
 
 type ManagedclustersMaintenanceConfiguration_Value_Properties_TimeInWeek struct {
-	Day any
+	Day       any
 	HourSlots any
 }
 
 type ManagedclustersMaintenanceConfiguration_Value_Properties struct {
 	MaintenanceWindow any
-	NotAllowedTime any
-	TimeInWeek any
+	NotAllowedTime    any
+	TimeInWeek        any
 }
 
 type ManagedclustersMaintenanceConfiguration_Value struct {
@@ -65,7 +65,7 @@ type ManagedclustersMaintenanceConfigurationConfig struct {
 
 type ManagedclustersMaintenanceConfigurationAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The MaintenanceConfiguration items on this page
 	Value any

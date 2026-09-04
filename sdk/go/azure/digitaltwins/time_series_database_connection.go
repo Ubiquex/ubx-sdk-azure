@@ -20,19 +20,19 @@ type TimeSeriesDatabaseConnection_Properties struct {
 }
 
 var TimeSeriesDatabaseConnection_Properties_IdentityFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-	}
+	"Type":                 ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
+}
 
 var TimeSeriesDatabaseConnection_PropertiesFields = ubx.FieldMap{
-		"ConnectionType": ubx.FieldSpec{WireName: "connection_type"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: TimeSeriesDatabaseConnection_Properties_IdentityFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ConnectionType": ubx.FieldSpec{WireName: "connection_type"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   TimeSeriesDatabaseConnection_Properties_IdentityFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type TimeSeriesDatabaseConnectionConfig struct {
 	// Properties of a time series database connection resource.
@@ -49,8 +49,8 @@ var TimeSeriesDatabaseConnection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: TimeSeriesDatabaseConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   TimeSeriesDatabaseConnection_PropertiesFields,
 		},
 	},
 }

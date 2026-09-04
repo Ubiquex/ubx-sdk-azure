@@ -4,21 +4,21 @@ package datamigration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlmigrationDatabaseMigrationBase_Value_Properties_MigrationFailureError struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type SqlmigrationDatabaseMigrationBase_Value_Properties struct {
-	EndedOn any
-	Kind any
+	EndedOn               any
+	Kind                  any
 	MigrationFailureError any
-	MigrationOperationId any
-	MigrationService any
-	MigrationStatus any
-	ProvisioningError any
-	ProvisioningState any
-	Scope any
-	StartedOn any
+	MigrationOperationId  any
+	MigrationService      any
+	MigrationStatus       any
+	ProvisioningError     any
+	ProvisioningState     any
+	Scope                 any
+	StartedOn             any
 }
 
 type SqlmigrationDatabaseMigrationBase_Value struct {
@@ -26,27 +26,27 @@ type SqlmigrationDatabaseMigrationBase_Value struct {
 }
 
 type SqlmigrationDatabaseMigrationBaseConfig struct {
-	ApiVersion any
+	ApiVersion           any
 	MigrationServiceName any
-	ResourceGroupName any
-	SubscriptionId any
+	ResourceGroupName    any
+	SubscriptionId       any
 }
 
 type SqlmigrationDatabaseMigrationBaseAttrs struct {
-	ApiVersion any
+	ApiVersion           any
 	MigrationServiceName any
-	NextLink any
-	ResourceGroupName any
-	SubscriptionId any
-	Value any
+	NextLink             any
+	ResourceGroupName    any
+	SubscriptionId       any
+	Value                any
 }
 
 var SqlmigrationDatabaseMigrationBase = ubx.DataSourceBinding{
 	WireType: "azure_datamigration_sqlmigration_database_migration_base",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":           ubx.FieldSpec{WireName: "api_version"},
 		"MigrationServiceName": ubx.FieldSpec{WireName: "migration_service_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":    ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":       ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

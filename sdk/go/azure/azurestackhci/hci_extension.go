@@ -23,25 +23,25 @@ type HciExtension_Properties_ExtensionParameters struct {
 }
 
 type HciExtension_Properties_PerNodeExtensionDetails_InstanceView_Status struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type HciExtension_Properties_PerNodeExtensionDetails_InstanceView struct {
-	Name any
-	Status any
-	Type any
+	Name               any
+	Status             any
+	Type               any
 	TypeHandlerVersion any
 }
 
 type HciExtension_Properties_PerNodeExtensionDetails struct {
-	Extension any
-	InstanceView any
-	Name any
-	State any
+	Extension          any
+	InstanceView       any
+	Name               any
+	State              any
 	TypeHandlerVersion any
 }
 
@@ -59,62 +59,62 @@ type HciExtension_Properties struct {
 }
 
 var HciExtension_Properties_ExtensionParametersFields = ubx.FieldMap{
-		"AutoUpgradeMinorVersion": ubx.FieldSpec{WireName: "auto_upgrade_minor_version"},
-		"EnableAutomaticUpgrade": ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
-		"ForceUpdateTag": ubx.FieldSpec{WireName: "force_update_tag"},
-		"ProtectedSettings": ubx.FieldSpec{WireName: "protected_settings"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Settings": ubx.FieldSpec{WireName: "settings"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-	}
+	"AutoUpgradeMinorVersion": ubx.FieldSpec{WireName: "auto_upgrade_minor_version"},
+	"EnableAutomaticUpgrade":  ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
+	"ForceUpdateTag":          ubx.FieldSpec{WireName: "force_update_tag"},
+	"ProtectedSettings":       ubx.FieldSpec{WireName: "protected_settings"},
+	"Publisher":               ubx.FieldSpec{WireName: "publisher"},
+	"Settings":                ubx.FieldSpec{WireName: "settings"},
+	"Type":                    ubx.FieldSpec{WireName: "type"},
+	"TypeHandlerVersion":      ubx.FieldSpec{WireName: "type_handler_version"},
+}
 
 var HciExtension_Properties_PerNodeExtensionDetails_InstanceView_StatusFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var HciExtension_Properties_PerNodeExtensionDetails_InstanceViewFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: HciExtension_Properties_PerNodeExtensionDetails_InstanceView_StatusFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   HciExtension_Properties_PerNodeExtensionDetails_InstanceView_StatusFields,
+	},
+	"Type":               ubx.FieldSpec{WireName: "type"},
+	"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
+}
 
 var HciExtension_Properties_PerNodeExtensionDetailsFields = ubx.FieldMap{
-		"Extension": ubx.FieldSpec{WireName: "extension"},
-		"InstanceView": ubx.FieldSpec{
-			WireName: "instance_view",
-			Kind: "object",
-			Fields: HciExtension_Properties_PerNodeExtensionDetails_InstanceViewFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-	}
+	"Extension": ubx.FieldSpec{WireName: "extension"},
+	"InstanceView": ubx.FieldSpec{
+		WireName: "instance_view",
+		Kind:     "object",
+		Fields:   HciExtension_Properties_PerNodeExtensionDetails_InstanceViewFields,
+	},
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"State":              ubx.FieldSpec{WireName: "state"},
+	"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
+}
 
 var HciExtension_PropertiesFields = ubx.FieldMap{
-		"AggregateState": ubx.FieldSpec{WireName: "aggregate_state"},
-		"ExtensionParameters": ubx.FieldSpec{
-			WireName: "extension_parameters",
-			Kind: "object",
-			Fields: HciExtension_Properties_ExtensionParametersFields,
-		},
-		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
-		"PerNodeExtensionDetails": ubx.FieldSpec{
-			WireName: "per_node_extension_details",
-			Kind: "list",
-			Fields: HciExtension_Properties_PerNodeExtensionDetailsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AggregateState": ubx.FieldSpec{WireName: "aggregate_state"},
+	"ExtensionParameters": ubx.FieldSpec{
+		WireName: "extension_parameters",
+		Kind:     "object",
+		Fields:   HciExtension_Properties_ExtensionParametersFields,
+	},
+	"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
+	"PerNodeExtensionDetails": ubx.FieldSpec{
+		WireName: "per_node_extension_details",
+		Kind:     "list",
+		Fields:   HciExtension_Properties_PerNodeExtensionDetailsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type HciExtensionConfig struct {
 	// Status of Arc Extension for a particular node in HCI Cluster.
@@ -131,8 +131,8 @@ var HciExtension = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HciExtension_PropertiesFields,
+			Kind:     "object",
+			Fields:   HciExtension_PropertiesFields,
 		},
 	},
 }

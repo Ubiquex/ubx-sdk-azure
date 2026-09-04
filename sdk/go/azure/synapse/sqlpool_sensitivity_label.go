@@ -16,7 +16,7 @@ type SqlpoolSensitivityLabel_Properties struct {
 	LabelId any
 	// The label name.
 	LabelName any
-	Rank any
+	Rank      any
 	// The schema name.
 	SchemaName any
 	// The table name.
@@ -24,20 +24,18 @@ type SqlpoolSensitivityLabel_Properties struct {
 }
 
 var SqlpoolSensitivityLabel_PropertiesFields = ubx.FieldMap{
-		"ColumnName": ubx.FieldSpec{WireName: "column_name"},
-		"InformationType": ubx.FieldSpec{WireName: "information_type"},
-		"InformationTypeId": ubx.FieldSpec{WireName: "information_type_id"},
-		"IsDisabled": ubx.FieldSpec{WireName: "is_disabled"},
-		"LabelId": ubx.FieldSpec{WireName: "label_id"},
-		"LabelName": ubx.FieldSpec{WireName: "label_name"},
-		"Rank": ubx.FieldSpec{WireName: "rank"},
-		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
-		"TableName": ubx.FieldSpec{WireName: "table_name"},
-	}
+	"ColumnName":        ubx.FieldSpec{WireName: "column_name"},
+	"InformationType":   ubx.FieldSpec{WireName: "information_type"},
+	"InformationTypeId": ubx.FieldSpec{WireName: "information_type_id"},
+	"IsDisabled":        ubx.FieldSpec{WireName: "is_disabled"},
+	"LabelId":           ubx.FieldSpec{WireName: "label_id"},
+	"LabelName":         ubx.FieldSpec{WireName: "label_name"},
+	"Rank":              ubx.FieldSpec{WireName: "rank"},
+	"SchemaName":        ubx.FieldSpec{WireName: "schema_name"},
+	"TableName":         ubx.FieldSpec{WireName: "table_name"},
+}
 
 type SqlpoolSensitivityLabelConfig struct {
-	// managed by
-	ManagedBy any
 	// Properties of a sensitivity label.
 	Properties any
 }
@@ -52,11 +50,10 @@ type SqlpoolSensitivityLabelAttrs struct {
 var SqlpoolSensitivityLabel = ubx.ResourceBinding{
 	WireType: "azure_synapse_sqlpool_sensitivity_label",
 	Fields: ubx.FieldMap{
-		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlpoolSensitivityLabel_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlpoolSensitivityLabel_PropertiesFields,
 		},
 	},
 }

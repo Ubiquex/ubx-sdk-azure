@@ -5,16 +5,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type App_Value_Identity struct {
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type App_Value_Properties struct {
 	ApplicationId any
-	DisplayName any
-	State any
-	Subdomain any
-	Template any
+	DisplayName   any
+	State         any
+	Subdomain     any
+	Template      any
 }
 
 type App_Value_Sku struct {
@@ -22,20 +22,20 @@ type App_Value_Sku struct {
 }
 
 type App_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type AppConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type AppAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of IoT Central Applications.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// A list of IoT Central Applications.
 	Value any
@@ -44,7 +44,7 @@ type AppAttrs struct {
 var App = ubx.DataSourceBinding{
 	WireType: "azure_iotcentral_app",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

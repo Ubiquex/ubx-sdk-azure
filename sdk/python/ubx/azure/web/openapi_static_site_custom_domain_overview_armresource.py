@@ -8,11 +8,25 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiStaticSiteCustomDomainOverviewArmresource_Properties:
+    # The date and time on which the custom domain was created for the static site.
+    created_on: Any = None
+    # The domain name for the static site custom domain.
+    domain_name: Any = None
+    error_message: Any = None
+    # The status of the custom domain
+    status: Any = None
     # Validation method for adding a custom domain
     validation_method: Any = None
+    # The TXT record validation token
+    validation_token: Any = None
 
 _OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields = {
+    "created_on": ubx.FieldSpec(wire_name="created_on"),
+    "domain_name": ubx.FieldSpec(wire_name="domain_name"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "status": ubx.FieldSpec(wire_name="status"),
     "validation_method": ubx.FieldSpec(wire_name="validation_method"),
+    "validation_token": ubx.FieldSpec(wire_name="validation_token"),
 }
 
 @dataclasses.dataclass

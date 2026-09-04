@@ -206,15 +206,6 @@ const ConfigurationStore_SkuFields: FieldMap = {
   name: "name",
 };
 
-const ConfigurationStore_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ConfigurationStoreConfig {
   /** An identity that can be associated with a resource. */
   identity?: ConfigurationStore_Identity | Computed<ConfigurationStore_Identity>;
@@ -222,8 +213,6 @@ export interface ConfigurationStoreConfig {
   properties?: ConfigurationStore_Properties | Computed<ConfigurationStore_Properties>;
   /** Describes a configuration store SKU. */
   sku: ConfigurationStore_Sku | Computed<ConfigurationStore_Sku>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ConfigurationStore_SystemData | Computed<ConfigurationStore_SystemData>;
 }
 
 export interface ConfigurationStoreAttrs {
@@ -254,11 +243,6 @@ export const ConfigurationStore: ResourceBinding<ConfigurationStoreConfig, Confi
       wireName: "sku",
       kind: "object",
       fields: ConfigurationStore_SkuFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ConfigurationStore_SystemDataFields,
     },
   },
 };

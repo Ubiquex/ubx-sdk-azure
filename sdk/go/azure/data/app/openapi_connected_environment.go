@@ -9,33 +9,33 @@ type OpenapiConnectedEnvironment_Value_ExtendedLocation struct {
 }
 
 type OpenapiConnectedEnvironment_Value_Properties_CustomDomainConfiguration_CertificateKeyVaultProperties struct {
-	Identity any
+	Identity    any
 	KeyVaultUrl any
 }
 
 type OpenapiConnectedEnvironment_Value_Properties_CustomDomainConfiguration struct {
 	CertificateKeyVaultProperties any
-	CertificatePassword any
-	CertificateValue any
-	CustomDomainVerificationId any
-	DnsSuffix any
-	ExpirationDate any
-	SubjectName any
-	Thumbprint any
+	CertificatePassword           any
+	CertificateValue              any
+	CustomDomainVerificationId    any
+	DnsSuffix                     any
+	ExpirationDate                any
+	SubjectName                   any
+	Thumbprint                    any
 }
 
 type OpenapiConnectedEnvironment_Value_Properties struct {
 	CustomDomainConfiguration any
-	DaprAiconnectionString any
-	DefaultDomain any
-	DeploymentErrors any
-	ProvisioningState any
-	StaticIp any
+	DaprAiconnectionString    any
+	DefaultDomain             any
+	DeploymentErrors          any
+	ProvisioningState         any
+	StaticIp                  any
 }
 
 type OpenapiConnectedEnvironment_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type OpenapiConnectedEnvironmentConfig struct {
@@ -50,6 +50,5 @@ type OpenapiConnectedEnvironmentAttrs struct {
 
 var OpenapiConnectedEnvironment = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_connected_environment",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

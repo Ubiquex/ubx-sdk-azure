@@ -32,8 +32,6 @@ const RaiTopic_PropertiesFields: FieldMap = {
 };
 
 export interface RaiTopicConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** RAI Custom Topic properties. */
   properties?: RaiTopic_Properties | Computed<RaiTopic_Properties>;
   /** Resource tags. */
@@ -52,7 +50,6 @@ export interface RaiTopicAttrs {
 export const RaiTopic: ResourceBinding<RaiTopicConfig, RaiTopicAttrs> = {
   wireType: "azure_cognitiveservices_rai_topic",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -4,28 +4,28 @@ package iothub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type EndpointHealthData_Value struct {
-	EndpointId any
-	HealthStatus any
-	LastKnownError any
-	LastKnownErrorTime any
-	LastSendAttemptTime any
+	EndpointId                    any
+	HealthStatus                  any
+	LastKnownError                any
+	LastKnownErrorTime            any
+	LastSendAttemptTime           any
 	LastSuccessfulSendAttemptTime any
 }
 
 type EndpointHealthDataConfig struct {
-	ApiVersion any
-	IotHubName any
+	ApiVersion        any
+	IotHubName        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type EndpointHealthDataAttrs struct {
 	ApiVersion any
 	IotHubName any
 	// Link to more results
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// JSON-serialized array of Endpoint health data
 	Value any
 }
@@ -33,9 +33,9 @@ type EndpointHealthDataAttrs struct {
 var EndpointHealthData = ubx.DataSourceBinding{
 	WireType: "azure_iothub_endpoint_health_data",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"IotHubName": ubx.FieldSpec{WireName: "iot_hub_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"IotHubName":        ubx.FieldSpec{WireName: "iot_hub_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

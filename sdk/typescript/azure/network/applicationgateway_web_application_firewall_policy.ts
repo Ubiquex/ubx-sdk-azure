@@ -9723,8 +9723,6 @@ const ApplicationgatewayWebApplicationFirewallPolicy_PropertiesFields: FieldMap 
 };
 
 export interface ApplicationgatewayWebApplicationFirewallPolicyConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Defines web application firewall policy properties. */
   properties?: ApplicationgatewayWebApplicationFirewallPolicy_Properties | Computed<ApplicationgatewayWebApplicationFirewallPolicy_Properties>;
 }
@@ -9739,7 +9737,6 @@ export interface ApplicationgatewayWebApplicationFirewallPolicyAttrs {
 export const ApplicationgatewayWebApplicationFirewallPolicy: ResourceBinding<ApplicationgatewayWebApplicationFirewallPolicyConfig, ApplicationgatewayWebApplicationFirewallPolicyAttrs> = {
   wireType: "azure_network_applicationgateway_web_application_firewall_policy",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

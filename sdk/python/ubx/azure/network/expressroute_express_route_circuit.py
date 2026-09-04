@@ -419,8 +419,6 @@ _ExpressrouteExpressRouteCircuit_SkuFields = {
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuitConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of ExpressRouteCircuit.
     properties: Any = None
     # Contains SKU in an ExpressRouteCircuit.
@@ -438,7 +436,6 @@ class ExpressrouteExpressRouteCircuitAttrs:
 ExpressrouteExpressRouteCircuit = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_express_route_circuit",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

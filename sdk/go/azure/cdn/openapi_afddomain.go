@@ -46,7 +46,7 @@ type OpenapiAfddomain_Properties_ValidationProperties struct {
 
 type OpenapiAfddomain_Properties struct {
 	// Reference to another resource.
-	AzureDnsZone any
+	AzureDnsZone     any
 	DeploymentStatus any
 	// Provisioning substate shows the progress of custom HTTPS enabling/disabling process step by step. DCV stands for DomainControlValidation.
 	DomainValidationState any
@@ -69,74 +69,74 @@ type OpenapiAfddomain_Properties struct {
 }
 
 var OpenapiAfddomain_Properties_AzureDnsZoneFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiAfddomain_Properties_MtlsSettingsFields = ubx.FieldMap{
-		"Scenario": ubx.FieldSpec{WireName: "scenario"},
-	}
+	"Scenario": ubx.FieldSpec{WireName: "scenario"},
+}
 
 var OpenapiAfddomain_Properties_TlsSettings_CustomizedCipherSuiteSetFields = ubx.FieldMap{
-		"CipherSuiteSetForTls12": ubx.FieldSpec{WireName: "cipher_suite_set_for_tls12"},
-		"CipherSuiteSetForTls13": ubx.FieldSpec{WireName: "cipher_suite_set_for_tls13"},
-	}
+	"CipherSuiteSetForTls12": ubx.FieldSpec{WireName: "cipher_suite_set_for_tls12"},
+	"CipherSuiteSetForTls13": ubx.FieldSpec{WireName: "cipher_suite_set_for_tls13"},
+}
 
 var OpenapiAfddomain_Properties_TlsSettingsFields = ubx.FieldMap{
-		"CertificateType": ubx.FieldSpec{WireName: "certificate_type"},
-		"CipherSuiteSetType": ubx.FieldSpec{WireName: "cipher_suite_set_type"},
-		"CustomizedCipherSuiteSet": ubx.FieldSpec{
-			WireName: "customized_cipher_suite_set",
-			Kind: "object",
-			Fields: OpenapiAfddomain_Properties_TlsSettings_CustomizedCipherSuiteSetFields,
-		},
-		"MinimumTlsVersion": ubx.FieldSpec{WireName: "minimum_tls_version"},
-		"Secret": ubx.FieldSpec{
-			WireName: "secret",
-			Kind: "object",
-			Fields: OpenapiAfddomain_Properties_AzureDnsZoneFields,
-		},
-		"ServerTlsGroupPolicy": ubx.FieldSpec{WireName: "server_tls_group_policy"},
-		"ServerTlsGroups": ubx.FieldSpec{WireName: "server_tls_groups"},
-	}
+	"CertificateType":    ubx.FieldSpec{WireName: "certificate_type"},
+	"CipherSuiteSetType": ubx.FieldSpec{WireName: "cipher_suite_set_type"},
+	"CustomizedCipherSuiteSet": ubx.FieldSpec{
+		WireName: "customized_cipher_suite_set",
+		Kind:     "object",
+		Fields:   OpenapiAfddomain_Properties_TlsSettings_CustomizedCipherSuiteSetFields,
+	},
+	"MinimumTlsVersion": ubx.FieldSpec{WireName: "minimum_tls_version"},
+	"Secret": ubx.FieldSpec{
+		WireName: "secret",
+		Kind:     "object",
+		Fields:   OpenapiAfddomain_Properties_AzureDnsZoneFields,
+	},
+	"ServerTlsGroupPolicy": ubx.FieldSpec{WireName: "server_tls_group_policy"},
+	"ServerTlsGroups":      ubx.FieldSpec{WireName: "server_tls_groups"},
+}
 
 var OpenapiAfddomain_Properties_ValidationPropertiesFields = ubx.FieldMap{
-		"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
-		"ValidationToken": ubx.FieldSpec{WireName: "validation_token"},
-	}
+	"ExpirationDate":  ubx.FieldSpec{WireName: "expiration_date"},
+	"ValidationToken": ubx.FieldSpec{WireName: "validation_token"},
+}
 
 var OpenapiAfddomain_PropertiesFields = ubx.FieldMap{
-		"AzureDnsZone": ubx.FieldSpec{
-			WireName: "azure_dns_zone",
-			Kind: "object",
-			Fields: OpenapiAfddomain_Properties_AzureDnsZoneFields,
-		},
-		"DeploymentStatus": ubx.FieldSpec{WireName: "deployment_status"},
-		"DomainValidationState": ubx.FieldSpec{WireName: "domain_validation_state"},
-		"ExtendedProperties": ubx.FieldSpec{WireName: "extended_properties"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"MtlsSettings": ubx.FieldSpec{
-			WireName: "mtls_settings",
-			Kind: "object",
-			Fields: OpenapiAfddomain_Properties_MtlsSettingsFields,
-		},
-		"PreValidatedCustomDomainResourceId": ubx.FieldSpec{
-			WireName: "pre_validated_custom_domain_resource_id",
-			Kind: "object",
-			Fields: OpenapiAfddomain_Properties_AzureDnsZoneFields,
-		},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TlsSettings": ubx.FieldSpec{
-			WireName: "tls_settings",
-			Kind: "object",
-			Fields: OpenapiAfddomain_Properties_TlsSettingsFields,
-		},
-		"ValidationProperties": ubx.FieldSpec{
-			WireName: "validation_properties",
-			Kind: "object",
-			Fields: OpenapiAfddomain_Properties_ValidationPropertiesFields,
-		},
-	}
+	"AzureDnsZone": ubx.FieldSpec{
+		WireName: "azure_dns_zone",
+		Kind:     "object",
+		Fields:   OpenapiAfddomain_Properties_AzureDnsZoneFields,
+	},
+	"DeploymentStatus":      ubx.FieldSpec{WireName: "deployment_status"},
+	"DomainValidationState": ubx.FieldSpec{WireName: "domain_validation_state"},
+	"ExtendedProperties":    ubx.FieldSpec{WireName: "extended_properties"},
+	"HostName":              ubx.FieldSpec{WireName: "host_name"},
+	"MtlsSettings": ubx.FieldSpec{
+		WireName: "mtls_settings",
+		Kind:     "object",
+		Fields:   OpenapiAfddomain_Properties_MtlsSettingsFields,
+	},
+	"PreValidatedCustomDomainResourceId": ubx.FieldSpec{
+		WireName: "pre_validated_custom_domain_resource_id",
+		Kind:     "object",
+		Fields:   OpenapiAfddomain_Properties_AzureDnsZoneFields,
+	},
+	"ProfileName":       ubx.FieldSpec{WireName: "profile_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"TlsSettings": ubx.FieldSpec{
+		WireName: "tls_settings",
+		Kind:     "object",
+		Fields:   OpenapiAfddomain_Properties_TlsSettingsFields,
+	},
+	"ValidationProperties": ubx.FieldSpec{
+		WireName: "validation_properties",
+		Kind:     "object",
+		Fields:   OpenapiAfddomain_Properties_ValidationPropertiesFields,
+	},
+}
 
 type OpenapiAfddomainConfig struct {
 	// The JSON object that contains the properties of the domain to create.
@@ -153,8 +153,8 @@ var OpenapiAfddomain = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAfddomain_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAfddomain_PropertiesFields,
 		},
 	},
 }

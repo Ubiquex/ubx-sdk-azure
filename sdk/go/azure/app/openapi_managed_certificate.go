@@ -17,12 +17,12 @@ type OpenapiManagedCertificate_Properties struct {
 }
 
 var OpenapiManagedCertificate_PropertiesFields = ubx.FieldMap{
-		"DomainControlValidation": ubx.FieldSpec{WireName: "domain_control_validation"},
-		"Error": ubx.FieldSpec{WireName: "error"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SubjectName": ubx.FieldSpec{WireName: "subject_name"},
-		"ValidationToken": ubx.FieldSpec{WireName: "validation_token"},
-	}
+	"DomainControlValidation": ubx.FieldSpec{WireName: "domain_control_validation"},
+	"Error":                   ubx.FieldSpec{WireName: "error"},
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+	"SubjectName":             ubx.FieldSpec{WireName: "subject_name"},
+	"ValidationToken":         ubx.FieldSpec{WireName: "validation_token"},
+}
 
 type OpenapiManagedCertificateConfig struct {
 	// Certificate resource specific properties
@@ -39,8 +39,8 @@ var OpenapiManagedCertificate = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiManagedCertificate_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiManagedCertificate_PropertiesFields,
 		},
 	},
 }

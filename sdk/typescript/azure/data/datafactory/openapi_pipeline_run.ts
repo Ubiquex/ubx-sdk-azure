@@ -16,7 +16,6 @@ export interface OpenapiPipelineRun_InvokedBy {
 
 export interface OpenapiPipelineRunConfig {
   factoryName: string | Computed<string>;
-  runId: string | Computed<string>;
 }
 
 export interface OpenapiPipelineRunAttrs {
@@ -52,6 +51,5 @@ export const OpenapiPipelineRun: DataSourceBinding<OpenapiPipelineRunConfig, Ope
   wireType: "azure_datafactory_openapi_pipeline_run",
   fields: {
     factoryName: "factory_name",
-    runId: "run_id",
   },
 };

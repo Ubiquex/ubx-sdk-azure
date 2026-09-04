@@ -37,29 +37,29 @@ type VmmServer_Properties struct {
 }
 
 var VmmServer_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VmmServer_Properties_CredentialsFields = ubx.FieldMap{
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"Password": ubx.FieldSpec{WireName: "password"},
+	"Username": ubx.FieldSpec{WireName: "username"},
+}
 
 var VmmServer_PropertiesFields = ubx.FieldMap{
-		"ConnectionStatus": ubx.FieldSpec{WireName: "connection_status"},
-		"Credentials": ubx.FieldSpec{
-			WireName: "credentials",
-			Kind: "object",
-			Fields: VmmServer_Properties_CredentialsFields,
-		},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Uuid": ubx.FieldSpec{WireName: "uuid"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ConnectionStatus": ubx.FieldSpec{WireName: "connection_status"},
+	"Credentials": ubx.FieldSpec{
+		WireName: "credentials",
+		Kind:     "object",
+		Fields:   VmmServer_Properties_CredentialsFields,
+	},
+	"ErrorMessage":      ubx.FieldSpec{WireName: "error_message"},
+	"Fqdn":              ubx.FieldSpec{WireName: "fqdn"},
+	"Port":              ubx.FieldSpec{WireName: "port"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Uuid":              ubx.FieldSpec{WireName: "uuid"},
+	"Version":           ubx.FieldSpec{WireName: "version"},
+}
 
 type VmmServerConfig struct {
 	// The extended location.
@@ -80,13 +80,13 @@ var VmmServer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: VmmServer_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   VmmServer_ExtendedLocationFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VmmServer_PropertiesFields,
+			Kind:     "object",
+			Fields:   VmmServer_PropertiesFields,
 		},
 	},
 }

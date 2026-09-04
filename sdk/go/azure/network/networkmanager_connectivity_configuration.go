@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerConnectivityConfiguration_Properties_AppliesToGroups struct {
 	GroupConnectivity any
-	IsGlobal any
-	NetworkGroupId any
-	UseHubGateway any
+	IsGlobal          any
+	NetworkGroupId    any
+	UseHubGateway     any
 }
 
 type NetworkmanagerConnectivityConfiguration_Properties_ConnectivityCapabilities struct {
@@ -20,7 +20,7 @@ type NetworkmanagerConnectivityConfiguration_Properties_ConnectivityCapabilities
 }
 
 type NetworkmanagerConnectivityConfiguration_Properties_Hubs struct {
-	ResourceId any
+	ResourceId   any
 	ResourceType any
 }
 
@@ -61,61 +61,50 @@ type NetworkmanagerConnectivityConfiguration_SystemData struct {
 }
 
 var NetworkmanagerConnectivityConfiguration_Properties_AppliesToGroupsFields = ubx.FieldMap{
-		"GroupConnectivity": ubx.FieldSpec{WireName: "group_connectivity"},
-		"IsGlobal": ubx.FieldSpec{WireName: "is_global"},
-		"NetworkGroupId": ubx.FieldSpec{WireName: "network_group_id"},
-		"UseHubGateway": ubx.FieldSpec{WireName: "use_hub_gateway"},
-	}
+	"GroupConnectivity": ubx.FieldSpec{WireName: "group_connectivity"},
+	"IsGlobal":          ubx.FieldSpec{WireName: "is_global"},
+	"NetworkGroupId":    ubx.FieldSpec{WireName: "network_group_id"},
+	"UseHubGateway":     ubx.FieldSpec{WireName: "use_hub_gateway"},
+}
 
 var NetworkmanagerConnectivityConfiguration_Properties_ConnectivityCapabilitiesFields = ubx.FieldMap{
-		"ConnectedGroupAddressOverlap": ubx.FieldSpec{WireName: "connected_group_address_overlap"},
-		"ConnectedGroupPrivateEndpointsScale": ubx.FieldSpec{WireName: "connected_group_private_endpoints_scale"},
-		"PeeringEnforcement": ubx.FieldSpec{WireName: "peering_enforcement"},
-	}
+	"ConnectedGroupAddressOverlap":        ubx.FieldSpec{WireName: "connected_group_address_overlap"},
+	"ConnectedGroupPrivateEndpointsScale": ubx.FieldSpec{WireName: "connected_group_private_endpoints_scale"},
+	"PeeringEnforcement":                  ubx.FieldSpec{WireName: "peering_enforcement"},
+}
 
 var NetworkmanagerConnectivityConfiguration_Properties_HubsFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-	}
+	"ResourceId":   ubx.FieldSpec{WireName: "resource_id"},
+	"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
+}
 
 var NetworkmanagerConnectivityConfiguration_PropertiesFields = ubx.FieldMap{
-		"AppliesToGroups": ubx.FieldSpec{
-			WireName: "applies_to_groups",
-			Kind: "list",
-			Fields: NetworkmanagerConnectivityConfiguration_Properties_AppliesToGroupsFields,
-		},
-		"ConnectivityCapabilities": ubx.FieldSpec{
-			WireName: "connectivity_capabilities",
-			Kind: "object",
-			Fields: NetworkmanagerConnectivityConfiguration_Properties_ConnectivityCapabilitiesFields,
-		},
-		"ConnectivityTopology": ubx.FieldSpec{WireName: "connectivity_topology"},
-		"DeleteExistingPeering": ubx.FieldSpec{WireName: "delete_existing_peering"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Hubs": ubx.FieldSpec{
-			WireName: "hubs",
-			Kind: "list",
-			Fields: NetworkmanagerConnectivityConfiguration_Properties_HubsFields,
-		},
-		"IsGlobal": ubx.FieldSpec{WireName: "is_global"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
-
-var NetworkmanagerConnectivityConfiguration_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"AppliesToGroups": ubx.FieldSpec{
+		WireName: "applies_to_groups",
+		Kind:     "list",
+		Fields:   NetworkmanagerConnectivityConfiguration_Properties_AppliesToGroupsFields,
+	},
+	"ConnectivityCapabilities": ubx.FieldSpec{
+		WireName: "connectivity_capabilities",
+		Kind:     "object",
+		Fields:   NetworkmanagerConnectivityConfiguration_Properties_ConnectivityCapabilitiesFields,
+	},
+	"ConnectivityTopology":  ubx.FieldSpec{WireName: "connectivity_topology"},
+	"DeleteExistingPeering": ubx.FieldSpec{WireName: "delete_existing_peering"},
+	"Description":           ubx.FieldSpec{WireName: "description"},
+	"Hubs": ubx.FieldSpec{
+		WireName: "hubs",
+		Kind:     "list",
+		Fields:   NetworkmanagerConnectivityConfiguration_Properties_HubsFields,
+	},
+	"IsGlobal":          ubx.FieldSpec{WireName: "is_global"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type NetworkmanagerConnectivityConfigurationConfig struct {
 	// Properties of network manager connectivity configuration
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerConnectivityConfigurationAttrs struct {
@@ -130,13 +119,8 @@ var NetworkmanagerConnectivityConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerConnectivityConfiguration_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerConnectivityConfiguration_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerConnectivityConfiguration_PropertiesFields,
 		},
 	},
 }

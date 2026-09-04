@@ -12152,8 +12152,6 @@ const VirtualnetworkVirtualNetwork_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkVirtualNetworkConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkVirtualNetwork_ExtendedLocation | Computed<VirtualnetworkVirtualNetwork_ExtendedLocation>;
   /** Properties of the virtual network. */
@@ -12172,7 +12170,6 @@ export interface VirtualnetworkVirtualNetworkAttrs {
 export const VirtualnetworkVirtualNetwork: ResourceBinding<VirtualnetworkVirtualNetworkConfig, VirtualnetworkVirtualNetworkAttrs> = {
   wireType: "azure_network_virtualnetwork_virtual_network",
   fields: {
-    etag: "etag",
     extendedLocation: {
       wireName: "extended_location",
       kind: "object",

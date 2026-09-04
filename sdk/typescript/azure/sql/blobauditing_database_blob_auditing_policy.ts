@@ -38,8 +38,6 @@ const BlobauditingDatabaseBlobAuditingPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface BlobauditingDatabaseBlobAuditingPolicyConfig {
-  /** Resource kind. */
-  kind?: string | Computed<string>;
   /** Properties of a database blob auditing policy. */
   properties?: BlobauditingDatabaseBlobAuditingPolicy_Properties | Computed<BlobauditingDatabaseBlobAuditingPolicy_Properties>;
 }
@@ -54,7 +52,6 @@ export interface BlobauditingDatabaseBlobAuditingPolicyAttrs {
 export const BlobauditingDatabaseBlobAuditingPolicy: ResourceBinding<BlobauditingDatabaseBlobAuditingPolicyConfig, BlobauditingDatabaseBlobAuditingPolicyAttrs> = {
   wireType: "azure_sql_blobauditing_database_blob_auditing_policy",
   fields: {
-    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",

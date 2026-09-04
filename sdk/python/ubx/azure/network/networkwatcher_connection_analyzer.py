@@ -209,33 +209,14 @@ _NetworkwatcherConnectionAnalyzer_PropertiesFields = {
     "status": ubx.FieldSpec(wire_name="status"),
 }
 
-_NetworkwatcherConnectionAnalyzer_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class NetworkwatcherConnectionAnalyzerConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
-    # Resource ID of the connection analyzer.
-    id: Any = None
     # Resource location.
     location: Any = None
-    # Name of the connection analyzer.
-    name: Any = None
     # Properties of a connection analyzer.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
     # Resource tags.
     tags: Any = None
-    # Resource type.
-    type: Any = None
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionAnalyzerAttrs:
@@ -259,21 +240,12 @@ class NetworkwatcherConnectionAnalyzerAttrs:
 NetworkwatcherConnectionAnalyzer = ubx.ResourceBinding(
     wire_type="azure_network_networkwatcher_connection_analyzer",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
-        "id": ubx.FieldSpec(wire_name="id"),
         "location": ubx.FieldSpec(wire_name="location"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_NetworkwatcherConnectionAnalyzer_PropertiesFields,
         ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_NetworkwatcherConnectionAnalyzer_SystemDataFields,
-        ),
         "tags": ubx.FieldSpec(wire_name="tags"),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

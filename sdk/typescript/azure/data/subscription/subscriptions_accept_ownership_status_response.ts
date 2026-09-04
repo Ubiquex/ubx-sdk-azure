@@ -3,7 +3,6 @@ import type { Computed, FieldMap, DataSourceBinding } from "@ubx/sdk";
 
 export interface SubscriptionsAcceptOwnershipStatusResponseConfig {
   apiVersion: string | Computed<string>;
-  subscriptionId: string | Computed<string>;
 }
 
 export interface SubscriptionsAcceptOwnershipStatusResponseAttrs {
@@ -27,6 +26,5 @@ export const SubscriptionsAcceptOwnershipStatusResponse: DataSourceBinding<Subsc
   wireType: "azure_subscription_subscriptions_accept_ownership_status_response",
   fields: {
     apiVersion: "api_version",
-    subscriptionId: "subscription_id",
   },
 };

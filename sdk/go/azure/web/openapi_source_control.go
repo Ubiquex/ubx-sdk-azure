@@ -15,11 +15,11 @@ type OpenapiSourceControl_Properties struct {
 }
 
 var OpenapiSourceControl_PropertiesFields = ubx.FieldMap{
-		"ExpirationTime": ubx.FieldSpec{WireName: "expiration_time"},
-		"RefreshToken": ubx.FieldSpec{WireName: "refresh_token"},
-		"Token": ubx.FieldSpec{WireName: "token"},
-		"TokenSecret": ubx.FieldSpec{WireName: "token_secret"},
-	}
+	"ExpirationTime": ubx.FieldSpec{WireName: "expiration_time"},
+	"RefreshToken":   ubx.FieldSpec{WireName: "refresh_token"},
+	"Token":          ubx.FieldSpec{WireName: "token"},
+	"TokenSecret":    ubx.FieldSpec{WireName: "token_secret"},
+}
 
 type OpenapiSourceControlConfig struct {
 	// Kind of resource.
@@ -41,8 +41,8 @@ var OpenapiSourceControl = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSourceControl_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSourceControl_PropertiesFields,
 		},
 	},
 }

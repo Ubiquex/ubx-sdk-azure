@@ -11,7 +11,6 @@ export interface HostGroup_Properties_Hosts {
 }
 
 export interface HostGroup_Properties_InstanceView_Hosts {
-  /** The name of the dedicated host. (AI-inferred) */
   name?: string | Computed<string>;
 }
 

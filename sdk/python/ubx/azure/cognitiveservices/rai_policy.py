@@ -70,8 +70,6 @@ _RaiPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class RaiPolicyConfig:
-    # Resource Etag.
-    etag: Any = None
     # Azure OpenAI Content Filters properties.
     properties: Any = None
     # Resource tags.
@@ -89,7 +87,6 @@ class RaiPolicyAttrs:
 RaiPolicy = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_rai_policy",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

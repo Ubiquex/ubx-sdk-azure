@@ -6,15 +6,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiMaintenance_Value_Properties struct {
 	MaintenanceAvailableScheduleMaxTime any
 	MaintenanceAvailableScheduleMinTime any
-	MaintenanceDescription any
-	MaintenanceEndTime any
-	MaintenanceExecutionEndTime any
-	MaintenanceExecutionStartTime any
-	MaintenanceStartTime any
-	MaintenanceState any
-	MaintenanceTitle any
-	MaintenanceType any
-	ProvisioningState any
+	MaintenanceDescription              any
+	MaintenanceEndTime                  any
+	MaintenanceExecutionEndTime         any
+	MaintenanceExecutionStartTime       any
+	MaintenanceStartTime                any
+	MaintenanceState                    any
+	MaintenanceTitle                    any
+	MaintenanceType                     any
+	ProvisioningState                   any
 }
 
 type OpenapiMaintenance_Value struct {
@@ -27,7 +27,7 @@ type OpenapiMaintenanceConfig struct {
 
 type OpenapiMaintenanceAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The Maintenance items on this page
 	Value any

@@ -9,44 +9,44 @@ type ManagedclustersManagedCluster_Value_ExtendedLocation struct {
 }
 
 type ManagedclustersManagedCluster_Value_Identity_DelegatedResources struct {
-	Location any
+	Location         any
 	ReferralResource any
-	ResourceId any
-	TenantId any
+	ResourceId       any
+	TenantId         any
 }
 
 type ManagedclustersManagedCluster_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ManagedclustersManagedCluster_Value_Identity struct {
-	DelegatedResources any
-	PrincipalId any
-	TenantId any
-	Type any
+	DelegatedResources     any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_AadProfile struct {
 	AdminGroupObjectIds any
-	ClientAppId any
-	EnableAzureRbac any
-	Managed any
-	ServerAppId any
-	ServerAppSecret any
-	TenantId any
+	ClientAppId         any
+	EnableAzureRbac     any
+	Managed             any
+	ServerAppId         any
+	ServerAppSecret     any
+	TenantId            any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_AddonProfiles_Identity struct {
-	ClientId any
-	ObjectId any
+	ClientId   any
+	ObjectId   any
 	ResourceId any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_AddonProfiles struct {
-	Config any
-	Enabled any
+	Config   any
+	Enabled  any
 	Identity any
 }
 
@@ -59,41 +59,41 @@ type ManagedclustersManagedCluster_Value_Properties_AiToolchainOperatorProfile s
 }
 
 type ManagedclustersManagedCluster_Value_Properties_ApiServerAccessProfile struct {
-	AuthorizedIpranges any
-	DisableRunCommand any
-	EnablePrivateCluster any
+	AuthorizedIpranges             any
+	DisableRunCommand              any
+	EnablePrivateCluster           any
 	EnablePrivateClusterPublicFqdn any
-	EnableVnetIntegration any
-	PrivateDnszone any
-	SubnetId any
+	EnableVnetIntegration          any
+	PrivateDnszone                 any
+	SubnetId                       any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_AutoScalerProfile struct {
-	BalanceSimilarNodeGroups any
-	DaemonsetEvictionForEmptyNodes any
+	BalanceSimilarNodeGroups          any
+	DaemonsetEvictionForEmptyNodes    any
 	DaemonsetEvictionForOccupiedNodes any
-	Expander any
-	IgnoreDaemonsetsUtilization any
-	MaxEmptyBulkDelete any
-	MaxGracefulTerminationSec any
-	MaxNodeProvisionTime any
-	MaxTotalUnreadyPercentage any
-	NewPodScaleUpDelay any
-	OkTotalUnreadyCount any
-	ScaleDownDelayAfterAdd any
-	ScaleDownDelayAfterDelete any
-	ScaleDownDelayAfterFailure any
-	ScaleDownUnneededTime any
-	ScaleDownUnreadyTime any
-	ScaleDownUtilizationThreshold any
-	ScanInterval any
-	SkipNodesWithLocalStorage any
-	SkipNodesWithSystemPods any
+	Expander                          any
+	IgnoreDaemonsetsUtilization       any
+	MaxEmptyBulkDelete                any
+	MaxGracefulTerminationSec         any
+	MaxNodeProvisionTime              any
+	MaxTotalUnreadyPercentage         any
+	NewPodScaleUpDelay                any
+	OkTotalUnreadyCount               any
+	ScaleDownDelayAfterAdd            any
+	ScaleDownDelayAfterDelete         any
+	ScaleDownDelayAfterFailure        any
+	ScaleDownUnneededTime             any
+	ScaleDownUnreadyTime              any
+	ScaleDownUtilizationThreshold     any
+	ScanInterval                      any
+	SkipNodesWithLocalStorage         any
+	SkipNodesWithSystemPods           any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_AutoUpgradeProfile struct {
 	NodeOsupgradeChannel any
-	UpgradeChannel any
+	UpgradeChannel       any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_AzureMonitorProfile_AppMonitoring struct {
@@ -102,37 +102,37 @@ type ManagedclustersManagedCluster_Value_Properties_AzureMonitorProfile_AppMonit
 
 type ManagedclustersManagedCluster_Value_Properties_AzureMonitorProfile_Metrics_KubeStateMetrics struct {
 	MetricAnnotationsAllowList any
-	MetricLabelsAllowlist any
+	MetricLabelsAllowlist      any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_AzureMonitorProfile_Metrics struct {
-	ControlPlane any
-	Enabled any
+	ControlPlane     any
+	Enabled          any
 	KubeStateMetrics any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_AzureMonitorProfile struct {
 	AppMonitoring any
-	Metrics any
+	Metrics       any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_BootstrapProfile struct {
-	ArtifactSource any
+	ArtifactSource      any
 	ContainerRegistryId any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_HostedSystemProfile struct {
-	Enabled any
-	NodeSubnetId any
+	Enabled            any
+	NodeSubnetId       any
 	SystemNodeSubnetId any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_HttpProxyConfig struct {
-	Enabled any
-	HttpProxy any
+	Enabled    any
+	HttpProxy  any
 	HttpsProxy any
-	NoProxy any
-	TrustedCa any
+	NoProxy    any
+	TrustedCa  any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_IngressProfile_GatewayApi struct {
@@ -152,15 +152,15 @@ type ManagedclustersManagedCluster_Value_Properties_IngressProfile_WebAppRouting
 }
 
 type ManagedclustersManagedCluster_Value_Properties_IngressProfile_WebAppRouting struct {
-	DnsZoneResourceIds any
-	Enabled any
+	DnsZoneResourceIds        any
+	Enabled                   any
 	GatewayApiimplementations any
-	Identity any
-	Nginx any
+	Identity                  any
+	Nginx                     any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_IngressProfile struct {
-	GatewayApi any
+	GatewayApi    any
 	WebAppRouting any
 }
 
@@ -174,7 +174,7 @@ type ManagedclustersManagedCluster_Value_Properties_LinuxProfile_Ssh struct {
 
 type ManagedclustersManagedCluster_Value_Properties_LinuxProfile struct {
 	AdminUsername any
-	Ssh any
+	Ssh           any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_MetricsProfile struct {
@@ -191,15 +191,15 @@ type ManagedclustersManagedCluster_Value_Properties_NetworkProfile_AdvancedNetwo
 
 type ManagedclustersManagedCluster_Value_Properties_NetworkProfile_AdvancedNetworking_Security struct {
 	AdvancedNetworkPolicies any
-	Enabled any
-	TransitEncryption any
+	Enabled                 any
+	TransitEncryption       any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_NetworkProfile_AdvancedNetworking struct {
-	Enabled any
+	Enabled       any
 	Observability any
-	Performance any
-	Security any
+	Performance   any
+	Security      any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIps struct {
@@ -207,7 +207,7 @@ type ManagedclustersManagedCluster_Value_Properties_NetworkProfile_LoadBalancerP
 }
 
 type ManagedclustersManagedCluster_Value_Properties_NetworkProfile_LoadBalancerProfile_ManagedOutboundIps struct {
-	Count any
+	Count     any
 	CountIpv6 any
 }
 
@@ -220,14 +220,14 @@ type ManagedclustersManagedCluster_Value_Properties_NetworkProfile_LoadBalancerP
 }
 
 type ManagedclustersManagedCluster_Value_Properties_NetworkProfile_LoadBalancerProfile struct {
-	AllocatedOutboundPorts any
-	BackendPoolType any
-	EffectiveOutboundIps any
+	AllocatedOutboundPorts              any
+	BackendPoolType                     any
+	EffectiveOutboundIps                any
 	EnableMultipleStandardLoadBalancers any
-	IdleTimeoutInMinutes any
-	ManagedOutboundIps any
-	OutboundIpprefixes any
-	OutboundIps any
+	IdleTimeoutInMinutes                any
+	ManagedOutboundIps                  any
+	OutboundIpprefixes                  any
+	OutboundIps                         any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_NetworkProfile_NatGatewayProfile_ManagedOutboundIpprofile struct {
@@ -235,34 +235,34 @@ type ManagedclustersManagedCluster_Value_Properties_NetworkProfile_NatGatewayPro
 }
 
 type ManagedclustersManagedCluster_Value_Properties_NetworkProfile_NatGatewayProfile struct {
-	EffectiveOutboundIps any
-	IdleTimeoutInMinutes any
+	EffectiveOutboundIps     any
+	IdleTimeoutInMinutes     any
 	ManagedOutboundIpprofile any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_NetworkProfile struct {
-	AdvancedNetworking any
-	DnsServiceIp any
-	IpFamilies any
-	LoadBalancerProfile any
-	LoadBalancerSku any
-	NatGatewayProfile any
-	NetworkDataplane any
-	NetworkMode any
-	NetworkPlugin any
-	NetworkPluginMode any
-	NetworkPolicy any
-	OutboundType any
-	PodCidr any
-	PodCidrs any
-	ServiceCidr any
-	ServiceCidrs any
+	AdvancedNetworking         any
+	DnsServiceIp               any
+	IpFamilies                 any
+	LoadBalancerProfile        any
+	LoadBalancerSku            any
+	NatGatewayProfile          any
+	NetworkDataplane           any
+	NetworkMode                any
+	NetworkPlugin              any
+	NetworkPluginMode          any
+	NetworkPolicy              any
+	OutboundType               any
+	PodCidr                    any
+	PodCidrs                   any
+	ServiceCidr                any
+	ServiceCidrs               any
 	StaticEgressGatewayProfile any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_NodeProvisioningProfile struct {
 	DefaultNodePools any
-	Mode any
+	Mode             any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_NodeResourceGroupProfile struct {
@@ -270,7 +270,7 @@ type ManagedclustersManagedCluster_Value_Properties_NodeResourceGroupProfile str
 }
 
 type ManagedclustersManagedCluster_Value_Properties_OidcIssuerProfile struct {
-	Enabled any
+	Enabled   any
 	IssuerUrl any
 }
 
@@ -278,10 +278,10 @@ type ManagedclustersManagedCluster_Value_Properties_PodIdentityProfile_UserAssig
 }
 
 type ManagedclustersManagedCluster_Value_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error struct {
-	Code any
+	Code    any
 	Details any
 	Message any
-	Target any
+	Target  any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error struct {
@@ -293,24 +293,24 @@ type ManagedclustersManagedCluster_Value_Properties_PodIdentityProfile_UserAssig
 }
 
 type ManagedclustersManagedCluster_Value_Properties_PodIdentityProfile_UserAssignedIdentities struct {
-	BindingSelector any
-	Identity any
-	Name any
-	Namespace any
-	ProvisioningInfo any
+	BindingSelector   any
+	Identity          any
+	Name              any
+	Namespace         any
+	ProvisioningInfo  any
 	ProvisioningState any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_PodIdentityProfile_UserAssignedIdentityExceptions struct {
-	Name any
+	Name      any
 	Namespace any
 	PodLabels any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_PodIdentityProfile struct {
-	AllowNetworkPluginKubenet any
-	Enabled any
-	UserAssignedIdentities any
+	AllowNetworkPluginKubenet      any
+	Enabled                        any
+	UserAssignedIdentities         any
 	UserAssignedIdentityExceptions any
 }
 
@@ -319,12 +319,12 @@ type ManagedclustersManagedCluster_Value_Properties_PowerState struct {
 }
 
 type ManagedclustersManagedCluster_Value_Properties_PrivateLinkResources struct {
-	GroupId any
-	Id any
-	Name any
+	GroupId              any
+	Id                   any
+	Name                 any
 	PrivateLinkServiceId any
-	RequiredMembers any
-	Type any
+	RequiredMembers      any
+	Type                 any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_SchedulerProfile_Upstream struct {
@@ -336,48 +336,48 @@ type ManagedclustersManagedCluster_Value_Properties_SchedulerProfile struct {
 }
 
 type ManagedclustersManagedCluster_Value_Properties_SecurityProfile_AzureKeyVaultKms struct {
-	Enabled any
-	KeyId any
+	Enabled               any
+	KeyId                 any
 	KeyVaultNetworkAccess any
-	KeyVaultResourceId any
+	KeyVaultResourceId    any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_SecurityProfile_Defender_SecurityGating_Identities struct {
 	AzureContainerRegistry any
-	Identity any
+	Identity               any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_SecurityProfile_Defender_SecurityGating struct {
 	AllowSecretAccess any
-	Enabled any
-	Identities any
+	Enabled           any
+	Identities        any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_SecurityProfile_Defender struct {
 	LogAnalyticsWorkspaceResourceId any
-	SecurityGating any
-	SecurityMonitoring any
+	SecurityGating                  any
+	SecurityMonitoring              any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_SecurityProfile_ImageCleaner struct {
-	Enabled any
+	Enabled       any
 	IntervalHours any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_SecurityProfile struct {
-	AzureKeyVaultKms any
+	AzureKeyVaultKms          any
 	CustomCatrustCertificates any
-	Defender any
-	ImageCleaner any
-	WorkloadIdentity any
+	Defender                  any
+	ImageCleaner              any
+	WorkloadIdentity          any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_ServiceMeshProfile_Istio_CertificateAuthority_Plugin struct {
 	CertChainObjectName any
-	CertObjectName any
-	KeyObjectName any
-	KeyVaultId any
-	RootCertObjectName any
+	CertObjectName      any
+	KeyObjectName       any
+	KeyVaultId          any
+	RootCertObjectName  any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_ServiceMeshProfile_Istio_CertificateAuthority struct {
@@ -385,37 +385,37 @@ type ManagedclustersManagedCluster_Value_Properties_ServiceMeshProfile_Istio_Cer
 }
 
 type ManagedclustersManagedCluster_Value_Properties_ServiceMeshProfile_Istio_Components_EgressGateways struct {
-	Enabled any
+	Enabled                  any
 	GatewayConfigurationName any
-	Name any
-	Namespace any
+	Name                     any
+	Namespace                any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_ServiceMeshProfile_Istio_Components_IngressGateways struct {
 	Enabled any
-	Mode any
+	Mode    any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_ServiceMeshProfile_Istio_Components struct {
-	EgressGateways any
-	IngressGateways any
+	EgressGateways            any
+	IngressGateways           any
 	ProxyRedirectionMechanism any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_ServiceMeshProfile_Istio struct {
 	CertificateAuthority any
-	Components any
-	Revisions any
+	Components           any
+	Revisions            any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_ServiceMeshProfile struct {
 	Istio any
-	Mode any
+	Mode  any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_ServicePrincipalProfile struct {
 	ClientId any
-	Secret any
+	Secret   any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_Status_ProvisioningError_AdditionalInfo struct {
@@ -425,18 +425,18 @@ type ManagedclustersManagedCluster_Value_Properties_Status_ProvisioningError_Add
 
 type ManagedclustersManagedCluster_Value_Properties_Status_ProvisioningError_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_Status_ProvisioningError struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_Status struct {
@@ -444,15 +444,15 @@ type ManagedclustersManagedCluster_Value_Properties_Status struct {
 }
 
 type ManagedclustersManagedCluster_Value_Properties_StorageProfile struct {
-	BlobCsidriver any
-	DiskCsidriver any
-	FileCsidriver any
+	BlobCsidriver      any
+	DiskCsidriver      any
+	FileCsidriver      any
 	SnapshotController any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_UpgradeSettings_OverrideSettings struct {
 	ForceUpgrade any
-	Until any
+	Until        any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_UpgradeSettings struct {
@@ -460,72 +460,72 @@ type ManagedclustersManagedCluster_Value_Properties_UpgradeSettings struct {
 }
 
 type ManagedclustersManagedCluster_Value_Properties_WindowsProfile_GmsaProfile struct {
-	DnsServer any
-	Enabled any
+	DnsServer      any
+	Enabled        any
 	RootDomainName any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_WindowsProfile struct {
-	AdminPassword any
-	AdminUsername any
+	AdminPassword  any
+	AdminUsername  any
 	EnableCsiproxy any
-	GmsaProfile any
-	LicenseType any
+	GmsaProfile    any
+	LicenseType    any
 }
 
 type ManagedclustersManagedCluster_Value_Properties_WorkloadAutoScalerProfile struct {
-	Keda any
+	Keda                  any
 	VerticalPodAutoscaler any
 }
 
 type ManagedclustersManagedCluster_Value_Properties struct {
-	AadProfile any
-	AddonProfiles any
-	AgentPoolProfiles any
+	AadProfile                 any
+	AddonProfiles              any
+	AgentPoolProfiles          any
 	AiToolchainOperatorProfile any
-	ApiServerAccessProfile any
-	AutoScalerProfile any
-	AutoUpgradeProfile any
-	AzureMonitorProfile any
-	AzurePortalFqdn any
-	BootstrapProfile any
-	CurrentKubernetesVersion any
-	DisableLocalAccounts any
-	DiskEncryptionSetId any
-	DnsPrefix any
-	EnableRbac any
-	Fqdn any
-	FqdnSubdomain any
-	HostedSystemProfile any
-	HttpProxyConfig any
-	IdentityProfile any
-	IngressProfile any
-	KubernetesVersion any
-	LinuxProfile any
-	MaxAgentPools any
-	MetricsProfile any
-	NetworkProfile any
-	NodeProvisioningProfile any
-	NodeResourceGroup any
-	NodeResourceGroupProfile any
-	OidcIssuerProfile any
-	PodIdentityProfile any
-	PowerState any
-	PrivateFqdn any
-	PrivateLinkResources any
-	ProvisioningState any
-	PublicNetworkAccess any
-	ResourceUid any
-	SchedulerProfile any
-	SecurityProfile any
-	ServiceMeshProfile any
-	ServicePrincipalProfile any
-	Status any
-	StorageProfile any
-	SupportPlan any
-	UpgradeSettings any
-	WindowsProfile any
-	WorkloadAutoScalerProfile any
+	ApiServerAccessProfile     any
+	AutoScalerProfile          any
+	AutoUpgradeProfile         any
+	AzureMonitorProfile        any
+	AzurePortalFqdn            any
+	BootstrapProfile           any
+	CurrentKubernetesVersion   any
+	DisableLocalAccounts       any
+	DiskEncryptionSetId        any
+	DnsPrefix                  any
+	EnableRbac                 any
+	Fqdn                       any
+	FqdnSubdomain              any
+	HostedSystemProfile        any
+	HttpProxyConfig            any
+	IdentityProfile            any
+	IngressProfile             any
+	KubernetesVersion          any
+	LinuxProfile               any
+	MaxAgentPools              any
+	MetricsProfile             any
+	NetworkProfile             any
+	NodeProvisioningProfile    any
+	NodeResourceGroup          any
+	NodeResourceGroupProfile   any
+	OidcIssuerProfile          any
+	PodIdentityProfile         any
+	PowerState                 any
+	PrivateFqdn                any
+	PrivateLinkResources       any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	ResourceUid                any
+	SchedulerProfile           any
+	SecurityProfile            any
+	ServiceMeshProfile         any
+	ServicePrincipalProfile    any
+	Status                     any
+	StorageProfile             any
+	SupportPlan                any
+	UpgradeSettings            any
+	WindowsProfile             any
+	WorkloadAutoScalerProfile  any
 }
 
 type ManagedclustersManagedCluster_Value_Sku struct {
@@ -534,12 +534,12 @@ type ManagedclustersManagedCluster_Value_Sku struct {
 }
 
 type ManagedclustersManagedCluster_Value struct {
-	ETag any
+	ETag             any
 	ExtendedLocation any
-	Identity any
-	Kind any
-	Properties any
-	Sku any
+	Identity         any
+	Kind             any
+	Properties       any
+	Sku              any
 }
 
 type ManagedclustersManagedClusterConfig struct {
@@ -554,6 +554,5 @@ type ManagedclustersManagedClusterAttrs struct {
 
 var ManagedclustersManagedCluster = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_managedclusters_managed_cluster",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

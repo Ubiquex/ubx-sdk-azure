@@ -4,9 +4,9 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlLabCost_Properties_LabCostDetails struct {
-	Cost any
+	Cost     any
 	CostType any
-	Date any
+	Date     any
 }
 
 type DtlLabCost_Properties_LabCostSummary struct {
@@ -15,15 +15,15 @@ type DtlLabCost_Properties_LabCostSummary struct {
 }
 
 type DtlLabCost_Properties_ResourceCosts struct {
-	ExternalResourceId any
-	ResourceCost any
-	ResourceId any
-	ResourceOwner any
+	ExternalResourceId  any
+	ResourceCost        any
+	ResourceId          any
+	ResourceOwner       any
 	ResourcePricingTier any
-	ResourceStatus any
-	ResourceType any
-	ResourceUid any
-	Resourcename any
+	ResourceStatus      any
+	ResourceType        any
+	ResourceUid         any
+	Resourcename        any
 }
 
 type DtlLabCost_Properties_TargetCost_CostThresholds_PercentageThreshold struct {
@@ -31,11 +31,11 @@ type DtlLabCost_Properties_TargetCost_CostThresholds_PercentageThreshold struct 
 }
 
 type DtlLabCost_Properties_TargetCost_CostThresholds struct {
-	DisplayOnChart any
-	NotificationSent any
-	PercentageThreshold any
+	DisplayOnChart               any
+	NotificationSent             any
+	PercentageThreshold          any
 	SendNotificationWhenExceeded any
-	ThresholdId any
+	ThresholdId                  any
 }
 
 type DtlLabCost_Properties_TargetCost struct {
@@ -77,84 +77,84 @@ type DtlLabCost_Properties struct {
 }
 
 var DtlLabCost_Properties_LabCostDetailsFields = ubx.FieldMap{
-		"Cost": ubx.FieldSpec{WireName: "cost"},
-		"CostType": ubx.FieldSpec{WireName: "cost_type"},
-		"Date": ubx.FieldSpec{WireName: "date"},
-	}
+	"Cost":     ubx.FieldSpec{WireName: "cost"},
+	"CostType": ubx.FieldSpec{WireName: "cost_type"},
+	"Date":     ubx.FieldSpec{WireName: "date"},
+}
 
 var DtlLabCost_Properties_LabCostSummaryFields = ubx.FieldMap{
-		"EstimatedLabCost": ubx.FieldSpec{WireName: "estimated_lab_cost"},
-	}
+	"EstimatedLabCost": ubx.FieldSpec{WireName: "estimated_lab_cost"},
+}
 
 var DtlLabCost_Properties_ResourceCostsFields = ubx.FieldMap{
-		"ExternalResourceId": ubx.FieldSpec{WireName: "external_resource_id"},
-		"ResourceCost": ubx.FieldSpec{WireName: "resource_cost"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"ResourceOwner": ubx.FieldSpec{WireName: "resource_owner"},
-		"ResourcePricingTier": ubx.FieldSpec{WireName: "resource_pricing_tier"},
-		"ResourceStatus": ubx.FieldSpec{WireName: "resource_status"},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-		"ResourceUid": ubx.FieldSpec{WireName: "resource_uid"},
-		"Resourcename": ubx.FieldSpec{WireName: "resourcename"},
-	}
+	"ExternalResourceId":  ubx.FieldSpec{WireName: "external_resource_id"},
+	"ResourceCost":        ubx.FieldSpec{WireName: "resource_cost"},
+	"ResourceId":          ubx.FieldSpec{WireName: "resource_id"},
+	"ResourceOwner":       ubx.FieldSpec{WireName: "resource_owner"},
+	"ResourcePricingTier": ubx.FieldSpec{WireName: "resource_pricing_tier"},
+	"ResourceStatus":      ubx.FieldSpec{WireName: "resource_status"},
+	"ResourceType":        ubx.FieldSpec{WireName: "resource_type"},
+	"ResourceUid":         ubx.FieldSpec{WireName: "resource_uid"},
+	"Resourcename":        ubx.FieldSpec{WireName: "resourcename"},
+}
 
 var DtlLabCost_Properties_TargetCost_CostThresholds_PercentageThresholdFields = ubx.FieldMap{
-		"ThresholdValue": ubx.FieldSpec{WireName: "threshold_value"},
-	}
+	"ThresholdValue": ubx.FieldSpec{WireName: "threshold_value"},
+}
 
 var DtlLabCost_Properties_TargetCost_CostThresholdsFields = ubx.FieldMap{
-		"DisplayOnChart": ubx.FieldSpec{WireName: "display_on_chart"},
-		"NotificationSent": ubx.FieldSpec{WireName: "notification_sent"},
-		"PercentageThreshold": ubx.FieldSpec{
-			WireName: "percentage_threshold",
-			Kind: "object",
-			Fields: DtlLabCost_Properties_TargetCost_CostThresholds_PercentageThresholdFields,
-		},
-		"SendNotificationWhenExceeded": ubx.FieldSpec{WireName: "send_notification_when_exceeded"},
-		"ThresholdId": ubx.FieldSpec{WireName: "threshold_id"},
-	}
+	"DisplayOnChart":   ubx.FieldSpec{WireName: "display_on_chart"},
+	"NotificationSent": ubx.FieldSpec{WireName: "notification_sent"},
+	"PercentageThreshold": ubx.FieldSpec{
+		WireName: "percentage_threshold",
+		Kind:     "object",
+		Fields:   DtlLabCost_Properties_TargetCost_CostThresholds_PercentageThresholdFields,
+	},
+	"SendNotificationWhenExceeded": ubx.FieldSpec{WireName: "send_notification_when_exceeded"},
+	"ThresholdId":                  ubx.FieldSpec{WireName: "threshold_id"},
+}
 
 var DtlLabCost_Properties_TargetCostFields = ubx.FieldMap{
-		"CostThresholds": ubx.FieldSpec{
-			WireName: "cost_thresholds",
-			Kind: "list",
-			Fields: DtlLabCost_Properties_TargetCost_CostThresholdsFields,
-		},
-		"CycleEndDateTime": ubx.FieldSpec{WireName: "cycle_end_date_time"},
-		"CycleStartDateTime": ubx.FieldSpec{WireName: "cycle_start_date_time"},
-		"CycleType": ubx.FieldSpec{WireName: "cycle_type"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"CostThresholds": ubx.FieldSpec{
+		WireName: "cost_thresholds",
+		Kind:     "list",
+		Fields:   DtlLabCost_Properties_TargetCost_CostThresholdsFields,
+	},
+	"CycleEndDateTime":   ubx.FieldSpec{WireName: "cycle_end_date_time"},
+	"CycleStartDateTime": ubx.FieldSpec{WireName: "cycle_start_date_time"},
+	"CycleType":          ubx.FieldSpec{WireName: "cycle_type"},
+	"Status":             ubx.FieldSpec{WireName: "status"},
+	"Target":             ubx.FieldSpec{WireName: "target"},
+}
 
 var DtlLabCost_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"CurrencyCode": ubx.FieldSpec{WireName: "currency_code"},
-		"EndDateTime": ubx.FieldSpec{WireName: "end_date_time"},
-		"LabCostDetails": ubx.FieldSpec{
-			WireName: "lab_cost_details",
-			Kind: "list",
-			Fields: DtlLabCost_Properties_LabCostDetailsFields,
-		},
-		"LabCostSummary": ubx.FieldSpec{
-			WireName: "lab_cost_summary",
-			Kind: "object",
-			Fields: DtlLabCost_Properties_LabCostSummaryFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceCosts": ubx.FieldSpec{
-			WireName: "resource_costs",
-			Kind: "list",
-			Fields: DtlLabCost_Properties_ResourceCostsFields,
-		},
-		"StartDateTime": ubx.FieldSpec{WireName: "start_date_time"},
-		"TargetCost": ubx.FieldSpec{
-			WireName: "target_cost",
-			Kind: "object",
-			Fields: DtlLabCost_Properties_TargetCostFields,
-		},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-	}
+	"CreatedDate":  ubx.FieldSpec{WireName: "created_date"},
+	"CurrencyCode": ubx.FieldSpec{WireName: "currency_code"},
+	"EndDateTime":  ubx.FieldSpec{WireName: "end_date_time"},
+	"LabCostDetails": ubx.FieldSpec{
+		WireName: "lab_cost_details",
+		Kind:     "list",
+		Fields:   DtlLabCost_Properties_LabCostDetailsFields,
+	},
+	"LabCostSummary": ubx.FieldSpec{
+		WireName: "lab_cost_summary",
+		Kind:     "object",
+		Fields:   DtlLabCost_Properties_LabCostSummaryFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceCosts": ubx.FieldSpec{
+		WireName: "resource_costs",
+		Kind:     "list",
+		Fields:   DtlLabCost_Properties_ResourceCostsFields,
+	},
+	"StartDateTime": ubx.FieldSpec{WireName: "start_date_time"},
+	"TargetCost": ubx.FieldSpec{
+		WireName: "target_cost",
+		Kind:     "object",
+		Fields:   DtlLabCost_Properties_TargetCostFields,
+	},
+	"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
+}
 
 type DtlLabCostConfig struct {
 	// The geo-location where the resource lives
@@ -184,8 +184,8 @@ var DtlLabCost = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlLabCost_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlLabCost_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

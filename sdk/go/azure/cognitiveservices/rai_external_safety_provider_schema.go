@@ -25,24 +25,20 @@ type RaiExternalSafetyProviderSchema_Properties struct {
 }
 
 var RaiExternalSafetyProviderSchema_PropertiesFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"ManagedIdentity": ubx.FieldSpec{WireName: "managed_identity"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"ProviderId": ubx.FieldSpec{WireName: "provider_id"},
-		"ProviderName": ubx.FieldSpec{WireName: "provider_name"},
-		"SecretName": ubx.FieldSpec{WireName: "secret_name"},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"CreatedAt":       ubx.FieldSpec{WireName: "created_at"},
+	"KeyVaultUri":     ubx.FieldSpec{WireName: "key_vault_uri"},
+	"LastModifiedAt":  ubx.FieldSpec{WireName: "last_modified_at"},
+	"ManagedIdentity": ubx.FieldSpec{WireName: "managed_identity"},
+	"Mode":            ubx.FieldSpec{WireName: "mode"},
+	"ProviderId":      ubx.FieldSpec{WireName: "provider_id"},
+	"ProviderName":    ubx.FieldSpec{WireName: "provider_name"},
+	"SecretName":      ubx.FieldSpec{WireName: "secret_name"},
+	"Url":             ubx.FieldSpec{WireName: "url"},
+}
 
 type RaiExternalSafetyProviderSchemaConfig struct {
-	// Resource Etag.
-	Etag any
 	// RAI External SafetyProvider schema properties.
 	Properties any
-	// Resource tags.
-	Tags any
 }
 
 type RaiExternalSafetyProviderSchemaAttrs struct {
@@ -57,12 +53,10 @@ type RaiExternalSafetyProviderSchemaAttrs struct {
 var RaiExternalSafetyProviderSchema = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_rai_external_safety_provider_schema",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RaiExternalSafetyProviderSchema_PropertiesFields,
+			Kind:     "object",
+			Fields:   RaiExternalSafetyProviderSchema_PropertiesFields,
 		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

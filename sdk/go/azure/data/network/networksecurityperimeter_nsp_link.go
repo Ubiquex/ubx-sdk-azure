@@ -5,15 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworksecurityperimeterNspLink_Value_Properties struct {
 	AutoApprovedRemotePerimeterResourceId any
-	Description any
-	LocalInboundProfiles any
-	LocalOutboundProfiles any
-	ProvisioningState any
-	RemoteInboundProfiles any
-	RemoteOutboundProfiles any
-	RemotePerimeterGuid any
-	RemotePerimeterLocation any
-	Status any
+	Description                           any
+	LocalInboundProfiles                  any
+	LocalOutboundProfiles                 any
+	ProvisioningState                     any
+	RemoteInboundProfiles                 any
+	RemoteOutboundProfiles                any
+	RemotePerimeterGuid                   any
+	RemotePerimeterLocation               any
+	Status                                any
 }
 
 type NetworksecurityperimeterNspLink_Value struct {

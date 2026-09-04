@@ -2,35 +2,25 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface Point_Properties_ExcludeDisks {
-  /** The ARM resource ID of the disk to exclude from the restore point. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status {
-  /** The status code for the replication of a disk restore point, indicating the current state of the replication process. (AI-inferred) */
   code?: string | Computed<string>;
-  /** A human-readable description of the current replication status for the disk restore point. (AI-inferred) */
   displayStatus?: string | Computed<string>;
-  /** The severity level of the replication status. Possible values are 'Info', 'Warning', and 'Error'. (AI-inferred) */
   level?: string | Computed<string>;
-  /** A human-readable message providing additional details about the current replication status. (AI-inferred) */
   message?: string | Computed<string>;
-  /** The time, in ISO 8601 format, when the replication status was last updated. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
 export interface Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus {
-  /** The percentage of replication completed for the disk restore point. (AI-inferred) */
   completionPercent?: number | Computed<number>;
-  /** The replication status of the disk restore point, providing information about the progress and current state of the replication operation. (AI-inferred) */
   status?: Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status | Computed<Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status>;
 }
 
 export interface Point_Properties_InstanceView_DiskRestorePoints {
-  /** The unique Azure Resource Manager resource ID of the disk restore point. (AI-inferred) */
   id?: string | Computed<string>;
   replicationStatus?: Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus | Computed<Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus>;
-  /** Indicates the access state of the snapshot for the disk restore point. Possible values are Unknown, Pending, Available, InstantAccess, and AvailableWithInstantAccess. (AI-inferred) */
   snapshotAccessState?: string | Computed<string>;
 }
 
@@ -86,9 +76,7 @@ export interface Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Pa
 }
 
 export interface Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh_PublicKeys {
-  /** The SSH public key data, in OpenSSH format (e.g., 'ssh-rsa AAAA...'), used to authenticate to the Linux VM. The key must be at least 2048-bit and in ssh-rsa format. (AI-inferred) */
   keyData?: string | Computed<string>;
-  /** The full file path on the virtual machine where the SSH public key will be stored, such as `/home/{username}/.ssh/authorized_keys`. (AI-inferred) */
   path?: string | Computed<string>;
 }
 
@@ -111,27 +99,19 @@ export interface Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration {
 }
 
 export interface Point_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificates {
-  /** The name of the certificate store on the virtual machine where the certificate is added. This property is required for Windows virtual machines. (AI-inferred) */
   certificateStore?: string | Computed<string>;
-  /** The URL of the Azure Key Vault secret which contains the certificate. (AI-inferred) */
   certificateUrl?: string | Computed<string>;
 }
 
 export interface Point_Properties_SourceMetadata_OsProfile_Secrets {
-  /** The Key Vault where the certificate or secret is stored. (AI-inferred) */
   sourceVault?: Point_Properties_ExcludeDisks | Computed<Point_Properties_ExcludeDisks>;
-  /** A list of certificates to be installed on the virtual machine from an Azure Key Vault, referenced within the OS profile's secret configuration. (AI-inferred) */
   vaultCertificates?: Point_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificates[] | Computed<Point_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificates[]>;
 }
 
 export interface Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_AdditionalUnattendContent {
-  /** Specifies the name of the component to configure, such as 'Microsoft-Windows-Shell-Setup', for which the additional unattend content applies. (AI-inferred) */
   componentName?: string | Computed<string>;
-  /** The XML formatted content that is added to the unattend.xml file for the specified pass and component. This content is included during the Windows installation process. (AI-inferred) */
   content?: string | Computed<string>;
-  /** The pass name for the unattended content. For this field, the allowed value is 'OobeSystem', indicating the Windows Out-of-Box Experience pass in the additional unattended content configuration. (AI-inferred) */
   passName?: string | Computed<string>;
-  /** Specifies the name of the setting that the unattended content applies to. Allowed values are 'AutoLogon' and 'FirstLogonCommands'. (AI-inferred) */
   settingName?: string | Computed<string>;
 }
 
@@ -147,9 +127,7 @@ export interface Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_
 }
 
 export interface Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm_Listeners {
-  /** The URL to a certificate stored in Azure Key Vault that is used for the WinRM HTTPS listener. This is required when the listener protocol is HTTPS. (AI-inferred) */
   certificateUrl?: string | Computed<string>;
-  /** Specifies the protocol used by the WinRM listener, which can be either Http or Https. (AI-inferred) */
   protocol?: string | Computed<string>;
 }
 
@@ -246,44 +224,30 @@ export interface Point_Properties_SourceMetadata_SecurityProfile {
 }
 
 export interface Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_Encryption {
-  /** The customer-managed disk encryption set used to encrypt the disk. This is a reference to a Microsoft.Compute/diskEncryptionSets resource, typically containing its resource ID. (AI-inferred) */
   diskEncryptionSet?: Point_Properties_ExcludeDisks | Computed<Point_Properties_ExcludeDisks>;
-  /** The type of encryption applied to the disk restore point. Allowed values: EncryptionAtRestWithPlatformKey, EncryptionAtRestWithCustomerKey, EncryptionAtRestWithPlatformAndCustomerKeys. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint {
   encryption?: Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_Encryption | Computed<Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_Encryption>;
-  /** A reference to the source disk restore point from which this disk restore point was created, typically used when the restore point is copied or replicated across regions. (AI-inferred) */
   sourceDiskRestorePoint?: Point_Properties_ExcludeDisks | Computed<Point_Properties_ExcludeDisks>;
 }
 
 export interface Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy {
-  /** Specifies the action to be taken when a disk delay occurs. Allowed values are 'None' and 'AutomaticReattach'. 'AutomaticReattach' automatically reattaches the disk after the delay is cleared. (AI-inferred) */
   actionOnDiskDelay?: string | Computed<string>;
 }
 
 export interface Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties {
   availabilityPolicy?: Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy | Computed<Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy>;
-  /** Specifies whether bursting is enabled for the managed disk. When enabled, the disk can burst beyond its provisioned performance limits. (AI-inferred) */
   burstingEnabled?: boolean | Computed<boolean>;
-  /** The resource ID of the Disk Access resource associated with the managed disk. (AI-inferred) */
   diskAccessId?: string | Computed<string>;
-  /** The number of read-only IOPS (input/output operations per second) that the managed disk can support. (AI-inferred) */
   diskIopsreadOnly?: number | Computed<number>;
-  /** The maximum read-only bandwidth (in MB/s) allowed for this managed disk as part of its performance configuration. (AI-inferred) */
   diskMbpsReadOnly?: number | Computed<number>;
-  /** The logical sector size of the managed disk, in bytes. Common values are 512 and 4096, depending on the disk type and configuration. (AI-inferred) */
   logicalSectorSize?: number | Computed<number>;
-  /** The maximum number of virtual machines that can concurrently attach to the shared managed disk. The minimum allowed value is 1. (AI-inferred) */
   maxShares?: number | Computed<number>;
-  /** Specifies the network access policy for the managed disk. Valid values are `AllowAll` (allow public access), `AllowPrivate` (restrict to private endpoints), and `DenyAll` (deny all network access). (AI-inferred) */
   networkAccessPolicy?: string | Computed<string>;
-  /** Indicates whether the managed disk is optimized for frequent attach/detach operations. When set to true, the disk is optimized for scenarios involving frequent attaching and detaching, though this may come at the cost of reduced performance in other aspects. (AI-inferred) */
   optimizedForFrequentAttach?: boolean | Computed<boolean>;
-  /** Indicates whether performance plus is enabled for the managed disk, which allows the disk to achieve higher IOPS and throughput limits rather than being constrained to standard performance tiers. (AI-inferred) */
   performancePlus?: boolean | Computed<boolean>;
-  /** The SKU tier of the Azure managed disk, indicating its performance class (e.g., Standard or Premium). (AI-inferred) */
   tier?: string | Computed<string>;
 }
 
@@ -292,50 +256,36 @@ export interface Point_Properties_SourceMetadata_StorageProfile_DataDisks_Manage
 }
 
 export interface Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfile {
-  /** Specifies the disk encryption set to use for encrypting the managed disk at rest with customer-managed keys. This is a reference object containing the resource ID of the Disk Encryption Set. (AI-inferred) */
   diskEncryptionSet?: Point_Properties_ExcludeDisks | Computed<Point_Properties_ExcludeDisks>;
-  /** Specifies the security encryption type for the managed disk. Allowed values: VMGuestStateOnly (encrypts only the VM guest state), DiskWithVMGuestState (encrypts both the disk and VM guest state), and NonPersistedTPM (uses non-persisted TPM). (AI-inferred) */
   securityEncryptionType?: string | Computed<string>;
 }
 
 export interface Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk {
   additionalDiskProperties?: Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties | Computed<Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties>;
-  /** The disk encryption set associated with the managed disk, used for encryption with customer-managed keys. (AI-inferred) */
   diskEncryptionSet?: Point_Properties_ExcludeDisks | Computed<Point_Properties_ExcludeDisks>;
-  /** Security-related configuration for the managed disk, including its security type (e.g., TrustedLaunch, ConfidentialVM) and associated encryption settings. (AI-inferred) */
   securityProfile?: Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfile | Computed<Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfile>;
-  /** The storage account type for the managed disk. Possible values are: Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, and PremiumV2_LRS. (AI-inferred) */
   storageAccountType?: string | Computed<string>;
 }
 
 export interface Point_Properties_SourceMetadata_StorageProfile_DataDisks {
-  /** Specifies the caching mode for the disk. Possible values are None, ReadOnly, and ReadWrite. (AI-inferred) */
   caching?: string | Computed<string>;
-  /** Contains the resource identifier of the disk restore point corresponding to this data disk in the restore point. (AI-inferred) */
   diskRestorePoint?: Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint | Computed<Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint>;
-  /** The size of the data disk in gigabytes. (AI-inferred) */
   diskSizeGb?: number | Computed<number>;
-  /** The Logical Unit Number (LUN) that identifies this data disk in the virtual machine's storage configuration. (AI-inferred) */
   lun?: number | Computed<number>;
-  /** The managed disk configuration for the data disk, including properties such as the disk resource ID and associated encryption settings. (AI-inferred) */
   managedDisk?: Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk | Computed<Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk>;
-  /** The name of the data disk in the storage profile. (AI-inferred) */
   name?: string | Computed<string>;
-  /** Specifies whether Write Accelerator is enabled for this data disk. When enabled, the disk uses Azure Write Accelerator to reduce I/O latency for small writes. (AI-inferred) */
   writeAcceleratorEnabled?: boolean | Computed<boolean>;
 }
 
 export interface Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_DiskEncryptionKey {
   /** The URL referencing a secret in a Key Vault. */
   secretUrl: string | Computed<string>;
-  /** Reference to the Azure Key Vault that holds the disk encryption key or secret used for encrypting the OS disk. This required object identifies the source vault via its resource ID. (AI-inferred) */
   sourceVault: Point_Properties_ExcludeDisks | Computed<Point_Properties_ExcludeDisks>;
 }
 
 export interface Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_KeyEncryptionKey {
   /** The URL referencing a key encryption key in Key Vault. */
   keyUrl: string | Computed<string>;
-  /** The Azure Key Vault that contains the key encryption key (KEK). This is a reference to the Key Vault resource. (AI-inferred) */
   sourceVault: Point_Properties_ExcludeDisks | Computed<Point_Properties_ExcludeDisks>;
 }
 

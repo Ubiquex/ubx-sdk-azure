@@ -23,6 +23,5 @@ type PublicKeyResourceAttrs struct {
 
 var PublicKeyResource = ubx.DataSourceBinding{
 	WireType: "azure_ssh_public_key_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

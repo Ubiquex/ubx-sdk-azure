@@ -4,28 +4,28 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOracleSubscription_Value_Plan struct {
-	Name any
-	Product any
+	Name          any
+	Product       any
 	PromotionCode any
-	Publisher any
-	Version any
+	Publisher     any
+	Version       any
 }
 
 type OpenapiOracleSubscription_Value_Properties struct {
 	AddSubscriptionOperationState any
-	AzureSubscriptionIds any
-	CloudAccountId any
-	CloudAccountState any
-	Intent any
-	LastOperationStatusDetail any
-	ProductCode any
-	ProvisioningState any
-	SaasSubscriptionId any
-	TermUnit any
+	AzureSubscriptionIds          any
+	CloudAccountId                any
+	CloudAccountState             any
+	Intent                        any
+	LastOperationStatusDetail     any
+	ProductCode                   any
+	ProvisioningState             any
+	SaasSubscriptionId            any
+	TermUnit                      any
 }
 
 type OpenapiOracleSubscription_Value struct {
-	Plan any
+	Plan       any
 	Properties any
 }
 
@@ -41,6 +41,5 @@ type OpenapiOracleSubscriptionAttrs struct {
 
 var OpenapiOracleSubscription = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_oracle_subscription",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

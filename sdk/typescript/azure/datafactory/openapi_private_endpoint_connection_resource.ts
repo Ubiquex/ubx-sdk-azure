@@ -20,6 +20,7 @@ export interface OpenapiPrivateEndpointConnectionResource_Properties {
   privateEndpoint?: OpenapiPrivateEndpointConnectionResource_Properties_PrivateEndpoint | Computed<OpenapiPrivateEndpointConnectionResource_Properties_PrivateEndpoint>;
   /** The state of a private link connection */
   privateLinkServiceConnectionState?: OpenapiPrivateEndpointConnectionResource_Properties_PrivateLinkServiceConnectionState | Computed<OpenapiPrivateEndpointConnectionResource_Properties_PrivateLinkServiceConnectionState>;
+  provisioningState?: string | Computed<string>;
 }
 
 const OpenapiPrivateEndpointConnectionResource_Properties_PrivateEndpointFields: FieldMap = {
@@ -43,6 +44,7 @@ const OpenapiPrivateEndpointConnectionResource_PropertiesFields: FieldMap = {
     kind: "object",
     fields: OpenapiPrivateEndpointConnectionResource_Properties_PrivateLinkServiceConnectionStateFields,
   },
+  provisioningState: "provisioning_state",
 };
 
 export interface OpenapiPrivateEndpointConnectionResourceConfig {

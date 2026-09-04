@@ -25,11 +25,11 @@ type OpenapiReservation_Summary struct {
 }
 
 type OpenapiReservation_Value_Properties_AppliedScopeProperties struct {
-	DisplayName any
+	DisplayName       any
 	ManagementGroupId any
-	ResourceGroupId any
-	SubscriptionId any
-	TenantId any
+	ResourceGroupId   any
+	SubscriptionId    any
+	TenantId          any
 }
 
 type OpenapiReservation_Value_Properties_ExtendedStatusInfo_Properties struct {
@@ -37,18 +37,18 @@ type OpenapiReservation_Value_Properties_ExtendedStatusInfo_Properties struct {
 }
 
 type OpenapiReservation_Value_Properties_ExtendedStatusInfo struct {
-	Message any
+	Message    any
 	Properties any
 	StatusCode any
 }
 
 type OpenapiReservation_Value_Properties_MergeProperties struct {
 	MergeDestination any
-	MergeSources any
+	MergeSources     any
 }
 
 type OpenapiReservation_Value_Properties_RenewProperties_BillingCurrencyTotal struct {
-	Amount any
+	Amount       any
 	CurrencyCode any
 }
 
@@ -57,19 +57,19 @@ type OpenapiReservation_Value_Properties_RenewProperties_PurchaseProperties_Prop
 }
 
 type OpenapiReservation_Value_Properties_RenewProperties_PurchaseProperties_Properties struct {
-	AppliedScopeProperties any
-	AppliedScopeType any
-	AppliedScopes any
-	BillingPlan any
-	BillingScopeId any
-	DisplayName any
-	InstanceFlexibility any
-	Quantity any
-	Renew any
+	AppliedScopeProperties     any
+	AppliedScopeType           any
+	AppliedScopes              any
+	BillingPlan                any
+	BillingScopeId             any
+	DisplayName                any
+	InstanceFlexibility        any
+	Quantity                   any
+	Renew                      any
 	ReservedResourceProperties any
-	ReservedResourceType any
-	ReviewDateTime any
-	Term any
+	ReservedResourceType       any
+	ReviewDateTime             any
+	Term                       any
 }
 
 type OpenapiReservation_Value_Properties_RenewProperties_PurchaseProperties_Sku struct {
@@ -77,110 +77,110 @@ type OpenapiReservation_Value_Properties_RenewProperties_PurchaseProperties_Sku 
 }
 
 type OpenapiReservation_Value_Properties_RenewProperties_PurchaseProperties struct {
-	Location any
+	Location   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiReservation_Value_Properties_RenewProperties struct {
 	BillingCurrencyTotal any
 	PricingCurrencyTotal any
-	PurchaseProperties any
+	PurchaseProperties   any
 }
 
 type OpenapiReservation_Value_Properties_SplitProperties struct {
 	SplitDestinations any
-	SplitSource any
+	SplitSource       any
 }
 
 type OpenapiReservation_Value_Properties_SwapProperties struct {
 	SwapDestination any
-	SwapSource any
+	SwapSource      any
 }
 
 type OpenapiReservation_Value_Properties_Utilization_Aggregates struct {
-	Grain any
+	Grain     any
 	GrainUnit any
-	Value any
+	Value     any
 	ValueUnit any
 }
 
 type OpenapiReservation_Value_Properties_Utilization struct {
 	Aggregates any
-	Trend any
+	Trend      any
 }
 
 type OpenapiReservation_Value_Properties struct {
-	AppliedScopeProperties any
-	AppliedScopeType any
-	AppliedScopes any
-	Archived any
-	BenefitStartTime any
-	BillingPlan any
-	BillingScopeId any
-	Capabilities any
-	DisplayName any
-	DisplayProvisioningState any
-	EffectiveDateTime any
-	ExpiryDate any
-	ExpiryDateTime any
-	ExtendedStatusInfo any
-	InstanceFlexibility any
-	LastUpdatedDateTime any
-	MergeProperties any
-	ProductCode any
-	ProvisioningState any
-	ProvisioningSubState any
-	PurchaseDate any
-	PurchaseDateTime any
-	Quantity any
-	Renew any
-	RenewDestination any
-	RenewProperties any
-	RenewSource any
-	ReservedResourceType any
-	ReviewDateTime any
-	SkuDescription any
-	SplitProperties any
-	SwapProperties any
-	Term any
+	AppliedScopeProperties       any
+	AppliedScopeType             any
+	AppliedScopes                any
+	Archived                     any
+	BenefitStartTime             any
+	BillingPlan                  any
+	BillingScopeId               any
+	Capabilities                 any
+	DisplayName                  any
+	DisplayProvisioningState     any
+	EffectiveDateTime            any
+	ExpiryDate                   any
+	ExpiryDateTime               any
+	ExtendedStatusInfo           any
+	InstanceFlexibility          any
+	LastUpdatedDateTime          any
+	MergeProperties              any
+	ProductCode                  any
+	ProvisioningState            any
+	ProvisioningSubState         any
+	PurchaseDate                 any
+	PurchaseDateTime             any
+	Quantity                     any
+	Renew                        any
+	RenewDestination             any
+	RenewProperties              any
+	RenewSource                  any
+	ReservedResourceType         any
+	ReviewDateTime               any
+	SkuDescription               any
+	SplitProperties              any
+	SwapProperties               any
+	Term                         any
 	UserFriendlyAppliedScopeType any
-	UserFriendlyRenewState any
-	Utilization any
+	UserFriendlyRenewState       any
+	Utilization                  any
 }
 
 type OpenapiReservation_Value struct {
-	Etag any
-	Location any
+	Etag       any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiReservationConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	Filter any
-	OrderBy any
-	RefreshSummary any
-	SelectedState any
-	Skiptoken any
-	Take any
+	Filter             any
+	OrderBy            any
+	RefreshSummary     any
+	SelectedState      any
+	Skiptoken          any
+	Take               any
 }
 
 type OpenapiReservationAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	Filter any
+	Filter             any
 	// The link (url) to the next page of results.
-	NextLink any
-	OrderBy any
+	NextLink       any
+	OrderBy        any
 	RefreshSummary any
-	SelectedState any
-	Skiptoken any
+	SelectedState  any
+	Skiptoken      any
 	// The roll up count summary of reservations in each state
 	Summary any
-	Take any
+	Take    any
 	// The list of reservations.
 	Value any
 }
@@ -190,11 +190,11 @@ var OpenapiReservation = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"RefreshSummary": ubx.FieldSpec{WireName: "refresh_summary"},
-		"SelectedState": ubx.FieldSpec{WireName: "selected_state"},
-		"Skiptoken": ubx.FieldSpec{WireName: "skiptoken"},
-		"Take": ubx.FieldSpec{WireName: "take"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"RefreshSummary":     ubx.FieldSpec{WireName: "refresh_summary"},
+		"SelectedState":      ubx.FieldSpec{WireName: "selected_state"},
+		"Skiptoken":          ubx.FieldSpec{WireName: "skiptoken"},
+		"Take":               ubx.FieldSpec{WireName: "take"},
 	},
 }

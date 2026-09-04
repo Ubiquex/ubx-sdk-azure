@@ -6,23 +6,23 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiSecret_Value_Properties_Attributes struct {
 	Created any
 	Enabled any
-	Exp any
-	Nbf any
+	Exp     any
+	Nbf     any
 	Updated any
 }
 
 type OpenapiSecret_Value_Properties struct {
-	Attributes any
-	ContentType any
-	SecretUri any
+	Attributes           any
+	ContentType          any
+	SecretUri            any
 	SecretUriWithVersion any
-	Value any
+	Value                any
 }
 
 type OpenapiSecret_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiSecretConfig struct {
@@ -33,7 +33,7 @@ type OpenapiSecretAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The Secret items on this page
-	Value any
+	Value     any
 	VaultName any
 }
 

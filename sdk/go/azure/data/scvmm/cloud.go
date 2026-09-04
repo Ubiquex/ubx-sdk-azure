@@ -9,34 +9,34 @@ type Cloud_Value_ExtendedLocation struct {
 }
 
 type Cloud_Value_Properties_CloudCapacity struct {
-	CpuCount any
-	MemoryMb any
+	CpuCount  any
+	MemoryMb  any
 	StorageGb any
-	VmCount any
+	VmCount   any
 }
 
 type Cloud_Value_Properties_StorageQoSpolicies struct {
 	BandwidthLimit any
-	Id any
-	IopsMaximum any
-	IopsMinimum any
-	Name any
-	PolicyId any
+	Id             any
+	IopsMaximum    any
+	IopsMinimum    any
+	Name           any
+	PolicyId       any
 }
 
 type Cloud_Value_Properties struct {
-	CloudCapacity any
-	CloudName any
-	InventoryItemId any
-	ProvisioningState any
+	CloudCapacity      any
+	CloudName          any
+	InventoryItemId    any
+	ProvisioningState  any
 	StorageQoSpolicies any
-	Uuid any
-	VmmServerId any
+	Uuid               any
+	VmmServerId        any
 }
 
 type Cloud_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type CloudConfig struct {
@@ -51,6 +51,5 @@ type CloudAttrs struct {
 
 var Cloud = ubx.DataSourceBinding{
 	WireType: "azure_scvmm_cloud",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,15 +4,15 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSourceControl_Value_Properties struct {
-	AutoSync any
-	Branch any
-	CreationTime any
-	Description any
-	FolderPath any
+	AutoSync         any
+	Branch           any
+	CreationTime     any
+	Description      any
+	FolderPath       any
 	LastModifiedTime any
-	PublishRunbook any
-	RepoUrl any
-	SourceType any
+	PublishRunbook   any
+	RepoUrl          any
+	SourceType       any
 }
 
 type OpenapiSourceControl_Value struct {

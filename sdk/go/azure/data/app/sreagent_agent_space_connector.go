@@ -4,13 +4,13 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SreagentAgentSpaceConnector_Value_Properties struct {
-	DataConnectorType any
-	DataSource any
-	DeploymentError any
-	Endpoint any
+	DataConnectorType  any
+	DataSource         any
+	DeploymentError    any
+	Endpoint           any
 	ExtendedProperties any
-	Identity any
-	ProvisioningState any
+	Identity           any
+	ProvisioningState  any
 }
 
 type SreagentAgentSpaceConnector_Value struct {

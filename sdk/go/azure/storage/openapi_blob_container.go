@@ -15,14 +15,14 @@ type OpenapiBlobContainer_Properties_ImmutabilityPolicy_Properties struct {
 }
 
 type OpenapiBlobContainer_Properties_ImmutabilityPolicy_UpdateHistory struct {
-	AllowProtectedAppendWrites any
-	AllowProtectedAppendWritesAll any
+	AllowProtectedAppendWrites            any
+	AllowProtectedAppendWritesAll         any
 	ImmutabilityPeriodSinceCreationInDays any
-	ObjectIdentifier any
-	TenantId any
-	Timestamp any
-	Update any
-	Upn any
+	ObjectIdentifier                      any
+	TenantId                              any
+	Timestamp                             any
+	Update                                any
+	Upn                                   any
 }
 
 type OpenapiBlobContainer_Properties_ImmutabilityPolicy struct {
@@ -52,10 +52,10 @@ type OpenapiBlobContainer_Properties_LegalHold_ProtectedAppendWritesHistory stru
 
 type OpenapiBlobContainer_Properties_LegalHold_Tags struct {
 	ObjectIdentifier any
-	Tag any
-	TenantId any
-	Timestamp any
-	Upn any
+	Tag              any
+	TenantId         any
+	Timestamp        any
+	Upn              any
 }
 
 type OpenapiBlobContainer_Properties_LegalHold struct {
@@ -109,107 +109,105 @@ type OpenapiBlobContainer_Properties struct {
 }
 
 var OpenapiBlobContainer_Properties_ImmutabilityPolicy_PropertiesFields = ubx.FieldMap{
-		"AllowProtectedAppendWrites": ubx.FieldSpec{WireName: "allow_protected_append_writes"},
-		"AllowProtectedAppendWritesAll": ubx.FieldSpec{WireName: "allow_protected_append_writes_all"},
-		"ImmutabilityPeriodSinceCreationInDays": ubx.FieldSpec{WireName: "immutability_period_since_creation_in_days"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"AllowProtectedAppendWrites":            ubx.FieldSpec{WireName: "allow_protected_append_writes"},
+	"AllowProtectedAppendWritesAll":         ubx.FieldSpec{WireName: "allow_protected_append_writes_all"},
+	"ImmutabilityPeriodSinceCreationInDays": ubx.FieldSpec{WireName: "immutability_period_since_creation_in_days"},
+	"State":                                 ubx.FieldSpec{WireName: "state"},
+}
 
 var OpenapiBlobContainer_Properties_ImmutabilityPolicy_UpdateHistoryFields = ubx.FieldMap{
-		"AllowProtectedAppendWrites": ubx.FieldSpec{WireName: "allow_protected_append_writes"},
-		"AllowProtectedAppendWritesAll": ubx.FieldSpec{WireName: "allow_protected_append_writes_all"},
-		"ImmutabilityPeriodSinceCreationInDays": ubx.FieldSpec{WireName: "immutability_period_since_creation_in_days"},
-		"ObjectIdentifier": ubx.FieldSpec{WireName: "object_identifier"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Timestamp": ubx.FieldSpec{WireName: "timestamp"},
-		"Update": ubx.FieldSpec{WireName: "update"},
-		"Upn": ubx.FieldSpec{WireName: "upn"},
-	}
+	"AllowProtectedAppendWrites":            ubx.FieldSpec{WireName: "allow_protected_append_writes"},
+	"AllowProtectedAppendWritesAll":         ubx.FieldSpec{WireName: "allow_protected_append_writes_all"},
+	"ImmutabilityPeriodSinceCreationInDays": ubx.FieldSpec{WireName: "immutability_period_since_creation_in_days"},
+	"ObjectIdentifier":                      ubx.FieldSpec{WireName: "object_identifier"},
+	"TenantId":                              ubx.FieldSpec{WireName: "tenant_id"},
+	"Timestamp":                             ubx.FieldSpec{WireName: "timestamp"},
+	"Update":                                ubx.FieldSpec{WireName: "update"},
+	"Upn":                                   ubx.FieldSpec{WireName: "upn"},
+}
 
 var OpenapiBlobContainer_Properties_ImmutabilityPolicyFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiBlobContainer_Properties_ImmutabilityPolicy_PropertiesFields,
-		},
-		"UpdateHistory": ubx.FieldSpec{
-			WireName: "update_history",
-			Kind: "list",
-			Fields: OpenapiBlobContainer_Properties_ImmutabilityPolicy_UpdateHistoryFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiBlobContainer_Properties_ImmutabilityPolicy_PropertiesFields,
+	},
+	"UpdateHistory": ubx.FieldSpec{
+		WireName: "update_history",
+		Kind:     "list",
+		Fields:   OpenapiBlobContainer_Properties_ImmutabilityPolicy_UpdateHistoryFields,
+	},
+}
 
 var OpenapiBlobContainer_Properties_ImmutableStorageWithVersioningFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"MigrationState": ubx.FieldSpec{WireName: "migration_state"},
-		"TimeStamp": ubx.FieldSpec{WireName: "time_stamp"},
-	}
+	"Enabled":        ubx.FieldSpec{WireName: "enabled"},
+	"MigrationState": ubx.FieldSpec{WireName: "migration_state"},
+	"TimeStamp":      ubx.FieldSpec{WireName: "time_stamp"},
+}
 
 var OpenapiBlobContainer_Properties_LegalHold_ProtectedAppendWritesHistoryFields = ubx.FieldMap{
-		"AllowProtectedAppendWritesAll": ubx.FieldSpec{WireName: "allow_protected_append_writes_all"},
-		"Timestamp": ubx.FieldSpec{WireName: "timestamp"},
-	}
+	"AllowProtectedAppendWritesAll": ubx.FieldSpec{WireName: "allow_protected_append_writes_all"},
+	"Timestamp":                     ubx.FieldSpec{WireName: "timestamp"},
+}
 
 var OpenapiBlobContainer_Properties_LegalHold_TagsFields = ubx.FieldMap{
-		"ObjectIdentifier": ubx.FieldSpec{WireName: "object_identifier"},
-		"Tag": ubx.FieldSpec{WireName: "tag"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Timestamp": ubx.FieldSpec{WireName: "timestamp"},
-		"Upn": ubx.FieldSpec{WireName: "upn"},
-	}
+	"ObjectIdentifier": ubx.FieldSpec{WireName: "object_identifier"},
+	"Tag":              ubx.FieldSpec{WireName: "tag"},
+	"TenantId":         ubx.FieldSpec{WireName: "tenant_id"},
+	"Timestamp":        ubx.FieldSpec{WireName: "timestamp"},
+	"Upn":              ubx.FieldSpec{WireName: "upn"},
+}
 
 var OpenapiBlobContainer_Properties_LegalHoldFields = ubx.FieldMap{
-		"HasLegalHold": ubx.FieldSpec{WireName: "has_legal_hold"},
-		"ProtectedAppendWritesHistory": ubx.FieldSpec{
-			WireName: "protected_append_writes_history",
-			Kind: "object",
-			Fields: OpenapiBlobContainer_Properties_LegalHold_ProtectedAppendWritesHistoryFields,
-		},
-		"Tags": ubx.FieldSpec{
-			WireName: "tags",
-			Kind: "list",
-			Fields: OpenapiBlobContainer_Properties_LegalHold_TagsFields,
-		},
-	}
+	"HasLegalHold": ubx.FieldSpec{WireName: "has_legal_hold"},
+	"ProtectedAppendWritesHistory": ubx.FieldSpec{
+		WireName: "protected_append_writes_history",
+		Kind:     "object",
+		Fields:   OpenapiBlobContainer_Properties_LegalHold_ProtectedAppendWritesHistoryFields,
+	},
+	"Tags": ubx.FieldSpec{
+		WireName: "tags",
+		Kind:     "list",
+		Fields:   OpenapiBlobContainer_Properties_LegalHold_TagsFields,
+	},
+}
 
 var OpenapiBlobContainer_PropertiesFields = ubx.FieldMap{
-		"DefaultEncryptionScope": ubx.FieldSpec{WireName: "default_encryption_scope"},
-		"Deleted": ubx.FieldSpec{WireName: "deleted"},
-		"DeletedTime": ubx.FieldSpec{WireName: "deleted_time"},
-		"DenyEncryptionScopeOverride": ubx.FieldSpec{WireName: "deny_encryption_scope_override"},
-		"EnableNfsV3AllSquash": ubx.FieldSpec{WireName: "enable_nfs_v3_all_squash"},
-		"EnableNfsV3RootSquash": ubx.FieldSpec{WireName: "enable_nfs_v3_root_squash"},
-		"HasImmutabilityPolicy": ubx.FieldSpec{WireName: "has_immutability_policy"},
-		"HasLegalHold": ubx.FieldSpec{WireName: "has_legal_hold"},
-		"ImmutabilityPolicy": ubx.FieldSpec{
-			WireName: "immutability_policy",
-			Kind: "object",
-			Fields: OpenapiBlobContainer_Properties_ImmutabilityPolicyFields,
-		},
-		"ImmutableStorageWithVersioning": ubx.FieldSpec{
-			WireName: "immutable_storage_with_versioning",
-			Kind: "object",
-			Fields: OpenapiBlobContainer_Properties_ImmutableStorageWithVersioningFields,
-		},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"LeaseDuration": ubx.FieldSpec{WireName: "lease_duration"},
-		"LeaseState": ubx.FieldSpec{WireName: "lease_state"},
-		"LeaseStatus": ubx.FieldSpec{WireName: "lease_status"},
-		"LegalHold": ubx.FieldSpec{
-			WireName: "legal_hold",
-			Kind: "object",
-			Fields: OpenapiBlobContainer_Properties_LegalHoldFields,
-		},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"PublicAccess": ubx.FieldSpec{WireName: "public_access"},
-		"RemainingRetentionDays": ubx.FieldSpec{WireName: "remaining_retention_days"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"DefaultEncryptionScope":      ubx.FieldSpec{WireName: "default_encryption_scope"},
+	"Deleted":                     ubx.FieldSpec{WireName: "deleted"},
+	"DeletedTime":                 ubx.FieldSpec{WireName: "deleted_time"},
+	"DenyEncryptionScopeOverride": ubx.FieldSpec{WireName: "deny_encryption_scope_override"},
+	"EnableNfsV3AllSquash":        ubx.FieldSpec{WireName: "enable_nfs_v3_all_squash"},
+	"EnableNfsV3RootSquash":       ubx.FieldSpec{WireName: "enable_nfs_v3_root_squash"},
+	"HasImmutabilityPolicy":       ubx.FieldSpec{WireName: "has_immutability_policy"},
+	"HasLegalHold":                ubx.FieldSpec{WireName: "has_legal_hold"},
+	"ImmutabilityPolicy": ubx.FieldSpec{
+		WireName: "immutability_policy",
+		Kind:     "object",
+		Fields:   OpenapiBlobContainer_Properties_ImmutabilityPolicyFields,
+	},
+	"ImmutableStorageWithVersioning": ubx.FieldSpec{
+		WireName: "immutable_storage_with_versioning",
+		Kind:     "object",
+		Fields:   OpenapiBlobContainer_Properties_ImmutableStorageWithVersioningFields,
+	},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"LeaseDuration":    ubx.FieldSpec{WireName: "lease_duration"},
+	"LeaseState":       ubx.FieldSpec{WireName: "lease_state"},
+	"LeaseStatus":      ubx.FieldSpec{WireName: "lease_status"},
+	"LegalHold": ubx.FieldSpec{
+		WireName: "legal_hold",
+		Kind:     "object",
+		Fields:   OpenapiBlobContainer_Properties_LegalHoldFields,
+	},
+	"Metadata":               ubx.FieldSpec{WireName: "metadata"},
+	"PublicAccess":           ubx.FieldSpec{WireName: "public_access"},
+	"RemainingRetentionDays": ubx.FieldSpec{WireName: "remaining_retention_days"},
+	"Version":                ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiBlobContainerConfig struct {
-	// Resource Etag.
-	Etag any
 	// The properties of a container.
 	Properties any
 }
@@ -224,11 +222,10 @@ type OpenapiBlobContainerAttrs struct {
 var OpenapiBlobContainer = ubx.ResourceBinding{
 	WireType: "azure_storage_openapi_blob_container",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiBlobContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiBlobContainer_PropertiesFields,
 		},
 	},
 }

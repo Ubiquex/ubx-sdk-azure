@@ -4,74 +4,74 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiListContainerItem_Value_Properties_ImmutabilityPolicy_Properties struct {
-	AllowProtectedAppendWrites any
-	AllowProtectedAppendWritesAll any
+	AllowProtectedAppendWrites            any
+	AllowProtectedAppendWritesAll         any
 	ImmutabilityPeriodSinceCreationInDays any
-	State any
+	State                                 any
 }
 
 type OpenapiListContainerItem_Value_Properties_ImmutabilityPolicy_UpdateHistory struct {
-	AllowProtectedAppendWrites any
-	AllowProtectedAppendWritesAll any
+	AllowProtectedAppendWrites            any
+	AllowProtectedAppendWritesAll         any
 	ImmutabilityPeriodSinceCreationInDays any
-	ObjectIdentifier any
-	TenantId any
-	Timestamp any
-	Update any
-	Upn any
+	ObjectIdentifier                      any
+	TenantId                              any
+	Timestamp                             any
+	Update                                any
+	Upn                                   any
 }
 
 type OpenapiListContainerItem_Value_Properties_ImmutabilityPolicy struct {
-	Etag any
-	Properties any
+	Etag          any
+	Properties    any
 	UpdateHistory any
 }
 
 type OpenapiListContainerItem_Value_Properties_ImmutableStorageWithVersioning struct {
-	Enabled any
+	Enabled        any
 	MigrationState any
-	TimeStamp any
+	TimeStamp      any
 }
 
 type OpenapiListContainerItem_Value_Properties_LegalHold_ProtectedAppendWritesHistory struct {
 	AllowProtectedAppendWritesAll any
-	Timestamp any
+	Timestamp                     any
 }
 
 type OpenapiListContainerItem_Value_Properties_LegalHold_Tags struct {
 	ObjectIdentifier any
-	Tag any
-	TenantId any
-	Timestamp any
-	Upn any
+	Tag              any
+	TenantId         any
+	Timestamp        any
+	Upn              any
 }
 
 type OpenapiListContainerItem_Value_Properties_LegalHold struct {
-	HasLegalHold any
+	HasLegalHold                 any
 	ProtectedAppendWritesHistory any
-	Tags any
+	Tags                         any
 }
 
 type OpenapiListContainerItem_Value_Properties struct {
-	DefaultEncryptionScope any
-	Deleted any
-	DeletedTime any
-	DenyEncryptionScopeOverride any
-	EnableNfsV3AllSquash any
-	EnableNfsV3RootSquash any
-	HasImmutabilityPolicy any
-	HasLegalHold any
-	ImmutabilityPolicy any
+	DefaultEncryptionScope         any
+	Deleted                        any
+	DeletedTime                    any
+	DenyEncryptionScopeOverride    any
+	EnableNfsV3AllSquash           any
+	EnableNfsV3RootSquash          any
+	HasImmutabilityPolicy          any
+	HasLegalHold                   any
+	ImmutabilityPolicy             any
 	ImmutableStorageWithVersioning any
-	LastModifiedTime any
-	LeaseDuration any
-	LeaseState any
-	LeaseStatus any
-	LegalHold any
-	Metadata any
-	PublicAccess any
-	RemainingRetentionDays any
-	Version any
+	LastModifiedTime               any
+	LeaseDuration                  any
+	LeaseState                     any
+	LeaseStatus                    any
+	LegalHold                      any
+	Metadata                       any
+	PublicAccess                   any
+	RemainingRetentionDays         any
+	Version                        any
 }
 
 type OpenapiListContainerItem_Value struct {

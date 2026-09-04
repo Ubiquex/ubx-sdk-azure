@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TenantconfigurationConfiguration_Value_Properties struct {
 	EnforcePrivateMarkdownStorage any
-	ProvisioningState any
+	ProvisioningState             any
 }
 
 type TenantconfigurationConfiguration_Value struct {
@@ -24,6 +24,5 @@ type TenantconfigurationConfigurationAttrs struct {
 
 var TenantconfigurationConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_portal_tenantconfiguration_configuration",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

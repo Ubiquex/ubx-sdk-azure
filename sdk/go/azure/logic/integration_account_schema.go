@@ -17,7 +17,7 @@ type IntegrationAccountSchema_Properties_ContentLink struct {
 	ContentSize any
 	// The content version.
 	ContentVersion any
-	Metadata any
+	Metadata       any
 	// The content link URI.
 	Uri any
 }
@@ -46,38 +46,38 @@ type IntegrationAccountSchema_Properties struct {
 }
 
 var IntegrationAccountSchema_Properties_ContentLink_ContentHashFields = ubx.FieldMap{
-		"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var IntegrationAccountSchema_Properties_ContentLinkFields = ubx.FieldMap{
-		"ContentHash": ubx.FieldSpec{
-			WireName: "content_hash",
-			Kind: "object",
-			Fields: IntegrationAccountSchema_Properties_ContentLink_ContentHashFields,
-		},
-		"ContentSize": ubx.FieldSpec{WireName: "content_size"},
-		"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"ContentHash": ubx.FieldSpec{
+		WireName: "content_hash",
+		Kind:     "object",
+		Fields:   IntegrationAccountSchema_Properties_ContentLink_ContentHashFields,
+	},
+	"ContentSize":    ubx.FieldSpec{WireName: "content_size"},
+	"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
+	"Metadata":       ubx.FieldSpec{WireName: "metadata"},
+	"Uri":            ubx.FieldSpec{WireName: "uri"},
+}
 
 var IntegrationAccountSchema_PropertiesFields = ubx.FieldMap{
-		"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
-		"Content": ubx.FieldSpec{WireName: "content"},
-		"ContentLink": ubx.FieldSpec{
-			WireName: "content_link",
-			Kind: "object",
-			Fields: IntegrationAccountSchema_Properties_ContentLinkFields,
-		},
-		"ContentType": ubx.FieldSpec{WireName: "content_type"},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"DocumentName": ubx.FieldSpec{WireName: "document_name"},
-		"FileName": ubx.FieldSpec{WireName: "file_name"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"SchemaType": ubx.FieldSpec{WireName: "schema_type"},
-		"TargetNamespace": ubx.FieldSpec{WireName: "target_namespace"},
-	}
+	"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
+	"Content":     ubx.FieldSpec{WireName: "content"},
+	"ContentLink": ubx.FieldSpec{
+		WireName: "content_link",
+		Kind:     "object",
+		Fields:   IntegrationAccountSchema_Properties_ContentLinkFields,
+	},
+	"ContentType":     ubx.FieldSpec{WireName: "content_type"},
+	"CreatedTime":     ubx.FieldSpec{WireName: "created_time"},
+	"DocumentName":    ubx.FieldSpec{WireName: "document_name"},
+	"FileName":        ubx.FieldSpec{WireName: "file_name"},
+	"Metadata":        ubx.FieldSpec{WireName: "metadata"},
+	"SchemaType":      ubx.FieldSpec{WireName: "schema_type"},
+	"TargetNamespace": ubx.FieldSpec{WireName: "target_namespace"},
+}
 
 type IntegrationAccountSchemaConfig struct {
 	// The integration account schema properties.
@@ -94,8 +94,8 @@ var IntegrationAccountSchema = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: IntegrationAccountSchema_PropertiesFields,
+			Kind:     "object",
+			Fields:   IntegrationAccountSchema_PropertiesFields,
 		},
 	},
 }

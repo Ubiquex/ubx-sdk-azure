@@ -4,44 +4,44 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceReplicationProtectedItem_Value_Properties_CurrentScenario struct {
-	JobId any
+	JobId        any
 	ScenarioName any
-	StartTime any
+	StartTime    any
 }
 
 type ServiceReplicationProtectedItem_Value_Properties_HealthErrors_InnerHealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceReplicationProtectedItem_Value_Properties_HealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	InnerHealthErrors any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceReplicationProtectedItem_Value_Properties_ProviderSpecificDetails struct {
@@ -49,55 +49,55 @@ type ServiceReplicationProtectedItem_Value_Properties_ProviderSpecificDetails st
 }
 
 type ServiceReplicationProtectedItem_Value_Properties struct {
-	ActiveLocation any
-	AllowedOperations any
-	CurrentScenario any
-	EventCorrelationId any
-	FailoverHealth any
-	FailoverRecoveryPointId any
-	FriendlyName any
-	HealthErrors any
-	LastSuccessfulFailoverTime any
-	LastSuccessfulTestFailoverTime any
-	PolicyFriendlyName any
-	PolicyId any
-	PrimaryFabricFriendlyName any
-	PrimaryFabricProvider any
-	PrimaryProtectionContainerFriendlyName any
-	ProtectableItemId any
-	ProtectedItemType any
-	ProtectionState any
-	ProtectionStateDescription any
-	ProviderSpecificDetails any
-	RecoveryContainerId any
-	RecoveryFabricFriendlyName any
-	RecoveryFabricId any
+	ActiveLocation                          any
+	AllowedOperations                       any
+	CurrentScenario                         any
+	EventCorrelationId                      any
+	FailoverHealth                          any
+	FailoverRecoveryPointId                 any
+	FriendlyName                            any
+	HealthErrors                            any
+	LastSuccessfulFailoverTime              any
+	LastSuccessfulTestFailoverTime          any
+	PolicyFriendlyName                      any
+	PolicyId                                any
+	PrimaryFabricFriendlyName               any
+	PrimaryFabricProvider                   any
+	PrimaryProtectionContainerFriendlyName  any
+	ProtectableItemId                       any
+	ProtectedItemType                       any
+	ProtectionState                         any
+	ProtectionStateDescription              any
+	ProviderSpecificDetails                 any
+	RecoveryContainerId                     any
+	RecoveryFabricFriendlyName              any
+	RecoveryFabricId                        any
 	RecoveryProtectionContainerFriendlyName any
-	RecoveryServicesProviderId any
-	ReplicationHealth any
-	SwitchProviderState any
-	SwitchProviderStateDescription any
-	TestFailoverState any
-	TestFailoverStateDescription any
+	RecoveryServicesProviderId              any
+	ReplicationHealth                       any
+	SwitchProviderState                     any
+	SwitchProviderStateDescription          any
+	TestFailoverState                       any
+	TestFailoverStateDescription            any
 }
 
 type ServiceReplicationProtectedItem_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ServiceReplicationProtectedItemConfig struct {
-	FabricName any
+	FabricName              any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 }
 
 type ServiceReplicationProtectedItemAttrs struct {
 	FabricName any
 	// The link to the next page of items
-	NextLink any
+	NextLink                any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 	// The ReplicationProtectedItem items on this page
 	Value any
 }
@@ -105,8 +105,8 @@ type ServiceReplicationProtectedItemAttrs struct {
 var ServiceReplicationProtectedItem = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_replication_protected_item",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
+		"FabricName":              ubx.FieldSpec{WireName: "fabric_name"},
 		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":            ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

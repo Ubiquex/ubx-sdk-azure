@@ -9,21 +9,36 @@ type ServiceReplicationProtectionIntent_Properties_ProviderSpecificDetails struc
 }
 
 type ServiceReplicationProtectionIntent_Properties struct {
+	// The creation time in UTC.
+	CreationTimeUtc any
+	// The name.
+	FriendlyName any
+	// A value indicating whether the intent object is active.
+	IsActive any
+	// The job Id.
+	JobId any
+	// The job state.
+	JobState any
 	// Create protection intent provider specific input.
 	ProviderSpecificDetails any
 }
 
 var ServiceReplicationProtectionIntent_Properties_ProviderSpecificDetailsFields = ubx.FieldMap{
-		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-	}
+	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+}
 
 var ServiceReplicationProtectionIntent_PropertiesFields = ubx.FieldMap{
-		"ProviderSpecificDetails": ubx.FieldSpec{
-			WireName: "provider_specific_details",
-			Kind: "object",
-			Fields: ServiceReplicationProtectionIntent_Properties_ProviderSpecificDetailsFields,
-		},
-	}
+	"CreationTimeUtc": ubx.FieldSpec{WireName: "creation_time_utc"},
+	"FriendlyName":    ubx.FieldSpec{WireName: "friendly_name"},
+	"IsActive":        ubx.FieldSpec{WireName: "is_active"},
+	"JobId":           ubx.FieldSpec{WireName: "job_id"},
+	"JobState":        ubx.FieldSpec{WireName: "job_state"},
+	"ProviderSpecificDetails": ubx.FieldSpec{
+		WireName: "provider_specific_details",
+		Kind:     "object",
+		Fields:   ServiceReplicationProtectionIntent_Properties_ProviderSpecificDetailsFields,
+	},
+}
 
 type ServiceReplicationProtectionIntentConfig struct {
 	// Create protection intent input properties.
@@ -42,8 +57,8 @@ var ServiceReplicationProtectionIntent = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceReplicationProtectionIntent_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceReplicationProtectionIntent_PropertiesFields,
 		},
 	},
 }

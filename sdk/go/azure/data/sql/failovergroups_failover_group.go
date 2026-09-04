@@ -4,35 +4,35 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FailovergroupsFailoverGroup_Value_Properties_PartnerServers struct {
-	Id any
-	Location any
+	Id              any
+	Location        any
 	ReplicationRole any
 }
 
 type FailovergroupsFailoverGroup_Value_Properties_ReadOnlyEndpoint struct {
 	FailoverPolicy any
-	TargetServer any
+	TargetServer   any
 }
 
 type FailovergroupsFailoverGroup_Value_Properties_ReadWriteEndpoint struct {
-	FailoverPolicy any
+	FailoverPolicy                         any
 	FailoverWithDataLossGracePeriodMinutes any
 }
 
 type FailovergroupsFailoverGroup_Value_Properties struct {
-	Databases any
-	PartnerServers any
-	ReadOnlyEndpoint any
+	Databases         any
+	PartnerServers    any
+	ReadOnlyEndpoint  any
 	ReadWriteEndpoint any
-	ReplicationRole any
-	ReplicationState any
-	SecondaryType any
+	ReplicationRole   any
+	ReplicationState  any
+	SecondaryType     any
 }
 
 type FailovergroupsFailoverGroup_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type FailovergroupsFailoverGroupConfig struct {
@@ -41,7 +41,7 @@ type FailovergroupsFailoverGroupConfig struct {
 
 type FailovergroupsFailoverGroupAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The FailoverGroup items on this page
 	Value any

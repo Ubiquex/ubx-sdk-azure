@@ -11,15 +11,11 @@ type GeobackuppoliciesGeoBackupPolicy_Properties struct {
 }
 
 var GeobackuppoliciesGeoBackupPolicy_PropertiesFields = ubx.FieldMap{
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StorageType": ubx.FieldSpec{WireName: "storage_type"},
-	}
+	"State":       ubx.FieldSpec{WireName: "state"},
+	"StorageType": ubx.FieldSpec{WireName: "storage_type"},
+}
 
 type GeobackuppoliciesGeoBackupPolicyConfig struct {
-	// Kind of geo backup policy. This is metadata used for the Azure portal experience.
-	Kind any
-	// Backup policy location.
-	Location any
 	// The properties of the geo backup policy.
 	Properties any
 }
@@ -36,12 +32,10 @@ type GeobackuppoliciesGeoBackupPolicyAttrs struct {
 var GeobackuppoliciesGeoBackupPolicy = ubx.ResourceBinding{
 	WireType: "azure_sql_geobackuppolicies_geo_backup_policy",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: GeobackuppoliciesGeoBackupPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   GeobackuppoliciesGeoBackupPolicy_PropertiesFields,
 		},
 	},
 }

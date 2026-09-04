@@ -13,10 +13,10 @@ type ApplicationTypeVersionResource_Properties struct {
 }
 
 var ApplicationTypeVersionResource_PropertiesFields = ubx.FieldMap{
-		"AppPackageUrl": ubx.FieldSpec{WireName: "app_package_url"},
-		"DefaultParameterList": ubx.FieldSpec{WireName: "default_parameter_list"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AppPackageUrl":        ubx.FieldSpec{WireName: "app_package_url"},
+	"DefaultParameterList": ubx.FieldSpec{WireName: "default_parameter_list"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ApplicationTypeVersionResourceConfig struct {
 	// The properties of the application type version resource.
@@ -37,8 +37,8 @@ var ApplicationTypeVersionResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationTypeVersionResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApplicationTypeVersionResource_PropertiesFields,
 		},
 		"Version": ubx.FieldSpec{WireName: "version"},
 	},

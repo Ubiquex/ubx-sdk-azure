@@ -13,13 +13,13 @@ type NamespaceResource_Value_Properties_NetworkAcls_PublicNetworkRule struct {
 }
 
 type NamespaceResource_Value_Properties_NetworkAcls struct {
-	IpRules any
+	IpRules           any
 	PublicNetworkRule any
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials_AdmCredential_Properties struct {
 	AuthTokenUrl any
-	ClientId any
+	ClientId     any
 	ClientSecret any
 }
 
@@ -29,13 +29,13 @@ type NamespaceResource_Value_Properties_PnsCredentials_AdmCredential struct {
 
 type NamespaceResource_Value_Properties_PnsCredentials_ApnsCredential_Properties struct {
 	ApnsCertificate any
-	AppId any
-	AppName any
-	CertificateKey any
-	Endpoint any
-	KeyId any
-	Thumbprint any
-	Token any
+	AppId           any
+	AppName         any
+	CertificateKey  any
+	Endpoint        any
+	KeyId           any
+	Thumbprint      any
+	Token           any
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials_ApnsCredential struct {
@@ -43,8 +43,8 @@ type NamespaceResource_Value_Properties_PnsCredentials_ApnsCredential struct {
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials_BaiduCredential_Properties struct {
-	BaiduApiKey any
-	BaiduEndPoint any
+	BaiduApiKey    any
+	BaiduEndPoint  any
 	BaiduSecretKey any
 }
 
@@ -53,9 +53,9 @@ type NamespaceResource_Value_Properties_PnsCredentials_BaiduCredential struct {
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials_BrowserCredential_Properties struct {
-	Subject any
+	Subject         any
 	VapidPrivateKey any
-	VapidPublicKey any
+	VapidPublicKey  any
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials_BrowserCredential struct {
@@ -63,7 +63,7 @@ type NamespaceResource_Value_Properties_PnsCredentials_BrowserCredential struct 
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials_GcmCredential_Properties struct {
-	GcmEndpoint any
+	GcmEndpoint  any
 	GoogleApiKey any
 }
 
@@ -72,9 +72,9 @@ type NamespaceResource_Value_Properties_PnsCredentials_GcmCredential struct {
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials_MpnsCredential_Properties struct {
-	CertificateKey any
+	CertificateKey  any
 	MpnsCertificate any
-	Thumbprint any
+	Thumbprint      any
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials_MpnsCredential struct {
@@ -82,11 +82,11 @@ type NamespaceResource_Value_Properties_PnsCredentials_MpnsCredential struct {
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials_WnsCredential_Properties struct {
-	CertificateKey any
-	PackageSid any
-	SecretKey any
+	CertificateKey      any
+	PackageSid          any
+	SecretKey           any
 	WindowsLiveEndpoint any
-	WnsCertificate any
+	WnsCertificate      any
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials_WnsCredential struct {
@@ -95,7 +95,7 @@ type NamespaceResource_Value_Properties_PnsCredentials_WnsCredential struct {
 
 type NamespaceResource_Value_Properties_PnsCredentials_XiaomiCredential_Properties struct {
 	AppSecret any
-	Endpoint any
+	Endpoint  any
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials_XiaomiCredential struct {
@@ -103,14 +103,14 @@ type NamespaceResource_Value_Properties_PnsCredentials_XiaomiCredential struct {
 }
 
 type NamespaceResource_Value_Properties_PnsCredentials struct {
-	AdmCredential any
-	ApnsCredential any
-	BaiduCredential any
+	AdmCredential     any
+	ApnsCredential    any
+	BaiduCredential   any
 	BrowserCredential any
-	GcmCredential any
-	MpnsCredential any
-	WnsCredential any
-	XiaomiCredential any
+	GcmCredential     any
+	MpnsCredential    any
+	WnsCredential     any
+	XiaomiCredential  any
 }
 
 type NamespaceResource_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -119,15 +119,15 @@ type NamespaceResource_Value_Properties_PrivateEndpointConnections_Properties_Pr
 
 type NamespaceResource_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type NamespaceResource_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type NamespaceResource_Value_Properties_PrivateEndpointConnections struct {
@@ -135,39 +135,39 @@ type NamespaceResource_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type NamespaceResource_Value_Properties struct {
-	CreatedAt any
-	Critical any
-	DataCenter any
-	Enabled any
-	MetricId any
-	Name any
-	NamespaceType any
-	NetworkAcls any
-	PnsCredentials any
+	CreatedAt                  any
+	Critical                   any
+	DataCenter                 any
+	Enabled                    any
+	MetricId                   any
+	Name                       any
+	NamespaceType              any
+	NetworkAcls                any
+	PnsCredentials             any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	Region any
-	ReplicationRegion any
-	ScaleUnit any
-	ServiceBusEndpoint any
-	Status any
-	SubscriptionId any
-	UpdatedAt any
-	ZoneRedundancy any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	Region                     any
+	ReplicationRegion          any
+	ScaleUnit                  any
+	ServiceBusEndpoint         any
+	Status                     any
+	SubscriptionId             any
+	UpdatedAt                  any
+	ZoneRedundancy             any
 }
 
 type NamespaceResource_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type NamespaceResource_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type NamespaceResourceConfig struct {
@@ -182,6 +182,5 @@ type NamespaceResourceAttrs struct {
 
 var NamespaceResource = ubx.DataSourceBinding{
 	WireType: "azure_notificationhubs_namespace_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

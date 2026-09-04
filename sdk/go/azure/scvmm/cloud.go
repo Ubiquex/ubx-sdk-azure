@@ -23,11 +23,11 @@ type Cloud_Properties_CloudCapacity struct {
 
 type Cloud_Properties_StorageQoSpolicies struct {
 	BandwidthLimit any
-	Id any
-	IopsMaximum any
-	IopsMinimum any
-	Name any
-	PolicyId any
+	Id             any
+	IopsMaximum    any
+	IopsMinimum    any
+	Name           any
+	PolicyId       any
 }
 
 type Cloud_Properties struct {
@@ -48,43 +48,43 @@ type Cloud_Properties struct {
 }
 
 var Cloud_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var Cloud_Properties_CloudCapacityFields = ubx.FieldMap{
-		"CpuCount": ubx.FieldSpec{WireName: "cpu_count"},
-		"MemoryMb": ubx.FieldSpec{WireName: "memory_mb"},
-		"StorageGb": ubx.FieldSpec{WireName: "storage_gb"},
-		"VmCount": ubx.FieldSpec{WireName: "vm_count"},
-	}
+	"CpuCount":  ubx.FieldSpec{WireName: "cpu_count"},
+	"MemoryMb":  ubx.FieldSpec{WireName: "memory_mb"},
+	"StorageGb": ubx.FieldSpec{WireName: "storage_gb"},
+	"VmCount":   ubx.FieldSpec{WireName: "vm_count"},
+}
 
 var Cloud_Properties_StorageQoSpoliciesFields = ubx.FieldMap{
-		"BandwidthLimit": ubx.FieldSpec{WireName: "bandwidth_limit"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"IopsMaximum": ubx.FieldSpec{WireName: "iops_maximum"},
-		"IopsMinimum": ubx.FieldSpec{WireName: "iops_minimum"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
-	}
+	"BandwidthLimit": ubx.FieldSpec{WireName: "bandwidth_limit"},
+	"Id":             ubx.FieldSpec{WireName: "id"},
+	"IopsMaximum":    ubx.FieldSpec{WireName: "iops_maximum"},
+	"IopsMinimum":    ubx.FieldSpec{WireName: "iops_minimum"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+	"PolicyId":       ubx.FieldSpec{WireName: "policy_id"},
+}
 
 var Cloud_PropertiesFields = ubx.FieldMap{
-		"CloudCapacity": ubx.FieldSpec{
-			WireName: "cloud_capacity",
-			Kind: "object",
-			Fields: Cloud_Properties_CloudCapacityFields,
-		},
-		"CloudName": ubx.FieldSpec{WireName: "cloud_name"},
-		"InventoryItemId": ubx.FieldSpec{WireName: "inventory_item_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StorageQoSpolicies": ubx.FieldSpec{
-			WireName: "storage_qo_spolicies",
-			Kind: "list",
-			Fields: Cloud_Properties_StorageQoSpoliciesFields,
-		},
-		"Uuid": ubx.FieldSpec{WireName: "uuid"},
-		"VmmServerId": ubx.FieldSpec{WireName: "vmm_server_id"},
-	}
+	"CloudCapacity": ubx.FieldSpec{
+		WireName: "cloud_capacity",
+		Kind:     "object",
+		Fields:   Cloud_Properties_CloudCapacityFields,
+	},
+	"CloudName":         ubx.FieldSpec{WireName: "cloud_name"},
+	"InventoryItemId":   ubx.FieldSpec{WireName: "inventory_item_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"StorageQoSpolicies": ubx.FieldSpec{
+		WireName: "storage_qo_spolicies",
+		Kind:     "list",
+		Fields:   Cloud_Properties_StorageQoSpoliciesFields,
+	},
+	"Uuid":        ubx.FieldSpec{WireName: "uuid"},
+	"VmmServerId": ubx.FieldSpec{WireName: "vmm_server_id"},
+}
 
 type CloudConfig struct {
 	// The extended location.
@@ -105,13 +105,13 @@ var Cloud = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: Cloud_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   Cloud_ExtendedLocationFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Cloud_PropertiesFields,
+			Kind:     "object",
+			Fields:   Cloud_PropertiesFields,
 		},
 	},
 }

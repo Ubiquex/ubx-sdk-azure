@@ -12330,8 +12330,6 @@ _VirtualnetworkDscpConfiguration_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkDscpConfigurationConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Differentiated Services Code Point configuration properties.
     properties: Any = None
 
@@ -12345,7 +12343,6 @@ class VirtualnetworkDscpConfigurationAttrs:
 VirtualnetworkDscpConfiguration = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_dscp_configuration",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

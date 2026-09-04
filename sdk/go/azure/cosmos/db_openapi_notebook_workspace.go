@@ -20,6 +20,5 @@ type DbOpenapiNotebookWorkspaceAttrs struct {
 
 var DbOpenapiNotebookWorkspace = ubx.ResourceBinding{
 	WireType: "azure_cosmos_db_openapi_notebook_workspace",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

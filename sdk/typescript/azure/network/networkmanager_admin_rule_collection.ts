@@ -46,20 +46,9 @@ const NetworkmanagerAdminRuleCollection_PropertiesFields: FieldMap = {
   resourceGuid: "resource_guid",
 };
 
-const NetworkmanagerAdminRuleCollection_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerAdminRuleCollectionConfig {
   /** Defines the admin rule collection properties. */
   properties?: NetworkmanagerAdminRuleCollection_Properties | Computed<NetworkmanagerAdminRuleCollection_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerAdminRuleCollection_SystemData | Computed<NetworkmanagerAdminRuleCollection_SystemData>;
 }
 
 export interface NetworkmanagerAdminRuleCollectionAttrs {
@@ -76,11 +65,6 @@ export const NetworkmanagerAdminRuleCollection: ResourceBinding<NetworkmanagerAd
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerAdminRuleCollection_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerAdminRuleCollection_SystemDataFields,
     },
   },
 };

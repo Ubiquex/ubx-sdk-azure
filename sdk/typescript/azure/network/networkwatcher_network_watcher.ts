@@ -11,8 +11,6 @@ const NetworkwatcherNetworkWatcher_PropertiesFields: FieldMap = {
 };
 
 export interface NetworkwatcherNetworkWatcherConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** The network watcher properties. */
   properties?: NetworkwatcherNetworkWatcher_Properties | Computed<NetworkwatcherNetworkWatcher_Properties>;
 }
@@ -27,7 +25,6 @@ export interface NetworkwatcherNetworkWatcherAttrs {
 export const NetworkwatcherNetworkWatcher: ResourceBinding<NetworkwatcherNetworkWatcherConfig, NetworkwatcherNetworkWatcherAttrs> = {
   wireType: "azure_network_networkwatcher_network_watcher",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -4,10 +4,10 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PlacementPolicy_Value_Properties struct {
-	DisplayName any
+	DisplayName       any
 	ProvisioningState any
-	State any
-	Type any
+	State             any
+	Type              any
 }
 
 type PlacementPolicy_Value struct {
@@ -15,14 +15,14 @@ type PlacementPolicy_Value struct {
 }
 
 type PlacementPolicyConfig struct {
-	ClusterName any
+	ClusterName      any
 	PrivateCloudName any
 }
 
 type PlacementPolicyAttrs struct {
 	ClusterName any
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The PlacementPolicy items on this page
 	Value any
@@ -31,7 +31,7 @@ type PlacementPolicyAttrs struct {
 var PlacementPolicy = ubx.DataSourceBinding{
 	WireType: "azure_vmware_placement_policy",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":      ubx.FieldSpec{WireName: "cluster_name"},
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
 	},
 }

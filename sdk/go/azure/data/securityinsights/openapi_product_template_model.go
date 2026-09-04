@@ -5,12 +5,12 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiProductTemplateModel_Value_Properties_Author struct {
 	Email any
-	Link any
-	Name any
+	Link  any
+	Name  any
 }
 
 type OpenapiProductTemplateModel_Value_Properties_Categories struct {
-	Domains any
+	Domains   any
 	Verticals any
 }
 
@@ -19,57 +19,57 @@ type OpenapiProductTemplateModel_Value_Properties_Dependencies_Criteria struct {
 
 type OpenapiProductTemplateModel_Value_Properties_Dependencies struct {
 	ContentId any
-	Criteria any
-	Kind any
-	Name any
-	Operator any
-	Version any
+	Criteria  any
+	Kind      any
+	Name      any
+	Operator  any
+	Version   any
 }
 
 type OpenapiProductTemplateModel_Value_Properties_Source struct {
-	Kind any
-	Name any
+	Kind     any
+	Name     any
 	SourceId any
 }
 
 type OpenapiProductTemplateModel_Value_Properties_Support struct {
 	Email any
-	Link any
-	Name any
-	Tier any
+	Link  any
+	Name  any
+	Tier  any
 }
 
 type OpenapiProductTemplateModel_Value_Properties struct {
-	Author any
-	Categories any
-	ContentId any
-	ContentKind any
-	ContentProductId any
-	ContentSchemaVersion any
-	CustomVersion any
-	Dependencies any
-	DisplayName any
-	FirstPublishDate any
-	Icon any
-	IsDeprecated any
-	LastPublishDate any
-	PackageId any
-	PackageKind any
-	PackageName any
-	PackageVersion any
-	PackagedContent any
-	PreviewImages any
-	PreviewImagesDark any
-	Providers any
-	Source any
-	Support any
-	ThreatAnalysisTactics any
+	Author                   any
+	Categories               any
+	ContentId                any
+	ContentKind              any
+	ContentProductId         any
+	ContentSchemaVersion     any
+	CustomVersion            any
+	Dependencies             any
+	DisplayName              any
+	FirstPublishDate         any
+	Icon                     any
+	IsDeprecated             any
+	LastPublishDate          any
+	PackageId                any
+	PackageKind              any
+	PackageName              any
+	PackageVersion           any
+	PackagedContent          any
+	PreviewImages            any
+	PreviewImagesDark        any
+	Providers                any
+	Source                   any
+	Support                  any
+	ThreatAnalysisTactics    any
 	ThreatAnalysisTechniques any
-	Version any
+	Version                  any
 }
 
 type OpenapiProductTemplateModel_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -81,7 +81,7 @@ type OpenapiProductTemplateModelAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The ProductTemplateModel items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

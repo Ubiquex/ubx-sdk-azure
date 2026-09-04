@@ -5,24 +5,24 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStaticSiteLinkedBackendArmresource_Value_Properties struct {
 	BackendResourceId any
-	CreatedOn any
+	CreatedOn         any
 	ProvisioningState any
-	Region any
+	Region            any
 }
 
 type OpenapiStaticSiteLinkedBackendArmresource_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiStaticSiteLinkedBackendArmresourceConfig struct {
 	EnvironmentName any
-	Name any
+	Name            any
 }
 
 type OpenapiStaticSiteLinkedBackendArmresourceAttrs struct {
 	EnvironmentName any
-	Name any
+	Name            any
 	// The link to the next page of items
 	NextLink any
 	// The StaticSiteLinkedBackendARMResource items on this page
@@ -33,6 +33,6 @@ var OpenapiStaticSiteLinkedBackendArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_static_site_linked_backend_armresource",
 	Fields: ubx.FieldMap{
 		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":            ubx.FieldSpec{WireName: "name"},
 	},
 }

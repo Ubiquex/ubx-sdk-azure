@@ -17,8 +17,6 @@ const VirtualnetworkVirtualRouterPeering_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkVirtualRouterPeeringConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of the rule group. */
   properties?: VirtualnetworkVirtualRouterPeering_Properties | Computed<VirtualnetworkVirtualRouterPeering_Properties>;
 }
@@ -33,7 +31,6 @@ export interface VirtualnetworkVirtualRouterPeeringAttrs {
 export const VirtualnetworkVirtualRouterPeering: ResourceBinding<VirtualnetworkVirtualRouterPeeringConfig, VirtualnetworkVirtualRouterPeeringAttrs> = {
   wireType: "azure_network_virtualnetwork_virtual_router_peering",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -4,18 +4,18 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWorkspaceConnectionPropertiesV2BasicResource_Value_Properties struct {
-	AuthType any
-	Category any
-	CreatedByWorkspaceArmId any
-	Error any
-	ExpiryTime any
-	Group any
-	IsSharedToAll any
-	Metadata any
-	PeRequirement any
-	PeStatus any
-	SharedUserList any
-	Target any
+	AuthType                    any
+	Category                    any
+	CreatedByWorkspaceArmId     any
+	Error                       any
+	ExpiryTime                  any
+	Group                       any
+	IsSharedToAll               any
+	Metadata                    any
+	PeRequirement               any
+	PeStatus                    any
+	SharedUserList              any
+	Target                      any
 	UseWorkspaceManagedIdentity any
 }
 
@@ -24,29 +24,29 @@ type OpenapiWorkspaceConnectionPropertiesV2BasicResource_Value struct {
 }
 
 type OpenapiWorkspaceConnectionPropertiesV2BasicResourceConfig struct {
-	Category any
-	IncludeAll any
-	Target any
+	Category      any
+	IncludeAll    any
+	Target        any
 	WorkspaceName any
 }
 
 type OpenapiWorkspaceConnectionPropertiesV2BasicResourceAttrs struct {
-	Category any
+	Category   any
 	IncludeAll any
 	// The link to the next page of items
 	NextLink any
-	Target any
+	Target   any
 	// The WorkspaceConnectionPropertiesV2BasicResource items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiWorkspaceConnectionPropertiesV2BasicResource = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_workspace_connection_properties_v2_basic_resource",
 	Fields: ubx.FieldMap{
-		"Category": ubx.FieldSpec{WireName: "category"},
-		"IncludeAll": ubx.FieldSpec{WireName: "include_all"},
-		"Target": ubx.FieldSpec{WireName: "target"},
+		"Category":      ubx.FieldSpec{WireName: "category"},
+		"IncludeAll":    ubx.FieldSpec{WireName: "include_all"},
+		"Target":        ubx.FieldSpec{WireName: "target"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

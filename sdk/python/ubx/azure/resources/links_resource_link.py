@@ -23,14 +23,8 @@ _LinksResourceLink_PropertiesFields = {
 
 @dataclasses.dataclass
 class LinksResourceLinkConfig:
-    # The fully qualified ID of the resource link.
-    id: Any = None
-    # The name of the resource link.
-    name: Any = None
     # The resource link properties.
     properties: Any = None
-    # The resource link object.
-    type: Any = None
 
 @dataclasses.dataclass
 class LinksResourceLinkAttrs:
@@ -46,13 +40,10 @@ class LinksResourceLinkAttrs:
 LinksResourceLink = ubx.ResourceBinding(
     wire_type="azure_resources_links_resource_link",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_LinksResourceLink_PropertiesFields,
         ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

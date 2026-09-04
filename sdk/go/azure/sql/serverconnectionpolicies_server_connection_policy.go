@@ -9,14 +9,10 @@ type ServerconnectionpoliciesServerConnectionPolicy_Properties struct {
 }
 
 var ServerconnectionpoliciesServerConnectionPolicy_PropertiesFields = ubx.FieldMap{
-		"ConnectionType": ubx.FieldSpec{WireName: "connection_type"},
-	}
+	"ConnectionType": ubx.FieldSpec{WireName: "connection_type"},
+}
 
 type ServerconnectionpoliciesServerConnectionPolicyConfig struct {
-	// Metadata used for the Azure portal experience.
-	Kind any
-	// Resource location.
-	Location any
 	// The properties of a server connection policy.
 	Properties any
 }
@@ -33,12 +29,10 @@ type ServerconnectionpoliciesServerConnectionPolicyAttrs struct {
 var ServerconnectionpoliciesServerConnectionPolicy = ubx.ResourceBinding{
 	WireType: "azure_sql_serverconnectionpolicies_server_connection_policy",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServerconnectionpoliciesServerConnectionPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServerconnectionpoliciesServerConnectionPolicy_PropertiesFields,
 		},
 	},
 }

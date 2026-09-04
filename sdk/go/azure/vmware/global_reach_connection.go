@@ -19,13 +19,13 @@ type GlobalReachConnection_Properties struct {
 }
 
 var GlobalReachConnection_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AuthorizationKey": ubx.FieldSpec{WireName: "authorization_key"},
-		"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
-		"ExpressRouteId": ubx.FieldSpec{WireName: "express_route_id"},
-		"PeerExpressRouteCircuit": ubx.FieldSpec{WireName: "peer_express_route_circuit"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AddressPrefix":           ubx.FieldSpec{WireName: "address_prefix"},
+	"AuthorizationKey":        ubx.FieldSpec{WireName: "authorization_key"},
+	"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
+	"ExpressRouteId":          ubx.FieldSpec{WireName: "express_route_id"},
+	"PeerExpressRouteCircuit": ubx.FieldSpec{WireName: "peer_express_route_circuit"},
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type GlobalReachConnectionConfig struct {
 	// The properties of a global reach connection
@@ -42,8 +42,8 @@ var GlobalReachConnection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: GlobalReachConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   GlobalReachConnection_PropertiesFields,
 		},
 	},
 }

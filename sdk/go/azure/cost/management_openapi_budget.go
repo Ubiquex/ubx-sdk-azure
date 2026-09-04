@@ -11,14 +11,14 @@ type ManagementOpenapiBudget_Properties_CurrentSpend struct {
 }
 
 type ManagementOpenapiBudget_Properties_Filter_And_Dimensions struct {
-	Name any
+	Name     any
 	Operator any
-	Values any
+	Values   any
 }
 
 type ManagementOpenapiBudget_Properties_Filter_And struct {
 	Dimensions any
-	Tags any
+	Tags       any
 }
 
 type ManagementOpenapiBudget_Properties_Filter struct {
@@ -33,12 +33,12 @@ type ManagementOpenapiBudget_Properties_Filter struct {
 type ManagementOpenapiBudget_Properties_Notifications struct {
 	ContactEmails any
 	ContactGroups any
-	ContactRoles any
-	Enabled any
-	Frequency any
-	Locale any
-	Operator any
-	Threshold any
+	ContactRoles  any
+	Enabled       any
+	Frequency     any
+	Locale        any
+	Operator      any
+	Threshold     any
 	ThresholdType any
 }
 
@@ -69,94 +69,94 @@ type ManagementOpenapiBudget_Properties struct {
 }
 
 var ManagementOpenapiBudget_Properties_CurrentSpendFields = ubx.FieldMap{
-		"Amount": ubx.FieldSpec{WireName: "amount"},
-		"Unit": ubx.FieldSpec{WireName: "unit"},
-	}
+	"Amount": ubx.FieldSpec{WireName: "amount"},
+	"Unit":   ubx.FieldSpec{WireName: "unit"},
+}
 
 var ManagementOpenapiBudget_Properties_Filter_And_DimensionsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Operator": ubx.FieldSpec{WireName: "operator"},
-		"Values": ubx.FieldSpec{WireName: "values"},
-	}
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Operator": ubx.FieldSpec{WireName: "operator"},
+	"Values":   ubx.FieldSpec{WireName: "values"},
+}
 
 var ManagementOpenapiBudget_Properties_Filter_AndFields = ubx.FieldMap{
-		"Dimensions": ubx.FieldSpec{
-			WireName: "dimensions",
-			Kind: "object",
-			Fields: ManagementOpenapiBudget_Properties_Filter_And_DimensionsFields,
-		},
-		"Tags": ubx.FieldSpec{
-			WireName: "tags",
-			Kind: "object",
-			Fields: ManagementOpenapiBudget_Properties_Filter_And_DimensionsFields,
-		},
-	}
+	"Dimensions": ubx.FieldSpec{
+		WireName: "dimensions",
+		Kind:     "object",
+		Fields:   ManagementOpenapiBudget_Properties_Filter_And_DimensionsFields,
+	},
+	"Tags": ubx.FieldSpec{
+		WireName: "tags",
+		Kind:     "object",
+		Fields:   ManagementOpenapiBudget_Properties_Filter_And_DimensionsFields,
+	},
+}
 
 var ManagementOpenapiBudget_Properties_FilterFields = ubx.FieldMap{
-		"And": ubx.FieldSpec{
-			WireName: "and",
-			Kind: "list",
-			Fields: ManagementOpenapiBudget_Properties_Filter_AndFields,
-		},
-		"Dimensions": ubx.FieldSpec{
-			WireName: "dimensions",
-			Kind: "object",
-			Fields: ManagementOpenapiBudget_Properties_Filter_And_DimensionsFields,
-		},
-		"Tags": ubx.FieldSpec{
-			WireName: "tags",
-			Kind: "object",
-			Fields: ManagementOpenapiBudget_Properties_Filter_And_DimensionsFields,
-		},
-	}
+	"And": ubx.FieldSpec{
+		WireName: "and",
+		Kind:     "list",
+		Fields:   ManagementOpenapiBudget_Properties_Filter_AndFields,
+	},
+	"Dimensions": ubx.FieldSpec{
+		WireName: "dimensions",
+		Kind:     "object",
+		Fields:   ManagementOpenapiBudget_Properties_Filter_And_DimensionsFields,
+	},
+	"Tags": ubx.FieldSpec{
+		WireName: "tags",
+		Kind:     "object",
+		Fields:   ManagementOpenapiBudget_Properties_Filter_And_DimensionsFields,
+	},
+}
 
 var ManagementOpenapiBudget_Properties_NotificationsFields = ubx.FieldMap{
-		"ContactEmails": ubx.FieldSpec{WireName: "contact_emails"},
-		"ContactGroups": ubx.FieldSpec{WireName: "contact_groups"},
-		"ContactRoles": ubx.FieldSpec{WireName: "contact_roles"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Frequency": ubx.FieldSpec{WireName: "frequency"},
-		"Locale": ubx.FieldSpec{WireName: "locale"},
-		"Operator": ubx.FieldSpec{WireName: "operator"},
-		"Threshold": ubx.FieldSpec{WireName: "threshold"},
-		"ThresholdType": ubx.FieldSpec{WireName: "threshold_type"},
-	}
+	"ContactEmails": ubx.FieldSpec{WireName: "contact_emails"},
+	"ContactGroups": ubx.FieldSpec{WireName: "contact_groups"},
+	"ContactRoles":  ubx.FieldSpec{WireName: "contact_roles"},
+	"Enabled":       ubx.FieldSpec{WireName: "enabled"},
+	"Frequency":     ubx.FieldSpec{WireName: "frequency"},
+	"Locale":        ubx.FieldSpec{WireName: "locale"},
+	"Operator":      ubx.FieldSpec{WireName: "operator"},
+	"Threshold":     ubx.FieldSpec{WireName: "threshold"},
+	"ThresholdType": ubx.FieldSpec{WireName: "threshold_type"},
+}
 
 var ManagementOpenapiBudget_Properties_TimePeriodFields = ubx.FieldMap{
-		"EndDate": ubx.FieldSpec{WireName: "end_date"},
-		"StartDate": ubx.FieldSpec{WireName: "start_date"},
-	}
+	"EndDate":   ubx.FieldSpec{WireName: "end_date"},
+	"StartDate": ubx.FieldSpec{WireName: "start_date"},
+}
 
 var ManagementOpenapiBudget_PropertiesFields = ubx.FieldMap{
-		"Amount": ubx.FieldSpec{WireName: "amount"},
-		"Category": ubx.FieldSpec{WireName: "category"},
-		"CurrentSpend": ubx.FieldSpec{
-			WireName: "current_spend",
-			Kind: "object",
-			Fields: ManagementOpenapiBudget_Properties_CurrentSpendFields,
-		},
-		"Filter": ubx.FieldSpec{
-			WireName: "filter",
-			Kind: "object",
-			Fields: ManagementOpenapiBudget_Properties_FilterFields,
-		},
-		"ForecastSpend": ubx.FieldSpec{
-			WireName: "forecast_spend",
-			Kind: "object",
-			Fields: ManagementOpenapiBudget_Properties_CurrentSpendFields,
-		},
-		"Notifications": ubx.FieldSpec{
-			WireName: "notifications",
-			Kind: "map",
-			Fields: ManagementOpenapiBudget_Properties_NotificationsFields,
-		},
-		"TimeGrain": ubx.FieldSpec{WireName: "time_grain"},
-		"TimePeriod": ubx.FieldSpec{
-			WireName: "time_period",
-			Kind: "object",
-			Fields: ManagementOpenapiBudget_Properties_TimePeriodFields,
-		},
-	}
+	"Amount":   ubx.FieldSpec{WireName: "amount"},
+	"Category": ubx.FieldSpec{WireName: "category"},
+	"CurrentSpend": ubx.FieldSpec{
+		WireName: "current_spend",
+		Kind:     "object",
+		Fields:   ManagementOpenapiBudget_Properties_CurrentSpendFields,
+	},
+	"Filter": ubx.FieldSpec{
+		WireName: "filter",
+		Kind:     "object",
+		Fields:   ManagementOpenapiBudget_Properties_FilterFields,
+	},
+	"ForecastSpend": ubx.FieldSpec{
+		WireName: "forecast_spend",
+		Kind:     "object",
+		Fields:   ManagementOpenapiBudget_Properties_CurrentSpendFields,
+	},
+	"Notifications": ubx.FieldSpec{
+		WireName: "notifications",
+		Kind:     "map",
+		Fields:   ManagementOpenapiBudget_Properties_NotificationsFields,
+	},
+	"TimeGrain": ubx.FieldSpec{WireName: "time_grain"},
+	"TimePeriod": ubx.FieldSpec{
+		WireName: "time_period",
+		Kind:     "object",
+		Fields:   ManagementOpenapiBudget_Properties_TimePeriodFields,
+	},
+}
 
 type ManagementOpenapiBudgetConfig struct {
 	// The ETag (or entity tag) HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content was not changed. It is a string of ASCII characters placed between double quotes, like "675af34563dc-tr34".
@@ -182,8 +182,8 @@ var ManagementOpenapiBudget = ubx.ResourceBinding{
 		"ETag": ubx.FieldSpec{WireName: "e_tag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagementOpenapiBudget_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagementOpenapiBudget_PropertiesFields,
 		},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},

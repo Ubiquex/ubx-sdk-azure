@@ -27,22 +27,9 @@ const VirtualnetworkVerifierWorkspace_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
-const VirtualnetworkVerifierWorkspace_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface VirtualnetworkVerifierWorkspaceConfig {
-  /** String representing unique etag for the resource document. */
-  etag?: string | Computed<string>;
   /** Properties of Verifier Workspace resource. */
   properties?: VirtualnetworkVerifierWorkspace_Properties | Computed<VirtualnetworkVerifierWorkspace_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: VirtualnetworkVerifierWorkspace_SystemData | Computed<VirtualnetworkVerifierWorkspace_SystemData>;
 }
 
 export interface VirtualnetworkVerifierWorkspaceAttrs {
@@ -57,16 +44,10 @@ export interface VirtualnetworkVerifierWorkspaceAttrs {
 export const VirtualnetworkVerifierWorkspace: ResourceBinding<VirtualnetworkVerifierWorkspaceConfig, VirtualnetworkVerifierWorkspaceAttrs> = {
   wireType: "azure_network_virtualnetwork_verifier_workspace",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkVerifierWorkspace_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: VirtualnetworkVerifierWorkspace_SystemDataFields,
     },
   },
 };

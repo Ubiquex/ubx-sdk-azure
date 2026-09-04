@@ -4,18 +4,18 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiProcessThreadInfo_Value_Properties struct {
-	BasePriority any
-	CurrentPriority any
-	Href any
-	Identifier any
-	PriorityLevel any
-	Process any
-	StartAddress any
-	StartTime any
-	State any
+	BasePriority       any
+	CurrentPriority    any
+	Href               any
+	Identifier         any
+	PriorityLevel      any
+	Process            any
+	StartAddress       any
+	StartTime          any
+	State              any
 	TotalProcessorTime any
-	UserProcessorTime any
-	WaitReason any
+	UserProcessorTime  any
+	WaitReason         any
 }
 
 type OpenapiProcessThreadInfo_Value struct {
@@ -24,15 +24,15 @@ type OpenapiProcessThreadInfo_Value struct {
 
 type OpenapiProcessThreadInfoConfig struct {
 	InstanceId any
-	Name any
-	ProcessId any
+	Name       any
+	ProcessId  any
 }
 
 type OpenapiProcessThreadInfoAttrs struct {
 	InstanceId any
-	Name any
+	Name       any
 	// The link to the next page of items
-	NextLink any
+	NextLink  any
 	ProcessId any
 	// The ProcessThreadInfo items on this page
 	Value any
@@ -42,7 +42,7 @@ var OpenapiProcessThreadInfo = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_process_thread_info",
 	Fields: ubx.FieldMap{
 		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ProcessId": ubx.FieldSpec{WireName: "process_id"},
+		"Name":       ubx.FieldSpec{WireName: "name"},
+		"ProcessId":  ubx.FieldSpec{WireName: "process_id"},
 	},
 }

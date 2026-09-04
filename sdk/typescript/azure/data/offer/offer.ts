@@ -3,13 +3,11 @@ import type { Computed, FieldMap, DataSourceBinding } from "@ubx/sdk";
 
 export interface OfferConfig {
   edgeZone: string | Computed<string>;
-  offer: string | Computed<string>;
   publisherName: string | Computed<string>;
 }
 
 export interface OfferAttrs {
   edgeZone: string;
-  offer: string;
   publisherName: string;
 }
 
@@ -17,7 +15,6 @@ export const Offer: DataSourceBinding<OfferConfig, OfferAttrs> = {
   wireType: "azure_offer",
   fields: {
     edgeZone: "edge_zone",
-    offer: "offer",
     publisherName: "publisher_name",
   },
 };

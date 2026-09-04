@@ -46,20 +46,9 @@ const NetworkmanagerCommit_PropertiesFields: FieldMap = {
   targetLocations: "target_locations",
 };
 
-const NetworkmanagerCommit_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerCommitConfig {
   /** Properties of commit */
   properties?: NetworkmanagerCommit_Properties | Computed<NetworkmanagerCommit_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerCommit_SystemData | Computed<NetworkmanagerCommit_SystemData>;
 }
 
 export interface NetworkmanagerCommitAttrs {
@@ -76,11 +65,6 @@ export const NetworkmanagerCommit: ResourceBinding<NetworkmanagerCommitConfig, N
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerCommit_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerCommit_SystemDataFields,
     },
   },
 };

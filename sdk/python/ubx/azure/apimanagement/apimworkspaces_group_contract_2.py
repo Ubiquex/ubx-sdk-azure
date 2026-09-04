@@ -8,6 +8,8 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class ApimworkspacesGroupContract2_Properties:
+    # true if the group is one of the three system groups (Administrators, Developers, or Guests); otherwise false.
+    built_in: Any = None
     # Group description.
     description: Any = None
     # Group name.
@@ -18,6 +20,7 @@ class ApimworkspacesGroupContract2_Properties:
     type: Any = None
 
 _ApimworkspacesGroupContract2_PropertiesFields = {
+    "built_in": ubx.FieldSpec(wire_name="built_in"),
     "description": ubx.FieldSpec(wire_name="description"),
     "display_name": ubx.FieldSpec(wire_name="display_name"),
     "external_id": ubx.FieldSpec(wire_name="external_id"),

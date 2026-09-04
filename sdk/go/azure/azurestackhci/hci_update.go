@@ -6,36 +6,36 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type HciUpdate_Properties_ComponentVersions struct {
 	LastUpdated any
 	PackageType any
-	Version any
+	Version     any
 }
 
 type HciUpdate_Properties_HealthCheckResult_Tags struct {
-	Key any
+	Key   any
 	Value any
 }
 
 type HciUpdate_Properties_HealthCheckResult struct {
-	AdditionalData any
-	Description any
-	DisplayName any
-	HealthCheckSource any
-	HealthCheckTags any
-	Name any
-	Remediation any
-	Severity any
-	Status any
-	Tags any
-	TargetResourceId any
+	AdditionalData     any
+	Description        any
+	DisplayName        any
+	HealthCheckSource  any
+	HealthCheckTags    any
+	Name               any
+	Remediation        any
+	Severity           any
+	Status             any
+	Tags               any
+	TargetResourceId   any
 	TargetResourceName any
 	TargetResourceType any
-	Timestamp any
-	Title any
+	Timestamp          any
+	Title              any
 }
 
 type HciUpdate_Properties_Prerequisites struct {
 	PackageName any
-	UpdateType any
-	Version any
+	UpdateType  any
+	Version     any
 }
 
 type HciUpdate_Properties_UpdateStateProperties struct {
@@ -91,88 +91,88 @@ type HciUpdate_Properties struct {
 }
 
 var HciUpdate_Properties_ComponentVersionsFields = ubx.FieldMap{
-		"LastUpdated": ubx.FieldSpec{WireName: "last_updated"},
-		"PackageType": ubx.FieldSpec{WireName: "package_type"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"LastUpdated": ubx.FieldSpec{WireName: "last_updated"},
+	"PackageType": ubx.FieldSpec{WireName: "package_type"},
+	"Version":     ubx.FieldSpec{WireName: "version"},
+}
 
 var HciUpdate_Properties_HealthCheckResult_TagsFields = ubx.FieldMap{
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Key":   ubx.FieldSpec{WireName: "key"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var HciUpdate_Properties_HealthCheckResultFields = ubx.FieldMap{
-		"AdditionalData": ubx.FieldSpec{WireName: "additional_data"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"HealthCheckSource": ubx.FieldSpec{WireName: "health_check_source"},
-		"HealthCheckTags": ubx.FieldSpec{WireName: "health_check_tags"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Remediation": ubx.FieldSpec{WireName: "remediation"},
-		"Severity": ubx.FieldSpec{WireName: "severity"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Tags": ubx.FieldSpec{
-			WireName: "tags",
-			Kind: "object",
-			Fields: HciUpdate_Properties_HealthCheckResult_TagsFields,
-		},
-		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
-		"TargetResourceName": ubx.FieldSpec{WireName: "target_resource_name"},
-		"TargetResourceType": ubx.FieldSpec{WireName: "target_resource_type"},
-		"Timestamp": ubx.FieldSpec{WireName: "timestamp"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-	}
+	"AdditionalData":    ubx.FieldSpec{WireName: "additional_data"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"HealthCheckSource": ubx.FieldSpec{WireName: "health_check_source"},
+	"HealthCheckTags":   ubx.FieldSpec{WireName: "health_check_tags"},
+	"Name":              ubx.FieldSpec{WireName: "name"},
+	"Remediation":       ubx.FieldSpec{WireName: "remediation"},
+	"Severity":          ubx.FieldSpec{WireName: "severity"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"Tags": ubx.FieldSpec{
+		WireName: "tags",
+		Kind:     "object",
+		Fields:   HciUpdate_Properties_HealthCheckResult_TagsFields,
+	},
+	"TargetResourceId":   ubx.FieldSpec{WireName: "target_resource_id"},
+	"TargetResourceName": ubx.FieldSpec{WireName: "target_resource_name"},
+	"TargetResourceType": ubx.FieldSpec{WireName: "target_resource_type"},
+	"Timestamp":          ubx.FieldSpec{WireName: "timestamp"},
+	"Title":              ubx.FieldSpec{WireName: "title"},
+}
 
 var HciUpdate_Properties_PrerequisitesFields = ubx.FieldMap{
-		"PackageName": ubx.FieldSpec{WireName: "package_name"},
-		"UpdateType": ubx.FieldSpec{WireName: "update_type"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"PackageName": ubx.FieldSpec{WireName: "package_name"},
+	"UpdateType":  ubx.FieldSpec{WireName: "update_type"},
+	"Version":     ubx.FieldSpec{WireName: "version"},
+}
 
 var HciUpdate_Properties_UpdateStatePropertiesFields = ubx.FieldMap{
-		"NotifyMessage": ubx.FieldSpec{WireName: "notify_message"},
-		"ProgressPercentage": ubx.FieldSpec{WireName: "progress_percentage"},
-	}
+	"NotifyMessage":      ubx.FieldSpec{WireName: "notify_message"},
+	"ProgressPercentage": ubx.FieldSpec{WireName: "progress_percentage"},
+}
 
 var HciUpdate_PropertiesFields = ubx.FieldMap{
-		"AdditionalProperties": ubx.FieldSpec{WireName: "additional_properties"},
-		"AvailabilityType": ubx.FieldSpec{WireName: "availability_type"},
-		"ComponentVersions": ubx.FieldSpec{
-			WireName: "component_versions",
-			Kind: "list",
-			Fields: HciUpdate_Properties_ComponentVersionsFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"HealthCheckDate": ubx.FieldSpec{WireName: "health_check_date"},
-		"HealthCheckResult": ubx.FieldSpec{
-			WireName: "health_check_result",
-			Kind: "list",
-			Fields: HciUpdate_Properties_HealthCheckResultFields,
-		},
-		"HealthState": ubx.FieldSpec{WireName: "health_state"},
-		"InstalledDate": ubx.FieldSpec{WireName: "installed_date"},
-		"MinSbeVersionRequired": ubx.FieldSpec{WireName: "min_sbe_version_required"},
-		"PackagePath": ubx.FieldSpec{WireName: "package_path"},
-		"PackageSizeInMb": ubx.FieldSpec{WireName: "package_size_in_mb"},
-		"PackageType": ubx.FieldSpec{WireName: "package_type"},
-		"Prerequisites": ubx.FieldSpec{
-			WireName: "prerequisites",
-			Kind: "list",
-			Fields: HciUpdate_Properties_PrerequisitesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"RebootRequired": ubx.FieldSpec{WireName: "reboot_required"},
-		"ReleaseLink": ubx.FieldSpec{WireName: "release_link"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"UpdateStateProperties": ubx.FieldSpec{
-			WireName: "update_state_properties",
-			Kind: "object",
-			Fields: HciUpdate_Properties_UpdateStatePropertiesFields,
-		},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"AdditionalProperties": ubx.FieldSpec{WireName: "additional_properties"},
+	"AvailabilityType":     ubx.FieldSpec{WireName: "availability_type"},
+	"ComponentVersions": ubx.FieldSpec{
+		WireName: "component_versions",
+		Kind:     "list",
+		Fields:   HciUpdate_Properties_ComponentVersionsFields,
+	},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"DisplayName":     ubx.FieldSpec{WireName: "display_name"},
+	"HealthCheckDate": ubx.FieldSpec{WireName: "health_check_date"},
+	"HealthCheckResult": ubx.FieldSpec{
+		WireName: "health_check_result",
+		Kind:     "list",
+		Fields:   HciUpdate_Properties_HealthCheckResultFields,
+	},
+	"HealthState":           ubx.FieldSpec{WireName: "health_state"},
+	"InstalledDate":         ubx.FieldSpec{WireName: "installed_date"},
+	"MinSbeVersionRequired": ubx.FieldSpec{WireName: "min_sbe_version_required"},
+	"PackagePath":           ubx.FieldSpec{WireName: "package_path"},
+	"PackageSizeInMb":       ubx.FieldSpec{WireName: "package_size_in_mb"},
+	"PackageType":           ubx.FieldSpec{WireName: "package_type"},
+	"Prerequisites": ubx.FieldSpec{
+		WireName: "prerequisites",
+		Kind:     "list",
+		Fields:   HciUpdate_Properties_PrerequisitesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Publisher":         ubx.FieldSpec{WireName: "publisher"},
+	"RebootRequired":    ubx.FieldSpec{WireName: "reboot_required"},
+	"ReleaseLink":       ubx.FieldSpec{WireName: "release_link"},
+	"State":             ubx.FieldSpec{WireName: "state"},
+	"UpdateStateProperties": ubx.FieldSpec{
+		WireName: "update_state_properties",
+		Kind:     "object",
+		Fields:   HciUpdate_Properties_UpdateStatePropertiesFields,
+	},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 type HciUpdateConfig struct {
 	// The geo-location where the resource lives
@@ -194,8 +194,8 @@ var HciUpdate = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HciUpdate_PropertiesFields,
+			Kind:     "object",
+			Fields:   HciUpdate_PropertiesFields,
 		},
 	},
 }

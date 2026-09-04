@@ -4,20 +4,20 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RaiTopic_Value_Properties struct {
-	CreatedAt any
-	Description any
-	FailedReason any
+	CreatedAt      any
+	Description    any
+	FailedReason   any
 	LastModifiedAt any
-	SampleBlobUrl any
-	Status any
-	TopicId any
-	TopicName any
+	SampleBlobUrl  any
+	Status         any
+	TopicId        any
+	TopicName      any
 }
 
 type RaiTopic_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type RaiTopicConfig struct {

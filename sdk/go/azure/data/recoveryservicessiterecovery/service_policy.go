@@ -8,12 +8,12 @@ type ServicePolicy_Value_Properties_ProviderSpecificDetails struct {
 }
 
 type ServicePolicy_Value_Properties struct {
-	FriendlyName any
+	FriendlyName            any
 	ProviderSpecificDetails any
 }
 
 type ServicePolicy_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -23,7 +23,7 @@ type ServicePolicyConfig struct {
 
 type ServicePolicyAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The Policy items on this page
 	Value any

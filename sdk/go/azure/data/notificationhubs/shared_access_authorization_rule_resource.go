@@ -4,21 +4,21 @@ package notificationhubs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SharedAccessAuthorizationRuleResource_Value_Properties struct {
-	ClaimType any
-	ClaimValue any
-	CreatedTime any
-	KeyName any
+	ClaimType    any
+	ClaimValue   any
+	CreatedTime  any
+	KeyName      any
 	ModifiedTime any
-	PrimaryKey any
-	Revision any
-	Rights any
+	PrimaryKey   any
+	Revision     any
+	Rights       any
 	SecondaryKey any
 }
 
 type SharedAccessAuthorizationRuleResource_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type SharedAccessAuthorizationRuleResourceConfig struct {

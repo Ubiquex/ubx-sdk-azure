@@ -4,19 +4,19 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiHostNameBinding_Value_Properties struct {
-	AzureResourceName any
-	AzureResourceType any
+	AzureResourceName           any
+	AzureResourceType           any
 	CustomHostNameDnsRecordType any
-	DomainId any
-	HostNameType any
-	SiteName any
-	SslState any
-	Thumbprint any
-	VirtualIp any
+	DomainId                    any
+	HostNameType                any
+	SiteName                    any
+	SslState                    any
+	Thumbprint                  any
+	VirtualIp                   any
 }
 
 type OpenapiHostNameBinding_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

@@ -4,9 +4,9 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo struct {
-	Prefix any
-	Signature any
-	ValidationId any
+	Prefix          any
+	Signature       any
+	ValidationId    any
 	ValidationState any
 }
 
@@ -79,75 +79,73 @@ type ExpressrouteExpressRouteCrossConnectionPeering_Properties struct {
 }
 
 var ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfoFields = ubx.FieldMap{
-		"Prefix": ubx.FieldSpec{WireName: "prefix"},
-		"Signature": ubx.FieldSpec{WireName: "signature"},
-		"ValidationId": ubx.FieldSpec{WireName: "validation_id"},
-		"ValidationState": ubx.FieldSpec{WireName: "validation_state"},
-	}
+	"Prefix":          ubx.FieldSpec{WireName: "prefix"},
+	"Signature":       ubx.FieldSpec{WireName: "signature"},
+	"ValidationId":    ubx.FieldSpec{WireName: "validation_id"},
+	"ValidationState": ubx.FieldSpec{WireName: "validation_state"},
+}
 
 var ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfigFields = ubx.FieldMap{
-		"AdvertisedCommunities": ubx.FieldSpec{WireName: "advertised_communities"},
-		"AdvertisedPublicPrefixInfo": ubx.FieldSpec{
-			WireName: "advertised_public_prefix_info",
-			Kind: "list",
-			Fields: ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfoFields,
-		},
-		"AdvertisedPublicPrefixes": ubx.FieldSpec{WireName: "advertised_public_prefixes"},
-		"AdvertisedPublicPrefixesState": ubx.FieldSpec{WireName: "advertised_public_prefixes_state"},
-		"CustomerAsn": ubx.FieldSpec{WireName: "customer_asn"},
-		"LegacyMode": ubx.FieldSpec{WireName: "legacy_mode"},
-		"RoutingRegistryName": ubx.FieldSpec{WireName: "routing_registry_name"},
-	}
+	"AdvertisedCommunities": ubx.FieldSpec{WireName: "advertised_communities"},
+	"AdvertisedPublicPrefixInfo": ubx.FieldSpec{
+		WireName: "advertised_public_prefix_info",
+		Kind:     "list",
+		Fields:   ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfoFields,
+	},
+	"AdvertisedPublicPrefixes":      ubx.FieldSpec{WireName: "advertised_public_prefixes"},
+	"AdvertisedPublicPrefixesState": ubx.FieldSpec{WireName: "advertised_public_prefixes_state"},
+	"CustomerAsn":                   ubx.FieldSpec{WireName: "customer_asn"},
+	"LegacyMode":                    ubx.FieldSpec{WireName: "legacy_mode"},
+	"RoutingRegistryName":           ubx.FieldSpec{WireName: "routing_registry_name"},
+}
 
 var ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_RouteFilterFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfigFields = ubx.FieldMap{
-		"MicrosoftPeeringConfig": ubx.FieldSpec{
-			WireName: "microsoft_peering_config",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfigFields,
-		},
-		"PrimaryPeerAddressPrefix": ubx.FieldSpec{WireName: "primary_peer_address_prefix"},
-		"RouteFilter": ubx.FieldSpec{
-			WireName: "route_filter",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_RouteFilterFields,
-		},
-		"SecondaryPeerAddressPrefix": ubx.FieldSpec{WireName: "secondary_peer_address_prefix"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"MicrosoftPeeringConfig": ubx.FieldSpec{
+		WireName: "microsoft_peering_config",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfigFields,
+	},
+	"PrimaryPeerAddressPrefix": ubx.FieldSpec{WireName: "primary_peer_address_prefix"},
+	"RouteFilter": ubx.FieldSpec{
+		WireName: "route_filter",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_RouteFilterFields,
+	},
+	"SecondaryPeerAddressPrefix": ubx.FieldSpec{WireName: "secondary_peer_address_prefix"},
+	"State":                      ubx.FieldSpec{WireName: "state"},
+}
 
 var ExpressrouteExpressRouteCrossConnectionPeering_PropertiesFields = ubx.FieldMap{
-		"AzureAsn": ubx.FieldSpec{WireName: "azure_asn"},
-		"GatewayManagerEtag": ubx.FieldSpec{WireName: "gateway_manager_etag"},
-		"Ipv6PeeringConfig": ubx.FieldSpec{
-			WireName: "ipv6_peering_config",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfigFields,
-		},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"MicrosoftPeeringConfig": ubx.FieldSpec{
-			WireName: "microsoft_peering_config",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfigFields,
-		},
-		"PeerAsn": ubx.FieldSpec{WireName: "peer_asn"},
-		"PeeringType": ubx.FieldSpec{WireName: "peering_type"},
-		"PrimaryAzurePort": ubx.FieldSpec{WireName: "primary_azure_port"},
-		"PrimaryPeerAddressPrefix": ubx.FieldSpec{WireName: "primary_peer_address_prefix"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SecondaryAzurePort": ubx.FieldSpec{WireName: "secondary_azure_port"},
-		"SecondaryPeerAddressPrefix": ubx.FieldSpec{WireName: "secondary_peer_address_prefix"},
-		"SharedKey": ubx.FieldSpec{WireName: "shared_key"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"VlanId": ubx.FieldSpec{WireName: "vlan_id"},
-	}
+	"AzureAsn":           ubx.FieldSpec{WireName: "azure_asn"},
+	"GatewayManagerEtag": ubx.FieldSpec{WireName: "gateway_manager_etag"},
+	"Ipv6PeeringConfig": ubx.FieldSpec{
+		WireName: "ipv6_peering_config",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfigFields,
+	},
+	"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
+	"MicrosoftPeeringConfig": ubx.FieldSpec{
+		WireName: "microsoft_peering_config",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCrossConnectionPeering_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfigFields,
+	},
+	"PeerAsn":                    ubx.FieldSpec{WireName: "peer_asn"},
+	"PeeringType":                ubx.FieldSpec{WireName: "peering_type"},
+	"PrimaryAzurePort":           ubx.FieldSpec{WireName: "primary_azure_port"},
+	"PrimaryPeerAddressPrefix":   ubx.FieldSpec{WireName: "primary_peer_address_prefix"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"SecondaryAzurePort":         ubx.FieldSpec{WireName: "secondary_azure_port"},
+	"SecondaryPeerAddressPrefix": ubx.FieldSpec{WireName: "secondary_peer_address_prefix"},
+	"SharedKey":                  ubx.FieldSpec{WireName: "shared_key"},
+	"State":                      ubx.FieldSpec{WireName: "state"},
+	"VlanId":                     ubx.FieldSpec{WireName: "vlan_id"},
+}
 
 type ExpressrouteExpressRouteCrossConnectionPeeringConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Properties of express route cross connection peering.
@@ -166,12 +164,11 @@ type ExpressrouteExpressRouteCrossConnectionPeeringAttrs struct {
 var ExpressrouteExpressRouteCrossConnectionPeering = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_express_route_cross_connection_peering",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCrossConnectionPeering_PropertiesFields,
+			Kind:     "object",
+			Fields:   ExpressrouteExpressRouteCrossConnectionPeering_PropertiesFields,
 		},
 	},
 }

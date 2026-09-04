@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BackupshorttermretentionpoliciesBackupShortTermRetentionPolicy_Value_Properties struct {
 	DiffBackupIntervalInHours any
-	RetentionDays any
+	RetentionDays             any
 }
 
 type BackupshorttermretentionpoliciesBackupShortTermRetentionPolicy_Value struct {
@@ -14,13 +14,13 @@ type BackupshorttermretentionpoliciesBackupShortTermRetentionPolicy_Value struct
 
 type BackupshorttermretentionpoliciesBackupShortTermRetentionPolicyConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type BackupshorttermretentionpoliciesBackupShortTermRetentionPolicyAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The BackupShortTermRetentionPolicy items on this page
 	Value any
@@ -30,6 +30,6 @@ var BackupshorttermretentionpoliciesBackupShortTermRetentionPolicy = ubx.DataSou
 	WireType: "azure_sql_backupshorttermretentionpolicies_backup_short_term_retention_policy",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

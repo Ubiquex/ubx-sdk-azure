@@ -5,39 +5,39 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags struct {
 	Action any
-	Name any
-	Value any
+	Name   any
+	Value  any
 }
 
 type MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules_LogRules struct {
-	FilteringTags any
-	SendAadLogs any
-	SendActivityLogs any
+	FilteringTags        any
+	SendAadLogs          any
+	SendActivityLogs     any
 	SendSubscriptionLogs any
 }
 
 type MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules_MetricRules struct {
-	FilteringTags any
+	FilteringTags  any
 	SendingMetrics any
 }
 
 type MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList_TagRules struct {
-	LogRules any
-	MetricRules any
+	LogRules          any
+	MetricRules       any
 	ProvisioningState any
 }
 
 type MonitoredSubscriptionProperties_Value_Properties_MonitoredSubscriptionList struct {
-	Error any
-	Status any
+	Error          any
+	Status         any
 	SubscriptionId any
-	TagRules any
+	TagRules       any
 }
 
 type MonitoredSubscriptionProperties_Value_Properties struct {
 	MonitoredSubscriptionList any
-	Operation any
-	ProvisioningState any
+	Operation                 any
+	ProvisioningState         any
 }
 
 type MonitoredSubscriptionProperties_Value struct {

@@ -25,13 +25,13 @@ type Replica_Value_Properties_DataApi struct {
 }
 
 type Replica_Value_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentity struct {
-	IdentityType any
+	IdentityType                   any
 	UserAssignedIdentityResourceId any
 }
 
 type Replica_Value_Properties_Encryption_CustomerManagedKeyEncryption struct {
 	KeyEncryptionKeyIdentity any
-	KeyEncryptionKeyUrl any
+	KeyEncryptionKeyUrl      any
 }
 
 type Replica_Value_Properties_Encryption struct {
@@ -48,15 +48,15 @@ type Replica_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpo
 
 type Replica_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Replica_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Replica_Value_Properties_PrivateEndpointConnections struct {
@@ -65,17 +65,17 @@ type Replica_Value_Properties_PrivateEndpointConnections struct {
 
 type Replica_Value_Properties_Replica struct {
 	ReplicationState any
-	Role any
+	Role             any
 	SourceResourceId any
 }
 
 type Replica_Value_Properties_ReplicaParameters struct {
-	SourceLocation any
+	SourceLocation   any
 	SourceResourceId any
 }
 
 type Replica_Value_Properties_RestoreParameters struct {
-	PointInTimeUtc any
+	PointInTimeUtc   any
 	SourceResourceId any
 }
 
@@ -85,32 +85,32 @@ type Replica_Value_Properties_Sharding struct {
 
 type Replica_Value_Properties_Storage struct {
 	SizeGb any
-	Type any
+	Type   any
 }
 
 type Replica_Value_Properties struct {
-	Administrator any
-	AuthConfig any
-	Backup any
-	ClusterStatus any
-	Compute any
-	ConnectionString any
-	CreateMode any
-	DataApi any
-	Encryption any
-	HighAvailability any
-	InfrastructureVersion any
-	NetworkBypassMode any
-	PreviewFeatures any
+	Administrator              any
+	AuthConfig                 any
+	Backup                     any
+	ClusterStatus              any
+	Compute                    any
+	ConnectionString           any
+	CreateMode                 any
+	DataApi                    any
+	Encryption                 any
+	HighAvailability           any
+	InfrastructureVersion      any
+	NetworkBypassMode          any
+	PreviewFeatures            any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	Replica any
-	ReplicaParameters any
-	RestoreParameters any
-	ServerVersion any
-	Sharding any
-	Storage any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	Replica                    any
+	ReplicaParameters          any
+	RestoreParameters          any
+	ServerVersion              any
+	Sharding                   any
+	Storage                    any
 }
 
 type Replica_Value struct {

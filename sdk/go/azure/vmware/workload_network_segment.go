@@ -32,31 +32,31 @@ type WorkloadNetworkSegment_Properties struct {
 }
 
 var WorkloadNetworkSegment_Properties_PortVifFields = ubx.FieldMap{
-		"PortName": ubx.FieldSpec{WireName: "port_name"},
-	}
+	"PortName": ubx.FieldSpec{WireName: "port_name"},
+}
 
 var WorkloadNetworkSegment_Properties_SubnetFields = ubx.FieldMap{
-		"DhcpRanges": ubx.FieldSpec{WireName: "dhcp_ranges"},
-		"GatewayAddress": ubx.FieldSpec{WireName: "gateway_address"},
-	}
+	"DhcpRanges":     ubx.FieldSpec{WireName: "dhcp_ranges"},
+	"GatewayAddress": ubx.FieldSpec{WireName: "gateway_address"},
+}
 
 var WorkloadNetworkSegment_PropertiesFields = ubx.FieldMap{
-		"ConnectedGateway": ubx.FieldSpec{WireName: "connected_gateway"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"PortVif": ubx.FieldSpec{
-			WireName: "port_vif",
-			Kind: "list",
-			Fields: WorkloadNetworkSegment_Properties_PortVifFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Revision": ubx.FieldSpec{WireName: "revision"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: WorkloadNetworkSegment_Properties_SubnetFields,
-		},
-	}
+	"ConnectedGateway": ubx.FieldSpec{WireName: "connected_gateway"},
+	"DisplayName":      ubx.FieldSpec{WireName: "display_name"},
+	"PortVif": ubx.FieldSpec{
+		WireName: "port_vif",
+		Kind:     "list",
+		Fields:   WorkloadNetworkSegment_Properties_PortVifFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Revision":          ubx.FieldSpec{WireName: "revision"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   WorkloadNetworkSegment_Properties_SubnetFields,
+	},
+}
 
 type WorkloadNetworkSegmentConfig struct {
 	// NSX Segment Properties
@@ -73,8 +73,8 @@ var WorkloadNetworkSegment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: WorkloadNetworkSegment_PropertiesFields,
+			Kind:     "object",
+			Fields:   WorkloadNetworkSegment_PropertiesFields,
 		},
 	},
 }

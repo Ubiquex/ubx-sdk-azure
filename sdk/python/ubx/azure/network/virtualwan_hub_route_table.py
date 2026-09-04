@@ -49,8 +49,6 @@ _VirtualwanHubRouteTable_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanHubRouteTableConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Parameters for RouteTable.
     properties: Any = None
 
@@ -64,7 +62,6 @@ class VirtualwanHubRouteTableAttrs:
 VirtualwanHubRouteTable = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_hub_route_table",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -13,10 +13,10 @@ type SuppressionContract_Properties struct {
 }
 
 var SuppressionContract_PropertiesFields = ubx.FieldMap{
-		"ExpirationTimeStamp": ubx.FieldSpec{WireName: "expiration_time_stamp"},
-		"SuppressionId": ubx.FieldSpec{WireName: "suppression_id"},
-		"Ttl": ubx.FieldSpec{WireName: "ttl"},
-	}
+	"ExpirationTimeStamp": ubx.FieldSpec{WireName: "expiration_time_stamp"},
+	"SuppressionId":       ubx.FieldSpec{WireName: "suppression_id"},
+	"Ttl":                 ubx.FieldSpec{WireName: "ttl"},
+}
 
 type SuppressionContractConfig struct {
 	// The properties of the suppression.
@@ -37,8 +37,8 @@ var SuppressionContract = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SuppressionContract_PropertiesFields,
+			Kind:     "object",
+			Fields:   SuppressionContract_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

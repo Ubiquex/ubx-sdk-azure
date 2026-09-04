@@ -6,16 +6,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type DtlVirtualNetwork_Properties_AllowedSubnets struct {
 	AllowPublicIp any
 	LabSubnetName any
-	ResourceId any
+	ResourceId    any
 }
 
 type DtlVirtualNetwork_Properties_ExternalSubnets struct {
-	Id any
+	Id   any
 	Name any
 }
 
 type DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration_AllowedPorts struct {
-	BackendPort any
+	BackendPort       any
 	TransportProtocol any
 }
 
@@ -24,12 +24,12 @@ type DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfigura
 }
 
 type DtlVirtualNetwork_Properties_SubnetOverrides struct {
-	LabSubnetName any
-	ResourceId any
+	LabSubnetName                      any
+	ResourceId                         any
 	SharedPublicIpAddressConfiguration any
-	UseInVmCreationPermission any
-	UsePublicIpAddressPermission any
-	VirtualNetworkPoolName any
+	UseInVmCreationPermission          any
+	UsePublicIpAddressPermission       any
+	VirtualNetworkPoolName             any
 }
 
 type DtlVirtualNetwork_Properties struct {
@@ -52,64 +52,64 @@ type DtlVirtualNetwork_Properties struct {
 }
 
 var DtlVirtualNetwork_Properties_AllowedSubnetsFields = ubx.FieldMap{
-		"AllowPublicIp": ubx.FieldSpec{WireName: "allow_public_ip"},
-		"LabSubnetName": ubx.FieldSpec{WireName: "lab_subnet_name"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"AllowPublicIp": ubx.FieldSpec{WireName: "allow_public_ip"},
+	"LabSubnetName": ubx.FieldSpec{WireName: "lab_subnet_name"},
+	"ResourceId":    ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var DtlVirtualNetwork_Properties_ExternalSubnetsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration_AllowedPortsFields = ubx.FieldMap{
-		"BackendPort": ubx.FieldSpec{WireName: "backend_port"},
-		"TransportProtocol": ubx.FieldSpec{WireName: "transport_protocol"},
-	}
+	"BackendPort":       ubx.FieldSpec{WireName: "backend_port"},
+	"TransportProtocol": ubx.FieldSpec{WireName: "transport_protocol"},
+}
 
 var DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfigurationFields = ubx.FieldMap{
-		"AllowedPorts": ubx.FieldSpec{
-			WireName: "allowed_ports",
-			Kind: "list",
-			Fields: DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration_AllowedPortsFields,
-		},
-	}
+	"AllowedPorts": ubx.FieldSpec{
+		WireName: "allowed_ports",
+		Kind:     "list",
+		Fields:   DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration_AllowedPortsFields,
+	},
+}
 
 var DtlVirtualNetwork_Properties_SubnetOverridesFields = ubx.FieldMap{
-		"LabSubnetName": ubx.FieldSpec{WireName: "lab_subnet_name"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"SharedPublicIpAddressConfiguration": ubx.FieldSpec{
-			WireName: "shared_public_ip_address_configuration",
-			Kind: "object",
-			Fields: DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfigurationFields,
-		},
-		"UseInVmCreationPermission": ubx.FieldSpec{WireName: "use_in_vm_creation_permission"},
-		"UsePublicIpAddressPermission": ubx.FieldSpec{WireName: "use_public_ip_address_permission"},
-		"VirtualNetworkPoolName": ubx.FieldSpec{WireName: "virtual_network_pool_name"},
-	}
+	"LabSubnetName": ubx.FieldSpec{WireName: "lab_subnet_name"},
+	"ResourceId":    ubx.FieldSpec{WireName: "resource_id"},
+	"SharedPublicIpAddressConfiguration": ubx.FieldSpec{
+		WireName: "shared_public_ip_address_configuration",
+		Kind:     "object",
+		Fields:   DtlVirtualNetwork_Properties_SubnetOverrides_SharedPublicIpAddressConfigurationFields,
+	},
+	"UseInVmCreationPermission":    ubx.FieldSpec{WireName: "use_in_vm_creation_permission"},
+	"UsePublicIpAddressPermission": ubx.FieldSpec{WireName: "use_public_ip_address_permission"},
+	"VirtualNetworkPoolName":       ubx.FieldSpec{WireName: "virtual_network_pool_name"},
+}
 
 var DtlVirtualNetwork_PropertiesFields = ubx.FieldMap{
-		"AllowedSubnets": ubx.FieldSpec{
-			WireName: "allowed_subnets",
-			Kind: "list",
-			Fields: DtlVirtualNetwork_Properties_AllowedSubnetsFields,
-		},
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ExternalProviderResourceId": ubx.FieldSpec{WireName: "external_provider_resource_id"},
-		"ExternalSubnets": ubx.FieldSpec{
-			WireName: "external_subnets",
-			Kind: "list",
-			Fields: DtlVirtualNetwork_Properties_ExternalSubnetsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SubnetOverrides": ubx.FieldSpec{
-			WireName: "subnet_overrides",
-			Kind: "list",
-			Fields: DtlVirtualNetwork_Properties_SubnetOverridesFields,
-		},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-	}
+	"AllowedSubnets": ubx.FieldSpec{
+		WireName: "allowed_subnets",
+		Kind:     "list",
+		Fields:   DtlVirtualNetwork_Properties_AllowedSubnetsFields,
+	},
+	"CreatedDate":                ubx.FieldSpec{WireName: "created_date"},
+	"Description":                ubx.FieldSpec{WireName: "description"},
+	"ExternalProviderResourceId": ubx.FieldSpec{WireName: "external_provider_resource_id"},
+	"ExternalSubnets": ubx.FieldSpec{
+		WireName: "external_subnets",
+		Kind:     "list",
+		Fields:   DtlVirtualNetwork_Properties_ExternalSubnetsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SubnetOverrides": ubx.FieldSpec{
+		WireName: "subnet_overrides",
+		Kind:     "list",
+		Fields:   DtlVirtualNetwork_Properties_SubnetOverridesFields,
+	},
+	"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
+}
 
 type DtlVirtualNetworkConfig struct {
 	// The geo-location where the resource lives
@@ -139,8 +139,8 @@ var DtlVirtualNetwork = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlVirtualNetwork_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlVirtualNetwork_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

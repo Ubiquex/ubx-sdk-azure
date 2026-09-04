@@ -68,27 +68,10 @@ _PrivateEndpointConnection_PropertiesFields = {
     "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
 }
 
-_PrivateEndpointConnection_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class PrivateEndpointConnectionConfig:
-    # The resource identifier.
-    id: Any = None
-    # The resource name.
-    name: Any = None
     # The properties of a private endpoint connection.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    # The resource type.
-    type: Any = None
 
 @dataclasses.dataclass
 class PrivateEndpointConnectionAttrs:
@@ -106,18 +89,10 @@ class PrivateEndpointConnectionAttrs:
 PrivateEndpointConnection = ubx.ResourceBinding(
     wire_type="azure_digitaltwins_private_endpoint_connection",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_PrivateEndpointConnection_PropertiesFields,
         ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_PrivateEndpointConnection_SystemDataFields,
-        ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

@@ -33,31 +33,31 @@ type OpenapiConnectedEnvironmentStorage_Properties struct {
 }
 
 var OpenapiConnectedEnvironmentStorage_Properties_AzureFile_AccountKeyVaultPropertiesFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
-	}
+	"Identity":    ubx.FieldSpec{WireName: "identity"},
+	"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
+}
 
 var OpenapiConnectedEnvironmentStorage_Properties_AzureFileFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"AccountKey": ubx.FieldSpec{WireName: "account_key"},
-		"AccountKeyVaultProperties": ubx.FieldSpec{
-			WireName: "account_key_vault_properties",
-			Kind: "object",
-			Fields: OpenapiConnectedEnvironmentStorage_Properties_AzureFile_AccountKeyVaultPropertiesFields,
-		},
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"ShareName": ubx.FieldSpec{WireName: "share_name"},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"AccountKey": ubx.FieldSpec{WireName: "account_key"},
+	"AccountKeyVaultProperties": ubx.FieldSpec{
+		WireName: "account_key_vault_properties",
+		Kind:     "object",
+		Fields:   OpenapiConnectedEnvironmentStorage_Properties_AzureFile_AccountKeyVaultPropertiesFields,
+	},
+	"AccountName": ubx.FieldSpec{WireName: "account_name"},
+	"ShareName":   ubx.FieldSpec{WireName: "share_name"},
+}
 
 var OpenapiConnectedEnvironmentStorage_PropertiesFields = ubx.FieldMap{
-		"AzureFile": ubx.FieldSpec{
-			WireName: "azure_file",
-			Kind: "object",
-			Fields: OpenapiConnectedEnvironmentStorage_Properties_AzureFileFields,
-		},
-		"DeploymentErrors": ubx.FieldSpec{WireName: "deployment_errors"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AzureFile": ubx.FieldSpec{
+		WireName: "azure_file",
+		Kind:     "object",
+		Fields:   OpenapiConnectedEnvironmentStorage_Properties_AzureFileFields,
+	},
+	"DeploymentErrors":  ubx.FieldSpec{WireName: "deployment_errors"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiConnectedEnvironmentStorageConfig struct {
 	// Storage properties
@@ -74,8 +74,8 @@ var OpenapiConnectedEnvironmentStorage = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiConnectedEnvironmentStorage_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiConnectedEnvironmentStorage_PropertiesFields,
 		},
 	},
 }

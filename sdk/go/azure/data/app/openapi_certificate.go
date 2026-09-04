@@ -4,24 +4,24 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCertificate_Value_Properties_CertificateKeyVaultProperties struct {
-	Identity any
+	Identity    any
 	KeyVaultUrl any
 }
 
 type OpenapiCertificate_Value_Properties struct {
 	CertificateKeyVaultProperties any
-	DeploymentErrors any
-	ExpirationDate any
-	IssueDate any
-	Issuer any
-	Password any
-	ProvisioningState any
-	PublicKeyHash any
-	SubjectAlternativeNames any
-	SubjectName any
-	Thumbprint any
-	Valid any
-	Value any
+	DeploymentErrors              any
+	ExpirationDate                any
+	IssueDate                     any
+	Issuer                        any
+	Password                      any
+	ProvisioningState             any
+	PublicKeyHash                 any
+	SubjectAlternativeNames       any
+	SubjectName                   any
+	Thumbprint                    any
+	Valid                         any
+	Value                         any
 }
 
 type OpenapiCertificate_Value struct {

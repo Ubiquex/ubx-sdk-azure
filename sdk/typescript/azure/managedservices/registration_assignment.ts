@@ -198,16 +198,8 @@ const RegistrationAssignment_PropertiesFields: FieldMap = {
 };
 
 export interface RegistrationAssignmentConfig {
-  /** The fully qualified path of the registration assignment. */
-  id?: string | Computed<string>;
-  /** The name of the registration assignment. */
-  name?: string | Computed<string>;
   /** The properties of the registration assignment. */
   properties?: RegistrationAssignment_Properties | Computed<RegistrationAssignment_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: RegistrationAssignment_Properties_RegistrationDefinition_SystemData | Computed<RegistrationAssignment_Properties_RegistrationDefinition_SystemData>;
-  /** The type of the Azure resource (Microsoft.ManagedServices/registrationAssignments). */
-  type?: string | Computed<string>;
   /** path parameter, not part of the API's own resource representation */
   scope: string | Computed<string>;
 }
@@ -230,19 +222,11 @@ export interface RegistrationAssignmentAttrs {
 export const RegistrationAssignment: ResourceBinding<RegistrationAssignmentConfig, RegistrationAssignmentAttrs> = {
   wireType: "azure_managedservices_registration_assignment",
   fields: {
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: RegistrationAssignment_PropertiesFields,
     },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: RegistrationAssignment_Properties_RegistrationDefinition_SystemDataFields,
-    },
-    type: "type",
     scope: "scope",
   },
 };

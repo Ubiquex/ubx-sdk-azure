@@ -4,7 +4,7 @@ package datamigration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_AzureBlob_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -65,28 +65,28 @@ type SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration struct {
 }
 
 type SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSets_ListOfBackupFiles struct {
-	CopyDuration any
-	CopyThroughput any
-	DataRead any
-	DataWritten any
+	CopyDuration         any
+	CopyThroughput       any
+	DataRead             any
+	DataWritten          any
 	FamilySequenceNumber any
-	FileName any
-	Status any
-	TotalSize any
+	FileName             any
+	Status               any
+	TotalSize            any
 }
 
 type SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSets struct {
-	BackupFinishDate any
-	BackupSetId any
-	BackupStartDate any
-	BackupType any
-	FamilyCount any
-	FirstLsn any
+	BackupFinishDate   any
+	BackupSetId        any
+	BackupStartDate    any
+	BackupType         any
+	FamilyCount        any
+	FirstLsn           any
 	HasBackupChecksums any
-	IgnoreReasons any
-	IsBackupRestored any
-	LastLsn any
-	ListOfBackupFiles any
+	IgnoreReasons      any
+	IsBackupRestored   any
+	LastLsn            any
+	ListOfBackupFiles  any
 }
 
 type SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails struct {
@@ -135,150 +135,150 @@ type SqlmigrationDatabaseMigrationSqlMi_Properties struct {
 }
 
 var SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_AzureBlob_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_AzureBlob_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_AzureBlob_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_AzureBlob_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_AzureBlobFields = ubx.FieldMap{
-		"AccountKey": ubx.FieldSpec{WireName: "account_key"},
-		"AuthType": ubx.FieldSpec{WireName: "auth_type"},
-		"BlobContainerName": ubx.FieldSpec{WireName: "blob_container_name"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_AzureBlob_IdentityFields,
-		},
-		"StorageAccountResourceId": ubx.FieldSpec{WireName: "storage_account_resource_id"},
-	}
+	"AccountKey":        ubx.FieldSpec{WireName: "account_key"},
+	"AuthType":          ubx.FieldSpec{WireName: "auth_type"},
+	"BlobContainerName": ubx.FieldSpec{WireName: "blob_container_name"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_AzureBlob_IdentityFields,
+	},
+	"StorageAccountResourceId": ubx.FieldSpec{WireName: "storage_account_resource_id"},
+}
 
 var SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_FileShareFields = ubx.FieldMap{
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"Password": ubx.FieldSpec{WireName: "password"},
+	"Path":     ubx.FieldSpec{WireName: "path"},
+	"Username": ubx.FieldSpec{WireName: "username"},
+}
 
 var SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocationFields = ubx.FieldMap{
-		"AzureBlob": ubx.FieldSpec{
-			WireName: "azure_blob",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_AzureBlobFields,
-		},
-		"FileShare": ubx.FieldSpec{
-			WireName: "file_share",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_FileShareFields,
-		},
-		"FileStorageType": ubx.FieldSpec{WireName: "file_storage_type"},
-	}
+	"AzureBlob": ubx.FieldSpec{
+		WireName: "azure_blob",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_AzureBlobFields,
+	},
+	"FileShare": ubx.FieldSpec{
+		WireName: "file_share",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocation_FileShareFields,
+	},
+	"FileStorageType": ubx.FieldSpec{WireName: "file_storage_type"},
+}
 
 var SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_TargetLocationFields = ubx.FieldMap{
-		"AccountKey": ubx.FieldSpec{WireName: "account_key"},
-		"StorageAccountResourceId": ubx.FieldSpec{WireName: "storage_account_resource_id"},
-	}
+	"AccountKey":               ubx.FieldSpec{WireName: "account_key"},
+	"StorageAccountResourceId": ubx.FieldSpec{WireName: "storage_account_resource_id"},
+}
 
 var SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfigurationFields = ubx.FieldMap{
-		"SourceLocation": ubx.FieldSpec{
-			WireName: "source_location",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocationFields,
-		},
-		"TargetLocation": ubx.FieldSpec{
-			WireName: "target_location",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_TargetLocationFields,
-		},
-	}
+	"SourceLocation": ubx.FieldSpec{
+		WireName: "source_location",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_SourceLocationFields,
+	},
+	"TargetLocation": ubx.FieldSpec{
+		WireName: "target_location",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfiguration_TargetLocationFields,
+	},
+}
 
 var SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSets_ListOfBackupFilesFields = ubx.FieldMap{
-		"CopyDuration": ubx.FieldSpec{WireName: "copy_duration"},
-		"CopyThroughput": ubx.FieldSpec{WireName: "copy_throughput"},
-		"DataRead": ubx.FieldSpec{WireName: "data_read"},
-		"DataWritten": ubx.FieldSpec{WireName: "data_written"},
-		"FamilySequenceNumber": ubx.FieldSpec{WireName: "family_sequence_number"},
-		"FileName": ubx.FieldSpec{WireName: "file_name"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TotalSize": ubx.FieldSpec{WireName: "total_size"},
-	}
+	"CopyDuration":         ubx.FieldSpec{WireName: "copy_duration"},
+	"CopyThroughput":       ubx.FieldSpec{WireName: "copy_throughput"},
+	"DataRead":             ubx.FieldSpec{WireName: "data_read"},
+	"DataWritten":          ubx.FieldSpec{WireName: "data_written"},
+	"FamilySequenceNumber": ubx.FieldSpec{WireName: "family_sequence_number"},
+	"FileName":             ubx.FieldSpec{WireName: "file_name"},
+	"Status":               ubx.FieldSpec{WireName: "status"},
+	"TotalSize":            ubx.FieldSpec{WireName: "total_size"},
+}
 
 var SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSetsFields = ubx.FieldMap{
-		"BackupFinishDate": ubx.FieldSpec{WireName: "backup_finish_date"},
-		"BackupSetId": ubx.FieldSpec{WireName: "backup_set_id"},
-		"BackupStartDate": ubx.FieldSpec{WireName: "backup_start_date"},
-		"BackupType": ubx.FieldSpec{WireName: "backup_type"},
-		"FamilyCount": ubx.FieldSpec{WireName: "family_count"},
-		"FirstLsn": ubx.FieldSpec{WireName: "first_lsn"},
-		"HasBackupChecksums": ubx.FieldSpec{WireName: "has_backup_checksums"},
-		"IgnoreReasons": ubx.FieldSpec{WireName: "ignore_reasons"},
-		"IsBackupRestored": ubx.FieldSpec{WireName: "is_backup_restored"},
-		"LastLsn": ubx.FieldSpec{WireName: "last_lsn"},
-		"ListOfBackupFiles": ubx.FieldSpec{
-			WireName: "list_of_backup_files",
-			Kind: "list",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSets_ListOfBackupFilesFields,
-		},
-	}
+	"BackupFinishDate":   ubx.FieldSpec{WireName: "backup_finish_date"},
+	"BackupSetId":        ubx.FieldSpec{WireName: "backup_set_id"},
+	"BackupStartDate":    ubx.FieldSpec{WireName: "backup_start_date"},
+	"BackupType":         ubx.FieldSpec{WireName: "backup_type"},
+	"FamilyCount":        ubx.FieldSpec{WireName: "family_count"},
+	"FirstLsn":           ubx.FieldSpec{WireName: "first_lsn"},
+	"HasBackupChecksums": ubx.FieldSpec{WireName: "has_backup_checksums"},
+	"IgnoreReasons":      ubx.FieldSpec{WireName: "ignore_reasons"},
+	"IsBackupRestored":   ubx.FieldSpec{WireName: "is_backup_restored"},
+	"LastLsn":            ubx.FieldSpec{WireName: "last_lsn"},
+	"ListOfBackupFiles": ubx.FieldSpec{
+		WireName: "list_of_backup_files",
+		Kind:     "list",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSets_ListOfBackupFilesFields,
+	},
+}
 
 var SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetailsFields = ubx.FieldMap{
-		"ActiveBackupSets": ubx.FieldSpec{
-			WireName: "active_backup_sets",
-			Kind: "list",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSetsFields,
-		},
-		"BlobContainerName": ubx.FieldSpec{WireName: "blob_container_name"},
-		"CompleteRestoreErrorMessage": ubx.FieldSpec{WireName: "complete_restore_error_message"},
-		"CurrentRestoringFilename": ubx.FieldSpec{WireName: "current_restoring_filename"},
-		"FileUploadBlockingErrors": ubx.FieldSpec{WireName: "file_upload_blocking_errors"},
-		"FullBackupSetInfo": ubx.FieldSpec{
-			WireName: "full_backup_set_info",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSetsFields,
-		},
-		"InvalidFiles": ubx.FieldSpec{WireName: "invalid_files"},
-		"IsFullBackupRestored": ubx.FieldSpec{WireName: "is_full_backup_restored"},
-		"LastRestoredBackupSetInfo": ubx.FieldSpec{
-			WireName: "last_restored_backup_set_info",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSetsFields,
-		},
-		"LastRestoredFilename": ubx.FieldSpec{WireName: "last_restored_filename"},
-		"MigrationState": ubx.FieldSpec{WireName: "migration_state"},
-		"PendingLogBackupsCount": ubx.FieldSpec{WireName: "pending_log_backups_count"},
-		"RestoreBlockingReason": ubx.FieldSpec{WireName: "restore_blocking_reason"},
-	}
+	"ActiveBackupSets": ubx.FieldSpec{
+		WireName: "active_backup_sets",
+		Kind:     "list",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSetsFields,
+	},
+	"BlobContainerName":           ubx.FieldSpec{WireName: "blob_container_name"},
+	"CompleteRestoreErrorMessage": ubx.FieldSpec{WireName: "complete_restore_error_message"},
+	"CurrentRestoringFilename":    ubx.FieldSpec{WireName: "current_restoring_filename"},
+	"FileUploadBlockingErrors":    ubx.FieldSpec{WireName: "file_upload_blocking_errors"},
+	"FullBackupSetInfo": ubx.FieldSpec{
+		WireName: "full_backup_set_info",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSetsFields,
+	},
+	"InvalidFiles":         ubx.FieldSpec{WireName: "invalid_files"},
+	"IsFullBackupRestored": ubx.FieldSpec{WireName: "is_full_backup_restored"},
+	"LastRestoredBackupSetInfo": ubx.FieldSpec{
+		WireName: "last_restored_backup_set_info",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetails_ActiveBackupSetsFields,
+	},
+	"LastRestoredFilename":   ubx.FieldSpec{WireName: "last_restored_filename"},
+	"MigrationState":         ubx.FieldSpec{WireName: "migration_state"},
+	"PendingLogBackupsCount": ubx.FieldSpec{WireName: "pending_log_backups_count"},
+	"RestoreBlockingReason":  ubx.FieldSpec{WireName: "restore_blocking_reason"},
+}
 
 var SqlmigrationDatabaseMigrationSqlMi_Properties_OfflineConfigurationFields = ubx.FieldMap{
-		"LastBackupName": ubx.FieldSpec{WireName: "last_backup_name"},
-		"Offline": ubx.FieldSpec{WireName: "offline"},
-	}
+	"LastBackupName": ubx.FieldSpec{WireName: "last_backup_name"},
+	"Offline":        ubx.FieldSpec{WireName: "offline"},
+}
 
 var SqlmigrationDatabaseMigrationSqlMi_PropertiesFields = ubx.FieldMap{
-		"BackupConfiguration": ubx.FieldSpec{
-			WireName: "backup_configuration",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfigurationFields,
-		},
-		"MigrationStatusDetails": ubx.FieldSpec{
-			WireName: "migration_status_details",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetailsFields,
-		},
-		"OfflineConfiguration": ubx.FieldSpec{
-			WireName: "offline_configuration",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_Properties_OfflineConfigurationFields,
-		},
-	}
+	"BackupConfiguration": ubx.FieldSpec{
+		WireName: "backup_configuration",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_BackupConfigurationFields,
+	},
+	"MigrationStatusDetails": ubx.FieldSpec{
+		WireName: "migration_status_details",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_MigrationStatusDetailsFields,
+	},
+	"OfflineConfiguration": ubx.FieldSpec{
+		WireName: "offline_configuration",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlMi_Properties_OfflineConfigurationFields,
+	},
+}
 
 type SqlmigrationDatabaseMigrationSqlMiConfig struct {
 	// Database Migration Resource properties for SQL Managed Instance.
@@ -295,8 +295,8 @@ var SqlmigrationDatabaseMigrationSqlMi = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlMi_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlmigrationDatabaseMigrationSqlMi_PropertiesFields,
 		},
 	},
 }

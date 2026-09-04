@@ -17,9 +17,9 @@ type OpenapiWorkerPoolResource_Properties struct {
 }
 
 type OpenapiWorkerPoolResource_Sku_Capabilities struct {
-	Name any
+	Name   any
 	Reason any
-	Value any
+	Value  any
 }
 
 type OpenapiWorkerPoolResource_Sku_SkuCapacity struct {
@@ -55,45 +55,45 @@ type OpenapiWorkerPoolResource_Sku struct {
 }
 
 var OpenapiWorkerPoolResource_PropertiesFields = ubx.FieldMap{
-		"ComputeMode": ubx.FieldSpec{WireName: "compute_mode"},
-		"InstanceNames": ubx.FieldSpec{WireName: "instance_names"},
-		"WorkerCount": ubx.FieldSpec{WireName: "worker_count"},
-		"WorkerSize": ubx.FieldSpec{WireName: "worker_size"},
-		"WorkerSizeId": ubx.FieldSpec{WireName: "worker_size_id"},
-	}
+	"ComputeMode":   ubx.FieldSpec{WireName: "compute_mode"},
+	"InstanceNames": ubx.FieldSpec{WireName: "instance_names"},
+	"WorkerCount":   ubx.FieldSpec{WireName: "worker_count"},
+	"WorkerSize":    ubx.FieldSpec{WireName: "worker_size"},
+	"WorkerSizeId":  ubx.FieldSpec{WireName: "worker_size_id"},
+}
 
 var OpenapiWorkerPoolResource_Sku_CapabilitiesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Reason": ubx.FieldSpec{WireName: "reason"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Reason": ubx.FieldSpec{WireName: "reason"},
+	"Value":  ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiWorkerPoolResource_Sku_SkuCapacityFields = ubx.FieldMap{
-		"Default": ubx.FieldSpec{WireName: "default"},
-		"ElasticMaximum": ubx.FieldSpec{WireName: "elastic_maximum"},
-		"Maximum": ubx.FieldSpec{WireName: "maximum"},
-		"Minimum": ubx.FieldSpec{WireName: "minimum"},
-		"ScaleType": ubx.FieldSpec{WireName: "scale_type"},
-	}
+	"Default":        ubx.FieldSpec{WireName: "default"},
+	"ElasticMaximum": ubx.FieldSpec{WireName: "elastic_maximum"},
+	"Maximum":        ubx.FieldSpec{WireName: "maximum"},
+	"Minimum":        ubx.FieldSpec{WireName: "minimum"},
+	"ScaleType":      ubx.FieldSpec{WireName: "scale_type"},
+}
 
 var OpenapiWorkerPoolResource_SkuFields = ubx.FieldMap{
-		"Capabilities": ubx.FieldSpec{
-			WireName: "capabilities",
-			Kind: "list",
-			Fields: OpenapiWorkerPoolResource_Sku_CapabilitiesFields,
-		},
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Locations": ubx.FieldSpec{WireName: "locations"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"SkuCapacity": ubx.FieldSpec{
-			WireName: "sku_capacity",
-			Kind: "object",
-			Fields: OpenapiWorkerPoolResource_Sku_SkuCapacityFields,
-		},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capabilities": ubx.FieldSpec{
+		WireName: "capabilities",
+		Kind:     "list",
+		Fields:   OpenapiWorkerPoolResource_Sku_CapabilitiesFields,
+	},
+	"Capacity":  ubx.FieldSpec{WireName: "capacity"},
+	"Family":    ubx.FieldSpec{WireName: "family"},
+	"Locations": ubx.FieldSpec{WireName: "locations"},
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"Size":      ubx.FieldSpec{WireName: "size"},
+	"SkuCapacity": ubx.FieldSpec{
+		WireName: "sku_capacity",
+		Kind:     "object",
+		Fields:   OpenapiWorkerPoolResource_Sku_SkuCapacityFields,
+	},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type OpenapiWorkerPoolResourceConfig struct {
 	// Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
@@ -123,13 +123,13 @@ var OpenapiWorkerPoolResource = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiWorkerPoolResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiWorkerPoolResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiWorkerPoolResource_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiWorkerPoolResource_SkuFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

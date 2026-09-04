@@ -14,10 +14,6 @@ const GeobackuppoliciesGeoBackupPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface GeobackuppoliciesGeoBackupPolicyConfig {
-  /** Kind of geo backup policy. This is metadata used for the Azure portal experience. */
-  kind?: string | Computed<string>;
-  /** Backup policy location. */
-  location?: string | Computed<string>;
   /** The properties of the geo backup policy. */
   properties?: GeobackuppoliciesGeoBackupPolicy_Properties | Computed<GeobackuppoliciesGeoBackupPolicy_Properties>;
 }
@@ -34,8 +30,6 @@ export interface GeobackuppoliciesGeoBackupPolicyAttrs {
 export const GeobackuppoliciesGeoBackupPolicy: ResourceBinding<GeobackuppoliciesGeoBackupPolicyConfig, GeobackuppoliciesGeoBackupPolicyAttrs> = {
   wireType: "azure_sql_geobackuppolicies_geo_backup_policy",
   fields: {
-    kind: "kind",
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

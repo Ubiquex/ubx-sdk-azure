@@ -215,16 +215,9 @@ const Account_PropertiesFields: FieldMap = {
   publicNetworkAccess: "public_network_access",
 };
 
-const Account_SkuFields: FieldMap = {
-  capacity: "capacity",
-  name: "name",
-};
-
 export interface AccountConfig {
   /** The account properties */
   properties?: Account_Properties | Computed<Account_Properties>;
-  /** Gets or sets the Sku. */
-  sku?: Account_Sku | Computed<Account_Sku>;
 }
 
 export interface AccountAttrs {
@@ -241,11 +234,6 @@ export const Account: ResourceBinding<AccountConfig, AccountAttrs> = {
       wireName: "properties",
       kind: "object",
       fields: Account_PropertiesFields,
-    },
-    sku: {
-      wireName: "sku",
-      kind: "object",
-      fields: Account_SkuFields,
     },
   },
 };

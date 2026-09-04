@@ -4,14 +4,14 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimgatewaysGatewayContract_Value_Properties_LocationData struct {
-	City any
+	City            any
 	CountryOrRegion any
-	District any
-	Name any
+	District        any
+	Name            any
 }
 
 type ApimgatewaysGatewayContract_Value_Properties struct {
-	Description any
+	Description  any
 	LocationData any
 }
 
@@ -33,6 +33,5 @@ type ApimgatewaysGatewayContractAttrs struct {
 
 var ApimgatewaysGatewayContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimgateways_gateway_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -55,8 +55,6 @@ const Project_PropertiesFields: FieldMap = {
 };
 
 export interface ProjectConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: Project_Identity | Computed<Project_Identity>;
   /** The geo-location where the resource lives */
@@ -83,7 +81,6 @@ export interface ProjectAttrs {
 export const Project: ResourceBinding<ProjectConfig, ProjectAttrs> = {
   wireType: "azure_cognitiveservices_project",
   fields: {
-    etag: "etag",
     identity: {
       wireName: "identity",
       kind: "object",

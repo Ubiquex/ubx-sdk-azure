@@ -8,16 +8,22 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiVariable_Properties:
+    # Gets or sets the creation time.
+    creation_time: Any = None
     # Gets or sets the description of the variable.
     description: Any = None
     # Gets or sets the encrypted flag of the variable.
     is_encrypted: Any = None
+    # Gets or sets the last modified time.
+    last_modified_time: Any = None
     # Gets or sets the value of the variable.
     value: Any = None
 
 _OpenapiVariable_PropertiesFields = {
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
     "description": ubx.FieldSpec(wire_name="description"),
     "is_encrypted": ubx.FieldSpec(wire_name="is_encrypted"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
     "value": ubx.FieldSpec(wire_name="value"),
 }
 

@@ -25,31 +25,29 @@ type PrivateEndpointConnection_Properties struct {
 }
 
 var PrivateEndpointConnection_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 var PrivateEndpointConnection_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: PrivateEndpointConnection_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   PrivateEndpointConnection_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   PrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type PrivateEndpointConnectionConfig struct {
-	// The geo-location where the resource lives
-	Location any
 	// Properties of the private endpoint connection resource.
 	Properties any
 }
@@ -64,11 +62,10 @@ type PrivateEndpointConnectionAttrs struct {
 var PrivateEndpointConnection = ubx.ResourceBinding{
 	WireType: "azure_relay_private_endpoint_connection",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PrivateEndpointConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   PrivateEndpointConnection_PropertiesFields,
 		},
 	},
 }

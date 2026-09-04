@@ -12,7 +12,7 @@ type DeletedBackupVaultResource_Value_Properties_FeatureSettings_CrossRegionRest
 }
 
 type DeletedBackupVaultResource_Value_Properties_FeatureSettings struct {
-	CrossRegionRestoreSettings any
+	CrossRegionRestoreSettings       any
 	CrossSubscriptionRestoreSettings any
 }
 
@@ -25,21 +25,21 @@ type DeletedBackupVaultResource_Value_Properties_MonitoringSettings struct {
 }
 
 type DeletedBackupVaultResource_Value_Properties_ResourceDeletionInfo struct {
-	DeleteActivityId any
-	DeletionTime any
+	DeleteActivityId   any
+	DeletionTime       any
 	ScheduledPurgeTime any
 }
 
 type DeletedBackupVaultResource_Value_Properties_ResourceMoveDetails struct {
-	CompletionTimeUtc any
-	OperationId any
+	CompletionTimeUtc  any
+	OperationId        any
 	SourceResourcePath any
-	StartTimeUtc any
+	StartTimeUtc       any
 	TargetResourcePath any
 }
 
 type DeletedBackupVaultResource_Value_Properties_SecuritySettings_EncryptionSettings_KekIdentity struct {
-	IdentityId any
+	IdentityId   any
 	IdentityType any
 }
 
@@ -49,45 +49,45 @@ type DeletedBackupVaultResource_Value_Properties_SecuritySettings_EncryptionSett
 
 type DeletedBackupVaultResource_Value_Properties_SecuritySettings_EncryptionSettings struct {
 	InfrastructureEncryption any
-	KekIdentity any
-	KeyVaultProperties any
-	State any
+	KekIdentity              any
+	KeyVaultProperties       any
+	State                    any
 }
 
 type DeletedBackupVaultResource_Value_Properties_SecuritySettings_SoftDeleteSettings struct {
 	RetentionDurationInDays any
-	State any
+	State                   any
 }
 
 type DeletedBackupVaultResource_Value_Properties_SecuritySettings struct {
-	EncryptionSettings any
+	EncryptionSettings   any
 	ImmutabilitySettings any
-	SoftDeleteSettings any
+	SoftDeleteSettings   any
 }
 
 type DeletedBackupVaultResource_Value_Properties_StorageSettings struct {
 	DatastoreType any
-	Type any
+	Type          any
 }
 
 type DeletedBackupVaultResource_Value_Properties struct {
-	BcdrSecurityLevel any
-	CostManagementSettings any
-	FeatureSettings any
+	BcdrSecurityLevel               any
+	CostManagementSettings          any
+	FeatureSettings                 any
 	IsVaultProtectedByResourceGuard any
-	MonitoringSettings any
-	OriginalBackupVaultId any
-	OriginalBackupVaultName any
+	MonitoringSettings              any
+	OriginalBackupVaultId           any
+	OriginalBackupVaultName         any
 	OriginalBackupVaultResourcePath any
-	ProvisioningState any
-	ReplicatedRegions any
-	ResourceDeletionInfo any
-	ResourceGuardOperationRequests any
-	ResourceMoveDetails any
-	ResourceMoveState any
-	SecureScore any
-	SecuritySettings any
-	StorageSettings any
+	ProvisioningState               any
+	ReplicatedRegions               any
+	ResourceDeletionInfo            any
+	ResourceGuardOperationRequests  any
+	ResourceMoveDetails             any
+	ResourceMoveState               any
+	SecureScore                     any
+	SecuritySettings                any
+	StorageSettings                 any
 }
 
 type DeletedBackupVaultResource_Value struct {
@@ -106,6 +106,5 @@ type DeletedBackupVaultResourceAttrs struct {
 
 var DeletedBackupVaultResource = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_deleted_backup_vault_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

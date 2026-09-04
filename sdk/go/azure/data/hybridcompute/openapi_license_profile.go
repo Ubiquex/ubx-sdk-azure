@@ -17,38 +17,38 @@ type OpenapiLicenseProfile_Value_Properties_ProductProfile_Error_Details_Details
 
 type OpenapiLicenseProfile_Value_Properties_ProductProfile_Error_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type OpenapiLicenseProfile_Value_Properties_ProductProfile_Error struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type OpenapiLicenseProfile_Value_Properties_ProductProfile_ProductFeatures struct {
-	BillingEndDate any
-	BillingStartDate any
-	DisenrollmentDate any
-	EnrollmentDate any
-	Error any
-	Name any
+	BillingEndDate     any
+	BillingStartDate   any
+	DisenrollmentDate  any
+	EnrollmentDate     any
+	Error              any
+	Name               any
 	SubscriptionStatus any
 }
 
 type OpenapiLicenseProfile_Value_Properties_ProductProfile struct {
-	BillingEndDate any
-	BillingStartDate any
-	DisenrollmentDate any
-	EnrollmentDate any
-	Error any
-	ProductFeatures any
-	ProductType any
+	BillingEndDate     any
+	BillingStartDate   any
+	DisenrollmentDate  any
+	EnrollmentDate     any
+	Error              any
+	ProductFeatures    any
+	ProductType        any
 	SubscriptionStatus any
 }
 
@@ -57,8 +57,8 @@ type OpenapiLicenseProfile_Value_Properties_SoftwareAssurance struct {
 }
 
 type OpenapiLicenseProfile_Value_Properties struct {
-	EsuProfile any
-	ProductProfile any
+	EsuProfile        any
+	ProductProfile    any
 	ProvisioningState any
 	SoftwareAssurance any
 }

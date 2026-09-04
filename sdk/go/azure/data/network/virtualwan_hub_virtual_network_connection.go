@@ -8,49 +8,49 @@ type VirtualwanHubVirtualNetworkConnection_Value_Properties_ConnectionPolicy str
 }
 
 type VirtualwanHubVirtualNetworkConnection_Value_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids any
+	Ids    any
 	Labels any
 }
 
 type VirtualwanHubVirtualNetworkConnection_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
 type VirtualwanHubVirtualNetworkConnection_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes any
+	PropagateStaticRoutes          any
 	VnetLocalRouteOverrideCriteria any
 }
 
 type VirtualwanHubVirtualNetworkConnection_Value_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections any
-	StaticRoutes any
+	BgpConnections     any
+	StaticRoutes       any
 	StaticRoutesConfig any
 }
 
 type VirtualwanHubVirtualNetworkConnection_Value_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable any
-	InboundRouteMap any
-	OutboundRouteMap any
+	AssociatedRouteTable  any
+	InboundRouteMap       any
+	OutboundRouteMap      any
 	PropagatedRouteTables any
-	VnetRoutes any
+	VnetRoutes            any
 }
 
 type VirtualwanHubVirtualNetworkConnection_Value_Properties struct {
-	AllowHubToRemoteVnetTransit any
+	AllowHubToRemoteVnetTransit         any
 	AllowRemoteVnetToUseHubVnetGateways any
-	ConnectionPolicy any
-	EnableInternetSecurity any
-	EnableOnlyIpv6Peering any
-	ProvisioningState any
-	RemoteVirtualNetwork any
-	RoutingConfiguration any
+	ConnectionPolicy                    any
+	EnableInternetSecurity              any
+	EnableOnlyIpv6Peering               any
+	ProvisioningState                   any
+	RemoteVirtualNetwork                any
+	RoutingConfiguration                any
 }
 
 type VirtualwanHubVirtualNetworkConnection_Value struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
@@ -62,7 +62,7 @@ type VirtualwanHubVirtualNetworkConnectionAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The HubVirtualNetworkConnection items on this page
-	Value any
+	Value          any
 	VirtualHubName any
 }
 

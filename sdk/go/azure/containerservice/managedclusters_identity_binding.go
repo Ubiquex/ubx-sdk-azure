@@ -29,33 +29,31 @@ type ManagedclustersIdentityBinding_Properties struct {
 }
 
 var ManagedclustersIdentityBinding_Properties_ManagedIdentityFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"ClientId":   ubx.FieldSpec{WireName: "client_id"},
+	"ObjectId":   ubx.FieldSpec{WireName: "object_id"},
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+	"TenantId":   ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var ManagedclustersIdentityBinding_Properties_OidcIssuerFields = ubx.FieldMap{
-		"OidcIssuerUrl": ubx.FieldSpec{WireName: "oidc_issuer_url"},
-	}
+	"OidcIssuerUrl": ubx.FieldSpec{WireName: "oidc_issuer_url"},
+}
 
 var ManagedclustersIdentityBinding_PropertiesFields = ubx.FieldMap{
-		"ManagedIdentity": ubx.FieldSpec{
-			WireName: "managed_identity",
-			Kind: "object",
-			Fields: ManagedclustersIdentityBinding_Properties_ManagedIdentityFields,
-		},
-		"OidcIssuer": ubx.FieldSpec{
-			WireName: "oidc_issuer",
-			Kind: "object",
-			Fields: ManagedclustersIdentityBinding_Properties_OidcIssuerFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ManagedIdentity": ubx.FieldSpec{
+		WireName: "managed_identity",
+		Kind:     "object",
+		Fields:   ManagedclustersIdentityBinding_Properties_ManagedIdentityFields,
+	},
+	"OidcIssuer": ubx.FieldSpec{
+		WireName: "oidc_issuer",
+		Kind:     "object",
+		Fields:   ManagedclustersIdentityBinding_Properties_OidcIssuerFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ManagedclustersIdentityBindingConfig struct {
-	// If eTag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.
-	ETag any
 	// IdentityBinding properties.
 	Properties any
 }
@@ -70,11 +68,10 @@ type ManagedclustersIdentityBindingAttrs struct {
 var ManagedclustersIdentityBinding = ubx.ResourceBinding{
 	WireType: "azure_containerservice_managedclusters_identity_binding",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedclustersIdentityBinding_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedclustersIdentityBinding_PropertiesFields,
 		},
 	},
 }

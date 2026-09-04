@@ -35,10 +35,6 @@ _ServerkeysServerKey_PropertiesFields = {
 
 @dataclasses.dataclass
 class ServerkeysServerKeyConfig:
-    # Kind of encryption protector. This is metadata used for the Azure portal experience.
-    kind: Any = None
-    # Resource location.
-    location: Any = None
     # Properties for a server key execution.
     properties: Any = None
 
@@ -54,8 +50,6 @@ class ServerkeysServerKeyAttrs:
 ServerkeysServerKey = ubx.ResourceBinding(
     wire_type="azure_sql_serverkeys_server_key",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

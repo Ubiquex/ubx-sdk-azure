@@ -5,31 +5,40 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiConnectionType_Properties_FieldDefinitions struct {
 	IsEncrypted any
-	IsOptional any
-	Type any
+	IsOptional  any
+	Type        any
 }
 
 type OpenapiConnectionType_Properties struct {
+	// Gets the creation time.
+	CreationTime any
+	// Gets or sets the description.
+	Description any
 	// Gets or sets the field definitions of the connection type.
 	FieldDefinitions any
 	// Gets or sets a Boolean value to indicate if the connection type is global.
 	IsGlobal any
+	// Gets or sets the last modified time.
+	LastModifiedTime any
 }
 
 var OpenapiConnectionType_Properties_FieldDefinitionsFields = ubx.FieldMap{
-		"IsEncrypted": ubx.FieldSpec{WireName: "is_encrypted"},
-		"IsOptional": ubx.FieldSpec{WireName: "is_optional"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"IsEncrypted": ubx.FieldSpec{WireName: "is_encrypted"},
+	"IsOptional":  ubx.FieldSpec{WireName: "is_optional"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiConnectionType_PropertiesFields = ubx.FieldMap{
-		"FieldDefinitions": ubx.FieldSpec{
-			WireName: "field_definitions",
-			Kind: "map",
-			Fields: OpenapiConnectionType_Properties_FieldDefinitionsFields,
-		},
-		"IsGlobal": ubx.FieldSpec{WireName: "is_global"},
-	}
+	"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+	"Description":  ubx.FieldSpec{WireName: "description"},
+	"FieldDefinitions": ubx.FieldSpec{
+		WireName: "field_definitions",
+		Kind:     "map",
+		Fields:   OpenapiConnectionType_Properties_FieldDefinitionsFields,
+	},
+	"IsGlobal":         ubx.FieldSpec{WireName: "is_global"},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+}
 
 type OpenapiConnectionTypeConfig struct {
 	// Gets or sets the name of the connection type.
@@ -51,8 +60,8 @@ var OpenapiConnectionType = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiConnectionType_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiConnectionType_PropertiesFields,
 		},
 	},
 }

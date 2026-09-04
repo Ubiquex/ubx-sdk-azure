@@ -4,10 +4,10 @@ package communication
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSenderUsernameResource_Value_Properties struct {
-	DataLocation any
-	DisplayName any
+	DataLocation      any
+	DisplayName       any
 	ProvisioningState any
-	Username any
+	Username          any
 }
 
 type OpenapiSenderUsernameResource_Value struct {
@@ -15,12 +15,12 @@ type OpenapiSenderUsernameResource_Value struct {
 }
 
 type OpenapiSenderUsernameResourceConfig struct {
-	DomainName any
+	DomainName       any
 	EmailServiceName any
 }
 
 type OpenapiSenderUsernameResourceAttrs struct {
-	DomainName any
+	DomainName       any
 	EmailServiceName any
 	// The link to the next page of items
 	NextLink any
@@ -31,7 +31,7 @@ type OpenapiSenderUsernameResourceAttrs struct {
 var OpenapiSenderUsernameResource = ubx.DataSourceBinding{
 	WireType: "azure_communication_openapi_sender_username_resource",
 	Fields: ubx.FieldMap{
-		"DomainName": ubx.FieldSpec{WireName: "domain_name"},
+		"DomainName":       ubx.FieldSpec{WireName: "domain_name"},
 		"EmailServiceName": ubx.FieldSpec{WireName: "email_service_name"},
 	},
 }

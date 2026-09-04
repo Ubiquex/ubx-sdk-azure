@@ -577,15 +577,6 @@ const IotHubDescription_SkuFields: FieldMap = {
   tier: "tier",
 };
 
-const IotHubDescription_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface IotHubDescriptionConfig {
   /** The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention. */
   etag?: string | Computed<string>;
@@ -594,8 +585,6 @@ export interface IotHubDescriptionConfig {
   properties?: IotHubDescription_Properties | Computed<IotHubDescription_Properties>;
   /** Information about the SKU of the IoT hub. */
   sku: IotHubDescription_Sku | Computed<IotHubDescription_Sku>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: IotHubDescription_SystemData | Computed<IotHubDescription_SystemData>;
 }
 
 export interface IotHubDescriptionAttrs {
@@ -628,11 +617,6 @@ export const IotHubDescription: ResourceBinding<IotHubDescriptionConfig, IotHubD
       wireName: "sku",
       kind: "object",
       fields: IotHubDescription_SkuFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: IotHubDescription_SystemDataFields,
     },
   },
 };

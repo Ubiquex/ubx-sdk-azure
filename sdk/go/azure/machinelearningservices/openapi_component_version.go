@@ -11,9 +11,9 @@ type OpenapiComponentVersion_Properties struct {
 }
 
 var OpenapiComponentVersion_PropertiesFields = ubx.FieldMap{
-		"ComponentSpec": ubx.FieldSpec{WireName: "component_spec"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ComponentSpec":     ubx.FieldSpec{WireName: "component_spec"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiComponentVersionConfig struct {
 	// Definition of a component version: defines resources that span component types.
@@ -34,8 +34,8 @@ var OpenapiComponentVersion = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiComponentVersion_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiComponentVersion_PropertiesFields,
 		},
 		"Version": ubx.FieldSpec{WireName: "version"},
 	},

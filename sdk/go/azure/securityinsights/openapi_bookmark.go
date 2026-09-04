@@ -53,45 +53,45 @@ type OpenapiBookmark_Properties struct {
 }
 
 var OpenapiBookmark_Properties_CreatedByFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-	}
+	"Email":    ubx.FieldSpec{WireName: "email"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"ObjectId": ubx.FieldSpec{WireName: "object_id"},
+}
 
 var OpenapiBookmark_Properties_IncidentInfoFields = ubx.FieldMap{
-		"IncidentId": ubx.FieldSpec{WireName: "incident_id"},
-		"RelationName": ubx.FieldSpec{WireName: "relation_name"},
-		"Severity": ubx.FieldSpec{WireName: "severity"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-	}
+	"IncidentId":   ubx.FieldSpec{WireName: "incident_id"},
+	"RelationName": ubx.FieldSpec{WireName: "relation_name"},
+	"Severity":     ubx.FieldSpec{WireName: "severity"},
+	"Title":        ubx.FieldSpec{WireName: "title"},
+}
 
 var OpenapiBookmark_PropertiesFields = ubx.FieldMap{
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"CreatedBy": ubx.FieldSpec{
-			WireName: "created_by",
-			Kind: "object",
-			Fields: OpenapiBookmark_Properties_CreatedByFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"EventTime": ubx.FieldSpec{WireName: "event_time"},
-		"IncidentInfo": ubx.FieldSpec{
-			WireName: "incident_info",
-			Kind: "object",
-			Fields: OpenapiBookmark_Properties_IncidentInfoFields,
-		},
-		"Labels": ubx.FieldSpec{WireName: "labels"},
-		"Notes": ubx.FieldSpec{WireName: "notes"},
-		"Query": ubx.FieldSpec{WireName: "query"},
-		"QueryEndTime": ubx.FieldSpec{WireName: "query_end_time"},
-		"QueryResult": ubx.FieldSpec{WireName: "query_result"},
-		"QueryStartTime": ubx.FieldSpec{WireName: "query_start_time"},
-		"Updated": ubx.FieldSpec{WireName: "updated"},
-		"UpdatedBy": ubx.FieldSpec{
-			WireName: "updated_by",
-			Kind: "object",
-			Fields: OpenapiBookmark_Properties_CreatedByFields,
-		},
-	}
+	"Created": ubx.FieldSpec{WireName: "created"},
+	"CreatedBy": ubx.FieldSpec{
+		WireName: "created_by",
+		Kind:     "object",
+		Fields:   OpenapiBookmark_Properties_CreatedByFields,
+	},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"EventTime":   ubx.FieldSpec{WireName: "event_time"},
+	"IncidentInfo": ubx.FieldSpec{
+		WireName: "incident_info",
+		Kind:     "object",
+		Fields:   OpenapiBookmark_Properties_IncidentInfoFields,
+	},
+	"Labels":         ubx.FieldSpec{WireName: "labels"},
+	"Notes":          ubx.FieldSpec{WireName: "notes"},
+	"Query":          ubx.FieldSpec{WireName: "query"},
+	"QueryEndTime":   ubx.FieldSpec{WireName: "query_end_time"},
+	"QueryResult":    ubx.FieldSpec{WireName: "query_result"},
+	"QueryStartTime": ubx.FieldSpec{WireName: "query_start_time"},
+	"Updated":        ubx.FieldSpec{WireName: "updated"},
+	"UpdatedBy": ubx.FieldSpec{
+		WireName: "updated_by",
+		Kind:     "object",
+		Fields:   OpenapiBookmark_Properties_CreatedByFields,
+	},
+}
 
 type OpenapiBookmarkConfig struct {
 	// Etag of the azure resource
@@ -113,8 +113,8 @@ var OpenapiBookmark = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiBookmark_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiBookmark_PropertiesFields,
 		},
 	},
 }

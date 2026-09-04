@@ -9,12 +9,10 @@ type NetworkwatcherNetworkWatcher_Properties struct {
 }
 
 var NetworkwatcherNetworkWatcher_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type NetworkwatcherNetworkWatcherConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// The network watcher properties.
 	Properties any
 }
@@ -29,11 +27,10 @@ type NetworkwatcherNetworkWatcherAttrs struct {
 var NetworkwatcherNetworkWatcher = ubx.ResourceBinding{
 	WireType: "azure_network_networkwatcher_network_watcher",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkwatcherNetworkWatcher_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkwatcherNetworkWatcher_PropertiesFields,
 		},
 	},
 }

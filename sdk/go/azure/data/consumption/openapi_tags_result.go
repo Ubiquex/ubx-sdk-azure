@@ -4,7 +4,7 @@ package consumption
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiTagsResult_Properties_Tags struct {
-	Key any
+	Key   any
 	Value any
 }
 
@@ -26,7 +26,7 @@ type OpenapiTagsResultAttrs struct {
 	ETag any
 	// The properties of the tag.
 	Properties any
-	Scope any
+	Scope      any
 }
 
 var OpenapiTagsResult = ubx.DataSourceBinding{

@@ -8241,8 +8241,6 @@ const LoadbalancerLoadBalancer_PropertiesFields: FieldMap = {
 };
 
 export interface LoadbalancerLoadBalancerConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** ExtendedLocation complex type. */
   extendedLocation?: LoadbalancerLoadBalancer_ExtendedLocation | Computed<LoadbalancerLoadBalancer_ExtendedLocation>;
   /** Properties of the load balancer. */
@@ -8265,7 +8263,6 @@ export interface LoadbalancerLoadBalancerAttrs {
 export const LoadbalancerLoadBalancer: ResourceBinding<LoadbalancerLoadBalancerConfig, LoadbalancerLoadBalancerAttrs> = {
   wireType: "azure_network_loadbalancer_load_balancer",
   fields: {
-    etag: "etag",
     extendedLocation: {
       wireName: "extended_location",
       kind: "object",

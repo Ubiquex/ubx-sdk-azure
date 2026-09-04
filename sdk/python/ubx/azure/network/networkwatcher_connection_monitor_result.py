@@ -118,18 +118,26 @@ class NetworkwatcherConnectionMonitorResult_Properties_TestGroups:
 class NetworkwatcherConnectionMonitorResult_Properties:
     # Determines if the connection monitor will start automatically once created.
     auto_start: Any = None
+    # Type of connection monitor.
+    connection_monitor_type: Any = None
     # Describes the destination of connection monitor.
     destination: Any = None
     # List of connection monitor endpoints.
     endpoints: Any = None
     # Monitoring interval in seconds.
     monitoring_interval_in_seconds: Any = None
+    # The monitoring status of the connection monitor.
+    monitoring_status: Any = None
     # Optional notes to be associated with the connection monitor.
     notes: Any = None
     # List of connection monitor outputs.
     outputs: Any = None
+    # Provisioning states of a resource.
+    provisioning_state: Any = None
     # Describes the source of connection monitor.
     source: Any = None
+    # The date and time when the connection monitor was started.
+    start_time: Any = None
     # List of connection monitor test configurations.
     test_configurations: Any = None
     # List of connection monitor test groups.
@@ -288,6 +296,7 @@ _NetworkwatcherConnectionMonitorResult_Properties_TestGroupsFields = {
 
 _NetworkwatcherConnectionMonitorResult_PropertiesFields = {
     "auto_start": ubx.FieldSpec(wire_name="auto_start"),
+    "connection_monitor_type": ubx.FieldSpec(wire_name="connection_monitor_type"),
     "destination": ubx.FieldSpec(
         wire_name="destination",
         kind="object",
@@ -299,17 +308,20 @@ _NetworkwatcherConnectionMonitorResult_PropertiesFields = {
         fields=_NetworkwatcherConnectionMonitorResult_Properties_EndpointsFields,
     ),
     "monitoring_interval_in_seconds": ubx.FieldSpec(wire_name="monitoring_interval_in_seconds"),
+    "monitoring_status": ubx.FieldSpec(wire_name="monitoring_status"),
     "notes": ubx.FieldSpec(wire_name="notes"),
     "outputs": ubx.FieldSpec(
         wire_name="outputs",
         kind="list",
         fields=_NetworkwatcherConnectionMonitorResult_Properties_OutputsFields,
     ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
     "source": ubx.FieldSpec(
         wire_name="source",
         kind="object",
         fields=_NetworkwatcherConnectionMonitorResult_Properties_SourceFields,
     ),
+    "start_time": ubx.FieldSpec(wire_name="start_time"),
     "test_configurations": ubx.FieldSpec(
         wire_name="test_configurations",
         kind="list",

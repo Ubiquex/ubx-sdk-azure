@@ -6,16 +6,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type DtlVirtualNetwork_Value_Properties_AllowedSubnets struct {
 	AllowPublicIp any
 	LabSubnetName any
-	ResourceId any
+	ResourceId    any
 }
 
 type DtlVirtualNetwork_Value_Properties_ExternalSubnets struct {
-	Id any
+	Id   any
 	Name any
 }
 
 type DtlVirtualNetwork_Value_Properties_SubnetOverrides_SharedPublicIpAddressConfiguration_AllowedPorts struct {
-	BackendPort any
+	BackendPort       any
 	TransportProtocol any
 }
 
@@ -24,29 +24,29 @@ type DtlVirtualNetwork_Value_Properties_SubnetOverrides_SharedPublicIpAddressCon
 }
 
 type DtlVirtualNetwork_Value_Properties_SubnetOverrides struct {
-	LabSubnetName any
-	ResourceId any
+	LabSubnetName                      any
+	ResourceId                         any
 	SharedPublicIpAddressConfiguration any
-	UseInVmCreationPermission any
-	UsePublicIpAddressPermission any
-	VirtualNetworkPoolName any
+	UseInVmCreationPermission          any
+	UsePublicIpAddressPermission       any
+	VirtualNetworkPoolName             any
 }
 
 type DtlVirtualNetwork_Value_Properties struct {
-	AllowedSubnets any
-	CreatedDate any
-	Description any
+	AllowedSubnets             any
+	CreatedDate                any
+	Description                any
 	ExternalProviderResourceId any
-	ExternalSubnets any
-	ProvisioningState any
-	SubnetOverrides any
-	UniqueIdentifier any
+	ExternalSubnets            any
+	ProvisioningState          any
+	SubnetOverrides            any
+	UniqueIdentifier           any
 }
 
 type DtlVirtualNetwork_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlVirtualNetworkConfig struct {

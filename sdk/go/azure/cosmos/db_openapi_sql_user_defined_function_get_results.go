@@ -4,7 +4,7 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiSqlUserDefinedFunctionGetResults_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -31,6 +31,12 @@ type DbOpenapiSqlUserDefinedFunctionGetResults_Properties_Options struct {
 }
 
 type DbOpenapiSqlUserDefinedFunctionGetResults_Properties_Resource struct {
+	// A system generated property representing the resource etag required for optimistic concurrency control.
+	Etag any
+	// A system generated property. A unique identifier.
+	Rid any
+	// A system generated property that denotes the last updated timestamp of the resource.
+	Ts any
 	// Body of the User Defined Function
 	Body any
 	// Name of the Cosmos DB SQL userDefinedFunction
@@ -45,35 +51,38 @@ type DbOpenapiSqlUserDefinedFunctionGetResults_Properties struct {
 }
 
 var DbOpenapiSqlUserDefinedFunctionGetResults_Properties_Options_AutoscaleSettingsFields = ubx.FieldMap{
-		"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
-	}
+	"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
+}
 
 var DbOpenapiSqlUserDefinedFunctionGetResults_Properties_OptionsFields = ubx.FieldMap{
-		"AutoscaleSettings": ubx.FieldSpec{
-			WireName: "autoscale_settings",
-			Kind: "object",
-			Fields: DbOpenapiSqlUserDefinedFunctionGetResults_Properties_Options_AutoscaleSettingsFields,
-		},
-		"Throughput": ubx.FieldSpec{WireName: "throughput"},
-	}
+	"AutoscaleSettings": ubx.FieldSpec{
+		WireName: "autoscale_settings",
+		Kind:     "object",
+		Fields:   DbOpenapiSqlUserDefinedFunctionGetResults_Properties_Options_AutoscaleSettingsFields,
+	},
+	"Throughput": ubx.FieldSpec{WireName: "throughput"},
+}
 
 var DbOpenapiSqlUserDefinedFunctionGetResults_Properties_ResourceFields = ubx.FieldMap{
-		"Body": ubx.FieldSpec{WireName: "body"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "_etag"},
+	"Rid":  ubx.FieldSpec{WireName: "_rid"},
+	"Ts":   ubx.FieldSpec{WireName: "_ts"},
+	"Body": ubx.FieldSpec{WireName: "body"},
+	"Id":   ubx.FieldSpec{WireName: "id"},
+}
 
 var DbOpenapiSqlUserDefinedFunctionGetResults_PropertiesFields = ubx.FieldMap{
-		"Options": ubx.FieldSpec{
-			WireName: "options",
-			Kind: "object",
-			Fields: DbOpenapiSqlUserDefinedFunctionGetResults_Properties_OptionsFields,
-		},
-		"Resource": ubx.FieldSpec{
-			WireName: "resource",
-			Kind: "object",
-			Fields: DbOpenapiSqlUserDefinedFunctionGetResults_Properties_ResourceFields,
-		},
-	}
+	"Options": ubx.FieldSpec{
+		WireName: "options",
+		Kind:     "object",
+		Fields:   DbOpenapiSqlUserDefinedFunctionGetResults_Properties_OptionsFields,
+	},
+	"Resource": ubx.FieldSpec{
+		WireName: "resource",
+		Kind:     "object",
+		Fields:   DbOpenapiSqlUserDefinedFunctionGetResults_Properties_ResourceFields,
+	},
+}
 
 type DbOpenapiSqlUserDefinedFunctionGetResultsConfig struct {
 	// Properties to create and update Azure Cosmos DB userDefinedFunction.
@@ -96,8 +105,8 @@ var DbOpenapiSqlUserDefinedFunctionGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiSqlUserDefinedFunctionGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiSqlUserDefinedFunctionGetResults_PropertiesFields,
 		},
 	},
 }

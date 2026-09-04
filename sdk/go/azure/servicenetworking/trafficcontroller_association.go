@@ -18,18 +18,18 @@ type TrafficcontrollerAssociation_Properties struct {
 }
 
 var TrafficcontrollerAssociation_Properties_SubnetFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var TrafficcontrollerAssociation_PropertiesFields = ubx.FieldMap{
-		"AssociationType": ubx.FieldSpec{WireName: "association_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: TrafficcontrollerAssociation_Properties_SubnetFields,
-		},
-	}
+	"AssociationType":   ubx.FieldSpec{WireName: "association_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   TrafficcontrollerAssociation_Properties_SubnetFields,
+	},
+}
 
 type TrafficcontrollerAssociationConfig struct {
 	// Association Properties.
@@ -46,8 +46,8 @@ var TrafficcontrollerAssociation = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: TrafficcontrollerAssociation_PropertiesFields,
+			Kind:     "object",
+			Fields:   TrafficcontrollerAssociation_PropertiesFields,
 		},
 	},
 }

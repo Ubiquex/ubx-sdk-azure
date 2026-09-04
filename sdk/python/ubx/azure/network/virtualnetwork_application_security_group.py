@@ -20,8 +20,6 @@ _VirtualnetworkApplicationSecurityGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkApplicationSecurityGroupConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Application security group properties.
     properties: Any = None
 
@@ -35,7 +33,6 @@ class VirtualnetworkApplicationSecurityGroupAttrs:
 VirtualnetworkApplicationSecurityGroup = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_application_security_group",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

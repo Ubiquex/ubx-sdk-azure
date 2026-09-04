@@ -310,22 +310,11 @@ const HealthcareApisFhirService_PropertiesFields: FieldMap = {
   },
 };
 
-const HealthcareApisFhirService_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface HealthcareApisFhirServiceConfig {
   /** The kind of the service. */
   kind?: string | Computed<string>;
   /** Fhir Service properties. */
   properties?: HealthcareApisFhirService_Properties | Computed<HealthcareApisFhirService_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: HealthcareApisFhirService_SystemData | Computed<HealthcareApisFhirService_SystemData>;
 }
 
 export interface HealthcareApisFhirServiceAttrs {
@@ -345,11 +334,6 @@ export const HealthcareApisFhirService: ResourceBinding<HealthcareApisFhirServic
       wireName: "properties",
       kind: "object",
       fields: HealthcareApisFhirService_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: HealthcareApisFhirService_SystemDataFields,
     },
   },
 };

@@ -11,8 +11,6 @@ const SqlpoolTransparentDataEncryption_PropertiesFields: FieldMap = {
 };
 
 export interface SqlpoolTransparentDataEncryptionConfig {
-  /** Resource location. */
-  location?: string | Computed<string>;
   /** Represents the properties of a database transparent data encryption. */
   properties?: SqlpoolTransparentDataEncryption_Properties | Computed<SqlpoolTransparentDataEncryption_Properties>;
 }
@@ -27,7 +25,6 @@ export interface SqlpoolTransparentDataEncryptionAttrs {
 export const SqlpoolTransparentDataEncryption: ResourceBinding<SqlpoolTransparentDataEncryptionConfig, SqlpoolTransparentDataEncryptionAttrs> = {
   wireType: "azure_synapse_sqlpool_transparent_data_encryption",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

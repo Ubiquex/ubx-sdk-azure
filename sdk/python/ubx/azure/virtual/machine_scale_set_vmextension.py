@@ -8,15 +8,10 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class MachineScaleSetVmextension_Properties_InstanceView_Statuses:
-    # The machine-readable status code for the extension instance view, such as 'ProvisioningState/succeeded' or 'ProvisioningState/failed'. (AI-inferred)
     code: Any = None
-    # The short, human-readable label for the status. (AI-inferred)
     display_status: Any = None
-    # The level of the status message, indicating severity. Possible values are Info, Warning, and Error. (AI-inferred)
     level: Any = None
-    # A human-readable message providing additional details about the status. (AI-inferred)
     message: Any = None
-    # The timestamp when the status was recorded, in ISO 8601 format (e.g., 2024-01-01T12:00:00Z). (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
@@ -41,7 +36,6 @@ class MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault_Source
 class MachineScaleSetVmextension_Properties_ProtectedSettingsFromKeyVault:
     # The URL referencing a secret in a Key Vault.
     secret_url: Any = None
-    # Specifies the Azure Key Vault from which the secret for the protected settings is retrieved. This is required when using protected settings from a Key Vault. (AI-inferred)
     source_vault: Any = None
 
 @dataclasses.dataclass
@@ -138,12 +132,8 @@ _MachineScaleSetVmextension_PropertiesFields = {
 class MachineScaleSetVmextensionConfig:
     # The location of the extension.
     location: Any = None
-    # Resource name
-    name: Any = None
     # Describes the properties of a Virtual Machine Extension.
     properties: Any = None
-    # Resource type
-    type: Any = None
 
 @dataclasses.dataclass
 class MachineScaleSetVmextensionAttrs:
@@ -160,12 +150,10 @@ MachineScaleSetVmextension = ubx.ResourceBinding(
     wire_type="azure_virtual_machine_scale_set_vmextension",
     fields={
         "location": ubx.FieldSpec(wire_name="location"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_MachineScaleSetVmextension_PropertiesFields,
         ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

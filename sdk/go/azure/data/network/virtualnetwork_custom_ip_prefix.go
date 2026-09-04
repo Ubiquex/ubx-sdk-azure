@@ -13,28 +13,28 @@ type VirtualnetworkCustomIpPrefix_Value_Properties_ChildCustomIpPrefixes struct 
 }
 
 type VirtualnetworkCustomIpPrefix_Value_Properties struct {
-	Asn any
-	AuthorizationMessage any
+	Asn                   any
+	AuthorizationMessage  any
 	ChildCustomIpPrefixes any
-	Cidr any
-	CommissionedState any
-	CustomIpPrefixParent any
+	Cidr                  any
+	CommissionedState     any
+	CustomIpPrefixParent  any
 	ExpressRouteAdvertise any
-	FailedReason any
-	Geo any
-	NoInternetAdvertise any
-	PrefixType any
-	ProvisioningState any
-	PublicIpPrefixes any
-	ResourceGuid any
-	SignedMessage any
+	FailedReason          any
+	Geo                   any
+	NoInternetAdvertise   any
+	PrefixType            any
+	ProvisioningState     any
+	PublicIpPrefixes      any
+	ResourceGuid          any
+	SignedMessage         any
 }
 
 type VirtualnetworkCustomIpPrefix_Value struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Zones any
+	Properties       any
+	Zones            any
 }
 
 type VirtualnetworkCustomIpPrefixConfig struct {
@@ -49,6 +49,5 @@ type VirtualnetworkCustomIpPrefixAttrs struct {
 
 var VirtualnetworkCustomIpPrefix = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_custom_ip_prefix",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

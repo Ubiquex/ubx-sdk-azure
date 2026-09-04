@@ -18,18 +18,18 @@ type CustomDomain_Properties struct {
 }
 
 var CustomDomain_Properties_CustomCertificateFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var CustomDomain_PropertiesFields = ubx.FieldMap{
-		"CustomCertificate": ubx.FieldSpec{
-			WireName: "custom_certificate",
-			Kind: "object",
-			Fields: CustomDomain_Properties_CustomCertificateFields,
-		},
-		"DomainName": ubx.FieldSpec{WireName: "domain_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"CustomCertificate": ubx.FieldSpec{
+		WireName: "custom_certificate",
+		Kind:     "object",
+		Fields:   CustomDomain_Properties_CustomCertificateFields,
+	},
+	"DomainName":        ubx.FieldSpec{WireName: "domain_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type CustomDomainConfig struct {
 	// Properties of a custom domain.
@@ -50,8 +50,8 @@ var CustomDomain = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CustomDomain_PropertiesFields,
+			Kind:     "object",
+			Fields:   CustomDomain_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

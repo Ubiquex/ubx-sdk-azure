@@ -4,29 +4,29 @@ package authorization
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RoledefinitionscallsRoleDefinition_Value_Properties_Permissions struct {
-	Actions any
-	DataActions any
-	NotActions any
+	Actions        any
+	DataActions    any
+	NotActions     any
 	NotDataActions any
 }
 
 type RoledefinitionscallsRoleDefinition_Value_Properties struct {
 	AssignableScopes any
-	CreatedBy any
-	CreatedOn any
-	Description any
-	Permissions any
-	RoleName any
-	Type any
-	UpdatedBy any
-	UpdatedOn any
+	CreatedBy        any
+	CreatedOn        any
+	Description      any
+	Permissions      any
+	RoleName         any
+	Type             any
+	UpdatedBy        any
+	UpdatedOn        any
 }
 
 type RoledefinitionscallsRoleDefinition_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type RoledefinitionscallsRoleDefinitionConfig struct {
@@ -36,7 +36,7 @@ type RoledefinitionscallsRoleDefinitionConfig struct {
 type RoledefinitionscallsRoleDefinitionAttrs struct {
 	// The URL to use for getting the next set of results.
 	NextLink any
-	Scope any
+	Scope    any
 	// Role definition list.
 	Value any
 }

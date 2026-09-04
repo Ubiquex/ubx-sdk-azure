@@ -24,8 +24,6 @@ const OpenapiSchemaGroup_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiSchemaGroupConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   properties?: OpenapiSchemaGroup_Properties | Computed<OpenapiSchemaGroup_Properties>;
 }
 
@@ -38,7 +36,6 @@ export interface OpenapiSchemaGroupAttrs {
 export const OpenapiSchemaGroup: ResourceBinding<OpenapiSchemaGroupConfig, OpenapiSchemaGroupAttrs> = {
   wireType: "azure_eventhub_openapi_schema_group",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

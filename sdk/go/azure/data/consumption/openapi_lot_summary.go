@@ -5,41 +5,41 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLotSummary_Value_Properties_ClosedBalance struct {
 	Currency any
-	Value any
+	Value    any
 }
 
 type OpenapiLotSummary_Value_Properties_ClosedBalanceInBillingCurrency struct {
-	ExchangeRate any
+	ExchangeRate      any
 	ExchangeRateMonth any
 }
 
 type OpenapiLotSummary_Value_Properties_Reseller struct {
 	ResellerDescription any
-	ResellerId any
+	ResellerId          any
 }
 
 type OpenapiLotSummary_Value_Properties struct {
-	BillingCurrency any
-	ClosedBalance any
-	ClosedBalanceInBillingCurrency any
-	CreditCurrency any
-	ETag any
-	ExpirationDate any
-	IsEstimatedBalance any
-	OrganizationType any
-	OriginalAmount any
+	BillingCurrency                 any
+	ClosedBalance                   any
+	ClosedBalanceInBillingCurrency  any
+	CreditCurrency                  any
+	ETag                            any
+	ExpirationDate                  any
+	IsEstimatedBalance              any
+	OrganizationType                any
+	OriginalAmount                  any
 	OriginalAmountInBillingCurrency any
-	PoNumber any
-	PurchasedDate any
-	Reseller any
-	Source any
-	StartDate any
-	Status any
-	UsedAmount any
+	PoNumber                        any
+	PurchasedDate                   any
+	Reseller                        any
+	Source                          any
+	StartDate                       any
+	Status                          any
+	UsedAmount                      any
 }
 
 type OpenapiLotSummary_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 

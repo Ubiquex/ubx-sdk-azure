@@ -8,47 +8,47 @@ type VirtualwanNetworkVirtualApplianceConnection_Value_Properties_RoutingConfigu
 }
 
 type VirtualwanNetworkVirtualApplianceConnection_Value_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids any
+	Ids    any
 	Labels any
 }
 
 type VirtualwanNetworkVirtualApplianceConnection_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
 type VirtualwanNetworkVirtualApplianceConnection_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes any
+	PropagateStaticRoutes          any
 	VnetLocalRouteOverrideCriteria any
 }
 
 type VirtualwanNetworkVirtualApplianceConnection_Value_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections any
-	StaticRoutes any
+	BgpConnections     any
+	StaticRoutes       any
 	StaticRoutesConfig any
 }
 
 type VirtualwanNetworkVirtualApplianceConnection_Value_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable any
-	InboundRouteMap any
-	OutboundRouteMap any
+	AssociatedRouteTable  any
+	InboundRouteMap       any
+	OutboundRouteMap      any
 	PropagatedRouteTables any
-	VnetRoutes any
+	VnetRoutes            any
 }
 
 type VirtualwanNetworkVirtualApplianceConnection_Value_Properties struct {
-	Asn any
-	BgpPeerAddress any
+	Asn                    any
+	BgpPeerAddress         any
 	EnableInternetSecurity any
-	Name any
-	ProvisioningState any
-	RoutingConfiguration any
-	TunnelIdentifier any
+	Name                   any
+	ProvisioningState      any
+	RoutingConfiguration   any
+	TunnelIdentifier       any
 }
 
 type VirtualwanNetworkVirtualApplianceConnection_Value struct {
-	Name any
+	Name       any
 	Properties any
 }
 

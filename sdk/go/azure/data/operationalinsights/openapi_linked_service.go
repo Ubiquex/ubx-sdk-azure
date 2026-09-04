@@ -4,14 +4,14 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLinkedService_Value_Properties struct {
-	ProvisioningState any
-	ResourceId any
+	ProvisioningState     any
+	ResourceId            any
 	WriteAccessResourceId any
 }
 
 type OpenapiLinkedService_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiLinkedServiceConfig struct {
@@ -22,7 +22,7 @@ type OpenapiLinkedServiceAttrs struct {
 	// The URL to get the next set of results.
 	NextLink any
 	// The list of linked service instances
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

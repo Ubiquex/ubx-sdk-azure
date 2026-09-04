@@ -66,20 +66,9 @@ const PrivateendpointconnectionsPrivateEndpointConnection_PropertiesFields: Fiel
   provisioningState: "provisioning_state",
 };
 
-const PrivateendpointconnectionsPrivateEndpointConnection_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface PrivateendpointconnectionsPrivateEndpointConnectionConfig {
   /** The private endpoint connection properties. */
   properties: PrivateendpointconnectionsPrivateEndpointConnection_Properties | Computed<PrivateendpointconnectionsPrivateEndpointConnection_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: PrivateendpointconnectionsPrivateEndpointConnection_SystemData | Computed<PrivateendpointconnectionsPrivateEndpointConnection_SystemData>;
 }
 
 export interface PrivateendpointconnectionsPrivateEndpointConnectionAttrs {
@@ -96,11 +85,6 @@ export const PrivateendpointconnectionsPrivateEndpointConnection: ResourceBindin
       wireName: "properties",
       kind: "object",
       fields: PrivateendpointconnectionsPrivateEndpointConnection_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: PrivateendpointconnectionsPrivateEndpointConnection_SystemDataFields,
     },
   },
 };

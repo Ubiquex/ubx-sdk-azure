@@ -9,8 +9,8 @@ type VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations_Pool st
 
 type VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type VirtualwanVpnSite_Properties_AddressSpace struct {
@@ -21,10 +21,10 @@ type VirtualwanVpnSite_Properties_AddressSpace struct {
 }
 
 type VirtualwanVpnSite_Properties_BgpProperties_BgpPeeringAddresses struct {
-	CustomBgpIpAddresses any
+	CustomBgpIpAddresses  any
 	DefaultBgpIpAddresses any
-	IpconfigurationId any
-	TunnelIpAddresses any
+	IpconfigurationId     any
+	TunnelIpAddresses     any
 }
 
 type VirtualwanVpnSite_Properties_BgpProperties struct {
@@ -62,25 +62,25 @@ type VirtualwanVpnSite_Properties_O365Policy struct {
 }
 
 type VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_BgpProperties struct {
-	Asn any
+	Asn               any
 	BgpPeeringAddress any
 }
 
 type VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_LinkProperties struct {
 	LinkProviderName any
-	LinkSpeedInMbps any
+	LinkSpeedInMbps  any
 }
 
 type VirtualwanVpnSite_Properties_VpnSiteLinks_Properties struct {
-	BgpProperties any
-	Fqdn any
-	IpAddress any
-	LinkProperties any
+	BgpProperties     any
+	Fqdn              any
+	IpAddress         any
+	LinkProperties    any
 	ProvisioningState any
 }
 
 type VirtualwanVpnSite_Properties_VpnSiteLinks struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -108,141 +108,139 @@ type VirtualwanVpnSite_Properties struct {
 }
 
 var VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations_PoolFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocationsFields = ubx.FieldMap{
-		"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
-		"NumberOfIpAddresses": ubx.FieldSpec{WireName: "number_of_ip_addresses"},
-		"Pool": ubx.FieldSpec{
-			WireName: "pool",
-			Kind: "object",
-			Fields: VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations_PoolFields,
-		},
-	}
+	"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
+	"NumberOfIpAddresses":      ubx.FieldSpec{WireName: "number_of_ip_addresses"},
+	"Pool": ubx.FieldSpec{
+		WireName: "pool",
+		Kind:     "object",
+		Fields:   VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations_PoolFields,
+	},
+}
 
 var VirtualwanVpnSite_Properties_AddressSpaceFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocationsFields,
-		},
-	}
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocationsFields,
+	},
+}
 
 var VirtualwanVpnSite_Properties_BgpProperties_BgpPeeringAddressesFields = ubx.FieldMap{
-		"CustomBgpIpAddresses": ubx.FieldSpec{WireName: "custom_bgp_ip_addresses"},
-		"DefaultBgpIpAddresses": ubx.FieldSpec{WireName: "default_bgp_ip_addresses"},
-		"IpconfigurationId": ubx.FieldSpec{WireName: "ipconfiguration_id"},
-		"TunnelIpAddresses": ubx.FieldSpec{WireName: "tunnel_ip_addresses"},
-	}
+	"CustomBgpIpAddresses":  ubx.FieldSpec{WireName: "custom_bgp_ip_addresses"},
+	"DefaultBgpIpAddresses": ubx.FieldSpec{WireName: "default_bgp_ip_addresses"},
+	"IpconfigurationId":     ubx.FieldSpec{WireName: "ipconfiguration_id"},
+	"TunnelIpAddresses":     ubx.FieldSpec{WireName: "tunnel_ip_addresses"},
+}
 
 var VirtualwanVpnSite_Properties_BgpPropertiesFields = ubx.FieldMap{
-		"Asn": ubx.FieldSpec{WireName: "asn"},
-		"BgpPeeringAddress": ubx.FieldSpec{WireName: "bgp_peering_address"},
-		"BgpPeeringAddresses": ubx.FieldSpec{
-			WireName: "bgp_peering_addresses",
-			Kind: "list",
-			Fields: VirtualwanVpnSite_Properties_BgpProperties_BgpPeeringAddressesFields,
-		},
-		"PeerWeight": ubx.FieldSpec{WireName: "peer_weight"},
-	}
+	"Asn":               ubx.FieldSpec{WireName: "asn"},
+	"BgpPeeringAddress": ubx.FieldSpec{WireName: "bgp_peering_address"},
+	"BgpPeeringAddresses": ubx.FieldSpec{
+		WireName: "bgp_peering_addresses",
+		Kind:     "list",
+		Fields:   VirtualwanVpnSite_Properties_BgpProperties_BgpPeeringAddressesFields,
+	},
+	"PeerWeight": ubx.FieldSpec{WireName: "peer_weight"},
+}
 
 var VirtualwanVpnSite_Properties_DevicePropertiesFields = ubx.FieldMap{
-		"DeviceModel": ubx.FieldSpec{WireName: "device_model"},
-		"DeviceVendor": ubx.FieldSpec{WireName: "device_vendor"},
-		"LinkSpeedInMbps": ubx.FieldSpec{WireName: "link_speed_in_mbps"},
-	}
+	"DeviceModel":     ubx.FieldSpec{WireName: "device_model"},
+	"DeviceVendor":    ubx.FieldSpec{WireName: "device_vendor"},
+	"LinkSpeedInMbps": ubx.FieldSpec{WireName: "link_speed_in_mbps"},
+}
 
 var VirtualwanVpnSite_Properties_O365Policy_BreakOutCategoriesFields = ubx.FieldMap{
-		"Allow": ubx.FieldSpec{WireName: "allow"},
-		"Default": ubx.FieldSpec{WireName: "default"},
-		"Optimize": ubx.FieldSpec{WireName: "optimize"},
-	}
+	"Allow":    ubx.FieldSpec{WireName: "allow"},
+	"Default":  ubx.FieldSpec{WireName: "default"},
+	"Optimize": ubx.FieldSpec{WireName: "optimize"},
+}
 
 var VirtualwanVpnSite_Properties_O365PolicyFields = ubx.FieldMap{
-		"BreakOutCategories": ubx.FieldSpec{
-			WireName: "break_out_categories",
-			Kind: "object",
-			Fields: VirtualwanVpnSite_Properties_O365Policy_BreakOutCategoriesFields,
-		},
-	}
+	"BreakOutCategories": ubx.FieldSpec{
+		WireName: "break_out_categories",
+		Kind:     "object",
+		Fields:   VirtualwanVpnSite_Properties_O365Policy_BreakOutCategoriesFields,
+	},
+}
 
 var VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_BgpPropertiesFields = ubx.FieldMap{
-		"Asn": ubx.FieldSpec{WireName: "asn"},
-		"BgpPeeringAddress": ubx.FieldSpec{WireName: "bgp_peering_address"},
-	}
+	"Asn":               ubx.FieldSpec{WireName: "asn"},
+	"BgpPeeringAddress": ubx.FieldSpec{WireName: "bgp_peering_address"},
+}
 
 var VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_LinkPropertiesFields = ubx.FieldMap{
-		"LinkProviderName": ubx.FieldSpec{WireName: "link_provider_name"},
-		"LinkSpeedInMbps": ubx.FieldSpec{WireName: "link_speed_in_mbps"},
-	}
+	"LinkProviderName": ubx.FieldSpec{WireName: "link_provider_name"},
+	"LinkSpeedInMbps":  ubx.FieldSpec{WireName: "link_speed_in_mbps"},
+}
 
 var VirtualwanVpnSite_Properties_VpnSiteLinks_PropertiesFields = ubx.FieldMap{
-		"BgpProperties": ubx.FieldSpec{
-			WireName: "bgp_properties",
-			Kind: "object",
-			Fields: VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_BgpPropertiesFields,
-		},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"LinkProperties": ubx.FieldSpec{
-			WireName: "link_properties",
-			Kind: "object",
-			Fields: VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_LinkPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BgpProperties": ubx.FieldSpec{
+		WireName: "bgp_properties",
+		Kind:     "object",
+		Fields:   VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_BgpPropertiesFields,
+	},
+	"Fqdn":      ubx.FieldSpec{WireName: "fqdn"},
+	"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
+	"LinkProperties": ubx.FieldSpec{
+		WireName: "link_properties",
+		Kind:     "object",
+		Fields:   VirtualwanVpnSite_Properties_VpnSiteLinks_Properties_LinkPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanVpnSite_Properties_VpnSiteLinksFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVpnSite_Properties_VpnSiteLinks_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanVpnSite_Properties_VpnSiteLinks_PropertiesFields,
+	},
+}
 
 var VirtualwanVpnSite_PropertiesFields = ubx.FieldMap{
-		"AddressSpace": ubx.FieldSpec{
-			WireName: "address_space",
-			Kind: "object",
-			Fields: VirtualwanVpnSite_Properties_AddressSpaceFields,
-		},
-		"BgpProperties": ubx.FieldSpec{
-			WireName: "bgp_properties",
-			Kind: "object",
-			Fields: VirtualwanVpnSite_Properties_BgpPropertiesFields,
-		},
-		"DeviceProperties": ubx.FieldSpec{
-			WireName: "device_properties",
-			Kind: "object",
-			Fields: VirtualwanVpnSite_Properties_DevicePropertiesFields,
-		},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IsSecuritySite": ubx.FieldSpec{WireName: "is_security_site"},
-		"O365Policy": ubx.FieldSpec{
-			WireName: "o365_policy",
-			Kind: "object",
-			Fields: VirtualwanVpnSite_Properties_O365PolicyFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SiteKey": ubx.FieldSpec{WireName: "site_key"},
-		"VirtualWan": ubx.FieldSpec{
-			WireName: "virtual_wan",
-			Kind: "object",
-			Fields: VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations_PoolFields,
-		},
-		"VpnSiteLinks": ubx.FieldSpec{
-			WireName: "vpn_site_links",
-			Kind: "list",
-			Fields: VirtualwanVpnSite_Properties_VpnSiteLinksFields,
-		},
-	}
+	"AddressSpace": ubx.FieldSpec{
+		WireName: "address_space",
+		Kind:     "object",
+		Fields:   VirtualwanVpnSite_Properties_AddressSpaceFields,
+	},
+	"BgpProperties": ubx.FieldSpec{
+		WireName: "bgp_properties",
+		Kind:     "object",
+		Fields:   VirtualwanVpnSite_Properties_BgpPropertiesFields,
+	},
+	"DeviceProperties": ubx.FieldSpec{
+		WireName: "device_properties",
+		Kind:     "object",
+		Fields:   VirtualwanVpnSite_Properties_DevicePropertiesFields,
+	},
+	"IpAddress":      ubx.FieldSpec{WireName: "ip_address"},
+	"IsSecuritySite": ubx.FieldSpec{WireName: "is_security_site"},
+	"O365Policy": ubx.FieldSpec{
+		WireName: "o365_policy",
+		Kind:     "object",
+		Fields:   VirtualwanVpnSite_Properties_O365PolicyFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SiteKey":           ubx.FieldSpec{WireName: "site_key"},
+	"VirtualWan": ubx.FieldSpec{
+		WireName: "virtual_wan",
+		Kind:     "object",
+		Fields:   VirtualwanVpnSite_Properties_AddressSpace_IpamPoolPrefixAllocations_PoolFields,
+	},
+	"VpnSiteLinks": ubx.FieldSpec{
+		WireName: "vpn_site_links",
+		Kind:     "list",
+		Fields:   VirtualwanVpnSite_Properties_VpnSiteLinksFields,
+	},
+}
 
 type VirtualwanVpnSiteConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Parameters for VpnSite.
 	Properties any
 }
@@ -257,11 +255,10 @@ type VirtualwanVpnSiteAttrs struct {
 var VirtualwanVpnSite = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_vpn_site",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVpnSite_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanVpnSite_PropertiesFields,
 		},
 	},
 }

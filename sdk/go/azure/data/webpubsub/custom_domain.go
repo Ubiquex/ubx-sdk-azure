@@ -9,7 +9,7 @@ type CustomDomain_Value_Properties_CustomCertificate struct {
 
 type CustomDomain_Value_Properties struct {
 	CustomCertificate any
-	DomainName any
+	DomainName        any
 	ProvisioningState any
 }
 
@@ -23,7 +23,7 @@ type CustomDomainConfig struct {
 
 type CustomDomainAttrs struct {
 	// The URL the client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// List of custom domains that bind to this resource.
 	Value any

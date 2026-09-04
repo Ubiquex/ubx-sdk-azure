@@ -4,20 +4,20 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiEndpoint_Properties_CustomDomains_Properties struct {
-	HostName any
+	HostName       any
 	ValidationData any
 }
 
 type OpenapiEndpoint_Properties_CustomDomains struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiEndpoint_Properties_OriginGroups_Properties_HealthProbeSettings struct {
 	ProbeIntervalInSeconds any
-	ProbePath any
-	ProbeProtocol any
-	ProbeRequestType any
+	ProbePath              any
+	ProbeProtocol          any
+	ProbeRequestType       any
 }
 
 type OpenapiEndpoint_Properties_OriginGroups_Properties_Origins struct {
@@ -26,44 +26,44 @@ type OpenapiEndpoint_Properties_OriginGroups_Properties_Origins struct {
 
 type OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings_HttpErrorRanges struct {
 	Begin any
-	End any
+	End   any
 }
 
 type OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings struct {
-	HttpErrorRanges any
-	ResponseBasedDetectedErrorTypes any
+	HttpErrorRanges                          any
+	ResponseBasedDetectedErrorTypes          any
 	ResponseBasedFailoverThresholdPercentage any
 }
 
 type OpenapiEndpoint_Properties_OriginGroups_Properties struct {
-	HealthProbeSettings any
-	Origins any
-	ResponseBasedOriginErrorDetectionSettings any
+	HealthProbeSettings                                   any
+	Origins                                               any
+	ResponseBasedOriginErrorDetectionSettings             any
 	TrafficRestorationTimeToHealedOrNewEndpointsInMinutes any
 }
 
 type OpenapiEndpoint_Properties_OriginGroups struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiEndpoint_Properties_Origins_Properties struct {
-	Enabled any
-	HostName any
-	HttpPort any
-	HttpsPort any
-	OriginHostHeader any
-	Priority any
-	PrivateEndpointStatus any
-	PrivateLinkAlias any
+	Enabled                    any
+	HostName                   any
+	HttpPort                   any
+	HttpsPort                  any
+	OriginHostHeader           any
+	Priority                   any
+	PrivateEndpointStatus      any
+	PrivateLinkAlias           any
 	PrivateLinkApprovalMessage any
-	PrivateLinkLocation any
-	PrivateLinkResourceId any
-	Weight any
+	PrivateLinkLocation        any
+	PrivateLinkResourceId      any
+	Weight                     any
 }
 
 type OpenapiEndpoint_Properties_Origins struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -83,117 +83,117 @@ type OpenapiEndpoint_Properties struct {
 }
 
 var OpenapiEndpoint_Properties_CustomDomains_PropertiesFields = ubx.FieldMap{
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"ValidationData": ubx.FieldSpec{WireName: "validation_data"},
-	}
+	"HostName":       ubx.FieldSpec{WireName: "host_name"},
+	"ValidationData": ubx.FieldSpec{WireName: "validation_data"},
+}
 
 var OpenapiEndpoint_Properties_CustomDomainsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiEndpoint_Properties_CustomDomains_PropertiesFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiEndpoint_Properties_CustomDomains_PropertiesFields,
+	},
+}
 
 var OpenapiEndpoint_Properties_OriginGroups_Properties_HealthProbeSettingsFields = ubx.FieldMap{
-		"ProbeIntervalInSeconds": ubx.FieldSpec{WireName: "probe_interval_in_seconds"},
-		"ProbePath": ubx.FieldSpec{WireName: "probe_path"},
-		"ProbeProtocol": ubx.FieldSpec{WireName: "probe_protocol"},
-		"ProbeRequestType": ubx.FieldSpec{WireName: "probe_request_type"},
-	}
+	"ProbeIntervalInSeconds": ubx.FieldSpec{WireName: "probe_interval_in_seconds"},
+	"ProbePath":              ubx.FieldSpec{WireName: "probe_path"},
+	"ProbeProtocol":          ubx.FieldSpec{WireName: "probe_protocol"},
+	"ProbeRequestType":       ubx.FieldSpec{WireName: "probe_request_type"},
+}
 
 var OpenapiEndpoint_Properties_OriginGroups_Properties_OriginsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings_HttpErrorRangesFields = ubx.FieldMap{
-		"Begin": ubx.FieldSpec{WireName: "begin"},
-		"End": ubx.FieldSpec{WireName: "end"},
-	}
+	"Begin": ubx.FieldSpec{WireName: "begin"},
+	"End":   ubx.FieldSpec{WireName: "end"},
+}
 
 var OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettingsFields = ubx.FieldMap{
-		"HttpErrorRanges": ubx.FieldSpec{
-			WireName: "http_error_ranges",
-			Kind: "list",
-			Fields: OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings_HttpErrorRangesFields,
-		},
-		"ResponseBasedDetectedErrorTypes": ubx.FieldSpec{WireName: "response_based_detected_error_types"},
-		"ResponseBasedFailoverThresholdPercentage": ubx.FieldSpec{WireName: "response_based_failover_threshold_percentage"},
-	}
+	"HttpErrorRanges": ubx.FieldSpec{
+		WireName: "http_error_ranges",
+		Kind:     "list",
+		Fields:   OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings_HttpErrorRangesFields,
+	},
+	"ResponseBasedDetectedErrorTypes":          ubx.FieldSpec{WireName: "response_based_detected_error_types"},
+	"ResponseBasedFailoverThresholdPercentage": ubx.FieldSpec{WireName: "response_based_failover_threshold_percentage"},
+}
 
 var OpenapiEndpoint_Properties_OriginGroups_PropertiesFields = ubx.FieldMap{
-		"HealthProbeSettings": ubx.FieldSpec{
-			WireName: "health_probe_settings",
-			Kind: "object",
-			Fields: OpenapiEndpoint_Properties_OriginGroups_Properties_HealthProbeSettingsFields,
-		},
-		"Origins": ubx.FieldSpec{
-			WireName: "origins",
-			Kind: "list",
-			Fields: OpenapiEndpoint_Properties_OriginGroups_Properties_OriginsFields,
-		},
-		"ResponseBasedOriginErrorDetectionSettings": ubx.FieldSpec{
-			WireName: "response_based_origin_error_detection_settings",
-			Kind: "object",
-			Fields: OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettingsFields,
-		},
-		"TrafficRestorationTimeToHealedOrNewEndpointsInMinutes": ubx.FieldSpec{WireName: "traffic_restoration_time_to_healed_or_new_endpoints_in_minutes"},
-	}
+	"HealthProbeSettings": ubx.FieldSpec{
+		WireName: "health_probe_settings",
+		Kind:     "object",
+		Fields:   OpenapiEndpoint_Properties_OriginGroups_Properties_HealthProbeSettingsFields,
+	},
+	"Origins": ubx.FieldSpec{
+		WireName: "origins",
+		Kind:     "list",
+		Fields:   OpenapiEndpoint_Properties_OriginGroups_Properties_OriginsFields,
+	},
+	"ResponseBasedOriginErrorDetectionSettings": ubx.FieldSpec{
+		WireName: "response_based_origin_error_detection_settings",
+		Kind:     "object",
+		Fields:   OpenapiEndpoint_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettingsFields,
+	},
+	"TrafficRestorationTimeToHealedOrNewEndpointsInMinutes": ubx.FieldSpec{WireName: "traffic_restoration_time_to_healed_or_new_endpoints_in_minutes"},
+}
 
 var OpenapiEndpoint_Properties_OriginGroupsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiEndpoint_Properties_OriginGroups_PropertiesFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiEndpoint_Properties_OriginGroups_PropertiesFields,
+	},
+}
 
 var OpenapiEndpoint_Properties_Origins_PropertiesFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"HttpPort": ubx.FieldSpec{WireName: "http_port"},
-		"HttpsPort": ubx.FieldSpec{WireName: "https_port"},
-		"OriginHostHeader": ubx.FieldSpec{WireName: "origin_host_header"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"PrivateEndpointStatus": ubx.FieldSpec{WireName: "private_endpoint_status"},
-		"PrivateLinkAlias": ubx.FieldSpec{WireName: "private_link_alias"},
-		"PrivateLinkApprovalMessage": ubx.FieldSpec{WireName: "private_link_approval_message"},
-		"PrivateLinkLocation": ubx.FieldSpec{WireName: "private_link_location"},
-		"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
-		"Weight": ubx.FieldSpec{WireName: "weight"},
-	}
+	"Enabled":                    ubx.FieldSpec{WireName: "enabled"},
+	"HostName":                   ubx.FieldSpec{WireName: "host_name"},
+	"HttpPort":                   ubx.FieldSpec{WireName: "http_port"},
+	"HttpsPort":                  ubx.FieldSpec{WireName: "https_port"},
+	"OriginHostHeader":           ubx.FieldSpec{WireName: "origin_host_header"},
+	"Priority":                   ubx.FieldSpec{WireName: "priority"},
+	"PrivateEndpointStatus":      ubx.FieldSpec{WireName: "private_endpoint_status"},
+	"PrivateLinkAlias":           ubx.FieldSpec{WireName: "private_link_alias"},
+	"PrivateLinkApprovalMessage": ubx.FieldSpec{WireName: "private_link_approval_message"},
+	"PrivateLinkLocation":        ubx.FieldSpec{WireName: "private_link_location"},
+	"PrivateLinkResourceId":      ubx.FieldSpec{WireName: "private_link_resource_id"},
+	"Weight":                     ubx.FieldSpec{WireName: "weight"},
+}
 
 var OpenapiEndpoint_Properties_OriginsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiEndpoint_Properties_Origins_PropertiesFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiEndpoint_Properties_Origins_PropertiesFields,
+	},
+}
 
 var OpenapiEndpoint_PropertiesFields = ubx.FieldMap{
-		"CustomDomains": ubx.FieldSpec{
-			WireName: "custom_domains",
-			Kind: "list",
-			Fields: OpenapiEndpoint_Properties_CustomDomainsFields,
-		},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"OriginGroups": ubx.FieldSpec{
-			WireName: "origin_groups",
-			Kind: "list",
-			Fields: OpenapiEndpoint_Properties_OriginGroupsFields,
-		},
-		"Origins": ubx.FieldSpec{
-			WireName: "origins",
-			Kind: "list",
-			Fields: OpenapiEndpoint_Properties_OriginsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceState": ubx.FieldSpec{WireName: "resource_state"},
-	}
+	"CustomDomains": ubx.FieldSpec{
+		WireName: "custom_domains",
+		Kind:     "list",
+		Fields:   OpenapiEndpoint_Properties_CustomDomainsFields,
+	},
+	"HostName": ubx.FieldSpec{WireName: "host_name"},
+	"OriginGroups": ubx.FieldSpec{
+		WireName: "origin_groups",
+		Kind:     "list",
+		Fields:   OpenapiEndpoint_Properties_OriginGroupsFields,
+	},
+	"Origins": ubx.FieldSpec{
+		WireName: "origins",
+		Kind:     "list",
+		Fields:   OpenapiEndpoint_Properties_OriginsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceState":     ubx.FieldSpec{WireName: "resource_state"},
+}
 
 type OpenapiEndpointConfig struct {
 	// The JSON object that contains the properties required to create an endpoint.
@@ -210,8 +210,8 @@ var OpenapiEndpoint = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiEndpoint_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiEndpoint_PropertiesFields,
 		},
 	},
 }

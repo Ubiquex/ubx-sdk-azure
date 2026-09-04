@@ -34,20 +34,9 @@ const NetworkmanagerNetworkManagerRoutingConfiguration_PropertiesFields: FieldMa
   routeTableUsageMode: "route_table_usage_mode",
 };
 
-const NetworkmanagerNetworkManagerRoutingConfiguration_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerNetworkManagerRoutingConfigurationConfig {
   /** Defines the routing configuration properties. */
   properties?: NetworkmanagerNetworkManagerRoutingConfiguration_Properties | Computed<NetworkmanagerNetworkManagerRoutingConfiguration_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerNetworkManagerRoutingConfiguration_SystemData | Computed<NetworkmanagerNetworkManagerRoutingConfiguration_SystemData>;
 }
 
 export interface NetworkmanagerNetworkManagerRoutingConfigurationAttrs {
@@ -64,11 +53,6 @@ export const NetworkmanagerNetworkManagerRoutingConfiguration: ResourceBinding<N
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerNetworkManagerRoutingConfiguration_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerNetworkManagerRoutingConfiguration_SystemDataFields,
     },
   },
 };

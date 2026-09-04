@@ -28,27 +28,25 @@ type OpenapiManagedPrivateEndpointResource_Properties struct {
 }
 
 var OpenapiManagedPrivateEndpointResource_Properties_ConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiManagedPrivateEndpointResource_PropertiesFields = ubx.FieldMap{
-		"ConnectionState": ubx.FieldSpec{
-			WireName: "connection_state",
-			Kind: "object",
-			Fields: OpenapiManagedPrivateEndpointResource_Properties_ConnectionStateFields,
-		},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"IsReserved": ubx.FieldSpec{WireName: "is_reserved"},
-		"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ConnectionState": ubx.FieldSpec{
+		WireName: "connection_state",
+		Kind:     "object",
+		Fields:   OpenapiManagedPrivateEndpointResource_Properties_ConnectionStateFields,
+	},
+	"Fqdns":                 ubx.FieldSpec{WireName: "fqdns"},
+	"GroupId":               ubx.FieldSpec{WireName: "group_id"},
+	"IsReserved":            ubx.FieldSpec{WireName: "is_reserved"},
+	"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiManagedPrivateEndpointResourceConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// Properties of a managed private endpoint
 	Properties any
 }
@@ -63,11 +61,10 @@ type OpenapiManagedPrivateEndpointResourceAttrs struct {
 var OpenapiManagedPrivateEndpointResource = ubx.ResourceBinding{
 	WireType: "azure_datafactory_openapi_managed_private_endpoint_resource",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiManagedPrivateEndpointResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiManagedPrivateEndpointResource_PropertiesFields,
 		},
 	},
 }

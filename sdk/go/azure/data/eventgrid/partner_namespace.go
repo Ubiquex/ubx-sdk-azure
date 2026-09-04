@@ -14,15 +14,15 @@ type PartnerNamespace_Value_Properties_PrivateEndpointConnections_Properties_Pri
 
 type PartnerNamespace_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PartnerNamespace_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type PartnerNamespace_Value_Properties_PrivateEndpointConnections struct {
@@ -30,23 +30,23 @@ type PartnerNamespace_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type PartnerNamespace_Value_Properties struct {
-	DisableLocalAuth any
-	Endpoint any
-	InboundIpRules any
-	MinimumTlsVersionAllowed any
+	DisableLocalAuth                    any
+	Endpoint                            any
+	InboundIpRules                      any
+	MinimumTlsVersionAllowed            any
 	PartnerRegistrationFullyQualifiedId any
-	PartnerTopicRoutingMode any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
+	PartnerTopicRoutingMode             any
+	PrivateEndpointConnections          any
+	ProvisioningState                   any
+	PublicNetworkAccess                 any
 }
 
 type PartnerNamespace_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -56,14 +56,14 @@ type PartnerNamespace_Value struct {
 }
 
 type PartnerNamespaceConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type PartnerNamespaceAttrs struct {
 	ApiVersion any
 	// A link for the next page of partner namespaces.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// A collection of partner namespaces.
 	Value any
@@ -72,7 +72,7 @@ type PartnerNamespaceAttrs struct {
 var PartnerNamespace = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_partner_namespace",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -4,37 +4,37 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkResourceNavigationLink_Value_Properties struct {
-	Link any
+	Link               any
 	LinkedResourceType any
-	ProvisioningState any
+	ProvisioningState  any
 }
 
 type VirtualnetworkResourceNavigationLink_Value struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualnetworkResourceNavigationLinkConfig struct {
-	SubnetName any
+	SubnetName         any
 	VirtualNetworkName any
 }
 
 type VirtualnetworkResourceNavigationLinkAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	SubnetName any
 	// The ResourceNavigationLink items on this page
-	Value any
+	Value              any
 	VirtualNetworkName any
 }
 
 var VirtualnetworkResourceNavigationLink = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_resource_navigation_link",
 	Fields: ubx.FieldMap{
-		"SubnetName": ubx.FieldSpec{WireName: "subnet_name"},
+		"SubnetName":         ubx.FieldSpec{WireName: "subnet_name"},
 		"VirtualNetworkName": ubx.FieldSpec{WireName: "virtual_network_name"},
 	},
 }

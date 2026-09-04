@@ -4,11 +4,11 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkloadNetworkDhcp_Value_Properties struct {
-	DhcpType any
-	DisplayName any
+	DhcpType          any
+	DisplayName       any
 	ProvisioningState any
-	Revision any
-	Segments any
+	Revision          any
+	Segments          any
 }
 
 type WorkloadNetworkDhcp_Value struct {
@@ -21,7 +21,7 @@ type WorkloadNetworkDhcpConfig struct {
 
 type WorkloadNetworkDhcpAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The WorkloadNetworkDhcp items on this page
 	Value any

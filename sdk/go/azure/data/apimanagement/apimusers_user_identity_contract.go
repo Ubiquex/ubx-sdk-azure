@@ -4,7 +4,7 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimusersUserIdentityContract_Value struct {
-	Id any
+	Id       any
 	Provider any
 }
 
@@ -22,6 +22,5 @@ type ApimusersUserIdentityContractAttrs struct {
 
 var ApimusersUserIdentityContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimusers_user_identity_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

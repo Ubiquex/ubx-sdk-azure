@@ -9,8 +9,8 @@ type OpenapiFeaturesetContainer_Properties struct {
 }
 
 var OpenapiFeaturesetContainer_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiFeaturesetContainerConfig struct {
 	// DTO object representing feature set
@@ -31,8 +31,8 @@ var OpenapiFeaturesetContainer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiFeaturesetContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiFeaturesetContainer_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

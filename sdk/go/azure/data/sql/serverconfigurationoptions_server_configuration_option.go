@@ -4,7 +4,7 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServerconfigurationoptionsServerConfigurationOption_Value_Properties struct {
-	ProvisioningState any
+	ProvisioningState              any
 	ServerConfigurationOptionValue any
 }
 

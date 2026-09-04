@@ -4,18 +4,18 @@ package virtual
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MachineExtension_Value_Properties_InstanceView_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type MachineExtension_Value_Properties_InstanceView struct {
-	Name any
-	Statuses any
-	Substatuses any
-	Type any
+	Name               any
+	Statuses           any
+	Substatuses        any
+	Type               any
 	TypeHandlerVersion any
 }
 
@@ -24,24 +24,24 @@ type MachineExtension_Value_Properties_ProtectedSettingsFromKeyVault_SourceVault
 }
 
 type MachineExtension_Value_Properties_ProtectedSettingsFromKeyVault struct {
-	SecretUrl any
+	SecretUrl   any
 	SourceVault any
 }
 
 type MachineExtension_Value_Properties struct {
-	AutoUpgradeMinorVersion any
-	EnableAutomaticUpgrade any
-	ForceUpdateTag any
-	InstanceView any
-	ProtectedSettings any
+	AutoUpgradeMinorVersion       any
+	EnableAutomaticUpgrade        any
+	ForceUpdateTag                any
+	InstanceView                  any
+	ProtectedSettings             any
 	ProtectedSettingsFromKeyVault any
-	ProvisionAfterExtensions any
-	ProvisioningState any
-	Publisher any
-	Settings any
-	SuppressFailures any
-	Type any
-	TypeHandlerVersion any
+	ProvisionAfterExtensions      any
+	ProvisioningState             any
+	Publisher                     any
+	Settings                      any
+	SuppressFailures              any
+	Type                          any
+	TypeHandlerVersion            any
 }
 
 type MachineExtension_Value struct {
@@ -54,7 +54,7 @@ type MachineExtensionConfig struct {
 
 type MachineExtensionAttrs struct {
 	// The list of extensions
-	Value any
+	Value  any
 	VmName any
 }
 

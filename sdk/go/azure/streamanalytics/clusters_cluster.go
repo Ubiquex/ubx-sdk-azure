@@ -24,21 +24,19 @@ type ClustersCluster_Sku struct {
 }
 
 var ClustersCluster_PropertiesFields = ubx.FieldMap{
-		"CapacityAllocated": ubx.FieldSpec{WireName: "capacity_allocated"},
-		"CapacityAssigned": ubx.FieldSpec{WireName: "capacity_assigned"},
-		"ClusterId": ubx.FieldSpec{WireName: "cluster_id"},
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"CapacityAllocated": ubx.FieldSpec{WireName: "capacity_allocated"},
+	"CapacityAssigned":  ubx.FieldSpec{WireName: "capacity_assigned"},
+	"ClusterId":         ubx.FieldSpec{WireName: "cluster_id"},
+	"CreatedDate":       ubx.FieldSpec{WireName: "created_date"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ClustersCluster_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+}
 
 type ClustersClusterConfig struct {
-	// The current entity tag for the cluster. This is an opaque string. You can use it to detect whether the resource has changed between requests. You can also use it in the If-Match or If-None-Match headers for write operations for optimistic concurrency.
-	Etag any
 	// The properties associated with a Stream Analytics cluster.
 	Properties any
 	// The SKU of the cluster. This determines the size/capacity of the cluster. Required on PUT (CreateOrUpdate) requests.
@@ -57,16 +55,15 @@ type ClustersClusterAttrs struct {
 var ClustersCluster = ubx.ResourceBinding{
 	WireType: "azure_streamanalytics_clusters_cluster",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ClustersCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   ClustersCluster_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ClustersCluster_SkuFields,
+			Kind:     "object",
+			Fields:   ClustersCluster_SkuFields,
 		},
 	},
 }

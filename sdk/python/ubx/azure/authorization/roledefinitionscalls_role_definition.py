@@ -59,14 +59,8 @@ _RoledefinitionscallsRoleDefinition_PropertiesFields = {
 
 @dataclasses.dataclass
 class RoledefinitionscallsRoleDefinitionConfig:
-    # The role definition ID.
-    id: Any = None
-    # The role definition name.
-    name: Any = None
     # Role definition properties.
     properties: Any = None
-    # The role definition type.
-    type: Any = None
     # path parameter, not part of the API's own resource representation
     scope: Any = None
 
@@ -86,14 +80,11 @@ class RoledefinitionscallsRoleDefinitionAttrs:
 RoledefinitionscallsRoleDefinition = ubx.ResourceBinding(
     wire_type="azure_authorization_roledefinitionscalls_role_definition",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_RoledefinitionscallsRoleDefinition_PropertiesFields,
         ),
-        "type": ubx.FieldSpec(wire_name="type"),
         "scope": ubx.FieldSpec(wire_name="scope"),
     },
 )

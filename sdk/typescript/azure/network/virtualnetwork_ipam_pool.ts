@@ -25,8 +25,6 @@ const VirtualnetworkIpamPool_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkIpamPoolConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of IpamPool resource properties which are specific to the Pool resource. */
   properties: VirtualnetworkIpamPool_Properties | Computed<VirtualnetworkIpamPool_Properties>;
 }
@@ -41,7 +39,6 @@ export interface VirtualnetworkIpamPoolAttrs {
 export const VirtualnetworkIpamPool: ResourceBinding<VirtualnetworkIpamPoolConfig, VirtualnetworkIpamPoolAttrs> = {
   wireType: "azure_network_virtualnetwork_ipam_pool",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

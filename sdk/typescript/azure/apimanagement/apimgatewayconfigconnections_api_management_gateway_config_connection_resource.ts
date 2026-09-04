@@ -20,8 +20,6 @@ const ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_P
 };
 
 export interface ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceConfig {
-  /** ETag of the resource. */
-  etag?: string | Computed<string>;
   properties: ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Properties | Computed<ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Properties>;
 }
 
@@ -34,7 +32,6 @@ export interface ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectio
 export const ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource: ResourceBinding<ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceConfig, ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceAttrs> = {
   wireType: "azure_apimanagement_apimgatewayconfigconnections_api_management_gateway_config_connection_resource",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -28,41 +28,41 @@ type TrafficcontrollerTrafficController_Properties struct {
 }
 
 var TrafficcontrollerTrafficController_Properties_AssociationsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var TrafficcontrollerTrafficController_Properties_SecurityPolicyConfigurationsFields = ubx.FieldMap{
-		"WafSecurityPolicy": ubx.FieldSpec{
-			WireName: "waf_security_policy",
-			Kind: "object",
-			Fields: TrafficcontrollerTrafficController_Properties_AssociationsFields,
-		},
-	}
+	"WafSecurityPolicy": ubx.FieldSpec{
+		WireName: "waf_security_policy",
+		Kind:     "object",
+		Fields:   TrafficcontrollerTrafficController_Properties_AssociationsFields,
+	},
+}
 
 var TrafficcontrollerTrafficController_PropertiesFields = ubx.FieldMap{
-		"Associations": ubx.FieldSpec{
-			WireName: "associations",
-			Kind: "list",
-			Fields: TrafficcontrollerTrafficController_Properties_AssociationsFields,
-		},
-		"ConfigurationEndpoints": ubx.FieldSpec{WireName: "configuration_endpoints"},
-		"Frontends": ubx.FieldSpec{
-			WireName: "frontends",
-			Kind: "list",
-			Fields: TrafficcontrollerTrafficController_Properties_AssociationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SecurityPolicies": ubx.FieldSpec{
-			WireName: "security_policies",
-			Kind: "list",
-			Fields: TrafficcontrollerTrafficController_Properties_AssociationsFields,
-		},
-		"SecurityPolicyConfigurations": ubx.FieldSpec{
-			WireName: "security_policy_configurations",
-			Kind: "object",
-			Fields: TrafficcontrollerTrafficController_Properties_SecurityPolicyConfigurationsFields,
-		},
-	}
+	"Associations": ubx.FieldSpec{
+		WireName: "associations",
+		Kind:     "list",
+		Fields:   TrafficcontrollerTrafficController_Properties_AssociationsFields,
+	},
+	"ConfigurationEndpoints": ubx.FieldSpec{WireName: "configuration_endpoints"},
+	"Frontends": ubx.FieldSpec{
+		WireName: "frontends",
+		Kind:     "list",
+		Fields:   TrafficcontrollerTrafficController_Properties_AssociationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SecurityPolicies": ubx.FieldSpec{
+		WireName: "security_policies",
+		Kind:     "list",
+		Fields:   TrafficcontrollerTrafficController_Properties_AssociationsFields,
+	},
+	"SecurityPolicyConfigurations": ubx.FieldSpec{
+		WireName: "security_policy_configurations",
+		Kind:     "object",
+		Fields:   TrafficcontrollerTrafficController_Properties_SecurityPolicyConfigurationsFields,
+	},
+}
 
 type TrafficcontrollerTrafficControllerConfig struct {
 	// Traffic Controller Properties.
@@ -79,8 +79,8 @@ var TrafficcontrollerTrafficController = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: TrafficcontrollerTrafficController_PropertiesFields,
+			Kind:     "object",
+			Fields:   TrafficcontrollerTrafficController_PropertiesFields,
 		},
 	},
 }

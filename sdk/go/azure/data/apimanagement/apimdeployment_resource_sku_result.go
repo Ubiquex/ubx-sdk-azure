@@ -4,9 +4,9 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimdeploymentResourceSkuResult_Value_Capacity struct {
-	Default any
-	Maximum any
-	Minimum any
+	Default   any
+	Maximum   any
+	Minimum   any
 	ScaleType any
 }
 
@@ -15,9 +15,9 @@ type ApimdeploymentResourceSkuResult_Value_Sku struct {
 }
 
 type ApimdeploymentResourceSkuResult_Value struct {
-	Capacity any
+	Capacity     any
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type ApimdeploymentResourceSkuResultConfig struct {
@@ -32,6 +32,5 @@ type ApimdeploymentResourceSkuResultAttrs struct {
 
 var ApimdeploymentResourceSkuResult = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimdeployment_resource_sku_result",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

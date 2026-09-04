@@ -138,29 +138,12 @@ _RegistrationDefinition_PropertiesFields = {
     "registration_definition_name": ubx.FieldSpec(wire_name="registration_definition_name"),
 }
 
-_RegistrationDefinition_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class RegistrationDefinitionConfig:
-    # The fully qualified path of the registration definition.
-    id: Any = None
-    # The name of the registration definition.
-    name: Any = None
     # The details for the Managed Services offer’s plan in Azure Marketplace.
     plan: Any = None
     # The properties of a registration definition.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    # The type of the Azure resource (Microsoft.ManagedServices/registrationDefinitions).
-    type: Any = None
     # path parameter, not part of the API's own resource representation
     scope: Any = None
 
@@ -184,8 +167,6 @@ class RegistrationDefinitionAttrs:
 RegistrationDefinition = ubx.ResourceBinding(
     wire_type="azure_managedservices_registration_definition",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "plan": ubx.FieldSpec(
             wire_name="plan",
             kind="object",
@@ -196,12 +177,6 @@ RegistrationDefinition = ubx.ResourceBinding(
             kind="object",
             fields=_RegistrationDefinition_PropertiesFields,
         ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_RegistrationDefinition_SystemDataFields,
-        ),
-        "type": ubx.FieldSpec(wire_name="type"),
         "scope": ubx.FieldSpec(wire_name="scope"),
     },
 )

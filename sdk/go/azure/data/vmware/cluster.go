@@ -4,24 +4,24 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Cluster_Value_Properties struct {
-	ClusterId any
-	ClusterSize any
-	Hosts any
+	ClusterId         any
+	ClusterSize       any
+	Hosts             any
 	ProvisioningState any
 	VsanDatastoreName any
 }
 
 type Cluster_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type Cluster_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type ClusterConfig struct {
@@ -30,7 +30,7 @@ type ClusterConfig struct {
 
 type ClusterAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The Cluster items on this page
 	Value any

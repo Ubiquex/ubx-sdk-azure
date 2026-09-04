@@ -150,8 +150,6 @@ const ExpressrouteExpressRoutePort_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteExpressRoutePortConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: ExpressrouteExpressRoutePort_Identity | Computed<ExpressrouteExpressRoutePort_Identity>;
   /** Properties specific to ExpressRoutePort resources. */
@@ -170,7 +168,6 @@ export interface ExpressrouteExpressRoutePortAttrs {
 export const ExpressrouteExpressRoutePort: ResourceBinding<ExpressrouteExpressRoutePortConfig, ExpressrouteExpressRoutePortAttrs> = {
   wireType: "azure_network_expressroute_express_route_port",
   fields: {
-    etag: "etag",
     identity: {
       wireName: "identity",
       kind: "object",

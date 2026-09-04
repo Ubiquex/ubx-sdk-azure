@@ -4,35 +4,35 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiNetworkAnchor_Value_Properties_DnsForwardingRules struct {
-	DomainNames any
+	DomainNames         any
 	ForwardingIpAddress any
 }
 
 type OpenapiNetworkAnchor_Value_Properties struct {
-	CidrBlock any
-	DnsForwardingEndpointIpAddress any
-	DnsForwardingEndpointNsgRulesUrl any
-	DnsForwardingRules any
-	DnsForwardingRulesUrl any
-	DnsListeningEndpointAllowedCidrs any
-	DnsListeningEndpointIpAddress any
-	DnsListeningEndpointNsgRulesUrl any
+	CidrBlock                            any
+	DnsForwardingEndpointIpAddress       any
+	DnsForwardingEndpointNsgRulesUrl     any
+	DnsForwardingRules                   any
+	DnsForwardingRulesUrl                any
+	DnsListeningEndpointAllowedCidrs     any
+	DnsListeningEndpointIpAddress        any
+	DnsListeningEndpointNsgRulesUrl      any
 	IsOracleDnsForwardingEndpointEnabled any
-	IsOracleDnsListeningEndpointEnabled any
-	IsOracleToAzureDnsZoneSyncEnabled any
-	OciBackupCidrBlock any
-	OciSubnetId any
-	OciVcnDnsLabel any
-	OciVcnId any
-	ProvisioningState any
-	ResourceAnchorId any
-	SubnetId any
-	VnetId any
+	IsOracleDnsListeningEndpointEnabled  any
+	IsOracleToAzureDnsZoneSyncEnabled    any
+	OciBackupCidrBlock                   any
+	OciSubnetId                          any
+	OciVcnDnsLabel                       any
+	OciVcnId                             any
+	ProvisioningState                    any
+	ResourceAnchorId                     any
+	SubnetId                             any
+	VnetId                               any
 }
 
 type OpenapiNetworkAnchor_Value struct {
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type OpenapiNetworkAnchorConfig struct {
@@ -47,6 +47,5 @@ type OpenapiNetworkAnchorAttrs struct {
 
 var OpenapiNetworkAnchor = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_network_anchor",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

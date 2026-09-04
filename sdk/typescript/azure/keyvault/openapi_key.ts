@@ -155,8 +155,6 @@ const OpenapiKey_PropertiesFields: FieldMap = {
 export interface OpenapiKeyConfig {
   /** The properties of the key. */
   properties: OpenapiKey_Properties | Computed<OpenapiKey_Properties>;
-  /** The tags that will be assigned to the key. */
-  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiKeyAttrs {
@@ -176,6 +174,5 @@ export const OpenapiKey: ResourceBinding<OpenapiKeyConfig, OpenapiKeyAttrs> = {
       kind: "object",
       fields: OpenapiKey_PropertiesFields,
     },
-    tags: "tags",
   },
 };

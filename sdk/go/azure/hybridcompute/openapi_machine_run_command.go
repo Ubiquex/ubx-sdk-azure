@@ -11,11 +11,11 @@ type OpenapiMachineRunCommand_Properties_ErrorBlobManagedIdentity struct {
 }
 
 type OpenapiMachineRunCommand_Properties_InstanceView_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type OpenapiMachineRunCommand_Properties_InstanceView struct {
@@ -38,7 +38,7 @@ type OpenapiMachineRunCommand_Properties_InstanceView struct {
 }
 
 type OpenapiMachineRunCommand_Properties_Parameters struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -83,88 +83,88 @@ type OpenapiMachineRunCommand_Properties struct {
 }
 
 var OpenapiMachineRunCommand_Properties_ErrorBlobManagedIdentityFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-	}
+	"ClientId": ubx.FieldSpec{WireName: "client_id"},
+	"ObjectId": ubx.FieldSpec{WireName: "object_id"},
+}
 
 var OpenapiMachineRunCommand_Properties_InstanceView_StatusesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var OpenapiMachineRunCommand_Properties_InstanceViewFields = ubx.FieldMap{
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"Error": ubx.FieldSpec{WireName: "error"},
-		"ExecutionMessage": ubx.FieldSpec{WireName: "execution_message"},
-		"ExecutionState": ubx.FieldSpec{WireName: "execution_state"},
-		"ExitCode": ubx.FieldSpec{WireName: "exit_code"},
-		"Output": ubx.FieldSpec{WireName: "output"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"Statuses": ubx.FieldSpec{
-			WireName: "statuses",
-			Kind: "list",
-			Fields: OpenapiMachineRunCommand_Properties_InstanceView_StatusesFields,
-		},
-	}
+	"EndTime":          ubx.FieldSpec{WireName: "end_time"},
+	"Error":            ubx.FieldSpec{WireName: "error"},
+	"ExecutionMessage": ubx.FieldSpec{WireName: "execution_message"},
+	"ExecutionState":   ubx.FieldSpec{WireName: "execution_state"},
+	"ExitCode":         ubx.FieldSpec{WireName: "exit_code"},
+	"Output":           ubx.FieldSpec{WireName: "output"},
+	"StartTime":        ubx.FieldSpec{WireName: "start_time"},
+	"Statuses": ubx.FieldSpec{
+		WireName: "statuses",
+		Kind:     "list",
+		Fields:   OpenapiMachineRunCommand_Properties_InstanceView_StatusesFields,
+	},
+}
 
 var OpenapiMachineRunCommand_Properties_ParametersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiMachineRunCommand_Properties_SourceFields = ubx.FieldMap{
-		"CommandId": ubx.FieldSpec{WireName: "command_id"},
-		"Script": ubx.FieldSpec{WireName: "script"},
-		"ScriptUri": ubx.FieldSpec{WireName: "script_uri"},
-		"ScriptUriManagedIdentity": ubx.FieldSpec{
-			WireName: "script_uri_managed_identity",
-			Kind: "object",
-			Fields: OpenapiMachineRunCommand_Properties_ErrorBlobManagedIdentityFields,
-		},
-	}
+	"CommandId": ubx.FieldSpec{WireName: "command_id"},
+	"Script":    ubx.FieldSpec{WireName: "script"},
+	"ScriptUri": ubx.FieldSpec{WireName: "script_uri"},
+	"ScriptUriManagedIdentity": ubx.FieldSpec{
+		WireName: "script_uri_managed_identity",
+		Kind:     "object",
+		Fields:   OpenapiMachineRunCommand_Properties_ErrorBlobManagedIdentityFields,
+	},
+}
 
 var OpenapiMachineRunCommand_PropertiesFields = ubx.FieldMap{
-		"AsyncExecution": ubx.FieldSpec{WireName: "async_execution"},
-		"ErrorBlobManagedIdentity": ubx.FieldSpec{
-			WireName: "error_blob_managed_identity",
-			Kind: "object",
-			Fields: OpenapiMachineRunCommand_Properties_ErrorBlobManagedIdentityFields,
-		},
-		"ErrorBlobUri": ubx.FieldSpec{WireName: "error_blob_uri"},
-		"InstanceView": ubx.FieldSpec{
-			WireName: "instance_view",
-			Kind: "object",
-			Fields: OpenapiMachineRunCommand_Properties_InstanceViewFields,
-		},
-		"OutputBlobManagedIdentity": ubx.FieldSpec{
-			WireName: "output_blob_managed_identity",
-			Kind: "object",
-			Fields: OpenapiMachineRunCommand_Properties_ErrorBlobManagedIdentityFields,
-		},
-		"OutputBlobUri": ubx.FieldSpec{WireName: "output_blob_uri"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "list",
-			Fields: OpenapiMachineRunCommand_Properties_ParametersFields,
-		},
-		"ProtectedParameters": ubx.FieldSpec{
-			WireName: "protected_parameters",
-			Kind: "list",
-			Fields: OpenapiMachineRunCommand_Properties_ParametersFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RunAsPassword": ubx.FieldSpec{WireName: "run_as_password"},
-		"RunAsUser": ubx.FieldSpec{WireName: "run_as_user"},
-		"Source": ubx.FieldSpec{
-			WireName: "source",
-			Kind: "object",
-			Fields: OpenapiMachineRunCommand_Properties_SourceFields,
-		},
-		"TimeoutInSeconds": ubx.FieldSpec{WireName: "timeout_in_seconds"},
-	}
+	"AsyncExecution": ubx.FieldSpec{WireName: "async_execution"},
+	"ErrorBlobManagedIdentity": ubx.FieldSpec{
+		WireName: "error_blob_managed_identity",
+		Kind:     "object",
+		Fields:   OpenapiMachineRunCommand_Properties_ErrorBlobManagedIdentityFields,
+	},
+	"ErrorBlobUri": ubx.FieldSpec{WireName: "error_blob_uri"},
+	"InstanceView": ubx.FieldSpec{
+		WireName: "instance_view",
+		Kind:     "object",
+		Fields:   OpenapiMachineRunCommand_Properties_InstanceViewFields,
+	},
+	"OutputBlobManagedIdentity": ubx.FieldSpec{
+		WireName: "output_blob_managed_identity",
+		Kind:     "object",
+		Fields:   OpenapiMachineRunCommand_Properties_ErrorBlobManagedIdentityFields,
+	},
+	"OutputBlobUri": ubx.FieldSpec{WireName: "output_blob_uri"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "list",
+		Fields:   OpenapiMachineRunCommand_Properties_ParametersFields,
+	},
+	"ProtectedParameters": ubx.FieldSpec{
+		WireName: "protected_parameters",
+		Kind:     "list",
+		Fields:   OpenapiMachineRunCommand_Properties_ParametersFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RunAsPassword":     ubx.FieldSpec{WireName: "run_as_password"},
+	"RunAsUser":         ubx.FieldSpec{WireName: "run_as_user"},
+	"Source": ubx.FieldSpec{
+		WireName: "source",
+		Kind:     "object",
+		Fields:   OpenapiMachineRunCommand_Properties_SourceFields,
+	},
+	"TimeoutInSeconds": ubx.FieldSpec{WireName: "timeout_in_seconds"},
+}
 
 type OpenapiMachineRunCommandConfig struct {
 	// Describes the properties of a run command.
@@ -181,8 +181,8 @@ var OpenapiMachineRunCommand = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiMachineRunCommand_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiMachineRunCommand_PropertiesFields,
 		},
 	},
 }

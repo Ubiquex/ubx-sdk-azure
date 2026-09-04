@@ -5,18 +5,18 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceSupportedOperatingSystems_Properties_SupportedOsList_SupportedOs_OsVersions struct {
 	ServicePack any
-	Version any
+	Version     any
 }
 
 type ServiceSupportedOperatingSystems_Properties_SupportedOsList_SupportedOs struct {
-	OsName any
-	OsType any
+	OsName     any
+	OsType     any
 	OsVersions any
 }
 
 type ServiceSupportedOperatingSystems_Properties_SupportedOsList struct {
 	InstanceType any
-	SupportedOs any
+	SupportedOs  any
 }
 
 type ServiceSupportedOperatingSystems_Properties struct {
@@ -34,7 +34,7 @@ type ServiceSupportedOperatingSystemsAttrs struct {
 	// Resource Location
 	Location any
 	// Supported operating systems properties.
-	Properties any
+	Properties   any
 	ResourceName any
 }
 

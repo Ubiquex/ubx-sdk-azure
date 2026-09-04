@@ -4,8 +4,8 @@ package healthcareapis
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HealthcareApisFhirService_Properties_AcrConfiguration_OciArtifacts struct {
-	Digest any
-	ImageName any
+	Digest      any
+	ImageName   any
 	LoginServer any
 }
 
@@ -18,13 +18,13 @@ type HealthcareApisFhirService_Properties_AcrConfiguration struct {
 
 type HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProviders_Applications struct {
 	AllowedDataActions any
-	Audience any
-	ClientId any
+	Audience           any
+	ClientId           any
 }
 
 type HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProviders struct {
 	Applications any
-	Authority any
+	Authority    any
 }
 
 type HealthcareApisFhirService_Properties_AuthenticationConfiguration struct {
@@ -86,14 +86,14 @@ type HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_
 
 type HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type HealthcareApisFhirService_Properties_PrivateEndpointConnections struct {
@@ -150,184 +150,173 @@ type HealthcareApisFhirService_SystemData struct {
 }
 
 var HealthcareApisFhirService_Properties_AcrConfiguration_OciArtifactsFields = ubx.FieldMap{
-		"Digest": ubx.FieldSpec{WireName: "digest"},
-		"ImageName": ubx.FieldSpec{WireName: "image_name"},
-		"LoginServer": ubx.FieldSpec{WireName: "login_server"},
-	}
+	"Digest":      ubx.FieldSpec{WireName: "digest"},
+	"ImageName":   ubx.FieldSpec{WireName: "image_name"},
+	"LoginServer": ubx.FieldSpec{WireName: "login_server"},
+}
 
 var HealthcareApisFhirService_Properties_AcrConfigurationFields = ubx.FieldMap{
-		"LoginServers": ubx.FieldSpec{WireName: "login_servers"},
-		"OciArtifacts": ubx.FieldSpec{
-			WireName: "oci_artifacts",
-			Kind: "list",
-			Fields: HealthcareApisFhirService_Properties_AcrConfiguration_OciArtifactsFields,
-		},
-	}
+	"LoginServers": ubx.FieldSpec{WireName: "login_servers"},
+	"OciArtifacts": ubx.FieldSpec{
+		WireName: "oci_artifacts",
+		Kind:     "list",
+		Fields:   HealthcareApisFhirService_Properties_AcrConfiguration_OciArtifactsFields,
+	},
+}
 
 var HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProviders_ApplicationsFields = ubx.FieldMap{
-		"AllowedDataActions": ubx.FieldSpec{WireName: "allowed_data_actions"},
-		"Audience": ubx.FieldSpec{WireName: "audience"},
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-	}
+	"AllowedDataActions": ubx.FieldSpec{WireName: "allowed_data_actions"},
+	"Audience":           ubx.FieldSpec{WireName: "audience"},
+	"ClientId":           ubx.FieldSpec{WireName: "client_id"},
+}
 
 var HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProvidersFields = ubx.FieldMap{
-		"Applications": ubx.FieldSpec{
-			WireName: "applications",
-			Kind: "list",
-			Fields: HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProviders_ApplicationsFields,
-		},
-		"Authority": ubx.FieldSpec{WireName: "authority"},
-	}
+	"Applications": ubx.FieldSpec{
+		WireName: "applications",
+		Kind:     "list",
+		Fields:   HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProviders_ApplicationsFields,
+	},
+	"Authority": ubx.FieldSpec{WireName: "authority"},
+}
 
 var HealthcareApisFhirService_Properties_AuthenticationConfigurationFields = ubx.FieldMap{
-		"Audience": ubx.FieldSpec{WireName: "audience"},
-		"Authority": ubx.FieldSpec{WireName: "authority"},
-		"SmartIdentityProviders": ubx.FieldSpec{
-			WireName: "smart_identity_providers",
-			Kind: "list",
-			Fields: HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProvidersFields,
-		},
-		"SmartProxyEnabled": ubx.FieldSpec{WireName: "smart_proxy_enabled"},
-	}
+	"Audience":  ubx.FieldSpec{WireName: "audience"},
+	"Authority": ubx.FieldSpec{WireName: "authority"},
+	"SmartIdentityProviders": ubx.FieldSpec{
+		WireName: "smart_identity_providers",
+		Kind:     "list",
+		Fields:   HealthcareApisFhirService_Properties_AuthenticationConfiguration_SmartIdentityProvidersFields,
+	},
+	"SmartProxyEnabled": ubx.FieldSpec{WireName: "smart_proxy_enabled"},
+}
 
 var HealthcareApisFhirService_Properties_CorsConfigurationFields = ubx.FieldMap{
-		"AllowCredentials": ubx.FieldSpec{WireName: "allow_credentials"},
-		"Headers": ubx.FieldSpec{WireName: "headers"},
-		"MaxAge": ubx.FieldSpec{WireName: "max_age"},
-		"Methods": ubx.FieldSpec{WireName: "methods"},
-		"Origins": ubx.FieldSpec{WireName: "origins"},
-	}
+	"AllowCredentials": ubx.FieldSpec{WireName: "allow_credentials"},
+	"Headers":          ubx.FieldSpec{WireName: "headers"},
+	"MaxAge":           ubx.FieldSpec{WireName: "max_age"},
+	"Methods":          ubx.FieldSpec{WireName: "methods"},
+	"Origins":          ubx.FieldSpec{WireName: "origins"},
+}
 
 var HealthcareApisFhirService_Properties_Encryption_CustomerManagedKeyEncryptionFields = ubx.FieldMap{
-		"KeyEncryptionKeyUrl": ubx.FieldSpec{WireName: "key_encryption_key_url"},
-	}
+	"KeyEncryptionKeyUrl": ubx.FieldSpec{WireName: "key_encryption_key_url"},
+}
 
 var HealthcareApisFhirService_Properties_EncryptionFields = ubx.FieldMap{
-		"CustomerManagedKeyEncryption": ubx.FieldSpec{
-			WireName: "customer_managed_key_encryption",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_Encryption_CustomerManagedKeyEncryptionFields,
-		},
-	}
+	"CustomerManagedKeyEncryption": ubx.FieldSpec{
+		WireName: "customer_managed_key_encryption",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_Encryption_CustomerManagedKeyEncryptionFields,
+	},
+}
 
 var HealthcareApisFhirService_Properties_ExportConfigurationFields = ubx.FieldMap{
-		"StorageAccountName": ubx.FieldSpec{WireName: "storage_account_name"},
-	}
+	"StorageAccountName": ubx.FieldSpec{WireName: "storage_account_name"},
+}
 
 var HealthcareApisFhirService_Properties_ImplementationGuidesConfigurationFields = ubx.FieldMap{
-		"UsCoreMissingData": ubx.FieldSpec{WireName: "us_core_missing_data"},
-	}
+	"UsCoreMissingData": ubx.FieldSpec{WireName: "us_core_missing_data"},
+}
 
 var HealthcareApisFhirService_Properties_ImportConfigurationFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"InitialImportMode": ubx.FieldSpec{WireName: "initial_import_mode"},
-		"IntegrationDataStore": ubx.FieldSpec{WireName: "integration_data_store"},
-	}
+	"Enabled":              ubx.FieldSpec{WireName: "enabled"},
+	"InitialImportMode":    ubx.FieldSpec{WireName: "initial_import_mode"},
+	"IntegrationDataStore": ubx.FieldSpec{WireName: "integration_data_store"},
+}
 
 var HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var HealthcareApisFhirService_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var HealthcareApisFhirService_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var HealthcareApisFhirService_Properties_ResourceVersionPolicyConfigurationFields = ubx.FieldMap{
-		"Default": ubx.FieldSpec{WireName: "default"},
-		"ResourceTypeOverrides": ubx.FieldSpec{WireName: "resource_type_overrides"},
-	}
+	"Default":               ubx.FieldSpec{WireName: "default"},
+	"ResourceTypeOverrides": ubx.FieldSpec{WireName: "resource_type_overrides"},
+}
 
 var HealthcareApisFhirService_PropertiesFields = ubx.FieldMap{
-		"AcrConfiguration": ubx.FieldSpec{
-			WireName: "acr_configuration",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_AcrConfigurationFields,
-		},
-		"AuthenticationConfiguration": ubx.FieldSpec{
-			WireName: "authentication_configuration",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_AuthenticationConfigurationFields,
-		},
-		"CorsConfiguration": ubx.FieldSpec{
-			WireName: "cors_configuration",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_CorsConfigurationFields,
-		},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_EncryptionFields,
-		},
-		"EventState": ubx.FieldSpec{WireName: "event_state"},
-		"ExportConfiguration": ubx.FieldSpec{
-			WireName: "export_configuration",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_ExportConfigurationFields,
-		},
-		"ImplementationGuidesConfiguration": ubx.FieldSpec{
-			WireName: "implementation_guides_configuration",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_ImplementationGuidesConfigurationFields,
-		},
-		"ImportConfiguration": ubx.FieldSpec{
-			WireName: "import_configuration",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_ImportConfigurationFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: HealthcareApisFhirService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"ResourceVersionPolicyConfiguration": ubx.FieldSpec{
-			WireName: "resource_version_policy_configuration",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_Properties_ResourceVersionPolicyConfigurationFields,
-		},
-	}
-
-var HealthcareApisFhirService_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"AcrConfiguration": ubx.FieldSpec{
+		WireName: "acr_configuration",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_AcrConfigurationFields,
+	},
+	"AuthenticationConfiguration": ubx.FieldSpec{
+		WireName: "authentication_configuration",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_AuthenticationConfigurationFields,
+	},
+	"CorsConfiguration": ubx.FieldSpec{
+		WireName: "cors_configuration",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_CorsConfigurationFields,
+	},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_EncryptionFields,
+	},
+	"EventState": ubx.FieldSpec{WireName: "event_state"},
+	"ExportConfiguration": ubx.FieldSpec{
+		WireName: "export_configuration",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_ExportConfigurationFields,
+	},
+	"ImplementationGuidesConfiguration": ubx.FieldSpec{
+		WireName: "implementation_guides_configuration",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_ImplementationGuidesConfigurationFields,
+	},
+	"ImportConfiguration": ubx.FieldSpec{
+		WireName: "import_configuration",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_ImportConfigurationFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   HealthcareApisFhirService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"ResourceVersionPolicyConfiguration": ubx.FieldSpec{
+		WireName: "resource_version_policy_configuration",
+		Kind:     "object",
+		Fields:   HealthcareApisFhirService_Properties_ResourceVersionPolicyConfigurationFields,
+	},
+}
 
 type HealthcareApisFhirServiceConfig struct {
 	// The kind of the service.
 	Kind any
 	// Fhir Service properties.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type HealthcareApisFhirServiceAttrs struct {
@@ -345,13 +334,8 @@ var HealthcareApisFhirService = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: HealthcareApisFhirService_SystemDataFields,
+			Kind:     "object",
+			Fields:   HealthcareApisFhirService_PropertiesFields,
 		},
 	},
 }

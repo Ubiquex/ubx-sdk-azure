@@ -86,8 +86,6 @@ const VirtualwanRouteMap_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanRouteMapConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of RouteMap resource */
   properties?: VirtualwanRouteMap_Properties | Computed<VirtualwanRouteMap_Properties>;
 }
@@ -102,7 +100,6 @@ export interface VirtualwanRouteMapAttrs {
 export const VirtualwanRouteMap: ResourceBinding<VirtualwanRouteMapConfig, VirtualwanRouteMapAttrs> = {
   wireType: "azure_network_virtualwan_route_map",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

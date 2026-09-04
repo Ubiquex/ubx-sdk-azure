@@ -5,35 +5,35 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManageddatabasesManagedDatabase_Value_Properties_ExtendedAccessibilityInfo struct {
 	InaccessibilityReasonDescription any
-	InaccessibilityReasonErrorCode any
-	InaccessibilityReasonKind any
-	InaccessibilityReasonTdeKeyUri any
+	InaccessibilityReasonErrorCode   any
+	InaccessibilityReasonKind        any
+	InaccessibilityReasonTdeKeyUri   any
 }
 
 type ManageddatabasesManagedDatabase_Value_Properties struct {
-	AutoCompleteRestore any
-	CatalogCollation any
-	Collation any
-	CreateMode any
-	CreationDate any
+	AutoCompleteRestore                          any
+	CatalogCollation                             any
+	Collation                                    any
+	CreateMode                                   any
+	CreationDate                                 any
 	CrossSubscriptionRestorableDroppedDatabaseId any
-	CrossSubscriptionSourceDatabaseId any
-	CrossSubscriptionTargetManagedInstanceId any
-	DefaultSecondaryLocation any
-	EarliestRestorePoint any
-	ExtendedAccessibilityInfo any
-	FailoverGroupId any
-	IsLedgerOn any
-	LastBackupName any
-	LongTermRetentionBackupResourceId any
-	RecoverableDatabaseId any
-	RestorableDroppedDatabaseId any
-	RestorePointInTime any
-	SourceDatabaseId any
-	Status any
-	StorageContainerIdentity any
-	StorageContainerSasToken any
-	StorageContainerUri any
+	CrossSubscriptionSourceDatabaseId            any
+	CrossSubscriptionTargetManagedInstanceId     any
+	DefaultSecondaryLocation                     any
+	EarliestRestorePoint                         any
+	ExtendedAccessibilityInfo                    any
+	FailoverGroupId                              any
+	IsLedgerOn                                   any
+	LastBackupName                               any
+	LongTermRetentionBackupResourceId            any
+	RecoverableDatabaseId                        any
+	RestorableDroppedDatabaseId                  any
+	RestorePointInTime                           any
+	SourceDatabaseId                             any
+	Status                                       any
+	StorageContainerIdentity                     any
+	StorageContainerSasToken                     any
+	StorageContainerUri                          any
 }
 
 type ManageddatabasesManagedDatabase_Value struct {

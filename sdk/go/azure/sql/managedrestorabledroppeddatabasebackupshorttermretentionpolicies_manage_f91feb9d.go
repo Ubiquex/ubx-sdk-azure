@@ -9,8 +9,8 @@ type ManagedrestorabledroppeddatabasebackupshorttermretentionpoliciesManagedBack
 }
 
 var ManagedrestorabledroppeddatabasebackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolicy2_PropertiesFields = ubx.FieldMap{
-		"RetentionDays": ubx.FieldSpec{WireName: "retention_days"},
-	}
+	"RetentionDays": ubx.FieldSpec{WireName: "retention_days"},
+}
 
 type ManagedrestorabledroppeddatabasebackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolicy2Config struct {
 	// Properties of a short term retention policy
@@ -27,8 +27,8 @@ var ManagedrestorabledroppeddatabasebackupshorttermretentionpoliciesManagedBacku
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedrestorabledroppeddatabasebackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolicy2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedrestorabledroppeddatabasebackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolicy2_PropertiesFields,
 		},
 	},
 }

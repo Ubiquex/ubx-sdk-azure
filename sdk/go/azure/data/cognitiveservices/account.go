@@ -4,91 +4,91 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Account_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type Account_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type Account_Value_Properties_AbusePenalty struct {
-	Action any
-	Expiration any
+	Action              any
+	Expiration          any
 	RateLimitPercentage any
 }
 
 type Account_Value_Properties_AmlWorkspace struct {
 	IdentityClientId any
-	ResourceId any
+	ResourceId       any
 }
 
 type Account_Value_Properties_ApiProperties struct {
-	AadClientId any
-	AadTenantId any
-	EventHubConnectionString any
-	QnaAzureSearchEndpointId any
-	QnaAzureSearchEndpointKey any
-	QnaRuntimeEndpoint any
-	StatisticsEnabled any
+	AadClientId                    any
+	AadTenantId                    any
+	EventHubConnectionString       any
+	QnaAzureSearchEndpointId       any
+	QnaAzureSearchEndpointKey      any
+	QnaRuntimeEndpoint             any
+	StatisticsEnabled              any
 	StorageAccountConnectionString any
-	SuperUser any
-	WebsiteName any
+	SuperUser                      any
+	WebsiteName                    any
 }
 
 type Account_Value_Properties_CallRateLimit_Rules_MatchPatterns struct {
 	Method any
-	Path any
+	Path   any
 }
 
 type Account_Value_Properties_CallRateLimit_Rules struct {
-	Count any
+	Count                    any
 	DynamicThrottlingEnabled any
-	Key any
-	MatchPatterns any
-	MinCount any
-	RenewalPeriod any
+	Key                      any
+	MatchPatterns            any
+	MinCount                 any
+	RenewalPeriod            any
 }
 
 type Account_Value_Properties_CallRateLimit struct {
-	Count any
+	Count         any
 	RenewalPeriod any
-	Rules any
+	Rules         any
 }
 
 type Account_Value_Properties_Capabilities struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type Account_Value_Properties_CommitmentPlanAssociations struct {
-	CommitmentPlanId any
+	CommitmentPlanId       any
 	CommitmentPlanLocation any
 }
 
 type Account_Value_Properties_Encryption_KeyVaultProperties struct {
 	IdentityClientId any
-	KeyName any
-	KeyVaultUri any
-	KeyVersion any
+	KeyName          any
+	KeyVaultUri      any
+	KeyVersion       any
 }
 
 type Account_Value_Properties_Encryption struct {
-	KeySource any
+	KeySource          any
 	KeyVaultProperties any
 }
 
 type Account_Value_Properties_Locations_Regions struct {
 	Customsubdomain any
-	Name any
-	Value any
+	Name            any
+	Value           any
 }
 
 type Account_Value_Properties_Locations struct {
-	Regions any
+	Regions       any
 	RoutingMethod any
 }
 
@@ -97,21 +97,21 @@ type Account_Value_Properties_NetworkAcls_IpRules struct {
 }
 
 type Account_Value_Properties_NetworkAcls_VirtualNetworkRules struct {
-	Id any
+	Id                               any
 	IgnoreMissingVnetServiceEndpoint any
-	State any
+	State                            any
 }
 
 type Account_Value_Properties_NetworkAcls struct {
-	Bypass any
-	DefaultAction any
-	IpRules any
+	Bypass              any
+	DefaultAction       any
+	IpRules             any
 	VirtualNetworkRules any
 }
 
 type Account_Value_Properties_NetworkInjections struct {
-	Scenario any
-	SubnetArmId any
+	Scenario                   any
+	SubnetArmId                any
 	UseMicrosoftManagedNetwork any
 }
 
@@ -121,88 +121,88 @@ type Account_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpo
 
 type Account_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Account_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Account_Value_Properties_PrivateEndpointConnections struct {
-	Etag any
-	Location any
+	Etag       any
+	Location   any
 	Properties any
 }
 
 type Account_Value_Properties_RaiMonitorConfig struct {
 	AdxStorageResourceId any
-	IdentityClientId any
+	IdentityClientId     any
 }
 
 type Account_Value_Properties_SkuChangeInfo struct {
-	CountOfDowngrades any
+	CountOfDowngrades              any
 	CountOfUpgradesAfterDowngrades any
-	LastChangeDate any
+	LastChangeDate                 any
 }
 
 type Account_Value_Properties struct {
-	AbusePenalty any
-	AllowProjectManagement any
-	AllowedFqdnList any
-	AmlWorkspace any
-	ApiProperties any
-	AssociatedProjects any
-	CallRateLimit any
-	Capabilities any
-	CommitmentPlanAssociations any
-	CustomSubDomainName any
-	DateCreated any
-	DefaultProject any
-	DeletionDate any
-	DisableLocalAuth any
-	DynamicThrottlingEnabled any
-	Encryption any
-	Endpoint any
-	Endpoints any
-	InternalId any
-	IsMigrated any
-	Locations any
-	MigrationToken any
-	NetworkAcls any
-	NetworkInjections any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	QuotaLimit any
-	RaiMonitorConfig any
-	Restore any
+	AbusePenalty                  any
+	AllowProjectManagement        any
+	AllowedFqdnList               any
+	AmlWorkspace                  any
+	ApiProperties                 any
+	AssociatedProjects            any
+	CallRateLimit                 any
+	Capabilities                  any
+	CommitmentPlanAssociations    any
+	CustomSubDomainName           any
+	DateCreated                   any
+	DefaultProject                any
+	DeletionDate                  any
+	DisableLocalAuth              any
+	DynamicThrottlingEnabled      any
+	Encryption                    any
+	Endpoint                      any
+	Endpoints                     any
+	InternalId                    any
+	IsMigrated                    any
+	Locations                     any
+	MigrationToken                any
+	NetworkAcls                   any
+	NetworkInjections             any
+	PrivateEndpointConnections    any
+	ProvisioningState             any
+	PublicNetworkAccess           any
+	QuotaLimit                    any
+	RaiMonitorConfig              any
+	Restore                       any
 	RestrictOutboundNetworkAccess any
-	ScheduledPurgeDate any
-	SkuChangeInfo any
-	StoredCompletionsDisabled any
-	UserOwnedStorage any
+	ScheduledPurgeDate            any
+	SkuChangeInfo                 any
+	StoredCompletionsDisabled     any
+	UserOwnedStorage              any
 }
 
 type Account_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type Account_Value struct {
-	Etag any
-	Identity any
-	Kind any
-	Location any
+	Etag       any
+	Identity   any
+	Kind       any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type AccountConfig struct {
@@ -217,6 +217,5 @@ type AccountAttrs struct {
 
 var Account = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_account",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

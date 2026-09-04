@@ -8,13 +8,13 @@ type OpenapiCustomHostnameSites_Value_Properties_SiteResourceIds_Properties stru
 }
 
 type OpenapiCustomHostnameSites_Value_Properties_SiteResourceIds struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiCustomHostnameSites_Value_Properties struct {
-	CustomHostname any
-	Region any
+	CustomHostname  any
+	Region          any
 	SiteResourceIds any
 }
 

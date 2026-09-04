@@ -19,6 +19,5 @@ type VirtualnetworkAutoApprovedPrivateLinkServiceAttrs struct {
 
 var VirtualnetworkAutoApprovedPrivateLinkService = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_auto_approved_private_link_service",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

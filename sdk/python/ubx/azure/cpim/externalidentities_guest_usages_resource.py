@@ -30,31 +30,14 @@ _ExternalidentitiesGuestUsagesResource_PropertiesFields = {
     "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
 }
 
-_ExternalidentitiesGuestUsagesResource_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class ExternalidentitiesGuestUsagesResourceConfig:
-    # An identifier that represents the Guest Usages resource.
-    id: Any = None
     # Location of the Guest Usages resource.
     location: Any = None
-    # The name of the Guest Usages resource.
-    name: Any = None
     # Guest Usages Resource Properties
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
     # Key-value pairs of additional resource provisioning properties.
     tags: Any = None
-    # The type of the Guest Usages resource.
-    type: Any = None
 
 @dataclasses.dataclass
 class ExternalidentitiesGuestUsagesResourceAttrs:
@@ -76,20 +59,12 @@ class ExternalidentitiesGuestUsagesResourceAttrs:
 ExternalidentitiesGuestUsagesResource = ubx.ResourceBinding(
     wire_type="azure_cpim_externalidentities_guest_usages_resource",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
         "location": ubx.FieldSpec(wire_name="location"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ExternalidentitiesGuestUsagesResource_PropertiesFields,
         ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_ExternalidentitiesGuestUsagesResource_SystemDataFields,
-        ),
         "tags": ubx.FieldSpec(wire_name="tags"),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

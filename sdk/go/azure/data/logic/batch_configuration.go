@@ -4,37 +4,37 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BatchConfiguration_Value_Properties_ReleaseCriteria_Recurrence_Schedule_MonthlyOccurrences struct {
-	Day any
+	Day        any
 	Occurrence any
 }
 
 type BatchConfiguration_Value_Properties_ReleaseCriteria_Recurrence_Schedule struct {
-	Hours any
-	Minutes any
-	MonthDays any
+	Hours              any
+	Minutes            any
+	MonthDays          any
 	MonthlyOccurrences any
-	WeekDays any
+	WeekDays           any
 }
 
 type BatchConfiguration_Value_Properties_ReleaseCriteria_Recurrence struct {
-	EndTime any
+	EndTime   any
 	Frequency any
-	Interval any
-	Schedule any
+	Interval  any
+	Schedule  any
 	StartTime any
-	TimeZone any
+	TimeZone  any
 }
 
 type BatchConfiguration_Value_Properties_ReleaseCriteria struct {
-	BatchSize any
+	BatchSize    any
 	MessageCount any
-	Recurrence any
+	Recurrence   any
 }
 
 type BatchConfiguration_Value_Properties struct {
-	BatchGroupName any
-	ChangedTime any
-	CreatedTime any
+	BatchGroupName  any
+	ChangedTime     any
+	CreatedTime     any
 	ReleaseCriteria any
 }
 
@@ -43,26 +43,26 @@ type BatchConfiguration_Value struct {
 }
 
 type BatchConfigurationConfig struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
-	ResourceGroupName any
-	SubscriptionId any
+	ResourceGroupName      any
+	SubscriptionId         any
 }
 
 type BatchConfigurationAttrs struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
-	ResourceGroupName any
-	SubscriptionId any
-	Value any
+	ResourceGroupName      any
+	SubscriptionId         any
+	Value                  any
 }
 
 var BatchConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_logic_batch_configuration",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":             ubx.FieldSpec{WireName: "api_version"},
 		"IntegrationAccountName": ubx.FieldSpec{WireName: "integration_account_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":      ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":         ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

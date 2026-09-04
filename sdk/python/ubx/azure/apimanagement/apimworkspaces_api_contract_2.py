@@ -7,6 +7,21 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class ApimworkspacesApiContract2_Properties_ApiVersionSet:
+    # Description of API Version Set.
+    description: Any = None
+    # Identifier for existing API Version Set. Omit this value to create a new Version Set.
+    id: Any = None
+    # The display Name of the API Version Set.
+    name: Any = None
+    # Name of HTTP header parameter that indicates the API Version if versioningScheme is set to `header`.
+    version_header_name: Any = None
+    # Name of query parameter that indicates the API Version if versioningScheme is set to `query`.
+    version_query_name: Any = None
+    # An value that determines where the API Version identifier will be located in a HTTP request.
+    versioning_scheme: Any = None
+
+@dataclasses.dataclass
 class ApimworkspacesApiContract2_Properties_WsdlSelector:
     # Name of endpoint(port) to import from WSDL
     wsdl_endpoint_name: Any = None
@@ -17,14 +32,37 @@ class ApimworkspacesApiContract2_Properties_WsdlSelector:
 class ApimworkspacesApiContract2_Properties:
     # Type of API to create. * `http` creates a REST API * `soap` creates a SOAP pass-through API * `websocket` creates websocket API * `graphql` creates GraphQL API. New types can be added in the future.
     api_type: Any = None
+    # An API Version Set contains the common configuration for a set of API Versions relating
+    api_version_set: Any = None
+    # API name. Must be 1 to 300 characters long.
+    display_name: Any = None
     # Format of the Content in which the API is getting imported. New formats can be added in the future
     format: Any = None
+    # Relative URL uniquely identifying this API and all of its resource paths within the API Management service instance. It is appended to the API endpoint base URL specified during the service instance creation to form a public URL for this API.
+    path: Any = None
+    # Describes on which protocols the operations in this API can be invoked.
+    protocols: Any = None
+    # The provisioning state
+    provisioning_state: Any = None
+    # Absolute URL of the backend service implementing this API. Cannot be more than 2000 characters long.
+    service_url: Any = None
+    # API identifier of the source API.
+    source_api_id: Any = None
     # Strategy of translating required query parameters to template ones. By default has value 'template'. Possible values: 'template', 'query'
     translate_required_query_parameters: Any = None
     # Content value when Importing an API.
     value: Any = None
     # Criteria to limit import of WSDL to a subset of the document.
     wsdl_selector: Any = None
+
+_ApimworkspacesApiContract2_Properties_ApiVersionSetFields = {
+    "description": ubx.FieldSpec(wire_name="description"),
+    "id": ubx.FieldSpec(wire_name="id"),
+    "name": ubx.FieldSpec(wire_name="name"),
+    "version_header_name": ubx.FieldSpec(wire_name="version_header_name"),
+    "version_query_name": ubx.FieldSpec(wire_name="version_query_name"),
+    "versioning_scheme": ubx.FieldSpec(wire_name="versioning_scheme"),
+}
 
 _ApimworkspacesApiContract2_Properties_WsdlSelectorFields = {
     "wsdl_endpoint_name": ubx.FieldSpec(wire_name="wsdl_endpoint_name"),
@@ -33,7 +71,18 @@ _ApimworkspacesApiContract2_Properties_WsdlSelectorFields = {
 
 _ApimworkspacesApiContract2_PropertiesFields = {
     "api_type": ubx.FieldSpec(wire_name="api_type"),
+    "api_version_set": ubx.FieldSpec(
+        wire_name="api_version_set",
+        kind="object",
+        fields=_ApimworkspacesApiContract2_Properties_ApiVersionSetFields,
+    ),
+    "display_name": ubx.FieldSpec(wire_name="display_name"),
     "format": ubx.FieldSpec(wire_name="format"),
+    "path": ubx.FieldSpec(wire_name="path"),
+    "protocols": ubx.FieldSpec(wire_name="protocols"),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+    "service_url": ubx.FieldSpec(wire_name="service_url"),
+    "source_api_id": ubx.FieldSpec(wire_name="source_api_id"),
     "translate_required_query_parameters": ubx.FieldSpec(wire_name="translate_required_query_parameters"),
     "value": ubx.FieldSpec(wire_name="value"),
     "wsdl_selector": ubx.FieldSpec(

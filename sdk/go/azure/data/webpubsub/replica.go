@@ -4,22 +4,22 @@ package webpubsub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Replica_Value_Properties struct {
-	ProvisioningState any
+	ProvisioningState     any
 	RegionEndpointEnabled any
-	ResourceStopped any
+	ResourceStopped       any
 }
 
 type Replica_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type Replica_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type ReplicaConfig struct {
@@ -28,7 +28,7 @@ type ReplicaConfig struct {
 
 type ReplicaAttrs struct {
 	// The URL the client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// List of the replica
 	Value any

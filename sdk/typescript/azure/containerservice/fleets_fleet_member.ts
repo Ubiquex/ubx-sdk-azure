@@ -112,8 +112,6 @@ const FleetsFleetMember_PropertiesFields: FieldMap = {
 };
 
 export interface FleetsFleetMemberConfig {
-  /** If eTag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields. */
-  eTag?: string | Computed<string>;
   /** A member of the Fleet. It contains a reference to an existing Kubernetes cluster on Azure. */
   properties?: FleetsFleetMember_Properties | Computed<FleetsFleetMember_Properties>;
 }
@@ -128,7 +126,6 @@ export interface FleetsFleetMemberAttrs {
 export const FleetsFleetMember: ResourceBinding<FleetsFleetMemberConfig, FleetsFleetMemberAttrs> = {
   wireType: "azure_containerservice_fleets_fleet_member",
   fields: {
-    eTag: "e_tag",
     properties: {
       wireName: "properties",
       kind: "object",

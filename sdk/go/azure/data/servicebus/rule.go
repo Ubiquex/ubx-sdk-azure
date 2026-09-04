@@ -4,48 +4,48 @@ package servicebus
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Rule_Value_Properties_Action struct {
-	CompatibilityLevel any
+	CompatibilityLevel    any
 	RequiresPreprocessing any
-	SqlExpression any
+	SqlExpression         any
 }
 
 type Rule_Value_Properties_CorrelationFilter struct {
-	ContentType any
-	CorrelationId any
-	Label any
-	MessageId any
-	Properties any
-	ReplyTo any
-	ReplyToSessionId any
+	ContentType           any
+	CorrelationId         any
+	Label                 any
+	MessageId             any
+	Properties            any
+	ReplyTo               any
+	ReplyToSessionId      any
 	RequiresPreprocessing any
-	SessionId any
-	To any
+	SessionId             any
+	To                    any
 }
 
 type Rule_Value_Properties struct {
-	Action any
+	Action            any
 	CorrelationFilter any
-	FilterType any
-	SqlFilter any
+	FilterType        any
+	SqlFilter         any
 }
 
 type Rule_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type RuleConfig struct {
-	NamespaceName any
+	NamespaceName    any
 	SubscriptionName any
-	TopicName any
+	TopicName        any
 }
 
 type RuleAttrs struct {
 	NamespaceName any
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	SubscriptionName any
-	TopicName any
+	TopicName        any
 	// The Rule items on this page
 	Value any
 }
@@ -53,8 +53,8 @@ type RuleAttrs struct {
 var Rule = ubx.DataSourceBinding{
 	WireType: "azure_servicebus_rule",
 	Fields: ubx.FieldMap{
-		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
+		"NamespaceName":    ubx.FieldSpec{WireName: "namespace_name"},
 		"SubscriptionName": ubx.FieldSpec{WireName: "subscription_name"},
-		"TopicName": ubx.FieldSpec{WireName: "topic_name"},
+		"TopicName":        ubx.FieldSpec{WireName: "topic_name"},
 	},
 }

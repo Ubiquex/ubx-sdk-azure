@@ -4,27 +4,27 @@ package workloads
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SapvirtualinstanceSapcentralServerInstance_Value_Properties_EnqueueReplicationServerProperties struct {
-	ErsVersion any
-	Health any
-	Hostname any
-	InstanceNo any
-	IpAddress any
-	KernelPatch any
+	ErsVersion    any
+	Health        any
+	Hostname      any
+	InstanceNo    any
+	IpAddress     any
+	KernelPatch   any
 	KernelVersion any
 }
 
 type SapvirtualinstanceSapcentralServerInstance_Value_Properties_EnqueueServerProperties struct {
-	Health any
-	Hostname any
+	Health    any
+	Hostname  any
 	IpAddress any
-	Port any
+	Port      any
 }
 
 type SapvirtualinstanceSapcentralServerInstance_Value_Properties_Errors_Properties_Details struct {
 }
 
 type SapvirtualinstanceSapcentralServerInstance_Value_Properties_Errors_Properties struct {
-	Code any
+	Code    any
 	Details any
 	Message any
 }
@@ -35,7 +35,7 @@ type SapvirtualinstanceSapcentralServerInstance_Value_Properties_Errors struct {
 
 type SapvirtualinstanceSapcentralServerInstance_Value_Properties_GatewayServerProperties struct {
 	Health any
-	Port any
+	Port   any
 }
 
 type SapvirtualinstanceSapcentralServerInstance_Value_Properties_LoadBalancerDetails struct {
@@ -43,36 +43,36 @@ type SapvirtualinstanceSapcentralServerInstance_Value_Properties_LoadBalancerDet
 }
 
 type SapvirtualinstanceSapcentralServerInstance_Value_Properties_MessageServerProperties struct {
-	Health any
-	Hostname any
-	HttpPort any
-	HttpsPort any
+	Health         any
+	Hostname       any
+	HttpPort       any
+	HttpsPort      any
 	InternalMsPort any
-	IpAddress any
-	MsPort any
+	IpAddress      any
+	MsPort         any
 }
 
 type SapvirtualinstanceSapcentralServerInstance_Value_Properties_VmDetails struct {
-	StorageDetails any
-	Type any
+	StorageDetails   any
+	Type             any
 	VirtualMachineId any
 }
 
 type SapvirtualinstanceSapcentralServerInstance_Value_Properties struct {
 	EnqueueReplicationServerProperties any
-	EnqueueServerProperties any
-	Errors any
-	GatewayServerProperties any
-	Health any
-	InstanceNo any
-	KernelPatch any
-	KernelVersion any
-	LoadBalancerDetails any
-	MessageServerProperties any
-	ProvisioningState any
-	Status any
-	Subnet any
-	VmDetails any
+	EnqueueServerProperties            any
+	Errors                             any
+	GatewayServerProperties            any
+	Health                             any
+	InstanceNo                         any
+	KernelPatch                        any
+	KernelVersion                      any
+	LoadBalancerDetails                any
+	MessageServerProperties            any
+	ProvisioningState                  any
+	Status                             any
+	Subnet                             any
+	VmDetails                          any
 }
 
 type SapvirtualinstanceSapcentralServerInstance_Value struct {
@@ -85,7 +85,7 @@ type SapvirtualinstanceSapcentralServerInstanceConfig struct {
 
 type SapvirtualinstanceSapcentralServerInstanceAttrs struct {
 	// Gets the value of next link.
-	NextLink any
+	NextLink               any
 	SapVirtualInstanceName any
 	// Gets the list of SAP central services instance resources.
 	Value any

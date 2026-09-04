@@ -17,12 +17,12 @@ type ApimloggersLoggerContract2_Properties struct {
 }
 
 var ApimloggersLoggerContract2_PropertiesFields = ubx.FieldMap{
-		"Credentials": ubx.FieldSpec{WireName: "credentials"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"IsBuffered": ubx.FieldSpec{WireName: "is_buffered"},
-		"LoggerType": ubx.FieldSpec{WireName: "logger_type"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"Credentials": ubx.FieldSpec{WireName: "credentials"},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"IsBuffered":  ubx.FieldSpec{WireName: "is_buffered"},
+	"LoggerType":  ubx.FieldSpec{WireName: "logger_type"},
+	"ResourceId":  ubx.FieldSpec{WireName: "resource_id"},
+}
 
 type ApimloggersLoggerContract2Config struct {
 	// The Logger entity in API Management represents an event sink that you can use to log API Management events. Currently the Logger entity supports logging API Management events to Azure Event Hubs.
@@ -39,8 +39,8 @@ var ApimloggersLoggerContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimloggersLoggerContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimloggersLoggerContract2_PropertiesFields,
 		},
 	},
 }

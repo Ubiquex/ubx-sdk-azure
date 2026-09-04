@@ -11,9 +11,9 @@ type ServeradvancedthreatprotectionsettingsServerAdvancedThreatProtection_Proper
 }
 
 var ServeradvancedthreatprotectionsettingsServerAdvancedThreatProtection_PropertiesFields = ubx.FieldMap{
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+	"State":        ubx.FieldSpec{WireName: "state"},
+}
 
 type ServeradvancedthreatprotectionsettingsServerAdvancedThreatProtectionConfig struct {
 	// Properties of an Advanced Threat Protection state.
@@ -30,8 +30,8 @@ var ServeradvancedthreatprotectionsettingsServerAdvancedThreatProtection = ubx.R
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServeradvancedthreatprotectionsettingsServerAdvancedThreatProtection_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServeradvancedthreatprotectionsettingsServerAdvancedThreatProtection_PropertiesFields,
 		},
 	},
 }

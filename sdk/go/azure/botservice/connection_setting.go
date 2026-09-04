@@ -4,7 +4,7 @@ package botservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConnectionSetting_Properties_Parameters struct {
-	Key any
+	Key   any
 	Value any
 }
 
@@ -32,26 +32,26 @@ type ConnectionSetting_Properties struct {
 }
 
 var ConnectionSetting_Properties_ParametersFields = ubx.FieldMap{
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Key":   ubx.FieldSpec{WireName: "key"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var ConnectionSetting_PropertiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "list",
-			Fields: ConnectionSetting_Properties_ParametersFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Scopes": ubx.FieldSpec{WireName: "scopes"},
-		"ServiceProviderDisplayName": ubx.FieldSpec{WireName: "service_provider_display_name"},
-		"ServiceProviderId": ubx.FieldSpec{WireName: "service_provider_id"},
-		"SettingId": ubx.FieldSpec{WireName: "setting_id"},
-	}
+	"ClientId":     ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
+	"Id":           ubx.FieldSpec{WireName: "id"},
+	"Name":         ubx.FieldSpec{WireName: "name"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "list",
+		Fields:   ConnectionSetting_Properties_ParametersFields,
+	},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"Scopes":                     ubx.FieldSpec{WireName: "scopes"},
+	"ServiceProviderDisplayName": ubx.FieldSpec{WireName: "service_provider_display_name"},
+	"ServiceProviderId":          ubx.FieldSpec{WireName: "service_provider_id"},
+	"SettingId":                  ubx.FieldSpec{WireName: "setting_id"},
+}
 
 type ConnectionSettingConfig struct {
 	// Properties for a Connection Setting Item
@@ -68,8 +68,8 @@ var ConnectionSetting = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ConnectionSetting_PropertiesFields,
+			Kind:     "object",
+			Fields:   ConnectionSetting_PropertiesFields,
 		},
 	},
 }

@@ -13,10 +13,10 @@ type FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerErr
 
 type FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError struct {
@@ -68,82 +68,79 @@ type FleetsAutoUpgradeProfile_Properties struct {
 }
 
 var FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
-var FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_Details_DetailsFields = ubx.FieldMap{
-	}
+var FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_Details_DetailsFields = ubx.FieldMap{}
 
 var FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_DetailsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_Details_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_Details_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerError_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatusFields = ubx.FieldMap{
-		"LastTriggerError": ubx.FieldSpec{
-			WireName: "last_trigger_error",
-			Kind: "object",
-			Fields: FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerErrorFields,
-		},
-		"LastTriggerStatus": ubx.FieldSpec{WireName: "last_trigger_status"},
-		"LastTriggerUpgradeVersions": ubx.FieldSpec{WireName: "last_trigger_upgrade_versions"},
-		"LastTriggeredAt": ubx.FieldSpec{WireName: "last_triggered_at"},
-	}
+	"LastTriggerError": ubx.FieldSpec{
+		WireName: "last_trigger_error",
+		Kind:     "object",
+		Fields:   FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatus_LastTriggerErrorFields,
+	},
+	"LastTriggerStatus":          ubx.FieldSpec{WireName: "last_trigger_status"},
+	"LastTriggerUpgradeVersions": ubx.FieldSpec{WireName: "last_trigger_upgrade_versions"},
+	"LastTriggeredAt":            ubx.FieldSpec{WireName: "last_triggered_at"},
+}
 
 var FleetsAutoUpgradeProfile_Properties_NodeImageSelectionFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var FleetsAutoUpgradeProfile_PropertiesFields = ubx.FieldMap{
-		"AutoUpgradeProfileStatus": ubx.FieldSpec{
-			WireName: "auto_upgrade_profile_status",
-			Kind: "object",
-			Fields: FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatusFields,
-		},
-		"Channel": ubx.FieldSpec{WireName: "channel"},
-		"Disabled": ubx.FieldSpec{WireName: "disabled"},
-		"LongTermSupport": ubx.FieldSpec{WireName: "long_term_support"},
-		"NodeImageSelection": ubx.FieldSpec{
-			WireName: "node_image_selection",
-			Kind: "object",
-			Fields: FleetsAutoUpgradeProfile_Properties_NodeImageSelectionFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TargetKubernetesVersion": ubx.FieldSpec{WireName: "target_kubernetes_version"},
-		"UpdateStrategyId": ubx.FieldSpec{WireName: "update_strategy_id"},
-	}
+	"AutoUpgradeProfileStatus": ubx.FieldSpec{
+		WireName: "auto_upgrade_profile_status",
+		Kind:     "object",
+		Fields:   FleetsAutoUpgradeProfile_Properties_AutoUpgradeProfileStatusFields,
+	},
+	"Channel":         ubx.FieldSpec{WireName: "channel"},
+	"Disabled":        ubx.FieldSpec{WireName: "disabled"},
+	"LongTermSupport": ubx.FieldSpec{WireName: "long_term_support"},
+	"NodeImageSelection": ubx.FieldSpec{
+		WireName: "node_image_selection",
+		Kind:     "object",
+		Fields:   FleetsAutoUpgradeProfile_Properties_NodeImageSelectionFields,
+	},
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+	"TargetKubernetesVersion": ubx.FieldSpec{WireName: "target_kubernetes_version"},
+	"UpdateStrategyId":        ubx.FieldSpec{WireName: "update_strategy_id"},
+}
 
 type FleetsAutoUpgradeProfileConfig struct {
-	// If eTag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.
-	ETag any
 	// The properties of the AutoUpgradeProfile.
 	Properties any
 }
@@ -158,11 +155,10 @@ type FleetsAutoUpgradeProfileAttrs struct {
 var FleetsAutoUpgradeProfile = ubx.ResourceBinding{
 	WireType: "azure_containerservice_fleets_auto_upgrade_profile",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FleetsAutoUpgradeProfile_PropertiesFields,
+			Kind:     "object",
+			Fields:   FleetsAutoUpgradeProfile_PropertiesFields,
 		},
 	},
 }

@@ -10,9 +10,12 @@ import ubx_sdk as ubx
 class OpenapiActionResponse_Properties:
     # Logic App Callback URL for this specific workflow.
     trigger_uri: Any = None
+    # The name of the logic app's workflow.
+    workflow_id: Any = None
 
 _OpenapiActionResponse_PropertiesFields = {
     "trigger_uri": ubx.FieldSpec(wire_name="trigger_uri"),
+    "workflow_id": ubx.FieldSpec(wire_name="workflow_id"),
 }
 
 @dataclasses.dataclass

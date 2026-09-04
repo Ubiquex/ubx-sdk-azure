@@ -6,17 +6,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiCustomDomain_Value_Properties_CustomHttpsParameters struct {
 	CertificateSource any
 	MinimumTlsVersion any
-	ProtocolType any
+	ProtocolType      any
 }
 
 type OpenapiCustomDomain_Value_Properties struct {
-	CustomHttpsParameters any
-	CustomHttpsProvisioningState any
+	CustomHttpsParameters           any
+	CustomHttpsProvisioningState    any
 	CustomHttpsProvisioningSubstate any
-	HostName any
-	ProvisioningState any
-	ResourceState any
-	ValidationData any
+	HostName                        any
+	ProvisioningState               any
+	ResourceState                   any
+	ValidationData                  any
 }
 
 type OpenapiCustomDomain_Value struct {
@@ -25,13 +25,13 @@ type OpenapiCustomDomain_Value struct {
 
 type OpenapiCustomDomainConfig struct {
 	EndpointName any
-	ProfileName any
+	ProfileName  any
 }
 
 type OpenapiCustomDomainAttrs struct {
 	EndpointName any
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	// The CustomDomain items on this page
 	Value any
@@ -41,6 +41,6 @@ var OpenapiCustomDomain = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_custom_domain",
 	Fields: ubx.FieldMap{
 		"EndpointName": ubx.FieldSpec{WireName: "endpoint_name"},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
+		"ProfileName":  ubx.FieldSpec{WireName: "profile_name"},
 	},
 }

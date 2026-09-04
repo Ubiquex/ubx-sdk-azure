@@ -4,19 +4,19 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOutboundEnvironmentEndpoint_Value_Endpoints_EndpointDetails struct {
-	IpAddress any
+	IpAddress    any
 	IsAccessible any
-	Latency any
-	Port any
+	Latency      any
+	Port         any
 }
 
 type OpenapiOutboundEnvironmentEndpoint_Value_Endpoints struct {
-	DomainName any
+	DomainName      any
 	EndpointDetails any
 }
 
 type OpenapiOutboundEnvironmentEndpoint_Value struct {
-	Category any
+	Category  any
 	Endpoints any
 }
 

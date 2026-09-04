@@ -4,72 +4,72 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo_Payload struct {
-	FileName any
-	Hash any
+	FileName   any
+	Hash       any
 	Identifier any
-	Url any
+	Url        any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo struct {
 	PackageVersion any
-	Payload any
+	Payload        any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Cluster struct {
 	AzureServiceEndpoint any
-	CloudAccountName any
-	ClusterPattern any
-	HardwareClass any
-	Name any
-	WitnessPath any
-	WitnessType any
+	CloudAccountName     any
+	ClusterPattern       any
+	HardwareClass        any
+	Name                 any
+	WitnessPath          any
+	WitnessType          any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_AdapterPropertyOverrides struct {
-	JumboPacket any
-	NetworkDirect any
+	JumboPacket             any
+	NetworkDirect           any
 	NetworkDirectTechnology any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_QosPolicyOverrides struct {
-	BandwidthPercentageSmb any
+	BandwidthPercentageSmb         any
 	PriorityValue8021ActionCluster any
-	PriorityValue8021ActionSmb any
+	PriorityValue8021ActionSmb     any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_VirtualSwitchConfigurationOverrides struct {
-	EnableIov any
+	EnableIov              any
 	LoadBalancingAlgorithm any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents struct {
-	Adapter any
-	AdapterPropertyOverrides any
-	Name any
-	OverrideAdapterProperty any
-	OverrideQosPolicy any
-	OverrideVirtualSwitchConfiguration any
-	QosPolicyOverrides any
-	TrafficType any
+	Adapter                             any
+	AdapterPropertyOverrides            any
+	Name                                any
+	OverrideAdapterProperty             any
+	OverrideQosPolicy                   any
+	OverrideVirtualSwitchConfiguration  any
+	QosPolicyOverrides                  any
+	TrafficType                         any
 	VirtualSwitchConfigurationOverrides any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterIpconfig struct {
-	AddressPrefix any
-	Name any
+	AddressPrefix      any
+	Name               any
 	NetworkAdapterName any
-	VlanId any
+	VlanId             any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterProperties struct {
-	BandwidthPercentageSmb any
-	JumboPacket any
+	BandwidthPercentageSmb         any
+	JumboPacket                    any
 	PriorityValue8021ActionCluster any
-	PriorityValue8021ActionSmb any
+	PriorityValue8021ActionSmb     any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig struct {
-	AdapterIpconfig any
+	AdapterIpconfig   any
 	AdapterProperties any
 }
 
@@ -78,54 +78,54 @@ type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_De
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks_StorageAdapterIpinfo struct {
-	Ipv4Address any
+	Ipv4Address  any
 	PhysicalNode any
-	SubnetMask any
+	SubnetMask   any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks struct {
-	Name any
-	NetworkAdapterName any
+	Name                 any
+	NetworkAdapterName   any
 	StorageAdapterIpinfo any
-	VlanId any
+	VlanId               any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork struct {
-	EnableStorageAutoIp any
-	Intents any
-	SanNetworks any
+	EnableStorageAutoIp           any
+	Intents                       any
+	SanNetworks                   any
 	StorageConnectivitySwitchless any
-	StorageNetworks any
+	StorageNetworks               any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_DnsZones struct {
 	DnsForwarder any
-	DnsZoneName any
+	DnsZoneName  any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_IpPools struct {
-	EndingAddress any
+	EndingAddress   any
 	StartingAddress any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork struct {
 	DnsServerConfig any
-	DnsServers any
-	DnsZones any
-	Gateway any
-	IpPools any
-	SubnetMask any
-	UseDhcp any
+	DnsServers      any
+	DnsZones        any
+	Gateway         any
+	IpPools         any
+	SubnetMask      any
+	UseDhcp         any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_LocalAvailabilityZones struct {
 	LocalAvailabilityZoneName any
-	Nodes any
+	Nodes                     any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Observability struct {
-	EpisodicDataUpload any
-	EuLocation any
+	EpisodicDataUpload  any
+	EuLocation          any
 	StreamingDataClient any
 }
 
@@ -135,12 +135,12 @@ type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_De
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_PhysicalNodes struct {
 	Ipv4Address any
-	Name any
+	Name        any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration_NetworkController struct {
-	MacAddressPoolStart any
-	MacAddressPoolStop any
+	MacAddressPoolStart          any
+	MacAddressPoolStop           any
 	NetworkVirtualizationEnabled any
 }
 
@@ -149,77 +149,77 @@ type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_De
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Secrets struct {
-	EceSecretName any
+	EceSecretName  any
 	SecretLocation any
-	SecretName any
+	SecretName     any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecuritySettings struct {
-	BitlockerBootVolume any
-	BitlockerDataVolumes any
-	CredentialGuardEnforced any
-	DriftControlEnforced any
-	DrtmProtection any
-	HvciProtection any
+	BitlockerBootVolume           any
+	BitlockerDataVolumes          any
+	CredentialGuardEnforced       any
+	DriftControlEnforced          any
+	DrtmProtection                any
+	HvciProtection                any
 	SideChannelMitigationEnforced any
-	SmbClusterEncryption any
-	SmbSigningEnforced any
-	WdacEnforced any
+	SmbClusterEncryption          any
+	SmbSigningEnforced            any
+	WdacEnforced                  any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_S2d struct {
 	OverprovisioningRatio any
-	VolumeType any
+	VolumeType            any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_San struct {
 	InfraPerfLunId any
-	InfraVolLunId any
+	InfraVolLunId  any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage struct {
 	ConfigurationMode any
-	S2d any
-	San any
-	StorageType any
+	S2d               any
+	San               any
+	StorageType       any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData struct {
-	AdouPath any
-	AssemblyInfo any
-	Cluster any
-	DomainFqdn any
-	HostNetwork any
-	IdentityProvider any
-	InfrastructureNetwork any
-	IsManagementCluster any
+	AdouPath               any
+	AssemblyInfo           any
+	Cluster                any
+	DomainFqdn             any
+	HostNetwork            any
+	IdentityProvider       any
+	InfrastructureNetwork  any
+	IsManagementCluster    any
 	LocalAvailabilityZones any
-	NamingPrefix any
-	Observability any
-	OptionalServices any
-	PhysicalNodes any
-	SdnIntegration any
-	Secrets any
-	SecretsLocation any
-	SecuritySettings any
-	Storage any
+	NamingPrefix           any
+	Observability          any
+	OptionalServices       any
+	PhysicalNodes          any
+	SdnIntegration         any
+	Secrets                any
+	SecretsLocation        any
+	SecuritySettings       any
+	Storage                any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_PartnerProperties struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_SbeDeploymentInfo struct {
-	Family any
-	Publisher any
+	Family                  any
+	Publisher               any
 	SbeManifestCreationDate any
-	SbeManifestSource any
-	Version any
+	SbeManifestSource       any
+	Version                 any
 }
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo struct {
-	CredentialList any
+	CredentialList    any
 	PartnerProperties any
 	SbeDeploymentInfo any
 }
@@ -231,26 +231,26 @@ type HciDeploymentSetting_Value_Properties_DeploymentConfiguration_ScaleUnits st
 
 type HciDeploymentSetting_Value_Properties_DeploymentConfiguration struct {
 	ScaleUnits any
-	Version any
+	Version    any
 }
 
 type HciDeploymentSetting_Value_Properties_ReportedProperties_DeploymentStatus_Steps_Steps struct {
 }
 
 type HciDeploymentSetting_Value_Properties_ReportedProperties_DeploymentStatus_Steps struct {
-	Description any
-	EndTimeUtc any
-	Exception any
+	Description   any
+	EndTimeUtc    any
+	Exception     any
 	FullStepIndex any
-	Name any
-	StartTimeUtc any
-	Status any
-	Steps any
+	Name          any
+	StartTimeUtc  any
+	Status        any
+	Steps         any
 }
 
 type HciDeploymentSetting_Value_Properties_ReportedProperties_DeploymentStatus struct {
 	Status any
-	Steps any
+	Steps  any
 }
 
 type HciDeploymentSetting_Value_Properties_ReportedProperties struct {
@@ -259,12 +259,12 @@ type HciDeploymentSetting_Value_Properties_ReportedProperties struct {
 }
 
 type HciDeploymentSetting_Value_Properties struct {
-	ArcNodeResourceIds any
+	ArcNodeResourceIds      any
 	DeploymentConfiguration any
-	DeploymentMode any
-	OperationType any
-	ProvisioningState any
-	ReportedProperties any
+	DeploymentMode          any
+	OperationType           any
+	ProvisioningState       any
+	ReportedProperties      any
 }
 
 type HciDeploymentSetting_Value struct {

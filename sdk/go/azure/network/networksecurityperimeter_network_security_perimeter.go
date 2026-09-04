@@ -11,9 +11,9 @@ type NetworksecurityperimeterNetworkSecurityPerimeter_Properties struct {
 }
 
 var NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields = ubx.FieldMap{
-		"PerimeterGuid": ubx.FieldSpec{WireName: "perimeter_guid"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PerimeterGuid":     ubx.FieldSpec{WireName: "perimeter_guid"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type NetworksecurityperimeterNetworkSecurityPerimeterConfig struct {
 	// Properties of network security perimeter.
@@ -30,8 +30,8 @@ var NetworksecurityperimeterNetworkSecurityPerimeter = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields,
 		},
 	},
 }

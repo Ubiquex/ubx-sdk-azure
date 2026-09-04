@@ -4,14 +4,14 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteCircuit_Properties_Authorizations_Properties struct {
-	AuthorizationKey any
+	AuthorizationKey       any
 	AuthorizationUseStatus any
-	ConnectionResourceUri any
-	ProvisioningState any
+	ConnectionResourceUri  any
+	ProvisioningState      any
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Authorizations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -21,97 +21,97 @@ type ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePort struct {
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties_Ipv6CircuitConnectionConfig struct {
-	AddressPrefix any
+	AddressPrefix           any
 	CircuitConnectionStatus any
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties struct {
-	AddressPrefix any
-	AuthorizationKey any
-	CircuitConnectionStatus any
-	ExpressRouteCircuitPeering any
-	Ipv6CircuitConnectionConfig any
+	AddressPrefix                  any
+	AuthorizationKey               any
+	CircuitConnectionStatus        any
+	ExpressRouteCircuitPeering     any
+	Ipv6CircuitConnectionConfig    any
 	PeerExpressRouteCircuitPeering any
-	ProvisioningState any
+	ProvisioningState              any
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo struct {
-	Prefix any
-	Signature any
-	ValidationId any
+	Prefix          any
+	Signature       any
+	ValidationId    any
 	ValidationState any
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig struct {
-	AdvertisedCommunities any
-	AdvertisedPublicPrefixInfo any
-	AdvertisedPublicPrefixes any
+	AdvertisedCommunities         any
+	AdvertisedPublicPrefixInfo    any
+	AdvertisedPublicPrefixes      any
 	AdvertisedPublicPrefixesState any
-	CustomerAsn any
-	LegacyMode any
-	RoutingRegistryName any
+	CustomerAsn                   any
+	LegacyMode                    any
+	RoutingRegistryName           any
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig struct {
-	MicrosoftPeeringConfig any
-	PrimaryPeerAddressPrefix any
-	RouteFilter any
+	MicrosoftPeeringConfig     any
+	PrimaryPeerAddressPrefix   any
+	RouteFilter                any
 	SecondaryPeerAddressPrefix any
-	State any
+	State                      any
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections_Properties struct {
-	AddressPrefix any
-	AuthResourceGuid any
-	CircuitConnectionStatus any
-	ConnectionName any
-	ExpressRouteCircuitPeering any
+	AddressPrefix                  any
+	AuthResourceGuid               any
+	CircuitConnectionStatus        any
+	ConnectionName                 any
+	ExpressRouteCircuitPeering     any
 	PeerExpressRouteCircuitPeering any
-	ProvisioningState any
+	ProvisioningState              any
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Stats struct {
-	PrimarybytesIn any
-	PrimarybytesOut any
-	SecondarybytesIn any
+	PrimarybytesIn    any
+	PrimarybytesOut   any
+	SecondarybytesIn  any
 	SecondarybytesOut any
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties struct {
-	AzureAsn any
-	Connections any
-	ExpressRouteConnection any
-	GatewayManagerEtag any
-	Ipv6PeeringConfig any
-	LastModifiedBy any
-	MicrosoftPeeringConfig any
-	PeerAsn any
-	PeeredConnections any
-	PeeringType any
-	PrimaryAzurePort any
-	PrimaryPeerAddressPrefix any
-	ProvisioningState any
-	RouteFilter any
-	SecondaryAzurePort any
+	AzureAsn                   any
+	Connections                any
+	ExpressRouteConnection     any
+	GatewayManagerEtag         any
+	Ipv6PeeringConfig          any
+	LastModifiedBy             any
+	MicrosoftPeeringConfig     any
+	PeerAsn                    any
+	PeeredConnections          any
+	PeeringType                any
+	PrimaryAzurePort           any
+	PrimaryPeerAddressPrefix   any
+	ProvisioningState          any
+	RouteFilter                any
+	SecondaryAzurePort         any
 	SecondaryPeerAddressPrefix any
-	SharedKey any
-	State any
-	Stats any
-	VlanId any
+	SharedKey                  any
+	State                      any
+	Stats                      any
+	VlanId                     any
 }
 
 type ExpressrouteExpressRouteCircuit_Properties_Peerings struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -177,246 +177,244 @@ type ExpressrouteExpressRouteCircuit_Sku struct {
 }
 
 var ExpressrouteExpressRouteCircuit_Properties_Authorizations_PropertiesFields = ubx.FieldMap{
-		"AuthorizationKey": ubx.FieldSpec{WireName: "authorization_key"},
-		"AuthorizationUseStatus": ubx.FieldSpec{WireName: "authorization_use_status"},
-		"ConnectionResourceUri": ubx.FieldSpec{WireName: "connection_resource_uri"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AuthorizationKey":       ubx.FieldSpec{WireName: "authorization_key"},
+	"AuthorizationUseStatus": ubx.FieldSpec{WireName: "authorization_use_status"},
+	"ConnectionResourceUri":  ubx.FieldSpec{WireName: "connection_resource_uri"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_AuthorizationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Authorizations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Authorizations_PropertiesFields,
+	},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties_Ipv6CircuitConnectionConfigFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
-	}
+	"AddressPrefix":           ubx.FieldSpec{WireName: "address_prefix"},
+	"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AuthorizationKey": ubx.FieldSpec{WireName: "authorization_key"},
-		"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
-		"ExpressRouteCircuitPeering": ubx.FieldSpec{
-			WireName: "express_route_circuit_peering",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
-		},
-		"Ipv6CircuitConnectionConfig": ubx.FieldSpec{
-			WireName: "ipv6_circuit_connection_config",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties_Ipv6CircuitConnectionConfigFields,
-		},
-		"PeerExpressRouteCircuitPeering": ubx.FieldSpec{
-			WireName: "peer_express_route_circuit_peering",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AddressPrefix":           ubx.FieldSpec{WireName: "address_prefix"},
+	"AuthorizationKey":        ubx.FieldSpec{WireName: "authorization_key"},
+	"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
+	"ExpressRouteCircuitPeering": ubx.FieldSpec{
+		WireName: "express_route_circuit_peering",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
+	},
+	"Ipv6CircuitConnectionConfig": ubx.FieldSpec{
+		WireName: "ipv6_circuit_connection_config",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_Properties_Ipv6CircuitConnectionConfigFields,
+	},
+	"PeerExpressRouteCircuitPeering": ubx.FieldSpec{
+		WireName: "peer_express_route_circuit_peering",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_ConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Connections_PropertiesFields,
+	},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfoFields = ubx.FieldMap{
-		"Prefix": ubx.FieldSpec{WireName: "prefix"},
-		"Signature": ubx.FieldSpec{WireName: "signature"},
-		"ValidationId": ubx.FieldSpec{WireName: "validation_id"},
-		"ValidationState": ubx.FieldSpec{WireName: "validation_state"},
-	}
+	"Prefix":          ubx.FieldSpec{WireName: "prefix"},
+	"Signature":       ubx.FieldSpec{WireName: "signature"},
+	"ValidationId":    ubx.FieldSpec{WireName: "validation_id"},
+	"ValidationState": ubx.FieldSpec{WireName: "validation_state"},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfigFields = ubx.FieldMap{
-		"AdvertisedCommunities": ubx.FieldSpec{WireName: "advertised_communities"},
-		"AdvertisedPublicPrefixInfo": ubx.FieldSpec{
-			WireName: "advertised_public_prefix_info",
-			Kind: "list",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfoFields,
-		},
-		"AdvertisedPublicPrefixes": ubx.FieldSpec{WireName: "advertised_public_prefixes"},
-		"AdvertisedPublicPrefixesState": ubx.FieldSpec{WireName: "advertised_public_prefixes_state"},
-		"CustomerAsn": ubx.FieldSpec{WireName: "customer_asn"},
-		"LegacyMode": ubx.FieldSpec{WireName: "legacy_mode"},
-		"RoutingRegistryName": ubx.FieldSpec{WireName: "routing_registry_name"},
-	}
+	"AdvertisedCommunities": ubx.FieldSpec{WireName: "advertised_communities"},
+	"AdvertisedPublicPrefixInfo": ubx.FieldSpec{
+		WireName: "advertised_public_prefix_info",
+		Kind:     "list",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfoFields,
+	},
+	"AdvertisedPublicPrefixes":      ubx.FieldSpec{WireName: "advertised_public_prefixes"},
+	"AdvertisedPublicPrefixesState": ubx.FieldSpec{WireName: "advertised_public_prefixes_state"},
+	"CustomerAsn":                   ubx.FieldSpec{WireName: "customer_asn"},
+	"LegacyMode":                    ubx.FieldSpec{WireName: "legacy_mode"},
+	"RoutingRegistryName":           ubx.FieldSpec{WireName: "routing_registry_name"},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfigFields = ubx.FieldMap{
-		"MicrosoftPeeringConfig": ubx.FieldSpec{
-			WireName: "microsoft_peering_config",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfigFields,
-		},
-		"PrimaryPeerAddressPrefix": ubx.FieldSpec{WireName: "primary_peer_address_prefix"},
-		"RouteFilter": ubx.FieldSpec{
-			WireName: "route_filter",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
-		},
-		"SecondaryPeerAddressPrefix": ubx.FieldSpec{WireName: "secondary_peer_address_prefix"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"MicrosoftPeeringConfig": ubx.FieldSpec{
+		WireName: "microsoft_peering_config",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfigFields,
+	},
+	"PrimaryPeerAddressPrefix": ubx.FieldSpec{WireName: "primary_peer_address_prefix"},
+	"RouteFilter": ubx.FieldSpec{
+		WireName: "route_filter",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
+	},
+	"SecondaryPeerAddressPrefix": ubx.FieldSpec{WireName: "secondary_peer_address_prefix"},
+	"State":                      ubx.FieldSpec{WireName: "state"},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AuthResourceGuid": ubx.FieldSpec{WireName: "auth_resource_guid"},
-		"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
-		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
-		"ExpressRouteCircuitPeering": ubx.FieldSpec{
-			WireName: "express_route_circuit_peering",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
-		},
-		"PeerExpressRouteCircuitPeering": ubx.FieldSpec{
-			WireName: "peer_express_route_circuit_peering",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AddressPrefix":           ubx.FieldSpec{WireName: "address_prefix"},
+	"AuthResourceGuid":        ubx.FieldSpec{WireName: "auth_resource_guid"},
+	"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
+	"ConnectionName":          ubx.FieldSpec{WireName: "connection_name"},
+	"ExpressRouteCircuitPeering": ubx.FieldSpec{
+		WireName: "express_route_circuit_peering",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
+	},
+	"PeerExpressRouteCircuitPeering": ubx.FieldSpec{
+		WireName: "peer_express_route_circuit_peering",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnections_PropertiesFields,
+	},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_StatsFields = ubx.FieldMap{
-		"PrimarybytesIn": ubx.FieldSpec{WireName: "primarybytes_in"},
-		"PrimarybytesOut": ubx.FieldSpec{WireName: "primarybytes_out"},
-		"SecondarybytesIn": ubx.FieldSpec{WireName: "secondarybytes_in"},
-		"SecondarybytesOut": ubx.FieldSpec{WireName: "secondarybytes_out"},
-	}
+	"PrimarybytesIn":    ubx.FieldSpec{WireName: "primarybytes_in"},
+	"PrimarybytesOut":   ubx.FieldSpec{WireName: "primarybytes_out"},
+	"SecondarybytesIn":  ubx.FieldSpec{WireName: "secondarybytes_in"},
+	"SecondarybytesOut": ubx.FieldSpec{WireName: "secondarybytes_out"},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_Peerings_PropertiesFields = ubx.FieldMap{
-		"AzureAsn": ubx.FieldSpec{WireName: "azure_asn"},
-		"Connections": ubx.FieldSpec{
-			WireName: "connections",
-			Kind: "list",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_ConnectionsFields,
-		},
-		"ExpressRouteConnection": ubx.FieldSpec{
-			WireName: "express_route_connection",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
-		},
-		"GatewayManagerEtag": ubx.FieldSpec{WireName: "gateway_manager_etag"},
-		"Ipv6PeeringConfig": ubx.FieldSpec{
-			WireName: "ipv6_peering_config",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfigFields,
-		},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"MicrosoftPeeringConfig": ubx.FieldSpec{
-			WireName: "microsoft_peering_config",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfigFields,
-		},
-		"PeerAsn": ubx.FieldSpec{WireName: "peer_asn"},
-		"PeeredConnections": ubx.FieldSpec{
-			WireName: "peered_connections",
-			Kind: "list",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnectionsFields,
-		},
-		"PeeringType": ubx.FieldSpec{WireName: "peering_type"},
-		"PrimaryAzurePort": ubx.FieldSpec{WireName: "primary_azure_port"},
-		"PrimaryPeerAddressPrefix": ubx.FieldSpec{WireName: "primary_peer_address_prefix"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RouteFilter": ubx.FieldSpec{
-			WireName: "route_filter",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
-		},
-		"SecondaryAzurePort": ubx.FieldSpec{WireName: "secondary_azure_port"},
-		"SecondaryPeerAddressPrefix": ubx.FieldSpec{WireName: "secondary_peer_address_prefix"},
-		"SharedKey": ubx.FieldSpec{WireName: "shared_key"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Stats": ubx.FieldSpec{
-			WireName: "stats",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_StatsFields,
-		},
-		"VlanId": ubx.FieldSpec{WireName: "vlan_id"},
-	}
+	"AzureAsn": ubx.FieldSpec{WireName: "azure_asn"},
+	"Connections": ubx.FieldSpec{
+		WireName: "connections",
+		Kind:     "list",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_ConnectionsFields,
+	},
+	"ExpressRouteConnection": ubx.FieldSpec{
+		WireName: "express_route_connection",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
+	},
+	"GatewayManagerEtag": ubx.FieldSpec{WireName: "gateway_manager_etag"},
+	"Ipv6PeeringConfig": ubx.FieldSpec{
+		WireName: "ipv6_peering_config",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfigFields,
+	},
+	"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
+	"MicrosoftPeeringConfig": ubx.FieldSpec{
+		WireName: "microsoft_peering_config",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfigFields,
+	},
+	"PeerAsn": ubx.FieldSpec{WireName: "peer_asn"},
+	"PeeredConnections": ubx.FieldSpec{
+		WireName: "peered_connections",
+		Kind:     "list",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_PeeredConnectionsFields,
+	},
+	"PeeringType":              ubx.FieldSpec{WireName: "peering_type"},
+	"PrimaryAzurePort":         ubx.FieldSpec{WireName: "primary_azure_port"},
+	"PrimaryPeerAddressPrefix": ubx.FieldSpec{WireName: "primary_peer_address_prefix"},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"RouteFilter": ubx.FieldSpec{
+		WireName: "route_filter",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
+	},
+	"SecondaryAzurePort":         ubx.FieldSpec{WireName: "secondary_azure_port"},
+	"SecondaryPeerAddressPrefix": ubx.FieldSpec{WireName: "secondary_peer_address_prefix"},
+	"SharedKey":                  ubx.FieldSpec{WireName: "shared_key"},
+	"State":                      ubx.FieldSpec{WireName: "state"},
+	"Stats": ubx.FieldSpec{
+		WireName: "stats",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Peerings_Properties_StatsFields,
+	},
+	"VlanId": ubx.FieldSpec{WireName: "vlan_id"},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_PeeringsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_Peerings_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_Peerings_PropertiesFields,
+	},
+}
 
 var ExpressrouteExpressRouteCircuit_Properties_ServiceProviderPropertiesFields = ubx.FieldMap{
-		"BandwidthInMbps": ubx.FieldSpec{WireName: "bandwidth_in_mbps"},
-		"PeeringLocation": ubx.FieldSpec{WireName: "peering_location"},
-		"ServiceProviderName": ubx.FieldSpec{WireName: "service_provider_name"},
-	}
+	"BandwidthInMbps":     ubx.FieldSpec{WireName: "bandwidth_in_mbps"},
+	"PeeringLocation":     ubx.FieldSpec{WireName: "peering_location"},
+	"ServiceProviderName": ubx.FieldSpec{WireName: "service_provider_name"},
+}
 
 var ExpressrouteExpressRouteCircuit_PropertiesFields = ubx.FieldMap{
-		"ActivationKey": ubx.FieldSpec{WireName: "activation_key"},
-		"AllowClassicOperations": ubx.FieldSpec{WireName: "allow_classic_operations"},
-		"AuthorizationKey": ubx.FieldSpec{WireName: "authorization_key"},
-		"AuthorizationStatus": ubx.FieldSpec{WireName: "authorization_status"},
-		"Authorizations": ubx.FieldSpec{
-			WireName: "authorizations",
-			Kind: "list",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_AuthorizationsFields,
-		},
-		"BandwidthInGbps": ubx.FieldSpec{WireName: "bandwidth_in_gbps"},
-		"CircuitProvisioningState": ubx.FieldSpec{WireName: "circuit_provisioning_state"},
-		"EnableDirectPortRateLimit": ubx.FieldSpec{WireName: "enable_direct_port_rate_limit"},
-		"ExpressRoutePort": ubx.FieldSpec{
-			WireName: "express_route_port",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
-		},
-		"GatewayManagerEtag": ubx.FieldSpec{WireName: "gateway_manager_etag"},
-		"GlobalReachEnabled": ubx.FieldSpec{WireName: "global_reach_enabled"},
-		"PartnerAccountId": ubx.FieldSpec{WireName: "partner_account_id"},
-		"Peerings": ubx.FieldSpec{
-			WireName: "peerings",
-			Kind: "list",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_PeeringsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResiliencyLevel": ubx.FieldSpec{WireName: "resiliency_level"},
-		"ServiceKey": ubx.FieldSpec{WireName: "service_key"},
-		"ServiceProviderNotes": ubx.FieldSpec{WireName: "service_provider_notes"},
-		"ServiceProviderProperties": ubx.FieldSpec{
-			WireName: "service_provider_properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_Properties_ServiceProviderPropertiesFields,
-		},
-		"ServiceProviderProvisioningState": ubx.FieldSpec{WireName: "service_provider_provisioning_state"},
-		"Stag": ubx.FieldSpec{WireName: "stag"},
-	}
+	"ActivationKey":          ubx.FieldSpec{WireName: "activation_key"},
+	"AllowClassicOperations": ubx.FieldSpec{WireName: "allow_classic_operations"},
+	"AuthorizationKey":       ubx.FieldSpec{WireName: "authorization_key"},
+	"AuthorizationStatus":    ubx.FieldSpec{WireName: "authorization_status"},
+	"Authorizations": ubx.FieldSpec{
+		WireName: "authorizations",
+		Kind:     "list",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_AuthorizationsFields,
+	},
+	"BandwidthInGbps":           ubx.FieldSpec{WireName: "bandwidth_in_gbps"},
+	"CircuitProvisioningState":  ubx.FieldSpec{WireName: "circuit_provisioning_state"},
+	"EnableDirectPortRateLimit": ubx.FieldSpec{WireName: "enable_direct_port_rate_limit"},
+	"ExpressRoutePort": ubx.FieldSpec{
+		WireName: "express_route_port",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_ExpressRoutePortFields,
+	},
+	"GatewayManagerEtag": ubx.FieldSpec{WireName: "gateway_manager_etag"},
+	"GlobalReachEnabled": ubx.FieldSpec{WireName: "global_reach_enabled"},
+	"PartnerAccountId":   ubx.FieldSpec{WireName: "partner_account_id"},
+	"Peerings": ubx.FieldSpec{
+		WireName: "peerings",
+		Kind:     "list",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_PeeringsFields,
+	},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResiliencyLevel":      ubx.FieldSpec{WireName: "resiliency_level"},
+	"ServiceKey":           ubx.FieldSpec{WireName: "service_key"},
+	"ServiceProviderNotes": ubx.FieldSpec{WireName: "service_provider_notes"},
+	"ServiceProviderProperties": ubx.FieldSpec{
+		WireName: "service_provider_properties",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuit_Properties_ServiceProviderPropertiesFields,
+	},
+	"ServiceProviderProvisioningState": ubx.FieldSpec{WireName: "service_provider_provisioning_state"},
+	"Stag":                             ubx.FieldSpec{WireName: "stag"},
+}
 
 var ExpressrouteExpressRouteCircuit_SkuFields = ubx.FieldMap{
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Family": ubx.FieldSpec{WireName: "family"},
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Tier":   ubx.FieldSpec{WireName: "tier"},
+}
 
 type ExpressrouteExpressRouteCircuitConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of ExpressRouteCircuit.
 	Properties any
 	// Contains SKU in an ExpressRouteCircuit.
@@ -435,16 +433,15 @@ type ExpressrouteExpressRouteCircuitAttrs struct {
 var ExpressrouteExpressRouteCircuit = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_express_route_circuit",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_PropertiesFields,
+			Kind:     "object",
+			Fields:   ExpressrouteExpressRouteCircuit_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuit_SkuFields,
+			Kind:     "object",
+			Fields:   ExpressrouteExpressRouteCircuit_SkuFields,
 		},
 	},
 }

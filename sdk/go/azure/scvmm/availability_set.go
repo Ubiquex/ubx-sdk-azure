@@ -20,15 +20,15 @@ type AvailabilitySet_Properties struct {
 }
 
 var AvailabilitySet_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var AvailabilitySet_PropertiesFields = ubx.FieldMap{
-		"AvailabilitySetName": ubx.FieldSpec{WireName: "availability_set_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VmmServerId": ubx.FieldSpec{WireName: "vmm_server_id"},
-	}
+	"AvailabilitySetName": ubx.FieldSpec{WireName: "availability_set_name"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"VmmServerId":         ubx.FieldSpec{WireName: "vmm_server_id"},
+}
 
 type AvailabilitySetConfig struct {
 	// The extended location.
@@ -49,13 +49,13 @@ var AvailabilitySet = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: AvailabilitySet_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   AvailabilitySet_ExtendedLocationFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AvailabilitySet_PropertiesFields,
+			Kind:     "object",
+			Fields:   AvailabilitySet_PropertiesFields,
 		},
 	},
 }

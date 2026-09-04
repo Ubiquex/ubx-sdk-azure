@@ -8,7 +8,7 @@ type VirtualwanVirtualHub_Value_Properties_AzureFirewall struct {
 }
 
 type VirtualwanVirtualHub_Value_Properties_RouteTable_Routes struct {
-	AddressPrefixes any
+	AddressPrefixes  any
 	NextHopIpAddress any
 }
 
@@ -18,20 +18,20 @@ type VirtualwanVirtualHub_Value_Properties_RouteTable struct {
 
 type VirtualwanVirtualHub_Value_Properties_VirtualHubRouteTableV2s_Properties_Routes struct {
 	DestinationType any
-	Destinations any
-	NextHopType any
-	NextHops any
+	Destinations    any
+	NextHopType     any
+	NextHops        any
 }
 
 type VirtualwanVirtualHub_Value_Properties_VirtualHubRouteTableV2s_Properties struct {
 	AttachedConnections any
-	ProvisioningState any
-	Routes any
+	ProvisioningState   any
+	Routes              any
 }
 
 type VirtualwanVirtualHub_Value_Properties_VirtualHubRouteTableV2s struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
@@ -40,35 +40,35 @@ type VirtualwanVirtualHub_Value_Properties_VirtualRouterAutoScaleConfiguration s
 }
 
 type VirtualwanVirtualHub_Value_Properties struct {
-	AddressPrefix any
-	AddressPrefixV6 any
-	AllowBranchToBranchTraffic any
-	AzureFirewall any
-	BgpConnections any
-	ExpressRouteGateway any
-	HubRoutingPreference any
-	IpConfigurations any
-	P2SvpnGateway any
-	PreferredRoutingGateway any
-	ProvisioningState any
-	RouteMaps any
-	RouteTable any
-	RoutingState any
-	SecurityPartnerProvider any
-	SecurityProviderName any
-	Sku any
-	VirtualHubRouteTableV2s any
-	VirtualRouterAsn any
+	AddressPrefix                       any
+	AddressPrefixV6                     any
+	AllowBranchToBranchTraffic          any
+	AzureFirewall                       any
+	BgpConnections                      any
+	ExpressRouteGateway                 any
+	HubRoutingPreference                any
+	IpConfigurations                    any
+	P2SvpnGateway                       any
+	PreferredRoutingGateway             any
+	ProvisioningState                   any
+	RouteMaps                           any
+	RouteTable                          any
+	RoutingState                        any
+	SecurityPartnerProvider             any
+	SecurityProviderName                any
+	Sku                                 any
+	VirtualHubRouteTableV2s             any
+	VirtualRouterAsn                    any
 	VirtualRouterAutoScaleConfiguration any
-	VirtualRouterIps any
-	VirtualRouterIpsV6 any
-	VirtualWan any
-	VpnGateway any
+	VirtualRouterIps                    any
+	VirtualRouterIpsV6                  any
+	VirtualWan                          any
+	VpnGateway                          any
 }
 
 type VirtualwanVirtualHub_Value struct {
-	Etag any
-	Kind any
+	Etag       any
+	Kind       any
 	Properties any
 }
 
@@ -84,6 +84,5 @@ type VirtualwanVirtualHubAttrs struct {
 
 var VirtualwanVirtualHub = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_virtual_hub",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

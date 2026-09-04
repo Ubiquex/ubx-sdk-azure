@@ -26,32 +26,15 @@ type Replica_SystemData struct {
 }
 
 var Replica_PropertiesFields = ubx.FieldMap{
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
-
-var Replica_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Endpoint":          ubx.FieldSpec{WireName: "endpoint"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ReplicaConfig struct {
-	// The resource ID.
-	Id any
 	// The location of the replica.
 	Location any
-	// The name of the replica.
-	Name any
 	// All replica properties.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
-	// The type of the resource.
-	Type any
 }
 
 type ReplicaAttrs struct {
@@ -72,19 +55,11 @@ type ReplicaAttrs struct {
 var Replica = ubx.ResourceBinding{
 	WireType: "azure_appconfiguration_replica",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Replica_PropertiesFields,
+			Kind:     "object",
+			Fields:   Replica_PropertiesFields,
 		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: Replica_SystemDataFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

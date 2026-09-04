@@ -47,38 +47,38 @@ type OpenapiExascaleDbStorageVault_Properties struct {
 }
 
 var OpenapiExascaleDbStorageVault_Properties_HighCapacityDatabaseStorageFields = ubx.FieldMap{
-		"AvailableSizeInGbs": ubx.FieldSpec{WireName: "available_size_in_gbs"},
-		"TotalSizeInGbs": ubx.FieldSpec{WireName: "total_size_in_gbs"},
-	}
+	"AvailableSizeInGbs": ubx.FieldSpec{WireName: "available_size_in_gbs"},
+	"TotalSizeInGbs":     ubx.FieldSpec{WireName: "total_size_in_gbs"},
+}
 
 var OpenapiExascaleDbStorageVault_Properties_HighCapacityDatabaseStorageInputFields = ubx.FieldMap{
-		"TotalSizeInGbs": ubx.FieldSpec{WireName: "total_size_in_gbs"},
-	}
+	"TotalSizeInGbs": ubx.FieldSpec{WireName: "total_size_in_gbs"},
+}
 
 var OpenapiExascaleDbStorageVault_PropertiesFields = ubx.FieldMap{
-		"AdditionalFlashCacheInPercent": ubx.FieldSpec{WireName: "additional_flash_cache_in_percent"},
-		"AttachedShapeAttributes": ubx.FieldSpec{WireName: "attached_shape_attributes"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"ExadataInfrastructureId": ubx.FieldSpec{WireName: "exadata_infrastructure_id"},
-		"HighCapacityDatabaseStorage": ubx.FieldSpec{
-			WireName: "high_capacity_database_storage",
-			Kind: "object",
-			Fields: OpenapiExascaleDbStorageVault_Properties_HighCapacityDatabaseStorageFields,
-		},
-		"HighCapacityDatabaseStorageInput": ubx.FieldSpec{
-			WireName: "high_capacity_database_storage_input",
-			Kind: "object",
-			Fields: OpenapiExascaleDbStorageVault_Properties_HighCapacityDatabaseStorageInputFields,
-		},
-		"LifecycleDetails": ubx.FieldSpec{WireName: "lifecycle_details"},
-		"LifecycleState": ubx.FieldSpec{WireName: "lifecycle_state"},
-		"OciUrl": ubx.FieldSpec{WireName: "oci_url"},
-		"Ocid": ubx.FieldSpec{WireName: "ocid"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
-		"VmClusterCount": ubx.FieldSpec{WireName: "vm_cluster_count"},
-	}
+	"AdditionalFlashCacheInPercent": ubx.FieldSpec{WireName: "additional_flash_cache_in_percent"},
+	"AttachedShapeAttributes":       ubx.FieldSpec{WireName: "attached_shape_attributes"},
+	"Description":                   ubx.FieldSpec{WireName: "description"},
+	"DisplayName":                   ubx.FieldSpec{WireName: "display_name"},
+	"ExadataInfrastructureId":       ubx.FieldSpec{WireName: "exadata_infrastructure_id"},
+	"HighCapacityDatabaseStorage": ubx.FieldSpec{
+		WireName: "high_capacity_database_storage",
+		Kind:     "object",
+		Fields:   OpenapiExascaleDbStorageVault_Properties_HighCapacityDatabaseStorageFields,
+	},
+	"HighCapacityDatabaseStorageInput": ubx.FieldSpec{
+		WireName: "high_capacity_database_storage_input",
+		Kind:     "object",
+		Fields:   OpenapiExascaleDbStorageVault_Properties_HighCapacityDatabaseStorageInputFields,
+	},
+	"LifecycleDetails":  ubx.FieldSpec{WireName: "lifecycle_details"},
+	"LifecycleState":    ubx.FieldSpec{WireName: "lifecycle_state"},
+	"OciUrl":            ubx.FieldSpec{WireName: "oci_url"},
+	"Ocid":              ubx.FieldSpec{WireName: "ocid"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"TimeZone":          ubx.FieldSpec{WireName: "time_zone"},
+	"VmClusterCount":    ubx.FieldSpec{WireName: "vm_cluster_count"},
+}
 
 type OpenapiExascaleDbStorageVaultConfig struct {
 	// ExascaleDbStorageVault resource model
@@ -99,8 +99,8 @@ var OpenapiExascaleDbStorageVault = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiExascaleDbStorageVault_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiExascaleDbStorageVault_PropertiesFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

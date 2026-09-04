@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiExascaleDbStorageVault_Value_Properties_HighCapacityDatabaseStorage struct {
 	AvailableSizeInGbs any
-	TotalSizeInGbs any
+	TotalSizeInGbs     any
 }
 
 type OpenapiExascaleDbStorageVault_Value_Properties_HighCapacityDatabaseStorageInput struct {
@@ -13,25 +13,25 @@ type OpenapiExascaleDbStorageVault_Value_Properties_HighCapacityDatabaseStorageI
 }
 
 type OpenapiExascaleDbStorageVault_Value_Properties struct {
-	AdditionalFlashCacheInPercent any
-	AttachedShapeAttributes any
-	Description any
-	DisplayName any
-	ExadataInfrastructureId any
-	HighCapacityDatabaseStorage any
+	AdditionalFlashCacheInPercent    any
+	AttachedShapeAttributes          any
+	Description                      any
+	DisplayName                      any
+	ExadataInfrastructureId          any
+	HighCapacityDatabaseStorage      any
 	HighCapacityDatabaseStorageInput any
-	LifecycleDetails any
-	LifecycleState any
-	OciUrl any
-	Ocid any
-	ProvisioningState any
-	TimeZone any
-	VmClusterCount any
+	LifecycleDetails                 any
+	LifecycleState                   any
+	OciUrl                           any
+	Ocid                             any
+	ProvisioningState                any
+	TimeZone                         any
+	VmClusterCount                   any
 }
 
 type OpenapiExascaleDbStorageVault_Value struct {
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type OpenapiExascaleDbStorageVaultConfig struct {
@@ -46,6 +46,5 @@ type OpenapiExascaleDbStorageVaultAttrs struct {
 
 var OpenapiExascaleDbStorageVault = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_exascale_db_storage_vault",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

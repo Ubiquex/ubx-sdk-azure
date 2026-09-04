@@ -4,43 +4,43 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkVerifierWorkspace_Value_Properties struct {
-	Description any
+	Description       any
 	ProvisioningState any
 }
 
 type VirtualnetworkVerifierWorkspace_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type VirtualnetworkVerifierWorkspace_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 	SystemData any
 }
 
 type VirtualnetworkVerifierWorkspaceConfig struct {
 	NetworkManagerName any
-	Skip any
-	SkipToken any
-	SortKey any
-	SortValue any
-	Top any
+	Skip               any
+	SkipToken          any
+	SortKey            any
+	SortValue          any
+	Top                any
 }
 
 type VirtualnetworkVerifierWorkspaceAttrs struct {
 	NetworkManagerName any
 	// The link to the next page of items
-	NextLink any
-	Skip any
+	NextLink  any
+	Skip      any
 	SkipToken any
-	SortKey any
+	SortKey   any
 	SortValue any
-	Top any
+	Top       any
 	// The VerifierWorkspace items on this page
 	Value any
 }
@@ -49,10 +49,10 @@ var VirtualnetworkVerifierWorkspace = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_verifier_workspace",
 	Fields: ubx.FieldMap{
 		"NetworkManagerName": ubx.FieldSpec{WireName: "network_manager_name"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"SkipToken": ubx.FieldSpec{WireName: "skip_token"},
-		"SortKey": ubx.FieldSpec{WireName: "sort_key"},
-		"SortValue": ubx.FieldSpec{WireName: "sort_value"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"SkipToken":          ubx.FieldSpec{WireName: "skip_token"},
+		"SortKey":            ubx.FieldSpec{WireName: "sort_key"},
+		"SortValue":          ubx.FieldSpec{WireName: "sort_value"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

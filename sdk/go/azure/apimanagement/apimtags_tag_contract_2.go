@@ -9,8 +9,8 @@ type ApimtagsTagContract2_Properties struct {
 }
 
 var ApimtagsTagContract2_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+}
 
 type ApimtagsTagContract2Config struct {
 	// Tag contract Properties.
@@ -27,8 +27,8 @@ var ApimtagsTagContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimtagsTagContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimtagsTagContract2_PropertiesFields,
 		},
 	},
 }

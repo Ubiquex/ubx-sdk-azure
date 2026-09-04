@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOnlineEndpoint_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -46,36 +46,36 @@ type OpenapiOnlineEndpoint_Sku struct {
 }
 
 var OpenapiOnlineEndpoint_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiOnlineEndpoint_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiOnlineEndpoint_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiOnlineEndpoint_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiOnlineEndpoint_PropertiesFields = ubx.FieldMap{
-		"Compute": ubx.FieldSpec{WireName: "compute"},
-		"MirrorTraffic": ubx.FieldSpec{WireName: "mirror_traffic"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"Traffic": ubx.FieldSpec{WireName: "traffic"},
-	}
+	"Compute":             ubx.FieldSpec{WireName: "compute"},
+	"MirrorTraffic":       ubx.FieldSpec{WireName: "mirror_traffic"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"Traffic":             ubx.FieldSpec{WireName: "traffic"},
+}
 
 var OpenapiOnlineEndpoint_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type OpenapiOnlineEndpointConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -104,19 +104,19 @@ var OpenapiOnlineEndpoint = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiOnlineEndpoint_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiOnlineEndpoint_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiOnlineEndpoint_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiOnlineEndpoint_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiOnlineEndpoint_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiOnlineEndpoint_SkuFields,
 		},
 	},
 }

@@ -4,21 +4,21 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciCluster_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type HciCluster_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type HciCluster_Value_Properties_BillingProperties_NextBillingModel struct {
-	BillingModel any
+	BillingModel        any
 	CapabilitiesEnabled any
-	TrialDaysRemaining any
+	TrialDaysRemaining  any
 }
 
 type HciCluster_Value_Properties_BillingProperties struct {
@@ -26,153 +26,153 @@ type HciCluster_Value_Properties_BillingProperties struct {
 }
 
 type HciCluster_Value_Properties_DesiredProperties struct {
-	DiagnosticLevel any
+	DiagnosticLevel           any
 	WindowsServerSubscription any
 }
 
 type HciCluster_Value_Properties_IsolatedVmAttestationConfiguration struct {
-	AttestationResourceId any
-	AttestationServiceEndpoint any
+	AttestationResourceId       any
+	AttestationServiceEndpoint  any
 	RelyingPartyServiceEndpoint any
 }
 
 type HciCluster_Value_Properties_LocalAvailabilityZones struct {
 	LocalAvailabilityZoneName any
-	Nodes any
+	Nodes                     any
 }
 
 type HciCluster_Value_Properties_LogCollectionProperties_LogCollectionSessionDetails_LogCollectionError struct {
-	ErrorCode any
+	ErrorCode    any
 	ErrorMessage any
 }
 
 type HciCluster_Value_Properties_LogCollectionProperties_LogCollectionSessionDetails struct {
-	CorrelationId any
-	EndTimeCollected any
-	LogCollectionError any
+	CorrelationId        any
+	EndTimeCollected     any
+	LogCollectionError   any
 	LogCollectionJobType any
-	LogCollectionStatus any
-	LogEndTime any
-	LogSize any
-	LogStartTime any
-	TimeCollected any
+	LogCollectionStatus  any
+	LogEndTime           any
+	LogSize              any
+	LogStartTime         any
+	TimeCollected        any
 }
 
 type HciCluster_Value_Properties_LogCollectionProperties struct {
-	FromDate any
-	LastLogGenerated any
+	FromDate                    any
+	LastLogGenerated            any
 	LogCollectionSessionDetails any
-	ToDate any
+	ToDate                      any
 }
 
 type HciCluster_Value_Properties_RemoteSupportProperties_RemoteSupportNodeSettings struct {
-	ArcResourceId any
+	ArcResourceId          any
 	ConnectionErrorMessage any
-	ConnectionStatus any
-	CreatedAt any
-	State any
-	TranscriptLocation any
-	UpdatedAt any
+	ConnectionStatus       any
+	CreatedAt              any
+	State                  any
+	TranscriptLocation     any
+	UpdatedAt              any
 }
 
 type HciCluster_Value_Properties_RemoteSupportProperties_RemoteSupportSessionDetails struct {
-	AccessLevel any
-	Duration any
-	NodeName any
-	SessionEndTime any
-	SessionStartTime any
+	AccessLevel        any
+	Duration           any
+	NodeName           any
+	SessionEndTime     any
+	SessionStartTime   any
 	TranscriptLocation any
 }
 
 type HciCluster_Value_Properties_RemoteSupportProperties struct {
-	AccessLevel any
-	ExpirationTimeStamp any
-	RemoteSupportNodeSettings any
+	AccessLevel                    any
+	ExpirationTimeStamp            any
+	RemoteSupportNodeSettings      any
 	RemoteSupportProvisioningState any
-	RemoteSupportSessionDetails any
-	RemoteSupportType any
+	RemoteSupportSessionDetails    any
+	RemoteSupportType              any
 }
 
 type HciCluster_Value_Properties_ReportedProperties_Nodes struct {
-	CoreCount any
-	EhcResourceId any
-	Id any
-	LastLicensingTimestamp any
-	Manufacturer any
-	MemoryInGiB any
-	Model any
-	Name any
-	NodeType any
-	OemActivation any
-	OsDisplayVersion any
-	OsName any
-	OsVersion any
-	SerialNumber any
+	CoreCount                 any
+	EhcResourceId             any
+	Id                        any
+	LastLicensingTimestamp    any
+	Manufacturer              any
+	MemoryInGiB               any
+	Model                     any
+	Name                      any
+	NodeType                  any
+	OemActivation             any
+	OsDisplayVersion          any
+	OsName                    any
+	OsVersion                 any
+	SerialNumber              any
 	WindowsServerSubscription any
 }
 
 type HciCluster_Value_Properties_ReportedProperties struct {
-	ClusterId any
-	ClusterName any
-	ClusterType any
-	ClusterVersion any
-	DiagnosticLevel any
-	HardwareClass any
-	ImdsAttestation any
-	LastUpdated any
-	Manufacturer any
+	ClusterId              any
+	ClusterName            any
+	ClusterType            any
+	ClusterVersion         any
+	DiagnosticLevel        any
+	HardwareClass          any
+	ImdsAttestation        any
+	LastUpdated            any
+	Manufacturer           any
 	MsiExpirationTimeStamp any
-	Nodes any
-	OemActivation any
-	SupportedCapabilities any
+	Nodes                  any
+	OemActivation          any
+	SupportedCapabilities  any
 }
 
 type HciCluster_Value_Properties_SecretsLocations struct {
 	SecretsLocation any
-	SecretsType any
+	SecretsType     any
 }
 
 type HciCluster_Value_Properties_SoftwareAssuranceProperties struct {
-	LastUpdated any
+	LastUpdated             any
 	SoftwareAssuranceIntent any
 	SoftwareAssuranceStatus any
 }
 
 type HciCluster_Value_Properties struct {
-	AadApplicationObjectId any
-	AadClientId any
-	AadServicePrincipalObjectId any
-	AadTenantId any
-	BillingModel any
-	BillingProperties any
-	CloudId any
-	CloudManagementEndpoint any
-	ClusterPattern any
-	ConnectivityStatus any
-	DesiredProperties any
-	IdentityProvider any
-	IsManagementCluster any
+	AadApplicationObjectId             any
+	AadClientId                        any
+	AadServicePrincipalObjectId        any
+	AadTenantId                        any
+	BillingModel                       any
+	BillingProperties                  any
+	CloudId                            any
+	CloudManagementEndpoint            any
+	ClusterPattern                     any
+	ConnectivityStatus                 any
+	DesiredProperties                  any
+	IdentityProvider                   any
+	IsManagementCluster                any
 	IsolatedVmAttestationConfiguration any
-	LastBillingTimestamp any
-	LastSyncTimestamp any
-	LocalAvailabilityZones any
-	LogCollectionProperties any
-	ProvisioningState any
-	RegistrationTimestamp any
-	RemoteSupportProperties any
-	ReportedProperties any
-	ResourceProviderObjectId any
-	SecretsLocations any
-	ServiceEndpoint any
-	SoftwareAssuranceProperties any
-	Status any
-	StorageType any
-	TrialDaysRemaining any
+	LastBillingTimestamp               any
+	LastSyncTimestamp                  any
+	LocalAvailabilityZones             any
+	LogCollectionProperties            any
+	ProvisioningState                  any
+	RegistrationTimestamp              any
+	RemoteSupportProperties            any
+	ReportedProperties                 any
+	ResourceProviderObjectId           any
+	SecretsLocations                   any
+	ServiceEndpoint                    any
+	SoftwareAssuranceProperties        any
+	Status                             any
+	StorageType                        any
+	TrialDaysRemaining                 any
 }
 
 type HciCluster_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
 }
 
@@ -188,6 +188,5 @@ type HciClusterAttrs struct {
 
 var HciCluster = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_hci_cluster",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -12,12 +12,12 @@ type ManagedbackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolic
 }
 
 type ManagedbackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolicyConfig struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 }
 
 type ManagedbackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolicyAttrs struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 	// The link to the next page of items
 	NextLink any
@@ -28,7 +28,7 @@ type ManagedbackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolic
 var ManagedbackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolicy = ubx.DataSourceBinding{
 	WireType: "azure_sql_managedbackupshorttermretentionpolicies_managed_backup_short_term_retention_policy",
 	Fields: ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+		"DatabaseName":        ubx.FieldSpec{WireName: "database_name"},
 		"ManagedInstanceName": ubx.FieldSpec{WireName: "managed_instance_name"},
 	},
 }

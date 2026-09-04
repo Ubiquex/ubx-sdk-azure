@@ -4,11 +4,11 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualMachine_Value_Properties struct {
-	DisplayName any
-	FolderPath any
-	MoRefId any
+	DisplayName       any
+	FolderPath        any
+	MoRefId           any
 	ProvisioningState any
-	RestrictMovement any
+	RestrictMovement  any
 }
 
 type VirtualMachine_Value struct {
@@ -16,14 +16,14 @@ type VirtualMachine_Value struct {
 }
 
 type VirtualMachineConfig struct {
-	ClusterName any
+	ClusterName      any
 	PrivateCloudName any
 }
 
 type VirtualMachineAttrs struct {
 	ClusterName any
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The VirtualMachine items on this page
 	Value any
@@ -32,7 +32,7 @@ type VirtualMachineAttrs struct {
 var VirtualMachine = ubx.DataSourceBinding{
 	WireType: "azure_vmware_virtual_machine",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":      ubx.FieldSpec{WireName: "cluster_name"},
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
 	},
 }

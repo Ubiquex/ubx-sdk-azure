@@ -4,22 +4,22 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TemplatespecsTemplateSpec_Value_Properties_Versions struct {
-	Description any
-	TimeCreated any
+	Description  any
+	TimeCreated  any
 	TimeModified any
 }
 
 type TemplatespecsTemplateSpec_Value_Properties struct {
 	Description any
 	DisplayName any
-	Metadata any
-	Versions any
+	Metadata    any
+	Versions    any
 }
 
 type TemplatespecsTemplateSpec_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type TemplatespecsTemplateSpecConfig struct {

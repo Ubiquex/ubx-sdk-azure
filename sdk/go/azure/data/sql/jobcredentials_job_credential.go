@@ -14,13 +14,13 @@ type JobcredentialsJobCredential_Value struct {
 
 type JobcredentialsJobCredentialConfig struct {
 	JobAgentName any
-	ServerName any
+	ServerName   any
 }
 
 type JobcredentialsJobCredentialAttrs struct {
 	JobAgentName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The JobCredential items on this page
 	Value any
@@ -30,6 +30,6 @@ var JobcredentialsJobCredential = ubx.DataSourceBinding{
 	WireType: "azure_sql_jobcredentials_job_credential",
 	Fields: ubx.FieldMap{
 		"JobAgentName": ubx.FieldSpec{WireName: "job_agent_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

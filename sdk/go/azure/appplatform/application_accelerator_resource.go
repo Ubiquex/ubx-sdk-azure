@@ -4,19 +4,19 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApplicationAcceleratorResource_Properties_Components_Instances struct {
-	Name any
+	Name   any
 	Status any
 }
 
 type ApplicationAcceleratorResource_Properties_Components_ResourceRequests struct {
-	Cpu any
+	Cpu           any
 	InstanceCount any
-	Memory any
+	Memory        any
 }
 
 type ApplicationAcceleratorResource_Properties_Components struct {
-	Instances any
-	Name any
+	Instances        any
+	Name             any
 	ResourceRequests any
 }
 
@@ -37,44 +37,44 @@ type ApplicationAcceleratorResource_Sku struct {
 }
 
 var ApplicationAcceleratorResource_Properties_Components_InstancesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var ApplicationAcceleratorResource_Properties_Components_ResourceRequestsFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":           ubx.FieldSpec{WireName: "cpu"},
+	"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
+	"Memory":        ubx.FieldSpec{WireName: "memory"},
+}
 
 var ApplicationAcceleratorResource_Properties_ComponentsFields = ubx.FieldMap{
-		"Instances": ubx.FieldSpec{
-			WireName: "instances",
-			Kind: "list",
-			Fields: ApplicationAcceleratorResource_Properties_Components_InstancesFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ResourceRequests": ubx.FieldSpec{
-			WireName: "resource_requests",
-			Kind: "object",
-			Fields: ApplicationAcceleratorResource_Properties_Components_ResourceRequestsFields,
-		},
-	}
+	"Instances": ubx.FieldSpec{
+		WireName: "instances",
+		Kind:     "list",
+		Fields:   ApplicationAcceleratorResource_Properties_Components_InstancesFields,
+	},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"ResourceRequests": ubx.FieldSpec{
+		WireName: "resource_requests",
+		Kind:     "object",
+		Fields:   ApplicationAcceleratorResource_Properties_Components_ResourceRequestsFields,
+	},
+}
 
 var ApplicationAcceleratorResource_PropertiesFields = ubx.FieldMap{
-		"Components": ubx.FieldSpec{
-			WireName: "components",
-			Kind: "list",
-			Fields: ApplicationAcceleratorResource_Properties_ComponentsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Components": ubx.FieldSpec{
+		WireName: "components",
+		Kind:     "list",
+		Fields:   ApplicationAcceleratorResource_Properties_ComponentsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationAcceleratorResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type ApplicationAcceleratorResourceConfig struct {
 	// Application accelerator properties payload
@@ -95,13 +95,13 @@ var ApplicationAcceleratorResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationAcceleratorResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApplicationAcceleratorResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ApplicationAcceleratorResource_SkuFields,
+			Kind:     "object",
+			Fields:   ApplicationAcceleratorResource_SkuFields,
 		},
 	},
 }

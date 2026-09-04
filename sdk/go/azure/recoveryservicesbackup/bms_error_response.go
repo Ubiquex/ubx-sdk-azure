@@ -26,28 +26,28 @@ type BmsErrorResponse_Error struct {
 
 type BmsErrorResponse_Properties struct {
 	// Encryption At Rest Type
-	EncryptionAtRestType any
+	EncryptionAtRestType          any
 	InfrastructureEncryptionState any
 	// Key Vault Key URI
-	KeyUri any
+	KeyUri           any
 	LastUpdateStatus any
 	// Key Vault Subscription Id
 	SubscriptionId any
 }
 
 var BmsErrorResponse_PropertiesFields = ubx.FieldMap{
-		"EncryptionAtRestType": ubx.FieldSpec{WireName: "encryption_at_rest_type"},
-		"InfrastructureEncryptionState": ubx.FieldSpec{WireName: "infrastructure_encryption_state"},
-		"KeyUri": ubx.FieldSpec{WireName: "key_uri"},
-		"LastUpdateStatus": ubx.FieldSpec{WireName: "last_update_status"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-	}
+	"EncryptionAtRestType":          ubx.FieldSpec{WireName: "encryption_at_rest_type"},
+	"InfrastructureEncryptionState": ubx.FieldSpec{WireName: "infrastructure_encryption_state"},
+	"KeyUri":                        ubx.FieldSpec{WireName: "key_uri"},
+	"LastUpdateStatus":              ubx.FieldSpec{WireName: "last_update_status"},
+	"SubscriptionId":                ubx.FieldSpec{WireName: "subscription_id"},
+}
 
 type BmsErrorResponseConfig struct {
 	// Optional ETag.
 	ETag any
 	// Represents an Azure geography region where supported resource providers live.
-	Location any
+	Location   any
 	Properties any
 	// Resource tags.
 	Tags any
@@ -59,7 +59,7 @@ type BmsErrorResponseAttrs struct {
 	// The error detail.
 	Error any
 	// Represents an Azure geography region where supported resource providers live.
-	Location any
+	Location   any
 	Properties any
 	// Resource tags.
 	Tags any
@@ -68,12 +68,12 @@ type BmsErrorResponseAttrs struct {
 var BmsErrorResponse = ubx.ResourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_error_response",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
+		"ETag":     ubx.FieldSpec{WireName: "e_tag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BmsErrorResponse_PropertiesFields,
+			Kind:     "object",
+			Fields:   BmsErrorResponse_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

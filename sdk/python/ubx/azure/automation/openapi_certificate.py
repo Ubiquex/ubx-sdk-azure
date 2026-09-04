@@ -10,17 +10,26 @@ import ubx_sdk as ubx
 class OpenapiCertificate_Properties:
     # Gets or sets the base64 encoded value of the certificate.
     base64_value: Any = None
+    # Gets the creation time.
+    creation_time: Any = None
     # Gets or sets the description of the certificate.
     description: Any = None
+    # Gets the expiry time of the certificate.
+    expiry_time: Any = None
     # Gets or sets the is exportable flag of the certificate.
     is_exportable: Any = None
+    # Gets the last modified time.
+    last_modified_time: Any = None
     # Gets or sets the thumbprint of the certificate.
     thumbprint: Any = None
 
 _OpenapiCertificate_PropertiesFields = {
     "base64_value": ubx.FieldSpec(wire_name="base64_value"),
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
     "description": ubx.FieldSpec(wire_name="description"),
+    "expiry_time": ubx.FieldSpec(wire_name="expiry_time"),
     "is_exportable": ubx.FieldSpec(wire_name="is_exportable"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
     "thumbprint": ubx.FieldSpec(wire_name="thumbprint"),
 }
 

@@ -4,38 +4,38 @@ package servicefabric
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ClusterCodeVersionsResult_Value_Properties struct {
-	CodeVersion any
-	Environment any
+	CodeVersion      any
+	Environment      any
 	SupportExpiryUtc any
 }
 
 type ClusterCodeVersionsResult_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ClusterCodeVersionsResultConfig struct {
-	ApiVersion any
-	Location any
+	ApiVersion     any
+	Location       any
 	SubscriptionId any
 }
 
 type ClusterCodeVersionsResultAttrs struct {
 	ApiVersion any
-	Location any
+	Location   any
 	// The URL to use for getting the next set of results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
-	Value any
+	Value          any
 }
 
 var ClusterCodeVersionsResult = ubx.DataSourceBinding{
 	WireType: "azure_servicefabric_cluster_code_versions_result",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
+		"Location":       ubx.FieldSpec{WireName: "location"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -4,8 +4,8 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiSqlRoleDefinitionGetResults_Properties_Permissions struct {
-	DataActions any
-	Id any
+	DataActions    any
+	Id             any
 	NotDataActions any
 }
 
@@ -21,21 +21,21 @@ type DbOpenapiSqlRoleDefinitionGetResults_Properties struct {
 }
 
 var DbOpenapiSqlRoleDefinitionGetResults_Properties_PermissionsFields = ubx.FieldMap{
-		"DataActions": ubx.FieldSpec{WireName: "data_actions"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
-	}
+	"DataActions":    ubx.FieldSpec{WireName: "data_actions"},
+	"Id":             ubx.FieldSpec{WireName: "id"},
+	"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
+}
 
 var DbOpenapiSqlRoleDefinitionGetResults_PropertiesFields = ubx.FieldMap{
-		"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
-		"Permissions": ubx.FieldSpec{
-			WireName: "permissions",
-			Kind: "list",
-			Fields: DbOpenapiSqlRoleDefinitionGetResults_Properties_PermissionsFields,
-		},
-		"RoleName": ubx.FieldSpec{WireName: "role_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
+	"Permissions": ubx.FieldSpec{
+		WireName: "permissions",
+		Kind:     "list",
+		Fields:   DbOpenapiSqlRoleDefinitionGetResults_Properties_PermissionsFields,
+	},
+	"RoleName": ubx.FieldSpec{WireName: "role_name"},
+	"Type":     ubx.FieldSpec{WireName: "type"},
+}
 
 type DbOpenapiSqlRoleDefinitionGetResultsConfig struct {
 	// Azure Cosmos DB SQL Role Definition resource object.
@@ -52,8 +52,8 @@ var DbOpenapiSqlRoleDefinitionGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiSqlRoleDefinitionGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiSqlRoleDefinitionGetResults_PropertiesFields,
 		},
 	},
 }

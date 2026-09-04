@@ -228,10 +228,6 @@ const DatabasesDatabase_PropertiesFields: FieldMap = {
 export interface DatabasesDatabaseConfig {
   /** Azure Active Directory identity configuration for a resource. */
   identity?: DatabasesDatabase_Identity | Computed<DatabasesDatabase_Identity>;
-  /** Kind of database. This is metadata used for the Azure portal experience. */
-  kind?: string | Computed<string>;
-  /** Resource that manages the database. */
-  managedBy?: string | Computed<string>;
   /** The database's properties. */
   properties?: DatabasesDatabase_Properties | Computed<DatabasesDatabase_Properties>;
   /** An ARM Resource SKU. */
@@ -259,8 +255,6 @@ export const DatabasesDatabase: ResourceBinding<DatabasesDatabaseConfig, Databas
       kind: "object",
       fields: DatabasesDatabase_IdentityFields,
     },
-    kind: "kind",
-    managedBy: "managed_by",
     properties: {
       wireName: "properties",
       kind: "object",

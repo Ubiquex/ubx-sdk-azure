@@ -5,33 +5,33 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDbServer_Value_Properties_DbServerPatchingDetails struct {
 	EstimatedPatchDuration any
-	PatchingStatus any
-	TimePatchingEnded any
-	TimePatchingStarted any
+	PatchingStatus         any
+	TimePatchingEnded      any
+	TimePatchingStarted    any
 }
 
 type OpenapiDbServer_Value_Properties struct {
 	AutonomousVirtualMachineIds any
-	AutonomousVmClusterIds any
-	CompartmentId any
-	ComputeModel any
-	CpuCoreCount any
-	DbNodeIds any
-	DbNodeStorageSizeInGbs any
-	DbServerPatchingDetails any
-	DisplayName any
-	ExadataInfrastructureId any
-	LifecycleDetails any
-	LifecycleState any
-	MaxCpuCount any
-	MaxDbNodeStorageInGbs any
-	MaxMemoryInGbs any
-	MemorySizeInGbs any
-	Ocid any
-	ProvisioningState any
-	Shape any
-	TimeCreated any
-	VmClusterIds any
+	AutonomousVmClusterIds      any
+	CompartmentId               any
+	ComputeModel                any
+	CpuCoreCount                any
+	DbNodeIds                   any
+	DbNodeStorageSizeInGbs      any
+	DbServerPatchingDetails     any
+	DisplayName                 any
+	ExadataInfrastructureId     any
+	LifecycleDetails            any
+	LifecycleState              any
+	MaxCpuCount                 any
+	MaxDbNodeStorageInGbs       any
+	MaxMemoryInGbs              any
+	MemorySizeInGbs             any
+	Ocid                        any
+	ProvisioningState           any
+	Shape                       any
+	TimeCreated                 any
+	VmClusterIds                any
 }
 
 type OpenapiDbServer_Value struct {

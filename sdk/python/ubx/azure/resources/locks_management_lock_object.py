@@ -48,27 +48,10 @@ _LocksManagementLockObject_PropertiesFields = {
     ),
 }
 
-_LocksManagementLockObject_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class LocksManagementLockObjectConfig:
-    # The resource ID of the lock.
-    id: Any = None
-    # The name of the lock.
-    name: Any = None
     # The lock properties.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    # The resource type of the lock - Microsoft.Authorization/locks.
-    type: Any = None
 
 @dataclasses.dataclass
 class LocksManagementLockObjectAttrs:
@@ -86,18 +69,10 @@ class LocksManagementLockObjectAttrs:
 LocksManagementLockObject = ubx.ResourceBinding(
     wire_type="azure_resources_locks_management_lock_object",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_LocksManagementLockObject_PropertiesFields,
         ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_LocksManagementLockObject_SystemDataFields,
-        ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

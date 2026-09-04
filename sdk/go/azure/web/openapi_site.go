@@ -11,7 +11,7 @@ type OpenapiSite_ExtendedLocation struct {
 }
 
 type OpenapiSite_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -28,10 +28,10 @@ type OpenapiSite_Identity struct {
 
 type OpenapiSite_Properties_AiIntegration_Mcp_Servers struct {
 	Description any
-	Enabled any
-	Endpoint any
-	Name any
-	ToolList any
+	Enabled     any
+	Endpoint    any
+	Name        any
+	ToolList    any
 }
 
 type OpenapiSite_Properties_AiIntegration_Mcp struct {
@@ -150,7 +150,7 @@ type OpenapiSite_Properties_FunctionAppConfig_Runtime struct {
 
 type OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_AlwaysReady struct {
 	InstanceCount any
-	Name any
+	Name          any
 }
 
 type OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_Triggers_Http struct {
@@ -191,12 +191,12 @@ type OpenapiSite_Properties_FunctionAppConfig struct {
 }
 
 type OpenapiSite_Properties_HostNameSslStates struct {
-	HostType any
-	Name any
-	SslState any
+	HostType   any
+	Name       any
+	SslState   any
 	Thumbprint any
-	ToUpdate any
-	VirtualIp any
+	ToUpdate   any
+	VirtualIp  any
 }
 
 type OpenapiSite_Properties_HostingEnvironmentProfile struct {
@@ -241,7 +241,7 @@ type OpenapiSite_Properties_SiteConfig_ApiManagementConfig struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_AppSettings struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -280,18 +280,18 @@ type OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_SlowRequests struc
 }
 
 type OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodes struct {
-	Count any
-	Path any
-	Status any
-	SubStatus any
+	Count        any
+	Path         any
+	Status       any
+	SubStatus    any
 	TimeInterval any
-	Win32Status any
+	Win32Status  any
 }
 
 type OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesRange struct {
-	Count any
-	Path any
-	StatusCodes any
+	Count        any
+	Path         any
+	StatusCodes  any
 	TimeInterval any
 }
 
@@ -318,19 +318,19 @@ type OpenapiSite_Properties_SiteConfig_AutoHealRules struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_AzureStorageAccounts struct {
-	AccessKey any
+	AccessKey   any
 	AccountName any
-	MountPath any
-	Protocol any
-	ShareName any
-	State any
-	Type any
+	MountPath   any
+	Protocol    any
+	ShareName   any
+	State       any
+	Type        any
 }
 
 type OpenapiSite_Properties_SiteConfig_ConnectionStrings struct {
 	ConnectionString any
-	Name any
-	Type any
+	Name             any
+	Type             any
 }
 
 type OpenapiSite_Properties_SiteConfig_Cors struct {
@@ -341,14 +341,14 @@ type OpenapiSite_Properties_SiteConfig_Cors struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_Experiments_RampUpRules struct {
-	ActionHostName any
+	ActionHostName            any
 	ChangeDecisionCallbackUrl any
-	ChangeIntervalInMinutes any
-	ChangeStep any
-	MaxReroutePercentage any
-	MinReroutePercentage any
-	Name any
-	ReroutePercentage any
+	ChangeIntervalInMinutes   any
+	ChangeStep                any
+	MaxReroutePercentage      any
+	MinReroutePercentage      any
+	Name                      any
+	ReroutePercentage         any
 }
 
 type OpenapiSite_Properties_SiteConfig_Experiments struct {
@@ -357,23 +357,23 @@ type OpenapiSite_Properties_SiteConfig_Experiments struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_HandlerMappings struct {
-	Arguments any
-	Extension any
+	Arguments       any
+	Extension       any
 	ScriptProcessor any
 }
 
 type OpenapiSite_Properties_SiteConfig_IpSecurityRestrictions struct {
-	Action any
-	Description any
-	Headers any
-	IpAddress any
-	Name any
-	Priority any
-	SubnetMask any
-	SubnetTrafficTag any
-	Tag any
+	Action               any
+	Description          any
+	Headers              any
+	IpAddress            any
+	Name                 any
+	Priority             any
+	SubnetMask           any
+	SubnetTrafficTag     any
+	Tag                  any
 	VnetSubnetResourceId any
-	VnetTrafficTag any
+	VnetTrafficTag       any
 }
 
 type OpenapiSite_Properties_SiteConfig_Limits struct {
@@ -414,14 +414,14 @@ type OpenapiSite_Properties_SiteConfig_Push struct {
 
 type OpenapiSite_Properties_SiteConfig_VirtualApplications_VirtualDirectories struct {
 	PhysicalPath any
-	VirtualPath any
+	VirtualPath  any
 }
 
 type OpenapiSite_Properties_SiteConfig_VirtualApplications struct {
-	PhysicalPath any
-	PreloadEnabled any
+	PhysicalPath       any
+	PreloadEnabled     any
 	VirtualDirectories any
-	VirtualPath any
+	VirtualPath        any
 }
 
 type OpenapiSite_Properties_SiteConfig struct {
@@ -612,7 +612,7 @@ type OpenapiSite_Properties struct {
 	// App Dapr configuration.
 	DaprConfig any
 	// Default hostname of the app. Read-only.
-	DefaultHostName any
+	DefaultHostName  any
 	DnsConfiguration any
 	// <code>true</code> if the app is enabled; otherwise, <code>false</code>. Setting this value to false disables the app (takes the app offline).
 	Enabled any
@@ -705,668 +705,668 @@ type OpenapiSite_Properties struct {
 }
 
 var OpenapiSite_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiSite_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiSite_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiSite_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiSite_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiSite_Properties_AiIntegration_Mcp_ServersFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ToolList": ubx.FieldSpec{WireName: "tool_list"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Enabled":     ubx.FieldSpec{WireName: "enabled"},
+	"Endpoint":    ubx.FieldSpec{WireName: "endpoint"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+	"ToolList":    ubx.FieldSpec{WireName: "tool_list"},
+}
 
 var OpenapiSite_Properties_AiIntegration_McpFields = ubx.FieldMap{
-		"Servers": ubx.FieldSpec{
-			WireName: "servers",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_AiIntegration_Mcp_ServersFields,
-		},
-	}
+	"Servers": ubx.FieldSpec{
+		WireName: "servers",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_AiIntegration_Mcp_ServersFields,
+	},
+}
 
 var OpenapiSite_Properties_AiIntegration_SiteAuthFields = ubx.FieldMap{
-		"Audience": ubx.FieldSpec{WireName: "audience"},
-		"Issuer": ubx.FieldSpec{WireName: "issuer"},
-		"JwksUri": ubx.FieldSpec{WireName: "jwks_uri"},
-		"Scopes": ubx.FieldSpec{WireName: "scopes"},
-		"WellKnownOpenIdConfiguration": ubx.FieldSpec{WireName: "well_known_open_id_configuration"},
-	}
+	"Audience":                     ubx.FieldSpec{WireName: "audience"},
+	"Issuer":                       ubx.FieldSpec{WireName: "issuer"},
+	"JwksUri":                      ubx.FieldSpec{WireName: "jwks_uri"},
+	"Scopes":                       ubx.FieldSpec{WireName: "scopes"},
+	"WellKnownOpenIdConfiguration": ubx.FieldSpec{WireName: "well_known_open_id_configuration"},
+}
 
 var OpenapiSite_Properties_AiIntegrationFields = ubx.FieldMap{
-		"ApiSpecPath": ubx.FieldSpec{WireName: "api_spec_path"},
-		"Mcp": ubx.FieldSpec{
-			WireName: "mcp",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_AiIntegration_McpFields,
-		},
-		"SiteAuth": ubx.FieldSpec{
-			WireName: "site_auth",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_AiIntegration_SiteAuthFields,
-		},
-	}
+	"ApiSpecPath": ubx.FieldSpec{WireName: "api_spec_path"},
+	"Mcp": ubx.FieldSpec{
+		WireName: "mcp",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_AiIntegration_McpFields,
+	},
+	"SiteAuth": ubx.FieldSpec{
+		WireName: "site_auth",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_AiIntegration_SiteAuthFields,
+	},
+}
 
 var OpenapiSite_Properties_CloningInfoFields = ubx.FieldMap{
-		"AppSettingsOverrides": ubx.FieldSpec{WireName: "app_settings_overrides"},
-		"CloneCustomHostNames": ubx.FieldSpec{WireName: "clone_custom_host_names"},
-		"CloneSourceControl": ubx.FieldSpec{WireName: "clone_source_control"},
-		"ConfigureLoadBalancing": ubx.FieldSpec{WireName: "configure_load_balancing"},
-		"CorrelationId": ubx.FieldSpec{WireName: "correlation_id"},
-		"HostingEnvironment": ubx.FieldSpec{WireName: "hosting_environment"},
-		"Overwrite": ubx.FieldSpec{WireName: "overwrite"},
-		"SourceWebAppId": ubx.FieldSpec{WireName: "source_web_app_id"},
-		"SourceWebAppLocation": ubx.FieldSpec{WireName: "source_web_app_location"},
-		"TrafficManagerProfileId": ubx.FieldSpec{WireName: "traffic_manager_profile_id"},
-		"TrafficManagerProfileName": ubx.FieldSpec{WireName: "traffic_manager_profile_name"},
-	}
+	"AppSettingsOverrides":      ubx.FieldSpec{WireName: "app_settings_overrides"},
+	"CloneCustomHostNames":      ubx.FieldSpec{WireName: "clone_custom_host_names"},
+	"CloneSourceControl":        ubx.FieldSpec{WireName: "clone_source_control"},
+	"ConfigureLoadBalancing":    ubx.FieldSpec{WireName: "configure_load_balancing"},
+	"CorrelationId":             ubx.FieldSpec{WireName: "correlation_id"},
+	"HostingEnvironment":        ubx.FieldSpec{WireName: "hosting_environment"},
+	"Overwrite":                 ubx.FieldSpec{WireName: "overwrite"},
+	"SourceWebAppId":            ubx.FieldSpec{WireName: "source_web_app_id"},
+	"SourceWebAppLocation":      ubx.FieldSpec{WireName: "source_web_app_location"},
+	"TrafficManagerProfileId":   ubx.FieldSpec{WireName: "traffic_manager_profile_id"},
+	"TrafficManagerProfileName": ubx.FieldSpec{WireName: "traffic_manager_profile_name"},
+}
 
 var OpenapiSite_Properties_DaprConfigFields = ubx.FieldMap{
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"AppPort": ubx.FieldSpec{WireName: "app_port"},
-		"EnableApiLogging": ubx.FieldSpec{WireName: "enable_api_logging"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"HttpMaxRequestSize": ubx.FieldSpec{WireName: "http_max_request_size"},
-		"HttpReadBufferSize": ubx.FieldSpec{WireName: "http_read_buffer_size"},
-		"LogLevel": ubx.FieldSpec{WireName: "log_level"},
-	}
+	"AppId":              ubx.FieldSpec{WireName: "app_id"},
+	"AppPort":            ubx.FieldSpec{WireName: "app_port"},
+	"EnableApiLogging":   ubx.FieldSpec{WireName: "enable_api_logging"},
+	"Enabled":            ubx.FieldSpec{WireName: "enabled"},
+	"HttpMaxRequestSize": ubx.FieldSpec{WireName: "http_max_request_size"},
+	"HttpReadBufferSize": ubx.FieldSpec{WireName: "http_read_buffer_size"},
+	"LogLevel":           ubx.FieldSpec{WireName: "log_level"},
+}
 
 var OpenapiSite_Properties_DnsConfigurationFields = ubx.FieldMap{
-		"DnsAltServer": ubx.FieldSpec{WireName: "dns_alt_server"},
-		"DnsLegacySortOrder": ubx.FieldSpec{WireName: "dns_legacy_sort_order"},
-		"DnsMaxCacheTimeout": ubx.FieldSpec{WireName: "dns_max_cache_timeout"},
-		"DnsRetryAttemptCount": ubx.FieldSpec{WireName: "dns_retry_attempt_count"},
-		"DnsRetryAttemptTimeout": ubx.FieldSpec{WireName: "dns_retry_attempt_timeout"},
-		"DnsServers": ubx.FieldSpec{WireName: "dns_servers"},
-	}
+	"DnsAltServer":           ubx.FieldSpec{WireName: "dns_alt_server"},
+	"DnsLegacySortOrder":     ubx.FieldSpec{WireName: "dns_legacy_sort_order"},
+	"DnsMaxCacheTimeout":     ubx.FieldSpec{WireName: "dns_max_cache_timeout"},
+	"DnsRetryAttemptCount":   ubx.FieldSpec{WireName: "dns_retry_attempt_count"},
+	"DnsRetryAttemptTimeout": ubx.FieldSpec{WireName: "dns_retry_attempt_timeout"},
+	"DnsServers":             ubx.FieldSpec{WireName: "dns_servers"},
+}
 
 var OpenapiSite_Properties_FunctionAppConfig_Deployment_Storage_AuthenticationFields = ubx.FieldMap{
-		"StorageAccountConnectionStringName": ubx.FieldSpec{WireName: "storage_account_connection_string_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
-	}
+	"StorageAccountConnectionStringName": ubx.FieldSpec{WireName: "storage_account_connection_string_name"},
+	"Type":                               ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentityResourceId":     ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
+}
 
 var OpenapiSite_Properties_FunctionAppConfig_Deployment_StorageFields = ubx.FieldMap{
-		"Authentication": ubx.FieldSpec{
-			WireName: "authentication",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_FunctionAppConfig_Deployment_Storage_AuthenticationFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Authentication": ubx.FieldSpec{
+		WireName: "authentication",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_FunctionAppConfig_Deployment_Storage_AuthenticationFields,
+	},
+	"Type":  ubx.FieldSpec{WireName: "type"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiSite_Properties_FunctionAppConfig_DeploymentFields = ubx.FieldMap{
-		"Storage": ubx.FieldSpec{
-			WireName: "storage",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_FunctionAppConfig_Deployment_StorageFields,
-		},
-	}
+	"Storage": ubx.FieldSpec{
+		WireName: "storage",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_FunctionAppConfig_Deployment_StorageFields,
+	},
+}
 
 var OpenapiSite_Properties_FunctionAppConfig_RuntimeFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Name":    ubx.FieldSpec{WireName: "name"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_AlwaysReadyFields = ubx.FieldMap{
-		"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
+	"Name":          ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_Triggers_HttpFields = ubx.FieldMap{
-		"PerInstanceConcurrency": ubx.FieldSpec{WireName: "per_instance_concurrency"},
-	}
+	"PerInstanceConcurrency": ubx.FieldSpec{WireName: "per_instance_concurrency"},
+}
 
 var OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_TriggersFields = ubx.FieldMap{
-		"Http": ubx.FieldSpec{
-			WireName: "http",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_Triggers_HttpFields,
-		},
-	}
+	"Http": ubx.FieldSpec{
+		WireName: "http",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_Triggers_HttpFields,
+	},
+}
 
 var OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrencyFields = ubx.FieldMap{
-		"AlwaysReady": ubx.FieldSpec{
-			WireName: "always_ready",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_AlwaysReadyFields,
-		},
-		"InstanceMemoryMb": ubx.FieldSpec{WireName: "instance_memory_mb"},
-		"MaximumInstanceCount": ubx.FieldSpec{WireName: "maximum_instance_count"},
-		"Triggers": ubx.FieldSpec{
-			WireName: "triggers",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_TriggersFields,
-		},
-	}
+	"AlwaysReady": ubx.FieldSpec{
+		WireName: "always_ready",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_AlwaysReadyFields,
+	},
+	"InstanceMemoryMb":     ubx.FieldSpec{WireName: "instance_memory_mb"},
+	"MaximumInstanceCount": ubx.FieldSpec{WireName: "maximum_instance_count"},
+	"Triggers": ubx.FieldSpec{
+		WireName: "triggers",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_TriggersFields,
+	},
+}
 
 var OpenapiSite_Properties_FunctionAppConfig_SiteUpdateStrategyFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiSite_Properties_FunctionAppConfigFields = ubx.FieldMap{
-		"Deployment": ubx.FieldSpec{
-			WireName: "deployment",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_FunctionAppConfig_DeploymentFields,
-		},
-		"Runtime": ubx.FieldSpec{
-			WireName: "runtime",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_FunctionAppConfig_RuntimeFields,
-		},
-		"ScaleAndConcurrency": ubx.FieldSpec{
-			WireName: "scale_and_concurrency",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrencyFields,
-		},
-		"SiteUpdateStrategy": ubx.FieldSpec{
-			WireName: "site_update_strategy",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_FunctionAppConfig_SiteUpdateStrategyFields,
-		},
-	}
+	"Deployment": ubx.FieldSpec{
+		WireName: "deployment",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_FunctionAppConfig_DeploymentFields,
+	},
+	"Runtime": ubx.FieldSpec{
+		WireName: "runtime",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_FunctionAppConfig_RuntimeFields,
+	},
+	"ScaleAndConcurrency": ubx.FieldSpec{
+		WireName: "scale_and_concurrency",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrencyFields,
+	},
+	"SiteUpdateStrategy": ubx.FieldSpec{
+		WireName: "site_update_strategy",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_FunctionAppConfig_SiteUpdateStrategyFields,
+	},
+}
 
 var OpenapiSite_Properties_HostNameSslStatesFields = ubx.FieldMap{
-		"HostType": ubx.FieldSpec{WireName: "host_type"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SslState": ubx.FieldSpec{WireName: "ssl_state"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"ToUpdate": ubx.FieldSpec{WireName: "to_update"},
-		"VirtualIp": ubx.FieldSpec{WireName: "virtual_ip"},
-	}
+	"HostType":   ubx.FieldSpec{WireName: "host_type"},
+	"Name":       ubx.FieldSpec{WireName: "name"},
+	"SslState":   ubx.FieldSpec{WireName: "ssl_state"},
+	"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
+	"ToUpdate":   ubx.FieldSpec{WireName: "to_update"},
+	"VirtualIp":  ubx.FieldSpec{WireName: "virtual_ip"},
+}
 
 var OpenapiSite_Properties_HostingEnvironmentProfileFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiSite_Properties_OutboundVnetRoutingFields = ubx.FieldMap{
-		"AllTraffic": ubx.FieldSpec{WireName: "all_traffic"},
-		"ApplicationTraffic": ubx.FieldSpec{WireName: "application_traffic"},
-		"BackupRestoreTraffic": ubx.FieldSpec{WireName: "backup_restore_traffic"},
-		"ContentShareTraffic": ubx.FieldSpec{WireName: "content_share_traffic"},
-		"ImagePullTraffic": ubx.FieldSpec{WireName: "image_pull_traffic"},
-		"ManagedIdentityTraffic": ubx.FieldSpec{WireName: "managed_identity_traffic"},
-	}
+	"AllTraffic":             ubx.FieldSpec{WireName: "all_traffic"},
+	"ApplicationTraffic":     ubx.FieldSpec{WireName: "application_traffic"},
+	"BackupRestoreTraffic":   ubx.FieldSpec{WireName: "backup_restore_traffic"},
+	"ContentShareTraffic":    ubx.FieldSpec{WireName: "content_share_traffic"},
+	"ImagePullTraffic":       ubx.FieldSpec{WireName: "image_pull_traffic"},
+	"ManagedIdentityTraffic": ubx.FieldSpec{WireName: "managed_identity_traffic"},
+}
 
 var OpenapiSite_Properties_ResourceConfigFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":    ubx.FieldSpec{WireName: "cpu"},
+	"Memory": ubx.FieldSpec{WireName: "memory"},
+}
 
 var OpenapiSite_Properties_SiteConfig_ApiDefinitionFields = ubx.FieldMap{
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"Url": ubx.FieldSpec{WireName: "url"},
+}
 
 var OpenapiSite_Properties_SiteConfig_ApiManagementConfigFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiSite_Properties_SiteConfig_AppSettingsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiSite_Properties_SiteConfig_AutoHealRules_Actions_CustomActionFields = ubx.FieldMap{
-		"Exe": ubx.FieldSpec{WireName: "exe"},
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-	}
+	"Exe":        ubx.FieldSpec{WireName: "exe"},
+	"Parameters": ubx.FieldSpec{WireName: "parameters"},
+}
 
 var OpenapiSite_Properties_SiteConfig_AutoHealRules_ActionsFields = ubx.FieldMap{
-		"ActionType": ubx.FieldSpec{WireName: "action_type"},
-		"CustomAction": ubx.FieldSpec{
-			WireName: "custom_action",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_AutoHealRules_Actions_CustomActionFields,
-		},
-		"MinProcessExecutionTime": ubx.FieldSpec{WireName: "min_process_execution_time"},
-	}
+	"ActionType": ubx.FieldSpec{WireName: "action_type"},
+	"CustomAction": ubx.FieldSpec{
+		WireName: "custom_action",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_AutoHealRules_Actions_CustomActionFields,
+	},
+	"MinProcessExecutionTime": ubx.FieldSpec{WireName: "min_process_execution_time"},
+}
 
 var OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_RequestsFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"TimeInterval": ubx.FieldSpec{WireName: "time_interval"},
-	}
+	"Count":        ubx.FieldSpec{WireName: "count"},
+	"TimeInterval": ubx.FieldSpec{WireName: "time_interval"},
+}
 
 var OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_SlowRequestsFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"TimeInterval": ubx.FieldSpec{WireName: "time_interval"},
-		"TimeTaken": ubx.FieldSpec{WireName: "time_taken"},
-	}
+	"Count":        ubx.FieldSpec{WireName: "count"},
+	"Path":         ubx.FieldSpec{WireName: "path"},
+	"TimeInterval": ubx.FieldSpec{WireName: "time_interval"},
+	"TimeTaken":    ubx.FieldSpec{WireName: "time_taken"},
+}
 
 var OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"SubStatus": ubx.FieldSpec{WireName: "sub_status"},
-		"TimeInterval": ubx.FieldSpec{WireName: "time_interval"},
-		"Win32Status": ubx.FieldSpec{WireName: "win32_status"},
-	}
+	"Count":        ubx.FieldSpec{WireName: "count"},
+	"Path":         ubx.FieldSpec{WireName: "path"},
+	"Status":       ubx.FieldSpec{WireName: "status"},
+	"SubStatus":    ubx.FieldSpec{WireName: "sub_status"},
+	"TimeInterval": ubx.FieldSpec{WireName: "time_interval"},
+	"Win32Status":  ubx.FieldSpec{WireName: "win32_status"},
+}
 
 var OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesRangeFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"StatusCodes": ubx.FieldSpec{WireName: "status_codes"},
-		"TimeInterval": ubx.FieldSpec{WireName: "time_interval"},
-	}
+	"Count":        ubx.FieldSpec{WireName: "count"},
+	"Path":         ubx.FieldSpec{WireName: "path"},
+	"StatusCodes":  ubx.FieldSpec{WireName: "status_codes"},
+	"TimeInterval": ubx.FieldSpec{WireName: "time_interval"},
+}
 
 var OpenapiSite_Properties_SiteConfig_AutoHealRules_TriggersFields = ubx.FieldMap{
-		"PrivateBytesInKb": ubx.FieldSpec{WireName: "private_bytes_in_kb"},
-		"Requests": ubx.FieldSpec{
-			WireName: "requests",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_RequestsFields,
-		},
-		"SlowRequests": ubx.FieldSpec{
-			WireName: "slow_requests",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_SlowRequestsFields,
-		},
-		"SlowRequestsWithPath": ubx.FieldSpec{
-			WireName: "slow_requests_with_path",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_SlowRequestsFields,
-		},
-		"StatusCodes": ubx.FieldSpec{
-			WireName: "status_codes",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesFields,
-		},
-		"StatusCodesRange": ubx.FieldSpec{
-			WireName: "status_codes_range",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesRangeFields,
-		},
-	}
+	"PrivateBytesInKb": ubx.FieldSpec{WireName: "private_bytes_in_kb"},
+	"Requests": ubx.FieldSpec{
+		WireName: "requests",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_RequestsFields,
+	},
+	"SlowRequests": ubx.FieldSpec{
+		WireName: "slow_requests",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_SlowRequestsFields,
+	},
+	"SlowRequestsWithPath": ubx.FieldSpec{
+		WireName: "slow_requests_with_path",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_SlowRequestsFields,
+	},
+	"StatusCodes": ubx.FieldSpec{
+		WireName: "status_codes",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesFields,
+	},
+	"StatusCodesRange": ubx.FieldSpec{
+		WireName: "status_codes_range",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesRangeFields,
+	},
+}
 
 var OpenapiSite_Properties_SiteConfig_AutoHealRulesFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{
-			WireName: "actions",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_AutoHealRules_ActionsFields,
-		},
-		"Triggers": ubx.FieldSpec{
-			WireName: "triggers",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_AutoHealRules_TriggersFields,
-		},
-	}
+	"Actions": ubx.FieldSpec{
+		WireName: "actions",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_AutoHealRules_ActionsFields,
+	},
+	"Triggers": ubx.FieldSpec{
+		WireName: "triggers",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_AutoHealRules_TriggersFields,
+	},
+}
 
 var OpenapiSite_Properties_SiteConfig_AzureStorageAccountsFields = ubx.FieldMap{
-		"AccessKey": ubx.FieldSpec{WireName: "access_key"},
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"MountPath": ubx.FieldSpec{WireName: "mount_path"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ShareName": ubx.FieldSpec{WireName: "share_name"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"AccessKey":   ubx.FieldSpec{WireName: "access_key"},
+	"AccountName": ubx.FieldSpec{WireName: "account_name"},
+	"MountPath":   ubx.FieldSpec{WireName: "mount_path"},
+	"Protocol":    ubx.FieldSpec{WireName: "protocol"},
+	"ShareName":   ubx.FieldSpec{WireName: "share_name"},
+	"State":       ubx.FieldSpec{WireName: "state"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiSite_Properties_SiteConfig_ConnectionStringsFields = ubx.FieldMap{
-		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+	"Type":             ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiSite_Properties_SiteConfig_CorsFields = ubx.FieldMap{
-		"AllowedOrigins": ubx.FieldSpec{WireName: "allowed_origins"},
-		"SupportCredentials": ubx.FieldSpec{WireName: "support_credentials"},
-	}
+	"AllowedOrigins":     ubx.FieldSpec{WireName: "allowed_origins"},
+	"SupportCredentials": ubx.FieldSpec{WireName: "support_credentials"},
+}
 
 var OpenapiSite_Properties_SiteConfig_Experiments_RampUpRulesFields = ubx.FieldMap{
-		"ActionHostName": ubx.FieldSpec{WireName: "action_host_name"},
-		"ChangeDecisionCallbackUrl": ubx.FieldSpec{WireName: "change_decision_callback_url"},
-		"ChangeIntervalInMinutes": ubx.FieldSpec{WireName: "change_interval_in_minutes"},
-		"ChangeStep": ubx.FieldSpec{WireName: "change_step"},
-		"MaxReroutePercentage": ubx.FieldSpec{WireName: "max_reroute_percentage"},
-		"MinReroutePercentage": ubx.FieldSpec{WireName: "min_reroute_percentage"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ReroutePercentage": ubx.FieldSpec{WireName: "reroute_percentage"},
-	}
+	"ActionHostName":            ubx.FieldSpec{WireName: "action_host_name"},
+	"ChangeDecisionCallbackUrl": ubx.FieldSpec{WireName: "change_decision_callback_url"},
+	"ChangeIntervalInMinutes":   ubx.FieldSpec{WireName: "change_interval_in_minutes"},
+	"ChangeStep":                ubx.FieldSpec{WireName: "change_step"},
+	"MaxReroutePercentage":      ubx.FieldSpec{WireName: "max_reroute_percentage"},
+	"MinReroutePercentage":      ubx.FieldSpec{WireName: "min_reroute_percentage"},
+	"Name":                      ubx.FieldSpec{WireName: "name"},
+	"ReroutePercentage":         ubx.FieldSpec{WireName: "reroute_percentage"},
+}
 
 var OpenapiSite_Properties_SiteConfig_ExperimentsFields = ubx.FieldMap{
-		"RampUpRules": ubx.FieldSpec{
-			WireName: "ramp_up_rules",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_Experiments_RampUpRulesFields,
-		},
-	}
+	"RampUpRules": ubx.FieldSpec{
+		WireName: "ramp_up_rules",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_Experiments_RampUpRulesFields,
+	},
+}
 
 var OpenapiSite_Properties_SiteConfig_HandlerMappingsFields = ubx.FieldMap{
-		"Arguments": ubx.FieldSpec{WireName: "arguments"},
-		"Extension": ubx.FieldSpec{WireName: "extension"},
-		"ScriptProcessor": ubx.FieldSpec{WireName: "script_processor"},
-	}
+	"Arguments":       ubx.FieldSpec{WireName: "arguments"},
+	"Extension":       ubx.FieldSpec{WireName: "extension"},
+	"ScriptProcessor": ubx.FieldSpec{WireName: "script_processor"},
+}
 
 var OpenapiSite_Properties_SiteConfig_IpSecurityRestrictionsFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Headers": ubx.FieldSpec{WireName: "headers"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"SubnetMask": ubx.FieldSpec{WireName: "subnet_mask"},
-		"SubnetTrafficTag": ubx.FieldSpec{WireName: "subnet_traffic_tag"},
-		"Tag": ubx.FieldSpec{WireName: "tag"},
-		"VnetSubnetResourceId": ubx.FieldSpec{WireName: "vnet_subnet_resource_id"},
-		"VnetTrafficTag": ubx.FieldSpec{WireName: "vnet_traffic_tag"},
-	}
+	"Action":               ubx.FieldSpec{WireName: "action"},
+	"Description":          ubx.FieldSpec{WireName: "description"},
+	"Headers":              ubx.FieldSpec{WireName: "headers"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"Name":                 ubx.FieldSpec{WireName: "name"},
+	"Priority":             ubx.FieldSpec{WireName: "priority"},
+	"SubnetMask":           ubx.FieldSpec{WireName: "subnet_mask"},
+	"SubnetTrafficTag":     ubx.FieldSpec{WireName: "subnet_traffic_tag"},
+	"Tag":                  ubx.FieldSpec{WireName: "tag"},
+	"VnetSubnetResourceId": ubx.FieldSpec{WireName: "vnet_subnet_resource_id"},
+	"VnetTrafficTag":       ubx.FieldSpec{WireName: "vnet_traffic_tag"},
+}
 
 var OpenapiSite_Properties_SiteConfig_LimitsFields = ubx.FieldMap{
-		"MaxDiskSizeInMb": ubx.FieldSpec{WireName: "max_disk_size_in_mb"},
-		"MaxMemoryInMb": ubx.FieldSpec{WireName: "max_memory_in_mb"},
-		"MaxPercentageCpu": ubx.FieldSpec{WireName: "max_percentage_cpu"},
-	}
+	"MaxDiskSizeInMb":  ubx.FieldSpec{WireName: "max_disk_size_in_mb"},
+	"MaxMemoryInMb":    ubx.FieldSpec{WireName: "max_memory_in_mb"},
+	"MaxPercentageCpu": ubx.FieldSpec{WireName: "max_percentage_cpu"},
+}
 
 var OpenapiSite_Properties_SiteConfig_MachineKeyFields = ubx.FieldMap{
-		"Decryption": ubx.FieldSpec{WireName: "decryption"},
-		"DecryptionKey": ubx.FieldSpec{WireName: "decryption_key"},
-		"Validation": ubx.FieldSpec{WireName: "validation"},
-		"ValidationKey": ubx.FieldSpec{WireName: "validation_key"},
-	}
+	"Decryption":    ubx.FieldSpec{WireName: "decryption"},
+	"DecryptionKey": ubx.FieldSpec{WireName: "decryption_key"},
+	"Validation":    ubx.FieldSpec{WireName: "validation"},
+	"ValidationKey": ubx.FieldSpec{WireName: "validation_key"},
+}
 
 var OpenapiSite_Properties_SiteConfig_Push_PropertiesFields = ubx.FieldMap{
-		"DynamicTagsJson": ubx.FieldSpec{WireName: "dynamic_tags_json"},
-		"IsPushEnabled": ubx.FieldSpec{WireName: "is_push_enabled"},
-		"TagWhitelistJson": ubx.FieldSpec{WireName: "tag_whitelist_json"},
-		"TagsRequiringAuth": ubx.FieldSpec{WireName: "tags_requiring_auth"},
-	}
+	"DynamicTagsJson":   ubx.FieldSpec{WireName: "dynamic_tags_json"},
+	"IsPushEnabled":     ubx.FieldSpec{WireName: "is_push_enabled"},
+	"TagWhitelistJson":  ubx.FieldSpec{WireName: "tag_whitelist_json"},
+	"TagsRequiringAuth": ubx.FieldSpec{WireName: "tags_requiring_auth"},
+}
 
 var OpenapiSite_Properties_SiteConfig_PushFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_Push_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_Push_PropertiesFields,
+	},
+}
 
 var OpenapiSite_Properties_SiteConfig_VirtualApplications_VirtualDirectoriesFields = ubx.FieldMap{
-		"PhysicalPath": ubx.FieldSpec{WireName: "physical_path"},
-		"VirtualPath": ubx.FieldSpec{WireName: "virtual_path"},
-	}
+	"PhysicalPath": ubx.FieldSpec{WireName: "physical_path"},
+	"VirtualPath":  ubx.FieldSpec{WireName: "virtual_path"},
+}
 
 var OpenapiSite_Properties_SiteConfig_VirtualApplicationsFields = ubx.FieldMap{
-		"PhysicalPath": ubx.FieldSpec{WireName: "physical_path"},
-		"PreloadEnabled": ubx.FieldSpec{WireName: "preload_enabled"},
-		"VirtualDirectories": ubx.FieldSpec{
-			WireName: "virtual_directories",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_VirtualApplications_VirtualDirectoriesFields,
-		},
-		"VirtualPath": ubx.FieldSpec{WireName: "virtual_path"},
-	}
+	"PhysicalPath":   ubx.FieldSpec{WireName: "physical_path"},
+	"PreloadEnabled": ubx.FieldSpec{WireName: "preload_enabled"},
+	"VirtualDirectories": ubx.FieldSpec{
+		WireName: "virtual_directories",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_VirtualApplications_VirtualDirectoriesFields,
+	},
+	"VirtualPath": ubx.FieldSpec{WireName: "virtual_path"},
+}
 
 var OpenapiSite_Properties_SiteConfigFields = ubx.FieldMap{
-		"AcrUseManagedIdentityCreds": ubx.FieldSpec{WireName: "acr_use_managed_identity_creds"},
-		"AcrUserManagedIdentityId": ubx.FieldSpec{WireName: "acr_user_managed_identity_id"},
-		"AlwaysOn": ubx.FieldSpec{WireName: "always_on"},
-		"ApiDefinition": ubx.FieldSpec{
-			WireName: "api_definition",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_ApiDefinitionFields,
-		},
-		"ApiManagementConfig": ubx.FieldSpec{
-			WireName: "api_management_config",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_ApiManagementConfigFields,
-		},
-		"AppCommandLine": ubx.FieldSpec{WireName: "app_command_line"},
-		"AppSettings": ubx.FieldSpec{
-			WireName: "app_settings",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_AppSettingsFields,
-		},
-		"AutoHealEnabled": ubx.FieldSpec{WireName: "auto_heal_enabled"},
-		"AutoHealRules": ubx.FieldSpec{
-			WireName: "auto_heal_rules",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_AutoHealRulesFields,
-		},
-		"AutoSwapSlotName": ubx.FieldSpec{WireName: "auto_swap_slot_name"},
-		"AzureStorageAccounts": ubx.FieldSpec{
-			WireName: "azure_storage_accounts",
-			Kind: "map",
-			Fields: OpenapiSite_Properties_SiteConfig_AzureStorageAccountsFields,
-		},
-		"ConnectionStrings": ubx.FieldSpec{
-			WireName: "connection_strings",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_ConnectionStringsFields,
-		},
-		"Cors": ubx.FieldSpec{
-			WireName: "cors",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_CorsFields,
-		},
-		"DefaultDocuments": ubx.FieldSpec{WireName: "default_documents"},
-		"DetailedErrorLoggingEnabled": ubx.FieldSpec{WireName: "detailed_error_logging_enabled"},
-		"DocumentRoot": ubx.FieldSpec{WireName: "document_root"},
-		"ElasticWebAppScaleLimit": ubx.FieldSpec{WireName: "elastic_web_app_scale_limit"},
-		"Experiments": ubx.FieldSpec{
-			WireName: "experiments",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_ExperimentsFields,
-		},
-		"FtpsState": ubx.FieldSpec{WireName: "ftps_state"},
-		"FunctionAppScaleLimit": ubx.FieldSpec{WireName: "function_app_scale_limit"},
-		"FunctionsRuntimeScaleMonitoringEnabled": ubx.FieldSpec{WireName: "functions_runtime_scale_monitoring_enabled"},
-		"HandlerMappings": ubx.FieldSpec{
-			WireName: "handler_mappings",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_HandlerMappingsFields,
-		},
-		"HealthCheckPath": ubx.FieldSpec{WireName: "health_check_path"},
-		"Http20Enabled": ubx.FieldSpec{WireName: "http20_enabled"},
-		"Http20ProxyFlag": ubx.FieldSpec{WireName: "http20_proxy_flag"},
-		"HttpLoggingEnabled": ubx.FieldSpec{WireName: "http_logging_enabled"},
-		"IpSecurityRestrictions": ubx.FieldSpec{
-			WireName: "ip_security_restrictions",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_IpSecurityRestrictionsFields,
-		},
-		"IpSecurityRestrictionsDefaultAction": ubx.FieldSpec{WireName: "ip_security_restrictions_default_action"},
-		"JavaContainer": ubx.FieldSpec{WireName: "java_container"},
-		"JavaContainerVersion": ubx.FieldSpec{WireName: "java_container_version"},
-		"JavaVersion": ubx.FieldSpec{WireName: "java_version"},
-		"KeyVaultReferenceIdentity": ubx.FieldSpec{WireName: "key_vault_reference_identity"},
-		"Limits": ubx.FieldSpec{
-			WireName: "limits",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_LimitsFields,
-		},
-		"LinuxFxVersion": ubx.FieldSpec{WireName: "linux_fx_version"},
-		"LoadBalancing": ubx.FieldSpec{WireName: "load_balancing"},
-		"LocalMySqlEnabled": ubx.FieldSpec{WireName: "local_my_sql_enabled"},
-		"LogsDirectorySizeLimit": ubx.FieldSpec{WireName: "logs_directory_size_limit"},
-		"MachineKey": ubx.FieldSpec{
-			WireName: "machine_key",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_MachineKeyFields,
-		},
-		"ManagedPipelineMode": ubx.FieldSpec{WireName: "managed_pipeline_mode"},
-		"ManagedServiceIdentityId": ubx.FieldSpec{WireName: "managed_service_identity_id"},
-		"Metadata": ubx.FieldSpec{
-			WireName: "metadata",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_AppSettingsFields,
-		},
-		"MinTlsCipherSuite": ubx.FieldSpec{WireName: "min_tls_cipher_suite"},
-		"MinTlsVersion": ubx.FieldSpec{WireName: "min_tls_version"},
-		"MinimumElasticInstanceCount": ubx.FieldSpec{WireName: "minimum_elastic_instance_count"},
-		"NetFrameworkVersion": ubx.FieldSpec{WireName: "net_framework_version"},
-		"NodeVersion": ubx.FieldSpec{WireName: "node_version"},
-		"NumberOfWorkers": ubx.FieldSpec{WireName: "number_of_workers"},
-		"PhpVersion": ubx.FieldSpec{WireName: "php_version"},
-		"PowerShellVersion": ubx.FieldSpec{WireName: "power_shell_version"},
-		"PreWarmedInstanceCount": ubx.FieldSpec{WireName: "pre_warmed_instance_count"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"PublishingUsername": ubx.FieldSpec{WireName: "publishing_username"},
-		"Push": ubx.FieldSpec{
-			WireName: "push",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfig_PushFields,
-		},
-		"PythonVersion": ubx.FieldSpec{WireName: "python_version"},
-		"RemoteDebuggingEnabled": ubx.FieldSpec{WireName: "remote_debugging_enabled"},
-		"RemoteDebuggingVersion": ubx.FieldSpec{WireName: "remote_debugging_version"},
-		"RequestTracingEnabled": ubx.FieldSpec{WireName: "request_tracing_enabled"},
-		"RequestTracingExpirationTime": ubx.FieldSpec{WireName: "request_tracing_expiration_time"},
-		"ScmIpSecurityRestrictions": ubx.FieldSpec{
-			WireName: "scm_ip_security_restrictions",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_IpSecurityRestrictionsFields,
-		},
-		"ScmIpSecurityRestrictionsDefaultAction": ubx.FieldSpec{WireName: "scm_ip_security_restrictions_default_action"},
-		"ScmIpSecurityRestrictionsUseMain": ubx.FieldSpec{WireName: "scm_ip_security_restrictions_use_main"},
-		"ScmMinTlsVersion": ubx.FieldSpec{WireName: "scm_min_tls_version"},
-		"ScmType": ubx.FieldSpec{WireName: "scm_type"},
-		"TracingOptions": ubx.FieldSpec{WireName: "tracing_options"},
-		"Use32BitWorkerProcess": ubx.FieldSpec{WireName: "use32_bit_worker_process"},
-		"VirtualApplications": ubx.FieldSpec{
-			WireName: "virtual_applications",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_SiteConfig_VirtualApplicationsFields,
-		},
-		"VnetName": ubx.FieldSpec{WireName: "vnet_name"},
-		"VnetPrivatePortsCount": ubx.FieldSpec{WireName: "vnet_private_ports_count"},
-		"VnetRouteAllEnabled": ubx.FieldSpec{WireName: "vnet_route_all_enabled"},
-		"WebSocketsEnabled": ubx.FieldSpec{WireName: "web_sockets_enabled"},
-		"WebsiteTimeZone": ubx.FieldSpec{WireName: "website_time_zone"},
-		"WindowsFxVersion": ubx.FieldSpec{WireName: "windows_fx_version"},
-		"XManagedServiceIdentityId": ubx.FieldSpec{WireName: "x_managed_service_identity_id"},
-	}
+	"AcrUseManagedIdentityCreds": ubx.FieldSpec{WireName: "acr_use_managed_identity_creds"},
+	"AcrUserManagedIdentityId":   ubx.FieldSpec{WireName: "acr_user_managed_identity_id"},
+	"AlwaysOn":                   ubx.FieldSpec{WireName: "always_on"},
+	"ApiDefinition": ubx.FieldSpec{
+		WireName: "api_definition",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_ApiDefinitionFields,
+	},
+	"ApiManagementConfig": ubx.FieldSpec{
+		WireName: "api_management_config",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_ApiManagementConfigFields,
+	},
+	"AppCommandLine": ubx.FieldSpec{WireName: "app_command_line"},
+	"AppSettings": ubx.FieldSpec{
+		WireName: "app_settings",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_AppSettingsFields,
+	},
+	"AutoHealEnabled": ubx.FieldSpec{WireName: "auto_heal_enabled"},
+	"AutoHealRules": ubx.FieldSpec{
+		WireName: "auto_heal_rules",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_AutoHealRulesFields,
+	},
+	"AutoSwapSlotName": ubx.FieldSpec{WireName: "auto_swap_slot_name"},
+	"AzureStorageAccounts": ubx.FieldSpec{
+		WireName: "azure_storage_accounts",
+		Kind:     "map",
+		Fields:   OpenapiSite_Properties_SiteConfig_AzureStorageAccountsFields,
+	},
+	"ConnectionStrings": ubx.FieldSpec{
+		WireName: "connection_strings",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_ConnectionStringsFields,
+	},
+	"Cors": ubx.FieldSpec{
+		WireName: "cors",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_CorsFields,
+	},
+	"DefaultDocuments":            ubx.FieldSpec{WireName: "default_documents"},
+	"DetailedErrorLoggingEnabled": ubx.FieldSpec{WireName: "detailed_error_logging_enabled"},
+	"DocumentRoot":                ubx.FieldSpec{WireName: "document_root"},
+	"ElasticWebAppScaleLimit":     ubx.FieldSpec{WireName: "elastic_web_app_scale_limit"},
+	"Experiments": ubx.FieldSpec{
+		WireName: "experiments",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_ExperimentsFields,
+	},
+	"FtpsState":                              ubx.FieldSpec{WireName: "ftps_state"},
+	"FunctionAppScaleLimit":                  ubx.FieldSpec{WireName: "function_app_scale_limit"},
+	"FunctionsRuntimeScaleMonitoringEnabled": ubx.FieldSpec{WireName: "functions_runtime_scale_monitoring_enabled"},
+	"HandlerMappings": ubx.FieldSpec{
+		WireName: "handler_mappings",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_HandlerMappingsFields,
+	},
+	"HealthCheckPath":    ubx.FieldSpec{WireName: "health_check_path"},
+	"Http20Enabled":      ubx.FieldSpec{WireName: "http20_enabled"},
+	"Http20ProxyFlag":    ubx.FieldSpec{WireName: "http20_proxy_flag"},
+	"HttpLoggingEnabled": ubx.FieldSpec{WireName: "http_logging_enabled"},
+	"IpSecurityRestrictions": ubx.FieldSpec{
+		WireName: "ip_security_restrictions",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_IpSecurityRestrictionsFields,
+	},
+	"IpSecurityRestrictionsDefaultAction": ubx.FieldSpec{WireName: "ip_security_restrictions_default_action"},
+	"JavaContainer":                       ubx.FieldSpec{WireName: "java_container"},
+	"JavaContainerVersion":                ubx.FieldSpec{WireName: "java_container_version"},
+	"JavaVersion":                         ubx.FieldSpec{WireName: "java_version"},
+	"KeyVaultReferenceIdentity":           ubx.FieldSpec{WireName: "key_vault_reference_identity"},
+	"Limits": ubx.FieldSpec{
+		WireName: "limits",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_LimitsFields,
+	},
+	"LinuxFxVersion":         ubx.FieldSpec{WireName: "linux_fx_version"},
+	"LoadBalancing":          ubx.FieldSpec{WireName: "load_balancing"},
+	"LocalMySqlEnabled":      ubx.FieldSpec{WireName: "local_my_sql_enabled"},
+	"LogsDirectorySizeLimit": ubx.FieldSpec{WireName: "logs_directory_size_limit"},
+	"MachineKey": ubx.FieldSpec{
+		WireName: "machine_key",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_MachineKeyFields,
+	},
+	"ManagedPipelineMode":      ubx.FieldSpec{WireName: "managed_pipeline_mode"},
+	"ManagedServiceIdentityId": ubx.FieldSpec{WireName: "managed_service_identity_id"},
+	"Metadata": ubx.FieldSpec{
+		WireName: "metadata",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_AppSettingsFields,
+	},
+	"MinTlsCipherSuite":           ubx.FieldSpec{WireName: "min_tls_cipher_suite"},
+	"MinTlsVersion":               ubx.FieldSpec{WireName: "min_tls_version"},
+	"MinimumElasticInstanceCount": ubx.FieldSpec{WireName: "minimum_elastic_instance_count"},
+	"NetFrameworkVersion":         ubx.FieldSpec{WireName: "net_framework_version"},
+	"NodeVersion":                 ubx.FieldSpec{WireName: "node_version"},
+	"NumberOfWorkers":             ubx.FieldSpec{WireName: "number_of_workers"},
+	"PhpVersion":                  ubx.FieldSpec{WireName: "php_version"},
+	"PowerShellVersion":           ubx.FieldSpec{WireName: "power_shell_version"},
+	"PreWarmedInstanceCount":      ubx.FieldSpec{WireName: "pre_warmed_instance_count"},
+	"PublicNetworkAccess":         ubx.FieldSpec{WireName: "public_network_access"},
+	"PublishingUsername":          ubx.FieldSpec{WireName: "publishing_username"},
+	"Push": ubx.FieldSpec{
+		WireName: "push",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfig_PushFields,
+	},
+	"PythonVersion":                ubx.FieldSpec{WireName: "python_version"},
+	"RemoteDebuggingEnabled":       ubx.FieldSpec{WireName: "remote_debugging_enabled"},
+	"RemoteDebuggingVersion":       ubx.FieldSpec{WireName: "remote_debugging_version"},
+	"RequestTracingEnabled":        ubx.FieldSpec{WireName: "request_tracing_enabled"},
+	"RequestTracingExpirationTime": ubx.FieldSpec{WireName: "request_tracing_expiration_time"},
+	"ScmIpSecurityRestrictions": ubx.FieldSpec{
+		WireName: "scm_ip_security_restrictions",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_IpSecurityRestrictionsFields,
+	},
+	"ScmIpSecurityRestrictionsDefaultAction": ubx.FieldSpec{WireName: "scm_ip_security_restrictions_default_action"},
+	"ScmIpSecurityRestrictionsUseMain":       ubx.FieldSpec{WireName: "scm_ip_security_restrictions_use_main"},
+	"ScmMinTlsVersion":                       ubx.FieldSpec{WireName: "scm_min_tls_version"},
+	"ScmType":                                ubx.FieldSpec{WireName: "scm_type"},
+	"TracingOptions":                         ubx.FieldSpec{WireName: "tracing_options"},
+	"Use32BitWorkerProcess":                  ubx.FieldSpec{WireName: "use32_bit_worker_process"},
+	"VirtualApplications": ubx.FieldSpec{
+		WireName: "virtual_applications",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_SiteConfig_VirtualApplicationsFields,
+	},
+	"VnetName":                  ubx.FieldSpec{WireName: "vnet_name"},
+	"VnetPrivatePortsCount":     ubx.FieldSpec{WireName: "vnet_private_ports_count"},
+	"VnetRouteAllEnabled":       ubx.FieldSpec{WireName: "vnet_route_all_enabled"},
+	"WebSocketsEnabled":         ubx.FieldSpec{WireName: "web_sockets_enabled"},
+	"WebsiteTimeZone":           ubx.FieldSpec{WireName: "website_time_zone"},
+	"WindowsFxVersion":          ubx.FieldSpec{WireName: "windows_fx_version"},
+	"XManagedServiceIdentityId": ubx.FieldSpec{WireName: "x_managed_service_identity_id"},
+}
 
 var OpenapiSite_Properties_SlotSwapStatusFields = ubx.FieldMap{
-		"DestinationSlotName": ubx.FieldSpec{WireName: "destination_slot_name"},
-		"SourceSlotName": ubx.FieldSpec{WireName: "source_slot_name"},
-		"TimestampUtc": ubx.FieldSpec{WireName: "timestamp_utc"},
-	}
+	"DestinationSlotName": ubx.FieldSpec{WireName: "destination_slot_name"},
+	"SourceSlotName":      ubx.FieldSpec{WireName: "source_slot_name"},
+	"TimestampUtc":        ubx.FieldSpec{WireName: "timestamp_utc"},
+}
 
 var OpenapiSite_PropertiesFields = ubx.FieldMap{
-		"AiIntegration": ubx.FieldSpec{
-			WireName: "ai_integration",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_AiIntegrationFields,
-		},
-		"AutoGeneratedDomainNameLabelScope": ubx.FieldSpec{WireName: "auto_generated_domain_name_label_scope"},
-		"AvailabilityState": ubx.FieldSpec{WireName: "availability_state"},
-		"ClientAffinityEnabled": ubx.FieldSpec{WireName: "client_affinity_enabled"},
-		"ClientAffinityPartitioningEnabled": ubx.FieldSpec{WireName: "client_affinity_partitioning_enabled"},
-		"ClientAffinityProxyEnabled": ubx.FieldSpec{WireName: "client_affinity_proxy_enabled"},
-		"ClientCertEnabled": ubx.FieldSpec{WireName: "client_cert_enabled"},
-		"ClientCertExclusionPaths": ubx.FieldSpec{WireName: "client_cert_exclusion_paths"},
-		"ClientCertMode": ubx.FieldSpec{WireName: "client_cert_mode"},
-		"CloningInfo": ubx.FieldSpec{
-			WireName: "cloning_info",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_CloningInfoFields,
-		},
-		"ContainerSize": ubx.FieldSpec{WireName: "container_size"},
-		"CustomDomainVerificationId": ubx.FieldSpec{WireName: "custom_domain_verification_id"},
-		"DailyMemoryTimeQuota": ubx.FieldSpec{WireName: "daily_memory_time_quota"},
-		"DaprConfig": ubx.FieldSpec{
-			WireName: "dapr_config",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_DaprConfigFields,
-		},
-		"DefaultHostName": ubx.FieldSpec{WireName: "default_host_name"},
-		"DnsConfiguration": ubx.FieldSpec{
-			WireName: "dns_configuration",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_DnsConfigurationFields,
-		},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"EnabledHostNames": ubx.FieldSpec{WireName: "enabled_host_names"},
-		"EndToEndEncryptionEnabled": ubx.FieldSpec{WireName: "end_to_end_encryption_enabled"},
-		"FunctionAppConfig": ubx.FieldSpec{
-			WireName: "function_app_config",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_FunctionAppConfigFields,
-		},
-		"HostNameSslStates": ubx.FieldSpec{
-			WireName: "host_name_ssl_states",
-			Kind: "list",
-			Fields: OpenapiSite_Properties_HostNameSslStatesFields,
-		},
-		"HostNames": ubx.FieldSpec{WireName: "host_names"},
-		"HostNamesDisabled": ubx.FieldSpec{WireName: "host_names_disabled"},
-		"HostingEnvironmentProfile": ubx.FieldSpec{
-			WireName: "hosting_environment_profile",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_HostingEnvironmentProfileFields,
-		},
-		"HttpsOnly": ubx.FieldSpec{WireName: "https_only"},
-		"HyperV": ubx.FieldSpec{WireName: "hyper_v"},
-		"InProgressOperationId": ubx.FieldSpec{WireName: "in_progress_operation_id"},
-		"IpMode": ubx.FieldSpec{WireName: "ip_mode"},
-		"IsDefaultContainer": ubx.FieldSpec{WireName: "is_default_container"},
-		"IsXenon": ubx.FieldSpec{WireName: "is_xenon"},
-		"KeyVaultReferenceIdentity": ubx.FieldSpec{WireName: "key_vault_reference_identity"},
-		"LastModifiedTimeUtc": ubx.FieldSpec{WireName: "last_modified_time_utc"},
-		"MaintenanceEnabled": ubx.FieldSpec{WireName: "maintenance_enabled"},
-		"ManagedEnvironmentId": ubx.FieldSpec{WireName: "managed_environment_id"},
-		"MaxNumberOfWorkers": ubx.FieldSpec{WireName: "max_number_of_workers"},
-		"OutboundIpAddresses": ubx.FieldSpec{WireName: "outbound_ip_addresses"},
-		"OutboundVnetRouting": ubx.FieldSpec{
-			WireName: "outbound_vnet_routing",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_OutboundVnetRoutingFields,
-		},
-		"PlatformReleaseChannel": ubx.FieldSpec{WireName: "platform_release_channel"},
-		"PossibleOutboundIpAddresses": ubx.FieldSpec{WireName: "possible_outbound_ip_addresses"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"RedundancyMode": ubx.FieldSpec{WireName: "redundancy_mode"},
-		"RepositorySiteName": ubx.FieldSpec{WireName: "repository_site_name"},
-		"Reserved": ubx.FieldSpec{WireName: "reserved"},
-		"ResourceConfig": ubx.FieldSpec{
-			WireName: "resource_config",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_ResourceConfigFields,
-		},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"ScmSiteAlsoStopped": ubx.FieldSpec{WireName: "scm_site_also_stopped"},
-		"ServerFarmId": ubx.FieldSpec{WireName: "server_farm_id"},
-		"SiteConfig": ubx.FieldSpec{
-			WireName: "site_config",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SiteConfigFields,
-		},
-		"SiteScopedCertificatesEnabled": ubx.FieldSpec{WireName: "site_scoped_certificates_enabled"},
-		"Sku": ubx.FieldSpec{WireName: "sku"},
-		"SlotSwapStatus": ubx.FieldSpec{
-			WireName: "slot_swap_status",
-			Kind: "object",
-			Fields: OpenapiSite_Properties_SlotSwapStatusFields,
-		},
-		"SshEnabled": ubx.FieldSpec{WireName: "ssh_enabled"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StorageAccountRequired": ubx.FieldSpec{WireName: "storage_account_required"},
-		"SuspendedTill": ubx.FieldSpec{WireName: "suspended_till"},
-		"TargetSwapSlot": ubx.FieldSpec{WireName: "target_swap_slot"},
-		"TrafficManagerHostNames": ubx.FieldSpec{WireName: "traffic_manager_host_names"},
-		"UsageState": ubx.FieldSpec{WireName: "usage_state"},
-		"VirtualNetworkSubnetId": ubx.FieldSpec{WireName: "virtual_network_subnet_id"},
-		"WorkloadProfileName": ubx.FieldSpec{WireName: "workload_profile_name"},
-	}
+	"AiIntegration": ubx.FieldSpec{
+		WireName: "ai_integration",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_AiIntegrationFields,
+	},
+	"AutoGeneratedDomainNameLabelScope": ubx.FieldSpec{WireName: "auto_generated_domain_name_label_scope"},
+	"AvailabilityState":                 ubx.FieldSpec{WireName: "availability_state"},
+	"ClientAffinityEnabled":             ubx.FieldSpec{WireName: "client_affinity_enabled"},
+	"ClientAffinityPartitioningEnabled": ubx.FieldSpec{WireName: "client_affinity_partitioning_enabled"},
+	"ClientAffinityProxyEnabled":        ubx.FieldSpec{WireName: "client_affinity_proxy_enabled"},
+	"ClientCertEnabled":                 ubx.FieldSpec{WireName: "client_cert_enabled"},
+	"ClientCertExclusionPaths":          ubx.FieldSpec{WireName: "client_cert_exclusion_paths"},
+	"ClientCertMode":                    ubx.FieldSpec{WireName: "client_cert_mode"},
+	"CloningInfo": ubx.FieldSpec{
+		WireName: "cloning_info",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_CloningInfoFields,
+	},
+	"ContainerSize":              ubx.FieldSpec{WireName: "container_size"},
+	"CustomDomainVerificationId": ubx.FieldSpec{WireName: "custom_domain_verification_id"},
+	"DailyMemoryTimeQuota":       ubx.FieldSpec{WireName: "daily_memory_time_quota"},
+	"DaprConfig": ubx.FieldSpec{
+		WireName: "dapr_config",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_DaprConfigFields,
+	},
+	"DefaultHostName": ubx.FieldSpec{WireName: "default_host_name"},
+	"DnsConfiguration": ubx.FieldSpec{
+		WireName: "dns_configuration",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_DnsConfigurationFields,
+	},
+	"Enabled":                   ubx.FieldSpec{WireName: "enabled"},
+	"EnabledHostNames":          ubx.FieldSpec{WireName: "enabled_host_names"},
+	"EndToEndEncryptionEnabled": ubx.FieldSpec{WireName: "end_to_end_encryption_enabled"},
+	"FunctionAppConfig": ubx.FieldSpec{
+		WireName: "function_app_config",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_FunctionAppConfigFields,
+	},
+	"HostNameSslStates": ubx.FieldSpec{
+		WireName: "host_name_ssl_states",
+		Kind:     "list",
+		Fields:   OpenapiSite_Properties_HostNameSslStatesFields,
+	},
+	"HostNames":         ubx.FieldSpec{WireName: "host_names"},
+	"HostNamesDisabled": ubx.FieldSpec{WireName: "host_names_disabled"},
+	"HostingEnvironmentProfile": ubx.FieldSpec{
+		WireName: "hosting_environment_profile",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_HostingEnvironmentProfileFields,
+	},
+	"HttpsOnly":                 ubx.FieldSpec{WireName: "https_only"},
+	"HyperV":                    ubx.FieldSpec{WireName: "hyper_v"},
+	"InProgressOperationId":     ubx.FieldSpec{WireName: "in_progress_operation_id"},
+	"IpMode":                    ubx.FieldSpec{WireName: "ip_mode"},
+	"IsDefaultContainer":        ubx.FieldSpec{WireName: "is_default_container"},
+	"IsXenon":                   ubx.FieldSpec{WireName: "is_xenon"},
+	"KeyVaultReferenceIdentity": ubx.FieldSpec{WireName: "key_vault_reference_identity"},
+	"LastModifiedTimeUtc":       ubx.FieldSpec{WireName: "last_modified_time_utc"},
+	"MaintenanceEnabled":        ubx.FieldSpec{WireName: "maintenance_enabled"},
+	"ManagedEnvironmentId":      ubx.FieldSpec{WireName: "managed_environment_id"},
+	"MaxNumberOfWorkers":        ubx.FieldSpec{WireName: "max_number_of_workers"},
+	"OutboundIpAddresses":       ubx.FieldSpec{WireName: "outbound_ip_addresses"},
+	"OutboundVnetRouting": ubx.FieldSpec{
+		WireName: "outbound_vnet_routing",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_OutboundVnetRoutingFields,
+	},
+	"PlatformReleaseChannel":      ubx.FieldSpec{WireName: "platform_release_channel"},
+	"PossibleOutboundIpAddresses": ubx.FieldSpec{WireName: "possible_outbound_ip_addresses"},
+	"PublicNetworkAccess":         ubx.FieldSpec{WireName: "public_network_access"},
+	"RedundancyMode":              ubx.FieldSpec{WireName: "redundancy_mode"},
+	"RepositorySiteName":          ubx.FieldSpec{WireName: "repository_site_name"},
+	"Reserved":                    ubx.FieldSpec{WireName: "reserved"},
+	"ResourceConfig": ubx.FieldSpec{
+		WireName: "resource_config",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_ResourceConfigFields,
+	},
+	"ResourceGroup":      ubx.FieldSpec{WireName: "resource_group"},
+	"ScmSiteAlsoStopped": ubx.FieldSpec{WireName: "scm_site_also_stopped"},
+	"ServerFarmId":       ubx.FieldSpec{WireName: "server_farm_id"},
+	"SiteConfig": ubx.FieldSpec{
+		WireName: "site_config",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SiteConfigFields,
+	},
+	"SiteScopedCertificatesEnabled": ubx.FieldSpec{WireName: "site_scoped_certificates_enabled"},
+	"Sku":                           ubx.FieldSpec{WireName: "sku"},
+	"SlotSwapStatus": ubx.FieldSpec{
+		WireName: "slot_swap_status",
+		Kind:     "object",
+		Fields:   OpenapiSite_Properties_SlotSwapStatusFields,
+	},
+	"SshEnabled":              ubx.FieldSpec{WireName: "ssh_enabled"},
+	"State":                   ubx.FieldSpec{WireName: "state"},
+	"StorageAccountRequired":  ubx.FieldSpec{WireName: "storage_account_required"},
+	"SuspendedTill":           ubx.FieldSpec{WireName: "suspended_till"},
+	"TargetSwapSlot":          ubx.FieldSpec{WireName: "target_swap_slot"},
+	"TrafficManagerHostNames": ubx.FieldSpec{WireName: "traffic_manager_host_names"},
+	"UsageState":              ubx.FieldSpec{WireName: "usage_state"},
+	"VirtualNetworkSubnetId":  ubx.FieldSpec{WireName: "virtual_network_subnet_id"},
+	"WorkloadProfileName":     ubx.FieldSpec{WireName: "workload_profile_name"},
+}
 
 type OpenapiSiteConfig struct {
 	// Extended Location.
@@ -1399,19 +1399,19 @@ var OpenapiSite = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: OpenapiSite_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   OpenapiSite_ExtendedLocationFields,
 		},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiSite_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiSite_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSite_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSite_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

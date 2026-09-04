@@ -4,33 +4,33 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPolicyAssignment_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiPolicyAssignment_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiPolicyAssignment_Value_Properties_NonComplianceMessages struct {
-	Message any
+	Message                     any
 	PolicyDefinitionReferenceId any
 }
 
 type OpenapiPolicyAssignment_Value_Properties_Overrides_Selectors struct {
-	In any
-	Kind any
-	NotIn any
+	In       any
+	Kind     any
+	NotIn    any
 	Progress any
 }
 
 type OpenapiPolicyAssignment_Value_Properties_Overrides struct {
-	Kind any
+	Kind      any
 	Selectors any
-	Value any
+	Value     any
 }
 
 type OpenapiPolicyAssignment_Value_Properties_Parameters struct {
@@ -38,38 +38,38 @@ type OpenapiPolicyAssignment_Value_Properties_Parameters struct {
 }
 
 type OpenapiPolicyAssignment_Value_Properties_ResourceSelectors struct {
-	Name any
+	Name      any
 	Selectors any
 }
 
 type OpenapiPolicyAssignment_Value_Properties_SelfServeExemptionSettings struct {
-	Enabled any
+	Enabled                      any
 	PolicyDefinitionReferenceIds any
 }
 
 type OpenapiPolicyAssignment_Value_Properties struct {
-	AssignmentType any
-	DefinitionVersion any
-	Description any
-	DisplayName any
+	AssignmentType             any
+	DefinitionVersion          any
+	Description                any
+	DisplayName                any
 	EffectiveDefinitionVersion any
-	EnforcementMode any
-	InstanceId any
-	LatestDefinitionVersion any
-	Metadata any
-	NonComplianceMessages any
-	NotScopes any
-	Overrides any
-	Parameters any
-	PolicyDefinitionId any
-	ResourceSelectors any
-	Scope any
+	EnforcementMode            any
+	InstanceId                 any
+	LatestDefinitionVersion    any
+	Metadata                   any
+	NonComplianceMessages      any
+	NotScopes                  any
+	Overrides                  any
+	Parameters                 any
+	PolicyDefinitionId         any
+	ResourceSelectors          any
+	Scope                      any
 	SelfServeExemptionSettings any
 }
 
 type OpenapiPolicyAssignment_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
 }
 

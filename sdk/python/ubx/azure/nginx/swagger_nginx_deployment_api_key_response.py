@@ -10,6 +10,8 @@ import ubx_sdk as ubx
 class SwaggerNginxDeploymentApiKeyResponse_Properties:
     # The time after which this Dataplane API Key is no longer valid.
     end_date_time: Any = None
+    # The first three characters of the secret text to help identify it in use. This property is read-only.
+    hint: Any = None
     # Secret text to be used as a Dataplane API Key. This is a write only property that can never be read back, but the first three characters will be returned in the 'hint' property.
     secret_text: Any = None
 
@@ -30,6 +32,7 @@ class SwaggerNginxDeploymentApiKeyResponse_SystemData:
 
 _SwaggerNginxDeploymentApiKeyResponse_PropertiesFields = {
     "end_date_time": ubx.FieldSpec(wire_name="end_date_time"),
+    "hint": ubx.FieldSpec(wire_name="hint"),
     "secret_text": ubx.FieldSpec(wire_name="secret_text"),
 }
 

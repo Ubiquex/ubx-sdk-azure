@@ -20,8 +20,6 @@ _EncryptionScope_PropertiesFields = {
 
 @dataclasses.dataclass
 class EncryptionScopeConfig:
-    # Resource Etag.
-    etag: Any = None
     # Properties to EncryptionScope
     properties: Any = None
     # Resource tags.
@@ -39,7 +37,6 @@ class EncryptionScopeAttrs:
 EncryptionScope = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_encryption_scope",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

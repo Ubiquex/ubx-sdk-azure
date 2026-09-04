@@ -66,8 +66,6 @@ _PrivateendpointsPrivateEndpoint_PropertiesFields = {
 
 @dataclasses.dataclass
 class PrivateendpointsPrivateEndpointConfig:
-    # Unique opaque string (generally a GUID) that represents the metadata state of the resource (private endpoint) and changes whenever the resource is updated. Required on PUT (CreateOrUpdate) requests.
-    etag: Any = None
     # The properties associated with a private endpoint.
     properties: Any = None
 
@@ -81,7 +79,6 @@ class PrivateendpointsPrivateEndpointAttrs:
 PrivateendpointsPrivateEndpoint = ubx.ResourceBinding(
     wire_type="azure_streamanalytics_privateendpoints_private_endpoint",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

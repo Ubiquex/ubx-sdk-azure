@@ -8,17 +8,17 @@ type ExpressroutePeerExpressRouteCircuitConnection_Value_Properties_ExpressRoute
 }
 
 type ExpressroutePeerExpressRouteCircuitConnection_Value_Properties struct {
-	AddressPrefix any
-	AuthResourceGuid any
-	CircuitConnectionStatus any
-	ConnectionName any
-	ExpressRouteCircuitPeering any
+	AddressPrefix                  any
+	AuthResourceGuid               any
+	CircuitConnectionStatus        any
+	ConnectionName                 any
+	ExpressRouteCircuitPeering     any
 	PeerExpressRouteCircuitPeering any
-	ProvisioningState any
+	ProvisioningState              any
 }
 
 type ExpressroutePeerExpressRouteCircuitConnection_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -30,7 +30,7 @@ type ExpressroutePeerExpressRouteCircuitConnectionConfig struct {
 type ExpressroutePeerExpressRouteCircuitConnectionAttrs struct {
 	CircuitName any
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	PeeringName any
 	// The PeerExpressRouteCircuitConnection items on this page
 	Value any

@@ -9,14 +9,14 @@ type OpenapiStorageAccount_Value_ExtendedLocation struct {
 }
 
 type OpenapiStorageAccount_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiStorageAccount_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -29,21 +29,21 @@ type OpenapiStorageAccount_Value_Properties_AllowSharedKeyAccessForServices_Blob
 }
 
 type OpenapiStorageAccount_Value_Properties_AllowSharedKeyAccessForServices struct {
-	Blob any
-	File any
+	Blob  any
+	File  any
 	Queue any
 	Table any
 }
 
 type OpenapiStorageAccount_Value_Properties_AzureFilesIdentityBasedAuthentication_ActiveDirectoryProperties struct {
-	AccountType any
-	AzureStorageSid any
-	DomainGuid any
-	DomainName any
-	DomainSid any
-	ForestName any
+	AccountType       any
+	AzureStorageSid   any
+	DomainGuid        any
+	DomainName        any
+	DomainSid         any
+	ForestName        any
 	NetBiosDomainName any
-	SamAccountName any
+	SamAccountName    any
 }
 
 type OpenapiStorageAccount_Value_Properties_AzureFilesIdentityBasedAuthentication_SmbOauthSettings struct {
@@ -52,37 +52,37 @@ type OpenapiStorageAccount_Value_Properties_AzureFilesIdentityBasedAuthenticatio
 
 type OpenapiStorageAccount_Value_Properties_AzureFilesIdentityBasedAuthentication struct {
 	ActiveDirectoryProperties any
-	DefaultSharePermission any
-	DirectoryServiceOptions any
-	SmbOauthSettings any
+	DefaultSharePermission    any
+	DirectoryServiceOptions   any
+	SmbOauthSettings          any
 }
 
 type OpenapiStorageAccount_Value_Properties_BlobRestoreStatus_Parameters_BlobRanges struct {
-	EndRange any
+	EndRange   any
 	StartRange any
 }
 
 type OpenapiStorageAccount_Value_Properties_BlobRestoreStatus_Parameters struct {
-	BlobRanges any
+	BlobRanges    any
 	TimeToRestore any
 }
 
 type OpenapiStorageAccount_Value_Properties_BlobRestoreStatus struct {
 	FailureReason any
-	Parameters any
-	RestoreId any
-	Status any
+	Parameters    any
+	RestoreId     any
+	Status        any
 }
 
 type OpenapiStorageAccount_Value_Properties_CustomDomain struct {
-	Name any
+	Name             any
 	UseSubDomainName any
 }
 
 type OpenapiStorageAccount_Value_Properties_DataCollaborationPolicyProperties struct {
 	AllowCrossTenantDataSharing any
-	AllowStorageConnectors any
-	AllowStorageDataShares any
+	AllowStorageConnectors      any
+	AllowStorageDataShares      any
 }
 
 type OpenapiStorageAccount_Value_Properties_DualStackEndpointPreference struct {
@@ -91,37 +91,37 @@ type OpenapiStorageAccount_Value_Properties_DualStackEndpointPreference struct {
 
 type OpenapiStorageAccount_Value_Properties_Encryption_Identity struct {
 	FederatedIdentityClientId any
-	UserAssignedIdentity any
+	UserAssignedIdentity      any
 }
 
 type OpenapiStorageAccount_Value_Properties_Encryption_Keyvaultproperties struct {
 	CurrentVersionedKeyExpirationTimestamp any
-	CurrentVersionedKeyIdentifier any
-	Keyname any
-	Keyvaulturi any
-	Keyversion any
-	LastKeyRotationTimestamp any
+	CurrentVersionedKeyIdentifier          any
+	Keyname                                any
+	Keyvaulturi                            any
+	Keyversion                             any
+	LastKeyRotationTimestamp               any
 }
 
 type OpenapiStorageAccount_Value_Properties_Encryption_Services_Blob struct {
-	Enabled any
-	KeyType any
+	Enabled         any
+	KeyType         any
 	LastEnabledTime any
 }
 
 type OpenapiStorageAccount_Value_Properties_Encryption_Services struct {
-	Blob any
-	File any
+	Blob  any
+	File  any
 	Queue any
 	Table any
 }
 
 type OpenapiStorageAccount_Value_Properties_Encryption struct {
-	Identity any
-	KeySource any
-	Keyvaultproperties any
+	Identity                        any
+	KeySource                       any
+	Keyvaultproperties              any
 	RequireInfrastructureEncryption any
-	Services any
+	Services                        any
 }
 
 type OpenapiStorageAccount_Value_Properties_GeoPriorityReplicationStatus struct {
@@ -129,22 +129,22 @@ type OpenapiStorageAccount_Value_Properties_GeoPriorityReplicationStatus struct 
 }
 
 type OpenapiStorageAccount_Value_Properties_GeoReplicationStats struct {
-	CanFailover any
-	CanPlannedFailover any
-	LastSyncTime any
-	PostFailoverRedundancy any
+	CanFailover                   any
+	CanPlannedFailover            any
+	LastSyncTime                  any
+	PostFailoverRedundancy        any
 	PostPlannedFailoverRedundancy any
-	Status any
+	Status                        any
 }
 
 type OpenapiStorageAccount_Value_Properties_ImmutableStorageWithVersioning_ImmutabilityPolicy struct {
-	AllowProtectedAppendWrites any
+	AllowProtectedAppendWrites            any
 	ImmutabilityPeriodSinceCreationInDays any
-	State any
+	State                                 any
 }
 
 type OpenapiStorageAccount_Value_Properties_ImmutableStorageWithVersioning struct {
-	Enabled any
+	Enabled            any
 	ImmutabilityPolicy any
 }
 
@@ -159,66 +159,66 @@ type OpenapiStorageAccount_Value_Properties_KeyPolicy struct {
 
 type OpenapiStorageAccount_Value_Properties_NetworkAcls_IpRules struct {
 	Action any
-	Value any
+	Value  any
 }
 
 type OpenapiStorageAccount_Value_Properties_NetworkAcls_ResourceAccessRules struct {
 	ResourceId any
-	TenantId any
+	TenantId   any
 }
 
 type OpenapiStorageAccount_Value_Properties_NetworkAcls_VirtualNetworkRules struct {
 	Action any
-	Id any
-	State any
+	Id     any
+	State  any
 }
 
 type OpenapiStorageAccount_Value_Properties_NetworkAcls struct {
-	Bypass any
-	DefaultAction any
-	IpRules any
-	Ipv6Rules any
+	Bypass              any
+	DefaultAction       any
+	IpRules             any
+	Ipv6Rules           any
 	ResourceAccessRules any
 	VirtualNetworkRules any
 }
 
 type OpenapiStorageAccount_Value_Properties_PrimaryEndpoints_InternetEndpoints struct {
 	Blob any
-	Dfs any
+	Dfs  any
 	File any
-	Web any
+	Web  any
 }
 
 type OpenapiStorageAccount_Value_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpoints struct {
-	Blob any
-	Dfs any
-	File any
+	Blob  any
+	Dfs   any
+	File  any
 	Queue any
 	Table any
-	Web any
+	Web   any
 }
 
 type OpenapiStorageAccount_Value_Properties_PrimaryEndpoints_Ipv6Endpoints struct {
-	Blob any
-	Dfs any
-	File any
-	InternetEndpoints any
+	Blob               any
+	Dfs                any
+	File               any
+	InternetEndpoints  any
 	MicrosoftEndpoints any
-	Queue any
-	Table any
-	Web any
+	Queue              any
+	Table              any
+	Web                any
 }
 
 type OpenapiStorageAccount_Value_Properties_PrimaryEndpoints struct {
-	Blob any
-	Dfs any
-	File any
-	InternetEndpoints any
-	Ipv6Endpoints any
+	Blob               any
+	Dfs                any
+	File               any
+	InternetEndpoints  any
+	Ipv6Endpoints      any
 	MicrosoftEndpoints any
-	Queue any
-	Table any
-	Web any
+	Queue              any
+	Table              any
+	Web                any
 }
 
 type OpenapiStorageAccount_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -227,14 +227,14 @@ type OpenapiStorageAccount_Value_Properties_PrivateEndpointConnections_Propertie
 
 type OpenapiStorageAccount_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionRequired any
-	Description any
-	Status any
+	Description    any
+	Status         any
 }
 
 type OpenapiStorageAccount_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiStorageAccount_Value_Properties_PrivateEndpointConnections struct {
@@ -242,69 +242,69 @@ type OpenapiStorageAccount_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type OpenapiStorageAccount_Value_Properties_RoutingPreference struct {
-	PublishInternetEndpoints any
+	PublishInternetEndpoints  any
 	PublishMicrosoftEndpoints any
-	RoutingChoice any
+	RoutingChoice             any
 }
 
 type OpenapiStorageAccount_Value_Properties_SasPolicy struct {
-	ExpirationAction any
+	ExpirationAction    any
 	SasExpirationPeriod any
 }
 
 type OpenapiStorageAccount_Value_Properties_StorageAccountSkuConversionStatus struct {
-	EndTime any
+	EndTime             any
 	SkuConversionStatus any
-	StartTime any
-	TargetSkuName any
+	StartTime           any
+	TargetSkuName       any
 }
 
 type OpenapiStorageAccount_Value_Properties struct {
-	AccessTier any
-	AccountMigrationInProgress any
-	AllowBlobPublicAccess any
-	AllowCrossTenantReplication any
-	AllowSharedKeyAccess any
-	AllowSharedKeyAccessForServices any
-	AllowedCopyScope any
+	AccessTier                            any
+	AccountMigrationInProgress            any
+	AllowBlobPublicAccess                 any
+	AllowCrossTenantReplication           any
+	AllowSharedKeyAccess                  any
+	AllowSharedKeyAccessForServices       any
+	AllowedCopyScope                      any
 	AzureFilesIdentityBasedAuthentication any
-	BlobRestoreStatus any
-	CreationTime any
-	CustomDomain any
-	DataCollaborationPolicyProperties any
-	DefaultToOauthAuthentication any
-	DnsEndpointType any
-	DualStackEndpointPreference any
-	EnableExtendedGroups any
-	Encryption any
-	FailoverInProgress any
-	GeoPriorityReplicationStatus any
-	GeoReplicationStats any
-	ImmutableStorageWithVersioning any
-	IsHnsEnabled any
-	IsLocalUserEnabled any
-	IsNfsV3Enabled any
-	IsSftpEnabled any
-	IsSkuConversionBlocked any
-	KeyCreationTime any
-	KeyPolicy any
-	LargeFileSharesState any
-	LastGeoFailoverTime any
-	MinimumTlsVersion any
-	NetworkAcls any
-	PrimaryEndpoints any
-	PrimaryLocation any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	RoutingPreference any
-	SasPolicy any
-	SecondaryEndpoints any
-	SecondaryLocation any
-	StatusOfPrimary any
-	StatusOfSecondary any
-	StorageAccountSkuConversionStatus any
-	SupportsHttpsTrafficOnly any
+	BlobRestoreStatus                     any
+	CreationTime                          any
+	CustomDomain                          any
+	DataCollaborationPolicyProperties     any
+	DefaultToOauthAuthentication          any
+	DnsEndpointType                       any
+	DualStackEndpointPreference           any
+	EnableExtendedGroups                  any
+	Encryption                            any
+	FailoverInProgress                    any
+	GeoPriorityReplicationStatus          any
+	GeoReplicationStats                   any
+	ImmutableStorageWithVersioning        any
+	IsHnsEnabled                          any
+	IsLocalUserEnabled                    any
+	IsNfsV3Enabled                        any
+	IsSftpEnabled                         any
+	IsSkuConversionBlocked                any
+	KeyCreationTime                       any
+	KeyPolicy                             any
+	LargeFileSharesState                  any
+	LastGeoFailoverTime                   any
+	MinimumTlsVersion                     any
+	NetworkAcls                           any
+	PrimaryEndpoints                      any
+	PrimaryLocation                       any
+	PrivateEndpointConnections            any
+	ProvisioningState                     any
+	PublicNetworkAccess                   any
+	RoutingPreference                     any
+	SasPolicy                             any
+	SecondaryEndpoints                    any
+	SecondaryLocation                     any
+	StatusOfPrimary                       any
+	StatusOfSecondary                     any
+	StorageAccountSkuConversionStatus     any
+	SupportsHttpsTrafficOnly              any
 }
 
 type OpenapiStorageAccount_Value_Sku struct {
@@ -314,12 +314,12 @@ type OpenapiStorageAccount_Value_Sku struct {
 
 type OpenapiStorageAccount_Value struct {
 	ExtendedLocation any
-	Identity any
-	Kind any
-	Placement any
-	Properties any
-	Sku any
-	Zones any
+	Identity         any
+	Kind             any
+	Placement        any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type OpenapiStorageAccountConfig struct {
@@ -334,6 +334,5 @@ type OpenapiStorageAccountAttrs struct {
 
 var OpenapiStorageAccount = ubx.DataSourceBinding{
 	WireType: "azure_storage_openapi_storage_account",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

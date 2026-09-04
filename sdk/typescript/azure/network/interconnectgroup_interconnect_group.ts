@@ -88,8 +88,6 @@ const InterconnectgroupInterconnectGroup_PropertiesFields: FieldMap = {
 };
 
 export interface InterconnectgroupInterconnectGroupConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Interconnect group properties. */
   properties?: InterconnectgroupInterconnectGroup_Properties | Computed<InterconnectgroupInterconnectGroup_Properties>;
 }
@@ -104,7 +102,6 @@ export interface InterconnectgroupInterconnectGroupAttrs {
 export const InterconnectgroupInterconnectGroup: ResourceBinding<InterconnectgroupInterconnectGroupConfig, InterconnectgroupInterconnectGroupAttrs> = {
   wireType: "azure_network_interconnectgroup_interconnect_group",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

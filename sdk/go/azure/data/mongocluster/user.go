@@ -8,14 +8,14 @@ type User_Value_Properties_IdentityProvider struct {
 }
 
 type User_Value_Properties_Roles struct {
-	Db any
+	Db   any
 	Role any
 }
 
 type User_Value_Properties struct {
-	IdentityProvider any
+	IdentityProvider  any
 	ProvisioningState any
-	Roles any
+	Roles             any
 }
 
 type User_Value struct {

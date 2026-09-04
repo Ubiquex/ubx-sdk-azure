@@ -5,56 +5,56 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementOpenapiBudget_Value_Properties_CurrentSpend struct {
 	Amount any
-	Unit any
+	Unit   any
 }
 
 type ManagementOpenapiBudget_Value_Properties_Filter_And_Dimensions struct {
-	Name any
+	Name     any
 	Operator any
-	Values any
+	Values   any
 }
 
 type ManagementOpenapiBudget_Value_Properties_Filter_And struct {
 	Dimensions any
-	Tags any
+	Tags       any
 }
 
 type ManagementOpenapiBudget_Value_Properties_Filter struct {
-	And any
+	And        any
 	Dimensions any
-	Tags any
+	Tags       any
 }
 
 type ManagementOpenapiBudget_Value_Properties_Notifications struct {
 	ContactEmails any
 	ContactGroups any
-	ContactRoles any
-	Enabled any
-	Frequency any
-	Locale any
-	Operator any
-	Threshold any
+	ContactRoles  any
+	Enabled       any
+	Frequency     any
+	Locale        any
+	Operator      any
+	Threshold     any
 	ThresholdType any
 }
 
 type ManagementOpenapiBudget_Value_Properties_TimePeriod struct {
-	EndDate any
+	EndDate   any
 	StartDate any
 }
 
 type ManagementOpenapiBudget_Value_Properties struct {
-	Amount any
-	Category any
-	CurrentSpend any
-	Filter any
+	Amount        any
+	Category      any
+	CurrentSpend  any
+	Filter        any
 	ForecastSpend any
 	Notifications any
-	TimeGrain any
-	TimePeriod any
+	TimeGrain     any
+	TimePeriod    any
 }
 
 type ManagementOpenapiBudget_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 
@@ -65,7 +65,7 @@ type ManagementOpenapiBudgetConfig struct {
 type ManagementOpenapiBudgetAttrs struct {
 	// The link (url) to the next page of results.\r\nIt's null for now, added for future use.
 	NextLink any
-	Scope any
+	Scope    any
 	// The list of budgets.
 	Value any
 }

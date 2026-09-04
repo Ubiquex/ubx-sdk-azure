@@ -15,19 +15,13 @@ type SqlpoolDataMaskingPolicy_Properties struct {
 }
 
 var SqlpoolDataMaskingPolicy_PropertiesFields = ubx.FieldMap{
-		"ApplicationPrincipals": ubx.FieldSpec{WireName: "application_principals"},
-		"DataMaskingState": ubx.FieldSpec{WireName: "data_masking_state"},
-		"ExemptPrincipals": ubx.FieldSpec{WireName: "exempt_principals"},
-		"MaskingLevel": ubx.FieldSpec{WireName: "masking_level"},
-	}
+	"ApplicationPrincipals": ubx.FieldSpec{WireName: "application_principals"},
+	"DataMaskingState":      ubx.FieldSpec{WireName: "data_masking_state"},
+	"ExemptPrincipals":      ubx.FieldSpec{WireName: "exempt_principals"},
+	"MaskingLevel":          ubx.FieldSpec{WireName: "masking_level"},
+}
 
 type SqlpoolDataMaskingPolicyConfig struct {
-	// The kind of data masking policy. Metadata, used for Azure portal.
-	Kind any
-	// The location of the data masking policy.
-	Location any
-	// Fully qualified resource ID of the sql pool
-	ManagedBy any
 	// The properties of a database data masking policy.
 	Properties any
 }
@@ -46,13 +40,10 @@ type SqlpoolDataMaskingPolicyAttrs struct {
 var SqlpoolDataMaskingPolicy = ubx.ResourceBinding{
 	WireType: "azure_synapse_sqlpool_data_masking_policy",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlpoolDataMaskingPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlpoolDataMaskingPolicy_PropertiesFields,
 		},
 	},
 }

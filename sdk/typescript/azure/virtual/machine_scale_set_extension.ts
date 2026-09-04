@@ -9,7 +9,6 @@ export interface MachineScaleSetExtension_Properties_ProtectedSettingsFromKeyVau
 export interface MachineScaleSetExtension_Properties_ProtectedSettingsFromKeyVault {
   /** The URL referencing a secret in a Key Vault. */
   secretUrl: string | Computed<string>;
-  /** Specifies the Key Vault resource that contains the secret for the protected settings. The object typically includes the Azure resource ID of the Key Vault. (AI-inferred) */
   sourceVault: MachineScaleSetExtension_Properties_ProtectedSettingsFromKeyVault_SourceVault | Computed<MachineScaleSetExtension_Properties_ProtectedSettingsFromKeyVault_SourceVault>;
 }
 
@@ -77,8 +76,6 @@ export interface MachineScaleSetExtensionConfig {
   name?: string | Computed<string>;
   /** Describes the properties of a Virtual Machine Scale Set Extension. */
   properties?: MachineScaleSetExtension_Properties | Computed<MachineScaleSetExtension_Properties>;
-  /** Resource type */
-  type?: string | Computed<string>;
 }
 
 export interface MachineScaleSetExtensionAttrs {
@@ -99,6 +96,5 @@ export const MachineScaleSetExtension: ResourceBinding<MachineScaleSetExtensionC
       kind: "object",
       fields: MachineScaleSetExtension_PropertiesFields,
     },
-    type: "type",
   },
 };

@@ -226,14 +226,8 @@ _RecordSet_PropertiesFields = {
 class RecordSetConfig:
     # The etag of the record set.
     etag: Any = None
-    # The ID of the record set.
-    id: Any = None
-    # The name of the record set.
-    name: Any = None
     # Represents the properties of the records in the record set.
     properties: Any = None
-    # The type of the record set.
-    type: Any = None
 
 @dataclasses.dataclass
 class RecordSetAttrs:
@@ -252,13 +246,10 @@ RecordSet = ubx.ResourceBinding(
     wire_type="azure_dns_record_set",
     fields={
         "etag": ubx.FieldSpec(wire_name="etag"),
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_RecordSet_PropertiesFields,
         ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

@@ -5323,8 +5323,6 @@ _LoadbalancerBackendAddressPool_PropertiesFields = {
 
 @dataclasses.dataclass
 class LoadbalancerBackendAddressPoolConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of the backend address pool.
     properties: Any = None
 
@@ -5338,7 +5336,6 @@ class LoadbalancerBackendAddressPoolAttrs:
 LoadbalancerBackendAddressPool = ubx.ResourceBinding(
     wire_type="azure_network_loadbalancer_backend_address_pool",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -27,28 +27,28 @@ type ApimauthorizationprovidersAuthorizationProviderContract2_Properties struct 
 }
 
 var ApimauthorizationprovidersAuthorizationProviderContract2_Properties_Oauth2_GrantTypesFields = ubx.FieldMap{
-		"AuthorizationCode": ubx.FieldSpec{WireName: "authorization_code"},
-		"ClientCredentials": ubx.FieldSpec{WireName: "client_credentials"},
-	}
+	"AuthorizationCode": ubx.FieldSpec{WireName: "authorization_code"},
+	"ClientCredentials": ubx.FieldSpec{WireName: "client_credentials"},
+}
 
 var ApimauthorizationprovidersAuthorizationProviderContract2_Properties_Oauth2Fields = ubx.FieldMap{
-		"GrantTypes": ubx.FieldSpec{
-			WireName: "grant_types",
-			Kind: "object",
-			Fields: ApimauthorizationprovidersAuthorizationProviderContract2_Properties_Oauth2_GrantTypesFields,
-		},
-		"RedirectUrl": ubx.FieldSpec{WireName: "redirect_url"},
-	}
+	"GrantTypes": ubx.FieldSpec{
+		WireName: "grant_types",
+		Kind:     "object",
+		Fields:   ApimauthorizationprovidersAuthorizationProviderContract2_Properties_Oauth2_GrantTypesFields,
+	},
+	"RedirectUrl": ubx.FieldSpec{WireName: "redirect_url"},
+}
 
 var ApimauthorizationprovidersAuthorizationProviderContract2_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"IdentityProvider": ubx.FieldSpec{WireName: "identity_provider"},
-		"Oauth2": ubx.FieldSpec{
-			WireName: "oauth2",
-			Kind: "object",
-			Fields: ApimauthorizationprovidersAuthorizationProviderContract2_Properties_Oauth2Fields,
-		},
-	}
+	"DisplayName":      ubx.FieldSpec{WireName: "display_name"},
+	"IdentityProvider": ubx.FieldSpec{WireName: "identity_provider"},
+	"Oauth2": ubx.FieldSpec{
+		WireName: "oauth2",
+		Kind:     "object",
+		Fields:   ApimauthorizationprovidersAuthorizationProviderContract2_Properties_Oauth2Fields,
+	},
+}
 
 type ApimauthorizationprovidersAuthorizationProviderContract2Config struct {
 	// Authorization Provider details.
@@ -65,8 +65,8 @@ var ApimauthorizationprovidersAuthorizationProviderContract2 = ubx.ResourceBindi
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimauthorizationprovidersAuthorizationProviderContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimauthorizationprovidersAuthorizationProviderContract2_PropertiesFields,
 		},
 	},
 }

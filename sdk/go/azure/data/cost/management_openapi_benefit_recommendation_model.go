@@ -5,40 +5,40 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementOpenapiBenefitRecommendationModel_Value_Properties_AllRecommendationDetails_Value struct {
 	AverageUtilizationPercentage any
-	BenefitCost any
-	CommitmentAmount any
-	CoveragePercentage any
-	OverageCost any
-	SavingsAmount any
-	SavingsPercentage any
-	TotalCost any
-	WastageCost any
+	BenefitCost                  any
+	CommitmentAmount             any
+	CoveragePercentage           any
+	OverageCost                  any
+	SavingsAmount                any
+	SavingsPercentage            any
+	TotalCost                    any
+	WastageCost                  any
 }
 
 type ManagementOpenapiBenefitRecommendationModel_Value_Properties_AllRecommendationDetails struct {
 	NextLink any
-	Value any
+	Value    any
 }
 
 type ManagementOpenapiBenefitRecommendationModel_Value_Properties_Usage struct {
-	Charges any
+	Charges    any
 	UsageGrain any
 }
 
 type ManagementOpenapiBenefitRecommendationModel_Value_Properties struct {
 	AllRecommendationDetails any
-	ArmSkuName any
-	CommitmentGranularity any
-	CostWithoutBenefit any
-	CurrencyCode any
-	FirstConsumptionDate any
-	LastConsumptionDate any
-	LookBackPeriod any
-	RecommendationDetails any
-	Scope any
-	Term any
-	TotalHours any
-	Usage any
+	ArmSkuName               any
+	CommitmentGranularity    any
+	CostWithoutBenefit       any
+	CurrencyCode             any
+	FirstConsumptionDate     any
+	LastConsumptionDate      any
+	LookBackPeriod           any
+	RecommendationDetails    any
+	Scope                    any
+	Term                     any
+	TotalHours               any
+	Usage                    any
 }
 
 type ManagementOpenapiBenefitRecommendationModel_Value struct {

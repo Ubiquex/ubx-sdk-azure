@@ -4,7 +4,7 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallpolicyFirewallPolicy_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -49,7 +49,7 @@ type FirewallpolicyFirewallPolicy_Properties_ExplicitProxy struct {
 }
 
 type FirewallpolicyFirewallPolicy_Properties_Insights_LogAnalyticsResources_Workspaces struct {
-	Region any
+	Region      any
 	WorkspaceId any
 }
 
@@ -70,18 +70,18 @@ type FirewallpolicyFirewallPolicy_Properties_Insights struct {
 }
 
 type FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_BypassTrafficSettings struct {
-	Description any
+	Description          any
 	DestinationAddresses any
-	DestinationIpGroups any
-	DestinationPorts any
-	Name any
-	Protocol any
-	SourceAddresses any
-	SourceIpGroups any
+	DestinationIpGroups  any
+	DestinationPorts     any
+	Name                 any
+	Protocol             any
+	SourceAddresses      any
+	SourceIpGroups       any
 }
 
 type FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_SignatureOverrides struct {
-	Id any
+	Id   any
 	Mode any
 }
 
@@ -179,223 +179,221 @@ type FirewallpolicyFirewallPolicy_Properties struct {
 }
 
 var FirewallpolicyFirewallPolicy_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var FirewallpolicyFirewallPolicy_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: FirewallpolicyFirewallPolicy_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   FirewallpolicyFirewallPolicy_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_BasePolicyFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_DnsSettingsFields = ubx.FieldMap{
-		"EnableProxy": ubx.FieldSpec{WireName: "enable_proxy"},
-		"RequireProxyForNetworkRules": ubx.FieldSpec{WireName: "require_proxy_for_network_rules"},
-		"Servers": ubx.FieldSpec{WireName: "servers"},
-	}
+	"EnableProxy":                 ubx.FieldSpec{WireName: "enable_proxy"},
+	"RequireProxyForNetworkRules": ubx.FieldSpec{WireName: "require_proxy_for_network_rules"},
+	"Servers":                     ubx.FieldSpec{WireName: "servers"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_ExplicitProxyFields = ubx.FieldMap{
-		"EnableExplicitProxy": ubx.FieldSpec{WireName: "enable_explicit_proxy"},
-		"EnablePacFile": ubx.FieldSpec{WireName: "enable_pac_file"},
-		"HttpPort": ubx.FieldSpec{WireName: "http_port"},
-		"HttpsPort": ubx.FieldSpec{WireName: "https_port"},
-		"PacFile": ubx.FieldSpec{WireName: "pac_file"},
-		"PacFilePort": ubx.FieldSpec{WireName: "pac_file_port"},
-	}
+	"EnableExplicitProxy": ubx.FieldSpec{WireName: "enable_explicit_proxy"},
+	"EnablePacFile":       ubx.FieldSpec{WireName: "enable_pac_file"},
+	"HttpPort":            ubx.FieldSpec{WireName: "http_port"},
+	"HttpsPort":           ubx.FieldSpec{WireName: "https_port"},
+	"PacFile":             ubx.FieldSpec{WireName: "pac_file"},
+	"PacFilePort":         ubx.FieldSpec{WireName: "pac_file_port"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_Insights_LogAnalyticsResources_WorkspacesFields = ubx.FieldMap{
-		"Region": ubx.FieldSpec{WireName: "region"},
-		"WorkspaceId": ubx.FieldSpec{
-			WireName: "workspace_id",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
-		},
-	}
+	"Region": ubx.FieldSpec{WireName: "region"},
+	"WorkspaceId": ubx.FieldSpec{
+		WireName: "workspace_id",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
+	},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_Insights_LogAnalyticsResourcesFields = ubx.FieldMap{
-		"DefaultWorkspaceId": ubx.FieldSpec{
-			WireName: "default_workspace_id",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
-		},
-		"Workspaces": ubx.FieldSpec{
-			WireName: "workspaces",
-			Kind: "list",
-			Fields: FirewallpolicyFirewallPolicy_Properties_Insights_LogAnalyticsResources_WorkspacesFields,
-		},
-	}
+	"DefaultWorkspaceId": ubx.FieldSpec{
+		WireName: "default_workspace_id",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
+	},
+	"Workspaces": ubx.FieldSpec{
+		WireName: "workspaces",
+		Kind:     "list",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_Insights_LogAnalyticsResources_WorkspacesFields,
+	},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_InsightsFields = ubx.FieldMap{
-		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
-		"LogAnalyticsResources": ubx.FieldSpec{
-			WireName: "log_analytics_resources",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_Insights_LogAnalyticsResourcesFields,
-		},
-		"RetentionDays": ubx.FieldSpec{WireName: "retention_days"},
-	}
+	"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
+	"LogAnalyticsResources": ubx.FieldSpec{
+		WireName: "log_analytics_resources",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_Insights_LogAnalyticsResourcesFields,
+	},
+	"RetentionDays": ubx.FieldSpec{WireName: "retention_days"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_BypassTrafficSettingsFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DestinationAddresses": ubx.FieldSpec{WireName: "destination_addresses"},
-		"DestinationIpGroups": ubx.FieldSpec{WireName: "destination_ip_groups"},
-		"DestinationPorts": ubx.FieldSpec{WireName: "destination_ports"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"SourceAddresses": ubx.FieldSpec{WireName: "source_addresses"},
-		"SourceIpGroups": ubx.FieldSpec{WireName: "source_ip_groups"},
-	}
+	"Description":          ubx.FieldSpec{WireName: "description"},
+	"DestinationAddresses": ubx.FieldSpec{WireName: "destination_addresses"},
+	"DestinationIpGroups":  ubx.FieldSpec{WireName: "destination_ip_groups"},
+	"DestinationPorts":     ubx.FieldSpec{WireName: "destination_ports"},
+	"Name":                 ubx.FieldSpec{WireName: "name"},
+	"Protocol":             ubx.FieldSpec{WireName: "protocol"},
+	"SourceAddresses":      ubx.FieldSpec{WireName: "source_addresses"},
+	"SourceIpGroups":       ubx.FieldSpec{WireName: "source_ip_groups"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_SignatureOverridesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Mode": ubx.FieldSpec{WireName: "mode"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_ConfigurationFields = ubx.FieldMap{
-		"BypassTrafficSettings": ubx.FieldSpec{
-			WireName: "bypass_traffic_settings",
-			Kind: "list",
-			Fields: FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_BypassTrafficSettingsFields,
-		},
-		"PrivateRanges": ubx.FieldSpec{WireName: "private_ranges"},
-		"SignatureOverrides": ubx.FieldSpec{
-			WireName: "signature_overrides",
-			Kind: "list",
-			Fields: FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_SignatureOverridesFields,
-		},
-	}
+	"BypassTrafficSettings": ubx.FieldSpec{
+		WireName: "bypass_traffic_settings",
+		Kind:     "list",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_BypassTrafficSettingsFields,
+	},
+	"PrivateRanges": ubx.FieldSpec{WireName: "private_ranges"},
+	"SignatureOverrides": ubx.FieldSpec{
+		WireName: "signature_overrides",
+		Kind:     "list",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_Configuration_SignatureOverridesFields,
+	},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_IntrusionDetectionFields = ubx.FieldMap{
-		"Configuration": ubx.FieldSpec{
-			WireName: "configuration",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_ConfigurationFields,
-		},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"Profile": ubx.FieldSpec{WireName: "profile"},
-	}
+	"Configuration": ubx.FieldSpec{
+		WireName: "configuration",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_IntrusionDetection_ConfigurationFields,
+	},
+	"Mode":    ubx.FieldSpec{WireName: "mode"},
+	"Profile": ubx.FieldSpec{WireName: "profile"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_SkuFields = ubx.FieldMap{
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_SnatFields = ubx.FieldMap{
-		"AutoLearnPrivateRanges": ubx.FieldSpec{WireName: "auto_learn_private_ranges"},
-		"PrivateRanges": ubx.FieldSpec{WireName: "private_ranges"},
-	}
+	"AutoLearnPrivateRanges": ubx.FieldSpec{WireName: "auto_learn_private_ranges"},
+	"PrivateRanges":          ubx.FieldSpec{WireName: "private_ranges"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_SqlFields = ubx.FieldMap{
-		"AllowSqlRedirect": ubx.FieldSpec{WireName: "allow_sql_redirect"},
-	}
+	"AllowSqlRedirect": ubx.FieldSpec{WireName: "allow_sql_redirect"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_ThreatIntelWhitelistFields = ubx.FieldMap{
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
-	}
+	"Fqdns":       ubx.FieldSpec{WireName: "fqdns"},
+	"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_TransportSecurity_CertificateAuthorityFields = ubx.FieldMap{
-		"KeyVaultSecretId": ubx.FieldSpec{WireName: "key_vault_secret_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"KeyVaultSecretId": ubx.FieldSpec{WireName: "key_vault_secret_id"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+}
 
 var FirewallpolicyFirewallPolicy_Properties_TransportSecurityFields = ubx.FieldMap{
-		"CertificateAuthority": ubx.FieldSpec{
-			WireName: "certificate_authority",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_TransportSecurity_CertificateAuthorityFields,
-		},
-	}
+	"CertificateAuthority": ubx.FieldSpec{
+		WireName: "certificate_authority",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_TransportSecurity_CertificateAuthorityFields,
+	},
+}
 
 var FirewallpolicyFirewallPolicy_PropertiesFields = ubx.FieldMap{
-		"AfcManaged": ubx.FieldSpec{WireName: "afc_managed"},
-		"BasePolicy": ubx.FieldSpec{
-			WireName: "base_policy",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
-		},
-		"ChildPolicies": ubx.FieldSpec{
-			WireName: "child_policies",
-			Kind: "list",
-			Fields: FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
-		},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_DnsSettingsFields,
-		},
-		"ExplicitProxy": ubx.FieldSpec{
-			WireName: "explicit_proxy",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_ExplicitProxyFields,
-		},
-		"Firewalls": ubx.FieldSpec{
-			WireName: "firewalls",
-			Kind: "list",
-			Fields: FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
-		},
-		"Insights": ubx.FieldSpec{
-			WireName: "insights",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_InsightsFields,
-		},
-		"IntrusionDetection": ubx.FieldSpec{
-			WireName: "intrusion_detection",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_IntrusionDetectionFields,
-		},
-		"KubeSelectorGroups": ubx.FieldSpec{
-			WireName: "kube_selector_groups",
-			Kind: "list",
-			Fields: FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RuleCollectionGroups": ubx.FieldSpec{
-			WireName: "rule_collection_groups",
-			Kind: "list",
-			Fields: FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
-		},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_SkuFields,
-		},
-		"Snat": ubx.FieldSpec{
-			WireName: "snat",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_SnatFields,
-		},
-		"Sql": ubx.FieldSpec{
-			WireName: "sql",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_SqlFields,
-		},
-		"ThreatIntelMode": ubx.FieldSpec{WireName: "threat_intel_mode"},
-		"ThreatIntelWhitelist": ubx.FieldSpec{
-			WireName: "threat_intel_whitelist",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_ThreatIntelWhitelistFields,
-		},
-		"TransportSecurity": ubx.FieldSpec{
-			WireName: "transport_security",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_Properties_TransportSecurityFields,
-		},
-	}
+	"AfcManaged": ubx.FieldSpec{WireName: "afc_managed"},
+	"BasePolicy": ubx.FieldSpec{
+		WireName: "base_policy",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
+	},
+	"ChildPolicies": ubx.FieldSpec{
+		WireName: "child_policies",
+		Kind:     "list",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
+	},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_DnsSettingsFields,
+	},
+	"ExplicitProxy": ubx.FieldSpec{
+		WireName: "explicit_proxy",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_ExplicitProxyFields,
+	},
+	"Firewalls": ubx.FieldSpec{
+		WireName: "firewalls",
+		Kind:     "list",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
+	},
+	"Insights": ubx.FieldSpec{
+		WireName: "insights",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_InsightsFields,
+	},
+	"IntrusionDetection": ubx.FieldSpec{
+		WireName: "intrusion_detection",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_IntrusionDetectionFields,
+	},
+	"KubeSelectorGroups": ubx.FieldSpec{
+		WireName: "kube_selector_groups",
+		Kind:     "list",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RuleCollectionGroups": ubx.FieldSpec{
+		WireName: "rule_collection_groups",
+		Kind:     "list",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_BasePolicyFields,
+	},
+	"Size": ubx.FieldSpec{WireName: "size"},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_SkuFields,
+	},
+	"Snat": ubx.FieldSpec{
+		WireName: "snat",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_SnatFields,
+	},
+	"Sql": ubx.FieldSpec{
+		WireName: "sql",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_SqlFields,
+	},
+	"ThreatIntelMode": ubx.FieldSpec{WireName: "threat_intel_mode"},
+	"ThreatIntelWhitelist": ubx.FieldSpec{
+		WireName: "threat_intel_whitelist",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_ThreatIntelWhitelistFields,
+	},
+	"TransportSecurity": ubx.FieldSpec{
+		WireName: "transport_security",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicy_Properties_TransportSecurityFields,
+	},
+}
 
 type FirewallpolicyFirewallPolicyConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Identity for the resource.
 	Identity any
 	// Firewall Policy definition.
@@ -414,16 +412,15 @@ type FirewallpolicyFirewallPolicyAttrs struct {
 var FirewallpolicyFirewallPolicy = ubx.ResourceBinding{
 	WireType: "azure_network_firewallpolicy_firewall_policy",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_IdentityFields,
+			Kind:     "object",
+			Fields:   FirewallpolicyFirewallPolicy_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   FirewallpolicyFirewallPolicy_PropertiesFields,
 		},
 	},
 }

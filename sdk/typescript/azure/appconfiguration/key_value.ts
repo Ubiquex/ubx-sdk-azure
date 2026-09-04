@@ -32,14 +32,8 @@ const KeyValue_PropertiesFields: FieldMap = {
 };
 
 export interface KeyValueConfig {
-  /** The resource ID. */
-  id?: string | Computed<string>;
-  /** The name of the resource. */
-  name?: string | Computed<string>;
   /** All key-value properties. */
   properties?: KeyValue_Properties | Computed<KeyValue_Properties>;
-  /** The type of the resource. */
-  type?: string | Computed<string>;
 }
 
 export interface KeyValueAttrs {
@@ -56,13 +50,10 @@ export interface KeyValueAttrs {
 export const KeyValue: ResourceBinding<KeyValueConfig, KeyValueAttrs> = {
   wireType: "azure_appconfiguration_key_value",
   fields: {
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: KeyValue_PropertiesFields,
     },
-    type: "type",
   },
 };

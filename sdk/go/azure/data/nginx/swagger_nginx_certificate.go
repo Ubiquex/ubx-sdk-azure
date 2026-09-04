@@ -4,23 +4,23 @@ package nginx
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SwaggerNginxCertificate_Value_Properties_CertificateError struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type SwaggerNginxCertificate_Value_Properties struct {
-	CertificateError any
+	CertificateError       any
 	CertificateVirtualPath any
-	KeyVaultSecretCreated any
-	KeyVaultSecretId any
-	KeyVaultSecretVersion any
-	KeyVirtualPath any
-	ProvisioningState any
-	Sha1Thumbprint any
+	KeyVaultSecretCreated  any
+	KeyVaultSecretId       any
+	KeyVaultSecretVersion  any
+	KeyVirtualPath         any
+	ProvisioningState      any
+	Sha1Thumbprint         any
 }
 
 type SwaggerNginxCertificate_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

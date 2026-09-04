@@ -8,7 +8,7 @@ type VirtualnetworkReachabilityAnalysisIntent_Properties_IpTraffic struct {
 	DestinationIps any
 	// The destination ports of the traffic.
 	DestinationPorts any
-	Protocols any
+	Protocols        any
 	// List of source IP addresses of the traffic..
 	SourceIps any
 	// The source ports of the traffic.
@@ -43,39 +43,28 @@ type VirtualnetworkReachabilityAnalysisIntent_SystemData struct {
 }
 
 var VirtualnetworkReachabilityAnalysisIntent_Properties_IpTrafficFields = ubx.FieldMap{
-		"DestinationIps": ubx.FieldSpec{WireName: "destination_ips"},
-		"DestinationPorts": ubx.FieldSpec{WireName: "destination_ports"},
-		"Protocols": ubx.FieldSpec{WireName: "protocols"},
-		"SourceIps": ubx.FieldSpec{WireName: "source_ips"},
-		"SourcePorts": ubx.FieldSpec{WireName: "source_ports"},
-	}
+	"DestinationIps":   ubx.FieldSpec{WireName: "destination_ips"},
+	"DestinationPorts": ubx.FieldSpec{WireName: "destination_ports"},
+	"Protocols":        ubx.FieldSpec{WireName: "protocols"},
+	"SourceIps":        ubx.FieldSpec{WireName: "source_ips"},
+	"SourcePorts":      ubx.FieldSpec{WireName: "source_ports"},
+}
 
 var VirtualnetworkReachabilityAnalysisIntent_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DestinationResourceId": ubx.FieldSpec{WireName: "destination_resource_id"},
-		"IpTraffic": ubx.FieldSpec{
-			WireName: "ip_traffic",
-			Kind: "object",
-			Fields: VirtualnetworkReachabilityAnalysisIntent_Properties_IpTrafficFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-	}
-
-var VirtualnetworkReachabilityAnalysisIntent_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Description":           ubx.FieldSpec{WireName: "description"},
+	"DestinationResourceId": ubx.FieldSpec{WireName: "destination_resource_id"},
+	"IpTraffic": ubx.FieldSpec{
+		WireName: "ip_traffic",
+		Kind:     "object",
+		Fields:   VirtualnetworkReachabilityAnalysisIntent_Properties_IpTrafficFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SourceResourceId":  ubx.FieldSpec{WireName: "source_resource_id"},
+}
 
 type VirtualnetworkReachabilityAnalysisIntentConfig struct {
 	// Represents the Reachability Analysis Intent properties.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type VirtualnetworkReachabilityAnalysisIntentAttrs struct {
@@ -90,13 +79,8 @@ var VirtualnetworkReachabilityAnalysisIntent = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkReachabilityAnalysisIntent_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: VirtualnetworkReachabilityAnalysisIntent_SystemDataFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkReachabilityAnalysisIntent_PropertiesFields,
 		},
 	},
 }

@@ -8,97 +8,97 @@ type ExpressrouteExpressRouteCircuitPeering_Value_Properties_Connections_Propert
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Value_Properties_Connections_Properties_Ipv6CircuitConnectionConfig struct {
-	AddressPrefix any
+	AddressPrefix           any
 	CircuitConnectionStatus any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Value_Properties_Connections_Properties struct {
-	AddressPrefix any
-	AuthorizationKey any
-	CircuitConnectionStatus any
-	ExpressRouteCircuitPeering any
-	Ipv6CircuitConnectionConfig any
+	AddressPrefix                  any
+	AuthorizationKey               any
+	CircuitConnectionStatus        any
+	ExpressRouteCircuitPeering     any
+	Ipv6CircuitConnectionConfig    any
 	PeerExpressRouteCircuitPeering any
-	ProvisioningState any
+	ProvisioningState              any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Value_Properties_Connections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Value_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo struct {
-	Prefix any
-	Signature any
-	ValidationId any
+	Prefix          any
+	Signature       any
+	ValidationId    any
 	ValidationState any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Value_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig struct {
-	AdvertisedCommunities any
-	AdvertisedPublicPrefixInfo any
-	AdvertisedPublicPrefixes any
+	AdvertisedCommunities         any
+	AdvertisedPublicPrefixInfo    any
+	AdvertisedPublicPrefixes      any
 	AdvertisedPublicPrefixesState any
-	CustomerAsn any
-	LegacyMode any
-	RoutingRegistryName any
+	CustomerAsn                   any
+	LegacyMode                    any
+	RoutingRegistryName           any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Value_Properties_Ipv6PeeringConfig struct {
-	MicrosoftPeeringConfig any
-	PrimaryPeerAddressPrefix any
-	RouteFilter any
+	MicrosoftPeeringConfig     any
+	PrimaryPeerAddressPrefix   any
+	RouteFilter                any
 	SecondaryPeerAddressPrefix any
-	State any
+	State                      any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Value_Properties_PeeredConnections_Properties struct {
-	AddressPrefix any
-	AuthResourceGuid any
-	CircuitConnectionStatus any
-	ConnectionName any
-	ExpressRouteCircuitPeering any
+	AddressPrefix                  any
+	AuthResourceGuid               any
+	CircuitConnectionStatus        any
+	ConnectionName                 any
+	ExpressRouteCircuitPeering     any
 	PeerExpressRouteCircuitPeering any
-	ProvisioningState any
+	ProvisioningState              any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Value_Properties_PeeredConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Value_Properties_Stats struct {
-	PrimarybytesIn any
-	PrimarybytesOut any
-	SecondarybytesIn any
+	PrimarybytesIn    any
+	PrimarybytesOut   any
+	SecondarybytesIn  any
 	SecondarybytesOut any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Value_Properties struct {
-	AzureAsn any
-	Connections any
-	ExpressRouteConnection any
-	GatewayManagerEtag any
-	Ipv6PeeringConfig any
-	LastModifiedBy any
-	MicrosoftPeeringConfig any
-	PeerAsn any
-	PeeredConnections any
-	PeeringType any
-	PrimaryAzurePort any
-	PrimaryPeerAddressPrefix any
-	ProvisioningState any
-	RouteFilter any
-	SecondaryAzurePort any
+	AzureAsn                   any
+	Connections                any
+	ExpressRouteConnection     any
+	GatewayManagerEtag         any
+	Ipv6PeeringConfig          any
+	LastModifiedBy             any
+	MicrosoftPeeringConfig     any
+	PeerAsn                    any
+	PeeredConnections          any
+	PeeringType                any
+	PrimaryAzurePort           any
+	PrimaryPeerAddressPrefix   any
+	ProvisioningState          any
+	RouteFilter                any
+	SecondaryAzurePort         any
 	SecondaryPeerAddressPrefix any
-	SharedKey any
-	State any
-	Stats any
-	VlanId any
+	SharedKey                  any
+	State                      any
+	Stats                      any
+	VlanId                     any
 }
 
 type ExpressrouteExpressRouteCircuitPeering_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

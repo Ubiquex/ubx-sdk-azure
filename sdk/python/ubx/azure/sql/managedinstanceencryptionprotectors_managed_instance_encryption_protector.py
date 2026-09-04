@@ -29,8 +29,6 @@ _ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_Propertie
 
 @dataclasses.dataclass
 class ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtectorConfig:
-    # Kind of encryption protector. This is metadata used for the Azure portal experience.
-    kind: Any = None
     # Properties for an encryption protector execution.
     properties: Any = None
 
@@ -44,7 +42,6 @@ class ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtectorAttrs
 ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector = ubx.ResourceBinding(
     wire_type="azure_sql_managedinstanceencryptionprotectors_managed_instance_encryption_protector",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

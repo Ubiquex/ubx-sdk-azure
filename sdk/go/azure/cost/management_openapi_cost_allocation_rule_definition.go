@@ -8,13 +8,13 @@ type ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_SourceReso
 }
 
 type ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources_Values struct {
-	Name any
+	Name       any
 	Percentage any
 }
 
 type ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources struct {
 	PolicyType any
-	Values any
+	Values     any
 }
 
 type ManagementOpenapiCostAllocationRuleDefinition_Properties_Details struct {
@@ -38,47 +38,47 @@ type ManagementOpenapiCostAllocationRuleDefinition_Properties struct {
 }
 
 var ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_SourceResourcesFields = ubx.FieldMap{
-		"Values": ubx.FieldSpec{WireName: "values"},
-	}
+	"Values": ubx.FieldSpec{WireName: "values"},
+}
 
 var ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources_ValuesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Percentage": ubx.FieldSpec{WireName: "percentage"},
-	}
+	"Name":       ubx.FieldSpec{WireName: "name"},
+	"Percentage": ubx.FieldSpec{WireName: "percentage"},
+}
 
 var ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResourcesFields = ubx.FieldMap{
-		"PolicyType": ubx.FieldSpec{WireName: "policy_type"},
-		"Values": ubx.FieldSpec{
-			WireName: "values",
-			Kind: "list",
-			Fields: ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources_ValuesFields,
-		},
-	}
+	"PolicyType": ubx.FieldSpec{WireName: "policy_type"},
+	"Values": ubx.FieldSpec{
+		WireName: "values",
+		Kind:     "list",
+		Fields:   ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResources_ValuesFields,
+	},
+}
 
 var ManagementOpenapiCostAllocationRuleDefinition_Properties_DetailsFields = ubx.FieldMap{
-		"SourceResources": ubx.FieldSpec{
-			WireName: "source_resources",
-			Kind: "list",
-			Fields: ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_SourceResourcesFields,
-		},
-		"TargetResources": ubx.FieldSpec{
-			WireName: "target_resources",
-			Kind: "list",
-			Fields: ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResourcesFields,
-		},
-	}
+	"SourceResources": ubx.FieldSpec{
+		WireName: "source_resources",
+		Kind:     "list",
+		Fields:   ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_SourceResourcesFields,
+	},
+	"TargetResources": ubx.FieldSpec{
+		WireName: "target_resources",
+		Kind:     "list",
+		Fields:   ManagementOpenapiCostAllocationRuleDefinition_Properties_Details_TargetResourcesFields,
+	},
+}
 
 var ManagementOpenapiCostAllocationRuleDefinition_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "object",
-			Fields: ManagementOpenapiCostAllocationRuleDefinition_Properties_DetailsFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"UpdatedDate": ubx.FieldSpec{WireName: "updated_date"},
-	}
+	"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "object",
+		Fields:   ManagementOpenapiCostAllocationRuleDefinition_Properties_DetailsFields,
+	},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+	"UpdatedDate": ubx.FieldSpec{WireName: "updated_date"},
+}
 
 type ManagementOpenapiCostAllocationRuleDefinitionConfig struct {
 	// The properties of a cost allocation rule
@@ -95,8 +95,8 @@ var ManagementOpenapiCostAllocationRuleDefinition = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagementOpenapiCostAllocationRuleDefinition_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagementOpenapiCostAllocationRuleDefinition_PropertiesFields,
 		},
 	},
 }

@@ -8,33 +8,33 @@ type ServiceNetworkMapping_Value_Properties_FabricSpecificSettings struct {
 }
 
 type ServiceNetworkMapping_Value_Properties struct {
-	FabricSpecificSettings any
-	PrimaryFabricFriendlyName any
-	PrimaryNetworkFriendlyName any
-	PrimaryNetworkId any
-	RecoveryFabricArmId any
-	RecoveryFabricFriendlyName any
+	FabricSpecificSettings      any
+	PrimaryFabricFriendlyName   any
+	PrimaryNetworkFriendlyName  any
+	PrimaryNetworkId            any
+	RecoveryFabricArmId         any
+	RecoveryFabricFriendlyName  any
 	RecoveryNetworkFriendlyName any
-	RecoveryNetworkId any
-	State any
+	RecoveryNetworkId           any
+	State                       any
 }
 
 type ServiceNetworkMapping_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ServiceNetworkMappingConfig struct {
-	FabricName any
-	NetworkName any
+	FabricName   any
+	NetworkName  any
 	ResourceName any
 }
 
 type ServiceNetworkMappingAttrs struct {
-	FabricName any
+	FabricName  any
 	NetworkName any
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The NetworkMapping items on this page
 	Value any
@@ -43,8 +43,8 @@ type ServiceNetworkMappingAttrs struct {
 var ServiceNetworkMapping = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_network_mapping",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"NetworkName": ubx.FieldSpec{WireName: "network_name"},
+		"FabricName":   ubx.FieldSpec{WireName: "fabric_name"},
+		"NetworkName":  ubx.FieldSpec{WireName: "network_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

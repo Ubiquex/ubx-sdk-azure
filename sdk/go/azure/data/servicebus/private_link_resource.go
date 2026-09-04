@@ -4,16 +4,16 @@ package servicebus
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateLinkResource_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
 type PrivateLinkResource_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type PrivateLinkResourceConfig struct {

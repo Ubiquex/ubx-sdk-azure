@@ -9,15 +9,15 @@ type PrivateEndpointConnectionResource_Value_Properties_PrivateEndpoint struct {
 
 type PrivateEndpointConnectionResource_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivateEndpointConnectionResource_Value_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type PrivateEndpointConnectionResource_Value struct {

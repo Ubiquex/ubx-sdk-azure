@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedapplicationsApplication_Identity_UserAssignedIdentities struct {
 	PrincipalId any
-	TenantId any
+	TenantId    any
 }
 
 type ManagedapplicationsApplication_Identity struct {
@@ -35,11 +35,11 @@ type ManagedapplicationsApplication_Plan struct {
 type ManagedapplicationsApplication_Properties_Artifacts struct {
 	Name any
 	Type any
-	Uri any
+	Uri  any
 }
 
 type ManagedapplicationsApplication_Properties_Authorizations struct {
-	PrincipalId any
+	PrincipalId      any
 	RoleDefinitionId any
 }
 
@@ -68,8 +68,8 @@ type ManagedapplicationsApplication_Properties_CustomerSupport struct {
 
 type ManagedapplicationsApplication_Properties_JitAccessPolicy_JitApprovers struct {
 	DisplayName any
-	Id any
-	Type any
+	Id          any
+	Type        any
 }
 
 type ManagedapplicationsApplication_Properties_JitAccessPolicy struct {
@@ -124,127 +124,127 @@ type ManagedapplicationsApplication_Properties struct {
 }
 
 var ManagedapplicationsApplication_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var ManagedapplicationsApplication_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: ManagedapplicationsApplication_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   ManagedapplicationsApplication_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var ManagedapplicationsApplication_PlanFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Product": ubx.FieldSpec{WireName: "product"},
-		"PromotionCode": ubx.FieldSpec{WireName: "promotion_code"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Name":          ubx.FieldSpec{WireName: "name"},
+	"Product":       ubx.FieldSpec{WireName: "product"},
+	"PromotionCode": ubx.FieldSpec{WireName: "promotion_code"},
+	"Publisher":     ubx.FieldSpec{WireName: "publisher"},
+	"Version":       ubx.FieldSpec{WireName: "version"},
+}
 
 var ManagedapplicationsApplication_Properties_ArtifactsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+	"Uri":  ubx.FieldSpec{WireName: "uri"},
+}
 
 var ManagedapplicationsApplication_Properties_AuthorizationsFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-	}
+	"PrincipalId":      ubx.FieldSpec{WireName: "principal_id"},
+	"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
+}
 
 var ManagedapplicationsApplication_Properties_BillingDetailsFields = ubx.FieldMap{
-		"ResourceUsageId": ubx.FieldSpec{WireName: "resource_usage_id"},
-	}
+	"ResourceUsageId": ubx.FieldSpec{WireName: "resource_usage_id"},
+}
 
 var ManagedapplicationsApplication_Properties_CreatedByFields = ubx.FieldMap{
-		"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
-		"Oid": ubx.FieldSpec{WireName: "oid"},
-		"Puid": ubx.FieldSpec{WireName: "puid"},
-	}
+	"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
+	"Oid":           ubx.FieldSpec{WireName: "oid"},
+	"Puid":          ubx.FieldSpec{WireName: "puid"},
+}
 
 var ManagedapplicationsApplication_Properties_CustomerSupportFields = ubx.FieldMap{
-		"ContactName": ubx.FieldSpec{WireName: "contact_name"},
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Phone": ubx.FieldSpec{WireName: "phone"},
-	}
+	"ContactName": ubx.FieldSpec{WireName: "contact_name"},
+	"Email":       ubx.FieldSpec{WireName: "email"},
+	"Phone":       ubx.FieldSpec{WireName: "phone"},
+}
 
 var ManagedapplicationsApplication_Properties_JitAccessPolicy_JitApproversFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Id":          ubx.FieldSpec{WireName: "id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var ManagedapplicationsApplication_Properties_JitAccessPolicyFields = ubx.FieldMap{
-		"JitAccessEnabled": ubx.FieldSpec{WireName: "jit_access_enabled"},
-		"JitApprovalMode": ubx.FieldSpec{WireName: "jit_approval_mode"},
-		"JitApprovers": ubx.FieldSpec{
-			WireName: "jit_approvers",
-			Kind: "list",
-			Fields: ManagedapplicationsApplication_Properties_JitAccessPolicy_JitApproversFields,
-		},
-		"MaximumJitAccessDuration": ubx.FieldSpec{WireName: "maximum_jit_access_duration"},
-	}
+	"JitAccessEnabled": ubx.FieldSpec{WireName: "jit_access_enabled"},
+	"JitApprovalMode":  ubx.FieldSpec{WireName: "jit_approval_mode"},
+	"JitApprovers": ubx.FieldSpec{
+		WireName: "jit_approvers",
+		Kind:     "list",
+		Fields:   ManagedapplicationsApplication_Properties_JitAccessPolicy_JitApproversFields,
+	},
+	"MaximumJitAccessDuration": ubx.FieldSpec{WireName: "maximum_jit_access_duration"},
+}
 
 var ManagedapplicationsApplication_Properties_SupportUrlsFields = ubx.FieldMap{
-		"GovernmentCloud": ubx.FieldSpec{WireName: "government_cloud"},
-		"PublicAzure": ubx.FieldSpec{WireName: "public_azure"},
-	}
+	"GovernmentCloud": ubx.FieldSpec{WireName: "government_cloud"},
+	"PublicAzure":     ubx.FieldSpec{WireName: "public_azure"},
+}
 
 var ManagedapplicationsApplication_PropertiesFields = ubx.FieldMap{
-		"ApplicationDefinitionId": ubx.FieldSpec{WireName: "application_definition_id"},
-		"Artifacts": ubx.FieldSpec{
-			WireName: "artifacts",
-			Kind: "list",
-			Fields: ManagedapplicationsApplication_Properties_ArtifactsFields,
-		},
-		"Authorizations": ubx.FieldSpec{
-			WireName: "authorizations",
-			Kind: "list",
-			Fields: ManagedapplicationsApplication_Properties_AuthorizationsFields,
-		},
-		"BillingDetails": ubx.FieldSpec{
-			WireName: "billing_details",
-			Kind: "object",
-			Fields: ManagedapplicationsApplication_Properties_BillingDetailsFields,
-		},
-		"CreatedBy": ubx.FieldSpec{
-			WireName: "created_by",
-			Kind: "object",
-			Fields: ManagedapplicationsApplication_Properties_CreatedByFields,
-		},
-		"CustomerSupport": ubx.FieldSpec{
-			WireName: "customer_support",
-			Kind: "object",
-			Fields: ManagedapplicationsApplication_Properties_CustomerSupportFields,
-		},
-		"JitAccessPolicy": ubx.FieldSpec{
-			WireName: "jit_access_policy",
-			Kind: "object",
-			Fields: ManagedapplicationsApplication_Properties_JitAccessPolicyFields,
-		},
-		"ManagedResourceGroupId": ubx.FieldSpec{WireName: "managed_resource_group_id"},
-		"ManagementMode": ubx.FieldSpec{WireName: "management_mode"},
-		"Outputs": ubx.FieldSpec{WireName: "outputs"},
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublisherTenantId": ubx.FieldSpec{WireName: "publisher_tenant_id"},
-		"SupportUrls": ubx.FieldSpec{
-			WireName: "support_urls",
-			Kind: "object",
-			Fields: ManagedapplicationsApplication_Properties_SupportUrlsFields,
-		},
-		"UpdatedBy": ubx.FieldSpec{
-			WireName: "updated_by",
-			Kind: "object",
-			Fields: ManagedapplicationsApplication_Properties_CreatedByFields,
-		},
-	}
+	"ApplicationDefinitionId": ubx.FieldSpec{WireName: "application_definition_id"},
+	"Artifacts": ubx.FieldSpec{
+		WireName: "artifacts",
+		Kind:     "list",
+		Fields:   ManagedapplicationsApplication_Properties_ArtifactsFields,
+	},
+	"Authorizations": ubx.FieldSpec{
+		WireName: "authorizations",
+		Kind:     "list",
+		Fields:   ManagedapplicationsApplication_Properties_AuthorizationsFields,
+	},
+	"BillingDetails": ubx.FieldSpec{
+		WireName: "billing_details",
+		Kind:     "object",
+		Fields:   ManagedapplicationsApplication_Properties_BillingDetailsFields,
+	},
+	"CreatedBy": ubx.FieldSpec{
+		WireName: "created_by",
+		Kind:     "object",
+		Fields:   ManagedapplicationsApplication_Properties_CreatedByFields,
+	},
+	"CustomerSupport": ubx.FieldSpec{
+		WireName: "customer_support",
+		Kind:     "object",
+		Fields:   ManagedapplicationsApplication_Properties_CustomerSupportFields,
+	},
+	"JitAccessPolicy": ubx.FieldSpec{
+		WireName: "jit_access_policy",
+		Kind:     "object",
+		Fields:   ManagedapplicationsApplication_Properties_JitAccessPolicyFields,
+	},
+	"ManagedResourceGroupId": ubx.FieldSpec{WireName: "managed_resource_group_id"},
+	"ManagementMode":         ubx.FieldSpec{WireName: "management_mode"},
+	"Outputs":                ubx.FieldSpec{WireName: "outputs"},
+	"Parameters":             ubx.FieldSpec{WireName: "parameters"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublisherTenantId":      ubx.FieldSpec{WireName: "publisher_tenant_id"},
+	"SupportUrls": ubx.FieldSpec{
+		WireName: "support_urls",
+		Kind:     "object",
+		Fields:   ManagedapplicationsApplication_Properties_SupportUrlsFields,
+	},
+	"UpdatedBy": ubx.FieldSpec{
+		WireName: "updated_by",
+		Kind:     "object",
+		Fields:   ManagedapplicationsApplication_Properties_CreatedByFields,
+	},
+}
 
 type ManagedapplicationsApplicationConfig struct {
 	// Identity for the resource.
@@ -273,19 +273,19 @@ var ManagedapplicationsApplication = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ManagedapplicationsApplication_IdentityFields,
+			Kind:     "object",
+			Fields:   ManagedapplicationsApplication_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Plan": ubx.FieldSpec{
 			WireName: "plan",
-			Kind: "object",
-			Fields: ManagedapplicationsApplication_PlanFields,
+			Kind:     "object",
+			Fields:   ManagedapplicationsApplication_PlanFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedapplicationsApplication_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedapplicationsApplication_PropertiesFields,
 		},
 	},
 }

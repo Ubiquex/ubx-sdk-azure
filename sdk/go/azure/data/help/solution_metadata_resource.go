@@ -4,10 +4,10 @@ package help
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SolutionMetadataResource_Value_Properties struct {
-	Description any
+	Description           any
 	RequiredParameterSets any
-	SolutionId any
-	SolutionType any
+	SolutionId            any
+	SolutionType          any
 }
 
 type SolutionMetadataResource_Value struct {
@@ -16,14 +16,14 @@ type SolutionMetadataResource_Value struct {
 
 type SolutionMetadataResourceConfig struct {
 	ApiVersion any
-	Scope any
+	Scope      any
 }
 
 type SolutionMetadataResourceAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of solution metadata.
 	NextLink any
-	Scope any
+	Scope    any
 	// The list of solution metadata.
 	Value any
 }
@@ -32,6 +32,6 @@ var SolutionMetadataResource = ubx.DataSourceBinding{
 	WireType: "azure_help_solution_metadata_resource",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
+		"Scope":      ubx.FieldSpec{WireName: "scope"},
 	},
 }

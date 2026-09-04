@@ -15,7 +15,7 @@ type OpenapiAlertRuleTemplateAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The AlertRuleTemplate items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

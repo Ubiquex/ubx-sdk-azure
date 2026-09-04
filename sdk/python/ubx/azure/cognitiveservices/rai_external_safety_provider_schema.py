@@ -41,12 +41,8 @@ _RaiExternalSafetyProviderSchema_PropertiesFields = {
 
 @dataclasses.dataclass
 class RaiExternalSafetyProviderSchemaConfig:
-    # Resource Etag.
-    etag: Any = None
     # RAI External SafetyProvider schema properties.
     properties: Any = None
-    # Resource tags.
-    tags: Any = None
 
 @dataclasses.dataclass
 class RaiExternalSafetyProviderSchemaAttrs:
@@ -60,12 +56,10 @@ class RaiExternalSafetyProviderSchemaAttrs:
 RaiExternalSafetyProviderSchema = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_rai_external_safety_provider_schema",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_RaiExternalSafetyProviderSchema_PropertiesFields,
         ),
-        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

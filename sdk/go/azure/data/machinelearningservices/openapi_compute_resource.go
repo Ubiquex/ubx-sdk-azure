@@ -4,14 +4,14 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiComputeResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiComputeResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -25,10 +25,10 @@ type OpenapiComputeResource_Value_Properties_ProvisioningErrors_Error_Details st
 
 type OpenapiComputeResource_Value_Properties_ProvisioningErrors_Error struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type OpenapiComputeResource_Value_Properties_ProvisioningErrors struct {
@@ -36,32 +36,32 @@ type OpenapiComputeResource_Value_Properties_ProvisioningErrors struct {
 }
 
 type OpenapiComputeResource_Value_Properties struct {
-	ComputeLocation any
-	ComputeType any
-	CreatedOn any
-	Description any
-	DisableLocalAuth any
-	IsAttachedCompute any
-	ModifiedOn any
+	ComputeLocation    any
+	ComputeType        any
+	CreatedOn          any
+	Description        any
+	DisableLocalAuth   any
+	IsAttachedCompute  any
+	ModifiedOn         any
 	ProvisioningErrors any
-	ProvisioningState any
-	ResourceId any
+	ProvisioningState  any
+	ResourceId         any
 }
 
 type OpenapiComputeResource_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type OpenapiComputeResource_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiComputeResourceConfig struct {
@@ -72,7 +72,7 @@ type OpenapiComputeResourceAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The ComputeResource items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

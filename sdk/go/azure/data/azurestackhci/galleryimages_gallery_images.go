@@ -9,9 +9,9 @@ type GalleryimagesGalleryImages_Value_ExtendedLocation struct {
 }
 
 type GalleryimagesGalleryImages_Value_Properties_Identifier struct {
-	Offer any
+	Offer     any
 	Publisher any
-	Sku any
+	Sku       any
 }
 
 type GalleryimagesGalleryImages_Value_Properties_Status_DownloadStatus struct {
@@ -20,13 +20,13 @@ type GalleryimagesGalleryImages_Value_Properties_Status_DownloadStatus struct {
 
 type GalleryimagesGalleryImages_Value_Properties_Status_ProvisioningStatus struct {
 	OperationId any
-	Status any
+	Status      any
 }
 
 type GalleryimagesGalleryImages_Value_Properties_Status struct {
-	DownloadStatus any
-	ErrorCode any
-	ErrorMessage any
+	DownloadStatus     any
+	ErrorCode          any
+	ErrorMessage       any
 	ProgressPercentage any
 	ProvisioningStatus any
 }
@@ -44,25 +44,25 @@ type GalleryimagesGalleryImages_Value_Properties_Version_Properties struct {
 }
 
 type GalleryimagesGalleryImages_Value_Properties_Version struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type GalleryimagesGalleryImages_Value_Properties struct {
 	CloudInitDataSource any
-	ContainerId any
-	HyperVgeneration any
-	Identifier any
-	ImagePath any
-	OsType any
-	ProvisioningState any
-	Status any
-	Version any
+	ContainerId         any
+	HyperVgeneration    any
+	Identifier          any
+	ImagePath           any
+	OsType              any
+	ProvisioningState   any
+	Status              any
+	Version             any
 }
 
 type GalleryimagesGalleryImages_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type GalleryimagesGalleryImagesConfig struct {
@@ -71,11 +71,10 @@ type GalleryimagesGalleryImagesConfig struct {
 type GalleryimagesGalleryImagesAttrs struct {
 	// Link to the next set of results.
 	NextLink any
-	Value any
+	Value    any
 }
 
 var GalleryimagesGalleryImages = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_galleryimages_gallery_images",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

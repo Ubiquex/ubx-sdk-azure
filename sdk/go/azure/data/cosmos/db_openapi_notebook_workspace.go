@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiNotebookWorkspace_Value_Properties struct {
 	NotebookServerEndpoint any
-	Status any
+	Status                 any
 }
 
 type DbOpenapiNotebookWorkspace_Value struct {
@@ -18,7 +18,7 @@ type DbOpenapiNotebookWorkspaceConfig struct {
 
 type DbOpenapiNotebookWorkspaceAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// Array of notebook workspace resources
 	Value any
 }

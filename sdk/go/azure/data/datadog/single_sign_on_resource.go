@@ -4,10 +4,10 @@ package datadog
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SingleSignOnResource_Value_Properties struct {
-	EnterpriseAppId any
+	EnterpriseAppId   any
 	ProvisioningState any
 	SingleSignOnState any
-	SingleSignOnUrl any
+	SingleSignOnUrl   any
 }
 
 type SingleSignOnResource_Value struct {

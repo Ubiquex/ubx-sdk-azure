@@ -9,21 +9,21 @@ type OpenapiCloudExadataInfrastructure_Value_Properties_CustomerContacts struct 
 
 type OpenapiCloudExadataInfrastructure_Value_Properties_DefinedFileSystemConfiguration struct {
 	IsBackupPartition any
-	IsResizable any
-	MinSizeGb any
-	MountPoint any
+	IsResizable       any
+	MinSizeGb         any
+	MountPoint        any
 }
 
 type OpenapiCloudExadataInfrastructure_Value_Properties_EstimatedPatchingTime struct {
-	EstimatedDbServerPatchingTime any
+	EstimatedDbServerPatchingTime        any
 	EstimatedNetworkSwitchesPatchingTime any
-	EstimatedStorageServerPatchingTime any
-	TotalEstimatedPatchingTime any
+	EstimatedStorageServerPatchingTime   any
+	TotalEstimatedPatchingTime           any
 }
 
 type OpenapiCloudExadataInfrastructure_Value_Properties_ExascaleConfig struct {
 	AvailableStorageInGbs any
-	TotalStorageInGbs any
+	TotalStorageInGbs     any
 }
 
 type OpenapiCloudExadataInfrastructure_Value_Properties_MaintenanceWindow_DaysOfWeek struct {
@@ -31,60 +31,60 @@ type OpenapiCloudExadataInfrastructure_Value_Properties_MaintenanceWindow_DaysOf
 }
 
 type OpenapiCloudExadataInfrastructure_Value_Properties_MaintenanceWindow struct {
-	CustomActionTimeoutInMins any
-	DaysOfWeek any
-	HoursOfDay any
+	CustomActionTimeoutInMins    any
+	DaysOfWeek                   any
+	HoursOfDay                   any
 	IsCustomActionTimeoutEnabled any
-	IsMonthlyPatchingEnabled any
-	LeadTimeInWeeks any
-	Months any
-	PatchingMode any
-	Preference any
-	WeeksOfMonth any
+	IsMonthlyPatchingEnabled     any
+	LeadTimeInWeeks              any
+	Months                       any
+	PatchingMode                 any
+	Preference                   any
+	WeeksOfMonth                 any
 }
 
 type OpenapiCloudExadataInfrastructure_Value_Properties struct {
-	ActivatedStorageCount any
-	AdditionalStorageCount any
-	AvailableStorageSizeInGbs any
-	ComputeCount any
-	ComputeModel any
-	CpuCount any
-	CustomerContacts any
-	DataStorageSizeInTbs any
-	DatabaseServerType any
-	DbNodeStorageSizeInGbs any
-	DbServerVersion any
+	ActivatedStorageCount          any
+	AdditionalStorageCount         any
+	AvailableStorageSizeInGbs      any
+	ComputeCount                   any
+	ComputeModel                   any
+	CpuCount                       any
+	CustomerContacts               any
+	DataStorageSizeInTbs           any
+	DatabaseServerType             any
+	DbNodeStorageSizeInGbs         any
+	DbServerVersion                any
 	DefinedFileSystemConfiguration any
-	DisplayName any
-	EstimatedPatchingTime any
-	ExascaleConfig any
-	LastMaintenanceRunId any
-	LifecycleDetails any
-	LifecycleState any
-	MaintenanceWindow any
-	MaxCpuCount any
-	MaxDataStorageInTbs any
-	MaxDbNodeStorageSizeInGbs any
-	MaxMemoryInGbs any
-	MemorySizeInGbs any
-	MonthlyDbServerVersion any
-	MonthlyStorageServerVersion any
-	NextMaintenanceRunId any
-	OciUrl any
-	Ocid any
-	ProvisioningState any
-	Shape any
-	StorageCount any
-	StorageServerType any
-	StorageServerVersion any
-	TimeCreated any
-	TotalStorageSizeInGbs any
+	DisplayName                    any
+	EstimatedPatchingTime          any
+	ExascaleConfig                 any
+	LastMaintenanceRunId           any
+	LifecycleDetails               any
+	LifecycleState                 any
+	MaintenanceWindow              any
+	MaxCpuCount                    any
+	MaxDataStorageInTbs            any
+	MaxDbNodeStorageSizeInGbs      any
+	MaxMemoryInGbs                 any
+	MemorySizeInGbs                any
+	MonthlyDbServerVersion         any
+	MonthlyStorageServerVersion    any
+	NextMaintenanceRunId           any
+	OciUrl                         any
+	Ocid                           any
+	ProvisioningState              any
+	Shape                          any
+	StorageCount                   any
+	StorageServerType              any
+	StorageServerVersion           any
+	TimeCreated                    any
+	TotalStorageSizeInGbs          any
 }
 
 type OpenapiCloudExadataInfrastructure_Value struct {
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type OpenapiCloudExadataInfrastructureConfig struct {
@@ -99,6 +99,5 @@ type OpenapiCloudExadataInfrastructureAttrs struct {
 
 var OpenapiCloudExadataInfrastructure = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_cloud_exadata_infrastructure",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

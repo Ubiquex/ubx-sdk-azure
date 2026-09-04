@@ -9,10 +9,10 @@ type OpenapiJobSchedule_Value_Properties_Runbook struct {
 
 type OpenapiJobSchedule_Value_Properties struct {
 	JobScheduleId any
-	Parameters any
-	RunOn any
-	Runbook any
-	Schedule any
+	Parameters    any
+	RunOn         any
+	Runbook       any
+	Schedule      any
 }
 
 type OpenapiJobSchedule_Value struct {

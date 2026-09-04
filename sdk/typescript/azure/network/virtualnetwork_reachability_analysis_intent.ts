@@ -60,20 +60,9 @@ const VirtualnetworkReachabilityAnalysisIntent_PropertiesFields: FieldMap = {
   sourceResourceId: "source_resource_id",
 };
 
-const VirtualnetworkReachabilityAnalysisIntent_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface VirtualnetworkReachabilityAnalysisIntentConfig {
   /** Represents the Reachability Analysis Intent properties. */
   properties: VirtualnetworkReachabilityAnalysisIntent_Properties | Computed<VirtualnetworkReachabilityAnalysisIntent_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: VirtualnetworkReachabilityAnalysisIntent_SystemData | Computed<VirtualnetworkReachabilityAnalysisIntent_SystemData>;
 }
 
 export interface VirtualnetworkReachabilityAnalysisIntentAttrs {
@@ -90,11 +79,6 @@ export const VirtualnetworkReachabilityAnalysisIntent: ResourceBinding<Virtualne
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkReachabilityAnalysisIntent_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: VirtualnetworkReachabilityAnalysisIntent_SystemDataFields,
     },
   },
 };

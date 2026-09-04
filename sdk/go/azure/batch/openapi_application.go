@@ -13,14 +13,12 @@ type OpenapiApplication_Properties struct {
 }
 
 var OpenapiApplication_PropertiesFields = ubx.FieldMap{
-		"AllowUpdates": ubx.FieldSpec{WireName: "allow_updates"},
-		"DefaultVersion": ubx.FieldSpec{WireName: "default_version"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-	}
+	"AllowUpdates":   ubx.FieldSpec{WireName: "allow_updates"},
+	"DefaultVersion": ubx.FieldSpec{WireName: "default_version"},
+	"DisplayName":    ubx.FieldSpec{WireName: "display_name"},
+}
 
 type OpenapiApplicationConfig struct {
-	// The ETag of the resource, used for concurrency statements.
-	Etag any
 	// The properties associated with the Application.
 	Properties any
 	// The tags of the resource.
@@ -39,11 +37,10 @@ type OpenapiApplicationAttrs struct {
 var OpenapiApplication = ubx.ResourceBinding{
 	WireType: "azure_batch_openapi_application",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiApplication_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiApplication_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

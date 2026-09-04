@@ -5,31 +5,31 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Value_Properties_ExpandedProperties_Principal struct {
 	DisplayName any
-	Email any
-	Id any
-	Type any
+	Email       any
+	Id          any
+	Type        any
 }
 
 type RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Value_Properties_ExpandedProperties_RoleDefinition struct {
 	DisplayName any
-	Id any
-	Type any
+	Id          any
+	Type        any
 }
 
 type RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Value_Properties_ExpandedProperties struct {
-	Principal any
+	Principal      any
 	RoleDefinition any
-	Scope any
+	Scope          any
 }
 
 type RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Value_Properties_ScheduleInfo_Expiration struct {
-	Duration any
+	Duration    any
 	EndDateTime any
-	Type any
+	Type        any
 }
 
 type RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Value_Properties_ScheduleInfo struct {
-	Expiration any
+	Expiration    any
 	StartDateTime any
 }
 
@@ -39,31 +39,31 @@ type RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Value_Properties
 }
 
 type RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Value_Properties struct {
-	ApprovalId any
-	Condition any
-	ConditionVersion any
-	CreatedOn any
-	ExpandedProperties any
-	Justification any
-	LinkedRoleEligibilityScheduleId any
-	PrincipalId any
-	PrincipalType any
-	RequestType any
-	RequestorId any
-	RoleDefinitionId any
-	ScheduleInfo any
-	Scope any
-	Status any
-	TargetRoleAssignmentScheduleId any
+	ApprovalId                             any
+	Condition                              any
+	ConditionVersion                       any
+	CreatedOn                              any
+	ExpandedProperties                     any
+	Justification                          any
+	LinkedRoleEligibilityScheduleId        any
+	PrincipalId                            any
+	PrincipalType                          any
+	RequestType                            any
+	RequestorId                            any
+	RoleDefinitionId                       any
+	ScheduleInfo                           any
+	Scope                                  any
+	Status                                 any
+	TargetRoleAssignmentScheduleId         any
 	TargetRoleAssignmentScheduleInstanceId any
-	TicketInfo any
+	TicketInfo                             any
 }
 
 type RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type RoleassignmentschedulerequestRoleAssignmentScheduleRequestConfig struct {
@@ -73,7 +73,7 @@ type RoleassignmentschedulerequestRoleAssignmentScheduleRequestConfig struct {
 type RoleassignmentschedulerequestRoleAssignmentScheduleRequestAttrs struct {
 	// The URL to use for getting the next set of results.
 	NextLink any
-	Scope any
+	Scope    any
 	// Role assignment schedule request list.
 	Value any
 }

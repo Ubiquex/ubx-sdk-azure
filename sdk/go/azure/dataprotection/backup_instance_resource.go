@@ -36,7 +36,7 @@ type BackupInstanceResource_Properties_IdentityDetails struct {
 
 type BackupInstanceResource_Properties_PolicyInfo_PolicyParameters_DataStoreParametersList struct {
 	DataStoreType any
-	ObjectType any
+	ObjectType    any
 }
 
 type BackupInstanceResource_Properties_PolicyInfo_PolicyParameters struct {
@@ -50,7 +50,7 @@ type BackupInstanceResource_Properties_PolicyInfo struct {
 	PolicyId any
 	// Parameters in Policy
 	PolicyParameters any
-	PolicyVersion any
+	PolicyVersion    any
 }
 
 type BackupInstanceResource_Properties_ProtectionErrorDetails_Details struct {
@@ -76,7 +76,7 @@ type BackupInstanceResource_Properties_ProtectionErrorDetails struct {
 	IsRetryable any
 	// Whether the operation is due to a user error or service error
 	IsUserError any
-	Message any
+	Message     any
 	// Any key value pairs that can be injected inside error object
 	Properties any
 	// RecommendedAction � localized.
@@ -102,9 +102,9 @@ type BackupInstanceResource_Properties struct {
 	// Base class for different types of authentication credentials.
 	DatasourceAuthCredentials any
 	// Gets or sets the Backup Instance friendly name.
-	FriendlyName any
+	FriendlyName    any
 	IdentityDetails any
-	ObjectType any
+	ObjectType      any
 	// Policy Info in backupInstance
 	PolicyInfo any
 	// Error object used by layers that have access to localized content, and propagate that to user
@@ -120,138 +120,137 @@ type BackupInstanceResource_Properties struct {
 }
 
 var BackupInstanceResource_Properties_DataSourceInfo_ResourcePropertiesFields = ubx.FieldMap{
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
-	}
+	"ObjectType": ubx.FieldSpec{WireName: "object_type"},
+}
 
 var BackupInstanceResource_Properties_DataSourceInfoFields = ubx.FieldMap{
-		"DatasourceType": ubx.FieldSpec{WireName: "datasource_type"},
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"ResourceLocation": ubx.FieldSpec{WireName: "resource_location"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"ResourceProperties": ubx.FieldSpec{
-			WireName: "resource_properties",
-			Kind: "object",
-			Fields: BackupInstanceResource_Properties_DataSourceInfo_ResourcePropertiesFields,
-		},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-		"ResourceUri": ubx.FieldSpec{WireName: "resource_uri"},
-	}
+	"DatasourceType":   ubx.FieldSpec{WireName: "datasource_type"},
+	"ObjectType":       ubx.FieldSpec{WireName: "object_type"},
+	"ResourceId":       ubx.FieldSpec{WireName: "resource_id"},
+	"ResourceLocation": ubx.FieldSpec{WireName: "resource_location"},
+	"ResourceName":     ubx.FieldSpec{WireName: "resource_name"},
+	"ResourceProperties": ubx.FieldSpec{
+		WireName: "resource_properties",
+		Kind:     "object",
+		Fields:   BackupInstanceResource_Properties_DataSourceInfo_ResourcePropertiesFields,
+	},
+	"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
+	"ResourceUri":  ubx.FieldSpec{WireName: "resource_uri"},
+}
 
 var BackupInstanceResource_Properties_IdentityDetailsFields = ubx.FieldMap{
-		"UseSystemAssignedIdentity": ubx.FieldSpec{WireName: "use_system_assigned_identity"},
-		"UserAssignedIdentityArmUrl": ubx.FieldSpec{WireName: "user_assigned_identity_arm_url"},
-	}
+	"UseSystemAssignedIdentity":  ubx.FieldSpec{WireName: "use_system_assigned_identity"},
+	"UserAssignedIdentityArmUrl": ubx.FieldSpec{WireName: "user_assigned_identity_arm_url"},
+}
 
 var BackupInstanceResource_Properties_PolicyInfo_PolicyParameters_DataStoreParametersListFields = ubx.FieldMap{
-		"DataStoreType": ubx.FieldSpec{WireName: "data_store_type"},
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
-	}
+	"DataStoreType": ubx.FieldSpec{WireName: "data_store_type"},
+	"ObjectType":    ubx.FieldSpec{WireName: "object_type"},
+}
 
 var BackupInstanceResource_Properties_PolicyInfo_PolicyParametersFields = ubx.FieldMap{
-		"BackupDatasourceParametersList": ubx.FieldSpec{
-			WireName: "backup_datasource_parameters_list",
-			Kind: "list",
-			Fields: BackupInstanceResource_Properties_DataSourceInfo_ResourcePropertiesFields,
-		},
-		"DataStoreParametersList": ubx.FieldSpec{
-			WireName: "data_store_parameters_list",
-			Kind: "list",
-			Fields: BackupInstanceResource_Properties_PolicyInfo_PolicyParameters_DataStoreParametersListFields,
-		},
-	}
+	"BackupDatasourceParametersList": ubx.FieldSpec{
+		WireName: "backup_datasource_parameters_list",
+		Kind:     "list",
+		Fields:   BackupInstanceResource_Properties_DataSourceInfo_ResourcePropertiesFields,
+	},
+	"DataStoreParametersList": ubx.FieldSpec{
+		WireName: "data_store_parameters_list",
+		Kind:     "list",
+		Fields:   BackupInstanceResource_Properties_PolicyInfo_PolicyParameters_DataStoreParametersListFields,
+	},
+}
 
 var BackupInstanceResource_Properties_PolicyInfoFields = ubx.FieldMap{
-		"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
-		"PolicyParameters": ubx.FieldSpec{
-			WireName: "policy_parameters",
-			Kind: "object",
-			Fields: BackupInstanceResource_Properties_PolicyInfo_PolicyParametersFields,
-		},
-		"PolicyVersion": ubx.FieldSpec{WireName: "policy_version"},
-	}
+	"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
+	"PolicyParameters": ubx.FieldSpec{
+		WireName: "policy_parameters",
+		Kind:     "object",
+		Fields:   BackupInstanceResource_Properties_PolicyInfo_PolicyParametersFields,
+	},
+	"PolicyVersion": ubx.FieldSpec{WireName: "policy_version"},
+}
 
-var BackupInstanceResource_Properties_ProtectionErrorDetails_DetailsFields = ubx.FieldMap{
-	}
+var BackupInstanceResource_Properties_ProtectionErrorDetails_DetailsFields = ubx.FieldMap{}
 
 var BackupInstanceResource_Properties_ProtectionErrorDetails_InnerErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{WireName: "additional_info"},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"EmbeddedInnerError": ubx.FieldSpec{WireName: "embedded_inner_error"},
-	}
+	"AdditionalInfo":     ubx.FieldSpec{WireName: "additional_info"},
+	"Code":               ubx.FieldSpec{WireName: "code"},
+	"EmbeddedInnerError": ubx.FieldSpec{WireName: "embedded_inner_error"},
+}
 
 var BackupInstanceResource_Properties_ProtectionErrorDetailsFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: BackupInstanceResource_Properties_ProtectionErrorDetails_DetailsFields,
-		},
-		"InnerError": ubx.FieldSpec{
-			WireName: "inner_error",
-			Kind: "object",
-			Fields: BackupInstanceResource_Properties_ProtectionErrorDetails_InnerErrorFields,
-		},
-		"IsRetryable": ubx.FieldSpec{WireName: "is_retryable"},
-		"IsUserError": ubx.FieldSpec{WireName: "is_user_error"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"RecommendedAction": ubx.FieldSpec{WireName: "recommended_action"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   BackupInstanceResource_Properties_ProtectionErrorDetails_DetailsFields,
+	},
+	"InnerError": ubx.FieldSpec{
+		WireName: "inner_error",
+		Kind:     "object",
+		Fields:   BackupInstanceResource_Properties_ProtectionErrorDetails_InnerErrorFields,
+	},
+	"IsRetryable":       ubx.FieldSpec{WireName: "is_retryable"},
+	"IsUserError":       ubx.FieldSpec{WireName: "is_user_error"},
+	"Message":           ubx.FieldSpec{WireName: "message"},
+	"Properties":        ubx.FieldSpec{WireName: "properties"},
+	"RecommendedAction": ubx.FieldSpec{WireName: "recommended_action"},
+	"Target":            ubx.FieldSpec{WireName: "target"},
+}
 
 var BackupInstanceResource_Properties_ProtectionStatusFields = ubx.FieldMap{
-		"ErrorDetails": ubx.FieldSpec{
-			WireName: "error_details",
-			Kind: "object",
-			Fields: BackupInstanceResource_Properties_ProtectionErrorDetailsFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ErrorDetails": ubx.FieldSpec{
+		WireName: "error_details",
+		Kind:     "object",
+		Fields:   BackupInstanceResource_Properties_ProtectionErrorDetailsFields,
+	},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var BackupInstanceResource_PropertiesFields = ubx.FieldMap{
-		"CurrentProtectionState": ubx.FieldSpec{WireName: "current_protection_state"},
-		"DataSourceInfo": ubx.FieldSpec{
-			WireName: "data_source_info",
-			Kind: "object",
-			Fields: BackupInstanceResource_Properties_DataSourceInfoFields,
-		},
-		"DataSourceSetInfo": ubx.FieldSpec{
-			WireName: "data_source_set_info",
-			Kind: "object",
-			Fields: BackupInstanceResource_Properties_DataSourceInfoFields,
-		},
-		"DatasourceAuthCredentials": ubx.FieldSpec{
-			WireName: "datasource_auth_credentials",
-			Kind: "object",
-			Fields: BackupInstanceResource_Properties_DataSourceInfo_ResourcePropertiesFields,
-		},
-		"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
-		"IdentityDetails": ubx.FieldSpec{
-			WireName: "identity_details",
-			Kind: "object",
-			Fields: BackupInstanceResource_Properties_IdentityDetailsFields,
-		},
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
-		"PolicyInfo": ubx.FieldSpec{
-			WireName: "policy_info",
-			Kind: "object",
-			Fields: BackupInstanceResource_Properties_PolicyInfoFields,
-		},
-		"ProtectionErrorDetails": ubx.FieldSpec{
-			WireName: "protection_error_details",
-			Kind: "object",
-			Fields: BackupInstanceResource_Properties_ProtectionErrorDetailsFields,
-		},
-		"ProtectionStatus": ubx.FieldSpec{
-			WireName: "protection_status",
-			Kind: "object",
-			Fields: BackupInstanceResource_Properties_ProtectionStatusFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuardOperationRequests": ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
-		"ValidationType": ubx.FieldSpec{WireName: "validation_type"},
-	}
+	"CurrentProtectionState": ubx.FieldSpec{WireName: "current_protection_state"},
+	"DataSourceInfo": ubx.FieldSpec{
+		WireName: "data_source_info",
+		Kind:     "object",
+		Fields:   BackupInstanceResource_Properties_DataSourceInfoFields,
+	},
+	"DataSourceSetInfo": ubx.FieldSpec{
+		WireName: "data_source_set_info",
+		Kind:     "object",
+		Fields:   BackupInstanceResource_Properties_DataSourceInfoFields,
+	},
+	"DatasourceAuthCredentials": ubx.FieldSpec{
+		WireName: "datasource_auth_credentials",
+		Kind:     "object",
+		Fields:   BackupInstanceResource_Properties_DataSourceInfo_ResourcePropertiesFields,
+	},
+	"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
+	"IdentityDetails": ubx.FieldSpec{
+		WireName: "identity_details",
+		Kind:     "object",
+		Fields:   BackupInstanceResource_Properties_IdentityDetailsFields,
+	},
+	"ObjectType": ubx.FieldSpec{WireName: "object_type"},
+	"PolicyInfo": ubx.FieldSpec{
+		WireName: "policy_info",
+		Kind:     "object",
+		Fields:   BackupInstanceResource_Properties_PolicyInfoFields,
+	},
+	"ProtectionErrorDetails": ubx.FieldSpec{
+		WireName: "protection_error_details",
+		Kind:     "object",
+		Fields:   BackupInstanceResource_Properties_ProtectionErrorDetailsFields,
+	},
+	"ProtectionStatus": ubx.FieldSpec{
+		WireName: "protection_status",
+		Kind:     "object",
+		Fields:   BackupInstanceResource_Properties_ProtectionStatusFields,
+	},
+	"ProvisioningState":              ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuardOperationRequests": ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
+	"ValidationType":                 ubx.FieldSpec{WireName: "validation_type"},
+}
 
 type BackupInstanceResourceConfig struct {
 	// Backup Instance
@@ -272,8 +271,8 @@ var BackupInstanceResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BackupInstanceResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BackupInstanceResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

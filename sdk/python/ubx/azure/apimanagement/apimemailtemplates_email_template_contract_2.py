@@ -18,6 +18,8 @@ class ApimemailtemplatesEmailTemplateContract2_Properties:
     body: Any = None
     # Description of the Email Template.
     description: Any = None
+    # Whether the template is the default template provided by API Management or has been edited.
+    is_default: Any = None
     # Email Template Parameter values.
     parameters: Any = None
     # Subject of the Template.
@@ -34,6 +36,7 @@ _ApimemailtemplatesEmailTemplateContract2_Properties_ParametersFields = {
 _ApimemailtemplatesEmailTemplateContract2_PropertiesFields = {
     "body": ubx.FieldSpec(wire_name="body"),
     "description": ubx.FieldSpec(wire_name="description"),
+    "is_default": ubx.FieldSpec(wire_name="is_default"),
     "parameters": ubx.FieldSpec(
         wire_name="parameters",
         kind="list",

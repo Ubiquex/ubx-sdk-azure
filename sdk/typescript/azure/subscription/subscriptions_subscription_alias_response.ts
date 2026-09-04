@@ -13,16 +13,30 @@ export interface SubscriptionsSubscriptionAliasResponse_Properties_AdditionalPro
 }
 
 export interface SubscriptionsSubscriptionAliasResponse_Properties {
+  /** The accept ownership state of the resource. */
+  acceptOwnershipState?: string | Computed<string>;
+  /** Url to accept ownership of the subscription. */
+  acceptOwnershipUrl?: string | Computed<string>;
   /** Put subscription additional properties. */
   additionalProperties?: SubscriptionsSubscriptionAliasResponse_Properties_AdditionalProperties | Computed<SubscriptionsSubscriptionAliasResponse_Properties_AdditionalProperties>;
   /** Billing scope of the subscription. For CustomerLed and FieldLed - /billingAccounts/{billingAccountName}/billingProfiles/{billingProfileName}/invoiceSections/{invoiceSectionName} For PartnerLed - /billingAccounts/{billingAccountName}/customers/{customerName} For Legacy EA - /billingAccounts/{billingAccountName}/enrollmentAccounts/{enrollmentAccountName} */
   billingScope?: string | Computed<string>;
+  /** Created Time */
+  createdTime?: string | Computed<string>;
   /** The friendly name of the subscription. */
   displayName?: string | Computed<string>;
+  /** The Management Group Id. */
+  managementGroupId?: string | Computed<string>;
+  /** The provisioning state of the resource. */
+  provisioningState?: string | Computed<string>;
   /** Reseller Id */
   resellerId?: string | Computed<string>;
   /** This parameter can be used to create alias for existing subscription Id */
   subscriptionId?: string | Computed<string>;
+  /** Owner Id of the subscription */
+  subscriptionOwnerId?: string | Computed<string>;
+  /** Tags for the subscription */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The workload type of the subscription. It can be either Production or DevTest. */
   workload?: string | Computed<string>;
 }
@@ -50,15 +64,22 @@ const SubscriptionsSubscriptionAliasResponse_Properties_AdditionalPropertiesFiel
 };
 
 const SubscriptionsSubscriptionAliasResponse_PropertiesFields: FieldMap = {
+  acceptOwnershipState: "accept_ownership_state",
+  acceptOwnershipUrl: "accept_ownership_url",
   additionalProperties: {
     wireName: "additional_properties",
     kind: "object",
     fields: SubscriptionsSubscriptionAliasResponse_Properties_AdditionalPropertiesFields,
   },
   billingScope: "billing_scope",
+  createdTime: "created_time",
   displayName: "display_name",
+  managementGroupId: "management_group_id",
+  provisioningState: "provisioning_state",
   resellerId: "reseller_id",
   subscriptionId: "subscription_id",
+  subscriptionOwnerId: "subscription_owner_id",
+  tags: "tags",
   workload: "workload",
 };
 

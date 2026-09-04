@@ -4,7 +4,7 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JobprivateendpointsJobPrivateEndpoint_Value_Properties struct {
-	PrivateEndpointId any
+	PrivateEndpointId           any
 	TargetServerAzureResourceId any
 }
 
@@ -14,13 +14,13 @@ type JobprivateendpointsJobPrivateEndpoint_Value struct {
 
 type JobprivateendpointsJobPrivateEndpointConfig struct {
 	JobAgentName any
-	ServerName any
+	ServerName   any
 }
 
 type JobprivateendpointsJobPrivateEndpointAttrs struct {
 	JobAgentName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The JobPrivateEndpoint items on this page
 	Value any
@@ -30,6 +30,6 @@ var JobprivateendpointsJobPrivateEndpoint = ubx.DataSourceBinding{
 	WireType: "azure_sql_jobprivateendpoints_job_private_endpoint",
 	Fields: ubx.FieldMap{
 		"JobAgentName": ubx.FieldSpec{WireName: "job_agent_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

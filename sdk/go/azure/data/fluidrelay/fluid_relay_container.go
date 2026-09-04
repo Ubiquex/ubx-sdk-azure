@@ -4,19 +4,19 @@ package fluidrelay
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FluidRelayContainer_Value_Properties struct {
-	CreationTime any
-	FrsContainerId any
-	FrsTenantId any
-	LastAccessTime any
+	CreationTime      any
+	FrsContainerId    any
+	FrsTenantId       any
+	LastAccessTime    any
 	ProvisioningState any
 }
 
 type FluidRelayContainer_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -27,15 +27,15 @@ type FluidRelayContainer_Value struct {
 
 type FluidRelayContainerConfig struct {
 	FluidRelayServerName any
-	ResourceGroup any
-	SubscriptionId any
+	ResourceGroup        any
+	SubscriptionId       any
 }
 
 type FluidRelayContainerAttrs struct {
 	FluidRelayServerName any
 	// A link to the next page of results, if any.
-	NextLink any
-	ResourceGroup any
+	NextLink       any
+	ResourceGroup  any
 	SubscriptionId any
 	// A sequence of FluidRelay containers.
 	Value any
@@ -45,7 +45,7 @@ var FluidRelayContainer = ubx.DataSourceBinding{
 	WireType: "azure_fluidrelay_fluid_relay_container",
 	Fields: ubx.FieldMap{
 		"FluidRelayServerName": ubx.FieldSpec{WireName: "fluid_relay_server_name"},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroup":        ubx.FieldSpec{WireName: "resource_group"},
+		"SubscriptionId":       ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -4,56 +4,56 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCustomer_Value_Properties_EnabledAzurePlans struct {
-	ProductId any
+	ProductId      any
 	SkuDescription any
-	SkuId any
+	SkuId          any
 }
 
 type OpenapiCustomer_Value_Properties_Resellers struct {
 	Description any
-	ResellerId any
+	ResellerId  any
 }
 
 type OpenapiCustomer_Value_Properties struct {
 	BillingProfileDisplayName any
-	BillingProfileId any
-	DisplayName any
-	EnabledAzurePlans any
-	Resellers any
-	Status any
-	SystemId any
-	Tags any
+	BillingProfileId          any
+	DisplayName               any
+	EnabledAzurePlans         any
+	Resellers                 any
+	Status                    any
+	SystemId                  any
+	Tags                      any
 }
 
 type OpenapiCustomer_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiCustomerConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	Expand any
-	Filter any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	Count              any
+	Expand             any
+	Filter             any
+	OrderBy            any
+	Search             any
+	Skip               any
+	Top                any
 }
 
 type OpenapiCustomerAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	Expand any
-	Filter any
+	Count              any
+	Expand             any
+	Filter             any
 	// The link to the next page of items
 	NextLink any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	OrderBy  any
+	Search   any
+	Skip     any
+	Top      any
 	// The Customer items on this page
 	Value any
 }
@@ -63,12 +63,12 @@ var OpenapiCustomer = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Expand": ubx.FieldSpec{WireName: "expand"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Count":              ubx.FieldSpec{WireName: "count"},
+		"Expand":             ubx.FieldSpec{WireName: "expand"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

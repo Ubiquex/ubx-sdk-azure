@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type EnvironmentDefinition_Value_Properties_Parameters struct {
 	Description any
-	Id any
-	Name any
-	ReadOnly any
-	Required any
-	Type any
+	Id          any
+	Name        any
+	ReadOnly    any
+	Required    any
+	Type        any
 }
 
 type EnvironmentDefinition_Value_Properties struct {
-	Description any
-	Parameters any
-	TemplatePath any
+	Description      any
+	Parameters       any
+	TemplatePath     any
 	ValidationStatus any
 }
 
@@ -24,12 +24,12 @@ type EnvironmentDefinition_Value struct {
 }
 
 type EnvironmentDefinitionConfig struct {
-	CatalogName any
+	CatalogName   any
 	DevCenterName any
 }
 
 type EnvironmentDefinitionAttrs struct {
-	CatalogName any
+	CatalogName   any
 	DevCenterName any
 	// URL to get the next set of results if there are any.
 	NextLink any
@@ -40,7 +40,7 @@ type EnvironmentDefinitionAttrs struct {
 var EnvironmentDefinition = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_environment_definition",
 	Fields: ubx.FieldMap{
-		"CatalogName": ubx.FieldSpec{WireName: "catalog_name"},
+		"CatalogName":   ubx.FieldSpec{WireName: "catalog_name"},
 		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
 	},
 }

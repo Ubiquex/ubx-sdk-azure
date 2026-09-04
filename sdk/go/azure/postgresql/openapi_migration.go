@@ -4,40 +4,40 @@ package postgresql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_DbDetails struct {
-	AppliedChanges any
-	CdcDeleteCounter any
-	CdcInsertCounter any
-	CdcUpdateCounter any
-	DatabaseName any
-	EndedOn any
+	AppliedChanges          any
+	CdcDeleteCounter        any
+	CdcInsertCounter        any
+	CdcUpdateCounter        any
+	DatabaseName            any
+	EndedOn                 any
 	FullLoadCompletedTables any
-	FullLoadErroredTables any
-	FullLoadLoadingTables any
-	FullLoadQueuedTables any
-	IncomingChanges any
-	Latency any
-	Message any
-	MigrationOperation any
-	MigrationState any
-	StartedOn any
+	FullLoadErroredTables   any
+	FullLoadLoadingTables   any
+	FullLoadQueuedTables    any
+	IncomingChanges         any
+	Latency                 any
+	Message                 any
+	MigrationOperation      any
+	MigrationState          any
+	StartedOn               any
 }
 
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary_Messages struct {
 	Message any
-	State any
+	State   any
 }
 
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary struct {
 	Messages any
-	State any
-	Type any
+	State    any
+	Type     any
 }
 
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails struct {
 	DatabaseName any
-	EndedOn any
-	StartedOn any
-	Summary any
+	EndedOn      any
+	StartedOn    any
+	Summary      any
 }
 
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails struct {
@@ -56,7 +56,7 @@ type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_Validation
 type OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails struct {
 	// Substate of migration.
 	CurrentSubState any
-	DbDetails any
+	DbDetails       any
 	// Details for the validation for migration.
 	ValidationDetails any
 }
@@ -158,164 +158,164 @@ type OpenapiMigration_Properties struct {
 }
 
 var OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_DbDetailsFields = ubx.FieldMap{
-		"AppliedChanges": ubx.FieldSpec{WireName: "applied_changes"},
-		"CdcDeleteCounter": ubx.FieldSpec{WireName: "cdc_delete_counter"},
-		"CdcInsertCounter": ubx.FieldSpec{WireName: "cdc_insert_counter"},
-		"CdcUpdateCounter": ubx.FieldSpec{WireName: "cdc_update_counter"},
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"EndedOn": ubx.FieldSpec{WireName: "ended_on"},
-		"FullLoadCompletedTables": ubx.FieldSpec{WireName: "full_load_completed_tables"},
-		"FullLoadErroredTables": ubx.FieldSpec{WireName: "full_load_errored_tables"},
-		"FullLoadLoadingTables": ubx.FieldSpec{WireName: "full_load_loading_tables"},
-		"FullLoadQueuedTables": ubx.FieldSpec{WireName: "full_load_queued_tables"},
-		"IncomingChanges": ubx.FieldSpec{WireName: "incoming_changes"},
-		"Latency": ubx.FieldSpec{WireName: "latency"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"MigrationOperation": ubx.FieldSpec{WireName: "migration_operation"},
-		"MigrationState": ubx.FieldSpec{WireName: "migration_state"},
-		"StartedOn": ubx.FieldSpec{WireName: "started_on"},
-	}
+	"AppliedChanges":          ubx.FieldSpec{WireName: "applied_changes"},
+	"CdcDeleteCounter":        ubx.FieldSpec{WireName: "cdc_delete_counter"},
+	"CdcInsertCounter":        ubx.FieldSpec{WireName: "cdc_insert_counter"},
+	"CdcUpdateCounter":        ubx.FieldSpec{WireName: "cdc_update_counter"},
+	"DatabaseName":            ubx.FieldSpec{WireName: "database_name"},
+	"EndedOn":                 ubx.FieldSpec{WireName: "ended_on"},
+	"FullLoadCompletedTables": ubx.FieldSpec{WireName: "full_load_completed_tables"},
+	"FullLoadErroredTables":   ubx.FieldSpec{WireName: "full_load_errored_tables"},
+	"FullLoadLoadingTables":   ubx.FieldSpec{WireName: "full_load_loading_tables"},
+	"FullLoadQueuedTables":    ubx.FieldSpec{WireName: "full_load_queued_tables"},
+	"IncomingChanges":         ubx.FieldSpec{WireName: "incoming_changes"},
+	"Latency":                 ubx.FieldSpec{WireName: "latency"},
+	"Message":                 ubx.FieldSpec{WireName: "message"},
+	"MigrationOperation":      ubx.FieldSpec{WireName: "migration_operation"},
+	"MigrationState":          ubx.FieldSpec{WireName: "migration_state"},
+	"StartedOn":               ubx.FieldSpec{WireName: "started_on"},
+}
 
 var OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary_MessagesFields = ubx.FieldMap{
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"State":   ubx.FieldSpec{WireName: "state"},
+}
 
 var OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_SummaryFields = ubx.FieldMap{
-		"Messages": ubx.FieldSpec{
-			WireName: "messages",
-			Kind: "list",
-			Fields: OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary_MessagesFields,
-		},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Messages": ubx.FieldSpec{
+		WireName: "messages",
+		Kind:     "list",
+		Fields:   OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary_MessagesFields,
+	},
+	"State": ubx.FieldSpec{WireName: "state"},
+	"Type":  ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetailsFields = ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"EndedOn": ubx.FieldSpec{WireName: "ended_on"},
-		"StartedOn": ubx.FieldSpec{WireName: "started_on"},
-		"Summary": ubx.FieldSpec{
-			WireName: "summary",
-			Kind: "list",
-			Fields: OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_SummaryFields,
-		},
-	}
+	"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+	"EndedOn":      ubx.FieldSpec{WireName: "ended_on"},
+	"StartedOn":    ubx.FieldSpec{WireName: "started_on"},
+	"Summary": ubx.FieldSpec{
+		WireName: "summary",
+		Kind:     "list",
+		Fields:   OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_SummaryFields,
+	},
+}
 
 var OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetailsFields = ubx.FieldMap{
-		"DbLevelValidationDetails": ubx.FieldSpec{
-			WireName: "db_level_validation_details",
-			Kind: "list",
-			Fields: OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetailsFields,
-		},
-		"ServerLevelValidationDetails": ubx.FieldSpec{
-			WireName: "server_level_validation_details",
-			Kind: "list",
-			Fields: OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_SummaryFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"ValidationEndTimeInUtc": ubx.FieldSpec{WireName: "validation_end_time_in_utc"},
-		"ValidationStartTimeInUtc": ubx.FieldSpec{WireName: "validation_start_time_in_utc"},
-	}
+	"DbLevelValidationDetails": ubx.FieldSpec{
+		WireName: "db_level_validation_details",
+		Kind:     "list",
+		Fields:   OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetailsFields,
+	},
+	"ServerLevelValidationDetails": ubx.FieldSpec{
+		WireName: "server_level_validation_details",
+		Kind:     "list",
+		Fields:   OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_SummaryFields,
+	},
+	"Status":                   ubx.FieldSpec{WireName: "status"},
+	"ValidationEndTimeInUtc":   ubx.FieldSpec{WireName: "validation_end_time_in_utc"},
+	"ValidationStartTimeInUtc": ubx.FieldSpec{WireName: "validation_start_time_in_utc"},
+}
 
 var OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetailsFields = ubx.FieldMap{
-		"CurrentSubState": ubx.FieldSpec{WireName: "current_sub_state"},
-		"DbDetails": ubx.FieldSpec{
-			WireName: "db_details",
-			Kind: "map",
-			Fields: OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_DbDetailsFields,
-		},
-		"ValidationDetails": ubx.FieldSpec{
-			WireName: "validation_details",
-			Kind: "object",
-			Fields: OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetailsFields,
-		},
-	}
+	"CurrentSubState": ubx.FieldSpec{WireName: "current_sub_state"},
+	"DbDetails": ubx.FieldSpec{
+		WireName: "db_details",
+		Kind:     "map",
+		Fields:   OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_DbDetailsFields,
+	},
+	"ValidationDetails": ubx.FieldSpec{
+		WireName: "validation_details",
+		Kind:     "object",
+		Fields:   OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetailsFields,
+	},
+}
 
 var OpenapiMigration_Properties_CurrentStatusFields = ubx.FieldMap{
-		"CurrentSubStateDetails": ubx.FieldSpec{
-			WireName: "current_sub_state_details",
-			Kind: "object",
-			Fields: OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetailsFields,
-		},
-		"Error": ubx.FieldSpec{WireName: "error"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"CurrentSubStateDetails": ubx.FieldSpec{
+		WireName: "current_sub_state_details",
+		Kind:     "object",
+		Fields:   OpenapiMigration_Properties_CurrentStatus_CurrentSubStateDetailsFields,
+	},
+	"Error": ubx.FieldSpec{WireName: "error"},
+	"State": ubx.FieldSpec{WireName: "state"},
+}
 
 var OpenapiMigration_Properties_SecretParameters_AdminCredentialsFields = ubx.FieldMap{
-		"SourceServerPassword": ubx.FieldSpec{WireName: "source_server_password"},
-		"TargetServerPassword": ubx.FieldSpec{WireName: "target_server_password"},
-	}
+	"SourceServerPassword": ubx.FieldSpec{WireName: "source_server_password"},
+	"TargetServerPassword": ubx.FieldSpec{WireName: "target_server_password"},
+}
 
 var OpenapiMigration_Properties_SecretParametersFields = ubx.FieldMap{
-		"AdminCredentials": ubx.FieldSpec{
-			WireName: "admin_credentials",
-			Kind: "object",
-			Fields: OpenapiMigration_Properties_SecretParameters_AdminCredentialsFields,
-		},
-		"SourceServerUsername": ubx.FieldSpec{WireName: "source_server_username"},
-		"TargetServerUsername": ubx.FieldSpec{WireName: "target_server_username"},
-	}
+	"AdminCredentials": ubx.FieldSpec{
+		WireName: "admin_credentials",
+		Kind:     "object",
+		Fields:   OpenapiMigration_Properties_SecretParameters_AdminCredentialsFields,
+	},
+	"SourceServerUsername": ubx.FieldSpec{WireName: "source_server_username"},
+	"TargetServerUsername": ubx.FieldSpec{WireName: "target_server_username"},
+}
 
 var OpenapiMigration_Properties_SourceDbServerMetadata_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 var OpenapiMigration_Properties_SourceDbServerMetadataFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiMigration_Properties_SourceDbServerMetadata_SkuFields,
-		},
-		"StorageMb": ubx.FieldSpec{WireName: "storage_mb"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   OpenapiMigration_Properties_SourceDbServerMetadata_SkuFields,
+	},
+	"StorageMb": ubx.FieldSpec{WireName: "storage_mb"},
+	"Version":   ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiMigration_PropertiesFields = ubx.FieldMap{
-		"Cancel": ubx.FieldSpec{WireName: "cancel"},
-		"CurrentStatus": ubx.FieldSpec{
-			WireName: "current_status",
-			Kind: "object",
-			Fields: OpenapiMigration_Properties_CurrentStatusFields,
-		},
-		"DbsToCancelMigrationOn": ubx.FieldSpec{WireName: "dbs_to_cancel_migration_on"},
-		"DbsToMigrate": ubx.FieldSpec{WireName: "dbs_to_migrate"},
-		"DbsToTriggerCutoverOn": ubx.FieldSpec{WireName: "dbs_to_trigger_cutover_on"},
-		"MigrateRoles": ubx.FieldSpec{WireName: "migrate_roles"},
-		"MigrationId": ubx.FieldSpec{WireName: "migration_id"},
-		"MigrationInstanceResourceId": ubx.FieldSpec{WireName: "migration_instance_resource_id"},
-		"MigrationMode": ubx.FieldSpec{WireName: "migration_mode"},
-		"MigrationOption": ubx.FieldSpec{WireName: "migration_option"},
-		"MigrationWindowEndTimeInUtc": ubx.FieldSpec{WireName: "migration_window_end_time_in_utc"},
-		"MigrationWindowStartTimeInUtc": ubx.FieldSpec{WireName: "migration_window_start_time_in_utc"},
-		"OverwriteDbsInTarget": ubx.FieldSpec{WireName: "overwrite_dbs_in_target"},
-		"SecretParameters": ubx.FieldSpec{
-			WireName: "secret_parameters",
-			Kind: "object",
-			Fields: OpenapiMigration_Properties_SecretParametersFields,
-		},
-		"SetupLogicalReplicationOnSourceDbIfNeeded": ubx.FieldSpec{WireName: "setup_logical_replication_on_source_db_if_needed"},
-		"SourceDbServerFullyQualifiedDomainName": ubx.FieldSpec{WireName: "source_db_server_fully_qualified_domain_name"},
-		"SourceDbServerMetadata": ubx.FieldSpec{
-			WireName: "source_db_server_metadata",
-			Kind: "object",
-			Fields: OpenapiMigration_Properties_SourceDbServerMetadataFields,
-		},
-		"SourceDbServerResourceId": ubx.FieldSpec{WireName: "source_db_server_resource_id"},
-		"SourceType": ubx.FieldSpec{WireName: "source_type"},
-		"SslMode": ubx.FieldSpec{WireName: "ssl_mode"},
-		"StartDataMigration": ubx.FieldSpec{WireName: "start_data_migration"},
-		"TargetDbServerFullyQualifiedDomainName": ubx.FieldSpec{WireName: "target_db_server_fully_qualified_domain_name"},
-		"TargetDbServerMetadata": ubx.FieldSpec{
-			WireName: "target_db_server_metadata",
-			Kind: "object",
-			Fields: OpenapiMigration_Properties_SourceDbServerMetadataFields,
-		},
-		"TargetDbServerResourceId": ubx.FieldSpec{WireName: "target_db_server_resource_id"},
-		"TriggerCutover": ubx.FieldSpec{WireName: "trigger_cutover"},
-	}
+	"Cancel": ubx.FieldSpec{WireName: "cancel"},
+	"CurrentStatus": ubx.FieldSpec{
+		WireName: "current_status",
+		Kind:     "object",
+		Fields:   OpenapiMigration_Properties_CurrentStatusFields,
+	},
+	"DbsToCancelMigrationOn":        ubx.FieldSpec{WireName: "dbs_to_cancel_migration_on"},
+	"DbsToMigrate":                  ubx.FieldSpec{WireName: "dbs_to_migrate"},
+	"DbsToTriggerCutoverOn":         ubx.FieldSpec{WireName: "dbs_to_trigger_cutover_on"},
+	"MigrateRoles":                  ubx.FieldSpec{WireName: "migrate_roles"},
+	"MigrationId":                   ubx.FieldSpec{WireName: "migration_id"},
+	"MigrationInstanceResourceId":   ubx.FieldSpec{WireName: "migration_instance_resource_id"},
+	"MigrationMode":                 ubx.FieldSpec{WireName: "migration_mode"},
+	"MigrationOption":               ubx.FieldSpec{WireName: "migration_option"},
+	"MigrationWindowEndTimeInUtc":   ubx.FieldSpec{WireName: "migration_window_end_time_in_utc"},
+	"MigrationWindowStartTimeInUtc": ubx.FieldSpec{WireName: "migration_window_start_time_in_utc"},
+	"OverwriteDbsInTarget":          ubx.FieldSpec{WireName: "overwrite_dbs_in_target"},
+	"SecretParameters": ubx.FieldSpec{
+		WireName: "secret_parameters",
+		Kind:     "object",
+		Fields:   OpenapiMigration_Properties_SecretParametersFields,
+	},
+	"SetupLogicalReplicationOnSourceDbIfNeeded": ubx.FieldSpec{WireName: "setup_logical_replication_on_source_db_if_needed"},
+	"SourceDbServerFullyQualifiedDomainName":    ubx.FieldSpec{WireName: "source_db_server_fully_qualified_domain_name"},
+	"SourceDbServerMetadata": ubx.FieldSpec{
+		WireName: "source_db_server_metadata",
+		Kind:     "object",
+		Fields:   OpenapiMigration_Properties_SourceDbServerMetadataFields,
+	},
+	"SourceDbServerResourceId":               ubx.FieldSpec{WireName: "source_db_server_resource_id"},
+	"SourceType":                             ubx.FieldSpec{WireName: "source_type"},
+	"SslMode":                                ubx.FieldSpec{WireName: "ssl_mode"},
+	"StartDataMigration":                     ubx.FieldSpec{WireName: "start_data_migration"},
+	"TargetDbServerFullyQualifiedDomainName": ubx.FieldSpec{WireName: "target_db_server_fully_qualified_domain_name"},
+	"TargetDbServerMetadata": ubx.FieldSpec{
+		WireName: "target_db_server_metadata",
+		Kind:     "object",
+		Fields:   OpenapiMigration_Properties_SourceDbServerMetadataFields,
+	},
+	"TargetDbServerResourceId": ubx.FieldSpec{WireName: "target_db_server_resource_id"},
+	"TriggerCutover":           ubx.FieldSpec{WireName: "trigger_cutover"},
+}
 
 type OpenapiMigrationConfig struct {
 	// Migration.
@@ -332,8 +332,8 @@ var OpenapiMigration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiMigration_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiMigration_PropertiesFields,
 		},
 	},
 }

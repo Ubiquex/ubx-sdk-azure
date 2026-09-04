@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiComputeResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -29,10 +29,10 @@ type OpenapiComputeResource_Properties_ProvisioningErrors_Error_Details struct {
 
 type OpenapiComputeResource_Properties_ProvisioningErrors_Error struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type OpenapiComputeResource_Properties_ProvisioningErrors struct {
@@ -76,77 +76,76 @@ type OpenapiComputeResource_Sku struct {
 }
 
 var OpenapiComputeResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiComputeResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiComputeResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiComputeResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiComputeResource_Properties_ProvisioningErrors_Error_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
-var OpenapiComputeResource_Properties_ProvisioningErrors_Error_DetailsFields = ubx.FieldMap{
-	}
+var OpenapiComputeResource_Properties_ProvisioningErrors_Error_DetailsFields = ubx.FieldMap{}
 
 var OpenapiComputeResource_Properties_ProvisioningErrors_ErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: OpenapiComputeResource_Properties_ProvisioningErrors_Error_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: OpenapiComputeResource_Properties_ProvisioningErrors_Error_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   OpenapiComputeResource_Properties_ProvisioningErrors_Error_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   OpenapiComputeResource_Properties_ProvisioningErrors_Error_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var OpenapiComputeResource_Properties_ProvisioningErrorsFields = ubx.FieldMap{
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: OpenapiComputeResource_Properties_ProvisioningErrors_ErrorFields,
-		},
-	}
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiComputeResource_Properties_ProvisioningErrors_ErrorFields,
+	},
+}
 
 var OpenapiComputeResource_PropertiesFields = ubx.FieldMap{
-		"ComputeLocation": ubx.FieldSpec{WireName: "compute_location"},
-		"ComputeType": ubx.FieldSpec{WireName: "compute_type"},
-		"CreatedOn": ubx.FieldSpec{WireName: "created_on"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"IsAttachedCompute": ubx.FieldSpec{WireName: "is_attached_compute"},
-		"ModifiedOn": ubx.FieldSpec{WireName: "modified_on"},
-		"ProvisioningErrors": ubx.FieldSpec{
-			WireName: "provisioning_errors",
-			Kind: "list",
-			Fields: OpenapiComputeResource_Properties_ProvisioningErrorsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ComputeLocation":   ubx.FieldSpec{WireName: "compute_location"},
+	"ComputeType":       ubx.FieldSpec{WireName: "compute_type"},
+	"CreatedOn":         ubx.FieldSpec{WireName: "created_on"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"DisableLocalAuth":  ubx.FieldSpec{WireName: "disable_local_auth"},
+	"IsAttachedCompute": ubx.FieldSpec{WireName: "is_attached_compute"},
+	"ModifiedOn":        ubx.FieldSpec{WireName: "modified_on"},
+	"ProvisioningErrors": ubx.FieldSpec{
+		WireName: "provisioning_errors",
+		Kind:     "list",
+		Fields:   OpenapiComputeResource_Properties_ProvisioningErrorsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceId":        ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var OpenapiComputeResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type OpenapiComputeResourceConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -179,19 +178,19 @@ var OpenapiComputeResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiComputeResource_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiComputeResource_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiComputeResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiComputeResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiComputeResource_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiComputeResource_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -10017,8 +10017,6 @@ _NetworkgatewayVirtualNetworkTap_PropertiesFields = {
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkTapConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Virtual Network Tap properties.
     properties: Any = None
 
@@ -10032,7 +10030,6 @@ class NetworkgatewayVirtualNetworkTapAttrs:
 NetworkgatewayVirtualNetworkTap = ubx.ResourceBinding(
     wire_type="azure_network_networkgateway_virtual_network_tap",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -4,7 +4,7 @@ package dashboard
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GrafanaManagedGrafana_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -98,15 +98,15 @@ type GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_Priv
 
 type GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type GrafanaManagedGrafana_Properties_PrivateEndpointConnections struct {
@@ -140,7 +140,7 @@ type GrafanaManagedGrafana_Properties struct {
 	OutboundIps any
 	// The private endpoint connections of the Grafana instance.
 	PrivateEndpointConnections any
-	ProvisioningState any
+	ProvisioningState          any
 	// Indicate the state for enable or disable traffic over the public interface.
 	PublicNetworkAccess any
 	// The zone redundancy setting of the Grafana instance.
@@ -155,174 +155,174 @@ type GrafanaManagedGrafana_Sku struct {
 }
 
 var GrafanaManagedGrafana_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var GrafanaManagedGrafana_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: GrafanaManagedGrafana_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   GrafanaManagedGrafana_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var GrafanaManagedGrafana_Properties_EnterpriseConfigurationsFields = ubx.FieldMap{
-		"MarketplaceAutoRenew": ubx.FieldSpec{WireName: "marketplace_auto_renew"},
-		"MarketplacePlanId": ubx.FieldSpec{WireName: "marketplace_plan_id"},
-	}
+	"MarketplaceAutoRenew": ubx.FieldSpec{WireName: "marketplace_auto_renew"},
+	"MarketplacePlanId":    ubx.FieldSpec{WireName: "marketplace_plan_id"},
+}
 
 var GrafanaManagedGrafana_Properties_GrafanaConfigurations_SecurityFields = ubx.FieldMap{
-		"CsrfAlwaysCheck": ubx.FieldSpec{WireName: "csrf_always_check"},
-	}
+	"CsrfAlwaysCheck": ubx.FieldSpec{WireName: "csrf_always_check"},
+}
 
 var GrafanaManagedGrafana_Properties_GrafanaConfigurations_SmtpFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"FromAddress": ubx.FieldSpec{WireName: "from_address"},
-		"FromName": ubx.FieldSpec{WireName: "from_name"},
-		"Host": ubx.FieldSpec{WireName: "host"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"SkipVerify": ubx.FieldSpec{WireName: "skip_verify"},
-		"StartTlspolicy": ubx.FieldSpec{WireName: "start_tlspolicy"},
-		"User": ubx.FieldSpec{WireName: "user"},
-	}
+	"Enabled":        ubx.FieldSpec{WireName: "enabled"},
+	"FromAddress":    ubx.FieldSpec{WireName: "from_address"},
+	"FromName":       ubx.FieldSpec{WireName: "from_name"},
+	"Host":           ubx.FieldSpec{WireName: "host"},
+	"Password":       ubx.FieldSpec{WireName: "password"},
+	"SkipVerify":     ubx.FieldSpec{WireName: "skip_verify"},
+	"StartTlspolicy": ubx.FieldSpec{WireName: "start_tlspolicy"},
+	"User":           ubx.FieldSpec{WireName: "user"},
+}
 
 var GrafanaManagedGrafana_Properties_GrafanaConfigurations_SnapshotsFields = ubx.FieldMap{
-		"ExternalEnabled": ubx.FieldSpec{WireName: "external_enabled"},
-	}
+	"ExternalEnabled": ubx.FieldSpec{WireName: "external_enabled"},
+}
 
 var GrafanaManagedGrafana_Properties_GrafanaConfigurations_UnifiedAlertingScreenshotsFields = ubx.FieldMap{
-		"CaptureEnabled": ubx.FieldSpec{WireName: "capture_enabled"},
-	}
+	"CaptureEnabled": ubx.FieldSpec{WireName: "capture_enabled"},
+}
 
 var GrafanaManagedGrafana_Properties_GrafanaConfigurations_UsersFields = ubx.FieldMap{
-		"EditorsCanAdmin": ubx.FieldSpec{WireName: "editors_can_admin"},
-		"ViewersCanEdit": ubx.FieldSpec{WireName: "viewers_can_edit"},
-	}
+	"EditorsCanAdmin": ubx.FieldSpec{WireName: "editors_can_admin"},
+	"ViewersCanEdit":  ubx.FieldSpec{WireName: "viewers_can_edit"},
+}
 
 var GrafanaManagedGrafana_Properties_GrafanaConfigurationsFields = ubx.FieldMap{
-		"Security": ubx.FieldSpec{
-			WireName: "security",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_Properties_GrafanaConfigurations_SecurityFields,
-		},
-		"Smtp": ubx.FieldSpec{
-			WireName: "smtp",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_Properties_GrafanaConfigurations_SmtpFields,
-		},
-		"Snapshots": ubx.FieldSpec{
-			WireName: "snapshots",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_Properties_GrafanaConfigurations_SnapshotsFields,
-		},
-		"UnifiedAlertingScreenshots": ubx.FieldSpec{
-			WireName: "unified_alerting_screenshots",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_Properties_GrafanaConfigurations_UnifiedAlertingScreenshotsFields,
-		},
-		"Users": ubx.FieldSpec{
-			WireName: "users",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_Properties_GrafanaConfigurations_UsersFields,
-		},
-	}
+	"Security": ubx.FieldSpec{
+		WireName: "security",
+		Kind:     "object",
+		Fields:   GrafanaManagedGrafana_Properties_GrafanaConfigurations_SecurityFields,
+	},
+	"Smtp": ubx.FieldSpec{
+		WireName: "smtp",
+		Kind:     "object",
+		Fields:   GrafanaManagedGrafana_Properties_GrafanaConfigurations_SmtpFields,
+	},
+	"Snapshots": ubx.FieldSpec{
+		WireName: "snapshots",
+		Kind:     "object",
+		Fields:   GrafanaManagedGrafana_Properties_GrafanaConfigurations_SnapshotsFields,
+	},
+	"UnifiedAlertingScreenshots": ubx.FieldSpec{
+		WireName: "unified_alerting_screenshots",
+		Kind:     "object",
+		Fields:   GrafanaManagedGrafana_Properties_GrafanaConfigurations_UnifiedAlertingScreenshotsFields,
+	},
+	"Users": ubx.FieldSpec{
+		WireName: "users",
+		Kind:     "object",
+		Fields:   GrafanaManagedGrafana_Properties_GrafanaConfigurations_UsersFields,
+	},
+}
 
 var GrafanaManagedGrafana_Properties_GrafanaIntegrations_AzureMonitorWorkspaceIntegrationsFields = ubx.FieldMap{
-		"AzureMonitorWorkspaceResourceId": ubx.FieldSpec{WireName: "azure_monitor_workspace_resource_id"},
-	}
+	"AzureMonitorWorkspaceResourceId": ubx.FieldSpec{WireName: "azure_monitor_workspace_resource_id"},
+}
 
 var GrafanaManagedGrafana_Properties_GrafanaIntegrationsFields = ubx.FieldMap{
-		"AzureMonitorWorkspaceIntegrations": ubx.FieldSpec{
-			WireName: "azure_monitor_workspace_integrations",
-			Kind: "list",
-			Fields: GrafanaManagedGrafana_Properties_GrafanaIntegrations_AzureMonitorWorkspaceIntegrationsFields,
-		},
-	}
+	"AzureMonitorWorkspaceIntegrations": ubx.FieldSpec{
+		WireName: "azure_monitor_workspace_integrations",
+		Kind:     "list",
+		Fields:   GrafanaManagedGrafana_Properties_GrafanaIntegrations_AzureMonitorWorkspaceIntegrationsFields,
+	},
+}
 
 var GrafanaManagedGrafana_Properties_GrafanaPluginsFields = ubx.FieldMap{
-		"PluginId": ubx.FieldSpec{WireName: "plugin_id"},
-	}
+	"PluginId": ubx.FieldSpec{WireName: "plugin_id"},
+}
 
 var GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var GrafanaManagedGrafana_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   GrafanaManagedGrafana_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var GrafanaManagedGrafana_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   GrafanaManagedGrafana_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var GrafanaManagedGrafana_PropertiesFields = ubx.FieldMap{
-		"ApiKey": ubx.FieldSpec{WireName: "api_key"},
-		"AutoGeneratedDomainNameLabelScope": ubx.FieldSpec{WireName: "auto_generated_domain_name_label_scope"},
-		"CreatorCanAdmin": ubx.FieldSpec{WireName: "creator_can_admin"},
-		"DeterministicOutboundIp": ubx.FieldSpec{WireName: "deterministic_outbound_ip"},
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"EnterpriseConfigurations": ubx.FieldSpec{
-			WireName: "enterprise_configurations",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_Properties_EnterpriseConfigurationsFields,
-		},
-		"GrafanaConfigurations": ubx.FieldSpec{
-			WireName: "grafana_configurations",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_Properties_GrafanaConfigurationsFields,
-		},
-		"GrafanaIntegrations": ubx.FieldSpec{
-			WireName: "grafana_integrations",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_Properties_GrafanaIntegrationsFields,
-		},
-		"GrafanaMajorVersion": ubx.FieldSpec{WireName: "grafana_major_version"},
-		"GrafanaPlugins": ubx.FieldSpec{
-			WireName: "grafana_plugins",
-			Kind: "map",
-			Fields: GrafanaManagedGrafana_Properties_GrafanaPluginsFields,
-		},
-		"GrafanaVersion": ubx.FieldSpec{WireName: "grafana_version"},
-		"OutboundIps": ubx.FieldSpec{WireName: "outbound_ips"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: GrafanaManagedGrafana_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"ZoneRedundancy": ubx.FieldSpec{WireName: "zone_redundancy"},
-	}
+	"ApiKey":                            ubx.FieldSpec{WireName: "api_key"},
+	"AutoGeneratedDomainNameLabelScope": ubx.FieldSpec{WireName: "auto_generated_domain_name_label_scope"},
+	"CreatorCanAdmin":                   ubx.FieldSpec{WireName: "creator_can_admin"},
+	"DeterministicOutboundIp":           ubx.FieldSpec{WireName: "deterministic_outbound_ip"},
+	"Endpoint":                          ubx.FieldSpec{WireName: "endpoint"},
+	"EnterpriseConfigurations": ubx.FieldSpec{
+		WireName: "enterprise_configurations",
+		Kind:     "object",
+		Fields:   GrafanaManagedGrafana_Properties_EnterpriseConfigurationsFields,
+	},
+	"GrafanaConfigurations": ubx.FieldSpec{
+		WireName: "grafana_configurations",
+		Kind:     "object",
+		Fields:   GrafanaManagedGrafana_Properties_GrafanaConfigurationsFields,
+	},
+	"GrafanaIntegrations": ubx.FieldSpec{
+		WireName: "grafana_integrations",
+		Kind:     "object",
+		Fields:   GrafanaManagedGrafana_Properties_GrafanaIntegrationsFields,
+	},
+	"GrafanaMajorVersion": ubx.FieldSpec{WireName: "grafana_major_version"},
+	"GrafanaPlugins": ubx.FieldSpec{
+		WireName: "grafana_plugins",
+		Kind:     "map",
+		Fields:   GrafanaManagedGrafana_Properties_GrafanaPluginsFields,
+	},
+	"GrafanaVersion": ubx.FieldSpec{WireName: "grafana_version"},
+	"OutboundIps":    ubx.FieldSpec{WireName: "outbound_ips"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   GrafanaManagedGrafana_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"ZoneRedundancy":      ubx.FieldSpec{WireName: "zone_redundancy"},
+}
 
 var GrafanaManagedGrafana_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Size": ubx.FieldSpec{WireName: "size"},
+}
 
 type GrafanaManagedGrafanaConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -355,19 +355,19 @@ var GrafanaManagedGrafana = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_IdentityFields,
+			Kind:     "object",
+			Fields:   GrafanaManagedGrafana_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_PropertiesFields,
+			Kind:     "object",
+			Fields:   GrafanaManagedGrafana_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: GrafanaManagedGrafana_SkuFields,
+			Kind:     "object",
+			Fields:   GrafanaManagedGrafana_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

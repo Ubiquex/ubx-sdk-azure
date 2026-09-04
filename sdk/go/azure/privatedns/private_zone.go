@@ -23,15 +23,15 @@ type PrivateZone_Properties struct {
 }
 
 var PrivateZone_PropertiesFields = ubx.FieldMap{
-		"InternalId": ubx.FieldSpec{WireName: "internal_id"},
-		"MaxNumberOfRecordSets": ubx.FieldSpec{WireName: "max_number_of_record_sets"},
-		"MaxNumberOfVirtualNetworkLinks": ubx.FieldSpec{WireName: "max_number_of_virtual_network_links"},
-		"MaxNumberOfVirtualNetworkLinksWithRegistration": ubx.FieldSpec{WireName: "max_number_of_virtual_network_links_with_registration"},
-		"NumberOfRecordSets": ubx.FieldSpec{WireName: "number_of_record_sets"},
-		"NumberOfVirtualNetworkLinks": ubx.FieldSpec{WireName: "number_of_virtual_network_links"},
-		"NumberOfVirtualNetworkLinksWithRegistration": ubx.FieldSpec{WireName: "number_of_virtual_network_links_with_registration"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"InternalId":                                     ubx.FieldSpec{WireName: "internal_id"},
+	"MaxNumberOfRecordSets":                          ubx.FieldSpec{WireName: "max_number_of_record_sets"},
+	"MaxNumberOfVirtualNetworkLinks":                 ubx.FieldSpec{WireName: "max_number_of_virtual_network_links"},
+	"MaxNumberOfVirtualNetworkLinksWithRegistration": ubx.FieldSpec{WireName: "max_number_of_virtual_network_links_with_registration"},
+	"NumberOfRecordSets":                             ubx.FieldSpec{WireName: "number_of_record_sets"},
+	"NumberOfVirtualNetworkLinks":                    ubx.FieldSpec{WireName: "number_of_virtual_network_links"},
+	"NumberOfVirtualNetworkLinksWithRegistration":    ubx.FieldSpec{WireName: "number_of_virtual_network_links_with_registration"},
+	"ProvisioningState":                              ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type PrivateZoneConfig struct {
 	// The ETag of the zone.
@@ -58,12 +58,12 @@ type PrivateZoneAttrs struct {
 var PrivateZone = ubx.ResourceBinding{
 	WireType: "azure_privatedns_private_zone",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Etag":     ubx.FieldSpec{WireName: "etag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PrivateZone_PropertiesFields,
+			Kind:     "object",
+			Fields:   PrivateZone_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

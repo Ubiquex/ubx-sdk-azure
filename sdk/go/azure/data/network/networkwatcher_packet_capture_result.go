@@ -8,9 +8,9 @@ type NetworkwatcherPacketCaptureResult_Value_Properties struct {
 }
 
 type NetworkwatcherPacketCaptureResult_Value struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
 }
 

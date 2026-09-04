@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLogAnalyticsQueryPack_Value_Properties struct {
 	ProvisioningState any
-	QueryPackId any
-	TimeCreated any
-	TimeModified any
+	QueryPackId       any
+	TimeCreated       any
+	TimeModified      any
 }
 
 type OpenapiLogAnalyticsQueryPack_Value struct {
@@ -26,6 +26,5 @@ type OpenapiLogAnalyticsQueryPackAttrs struct {
 
 var OpenapiLogAnalyticsQueryPack = ubx.DataSourceBinding{
 	WireType: "azure_operationalinsights_openapi_log_analytics_query_pack",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

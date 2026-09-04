@@ -12639,8 +12639,6 @@ _VirtualnetworkNetworkSecurityGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkSecurityGroupConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Network Security Group resource.
     properties: Any = None
 
@@ -12654,7 +12652,6 @@ class VirtualnetworkNetworkSecurityGroupAttrs:
 VirtualnetworkNetworkSecurityGroup = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_network_security_group",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

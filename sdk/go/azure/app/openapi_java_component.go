@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiJavaComponent_Properties_Configurations struct {
 	PropertyName any
-	Value any
+	Value        any
 }
 
 type OpenapiJavaComponent_Properties_Scale struct {
@@ -16,7 +16,7 @@ type OpenapiJavaComponent_Properties_Scale struct {
 }
 
 type OpenapiJavaComponent_Properties_ServiceBinds struct {
-	Name any
+	Name      any
 	ServiceId any
 }
 
@@ -34,39 +34,39 @@ type OpenapiJavaComponent_Properties struct {
 }
 
 var OpenapiJavaComponent_Properties_ConfigurationsFields = ubx.FieldMap{
-		"PropertyName": ubx.FieldSpec{WireName: "property_name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"PropertyName": ubx.FieldSpec{WireName: "property_name"},
+	"Value":        ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiJavaComponent_Properties_ScaleFields = ubx.FieldMap{
-		"MaxReplicas": ubx.FieldSpec{WireName: "max_replicas"},
-		"MinReplicas": ubx.FieldSpec{WireName: "min_replicas"},
-	}
+	"MaxReplicas": ubx.FieldSpec{WireName: "max_replicas"},
+	"MinReplicas": ubx.FieldSpec{WireName: "min_replicas"},
+}
 
 var OpenapiJavaComponent_Properties_ServiceBindsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ServiceId": ubx.FieldSpec{WireName: "service_id"},
-	}
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"ServiceId": ubx.FieldSpec{WireName: "service_id"},
+}
 
 var OpenapiJavaComponent_PropertiesFields = ubx.FieldMap{
-		"ComponentType": ubx.FieldSpec{WireName: "component_type"},
-		"Configurations": ubx.FieldSpec{
-			WireName: "configurations",
-			Kind: "list",
-			Fields: OpenapiJavaComponent_Properties_ConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Scale": ubx.FieldSpec{
-			WireName: "scale",
-			Kind: "object",
-			Fields: OpenapiJavaComponent_Properties_ScaleFields,
-		},
-		"ServiceBinds": ubx.FieldSpec{
-			WireName: "service_binds",
-			Kind: "list",
-			Fields: OpenapiJavaComponent_Properties_ServiceBindsFields,
-		},
-	}
+	"ComponentType": ubx.FieldSpec{WireName: "component_type"},
+	"Configurations": ubx.FieldSpec{
+		WireName: "configurations",
+		Kind:     "list",
+		Fields:   OpenapiJavaComponent_Properties_ConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Scale": ubx.FieldSpec{
+		WireName: "scale",
+		Kind:     "object",
+		Fields:   OpenapiJavaComponent_Properties_ScaleFields,
+	},
+	"ServiceBinds": ubx.FieldSpec{
+		WireName: "service_binds",
+		Kind:     "list",
+		Fields:   OpenapiJavaComponent_Properties_ServiceBindsFields,
+	},
+}
 
 type OpenapiJavaComponentConfig struct {
 	// Java Component common properties.
@@ -87,8 +87,8 @@ var OpenapiJavaComponent = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiJavaComponent_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiJavaComponent_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

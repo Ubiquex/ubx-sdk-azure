@@ -9,10 +9,14 @@ export interface OpenapiConnection_Properties_ConnectionType {
 export interface OpenapiConnection_Properties {
   /** The connection type property associated with the entity. */
   connectionType: OpenapiConnection_Properties_ConnectionType | Computed<OpenapiConnection_Properties_ConnectionType>;
+  /** Gets the creation time. */
+  creationTime?: string | Computed<string>;
   /** Gets or sets the description of the connection. */
   description?: string | Computed<string>;
   /** Gets or sets the field definition properties of the connection. */
   fieldDefinitionValues?: Record<string, string> | Computed<Record<string, string>>;
+  /** Gets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
 }
 
 const OpenapiConnection_Properties_ConnectionTypeFields: FieldMap = {
@@ -25,8 +29,10 @@ const OpenapiConnection_PropertiesFields: FieldMap = {
     kind: "object",
     fields: OpenapiConnection_Properties_ConnectionTypeFields,
   },
+  creationTime: "creation_time",
   description: "description",
   fieldDefinitionValues: "field_definition_values",
+  lastModifiedTime: "last_modified_time",
 };
 
 export interface OpenapiConnectionConfig {

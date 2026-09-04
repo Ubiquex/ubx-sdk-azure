@@ -13,11 +13,11 @@ type NetworkwatcherPacketCaptureResult_Properties_CaptureSettings struct {
 }
 
 type NetworkwatcherPacketCaptureResult_Properties_Filters struct {
-	LocalIpaddress any
-	LocalPort any
-	Protocol any
+	LocalIpaddress  any
+	LocalPort       any
+	Protocol        any
 	RemoteIpaddress any
-	RemotePort any
+	RemotePort      any
 }
 
 type NetworkwatcherPacketCaptureResult_Properties_Scope struct {
@@ -47,6 +47,8 @@ type NetworkwatcherPacketCaptureResult_Properties struct {
 	ContinuousCapture any
 	// A list of packet capture filters.
 	Filters any
+	// Provisioning states of a resource.
+	ProvisioningState any
 	// A list of AzureVMSS instances which can be included or excluded to run packet capture. If both included and excluded are empty, then the packet capture will run on all instances of AzureVMSS.
 	Scope any
 	// The storage location for a packet capture session.
@@ -62,59 +64,60 @@ type NetworkwatcherPacketCaptureResult_Properties struct {
 }
 
 var NetworkwatcherPacketCaptureResult_Properties_CaptureSettingsFields = ubx.FieldMap{
-		"FileCount": ubx.FieldSpec{WireName: "file_count"},
-		"FileSizeInBytes": ubx.FieldSpec{WireName: "file_size_in_bytes"},
-		"SessionTimeLimitInSeconds": ubx.FieldSpec{WireName: "session_time_limit_in_seconds"},
-	}
+	"FileCount":                 ubx.FieldSpec{WireName: "file_count"},
+	"FileSizeInBytes":           ubx.FieldSpec{WireName: "file_size_in_bytes"},
+	"SessionTimeLimitInSeconds": ubx.FieldSpec{WireName: "session_time_limit_in_seconds"},
+}
 
 var NetworkwatcherPacketCaptureResult_Properties_FiltersFields = ubx.FieldMap{
-		"LocalIpaddress": ubx.FieldSpec{WireName: "local_ipaddress"},
-		"LocalPort": ubx.FieldSpec{WireName: "local_port"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"RemoteIpaddress": ubx.FieldSpec{WireName: "remote_ipaddress"},
-		"RemotePort": ubx.FieldSpec{WireName: "remote_port"},
-	}
+	"LocalIpaddress":  ubx.FieldSpec{WireName: "local_ipaddress"},
+	"LocalPort":       ubx.FieldSpec{WireName: "local_port"},
+	"Protocol":        ubx.FieldSpec{WireName: "protocol"},
+	"RemoteIpaddress": ubx.FieldSpec{WireName: "remote_ipaddress"},
+	"RemotePort":      ubx.FieldSpec{WireName: "remote_port"},
+}
 
 var NetworkwatcherPacketCaptureResult_Properties_ScopeFields = ubx.FieldMap{
-		"Exclude": ubx.FieldSpec{WireName: "exclude"},
-		"Include": ubx.FieldSpec{WireName: "include"},
-	}
+	"Exclude": ubx.FieldSpec{WireName: "exclude"},
+	"Include": ubx.FieldSpec{WireName: "include"},
+}
 
 var NetworkwatcherPacketCaptureResult_Properties_StorageLocationFields = ubx.FieldMap{
-		"FilePath": ubx.FieldSpec{WireName: "file_path"},
-		"LocalPath": ubx.FieldSpec{WireName: "local_path"},
-		"StorageId": ubx.FieldSpec{WireName: "storage_id"},
-		"StoragePath": ubx.FieldSpec{WireName: "storage_path"},
-	}
+	"FilePath":    ubx.FieldSpec{WireName: "file_path"},
+	"LocalPath":   ubx.FieldSpec{WireName: "local_path"},
+	"StorageId":   ubx.FieldSpec{WireName: "storage_id"},
+	"StoragePath": ubx.FieldSpec{WireName: "storage_path"},
+}
 
 var NetworkwatcherPacketCaptureResult_PropertiesFields = ubx.FieldMap{
-		"BytesToCapturePerPacket": ubx.FieldSpec{WireName: "bytes_to_capture_per_packet"},
-		"CaptureSettings": ubx.FieldSpec{
-			WireName: "capture_settings",
-			Kind: "object",
-			Fields: NetworkwatcherPacketCaptureResult_Properties_CaptureSettingsFields,
-		},
-		"ContinuousCapture": ubx.FieldSpec{WireName: "continuous_capture"},
-		"Filters": ubx.FieldSpec{
-			WireName: "filters",
-			Kind: "list",
-			Fields: NetworkwatcherPacketCaptureResult_Properties_FiltersFields,
-		},
-		"Scope": ubx.FieldSpec{
-			WireName: "scope",
-			Kind: "object",
-			Fields: NetworkwatcherPacketCaptureResult_Properties_ScopeFields,
-		},
-		"StorageLocation": ubx.FieldSpec{
-			WireName: "storage_location",
-			Kind: "object",
-			Fields: NetworkwatcherPacketCaptureResult_Properties_StorageLocationFields,
-		},
-		"Target": ubx.FieldSpec{WireName: "target"},
-		"TargetType": ubx.FieldSpec{WireName: "target_type"},
-		"TimeLimitInSeconds": ubx.FieldSpec{WireName: "time_limit_in_seconds"},
-		"TotalBytesPerSession": ubx.FieldSpec{WireName: "total_bytes_per_session"},
-	}
+	"BytesToCapturePerPacket": ubx.FieldSpec{WireName: "bytes_to_capture_per_packet"},
+	"CaptureSettings": ubx.FieldSpec{
+		WireName: "capture_settings",
+		Kind:     "object",
+		Fields:   NetworkwatcherPacketCaptureResult_Properties_CaptureSettingsFields,
+	},
+	"ContinuousCapture": ubx.FieldSpec{WireName: "continuous_capture"},
+	"Filters": ubx.FieldSpec{
+		WireName: "filters",
+		Kind:     "list",
+		Fields:   NetworkwatcherPacketCaptureResult_Properties_FiltersFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Scope": ubx.FieldSpec{
+		WireName: "scope",
+		Kind:     "object",
+		Fields:   NetworkwatcherPacketCaptureResult_Properties_ScopeFields,
+	},
+	"StorageLocation": ubx.FieldSpec{
+		WireName: "storage_location",
+		Kind:     "object",
+		Fields:   NetworkwatcherPacketCaptureResult_Properties_StorageLocationFields,
+	},
+	"Target":               ubx.FieldSpec{WireName: "target"},
+	"TargetType":           ubx.FieldSpec{WireName: "target_type"},
+	"TimeLimitInSeconds":   ubx.FieldSpec{WireName: "time_limit_in_seconds"},
+	"TotalBytesPerSession": ubx.FieldSpec{WireName: "total_bytes_per_session"},
+}
 
 type NetworkwatcherPacketCaptureResultConfig struct {
 	// Parameters that define the create packet capture operation.
@@ -137,8 +140,8 @@ var NetworkwatcherPacketCaptureResult = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkwatcherPacketCaptureResult_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkwatcherPacketCaptureResult_PropertiesFields,
 		},
 	},
 }

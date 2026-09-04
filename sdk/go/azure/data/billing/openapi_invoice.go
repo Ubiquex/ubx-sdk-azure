@@ -5,118 +5,118 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiInvoice_Value_Properties_AmountDue struct {
 	Currency any
-	Value any
+	Value    any
 }
 
 type OpenapiInvoice_Value_Properties_Documents struct {
 	DocumentNumbers any
-	ExternalUrl any
-	Kind any
-	Name any
-	Source any
-	Url any
+	ExternalUrl     any
+	Kind            any
+	Name            any
+	Source          any
+	Url             any
 }
 
 type OpenapiInvoice_Value_Properties_FailedPayments struct {
-	Date any
+	Date                any
 	FailedPaymentReason any
 }
 
 type OpenapiInvoice_Value_Properties_Payments struct {
-	Amount any
-	Date any
+	Amount              any
+	Date                any
 	PaymentMethodFamily any
-	PaymentMethodId any
-	PaymentMethodType any
-	PaymentType any
+	PaymentMethodId     any
+	PaymentMethodType   any
+	PaymentType         any
 }
 
 type OpenapiInvoice_Value_Properties_RebillDetails_RebillDetails struct {
 	CreditNoteDocumentId any
-	InvoiceDocumentId any
-	RebillDetails any
+	InvoiceDocumentId    any
+	RebillDetails        any
 }
 
 type OpenapiInvoice_Value_Properties_RebillDetails struct {
 	CreditNoteDocumentId any
-	InvoiceDocumentId any
-	RebillDetails any
+	InvoiceDocumentId    any
+	RebillDetails        any
 }
 
 type OpenapiInvoice_Value_Properties_RefundDetails struct {
-	AmountRefunded any
-	AmountRequested any
-	ApprovedOn any
-	CompletedOn any
-	RebillInvoiceId any
+	AmountRefunded    any
+	AmountRequested   any
+	ApprovedOn        any
+	CompletedOn       any
+	RebillInvoiceId   any
 	RefundOperationId any
-	RefundReason any
-	RefundStatus any
-	RequestedOn any
-	TransactionCount any
+	RefundReason      any
+	RefundStatus      any
+	RequestedOn       any
+	TransactionCount  any
 }
 
 type OpenapiInvoice_Value_Properties struct {
-	AmountDue any
-	AzurePrepaymentApplied any
-	BilledAmount any
-	BilledDocumentId any
+	AmountDue                 any
+	AzurePrepaymentApplied    any
+	BilledAmount              any
+	BilledDocumentId          any
 	BillingProfileDisplayName any
-	BillingProfileId any
-	CreditAmount any
-	CreditForDocumentId any
-	DocumentType any
-	Documents any
-	DueDate any
-	FailedPayments any
-	FreeAzureCreditApplied any
-	InvoiceDate any
-	InvoicePeriodEndDate any
-	InvoicePeriodStartDate any
-	InvoiceType any
-	IsMonthlyInvoice any
-	Payments any
-	PurchaseOrderNumber any
-	RebillDetails any
-	RefundDetails any
-	SpecialTaxationType any
-	Status any
-	SubTotal any
-	SubscriptionDisplayName any
-	SubscriptionId any
-	TaxAmount any
-	TotalAmount any
+	BillingProfileId          any
+	CreditAmount              any
+	CreditForDocumentId       any
+	DocumentType              any
+	Documents                 any
+	DueDate                   any
+	FailedPayments            any
+	FreeAzureCreditApplied    any
+	InvoiceDate               any
+	InvoicePeriodEndDate      any
+	InvoicePeriodStartDate    any
+	InvoiceType               any
+	IsMonthlyInvoice          any
+	Payments                  any
+	PurchaseOrderNumber       any
+	RebillDetails             any
+	RefundDetails             any
+	SpecialTaxationType       any
+	Status                    any
+	SubTotal                  any
+	SubscriptionDisplayName   any
+	SubscriptionId            any
+	TaxAmount                 any
+	TotalAmount               any
 }
 
 type OpenapiInvoice_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiInvoiceConfig struct {
-	Count any
-	Filter any
-	OrderBy any
-	PeriodEndDate any
+	Count           any
+	Filter          any
+	OrderBy         any
+	PeriodEndDate   any
 	PeriodStartDate any
-	Search any
-	Skip any
-	SubscriptionId any
-	Top any
+	Search          any
+	Skip            any
+	SubscriptionId  any
+	Top             any
 }
 
 type OpenapiInvoiceAttrs struct {
-	Count any
+	Count  any
 	Filter any
 	// The link to the next page of items
-	NextLink any
-	OrderBy any
-	PeriodEndDate any
+	NextLink        any
+	OrderBy         any
+	PeriodEndDate   any
 	PeriodStartDate any
-	Search any
-	Skip any
-	SubscriptionId any
-	Top any
+	Search          any
+	Skip            any
+	SubscriptionId  any
+	Top             any
 	// The Invoice items on this page
 	Value any
 }
@@ -124,14 +124,14 @@ type OpenapiInvoiceAttrs struct {
 var OpenapiInvoice = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_invoice",
 	Fields: ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"PeriodEndDate": ubx.FieldSpec{WireName: "period_end_date"},
+		"Count":           ubx.FieldSpec{WireName: "count"},
+		"Filter":          ubx.FieldSpec{WireName: "filter"},
+		"OrderBy":         ubx.FieldSpec{WireName: "order_by"},
+		"PeriodEndDate":   ubx.FieldSpec{WireName: "period_end_date"},
 		"PeriodStartDate": ubx.FieldSpec{WireName: "period_start_date"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Search":          ubx.FieldSpec{WireName: "search"},
+		"Skip":            ubx.FieldSpec{WireName: "skip"},
+		"SubscriptionId":  ubx.FieldSpec{WireName: "subscription_id"},
+		"Top":             ubx.FieldSpec{WireName: "top"},
 	},
 }

@@ -32,8 +32,6 @@ const SqlpoolSqlPoolBlobAuditingPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface SqlpoolSqlPoolBlobAuditingPolicyConfig {
-  /** Resource kind. */
-  kind?: string | Computed<string>;
   /** Properties of a Sql pool blob auditing policy. */
   properties?: SqlpoolSqlPoolBlobAuditingPolicy_Properties | Computed<SqlpoolSqlPoolBlobAuditingPolicy_Properties>;
 }
@@ -48,7 +46,6 @@ export interface SqlpoolSqlPoolBlobAuditingPolicyAttrs {
 export const SqlpoolSqlPoolBlobAuditingPolicy: ResourceBinding<SqlpoolSqlPoolBlobAuditingPolicyConfig, SqlpoolSqlPoolBlobAuditingPolicyAttrs> = {
   wireType: "azure_synapse_sqlpool_sql_pool_blob_auditing_policy",
   fields: {
-    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",

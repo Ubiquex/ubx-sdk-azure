@@ -13819,8 +13819,6 @@ _VirtualnetworkPrivateLinkService_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkPrivateLinkServiceConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
     # Properties of the private link service.
@@ -13838,7 +13836,6 @@ class VirtualnetworkPrivateLinkServiceAttrs:
 VirtualnetworkPrivateLinkService = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_private_link_service",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "extended_location": ubx.FieldSpec(
             wire_name="extended_location",
             kind="object",

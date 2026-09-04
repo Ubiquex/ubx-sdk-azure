@@ -8,18 +8,18 @@ type VirtualNetworkLink_Value_Properties_VirtualNetwork struct {
 }
 
 type VirtualNetworkLink_Value_Properties struct {
-	ProvisioningState any
-	RegistrationEnabled any
-	ResolutionPolicy any
-	VirtualNetwork any
+	ProvisioningState       any
+	RegistrationEnabled     any
+	ResolutionPolicy        any
+	VirtualNetwork          any
 	VirtualNetworkLinkState any
 }
 
 type VirtualNetworkLink_Value struct {
-	Etag any
-	Location any
+	Etag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type VirtualNetworkLinkConfig struct {
@@ -28,7 +28,7 @@ type VirtualNetworkLinkConfig struct {
 
 type VirtualNetworkLinkAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink        any
 	PrivateZoneName any
 	// The VirtualNetworkLink items on this page
 	Value any

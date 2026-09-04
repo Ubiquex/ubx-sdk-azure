@@ -18,18 +18,18 @@ type AccessPolicyAssignment_Properties struct {
 }
 
 var AccessPolicyAssignment_Properties_UserFields = ubx.FieldMap{
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-	}
+	"ObjectId": ubx.FieldSpec{WireName: "object_id"},
+}
 
 var AccessPolicyAssignment_PropertiesFields = ubx.FieldMap{
-		"AccessPolicyName": ubx.FieldSpec{WireName: "access_policy_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"User": ubx.FieldSpec{
-			WireName: "user",
-			Kind: "object",
-			Fields: AccessPolicyAssignment_Properties_UserFields,
-		},
-	}
+	"AccessPolicyName":  ubx.FieldSpec{WireName: "access_policy_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"User": ubx.FieldSpec{
+		WireName: "user",
+		Kind:     "object",
+		Fields:   AccessPolicyAssignment_Properties_UserFields,
+	},
+}
 
 type AccessPolicyAssignmentConfig struct {
 	// Properties of Redis Enterprise database access policy assignment.
@@ -46,8 +46,8 @@ var AccessPolicyAssignment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AccessPolicyAssignment_PropertiesFields,
+			Kind:     "object",
+			Fields:   AccessPolicyAssignment_PropertiesFields,
 		},
 	},
 }

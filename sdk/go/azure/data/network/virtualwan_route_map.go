@@ -4,39 +4,39 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanRouteMap_Value_Properties_Rules_Actions_Parameters struct {
-	AsPath any
-	Community any
+	AsPath      any
+	Community   any
 	RoutePrefix any
 }
 
 type VirtualwanRouteMap_Value_Properties_Rules_Actions struct {
 	Parameters any
-	Type any
+	Type       any
 }
 
 type VirtualwanRouteMap_Value_Properties_Rules_MatchCriteria struct {
-	AsPath any
-	Community any
+	AsPath         any
+	Community      any
 	MatchCondition any
-	RoutePrefix any
+	RoutePrefix    any
 }
 
 type VirtualwanRouteMap_Value_Properties_Rules struct {
-	Actions any
-	MatchCriteria any
-	Name any
+	Actions           any
+	MatchCriteria     any
+	Name              any
 	NextStepIfMatched any
 }
 
 type VirtualwanRouteMap_Value_Properties struct {
-	AssociatedInboundConnections any
+	AssociatedInboundConnections  any
 	AssociatedOutboundConnections any
-	ProvisioningState any
-	Rules any
+	ProvisioningState             any
+	Rules                         any
 }
 
 type VirtualwanRouteMap_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -48,7 +48,7 @@ type VirtualwanRouteMapAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The RouteMap items on this page
-	Value any
+	Value          any
 	VirtualHubName any
 }
 

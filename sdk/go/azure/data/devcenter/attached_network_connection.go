@@ -4,11 +4,11 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AttachedNetworkConnection_Value_Properties struct {
-	DomainJoinType any
-	HealthCheckStatus any
-	NetworkConnectionId any
+	DomainJoinType            any
+	HealthCheckStatus         any
+	NetworkConnectionId       any
 	NetworkConnectionLocation any
-	ProvisioningState any
+	ProvisioningState         any
 }
 
 type AttachedNetworkConnection_Value struct {

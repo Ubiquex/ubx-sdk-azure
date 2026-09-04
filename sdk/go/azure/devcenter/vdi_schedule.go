@@ -9,8 +9,8 @@ type VdiSchedule_Properties struct {
 }
 
 var VdiSchedule_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VdiScheduleConfig struct {
 	// The Schedule properties defining when and what to execute.
@@ -27,8 +27,8 @@ var VdiSchedule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VdiSchedule_PropertiesFields,
+			Kind:     "object",
+			Fields:   VdiSchedule_PropertiesFields,
 		},
 	},
 }

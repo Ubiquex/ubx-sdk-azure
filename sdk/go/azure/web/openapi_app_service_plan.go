@@ -11,7 +11,7 @@ type OpenapiAppServicePlan_ExtendedLocation struct {
 }
 
 type OpenapiAppServicePlan_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -37,11 +37,11 @@ type OpenapiAppServicePlan_Properties_HostingEnvironmentProfile struct {
 
 type OpenapiAppServicePlan_Properties_InstallScripts_Source struct {
 	SourceUri any
-	Type any
+	Type      any
 }
 
 type OpenapiAppServicePlan_Properties_InstallScripts struct {
-	Name any
+	Name   any
 	Source any
 }
 
@@ -52,27 +52,27 @@ type OpenapiAppServicePlan_Properties_Network struct {
 
 type OpenapiAppServicePlan_Properties_PlanDefaultIdentity struct {
 	// Type of managed service identity.
-	IdentityType any
+	IdentityType                   any
 	UserAssignedIdentityResourceId any
 }
 
 type OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReference struct {
 	ReferenceStatus any
-	SecretUri any
+	SecretUri       any
 }
 
 type OpenapiAppServicePlan_Properties_RegistryAdapters struct {
 	KeyVaultSecretReference any
-	RegistryKey any
-	Type any
+	RegistryKey             any
+	Type                    any
 }
 
 type OpenapiAppServicePlan_Properties_StorageMounts struct {
 	CredentialsKeyVaultReference any
-	DestinationPath any
-	Name any
-	Source any
-	Type any
+	DestinationPath              any
+	Name                         any
+	Source                       any
+	Type                         any
 }
 
 type OpenapiAppServicePlan_Properties struct {
@@ -109,7 +109,7 @@ type OpenapiAppServicePlan_Properties struct {
 	// The number of instances that are assigned to this App Service plan.
 	NumberOfWorkers any
 	// If <code>true</code>, apps assigned to this App Service plan can be scaled independently. If <code>false</code>, apps assigned to this App Service plan will scale to all instances of the plan.
-	PerSiteScaling any
+	PerSiteScaling      any
 	PlanDefaultIdentity any
 	// Provisioning state of the App Service Plan.
 	ProvisioningState any
@@ -140,9 +140,9 @@ type OpenapiAppServicePlan_Properties struct {
 }
 
 type OpenapiAppServicePlan_Sku_Capabilities struct {
-	Name any
+	Name   any
 	Reason any
-	Value any
+	Value  any
 }
 
 type OpenapiAppServicePlan_Sku_SkuCapacity struct {
@@ -178,176 +178,176 @@ type OpenapiAppServicePlan_Sku struct {
 }
 
 var OpenapiAppServicePlan_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiAppServicePlan_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiAppServicePlan_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiAppServicePlan_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiAppServicePlan_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiAppServicePlan_Properties_HostingEnvironmentProfileFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiAppServicePlan_Properties_InstallScripts_SourceFields = ubx.FieldMap{
-		"SourceUri": ubx.FieldSpec{WireName: "source_uri"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"SourceUri": ubx.FieldSpec{WireName: "source_uri"},
+	"Type":      ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiAppServicePlan_Properties_InstallScriptsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Source": ubx.FieldSpec{
-			WireName: "source",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_Properties_InstallScripts_SourceFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Source": ubx.FieldSpec{
+		WireName: "source",
+		Kind:     "object",
+		Fields:   OpenapiAppServicePlan_Properties_InstallScripts_SourceFields,
+	},
+}
 
 var OpenapiAppServicePlan_Properties_NetworkFields = ubx.FieldMap{
-		"VirtualNetworkSubnetId": ubx.FieldSpec{WireName: "virtual_network_subnet_id"},
-	}
+	"VirtualNetworkSubnetId": ubx.FieldSpec{WireName: "virtual_network_subnet_id"},
+}
 
 var OpenapiAppServicePlan_Properties_PlanDefaultIdentityFields = ubx.FieldMap{
-		"IdentityType": ubx.FieldSpec{WireName: "identity_type"},
-		"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
-	}
+	"IdentityType":                   ubx.FieldSpec{WireName: "identity_type"},
+	"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
+}
 
 var OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReferenceFields = ubx.FieldMap{
-		"ReferenceStatus": ubx.FieldSpec{WireName: "reference_status"},
-		"SecretUri": ubx.FieldSpec{WireName: "secret_uri"},
-	}
+	"ReferenceStatus": ubx.FieldSpec{WireName: "reference_status"},
+	"SecretUri":       ubx.FieldSpec{WireName: "secret_uri"},
+}
 
 var OpenapiAppServicePlan_Properties_RegistryAdaptersFields = ubx.FieldMap{
-		"KeyVaultSecretReference": ubx.FieldSpec{
-			WireName: "key_vault_secret_reference",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReferenceFields,
-		},
-		"RegistryKey": ubx.FieldSpec{WireName: "registry_key"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"KeyVaultSecretReference": ubx.FieldSpec{
+		WireName: "key_vault_secret_reference",
+		Kind:     "object",
+		Fields:   OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReferenceFields,
+	},
+	"RegistryKey": ubx.FieldSpec{WireName: "registry_key"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiAppServicePlan_Properties_StorageMountsFields = ubx.FieldMap{
-		"CredentialsKeyVaultReference": ubx.FieldSpec{
-			WireName: "credentials_key_vault_reference",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReferenceFields,
-		},
-		"DestinationPath": ubx.FieldSpec{WireName: "destination_path"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"CredentialsKeyVaultReference": ubx.FieldSpec{
+		WireName: "credentials_key_vault_reference",
+		Kind:     "object",
+		Fields:   OpenapiAppServicePlan_Properties_RegistryAdapters_KeyVaultSecretReferenceFields,
+	},
+	"DestinationPath": ubx.FieldSpec{WireName: "destination_path"},
+	"Name":            ubx.FieldSpec{WireName: "name"},
+	"Source":          ubx.FieldSpec{WireName: "source"},
+	"Type":            ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiAppServicePlan_PropertiesFields = ubx.FieldMap{
-		"AsyncScalingEnabled": ubx.FieldSpec{WireName: "async_scaling_enabled"},
-		"ElasticScaleEnabled": ubx.FieldSpec{WireName: "elastic_scale_enabled"},
-		"FreeOfferExpirationTime": ubx.FieldSpec{WireName: "free_offer_expiration_time"},
-		"GeoRegion": ubx.FieldSpec{WireName: "geo_region"},
-		"HostingEnvironmentProfile": ubx.FieldSpec{
-			WireName: "hosting_environment_profile",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_Properties_HostingEnvironmentProfileFields,
-		},
-		"HyperV": ubx.FieldSpec{WireName: "hyper_v"},
-		"InstallScripts": ubx.FieldSpec{
-			WireName: "install_scripts",
-			Kind: "list",
-			Fields: OpenapiAppServicePlan_Properties_InstallScriptsFields,
-		},
-		"IsCustomMode": ubx.FieldSpec{WireName: "is_custom_mode"},
-		"IsSpot": ubx.FieldSpec{WireName: "is_spot"},
-		"IsXenon": ubx.FieldSpec{WireName: "is_xenon"},
-		"KubeEnvironmentProfile": ubx.FieldSpec{
-			WireName: "kube_environment_profile",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_Properties_HostingEnvironmentProfileFields,
-		},
-		"MaximumElasticWorkerCount": ubx.FieldSpec{WireName: "maximum_elastic_worker_count"},
-		"MaximumNumberOfWorkers": ubx.FieldSpec{WireName: "maximum_number_of_workers"},
-		"Network": ubx.FieldSpec{
-			WireName: "network",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_Properties_NetworkFields,
-		},
-		"NumberOfSites": ubx.FieldSpec{WireName: "number_of_sites"},
-		"NumberOfWorkers": ubx.FieldSpec{WireName: "number_of_workers"},
-		"PerSiteScaling": ubx.FieldSpec{WireName: "per_site_scaling"},
-		"PlanDefaultIdentity": ubx.FieldSpec{
-			WireName: "plan_default_identity",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_Properties_PlanDefaultIdentityFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RdpEnabled": ubx.FieldSpec{WireName: "rdp_enabled"},
-		"RegistryAdapters": ubx.FieldSpec{
-			WireName: "registry_adapters",
-			Kind: "list",
-			Fields: OpenapiAppServicePlan_Properties_RegistryAdaptersFields,
-		},
-		"Reserved": ubx.FieldSpec{WireName: "reserved"},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"SpotExpirationTime": ubx.FieldSpec{WireName: "spot_expiration_time"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StorageMounts": ubx.FieldSpec{
-			WireName: "storage_mounts",
-			Kind: "list",
-			Fields: OpenapiAppServicePlan_Properties_StorageMountsFields,
-		},
-		"Subscription": ubx.FieldSpec{WireName: "subscription"},
-		"TargetWorkerCount": ubx.FieldSpec{WireName: "target_worker_count"},
-		"TargetWorkerSizeId": ubx.FieldSpec{WireName: "target_worker_size_id"},
-		"WorkerTierName": ubx.FieldSpec{WireName: "worker_tier_name"},
-		"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
-	}
+	"AsyncScalingEnabled":     ubx.FieldSpec{WireName: "async_scaling_enabled"},
+	"ElasticScaleEnabled":     ubx.FieldSpec{WireName: "elastic_scale_enabled"},
+	"FreeOfferExpirationTime": ubx.FieldSpec{WireName: "free_offer_expiration_time"},
+	"GeoRegion":               ubx.FieldSpec{WireName: "geo_region"},
+	"HostingEnvironmentProfile": ubx.FieldSpec{
+		WireName: "hosting_environment_profile",
+		Kind:     "object",
+		Fields:   OpenapiAppServicePlan_Properties_HostingEnvironmentProfileFields,
+	},
+	"HyperV": ubx.FieldSpec{WireName: "hyper_v"},
+	"InstallScripts": ubx.FieldSpec{
+		WireName: "install_scripts",
+		Kind:     "list",
+		Fields:   OpenapiAppServicePlan_Properties_InstallScriptsFields,
+	},
+	"IsCustomMode": ubx.FieldSpec{WireName: "is_custom_mode"},
+	"IsSpot":       ubx.FieldSpec{WireName: "is_spot"},
+	"IsXenon":      ubx.FieldSpec{WireName: "is_xenon"},
+	"KubeEnvironmentProfile": ubx.FieldSpec{
+		WireName: "kube_environment_profile",
+		Kind:     "object",
+		Fields:   OpenapiAppServicePlan_Properties_HostingEnvironmentProfileFields,
+	},
+	"MaximumElasticWorkerCount": ubx.FieldSpec{WireName: "maximum_elastic_worker_count"},
+	"MaximumNumberOfWorkers":    ubx.FieldSpec{WireName: "maximum_number_of_workers"},
+	"Network": ubx.FieldSpec{
+		WireName: "network",
+		Kind:     "object",
+		Fields:   OpenapiAppServicePlan_Properties_NetworkFields,
+	},
+	"NumberOfSites":   ubx.FieldSpec{WireName: "number_of_sites"},
+	"NumberOfWorkers": ubx.FieldSpec{WireName: "number_of_workers"},
+	"PerSiteScaling":  ubx.FieldSpec{WireName: "per_site_scaling"},
+	"PlanDefaultIdentity": ubx.FieldSpec{
+		WireName: "plan_default_identity",
+		Kind:     "object",
+		Fields:   OpenapiAppServicePlan_Properties_PlanDefaultIdentityFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RdpEnabled":        ubx.FieldSpec{WireName: "rdp_enabled"},
+	"RegistryAdapters": ubx.FieldSpec{
+		WireName: "registry_adapters",
+		Kind:     "list",
+		Fields:   OpenapiAppServicePlan_Properties_RegistryAdaptersFields,
+	},
+	"Reserved":           ubx.FieldSpec{WireName: "reserved"},
+	"ResourceGroup":      ubx.FieldSpec{WireName: "resource_group"},
+	"SpotExpirationTime": ubx.FieldSpec{WireName: "spot_expiration_time"},
+	"Status":             ubx.FieldSpec{WireName: "status"},
+	"StorageMounts": ubx.FieldSpec{
+		WireName: "storage_mounts",
+		Kind:     "list",
+		Fields:   OpenapiAppServicePlan_Properties_StorageMountsFields,
+	},
+	"Subscription":       ubx.FieldSpec{WireName: "subscription"},
+	"TargetWorkerCount":  ubx.FieldSpec{WireName: "target_worker_count"},
+	"TargetWorkerSizeId": ubx.FieldSpec{WireName: "target_worker_size_id"},
+	"WorkerTierName":     ubx.FieldSpec{WireName: "worker_tier_name"},
+	"ZoneRedundant":      ubx.FieldSpec{WireName: "zone_redundant"},
+}
 
 var OpenapiAppServicePlan_Sku_CapabilitiesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Reason": ubx.FieldSpec{WireName: "reason"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Reason": ubx.FieldSpec{WireName: "reason"},
+	"Value":  ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiAppServicePlan_Sku_SkuCapacityFields = ubx.FieldMap{
-		"Default": ubx.FieldSpec{WireName: "default"},
-		"ElasticMaximum": ubx.FieldSpec{WireName: "elastic_maximum"},
-		"Maximum": ubx.FieldSpec{WireName: "maximum"},
-		"Minimum": ubx.FieldSpec{WireName: "minimum"},
-		"ScaleType": ubx.FieldSpec{WireName: "scale_type"},
-	}
+	"Default":        ubx.FieldSpec{WireName: "default"},
+	"ElasticMaximum": ubx.FieldSpec{WireName: "elastic_maximum"},
+	"Maximum":        ubx.FieldSpec{WireName: "maximum"},
+	"Minimum":        ubx.FieldSpec{WireName: "minimum"},
+	"ScaleType":      ubx.FieldSpec{WireName: "scale_type"},
+}
 
 var OpenapiAppServicePlan_SkuFields = ubx.FieldMap{
-		"Capabilities": ubx.FieldSpec{
-			WireName: "capabilities",
-			Kind: "list",
-			Fields: OpenapiAppServicePlan_Sku_CapabilitiesFields,
-		},
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Locations": ubx.FieldSpec{WireName: "locations"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"SkuCapacity": ubx.FieldSpec{
-			WireName: "sku_capacity",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_Sku_SkuCapacityFields,
-		},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capabilities": ubx.FieldSpec{
+		WireName: "capabilities",
+		Kind:     "list",
+		Fields:   OpenapiAppServicePlan_Sku_CapabilitiesFields,
+	},
+	"Capacity":  ubx.FieldSpec{WireName: "capacity"},
+	"Family":    ubx.FieldSpec{WireName: "family"},
+	"Locations": ubx.FieldSpec{WireName: "locations"},
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"Size":      ubx.FieldSpec{WireName: "size"},
+	"SkuCapacity": ubx.FieldSpec{
+		WireName: "sku_capacity",
+		Kind:     "object",
+		Fields:   OpenapiAppServicePlan_Sku_SkuCapacityFields,
+	},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type OpenapiAppServicePlanConfig struct {
 	// Extended Location.
@@ -384,24 +384,24 @@ var OpenapiAppServicePlan = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   OpenapiAppServicePlan_ExtendedLocationFields,
 		},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiAppServicePlan_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAppServicePlan_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiAppServicePlan_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiAppServicePlan_SkuFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

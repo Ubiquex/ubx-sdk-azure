@@ -4,7 +4,7 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMachine_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -21,7 +21,7 @@ type OpenapiMachine_Identity struct {
 
 type OpenapiMachine_Properties_AgentConfiguration_ExtensionsAllowList struct {
 	Publisher any
-	Type any
+	Type      any
 }
 
 type OpenapiMachine_Properties_AgentConfiguration struct {
@@ -75,32 +75,32 @@ type OpenapiMachine_Properties_ErrorDetails_Details_Details struct {
 
 type OpenapiMachine_Properties_ErrorDetails_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type OpenapiMachine_Properties_ErrorDetails struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type OpenapiMachine_Properties_Extensions_Status struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type OpenapiMachine_Properties_Extensions struct {
-	Name any
-	Status any
-	Type any
+	Name               any
+	Status             any
+	Type               any
 	TypeHandlerVersion any
 }
 
@@ -112,7 +112,7 @@ type OpenapiMachine_Properties_FirmwareProfile struct {
 }
 
 type OpenapiMachine_Properties_HardwareProfile_Processors struct {
-	Name any
+	Name          any
 	NumberOfCores any
 }
 
@@ -126,7 +126,7 @@ type OpenapiMachine_Properties_HardwareProfile struct {
 }
 
 type OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetails_VolumeLicenseDetails struct {
-	InvoiceId any
+	InvoiceId   any
 	ProgramYear any
 }
 
@@ -173,12 +173,12 @@ type OpenapiMachine_Properties_LicenseProfile_EsuProfile struct {
 }
 
 type OpenapiMachine_Properties_LicenseProfile_ProductProfile_ProductFeatures struct {
-	BillingEndDate any
-	BillingStartDate any
-	DisenrollmentDate any
-	EnrollmentDate any
-	Error any
-	Name any
+	BillingEndDate     any
+	BillingStartDate   any
+	DisenrollmentDate  any
+	EnrollmentDate     any
+	Error              any
+	Name               any
 	SubscriptionStatus any
 }
 
@@ -214,7 +214,7 @@ type OpenapiMachine_Properties_LicenseProfile struct {
 	// The license status.
 	LicenseStatus any
 	// Describes the properties of a Product License Profile ARM model.
-	ProductProfile any
+	ProductProfile    any
 	SoftwareAssurance any
 }
 
@@ -234,16 +234,16 @@ type OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses_Subn
 }
 
 type OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses struct {
-	Address any
+	Address          any
 	IpAddressVersion any
-	Subnet any
+	Subnet           any
 }
 
 type OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces struct {
-	Id any
+	Id          any
 	IpAddresses any
-	MacAddress any
-	Name any
+	MacAddress  any
+	Name        any
 }
 
 type OpenapiMachine_Properties_NetworkProfile struct {
@@ -298,12 +298,12 @@ type OpenapiMachine_Properties_ServiceStatuses struct {
 }
 
 type OpenapiMachine_Properties_StorageProfile_Disks struct {
-	DiskType any
-	GeneratedId any
-	Id any
-	MaxSizeInBytes any
-	Name any
-	Path any
+	DiskType         any
+	GeneratedId      any
+	Id               any
+	MaxSizeInBytes   any
+	Name             any
+	Path             any
 	UsedSpaceInBytes any
 }
 
@@ -393,15 +393,15 @@ type OpenapiMachine_Properties struct {
 
 type OpenapiMachine_Resources_Properties struct {
 	AutoUpgradeMinorVersion any
-	EnableAutomaticUpgrade any
-	ForceUpdateTag any
-	InstanceView any
-	ProtectedSettings any
-	ProvisioningState any
-	Publisher any
-	Settings any
-	Type any
-	TypeHandlerVersion any
+	EnableAutomaticUpgrade  any
+	ForceUpdateTag          any
+	InstanceView            any
+	ProtectedSettings       any
+	ProvisioningState       any
+	Publisher               any
+	Settings                any
+	Type                    any
+	TypeHandlerVersion      any
 }
 
 type OpenapiMachine_Resources struct {
@@ -409,478 +409,452 @@ type OpenapiMachine_Resources struct {
 }
 
 var OpenapiMachine_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiMachine_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiMachine_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiMachine_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiMachine_Properties_AgentConfiguration_ExtensionsAllowListFields = ubx.FieldMap{
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Publisher": ubx.FieldSpec{WireName: "publisher"},
+	"Type":      ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiMachine_Properties_AgentConfigurationFields = ubx.FieldMap{
-		"ConfigMode": ubx.FieldSpec{WireName: "config_mode"},
-		"ExtensionsAllowList": ubx.FieldSpec{
-			WireName: "extensions_allow_list",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_AgentConfiguration_ExtensionsAllowListFields,
-		},
-		"ExtensionsBlockList": ubx.FieldSpec{
-			WireName: "extensions_block_list",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_AgentConfiguration_ExtensionsAllowListFields,
-		},
-		"ExtensionsEnabled": ubx.FieldSpec{WireName: "extensions_enabled"},
-		"GuestConfigurationEnabled": ubx.FieldSpec{WireName: "guest_configuration_enabled"},
-		"IncomingConnectionsPorts": ubx.FieldSpec{WireName: "incoming_connections_ports"},
-		"ProxyBypass": ubx.FieldSpec{WireName: "proxy_bypass"},
-		"ProxyUrl": ubx.FieldSpec{WireName: "proxy_url"},
-	}
+	"ConfigMode": ubx.FieldSpec{WireName: "config_mode"},
+	"ExtensionsAllowList": ubx.FieldSpec{
+		WireName: "extensions_allow_list",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_AgentConfiguration_ExtensionsAllowListFields,
+	},
+	"ExtensionsBlockList": ubx.FieldSpec{
+		WireName: "extensions_block_list",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_AgentConfiguration_ExtensionsAllowListFields,
+	},
+	"ExtensionsEnabled":         ubx.FieldSpec{WireName: "extensions_enabled"},
+	"GuestConfigurationEnabled": ubx.FieldSpec{WireName: "guest_configuration_enabled"},
+	"IncomingConnectionsPorts":  ubx.FieldSpec{WireName: "incoming_connections_ports"},
+	"ProxyBypass":               ubx.FieldSpec{WireName: "proxy_bypass"},
+	"ProxyUrl":                  ubx.FieldSpec{WireName: "proxy_url"},
+}
 
 var OpenapiMachine_Properties_AgentUpgradeFields = ubx.FieldMap{
-		"CorrelationId": ubx.FieldSpec{WireName: "correlation_id"},
-		"DesiredVersion": ubx.FieldSpec{WireName: "desired_version"},
-		"EnableAutomaticUpgrade": ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
-		"LastAttemptDesiredVersion": ubx.FieldSpec{WireName: "last_attempt_desired_version"},
-		"LastAttemptMessage": ubx.FieldSpec{WireName: "last_attempt_message"},
-		"LastAttemptStatus": ubx.FieldSpec{WireName: "last_attempt_status"},
-		"LastAttemptTimestamp": ubx.FieldSpec{WireName: "last_attempt_timestamp"},
-	}
+	"CorrelationId":             ubx.FieldSpec{WireName: "correlation_id"},
+	"DesiredVersion":            ubx.FieldSpec{WireName: "desired_version"},
+	"EnableAutomaticUpgrade":    ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
+	"LastAttemptDesiredVersion": ubx.FieldSpec{WireName: "last_attempt_desired_version"},
+	"LastAttemptMessage":        ubx.FieldSpec{WireName: "last_attempt_message"},
+	"LastAttemptStatus":         ubx.FieldSpec{WireName: "last_attempt_status"},
+	"LastAttemptTimestamp":      ubx.FieldSpec{WireName: "last_attempt_timestamp"},
+}
 
 var OpenapiMachine_Properties_CloudMetadataFields = ubx.FieldMap{
-		"Provider": ubx.FieldSpec{WireName: "provider"},
-	}
+	"Provider": ubx.FieldSpec{WireName: "provider"},
+}
 
 var OpenapiMachine_Properties_ErrorDetails_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
-var OpenapiMachine_Properties_ErrorDetails_Details_DetailsFields = ubx.FieldMap{
-	}
+var OpenapiMachine_Properties_ErrorDetails_Details_DetailsFields = ubx.FieldMap{}
 
 var OpenapiMachine_Properties_ErrorDetails_DetailsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_ErrorDetails_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_ErrorDetails_Details_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_ErrorDetails_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_ErrorDetails_Details_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var OpenapiMachine_Properties_ErrorDetailsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_ErrorDetails_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_ErrorDetails_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_ErrorDetails_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_ErrorDetails_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var OpenapiMachine_Properties_Extensions_StatusFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var OpenapiMachine_Properties_ExtensionsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_Extensions_StatusFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_Extensions_StatusFields,
+	},
+	"Type":               ubx.FieldSpec{WireName: "type"},
+	"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
+}
 
 var OpenapiMachine_Properties_FirmwareProfileFields = ubx.FieldMap{
-		"SerialNumber": ubx.FieldSpec{WireName: "serial_number"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"SerialNumber": ubx.FieldSpec{WireName: "serial_number"},
+	"Type":         ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiMachine_Properties_HardwareProfile_ProcessorsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NumberOfCores": ubx.FieldSpec{WireName: "number_of_cores"},
-	}
+	"Name":          ubx.FieldSpec{WireName: "name"},
+	"NumberOfCores": ubx.FieldSpec{WireName: "number_of_cores"},
+}
 
 var OpenapiMachine_Properties_HardwareProfileFields = ubx.FieldMap{
-		"NumberOfCpuSockets": ubx.FieldSpec{WireName: "number_of_cpu_sockets"},
-		"Processors": ubx.FieldSpec{
-			WireName: "processors",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_HardwareProfile_ProcessorsFields,
-		},
-		"TotalPhysicalMemoryInBytes": ubx.FieldSpec{WireName: "total_physical_memory_in_bytes"},
-	}
+	"NumberOfCpuSockets": ubx.FieldSpec{WireName: "number_of_cpu_sockets"},
+	"Processors": ubx.FieldSpec{
+		WireName: "processors",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_HardwareProfile_ProcessorsFields,
+	},
+	"TotalPhysicalMemoryInBytes": ubx.FieldSpec{WireName: "total_physical_memory_in_bytes"},
+}
 
 var OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetails_VolumeLicenseDetailsFields = ubx.FieldMap{
-		"InvoiceId": ubx.FieldSpec{WireName: "invoice_id"},
-		"ProgramYear": ubx.FieldSpec{WireName: "program_year"},
-	}
+	"InvoiceId":   ubx.FieldSpec{WireName: "invoice_id"},
+	"ProgramYear": ubx.FieldSpec{WireName: "program_year"},
+}
 
 var OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetailsFields = ubx.FieldMap{
-		"AssignedLicenses": ubx.FieldSpec{WireName: "assigned_licenses"},
-		"Edition": ubx.FieldSpec{WireName: "edition"},
-		"ImmutableId": ubx.FieldSpec{WireName: "immutable_id"},
-		"Processors": ubx.FieldSpec{WireName: "processors"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"VolumeLicenseDetails": ubx.FieldSpec{
-			WireName: "volume_license_details",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetails_VolumeLicenseDetailsFields,
-		},
-	}
+	"AssignedLicenses": ubx.FieldSpec{WireName: "assigned_licenses"},
+	"Edition":          ubx.FieldSpec{WireName: "edition"},
+	"ImmutableId":      ubx.FieldSpec{WireName: "immutable_id"},
+	"Processors":       ubx.FieldSpec{WireName: "processors"},
+	"State":            ubx.FieldSpec{WireName: "state"},
+	"Target":           ubx.FieldSpec{WireName: "target"},
+	"Type":             ubx.FieldSpec{WireName: "type"},
+	"VolumeLicenseDetails": ubx.FieldSpec{
+		WireName: "volume_license_details",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetails_VolumeLicenseDetailsFields,
+	},
+}
 
 var OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_PropertiesFields = ubx.FieldMap{
-		"LicenseDetails": ubx.FieldSpec{
-			WireName: "license_details",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetailsFields,
-		},
-		"LicenseType": ubx.FieldSpec{WireName: "license_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"LicenseDetails": ubx.FieldSpec{
+		WireName: "license_details",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetailsFields,
+	},
+	"LicenseType":       ubx.FieldSpec{WireName: "license_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"TenantId":          ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicenseFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicense_PropertiesFields,
+	},
+}
 
 var OpenapiMachine_Properties_LicenseProfile_EsuProfileFields = ubx.FieldMap{
-		"AssignedLicense": ubx.FieldSpec{
-			WireName: "assigned_license",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicenseFields,
-		},
-		"LicenseAssignmentState": ubx.FieldSpec{WireName: "license_assignment_state"},
-	}
+	"AssignedLicense": ubx.FieldSpec{
+		WireName: "assigned_license",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_LicenseProfile_EsuProfile_AssignedLicenseFields,
+	},
+	"LicenseAssignmentState": ubx.FieldSpec{WireName: "license_assignment_state"},
+}
 
 var OpenapiMachine_Properties_LicenseProfile_ProductProfile_ProductFeaturesFields = ubx.FieldMap{
-		"BillingEndDate": ubx.FieldSpec{WireName: "billing_end_date"},
-		"BillingStartDate": ubx.FieldSpec{WireName: "billing_start_date"},
-		"DisenrollmentDate": ubx.FieldSpec{WireName: "disenrollment_date"},
-		"EnrollmentDate": ubx.FieldSpec{WireName: "enrollment_date"},
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_ErrorDetailsFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SubscriptionStatus": ubx.FieldSpec{WireName: "subscription_status"},
-	}
+	"BillingEndDate":    ubx.FieldSpec{WireName: "billing_end_date"},
+	"BillingStartDate":  ubx.FieldSpec{WireName: "billing_start_date"},
+	"DisenrollmentDate": ubx.FieldSpec{WireName: "disenrollment_date"},
+	"EnrollmentDate":    ubx.FieldSpec{WireName: "enrollment_date"},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_ErrorDetailsFields,
+	},
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"SubscriptionStatus": ubx.FieldSpec{WireName: "subscription_status"},
+}
 
 var OpenapiMachine_Properties_LicenseProfile_ProductProfileFields = ubx.FieldMap{
-		"BillingEndDate": ubx.FieldSpec{WireName: "billing_end_date"},
-		"BillingStartDate": ubx.FieldSpec{WireName: "billing_start_date"},
-		"DisenrollmentDate": ubx.FieldSpec{WireName: "disenrollment_date"},
-		"EnrollmentDate": ubx.FieldSpec{WireName: "enrollment_date"},
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_ErrorDetailsFields,
-		},
-		"ProductFeatures": ubx.FieldSpec{
-			WireName: "product_features",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_LicenseProfile_ProductProfile_ProductFeaturesFields,
-		},
-		"ProductType": ubx.FieldSpec{WireName: "product_type"},
-		"SubscriptionStatus": ubx.FieldSpec{WireName: "subscription_status"},
-	}
+	"BillingEndDate":    ubx.FieldSpec{WireName: "billing_end_date"},
+	"BillingStartDate":  ubx.FieldSpec{WireName: "billing_start_date"},
+	"DisenrollmentDate": ubx.FieldSpec{WireName: "disenrollment_date"},
+	"EnrollmentDate":    ubx.FieldSpec{WireName: "enrollment_date"},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_ErrorDetailsFields,
+	},
+	"ProductFeatures": ubx.FieldSpec{
+		WireName: "product_features",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_LicenseProfile_ProductProfile_ProductFeaturesFields,
+	},
+	"ProductType":        ubx.FieldSpec{WireName: "product_type"},
+	"SubscriptionStatus": ubx.FieldSpec{WireName: "subscription_status"},
+}
 
 var OpenapiMachine_Properties_LicenseProfile_SoftwareAssuranceFields = ubx.FieldMap{
-		"SoftwareAssuranceCustomer": ubx.FieldSpec{WireName: "software_assurance_customer"},
-	}
+	"SoftwareAssuranceCustomer": ubx.FieldSpec{WireName: "software_assurance_customer"},
+}
 
 var OpenapiMachine_Properties_LicenseProfileFields = ubx.FieldMap{
-		"EsuProfile": ubx.FieldSpec{
-			WireName: "esu_profile",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_LicenseProfile_EsuProfileFields,
-		},
-		"LicenseChannel": ubx.FieldSpec{WireName: "license_channel"},
-		"LicenseStatus": ubx.FieldSpec{WireName: "license_status"},
-		"ProductProfile": ubx.FieldSpec{
-			WireName: "product_profile",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_LicenseProfile_ProductProfileFields,
-		},
-		"SoftwareAssurance": ubx.FieldSpec{
-			WireName: "software_assurance",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_LicenseProfile_SoftwareAssuranceFields,
-		},
-	}
+	"EsuProfile": ubx.FieldSpec{
+		WireName: "esu_profile",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_LicenseProfile_EsuProfileFields,
+	},
+	"LicenseChannel": ubx.FieldSpec{WireName: "license_channel"},
+	"LicenseStatus":  ubx.FieldSpec{WireName: "license_status"},
+	"ProductProfile": ubx.FieldSpec{
+		WireName: "product_profile",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_LicenseProfile_ProductProfileFields,
+	},
+	"SoftwareAssurance": ubx.FieldSpec{
+		WireName: "software_assurance",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_LicenseProfile_SoftwareAssuranceFields,
+	},
+}
 
 var OpenapiMachine_Properties_LocationDataFields = ubx.FieldMap{
-		"City": ubx.FieldSpec{WireName: "city"},
-		"CountryOrRegion": ubx.FieldSpec{WireName: "country_or_region"},
-		"District": ubx.FieldSpec{WireName: "district"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"City":            ubx.FieldSpec{WireName: "city"},
+	"CountryOrRegion": ubx.FieldSpec{WireName: "country_or_region"},
+	"District":        ubx.FieldSpec{WireName: "district"},
+	"Name":            ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses_SubnetFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-	}
+	"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
+}
 
 var OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddressesFields = ubx.FieldMap{
-		"Address": ubx.FieldSpec{WireName: "address"},
-		"IpAddressVersion": ubx.FieldSpec{WireName: "ip_address_version"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses_SubnetFields,
-		},
-	}
+	"Address":          ubx.FieldSpec{WireName: "address"},
+	"IpAddressVersion": ubx.FieldSpec{WireName: "ip_address_version"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddresses_SubnetFields,
+	},
+}
 
 var OpenapiMachine_Properties_NetworkProfile_NetworkInterfacesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"IpAddresses": ubx.FieldSpec{
-			WireName: "ip_addresses",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddressesFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+	"IpAddresses": ubx.FieldSpec{
+		WireName: "ip_addresses",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_NetworkProfile_NetworkInterfaces_IpAddressesFields,
+	},
+	"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
+	"Name":       ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiMachine_Properties_NetworkProfileFields = ubx.FieldMap{
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_NetworkProfile_NetworkInterfacesFields,
-		},
-	}
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_NetworkProfile_NetworkInterfacesFields,
+	},
+}
 
 var OpenapiMachine_Properties_OsProfile_LinuxConfiguration_PatchSettings_StatusFields = ubx.FieldMap{
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_ErrorDetailsFields,
-		},
-		"HotpatchEnablementStatus": ubx.FieldSpec{WireName: "hotpatch_enablement_status"},
-	}
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_ErrorDetailsFields,
+	},
+	"HotpatchEnablementStatus": ubx.FieldSpec{WireName: "hotpatch_enablement_status"},
+}
 
 var OpenapiMachine_Properties_OsProfile_LinuxConfiguration_PatchSettingsFields = ubx.FieldMap{
-		"AssessmentMode": ubx.FieldSpec{WireName: "assessment_mode"},
-		"EnableHotpatching": ubx.FieldSpec{WireName: "enable_hotpatching"},
-		"PatchMode": ubx.FieldSpec{WireName: "patch_mode"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_OsProfile_LinuxConfiguration_PatchSettings_StatusFields,
-		},
-	}
+	"AssessmentMode":    ubx.FieldSpec{WireName: "assessment_mode"},
+	"EnableHotpatching": ubx.FieldSpec{WireName: "enable_hotpatching"},
+	"PatchMode":         ubx.FieldSpec{WireName: "patch_mode"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_OsProfile_LinuxConfiguration_PatchSettings_StatusFields,
+	},
+}
 
 var OpenapiMachine_Properties_OsProfile_LinuxConfigurationFields = ubx.FieldMap{
-		"PatchSettings": ubx.FieldSpec{
-			WireName: "patch_settings",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_OsProfile_LinuxConfiguration_PatchSettingsFields,
-		},
-	}
+	"PatchSettings": ubx.FieldSpec{
+		WireName: "patch_settings",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_OsProfile_LinuxConfiguration_PatchSettingsFields,
+	},
+}
 
 var OpenapiMachine_Properties_OsProfileFields = ubx.FieldMap{
-		"ComputerName": ubx.FieldSpec{WireName: "computer_name"},
-		"LinuxConfiguration": ubx.FieldSpec{
-			WireName: "linux_configuration",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_OsProfile_LinuxConfigurationFields,
-		},
-		"WindowsConfiguration": ubx.FieldSpec{
-			WireName: "windows_configuration",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_OsProfile_LinuxConfigurationFields,
-		},
-	}
+	"ComputerName": ubx.FieldSpec{WireName: "computer_name"},
+	"LinuxConfiguration": ubx.FieldSpec{
+		WireName: "linux_configuration",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_OsProfile_LinuxConfigurationFields,
+	},
+	"WindowsConfiguration": ubx.FieldSpec{
+		WireName: "windows_configuration",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_OsProfile_LinuxConfigurationFields,
+	},
+}
 
 var OpenapiMachine_Properties_ServiceStatuses_ExtensionServiceFields = ubx.FieldMap{
-		"StartupType": ubx.FieldSpec{WireName: "startup_type"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"StartupType": ubx.FieldSpec{WireName: "startup_type"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiMachine_Properties_ServiceStatusesFields = ubx.FieldMap{
-		"ExtensionService": ubx.FieldSpec{
-			WireName: "extension_service",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_ServiceStatuses_ExtensionServiceFields,
-		},
-		"GuestConfigurationService": ubx.FieldSpec{
-			WireName: "guest_configuration_service",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_ServiceStatuses_ExtensionServiceFields,
-		},
-	}
+	"ExtensionService": ubx.FieldSpec{
+		WireName: "extension_service",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_ServiceStatuses_ExtensionServiceFields,
+	},
+	"GuestConfigurationService": ubx.FieldSpec{
+		WireName: "guest_configuration_service",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_ServiceStatuses_ExtensionServiceFields,
+	},
+}
 
 var OpenapiMachine_Properties_StorageProfile_DisksFields = ubx.FieldMap{
-		"DiskType": ubx.FieldSpec{WireName: "disk_type"},
-		"GeneratedId": ubx.FieldSpec{WireName: "generated_id"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"MaxSizeInBytes": ubx.FieldSpec{WireName: "max_size_in_bytes"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"UsedSpaceInBytes": ubx.FieldSpec{WireName: "used_space_in_bytes"},
-	}
+	"DiskType":         ubx.FieldSpec{WireName: "disk_type"},
+	"GeneratedId":      ubx.FieldSpec{WireName: "generated_id"},
+	"Id":               ubx.FieldSpec{WireName: "id"},
+	"MaxSizeInBytes":   ubx.FieldSpec{WireName: "max_size_in_bytes"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+	"Path":             ubx.FieldSpec{WireName: "path"},
+	"UsedSpaceInBytes": ubx.FieldSpec{WireName: "used_space_in_bytes"},
+}
 
 var OpenapiMachine_Properties_StorageProfileFields = ubx.FieldMap{
-		"Disks": ubx.FieldSpec{
-			WireName: "disks",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_StorageProfile_DisksFields,
-		},
-	}
+	"Disks": ubx.FieldSpec{
+		WireName: "disks",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_StorageProfile_DisksFields,
+	},
+}
 
 var OpenapiMachine_PropertiesFields = ubx.FieldMap{
-		"AdFqdn": ubx.FieldSpec{WireName: "ad_fqdn"},
-		"AgentConfiguration": ubx.FieldSpec{
-			WireName: "agent_configuration",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_AgentConfigurationFields,
-		},
-		"AgentUpgrade": ubx.FieldSpec{
-			WireName: "agent_upgrade",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_AgentUpgradeFields,
-		},
-		"AgentVersion": ubx.FieldSpec{WireName: "agent_version"},
-		"ClientPublicKey": ubx.FieldSpec{WireName: "client_public_key"},
-		"CloudMetadata": ubx.FieldSpec{
-			WireName: "cloud_metadata",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_CloudMetadataFields,
-		},
-		"DetectedProperties": ubx.FieldSpec{WireName: "detected_properties"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"DnsFqdn": ubx.FieldSpec{WireName: "dns_fqdn"},
-		"DomainName": ubx.FieldSpec{WireName: "domain_name"},
-		"ErrorDetails": ubx.FieldSpec{
-			WireName: "error_details",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_ErrorDetailsFields,
-		},
-		"Extensions": ubx.FieldSpec{
-			WireName: "extensions",
-			Kind: "list",
-			Fields: OpenapiMachine_Properties_ExtensionsFields,
-		},
-		"FirmwareProfile": ubx.FieldSpec{
-			WireName: "firmware_profile",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_FirmwareProfileFields,
-		},
-		"HardwareProfile": ubx.FieldSpec{
-			WireName: "hardware_profile",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_HardwareProfileFields,
-		},
-		"HardwareResourceId": ubx.FieldSpec{WireName: "hardware_resource_id"},
-		"IdentityKeyStore": ubx.FieldSpec{WireName: "identity_key_store"},
-		"LastStatusChange": ubx.FieldSpec{WireName: "last_status_change"},
-		"LicenseProfile": ubx.FieldSpec{
-			WireName: "license_profile",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_LicenseProfileFields,
-		},
-		"LocationData": ubx.FieldSpec{
-			WireName: "location_data",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_LocationDataFields,
-		},
-		"MachineFqdn": ubx.FieldSpec{WireName: "machine_fqdn"},
-		"MssqlDiscovered": ubx.FieldSpec{WireName: "mssql_discovered"},
-		"NetworkProfile": ubx.FieldSpec{
-			WireName: "network_profile",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_NetworkProfileFields,
-		},
-		"OsEdition": ubx.FieldSpec{WireName: "os_edition"},
-		"OsName": ubx.FieldSpec{WireName: "os_name"},
-		"OsProfile": ubx.FieldSpec{
-			WireName: "os_profile",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_OsProfileFields,
-		},
-		"OsSku": ubx.FieldSpec{WireName: "os_sku"},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-		"OsVersion": ubx.FieldSpec{WireName: "os_version"},
-		"ParentClusterResourceId": ubx.FieldSpec{WireName: "parent_cluster_resource_id"},
-		"PrivateLinkScopeResourceId": ubx.FieldSpec{WireName: "private_link_scope_resource_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServiceStatuses": ubx.FieldSpec{
-			WireName: "service_statuses",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_ServiceStatusesFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StatusReason": ubx.FieldSpec{WireName: "status_reason"},
-		"StorageProfile": ubx.FieldSpec{
-			WireName: "storage_profile",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_StorageProfileFields,
-		},
-		"TpmEkCertificate": ubx.FieldSpec{WireName: "tpm_ek_certificate"},
-		"VmId": ubx.FieldSpec{WireName: "vm_id"},
-		"VmUuid": ubx.FieldSpec{WireName: "vm_uuid"},
-	}
-
-var OpenapiMachine_Resources_PropertiesFields = ubx.FieldMap{
-		"AutoUpgradeMinorVersion": ubx.FieldSpec{WireName: "auto_upgrade_minor_version"},
-		"EnableAutomaticUpgrade": ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
-		"ForceUpdateTag": ubx.FieldSpec{WireName: "force_update_tag"},
-		"InstanceView": ubx.FieldSpec{
-			WireName: "instance_view",
-			Kind: "object",
-			Fields: OpenapiMachine_Properties_ExtensionsFields,
-		},
-		"ProtectedSettings": ubx.FieldSpec{WireName: "protected_settings"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Settings": ubx.FieldSpec{WireName: "settings"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-	}
-
-var OpenapiMachine_ResourcesFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiMachine_Resources_PropertiesFields,
-		},
-	}
+	"AdFqdn": ubx.FieldSpec{WireName: "ad_fqdn"},
+	"AgentConfiguration": ubx.FieldSpec{
+		WireName: "agent_configuration",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_AgentConfigurationFields,
+	},
+	"AgentUpgrade": ubx.FieldSpec{
+		WireName: "agent_upgrade",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_AgentUpgradeFields,
+	},
+	"AgentVersion":    ubx.FieldSpec{WireName: "agent_version"},
+	"ClientPublicKey": ubx.FieldSpec{WireName: "client_public_key"},
+	"CloudMetadata": ubx.FieldSpec{
+		WireName: "cloud_metadata",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_CloudMetadataFields,
+	},
+	"DetectedProperties": ubx.FieldSpec{WireName: "detected_properties"},
+	"DisplayName":        ubx.FieldSpec{WireName: "display_name"},
+	"DnsFqdn":            ubx.FieldSpec{WireName: "dns_fqdn"},
+	"DomainName":         ubx.FieldSpec{WireName: "domain_name"},
+	"ErrorDetails": ubx.FieldSpec{
+		WireName: "error_details",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_ErrorDetailsFields,
+	},
+	"Extensions": ubx.FieldSpec{
+		WireName: "extensions",
+		Kind:     "list",
+		Fields:   OpenapiMachine_Properties_ExtensionsFields,
+	},
+	"FirmwareProfile": ubx.FieldSpec{
+		WireName: "firmware_profile",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_FirmwareProfileFields,
+	},
+	"HardwareProfile": ubx.FieldSpec{
+		WireName: "hardware_profile",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_HardwareProfileFields,
+	},
+	"HardwareResourceId": ubx.FieldSpec{WireName: "hardware_resource_id"},
+	"IdentityKeyStore":   ubx.FieldSpec{WireName: "identity_key_store"},
+	"LastStatusChange":   ubx.FieldSpec{WireName: "last_status_change"},
+	"LicenseProfile": ubx.FieldSpec{
+		WireName: "license_profile",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_LicenseProfileFields,
+	},
+	"LocationData": ubx.FieldSpec{
+		WireName: "location_data",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_LocationDataFields,
+	},
+	"MachineFqdn":     ubx.FieldSpec{WireName: "machine_fqdn"},
+	"MssqlDiscovered": ubx.FieldSpec{WireName: "mssql_discovered"},
+	"NetworkProfile": ubx.FieldSpec{
+		WireName: "network_profile",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_NetworkProfileFields,
+	},
+	"OsEdition": ubx.FieldSpec{WireName: "os_edition"},
+	"OsName":    ubx.FieldSpec{WireName: "os_name"},
+	"OsProfile": ubx.FieldSpec{
+		WireName: "os_profile",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_OsProfileFields,
+	},
+	"OsSku":                      ubx.FieldSpec{WireName: "os_sku"},
+	"OsType":                     ubx.FieldSpec{WireName: "os_type"},
+	"OsVersion":                  ubx.FieldSpec{WireName: "os_version"},
+	"ParentClusterResourceId":    ubx.FieldSpec{WireName: "parent_cluster_resource_id"},
+	"PrivateLinkScopeResourceId": ubx.FieldSpec{WireName: "private_link_scope_resource_id"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServiceStatuses": ubx.FieldSpec{
+		WireName: "service_statuses",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_ServiceStatusesFields,
+	},
+	"Status":       ubx.FieldSpec{WireName: "status"},
+	"StatusReason": ubx.FieldSpec{WireName: "status_reason"},
+	"StorageProfile": ubx.FieldSpec{
+		WireName: "storage_profile",
+		Kind:     "object",
+		Fields:   OpenapiMachine_Properties_StorageProfileFields,
+	},
+	"TpmEkCertificate": ubx.FieldSpec{WireName: "tpm_ek_certificate"},
+	"VmId":             ubx.FieldSpec{WireName: "vm_id"},
+	"VmUuid":           ubx.FieldSpec{WireName: "vm_uuid"},
+}
 
 type OpenapiMachineConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -889,8 +863,6 @@ type OpenapiMachineConfig struct {
 	Kind any
 	// Describes the properties of a hybrid machine.
 	Properties any
-	// The list of extensions affiliated to the machine
-	Resources any
 }
 
 type OpenapiMachineAttrs struct {
@@ -909,19 +881,14 @@ var OpenapiMachine = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiMachine_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiMachine_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiMachine_PropertiesFields,
-		},
-		"Resources": ubx.FieldSpec{
-			WireName: "resources",
-			Kind: "list",
-			Fields: OpenapiMachine_ResourcesFields,
+			Kind:     "object",
+			Fields:   OpenapiMachine_PropertiesFields,
 		},
 	},
 }

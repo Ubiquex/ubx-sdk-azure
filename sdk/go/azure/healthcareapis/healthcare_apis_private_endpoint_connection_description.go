@@ -42,28 +42,28 @@ type HealthcareApisPrivateEndpointConnectionDescription_SystemData struct {
 }
 
 var HealthcareApisPrivateEndpointConnectionDescription_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var HealthcareApisPrivateEndpointConnectionDescription_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var HealthcareApisPrivateEndpointConnectionDescription_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: HealthcareApisPrivateEndpointConnectionDescription_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: HealthcareApisPrivateEndpointConnectionDescription_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   HealthcareApisPrivateEndpointConnectionDescription_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   HealthcareApisPrivateEndpointConnectionDescription_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type HealthcareApisPrivateEndpointConnectionDescriptionConfig struct {
 	// Properties of the PrivateEndpointConnectProperties.
@@ -82,8 +82,8 @@ var HealthcareApisPrivateEndpointConnectionDescription = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HealthcareApisPrivateEndpointConnectionDescription_PropertiesFields,
+			Kind:     "object",
+			Fields:   HealthcareApisPrivateEndpointConnectionDescription_PropertiesFields,
 		},
 	},
 }

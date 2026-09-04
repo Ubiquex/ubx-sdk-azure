@@ -4,12 +4,12 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceVaultSetting_Value_Properties struct {
-	MigrationSolutionId any
+	MigrationSolutionId       any
 	VmwareToAzureProviderType any
 }
 
 type ServiceVaultSetting_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -19,7 +19,7 @@ type ServiceVaultSettingConfig struct {
 
 type ServiceVaultSettingAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The VaultSetting items on this page
 	Value any

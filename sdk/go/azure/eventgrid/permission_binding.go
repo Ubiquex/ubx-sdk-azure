@@ -32,27 +32,16 @@ type PermissionBinding_SystemData struct {
 }
 
 var PermissionBinding_PropertiesFields = ubx.FieldMap{
-		"ClientGroupName": ubx.FieldSpec{WireName: "client_group_name"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Permission": ubx.FieldSpec{WireName: "permission"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TopicSpaceName": ubx.FieldSpec{WireName: "topic_space_name"},
-	}
-
-var PermissionBinding_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"ClientGroupName":   ubx.FieldSpec{WireName: "client_group_name"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"Permission":        ubx.FieldSpec{WireName: "permission"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"TopicSpaceName":    ubx.FieldSpec{WireName: "topic_space_name"},
+}
 
 type PermissionBindingConfig struct {
 	// The properties of permission binding.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type PermissionBindingAttrs struct {
@@ -67,13 +56,8 @@ var PermissionBinding = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PermissionBinding_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: PermissionBinding_SystemDataFields,
+			Kind:     "object",
+			Fields:   PermissionBinding_PropertiesFields,
 		},
 	},
 }

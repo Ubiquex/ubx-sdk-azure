@@ -13,10 +13,10 @@ type ManagedclustersTrustedAccessRoleBinding_Properties struct {
 }
 
 var ManagedclustersTrustedAccessRoleBinding_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Roles": ubx.FieldSpec{WireName: "roles"},
-		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Roles":             ubx.FieldSpec{WireName: "roles"},
+	"SourceResourceId":  ubx.FieldSpec{WireName: "source_resource_id"},
+}
 
 type ManagedclustersTrustedAccessRoleBindingConfig struct {
 	// Properties for trusted access role binding
@@ -33,8 +33,8 @@ var ManagedclustersTrustedAccessRoleBinding = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedclustersTrustedAccessRoleBinding_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedclustersTrustedAccessRoleBinding_PropertiesFields,
 		},
 	},
 }

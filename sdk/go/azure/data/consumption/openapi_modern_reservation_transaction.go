@@ -4,31 +4,31 @@ package consumption
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiModernReservationTransaction_Value_Properties struct {
-	Amount any
-	ArmSkuName any
-	BillingFrequency any
-	BillingProfileId any
-	BillingProfileName any
-	Currency any
-	Description any
-	EventDate any
-	EventType any
-	Invoice any
-	InvoiceId any
-	InvoiceSectionId any
-	InvoiceSectionName any
+	Amount                     any
+	ArmSkuName                 any
+	BillingFrequency           any
+	BillingProfileId           any
+	BillingProfileName         any
+	Currency                   any
+	Description                any
+	EventDate                  any
+	EventType                  any
+	Invoice                    any
+	InvoiceId                  any
+	InvoiceSectionId           any
+	InvoiceSectionName         any
 	PurchasingSubscriptionGuid any
 	PurchasingSubscriptionName any
-	Quantity any
-	Region any
-	ReservationOrderId any
-	ReservationOrderName any
-	Term any
+	Quantity                   any
+	Region                     any
+	ReservationOrderId         any
+	ReservationOrderName       any
+	Term                       any
 }
 
 type OpenapiModernReservationTransaction_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiModernReservationTransactionConfig struct {

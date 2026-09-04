@@ -24,14 +24,14 @@ type Provider_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndp
 
 type Provider_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Provider_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Provider_Value_Properties_PrivateEndpointConnections struct {
@@ -39,12 +39,12 @@ type Provider_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type Provider_Value_Properties struct {
-	AttestUri any
-	PrivateEndpointConnections any
-	PublicNetworkAccess any
-	Status any
+	AttestUri                    any
+	PrivateEndpointConnections   any
+	PublicNetworkAccess          any
+	Status                       any
 	TpmAttestationAuthentication any
-	TrustModel any
+	TrustModel                   any
 }
 
 type Provider_Value struct {
@@ -63,6 +63,5 @@ type ProviderAttrs struct {
 
 var Provider = ubx.DataSourceBinding{
 	WireType: "azure_attestation_provider",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

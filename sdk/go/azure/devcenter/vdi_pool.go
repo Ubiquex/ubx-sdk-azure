@@ -4,7 +4,7 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VdiPool_Properties_HealthStatusDetails struct {
-	Code any
+	Code    any
 	Message any
 }
 
@@ -20,20 +20,20 @@ type VdiPool_Properties struct {
 }
 
 var VdiPool_Properties_HealthStatusDetailsFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var VdiPool_PropertiesFields = ubx.FieldMap{
-		"DevBoxCount": ubx.FieldSpec{WireName: "dev_box_count"},
-		"HealthStatus": ubx.FieldSpec{WireName: "health_status"},
-		"HealthStatusDetails": ubx.FieldSpec{
-			WireName: "health_status_details",
-			Kind: "list",
-			Fields: VdiPool_Properties_HealthStatusDetailsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"DevBoxCount":  ubx.FieldSpec{WireName: "dev_box_count"},
+	"HealthStatus": ubx.FieldSpec{WireName: "health_status"},
+	"HealthStatusDetails": ubx.FieldSpec{
+		WireName: "health_status_details",
+		Kind:     "list",
+		Fields:   VdiPool_Properties_HealthStatusDetailsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VdiPoolConfig struct {
 	// Properties of a Pool
@@ -50,8 +50,8 @@ var VdiPool = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VdiPool_PropertiesFields,
+			Kind:     "object",
+			Fields:   VdiPool_PropertiesFields,
 		},
 	},
 }

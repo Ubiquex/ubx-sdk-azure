@@ -4,20 +4,20 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsProtectionContainerResource_Value_Properties struct {
-	BackupManagementType any
-	ContainerType any
-	FriendlyName any
-	HealthStatus any
+	BackupManagementType  any
+	ContainerType         any
+	FriendlyName          any
+	HealthStatus          any
 	ProtectableObjectType any
-	RegistrationStatus any
-	SourceLocation any
+	RegistrationStatus    any
+	SourceLocation        any
 }
 
 type BmsProtectionContainerResource_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsProtectionContainerResourceConfig struct {
@@ -26,7 +26,7 @@ type BmsProtectionContainerResourceConfig struct {
 
 type BmsProtectionContainerResourceAttrs struct {
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

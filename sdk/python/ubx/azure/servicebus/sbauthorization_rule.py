@@ -17,8 +17,6 @@ _SbauthorizationRule_PropertiesFields = {
 
 @dataclasses.dataclass
 class SbauthorizationRuleConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # AuthorizationRule properties.
     properties: Any = None
 
@@ -32,7 +30,6 @@ class SbauthorizationRuleAttrs:
 SbauthorizationRule = ubx.ResourceBinding(
     wire_type="azure_servicebus_sbauthorization_rule",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

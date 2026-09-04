@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOriginGroup_Value_Properties struct {
 	ProvisioningState any
-	ResourceState any
+	ResourceState     any
 }
 
 type OpenapiOriginGroup_Value struct {
@@ -14,13 +14,13 @@ type OpenapiOriginGroup_Value struct {
 
 type OpenapiOriginGroupConfig struct {
 	EndpointName any
-	ProfileName any
+	ProfileName  any
 }
 
 type OpenapiOriginGroupAttrs struct {
 	EndpointName any
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	// The OriginGroup items on this page
 	Value any
@@ -30,6 +30,6 @@ var OpenapiOriginGroup = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_origin_group",
 	Fields: ubx.FieldMap{
 		"EndpointName": ubx.FieldSpec{WireName: "endpoint_name"},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
+		"ProfileName":  ubx.FieldSpec{WireName: "profile_name"},
 	},
 }

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolMaintenanceWindows_Properties_TimeRanges struct {
 	DayOfWeek any
-	Duration any
+	Duration  any
 	StartTime any
 }
 
@@ -15,13 +15,13 @@ type SqlpoolMaintenanceWindows_Properties struct {
 
 type SqlpoolMaintenanceWindowsConfig struct {
 	MaintenanceWindowName any
-	SqlPoolName any
+	SqlPoolName           any
 }
 
 type SqlpoolMaintenanceWindowsAttrs struct {
 	MaintenanceWindowName any
 	// Maintenance windows resource properties.
-	Properties any
+	Properties  any
 	SqlPoolName any
 }
 
@@ -29,6 +29,6 @@ var SqlpoolMaintenanceWindows = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_maintenance_windows",
 	Fields: ubx.FieldMap{
 		"MaintenanceWindowName": ubx.FieldSpec{WireName: "maintenance_window_name"},
-		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
+		"SqlPoolName":           ubx.FieldSpec{WireName: "sql_pool_name"},
 	},
 }

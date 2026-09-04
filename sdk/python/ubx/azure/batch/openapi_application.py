@@ -23,8 +23,6 @@ _OpenapiApplication_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiApplicationConfig:
-    # The ETag of the resource, used for concurrency statements.
-    etag: Any = None
     # The properties associated with the Application.
     properties: Any = None
     # The tags of the resource.
@@ -42,7 +40,6 @@ class OpenapiApplicationAttrs:
 OpenapiApplication = ubx.ResourceBinding(
     wire_type="azure_batch_openapi_application",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

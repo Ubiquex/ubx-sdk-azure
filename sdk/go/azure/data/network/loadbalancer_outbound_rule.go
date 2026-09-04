@@ -8,17 +8,17 @@ type LoadbalancerOutboundRule_Value_Properties_BackendAddressPool struct {
 }
 
 type LoadbalancerOutboundRule_Value_Properties struct {
-	AllocatedOutboundPorts any
-	BackendAddressPool any
-	EnableTcpReset any
+	AllocatedOutboundPorts   any
+	BackendAddressPool       any
+	EnableTcpReset           any
 	FrontendIpconfigurations any
-	IdleTimeoutInMinutes any
-	Protocol any
-	ProvisioningState any
+	IdleTimeoutInMinutes     any
+	Protocol                 any
+	ProvisioningState        any
 }
 
 type LoadbalancerOutboundRule_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

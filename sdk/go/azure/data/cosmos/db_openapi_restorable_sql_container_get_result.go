@@ -5,20 +5,20 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiRestorableSqlContainerGetResult_Value_Properties_Resource_Container struct {
 	Etag any
-	Rid any
+	Rid  any
 	Self any
-	Ts any
+	Ts   any
 }
 
 type DbOpenapiRestorableSqlContainerGetResult_Value_Properties_Resource struct {
-	Rid any
-	CanUndelete any
+	Rid               any
+	CanUndelete       any
 	CanUndeleteReason any
-	Container any
-	EventTimestamp any
-	OperationType any
-	OwnerId any
-	OwnerResourceId any
+	Container         any
+	EventTimestamp    any
+	OperationType     any
+	OwnerId           any
+	OwnerResourceId   any
 }
 
 type DbOpenapiRestorableSqlContainerGetResult_Value_Properties struct {
@@ -26,27 +26,27 @@ type DbOpenapiRestorableSqlContainerGetResult_Value_Properties struct {
 }
 
 type DbOpenapiRestorableSqlContainerGetResult_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type DbOpenapiRestorableSqlContainerGetResultConfig struct {
-	EndTime any
-	InstanceId any
-	Location any
+	EndTime                  any
+	InstanceId               any
+	Location                 any
 	RestorableSqlDatabaseRid any
-	StartTime any
+	StartTime                any
 }
 
 type DbOpenapiRestorableSqlContainerGetResultAttrs struct {
-	EndTime any
-	InstanceId any
-	Location any
-	NextLink any
+	EndTime                  any
+	InstanceId               any
+	Location                 any
+	NextLink                 any
 	RestorableSqlDatabaseRid any
-	StartTime any
+	StartTime                any
 	// List of SQL container events and their properties.
 	Value any
 }
@@ -54,10 +54,10 @@ type DbOpenapiRestorableSqlContainerGetResultAttrs struct {
 var DbOpenapiRestorableSqlContainerGetResult = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_restorable_sql_container_get_result",
 	Fields: ubx.FieldMap{
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"EndTime":                  ubx.FieldSpec{WireName: "end_time"},
+		"InstanceId":               ubx.FieldSpec{WireName: "instance_id"},
+		"Location":                 ubx.FieldSpec{WireName: "location"},
 		"RestorableSqlDatabaseRid": ubx.FieldSpec{WireName: "restorable_sql_database_rid"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
+		"StartTime":                ubx.FieldSpec{WireName: "start_time"},
 	},
 }

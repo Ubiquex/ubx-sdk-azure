@@ -4,9 +4,9 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CloudLink_Value_Properties struct {
-	LinkedCloud any
+	LinkedCloud       any
 	ProvisioningState any
-	Status any
+	Status            any
 }
 
 type CloudLink_Value struct {
@@ -19,7 +19,7 @@ type CloudLinkConfig struct {
 
 type CloudLinkAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The CloudLink items on this page
 	Value any

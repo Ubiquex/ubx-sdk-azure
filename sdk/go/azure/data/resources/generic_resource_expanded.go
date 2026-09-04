@@ -4,8 +4,8 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GenericResourceExpanded_Value struct {
-	ChangedTime any
-	CreatedTime any
+	ChangedTime       any
+	CreatedTime       any
 	ProvisioningState any
 }
 
@@ -15,7 +15,7 @@ type GenericResourceExpandedConfig struct {
 
 type GenericResourceExpandedAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
 	// The GenericResourceExpanded items on this page
 	Value any

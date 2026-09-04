@@ -8,17 +8,17 @@ type HealthcareApisIotFhirDestination_Value_Properties_FhirMapping struct {
 }
 
 type HealthcareApisIotFhirDestination_Value_Properties struct {
-	FhirMapping any
-	FhirServiceResourceId any
+	FhirMapping                    any
+	FhirServiceResourceId          any
 	ResourceIdentityResolutionType any
 }
 
 type HealthcareApisIotFhirDestination_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -28,26 +28,26 @@ type HealthcareApisIotFhirDestination_Value struct {
 }
 
 type HealthcareApisIotFhirDestinationConfig struct {
-	IotConnectorName any
+	IotConnectorName  any
 	ResourceGroupName any
-	WorkspaceName any
+	WorkspaceName     any
 }
 
 type HealthcareApisIotFhirDestinationAttrs struct {
 	IotConnectorName any
 	// The link used to get the next page of IoT FHIR destinations.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
 	// The list of IoT Connector FHIR destinations.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var HealthcareApisIotFhirDestination = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_iot_fhir_destination",
 	Fields: ubx.FieldMap{
-		"IotConnectorName": ubx.FieldSpec{WireName: "iot_connector_name"},
+		"IotConnectorName":  ubx.FieldSpec{WireName: "iot_connector_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"WorkspaceName":     ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

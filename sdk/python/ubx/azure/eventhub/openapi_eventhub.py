@@ -173,8 +173,6 @@ _OpenapiEventhub_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiEventhubConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # Properties supplied to the Create Or Update Event Hub operation.
     properties: Any = None
 
@@ -188,7 +186,6 @@ class OpenapiEventhubAttrs:
 OpenapiEventhub = ubx.ResourceBinding(
     wire_type="azure_eventhub_openapi_eventhub",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

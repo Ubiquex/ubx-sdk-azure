@@ -4,15 +4,15 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VdiPool_Value_Properties_HealthStatusDetails struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type VdiPool_Value_Properties struct {
-	DevBoxCount any
-	HealthStatus any
+	DevBoxCount         any
+	HealthStatus        any
 	HealthStatusDetails any
-	ProvisioningState any
+	ProvisioningState   any
 }
 
 type VdiPool_Value struct {
@@ -31,6 +31,5 @@ type VdiPoolAttrs struct {
 
 var VdiPool = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_vdi_pool",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

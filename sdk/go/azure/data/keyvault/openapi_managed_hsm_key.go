@@ -4,24 +4,24 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagedHsmKey_Value_Properties_Attributes struct {
-	Created any
-	Enabled any
-	Exp any
-	Exportable any
-	Nbf any
+	Created       any
+	Enabled       any
+	Exp           any
+	Exportable    any
+	Nbf           any
 	RecoveryLevel any
-	Updated any
+	Updated       any
 }
 
 type OpenapiManagedHsmKey_Value_Properties_ReleasePolicy struct {
 	ContentType any
-	Data any
+	Data        any
 }
 
 type OpenapiManagedHsmKey_Value_Properties_RotationPolicy_Attributes struct {
-	Created any
+	Created    any
 	ExpiryTime any
-	Updated any
+	Updated    any
 }
 
 type OpenapiManagedHsmKey_Value_Properties_RotationPolicy_LifetimeActions_Action struct {
@@ -29,35 +29,35 @@ type OpenapiManagedHsmKey_Value_Properties_RotationPolicy_LifetimeActions_Action
 }
 
 type OpenapiManagedHsmKey_Value_Properties_RotationPolicy_LifetimeActions_Trigger struct {
-	TimeAfterCreate any
+	TimeAfterCreate  any
 	TimeBeforeExpiry any
 }
 
 type OpenapiManagedHsmKey_Value_Properties_RotationPolicy_LifetimeActions struct {
-	Action any
+	Action  any
 	Trigger any
 }
 
 type OpenapiManagedHsmKey_Value_Properties_RotationPolicy struct {
-	Attributes any
+	Attributes      any
 	LifetimeActions any
 }
 
 type OpenapiManagedHsmKey_Value_Properties struct {
-	Attributes any
-	CurveName any
-	KeyOps any
-	KeySize any
-	KeyUri any
+	Attributes        any
+	CurveName         any
+	KeyOps            any
+	KeySize           any
+	KeyUri            any
 	KeyUriWithVersion any
-	Kty any
-	ReleasePolicy any
-	RotationPolicy any
+	Kty               any
+	ReleasePolicy     any
+	RotationPolicy    any
 }
 
 type OpenapiManagedHsmKey_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiManagedHsmKeyConfig struct {

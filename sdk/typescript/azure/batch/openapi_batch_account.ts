@@ -25,10 +25,17 @@ export interface OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReferenc
 export interface OpenapiBatchAccount_Properties_AutoStorage {
   /** The authentication mode which the Batch service will use to manage the auto-storage account. */
   authenticationMode?: string | Computed<string>;
+  /** The UTC time at which storage keys were last synchronized with the Batch account. */
+  lastKeySync?: string | Computed<string>;
   /** The reference to a user assigned identity associated with the Batch pool which a compute node will use. */
   nodeIdentityReference?: OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReference | Computed<OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReference>;
   /** The resource ID of the storage account to be used for auto-storage account. */
   storageAccountId: string | Computed<string>;
+}
+
+export interface OpenapiBatchAccount_Properties_DedicatedCoreQuotaPerVmfamily {
+  coreQuota?: number | Computed<number>;
+  name?: string | Computed<string>;
 }
 
 export interface OpenapiBatchAccount_Properties_Encryption_KeyVaultProperties {
@@ -69,19 +76,62 @@ export interface OpenapiBatchAccount_Properties_NetworkProfile {
   nodeManagementAccess?: OpenapiBatchAccount_Properties_NetworkProfile_AccountAccess | Computed<OpenapiBatchAccount_Properties_NetworkProfile_AccountAccess>;
 }
 
+export interface OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  id?: string | Computed<string>;
+}
+
+export interface OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  actionsRequired?: string | Computed<string>;
+  description?: string | Computed<string>;
+  status?: string | Computed<string>;
+}
+
+export interface OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties {
+  groupIds?: string[] | Computed<string[]>;
+  privateEndpoint?: OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  privateLinkServiceConnectionState?: OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  provisioningState?: string | Computed<string>;
+}
+
+export interface OpenapiBatchAccount_Properties_PrivateEndpointConnections {
+  etag?: string | Computed<string>;
+  properties?: OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties | Computed<OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties>;
+  tags?: Record<string, string> | Computed<Record<string, string>>;
+}
+
 export interface OpenapiBatchAccount_Properties {
+  /** The account endpoint used to interact with the Batch service. */
+  accountEndpoint?: string | Computed<string>;
+  /** The active job and job schedule quota for the Batch account. */
+  activeJobAndJobScheduleQuota?: number | Computed<number>;
   /** List of allowed authentication modes for the Batch account that can be used to authenticate with the data plane. This does not affect authentication with the control plane. */
   allowedAuthenticationModes?: string[] | Computed<string[]>;
   /** The properties related to the auto-storage account. */
   autoStorage?: OpenapiBatchAccount_Properties_AutoStorage | Computed<OpenapiBatchAccount_Properties_AutoStorage>;
+  /** For accounts with PoolAllocationMode set to UserSubscription, quota is managed on the subscription so this value is not returned. */
+  dedicatedCoreQuota?: number | Computed<number>;
+  /** A list of the dedicated core quota per Virtual Machine family for the Batch account. For accounts with PoolAllocationMode set to UserSubscription, quota is managed on the subscription so this value is not returned. */
+  dedicatedCoreQuotaPerVmfamily?: OpenapiBatchAccount_Properties_DedicatedCoreQuotaPerVmfamily[] | Computed<OpenapiBatchAccount_Properties_DedicatedCoreQuotaPerVmfamily[]>;
+  /** If this flag is true, dedicated core quota is enforced via both the dedicatedCoreQuotaPerVMFamily and dedicatedCoreQuota properties on the account. If this flag is false, dedicated core quota is enforced only via the dedicatedCoreQuota property on the account and does not consider Virtual Machine family. */
+  dedicatedCoreQuotaPerVmfamilyEnforced?: boolean | Computed<boolean>;
   /** Configures how customer data is encrypted inside the Batch account. By default, accounts are encrypted using a Microsoft managed key. For additional control, a customer-managed key can be used instead. */
   encryption?: OpenapiBatchAccount_Properties_Encryption | Computed<OpenapiBatchAccount_Properties_Encryption>;
   /** Identifies the Azure key vault associated with a Batch account. */
   keyVaultReference?: OpenapiBatchAccount_Properties_KeyVaultReference | Computed<OpenapiBatchAccount_Properties_KeyVaultReference>;
+  /** For accounts with PoolAllocationMode set to UserSubscription, quota is managed on the subscription so this value is not returned. */
+  lowPriorityCoreQuota?: number | Computed<number>;
   /** Network profile for Batch account, which contains network rule settings for each endpoint. */
   networkProfile?: OpenapiBatchAccount_Properties_NetworkProfile | Computed<OpenapiBatchAccount_Properties_NetworkProfile>;
+  /** The endpoint used by compute node to connect to the Batch node management service. */
+  nodeManagementEndpoint?: string | Computed<string>;
   /** The allocation mode for creating pools in the Batch account. */
   poolAllocationMode?: string | Computed<string>;
+  /** The pool quota for the Batch account. */
+  poolQuota?: number | Computed<number>;
+  /** List of private endpoint connections associated with the Batch account */
+  privateEndpointConnections?: OpenapiBatchAccount_Properties_PrivateEndpointConnections[] | Computed<OpenapiBatchAccount_Properties_PrivateEndpointConnections[]>;
+  /** The provisioned state of the resource */
+  provisioningState?: string | Computed<string>;
   /** The network access type for operating on the resources in the Batch account. */
   publicNetworkAccess?: string | Computed<string>;
 }
@@ -108,12 +158,18 @@ const OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReferenceFields: Fi
 
 const OpenapiBatchAccount_Properties_AutoStorageFields: FieldMap = {
   authenticationMode: "authentication_mode",
+  lastKeySync: "last_key_sync",
   nodeIdentityReference: {
     wireName: "node_identity_reference",
     kind: "object",
     fields: OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReferenceFields,
   },
   storageAccountId: "storage_account_id",
+};
+
+const OpenapiBatchAccount_Properties_DedicatedCoreQuotaPerVmfamilyFields: FieldMap = {
+  coreQuota: "core_quota",
+  name: "name",
 };
 
 const OpenapiBatchAccount_Properties_Encryption_KeyVaultPropertiesFields: FieldMap = {
@@ -161,13 +217,57 @@ const OpenapiBatchAccount_Properties_NetworkProfileFields: FieldMap = {
   },
 };
 
+const OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields: FieldMap = {
+  id: "id",
+};
+
+const OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields: FieldMap = {
+  actionsRequired: "actions_required",
+  description: "description",
+  status: "status",
+};
+
+const OpenapiBatchAccount_Properties_PrivateEndpointConnections_PropertiesFields: FieldMap = {
+  groupIds: "group_ids",
+  privateEndpoint: {
+    wireName: "private_endpoint",
+    kind: "object",
+    fields: OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+  },
+  privateLinkServiceConnectionState: {
+    wireName: "private_link_service_connection_state",
+    kind: "object",
+    fields: OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+  },
+  provisioningState: "provisioning_state",
+};
+
+const OpenapiBatchAccount_Properties_PrivateEndpointConnectionsFields: FieldMap = {
+  etag: "etag",
+  properties: {
+    wireName: "properties",
+    kind: "object",
+    fields: OpenapiBatchAccount_Properties_PrivateEndpointConnections_PropertiesFields,
+  },
+  tags: "tags",
+};
+
 const OpenapiBatchAccount_PropertiesFields: FieldMap = {
+  accountEndpoint: "account_endpoint",
+  activeJobAndJobScheduleQuota: "active_job_and_job_schedule_quota",
   allowedAuthenticationModes: "allowed_authentication_modes",
   autoStorage: {
     wireName: "auto_storage",
     kind: "object",
     fields: OpenapiBatchAccount_Properties_AutoStorageFields,
   },
+  dedicatedCoreQuota: "dedicated_core_quota",
+  dedicatedCoreQuotaPerVmfamily: {
+    wireName: "dedicated_core_quota_per_vmfamily",
+    kind: "list",
+    fields: OpenapiBatchAccount_Properties_DedicatedCoreQuotaPerVmfamilyFields,
+  },
+  dedicatedCoreQuotaPerVmfamilyEnforced: "dedicated_core_quota_per_vmfamily_enforced",
   encryption: {
     wireName: "encryption",
     kind: "object",
@@ -178,12 +278,21 @@ const OpenapiBatchAccount_PropertiesFields: FieldMap = {
     kind: "object",
     fields: OpenapiBatchAccount_Properties_KeyVaultReferenceFields,
   },
+  lowPriorityCoreQuota: "low_priority_core_quota",
   networkProfile: {
     wireName: "network_profile",
     kind: "object",
     fields: OpenapiBatchAccount_Properties_NetworkProfileFields,
   },
+  nodeManagementEndpoint: "node_management_endpoint",
   poolAllocationMode: "pool_allocation_mode",
+  poolQuota: "pool_quota",
+  privateEndpointConnections: {
+    wireName: "private_endpoint_connections",
+    kind: "list",
+    fields: OpenapiBatchAccount_Properties_PrivateEndpointConnectionsFields,
+  },
+  provisioningState: "provisioning_state",
   publicNetworkAccess: "public_network_access",
 };
 

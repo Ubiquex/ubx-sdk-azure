@@ -13,10 +13,10 @@ type HcxEnterpriseSite_Properties struct {
 }
 
 var HcxEnterpriseSite_PropertiesFields = ubx.FieldMap{
-		"ActivationKey": ubx.FieldSpec{WireName: "activation_key"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActivationKey":     ubx.FieldSpec{WireName: "activation_key"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+}
 
 type HcxEnterpriseSiteConfig struct {
 	// The properties of an HCX Enterprise Site
@@ -33,8 +33,8 @@ var HcxEnterpriseSite = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HcxEnterpriseSite_PropertiesFields,
+			Kind:     "object",
+			Fields:   HcxEnterpriseSite_PropertiesFields,
 		},
 	},
 }

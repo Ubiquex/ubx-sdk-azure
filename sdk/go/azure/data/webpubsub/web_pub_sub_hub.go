@@ -9,13 +9,13 @@ type WebPubSubHub_Value_Properties_EventHandlers_Auth_ManagedIdentity struct {
 
 type WebPubSubHub_Value_Properties_EventHandlers_Auth struct {
 	ManagedIdentity any
-	Type any
+	Type            any
 }
 
 type WebPubSubHub_Value_Properties_EventHandlers struct {
-	Auth any
-	SystemEvents any
-	UrlTemplate any
+	Auth             any
+	SystemEvents     any
+	UrlTemplate      any
 	UserEventPattern any
 }
 
@@ -25,13 +25,13 @@ type WebPubSubHub_Value_Properties_EventListeners_Endpoint struct {
 
 type WebPubSubHub_Value_Properties_EventListeners struct {
 	Endpoint any
-	Filter any
+	Filter   any
 }
 
 type WebPubSubHub_Value_Properties struct {
-	AnonymousConnectPolicy any
-	EventHandlers any
-	EventListeners any
+	AnonymousConnectPolicy              any
+	EventHandlers                       any
+	EventListeners                      any
 	WebSocketKeepAliveIntervalInSeconds any
 }
 
@@ -45,7 +45,7 @@ type WebPubSubHubConfig struct {
 
 type WebPubSubHubAttrs struct {
 	// The URL the client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// List of hub settings to this resource.
 	Value any

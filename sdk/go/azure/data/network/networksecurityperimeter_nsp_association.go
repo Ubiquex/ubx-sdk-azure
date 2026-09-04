@@ -8,11 +8,11 @@ type NetworksecurityperimeterNspAssociation_Value_Properties_PrivateLinkResource
 }
 
 type NetworksecurityperimeterNspAssociation_Value_Properties struct {
-	AccessMode any
+	AccessMode            any
 	HasProvisioningIssues any
-	PrivateLinkResource any
-	Profile any
-	ProvisioningState any
+	PrivateLinkResource   any
+	Profile               any
+	ProvisioningState     any
 }
 
 type NetworksecurityperimeterNspAssociation_Value struct {

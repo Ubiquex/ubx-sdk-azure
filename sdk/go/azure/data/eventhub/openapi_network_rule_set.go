@@ -14,19 +14,19 @@ type OpenapiNetworkRuleSet_Value_Properties_VirtualNetworkRules_Subnet struct {
 
 type OpenapiNetworkRuleSet_Value_Properties_VirtualNetworkRules struct {
 	IgnoreMissingVnetServiceEndpoint any
-	Subnet any
+	Subnet                           any
 }
 
 type OpenapiNetworkRuleSet_Value_Properties struct {
-	DefaultAction any
-	IpRules any
-	PublicNetworkAccess any
+	DefaultAction               any
+	IpRules                     any
+	PublicNetworkAccess         any
 	TrustedServiceAccessEnabled any
-	VirtualNetworkRules any
+	VirtualNetworkRules         any
 }
 
 type OpenapiNetworkRuleSet_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

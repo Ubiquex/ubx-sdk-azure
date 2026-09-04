@@ -15,15 +15,13 @@ type ExpressrouteServiceEndpointPolicyDefinition_Properties struct {
 }
 
 var ExpressrouteServiceEndpointPolicyDefinition_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Service": ubx.FieldSpec{WireName: "service"},
-		"ServiceResources": ubx.FieldSpec{WireName: "service_resources"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Service":           ubx.FieldSpec{WireName: "service"},
+	"ServiceResources":  ubx.FieldSpec{WireName: "service_resources"},
+}
 
 type ExpressrouteServiceEndpointPolicyDefinitionConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Service Endpoint policy definition resource.
 	Properties any
 }
@@ -38,11 +36,10 @@ type ExpressrouteServiceEndpointPolicyDefinitionAttrs struct {
 var ExpressrouteServiceEndpointPolicyDefinition = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_service_endpoint_policy_definition",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteServiceEndpointPolicyDefinition_PropertiesFields,
+			Kind:     "object",
+			Fields:   ExpressrouteServiceEndpointPolicyDefinition_PropertiesFields,
 		},
 	},
 }

@@ -4,8 +4,8 @@ package healthcareapis
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HealthcareApisFhirService_Value_Properties_AcrConfiguration_OciArtifacts struct {
-	Digest any
-	ImageName any
+	Digest      any
+	ImageName   any
 	LoginServer any
 }
 
@@ -16,28 +16,28 @@ type HealthcareApisFhirService_Value_Properties_AcrConfiguration struct {
 
 type HealthcareApisFhirService_Value_Properties_AuthenticationConfiguration_SmartIdentityProviders_Applications struct {
 	AllowedDataActions any
-	Audience any
-	ClientId any
+	Audience           any
+	ClientId           any
 }
 
 type HealthcareApisFhirService_Value_Properties_AuthenticationConfiguration_SmartIdentityProviders struct {
 	Applications any
-	Authority any
+	Authority    any
 }
 
 type HealthcareApisFhirService_Value_Properties_AuthenticationConfiguration struct {
-	Audience any
-	Authority any
+	Audience               any
+	Authority              any
 	SmartIdentityProviders any
-	SmartProxyEnabled any
+	SmartProxyEnabled      any
 }
 
 type HealthcareApisFhirService_Value_Properties_CorsConfiguration struct {
 	AllowCredentials any
-	Headers any
-	MaxAge any
-	Methods any
-	Origins any
+	Headers          any
+	MaxAge           any
+	Methods          any
+	Origins          any
 }
 
 type HealthcareApisFhirService_Value_Properties_Encryption_CustomerManagedKeyEncryption struct {
@@ -57,8 +57,8 @@ type HealthcareApisFhirService_Value_Properties_ImplementationGuidesConfiguratio
 }
 
 type HealthcareApisFhirService_Value_Properties_ImportConfiguration struct {
-	Enabled any
-	InitialImportMode any
+	Enabled              any
+	InitialImportMode    any
 	IntegrationDataStore any
 }
 
@@ -68,14 +68,14 @@ type HealthcareApisFhirService_Value_Properties_PrivateEndpointConnections_Prope
 
 type HealthcareApisFhirService_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type HealthcareApisFhirService_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type HealthcareApisFhirService_Value_Properties_PrivateEndpointConnections struct {
@@ -83,51 +83,51 @@ type HealthcareApisFhirService_Value_Properties_PrivateEndpointConnections struc
 }
 
 type HealthcareApisFhirService_Value_Properties_ResourceVersionPolicyConfiguration struct {
-	Default any
+	Default               any
 	ResourceTypeOverrides any
 }
 
 type HealthcareApisFhirService_Value_Properties struct {
-	AcrConfiguration any
-	AuthenticationConfiguration any
-	CorsConfiguration any
-	Encryption any
-	EventState any
-	ExportConfiguration any
-	ImplementationGuidesConfiguration any
-	ImportConfiguration any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
+	AcrConfiguration                   any
+	AuthenticationConfiguration        any
+	CorsConfiguration                  any
+	Encryption                         any
+	EventState                         any
+	ExportConfiguration                any
+	ImplementationGuidesConfiguration  any
+	ImportConfiguration                any
+	PrivateEndpointConnections         any
+	ProvisioningState                  any
+	PublicNetworkAccess                any
 	ResourceVersionPolicyConfiguration any
 }
 
 type HealthcareApisFhirService_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type HealthcareApisFhirService_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 	SystemData any
 }
 
 type HealthcareApisFhirServiceConfig struct {
 	ResourceGroupName any
-	WorkspaceName any
+	WorkspaceName     any
 }
 
 type HealthcareApisFhirServiceAttrs struct {
 	// The link used to get the next page of Fhir Services.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
 	// The list of Fhir Services.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
@@ -135,6 +135,6 @@ var HealthcareApisFhirService = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_fhir_service",
 	Fields: ubx.FieldMap{
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"WorkspaceName":     ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

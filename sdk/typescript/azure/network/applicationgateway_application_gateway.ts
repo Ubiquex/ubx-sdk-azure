@@ -9377,8 +9377,6 @@ const ApplicationgatewayApplicationGateway_PropertiesFields: FieldMap = {
 };
 
 export interface ApplicationgatewayApplicationGatewayConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: ApplicationgatewayApplicationGateway_Identity | Computed<ApplicationgatewayApplicationGateway_Identity>;
   /** Properties of the application gateway. */
@@ -9401,7 +9399,6 @@ export interface ApplicationgatewayApplicationGatewayAttrs {
 export const ApplicationgatewayApplicationGateway: ResourceBinding<ApplicationgatewayApplicationGatewayConfig, ApplicationgatewayApplicationGatewayAttrs> = {
   wireType: "azure_network_applicationgateway_application_gateway",
   fields: {
-    etag: "etag",
     identity: {
       wireName: "identity",
       kind: "object",

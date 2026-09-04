@@ -4,7 +4,7 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagedEnvironment_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -96,15 +96,15 @@ type OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_
 
 type OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiManagedEnvironment_Properties_PrivateEndpointConnections struct {
@@ -125,9 +125,9 @@ type OpenapiManagedEnvironment_Properties_VnetConfiguration struct {
 }
 
 type OpenapiManagedEnvironment_Properties_WorkloadProfiles struct {
-	MaximumCount any
-	MinimumCount any
-	Name any
+	MaximumCount        any
+	MinimumCount        any
+	Name                any
 	WorkloadProfileType any
 }
 
@@ -175,196 +175,196 @@ type OpenapiManagedEnvironment_Properties struct {
 }
 
 var OpenapiManagedEnvironment_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiManagedEnvironment_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiManagedEnvironment_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiManagedEnvironment_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiManagedEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfigurationFields = ubx.FieldMap{
-		"CustomerId": ubx.FieldSpec{WireName: "customer_id"},
-		"SharedKey": ubx.FieldSpec{WireName: "shared_key"},
-	}
+	"CustomerId": ubx.FieldSpec{WireName: "customer_id"},
+	"SharedKey":  ubx.FieldSpec{WireName: "shared_key"},
+}
 
 var OpenapiManagedEnvironment_Properties_AppLogsConfigurationFields = ubx.FieldMap{
-		"Destination": ubx.FieldSpec{WireName: "destination"},
-		"LogAnalyticsConfiguration": ubx.FieldSpec{
-			WireName: "log_analytics_configuration",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfigurationFields,
-		},
-	}
+	"Destination": ubx.FieldSpec{WireName: "destination"},
+	"LogAnalyticsConfiguration": ubx.FieldSpec{
+		WireName: "log_analytics_configuration",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfigurationFields,
+	},
+}
 
 var OpenapiManagedEnvironment_Properties_CustomDomainConfiguration_CertificateKeyVaultPropertiesFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
-	}
+	"Identity":    ubx.FieldSpec{WireName: "identity"},
+	"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
+}
 
 var OpenapiManagedEnvironment_Properties_CustomDomainConfigurationFields = ubx.FieldMap{
-		"CertificateKeyVaultProperties": ubx.FieldSpec{
-			WireName: "certificate_key_vault_properties",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_CustomDomainConfiguration_CertificateKeyVaultPropertiesFields,
-		},
-		"CertificatePassword": ubx.FieldSpec{WireName: "certificate_password"},
-		"CertificateValue": ubx.FieldSpec{WireName: "certificate_value"},
-		"CustomDomainVerificationId": ubx.FieldSpec{WireName: "custom_domain_verification_id"},
-		"DnsSuffix": ubx.FieldSpec{WireName: "dns_suffix"},
-		"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
-		"SubjectName": ubx.FieldSpec{WireName: "subject_name"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"CertificateKeyVaultProperties": ubx.FieldSpec{
+		WireName: "certificate_key_vault_properties",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_CustomDomainConfiguration_CertificateKeyVaultPropertiesFields,
+	},
+	"CertificatePassword":        ubx.FieldSpec{WireName: "certificate_password"},
+	"CertificateValue":           ubx.FieldSpec{WireName: "certificate_value"},
+	"CustomDomainVerificationId": ubx.FieldSpec{WireName: "custom_domain_verification_id"},
+	"DnsSuffix":                  ubx.FieldSpec{WireName: "dns_suffix"},
+	"ExpirationDate":             ubx.FieldSpec{WireName: "expiration_date"},
+	"SubjectName":                ubx.FieldSpec{WireName: "subject_name"},
+	"Thumbprint":                 ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 var OpenapiManagedEnvironment_Properties_DaprConfigurationFields = ubx.FieldMap{
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiManagedEnvironment_Properties_IngressConfigurationFields = ubx.FieldMap{
-		"HeaderCountLimit": ubx.FieldSpec{WireName: "header_count_limit"},
-		"RequestIdleTimeout": ubx.FieldSpec{WireName: "request_idle_timeout"},
-		"TerminationGracePeriodSeconds": ubx.FieldSpec{WireName: "termination_grace_period_seconds"},
-		"WorkloadProfileName": ubx.FieldSpec{WireName: "workload_profile_name"},
-	}
+	"HeaderCountLimit":              ubx.FieldSpec{WireName: "header_count_limit"},
+	"RequestIdleTimeout":            ubx.FieldSpec{WireName: "request_idle_timeout"},
+	"TerminationGracePeriodSeconds": ubx.FieldSpec{WireName: "termination_grace_period_seconds"},
+	"WorkloadProfileName":           ubx.FieldSpec{WireName: "workload_profile_name"},
+}
 
 var OpenapiManagedEnvironment_Properties_PeerAuthentication_MtlsFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+}
 
 var OpenapiManagedEnvironment_Properties_PeerAuthenticationFields = ubx.FieldMap{
-		"Mtls": ubx.FieldSpec{
-			WireName: "mtls",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_PeerAuthentication_MtlsFields,
-		},
-	}
+	"Mtls": ubx.FieldSpec{
+		WireName: "mtls",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_PeerAuthentication_MtlsFields,
+	},
+}
 
 var OpenapiManagedEnvironment_Properties_PeerTrafficConfigurationFields = ubx.FieldMap{
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_PeerAuthentication_MtlsFields,
-		},
-	}
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_PeerAuthentication_MtlsFields,
+	},
+}
 
 var OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiManagedEnvironment_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var OpenapiManagedEnvironment_Properties_VnetConfigurationFields = ubx.FieldMap{
-		"DockerBridgeCidr": ubx.FieldSpec{WireName: "docker_bridge_cidr"},
-		"InfrastructureSubnetId": ubx.FieldSpec{WireName: "infrastructure_subnet_id"},
-		"Internal": ubx.FieldSpec{WireName: "internal"},
-		"PlatformReservedCidr": ubx.FieldSpec{WireName: "platform_reserved_cidr"},
-		"PlatformReservedDnsIp": ubx.FieldSpec{WireName: "platform_reserved_dns_ip"},
-	}
+	"DockerBridgeCidr":       ubx.FieldSpec{WireName: "docker_bridge_cidr"},
+	"InfrastructureSubnetId": ubx.FieldSpec{WireName: "infrastructure_subnet_id"},
+	"Internal":               ubx.FieldSpec{WireName: "internal"},
+	"PlatformReservedCidr":   ubx.FieldSpec{WireName: "platform_reserved_cidr"},
+	"PlatformReservedDnsIp":  ubx.FieldSpec{WireName: "platform_reserved_dns_ip"},
+}
 
 var OpenapiManagedEnvironment_Properties_WorkloadProfilesFields = ubx.FieldMap{
-		"MaximumCount": ubx.FieldSpec{WireName: "maximum_count"},
-		"MinimumCount": ubx.FieldSpec{WireName: "minimum_count"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"WorkloadProfileType": ubx.FieldSpec{WireName: "workload_profile_type"},
-	}
+	"MaximumCount":        ubx.FieldSpec{WireName: "maximum_count"},
+	"MinimumCount":        ubx.FieldSpec{WireName: "minimum_count"},
+	"Name":                ubx.FieldSpec{WireName: "name"},
+	"WorkloadProfileType": ubx.FieldSpec{WireName: "workload_profile_type"},
+}
 
 var OpenapiManagedEnvironment_PropertiesFields = ubx.FieldMap{
-		"AppLogsConfiguration": ubx.FieldSpec{
-			WireName: "app_logs_configuration",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_AppLogsConfigurationFields,
-		},
-		"CustomDomainConfiguration": ubx.FieldSpec{
-			WireName: "custom_domain_configuration",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_CustomDomainConfigurationFields,
-		},
-		"DaprAiconnectionString": ubx.FieldSpec{WireName: "dapr_aiconnection_string"},
-		"DaprAiinstrumentationKey": ubx.FieldSpec{WireName: "dapr_aiinstrumentation_key"},
-		"DaprConfiguration": ubx.FieldSpec{
-			WireName: "dapr_configuration",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_DaprConfigurationFields,
-		},
-		"DefaultDomain": ubx.FieldSpec{WireName: "default_domain"},
-		"DeploymentErrors": ubx.FieldSpec{WireName: "deployment_errors"},
-		"EventStreamEndpoint": ubx.FieldSpec{WireName: "event_stream_endpoint"},
-		"InfrastructureResourceGroup": ubx.FieldSpec{WireName: "infrastructure_resource_group"},
-		"IngressConfiguration": ubx.FieldSpec{
-			WireName: "ingress_configuration",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_IngressConfigurationFields,
-		},
-		"KedaConfiguration": ubx.FieldSpec{
-			WireName: "keda_configuration",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_DaprConfigurationFields,
-		},
-		"PeerAuthentication": ubx.FieldSpec{
-			WireName: "peer_authentication",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_PeerAuthenticationFields,
-		},
-		"PeerTrafficConfiguration": ubx.FieldSpec{
-			WireName: "peer_traffic_configuration",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_PeerTrafficConfigurationFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: OpenapiManagedEnvironment_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"StaticIp": ubx.FieldSpec{WireName: "static_ip"},
-		"VnetConfiguration": ubx.FieldSpec{
-			WireName: "vnet_configuration",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_Properties_VnetConfigurationFields,
-		},
-		"WorkloadProfiles": ubx.FieldSpec{
-			WireName: "workload_profiles",
-			Kind: "list",
-			Fields: OpenapiManagedEnvironment_Properties_WorkloadProfilesFields,
-		},
-		"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
-	}
+	"AppLogsConfiguration": ubx.FieldSpec{
+		WireName: "app_logs_configuration",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_AppLogsConfigurationFields,
+	},
+	"CustomDomainConfiguration": ubx.FieldSpec{
+		WireName: "custom_domain_configuration",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_CustomDomainConfigurationFields,
+	},
+	"DaprAiconnectionString":   ubx.FieldSpec{WireName: "dapr_aiconnection_string"},
+	"DaprAiinstrumentationKey": ubx.FieldSpec{WireName: "dapr_aiinstrumentation_key"},
+	"DaprConfiguration": ubx.FieldSpec{
+		WireName: "dapr_configuration",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_DaprConfigurationFields,
+	},
+	"DefaultDomain":               ubx.FieldSpec{WireName: "default_domain"},
+	"DeploymentErrors":            ubx.FieldSpec{WireName: "deployment_errors"},
+	"EventStreamEndpoint":         ubx.FieldSpec{WireName: "event_stream_endpoint"},
+	"InfrastructureResourceGroup": ubx.FieldSpec{WireName: "infrastructure_resource_group"},
+	"IngressConfiguration": ubx.FieldSpec{
+		WireName: "ingress_configuration",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_IngressConfigurationFields,
+	},
+	"KedaConfiguration": ubx.FieldSpec{
+		WireName: "keda_configuration",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_DaprConfigurationFields,
+	},
+	"PeerAuthentication": ubx.FieldSpec{
+		WireName: "peer_authentication",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_PeerAuthenticationFields,
+	},
+	"PeerTrafficConfiguration": ubx.FieldSpec{
+		WireName: "peer_traffic_configuration",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_PeerTrafficConfigurationFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   OpenapiManagedEnvironment_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"StaticIp":            ubx.FieldSpec{WireName: "static_ip"},
+	"VnetConfiguration": ubx.FieldSpec{
+		WireName: "vnet_configuration",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironment_Properties_VnetConfigurationFields,
+	},
+	"WorkloadProfiles": ubx.FieldSpec{
+		WireName: "workload_profiles",
+		Kind:     "list",
+		Fields:   OpenapiManagedEnvironment_Properties_WorkloadProfilesFields,
+	},
+	"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
+}
 
 type OpenapiManagedEnvironmentConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -389,14 +389,14 @@ var OpenapiManagedEnvironment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiManagedEnvironment_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironment_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiManagedEnvironment_PropertiesFields,
 		},
 	},
 }

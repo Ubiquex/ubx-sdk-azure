@@ -8,13 +8,13 @@ type VdiOutboundEnvironmentEndpoint_Value_Endpoints_EndpointDetails struct {
 }
 
 type VdiOutboundEnvironmentEndpoint_Value_Endpoints struct {
-	Description any
-	DomainName any
+	Description     any
+	DomainName      any
 	EndpointDetails any
 }
 
 type VdiOutboundEnvironmentEndpoint_Value struct {
-	Category any
+	Category  any
 	Endpoints any
 }
 
@@ -30,6 +30,5 @@ type VdiOutboundEnvironmentEndpointAttrs struct {
 
 var VdiOutboundEnvironmentEndpoint = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_vdi_outbound_environment_endpoint",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

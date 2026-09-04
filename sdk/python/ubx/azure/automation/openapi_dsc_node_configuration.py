@@ -33,8 +33,14 @@ class OpenapiDscNodeConfiguration_Properties_Source:
 class OpenapiDscNodeConfiguration_Properties:
     # The Dsc configuration property associated with the entity.
     configuration: Any = None
+    # Gets or sets creation time.
+    creation_time: Any = None
     # If a new build version of NodeConfiguration is required.
     increment_node_configuration_build: Any = None
+    # Gets or sets the last modified time.
+    last_modified_time: Any = None
+    # Number of nodes with this node configuration assigned
+    node_count: Any = None
     # Definition of the content source.
     source: Any = None
 
@@ -64,7 +70,10 @@ _OpenapiDscNodeConfiguration_PropertiesFields = {
         kind="object",
         fields=_OpenapiDscNodeConfiguration_Properties_ConfigurationFields,
     ),
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
     "increment_node_configuration_build": ubx.FieldSpec(wire_name="increment_node_configuration_build"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
+    "node_count": ubx.FieldSpec(wire_name="node_count"),
     "source": ubx.FieldSpec(
         wire_name="source",
         kind="object",

@@ -4,69 +4,69 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStaticSiteArmresource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiStaticSiteArmresource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_BuildProperties struct {
-	ApiBuildCommand any
-	ApiLocation any
-	AppArtifactLocation any
-	AppBuildCommand any
-	AppLocation any
-	GithubActionSecretNameOverride any
-	OutputLocation any
+	ApiBuildCommand                    any
+	ApiLocation                        any
+	AppArtifactLocation                any
+	AppBuildCommand                    any
+	AppLocation                        any
+	GithubActionSecretNameOverride     any
+	OutputLocation                     any
 	SkipGithubActionWorkflowGeneration any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_DatabaseConnections_ConfigurationFiles struct {
 	Contents any
 	FileName any
-	Type any
+	Type     any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_DatabaseConnections struct {
 	ConfigurationFiles any
 	ConnectionIdentity any
-	Name any
-	Region any
-	ResourceId any
+	Name               any
+	Region             any
+	ResourceId         any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_LinkedBackends struct {
 	BackendResourceId any
-	CreatedOn any
+	CreatedOn         any
 	ProvisioningState any
-	Region any
+	Region            any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Error_Details struct {
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Error struct {
-	Code any
-	Details any
-	ExtendedCode any
-	InnerErrors any
-	Message any
+	Code            any
+	Details         any
+	ExtendedCode    any
+	InnerErrors     any
+	Message         any
 	MessageTemplate any
-	Parameters any
-	Target any
+	Parameters      any
+	Target          any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Plan struct {
-	Name any
-	Product any
+	Name          any
+	Product       any
 	PromotionCode any
-	Publisher any
-	Version any
+	Publisher     any
+	Version       any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Properties_Properties_PrivateEndpoint struct {
@@ -75,15 +75,15 @@ type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Pr
 
 type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Properties_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Properties_Properties struct {
-	IpAddresses any
-	PrivateEndpoint any
+	IpAddresses                       any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Properties struct {
@@ -91,56 +91,56 @@ type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Pr
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Sku_Capabilities struct {
-	Name any
+	Name   any
 	Reason any
-	Value any
+	Value  any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Sku_SkuCapacity struct {
-	Default any
+	Default        any
 	ElasticMaximum any
-	Maximum any
-	Minimum any
-	ScaleType any
+	Maximum        any
+	Minimum        any
+	ScaleType      any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections_Sku struct {
 	Capabilities any
-	Capacity any
-	Family any
-	Locations any
-	Name any
-	Size any
-	SkuCapacity any
-	Tier any
+	Capacity     any
+	Family       any
+	Locations    any
+	Name         any
+	Size         any
+	SkuCapacity  any
+	Tier         any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_PrivateEndpointConnections struct {
-	Error any
-	Id any
-	Identity any
-	Location any
-	Name any
-	Plan any
+	Error      any
+	Id         any
+	Identity   any
+	Location   any
+	Name       any
+	Plan       any
 	Properties any
-	Sku any
-	Status any
-	Tags any
-	Type any
-	Zones any
+	Sku        any
+	Status     any
+	Tags       any
+	Type       any
+	Zones      any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_TemplateProperties struct {
-	Description any
-	IsPrivate any
-	Owner any
-	RepositoryName any
+	Description           any
+	IsPrivate             any
+	Owner                 any
+	RepositoryName        any
 	TemplateRepositoryUrl any
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties_UserProvidedFunctionApps_Properties struct {
-	CreatedOn any
-	FunctionAppRegion any
+	CreatedOn             any
+	FunctionAppRegion     any
 	FunctionAppResourceId any
 }
 
@@ -149,31 +149,31 @@ type OpenapiStaticSiteArmresource_Value_Properties_UserProvidedFunctionApps stru
 }
 
 type OpenapiStaticSiteArmresource_Value_Properties struct {
-	AllowConfigFileUpdates any
-	Branch any
-	BuildProperties any
+	AllowConfigFileUpdates      any
+	Branch                      any
+	BuildProperties             any
 	ContentDistributionEndpoint any
-	CustomDomains any
-	DatabaseConnections any
-	DefaultHostname any
-	EnterpriseGradeCdnStatus any
-	KeyVaultReferenceIdentity any
-	LinkedBackends any
-	PrivateEndpointConnections any
-	Provider any
-	PublicNetworkAccess any
-	RepositoryToken any
-	RepositoryUrl any
-	StagingEnvironmentPolicy any
-	TemplateProperties any
-	UserProvidedFunctionApps any
+	CustomDomains               any
+	DatabaseConnections         any
+	DefaultHostname             any
+	EnterpriseGradeCdnStatus    any
+	KeyVaultReferenceIdentity   any
+	LinkedBackends              any
+	PrivateEndpointConnections  any
+	Provider                    any
+	PublicNetworkAccess         any
+	RepositoryToken             any
+	RepositoryUrl               any
+	StagingEnvironmentPolicy    any
+	TemplateProperties          any
+	UserProvidedFunctionApps    any
 }
 
 type OpenapiStaticSiteArmresource_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiStaticSiteArmresourceConfig struct {
@@ -188,6 +188,5 @@ type OpenapiStaticSiteArmresourceAttrs struct {
 
 var OpenapiStaticSiteArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_static_site_armresource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

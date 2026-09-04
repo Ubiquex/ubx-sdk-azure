@@ -5,22 +5,22 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BuildResult_Value_Properties_BuildStages struct {
 	ExitCode any
-	Name any
-	Reason any
-	Status any
+	Name     any
+	Reason   any
+	Status   any
 }
 
 type BuildResult_Value_Properties_Error struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type BuildResult_Value_Properties struct {
-	BuildPodName any
-	BuildStages any
-	Error any
-	Image any
-	Name any
+	BuildPodName      any
+	BuildStages       any
+	Error             any
+	Image             any
+	Name              any
 	ProvisioningState any
 }
 
@@ -29,23 +29,23 @@ type BuildResult_Value struct {
 }
 
 type BuildResultConfig struct {
-	ApiVersion any
-	BuildName any
-	BuildServiceName any
+	ApiVersion        any
+	BuildName         any
+	BuildServiceName  any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type BuildResultAttrs struct {
-	ApiVersion any
-	BuildName any
+	ApiVersion       any
+	BuildName        any
 	BuildServiceName any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of Build result resources
 	Value any
 }
@@ -53,11 +53,11 @@ type BuildResultAttrs struct {
 var BuildResult = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_build_result",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"BuildName": ubx.FieldSpec{WireName: "build_name"},
-		"BuildServiceName": ubx.FieldSpec{WireName: "build_service_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"BuildName":         ubx.FieldSpec{WireName: "build_name"},
+		"BuildServiceName":  ubx.FieldSpec{WireName: "build_service_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

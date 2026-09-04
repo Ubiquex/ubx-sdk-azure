@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCodeVersion_Value_Properties struct {
-	CodeUri any
+	CodeUri           any
 	ProvisioningState any
 }
 
@@ -13,14 +13,14 @@ type OpenapiCodeVersion_Value struct {
 }
 
 type OpenapiCodeVersionConfig struct {
-	CodeName any
+	CodeName     any
 	RegistryName any
 }
 
 type OpenapiCodeVersionAttrs struct {
 	CodeName any
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	RegistryName any
 	// The CodeVersion items on this page
 	Value any
@@ -29,7 +29,7 @@ type OpenapiCodeVersionAttrs struct {
 var OpenapiCodeVersion = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_code_version",
 	Fields: ubx.FieldMap{
-		"CodeName": ubx.FieldSpec{WireName: "code_name"},
+		"CodeName":     ubx.FieldSpec{WireName: "code_name"},
 		"RegistryName": ubx.FieldSpec{WireName: "registry_name"},
 	},
 }

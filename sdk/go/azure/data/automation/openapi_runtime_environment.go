@@ -5,13 +5,13 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRuntimeEnvironment_Value_Properties_Runtime struct {
 	Language any
-	Version any
+	Version  any
 }
 
 type OpenapiRuntimeEnvironment_Value_Properties struct {
 	DefaultPackages any
-	Description any
-	Runtime any
+	Description     any
+	Runtime         any
 }
 
 type OpenapiRuntimeEnvironment_Value struct {

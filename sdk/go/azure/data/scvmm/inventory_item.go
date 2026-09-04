@@ -5,14 +5,14 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type InventoryItem_Value_Properties struct {
 	InventoryItemName any
-	InventoryType any
+	InventoryType     any
 	ManagedResourceId any
 	ProvisioningState any
-	Uuid any
+	Uuid              any
 }
 
 type InventoryItem_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -24,7 +24,7 @@ type InventoryItemAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The InventoryItem items on this page
-	Value any
+	Value         any
 	VmmServerName any
 }
 

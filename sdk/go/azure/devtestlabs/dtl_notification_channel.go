@@ -27,23 +27,23 @@ type DtlNotificationChannel_Properties struct {
 }
 
 var DtlNotificationChannel_Properties_EventsFields = ubx.FieldMap{
-		"EventName": ubx.FieldSpec{WireName: "event_name"},
-	}
+	"EventName": ubx.FieldSpec{WireName: "event_name"},
+}
 
 var DtlNotificationChannel_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"EmailRecipient": ubx.FieldSpec{WireName: "email_recipient"},
-		"Events": ubx.FieldSpec{
-			WireName: "events",
-			Kind: "list",
-			Fields: DtlNotificationChannel_Properties_EventsFields,
-		},
-		"NotificationLocale": ubx.FieldSpec{WireName: "notification_locale"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-		"WebHookUrl": ubx.FieldSpec{WireName: "web_hook_url"},
-	}
+	"CreatedDate":    ubx.FieldSpec{WireName: "created_date"},
+	"Description":    ubx.FieldSpec{WireName: "description"},
+	"EmailRecipient": ubx.FieldSpec{WireName: "email_recipient"},
+	"Events": ubx.FieldSpec{
+		WireName: "events",
+		Kind:     "list",
+		Fields:   DtlNotificationChannel_Properties_EventsFields,
+	},
+	"NotificationLocale": ubx.FieldSpec{WireName: "notification_locale"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+	"UniqueIdentifier":   ubx.FieldSpec{WireName: "unique_identifier"},
+	"WebHookUrl":         ubx.FieldSpec{WireName: "web_hook_url"},
+}
 
 type DtlNotificationChannelConfig struct {
 	// The geo-location where the resource lives
@@ -73,8 +73,8 @@ var DtlNotificationChannel = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlNotificationChannel_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlNotificationChannel_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

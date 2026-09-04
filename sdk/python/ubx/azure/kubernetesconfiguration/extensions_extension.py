@@ -248,15 +248,6 @@ _ExtensionsExtension_PropertiesFields = {
     "version": ubx.FieldSpec(wire_name="version"),
 }
 
-_ExtensionsExtension_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class ExtensionsExtensionConfig:
     # Identity for the resource.
@@ -265,8 +256,6 @@ class ExtensionsExtensionConfig:
     plan: Any = None
     # Properties of an Extension resource
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class ExtensionsExtensionAttrs:
@@ -296,11 +285,6 @@ ExtensionsExtension = ubx.ResourceBinding(
             wire_name="properties",
             kind="object",
             fields=_ExtensionsExtension_PropertiesFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_ExtensionsExtension_SystemDataFields,
         ),
     },
 )

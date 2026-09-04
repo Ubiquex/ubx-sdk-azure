@@ -4,17 +4,17 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStampCapacity_Value struct {
-	AvailableCapacity any
-	ComputeMode any
-	ExcludeFromCapacityAllocation any
+	AvailableCapacity              any
+	ComputeMode                    any
+	ExcludeFromCapacityAllocation  any
 	IsApplicableForAllComputeModes any
-	IsLinux any
-	Name any
-	SiteMode any
-	TotalCapacity any
-	Unit any
-	WorkerSize any
-	WorkerSizeId any
+	IsLinux                        any
+	Name                           any
+	SiteMode                       any
+	TotalCapacity                  any
+	Unit                           any
+	WorkerSize                     any
+	WorkerSizeId                   any
 }
 
 type OpenapiStampCapacityConfig struct {

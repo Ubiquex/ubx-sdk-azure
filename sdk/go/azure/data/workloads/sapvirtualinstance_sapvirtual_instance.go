@@ -4,12 +4,12 @@ package workloads
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SapvirtualinstanceSapvirtualInstance_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type SapvirtualinstanceSapvirtualInstance_Value_Identity struct {
-	Type any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,7 +21,7 @@ type SapvirtualinstanceSapvirtualInstance_Value_Properties_Errors_Properties_Det
 }
 
 type SapvirtualinstanceSapvirtualInstance_Value_Properties_Errors_Properties struct {
-	Code any
+	Code    any
 	Details any
 	Message any
 }
@@ -35,19 +35,19 @@ type SapvirtualinstanceSapvirtualInstance_Value_Properties_ManagedResourceGroupC
 }
 
 type SapvirtualinstanceSapvirtualInstance_Value_Properties struct {
-	Configuration any
-	Environment any
-	Errors any
-	Health any
+	Configuration                     any
+	Environment                       any
+	Errors                            any
+	Health                            any
 	ManagedResourceGroupConfiguration any
-	ProvisioningState any
-	SapProduct any
-	State any
-	Status any
+	ProvisioningState                 any
+	SapProduct                        any
+	State                             any
+	Status                            any
 }
 
 type SapvirtualinstanceSapvirtualInstance_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -63,6 +63,5 @@ type SapvirtualinstanceSapvirtualInstanceAttrs struct {
 
 var SapvirtualinstanceSapvirtualInstance = ubx.DataSourceBinding{
 	WireType: "azure_workloads_sapvirtualinstance_sapvirtual_instance",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -63,26 +63,9 @@ const PrivateEndpointConnection_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
-const PrivateEndpointConnection_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface PrivateEndpointConnectionConfig {
-  /** The resource identifier. */
-  id?: string | Computed<string>;
-  /** The resource name. */
-  name?: string | Computed<string>;
   /** The properties of a private endpoint connection. */
   properties: PrivateEndpointConnection_Properties | Computed<PrivateEndpointConnection_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: PrivateEndpointConnection_SystemData | Computed<PrivateEndpointConnection_SystemData>;
-  /** The resource type. */
-  type?: string | Computed<string>;
 }
 
 export interface PrivateEndpointConnectionAttrs {
@@ -101,18 +84,10 @@ export interface PrivateEndpointConnectionAttrs {
 export const PrivateEndpointConnection: ResourceBinding<PrivateEndpointConnectionConfig, PrivateEndpointConnectionAttrs> = {
   wireType: "azure_digitaltwins_private_endpoint_connection",
   fields: {
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: PrivateEndpointConnection_PropertiesFields,
     },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: PrivateEndpointConnection_SystemDataFields,
-    },
-    type: "type",
   },
 };

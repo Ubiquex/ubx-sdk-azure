@@ -7,20 +7,14 @@ export interface Reservation_Properties_InstanceView_ReservationStateInfo {
 }
 
 export interface Reservation_Properties_InstanceView_Statuses {
-  /** The status code for the capacity reservation, indicating its current state (e.g., 'ProvisioningState/succeeded'). (AI-inferred) */
   code?: string | Computed<string>;
-  /** The human-readable, localized description of the status code associated with the capacity reservation instance. (AI-inferred) */
   displayStatus?: string | Computed<string>;
-  /** The severity level of the status, which can be 'Info', 'Warning', or 'Error'. (AI-inferred) */
   level?: string | Computed<string>;
-  /** The human-readable message that provides additional details about the status condition. (AI-inferred) */
   message?: string | Computed<string>;
-  /** The timestamp indicating when the status was observed. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
 export interface Reservation_Properties_InstanceView_UtilizationInfo_VirtualMachinesAllocated {
-  /** The resource ID of a virtual machine that is allocated to this capacity reservation. (AI-inferred) */
   id?: string | Computed<string>;
 }
 

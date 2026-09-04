@@ -15,11 +15,11 @@ type BotChannel_Properties struct {
 }
 
 var BotChannel_PropertiesFields = ubx.FieldMap{
-		"ChannelName": ubx.FieldSpec{WireName: "channel_name"},
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ChannelName":       ubx.FieldSpec{WireName: "channel_name"},
+	"Etag":              ubx.FieldSpec{WireName: "etag"},
+	"Location":          ubx.FieldSpec{WireName: "location"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type BotChannelConfig struct {
 	// Channel definition
@@ -36,8 +36,8 @@ var BotChannel = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BotChannel_PropertiesFields,
+			Kind:     "object",
+			Fields:   BotChannel_PropertiesFields,
 		},
 	},
 }

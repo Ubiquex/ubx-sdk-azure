@@ -8,37 +8,37 @@ type ManagementOpenapiScheduledAction_Value_Properties_FileDestination struct {
 }
 
 type ManagementOpenapiScheduledAction_Value_Properties_Notification struct {
-	Language any
-	Message any
+	Language       any
+	Message        any
 	RegionalFormat any
-	Subject any
-	To any
+	Subject        any
+	To             any
 }
 
 type ManagementOpenapiScheduledAction_Value_Properties_Schedule struct {
-	DayOfMonth any
-	DaysOfWeek any
-	EndDate any
-	Frequency any
-	HourOfDay any
-	StartDate any
+	DayOfMonth   any
+	DaysOfWeek   any
+	EndDate      any
+	Frequency    any
+	HourOfDay    any
+	StartDate    any
 	WeeksOfMonth any
 }
 
 type ManagementOpenapiScheduledAction_Value_Properties struct {
-	DisplayName any
-	FileDestination any
-	Notification any
+	DisplayName       any
+	FileDestination   any
+	Notification      any
 	NotificationEmail any
-	Schedule any
-	Scope any
-	Status any
-	ViewId any
+	Schedule          any
+	Scope             any
+	Status            any
+	ViewId            any
 }
 
 type ManagementOpenapiScheduledAction_Value struct {
-	ETag any
-	Kind any
+	ETag       any
+	Kind       any
 	Properties any
 }
 
@@ -54,6 +54,5 @@ type ManagementOpenapiScheduledActionAttrs struct {
 
 var ManagementOpenapiScheduledAction = ubx.DataSourceBinding{
 	WireType: "azure_cost_management_openapi_scheduled_action",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

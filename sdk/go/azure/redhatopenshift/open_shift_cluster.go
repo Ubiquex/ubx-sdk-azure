@@ -4,7 +4,7 @@ package redhatopenshift
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenShiftCluster_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -49,8 +49,8 @@ type OpenShiftCluster_Properties_ConsoleProfile struct {
 }
 
 type OpenShiftCluster_Properties_IngressProfiles struct {
-	Ip any
-	Name any
+	Ip         any
+	Name       any
 	Visibility any
 }
 
@@ -95,8 +95,8 @@ type OpenShiftCluster_Properties_NetworkProfile struct {
 }
 
 type OpenShiftCluster_Properties_PlatformWorkloadIdentityProfile_PlatformWorkloadIdentities struct {
-	ClientId any
-	ObjectId any
+	ClientId   any
+	ObjectId   any
 	ResourceId any
 }
 
@@ -115,13 +115,13 @@ type OpenShiftCluster_Properties_ServicePrincipalProfile struct {
 }
 
 type OpenShiftCluster_Properties_WorkerProfiles struct {
-	Count any
+	Count               any
 	DiskEncryptionSetId any
-	DiskSizeGb any
-	EncryptionAtHost any
-	Name any
-	SubnetId any
-	VmSize any
+	DiskSizeGb          any
+	EncryptionAtHost    any
+	Name                any
+	SubnetId            any
+	VmSize              any
 }
 
 type OpenShiftCluster_Properties struct {
@@ -150,169 +150,169 @@ type OpenShiftCluster_Properties struct {
 }
 
 var OpenShiftCluster_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenShiftCluster_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenShiftCluster_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenShiftCluster_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenShiftCluster_Properties_ApiserverProfileFields = ubx.FieldMap{
-		"Ip": ubx.FieldSpec{WireName: "ip"},
-		"Url": ubx.FieldSpec{WireName: "url"},
-		"Visibility": ubx.FieldSpec{WireName: "visibility"},
-	}
+	"Ip":         ubx.FieldSpec{WireName: "ip"},
+	"Url":        ubx.FieldSpec{WireName: "url"},
+	"Visibility": ubx.FieldSpec{WireName: "visibility"},
+}
 
 var OpenShiftCluster_Properties_ClusterProfileFields = ubx.FieldMap{
-		"Domain": ubx.FieldSpec{WireName: "domain"},
-		"FipsValidatedModules": ubx.FieldSpec{WireName: "fips_validated_modules"},
-		"OidcIssuer": ubx.FieldSpec{WireName: "oidc_issuer"},
-		"PullSecret": ubx.FieldSpec{WireName: "pull_secret"},
-		"ResourceGroupId": ubx.FieldSpec{WireName: "resource_group_id"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Domain":               ubx.FieldSpec{WireName: "domain"},
+	"FipsValidatedModules": ubx.FieldSpec{WireName: "fips_validated_modules"},
+	"OidcIssuer":           ubx.FieldSpec{WireName: "oidc_issuer"},
+	"PullSecret":           ubx.FieldSpec{WireName: "pull_secret"},
+	"ResourceGroupId":      ubx.FieldSpec{WireName: "resource_group_id"},
+	"Version":              ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenShiftCluster_Properties_ConsoleProfileFields = ubx.FieldMap{
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"Url": ubx.FieldSpec{WireName: "url"},
+}
 
 var OpenShiftCluster_Properties_IngressProfilesFields = ubx.FieldMap{
-		"Ip": ubx.FieldSpec{WireName: "ip"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Visibility": ubx.FieldSpec{WireName: "visibility"},
-	}
+	"Ip":         ubx.FieldSpec{WireName: "ip"},
+	"Name":       ubx.FieldSpec{WireName: "name"},
+	"Visibility": ubx.FieldSpec{WireName: "visibility"},
+}
 
 var OpenShiftCluster_Properties_MasterProfileFields = ubx.FieldMap{
-		"DiskEncryptionSetId": ubx.FieldSpec{WireName: "disk_encryption_set_id"},
-		"EncryptionAtHost": ubx.FieldSpec{WireName: "encryption_at_host"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-	}
+	"DiskEncryptionSetId": ubx.FieldSpec{WireName: "disk_encryption_set_id"},
+	"EncryptionAtHost":    ubx.FieldSpec{WireName: "encryption_at_host"},
+	"SubnetId":            ubx.FieldSpec{WireName: "subnet_id"},
+	"VmSize":              ubx.FieldSpec{WireName: "vm_size"},
+}
 
 var OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfile_ManagedOutboundIpsFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-	}
+	"Count": ubx.FieldSpec{WireName: "count"},
+}
 
 var OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfileFields = ubx.FieldMap{
-		"EffectiveOutboundIps": ubx.FieldSpec{
-			WireName: "effective_outbound_ips",
-			Kind: "list",
-			Fields: OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields,
-		},
-		"ManagedOutboundIps": ubx.FieldSpec{
-			WireName: "managed_outbound_ips",
-			Kind: "object",
-			Fields: OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfile_ManagedOutboundIpsFields,
-		},
-	}
+	"EffectiveOutboundIps": ubx.FieldSpec{
+		WireName: "effective_outbound_ips",
+		Kind:     "list",
+		Fields:   OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields,
+	},
+	"ManagedOutboundIps": ubx.FieldSpec{
+		WireName: "managed_outbound_ips",
+		Kind:     "object",
+		Fields:   OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfile_ManagedOutboundIpsFields,
+	},
+}
 
 var OpenShiftCluster_Properties_NetworkProfileFields = ubx.FieldMap{
-		"LoadBalancerProfile": ubx.FieldSpec{
-			WireName: "load_balancer_profile",
-			Kind: "object",
-			Fields: OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfileFields,
-		},
-		"OutboundType": ubx.FieldSpec{WireName: "outbound_type"},
-		"PodCidr": ubx.FieldSpec{WireName: "pod_cidr"},
-		"PreconfiguredNsg": ubx.FieldSpec{WireName: "preconfigured_nsg"},
-		"ServiceCidr": ubx.FieldSpec{WireName: "service_cidr"},
-	}
+	"LoadBalancerProfile": ubx.FieldSpec{
+		WireName: "load_balancer_profile",
+		Kind:     "object",
+		Fields:   OpenShiftCluster_Properties_NetworkProfile_LoadBalancerProfileFields,
+	},
+	"OutboundType":     ubx.FieldSpec{WireName: "outbound_type"},
+	"PodCidr":          ubx.FieldSpec{WireName: "pod_cidr"},
+	"PreconfiguredNsg": ubx.FieldSpec{WireName: "preconfigured_nsg"},
+	"ServiceCidr":      ubx.FieldSpec{WireName: "service_cidr"},
+}
 
 var OpenShiftCluster_Properties_PlatformWorkloadIdentityProfile_PlatformWorkloadIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ClientId":   ubx.FieldSpec{WireName: "client_id"},
+	"ObjectId":   ubx.FieldSpec{WireName: "object_id"},
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var OpenShiftCluster_Properties_PlatformWorkloadIdentityProfileFields = ubx.FieldMap{
-		"PlatformWorkloadIdentities": ubx.FieldSpec{
-			WireName: "platform_workload_identities",
-			Kind: "map",
-			Fields: OpenShiftCluster_Properties_PlatformWorkloadIdentityProfile_PlatformWorkloadIdentitiesFields,
-		},
-		"UpgradeableTo": ubx.FieldSpec{WireName: "upgradeable_to"},
-	}
+	"PlatformWorkloadIdentities": ubx.FieldSpec{
+		WireName: "platform_workload_identities",
+		Kind:     "map",
+		Fields:   OpenShiftCluster_Properties_PlatformWorkloadIdentityProfile_PlatformWorkloadIdentitiesFields,
+	},
+	"UpgradeableTo": ubx.FieldSpec{WireName: "upgradeable_to"},
+}
 
 var OpenShiftCluster_Properties_ServicePrincipalProfileFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-	}
+	"ClientId":     ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
+}
 
 var OpenShiftCluster_Properties_WorkerProfilesFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"DiskEncryptionSetId": ubx.FieldSpec{WireName: "disk_encryption_set_id"},
-		"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
-		"EncryptionAtHost": ubx.FieldSpec{WireName: "encryption_at_host"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-	}
+	"Count":               ubx.FieldSpec{WireName: "count"},
+	"DiskEncryptionSetId": ubx.FieldSpec{WireName: "disk_encryption_set_id"},
+	"DiskSizeGb":          ubx.FieldSpec{WireName: "disk_size_gb"},
+	"EncryptionAtHost":    ubx.FieldSpec{WireName: "encryption_at_host"},
+	"Name":                ubx.FieldSpec{WireName: "name"},
+	"SubnetId":            ubx.FieldSpec{WireName: "subnet_id"},
+	"VmSize":              ubx.FieldSpec{WireName: "vm_size"},
+}
 
 var OpenShiftCluster_PropertiesFields = ubx.FieldMap{
-		"ApiserverProfile": ubx.FieldSpec{
-			WireName: "apiserver_profile",
-			Kind: "object",
-			Fields: OpenShiftCluster_Properties_ApiserverProfileFields,
-		},
-		"ClusterProfile": ubx.FieldSpec{
-			WireName: "cluster_profile",
-			Kind: "object",
-			Fields: OpenShiftCluster_Properties_ClusterProfileFields,
-		},
-		"ConsoleProfile": ubx.FieldSpec{
-			WireName: "console_profile",
-			Kind: "object",
-			Fields: OpenShiftCluster_Properties_ConsoleProfileFields,
-		},
-		"IngressProfiles": ubx.FieldSpec{
-			WireName: "ingress_profiles",
-			Kind: "list",
-			Fields: OpenShiftCluster_Properties_IngressProfilesFields,
-		},
-		"MasterProfile": ubx.FieldSpec{
-			WireName: "master_profile",
-			Kind: "object",
-			Fields: OpenShiftCluster_Properties_MasterProfileFields,
-		},
-		"NetworkProfile": ubx.FieldSpec{
-			WireName: "network_profile",
-			Kind: "object",
-			Fields: OpenShiftCluster_Properties_NetworkProfileFields,
-		},
-		"PlatformWorkloadIdentityProfile": ubx.FieldSpec{
-			WireName: "platform_workload_identity_profile",
-			Kind: "object",
-			Fields: OpenShiftCluster_Properties_PlatformWorkloadIdentityProfileFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServicePrincipalProfile": ubx.FieldSpec{
-			WireName: "service_principal_profile",
-			Kind: "object",
-			Fields: OpenShiftCluster_Properties_ServicePrincipalProfileFields,
-		},
-		"WorkerProfiles": ubx.FieldSpec{
-			WireName: "worker_profiles",
-			Kind: "list",
-			Fields: OpenShiftCluster_Properties_WorkerProfilesFields,
-		},
-		"WorkerProfilesStatus": ubx.FieldSpec{
-			WireName: "worker_profiles_status",
-			Kind: "list",
-			Fields: OpenShiftCluster_Properties_WorkerProfilesFields,
-		},
-	}
+	"ApiserverProfile": ubx.FieldSpec{
+		WireName: "apiserver_profile",
+		Kind:     "object",
+		Fields:   OpenShiftCluster_Properties_ApiserverProfileFields,
+	},
+	"ClusterProfile": ubx.FieldSpec{
+		WireName: "cluster_profile",
+		Kind:     "object",
+		Fields:   OpenShiftCluster_Properties_ClusterProfileFields,
+	},
+	"ConsoleProfile": ubx.FieldSpec{
+		WireName: "console_profile",
+		Kind:     "object",
+		Fields:   OpenShiftCluster_Properties_ConsoleProfileFields,
+	},
+	"IngressProfiles": ubx.FieldSpec{
+		WireName: "ingress_profiles",
+		Kind:     "list",
+		Fields:   OpenShiftCluster_Properties_IngressProfilesFields,
+	},
+	"MasterProfile": ubx.FieldSpec{
+		WireName: "master_profile",
+		Kind:     "object",
+		Fields:   OpenShiftCluster_Properties_MasterProfileFields,
+	},
+	"NetworkProfile": ubx.FieldSpec{
+		WireName: "network_profile",
+		Kind:     "object",
+		Fields:   OpenShiftCluster_Properties_NetworkProfileFields,
+	},
+	"PlatformWorkloadIdentityProfile": ubx.FieldSpec{
+		WireName: "platform_workload_identity_profile",
+		Kind:     "object",
+		Fields:   OpenShiftCluster_Properties_PlatformWorkloadIdentityProfileFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServicePrincipalProfile": ubx.FieldSpec{
+		WireName: "service_principal_profile",
+		Kind:     "object",
+		Fields:   OpenShiftCluster_Properties_ServicePrincipalProfileFields,
+	},
+	"WorkerProfiles": ubx.FieldSpec{
+		WireName: "worker_profiles",
+		Kind:     "list",
+		Fields:   OpenShiftCluster_Properties_WorkerProfilesFields,
+	},
+	"WorkerProfilesStatus": ubx.FieldSpec{
+		WireName: "worker_profiles_status",
+		Kind:     "list",
+		Fields:   OpenShiftCluster_Properties_WorkerProfilesFields,
+	},
+}
 
 type OpenShiftClusterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -333,13 +333,13 @@ var OpenShiftCluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenShiftCluster_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenShiftCluster_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenShiftCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenShiftCluster_PropertiesFields,
 		},
 	},
 }

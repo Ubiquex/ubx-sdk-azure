@@ -4,18 +4,18 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkspaceRestorableDroppedSqlPool_Value_Properties struct {
-	CreationDate any
-	DatabaseName any
-	DeletionDate any
-	EarliestRestoreDate any
-	Edition any
-	ElasticPoolName any
-	MaxSizeBytes any
+	CreationDate          any
+	DatabaseName          any
+	DeletionDate          any
+	EarliestRestoreDate   any
+	Edition               any
+	ElasticPoolName       any
+	MaxSizeBytes          any
 	ServiceLevelObjective any
 }
 
 type WorkspaceRestorableDroppedSqlPool_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -29,6 +29,5 @@ type WorkspaceRestorableDroppedSqlPoolAttrs struct {
 
 var WorkspaceRestorableDroppedSqlPool = ubx.DataSourceBinding{
 	WireType: "azure_synapse_workspace_restorable_dropped_sql_pool",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

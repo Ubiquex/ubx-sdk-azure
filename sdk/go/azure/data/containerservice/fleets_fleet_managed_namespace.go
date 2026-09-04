@@ -4,39 +4,39 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FleetsFleetManagedNamespace_Value_Properties_ManagedNamespaceProperties_DefaultNetworkPolicy struct {
-	Egress any
+	Egress  any
 	Ingress any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_ManagedNamespaceProperties_DefaultResourceQuota struct {
-	CpuLimit any
-	CpuRequest any
-	MemoryLimit any
+	CpuLimit      any
+	CpuRequest    any
+	MemoryLimit   any
 	MemoryRequest any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_ManagedNamespaceProperties struct {
-	Annotations any
+	Annotations          any
 	DefaultNetworkPolicy any
 	DefaultResourceQuota any
-	Labels any
+	Labels               any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector_MatchExpressions struct {
-	Key any
+	Key      any
 	Operator any
-	Values any
+	Values   any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector struct {
 	MatchExpressions any
-	MatchLabels any
+	MatchLabels      any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector_MatchExpressions struct {
-	Name any
+	Name     any
 	Operator any
-	Values any
+	Values   any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector struct {
@@ -44,7 +44,7 @@ type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy_PlacementPro
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms struct {
-	LabelSelector any
+	LabelSelector    any
 	PropertySelector any
 }
 
@@ -61,17 +61,17 @@ type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy_PlacementPro
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Tolerations struct {
-	Effect any
-	Key any
+	Effect   any
+	Key      any
 	Operator any
-	Value any
+	Value    any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy struct {
-	Affinity any
-	ClusterNames any
+	Affinity      any
+	ClusterNames  any
 	PlacementType any
-	Tolerations any
+	Tolerations   any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement struct {
@@ -84,7 +84,7 @@ type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy_PlacementPro
 
 type FleetsFleetManagedNamespace_Value_Properties_PropagationPolicy struct {
 	PlacementProfile any
-	Type any
+	Type             any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_Status_LastOperationError_AdditionalInfo struct {
@@ -97,37 +97,37 @@ type FleetsFleetManagedNamespace_Value_Properties_Status_LastOperationError_Deta
 
 type FleetsFleetManagedNamespace_Value_Properties_Status_LastOperationError_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_Status_LastOperationError struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties_Status struct {
 	LastOperationError any
-	LastOperationId any
+	LastOperationId    any
 }
 
 type FleetsFleetManagedNamespace_Value_Properties struct {
-	AdoptionPolicy any
-	DeletePolicy any
+	AdoptionPolicy             any
+	DeletePolicy               any
 	ManagedNamespaceProperties any
-	PortalFqdn any
-	PropagationPolicy any
-	ProvisioningState any
-	Status any
+	PortalFqdn                 any
+	PropagationPolicy          any
+	ProvisioningState          any
+	Status                     any
 }
 
 type FleetsFleetManagedNamespace_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 

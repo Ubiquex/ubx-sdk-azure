@@ -3,11 +3,58 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type ServiceVcenter_Properties_HealthErrors_InnerHealthErrors struct {
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
+	RecoveryProviderErrorMessage any
+	SummaryMessage               any
+}
+
+type ServiceVcenter_Properties_HealthErrors struct {
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
+	RecoveryProviderErrorMessage any
+	SummaryMessage               any
+}
+
 type ServiceVcenter_Properties struct {
+	// The VCenter discovery status.
+	DiscoveryStatus any
+	// The ARM resource name of the fabric containing this VCenter.
+	FabricArmResourceName any
 	// The friendly name of the vCenter.
 	FriendlyName any
+	// The health errors for this VCenter.
+	HealthErrors any
+	// The infrastructure Id of vCenter.
+	InfrastructureId any
+	// VCenter internal ID.
+	InternalId any
 	// The IP address of the vCenter to be discovered.
 	IpAddress any
+	// The time when the last heartbeat was received by vCenter.
+	LastHeartbeat any
 	// The port number for discovery.
 	Port any
 	// The process server Id from where the discovery is orchestrated.
@@ -16,13 +63,62 @@ type ServiceVcenter_Properties struct {
 	RunAsAccountId any
 }
 
+var ServiceVcenter_Properties_HealthErrors_InnerHealthErrorsFields = ubx.FieldMap{
+	"CreationTimeUtc":              ubx.FieldSpec{WireName: "creation_time_utc"},
+	"CustomerResolvability":        ubx.FieldSpec{WireName: "customer_resolvability"},
+	"EntityId":                     ubx.FieldSpec{WireName: "entity_id"},
+	"ErrorCategory":                ubx.FieldSpec{WireName: "error_category"},
+	"ErrorCode":                    ubx.FieldSpec{WireName: "error_code"},
+	"ErrorId":                      ubx.FieldSpec{WireName: "error_id"},
+	"ErrorLevel":                   ubx.FieldSpec{WireName: "error_level"},
+	"ErrorMessage":                 ubx.FieldSpec{WireName: "error_message"},
+	"ErrorSource":                  ubx.FieldSpec{WireName: "error_source"},
+	"ErrorType":                    ubx.FieldSpec{WireName: "error_type"},
+	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
+	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
+	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
+}
+
+var ServiceVcenter_Properties_HealthErrorsFields = ubx.FieldMap{
+	"CreationTimeUtc":       ubx.FieldSpec{WireName: "creation_time_utc"},
+	"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
+	"EntityId":              ubx.FieldSpec{WireName: "entity_id"},
+	"ErrorCategory":         ubx.FieldSpec{WireName: "error_category"},
+	"ErrorCode":             ubx.FieldSpec{WireName: "error_code"},
+	"ErrorId":               ubx.FieldSpec{WireName: "error_id"},
+	"ErrorLevel":            ubx.FieldSpec{WireName: "error_level"},
+	"ErrorMessage":          ubx.FieldSpec{WireName: "error_message"},
+	"ErrorSource":           ubx.FieldSpec{WireName: "error_source"},
+	"ErrorType":             ubx.FieldSpec{WireName: "error_type"},
+	"InnerHealthErrors": ubx.FieldSpec{
+		WireName: "inner_health_errors",
+		Kind:     "list",
+		Fields:   ServiceVcenter_Properties_HealthErrors_InnerHealthErrorsFields,
+	},
+	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
+	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
+	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
+}
+
 var ServiceVcenter_PropertiesFields = ubx.FieldMap{
-		"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"ProcessServerId": ubx.FieldSpec{WireName: "process_server_id"},
-		"RunAsAccountId": ubx.FieldSpec{WireName: "run_as_account_id"},
-	}
+	"DiscoveryStatus":       ubx.FieldSpec{WireName: "discovery_status"},
+	"FabricArmResourceName": ubx.FieldSpec{WireName: "fabric_arm_resource_name"},
+	"FriendlyName":          ubx.FieldSpec{WireName: "friendly_name"},
+	"HealthErrors": ubx.FieldSpec{
+		WireName: "health_errors",
+		Kind:     "list",
+		Fields:   ServiceVcenter_Properties_HealthErrorsFields,
+	},
+	"InfrastructureId": ubx.FieldSpec{WireName: "infrastructure_id"},
+	"InternalId":       ubx.FieldSpec{WireName: "internal_id"},
+	"IpAddress":        ubx.FieldSpec{WireName: "ip_address"},
+	"LastHeartbeat":    ubx.FieldSpec{WireName: "last_heartbeat"},
+	"Port":             ubx.FieldSpec{WireName: "port"},
+	"ProcessServerId":  ubx.FieldSpec{WireName: "process_server_id"},
+	"RunAsAccountId":   ubx.FieldSpec{WireName: "run_as_account_id"},
+}
 
 type ServiceVcenterConfig struct {
 	// The properties of an add vCenter request.
@@ -41,8 +137,8 @@ var ServiceVcenter = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceVcenter_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceVcenter_PropertiesFields,
 		},
 	},
 }

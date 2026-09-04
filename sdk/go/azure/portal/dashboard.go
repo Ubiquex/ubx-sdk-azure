@@ -8,11 +8,11 @@ type Dashboard_Properties_Lenses_Parts_Metadata struct {
 }
 
 type Dashboard_Properties_Lenses_Parts_Position struct {
-	ColSpan any
+	ColSpan  any
 	Metadata any
-	RowSpan any
-	X any
-	Y any
+	RowSpan  any
+	X        any
+	Y        any
 }
 
 type Dashboard_Properties_Lenses_Parts struct {
@@ -22,8 +22,8 @@ type Dashboard_Properties_Lenses_Parts struct {
 
 type Dashboard_Properties_Lenses struct {
 	Metadata any
-	Order any
-	Parts any
+	Order    any
+	Parts    any
 }
 
 type Dashboard_Properties struct {
@@ -36,49 +36,49 @@ type Dashboard_Properties struct {
 }
 
 var Dashboard_Properties_Lenses_Parts_MetadataFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var Dashboard_Properties_Lenses_Parts_PositionFields = ubx.FieldMap{
-		"ColSpan": ubx.FieldSpec{WireName: "col_span"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"RowSpan": ubx.FieldSpec{WireName: "row_span"},
-		"X": ubx.FieldSpec{WireName: "x"},
-		"Y": ubx.FieldSpec{WireName: "y"},
-	}
+	"ColSpan":  ubx.FieldSpec{WireName: "col_span"},
+	"Metadata": ubx.FieldSpec{WireName: "metadata"},
+	"RowSpan":  ubx.FieldSpec{WireName: "row_span"},
+	"X":        ubx.FieldSpec{WireName: "x"},
+	"Y":        ubx.FieldSpec{WireName: "y"},
+}
 
 var Dashboard_Properties_Lenses_PartsFields = ubx.FieldMap{
-		"Metadata": ubx.FieldSpec{
-			WireName: "metadata",
-			Kind: "object",
-			Fields: Dashboard_Properties_Lenses_Parts_MetadataFields,
-		},
-		"Position": ubx.FieldSpec{
-			WireName: "position",
-			Kind: "object",
-			Fields: Dashboard_Properties_Lenses_Parts_PositionFields,
-		},
-	}
+	"Metadata": ubx.FieldSpec{
+		WireName: "metadata",
+		Kind:     "object",
+		Fields:   Dashboard_Properties_Lenses_Parts_MetadataFields,
+	},
+	"Position": ubx.FieldSpec{
+		WireName: "position",
+		Kind:     "object",
+		Fields:   Dashboard_Properties_Lenses_Parts_PositionFields,
+	},
+}
 
 var Dashboard_Properties_LensesFields = ubx.FieldMap{
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"Order": ubx.FieldSpec{WireName: "order"},
-		"Parts": ubx.FieldSpec{
-			WireName: "parts",
-			Kind: "list",
-			Fields: Dashboard_Properties_Lenses_PartsFields,
-		},
-	}
+	"Metadata": ubx.FieldSpec{WireName: "metadata"},
+	"Order":    ubx.FieldSpec{WireName: "order"},
+	"Parts": ubx.FieldSpec{
+		WireName: "parts",
+		Kind:     "list",
+		Fields:   Dashboard_Properties_Lenses_PartsFields,
+	},
+}
 
 var Dashboard_PropertiesFields = ubx.FieldMap{
-		"Lenses": ubx.FieldSpec{
-			WireName: "lenses",
-			Kind: "list",
-			Fields: Dashboard_Properties_LensesFields,
-		},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Lenses": ubx.FieldSpec{
+		WireName: "lenses",
+		Kind:     "list",
+		Fields:   Dashboard_Properties_LensesFields,
+	},
+	"Metadata":          ubx.FieldSpec{WireName: "metadata"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type DashboardConfig struct {
 	// Dashboard Properties with Provisioning state
@@ -95,8 +95,8 @@ var Dashboard = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Dashboard_PropertiesFields,
+			Kind:     "object",
+			Fields:   Dashboard_PropertiesFields,
 		},
 	},
 }

@@ -25,6 +25,5 @@ type ApimworkspacesProductGroupLinkContractAttrs struct {
 
 var ApimworkspacesProductGroupLinkContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimworkspaces_product_group_link_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

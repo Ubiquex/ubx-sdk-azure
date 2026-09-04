@@ -4,11 +4,11 @@ package mysql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiServerBackupV2_Value_Properties struct {
-	BackupNameV2 any
-	BackupType any
-	CompletedTime any
+	BackupNameV2      any
+	BackupType        any
+	CompletedTime     any
 	ProvisioningState any
-	Source any
+	Source            any
 }
 
 type OpenapiServerBackupV2_Value struct {
@@ -21,7 +21,7 @@ type OpenapiServerBackupV2Config struct {
 
 type OpenapiServerBackupV2Attrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The ServerBackupV2 items on this page
 	Value any

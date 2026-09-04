@@ -23,15 +23,15 @@ type SreagentAgentConnector_Properties struct {
 }
 
 var SreagentAgentConnector_PropertiesFields = ubx.FieldMap{
-		"DataConnectorType": ubx.FieldSpec{WireName: "data_connector_type"},
-		"DataSource": ubx.FieldSpec{WireName: "data_source"},
-		"DeploymentError": ubx.FieldSpec{WireName: "deployment_error"},
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"ExtendedProperties": ubx.FieldSpec{WireName: "extended_properties"},
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-	}
+	"DataConnectorType":  ubx.FieldSpec{WireName: "data_connector_type"},
+	"DataSource":         ubx.FieldSpec{WireName: "data_source"},
+	"DeploymentError":    ubx.FieldSpec{WireName: "deployment_error"},
+	"Endpoint":           ubx.FieldSpec{WireName: "endpoint"},
+	"ExtendedProperties": ubx.FieldSpec{WireName: "extended_properties"},
+	"Identity":           ubx.FieldSpec{WireName: "identity"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+	"Source":             ubx.FieldSpec{WireName: "source"},
+}
 
 type SreagentAgentConnectorConfig struct {
 	// Agent Connector Properties
@@ -48,8 +48,8 @@ var SreagentAgentConnector = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SreagentAgentConnector_PropertiesFields,
+			Kind:     "object",
+			Fields:   SreagentAgentConnector_PropertiesFields,
 		},
 	},
 }

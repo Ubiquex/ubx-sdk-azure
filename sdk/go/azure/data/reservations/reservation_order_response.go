@@ -4,43 +4,43 @@ package reservations
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ReservationOrderResponse_Value_Properties_PlanInformation_PricingCurrencyTotal struct {
-	Amount any
+	Amount       any
 	CurrencyCode any
 }
 
 type ReservationOrderResponse_Value_Properties_PlanInformation_Transactions_ExtendedStatusInfo struct {
-	Message any
+	Message    any
 	StatusCode any
 }
 
 type ReservationOrderResponse_Value_Properties_PlanInformation_Transactions struct {
-	BillingAccount any
+	BillingAccount       any
 	BillingCurrencyTotal any
-	DueDate any
-	ExtendedStatusInfo any
-	PaymentDate any
+	DueDate              any
+	ExtendedStatusInfo   any
+	PaymentDate          any
 	PricingCurrencyTotal any
-	Status any
+	Status               any
 }
 
 type ReservationOrderResponse_Value_Properties_PlanInformation struct {
-	NextPaymentDueDate any
+	NextPaymentDueDate   any
 	PricingCurrencyTotal any
-	StartDate any
-	Transactions any
+	StartDate            any
+	Transactions         any
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties_AppliedScopeProperties struct {
-	DisplayName any
+	DisplayName       any
 	ManagementGroupId any
-	ResourceGroupId any
-	SubscriptionId any
-	TenantId any
+	ResourceGroupId   any
+	SubscriptionId    any
+	TenantId          any
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties_MergeProperties struct {
 	MergeDestination any
-	MergeSources any
+	MergeSources     any
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties struct {
@@ -48,18 +48,18 @@ type ReservationOrderResponse_Value_Properties_Reservations_Properties_RenewProp
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties struct {
-	AppliedScopeProperties any
-	AppliedScopeType any
-	AppliedScopes any
-	BillingPlan any
-	BillingScopeId any
-	DisplayName any
-	Quantity any
-	Renew any
+	AppliedScopeProperties     any
+	AppliedScopeType           any
+	AppliedScopes              any
+	BillingPlan                any
+	BillingScopeId             any
+	DisplayName                any
+	Quantity                   any
+	Renew                      any
 	ReservedResourceProperties any
-	ReservedResourceType any
-	ReviewDateTime any
-	Term any
+	ReservedResourceType       any
+	ReviewDateTime             any
+	Term                       any
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku struct {
@@ -67,103 +67,103 @@ type ReservationOrderResponse_Value_Properties_Reservations_Properties_RenewProp
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties_RenewProperties_PurchaseProperties struct {
-	Location any
+	Location   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties_RenewProperties struct {
 	BillingCurrencyTotal any
 	PricingCurrencyTotal any
-	PurchaseProperties any
+	PurchaseProperties   any
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties_SplitProperties struct {
 	SplitDestinations any
-	SplitSource any
+	SplitSource       any
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties_SwapProperties struct {
 	SwapDestination any
-	SwapSource any
+	SwapSource      any
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties_Utilization_Aggregates struct {
-	Grain any
+	Grain     any
 	GrainUnit any
-	Value any
+	Value     any
 	ValueUnit any
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties_Utilization struct {
 	Aggregates any
-	Trend any
+	Trend      any
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations_Properties struct {
-	AppliedScopeProperties any
-	AppliedScopeType any
-	AppliedScopes any
-	Archived any
-	BenefitStartTime any
-	BillingPlan any
-	BillingScopeId any
-	Capabilities any
-	DisplayName any
-	DisplayProvisioningState any
-	EffectiveDateTime any
-	ExpiryDate any
-	ExpiryDateTime any
-	ExtendedStatusInfo any
-	InstanceFlexibility any
-	LastUpdatedDateTime any
-	MergeProperties any
-	ProvisioningState any
-	ProvisioningSubState any
-	PurchaseDate any
-	PurchaseDateTime any
-	Quantity any
-	Renew any
-	RenewDestination any
-	RenewProperties any
-	RenewSource any
-	ReservedResourceType any
-	ReviewDateTime any
-	SkuDescription any
-	SplitProperties any
-	SwapProperties any
-	Term any
+	AppliedScopeProperties       any
+	AppliedScopeType             any
+	AppliedScopes                any
+	Archived                     any
+	BenefitStartTime             any
+	BillingPlan                  any
+	BillingScopeId               any
+	Capabilities                 any
+	DisplayName                  any
+	DisplayProvisioningState     any
+	EffectiveDateTime            any
+	ExpiryDate                   any
+	ExpiryDateTime               any
+	ExtendedStatusInfo           any
+	InstanceFlexibility          any
+	LastUpdatedDateTime          any
+	MergeProperties              any
+	ProvisioningState            any
+	ProvisioningSubState         any
+	PurchaseDate                 any
+	PurchaseDateTime             any
+	Quantity                     any
+	Renew                        any
+	RenewDestination             any
+	RenewProperties              any
+	RenewSource                  any
+	ReservedResourceType         any
+	ReviewDateTime               any
+	SkuDescription               any
+	SplitProperties              any
+	SwapProperties               any
+	Term                         any
 	UserFriendlyAppliedScopeType any
-	UserFriendlyRenewState any
-	Utilization any
+	UserFriendlyRenewState       any
+	Utilization                  any
 }
 
 type ReservationOrderResponse_Value_Properties_Reservations struct {
-	Etag any
-	Kind any
-	Location any
+	Etag       any
+	Kind       any
+	Location   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type ReservationOrderResponse_Value_Properties struct {
-	BenefitStartTime any
-	BillingPlan any
-	CreatedDateTime any
-	DisplayName any
-	ExpiryDate any
-	ExpiryDateTime any
-	OriginalQuantity any
-	PlanInformation any
+	BenefitStartTime  any
+	BillingPlan       any
+	CreatedDateTime   any
+	DisplayName       any
+	ExpiryDate        any
+	ExpiryDateTime    any
+	OriginalQuantity  any
+	PlanInformation   any
 	ProvisioningState any
-	RequestDateTime any
-	Reservations any
-	ReviewDateTime any
-	Term any
+	RequestDateTime   any
+	Reservations      any
+	ReviewDateTime    any
+	Term              any
 }
 
 type ReservationOrderResponse_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -179,6 +179,5 @@ type ReservationOrderResponseAttrs struct {
 
 var ReservationOrderResponse = ubx.DataSourceBinding{
 	WireType: "azure_reservations_reservation_order_response",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -17,61 +17,61 @@ type VirtualwanExpressRouteGateway_Value_Properties_ExpressRouteConnections_Prop
 }
 
 type VirtualwanExpressRouteGateway_Value_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids any
+	Ids    any
 	Labels any
 }
 
 type VirtualwanExpressRouteGateway_Value_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
 type VirtualwanExpressRouteGateway_Value_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes any
+	PropagateStaticRoutes          any
 	VnetLocalRouteOverrideCriteria any
 }
 
 type VirtualwanExpressRouteGateway_Value_Properties_ExpressRouteConnections_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections any
-	StaticRoutes any
+	BgpConnections     any
+	StaticRoutes       any
 	StaticRoutesConfig any
 }
 
 type VirtualwanExpressRouteGateway_Value_Properties_ExpressRouteConnections_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable any
-	InboundRouteMap any
-	OutboundRouteMap any
+	AssociatedRouteTable  any
+	InboundRouteMap       any
+	OutboundRouteMap      any
 	PropagatedRouteTables any
-	VnetRoutes any
+	VnetRoutes            any
 }
 
 type VirtualwanExpressRouteGateway_Value_Properties_ExpressRouteConnections_Properties struct {
-	AuthorizationKey any
-	EnableInternetSecurity any
-	EnablePrivateLinkFastPath any
+	AuthorizationKey           any
+	EnableInternetSecurity     any
+	EnablePrivateLinkFastPath  any
 	ExpressRouteCircuitPeering any
-	ExpressRouteGatewayBypass any
-	ProvisioningState any
-	RoutingConfiguration any
-	RoutingWeight any
+	ExpressRouteGatewayBypass  any
+	ProvisioningState          any
+	RoutingConfiguration       any
+	RoutingWeight              any
 }
 
 type VirtualwanExpressRouteGateway_Value_Properties_ExpressRouteConnections struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type VirtualwanExpressRouteGateway_Value_Properties struct {
 	AllowNonVirtualWanTraffic any
-	AutoScaleConfiguration any
-	ExpressRouteConnections any
-	ProvisioningState any
-	VirtualHub any
+	AutoScaleConfiguration    any
+	ExpressRouteConnections   any
+	ProvisioningState         any
+	VirtualHub                any
 }
 
 type VirtualwanExpressRouteGateway_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -85,6 +85,5 @@ type VirtualwanExpressRouteGatewayAttrs struct {
 
 var VirtualwanExpressRouteGateway = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_express_route_gateway",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -30,7 +30,7 @@ type BmsBackupResourceConfigResourceAttrs struct {
 	// The resource storage details.
 	Properties any
 	// Resource tags.
-	Tags any
+	Tags      any
 	VaultName any
 }
 

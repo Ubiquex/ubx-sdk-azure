@@ -17,12 +17,12 @@ type ApimcontenttypesContentTypeContract2_Properties struct {
 }
 
 var ApimcontenttypesContentTypeContract2_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Schema": ubx.FieldSpec{WireName: "schema"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Id":          ubx.FieldSpec{WireName: "id"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+	"Schema":      ubx.FieldSpec{WireName: "schema"},
+	"Version":     ubx.FieldSpec{WireName: "version"},
+}
 
 type ApimcontenttypesContentTypeContract2Config struct {
 	Properties any
@@ -37,8 +37,8 @@ var ApimcontenttypesContentTypeContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimcontenttypesContentTypeContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimcontenttypesContentTypeContract2_PropertiesFields,
 		},
 	},
 }

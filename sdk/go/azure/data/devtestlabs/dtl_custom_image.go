@@ -4,20 +4,20 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlCustomImage_Value_Properties_CustomImagePlan struct {
-	Id any
-	Offer any
+	Id        any
+	Offer     any
 	Publisher any
 }
 
 type DtlCustomImage_Value_Properties_DataDiskStorageInfo struct {
-	Lun any
+	Lun         any
 	StorageType any
 }
 
 type DtlCustomImage_Value_Properties_Vhd struct {
 	ImageName any
-	OsType any
-	SysPrep any
+	OsType    any
+	SysPrep   any
 }
 
 type DtlCustomImage_Value_Properties_Vm_LinuxOsInfo struct {
@@ -29,30 +29,30 @@ type DtlCustomImage_Value_Properties_Vm_WindowsOsInfo struct {
 }
 
 type DtlCustomImage_Value_Properties_Vm struct {
-	LinuxOsInfo any
-	SourceVmId any
+	LinuxOsInfo   any
+	SourceVmId    any
 	WindowsOsInfo any
 }
 
 type DtlCustomImage_Value_Properties struct {
-	Author any
-	CreationDate any
-	CustomImagePlan any
+	Author              any
+	CreationDate        any
+	CustomImagePlan     any
 	DataDiskStorageInfo any
-	Description any
-	IsPlanAuthorized any
-	ManagedImageId any
-	ManagedSnapshotId any
-	ProvisioningState any
-	UniqueIdentifier any
-	Vhd any
-	Vm any
+	Description         any
+	IsPlanAuthorized    any
+	ManagedImageId      any
+	ManagedSnapshotId   any
+	ProvisioningState   any
+	UniqueIdentifier    any
+	Vhd                 any
+	Vm                  any
 }
 
 type DtlCustomImage_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlCustomImageConfig struct {

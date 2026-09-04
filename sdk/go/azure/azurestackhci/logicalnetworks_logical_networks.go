@@ -26,7 +26,7 @@ type LogicalnetworksLogicalNetworks_Properties_Status struct {
 	// LogicalNetwork provisioning error code
 	ErrorCode any
 	// Descriptive error message
-	ErrorMessage any
+	ErrorMessage       any
 	ProvisioningStatus any
 }
 
@@ -36,24 +36,24 @@ type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpConfiguratio
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools_Info struct {
 	Available any
-	Used any
+	Used      any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools struct {
-	End any
-	Info any
+	End        any
+	Info       any
 	IpPoolType any
-	Name any
-	Start any
+	Name       any
+	Start      any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties struct {
-	AddressPrefix any
+	AddressPrefix    any
 	NextHopIpAddress any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -62,24 +62,24 @@ type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Pro
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets_Properties struct {
-	AddressPrefix any
-	AddressPrefixes any
-	IpAllocationMethod any
+	AddressPrefix             any
+	AddressPrefixes           any
+	IpAllocationMethod        any
 	IpConfigurationReferences any
-	IpPools any
-	RouteTable any
-	Vlan any
+	IpPools                   any
+	RouteTable                any
+	Vlan                      any
 }
 
 type LogicalnetworksLogicalNetworks_Properties_Subnets struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -97,133 +97,133 @@ type LogicalnetworksLogicalNetworks_Properties struct {
 }
 
 var LogicalnetworksLogicalNetworks_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_DhcpOptionsFields = ubx.FieldMap{
-		"DnsServers": ubx.FieldSpec{WireName: "dns_servers"},
-	}
+	"DnsServers": ubx.FieldSpec{WireName: "dns_servers"},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_Status_ProvisioningStatusFields = ubx.FieldMap{
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"OperationId": ubx.FieldSpec{WireName: "operation_id"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_StatusFields = ubx.FieldMap{
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"ProvisioningStatus": ubx.FieldSpec{
-			WireName: "provisioning_status",
-			Kind: "object",
-			Fields: LogicalnetworksLogicalNetworks_Properties_Status_ProvisioningStatusFields,
-		},
-	}
+	"ErrorCode":    ubx.FieldSpec{WireName: "error_code"},
+	"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
+	"ProvisioningStatus": ubx.FieldSpec{
+		WireName: "provisioning_status",
+		Kind:     "object",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_Status_ProvisioningStatusFields,
+	},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpConfigurationReferencesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools_InfoFields = ubx.FieldMap{
-		"Available": ubx.FieldSpec{WireName: "available"},
-		"Used": ubx.FieldSpec{WireName: "used"},
-	}
+	"Available": ubx.FieldSpec{WireName: "available"},
+	"Used":      ubx.FieldSpec{WireName: "used"},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPoolsFields = ubx.FieldMap{
-		"End": ubx.FieldSpec{WireName: "end"},
-		"Info": ubx.FieldSpec{
-			WireName: "info",
-			Kind: "object",
-			Fields: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools_InfoFields,
-		},
-		"IpPoolType": ubx.FieldSpec{WireName: "ip_pool_type"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Start": ubx.FieldSpec{WireName: "start"},
-	}
+	"End": ubx.FieldSpec{WireName: "end"},
+	"Info": ubx.FieldSpec{
+		WireName: "info",
+		Kind:     "object",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPools_InfoFields,
+	},
+	"IpPoolType": ubx.FieldSpec{WireName: "ip_pool_type"},
+	"Name":       ubx.FieldSpec{WireName: "name"},
+	"Start":      ubx.FieldSpec{WireName: "start"},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
-	}
+	"AddressPrefix":    ubx.FieldSpec{WireName: "address_prefix"},
+	"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_RoutesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes_PropertiesFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_Routes_PropertiesFields,
+	},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_PropertiesFields = ubx.FieldMap{
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "list",
-			Fields: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_RoutesFields,
-		},
-	}
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "list",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_Properties_RoutesFields,
+	},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTableFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTable_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_Subnets_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"IpAllocationMethod": ubx.FieldSpec{WireName: "ip_allocation_method"},
-		"IpConfigurationReferences": ubx.FieldSpec{
-			WireName: "ip_configuration_references",
-			Kind: "list",
-			Fields: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpConfigurationReferencesFields,
-		},
-		"IpPools": ubx.FieldSpec{
-			WireName: "ip_pools",
-			Kind: "list",
-			Fields: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPoolsFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTableFields,
-		},
-		"Vlan": ubx.FieldSpec{WireName: "vlan"},
-	}
+	"AddressPrefix":      ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes":    ubx.FieldSpec{WireName: "address_prefixes"},
+	"IpAllocationMethod": ubx.FieldSpec{WireName: "ip_allocation_method"},
+	"IpConfigurationReferences": ubx.FieldSpec{
+		WireName: "ip_configuration_references",
+		Kind:     "list",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpConfigurationReferencesFields,
+	},
+	"IpPools": ubx.FieldSpec{
+		WireName: "ip_pools",
+		Kind:     "list",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_IpPoolsFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_Subnets_Properties_RouteTableFields,
+	},
+	"Vlan": ubx.FieldSpec{WireName: "vlan"},
+}
 
 var LogicalnetworksLogicalNetworks_Properties_SubnetsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: LogicalnetworksLogicalNetworks_Properties_Subnets_PropertiesFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_Subnets_PropertiesFields,
+	},
+}
 
 var LogicalnetworksLogicalNetworks_PropertiesFields = ubx.FieldMap{
-		"DhcpOptions": ubx.FieldSpec{
-			WireName: "dhcp_options",
-			Kind: "object",
-			Fields: LogicalnetworksLogicalNetworks_Properties_DhcpOptionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: LogicalnetworksLogicalNetworks_Properties_StatusFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: LogicalnetworksLogicalNetworks_Properties_SubnetsFields,
-		},
-		"VmSwitchName": ubx.FieldSpec{WireName: "vm_switch_name"},
-	}
+	"DhcpOptions": ubx.FieldSpec{
+		WireName: "dhcp_options",
+		Kind:     "object",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_DhcpOptionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_StatusFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   LogicalnetworksLogicalNetworks_Properties_SubnetsFields,
+	},
+	"VmSwitchName": ubx.FieldSpec{WireName: "vm_switch_name"},
+}
 
 type LogicalnetworksLogicalNetworksConfig struct {
 	// The complex type of the extended location.
@@ -244,13 +244,13 @@ var LogicalnetworksLogicalNetworks = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: LogicalnetworksLogicalNetworks_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   LogicalnetworksLogicalNetworks_ExtendedLocationFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: LogicalnetworksLogicalNetworks_PropertiesFields,
+			Kind:     "object",
+			Fields:   LogicalnetworksLogicalNetworks_PropertiesFields,
 		},
 	},
 }

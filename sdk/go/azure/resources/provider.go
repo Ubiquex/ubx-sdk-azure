@@ -5,58 +5,58 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Provider_ResourceTypes_Aliases_DefaultMetadata struct {
 	Attributes any
-	Type any
+	Type       any
 }
 
 type Provider_ResourceTypes_Aliases_DefaultPattern struct {
-	Phrase any
-	Type any
+	Phrase   any
+	Type     any
 	Variable any
 }
 
 type Provider_ResourceTypes_Aliases_Paths struct {
 	ApiVersions any
-	Metadata any
-	Path any
-	Pattern any
+	Metadata    any
+	Path        any
+	Pattern     any
 }
 
 type Provider_ResourceTypes_Aliases struct {
 	DefaultMetadata any
-	DefaultPath any
-	DefaultPattern any
-	Name any
-	Paths any
-	Type any
+	DefaultPath     any
+	DefaultPattern  any
+	Name            any
+	Paths           any
+	Type            any
 }
 
 type Provider_ResourceTypes_ApiProfiles struct {
-	ApiVersion any
+	ApiVersion     any
 	ProfileVersion any
 }
 
 type Provider_ResourceTypes_LocationMappings struct {
 	ExtendedLocations any
-	Location any
-	Type any
+	Location          any
+	Type              any
 }
 
 type Provider_ResourceTypes_ZoneMappings struct {
 	Location any
-	Zones any
+	Zones    any
 }
 
 type Provider_ResourceTypes struct {
-	Aliases any
-	ApiProfiles any
-	ApiVersions any
-	Capabilities any
+	Aliases           any
+	ApiProfiles       any
+	ApiVersions       any
+	Capabilities      any
 	DefaultApiVersion any
-	LocationMappings any
-	Locations any
-	Properties any
-	ResourceType any
-	ZoneMappings any
+	LocationMappings  any
+	Locations         any
+	Properties        any
+	ResourceType      any
+	ZoneMappings      any
 }
 
 type Provider_ThirdPartyProviderConsent struct {
@@ -65,8 +65,8 @@ type Provider_ThirdPartyProviderConsent struct {
 }
 
 var Provider_ThirdPartyProviderConsentFields = ubx.FieldMap{
-		"ConsentToAuthorization": ubx.FieldSpec{WireName: "consent_to_authorization"},
-	}
+	"ConsentToAuthorization": ubx.FieldSpec{WireName: "consent_to_authorization"},
+}
 
 type ProviderConfig struct {
 	// The provider consent.
@@ -95,8 +95,8 @@ var Provider = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ThirdPartyProviderConsent": ubx.FieldSpec{
 			WireName: "third_party_provider_consent",
-			Kind: "object",
-			Fields: Provider_ThirdPartyProviderConsentFields,
+			Kind:     "object",
+			Fields:   Provider_ThirdPartyProviderConsentFields,
 		},
 	},
 }

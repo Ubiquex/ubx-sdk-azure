@@ -40,21 +40,37 @@ export interface OpenapiRunbook_Properties_Draft {
 }
 
 export interface OpenapiRunbook_Properties {
+  /** Gets or sets the creation time. */
+  creationTime?: string | Computed<string>;
   /** Gets or sets the description of the runbook. */
   description?: string | Computed<string>;
   draft?: OpenapiRunbook_Properties_Draft | Computed<OpenapiRunbook_Properties_Draft>;
+  /** Gets or sets the job count of the runbook. */
+  jobCount?: number | Computed<number>;
+  /** Gets or sets the last modified by. */
+  lastModifiedBy?: string | Computed<string>;
+  /** Gets or sets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
   /** Gets or sets the activity-level tracing options of the runbook. */
   logActivityTrace?: number | Computed<number>;
   /** Gets or sets progress log option. */
   logProgress?: boolean | Computed<boolean>;
   /** Gets or sets verbose log option. */
   logVerbose?: boolean | Computed<boolean>;
+  /** Gets or sets the runbook output types. */
+  outputTypes?: string[] | Computed<string[]>;
+  /** Gets or sets the runbook parameters. */
+  parameters?: Record<string, OpenapiRunbook_Properties_Draft_Parameters> | Computed<Record<string, OpenapiRunbook_Properties_Draft_Parameters>>;
+  /** Gets or sets the provisioning state of the runbook. */
+  provisioningState?: string | Computed<string>;
   /** Definition of the content link. */
   publishContentLink?: OpenapiRunbook_Properties_Draft_DraftContentLink | Computed<OpenapiRunbook_Properties_Draft_DraftContentLink>;
   /** Gets or sets the type of the runbook. */
   runbookType: string | Computed<string>;
   /** Environment of the runbook. */
   runtimeEnvironment?: string | Computed<string>;
+  /** Gets or sets the state of the runbook. */
+  state?: string | Computed<string>;
 }
 
 const OpenapiRunbook_Properties_Draft_DraftContentLink_ContentHashFields: FieldMap = {
@@ -97,15 +113,26 @@ const OpenapiRunbook_Properties_DraftFields: FieldMap = {
 };
 
 const OpenapiRunbook_PropertiesFields: FieldMap = {
+  creationTime: "creation_time",
   description: "description",
   draft: {
     wireName: "draft",
     kind: "object",
     fields: OpenapiRunbook_Properties_DraftFields,
   },
+  jobCount: "job_count",
+  lastModifiedBy: "last_modified_by",
+  lastModifiedTime: "last_modified_time",
   logActivityTrace: "log_activity_trace",
   logProgress: "log_progress",
   logVerbose: "log_verbose",
+  outputTypes: "output_types",
+  parameters: {
+    wireName: "parameters",
+    kind: "map",
+    fields: OpenapiRunbook_Properties_Draft_ParametersFields,
+  },
+  provisioningState: "provisioning_state",
   publishContentLink: {
     wireName: "publish_content_link",
     kind: "object",
@@ -113,6 +140,7 @@ const OpenapiRunbook_PropertiesFields: FieldMap = {
   },
   runbookType: "runbook_type",
   runtimeEnvironment: "runtime_environment",
+  state: "state",
 };
 
 export interface OpenapiRunbookConfig {

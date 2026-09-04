@@ -4,7 +4,7 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DatabasesDatabase_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -32,10 +32,10 @@ type DatabasesDatabase_Properties_CurrentSku struct {
 
 type DatabasesDatabase_Properties_Keys struct {
 	CreationDate any
-	KeyVersion any
-	Subregion any
-	Thumbprint any
-	Type any
+	KeyVersion   any
+	Subregion    any
+	Thumbprint   any
+	Type         any
 }
 
 type DatabasesDatabase_Properties struct {
@@ -138,102 +138,98 @@ type DatabasesDatabase_Properties struct {
 }
 
 var DatabasesDatabase_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var DatabasesDatabase_IdentityFields = ubx.FieldMap{
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: DatabasesDatabase_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":     ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   DatabasesDatabase_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var DatabasesDatabase_Properties_CurrentSkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 var DatabasesDatabase_Properties_KeysFields = ubx.FieldMap{
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-		"Subregion": ubx.FieldSpec{WireName: "subregion"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
+	"KeyVersion":   ubx.FieldSpec{WireName: "key_version"},
+	"Subregion":    ubx.FieldSpec{WireName: "subregion"},
+	"Thumbprint":   ubx.FieldSpec{WireName: "thumbprint"},
+	"Type":         ubx.FieldSpec{WireName: "type"},
+}
 
 var DatabasesDatabase_PropertiesFields = ubx.FieldMap{
-		"AutoPauseDelay": ubx.FieldSpec{WireName: "auto_pause_delay"},
-		"AvailabilityZone": ubx.FieldSpec{WireName: "availability_zone"},
-		"CatalogCollation": ubx.FieldSpec{WireName: "catalog_collation"},
-		"Collation": ubx.FieldSpec{WireName: "collation"},
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"CurrentBackupStorageRedundancy": ubx.FieldSpec{WireName: "current_backup_storage_redundancy"},
-		"CurrentServiceObjectiveName": ubx.FieldSpec{WireName: "current_service_objective_name"},
-		"CurrentSku": ubx.FieldSpec{
-			WireName: "current_sku",
-			Kind: "object",
-			Fields: DatabasesDatabase_Properties_CurrentSkuFields,
-		},
-		"DatabaseId": ubx.FieldSpec{WireName: "database_id"},
-		"DefaultSecondaryLocation": ubx.FieldSpec{WireName: "default_secondary_location"},
-		"EarliestRestoreDate": ubx.FieldSpec{WireName: "earliest_restore_date"},
-		"ElasticPoolId": ubx.FieldSpec{WireName: "elastic_pool_id"},
-		"EncryptionProtector": ubx.FieldSpec{WireName: "encryption_protector"},
-		"EncryptionProtectorAutoRotation": ubx.FieldSpec{WireName: "encryption_protector_auto_rotation"},
-		"FailoverGroupId": ubx.FieldSpec{WireName: "failover_group_id"},
-		"FederatedClientId": ubx.FieldSpec{WireName: "federated_client_id"},
-		"FreeLimitExhaustionBehavior": ubx.FieldSpec{WireName: "free_limit_exhaustion_behavior"},
-		"HighAvailabilityReplicaCount": ubx.FieldSpec{WireName: "high_availability_replica_count"},
-		"IsInfraEncryptionEnabled": ubx.FieldSpec{WireName: "is_infra_encryption_enabled"},
-		"IsLedgerOn": ubx.FieldSpec{WireName: "is_ledger_on"},
-		"Keys": ubx.FieldSpec{
-			WireName: "keys",
-			Kind: "map",
-			Fields: DatabasesDatabase_Properties_KeysFields,
-		},
-		"LicenseType": ubx.FieldSpec{WireName: "license_type"},
-		"LongTermRetentionBackupResourceId": ubx.FieldSpec{WireName: "long_term_retention_backup_resource_id"},
-		"MaintenanceConfigurationId": ubx.FieldSpec{WireName: "maintenance_configuration_id"},
-		"ManualCutover": ubx.FieldSpec{WireName: "manual_cutover"},
-		"MaxLogSizeBytes": ubx.FieldSpec{WireName: "max_log_size_bytes"},
-		"MaxSizeBytes": ubx.FieldSpec{WireName: "max_size_bytes"},
-		"MinCapacity": ubx.FieldSpec{WireName: "min_capacity"},
-		"PausedDate": ubx.FieldSpec{WireName: "paused_date"},
-		"PerformCutover": ubx.FieldSpec{WireName: "perform_cutover"},
-		"PreferredEnclaveType": ubx.FieldSpec{WireName: "preferred_enclave_type"},
-		"ReadScale": ubx.FieldSpec{WireName: "read_scale"},
-		"RecoverableDatabaseId": ubx.FieldSpec{WireName: "recoverable_database_id"},
-		"RecoveryServicesRecoveryPointId": ubx.FieldSpec{WireName: "recovery_services_recovery_point_id"},
-		"RequestedBackupStorageRedundancy": ubx.FieldSpec{WireName: "requested_backup_storage_redundancy"},
-		"RequestedServiceObjectiveName": ubx.FieldSpec{WireName: "requested_service_objective_name"},
-		"RestorableDroppedDatabaseId": ubx.FieldSpec{WireName: "restorable_dropped_database_id"},
-		"RestorePointInTime": ubx.FieldSpec{WireName: "restore_point_in_time"},
-		"ResumedDate": ubx.FieldSpec{WireName: "resumed_date"},
-		"SampleName": ubx.FieldSpec{WireName: "sample_name"},
-		"SecondaryType": ubx.FieldSpec{WireName: "secondary_type"},
-		"SourceDatabaseDeletionDate": ubx.FieldSpec{WireName: "source_database_deletion_date"},
-		"SourceDatabaseId": ubx.FieldSpec{WireName: "source_database_id"},
-		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"UseFreeLimit": ubx.FieldSpec{WireName: "use_free_limit"},
-		"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
-	}
+	"AutoPauseDelay":                 ubx.FieldSpec{WireName: "auto_pause_delay"},
+	"AvailabilityZone":               ubx.FieldSpec{WireName: "availability_zone"},
+	"CatalogCollation":               ubx.FieldSpec{WireName: "catalog_collation"},
+	"Collation":                      ubx.FieldSpec{WireName: "collation"},
+	"CreateMode":                     ubx.FieldSpec{WireName: "create_mode"},
+	"CreationDate":                   ubx.FieldSpec{WireName: "creation_date"},
+	"CurrentBackupStorageRedundancy": ubx.FieldSpec{WireName: "current_backup_storage_redundancy"},
+	"CurrentServiceObjectiveName":    ubx.FieldSpec{WireName: "current_service_objective_name"},
+	"CurrentSku": ubx.FieldSpec{
+		WireName: "current_sku",
+		Kind:     "object",
+		Fields:   DatabasesDatabase_Properties_CurrentSkuFields,
+	},
+	"DatabaseId":                      ubx.FieldSpec{WireName: "database_id"},
+	"DefaultSecondaryLocation":        ubx.FieldSpec{WireName: "default_secondary_location"},
+	"EarliestRestoreDate":             ubx.FieldSpec{WireName: "earliest_restore_date"},
+	"ElasticPoolId":                   ubx.FieldSpec{WireName: "elastic_pool_id"},
+	"EncryptionProtector":             ubx.FieldSpec{WireName: "encryption_protector"},
+	"EncryptionProtectorAutoRotation": ubx.FieldSpec{WireName: "encryption_protector_auto_rotation"},
+	"FailoverGroupId":                 ubx.FieldSpec{WireName: "failover_group_id"},
+	"FederatedClientId":               ubx.FieldSpec{WireName: "federated_client_id"},
+	"FreeLimitExhaustionBehavior":     ubx.FieldSpec{WireName: "free_limit_exhaustion_behavior"},
+	"HighAvailabilityReplicaCount":    ubx.FieldSpec{WireName: "high_availability_replica_count"},
+	"IsInfraEncryptionEnabled":        ubx.FieldSpec{WireName: "is_infra_encryption_enabled"},
+	"IsLedgerOn":                      ubx.FieldSpec{WireName: "is_ledger_on"},
+	"Keys": ubx.FieldSpec{
+		WireName: "keys",
+		Kind:     "map",
+		Fields:   DatabasesDatabase_Properties_KeysFields,
+	},
+	"LicenseType":                       ubx.FieldSpec{WireName: "license_type"},
+	"LongTermRetentionBackupResourceId": ubx.FieldSpec{WireName: "long_term_retention_backup_resource_id"},
+	"MaintenanceConfigurationId":        ubx.FieldSpec{WireName: "maintenance_configuration_id"},
+	"ManualCutover":                     ubx.FieldSpec{WireName: "manual_cutover"},
+	"MaxLogSizeBytes":                   ubx.FieldSpec{WireName: "max_log_size_bytes"},
+	"MaxSizeBytes":                      ubx.FieldSpec{WireName: "max_size_bytes"},
+	"MinCapacity":                       ubx.FieldSpec{WireName: "min_capacity"},
+	"PausedDate":                        ubx.FieldSpec{WireName: "paused_date"},
+	"PerformCutover":                    ubx.FieldSpec{WireName: "perform_cutover"},
+	"PreferredEnclaveType":              ubx.FieldSpec{WireName: "preferred_enclave_type"},
+	"ReadScale":                         ubx.FieldSpec{WireName: "read_scale"},
+	"RecoverableDatabaseId":             ubx.FieldSpec{WireName: "recoverable_database_id"},
+	"RecoveryServicesRecoveryPointId":   ubx.FieldSpec{WireName: "recovery_services_recovery_point_id"},
+	"RequestedBackupStorageRedundancy":  ubx.FieldSpec{WireName: "requested_backup_storage_redundancy"},
+	"RequestedServiceObjectiveName":     ubx.FieldSpec{WireName: "requested_service_objective_name"},
+	"RestorableDroppedDatabaseId":       ubx.FieldSpec{WireName: "restorable_dropped_database_id"},
+	"RestorePointInTime":                ubx.FieldSpec{WireName: "restore_point_in_time"},
+	"ResumedDate":                       ubx.FieldSpec{WireName: "resumed_date"},
+	"SampleName":                        ubx.FieldSpec{WireName: "sample_name"},
+	"SecondaryType":                     ubx.FieldSpec{WireName: "secondary_type"},
+	"SourceDatabaseDeletionDate":        ubx.FieldSpec{WireName: "source_database_deletion_date"},
+	"SourceDatabaseId":                  ubx.FieldSpec{WireName: "source_database_id"},
+	"SourceResourceId":                  ubx.FieldSpec{WireName: "source_resource_id"},
+	"Status":                            ubx.FieldSpec{WireName: "status"},
+	"UseFreeLimit":                      ubx.FieldSpec{WireName: "use_free_limit"},
+	"ZoneRedundant":                     ubx.FieldSpec{WireName: "zone_redundant"},
+}
 
 type DatabasesDatabaseConfig struct {
 	// Azure Active Directory identity configuration for a resource.
 	Identity any
-	// Kind of database. This is metadata used for the Azure portal experience.
-	Kind any
-	// Resource that manages the database.
-	ManagedBy any
 	// The database's properties.
 	Properties any
 	// An ARM Resource SKU.
@@ -258,20 +254,18 @@ var DatabasesDatabase = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: DatabasesDatabase_IdentityFields,
+			Kind:     "object",
+			Fields:   DatabasesDatabase_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DatabasesDatabase_PropertiesFields,
+			Kind:     "object",
+			Fields:   DatabasesDatabase_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: DatabasesDatabase_Properties_CurrentSkuFields,
+			Kind:     "object",
+			Fields:   DatabasesDatabase_Properties_CurrentSkuFields,
 		},
 	},
 }

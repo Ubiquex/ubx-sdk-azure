@@ -6,8 +6,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type ApimworkspacesSubscriptionContract2_Properties struct {
 	// Determines whether tracing can be enabled
 	AllowTracing any
+	// Subscription creation date. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+	CreatedDate any
 	// Subscription name.
 	DisplayName any
+	// Date when subscription was cancelled or expired. The setting is for audit purposes only and the subscription is not automatically cancelled. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+	EndDate any
+	// Subscription expiration date. The setting is for audit purposes only and the subscription is not automatically expired. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+	ExpirationDate any
+	// Upcoming subscription expiration notification date. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+	NotificationDate any
 	// User (user id path) for whom subscription is being created in form /users/{userId}
 	OwnerId any
 	// Primary subscription key. If not specified during request key will be generated automatically.
@@ -16,19 +24,29 @@ type ApimworkspacesSubscriptionContract2_Properties struct {
 	Scope any
 	// Secondary subscription key. If not specified during request key will be generated automatically.
 	SecondaryKey any
+	// Subscription activation date. The setting is for audit purposes only and the subscription is not automatically activated. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+	StartDate any
 	// Initial subscription state. If no value is specified, subscription is created with Submitted state. Possible states are * active – the subscription is active, * suspended – the subscription is blocked, and the subscriber cannot call any APIs of the product, * submitted – the subscription request has been made by the developer, but has not yet been approved or rejected, * rejected – the subscription request has been denied by an administrator, * cancelled – the subscription has been cancelled by the developer or administrator, * expired – the subscription reached its expiration date and was deactivated.
 	State any
+	// Optional subscription comment added by an administrator when the state is changed to the 'rejected'.
+	StateComment any
 }
 
 var ApimworkspacesSubscriptionContract2_PropertiesFields = ubx.FieldMap{
-		"AllowTracing": ubx.FieldSpec{WireName: "allow_tracing"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"OwnerId": ubx.FieldSpec{WireName: "owner_id"},
-		"PrimaryKey": ubx.FieldSpec{WireName: "primary_key"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"SecondaryKey": ubx.FieldSpec{WireName: "secondary_key"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"AllowTracing":     ubx.FieldSpec{WireName: "allow_tracing"},
+	"CreatedDate":      ubx.FieldSpec{WireName: "created_date"},
+	"DisplayName":      ubx.FieldSpec{WireName: "display_name"},
+	"EndDate":          ubx.FieldSpec{WireName: "end_date"},
+	"ExpirationDate":   ubx.FieldSpec{WireName: "expiration_date"},
+	"NotificationDate": ubx.FieldSpec{WireName: "notification_date"},
+	"OwnerId":          ubx.FieldSpec{WireName: "owner_id"},
+	"PrimaryKey":       ubx.FieldSpec{WireName: "primary_key"},
+	"Scope":            ubx.FieldSpec{WireName: "scope"},
+	"SecondaryKey":     ubx.FieldSpec{WireName: "secondary_key"},
+	"StartDate":        ubx.FieldSpec{WireName: "start_date"},
+	"State":            ubx.FieldSpec{WireName: "state"},
+	"StateComment":     ubx.FieldSpec{WireName: "state_comment"},
+}
 
 type ApimworkspacesSubscriptionContract2Config struct {
 	// Parameters supplied to the Create subscription operation.
@@ -49,8 +67,8 @@ var ApimworkspacesSubscriptionContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacesSubscriptionContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacesSubscriptionContract2_PropertiesFields,
 		},
 		"Sid": ubx.FieldSpec{WireName: "sid"},
 	},

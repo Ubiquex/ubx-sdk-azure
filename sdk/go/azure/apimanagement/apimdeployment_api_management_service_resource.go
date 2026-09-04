@@ -4,7 +4,7 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimdeploymentApiManagementServiceResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -49,43 +49,32 @@ type ApimdeploymentApiManagementServiceResource_SystemData struct {
 }
 
 var ApimdeploymentApiManagementServiceResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var ApimdeploymentApiManagementServiceResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: ApimdeploymentApiManagementServiceResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   ApimdeploymentApiManagementServiceResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var ApimdeploymentApiManagementServiceResource_PropertiesFields = ubx.FieldMap{
-		"PublisherEmail": ubx.FieldSpec{WireName: "publisher_email"},
-		"PublisherName": ubx.FieldSpec{WireName: "publisher_name"},
-	}
+	"PublisherEmail": ubx.FieldSpec{WireName: "publisher_email"},
+	"PublisherName":  ubx.FieldSpec{WireName: "publisher_name"},
+}
 
 var ApimdeploymentApiManagementServiceResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
-
-var ApimdeploymentApiManagementServiceResource_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+}
 
 type ApimdeploymentApiManagementServiceResourceConfig struct {
-	// ETag of the resource.
-	Etag any
 	// Identity properties of the Api Management service resource.
 	Identity any
 	// Resource location.
@@ -94,8 +83,6 @@ type ApimdeploymentApiManagementServiceResourceConfig struct {
 	Properties any
 	// API Management service resource SKU properties.
 	Sku any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 	// A list of availability zones denoting where the resource needs to come from.
 	Zones any
 }
@@ -120,27 +107,21 @@ type ApimdeploymentApiManagementServiceResourceAttrs struct {
 var ApimdeploymentApiManagementServiceResource = ubx.ResourceBinding{
 	WireType: "azure_apimanagement_apimdeployment_api_management_service_resource",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ApimdeploymentApiManagementServiceResource_IdentityFields,
+			Kind:     "object",
+			Fields:   ApimdeploymentApiManagementServiceResource_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimdeploymentApiManagementServiceResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimdeploymentApiManagementServiceResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ApimdeploymentApiManagementServiceResource_SkuFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: ApimdeploymentApiManagementServiceResource_SystemDataFields,
+			Kind:     "object",
+			Fields:   ApimdeploymentApiManagementServiceResource_SkuFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

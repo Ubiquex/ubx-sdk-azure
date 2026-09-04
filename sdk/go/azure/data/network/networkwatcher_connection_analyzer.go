@@ -4,29 +4,29 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkwatcherConnectionAnalyzer_Value_Properties_Destination struct {
-	Address any
-	Port any
+	Address    any
+	Port       any
 	ResourceId any
-	Type any
+	Type       any
 }
 
 type NetworkwatcherConnectionAnalyzer_Value_Properties_DiagnosticOperationsSettings_ConnectivityCheckSettings struct {
-	GeneratePath any
+	GeneratePath       any
 	PreferredIpversion any
 }
 
 type NetworkwatcherConnectionAnalyzer_Value_Properties_DiagnosticOperationsSettings_ExpressRouteDiagnosticsSettings struct {
-	Bandwidth any
+	Bandwidth           any
 	ErCircuitResourceId any
 }
 
 type NetworkwatcherConnectionAnalyzer_Value_Properties_DiagnosticOperationsSettings struct {
-	ConnectivityCheckSettings any
+	ConnectivityCheckSettings       any
 	ExpressRouteDiagnosticsSettings any
 }
 
 type NetworkwatcherConnectionAnalyzer_Value_Properties_OutputSettings_StorageAccountSettings struct {
-	Path any
+	Path             any
 	StorageAccountId any
 }
 
@@ -35,52 +35,52 @@ type NetworkwatcherConnectionAnalyzer_Value_Properties_OutputSettings struct {
 }
 
 type NetworkwatcherConnectionAnalyzer_Value_Properties_ProtocolSettings_HttpConfiguration_Headers struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type NetworkwatcherConnectionAnalyzer_Value_Properties_ProtocolSettings_HttpConfiguration struct {
-	Headers any
-	Method any
+	Headers          any
+	Method           any
 	ValidStatusCodes any
 }
 
 type NetworkwatcherConnectionAnalyzer_Value_Properties_ProtocolSettings struct {
 	HttpConfiguration any
-	Protocol any
+	Protocol          any
 }
 
 type NetworkwatcherConnectionAnalyzer_Value_Properties struct {
-	Destination any
-	DiagnosticOperations any
+	Destination                  any
+	DiagnosticOperations         any
 	DiagnosticOperationsSettings any
-	ExpiryInDays any
-	OutputSettings any
-	ProtocolSettings any
-	ProvisioningState any
-	RequestTime any
-	Source any
-	Status any
+	ExpiryInDays                 any
+	OutputSettings               any
+	ProtocolSettings             any
+	ProvisioningState            any
+	RequestTime                  any
+	Source                       any
+	Status                       any
 }
 
 type NetworkwatcherConnectionAnalyzer_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type NetworkwatcherConnectionAnalyzer_Value struct {
-	Etag any
-	Id any
-	Location any
-	Name any
+	Etag       any
+	Id         any
+	Location   any
+	Name       any
 	Properties any
 	SystemData any
-	Tags any
-	Type any
+	Tags       any
+	Type       any
 }
 
 type NetworkwatcherConnectionAnalyzerConfig struct {

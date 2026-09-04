@@ -4,7 +4,7 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimapiversionsetsApiVersionSetContract_Value_Properties struct {
-	DisplayName any
+	DisplayName      any
 	VersioningScheme any
 }
 
@@ -26,6 +26,5 @@ type ApimapiversionsetsApiVersionSetContractAttrs struct {
 
 var ApimapiversionsetsApiVersionSetContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimapiversionsets_api_version_set_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

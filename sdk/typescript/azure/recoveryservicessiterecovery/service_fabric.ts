@@ -6,20 +6,142 @@ export interface ServiceFabric_Properties_CustomDetails {
   instanceType: string | Computed<string>;
 }
 
+export interface ServiceFabric_Properties_EncryptionDetails {
+  /** The key encryption key certificate expiry date. */
+  kekCertExpiryDate?: string | Computed<string>;
+  /** The key encryption key certificate thumbprint. */
+  kekCertThumbprint?: string | Computed<string>;
+  /** The key encryption key state for the Vmm. */
+  kekState?: string | Computed<string>;
+}
+
+export interface ServiceFabric_Properties_HealthErrorDetails_InnerHealthErrors {
+  creationTimeUtc?: string | Computed<string>;
+  customerResolvability?: string | Computed<string>;
+  entityId?: string | Computed<string>;
+  errorCategory?: string | Computed<string>;
+  errorCode?: string | Computed<string>;
+  errorId?: string | Computed<string>;
+  errorLevel?: string | Computed<string>;
+  errorMessage?: string | Computed<string>;
+  errorSource?: string | Computed<string>;
+  errorType?: string | Computed<string>;
+  possibleCauses?: string | Computed<string>;
+  recommendedAction?: string | Computed<string>;
+  recoveryProviderErrorMessage?: string | Computed<string>;
+  summaryMessage?: string | Computed<string>;
+}
+
+export interface ServiceFabric_Properties_HealthErrorDetails {
+  creationTimeUtc?: string | Computed<string>;
+  customerResolvability?: string | Computed<string>;
+  entityId?: string | Computed<string>;
+  errorCategory?: string | Computed<string>;
+  errorCode?: string | Computed<string>;
+  errorId?: string | Computed<string>;
+  errorLevel?: string | Computed<string>;
+  errorMessage?: string | Computed<string>;
+  errorSource?: string | Computed<string>;
+  errorType?: string | Computed<string>;
+  innerHealthErrors?: ServiceFabric_Properties_HealthErrorDetails_InnerHealthErrors[] | Computed<ServiceFabric_Properties_HealthErrorDetails_InnerHealthErrors[]>;
+  possibleCauses?: string | Computed<string>;
+  recommendedAction?: string | Computed<string>;
+  recoveryProviderErrorMessage?: string | Computed<string>;
+  summaryMessage?: string | Computed<string>;
+}
+
 export interface ServiceFabric_Properties {
+  /** BCDR state of the fabric. */
+  bcdrState?: string | Computed<string>;
   /** Fabric provider specific settings. */
   customDetails?: ServiceFabric_Properties_CustomDetails | Computed<ServiceFabric_Properties_CustomDetails>;
+  /** Encryption details for the fabric. */
+  encryptionDetails?: ServiceFabric_Properties_EncryptionDetails | Computed<ServiceFabric_Properties_EncryptionDetails>;
+  /** Friendly name of the fabric. */
+  friendlyName?: string | Computed<string>;
+  /** Health of fabric. */
+  health?: string | Computed<string>;
+  /** Fabric health error details. */
+  healthErrorDetails?: ServiceFabric_Properties_HealthErrorDetails[] | Computed<ServiceFabric_Properties_HealthErrorDetails[]>;
+  /** Dra Registration Id. */
+  internalIdentifier?: string | Computed<string>;
+  /** Encryption details for the fabric. */
+  rolloverEncryptionDetails?: ServiceFabric_Properties_EncryptionDetails | Computed<ServiceFabric_Properties_EncryptionDetails>;
 }
 
 const ServiceFabric_Properties_CustomDetailsFields: FieldMap = {
   instanceType: "instance_type",
 };
 
+const ServiceFabric_Properties_EncryptionDetailsFields: FieldMap = {
+  kekCertExpiryDate: "kek_cert_expiry_date",
+  kekCertThumbprint: "kek_cert_thumbprint",
+  kekState: "kek_state",
+};
+
+const ServiceFabric_Properties_HealthErrorDetails_InnerHealthErrorsFields: FieldMap = {
+  creationTimeUtc: "creation_time_utc",
+  customerResolvability: "customer_resolvability",
+  entityId: "entity_id",
+  errorCategory: "error_category",
+  errorCode: "error_code",
+  errorId: "error_id",
+  errorLevel: "error_level",
+  errorMessage: "error_message",
+  errorSource: "error_source",
+  errorType: "error_type",
+  possibleCauses: "possible_causes",
+  recommendedAction: "recommended_action",
+  recoveryProviderErrorMessage: "recovery_provider_error_message",
+  summaryMessage: "summary_message",
+};
+
+const ServiceFabric_Properties_HealthErrorDetailsFields: FieldMap = {
+  creationTimeUtc: "creation_time_utc",
+  customerResolvability: "customer_resolvability",
+  entityId: "entity_id",
+  errorCategory: "error_category",
+  errorCode: "error_code",
+  errorId: "error_id",
+  errorLevel: "error_level",
+  errorMessage: "error_message",
+  errorSource: "error_source",
+  errorType: "error_type",
+  innerHealthErrors: {
+    wireName: "inner_health_errors",
+    kind: "list",
+    fields: ServiceFabric_Properties_HealthErrorDetails_InnerHealthErrorsFields,
+  },
+  possibleCauses: "possible_causes",
+  recommendedAction: "recommended_action",
+  recoveryProviderErrorMessage: "recovery_provider_error_message",
+  summaryMessage: "summary_message",
+};
+
 const ServiceFabric_PropertiesFields: FieldMap = {
+  bcdrState: "bcdr_state",
   customDetails: {
     wireName: "custom_details",
     kind: "object",
     fields: ServiceFabric_Properties_CustomDetailsFields,
+  },
+  encryptionDetails: {
+    wireName: "encryption_details",
+    kind: "object",
+    fields: ServiceFabric_Properties_EncryptionDetailsFields,
+  },
+  friendlyName: "friendly_name",
+  health: "health",
+  healthErrorDetails: {
+    wireName: "health_error_details",
+    kind: "list",
+    fields: ServiceFabric_Properties_HealthErrorDetailsFields,
+  },
+  internalIdentifier: "internal_identifier",
+  rolloverEncryptionDetails: {
+    wireName: "rollover_encryption_details",
+    kind: "object",
+    fields: ServiceFabric_Properties_EncryptionDetailsFields,
   },
 };
 

@@ -4,48 +4,48 @@ package consumption
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiReservationTransaction_Value_Properties struct {
-	AccountName any
-	AccountOwnerEmail any
-	Amount any
-	ArmSkuName any
-	BillingFrequency any
-	BillingMonth any
-	CostCenter any
-	Currency any
-	CurrentEnrollment any
-	DepartmentName any
-	Description any
-	EventDate any
-	EventType any
-	MonetaryCommitment any
-	Overage any
-	PurchasingEnrollment any
+	AccountName                any
+	AccountOwnerEmail          any
+	Amount                     any
+	ArmSkuName                 any
+	BillingFrequency           any
+	BillingMonth               any
+	CostCenter                 any
+	Currency                   any
+	CurrentEnrollment          any
+	DepartmentName             any
+	Description                any
+	EventDate                  any
+	EventType                  any
+	MonetaryCommitment         any
+	Overage                    any
+	PurchasingEnrollment       any
 	PurchasingSubscriptionGuid any
 	PurchasingSubscriptionName any
-	Quantity any
-	Region any
-	ReservationOrderId any
-	ReservationOrderName any
-	Term any
+	Quantity                   any
+	Region                     any
+	ReservationOrderId         any
+	ReservationOrderName       any
+	Term                       any
 }
 
 type OpenapiReservationTransaction_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiReservationTransactionConfig struct {
-	BillingAccountId any
+	BillingAccountId        any
 	PreviewMarkupPercentage any
-	UseMarkupIfPartner any
+	UseMarkupIfPartner      any
 }
 
 type OpenapiReservationTransactionAttrs struct {
 	BillingAccountId any
 	// The link (url) to the next page of results.
-	NextLink any
+	NextLink                any
 	PreviewMarkupPercentage any
-	UseMarkupIfPartner any
+	UseMarkupIfPartner      any
 	// The list of reservation recommendations.
 	Value any
 }
@@ -53,8 +53,8 @@ type OpenapiReservationTransactionAttrs struct {
 var OpenapiReservationTransaction = ubx.DataSourceBinding{
 	WireType: "azure_consumption_openapi_reservation_transaction",
 	Fields: ubx.FieldMap{
-		"BillingAccountId": ubx.FieldSpec{WireName: "billing_account_id"},
+		"BillingAccountId":        ubx.FieldSpec{WireName: "billing_account_id"},
 		"PreviewMarkupPercentage": ubx.FieldSpec{WireName: "preview_markup_percentage"},
-		"UseMarkupIfPartner": ubx.FieldSpec{WireName: "use_markup_if_partner"},
+		"UseMarkupIfPartner":      ubx.FieldSpec{WireName: "use_markup_if_partner"},
 	},
 }

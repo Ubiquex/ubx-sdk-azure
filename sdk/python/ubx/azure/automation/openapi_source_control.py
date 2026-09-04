@@ -21,10 +21,14 @@ class OpenapiSourceControl_Properties:
     auto_sync: Any = None
     # The repo branch of the source control. Include branch as empty string for VsoTfvc.
     branch: Any = None
+    # The creation time.
+    creation_time: Any = None
     # The user description of the source control.
     description: Any = None
     # The folder path of the source control. Path must be relative.
     folder_path: Any = None
+    # The last modified time.
+    last_modified_time: Any = None
     # The auto publish of the source control. Default is true.
     publish_runbook: Any = None
     # The repo url of the source control.
@@ -42,8 +46,10 @@ _OpenapiSourceControl_Properties_SecurityTokenFields = {
 _OpenapiSourceControl_PropertiesFields = {
     "auto_sync": ubx.FieldSpec(wire_name="auto_sync"),
     "branch": ubx.FieldSpec(wire_name="branch"),
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
     "description": ubx.FieldSpec(wire_name="description"),
     "folder_path": ubx.FieldSpec(wire_name="folder_path"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
     "publish_runbook": ubx.FieldSpec(wire_name="publish_runbook"),
     "repo_url": ubx.FieldSpec(wire_name="repo_url"),
     "security_token": ubx.FieldSpec(

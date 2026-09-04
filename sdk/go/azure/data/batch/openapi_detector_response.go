@@ -8,9 +8,9 @@ type OpenapiDetectorResponse_Value_Properties struct {
 }
 
 type OpenapiDetectorResponse_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiDetectorResponseConfig struct {

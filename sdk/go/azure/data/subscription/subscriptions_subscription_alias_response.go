@@ -5,34 +5,34 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SubscriptionsSubscriptionAliasResponse_Value_Properties struct {
 	AcceptOwnershipState any
-	AcceptOwnershipUrl any
-	BillingScope any
-	CreatedTime any
-	DisplayName any
-	ManagementGroupId any
-	ProvisioningState any
-	ResellerId any
-	SubscriptionId any
-	SubscriptionOwnerId any
-	Tags any
-	Workload any
+	AcceptOwnershipUrl   any
+	BillingScope         any
+	CreatedTime          any
+	DisplayName          any
+	ManagementGroupId    any
+	ProvisioningState    any
+	ResellerId           any
+	SubscriptionId       any
+	SubscriptionOwnerId  any
+	Tags                 any
+	Workload             any
 }
 
 type SubscriptionsSubscriptionAliasResponse_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type SubscriptionsSubscriptionAliasResponse_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
 	SystemData any
-	Type any
+	Type       any
 }
 
 type SubscriptionsSubscriptionAliasResponseConfig struct {

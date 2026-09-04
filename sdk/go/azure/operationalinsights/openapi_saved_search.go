@@ -4,7 +4,7 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSavedSearch_Properties_Tags struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -26,23 +26,23 @@ type OpenapiSavedSearch_Properties struct {
 }
 
 var OpenapiSavedSearch_Properties_TagsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiSavedSearch_PropertiesFields = ubx.FieldMap{
-		"Category": ubx.FieldSpec{WireName: "category"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"FunctionAlias": ubx.FieldSpec{WireName: "function_alias"},
-		"FunctionParameters": ubx.FieldSpec{WireName: "function_parameters"},
-		"Query": ubx.FieldSpec{WireName: "query"},
-		"Tags": ubx.FieldSpec{
-			WireName: "tags",
-			Kind: "list",
-			Fields: OpenapiSavedSearch_Properties_TagsFields,
-		},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Category":           ubx.FieldSpec{WireName: "category"},
+	"DisplayName":        ubx.FieldSpec{WireName: "display_name"},
+	"FunctionAlias":      ubx.FieldSpec{WireName: "function_alias"},
+	"FunctionParameters": ubx.FieldSpec{WireName: "function_parameters"},
+	"Query":              ubx.FieldSpec{WireName: "query"},
+	"Tags": ubx.FieldSpec{
+		WireName: "tags",
+		Kind:     "list",
+		Fields:   OpenapiSavedSearch_Properties_TagsFields,
+	},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiSavedSearchConfig struct {
 	// The ETag of the saved search. To override an existing saved search, use "*" or specify the current Etag
@@ -64,8 +64,8 @@ var OpenapiSavedSearch = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSavedSearch_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSavedSearch_PropertiesFields,
 		},
 	},
 }

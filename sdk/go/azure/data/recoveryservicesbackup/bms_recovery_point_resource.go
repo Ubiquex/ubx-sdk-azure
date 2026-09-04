@@ -4,51 +4,51 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsRecoveryPointResource_Value_Properties_ThreatInfo struct {
-	LastUpdatedTime any
+	LastUpdatedTime   any
 	ThreatDescription any
-	ThreatEndTime any
-	ThreatSeverity any
-	ThreatStartTime any
-	ThreatState any
-	ThreatTitle any
-	ThreatUri any
+	ThreatEndTime     any
+	ThreatSeverity    any
+	ThreatStartTime   any
+	ThreatState       any
+	ThreatTitle       any
+	ThreatUri         any
 }
 
 type BmsRecoveryPointResource_Value_Properties struct {
-	ObjectType any
-	ThreatInfo any
+	ObjectType   any
+	ThreatInfo   any
 	ThreatStatus any
 }
 
 type BmsRecoveryPointResource_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsRecoveryPointResourceConfig struct {
-	ContainerName any
-	FabricName any
+	ContainerName     any
+	FabricName        any
 	ProtectedItemName any
-	VaultName any
+	VaultName         any
 }
 
 type BmsRecoveryPointResourceAttrs struct {
-	ContainerName any
-	FabricName any
+	ContainerName     any
+	FabricName        any
 	ProtectedItemName any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 
 var BmsRecoveryPointResource = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_recovery_point_resource",
 	Fields: ubx.FieldMap{
-		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
+		"ContainerName":     ubx.FieldSpec{WireName: "container_name"},
+		"FabricName":        ubx.FieldSpec{WireName: "fabric_name"},
 		"ProtectedItemName": ubx.FieldSpec{WireName: "protected_item_name"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"VaultName":         ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

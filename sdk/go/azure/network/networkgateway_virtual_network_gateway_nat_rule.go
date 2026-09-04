@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappings struct {
 	AddressSpace any
-	PortRange any
+	PortRange    any
 }
 
 type NetworkgatewayVirtualNetworkGatewayNatRule_Properties struct {
@@ -24,30 +24,28 @@ type NetworkgatewayVirtualNetworkGatewayNatRule_Properties struct {
 }
 
 var NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappingsFields = ubx.FieldMap{
-		"AddressSpace": ubx.FieldSpec{WireName: "address_space"},
-		"PortRange": ubx.FieldSpec{WireName: "port_range"},
-	}
+	"AddressSpace": ubx.FieldSpec{WireName: "address_space"},
+	"PortRange":    ubx.FieldSpec{WireName: "port_range"},
+}
 
 var NetworkgatewayVirtualNetworkGatewayNatRule_PropertiesFields = ubx.FieldMap{
-		"ExternalMappings": ubx.FieldSpec{
-			WireName: "external_mappings",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappingsFields,
-		},
-		"InternalMappings": ubx.FieldSpec{
-			WireName: "internal_mappings",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappingsFields,
-		},
-		"IpConfigurationId": ubx.FieldSpec{WireName: "ip_configuration_id"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ExternalMappings": ubx.FieldSpec{
+		WireName: "external_mappings",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappingsFields,
+	},
+	"InternalMappings": ubx.FieldSpec{
+		WireName: "internal_mappings",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappingsFields,
+	},
+	"IpConfigurationId": ubx.FieldSpec{WireName: "ip_configuration_id"},
+	"Mode":              ubx.FieldSpec{WireName: "mode"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 type NetworkgatewayVirtualNetworkGatewayNatRuleConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Parameters for VirtualNetworkGatewayNatRule.
 	Properties any
 }
@@ -62,11 +60,10 @@ type NetworkgatewayVirtualNetworkGatewayNatRuleAttrs struct {
 var NetworkgatewayVirtualNetworkGatewayNatRule = ubx.ResourceBinding{
 	WireType: "azure_network_networkgateway_virtual_network_gateway_nat_rule",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGatewayNatRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkgatewayVirtualNetworkGatewayNatRule_PropertiesFields,
 		},
 	},
 }

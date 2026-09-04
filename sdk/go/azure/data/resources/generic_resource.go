@@ -11,7 +11,7 @@ type GenericResource_ExtendedLocation struct {
 }
 
 type GenericResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 

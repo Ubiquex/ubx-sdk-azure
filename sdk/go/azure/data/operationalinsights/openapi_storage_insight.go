@@ -5,25 +5,25 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStorageInsight_Value_Properties_Status struct {
 	Description any
-	State any
+	State       any
 }
 
 type OpenapiStorageInsight_Value_Properties_StorageAccount struct {
-	Id any
+	Id  any
 	Key any
 }
 
 type OpenapiStorageInsight_Value_Properties struct {
-	Containers any
-	Status any
+	Containers     any
+	Status         any
 	StorageAccount any
-	Tables any
+	Tables         any
 }
 
 type OpenapiStorageInsight_Value struct {
-	ETag any
+	ETag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiStorageInsightConfig struct {
@@ -32,7 +32,7 @@ type OpenapiStorageInsightConfig struct {
 
 type OpenapiStorageInsightAttrs struct {
 	// A list of storage insight items.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

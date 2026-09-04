@@ -11940,8 +11940,6 @@ const VirtualnetworkRouteTable_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkRouteTableConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Route Table resource. */
   properties?: VirtualnetworkRouteTable_Properties | Computed<VirtualnetworkRouteTable_Properties>;
 }
@@ -11956,7 +11954,6 @@ export interface VirtualnetworkRouteTableAttrs {
 export const VirtualnetworkRouteTable: ResourceBinding<VirtualnetworkRouteTableConfig, VirtualnetworkRouteTableAttrs> = {
   wireType: "azure_network_virtualnetwork_route_table",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

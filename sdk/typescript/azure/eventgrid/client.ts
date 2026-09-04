@@ -56,20 +56,9 @@ const Client_PropertiesFields: FieldMap = {
   state: "state",
 };
 
-const Client_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ClientConfig {
   /** The properties of client. */
   properties?: Client_Properties | Computed<Client_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: Client_SystemData | Computed<Client_SystemData>;
 }
 
 export interface ClientAttrs {
@@ -86,11 +75,6 @@ export const Client: ResourceBinding<ClientConfig, ClientAttrs> = {
       wireName: "properties",
       kind: "object",
       fields: Client_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: Client_SystemDataFields,
     },
   },
 };

@@ -4,14 +4,14 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWorkspace_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiWorkspace_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,16 +21,16 @@ type OpenapiWorkspace_Value_Properties_Encryption_Identity struct {
 
 type OpenapiWorkspace_Value_Properties_Encryption_KeyVaultProperties struct {
 	IdentityClientId any
-	KeyIdentifier any
-	KeyVaultArmId any
+	KeyIdentifier    any
+	KeyVaultArmId    any
 }
 
 type OpenapiWorkspace_Value_Properties_Encryption struct {
-	CosmosDbResourceId any
-	Identity any
-	KeyVaultProperties any
-	SearchAccountResourceId any
-	Status any
+	CosmosDbResourceId       any
+	Identity                 any
+	KeyVaultProperties       any
+	SearchAccountResourceId  any
+	Status                   any
 	StorageAccountResourceId any
 }
 
@@ -39,83 +39,83 @@ type OpenapiWorkspace_Value_Properties_FeatureStoreSettings_ComputeRuntime struc
 }
 
 type OpenapiWorkspace_Value_Properties_FeatureStoreSettings struct {
-	ComputeRuntime any
+	ComputeRuntime             any
 	OfflineStoreConnectionName any
-	OnlineStoreConnectionName any
+	OnlineStoreConnectionName  any
 }
 
 type OpenapiWorkspace_Value_Properties_ManagedNetwork_OutboundRules struct {
-	Category any
+	Category         any
 	ErrorInformation any
-	ParentRuleNames any
-	Status any
-	Type any
+	ParentRuleNames  any
+	Status           any
+	Type             any
 }
 
 type OpenapiWorkspace_Value_Properties_ManagedNetwork_Status struct {
 	SparkReady any
-	Status any
+	Status     any
 }
 
 type OpenapiWorkspace_Value_Properties_ManagedNetwork struct {
-	EnableNetworkMonitor any
+	EnableNetworkMonitor    any
 	FirewallPublicIpAddress any
-	FirewallSku any
-	IsolationMode any
-	ManagedNetworkKind any
-	NetworkId any
-	OutboundRules any
-	Status any
+	FirewallSku             any
+	IsolationMode           any
+	ManagedNetworkKind      any
+	NetworkId               any
+	OutboundRules           any
+	Status                  any
 }
 
 type OpenapiWorkspace_Value_Properties_NotebookInfo_NotebookPreparationError struct {
 	ErrorMessage any
-	StatusCode any
+	StatusCode   any
 }
 
 type OpenapiWorkspace_Value_Properties_NotebookInfo struct {
-	Fqdn any
-	IsPrivateLinkEnabled any
+	Fqdn                     any
+	IsPrivateLinkEnabled     any
 	NotebookPreparationError any
-	ResourceId any
+	ResourceId               any
 }
 
 type OpenapiWorkspace_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
-	Id any
+	Id          any
 	SubnetArmId any
 }
 
 type OpenapiWorkspace_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiWorkspace_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiWorkspace_Value_Properties_PrivateEndpointConnections_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type OpenapiWorkspace_Value_Properties_PrivateEndpointConnections struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiWorkspace_Value_Properties_ServerlessComputeSettings struct {
 	ServerlessComputeCustomSubnet any
-	ServerlessComputeNoPublicIp any
+	ServerlessComputeNoPublicIp   any
 }
 
 type OpenapiWorkspace_Value_Properties_ServiceManagedResourcesSettings_CosmosDb struct {
@@ -127,77 +127,77 @@ type OpenapiWorkspace_Value_Properties_ServiceManagedResourcesSettings struct {
 }
 
 type OpenapiWorkspace_Value_Properties_SharedPrivateLinkResources_Properties struct {
-	GroupId any
+	GroupId               any
 	PrivateLinkResourceId any
-	RequestMessage any
-	Status any
+	RequestMessage        any
+	Status                any
 }
 
 type OpenapiWorkspace_Value_Properties_SharedPrivateLinkResources struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiWorkspace_Value_Properties_WorkspaceHubConfig struct {
 	AdditionalWorkspaceStorageAccounts any
-	DefaultWorkspaceResourceGroup any
+	DefaultWorkspaceResourceGroup      any
 }
 
 type OpenapiWorkspace_Value_Properties struct {
 	AllowPublicAccessWhenBehindVnet any
-	ApplicationInsights any
-	AssociatedWorkspaces any
-	ContainerRegistry any
-	Description any
-	DiscoveryUrl any
-	EnableDataIsolation any
-	EnableServiceSideCmkencryption any
-	Encryption any
-	FeatureStoreSettings any
-	FriendlyName any
-	HbiWorkspace any
-	HubResourceId any
-	ImageBuildCompute any
-	KeyVault any
-	ManagedNetwork any
-	MlFlowTrackingUri any
-	NotebookInfo any
-	PrimaryUserAssignedIdentity any
-	PrivateEndpointConnections any
-	PrivateLinkCount any
-	ProvisionNetworkNow any
-	ProvisioningState any
-	PublicNetworkAccess any
-	ServerlessComputeSettings any
+	ApplicationInsights             any
+	AssociatedWorkspaces            any
+	ContainerRegistry               any
+	Description                     any
+	DiscoveryUrl                    any
+	EnableDataIsolation             any
+	EnableServiceSideCmkencryption  any
+	Encryption                      any
+	FeatureStoreSettings            any
+	FriendlyName                    any
+	HbiWorkspace                    any
+	HubResourceId                   any
+	ImageBuildCompute               any
+	KeyVault                        any
+	ManagedNetwork                  any
+	MlFlowTrackingUri               any
+	NotebookInfo                    any
+	PrimaryUserAssignedIdentity     any
+	PrivateEndpointConnections      any
+	PrivateLinkCount                any
+	ProvisionNetworkNow             any
+	ProvisioningState               any
+	PublicNetworkAccess             any
+	ServerlessComputeSettings       any
 	ServiceManagedResourcesSettings any
 	ServiceProvisionedResourceGroup any
-	SharedPrivateLinkResources any
-	StorageAccount any
-	StorageHnsEnabled any
-	SystemDatastoresAuthMode any
-	TenantId any
-	V1LegacyMode any
-	WorkspaceHubConfig any
-	WorkspaceId any
+	SharedPrivateLinkResources      any
+	StorageAccount                  any
+	StorageHnsEnabled               any
+	SystemDatastoresAuthMode        any
+	TenantId                        any
+	V1LegacyMode                    any
+	WorkspaceHubConfig              any
+	WorkspaceId                     any
 }
 
 type OpenapiWorkspace_Value struct {
-	Identity any
-	Kind any
-	Location any
+	Identity   any
+	Kind       any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiWorkspaceConfig struct {
 	AiCapabilities any
-	Kind any
+	Kind           any
 }
 
 type OpenapiWorkspaceAttrs struct {
 	AiCapabilities any
-	Kind any
+	Kind           any
 	// The link to the next page of items
 	NextLink any
 	// The Workspace items on this page
@@ -208,6 +208,6 @@ var OpenapiWorkspace = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_workspace",
 	Fields: ubx.FieldMap{
 		"AiCapabilities": ubx.FieldSpec{WireName: "ai_capabilities"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":           ubx.FieldSpec{WireName: "kind"},
 	},
 }

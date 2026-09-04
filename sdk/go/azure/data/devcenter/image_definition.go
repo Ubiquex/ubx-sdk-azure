@@ -5,30 +5,30 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ImageDefinition_Value_Properties_ActiveImageReference struct {
 	ExactVersion any
-	Id any
+	Id           any
 }
 
 type ImageDefinition_Value_Properties_ImageValidationErrorDetails struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type ImageDefinition_Value_Properties_LatestBuild struct {
-	EndTime any
-	Name any
+	EndTime   any
+	Name      any
 	StartTime any
-	Status any
+	Status    any
 }
 
 type ImageDefinition_Value_Properties struct {
-	ActiveImageReference any
-	AutoImageBuild any
-	FileUrl any
-	ImageReference any
+	ActiveImageReference        any
+	AutoImageBuild              any
+	FileUrl                     any
+	ImageReference              any
 	ImageValidationErrorDetails any
-	ImageValidationStatus any
-	LatestBuild any
-	ValidationStatus any
+	ImageValidationStatus       any
+	LatestBuild                 any
+	ValidationStatus            any
 }
 
 type ImageDefinition_Value struct {
@@ -47,6 +47,5 @@ type ImageDefinitionAttrs struct {
 
 var ImageDefinition = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_image_definition",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

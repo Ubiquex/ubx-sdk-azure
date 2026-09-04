@@ -3011,10 +3011,6 @@ _ExpressrouteServiceEndpointPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicyConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
-    # Kind of service endpoint policy. This is metadata used for the Azure portal experience.
-    kind: Any = None
     # Service Endpoint Policy resource.
     properties: Any = None
 
@@ -3030,8 +3026,6 @@ class ExpressrouteServiceEndpointPolicyAttrs:
 ExpressrouteServiceEndpointPolicy = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_service_endpoint_policy",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
-        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

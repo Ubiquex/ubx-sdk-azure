@@ -4,33 +4,33 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TemplatespecsTemplateSpecVersion_Value_Properties_LinkedTemplates struct {
-	Path any
+	Path     any
 	Template any
 }
 
 type TemplatespecsTemplateSpecVersion_Value_Properties struct {
-	Description any
-	LinkedTemplates any
-	MainTemplate any
-	Metadata any
+	Description      any
+	LinkedTemplates  any
+	MainTemplate     any
+	Metadata         any
 	UiFormDefinition any
 }
 
 type TemplatespecsTemplateSpecVersion_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type TemplatespecsTemplateSpecVersionConfig struct {
-	ApiVersion any
+	ApiVersion       any
 	TemplateSpecName any
 }
 
 type TemplatespecsTemplateSpecVersionAttrs struct {
 	ApiVersion any
 	// The URL to use for getting the next set of results.
-	NextLink any
+	NextLink         any
 	TemplateSpecName any
 	// An array of Template Spec versions.
 	Value any
@@ -39,7 +39,7 @@ type TemplatespecsTemplateSpecVersionAttrs struct {
 var TemplatespecsTemplateSpecVersion = ubx.DataSourceBinding{
 	WireType: "azure_resources_templatespecs_template_spec_version",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":       ubx.FieldSpec{WireName: "api_version"},
 		"TemplateSpecName": ubx.FieldSpec{WireName: "template_spec_name"},
 	},
 }

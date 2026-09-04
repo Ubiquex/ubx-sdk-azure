@@ -26,12 +26,6 @@ _SqlpoolDataMaskingPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class SqlpoolDataMaskingPolicyConfig:
-    # The kind of data masking policy. Metadata, used for Azure portal.
-    kind: Any = None
-    # The location of the data masking policy.
-    location: Any = None
-    # Fully qualified resource ID of the sql pool
-    managed_by: Any = None
     # The properties of a database data masking policy.
     properties: Any = None
 
@@ -49,9 +43,6 @@ class SqlpoolDataMaskingPolicyAttrs:
 SqlpoolDataMaskingPolicy = ubx.ResourceBinding(
     wire_type="azure_synapse_sqlpool_data_masking_policy",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
-        "location": ubx.FieldSpec(wire_name="location"),
-        "managed_by": ubx.FieldSpec(wire_name="managed_by"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

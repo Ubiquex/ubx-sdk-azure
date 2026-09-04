@@ -30,28 +30,15 @@ type NetworkmanagerScopeConnection_SystemData struct {
 }
 
 var NetworkmanagerScopeConnection_PropertiesFields = ubx.FieldMap{
-		"ConnectionState": ubx.FieldSpec{WireName: "connection_state"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
-
-var NetworkmanagerScopeConnection_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"ConnectionState": ubx.FieldSpec{WireName: "connection_state"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"ResourceId":      ubx.FieldSpec{WireName: "resource_id"},
+	"TenantId":        ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type NetworkmanagerScopeConnectionConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Scope connection.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerScopeConnectionAttrs struct {
@@ -66,16 +53,10 @@ type NetworkmanagerScopeConnectionAttrs struct {
 var NetworkmanagerScopeConnection = ubx.ResourceBinding{
 	WireType: "azure_network_networkmanager_scope_connection",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerScopeConnection_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerScopeConnection_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerScopeConnection_PropertiesFields,
 		},
 	},
 }

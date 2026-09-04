@@ -7,9 +7,20 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class ApimworkspacesNamedValueContract2_Properties_KeyVault_LastStatus:
+    # Last status code for sync and refresh of secret from key vault.
+    code: Any = None
+    # Details of the error else empty.
+    message: Any = None
+    # Last time secret was accessed. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+    time_stamp_utc: Any = None
+
+@dataclasses.dataclass
 class ApimworkspacesNamedValueContract2_Properties_KeyVault:
     # Null for SystemAssignedIdentity or Client Id for UserAssignedIdentity , which will be used to access key vault secret.
     identity_client_id: Any = None
+    # Issue contract Update Properties.
+    last_status: Any = None
     # Key vault secret identifier for fetching secret. Providing a versioned secret will prevent auto-refresh. This requires API Management service to be configured with aka.ms/apimmsi
     secret_identifier: Any = None
 
@@ -19,11 +30,24 @@ class ApimworkspacesNamedValueContract2_Properties:
     display_name: Any = None
     # Create keyVault contract details.
     key_vault: Any = None
+    # The provisioning state
+    provisioning_state: Any = None
     # Value of the NamedValue. Can contain policy expressions. It may not be empty or consist only of whitespace. This property will not be filled on 'GET' operations! Use '/listSecrets' POST request to get the value.
     value: Any = None
 
+_ApimworkspacesNamedValueContract2_Properties_KeyVault_LastStatusFields = {
+    "code": ubx.FieldSpec(wire_name="code"),
+    "message": ubx.FieldSpec(wire_name="message"),
+    "time_stamp_utc": ubx.FieldSpec(wire_name="time_stamp_utc"),
+}
+
 _ApimworkspacesNamedValueContract2_Properties_KeyVaultFields = {
     "identity_client_id": ubx.FieldSpec(wire_name="identity_client_id"),
+    "last_status": ubx.FieldSpec(
+        wire_name="last_status",
+        kind="object",
+        fields=_ApimworkspacesNamedValueContract2_Properties_KeyVault_LastStatusFields,
+    ),
     "secret_identifier": ubx.FieldSpec(wire_name="secret_identifier"),
 }
 
@@ -34,6 +58,7 @@ _ApimworkspacesNamedValueContract2_PropertiesFields = {
         kind="object",
         fields=_ApimworkspacesNamedValueContract2_Properties_KeyVaultFields,
     ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
     "value": ubx.FieldSpec(wire_name="value"),
 }
 

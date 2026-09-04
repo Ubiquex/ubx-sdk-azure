@@ -9,27 +9,27 @@ type OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_
 
 type OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type OpenapiHybridComputePrivateLinkScope_Properties_ServiceExtensions struct {
 	ServiceExtensionPublicNetworkAccess any
-	ServiceExtensionType any
+	ServiceExtensionType                any
 }
 
 type OpenapiHybridComputePrivateLinkScope_Properties struct {
@@ -46,61 +46,61 @@ type OpenapiHybridComputePrivateLinkScope_Properties struct {
 }
 
 var OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiHybridComputePrivateLinkScope_Properties_ServiceExtensionsFields = ubx.FieldMap{
-		"ServiceExtensionPublicNetworkAccess": ubx.FieldSpec{WireName: "service_extension_public_network_access"},
-		"ServiceExtensionType": ubx.FieldSpec{WireName: "service_extension_type"},
-	}
+	"ServiceExtensionPublicNetworkAccess": ubx.FieldSpec{WireName: "service_extension_public_network_access"},
+	"ServiceExtensionType":                ubx.FieldSpec{WireName: "service_extension_type"},
+}
 
 var OpenapiHybridComputePrivateLinkScope_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnectionsFields,
-		},
-		"PrivateLinkScopeId": ubx.FieldSpec{WireName: "private_link_scope_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"ServiceExtensions": ubx.FieldSpec{
-			WireName: "service_extensions",
-			Kind: "list",
-			Fields: OpenapiHybridComputePrivateLinkScope_Properties_ServiceExtensionsFields,
-		},
-	}
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   OpenapiHybridComputePrivateLinkScope_Properties_PrivateEndpointConnectionsFields,
+	},
+	"PrivateLinkScopeId":  ubx.FieldSpec{WireName: "private_link_scope_id"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"ServiceExtensions": ubx.FieldSpec{
+		WireName: "service_extensions",
+		Kind:     "list",
+		Fields:   OpenapiHybridComputePrivateLinkScope_Properties_ServiceExtensionsFields,
+	},
+}
 
 type OpenapiHybridComputePrivateLinkScopeConfig struct {
 	// Properties that define a Azure Arc PrivateLinkScope resource.
@@ -117,8 +117,8 @@ var OpenapiHybridComputePrivateLinkScope = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiHybridComputePrivateLinkScope_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiHybridComputePrivateLinkScope_PropertiesFields,
 		},
 	},
 }

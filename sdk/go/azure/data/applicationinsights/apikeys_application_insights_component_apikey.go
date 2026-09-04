@@ -4,12 +4,12 @@ package applicationinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApikeysApplicationInsightsComponentApikey_Value struct {
-	ApiKey any
-	CreatedDate any
-	Id any
-	LinkedReadProperties any
+	ApiKey                any
+	CreatedDate           any
+	Id                    any
+	LinkedReadProperties  any
 	LinkedWriteProperties any
-	Name any
+	Name                  any
 }
 
 type ApikeysApplicationInsightsComponentApikeyConfig struct {

@@ -15,11 +15,11 @@ type ApimcachesCacheContract2_Properties struct {
 }
 
 var ApimcachesCacheContract2_PropertiesFields = ubx.FieldMap{
-		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"UseFromLocation": ubx.FieldSpec{WireName: "use_from_location"},
-	}
+	"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"ResourceId":       ubx.FieldSpec{WireName: "resource_id"},
+	"UseFromLocation":  ubx.FieldSpec{WireName: "use_from_location"},
+}
 
 type ApimcachesCacheContract2Config struct {
 	// Properties of the Cache contract.
@@ -36,8 +36,8 @@ var ApimcachesCacheContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimcachesCacheContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimcachesCacheContract2_PropertiesFields,
 		},
 	},
 }

@@ -4,7 +4,7 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiThroughputSettingsGetResults_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -33,21 +33,21 @@ type DbOpenapiThroughputSettingsGetResults_Properties struct {
 }
 
 type DbOpenapiThroughputSettingsGetResultsConfig struct {
-	AccountName any
+	AccountName  any
 	KeyspaceName any
-	TableName any
+	TableName    any
 }
 
 type DbOpenapiThroughputSettingsGetResultsAttrs struct {
 	AccountName any
 	// Identity for the resource.
-	Identity any
+	Identity     any
 	KeyspaceName any
 	// The location of the resource group to which the resource belongs.
 	Location any
 	// The properties of an Azure Cosmos DB resource throughput
 	Properties any
-	TableName any
+	TableName  any
 	// Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with \"defaultExperience\": \"Cassandra\". Current \"defaultExperience\" values also include \"Table\", \"Graph\", \"DocumentDB\", and \"MongoDB\".
 	Tags any
 }
@@ -55,8 +55,8 @@ type DbOpenapiThroughputSettingsGetResultsAttrs struct {
 var DbOpenapiThroughputSettingsGetResults = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_throughput_settings_get_results",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":  ubx.FieldSpec{WireName: "account_name"},
 		"KeyspaceName": ubx.FieldSpec{WireName: "keyspace_name"},
-		"TableName": ubx.FieldSpec{WireName: "table_name"},
+		"TableName":    ubx.FieldSpec{WireName: "table_name"},
 	},
 }

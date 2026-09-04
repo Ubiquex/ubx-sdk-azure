@@ -4,7 +4,7 @@ package subscription
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SubscriptionsBillingAccountPoliciesResponse_Properties_ServiceTenants struct {
-	TenantId any
+	TenantId   any
 	TenantName any
 }
 
@@ -31,12 +31,12 @@ type SubscriptionsBillingAccountPoliciesResponse_SystemData struct {
 }
 
 type SubscriptionsBillingAccountPoliciesResponseConfig struct {
-	ApiVersion any
+	ApiVersion       any
 	BillingAccountId any
 }
 
 type SubscriptionsBillingAccountPoliciesResponseAttrs struct {
-	ApiVersion any
+	ApiVersion       any
 	BillingAccountId any
 	// Fully qualified ID for the policy.
 	Id any
@@ -53,7 +53,7 @@ type SubscriptionsBillingAccountPoliciesResponseAttrs struct {
 var SubscriptionsBillingAccountPoliciesResponse = ubx.DataSourceBinding{
 	WireType: "azure_subscription_subscriptions_billing_account_policies_response",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":       ubx.FieldSpec{WireName: "api_version"},
 		"BillingAccountId": ubx.FieldSpec{WireName: "billing_account_id"},
 	},
 }

@@ -4,16 +4,16 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMarketplaceSubscription_Value_Properties_MarketplacePlan struct {
-	OfferId any
-	PlanId any
+	OfferId     any
+	PlanId      any
 	PublisherId any
 }
 
 type OpenapiMarketplaceSubscription_Value_Properties struct {
-	MarketplacePlan any
+	MarketplacePlan               any
 	MarketplaceSubscriptionStatus any
-	ModelId any
-	ProvisioningState any
+	ModelId                       any
+	ProvisioningState             any
 }
 
 type OpenapiMarketplaceSubscription_Value struct {
@@ -28,7 +28,7 @@ type OpenapiMarketplaceSubscriptionAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The MarketplaceSubscription items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

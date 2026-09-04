@@ -12676,8 +12676,6 @@ const VirtualnetworkPrivateEndpointConnection_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkPrivateEndpointConnectionConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of the PrivateEndpointConnectProperties. */
   properties?: VirtualnetworkPrivateEndpointConnection_Properties | Computed<VirtualnetworkPrivateEndpointConnection_Properties>;
 }
@@ -12692,7 +12690,6 @@ export interface VirtualnetworkPrivateEndpointConnectionAttrs {
 export const VirtualnetworkPrivateEndpointConnection: ResourceBinding<VirtualnetworkPrivateEndpointConnectionConfig, VirtualnetworkPrivateEndpointConnectionAttrs> = {
   wireType: "azure_network_virtualnetwork_private_endpoint_connection",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

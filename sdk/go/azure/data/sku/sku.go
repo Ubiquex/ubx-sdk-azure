@@ -4,25 +4,22 @@ package sku
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SkuConfig struct {
-	EdgeZone any
-	Offer any
+	EdgeZone      any
+	Offer         any
 	PublisherName any
-	Skus any
 }
 
 type SkuAttrs struct {
-	EdgeZone any
-	Offer any
+	EdgeZone      any
+	Offer         any
 	PublisherName any
-	Skus any
 }
 
 var Sku = ubx.DataSourceBinding{
 	WireType: "azure_sku",
 	Fields: ubx.FieldMap{
-		"EdgeZone": ubx.FieldSpec{WireName: "edge_zone"},
-		"Offer": ubx.FieldSpec{WireName: "offer"},
+		"EdgeZone":      ubx.FieldSpec{WireName: "edge_zone"},
+		"Offer":         ubx.FieldSpec{WireName: "offer"},
 		"PublisherName": ubx.FieldSpec{WireName: "publisher_name"},
-		"Skus": ubx.FieldSpec{WireName: "skus"},
 	},
 }

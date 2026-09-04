@@ -5,19 +5,19 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OucontainerOuContainer_Value_Properties_Accounts struct {
 	AccountName any
-	Password any
-	Spn any
+	Password    any
+	Spn         any
 }
 
 type OucontainerOuContainer_Value_Properties struct {
-	Accounts any
-	ContainerId any
-	DeploymentId any
+	Accounts          any
+	ContainerId       any
+	DeploymentId      any
 	DistinguishedName any
-	DomainName any
+	DomainName        any
 	ProvisioningState any
-	ServiceStatus any
-	TenantId any
+	ServiceStatus     any
+	TenantId          any
 }
 
 type OucontainerOuContainer_Value struct {
@@ -25,19 +25,19 @@ type OucontainerOuContainer_Value struct {
 }
 
 type OucontainerOuContainerConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	DomainServiceName any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type OucontainerOuContainerAttrs struct {
-	ApiVersion any
+	ApiVersion        any
 	DomainServiceName any
 	// The continuation token for the next page of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The list of OuContainer.
 	Value any
 }
@@ -45,9 +45,9 @@ type OucontainerOuContainerAttrs struct {
 var OucontainerOuContainer = ubx.DataSourceBinding{
 	WireType: "azure_domainservices_oucontainer_ou_container",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"DomainServiceName": ubx.FieldSpec{WireName: "domain_service_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

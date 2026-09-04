@@ -28,23 +28,23 @@ type ManagedclustersSnapshot_Properties struct {
 }
 
 var ManagedclustersSnapshot_Properties_CreationDataFields = ubx.FieldMap{
-		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-	}
+	"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
+}
 
 var ManagedclustersSnapshot_PropertiesFields = ubx.FieldMap{
-		"CreationData": ubx.FieldSpec{
-			WireName: "creation_data",
-			Kind: "object",
-			Fields: ManagedclustersSnapshot_Properties_CreationDataFields,
-		},
-		"EnableFips": ubx.FieldSpec{WireName: "enable_fips"},
-		"KubernetesVersion": ubx.FieldSpec{WireName: "kubernetes_version"},
-		"NodeImageVersion": ubx.FieldSpec{WireName: "node_image_version"},
-		"OsSku": ubx.FieldSpec{WireName: "os_sku"},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-		"SnapshotType": ubx.FieldSpec{WireName: "snapshot_type"},
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-	}
+	"CreationData": ubx.FieldSpec{
+		WireName: "creation_data",
+		Kind:     "object",
+		Fields:   ManagedclustersSnapshot_Properties_CreationDataFields,
+	},
+	"EnableFips":        ubx.FieldSpec{WireName: "enable_fips"},
+	"KubernetesVersion": ubx.FieldSpec{WireName: "kubernetes_version"},
+	"NodeImageVersion":  ubx.FieldSpec{WireName: "node_image_version"},
+	"OsSku":             ubx.FieldSpec{WireName: "os_sku"},
+	"OsType":            ubx.FieldSpec{WireName: "os_type"},
+	"SnapshotType":      ubx.FieldSpec{WireName: "snapshot_type"},
+	"VmSize":            ubx.FieldSpec{WireName: "vm_size"},
+}
 
 type ManagedclustersSnapshotConfig struct {
 	// Properties used to configure a node pool snapshot.
@@ -61,8 +61,8 @@ var ManagedclustersSnapshot = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedclustersSnapshot_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedclustersSnapshot_PropertiesFields,
 		},
 	},
 }

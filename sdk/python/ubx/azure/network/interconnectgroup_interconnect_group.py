@@ -94,8 +94,6 @@ _InterconnectgroupInterconnectGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class InterconnectgroupInterconnectGroupConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Interconnect group properties.
     properties: Any = None
 
@@ -109,7 +107,6 @@ class InterconnectgroupInterconnectGroupAttrs:
 InterconnectgroupInterconnectGroup = ubx.ResourceBinding(
     wire_type="azure_network_interconnectgroup_interconnect_group",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

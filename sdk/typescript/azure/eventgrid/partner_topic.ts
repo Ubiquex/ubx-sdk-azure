@@ -112,22 +112,11 @@ const PartnerTopic_PropertiesFields: FieldMap = {
   source: "source",
 };
 
-const PartnerTopic_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface PartnerTopicConfig {
   /** The identity information for the resource. */
   identity?: PartnerTopic_Identity | Computed<PartnerTopic_Identity>;
   /** Properties of the Partner Topic. */
   properties?: PartnerTopic_Properties | Computed<PartnerTopic_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: PartnerTopic_SystemData | Computed<PartnerTopic_SystemData>;
 }
 
 export interface PartnerTopicAttrs {
@@ -151,11 +140,6 @@ export const PartnerTopic: ResourceBinding<PartnerTopicConfig, PartnerTopicAttrs
       wireName: "properties",
       kind: "object",
       fields: PartnerTopic_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: PartnerTopic_SystemDataFields,
     },
   },
 };

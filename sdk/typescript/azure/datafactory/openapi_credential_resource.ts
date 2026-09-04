@@ -17,8 +17,6 @@ const OpenapiCredentialResource_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiCredentialResourceConfig {
-  /** "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.") */
-  etag?: string | Computed<string>;
   /** The Azure Data Factory nested object which contains the information and credential which can be used to connect with related store or compute resource. */
   properties: OpenapiCredentialResource_Properties | Computed<OpenapiCredentialResource_Properties>;
 }
@@ -33,7 +31,6 @@ export interface OpenapiCredentialResourceAttrs {
 export const OpenapiCredentialResource: ResourceBinding<OpenapiCredentialResourceConfig, OpenapiCredentialResourceAttrs> = {
   wireType: "azure_datafactory_openapi_credential_resource",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

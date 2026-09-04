@@ -4,23 +4,23 @@ package extendedlocation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CustomlocationsEnabledResourceType_Value_Properties_TypesMetadata struct {
-	ApiVersion any
+	ApiVersion                any
 	ResourceProviderNamespace any
-	ResourceType any
+	ResourceType              any
 }
 
 type CustomlocationsEnabledResourceType_Value_Properties struct {
 	ClusterExtensionId any
-	ExtensionType any
-	TypesMetadata any
+	ExtensionType      any
+	TypesMetadata      any
 }
 
 type CustomlocationsEnabledResourceType_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -35,7 +35,7 @@ type CustomlocationsEnabledResourceTypeConfig struct {
 
 type CustomlocationsEnabledResourceTypeAttrs struct {
 	// The URL to use for getting the next set of results.
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The list of EnabledResourceTypes available for a customLocation.
 	Value any

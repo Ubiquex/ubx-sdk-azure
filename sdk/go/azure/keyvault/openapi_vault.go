@@ -5,16 +5,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiVault_Properties_AccessPolicies_Permissions struct {
 	Certificates any
-	Keys any
-	Secrets any
-	Storage any
+	Keys         any
+	Secrets      any
+	Storage      any
 }
 
 type OpenapiVault_Properties_AccessPolicies struct {
 	ApplicationId any
-	ObjectId any
-	Permissions any
-	TenantId any
+	ObjectId      any
+	Permissions   any
+	TenantId      any
 }
 
 type OpenapiVault_Properties_NetworkAcls_IpRules struct {
@@ -22,7 +22,7 @@ type OpenapiVault_Properties_NetworkAcls_IpRules struct {
 }
 
 type OpenapiVault_Properties_NetworkAcls_VirtualNetworkRules struct {
-	Id any
+	Id                               any
 	IgnoreMissingVnetServiceEndpoint any
 }
 
@@ -43,19 +43,19 @@ type OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateEndpoi
 
 type OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiVault_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiVault_Properties_PrivateEndpointConnections struct {
-	Etag any
-	Id any
+	Etag       any
+	Id         any
 	Properties any
 }
 
@@ -104,121 +104,121 @@ type OpenapiVault_Properties struct {
 }
 
 var OpenapiVault_Properties_AccessPolicies_PermissionsFields = ubx.FieldMap{
-		"Certificates": ubx.FieldSpec{WireName: "certificates"},
-		"Keys": ubx.FieldSpec{WireName: "keys"},
-		"Secrets": ubx.FieldSpec{WireName: "secrets"},
-		"Storage": ubx.FieldSpec{WireName: "storage"},
-	}
+	"Certificates": ubx.FieldSpec{WireName: "certificates"},
+	"Keys":         ubx.FieldSpec{WireName: "keys"},
+	"Secrets":      ubx.FieldSpec{WireName: "secrets"},
+	"Storage":      ubx.FieldSpec{WireName: "storage"},
+}
 
 var OpenapiVault_Properties_AccessPoliciesFields = ubx.FieldMap{
-		"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"Permissions": ubx.FieldSpec{
-			WireName: "permissions",
-			Kind: "object",
-			Fields: OpenapiVault_Properties_AccessPolicies_PermissionsFields,
-		},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
+	"ObjectId":      ubx.FieldSpec{WireName: "object_id"},
+	"Permissions": ubx.FieldSpec{
+		WireName: "permissions",
+		Kind:     "object",
+		Fields:   OpenapiVault_Properties_AccessPolicies_PermissionsFields,
+	},
+	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var OpenapiVault_Properties_NetworkAcls_IpRulesFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiVault_Properties_NetworkAcls_VirtualNetworkRulesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"IgnoreMissingVnetServiceEndpoint": ubx.FieldSpec{WireName: "ignore_missing_vnet_service_endpoint"},
-	}
+	"Id":                               ubx.FieldSpec{WireName: "id"},
+	"IgnoreMissingVnetServiceEndpoint": ubx.FieldSpec{WireName: "ignore_missing_vnet_service_endpoint"},
+}
 
 var OpenapiVault_Properties_NetworkAclsFields = ubx.FieldMap{
-		"Bypass": ubx.FieldSpec{WireName: "bypass"},
-		"DefaultAction": ubx.FieldSpec{WireName: "default_action"},
-		"IpRules": ubx.FieldSpec{
-			WireName: "ip_rules",
-			Kind: "list",
-			Fields: OpenapiVault_Properties_NetworkAcls_IpRulesFields,
-		},
-		"VirtualNetworkRules": ubx.FieldSpec{
-			WireName: "virtual_network_rules",
-			Kind: "list",
-			Fields: OpenapiVault_Properties_NetworkAcls_VirtualNetworkRulesFields,
-		},
-	}
+	"Bypass":        ubx.FieldSpec{WireName: "bypass"},
+	"DefaultAction": ubx.FieldSpec{WireName: "default_action"},
+	"IpRules": ubx.FieldSpec{
+		WireName: "ip_rules",
+		Kind:     "list",
+		Fields:   OpenapiVault_Properties_NetworkAcls_IpRulesFields,
+	},
+	"VirtualNetworkRules": ubx.FieldSpec{
+		WireName: "virtual_network_rules",
+		Kind:     "list",
+		Fields:   OpenapiVault_Properties_NetworkAcls_VirtualNetworkRulesFields,
+	},
+}
 
 var OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiVault_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiVault_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiVault_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiVault_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiVault_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var OpenapiVault_Properties_SkuFields = ubx.FieldMap{
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Family": ubx.FieldSpec{WireName: "family"},
+	"Name":   ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiVault_PropertiesFields = ubx.FieldMap{
-		"AccessPolicies": ubx.FieldSpec{
-			WireName: "access_policies",
-			Kind: "list",
-			Fields: OpenapiVault_Properties_AccessPoliciesFields,
-		},
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"EnablePurgeProtection": ubx.FieldSpec{WireName: "enable_purge_protection"},
-		"EnableRbacAuthorization": ubx.FieldSpec{WireName: "enable_rbac_authorization"},
-		"EnableSoftDelete": ubx.FieldSpec{WireName: "enable_soft_delete"},
-		"EnabledForDeployment": ubx.FieldSpec{WireName: "enabled_for_deployment"},
-		"EnabledForDiskEncryption": ubx.FieldSpec{WireName: "enabled_for_disk_encryption"},
-		"EnabledForTemplateDeployment": ubx.FieldSpec{WireName: "enabled_for_template_deployment"},
-		"HsmPoolResourceId": ubx.FieldSpec{WireName: "hsm_pool_resource_id"},
-		"NetworkAcls": ubx.FieldSpec{
-			WireName: "network_acls",
-			Kind: "object",
-			Fields: OpenapiVault_Properties_NetworkAclsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: OpenapiVault_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiVault_Properties_SkuFields,
-		},
-		"SoftDeleteRetentionInDays": ubx.FieldSpec{WireName: "soft_delete_retention_in_days"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"VaultUri": ubx.FieldSpec{WireName: "vault_uri"},
-	}
+	"AccessPolicies": ubx.FieldSpec{
+		WireName: "access_policies",
+		Kind:     "list",
+		Fields:   OpenapiVault_Properties_AccessPoliciesFields,
+	},
+	"CreateMode":                   ubx.FieldSpec{WireName: "create_mode"},
+	"EnablePurgeProtection":        ubx.FieldSpec{WireName: "enable_purge_protection"},
+	"EnableRbacAuthorization":      ubx.FieldSpec{WireName: "enable_rbac_authorization"},
+	"EnableSoftDelete":             ubx.FieldSpec{WireName: "enable_soft_delete"},
+	"EnabledForDeployment":         ubx.FieldSpec{WireName: "enabled_for_deployment"},
+	"EnabledForDiskEncryption":     ubx.FieldSpec{WireName: "enabled_for_disk_encryption"},
+	"EnabledForTemplateDeployment": ubx.FieldSpec{WireName: "enabled_for_template_deployment"},
+	"HsmPoolResourceId":            ubx.FieldSpec{WireName: "hsm_pool_resource_id"},
+	"NetworkAcls": ubx.FieldSpec{
+		WireName: "network_acls",
+		Kind:     "object",
+		Fields:   OpenapiVault_Properties_NetworkAclsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   OpenapiVault_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   OpenapiVault_Properties_SkuFields,
+	},
+	"SoftDeleteRetentionInDays": ubx.FieldSpec{WireName: "soft_delete_retention_in_days"},
+	"TenantId":                  ubx.FieldSpec{WireName: "tenant_id"},
+	"VaultUri":                  ubx.FieldSpec{WireName: "vault_uri"},
+}
 
 type OpenapiVaultConfig struct {
 	// The supported Azure location where the key vault should be created.
@@ -244,8 +244,8 @@ var OpenapiVault = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiVault_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiVault_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

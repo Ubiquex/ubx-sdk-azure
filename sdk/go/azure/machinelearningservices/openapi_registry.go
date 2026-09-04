@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRegistry_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -35,8 +35,8 @@ type OpenapiRegistry_Properties_ManagedResourceGroupSettings struct {
 
 type OpenapiRegistry_Properties_RegionDetails_AcrDetails_SystemCreatedAcrAccount struct {
 	AcrAccountName any
-	AcrAccountSku any
-	ArmResourceId any
+	AcrAccountSku  any
+	ArmResourceId  any
 }
 
 type OpenapiRegistry_Properties_RegionDetails_AcrDetails struct {
@@ -44,11 +44,11 @@ type OpenapiRegistry_Properties_RegionDetails_AcrDetails struct {
 }
 
 type OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails_SystemCreatedStorageAccount struct {
-	AllowBlobPublicAccess any
-	ArmResourceId any
+	AllowBlobPublicAccess    any
+	ArmResourceId            any
 	StorageAccountHnsEnabled any
-	StorageAccountName any
-	StorageAccountType any
+	StorageAccountName       any
+	StorageAccountType       any
 }
 
 type OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails struct {
@@ -56,8 +56,8 @@ type OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails struct {
 }
 
 type OpenapiRegistry_Properties_RegionDetails struct {
-	AcrDetails any
-	Location any
+	AcrDetails            any
+	Location              any
 	StorageAccountDetails any
 }
 
@@ -67,20 +67,20 @@ type OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_Pr
 
 type OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_RegistryPrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
-	ProvisioningState any
+	GroupIds                                  any
+	PrivateEndpoint                           any
+	ProvisioningState                         any
 	RegistryPrivateLinkServiceConnectionState any
 }
 
 type OpenapiRegistry_Properties_RegistryPrivateEndpointConnections struct {
-	Id any
-	Location any
+	Id         any
+	Location   any
 	Properties any
 }
 
@@ -117,158 +117,158 @@ type OpenapiRegistry_Sku struct {
 }
 
 var OpenapiRegistry_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiRegistry_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiRegistry_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiRegistry_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiRegistry_Properties_ManagedResourceGroupFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var OpenapiRegistry_Properties_ManagedResourceGroupSettings_AssignedIdentitiesFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiRegistry_Properties_ManagedResourceGroupSettingsFields = ubx.FieldMap{
-		"AssignedIdentities": ubx.FieldSpec{
-			WireName: "assigned_identities",
-			Kind: "list",
-			Fields: OpenapiRegistry_Properties_ManagedResourceGroupSettings_AssignedIdentitiesFields,
-		},
-	}
+	"AssignedIdentities": ubx.FieldSpec{
+		WireName: "assigned_identities",
+		Kind:     "list",
+		Fields:   OpenapiRegistry_Properties_ManagedResourceGroupSettings_AssignedIdentitiesFields,
+	},
+}
 
 var OpenapiRegistry_Properties_RegionDetails_AcrDetails_SystemCreatedAcrAccountFields = ubx.FieldMap{
-		"AcrAccountName": ubx.FieldSpec{WireName: "acr_account_name"},
-		"AcrAccountSku": ubx.FieldSpec{WireName: "acr_account_sku"},
-		"ArmResourceId": ubx.FieldSpec{
-			WireName: "arm_resource_id",
-			Kind: "object",
-			Fields: OpenapiRegistry_Properties_ManagedResourceGroupFields,
-		},
-	}
+	"AcrAccountName": ubx.FieldSpec{WireName: "acr_account_name"},
+	"AcrAccountSku":  ubx.FieldSpec{WireName: "acr_account_sku"},
+	"ArmResourceId": ubx.FieldSpec{
+		WireName: "arm_resource_id",
+		Kind:     "object",
+		Fields:   OpenapiRegistry_Properties_ManagedResourceGroupFields,
+	},
+}
 
 var OpenapiRegistry_Properties_RegionDetails_AcrDetailsFields = ubx.FieldMap{
-		"SystemCreatedAcrAccount": ubx.FieldSpec{
-			WireName: "system_created_acr_account",
-			Kind: "object",
-			Fields: OpenapiRegistry_Properties_RegionDetails_AcrDetails_SystemCreatedAcrAccountFields,
-		},
-	}
+	"SystemCreatedAcrAccount": ubx.FieldSpec{
+		WireName: "system_created_acr_account",
+		Kind:     "object",
+		Fields:   OpenapiRegistry_Properties_RegionDetails_AcrDetails_SystemCreatedAcrAccountFields,
+	},
+}
 
 var OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails_SystemCreatedStorageAccountFields = ubx.FieldMap{
-		"AllowBlobPublicAccess": ubx.FieldSpec{WireName: "allow_blob_public_access"},
-		"ArmResourceId": ubx.FieldSpec{
-			WireName: "arm_resource_id",
-			Kind: "object",
-			Fields: OpenapiRegistry_Properties_ManagedResourceGroupFields,
-		},
-		"StorageAccountHnsEnabled": ubx.FieldSpec{WireName: "storage_account_hns_enabled"},
-		"StorageAccountName": ubx.FieldSpec{WireName: "storage_account_name"},
-		"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
-	}
+	"AllowBlobPublicAccess": ubx.FieldSpec{WireName: "allow_blob_public_access"},
+	"ArmResourceId": ubx.FieldSpec{
+		WireName: "arm_resource_id",
+		Kind:     "object",
+		Fields:   OpenapiRegistry_Properties_ManagedResourceGroupFields,
+	},
+	"StorageAccountHnsEnabled": ubx.FieldSpec{WireName: "storage_account_hns_enabled"},
+	"StorageAccountName":       ubx.FieldSpec{WireName: "storage_account_name"},
+	"StorageAccountType":       ubx.FieldSpec{WireName: "storage_account_type"},
+}
 
 var OpenapiRegistry_Properties_RegionDetails_StorageAccountDetailsFields = ubx.FieldMap{
-		"SystemCreatedStorageAccount": ubx.FieldSpec{
-			WireName: "system_created_storage_account",
-			Kind: "object",
-			Fields: OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails_SystemCreatedStorageAccountFields,
-		},
-	}
+	"SystemCreatedStorageAccount": ubx.FieldSpec{
+		WireName: "system_created_storage_account",
+		Kind:     "object",
+		Fields:   OpenapiRegistry_Properties_RegionDetails_StorageAccountDetails_SystemCreatedStorageAccountFields,
+	},
+}
 
 var OpenapiRegistry_Properties_RegionDetailsFields = ubx.FieldMap{
-		"AcrDetails": ubx.FieldSpec{
-			WireName: "acr_details",
-			Kind: "list",
-			Fields: OpenapiRegistry_Properties_RegionDetails_AcrDetailsFields,
-		},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"StorageAccountDetails": ubx.FieldSpec{
-			WireName: "storage_account_details",
-			Kind: "list",
-			Fields: OpenapiRegistry_Properties_RegionDetails_StorageAccountDetailsFields,
-		},
-	}
+	"AcrDetails": ubx.FieldSpec{
+		WireName: "acr_details",
+		Kind:     "list",
+		Fields:   OpenapiRegistry_Properties_RegionDetails_AcrDetailsFields,
+	},
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"StorageAccountDetails": ubx.FieldSpec{
+		WireName: "storage_account_details",
+		Kind:     "list",
+		Fields:   OpenapiRegistry_Properties_RegionDetails_StorageAccountDetailsFields,
+	},
+}
 
 var OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"SubnetArmId": ubx.FieldSpec{WireName: "subnet_arm_id"},
-	}
+	"SubnetArmId": ubx.FieldSpec{WireName: "subnet_arm_id"},
+}
 
 var OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_RegistryPrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RegistryPrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "registry_private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_RegistryPrivateLinkServiceConnectionStateFields,
-		},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RegistryPrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "registry_private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_Properties_RegistryPrivateLinkServiceConnectionStateFields,
+	},
+}
 
 var OpenapiRegistry_Properties_RegistryPrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Id":       ubx.FieldSpec{WireName: "id"},
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiRegistry_Properties_RegistryPrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var OpenapiRegistry_PropertiesFields = ubx.FieldMap{
-		"DiscoveryUrl": ubx.FieldSpec{WireName: "discovery_url"},
-		"IntellectualPropertyPublisher": ubx.FieldSpec{WireName: "intellectual_property_publisher"},
-		"ManagedResourceGroup": ubx.FieldSpec{
-			WireName: "managed_resource_group",
-			Kind: "object",
-			Fields: OpenapiRegistry_Properties_ManagedResourceGroupFields,
-		},
-		"ManagedResourceGroupSettings": ubx.FieldSpec{
-			WireName: "managed_resource_group_settings",
-			Kind: "object",
-			Fields: OpenapiRegistry_Properties_ManagedResourceGroupSettingsFields,
-		},
-		"MlFlowRegistryUri": ubx.FieldSpec{WireName: "ml_flow_registry_uri"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"RegionDetails": ubx.FieldSpec{
-			WireName: "region_details",
-			Kind: "list",
-			Fields: OpenapiRegistry_Properties_RegionDetailsFields,
-		},
-		"RegistryPrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "registry_private_endpoint_connections",
-			Kind: "list",
-			Fields: OpenapiRegistry_Properties_RegistryPrivateEndpointConnectionsFields,
-		},
-	}
+	"DiscoveryUrl":                  ubx.FieldSpec{WireName: "discovery_url"},
+	"IntellectualPropertyPublisher": ubx.FieldSpec{WireName: "intellectual_property_publisher"},
+	"ManagedResourceGroup": ubx.FieldSpec{
+		WireName: "managed_resource_group",
+		Kind:     "object",
+		Fields:   OpenapiRegistry_Properties_ManagedResourceGroupFields,
+	},
+	"ManagedResourceGroupSettings": ubx.FieldSpec{
+		WireName: "managed_resource_group_settings",
+		Kind:     "object",
+		Fields:   OpenapiRegistry_Properties_ManagedResourceGroupSettingsFields,
+	},
+	"MlFlowRegistryUri":   ubx.FieldSpec{WireName: "ml_flow_registry_uri"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"RegionDetails": ubx.FieldSpec{
+		WireName: "region_details",
+		Kind:     "list",
+		Fields:   OpenapiRegistry_Properties_RegionDetailsFields,
+	},
+	"RegistryPrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "registry_private_endpoint_connections",
+		Kind:     "list",
+		Fields:   OpenapiRegistry_Properties_RegistryPrivateEndpointConnectionsFields,
+	},
+}
 
 var OpenapiRegistry_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type OpenapiRegistryConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -297,19 +297,19 @@ var OpenapiRegistry = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiRegistry_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiRegistry_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiRegistry_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiRegistry_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiRegistry_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiRegistry_SkuFields,
 		},
 	},
 }

@@ -12,6 +12,49 @@ class DeploymentsDeploymentExtended_Properties_DebugSetting:
     detail_level: Any = None
 
 @dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Dependencies_DependsOn:
+    id: Any = None
+    resource_name: Any = None
+    resource_type: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Dependencies:
+    depends_on: Any = None
+    id: Any = None
+    resource_name: Any = None
+    resource_type: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfo:
+    info: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Diagnostics:
+    additional_info: Any = None
+    code: Any = None
+    level: Any = None
+    message: Any = None
+    target: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Error_Details:
+    pass
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Error:
+    # The error additional info.
+    additional_info: Any = None
+    # The error code.
+    code: Any = None
+    # The error details.
+    details: Any = None
+    # The error message.
+    message: Any = None
+    # The error target.
+    target: Any = None
+
+@dataclasses.dataclass
 class DeploymentsDeploymentExtended_Properties_ExpressionEvaluationOptions:
     # The scope to be used for evaluation of parameters, variables and functions in a nested template.
     scope: Any = None
@@ -33,6 +76,14 @@ class DeploymentsDeploymentExtended_Properties_ExtensionConfigs:
     value: Any = None
 
 @dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Extensions:
+    alias: Any = None
+    config: Any = None
+    config_id: Any = None
+    name: Any = None
+    version: Any = None
+
+@dataclasses.dataclass
 class DeploymentsDeploymentExtended_Properties_ExternalInputDefinitions:
     config: Any = None
     kind: Any = None
@@ -45,8 +96,18 @@ class DeploymentsDeploymentExtended_Properties_ExternalInputs:
 class DeploymentsDeploymentExtended_Properties_OnErrorDeployment:
     # The deployment to be used on error case.
     deployment_name: Any = None
+    # The state of the provisioning for the on error deployment.
+    provisioning_state: Any = None
     # The deployment on error behavior type. Possible values are LastSuccessful and SpecificDeployment.
     type: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_OutputResources:
+    api_version: Any = None
+    extension: Any = None
+    id: Any = None
+    identifiers: Any = None
+    resource_type: Any = None
 
 @dataclasses.dataclass
 class DeploymentsDeploymentExtended_Properties_Parameters:
@@ -60,6 +121,71 @@ class DeploymentsDeploymentExtended_Properties_ParametersLink:
     content_version: Any = None
     # The URI of the parameters file.
     uri: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata:
+    attributes: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPattern:
+    phrase: Any = None
+    type: Any = None
+    variable: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_Paths:
+    api_versions: Any = None
+    metadata: Any = None
+    path: Any = None
+    pattern: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases:
+    default_metadata: Any = None
+    default_path: Any = None
+    default_pattern: Any = None
+    name: Any = None
+    paths: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfiles:
+    api_version: Any = None
+    profile_version: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappings:
+    extended_locations: Any = None
+    location: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappings:
+    location: Any = None
+    zones: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes:
+    aliases: Any = None
+    api_profiles: Any = None
+    api_versions: Any = None
+    capabilities: Any = None
+    default_api_version: Any = None
+    location_mappings: Any = None
+    locations: Any = None
+    properties: Any = None
+    resource_type: Any = None
+    zone_mappings: Any = None
+
+@dataclasses.dataclass
+class DeploymentsDeploymentExtended_Properties_Providers:
+    id: Any = None
+    namespace: Any = None
+    provider_authorization_consent_state: Any = None
+    registration_policy: Any = None
+    registration_state: Any = None
+    resource_types: Any = None
 
 @dataclasses.dataclass
 class DeploymentsDeploymentExtended_Properties_TemplateLink:
@@ -76,12 +202,24 @@ class DeploymentsDeploymentExtended_Properties_TemplateLink:
 
 @dataclasses.dataclass
 class DeploymentsDeploymentExtended_Properties:
+    # The correlation ID of the deployment.
+    correlation_id: Any = None
     # The debug setting.
     debug_setting: Any = None
+    # The list of deployment dependencies.
+    dependencies: Any = None
+    # Contains diagnostic information collected during validation process.
+    diagnostics: Any = None
+    # The duration of the template deployment.
+    duration: Any = None
+    # Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also follows the OData error response format.)
+    error: Any = None
     # Specifies whether template expressions are evaluated within the scope of the parent template or nested template.
     expression_evaluation_options: Any = None
     # The configurations to use for deployment extensions. The keys of this object are deployment extension aliases as defined in the deployment template.
     extension_configs: Any = None
+    # The extensions used in this deployment.
+    extensions: Any = None
     # External input definitions, used by external tooling to define expected external input values.
     external_input_definitions: Any = None
     # External input values, used by external tooling for parameter evaluation.
@@ -90,14 +228,28 @@ class DeploymentsDeploymentExtended_Properties:
     mode: Any = None
     # Deployment on error behavior.
     on_error_deployment: Any = None
+    # Array of provisioned resources.
+    output_resources: Any = None
+    # Key/value pairs that represent deployment output.
+    outputs: Any = None
     # Name and value pairs that define the deployment parameters for the template. You use this element when you want to provide the parameter values directly in the request rather than link to an existing parameter file. Use either the parametersLink property or the parameters property, but not both. It can be a JObject or a well formed JSON string.
     parameters: Any = None
     # Entity representing the reference to the deployment parameters.
     parameters_link: Any = None
+    # The list of resource providers needed for the deployment.
+    providers: Any = None
+    # Denotes the state of provisioning.
+    provisioning_state: Any = None
     # The template content. You use this element when you want to pass the template syntax directly in the request rather than link to an existing template. It can be a JObject or well-formed JSON string. Use either the templateLink property or the template property, but not both.
     template: Any = None
+    # The hash produced for the template.
+    template_hash: Any = None
     # Entity representing the reference to the template.
     template_link: Any = None
+    # The timestamp of the template deployment.
+    timestamp: Any = None
+    # Array of validated resources.
+    validated_resources: Any = None
     # The level of validation performed on the deployment.
     validation_level: Any = None
 
@@ -105,22 +257,61 @@ _DeploymentsDeploymentExtended_Properties_DebugSettingFields = {
     "detail_level": ubx.FieldSpec(wire_name="detail_level"),
 }
 
+_DeploymentsDeploymentExtended_Properties_Dependencies_DependsOnFields = {
+    "id": ubx.FieldSpec(wire_name="id"),
+    "resource_name": ubx.FieldSpec(wire_name="resource_name"),
+    "resource_type": ubx.FieldSpec(wire_name="resource_type"),
+}
+
+_DeploymentsDeploymentExtended_Properties_DependenciesFields = {
+    "depends_on": ubx.FieldSpec(
+        wire_name="depends_on",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_Dependencies_DependsOnFields,
+    ),
+    "id": ubx.FieldSpec(wire_name="id"),
+    "resource_name": ubx.FieldSpec(wire_name="resource_name"),
+    "resource_type": ubx.FieldSpec(wire_name="resource_type"),
+}
+
+_DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfoFields = {
+    "info": ubx.FieldSpec(wire_name="info"),
+    "type": ubx.FieldSpec(wire_name="type"),
+}
+
+_DeploymentsDeploymentExtended_Properties_DiagnosticsFields = {
+    "additional_info": ubx.FieldSpec(
+        wire_name="additional_info",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfoFields,
+    ),
+    "code": ubx.FieldSpec(wire_name="code"),
+    "level": ubx.FieldSpec(wire_name="level"),
+    "message": ubx.FieldSpec(wire_name="message"),
+    "target": ubx.FieldSpec(wire_name="target"),
+}
+
+_DeploymentsDeploymentExtended_Properties_Error_DetailsFields = {
+}
+
+_DeploymentsDeploymentExtended_Properties_ErrorFields = {
+    "additional_info": ubx.FieldSpec(
+        wire_name="additional_info",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfoFields,
+    ),
+    "code": ubx.FieldSpec(wire_name="code"),
+    "details": ubx.FieldSpec(
+        wire_name="details",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_Error_DetailsFields,
+    ),
+    "message": ubx.FieldSpec(wire_name="message"),
+    "target": ubx.FieldSpec(wire_name="target"),
+}
+
 _DeploymentsDeploymentExtended_Properties_ExpressionEvaluationOptionsFields = {
     "scope": ubx.FieldSpec(wire_name="scope"),
-}
-
-_DeploymentsDeploymentExtended_Properties_ExternalInputDefinitionsFields = {
-    "config": ubx.FieldSpec(wire_name="config"),
-    "kind": ubx.FieldSpec(wire_name="kind"),
-}
-
-_DeploymentsDeploymentExtended_Properties_ExternalInputsFields = {
-    "value": ubx.FieldSpec(wire_name="value"),
-}
-
-_DeploymentsDeploymentExtended_Properties_OnErrorDeploymentFields = {
-    "deployment_name": ubx.FieldSpec(wire_name="deployment_name"),
-    "type": ubx.FieldSpec(wire_name="type"),
 }
 
 _DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReference_KeyVaultFields = {
@@ -135,6 +326,55 @@ _DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReferenceFiel
     ),
     "secret_name": ubx.FieldSpec(wire_name="secret_name"),
     "secret_version": ubx.FieldSpec(wire_name="secret_version"),
+}
+
+_DeploymentsDeploymentExtended_Properties_ExtensionConfigsFields = {
+    "key_vault_reference": ubx.FieldSpec(
+        wire_name="key_vault_reference",
+        kind="object",
+        fields=_DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReferenceFields,
+    ),
+    "type": ubx.FieldSpec(wire_name="type"),
+    "value": ubx.FieldSpec(wire_name="value"),
+}
+
+_DeploymentsDeploymentExtended_Properties_ExtensionsFields = {
+    "alias": ubx.FieldSpec(wire_name="alias"),
+    "config": ubx.FieldSpec(
+        wire_name="config",
+        kind="map",
+        fields=_DeploymentsDeploymentExtended_Properties_ExtensionConfigsFields,
+    ),
+    "config_id": ubx.FieldSpec(wire_name="config_id"),
+    "name": ubx.FieldSpec(wire_name="name"),
+    "version": ubx.FieldSpec(wire_name="version"),
+}
+
+_DeploymentsDeploymentExtended_Properties_ExternalInputDefinitionsFields = {
+    "config": ubx.FieldSpec(wire_name="config"),
+    "kind": ubx.FieldSpec(wire_name="kind"),
+}
+
+_DeploymentsDeploymentExtended_Properties_ExternalInputsFields = {
+    "value": ubx.FieldSpec(wire_name="value"),
+}
+
+_DeploymentsDeploymentExtended_Properties_OnErrorDeploymentFields = {
+    "deployment_name": ubx.FieldSpec(wire_name="deployment_name"),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+    "type": ubx.FieldSpec(wire_name="type"),
+}
+
+_DeploymentsDeploymentExtended_Properties_OutputResourcesFields = {
+    "api_version": ubx.FieldSpec(wire_name="api_version"),
+    "extension": ubx.FieldSpec(
+        wire_name="extension",
+        kind="object",
+        fields=_DeploymentsDeploymentExtended_Properties_ExtensionsFields,
+    ),
+    "id": ubx.FieldSpec(wire_name="id"),
+    "identifiers": ubx.FieldSpec(wire_name="identifiers"),
+    "resource_type": ubx.FieldSpec(wire_name="resource_type"),
 }
 
 _DeploymentsDeploymentExtended_Properties_ParametersFields = {
@@ -152,6 +392,111 @@ _DeploymentsDeploymentExtended_Properties_ParametersLinkFields = {
     "uri": ubx.FieldSpec(wire_name="uri"),
 }
 
+_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadataFields = {
+    "attributes": ubx.FieldSpec(wire_name="attributes"),
+    "type": ubx.FieldSpec(wire_name="type"),
+}
+
+_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPatternFields = {
+    "phrase": ubx.FieldSpec(wire_name="phrase"),
+    "type": ubx.FieldSpec(wire_name="type"),
+    "variable": ubx.FieldSpec(wire_name="variable"),
+}
+
+_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_PathsFields = {
+    "api_versions": ubx.FieldSpec(wire_name="api_versions"),
+    "metadata": ubx.FieldSpec(
+        wire_name="metadata",
+        kind="object",
+        fields=_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadataFields,
+    ),
+    "path": ubx.FieldSpec(wire_name="path"),
+    "pattern": ubx.FieldSpec(
+        wire_name="pattern",
+        kind="object",
+        fields=_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPatternFields,
+    ),
+}
+
+_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_AliasesFields = {
+    "default_metadata": ubx.FieldSpec(
+        wire_name="default_metadata",
+        kind="object",
+        fields=_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadataFields,
+    ),
+    "default_path": ubx.FieldSpec(wire_name="default_path"),
+    "default_pattern": ubx.FieldSpec(
+        wire_name="default_pattern",
+        kind="object",
+        fields=_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPatternFields,
+    ),
+    "name": ubx.FieldSpec(wire_name="name"),
+    "paths": ubx.FieldSpec(
+        wire_name="paths",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_PathsFields,
+    ),
+    "type": ubx.FieldSpec(wire_name="type"),
+}
+
+_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfilesFields = {
+    "api_version": ubx.FieldSpec(wire_name="api_version"),
+    "profile_version": ubx.FieldSpec(wire_name="profile_version"),
+}
+
+_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappingsFields = {
+    "extended_locations": ubx.FieldSpec(wire_name="extended_locations"),
+    "location": ubx.FieldSpec(wire_name="location"),
+    "type": ubx.FieldSpec(wire_name="type"),
+}
+
+_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappingsFields = {
+    "location": ubx.FieldSpec(wire_name="location"),
+    "zones": ubx.FieldSpec(wire_name="zones"),
+}
+
+_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypesFields = {
+    "aliases": ubx.FieldSpec(
+        wire_name="aliases",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_AliasesFields,
+    ),
+    "api_profiles": ubx.FieldSpec(
+        wire_name="api_profiles",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfilesFields,
+    ),
+    "api_versions": ubx.FieldSpec(wire_name="api_versions"),
+    "capabilities": ubx.FieldSpec(wire_name="capabilities"),
+    "default_api_version": ubx.FieldSpec(wire_name="default_api_version"),
+    "location_mappings": ubx.FieldSpec(
+        wire_name="location_mappings",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappingsFields,
+    ),
+    "locations": ubx.FieldSpec(wire_name="locations"),
+    "properties": ubx.FieldSpec(wire_name="properties"),
+    "resource_type": ubx.FieldSpec(wire_name="resource_type"),
+    "zone_mappings": ubx.FieldSpec(
+        wire_name="zone_mappings",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappingsFields,
+    ),
+}
+
+_DeploymentsDeploymentExtended_Properties_ProvidersFields = {
+    "id": ubx.FieldSpec(wire_name="id"),
+    "namespace": ubx.FieldSpec(wire_name="namespace"),
+    "provider_authorization_consent_state": ubx.FieldSpec(wire_name="provider_authorization_consent_state"),
+    "registration_policy": ubx.FieldSpec(wire_name="registration_policy"),
+    "registration_state": ubx.FieldSpec(wire_name="registration_state"),
+    "resource_types": ubx.FieldSpec(
+        wire_name="resource_types",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_Providers_ResourceTypesFields,
+    ),
+}
+
 _DeploymentsDeploymentExtended_Properties_TemplateLinkFields = {
     "content_version": ubx.FieldSpec(wire_name="content_version"),
     "id": ubx.FieldSpec(wire_name="id"),
@@ -161,10 +506,27 @@ _DeploymentsDeploymentExtended_Properties_TemplateLinkFields = {
 }
 
 _DeploymentsDeploymentExtended_PropertiesFields = {
+    "correlation_id": ubx.FieldSpec(wire_name="correlation_id"),
     "debug_setting": ubx.FieldSpec(
         wire_name="debug_setting",
         kind="object",
         fields=_DeploymentsDeploymentExtended_Properties_DebugSettingFields,
+    ),
+    "dependencies": ubx.FieldSpec(
+        wire_name="dependencies",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_DependenciesFields,
+    ),
+    "diagnostics": ubx.FieldSpec(
+        wire_name="diagnostics",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_DiagnosticsFields,
+    ),
+    "duration": ubx.FieldSpec(wire_name="duration"),
+    "error": ubx.FieldSpec(
+        wire_name="error",
+        kind="object",
+        fields=_DeploymentsDeploymentExtended_Properties_ErrorFields,
     ),
     "expression_evaluation_options": ubx.FieldSpec(
         wire_name="expression_evaluation_options",
@@ -172,6 +534,11 @@ _DeploymentsDeploymentExtended_PropertiesFields = {
         fields=_DeploymentsDeploymentExtended_Properties_ExpressionEvaluationOptionsFields,
     ),
     "extension_configs": ubx.FieldSpec(wire_name="extension_configs"),
+    "extensions": ubx.FieldSpec(
+        wire_name="extensions",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_ExtensionsFields,
+    ),
     "external_input_definitions": ubx.FieldSpec(
         wire_name="external_input_definitions",
         kind="map",
@@ -188,6 +555,12 @@ _DeploymentsDeploymentExtended_PropertiesFields = {
         kind="object",
         fields=_DeploymentsDeploymentExtended_Properties_OnErrorDeploymentFields,
     ),
+    "output_resources": ubx.FieldSpec(
+        wire_name="output_resources",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_OutputResourcesFields,
+    ),
+    "outputs": ubx.FieldSpec(wire_name="outputs"),
     "parameters": ubx.FieldSpec(
         wire_name="parameters",
         kind="map",
@@ -198,11 +571,24 @@ _DeploymentsDeploymentExtended_PropertiesFields = {
         kind="object",
         fields=_DeploymentsDeploymentExtended_Properties_ParametersLinkFields,
     ),
+    "providers": ubx.FieldSpec(
+        wire_name="providers",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_ProvidersFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
     "template": ubx.FieldSpec(wire_name="template"),
+    "template_hash": ubx.FieldSpec(wire_name="template_hash"),
     "template_link": ubx.FieldSpec(
         wire_name="template_link",
         kind="object",
         fields=_DeploymentsDeploymentExtended_Properties_TemplateLinkFields,
+    ),
+    "timestamp": ubx.FieldSpec(wire_name="timestamp"),
+    "validated_resources": ubx.FieldSpec(
+        wire_name="validated_resources",
+        kind="list",
+        fields=_DeploymentsDeploymentExtended_Properties_OutputResourcesFields,
     ),
     "validation_level": ubx.FieldSpec(wire_name="validation_level"),
 }

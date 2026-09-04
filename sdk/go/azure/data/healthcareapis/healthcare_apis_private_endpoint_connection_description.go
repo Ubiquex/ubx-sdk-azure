@@ -4,11 +4,11 @@ package healthcareapis
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HealthcareApisPrivateEndpointConnectionDescription_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -18,12 +18,12 @@ type HealthcareApisPrivateEndpointConnectionDescription_Value struct {
 
 type HealthcareApisPrivateEndpointConnectionDescriptionConfig struct {
 	ResourceGroupName any
-	ResourceName any
+	ResourceName      any
 }
 
 type HealthcareApisPrivateEndpointConnectionDescriptionAttrs struct {
 	ResourceGroupName any
-	ResourceName any
+	ResourceName      any
 	// Array of private endpoint connections
 	Value any
 }
@@ -32,6 +32,6 @@ var HealthcareApisPrivateEndpointConnectionDescription = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_private_endpoint_connection_description",
 	Fields: ubx.FieldMap{
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

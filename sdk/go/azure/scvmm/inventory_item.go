@@ -17,12 +17,12 @@ type InventoryItem_Properties struct {
 }
 
 var InventoryItem_PropertiesFields = ubx.FieldMap{
-		"InventoryItemName": ubx.FieldSpec{WireName: "inventory_item_name"},
-		"InventoryType": ubx.FieldSpec{WireName: "inventory_type"},
-		"ManagedResourceId": ubx.FieldSpec{WireName: "managed_resource_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Uuid": ubx.FieldSpec{WireName: "uuid"},
-	}
+	"InventoryItemName": ubx.FieldSpec{WireName: "inventory_item_name"},
+	"InventoryType":     ubx.FieldSpec{WireName: "inventory_type"},
+	"ManagedResourceId": ubx.FieldSpec{WireName: "managed_resource_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Uuid":              ubx.FieldSpec{WireName: "uuid"},
+}
 
 type InventoryItemConfig struct {
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type; e.g. ApiApps are a kind of Microsoft.Web/sites type. If supported, the resource provider must validate and persist this value.
@@ -44,8 +44,8 @@ var InventoryItem = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: InventoryItem_PropertiesFields,
+			Kind:     "object",
+			Fields:   InventoryItem_PropertiesFields,
 		},
 	},
 }

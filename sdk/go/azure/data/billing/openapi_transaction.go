@@ -5,55 +5,55 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiTransaction_Value_Properties_AzureCreditApplied struct {
 	Currency any
-	Value any
+	Value    any
 }
 
 type OpenapiTransaction_Value_Properties_RefundTransactionDetails struct {
-	AmountRefunded any
-	AmountRequested any
+	AmountRefunded    any
+	AmountRequested   any
 	RefundOperationId any
 }
 
 type OpenapiTransaction_Value_Properties struct {
-	AzureCreditApplied any
-	AzurePlan any
-	BillingCurrency any
-	BillingProfileDisplayName any
-	BillingProfileId any
+	AzureCreditApplied               any
+	AzurePlan                        any
+	BillingCurrency                  any
+	BillingProfileDisplayName        any
+	BillingProfileId                 any
 	ConsumptionCommitmentDecremented any
-	CreditType any
-	CustomerDisplayName any
-	CustomerId any
-	Date any
-	Discount any
-	EffectivePrice any
-	ExchangeRate any
-	Invoice any
-	InvoiceId any
-	InvoiceSectionDisplayName any
-	InvoiceSectionId any
-	IsThirdParty any
-	Kind any
-	MarketPrice any
-	PartNumber any
-	PricingCurrency any
-	ProductDescription any
-	ProductFamily any
-	ProductType any
-	ProductTypeId any
-	Quantity any
-	ReasonCode any
-	RefundTransactionDetails any
-	ServicePeriodEndDate any
-	ServicePeriodStartDate any
-	SpecialTaxationType any
-	SubTotal any
-	Tax any
-	TransactionAmount any
-	TransactionType any
-	UnitOfMeasure any
-	UnitType any
-	Units any
+	CreditType                       any
+	CustomerDisplayName              any
+	CustomerId                       any
+	Date                             any
+	Discount                         any
+	EffectivePrice                   any
+	ExchangeRate                     any
+	Invoice                          any
+	InvoiceId                        any
+	InvoiceSectionDisplayName        any
+	InvoiceSectionId                 any
+	IsThirdParty                     any
+	Kind                             any
+	MarketPrice                      any
+	PartNumber                       any
+	PricingCurrency                  any
+	ProductDescription               any
+	ProductFamily                    any
+	ProductType                      any
+	ProductTypeId                    any
+	Quantity                         any
+	ReasonCode                       any
+	RefundTransactionDetails         any
+	ServicePeriodEndDate             any
+	ServicePeriodStartDate           any
+	SpecialTaxationType              any
+	SubTotal                         any
+	Tax                              any
+	TransactionAmount                any
+	TransactionType                  any
+	UnitOfMeasure                    any
+	UnitType                         any
+	Units                            any
 }
 
 type OpenapiTransaction_Value struct {
@@ -63,33 +63,33 @@ type OpenapiTransaction_Value struct {
 type OpenapiTransactionConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	CustomerName any
-	Filter any
-	OrderBy any
-	PeriodEndDate any
-	PeriodStartDate any
-	Search any
-	Skip any
-	Top any
-	Type any
+	Count              any
+	CustomerName       any
+	Filter             any
+	OrderBy            any
+	PeriodEndDate      any
+	PeriodStartDate    any
+	Search             any
+	Skip               any
+	Top                any
+	Type               any
 }
 
 type OpenapiTransactionAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	CustomerName any
-	Filter any
+	Count              any
+	CustomerName       any
+	Filter             any
 	// The link to the next page of items
-	NextLink any
-	OrderBy any
-	PeriodEndDate any
+	NextLink        any
+	OrderBy         any
+	PeriodEndDate   any
 	PeriodStartDate any
-	Search any
-	Skip any
-	Top any
-	Type any
+	Search          any
+	Skip            any
+	Top             any
+	Type            any
 	// The Transaction items on this page
 	Value any
 }
@@ -99,15 +99,15 @@ var OpenapiTransaction = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"CustomerName": ubx.FieldSpec{WireName: "customer_name"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"PeriodEndDate": ubx.FieldSpec{WireName: "period_end_date"},
-		"PeriodStartDate": ubx.FieldSpec{WireName: "period_start_date"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
-		"Type": ubx.FieldSpec{WireName: "type"},
+		"Count":              ubx.FieldSpec{WireName: "count"},
+		"CustomerName":       ubx.FieldSpec{WireName: "customer_name"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"PeriodEndDate":      ubx.FieldSpec{WireName: "period_end_date"},
+		"PeriodStartDate":    ubx.FieldSpec{WireName: "period_start_date"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
+		"Type":               ubx.FieldSpec{WireName: "type"},
 	},
 }

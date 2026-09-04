@@ -11,8 +11,6 @@ const SbauthorizationRule_PropertiesFields: FieldMap = {
 };
 
 export interface SbauthorizationRuleConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** AuthorizationRule properties. */
   properties?: SbauthorizationRule_Properties | Computed<SbauthorizationRule_Properties>;
 }
@@ -27,7 +25,6 @@ export interface SbauthorizationRuleAttrs {
 export const SbauthorizationRule: ResourceBinding<SbauthorizationRuleConfig, SbauthorizationRuleAttrs> = {
   wireType: "azure_servicebus_sbauthorization_rule",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

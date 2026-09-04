@@ -4,7 +4,7 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworksecurityperimeterNetworkSecurityPerimeter_Value_Properties struct {
-	PerimeterGuid any
+	PerimeterGuid     any
 	ProvisioningState any
 }
 
@@ -24,6 +24,5 @@ type NetworksecurityperimeterNetworkSecurityPerimeterAttrs struct {
 
 var NetworksecurityperimeterNetworkSecurityPerimeter = ubx.DataSourceBinding{
 	WireType: "azure_network_networksecurityperimeter_network_security_perimeter",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

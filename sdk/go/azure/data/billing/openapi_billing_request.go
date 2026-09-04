@@ -6,71 +6,71 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiBillingRequest_Value_Properties_CreatedBy struct {
 	ObjectId any
 	TenantId any
-	Upn any
+	Upn      any
 }
 
 type OpenapiBillingRequest_Value_Properties struct {
-	AdditionalInformation any
-	BillingAccountDisplayName any
-	BillingAccountId any
-	BillingAccountName any
+	AdditionalInformation                any
+	BillingAccountDisplayName            any
+	BillingAccountId                     any
+	BillingAccountName                   any
 	BillingAccountPrimaryBillingTenantId any
-	BillingProfileDisplayName any
-	BillingProfileId any
-	BillingProfileName any
-	BillingScope any
-	CreatedBy any
-	CreationDate any
-	CustomerDisplayName any
-	CustomerId any
-	CustomerName any
-	DecisionReason any
-	ExpirationDate any
-	InvoiceSectionDisplayName any
-	InvoiceSectionId any
-	InvoiceSectionName any
-	Justification any
-	LastUpdatedBy any
-	LastUpdatedDate any
-	ProvisioningState any
-	Recipients any
-	RequestScope any
-	ReviewalDate any
-	ReviewedBy any
-	Status any
-	SubscriptionDisplayName any
-	SubscriptionId any
-	SubscriptionName any
-	Type any
+	BillingProfileDisplayName            any
+	BillingProfileId                     any
+	BillingProfileName                   any
+	BillingScope                         any
+	CreatedBy                            any
+	CreationDate                         any
+	CustomerDisplayName                  any
+	CustomerId                           any
+	CustomerName                         any
+	DecisionReason                       any
+	ExpirationDate                       any
+	InvoiceSectionDisplayName            any
+	InvoiceSectionId                     any
+	InvoiceSectionName                   any
+	Justification                        any
+	LastUpdatedBy                        any
+	LastUpdatedDate                      any
+	ProvisioningState                    any
+	Recipients                           any
+	RequestScope                         any
+	ReviewalDate                         any
+	ReviewedBy                           any
+	Status                               any
+	SubscriptionDisplayName              any
+	SubscriptionId                       any
+	SubscriptionName                     any
+	Type                                 any
 }
 
 type OpenapiBillingRequest_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiBillingRequestConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	Filter any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	Count              any
+	Filter             any
+	OrderBy            any
+	Search             any
+	Skip               any
+	Top                any
 }
 
 type OpenapiBillingRequestAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	Filter any
+	Count              any
+	Filter             any
 	// The link to the next page of items
 	NextLink any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	OrderBy  any
+	Search   any
+	Skip     any
+	Top      any
 	// The BillingRequest items on this page
 	Value any
 }
@@ -80,11 +80,11 @@ var OpenapiBillingRequest = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Count":              ubx.FieldSpec{WireName: "count"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

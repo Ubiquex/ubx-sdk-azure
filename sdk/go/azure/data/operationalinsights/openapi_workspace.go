@@ -4,79 +4,79 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWorkspace_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiWorkspace_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiWorkspace_Value_Properties_Failover struct {
 	LastModifiedDate any
-	State any
+	State            any
 }
 
 type OpenapiWorkspace_Value_Properties_Features struct {
-	Associations any
-	ClusterResourceId any
-	DataAuthorizationMode any
-	DisableLocalAuth any
-	EnableDataExport any
+	Associations                                any
+	ClusterResourceId                           any
+	DataAuthorizationMode                       any
+	DisableLocalAuth                            any
+	EnableDataExport                            any
 	EnableLogAccessUsingOnlyResourcePermissions any
-	ImmediatePurgeDataOn30Days any
-	UnifiedSentinelBillingOnly any
+	ImmediatePurgeDataOn30Days                  any
+	UnifiedSentinelBillingOnly                  any
 }
 
 type OpenapiWorkspace_Value_Properties_PrivateLinkScopedResources struct {
 	ResourceId any
-	ScopeId any
+	ScopeId    any
 }
 
 type OpenapiWorkspace_Value_Properties_Replication struct {
-	CreatedDate any
-	Enabled any
-	LastModifiedDate any
-	Location any
+	CreatedDate       any
+	Enabled           any
+	LastModifiedDate  any
+	Location          any
 	ProvisioningState any
 }
 
 type OpenapiWorkspace_Value_Properties_Sku struct {
 	CapacityReservationLevel any
-	LastSkuUpdate any
-	Name any
+	LastSkuUpdate            any
+	Name                     any
 }
 
 type OpenapiWorkspace_Value_Properties_WorkspaceCapping struct {
-	DailyQuotaGb any
+	DailyQuotaGb        any
 	DataIngestionStatus any
-	QuotaNextResetTime any
+	QuotaNextResetTime  any
 }
 
 type OpenapiWorkspace_Value_Properties struct {
-	CreatedDate any
-	CustomerId any
+	CreatedDate                         any
+	CustomerId                          any
 	DefaultDataCollectionRuleResourceId any
-	Failover any
-	Features any
-	ForceCmkForQuery any
-	ModifiedDate any
-	PrivateLinkScopedResources any
-	ProvisioningState any
-	PublicNetworkAccessForIngestion any
-	PublicNetworkAccessForQuery any
-	Replication any
-	RetentionInDays any
-	Sku any
-	WorkspaceCapping any
+	Failover                            any
+	Features                            any
+	ForceCmkForQuery                    any
+	ModifiedDate                        any
+	PrivateLinkScopedResources          any
+	ProvisioningState                   any
+	PublicNetworkAccessForIngestion     any
+	PublicNetworkAccessForQuery         any
+	Replication                         any
+	RetentionInDays                     any
+	Sku                                 any
+	WorkspaceCapping                    any
 }
 
 type OpenapiWorkspace_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
 }
 
@@ -92,6 +92,5 @@ type OpenapiWorkspaceAttrs struct {
 
 var OpenapiWorkspace = ubx.DataSourceBinding{
 	WireType: "azure_operationalinsights_openapi_workspace",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

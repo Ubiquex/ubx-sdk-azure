@@ -4,19 +4,19 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DevToolPortalResource_Value_Properties_Components_Instances struct {
-	Name any
+	Name   any
 	Status any
 }
 
 type DevToolPortalResource_Value_Properties_Components_ResourceRequests struct {
-	Cpu any
+	Cpu           any
 	InstanceCount any
-	Memory any
+	Memory        any
 }
 
 type DevToolPortalResource_Value_Properties_Components struct {
-	Instances any
-	Name any
+	Instances        any
+	Name             any
 	ResourceRequests any
 }
 
@@ -27,23 +27,23 @@ type DevToolPortalResource_Value_Properties_Features_ApplicationAccelerator stru
 
 type DevToolPortalResource_Value_Properties_Features struct {
 	ApplicationAccelerator any
-	ApplicationLiveView any
+	ApplicationLiveView    any
 }
 
 type DevToolPortalResource_Value_Properties_SsoProperties struct {
-	ClientId any
+	ClientId     any
 	ClientSecret any
-	MetadataUrl any
-	Scopes any
+	MetadataUrl  any
+	Scopes       any
 }
 
 type DevToolPortalResource_Value_Properties struct {
-	Components any
-	Features any
+	Components        any
+	Features          any
 	ProvisioningState any
-	Public any
-	SsoProperties any
-	Url any
+	Public            any
+	SsoProperties     any
+	Url               any
 }
 
 type DevToolPortalResource_Value struct {
@@ -51,19 +51,19 @@ type DevToolPortalResource_Value struct {
 }
 
 type DevToolPortalResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type DevToolPortalResourceAttrs struct {
 	ApiVersion any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of Dev Tool Portal resources
 	Value any
 }
@@ -71,9 +71,9 @@ type DevToolPortalResourceAttrs struct {
 var DevToolPortalResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_dev_tool_portal_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiModelVersion_Value_Properties_Datasets struct {
-	Id any
+	Id   any
 	Name any
 }
 
@@ -13,13 +13,13 @@ type OpenapiModelVersion_Value_Properties_Flavors struct {
 }
 
 type OpenapiModelVersion_Value_Properties struct {
-	Datasets any
-	Flavors any
-	JobName any
-	ModelType any
-	ModelUri any
+	Datasets          any
+	Flavors           any
+	JobName           any
+	ModelType         any
+	ModelUri          any
 	ProvisioningState any
-	Stage any
+	Stage             any
 }
 
 type OpenapiModelVersion_Value struct {
@@ -27,38 +27,38 @@ type OpenapiModelVersion_Value struct {
 }
 
 type OpenapiModelVersionConfig struct {
-	Description any
+	Description  any
 	ListViewType any
-	ModelName any
-	Properties any
+	ModelName    any
+	Properties   any
 	RegistryName any
-	Tags any
-	Version any
+	Tags         any
+	Version      any
 }
 
 type OpenapiModelVersionAttrs struct {
-	Description any
+	Description  any
 	ListViewType any
-	ModelName any
+	ModelName    any
 	// The link to the next page of items
-	NextLink any
-	Properties any
+	NextLink     any
+	Properties   any
 	RegistryName any
-	Tags any
+	Tags         any
 	// The ModelVersion items on this page
-	Value any
+	Value   any
 	Version any
 }
 
 var OpenapiModelVersion = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_model_version",
 	Fields: ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
+		"Description":  ubx.FieldSpec{WireName: "description"},
 		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
-		"ModelName": ubx.FieldSpec{WireName: "model_name"},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
+		"ModelName":    ubx.FieldSpec{WireName: "model_name"},
+		"Properties":   ubx.FieldSpec{WireName: "properties"},
 		"RegistryName": ubx.FieldSpec{WireName: "registry_name"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Version": ubx.FieldSpec{WireName: "version"},
+		"Tags":         ubx.FieldSpec{WireName: "tags"},
+		"Version":      ubx.FieldSpec{WireName: "version"},
 	},
 }

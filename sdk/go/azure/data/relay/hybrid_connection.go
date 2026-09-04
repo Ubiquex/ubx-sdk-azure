@@ -4,15 +4,15 @@ package relay
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HybridConnection_Value_Properties struct {
-	CreatedAt any
-	ListenerCount any
+	CreatedAt                   any
+	ListenerCount               any
 	RequiresClientAuthorization any
-	UpdatedAt any
-	UserMetadata any
+	UpdatedAt                   any
+	UserMetadata                any
 }
 
 type HybridConnection_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiJavaComponent_Value_Properties_Configurations struct {
 	PropertyName any
-	Value any
+	Value        any
 }
 
 type OpenapiJavaComponent_Value_Properties_Scale struct {
@@ -14,16 +14,16 @@ type OpenapiJavaComponent_Value_Properties_Scale struct {
 }
 
 type OpenapiJavaComponent_Value_Properties_ServiceBinds struct {
-	Name any
+	Name      any
 	ServiceId any
 }
 
 type OpenapiJavaComponent_Value_Properties struct {
-	ComponentType any
-	Configurations any
+	ComponentType     any
+	Configurations    any
 	ProvisioningState any
-	Scale any
-	ServiceBinds any
+	Scale             any
+	ServiceBinds      any
 }
 
 type OpenapiJavaComponent_Value struct {

@@ -14,7 +14,6 @@ export interface Image_Properties_SourceVirtualMachine {
 }
 
 export interface Image_Properties_StorageProfile_DataDisks {
-  /** The logical unit number (LUN) for the data disk, which uniquely identifies the disk within the virtual machine. (AI-inferred) */
   lun?: number | Computed<number>;
 }
 
@@ -39,7 +38,6 @@ export interface Image_Properties {
   hyperVgeneration?: string | Computed<string>;
   /** The provisioning state. */
   provisioningState?: string | Computed<string>;
-  /** The virtual machine from which this image is created. (AI-inferred) */
   sourceVirtualMachine?: Image_Properties_SourceVirtualMachine | Computed<Image_Properties_SourceVirtualMachine>;
   /** Describes a storage profile. */
   storageProfile?: Image_Properties_StorageProfile | Computed<Image_Properties_StorageProfile>;

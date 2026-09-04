@@ -5,20 +5,19 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SubscriptionsAcceptOwnershipStatusResponseConfig struct {
 	ApiVersion any
-	SubscriptionId any
 }
 
 type SubscriptionsAcceptOwnershipStatusResponseAttrs struct {
 	// The accept ownership state of the resource.
 	AcceptOwnershipState any
-	ApiVersion any
+	ApiVersion           any
 	// UPN of the billing owner
 	BillingOwner any
 	// The display name of the subscription.
 	DisplayName any
 	// The provisioning state of the resource.
 	ProvisioningState any
-	SubscriptionId any
+	SubscriptionId    any
 	// Tenant Id of the subscription
 	SubscriptionTenantId any
 	// Tags for the subscription
@@ -29,6 +28,5 @@ var SubscriptionsAcceptOwnershipStatusResponse = ubx.DataSourceBinding{
 	WireType: "azure_subscription_subscriptions_accept_ownership_status_response",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -12,38 +12,38 @@ type OpenapiFeaturesetContainer_Value struct {
 }
 
 type OpenapiFeaturesetContainerConfig struct {
-	CreatedBy any
-	Description any
-	ListViewType any
-	Name any
-	PageSize any
-	Tags any
+	CreatedBy     any
+	Description   any
+	ListViewType  any
+	Name          any
+	PageSize      any
+	Tags          any
 	WorkspaceName any
 }
 
 type OpenapiFeaturesetContainerAttrs struct {
-	CreatedBy any
-	Description any
+	CreatedBy    any
+	Description  any
 	ListViewType any
-	Name any
+	Name         any
 	// The link to the next page of items
 	NextLink any
 	PageSize any
-	Tags any
+	Tags     any
 	// The FeaturesetContainer items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiFeaturesetContainer = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_featureset_container",
 	Fields: ubx.FieldMap{
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"PageSize": ubx.FieldSpec{WireName: "page_size"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"CreatedBy":     ubx.FieldSpec{WireName: "created_by"},
+		"Description":   ubx.FieldSpec{WireName: "description"},
+		"ListViewType":  ubx.FieldSpec{WireName: "list_view_type"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
+		"PageSize":      ubx.FieldSpec{WireName: "page_size"},
+		"Tags":          ubx.FieldSpec{WireName: "tags"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

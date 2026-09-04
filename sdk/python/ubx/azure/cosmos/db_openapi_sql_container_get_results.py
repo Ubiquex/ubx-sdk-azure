@@ -165,6 +165,12 @@ class DbOpenapiSqlContainerGetResults_Properties_Resource_VectorEmbeddingPolicy:
 
 @dataclasses.dataclass
 class DbOpenapiSqlContainerGetResults_Properties_Resource:
+    # A system generated property representing the resource etag required for optimistic concurrency control.
+    etag: Any = None
+    # A system generated property. A unique identifier.
+    rid: Any = None
+    # A system generated property that denotes the last updated timestamp of the resource.
+    ts: Any = None
     # Analytical TTL.
     analytical_storage_ttl: Any = None
     # Cosmos DB client encryption policy.
@@ -357,6 +363,9 @@ _DbOpenapiSqlContainerGetResults_Properties_Resource_VectorEmbeddingPolicyFields
 }
 
 _DbOpenapiSqlContainerGetResults_Properties_ResourceFields = {
+    "etag": ubx.FieldSpec(wire_name="_etag"),
+    "rid": ubx.FieldSpec(wire_name="_rid"),
+    "ts": ubx.FieldSpec(wire_name="_ts"),
     "analytical_storage_ttl": ubx.FieldSpec(wire_name="analytical_storage_ttl"),
     "client_encryption_policy": ubx.FieldSpec(
         wire_name="client_encryption_policy",

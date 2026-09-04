@@ -4,30 +4,30 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AdminRequestApprovalsResource_Value_Properties_Plans_Requesters struct {
-	Date any
-	Justification any
-	SubscriptionId any
+	Date             any
+	Justification    any
+	SubscriptionId   any
 	SubscriptionName any
-	User any
+	User             any
 }
 
 type AdminRequestApprovalsResource_Value_Properties_Plans struct {
 	PlanDisplayName any
-	PlanId any
-	Requesters any
+	PlanId          any
+	Requesters      any
 }
 
 type AdminRequestApprovalsResource_Value_Properties struct {
-	AdminAction any
+	AdminAction   any
 	Administrator any
 	ApprovedPlans any
 	CollectionIds any
-	Comment any
-	DisplayName any
-	Icon any
-	OfferId any
-	Plans any
-	PublisherId any
+	Comment       any
+	DisplayName   any
+	Icon          any
+	OfferId       any
+	Plans         any
+	PublisherId   any
 }
 
 type AdminRequestApprovalsResource_Value struct {
@@ -40,9 +40,9 @@ type AdminRequestApprovalsResourceConfig struct {
 
 type AdminRequestApprovalsResourceAttrs struct {
 	// URL to get the next set of notifications list results if there are any.
-	NextLink any
+	NextLink       any
 	PrivateStoreId any
-	Value any
+	Value          any
 }
 
 var AdminRequestApprovalsResource = ubx.DataSourceBinding{

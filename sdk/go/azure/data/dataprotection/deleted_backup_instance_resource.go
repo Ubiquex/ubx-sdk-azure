@@ -4,9 +4,9 @@ package dataprotection
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DeletedBackupInstanceResource_Value_Properties_DeletionInfo struct {
-	BillingEndDate any
-	DeleteActivityId any
-	DeletionTime any
+	BillingEndDate     any
+	DeleteActivityId   any
+	DeletionTime       any
 	ScheduledPurgeTime any
 }
 
@@ -24,7 +24,7 @@ type DeletedBackupInstanceResourceConfig struct {
 
 type DeletedBackupInstanceResourceAttrs struct {
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

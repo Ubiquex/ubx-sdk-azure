@@ -11,9 +11,9 @@ type Gallery_Properties struct {
 }
 
 var Gallery_PropertiesFields = ubx.FieldMap{
-		"GalleryResourceId": ubx.FieldSpec{WireName: "gallery_resource_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GalleryResourceId": ubx.FieldSpec{WireName: "gallery_resource_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type GalleryConfig struct {
 	// Properties of a gallery.
@@ -30,8 +30,8 @@ var Gallery = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Gallery_PropertiesFields,
+			Kind:     "object",
+			Fields:   Gallery_PropertiesFields,
 		},
 	},
 }

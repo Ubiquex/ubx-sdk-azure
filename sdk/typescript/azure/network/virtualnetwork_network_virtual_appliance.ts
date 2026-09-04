@@ -338,8 +338,6 @@ const VirtualnetworkNetworkVirtualAppliance_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkNetworkVirtualApplianceConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: VirtualnetworkNetworkVirtualAppliance_Identity | Computed<VirtualnetworkNetworkVirtualAppliance_Identity>;
   /** Network Virtual Appliance definition. */
@@ -358,7 +356,6 @@ export interface VirtualnetworkNetworkVirtualApplianceAttrs {
 export const VirtualnetworkNetworkVirtualAppliance: ResourceBinding<VirtualnetworkNetworkVirtualApplianceConfig, VirtualnetworkNetworkVirtualApplianceAttrs> = {
   wireType: "azure_network_virtualnetwork_network_virtual_appliance",
   fields: {
-    etag: "etag",
     identity: {
       wireName: "identity",
       kind: "object",

@@ -4,7 +4,7 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiDatabaseAccountGetResults_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -64,11 +64,17 @@ type DbOpenapiDatabaseAccountGetResults_Properties_ConsistencyPolicy struct {
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_Cors struct {
-	AllowedHeaders any
-	AllowedMethods any
-	AllowedOrigins any
-	ExposedHeaders any
+	AllowedHeaders  any
+	AllowedMethods  any
+	AllowedOrigins  any
+	ExposedHeaders  any
 	MaxAgeInSeconds any
+}
+
+type DbOpenapiDatabaseAccountGetResults_Properties_FailoverPolicies struct {
+	FailoverPriority any
+	Id               any
+	LocationName     any
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_IpRules struct {
@@ -92,22 +98,43 @@ type DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata struct {
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_Locations struct {
-	DocumentEndpoint any
-	FailoverPriority any
-	Id any
-	IsZoneRedundant any
-	LocationName any
+	DocumentEndpoint  any
+	FailoverPriority  any
+	Id                any
+	IsZoneRedundant   any
+	LocationName      any
 	ProvisioningState any
+}
+
+type DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	Id any
+}
+
+type DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	ActionsRequired any
+	Description     any
+	Status          any
+}
+
+type DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties struct {
+	GroupId                           any
+	PrivateEndpoint                   any
+	PrivateLinkServiceConnectionState any
+	ProvisioningState                 any
+}
+
+type DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections struct {
+	Properties any
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_DatabasesToRestore struct {
 	CollectionNames any
-	DatabaseName any
+	DatabaseName    any
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_GremlinDatabasesToRestore struct {
 	DatabaseName any
-	GraphNames any
+	GraphNames   any
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters struct {
@@ -128,14 +155,14 @@ type DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters struct {
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties_VirtualNetworkRules struct {
-	Id any
+	Id                               any
 	IgnoreMissingVnetServiceEndpoint any
 }
 
 type DbOpenapiDatabaseAccountGetResults_Properties struct {
 	// Analytical storage specific properties.
 	AnalyticalStorageConfiguration any
-	ApiProperties any
+	ApiProperties                  any
 	// The object representing the policy for taking backups on an account.
 	BackupPolicy any
 	// List of Cosmos DB capabilities for the account
@@ -162,6 +189,8 @@ type DbOpenapiDatabaseAccountGetResults_Properties struct {
 	DisableKeyBasedMetadataWriteAccess any
 	// Opt-out of local authentication and ensure only MSI and AAD can be used exclusively for authentication.
 	DisableLocalAuth any
+	// The connection endpoint for the Cosmos DB database account.
+	DocumentEndpoint any
 	// Flag to indicate whether to enable storage analytics.
 	EnableAnalyticalStorage any
 	// Enables automatic failover of the write region in the rare event that the region is unavailable due to an outage. Automatic failover will result in a new write region for the account and is chosen based on the failover priorities configured for the account.
@@ -182,12 +211,18 @@ type DbOpenapiDatabaseAccountGetResults_Properties struct {
 	EnablePriorityBasedExecution any
 	// Flag to indicate enabling/disabling of hierarchical partition key ID last level enforcement on the account.
 	EnforceHierarchicalPartitionKeyIdLastLevel any
+	// An array that contains the regions ordered by their failover priorities.
+	FailoverPolicies any
+	// A unique identifier assigned to the database account
+	InstanceId any
 	// List of IpRules.
 	IpRules any
 	// Flag to indicate whether to enable/disable Virtual Network ACL rules.
 	IsVirtualNetworkFilterEnabled any
 	// The URI of the key vault
 	KeyVaultKeyUri any
+	// The version of the Customer Managed Key currently being used by the account
+	KeyVaultKeyUriVersion any
 	// The metadata related to each access key for the given Cosmos DB database account.
 	KeysMetadata any
 	// An array that contains the georeplication locations enabled for the Cosmos DB account.
@@ -198,234 +233,305 @@ type DbOpenapiDatabaseAccountGetResults_Properties struct {
 	NetworkAclBypass any
 	// An array that contains the Resource Ids for Network Acl Bypass for the Cosmos DB account.
 	NetworkAclBypassResourceIds any
+	// List of Private Endpoint Connections configured for the Cosmos DB account.
+	PrivateEndpointConnections any
+	// The provisioning state of the resource.
+	ProvisioningState any
 	// Whether requests from Public Network are allowed
 	PublicNetworkAccess any
+	// An array that contains of the read locations enabled for the Cosmos DB account.
+	ReadLocations any
 	// Parameters to indicate the information about the restore.
 	RestoreParameters any
 	// List of Virtual Network ACL rules configured for the Cosmos DB account.
 	VirtualNetworkRules any
+	// An array that contains the write location for the Cosmos DB account.
+	WriteLocations any
 }
 
 var DbOpenapiDatabaseAccountGetResults_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: DbOpenapiDatabaseAccountGetResults_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_AnalyticalStorageConfigurationFields = ubx.FieldMap{
-		"SchemaType": ubx.FieldSpec{WireName: "schema_type"},
-	}
+	"SchemaType": ubx.FieldSpec{WireName: "schema_type"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_ApiPropertiesFields = ubx.FieldMap{
-		"ServerVersion": ubx.FieldSpec{WireName: "server_version"},
-	}
+	"ServerVersion": ubx.FieldSpec{WireName: "server_version"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_BackupPolicy_MigrationStateFields = ubx.FieldMap{
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TargetType": ubx.FieldSpec{WireName: "target_type"},
-	}
+	"StartTime":  ubx.FieldSpec{WireName: "start_time"},
+	"Status":     ubx.FieldSpec{WireName: "status"},
+	"TargetType": ubx.FieldSpec{WireName: "target_type"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_BackupPolicyFields = ubx.FieldMap{
-		"MigrationState": ubx.FieldSpec{
-			WireName: "migration_state",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_BackupPolicy_MigrationStateFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"MigrationState": ubx.FieldSpec{
+		WireName: "migration_state",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_BackupPolicy_MigrationStateFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_CapabilitiesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_CapacityFields = ubx.FieldMap{
-		"TotalThroughputLimit": ubx.FieldSpec{WireName: "total_throughput_limit"},
-	}
+	"TotalThroughputLimit": ubx.FieldSpec{WireName: "total_throughput_limit"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_ConsistencyPolicyFields = ubx.FieldMap{
-		"DefaultConsistencyLevel": ubx.FieldSpec{WireName: "default_consistency_level"},
-		"MaxIntervalInSeconds": ubx.FieldSpec{WireName: "max_interval_in_seconds"},
-		"MaxStalenessPrefix": ubx.FieldSpec{WireName: "max_staleness_prefix"},
-	}
+	"DefaultConsistencyLevel": ubx.FieldSpec{WireName: "default_consistency_level"},
+	"MaxIntervalInSeconds":    ubx.FieldSpec{WireName: "max_interval_in_seconds"},
+	"MaxStalenessPrefix":      ubx.FieldSpec{WireName: "max_staleness_prefix"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_CorsFields = ubx.FieldMap{
-		"AllowedHeaders": ubx.FieldSpec{WireName: "allowed_headers"},
-		"AllowedMethods": ubx.FieldSpec{WireName: "allowed_methods"},
-		"AllowedOrigins": ubx.FieldSpec{WireName: "allowed_origins"},
-		"ExposedHeaders": ubx.FieldSpec{WireName: "exposed_headers"},
-		"MaxAgeInSeconds": ubx.FieldSpec{WireName: "max_age_in_seconds"},
-	}
+	"AllowedHeaders":  ubx.FieldSpec{WireName: "allowed_headers"},
+	"AllowedMethods":  ubx.FieldSpec{WireName: "allowed_methods"},
+	"AllowedOrigins":  ubx.FieldSpec{WireName: "allowed_origins"},
+	"ExposedHeaders":  ubx.FieldSpec{WireName: "exposed_headers"},
+	"MaxAgeInSeconds": ubx.FieldSpec{WireName: "max_age_in_seconds"},
+}
+
+var DbOpenapiDatabaseAccountGetResults_Properties_FailoverPoliciesFields = ubx.FieldMap{
+	"FailoverPriority": ubx.FieldSpec{WireName: "failover_priority"},
+	"Id":               ubx.FieldSpec{WireName: "id"},
+	"LocationName":     ubx.FieldSpec{WireName: "location_name"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_IpRulesFields = ubx.FieldMap{
-		"IpAddressOrRange": ubx.FieldSpec{WireName: "ip_address_or_range"},
-	}
+	"IpAddressOrRange": ubx.FieldSpec{WireName: "ip_address_or_range"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata_PrimaryMasterKeyFields = ubx.FieldMap{
-		"GenerationTime": ubx.FieldSpec{WireName: "generation_time"},
-	}
+	"GenerationTime": ubx.FieldSpec{WireName: "generation_time"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadataFields = ubx.FieldMap{
-		"PrimaryMasterKey": ubx.FieldSpec{
-			WireName: "primary_master_key",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata_PrimaryMasterKeyFields,
-		},
-		"PrimaryReadonlyMasterKey": ubx.FieldSpec{
-			WireName: "primary_readonly_master_key",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata_PrimaryMasterKeyFields,
-		},
-		"SecondaryMasterKey": ubx.FieldSpec{
-			WireName: "secondary_master_key",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata_PrimaryMasterKeyFields,
-		},
-		"SecondaryReadonlyMasterKey": ubx.FieldSpec{
-			WireName: "secondary_readonly_master_key",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata_PrimaryMasterKeyFields,
-		},
-	}
+	"PrimaryMasterKey": ubx.FieldSpec{
+		WireName: "primary_master_key",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata_PrimaryMasterKeyFields,
+	},
+	"PrimaryReadonlyMasterKey": ubx.FieldSpec{
+		WireName: "primary_readonly_master_key",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata_PrimaryMasterKeyFields,
+	},
+	"SecondaryMasterKey": ubx.FieldSpec{
+		WireName: "secondary_master_key",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata_PrimaryMasterKeyFields,
+	},
+	"SecondaryReadonlyMasterKey": ubx.FieldSpec{
+		WireName: "secondary_readonly_master_key",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata_PrimaryMasterKeyFields,
+	},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_LocationsFields = ubx.FieldMap{
-		"DocumentEndpoint": ubx.FieldSpec{WireName: "document_endpoint"},
-		"FailoverPriority": ubx.FieldSpec{WireName: "failover_priority"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"IsZoneRedundant": ubx.FieldSpec{WireName: "is_zone_redundant"},
-		"LocationName": ubx.FieldSpec{WireName: "location_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"DocumentEndpoint":  ubx.FieldSpec{WireName: "document_endpoint"},
+	"FailoverPriority":  ubx.FieldSpec{WireName: "failover_priority"},
+	"Id":                ubx.FieldSpec{WireName: "id"},
+	"IsZoneRedundant":   ubx.FieldSpec{WireName: "is_zone_redundant"},
+	"LocationName":      ubx.FieldSpec{WireName: "location_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
+
+var DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
+
+var DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
+
+var DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
+	"GroupId": ubx.FieldSpec{WireName: "group_id"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
+
+var DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_DatabasesToRestoreFields = ubx.FieldMap{
-		"CollectionNames": ubx.FieldSpec{WireName: "collection_names"},
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-	}
+	"CollectionNames": ubx.FieldSpec{WireName: "collection_names"},
+	"DatabaseName":    ubx.FieldSpec{WireName: "database_name"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_GremlinDatabasesToRestoreFields = ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"GraphNames": ubx.FieldSpec{WireName: "graph_names"},
-	}
+	"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+	"GraphNames":   ubx.FieldSpec{WireName: "graph_names"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_RestoreParametersFields = ubx.FieldMap{
-		"DatabasesToRestore": ubx.FieldSpec{
-			WireName: "databases_to_restore",
-			Kind: "list",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_DatabasesToRestoreFields,
-		},
-		"GremlinDatabasesToRestore": ubx.FieldSpec{
-			WireName: "gremlin_databases_to_restore",
-			Kind: "list",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_GremlinDatabasesToRestoreFields,
-		},
-		"RestoreMode": ubx.FieldSpec{WireName: "restore_mode"},
-		"RestoreSource": ubx.FieldSpec{WireName: "restore_source"},
-		"RestoreTimestampInUtc": ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
-		"SourceBackupLocation": ubx.FieldSpec{WireName: "source_backup_location"},
-		"TablesToRestore": ubx.FieldSpec{WireName: "tables_to_restore"},
-	}
+	"DatabasesToRestore": ubx.FieldSpec{
+		WireName: "databases_to_restore",
+		Kind:     "list",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_DatabasesToRestoreFields,
+	},
+	"GremlinDatabasesToRestore": ubx.FieldSpec{
+		WireName: "gremlin_databases_to_restore",
+		Kind:     "list",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_GremlinDatabasesToRestoreFields,
+	},
+	"RestoreMode":           ubx.FieldSpec{WireName: "restore_mode"},
+	"RestoreSource":         ubx.FieldSpec{WireName: "restore_source"},
+	"RestoreTimestampInUtc": ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
+	"SourceBackupLocation":  ubx.FieldSpec{WireName: "source_backup_location"},
+	"TablesToRestore":       ubx.FieldSpec{WireName: "tables_to_restore"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_Properties_VirtualNetworkRulesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"IgnoreMissingVnetServiceEndpoint": ubx.FieldSpec{WireName: "ignore_missing_vnet_service_endpoint"},
-	}
+	"Id":                               ubx.FieldSpec{WireName: "id"},
+	"IgnoreMissingVnetServiceEndpoint": ubx.FieldSpec{WireName: "ignore_missing_vnet_service_endpoint"},
+}
 
 var DbOpenapiDatabaseAccountGetResults_PropertiesFields = ubx.FieldMap{
-		"AnalyticalStorageConfiguration": ubx.FieldSpec{
-			WireName: "analytical_storage_configuration",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_AnalyticalStorageConfigurationFields,
-		},
-		"ApiProperties": ubx.FieldSpec{
-			WireName: "api_properties",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_ApiPropertiesFields,
-		},
-		"BackupPolicy": ubx.FieldSpec{
-			WireName: "backup_policy",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_BackupPolicyFields,
-		},
-		"Capabilities": ubx.FieldSpec{
-			WireName: "capabilities",
-			Kind: "list",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_CapabilitiesFields,
-		},
-		"Capacity": ubx.FieldSpec{
-			WireName: "capacity",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_CapacityFields,
-		},
-		"ConnectorOffer": ubx.FieldSpec{WireName: "connector_offer"},
-		"ConsistencyPolicy": ubx.FieldSpec{
-			WireName: "consistency_policy",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_ConsistencyPolicyFields,
-		},
-		"Cors": ubx.FieldSpec{
-			WireName: "cors",
-			Kind: "list",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_CorsFields,
-		},
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"CustomerManagedKeyStatus": ubx.FieldSpec{WireName: "customer_managed_key_status"},
-		"DatabaseAccountOfferType": ubx.FieldSpec{WireName: "database_account_offer_type"},
-		"DefaultIdentity": ubx.FieldSpec{WireName: "default_identity"},
-		"DefaultPriorityLevel": ubx.FieldSpec{WireName: "default_priority_level"},
-		"DisableKeyBasedMetadataWriteAccess": ubx.FieldSpec{WireName: "disable_key_based_metadata_write_access"},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"EnableAnalyticalStorage": ubx.FieldSpec{WireName: "enable_analytical_storage"},
-		"EnableAutomaticFailover": ubx.FieldSpec{WireName: "enable_automatic_failover"},
-		"EnableBurstCapacity": ubx.FieldSpec{WireName: "enable_burst_capacity"},
-		"EnableCassandraConnector": ubx.FieldSpec{WireName: "enable_cassandra_connector"},
-		"EnableFreeTier": ubx.FieldSpec{WireName: "enable_free_tier"},
-		"EnableMultipleWriteLocations": ubx.FieldSpec{WireName: "enable_multiple_write_locations"},
-		"EnablePartitionMerge": ubx.FieldSpec{WireName: "enable_partition_merge"},
-		"EnablePerRegionPerPartitionAutoscale": ubx.FieldSpec{WireName: "enable_per_region_per_partition_autoscale"},
-		"EnablePriorityBasedExecution": ubx.FieldSpec{WireName: "enable_priority_based_execution"},
-		"EnforceHierarchicalPartitionKeyIdLastLevel": ubx.FieldSpec{WireName: "enforce_hierarchical_partition_key_id_last_level"},
-		"IpRules": ubx.FieldSpec{
-			WireName: "ip_rules",
-			Kind: "list",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_IpRulesFields,
-		},
-		"IsVirtualNetworkFilterEnabled": ubx.FieldSpec{WireName: "is_virtual_network_filter_enabled"},
-		"KeyVaultKeyUri": ubx.FieldSpec{WireName: "key_vault_key_uri"},
-		"KeysMetadata": ubx.FieldSpec{
-			WireName: "keys_metadata",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadataFields,
-		},
-		"Locations": ubx.FieldSpec{
-			WireName: "locations",
-			Kind: "list",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_LocationsFields,
-		},
-		"MinimalTlsVersion": ubx.FieldSpec{WireName: "minimal_tls_version"},
-		"NetworkAclBypass": ubx.FieldSpec{WireName: "network_acl_bypass"},
-		"NetworkAclBypassResourceIds": ubx.FieldSpec{WireName: "network_acl_bypass_resource_ids"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"RestoreParameters": ubx.FieldSpec{
-			WireName: "restore_parameters",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_RestoreParametersFields,
-		},
-		"VirtualNetworkRules": ubx.FieldSpec{
-			WireName: "virtual_network_rules",
-			Kind: "list",
-			Fields: DbOpenapiDatabaseAccountGetResults_Properties_VirtualNetworkRulesFields,
-		},
-	}
+	"AnalyticalStorageConfiguration": ubx.FieldSpec{
+		WireName: "analytical_storage_configuration",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_AnalyticalStorageConfigurationFields,
+	},
+	"ApiProperties": ubx.FieldSpec{
+		WireName: "api_properties",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_ApiPropertiesFields,
+	},
+	"BackupPolicy": ubx.FieldSpec{
+		WireName: "backup_policy",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_BackupPolicyFields,
+	},
+	"Capabilities": ubx.FieldSpec{
+		WireName: "capabilities",
+		Kind:     "list",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_CapabilitiesFields,
+	},
+	"Capacity": ubx.FieldSpec{
+		WireName: "capacity",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_CapacityFields,
+	},
+	"ConnectorOffer": ubx.FieldSpec{WireName: "connector_offer"},
+	"ConsistencyPolicy": ubx.FieldSpec{
+		WireName: "consistency_policy",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_ConsistencyPolicyFields,
+	},
+	"Cors": ubx.FieldSpec{
+		WireName: "cors",
+		Kind:     "list",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_CorsFields,
+	},
+	"CreateMode":                                 ubx.FieldSpec{WireName: "create_mode"},
+	"CustomerManagedKeyStatus":                   ubx.FieldSpec{WireName: "customer_managed_key_status"},
+	"DatabaseAccountOfferType":                   ubx.FieldSpec{WireName: "database_account_offer_type"},
+	"DefaultIdentity":                            ubx.FieldSpec{WireName: "default_identity"},
+	"DefaultPriorityLevel":                       ubx.FieldSpec{WireName: "default_priority_level"},
+	"DisableKeyBasedMetadataWriteAccess":         ubx.FieldSpec{WireName: "disable_key_based_metadata_write_access"},
+	"DisableLocalAuth":                           ubx.FieldSpec{WireName: "disable_local_auth"},
+	"DocumentEndpoint":                           ubx.FieldSpec{WireName: "document_endpoint"},
+	"EnableAnalyticalStorage":                    ubx.FieldSpec{WireName: "enable_analytical_storage"},
+	"EnableAutomaticFailover":                    ubx.FieldSpec{WireName: "enable_automatic_failover"},
+	"EnableBurstCapacity":                        ubx.FieldSpec{WireName: "enable_burst_capacity"},
+	"EnableCassandraConnector":                   ubx.FieldSpec{WireName: "enable_cassandra_connector"},
+	"EnableFreeTier":                             ubx.FieldSpec{WireName: "enable_free_tier"},
+	"EnableMultipleWriteLocations":               ubx.FieldSpec{WireName: "enable_multiple_write_locations"},
+	"EnablePartitionMerge":                       ubx.FieldSpec{WireName: "enable_partition_merge"},
+	"EnablePerRegionPerPartitionAutoscale":       ubx.FieldSpec{WireName: "enable_per_region_per_partition_autoscale"},
+	"EnablePriorityBasedExecution":               ubx.FieldSpec{WireName: "enable_priority_based_execution"},
+	"EnforceHierarchicalPartitionKeyIdLastLevel": ubx.FieldSpec{WireName: "enforce_hierarchical_partition_key_id_last_level"},
+	"FailoverPolicies": ubx.FieldSpec{
+		WireName: "failover_policies",
+		Kind:     "list",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_FailoverPoliciesFields,
+	},
+	"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
+	"IpRules": ubx.FieldSpec{
+		WireName: "ip_rules",
+		Kind:     "list",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_IpRulesFields,
+	},
+	"IsVirtualNetworkFilterEnabled": ubx.FieldSpec{WireName: "is_virtual_network_filter_enabled"},
+	"KeyVaultKeyUri":                ubx.FieldSpec{WireName: "key_vault_key_uri"},
+	"KeyVaultKeyUriVersion":         ubx.FieldSpec{WireName: "key_vault_key_uri_version"},
+	"KeysMetadata": ubx.FieldSpec{
+		WireName: "keys_metadata",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadataFields,
+	},
+	"Locations": ubx.FieldSpec{
+		WireName: "locations",
+		Kind:     "list",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_LocationsFields,
+	},
+	"MinimalTlsVersion":           ubx.FieldSpec{WireName: "minimal_tls_version"},
+	"NetworkAclBypass":            ubx.FieldSpec{WireName: "network_acl_bypass"},
+	"NetworkAclBypassResourceIds": ubx.FieldSpec{WireName: "network_acl_bypass_resource_ids"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"ReadLocations": ubx.FieldSpec{
+		WireName: "read_locations",
+		Kind:     "list",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_LocationsFields,
+	},
+	"RestoreParameters": ubx.FieldSpec{
+		WireName: "restore_parameters",
+		Kind:     "object",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_RestoreParametersFields,
+	},
+	"VirtualNetworkRules": ubx.FieldSpec{
+		WireName: "virtual_network_rules",
+		Kind:     "list",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_VirtualNetworkRulesFields,
+	},
+	"WriteLocations": ubx.FieldSpec{
+		WireName: "write_locations",
+		Kind:     "list",
+		Fields:   DbOpenapiDatabaseAccountGetResults_Properties_LocationsFields,
+	},
+}
 
 type DbOpenapiDatabaseAccountGetResultsConfig struct {
 	// Identity for the resource.
@@ -454,14 +560,14 @@ var DbOpenapiDatabaseAccountGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_IdentityFields,
+			Kind:     "object",
+			Fields:   DbOpenapiDatabaseAccountGetResults_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiDatabaseAccountGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiDatabaseAccountGetResults_PropertiesFields,
 		},
 	},
 }

@@ -9,12 +9,10 @@ type DefenderForAisetting_Properties struct {
 }
 
 var DefenderForAisetting_PropertiesFields = ubx.FieldMap{
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"State": ubx.FieldSpec{WireName: "state"},
+}
 
 type DefenderForAisettingConfig struct {
-	// Resource Etag.
-	Etag any
 	// The Defender for AI resource properties.
 	Properties any
 	// Resource tags.
@@ -33,11 +31,10 @@ type DefenderForAisettingAttrs struct {
 var DefenderForAisetting = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_defender_for_aisetting",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DefenderForAisetting_PropertiesFields,
+			Kind:     "object",
+			Fields:   DefenderForAisetting_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

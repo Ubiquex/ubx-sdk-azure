@@ -10,9 +10,30 @@ import ubx_sdk as ubx
 class OpenapiSourceControlSyncJobById_Properties:
     # The commit id of the source control sync job. If not syncing to a commitId, enter an empty string.
     commit_id: Any = None
+    # The creation time of the job.
+    creation_time: Any = None
+    # The end time of the job.
+    end_time: Any = None
+    # The exceptions that occurred while running the sync job.
+    exception: Any = None
+    # The provisioning state of the job.
+    provisioning_state: Any = None
+    # The source control sync job id.
+    source_control_sync_job_id: Any = None
+    # The start time of the job.
+    start_time: Any = None
+    # The sync type.
+    sync_type: Any = None
 
 _OpenapiSourceControlSyncJobById_PropertiesFields = {
     "commit_id": ubx.FieldSpec(wire_name="commit_id"),
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
+    "end_time": ubx.FieldSpec(wire_name="end_time"),
+    "exception": ubx.FieldSpec(wire_name="exception"),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+    "source_control_sync_job_id": ubx.FieldSpec(wire_name="source_control_sync_job_id"),
+    "start_time": ubx.FieldSpec(wire_name="start_time"),
+    "sync_type": ubx.FieldSpec(wire_name="sync_type"),
 }
 
 @dataclasses.dataclass

@@ -8,94 +8,94 @@ type Cluster_Value_Properties_ApplicationTypeVersionsCleanupPolicy struct {
 }
 
 type Cluster_Value_Properties_AvailableClusterVersions struct {
-	CodeVersion any
-	Environment any
+	CodeVersion      any
+	Environment      any
 	SupportExpiryUtc any
 }
 
 type Cluster_Value_Properties_AzureActiveDirectory struct {
-	ClientApplication any
+	ClientApplication  any
 	ClusterApplication any
-	TenantId any
+	TenantId           any
 }
 
 type Cluster_Value_Properties_Certificate struct {
-	Thumbprint any
+	Thumbprint          any
 	ThumbprintSecondary any
-	X509StoreName any
+	X509StoreName       any
 }
 
 type Cluster_Value_Properties_CertificateCommonNames_CommonNames struct {
-	CertificateCommonName any
+	CertificateCommonName       any
 	CertificateIssuerThumbprint any
 }
 
 type Cluster_Value_Properties_CertificateCommonNames struct {
-	CommonNames any
+	CommonNames   any
 	X509StoreName any
 }
 
 type Cluster_Value_Properties_ClientCertificateCommonNames struct {
-	CertificateCommonName any
+	CertificateCommonName       any
 	CertificateIssuerThumbprint any
-	IsAdmin any
+	IsAdmin                     any
 }
 
 type Cluster_Value_Properties_ClientCertificateThumbprints struct {
 	CertificateThumbprint any
-	IsAdmin any
+	IsAdmin               any
 }
 
 type Cluster_Value_Properties_DiagnosticsStorageAccountConfig struct {
-	BlobEndpoint any
-	ProtectedAccountKeyName any
+	BlobEndpoint             any
+	ProtectedAccountKeyName  any
 	ProtectedAccountKeyName2 any
-	QueueEndpoint any
-	StorageAccountName any
-	TableEndpoint any
+	QueueEndpoint            any
+	StorageAccountName       any
+	TableEndpoint            any
 }
 
 type Cluster_Value_Properties_FabricSettings_Parameters struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type Cluster_Value_Properties_FabricSettings struct {
-	Name any
+	Name       any
 	Parameters any
 }
 
 type Cluster_Value_Properties_NodeTypes_ApplicationPorts struct {
-	EndPort any
+	EndPort   any
 	StartPort any
 }
 
 type Cluster_Value_Properties_NodeTypes struct {
-	ApplicationPorts any
-	Capacities any
+	ApplicationPorts             any
+	Capacities                   any
 	ClientConnectionEndpointPort any
-	DurabilityLevel any
-	EphemeralPorts any
-	HttpGatewayEndpointPort any
-	IsPrimary any
-	IsStateless any
-	MultipleAvailabilityZones any
-	Name any
-	PlacementProperties any
-	ReverseProxyEndpointPort any
-	VmInstanceCount any
+	DurabilityLevel              any
+	EphemeralPorts               any
+	HttpGatewayEndpointPort      any
+	IsPrimary                    any
+	IsStateless                  any
+	MultipleAvailabilityZones    any
+	Name                         any
+	PlacementProperties          any
+	ReverseProxyEndpointPort     any
+	VmInstanceCount              any
 }
 
 type Cluster_Value_Properties_Notifications_NotificationTargets struct {
 	NotificationChannel any
-	Receivers any
+	Receivers           any
 }
 
 type Cluster_Value_Properties_Notifications struct {
-	IsEnabled any
+	IsEnabled            any
 	NotificationCategory any
-	NotificationLevel any
-	NotificationTargets any
+	NotificationLevel    any
+	NotificationTargets  any
 }
 
 type Cluster_Value_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicy struct {
@@ -104,13 +104,13 @@ type Cluster_Value_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDe
 
 type Cluster_Value_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies struct {
 	DefaultServiceTypeDeltaHealthPolicy any
-	ServiceTypeDeltaHealthPolicies any
+	ServiceTypeDeltaHealthPolicies      any
 }
 
 type Cluster_Value_Properties_UpgradeDescription_DeltaHealthPolicy struct {
-	ApplicationDeltaHealthPolicies any
-	MaxPercentDeltaUnhealthyApplications any
-	MaxPercentDeltaUnhealthyNodes any
+	ApplicationDeltaHealthPolicies             any
+	MaxPercentDeltaUnhealthyApplications       any
+	MaxPercentDeltaUnhealthyNodes              any
 	MaxPercentUpgradeDomainDeltaUnhealthyNodes any
 }
 
@@ -120,60 +120,60 @@ type Cluster_Value_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthP
 
 type Cluster_Value_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies struct {
 	DefaultServiceTypeHealthPolicy any
-	ServiceTypeHealthPolicies any
+	ServiceTypeHealthPolicies      any
 }
 
 type Cluster_Value_Properties_UpgradeDescription_HealthPolicy struct {
-	ApplicationHealthPolicies any
+	ApplicationHealthPolicies       any
 	MaxPercentUnhealthyApplications any
-	MaxPercentUnhealthyNodes any
+	MaxPercentUnhealthyNodes        any
 }
 
 type Cluster_Value_Properties_UpgradeDescription struct {
-	DeltaHealthPolicy any
-	ForceRestart any
-	HealthCheckRetryTimeout any
-	HealthCheckStableDuration any
-	HealthCheckWaitDuration any
-	HealthPolicy any
-	UpgradeDomainTimeout any
+	DeltaHealthPolicy             any
+	ForceRestart                  any
+	HealthCheckRetryTimeout       any
+	HealthCheckStableDuration     any
+	HealthCheckWaitDuration       any
+	HealthPolicy                  any
+	UpgradeDomainTimeout          any
 	UpgradeReplicaSetCheckTimeout any
-	UpgradeTimeout any
+	UpgradeTimeout                any
 }
 
 type Cluster_Value_Properties struct {
-	AddOnFeatures any
+	AddOnFeatures                        any
 	ApplicationTypeVersionsCleanupPolicy any
-	AvailableClusterVersions any
-	AzureActiveDirectory any
-	Certificate any
-	CertificateCommonNames any
-	ClientCertificateCommonNames any
-	ClientCertificateThumbprints any
-	ClusterCodeVersion any
-	ClusterEndpoint any
-	ClusterId any
-	ClusterState any
-	DiagnosticsStorageAccountConfig any
-	EventStoreServiceEnabled any
-	FabricSettings any
-	InfrastructureServiceManager any
-	ManagementEndpoint any
-	NodeTypes any
-	Notifications any
-	ProvisioningState any
-	ReliabilityLevel any
-	ReverseProxyCertificate any
-	ReverseProxyCertificateCommonNames any
-	SfZonalUpgradeMode any
-	UpgradeDescription any
-	UpgradeMode any
-	UpgradePauseEndTimestampUtc any
-	UpgradePauseStartTimestampUtc any
-	UpgradeWave any
-	VmImage any
-	VmssZonalUpgradeMode any
-	WaveUpgradePaused any
+	AvailableClusterVersions             any
+	AzureActiveDirectory                 any
+	Certificate                          any
+	CertificateCommonNames               any
+	ClientCertificateCommonNames         any
+	ClientCertificateThumbprints         any
+	ClusterCodeVersion                   any
+	ClusterEndpoint                      any
+	ClusterId                            any
+	ClusterState                         any
+	DiagnosticsStorageAccountConfig      any
+	EventStoreServiceEnabled             any
+	FabricSettings                       any
+	InfrastructureServiceManager         any
+	ManagementEndpoint                   any
+	NodeTypes                            any
+	Notifications                        any
+	ProvisioningState                    any
+	ReliabilityLevel                     any
+	ReverseProxyCertificate              any
+	ReverseProxyCertificateCommonNames   any
+	SfZonalUpgradeMode                   any
+	UpgradeDescription                   any
+	UpgradeMode                          any
+	UpgradePauseEndTimestampUtc          any
+	UpgradePauseStartTimestampUtc        any
+	UpgradeWave                          any
+	VmImage                              any
+	VmssZonalUpgradeMode                 any
+	WaveUpgradePaused                    any
 }
 
 type Cluster_Value struct {
@@ -181,22 +181,22 @@ type Cluster_Value struct {
 }
 
 type ClusterConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ClusterAttrs struct {
 	ApiVersion any
 	// The URL to use for getting the next set of results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
-	Value any
+	Value          any
 }
 
 var Cluster = ubx.DataSourceBinding{
 	WireType: "azure_servicefabric_cluster",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

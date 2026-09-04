@@ -5,16 +5,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiResourcesResponse_CustomDomains struct {
 	EndpointId any
-	History any
-	Id any
-	Name any
+	History    any
+	Id         any
+	Name       any
 }
 
 type OpenapiResourcesResponse_Endpoints struct {
 	CustomDomains any
-	History any
-	Id any
-	Name any
+	History       any
+	Id            any
+	Name          any
 }
 
 type OpenapiResourcesResponseConfig struct {
@@ -23,8 +23,8 @@ type OpenapiResourcesResponseConfig struct {
 
 type OpenapiResourcesResponseAttrs struct {
 	CustomDomains any
-	Endpoints any
-	ProfileName any
+	Endpoints     any
+	ProfileName   any
 }
 
 var OpenapiResourcesResponse = ubx.DataSourceBinding{

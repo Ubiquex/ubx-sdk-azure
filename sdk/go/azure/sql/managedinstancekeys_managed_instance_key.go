@@ -17,16 +17,14 @@ type ManagedinstancekeysManagedInstanceKey_Properties struct {
 }
 
 var ManagedinstancekeysManagedInstanceKey_PropertiesFields = ubx.FieldMap{
-		"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"ServerKeyType": ubx.FieldSpec{WireName: "server_key_type"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
+	"CreationDate":        ubx.FieldSpec{WireName: "creation_date"},
+	"ServerKeyType":       ubx.FieldSpec{WireName: "server_key_type"},
+	"Thumbprint":          ubx.FieldSpec{WireName: "thumbprint"},
+	"Uri":                 ubx.FieldSpec{WireName: "uri"},
+}
 
 type ManagedinstancekeysManagedInstanceKeyConfig struct {
-	// Kind of encryption protector. This is metadata used for the Azure portal experience.
-	Kind any
 	// Properties for a key execution.
 	Properties any
 }
@@ -41,11 +39,10 @@ type ManagedinstancekeysManagedInstanceKeyAttrs struct {
 var ManagedinstancekeysManagedInstanceKey = ubx.ResourceBinding{
 	WireType: "azure_sql_managedinstancekeys_managed_instance_key",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstancekeysManagedInstanceKey_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedinstancekeysManagedInstanceKey_PropertiesFields,
 		},
 	},
 }

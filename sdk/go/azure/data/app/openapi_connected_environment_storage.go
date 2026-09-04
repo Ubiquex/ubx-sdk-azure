@@ -4,21 +4,21 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiConnectedEnvironmentStorage_Value_Properties_AzureFile_AccountKeyVaultProperties struct {
-	Identity any
+	Identity    any
 	KeyVaultUrl any
 }
 
 type OpenapiConnectedEnvironmentStorage_Value_Properties_AzureFile struct {
-	AccessMode any
-	AccountKey any
+	AccessMode                any
+	AccountKey                any
 	AccountKeyVaultProperties any
-	AccountName any
-	ShareName any
+	AccountName               any
+	ShareName                 any
 }
 
 type OpenapiConnectedEnvironmentStorage_Value_Properties struct {
-	AzureFile any
-	DeploymentErrors any
+	AzureFile         any
+	DeploymentErrors  any
 	ProvisioningState any
 }
 

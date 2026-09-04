@@ -4,11 +4,11 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOutboundRuleBasicResource_Value_Properties struct {
-	Category any
+	Category         any
 	ErrorInformation any
-	ParentRuleNames any
-	Status any
-	Type any
+	ParentRuleNames  any
+	Status           any
+	Type             any
 }
 
 type OpenapiOutboundRuleBasicResource_Value struct {
@@ -23,7 +23,7 @@ type OpenapiOutboundRuleBasicResourceAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The OutboundRuleBasicResource items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

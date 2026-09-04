@@ -86,8 +86,6 @@ const VirtualnetworkNatGateway_SkuFields: FieldMap = {
 };
 
 export interface VirtualnetworkNatGatewayConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Nat Gateway properties. */
   properties?: VirtualnetworkNatGateway_Properties | Computed<VirtualnetworkNatGateway_Properties>;
   /** SKU of nat gateway. */
@@ -110,7 +108,6 @@ export interface VirtualnetworkNatGatewayAttrs {
 export const VirtualnetworkNatGateway: ResourceBinding<VirtualnetworkNatGatewayConfig, VirtualnetworkNatGatewayAttrs> = {
   wireType: "azure_network_virtualnetwork_nat_gateway",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -5,44 +5,44 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciExtension_Value_Properties_ExtensionParameters struct {
 	AutoUpgradeMinorVersion any
-	EnableAutomaticUpgrade any
-	ForceUpdateTag any
-	ProtectedSettings any
-	Publisher any
-	Settings any
-	Type any
-	TypeHandlerVersion any
+	EnableAutomaticUpgrade  any
+	ForceUpdateTag          any
+	ProtectedSettings       any
+	Publisher               any
+	Settings                any
+	Type                    any
+	TypeHandlerVersion      any
 }
 
 type HciExtension_Value_Properties_PerNodeExtensionDetails_InstanceView_Status struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type HciExtension_Value_Properties_PerNodeExtensionDetails_InstanceView struct {
-	Name any
-	Status any
-	Type any
+	Name               any
+	Status             any
+	Type               any
 	TypeHandlerVersion any
 }
 
 type HciExtension_Value_Properties_PerNodeExtensionDetails struct {
-	Extension any
-	InstanceView any
-	Name any
-	State any
+	Extension          any
+	InstanceView       any
+	Name               any
+	State              any
 	TypeHandlerVersion any
 }
 
 type HciExtension_Value_Properties struct {
-	AggregateState any
-	ExtensionParameters any
-	ManagedBy any
+	AggregateState          any
+	ExtensionParameters     any
+	ManagedBy               any
 	PerNodeExtensionDetails any
-	ProvisioningState any
+	ProvisioningState       any
 }
 
 type HciExtension_Value struct {
@@ -51,12 +51,12 @@ type HciExtension_Value struct {
 
 type HciExtensionConfig struct {
 	ArcSettingName any
-	ClusterName any
+	ClusterName    any
 }
 
 type HciExtensionAttrs struct {
 	ArcSettingName any
-	ClusterName any
+	ClusterName    any
 	// The link to the next page of items
 	NextLink any
 	// The Extension items on this page
@@ -67,6 +67,6 @@ var HciExtension = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_hci_extension",
 	Fields: ubx.FieldMap{
 		"ArcSettingName": ubx.FieldSpec{WireName: "arc_setting_name"},
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":    ubx.FieldSpec{WireName: "cluster_name"},
 	},
 }

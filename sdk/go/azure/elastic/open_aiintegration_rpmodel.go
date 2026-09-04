@@ -17,12 +17,12 @@ type OpenAiintegrationRpmodel_Properties struct {
 }
 
 var OpenAiintegrationRpmodel_PropertiesFields = ubx.FieldMap{
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"LastRefreshAt": ubx.FieldSpec{WireName: "last_refresh_at"},
-		"OpenAiconnectorId": ubx.FieldSpec{WireName: "open_aiconnector_id"},
-		"OpenAiresourceEndpoint": ubx.FieldSpec{WireName: "open_airesource_endpoint"},
-		"OpenAiresourceId": ubx.FieldSpec{WireName: "open_airesource_id"},
-	}
+	"Key":                    ubx.FieldSpec{WireName: "key"},
+	"LastRefreshAt":          ubx.FieldSpec{WireName: "last_refresh_at"},
+	"OpenAiconnectorId":      ubx.FieldSpec{WireName: "open_aiconnector_id"},
+	"OpenAiresourceEndpoint": ubx.FieldSpec{WireName: "open_airesource_endpoint"},
+	"OpenAiresourceId":       ubx.FieldSpec{WireName: "open_airesource_id"},
+}
 
 type OpenAiintegrationRpmodelConfig struct {
 	// Open AI Integration details.
@@ -39,8 +39,8 @@ var OpenAiintegrationRpmodel = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenAiintegrationRpmodel_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenAiintegrationRpmodel_PropertiesFields,
 		},
 	},
 }

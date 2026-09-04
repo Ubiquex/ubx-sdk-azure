@@ -5,14 +5,14 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GroupInfo_Value_Properties struct {
 	DisplayName any
-	TenantId any
+	TenantId    any
 }
 
 type GroupInfo_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type GroupInfoConfig struct {
@@ -25,6 +25,5 @@ type GroupInfoAttrs struct {
 
 var GroupInfo = ubx.DataSourceBinding{
 	WireType: "azure_management_group_info",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

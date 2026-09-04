@@ -8,7 +8,7 @@ type SbauthorizationRule_Value_Properties struct {
 }
 
 type SbauthorizationRule_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

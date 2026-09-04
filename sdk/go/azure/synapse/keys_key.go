@@ -11,9 +11,9 @@ type KeysKey_Properties struct {
 }
 
 var KeysKey_PropertiesFields = ubx.FieldMap{
-		"IsActiveCmk": ubx.FieldSpec{WireName: "is_active_cmk"},
-		"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
-	}
+	"IsActiveCmk": ubx.FieldSpec{WireName: "is_active_cmk"},
+	"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
+}
 
 type KeysKeyConfig struct {
 	// Key properties
@@ -30,8 +30,8 @@ var KeysKey = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: KeysKey_PropertiesFields,
+			Kind:     "object",
+			Fields:   KeysKey_PropertiesFields,
 		},
 	},
 }

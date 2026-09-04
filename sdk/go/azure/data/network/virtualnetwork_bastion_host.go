@@ -9,16 +9,16 @@ type VirtualnetworkBastionHost_Value_Properties_IpConfigurations_Properties_Publ
 
 type VirtualnetworkBastionHost_Value_Properties_IpConfigurations_Properties struct {
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type VirtualnetworkBastionHost_Value_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualnetworkBastionHost_Value_Properties_NetworkAcls_IpRules struct {
@@ -30,20 +30,20 @@ type VirtualnetworkBastionHost_Value_Properties_NetworkAcls struct {
 }
 
 type VirtualnetworkBastionHost_Value_Properties struct {
-	DisableCopyPaste any
-	DnsName any
-	EnableFileCopy any
-	EnableIpConnect any
-	EnableKerberos any
+	DisableCopyPaste         any
+	DnsName                  any
+	EnableFileCopy           any
+	EnableIpConnect          any
+	EnableKerberos           any
 	EnablePrivateOnlyBastion any
-	EnableSessionRecording any
-	EnableShareableLink any
-	EnableTunneling any
-	IpConfigurations any
-	NetworkAcls any
-	ProvisioningState any
-	ScaleUnits any
-	VirtualNetwork any
+	EnableSessionRecording   any
+	EnableShareableLink      any
+	EnableTunneling          any
+	IpConfigurations         any
+	NetworkAcls              any
+	ProvisioningState        any
+	ScaleUnits               any
+	VirtualNetwork           any
 }
 
 type VirtualnetworkBastionHost_Value_Sku struct {
@@ -51,10 +51,10 @@ type VirtualnetworkBastionHost_Value_Sku struct {
 }
 
 type VirtualnetworkBastionHost_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type VirtualnetworkBastionHostConfig struct {
@@ -69,6 +69,5 @@ type VirtualnetworkBastionHostAttrs struct {
 
 var VirtualnetworkBastionHost = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_bastion_host",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

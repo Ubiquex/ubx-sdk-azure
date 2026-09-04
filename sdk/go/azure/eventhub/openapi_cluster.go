@@ -16,7 +16,7 @@ type OpenapiCluster_Properties struct {
 	// The UTC time when the Event Hubs Cluster was created.
 	CreatedAt any
 	// The metric ID of the cluster resource. Provided by the service and not modifiable by the user.
-	MetricId any
+	MetricId             any
 	PlatformCapabilities any
 	// Provisioning state of the Cluster.
 	ProvisioningState any
@@ -38,36 +38,36 @@ type OpenapiCluster_Sku struct {
 }
 
 var OpenapiCluster_Properties_PlatformCapabilities_ConfidentialComputeFields = ubx.FieldMap{
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"Mode": ubx.FieldSpec{WireName: "mode"},
+}
 
 var OpenapiCluster_Properties_PlatformCapabilitiesFields = ubx.FieldMap{
-		"ConfidentialCompute": ubx.FieldSpec{
-			WireName: "confidential_compute",
-			Kind: "object",
-			Fields: OpenapiCluster_Properties_PlatformCapabilities_ConfidentialComputeFields,
-		},
-	}
+	"ConfidentialCompute": ubx.FieldSpec{
+		WireName: "confidential_compute",
+		Kind:     "object",
+		Fields:   OpenapiCluster_Properties_PlatformCapabilities_ConfidentialComputeFields,
+	},
+}
 
 var OpenapiCluster_PropertiesFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"MetricId": ubx.FieldSpec{WireName: "metric_id"},
-		"PlatformCapabilities": ubx.FieldSpec{
-			WireName: "platform_capabilities",
-			Kind: "object",
-			Fields: OpenapiCluster_Properties_PlatformCapabilitiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"SupportsScaling": ubx.FieldSpec{WireName: "supports_scaling"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-		"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
-	}
+	"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
+	"MetricId":  ubx.FieldSpec{WireName: "metric_id"},
+	"PlatformCapabilities": ubx.FieldSpec{
+		WireName: "platform_capabilities",
+		Kind:     "object",
+		Fields:   OpenapiCluster_Properties_PlatformCapabilitiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"SupportsScaling":   ubx.FieldSpec{WireName: "supports_scaling"},
+	"UpdatedAt":         ubx.FieldSpec{WireName: "updated_at"},
+	"ZoneRedundant":     ubx.FieldSpec{WireName: "zone_redundant"},
+}
 
 var OpenapiCluster_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+}
 
 type OpenapiClusterConfig struct {
 	// Resource location.
@@ -97,13 +97,13 @@ var OpenapiCluster = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCluster_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiCluster_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiCluster_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -17,10 +17,6 @@ _ServerconnectionpoliciesServerConnectionPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class ServerconnectionpoliciesServerConnectionPolicyConfig:
-    # Metadata used for the Azure portal experience.
-    kind: Any = None
-    # Resource location.
-    location: Any = None
     # The properties of a server connection policy.
     properties: Any = None
 
@@ -36,8 +32,6 @@ class ServerconnectionpoliciesServerConnectionPolicyAttrs:
 ServerconnectionpoliciesServerConnectionPolicy = ubx.ResourceBinding(
     wire_type="azure_sql_serverconnectionpolicies_server_connection_policy",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

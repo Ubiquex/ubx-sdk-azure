@@ -40,6 +40,26 @@ export interface OpenapiAutomationAccount_Properties_Encryption {
   keyVaultProperties?: OpenapiAutomationAccount_Properties_Encryption_KeyVaultProperties | Computed<OpenapiAutomationAccount_Properties_Encryption_KeyVaultProperties>;
 }
 
+export interface OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  id?: string | Computed<string>;
+}
+
+export interface OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  actionsRequired?: string | Computed<string>;
+  description?: string | Computed<string>;
+  status?: string | Computed<string>;
+}
+
+export interface OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties {
+  groupIds?: string[] | Computed<string[]>;
+  privateEndpoint?: OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  privateLinkServiceConnectionState?: OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+}
+
+export interface OpenapiAutomationAccount_Properties_PrivateEndpointConnections {
+  properties?: OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties | Computed<OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties>;
+}
+
 export interface OpenapiAutomationAccount_Properties_Sku {
   /** Gets or sets the SKU capacity. */
   capacity?: number | Computed<number>;
@@ -50,14 +70,28 @@ export interface OpenapiAutomationAccount_Properties_Sku {
 }
 
 export interface OpenapiAutomationAccount_Properties {
+  /** URL of automation hybrid service which is used for hybrid worker on-boarding. */
+  automationHybridServiceUrl?: string | Computed<string>;
+  /** Gets the creation time. */
+  creationTime?: string | Computed<string>;
+  /** Gets or sets the description. */
+  description?: string | Computed<string>;
   /** Indicates whether requests using non-AAD authentication are blocked */
   disableLocalAuth?: boolean | Computed<boolean>;
   /** The encryption settings for automation account */
   encryption?: OpenapiAutomationAccount_Properties_Encryption | Computed<OpenapiAutomationAccount_Properties_Encryption>;
+  /** Gets or sets the last modified by. */
+  lastModifiedBy?: string | Computed<string>;
+  /** Gets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
+  /** List of Automation operations supported by the Automation resource provider. */
+  privateEndpointConnections?: OpenapiAutomationAccount_Properties_PrivateEndpointConnections[] | Computed<OpenapiAutomationAccount_Properties_PrivateEndpointConnections[]>;
   /** Indicates whether traffic on the non-ARM endpoint (Webhook/Agent) is allowed from the public internet */
   publicNetworkAccess?: boolean | Computed<boolean>;
   /** The account SKU. */
   sku?: OpenapiAutomationAccount_Properties_Sku | Computed<OpenapiAutomationAccount_Properties_Sku>;
+  /** Gets status of account. */
+  state?: string | Computed<string>;
 }
 
 const OpenapiAutomationAccount_Identity_UserAssignedIdentitiesFields: FieldMap = {
@@ -100,6 +134,38 @@ const OpenapiAutomationAccount_Properties_EncryptionFields: FieldMap = {
   },
 };
 
+const OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields: FieldMap = {
+  id: "id",
+};
+
+const OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields: FieldMap = {
+  actionsRequired: "actions_required",
+  description: "description",
+  status: "status",
+};
+
+const OpenapiAutomationAccount_Properties_PrivateEndpointConnections_PropertiesFields: FieldMap = {
+  groupIds: "group_ids",
+  privateEndpoint: {
+    wireName: "private_endpoint",
+    kind: "object",
+    fields: OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+  },
+  privateLinkServiceConnectionState: {
+    wireName: "private_link_service_connection_state",
+    kind: "object",
+    fields: OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+  },
+};
+
+const OpenapiAutomationAccount_Properties_PrivateEndpointConnectionsFields: FieldMap = {
+  properties: {
+    wireName: "properties",
+    kind: "object",
+    fields: OpenapiAutomationAccount_Properties_PrivateEndpointConnections_PropertiesFields,
+  },
+};
+
 const OpenapiAutomationAccount_Properties_SkuFields: FieldMap = {
   capacity: "capacity",
   family: "family",
@@ -107,11 +173,21 @@ const OpenapiAutomationAccount_Properties_SkuFields: FieldMap = {
 };
 
 const OpenapiAutomationAccount_PropertiesFields: FieldMap = {
+  automationHybridServiceUrl: "automation_hybrid_service_url",
+  creationTime: "creation_time",
+  description: "description",
   disableLocalAuth: "disable_local_auth",
   encryption: {
     wireName: "encryption",
     kind: "object",
     fields: OpenapiAutomationAccount_Properties_EncryptionFields,
+  },
+  lastModifiedBy: "last_modified_by",
+  lastModifiedTime: "last_modified_time",
+  privateEndpointConnections: {
+    wireName: "private_endpoint_connections",
+    kind: "list",
+    fields: OpenapiAutomationAccount_Properties_PrivateEndpointConnectionsFields,
   },
   publicNetworkAccess: "public_network_access",
   sku: {
@@ -119,6 +195,7 @@ const OpenapiAutomationAccount_PropertiesFields: FieldMap = {
     kind: "object",
     fields: OpenapiAutomationAccount_Properties_SkuFields,
   },
+  state: "state",
 };
 
 export interface OpenapiAutomationAccountConfig {

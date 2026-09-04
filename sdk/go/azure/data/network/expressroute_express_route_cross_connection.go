@@ -8,69 +8,69 @@ type ExpressrouteExpressRouteCrossConnection_Value_Properties_ExpressRouteCircui
 }
 
 type ExpressrouteExpressRouteCrossConnection_Value_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo struct {
-	Prefix any
-	Signature any
-	ValidationId any
+	Prefix          any
+	Signature       any
+	ValidationId    any
 	ValidationState any
 }
 
 type ExpressrouteExpressRouteCrossConnection_Value_Properties_Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig struct {
-	AdvertisedCommunities any
-	AdvertisedPublicPrefixInfo any
-	AdvertisedPublicPrefixes any
+	AdvertisedCommunities         any
+	AdvertisedPublicPrefixInfo    any
+	AdvertisedPublicPrefixes      any
 	AdvertisedPublicPrefixesState any
-	CustomerAsn any
-	LegacyMode any
-	RoutingRegistryName any
+	CustomerAsn                   any
+	LegacyMode                    any
+	RoutingRegistryName           any
 }
 
 type ExpressrouteExpressRouteCrossConnection_Value_Properties_Peerings_Properties_Ipv6PeeringConfig struct {
-	MicrosoftPeeringConfig any
-	PrimaryPeerAddressPrefix any
-	RouteFilter any
+	MicrosoftPeeringConfig     any
+	PrimaryPeerAddressPrefix   any
+	RouteFilter                any
 	SecondaryPeerAddressPrefix any
-	State any
+	State                      any
 }
 
 type ExpressrouteExpressRouteCrossConnection_Value_Properties_Peerings_Properties struct {
-	AzureAsn any
-	GatewayManagerEtag any
-	Ipv6PeeringConfig any
-	LastModifiedBy any
-	MicrosoftPeeringConfig any
-	PeerAsn any
-	PeeringType any
-	PrimaryAzurePort any
-	PrimaryPeerAddressPrefix any
-	ProvisioningState any
-	SecondaryAzurePort any
+	AzureAsn                   any
+	GatewayManagerEtag         any
+	Ipv6PeeringConfig          any
+	LastModifiedBy             any
+	MicrosoftPeeringConfig     any
+	PeerAsn                    any
+	PeeringType                any
+	PrimaryAzurePort           any
+	PrimaryPeerAddressPrefix   any
+	ProvisioningState          any
+	SecondaryAzurePort         any
 	SecondaryPeerAddressPrefix any
-	SharedKey any
-	State any
-	VlanId any
+	SharedKey                  any
+	State                      any
+	VlanId                     any
 }
 
 type ExpressrouteExpressRouteCrossConnection_Value_Properties_Peerings struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ExpressrouteExpressRouteCrossConnection_Value_Properties struct {
-	BandwidthInMbps any
-	ExpressRouteCircuit any
-	PeeringLocation any
-	Peerings any
-	PrimaryAzurePort any
-	ProvisioningState any
-	STag any
-	SecondaryAzurePort any
-	ServiceProviderNotes any
+	BandwidthInMbps                  any
+	ExpressRouteCircuit              any
+	PeeringLocation                  any
+	Peerings                         any
+	PrimaryAzurePort                 any
+	ProvisioningState                any
+	STag                             any
+	SecondaryAzurePort               any
+	ServiceProviderNotes             any
 	ServiceProviderProvisioningState any
 }
 
 type ExpressrouteExpressRouteCrossConnection_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -86,6 +86,5 @@ type ExpressrouteExpressRouteCrossConnectionAttrs struct {
 
 var ExpressrouteExpressRouteCrossConnection = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_cross_connection",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

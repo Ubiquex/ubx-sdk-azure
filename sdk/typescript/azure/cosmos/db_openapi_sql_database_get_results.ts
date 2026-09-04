@@ -35,6 +35,16 @@ export interface DbOpenapiSqlDatabaseGetResults_Properties_Resource_RestoreParam
 }
 
 export interface DbOpenapiSqlDatabaseGetResults_Properties_Resource {
+  /** A system generated property that specified the addressable path of the collections resource. */
+  colls?: string | Computed<string>;
+  /** A system generated property representing the resource etag required for optimistic concurrency control. */
+  etag?: string | Computed<string>;
+  /** A system generated property. A unique identifier. */
+  rid?: string | Computed<string>;
+  /** A system generated property that denotes the last updated timestamp of the resource. */
+  ts?: number | Computed<number>;
+  /** A system generated property that specifies the addressable path of the users resource. */
+  users?: string | Computed<string>;
   /** Enum to indicate the mode of account creation. */
   createMode?: string | Computed<string>;
   /** Name of the Cosmos DB SQL database */
@@ -70,6 +80,11 @@ const DbOpenapiSqlDatabaseGetResults_Properties_Resource_RestoreParametersFields
 };
 
 const DbOpenapiSqlDatabaseGetResults_Properties_ResourceFields: FieldMap = {
+  colls: "_colls",
+  etag: "_etag",
+  rid: "_rid",
+  ts: "_ts",
+  users: "_users",
   createMode: "create_mode",
   id: "id",
   restoreParameters: {

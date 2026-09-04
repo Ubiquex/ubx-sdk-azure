@@ -4,25 +4,25 @@ package batch
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiApplication_Value_Properties struct {
-	AllowUpdates any
+	AllowUpdates   any
 	DefaultVersion any
-	DisplayName any
+	DisplayName    any
 }
 
 type OpenapiApplication_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiApplicationConfig struct {
 	AccountName any
-	Maxresults any
+	Maxresults  any
 }
 
 type OpenapiApplicationAttrs struct {
 	AccountName any
-	Maxresults any
+	Maxresults  any
 	// The link to the next page of items
 	NextLink any
 	// The Application items on this page
@@ -33,6 +33,6 @@ var OpenapiApplication = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_application",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"Maxresults": ubx.FieldSpec{WireName: "maxresults"},
+		"Maxresults":  ubx.FieldSpec{WireName: "maxresults"},
 	},
 }

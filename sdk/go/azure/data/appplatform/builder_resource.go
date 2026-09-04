@@ -9,18 +9,18 @@ type BuilderResource_Value_Properties_BuildpackGroups_Buildpacks struct {
 
 type BuilderResource_Value_Properties_BuildpackGroups struct {
 	Buildpacks any
-	Name any
+	Name       any
 }
 
 type BuilderResource_Value_Properties_Stack struct {
-	Id any
+	Id      any
 	Version any
 }
 
 type BuilderResource_Value_Properties struct {
-	BuildpackGroups any
+	BuildpackGroups   any
 	ProvisioningState any
-	Stack any
+	Stack             any
 }
 
 type BuilderResource_Value struct {
@@ -28,21 +28,21 @@ type BuilderResource_Value struct {
 }
 
 type BuilderResourceConfig struct {
-	ApiVersion any
-	BuildServiceName any
+	ApiVersion        any
+	BuildServiceName  any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type BuilderResourceAttrs struct {
-	ApiVersion any
+	ApiVersion       any
 	BuildServiceName any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of Builder resources
 	Value any
 }
@@ -50,10 +50,10 @@ type BuilderResourceAttrs struct {
 var BuilderResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_builder_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"BuildServiceName": ubx.FieldSpec{WireName: "build_service_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"BuildServiceName":  ubx.FieldSpec{WireName: "build_service_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

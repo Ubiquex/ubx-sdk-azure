@@ -140,8 +140,6 @@ const NetworkwatcherFlowLog_PropertiesFields: FieldMap = {
 };
 
 export interface NetworkwatcherFlowLogConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: NetworkwatcherFlowLog_Identity | Computed<NetworkwatcherFlowLog_Identity>;
   /** Parameters that define the configuration of flow log. */
@@ -160,7 +158,6 @@ export interface NetworkwatcherFlowLogAttrs {
 export const NetworkwatcherFlowLog: ResourceBinding<NetworkwatcherFlowLogConfig, NetworkwatcherFlowLogAttrs> = {
   wireType: "azure_network_networkwatcher_flow_log",
   fields: {
-    etag: "etag",
     identity: {
       wireName: "identity",
       kind: "object",

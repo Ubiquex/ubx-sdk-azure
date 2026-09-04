@@ -4,12 +4,12 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkloadgroupsWorkloadGroup_Value_Properties struct {
-	Importance any
-	MaxResourcePercent any
+	Importance                   any
+	MaxResourcePercent           any
 	MaxResourcePercentPerRequest any
-	MinResourcePercent any
+	MinResourcePercent           any
 	MinResourcePercentPerRequest any
-	QueryExecutionTimeout any
+	QueryExecutionTimeout        any
 }
 
 type WorkloadgroupsWorkloadGroup_Value struct {
@@ -18,13 +18,13 @@ type WorkloadgroupsWorkloadGroup_Value struct {
 
 type WorkloadgroupsWorkloadGroupConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type WorkloadgroupsWorkloadGroupAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The WorkloadGroup items on this page
 	Value any
@@ -34,6 +34,6 @@ var WorkloadgroupsWorkloadGroup = ubx.DataSourceBinding{
 	WireType: "azure_sql_workloadgroups_workload_group",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

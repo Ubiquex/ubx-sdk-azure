@@ -29,8 +29,6 @@ _ManagedinstancekeysManagedInstanceKey_PropertiesFields = {
 
 @dataclasses.dataclass
 class ManagedinstancekeysManagedInstanceKeyConfig:
-    # Kind of encryption protector. This is metadata used for the Azure portal experience.
-    kind: Any = None
     # Properties for a key execution.
     properties: Any = None
 
@@ -44,7 +42,6 @@ class ManagedinstancekeysManagedInstanceKeyAttrs:
 ManagedinstancekeysManagedInstanceKey = ubx.ResourceBinding(
     wire_type="azure_sql_managedinstancekeys_managed_instance_key",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -30,7 +30,7 @@ type EventSubscription_Properties_DeliveryWithResourceIdentity struct {
 }
 
 type EventSubscription_Properties_Filter_AdvancedFilters struct {
-	Key any
+	Key          any
 	OperatorType any
 }
 
@@ -97,115 +97,104 @@ type EventSubscription_SystemData struct {
 }
 
 var EventSubscription_Properties_DeadLetterDestinationFields = ubx.FieldMap{
-		"EndpointType": ubx.FieldSpec{WireName: "endpoint_type"},
-	}
+	"EndpointType": ubx.FieldSpec{WireName: "endpoint_type"},
+}
 
 var EventSubscription_Properties_DeadLetterWithResourceIdentity_IdentityFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-	}
+	"Type":                 ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
+}
 
 var EventSubscription_Properties_DeadLetterWithResourceIdentityFields = ubx.FieldMap{
-		"DeadLetterDestination": ubx.FieldSpec{
-			WireName: "dead_letter_destination",
-			Kind: "object",
-			Fields: EventSubscription_Properties_DeadLetterDestinationFields,
-		},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: EventSubscription_Properties_DeadLetterWithResourceIdentity_IdentityFields,
-		},
-	}
+	"DeadLetterDestination": ubx.FieldSpec{
+		WireName: "dead_letter_destination",
+		Kind:     "object",
+		Fields:   EventSubscription_Properties_DeadLetterDestinationFields,
+	},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   EventSubscription_Properties_DeadLetterWithResourceIdentity_IdentityFields,
+	},
+}
 
 var EventSubscription_Properties_DeliveryWithResourceIdentityFields = ubx.FieldMap{
-		"Destination": ubx.FieldSpec{
-			WireName: "destination",
-			Kind: "object",
-			Fields: EventSubscription_Properties_DeadLetterDestinationFields,
-		},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: EventSubscription_Properties_DeadLetterWithResourceIdentity_IdentityFields,
-		},
-	}
+	"Destination": ubx.FieldSpec{
+		WireName: "destination",
+		Kind:     "object",
+		Fields:   EventSubscription_Properties_DeadLetterDestinationFields,
+	},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   EventSubscription_Properties_DeadLetterWithResourceIdentity_IdentityFields,
+	},
+}
 
 var EventSubscription_Properties_Filter_AdvancedFiltersFields = ubx.FieldMap{
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"OperatorType": ubx.FieldSpec{WireName: "operator_type"},
-	}
+	"Key":          ubx.FieldSpec{WireName: "key"},
+	"OperatorType": ubx.FieldSpec{WireName: "operator_type"},
+}
 
 var EventSubscription_Properties_FilterFields = ubx.FieldMap{
-		"AdvancedFilters": ubx.FieldSpec{
-			WireName: "advanced_filters",
-			Kind: "list",
-			Fields: EventSubscription_Properties_Filter_AdvancedFiltersFields,
-		},
-		"EnableAdvancedFilteringOnArrays": ubx.FieldSpec{WireName: "enable_advanced_filtering_on_arrays"},
-		"IncludedEventTypes": ubx.FieldSpec{WireName: "included_event_types"},
-		"IsSubjectCaseSensitive": ubx.FieldSpec{WireName: "is_subject_case_sensitive"},
-		"SubjectBeginsWith": ubx.FieldSpec{WireName: "subject_begins_with"},
-		"SubjectEndsWith": ubx.FieldSpec{WireName: "subject_ends_with"},
-	}
+	"AdvancedFilters": ubx.FieldSpec{
+		WireName: "advanced_filters",
+		Kind:     "list",
+		Fields:   EventSubscription_Properties_Filter_AdvancedFiltersFields,
+	},
+	"EnableAdvancedFilteringOnArrays": ubx.FieldSpec{WireName: "enable_advanced_filtering_on_arrays"},
+	"IncludedEventTypes":              ubx.FieldSpec{WireName: "included_event_types"},
+	"IsSubjectCaseSensitive":          ubx.FieldSpec{WireName: "is_subject_case_sensitive"},
+	"SubjectBeginsWith":               ubx.FieldSpec{WireName: "subject_begins_with"},
+	"SubjectEndsWith":                 ubx.FieldSpec{WireName: "subject_ends_with"},
+}
 
 var EventSubscription_Properties_RetryPolicyFields = ubx.FieldMap{
-		"EventTimeToLiveInMinutes": ubx.FieldSpec{WireName: "event_time_to_live_in_minutes"},
-		"MaxDeliveryAttempts": ubx.FieldSpec{WireName: "max_delivery_attempts"},
-	}
+	"EventTimeToLiveInMinutes": ubx.FieldSpec{WireName: "event_time_to_live_in_minutes"},
+	"MaxDeliveryAttempts":      ubx.FieldSpec{WireName: "max_delivery_attempts"},
+}
 
 var EventSubscription_PropertiesFields = ubx.FieldMap{
-		"DeadLetterDestination": ubx.FieldSpec{
-			WireName: "dead_letter_destination",
-			Kind: "object",
-			Fields: EventSubscription_Properties_DeadLetterDestinationFields,
-		},
-		"DeadLetterWithResourceIdentity": ubx.FieldSpec{
-			WireName: "dead_letter_with_resource_identity",
-			Kind: "object",
-			Fields: EventSubscription_Properties_DeadLetterWithResourceIdentityFields,
-		},
-		"DeliveryWithResourceIdentity": ubx.FieldSpec{
-			WireName: "delivery_with_resource_identity",
-			Kind: "object",
-			Fields: EventSubscription_Properties_DeliveryWithResourceIdentityFields,
-		},
-		"Destination": ubx.FieldSpec{
-			WireName: "destination",
-			Kind: "object",
-			Fields: EventSubscription_Properties_DeadLetterDestinationFields,
-		},
-		"EventDeliverySchema": ubx.FieldSpec{WireName: "event_delivery_schema"},
-		"ExpirationTimeUtc": ubx.FieldSpec{WireName: "expiration_time_utc"},
-		"Filter": ubx.FieldSpec{
-			WireName: "filter",
-			Kind: "object",
-			Fields: EventSubscription_Properties_FilterFields,
-		},
-		"Labels": ubx.FieldSpec{WireName: "labels"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RetryPolicy": ubx.FieldSpec{
-			WireName: "retry_policy",
-			Kind: "object",
-			Fields: EventSubscription_Properties_RetryPolicyFields,
-		},
-		"Topic": ubx.FieldSpec{WireName: "topic"},
-	}
-
-var EventSubscription_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"DeadLetterDestination": ubx.FieldSpec{
+		WireName: "dead_letter_destination",
+		Kind:     "object",
+		Fields:   EventSubscription_Properties_DeadLetterDestinationFields,
+	},
+	"DeadLetterWithResourceIdentity": ubx.FieldSpec{
+		WireName: "dead_letter_with_resource_identity",
+		Kind:     "object",
+		Fields:   EventSubscription_Properties_DeadLetterWithResourceIdentityFields,
+	},
+	"DeliveryWithResourceIdentity": ubx.FieldSpec{
+		WireName: "delivery_with_resource_identity",
+		Kind:     "object",
+		Fields:   EventSubscription_Properties_DeliveryWithResourceIdentityFields,
+	},
+	"Destination": ubx.FieldSpec{
+		WireName: "destination",
+		Kind:     "object",
+		Fields:   EventSubscription_Properties_DeadLetterDestinationFields,
+	},
+	"EventDeliverySchema": ubx.FieldSpec{WireName: "event_delivery_schema"},
+	"ExpirationTimeUtc":   ubx.FieldSpec{WireName: "expiration_time_utc"},
+	"Filter": ubx.FieldSpec{
+		WireName: "filter",
+		Kind:     "object",
+		Fields:   EventSubscription_Properties_FilterFields,
+	},
+	"Labels":            ubx.FieldSpec{WireName: "labels"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RetryPolicy": ubx.FieldSpec{
+		WireName: "retry_policy",
+		Kind:     "object",
+		Fields:   EventSubscription_Properties_RetryPolicyFields,
+	},
+	"Topic": ubx.FieldSpec{WireName: "topic"},
+}
 
 type EventSubscriptionConfig struct {
 	// Properties of the Event Subscription.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 	// path parameter, not part of the API's own resource representation
 	Scope any
 }
@@ -224,13 +213,8 @@ var EventSubscription = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: EventSubscription_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: EventSubscription_SystemDataFields,
+			Kind:     "object",
+			Fields:   EventSubscription_PropertiesFields,
 		},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},

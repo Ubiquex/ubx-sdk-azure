@@ -2,17 +2,23 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiVariable_Properties {
+  /** Gets or sets the creation time. */
+  creationTime?: string | Computed<string>;
   /** Gets or sets the description of the variable. */
   description?: string | Computed<string>;
   /** Gets or sets the encrypted flag of the variable. */
   isEncrypted?: boolean | Computed<boolean>;
+  /** Gets or sets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
   /** Gets or sets the value of the variable. */
   value?: string | Computed<string>;
 }
 
 const OpenapiVariable_PropertiesFields: FieldMap = {
+  creationTime: "creation_time",
   description: "description",
   isEncrypted: "is_encrypted",
+  lastModifiedTime: "last_modified_time",
   value: "value",
 };
 

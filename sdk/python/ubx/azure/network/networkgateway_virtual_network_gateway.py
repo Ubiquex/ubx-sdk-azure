@@ -645,8 +645,6 @@ _NetworkgatewayVirtualNetworkGateway_PropertiesFields = {
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
     # Identity for the resource.
@@ -668,7 +666,6 @@ class NetworkgatewayVirtualNetworkGatewayAttrs:
 NetworkgatewayVirtualNetworkGateway = ubx.ResourceBinding(
     wire_type="azure_network_networkgateway_virtual_network_gateway",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "extended_location": ubx.FieldSpec(
             wire_name="extended_location",
             kind="object",

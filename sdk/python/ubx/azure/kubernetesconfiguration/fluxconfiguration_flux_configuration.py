@@ -391,21 +391,10 @@ _FluxconfigurationFluxConfiguration_PropertiesFields = {
     "wait_for_reconciliation": ubx.FieldSpec(wire_name="wait_for_reconciliation"),
 }
 
-_FluxconfigurationFluxConfiguration_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class FluxconfigurationFluxConfigurationConfig:
     # Properties to create a Flux Configuration resource
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class FluxconfigurationFluxConfigurationAttrs:
@@ -421,11 +410,6 @@ FluxconfigurationFluxConfiguration = ubx.ResourceBinding(
             wire_name="properties",
             kind="object",
             fields=_FluxconfigurationFluxConfiguration_PropertiesFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_FluxconfigurationFluxConfiguration_SystemDataFields,
         ),
     },
 )

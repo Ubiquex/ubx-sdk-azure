@@ -9,25 +9,25 @@ type OpenapiObjectReplicationPolicy_Value_Properties_Metrics struct {
 
 type OpenapiObjectReplicationPolicy_Value_Properties_Rules_Filters struct {
 	MinCreationTime any
-	PrefixMatch any
+	PrefixMatch     any
 }
 
 type OpenapiObjectReplicationPolicy_Value_Properties_Rules struct {
 	DestinationContainer any
-	Filters any
-	RuleId any
-	SourceContainer any
+	Filters              any
+	RuleId               any
+	SourceContainer      any
 }
 
 type OpenapiObjectReplicationPolicy_Value_Properties struct {
-	DestinationAccount any
-	EnabledTime any
-	Metrics any
-	PolicyId any
+	DestinationAccount  any
+	EnabledTime         any
+	Metrics             any
+	PolicyId            any
 	PriorityReplication any
-	Rules any
-	SourceAccount any
-	TagsReplication any
+	Rules               any
+	SourceAccount       any
+	TagsReplication     any
 }
 
 type OpenapiObjectReplicationPolicy_Value struct {
@@ -40,7 +40,7 @@ type OpenapiObjectReplicationPolicyConfig struct {
 
 type OpenapiObjectReplicationPolicyAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// The replication policy between two storage accounts.
 	Value any
 }

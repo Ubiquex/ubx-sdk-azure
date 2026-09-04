@@ -8,16 +8,16 @@ type OpenapiNetworkInterface_NetworkInterfaces_IpAddresses_Subnet struct {
 }
 
 type OpenapiNetworkInterface_NetworkInterfaces_IpAddresses struct {
-	Address any
+	Address          any
 	IpAddressVersion any
-	Subnet any
+	Subnet           any
 }
 
 type OpenapiNetworkInterface_NetworkInterfaces struct {
-	Id any
+	Id          any
 	IpAddresses any
-	MacAddress any
-	Name any
+	MacAddress  any
+	Name        any
 }
 
 type OpenapiNetworkInterfaceConfig struct {

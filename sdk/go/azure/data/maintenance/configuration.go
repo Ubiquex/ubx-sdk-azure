@@ -4,54 +4,54 @@ package maintenance
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Configuration_Value_Properties_InstallPatches_LinuxParameters struct {
-	ClassificationsToInclude any
+	ClassificationsToInclude  any
 	PackageNameMasksToExclude any
 	PackageNameMasksToInclude any
 }
 
 type Configuration_Value_Properties_InstallPatches_WindowsParameters struct {
-	ClassificationsToInclude any
+	ClassificationsToInclude  any
 	ExcludeKbsRequiringReboot any
-	KbNumbersToExclude any
-	KbNumbersToInclude any
+	KbNumbersToExclude        any
+	KbNumbersToInclude        any
 }
 
 type Configuration_Value_Properties_InstallPatches struct {
-	LinuxParameters any
-	RebootSetting any
+	LinuxParameters   any
+	RebootSetting     any
 	WindowsParameters any
 }
 
 type Configuration_Value_Properties_MaintenanceWindow struct {
-	Duration any
+	Duration           any
 	ExpirationDateTime any
-	RecurEvery any
-	StartDateTime any
-	TimeZone any
+	RecurEvery         any
+	StartDateTime      any
+	TimeZone           any
 }
 
 type Configuration_Value_Properties struct {
 	ExtensionProperties any
-	InstallPatches any
-	MaintenanceScope any
-	MaintenanceWindow any
-	Namespace any
-	Visibility any
+	InstallPatches      any
+	MaintenanceScope    any
+	MaintenanceWindow   any
+	Namespace           any
+	Visibility          any
 }
 
 type Configuration_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type ConfigurationConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ConfigurationAttrs struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 	// The list of maintenance Configurations
 	Value any
@@ -60,7 +60,7 @@ type ConfigurationAttrs struct {
 var Configuration = ubx.DataSourceBinding{
 	WireType: "azure_maintenance_configuration",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

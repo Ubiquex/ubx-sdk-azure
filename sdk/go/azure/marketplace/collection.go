@@ -4,7 +4,7 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Collection_Properties_AppliedRules struct {
-	Type any
+	Type  any
 	Value any
 }
 
@@ -32,26 +32,26 @@ type Collection_Properties struct {
 }
 
 var Collection_Properties_AppliedRulesFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Type":  ubx.FieldSpec{WireName: "type"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var Collection_PropertiesFields = ubx.FieldMap{
-		"AllSubscriptions": ubx.FieldSpec{WireName: "all_subscriptions"},
-		"AppliedRules": ubx.FieldSpec{
-			WireName: "applied_rules",
-			Kind: "list",
-			Fields: Collection_Properties_AppliedRulesFields,
-		},
-		"ApproveAllItems": ubx.FieldSpec{WireName: "approve_all_items"},
-		"ApproveAllItemsModifiedAt": ubx.FieldSpec{WireName: "approve_all_items_modified_at"},
-		"Claim": ubx.FieldSpec{WireName: "claim"},
-		"CollectionId": ubx.FieldSpec{WireName: "collection_id"},
-		"CollectionName": ubx.FieldSpec{WireName: "collection_name"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"NumberOfOffers": ubx.FieldSpec{WireName: "number_of_offers"},
-		"SubscriptionsList": ubx.FieldSpec{WireName: "subscriptions_list"},
-	}
+	"AllSubscriptions": ubx.FieldSpec{WireName: "all_subscriptions"},
+	"AppliedRules": ubx.FieldSpec{
+		WireName: "applied_rules",
+		Kind:     "list",
+		Fields:   Collection_Properties_AppliedRulesFields,
+	},
+	"ApproveAllItems":           ubx.FieldSpec{WireName: "approve_all_items"},
+	"ApproveAllItemsModifiedAt": ubx.FieldSpec{WireName: "approve_all_items_modified_at"},
+	"Claim":                     ubx.FieldSpec{WireName: "claim"},
+	"CollectionId":              ubx.FieldSpec{WireName: "collection_id"},
+	"CollectionName":            ubx.FieldSpec{WireName: "collection_name"},
+	"Enabled":                   ubx.FieldSpec{WireName: "enabled"},
+	"NumberOfOffers":            ubx.FieldSpec{WireName: "number_of_offers"},
+	"SubscriptionsList":         ubx.FieldSpec{WireName: "subscriptions_list"},
+}
 
 type CollectionConfig struct {
 	// The collection details
@@ -68,8 +68,8 @@ var Collection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Collection_PropertiesFields,
+			Kind:     "object",
+			Fields:   Collection_PropertiesFields,
 		},
 	},
 }

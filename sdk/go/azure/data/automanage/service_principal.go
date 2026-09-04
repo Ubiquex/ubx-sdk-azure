@@ -4,16 +4,16 @@ package automanage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServicePrincipal_Value_Properties struct {
-	AuthorizationSet any
+	AuthorizationSet   any
 	ServicePrincipalId any
 }
 
 type ServicePrincipal_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -32,6 +32,5 @@ type ServicePrincipalAttrs struct {
 
 var ServicePrincipal = ubx.DataSourceBinding{
 	WireType: "azure_automanage_service_principal",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

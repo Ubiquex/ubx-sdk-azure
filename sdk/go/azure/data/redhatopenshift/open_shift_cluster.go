@@ -4,30 +4,30 @@ package redhatopenshift
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenShiftCluster_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenShiftCluster_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenShiftCluster_Value_Properties_ApiserverProfile struct {
-	Ip any
-	Url any
+	Ip         any
+	Url        any
 	Visibility any
 }
 
 type OpenShiftCluster_Value_Properties_ClusterProfile struct {
-	Domain any
+	Domain               any
 	FipsValidatedModules any
-	OidcIssuer any
-	PullSecret any
-	ResourceGroupId any
-	Version any
+	OidcIssuer           any
+	PullSecret           any
+	ResourceGroupId      any
+	Version              any
 }
 
 type OpenShiftCluster_Value_Properties_ConsoleProfile struct {
@@ -35,16 +35,16 @@ type OpenShiftCluster_Value_Properties_ConsoleProfile struct {
 }
 
 type OpenShiftCluster_Value_Properties_IngressProfiles struct {
-	Ip any
-	Name any
+	Ip         any
+	Name       any
 	Visibility any
 }
 
 type OpenShiftCluster_Value_Properties_MasterProfile struct {
 	DiskEncryptionSetId any
-	EncryptionAtHost any
-	SubnetId any
-	VmSize any
+	EncryptionAtHost    any
+	SubnetId            any
+	VmSize              any
 }
 
 type OpenShiftCluster_Value_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIps struct {
@@ -57,59 +57,59 @@ type OpenShiftCluster_Value_Properties_NetworkProfile_LoadBalancerProfile_Manage
 
 type OpenShiftCluster_Value_Properties_NetworkProfile_LoadBalancerProfile struct {
 	EffectiveOutboundIps any
-	ManagedOutboundIps any
+	ManagedOutboundIps   any
 }
 
 type OpenShiftCluster_Value_Properties_NetworkProfile struct {
 	LoadBalancerProfile any
-	OutboundType any
-	PodCidr any
-	PreconfiguredNsg any
-	ServiceCidr any
+	OutboundType        any
+	PodCidr             any
+	PreconfiguredNsg    any
+	ServiceCidr         any
 }
 
 type OpenShiftCluster_Value_Properties_PlatformWorkloadIdentityProfile_PlatformWorkloadIdentities struct {
-	ClientId any
-	ObjectId any
+	ClientId   any
+	ObjectId   any
 	ResourceId any
 }
 
 type OpenShiftCluster_Value_Properties_PlatformWorkloadIdentityProfile struct {
 	PlatformWorkloadIdentities any
-	UpgradeableTo any
+	UpgradeableTo              any
 }
 
 type OpenShiftCluster_Value_Properties_ServicePrincipalProfile struct {
-	ClientId any
+	ClientId     any
 	ClientSecret any
 }
 
 type OpenShiftCluster_Value_Properties_WorkerProfiles struct {
-	Count any
+	Count               any
 	DiskEncryptionSetId any
-	DiskSizeGb any
-	EncryptionAtHost any
-	Name any
-	SubnetId any
-	VmSize any
+	DiskSizeGb          any
+	EncryptionAtHost    any
+	Name                any
+	SubnetId            any
+	VmSize              any
 }
 
 type OpenShiftCluster_Value_Properties struct {
-	ApiserverProfile any
-	ClusterProfile any
-	ConsoleProfile any
-	IngressProfiles any
-	MasterProfile any
-	NetworkProfile any
+	ApiserverProfile                any
+	ClusterProfile                  any
+	ConsoleProfile                  any
+	IngressProfiles                 any
+	MasterProfile                   any
+	NetworkProfile                  any
 	PlatformWorkloadIdentityProfile any
-	ProvisioningState any
-	ServicePrincipalProfile any
-	WorkerProfiles any
-	WorkerProfilesStatus any
+	ProvisioningState               any
+	ServicePrincipalProfile         any
+	WorkerProfiles                  any
+	WorkerProfilesStatus            any
 }
 
 type OpenShiftCluster_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -125,6 +125,5 @@ type OpenShiftClusterAttrs struct {
 
 var OpenShiftCluster = ubx.DataSourceBinding{
 	WireType: "azure_redhatopenshift_open_shift_cluster",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

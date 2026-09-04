@@ -4,10 +4,10 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceReplicationProtectionCluster_Properties_ClusterRegisteredNodes struct {
-	BiosId any
-	ClusterNodeFqdn any
+	BiosId                  any
+	ClusterNodeFqdn         any
 	IsSharedDiskVirtualNode any
-	MachineId any
+	MachineId               any
 }
 
 type ServiceReplicationProtectionCluster_Properties_CurrentScenario struct {
@@ -20,38 +20,38 @@ type ServiceReplicationProtectionCluster_Properties_CurrentScenario struct {
 }
 
 type ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceReplicationProtectionCluster_Properties_HealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	InnerHealthErrors any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceReplicationProtectionCluster_Properties_ProviderSpecificDetails struct {
@@ -142,136 +142,136 @@ type ServiceReplicationProtectionCluster_Properties struct {
 }
 
 var ServiceReplicationProtectionCluster_Properties_ClusterRegisteredNodesFields = ubx.FieldMap{
-		"BiosId": ubx.FieldSpec{WireName: "bios_id"},
-		"ClusterNodeFqdn": ubx.FieldSpec{WireName: "cluster_node_fqdn"},
-		"IsSharedDiskVirtualNode": ubx.FieldSpec{WireName: "is_shared_disk_virtual_node"},
-		"MachineId": ubx.FieldSpec{WireName: "machine_id"},
-	}
+	"BiosId":                  ubx.FieldSpec{WireName: "bios_id"},
+	"ClusterNodeFqdn":         ubx.FieldSpec{WireName: "cluster_node_fqdn"},
+	"IsSharedDiskVirtualNode": ubx.FieldSpec{WireName: "is_shared_disk_virtual_node"},
+	"MachineId":               ubx.FieldSpec{WireName: "machine_id"},
+}
 
 var ServiceReplicationProtectionCluster_Properties_CurrentScenarioFields = ubx.FieldMap{
-		"JobId": ubx.FieldSpec{WireName: "job_id"},
-		"ScenarioName": ubx.FieldSpec{WireName: "scenario_name"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-	}
+	"JobId":        ubx.FieldSpec{WireName: "job_id"},
+	"ScenarioName": ubx.FieldSpec{WireName: "scenario_name"},
+	"StartTime":    ubx.FieldSpec{WireName: "start_time"},
+}
 
 var ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErrorsFields = ubx.FieldMap{
-		"CreationTimeUtc": ubx.FieldSpec{WireName: "creation_time_utc"},
-		"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
-		"EntityId": ubx.FieldSpec{WireName: "entity_id"},
-		"ErrorCategory": ubx.FieldSpec{WireName: "error_category"},
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"ErrorId": ubx.FieldSpec{WireName: "error_id"},
-		"ErrorLevel": ubx.FieldSpec{WireName: "error_level"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"ErrorSource": ubx.FieldSpec{WireName: "error_source"},
-		"ErrorType": ubx.FieldSpec{WireName: "error_type"},
-		"PossibleCauses": ubx.FieldSpec{WireName: "possible_causes"},
-		"RecommendedAction": ubx.FieldSpec{WireName: "recommended_action"},
-		"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
-		"SummaryMessage": ubx.FieldSpec{WireName: "summary_message"},
-	}
+	"CreationTimeUtc":              ubx.FieldSpec{WireName: "creation_time_utc"},
+	"CustomerResolvability":        ubx.FieldSpec{WireName: "customer_resolvability"},
+	"EntityId":                     ubx.FieldSpec{WireName: "entity_id"},
+	"ErrorCategory":                ubx.FieldSpec{WireName: "error_category"},
+	"ErrorCode":                    ubx.FieldSpec{WireName: "error_code"},
+	"ErrorId":                      ubx.FieldSpec{WireName: "error_id"},
+	"ErrorLevel":                   ubx.FieldSpec{WireName: "error_level"},
+	"ErrorMessage":                 ubx.FieldSpec{WireName: "error_message"},
+	"ErrorSource":                  ubx.FieldSpec{WireName: "error_source"},
+	"ErrorType":                    ubx.FieldSpec{WireName: "error_type"},
+	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
+	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
+	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
+}
 
 var ServiceReplicationProtectionCluster_Properties_HealthErrorsFields = ubx.FieldMap{
-		"CreationTimeUtc": ubx.FieldSpec{WireName: "creation_time_utc"},
-		"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
-		"EntityId": ubx.FieldSpec{WireName: "entity_id"},
-		"ErrorCategory": ubx.FieldSpec{WireName: "error_category"},
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"ErrorId": ubx.FieldSpec{WireName: "error_id"},
-		"ErrorLevel": ubx.FieldSpec{WireName: "error_level"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"ErrorSource": ubx.FieldSpec{WireName: "error_source"},
-		"ErrorType": ubx.FieldSpec{WireName: "error_type"},
-		"InnerHealthErrors": ubx.FieldSpec{
-			WireName: "inner_health_errors",
-			Kind: "list",
-			Fields: ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErrorsFields,
-		},
-		"PossibleCauses": ubx.FieldSpec{WireName: "possible_causes"},
-		"RecommendedAction": ubx.FieldSpec{WireName: "recommended_action"},
-		"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
-		"SummaryMessage": ubx.FieldSpec{WireName: "summary_message"},
-	}
+	"CreationTimeUtc":       ubx.FieldSpec{WireName: "creation_time_utc"},
+	"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
+	"EntityId":              ubx.FieldSpec{WireName: "entity_id"},
+	"ErrorCategory":         ubx.FieldSpec{WireName: "error_category"},
+	"ErrorCode":             ubx.FieldSpec{WireName: "error_code"},
+	"ErrorId":               ubx.FieldSpec{WireName: "error_id"},
+	"ErrorLevel":            ubx.FieldSpec{WireName: "error_level"},
+	"ErrorMessage":          ubx.FieldSpec{WireName: "error_message"},
+	"ErrorSource":           ubx.FieldSpec{WireName: "error_source"},
+	"ErrorType":             ubx.FieldSpec{WireName: "error_type"},
+	"InnerHealthErrors": ubx.FieldSpec{
+		WireName: "inner_health_errors",
+		Kind:     "list",
+		Fields:   ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErrorsFields,
+	},
+	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
+	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
+	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
+}
 
 var ServiceReplicationProtectionCluster_Properties_ProviderSpecificDetailsFields = ubx.FieldMap{
-		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-	}
+	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+}
 
 var ServiceReplicationProtectionCluster_Properties_SharedDiskPropertiesFields = ubx.FieldMap{
-		"ActiveLocation": ubx.FieldSpec{WireName: "active_location"},
-		"AllowedOperations": ubx.FieldSpec{WireName: "allowed_operations"},
-		"CurrentScenario": ubx.FieldSpec{
-			WireName: "current_scenario",
-			Kind: "object",
-			Fields: ServiceReplicationProtectionCluster_Properties_CurrentScenarioFields,
-		},
-		"HealthErrors": ubx.FieldSpec{
-			WireName: "health_errors",
-			Kind: "list",
-			Fields: ServiceReplicationProtectionCluster_Properties_HealthErrorsFields,
-		},
-		"ProtectionState": ubx.FieldSpec{WireName: "protection_state"},
-		"ReplicationHealth": ubx.FieldSpec{WireName: "replication_health"},
-		"SharedDiskProviderSpecificDetails": ubx.FieldSpec{
-			WireName: "shared_disk_provider_specific_details",
-			Kind: "object",
-			Fields: ServiceReplicationProtectionCluster_Properties_ProviderSpecificDetailsFields,
-		},
-		"TestFailoverState": ubx.FieldSpec{WireName: "test_failover_state"},
-	}
+	"ActiveLocation":    ubx.FieldSpec{WireName: "active_location"},
+	"AllowedOperations": ubx.FieldSpec{WireName: "allowed_operations"},
+	"CurrentScenario": ubx.FieldSpec{
+		WireName: "current_scenario",
+		Kind:     "object",
+		Fields:   ServiceReplicationProtectionCluster_Properties_CurrentScenarioFields,
+	},
+	"HealthErrors": ubx.FieldSpec{
+		WireName: "health_errors",
+		Kind:     "list",
+		Fields:   ServiceReplicationProtectionCluster_Properties_HealthErrorsFields,
+	},
+	"ProtectionState":   ubx.FieldSpec{WireName: "protection_state"},
+	"ReplicationHealth": ubx.FieldSpec{WireName: "replication_health"},
+	"SharedDiskProviderSpecificDetails": ubx.FieldSpec{
+		WireName: "shared_disk_provider_specific_details",
+		Kind:     "object",
+		Fields:   ServiceReplicationProtectionCluster_Properties_ProviderSpecificDetailsFields,
+	},
+	"TestFailoverState": ubx.FieldSpec{WireName: "test_failover_state"},
+}
 
 var ServiceReplicationProtectionCluster_PropertiesFields = ubx.FieldMap{
-		"ActiveLocation": ubx.FieldSpec{WireName: "active_location"},
-		"AgentClusterId": ubx.FieldSpec{WireName: "agent_cluster_id"},
-		"AllowedOperations": ubx.FieldSpec{WireName: "allowed_operations"},
-		"AreAllClusterNodesRegistered": ubx.FieldSpec{WireName: "are_all_cluster_nodes_registered"},
-		"ClusterFqdn": ubx.FieldSpec{WireName: "cluster_fqdn"},
-		"ClusterNodeFqdns": ubx.FieldSpec{WireName: "cluster_node_fqdns"},
-		"ClusterProtectedItemIds": ubx.FieldSpec{WireName: "cluster_protected_item_ids"},
-		"ClusterRegisteredNodes": ubx.FieldSpec{
-			WireName: "cluster_registered_nodes",
-			Kind: "list",
-			Fields: ServiceReplicationProtectionCluster_Properties_ClusterRegisteredNodesFields,
-		},
-		"CurrentScenario": ubx.FieldSpec{
-			WireName: "current_scenario",
-			Kind: "object",
-			Fields: ServiceReplicationProtectionCluster_Properties_CurrentScenarioFields,
-		},
-		"HealthErrors": ubx.FieldSpec{
-			WireName: "health_errors",
-			Kind: "list",
-			Fields: ServiceReplicationProtectionCluster_Properties_HealthErrorsFields,
-		},
-		"LastSuccessfulFailoverTime": ubx.FieldSpec{WireName: "last_successful_failover_time"},
-		"LastSuccessfulTestFailoverTime": ubx.FieldSpec{WireName: "last_successful_test_failover_time"},
-		"PolicyFriendlyName": ubx.FieldSpec{WireName: "policy_friendly_name"},
-		"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
-		"PrimaryFabricFriendlyName": ubx.FieldSpec{WireName: "primary_fabric_friendly_name"},
-		"PrimaryFabricProvider": ubx.FieldSpec{WireName: "primary_fabric_provider"},
-		"PrimaryProtectionContainerFriendlyName": ubx.FieldSpec{WireName: "primary_protection_container_friendly_name"},
-		"ProtectionClusterType": ubx.FieldSpec{WireName: "protection_cluster_type"},
-		"ProtectionState": ubx.FieldSpec{WireName: "protection_state"},
-		"ProtectionStateDescription": ubx.FieldSpec{WireName: "protection_state_description"},
-		"ProviderSpecificDetails": ubx.FieldSpec{
-			WireName: "provider_specific_details",
-			Kind: "object",
-			Fields: ServiceReplicationProtectionCluster_Properties_ProviderSpecificDetailsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RecoveryContainerId": ubx.FieldSpec{WireName: "recovery_container_id"},
-		"RecoveryFabricFriendlyName": ubx.FieldSpec{WireName: "recovery_fabric_friendly_name"},
-		"RecoveryFabricId": ubx.FieldSpec{WireName: "recovery_fabric_id"},
-		"RecoveryProtectionContainerFriendlyName": ubx.FieldSpec{WireName: "recovery_protection_container_friendly_name"},
-		"ReplicationHealth": ubx.FieldSpec{WireName: "replication_health"},
-		"SharedDiskProperties": ubx.FieldSpec{
-			WireName: "shared_disk_properties",
-			Kind: "object",
-			Fields: ServiceReplicationProtectionCluster_Properties_SharedDiskPropertiesFields,
-		},
-		"TestFailoverState": ubx.FieldSpec{WireName: "test_failover_state"},
-		"TestFailoverStateDescription": ubx.FieldSpec{WireName: "test_failover_state_description"},
-	}
+	"ActiveLocation":               ubx.FieldSpec{WireName: "active_location"},
+	"AgentClusterId":               ubx.FieldSpec{WireName: "agent_cluster_id"},
+	"AllowedOperations":            ubx.FieldSpec{WireName: "allowed_operations"},
+	"AreAllClusterNodesRegistered": ubx.FieldSpec{WireName: "are_all_cluster_nodes_registered"},
+	"ClusterFqdn":                  ubx.FieldSpec{WireName: "cluster_fqdn"},
+	"ClusterNodeFqdns":             ubx.FieldSpec{WireName: "cluster_node_fqdns"},
+	"ClusterProtectedItemIds":      ubx.FieldSpec{WireName: "cluster_protected_item_ids"},
+	"ClusterRegisteredNodes": ubx.FieldSpec{
+		WireName: "cluster_registered_nodes",
+		Kind:     "list",
+		Fields:   ServiceReplicationProtectionCluster_Properties_ClusterRegisteredNodesFields,
+	},
+	"CurrentScenario": ubx.FieldSpec{
+		WireName: "current_scenario",
+		Kind:     "object",
+		Fields:   ServiceReplicationProtectionCluster_Properties_CurrentScenarioFields,
+	},
+	"HealthErrors": ubx.FieldSpec{
+		WireName: "health_errors",
+		Kind:     "list",
+		Fields:   ServiceReplicationProtectionCluster_Properties_HealthErrorsFields,
+	},
+	"LastSuccessfulFailoverTime":             ubx.FieldSpec{WireName: "last_successful_failover_time"},
+	"LastSuccessfulTestFailoverTime":         ubx.FieldSpec{WireName: "last_successful_test_failover_time"},
+	"PolicyFriendlyName":                     ubx.FieldSpec{WireName: "policy_friendly_name"},
+	"PolicyId":                               ubx.FieldSpec{WireName: "policy_id"},
+	"PrimaryFabricFriendlyName":              ubx.FieldSpec{WireName: "primary_fabric_friendly_name"},
+	"PrimaryFabricProvider":                  ubx.FieldSpec{WireName: "primary_fabric_provider"},
+	"PrimaryProtectionContainerFriendlyName": ubx.FieldSpec{WireName: "primary_protection_container_friendly_name"},
+	"ProtectionClusterType":                  ubx.FieldSpec{WireName: "protection_cluster_type"},
+	"ProtectionState":                        ubx.FieldSpec{WireName: "protection_state"},
+	"ProtectionStateDescription":             ubx.FieldSpec{WireName: "protection_state_description"},
+	"ProviderSpecificDetails": ubx.FieldSpec{
+		WireName: "provider_specific_details",
+		Kind:     "object",
+		Fields:   ServiceReplicationProtectionCluster_Properties_ProviderSpecificDetailsFields,
+	},
+	"ProvisioningState":                       ubx.FieldSpec{WireName: "provisioning_state"},
+	"RecoveryContainerId":                     ubx.FieldSpec{WireName: "recovery_container_id"},
+	"RecoveryFabricFriendlyName":              ubx.FieldSpec{WireName: "recovery_fabric_friendly_name"},
+	"RecoveryFabricId":                        ubx.FieldSpec{WireName: "recovery_fabric_id"},
+	"RecoveryProtectionContainerFriendlyName": ubx.FieldSpec{WireName: "recovery_protection_container_friendly_name"},
+	"ReplicationHealth":                       ubx.FieldSpec{WireName: "replication_health"},
+	"SharedDiskProperties": ubx.FieldSpec{
+		WireName: "shared_disk_properties",
+		Kind:     "object",
+		Fields:   ServiceReplicationProtectionCluster_Properties_SharedDiskPropertiesFields,
+	},
+	"TestFailoverState":            ubx.FieldSpec{WireName: "test_failover_state"},
+	"TestFailoverStateDescription": ubx.FieldSpec{WireName: "test_failover_state_description"},
+}
 
 type ServiceReplicationProtectionClusterConfig struct {
 	// Replication protection cluster custom data details.
@@ -288,8 +288,8 @@ var ServiceReplicationProtectionCluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceReplicationProtectionCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceReplicationProtectionCluster_PropertiesFields,
 		},
 	},
 }

@@ -4,8 +4,8 @@ package relay
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateLinkResource_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 

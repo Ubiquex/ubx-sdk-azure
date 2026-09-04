@@ -36,8 +36,6 @@ const ManageddatabasesensitivitylabelsSensitivityLabel2_PropertiesFields: FieldM
 };
 
 export interface ManageddatabasesensitivitylabelsSensitivityLabel2Config {
-  /** Resource that manages the sensitivity label. */
-  managedBy?: string | Computed<string>;
   /** Properties of a sensitivity label. */
   properties?: ManageddatabasesensitivitylabelsSensitivityLabel2_Properties | Computed<ManageddatabasesensitivitylabelsSensitivityLabel2_Properties>;
 }
@@ -52,7 +50,6 @@ export interface ManageddatabasesensitivitylabelsSensitivityLabel2Attrs {
 export const ManageddatabasesensitivitylabelsSensitivityLabel2: ResourceBinding<ManageddatabasesensitivitylabelsSensitivityLabel2Config, ManageddatabasesensitivitylabelsSensitivityLabel2Attrs> = {
   wireType: "azure_sql_manageddatabasesensitivitylabels_sensitivity_label_2",
   fields: {
-    managedBy: "managed_by",
     properties: {
       wireName: "properties",
       kind: "object",

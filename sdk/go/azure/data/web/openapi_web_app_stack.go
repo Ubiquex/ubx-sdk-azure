@@ -5,77 +5,77 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWebAppStack_Value_Properties_MajorVersions_MinorVersions_StackSettings_LinuxContainerSettings struct {
 	EndOfLifeDate any
-	IsAutoUpdate any
-	IsDeprecated any
+	IsAutoUpdate  any
+	IsDeprecated  any
 	IsEarlyAccess any
-	IsHidden any
-	IsPreview any
+	IsHidden      any
+	IsPreview     any
 	Java11Runtime any
-	Java8Runtime any
+	Java8Runtime  any
 }
 
 type OpenapiWebAppStack_Value_Properties_MajorVersions_MinorVersions_StackSettings_LinuxRuntimeSettings_AppInsightsSettings struct {
 	IsDefaultOff any
-	IsSupported any
+	IsSupported  any
 }
 
 type OpenapiWebAppStack_Value_Properties_MajorVersions_MinorVersions_StackSettings_LinuxRuntimeSettings_GitHubActionSettings struct {
-	IsSupported any
+	IsSupported      any
 	SupportedVersion any
 }
 
 type OpenapiWebAppStack_Value_Properties_MajorVersions_MinorVersions_StackSettings_LinuxRuntimeSettings struct {
-	AppInsightsSettings any
-	EndOfLifeDate any
-	GitHubActionSettings any
-	IsAutoUpdate any
-	IsDeprecated any
-	IsEarlyAccess any
-	IsHidden any
-	IsPreview any
+	AppInsightsSettings      any
+	EndOfLifeDate            any
+	GitHubActionSettings     any
+	IsAutoUpdate             any
+	IsDeprecated             any
+	IsEarlyAccess            any
+	IsHidden                 any
+	IsPreview                any
 	RemoteDebuggingSupported any
-	RuntimeVersion any
+	RuntimeVersion           any
 }
 
 type OpenapiWebAppStack_Value_Properties_MajorVersions_MinorVersions_StackSettings_WindowsContainerSettings struct {
-	EndOfLifeDate any
-	IsAutoUpdate any
-	IsDeprecated any
-	IsEarlyAccess any
-	IsHidden any
-	IsPreview any
-	JavaContainer any
+	EndOfLifeDate        any
+	IsAutoUpdate         any
+	IsDeprecated         any
+	IsEarlyAccess        any
+	IsHidden             any
+	IsPreview            any
+	JavaContainer        any
 	JavaContainerVersion any
 }
 
 type OpenapiWebAppStack_Value_Properties_MajorVersions_MinorVersions_StackSettings struct {
-	LinuxContainerSettings any
-	LinuxRuntimeSettings any
+	LinuxContainerSettings   any
+	LinuxRuntimeSettings     any
 	WindowsContainerSettings any
-	WindowsRuntimeSettings any
+	WindowsRuntimeSettings   any
 }
 
 type OpenapiWebAppStack_Value_Properties_MajorVersions_MinorVersions struct {
-	DisplayText any
+	DisplayText   any
 	StackSettings any
-	Value any
+	Value         any
 }
 
 type OpenapiWebAppStack_Value_Properties_MajorVersions struct {
-	DisplayText any
+	DisplayText   any
 	MinorVersions any
-	Value any
+	Value         any
 }
 
 type OpenapiWebAppStack_Value_Properties struct {
-	DisplayText any
+	DisplayText   any
 	MajorVersions any
-	PreferredOs any
-	Value any
+	PreferredOs   any
+	Value         any
 }
 
 type OpenapiWebAppStack_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -85,7 +85,7 @@ type OpenapiWebAppStackConfig struct {
 
 type OpenapiWebAppStackAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	StackOsType any
 	// The WebAppStack items on this page
 	Value any

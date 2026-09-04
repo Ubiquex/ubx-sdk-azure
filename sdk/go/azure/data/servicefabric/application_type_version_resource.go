@@ -4,9 +4,9 @@ package servicefabric
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApplicationTypeVersionResource_Value_Properties struct {
-	AppPackageUrl any
+	AppPackageUrl        any
 	DefaultParameterList any
-	ProvisioningState any
+	ProvisioningState    any
 }
 
 type ApplicationTypeVersionResource_Value struct {
@@ -14,31 +14,31 @@ type ApplicationTypeVersionResource_Value struct {
 }
 
 type ApplicationTypeVersionResourceConfig struct {
-	ApiVersion any
+	ApiVersion          any
 	ApplicationTypeName any
-	ClusterName any
-	ResourceGroupName any
-	SubscriptionId any
+	ClusterName         any
+	ResourceGroupName   any
+	SubscriptionId      any
 }
 
 type ApplicationTypeVersionResourceAttrs struct {
-	ApiVersion any
+	ApiVersion          any
 	ApplicationTypeName any
-	ClusterName any
+	ClusterName         any
 	// URL to get the next set of application type version list results if there are any.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
-	Value any
+	SubscriptionId    any
+	Value             any
 }
 
 var ApplicationTypeVersionResource = ubx.DataSourceBinding{
 	WireType: "azure_servicefabric_application_type_version_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":          ubx.FieldSpec{WireName: "api_version"},
 		"ApplicationTypeName": ubx.FieldSpec{WireName: "application_type_name"},
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ClusterName":         ubx.FieldSpec{WireName: "cluster_name"},
+		"ResourceGroupName":   ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":      ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

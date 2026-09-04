@@ -4,12 +4,12 @@ package reservations
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Catalog_Value_Capabilities struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type Catalog_Value_Msrp_P1Y struct {
-	Amount any
+	Amount       any
 	CurrencyCode any
 }
 
@@ -21,39 +21,39 @@ type Catalog_Value_Msrp struct {
 
 type Catalog_Value_Restrictions struct {
 	ReasonCode any
-	Type any
-	Values any
+	Type       any
+	Values     any
 }
 
 type Catalog_Value struct {
-	BillingPlans any
-	Capabilities any
-	Locations any
-	Msrp any
-	Name any
-	ResourceType any
-	Restrictions any
-	Size any
+	BillingPlans  any
+	Capabilities  any
+	Locations     any
+	Msrp          any
+	Name          any
+	ResourceType  any
+	Restrictions  any
+	Size          any
 	SkuProperties any
-	Terms any
-	Tier any
+	Terms         any
+	Tier          any
 }
 
 type CatalogConfig struct {
-	Location any
-	OfferId any
-	PlanId any
-	PublisherId any
+	Location             any
+	OfferId              any
+	PlanId               any
+	PublisherId          any
 	ReservedResourceType any
 }
 
 type CatalogAttrs struct {
 	Location any
 	// The link to the next page of items
-	NextLink any
-	OfferId any
-	PlanId any
-	PublisherId any
+	NextLink             any
+	OfferId              any
+	PlanId               any
+	PublisherId          any
 	ReservedResourceType any
 	// The total amount of catalog items.
 	TotalItems any
@@ -64,10 +64,10 @@ type CatalogAttrs struct {
 var Catalog = ubx.DataSourceBinding{
 	WireType: "azure_reservations_catalog",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"OfferId": ubx.FieldSpec{WireName: "offer_id"},
-		"PlanId": ubx.FieldSpec{WireName: "plan_id"},
-		"PublisherId": ubx.FieldSpec{WireName: "publisher_id"},
+		"Location":             ubx.FieldSpec{WireName: "location"},
+		"OfferId":              ubx.FieldSpec{WireName: "offer_id"},
+		"PlanId":               ubx.FieldSpec{WireName: "plan_id"},
+		"PublisherId":          ubx.FieldSpec{WireName: "publisher_id"},
 		"ReservedResourceType": ubx.FieldSpec{WireName: "reserved_resource_type"},
 	},
 }

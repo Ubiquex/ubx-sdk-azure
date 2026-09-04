@@ -30,33 +30,33 @@ type MachineScaleSetVminstanceView_Disks_EncryptionSettings_DiskEncryptionKey_So
 }
 
 type MachineScaleSetVminstanceView_Disks_EncryptionSettings_DiskEncryptionKey struct {
-	SecretUrl any
+	SecretUrl   any
 	SourceVault any
 }
 
 type MachineScaleSetVminstanceView_Disks_EncryptionSettings_KeyEncryptionKey struct {
-	KeyUrl any
+	KeyUrl      any
 	SourceVault any
 }
 
 type MachineScaleSetVminstanceView_Disks_EncryptionSettings struct {
 	DiskEncryptionKey any
-	Enabled any
-	KeyEncryptionKey any
+	Enabled           any
+	KeyEncryptionKey  any
 }
 
 type MachineScaleSetVminstanceView_Disks struct {
-	EncryptionSettings any
-	Name any
-	Statuses any
+	EncryptionSettings     any
+	Name                   any
+	Statuses               any
 	StorageAlignmentStatus any
 }
 
 type MachineScaleSetVminstanceView_Extensions struct {
-	Name any
-	Statuses any
-	Substatuses any
-	Type any
+	Name               any
+	Statuses           any
+	Substatuses        any
+	Type               any
 	TypeHandlerVersion any
 }
 
@@ -83,8 +83,8 @@ type MachineScaleSetVminstanceView_MaintenanceRedeployStatus struct {
 }
 
 type MachineScaleSetVminstanceView_VmAgent_ExtensionHandlers struct {
-	Status any
-	Type any
+	Status             any
+	Type               any
 	TypeHandlerVersion any
 }
 
@@ -103,7 +103,7 @@ type MachineScaleSetVminstanceView_VmHealth struct {
 }
 
 type MachineScaleSetVminstanceViewConfig struct {
-	InstanceId any
+	InstanceId     any
 	VmScaleSetName any
 }
 
@@ -122,7 +122,7 @@ type MachineScaleSetVminstanceViewAttrs struct {
 	Extensions any
 	// The hypervisor generation of the Virtual Machine.
 	HyperVgeneration any
-	InstanceId any
+	InstanceId       any
 	// The Interconnect Block instance view details for a Virtual Machine or Scale Set VM instance.
 	InterconnectInstanceView any
 	// Maintenance Operation Status.
@@ -144,14 +144,14 @@ type MachineScaleSetVminstanceViewAttrs struct {
 	// The instance view of the VM Agent running on the virtual machine.
 	VmAgent any
 	// The health status of the VM.
-	VmHealth any
+	VmHealth       any
 	VmScaleSetName any
 }
 
 var MachineScaleSetVminstanceView = ubx.DataSourceBinding{
 	WireType: "azure_virtual_machine_scale_set_vminstance_view",
 	Fields: ubx.FieldMap{
-		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
+		"InstanceId":     ubx.FieldSpec{WireName: "instance_id"},
 		"VmScaleSetName": ubx.FieldSpec{WireName: "vm_scale_set_name"},
 	},
 }

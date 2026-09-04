@@ -3,26 +3,52 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServiceProtectionContainer_Properties_ProviderSpecificInput struct {
+type ServiceProtectionContainer_Properties_FabricSpecificDetails struct {
+	// Gets the class type. Overridden in derived classes.
 	InstanceType any
 }
 
 type ServiceProtectionContainer_Properties struct {
+	// Fabric friendly name.
+	FabricFriendlyName any
+	// Base class for fabric specific details of container.
+	FabricSpecificDetails any
+	// The fabric type.
+	FabricType any
+	// The name.
+	FriendlyName any
+	// The pairing status of this cloud.
+	PairingStatus any
+	// Number of protected PEs.
+	ProtectedItemCount any
 	// Provider specific inputs for container creation.
 	ProviderSpecificInput any
+	// The role of this cloud.
+	Role any
 }
 
-var ServiceProtectionContainer_Properties_ProviderSpecificInputFields = ubx.FieldMap{
-		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-	}
+var ServiceProtectionContainer_Properties_FabricSpecificDetailsFields = ubx.FieldMap{
+	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+}
 
 var ServiceProtectionContainer_PropertiesFields = ubx.FieldMap{
-		"ProviderSpecificInput": ubx.FieldSpec{
-			WireName: "provider_specific_input",
-			Kind: "list",
-			Fields: ServiceProtectionContainer_Properties_ProviderSpecificInputFields,
-		},
-	}
+	"FabricFriendlyName": ubx.FieldSpec{WireName: "fabric_friendly_name"},
+	"FabricSpecificDetails": ubx.FieldSpec{
+		WireName: "fabric_specific_details",
+		Kind:     "object",
+		Fields:   ServiceProtectionContainer_Properties_FabricSpecificDetailsFields,
+	},
+	"FabricType":         ubx.FieldSpec{WireName: "fabric_type"},
+	"FriendlyName":       ubx.FieldSpec{WireName: "friendly_name"},
+	"PairingStatus":      ubx.FieldSpec{WireName: "pairing_status"},
+	"ProtectedItemCount": ubx.FieldSpec{WireName: "protected_item_count"},
+	"ProviderSpecificInput": ubx.FieldSpec{
+		WireName: "provider_specific_input",
+		Kind:     "list",
+		Fields:   ServiceProtectionContainer_Properties_FabricSpecificDetailsFields,
+	},
+	"Role": ubx.FieldSpec{WireName: "role"},
+}
 
 type ServiceProtectionContainerConfig struct {
 	// Create protection container input properties.
@@ -41,8 +67,8 @@ var ServiceProtectionContainer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceProtectionContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceProtectionContainer_PropertiesFields,
 		},
 	},
 }

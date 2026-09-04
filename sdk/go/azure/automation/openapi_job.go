@@ -3,33 +3,82 @@ package automation
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type OpenapiJob_Properties_JobRuntimeEnvironment struct {
+	// Name of Runtime Environment.
+	RuntimeEnvironmentName any
+}
+
 type OpenapiJob_Properties_Runbook struct {
 	// Gets or sets the name of the runbook.
 	Name any
 }
 
 type OpenapiJob_Properties struct {
+	// Gets or sets the creation time of the job.
+	CreationTime any
+	// Gets or sets the end time of the job.
+	EndTime any
+	// Gets or sets the exception of the job.
+	Exception any
+	// Gets or sets the id of the job.
+	JobId any
+	// The runbook property associated with the entity.
+	JobRuntimeEnvironment any
+	// Gets or sets the last modified time of the job.
+	LastModifiedTime any
+	// Gets or sets the last status modified time of the job.
+	LastStatusModifiedTime any
 	// Gets or sets the parameters of the job.
 	Parameters any
+	// The provisioning state of the resource.
+	ProvisioningState any
 	// Gets or sets the runOn which specifies the group name where the job is to be executed.
 	RunOn any
 	// The runbook property associated with the entity.
 	Runbook any
+	// Gets or sets the start time of the job.
+	StartTime any
+	// Gets or sets the job started by.
+	StartedBy any
+	// Gets or sets the status of the job.
+	Status any
+	// Gets or sets the status details of the job.
+	StatusDetails any
+}
+
+var OpenapiJob_Properties_JobRuntimeEnvironmentFields = ubx.FieldMap{
+	"RuntimeEnvironmentName": ubx.FieldSpec{WireName: "runtime_environment_name"},
 }
 
 var OpenapiJob_Properties_RunbookFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiJob_PropertiesFields = ubx.FieldMap{
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"RunOn": ubx.FieldSpec{WireName: "run_on"},
-		"Runbook": ubx.FieldSpec{
-			WireName: "runbook",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_RunbookFields,
-		},
-	}
+	"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+	"EndTime":      ubx.FieldSpec{WireName: "end_time"},
+	"Exception":    ubx.FieldSpec{WireName: "exception"},
+	"JobId":        ubx.FieldSpec{WireName: "job_id"},
+	"JobRuntimeEnvironment": ubx.FieldSpec{
+		WireName: "job_runtime_environment",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_JobRuntimeEnvironmentFields,
+	},
+	"LastModifiedTime":       ubx.FieldSpec{WireName: "last_modified_time"},
+	"LastStatusModifiedTime": ubx.FieldSpec{WireName: "last_status_modified_time"},
+	"Parameters":             ubx.FieldSpec{WireName: "parameters"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"RunOn":                  ubx.FieldSpec{WireName: "run_on"},
+	"Runbook": ubx.FieldSpec{
+		WireName: "runbook",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_RunbookFields,
+	},
+	"StartTime":     ubx.FieldSpec{WireName: "start_time"},
+	"StartedBy":     ubx.FieldSpec{WireName: "started_by"},
+	"Status":        ubx.FieldSpec{WireName: "status"},
+	"StatusDetails": ubx.FieldSpec{WireName: "status_details"},
+}
 
 type OpenapiJobConfig struct {
 	Properties any
@@ -44,8 +93,8 @@ var OpenapiJob = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiJob_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiJob_PropertiesFields,
 		},
 	},
 }

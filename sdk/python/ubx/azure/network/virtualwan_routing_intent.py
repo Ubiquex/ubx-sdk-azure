@@ -36,8 +36,6 @@ _VirtualwanRoutingIntent_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanRoutingIntentConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # The properties of a RoutingIntent resource.
     properties: Any = None
 
@@ -51,7 +49,6 @@ class VirtualwanRoutingIntentAttrs:
 VirtualwanRoutingIntent = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_routing_intent",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -174,14 +174,8 @@ const RoleeligibilityschedulerequestRoleEligibilityScheduleRequest_PropertiesFie
 };
 
 export interface RoleeligibilityschedulerequestRoleEligibilityScheduleRequestConfig {
-  /** The role eligibility schedule request ID. */
-  id?: string | Computed<string>;
-  /** The role eligibility schedule request name. */
-  name?: string | Computed<string>;
   /** Role eligibility schedule request properties with scope. */
   properties?: RoleeligibilityschedulerequestRoleEligibilityScheduleRequest_Properties | Computed<RoleeligibilityschedulerequestRoleEligibilityScheduleRequest_Properties>;
-  /** The role eligibility schedule request type. */
-  type?: string | Computed<string>;
   /** path parameter, not part of the API's own resource representation */
   scope: string | Computed<string>;
 }
@@ -202,14 +196,11 @@ export interface RoleeligibilityschedulerequestRoleEligibilityScheduleRequestAtt
 export const RoleeligibilityschedulerequestRoleEligibilityScheduleRequest: ResourceBinding<RoleeligibilityschedulerequestRoleEligibilityScheduleRequestConfig, RoleeligibilityschedulerequestRoleEligibilityScheduleRequestAttrs> = {
   wireType: "azure_authorization_roleeligibilityschedulerequest_role_eligibility_schedule_request",
   fields: {
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: RoleeligibilityschedulerequestRoleEligibilityScheduleRequest_PropertiesFields,
     },
-    type: "type",
     scope: "scope",
   },
 };

@@ -31,20 +31,9 @@ const TopicSpace_PropertiesFields: FieldMap = {
   topicTemplates: "topic_templates",
 };
 
-const TopicSpace_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface TopicSpaceConfig {
   /** The properties of topic space. */
   properties?: TopicSpace_Properties | Computed<TopicSpace_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: TopicSpace_SystemData | Computed<TopicSpace_SystemData>;
 }
 
 export interface TopicSpaceAttrs {
@@ -61,11 +50,6 @@ export const TopicSpace: ResourceBinding<TopicSpaceConfig, TopicSpaceAttrs> = {
       wireName: "properties",
       kind: "object",
       fields: TopicSpace_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: TopicSpace_SystemDataFields,
     },
   },
 };

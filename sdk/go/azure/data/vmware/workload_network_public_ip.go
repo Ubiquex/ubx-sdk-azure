@@ -4,10 +4,10 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkloadNetworkPublicIp_Value_Properties struct {
-	DisplayName any
+	DisplayName       any
 	NumberOfPublicIps any
 	ProvisioningState any
-	PublicIpblock any
+	PublicIpblock     any
 }
 
 type WorkloadNetworkPublicIp_Value struct {
@@ -20,7 +20,7 @@ type WorkloadNetworkPublicIpConfig struct {
 
 type WorkloadNetworkPublicIpAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The WorkloadNetworkPublicIP items on this page
 	Value any

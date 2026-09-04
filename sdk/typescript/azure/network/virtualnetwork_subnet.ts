@@ -11931,8 +11931,6 @@ const VirtualnetworkSubnet_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkSubnetConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of the subnet. */
   properties?: VirtualnetworkSubnet_Properties | Computed<VirtualnetworkSubnet_Properties>;
 }
@@ -11947,7 +11945,6 @@ export interface VirtualnetworkSubnetAttrs {
 export const VirtualnetworkSubnet: ResourceBinding<VirtualnetworkSubnetConfig, VirtualnetworkSubnetAttrs> = {
   wireType: "azure_network_virtualnetwork_subnet",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

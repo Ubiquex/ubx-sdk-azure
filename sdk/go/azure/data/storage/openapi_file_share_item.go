@@ -4,49 +4,49 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFileShareItem_Value_Properties_FileSharePaidBursting struct {
-	PaidBurstingEnabled any
+	PaidBurstingEnabled           any
 	PaidBurstingMaxBandwidthMibps any
-	PaidBurstingMaxIops any
+	PaidBurstingMaxIops           any
 }
 
 type OpenapiFileShareItem_Value_Properties_SignedIdentifiers_AccessPolicy struct {
 	ExpiryTime any
 	Permission any
-	StartTime any
+	StartTime  any
 }
 
 type OpenapiFileShareItem_Value_Properties_SignedIdentifiers struct {
 	AccessPolicy any
-	Id any
+	Id           any
 }
 
 type OpenapiFileShareItem_Value_Properties struct {
-	AccessTier any
-	AccessTierChangeTime any
-	AccessTierStatus any
-	Deleted any
-	DeletedTime any
-	EnabledProtocols any
-	FileSharePaidBursting any
-	IncludedBurstIops any
-	LastModifiedTime any
-	LeaseDuration any
-	LeaseState any
-	LeaseStatus any
-	MaxBurstCreditsForIops any
-	Metadata any
+	AccessTier                                   any
+	AccessTierChangeTime                         any
+	AccessTierStatus                             any
+	Deleted                                      any
+	DeletedTime                                  any
+	EnabledProtocols                             any
+	FileSharePaidBursting                        any
+	IncludedBurstIops                            any
+	LastModifiedTime                             any
+	LeaseDuration                                any
+	LeaseState                                   any
+	LeaseStatus                                  any
+	MaxBurstCreditsForIops                       any
+	Metadata                                     any
 	NextAllowedProvisionedBandwidthDowngradeTime any
-	NextAllowedProvisionedIopsDowngradeTime any
-	NextAllowedQuotaDowngradeTime any
-	ProvisionedBandwidthMibps any
-	ProvisionedIops any
-	RemainingRetentionDays any
-	RootSquash any
-	ShareQuota any
-	ShareUsageBytes any
-	SignedIdentifiers any
-	SnapshotTime any
-	Version any
+	NextAllowedProvisionedIopsDowngradeTime      any
+	NextAllowedQuotaDowngradeTime                any
+	ProvisionedBandwidthMibps                    any
+	ProvisionedIops                              any
+	RemainingRetentionDays                       any
+	RootSquash                                   any
+	ShareQuota                                   any
+	ShareUsageBytes                              any
+	SignedIdentifiers                            any
+	SnapshotTime                                 any
+	Version                                      any
 }
 
 type OpenapiFileShareItem_Value struct {

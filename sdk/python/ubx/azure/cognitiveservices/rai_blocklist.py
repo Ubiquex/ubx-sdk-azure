@@ -17,8 +17,6 @@ _RaiBlocklist_PropertiesFields = {
 
 @dataclasses.dataclass
 class RaiBlocklistConfig:
-    # Resource Etag.
-    etag: Any = None
     # RAI Custom Blocklist properties.
     properties: Any = None
     # Resource tags.
@@ -36,7 +34,6 @@ class RaiBlocklistAttrs:
 RaiBlocklist = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_rai_blocklist",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

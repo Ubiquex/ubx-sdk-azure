@@ -23,33 +23,33 @@ type OpenapiRemotePrivateEndpointConnectionArmresource_Properties struct {
 	PrivateEndpoint any
 	// The state of a private link connection
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 var OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiRemotePrivateEndpointConnectionArmresource_PropertiesFields = ubx.FieldMap{
-		"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiRemotePrivateEndpointConnectionArmresourceConfig struct {
 	// Kind of resource.
@@ -75,8 +75,8 @@ var OpenapiRemotePrivateEndpointConnectionArmresource = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiRemotePrivateEndpointConnectionArmresource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiRemotePrivateEndpointConnectionArmresource_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

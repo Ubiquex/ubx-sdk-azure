@@ -3004,10 +3004,6 @@ const ExpressrouteServiceEndpointPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteServiceEndpointPolicyConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
-  /** Kind of service endpoint policy. This is metadata used for the Azure portal experience. */
-  kind?: string | Computed<string>;
   /** Service Endpoint Policy resource. */
   properties?: ExpressrouteServiceEndpointPolicy_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties>;
 }
@@ -3024,8 +3020,6 @@ export interface ExpressrouteServiceEndpointPolicyAttrs {
 export const ExpressrouteServiceEndpointPolicy: ResourceBinding<ExpressrouteServiceEndpointPolicyConfig, ExpressrouteServiceEndpointPolicyAttrs> = {
   wireType: "azure_network_expressroute_service_endpoint_policy",
   fields: {
-    etag: "etag",
-    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",

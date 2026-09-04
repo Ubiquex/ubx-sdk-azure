@@ -9,8 +9,8 @@ type BackupVault_Properties struct {
 }
 
 var BackupVault_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type BackupVaultConfig struct {
 	// Backup Vault properties
@@ -27,8 +27,8 @@ var BackupVault = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BackupVault_PropertiesFields,
+			Kind:     "object",
+			Fields:   BackupVault_PropertiesFields,
 		},
 	},
 }

@@ -14,22 +14,22 @@ type VirtualnetworkPublicIpprefix_Value_Properties_CustomIpprefix struct {
 
 type VirtualnetworkPublicIpprefix_Value_Properties_IpTags struct {
 	FirstPartyServiceTagId any
-	IpTagType any
-	Tag any
+	IpTagType              any
+	Tag                    any
 }
 
 type VirtualnetworkPublicIpprefix_Value_Properties_NatGateway_Properties struct {
 	IdleTimeoutInMinutes any
-	Nat64 any
-	ProvisioningState any
-	PublicIpAddresses any
-	PublicIpAddressesV6 any
-	PublicIpPrefixes any
-	PublicIpPrefixesV6 any
-	ResourceGuid any
-	ServiceGateway any
+	Nat64                any
+	ProvisioningState    any
+	PublicIpAddresses    any
+	PublicIpAddressesV6  any
+	PublicIpPrefixes     any
+	PublicIpPrefixesV6   any
+	ResourceGuid         any
+	ServiceGateway       any
 	SourceVirtualNetwork any
-	Subnets any
+	Subnets              any
 }
 
 type VirtualnetworkPublicIpprefix_Value_Properties_NatGateway_Sku struct {
@@ -37,24 +37,24 @@ type VirtualnetworkPublicIpprefix_Value_Properties_NatGateway_Sku struct {
 }
 
 type VirtualnetworkPublicIpprefix_Value_Properties_NatGateway struct {
-	Etag any
+	Etag       any
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type VirtualnetworkPublicIpprefix_Value_Properties struct {
-	CustomIpprefix any
-	IpPrefix any
-	IpTags any
+	CustomIpprefix                      any
+	IpPrefix                            any
+	IpTags                              any
 	LoadBalancerFrontendIpConfiguration any
-	NatGateway any
-	PrefixLength any
-	ProvisioningState any
-	PublicIpaddressVersion any
-	PublicIpaddresses any
-	ResourceGuid any
-	UpgradedToV2 any
+	NatGateway                          any
+	PrefixLength                        any
+	ProvisioningState                   any
+	PublicIpaddressVersion              any
+	PublicIpaddresses                   any
+	ResourceGuid                        any
+	UpgradedToV2                        any
 }
 
 type VirtualnetworkPublicIpprefix_Value_Sku struct {
@@ -63,11 +63,11 @@ type VirtualnetworkPublicIpprefix_Value_Sku struct {
 }
 
 type VirtualnetworkPublicIpprefix_Value struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type VirtualnetworkPublicIpprefixConfig struct {
@@ -82,6 +82,5 @@ type VirtualnetworkPublicIpprefixAttrs struct {
 
 var VirtualnetworkPublicIpprefix = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_public_ipprefix",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

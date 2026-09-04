@@ -13,31 +13,31 @@ type Profile_Properties_DnsConfig struct {
 }
 
 type Profile_Properties_Endpoints_Properties_CustomHeaders struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type Profile_Properties_Endpoints_Properties_Subnets struct {
 	First any
-	Last any
+	Last  any
 	Scope any
 }
 
 type Profile_Properties_Endpoints_Properties struct {
-	AlwaysServe any
-	CustomHeaders any
-	EndpointLocation any
+	AlwaysServe           any
+	CustomHeaders         any
+	EndpointLocation      any
 	EndpointMonitorStatus any
-	EndpointStatus any
-	GeoMapping any
-	MinChildEndpoints any
+	EndpointStatus        any
+	GeoMapping            any
+	MinChildEndpoints     any
 	MinChildEndpointsIpv4 any
 	MinChildEndpointsIpv6 any
-	Priority any
-	Subnets any
-	Target any
-	TargetResourceId any
-	Weight any
+	Priority              any
+	Subnets               any
+	Target                any
+	TargetResourceId      any
+	Weight                any
 }
 
 type Profile_Properties_Endpoints struct {
@@ -90,102 +90,102 @@ type Profile_Properties struct {
 }
 
 var Profile_Properties_DnsConfigFields = ubx.FieldMap{
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"RelativeName": ubx.FieldSpec{WireName: "relative_name"},
-		"Ttl": ubx.FieldSpec{WireName: "ttl"},
-	}
+	"Fqdn":         ubx.FieldSpec{WireName: "fqdn"},
+	"RelativeName": ubx.FieldSpec{WireName: "relative_name"},
+	"Ttl":          ubx.FieldSpec{WireName: "ttl"},
+}
 
 var Profile_Properties_Endpoints_Properties_CustomHeadersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var Profile_Properties_Endpoints_Properties_SubnetsFields = ubx.FieldMap{
-		"First": ubx.FieldSpec{WireName: "first"},
-		"Last": ubx.FieldSpec{WireName: "last"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"First": ubx.FieldSpec{WireName: "first"},
+	"Last":  ubx.FieldSpec{WireName: "last"},
+	"Scope": ubx.FieldSpec{WireName: "scope"},
+}
 
 var Profile_Properties_Endpoints_PropertiesFields = ubx.FieldMap{
-		"AlwaysServe": ubx.FieldSpec{WireName: "always_serve"},
-		"CustomHeaders": ubx.FieldSpec{
-			WireName: "custom_headers",
-			Kind: "list",
-			Fields: Profile_Properties_Endpoints_Properties_CustomHeadersFields,
-		},
-		"EndpointLocation": ubx.FieldSpec{WireName: "endpoint_location"},
-		"EndpointMonitorStatus": ubx.FieldSpec{WireName: "endpoint_monitor_status"},
-		"EndpointStatus": ubx.FieldSpec{WireName: "endpoint_status"},
-		"GeoMapping": ubx.FieldSpec{WireName: "geo_mapping"},
-		"MinChildEndpoints": ubx.FieldSpec{WireName: "min_child_endpoints"},
-		"MinChildEndpointsIpv4": ubx.FieldSpec{WireName: "min_child_endpoints_ipv4"},
-		"MinChildEndpointsIpv6": ubx.FieldSpec{WireName: "min_child_endpoints_ipv6"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: Profile_Properties_Endpoints_Properties_SubnetsFields,
-		},
-		"Target": ubx.FieldSpec{WireName: "target"},
-		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
-		"Weight": ubx.FieldSpec{WireName: "weight"},
-	}
+	"AlwaysServe": ubx.FieldSpec{WireName: "always_serve"},
+	"CustomHeaders": ubx.FieldSpec{
+		WireName: "custom_headers",
+		Kind:     "list",
+		Fields:   Profile_Properties_Endpoints_Properties_CustomHeadersFields,
+	},
+	"EndpointLocation":      ubx.FieldSpec{WireName: "endpoint_location"},
+	"EndpointMonitorStatus": ubx.FieldSpec{WireName: "endpoint_monitor_status"},
+	"EndpointStatus":        ubx.FieldSpec{WireName: "endpoint_status"},
+	"GeoMapping":            ubx.FieldSpec{WireName: "geo_mapping"},
+	"MinChildEndpoints":     ubx.FieldSpec{WireName: "min_child_endpoints"},
+	"MinChildEndpointsIpv4": ubx.FieldSpec{WireName: "min_child_endpoints_ipv4"},
+	"MinChildEndpointsIpv6": ubx.FieldSpec{WireName: "min_child_endpoints_ipv6"},
+	"Priority":              ubx.FieldSpec{WireName: "priority"},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   Profile_Properties_Endpoints_Properties_SubnetsFields,
+	},
+	"Target":           ubx.FieldSpec{WireName: "target"},
+	"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
+	"Weight":           ubx.FieldSpec{WireName: "weight"},
+}
 
 var Profile_Properties_EndpointsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Profile_Properties_Endpoints_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Profile_Properties_Endpoints_PropertiesFields,
+	},
+}
 
 var Profile_Properties_MonitorConfig_ExpectedStatusCodeRangesFields = ubx.FieldMap{
-		"Max": ubx.FieldSpec{WireName: "max"},
-		"Min": ubx.FieldSpec{WireName: "min"},
-	}
+	"Max": ubx.FieldSpec{WireName: "max"},
+	"Min": ubx.FieldSpec{WireName: "min"},
+}
 
 var Profile_Properties_MonitorConfigFields = ubx.FieldMap{
-		"CustomHeaders": ubx.FieldSpec{
-			WireName: "custom_headers",
-			Kind: "list",
-			Fields: Profile_Properties_Endpoints_Properties_CustomHeadersFields,
-		},
-		"ExpectedStatusCodeRanges": ubx.FieldSpec{
-			WireName: "expected_status_code_ranges",
-			Kind: "list",
-			Fields: Profile_Properties_MonitorConfig_ExpectedStatusCodeRangesFields,
-		},
-		"IntervalInSeconds": ubx.FieldSpec{WireName: "interval_in_seconds"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"ProfileMonitorStatus": ubx.FieldSpec{WireName: "profile_monitor_status"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"TimeoutInSeconds": ubx.FieldSpec{WireName: "timeout_in_seconds"},
-		"ToleratedNumberOfFailures": ubx.FieldSpec{WireName: "tolerated_number_of_failures"},
-	}
+	"CustomHeaders": ubx.FieldSpec{
+		WireName: "custom_headers",
+		Kind:     "list",
+		Fields:   Profile_Properties_Endpoints_Properties_CustomHeadersFields,
+	},
+	"ExpectedStatusCodeRanges": ubx.FieldSpec{
+		WireName: "expected_status_code_ranges",
+		Kind:     "list",
+		Fields:   Profile_Properties_MonitorConfig_ExpectedStatusCodeRangesFields,
+	},
+	"IntervalInSeconds":         ubx.FieldSpec{WireName: "interval_in_seconds"},
+	"Path":                      ubx.FieldSpec{WireName: "path"},
+	"Port":                      ubx.FieldSpec{WireName: "port"},
+	"ProfileMonitorStatus":      ubx.FieldSpec{WireName: "profile_monitor_status"},
+	"Protocol":                  ubx.FieldSpec{WireName: "protocol"},
+	"TimeoutInSeconds":          ubx.FieldSpec{WireName: "timeout_in_seconds"},
+	"ToleratedNumberOfFailures": ubx.FieldSpec{WireName: "tolerated_number_of_failures"},
+}
 
 var Profile_PropertiesFields = ubx.FieldMap{
-		"AllowedEndpointRecordTypes": ubx.FieldSpec{WireName: "allowed_endpoint_record_types"},
-		"DnsConfig": ubx.FieldSpec{
-			WireName: "dns_config",
-			Kind: "object",
-			Fields: Profile_Properties_DnsConfigFields,
-		},
-		"Endpoints": ubx.FieldSpec{
-			WireName: "endpoints",
-			Kind: "list",
-			Fields: Profile_Properties_EndpointsFields,
-		},
-		"MaxReturn": ubx.FieldSpec{WireName: "max_return"},
-		"MonitorConfig": ubx.FieldSpec{
-			WireName: "monitor_config",
-			Kind: "object",
-			Fields: Profile_Properties_MonitorConfigFields,
-		},
-		"ProfileStatus": ubx.FieldSpec{WireName: "profile_status"},
-		"TrafficRoutingMethod": ubx.FieldSpec{WireName: "traffic_routing_method"},
-		"TrafficViewEnrollmentStatus": ubx.FieldSpec{WireName: "traffic_view_enrollment_status"},
-	}
+	"AllowedEndpointRecordTypes": ubx.FieldSpec{WireName: "allowed_endpoint_record_types"},
+	"DnsConfig": ubx.FieldSpec{
+		WireName: "dns_config",
+		Kind:     "object",
+		Fields:   Profile_Properties_DnsConfigFields,
+	},
+	"Endpoints": ubx.FieldSpec{
+		WireName: "endpoints",
+		Kind:     "list",
+		Fields:   Profile_Properties_EndpointsFields,
+	},
+	"MaxReturn": ubx.FieldSpec{WireName: "max_return"},
+	"MonitorConfig": ubx.FieldSpec{
+		WireName: "monitor_config",
+		Kind:     "object",
+		Fields:   Profile_Properties_MonitorConfigFields,
+	},
+	"ProfileStatus":               ubx.FieldSpec{WireName: "profile_status"},
+	"TrafficRoutingMethod":        ubx.FieldSpec{WireName: "traffic_routing_method"},
+	"TrafficViewEnrollmentStatus": ubx.FieldSpec{WireName: "traffic_view_enrollment_status"},
+}
 
 type ProfileConfig struct {
 	// Class representing the Traffic Manager profile properties.
@@ -202,8 +202,8 @@ var Profile = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Profile_PropertiesFields,
+			Kind:     "object",
+			Fields:   Profile_PropertiesFields,
 		},
 	},
 }

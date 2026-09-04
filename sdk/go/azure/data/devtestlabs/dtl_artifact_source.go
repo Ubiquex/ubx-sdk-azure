@@ -5,22 +5,22 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlArtifactSource_Value_Properties struct {
 	ArmTemplateFolderPath any
-	BranchRef any
-	CreatedDate any
-	DisplayName any
-	FolderPath any
-	ProvisioningState any
-	SecurityToken any
-	SourceType any
-	Status any
-	UniqueIdentifier any
-	Uri any
+	BranchRef             any
+	CreatedDate           any
+	DisplayName           any
+	FolderPath            any
+	ProvisioningState     any
+	SecurityToken         any
+	SourceType            any
+	Status                any
+	UniqueIdentifier      any
+	Uri                   any
 }
 
 type DtlArtifactSource_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlArtifactSourceConfig struct {

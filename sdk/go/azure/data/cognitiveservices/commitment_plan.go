@@ -5,44 +5,44 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CommitmentPlan_Value_Properties_Current_Quota struct {
 	Quantity any
-	Unit any
+	Unit     any
 }
 
 type CommitmentPlan_Value_Properties_Current struct {
-	Count any
-	EndDate any
-	Quota any
+	Count     any
+	EndDate   any
+	Quota     any
 	StartDate any
-	Tier any
+	Tier      any
 }
 
 type CommitmentPlan_Value_Properties struct {
-	AutoRenew any
+	AutoRenew          any
 	CommitmentPlanGuid any
-	Current any
-	HostingModel any
-	Last any
-	Next any
-	PlanType any
+	Current            any
+	HostingModel       any
+	Last               any
+	Next               any
+	PlanType           any
 	ProvisioningIssues any
-	ProvisioningState any
+	ProvisioningState  any
 }
 
 type CommitmentPlan_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type CommitmentPlan_Value struct {
-	Etag any
-	Kind any
-	Location any
+	Etag       any
+	Kind       any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type CommitmentPlanConfig struct {
@@ -57,6 +57,5 @@ type CommitmentPlanAttrs struct {
 
 var CommitmentPlan = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_commitment_plan",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

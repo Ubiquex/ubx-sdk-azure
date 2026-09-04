@@ -4,12 +4,12 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GlobalReachConnection_Value_Properties struct {
-	AddressPrefix any
-	AuthorizationKey any
+	AddressPrefix           any
+	AuthorizationKey        any
 	CircuitConnectionStatus any
-	ExpressRouteId any
+	ExpressRouteId          any
 	PeerExpressRouteCircuit any
-	ProvisioningState any
+	ProvisioningState       any
 }
 
 type GlobalReachConnection_Value struct {
@@ -22,7 +22,7 @@ type GlobalReachConnectionConfig struct {
 
 type GlobalReachConnectionAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The GlobalReachConnection items on this page
 	Value any

@@ -4,30 +4,30 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSiteExtensionInfo_Value_Properties struct {
-	Authors any
-	Comment any
-	Description any
-	DownloadCount any
-	ExtensionId any
-	ExtensionType any
-	ExtensionUrl any
-	FeedUrl any
-	IconUrl any
-	InstalledDateTime any
+	Authors                    any
+	Comment                    any
+	Description                any
+	DownloadCount              any
+	ExtensionId                any
+	ExtensionType              any
+	ExtensionUrl               any
+	FeedUrl                    any
+	IconUrl                    any
+	InstalledDateTime          any
 	InstallerCommandLineParams any
-	LicenseUrl any
-	LocalIsLatestVersion any
-	LocalPath any
-	ProjectUrl any
-	ProvisioningState any
-	PublishedDateTime any
-	Summary any
-	Title any
-	Version any
+	LicenseUrl                 any
+	LocalIsLatestVersion       any
+	LocalPath                  any
+	ProjectUrl                 any
+	ProvisioningState          any
+	PublishedDateTime          any
+	Summary                    any
+	Title                      any
+	Version                    any
 }
 
 type OpenapiSiteExtensionInfo_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

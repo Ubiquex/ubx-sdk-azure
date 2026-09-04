@@ -4,7 +4,7 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiExtensionPublisher_Value struct {
-	Id any
+	Id   any
 	Name any
 }
 
@@ -20,6 +20,5 @@ type OpenapiExtensionPublisherAttrs struct {
 
 var OpenapiExtensionPublisher = ubx.DataSourceBinding{
 	WireType: "azure_hybridcompute_openapi_extension_publisher",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

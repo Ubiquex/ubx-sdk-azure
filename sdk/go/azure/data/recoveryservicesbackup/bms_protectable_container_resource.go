@@ -4,29 +4,29 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsProtectableContainerResource_Value_Properties struct {
-	BackupManagementType any
-	ContainerId any
-	FriendlyName any
-	HealthStatus any
+	BackupManagementType     any
+	ContainerId              any
+	FriendlyName             any
+	HealthStatus             any
 	ProtectableContainerType any
 }
 
 type BmsProtectableContainerResource_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsProtectableContainerResourceConfig struct {
 	FabricName any
-	VaultName any
+	VaultName  any
 }
 
 type BmsProtectableContainerResourceAttrs struct {
 	FabricName any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 
@@ -34,6 +34,6 @@ var BmsProtectableContainerResource = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_protectable_container_resource",
 	Fields: ubx.FieldMap{
 		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"VaultName":  ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

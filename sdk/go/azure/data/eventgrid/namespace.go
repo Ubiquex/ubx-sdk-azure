@@ -4,14 +4,14 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Namespace_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type Namespace_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -26,15 +26,15 @@ type Namespace_Value_Properties_PrivateEndpointConnections_Properties_PrivateEnd
 
 type Namespace_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Namespace_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Namespace_Value_Properties_PrivateEndpointConnections struct {
@@ -42,91 +42,91 @@ type Namespace_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type Namespace_Value_Properties_TopicSpacesConfiguration_CustomDomains_Identity struct {
-	Type any
+	Type                 any
 	UserAssignedIdentity any
 }
 
 type Namespace_Value_Properties_TopicSpacesConfiguration_CustomDomains struct {
-	CertificateUrl any
-	ExpectedTxtRecordName any
-	ExpectedTxtRecordValue any
+	CertificateUrl           any
+	ExpectedTxtRecordName    any
+	ExpectedTxtRecordValue   any
 	FullyQualifiedDomainName any
-	Identity any
-	ValidationState any
+	Identity                 any
+	ValidationState          any
 }
 
 type Namespace_Value_Properties_TopicSpacesConfiguration_RoutingEnrichments_Dynamic struct {
-	Key any
+	Key   any
 	Value any
 }
 
 type Namespace_Value_Properties_TopicSpacesConfiguration_RoutingEnrichments_Static struct {
-	Key any
+	Key       any
 	ValueType any
 }
 
 type Namespace_Value_Properties_TopicSpacesConfiguration_RoutingEnrichments struct {
 	Dynamic any
-	Static any
+	Static  any
 }
 
 type Namespace_Value_Properties_TopicSpacesConfiguration struct {
-	CustomDomains any
-	Hostname any
+	CustomDomains                              any
+	Hostname                                   any
 	MaximumClientSessionsPerAuthenticationName any
-	MaximumSessionExpiryInHours any
-	RouteTopicResourceId any
-	RoutingEnrichments any
-	RoutingIdentityInfo any
-	State any
+	MaximumSessionExpiryInHours                any
+	RouteTopicResourceId                       any
+	RoutingEnrichments                         any
+	RoutingIdentityInfo                        any
+	State                                      any
 }
 
 type Namespace_Value_Properties_TopicsConfiguration struct {
 	CustomDomains any
-	Hostname any
+	Hostname      any
 }
 
 type Namespace_Value_Properties struct {
-	InboundIpRules any
-	IsZoneRedundant any
-	MinimumTlsVersionAllowed any
+	InboundIpRules             any
+	IsZoneRedundant            any
+	MinimumTlsVersionAllowed   any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	TopicSpacesConfiguration any
-	TopicsConfiguration any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	TopicSpacesConfiguration   any
+	TopicsConfiguration        any
 }
 
 type Namespace_Value_Sku struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
 type Namespace_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type Namespace_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 	SystemData any
 }
 
 type NamespaceConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type NamespaceAttrs struct {
 	ApiVersion any
 	// A link for the next page of namespaces.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// A collection of namespaces.
 	Value any
@@ -135,7 +135,7 @@ type NamespaceAttrs struct {
 var Namespace = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_namespace",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

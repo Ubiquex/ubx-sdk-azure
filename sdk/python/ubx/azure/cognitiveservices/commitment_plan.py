@@ -111,8 +111,6 @@ _CommitmentPlan_SkuFields = {
 
 @dataclasses.dataclass
 class CommitmentPlanConfig:
-    # Resource Etag.
-    etag: Any = None
     # The kind (type) of cognitive service account.
     kind: Any = None
     # The geo-location where the resource lives
@@ -142,7 +140,6 @@ class CommitmentPlanAttrs:
 CommitmentPlan = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_commitment_plan",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "kind": ubx.FieldSpec(wire_name="kind"),
         "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(

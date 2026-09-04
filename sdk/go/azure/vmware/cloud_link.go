@@ -13,10 +13,10 @@ type CloudLink_Properties struct {
 }
 
 var CloudLink_PropertiesFields = ubx.FieldMap{
-		"LinkedCloud": ubx.FieldSpec{WireName: "linked_cloud"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"LinkedCloud":       ubx.FieldSpec{WireName: "linked_cloud"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+}
 
 type CloudLinkConfig struct {
 	// The properties of a cloud link.
@@ -33,8 +33,8 @@ var CloudLink = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CloudLink_PropertiesFields,
+			Kind:     "object",
+			Fields:   CloudLink_PropertiesFields,
 		},
 	},
 }

@@ -9,11 +9,11 @@ type OpenapiResourceMetricDefinition_Value_Properties_MetricAvailabilities struc
 }
 
 type OpenapiResourceMetricDefinition_Value_Properties struct {
-	MetricAvailabilities any
+	MetricAvailabilities   any
 	PrimaryAggregationType any
-	Properties any
-	ResourceUri any
-	Unit any
+	Properties             any
+	ResourceUri            any
+	Unit                   any
 }
 
 type OpenapiResourceMetricDefinition_Value struct {
@@ -22,12 +22,12 @@ type OpenapiResourceMetricDefinition_Value struct {
 
 type OpenapiResourceMetricDefinitionConfig struct {
 	Instance any
-	Name any
+	Name     any
 }
 
 type OpenapiResourceMetricDefinitionAttrs struct {
 	Instance any
-	Name any
+	Name     any
 	// The link to the next page of items
 	NextLink any
 	// The ResourceMetricDefinition items on this page
@@ -38,6 +38,6 @@ var OpenapiResourceMetricDefinition = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_resource_metric_definition",
 	Fields: ubx.FieldMap{
 		"Instance": ubx.FieldSpec{WireName: "instance"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":     ubx.FieldSpec{WireName: "name"},
 	},
 }

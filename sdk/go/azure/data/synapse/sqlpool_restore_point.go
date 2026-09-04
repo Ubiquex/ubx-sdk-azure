@@ -4,14 +4,14 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolRestorePoint_Value_Properties struct {
-	EarliestRestoreDate any
+	EarliestRestoreDate      any
 	RestorePointCreationDate any
-	RestorePointLabel any
-	RestorePointType any
+	RestorePointLabel        any
+	RestorePointType         any
 }
 
 type SqlpoolRestorePoint_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -21,7 +21,7 @@ type SqlpoolRestorePointConfig struct {
 
 type SqlpoolRestorePointAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink    any
 	SqlPoolName any
 	// Array of results.
 	Value any

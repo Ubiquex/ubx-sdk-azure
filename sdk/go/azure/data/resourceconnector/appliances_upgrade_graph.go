@@ -5,14 +5,14 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AppliancesUpgradeGraph_Properties_SupportedVersions_Metadata_CatalogVersion_Data struct {
 	Audience any
-	Catalog any
-	Offer any
-	Version any
+	Catalog  any
+	Offer    any
+	Version  any
 }
 
 type AppliancesUpgradeGraph_Properties_SupportedVersions_Metadata_CatalogVersion struct {
-	Data any
-	Name any
+	Data      any
+	Name      any
 	Namespace any
 }
 
@@ -22,7 +22,7 @@ type AppliancesUpgradeGraph_Properties_SupportedVersions_Metadata struct {
 
 type AppliancesUpgradeGraph_Properties_SupportedVersions struct {
 	Metadata any
-	Version any
+	Version  any
 }
 
 type AppliancesUpgradeGraph_Properties struct {
@@ -43,7 +43,7 @@ type AppliancesUpgradeGraphAttrs struct {
 	// The release train name.
 	Name any
 	// The Upgrade Graph Properties for appliance.
-	Properties any
+	Properties   any
 	ResourceName any
 	UpgradeGraph any
 }

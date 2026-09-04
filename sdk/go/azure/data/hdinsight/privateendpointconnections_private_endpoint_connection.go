@@ -9,23 +9,23 @@ type PrivateendpointconnectionsPrivateEndpointConnection_Value_Properties_Privat
 
 type PrivateendpointconnectionsPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivateendpointconnectionsPrivateEndpointConnection_Value_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type PrivateendpointconnectionsPrivateEndpointConnection_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -35,19 +35,19 @@ type PrivateendpointconnectionsPrivateEndpointConnection_Value struct {
 }
 
 type PrivateendpointconnectionsPrivateEndpointConnectionConfig struct {
-	ApiVersion any
-	ClusterName any
+	ApiVersion        any
+	ClusterName       any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type PrivateendpointconnectionsPrivateEndpointConnectionAttrs struct {
-	ApiVersion any
+	ApiVersion  any
 	ClusterName any
 	// The link (url) to the next page of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The list of private endpoint connections.
 	Value any
 }
@@ -55,9 +55,9 @@ type PrivateendpointconnectionsPrivateEndpointConnectionAttrs struct {
 var PrivateendpointconnectionsPrivateEndpointConnection = ubx.DataSourceBinding{
 	WireType: "azure_hdinsight_privateendpointconnections_private_endpoint_connection",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ClusterName":       ubx.FieldSpec{WireName: "cluster_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

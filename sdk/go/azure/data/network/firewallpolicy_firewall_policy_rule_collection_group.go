@@ -4,20 +4,20 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroup_Value_Properties_RuleCollections struct {
-	Name any
-	Priority any
+	Name               any
+	Priority           any
 	RuleCollectionType any
 }
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroup_Value_Properties struct {
-	Priority any
+	Priority          any
 	ProvisioningState any
-	RuleCollections any
-	Size any
+	RuleCollections   any
+	Size              any
 }
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroup_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

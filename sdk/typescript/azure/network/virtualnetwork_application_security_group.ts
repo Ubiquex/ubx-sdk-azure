@@ -14,8 +14,6 @@ const VirtualnetworkApplicationSecurityGroup_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkApplicationSecurityGroupConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Application security group properties. */
   properties?: VirtualnetworkApplicationSecurityGroup_Properties | Computed<VirtualnetworkApplicationSecurityGroup_Properties>;
 }
@@ -30,7 +28,6 @@ export interface VirtualnetworkApplicationSecurityGroupAttrs {
 export const VirtualnetworkApplicationSecurityGroup: ResourceBinding<VirtualnetworkApplicationSecurityGroupConfig, VirtualnetworkApplicationSecurityGroupAttrs> = {
   wireType: "azure_network_virtualnetwork_application_security_group",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

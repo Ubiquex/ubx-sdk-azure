@@ -4,100 +4,100 @@ package paloaltonetworks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CloudngfwFirewallResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type CloudngfwFirewallResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type CloudngfwFirewallResource_Value_Properties_AssociatedRulestack struct {
-	Location any
-	ResourceId any
+	Location    any
+	ResourceId  any
 	RulestackId any
 }
 
 type CloudngfwFirewallResource_Value_Properties_DnsSettings_DnsServers struct {
-	Address any
+	Address    any
 	ResourceId any
 }
 
 type CloudngfwFirewallResource_Value_Properties_DnsSettings struct {
-	DnsServers any
+	DnsServers     any
 	EnableDnsProxy any
 	EnabledDnsType any
 }
 
 type CloudngfwFirewallResource_Value_Properties_FrontEndSettings_BackendConfiguration struct {
 	Address any
-	Port any
+	Port    any
 }
 
 type CloudngfwFirewallResource_Value_Properties_FrontEndSettings struct {
-	BackendConfiguration any
+	BackendConfiguration  any
 	FrontendConfiguration any
-	Name any
-	Protocol any
+	Name                  any
+	Protocol              any
 }
 
 type CloudngfwFirewallResource_Value_Properties_MarketplaceDetails struct {
-	MarketplaceSubscriptionId any
+	MarketplaceSubscriptionId     any
 	MarketplaceSubscriptionStatus any
-	OfferId any
-	PublisherId any
+	OfferId                       any
+	PublisherId                   any
 }
 
 type CloudngfwFirewallResource_Value_Properties_NetworkProfile_VnetConfiguration_TrustSubnet struct {
 	AddressSpace any
-	ResourceId any
+	ResourceId   any
 }
 
 type CloudngfwFirewallResource_Value_Properties_NetworkProfile_VnetConfiguration struct {
 	IpOfTrustSubnetForUdr any
-	TrustSubnet any
-	UnTrustSubnet any
-	Vnet any
+	TrustSubnet           any
+	UnTrustSubnet         any
+	Vnet                  any
 }
 
 type CloudngfwFirewallResource_Value_Properties_NetworkProfile_VwanConfiguration struct {
-	IpOfTrustSubnetForUdr any
+	IpOfTrustSubnetForUdr     any
 	NetworkVirtualApplianceId any
-	TrustSubnet any
-	UnTrustSubnet any
-	VHub any
+	TrustSubnet               any
+	UnTrustSubnet             any
+	VHub                      any
 }
 
 type CloudngfwFirewallResource_Value_Properties_NetworkProfile struct {
-	EgressNatIp any
-	EnableEgressNat any
-	NetworkType any
+	EgressNatIp                      any
+	EnableEgressNat                  any
+	NetworkType                      any
 	PrivateSourceNatRulesDestination any
-	PublicIps any
-	TrustedRanges any
-	VnetConfiguration any
-	VwanConfiguration any
+	PublicIps                        any
+	TrustedRanges                    any
+	VnetConfiguration                any
+	VwanConfiguration                any
 }
 
 type CloudngfwFirewallResource_Value_Properties_PanoramaConfig struct {
-	CgName any
-	ConfigString any
-	DgName any
-	HostName any
-	PanoramaServer any
+	CgName          any
+	ConfigString    any
+	DgName          any
+	HostName        any
+	PanoramaServer  any
 	PanoramaServer2 any
-	TplName any
-	VmAuthKey any
+	TplName         any
+	VmAuthKey       any
 }
 
 type CloudngfwFirewallResource_Value_Properties_PlanData struct {
-	BillingCycle any
+	BillingCycle  any
 	EffectiveDate any
-	PlanId any
-	UsageType any
+	PlanId        any
+	UsageType     any
 }
 
 type CloudngfwFirewallResource_Value_Properties_StrataCloudManagerConfig struct {
@@ -105,22 +105,22 @@ type CloudngfwFirewallResource_Value_Properties_StrataCloudManagerConfig struct 
 }
 
 type CloudngfwFirewallResource_Value_Properties struct {
-	AssociatedRulestack any
-	DnsSettings any
-	FrontEndSettings any
-	IsPanoramaManaged any
-	IsStrataCloudManaged any
-	MarketplaceDetails any
-	NetworkProfile any
-	PanEtag any
-	PanoramaConfig any
-	PlanData any
-	ProvisioningState any
+	AssociatedRulestack      any
+	DnsSettings              any
+	FrontEndSettings         any
+	IsPanoramaManaged        any
+	IsStrataCloudManaged     any
+	MarketplaceDetails       any
+	NetworkProfile           any
+	PanEtag                  any
+	PanoramaConfig           any
+	PlanData                 any
+	ProvisioningState        any
 	StrataCloudManagerConfig any
 }
 
 type CloudngfwFirewallResource_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -136,6 +136,5 @@ type CloudngfwFirewallResourceAttrs struct {
 
 var CloudngfwFirewallResource = ubx.DataSourceBinding{
 	WireType: "azure_paloaltonetworks_cloudngfw_firewall_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

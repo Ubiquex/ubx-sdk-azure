@@ -4,26 +4,26 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationServiceEnvironment_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type IntegrationServiceEnvironment_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type IntegrationServiceEnvironment_Value_Properties_EncryptionConfiguration_EncryptionKeyReference_KeyVault struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type IntegrationServiceEnvironment_Value_Properties_EncryptionConfiguration_EncryptionKeyReference struct {
-	KeyName any
-	KeyVault any
+	KeyName    any
+	KeyVault   any
 	KeyVersion any
 }
 
@@ -37,12 +37,12 @@ type IntegrationServiceEnvironment_Value_Properties_EndpointsConfiguration_Conne
 
 type IntegrationServiceEnvironment_Value_Properties_EndpointsConfiguration_Connector struct {
 	AccessEndpointIpAddresses any
-	OutgoingIpAddresses any
+	OutgoingIpAddresses       any
 }
 
 type IntegrationServiceEnvironment_Value_Properties_EndpointsConfiguration struct {
 	Connector any
-	Workflow any
+	Workflow  any
 }
 
 type IntegrationServiceEnvironment_Value_Properties_NetworkConfiguration_AccessEndpoint struct {
@@ -50,48 +50,48 @@ type IntegrationServiceEnvironment_Value_Properties_NetworkConfiguration_AccessE
 }
 
 type IntegrationServiceEnvironment_Value_Properties_NetworkConfiguration struct {
-	AccessEndpoint any
-	Subnets any
+	AccessEndpoint             any
+	Subnets                    any
 	VirtualNetworkAddressSpace any
 }
 
 type IntegrationServiceEnvironment_Value_Properties struct {
-	EncryptionConfiguration any
-	EndpointsConfiguration any
+	EncryptionConfiguration         any
+	EndpointsConfiguration          any
 	IntegrationServiceEnvironmentId any
-	NetworkConfiguration any
-	ProvisioningState any
-	State any
+	NetworkConfiguration            any
+	ProvisioningState               any
+	State                           any
 }
 
 type IntegrationServiceEnvironment_Value_Sku struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
 type IntegrationServiceEnvironment_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type IntegrationServiceEnvironmentConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type IntegrationServiceEnvironmentAttrs struct {
 	ApiVersion any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
-	Value any
+	Value          any
 }
 
 var IntegrationServiceEnvironment = ubx.DataSourceBinding{
 	WireType: "azure_logic_integration_service_environment",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -11,7 +11,7 @@ type GenericResource_ExtendedLocation struct {
 }
 
 type GenericResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -55,42 +55,42 @@ type GenericResource_Sku struct {
 }
 
 var GenericResource_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var GenericResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var GenericResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: GenericResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   GenericResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var GenericResource_PlanFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Product": ubx.FieldSpec{WireName: "product"},
-		"PromotionCode": ubx.FieldSpec{WireName: "promotion_code"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Name":          ubx.FieldSpec{WireName: "name"},
+	"Product":       ubx.FieldSpec{WireName: "product"},
+	"PromotionCode": ubx.FieldSpec{WireName: "promotion_code"},
+	"Publisher":     ubx.FieldSpec{WireName: "publisher"},
+	"Version":       ubx.FieldSpec{WireName: "version"},
+}
 
 var GenericResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Model": ubx.FieldSpec{WireName: "model"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Model":    ubx.FieldSpec{WireName: "model"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type GenericResourceConfig struct {
 	// Resource extended location.
@@ -139,27 +139,27 @@ var GenericResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: GenericResource_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   GenericResource_ExtendedLocationFields,
 		},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: GenericResource_IdentityFields,
+			Kind:     "object",
+			Fields:   GenericResource_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"Kind":      ubx.FieldSpec{WireName: "kind"},
+		"Location":  ubx.FieldSpec{WireName: "location"},
 		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Plan": ubx.FieldSpec{
 			WireName: "plan",
-			Kind: "object",
-			Fields: GenericResource_PlanFields,
+			Kind:     "object",
+			Fields:   GenericResource_PlanFields,
 		},
 		"Properties": ubx.FieldSpec{WireName: "properties"},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: GenericResource_SkuFields,
+			Kind:     "object",
+			Fields:   GenericResource_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

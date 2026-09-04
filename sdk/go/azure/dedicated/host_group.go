@@ -13,7 +13,6 @@ type HostGroup_Properties_Hosts struct {
 }
 
 type HostGroup_Properties_InstanceView_Hosts struct {
-	// The name of the dedicated host. (AI-inferred)
 	Name any
 }
 
@@ -26,7 +25,7 @@ type HostGroup_Properties struct {
 	// Enables or disables a capability on the dedicated host group. Minimum api-version: 2022-03-01.
 	AdditionalCapabilities any
 	// A list of references to all dedicated hosts in the dedicated host group.
-	Hosts any
+	Hosts        any
 	InstanceView any
 	// Number of fault domains that the host group can span.
 	PlatformFaultDomainCount any
@@ -35,44 +34,44 @@ type HostGroup_Properties struct {
 }
 
 var HostGroup_Properties_AdditionalCapabilitiesFields = ubx.FieldMap{
-		"UltraSsdenabled": ubx.FieldSpec{WireName: "ultra_ssdenabled"},
-	}
+	"UltraSsdenabled": ubx.FieldSpec{WireName: "ultra_ssdenabled"},
+}
 
 var HostGroup_Properties_HostsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var HostGroup_Properties_InstanceView_HostsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var HostGroup_Properties_InstanceViewFields = ubx.FieldMap{
-		"Hosts": ubx.FieldSpec{
-			WireName: "hosts",
-			Kind: "list",
-			Fields: HostGroup_Properties_InstanceView_HostsFields,
-		},
-	}
+	"Hosts": ubx.FieldSpec{
+		WireName: "hosts",
+		Kind:     "list",
+		Fields:   HostGroup_Properties_InstanceView_HostsFields,
+	},
+}
 
 var HostGroup_PropertiesFields = ubx.FieldMap{
-		"AdditionalCapabilities": ubx.FieldSpec{
-			WireName: "additional_capabilities",
-			Kind: "object",
-			Fields: HostGroup_Properties_AdditionalCapabilitiesFields,
-		},
-		"Hosts": ubx.FieldSpec{
-			WireName: "hosts",
-			Kind: "list",
-			Fields: HostGroup_Properties_HostsFields,
-		},
-		"InstanceView": ubx.FieldSpec{
-			WireName: "instance_view",
-			Kind: "object",
-			Fields: HostGroup_Properties_InstanceViewFields,
-		},
-		"PlatformFaultDomainCount": ubx.FieldSpec{WireName: "platform_fault_domain_count"},
-		"SupportAutomaticPlacement": ubx.FieldSpec{WireName: "support_automatic_placement"},
-	}
+	"AdditionalCapabilities": ubx.FieldSpec{
+		WireName: "additional_capabilities",
+		Kind:     "object",
+		Fields:   HostGroup_Properties_AdditionalCapabilitiesFields,
+	},
+	"Hosts": ubx.FieldSpec{
+		WireName: "hosts",
+		Kind:     "list",
+		Fields:   HostGroup_Properties_HostsFields,
+	},
+	"InstanceView": ubx.FieldSpec{
+		WireName: "instance_view",
+		Kind:     "object",
+		Fields:   HostGroup_Properties_InstanceViewFields,
+	},
+	"PlatformFaultDomainCount":  ubx.FieldSpec{WireName: "platform_fault_domain_count"},
+	"SupportAutomaticPlacement": ubx.FieldSpec{WireName: "support_automatic_placement"},
+}
 
 type HostGroupConfig struct {
 	// Dedicated Host Group Properties.
@@ -93,8 +92,8 @@ var HostGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HostGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   HostGroup_PropertiesFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

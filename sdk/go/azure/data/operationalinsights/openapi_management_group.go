@@ -4,14 +4,14 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagementGroup_Value_Properties struct {
-	Created any
+	Created      any
 	DataReceived any
-	Id any
-	IsGateway any
-	Name any
-	ServerCount any
-	Sku any
-	Version any
+	Id           any
+	IsGateway    any
+	Name         any
+	ServerCount  any
+	Sku          any
+	Version      any
 }
 
 type OpenapiManagementGroup_Value struct {
@@ -26,7 +26,7 @@ type OpenapiManagementGroupAttrs struct {
 	// The URL to get the next set of results.
 	NextLink any
 	// Gets or sets a list of management groups attached to the workspace.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

@@ -4,17 +4,17 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_Artifacts_Parameters struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_Artifacts struct {
-	ArtifactId any
-	ArtifactTitle any
-	DeploymentStatusMessage any
-	InstallTime any
-	Parameters any
-	Status any
+	ArtifactId               any
+	ArtifactTitle            any
+	DeploymentStatusMessage  any
+	InstallTime              any
+	Parameters               any
+	Status                   any
 	VmExtensionStatusMessage any
 }
 
@@ -23,28 +23,28 @@ type DtlFormula_Value_Properties_FormulaContent_Properties_BulkCreationParameter
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_DataDiskParameters_AttachNewDataDiskOptions struct {
-	DiskName any
+	DiskName    any
 	DiskSizeGiB any
-	DiskType any
+	DiskType    any
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_DataDiskParameters struct {
 	AttachNewDataDiskOptions any
-	ExistingLabDiskId any
-	HostCaching any
+	ExistingLabDiskId        any
+	HostCaching              any
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_GalleryImageReference struct {
-	Offer any
-	OsType any
+	Offer     any
+	OsType    any
 	Publisher any
-	Sku any
-	Version any
+	Sku       any
+	Version   any
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_NetworkInterface_SharedPublicIpAddressConfiguration_InboundNatRules struct {
-	BackendPort any
-	FrontendPort any
+	BackendPort       any
+	FrontendPort      any
 	TransportProtocol any
 }
 
@@ -53,15 +53,15 @@ type DtlFormula_Value_Properties_FormulaContent_Properties_NetworkInterface_Shar
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_NetworkInterface struct {
-	DnsName any
-	PrivateIpAddress any
-	PublicIpAddress any
-	PublicIpAddressId any
-	RdpAuthority any
+	DnsName                            any
+	PrivateIpAddress                   any
+	PublicIpAddress                    any
+	PublicIpAddressId                  any
+	RdpAuthority                       any
 	SharedPublicIpAddressConfiguration any
-	SshAuthority any
-	SubnetId any
-	VirtualNetworkId any
+	SshAuthority                       any
+	SubnetId                           any
+	VirtualNetworkId                   any
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_ScheduleParameters_Properties_DailyRecurrence struct {
@@ -73,68 +73,68 @@ type DtlFormula_Value_Properties_FormulaContent_Properties_ScheduleParameters_Pr
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_ScheduleParameters_Properties_NotificationSettings struct {
-	EmailRecipient any
+	EmailRecipient     any
 	NotificationLocale any
-	Status any
-	TimeInMinutes any
-	WebhookUrl any
+	Status             any
+	TimeInMinutes      any
+	WebhookUrl         any
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_ScheduleParameters_Properties_WeeklyRecurrence struct {
-	Time any
+	Time     any
 	Weekdays any
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_ScheduleParameters_Properties struct {
-	DailyRecurrence any
-	HourlyRecurrence any
+	DailyRecurrence      any
+	HourlyRecurrence     any
 	NotificationSettings any
-	Status any
-	TargetResourceId any
-	TaskType any
-	TimeZoneId any
-	WeeklyRecurrence any
+	Status               any
+	TargetResourceId     any
+	TaskType             any
+	TimeZoneId           any
+	WeeklyRecurrence     any
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties_ScheduleParameters struct {
-	Location any
-	Name any
+	Location   any
+	Name       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlFormula_Value_Properties_FormulaContent_Properties struct {
-	AllowClaim any
-	Artifacts any
-	BulkCreationParameters any
-	CreatedDate any
-	CustomImageId any
-	DataDiskParameters any
-	DisallowPublicIpAddress any
-	EnvironmentId any
-	ExpirationDate any
-	GalleryImageReference any
+	AllowClaim                 any
+	Artifacts                  any
+	BulkCreationParameters     any
+	CreatedDate                any
+	CustomImageId              any
+	DataDiskParameters         any
+	DisallowPublicIpAddress    any
+	EnvironmentId              any
+	ExpirationDate             any
+	GalleryImageReference      any
 	IsAuthenticationWithSshKey any
-	LabSubnetName any
-	LabVirtualNetworkId any
-	NetworkInterface any
-	Notes any
-	OwnerObjectId any
-	OwnerUserPrincipalName any
-	Password any
-	PlanId any
-	ScheduleParameters any
-	Size any
-	SshKey any
-	StorageType any
-	UserName any
+	LabSubnetName              any
+	LabVirtualNetworkId        any
+	NetworkInterface           any
+	Notes                      any
+	OwnerObjectId              any
+	OwnerUserPrincipalName     any
+	Password                   any
+	PlanId                     any
+	ScheduleParameters         any
+	Size                       any
+	SshKey                     any
+	StorageType                any
+	UserName                   any
 }
 
 type DtlFormula_Value_Properties_FormulaContent struct {
-	Location any
-	Name any
+	Location   any
+	Name       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlFormula_Value_Properties_Vm struct {
@@ -142,20 +142,20 @@ type DtlFormula_Value_Properties_Vm struct {
 }
 
 type DtlFormula_Value_Properties struct {
-	Author any
-	CreationDate any
-	Description any
-	FormulaContent any
-	OsType any
+	Author            any
+	CreationDate      any
+	Description       any
+	FormulaContent    any
+	OsType            any
 	ProvisioningState any
-	UniqueIdentifier any
-	Vm any
+	UniqueIdentifier  any
+	Vm                any
 }
 
 type DtlFormula_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlFormulaConfig struct {

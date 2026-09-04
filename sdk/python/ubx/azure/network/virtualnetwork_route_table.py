@@ -11947,8 +11947,6 @@ _VirtualnetworkRouteTable_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkRouteTableConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Route Table resource.
     properties: Any = None
 
@@ -11962,7 +11960,6 @@ class VirtualnetworkRouteTableAttrs:
 VirtualnetworkRouteTable = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_route_table",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

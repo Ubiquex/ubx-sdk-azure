@@ -4,10 +4,10 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SubvolumeInfo_Value_Properties struct {
-	ParentPath any
-	Path any
+	ParentPath        any
+	Path              any
 	ProvisioningState any
-	Size any
+	Size              any
 }
 
 type SubvolumeInfo_Value struct {
@@ -16,8 +16,8 @@ type SubvolumeInfo_Value struct {
 
 type SubvolumeInfoConfig struct {
 	AccountName any
-	PoolName any
-	VolumeName any
+	PoolName    any
+	VolumeName  any
 }
 
 type SubvolumeInfoAttrs struct {
@@ -26,7 +26,7 @@ type SubvolumeInfoAttrs struct {
 	NextLink any
 	PoolName any
 	// The SubvolumeInfo items on this page
-	Value any
+	Value      any
 	VolumeName any
 }
 
@@ -34,7 +34,7 @@ var SubvolumeInfo = ubx.DataSourceBinding{
 	WireType: "azure_netapp_subvolume_info",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PoolName": ubx.FieldSpec{WireName: "pool_name"},
-		"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
+		"PoolName":    ubx.FieldSpec{WireName: "pool_name"},
+		"VolumeName":  ubx.FieldSpec{WireName: "volume_name"},
 	},
 }

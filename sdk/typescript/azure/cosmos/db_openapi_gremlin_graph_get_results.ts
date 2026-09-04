@@ -116,6 +116,12 @@ export interface DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPo
 }
 
 export interface DbOpenapiGremlinGraphGetResults_Properties_Resource {
+  /** A system generated property representing the resource etag required for optimistic concurrency control. */
+  etag?: string | Computed<string>;
+  /** A system generated property. A unique identifier. */
+  rid?: string | Computed<string>;
+  /** A system generated property that denotes the last updated timestamp of the resource. */
+  ts?: number | Computed<number>;
   /** Analytical TTL. */
   analyticalStorageTtl?: number | Computed<number>;
   /** The conflict resolution policy for the container. */
@@ -251,6 +257,9 @@ const DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicyFields:
 };
 
 const DbOpenapiGremlinGraphGetResults_Properties_ResourceFields: FieldMap = {
+  etag: "_etag",
+  rid: "_rid",
+  ts: "_ts",
   analyticalStorageTtl: "analytical_storage_ttl",
   conflictResolutionPolicy: {
     wireName: "conflict_resolution_policy",

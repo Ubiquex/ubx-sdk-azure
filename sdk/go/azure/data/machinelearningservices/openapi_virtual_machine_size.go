@@ -4,29 +4,29 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiVirtualMachineSize_Value_EstimatedVmprices_Values struct {
-	OsType any
+	OsType      any
 	RetailPrice any
-	VmTier any
+	VmTier      any
 }
 
 type OpenapiVirtualMachineSize_Value_EstimatedVmprices struct {
 	BillingCurrency any
-	UnitOfMeasure any
-	Values any
+	UnitOfMeasure   any
+	Values          any
 }
 
 type OpenapiVirtualMachineSize_Value struct {
-	EstimatedVmprices any
-	Family any
-	Gpus any
-	LowPriorityCapable any
-	MaxResourceVolumeMb any
-	MemoryGb any
-	Name any
-	OsVhdSizeMb any
-	PremiumIo any
+	EstimatedVmprices     any
+	Family                any
+	Gpus                  any
+	LowPriorityCapable    any
+	MaxResourceVolumeMb   any
+	MemoryGb              any
+	Name                  any
+	OsVhdSizeMb           any
+	PremiumIo             any
 	SupportedComputeTypes any
-	VCpus any
+	VCpus                 any
 }
 
 type OpenapiVirtualMachineSizeConfig struct {

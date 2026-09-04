@@ -15,11 +15,11 @@ type DbOpenapiGremlinRoleAssignmentResource_Properties struct {
 }
 
 var DbOpenapiGremlinRoleAssignmentResource_PropertiesFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"PrincipalId":       ubx.FieldSpec{WireName: "principal_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RoleDefinitionId":  ubx.FieldSpec{WireName: "role_definition_id"},
+	"Scope":             ubx.FieldSpec{WireName: "scope"},
+}
 
 type DbOpenapiGremlinRoleAssignmentResourceConfig struct {
 	// Azure Cosmos DB Gremlin Role Assignment resource object.
@@ -36,8 +36,8 @@ var DbOpenapiGremlinRoleAssignmentResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiGremlinRoleAssignmentResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiGremlinRoleAssignmentResource_PropertiesFields,
 		},
 	},
 }

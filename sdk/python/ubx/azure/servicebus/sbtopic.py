@@ -93,8 +93,6 @@ _Sbtopic_PropertiesFields = {
 
 @dataclasses.dataclass
 class SbtopicConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # The Topic Properties definition.
     properties: Any = None
 
@@ -108,7 +106,6 @@ class SbtopicAttrs:
 Sbtopic = ubx.ResourceBinding(
     wire_type="azure_servicebus_sbtopic",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

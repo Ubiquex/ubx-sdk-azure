@@ -12631,8 +12631,6 @@ _VirtualnetworkPrivateEndpoint_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkPrivateEndpointConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
     # Properties of the private endpoint.
@@ -12650,7 +12648,6 @@ class VirtualnetworkPrivateEndpointAttrs:
 VirtualnetworkPrivateEndpoint = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_private_endpoint",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "extended_location": ubx.FieldSpec(
             wire_name="extended_location",
             kind="object",

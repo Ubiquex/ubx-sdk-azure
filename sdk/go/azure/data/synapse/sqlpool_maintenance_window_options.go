@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolMaintenanceWindowOptions_Properties_MaintenanceWindowCycles struct {
 	DayOfWeek any
-	Duration any
+	Duration  any
 	StartTime any
 }
 
@@ -28,13 +28,13 @@ type SqlpoolMaintenanceWindowOptions_Properties struct {
 
 type SqlpoolMaintenanceWindowOptionsConfig struct {
 	MaintenanceWindowOptionsName any
-	SqlPoolName any
+	SqlPoolName                  any
 }
 
 type SqlpoolMaintenanceWindowOptionsAttrs struct {
 	MaintenanceWindowOptionsName any
 	// Maintenance window options properties.
-	Properties any
+	Properties  any
 	SqlPoolName any
 }
 
@@ -42,6 +42,6 @@ var SqlpoolMaintenanceWindowOptions = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_maintenance_window_options",
 	Fields: ubx.FieldMap{
 		"MaintenanceWindowOptionsName": ubx.FieldSpec{WireName: "maintenance_window_options_name"},
-		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
+		"SqlPoolName":                  ubx.FieldSpec{WireName: "sql_pool_name"},
 	},
 }

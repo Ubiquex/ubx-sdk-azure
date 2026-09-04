@@ -3,96 +3,155 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type ServiceRecoveryPlan_Properties_CurrentScenario struct {
+	// ARM Id of the job being executed.
+	JobId any
+	// Scenario name.
+	ScenarioName any
+	// Start time of the workflow.
+	StartTime any
+}
+
 type ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetails struct {
 	InstanceType any
 }
 
 type ServiceRecoveryPlan_Properties_Groups_EndGroupActions struct {
-	ActionName any
-	CustomDetails any
+	ActionName         any
+	CustomDetails      any
 	FailoverDirections any
-	FailoverTypes any
+	FailoverTypes      any
 }
 
 type ServiceRecoveryPlan_Properties_Groups_ReplicationProtectedItems struct {
-	Id any
+	Id               any
 	VirtualMachineId any
 }
 
 type ServiceRecoveryPlan_Properties_Groups struct {
-	EndGroupActions any
-	GroupType any
+	EndGroupActions           any
+	GroupType                 any
 	ReplicationProtectedItems any
-	StartGroupActions any
+	StartGroupActions         any
 }
 
 type ServiceRecoveryPlan_Properties struct {
+	// The list of allowed operations.
+	AllowedOperations any
+	// Current scenario details of the protected entity.
+	CurrentScenario any
+	// The recovery plan status.
+	CurrentScenarioStatus any
+	// The recovery plan status description.
+	CurrentScenarioStatusDescription any
 	// The failover deployment model.
 	FailoverDeploymentModel any
+	// The friendly name.
+	FriendlyName any
 	// The recovery plan groups.
 	Groups any
+	// The start time of the last planned failover.
+	LastPlannedFailoverTime any
+	// The start time of the last test failover.
+	LastTestFailoverTime any
+	// The start time of the last unplanned failover.
+	LastUnplannedFailoverTime any
+	// The primary fabric friendly name.
+	PrimaryFabricFriendlyName any
 	// The primary fabric Id.
 	PrimaryFabricId any
+	// The provider id and provider specific details.
+	ProviderSpecificDetails any
 	// The provider specific input.
 	ProviderSpecificInput any
+	// The recovery fabric friendly name.
+	RecoveryFabricFriendlyName any
 	// The recovery fabric Id.
 	RecoveryFabricId any
+	// The list of replication providers.
+	ReplicationProviders any
+}
+
+var ServiceRecoveryPlan_Properties_CurrentScenarioFields = ubx.FieldMap{
+	"JobId":        ubx.FieldSpec{WireName: "job_id"},
+	"ScenarioName": ubx.FieldSpec{WireName: "scenario_name"},
+	"StartTime":    ubx.FieldSpec{WireName: "start_time"},
 }
 
 var ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetailsFields = ubx.FieldMap{
-		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-	}
+	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+}
 
 var ServiceRecoveryPlan_Properties_Groups_EndGroupActionsFields = ubx.FieldMap{
-		"ActionName": ubx.FieldSpec{WireName: "action_name"},
-		"CustomDetails": ubx.FieldSpec{
-			WireName: "custom_details",
-			Kind: "object",
-			Fields: ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetailsFields,
-		},
-		"FailoverDirections": ubx.FieldSpec{WireName: "failover_directions"},
-		"FailoverTypes": ubx.FieldSpec{WireName: "failover_types"},
-	}
+	"ActionName": ubx.FieldSpec{WireName: "action_name"},
+	"CustomDetails": ubx.FieldSpec{
+		WireName: "custom_details",
+		Kind:     "object",
+		Fields:   ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetailsFields,
+	},
+	"FailoverDirections": ubx.FieldSpec{WireName: "failover_directions"},
+	"FailoverTypes":      ubx.FieldSpec{WireName: "failover_types"},
+}
 
 var ServiceRecoveryPlan_Properties_Groups_ReplicationProtectedItemsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"VirtualMachineId": ubx.FieldSpec{WireName: "virtual_machine_id"},
-	}
+	"Id":               ubx.FieldSpec{WireName: "id"},
+	"VirtualMachineId": ubx.FieldSpec{WireName: "virtual_machine_id"},
+}
 
 var ServiceRecoveryPlan_Properties_GroupsFields = ubx.FieldMap{
-		"EndGroupActions": ubx.FieldSpec{
-			WireName: "end_group_actions",
-			Kind: "list",
-			Fields: ServiceRecoveryPlan_Properties_Groups_EndGroupActionsFields,
-		},
-		"GroupType": ubx.FieldSpec{WireName: "group_type"},
-		"ReplicationProtectedItems": ubx.FieldSpec{
-			WireName: "replication_protected_items",
-			Kind: "list",
-			Fields: ServiceRecoveryPlan_Properties_Groups_ReplicationProtectedItemsFields,
-		},
-		"StartGroupActions": ubx.FieldSpec{
-			WireName: "start_group_actions",
-			Kind: "list",
-			Fields: ServiceRecoveryPlan_Properties_Groups_EndGroupActionsFields,
-		},
-	}
+	"EndGroupActions": ubx.FieldSpec{
+		WireName: "end_group_actions",
+		Kind:     "list",
+		Fields:   ServiceRecoveryPlan_Properties_Groups_EndGroupActionsFields,
+	},
+	"GroupType": ubx.FieldSpec{WireName: "group_type"},
+	"ReplicationProtectedItems": ubx.FieldSpec{
+		WireName: "replication_protected_items",
+		Kind:     "list",
+		Fields:   ServiceRecoveryPlan_Properties_Groups_ReplicationProtectedItemsFields,
+	},
+	"StartGroupActions": ubx.FieldSpec{
+		WireName: "start_group_actions",
+		Kind:     "list",
+		Fields:   ServiceRecoveryPlan_Properties_Groups_EndGroupActionsFields,
+	},
+}
 
 var ServiceRecoveryPlan_PropertiesFields = ubx.FieldMap{
-		"FailoverDeploymentModel": ubx.FieldSpec{WireName: "failover_deployment_model"},
-		"Groups": ubx.FieldSpec{
-			WireName: "groups",
-			Kind: "list",
-			Fields: ServiceRecoveryPlan_Properties_GroupsFields,
-		},
-		"PrimaryFabricId": ubx.FieldSpec{WireName: "primary_fabric_id"},
-		"ProviderSpecificInput": ubx.FieldSpec{
-			WireName: "provider_specific_input",
-			Kind: "list",
-			Fields: ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetailsFields,
-		},
-		"RecoveryFabricId": ubx.FieldSpec{WireName: "recovery_fabric_id"},
-	}
+	"AllowedOperations": ubx.FieldSpec{WireName: "allowed_operations"},
+	"CurrentScenario": ubx.FieldSpec{
+		WireName: "current_scenario",
+		Kind:     "object",
+		Fields:   ServiceRecoveryPlan_Properties_CurrentScenarioFields,
+	},
+	"CurrentScenarioStatus":            ubx.FieldSpec{WireName: "current_scenario_status"},
+	"CurrentScenarioStatusDescription": ubx.FieldSpec{WireName: "current_scenario_status_description"},
+	"FailoverDeploymentModel":          ubx.FieldSpec{WireName: "failover_deployment_model"},
+	"FriendlyName":                     ubx.FieldSpec{WireName: "friendly_name"},
+	"Groups": ubx.FieldSpec{
+		WireName: "groups",
+		Kind:     "list",
+		Fields:   ServiceRecoveryPlan_Properties_GroupsFields,
+	},
+	"LastPlannedFailoverTime":   ubx.FieldSpec{WireName: "last_planned_failover_time"},
+	"LastTestFailoverTime":      ubx.FieldSpec{WireName: "last_test_failover_time"},
+	"LastUnplannedFailoverTime": ubx.FieldSpec{WireName: "last_unplanned_failover_time"},
+	"PrimaryFabricFriendlyName": ubx.FieldSpec{WireName: "primary_fabric_friendly_name"},
+	"PrimaryFabricId":           ubx.FieldSpec{WireName: "primary_fabric_id"},
+	"ProviderSpecificDetails": ubx.FieldSpec{
+		WireName: "provider_specific_details",
+		Kind:     "list",
+		Fields:   ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetailsFields,
+	},
+	"ProviderSpecificInput": ubx.FieldSpec{
+		WireName: "provider_specific_input",
+		Kind:     "list",
+		Fields:   ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetailsFields,
+	},
+	"RecoveryFabricFriendlyName": ubx.FieldSpec{WireName: "recovery_fabric_friendly_name"},
+	"RecoveryFabricId":           ubx.FieldSpec{WireName: "recovery_fabric_id"},
+	"ReplicationProviders":       ubx.FieldSpec{WireName: "replication_providers"},
+}
 
 type ServiceRecoveryPlanConfig struct {
 	// Recovery plan creation properties.
@@ -111,8 +170,8 @@ var ServiceRecoveryPlan = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceRecoveryPlan_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceRecoveryPlan_PropertiesFields,
 		},
 	},
 }

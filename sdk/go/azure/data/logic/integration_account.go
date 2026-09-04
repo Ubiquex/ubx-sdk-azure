@@ -4,14 +4,14 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationAccount_Value_Properties_IntegrationServiceEnvironment struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type IntegrationAccount_Value_Properties struct {
 	IntegrationServiceEnvironment any
-	State any
+	State                         any
 }
 
 type IntegrationAccount_Value_Sku struct {
@@ -20,18 +20,18 @@ type IntegrationAccount_Value_Sku struct {
 
 type IntegrationAccount_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type IntegrationAccountConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type IntegrationAccountAttrs struct {
 	ApiVersion any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The list of integration accounts.
 	Value any
@@ -40,7 +40,7 @@ type IntegrationAccountAttrs struct {
 var IntegrationAccount = ubx.DataSourceBinding{
 	WireType: "azure_logic_integration_account",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

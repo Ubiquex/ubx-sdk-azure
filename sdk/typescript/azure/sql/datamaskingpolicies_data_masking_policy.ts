@@ -20,10 +20,6 @@ const DatamaskingpoliciesDataMaskingPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface DatamaskingpoliciesDataMaskingPolicyConfig {
-  /** The kind of Data Masking Policy. Metadata, used for Azure portal. */
-  kind?: string | Computed<string>;
-  /** The location of the data masking policy. */
-  location?: string | Computed<string>;
   /** The properties of a database data masking policy. */
   properties?: DatamaskingpoliciesDataMaskingPolicy_Properties | Computed<DatamaskingpoliciesDataMaskingPolicy_Properties>;
 }
@@ -40,8 +36,6 @@ export interface DatamaskingpoliciesDataMaskingPolicyAttrs {
 export const DatamaskingpoliciesDataMaskingPolicy: ResourceBinding<DatamaskingpoliciesDataMaskingPolicyConfig, DatamaskingpoliciesDataMaskingPolicyAttrs> = {
   wireType: "azure_sql_datamaskingpolicies_data_masking_policy",
   fields: {
-    kind: "kind",
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

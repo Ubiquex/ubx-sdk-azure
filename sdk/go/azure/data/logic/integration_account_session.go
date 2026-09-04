@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationAccountSession_Value_Properties struct {
 	ChangedTime any
-	Content any
+	Content     any
 	CreatedTime any
 }
 
@@ -14,19 +14,19 @@ type IntegrationAccountSession_Value struct {
 }
 
 type IntegrationAccountSessionConfig struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
-	ResourceGroupName any
-	SubscriptionId any
+	ResourceGroupName      any
+	SubscriptionId         any
 }
 
 type IntegrationAccountSessionAttrs struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The list of integration account sessions.
 	Value any
 }
@@ -34,9 +34,9 @@ type IntegrationAccountSessionAttrs struct {
 var IntegrationAccountSession = ubx.DataSourceBinding{
 	WireType: "azure_logic_integration_account_session",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":             ubx.FieldSpec{WireName: "api_version"},
 		"IntegrationAccountName": ubx.FieldSpec{WireName: "integration_account_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":      ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":         ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

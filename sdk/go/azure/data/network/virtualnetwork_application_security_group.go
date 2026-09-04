@@ -5,11 +5,11 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkApplicationSecurityGroup_Value_Properties struct {
 	ProvisioningState any
-	ResourceGuid any
+	ResourceGuid      any
 }
 
 type VirtualnetworkApplicationSecurityGroup_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -25,6 +25,5 @@ type VirtualnetworkApplicationSecurityGroupAttrs struct {
 
 var VirtualnetworkApplicationSecurityGroup = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_application_security_group",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

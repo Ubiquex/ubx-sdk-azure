@@ -9,12 +9,10 @@ type AuthorizationRule_Properties struct {
 }
 
 var AuthorizationRule_PropertiesFields = ubx.FieldMap{
-		"Rights": ubx.FieldSpec{WireName: "rights"},
-	}
+	"Rights": ubx.FieldSpec{WireName: "rights"},
+}
 
 type AuthorizationRuleConfig struct {
-	// The geo-location where the resource lives
-	Location any
 	// Properties supplied to create or update AuthorizationRule
 	Properties any
 }
@@ -29,11 +27,10 @@ type AuthorizationRuleAttrs struct {
 var AuthorizationRule = ubx.ResourceBinding{
 	WireType: "azure_relay_authorization_rule",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AuthorizationRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   AuthorizationRule_PropertiesFields,
 		},
 	},
 }

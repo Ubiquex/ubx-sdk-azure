@@ -85,8 +85,6 @@ const VirtualnetworkCustomIpPrefix_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkCustomIpPrefixConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkCustomIpPrefix_ExtendedLocation | Computed<VirtualnetworkCustomIpPrefix_ExtendedLocation>;
   /** Custom IP prefix properties. */
@@ -109,7 +107,6 @@ export interface VirtualnetworkCustomIpPrefixAttrs {
 export const VirtualnetworkCustomIpPrefix: ResourceBinding<VirtualnetworkCustomIpPrefixConfig, VirtualnetworkCustomIpPrefixAttrs> = {
   wireType: "azure_network_virtualnetwork_custom_ip_prefix",
   fields: {
-    etag: "etag",
     extendedLocation: {
       wireName: "extended_location",
       kind: "object",

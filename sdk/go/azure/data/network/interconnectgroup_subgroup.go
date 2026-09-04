@@ -8,10 +8,10 @@ type InterconnectgroupSubgroup_Value_Properties_InterconnectBlock struct {
 }
 
 type InterconnectgroupSubgroup_Value_Properties struct {
-	InterconnectBlock any
+	InterconnectBlock  any
 	InternalSubgroupId any
-	ProvisioningState any
-	VirtualMachines any
+	ProvisioningState  any
+	VirtualMachines    any
 }
 
 type InterconnectgroupSubgroup_Value struct {

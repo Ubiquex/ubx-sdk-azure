@@ -215,10 +215,6 @@ const VirtualwanVirtualHub_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanVirtualHubConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
-  /** Kind of service virtual hub. This is metadata used for the Azure portal experience for Route Server. */
-  kind?: string | Computed<string>;
   /** Parameters for VirtualHub. */
   properties?: VirtualwanVirtualHub_Properties | Computed<VirtualwanVirtualHub_Properties>;
 }
@@ -235,8 +231,6 @@ export interface VirtualwanVirtualHubAttrs {
 export const VirtualwanVirtualHub: ResourceBinding<VirtualwanVirtualHubConfig, VirtualwanVirtualHubAttrs> = {
   wireType: "azure_network_virtualwan_virtual_hub",
   fields: {
-    etag: "etag",
-    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -49,76 +49,76 @@ type ApimportalconfigsPortalConfigContract2_Properties struct {
 	// The developer portal Cross-Origin Resource Sharing (CORS) settings.
 	Cors any
 	// The developer portal Content Security Policy (CSP) settings.
-	Csp any
+	Csp        any
 	Delegation any
 	// Enable or disable Basic authentication method.
 	EnableBasicAuth any
-	Signin any
-	Signup any
+	Signin          any
+	Signup          any
 }
 
 var ApimportalconfigsPortalConfigContract2_Properties_CorsFields = ubx.FieldMap{
-		"AllowedOrigins": ubx.FieldSpec{WireName: "allowed_origins"},
-	}
+	"AllowedOrigins": ubx.FieldSpec{WireName: "allowed_origins"},
+}
 
 var ApimportalconfigsPortalConfigContract2_Properties_CspFields = ubx.FieldMap{
-		"AllowedSources": ubx.FieldSpec{WireName: "allowed_sources"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"ReportUri": ubx.FieldSpec{WireName: "report_uri"},
-	}
+	"AllowedSources": ubx.FieldSpec{WireName: "allowed_sources"},
+	"Mode":           ubx.FieldSpec{WireName: "mode"},
+	"ReportUri":      ubx.FieldSpec{WireName: "report_uri"},
+}
 
 var ApimportalconfigsPortalConfigContract2_Properties_DelegationFields = ubx.FieldMap{
-		"DelegateRegistration": ubx.FieldSpec{WireName: "delegate_registration"},
-		"DelegateSubscription": ubx.FieldSpec{WireName: "delegate_subscription"},
-		"DelegationUrl": ubx.FieldSpec{WireName: "delegation_url"},
-		"ValidationKey": ubx.FieldSpec{WireName: "validation_key"},
-	}
+	"DelegateRegistration": ubx.FieldSpec{WireName: "delegate_registration"},
+	"DelegateSubscription": ubx.FieldSpec{WireName: "delegate_subscription"},
+	"DelegationUrl":        ubx.FieldSpec{WireName: "delegation_url"},
+	"ValidationKey":        ubx.FieldSpec{WireName: "validation_key"},
+}
 
 var ApimportalconfigsPortalConfigContract2_Properties_SigninFields = ubx.FieldMap{
-		"Require": ubx.FieldSpec{WireName: "require"},
-	}
+	"Require": ubx.FieldSpec{WireName: "require"},
+}
 
 var ApimportalconfigsPortalConfigContract2_Properties_Signup_TermsOfServiceFields = ubx.FieldMap{
-		"RequireConsent": ubx.FieldSpec{WireName: "require_consent"},
-		"Text": ubx.FieldSpec{WireName: "text"},
-	}
+	"RequireConsent": ubx.FieldSpec{WireName: "require_consent"},
+	"Text":           ubx.FieldSpec{WireName: "text"},
+}
 
 var ApimportalconfigsPortalConfigContract2_Properties_SignupFields = ubx.FieldMap{
-		"TermsOfService": ubx.FieldSpec{
-			WireName: "terms_of_service",
-			Kind: "object",
-			Fields: ApimportalconfigsPortalConfigContract2_Properties_Signup_TermsOfServiceFields,
-		},
-	}
+	"TermsOfService": ubx.FieldSpec{
+		WireName: "terms_of_service",
+		Kind:     "object",
+		Fields:   ApimportalconfigsPortalConfigContract2_Properties_Signup_TermsOfServiceFields,
+	},
+}
 
 var ApimportalconfigsPortalConfigContract2_PropertiesFields = ubx.FieldMap{
-		"Cors": ubx.FieldSpec{
-			WireName: "cors",
-			Kind: "object",
-			Fields: ApimportalconfigsPortalConfigContract2_Properties_CorsFields,
-		},
-		"Csp": ubx.FieldSpec{
-			WireName: "csp",
-			Kind: "object",
-			Fields: ApimportalconfigsPortalConfigContract2_Properties_CspFields,
-		},
-		"Delegation": ubx.FieldSpec{
-			WireName: "delegation",
-			Kind: "object",
-			Fields: ApimportalconfigsPortalConfigContract2_Properties_DelegationFields,
-		},
-		"EnableBasicAuth": ubx.FieldSpec{WireName: "enable_basic_auth"},
-		"Signin": ubx.FieldSpec{
-			WireName: "signin",
-			Kind: "object",
-			Fields: ApimportalconfigsPortalConfigContract2_Properties_SigninFields,
-		},
-		"Signup": ubx.FieldSpec{
-			WireName: "signup",
-			Kind: "object",
-			Fields: ApimportalconfigsPortalConfigContract2_Properties_SignupFields,
-		},
-	}
+	"Cors": ubx.FieldSpec{
+		WireName: "cors",
+		Kind:     "object",
+		Fields:   ApimportalconfigsPortalConfigContract2_Properties_CorsFields,
+	},
+	"Csp": ubx.FieldSpec{
+		WireName: "csp",
+		Kind:     "object",
+		Fields:   ApimportalconfigsPortalConfigContract2_Properties_CspFields,
+	},
+	"Delegation": ubx.FieldSpec{
+		WireName: "delegation",
+		Kind:     "object",
+		Fields:   ApimportalconfigsPortalConfigContract2_Properties_DelegationFields,
+	},
+	"EnableBasicAuth": ubx.FieldSpec{WireName: "enable_basic_auth"},
+	"Signin": ubx.FieldSpec{
+		WireName: "signin",
+		Kind:     "object",
+		Fields:   ApimportalconfigsPortalConfigContract2_Properties_SigninFields,
+	},
+	"Signup": ubx.FieldSpec{
+		WireName: "signup",
+		Kind:     "object",
+		Fields:   ApimportalconfigsPortalConfigContract2_Properties_SignupFields,
+	},
+}
 
 type ApimportalconfigsPortalConfigContract2Config struct {
 	// The developer portal configuration contract properties.
@@ -135,8 +135,8 @@ var ApimportalconfigsPortalConfigContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimportalconfigsPortalConfigContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimportalconfigsPortalConfigContract2_PropertiesFields,
 		},
 	},
 }

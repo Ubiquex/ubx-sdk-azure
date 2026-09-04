@@ -582,15 +582,6 @@ _IotHubDescription_SkuFields = {
     "tier": ubx.FieldSpec(wire_name="tier"),
 }
 
-_IotHubDescription_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class IotHubDescriptionConfig:
     # The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention.
@@ -600,8 +591,6 @@ class IotHubDescriptionConfig:
     properties: Any = None
     # Information about the SKU of the IoT hub.
     sku: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class IotHubDescriptionAttrs:
@@ -633,11 +622,6 @@ IotHubDescription = ubx.ResourceBinding(
             wire_name="sku",
             kind="object",
             fields=_IotHubDescription_SkuFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_IotHubDescription_SystemDataFields,
         ),
     },
 )

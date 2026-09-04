@@ -5,37 +5,37 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitorResource_Value_Identity struct {
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type MonitorResource_Value_Properties_DatadogOrganizationProperties struct {
-	ApiKey any
-	ApplicationKey any
-	Cspm any
-	EnterpriseAppId any
-	Id any
-	LinkingAuthCode any
-	LinkingClientId any
-	Name any
-	RedirectUri any
+	ApiKey             any
+	ApplicationKey     any
+	Cspm               any
+	EnterpriseAppId    any
+	Id                 any
+	LinkingAuthCode    any
+	LinkingClientId    any
+	Name               any
+	RedirectUri        any
 	ResourceCollection any
 }
 
 type MonitorResource_Value_Properties_UserInfo struct {
 	EmailAddress any
-	Name any
-	PhoneNumber any
+	Name         any
+	PhoneNumber  any
 }
 
 type MonitorResource_Value_Properties struct {
 	DatadogOrganizationProperties any
-	LiftrResourceCategory any
-	LiftrResourcePreference any
+	LiftrResourceCategory         any
+	LiftrResourcePreference       any
 	MarketplaceSubscriptionStatus any
-	MonitoringStatus any
-	ProvisioningState any
-	UserInfo any
+	MonitoringStatus              any
+	ProvisioningState             any
+	UserInfo                      any
 }
 
 type MonitorResource_Value_Sku struct {
@@ -43,9 +43,9 @@ type MonitorResource_Value_Sku struct {
 }
 
 type MonitorResource_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type MonitorResourceConfig struct {
@@ -60,6 +60,5 @@ type MonitorResourceAttrs struct {
 
 var MonitorResource = ubx.DataSourceBinding{
 	WireType: "azure_datadog_monitor_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

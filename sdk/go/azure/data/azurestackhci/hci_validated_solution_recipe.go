@@ -9,54 +9,54 @@ type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Capabilities_Clus
 
 type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Capabilities struct {
 	ClusterCapabilities any
-	NodeCapabilities any
+	NodeCapabilities    any
 }
 
 type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components_Metadata struct {
-	Catalog any
+	Catalog                any
 	EnableAutomaticUpgrade any
-	ExpectedHash any
-	ExtensionType any
-	LcmUpdate any
-	Link any
-	Name any
-	PreviewSource any
-	Publisher any
-	ReleaseTrain any
-	Ring any
+	ExpectedHash           any
+	ExtensionType          any
+	LcmUpdate              any
+	Link                   any
+	Name                   any
+	PreviewSource          any
+	Publisher              any
+	ReleaseTrain           any
+	Ring                   any
 }
 
 type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components_Payloads struct {
-	FileName any
-	Hash any
+	FileName   any
+	Hash       any
 	Identifier any
-	Url any
+	Url        any
 }
 
 type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components struct {
-	InstallOrder any
-	Metadata any
-	Name any
-	Payloads any
+	InstallOrder    any
+	Metadata        any
+	Name            any
+	Payloads        any
 	RequiredVersion any
-	Tags any
-	Type any
+	Tags            any
+	Type            any
 }
 
 type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Info struct {
 	SolutionType any
-	Version any
+	Version      any
 }
 
 type HciValidatedSolutionRecipe_Value_Properties_RecipeContent struct {
 	Capabilities any
-	Components any
-	Info any
+	Components   any
+	Info         any
 }
 
 type HciValidatedSolutionRecipe_Value_Properties struct {
 	RecipeContent any
-	Signature any
+	Signature     any
 }
 
 type HciValidatedSolutionRecipe_Value struct {
@@ -75,6 +75,5 @@ type HciValidatedSolutionRecipeAttrs struct {
 
 var HciValidatedSolutionRecipe = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_hci_validated_solution_recipe",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

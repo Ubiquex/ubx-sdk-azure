@@ -68,8 +68,6 @@ _ExpressrouteExpressRouteCircuitConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuitConnectionConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of the express route circuit connection.
     properties: Any = None
 
@@ -83,7 +81,6 @@ class ExpressrouteExpressRouteCircuitConnectionAttrs:
 ExpressrouteExpressRouteCircuitConnection = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_express_route_circuit_connection",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -4,37 +4,37 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsBackupEngineBaseResource_Value_Properties_ExtendedInfo struct {
-	AvailableDiskSpace any
+	AvailableDiskSpace      any
 	AzureProtectedInstances any
-	DatabaseName any
-	DiskCount any
-	ProtectedItemsCount any
-	ProtectedServersCount any
-	RefreshedAt any
-	UsedDiskSpace any
+	DatabaseName            any
+	DiskCount               any
+	ProtectedItemsCount     any
+	ProtectedServersCount   any
+	RefreshedAt             any
+	UsedDiskSpace           any
 }
 
 type BmsBackupEngineBaseResource_Value_Properties struct {
-	AzureBackupAgentVersion any
-	BackupEngineId any
-	BackupEngineState any
-	BackupEngineType any
-	BackupManagementType any
-	CanReRegister any
-	DpmVersion any
-	ExtendedInfo any
-	FriendlyName any
-	HealthStatus any
+	AzureBackupAgentVersion            any
+	BackupEngineId                     any
+	BackupEngineState                  any
+	BackupEngineType                   any
+	BackupManagementType               any
+	CanReRegister                      any
+	DpmVersion                         any
+	ExtendedInfo                       any
+	FriendlyName                       any
+	HealthStatus                       any
 	IsAzureBackupAgentUpgradeAvailable any
-	IsDpmUpgradeAvailable any
-	RegistrationStatus any
+	IsDpmUpgradeAvailable              any
+	RegistrationStatus                 any
 }
 
 type BmsBackupEngineBaseResource_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsBackupEngineBaseResourceConfig struct {
@@ -43,7 +43,7 @@ type BmsBackupEngineBaseResourceConfig struct {
 
 type BmsBackupEngineBaseResourceAttrs struct {
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

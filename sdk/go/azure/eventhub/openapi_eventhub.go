@@ -91,86 +91,84 @@ type OpenapiEventhub_Properties struct {
 }
 
 var OpenapiEventhub_Properties_CaptureDescription_Destination_IdentityFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-	}
+	"Type":                 ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
+}
 
 var OpenapiEventhub_Properties_CaptureDescription_Destination_PropertiesFields = ubx.FieldMap{
-		"ArchiveNameFormat": ubx.FieldSpec{WireName: "archive_name_format"},
-		"BlobContainer": ubx.FieldSpec{WireName: "blob_container"},
-		"DataLakeAccountName": ubx.FieldSpec{WireName: "data_lake_account_name"},
-		"DataLakeFolderPath": ubx.FieldSpec{WireName: "data_lake_folder_path"},
-		"DataLakeSubscriptionId": ubx.FieldSpec{WireName: "data_lake_subscription_id"},
-		"StorageAccountResourceId": ubx.FieldSpec{WireName: "storage_account_resource_id"},
-	}
+	"ArchiveNameFormat":        ubx.FieldSpec{WireName: "archive_name_format"},
+	"BlobContainer":            ubx.FieldSpec{WireName: "blob_container"},
+	"DataLakeAccountName":      ubx.FieldSpec{WireName: "data_lake_account_name"},
+	"DataLakeFolderPath":       ubx.FieldSpec{WireName: "data_lake_folder_path"},
+	"DataLakeSubscriptionId":   ubx.FieldSpec{WireName: "data_lake_subscription_id"},
+	"StorageAccountResourceId": ubx.FieldSpec{WireName: "storage_account_resource_id"},
+}
 
 var OpenapiEventhub_Properties_CaptureDescription_DestinationFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiEventhub_Properties_CaptureDescription_Destination_IdentityFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiEventhub_Properties_CaptureDescription_Destination_PropertiesFields,
-		},
-	}
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   OpenapiEventhub_Properties_CaptureDescription_Destination_IdentityFields,
+	},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiEventhub_Properties_CaptureDescription_Destination_PropertiesFields,
+	},
+}
 
 var OpenapiEventhub_Properties_CaptureDescriptionFields = ubx.FieldMap{
-		"Destination": ubx.FieldSpec{
-			WireName: "destination",
-			Kind: "object",
-			Fields: OpenapiEventhub_Properties_CaptureDescription_DestinationFields,
-		},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Encoding": ubx.FieldSpec{WireName: "encoding"},
-		"IntervalInSeconds": ubx.FieldSpec{WireName: "interval_in_seconds"},
-		"SizeLimitInBytes": ubx.FieldSpec{WireName: "size_limit_in_bytes"},
-		"SkipEmptyArchives": ubx.FieldSpec{WireName: "skip_empty_archives"},
-	}
+	"Destination": ubx.FieldSpec{
+		WireName: "destination",
+		Kind:     "object",
+		Fields:   OpenapiEventhub_Properties_CaptureDescription_DestinationFields,
+	},
+	"Enabled":           ubx.FieldSpec{WireName: "enabled"},
+	"Encoding":          ubx.FieldSpec{WireName: "encoding"},
+	"IntervalInSeconds": ubx.FieldSpec{WireName: "interval_in_seconds"},
+	"SizeLimitInBytes":  ubx.FieldSpec{WireName: "size_limit_in_bytes"},
+	"SkipEmptyArchives": ubx.FieldSpec{WireName: "skip_empty_archives"},
+}
 
 var OpenapiEventhub_Properties_MessageTimestampDescriptionFields = ubx.FieldMap{
-		"TimestampType": ubx.FieldSpec{WireName: "timestamp_type"},
-	}
+	"TimestampType": ubx.FieldSpec{WireName: "timestamp_type"},
+}
 
 var OpenapiEventhub_Properties_RetentionDescriptionFields = ubx.FieldMap{
-		"CleanupPolicy": ubx.FieldSpec{WireName: "cleanup_policy"},
-		"MinCompactionLagTimeInMinutes": ubx.FieldSpec{WireName: "min_compaction_lag_time_in_minutes"},
-		"RetentionTimeInHours": ubx.FieldSpec{WireName: "retention_time_in_hours"},
-		"TombstoneRetentionTimeInHours": ubx.FieldSpec{WireName: "tombstone_retention_time_in_hours"},
-	}
+	"CleanupPolicy":                 ubx.FieldSpec{WireName: "cleanup_policy"},
+	"MinCompactionLagTimeInMinutes": ubx.FieldSpec{WireName: "min_compaction_lag_time_in_minutes"},
+	"RetentionTimeInHours":          ubx.FieldSpec{WireName: "retention_time_in_hours"},
+	"TombstoneRetentionTimeInHours": ubx.FieldSpec{WireName: "tombstone_retention_time_in_hours"},
+}
 
 var OpenapiEventhub_PropertiesFields = ubx.FieldMap{
-		"CaptureDescription": ubx.FieldSpec{
-			WireName: "capture_description",
-			Kind: "object",
-			Fields: OpenapiEventhub_Properties_CaptureDescriptionFields,
-		},
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"Identifier": ubx.FieldSpec{WireName: "identifier"},
-		"MessageRetentionInDays": ubx.FieldSpec{WireName: "message_retention_in_days"},
-		"MessageTimestampDescription": ubx.FieldSpec{
-			WireName: "message_timestamp_description",
-			Kind: "object",
-			Fields: OpenapiEventhub_Properties_MessageTimestampDescriptionFields,
-		},
-		"PartitionCount": ubx.FieldSpec{WireName: "partition_count"},
-		"PartitionIds": ubx.FieldSpec{WireName: "partition_ids"},
-		"RetentionDescription": ubx.FieldSpec{
-			WireName: "retention_description",
-			Kind: "object",
-			Fields: OpenapiEventhub_Properties_RetentionDescriptionFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-		"UserMetadata": ubx.FieldSpec{WireName: "user_metadata"},
-	}
+	"CaptureDescription": ubx.FieldSpec{
+		WireName: "capture_description",
+		Kind:     "object",
+		Fields:   OpenapiEventhub_Properties_CaptureDescriptionFields,
+	},
+	"CreatedAt":              ubx.FieldSpec{WireName: "created_at"},
+	"Identifier":             ubx.FieldSpec{WireName: "identifier"},
+	"MessageRetentionInDays": ubx.FieldSpec{WireName: "message_retention_in_days"},
+	"MessageTimestampDescription": ubx.FieldSpec{
+		WireName: "message_timestamp_description",
+		Kind:     "object",
+		Fields:   OpenapiEventhub_Properties_MessageTimestampDescriptionFields,
+	},
+	"PartitionCount": ubx.FieldSpec{WireName: "partition_count"},
+	"PartitionIds":   ubx.FieldSpec{WireName: "partition_ids"},
+	"RetentionDescription": ubx.FieldSpec{
+		WireName: "retention_description",
+		Kind:     "object",
+		Fields:   OpenapiEventhub_Properties_RetentionDescriptionFields,
+	},
+	"Status":       ubx.FieldSpec{WireName: "status"},
+	"UpdatedAt":    ubx.FieldSpec{WireName: "updated_at"},
+	"UserMetadata": ubx.FieldSpec{WireName: "user_metadata"},
+}
 
 type OpenapiEventhubConfig struct {
-	// The geo-location where the resource lives
-	Location any
 	// Properties supplied to the Create Or Update Event Hub operation.
 	Properties any
 }
@@ -185,11 +183,10 @@ type OpenapiEventhubAttrs struct {
 var OpenapiEventhub = ubx.ResourceBinding{
 	WireType: "azure_eventhub_openapi_eventhub",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiEventhub_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiEventhub_PropertiesFields,
 		},
 	},
 }

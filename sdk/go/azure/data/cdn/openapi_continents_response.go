@@ -9,7 +9,7 @@ type OpenapiContinentsResponse_Continents struct {
 
 type OpenapiContinentsResponse_CountryOrRegions struct {
 	ContinentId any
-	Id any
+	Id          any
 }
 
 type OpenapiContinentsResponseConfig struct {
@@ -17,9 +17,9 @@ type OpenapiContinentsResponseConfig struct {
 }
 
 type OpenapiContinentsResponseAttrs struct {
-	Continents any
+	Continents       any
 	CountryOrRegions any
-	ProfileName any
+	ProfileName      any
 }
 
 var OpenapiContinentsResponse = ubx.DataSourceBinding{

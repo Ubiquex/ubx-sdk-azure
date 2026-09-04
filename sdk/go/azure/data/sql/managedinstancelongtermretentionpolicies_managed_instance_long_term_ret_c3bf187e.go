@@ -5,10 +5,10 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPolicy_Value_Properties struct {
 	BackupStorageAccessTier any
-	MonthlyRetention any
-	WeekOfYear any
-	WeeklyRetention any
-	YearlyRetention any
+	MonthlyRetention        any
+	WeekOfYear              any
+	WeeklyRetention         any
+	YearlyRetention         any
 }
 
 type ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPolicy_Value struct {
@@ -16,12 +16,12 @@ type ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPol
 }
 
 type ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPolicyConfig struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 }
 
 type ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPolicyAttrs struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 	// The link to the next page of items
 	NextLink any
@@ -32,7 +32,7 @@ type ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPol
 var ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPolicy = ubx.DataSourceBinding{
 	WireType: "azure_sql_managedinstancelongtermretentionpolicies_managed_instance_long_term_retention_policy",
 	Fields: ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+		"DatabaseName":        ubx.FieldSpec{WireName: "database_name"},
 		"ManagedInstanceName": ubx.FieldSpec{WireName: "managed_instance_name"},
 	},
 }

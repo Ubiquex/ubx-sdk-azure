@@ -4,9 +4,9 @@ package authorization
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RoledefinitionscallsRoleDefinition_Properties_Permissions struct {
-	Actions any
-	DataActions any
-	NotActions any
+	Actions        any
+	DataActions    any
+	NotActions     any
 	NotDataActions any
 }
 
@@ -32,37 +32,31 @@ type RoledefinitionscallsRoleDefinition_Properties struct {
 }
 
 var RoledefinitionscallsRoleDefinition_Properties_PermissionsFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{WireName: "actions"},
-		"DataActions": ubx.FieldSpec{WireName: "data_actions"},
-		"NotActions": ubx.FieldSpec{WireName: "not_actions"},
-		"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
-	}
+	"Actions":        ubx.FieldSpec{WireName: "actions"},
+	"DataActions":    ubx.FieldSpec{WireName: "data_actions"},
+	"NotActions":     ubx.FieldSpec{WireName: "not_actions"},
+	"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
+}
 
 var RoledefinitionscallsRoleDefinition_PropertiesFields = ubx.FieldMap{
-		"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedOn": ubx.FieldSpec{WireName: "created_on"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Permissions": ubx.FieldSpec{
-			WireName: "permissions",
-			Kind: "list",
-			Fields: RoledefinitionscallsRoleDefinition_Properties_PermissionsFields,
-		},
-		"RoleName": ubx.FieldSpec{WireName: "role_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UpdatedBy": ubx.FieldSpec{WireName: "updated_by"},
-		"UpdatedOn": ubx.FieldSpec{WireName: "updated_on"},
-	}
+	"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
+	"CreatedBy":        ubx.FieldSpec{WireName: "created_by"},
+	"CreatedOn":        ubx.FieldSpec{WireName: "created_on"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"Permissions": ubx.FieldSpec{
+		WireName: "permissions",
+		Kind:     "list",
+		Fields:   RoledefinitionscallsRoleDefinition_Properties_PermissionsFields,
+	},
+	"RoleName":  ubx.FieldSpec{WireName: "role_name"},
+	"Type":      ubx.FieldSpec{WireName: "type"},
+	"UpdatedBy": ubx.FieldSpec{WireName: "updated_by"},
+	"UpdatedOn": ubx.FieldSpec{WireName: "updated_on"},
+}
 
 type RoledefinitionscallsRoleDefinitionConfig struct {
-	// The role definition ID.
-	Id any
-	// The role definition name.
-	Name any
 	// Role definition properties.
 	Properties any
-	// The role definition type.
-	Type any
 	// path parameter, not part of the API's own resource representation
 	Scope any
 }
@@ -83,14 +77,11 @@ type RoledefinitionscallsRoleDefinitionAttrs struct {
 var RoledefinitionscallsRoleDefinition = ubx.ResourceBinding{
 	WireType: "azure_authorization_roledefinitionscalls_role_definition",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RoledefinitionscallsRoleDefinition_PropertiesFields,
+			Kind:     "object",
+			Fields:   RoledefinitionscallsRoleDefinition_PropertiesFields,
 		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},
 }

@@ -4,25 +4,25 @@ package batch
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSupportedSku_Value_Capabilities struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiSupportedSku_Value struct {
 	BatchSupportEndOfLife any
-	Capabilities any
-	FamilyName any
-	Name any
+	Capabilities          any
+	FamilyName            any
+	Name                  any
 }
 
 type OpenapiSupportedSkuConfig struct {
 	LocationName any
-	Maxresults any
+	Maxresults   any
 }
 
 type OpenapiSupportedSkuAttrs struct {
 	LocationName any
-	Maxresults any
+	Maxresults   any
 	// The link to the next page of items
 	NextLink any
 	// The SupportedSku items on this page
@@ -33,6 +33,6 @@ var OpenapiSupportedSku = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_supported_sku",
 	Fields: ubx.FieldMap{
 		"LocationName": ubx.FieldSpec{WireName: "location_name"},
-		"Maxresults": ubx.FieldSpec{WireName: "maxresults"},
+		"Maxresults":   ubx.FieldSpec{WireName: "maxresults"},
 	},
 }

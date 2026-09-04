@@ -4,11 +4,11 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSavingsPlanModel_Value_Properties_AppliedScopeProperties struct {
-	DisplayName any
+	DisplayName       any
 	ManagementGroupId any
-	ResourceGroupId any
-	SubscriptionId any
-	TenantId any
+	ResourceGroupId   any
+	SubscriptionId    any
+	TenantId          any
 }
 
 type OpenapiSavingsPlanModel_Value_Properties_Commitment struct {
@@ -20,20 +20,20 @@ type OpenapiSavingsPlanModel_Value_Properties_ExtendedStatusInfo_Properties stru
 }
 
 type OpenapiSavingsPlanModel_Value_Properties_ExtendedStatusInfo struct {
-	Message any
+	Message    any
 	Properties any
 	StatusCode any
 }
 
 type OpenapiSavingsPlanModel_Value_Properties_RenewProperties_PurchaseProperties_Properties struct {
 	AppliedScopeProperties any
-	AppliedScopeType any
-	BillingPlan any
-	BillingScopeId any
-	Commitment any
-	DisplayName any
-	Renew any
-	Term any
+	AppliedScopeType       any
+	BillingPlan            any
+	BillingScopeId         any
+	Commitment             any
+	DisplayName            any
+	Renew                  any
+	Term                   any
 }
 
 type OpenapiSavingsPlanModel_Value_Properties_RenewProperties_PurchaseProperties_Sku struct {
@@ -42,7 +42,7 @@ type OpenapiSavingsPlanModel_Value_Properties_RenewProperties_PurchaseProperties
 
 type OpenapiSavingsPlanModel_Value_Properties_RenewProperties_PurchaseProperties struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiSavingsPlanModel_Value_Properties_RenewProperties struct {
@@ -50,48 +50,48 @@ type OpenapiSavingsPlanModel_Value_Properties_RenewProperties struct {
 }
 
 type OpenapiSavingsPlanModel_Value_Properties_Utilization_Aggregates struct {
-	Grain any
+	Grain     any
 	GrainUnit any
-	Value any
+	Value     any
 	ValueUnit any
 }
 
 type OpenapiSavingsPlanModel_Value_Properties_Utilization struct {
 	Aggregates any
-	Trend any
+	Trend      any
 }
 
 type OpenapiSavingsPlanModel_Value_Properties struct {
-	AppliedScopeProperties any
-	AppliedScopeType any
-	BenefitStartTime any
-	BillingAccountId any
-	BillingPlan any
-	BillingProfileId any
-	BillingScopeId any
-	Commitment any
-	CustomerId any
-	DisplayName any
-	DisplayProvisioningState any
-	EffectiveDateTime any
-	ExpiryDateTime any
-	ExtendedStatusInfo any
-	ProductCode any
-	ProvisioningState any
-	PurchaseDateTime any
-	Renew any
-	RenewDestination any
-	RenewProperties any
-	RenewSource any
-	Term any
+	AppliedScopeProperties       any
+	AppliedScopeType             any
+	BenefitStartTime             any
+	BillingAccountId             any
+	BillingPlan                  any
+	BillingProfileId             any
+	BillingScopeId               any
+	Commitment                   any
+	CustomerId                   any
+	DisplayName                  any
+	DisplayProvisioningState     any
+	EffectiveDateTime            any
+	ExpiryDateTime               any
+	ExtendedStatusInfo           any
+	ProductCode                  any
+	ProvisioningState            any
+	PurchaseDateTime             any
+	Renew                        any
+	RenewDestination             any
+	RenewProperties              any
+	RenewSource                  any
+	Term                         any
 	UserFriendlyAppliedScopeType any
-	Utilization any
+	Utilization                  any
 }
 
 type OpenapiSavingsPlanModel_Value struct {
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiSavingsPlanModelConfig struct {
@@ -102,7 +102,7 @@ type OpenapiSavingsPlanModelConfig struct {
 type OpenapiSavingsPlanModelAttrs struct {
 	BillingAccountName any
 	// The link to the next page of items
-	NextLink any
+	NextLink           any
 	SavingsPlanOrderId any
 	// The SavingsPlanModel items on this page
 	Value any

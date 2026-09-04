@@ -37,20 +37,9 @@ const CaCertificate_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
-const CaCertificate_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface CaCertificateConfig {
   /** The properties of CA certificate. */
   properties?: CaCertificate_Properties | Computed<CaCertificate_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: CaCertificate_SystemData | Computed<CaCertificate_SystemData>;
 }
 
 export interface CaCertificateAttrs {
@@ -67,11 +56,6 @@ export const CaCertificate: ResourceBinding<CaCertificateConfig, CaCertificateAt
       wireName: "properties",
       kind: "object",
       fields: CaCertificate_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: CaCertificate_SystemDataFields,
     },
   },
 };

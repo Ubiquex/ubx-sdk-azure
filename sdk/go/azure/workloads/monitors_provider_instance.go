@@ -4,7 +4,7 @@ package workloads
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitorsProviderInstance_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -23,19 +23,19 @@ type MonitorsProviderInstance_Properties_Errors_Details_InnerError struct {
 }
 
 type MonitorsProviderInstance_Properties_Errors_Details struct {
-	Code any
-	Details any
+	Code       any
+	Details    any
 	InnerError any
-	Message any
-	Target any
+	Message    any
+	Target     any
 }
 
 type MonitorsProviderInstance_Properties_Errors_InnerError_InnerError struct {
-	Code any
-	Details any
+	Code       any
+	Details    any
 	InnerError any
-	Message any
-	Target any
+	Message    any
+	Target     any
 }
 
 type MonitorsProviderInstance_Properties_Errors_InnerError struct {
@@ -43,11 +43,11 @@ type MonitorsProviderInstance_Properties_Errors_InnerError struct {
 }
 
 type MonitorsProviderInstance_Properties_Errors struct {
-	Code any
-	Details any
+	Code       any
+	Details    any
 	InnerError any
-	Message any
-	Target any
+	Message    any
+	Target     any
 }
 
 type MonitorsProviderInstance_Properties_ProviderSettings struct {
@@ -65,95 +65,94 @@ type MonitorsProviderInstance_Properties struct {
 }
 
 var MonitorsProviderInstance_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var MonitorsProviderInstance_IdentityFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: MonitorsProviderInstance_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   MonitorsProviderInstance_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
-var MonitorsProviderInstance_Properties_Errors_Details_DetailsFields = ubx.FieldMap{
-	}
+var MonitorsProviderInstance_Properties_Errors_Details_DetailsFields = ubx.FieldMap{}
 
 var MonitorsProviderInstance_Properties_Errors_Details_InnerErrorFields = ubx.FieldMap{
-		"InnerError": ubx.FieldSpec{WireName: "inner_error"},
-	}
+	"InnerError": ubx.FieldSpec{WireName: "inner_error"},
+}
 
 var MonitorsProviderInstance_Properties_Errors_DetailsFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: MonitorsProviderInstance_Properties_Errors_Details_DetailsFields,
-		},
-		"InnerError": ubx.FieldSpec{
-			WireName: "inner_error",
-			Kind: "object",
-			Fields: MonitorsProviderInstance_Properties_Errors_Details_InnerErrorFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   MonitorsProviderInstance_Properties_Errors_Details_DetailsFields,
+	},
+	"InnerError": ubx.FieldSpec{
+		WireName: "inner_error",
+		Kind:     "object",
+		Fields:   MonitorsProviderInstance_Properties_Errors_Details_InnerErrorFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var MonitorsProviderInstance_Properties_Errors_InnerError_InnerErrorFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: MonitorsProviderInstance_Properties_Errors_Details_DetailsFields,
-		},
-		"InnerError": ubx.FieldSpec{WireName: "inner_error"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   MonitorsProviderInstance_Properties_Errors_Details_DetailsFields,
+	},
+	"InnerError": ubx.FieldSpec{WireName: "inner_error"},
+	"Message":    ubx.FieldSpec{WireName: "message"},
+	"Target":     ubx.FieldSpec{WireName: "target"},
+}
 
 var MonitorsProviderInstance_Properties_Errors_InnerErrorFields = ubx.FieldMap{
-		"InnerError": ubx.FieldSpec{
-			WireName: "inner_error",
-			Kind: "object",
-			Fields: MonitorsProviderInstance_Properties_Errors_InnerError_InnerErrorFields,
-		},
-	}
+	"InnerError": ubx.FieldSpec{
+		WireName: "inner_error",
+		Kind:     "object",
+		Fields:   MonitorsProviderInstance_Properties_Errors_InnerError_InnerErrorFields,
+	},
+}
 
 var MonitorsProviderInstance_Properties_ErrorsFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: MonitorsProviderInstance_Properties_Errors_DetailsFields,
-		},
-		"InnerError": ubx.FieldSpec{
-			WireName: "inner_error",
-			Kind: "object",
-			Fields: MonitorsProviderInstance_Properties_Errors_InnerErrorFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   MonitorsProviderInstance_Properties_Errors_DetailsFields,
+	},
+	"InnerError": ubx.FieldSpec{
+		WireName: "inner_error",
+		Kind:     "object",
+		Fields:   MonitorsProviderInstance_Properties_Errors_InnerErrorFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var MonitorsProviderInstance_Properties_ProviderSettingsFields = ubx.FieldMap{
-		"ProviderType": ubx.FieldSpec{WireName: "provider_type"},
-	}
+	"ProviderType": ubx.FieldSpec{WireName: "provider_type"},
+}
 
 var MonitorsProviderInstance_PropertiesFields = ubx.FieldMap{
-		"Errors": ubx.FieldSpec{
-			WireName: "errors",
-			Kind: "object",
-			Fields: MonitorsProviderInstance_Properties_ErrorsFields,
-		},
-		"ProviderSettings": ubx.FieldSpec{
-			WireName: "provider_settings",
-			Kind: "object",
-			Fields: MonitorsProviderInstance_Properties_ProviderSettingsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Errors": ubx.FieldSpec{
+		WireName: "errors",
+		Kind:     "object",
+		Fields:   MonitorsProviderInstance_Properties_ErrorsFields,
+	},
+	"ProviderSettings": ubx.FieldSpec{
+		WireName: "provider_settings",
+		Kind:     "object",
+		Fields:   MonitorsProviderInstance_Properties_ProviderSettingsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type MonitorsProviderInstanceConfig struct {
 	// A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide.
@@ -174,13 +173,13 @@ var MonitorsProviderInstance = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: MonitorsProviderInstance_IdentityFields,
+			Kind:     "object",
+			Fields:   MonitorsProviderInstance_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: MonitorsProviderInstance_PropertiesFields,
+			Kind:     "object",
+			Fields:   MonitorsProviderInstance_PropertiesFields,
 		},
 	},
 }

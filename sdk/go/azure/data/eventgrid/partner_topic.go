@@ -4,64 +4,64 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PartnerTopic_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type PartnerTopic_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type PartnerTopic_Value_Properties_EventTypeInfo_InlineEventTypes struct {
-	DataSchemaUrl any
-	Description any
-	DisplayName any
+	DataSchemaUrl    any
+	Description      any
+	DisplayName      any
 	DocumentationUrl any
 }
 
 type PartnerTopic_Value_Properties_EventTypeInfo struct {
 	InlineEventTypes any
-	Kind any
+	Kind             any
 }
 
 type PartnerTopic_Value_Properties struct {
-	ActivationState any
-	EventTypeInfo any
+	ActivationState                 any
+	EventTypeInfo                   any
 	ExpirationTimeIfNotActivatedUtc any
-	MessageForActivation any
-	PartnerRegistrationImmutableId any
+	MessageForActivation            any
+	PartnerRegistrationImmutableId  any
 	PartnerTopicFriendlyDescription any
-	ProvisioningState any
-	Source any
+	ProvisioningState               any
+	Source                          any
 }
 
 type PartnerTopic_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type PartnerTopic_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 	SystemData any
 }
 
 type PartnerTopicConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type PartnerTopicAttrs struct {
 	ApiVersion any
 	// A link for the next page of partner topics.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// A collection of partner topics.
 	Value any
@@ -70,7 +70,7 @@ type PartnerTopicAttrs struct {
 var PartnerTopic = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_partner_topic",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

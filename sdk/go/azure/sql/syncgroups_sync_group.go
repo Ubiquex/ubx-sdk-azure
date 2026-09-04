@@ -4,13 +4,13 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SyncgroupsSyncGroup_Properties_Schema_Tables_Columns struct {
-	DataSize any
-	DataType any
+	DataSize   any
+	DataType   any
 	QuotedName any
 }
 
 type SyncgroupsSyncGroup_Properties_Schema_Tables struct {
-	Columns any
+	Columns    any
 	QuotedName any
 }
 
@@ -62,55 +62,55 @@ type SyncgroupsSyncGroup_Sku struct {
 }
 
 var SyncgroupsSyncGroup_Properties_Schema_Tables_ColumnsFields = ubx.FieldMap{
-		"DataSize": ubx.FieldSpec{WireName: "data_size"},
-		"DataType": ubx.FieldSpec{WireName: "data_type"},
-		"QuotedName": ubx.FieldSpec{WireName: "quoted_name"},
-	}
+	"DataSize":   ubx.FieldSpec{WireName: "data_size"},
+	"DataType":   ubx.FieldSpec{WireName: "data_type"},
+	"QuotedName": ubx.FieldSpec{WireName: "quoted_name"},
+}
 
 var SyncgroupsSyncGroup_Properties_Schema_TablesFields = ubx.FieldMap{
-		"Columns": ubx.FieldSpec{
-			WireName: "columns",
-			Kind: "list",
-			Fields: SyncgroupsSyncGroup_Properties_Schema_Tables_ColumnsFields,
-		},
-		"QuotedName": ubx.FieldSpec{WireName: "quoted_name"},
-	}
+	"Columns": ubx.FieldSpec{
+		WireName: "columns",
+		Kind:     "list",
+		Fields:   SyncgroupsSyncGroup_Properties_Schema_Tables_ColumnsFields,
+	},
+	"QuotedName": ubx.FieldSpec{WireName: "quoted_name"},
+}
 
 var SyncgroupsSyncGroup_Properties_SchemaFields = ubx.FieldMap{
-		"MasterSyncMemberName": ubx.FieldSpec{WireName: "master_sync_member_name"},
-		"Tables": ubx.FieldSpec{
-			WireName: "tables",
-			Kind: "list",
-			Fields: SyncgroupsSyncGroup_Properties_Schema_TablesFields,
-		},
-	}
+	"MasterSyncMemberName": ubx.FieldSpec{WireName: "master_sync_member_name"},
+	"Tables": ubx.FieldSpec{
+		WireName: "tables",
+		Kind:     "list",
+		Fields:   SyncgroupsSyncGroup_Properties_Schema_TablesFields,
+	},
+}
 
 var SyncgroupsSyncGroup_PropertiesFields = ubx.FieldMap{
-		"ConflictLoggingRetentionInDays": ubx.FieldSpec{WireName: "conflict_logging_retention_in_days"},
-		"ConflictResolutionPolicy": ubx.FieldSpec{WireName: "conflict_resolution_policy"},
-		"EnableConflictLogging": ubx.FieldSpec{WireName: "enable_conflict_logging"},
-		"HubDatabasePassword": ubx.FieldSpec{WireName: "hub_database_password"},
-		"HubDatabaseUserName": ubx.FieldSpec{WireName: "hub_database_user_name"},
-		"Interval": ubx.FieldSpec{WireName: "interval"},
-		"LastSyncTime": ubx.FieldSpec{WireName: "last_sync_time"},
-		"PrivateEndpointName": ubx.FieldSpec{WireName: "private_endpoint_name"},
-		"Schema": ubx.FieldSpec{
-			WireName: "schema",
-			Kind: "object",
-			Fields: SyncgroupsSyncGroup_Properties_SchemaFields,
-		},
-		"SyncDatabaseId": ubx.FieldSpec{WireName: "sync_database_id"},
-		"SyncState": ubx.FieldSpec{WireName: "sync_state"},
-		"UsePrivateLinkConnection": ubx.FieldSpec{WireName: "use_private_link_connection"},
-	}
+	"ConflictLoggingRetentionInDays": ubx.FieldSpec{WireName: "conflict_logging_retention_in_days"},
+	"ConflictResolutionPolicy":       ubx.FieldSpec{WireName: "conflict_resolution_policy"},
+	"EnableConflictLogging":          ubx.FieldSpec{WireName: "enable_conflict_logging"},
+	"HubDatabasePassword":            ubx.FieldSpec{WireName: "hub_database_password"},
+	"HubDatabaseUserName":            ubx.FieldSpec{WireName: "hub_database_user_name"},
+	"Interval":                       ubx.FieldSpec{WireName: "interval"},
+	"LastSyncTime":                   ubx.FieldSpec{WireName: "last_sync_time"},
+	"PrivateEndpointName":            ubx.FieldSpec{WireName: "private_endpoint_name"},
+	"Schema": ubx.FieldSpec{
+		WireName: "schema",
+		Kind:     "object",
+		Fields:   SyncgroupsSyncGroup_Properties_SchemaFields,
+	},
+	"SyncDatabaseId":           ubx.FieldSpec{WireName: "sync_database_id"},
+	"SyncState":                ubx.FieldSpec{WireName: "sync_state"},
+	"UsePrivateLinkConnection": ubx.FieldSpec{WireName: "use_private_link_connection"},
+}
 
 var SyncgroupsSyncGroup_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type SyncgroupsSyncGroupConfig struct {
 	// Properties of a sync group with support to MI.
@@ -131,13 +131,13 @@ var SyncgroupsSyncGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SyncgroupsSyncGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   SyncgroupsSyncGroup_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: SyncgroupsSyncGroup_SkuFields,
+			Kind:     "object",
+			Fields:   SyncgroupsSyncGroup_SkuFields,
 		},
 	},
 }

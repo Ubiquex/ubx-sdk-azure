@@ -2,6 +2,8 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface ApimgroupsGroupContract2_Properties {
+  /** true if the group is one of the three system groups (Administrators, Developers, or Guests); otherwise false. */
+  builtIn?: boolean | Computed<boolean>;
   /** Group description. */
   description?: string | Computed<string>;
   /** Group name. */
@@ -13,6 +15,7 @@ export interface ApimgroupsGroupContract2_Properties {
 }
 
 const ApimgroupsGroupContract2_PropertiesFields: FieldMap = {
+  builtIn: "built_in",
   description: "description",
   displayName: "display_name",
   externalId: "external_id",

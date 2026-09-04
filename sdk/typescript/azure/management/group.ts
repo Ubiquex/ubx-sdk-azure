@@ -12,6 +12,11 @@ export interface Group_Properties_Children {
   type?: string | Computed<string>;
 }
 
+export interface Group_Properties_Details_ManagementGroupAncestorsChain {
+  displayName?: string | Computed<string>;
+  name?: string | Computed<string>;
+}
+
 export interface Group_Properties_Details_Parent {
   /** The friendly name of the parent management group. */
   displayName?: string | Computed<string>;
@@ -22,8 +27,14 @@ export interface Group_Properties_Details_Parent {
 }
 
 export interface Group_Properties_Details {
+  /** The ancestors of the management group. */
+  managementGroupAncestors?: string[] | Computed<string[]>;
+  /** The ancestors of the management group displayed in reversed order, from immediate parent to the root. */
+  managementGroupAncestorsChain?: Group_Properties_Details_ManagementGroupAncestorsChain[] | Computed<Group_Properties_Details_ManagementGroupAncestorsChain[]>;
   /** (Optional) The ID of the parent management group used during creation. */
   parent?: Group_Properties_Details_Parent | Computed<Group_Properties_Details_Parent>;
+  /** The path from the root to the current group. */
+  path?: Group_Properties_Details_ManagementGroupAncestorsChain[] | Computed<Group_Properties_Details_ManagementGroupAncestorsChain[]>;
   /** The identity of the principal or process that updated the object. */
   updatedBy?: string | Computed<string>;
   /** The date and time when this object was last updated. */
@@ -58,6 +69,11 @@ const Group_Properties_ChildrenFields: FieldMap = {
   type: "type",
 };
 
+const Group_Properties_Details_ManagementGroupAncestorsChainFields: FieldMap = {
+  displayName: "display_name",
+  name: "name",
+};
+
 const Group_Properties_Details_ParentFields: FieldMap = {
   displayName: "display_name",
   id: "id",
@@ -65,10 +81,21 @@ const Group_Properties_Details_ParentFields: FieldMap = {
 };
 
 const Group_Properties_DetailsFields: FieldMap = {
+  managementGroupAncestors: "management_group_ancestors",
+  managementGroupAncestorsChain: {
+    wireName: "management_group_ancestors_chain",
+    kind: "list",
+    fields: Group_Properties_Details_ManagementGroupAncestorsChainFields,
+  },
   parent: {
     wireName: "parent",
     kind: "object",
     fields: Group_Properties_Details_ParentFields,
+  },
+  path: {
+    wireName: "path",
+    kind: "list",
+    fields: Group_Properties_Details_ManagementGroupAncestorsChainFields,
   },
   updatedBy: "updated_by",
   updatedTime: "updated_time",

@@ -4,42 +4,42 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWorkerPoolResource_Value_Properties struct {
-	ComputeMode any
+	ComputeMode   any
 	InstanceNames any
-	WorkerCount any
-	WorkerSize any
-	WorkerSizeId any
+	WorkerCount   any
+	WorkerSize    any
+	WorkerSizeId  any
 }
 
 type OpenapiWorkerPoolResource_Value_Sku_Capabilities struct {
-	Name any
+	Name   any
 	Reason any
-	Value any
+	Value  any
 }
 
 type OpenapiWorkerPoolResource_Value_Sku_SkuCapacity struct {
-	Default any
+	Default        any
 	ElasticMaximum any
-	Maximum any
-	Minimum any
-	ScaleType any
+	Maximum        any
+	Minimum        any
+	ScaleType      any
 }
 
 type OpenapiWorkerPoolResource_Value_Sku struct {
 	Capabilities any
-	Capacity any
-	Family any
-	Locations any
-	Name any
-	Size any
-	SkuCapacity any
-	Tier any
+	Capacity     any
+	Family       any
+	Locations    any
+	Name         any
+	Size         any
+	SkuCapacity  any
+	Tier         any
 }
 
 type OpenapiWorkerPoolResource_Value struct {
-	Kind any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiWorkerPoolResourceConfig struct {

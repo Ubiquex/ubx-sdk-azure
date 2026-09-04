@@ -4,29 +4,29 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRecommendation_Value_Properties struct {
-	ActionName any
-	BladeName any
-	CategoryTags any
-	Channels any
-	CreationTime any
-	DisplayName any
-	Enabled any
-	EndTime any
-	ExtensionName any
-	ForwardLink any
-	IsDynamic any
-	Level any
-	Message any
-	NextNotificationTime any
+	ActionName                 any
+	BladeName                  any
+	CategoryTags               any
+	Channels                   any
+	CreationTime               any
+	DisplayName                any
+	Enabled                    any
+	EndTime                    any
+	ExtensionName              any
+	ForwardLink                any
+	IsDynamic                  any
+	Level                      any
+	Message                    any
+	NextNotificationTime       any
 	NotificationExpirationTime any
-	NotifiedTime any
-	RecommendationId any
-	ResourceId any
-	ResourceScope any
-	RuleName any
-	Score any
-	StartTime any
-	States any
+	NotifiedTime               any
+	RecommendationId           any
+	ResourceId                 any
+	ResourceScope              any
+	RuleName                   any
+	Score                      any
+	StartTime                  any
+	States                     any
 }
 
 type OpenapiRecommendation_Value struct {

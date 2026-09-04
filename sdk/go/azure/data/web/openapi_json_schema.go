@@ -4,26 +4,26 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiJsonSchemaConfig struct {
-	Name any
-	TriggerName any
+	Name         any
+	TriggerName  any
 	WorkflowName any
 }
 
 type OpenapiJsonSchemaAttrs struct {
 	// The JSON content.
 	Content any
-	Name any
+	Name    any
 	// The JSON title.
-	Title any
-	TriggerName any
+	Title        any
+	TriggerName  any
 	WorkflowName any
 }
 
 var OpenapiJsonSchema = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_json_schema",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"TriggerName": ubx.FieldSpec{WireName: "trigger_name"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
+		"TriggerName":  ubx.FieldSpec{WireName: "trigger_name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

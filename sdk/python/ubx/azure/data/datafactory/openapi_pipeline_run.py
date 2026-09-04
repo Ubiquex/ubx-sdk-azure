@@ -22,7 +22,6 @@ class OpenapiPipelineRun_InvokedBy:
 @dataclasses.dataclass
 class OpenapiPipelineRunConfig:
     factory_name: Any = None
-    run_id: Any = None
 
 @dataclasses.dataclass
 class OpenapiPipelineRunAttrs:
@@ -57,6 +56,5 @@ OpenapiPipelineRun = ubx.DataSourceBinding(
     wire_type="azure_datafactory_openapi_pipeline_run",
     fields={
         "factory_name": ubx.FieldSpec(wire_name="factory_name"),
-        "run_id": ubx.FieldSpec(wire_name="run_id"),
     },
 )

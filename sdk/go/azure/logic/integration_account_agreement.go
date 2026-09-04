@@ -167,36 +167,36 @@ type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_Pro
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EdifactDelimiterOverrides struct {
-	ComponentSeparator any
-	DataElementSeparator any
-	DecimalPointIndicator any
+	ComponentSeparator             any
+	DataElementSeparator           any
+	DecimalPointIndicator          any
 	MessageAssociationAssignedCode any
-	MessageId any
-	MessageRelease any
-	MessageVersion any
-	ReleaseIndicator any
-	RepetitionSeparator any
-	SegmentTerminator any
-	SegmentTerminatorSuffix any
-	TargetNamespace any
+	MessageId                      any
+	MessageRelease                 any
+	MessageVersion                 any
+	ReleaseIndicator               any
+	RepetitionSeparator            any
+	SegmentTerminator              any
+	SegmentTerminatorSuffix        any
+	TargetNamespace                any
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeOverrides struct {
-	ApplicationPassword any
-	AssociationAssignedCode any
-	ControllingAgencyCode any
-	FunctionalGroupId any
-	GroupHeaderMessageRelease any
-	GroupHeaderMessageVersion any
+	ApplicationPassword            any
+	AssociationAssignedCode        any
+	ControllingAgencyCode          any
+	FunctionalGroupId              any
+	GroupHeaderMessageRelease      any
+	GroupHeaderMessageVersion      any
 	MessageAssociationAssignedCode any
-	MessageId any
-	MessageRelease any
-	MessageVersion any
-	ReceiverApplicationId any
-	ReceiverApplicationQualifier any
-	SenderApplicationId any
-	SenderApplicationQualifier any
-	TargetNamespace any
+	MessageId                      any
+	MessageRelease                 any
+	MessageVersion                 any
+	ReceiverApplicationId          any
+	ReceiverApplicationQualifier   any
+	SenderApplicationId            any
+	SenderApplicationQualifier     any
+	TargetNamespace                any
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeSettings struct {
@@ -332,23 +332,23 @@ type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_Pro
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_SchemaReferences struct {
-	AssociationAssignedCode any
-	MessageId any
-	MessageRelease any
-	MessageVersion any
-	SchemaName any
-	SenderApplicationId any
+	AssociationAssignedCode    any
+	MessageId                  any
+	MessageRelease             any
+	MessageVersion             any
+	SchemaName                 any
+	SenderApplicationId        any
 	SenderApplicationQualifier any
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationOverrides struct {
 	AllowLeadingAndTrailingSpacesAndZeroes any
-	EnforceCharacterSet any
-	MessageId any
-	TrailingSeparatorPolicy any
-	TrimLeadingAndTrailingSpacesAndZeroes any
-	ValidateEditypes any
-	ValidateXsdtypes any
+	EnforceCharacterSet                    any
+	MessageId                              any
+	TrailingSeparatorPolicy                any
+	TrimLeadingAndTrailingSpacesAndZeroes  any
+	ValidateEditypes                       any
+	ValidateXsdtypes                       any
 }
 
 type IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationSettings struct {
@@ -449,16 +449,16 @@ type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_Protoco
 }
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeOverrides struct {
-	DateFormat any
+	DateFormat               any
 	FunctionalIdentifierCode any
-	HeaderVersion any
-	MessageId any
-	ProtocolVersion any
-	ReceiverApplicationId any
-	ResponsibleAgencyCode any
-	SenderApplicationId any
-	TargetNamespace any
-	TimeFormat any
+	HeaderVersion            any
+	MessageId                any
+	ProtocolVersion          any
+	ReceiverApplicationId    any
+	ResponsibleAgencyCode    any
+	SenderApplicationId      any
+	TargetNamespace          any
+	TimeFormat               any
 }
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeSettings struct {
@@ -545,9 +545,9 @@ type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_Protoco
 }
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SchemaReferences struct {
-	MessageId any
-	SchemaName any
-	SchemaVersion any
+	MessageId           any
+	SchemaName          any
+	SchemaVersion       any
 	SenderApplicationId any
 }
 
@@ -564,24 +564,24 @@ type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_Protoco
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ValidationOverrides struct {
 	AllowLeadingAndTrailingSpacesAndZeroes any
-	MessageId any
-	TrailingSeparatorPolicy any
-	TrimLeadingAndTrailingSpacesAndZeroes any
-	ValidateCharacterSet any
-	ValidateEditypes any
-	ValidateXsdtypes any
+	MessageId                              any
+	TrailingSeparatorPolicy                any
+	TrimLeadingAndTrailingSpacesAndZeroes  any
+	ValidateCharacterSet                   any
+	ValidateEditypes                       any
+	ValidateXsdtypes                       any
 }
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_X12DelimiterOverrides struct {
-	ComponentSeparator any
-	DataElementSeparator any
-	MessageId any
-	ProtocolVersion any
-	ReplaceCharacter any
+	ComponentSeparator         any
+	DataElementSeparator       any
+	MessageId                  any
+	ProtocolVersion            any
+	ReplaceCharacter           any
 	ReplaceSeparatorsInPayload any
-	SegmentTerminator any
-	SegmentTerminatorSuffix any
-	TargetNamespace any
+	SegmentTerminator          any
+	SegmentTerminatorSuffix    any
+	TargetNamespace            any
 }
 
 type IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings struct {
@@ -658,628 +658,628 @@ type IntegrationAccountAgreement_Properties struct {
 }
 
 var IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_AcknowledgementConnectionSettingsFields = ubx.FieldMap{
-		"IgnoreCertificateNameMismatch": ubx.FieldSpec{WireName: "ignore_certificate_name_mismatch"},
-		"KeepHttpConnectionAlive": ubx.FieldSpec{WireName: "keep_http_connection_alive"},
-		"SupportHttpStatusCodeContinue": ubx.FieldSpec{WireName: "support_http_status_code_continue"},
-		"UnfoldHttpHeaders": ubx.FieldSpec{WireName: "unfold_http_headers"},
-	}
+	"IgnoreCertificateNameMismatch": ubx.FieldSpec{WireName: "ignore_certificate_name_mismatch"},
+	"KeepHttpConnectionAlive":       ubx.FieldSpec{WireName: "keep_http_connection_alive"},
+	"SupportHttpStatusCodeContinue": ubx.FieldSpec{WireName: "support_http_status_code_continue"},
+	"UnfoldHttpHeaders":             ubx.FieldSpec{WireName: "unfold_http_headers"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_EnvelopeSettingsFields = ubx.FieldMap{
-		"AutogenerateFileName": ubx.FieldSpec{WireName: "autogenerate_file_name"},
-		"FileNameTemplate": ubx.FieldSpec{WireName: "file_name_template"},
-		"MessageContentType": ubx.FieldSpec{WireName: "message_content_type"},
-		"SuspendMessageOnFileNameGenerationError": ubx.FieldSpec{WireName: "suspend_message_on_file_name_generation_error"},
-		"TransmitFileNameInMimeHeader": ubx.FieldSpec{WireName: "transmit_file_name_in_mime_header"},
-	}
+	"AutogenerateFileName":                    ubx.FieldSpec{WireName: "autogenerate_file_name"},
+	"FileNameTemplate":                        ubx.FieldSpec{WireName: "file_name_template"},
+	"MessageContentType":                      ubx.FieldSpec{WireName: "message_content_type"},
+	"SuspendMessageOnFileNameGenerationError": ubx.FieldSpec{WireName: "suspend_message_on_file_name_generation_error"},
+	"TransmitFileNameInMimeHeader":            ubx.FieldSpec{WireName: "transmit_file_name_in_mime_header"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_ErrorSettingsFields = ubx.FieldMap{
-		"ResendIfMdnnotReceived": ubx.FieldSpec{WireName: "resend_if_mdnnot_received"},
-		"SuspendDuplicateMessage": ubx.FieldSpec{WireName: "suspend_duplicate_message"},
-	}
+	"ResendIfMdnnotReceived":  ubx.FieldSpec{WireName: "resend_if_mdnnot_received"},
+	"SuspendDuplicateMessage": ubx.FieldSpec{WireName: "suspend_duplicate_message"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_MdnSettingsFields = ubx.FieldMap{
-		"DispositionNotificationTo": ubx.FieldSpec{WireName: "disposition_notification_to"},
-		"MdnText": ubx.FieldSpec{WireName: "mdn_text"},
-		"MicHashingAlgorithm": ubx.FieldSpec{WireName: "mic_hashing_algorithm"},
-		"NeedMdn": ubx.FieldSpec{WireName: "need_mdn"},
-		"ReceiptDeliveryUrl": ubx.FieldSpec{WireName: "receipt_delivery_url"},
-		"SendInboundMdntoMessageBox": ubx.FieldSpec{WireName: "send_inbound_mdnto_message_box"},
-		"SendMdnasynchronously": ubx.FieldSpec{WireName: "send_mdnasynchronously"},
-		"SignMdn": ubx.FieldSpec{WireName: "sign_mdn"},
-		"SignOutboundMdnifOptional": ubx.FieldSpec{WireName: "sign_outbound_mdnif_optional"},
-	}
+	"DispositionNotificationTo":  ubx.FieldSpec{WireName: "disposition_notification_to"},
+	"MdnText":                    ubx.FieldSpec{WireName: "mdn_text"},
+	"MicHashingAlgorithm":        ubx.FieldSpec{WireName: "mic_hashing_algorithm"},
+	"NeedMdn":                    ubx.FieldSpec{WireName: "need_mdn"},
+	"ReceiptDeliveryUrl":         ubx.FieldSpec{WireName: "receipt_delivery_url"},
+	"SendInboundMdntoMessageBox": ubx.FieldSpec{WireName: "send_inbound_mdnto_message_box"},
+	"SendMdnasynchronously":      ubx.FieldSpec{WireName: "send_mdnasynchronously"},
+	"SignMdn":                    ubx.FieldSpec{WireName: "sign_mdn"},
+	"SignOutboundMdnifOptional":  ubx.FieldSpec{WireName: "sign_outbound_mdnif_optional"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_SecuritySettingsFields = ubx.FieldMap{
-		"EnableNrrforInboundDecodedMessages": ubx.FieldSpec{WireName: "enable_nrrfor_inbound_decoded_messages"},
-		"EnableNrrforInboundEncodedMessages": ubx.FieldSpec{WireName: "enable_nrrfor_inbound_encoded_messages"},
-		"EnableNrrforInboundMdn": ubx.FieldSpec{WireName: "enable_nrrfor_inbound_mdn"},
-		"EnableNrrforOutboundDecodedMessages": ubx.FieldSpec{WireName: "enable_nrrfor_outbound_decoded_messages"},
-		"EnableNrrforOutboundEncodedMessages": ubx.FieldSpec{WireName: "enable_nrrfor_outbound_encoded_messages"},
-		"EnableNrrforOutboundMdn": ubx.FieldSpec{WireName: "enable_nrrfor_outbound_mdn"},
-		"EncryptionCertificateName": ubx.FieldSpec{WireName: "encryption_certificate_name"},
-		"OverrideGroupSigningCertificate": ubx.FieldSpec{WireName: "override_group_signing_certificate"},
-		"Sha2AlgorithmFormat": ubx.FieldSpec{WireName: "sha2_algorithm_format"},
-		"SigningCertificateName": ubx.FieldSpec{WireName: "signing_certificate_name"},
-	}
+	"EnableNrrforInboundDecodedMessages":  ubx.FieldSpec{WireName: "enable_nrrfor_inbound_decoded_messages"},
+	"EnableNrrforInboundEncodedMessages":  ubx.FieldSpec{WireName: "enable_nrrfor_inbound_encoded_messages"},
+	"EnableNrrforInboundMdn":              ubx.FieldSpec{WireName: "enable_nrrfor_inbound_mdn"},
+	"EnableNrrforOutboundDecodedMessages": ubx.FieldSpec{WireName: "enable_nrrfor_outbound_decoded_messages"},
+	"EnableNrrforOutboundEncodedMessages": ubx.FieldSpec{WireName: "enable_nrrfor_outbound_encoded_messages"},
+	"EnableNrrforOutboundMdn":             ubx.FieldSpec{WireName: "enable_nrrfor_outbound_mdn"},
+	"EncryptionCertificateName":           ubx.FieldSpec{WireName: "encryption_certificate_name"},
+	"OverrideGroupSigningCertificate":     ubx.FieldSpec{WireName: "override_group_signing_certificate"},
+	"Sha2AlgorithmFormat":                 ubx.FieldSpec{WireName: "sha2_algorithm_format"},
+	"SigningCertificateName":              ubx.FieldSpec{WireName: "signing_certificate_name"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_ValidationSettingsFields = ubx.FieldMap{
-		"CheckCertificateRevocationListOnReceive": ubx.FieldSpec{WireName: "check_certificate_revocation_list_on_receive"},
-		"CheckCertificateRevocationListOnSend": ubx.FieldSpec{WireName: "check_certificate_revocation_list_on_send"},
-		"CheckDuplicateMessage": ubx.FieldSpec{WireName: "check_duplicate_message"},
-		"CompressMessage": ubx.FieldSpec{WireName: "compress_message"},
-		"EncryptMessage": ubx.FieldSpec{WireName: "encrypt_message"},
-		"EncryptionAlgorithm": ubx.FieldSpec{WireName: "encryption_algorithm"},
-		"InterchangeDuplicatesValidityDays": ubx.FieldSpec{WireName: "interchange_duplicates_validity_days"},
-		"OverrideMessageProperties": ubx.FieldSpec{WireName: "override_message_properties"},
-		"SignMessage": ubx.FieldSpec{WireName: "sign_message"},
-		"SigningAlgorithm": ubx.FieldSpec{WireName: "signing_algorithm"},
-	}
+	"CheckCertificateRevocationListOnReceive": ubx.FieldSpec{WireName: "check_certificate_revocation_list_on_receive"},
+	"CheckCertificateRevocationListOnSend":    ubx.FieldSpec{WireName: "check_certificate_revocation_list_on_send"},
+	"CheckDuplicateMessage":                   ubx.FieldSpec{WireName: "check_duplicate_message"},
+	"CompressMessage":                         ubx.FieldSpec{WireName: "compress_message"},
+	"EncryptMessage":                          ubx.FieldSpec{WireName: "encrypt_message"},
+	"EncryptionAlgorithm":                     ubx.FieldSpec{WireName: "encryption_algorithm"},
+	"InterchangeDuplicatesValidityDays":       ubx.FieldSpec{WireName: "interchange_duplicates_validity_days"},
+	"OverrideMessageProperties":               ubx.FieldSpec{WireName: "override_message_properties"},
+	"SignMessage":                             ubx.FieldSpec{WireName: "sign_message"},
+	"SigningAlgorithm":                        ubx.FieldSpec{WireName: "signing_algorithm"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettingsFields = ubx.FieldMap{
-		"AcknowledgementConnectionSettings": ubx.FieldSpec{
-			WireName: "acknowledgement_connection_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_AcknowledgementConnectionSettingsFields,
-		},
-		"EnvelopeSettings": ubx.FieldSpec{
-			WireName: "envelope_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_EnvelopeSettingsFields,
-		},
-		"ErrorSettings": ubx.FieldSpec{
-			WireName: "error_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_ErrorSettingsFields,
-		},
-		"MdnSettings": ubx.FieldSpec{
-			WireName: "mdn_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_MdnSettingsFields,
-		},
-		"MessageConnectionSettings": ubx.FieldSpec{
-			WireName: "message_connection_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_AcknowledgementConnectionSettingsFields,
-		},
-		"SecuritySettings": ubx.FieldSpec{
-			WireName: "security_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_SecuritySettingsFields,
-		},
-		"ValidationSettings": ubx.FieldSpec{
-			WireName: "validation_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_ValidationSettingsFields,
-		},
-	}
+	"AcknowledgementConnectionSettings": ubx.FieldSpec{
+		WireName: "acknowledgement_connection_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_AcknowledgementConnectionSettingsFields,
+	},
+	"EnvelopeSettings": ubx.FieldSpec{
+		WireName: "envelope_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_EnvelopeSettingsFields,
+	},
+	"ErrorSettings": ubx.FieldSpec{
+		WireName: "error_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_ErrorSettingsFields,
+	},
+	"MdnSettings": ubx.FieldSpec{
+		WireName: "mdn_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_MdnSettingsFields,
+	},
+	"MessageConnectionSettings": ubx.FieldSpec{
+		WireName: "message_connection_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_AcknowledgementConnectionSettingsFields,
+	},
+	"SecuritySettings": ubx.FieldSpec{
+		WireName: "security_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_SecuritySettingsFields,
+	},
+	"ValidationSettings": ubx.FieldSpec{
+		WireName: "validation_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettings_ValidationSettingsFields,
+	},
+}
 
 var IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields = ubx.FieldMap{
-		"Qualifier": ubx.FieldSpec{WireName: "qualifier"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Qualifier": ubx.FieldSpec{WireName: "qualifier"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreementFields = ubx.FieldMap{
-		"ProtocolSettings": ubx.FieldSpec{
-			WireName: "protocol_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettingsFields,
-		},
-		"ReceiverBusinessIdentity": ubx.FieldSpec{
-			WireName: "receiver_business_identity",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
-		},
-		"SenderBusinessIdentity": ubx.FieldSpec{
-			WireName: "sender_business_identity",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
-		},
-	}
+	"ProtocolSettings": ubx.FieldSpec{
+		WireName: "protocol_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ProtocolSettingsFields,
+	},
+	"ReceiverBusinessIdentity": ubx.FieldSpec{
+		WireName: "receiver_business_identity",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
+	},
+	"SenderBusinessIdentity": ubx.FieldSpec{
+		WireName: "sender_business_identity",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
+	},
+}
 
 var IntegrationAccountAgreement_Properties_Content_AS2Fields = ubx.FieldMap{
-		"ReceiveAgreement": ubx.FieldSpec{
-			WireName: "receive_agreement",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreementFields,
-		},
-		"SendAgreement": ubx.FieldSpec{
-			WireName: "send_agreement",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreementFields,
-		},
-	}
+	"ReceiveAgreement": ubx.FieldSpec{
+		WireName: "receive_agreement",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreementFields,
+	},
+	"SendAgreement": ubx.FieldSpec{
+		WireName: "send_agreement",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreementFields,
+	},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_AcknowledgementSettingsFields = ubx.FieldMap{
-		"AcknowledgementControlNumberLowerBound": ubx.FieldSpec{WireName: "acknowledgement_control_number_lower_bound"},
-		"AcknowledgementControlNumberPrefix": ubx.FieldSpec{WireName: "acknowledgement_control_number_prefix"},
-		"AcknowledgementControlNumberSuffix": ubx.FieldSpec{WireName: "acknowledgement_control_number_suffix"},
-		"AcknowledgementControlNumberUpperBound": ubx.FieldSpec{WireName: "acknowledgement_control_number_upper_bound"},
-		"BatchFunctionalAcknowledgements": ubx.FieldSpec{WireName: "batch_functional_acknowledgements"},
-		"BatchTechnicalAcknowledgements": ubx.FieldSpec{WireName: "batch_technical_acknowledgements"},
-		"NeedFunctionalAcknowledgement": ubx.FieldSpec{WireName: "need_functional_acknowledgement"},
-		"NeedLoopForValidMessages": ubx.FieldSpec{WireName: "need_loop_for_valid_messages"},
-		"NeedTechnicalAcknowledgement": ubx.FieldSpec{WireName: "need_technical_acknowledgement"},
-		"RolloverAcknowledgementControlNumber": ubx.FieldSpec{WireName: "rollover_acknowledgement_control_number"},
-		"SendSynchronousAcknowledgement": ubx.FieldSpec{WireName: "send_synchronous_acknowledgement"},
-	}
+	"AcknowledgementControlNumberLowerBound": ubx.FieldSpec{WireName: "acknowledgement_control_number_lower_bound"},
+	"AcknowledgementControlNumberPrefix":     ubx.FieldSpec{WireName: "acknowledgement_control_number_prefix"},
+	"AcknowledgementControlNumberSuffix":     ubx.FieldSpec{WireName: "acknowledgement_control_number_suffix"},
+	"AcknowledgementControlNumberUpperBound": ubx.FieldSpec{WireName: "acknowledgement_control_number_upper_bound"},
+	"BatchFunctionalAcknowledgements":        ubx.FieldSpec{WireName: "batch_functional_acknowledgements"},
+	"BatchTechnicalAcknowledgements":         ubx.FieldSpec{WireName: "batch_technical_acknowledgements"},
+	"NeedFunctionalAcknowledgement":          ubx.FieldSpec{WireName: "need_functional_acknowledgement"},
+	"NeedLoopForValidMessages":               ubx.FieldSpec{WireName: "need_loop_for_valid_messages"},
+	"NeedTechnicalAcknowledgement":           ubx.FieldSpec{WireName: "need_technical_acknowledgement"},
+	"RolloverAcknowledgementControlNumber":   ubx.FieldSpec{WireName: "rollover_acknowledgement_control_number"},
+	"SendSynchronousAcknowledgement":         ubx.FieldSpec{WireName: "send_synchronous_acknowledgement"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EdifactDelimiterOverridesFields = ubx.FieldMap{
-		"ComponentSeparator": ubx.FieldSpec{WireName: "component_separator"},
-		"DataElementSeparator": ubx.FieldSpec{WireName: "data_element_separator"},
-		"DecimalPointIndicator": ubx.FieldSpec{WireName: "decimal_point_indicator"},
-		"MessageAssociationAssignedCode": ubx.FieldSpec{WireName: "message_association_assigned_code"},
-		"MessageId": ubx.FieldSpec{WireName: "message_id"},
-		"MessageRelease": ubx.FieldSpec{WireName: "message_release"},
-		"MessageVersion": ubx.FieldSpec{WireName: "message_version"},
-		"ReleaseIndicator": ubx.FieldSpec{WireName: "release_indicator"},
-		"RepetitionSeparator": ubx.FieldSpec{WireName: "repetition_separator"},
-		"SegmentTerminator": ubx.FieldSpec{WireName: "segment_terminator"},
-		"SegmentTerminatorSuffix": ubx.FieldSpec{WireName: "segment_terminator_suffix"},
-		"TargetNamespace": ubx.FieldSpec{WireName: "target_namespace"},
-	}
+	"ComponentSeparator":             ubx.FieldSpec{WireName: "component_separator"},
+	"DataElementSeparator":           ubx.FieldSpec{WireName: "data_element_separator"},
+	"DecimalPointIndicator":          ubx.FieldSpec{WireName: "decimal_point_indicator"},
+	"MessageAssociationAssignedCode": ubx.FieldSpec{WireName: "message_association_assigned_code"},
+	"MessageId":                      ubx.FieldSpec{WireName: "message_id"},
+	"MessageRelease":                 ubx.FieldSpec{WireName: "message_release"},
+	"MessageVersion":                 ubx.FieldSpec{WireName: "message_version"},
+	"ReleaseIndicator":               ubx.FieldSpec{WireName: "release_indicator"},
+	"RepetitionSeparator":            ubx.FieldSpec{WireName: "repetition_separator"},
+	"SegmentTerminator":              ubx.FieldSpec{WireName: "segment_terminator"},
+	"SegmentTerminatorSuffix":        ubx.FieldSpec{WireName: "segment_terminator_suffix"},
+	"TargetNamespace":                ubx.FieldSpec{WireName: "target_namespace"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeOverridesFields = ubx.FieldMap{
-		"ApplicationPassword": ubx.FieldSpec{WireName: "application_password"},
-		"AssociationAssignedCode": ubx.FieldSpec{WireName: "association_assigned_code"},
-		"ControllingAgencyCode": ubx.FieldSpec{WireName: "controlling_agency_code"},
-		"FunctionalGroupId": ubx.FieldSpec{WireName: "functional_group_id"},
-		"GroupHeaderMessageRelease": ubx.FieldSpec{WireName: "group_header_message_release"},
-		"GroupHeaderMessageVersion": ubx.FieldSpec{WireName: "group_header_message_version"},
-		"MessageAssociationAssignedCode": ubx.FieldSpec{WireName: "message_association_assigned_code"},
-		"MessageId": ubx.FieldSpec{WireName: "message_id"},
-		"MessageRelease": ubx.FieldSpec{WireName: "message_release"},
-		"MessageVersion": ubx.FieldSpec{WireName: "message_version"},
-		"ReceiverApplicationId": ubx.FieldSpec{WireName: "receiver_application_id"},
-		"ReceiverApplicationQualifier": ubx.FieldSpec{WireName: "receiver_application_qualifier"},
-		"SenderApplicationId": ubx.FieldSpec{WireName: "sender_application_id"},
-		"SenderApplicationQualifier": ubx.FieldSpec{WireName: "sender_application_qualifier"},
-		"TargetNamespace": ubx.FieldSpec{WireName: "target_namespace"},
-	}
+	"ApplicationPassword":            ubx.FieldSpec{WireName: "application_password"},
+	"AssociationAssignedCode":        ubx.FieldSpec{WireName: "association_assigned_code"},
+	"ControllingAgencyCode":          ubx.FieldSpec{WireName: "controlling_agency_code"},
+	"FunctionalGroupId":              ubx.FieldSpec{WireName: "functional_group_id"},
+	"GroupHeaderMessageRelease":      ubx.FieldSpec{WireName: "group_header_message_release"},
+	"GroupHeaderMessageVersion":      ubx.FieldSpec{WireName: "group_header_message_version"},
+	"MessageAssociationAssignedCode": ubx.FieldSpec{WireName: "message_association_assigned_code"},
+	"MessageId":                      ubx.FieldSpec{WireName: "message_id"},
+	"MessageRelease":                 ubx.FieldSpec{WireName: "message_release"},
+	"MessageVersion":                 ubx.FieldSpec{WireName: "message_version"},
+	"ReceiverApplicationId":          ubx.FieldSpec{WireName: "receiver_application_id"},
+	"ReceiverApplicationQualifier":   ubx.FieldSpec{WireName: "receiver_application_qualifier"},
+	"SenderApplicationId":            ubx.FieldSpec{WireName: "sender_application_id"},
+	"SenderApplicationQualifier":     ubx.FieldSpec{WireName: "sender_application_qualifier"},
+	"TargetNamespace":                ubx.FieldSpec{WireName: "target_namespace"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeSettingsFields = ubx.FieldMap{
-		"ApplicationReferenceId": ubx.FieldSpec{WireName: "application_reference_id"},
-		"ApplyDelimiterStringAdvice": ubx.FieldSpec{WireName: "apply_delimiter_string_advice"},
-		"CommunicationAgreementId": ubx.FieldSpec{WireName: "communication_agreement_id"},
-		"CreateGroupingSegments": ubx.FieldSpec{WireName: "create_grouping_segments"},
-		"EnableDefaultGroupHeaders": ubx.FieldSpec{WireName: "enable_default_group_headers"},
-		"FunctionalGroupId": ubx.FieldSpec{WireName: "functional_group_id"},
-		"GroupApplicationPassword": ubx.FieldSpec{WireName: "group_application_password"},
-		"GroupApplicationReceiverId": ubx.FieldSpec{WireName: "group_application_receiver_id"},
-		"GroupApplicationReceiverQualifier": ubx.FieldSpec{WireName: "group_application_receiver_qualifier"},
-		"GroupApplicationSenderId": ubx.FieldSpec{WireName: "group_application_sender_id"},
-		"GroupApplicationSenderQualifier": ubx.FieldSpec{WireName: "group_application_sender_qualifier"},
-		"GroupAssociationAssignedCode": ubx.FieldSpec{WireName: "group_association_assigned_code"},
-		"GroupControlNumberLowerBound": ubx.FieldSpec{WireName: "group_control_number_lower_bound"},
-		"GroupControlNumberPrefix": ubx.FieldSpec{WireName: "group_control_number_prefix"},
-		"GroupControlNumberSuffix": ubx.FieldSpec{WireName: "group_control_number_suffix"},
-		"GroupControlNumberUpperBound": ubx.FieldSpec{WireName: "group_control_number_upper_bound"},
-		"GroupControllingAgencyCode": ubx.FieldSpec{WireName: "group_controlling_agency_code"},
-		"GroupMessageRelease": ubx.FieldSpec{WireName: "group_message_release"},
-		"GroupMessageVersion": ubx.FieldSpec{WireName: "group_message_version"},
-		"InterchangeControlNumberLowerBound": ubx.FieldSpec{WireName: "interchange_control_number_lower_bound"},
-		"InterchangeControlNumberPrefix": ubx.FieldSpec{WireName: "interchange_control_number_prefix"},
-		"InterchangeControlNumberSuffix": ubx.FieldSpec{WireName: "interchange_control_number_suffix"},
-		"InterchangeControlNumberUpperBound": ubx.FieldSpec{WireName: "interchange_control_number_upper_bound"},
-		"IsTestInterchange": ubx.FieldSpec{WireName: "is_test_interchange"},
-		"OverwriteExistingTransactionSetControlNumber": ubx.FieldSpec{WireName: "overwrite_existing_transaction_set_control_number"},
-		"ProcessingPriorityCode": ubx.FieldSpec{WireName: "processing_priority_code"},
-		"ReceiverInternalIdentification": ubx.FieldSpec{WireName: "receiver_internal_identification"},
-		"ReceiverInternalSubIdentification": ubx.FieldSpec{WireName: "receiver_internal_sub_identification"},
-		"ReceiverReverseRoutingAddress": ubx.FieldSpec{WireName: "receiver_reverse_routing_address"},
-		"RecipientReferencePasswordQualifier": ubx.FieldSpec{WireName: "recipient_reference_password_qualifier"},
-		"RecipientReferencePasswordValue": ubx.FieldSpec{WireName: "recipient_reference_password_value"},
-		"RolloverGroupControlNumber": ubx.FieldSpec{WireName: "rollover_group_control_number"},
-		"RolloverInterchangeControlNumber": ubx.FieldSpec{WireName: "rollover_interchange_control_number"},
-		"RolloverTransactionSetControlNumber": ubx.FieldSpec{WireName: "rollover_transaction_set_control_number"},
-		"SenderInternalIdentification": ubx.FieldSpec{WireName: "sender_internal_identification"},
-		"SenderInternalSubIdentification": ubx.FieldSpec{WireName: "sender_internal_sub_identification"},
-		"SenderReverseRoutingAddress": ubx.FieldSpec{WireName: "sender_reverse_routing_address"},
-		"TransactionSetControlNumberLowerBound": ubx.FieldSpec{WireName: "transaction_set_control_number_lower_bound"},
-		"TransactionSetControlNumberPrefix": ubx.FieldSpec{WireName: "transaction_set_control_number_prefix"},
-		"TransactionSetControlNumberSuffix": ubx.FieldSpec{WireName: "transaction_set_control_number_suffix"},
-		"TransactionSetControlNumberUpperBound": ubx.FieldSpec{WireName: "transaction_set_control_number_upper_bound"},
-	}
+	"ApplicationReferenceId":                       ubx.FieldSpec{WireName: "application_reference_id"},
+	"ApplyDelimiterStringAdvice":                   ubx.FieldSpec{WireName: "apply_delimiter_string_advice"},
+	"CommunicationAgreementId":                     ubx.FieldSpec{WireName: "communication_agreement_id"},
+	"CreateGroupingSegments":                       ubx.FieldSpec{WireName: "create_grouping_segments"},
+	"EnableDefaultGroupHeaders":                    ubx.FieldSpec{WireName: "enable_default_group_headers"},
+	"FunctionalGroupId":                            ubx.FieldSpec{WireName: "functional_group_id"},
+	"GroupApplicationPassword":                     ubx.FieldSpec{WireName: "group_application_password"},
+	"GroupApplicationReceiverId":                   ubx.FieldSpec{WireName: "group_application_receiver_id"},
+	"GroupApplicationReceiverQualifier":            ubx.FieldSpec{WireName: "group_application_receiver_qualifier"},
+	"GroupApplicationSenderId":                     ubx.FieldSpec{WireName: "group_application_sender_id"},
+	"GroupApplicationSenderQualifier":              ubx.FieldSpec{WireName: "group_application_sender_qualifier"},
+	"GroupAssociationAssignedCode":                 ubx.FieldSpec{WireName: "group_association_assigned_code"},
+	"GroupControlNumberLowerBound":                 ubx.FieldSpec{WireName: "group_control_number_lower_bound"},
+	"GroupControlNumberPrefix":                     ubx.FieldSpec{WireName: "group_control_number_prefix"},
+	"GroupControlNumberSuffix":                     ubx.FieldSpec{WireName: "group_control_number_suffix"},
+	"GroupControlNumberUpperBound":                 ubx.FieldSpec{WireName: "group_control_number_upper_bound"},
+	"GroupControllingAgencyCode":                   ubx.FieldSpec{WireName: "group_controlling_agency_code"},
+	"GroupMessageRelease":                          ubx.FieldSpec{WireName: "group_message_release"},
+	"GroupMessageVersion":                          ubx.FieldSpec{WireName: "group_message_version"},
+	"InterchangeControlNumberLowerBound":           ubx.FieldSpec{WireName: "interchange_control_number_lower_bound"},
+	"InterchangeControlNumberPrefix":               ubx.FieldSpec{WireName: "interchange_control_number_prefix"},
+	"InterchangeControlNumberSuffix":               ubx.FieldSpec{WireName: "interchange_control_number_suffix"},
+	"InterchangeControlNumberUpperBound":           ubx.FieldSpec{WireName: "interchange_control_number_upper_bound"},
+	"IsTestInterchange":                            ubx.FieldSpec{WireName: "is_test_interchange"},
+	"OverwriteExistingTransactionSetControlNumber": ubx.FieldSpec{WireName: "overwrite_existing_transaction_set_control_number"},
+	"ProcessingPriorityCode":                       ubx.FieldSpec{WireName: "processing_priority_code"},
+	"ReceiverInternalIdentification":               ubx.FieldSpec{WireName: "receiver_internal_identification"},
+	"ReceiverInternalSubIdentification":            ubx.FieldSpec{WireName: "receiver_internal_sub_identification"},
+	"ReceiverReverseRoutingAddress":                ubx.FieldSpec{WireName: "receiver_reverse_routing_address"},
+	"RecipientReferencePasswordQualifier":          ubx.FieldSpec{WireName: "recipient_reference_password_qualifier"},
+	"RecipientReferencePasswordValue":              ubx.FieldSpec{WireName: "recipient_reference_password_value"},
+	"RolloverGroupControlNumber":                   ubx.FieldSpec{WireName: "rollover_group_control_number"},
+	"RolloverInterchangeControlNumber":             ubx.FieldSpec{WireName: "rollover_interchange_control_number"},
+	"RolloverTransactionSetControlNumber":          ubx.FieldSpec{WireName: "rollover_transaction_set_control_number"},
+	"SenderInternalIdentification":                 ubx.FieldSpec{WireName: "sender_internal_identification"},
+	"SenderInternalSubIdentification":              ubx.FieldSpec{WireName: "sender_internal_sub_identification"},
+	"SenderReverseRoutingAddress":                  ubx.FieldSpec{WireName: "sender_reverse_routing_address"},
+	"TransactionSetControlNumberLowerBound":        ubx.FieldSpec{WireName: "transaction_set_control_number_lower_bound"},
+	"TransactionSetControlNumberPrefix":            ubx.FieldSpec{WireName: "transaction_set_control_number_prefix"},
+	"TransactionSetControlNumberSuffix":            ubx.FieldSpec{WireName: "transaction_set_control_number_suffix"},
+	"TransactionSetControlNumberUpperBound":        ubx.FieldSpec{WireName: "transaction_set_control_number_upper_bound"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_FramingSettingsFields = ubx.FieldMap{
-		"CharacterEncoding": ubx.FieldSpec{WireName: "character_encoding"},
-		"CharacterSet": ubx.FieldSpec{WireName: "character_set"},
-		"ComponentSeparator": ubx.FieldSpec{WireName: "component_separator"},
-		"DataElementSeparator": ubx.FieldSpec{WireName: "data_element_separator"},
-		"DecimalPointIndicator": ubx.FieldSpec{WireName: "decimal_point_indicator"},
-		"ProtocolVersion": ubx.FieldSpec{WireName: "protocol_version"},
-		"ReleaseIndicator": ubx.FieldSpec{WireName: "release_indicator"},
-		"RepetitionSeparator": ubx.FieldSpec{WireName: "repetition_separator"},
-		"SegmentTerminator": ubx.FieldSpec{WireName: "segment_terminator"},
-		"SegmentTerminatorSuffix": ubx.FieldSpec{WireName: "segment_terminator_suffix"},
-		"ServiceCodeListDirectoryVersion": ubx.FieldSpec{WireName: "service_code_list_directory_version"},
-	}
+	"CharacterEncoding":               ubx.FieldSpec{WireName: "character_encoding"},
+	"CharacterSet":                    ubx.FieldSpec{WireName: "character_set"},
+	"ComponentSeparator":              ubx.FieldSpec{WireName: "component_separator"},
+	"DataElementSeparator":            ubx.FieldSpec{WireName: "data_element_separator"},
+	"DecimalPointIndicator":           ubx.FieldSpec{WireName: "decimal_point_indicator"},
+	"ProtocolVersion":                 ubx.FieldSpec{WireName: "protocol_version"},
+	"ReleaseIndicator":                ubx.FieldSpec{WireName: "release_indicator"},
+	"RepetitionSeparator":             ubx.FieldSpec{WireName: "repetition_separator"},
+	"SegmentTerminator":               ubx.FieldSpec{WireName: "segment_terminator"},
+	"SegmentTerminatorSuffix":         ubx.FieldSpec{WireName: "segment_terminator_suffix"},
+	"ServiceCodeListDirectoryVersion": ubx.FieldSpec{WireName: "service_code_list_directory_version"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterFields = ubx.FieldMap{
-		"MessageFilterType": ubx.FieldSpec{WireName: "message_filter_type"},
-	}
+	"MessageFilterType": ubx.FieldSpec{WireName: "message_filter_type"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterListFields = ubx.FieldMap{
-		"MessageId": ubx.FieldSpec{WireName: "message_id"},
-	}
+	"MessageId": ubx.FieldSpec{WireName: "message_id"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ProcessingSettingsFields = ubx.FieldMap{
-		"CreateEmptyXmlTagsForTrailingSeparators": ubx.FieldSpec{WireName: "create_empty_xml_tags_for_trailing_separators"},
-		"MaskSecurityInfo": ubx.FieldSpec{WireName: "mask_security_info"},
-		"PreserveInterchange": ubx.FieldSpec{WireName: "preserve_interchange"},
-		"SuspendInterchangeOnError": ubx.FieldSpec{WireName: "suspend_interchange_on_error"},
-		"UseDotAsDecimalSeparator": ubx.FieldSpec{WireName: "use_dot_as_decimal_separator"},
-	}
+	"CreateEmptyXmlTagsForTrailingSeparators": ubx.FieldSpec{WireName: "create_empty_xml_tags_for_trailing_separators"},
+	"MaskSecurityInfo":                        ubx.FieldSpec{WireName: "mask_security_info"},
+	"PreserveInterchange":                     ubx.FieldSpec{WireName: "preserve_interchange"},
+	"SuspendInterchangeOnError":               ubx.FieldSpec{WireName: "suspend_interchange_on_error"},
+	"UseDotAsDecimalSeparator":                ubx.FieldSpec{WireName: "use_dot_as_decimal_separator"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_SchemaReferencesFields = ubx.FieldMap{
-		"AssociationAssignedCode": ubx.FieldSpec{WireName: "association_assigned_code"},
-		"MessageId": ubx.FieldSpec{WireName: "message_id"},
-		"MessageRelease": ubx.FieldSpec{WireName: "message_release"},
-		"MessageVersion": ubx.FieldSpec{WireName: "message_version"},
-		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
-		"SenderApplicationId": ubx.FieldSpec{WireName: "sender_application_id"},
-		"SenderApplicationQualifier": ubx.FieldSpec{WireName: "sender_application_qualifier"},
-	}
+	"AssociationAssignedCode":    ubx.FieldSpec{WireName: "association_assigned_code"},
+	"MessageId":                  ubx.FieldSpec{WireName: "message_id"},
+	"MessageRelease":             ubx.FieldSpec{WireName: "message_release"},
+	"MessageVersion":             ubx.FieldSpec{WireName: "message_version"},
+	"SchemaName":                 ubx.FieldSpec{WireName: "schema_name"},
+	"SenderApplicationId":        ubx.FieldSpec{WireName: "sender_application_id"},
+	"SenderApplicationQualifier": ubx.FieldSpec{WireName: "sender_application_qualifier"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationOverridesFields = ubx.FieldMap{
-		"AllowLeadingAndTrailingSpacesAndZeroes": ubx.FieldSpec{WireName: "allow_leading_and_trailing_spaces_and_zeroes"},
-		"EnforceCharacterSet": ubx.FieldSpec{WireName: "enforce_character_set"},
-		"MessageId": ubx.FieldSpec{WireName: "message_id"},
-		"TrailingSeparatorPolicy": ubx.FieldSpec{WireName: "trailing_separator_policy"},
-		"TrimLeadingAndTrailingSpacesAndZeroes": ubx.FieldSpec{WireName: "trim_leading_and_trailing_spaces_and_zeroes"},
-		"ValidateEditypes": ubx.FieldSpec{WireName: "validate_editypes"},
-		"ValidateXsdtypes": ubx.FieldSpec{WireName: "validate_xsdtypes"},
-	}
+	"AllowLeadingAndTrailingSpacesAndZeroes": ubx.FieldSpec{WireName: "allow_leading_and_trailing_spaces_and_zeroes"},
+	"EnforceCharacterSet":                    ubx.FieldSpec{WireName: "enforce_character_set"},
+	"MessageId":                              ubx.FieldSpec{WireName: "message_id"},
+	"TrailingSeparatorPolicy":                ubx.FieldSpec{WireName: "trailing_separator_policy"},
+	"TrimLeadingAndTrailingSpacesAndZeroes":  ubx.FieldSpec{WireName: "trim_leading_and_trailing_spaces_and_zeroes"},
+	"ValidateEditypes":                       ubx.FieldSpec{WireName: "validate_editypes"},
+	"ValidateXsdtypes":                       ubx.FieldSpec{WireName: "validate_xsdtypes"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationSettingsFields = ubx.FieldMap{
-		"AllowLeadingAndTrailingSpacesAndZeroes": ubx.FieldSpec{WireName: "allow_leading_and_trailing_spaces_and_zeroes"},
-		"CheckDuplicateGroupControlNumber": ubx.FieldSpec{WireName: "check_duplicate_group_control_number"},
-		"CheckDuplicateInterchangeControlNumber": ubx.FieldSpec{WireName: "check_duplicate_interchange_control_number"},
-		"CheckDuplicateTransactionSetControlNumber": ubx.FieldSpec{WireName: "check_duplicate_transaction_set_control_number"},
-		"InterchangeControlNumberValidityDays": ubx.FieldSpec{WireName: "interchange_control_number_validity_days"},
-		"TrailingSeparatorPolicy": ubx.FieldSpec{WireName: "trailing_separator_policy"},
-		"TrimLeadingAndTrailingSpacesAndZeroes": ubx.FieldSpec{WireName: "trim_leading_and_trailing_spaces_and_zeroes"},
-		"ValidateCharacterSet": ubx.FieldSpec{WireName: "validate_character_set"},
-		"ValidateEditypes": ubx.FieldSpec{WireName: "validate_editypes"},
-		"ValidateXsdtypes": ubx.FieldSpec{WireName: "validate_xsdtypes"},
-	}
+	"AllowLeadingAndTrailingSpacesAndZeroes":    ubx.FieldSpec{WireName: "allow_leading_and_trailing_spaces_and_zeroes"},
+	"CheckDuplicateGroupControlNumber":          ubx.FieldSpec{WireName: "check_duplicate_group_control_number"},
+	"CheckDuplicateInterchangeControlNumber":    ubx.FieldSpec{WireName: "check_duplicate_interchange_control_number"},
+	"CheckDuplicateTransactionSetControlNumber": ubx.FieldSpec{WireName: "check_duplicate_transaction_set_control_number"},
+	"InterchangeControlNumberValidityDays":      ubx.FieldSpec{WireName: "interchange_control_number_validity_days"},
+	"TrailingSeparatorPolicy":                   ubx.FieldSpec{WireName: "trailing_separator_policy"},
+	"TrimLeadingAndTrailingSpacesAndZeroes":     ubx.FieldSpec{WireName: "trim_leading_and_trailing_spaces_and_zeroes"},
+	"ValidateCharacterSet":                      ubx.FieldSpec{WireName: "validate_character_set"},
+	"ValidateEditypes":                          ubx.FieldSpec{WireName: "validate_editypes"},
+	"ValidateXsdtypes":                          ubx.FieldSpec{WireName: "validate_xsdtypes"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettingsFields = ubx.FieldMap{
-		"AcknowledgementSettings": ubx.FieldSpec{
-			WireName: "acknowledgement_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_AcknowledgementSettingsFields,
-		},
-		"EdifactDelimiterOverrides": ubx.FieldSpec{
-			WireName: "edifact_delimiter_overrides",
-			Kind: "list",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EdifactDelimiterOverridesFields,
-		},
-		"EnvelopeOverrides": ubx.FieldSpec{
-			WireName: "envelope_overrides",
-			Kind: "list",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeOverridesFields,
-		},
-		"EnvelopeSettings": ubx.FieldSpec{
-			WireName: "envelope_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeSettingsFields,
-		},
-		"FramingSettings": ubx.FieldSpec{
-			WireName: "framing_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_FramingSettingsFields,
-		},
-		"MessageFilter": ubx.FieldSpec{
-			WireName: "message_filter",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterFields,
-		},
-		"MessageFilterList": ubx.FieldSpec{
-			WireName: "message_filter_list",
-			Kind: "list",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterListFields,
-		},
-		"ProcessingSettings": ubx.FieldSpec{
-			WireName: "processing_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ProcessingSettingsFields,
-		},
-		"SchemaReferences": ubx.FieldSpec{
-			WireName: "schema_references",
-			Kind: "list",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_SchemaReferencesFields,
-		},
-		"ValidationOverrides": ubx.FieldSpec{
-			WireName: "validation_overrides",
-			Kind: "list",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationOverridesFields,
-		},
-		"ValidationSettings": ubx.FieldSpec{
-			WireName: "validation_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationSettingsFields,
-		},
-	}
+	"AcknowledgementSettings": ubx.FieldSpec{
+		WireName: "acknowledgement_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_AcknowledgementSettingsFields,
+	},
+	"EdifactDelimiterOverrides": ubx.FieldSpec{
+		WireName: "edifact_delimiter_overrides",
+		Kind:     "list",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EdifactDelimiterOverridesFields,
+	},
+	"EnvelopeOverrides": ubx.FieldSpec{
+		WireName: "envelope_overrides",
+		Kind:     "list",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeOverridesFields,
+	},
+	"EnvelopeSettings": ubx.FieldSpec{
+		WireName: "envelope_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_EnvelopeSettingsFields,
+	},
+	"FramingSettings": ubx.FieldSpec{
+		WireName: "framing_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_FramingSettingsFields,
+	},
+	"MessageFilter": ubx.FieldSpec{
+		WireName: "message_filter",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterFields,
+	},
+	"MessageFilterList": ubx.FieldSpec{
+		WireName: "message_filter_list",
+		Kind:     "list",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterListFields,
+	},
+	"ProcessingSettings": ubx.FieldSpec{
+		WireName: "processing_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ProcessingSettingsFields,
+	},
+	"SchemaReferences": ubx.FieldSpec{
+		WireName: "schema_references",
+		Kind:     "list",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_SchemaReferencesFields,
+	},
+	"ValidationOverrides": ubx.FieldSpec{
+		WireName: "validation_overrides",
+		Kind:     "list",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationOverridesFields,
+	},
+	"ValidationSettings": ubx.FieldSpec{
+		WireName: "validation_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationSettingsFields,
+	},
+}
 
 var IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreementFields = ubx.FieldMap{
-		"ProtocolSettings": ubx.FieldSpec{
-			WireName: "protocol_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettingsFields,
-		},
-		"ReceiverBusinessIdentity": ubx.FieldSpec{
-			WireName: "receiver_business_identity",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
-		},
-		"SenderBusinessIdentity": ubx.FieldSpec{
-			WireName: "sender_business_identity",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
-		},
-	}
+	"ProtocolSettings": ubx.FieldSpec{
+		WireName: "protocol_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettingsFields,
+	},
+	"ReceiverBusinessIdentity": ubx.FieldSpec{
+		WireName: "receiver_business_identity",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
+	},
+	"SenderBusinessIdentity": ubx.FieldSpec{
+		WireName: "sender_business_identity",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
+	},
+}
 
 var IntegrationAccountAgreement_Properties_Content_EdifactFields = ubx.FieldMap{
-		"ReceiveAgreement": ubx.FieldSpec{
-			WireName: "receive_agreement",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreementFields,
-		},
-		"SendAgreement": ubx.FieldSpec{
-			WireName: "send_agreement",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreementFields,
-		},
-	}
+	"ReceiveAgreement": ubx.FieldSpec{
+		WireName: "receive_agreement",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreementFields,
+	},
+	"SendAgreement": ubx.FieldSpec{
+		WireName: "send_agreement",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreementFields,
+	},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_AcknowledgementSettingsFields = ubx.FieldMap{
-		"AcknowledgementControlNumberLowerBound": ubx.FieldSpec{WireName: "acknowledgement_control_number_lower_bound"},
-		"AcknowledgementControlNumberPrefix": ubx.FieldSpec{WireName: "acknowledgement_control_number_prefix"},
-		"AcknowledgementControlNumberSuffix": ubx.FieldSpec{WireName: "acknowledgement_control_number_suffix"},
-		"AcknowledgementControlNumberUpperBound": ubx.FieldSpec{WireName: "acknowledgement_control_number_upper_bound"},
-		"BatchFunctionalAcknowledgements": ubx.FieldSpec{WireName: "batch_functional_acknowledgements"},
-		"BatchImplementationAcknowledgements": ubx.FieldSpec{WireName: "batch_implementation_acknowledgements"},
-		"BatchTechnicalAcknowledgements": ubx.FieldSpec{WireName: "batch_technical_acknowledgements"},
-		"FunctionalAcknowledgementVersion": ubx.FieldSpec{WireName: "functional_acknowledgement_version"},
-		"ImplementationAcknowledgementVersion": ubx.FieldSpec{WireName: "implementation_acknowledgement_version"},
-		"NeedFunctionalAcknowledgement": ubx.FieldSpec{WireName: "need_functional_acknowledgement"},
-		"NeedImplementationAcknowledgement": ubx.FieldSpec{WireName: "need_implementation_acknowledgement"},
-		"NeedLoopForValidMessages": ubx.FieldSpec{WireName: "need_loop_for_valid_messages"},
-		"NeedTechnicalAcknowledgement": ubx.FieldSpec{WireName: "need_technical_acknowledgement"},
-		"RolloverAcknowledgementControlNumber": ubx.FieldSpec{WireName: "rollover_acknowledgement_control_number"},
-		"SendSynchronousAcknowledgement": ubx.FieldSpec{WireName: "send_synchronous_acknowledgement"},
-	}
+	"AcknowledgementControlNumberLowerBound": ubx.FieldSpec{WireName: "acknowledgement_control_number_lower_bound"},
+	"AcknowledgementControlNumberPrefix":     ubx.FieldSpec{WireName: "acknowledgement_control_number_prefix"},
+	"AcknowledgementControlNumberSuffix":     ubx.FieldSpec{WireName: "acknowledgement_control_number_suffix"},
+	"AcknowledgementControlNumberUpperBound": ubx.FieldSpec{WireName: "acknowledgement_control_number_upper_bound"},
+	"BatchFunctionalAcknowledgements":        ubx.FieldSpec{WireName: "batch_functional_acknowledgements"},
+	"BatchImplementationAcknowledgements":    ubx.FieldSpec{WireName: "batch_implementation_acknowledgements"},
+	"BatchTechnicalAcknowledgements":         ubx.FieldSpec{WireName: "batch_technical_acknowledgements"},
+	"FunctionalAcknowledgementVersion":       ubx.FieldSpec{WireName: "functional_acknowledgement_version"},
+	"ImplementationAcknowledgementVersion":   ubx.FieldSpec{WireName: "implementation_acknowledgement_version"},
+	"NeedFunctionalAcknowledgement":          ubx.FieldSpec{WireName: "need_functional_acknowledgement"},
+	"NeedImplementationAcknowledgement":      ubx.FieldSpec{WireName: "need_implementation_acknowledgement"},
+	"NeedLoopForValidMessages":               ubx.FieldSpec{WireName: "need_loop_for_valid_messages"},
+	"NeedTechnicalAcknowledgement":           ubx.FieldSpec{WireName: "need_technical_acknowledgement"},
+	"RolloverAcknowledgementControlNumber":   ubx.FieldSpec{WireName: "rollover_acknowledgement_control_number"},
+	"SendSynchronousAcknowledgement":         ubx.FieldSpec{WireName: "send_synchronous_acknowledgement"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeOverridesFields = ubx.FieldMap{
-		"DateFormat": ubx.FieldSpec{WireName: "date_format"},
-		"FunctionalIdentifierCode": ubx.FieldSpec{WireName: "functional_identifier_code"},
-		"HeaderVersion": ubx.FieldSpec{WireName: "header_version"},
-		"MessageId": ubx.FieldSpec{WireName: "message_id"},
-		"ProtocolVersion": ubx.FieldSpec{WireName: "protocol_version"},
-		"ReceiverApplicationId": ubx.FieldSpec{WireName: "receiver_application_id"},
-		"ResponsibleAgencyCode": ubx.FieldSpec{WireName: "responsible_agency_code"},
-		"SenderApplicationId": ubx.FieldSpec{WireName: "sender_application_id"},
-		"TargetNamespace": ubx.FieldSpec{WireName: "target_namespace"},
-		"TimeFormat": ubx.FieldSpec{WireName: "time_format"},
-	}
+	"DateFormat":               ubx.FieldSpec{WireName: "date_format"},
+	"FunctionalIdentifierCode": ubx.FieldSpec{WireName: "functional_identifier_code"},
+	"HeaderVersion":            ubx.FieldSpec{WireName: "header_version"},
+	"MessageId":                ubx.FieldSpec{WireName: "message_id"},
+	"ProtocolVersion":          ubx.FieldSpec{WireName: "protocol_version"},
+	"ReceiverApplicationId":    ubx.FieldSpec{WireName: "receiver_application_id"},
+	"ResponsibleAgencyCode":    ubx.FieldSpec{WireName: "responsible_agency_code"},
+	"SenderApplicationId":      ubx.FieldSpec{WireName: "sender_application_id"},
+	"TargetNamespace":          ubx.FieldSpec{WireName: "target_namespace"},
+	"TimeFormat":               ubx.FieldSpec{WireName: "time_format"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeSettingsFields = ubx.FieldMap{
-		"ControlStandardsId": ubx.FieldSpec{WireName: "control_standards_id"},
-		"ControlVersionNumber": ubx.FieldSpec{WireName: "control_version_number"},
-		"EnableDefaultGroupHeaders": ubx.FieldSpec{WireName: "enable_default_group_headers"},
-		"FunctionalGroupId": ubx.FieldSpec{WireName: "functional_group_id"},
-		"GroupControlNumberLowerBound": ubx.FieldSpec{WireName: "group_control_number_lower_bound"},
-		"GroupControlNumberUpperBound": ubx.FieldSpec{WireName: "group_control_number_upper_bound"},
-		"GroupHeaderAgencyCode": ubx.FieldSpec{WireName: "group_header_agency_code"},
-		"GroupHeaderDateFormat": ubx.FieldSpec{WireName: "group_header_date_format"},
-		"GroupHeaderTimeFormat": ubx.FieldSpec{WireName: "group_header_time_format"},
-		"GroupHeaderVersion": ubx.FieldSpec{WireName: "group_header_version"},
-		"InterchangeControlNumberLowerBound": ubx.FieldSpec{WireName: "interchange_control_number_lower_bound"},
-		"InterchangeControlNumberUpperBound": ubx.FieldSpec{WireName: "interchange_control_number_upper_bound"},
-		"OverwriteExistingTransactionSetControlNumber": ubx.FieldSpec{WireName: "overwrite_existing_transaction_set_control_number"},
-		"ReceiverApplicationId": ubx.FieldSpec{WireName: "receiver_application_id"},
-		"RolloverGroupControlNumber": ubx.FieldSpec{WireName: "rollover_group_control_number"},
-		"RolloverInterchangeControlNumber": ubx.FieldSpec{WireName: "rollover_interchange_control_number"},
-		"RolloverTransactionSetControlNumber": ubx.FieldSpec{WireName: "rollover_transaction_set_control_number"},
-		"SenderApplicationId": ubx.FieldSpec{WireName: "sender_application_id"},
-		"TransactionSetControlNumberLowerBound": ubx.FieldSpec{WireName: "transaction_set_control_number_lower_bound"},
-		"TransactionSetControlNumberPrefix": ubx.FieldSpec{WireName: "transaction_set_control_number_prefix"},
-		"TransactionSetControlNumberSuffix": ubx.FieldSpec{WireName: "transaction_set_control_number_suffix"},
-		"TransactionSetControlNumberUpperBound": ubx.FieldSpec{WireName: "transaction_set_control_number_upper_bound"},
-		"UsageIndicator": ubx.FieldSpec{WireName: "usage_indicator"},
-		"UseControlStandardsIdAsRepetitionCharacter": ubx.FieldSpec{WireName: "use_control_standards_id_as_repetition_character"},
-	}
+	"ControlStandardsId":                           ubx.FieldSpec{WireName: "control_standards_id"},
+	"ControlVersionNumber":                         ubx.FieldSpec{WireName: "control_version_number"},
+	"EnableDefaultGroupHeaders":                    ubx.FieldSpec{WireName: "enable_default_group_headers"},
+	"FunctionalGroupId":                            ubx.FieldSpec{WireName: "functional_group_id"},
+	"GroupControlNumberLowerBound":                 ubx.FieldSpec{WireName: "group_control_number_lower_bound"},
+	"GroupControlNumberUpperBound":                 ubx.FieldSpec{WireName: "group_control_number_upper_bound"},
+	"GroupHeaderAgencyCode":                        ubx.FieldSpec{WireName: "group_header_agency_code"},
+	"GroupHeaderDateFormat":                        ubx.FieldSpec{WireName: "group_header_date_format"},
+	"GroupHeaderTimeFormat":                        ubx.FieldSpec{WireName: "group_header_time_format"},
+	"GroupHeaderVersion":                           ubx.FieldSpec{WireName: "group_header_version"},
+	"InterchangeControlNumberLowerBound":           ubx.FieldSpec{WireName: "interchange_control_number_lower_bound"},
+	"InterchangeControlNumberUpperBound":           ubx.FieldSpec{WireName: "interchange_control_number_upper_bound"},
+	"OverwriteExistingTransactionSetControlNumber": ubx.FieldSpec{WireName: "overwrite_existing_transaction_set_control_number"},
+	"ReceiverApplicationId":                        ubx.FieldSpec{WireName: "receiver_application_id"},
+	"RolloverGroupControlNumber":                   ubx.FieldSpec{WireName: "rollover_group_control_number"},
+	"RolloverInterchangeControlNumber":             ubx.FieldSpec{WireName: "rollover_interchange_control_number"},
+	"RolloverTransactionSetControlNumber":          ubx.FieldSpec{WireName: "rollover_transaction_set_control_number"},
+	"SenderApplicationId":                          ubx.FieldSpec{WireName: "sender_application_id"},
+	"TransactionSetControlNumberLowerBound":        ubx.FieldSpec{WireName: "transaction_set_control_number_lower_bound"},
+	"TransactionSetControlNumberPrefix":            ubx.FieldSpec{WireName: "transaction_set_control_number_prefix"},
+	"TransactionSetControlNumberSuffix":            ubx.FieldSpec{WireName: "transaction_set_control_number_suffix"},
+	"TransactionSetControlNumberUpperBound":        ubx.FieldSpec{WireName: "transaction_set_control_number_upper_bound"},
+	"UsageIndicator":                               ubx.FieldSpec{WireName: "usage_indicator"},
+	"UseControlStandardsIdAsRepetitionCharacter":   ubx.FieldSpec{WireName: "use_control_standards_id_as_repetition_character"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_FramingSettingsFields = ubx.FieldMap{
-		"CharacterSet": ubx.FieldSpec{WireName: "character_set"},
-		"ComponentSeparator": ubx.FieldSpec{WireName: "component_separator"},
-		"DataElementSeparator": ubx.FieldSpec{WireName: "data_element_separator"},
-		"ReplaceCharacter": ubx.FieldSpec{WireName: "replace_character"},
-		"ReplaceSeparatorsInPayload": ubx.FieldSpec{WireName: "replace_separators_in_payload"},
-		"SegmentTerminator": ubx.FieldSpec{WireName: "segment_terminator"},
-		"SegmentTerminatorSuffix": ubx.FieldSpec{WireName: "segment_terminator_suffix"},
-	}
+	"CharacterSet":               ubx.FieldSpec{WireName: "character_set"},
+	"ComponentSeparator":         ubx.FieldSpec{WireName: "component_separator"},
+	"DataElementSeparator":       ubx.FieldSpec{WireName: "data_element_separator"},
+	"ReplaceCharacter":           ubx.FieldSpec{WireName: "replace_character"},
+	"ReplaceSeparatorsInPayload": ubx.FieldSpec{WireName: "replace_separators_in_payload"},
+	"SegmentTerminator":          ubx.FieldSpec{WireName: "segment_terminator"},
+	"SegmentTerminatorSuffix":    ubx.FieldSpec{WireName: "segment_terminator_suffix"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ProcessingSettingsFields = ubx.FieldMap{
-		"ConvertImpliedDecimal": ubx.FieldSpec{WireName: "convert_implied_decimal"},
-		"CreateEmptyXmlTagsForTrailingSeparators": ubx.FieldSpec{WireName: "create_empty_xml_tags_for_trailing_separators"},
-		"MaskSecurityInfo": ubx.FieldSpec{WireName: "mask_security_info"},
-		"PreserveInterchange": ubx.FieldSpec{WireName: "preserve_interchange"},
-		"SuspendInterchangeOnError": ubx.FieldSpec{WireName: "suspend_interchange_on_error"},
-		"UseDotAsDecimalSeparator": ubx.FieldSpec{WireName: "use_dot_as_decimal_separator"},
-	}
+	"ConvertImpliedDecimal":                   ubx.FieldSpec{WireName: "convert_implied_decimal"},
+	"CreateEmptyXmlTagsForTrailingSeparators": ubx.FieldSpec{WireName: "create_empty_xml_tags_for_trailing_separators"},
+	"MaskSecurityInfo":                        ubx.FieldSpec{WireName: "mask_security_info"},
+	"PreserveInterchange":                     ubx.FieldSpec{WireName: "preserve_interchange"},
+	"SuspendInterchangeOnError":               ubx.FieldSpec{WireName: "suspend_interchange_on_error"},
+	"UseDotAsDecimalSeparator":                ubx.FieldSpec{WireName: "use_dot_as_decimal_separator"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SchemaReferencesFields = ubx.FieldMap{
-		"MessageId": ubx.FieldSpec{WireName: "message_id"},
-		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
-		"SchemaVersion": ubx.FieldSpec{WireName: "schema_version"},
-		"SenderApplicationId": ubx.FieldSpec{WireName: "sender_application_id"},
-	}
+	"MessageId":           ubx.FieldSpec{WireName: "message_id"},
+	"SchemaName":          ubx.FieldSpec{WireName: "schema_name"},
+	"SchemaVersion":       ubx.FieldSpec{WireName: "schema_version"},
+	"SenderApplicationId": ubx.FieldSpec{WireName: "sender_application_id"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SecuritySettingsFields = ubx.FieldMap{
-		"AuthorizationQualifier": ubx.FieldSpec{WireName: "authorization_qualifier"},
-		"AuthorizationValue": ubx.FieldSpec{WireName: "authorization_value"},
-		"PasswordValue": ubx.FieldSpec{WireName: "password_value"},
-		"SecurityQualifier": ubx.FieldSpec{WireName: "security_qualifier"},
-	}
+	"AuthorizationQualifier": ubx.FieldSpec{WireName: "authorization_qualifier"},
+	"AuthorizationValue":     ubx.FieldSpec{WireName: "authorization_value"},
+	"PasswordValue":          ubx.FieldSpec{WireName: "password_value"},
+	"SecurityQualifier":      ubx.FieldSpec{WireName: "security_qualifier"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ValidationOverridesFields = ubx.FieldMap{
-		"AllowLeadingAndTrailingSpacesAndZeroes": ubx.FieldSpec{WireName: "allow_leading_and_trailing_spaces_and_zeroes"},
-		"MessageId": ubx.FieldSpec{WireName: "message_id"},
-		"TrailingSeparatorPolicy": ubx.FieldSpec{WireName: "trailing_separator_policy"},
-		"TrimLeadingAndTrailingSpacesAndZeroes": ubx.FieldSpec{WireName: "trim_leading_and_trailing_spaces_and_zeroes"},
-		"ValidateCharacterSet": ubx.FieldSpec{WireName: "validate_character_set"},
-		"ValidateEditypes": ubx.FieldSpec{WireName: "validate_editypes"},
-		"ValidateXsdtypes": ubx.FieldSpec{WireName: "validate_xsdtypes"},
-	}
+	"AllowLeadingAndTrailingSpacesAndZeroes": ubx.FieldSpec{WireName: "allow_leading_and_trailing_spaces_and_zeroes"},
+	"MessageId":                              ubx.FieldSpec{WireName: "message_id"},
+	"TrailingSeparatorPolicy":                ubx.FieldSpec{WireName: "trailing_separator_policy"},
+	"TrimLeadingAndTrailingSpacesAndZeroes":  ubx.FieldSpec{WireName: "trim_leading_and_trailing_spaces_and_zeroes"},
+	"ValidateCharacterSet":                   ubx.FieldSpec{WireName: "validate_character_set"},
+	"ValidateEditypes":                       ubx.FieldSpec{WireName: "validate_editypes"},
+	"ValidateXsdtypes":                       ubx.FieldSpec{WireName: "validate_xsdtypes"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_X12DelimiterOverridesFields = ubx.FieldMap{
-		"ComponentSeparator": ubx.FieldSpec{WireName: "component_separator"},
-		"DataElementSeparator": ubx.FieldSpec{WireName: "data_element_separator"},
-		"MessageId": ubx.FieldSpec{WireName: "message_id"},
-		"ProtocolVersion": ubx.FieldSpec{WireName: "protocol_version"},
-		"ReplaceCharacter": ubx.FieldSpec{WireName: "replace_character"},
-		"ReplaceSeparatorsInPayload": ubx.FieldSpec{WireName: "replace_separators_in_payload"},
-		"SegmentTerminator": ubx.FieldSpec{WireName: "segment_terminator"},
-		"SegmentTerminatorSuffix": ubx.FieldSpec{WireName: "segment_terminator_suffix"},
-		"TargetNamespace": ubx.FieldSpec{WireName: "target_namespace"},
-	}
+	"ComponentSeparator":         ubx.FieldSpec{WireName: "component_separator"},
+	"DataElementSeparator":       ubx.FieldSpec{WireName: "data_element_separator"},
+	"MessageId":                  ubx.FieldSpec{WireName: "message_id"},
+	"ProtocolVersion":            ubx.FieldSpec{WireName: "protocol_version"},
+	"ReplaceCharacter":           ubx.FieldSpec{WireName: "replace_character"},
+	"ReplaceSeparatorsInPayload": ubx.FieldSpec{WireName: "replace_separators_in_payload"},
+	"SegmentTerminator":          ubx.FieldSpec{WireName: "segment_terminator"},
+	"SegmentTerminatorSuffix":    ubx.FieldSpec{WireName: "segment_terminator_suffix"},
+	"TargetNamespace":            ubx.FieldSpec{WireName: "target_namespace"},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettingsFields = ubx.FieldMap{
-		"AcknowledgementSettings": ubx.FieldSpec{
-			WireName: "acknowledgement_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_AcknowledgementSettingsFields,
-		},
-		"EnvelopeOverrides": ubx.FieldSpec{
-			WireName: "envelope_overrides",
-			Kind: "list",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeOverridesFields,
-		},
-		"EnvelopeSettings": ubx.FieldSpec{
-			WireName: "envelope_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeSettingsFields,
-		},
-		"FramingSettings": ubx.FieldSpec{
-			WireName: "framing_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_FramingSettingsFields,
-		},
-		"MessageFilter": ubx.FieldSpec{
-			WireName: "message_filter",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterFields,
-		},
-		"MessageFilterList": ubx.FieldSpec{
-			WireName: "message_filter_list",
-			Kind: "list",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterListFields,
-		},
-		"ProcessingSettings": ubx.FieldSpec{
-			WireName: "processing_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ProcessingSettingsFields,
-		},
-		"SchemaReferences": ubx.FieldSpec{
-			WireName: "schema_references",
-			Kind: "list",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SchemaReferencesFields,
-		},
-		"SecuritySettings": ubx.FieldSpec{
-			WireName: "security_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SecuritySettingsFields,
-		},
-		"ValidationOverrides": ubx.FieldSpec{
-			WireName: "validation_overrides",
-			Kind: "list",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ValidationOverridesFields,
-		},
-		"ValidationSettings": ubx.FieldSpec{
-			WireName: "validation_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationSettingsFields,
-		},
-		"X12DelimiterOverrides": ubx.FieldSpec{
-			WireName: "x12_delimiter_overrides",
-			Kind: "list",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_X12DelimiterOverridesFields,
-		},
-	}
+	"AcknowledgementSettings": ubx.FieldSpec{
+		WireName: "acknowledgement_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_AcknowledgementSettingsFields,
+	},
+	"EnvelopeOverrides": ubx.FieldSpec{
+		WireName: "envelope_overrides",
+		Kind:     "list",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeOverridesFields,
+	},
+	"EnvelopeSettings": ubx.FieldSpec{
+		WireName: "envelope_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_EnvelopeSettingsFields,
+	},
+	"FramingSettings": ubx.FieldSpec{
+		WireName: "framing_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_FramingSettingsFields,
+	},
+	"MessageFilter": ubx.FieldSpec{
+		WireName: "message_filter",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterFields,
+	},
+	"MessageFilterList": ubx.FieldSpec{
+		WireName: "message_filter_list",
+		Kind:     "list",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_MessageFilterListFields,
+	},
+	"ProcessingSettings": ubx.FieldSpec{
+		WireName: "processing_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ProcessingSettingsFields,
+	},
+	"SchemaReferences": ubx.FieldSpec{
+		WireName: "schema_references",
+		Kind:     "list",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SchemaReferencesFields,
+	},
+	"SecuritySettings": ubx.FieldSpec{
+		WireName: "security_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_SecuritySettingsFields,
+	},
+	"ValidationOverrides": ubx.FieldSpec{
+		WireName: "validation_overrides",
+		Kind:     "list",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_ValidationOverridesFields,
+	},
+	"ValidationSettings": ubx.FieldSpec{
+		WireName: "validation_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_Edifact_ReceiveAgreement_ProtocolSettings_ValidationSettingsFields,
+	},
+	"X12DelimiterOverrides": ubx.FieldSpec{
+		WireName: "x12_delimiter_overrides",
+		Kind:     "list",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettings_X12DelimiterOverridesFields,
+	},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreementFields = ubx.FieldMap{
-		"ProtocolSettings": ubx.FieldSpec{
-			WireName: "protocol_settings",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettingsFields,
-		},
-		"ReceiverBusinessIdentity": ubx.FieldSpec{
-			WireName: "receiver_business_identity",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
-		},
-		"SenderBusinessIdentity": ubx.FieldSpec{
-			WireName: "sender_business_identity",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
-		},
-	}
+	"ProtocolSettings": ubx.FieldSpec{
+		WireName: "protocol_settings",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreement_ProtocolSettingsFields,
+	},
+	"ReceiverBusinessIdentity": ubx.FieldSpec{
+		WireName: "receiver_business_identity",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
+	},
+	"SenderBusinessIdentity": ubx.FieldSpec{
+		WireName: "sender_business_identity",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
+	},
+}
 
 var IntegrationAccountAgreement_Properties_Content_X12Fields = ubx.FieldMap{
-		"ReceiveAgreement": ubx.FieldSpec{
-			WireName: "receive_agreement",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreementFields,
-		},
-		"SendAgreement": ubx.FieldSpec{
-			WireName: "send_agreement",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreementFields,
-		},
-	}
+	"ReceiveAgreement": ubx.FieldSpec{
+		WireName: "receive_agreement",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreementFields,
+	},
+	"SendAgreement": ubx.FieldSpec{
+		WireName: "send_agreement",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12_ReceiveAgreementFields,
+	},
+}
 
 var IntegrationAccountAgreement_Properties_ContentFields = ubx.FieldMap{
-		"AS2": ubx.FieldSpec{
-			WireName: "a_s2",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2Fields,
-		},
-		"Edifact": ubx.FieldSpec{
-			WireName: "edifact",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_EdifactFields,
-		},
-		"X12": ubx.FieldSpec{
-			WireName: "x12",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_X12Fields,
-		},
-	}
+	"AS2": ubx.FieldSpec{
+		WireName: "a_s2",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2Fields,
+	},
+	"Edifact": ubx.FieldSpec{
+		WireName: "edifact",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_EdifactFields,
+	},
+	"X12": ubx.FieldSpec{
+		WireName: "x12",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_X12Fields,
+	},
+}
 
 var IntegrationAccountAgreement_PropertiesFields = ubx.FieldMap{
-		"AgreementType": ubx.FieldSpec{WireName: "agreement_type"},
-		"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
-		"Content": ubx.FieldSpec{
-			WireName: "content",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_ContentFields,
-		},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"GuestIdentity": ubx.FieldSpec{
-			WireName: "guest_identity",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
-		},
-		"GuestPartner": ubx.FieldSpec{WireName: "guest_partner"},
-		"HostIdentity": ubx.FieldSpec{
-			WireName: "host_identity",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
-		},
-		"HostPartner": ubx.FieldSpec{WireName: "host_partner"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-	}
+	"AgreementType": ubx.FieldSpec{WireName: "agreement_type"},
+	"ChangedTime":   ubx.FieldSpec{WireName: "changed_time"},
+	"Content": ubx.FieldSpec{
+		WireName: "content",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_ContentFields,
+	},
+	"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
+	"GuestIdentity": ubx.FieldSpec{
+		WireName: "guest_identity",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
+	},
+	"GuestPartner": ubx.FieldSpec{WireName: "guest_partner"},
+	"HostIdentity": ubx.FieldSpec{
+		WireName: "host_identity",
+		Kind:     "object",
+		Fields:   IntegrationAccountAgreement_Properties_Content_AS2_ReceiveAgreement_ReceiverBusinessIdentityFields,
+	},
+	"HostPartner": ubx.FieldSpec{WireName: "host_partner"},
+	"Metadata":    ubx.FieldSpec{WireName: "metadata"},
+}
 
 type IntegrationAccountAgreementConfig struct {
 	// The integration account agreement properties.
@@ -1296,8 +1296,8 @@ var IntegrationAccountAgreement = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: IntegrationAccountAgreement_PropertiesFields,
+			Kind:     "object",
+			Fields:   IntegrationAccountAgreement_PropertiesFields,
 		},
 	},
 }

@@ -4,19 +4,25 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiVariable_Properties struct {
+	// Gets or sets the creation time.
+	CreationTime any
 	// Gets or sets the description of the variable.
 	Description any
 	// Gets or sets the encrypted flag of the variable.
 	IsEncrypted any
+	// Gets or sets the last modified time.
+	LastModifiedTime any
 	// Gets or sets the value of the variable.
 	Value any
 }
 
 var OpenapiVariable_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"IsEncrypted": ubx.FieldSpec{WireName: "is_encrypted"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"CreationTime":     ubx.FieldSpec{WireName: "creation_time"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"IsEncrypted":      ubx.FieldSpec{WireName: "is_encrypted"},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"Value":            ubx.FieldSpec{WireName: "value"},
+}
 
 type OpenapiVariableConfig struct {
 	// Gets or sets the name of the variable.
@@ -38,8 +44,8 @@ var OpenapiVariable = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiVariable_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiVariable_PropertiesFields,
 		},
 	},
 }

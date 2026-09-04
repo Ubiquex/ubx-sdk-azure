@@ -15,10 +15,14 @@ export interface OpenapiSourceControl_Properties {
   autoSync?: boolean | Computed<boolean>;
   /** The repo branch of the source control. Include branch as empty string for VsoTfvc. */
   branch?: string | Computed<string>;
+  /** The creation time. */
+  creationTime?: string | Computed<string>;
   /** The user description of the source control. */
   description?: string | Computed<string>;
   /** The folder path of the source control. Path must be relative. */
   folderPath?: string | Computed<string>;
+  /** The last modified time. */
+  lastModifiedTime?: string | Computed<string>;
   /** The auto publish of the source control. Default is true. */
   publishRunbook?: boolean | Computed<boolean>;
   /** The repo url of the source control. */
@@ -37,8 +41,10 @@ const OpenapiSourceControl_Properties_SecurityTokenFields: FieldMap = {
 const OpenapiSourceControl_PropertiesFields: FieldMap = {
   autoSync: "auto_sync",
   branch: "branch",
+  creationTime: "creation_time",
   description: "description",
   folderPath: "folder_path",
+  lastModifiedTime: "last_modified_time",
   publishRunbook: "publish_runbook",
   repoUrl: "repo_url",
   securityToken: {

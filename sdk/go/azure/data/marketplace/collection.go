@@ -4,21 +4,21 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Collection_Value_Properties_AppliedRules struct {
-	Type any
+	Type  any
 	Value any
 }
 
 type Collection_Value_Properties struct {
-	AllSubscriptions any
-	AppliedRules any
-	ApproveAllItems any
+	AllSubscriptions          any
+	AppliedRules              any
+	ApproveAllItems           any
 	ApproveAllItemsModifiedAt any
-	Claim any
-	CollectionId any
-	CollectionName any
-	Enabled any
-	NumberOfOffers any
-	SubscriptionsList any
+	Claim                     any
+	CollectionId              any
+	CollectionName            any
+	Enabled                   any
+	NumberOfOffers            any
+	SubscriptionsList         any
 }
 
 type Collection_Value struct {
@@ -31,9 +31,9 @@ type CollectionConfig struct {
 
 type CollectionAttrs struct {
 	// URL to get the next set of offer list results if there are any.
-	NextLink any
+	NextLink       any
 	PrivateStoreId any
-	Value any
+	Value          any
 }
 
 var Collection = ubx.DataSourceBinding{

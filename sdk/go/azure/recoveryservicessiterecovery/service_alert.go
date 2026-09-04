@@ -13,10 +13,10 @@ type ServiceAlert_Properties struct {
 }
 
 var ServiceAlert_PropertiesFields = ubx.FieldMap{
-		"CustomEmailAddresses": ubx.FieldSpec{WireName: "custom_email_addresses"},
-		"Locale": ubx.FieldSpec{WireName: "locale"},
-		"SendToOwners": ubx.FieldSpec{WireName: "send_to_owners"},
-	}
+	"CustomEmailAddresses": ubx.FieldSpec{WireName: "custom_email_addresses"},
+	"Locale":               ubx.FieldSpec{WireName: "locale"},
+	"SendToOwners":         ubx.FieldSpec{WireName: "send_to_owners"},
+}
 
 type ServiceAlertConfig struct {
 	// Properties of a configure alert request.
@@ -35,8 +35,8 @@ var ServiceAlert = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceAlert_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceAlert_PropertiesFields,
 		},
 	},
 }

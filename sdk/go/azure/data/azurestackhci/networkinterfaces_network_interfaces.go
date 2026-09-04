@@ -17,39 +17,39 @@ type NetworkinterfacesNetworkInterfaces_Value_Properties_IpConfigurations_Proper
 }
 
 type NetworkinterfacesNetworkInterfaces_Value_Properties_IpConfigurations_Properties struct {
-	Gateway any
-	PrefixLength any
+	Gateway          any
+	PrefixLength     any
 	PrivateIpaddress any
-	Subnet any
+	Subnet           any
 }
 
 type NetworkinterfacesNetworkInterfaces_Value_Properties_IpConfigurations struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type NetworkinterfacesNetworkInterfaces_Value_Properties_Status_ProvisioningStatus struct {
 	OperationId any
-	Status any
+	Status      any
 }
 
 type NetworkinterfacesNetworkInterfaces_Value_Properties_Status struct {
-	ErrorCode any
-	ErrorMessage any
+	ErrorCode          any
+	ErrorMessage       any
 	ProvisioningStatus any
 }
 
 type NetworkinterfacesNetworkInterfaces_Value_Properties struct {
-	DnsSettings any
-	IpConfigurations any
-	MacAddress any
+	DnsSettings       any
+	IpConfigurations  any
+	MacAddress        any
 	ProvisioningState any
-	Status any
+	Status            any
 }
 
 type NetworkinterfacesNetworkInterfaces_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type NetworkinterfacesNetworkInterfacesConfig struct {
@@ -57,11 +57,10 @@ type NetworkinterfacesNetworkInterfacesConfig struct {
 
 type NetworkinterfacesNetworkInterfacesAttrs struct {
 	NextLink any
-	Value any
+	Value    any
 }
 
 var NetworkinterfacesNetworkInterfaces = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_networkinterfaces_network_interfaces",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

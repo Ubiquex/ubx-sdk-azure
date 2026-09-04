@@ -4,14 +4,14 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiGremlinDatabaseGetResults_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type DbOpenapiGremlinDatabaseGetResults_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,25 +21,25 @@ type DbOpenapiGremlinDatabaseGetResults_Value_Properties_Options_AutoscaleSettin
 
 type DbOpenapiGremlinDatabaseGetResults_Value_Properties_Options struct {
 	AutoscaleSettings any
-	Throughput any
+	Throughput        any
 }
 
 type DbOpenapiGremlinDatabaseGetResults_Value_Properties_Resource struct {
 	Etag any
-	Rid any
-	Ts any
+	Rid  any
+	Ts   any
 }
 
 type DbOpenapiGremlinDatabaseGetResults_Value_Properties struct {
-	Options any
+	Options  any
 	Resource any
 }
 
 type DbOpenapiGremlinDatabaseGetResults_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DbOpenapiGremlinDatabaseGetResultsConfig struct {
@@ -48,7 +48,7 @@ type DbOpenapiGremlinDatabaseGetResultsConfig struct {
 
 type DbOpenapiGremlinDatabaseGetResultsAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// List of Gremlin databases and their properties.
 	Value any
 }

@@ -17,12 +17,12 @@ type SharedPrivateLinkResource_Properties struct {
 }
 
 var SharedPrivateLinkResource_PropertiesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequestMessage": ubx.FieldSpec{WireName: "request_message"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"GroupId":               ubx.FieldSpec{WireName: "group_id"},
+	"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequestMessage":        ubx.FieldSpec{WireName: "request_message"},
+	"Status":                ubx.FieldSpec{WireName: "status"},
+}
 
 type SharedPrivateLinkResourceConfig struct {
 	// Describes the properties of an existing Shared Private Link Resource
@@ -39,8 +39,8 @@ var SharedPrivateLinkResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SharedPrivateLinkResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   SharedPrivateLinkResource_PropertiesFields,
 		},
 	},
 }

@@ -6,7 +6,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiDatabaseConnection_Properties_ConfigurationFiles struct {
 	Contents any
 	FileName any
-	Type any
+	Type     any
 }
 
 type OpenapiDatabaseConnection_Properties struct {
@@ -23,22 +23,22 @@ type OpenapiDatabaseConnection_Properties struct {
 }
 
 var OpenapiDatabaseConnection_Properties_ConfigurationFilesFields = ubx.FieldMap{
-		"Contents": ubx.FieldSpec{WireName: "contents"},
-		"FileName": ubx.FieldSpec{WireName: "file_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Contents": ubx.FieldSpec{WireName: "contents"},
+	"FileName": ubx.FieldSpec{WireName: "file_name"},
+	"Type":     ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiDatabaseConnection_PropertiesFields = ubx.FieldMap{
-		"ConfigurationFiles": ubx.FieldSpec{
-			WireName: "configuration_files",
-			Kind: "list",
-			Fields: OpenapiDatabaseConnection_Properties_ConfigurationFilesFields,
-		},
-		"ConnectionIdentity": ubx.FieldSpec{WireName: "connection_identity"},
-		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-		"Region": ubx.FieldSpec{WireName: "region"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ConfigurationFiles": ubx.FieldSpec{
+		WireName: "configuration_files",
+		Kind:     "list",
+		Fields:   OpenapiDatabaseConnection_Properties_ConfigurationFilesFields,
+	},
+	"ConnectionIdentity": ubx.FieldSpec{WireName: "connection_identity"},
+	"ConnectionString":   ubx.FieldSpec{WireName: "connection_string"},
+	"Region":             ubx.FieldSpec{WireName: "region"},
+	"ResourceId":         ubx.FieldSpec{WireName: "resource_id"},
+}
 
 type OpenapiDatabaseConnectionConfig struct {
 	// Kind of resource.
@@ -64,8 +64,8 @@ var OpenapiDatabaseConnection = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDatabaseConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDatabaseConnection_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

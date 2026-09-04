@@ -302,15 +302,6 @@ _Namespace_SkuFields = {
     "name": ubx.FieldSpec(wire_name="name"),
 }
 
-_Namespace_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class NamespaceConfig:
     # The identity information for the resource.
@@ -319,8 +310,6 @@ class NamespaceConfig:
     properties: Any = None
     # Represents available Sku pricing tiers.
     sku: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class NamespaceAttrs:
@@ -350,11 +339,6 @@ Namespace = ubx.ResourceBinding(
             wire_name="sku",
             kind="object",
             fields=_Namespace_SkuFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_Namespace_SystemDataFields,
         ),
     },
 )

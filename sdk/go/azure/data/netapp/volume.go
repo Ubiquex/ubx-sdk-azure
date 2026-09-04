@@ -5,40 +5,40 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Volume_Value_Properties_DataProtection_Backup struct {
 	BackupPolicyId any
-	BackupVaultId any
+	BackupVaultId  any
 	PolicyEnforced any
 }
 
 type Volume_Value_Properties_DataProtection_RansomwareProtection struct {
-	ActualRansomwareProtectionState any
+	ActualRansomwareProtectionState  any
 	DesiredRansomwareProtectionState any
 }
 
 type Volume_Value_Properties_DataProtection_Replication_DestinationReplications struct {
-	Region any
+	Region          any
 	ReplicationType any
-	ResourceId any
-	Zone any
+	ResourceId      any
+	Zone            any
 }
 
 type Volume_Value_Properties_DataProtection_Replication_RemotePath struct {
 	ExternalHostName any
-	ServerName any
-	VolumeName any
+	ServerName       any
+	VolumeName       any
 }
 
 type Volume_Value_Properties_DataProtection_Replication struct {
-	DestinationReplications any
-	EndpointType any
-	ExternalReplicationSetupInfo any
+	DestinationReplications        any
+	EndpointType                   any
+	ExternalReplicationSetupInfo   any
 	ExternalReplicationSetupStatus any
-	MirrorState any
-	RelationshipStatus any
-	RemotePath any
-	RemoteVolumeRegion any
-	RemoteVolumeResourceId any
-	ReplicationId any
-	ReplicationSchedule any
+	MirrorState                    any
+	RelationshipStatus             any
+	RemotePath                     any
+	RemoteVolumeRegion             any
+	RemoteVolumeResourceId         any
+	ReplicationId                  any
+	ReplicationSchedule            any
 }
 
 type Volume_Value_Properties_DataProtection_Snapshot struct {
@@ -46,34 +46,34 @@ type Volume_Value_Properties_DataProtection_Snapshot struct {
 }
 
 type Volume_Value_Properties_DataProtection_VolumeRelocation struct {
-	ReadyToBeFinalized any
+	ReadyToBeFinalized  any
 	RelocationRequested any
 }
 
 type Volume_Value_Properties_DataProtection struct {
-	Backup any
+	Backup               any
 	RansomwareProtection any
-	Replication any
-	Snapshot any
-	VolumeRelocation any
+	Replication          any
+	Snapshot             any
+	VolumeRelocation     any
 }
 
 type Volume_Value_Properties_ExportPolicy_Rules struct {
-	AllowedClients any
-	ChownMode any
-	Cifs any
-	HasRootAccess any
-	Kerberos5ReadOnly any
-	Kerberos5ReadWrite any
-	Kerberos5iReadOnly any
+	AllowedClients      any
+	ChownMode           any
+	Cifs                any
+	HasRootAccess       any
+	Kerberos5ReadOnly   any
+	Kerberos5ReadWrite  any
+	Kerberos5iReadOnly  any
 	Kerberos5iReadWrite any
-	Kerberos5pReadOnly any
+	Kerberos5pReadOnly  any
 	Kerberos5pReadWrite any
-	Nfsv3 any
-	Nfsv41 any
-	RuleIndex any
-	UnixReadOnly any
-	UnixReadWrite any
+	Nfsv3               any
+	Nfsv41              any
+	RuleIndex           any
+	UnixReadOnly        any
+	UnixReadWrite       any
 }
 
 type Volume_Value_Properties_ExportPolicy struct {
@@ -81,88 +81,88 @@ type Volume_Value_Properties_ExportPolicy struct {
 }
 
 type Volume_Value_Properties_MountTargets struct {
-	FileSystemId any
-	IpAddress any
+	FileSystemId  any
+	IpAddress     any
 	MountTargetId any
 	SmbServerFqdn any
 }
 
 type Volume_Value_Properties_PlacementRules struct {
-	Key any
+	Key   any
 	Value any
 }
 
 type Volume_Value_Properties struct {
 	AcceptGrowCapacityPoolForShortTermCloneSplit any
-	ActualThroughputMibps any
-	AvsDataStore any
-	BackupId any
-	BaremetalTenantId any
-	BreakthroughMode any
-	CapacityPoolResourceId any
-	CloneProgress any
-	CoolAccess any
-	CoolAccessRetrievalPolicy any
-	CoolAccessTieringPolicy any
-	CoolnessPeriod any
-	CreationToken any
-	DataProtection any
-	DataStoreResourceId any
-	DefaultGroupQuotaInKiBs any
-	DefaultUserQuotaInKiBs any
-	DeleteBaseSnapshot any
-	EffectiveNetworkFeatures any
-	EnableSubvolumes any
-	Encrypted any
-	EncryptionKeySource any
-	ExportPolicy any
-	FileAccessLogs any
-	FileSystemId any
-	InheritedSizeInBytes any
-	IsDefaultQuotaEnabled any
-	IsLargeVolume any
-	IsRestoring any
-	KerberosEnabled any
-	KeyVaultPrivateEndpointResourceId any
-	LdapEnabled any
-	MaximumNumberOfFiles any
-	MountTargets any
-	NetworkFeatures any
-	NetworkSiblingSetId any
-	OriginatingResourceId any
-	PlacementRules any
-	ProtocolTypes any
-	ProvisionedAvailabilityZone any
-	ProvisioningState any
-	ProximityPlacementGroup any
-	SecurityStyle any
-	ServiceLevel any
-	SmbAccessBasedEnumeration any
-	SmbContinuouslyAvailable any
-	SmbEncryption any
-	SmbNonBrowsable any
-	SnapshotDirectoryVisible any
-	SnapshotId any
-	StorageToNetworkProximity any
-	SubnetId any
-	T2Network any
-	ThroughputMibps any
-	UnixPermissions any
-	UsageThreshold any
-	VolumeGroupName any
-	VolumeSpecName any
-	VolumeType any
+	ActualThroughputMibps                        any
+	AvsDataStore                                 any
+	BackupId                                     any
+	BaremetalTenantId                            any
+	BreakthroughMode                             any
+	CapacityPoolResourceId                       any
+	CloneProgress                                any
+	CoolAccess                                   any
+	CoolAccessRetrievalPolicy                    any
+	CoolAccessTieringPolicy                      any
+	CoolnessPeriod                               any
+	CreationToken                                any
+	DataProtection                               any
+	DataStoreResourceId                          any
+	DefaultGroupQuotaInKiBs                      any
+	DefaultUserQuotaInKiBs                       any
+	DeleteBaseSnapshot                           any
+	EffectiveNetworkFeatures                     any
+	EnableSubvolumes                             any
+	Encrypted                                    any
+	EncryptionKeySource                          any
+	ExportPolicy                                 any
+	FileAccessLogs                               any
+	FileSystemId                                 any
+	InheritedSizeInBytes                         any
+	IsDefaultQuotaEnabled                        any
+	IsLargeVolume                                any
+	IsRestoring                                  any
+	KerberosEnabled                              any
+	KeyVaultPrivateEndpointResourceId            any
+	LdapEnabled                                  any
+	MaximumNumberOfFiles                         any
+	MountTargets                                 any
+	NetworkFeatures                              any
+	NetworkSiblingSetId                          any
+	OriginatingResourceId                        any
+	PlacementRules                               any
+	ProtocolTypes                                any
+	ProvisionedAvailabilityZone                  any
+	ProvisioningState                            any
+	ProximityPlacementGroup                      any
+	SecurityStyle                                any
+	ServiceLevel                                 any
+	SmbAccessBasedEnumeration                    any
+	SmbContinuouslyAvailable                     any
+	SmbEncryption                                any
+	SmbNonBrowsable                              any
+	SnapshotDirectoryVisible                     any
+	SnapshotId                                   any
+	StorageToNetworkProximity                    any
+	SubnetId                                     any
+	T2Network                                    any
+	ThroughputMibps                              any
+	UnixPermissions                              any
+	UsageThreshold                               any
+	VolumeGroupName                              any
+	VolumeSpecName                               any
+	VolumeType                                   any
 }
 
 type Volume_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type VolumeConfig struct {
 	AccountName any
-	PoolName any
+	PoolName    any
 }
 
 type VolumeAttrs struct {
@@ -178,6 +178,6 @@ var Volume = ubx.DataSourceBinding{
 	WireType: "azure_netapp_volume",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PoolName": ubx.FieldSpec{WireName: "pool_name"},
+		"PoolName":    ubx.FieldSpec{WireName: "pool_name"},
 	},
 }

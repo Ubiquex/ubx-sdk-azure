@@ -208,8 +208,6 @@ const VirtualwanExpressRouteGateway_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanExpressRouteGatewayConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** ExpressRoute gateway resource properties. */
   properties?: VirtualwanExpressRouteGateway_Properties | Computed<VirtualwanExpressRouteGateway_Properties>;
 }
@@ -224,7 +222,6 @@ export interface VirtualwanExpressRouteGatewayAttrs {
 export const VirtualwanExpressRouteGateway: ResourceBinding<VirtualwanExpressRouteGatewayConfig, VirtualwanExpressRouteGatewayAttrs> = {
   wireType: "azure_network_virtualwan_express_route_gateway",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

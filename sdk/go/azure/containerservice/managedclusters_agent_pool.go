@@ -119,13 +119,13 @@ type ManagedclustersAgentPool_Properties_LinuxOsconfig struct {
 }
 
 type ManagedclustersAgentPool_Properties_LocalDnsprofile_KubeDnsoverrides struct {
-	CacheDurationInSeconds any
-	ForwardDestination any
-	ForwardPolicy any
-	MaxConcurrent any
-	Protocol any
-	QueryLogging any
-	ServeStale any
+	CacheDurationInSeconds      any
+	ForwardDestination          any
+	ForwardPolicy               any
+	MaxConcurrent               any
+	Protocol                    any
+	QueryLogging                any
+	ServeStale                  any
 	ServeStaleDurationInSeconds any
 }
 
@@ -141,14 +141,14 @@ type ManagedclustersAgentPool_Properties_LocalDnsprofile struct {
 }
 
 type ManagedclustersAgentPool_Properties_NetworkProfile_AllowedHostPorts struct {
-	PortEnd any
+	PortEnd   any
 	PortStart any
-	Protocol any
+	Protocol  any
 }
 
 type ManagedclustersAgentPool_Properties_NetworkProfile_NodePublicIptags struct {
 	IpTagType any
-	Tag any
+	Tag       any
 }
 
 type ManagedclustersAgentPool_Properties_NetworkProfile struct {
@@ -184,10 +184,10 @@ type ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details_Detail
 
 type ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type ManagedclustersAgentPool_Properties_Status_ProvisioningError struct {
@@ -223,13 +223,13 @@ type ManagedclustersAgentPool_Properties_UpgradeSettings struct {
 
 type ManagedclustersAgentPool_Properties_VirtualMachineNodesStatus struct {
 	Count any
-	Size any
+	Size  any
 }
 
 type ManagedclustersAgentPool_Properties_VirtualMachinesProfile_Scale_Autoscale struct {
 	MaxCount any
 	MinCount any
-	Size any
+	Size     any
 }
 
 type ManagedclustersAgentPool_Properties_VirtualMachinesProfile_Scale struct {
@@ -363,347 +363,346 @@ type ManagedclustersAgentPool_Properties struct {
 }
 
 var ManagedclustersAgentPool_Properties_ArtifactStreamingProfileFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+}
 
 var ManagedclustersAgentPool_Properties_CreationDataFields = ubx.FieldMap{
-		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-	}
+	"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
+}
 
 var ManagedclustersAgentPool_Properties_GatewayProfileFields = ubx.FieldMap{
-		"PublicIpprefixSize": ubx.FieldSpec{WireName: "public_ipprefix_size"},
-	}
+	"PublicIpprefixSize": ubx.FieldSpec{WireName: "public_ipprefix_size"},
+}
 
 var ManagedclustersAgentPool_Properties_GpuProfileFields = ubx.FieldMap{
-		"Driver": ubx.FieldSpec{WireName: "driver"},
-	}
+	"Driver": ubx.FieldSpec{WireName: "driver"},
+}
 
 var ManagedclustersAgentPool_Properties_KubeletConfigFields = ubx.FieldMap{
-		"AllowedUnsafeSysctls": ubx.FieldSpec{WireName: "allowed_unsafe_sysctls"},
-		"ContainerLogMaxFiles": ubx.FieldSpec{WireName: "container_log_max_files"},
-		"ContainerLogMaxSizeMb": ubx.FieldSpec{WireName: "container_log_max_size_mb"},
-		"CpuCfsQuota": ubx.FieldSpec{WireName: "cpu_cfs_quota"},
-		"CpuCfsQuotaPeriod": ubx.FieldSpec{WireName: "cpu_cfs_quota_period"},
-		"CpuManagerPolicy": ubx.FieldSpec{WireName: "cpu_manager_policy"},
-		"FailSwapOn": ubx.FieldSpec{WireName: "fail_swap_on"},
-		"ImageGcHighThreshold": ubx.FieldSpec{WireName: "image_gc_high_threshold"},
-		"ImageGcLowThreshold": ubx.FieldSpec{WireName: "image_gc_low_threshold"},
-		"PodMaxPids": ubx.FieldSpec{WireName: "pod_max_pids"},
-		"TopologyManagerPolicy": ubx.FieldSpec{WireName: "topology_manager_policy"},
-	}
+	"AllowedUnsafeSysctls":  ubx.FieldSpec{WireName: "allowed_unsafe_sysctls"},
+	"ContainerLogMaxFiles":  ubx.FieldSpec{WireName: "container_log_max_files"},
+	"ContainerLogMaxSizeMb": ubx.FieldSpec{WireName: "container_log_max_size_mb"},
+	"CpuCfsQuota":           ubx.FieldSpec{WireName: "cpu_cfs_quota"},
+	"CpuCfsQuotaPeriod":     ubx.FieldSpec{WireName: "cpu_cfs_quota_period"},
+	"CpuManagerPolicy":      ubx.FieldSpec{WireName: "cpu_manager_policy"},
+	"FailSwapOn":            ubx.FieldSpec{WireName: "fail_swap_on"},
+	"ImageGcHighThreshold":  ubx.FieldSpec{WireName: "image_gc_high_threshold"},
+	"ImageGcLowThreshold":   ubx.FieldSpec{WireName: "image_gc_low_threshold"},
+	"PodMaxPids":            ubx.FieldSpec{WireName: "pod_max_pids"},
+	"TopologyManagerPolicy": ubx.FieldSpec{WireName: "topology_manager_policy"},
+}
 
 var ManagedclustersAgentPool_Properties_LinuxOsconfig_SysctlsFields = ubx.FieldMap{
-		"FsAioMaxNr": ubx.FieldSpec{WireName: "fs_aio_max_nr"},
-		"FsFileMax": ubx.FieldSpec{WireName: "fs_file_max"},
-		"FsInotifyMaxUserWatches": ubx.FieldSpec{WireName: "fs_inotify_max_user_watches"},
-		"FsNrOpen": ubx.FieldSpec{WireName: "fs_nr_open"},
-		"KernelThreadsMax": ubx.FieldSpec{WireName: "kernel_threads_max"},
-		"NetCoreNetdevMaxBacklog": ubx.FieldSpec{WireName: "net_core_netdev_max_backlog"},
-		"NetCoreOptmemMax": ubx.FieldSpec{WireName: "net_core_optmem_max"},
-		"NetCoreRmemDefault": ubx.FieldSpec{WireName: "net_core_rmem_default"},
-		"NetCoreRmemMax": ubx.FieldSpec{WireName: "net_core_rmem_max"},
-		"NetCoreSomaxconn": ubx.FieldSpec{WireName: "net_core_somaxconn"},
-		"NetCoreWmemDefault": ubx.FieldSpec{WireName: "net_core_wmem_default"},
-		"NetCoreWmemMax": ubx.FieldSpec{WireName: "net_core_wmem_max"},
-		"NetIpv4IpLocalPortRange": ubx.FieldSpec{WireName: "net_ipv4_ip_local_port_range"},
-		"NetIpv4NeighDefaultGcThresh1": ubx.FieldSpec{WireName: "net_ipv4_neigh_default_gc_thresh1"},
-		"NetIpv4NeighDefaultGcThresh2": ubx.FieldSpec{WireName: "net_ipv4_neigh_default_gc_thresh2"},
-		"NetIpv4NeighDefaultGcThresh3": ubx.FieldSpec{WireName: "net_ipv4_neigh_default_gc_thresh3"},
-		"NetIpv4TcpFinTimeout": ubx.FieldSpec{WireName: "net_ipv4_tcp_fin_timeout"},
-		"NetIpv4TcpKeepaliveProbes": ubx.FieldSpec{WireName: "net_ipv4_tcp_keepalive_probes"},
-		"NetIpv4TcpKeepaliveTime": ubx.FieldSpec{WireName: "net_ipv4_tcp_keepalive_time"},
-		"NetIpv4TcpMaxSynBacklog": ubx.FieldSpec{WireName: "net_ipv4_tcp_max_syn_backlog"},
-		"NetIpv4TcpMaxTwBuckets": ubx.FieldSpec{WireName: "net_ipv4_tcp_max_tw_buckets"},
-		"NetIpv4TcpTwReuse": ubx.FieldSpec{WireName: "net_ipv4_tcp_tw_reuse"},
-		"NetIpv4TcpkeepaliveIntvl": ubx.FieldSpec{WireName: "net_ipv4_tcpkeepalive_intvl"},
-		"NetNetfilterNfConntrackBuckets": ubx.FieldSpec{WireName: "net_netfilter_nf_conntrack_buckets"},
-		"NetNetfilterNfConntrackMax": ubx.FieldSpec{WireName: "net_netfilter_nf_conntrack_max"},
-		"VmMaxMapCount": ubx.FieldSpec{WireName: "vm_max_map_count"},
-		"VmSwappiness": ubx.FieldSpec{WireName: "vm_swappiness"},
-		"VmVfsCachePressure": ubx.FieldSpec{WireName: "vm_vfs_cache_pressure"},
-	}
+	"FsAioMaxNr":                     ubx.FieldSpec{WireName: "fs_aio_max_nr"},
+	"FsFileMax":                      ubx.FieldSpec{WireName: "fs_file_max"},
+	"FsInotifyMaxUserWatches":        ubx.FieldSpec{WireName: "fs_inotify_max_user_watches"},
+	"FsNrOpen":                       ubx.FieldSpec{WireName: "fs_nr_open"},
+	"KernelThreadsMax":               ubx.FieldSpec{WireName: "kernel_threads_max"},
+	"NetCoreNetdevMaxBacklog":        ubx.FieldSpec{WireName: "net_core_netdev_max_backlog"},
+	"NetCoreOptmemMax":               ubx.FieldSpec{WireName: "net_core_optmem_max"},
+	"NetCoreRmemDefault":             ubx.FieldSpec{WireName: "net_core_rmem_default"},
+	"NetCoreRmemMax":                 ubx.FieldSpec{WireName: "net_core_rmem_max"},
+	"NetCoreSomaxconn":               ubx.FieldSpec{WireName: "net_core_somaxconn"},
+	"NetCoreWmemDefault":             ubx.FieldSpec{WireName: "net_core_wmem_default"},
+	"NetCoreWmemMax":                 ubx.FieldSpec{WireName: "net_core_wmem_max"},
+	"NetIpv4IpLocalPortRange":        ubx.FieldSpec{WireName: "net_ipv4_ip_local_port_range"},
+	"NetIpv4NeighDefaultGcThresh1":   ubx.FieldSpec{WireName: "net_ipv4_neigh_default_gc_thresh1"},
+	"NetIpv4NeighDefaultGcThresh2":   ubx.FieldSpec{WireName: "net_ipv4_neigh_default_gc_thresh2"},
+	"NetIpv4NeighDefaultGcThresh3":   ubx.FieldSpec{WireName: "net_ipv4_neigh_default_gc_thresh3"},
+	"NetIpv4TcpFinTimeout":           ubx.FieldSpec{WireName: "net_ipv4_tcp_fin_timeout"},
+	"NetIpv4TcpKeepaliveProbes":      ubx.FieldSpec{WireName: "net_ipv4_tcp_keepalive_probes"},
+	"NetIpv4TcpKeepaliveTime":        ubx.FieldSpec{WireName: "net_ipv4_tcp_keepalive_time"},
+	"NetIpv4TcpMaxSynBacklog":        ubx.FieldSpec{WireName: "net_ipv4_tcp_max_syn_backlog"},
+	"NetIpv4TcpMaxTwBuckets":         ubx.FieldSpec{WireName: "net_ipv4_tcp_max_tw_buckets"},
+	"NetIpv4TcpTwReuse":              ubx.FieldSpec{WireName: "net_ipv4_tcp_tw_reuse"},
+	"NetIpv4TcpkeepaliveIntvl":       ubx.FieldSpec{WireName: "net_ipv4_tcpkeepalive_intvl"},
+	"NetNetfilterNfConntrackBuckets": ubx.FieldSpec{WireName: "net_netfilter_nf_conntrack_buckets"},
+	"NetNetfilterNfConntrackMax":     ubx.FieldSpec{WireName: "net_netfilter_nf_conntrack_max"},
+	"VmMaxMapCount":                  ubx.FieldSpec{WireName: "vm_max_map_count"},
+	"VmSwappiness":                   ubx.FieldSpec{WireName: "vm_swappiness"},
+	"VmVfsCachePressure":             ubx.FieldSpec{WireName: "vm_vfs_cache_pressure"},
+}
 
 var ManagedclustersAgentPool_Properties_LinuxOsconfigFields = ubx.FieldMap{
-		"SwapFileSizeMb": ubx.FieldSpec{WireName: "swap_file_size_mb"},
-		"Sysctls": ubx.FieldSpec{
-			WireName: "sysctls",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_LinuxOsconfig_SysctlsFields,
-		},
-		"TransparentHugePageDefrag": ubx.FieldSpec{WireName: "transparent_huge_page_defrag"},
-		"TransparentHugePageEnabled": ubx.FieldSpec{WireName: "transparent_huge_page_enabled"},
-	}
+	"SwapFileSizeMb": ubx.FieldSpec{WireName: "swap_file_size_mb"},
+	"Sysctls": ubx.FieldSpec{
+		WireName: "sysctls",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_LinuxOsconfig_SysctlsFields,
+	},
+	"TransparentHugePageDefrag":  ubx.FieldSpec{WireName: "transparent_huge_page_defrag"},
+	"TransparentHugePageEnabled": ubx.FieldSpec{WireName: "transparent_huge_page_enabled"},
+}
 
 var ManagedclustersAgentPool_Properties_LocalDnsprofile_KubeDnsoverridesFields = ubx.FieldMap{
-		"CacheDurationInSeconds": ubx.FieldSpec{WireName: "cache_duration_in_seconds"},
-		"ForwardDestination": ubx.FieldSpec{WireName: "forward_destination"},
-		"ForwardPolicy": ubx.FieldSpec{WireName: "forward_policy"},
-		"MaxConcurrent": ubx.FieldSpec{WireName: "max_concurrent"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"QueryLogging": ubx.FieldSpec{WireName: "query_logging"},
-		"ServeStale": ubx.FieldSpec{WireName: "serve_stale"},
-		"ServeStaleDurationInSeconds": ubx.FieldSpec{WireName: "serve_stale_duration_in_seconds"},
-	}
+	"CacheDurationInSeconds":      ubx.FieldSpec{WireName: "cache_duration_in_seconds"},
+	"ForwardDestination":          ubx.FieldSpec{WireName: "forward_destination"},
+	"ForwardPolicy":               ubx.FieldSpec{WireName: "forward_policy"},
+	"MaxConcurrent":               ubx.FieldSpec{WireName: "max_concurrent"},
+	"Protocol":                    ubx.FieldSpec{WireName: "protocol"},
+	"QueryLogging":                ubx.FieldSpec{WireName: "query_logging"},
+	"ServeStale":                  ubx.FieldSpec{WireName: "serve_stale"},
+	"ServeStaleDurationInSeconds": ubx.FieldSpec{WireName: "serve_stale_duration_in_seconds"},
+}
 
 var ManagedclustersAgentPool_Properties_LocalDnsprofileFields = ubx.FieldMap{
-		"KubeDnsoverrides": ubx.FieldSpec{
-			WireName: "kube_dnsoverrides",
-			Kind: "map",
-			Fields: ManagedclustersAgentPool_Properties_LocalDnsprofile_KubeDnsoverridesFields,
-		},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"VnetDnsoverrides": ubx.FieldSpec{
-			WireName: "vnet_dnsoverrides",
-			Kind: "map",
-			Fields: ManagedclustersAgentPool_Properties_LocalDnsprofile_KubeDnsoverridesFields,
-		},
-	}
+	"KubeDnsoverrides": ubx.FieldSpec{
+		WireName: "kube_dnsoverrides",
+		Kind:     "map",
+		Fields:   ManagedclustersAgentPool_Properties_LocalDnsprofile_KubeDnsoverridesFields,
+	},
+	"Mode":  ubx.FieldSpec{WireName: "mode"},
+	"State": ubx.FieldSpec{WireName: "state"},
+	"VnetDnsoverrides": ubx.FieldSpec{
+		WireName: "vnet_dnsoverrides",
+		Kind:     "map",
+		Fields:   ManagedclustersAgentPool_Properties_LocalDnsprofile_KubeDnsoverridesFields,
+	},
+}
 
 var ManagedclustersAgentPool_Properties_NetworkProfile_AllowedHostPortsFields = ubx.FieldMap{
-		"PortEnd": ubx.FieldSpec{WireName: "port_end"},
-		"PortStart": ubx.FieldSpec{WireName: "port_start"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-	}
+	"PortEnd":   ubx.FieldSpec{WireName: "port_end"},
+	"PortStart": ubx.FieldSpec{WireName: "port_start"},
+	"Protocol":  ubx.FieldSpec{WireName: "protocol"},
+}
 
 var ManagedclustersAgentPool_Properties_NetworkProfile_NodePublicIptagsFields = ubx.FieldMap{
-		"IpTagType": ubx.FieldSpec{WireName: "ip_tag_type"},
-		"Tag": ubx.FieldSpec{WireName: "tag"},
-	}
+	"IpTagType": ubx.FieldSpec{WireName: "ip_tag_type"},
+	"Tag":       ubx.FieldSpec{WireName: "tag"},
+}
 
 var ManagedclustersAgentPool_Properties_NetworkProfileFields = ubx.FieldMap{
-		"AllowedHostPorts": ubx.FieldSpec{
-			WireName: "allowed_host_ports",
-			Kind: "list",
-			Fields: ManagedclustersAgentPool_Properties_NetworkProfile_AllowedHostPortsFields,
-		},
-		"ApplicationSecurityGroups": ubx.FieldSpec{WireName: "application_security_groups"},
-		"NodePublicIptags": ubx.FieldSpec{
-			WireName: "node_public_iptags",
-			Kind: "list",
-			Fields: ManagedclustersAgentPool_Properties_NetworkProfile_NodePublicIptagsFields,
-		},
-	}
+	"AllowedHostPorts": ubx.FieldSpec{
+		WireName: "allowed_host_ports",
+		Kind:     "list",
+		Fields:   ManagedclustersAgentPool_Properties_NetworkProfile_AllowedHostPortsFields,
+	},
+	"ApplicationSecurityGroups": ubx.FieldSpec{WireName: "application_security_groups"},
+	"NodePublicIptags": ubx.FieldSpec{
+		WireName: "node_public_iptags",
+		Kind:     "list",
+		Fields:   ManagedclustersAgentPool_Properties_NetworkProfile_NodePublicIptagsFields,
+	},
+}
 
 var ManagedclustersAgentPool_Properties_PowerStateFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+}
 
 var ManagedclustersAgentPool_Properties_SecurityProfileFields = ubx.FieldMap{
-		"EnableSecureBoot": ubx.FieldSpec{WireName: "enable_secure_boot"},
-		"EnableVtpm": ubx.FieldSpec{WireName: "enable_vtpm"},
-		"SshAccess": ubx.FieldSpec{WireName: "ssh_access"},
-	}
+	"EnableSecureBoot": ubx.FieldSpec{WireName: "enable_secure_boot"},
+	"EnableVtpm":       ubx.FieldSpec{WireName: "enable_vtpm"},
+	"SshAccess":        ubx.FieldSpec{WireName: "ssh_access"},
+}
 
 var ManagedclustersAgentPool_Properties_Status_ProvisioningError_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
-var ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details_DetailsFields = ubx.FieldMap{
-	}
+var ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details_DetailsFields = ubx.FieldMap{}
 
 var ManagedclustersAgentPool_Properties_Status_ProvisioningError_DetailsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: ManagedclustersAgentPool_Properties_Status_ProvisioningError_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   ManagedclustersAgentPool_Properties_Status_ProvisioningError_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   ManagedclustersAgentPool_Properties_Status_ProvisioningError_Details_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var ManagedclustersAgentPool_Properties_Status_ProvisioningErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: ManagedclustersAgentPool_Properties_Status_ProvisioningError_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: ManagedclustersAgentPool_Properties_Status_ProvisioningError_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   ManagedclustersAgentPool_Properties_Status_ProvisioningError_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   ManagedclustersAgentPool_Properties_Status_ProvisioningError_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var ManagedclustersAgentPool_Properties_StatusFields = ubx.FieldMap{
-		"ProvisioningError": ubx.FieldSpec{
-			WireName: "provisioning_error",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_Status_ProvisioningErrorFields,
-		},
-	}
+	"ProvisioningError": ubx.FieldSpec{
+		WireName: "provisioning_error",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_Status_ProvisioningErrorFields,
+	},
+}
 
 var ManagedclustersAgentPool_Properties_UpgradeSettingsFields = ubx.FieldMap{
-		"DrainTimeoutInMinutes": ubx.FieldSpec{WireName: "drain_timeout_in_minutes"},
-		"MaxSurge": ubx.FieldSpec{WireName: "max_surge"},
-		"MaxUnavailable": ubx.FieldSpec{WireName: "max_unavailable"},
-		"NodeSoakDurationInMinutes": ubx.FieldSpec{WireName: "node_soak_duration_in_minutes"},
-		"UndrainableNodeBehavior": ubx.FieldSpec{WireName: "undrainable_node_behavior"},
-	}
+	"DrainTimeoutInMinutes":     ubx.FieldSpec{WireName: "drain_timeout_in_minutes"},
+	"MaxSurge":                  ubx.FieldSpec{WireName: "max_surge"},
+	"MaxUnavailable":            ubx.FieldSpec{WireName: "max_unavailable"},
+	"NodeSoakDurationInMinutes": ubx.FieldSpec{WireName: "node_soak_duration_in_minutes"},
+	"UndrainableNodeBehavior":   ubx.FieldSpec{WireName: "undrainable_node_behavior"},
+}
 
 var ManagedclustersAgentPool_Properties_VirtualMachineNodesStatusFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-	}
+	"Count": ubx.FieldSpec{WireName: "count"},
+	"Size":  ubx.FieldSpec{WireName: "size"},
+}
 
 var ManagedclustersAgentPool_Properties_VirtualMachinesProfile_Scale_AutoscaleFields = ubx.FieldMap{
-		"MaxCount": ubx.FieldSpec{WireName: "max_count"},
-		"MinCount": ubx.FieldSpec{WireName: "min_count"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-	}
+	"MaxCount": ubx.FieldSpec{WireName: "max_count"},
+	"MinCount": ubx.FieldSpec{WireName: "min_count"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+}
 
 var ManagedclustersAgentPool_Properties_VirtualMachinesProfile_ScaleFields = ubx.FieldMap{
-		"Autoscale": ubx.FieldSpec{
-			WireName: "autoscale",
-			Kind: "list",
-			Fields: ManagedclustersAgentPool_Properties_VirtualMachinesProfile_Scale_AutoscaleFields,
-		},
-		"Manual": ubx.FieldSpec{
-			WireName: "manual",
-			Kind: "list",
-			Fields: ManagedclustersAgentPool_Properties_VirtualMachineNodesStatusFields,
-		},
-	}
+	"Autoscale": ubx.FieldSpec{
+		WireName: "autoscale",
+		Kind:     "list",
+		Fields:   ManagedclustersAgentPool_Properties_VirtualMachinesProfile_Scale_AutoscaleFields,
+	},
+	"Manual": ubx.FieldSpec{
+		WireName: "manual",
+		Kind:     "list",
+		Fields:   ManagedclustersAgentPool_Properties_VirtualMachineNodesStatusFields,
+	},
+}
 
 var ManagedclustersAgentPool_Properties_VirtualMachinesProfileFields = ubx.FieldMap{
-		"Scale": ubx.FieldSpec{
-			WireName: "scale",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_VirtualMachinesProfile_ScaleFields,
-		},
-	}
+	"Scale": ubx.FieldSpec{
+		WireName: "scale",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_VirtualMachinesProfile_ScaleFields,
+	},
+}
 
 var ManagedclustersAgentPool_Properties_WindowsProfileFields = ubx.FieldMap{
-		"DisableOutboundNat": ubx.FieldSpec{WireName: "disable_outbound_nat"},
-	}
+	"DisableOutboundNat": ubx.FieldSpec{WireName: "disable_outbound_nat"},
+}
 
 var ManagedclustersAgentPool_PropertiesFields = ubx.FieldMap{
-		"ArtifactStreamingProfile": ubx.FieldSpec{
-			WireName: "artifact_streaming_profile",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_ArtifactStreamingProfileFields,
-		},
-		"AvailabilityZones": ubx.FieldSpec{WireName: "availability_zones"},
-		"CapacityReservationGroupId": ubx.FieldSpec{WireName: "capacity_reservation_group_id"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"CreationData": ubx.FieldSpec{
-			WireName: "creation_data",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_CreationDataFields,
-		},
-		"CurrentOrchestratorVersion": ubx.FieldSpec{WireName: "current_orchestrator_version"},
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
-		"EnableAutoScaling": ubx.FieldSpec{WireName: "enable_auto_scaling"},
-		"EnableEncryptionAtHost": ubx.FieldSpec{WireName: "enable_encryption_at_host"},
-		"EnableFips": ubx.FieldSpec{WireName: "enable_fips"},
-		"EnableNodePublicIp": ubx.FieldSpec{WireName: "enable_node_public_ip"},
-		"EnableUltraSsd": ubx.FieldSpec{WireName: "enable_ultra_ssd"},
-		"GatewayProfile": ubx.FieldSpec{
-			WireName: "gateway_profile",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_GatewayProfileFields,
-		},
-		"GpuInstanceProfile": ubx.FieldSpec{WireName: "gpu_instance_profile"},
-		"GpuProfile": ubx.FieldSpec{
-			WireName: "gpu_profile",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_GpuProfileFields,
-		},
-		"HostGroupId": ubx.FieldSpec{WireName: "host_group_id"},
-		"KubeletConfig": ubx.FieldSpec{
-			WireName: "kubelet_config",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_KubeletConfigFields,
-		},
-		"KubeletDiskType": ubx.FieldSpec{WireName: "kubelet_disk_type"},
-		"LinuxOsconfig": ubx.FieldSpec{
-			WireName: "linux_osconfig",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_LinuxOsconfigFields,
-		},
-		"LocalDnsprofile": ubx.FieldSpec{
-			WireName: "local_dnsprofile",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_LocalDnsprofileFields,
-		},
-		"MaxCount": ubx.FieldSpec{WireName: "max_count"},
-		"MaxPods": ubx.FieldSpec{WireName: "max_pods"},
-		"MessageOfTheDay": ubx.FieldSpec{WireName: "message_of_the_day"},
-		"MinCount": ubx.FieldSpec{WireName: "min_count"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"NetworkProfile": ubx.FieldSpec{
-			WireName: "network_profile",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_NetworkProfileFields,
-		},
-		"NodeImageVersion": ubx.FieldSpec{WireName: "node_image_version"},
-		"NodeLabels": ubx.FieldSpec{WireName: "node_labels"},
-		"NodePublicIpprefixId": ubx.FieldSpec{WireName: "node_public_ipprefix_id"},
-		"NodeTaints": ubx.FieldSpec{WireName: "node_taints"},
-		"OrchestratorVersion": ubx.FieldSpec{WireName: "orchestrator_version"},
-		"OsDiskSizeGb": ubx.FieldSpec{WireName: "os_disk_size_gb"},
-		"OsDiskType": ubx.FieldSpec{WireName: "os_disk_type"},
-		"OsSku": ubx.FieldSpec{WireName: "os_sku"},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-		"PodIpallocationMode": ubx.FieldSpec{WireName: "pod_ipallocation_mode"},
-		"PodSubnetId": ubx.FieldSpec{WireName: "pod_subnet_id"},
-		"PowerState": ubx.FieldSpec{
-			WireName: "power_state",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_PowerStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ProximityPlacementGroupId": ubx.FieldSpec{WireName: "proximity_placement_group_id"},
-		"ScaleDownMode": ubx.FieldSpec{WireName: "scale_down_mode"},
-		"ScaleSetEvictionPolicy": ubx.FieldSpec{WireName: "scale_set_eviction_policy"},
-		"ScaleSetPriority": ubx.FieldSpec{WireName: "scale_set_priority"},
-		"SecurityProfile": ubx.FieldSpec{
-			WireName: "security_profile",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_SecurityProfileFields,
-		},
-		"SpotMaxPrice": ubx.FieldSpec{WireName: "spot_max_price"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_StatusFields,
-		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UpgradeSettings": ubx.FieldSpec{
-			WireName: "upgrade_settings",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_UpgradeSettingsFields,
-		},
-		"VirtualMachineNodesStatus": ubx.FieldSpec{
-			WireName: "virtual_machine_nodes_status",
-			Kind: "list",
-			Fields: ManagedclustersAgentPool_Properties_VirtualMachineNodesStatusFields,
-		},
-		"VirtualMachinesProfile": ubx.FieldSpec{
-			WireName: "virtual_machines_profile",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_VirtualMachinesProfileFields,
-		},
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-		"VnetSubnetId": ubx.FieldSpec{WireName: "vnet_subnet_id"},
-		"WindowsProfile": ubx.FieldSpec{
-			WireName: "windows_profile",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_Properties_WindowsProfileFields,
-		},
-		"WorkloadRuntime": ubx.FieldSpec{WireName: "workload_runtime"},
-	}
+	"ArtifactStreamingProfile": ubx.FieldSpec{
+		WireName: "artifact_streaming_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_ArtifactStreamingProfileFields,
+	},
+	"AvailabilityZones":          ubx.FieldSpec{WireName: "availability_zones"},
+	"CapacityReservationGroupId": ubx.FieldSpec{WireName: "capacity_reservation_group_id"},
+	"Count":                      ubx.FieldSpec{WireName: "count"},
+	"CreationData": ubx.FieldSpec{
+		WireName: "creation_data",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_CreationDataFields,
+	},
+	"CurrentOrchestratorVersion": ubx.FieldSpec{WireName: "current_orchestrator_version"},
+	"ETag":                       ubx.FieldSpec{WireName: "e_tag"},
+	"EnableAutoScaling":          ubx.FieldSpec{WireName: "enable_auto_scaling"},
+	"EnableEncryptionAtHost":     ubx.FieldSpec{WireName: "enable_encryption_at_host"},
+	"EnableFips":                 ubx.FieldSpec{WireName: "enable_fips"},
+	"EnableNodePublicIp":         ubx.FieldSpec{WireName: "enable_node_public_ip"},
+	"EnableUltraSsd":             ubx.FieldSpec{WireName: "enable_ultra_ssd"},
+	"GatewayProfile": ubx.FieldSpec{
+		WireName: "gateway_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_GatewayProfileFields,
+	},
+	"GpuInstanceProfile": ubx.FieldSpec{WireName: "gpu_instance_profile"},
+	"GpuProfile": ubx.FieldSpec{
+		WireName: "gpu_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_GpuProfileFields,
+	},
+	"HostGroupId": ubx.FieldSpec{WireName: "host_group_id"},
+	"KubeletConfig": ubx.FieldSpec{
+		WireName: "kubelet_config",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_KubeletConfigFields,
+	},
+	"KubeletDiskType": ubx.FieldSpec{WireName: "kubelet_disk_type"},
+	"LinuxOsconfig": ubx.FieldSpec{
+		WireName: "linux_osconfig",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_LinuxOsconfigFields,
+	},
+	"LocalDnsprofile": ubx.FieldSpec{
+		WireName: "local_dnsprofile",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_LocalDnsprofileFields,
+	},
+	"MaxCount":        ubx.FieldSpec{WireName: "max_count"},
+	"MaxPods":         ubx.FieldSpec{WireName: "max_pods"},
+	"MessageOfTheDay": ubx.FieldSpec{WireName: "message_of_the_day"},
+	"MinCount":        ubx.FieldSpec{WireName: "min_count"},
+	"Mode":            ubx.FieldSpec{WireName: "mode"},
+	"NetworkProfile": ubx.FieldSpec{
+		WireName: "network_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_NetworkProfileFields,
+	},
+	"NodeImageVersion":     ubx.FieldSpec{WireName: "node_image_version"},
+	"NodeLabels":           ubx.FieldSpec{WireName: "node_labels"},
+	"NodePublicIpprefixId": ubx.FieldSpec{WireName: "node_public_ipprefix_id"},
+	"NodeTaints":           ubx.FieldSpec{WireName: "node_taints"},
+	"OrchestratorVersion":  ubx.FieldSpec{WireName: "orchestrator_version"},
+	"OsDiskSizeGb":         ubx.FieldSpec{WireName: "os_disk_size_gb"},
+	"OsDiskType":           ubx.FieldSpec{WireName: "os_disk_type"},
+	"OsSku":                ubx.FieldSpec{WireName: "os_sku"},
+	"OsType":               ubx.FieldSpec{WireName: "os_type"},
+	"PodIpallocationMode":  ubx.FieldSpec{WireName: "pod_ipallocation_mode"},
+	"PodSubnetId":          ubx.FieldSpec{WireName: "pod_subnet_id"},
+	"PowerState": ubx.FieldSpec{
+		WireName: "power_state",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_PowerStateFields,
+	},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"ProximityPlacementGroupId": ubx.FieldSpec{WireName: "proximity_placement_group_id"},
+	"ScaleDownMode":             ubx.FieldSpec{WireName: "scale_down_mode"},
+	"ScaleSetEvictionPolicy":    ubx.FieldSpec{WireName: "scale_set_eviction_policy"},
+	"ScaleSetPriority":          ubx.FieldSpec{WireName: "scale_set_priority"},
+	"SecurityProfile": ubx.FieldSpec{
+		WireName: "security_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_SecurityProfileFields,
+	},
+	"SpotMaxPrice": ubx.FieldSpec{WireName: "spot_max_price"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_StatusFields,
+	},
+	"Tags": ubx.FieldSpec{WireName: "tags"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+	"UpgradeSettings": ubx.FieldSpec{
+		WireName: "upgrade_settings",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_UpgradeSettingsFields,
+	},
+	"VirtualMachineNodesStatus": ubx.FieldSpec{
+		WireName: "virtual_machine_nodes_status",
+		Kind:     "list",
+		Fields:   ManagedclustersAgentPool_Properties_VirtualMachineNodesStatusFields,
+	},
+	"VirtualMachinesProfile": ubx.FieldSpec{
+		WireName: "virtual_machines_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_VirtualMachinesProfileFields,
+	},
+	"VmSize":       ubx.FieldSpec{WireName: "vm_size"},
+	"VnetSubnetId": ubx.FieldSpec{WireName: "vnet_subnet_id"},
+	"WindowsProfile": ubx.FieldSpec{
+		WireName: "windows_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersAgentPool_Properties_WindowsProfileFields,
+	},
+	"WorkloadRuntime": ubx.FieldSpec{WireName: "workload_runtime"},
+}
 
 type ManagedclustersAgentPoolConfig struct {
 	// Properties for the container service agent pool profile.
@@ -720,8 +719,8 @@ var ManagedclustersAgentPool = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedclustersAgentPool_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedclustersAgentPool_PropertiesFields,
 		},
 	},
 }

@@ -16,17 +16,17 @@ type ContainerRegistryResource_Properties struct {
 }
 
 var ContainerRegistryResource_Properties_CredentialsFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ContainerRegistryResource_PropertiesFields = ubx.FieldMap{
-		"Credentials": ubx.FieldSpec{
-			WireName: "credentials",
-			Kind: "object",
-			Fields: ContainerRegistryResource_Properties_CredentialsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Credentials": ubx.FieldSpec{
+		WireName: "credentials",
+		Kind:     "object",
+		Fields:   ContainerRegistryResource_Properties_CredentialsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ContainerRegistryResourceConfig struct {
 	// Container registry resource payload.
@@ -43,8 +43,8 @@ var ContainerRegistryResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ContainerRegistryResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ContainerRegistryResource_PropertiesFields,
 		},
 	},
 }

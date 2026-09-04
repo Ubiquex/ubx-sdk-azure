@@ -8,18 +8,18 @@ type NetworkmanagerAdminRuleCollection_Value_Properties_AppliesToGroups struct {
 }
 
 type NetworkmanagerAdminRuleCollection_Value_Properties struct {
-	AppliesToGroups any
-	Description any
+	AppliesToGroups   any
+	Description       any
 	ProvisioningState any
-	ResourceGuid any
+	ResourceGuid      any
 }
 
 type NetworkmanagerAdminRuleCollection_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -29,12 +29,12 @@ type NetworkmanagerAdminRuleCollection_Value struct {
 }
 
 type NetworkmanagerAdminRuleCollectionConfig struct {
-	ConfigurationName any
+	ConfigurationName  any
 	NetworkManagerName any
 }
 
 type NetworkmanagerAdminRuleCollectionAttrs struct {
-	ConfigurationName any
+	ConfigurationName  any
 	NetworkManagerName any
 	// The link to the next page of items
 	NextLink any
@@ -45,7 +45,7 @@ type NetworkmanagerAdminRuleCollectionAttrs struct {
 var NetworkmanagerAdminRuleCollection = ubx.DataSourceBinding{
 	WireType: "azure_network_networkmanager_admin_rule_collection",
 	Fields: ubx.FieldMap{
-		"ConfigurationName": ubx.FieldSpec{WireName: "configuration_name"},
+		"ConfigurationName":  ubx.FieldSpec{WireName: "configuration_name"},
 		"NetworkManagerName": ubx.FieldSpec{WireName: "network_manager_name"},
 	},
 }

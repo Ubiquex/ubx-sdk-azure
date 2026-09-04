@@ -23,19 +23,17 @@ type SqlpoolSqlPoolBlobAuditingPolicy_Properties struct {
 }
 
 var SqlpoolSqlPoolBlobAuditingPolicy_PropertiesFields = ubx.FieldMap{
-		"AuditActionsAndGroups": ubx.FieldSpec{WireName: "audit_actions_and_groups"},
-		"IsAzureMonitorTargetEnabled": ubx.FieldSpec{WireName: "is_azure_monitor_target_enabled"},
-		"IsStorageSecondaryKeyInUse": ubx.FieldSpec{WireName: "is_storage_secondary_key_in_use"},
-		"RetentionDays": ubx.FieldSpec{WireName: "retention_days"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StorageAccountAccessKey": ubx.FieldSpec{WireName: "storage_account_access_key"},
-		"StorageAccountSubscriptionId": ubx.FieldSpec{WireName: "storage_account_subscription_id"},
-		"StorageEndpoint": ubx.FieldSpec{WireName: "storage_endpoint"},
-	}
+	"AuditActionsAndGroups":        ubx.FieldSpec{WireName: "audit_actions_and_groups"},
+	"IsAzureMonitorTargetEnabled":  ubx.FieldSpec{WireName: "is_azure_monitor_target_enabled"},
+	"IsStorageSecondaryKeyInUse":   ubx.FieldSpec{WireName: "is_storage_secondary_key_in_use"},
+	"RetentionDays":                ubx.FieldSpec{WireName: "retention_days"},
+	"State":                        ubx.FieldSpec{WireName: "state"},
+	"StorageAccountAccessKey":      ubx.FieldSpec{WireName: "storage_account_access_key"},
+	"StorageAccountSubscriptionId": ubx.FieldSpec{WireName: "storage_account_subscription_id"},
+	"StorageEndpoint":              ubx.FieldSpec{WireName: "storage_endpoint"},
+}
 
 type SqlpoolSqlPoolBlobAuditingPolicyConfig struct {
-	// Resource kind.
-	Kind any
 	// Properties of a Sql pool blob auditing policy.
 	Properties any
 }
@@ -50,11 +48,10 @@ type SqlpoolSqlPoolBlobAuditingPolicyAttrs struct {
 var SqlpoolSqlPoolBlobAuditingPolicy = ubx.ResourceBinding{
 	WireType: "azure_synapse_sqlpool_sql_pool_blob_auditing_policy",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlpoolSqlPoolBlobAuditingPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlpoolSqlPoolBlobAuditingPolicy_PropertiesFields,
 		},
 	},
 }

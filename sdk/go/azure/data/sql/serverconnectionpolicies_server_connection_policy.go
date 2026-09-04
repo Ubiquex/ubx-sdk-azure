@@ -8,8 +8,8 @@ type ServerconnectionpoliciesServerConnectionPolicy_Value_Properties struct {
 }
 
 type ServerconnectionpoliciesServerConnectionPolicy_Value struct {
-	Kind any
-	Location any
+	Kind       any
+	Location   any
 	Properties any
 }
 
@@ -19,7 +19,7 @@ type ServerconnectionpoliciesServerConnectionPolicyConfig struct {
 
 type ServerconnectionpoliciesServerConnectionPolicyAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The ServerConnectionPolicy items on this page
 	Value any

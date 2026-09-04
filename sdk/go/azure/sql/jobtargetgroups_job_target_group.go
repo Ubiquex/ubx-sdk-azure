@@ -4,13 +4,13 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JobtargetgroupsJobTargetGroup_Properties_Members struct {
-	DatabaseName any
-	ElasticPoolName any
-	MembershipType any
+	DatabaseName      any
+	ElasticPoolName   any
+	MembershipType    any
 	RefreshCredential any
-	ServerName any
-	ShardMapName any
-	Type any
+	ServerName        any
+	ShardMapName      any
+	Type              any
 }
 
 type JobtargetgroupsJobTargetGroup_Properties struct {
@@ -19,22 +19,22 @@ type JobtargetgroupsJobTargetGroup_Properties struct {
 }
 
 var JobtargetgroupsJobTargetGroup_Properties_MembersFields = ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ElasticPoolName": ubx.FieldSpec{WireName: "elastic_pool_name"},
-		"MembershipType": ubx.FieldSpec{WireName: "membership_type"},
-		"RefreshCredential": ubx.FieldSpec{WireName: "refresh_credential"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
-		"ShardMapName": ubx.FieldSpec{WireName: "shard_map_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DatabaseName":      ubx.FieldSpec{WireName: "database_name"},
+	"ElasticPoolName":   ubx.FieldSpec{WireName: "elastic_pool_name"},
+	"MembershipType":    ubx.FieldSpec{WireName: "membership_type"},
+	"RefreshCredential": ubx.FieldSpec{WireName: "refresh_credential"},
+	"ServerName":        ubx.FieldSpec{WireName: "server_name"},
+	"ShardMapName":      ubx.FieldSpec{WireName: "shard_map_name"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 var JobtargetgroupsJobTargetGroup_PropertiesFields = ubx.FieldMap{
-		"Members": ubx.FieldSpec{
-			WireName: "members",
-			Kind: "list",
-			Fields: JobtargetgroupsJobTargetGroup_Properties_MembersFields,
-		},
-	}
+	"Members": ubx.FieldSpec{
+		WireName: "members",
+		Kind:     "list",
+		Fields:   JobtargetgroupsJobTargetGroup_Properties_MembersFields,
+	},
+}
 
 type JobtargetgroupsJobTargetGroupConfig struct {
 	// Properties of job target group.
@@ -51,8 +51,8 @@ var JobtargetgroupsJobTargetGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: JobtargetgroupsJobTargetGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   JobtargetgroupsJobTargetGroup_PropertiesFields,
 		},
 	},
 }

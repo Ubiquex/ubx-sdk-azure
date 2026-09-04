@@ -24,16 +24,30 @@ class OpenapiSchedule_Properties_AdvancedSchedule:
 class OpenapiSchedule_Properties:
     # The properties of the create Advanced Schedule.
     advanced_schedule: Any = None
+    # Gets or sets the creation time.
+    creation_time: Any = None
     # Gets or sets the description of the schedule.
     description: Any = None
     # Gets or sets the end time of the schedule.
     expiry_time: Any = None
+    # Gets or sets the expiry time's offset in minutes.
+    expiry_time_offset_minutes: Any = None
     # Gets or sets the frequency of the schedule.
     frequency: Any = None
     # Gets or sets the interval of the schedule.
     interval: Any = None
+    # Gets or sets a value indicating whether this schedule is enabled.
+    is_enabled: Any = None
+    # Gets or sets the last modified time.
+    last_modified_time: Any = None
+    # Gets or sets the next run time of the schedule.
+    next_run: Any = None
+    # Gets or sets the next run time's offset in minutes.
+    next_run_offset_minutes: Any = None
     # Gets or sets the start time of the schedule.
     start_time: Any = None
+    # Gets the start time's offset in minutes.
+    start_time_offset_minutes: Any = None
     # Gets or sets the time zone of the schedule.
     time_zone: Any = None
 
@@ -58,11 +72,18 @@ _OpenapiSchedule_PropertiesFields = {
         kind="object",
         fields=_OpenapiSchedule_Properties_AdvancedScheduleFields,
     ),
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
     "description": ubx.FieldSpec(wire_name="description"),
     "expiry_time": ubx.FieldSpec(wire_name="expiry_time"),
+    "expiry_time_offset_minutes": ubx.FieldSpec(wire_name="expiry_time_offset_minutes"),
     "frequency": ubx.FieldSpec(wire_name="frequency"),
     "interval": ubx.FieldSpec(wire_name="interval"),
+    "is_enabled": ubx.FieldSpec(wire_name="is_enabled"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
+    "next_run": ubx.FieldSpec(wire_name="next_run"),
+    "next_run_offset_minutes": ubx.FieldSpec(wire_name="next_run_offset_minutes"),
     "start_time": ubx.FieldSpec(wire_name="start_time"),
+    "start_time_offset_minutes": ubx.FieldSpec(wire_name="start_time_offset_minutes"),
     "time_zone": ubx.FieldSpec(wire_name="time_zone"),
 }
 

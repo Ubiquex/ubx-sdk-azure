@@ -5,14 +5,14 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DomainService_Properties_ConfigDiagnostics_ValidatorResults_Issues struct {
 	DescriptionParams any
-	Id any
+	Id                any
 }
 
 type DomainService_Properties_ConfigDiagnostics_ValidatorResults struct {
-	Issues any
+	Issues                      any
 	ReplicaSetSubnetDisplayName any
-	Status any
-	ValidatorId any
+	Status                      any
+	ValidatorId                 any
 }
 
 type DomainService_Properties_ConfigDiagnostics struct {
@@ -86,39 +86,39 @@ type DomainService_Properties_NotificationSettings struct {
 }
 
 type DomainService_Properties_ReplicaSets_HealthAlerts struct {
-	Id any
-	Issue any
-	LastDetected any
-	Name any
-	Raised any
+	Id            any
+	Issue         any
+	LastDetected  any
+	Name          any
+	Raised        any
 	ResolutionUri any
-	Severity any
+	Severity      any
 }
 
 type DomainService_Properties_ReplicaSets_HealthMonitors struct {
 	Details any
-	Id any
-	Name any
+	Id      any
+	Name    any
 }
 
 type DomainService_Properties_ReplicaSets struct {
 	DomainControllerIpAddress any
-	ExternalAccessIpAddress any
-	HealthAlerts any
-	HealthLastEvaluated any
-	HealthMonitors any
-	Location any
-	ReplicaSetId any
-	ServiceStatus any
-	SubnetId any
-	VnetSiteId any
+	ExternalAccessIpAddress   any
+	HealthAlerts              any
+	HealthLastEvaluated       any
+	HealthMonitors            any
+	Location                  any
+	ReplicaSetId              any
+	ServiceStatus             any
+	SubnetId                  any
+	VnetSiteId                any
 }
 
 type DomainService_Properties_ResourceForestSettings_Settings struct {
-	FriendlyName any
-	RemoteDnsIps any
-	TrustDirection any
-	TrustPassword any
+	FriendlyName      any
+	RemoteDnsIps      any
+	TrustDirection    any
+	TrustPassword     any
 	TrustedDomainFqdn any
 }
 
@@ -169,175 +169,175 @@ type DomainService_Properties struct {
 }
 
 var DomainService_Properties_ConfigDiagnostics_ValidatorResults_IssuesFields = ubx.FieldMap{
-		"DescriptionParams": ubx.FieldSpec{WireName: "description_params"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"DescriptionParams": ubx.FieldSpec{WireName: "description_params"},
+	"Id":                ubx.FieldSpec{WireName: "id"},
+}
 
 var DomainService_Properties_ConfigDiagnostics_ValidatorResultsFields = ubx.FieldMap{
-		"Issues": ubx.FieldSpec{
-			WireName: "issues",
-			Kind: "list",
-			Fields: DomainService_Properties_ConfigDiagnostics_ValidatorResults_IssuesFields,
-		},
-		"ReplicaSetSubnetDisplayName": ubx.FieldSpec{WireName: "replica_set_subnet_display_name"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"ValidatorId": ubx.FieldSpec{WireName: "validator_id"},
-	}
+	"Issues": ubx.FieldSpec{
+		WireName: "issues",
+		Kind:     "list",
+		Fields:   DomainService_Properties_ConfigDiagnostics_ValidatorResults_IssuesFields,
+	},
+	"ReplicaSetSubnetDisplayName": ubx.FieldSpec{WireName: "replica_set_subnet_display_name"},
+	"Status":                      ubx.FieldSpec{WireName: "status"},
+	"ValidatorId":                 ubx.FieldSpec{WireName: "validator_id"},
+}
 
 var DomainService_Properties_ConfigDiagnosticsFields = ubx.FieldMap{
-		"LastExecuted": ubx.FieldSpec{WireName: "last_executed"},
-		"ValidatorResults": ubx.FieldSpec{
-			WireName: "validator_results",
-			Kind: "list",
-			Fields: DomainService_Properties_ConfigDiagnostics_ValidatorResultsFields,
-		},
-	}
+	"LastExecuted": ubx.FieldSpec{WireName: "last_executed"},
+	"ValidatorResults": ubx.FieldSpec{
+		WireName: "validator_results",
+		Kind:     "list",
+		Fields:   DomainService_Properties_ConfigDiagnostics_ValidatorResultsFields,
+	},
+}
 
 var DomainService_Properties_DomainSecuritySettingsFields = ubx.FieldMap{
-		"ChannelBinding": ubx.FieldSpec{WireName: "channel_binding"},
-		"KerberosArmoring": ubx.FieldSpec{WireName: "kerberos_armoring"},
-		"KerberosRc4Encryption": ubx.FieldSpec{WireName: "kerberos_rc4_encryption"},
-		"LdapSigning": ubx.FieldSpec{WireName: "ldap_signing"},
-		"NtlmV1": ubx.FieldSpec{WireName: "ntlm_v1"},
-		"SyncKerberosPasswords": ubx.FieldSpec{WireName: "sync_kerberos_passwords"},
-		"SyncNtlmPasswords": ubx.FieldSpec{WireName: "sync_ntlm_passwords"},
-		"SyncOnPremPasswords": ubx.FieldSpec{WireName: "sync_on_prem_passwords"},
-		"TlsV1": ubx.FieldSpec{WireName: "tls_v1"},
-	}
+	"ChannelBinding":        ubx.FieldSpec{WireName: "channel_binding"},
+	"KerberosArmoring":      ubx.FieldSpec{WireName: "kerberos_armoring"},
+	"KerberosRc4Encryption": ubx.FieldSpec{WireName: "kerberos_rc4_encryption"},
+	"LdapSigning":           ubx.FieldSpec{WireName: "ldap_signing"},
+	"NtlmV1":                ubx.FieldSpec{WireName: "ntlm_v1"},
+	"SyncKerberosPasswords": ubx.FieldSpec{WireName: "sync_kerberos_passwords"},
+	"SyncNtlmPasswords":     ubx.FieldSpec{WireName: "sync_ntlm_passwords"},
+	"SyncOnPremPasswords":   ubx.FieldSpec{WireName: "sync_on_prem_passwords"},
+	"TlsV1":                 ubx.FieldSpec{WireName: "tls_v1"},
+}
 
 var DomainService_Properties_LdapsSettingsFields = ubx.FieldMap{
-		"CertificateNotAfter": ubx.FieldSpec{WireName: "certificate_not_after"},
-		"CertificateThumbprint": ubx.FieldSpec{WireName: "certificate_thumbprint"},
-		"ExternalAccess": ubx.FieldSpec{WireName: "external_access"},
-		"Ldaps": ubx.FieldSpec{WireName: "ldaps"},
-		"PfxCertificate": ubx.FieldSpec{WireName: "pfx_certificate"},
-		"PfxCertificatePassword": ubx.FieldSpec{WireName: "pfx_certificate_password"},
-		"PublicCertificate": ubx.FieldSpec{WireName: "public_certificate"},
-	}
+	"CertificateNotAfter":    ubx.FieldSpec{WireName: "certificate_not_after"},
+	"CertificateThumbprint":  ubx.FieldSpec{WireName: "certificate_thumbprint"},
+	"ExternalAccess":         ubx.FieldSpec{WireName: "external_access"},
+	"Ldaps":                  ubx.FieldSpec{WireName: "ldaps"},
+	"PfxCertificate":         ubx.FieldSpec{WireName: "pfx_certificate"},
+	"PfxCertificatePassword": ubx.FieldSpec{WireName: "pfx_certificate_password"},
+	"PublicCertificate":      ubx.FieldSpec{WireName: "public_certificate"},
+}
 
 var DomainService_Properties_MigrationProperties_MigrationProgressFields = ubx.FieldMap{
-		"CompletionPercentage": ubx.FieldSpec{WireName: "completion_percentage"},
-		"ProgressMessage": ubx.FieldSpec{WireName: "progress_message"},
-	}
+	"CompletionPercentage": ubx.FieldSpec{WireName: "completion_percentage"},
+	"ProgressMessage":      ubx.FieldSpec{WireName: "progress_message"},
+}
 
 var DomainService_Properties_MigrationPropertiesFields = ubx.FieldMap{
-		"MigrationProgress": ubx.FieldSpec{
-			WireName: "migration_progress",
-			Kind: "object",
-			Fields: DomainService_Properties_MigrationProperties_MigrationProgressFields,
-		},
-		"OldSubnetId": ubx.FieldSpec{WireName: "old_subnet_id"},
-		"OldVnetSiteId": ubx.FieldSpec{WireName: "old_vnet_site_id"},
-	}
+	"MigrationProgress": ubx.FieldSpec{
+		WireName: "migration_progress",
+		Kind:     "object",
+		Fields:   DomainService_Properties_MigrationProperties_MigrationProgressFields,
+	},
+	"OldSubnetId":   ubx.FieldSpec{WireName: "old_subnet_id"},
+	"OldVnetSiteId": ubx.FieldSpec{WireName: "old_vnet_site_id"},
+}
 
 var DomainService_Properties_NotificationSettingsFields = ubx.FieldMap{
-		"AdditionalRecipients": ubx.FieldSpec{WireName: "additional_recipients"},
-		"NotifyDcAdmins": ubx.FieldSpec{WireName: "notify_dc_admins"},
-		"NotifyGlobalAdmins": ubx.FieldSpec{WireName: "notify_global_admins"},
-	}
+	"AdditionalRecipients": ubx.FieldSpec{WireName: "additional_recipients"},
+	"NotifyDcAdmins":       ubx.FieldSpec{WireName: "notify_dc_admins"},
+	"NotifyGlobalAdmins":   ubx.FieldSpec{WireName: "notify_global_admins"},
+}
 
 var DomainService_Properties_ReplicaSets_HealthAlertsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Issue": ubx.FieldSpec{WireName: "issue"},
-		"LastDetected": ubx.FieldSpec{WireName: "last_detected"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Raised": ubx.FieldSpec{WireName: "raised"},
-		"ResolutionUri": ubx.FieldSpec{WireName: "resolution_uri"},
-		"Severity": ubx.FieldSpec{WireName: "severity"},
-	}
+	"Id":            ubx.FieldSpec{WireName: "id"},
+	"Issue":         ubx.FieldSpec{WireName: "issue"},
+	"LastDetected":  ubx.FieldSpec{WireName: "last_detected"},
+	"Name":          ubx.FieldSpec{WireName: "name"},
+	"Raised":        ubx.FieldSpec{WireName: "raised"},
+	"ResolutionUri": ubx.FieldSpec{WireName: "resolution_uri"},
+	"Severity":      ubx.FieldSpec{WireName: "severity"},
+}
 
 var DomainService_Properties_ReplicaSets_HealthMonitorsFields = ubx.FieldMap{
-		"Details": ubx.FieldSpec{WireName: "details"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Details": ubx.FieldSpec{WireName: "details"},
+	"Id":      ubx.FieldSpec{WireName: "id"},
+	"Name":    ubx.FieldSpec{WireName: "name"},
+}
 
 var DomainService_Properties_ReplicaSetsFields = ubx.FieldMap{
-		"DomainControllerIpAddress": ubx.FieldSpec{WireName: "domain_controller_ip_address"},
-		"ExternalAccessIpAddress": ubx.FieldSpec{WireName: "external_access_ip_address"},
-		"HealthAlerts": ubx.FieldSpec{
-			WireName: "health_alerts",
-			Kind: "list",
-			Fields: DomainService_Properties_ReplicaSets_HealthAlertsFields,
-		},
-		"HealthLastEvaluated": ubx.FieldSpec{WireName: "health_last_evaluated"},
-		"HealthMonitors": ubx.FieldSpec{
-			WireName: "health_monitors",
-			Kind: "list",
-			Fields: DomainService_Properties_ReplicaSets_HealthMonitorsFields,
-		},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"ReplicaSetId": ubx.FieldSpec{WireName: "replica_set_id"},
-		"ServiceStatus": ubx.FieldSpec{WireName: "service_status"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-		"VnetSiteId": ubx.FieldSpec{WireName: "vnet_site_id"},
-	}
+	"DomainControllerIpAddress": ubx.FieldSpec{WireName: "domain_controller_ip_address"},
+	"ExternalAccessIpAddress":   ubx.FieldSpec{WireName: "external_access_ip_address"},
+	"HealthAlerts": ubx.FieldSpec{
+		WireName: "health_alerts",
+		Kind:     "list",
+		Fields:   DomainService_Properties_ReplicaSets_HealthAlertsFields,
+	},
+	"HealthLastEvaluated": ubx.FieldSpec{WireName: "health_last_evaluated"},
+	"HealthMonitors": ubx.FieldSpec{
+		WireName: "health_monitors",
+		Kind:     "list",
+		Fields:   DomainService_Properties_ReplicaSets_HealthMonitorsFields,
+	},
+	"Location":      ubx.FieldSpec{WireName: "location"},
+	"ReplicaSetId":  ubx.FieldSpec{WireName: "replica_set_id"},
+	"ServiceStatus": ubx.FieldSpec{WireName: "service_status"},
+	"SubnetId":      ubx.FieldSpec{WireName: "subnet_id"},
+	"VnetSiteId":    ubx.FieldSpec{WireName: "vnet_site_id"},
+}
 
 var DomainService_Properties_ResourceForestSettings_SettingsFields = ubx.FieldMap{
-		"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
-		"RemoteDnsIps": ubx.FieldSpec{WireName: "remote_dns_ips"},
-		"TrustDirection": ubx.FieldSpec{WireName: "trust_direction"},
-		"TrustPassword": ubx.FieldSpec{WireName: "trust_password"},
-		"TrustedDomainFqdn": ubx.FieldSpec{WireName: "trusted_domain_fqdn"},
-	}
+	"FriendlyName":      ubx.FieldSpec{WireName: "friendly_name"},
+	"RemoteDnsIps":      ubx.FieldSpec{WireName: "remote_dns_ips"},
+	"TrustDirection":    ubx.FieldSpec{WireName: "trust_direction"},
+	"TrustPassword":     ubx.FieldSpec{WireName: "trust_password"},
+	"TrustedDomainFqdn": ubx.FieldSpec{WireName: "trusted_domain_fqdn"},
+}
 
 var DomainService_Properties_ResourceForestSettingsFields = ubx.FieldMap{
-		"ResourceForest": ubx.FieldSpec{WireName: "resource_forest"},
-		"Settings": ubx.FieldSpec{
-			WireName: "settings",
-			Kind: "list",
-			Fields: DomainService_Properties_ResourceForestSettings_SettingsFields,
-		},
-	}
+	"ResourceForest": ubx.FieldSpec{WireName: "resource_forest"},
+	"Settings": ubx.FieldSpec{
+		WireName: "settings",
+		Kind:     "list",
+		Fields:   DomainService_Properties_ResourceForestSettings_SettingsFields,
+	},
+}
 
 var DomainService_PropertiesFields = ubx.FieldMap{
-		"ConfigDiagnostics": ubx.FieldSpec{
-			WireName: "config_diagnostics",
-			Kind: "object",
-			Fields: DomainService_Properties_ConfigDiagnosticsFields,
-		},
-		"DeploymentId": ubx.FieldSpec{WireName: "deployment_id"},
-		"DomainConfigurationType": ubx.FieldSpec{WireName: "domain_configuration_type"},
-		"DomainName": ubx.FieldSpec{WireName: "domain_name"},
-		"DomainSecuritySettings": ubx.FieldSpec{
-			WireName: "domain_security_settings",
-			Kind: "object",
-			Fields: DomainService_Properties_DomainSecuritySettingsFields,
-		},
-		"FilteredSync": ubx.FieldSpec{WireName: "filtered_sync"},
-		"LdapsSettings": ubx.FieldSpec{
-			WireName: "ldaps_settings",
-			Kind: "object",
-			Fields: DomainService_Properties_LdapsSettingsFields,
-		},
-		"MigrationProperties": ubx.FieldSpec{
-			WireName: "migration_properties",
-			Kind: "object",
-			Fields: DomainService_Properties_MigrationPropertiesFields,
-		},
-		"NotificationSettings": ubx.FieldSpec{
-			WireName: "notification_settings",
-			Kind: "object",
-			Fields: DomainService_Properties_NotificationSettingsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ReplicaSets": ubx.FieldSpec{
-			WireName: "replica_sets",
-			Kind: "list",
-			Fields: DomainService_Properties_ReplicaSetsFields,
-		},
-		"ResourceForestSettings": ubx.FieldSpec{
-			WireName: "resource_forest_settings",
-			Kind: "object",
-			Fields: DomainService_Properties_ResourceForestSettingsFields,
-		},
-		"Sku": ubx.FieldSpec{WireName: "sku"},
-		"SyncApplicationId": ubx.FieldSpec{WireName: "sync_application_id"},
-		"SyncOwner": ubx.FieldSpec{WireName: "sync_owner"},
-		"SyncScope": ubx.FieldSpec{WireName: "sync_scope"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ConfigDiagnostics": ubx.FieldSpec{
+		WireName: "config_diagnostics",
+		Kind:     "object",
+		Fields:   DomainService_Properties_ConfigDiagnosticsFields,
+	},
+	"DeploymentId":            ubx.FieldSpec{WireName: "deployment_id"},
+	"DomainConfigurationType": ubx.FieldSpec{WireName: "domain_configuration_type"},
+	"DomainName":              ubx.FieldSpec{WireName: "domain_name"},
+	"DomainSecuritySettings": ubx.FieldSpec{
+		WireName: "domain_security_settings",
+		Kind:     "object",
+		Fields:   DomainService_Properties_DomainSecuritySettingsFields,
+	},
+	"FilteredSync": ubx.FieldSpec{WireName: "filtered_sync"},
+	"LdapsSettings": ubx.FieldSpec{
+		WireName: "ldaps_settings",
+		Kind:     "object",
+		Fields:   DomainService_Properties_LdapsSettingsFields,
+	},
+	"MigrationProperties": ubx.FieldSpec{
+		WireName: "migration_properties",
+		Kind:     "object",
+		Fields:   DomainService_Properties_MigrationPropertiesFields,
+	},
+	"NotificationSettings": ubx.FieldSpec{
+		WireName: "notification_settings",
+		Kind:     "object",
+		Fields:   DomainService_Properties_NotificationSettingsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ReplicaSets": ubx.FieldSpec{
+		WireName: "replica_sets",
+		Kind:     "list",
+		Fields:   DomainService_Properties_ReplicaSetsFields,
+	},
+	"ResourceForestSettings": ubx.FieldSpec{
+		WireName: "resource_forest_settings",
+		Kind:     "object",
+		Fields:   DomainService_Properties_ResourceForestSettingsFields,
+	},
+	"Sku":               ubx.FieldSpec{WireName: "sku"},
+	"SyncApplicationId": ubx.FieldSpec{WireName: "sync_application_id"},
+	"SyncOwner":         ubx.FieldSpec{WireName: "sync_owner"},
+	"SyncScope":         ubx.FieldSpec{WireName: "sync_scope"},
+	"TenantId":          ubx.FieldSpec{WireName: "tenant_id"},
+	"Version":           ubx.FieldSpec{WireName: "version"},
+}
 
 type DomainServiceConfig struct {
 	// Properties of the Domain Service.
@@ -354,8 +354,8 @@ var DomainService = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DomainService_PropertiesFields,
+			Kind:     "object",
+			Fields:   DomainService_PropertiesFields,
 		},
 	},
 }

@@ -7,31 +7,80 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class OpenapiJob_Properties_JobRuntimeEnvironment:
+    # Name of Runtime Environment.
+    runtime_environment_name: Any = None
+
+@dataclasses.dataclass
 class OpenapiJob_Properties_Runbook:
     # Gets or sets the name of the runbook.
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiJob_Properties:
+    # Gets or sets the creation time of the job.
+    creation_time: Any = None
+    # Gets or sets the end time of the job.
+    end_time: Any = None
+    # Gets or sets the exception of the job.
+    exception: Any = None
+    # Gets or sets the id of the job.
+    job_id: Any = None
+    # The runbook property associated with the entity.
+    job_runtime_environment: Any = None
+    # Gets or sets the last modified time of the job.
+    last_modified_time: Any = None
+    # Gets or sets the last status modified time of the job.
+    last_status_modified_time: Any = None
     # Gets or sets the parameters of the job.
     parameters: Any = None
+    # The provisioning state of the resource.
+    provisioning_state: Any = None
     # Gets or sets the runOn which specifies the group name where the job is to be executed.
     run_on: Any = None
     # The runbook property associated with the entity.
     runbook: Any = None
+    # Gets or sets the start time of the job.
+    start_time: Any = None
+    # Gets or sets the job started by.
+    started_by: Any = None
+    # Gets or sets the status of the job.
+    status: Any = None
+    # Gets or sets the status details of the job.
+    status_details: Any = None
+
+_OpenapiJob_Properties_JobRuntimeEnvironmentFields = {
+    "runtime_environment_name": ubx.FieldSpec(wire_name="runtime_environment_name"),
+}
 
 _OpenapiJob_Properties_RunbookFields = {
     "name": ubx.FieldSpec(wire_name="name"),
 }
 
 _OpenapiJob_PropertiesFields = {
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
+    "end_time": ubx.FieldSpec(wire_name="end_time"),
+    "exception": ubx.FieldSpec(wire_name="exception"),
+    "job_id": ubx.FieldSpec(wire_name="job_id"),
+    "job_runtime_environment": ubx.FieldSpec(
+        wire_name="job_runtime_environment",
+        kind="object",
+        fields=_OpenapiJob_Properties_JobRuntimeEnvironmentFields,
+    ),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
+    "last_status_modified_time": ubx.FieldSpec(wire_name="last_status_modified_time"),
     "parameters": ubx.FieldSpec(wire_name="parameters"),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
     "run_on": ubx.FieldSpec(wire_name="run_on"),
     "runbook": ubx.FieldSpec(
         wire_name="runbook",
         kind="object",
         fields=_OpenapiJob_Properties_RunbookFields,
     ),
+    "start_time": ubx.FieldSpec(wire_name="start_time"),
+    "started_by": ubx.FieldSpec(wire_name="started_by"),
+    "status": ubx.FieldSpec(wire_name="status"),
+    "status_details": ubx.FieldSpec(wire_name="status_details"),
 }
 
 @dataclasses.dataclass

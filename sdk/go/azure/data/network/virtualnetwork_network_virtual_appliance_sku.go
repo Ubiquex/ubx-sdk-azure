@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkNetworkVirtualApplianceSku_Value_Properties_AvailableScaleUnits struct {
 	InstanceCount any
-	ScaleUnit any
+	ScaleUnit     any
 }
 
 type VirtualnetworkNetworkVirtualApplianceSku_Value_Properties struct {
 	AvailableScaleUnits any
-	AvailableVersions any
-	Vendor any
+	AvailableVersions   any
+	Vendor              any
 }
 
 type VirtualnetworkNetworkVirtualApplianceSku_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -31,6 +31,5 @@ type VirtualnetworkNetworkVirtualApplianceSkuAttrs struct {
 
 var VirtualnetworkNetworkVirtualApplianceSku = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_network_virtual_appliance_sku",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -11,27 +11,27 @@ type ServiceJob_Properties_CustomDetails struct {
 }
 
 type ServiceJob_Properties_Errors_ProviderErrorDetails struct {
-	ErrorCode any
-	ErrorId any
-	ErrorMessage any
-	PossibleCauses any
+	ErrorCode         any
+	ErrorId           any
+	ErrorMessage      any
+	PossibleCauses    any
 	RecommendedAction any
 }
 
 type ServiceJob_Properties_Errors_ServiceErrorDetails struct {
-	ActivityId any
-	Code any
-	Message any
-	PossibleCauses any
+	ActivityId        any
+	Code              any
+	Message           any
+	PossibleCauses    any
 	RecommendedAction any
 }
 
 type ServiceJob_Properties_Errors struct {
-	CreationTime any
-	ErrorLevel any
+	CreationTime         any
+	ErrorLevel           any
 	ProviderErrorDetails any
-	ServiceErrorDetails any
-	TaskId any
+	ServiceErrorDetails  any
+	TaskId               any
 }
 
 type ServiceJob_Properties_Tasks_CustomDetails struct {
@@ -42,23 +42,23 @@ type ServiceJob_Properties_Tasks_GroupTaskCustomDetails_ChildTasks struct {
 }
 
 type ServiceJob_Properties_Tasks_GroupTaskCustomDetails struct {
-	ChildTasks any
+	ChildTasks   any
 	InstanceType any
 }
 
 type ServiceJob_Properties_Tasks struct {
-	AllowedActions any
-	CustomDetails any
-	EndTime any
-	Errors any
-	FriendlyName any
+	AllowedActions         any
+	CustomDetails          any
+	EndTime                any
+	Errors                 any
+	FriendlyName           any
 	GroupTaskCustomDetails any
-	Name any
-	StartTime any
-	State any
-	StateDescription any
-	TaskId any
-	TaskType any
+	Name                   any
+	StartTime              any
+	State                  any
+	StateDescription       any
+	TaskId                 any
+	TaskType               any
 }
 
 type ServiceJob_Properties struct {
@@ -138,12 +138,12 @@ var ServiceJob = ubx.ResourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_job",
 	Fields: ubx.FieldMap{
 		"AffectedObjectTypes": ubx.FieldSpec{WireName: "affected_object_types"},
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"FabricId": ubx.FieldSpec{WireName: "fabric_id"},
-		"JobName": ubx.FieldSpec{WireName: "job_name"},
-		"JobOutputType": ubx.FieldSpec{WireName: "job_output_type"},
-		"JobStatus": ubx.FieldSpec{WireName: "job_status"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"TimezoneOffset": ubx.FieldSpec{WireName: "timezone_offset"},
+		"EndTime":             ubx.FieldSpec{WireName: "end_time"},
+		"FabricId":            ubx.FieldSpec{WireName: "fabric_id"},
+		"JobName":             ubx.FieldSpec{WireName: "job_name"},
+		"JobOutputType":       ubx.FieldSpec{WireName: "job_output_type"},
+		"JobStatus":           ubx.FieldSpec{WireName: "job_status"},
+		"StartTime":           ubx.FieldSpec{WireName: "start_time"},
+		"TimezoneOffset":      ubx.FieldSpec{WireName: "timezone_offset"},
 	},
 }

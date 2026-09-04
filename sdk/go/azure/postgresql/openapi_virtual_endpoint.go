@@ -13,10 +13,10 @@ type OpenapiVirtualEndpoint_Properties struct {
 }
 
 var OpenapiVirtualEndpoint_PropertiesFields = ubx.FieldMap{
-		"EndpointType": ubx.FieldSpec{WireName: "endpoint_type"},
-		"Members": ubx.FieldSpec{WireName: "members"},
-		"VirtualEndpoints": ubx.FieldSpec{WireName: "virtual_endpoints"},
-	}
+	"EndpointType":     ubx.FieldSpec{WireName: "endpoint_type"},
+	"Members":          ubx.FieldSpec{WireName: "members"},
+	"VirtualEndpoints": ubx.FieldSpec{WireName: "virtual_endpoints"},
+}
 
 type OpenapiVirtualEndpointConfig struct {
 	// Properties of a pair of virtual endpoints.
@@ -33,8 +33,8 @@ var OpenapiVirtualEndpoint = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiVirtualEndpoint_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiVirtualEndpoint_PropertiesFields,
 		},
 	},
 }

@@ -5,36 +5,36 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingSubscriptionAlias_Value_Properties struct {
 	BillingSubscriptionId any
-	ProvisioningState any
+	ProvisioningState     any
 }
 
 type OpenapiBillingSubscriptionAlias_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiBillingSubscriptionAliasConfig struct {
 	BillingAccountName any
-	Count any
-	Filter any
-	IncludeDeleted any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	Count              any
+	Filter             any
+	IncludeDeleted     any
+	OrderBy            any
+	Search             any
+	Skip               any
+	Top                any
 }
 
 type OpenapiBillingSubscriptionAliasAttrs struct {
 	BillingAccountName any
-	Count any
-	Filter any
-	IncludeDeleted any
+	Count              any
+	Filter             any
+	IncludeDeleted     any
 	// The link to the next page of items
 	NextLink any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	OrderBy  any
+	Search   any
+	Skip     any
+	Top      any
 	// The BillingSubscriptionAlias items on this page
 	Value any
 }
@@ -43,12 +43,12 @@ var OpenapiBillingSubscriptionAlias = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_billing_subscription_alias",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"IncludeDeleted": ubx.FieldSpec{WireName: "include_deleted"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Count":              ubx.FieldSpec{WireName: "count"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"IncludeDeleted":     ubx.FieldSpec{WireName: "include_deleted"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

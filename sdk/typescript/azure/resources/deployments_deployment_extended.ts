@@ -6,6 +6,48 @@ export interface DeploymentsDeploymentExtended_Properties_DebugSetting {
   detailLevel?: string | Computed<string>;
 }
 
+export interface DeploymentsDeploymentExtended_Properties_Dependencies_DependsOn {
+  id?: string | Computed<string>;
+  resourceName?: string | Computed<string>;
+  resourceType?: string | Computed<string>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Dependencies {
+  dependsOn?: DeploymentsDeploymentExtended_Properties_Dependencies_DependsOn[] | Computed<DeploymentsDeploymentExtended_Properties_Dependencies_DependsOn[]>;
+  id?: string | Computed<string>;
+  resourceName?: string | Computed<string>;
+  resourceType?: string | Computed<string>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfo {
+  info?: unknown | Computed<unknown>;
+  type?: string | Computed<string>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Diagnostics {
+  additionalInfo?: DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfo[] | Computed<DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfo[]>;
+  code?: string | Computed<string>;
+  level?: string | Computed<string>;
+  message?: string | Computed<string>;
+  target?: string | Computed<string>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Error_Details {
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Error {
+  /** The error additional info. */
+  additionalInfo?: DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfo[] | Computed<DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfo[]>;
+  /** The error code. */
+  code?: string | Computed<string>;
+  /** The error details. */
+  details?: DeploymentsDeploymentExtended_Properties_Error_Details[] | Computed<DeploymentsDeploymentExtended_Properties_Error_Details[]>;
+  /** The error message. */
+  message?: string | Computed<string>;
+  /** The error target. */
+  target?: string | Computed<string>;
+}
+
 export interface DeploymentsDeploymentExtended_Properties_ExpressionEvaluationOptions {
   /** The scope to be used for evaluation of parameters, variables and functions in a nested template. */
   scope?: string | Computed<string>;
@@ -27,6 +69,14 @@ export interface DeploymentsDeploymentExtended_Properties_ExtensionConfigs {
   value?: unknown | Computed<unknown>;
 }
 
+export interface DeploymentsDeploymentExtended_Properties_Extensions {
+  alias?: string | Computed<string>;
+  config?: Record<string, DeploymentsDeploymentExtended_Properties_ExtensionConfigs> | Computed<Record<string, DeploymentsDeploymentExtended_Properties_ExtensionConfigs>>;
+  configId?: string | Computed<string>;
+  name?: string | Computed<string>;
+  version?: string | Computed<string>;
+}
+
 export interface DeploymentsDeploymentExtended_Properties_ExternalInputDefinitions {
   config?: unknown | Computed<unknown>;
   kind?: string | Computed<string>;
@@ -39,8 +89,18 @@ export interface DeploymentsDeploymentExtended_Properties_ExternalInputs {
 export interface DeploymentsDeploymentExtended_Properties_OnErrorDeployment {
   /** The deployment to be used on error case. */
   deploymentName?: string | Computed<string>;
+  /** The state of the provisioning for the on error deployment. */
+  provisioningState?: string | Computed<string>;
   /** The deployment on error behavior type. Possible values are LastSuccessful and SpecificDeployment. */
   type?: string | Computed<string>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_OutputResources {
+  apiVersion?: string | Computed<string>;
+  extension?: DeploymentsDeploymentExtended_Properties_Extensions | Computed<DeploymentsDeploymentExtended_Properties_Extensions>;
+  id?: string | Computed<string>;
+  identifiers?: unknown | Computed<unknown>;
+  resourceType?: string | Computed<string>;
 }
 
 export interface DeploymentsDeploymentExtended_Properties_Parameters {
@@ -54,6 +114,71 @@ export interface DeploymentsDeploymentExtended_Properties_ParametersLink {
   contentVersion?: string | Computed<string>;
   /** The URI of the parameters file. */
   uri: string | Computed<string>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata {
+  attributes?: string | Computed<string>;
+  type?: string | Computed<string>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPattern {
+  phrase?: string | Computed<string>;
+  type?: string | Computed<string>;
+  variable?: string | Computed<string>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_Paths {
+  apiVersions?: string[] | Computed<string[]>;
+  metadata?: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata | Computed<DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata>;
+  path?: string | Computed<string>;
+  pattern?: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPattern | Computed<DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPattern>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases {
+  defaultMetadata?: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata | Computed<DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata>;
+  defaultPath?: string | Computed<string>;
+  defaultPattern?: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPattern | Computed<DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPattern>;
+  name?: string | Computed<string>;
+  paths?: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_Paths[] | Computed<DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_Paths[]>;
+  type?: string | Computed<string>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfiles {
+  apiVersion?: string | Computed<string>;
+  profileVersion?: string | Computed<string>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappings {
+  extendedLocations?: string[] | Computed<string[]>;
+  location?: string | Computed<string>;
+  type?: string | Computed<string>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappings {
+  location?: string | Computed<string>;
+  zones?: string[] | Computed<string[]>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes {
+  aliases?: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases[] | Computed<DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases[]>;
+  apiProfiles?: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfiles[] | Computed<DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfiles[]>;
+  apiVersions?: string[] | Computed<string[]>;
+  capabilities?: string | Computed<string>;
+  defaultApiVersion?: string | Computed<string>;
+  locationMappings?: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappings[] | Computed<DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappings[]>;
+  locations?: string[] | Computed<string[]>;
+  properties?: Record<string, string> | Computed<Record<string, string>>;
+  resourceType?: string | Computed<string>;
+  zoneMappings?: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappings[] | Computed<DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappings[]>;
+}
+
+export interface DeploymentsDeploymentExtended_Properties_Providers {
+  id?: string | Computed<string>;
+  namespace?: string | Computed<string>;
+  providerAuthorizationConsentState?: string | Computed<string>;
+  registrationPolicy?: string | Computed<string>;
+  registrationState?: string | Computed<string>;
+  resourceTypes?: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes[] | Computed<DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes[]>;
 }
 
 export interface DeploymentsDeploymentExtended_Properties_TemplateLink {
@@ -70,12 +195,24 @@ export interface DeploymentsDeploymentExtended_Properties_TemplateLink {
 }
 
 export interface DeploymentsDeploymentExtended_Properties {
+  /** The correlation ID of the deployment. */
+  correlationId?: string | Computed<string>;
   /** The debug setting. */
   debugSetting?: DeploymentsDeploymentExtended_Properties_DebugSetting | Computed<DeploymentsDeploymentExtended_Properties_DebugSetting>;
+  /** The list of deployment dependencies. */
+  dependencies?: DeploymentsDeploymentExtended_Properties_Dependencies[] | Computed<DeploymentsDeploymentExtended_Properties_Dependencies[]>;
+  /** Contains diagnostic information collected during validation process. */
+  diagnostics?: DeploymentsDeploymentExtended_Properties_Diagnostics[] | Computed<DeploymentsDeploymentExtended_Properties_Diagnostics[]>;
+  /** The duration of the template deployment. */
+  duration?: string | Computed<string>;
+  /** Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also follows the OData error response format.) */
+  error?: DeploymentsDeploymentExtended_Properties_Error | Computed<DeploymentsDeploymentExtended_Properties_Error>;
   /** Specifies whether template expressions are evaluated within the scope of the parent template or nested template. */
   expressionEvaluationOptions?: DeploymentsDeploymentExtended_Properties_ExpressionEvaluationOptions | Computed<DeploymentsDeploymentExtended_Properties_ExpressionEvaluationOptions>;
   /** The configurations to use for deployment extensions. The keys of this object are deployment extension aliases as defined in the deployment template. */
   extensionConfigs?: Record<string, Record<string, DeploymentsDeploymentExtended_Properties_ExtensionConfigs>> | Computed<Record<string, Record<string, DeploymentsDeploymentExtended_Properties_ExtensionConfigs>>>;
+  /** The extensions used in this deployment. */
+  extensions?: DeploymentsDeploymentExtended_Properties_Extensions[] | Computed<DeploymentsDeploymentExtended_Properties_Extensions[]>;
   /** External input definitions, used by external tooling to define expected external input values. */
   externalInputDefinitions?: Record<string, DeploymentsDeploymentExtended_Properties_ExternalInputDefinitions> | Computed<Record<string, DeploymentsDeploymentExtended_Properties_ExternalInputDefinitions>>;
   /** External input values, used by external tooling for parameter evaluation. */
@@ -84,14 +221,28 @@ export interface DeploymentsDeploymentExtended_Properties {
   mode: string | Computed<string>;
   /** Deployment on error behavior. */
   onErrorDeployment?: DeploymentsDeploymentExtended_Properties_OnErrorDeployment | Computed<DeploymentsDeploymentExtended_Properties_OnErrorDeployment>;
+  /** Array of provisioned resources. */
+  outputResources?: DeploymentsDeploymentExtended_Properties_OutputResources[] | Computed<DeploymentsDeploymentExtended_Properties_OutputResources[]>;
+  /** Key/value pairs that represent deployment output. */
+  outputs?: unknown | Computed<unknown>;
   /** Name and value pairs that define the deployment parameters for the template. You use this element when you want to provide the parameter values directly in the request rather than link to an existing parameter file. Use either the parametersLink property or the parameters property, but not both. It can be a JObject or a well formed JSON string. */
   parameters?: Record<string, DeploymentsDeploymentExtended_Properties_Parameters> | Computed<Record<string, DeploymentsDeploymentExtended_Properties_Parameters>>;
   /** Entity representing the reference to the deployment parameters. */
   parametersLink?: DeploymentsDeploymentExtended_Properties_ParametersLink | Computed<DeploymentsDeploymentExtended_Properties_ParametersLink>;
+  /** The list of resource providers needed for the deployment. */
+  providers?: DeploymentsDeploymentExtended_Properties_Providers[] | Computed<DeploymentsDeploymentExtended_Properties_Providers[]>;
+  /** Denotes the state of provisioning. */
+  provisioningState?: string | Computed<string>;
   /** The template content. You use this element when you want to pass the template syntax directly in the request rather than link to an existing template. It can be a JObject or well-formed JSON string. Use either the templateLink property or the template property, but not both. */
   template?: unknown | Computed<unknown>;
+  /** The hash produced for the template. */
+  templateHash?: string | Computed<string>;
   /** Entity representing the reference to the template. */
   templateLink?: DeploymentsDeploymentExtended_Properties_TemplateLink | Computed<DeploymentsDeploymentExtended_Properties_TemplateLink>;
+  /** The timestamp of the template deployment. */
+  timestamp?: string | Computed<string>;
+  /** Array of validated resources. */
+  validatedResources?: DeploymentsDeploymentExtended_Properties_OutputResources[] | Computed<DeploymentsDeploymentExtended_Properties_OutputResources[]>;
   /** The level of validation performed on the deployment. */
   validationLevel?: string | Computed<string>;
 }
@@ -100,22 +251,61 @@ const DeploymentsDeploymentExtended_Properties_DebugSettingFields: FieldMap = {
   detailLevel: "detail_level",
 };
 
+const DeploymentsDeploymentExtended_Properties_Dependencies_DependsOnFields: FieldMap = {
+  id: "id",
+  resourceName: "resource_name",
+  resourceType: "resource_type",
+};
+
+const DeploymentsDeploymentExtended_Properties_DependenciesFields: FieldMap = {
+  dependsOn: {
+    wireName: "depends_on",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_Dependencies_DependsOnFields,
+  },
+  id: "id",
+  resourceName: "resource_name",
+  resourceType: "resource_type",
+};
+
+const DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfoFields: FieldMap = {
+  info: "info",
+  type: "type",
+};
+
+const DeploymentsDeploymentExtended_Properties_DiagnosticsFields: FieldMap = {
+  additionalInfo: {
+    wireName: "additional_info",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfoFields,
+  },
+  code: "code",
+  level: "level",
+  message: "message",
+  target: "target",
+};
+
+const DeploymentsDeploymentExtended_Properties_Error_DetailsFields: FieldMap = {
+};
+
+const DeploymentsDeploymentExtended_Properties_ErrorFields: FieldMap = {
+  additionalInfo: {
+    wireName: "additional_info",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfoFields,
+  },
+  code: "code",
+  details: {
+    wireName: "details",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_Error_DetailsFields,
+  },
+  message: "message",
+  target: "target",
+};
+
 const DeploymentsDeploymentExtended_Properties_ExpressionEvaluationOptionsFields: FieldMap = {
   scope: "scope",
-};
-
-const DeploymentsDeploymentExtended_Properties_ExternalInputDefinitionsFields: FieldMap = {
-  config: "config",
-  kind: "kind",
-};
-
-const DeploymentsDeploymentExtended_Properties_ExternalInputsFields: FieldMap = {
-  value: "value",
-};
-
-const DeploymentsDeploymentExtended_Properties_OnErrorDeploymentFields: FieldMap = {
-  deploymentName: "deployment_name",
-  type: "type",
 };
 
 const DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReference_KeyVaultFields: FieldMap = {
@@ -130,6 +320,55 @@ const DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReferenc
   },
   secretName: "secret_name",
   secretVersion: "secret_version",
+};
+
+const DeploymentsDeploymentExtended_Properties_ExtensionConfigsFields: FieldMap = {
+  keyVaultReference: {
+    wireName: "key_vault_reference",
+    kind: "object",
+    fields: DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReferenceFields,
+  },
+  type: "type",
+  value: "value",
+};
+
+const DeploymentsDeploymentExtended_Properties_ExtensionsFields: FieldMap = {
+  alias: "alias",
+  config: {
+    wireName: "config",
+    kind: "map",
+    fields: DeploymentsDeploymentExtended_Properties_ExtensionConfigsFields,
+  },
+  configId: "config_id",
+  name: "name",
+  version: "version",
+};
+
+const DeploymentsDeploymentExtended_Properties_ExternalInputDefinitionsFields: FieldMap = {
+  config: "config",
+  kind: "kind",
+};
+
+const DeploymentsDeploymentExtended_Properties_ExternalInputsFields: FieldMap = {
+  value: "value",
+};
+
+const DeploymentsDeploymentExtended_Properties_OnErrorDeploymentFields: FieldMap = {
+  deploymentName: "deployment_name",
+  provisioningState: "provisioning_state",
+  type: "type",
+};
+
+const DeploymentsDeploymentExtended_Properties_OutputResourcesFields: FieldMap = {
+  apiVersion: "api_version",
+  extension: {
+    wireName: "extension",
+    kind: "object",
+    fields: DeploymentsDeploymentExtended_Properties_ExtensionsFields,
+  },
+  id: "id",
+  identifiers: "identifiers",
+  resourceType: "resource_type",
 };
 
 const DeploymentsDeploymentExtended_Properties_ParametersFields: FieldMap = {
@@ -147,6 +386,111 @@ const DeploymentsDeploymentExtended_Properties_ParametersLinkFields: FieldMap = 
   uri: "uri",
 };
 
+const DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadataFields: FieldMap = {
+  attributes: "attributes",
+  type: "type",
+};
+
+const DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPatternFields: FieldMap = {
+  phrase: "phrase",
+  type: "type",
+  variable: "variable",
+};
+
+const DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_PathsFields: FieldMap = {
+  apiVersions: "api_versions",
+  metadata: {
+    wireName: "metadata",
+    kind: "object",
+    fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadataFields,
+  },
+  path: "path",
+  pattern: {
+    wireName: "pattern",
+    kind: "object",
+    fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPatternFields,
+  },
+};
+
+const DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_AliasesFields: FieldMap = {
+  defaultMetadata: {
+    wireName: "default_metadata",
+    kind: "object",
+    fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadataFields,
+  },
+  defaultPath: "default_path",
+  defaultPattern: {
+    wireName: "default_pattern",
+    kind: "object",
+    fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPatternFields,
+  },
+  name: "name",
+  paths: {
+    wireName: "paths",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_PathsFields,
+  },
+  type: "type",
+};
+
+const DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfilesFields: FieldMap = {
+  apiVersion: "api_version",
+  profileVersion: "profile_version",
+};
+
+const DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappingsFields: FieldMap = {
+  extendedLocations: "extended_locations",
+  location: "location",
+  type: "type",
+};
+
+const DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappingsFields: FieldMap = {
+  location: "location",
+  zones: "zones",
+};
+
+const DeploymentsDeploymentExtended_Properties_Providers_ResourceTypesFields: FieldMap = {
+  aliases: {
+    wireName: "aliases",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_AliasesFields,
+  },
+  apiProfiles: {
+    wireName: "api_profiles",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfilesFields,
+  },
+  apiVersions: "api_versions",
+  capabilities: "capabilities",
+  defaultApiVersion: "default_api_version",
+  locationMappings: {
+    wireName: "location_mappings",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappingsFields,
+  },
+  locations: "locations",
+  properties: "properties",
+  resourceType: "resource_type",
+  zoneMappings: {
+    wireName: "zone_mappings",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappingsFields,
+  },
+};
+
+const DeploymentsDeploymentExtended_Properties_ProvidersFields: FieldMap = {
+  id: "id",
+  namespace: "namespace",
+  providerAuthorizationConsentState: "provider_authorization_consent_state",
+  registrationPolicy: "registration_policy",
+  registrationState: "registration_state",
+  resourceTypes: {
+    wireName: "resource_types",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypesFields,
+  },
+};
+
 const DeploymentsDeploymentExtended_Properties_TemplateLinkFields: FieldMap = {
   contentVersion: "content_version",
   id: "id",
@@ -156,10 +500,27 @@ const DeploymentsDeploymentExtended_Properties_TemplateLinkFields: FieldMap = {
 };
 
 const DeploymentsDeploymentExtended_PropertiesFields: FieldMap = {
+  correlationId: "correlation_id",
   debugSetting: {
     wireName: "debug_setting",
     kind: "object",
     fields: DeploymentsDeploymentExtended_Properties_DebugSettingFields,
+  },
+  dependencies: {
+    wireName: "dependencies",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_DependenciesFields,
+  },
+  diagnostics: {
+    wireName: "diagnostics",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_DiagnosticsFields,
+  },
+  duration: "duration",
+  error: {
+    wireName: "error",
+    kind: "object",
+    fields: DeploymentsDeploymentExtended_Properties_ErrorFields,
   },
   expressionEvaluationOptions: {
     wireName: "expression_evaluation_options",
@@ -167,6 +528,11 @@ const DeploymentsDeploymentExtended_PropertiesFields: FieldMap = {
     fields: DeploymentsDeploymentExtended_Properties_ExpressionEvaluationOptionsFields,
   },
   extensionConfigs: "extension_configs",
+  extensions: {
+    wireName: "extensions",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_ExtensionsFields,
+  },
   externalInputDefinitions: {
     wireName: "external_input_definitions",
     kind: "map",
@@ -183,6 +549,12 @@ const DeploymentsDeploymentExtended_PropertiesFields: FieldMap = {
     kind: "object",
     fields: DeploymentsDeploymentExtended_Properties_OnErrorDeploymentFields,
   },
+  outputResources: {
+    wireName: "output_resources",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_OutputResourcesFields,
+  },
+  outputs: "outputs",
   parameters: {
     wireName: "parameters",
     kind: "map",
@@ -193,11 +565,24 @@ const DeploymentsDeploymentExtended_PropertiesFields: FieldMap = {
     kind: "object",
     fields: DeploymentsDeploymentExtended_Properties_ParametersLinkFields,
   },
+  providers: {
+    wireName: "providers",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_ProvidersFields,
+  },
+  provisioningState: "provisioning_state",
   template: "template",
+  templateHash: "template_hash",
   templateLink: {
     wireName: "template_link",
     kind: "object",
     fields: DeploymentsDeploymentExtended_Properties_TemplateLinkFields,
+  },
+  timestamp: "timestamp",
+  validatedResources: {
+    wireName: "validated_resources",
+    kind: "list",
+    fields: DeploymentsDeploymentExtended_Properties_OutputResourcesFields,
   },
   validationLevel: "validation_level",
 };

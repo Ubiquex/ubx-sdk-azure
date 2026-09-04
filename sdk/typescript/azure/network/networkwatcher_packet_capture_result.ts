@@ -45,6 +45,8 @@ export interface NetworkwatcherPacketCaptureResult_Properties {
   continuousCapture?: boolean | Computed<boolean>;
   /** A list of packet capture filters. */
   filters?: NetworkwatcherPacketCaptureResult_Properties_Filters[] | Computed<NetworkwatcherPacketCaptureResult_Properties_Filters[]>;
+  /** Provisioning states of a resource. */
+  provisioningState?: string | Computed<string>;
   /** A list of AzureVMSS instances which can be included or excluded to run packet capture. If both included and excluded are empty, then the packet capture will run on all instances of AzureVMSS. */
   scope?: NetworkwatcherPacketCaptureResult_Properties_Scope | Computed<NetworkwatcherPacketCaptureResult_Properties_Scope>;
   /** The storage location for a packet capture session. */
@@ -98,6 +100,7 @@ const NetworkwatcherPacketCaptureResult_PropertiesFields: FieldMap = {
     kind: "list",
     fields: NetworkwatcherPacketCaptureResult_Properties_FiltersFields,
   },
+  provisioningState: "provisioning_state",
   scope: {
     wireName: "scope",
     kind: "object",

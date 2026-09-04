@@ -4,12 +4,12 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SyncagentsSyncAgentLinkedDatabase_Value_Properties struct {
-	DatabaseId any
+	DatabaseId   any
 	DatabaseName any
 	DatabaseType any
-	Description any
-	ServerName any
-	UserName any
+	Description  any
+	ServerName   any
+	UserName     any
 }
 
 type SyncagentsSyncAgentLinkedDatabase_Value struct {
@@ -17,14 +17,14 @@ type SyncagentsSyncAgentLinkedDatabase_Value struct {
 }
 
 type SyncagentsSyncAgentLinkedDatabaseConfig struct {
-	ServerName any
+	ServerName    any
 	SyncAgentName any
 }
 
 type SyncagentsSyncAgentLinkedDatabaseAttrs struct {
 	// The link to the next page of items
-	NextLink any
-	ServerName any
+	NextLink      any
+	ServerName    any
 	SyncAgentName any
 	// The SyncAgentLinkedDatabase items on this page
 	Value any
@@ -33,7 +33,7 @@ type SyncagentsSyncAgentLinkedDatabaseAttrs struct {
 var SyncagentsSyncAgentLinkedDatabase = ubx.DataSourceBinding{
 	WireType: "azure_sql_syncagents_sync_agent_linked_database",
 	Fields: ubx.FieldMap{
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":    ubx.FieldSpec{WireName: "server_name"},
 		"SyncAgentName": ubx.FieldSpec{WireName: "sync_agent_name"},
 	},
 }

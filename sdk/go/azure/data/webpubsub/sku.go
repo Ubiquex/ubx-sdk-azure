@@ -5,35 +5,35 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Sku_Value_Capacity struct {
 	AllowedValues any
-	Default any
-	Maximum any
-	Minimum any
-	ScaleType any
+	Default       any
+	Maximum       any
+	Minimum       any
+	ScaleType     any
 }
 
 type Sku_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type Sku_Value struct {
-	Capacity any
+	Capacity     any
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type SkuConfig struct {
-	ReplicaName any
+	ReplicaName  any
 	ResourceName any
 }
 
 type SkuAttrs struct {
 	// The URL the client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
-	ReplicaName any
+	NextLink     any
+	ReplicaName  any
 	ResourceName any
 	// The list of skus available for the resource.
 	Value any
@@ -42,7 +42,7 @@ type SkuAttrs struct {
 var Sku = ubx.DataSourceBinding{
 	WireType: "azure_webpubsub_sku",
 	Fields: ubx.FieldMap{
-		"ReplicaName": ubx.FieldSpec{WireName: "replica_name"},
+		"ReplicaName":  ubx.FieldSpec{WireName: "replica_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

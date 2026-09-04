@@ -15,10 +15,26 @@ class ServiceNetworkMapping_Properties_FabricSpecificDetails:
 class ServiceNetworkMapping_Properties:
     # Input details specific to fabrics during Network Mapping.
     fabric_specific_details: Any = None
+    # Network Mapping fabric specific settings.
+    fabric_specific_settings: Any = None
+    # The primary fabric friendly name.
+    primary_fabric_friendly_name: Any = None
+    # The primary network friendly name.
+    primary_network_friendly_name: Any = None
+    # The primary network id for network mapping.
+    primary_network_id: Any = None
+    # The recovery fabric ARM id.
+    recovery_fabric_arm_id: Any = None
+    # The recovery fabric friendly name.
+    recovery_fabric_friendly_name: Any = None
     # Recovery fabric Name.
     recovery_fabric_name: Any = None
+    # The recovery network friendly name.
+    recovery_network_friendly_name: Any = None
     # Recovery network Id.
     recovery_network_id: Any = None
+    # The pairing state for network mapping.
+    state: Any = None
 
 _ServiceNetworkMapping_Properties_FabricSpecificDetailsFields = {
     "instance_type": ubx.FieldSpec(wire_name="instance_type"),
@@ -30,8 +46,20 @@ _ServiceNetworkMapping_PropertiesFields = {
         kind="object",
         fields=_ServiceNetworkMapping_Properties_FabricSpecificDetailsFields,
     ),
+    "fabric_specific_settings": ubx.FieldSpec(
+        wire_name="fabric_specific_settings",
+        kind="object",
+        fields=_ServiceNetworkMapping_Properties_FabricSpecificDetailsFields,
+    ),
+    "primary_fabric_friendly_name": ubx.FieldSpec(wire_name="primary_fabric_friendly_name"),
+    "primary_network_friendly_name": ubx.FieldSpec(wire_name="primary_network_friendly_name"),
+    "primary_network_id": ubx.FieldSpec(wire_name="primary_network_id"),
+    "recovery_fabric_arm_id": ubx.FieldSpec(wire_name="recovery_fabric_arm_id"),
+    "recovery_fabric_friendly_name": ubx.FieldSpec(wire_name="recovery_fabric_friendly_name"),
     "recovery_fabric_name": ubx.FieldSpec(wire_name="recovery_fabric_name"),
+    "recovery_network_friendly_name": ubx.FieldSpec(wire_name="recovery_network_friendly_name"),
     "recovery_network_id": ubx.FieldSpec(wire_name="recovery_network_id"),
+    "state": ubx.FieldSpec(wire_name="state"),
 }
 
 @dataclasses.dataclass

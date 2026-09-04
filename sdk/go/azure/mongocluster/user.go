@@ -9,7 +9,7 @@ type User_Properties_IdentityProvider struct {
 }
 
 type User_Properties_Roles struct {
-	Db any
+	Db   any
 	Role any
 }
 
@@ -23,27 +23,27 @@ type User_Properties struct {
 }
 
 var User_Properties_IdentityProviderFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var User_Properties_RolesFields = ubx.FieldMap{
-		"Db": ubx.FieldSpec{WireName: "db"},
-		"Role": ubx.FieldSpec{WireName: "role"},
-	}
+	"Db":   ubx.FieldSpec{WireName: "db"},
+	"Role": ubx.FieldSpec{WireName: "role"},
+}
 
 var User_PropertiesFields = ubx.FieldMap{
-		"IdentityProvider": ubx.FieldSpec{
-			WireName: "identity_provider",
-			Kind: "object",
-			Fields: User_Properties_IdentityProviderFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Roles": ubx.FieldSpec{
-			WireName: "roles",
-			Kind: "list",
-			Fields: User_Properties_RolesFields,
-		},
-	}
+	"IdentityProvider": ubx.FieldSpec{
+		WireName: "identity_provider",
+		Kind:     "object",
+		Fields:   User_Properties_IdentityProviderFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Roles": ubx.FieldSpec{
+		WireName: "roles",
+		Kind:     "list",
+		Fields:   User_Properties_RolesFields,
+	},
+}
 
 type UserConfig struct {
 	// Definition of Mongo user resource on a cluster.
@@ -60,8 +60,8 @@ var User = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: User_PropertiesFields,
+			Kind:     "object",
+			Fields:   User_PropertiesFields,
 		},
 	},
 }

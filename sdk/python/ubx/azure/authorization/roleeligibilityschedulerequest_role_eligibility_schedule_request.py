@@ -180,14 +180,8 @@ _RoleeligibilityschedulerequestRoleEligibilityScheduleRequest_PropertiesFields =
 
 @dataclasses.dataclass
 class RoleeligibilityschedulerequestRoleEligibilityScheduleRequestConfig:
-    # The role eligibility schedule request ID.
-    id: Any = None
-    # The role eligibility schedule request name.
-    name: Any = None
     # Role eligibility schedule request properties with scope.
     properties: Any = None
-    # The role eligibility schedule request type.
-    type: Any = None
     # path parameter, not part of the API's own resource representation
     scope: Any = None
 
@@ -207,14 +201,11 @@ class RoleeligibilityschedulerequestRoleEligibilityScheduleRequestAttrs:
 RoleeligibilityschedulerequestRoleEligibilityScheduleRequest = ubx.ResourceBinding(
     wire_type="azure_authorization_roleeligibilityschedulerequest_role_eligibility_schedule_request",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_RoleeligibilityschedulerequestRoleEligibilityScheduleRequest_PropertiesFields,
         ),
-        "type": ubx.FieldSpec(wire_name="type"),
         "scope": ubx.FieldSpec(wire_name="scope"),
     },
 )

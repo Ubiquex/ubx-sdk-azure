@@ -2,12 +2,27 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiHybridRunbookWorker_Properties {
+  /** Gets or sets the assigned machine IP address. */
+  ip?: string | Computed<string>;
+  /** Last Heartbeat from the Worker */
+  lastSeenDateTime?: string | Computed<string>;
+  /** Gets or sets the registration time of the worker machine. */
+  registeredDateTime?: string | Computed<string>;
   /** Azure Resource Manager Id for a virtual machine. */
   vmResourceId?: string | Computed<string>;
+  /** Name of the HybridWorker. */
+  workerName?: string | Computed<string>;
+  /** Type of the HybridWorker. */
+  workerType?: string | Computed<string>;
 }
 
 const OpenapiHybridRunbookWorker_PropertiesFields: FieldMap = {
+  ip: "ip",
+  lastSeenDateTime: "last_seen_date_time",
+  registeredDateTime: "registered_date_time",
   vmResourceId: "vm_resource_id",
+  workerName: "worker_name",
+  workerType: "worker_type",
 };
 
 export interface OpenapiHybridRunbookWorkerConfig {

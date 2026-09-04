@@ -6,7 +6,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type VirtualnetworkIpamPool_Properties struct {
 	// List of IP address prefixes of the resource.
 	AddressPrefixes any
-	Description any
+	Description     any
 	// String representing a friendly name for the resource.
 	DisplayName any
 	// List of IP address type for the IpamPool.
@@ -18,17 +18,15 @@ type VirtualnetworkIpamPool_Properties struct {
 }
 
 var VirtualnetworkIpamPool_PropertiesFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"IpAddressType": ubx.FieldSpec{WireName: "ip_address_type"},
-		"ParentPoolName": ubx.FieldSpec{WireName: "parent_pool_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AddressPrefixes":   ubx.FieldSpec{WireName: "address_prefixes"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"IpAddressType":     ubx.FieldSpec{WireName: "ip_address_type"},
+	"ParentPoolName":    ubx.FieldSpec{WireName: "parent_pool_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VirtualnetworkIpamPoolConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of IpamPool resource properties which are specific to the Pool resource.
 	Properties any
 }
@@ -43,11 +41,10 @@ type VirtualnetworkIpamPoolAttrs struct {
 var VirtualnetworkIpamPool = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_ipam_pool",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkIpamPool_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkIpamPool_PropertiesFields,
 		},
 	},
 }

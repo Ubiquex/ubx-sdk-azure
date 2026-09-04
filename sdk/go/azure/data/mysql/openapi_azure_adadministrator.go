@@ -4,11 +4,11 @@ package mysql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAzureAdadministrator_Value_Properties struct {
-	AdministratorType any
+	AdministratorType  any
 	IdentityResourceId any
-	Login any
-	Sid any
-	TenantId any
+	Login              any
+	Sid                any
+	TenantId           any
 }
 
 type OpenapiAzureAdadministrator_Value struct {
@@ -21,7 +21,7 @@ type OpenapiAzureAdadministratorConfig struct {
 
 type OpenapiAzureAdadministratorAttrs struct {
 	// The link used to get the next page of operations.
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The list of azure ad administrator of a server.
 	Value any

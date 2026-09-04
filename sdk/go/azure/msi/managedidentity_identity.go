@@ -15,11 +15,11 @@ type ManagedidentityIdentity_Properties struct {
 }
 
 var ManagedidentityIdentity_PropertiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"IsolationScope": ubx.FieldSpec{WireName: "isolation_scope"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"ClientId":       ubx.FieldSpec{WireName: "client_id"},
+	"IsolationScope": ubx.FieldSpec{WireName: "isolation_scope"},
+	"PrincipalId":    ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":       ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type ManagedidentityIdentityConfig struct {
 	// The properties associated with the user assigned identity.
@@ -36,8 +36,8 @@ var ManagedidentityIdentity = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedidentityIdentity_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedidentityIdentity_PropertiesFields,
 		},
 	},
 }

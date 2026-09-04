@@ -9,14 +9,14 @@ type ApimprivatelinkPrivateEndpointConnection_Value_Properties_PrivateEndpoint s
 
 type ApimprivatelinkPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type ApimprivatelinkPrivateEndpointConnection_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ApimprivatelinkPrivateEndpointConnection_Value struct {
@@ -33,6 +33,5 @@ type ApimprivatelinkPrivateEndpointConnectionAttrs struct {
 
 var ApimprivatelinkPrivateEndpointConnection = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimprivatelink_private_endpoint_connection",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

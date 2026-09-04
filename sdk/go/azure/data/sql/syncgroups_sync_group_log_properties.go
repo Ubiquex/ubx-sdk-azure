@@ -4,34 +4,34 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SyncgroupsSyncGroupLogProperties_Value struct {
-	Details any
+	Details         any
 	OperationStatus any
-	Source any
-	Timestamp any
-	TracingId any
-	Type any
+	Source          any
+	Timestamp       any
+	TracingId       any
+	Type            any
 }
 
 type SyncgroupsSyncGroupLogPropertiesConfig struct {
 	ContinuationToken any
-	DatabaseName any
-	EndTime any
-	ServerName any
-	StartTime any
-	SyncGroupName any
-	Type any
+	DatabaseName      any
+	EndTime           any
+	ServerName        any
+	StartTime         any
+	SyncGroupName     any
+	Type              any
 }
 
 type SyncgroupsSyncGroupLogPropertiesAttrs struct {
 	ContinuationToken any
-	DatabaseName any
-	EndTime any
+	DatabaseName      any
+	EndTime           any
 	// The link to the next page of items
-	NextLink any
-	ServerName any
-	StartTime any
+	NextLink      any
+	ServerName    any
+	StartTime     any
 	SyncGroupName any
-	Type any
+	Type          any
 	// The SyncGroupLogProperties items on this page
 	Value any
 }
@@ -40,11 +40,11 @@ var SyncgroupsSyncGroupLogProperties = ubx.DataSourceBinding{
 	WireType: "azure_sql_syncgroups_sync_group_log_properties",
 	Fields: ubx.FieldMap{
 		"ContinuationToken": ubx.FieldSpec{WireName: "continuation_token"},
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"SyncGroupName": ubx.FieldSpec{WireName: "sync_group_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
+		"DatabaseName":      ubx.FieldSpec{WireName: "database_name"},
+		"EndTime":           ubx.FieldSpec{WireName: "end_time"},
+		"ServerName":        ubx.FieldSpec{WireName: "server_name"},
+		"StartTime":         ubx.FieldSpec{WireName: "start_time"},
+		"SyncGroupName":     ubx.FieldSpec{WireName: "sync_group_name"},
+		"Type":              ubx.FieldSpec{WireName: "type"},
 	},
 }

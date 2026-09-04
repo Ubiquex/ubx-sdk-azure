@@ -53,14 +53,8 @@ const RoledefinitionscallsRoleDefinition_PropertiesFields: FieldMap = {
 };
 
 export interface RoledefinitionscallsRoleDefinitionConfig {
-  /** The role definition ID. */
-  id?: string | Computed<string>;
-  /** The role definition name. */
-  name?: string | Computed<string>;
   /** Role definition properties. */
   properties?: RoledefinitionscallsRoleDefinition_Properties | Computed<RoledefinitionscallsRoleDefinition_Properties>;
-  /** The role definition type. */
-  type?: string | Computed<string>;
   /** path parameter, not part of the API's own resource representation */
   scope: string | Computed<string>;
 }
@@ -81,14 +75,11 @@ export interface RoledefinitionscallsRoleDefinitionAttrs {
 export const RoledefinitionscallsRoleDefinition: ResourceBinding<RoledefinitionscallsRoleDefinitionConfig, RoledefinitionscallsRoleDefinitionAttrs> = {
   wireType: "azure_authorization_roledefinitionscalls_role_definition",
   fields: {
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: RoledefinitionscallsRoleDefinition_PropertiesFields,
     },
-    type: "type",
     scope: "scope",
   },
 };

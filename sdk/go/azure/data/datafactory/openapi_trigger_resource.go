@@ -4,14 +4,14 @@ package datafactory
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiTriggerResource_Value_Properties struct {
-	Annotations any
-	Description any
+	Annotations  any
+	Description  any
 	RuntimeState any
-	Type any
+	Type         any
 }
 
 type OpenapiTriggerResource_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

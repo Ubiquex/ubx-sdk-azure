@@ -4,56 +4,56 @@ package servicebus
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Sbsubscription_Value_Properties_ClientAffineProperties struct {
-	ClientId any
+	ClientId  any
 	IsDurable any
-	IsShared any
+	IsShared  any
 }
 
 type Sbsubscription_Value_Properties_CountDetails struct {
-	ActiveMessageCount any
-	DeadLetterMessageCount any
-	ScheduledMessageCount any
+	ActiveMessageCount             any
+	DeadLetterMessageCount         any
+	ScheduledMessageCount          any
 	TransferDeadLetterMessageCount any
-	TransferMessageCount any
+	TransferMessageCount           any
 }
 
 type Sbsubscription_Value_Properties struct {
-	AccessedAt any
-	AutoDeleteOnIdle any
-	ClientAffineProperties any
-	CountDetails any
-	CreatedAt any
+	AccessedAt                                any
+	AutoDeleteOnIdle                          any
+	ClientAffineProperties                    any
+	CountDetails                              any
+	CreatedAt                                 any
 	DeadLetteringOnFilterEvaluationExceptions any
-	DeadLetteringOnMessageExpiration any
-	DefaultMessageTimeToLive any
-	DuplicateDetectionHistoryTimeWindow any
-	EnableBatchedOperations any
-	ForwardDeadLetteredMessagesTo any
-	ForwardTo any
-	IsClientAffine any
-	LockDuration any
-	MaxDeliveryCount any
-	MessageCount any
-	RequiresSession any
-	Status any
-	UpdatedAt any
-	UserMetadata any
+	DeadLetteringOnMessageExpiration          any
+	DefaultMessageTimeToLive                  any
+	DuplicateDetectionHistoryTimeWindow       any
+	EnableBatchedOperations                   any
+	ForwardDeadLetteredMessagesTo             any
+	ForwardTo                                 any
+	IsClientAffine                            any
+	LockDuration                              any
+	MaxDeliveryCount                          any
+	MessageCount                              any
+	RequiresSession                           any
+	Status                                    any
+	UpdatedAt                                 any
+	UserMetadata                              any
 }
 
 type Sbsubscription_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type SbsubscriptionConfig struct {
 	NamespaceName any
-	TopicName any
+	TopicName     any
 }
 
 type SbsubscriptionAttrs struct {
 	NamespaceName any
 	// The link to the next page of items
-	NextLink any
+	NextLink  any
 	TopicName any
 	// The SBSubscription items on this page
 	Value any
@@ -63,6 +63,6 @@ var Sbsubscription = ubx.DataSourceBinding{
 	WireType: "azure_servicebus_sbsubscription",
 	Fields: ubx.FieldMap{
 		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
-		"TopicName": ubx.FieldSpec{WireName: "topic_name"},
+		"TopicName":     ubx.FieldSpec{WireName: "topic_name"},
 	},
 }

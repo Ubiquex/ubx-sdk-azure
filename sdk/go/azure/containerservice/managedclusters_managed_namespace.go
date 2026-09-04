@@ -41,39 +41,37 @@ type ManagedclustersManagedNamespace_Properties struct {
 }
 
 var ManagedclustersManagedNamespace_Properties_DefaultNetworkPolicyFields = ubx.FieldMap{
-		"Egress": ubx.FieldSpec{WireName: "egress"},
-		"Ingress": ubx.FieldSpec{WireName: "ingress"},
-	}
+	"Egress":  ubx.FieldSpec{WireName: "egress"},
+	"Ingress": ubx.FieldSpec{WireName: "ingress"},
+}
 
 var ManagedclustersManagedNamespace_Properties_DefaultResourceQuotaFields = ubx.FieldMap{
-		"CpuLimit": ubx.FieldSpec{WireName: "cpu_limit"},
-		"CpuRequest": ubx.FieldSpec{WireName: "cpu_request"},
-		"MemoryLimit": ubx.FieldSpec{WireName: "memory_limit"},
-		"MemoryRequest": ubx.FieldSpec{WireName: "memory_request"},
-	}
+	"CpuLimit":      ubx.FieldSpec{WireName: "cpu_limit"},
+	"CpuRequest":    ubx.FieldSpec{WireName: "cpu_request"},
+	"MemoryLimit":   ubx.FieldSpec{WireName: "memory_limit"},
+	"MemoryRequest": ubx.FieldSpec{WireName: "memory_request"},
+}
 
 var ManagedclustersManagedNamespace_PropertiesFields = ubx.FieldMap{
-		"AdoptionPolicy": ubx.FieldSpec{WireName: "adoption_policy"},
-		"Annotations": ubx.FieldSpec{WireName: "annotations"},
-		"DefaultNetworkPolicy": ubx.FieldSpec{
-			WireName: "default_network_policy",
-			Kind: "object",
-			Fields: ManagedclustersManagedNamespace_Properties_DefaultNetworkPolicyFields,
-		},
-		"DefaultResourceQuota": ubx.FieldSpec{
-			WireName: "default_resource_quota",
-			Kind: "object",
-			Fields: ManagedclustersManagedNamespace_Properties_DefaultResourceQuotaFields,
-		},
-		"DeletePolicy": ubx.FieldSpec{WireName: "delete_policy"},
-		"Labels": ubx.FieldSpec{WireName: "labels"},
-		"PortalFqdn": ubx.FieldSpec{WireName: "portal_fqdn"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AdoptionPolicy": ubx.FieldSpec{WireName: "adoption_policy"},
+	"Annotations":    ubx.FieldSpec{WireName: "annotations"},
+	"DefaultNetworkPolicy": ubx.FieldSpec{
+		WireName: "default_network_policy",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedNamespace_Properties_DefaultNetworkPolicyFields,
+	},
+	"DefaultResourceQuota": ubx.FieldSpec{
+		WireName: "default_resource_quota",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedNamespace_Properties_DefaultResourceQuotaFields,
+	},
+	"DeletePolicy":      ubx.FieldSpec{WireName: "delete_policy"},
+	"Labels":            ubx.FieldSpec{WireName: "labels"},
+	"PortalFqdn":        ubx.FieldSpec{WireName: "portal_fqdn"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ManagedclustersManagedNamespaceConfig struct {
-	// If eTag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.
-	ETag any
 	// Properties of a namespace managed by ARM
 	Properties any
 }
@@ -88,11 +86,10 @@ type ManagedclustersManagedNamespaceAttrs struct {
 var ManagedclustersManagedNamespace = ubx.ResourceBinding{
 	WireType: "azure_containerservice_managedclusters_managed_namespace",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedclustersManagedNamespace_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedclustersManagedNamespace_PropertiesFields,
 		},
 	},
 }

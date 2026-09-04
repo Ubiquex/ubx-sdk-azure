@@ -13,6 +13,12 @@ export interface DbOpenapiClientEncryptionKeyGetResults_Properties_Resource_KeyW
 }
 
 export interface DbOpenapiClientEncryptionKeyGetResults_Properties_Resource {
+  /** A system generated property representing the resource etag required for optimistic concurrency control. */
+  etag?: string | Computed<string>;
+  /** A system generated property. A unique identifier. */
+  rid?: string | Computed<string>;
+  /** A system generated property that denotes the last updated timestamp of the resource. */
+  ts?: number | Computed<number>;
   /** Encryption algorithm that will be used along with this client encryption key to encrypt/decrypt data. */
   encryptionAlgorithm?: string | Computed<string>;
   /** Name of the ClientEncryptionKey */
@@ -36,6 +42,9 @@ const DbOpenapiClientEncryptionKeyGetResults_Properties_Resource_KeyWrapMetadata
 };
 
 const DbOpenapiClientEncryptionKeyGetResults_Properties_ResourceFields: FieldMap = {
+  etag: "_etag",
+  rid: "_rid",
+  ts: "_ts",
   encryptionAlgorithm: "encryption_algorithm",
   id: "id",
   keyWrapMetadata: {

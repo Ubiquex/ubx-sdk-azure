@@ -24,25 +24,23 @@ type VirtualnetworkRoute_Properties struct {
 }
 
 var VirtualnetworkRoute_Properties_NextHopFields = ubx.FieldMap{
-		"NextHopIpAddresses": ubx.FieldSpec{WireName: "next_hop_ip_addresses"},
-	}
+	"NextHopIpAddresses": ubx.FieldSpec{WireName: "next_hop_ip_addresses"},
+}
 
 var VirtualnetworkRoute_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"HasBgpOverride": ubx.FieldSpec{WireName: "has_bgp_override"},
-		"NextHop": ubx.FieldSpec{
-			WireName: "next_hop",
-			Kind: "object",
-			Fields: VirtualnetworkRoute_Properties_NextHopFields,
-		},
-		"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
-		"NextHopType": ubx.FieldSpec{WireName: "next_hop_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AddressPrefix":  ubx.FieldSpec{WireName: "address_prefix"},
+	"HasBgpOverride": ubx.FieldSpec{WireName: "has_bgp_override"},
+	"NextHop": ubx.FieldSpec{
+		WireName: "next_hop",
+		Kind:     "object",
+		Fields:   VirtualnetworkRoute_Properties_NextHopFields,
+	},
+	"NextHopIpAddress":  ubx.FieldSpec{WireName: "next_hop_ip_address"},
+	"NextHopType":       ubx.FieldSpec{WireName: "next_hop_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VirtualnetworkRouteConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Route resource.
 	Properties any
 }
@@ -57,11 +55,10 @@ type VirtualnetworkRouteAttrs struct {
 var VirtualnetworkRoute = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_route",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkRoute_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkRoute_PropertiesFields,
 		},
 	},
 }

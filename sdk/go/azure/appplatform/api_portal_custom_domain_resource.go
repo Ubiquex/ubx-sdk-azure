@@ -9,8 +9,8 @@ type ApiPortalCustomDomainResource_Properties struct {
 }
 
 var ApiPortalCustomDomainResource_PropertiesFields = ubx.FieldMap{
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 type ApiPortalCustomDomainResourceConfig struct {
 	// The properties of custom domain for API portal
@@ -27,8 +27,8 @@ var ApiPortalCustomDomainResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApiPortalCustomDomainResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApiPortalCustomDomainResource_PropertiesFields,
 		},
 	},
 }

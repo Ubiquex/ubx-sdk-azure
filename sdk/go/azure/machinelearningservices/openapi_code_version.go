@@ -11,9 +11,9 @@ type OpenapiCodeVersion_Properties struct {
 }
 
 var OpenapiCodeVersion_PropertiesFields = ubx.FieldMap{
-		"CodeUri": ubx.FieldSpec{WireName: "code_uri"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"CodeUri":           ubx.FieldSpec{WireName: "code_uri"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiCodeVersionConfig struct {
 	// Code asset version details.
@@ -34,8 +34,8 @@ var OpenapiCodeVersion = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCodeVersion_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCodeVersion_PropertiesFields,
 		},
 		"Version": ubx.FieldSpec{WireName: "version"},
 	},

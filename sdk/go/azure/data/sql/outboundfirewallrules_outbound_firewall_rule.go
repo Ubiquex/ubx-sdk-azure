@@ -17,7 +17,7 @@ type OutboundfirewallrulesOutboundFirewallRuleConfig struct {
 
 type OutboundfirewallrulesOutboundFirewallRuleAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The OutboundFirewallRule items on this page
 	Value any

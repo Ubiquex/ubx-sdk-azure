@@ -4,9 +4,9 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSkuResource_Value_Capacity struct {
-	Default any
-	Maximum any
-	Minimum any
+	Default   any
+	Maximum   any
+	Minimum   any
 	ScaleType any
 }
 
@@ -16,35 +16,35 @@ type OpenapiSkuResource_Value_Sku struct {
 }
 
 type OpenapiSkuResource_Value struct {
-	Capacity any
+	Capacity     any
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type OpenapiSkuResourceConfig struct {
-	Count any
+	Count          any
 	DeploymentName any
-	EndpointName any
-	WorkspaceName any
+	EndpointName   any
+	WorkspaceName  any
 }
 
 type OpenapiSkuResourceAttrs struct {
-	Count any
+	Count          any
 	DeploymentName any
-	EndpointName any
+	EndpointName   any
 	// The link to the next page of items
 	NextLink any
 	// The SkuResource items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiSkuResource = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_sku_resource",
 	Fields: ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
+		"Count":          ubx.FieldSpec{WireName: "count"},
 		"DeploymentName": ubx.FieldSpec{WireName: "deployment_name"},
-		"EndpointName": ubx.FieldSpec{WireName: "endpoint_name"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"EndpointName":   ubx.FieldSpec{WireName: "endpoint_name"},
+		"WorkspaceName":  ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

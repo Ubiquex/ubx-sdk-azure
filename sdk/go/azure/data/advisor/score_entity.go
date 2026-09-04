@@ -4,22 +4,22 @@ package advisor
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ScoreEntity_Value_Properties_LastRefreshedScore struct {
-	CategoryCount any
-	ConsumptionUnits any
-	Date any
-	ImpactedResourceCount any
+	CategoryCount          any
+	ConsumptionUnits       any
+	Date                   any
+	ImpactedResourceCount  any
 	PotentialScoreIncrease any
-	Score any
+	Score                  any
 }
 
 type ScoreEntity_Value_Properties_TimeSeries struct {
 	AggregationLevel any
-	ScoreHistory any
+	ScoreHistory     any
 }
 
 type ScoreEntity_Value_Properties struct {
 	LastRefreshedScore any
-	TimeSeries any
+	TimeSeries         any
 }
 
 type ScoreEntity_Value struct {
@@ -27,12 +27,12 @@ type ScoreEntity_Value struct {
 }
 
 type ScoreEntityConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ScoreEntityAttrs struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 	// The list of operations.
 	Value any
@@ -41,7 +41,7 @@ type ScoreEntityAttrs struct {
 var ScoreEntity = ubx.DataSourceBinding{
 	WireType: "azure_advisor_score_entity",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

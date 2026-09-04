@@ -4,19 +4,19 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOperationresultConfig struct {
-	Name any
+	Name        any
 	OperationId any
 }
 
 type OpenapiOperationresultAttrs struct {
-	Name any
+	Name        any
 	OperationId any
 }
 
 var OpenapiOperationresult = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_operationresult",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":        ubx.FieldSpec{WireName: "name"},
 		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
 	},
 }

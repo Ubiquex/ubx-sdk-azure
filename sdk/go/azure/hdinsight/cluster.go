@@ -4,9 +4,9 @@ package hdinsight
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Cluster_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
-	TenantId any
+	TenantId    any
 }
 
 type Cluster_Identity struct {
@@ -46,11 +46,11 @@ type Cluster_Properties_ComputeProfile_Roles_Autoscale_Capacity struct {
 type Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity struct {
 	MaxInstanceCount any
 	MinInstanceCount any
-	Time any
+	Time             any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule struct {
-	Days any
+	Days            any
 	TimeAndCapacity any
 }
 
@@ -60,13 +60,13 @@ type Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence struct {
 }
 
 type Cluster_Properties_ComputeProfile_Roles_Autoscale struct {
-	Capacity any
+	Capacity   any
 	Recurrence any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_DataDisksGroups struct {
-	DiskSizeGb any
-	DisksPerNode any
+	DiskSizeGb         any
+	DisksPerNode       any
 	StorageAccountType any
 }
 
@@ -83,9 +83,9 @@ type Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfi
 }
 
 type Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile struct {
-	Password any
+	Password   any
 	SshProfile any
-	Username any
+	Username   any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_OsProfile struct {
@@ -93,33 +93,41 @@ type Cluster_Properties_ComputeProfile_Roles_OsProfile struct {
 }
 
 type Cluster_Properties_ComputeProfile_Roles_ScriptActions struct {
-	Name any
+	Name       any
 	Parameters any
-	Uri any
+	Uri        any
 }
 
 type Cluster_Properties_ComputeProfile_Roles_VirtualNetworkProfile struct {
-	Id any
+	Id     any
 	Subnet any
 }
 
 type Cluster_Properties_ComputeProfile_Roles struct {
-	Autoscale any
-	DataDisksGroups any
-	EncryptDataDisks any
-	HardwareProfile any
-	MinInstanceCount any
-	Name any
-	OsProfile any
-	ScriptActions any
-	TargetInstanceCount any
+	Autoscale             any
+	DataDisksGroups       any
+	EncryptDataDisks      any
+	HardwareProfile       any
+	MinInstanceCount      any
+	Name                  any
+	OsProfile             any
+	ScriptActions         any
+	TargetInstanceCount   any
 	VirtualNetworkProfile any
-	VmgroupName any
+	VmgroupName           any
 }
 
 type Cluster_Properties_ComputeProfile struct {
 	// The list of roles in the cluster.
 	Roles any
+}
+
+type Cluster_Properties_ConnectivityEndpoints struct {
+	Location         any
+	Name             any
+	Port             any
+	PrivateIpaddress any
+	Protocol         any
 }
 
 type Cluster_Properties_DiskEncryptionProperties struct {
@@ -140,6 +148,18 @@ type Cluster_Properties_DiskEncryptionProperties struct {
 type Cluster_Properties_EncryptionInTransitProperties struct {
 	// Indicates whether or not inter cluster node communication is encrypted in transit.
 	IsEncryptionInTransitEnabled any
+}
+
+type Cluster_Properties_Errors struct {
+	Code    any
+	Message any
+}
+
+type Cluster_Properties_ExcludedServicesConfig struct {
+	// The config id of excluded services.
+	ExcludedServicesConfigId any
+	// The list of excluded services.
+	ExcludedServicesList any
 }
 
 type Cluster_Properties_KafkaRestProperties_ClientGroupInfo struct {
@@ -163,36 +183,68 @@ type Cluster_Properties_NetworkProperties struct {
 	ResourceProviderConnection any
 }
 
-type Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_Subnet struct {
+type Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
 	Id any
+}
+
+type Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	ActionsRequired any
+	Description     any
+	Status          any
+}
+
+type Cluster_Properties_PrivateEndpointConnections_Properties struct {
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
+	PrivateLinkServiceConnectionState any
+	ProvisioningState                 any
+}
+
+type Cluster_Properties_PrivateEndpointConnections_SystemData struct {
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
+	LastModifiedByType any
+}
+
+type Cluster_Properties_PrivateEndpointConnections struct {
+	Properties any
+	SystemData any
 }
 
 type Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
+	Primary                   any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type Cluster_Properties_PrivateLinkConfigurations_Properties struct {
-	GroupId any
-	IpConfigurations any
+	GroupId           any
+	IpConfigurations  any
 	ProvisioningState any
 }
 
 type Cluster_Properties_PrivateLinkConfigurations struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
+}
+
+type Cluster_Properties_QuotaInfo struct {
+	// The cores used by the cluster.
+	CoresUsed any
 }
 
 type Cluster_Properties_SecurityProfile struct {
@@ -217,15 +269,15 @@ type Cluster_Properties_SecurityProfile struct {
 }
 
 type Cluster_Properties_StorageProfile_Storageaccounts struct {
-	Container any
-	FileSystem any
-	Fileshare any
-	IsDefault any
-	Key any
+	Container     any
+	FileSystem    any
+	Fileshare     any
+	IsDefault     any
+	Key           any
 	MsiResourceId any
-	Name any
-	ResourceId any
-	Saskey any
+	Name          any
+	ResourceId    any
+	Saskey        any
 }
 
 type Cluster_Properties_StorageProfile struct {
@@ -236,16 +288,30 @@ type Cluster_Properties_StorageProfile struct {
 type Cluster_Properties struct {
 	// The cluster definition.
 	ClusterDefinition any
+	// The hdp version of the cluster.
+	ClusterHdpVersion any
+	// The cluster id.
+	ClusterId any
+	// The state of the cluster.
+	ClusterState any
 	// The version of the cluster.
 	ClusterVersion any
 	// The compute isolation properties.
 	ComputeIsolationProperties any
 	// Describes the compute profile.
 	ComputeProfile any
+	// The list of connectivity endpoints.
+	ConnectivityEndpoints any
+	// The date on which the cluster was created.
+	CreatedDate any
 	// The disk encryption properties
 	DiskEncryptionProperties any
 	// The encryption-in-transit properties.
 	EncryptionInTransitProperties any
+	// The list of errors.
+	Errors any
+	// The configuration that services will be excluded when creating cluster.
+	ExcludedServicesConfig any
 	// The kafka rest proxy configuration which contains AAD security group information.
 	KafkaRestProperties any
 	// The minimal supported tls version.
@@ -254,8 +320,14 @@ type Cluster_Properties struct {
 	NetworkProperties any
 	// The type of operating system.
 	OsType any
+	// The list of private endpoint connections.
+	PrivateEndpointConnections any
 	// The private link configurations.
 	PrivateLinkConfigurations any
+	// The provisioning state, which only appears in the response.
+	ProvisioningState any
+	// The quota properties for the cluster.
+	QuotaInfo any
 	// The security profile which contains Ssh public key for the HDInsight cluster.
 	SecurityProfile any
 	// The storage profile.
@@ -264,357 +336,437 @@ type Cluster_Properties struct {
 	Tier any
 }
 
-type Cluster_SystemData struct {
-	// The timestamp of resource creation (UTC).
-	CreatedAt any
-	// The identity that created the resource.
-	CreatedBy any
-	// The type of identity that created the resource.
-	CreatedByType any
-	// The timestamp of resource last modification (UTC)
-	LastModifiedAt any
-	// The identity that last modified the resource.
-	LastModifiedBy any
-	// The type of identity that last modified the resource.
-	LastModifiedByType any
+var Cluster_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
 }
 
-var Cluster_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
-
 var Cluster_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: Cluster_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   Cluster_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var Cluster_Properties_ClusterDefinitionFields = ubx.FieldMap{
-		"Blueprint": ubx.FieldSpec{WireName: "blueprint"},
-		"ComponentVersion": ubx.FieldSpec{WireName: "component_version"},
-		"Configurations": ubx.FieldSpec{WireName: "configurations"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-	}
+	"Blueprint":        ubx.FieldSpec{WireName: "blueprint"},
+	"ComponentVersion": ubx.FieldSpec{WireName: "component_version"},
+	"Configurations":   ubx.FieldSpec{WireName: "configurations"},
+	"Kind":             ubx.FieldSpec{WireName: "kind"},
+}
 
 var Cluster_Properties_ComputeIsolationPropertiesFields = ubx.FieldMap{
-		"EnableComputeIsolation": ubx.FieldSpec{WireName: "enable_compute_isolation"},
-		"HostSku": ubx.FieldSpec{WireName: "host_sku"},
-	}
+	"EnableComputeIsolation": ubx.FieldSpec{WireName: "enable_compute_isolation"},
+	"HostSku":                ubx.FieldSpec{WireName: "host_sku"},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_Autoscale_CapacityFields = ubx.FieldMap{
-		"MaxInstanceCount": ubx.FieldSpec{WireName: "max_instance_count"},
-		"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
-	}
+	"MaxInstanceCount": ubx.FieldSpec{WireName: "max_instance_count"},
+	"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacityFields = ubx.FieldMap{
-		"MaxInstanceCount": ubx.FieldSpec{WireName: "max_instance_count"},
-		"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"MaxInstanceCount": ubx.FieldSpec{WireName: "max_instance_count"},
+	"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
+	"Time":             ubx.FieldSpec{WireName: "time"},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_ScheduleFields = ubx.FieldMap{
-		"Days": ubx.FieldSpec{WireName: "days"},
-		"TimeAndCapacity": ubx.FieldSpec{
-			WireName: "time_and_capacity",
-			Kind: "object",
-			Fields: Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacityFields,
-		},
-	}
+	"Days": ubx.FieldSpec{WireName: "days"},
+	"TimeAndCapacity": ubx.FieldSpec{
+		WireName: "time_and_capacity",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacityFields,
+	},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_Autoscale_RecurrenceFields = ubx.FieldMap{
-		"Schedule": ubx.FieldSpec{
-			WireName: "schedule",
-			Kind: "list",
-			Fields: Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_ScheduleFields,
-		},
-		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
-	}
+	"Schedule": ubx.FieldSpec{
+		WireName: "schedule",
+		Kind:     "list",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_Autoscale_Recurrence_ScheduleFields,
+	},
+	"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_AutoscaleFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{
-			WireName: "capacity",
-			Kind: "object",
-			Fields: Cluster_Properties_ComputeProfile_Roles_Autoscale_CapacityFields,
-		},
-		"Recurrence": ubx.FieldSpec{
-			WireName: "recurrence",
-			Kind: "object",
-			Fields: Cluster_Properties_ComputeProfile_Roles_Autoscale_RecurrenceFields,
-		},
-	}
+	"Capacity": ubx.FieldSpec{
+		WireName: "capacity",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_Autoscale_CapacityFields,
+	},
+	"Recurrence": ubx.FieldSpec{
+		WireName: "recurrence",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_Autoscale_RecurrenceFields,
+	},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_DataDisksGroupsFields = ubx.FieldMap{
-		"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
-		"DisksPerNode": ubx.FieldSpec{WireName: "disks_per_node"},
-		"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
-	}
+	"DiskSizeGb":         ubx.FieldSpec{WireName: "disk_size_gb"},
+	"DisksPerNode":       ubx.FieldSpec{WireName: "disks_per_node"},
+	"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_HardwareProfileFields = ubx.FieldMap{
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-	}
+	"VmSize": ubx.FieldSpec{WireName: "vm_size"},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeysFields = ubx.FieldMap{
-		"CertificateData": ubx.FieldSpec{WireName: "certificate_data"},
-	}
+	"CertificateData": ubx.FieldSpec{WireName: "certificate_data"},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfileFields = ubx.FieldMap{
-		"PublicKeys": ubx.FieldSpec{
-			WireName: "public_keys",
-			Kind: "list",
-			Fields: Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeysFields,
-		},
-	}
+	"PublicKeys": ubx.FieldSpec{
+		WireName: "public_keys",
+		Kind:     "list",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfile_PublicKeysFields,
+	},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfileFields = ubx.FieldMap{
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"SshProfile": ubx.FieldSpec{
-			WireName: "ssh_profile",
-			Kind: "object",
-			Fields: Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfileFields,
-		},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"Password": ubx.FieldSpec{WireName: "password"},
+	"SshProfile": ubx.FieldSpec{
+		WireName: "ssh_profile",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile_SshProfileFields,
+	},
+	"Username": ubx.FieldSpec{WireName: "username"},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_OsProfileFields = ubx.FieldMap{
-		"LinuxOperatingSystemProfile": ubx.FieldSpec{
-			WireName: "linux_operating_system_profile",
-			Kind: "object",
-			Fields: Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfileFields,
-		},
-	}
+	"LinuxOperatingSystemProfile": ubx.FieldSpec{
+		WireName: "linux_operating_system_profile",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfileFields,
+	},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_ScriptActionsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"Name":       ubx.FieldSpec{WireName: "name"},
+	"Parameters": ubx.FieldSpec{WireName: "parameters"},
+	"Uri":        ubx.FieldSpec{WireName: "uri"},
+}
 
 var Cluster_Properties_ComputeProfile_Roles_VirtualNetworkProfileFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"Id":     ubx.FieldSpec{WireName: "id"},
+	"Subnet": ubx.FieldSpec{WireName: "subnet"},
+}
 
 var Cluster_Properties_ComputeProfile_RolesFields = ubx.FieldMap{
-		"Autoscale": ubx.FieldSpec{
-			WireName: "autoscale",
-			Kind: "object",
-			Fields: Cluster_Properties_ComputeProfile_Roles_AutoscaleFields,
-		},
-		"DataDisksGroups": ubx.FieldSpec{
-			WireName: "data_disks_groups",
-			Kind: "list",
-			Fields: Cluster_Properties_ComputeProfile_Roles_DataDisksGroupsFields,
-		},
-		"EncryptDataDisks": ubx.FieldSpec{WireName: "encrypt_data_disks"},
-		"HardwareProfile": ubx.FieldSpec{
-			WireName: "hardware_profile",
-			Kind: "object",
-			Fields: Cluster_Properties_ComputeProfile_Roles_HardwareProfileFields,
-		},
-		"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"OsProfile": ubx.FieldSpec{
-			WireName: "os_profile",
-			Kind: "object",
-			Fields: Cluster_Properties_ComputeProfile_Roles_OsProfileFields,
-		},
-		"ScriptActions": ubx.FieldSpec{
-			WireName: "script_actions",
-			Kind: "list",
-			Fields: Cluster_Properties_ComputeProfile_Roles_ScriptActionsFields,
-		},
-		"TargetInstanceCount": ubx.FieldSpec{WireName: "target_instance_count"},
-		"VirtualNetworkProfile": ubx.FieldSpec{
-			WireName: "virtual_network_profile",
-			Kind: "object",
-			Fields: Cluster_Properties_ComputeProfile_Roles_VirtualNetworkProfileFields,
-		},
-		"VmgroupName": ubx.FieldSpec{WireName: "vmgroup_name"},
-	}
+	"Autoscale": ubx.FieldSpec{
+		WireName: "autoscale",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_AutoscaleFields,
+	},
+	"DataDisksGroups": ubx.FieldSpec{
+		WireName: "data_disks_groups",
+		Kind:     "list",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_DataDisksGroupsFields,
+	},
+	"EncryptDataDisks": ubx.FieldSpec{WireName: "encrypt_data_disks"},
+	"HardwareProfile": ubx.FieldSpec{
+		WireName: "hardware_profile",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_HardwareProfileFields,
+	},
+	"MinInstanceCount": ubx.FieldSpec{WireName: "min_instance_count"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+	"OsProfile": ubx.FieldSpec{
+		WireName: "os_profile",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_OsProfileFields,
+	},
+	"ScriptActions": ubx.FieldSpec{
+		WireName: "script_actions",
+		Kind:     "list",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_ScriptActionsFields,
+	},
+	"TargetInstanceCount": ubx.FieldSpec{WireName: "target_instance_count"},
+	"VirtualNetworkProfile": ubx.FieldSpec{
+		WireName: "virtual_network_profile",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ComputeProfile_Roles_VirtualNetworkProfileFields,
+	},
+	"VmgroupName": ubx.FieldSpec{WireName: "vmgroup_name"},
+}
 
 var Cluster_Properties_ComputeProfileFields = ubx.FieldMap{
-		"Roles": ubx.FieldSpec{
-			WireName: "roles",
-			Kind: "list",
-			Fields: Cluster_Properties_ComputeProfile_RolesFields,
-		},
-	}
+	"Roles": ubx.FieldSpec{
+		WireName: "roles",
+		Kind:     "list",
+		Fields:   Cluster_Properties_ComputeProfile_RolesFields,
+	},
+}
+
+var Cluster_Properties_ConnectivityEndpointsFields = ubx.FieldMap{
+	"Location":         ubx.FieldSpec{WireName: "location"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+	"Port":             ubx.FieldSpec{WireName: "port"},
+	"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
+	"Protocol":         ubx.FieldSpec{WireName: "protocol"},
+}
 
 var Cluster_Properties_DiskEncryptionPropertiesFields = ubx.FieldMap{
-		"EncryptionAlgorithm": ubx.FieldSpec{WireName: "encryption_algorithm"},
-		"EncryptionAtHost": ubx.FieldSpec{WireName: "encryption_at_host"},
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-		"MsiResourceId": ubx.FieldSpec{WireName: "msi_resource_id"},
-		"VaultUri": ubx.FieldSpec{WireName: "vault_uri"},
-	}
+	"EncryptionAlgorithm": ubx.FieldSpec{WireName: "encryption_algorithm"},
+	"EncryptionAtHost":    ubx.FieldSpec{WireName: "encryption_at_host"},
+	"KeyName":             ubx.FieldSpec{WireName: "key_name"},
+	"KeyVersion":          ubx.FieldSpec{WireName: "key_version"},
+	"MsiResourceId":       ubx.FieldSpec{WireName: "msi_resource_id"},
+	"VaultUri":            ubx.FieldSpec{WireName: "vault_uri"},
+}
 
 var Cluster_Properties_EncryptionInTransitPropertiesFields = ubx.FieldMap{
-		"IsEncryptionInTransitEnabled": ubx.FieldSpec{WireName: "is_encryption_in_transit_enabled"},
-	}
+	"IsEncryptionInTransitEnabled": ubx.FieldSpec{WireName: "is_encryption_in_transit_enabled"},
+}
+
+var Cluster_Properties_ErrorsFields = ubx.FieldMap{
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
+
+var Cluster_Properties_ExcludedServicesConfigFields = ubx.FieldMap{
+	"ExcludedServicesConfigId": ubx.FieldSpec{WireName: "excluded_services_config_id"},
+	"ExcludedServicesList":     ubx.FieldSpec{WireName: "excluded_services_list"},
+}
 
 var Cluster_Properties_KafkaRestProperties_ClientGroupInfoFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"GroupName": ubx.FieldSpec{WireName: "group_name"},
-	}
+	"GroupId":   ubx.FieldSpec{WireName: "group_id"},
+	"GroupName": ubx.FieldSpec{WireName: "group_name"},
+}
 
 var Cluster_Properties_KafkaRestPropertiesFields = ubx.FieldMap{
-		"ClientGroupInfo": ubx.FieldSpec{
-			WireName: "client_group_info",
-			Kind: "object",
-			Fields: Cluster_Properties_KafkaRestProperties_ClientGroupInfoFields,
-		},
-		"ConfigurationOverride": ubx.FieldSpec{WireName: "configuration_override"},
-	}
+	"ClientGroupInfo": ubx.FieldSpec{
+		WireName: "client_group_info",
+		Kind:     "object",
+		Fields:   Cluster_Properties_KafkaRestProperties_ClientGroupInfoFields,
+	},
+	"ConfigurationOverride": ubx.FieldSpec{WireName: "configuration_override"},
+}
 
 var Cluster_Properties_NetworkPropertiesFields = ubx.FieldMap{
-		"PrivateLink": ubx.FieldSpec{WireName: "private_link"},
-		"ResourceProviderConnection": ubx.FieldSpec{WireName: "resource_provider_connection"},
-	}
+	"PrivateLink":                ubx.FieldSpec{WireName: "private_link"},
+	"ResourceProviderConnection": ubx.FieldSpec{WireName: "resource_provider_connection"},
+}
 
-var Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_SubnetFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+var Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
+
+var Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
+
+var Cluster_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
+	"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
+
+var Cluster_Properties_PrivateEndpointConnections_SystemDataFields = ubx.FieldMap{
+	"CreatedAt":          ubx.FieldSpec{WireName: "created_at"},
+	"CreatedBy":          ubx.FieldSpec{WireName: "created_by"},
+	"CreatedByType":      ubx.FieldSpec{WireName: "created_by_type"},
+	"LastModifiedAt":     ubx.FieldSpec{WireName: "last_modified_at"},
+	"LastModifiedBy":     ubx.FieldSpec{WireName: "last_modified_by"},
+	"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
+}
+
+var Cluster_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Cluster_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+	"SystemData": ubx.FieldSpec{
+		WireName: "system_data",
+		Kind:     "object",
+		Fields:   Cluster_Properties_PrivateEndpointConnections_SystemDataFields,
+	},
+}
 
 var Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_SubnetFields,
-		},
-	}
+	"Primary":                   ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+}
 
 var Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var Cluster_Properties_PrivateLinkConfigurations_PropertiesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupId": ubx.FieldSpec{WireName: "group_id"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var Cluster_Properties_PrivateLinkConfigurationsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Cluster_Properties_PrivateLinkConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Cluster_Properties_PrivateLinkConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
+
+var Cluster_Properties_QuotaInfoFields = ubx.FieldMap{
+	"CoresUsed": ubx.FieldSpec{WireName: "cores_used"},
+}
 
 var Cluster_Properties_SecurityProfileFields = ubx.FieldMap{
-		"AaddsResourceId": ubx.FieldSpec{WireName: "aadds_resource_id"},
-		"ClusterUsersGroupDns": ubx.FieldSpec{WireName: "cluster_users_group_dns"},
-		"DirectoryType": ubx.FieldSpec{WireName: "directory_type"},
-		"Domain": ubx.FieldSpec{WireName: "domain"},
-		"DomainUserPassword": ubx.FieldSpec{WireName: "domain_user_password"},
-		"DomainUsername": ubx.FieldSpec{WireName: "domain_username"},
-		"LdapsUrls": ubx.FieldSpec{WireName: "ldaps_urls"},
-		"MsiResourceId": ubx.FieldSpec{WireName: "msi_resource_id"},
-		"OrganizationalUnitDn": ubx.FieldSpec{WireName: "organizational_unit_dn"},
-	}
+	"AaddsResourceId":      ubx.FieldSpec{WireName: "aadds_resource_id"},
+	"ClusterUsersGroupDns": ubx.FieldSpec{WireName: "cluster_users_group_dns"},
+	"DirectoryType":        ubx.FieldSpec{WireName: "directory_type"},
+	"Domain":               ubx.FieldSpec{WireName: "domain"},
+	"DomainUserPassword":   ubx.FieldSpec{WireName: "domain_user_password"},
+	"DomainUsername":       ubx.FieldSpec{WireName: "domain_username"},
+	"LdapsUrls":            ubx.FieldSpec{WireName: "ldaps_urls"},
+	"MsiResourceId":        ubx.FieldSpec{WireName: "msi_resource_id"},
+	"OrganizationalUnitDn": ubx.FieldSpec{WireName: "organizational_unit_dn"},
+}
 
 var Cluster_Properties_StorageProfile_StorageaccountsFields = ubx.FieldMap{
-		"Container": ubx.FieldSpec{WireName: "container"},
-		"FileSystem": ubx.FieldSpec{WireName: "file_system"},
-		"Fileshare": ubx.FieldSpec{WireName: "fileshare"},
-		"IsDefault": ubx.FieldSpec{WireName: "is_default"},
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"MsiResourceId": ubx.FieldSpec{WireName: "msi_resource_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"Saskey": ubx.FieldSpec{WireName: "saskey"},
-	}
+	"Container":     ubx.FieldSpec{WireName: "container"},
+	"FileSystem":    ubx.FieldSpec{WireName: "file_system"},
+	"Fileshare":     ubx.FieldSpec{WireName: "fileshare"},
+	"IsDefault":     ubx.FieldSpec{WireName: "is_default"},
+	"Key":           ubx.FieldSpec{WireName: "key"},
+	"MsiResourceId": ubx.FieldSpec{WireName: "msi_resource_id"},
+	"Name":          ubx.FieldSpec{WireName: "name"},
+	"ResourceId":    ubx.FieldSpec{WireName: "resource_id"},
+	"Saskey":        ubx.FieldSpec{WireName: "saskey"},
+}
 
 var Cluster_Properties_StorageProfileFields = ubx.FieldMap{
-		"Storageaccounts": ubx.FieldSpec{
-			WireName: "storageaccounts",
-			Kind: "list",
-			Fields: Cluster_Properties_StorageProfile_StorageaccountsFields,
-		},
-	}
+	"Storageaccounts": ubx.FieldSpec{
+		WireName: "storageaccounts",
+		Kind:     "list",
+		Fields:   Cluster_Properties_StorageProfile_StorageaccountsFields,
+	},
+}
 
 var Cluster_PropertiesFields = ubx.FieldMap{
-		"ClusterDefinition": ubx.FieldSpec{
-			WireName: "cluster_definition",
-			Kind: "object",
-			Fields: Cluster_Properties_ClusterDefinitionFields,
-		},
-		"ClusterVersion": ubx.FieldSpec{WireName: "cluster_version"},
-		"ComputeIsolationProperties": ubx.FieldSpec{
-			WireName: "compute_isolation_properties",
-			Kind: "object",
-			Fields: Cluster_Properties_ComputeIsolationPropertiesFields,
-		},
-		"ComputeProfile": ubx.FieldSpec{
-			WireName: "compute_profile",
-			Kind: "object",
-			Fields: Cluster_Properties_ComputeProfileFields,
-		},
-		"DiskEncryptionProperties": ubx.FieldSpec{
-			WireName: "disk_encryption_properties",
-			Kind: "object",
-			Fields: Cluster_Properties_DiskEncryptionPropertiesFields,
-		},
-		"EncryptionInTransitProperties": ubx.FieldSpec{
-			WireName: "encryption_in_transit_properties",
-			Kind: "object",
-			Fields: Cluster_Properties_EncryptionInTransitPropertiesFields,
-		},
-		"KafkaRestProperties": ubx.FieldSpec{
-			WireName: "kafka_rest_properties",
-			Kind: "object",
-			Fields: Cluster_Properties_KafkaRestPropertiesFields,
-		},
-		"MinSupportedTlsVersion": ubx.FieldSpec{WireName: "min_supported_tls_version"},
-		"NetworkProperties": ubx.FieldSpec{
-			WireName: "network_properties",
-			Kind: "object",
-			Fields: Cluster_Properties_NetworkPropertiesFields,
-		},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-		"PrivateLinkConfigurations": ubx.FieldSpec{
-			WireName: "private_link_configurations",
-			Kind: "list",
-			Fields: Cluster_Properties_PrivateLinkConfigurationsFields,
-		},
-		"SecurityProfile": ubx.FieldSpec{
-			WireName: "security_profile",
-			Kind: "object",
-			Fields: Cluster_Properties_SecurityProfileFields,
-		},
-		"StorageProfile": ubx.FieldSpec{
-			WireName: "storage_profile",
-			Kind: "object",
-			Fields: Cluster_Properties_StorageProfileFields,
-		},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"ClusterDefinition": ubx.FieldSpec{
+		WireName: "cluster_definition",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ClusterDefinitionFields,
+	},
+	"ClusterHdpVersion": ubx.FieldSpec{WireName: "cluster_hdp_version"},
+	"ClusterId":         ubx.FieldSpec{WireName: "cluster_id"},
+	"ClusterState":      ubx.FieldSpec{WireName: "cluster_state"},
+	"ClusterVersion":    ubx.FieldSpec{WireName: "cluster_version"},
+	"ComputeIsolationProperties": ubx.FieldSpec{
+		WireName: "compute_isolation_properties",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ComputeIsolationPropertiesFields,
+	},
+	"ComputeProfile": ubx.FieldSpec{
+		WireName: "compute_profile",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ComputeProfileFields,
+	},
+	"ConnectivityEndpoints": ubx.FieldSpec{
+		WireName: "connectivity_endpoints",
+		Kind:     "list",
+		Fields:   Cluster_Properties_ConnectivityEndpointsFields,
+	},
+	"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
+	"DiskEncryptionProperties": ubx.FieldSpec{
+		WireName: "disk_encryption_properties",
+		Kind:     "object",
+		Fields:   Cluster_Properties_DiskEncryptionPropertiesFields,
+	},
+	"EncryptionInTransitProperties": ubx.FieldSpec{
+		WireName: "encryption_in_transit_properties",
+		Kind:     "object",
+		Fields:   Cluster_Properties_EncryptionInTransitPropertiesFields,
+	},
+	"Errors": ubx.FieldSpec{
+		WireName: "errors",
+		Kind:     "list",
+		Fields:   Cluster_Properties_ErrorsFields,
+	},
+	"ExcludedServicesConfig": ubx.FieldSpec{
+		WireName: "excluded_services_config",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ExcludedServicesConfigFields,
+	},
+	"KafkaRestProperties": ubx.FieldSpec{
+		WireName: "kafka_rest_properties",
+		Kind:     "object",
+		Fields:   Cluster_Properties_KafkaRestPropertiesFields,
+	},
+	"MinSupportedTlsVersion": ubx.FieldSpec{WireName: "min_supported_tls_version"},
+	"NetworkProperties": ubx.FieldSpec{
+		WireName: "network_properties",
+		Kind:     "object",
+		Fields:   Cluster_Properties_NetworkPropertiesFields,
+	},
+	"OsType": ubx.FieldSpec{WireName: "os_type"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   Cluster_Properties_PrivateEndpointConnectionsFields,
+	},
+	"PrivateLinkConfigurations": ubx.FieldSpec{
+		WireName: "private_link_configurations",
+		Kind:     "list",
+		Fields:   Cluster_Properties_PrivateLinkConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"QuotaInfo": ubx.FieldSpec{
+		WireName: "quota_info",
+		Kind:     "object",
+		Fields:   Cluster_Properties_QuotaInfoFields,
+	},
+	"SecurityProfile": ubx.FieldSpec{
+		WireName: "security_profile",
+		Kind:     "object",
+		Fields:   Cluster_Properties_SecurityProfileFields,
+	},
+	"StorageProfile": ubx.FieldSpec{
+		WireName: "storage_profile",
+		Kind:     "object",
+		Fields:   Cluster_Properties_StorageProfileFields,
+	},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type ClusterConfig struct {
 	// Identity for the cluster.
@@ -651,16 +803,16 @@ var Cluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: Cluster_IdentityFields,
+			Kind:     "object",
+			Fields:   Cluster_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Cluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   Cluster_PropertiesFields,
 		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

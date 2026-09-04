@@ -5,35 +5,35 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerNetworkManager_Value_Properties_NetworkManagerScopes_CrossTenantScopes struct {
 	ManagementGroups any
-	Subscriptions any
-	TenantId any
+	Subscriptions    any
+	TenantId         any
 }
 
 type NetworkmanagerNetworkManager_Value_Properties_NetworkManagerScopes struct {
 	CrossTenantScopes any
-	ManagementGroups any
-	Subscriptions any
+	ManagementGroups  any
+	Subscriptions     any
 }
 
 type NetworkmanagerNetworkManager_Value_Properties struct {
-	Description any
+	Description                 any
 	NetworkManagerScopeAccesses any
-	NetworkManagerScopes any
-	ProvisioningState any
-	ResourceGuid any
+	NetworkManagerScopes        any
+	ProvisioningState           any
+	ResourceGuid                any
 }
 
 type NetworkmanagerNetworkManager_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type NetworkmanagerNetworkManager_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 	SystemData any
 }
@@ -50,6 +50,5 @@ type NetworkmanagerNetworkManagerAttrs struct {
 
 var NetworkmanagerNetworkManager = ubx.DataSourceBinding{
 	WireType: "azure_network_networkmanager_network_manager",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

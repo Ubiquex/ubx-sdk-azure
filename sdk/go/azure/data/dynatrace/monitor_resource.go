@@ -4,74 +4,74 @@ package dynatrace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitorResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type MonitorResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type MonitorResource_Value_Properties_DynatraceEnvironmentProperties_AccountInfo struct {
-	AccountId any
+	AccountId   any
 	CompanyName any
-	RegionId any
+	RegionId    any
 }
 
 type MonitorResource_Value_Properties_DynatraceEnvironmentProperties_EnvironmentInfo struct {
-	EnvironmentId any
-	IngestionKey any
-	LandingUrl any
+	EnvironmentId         any
+	IngestionKey          any
+	LandingUrl            any
 	LogsIngestionEndpoint any
 }
 
 type MonitorResource_Value_Properties_DynatraceEnvironmentProperties_SingleSignOnProperties struct {
-	AadDomains any
-	EnterpriseAppId any
+	AadDomains        any
+	EnterpriseAppId   any
 	ProvisioningState any
 	SingleSignOnState any
-	SingleSignOnUrl any
+	SingleSignOnUrl   any
 }
 
 type MonitorResource_Value_Properties_DynatraceEnvironmentProperties struct {
-	AccountInfo any
-	EnvironmentInfo any
+	AccountInfo            any
+	EnvironmentInfo        any
 	SingleSignOnProperties any
-	UserId any
+	UserId                 any
 }
 
 type MonitorResource_Value_Properties_PlanData struct {
-	BillingCycle any
+	BillingCycle  any
 	EffectiveDate any
-	PlanDetails any
-	UsageType any
+	PlanDetails   any
+	UsageType     any
 }
 
 type MonitorResource_Value_Properties_UserInfo struct {
-	Country any
+	Country      any
 	EmailAddress any
-	FirstName any
-	LastName any
-	PhoneNumber any
+	FirstName    any
+	LastName     any
+	PhoneNumber  any
 }
 
 type MonitorResource_Value_Properties struct {
 	DynatraceEnvironmentProperties any
-	LiftrResourceCategory any
-	LiftrResourcePreference any
-	MarketplaceSaasAutoRenew any
-	MarketplaceSubscriptionStatus any
-	MonitoringStatus any
-	PlanData any
-	ProvisioningState any
-	UserInfo any
+	LiftrResourceCategory          any
+	LiftrResourcePreference        any
+	MarketplaceSaasAutoRenew       any
+	MarketplaceSubscriptionStatus  any
+	MonitoringStatus               any
+	PlanData                       any
+	ProvisioningState              any
+	UserInfo                       any
 }
 
 type MonitorResource_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -87,6 +87,5 @@ type MonitorResourceAttrs struct {
 
 var MonitorResource = ubx.DataSourceBinding{
 	WireType: "azure_dynatrace_monitor_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

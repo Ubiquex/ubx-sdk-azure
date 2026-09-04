@@ -19,7 +19,7 @@ type PrivatelinksResourceManagementPrivateLinkAttrs struct {
 	// the region to create private link association.
 	Location any
 	// The rmpl Name.
-	Name any
+	Name       any
 	Properties any
 	// The operation type.
 	Type any

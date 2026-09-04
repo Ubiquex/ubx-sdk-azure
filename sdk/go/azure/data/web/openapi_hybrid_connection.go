@@ -4,18 +4,18 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiHybridConnection_Value_Properties struct {
-	Hostname any
-	Port any
-	RelayArmUri any
-	RelayName any
-	SendKeyName any
-	SendKeyValue any
+	Hostname            any
+	Port                any
+	RelayArmUri         any
+	RelayName           any
+	SendKeyName         any
+	SendKeyValue        any
 	ServiceBusNamespace any
-	ServiceBusSuffix any
+	ServiceBusSuffix    any
 }
 
 type OpenapiHybridConnection_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

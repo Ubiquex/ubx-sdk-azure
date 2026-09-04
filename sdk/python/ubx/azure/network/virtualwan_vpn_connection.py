@@ -328,8 +328,6 @@ _VirtualwanVpnConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanVpnConnectionConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # The name of the resource that is unique within a resource group. This name can be used to access the resource.
     name: Any = None
     # Parameters for VpnConnection.
@@ -347,7 +345,6 @@ class VirtualwanVpnConnectionAttrs:
 VirtualwanVpnConnection = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_vpn_connection",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",

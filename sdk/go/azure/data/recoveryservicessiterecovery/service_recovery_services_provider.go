@@ -4,91 +4,91 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceRecoveryServicesProvider_Value_Properties_AuthenticationIdentityDetails struct {
-	AadAuthority any
+	AadAuthority  any
 	ApplicationId any
-	Audience any
-	ObjectId any
-	TenantId any
+	Audience      any
+	ObjectId      any
+	TenantId      any
 }
 
 type ServiceRecoveryServicesProvider_Value_Properties_HealthErrorDetails_InnerHealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceRecoveryServicesProvider_Value_Properties_HealthErrorDetails struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	InnerHealthErrors any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceRecoveryServicesProvider_Value_Properties_ProviderVersionDetails struct {
 	ExpiryDate any
-	Status any
-	Version any
+	Status     any
+	Version    any
 }
 
 type ServiceRecoveryServicesProvider_Value_Properties struct {
-	AllowedScenarios any
-	AuthenticationIdentityDetails any
-	BiosId any
-	ConnectionStatus any
+	AllowedScenarios                       any
+	AuthenticationIdentityDetails          any
+	BiosId                                 any
+	ConnectionStatus                       any
 	DataPlaneAuthenticationIdentityDetails any
-	DraIdentifier any
-	FabricFriendlyName any
-	FabricType any
-	FriendlyName any
-	HealthErrorDetails any
-	LastHeartBeat any
-	MachineId any
-	MachineName any
-	ProtectedItemCount any
-	ProviderVersion any
-	ProviderVersionDetails any
-	ProviderVersionExpiryDate any
-	ProviderVersionState any
-	ResourceAccessIdentityDetails any
-	ServerVersion any
+	DraIdentifier                          any
+	FabricFriendlyName                     any
+	FabricType                             any
+	FriendlyName                           any
+	HealthErrorDetails                     any
+	LastHeartBeat                          any
+	MachineId                              any
+	MachineName                            any
+	ProtectedItemCount                     any
+	ProviderVersion                        any
+	ProviderVersionDetails                 any
+	ProviderVersionExpiryDate              any
+	ProviderVersionState                   any
+	ResourceAccessIdentityDetails          any
+	ServerVersion                          any
 }
 
 type ServiceRecoveryServicesProvider_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ServiceRecoveryServicesProviderConfig struct {
-	FabricName any
+	FabricName   any
 	ResourceName any
 }
 
 type ServiceRecoveryServicesProviderAttrs struct {
 	FabricName any
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The RecoveryServicesProvider items on this page
 	Value any
@@ -97,7 +97,7 @@ type ServiceRecoveryServicesProviderAttrs struct {
 var ServiceRecoveryServicesProvider = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_recovery_services_provider",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
+		"FabricName":   ubx.FieldSpec{WireName: "fabric_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

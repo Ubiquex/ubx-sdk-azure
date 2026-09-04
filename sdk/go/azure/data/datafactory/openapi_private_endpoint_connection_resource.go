@@ -9,18 +9,18 @@ type OpenapiPrivateEndpointConnectionResource_Value_Properties_PrivateEndpoint s
 
 type OpenapiPrivateEndpointConnectionResource_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiPrivateEndpointConnectionResource_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiPrivateEndpointConnectionResource_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

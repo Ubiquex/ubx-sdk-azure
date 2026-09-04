@@ -19,7 +19,7 @@ type OpenapiDatasetResource_Properties_LinkedServiceName struct {
 
 type OpenapiDatasetResource_Properties_Parameters struct {
 	DefaultValue any
-	Type any
+	Type         any
 }
 
 type OpenapiDatasetResource_Properties struct {
@@ -42,46 +42,44 @@ type OpenapiDatasetResource_Properties struct {
 }
 
 var OpenapiDatasetResource_Properties_FolderFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiDatasetResource_Properties_LinkedServiceNameFields = ubx.FieldMap{
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"ReferenceName": ubx.FieldSpec{WireName: "reference_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Parameters":    ubx.FieldSpec{WireName: "parameters"},
+	"ReferenceName": ubx.FieldSpec{WireName: "reference_name"},
+	"Type":          ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiDatasetResource_Properties_ParametersFields = ubx.FieldMap{
-		"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
+	"Type":         ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiDatasetResource_PropertiesFields = ubx.FieldMap{
-		"Annotations": ubx.FieldSpec{WireName: "annotations"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Folder": ubx.FieldSpec{
-			WireName: "folder",
-			Kind: "object",
-			Fields: OpenapiDatasetResource_Properties_FolderFields,
-		},
-		"LinkedServiceName": ubx.FieldSpec{
-			WireName: "linked_service_name",
-			Kind: "object",
-			Fields: OpenapiDatasetResource_Properties_LinkedServiceNameFields,
-		},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "map",
-			Fields: OpenapiDatasetResource_Properties_ParametersFields,
-		},
-		"Schema": ubx.FieldSpec{WireName: "schema"},
-		"Structure": ubx.FieldSpec{WireName: "structure"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Annotations": ubx.FieldSpec{WireName: "annotations"},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Folder": ubx.FieldSpec{
+		WireName: "folder",
+		Kind:     "object",
+		Fields:   OpenapiDatasetResource_Properties_FolderFields,
+	},
+	"LinkedServiceName": ubx.FieldSpec{
+		WireName: "linked_service_name",
+		Kind:     "object",
+		Fields:   OpenapiDatasetResource_Properties_LinkedServiceNameFields,
+	},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   OpenapiDatasetResource_Properties_ParametersFields,
+	},
+	"Schema":    ubx.FieldSpec{WireName: "schema"},
+	"Structure": ubx.FieldSpec{WireName: "structure"},
+	"Type":      ubx.FieldSpec{WireName: "type"},
+}
 
 type OpenapiDatasetResourceConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// The Azure Data Factory nested object which identifies data within different data stores, such as tables, files, folders, and documents.
 	Properties any
 }
@@ -96,11 +94,10 @@ type OpenapiDatasetResourceAttrs struct {
 var OpenapiDatasetResource = ubx.ResourceBinding{
 	WireType: "azure_datafactory_openapi_dataset_resource",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDatasetResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDatasetResource_PropertiesFields,
 		},
 	},
 }

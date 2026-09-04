@@ -4,22 +4,22 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSavedSearch_Value_Properties_Tags struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiSavedSearch_Value_Properties struct {
-	Category any
-	DisplayName any
-	FunctionAlias any
+	Category           any
+	DisplayName        any
+	FunctionAlias      any
 	FunctionParameters any
-	Query any
-	Tags any
-	Version any
+	Query              any
+	Tags               any
+	Version            any
 }
 
 type OpenapiSavedSearch_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -29,7 +29,7 @@ type OpenapiSavedSearchConfig struct {
 
 type OpenapiSavedSearchAttrs struct {
 	// The array of result values.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CommandDocumentBase_Value struct {
 	Description any
-	Id any
-	Label any
-	OsType any
+	Id          any
+	Label       any
+	OsType      any
 }
 
 type CommandDocumentBaseConfig struct {
@@ -22,6 +22,5 @@ type CommandDocumentBaseAttrs struct {
 
 var CommandDocumentBase = ubx.DataSourceBinding{
 	WireType: "azure_run_command_document_base",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

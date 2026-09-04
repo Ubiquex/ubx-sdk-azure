@@ -4,32 +4,32 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMhsmprivateLinkResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiMhsmprivateLinkResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiMhsmprivateLinkResource_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
 type OpenapiMhsmprivateLinkResource_Value_Sku struct {
 	Family any
-	Name any
+	Name   any
 }
 
 type OpenapiMhsmprivateLinkResource_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiMhsmprivateLinkResourceConfig struct {

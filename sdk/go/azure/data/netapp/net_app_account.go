@@ -4,81 +4,81 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetAppAccount_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type NetAppAccount_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type NetAppAccount_Value_Properties_ActiveDirectories_LdapSearchScope struct {
-	GroupDn any
+	GroupDn               any
 	GroupMembershipFilter any
-	UserDn any
+	UserDn                any
 }
 
 type NetAppAccount_Value_Properties_ActiveDirectories struct {
-	ActiveDirectoryId any
-	AdName any
-	Administrators any
-	AesEncryption any
-	AllowLocalNfsUsersWithLdap any
-	BackupOperators any
-	Dns any
-	Domain any
-	EncryptDcconnections any
-	KdcIp any
-	LdapOverTls any
-	LdapSearchScope any
-	LdapSigning any
-	OrganizationalUnit any
-	Password any
+	ActiveDirectoryId             any
+	AdName                        any
+	Administrators                any
+	AesEncryption                 any
+	AllowLocalNfsUsersWithLdap    any
+	BackupOperators               any
+	Dns                           any
+	Domain                        any
+	EncryptDcconnections          any
+	KdcIp                         any
+	LdapOverTls                   any
+	LdapSearchScope               any
+	LdapSigning                   any
+	OrganizationalUnit            any
+	Password                      any
 	PreferredServersForLdapClient any
-	SecurityOperators any
-	ServerRootCacertificate any
-	Site any
-	SmbServerName any
-	Status any
-	StatusDetails any
-	Username any
+	SecurityOperators             any
+	ServerRootCacertificate       any
+	Site                          any
+	SmbServerName                 any
+	Status                        any
+	StatusDetails                 any
+	Username                      any
 }
 
 type NetAppAccount_Value_Properties_Encryption_Identity struct {
-	FederatedClientId any
-	PrincipalId any
+	FederatedClientId    any
+	PrincipalId          any
 	UserAssignedIdentity any
 }
 
 type NetAppAccount_Value_Properties_Encryption_KeyVaultProperties struct {
-	KeyName any
-	KeyVaultId any
+	KeyName            any
+	KeyVaultId         any
 	KeyVaultResourceId any
-	KeyVaultUri any
-	Status any
+	KeyVaultUri        any
+	Status             any
 }
 
 type NetAppAccount_Value_Properties_Encryption struct {
-	Identity any
-	KeySource any
+	Identity           any
+	KeySource          any
 	KeyVaultProperties any
 }
 
 type NetAppAccount_Value_Properties struct {
 	ActiveDirectories any
-	DisableShowmount any
-	Encryption any
-	MultiAdStatus any
-	NfsV4Iddomain any
+	DisableShowmount  any
+	Encryption        any
+	MultiAdStatus     any
+	NfsV4Iddomain     any
 	ProvisioningState any
 }
 
 type NetAppAccount_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
 }
 
@@ -94,6 +94,5 @@ type NetAppAccountAttrs struct {
 
 var NetAppAccount = ubx.DataSourceBinding{
 	WireType: "azure_netapp_net_app_account",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -8,23 +8,23 @@ type HealthcareApisIotConnector_Value_Properties_DeviceMapping struct {
 }
 
 type HealthcareApisIotConnector_Value_Properties_IngestionEndpointConfiguration struct {
-	ConsumerGroup any
-	EventHubName any
+	ConsumerGroup                   any
+	EventHubName                    any
 	FullyQualifiedEventHubNamespace any
 }
 
 type HealthcareApisIotConnector_Value_Properties struct {
-	DeviceMapping any
+	DeviceMapping                  any
 	IngestionEndpointConfiguration any
-	ProvisioningState any
+	ProvisioningState              any
 }
 
 type HealthcareApisIotConnector_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -35,15 +35,15 @@ type HealthcareApisIotConnector_Value struct {
 
 type HealthcareApisIotConnectorConfig struct {
 	ResourceGroupName any
-	WorkspaceName any
+	WorkspaceName     any
 }
 
 type HealthcareApisIotConnectorAttrs struct {
 	// The link used to get the next page of IoT Connectors.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
 	// The list of IoT Connectors.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
@@ -51,6 +51,6 @@ var HealthcareApisIotConnector = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_iot_connector",
 	Fields: ubx.FieldMap{
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"WorkspaceName":     ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

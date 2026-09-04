@@ -59,8 +59,6 @@ _FirewallpolicyFirewallPolicyKubeSelectorGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicyKubeSelectorGroupConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of the Kubernetes Selector Group.
     properties: Any = None
 
@@ -74,7 +72,6 @@ class FirewallpolicyFirewallPolicyKubeSelectorGroupAttrs:
 FirewallpolicyFirewallPolicyKubeSelectorGroup = ubx.ResourceBinding(
     wire_type="azure_network_firewallpolicy_firewall_policy_kube_selector_group",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -118,8 +118,6 @@ _Sbsubscription_PropertiesFields = {
 
 @dataclasses.dataclass
 class SbsubscriptionConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # Description of Subscription Resource.
     properties: Any = None
 
@@ -133,7 +131,6 @@ class SbsubscriptionAttrs:
 Sbsubscription = ubx.ResourceBinding(
     wire_type="azure_servicebus_sbsubscription",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

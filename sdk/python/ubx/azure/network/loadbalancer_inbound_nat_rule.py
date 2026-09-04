@@ -5457,8 +5457,6 @@ _LoadbalancerInboundNatRule_PropertiesFields = {
 
 @dataclasses.dataclass
 class LoadbalancerInboundNatRuleConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of the inbound NAT rule.
     properties: Any = None
 
@@ -5472,7 +5470,6 @@ class LoadbalancerInboundNatRuleAttrs:
 LoadbalancerInboundNatRule = ubx.ResourceBinding(
     wire_type="azure_network_loadbalancer_inbound_nat_rule",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

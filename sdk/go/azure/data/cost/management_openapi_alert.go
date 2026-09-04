@@ -6,60 +6,60 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type ManagementOpenapiAlert_Value_Properties_Definition struct {
 	Category any
 	Criteria any
-	Type any
+	Type     any
 }
 
 type ManagementOpenapiAlert_Value_Properties_Details struct {
-	Amount any
-	CompanyName any
-	ContactEmails any
-	ContactGroups any
-	ContactRoles any
-	CurrentSpend any
-	DepartmentName any
-	EnrollmentEndDate any
-	EnrollmentNumber any
+	Amount              any
+	CompanyName         any
+	ContactEmails       any
+	ContactGroups       any
+	ContactRoles        any
+	CurrentSpend        any
+	DepartmentName      any
+	EnrollmentEndDate   any
+	EnrollmentNumber    any
 	EnrollmentStartDate any
-	InvoicingThreshold any
-	MeterFilter any
-	Operator any
-	OverridingAlert any
-	PeriodStartDate any
-	ResourceFilter any
+	InvoicingThreshold  any
+	MeterFilter         any
+	Operator            any
+	OverridingAlert     any
+	PeriodStartDate     any
+	ResourceFilter      any
 	ResourceGroupFilter any
-	TagFilter any
-	Threshold any
-	TimeGrainType any
-	TriggeredBy any
-	Unit any
+	TagFilter           any
+	Threshold           any
+	TimeGrainType       any
+	TriggeredBy         any
+	Unit                any
 }
 
 type ManagementOpenapiAlert_Value_Properties struct {
-	CloseTime any
-	CostEntityId any
-	CreationTime any
-	Definition any
-	Description any
-	Details any
-	ModificationTime any
-	Source any
-	Status any
-	StatusModificationTime any
+	CloseTime                  any
+	CostEntityId               any
+	CreationTime               any
+	Definition                 any
+	Description                any
+	Details                    any
+	ModificationTime           any
+	Source                     any
+	Status                     any
+	StatusModificationTime     any
 	StatusModificationUserName any
 }
 
 type ManagementOpenapiAlert_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 
 type ManagementOpenapiAlertConfig struct {
-	ExternalCloudProviderId any
+	ExternalCloudProviderId   any
 	ExternalCloudProviderType any
 }
 
 type ManagementOpenapiAlertAttrs struct {
-	ExternalCloudProviderId any
+	ExternalCloudProviderId   any
 	ExternalCloudProviderType any
 	// URL to get the next set of alerts results if there are any.
 	NextLink any
@@ -70,7 +70,7 @@ type ManagementOpenapiAlertAttrs struct {
 var ManagementOpenapiAlert = ubx.DataSourceBinding{
 	WireType: "azure_cost_management_openapi_alert",
 	Fields: ubx.FieldMap{
-		"ExternalCloudProviderId": ubx.FieldSpec{WireName: "external_cloud_provider_id"},
+		"ExternalCloudProviderId":   ubx.FieldSpec{WireName: "external_cloud_provider_id"},
 		"ExternalCloudProviderType": ubx.FieldSpec{WireName: "external_cloud_provider_type"},
 	},
 }

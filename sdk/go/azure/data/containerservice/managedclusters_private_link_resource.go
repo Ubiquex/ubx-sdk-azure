@@ -4,12 +4,12 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersPrivateLinkResource_Value struct {
-	GroupId any
-	Id any
-	Name any
+	GroupId              any
+	Id                   any
+	Name                 any
 	PrivateLinkServiceId any
-	RequiredMembers any
-	Type any
+	RequiredMembers      any
+	Type                 any
 }
 
 type ManagedclustersPrivateLinkResourceConfig struct {

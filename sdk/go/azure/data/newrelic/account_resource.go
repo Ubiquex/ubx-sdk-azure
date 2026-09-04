@@ -4,10 +4,10 @@ package newrelic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AccountResource_Value_Properties struct {
-	AccountId any
-	AccountName any
+	AccountId      any
+	AccountName    any
 	OrganizationId any
-	Region any
+	Region         any
 }
 
 type AccountResource_Value struct {
@@ -15,14 +15,14 @@ type AccountResource_Value struct {
 }
 
 type AccountResourceConfig struct {
-	Location any
+	Location  any
 	UserEmail any
 }
 
 type AccountResourceAttrs struct {
 	Location any
 	// The link to the next page of items
-	NextLink any
+	NextLink  any
 	UserEmail any
 	// The AccountResource items on this page
 	Value any
@@ -31,7 +31,7 @@ type AccountResourceAttrs struct {
 var AccountResource = ubx.DataSourceBinding{
 	WireType: "azure_newrelic_account_resource",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"Location":  ubx.FieldSpec{WireName: "location"},
 		"UserEmail": ubx.FieldSpec{WireName: "user_email"},
 	},
 }

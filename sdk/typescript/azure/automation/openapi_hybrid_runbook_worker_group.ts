@@ -9,6 +9,8 @@ export interface OpenapiHybridRunbookWorkerGroup_Properties_Credential {
 export interface OpenapiHybridRunbookWorkerGroup_Properties {
   /** Definition of RunAs credential to use for hybrid worker. */
   credential?: OpenapiHybridRunbookWorkerGroup_Properties_Credential | Computed<OpenapiHybridRunbookWorkerGroup_Properties_Credential>;
+  /** Type of the HybridWorkerGroup. */
+  groupType?: string | Computed<string>;
 }
 
 const OpenapiHybridRunbookWorkerGroup_Properties_CredentialFields: FieldMap = {
@@ -21,6 +23,7 @@ const OpenapiHybridRunbookWorkerGroup_PropertiesFields: FieldMap = {
     kind: "object",
     fields: OpenapiHybridRunbookWorkerGroup_Properties_CredentialFields,
   },
+  groupType: "group_type",
 };
 
 export interface OpenapiHybridRunbookWorkerGroupConfig {
