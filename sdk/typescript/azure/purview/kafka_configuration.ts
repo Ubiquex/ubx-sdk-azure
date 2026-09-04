@@ -24,6 +24,15 @@ export interface KafkaConfiguration_Properties {
   eventStreamingType?: string | Computed<string>;
 }
 
+export interface KafkaConfiguration_SystemData {
+  createdAt?: string | Computed<string>;
+  createdBy?: string | Computed<string>;
+  createdByType?: string | Computed<string>;
+  lastModifiedAt?: string | Computed<string>;
+  lastModifiedBy?: string | Computed<string>;
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const KafkaConfiguration_Properties_CredentialsFields: FieldMap = {
   identityId: "identity_id",
   type: "type",
@@ -49,8 +58,16 @@ export interface KafkaConfigurationConfig {
 }
 
 export interface KafkaConfigurationAttrs {
+  /** Gets or sets the identifier. */
+  id: string;
+  /** Gets or sets the name. */
+  name: string;
   /** The kafka configuration properties of the event streaming service attached to the Purview account for kafka notifications. */
   properties: KafkaConfiguration_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: KafkaConfiguration_SystemData;
+  /** Gets or sets the type. */
+  type: string;
 }
 
 export const KafkaConfiguration: ResourceBinding<KafkaConfigurationConfig, KafkaConfigurationAttrs> = {

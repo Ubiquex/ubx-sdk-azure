@@ -75,26 +75,45 @@ var NetworkmanagerNetworkManager_PropertiesFields = ubx.FieldMap{
 }
 
 type NetworkmanagerNetworkManagerConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Properties of Managed Network
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type NetworkmanagerNetworkManagerAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties of Managed Network
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var NetworkmanagerNetworkManager = ubx.ResourceBinding{
 	WireType: "azure_network_networkmanager_network_manager",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   NetworkmanagerNetworkManager_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

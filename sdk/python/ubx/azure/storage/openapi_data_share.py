@@ -62,21 +62,31 @@ _OpenapiDataShare_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiDataShareConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # The storage datashare properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiDataShareAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # The storage datashare properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiDataShare = ubx.ResourceBinding(
     wire_type="azure_storage_openapi_data_share",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiDataShare_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

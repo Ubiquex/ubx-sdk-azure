@@ -336,24 +336,43 @@ var ExpressrouteRouteFilter_PropertiesFields = ubx.FieldMap{
 }
 
 type ExpressrouteRouteFilterConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Route Filter Resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ExpressrouteRouteFilterAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Route Filter Resource.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var ExpressrouteRouteFilter = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_route_filter",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ExpressrouteRouteFilter_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

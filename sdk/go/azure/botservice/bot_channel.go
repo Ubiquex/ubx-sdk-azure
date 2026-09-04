@@ -14,6 +14,13 @@ type BotChannel_Properties struct {
 	ProvisioningState any
 }
 
+type BotChannel_Sku struct {
+	// The name of SKU.
+	Name any
+	// Gets the sku tier. This is based on the SKU name.
+	Tier any
+}
+
 var BotChannel_PropertiesFields = ubx.FieldMap{
 	"ChannelName":       ubx.FieldSpec{WireName: "channel_name"},
 	"Etag":              ubx.FieldSpec{WireName: "etag"},
@@ -21,23 +28,65 @@ var BotChannel_PropertiesFields = ubx.FieldMap{
 	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
 }
 
+var BotChannel_SkuFields = ubx.FieldMap{
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
+
 type BotChannelConfig struct {
+	// Entity Tag.
+	Etag any
+	// Indicates the type of bot service
+	Kind any
+	// Specifies the location of the resource.
+	Location any
 	// Channel definition
 	Properties any
+	// The SKU of the cognitive services account.
+	Sku any
+	// Contains resource tags defined as key/value pairs.
+	Tags any
 }
 
 type BotChannelAttrs struct {
+	// Entity Tag.
+	Etag any
+	// Specifies the resource ID.
+	Id any
+	// Indicates the type of bot service
+	Kind any
+	// Specifies the location of the resource.
+	Location any
+	// Specifies the name of the resource.
+	Name any
 	// Channel definition
 	Properties any
+	// The SKU of the cognitive services account.
+	Sku any
+	// Contains resource tags defined as key/value pairs.
+	Tags any
+	// Specifies the type of the resource.
+	Type any
+	// Entity zones
+	Zones any
 }
 
 var BotChannel = ubx.ResourceBinding{
 	WireType: "azure_botservice_bot_channel",
 	Fields: ubx.FieldMap{
+		"Etag":     ubx.FieldSpec{WireName: "etag"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   BotChannel_PropertiesFields,
 		},
+		"Sku": ubx.FieldSpec{
+			WireName: "sku",
+			Kind:     "object",
+			Fields:   BotChannel_SkuFields,
+		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -123,23 +123,33 @@ _SnapshotPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class SnapshotPolicyConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Snapshot policy properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class SnapshotPolicyAttrs:
     # "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
     etag: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Snapshot policy properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 SnapshotPolicy = ubx.ResourceBinding(
     wire_type="azure_netapp_snapshot_policy",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_SnapshotPolicy_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -85,10 +85,14 @@ _OpenapiDedicatedHsm_SkuFields = {
 
 @dataclasses.dataclass
 class OpenapiDedicatedHsmConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the dedicated hsm
     properties: Any = None
     # SKU of the dedicated HSM
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
     # path parameter, not part of the API's own resource representation
@@ -96,10 +100,14 @@ class OpenapiDedicatedHsmConfig:
 
 @dataclasses.dataclass
 class OpenapiDedicatedHsmAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the dedicated hsm
     properties: Any = None
     # SKU of the dedicated HSM
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
     # path parameter, not part of the API's own resource representation
@@ -108,6 +116,7 @@ class OpenapiDedicatedHsmAttrs:
 OpenapiDedicatedHsm = ubx.ResourceBinding(
     wire_type="azure_hardwaresecuritymodules_openapi_dedicated_hsm",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -118,6 +127,7 @@ OpenapiDedicatedHsm = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiDedicatedHsm_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
         "name": ubx.FieldSpec(wire_name="name"),
     },

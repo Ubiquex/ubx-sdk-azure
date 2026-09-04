@@ -89,8 +89,14 @@ var VirtualnetworkCustomIpPrefix_PropertiesFields = ubx.FieldMap{
 type VirtualnetworkCustomIpPrefixConfig struct {
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Custom IP prefix properties.
 	Properties any
+	// Resource tags.
+	Tags any
 	// A list of availability zones denoting where the resource needs to come from.
 	Zones any
 }
@@ -100,8 +106,18 @@ type VirtualnetworkCustomIpPrefixAttrs struct {
 	Etag any
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Custom IP prefix properties.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 	// A list of availability zones denoting where the resource needs to come from.
 	Zones any
 }
@@ -114,11 +130,14 @@ var VirtualnetworkCustomIpPrefix = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualnetworkCustomIpPrefix_ExtendedLocationFields,
 		},
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkCustomIpPrefix_PropertiesFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

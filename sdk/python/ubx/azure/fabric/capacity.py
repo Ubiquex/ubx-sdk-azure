@@ -48,21 +48,30 @@ _Capacity_SkuFields = {
 
 @dataclasses.dataclass
 class CapacityConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # The Microsoft Fabric capacity properties.
     properties: Any = None
     # Represents the SKU name and Azure pricing tier for Microsoft Fabric capacity resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class CapacityAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # The Microsoft Fabric capacity properties.
     properties: Any = None
     # Represents the SKU name and Azure pricing tier for Microsoft Fabric capacity resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Capacity = ubx.ResourceBinding(
     wire_type="azure_fabric_capacity",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -73,5 +82,6 @@ Capacity = ubx.ResourceBinding(
             kind="object",
             fields=_Capacity_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -167,22 +167,31 @@ const ServiceResource_SkuFields: FieldMap = {
 };
 
 export interface ServiceResourceConfig {
+  /** The GEO location of the resource. */
+  location?: string | Computed<string>;
   /** Service properties payload */
   properties?: ServiceResource_Properties | Computed<ServiceResource_Properties>;
   /** Sku of Azure Spring Apps */
   sku?: ServiceResource_Sku | Computed<ServiceResource_Sku>;
+  /** Tags of the service which is a list of key value pairs that describe the resource. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ServiceResourceAttrs {
+  /** The GEO location of the resource. */
+  location: string;
   /** Service properties payload */
   properties: ServiceResource_Properties;
   /** Sku of Azure Spring Apps */
   sku: ServiceResource_Sku;
+  /** Tags of the service which is a list of key value pairs that describe the resource. */
+  tags: Record<string, string>;
 }
 
 export const ServiceResource: ResourceBinding<ServiceResourceConfig, ServiceResourceAttrs> = {
   wireType: "azure_appplatform_service_resource",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -193,5 +202,6 @@ export const ServiceResource: ResourceBinding<ServiceResourceConfig, ServiceReso
       kind: "object",
       fields: ServiceResource_SkuFields,
     },
+    tags: "tags",
   },
 };

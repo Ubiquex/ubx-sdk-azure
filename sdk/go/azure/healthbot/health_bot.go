@@ -87,19 +87,27 @@ var HealthBot_SkuFields = ubx.FieldMap{
 type HealthBotConfig struct {
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a Azure Health Bot. The Health Bot Service is a cloud platform that empowers developers in Healthcare organizations to build and deploy their compliant, AI-powered virtual health assistants and health bots, that help them improve processes and reduce costs.
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type HealthBotAttrs struct {
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a Azure Health Bot. The Health Bot Service is a cloud platform that empowers developers in Healthcare organizations to build and deploy their compliant, AI-powered virtual health assistants and health bots, that help them improve processes and reduce costs.
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var HealthBot = ubx.ResourceBinding{
@@ -110,6 +118,7 @@ var HealthBot = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   HealthBot_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -120,5 +129,6 @@ var HealthBot = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   HealthBot_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -173,19 +173,27 @@ var OpenapiCluster_SkuFields = ubx.FieldMap{
 type OpenapiClusterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Cluster properties.
 	Properties any
 	// The cluster sku definition.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiClusterAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Cluster properties.
 	Properties any
 	// The cluster sku definition.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiCluster = ubx.ResourceBinding{
@@ -196,6 +204,7 @@ var OpenapiCluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiCluster_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -206,5 +215,6 @@ var OpenapiCluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiCluster_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

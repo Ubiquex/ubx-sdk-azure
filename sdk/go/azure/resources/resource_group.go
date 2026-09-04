@@ -13,27 +13,37 @@ var ResourceGroup_PropertiesFields = ubx.FieldMap{
 }
 
 type ResourceGroupConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The ID of the resource that manages this resource group.
 	ManagedBy any
 	// The resource group properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ResourceGroupAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The ID of the resource that manages this resource group.
 	ManagedBy any
 	// The resource group properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var ResourceGroup = ubx.ResourceBinding{
 	WireType: "azure_resources_resource_group",
 	Fields: ubx.FieldMap{
+		"Location":  ubx.FieldSpec{WireName: "location"},
 		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ResourceGroup_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -32,6 +32,21 @@ type ConfigurationAssignment_Properties struct {
 	ResourceId any
 }
 
+type ConfigurationAssignment_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var ConfigurationAssignment_Properties_Filter_TagSettingsFields = ubx.FieldMap{
 	"FilterOperator": ubx.FieldSpec{WireName: "filter_operator"},
 	"Tags":           ubx.FieldSpec{WireName: "tags"},
@@ -67,10 +82,18 @@ type ConfigurationAssignmentConfig struct {
 }
 
 type ConfigurationAssignmentAttrs struct {
+	// Fully qualified identifier of the resource
+	Id any
 	// Location of the resource
 	Location any
+	// Name of the resource
+	Name any
 	// Properties for configuration assignment
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Type of the resource
+	Type any
 }
 
 var ConfigurationAssignment = ubx.ResourceBinding{

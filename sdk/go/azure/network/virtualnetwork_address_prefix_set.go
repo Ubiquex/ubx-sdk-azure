@@ -16,18 +16,29 @@ var VirtualnetworkAddressPrefixSet_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkAddressPrefixSetConfig struct {
+	// Resource ID.
+	Id any
 	// Properties of address prefix set.
 	Properties any
 }
 
 type VirtualnetworkAddressPrefixSetAttrs struct {
+	// A unique read-only string that changes whenever the resource is updated.
+	Etag any
+	// Resource ID.
+	Id any
+	// Resource name.
+	Name any
 	// Properties of address prefix set.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkAddressPrefixSet = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_address_prefix_set",
 	Fields: ubx.FieldMap{
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

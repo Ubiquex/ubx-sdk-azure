@@ -22,6 +22,8 @@ var ExpressrouteExpressRoutePortAuthorization_PropertiesFields = ubx.FieldMap{
 }
 
 type ExpressrouteExpressRoutePortAuthorizationConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of ExpressRoutePort Authorization.
 	Properties any
 }
@@ -29,13 +31,18 @@ type ExpressrouteExpressRoutePortAuthorizationConfig struct {
 type ExpressrouteExpressRoutePortAuthorizationAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of ExpressRoutePort Authorization.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var ExpressrouteExpressRoutePortAuthorization = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_express_route_port_authorization",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

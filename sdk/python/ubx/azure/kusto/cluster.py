@@ -359,10 +359,14 @@ _Cluster_SkuFields = {
 class ClusterConfig:
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Class representing the Kusto cluster properties.
     properties: Any = None
     # Azure SKU definition.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
@@ -372,10 +376,14 @@ class ClusterAttrs:
     etag: Any = None
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Class representing the Kusto cluster properties.
     properties: Any = None
     # Azure SKU definition.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
@@ -387,6 +395,7 @@ Cluster = ubx.ResourceBinding(
             kind="object",
             fields=_Cluster_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -397,6 +406,7 @@ Cluster = ubx.ResourceBinding(
             kind="object",
             fields=_Cluster_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

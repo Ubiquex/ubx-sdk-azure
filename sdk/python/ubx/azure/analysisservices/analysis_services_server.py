@@ -45,21 +45,46 @@ _AnalysisServicesServer_PropertiesFields = {
 
 @dataclasses.dataclass
 class AnalysisServicesServerConfig:
+    # Location of the Analysis Services resource.
+    location: Any = None
     # Properties of Analysis Services resource.
     properties: Any = None
+    # Represents the SKU name and Azure pricing tier for Analysis Services resource.
+    sku: Any = None
+    # Key-value pairs of additional resource provisioning properties.
+    tags: Any = None
 
 @dataclasses.dataclass
 class AnalysisServicesServerAttrs:
+    # An identifier that represents the Analysis Services resource.
+    id: Any = None
+    # Location of the Analysis Services resource.
+    location: Any = None
+    # The name of the Analysis Services resource.
+    name: Any = None
     # Properties of Analysis Services resource.
     properties: Any = None
+    # Represents the SKU name and Azure pricing tier for Analysis Services resource.
+    sku: Any = None
+    # Key-value pairs of additional resource provisioning properties.
+    tags: Any = None
+    # The type of the Analysis Services resource.
+    type: Any = None
 
 AnalysisServicesServer = ubx.ResourceBinding(
     wire_type="azure_analysisservices_analysis_services_server",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_AnalysisServicesServer_PropertiesFields,
         ),
+        "sku": ubx.FieldSpec(
+            wire_name="sku",
+            kind="object",
+            fields=_AnalysisServicesServer_Properties_SkuFields,
+        ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

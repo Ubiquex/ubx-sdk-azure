@@ -200,8 +200,12 @@ _NetAppAccount_PropertiesFields = {
 class NetAppAccountConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # NetApp account properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class NetAppAccountAttrs:
@@ -209,8 +213,12 @@ class NetAppAccountAttrs:
     etag: Any = None
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # NetApp account properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 NetAppAccount = ubx.ResourceBinding(
     wire_type="azure_netapp_net_app_account",
@@ -220,10 +228,12 @@ NetAppAccount = ubx.ResourceBinding(
             kind="object",
             fields=_NetAppAccount_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_NetAppAccount_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

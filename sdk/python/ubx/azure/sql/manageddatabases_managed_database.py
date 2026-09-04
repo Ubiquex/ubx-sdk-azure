@@ -105,21 +105,31 @@ _ManageddatabasesManagedDatabase_PropertiesFields = {
 
 @dataclasses.dataclass
 class ManageddatabasesManagedDatabaseConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # The managed database's properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ManageddatabasesManagedDatabaseAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # The managed database's properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ManageddatabasesManagedDatabase = ubx.ResourceBinding(
     wire_type="azure_sql_manageddatabases_managed_database",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ManageddatabasesManagedDatabase_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

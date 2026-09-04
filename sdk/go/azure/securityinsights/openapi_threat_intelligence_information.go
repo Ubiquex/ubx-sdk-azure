@@ -172,6 +172,10 @@ var OpenapiThreatIntelligenceInformation_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiThreatIntelligenceInformationConfig struct {
+	// Etag of the azure resource
+	Etag any
+	// The kind of the threat intelligence entity
+	Kind any
 	// Describes threat intelligence entity properties
 	Properties any
 	// path parameter, not part of the API's own resource representation
@@ -192,6 +196,8 @@ type OpenapiThreatIntelligenceInformationAttrs struct {
 var OpenapiThreatIntelligenceInformation = ubx.ResourceBinding{
 	WireType: "azure_securityinsights_openapi_threat_intelligence_information",
 	Fields: ubx.FieldMap{
+		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

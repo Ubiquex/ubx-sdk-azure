@@ -77,17 +77,25 @@ const CustomlocationsCustomLocation_PropertiesFields: FieldMap = {
 export interface CustomlocationsCustomLocationConfig {
   /** Identity for the resource. */
   identity?: CustomlocationsCustomLocation_Identity | Computed<CustomlocationsCustomLocation_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties for a custom location. */
   properties?: CustomlocationsCustomLocation_Properties | Computed<CustomlocationsCustomLocation_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface CustomlocationsCustomLocationAttrs {
   /** Identity for the resource. */
   identity: CustomlocationsCustomLocation_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties for a custom location. */
   properties: CustomlocationsCustomLocation_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: CustomlocationsCustomLocation_SystemData;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const CustomlocationsCustomLocation: ResourceBinding<CustomlocationsCustomLocationConfig, CustomlocationsCustomLocationAttrs> = {
@@ -98,10 +106,12 @@ export const CustomlocationsCustomLocation: ResourceBinding<CustomlocationsCusto
       kind: "object",
       fields: CustomlocationsCustomLocation_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: CustomlocationsCustomLocation_PropertiesFields,
     },
+    tags: "tags",
   },
 };

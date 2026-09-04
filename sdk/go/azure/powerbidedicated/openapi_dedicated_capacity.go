@@ -31,22 +31,31 @@ var OpenapiDedicatedCapacity_SkuFields = ubx.FieldMap{
 }
 
 type OpenapiDedicatedCapacityConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of Dedicated Capacity resource.
 	Properties any
 	// Represents the SKU name and Azure pricing tier for PowerBI Dedicated capacity resource.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiDedicatedCapacityAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of Dedicated Capacity resource.
 	Properties any
 	// Represents the SKU name and Azure pricing tier for PowerBI Dedicated capacity resource.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiDedicatedCapacity = ubx.ResourceBinding{
 	WireType: "azure_powerbidedicated_openapi_dedicated_capacity",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -57,5 +66,6 @@ var OpenapiDedicatedCapacity = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiDedicatedCapacity_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

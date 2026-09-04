@@ -64,22 +64,38 @@ const IntegrationServiceEnvironmentManagedApi_PropertiesFields: FieldMap = {
 };
 
 export interface IntegrationServiceEnvironmentManagedApiConfig {
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** The integration service environment managed api properties. */
   properties?: IntegrationServiceEnvironmentManagedApi_Properties | Computed<IntegrationServiceEnvironmentManagedApi_Properties>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface IntegrationServiceEnvironmentManagedApiAttrs {
+  /** The resource id. */
+  id: string;
+  /** The resource location. */
+  location: string;
+  /** Gets the resource name. */
+  name: string;
   /** The integration service environment managed api properties. */
   properties: IntegrationServiceEnvironmentManagedApi_Properties;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** Gets the resource type. */
+  type: string;
 }
 
 export const IntegrationServiceEnvironmentManagedApi: ResourceBinding<IntegrationServiceEnvironmentManagedApiConfig, IntegrationServiceEnvironmentManagedApiAttrs> = {
   wireType: "azure_logic_integration_service_environment_managed_api",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: IntegrationServiceEnvironmentManagedApi_PropertiesFields,
     },
+    tags: "tags",
   },
 };

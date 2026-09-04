@@ -12078,24 +12078,43 @@ const VirtualnetworkNetworkProfile_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkNetworkProfileConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Network profile properties. */
   properties?: VirtualnetworkNetworkProfile_Properties | Computed<VirtualnetworkNetworkProfile_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkNetworkProfileAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Network profile properties. */
   properties: VirtualnetworkNetworkProfile_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkNetworkProfile: ResourceBinding<VirtualnetworkNetworkProfileConfig, VirtualnetworkNetworkProfileAttrs> = {
   wireType: "azure_network_virtualnetwork_network_profile",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkNetworkProfile_PropertiesFields,
     },
+    tags: "tags",
   },
 };

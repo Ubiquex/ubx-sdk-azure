@@ -31,6 +31,21 @@ class OpenapiPrivateEndpointConnection_Properties:
     # The current provisioning state.
     provisioning_state: Any = None
 
+@dataclasses.dataclass
+class OpenapiPrivateEndpointConnection_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _OpenapiPrivateEndpointConnection_Properties_PrivateEndpointFields = {
     "id": ubx.FieldSpec(wire_name="id"),
 }
@@ -63,8 +78,16 @@ class OpenapiPrivateEndpointConnectionConfig:
 
 @dataclasses.dataclass
 class OpenapiPrivateEndpointConnectionAttrs:
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     # Properties of the private endpoint connection.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 OpenapiPrivateEndpointConnection = ubx.ResourceBinding(
     wire_type="azure_mysql_openapi_private_endpoint_connection",

@@ -79,10 +79,18 @@ class NetworkmanagerSecurityUserRuleConfig:
 
 @dataclasses.dataclass
 class NetworkmanagerSecurityUserRuleAttrs:
+    # A unique read-only string that changes whenever the resource is updated.
+    etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource name.
+    name: Any = None
     # Security rule resource.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource type.
+    type: Any = None
 
 NetworkmanagerSecurityUserRule = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_security_user_rule",

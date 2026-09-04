@@ -122,15 +122,23 @@ _Pool_PropertiesFields = {
 class PoolConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Pool properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class PoolAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Pool properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Pool = ubx.ResourceBinding(
     wire_type="azure_devopsinfrastructure_pool",
@@ -140,10 +148,12 @@ Pool = ubx.ResourceBinding(
             kind="object",
             fields=_Pool_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Pool_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

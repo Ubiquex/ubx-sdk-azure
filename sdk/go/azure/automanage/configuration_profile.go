@@ -28,24 +28,34 @@ var ConfigurationProfile_PropertiesFields = ubx.FieldMap{
 }
 
 type ConfigurationProfileConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Automanage configuration profile properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ConfigurationProfileAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Automanage configuration profile properties.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource tags.
+	Tags any
 }
 
 var ConfigurationProfile = ubx.ResourceBinding{
 	WireType: "azure_automanage_configuration_profile",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ConfigurationProfile_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

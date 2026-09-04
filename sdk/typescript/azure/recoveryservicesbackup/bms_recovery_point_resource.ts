@@ -23,6 +23,21 @@ export interface BmsRecoveryPointResource_Properties {
   threatStatus?: string | Computed<string>;
 }
 
+export interface BmsRecoveryPointResource_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const BmsRecoveryPointResource_Properties_ThreatInfoFields: FieldMap = {
   lastUpdatedTime: "last_updated_time",
   threatDescription: "threat_description",
@@ -59,12 +74,20 @@ export interface BmsRecoveryPointResourceConfig {
 export interface BmsRecoveryPointResourceAttrs {
   /** Optional ETag. */
   eTag: string;
+  /** Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} */
+  id: string;
   /** Represents an Azure geography region where supported resource providers live. */
   location: string;
+  /** The name of the resource */
+  name: string;
   /** Base class for restore request. Workload-specific restore requests are derived from this class. */
   properties: BmsRecoveryPointResource_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: BmsRecoveryPointResource_SystemData;
   /** Resource tags. */
   tags: Record<string, string>;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const BmsRecoveryPointResource: ResourceBinding<BmsRecoveryPointResourceConfig, BmsRecoveryPointResourceAttrs> = {

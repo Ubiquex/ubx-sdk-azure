@@ -152,6 +152,8 @@ var VirtualwanNetworkVirtualApplianceConnection_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanNetworkVirtualApplianceConnectionConfig struct {
+	// Resource ID.
+	Id any
 	// The name of the resource.
 	Name any
 	// Properties of the NetworkVirtualApplianceConnection subresource.
@@ -159,6 +161,8 @@ type VirtualwanNetworkVirtualApplianceConnectionConfig struct {
 }
 
 type VirtualwanNetworkVirtualApplianceConnectionAttrs struct {
+	// Resource ID.
+	Id any
 	// The name of the resource.
 	Name any
 	// Properties of the NetworkVirtualApplianceConnection subresource.
@@ -168,6 +172,7 @@ type VirtualwanNetworkVirtualApplianceConnectionAttrs struct {
 var VirtualwanNetworkVirtualApplianceConnection = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_network_virtual_appliance_connection",
 	Fields: ubx.FieldMap{
+		"Id":   ubx.FieldSpec{WireName: "id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",

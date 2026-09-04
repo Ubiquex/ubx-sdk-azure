@@ -183,23 +183,42 @@ _ExpressrouteExpressRouteCrossConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCrossConnectionConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Properties of ExpressRouteCrossConnection.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCrossConnectionAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of ExpressRouteCrossConnection.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 ExpressrouteExpressRouteCrossConnection = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_express_route_cross_connection",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ExpressrouteExpressRouteCrossConnection_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

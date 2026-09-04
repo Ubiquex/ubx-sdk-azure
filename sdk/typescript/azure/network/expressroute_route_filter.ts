@@ -334,24 +334,43 @@ const ExpressrouteRouteFilter_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteRouteFilterConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Route Filter Resource. */
   properties?: ExpressrouteRouteFilter_Properties | Computed<ExpressrouteRouteFilter_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ExpressrouteRouteFilterAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Route Filter Resource. */
   properties: ExpressrouteRouteFilter_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const ExpressrouteRouteFilter: ResourceBinding<ExpressrouteRouteFilterConfig, ExpressrouteRouteFilterAttrs> = {
   wireType: "azure_network_expressroute_route_filter",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ExpressrouteRouteFilter_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -30,22 +30,32 @@ const CodesigningaccountCodeSigningAccount_PropertiesFields: FieldMap = {
 };
 
 export interface CodesigningaccountCodeSigningAccountConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the artifact signing account. */
   properties?: CodesigningaccountCodeSigningAccount_Properties | Computed<CodesigningaccountCodeSigningAccount_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface CodesigningaccountCodeSigningAccountAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the artifact signing account. */
   properties: CodesigningaccountCodeSigningAccount_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const CodesigningaccountCodeSigningAccount: ResourceBinding<CodesigningaccountCodeSigningAccountConfig, CodesigningaccountCodeSigningAccountAttrs> = {
   wireType: "azure_codesigning_codesigningaccount_code_signing_account",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: CodesigningaccountCodeSigningAccount_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -88,10 +88,16 @@ var VirtualnetworkNatGateway_SkuFields = ubx.FieldMap{
 }
 
 type VirtualnetworkNatGatewayConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Nat Gateway properties.
 	Properties any
 	// SKU of nat gateway.
 	Sku any
+	// Resource tags.
+	Tags any
 	// A list of availability zones denoting the zone in which Nat Gateway should be deployed.
 	Zones any
 }
@@ -99,10 +105,20 @@ type VirtualnetworkNatGatewayConfig struct {
 type VirtualnetworkNatGatewayAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Nat Gateway properties.
 	Properties any
 	// SKU of nat gateway.
 	Sku any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 	// A list of availability zones denoting the zone in which Nat Gateway should be deployed.
 	Zones any
 }
@@ -110,6 +126,8 @@ type VirtualnetworkNatGatewayAttrs struct {
 var VirtualnetworkNatGateway = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_nat_gateway",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -120,6 +138,7 @@ var VirtualnetworkNatGateway = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualnetworkNatGateway_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

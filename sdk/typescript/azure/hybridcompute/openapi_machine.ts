@@ -860,8 +860,12 @@ export interface OpenapiMachineConfig {
   identity?: OpenapiMachine_Identity | Computed<OpenapiMachine_Identity>;
   /** Indicates which kind of Arc machine placement on-premises, such as HCI, SCVMM or VMware etc. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describes the properties of a hybrid machine. */
   properties?: OpenapiMachine_Properties | Computed<OpenapiMachine_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiMachineAttrs {
@@ -869,10 +873,14 @@ export interface OpenapiMachineAttrs {
   identity: OpenapiMachine_Identity;
   /** Indicates which kind of Arc machine placement on-premises, such as HCI, SCVMM or VMware etc. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describes the properties of a hybrid machine. */
   properties: OpenapiMachine_Properties;
   /** The list of extensions affiliated to the machine */
   resources: OpenapiMachine_Resources[];
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiMachine: ResourceBinding<OpenapiMachineConfig, OpenapiMachineAttrs> = {
@@ -884,10 +892,12 @@ export const OpenapiMachine: ResourceBinding<OpenapiMachineConfig, OpenapiMachin
       fields: OpenapiMachine_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiMachine_PropertiesFields,
     },
+    tags: "tags",
   },
 };

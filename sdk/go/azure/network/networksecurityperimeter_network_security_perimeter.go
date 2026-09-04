@@ -16,22 +16,32 @@ var NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields = ubx.Fiel
 }
 
 type NetworksecurityperimeterNetworkSecurityPerimeterConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of network security perimeter.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type NetworksecurityperimeterNetworkSecurityPerimeterAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of network security perimeter.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var NetworksecurityperimeterNetworkSecurityPerimeter = ubx.ResourceBinding{
 	WireType: "azure_network_networksecurityperimeter_network_security_perimeter",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

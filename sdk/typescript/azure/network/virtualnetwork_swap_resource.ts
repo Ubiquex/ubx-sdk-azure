@@ -16,8 +16,14 @@ export interface VirtualnetworkSwapResourceConfig {
 }
 
 export interface VirtualnetworkSwapResourceAttrs {
+  /** Resource ID. */
+  id: string;
+  /** Resource name. */
+  name: string;
   /** Swap resource properties */
   properties: VirtualnetworkSwapResource_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkSwapResource: ResourceBinding<VirtualnetworkSwapResourceConfig, VirtualnetworkSwapResourceAttrs> = {

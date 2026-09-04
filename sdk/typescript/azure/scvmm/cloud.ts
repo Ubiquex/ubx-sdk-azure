@@ -87,15 +87,23 @@ const Cloud_PropertiesFields: FieldMap = {
 export interface CloudConfig {
   /** The extended location. */
   extendedLocation: Cloud_ExtendedLocation | Computed<Cloud_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Defines the resource properties. */
   properties?: Cloud_Properties | Computed<Cloud_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface CloudAttrs {
   /** The extended location. */
   extendedLocation: Cloud_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Defines the resource properties. */
   properties: Cloud_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Cloud: ResourceBinding<CloudConfig, CloudAttrs> = {
@@ -106,10 +114,12 @@ export const Cloud: ResourceBinding<CloudConfig, CloudAttrs> = {
       kind: "object",
       fields: Cloud_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Cloud_PropertiesFields,
     },
+    tags: "tags",
   },
 };

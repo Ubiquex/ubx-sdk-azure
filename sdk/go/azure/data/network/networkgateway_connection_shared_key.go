@@ -8,6 +8,8 @@ type NetworkgatewayConnectionSharedKeyConfig struct {
 }
 
 type NetworkgatewayConnectionSharedKeyAttrs struct {
+	// Resource ID.
+	Id any
 	// The virtual network connection shared key value.
 	Value                               any
 	VirtualNetworkGatewayConnectionName any

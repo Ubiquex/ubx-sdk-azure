@@ -137,7 +137,17 @@ class FirewallpolicyFirewallPolicyDraftConfig:
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicyDraftAttrs:
     firewall_policy_name: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 FirewallpolicyFirewallPolicyDraft = ubx.DataSourceBinding(
     wire_type="azure_network_firewallpolicy_firewall_policy_draft",

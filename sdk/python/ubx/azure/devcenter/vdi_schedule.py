@@ -11,6 +11,21 @@ class VdiSchedule_Properties:
     # Provisioning state of the resource.
     provisioning_state: Any = None
 
+@dataclasses.dataclass
+class VdiSchedule_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _VdiSchedule_PropertiesFields = {
     "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
 }
@@ -22,8 +37,16 @@ class VdiScheduleConfig:
 
 @dataclasses.dataclass
 class VdiScheduleAttrs:
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     # The Schedule properties defining when and what to execute.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 VdiSchedule = ubx.ResourceBinding(
     wire_type="azure_devcenter_vdi_schedule",

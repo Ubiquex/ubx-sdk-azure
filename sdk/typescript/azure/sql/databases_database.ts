@@ -228,10 +228,14 @@ const DatabasesDatabase_PropertiesFields: FieldMap = {
 export interface DatabasesDatabaseConfig {
   /** Azure Active Directory identity configuration for a resource. */
   identity?: DatabasesDatabase_Identity | Computed<DatabasesDatabase_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The database's properties. */
   properties?: DatabasesDatabase_Properties | Computed<DatabasesDatabase_Properties>;
   /** An ARM Resource SKU. */
   sku?: DatabasesDatabase_Properties_CurrentSku | Computed<DatabasesDatabase_Properties_CurrentSku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface DatabasesDatabaseAttrs {
@@ -239,12 +243,16 @@ export interface DatabasesDatabaseAttrs {
   identity: DatabasesDatabase_Identity;
   /** Kind of database. This is metadata used for the Azure portal experience. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Resource that manages the database. */
   managedBy: string;
   /** The database's properties. */
   properties: DatabasesDatabase_Properties;
   /** An ARM Resource SKU. */
   sku: DatabasesDatabase_Properties_CurrentSku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const DatabasesDatabase: ResourceBinding<DatabasesDatabaseConfig, DatabasesDatabaseAttrs> = {
@@ -255,6 +263,7 @@ export const DatabasesDatabase: ResourceBinding<DatabasesDatabaseConfig, Databas
       kind: "object",
       fields: DatabasesDatabase_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -265,5 +274,6 @@ export const DatabasesDatabase: ResourceBinding<DatabasesDatabaseConfig, Databas
       kind: "object",
       fields: DatabasesDatabase_Properties_CurrentSkuFields,
     },
+    tags: "tags",
   },
 };

@@ -469,8 +469,12 @@ export interface HciClusterConfig {
   identity?: HciCluster_Identity | Computed<HciCluster_Identity>;
   /** This property identifies the purpose of the Cluster deployment. For example, a valid value is AzureLocal */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Cluster properties. */
   properties?: HciCluster_Properties | Computed<HciCluster_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface HciClusterAttrs {
@@ -478,8 +482,12 @@ export interface HciClusterAttrs {
   identity: HciCluster_Identity;
   /** This property identifies the purpose of the Cluster deployment. For example, a valid value is AzureLocal */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Cluster properties. */
   properties: HciCluster_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const HciCluster: ResourceBinding<HciClusterConfig, HciClusterAttrs> = {
@@ -491,10 +499,12 @@ export const HciCluster: ResourceBinding<HciClusterConfig, HciClusterAttrs> = {
       fields: HciCluster_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: HciCluster_PropertiesFields,
     },
+    tags: "tags",
   },
 };

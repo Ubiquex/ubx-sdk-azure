@@ -105,22 +105,31 @@ var Namespace_SkuFields = ubx.FieldMap{
 }
 
 type NamespaceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the namespace.
 	Properties any
 	// SKU of the namespace.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type NamespaceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the namespace.
 	Properties any
 	// SKU of the namespace.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var Namespace = ubx.ResourceBinding{
 	WireType: "azure_relay_namespace",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -131,5 +140,6 @@ var Namespace = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Namespace_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

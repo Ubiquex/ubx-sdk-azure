@@ -24,6 +24,21 @@ export interface PrivateEndpointConnection_Properties {
   provisioningState?: string | Computed<string>;
 }
 
+export interface PrivateEndpointConnection_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const PrivateEndpointConnection_Properties_PrivateEndpointFields: FieldMap = {
   id: "id",
 };
@@ -54,8 +69,16 @@ export interface PrivateEndpointConnectionConfig {
 }
 
 export interface PrivateEndpointConnectionAttrs {
+  /** Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} */
+  id: string;
+  /** The name of the resource */
+  name: string;
   /** Properties of the PrivateEndpointConnectProperties. */
   properties: PrivateEndpointConnection_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: PrivateEndpointConnection_SystemData;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const PrivateEndpointConnection: ResourceBinding<PrivateEndpointConnectionConfig, PrivateEndpointConnectionAttrs> = {

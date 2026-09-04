@@ -1700,10 +1700,14 @@ export interface ManagedclustersManagedClusterConfig {
   identity?: ManagedclustersManagedCluster_Identity | Computed<ManagedclustersManagedCluster_Identity>;
   /** This is primarily used to expose different UI experiences in the portal for different kinds */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the managed cluster. */
   properties?: ManagedclustersManagedCluster_Properties | Computed<ManagedclustersManagedCluster_Properties>;
   /** The SKU of a Managed Cluster. */
   sku?: ManagedclustersManagedCluster_Sku | Computed<ManagedclustersManagedCluster_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ManagedclustersManagedClusterAttrs {
@@ -1715,10 +1719,14 @@ export interface ManagedclustersManagedClusterAttrs {
   identity: ManagedclustersManagedCluster_Identity;
   /** This is primarily used to expose different UI experiences in the portal for different kinds */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the managed cluster. */
   properties: ManagedclustersManagedCluster_Properties;
   /** The SKU of a Managed Cluster. */
   sku: ManagedclustersManagedCluster_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ManagedclustersManagedCluster: ResourceBinding<ManagedclustersManagedClusterConfig, ManagedclustersManagedClusterAttrs> = {
@@ -1735,6 +1743,7 @@ export const ManagedclustersManagedCluster: ResourceBinding<ManagedclustersManag
       fields: ManagedclustersManagedCluster_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -1745,5 +1754,6 @@ export const ManagedclustersManagedCluster: ResourceBinding<ManagedclustersManag
       kind: "object",
       fields: ManagedclustersManagedCluster_SkuFields,
     },
+    tags: "tags",
   },
 };

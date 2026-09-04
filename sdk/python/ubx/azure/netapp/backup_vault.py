@@ -17,21 +17,31 @@ _BackupVault_PropertiesFields = {
 
 @dataclasses.dataclass
 class BackupVaultConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Backup Vault properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class BackupVaultAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Backup Vault properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 BackupVault = ubx.ResourceBinding(
     wire_type="azure_netapp_backup_vault",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_BackupVault_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

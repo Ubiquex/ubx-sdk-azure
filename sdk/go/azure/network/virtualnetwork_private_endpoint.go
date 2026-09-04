@@ -12627,8 +12627,14 @@ var VirtualnetworkPrivateEndpoint_PropertiesFields = ubx.FieldMap{
 type VirtualnetworkPrivateEndpointConfig struct {
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Properties of the private endpoint.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkPrivateEndpointAttrs struct {
@@ -12636,8 +12642,18 @@ type VirtualnetworkPrivateEndpointAttrs struct {
 	Etag any
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties of the private endpoint.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkPrivateEndpoint = ubx.ResourceBinding{
@@ -12648,10 +12664,13 @@ var VirtualnetworkPrivateEndpoint = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualnetworkPrivateEndpoint_ExtendedLocationFields,
 		},
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkPrivateEndpoint_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

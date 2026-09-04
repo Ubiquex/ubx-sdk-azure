@@ -26,22 +26,32 @@ const OpenapiGateway_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiGatewayConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describes the properties of a Gateway Profile. */
   properties?: OpenapiGateway_Properties | Computed<OpenapiGateway_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiGatewayAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describes the properties of a Gateway Profile. */
   properties: OpenapiGateway_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiGateway: ResourceBinding<OpenapiGatewayConfig, OpenapiGatewayAttrs> = {
   wireType: "azure_hybridcompute_openapi_gateway",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiGateway_PropertiesFields,
     },
+    tags: "tags",
   },
 };

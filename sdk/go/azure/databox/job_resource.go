@@ -791,19 +791,27 @@ var JobResource_SkuFields = ubx.FieldMap{
 type JobResourceConfig struct {
 	// Msi identity details of the resource
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Job Properties
 	Properties any
 	// The Sku.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type JobResourceAttrs struct {
 	// Msi identity details of the resource
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Job Properties
 	Properties any
 	// The Sku.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var JobResource = ubx.ResourceBinding{
@@ -814,6 +822,7 @@ var JobResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   JobResource_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -824,5 +833,6 @@ var JobResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   JobResource_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

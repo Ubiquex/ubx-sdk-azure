@@ -10,6 +10,21 @@ export interface PrivateLinkResource2_Properties {
   requiredZoneNames?: string[] | Computed<string[]>;
 }
 
+export interface PrivateLinkResource2_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 export interface PrivateLinkResource2Config {
   accountName: string | Computed<string>;
   groupId: string | Computed<string>;
@@ -18,8 +33,16 @@ export interface PrivateLinkResource2Config {
 export interface PrivateLinkResource2Attrs {
   accountName: string;
   groupId: string;
+  /** Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}" */
+  id: string;
+  /** The name of the resource */
+  name: string;
   /** Properties of a private link resource. */
   properties: PrivateLinkResource2_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: PrivateLinkResource2_SystemData;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const PrivateLinkResource2: DataSourceBinding<PrivateLinkResource2Config, PrivateLinkResource2Attrs> = {

@@ -91,6 +91,8 @@ type BackupInstanceResourceConfig struct {
 }
 
 type BackupInstanceResourceAttrs struct {
+	// The uri to fetch the next page of resources. Call ListNext() fetches next page of resources.
+	NextLink any
 	// List of resources.
 	Value     any
 	VaultName any

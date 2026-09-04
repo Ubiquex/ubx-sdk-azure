@@ -57,19 +57,23 @@ class OpenapiCustomHostnameAnalysisResult_Properties:
 @dataclasses.dataclass
 class OpenapiCustomHostnameAnalysisResultConfig:
     host_name: Any = None
-    name: Any = None
 
 @dataclasses.dataclass
 class OpenapiCustomHostnameAnalysisResultAttrs:
     host_name: Any = None
+    # Resource Id.
+    id: Any = None
+    # Kind of resource.
+    kind: Any = None
     name: Any = None
     # CustomHostnameAnalysisResult resource specific properties
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 OpenapiCustomHostnameAnalysisResult = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_custom_hostname_analysis_result",
     fields={
         "host_name": ubx.FieldSpec(wire_name="host_name"),
-        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

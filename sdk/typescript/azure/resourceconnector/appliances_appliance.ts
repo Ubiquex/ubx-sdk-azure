@@ -56,15 +56,23 @@ const AppliancesAppliance_PropertiesFields: FieldMap = {
 export interface AppliancesApplianceConfig {
   /** Identity for the resource. */
   identity?: AppliancesAppliance_Identity | Computed<AppliancesAppliance_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties for an appliance. */
   properties?: AppliancesAppliance_Properties | Computed<AppliancesAppliance_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface AppliancesApplianceAttrs {
   /** Identity for the resource. */
   identity: AppliancesAppliance_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties for an appliance. */
   properties: AppliancesAppliance_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const AppliancesAppliance: ResourceBinding<AppliancesApplianceConfig, AppliancesApplianceAttrs> = {
@@ -75,10 +83,12 @@ export const AppliancesAppliance: ResourceBinding<AppliancesApplianceConfig, App
       kind: "object",
       fields: AppliancesAppliance_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: AppliancesAppliance_PropertiesFields,
     },
+    tags: "tags",
   },
 };

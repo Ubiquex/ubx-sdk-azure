@@ -88,24 +88,43 @@ const InterconnectgroupInterconnectGroup_PropertiesFields: FieldMap = {
 };
 
 export interface InterconnectgroupInterconnectGroupConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Interconnect group properties. */
   properties?: InterconnectgroupInterconnectGroup_Properties | Computed<InterconnectgroupInterconnectGroup_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface InterconnectgroupInterconnectGroupAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Interconnect group properties. */
   properties: InterconnectgroupInterconnectGroup_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const InterconnectgroupInterconnectGroup: ResourceBinding<InterconnectgroupInterconnectGroupConfig, InterconnectgroupInterconnectGroupAttrs> = {
   wireType: "azure_network_interconnectgroup_interconnect_group",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: InterconnectgroupInterconnectGroup_PropertiesFields,
     },
+    tags: "tags",
   },
 };

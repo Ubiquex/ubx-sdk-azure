@@ -74,15 +74,23 @@ var HostGroup_PropertiesFields = ubx.FieldMap{
 }
 
 type HostGroupConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Dedicated Host Group Properties.
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
 
 type HostGroupAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Dedicated Host Group Properties.
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -90,11 +98,13 @@ type HostGroupAttrs struct {
 var HostGroup = ubx.ResourceBinding{
 	WireType: "azure_dedicated_host_group",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   HostGroup_PropertiesFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

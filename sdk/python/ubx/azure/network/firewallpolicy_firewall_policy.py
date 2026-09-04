@@ -398,32 +398,51 @@ _FirewallpolicyFirewallPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicyConfig:
+    # Resource ID.
+    id: Any = None
     # Identity for the resource.
     identity: Any = None
+    # Resource location.
+    location: Any = None
     # Firewall Policy definition.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicyAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
     # Identity for the resource.
     identity: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Firewall Policy definition.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 FirewallpolicyFirewallPolicy = ubx.ResourceBinding(
     wire_type="azure_network_firewallpolicy_firewall_policy",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",
             fields=_FirewallpolicyFirewallPolicy_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_FirewallpolicyFirewallPolicy_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

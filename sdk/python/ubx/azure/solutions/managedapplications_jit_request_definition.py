@@ -47,6 +47,21 @@ class ManagedapplicationsJitRequestDefinition_Properties:
     # The application client details to track the entity creating/updating the managed app resource.
     updated_by: Any = None
 
+@dataclasses.dataclass
+class ManagedapplicationsJitRequestDefinition_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _ManagedapplicationsJitRequestDefinition_Properties_CreatedByFields = {
     "application_id": ubx.FieldSpec(wire_name="application_id"),
     "oid": ubx.FieldSpec(wire_name="oid"),
@@ -93,21 +108,39 @@ _ManagedapplicationsJitRequestDefinition_PropertiesFields = {
 
 @dataclasses.dataclass
 class ManagedapplicationsJitRequestDefinitionConfig:
+    # Resource location
+    location: Any = None
     # Information about JIT request properties
     properties: Any = None
+    # Resource tags
+    tags: Any = None
 
 @dataclasses.dataclass
 class ManagedapplicationsJitRequestDefinitionAttrs:
+    # Resource ID
+    id: Any = None
+    # Resource location
+    location: Any = None
+    # Resource name
+    name: Any = None
     # Information about JIT request properties
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Resource tags
+    tags: Any = None
+    # Resource type
+    type: Any = None
 
 ManagedapplicationsJitRequestDefinition = ubx.ResourceBinding(
     wire_type="azure_solutions_managedapplications_jit_request_definition",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ManagedapplicationsJitRequestDefinition_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

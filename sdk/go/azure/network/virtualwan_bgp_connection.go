@@ -153,6 +153,8 @@ var VirtualwanBgpConnection_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanBgpConnectionConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of the bgp connection.
 	Properties any
 }
@@ -160,13 +162,18 @@ type VirtualwanBgpConnectionConfig struct {
 type VirtualwanBgpConnectionAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of the bgp connection.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualwanBgpConnection = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_bgp_connection",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

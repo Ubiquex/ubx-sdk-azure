@@ -203,22 +203,38 @@ var ContainerserviceContainerService_PropertiesFields = ubx.FieldMap{
 }
 
 type ContainerserviceContainerServiceConfig struct {
+	// Resource location
+	Location any
 	// Properties of the container service.
 	Properties any
+	// Resource tags
+	Tags any
 }
 
 type ContainerserviceContainerServiceAttrs struct {
+	// Resource Id
+	Id any
+	// Resource location
+	Location any
+	// Resource name
+	Name any
 	// Properties of the container service.
 	Properties any
+	// Resource tags
+	Tags any
+	// Resource type
+	Type any
 }
 
 var ContainerserviceContainerService = ubx.ResourceBinding{
 	WireType: "azure_compute_containerservice_container_service",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ContainerserviceContainerService_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

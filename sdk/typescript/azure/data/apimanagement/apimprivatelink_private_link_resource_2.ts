@@ -15,9 +15,15 @@ export interface ApimprivatelinkPrivateLinkResource2Config {
 }
 
 export interface ApimprivatelinkPrivateLinkResource2Attrs {
+  /** Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} */
+  id: string;
+  /** The name of the resource */
+  name: string;
   privateLinkSubResourceName: string;
   /** Properties of a private link resource. */
   properties: ApimprivatelinkPrivateLinkResource2_Properties;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const ApimprivatelinkPrivateLinkResource2: DataSourceBinding<ApimprivatelinkPrivateLinkResource2Config, ApimprivatelinkPrivateLinkResource2Attrs> = {

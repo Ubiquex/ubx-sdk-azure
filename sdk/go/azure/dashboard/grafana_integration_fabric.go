@@ -21,20 +21,30 @@ var GrafanaIntegrationFabric_PropertiesFields = ubx.FieldMap{
 }
 
 type GrafanaIntegrationFabricConfig struct {
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type GrafanaIntegrationFabricAttrs struct {
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var GrafanaIntegrationFabric = ubx.ResourceBinding{
 	WireType: "azure_dashboard_grafana_integration_fabric",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   GrafanaIntegrationFabric_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

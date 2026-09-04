@@ -110,22 +110,32 @@ var SapvirtualinstanceSapdatabaseInstance_PropertiesFields = ubx.FieldMap{
 }
 
 type SapvirtualinstanceSapdatabaseInstanceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Defines the Database properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type SapvirtualinstanceSapdatabaseInstanceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Defines the Database properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var SapvirtualinstanceSapdatabaseInstance = ubx.ResourceBinding{
 	WireType: "azure_workloads_sapvirtualinstance_sapdatabase_instance",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   SapvirtualinstanceSapdatabaseInstance_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -347,15 +347,23 @@ var Workspace_PropertiesFields = ubx.FieldMap{
 type WorkspaceConfig struct {
 	// The workspace managed identity
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Workspace properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type WorkspaceAttrs struct {
 	// The workspace managed identity
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Workspace properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var Workspace = ubx.ResourceBinding{
@@ -366,10 +374,12 @@ var Workspace = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Workspace_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Workspace_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

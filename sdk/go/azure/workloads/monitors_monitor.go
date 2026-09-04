@@ -178,15 +178,23 @@ var MonitorsMonitor_PropertiesFields = ubx.FieldMap{
 type MonitorsMonitorConfig struct {
 	// A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a SAP monitor.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type MonitorsMonitorAttrs struct {
 	// A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a SAP monitor.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var MonitorsMonitor = ubx.ResourceBinding{
@@ -197,10 +205,12 @@ var MonitorsMonitor = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   MonitorsMonitor_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   MonitorsMonitor_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

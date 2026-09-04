@@ -190,8 +190,12 @@ var ExpressrouteExpressRouteLag_PropertiesFields = ubx.FieldMap{
 type ExpressrouteExpressRouteLagConfig struct {
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
 	// Properties specific to ExpressRouteLag resources.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ExpressrouteExpressRouteLagAttrs struct {
@@ -201,8 +205,14 @@ type ExpressrouteExpressRouteLagAttrs struct {
 	Id any
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties specific to ExpressRouteLag resources.
 	Properties any
+	// Resource tags.
+	Tags any
 	// The type of the resource.
 	Type any
 }
@@ -215,10 +225,12 @@ var ExpressrouteExpressRouteLag = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ExpressrouteExpressRouteLag_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ExpressrouteExpressRouteLag_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

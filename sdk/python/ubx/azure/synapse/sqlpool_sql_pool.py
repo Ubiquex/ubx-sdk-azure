@@ -62,21 +62,30 @@ _SqlpoolSqlPool_SkuFields = {
 
 @dataclasses.dataclass
 class SqlpoolSqlPoolConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a SQL Analytics pool
     properties: Any = None
     # SQL pool SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class SqlpoolSqlPoolAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a SQL Analytics pool
     properties: Any = None
     # SQL pool SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 SqlpoolSqlPool = ubx.ResourceBinding(
     wire_type="azure_synapse_sqlpool_sql_pool",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -87,5 +96,6 @@ SqlpoolSqlPool = ubx.ResourceBinding(
             kind="object",
             fields=_SqlpoolSqlPool_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

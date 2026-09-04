@@ -40,10 +40,18 @@ export interface NetworkmanagerNetworkManagerRoutingConfigurationConfig {
 }
 
 export interface NetworkmanagerNetworkManagerRoutingConfigurationAttrs {
+  /** A unique read-only string that changes whenever the resource is updated. */
+  etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource name. */
+  name: string;
   /** Defines the routing configuration properties. */
   properties: NetworkmanagerNetworkManagerRoutingConfiguration_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: NetworkmanagerNetworkManagerRoutingConfiguration_SystemData;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkmanagerNetworkManagerRoutingConfiguration: ResourceBinding<NetworkmanagerNetworkManagerRoutingConfigurationConfig, NetworkmanagerNetworkManagerRoutingConfigurationAttrs> = {

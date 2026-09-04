@@ -68,19 +68,27 @@ var JobagentsJobAgent_SkuFields = ubx.FieldMap{
 type JobagentsJobAgentConfig struct {
 	// Azure Active Directory identity configuration for a resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a job agent.
 	Properties any
 	// An ARM Resource SKU.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type JobagentsJobAgentAttrs struct {
 	// Azure Active Directory identity configuration for a resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a job agent.
 	Properties any
 	// An ARM Resource SKU.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var JobagentsJobAgent = ubx.ResourceBinding{
@@ -91,6 +99,7 @@ var JobagentsJobAgent = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   JobagentsJobAgent_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -101,5 +110,6 @@ var JobagentsJobAgent = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   JobagentsJobAgent_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

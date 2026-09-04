@@ -819,22 +819,32 @@ const PointCollection_PropertiesFields: FieldMap = {
 };
 
 export interface PointCollectionConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The restore point collection properties. */
   properties?: PointCollection_Properties | Computed<PointCollection_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface PointCollectionAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The restore point collection properties. */
   properties: PointCollection_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const PointCollection: ResourceBinding<PointCollectionConfig, PointCollectionAttrs> = {
   wireType: "azure_restore_point_collection",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: PointCollection_PropertiesFields,
     },
+    tags: "tags",
   },
 };

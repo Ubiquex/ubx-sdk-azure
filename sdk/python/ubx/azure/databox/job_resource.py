@@ -797,19 +797,27 @@ _JobResource_SkuFields = {
 class JobResourceConfig:
     # Msi identity details of the resource
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Job Properties
     properties: Any = None
     # The Sku.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class JobResourceAttrs:
     # Msi identity details of the resource
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Job Properties
     properties: Any = None
     # The Sku.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 JobResource = ubx.ResourceBinding(
     wire_type="azure_databox_job_resource",
@@ -819,6 +827,7 @@ JobResource = ubx.ResourceBinding(
             kind="object",
             fields=_JobResource_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -829,5 +838,6 @@ JobResource = ubx.ResourceBinding(
             kind="object",
             fields=_JobResource_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

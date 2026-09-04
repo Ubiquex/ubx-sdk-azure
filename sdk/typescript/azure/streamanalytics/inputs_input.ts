@@ -72,18 +72,27 @@ const InputsInput_PropertiesFields: FieldMap = {
 };
 
 export interface InputsInputConfig {
+  /** Resource name */
+  name?: string | Computed<string>;
   /** The properties that are associated with an input. */
   properties?: InputsInput_Properties | Computed<InputsInput_Properties>;
 }
 
 export interface InputsInputAttrs {
+  /** Resource Id */
+  id: string;
+  /** Resource name */
+  name: string;
   /** The properties that are associated with an input. */
   properties: InputsInput_Properties;
+  /** Resource type */
+  type: string;
 }
 
 export const InputsInput: ResourceBinding<InputsInputConfig, InputsInputAttrs> = {
   wireType: "azure_streamanalytics_inputs_input",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

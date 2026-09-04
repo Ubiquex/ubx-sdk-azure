@@ -28,22 +28,32 @@ var OpenapiGateway_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiGatewayConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Gateway Profile.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiGatewayAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Gateway Profile.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiGateway = ubx.ResourceBinding{
 	WireType: "azure_hybridcompute_openapi_gateway",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiGateway_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

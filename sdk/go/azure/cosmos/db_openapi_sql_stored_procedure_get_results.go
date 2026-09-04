@@ -50,6 +50,22 @@ type DbOpenapiSqlStoredProcedureGetResults_Properties struct {
 	Resource any
 }
 
+var DbOpenapiSqlStoredProcedureGetResults_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
+
+var DbOpenapiSqlStoredProcedureGetResults_IdentityFields = ubx.FieldMap{
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   DbOpenapiSqlStoredProcedureGetResults_Identity_UserAssignedIdentitiesFields,
+	},
+}
+
 var DbOpenapiSqlStoredProcedureGetResults_Properties_Options_AutoscaleSettingsFields = ubx.FieldMap{
 	"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
 }
@@ -85,28 +101,47 @@ var DbOpenapiSqlStoredProcedureGetResults_PropertiesFields = ubx.FieldMap{
 }
 
 type DbOpenapiSqlStoredProcedureGetResultsConfig struct {
-	// Properties to create and update Azure Cosmos DB storedProcedure.
-	Properties any
-}
-
-type DbOpenapiSqlStoredProcedureGetResultsAttrs struct {
 	// Identity for the resource.
 	Identity any
 	// The location of the resource group to which the resource belongs.
 	Location any
 	// Properties to create and update Azure Cosmos DB storedProcedure.
 	Properties any
-	// Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with \"defaultExperience\": \"Cassandra\". Current \"defaultExperience\" values also include \"Table\", \"Graph\", \"DocumentDB\", and \"MongoDB\".
+	// Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with "defaultExperience": "Cassandra". Current "defaultExperience" values also include "Table", "Graph", "DocumentDB", and "MongoDB".
 	Tags any
+}
+
+type DbOpenapiSqlStoredProcedureGetResultsAttrs struct {
+	// The unique resource identifier of the ARM resource.
+	Id any
+	// Identity for the resource.
+	Identity any
+	// The location of the resource group to which the resource belongs.
+	Location any
+	// The name of the ARM resource.
+	Name any
+	// Properties to create and update Azure Cosmos DB storedProcedure.
+	Properties any
+	// Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with "defaultExperience": "Cassandra". Current "defaultExperience" values also include "Table", "Graph", "DocumentDB", and "MongoDB".
+	Tags any
+	// The type of Azure resource.
+	Type any
 }
 
 var DbOpenapiSqlStoredProcedureGetResults = ubx.ResourceBinding{
 	WireType: "azure_cosmos_db_openapi_sql_stored_procedure_get_results",
 	Fields: ubx.FieldMap{
+		"Identity": ubx.FieldSpec{
+			WireName: "identity",
+			Kind:     "object",
+			Fields:   DbOpenapiSqlStoredProcedureGetResults_IdentityFields,
+		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   DbOpenapiSqlStoredProcedureGetResults_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

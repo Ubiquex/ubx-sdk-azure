@@ -126,6 +126,21 @@ class ManagedapplicationsApplication_Properties:
     # The application client details to track the entity creating/updating the managed app resource.
     updated_by: Any = None
 
+@dataclasses.dataclass
+class ManagedapplicationsApplication_Sku:
+    # The SKU capacity.
+    capacity: Any = None
+    # The SKU family.
+    family: Any = None
+    # The SKU model.
+    model: Any = None
+    # The SKU name.
+    name: Any = None
+    # The SKU size.
+    size: Any = None
+    # The SKU tier.
+    tier: Any = None
+
 _ManagedapplicationsApplication_Identity_UserAssignedIdentitiesFields = {
     "principal_id": ubx.FieldSpec(wire_name="principal_id"),
     "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
@@ -249,16 +264,29 @@ _ManagedapplicationsApplication_PropertiesFields = {
     ),
 }
 
+_ManagedapplicationsApplication_SkuFields = {
+    "capacity": ubx.FieldSpec(wire_name="capacity"),
+    "family": ubx.FieldSpec(wire_name="family"),
+    "model": ubx.FieldSpec(wire_name="model"),
+    "name": ubx.FieldSpec(wire_name="name"),
+    "size": ubx.FieldSpec(wire_name="size"),
+    "tier": ubx.FieldSpec(wire_name="tier"),
+}
+
 @dataclasses.dataclass
 class ManagedapplicationsApplicationConfig:
     # Identity for the resource.
     identity: Any = None
     # The kind of the managed application. Allowed values are MarketPlace and ServiceCatalog.
     kind: Any = None
+    # ID of the resource that manages this resource.
+    managed_by: Any = None
     # Plan for the managed application.
     plan: Any = None
     # The managed application properties.
     properties: Any = None
+    # SKU for the resource.
+    sku: Any = None
 
 @dataclasses.dataclass
 class ManagedapplicationsApplicationAttrs:
@@ -266,10 +294,14 @@ class ManagedapplicationsApplicationAttrs:
     identity: Any = None
     # The kind of the managed application. Allowed values are MarketPlace and ServiceCatalog.
     kind: Any = None
+    # ID of the resource that manages this resource.
+    managed_by: Any = None
     # Plan for the managed application.
     plan: Any = None
     # The managed application properties.
     properties: Any = None
+    # SKU for the resource.
+    sku: Any = None
 
 ManagedapplicationsApplication = ubx.ResourceBinding(
     wire_type="azure_resources_managedapplications_application",
@@ -280,6 +312,7 @@ ManagedapplicationsApplication = ubx.ResourceBinding(
             fields=_ManagedapplicationsApplication_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "managed_by": ubx.FieldSpec(wire_name="managed_by"),
         "plan": ubx.FieldSpec(
             wire_name="plan",
             kind="object",
@@ -289,6 +322,11 @@ ManagedapplicationsApplication = ubx.ResourceBinding(
             wire_name="properties",
             kind="object",
             fields=_ManagedapplicationsApplication_PropertiesFields,
+        ),
+        "sku": ubx.FieldSpec(
+            wire_name="sku",
+            kind="object",
+            fields=_ManagedapplicationsApplication_SkuFields,
         ),
     },
 )

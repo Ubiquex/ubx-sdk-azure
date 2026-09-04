@@ -246,8 +246,12 @@ class ConnectedclustersConnectedClusterConfig:
     identity: Any = None
     # Indicates the kind of Arc connected cluster based on host infrastructure.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the connected cluster.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ConnectedclustersConnectedClusterAttrs:
@@ -255,8 +259,12 @@ class ConnectedclustersConnectedClusterAttrs:
     identity: Any = None
     # Indicates the kind of Arc connected cluster based on host infrastructure.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the connected cluster.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ConnectedclustersConnectedCluster = ubx.ResourceBinding(
     wire_type="azure_hybridkubernetes_connectedclusters_connected_cluster",
@@ -267,10 +275,12 @@ ConnectedclustersConnectedCluster = ubx.ResourceBinding(
             fields=_ConnectedclustersConnectedCluster_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ConnectedclustersConnectedCluster_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

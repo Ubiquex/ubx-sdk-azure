@@ -20,15 +20,23 @@ const OpenapiDbSystem_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiDbSystemConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** DbSystem resource model. */
   properties?: OpenapiDbSystem_Properties | Computed<OpenapiDbSystem_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiDbSystemAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** DbSystem resource model. */
   properties: OpenapiDbSystem_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -36,11 +44,13 @@ export interface OpenapiDbSystemAttrs {
 export const OpenapiDbSystem: ResourceBinding<OpenapiDbSystemConfig, OpenapiDbSystemAttrs> = {
   wireType: "azure_oracle_openapi_db_system",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiDbSystem_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

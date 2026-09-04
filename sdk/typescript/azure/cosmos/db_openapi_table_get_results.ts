@@ -56,6 +56,22 @@ export interface DbOpenapiTableGetResults_Properties {
   resource: DbOpenapiTableGetResults_Properties_Resource | Computed<DbOpenapiTableGetResults_Properties_Resource>;
 }
 
+const DbOpenapiTableGetResults_Identity_UserAssignedIdentitiesFields: FieldMap = {
+  clientId: "client_id",
+  principalId: "principal_id",
+};
+
+const DbOpenapiTableGetResults_IdentityFields: FieldMap = {
+  principalId: "principal_id",
+  tenantId: "tenant_id",
+  type: "type",
+  userAssignedIdentities: {
+    wireName: "user_assigned_identities",
+    kind: "map",
+    fields: DbOpenapiTableGetResults_Identity_UserAssignedIdentitiesFields,
+  },
+};
+
 const DbOpenapiTableGetResults_Properties_Options_AutoscaleSettingsFields: FieldMap = {
   maxThroughput: "max_throughput",
 };
@@ -102,28 +118,47 @@ const DbOpenapiTableGetResults_PropertiesFields: FieldMap = {
 };
 
 export interface DbOpenapiTableGetResultsConfig {
+  /** Identity for the resource. */
+  identity?: DbOpenapiTableGetResults_Identity | Computed<DbOpenapiTableGetResults_Identity>;
+  /** The location of the resource group to which the resource belongs. */
+  location?: string | Computed<string>;
   /** Properties to create and update Azure Cosmos DB Table. */
   properties: DbOpenapiTableGetResults_Properties | Computed<DbOpenapiTableGetResults_Properties>;
+  /** Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with "defaultExperience": "Cassandra". Current "defaultExperience" values also include "Table", "Graph", "DocumentDB", and "MongoDB". */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface DbOpenapiTableGetResultsAttrs {
+  /** The unique resource identifier of the ARM resource. */
+  id: string;
   /** Identity for the resource. */
   identity: DbOpenapiTableGetResults_Identity;
   /** The location of the resource group to which the resource belongs. */
   location: string;
+  /** The name of the ARM resource. */
+  name: string;
   /** Properties to create and update Azure Cosmos DB Table. */
   properties: DbOpenapiTableGetResults_Properties;
-  /** Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with \"defaultExperience\": \"Cassandra\". Current \"defaultExperience\" values also include \"Table\", \"Graph\", \"DocumentDB\", and \"MongoDB\". */
+  /** Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with "defaultExperience": "Cassandra". Current "defaultExperience" values also include "Table", "Graph", "DocumentDB", and "MongoDB". */
   tags: Record<string, string>;
+  /** The type of Azure resource. */
+  type: string;
 }
 
 export const DbOpenapiTableGetResults: ResourceBinding<DbOpenapiTableGetResultsConfig, DbOpenapiTableGetResultsAttrs> = {
   wireType: "azure_cosmos_db_openapi_table_get_results",
   fields: {
+    identity: {
+      wireName: "identity",
+      kind: "object",
+      fields: DbOpenapiTableGetResults_IdentityFields,
+    },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: DbOpenapiTableGetResults_PropertiesFields,
     },
+    tags: "tags",
   },
 };

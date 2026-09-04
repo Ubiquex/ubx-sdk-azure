@@ -23,9 +23,13 @@ type OpenapiPremierAddOnConfig struct {
 type OpenapiPremierAddOnAttrs struct {
 	// Kind of resource.
 	Kind any
-	Name any
+	// The geo-location where the resource lives
+	Location any
+	Name     any
 	// PremierAddOn resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiPremierAddOn = ubx.DataSourceBinding{

@@ -206,15 +206,23 @@ var MonitorResource_PropertiesFields = ubx.FieldMap{
 type MonitorResourceConfig struct {
 	// The properties of the managed service identities assigned to this resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the monitor resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type MonitorResourceAttrs struct {
 	// The properties of the managed service identities assigned to this resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the monitor resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var MonitorResource = ubx.ResourceBinding{
@@ -225,10 +233,12 @@ var MonitorResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   MonitorResource_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   MonitorResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

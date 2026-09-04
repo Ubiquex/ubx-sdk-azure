@@ -78,10 +78,16 @@ class PrivateendpointconnectionsPrivateEndpointConnectionConfig:
 
 @dataclasses.dataclass
 class PrivateendpointconnectionsPrivateEndpointConnectionAttrs:
+    # Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     # The private endpoint connection properties.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 PrivateendpointconnectionsPrivateEndpointConnection = ubx.ResourceBinding(
     wire_type="azure_hdinsight_privateendpointconnections_private_endpoint_connection",

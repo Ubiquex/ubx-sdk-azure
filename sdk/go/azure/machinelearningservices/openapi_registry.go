@@ -275,10 +275,14 @@ type OpenapiRegistryConfig struct {
 	Identity any
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Details of the Registry
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiRegistryAttrs struct {
@@ -286,10 +290,14 @@ type OpenapiRegistryAttrs struct {
 	Identity any
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Details of the Registry
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiRegistry = ubx.ResourceBinding{
@@ -300,7 +308,8 @@ var OpenapiRegistry = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiRegistry_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -311,5 +320,6 @@ var OpenapiRegistry = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiRegistry_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -88,15 +88,23 @@ var LoadTestResource_PropertiesFields = ubx.FieldMap{
 type LoadTestResourceConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// LoadTest resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type LoadTestResourceAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// LoadTest resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var LoadTestResource = ubx.ResourceBinding{
@@ -107,10 +115,12 @@ var LoadTestResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   LoadTestResource_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   LoadTestResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

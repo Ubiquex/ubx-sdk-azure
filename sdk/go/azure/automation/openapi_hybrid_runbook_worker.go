@@ -33,10 +33,14 @@ type OpenapiHybridRunbookWorkerConfig struct {
 }
 
 type OpenapiHybridRunbookWorkerAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Gets or sets the name of the resource.
 	Name any
 	// The parameters supplied to the create or update hybrid runbook worker operation.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiHybridRunbookWorker = ubx.ResourceBinding{

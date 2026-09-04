@@ -94,8 +94,12 @@ var OpenapiCertificate_PropertiesFields = ubx.FieldMap{
 type OpenapiCertificateConfig struct {
 	// Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Certificate resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -103,8 +107,12 @@ type OpenapiCertificateConfig struct {
 type OpenapiCertificateAttrs struct {
 	// Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Certificate resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -112,12 +120,14 @@ type OpenapiCertificateAttrs struct {
 var OpenapiCertificate = ubx.ResourceBinding{
 	WireType: "azure_web_openapi_certificate",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiCertificate_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

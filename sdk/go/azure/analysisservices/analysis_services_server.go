@@ -41,22 +41,47 @@ var AnalysisServicesServer_PropertiesFields = ubx.FieldMap{
 }
 
 type AnalysisServicesServerConfig struct {
+	// Location of the Analysis Services resource.
+	Location any
 	// Properties of Analysis Services resource.
 	Properties any
+	// Represents the SKU name and Azure pricing tier for Analysis Services resource.
+	Sku any
+	// Key-value pairs of additional resource provisioning properties.
+	Tags any
 }
 
 type AnalysisServicesServerAttrs struct {
+	// An identifier that represents the Analysis Services resource.
+	Id any
+	// Location of the Analysis Services resource.
+	Location any
+	// The name of the Analysis Services resource.
+	Name any
 	// Properties of Analysis Services resource.
 	Properties any
+	// Represents the SKU name and Azure pricing tier for Analysis Services resource.
+	Sku any
+	// Key-value pairs of additional resource provisioning properties.
+	Tags any
+	// The type of the Analysis Services resource.
+	Type any
 }
 
 var AnalysisServicesServer = ubx.ResourceBinding{
 	WireType: "azure_analysisservices_analysis_services_server",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   AnalysisServicesServer_PropertiesFields,
 		},
+		"Sku": ubx.FieldSpec{
+			WireName: "sku",
+			Kind:     "object",
+			Fields:   AnalysisServicesServer_Properties_SkuFields,
+		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

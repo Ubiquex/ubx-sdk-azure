@@ -154,6 +154,22 @@ class DbOpenapiGremlinGraphGetResults_Properties:
     # Cosmos DB Gremlin graph resource object
     resource: Any = None
 
+_DbOpenapiGremlinGraphGetResults_Identity_UserAssignedIdentitiesFields = {
+    "client_id": ubx.FieldSpec(wire_name="client_id"),
+    "principal_id": ubx.FieldSpec(wire_name="principal_id"),
+}
+
+_DbOpenapiGremlinGraphGetResults_IdentityFields = {
+    "principal_id": ubx.FieldSpec(wire_name="principal_id"),
+    "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
+    "type": ubx.FieldSpec(wire_name="type"),
+    "user_assigned_identities": ubx.FieldSpec(
+        wire_name="user_assigned_identities",
+        kind="map",
+        fields=_DbOpenapiGremlinGraphGetResults_Identity_UserAssignedIdentitiesFields,
+    ),
+}
+
 _DbOpenapiGremlinGraphGetResults_Properties_Options_AutoscaleSettingsFields = {
     "max_throughput": ubx.FieldSpec(wire_name="max_throughput"),
 }
@@ -311,27 +327,46 @@ _DbOpenapiGremlinGraphGetResults_PropertiesFields = {
 
 @dataclasses.dataclass
 class DbOpenapiGremlinGraphGetResultsConfig:
-    # Properties to create and update Azure Cosmos DB Gremlin graph.
-    properties: Any = None
-
-@dataclasses.dataclass
-class DbOpenapiGremlinGraphGetResultsAttrs:
     # Identity for the resource.
     identity: Any = None
     # The location of the resource group to which the resource belongs.
     location: Any = None
     # Properties to create and update Azure Cosmos DB Gremlin graph.
     properties: Any = None
-    # Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with \"defaultExperience\": \"Cassandra\". Current \"defaultExperience\" values also include \"Table\", \"Graph\", \"DocumentDB\", and \"MongoDB\".
+    # Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with "defaultExperience": "Cassandra". Current "defaultExperience" values also include "Table", "Graph", "DocumentDB", and "MongoDB".
     tags: Any = None
+
+@dataclasses.dataclass
+class DbOpenapiGremlinGraphGetResultsAttrs:
+    # The unique resource identifier of the ARM resource.
+    id: Any = None
+    # Identity for the resource.
+    identity: Any = None
+    # The location of the resource group to which the resource belongs.
+    location: Any = None
+    # The name of the ARM resource.
+    name: Any = None
+    # Properties to create and update Azure Cosmos DB Gremlin graph.
+    properties: Any = None
+    # Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with "defaultExperience": "Cassandra". Current "defaultExperience" values also include "Table", "Graph", "DocumentDB", and "MongoDB".
+    tags: Any = None
+    # The type of Azure resource.
+    type: Any = None
 
 DbOpenapiGremlinGraphGetResults = ubx.ResourceBinding(
     wire_type="azure_cosmos_db_openapi_gremlin_graph_get_results",
     fields={
+        "identity": ubx.FieldSpec(
+            wire_name="identity",
+            kind="object",
+            fields=_DbOpenapiGremlinGraphGetResults_IdentityFields,
+        ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_DbOpenapiGremlinGraphGetResults_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

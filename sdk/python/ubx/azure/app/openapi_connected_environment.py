@@ -96,15 +96,23 @@ _OpenapiConnectedEnvironment_PropertiesFields = {
 class OpenapiConnectedEnvironmentConfig:
     # The complex type of the extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # ConnectedEnvironment resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiConnectedEnvironmentAttrs:
     # The complex type of the extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # ConnectedEnvironment resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiConnectedEnvironment = ubx.ResourceBinding(
     wire_type="azure_app_openapi_connected_environment",
@@ -114,10 +122,12 @@ OpenapiConnectedEnvironment = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiConnectedEnvironment_ExtendedLocationFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiConnectedEnvironment_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

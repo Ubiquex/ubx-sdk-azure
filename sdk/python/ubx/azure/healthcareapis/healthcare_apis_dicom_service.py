@@ -7,6 +7,22 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class HealthcareApisDicomService_Identity_UserAssignedIdentities:
+    client_id: Any = None
+    principal_id: Any = None
+
+@dataclasses.dataclass
+class HealthcareApisDicomService_Identity:
+    # The service principal ID of the system assigned identity. This property will only be provided for a system assigned identity.
+    principal_id: Any = None
+    # The tenant ID of the system assigned identity. This property will only be provided for a system assigned identity.
+    tenant_id: Any = None
+    # Type of identity being specified, currently SystemAssigned and None are allowed.
+    type: Any = None
+    # The set of user assigned identities associated with the resource. The userAssignedIdentities dictionary keys will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}. The dictionary values can be empty objects ({}) in requests.
+    user_assigned_identities: Any = None
+
+@dataclasses.dataclass
 class HealthcareApisDicomService_Properties_AuthenticationConfiguration:
     # The audiences for the service
     audiences: Any = None
@@ -100,6 +116,22 @@ class HealthcareApisDicomService_SystemData:
     last_modified_by: Any = None
     # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
+
+_HealthcareApisDicomService_Identity_UserAssignedIdentitiesFields = {
+    "client_id": ubx.FieldSpec(wire_name="client_id"),
+    "principal_id": ubx.FieldSpec(wire_name="principal_id"),
+}
+
+_HealthcareApisDicomService_IdentityFields = {
+    "principal_id": ubx.FieldSpec(wire_name="principal_id"),
+    "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
+    "type": ubx.FieldSpec(wire_name="type"),
+    "user_assigned_identities": ubx.FieldSpec(
+        wire_name="user_assigned_identities",
+        kind="map",
+        fields=_HealthcareApisDicomService_Identity_UserAssignedIdentitiesFields,
+    ),
+}
 
 _HealthcareApisDicomService_Properties_AuthenticationConfigurationFields = {
     "audiences": ubx.FieldSpec(wire_name="audiences"),
@@ -198,11 +230,15 @@ _HealthcareApisDicomService_PropertiesFields = {
 
 @dataclasses.dataclass
 class HealthcareApisDicomServiceConfig:
+    # Setting indicating whether the service has a managed identity associated with it.
+    identity: Any = None
     # Dicom Service properties.
     properties: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisDicomServiceAttrs:
+    # Setting indicating whether the service has a managed identity associated with it.
+    identity: Any = None
     # Dicom Service properties.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
@@ -211,6 +247,11 @@ class HealthcareApisDicomServiceAttrs:
 HealthcareApisDicomService = ubx.ResourceBinding(
     wire_type="azure_healthcareapis_healthcare_apis_dicom_service",
     fields={
+        "identity": ubx.FieldSpec(
+            wire_name="identity",
+            kind="object",
+            fields=_HealthcareApisDicomService_IdentityFields,
+        ),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

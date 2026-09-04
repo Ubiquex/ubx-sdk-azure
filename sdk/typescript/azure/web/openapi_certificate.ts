@@ -92,8 +92,12 @@ const OpenapiCertificate_PropertiesFields: FieldMap = {
 export interface OpenapiCertificateConfig {
   /** Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Certificate resource specific properties */
   properties?: OpenapiCertificate_Properties | Computed<OpenapiCertificate_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   name: string | Computed<string>;
 }
@@ -101,8 +105,12 @@ export interface OpenapiCertificateConfig {
 export interface OpenapiCertificateAttrs {
   /** Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Certificate resource specific properties */
   properties: OpenapiCertificate_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** path parameter, not part of the API's own resource representation */
   name: string;
 }
@@ -111,11 +119,13 @@ export const OpenapiCertificate: ResourceBinding<OpenapiCertificateConfig, Opena
   wireType: "azure_web_openapi_certificate",
   fields: {
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiCertificate_PropertiesFields,
     },
+    tags: "tags",
     name: "name",
   },
 };

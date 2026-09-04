@@ -47,9 +47,13 @@ class MachineExtensionImageConfig:
 
 @dataclasses.dataclass
 class MachineExtensionImageAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a Virtual Machine Extension Image.
     properties: Any = None
     publisher_name: Any = None
+    # Resource tags.
+    tags: Any = None
     type: Any = None
     version: Any = None
 

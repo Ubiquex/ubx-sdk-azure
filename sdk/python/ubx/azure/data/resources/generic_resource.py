@@ -58,6 +58,21 @@ class GenericResource_Sku:
     tier: Any = None
 
 @dataclasses.dataclass
+class GenericResource_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
 class GenericResourceConfig:
     api_version: Any = None
     resource_id: Any = None
@@ -67,6 +82,8 @@ class GenericResourceAttrs:
     api_version: Any = None
     # Resource extended location.
     extended_location: Any = None
+    # Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    id: Any = None
     # Identity for the resource.
     identity: Any = None
     # The kind of the resource.
@@ -75,6 +92,8 @@ class GenericResourceAttrs:
     location: Any = None
     # ID of the resource that manages this resource.
     managed_by: Any = None
+    # The name of the resource
+    name: Any = None
     # Plan for the resource.
     plan: Any = None
     # The resource-specific properties for this resource.
@@ -82,8 +101,12 @@ class GenericResourceAttrs:
     resource_id: Any = None
     # SKU for the resource.
     sku: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
     # Resource tags
     tags: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 GenericResource = ubx.DataSourceBinding(
     wire_type="azure_resources_generic_resource",

@@ -222,8 +222,12 @@ class OpenapiWorkspaceConfig:
     etag: Any = None
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Workspace properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkspaceAttrs:
@@ -231,8 +235,12 @@ class OpenapiWorkspaceAttrs:
     etag: Any = None
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Workspace properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiWorkspace = ubx.ResourceBinding(
     wire_type="azure_operationalinsights_openapi_workspace",
@@ -243,10 +251,12 @@ OpenapiWorkspace = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiWorkspace_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiWorkspace_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

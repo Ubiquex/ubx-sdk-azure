@@ -48,21 +48,36 @@ _IntegrationAccount_SkuFields = {
 
 @dataclasses.dataclass
 class IntegrationAccountConfig:
+    # The resource location.
+    location: Any = None
     # The integration account properties.
     properties: Any = None
     # The integration account sku.
     sku: Any = None
+    # The resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class IntegrationAccountAttrs:
+    # The resource id.
+    id: Any = None
+    # The resource location.
+    location: Any = None
+    # Gets the resource name.
+    name: Any = None
     # The integration account properties.
     properties: Any = None
     # The integration account sku.
     sku: Any = None
+    # The resource tags.
+    tags: Any = None
+    # Gets the resource type.
+    type: Any = None
 
 IntegrationAccount = ubx.ResourceBinding(
     wire_type="azure_logic_integration_account",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -73,5 +88,6 @@ IntegrationAccount = ubx.ResourceBinding(
             kind="object",
             fields=_IntegrationAccount_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -109,22 +109,32 @@ const SapvirtualinstanceSapdatabaseInstance_PropertiesFields: FieldMap = {
 };
 
 export interface SapvirtualinstanceSapdatabaseInstanceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Defines the Database properties. */
   properties?: SapvirtualinstanceSapdatabaseInstance_Properties | Computed<SapvirtualinstanceSapdatabaseInstance_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SapvirtualinstanceSapdatabaseInstanceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Defines the Database properties. */
   properties: SapvirtualinstanceSapdatabaseInstance_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const SapvirtualinstanceSapdatabaseInstance: ResourceBinding<SapvirtualinstanceSapdatabaseInstanceConfig, SapvirtualinstanceSapdatabaseInstanceAttrs> = {
   wireType: "azure_workloads_sapvirtualinstance_sapdatabase_instance",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: SapvirtualinstanceSapdatabaseInstance_PropertiesFields,
     },
+    tags: "tags",
   },
 };

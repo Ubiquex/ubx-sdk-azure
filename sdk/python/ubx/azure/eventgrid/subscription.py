@@ -222,10 +222,16 @@ class SubscriptionConfig:
 
 @dataclasses.dataclass
 class SubscriptionAttrs:
+    # Fully qualified identifier of the resource.
+    id: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the event subscription.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Type of the resource.
+    type: Any = None
 
 Subscription = ubx.ResourceBinding(
     wire_type="azure_eventgrid_subscription",

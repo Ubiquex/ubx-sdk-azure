@@ -7,6 +7,22 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class DigitalTwinsDescription_Identity_UserAssignedIdentities:
+    client_id: Any = None
+    principal_id: Any = None
+
+@dataclasses.dataclass
+class DigitalTwinsDescription_Identity:
+    # The object id of the Managed Identity Resource. This will be sent to the RP from ARM via the x-ms-identity-principal-id header in the PUT request if the resource has a systemAssigned(implicit) identity
+    principal_id: Any = None
+    # The tenant id of the Managed Identity Resource. This will be sent to the RP from ARM via the x-ms-client-tenant-id header in the PUT request if the resource has a systemAssigned(implicit) identity
+    tenant_id: Any = None
+    # The type of Managed Identity used by the DigitalTwinsInstance.
+    type: Any = None
+    # The list of user identities associated with the resource. The user identity dictionary key references will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'. .
+    user_assigned_identities: Any = None
+
+@dataclasses.dataclass
 class DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
     id: Any = None
 
@@ -54,6 +70,22 @@ class DigitalTwinsDescription_Properties:
     provisioning_state: Any = None
     # Public network access for the DigitalTwinsInstance.
     public_network_access: Any = None
+
+_DigitalTwinsDescription_Identity_UserAssignedIdentitiesFields = {
+    "client_id": ubx.FieldSpec(wire_name="client_id"),
+    "principal_id": ubx.FieldSpec(wire_name="principal_id"),
+}
+
+_DigitalTwinsDescription_IdentityFields = {
+    "principal_id": ubx.FieldSpec(wire_name="principal_id"),
+    "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
+    "type": ubx.FieldSpec(wire_name="type"),
+    "user_assigned_identities": ubx.FieldSpec(
+        wire_name="user_assigned_identities",
+        kind="map",
+        fields=_DigitalTwinsDescription_Identity_UserAssignedIdentitiesFields,
+    ),
+}
 
 _DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = {
     "id": ubx.FieldSpec(wire_name="id"),
@@ -120,21 +152,48 @@ _DigitalTwinsDescription_PropertiesFields = {
 
 @dataclasses.dataclass
 class DigitalTwinsDescriptionConfig:
+    # The managed identity for the DigitalTwinsInstance.
+    identity: Any = None
+    # The resource location.
+    location: Any = None
     # The properties of a DigitalTwinsInstance.
     properties: Any = None
+    # The resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class DigitalTwinsDescriptionAttrs:
+    # The resource identifier.
+    id: Any = None
+    # The managed identity for the DigitalTwinsInstance.
+    identity: Any = None
+    # The resource location.
+    location: Any = None
+    # The resource name.
+    name: Any = None
     # The properties of a DigitalTwinsInstance.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The resource tags.
+    tags: Any = None
+    # The resource type.
+    type: Any = None
 
 DigitalTwinsDescription = ubx.ResourceBinding(
     wire_type="azure_digitaltwins_digital_twins_description",
     fields={
+        "identity": ubx.FieldSpec(
+            wire_name="identity",
+            kind="object",
+            fields=_DigitalTwinsDescription_IdentityFields,
+        ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_DigitalTwinsDescription_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

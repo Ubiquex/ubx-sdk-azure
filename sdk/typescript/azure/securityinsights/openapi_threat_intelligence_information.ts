@@ -170,6 +170,10 @@ const OpenapiThreatIntelligenceInformation_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiThreatIntelligenceInformationConfig {
+  /** Etag of the azure resource */
+  etag?: string | Computed<string>;
+  /** The kind of the threat intelligence entity */
+  kind: string | Computed<string>;
   /** Describes threat intelligence entity properties */
   properties?: OpenapiThreatIntelligenceInformation_Properties | Computed<OpenapiThreatIntelligenceInformation_Properties>;
   /** path parameter, not part of the API's own resource representation */
@@ -190,6 +194,8 @@ export interface OpenapiThreatIntelligenceInformationAttrs {
 export const OpenapiThreatIntelligenceInformation: ResourceBinding<OpenapiThreatIntelligenceInformationConfig, OpenapiThreatIntelligenceInformationAttrs> = {
   wireType: "azure_securityinsights_openapi_threat_intelligence_information",
   fields: {
+    etag: "etag",
+    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -29,6 +29,15 @@ class PrivateEndpointConnection_Properties:
     # The provisioning state.
     provisioning_state: Any = None
 
+@dataclasses.dataclass
+class PrivateEndpointConnection_SystemData:
+    created_at: Any = None
+    created_by: Any = None
+    created_by_type: Any = None
+    last_modified_at: Any = None
+    last_modified_by: Any = None
+    last_modified_by_type: Any = None
+
 _PrivateEndpointConnection_Properties_PrivateEndpointFields = {
     "id": ubx.FieldSpec(wire_name="id"),
 }
@@ -60,8 +69,16 @@ class PrivateEndpointConnectionConfig:
 
 @dataclasses.dataclass
 class PrivateEndpointConnectionAttrs:
+    # Gets or sets the identifier.
+    id: Any = None
+    # Gets or sets the name.
+    name: Any = None
     # A private endpoint connection properties class.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Gets or sets the type.
+    type: Any = None
 
 PrivateEndpointConnection = ubx.ResourceBinding(
     wire_type="azure_purview_private_endpoint_connection",

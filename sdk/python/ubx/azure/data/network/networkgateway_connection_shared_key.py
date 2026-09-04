@@ -12,6 +12,8 @@ class NetworkgatewayConnectionSharedKeyConfig:
 
 @dataclasses.dataclass
 class NetworkgatewayConnectionSharedKeyAttrs:
+    # Resource ID.
+    id: Any = None
     # The virtual network connection shared key value.
     value: Any = None
     virtual_network_gateway_connection_name: Any = None

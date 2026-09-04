@@ -225,22 +225,32 @@ var SapvirtualinstanceSapcentralServerInstance_PropertiesFields = ubx.FieldMap{
 }
 
 type SapvirtualinstanceSapcentralServerInstanceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Defines the SAP Central Services Instance properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type SapvirtualinstanceSapcentralServerInstanceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Defines the SAP Central Services Instance properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var SapvirtualinstanceSapcentralServerInstance = ubx.ResourceBinding{
 	WireType: "azure_workloads_sapvirtualinstance_sapcentral_server_instance",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   SapvirtualinstanceSapcentralServerInstance_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

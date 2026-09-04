@@ -47,11 +47,15 @@ var HealthcareApisIotFhirDestination_PropertiesFields = ubx.FieldMap{
 }
 
 type HealthcareApisIotFhirDestinationConfig struct {
+	// The resource location.
+	Location any
 	// IoT Connector destination properties for an Azure FHIR service.
 	Properties any
 }
 
 type HealthcareApisIotFhirDestinationAttrs struct {
+	// The resource location.
+	Location any
 	// IoT Connector destination properties for an Azure FHIR service.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
@@ -61,6 +65,7 @@ type HealthcareApisIotFhirDestinationAttrs struct {
 var HealthcareApisIotFhirDestination = ubx.ResourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_iot_fhir_destination",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

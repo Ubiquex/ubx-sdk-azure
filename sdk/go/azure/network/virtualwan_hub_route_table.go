@@ -45,6 +45,8 @@ var VirtualwanHubRouteTable_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanHubRouteTableConfig struct {
+	// Name of the resource.
+	Name any
 	// Parameters for RouteTable.
 	Properties any
 }
@@ -52,13 +54,18 @@ type VirtualwanHubRouteTableConfig struct {
 type VirtualwanHubRouteTableAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Parameters for RouteTable.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualwanHubRouteTable = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_hub_route_table",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

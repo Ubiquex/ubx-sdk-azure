@@ -400,15 +400,23 @@ _CloudngfwFirewallResource_PropertiesFields = {
 class CloudngfwFirewallResourceConfig:
     # The properties of the managed service identities assigned to this resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the Firewall resource deployment.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class CloudngfwFirewallResourceAttrs:
     # The properties of the managed service identities assigned to this resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the Firewall resource deployment.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 CloudngfwFirewallResource = ubx.ResourceBinding(
     wire_type="azure_paloaltonetworks_cloudngfw_firewall_resource",
@@ -418,10 +426,12 @@ CloudngfwFirewallResource = ubx.ResourceBinding(
             kind="object",
             fields=_CloudngfwFirewallResource_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_CloudngfwFirewallResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

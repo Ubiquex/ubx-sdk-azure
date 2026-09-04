@@ -867,8 +867,12 @@ class OpenapiMachineConfig:
     identity: Any = None
     # Indicates which kind of Arc machine placement on-premises, such as HCI, SCVMM or VMware etc.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a hybrid machine.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiMachineAttrs:
@@ -876,10 +880,14 @@ class OpenapiMachineAttrs:
     identity: Any = None
     # Indicates which kind of Arc machine placement on-premises, such as HCI, SCVMM or VMware etc.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a hybrid machine.
     properties: Any = None
     # The list of extensions affiliated to the machine
     resources: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiMachine = ubx.ResourceBinding(
     wire_type="azure_hybridcompute_openapi_machine",
@@ -890,10 +898,12 @@ OpenapiMachine = ubx.ResourceBinding(
             fields=_OpenapiMachine_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiMachine_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

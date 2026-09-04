@@ -80,25 +80,41 @@ var ComponentsApplicationInsightsComponent_PropertiesFields = ubx.FieldMap{
 type ComponentsApplicationInsightsComponentConfig struct {
 	// The kind of application that this component refers to, used to customize UI. This value is a freeform string, values should typically be one of the following: web, ios, other, store, java, phone.
 	Kind any
+	// Resource location
+	Location any
 	// Properties that define an Application Insights component resource.
 	Properties any
+	// Resource tags
+	Tags any
 }
 
 type ComponentsApplicationInsightsComponentAttrs struct {
+	// Azure resource Id
+	Id any
 	// The kind of application that this component refers to, used to customize UI. This value is a freeform string, values should typically be one of the following: web, ios, other, store, java, phone.
 	Kind any
+	// Resource location
+	Location any
+	// Azure resource name
+	Name any
 	// Properties that define an Application Insights component resource.
 	Properties any
+	// Resource tags
+	Tags any
+	// Azure resource type
+	Type any
 }
 
 var ComponentsApplicationInsightsComponent = ubx.ResourceBinding{
 	WireType: "azure_applicationinsights_components_application_insights_component",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ComponentsApplicationInsightsComponent_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

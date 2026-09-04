@@ -218,8 +218,12 @@ type OpenapiWorkspaceConfig struct {
 	Etag any
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Workspace properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiWorkspaceAttrs struct {
@@ -227,8 +231,12 @@ type OpenapiWorkspaceAttrs struct {
 	Etag any
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Workspace properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiWorkspace = ubx.ResourceBinding{
@@ -240,10 +248,12 @@ var OpenapiWorkspace = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiWorkspace_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiWorkspace_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

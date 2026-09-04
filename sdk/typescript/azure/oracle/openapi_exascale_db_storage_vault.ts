@@ -79,15 +79,23 @@ const OpenapiExascaleDbStorageVault_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiExascaleDbStorageVaultConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** ExascaleDbStorageVault resource model */
   properties?: OpenapiExascaleDbStorageVault_Properties | Computed<OpenapiExascaleDbStorageVault_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiExascaleDbStorageVaultAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** ExascaleDbStorageVault resource model */
   properties: OpenapiExascaleDbStorageVault_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -95,11 +103,13 @@ export interface OpenapiExascaleDbStorageVaultAttrs {
 export const OpenapiExascaleDbStorageVault: ResourceBinding<OpenapiExascaleDbStorageVaultConfig, OpenapiExascaleDbStorageVaultAttrs> = {
   wireType: "azure_oracle_openapi_exascale_db_storage_vault",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiExascaleDbStorageVault_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

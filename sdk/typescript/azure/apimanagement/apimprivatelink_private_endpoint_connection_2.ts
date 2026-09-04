@@ -49,8 +49,6 @@ const ApimprivatelinkPrivateEndpointConnection2_PropertiesFields: FieldMap = {
 };
 
 export interface ApimprivatelinkPrivateEndpointConnection2Config {
-  /** Private Endpoint Connection Resource Id. */
-  id?: string | Computed<string>;
   /** The connection state of the private endpoint connection. */
   properties?: ApimprivatelinkPrivateEndpointConnection2_Properties | Computed<ApimprivatelinkPrivateEndpointConnection2_Properties>;
 }
@@ -58,14 +56,17 @@ export interface ApimprivatelinkPrivateEndpointConnection2Config {
 export interface ApimprivatelinkPrivateEndpointConnection2Attrs {
   /** Private Endpoint Connection Resource Id. */
   id: string;
+  /** The name of the resource */
+  name: string;
   /** The connection state of the private endpoint connection. */
   properties: ApimprivatelinkPrivateEndpointConnection2_Properties;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const ApimprivatelinkPrivateEndpointConnection2: ResourceBinding<ApimprivatelinkPrivateEndpointConnection2Config, ApimprivatelinkPrivateEndpointConnection2Attrs> = {
   wireType: "azure_apimanagement_apimprivatelink_private_endpoint_connection_2",
   fields: {
-    id: "id",
     properties: {
       wireName: "properties",
       kind: "object",

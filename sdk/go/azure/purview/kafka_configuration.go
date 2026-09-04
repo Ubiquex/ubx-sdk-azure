@@ -26,6 +26,15 @@ type KafkaConfiguration_Properties struct {
 	EventStreamingType any
 }
 
+type KafkaConfiguration_SystemData struct {
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
+	LastModifiedByType any
+}
+
 var KafkaConfiguration_Properties_CredentialsFields = ubx.FieldMap{
 	"IdentityId": ubx.FieldSpec{WireName: "identity_id"},
 	"Type":       ubx.FieldSpec{WireName: "type"},
@@ -51,8 +60,16 @@ type KafkaConfigurationConfig struct {
 }
 
 type KafkaConfigurationAttrs struct {
+	// Gets or sets the identifier.
+	Id any
+	// Gets or sets the name.
+	Name any
 	// The kafka configuration properties of the event streaming service attached to the Purview account for kafka notifications.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Gets or sets the type.
+	Type any
 }
 
 var KafkaConfiguration = ubx.ResourceBinding{

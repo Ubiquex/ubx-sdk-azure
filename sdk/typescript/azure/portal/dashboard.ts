@@ -79,22 +79,32 @@ const Dashboard_PropertiesFields: FieldMap = {
 };
 
 export interface DashboardConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Dashboard Properties with Provisioning state */
   properties?: Dashboard_Properties | Computed<Dashboard_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface DashboardAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Dashboard Properties with Provisioning state */
   properties: Dashboard_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Dashboard: ResourceBinding<DashboardConfig, DashboardAttrs> = {
   wireType: "azure_portal_dashboard",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Dashboard_PropertiesFields,
     },
+    tags: "tags",
   },
 };

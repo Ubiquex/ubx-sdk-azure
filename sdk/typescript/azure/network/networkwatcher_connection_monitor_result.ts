@@ -339,12 +339,20 @@ export interface NetworkwatcherConnectionMonitorResultConfig {
 }
 
 export interface NetworkwatcherConnectionMonitorResultAttrs {
+  /** A unique read-only string that changes whenever the resource is updated. */
+  etag: string;
+  /** ID of the connection monitor. */
+  id: string;
   /** Connection monitor location. */
   location: string;
+  /** Name of the connection monitor. */
+  name: string;
   /** Parameters that define the operation to create a connection monitor. */
   properties: NetworkwatcherConnectionMonitorResult_Properties;
   /** Connection monitor tags. */
   tags: Record<string, string>;
+  /** Connection monitor type. */
+  type: string;
 }
 
 export const NetworkwatcherConnectionMonitorResult: ResourceBinding<NetworkwatcherConnectionMonitorResultConfig, NetworkwatcherConnectionMonitorResultAttrs> = {

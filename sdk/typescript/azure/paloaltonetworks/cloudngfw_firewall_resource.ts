@@ -394,15 +394,23 @@ const CloudngfwFirewallResource_PropertiesFields: FieldMap = {
 export interface CloudngfwFirewallResourceConfig {
   /** The properties of the managed service identities assigned to this resource. */
   identity?: CloudngfwFirewallResource_Identity | Computed<CloudngfwFirewallResource_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties specific to the Firewall resource deployment. */
   properties: CloudngfwFirewallResource_Properties | Computed<CloudngfwFirewallResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface CloudngfwFirewallResourceAttrs {
   /** The properties of the managed service identities assigned to this resource. */
   identity: CloudngfwFirewallResource_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties specific to the Firewall resource deployment. */
   properties: CloudngfwFirewallResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const CloudngfwFirewallResource: ResourceBinding<CloudngfwFirewallResourceConfig, CloudngfwFirewallResourceAttrs> = {
@@ -413,10 +421,12 @@ export const CloudngfwFirewallResource: ResourceBinding<CloudngfwFirewallResourc
       kind: "object",
       fields: CloudngfwFirewallResource_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: CloudngfwFirewallResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -226,15 +226,23 @@ _NewRelicMonitorResource_PropertiesFields = {
 class NewRelicMonitorResourceConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the NewRelic Monitor resource
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class NewRelicMonitorResourceAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the NewRelic Monitor resource
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 NewRelicMonitorResource = ubx.ResourceBinding(
     wire_type="azure_newrelic_new_relic_monitor_resource",
@@ -244,10 +252,12 @@ NewRelicMonitorResource = ubx.ResourceBinding(
             kind="object",
             fields=_NewRelicMonitorResource_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_NewRelicMonitorResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

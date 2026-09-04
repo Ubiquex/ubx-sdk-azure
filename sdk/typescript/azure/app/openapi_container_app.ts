@@ -810,10 +810,14 @@ export interface OpenapiContainerAppConfig {
   identity?: OpenapiContainerApp_Identity | Computed<OpenapiContainerApp_Identity>;
   /** Metadata to represent the container app kind, representing if a container app is workflowapp or functionapp. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The fully qualified resource ID of the resource that manages this resource. Indicates if this resource is managed by another Azure resource. If this is present, complete mode deployment will not delete the resource if it is removed from the template since it is managed by another resource. */
   managedBy?: string | Computed<string>;
   /** ContainerApp resource specific properties */
   properties?: OpenapiContainerApp_Properties | Computed<OpenapiContainerApp_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiContainerAppAttrs {
@@ -823,10 +827,14 @@ export interface OpenapiContainerAppAttrs {
   identity: OpenapiContainerApp_Identity;
   /** Metadata to represent the container app kind, representing if a container app is workflowapp or functionapp. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** The fully qualified resource ID of the resource that manages this resource. Indicates if this resource is managed by another Azure resource. If this is present, complete mode deployment will not delete the resource if it is removed from the template since it is managed by another resource. */
   managedBy: string;
   /** ContainerApp resource specific properties */
   properties: OpenapiContainerApp_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiContainerApp: ResourceBinding<OpenapiContainerAppConfig, OpenapiContainerAppAttrs> = {
@@ -843,11 +851,13 @@ export const OpenapiContainerApp: ResourceBinding<OpenapiContainerAppConfig, Ope
       fields: OpenapiContainerApp_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     managedBy: "managed_by",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiContainerApp_PropertiesFields,
     },
+    tags: "tags",
   },
 };

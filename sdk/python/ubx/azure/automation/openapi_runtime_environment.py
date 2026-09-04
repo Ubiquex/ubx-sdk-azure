@@ -39,21 +39,31 @@ _OpenapiRuntimeEnvironment_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiRuntimeEnvironmentConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Runtime Environment properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiRuntimeEnvironmentAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Runtime Environment properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiRuntimeEnvironment = ubx.ResourceBinding(
     wire_type="azure_automation_openapi_runtime_environment",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiRuntimeEnvironment_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

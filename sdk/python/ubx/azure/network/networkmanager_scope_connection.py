@@ -48,10 +48,16 @@ class NetworkmanagerScopeConnectionConfig:
 class NetworkmanagerScopeConnectionAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource name.
+    name: Any = None
     # Scope connection.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource type.
+    type: Any = None
 
 NetworkmanagerScopeConnection = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_scope_connection",

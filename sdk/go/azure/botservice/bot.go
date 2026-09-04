@@ -97,6 +97,13 @@ type Bot_Properties struct {
 	TenantId any
 }
 
+type Bot_Sku struct {
+	// The name of SKU.
+	Name any
+	// Gets the sku tier. This is based on the SKU name.
+	Tier any
+}
+
 var Bot_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
 	"Id": ubx.FieldSpec{WireName: "id"},
 }
@@ -172,23 +179,65 @@ var Bot_PropertiesFields = ubx.FieldMap{
 	"TenantId":                    ubx.FieldSpec{WireName: "tenant_id"},
 }
 
+var Bot_SkuFields = ubx.FieldMap{
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
+
 type BotConfig struct {
+	// Entity Tag.
+	Etag any
+	// Indicates the type of bot service
+	Kind any
+	// Specifies the location of the resource.
+	Location any
 	// The parameters to provide for the Bot.
 	Properties any
+	// The SKU of the cognitive services account.
+	Sku any
+	// Contains resource tags defined as key/value pairs.
+	Tags any
 }
 
 type BotAttrs struct {
+	// Entity Tag.
+	Etag any
+	// Specifies the resource ID.
+	Id any
+	// Indicates the type of bot service
+	Kind any
+	// Specifies the location of the resource.
+	Location any
+	// Specifies the name of the resource.
+	Name any
 	// The parameters to provide for the Bot.
 	Properties any
+	// The SKU of the cognitive services account.
+	Sku any
+	// Contains resource tags defined as key/value pairs.
+	Tags any
+	// Specifies the type of the resource.
+	Type any
+	// Entity zones
+	Zones any
 }
 
 var Bot = ubx.ResourceBinding{
 	WireType: "azure_botservice_bot",
 	Fields: ubx.FieldMap{
+		"Etag":     ubx.FieldSpec{WireName: "etag"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Bot_PropertiesFields,
 		},
+		"Sku": ubx.FieldSpec{
+			WireName: "sku",
+			Kind:     "object",
+			Fields:   Bot_SkuFields,
+		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

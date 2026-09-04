@@ -121,17 +121,25 @@ _PartnerTopic_PropertiesFields = {
 class PartnerTopicConfig:
     # The identity information for the resource.
     identity: Any = None
+    # Location of the resource.
+    location: Any = None
     # Properties of the Partner Topic.
     properties: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 @dataclasses.dataclass
 class PartnerTopicAttrs:
     # The identity information for the resource.
     identity: Any = None
+    # Location of the resource.
+    location: Any = None
     # Properties of the Partner Topic.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 PartnerTopic = ubx.ResourceBinding(
     wire_type="azure_eventgrid_partner_topic",
@@ -141,10 +149,12 @@ PartnerTopic = ubx.ResourceBinding(
             kind="object",
             fields=_PartnerTopic_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_PartnerTopic_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -23,22 +23,32 @@ const PlaywrightWorkspace_PropertiesFields: FieldMap = {
 };
 
 export interface PlaywrightWorkspaceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Playwright workspace resource properties. */
   properties?: PlaywrightWorkspace_Properties | Computed<PlaywrightWorkspace_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface PlaywrightWorkspaceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Playwright workspace resource properties. */
   properties: PlaywrightWorkspace_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const PlaywrightWorkspace: ResourceBinding<PlaywrightWorkspaceConfig, PlaywrightWorkspaceAttrs> = {
   wireType: "azure_loadtestservice_playwright_workspace",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: PlaywrightWorkspace_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -13,22 +13,32 @@ var PublicKeyResource_PropertiesFields = ubx.FieldMap{
 }
 
 type PublicKeyResourceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the SSH public key.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type PublicKeyResourceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the SSH public key.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var PublicKeyResource = ubx.ResourceBinding{
 	WireType: "azure_ssh_public_key_resource",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   PublicKeyResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

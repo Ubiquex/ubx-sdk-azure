@@ -29,6 +29,21 @@ class PrivateEndpointConnection_Properties:
     # The current provisioning state.
     provisioning_state: Any = None
 
+@dataclasses.dataclass
+class PrivateEndpointConnection_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _PrivateEndpointConnection_Properties_PrivateEndpointFields = {
     "id": ubx.FieldSpec(wire_name="id"),
 }
@@ -60,8 +75,16 @@ class PrivateEndpointConnectionConfig:
 
 @dataclasses.dataclass
 class PrivateEndpointConnectionAttrs:
+    # Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     # Properties of the PrivateEndpointConnectProperties.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 PrivateEndpointConnection = ubx.ResourceBinding(
     wire_type="azure_attestation_private_endpoint_connection",

@@ -86,8 +86,12 @@ type UpgradeStatusInfoConfig struct {
 }
 
 type UpgradeStatusInfoAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The status of the latest virtual machine scale set rolling upgrade.
-	Properties     any
+	Properties any
+	// Resource tags.
+	Tags           any
 	VmScaleSetName any
 }
 

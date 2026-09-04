@@ -107,29 +107,33 @@ var OpenapiBackupItem_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiBackupItemConfig struct {
-	// BackupRequest resource specific properties
-	Properties any
-	// path parameter, not part of the API's own resource representation
-	Name any
-}
-
-type OpenapiBackupItemAttrs struct {
 	// Kind of resource.
 	Kind any
 	// BackupRequest resource specific properties
 	Properties any
-	// path parameter, not part of the API's own resource representation
+}
+
+type OpenapiBackupItemAttrs struct {
+	// Resource Id.
+	Id any
+	// Kind of resource.
+	Kind any
+	// Resource Name.
 	Name any
+	// BackupRequest resource specific properties
+	Properties any
+	// Resource type.
+	Type any
 }
 
 var OpenapiBackupItem = ubx.ResourceBinding{
 	WireType: "azure_web_openapi_backup_item",
 	Fields: ubx.FieldMap{
+		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiBackupItem_PropertiesFields,
 		},
-		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

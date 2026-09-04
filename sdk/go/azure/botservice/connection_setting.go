@@ -31,6 +31,13 @@ type ConnectionSetting_Properties struct {
 	SettingId any
 }
 
+type ConnectionSetting_Sku struct {
+	// The name of SKU.
+	Name any
+	// Gets the sku tier. This is based on the SKU name.
+	Tier any
+}
+
 var ConnectionSetting_Properties_ParametersFields = ubx.FieldMap{
 	"Key":   ubx.FieldSpec{WireName: "key"},
 	"Value": ubx.FieldSpec{WireName: "value"},
@@ -53,23 +60,65 @@ var ConnectionSetting_PropertiesFields = ubx.FieldMap{
 	"SettingId":                  ubx.FieldSpec{WireName: "setting_id"},
 }
 
+var ConnectionSetting_SkuFields = ubx.FieldMap{
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
+
 type ConnectionSettingConfig struct {
+	// Entity Tag.
+	Etag any
+	// Indicates the type of bot service
+	Kind any
+	// Specifies the location of the resource.
+	Location any
 	// Properties for a Connection Setting Item
 	Properties any
+	// The SKU of the cognitive services account.
+	Sku any
+	// Contains resource tags defined as key/value pairs.
+	Tags any
 }
 
 type ConnectionSettingAttrs struct {
+	// Entity Tag.
+	Etag any
+	// Specifies the resource ID.
+	Id any
+	// Indicates the type of bot service
+	Kind any
+	// Specifies the location of the resource.
+	Location any
+	// Specifies the name of the resource.
+	Name any
 	// Properties for a Connection Setting Item
 	Properties any
+	// The SKU of the cognitive services account.
+	Sku any
+	// Contains resource tags defined as key/value pairs.
+	Tags any
+	// Specifies the type of the resource.
+	Type any
+	// Entity zones
+	Zones any
 }
 
 var ConnectionSetting = ubx.ResourceBinding{
 	WireType: "azure_botservice_connection_setting",
 	Fields: ubx.FieldMap{
+		"Etag":     ubx.FieldSpec{WireName: "etag"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ConnectionSetting_PropertiesFields,
 		},
+		"Sku": ubx.FieldSpec{
+			WireName: "sku",
+			Kind:     "object",
+			Fields:   ConnectionSetting_SkuFields,
+		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -25,8 +25,12 @@ const OpenapiPremierAddOn_PropertiesFields: FieldMap = {
 export interface OpenapiPremierAddOnConfig {
   /** Kind of resource. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** PremierAddOn resource specific properties */
   properties?: OpenapiPremierAddOn_Properties | Computed<OpenapiPremierAddOn_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   name: string | Computed<string>;
 }
@@ -34,8 +38,12 @@ export interface OpenapiPremierAddOnConfig {
 export interface OpenapiPremierAddOnAttrs {
   /** Kind of resource. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** PremierAddOn resource specific properties */
   properties: OpenapiPremierAddOn_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** path parameter, not part of the API's own resource representation */
   name: string;
 }
@@ -44,11 +52,13 @@ export const OpenapiPremierAddOn: ResourceBinding<OpenapiPremierAddOnConfig, Ope
   wireType: "azure_web_openapi_premier_add_on",
   fields: {
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiPremierAddOn_PropertiesFields,
     },
+    tags: "tags",
     name: "name",
   },
 };

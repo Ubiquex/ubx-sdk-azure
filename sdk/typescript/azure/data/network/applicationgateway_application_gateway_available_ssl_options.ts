@@ -20,8 +20,18 @@ export interface ApplicationgatewayApplicationGatewayAvailableSslOptionsConfig {
 }
 
 export interface ApplicationgatewayApplicationGatewayAvailableSslOptionsAttrs {
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of ApplicationGatewayAvailableSslOptions. */
   properties: ApplicationgatewayApplicationGatewayAvailableSslOptions_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const ApplicationgatewayApplicationGatewayAvailableSslOptions: DataSourceBinding<ApplicationgatewayApplicationGatewayAvailableSslOptionsConfig, ApplicationgatewayApplicationGatewayAvailableSslOptionsAttrs> = {

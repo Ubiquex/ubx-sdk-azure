@@ -294,6 +294,8 @@ const ExpressrouteExpressRouteCircuitPeering_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteExpressRouteCircuitPeeringConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of the express route circuit peering. */
   properties?: ExpressrouteExpressRouteCircuitPeering_Properties | Computed<ExpressrouteExpressRouteCircuitPeering_Properties>;
 }
@@ -301,13 +303,18 @@ export interface ExpressrouteExpressRouteCircuitPeeringConfig {
 export interface ExpressrouteExpressRouteCircuitPeeringAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the express route circuit peering. */
   properties: ExpressrouteExpressRouteCircuitPeering_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const ExpressrouteExpressRouteCircuitPeering: ResourceBinding<ExpressrouteExpressRouteCircuitPeeringConfig, ExpressrouteExpressRouteCircuitPeeringAttrs> = {
   wireType: "azure_network_expressroute_express_route_circuit_peering",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

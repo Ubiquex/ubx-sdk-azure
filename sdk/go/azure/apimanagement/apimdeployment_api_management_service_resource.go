@@ -83,6 +83,8 @@ type ApimdeploymentApiManagementServiceResourceConfig struct {
 	Properties any
 	// API Management service resource SKU properties.
 	Sku any
+	// Resource tags.
+	Tags any
 	// A list of availability zones denoting where the resource needs to come from.
 	Zones any
 }
@@ -90,16 +92,24 @@ type ApimdeploymentApiManagementServiceResourceConfig struct {
 type ApimdeploymentApiManagementServiceResourceAttrs struct {
 	// ETag of the resource.
 	Etag any
+	// Resource ID.
+	Id any
 	// Identity properties of the Api Management service resource.
 	Identity any
 	// Resource location.
 	Location any
+	// Resource name.
+	Name any
 	// Properties of an API Management service resource description.
 	Properties any
 	// API Management service resource SKU properties.
 	Sku any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource tags.
+	Tags any
+	// Resource type for API Management resource is set to Microsoft.ApiManagement.
+	Type any
 	// A list of availability zones denoting where the resource needs to come from.
 	Zones any
 }
@@ -123,6 +133,7 @@ var ApimdeploymentApiManagementServiceResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ApimdeploymentApiManagementServiceResource_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

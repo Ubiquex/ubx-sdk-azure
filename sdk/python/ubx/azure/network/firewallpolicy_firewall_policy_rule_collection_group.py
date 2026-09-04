@@ -42,6 +42,8 @@ _FirewallpolicyFirewallPolicyRuleCollectionGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicyRuleCollectionGroupConfig:
+    # Name of the resource.
+    name: Any = None
     # Properties of the rule collection group.
     properties: Any = None
 
@@ -49,12 +51,17 @@ class FirewallpolicyFirewallPolicyRuleCollectionGroupConfig:
 class FirewallpolicyFirewallPolicyRuleCollectionGroupAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the rule collection group.
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 FirewallpolicyFirewallPolicyRuleCollectionGroup = ubx.ResourceBinding(
     wire_type="azure_network_firewallpolicy_firewall_policy_rule_collection_group",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

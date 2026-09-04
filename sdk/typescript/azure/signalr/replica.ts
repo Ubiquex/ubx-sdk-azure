@@ -38,20 +38,29 @@ const Replica_SkuFields: FieldMap = {
 };
 
 export interface ReplicaConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   properties?: Replica_Properties | Computed<Replica_Properties>;
   /** The billing information of the resource. */
   sku?: Replica_Sku | Computed<Replica_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ReplicaAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   properties: Replica_Properties;
   /** The billing information of the resource. */
   sku: Replica_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Replica: ResourceBinding<ReplicaConfig, ReplicaAttrs> = {
   wireType: "azure_signalr_replica",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -62,5 +71,6 @@ export const Replica: ResourceBinding<ReplicaConfig, ReplicaAttrs> = {
       kind: "object",
       fields: Replica_SkuFields,
     },
+    tags: "tags",
   },
 };

@@ -30,6 +30,21 @@ class DigitalTwinsEndpointResource_Properties:
     # The provisioning state.
     provisioning_state: Any = None
 
+@dataclasses.dataclass
+class DigitalTwinsEndpointResource_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _DigitalTwinsEndpointResource_Properties_IdentityFields = {
     "type": ubx.FieldSpec(wire_name="type"),
     "user_assigned_identity": ubx.FieldSpec(wire_name="user_assigned_identity"),
@@ -56,8 +71,16 @@ class DigitalTwinsEndpointResourceConfig:
 
 @dataclasses.dataclass
 class DigitalTwinsEndpointResourceAttrs:
+    # The resource identifier.
+    id: Any = None
+    # Extension resource name.
+    name: Any = None
     # Properties related to Digital Twins Endpoint
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The resource type.
+    type: Any = None
 
 DigitalTwinsEndpointResource = ubx.ResourceBinding(
     wire_type="azure_digitaltwins_digital_twins_endpoint_resource",

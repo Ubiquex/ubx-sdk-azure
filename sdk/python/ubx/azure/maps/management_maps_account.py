@@ -185,10 +185,14 @@ class ManagementMapsAccountConfig:
     identity: Any = None
     # The Kind of the Maps Account.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Additional Map account properties
     properties: Any = None
     # The SKU of the Maps Account.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ManagementMapsAccountAttrs:
@@ -196,12 +200,16 @@ class ManagementMapsAccountAttrs:
     identity: Any = None
     # The Kind of the Maps Account.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Additional Map account properties
     properties: Any = None
     # The SKU of the Maps Account.
     sku: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ManagementMapsAccount = ubx.ResourceBinding(
     wire_type="azure_maps_management_maps_account",
@@ -212,6 +220,7 @@ ManagementMapsAccount = ubx.ResourceBinding(
             fields=_ManagementMapsAccount_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -222,5 +231,6 @@ ManagementMapsAccount = ubx.ResourceBinding(
             kind="object",
             fields=_ManagementMapsAccount_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

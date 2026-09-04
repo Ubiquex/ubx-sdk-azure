@@ -31,15 +31,23 @@ const AvailabilitySet_PropertiesFields: FieldMap = {
 export interface AvailabilitySetConfig {
   /** The extended location. */
   extendedLocation: AvailabilitySet_ExtendedLocation | Computed<AvailabilitySet_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Defines the resource properties. */
   properties?: AvailabilitySet_Properties | Computed<AvailabilitySet_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface AvailabilitySetAttrs {
   /** The extended location. */
   extendedLocation: AvailabilitySet_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Defines the resource properties. */
   properties: AvailabilitySet_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const AvailabilitySet: ResourceBinding<AvailabilitySetConfig, AvailabilitySetAttrs> = {
@@ -50,10 +58,12 @@ export const AvailabilitySet: ResourceBinding<AvailabilitySetConfig, Availabilit
       kind: "object",
       fields: AvailabilitySet_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: AvailabilitySet_PropertiesFields,
     },
+    tags: "tags",
   },
 };

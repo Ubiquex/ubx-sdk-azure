@@ -36,22 +36,32 @@ var VdiPool_PropertiesFields = ubx.FieldMap{
 }
 
 type VdiPoolConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a Pool
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VdiPoolAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a Pool
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var VdiPool = ubx.ResourceBinding{
 	WireType: "azure_devcenter_vdi_pool",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VdiPool_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

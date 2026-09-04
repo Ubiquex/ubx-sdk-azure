@@ -14,18 +14,29 @@ const VirtualnetworkAddressPrefixSet_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkAddressPrefixSetConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** Properties of address prefix set. */
   properties?: VirtualnetworkAddressPrefixSet_Properties | Computed<VirtualnetworkAddressPrefixSet_Properties>;
 }
 
 export interface VirtualnetworkAddressPrefixSetAttrs {
+  /** A unique read-only string that changes whenever the resource is updated. */
+  etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource name. */
+  name: string;
   /** Properties of address prefix set. */
   properties: VirtualnetworkAddressPrefixSet_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkAddressPrefixSet: ResourceBinding<VirtualnetworkAddressPrefixSetConfig, VirtualnetworkAddressPrefixSetAttrs> = {
   wireType: "azure_network_virtualnetwork_address_prefix_set",
   fields: {
+    id: "id",
     properties: {
       wireName: "properties",
       kind: "object",

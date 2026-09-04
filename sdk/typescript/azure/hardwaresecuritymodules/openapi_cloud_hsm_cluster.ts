@@ -154,19 +154,27 @@ const OpenapiCloudHsmCluster_SkuFields: FieldMap = {
 export interface OpenapiCloudHsmClusterConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: OpenapiCloudHsmCluster_Identity | Computed<OpenapiCloudHsmCluster_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of a Cloud HSM Cluster. */
   properties?: OpenapiCloudHsmCluster_Properties | Computed<OpenapiCloudHsmCluster_Properties>;
   /** Cloud Hsm Cluster SKU information */
   sku?: OpenapiCloudHsmCluster_Sku | Computed<OpenapiCloudHsmCluster_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiCloudHsmClusterAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: OpenapiCloudHsmCluster_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of a Cloud HSM Cluster. */
   properties: OpenapiCloudHsmCluster_Properties;
   /** Cloud Hsm Cluster SKU information */
   sku: OpenapiCloudHsmCluster_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiCloudHsmCluster: ResourceBinding<OpenapiCloudHsmClusterConfig, OpenapiCloudHsmClusterAttrs> = {
@@ -177,6 +185,7 @@ export const OpenapiCloudHsmCluster: ResourceBinding<OpenapiCloudHsmClusterConfi
       kind: "object",
       fields: OpenapiCloudHsmCluster_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -187,5 +196,6 @@ export const OpenapiCloudHsmCluster: ResourceBinding<OpenapiCloudHsmClusterConfi
       kind: "object",
       fields: OpenapiCloudHsmCluster_SkuFields,
     },
+    tags: "tags",
   },
 };

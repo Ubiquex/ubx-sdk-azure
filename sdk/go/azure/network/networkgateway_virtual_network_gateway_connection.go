@@ -1039,24 +1039,43 @@ var NetworkgatewayVirtualNetworkGatewayConnection_PropertiesFields = ubx.FieldMa
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// VirtualNetworkGatewayConnection properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConnectionAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// VirtualNetworkGatewayConnection properties.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var NetworkgatewayVirtualNetworkGatewayConnection = ubx.ResourceBinding{
 	WireType: "azure_network_networkgateway_virtual_network_gateway_connection",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   NetworkgatewayVirtualNetworkGatewayConnection_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

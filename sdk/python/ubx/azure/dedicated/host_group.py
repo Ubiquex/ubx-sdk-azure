@@ -78,26 +78,36 @@ _HostGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class HostGroupConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Dedicated Host Group Properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 @dataclasses.dataclass
 class HostGroupAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Dedicated Host Group Properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 HostGroup = ubx.ResourceBinding(
     wire_type="azure_dedicated_host_group",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_HostGroup_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

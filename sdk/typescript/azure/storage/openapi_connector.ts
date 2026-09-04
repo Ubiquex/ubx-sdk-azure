@@ -45,22 +45,32 @@ const OpenapiConnector_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiConnectorConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The storage connector properties */
   properties: OpenapiConnector_Properties | Computed<OpenapiConnector_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiConnectorAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The storage connector properties */
   properties: OpenapiConnector_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiConnector: ResourceBinding<OpenapiConnectorConfig, OpenapiConnectorAttrs> = {
   wireType: "azure_storage_openapi_connector",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiConnector_PropertiesFields,
     },
+    tags: "tags",
   },
 };

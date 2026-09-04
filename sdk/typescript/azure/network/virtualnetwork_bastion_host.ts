@@ -139,10 +139,16 @@ const VirtualnetworkBastionHost_SkuFields: FieldMap = {
 };
 
 export interface VirtualnetworkBastionHostConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties of the Bastion Host. */
   properties?: VirtualnetworkBastionHost_Properties | Computed<VirtualnetworkBastionHost_Properties>;
   /** The sku of this Bastion Host. */
   sku?: VirtualnetworkBastionHost_Sku | Computed<VirtualnetworkBastionHost_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** A list of availability zones denoting where the resource needs to come from. */
   zones?: string[] | Computed<string[]>;
 }
@@ -150,10 +156,20 @@ export interface VirtualnetworkBastionHostConfig {
 export interface VirtualnetworkBastionHostAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of the Bastion Host. */
   properties: VirtualnetworkBastionHost_Properties;
   /** The sku of this Bastion Host. */
   sku: VirtualnetworkBastionHost_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
   /** A list of availability zones denoting where the resource needs to come from. */
   zones: string[];
 }
@@ -161,6 +177,8 @@ export interface VirtualnetworkBastionHostAttrs {
 export const VirtualnetworkBastionHost: ResourceBinding<VirtualnetworkBastionHostConfig, VirtualnetworkBastionHostAttrs> = {
   wireType: "azure_network_virtualnetwork_bastion_host",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -171,6 +189,7 @@ export const VirtualnetworkBastionHost: ResourceBinding<VirtualnetworkBastionHos
       kind: "object",
       fields: VirtualnetworkBastionHost_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

@@ -192,21 +192,31 @@ _Profile_PropertiesFields = {
 
 @dataclasses.dataclass
 class ProfileConfig:
+    # The Azure Region where the resource lives
+    location: Any = None
     # Class representing the Traffic Manager profile properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ProfileAttrs:
+    # The Azure Region where the resource lives
+    location: Any = None
     # Class representing the Traffic Manager profile properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Profile = ubx.ResourceBinding(
     wire_type="azure_trafficmanager_profile",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Profile_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

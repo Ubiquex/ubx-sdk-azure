@@ -200,10 +200,16 @@ type EventSubscriptionConfig struct {
 }
 
 type EventSubscriptionAttrs struct {
+	// Fully qualified identifier of the resource.
+	Id any
+	// Name of the resource.
+	Name any
 	// Properties of the Event Subscription.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Type of the resource.
+	Type any
 	// path parameter, not part of the API's own resource representation
 	Scope any
 }

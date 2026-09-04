@@ -47,25 +47,41 @@ const Zone_PropertiesFields: FieldMap = {
 export interface ZoneConfig {
   /** The etag of the zone. */
   etag?: string | Computed<string>;
+  /** Resource location. */
+  location: string | Computed<string>;
   /** Represents the properties of the zone. */
   properties?: Zone_Properties | Computed<Zone_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ZoneAttrs {
   /** The etag of the zone. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Represents the properties of the zone. */
   properties: Zone_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const Zone: ResourceBinding<ZoneConfig, ZoneAttrs> = {
   wireType: "azure_dns_zone",
   fields: {
     etag: "etag",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Zone_PropertiesFields,
     },
+    tags: "tags",
   },
 };

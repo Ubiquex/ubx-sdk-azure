@@ -80,10 +80,14 @@ export interface OpenapiOnlineEndpointConfig {
   identity?: OpenapiOnlineEndpoint_Identity | Computed<OpenapiOnlineEndpoint_Identity>;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Online endpoint configuration */
   properties: OpenapiOnlineEndpoint_Properties | Computed<OpenapiOnlineEndpoint_Properties>;
   /** The resource model definition representing SKU */
   sku?: OpenapiOnlineEndpoint_Sku | Computed<OpenapiOnlineEndpoint_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiOnlineEndpointAttrs {
@@ -91,10 +95,14 @@ export interface OpenapiOnlineEndpointAttrs {
   identity: OpenapiOnlineEndpoint_Identity;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Online endpoint configuration */
   properties: OpenapiOnlineEndpoint_Properties;
   /** The resource model definition representing SKU */
   sku: OpenapiOnlineEndpoint_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiOnlineEndpoint: ResourceBinding<OpenapiOnlineEndpointConfig, OpenapiOnlineEndpointAttrs> = {
@@ -106,6 +114,7 @@ export const OpenapiOnlineEndpoint: ResourceBinding<OpenapiOnlineEndpointConfig,
       fields: OpenapiOnlineEndpoint_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -116,5 +125,6 @@ export const OpenapiOnlineEndpoint: ResourceBinding<OpenapiOnlineEndpointConfig,
       kind: "object",
       fields: OpenapiOnlineEndpoint_SkuFields,
     },
+    tags: "tags",
   },
 };

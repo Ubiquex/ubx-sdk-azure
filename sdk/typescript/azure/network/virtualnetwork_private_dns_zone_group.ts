@@ -64,6 +64,8 @@ const VirtualnetworkPrivateDnsZoneGroup_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkPrivateDnsZoneGroupConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** Name of the resource that is unique within a resource group. This name can be used to access the resource. */
   name?: string | Computed<string>;
   /** Properties of the private dns zone group. */
@@ -73,6 +75,8 @@ export interface VirtualnetworkPrivateDnsZoneGroupConfig {
 export interface VirtualnetworkPrivateDnsZoneGroupAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** Name of the resource that is unique within a resource group. This name can be used to access the resource. */
   name: string;
   /** Properties of the private dns zone group. */
@@ -82,6 +86,7 @@ export interface VirtualnetworkPrivateDnsZoneGroupAttrs {
 export const VirtualnetworkPrivateDnsZoneGroup: ResourceBinding<VirtualnetworkPrivateDnsZoneGroupConfig, VirtualnetworkPrivateDnsZoneGroupAttrs> = {
   wireType: "azure_network_virtualnetwork_private_dns_zone_group",
   fields: {
+    id: "id",
     name: "name",
     properties: {
       wireName: "properties",

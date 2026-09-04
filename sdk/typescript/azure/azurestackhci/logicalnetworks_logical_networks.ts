@@ -226,15 +226,23 @@ const LogicalnetworksLogicalNetworks_PropertiesFields: FieldMap = {
 export interface LogicalnetworksLogicalNetworksConfig {
   /** The complex type of the extended location. */
   extendedLocation?: LogicalnetworksLogicalNetworks_ExtendedLocation | Computed<LogicalnetworksLogicalNetworks_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties under the logical network resource */
   properties?: LogicalnetworksLogicalNetworks_Properties | Computed<LogicalnetworksLogicalNetworks_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface LogicalnetworksLogicalNetworksAttrs {
   /** The complex type of the extended location. */
   extendedLocation: LogicalnetworksLogicalNetworks_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties under the logical network resource */
   properties: LogicalnetworksLogicalNetworks_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const LogicalnetworksLogicalNetworks: ResourceBinding<LogicalnetworksLogicalNetworksConfig, LogicalnetworksLogicalNetworksAttrs> = {
@@ -245,10 +253,12 @@ export const LogicalnetworksLogicalNetworks: ResourceBinding<LogicalnetworksLogi
       kind: "object",
       fields: LogicalnetworksLogicalNetworks_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: LogicalnetworksLogicalNetworks_PropertiesFields,
     },
+    tags: "tags",
   },
 };

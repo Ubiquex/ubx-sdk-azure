@@ -12,6 +12,21 @@ type ApplicationTypeVersionResource_Properties struct {
 	ProvisioningState any
 }
 
+type ApplicationTypeVersionResource_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC).
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var ApplicationTypeVersionResource_PropertiesFields = ubx.FieldMap{
 	"AppPackageUrl":        ubx.FieldSpec{WireName: "app_package_url"},
 	"DefaultParameterList": ubx.FieldSpec{WireName: "default_parameter_list"},
@@ -19,15 +34,33 @@ var ApplicationTypeVersionResource_PropertiesFields = ubx.FieldMap{
 }
 
 type ApplicationTypeVersionResourceConfig struct {
+	// It will be deprecated in New API, resource location depends on the parent resource.
+	Location any
 	// The properties of the application type version resource.
 	Properties any
+	// Azure resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Version any
 }
 
 type ApplicationTypeVersionResourceAttrs struct {
+	// Azure resource etag.
+	Etag any
+	// Azure resource identifier.
+	Id any
+	// It will be deprecated in New API, resource location depends on the parent resource.
+	Location any
+	// Azure resource name.
+	Name any
 	// The properties of the application type version resource.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Azure resource tags.
+	Tags any
+	// Azure resource type.
+	Type any
 	// path parameter, not part of the API's own resource representation
 	Version any
 }
@@ -35,11 +68,13 @@ type ApplicationTypeVersionResourceAttrs struct {
 var ApplicationTypeVersionResource = ubx.ResourceBinding{
 	WireType: "azure_servicefabric_application_type_version_resource",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ApplicationTypeVersionResource_PropertiesFields,
 		},
+		"Tags":    ubx.FieldSpec{WireName: "tags"},
 		"Version": ubx.FieldSpec{WireName: "version"},
 	},
 }

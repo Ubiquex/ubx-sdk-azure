@@ -303,19 +303,27 @@ _ManagedinstancesManagedInstance_SkuFields = {
 class ManagedinstancesManagedInstanceConfig:
     # Azure Active Directory identity configuration for a resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a managed instance.
     properties: Any = None
     # An ARM Resource SKU.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ManagedinstancesManagedInstanceAttrs:
     # Azure Active Directory identity configuration for a resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a managed instance.
     properties: Any = None
     # An ARM Resource SKU.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ManagedinstancesManagedInstance = ubx.ResourceBinding(
     wire_type="azure_sql_managedinstances_managed_instance",
@@ -325,6 +333,7 @@ ManagedinstancesManagedInstance = ubx.ResourceBinding(
             kind="object",
             fields=_ManagedinstancesManagedInstance_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -335,5 +344,6 @@ ManagedinstancesManagedInstance = ubx.ResourceBinding(
             kind="object",
             fields=_ManagedinstancesManagedInstance_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

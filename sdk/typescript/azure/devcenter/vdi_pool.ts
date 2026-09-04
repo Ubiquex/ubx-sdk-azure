@@ -34,22 +34,32 @@ const VdiPool_PropertiesFields: FieldMap = {
 };
 
 export interface VdiPoolConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of a Pool */
   properties?: VdiPool_Properties | Computed<VdiPool_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VdiPoolAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of a Pool */
   properties: VdiPool_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const VdiPool: ResourceBinding<VdiPoolConfig, VdiPoolAttrs> = {
   wireType: "azure_devcenter_vdi_pool",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VdiPool_PropertiesFields,
     },
+    tags: "tags",
   },
 };

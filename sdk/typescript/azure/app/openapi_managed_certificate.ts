@@ -23,22 +23,32 @@ const OpenapiManagedCertificate_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiManagedCertificateConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Certificate resource specific properties */
   properties?: OpenapiManagedCertificate_Properties | Computed<OpenapiManagedCertificate_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiManagedCertificateAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Certificate resource specific properties */
   properties: OpenapiManagedCertificate_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiManagedCertificate: ResourceBinding<OpenapiManagedCertificateConfig, OpenapiManagedCertificateAttrs> = {
   wireType: "azure_app_openapi_managed_certificate",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiManagedCertificate_PropertiesFields,
     },
+    tags: "tags",
   },
 };

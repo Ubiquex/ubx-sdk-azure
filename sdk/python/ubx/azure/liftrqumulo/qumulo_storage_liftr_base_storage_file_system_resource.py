@@ -119,15 +119,23 @@ _QumuloStorageLiftrBaseStorageFileSystemResource_PropertiesFields = {
 class QumuloStorageLiftrBaseStorageFileSystemResourceConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the Qumulo File System resource
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class QumuloStorageLiftrBaseStorageFileSystemResourceAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the Qumulo File System resource
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 QumuloStorageLiftrBaseStorageFileSystemResource = ubx.ResourceBinding(
     wire_type="azure_liftrqumulo_qumulo_storage_liftr_base_storage_file_system_resource",
@@ -137,10 +145,12 @@ QumuloStorageLiftrBaseStorageFileSystemResource = ubx.ResourceBinding(
             kind="object",
             fields=_QumuloStorageLiftrBaseStorageFileSystemResource_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_QumuloStorageLiftrBaseStorageFileSystemResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

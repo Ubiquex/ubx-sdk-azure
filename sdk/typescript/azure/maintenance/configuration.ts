@@ -58,6 +58,21 @@ export interface Configuration_Properties {
   visibility?: string | Computed<string>;
 }
 
+export interface Configuration_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const Configuration_Properties_InstallPatches_LinuxParametersFields: FieldMap = {
   classificationsToInclude: "classifications_to_include",
   packageNameMasksToExclude: "package_name_masks_to_exclude",
@@ -120,12 +135,20 @@ export interface ConfigurationConfig {
 }
 
 export interface ConfigurationAttrs {
+  /** Fully qualified identifier of the resource */
+  id: string;
   /** Gets or sets location of the resource */
   location: string;
+  /** Name of the resource */
+  name: string;
   /** Properties for maintenance configuration */
   properties: Configuration_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: Configuration_SystemData;
   /** Gets or sets tags of the resource */
   tags: Record<string, string>;
+  /** Type of the resource */
+  type: string;
 }
 
 export const Configuration: ResourceBinding<ConfigurationConfig, ConfigurationAttrs> = {

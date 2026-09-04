@@ -20,22 +20,32 @@ const OpenapiLogAnalyticsQueryPack_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiLogAnalyticsQueryPackConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties that define a Log Analytics QueryPack resource. */
   properties: OpenapiLogAnalyticsQueryPack_Properties | Computed<OpenapiLogAnalyticsQueryPack_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiLogAnalyticsQueryPackAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties that define a Log Analytics QueryPack resource. */
   properties: OpenapiLogAnalyticsQueryPack_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiLogAnalyticsQueryPack: ResourceBinding<OpenapiLogAnalyticsQueryPackConfig, OpenapiLogAnalyticsQueryPackAttrs> = {
   wireType: "azure_operationalinsights_openapi_log_analytics_query_pack",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiLogAnalyticsQueryPack_PropertiesFields,
     },
+    tags: "tags",
   },
 };

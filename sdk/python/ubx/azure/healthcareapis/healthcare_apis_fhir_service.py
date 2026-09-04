@@ -7,6 +7,22 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class HealthcareApisFhirService_Identity_UserAssignedIdentities:
+    client_id: Any = None
+    principal_id: Any = None
+
+@dataclasses.dataclass
+class HealthcareApisFhirService_Identity:
+    # The service principal ID of the system assigned identity. This property will only be provided for a system assigned identity.
+    principal_id: Any = None
+    # The tenant ID of the system assigned identity. This property will only be provided for a system assigned identity.
+    tenant_id: Any = None
+    # Type of identity being specified, currently SystemAssigned and None are allowed.
+    type: Any = None
+    # The set of user assigned identities associated with the resource. The userAssignedIdentities dictionary keys will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}. The dictionary values can be empty objects ({}) in requests.
+    user_assigned_identities: Any = None
+
+@dataclasses.dataclass
 class HealthcareApisFhirService_Properties_AcrConfiguration_OciArtifacts:
     digest: Any = None
     image_name: Any = None
@@ -151,6 +167,22 @@ class HealthcareApisFhirService_SystemData:
     last_modified_by: Any = None
     # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
+
+_HealthcareApisFhirService_Identity_UserAssignedIdentitiesFields = {
+    "client_id": ubx.FieldSpec(wire_name="client_id"),
+    "principal_id": ubx.FieldSpec(wire_name="principal_id"),
+}
+
+_HealthcareApisFhirService_IdentityFields = {
+    "principal_id": ubx.FieldSpec(wire_name="principal_id"),
+    "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
+    "type": ubx.FieldSpec(wire_name="type"),
+    "user_assigned_identities": ubx.FieldSpec(
+        wire_name="user_assigned_identities",
+        kind="map",
+        fields=_HealthcareApisFhirService_Identity_UserAssignedIdentitiesFields,
+    ),
+}
 
 _HealthcareApisFhirService_Properties_AcrConfiguration_OciArtifactsFields = {
     "digest": ubx.FieldSpec(wire_name="digest"),
@@ -317,6 +349,8 @@ _HealthcareApisFhirService_PropertiesFields = {
 
 @dataclasses.dataclass
 class HealthcareApisFhirServiceConfig:
+    # Setting indicating whether the service has a managed identity associated with it.
+    identity: Any = None
     # The kind of the service.
     kind: Any = None
     # Fhir Service properties.
@@ -324,6 +358,8 @@ class HealthcareApisFhirServiceConfig:
 
 @dataclasses.dataclass
 class HealthcareApisFhirServiceAttrs:
+    # Setting indicating whether the service has a managed identity associated with it.
+    identity: Any = None
     # The kind of the service.
     kind: Any = None
     # Fhir Service properties.
@@ -334,6 +370,11 @@ class HealthcareApisFhirServiceAttrs:
 HealthcareApisFhirService = ubx.ResourceBinding(
     wire_type="azure_healthcareapis_healthcare_apis_fhir_service",
     fields={
+        "identity": ubx.FieldSpec(
+            wire_name="identity",
+            kind="object",
+            fields=_HealthcareApisFhirService_IdentityFields,
+        ),
         "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",

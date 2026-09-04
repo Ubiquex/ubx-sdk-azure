@@ -213,19 +213,33 @@ var IntegrationServiceEnvironment_SkuFields = ubx.FieldMap{
 type IntegrationServiceEnvironmentConfig struct {
 	// Managed service identity properties.
 	Identity any
+	// The resource location.
+	Location any
 	// The integration service environment properties.
 	Properties any
 	// The integration service environment sku.
 	Sku any
+	// The resource tags.
+	Tags any
 }
 
 type IntegrationServiceEnvironmentAttrs struct {
+	// The resource id.
+	Id any
 	// Managed service identity properties.
 	Identity any
+	// The resource location.
+	Location any
+	// Gets the resource name.
+	Name any
 	// The integration service environment properties.
 	Properties any
 	// The integration service environment sku.
 	Sku any
+	// The resource tags.
+	Tags any
+	// Gets the resource type.
+	Type any
 }
 
 var IntegrationServiceEnvironment = ubx.ResourceBinding{
@@ -236,6 +250,7 @@ var IntegrationServiceEnvironment = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   IntegrationServiceEnvironment_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -246,5 +261,6 @@ var IntegrationServiceEnvironment = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   IntegrationServiceEnvironment_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

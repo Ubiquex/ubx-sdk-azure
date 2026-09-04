@@ -124,9 +124,13 @@ export interface OpenapiServerlessEndpointConfig {
   identity?: OpenapiServerlessEndpoint_Identity | Computed<OpenapiServerlessEndpoint_Identity>;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   properties: OpenapiServerlessEndpoint_Properties | Computed<OpenapiServerlessEndpoint_Properties>;
   /** The resource model definition representing SKU */
   sku?: OpenapiServerlessEndpoint_Sku | Computed<OpenapiServerlessEndpoint_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   name: string | Computed<string>;
 }
@@ -136,9 +140,13 @@ export interface OpenapiServerlessEndpointAttrs {
   identity: OpenapiServerlessEndpoint_Identity;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   properties: OpenapiServerlessEndpoint_Properties;
   /** The resource model definition representing SKU */
   sku: OpenapiServerlessEndpoint_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** path parameter, not part of the API's own resource representation */
   name: string;
 }
@@ -152,6 +160,7 @@ export const OpenapiServerlessEndpoint: ResourceBinding<OpenapiServerlessEndpoin
       fields: OpenapiServerlessEndpoint_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -162,6 +171,7 @@ export const OpenapiServerlessEndpoint: ResourceBinding<OpenapiServerlessEndpoin
       kind: "object",
       fields: OpenapiServerlessEndpoint_SkuFields,
     },
+    tags: "tags",
     name: "name",
   },
 };

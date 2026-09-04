@@ -11957,10 +11957,16 @@ var VirtualnetworkPublicIpaddress_PropertiesFields = ubx.FieldMap{
 type VirtualnetworkPublicIpaddressConfig struct {
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Public IP address properties.
 	Properties any
 	// SKU of a public IP address.
 	Sku any
+	// Resource tags.
+	Tags any
 	// A list of availability zones denoting the IP allocated for the resource needs to come from.
 	Zones any
 }
@@ -11970,10 +11976,20 @@ type VirtualnetworkPublicIpaddressAttrs struct {
 	Etag any
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Public IP address properties.
 	Properties any
 	// SKU of a public IP address.
 	Sku any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 	// A list of availability zones denoting the IP allocated for the resource needs to come from.
 	Zones any
 }
@@ -11986,6 +12002,8 @@ var VirtualnetworkPublicIpaddress = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualnetworkPublicIpaddress_ExtendedLocationFields,
 		},
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -11996,6 +12014,7 @@ var VirtualnetworkPublicIpaddress = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualnetworkPublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

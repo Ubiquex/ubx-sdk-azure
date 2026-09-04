@@ -90,23 +90,32 @@ _ElasticpoolsElasticPool_SkuFields = {
 
 @dataclasses.dataclass
 class ElasticpoolsElasticPoolConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of an elastic pool
     properties: Any = None
     # An ARM Resource SKU.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ElasticpoolsElasticPoolAttrs:
     # Kind of elastic pool. This is metadata used for the Azure portal experience.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of an elastic pool
     properties: Any = None
     # An ARM Resource SKU.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ElasticpoolsElasticPool = ubx.ResourceBinding(
     wire_type="azure_sql_elasticpools_elastic_pool",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -117,5 +126,6 @@ ElasticpoolsElasticPool = ubx.ResourceBinding(
             kind="object",
             fields=_ElasticpoolsElasticPool_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -32,6 +32,8 @@ var VirtualwanRoutingIntent_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanRoutingIntentConfig struct {
+	// Name of the resource.
+	Name any
 	// The properties of a RoutingIntent resource.
 	Properties any
 }
@@ -39,13 +41,18 @@ type VirtualwanRoutingIntentConfig struct {
 type VirtualwanRoutingIntentAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// The properties of a RoutingIntent resource.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualwanRoutingIntent = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_routing_intent",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

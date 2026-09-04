@@ -109,15 +109,23 @@ _CloudngfwLocalRulestackResource_PropertiesFields = {
 class CloudngfwLocalRulestackResourceConfig:
     # The properties of the managed service identities assigned to this resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # PAN Rulestack Describe Object
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class CloudngfwLocalRulestackResourceAttrs:
     # The properties of the managed service identities assigned to this resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # PAN Rulestack Describe Object
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 CloudngfwLocalRulestackResource = ubx.ResourceBinding(
     wire_type="azure_paloaltonetworks_cloudngfw_local_rulestack_resource",
@@ -127,10 +135,12 @@ CloudngfwLocalRulestackResource = ubx.ResourceBinding(
             kind="object",
             fields=_CloudngfwLocalRulestackResource_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_CloudngfwLocalRulestackResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

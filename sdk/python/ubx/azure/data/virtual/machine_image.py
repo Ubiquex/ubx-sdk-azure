@@ -7,6 +7,13 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class MachineImage_ExtendedLocation:
+    # The name of the extended location.
+    name: Any = None
+    # The type of extendedLocation.
+    type: Any = None
+
+@dataclasses.dataclass
 class MachineImage_Properties_AutomaticOsupgradeProperties:
     # Specifies whether automatic OS upgrade is supported on the image.
     automatic_osupgrade_supported: Any = None
@@ -86,11 +93,19 @@ class MachineImageConfig:
 @dataclasses.dataclass
 class MachineImageAttrs:
     edge_zone: Any = None
+    # The complex type of the extended location.
+    extended_location: Any = None
+    # The supported Azure location of the resource.
+    location: Any = None
+    # The name of the resource.
+    name: Any = None
     offer: Any = None
     # Describes the properties of a Virtual Machine Image.
     properties: Any = None
     publisher_name: Any = None
     skus: Any = None
+    # Specifies the tags that are assigned to the virtual machine. For more information about using tags, see [Using tags to organize your Azure resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags.md).
+    tags: Any = None
     version: Any = None
 
 MachineImage = ubx.DataSourceBinding(

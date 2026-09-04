@@ -29,6 +29,13 @@ export interface ConnectionSetting_Properties {
   settingId?: string | Computed<string>;
 }
 
+export interface ConnectionSetting_Sku {
+  /** The name of SKU. */
+  name: string | Computed<string>;
+  /** Gets the sku tier. This is based on the SKU name. */
+  tier?: string | Computed<string>;
+}
+
 const ConnectionSetting_Properties_ParametersFields: FieldMap = {
   key: "key",
   value: "value",
@@ -51,23 +58,65 @@ const ConnectionSetting_PropertiesFields: FieldMap = {
   settingId: "setting_id",
 };
 
+const ConnectionSetting_SkuFields: FieldMap = {
+  name: "name",
+  tier: "tier",
+};
+
 export interface ConnectionSettingConfig {
+  /** Entity Tag. */
+  etag?: string | Computed<string>;
+  /** Indicates the type of bot service */
+  kind?: string | Computed<string>;
+  /** Specifies the location of the resource. */
+  location?: string | Computed<string>;
   /** Properties for a Connection Setting Item */
   properties?: ConnectionSetting_Properties | Computed<ConnectionSetting_Properties>;
+  /** The SKU of the cognitive services account. */
+  sku?: ConnectionSetting_Sku | Computed<ConnectionSetting_Sku>;
+  /** Contains resource tags defined as key/value pairs. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ConnectionSettingAttrs {
+  /** Entity Tag. */
+  etag: string;
+  /** Specifies the resource ID. */
+  id: string;
+  /** Indicates the type of bot service */
+  kind: string;
+  /** Specifies the location of the resource. */
+  location: string;
+  /** Specifies the name of the resource. */
+  name: string;
   /** Properties for a Connection Setting Item */
   properties: ConnectionSetting_Properties;
+  /** The SKU of the cognitive services account. */
+  sku: ConnectionSetting_Sku;
+  /** Contains resource tags defined as key/value pairs. */
+  tags: Record<string, string>;
+  /** Specifies the type of the resource. */
+  type: string;
+  /** Entity zones */
+  zones: string[];
 }
 
 export const ConnectionSetting: ResourceBinding<ConnectionSettingConfig, ConnectionSettingAttrs> = {
   wireType: "azure_botservice_connection_setting",
   fields: {
+    etag: "etag",
+    kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ConnectionSetting_PropertiesFields,
     },
+    sku: {
+      wireName: "sku",
+      kind: "object",
+      fields: ConnectionSetting_SkuFields,
+    },
+    tags: "tags",
   },
 };

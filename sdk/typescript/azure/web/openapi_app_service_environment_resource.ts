@@ -191,8 +191,12 @@ const OpenapiAppServiceEnvironmentResource_PropertiesFields: FieldMap = {
 export interface OpenapiAppServiceEnvironmentResourceConfig {
   /** Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Description of an App Service Environment. */
   properties?: OpenapiAppServiceEnvironmentResource_Properties | Computed<OpenapiAppServiceEnvironmentResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   name: string | Computed<string>;
 }
@@ -200,8 +204,12 @@ export interface OpenapiAppServiceEnvironmentResourceConfig {
 export interface OpenapiAppServiceEnvironmentResourceAttrs {
   /** Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Description of an App Service Environment. */
   properties: OpenapiAppServiceEnvironmentResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** path parameter, not part of the API's own resource representation */
   name: string;
 }
@@ -210,11 +218,13 @@ export const OpenapiAppServiceEnvironmentResource: ResourceBinding<OpenapiAppSer
   wireType: "azure_web_openapi_app_service_environment_resource",
   fields: {
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiAppServiceEnvironmentResource_PropertiesFields,
     },
+    tags: "tags",
     name: "name",
   },
 };

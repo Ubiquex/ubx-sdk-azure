@@ -116,15 +116,23 @@ const Pool_PropertiesFields: FieldMap = {
 export interface PoolConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: Pool_Identity | Computed<Pool_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Pool properties */
   properties?: Pool_Properties | Computed<Pool_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface PoolAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: Pool_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Pool properties */
   properties: Pool_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Pool: ResourceBinding<PoolConfig, PoolAttrs> = {
@@ -135,10 +143,12 @@ export const Pool: ResourceBinding<PoolConfig, PoolAttrs> = {
       kind: "object",
       fields: Pool_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Pool_PropertiesFields,
     },
+    tags: "tags",
   },
 };

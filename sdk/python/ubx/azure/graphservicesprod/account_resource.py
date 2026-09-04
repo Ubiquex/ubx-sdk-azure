@@ -34,23 +34,39 @@ _AccountResource_PropertiesFields = {
 
 @dataclasses.dataclass
 class AccountResourceConfig:
+    # Location of the resource.
+    location: Any = None
     # Property bag from billing account
     properties: Any = None
+    # resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class AccountResourceAttrs:
+    # Azure resource ID.
+    id: Any = None
+    # Location of the resource.
+    location: Any = None
+    # Azure resource name.
+    name: Any = None
     # Property bag from billing account
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # resource tags.
+    tags: Any = None
+    # Azure resource type.
+    type: Any = None
 
 AccountResource = ubx.ResourceBinding(
     wire_type="azure_graphservicesprod_account_resource",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_AccountResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

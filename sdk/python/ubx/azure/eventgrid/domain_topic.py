@@ -32,10 +32,16 @@ class DomainTopicConfig:
 
 @dataclasses.dataclass
 class DomainTopicAttrs:
+    # Fully qualified identifier of the resource.
+    id: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the Domain Topic.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Type of the resource.
+    type: Any = None
 
 DomainTopic = ubx.ResourceBinding(
     wire_type="azure_eventgrid_domain_topic",

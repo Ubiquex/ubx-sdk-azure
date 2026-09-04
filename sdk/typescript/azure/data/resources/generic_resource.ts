@@ -52,6 +52,21 @@ export interface GenericResource_Sku {
   tier?: string | Computed<string>;
 }
 
+export interface GenericResource_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 export interface GenericResourceConfig {
   apiVersion: string | Computed<string>;
   resourceId: string | Computed<string>;
@@ -61,6 +76,8 @@ export interface GenericResourceAttrs {
   apiVersion: string;
   /** Resource extended location. */
   extendedLocation: GenericResource_ExtendedLocation;
+  /** Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} */
+  id: string;
   /** Identity for the resource. */
   identity: GenericResource_Identity;
   /** The kind of the resource. */
@@ -69,6 +86,8 @@ export interface GenericResourceAttrs {
   location: string;
   /** ID of the resource that manages this resource. */
   managedBy: string;
+  /** The name of the resource */
+  name: string;
   /** Plan for the resource. */
   plan: GenericResource_Plan;
   /** The resource-specific properties for this resource. */
@@ -76,8 +95,12 @@ export interface GenericResourceAttrs {
   resourceId: string;
   /** SKU for the resource. */
   sku: GenericResource_Sku;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: GenericResource_SystemData;
   /** Resource tags */
   tags: Record<string, string>;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const GenericResource: DataSourceBinding<GenericResourceConfig, GenericResourceAttrs> = {

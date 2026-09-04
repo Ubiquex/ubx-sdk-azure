@@ -216,8 +216,12 @@ export interface OpenapiWorkspaceConfig {
   etag?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: OpenapiWorkspace_Identity | Computed<OpenapiWorkspace_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Workspace properties. */
   properties?: OpenapiWorkspace_Properties | Computed<OpenapiWorkspace_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiWorkspaceAttrs {
@@ -225,8 +229,12 @@ export interface OpenapiWorkspaceAttrs {
   etag: string;
   /** Identity for the resource. */
   identity: OpenapiWorkspace_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Workspace properties. */
   properties: OpenapiWorkspace_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiWorkspace: ResourceBinding<OpenapiWorkspaceConfig, OpenapiWorkspaceAttrs> = {
@@ -238,10 +246,12 @@ export const OpenapiWorkspace: ResourceBinding<OpenapiWorkspaceConfig, OpenapiWo
       kind: "object",
       fields: OpenapiWorkspace_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiWorkspace_PropertiesFields,
     },
+    tags: "tags",
   },
 };

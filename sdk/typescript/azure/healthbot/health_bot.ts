@@ -85,19 +85,27 @@ const HealthBot_SkuFields: FieldMap = {
 export interface HealthBotConfig {
   /** Identity for the resource. */
   identity?: HealthBot_Identity | Computed<HealthBot_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The properties of a Azure Health Bot. The Health Bot Service is a cloud platform that empowers developers in Healthcare organizations to build and deploy their compliant, AI-powered virtual health assistants and health bots, that help them improve processes and reduce costs. */
   properties?: HealthBot_Properties | Computed<HealthBot_Properties>;
   /** The resource model definition representing SKU */
   sku: HealthBot_Sku | Computed<HealthBot_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface HealthBotAttrs {
   /** Identity for the resource. */
   identity: HealthBot_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** The properties of a Azure Health Bot. The Health Bot Service is a cloud platform that empowers developers in Healthcare organizations to build and deploy their compliant, AI-powered virtual health assistants and health bots, that help them improve processes and reduce costs. */
   properties: HealthBot_Properties;
   /** The resource model definition representing SKU */
   sku: HealthBot_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const HealthBot: ResourceBinding<HealthBotConfig, HealthBotAttrs> = {
@@ -108,6 +116,7 @@ export const HealthBot: ResourceBinding<HealthBotConfig, HealthBotAttrs> = {
       kind: "object",
       fields: HealthBot_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -118,5 +127,6 @@ export const HealthBot: ResourceBinding<HealthBotConfig, HealthBotAttrs> = {
       kind: "object",
       fields: HealthBot_SkuFields,
     },
+    tags: "tags",
   },
 };

@@ -1,6 +1,6 @@
 {
   "name": "@ubx/sdk-azure",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "license": "Apache-2.0",
   "exports": {
     "./azure/advisor/arm_error_response": "./azure/advisor/arm_error_response.ts",
@@ -1894,6 +1894,7 @@
     "./azure/data/synapse/keys_key": "./azure/data/synapse/keys_key.ts",
     "./azure/data/synapse/privateendpointconnections_private_endpoint_connection": "./azure/data/synapse/privateendpointconnections_private_endpoint_connection.ts",
     "./azure/data/synapse/privatelinkhub_private_endpoint_connection_for_private_link_hub": "./azure/data/synapse/privatelinkhub_private_endpoint_connection_for_private_link_hub.ts",
+    "./azure/data/synapse/privatelinkhub_private_endpoint_connection_for_private_link_hub_2": "./azure/data/synapse/privatelinkhub_private_endpoint_connection_for_private_link_hub_2.ts",
     "./azure/data/synapse/privatelinkhub_private_link_hub": "./azure/data/synapse/privatelinkhub_private_link_hub.ts",
     "./azure/data/synapse/sqlpool_data_masking_rule": "./azure/data/synapse/sqlpool_data_masking_rule.ts",
     "./azure/data/synapse/sqlpool_data_warehouse_user_activities": "./azure/data/synapse/sqlpool_data_warehouse_user_activities.ts",

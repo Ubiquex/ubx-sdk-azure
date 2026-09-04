@@ -84,8 +84,12 @@ export interface UpgradeStatusInfoConfig {
 }
 
 export interface UpgradeStatusInfoAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The status of the latest virtual machine scale set rolling upgrade. */
   properties: UpgradeStatusInfo_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   vmScaleSetName: string;
 }
 

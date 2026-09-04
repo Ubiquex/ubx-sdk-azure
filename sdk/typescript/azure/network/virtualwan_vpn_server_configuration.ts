@@ -461,24 +461,46 @@ const VirtualwanVpnServerConfiguration_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanVpnServerConfigurationConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
+  /** Resource name. */
+  name?: string | Computed<string>;
   /** Parameters for VpnServerConfiguration. */
   properties?: VirtualwanVpnServerConfiguration_Properties | Computed<VirtualwanVpnServerConfiguration_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualwanVpnServerConfigurationAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Parameters for VpnServerConfiguration. */
   properties: VirtualwanVpnServerConfiguration_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualwanVpnServerConfiguration: ResourceBinding<VirtualwanVpnServerConfigurationConfig, VirtualwanVpnServerConfigurationAttrs> = {
   wireType: "azure_network_virtualwan_vpn_server_configuration",
   fields: {
+    id: "id",
+    location: "location",
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualwanVpnServerConfiguration_PropertiesFields,
     },
+    tags: "tags",
   },
 };

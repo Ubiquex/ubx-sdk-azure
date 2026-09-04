@@ -15,15 +15,24 @@ class OpenapiBackupResult_Properties:
 
 @dataclasses.dataclass
 class OpenapiBackupResultConfig:
-    pass
+    # The Azure blob storage container Uri which contains the backup
+    azure_storage_blob_container_uri: Any = None
+    # The SAS token pointing to an Azure blob storage container. This property is reserved for Azure Backup Service.
+    token: Any = None
 
 @dataclasses.dataclass
 class OpenapiBackupResultAttrs:
+    # The Azure blob storage container Uri which contains the backup
+    azure_storage_blob_container_uri: Any = None
     # Properties of the Cloud HSM Cluster
     properties: Any = None
+    # The SAS token pointing to an Azure blob storage container. This property is reserved for Azure Backup Service.
+    token: Any = None
 
 OpenapiBackupResult = ubx.ResourceBinding(
     wire_type="azure_hardwaresecuritymodules_openapi_backup_result",
     fields={
+        "azure_storage_blob_container_uri": ubx.FieldSpec(wire_name="azure_storage_blob_container_uri"),
+        "token": ubx.FieldSpec(wire_name="token"),
     },
 )

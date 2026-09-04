@@ -194,22 +194,32 @@ const OpenapiEndpoint_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiEndpointConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The JSON object that contains the properties required to create an endpoint. */
   properties?: OpenapiEndpoint_Properties | Computed<OpenapiEndpoint_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiEndpointAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The JSON object that contains the properties required to create an endpoint. */
   properties: OpenapiEndpoint_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiEndpoint: ResourceBinding<OpenapiEndpointConfig, OpenapiEndpointAttrs> = {
   wireType: "azure_cdn_openapi_endpoint",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiEndpoint_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -77,8 +77,12 @@ type WorkbooksWorkbookConfig struct {
 	Identity any
 	// The kind of workbook. Only valid value is shared.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Properties that contain a workbook.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type WorkbooksWorkbookAttrs struct {
@@ -88,8 +92,12 @@ type WorkbooksWorkbookAttrs struct {
 	Identity any
 	// The kind of workbook. Only valid value is shared.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Properties that contain a workbook.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var WorkbooksWorkbook = ubx.ResourceBinding{
@@ -101,11 +109,13 @@ var WorkbooksWorkbook = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   WorkbooksWorkbook_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   WorkbooksWorkbook_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

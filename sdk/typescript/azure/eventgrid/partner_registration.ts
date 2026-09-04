@@ -29,24 +29,34 @@ const PartnerRegistration_PropertiesFields: FieldMap = {
 };
 
 export interface PartnerRegistrationConfig {
+  /** Location of the resource. */
+  location: string | Computed<string>;
   /** Properties of the partner registration. */
   properties?: PartnerRegistration_Properties | Computed<PartnerRegistration_Properties>;
+  /** Tags of the resource. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface PartnerRegistrationAttrs {
+  /** Location of the resource. */
+  location: string;
   /** Properties of the partner registration. */
   properties: PartnerRegistration_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: PartnerRegistration_SystemData;
+  /** Tags of the resource. */
+  tags: Record<string, string>;
 }
 
 export const PartnerRegistration: ResourceBinding<PartnerRegistrationConfig, PartnerRegistrationAttrs> = {
   wireType: "azure_eventgrid_partner_registration",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: PartnerRegistration_PropertiesFields,
     },
+    tags: "tags",
   },
 };

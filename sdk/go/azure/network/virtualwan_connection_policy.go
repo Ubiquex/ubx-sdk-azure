@@ -143,18 +143,29 @@ var VirtualwanConnectionPolicy_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanConnectionPolicyConfig struct {
+	// Resource ID.
+	Id any
 	// Properties of the ConnectionPolicy resource.
 	Properties any
 }
 
 type VirtualwanConnectionPolicyAttrs struct {
+	// A unique read-only string that changes whenever the resource is updated.
+	Etag any
+	// Resource ID.
+	Id any
+	// Resource name.
+	Name any
 	// Properties of the ConnectionPolicy resource.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualwanConnectionPolicy = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_connection_policy",
 	Fields: ubx.FieldMap{
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

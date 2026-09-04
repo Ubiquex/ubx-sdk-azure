@@ -49,19 +49,33 @@ const App_SkuFields: FieldMap = {
 export interface AppConfig {
   /** Managed service identity (either system assigned, or none) */
   identity?: App_Identity | Computed<App_Identity>;
+  /** The resource location. */
+  location: string | Computed<string>;
   /** The properties of an IoT Central application. */
   properties?: App_Properties | Computed<App_Properties>;
   /** Information about the SKU of the IoT Central application. */
   sku: App_Sku | Computed<App_Sku>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface AppAttrs {
+  /** The ARM resource identifier. */
+  id: string;
   /** Managed service identity (either system assigned, or none) */
   identity: App_Identity;
+  /** The resource location. */
+  location: string;
+  /** The ARM resource name. */
+  name: string;
   /** The properties of an IoT Central application. */
   properties: App_Properties;
   /** Information about the SKU of the IoT Central application. */
   sku: App_Sku;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** The resource type. */
+  type: string;
 }
 
 export const App: ResourceBinding<AppConfig, AppAttrs> = {
@@ -72,6 +86,7 @@ export const App: ResourceBinding<AppConfig, AppAttrs> = {
       kind: "object",
       fields: App_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -82,5 +97,6 @@ export const App: ResourceBinding<AppConfig, AppAttrs> = {
       kind: "object",
       fields: App_SkuFields,
     },
+    tags: "tags",
   },
 };

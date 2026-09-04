@@ -11,27 +11,37 @@ const ResourceGroup_PropertiesFields: FieldMap = {
 };
 
 export interface ResourceGroupConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The ID of the resource that manages this resource group. */
   managedBy?: string | Computed<string>;
   /** The resource group properties. */
   properties?: ResourceGroup_Properties | Computed<ResourceGroup_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ResourceGroupAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The ID of the resource that manages this resource group. */
   managedBy: string;
   /** The resource group properties. */
   properties: ResourceGroup_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ResourceGroup: ResourceBinding<ResourceGroupConfig, ResourceGroupAttrs> = {
   wireType: "azure_resources_resource_group",
   fields: {
+    location: "location",
     managedBy: "managed_by",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ResourceGroup_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -270,6 +270,8 @@ class OperationJobExtendedInfoAttrs:
     backup_instance: Any = None
     # Name or Arm Id of the job created for this operation.
     job_id: Any = None
+    # This property will be used as the discriminator for deciding the specific types in the polymorphic chain of types.
+    object_type: Any = None
     # path parameter, not part of the API's own resource representation
     location: Any = None
 

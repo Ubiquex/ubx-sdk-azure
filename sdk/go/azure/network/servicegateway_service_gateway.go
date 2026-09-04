@@ -4905,10 +4905,14 @@ var ServicegatewayServiceGateway_PropertiesFields = ubx.FieldMap{
 }
 
 type ServicegatewayServiceGatewayConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the service gateway.
 	Properties any
 	// SKU of a service gateway.
 	Sku any
+	// Resource tags.
+	Tags any
 	// A list of availability zones denoting the zone in which service gateway should be deployed. - The zone values must be provided as strings representing numeric identifiers like "1", "2", "3" etc.
 	Zones any
 }
@@ -4916,10 +4920,14 @@ type ServicegatewayServiceGatewayConfig struct {
 type ServicegatewayServiceGatewayAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the service gateway.
 	Properties any
 	// SKU of a service gateway.
 	Sku any
+	// Resource tags.
+	Tags any
 	// A list of availability zones denoting the zone in which service gateway should be deployed. - The zone values must be provided as strings representing numeric identifiers like "1", "2", "3" etc.
 	Zones any
 }
@@ -4927,6 +4935,7 @@ type ServicegatewayServiceGatewayAttrs struct {
 var ServicegatewayServiceGateway = ubx.ResourceBinding{
 	WireType: "azure_network_servicegateway_service_gateway",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -4937,6 +4946,7 @@ var ServicegatewayServiceGateway = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ServicegatewayServiceGateway_Properties_RouteTargetAddress_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

@@ -306,21 +306,29 @@ _Namespace_SkuFields = {
 class NamespaceConfig:
     # The identity information for the resource.
     identity: Any = None
+    # Location of the resource.
+    location: Any = None
     # Properties of the namespace resource.
     properties: Any = None
     # Represents available Sku pricing tiers.
     sku: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 @dataclasses.dataclass
 class NamespaceAttrs:
     # The identity information for the resource.
     identity: Any = None
+    # Location of the resource.
+    location: Any = None
     # Properties of the namespace resource.
     properties: Any = None
     # Represents available Sku pricing tiers.
     sku: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 Namespace = ubx.ResourceBinding(
     wire_type="azure_eventgrid_namespace",
@@ -330,6 +338,7 @@ Namespace = ubx.ResourceBinding(
             kind="object",
             fields=_Namespace_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -340,5 +349,6 @@ Namespace = ubx.ResourceBinding(
             kind="object",
             fields=_Namespace_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

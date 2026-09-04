@@ -5884,6 +5884,8 @@ const VirtualnetworkNetworkInterfaceTapConfiguration_PropertiesFields: FieldMap 
 };
 
 export interface VirtualnetworkNetworkInterfaceTapConfigurationConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of Virtual Network Tap configuration. */
   properties?: VirtualnetworkNetworkInterfaceTapConfiguration_Properties | Computed<VirtualnetworkNetworkInterfaceTapConfiguration_Properties>;
 }
@@ -5891,13 +5893,18 @@ export interface VirtualnetworkNetworkInterfaceTapConfigurationConfig {
 export interface VirtualnetworkNetworkInterfaceTapConfigurationAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of Virtual Network Tap configuration. */
   properties: VirtualnetworkNetworkInterfaceTapConfiguration_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkNetworkInterfaceTapConfiguration: ResourceBinding<VirtualnetworkNetworkInterfaceTapConfigurationConfig, VirtualnetworkNetworkInterfaceTapConfigurationAttrs> = {
   wireType: "azure_network_virtualnetwork_network_interface_tap_configuration",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -15,6 +15,21 @@ class ApplicationTypeVersionResource_Properties:
     # The current deployment or provisioning state, which only appears in the response
     provisioning_state: Any = None
 
+@dataclasses.dataclass
+class ApplicationTypeVersionResource_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC).
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _ApplicationTypeVersionResource_PropertiesFields = {
     "app_package_url": ubx.FieldSpec(wire_name="app_package_url"),
     "default_parameter_list": ubx.FieldSpec(wire_name="default_parameter_list"),
@@ -23,26 +38,46 @@ _ApplicationTypeVersionResource_PropertiesFields = {
 
 @dataclasses.dataclass
 class ApplicationTypeVersionResourceConfig:
+    # It will be deprecated in New API, resource location depends on the parent resource.
+    location: Any = None
     # The properties of the application type version resource.
     properties: Any = None
+    # Azure resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     version: Any = None
 
 @dataclasses.dataclass
 class ApplicationTypeVersionResourceAttrs:
+    # Azure resource etag.
+    etag: Any = None
+    # Azure resource identifier.
+    id: Any = None
+    # It will be deprecated in New API, resource location depends on the parent resource.
+    location: Any = None
+    # Azure resource name.
+    name: Any = None
     # The properties of the application type version resource.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Azure resource tags.
+    tags: Any = None
+    # Azure resource type.
+    type: Any = None
     # path parameter, not part of the API's own resource representation
     version: Any = None
 
 ApplicationTypeVersionResource = ubx.ResourceBinding(
     wire_type="azure_servicefabric_application_type_version_resource",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ApplicationTypeVersionResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "version": ubx.FieldSpec(wire_name="version"),
     },
 )

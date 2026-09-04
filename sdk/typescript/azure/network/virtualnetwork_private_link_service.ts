@@ -13814,8 +13814,14 @@ const VirtualnetworkPrivateLinkService_PropertiesFields: FieldMap = {
 export interface VirtualnetworkPrivateLinkServiceConfig {
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkPrivateLinkService_ExtendedLocation | Computed<VirtualnetworkPrivateLinkService_ExtendedLocation>;
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties of the private link service. */
   properties?: VirtualnetworkPrivateLinkService_Properties | Computed<VirtualnetworkPrivateLinkService_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkPrivateLinkServiceAttrs {
@@ -13823,8 +13829,18 @@ export interface VirtualnetworkPrivateLinkServiceAttrs {
   etag: string;
   /** ExtendedLocation complex type. */
   extendedLocation: VirtualnetworkPrivateLinkService_ExtendedLocation;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of the private link service. */
   properties: VirtualnetworkPrivateLinkService_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkPrivateLinkService: ResourceBinding<VirtualnetworkPrivateLinkServiceConfig, VirtualnetworkPrivateLinkServiceAttrs> = {
@@ -13835,10 +13851,13 @@ export const VirtualnetworkPrivateLinkService: ResourceBinding<VirtualnetworkPri
       kind: "object",
       fields: VirtualnetworkPrivateLinkService_ExtendedLocationFields,
     },
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkPrivateLinkService_PropertiesFields,
     },
+    tags: "tags",
   },
 };

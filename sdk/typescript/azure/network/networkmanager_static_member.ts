@@ -37,10 +37,18 @@ export interface NetworkmanagerStaticMemberConfig {
 }
 
 export interface NetworkmanagerStaticMemberAttrs {
+  /** A unique read-only string that changes whenever the resource is updated. */
+  etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource name. */
+  name: string;
   /** Properties of static member. */
   properties: NetworkmanagerStaticMember_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: NetworkmanagerStaticMember_SystemData;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkmanagerStaticMember: ResourceBinding<NetworkmanagerStaticMemberConfig, NetworkmanagerStaticMemberAttrs> = {

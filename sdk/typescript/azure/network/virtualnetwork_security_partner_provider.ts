@@ -33,24 +33,43 @@ const VirtualnetworkSecurityPartnerProvider_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkSecurityPartnerProviderConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties of the Security Partner Provider. */
   properties?: VirtualnetworkSecurityPartnerProvider_Properties | Computed<VirtualnetworkSecurityPartnerProvider_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkSecurityPartnerProviderAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of the Security Partner Provider. */
   properties: VirtualnetworkSecurityPartnerProvider_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkSecurityPartnerProvider: ResourceBinding<VirtualnetworkSecurityPartnerProviderConfig, VirtualnetworkSecurityPartnerProviderAttrs> = {
   wireType: "azure_network_virtualnetwork_security_partner_provider",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkSecurityPartnerProvider_PropertiesFields,
     },
+    tags: "tags",
   },
 };

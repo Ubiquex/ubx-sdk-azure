@@ -356,19 +356,27 @@ var OpenapiServer_SkuFields = ubx.FieldMap{
 type OpenapiServerConfig struct {
 	// Properties to configure Identity for Bring your Own Keys
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a server.
 	Properties any
 	// Billing information related properties of a server.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiServerAttrs struct {
 	// Properties to configure Identity for Bring your Own Keys
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a server.
 	Properties any
 	// Billing information related properties of a server.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiServer = ubx.ResourceBinding{
@@ -379,6 +387,7 @@ var OpenapiServer = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiServer_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -389,5 +398,6 @@ var OpenapiServer = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiServer_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

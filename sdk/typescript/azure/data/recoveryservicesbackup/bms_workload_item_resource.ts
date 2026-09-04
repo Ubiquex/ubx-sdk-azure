@@ -25,6 +25,8 @@ export interface BmsWorkloadItemResourceConfig {
 export interface BmsWorkloadItemResourceAttrs {
   containerName: string;
   fabricName: string;
+  /** The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200. */
+  nextLink: string;
   /** List of resources. */
   value: BmsWorkloadItemResource_Value[];
   vaultName: string;

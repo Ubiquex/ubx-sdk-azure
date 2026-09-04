@@ -210,10 +210,16 @@ const VirtualnetworkPublicIpprefix_SkuFields: FieldMap = {
 export interface VirtualnetworkPublicIpprefixConfig {
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkPublicIpprefix_ExtendedLocation | Computed<VirtualnetworkPublicIpprefix_ExtendedLocation>;
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Public IP prefix properties. */
   properties?: VirtualnetworkPublicIpprefix_Properties | Computed<VirtualnetworkPublicIpprefix_Properties>;
   /** SKU of a public IP prefix. */
   sku?: VirtualnetworkPublicIpprefix_Sku | Computed<VirtualnetworkPublicIpprefix_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** A list of availability zones denoting the IP allocated for the resource needs to come from. */
   zones?: string[] | Computed<string[]>;
 }
@@ -223,10 +229,20 @@ export interface VirtualnetworkPublicIpprefixAttrs {
   etag: string;
   /** ExtendedLocation complex type. */
   extendedLocation: VirtualnetworkPublicIpprefix_ExtendedLocation;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Public IP prefix properties. */
   properties: VirtualnetworkPublicIpprefix_Properties;
   /** SKU of a public IP prefix. */
   sku: VirtualnetworkPublicIpprefix_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
   /** A list of availability zones denoting the IP allocated for the resource needs to come from. */
   zones: string[];
 }
@@ -239,6 +255,8 @@ export const VirtualnetworkPublicIpprefix: ResourceBinding<VirtualnetworkPublicI
       kind: "object",
       fields: VirtualnetworkPublicIpprefix_ExtendedLocationFields,
     },
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -249,6 +267,7 @@ export const VirtualnetworkPublicIpprefix: ResourceBinding<VirtualnetworkPublicI
       kind: "object",
       fields: VirtualnetworkPublicIpprefix_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

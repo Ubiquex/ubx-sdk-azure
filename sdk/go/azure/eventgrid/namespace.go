@@ -302,21 +302,29 @@ var Namespace_SkuFields = ubx.FieldMap{
 type NamespaceConfig struct {
 	// The identity information for the resource.
 	Identity any
+	// Location of the resource.
+	Location any
 	// Properties of the namespace resource.
 	Properties any
 	// Represents available Sku pricing tiers.
 	Sku any
+	// Tags of the resource.
+	Tags any
 }
 
 type NamespaceAttrs struct {
 	// The identity information for the resource.
 	Identity any
+	// Location of the resource.
+	Location any
 	// Properties of the namespace resource.
 	Properties any
 	// Represents available Sku pricing tiers.
 	Sku any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Tags of the resource.
+	Tags any
 }
 
 var Namespace = ubx.ResourceBinding{
@@ -327,6 +335,7 @@ var Namespace = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Namespace_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -337,5 +346,6 @@ var Namespace = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Namespace_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

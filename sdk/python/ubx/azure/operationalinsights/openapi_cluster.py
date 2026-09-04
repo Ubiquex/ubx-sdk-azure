@@ -177,19 +177,27 @@ _OpenapiCluster_SkuFields = {
 class OpenapiClusterConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Cluster properties.
     properties: Any = None
     # The cluster sku definition.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiClusterAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Cluster properties.
     properties: Any = None
     # The cluster sku definition.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiCluster = ubx.ResourceBinding(
     wire_type="azure_operationalinsights_openapi_cluster",
@@ -199,6 +207,7 @@ OpenapiCluster = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiCluster_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -209,5 +218,6 @@ OpenapiCluster = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiCluster_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

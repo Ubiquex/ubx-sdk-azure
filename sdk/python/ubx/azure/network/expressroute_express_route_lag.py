@@ -194,8 +194,12 @@ _ExpressrouteExpressRouteLag_PropertiesFields = {
 class ExpressrouteExpressRouteLagConfig:
     # Identity for the resource.
     identity: Any = None
+    # Resource location.
+    location: Any = None
     # Properties specific to ExpressRouteLag resources.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLagAttrs:
@@ -205,8 +209,14 @@ class ExpressrouteExpressRouteLagAttrs:
     id: Any = None
     # Identity for the resource.
     identity: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties specific to ExpressRouteLag resources.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The type of the resource.
     type: Any = None
 
@@ -218,10 +228,12 @@ ExpressrouteExpressRouteLag = ubx.ResourceBinding(
             kind="object",
             fields=_ExpressrouteExpressRouteLag_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ExpressrouteExpressRouteLag_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

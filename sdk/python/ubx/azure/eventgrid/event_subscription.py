@@ -204,10 +204,16 @@ class EventSubscriptionConfig:
 
 @dataclasses.dataclass
 class EventSubscriptionAttrs:
+    # Fully qualified identifier of the resource.
+    id: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the Event Subscription.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Type of the resource.
+    type: Any = None
     # path parameter, not part of the API's own resource representation
     scope: Any = None
 

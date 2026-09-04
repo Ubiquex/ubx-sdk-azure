@@ -136,17 +136,25 @@ const FluidRelayServer_PropertiesFields: FieldMap = {
 export interface FluidRelayServerConfig {
   /** Identity for the resource. */
   identity?: FluidRelayServer_Identity | Computed<FluidRelayServer_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The properties of a Fluid Relay Service resource. */
   properties?: FluidRelayServer_Properties | Computed<FluidRelayServer_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface FluidRelayServerAttrs {
   /** Identity for the resource. */
   identity: FluidRelayServer_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** The properties of a Fluid Relay Service resource. */
   properties: FluidRelayServer_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: FluidRelayServer_SystemData;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const FluidRelayServer: ResourceBinding<FluidRelayServerConfig, FluidRelayServerAttrs> = {
@@ -157,10 +165,12 @@ export const FluidRelayServer: ResourceBinding<FluidRelayServerConfig, FluidRela
       kind: "object",
       fields: FluidRelayServer_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: FluidRelayServer_PropertiesFields,
     },
+    tags: "tags",
   },
 };

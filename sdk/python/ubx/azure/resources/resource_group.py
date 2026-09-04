@@ -17,26 +17,36 @@ _ResourceGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class ResourceGroupConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # The ID of the resource that manages this resource group.
     managed_by: Any = None
     # The resource group properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ResourceGroupAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # The ID of the resource that manages this resource group.
     managed_by: Any = None
     # The resource group properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ResourceGroup = ubx.ResourceBinding(
     wire_type="azure_resources_resource_group",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "managed_by": ubx.FieldSpec(wire_name="managed_by"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ResourceGroup_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

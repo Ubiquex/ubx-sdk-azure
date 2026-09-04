@@ -1373,8 +1373,12 @@ export interface OpenapiSiteConfig {
   identity?: OpenapiSite_Identity | Computed<OpenapiSite_Identity>;
   /** Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Site resource specific properties */
   properties?: OpenapiSite_Properties | Computed<OpenapiSite_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   name: string | Computed<string>;
 }
@@ -1386,8 +1390,12 @@ export interface OpenapiSiteAttrs {
   identity: OpenapiSite_Identity;
   /** Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Site resource specific properties */
   properties: OpenapiSite_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** path parameter, not part of the API's own resource representation */
   name: string;
 }
@@ -1406,11 +1414,13 @@ export const OpenapiSite: ResourceBinding<OpenapiSiteConfig, OpenapiSiteAttrs> =
       fields: OpenapiSite_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiSite_PropertiesFields,
     },
+    tags: "tags",
     name: "name",
   },
 };

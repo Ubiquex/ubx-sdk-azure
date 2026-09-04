@@ -415,24 +415,42 @@ var ExpressrouteExpressRouteCircuit_SkuFields = ubx.FieldMap{
 }
 
 type ExpressrouteExpressRouteCircuitConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Properties of ExpressRouteCircuit.
 	Properties any
 	// Contains SKU in an ExpressRouteCircuit.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type ExpressrouteExpressRouteCircuitAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties of ExpressRouteCircuit.
 	Properties any
 	// Contains SKU in an ExpressRouteCircuit.
 	Sku any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var ExpressrouteExpressRouteCircuit = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_express_route_circuit",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -443,5 +461,6 @@ var ExpressrouteExpressRouteCircuit = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ExpressrouteExpressRouteCircuit_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

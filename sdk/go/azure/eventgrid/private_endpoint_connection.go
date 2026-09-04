@@ -59,8 +59,14 @@ type PrivateEndpointConnectionConfig struct {
 }
 
 type PrivateEndpointConnectionAttrs struct {
+	// Fully qualified identifier of the resource.
+	Id any
+	// Name of the resource.
+	Name any
 	// Properties of the private endpoint connection resource.
 	Properties any
+	// Type of the resource.
+	Type any
 }
 
 var PrivateEndpointConnection = ubx.ResourceBinding{

@@ -85,15 +85,23 @@ var VirtualharddisksVirtualHardDisks_PropertiesFields = ubx.FieldMap{
 type VirtualharddisksVirtualHardDisksConfig struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the virtual hard disk resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualharddisksVirtualHardDisksAttrs struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the virtual hard disk resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var VirtualharddisksVirtualHardDisks = ubx.ResourceBinding{
@@ -104,10 +112,12 @@ var VirtualharddisksVirtualHardDisks = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualharddisksVirtualHardDisks_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualharddisksVirtualHardDisks_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

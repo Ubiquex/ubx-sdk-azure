@@ -138,17 +138,25 @@ var FluidRelayServer_PropertiesFields = ubx.FieldMap{
 type FluidRelayServerConfig struct {
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a Fluid Relay Service resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type FluidRelayServerAttrs struct {
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a Fluid Relay Service resource.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource tags.
+	Tags any
 }
 
 var FluidRelayServer = ubx.ResourceBinding{
@@ -159,10 +167,12 @@ var FluidRelayServer = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   FluidRelayServer_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   FluidRelayServer_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

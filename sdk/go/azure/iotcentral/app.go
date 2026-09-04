@@ -51,19 +51,33 @@ var App_SkuFields = ubx.FieldMap{
 type AppConfig struct {
 	// Managed service identity (either system assigned, or none)
 	Identity any
+	// The resource location.
+	Location any
 	// The properties of an IoT Central application.
 	Properties any
 	// Information about the SKU of the IoT Central application.
 	Sku any
+	// The resource tags.
+	Tags any
 }
 
 type AppAttrs struct {
+	// The ARM resource identifier.
+	Id any
 	// Managed service identity (either system assigned, or none)
 	Identity any
+	// The resource location.
+	Location any
+	// The ARM resource name.
+	Name any
 	// The properties of an IoT Central application.
 	Properties any
 	// Information about the SKU of the IoT Central application.
 	Sku any
+	// The resource tags.
+	Tags any
+	// The resource type.
+	Type any
 }
 
 var App = ubx.ResourceBinding{
@@ -74,6 +88,7 @@ var App = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   App_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -84,5 +99,6 @@ var App = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   App_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

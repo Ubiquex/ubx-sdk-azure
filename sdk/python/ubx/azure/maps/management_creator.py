@@ -35,23 +35,33 @@ _ManagementCreator_PropertiesFields = {
 
 @dataclasses.dataclass
 class ManagementCreatorConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Creator resource properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ManagementCreatorAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Creator resource properties
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ManagementCreator = ubx.ResourceBinding(
     wire_type="azure_maps_management_creator",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ManagementCreator_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

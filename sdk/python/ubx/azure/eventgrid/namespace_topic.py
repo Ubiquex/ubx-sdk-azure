@@ -46,10 +46,16 @@ class NamespaceTopicConfig:
 
 @dataclasses.dataclass
 class NamespaceTopicAttrs:
+    # Fully qualified identifier of the resource.
+    id: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the namespace topic.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Type of the resource.
+    type: Any = None
 
 NamespaceTopic = ubx.ResourceBinding(
     wire_type="azure_eventgrid_namespace_topic",

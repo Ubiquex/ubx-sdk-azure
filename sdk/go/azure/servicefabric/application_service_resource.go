@@ -23,6 +23,21 @@ type ApplicationServiceResource_Properties struct {
 	ServiceTypeName any
 }
 
+type ApplicationServiceResource_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC).
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var ApplicationServiceResource_Properties_PartitionDescriptionFields = ubx.FieldMap{
 	"PartitionScheme": ubx.FieldSpec{WireName: "partition_scheme"},
 }
@@ -41,22 +56,42 @@ var ApplicationServiceResource_PropertiesFields = ubx.FieldMap{
 }
 
 type ApplicationServiceResourceConfig struct {
+	// It will be deprecated in New API, resource location depends on the parent resource.
+	Location any
 	// The service resource properties.
 	Properties any
+	// Azure resource tags.
+	Tags any
 }
 
 type ApplicationServiceResourceAttrs struct {
+	// Azure resource etag.
+	Etag any
+	// Azure resource identifier.
+	Id any
+	// It will be deprecated in New API, resource location depends on the parent resource.
+	Location any
+	// Azure resource name.
+	Name any
 	// The service resource properties.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Azure resource tags.
+	Tags any
+	// Azure resource type.
+	Type any
 }
 
 var ApplicationServiceResource = ubx.ResourceBinding{
 	WireType: "azure_servicefabric_application_service_resource",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ApplicationServiceResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

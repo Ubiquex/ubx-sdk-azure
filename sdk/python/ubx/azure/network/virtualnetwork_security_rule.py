@@ -94,6 +94,8 @@ _VirtualnetworkSecurityRule_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkSecurityRuleConfig:
+    # Name of the resource.
+    name: Any = None
     # Security rule resource.
     properties: Any = None
 
@@ -101,12 +103,17 @@ class VirtualnetworkSecurityRuleConfig:
 class VirtualnetworkSecurityRuleAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Name of the resource.
+    name: Any = None
     # Security rule resource.
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkSecurityRule = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_security_rule",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

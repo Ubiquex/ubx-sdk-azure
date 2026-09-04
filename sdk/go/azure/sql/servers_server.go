@@ -186,8 +186,12 @@ var ServersServer_PropertiesFields = ubx.FieldMap{
 type ServersServerConfig struct {
 	// Azure Active Directory identity configuration for a resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a server.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ServersServerAttrs struct {
@@ -195,8 +199,12 @@ type ServersServerAttrs struct {
 	Identity any
 	// Kind of sql server. This is metadata used for the Azure portal experience.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a server.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var ServersServer = ubx.ResourceBinding{
@@ -207,10 +215,12 @@ var ServersServer = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ServersServer_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ServersServer_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

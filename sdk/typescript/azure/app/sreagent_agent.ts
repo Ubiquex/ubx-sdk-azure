@@ -202,15 +202,23 @@ const SreagentAgent_PropertiesFields: FieldMap = {
 export interface SreagentAgentConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: SreagentAgent_Identity | Computed<SreagentAgent_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the Agent */
   properties?: SreagentAgent_Properties | Computed<SreagentAgent_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SreagentAgentAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: SreagentAgent_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the Agent */
   properties: SreagentAgent_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const SreagentAgent: ResourceBinding<SreagentAgentConfig, SreagentAgentAttrs> = {
@@ -221,10 +229,12 @@ export const SreagentAgent: ResourceBinding<SreagentAgentConfig, SreagentAgentAt
       kind: "object",
       fields: SreagentAgent_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: SreagentAgent_PropertiesFields,
     },
+    tags: "tags",
   },
 };

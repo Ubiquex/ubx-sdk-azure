@@ -43,6 +43,21 @@ type OpenapiBalance_Properties struct {
 	Utilized any
 }
 
+type OpenapiBalance_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 type OpenapiBalanceConfig struct {
 	BillingAccountId  any
 	BillingPeriodName any
@@ -53,10 +68,18 @@ type OpenapiBalanceAttrs struct {
 	BillingPeriodName any
 	// The etag for the resource.
 	Etag any
+	// Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+	Id any
+	// The name of the resource
+	Name any
 	// The properties of the balance.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
 	// Resource tags.
 	Tags any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var OpenapiBalance = ubx.DataSourceBinding{

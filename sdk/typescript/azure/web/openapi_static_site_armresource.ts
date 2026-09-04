@@ -457,10 +457,14 @@ export interface OpenapiStaticSiteArmresourceConfig {
   identity?: OpenapiStaticSiteArmresource_Identity | Computed<OpenapiStaticSiteArmresource_Identity>;
   /** Kind of resource. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** A static site. */
   properties?: OpenapiStaticSiteArmresource_Properties | Computed<OpenapiStaticSiteArmresource_Properties>;
   /** Description of a SKU for a scalable resource. */
   sku?: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku | Computed<OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   name: string | Computed<string>;
 }
@@ -470,10 +474,14 @@ export interface OpenapiStaticSiteArmresourceAttrs {
   identity: OpenapiStaticSiteArmresource_Identity;
   /** Kind of resource. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** A static site. */
   properties: OpenapiStaticSiteArmresource_Properties;
   /** Description of a SKU for a scalable resource. */
   sku: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** path parameter, not part of the API's own resource representation */
   name: string;
 }
@@ -487,6 +495,7 @@ export const OpenapiStaticSiteArmresource: ResourceBinding<OpenapiStaticSiteArmr
       fields: OpenapiStaticSiteArmresource_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -497,6 +506,7 @@ export const OpenapiStaticSiteArmresource: ResourceBinding<OpenapiStaticSiteArmr
       kind: "object",
       fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_SkuFields,
     },
+    tags: "tags",
     name: "name",
   },
 };

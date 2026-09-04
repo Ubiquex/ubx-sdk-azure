@@ -58,22 +58,32 @@ var OpenapiDataShare_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiDataShareConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The storage datashare properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiDataShareAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The storage datashare properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiDataShare = ubx.ResourceBinding{
 	WireType: "azure_storage_openapi_data_share",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiDataShare_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

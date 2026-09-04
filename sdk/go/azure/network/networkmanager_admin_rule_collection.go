@@ -54,10 +54,18 @@ type NetworkmanagerAdminRuleCollectionConfig struct {
 }
 
 type NetworkmanagerAdminRuleCollectionAttrs struct {
+	// A unique read-only string that changes whenever the resource is updated.
+	Etag any
+	// Resource ID.
+	Id any
+	// Resource name.
+	Name any
 	// Defines the admin rule collection properties.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource type.
+	Type any
 }
 
 var NetworkmanagerAdminRuleCollection = ubx.ResourceBinding{

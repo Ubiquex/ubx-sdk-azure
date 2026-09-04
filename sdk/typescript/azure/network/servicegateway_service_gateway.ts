@@ -4904,10 +4904,14 @@ const ServicegatewayServiceGateway_PropertiesFields: FieldMap = {
 };
 
 export interface ServicegatewayServiceGatewayConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the service gateway. */
   properties?: ServicegatewayServiceGateway_Properties | Computed<ServicegatewayServiceGateway_Properties>;
   /** SKU of a service gateway. */
   sku?: ServicegatewayServiceGateway_Properties_RouteTargetAddress_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Sku | Computed<ServicegatewayServiceGateway_Properties_RouteTargetAddress_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** A list of availability zones denoting the zone in which service gateway should be deployed. - The zone values must be provided as strings representing numeric identifiers like "1", "2", "3" etc. */
   zones?: string[] | Computed<string[]>;
 }
@@ -4915,10 +4919,14 @@ export interface ServicegatewayServiceGatewayConfig {
 export interface ServicegatewayServiceGatewayAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the service gateway. */
   properties: ServicegatewayServiceGateway_Properties;
   /** SKU of a service gateway. */
   sku: ServicegatewayServiceGateway_Properties_RouteTargetAddress_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** A list of availability zones denoting the zone in which service gateway should be deployed. - The zone values must be provided as strings representing numeric identifiers like "1", "2", "3" etc. */
   zones: string[];
 }
@@ -4926,6 +4934,7 @@ export interface ServicegatewayServiceGatewayAttrs {
 export const ServicegatewayServiceGateway: ResourceBinding<ServicegatewayServiceGatewayConfig, ServicegatewayServiceGatewayAttrs> = {
   wireType: "azure_network_servicegateway_service_gateway",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -4936,6 +4945,7 @@ export const ServicegatewayServiceGateway: ResourceBinding<ServicegatewayService
       kind: "object",
       fields: ServicegatewayServiceGateway_Properties_RouteTargetAddress_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

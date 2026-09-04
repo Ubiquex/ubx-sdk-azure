@@ -78,17 +78,26 @@ _InputsInput_PropertiesFields = {
 
 @dataclasses.dataclass
 class InputsInputConfig:
+    # Resource name
+    name: Any = None
     # The properties that are associated with an input.
     properties: Any = None
 
 @dataclasses.dataclass
 class InputsInputAttrs:
+    # Resource Id
+    id: Any = None
+    # Resource name
+    name: Any = None
     # The properties that are associated with an input.
     properties: Any = None
+    # Resource type
+    type: Any = None
 
 InputsInput = ubx.ResourceBinding(
     wire_type="azure_streamanalytics_inputs_input",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

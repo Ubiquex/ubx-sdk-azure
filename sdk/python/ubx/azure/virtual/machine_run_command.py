@@ -180,21 +180,31 @@ _MachineRunCommand_PropertiesFields = {
 
 @dataclasses.dataclass
 class MachineRunCommandConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a Virtual Machine run command.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class MachineRunCommandAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a Virtual Machine run command.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 MachineRunCommand = ubx.ResourceBinding(
     wire_type="azure_virtual_machine_run_command",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_MachineRunCommand_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

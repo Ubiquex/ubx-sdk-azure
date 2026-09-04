@@ -237,10 +237,14 @@ export interface MonitorResourceConfig {
   identity?: MonitorResource_Identity | Computed<MonitorResource_Identity>;
   /** The kind of the Elastic resource - observability, security, search etc. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties specific to the monitor resource. */
   properties?: MonitorResource_Properties | Computed<MonitorResource_Properties>;
   /** Represents the SKU of a resource. */
   sku?: MonitorResource_Sku | Computed<MonitorResource_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MonitorResourceAttrs {
@@ -248,10 +252,14 @@ export interface MonitorResourceAttrs {
   identity: MonitorResource_Identity;
   /** The kind of the Elastic resource - observability, security, search etc. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties specific to the monitor resource. */
   properties: MonitorResource_Properties;
   /** Represents the SKU of a resource. */
   sku: MonitorResource_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const MonitorResource: ResourceBinding<MonitorResourceConfig, MonitorResourceAttrs> = {
@@ -263,6 +271,7 @@ export const MonitorResource: ResourceBinding<MonitorResourceConfig, MonitorReso
       fields: MonitorResource_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -273,5 +282,6 @@ export const MonitorResource: ResourceBinding<MonitorResourceConfig, MonitorReso
       kind: "object",
       fields: MonitorResource_SkuFields,
     },
+    tags: "tags",
   },
 };

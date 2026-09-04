@@ -70,21 +70,37 @@ _IntegrationServiceEnvironmentManagedApi_PropertiesFields = {
 
 @dataclasses.dataclass
 class IntegrationServiceEnvironmentManagedApiConfig:
+    # The resource location.
+    location: Any = None
     # The integration service environment managed api properties.
     properties: Any = None
+    # The resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class IntegrationServiceEnvironmentManagedApiAttrs:
+    # The resource id.
+    id: Any = None
+    # The resource location.
+    location: Any = None
+    # Gets the resource name.
+    name: Any = None
     # The integration service environment managed api properties.
     properties: Any = None
+    # The resource tags.
+    tags: Any = None
+    # Gets the resource type.
+    type: Any = None
 
 IntegrationServiceEnvironmentManagedApi = ubx.ResourceBinding(
     wire_type="azure_logic_integration_service_environment_managed_api",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_IntegrationServiceEnvironmentManagedApi_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

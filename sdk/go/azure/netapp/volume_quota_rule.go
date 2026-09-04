@@ -22,22 +22,32 @@ var VolumeQuotaRule_PropertiesFields = ubx.FieldMap{
 }
 
 type VolumeQuotaRuleConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Volume Quota Rule properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VolumeQuotaRuleAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Volume Quota Rule properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var VolumeQuotaRule = ubx.ResourceBinding{
 	WireType: "azure_netapp_volume_quota_rule",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VolumeQuotaRule_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -203,8 +203,12 @@ const FleetsFleet_PropertiesFields: FieldMap = {
 export interface FleetsFleetConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: FleetsFleet_Identity | Computed<FleetsFleet_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Fleet properties. */
   properties?: FleetsFleet_Properties | Computed<FleetsFleet_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface FleetsFleetAttrs {
@@ -212,8 +216,12 @@ export interface FleetsFleetAttrs {
   eTag: string;
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: FleetsFleet_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Fleet properties. */
   properties: FleetsFleet_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const FleetsFleet: ResourceBinding<FleetsFleetConfig, FleetsFleetAttrs> = {
@@ -224,10 +232,12 @@ export const FleetsFleet: ResourceBinding<FleetsFleetConfig, FleetsFleetAttrs> =
       kind: "object",
       fields: FleetsFleet_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: FleetsFleet_PropertiesFields,
     },
+    tags: "tags",
   },
 };

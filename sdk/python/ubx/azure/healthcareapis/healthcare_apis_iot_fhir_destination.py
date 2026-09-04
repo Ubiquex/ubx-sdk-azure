@@ -51,11 +51,15 @@ _HealthcareApisIotFhirDestination_PropertiesFields = {
 
 @dataclasses.dataclass
 class HealthcareApisIotFhirDestinationConfig:
+    # The resource location.
+    location: Any = None
     # IoT Connector destination properties for an Azure FHIR service.
     properties: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisIotFhirDestinationAttrs:
+    # The resource location.
+    location: Any = None
     # IoT Connector destination properties for an Azure FHIR service.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
@@ -64,6 +68,7 @@ class HealthcareApisIotFhirDestinationAttrs:
 HealthcareApisIotFhirDestination = ubx.ResourceBinding(
     wire_type="azure_healthcareapis_healthcare_apis_iot_fhir_destination",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

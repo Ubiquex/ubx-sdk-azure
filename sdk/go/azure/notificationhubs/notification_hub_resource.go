@@ -365,22 +365,31 @@ var NotificationHubResource_SkuFields = ubx.FieldMap{
 }
 
 type NotificationHubResourceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// NotificationHub properties.
 	Properties any
 	// The Sku description for a namespace
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type NotificationHubResourceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// NotificationHub properties.
 	Properties any
 	// The Sku description for a namespace
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var NotificationHubResource = ubx.ResourceBinding{
 	WireType: "azure_notificationhubs_notification_hub_resource",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -391,5 +400,6 @@ var NotificationHubResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   NotificationHubResource_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

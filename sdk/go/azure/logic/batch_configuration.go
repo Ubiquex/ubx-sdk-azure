@@ -108,22 +108,38 @@ var BatchConfiguration_PropertiesFields = ubx.FieldMap{
 }
 
 type BatchConfigurationConfig struct {
+	// The resource location.
+	Location any
 	// The batch configuration properties definition.
 	Properties any
+	// The resource tags.
+	Tags any
 }
 
 type BatchConfigurationAttrs struct {
+	// The resource id.
+	Id any
+	// The resource location.
+	Location any
+	// Gets the resource name.
+	Name any
 	// The batch configuration properties definition.
 	Properties any
+	// The resource tags.
+	Tags any
+	// Gets the resource type.
+	Type any
 }
 
 var BatchConfiguration = ubx.ResourceBinding{
 	WireType: "azure_logic_batch_configuration",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   BatchConfiguration_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

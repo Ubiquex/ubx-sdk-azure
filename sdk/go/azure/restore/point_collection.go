@@ -821,22 +821,32 @@ var PointCollection_PropertiesFields = ubx.FieldMap{
 }
 
 type PointCollectionConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The restore point collection properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type PointCollectionAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The restore point collection properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var PointCollection = ubx.ResourceBinding{
 	WireType: "azure_restore_point_collection",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   PointCollection_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

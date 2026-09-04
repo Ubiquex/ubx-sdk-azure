@@ -45,22 +45,32 @@ const ManagedclustersSnapshot_PropertiesFields: FieldMap = {
 };
 
 export interface ManagedclustersSnapshotConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties used to configure a node pool snapshot. */
   properties?: ManagedclustersSnapshot_Properties | Computed<ManagedclustersSnapshot_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ManagedclustersSnapshotAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties used to configure a node pool snapshot. */
   properties: ManagedclustersSnapshot_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ManagedclustersSnapshot: ResourceBinding<ManagedclustersSnapshotConfig, ManagedclustersSnapshotAttrs> = {
   wireType: "azure_containerservice_managedclusters_snapshot",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ManagedclustersSnapshot_PropertiesFields,
     },
+    tags: "tags",
   },
 };

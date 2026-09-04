@@ -283,8 +283,12 @@ type BackupVaultResourceConfig struct {
 	ETag any
 	// Identity details
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Backup Vault
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type BackupVaultResourceAttrs struct {
@@ -292,8 +296,12 @@ type BackupVaultResourceAttrs struct {
 	ETag any
 	// Identity details
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Backup Vault
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var BackupVaultResource = ubx.ResourceBinding{
@@ -305,10 +313,12 @@ var BackupVaultResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   BackupVaultResource_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   BackupVaultResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

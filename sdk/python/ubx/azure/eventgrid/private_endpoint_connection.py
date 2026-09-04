@@ -63,8 +63,14 @@ class PrivateEndpointConnectionConfig:
 
 @dataclasses.dataclass
 class PrivateEndpointConnectionAttrs:
+    # Fully qualified identifier of the resource.
+    id: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the private endpoint connection resource.
     properties: Any = None
+    # Type of the resource.
+    type: Any = None
 
 PrivateEndpointConnection = ubx.ResourceBinding(
     wire_type="azure_eventgrid_private_endpoint_connection",

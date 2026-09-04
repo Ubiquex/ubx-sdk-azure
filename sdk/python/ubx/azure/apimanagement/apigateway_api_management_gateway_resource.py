@@ -109,19 +109,29 @@ class ApigatewayApiManagementGatewayResourceConfig:
     properties: Any = None
     # API Management gateway resource SKU properties.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ApigatewayApiManagementGatewayResourceAttrs:
     # ETag of the resource.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
     # Resource location.
     location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of an API Management gateway resource description.
     properties: Any = None
     # API Management gateway resource SKU properties.
     sku: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type for API Management resource is set to Microsoft.ApiManagement.
+    type: Any = None
 
 ApigatewayApiManagementGatewayResource = ubx.ResourceBinding(
     wire_type="azure_apimanagement_apigateway_api_management_gateway_resource",
@@ -137,5 +147,6 @@ ApigatewayApiManagementGatewayResource = ubx.ResourceBinding(
             kind="object",
             fields=_ApigatewayApiManagementGatewayResource_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

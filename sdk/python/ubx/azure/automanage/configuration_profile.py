@@ -32,23 +32,33 @@ _ConfigurationProfile_PropertiesFields = {
 
 @dataclasses.dataclass
 class ConfigurationProfileConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Automanage configuration profile properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ConfigurationProfileAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Automanage configuration profile properties.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ConfigurationProfile = ubx.ResourceBinding(
     wire_type="azure_automanage_configuration_profile",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ConfigurationProfile_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

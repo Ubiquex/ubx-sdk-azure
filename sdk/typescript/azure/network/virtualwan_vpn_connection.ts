@@ -322,6 +322,8 @@ const VirtualwanVpnConnection_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanVpnConnectionConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** The name of the resource that is unique within a resource group. This name can be used to access the resource. */
   name?: string | Computed<string>;
   /** Parameters for VpnConnection. */
@@ -331,6 +333,8 @@ export interface VirtualwanVpnConnectionConfig {
 export interface VirtualwanVpnConnectionAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** The name of the resource that is unique within a resource group. This name can be used to access the resource. */
   name: string;
   /** Parameters for VpnConnection. */
@@ -340,6 +344,7 @@ export interface VirtualwanVpnConnectionAttrs {
 export const VirtualwanVpnConnection: ResourceBinding<VirtualwanVpnConnectionConfig, VirtualwanVpnConnectionAttrs> = {
   wireType: "azure_network_virtualwan_vpn_connection",
   fields: {
+    id: "id",
     name: "name",
     properties: {
       wireName: "properties",

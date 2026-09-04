@@ -354,19 +354,27 @@ var SwaggerNginxDeployment_SkuFields = ubx.FieldMap{
 type SwaggerNginxDeploymentConfig struct {
 	// Identity Properties
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Nginx Deployment Properties
 	Properties any
 	// Resource Sku
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type SwaggerNginxDeploymentAttrs struct {
 	// Identity Properties
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Nginx Deployment Properties
 	Properties any
 	// Resource Sku
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var SwaggerNginxDeployment = ubx.ResourceBinding{
@@ -377,6 +385,7 @@ var SwaggerNginxDeployment = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   SwaggerNginxDeployment_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -387,5 +396,6 @@ var SwaggerNginxDeployment = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   SwaggerNginxDeployment_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -31,24 +31,34 @@ var ManagementCreator_PropertiesFields = ubx.FieldMap{
 }
 
 type ManagementCreatorConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Creator resource properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ManagementCreatorAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Creator resource properties
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource tags.
+	Tags any
 }
 
 var ManagementCreator = ubx.ResourceBinding{
 	WireType: "azure_maps_management_creator",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ManagementCreator_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

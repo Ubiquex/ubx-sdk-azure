@@ -32,22 +32,32 @@ var CodesigningaccountCodeSigningAccount_PropertiesFields = ubx.FieldMap{
 }
 
 type CodesigningaccountCodeSigningAccountConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the artifact signing account.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type CodesigningaccountCodeSigningAccountAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the artifact signing account.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var CodesigningaccountCodeSigningAccount = ubx.ResourceBinding{
 	WireType: "azure_codesigning_codesigningaccount_code_signing_account",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   CodesigningaccountCodeSigningAccount_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

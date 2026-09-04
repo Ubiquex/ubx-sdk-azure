@@ -242,8 +242,12 @@ var OpenapiCloudExadataInfrastructure_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiCloudExadataInfrastructureConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// CloudExadataInfrastructure resource model
 	Properties any
+	// Resource tags.
+	Tags any
 	// CloudExadataInfrastructure zones
 	Zones any
 	// path parameter, not part of the API's own resource representation
@@ -251,8 +255,12 @@ type OpenapiCloudExadataInfrastructureConfig struct {
 }
 
 type OpenapiCloudExadataInfrastructureAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// CloudExadataInfrastructure resource model
 	Properties any
+	// Resource tags.
+	Tags any
 	// CloudExadataInfrastructure zones
 	Zones any
 	// path parameter, not part of the API's own resource representation
@@ -262,11 +270,13 @@ type OpenapiCloudExadataInfrastructureAttrs struct {
 var OpenapiCloudExadataInfrastructure = ubx.ResourceBinding{
 	WireType: "azure_oracle_openapi_cloud_exadata_infrastructure",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiCloudExadataInfrastructure_PropertiesFields,
 		},
+		"Tags":                           ubx.FieldSpec{WireName: "tags"},
 		"Zones":                          ubx.FieldSpec{WireName: "zones"},
 		"Cloudexadatainfrastructurename": ubx.FieldSpec{WireName: "cloudexadatainfrastructurename"},
 	},

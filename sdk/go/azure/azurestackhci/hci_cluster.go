@@ -471,8 +471,12 @@ type HciClusterConfig struct {
 	Identity any
 	// This property identifies the purpose of the Cluster deployment. For example, a valid value is AzureLocal
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Cluster properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type HciClusterAttrs struct {
@@ -480,8 +484,12 @@ type HciClusterAttrs struct {
 	Identity any
 	// This property identifies the purpose of the Cluster deployment. For example, a valid value is AzureLocal
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Cluster properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var HciCluster = ubx.ResourceBinding{
@@ -492,11 +500,13 @@ var HciCluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   HciCluster_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   HciCluster_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

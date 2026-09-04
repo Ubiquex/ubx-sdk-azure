@@ -131,15 +131,23 @@ const SapvirtualinstanceSapvirtualInstance_PropertiesFields: FieldMap = {
 export interface SapvirtualinstanceSapvirtualInstanceConfig {
   /** A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide. */
   identity?: SapvirtualinstanceSapvirtualInstance_Identity | Computed<SapvirtualinstanceSapvirtualInstance_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Defines the Virtual Instance for SAP solutions resource properties. */
   properties: SapvirtualinstanceSapvirtualInstance_Properties | Computed<SapvirtualinstanceSapvirtualInstance_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SapvirtualinstanceSapvirtualInstanceAttrs {
   /** A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide. */
   identity: SapvirtualinstanceSapvirtualInstance_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Defines the Virtual Instance for SAP solutions resource properties. */
   properties: SapvirtualinstanceSapvirtualInstance_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const SapvirtualinstanceSapvirtualInstance: ResourceBinding<SapvirtualinstanceSapvirtualInstanceConfig, SapvirtualinstanceSapvirtualInstanceAttrs> = {
@@ -150,10 +158,12 @@ export const SapvirtualinstanceSapvirtualInstance: ResourceBinding<Sapvirtualins
       kind: "object",
       fields: SapvirtualinstanceSapvirtualInstance_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: SapvirtualinstanceSapvirtualInstance_PropertiesFields,
     },
+    tags: "tags",
   },
 };

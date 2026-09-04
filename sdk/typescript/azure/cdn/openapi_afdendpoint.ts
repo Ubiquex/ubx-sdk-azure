@@ -28,22 +28,32 @@ const OpenapiAfdendpoint_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiAfdendpointConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The JSON object that contains the properties required to create an endpoint. */
   properties?: OpenapiAfdendpoint_Properties | Computed<OpenapiAfdendpoint_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiAfdendpointAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The JSON object that contains the properties required to create an endpoint. */
   properties: OpenapiAfdendpoint_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiAfdendpoint: ResourceBinding<OpenapiAfdendpointConfig, OpenapiAfdendpointAttrs> = {
   wireType: "azure_cdn_openapi_afdendpoint",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiAfdendpoint_PropertiesFields,
     },
+    tags: "tags",
   },
 };

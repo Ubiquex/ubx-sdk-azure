@@ -351,15 +351,23 @@ _Workspace_PropertiesFields = {
 class WorkspaceConfig:
     # The workspace managed identity
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Workspace properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class WorkspaceAttrs:
     # The workspace managed identity
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Workspace properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Workspace = ubx.ResourceBinding(
     wire_type="azure_synapse_workspace",
@@ -369,10 +377,12 @@ Workspace = ubx.ResourceBinding(
             kind="object",
             fields=_Workspace_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Workspace_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

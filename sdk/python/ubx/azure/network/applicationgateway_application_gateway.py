@@ -9384,10 +9384,16 @@ _ApplicationgatewayApplicationGateway_PropertiesFields = {
 
 @dataclasses.dataclass
 class ApplicationgatewayApplicationGatewayConfig:
+    # Resource ID.
+    id: Any = None
     # Identity for the resource.
     identity: Any = None
+    # Resource location.
+    location: Any = None
     # Properties of the application gateway.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # A list of availability zones denoting where the resource needs to come from.
     zones: Any = None
 
@@ -9395,26 +9401,39 @@ class ApplicationgatewayApplicationGatewayConfig:
 class ApplicationgatewayApplicationGatewayAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
     # Identity for the resource.
     identity: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of the application gateway.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
     # A list of availability zones denoting where the resource needs to come from.
     zones: Any = None
 
 ApplicationgatewayApplicationGateway = ubx.ResourceBinding(
     wire_type="azure_network_applicationgateway_application_gateway",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",
             fields=_ApplicationgatewayApplicationGateway_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ApplicationgatewayApplicationGateway_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

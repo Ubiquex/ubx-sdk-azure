@@ -146,6 +146,8 @@ var ExpressrouteExpressRouteCrossConnectionPeering_PropertiesFields = ubx.FieldM
 }
 
 type ExpressrouteExpressRouteCrossConnectionPeeringConfig struct {
+	// Resource ID.
+	Id any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Properties of express route cross connection peering.
@@ -155,6 +157,8 @@ type ExpressrouteExpressRouteCrossConnectionPeeringConfig struct {
 type ExpressrouteExpressRouteCrossConnectionPeeringAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Properties of express route cross connection peering.
@@ -164,6 +168,7 @@ type ExpressrouteExpressRouteCrossConnectionPeeringAttrs struct {
 var ExpressrouteExpressRouteCrossConnectionPeering = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_express_route_cross_connection_peering",
 	Fields: ubx.FieldMap{
+		"Id":   ubx.FieldSpec{WireName: "id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",

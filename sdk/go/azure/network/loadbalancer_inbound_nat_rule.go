@@ -5451,6 +5451,8 @@ var LoadbalancerInboundNatRule_PropertiesFields = ubx.FieldMap{
 }
 
 type LoadbalancerInboundNatRuleConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of the inbound NAT rule.
 	Properties any
 }
@@ -5458,13 +5460,18 @@ type LoadbalancerInboundNatRuleConfig struct {
 type LoadbalancerInboundNatRuleAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of the inbound NAT rule.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var LoadbalancerInboundNatRule = ubx.ResourceBinding{
 	WireType: "azure_network_loadbalancer_inbound_nat_rule",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

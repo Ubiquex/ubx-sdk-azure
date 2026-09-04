@@ -35,6 +35,8 @@ const VirtualwanVirtualHubRouteTableV2_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanVirtualHubRouteTableV2Config {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** The name of the resource that is unique within a resource group. This name can be used to access the resource. */
   name?: string | Computed<string>;
   /** Parameters for VirtualHubRouteTableV2. */
@@ -44,6 +46,8 @@ export interface VirtualwanVirtualHubRouteTableV2Config {
 export interface VirtualwanVirtualHubRouteTableV2Attrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** The name of the resource that is unique within a resource group. This name can be used to access the resource. */
   name: string;
   /** Parameters for VirtualHubRouteTableV2. */
@@ -53,6 +57,7 @@ export interface VirtualwanVirtualHubRouteTableV2Attrs {
 export const VirtualwanVirtualHubRouteTableV2: ResourceBinding<VirtualwanVirtualHubRouteTableV2Config, VirtualwanVirtualHubRouteTableV2Attrs> = {
   wireType: "azure_network_virtualwan_virtual_hub_route_table_v2",
   fields: {
+    id: "id",
     name: "name",
     properties: {
       wireName: "properties",

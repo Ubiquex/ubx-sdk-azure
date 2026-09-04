@@ -63,6 +63,21 @@ class Configuration_Properties:
     # Gets or sets the visibility of the configuration. The default value is 'Custom'
     visibility: Any = None
 
+@dataclasses.dataclass
+class Configuration_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _Configuration_Properties_InstallPatches_LinuxParametersFields = {
     "classifications_to_include": ubx.FieldSpec(wire_name="classifications_to_include"),
     "package_name_masks_to_exclude": ubx.FieldSpec(wire_name="package_name_masks_to_exclude"),
@@ -126,12 +141,20 @@ class ConfigurationConfig:
 
 @dataclasses.dataclass
 class ConfigurationAttrs:
+    # Fully qualified identifier of the resource
+    id: Any = None
     # Gets or sets location of the resource
     location: Any = None
+    # Name of the resource
+    name: Any = None
     # Properties for maintenance configuration
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
     # Gets or sets tags of the resource
     tags: Any = None
+    # Type of the resource
+    type: Any = None
 
 Configuration = ubx.ResourceBinding(
     wire_type="azure_maintenance_configuration",

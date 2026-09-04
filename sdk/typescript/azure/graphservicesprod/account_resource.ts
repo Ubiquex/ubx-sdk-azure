@@ -28,24 +28,40 @@ const AccountResource_PropertiesFields: FieldMap = {
 };
 
 export interface AccountResourceConfig {
+  /** Location of the resource. */
+  location?: string | Computed<string>;
   /** Property bag from billing account */
   properties: AccountResource_Properties | Computed<AccountResource_Properties>;
+  /** resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface AccountResourceAttrs {
+  /** Azure resource ID. */
+  id: string;
+  /** Location of the resource. */
+  location: string;
+  /** Azure resource name. */
+  name: string;
   /** Property bag from billing account */
   properties: AccountResource_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: AccountResource_SystemData;
+  /** resource tags. */
+  tags: Record<string, string>;
+  /** Azure resource type. */
+  type: string;
 }
 
 export const AccountResource: ResourceBinding<AccountResourceConfig, AccountResourceAttrs> = {
   wireType: "azure_graphservicesprod_account_resource",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: AccountResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

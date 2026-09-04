@@ -69,15 +69,23 @@ const OpenapiCommunicationServiceResource_PropertiesFields: FieldMap = {
 export interface OpenapiCommunicationServiceResourceConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: OpenapiCommunicationServiceResource_Identity | Computed<OpenapiCommunicationServiceResource_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** A class that describes the properties of the CommunicationService. */
   properties?: OpenapiCommunicationServiceResource_Properties | Computed<OpenapiCommunicationServiceResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiCommunicationServiceResourceAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: OpenapiCommunicationServiceResource_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** A class that describes the properties of the CommunicationService. */
   properties: OpenapiCommunicationServiceResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiCommunicationServiceResource: ResourceBinding<OpenapiCommunicationServiceResourceConfig, OpenapiCommunicationServiceResourceAttrs> = {
@@ -88,10 +96,12 @@ export const OpenapiCommunicationServiceResource: ResourceBinding<OpenapiCommuni
       kind: "object",
       fields: OpenapiCommunicationServiceResource_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiCommunicationServiceResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

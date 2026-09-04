@@ -45,10 +45,16 @@ type PermissionBindingConfig struct {
 }
 
 type PermissionBindingAttrs struct {
+	// Fully qualified identifier of the resource.
+	Id any
+	// Name of the resource.
+	Name any
 	// The properties of permission binding.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Type of the resource.
+	Type any
 }
 
 var PermissionBinding = ubx.ResourceBinding{

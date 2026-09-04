@@ -17,6 +17,21 @@ export interface TimeSeriesDatabaseConnection_Properties {
   provisioningState?: string | Computed<string>;
 }
 
+export interface TimeSeriesDatabaseConnection_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const TimeSeriesDatabaseConnection_Properties_IdentityFields: FieldMap = {
   type: "type",
   userAssignedIdentity: "user_assigned_identity",
@@ -38,8 +53,16 @@ export interface TimeSeriesDatabaseConnectionConfig {
 }
 
 export interface TimeSeriesDatabaseConnectionAttrs {
+  /** The resource identifier. */
+  id: string;
+  /** Extension resource name. */
+  name: string;
   /** Properties of a time series database connection resource. */
   properties: TimeSeriesDatabaseConnection_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: TimeSeriesDatabaseConnection_SystemData;
+  /** The resource type. */
+  type: string;
 }
 
 export const TimeSeriesDatabaseConnection: ResourceBinding<TimeSeriesDatabaseConnectionConfig, TimeSeriesDatabaseConnectionAttrs> = {

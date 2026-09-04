@@ -89,15 +89,23 @@ var Cloud_PropertiesFields = ubx.FieldMap{
 type CloudConfig struct {
 	// The extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type CloudAttrs struct {
 	// The extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var Cloud = ubx.ResourceBinding{
@@ -108,10 +116,12 @@ var Cloud = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Cloud_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Cloud_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

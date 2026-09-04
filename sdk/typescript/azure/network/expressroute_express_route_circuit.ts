@@ -413,24 +413,42 @@ const ExpressrouteExpressRouteCircuit_SkuFields: FieldMap = {
 };
 
 export interface ExpressrouteExpressRouteCircuitConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties of ExpressRouteCircuit. */
   properties?: ExpressrouteExpressRouteCircuit_Properties | Computed<ExpressrouteExpressRouteCircuit_Properties>;
   /** Contains SKU in an ExpressRouteCircuit. */
   sku?: ExpressrouteExpressRouteCircuit_Sku | Computed<ExpressrouteExpressRouteCircuit_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ExpressrouteExpressRouteCircuitAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of ExpressRouteCircuit. */
   properties: ExpressrouteExpressRouteCircuit_Properties;
   /** Contains SKU in an ExpressRouteCircuit. */
   sku: ExpressrouteExpressRouteCircuit_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const ExpressrouteExpressRouteCircuit: ResourceBinding<ExpressrouteExpressRouteCircuitConfig, ExpressrouteExpressRouteCircuitAttrs> = {
   wireType: "azure_network_expressroute_express_route_circuit",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -441,5 +459,6 @@ export const ExpressrouteExpressRouteCircuit: ResourceBinding<ExpressrouteExpres
       kind: "object",
       fields: ExpressrouteExpressRouteCircuit_SkuFields,
     },
+    tags: "tags",
   },
 };

@@ -74,22 +74,32 @@ var PrivatelinkhubPrivateLinkHub_PropertiesFields = ubx.FieldMap{
 }
 
 type PrivatelinkhubPrivateLinkHubConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// PrivateLinkHub properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type PrivatelinkhubPrivateLinkHubAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// PrivateLinkHub properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var PrivatelinkhubPrivateLinkHub = ubx.ResourceBinding{
 	WireType: "azure_synapse_privatelinkhub_private_link_hub",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   PrivatelinkhubPrivateLinkHub_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

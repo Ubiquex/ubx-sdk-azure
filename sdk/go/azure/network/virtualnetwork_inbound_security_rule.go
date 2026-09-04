@@ -41,6 +41,8 @@ var VirtualnetworkInboundSecurityRule_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkInboundSecurityRuleConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of the Inbound Security Rules resource.
 	Properties any
 }
@@ -48,13 +50,18 @@ type VirtualnetworkInboundSecurityRuleConfig struct {
 type VirtualnetworkInboundSecurityRuleAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of the Inbound Security Rules resource.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkInboundSecurityRule = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_inbound_security_rule",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

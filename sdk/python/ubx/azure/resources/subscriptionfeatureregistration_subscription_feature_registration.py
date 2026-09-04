@@ -85,7 +85,13 @@ class SubscriptionfeatureregistrationSubscriptionFeatureRegistrationConfig:
 
 @dataclasses.dataclass
 class SubscriptionfeatureregistrationSubscriptionFeatureRegistrationAttrs:
+    # Azure resource Id.
+    id: Any = None
+    # Azure resource name.
+    name: Any = None
     properties: Any = None
+    # Azure resource type.
+    type: Any = None
 
 SubscriptionfeatureregistrationSubscriptionFeatureRegistration = ubx.ResourceBinding(
     wire_type="azure_resources_subscriptionfeatureregistration_subscription_feature_registration",

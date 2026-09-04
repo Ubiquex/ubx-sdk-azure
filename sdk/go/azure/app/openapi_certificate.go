@@ -65,22 +65,32 @@ var OpenapiCertificate_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiCertificateConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Certificate resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiCertificateAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Certificate resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiCertificate = ubx.ResourceBinding{
 	WireType: "azure_app_openapi_certificate",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiCertificate_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

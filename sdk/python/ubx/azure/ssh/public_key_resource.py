@@ -17,21 +17,31 @@ _PublicKeyResource_PropertiesFields = {
 
 @dataclasses.dataclass
 class PublicKeyResourceConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the SSH public key.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class PublicKeyResourceAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the SSH public key.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 PublicKeyResource = ubx.ResourceBinding(
     wire_type="azure_ssh_public_key_resource",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_PublicKeyResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

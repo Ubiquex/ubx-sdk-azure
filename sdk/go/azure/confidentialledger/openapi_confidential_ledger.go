@@ -97,22 +97,32 @@ var OpenapiConfidentialLedger_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiConfidentialLedgerConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Additional Confidential Ledger properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiConfidentialLedgerAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Additional Confidential Ledger properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiConfidentialLedger = ubx.ResourceBinding{
 	WireType: "azure_confidentialledger_openapi_confidential_ledger",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiConfidentialLedger_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

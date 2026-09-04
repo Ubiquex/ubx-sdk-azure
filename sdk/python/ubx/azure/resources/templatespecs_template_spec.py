@@ -23,6 +23,21 @@ class TemplatespecsTemplateSpec_Properties:
     # High-level information about the versions within this Template Spec. The keys are the version names. Only populated if the $expand query parameter is set to 'versions'.
     versions: Any = None
 
+@dataclasses.dataclass
+class TemplatespecsTemplateSpec_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _TemplatespecsTemplateSpec_Properties_VersionsFields = {
     "description": ubx.FieldSpec(wire_name="description"),
     "time_created": ubx.FieldSpec(wire_name="time_created"),
@@ -51,12 +66,20 @@ class TemplatespecsTemplateSpecConfig:
 
 @dataclasses.dataclass
 class TemplatespecsTemplateSpecAttrs:
+    # String Id used to locate any resource on Azure.
+    id: Any = None
     # The location of the Template Spec. It cannot be changed after Template Spec creation. It must be one of the supported Azure locations.
     location: Any = None
+    # Name of this resource.
+    name: Any = None
     # Template Spec properties.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
     # Resource tags.
     tags: Any = None
+    # Type of this resource.
+    type: Any = None
 
 TemplatespecsTemplateSpec = ubx.ResourceBinding(
     wire_type="azure_resources_templatespecs_template_spec",

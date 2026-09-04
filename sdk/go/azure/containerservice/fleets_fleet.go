@@ -204,8 +204,12 @@ var FleetsFleet_PropertiesFields = ubx.FieldMap{
 type FleetsFleetConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Fleet properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type FleetsFleetAttrs struct {
@@ -213,8 +217,12 @@ type FleetsFleetAttrs struct {
 	ETag any
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Fleet properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var FleetsFleet = ubx.ResourceBinding{
@@ -225,10 +233,12 @@ var FleetsFleet = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   FleetsFleet_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   FleetsFleet_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

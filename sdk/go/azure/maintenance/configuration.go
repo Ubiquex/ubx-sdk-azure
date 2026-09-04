@@ -60,6 +60,21 @@ type Configuration_Properties struct {
 	Visibility any
 }
 
+type Configuration_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var Configuration_Properties_InstallPatches_LinuxParametersFields = ubx.FieldMap{
 	"ClassificationsToInclude":  ubx.FieldSpec{WireName: "classifications_to_include"},
 	"PackageNameMasksToExclude": ubx.FieldSpec{WireName: "package_name_masks_to_exclude"},
@@ -122,12 +137,20 @@ type ConfigurationConfig struct {
 }
 
 type ConfigurationAttrs struct {
+	// Fully qualified identifier of the resource
+	Id any
 	// Gets or sets location of the resource
 	Location any
+	// Name of the resource
+	Name any
 	// Properties for maintenance configuration
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
 	// Gets or sets tags of the resource
 	Tags any
+	// Type of the resource
+	Type any
 }
 
 var Configuration = ubx.ResourceBinding{

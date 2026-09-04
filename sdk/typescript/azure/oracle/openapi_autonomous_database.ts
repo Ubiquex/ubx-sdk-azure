@@ -470,15 +470,23 @@ const OpenapiAutonomousDatabase_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiAutonomousDatabaseConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Autonomous Database base resource model. */
   properties?: OpenapiAutonomousDatabase_Properties | Computed<OpenapiAutonomousDatabase_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   autonomousdatabasename: string | Computed<string>;
 }
 
 export interface OpenapiAutonomousDatabaseAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Autonomous Database base resource model. */
   properties: OpenapiAutonomousDatabase_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** path parameter, not part of the API's own resource representation */
   autonomousdatabasename: string;
 }
@@ -486,11 +494,13 @@ export interface OpenapiAutonomousDatabaseAttrs {
 export const OpenapiAutonomousDatabase: ResourceBinding<OpenapiAutonomousDatabaseConfig, OpenapiAutonomousDatabaseAttrs> = {
   wireType: "azure_oracle_openapi_autonomous_database",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiAutonomousDatabase_PropertiesFields,
     },
+    tags: "tags",
     autonomousdatabasename: "autonomousdatabasename",
   },
 };

@@ -236,6 +236,21 @@ export interface Cluster_Properties {
   waveUpgradePaused?: boolean | Computed<boolean>;
 }
 
+export interface Cluster_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC). */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const Cluster_Properties_ApplicationTypeVersionsCleanupPolicyFields: FieldMap = {
   maxUnusedVersionsToKeep: "max_unused_versions_to_keep",
 };
@@ -518,22 +533,42 @@ const Cluster_PropertiesFields: FieldMap = {
 };
 
 export interface ClusterConfig {
+  /** Azure resource location. */
+  location: string | Computed<string>;
   /** Describes the cluster resource properties. */
   properties?: Cluster_Properties | Computed<Cluster_Properties>;
+  /** Azure resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ClusterAttrs {
+  /** Azure resource etag. */
+  etag: string;
+  /** Azure resource identifier. */
+  id: string;
+  /** Azure resource location. */
+  location: string;
+  /** Azure resource name. */
+  name: string;
   /** Describes the cluster resource properties. */
   properties: Cluster_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: Cluster_SystemData;
+  /** Azure resource tags. */
+  tags: Record<string, string>;
+  /** Azure resource type. */
+  type: string;
 }
 
 export const Cluster: ResourceBinding<ClusterConfig, ClusterAttrs> = {
   wireType: "azure_servicefabric_cluster",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Cluster_PropertiesFields,
     },
+    tags: "tags",
   },
 };

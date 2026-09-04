@@ -13,24 +13,43 @@ var NetworkwatcherNetworkWatcher_PropertiesFields = ubx.FieldMap{
 }
 
 type NetworkwatcherNetworkWatcherConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// The network watcher properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type NetworkwatcherNetworkWatcherAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// The network watcher properties.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var NetworkwatcherNetworkWatcher = ubx.ResourceBinding{
 	WireType: "azure_network_networkwatcher_network_watcher",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   NetworkwatcherNetworkWatcher_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

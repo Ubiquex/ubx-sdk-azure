@@ -218,17 +218,25 @@ const Domain_PropertiesFields: FieldMap = {
 export interface DomainConfig {
   /** The identity information for the resource. */
   identity?: Domain_Identity | Computed<Domain_Identity>;
+  /** Location of the resource. */
+  location: string | Computed<string>;
   /** Properties of the Event Grid Domain Resource. */
   properties?: Domain_Properties | Computed<Domain_Properties>;
+  /** Tags of the resource. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface DomainAttrs {
   /** The identity information for the resource. */
   identity: Domain_Identity;
+  /** Location of the resource. */
+  location: string;
   /** Properties of the Event Grid Domain Resource. */
   properties: Domain_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: Domain_SystemData;
+  /** Tags of the resource. */
+  tags: Record<string, string>;
 }
 
 export const Domain: ResourceBinding<DomainConfig, DomainAttrs> = {
@@ -239,10 +247,12 @@ export const Domain: ResourceBinding<DomainConfig, DomainAttrs> = {
       kind: "object",
       fields: Domain_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Domain_PropertiesFields,
     },
+    tags: "tags",
   },
 };

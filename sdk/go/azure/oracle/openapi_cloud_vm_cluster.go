@@ -265,15 +265,23 @@ var OpenapiCloudVmCluster_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiCloudVmClusterConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// CloudVmCluster resource model
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Cloudvmclustername any
 }
 
 type OpenapiCloudVmClusterAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// CloudVmCluster resource model
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Cloudvmclustername any
 }
@@ -281,11 +289,13 @@ type OpenapiCloudVmClusterAttrs struct {
 var OpenapiCloudVmCluster = ubx.ResourceBinding{
 	WireType: "azure_oracle_openapi_cloud_vm_cluster",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiCloudVmCluster_PropertiesFields,
 		},
+		"Tags":               ubx.FieldSpec{WireName: "tags"},
 		"Cloudvmclustername": ubx.FieldSpec{WireName: "cloudvmclustername"},
 	},
 }

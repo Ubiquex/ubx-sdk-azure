@@ -216,9 +216,13 @@ export interface OpenapiOnlineDeploymentConfig {
   identity?: OpenapiOnlineDeployment_Identity | Computed<OpenapiOnlineDeployment_Identity>;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   properties: OpenapiOnlineDeployment_Properties | Computed<OpenapiOnlineDeployment_Properties>;
   /** The resource model definition representing SKU */
   sku?: OpenapiOnlineDeployment_Sku | Computed<OpenapiOnlineDeployment_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiOnlineDeploymentAttrs {
@@ -226,9 +230,13 @@ export interface OpenapiOnlineDeploymentAttrs {
   identity: OpenapiOnlineDeployment_Identity;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   properties: OpenapiOnlineDeployment_Properties;
   /** The resource model definition representing SKU */
   sku: OpenapiOnlineDeployment_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiOnlineDeployment: ResourceBinding<OpenapiOnlineDeploymentConfig, OpenapiOnlineDeploymentAttrs> = {
@@ -240,6 +248,7 @@ export const OpenapiOnlineDeployment: ResourceBinding<OpenapiOnlineDeploymentCon
       fields: OpenapiOnlineDeployment_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -250,5 +259,6 @@ export const OpenapiOnlineDeployment: ResourceBinding<OpenapiOnlineDeploymentCon
       kind: "object",
       fields: OpenapiOnlineDeployment_SkuFields,
     },
+    tags: "tags",
   },
 };

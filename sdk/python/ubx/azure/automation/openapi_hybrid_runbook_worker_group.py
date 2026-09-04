@@ -40,10 +40,14 @@ class OpenapiHybridRunbookWorkerGroupConfig:
 
 @dataclasses.dataclass
 class OpenapiHybridRunbookWorkerGroupAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Gets or sets the name of the resource.
     name: Any = None
     # The hybrid runbook worker group properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiHybridRunbookWorkerGroup = ubx.ResourceBinding(
     wire_type="azure_automation_openapi_hybrid_runbook_worker_group",

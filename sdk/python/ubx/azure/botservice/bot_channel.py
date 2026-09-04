@@ -17,6 +17,13 @@ class BotChannel_Properties:
     # Provisioning state of the resource
     provisioning_state: Any = None
 
+@dataclasses.dataclass
+class BotChannel_Sku:
+    # The name of SKU.
+    name: Any = None
+    # Gets the sku tier. This is based on the SKU name.
+    tier: Any = None
+
 _BotChannel_PropertiesFields = {
     "channel_name": ubx.FieldSpec(wire_name="channel_name"),
     "etag": ubx.FieldSpec(wire_name="etag"),
@@ -24,23 +31,65 @@ _BotChannel_PropertiesFields = {
     "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
 }
 
+_BotChannel_SkuFields = {
+    "name": ubx.FieldSpec(wire_name="name"),
+    "tier": ubx.FieldSpec(wire_name="tier"),
+}
+
 @dataclasses.dataclass
 class BotChannelConfig:
+    # Entity Tag.
+    etag: Any = None
+    # Indicates the type of bot service
+    kind: Any = None
+    # Specifies the location of the resource.
+    location: Any = None
     # Channel definition
     properties: Any = None
+    # The SKU of the cognitive services account.
+    sku: Any = None
+    # Contains resource tags defined as key/value pairs.
+    tags: Any = None
 
 @dataclasses.dataclass
 class BotChannelAttrs:
+    # Entity Tag.
+    etag: Any = None
+    # Specifies the resource ID.
+    id: Any = None
+    # Indicates the type of bot service
+    kind: Any = None
+    # Specifies the location of the resource.
+    location: Any = None
+    # Specifies the name of the resource.
+    name: Any = None
     # Channel definition
     properties: Any = None
+    # The SKU of the cognitive services account.
+    sku: Any = None
+    # Contains resource tags defined as key/value pairs.
+    tags: Any = None
+    # Specifies the type of the resource.
+    type: Any = None
+    # Entity zones
+    zones: Any = None
 
 BotChannel = ubx.ResourceBinding(
     wire_type="azure_botservice_bot_channel",
     fields={
+        "etag": ubx.FieldSpec(wire_name="etag"),
+        "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_BotChannel_PropertiesFields,
         ),
+        "sku": ubx.FieldSpec(
+            wire_name="sku",
+            kind="object",
+            fields=_BotChannel_SkuFields,
+        ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

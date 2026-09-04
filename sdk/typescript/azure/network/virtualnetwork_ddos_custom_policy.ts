@@ -89,24 +89,43 @@ const VirtualnetworkDdosCustomPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkDdosCustomPolicyConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** DDoS custom policy properties. */
   properties?: VirtualnetworkDdosCustomPolicy_Properties | Computed<VirtualnetworkDdosCustomPolicy_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkDdosCustomPolicyAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** DDoS custom policy properties. */
   properties: VirtualnetworkDdosCustomPolicy_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkDdosCustomPolicy: ResourceBinding<VirtualnetworkDdosCustomPolicyConfig, VirtualnetworkDdosCustomPolicyAttrs> = {
   wireType: "azure_network_virtualnetwork_ddos_custom_policy",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkDdosCustomPolicy_PropertiesFields,
     },
+    tags: "tags",
   },
 };

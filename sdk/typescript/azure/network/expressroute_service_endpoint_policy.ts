@@ -3004,26 +3004,45 @@ const ExpressrouteServiceEndpointPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteServiceEndpointPolicyConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Service Endpoint Policy resource. */
   properties?: ExpressrouteServiceEndpointPolicy_Properties | Computed<ExpressrouteServiceEndpointPolicy_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ExpressrouteServiceEndpointPolicyAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** Kind of service endpoint policy. This is metadata used for the Azure portal experience. */
   kind: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Service Endpoint Policy resource. */
   properties: ExpressrouteServiceEndpointPolicy_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const ExpressrouteServiceEndpointPolicy: ResourceBinding<ExpressrouteServiceEndpointPolicyConfig, ExpressrouteServiceEndpointPolicyAttrs> = {
   wireType: "azure_network_expressroute_service_endpoint_policy",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ExpressrouteServiceEndpointPolicy_PropertiesFields,
     },
+    tags: "tags",
   },
 };

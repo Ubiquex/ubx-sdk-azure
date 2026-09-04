@@ -52,20 +52,24 @@ type OpenapiCustomHostnameAnalysisResult_Properties struct {
 
 type OpenapiCustomHostnameAnalysisResultConfig struct {
 	HostName any
-	Name     any
 }
 
 type OpenapiCustomHostnameAnalysisResultAttrs struct {
 	HostName any
-	Name     any
+	// Resource Id.
+	Id any
+	// Kind of resource.
+	Kind any
+	Name any
 	// CustomHostnameAnalysisResult resource specific properties
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var OpenapiCustomHostnameAnalysisResult = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_custom_hostname_analysis_result",
 	Fields: ubx.FieldMap{
 		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"Name":     ubx.FieldSpec{WireName: "name"},
 	},
 }

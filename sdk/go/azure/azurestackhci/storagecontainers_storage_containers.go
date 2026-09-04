@@ -73,15 +73,23 @@ var StoragecontainersStorageContainers_PropertiesFields = ubx.FieldMap{
 type StoragecontainersStorageContainersConfig struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the storage container resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type StoragecontainersStorageContainersAttrs struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the storage container resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var StoragecontainersStorageContainers = ubx.ResourceBinding{
@@ -92,10 +100,12 @@ var StoragecontainersStorageContainers = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   StoragecontainersStorageContainers_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   StoragecontainersStorageContainers_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

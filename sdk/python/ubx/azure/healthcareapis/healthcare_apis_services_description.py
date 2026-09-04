@@ -7,6 +7,15 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class HealthcareApisServicesDescription_Identity:
+    # The principal ID of the resource identity.
+    principal_id: Any = None
+    # The tenant ID of the resource.
+    tenant_id: Any = None
+    # Type of identity being specified, currently SystemAssigned and None are allowed.
+    type: Any = None
+
+@dataclasses.dataclass
 class HealthcareApisServicesDescription_Properties_AccessPolicies:
     object_id: Any = None
 
@@ -125,6 +134,12 @@ class HealthcareApisServicesDescription_SystemData:
     last_modified_by: Any = None
     # The type of identity that last modified the resource.
     last_modified_by_type: Any = None
+
+_HealthcareApisServicesDescription_IdentityFields = {
+    "principal_id": ubx.FieldSpec(wire_name="principal_id"),
+    "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
+    "type": ubx.FieldSpec(wire_name="type"),
+}
 
 _HealthcareApisServicesDescription_Properties_AccessPoliciesFields = {
     "object_id": ubx.FieldSpec(wire_name="object_id"),
@@ -254,23 +269,58 @@ _HealthcareApisServicesDescription_PropertiesFields = {
 
 @dataclasses.dataclass
 class HealthcareApisServicesDescriptionConfig:
+    # An etag associated with the resource, used for optimistic concurrency when editing it.
+    etag: Any = None
+    # Setting indicating whether the service has a managed identity associated with it.
+    identity: Any = None
+    # The kind of the service.
+    kind: Any = None
+    # The resource location.
+    location: Any = None
     # The properties of a service instance.
     properties: Any = None
+    # The resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisServicesDescriptionAttrs:
+    # An etag associated with the resource, used for optimistic concurrency when editing it.
+    etag: Any = None
+    # The resource identifier.
+    id: Any = None
+    # Setting indicating whether the service has a managed identity associated with it.
+    identity: Any = None
+    # The kind of the service.
+    kind: Any = None
+    # The resource location.
+    location: Any = None
+    # The resource name.
+    name: Any = None
     # The properties of a service instance.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # The resource tags.
+    tags: Any = None
+    # The resource type.
+    type: Any = None
 
 HealthcareApisServicesDescription = ubx.ResourceBinding(
     wire_type="azure_healthcareapis_healthcare_apis_services_description",
     fields={
+        "etag": ubx.FieldSpec(wire_name="etag"),
+        "identity": ubx.FieldSpec(
+            wire_name="identity",
+            kind="object",
+            fields=_HealthcareApisServicesDescription_IdentityFields,
+        ),
+        "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_HealthcareApisServicesDescription_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

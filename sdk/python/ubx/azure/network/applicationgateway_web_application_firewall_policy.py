@@ -9730,23 +9730,42 @@ _ApplicationgatewayWebApplicationFirewallPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class ApplicationgatewayWebApplicationFirewallPolicyConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Defines web application firewall policy properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ApplicationgatewayWebApplicationFirewallPolicyAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Defines web application firewall policy properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 ApplicationgatewayWebApplicationFirewallPolicy = ubx.ResourceBinding(
     wire_type="azure_network_applicationgateway_web_application_firewall_policy",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ApplicationgatewayWebApplicationFirewallPolicy_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

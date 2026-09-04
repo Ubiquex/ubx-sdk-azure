@@ -26,24 +26,34 @@ const ConfigurationProfile_PropertiesFields: FieldMap = {
 };
 
 export interface ConfigurationProfileConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Automanage configuration profile properties. */
   properties?: ConfigurationProfile_Properties | Computed<ConfigurationProfile_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ConfigurationProfileAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Automanage configuration profile properties. */
   properties: ConfigurationProfile_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: ConfigurationProfile_SystemData;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ConfigurationProfile: ResourceBinding<ConfigurationProfileConfig, ConfigurationProfileAttrs> = {
   wireType: "azure_automanage_configuration_profile",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ConfigurationProfile_PropertiesFields,
     },
+    tags: "tags",
   },
 };

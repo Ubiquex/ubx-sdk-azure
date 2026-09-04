@@ -174,22 +174,32 @@ const MachineRunCommand_PropertiesFields: FieldMap = {
 };
 
 export interface MachineRunCommandConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describes the properties of a Virtual Machine run command. */
   properties?: MachineRunCommand_Properties | Computed<MachineRunCommand_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MachineRunCommandAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describes the properties of a Virtual Machine run command. */
   properties: MachineRunCommand_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const MachineRunCommand: ResourceBinding<MachineRunCommandConfig, MachineRunCommandAttrs> = {
   wireType: "azure_virtual_machine_run_command",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: MachineRunCommand_PropertiesFields,
     },
+    tags: "tags",
   },
 };

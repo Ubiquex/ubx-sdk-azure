@@ -27,8 +27,18 @@ class ApplicationgatewayApplicationGatewayAvailableSslOptionsConfig:
 
 @dataclasses.dataclass
 class ApplicationgatewayApplicationGatewayAvailableSslOptionsAttrs:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of ApplicationGatewayAvailableSslOptions.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 ApplicationgatewayApplicationGatewayAvailableSslOptions = ubx.DataSourceBinding(
     wire_type="azure_network_applicationgateway_application_gateway_available_ssl_options",

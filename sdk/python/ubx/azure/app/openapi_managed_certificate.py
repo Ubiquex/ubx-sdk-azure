@@ -29,21 +29,31 @@ _OpenapiManagedCertificate_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiManagedCertificateConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Certificate resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagedCertificateAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Certificate resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiManagedCertificate = ubx.ResourceBinding(
     wire_type="azure_app_openapi_managed_certificate",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiManagedCertificate_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

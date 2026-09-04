@@ -121,15 +121,23 @@ const OpenapiExperiment_PropertiesFields: FieldMap = {
 export interface OpenapiExperimentConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: OpenapiExperiment_Identity | Computed<OpenapiExperiment_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Model that represents the Experiment properties model. */
   properties: OpenapiExperiment_Properties | Computed<OpenapiExperiment_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiExperimentAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: OpenapiExperiment_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Model that represents the Experiment properties model. */
   properties: OpenapiExperiment_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiExperiment: ResourceBinding<OpenapiExperimentConfig, OpenapiExperimentAttrs> = {
@@ -140,10 +148,12 @@ export const OpenapiExperiment: ResourceBinding<OpenapiExperimentConfig, Openapi
       kind: "object",
       fields: OpenapiExperiment_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiExperiment_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -48,13 +48,21 @@ const OpenapiAccessConnector_PropertiesFields: FieldMap = {
 export interface OpenapiAccessConnectorConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: OpenapiAccessConnector_Identity | Computed<OpenapiAccessConnector_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   properties?: OpenapiAccessConnector_Properties | Computed<OpenapiAccessConnector_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiAccessConnectorAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: OpenapiAccessConnector_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   properties: OpenapiAccessConnector_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiAccessConnector: ResourceBinding<OpenapiAccessConnectorConfig, OpenapiAccessConnectorAttrs> = {
@@ -65,10 +73,12 @@ export const OpenapiAccessConnector: ResourceBinding<OpenapiAccessConnectorConfi
       kind: "object",
       fields: OpenapiAccessConnector_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiAccessConnector_PropertiesFields,
     },
+    tags: "tags",
   },
 };

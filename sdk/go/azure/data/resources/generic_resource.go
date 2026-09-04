@@ -54,6 +54,21 @@ type GenericResource_Sku struct {
 	Tier any
 }
 
+type GenericResource_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 type GenericResourceConfig struct {
 	ApiVersion any
 	ResourceId any
@@ -63,6 +78,8 @@ type GenericResourceAttrs struct {
 	ApiVersion any
 	// Resource extended location.
 	ExtendedLocation any
+	// Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+	Id any
 	// Identity for the resource.
 	Identity any
 	// The kind of the resource.
@@ -71,6 +88,8 @@ type GenericResourceAttrs struct {
 	Location any
 	// ID of the resource that manages this resource.
 	ManagedBy any
+	// The name of the resource
+	Name any
 	// Plan for the resource.
 	Plan any
 	// The resource-specific properties for this resource.
@@ -78,8 +97,12 @@ type GenericResourceAttrs struct {
 	ResourceId any
 	// SKU for the resource.
 	Sku any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
 	// Resource tags
 	Tags any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var GenericResource = ubx.DataSourceBinding{

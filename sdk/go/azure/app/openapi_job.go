@@ -475,15 +475,23 @@ var OpenapiJob_PropertiesFields = ubx.FieldMap{
 type OpenapiJobConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Container Apps Job resource specific properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiJobAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Container Apps Job resource specific properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiJob = ubx.ResourceBinding{
@@ -494,10 +502,12 @@ var OpenapiJob = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiJob_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiJob_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

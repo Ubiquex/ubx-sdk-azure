@@ -36,21 +36,31 @@ _TrafficcontrollerAssociation_PropertiesFields = {
 
 @dataclasses.dataclass
 class TrafficcontrollerAssociationConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Association Properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class TrafficcontrollerAssociationAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Association Properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 TrafficcontrollerAssociation = ubx.ResourceBinding(
     wire_type="azure_servicenetworking_trafficcontroller_association",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_TrafficcontrollerAssociation_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

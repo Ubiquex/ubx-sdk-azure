@@ -31,23 +31,33 @@ _VirtualnetworkIpamPool_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkIpamPoolConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of IpamPool resource properties which are specific to the Pool resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkIpamPoolAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of IpamPool resource properties which are specific to the Pool resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 VirtualnetworkIpamPool = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_ipam_pool",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualnetworkIpamPool_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

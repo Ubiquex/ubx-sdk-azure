@@ -62,6 +62,8 @@ const ExpressrouteExpressRouteCircuitConnection_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteExpressRouteCircuitConnectionConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of the express route circuit connection. */
   properties?: ExpressrouteExpressRouteCircuitConnection_Properties | Computed<ExpressrouteExpressRouteCircuitConnection_Properties>;
 }
@@ -69,13 +71,18 @@ export interface ExpressrouteExpressRouteCircuitConnectionConfig {
 export interface ExpressrouteExpressRouteCircuitConnectionAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the express route circuit connection. */
   properties: ExpressrouteExpressRouteCircuitConnection_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const ExpressrouteExpressRouteCircuitConnection: ResourceBinding<ExpressrouteExpressRouteCircuitConnectionConfig, ExpressrouteExpressRouteCircuitConnectionAttrs> = {
   wireType: "azure_network_expressroute_express_route_circuit_connection",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

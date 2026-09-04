@@ -8244,10 +8244,16 @@ var LoadbalancerLoadBalancer_PropertiesFields = ubx.FieldMap{
 type LoadbalancerLoadBalancerConfig struct {
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Properties of the load balancer.
 	Properties any
 	// SKU of a load balancer.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type LoadbalancerLoadBalancerAttrs struct {
@@ -8255,10 +8261,20 @@ type LoadbalancerLoadBalancerAttrs struct {
 	Etag any
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties of the load balancer.
 	Properties any
 	// SKU of a load balancer.
 	Sku any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var LoadbalancerLoadBalancer = ubx.ResourceBinding{
@@ -8269,6 +8285,8 @@ var LoadbalancerLoadBalancer = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   LoadbalancerLoadBalancer_ExtendedLocationFields,
 		},
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -8279,5 +8297,6 @@ var LoadbalancerLoadBalancer = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   LoadbalancerLoadBalancer_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

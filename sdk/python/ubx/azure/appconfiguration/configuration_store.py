@@ -215,21 +215,29 @@ _ConfigurationStore_SkuFields = {
 class ConfigurationStoreConfig:
     # An identity that can be associated with a resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a configuration store.
     properties: Any = None
     # Describes a configuration store SKU.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ConfigurationStoreAttrs:
     # An identity that can be associated with a resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a configuration store.
     properties: Any = None
     # Describes a configuration store SKU.
     sku: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ConfigurationStore = ubx.ResourceBinding(
     wire_type="azure_appconfiguration_configuration_store",
@@ -239,6 +247,7 @@ ConfigurationStore = ubx.ResourceBinding(
             kind="object",
             fields=_ConfigurationStore_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -249,5 +258,6 @@ ConfigurationStore = ubx.ResourceBinding(
             kind="object",
             fields=_ConfigurationStore_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -111,16 +111,24 @@ const MonitorResource_SkuFields: FieldMap = {
 
 export interface MonitorResourceConfig {
   identity?: MonitorResource_Identity | Computed<MonitorResource_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties specific to the monitor resource. */
   properties?: MonitorResource_Properties | Computed<MonitorResource_Properties>;
   sku?: MonitorResource_Sku | Computed<MonitorResource_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MonitorResourceAttrs {
   identity: MonitorResource_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties specific to the monitor resource. */
   properties: MonitorResource_Properties;
   sku: MonitorResource_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const MonitorResource: ResourceBinding<MonitorResourceConfig, MonitorResourceAttrs> = {
@@ -131,6 +139,7 @@ export const MonitorResource: ResourceBinding<MonitorResourceConfig, MonitorReso
       kind: "object",
       fields: MonitorResource_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -141,5 +150,6 @@ export const MonitorResource: ResourceBinding<MonitorResourceConfig, MonitorReso
       kind: "object",
       fields: MonitorResource_SkuFields,
     },
+    tags: "tags",
   },
 };

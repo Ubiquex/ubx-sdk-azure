@@ -318,22 +318,32 @@ var OpenapiMigration_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiMigrationConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Migration.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiMigrationAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Migration.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiMigration = ubx.ResourceBinding{
 	WireType: "azure_postgresql_openapi_migration",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiMigration_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

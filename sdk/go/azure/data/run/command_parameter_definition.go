@@ -16,6 +16,14 @@ type CommandParameterDefinitionConfig struct {
 
 type CommandParameterDefinitionAttrs struct {
 	CommandId any
+	// The VM run command description.
+	Description any
+	// The VM run command id.
+	Id any
+	// The VM run command label.
+	Label any
+	// This property allows you to specify the type of the OS that is included in the disk if creating a VM from user-image or a specialized VHD. Possible values are: **Windows,** **Linux.**
+	OsType any
 	// The parameters used by the script.
 	Parameters any
 	// The script to be executed.

@@ -23,6 +23,8 @@ export interface PrivatelinkforazureadPrivateLinkPolicyConfig {
 export interface PrivatelinkforazureadPrivateLinkPolicyAttrs {
   /** Flag indicating whether all tenants are allowed */
   allTenants: boolean;
+  /** String Id used to locate any resource on Azure. */
+  id: string;
   /** Name of the Private Link Azure AD Policy. */
   name: string;
   /** Guid of the owner tenant */
@@ -37,6 +39,8 @@ export interface PrivatelinkforazureadPrivateLinkPolicyAttrs {
   tags: Record<string, string>;
   /** The list of tenantIds. */
   tenants: string[];
+  /** Type of this resource. */
+  type: string;
 }
 
 export const PrivatelinkforazureadPrivateLinkPolicy: ResourceBinding<PrivatelinkforazureadPrivateLinkPolicyConfig, PrivatelinkforazureadPrivateLinkPolicyAttrs> = {

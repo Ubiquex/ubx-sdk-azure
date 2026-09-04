@@ -29,6 +29,8 @@ class PrivatelinkforazureadPrivateLinkPolicyConfig:
 class PrivatelinkforazureadPrivateLinkPolicyAttrs:
     # Flag indicating whether all tenants are allowed
     all_tenants: Any = None
+    # String Id used to locate any resource on Azure.
+    id: Any = None
     # Name of the Private Link Azure AD Policy.
     name: Any = None
     # Guid of the owner tenant
@@ -43,6 +45,8 @@ class PrivatelinkforazureadPrivateLinkPolicyAttrs:
     tags: Any = None
     # The list of tenantIds.
     tenants: Any = None
+    # Type of this resource.
+    type: Any = None
 
 PrivatelinkforazureadPrivateLinkPolicy = ubx.ResourceBinding(
     wire_type="azure_azureactivedirectory_privatelinkforazuread_private_link_policy",

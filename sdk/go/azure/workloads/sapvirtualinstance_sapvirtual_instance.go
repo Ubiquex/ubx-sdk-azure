@@ -132,15 +132,23 @@ var SapvirtualinstanceSapvirtualInstance_PropertiesFields = ubx.FieldMap{
 type SapvirtualinstanceSapvirtualInstanceConfig struct {
 	// A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the Virtual Instance for SAP solutions resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type SapvirtualinstanceSapvirtualInstanceAttrs struct {
 	// A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the Virtual Instance for SAP solutions resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var SapvirtualinstanceSapvirtualInstance = ubx.ResourceBinding{
@@ -151,10 +159,12 @@ var SapvirtualinstanceSapvirtualInstance = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   SapvirtualinstanceSapvirtualInstance_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   SapvirtualinstanceSapvirtualInstance_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

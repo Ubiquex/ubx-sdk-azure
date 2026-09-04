@@ -43,10 +43,18 @@ class NetworkmanagerNetworkManagerConnectionConfig:
 
 @dataclasses.dataclass
 class NetworkmanagerNetworkManagerConnectionAttrs:
+    # A unique read-only string that changes whenever the resource is updated.
+    etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource name.
+    name: Any = None
     # Information about the network manager connection.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource type.
+    type: Any = None
 
 NetworkmanagerNetworkManagerConnection = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_network_manager_connection",

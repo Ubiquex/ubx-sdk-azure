@@ -36,10 +36,14 @@ type OpenapiHybridRunbookWorkerGroupConfig struct {
 }
 
 type OpenapiHybridRunbookWorkerGroupAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Gets or sets the name of the resource.
 	Name any
 	// The hybrid runbook worker group properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiHybridRunbookWorkerGroup = ubx.ResourceBinding{

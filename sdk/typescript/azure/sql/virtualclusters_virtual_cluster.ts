@@ -17,22 +17,32 @@ const VirtualclustersVirtualCluster_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualclustersVirtualClusterConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The properties of a virtual cluster. */
   properties?: VirtualclustersVirtualCluster_Properties | Computed<VirtualclustersVirtualCluster_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualclustersVirtualClusterAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The properties of a virtual cluster. */
   properties: VirtualclustersVirtualCluster_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const VirtualclustersVirtualCluster: ResourceBinding<VirtualclustersVirtualClusterConfig, VirtualclustersVirtualClusterAttrs> = {
   wireType: "azure_sql_virtualclusters_virtual_cluster",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualclustersVirtualCluster_PropertiesFields,
     },
+    tags: "tags",
   },
 };

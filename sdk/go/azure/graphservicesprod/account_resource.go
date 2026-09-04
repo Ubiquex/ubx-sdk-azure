@@ -30,24 +30,40 @@ var AccountResource_PropertiesFields = ubx.FieldMap{
 }
 
 type AccountResourceConfig struct {
+	// Location of the resource.
+	Location any
 	// Property bag from billing account
 	Properties any
+	// resource tags.
+	Tags any
 }
 
 type AccountResourceAttrs struct {
+	// Azure resource ID.
+	Id any
+	// Location of the resource.
+	Location any
+	// Azure resource name.
+	Name any
 	// Property bag from billing account
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// resource tags.
+	Tags any
+	// Azure resource type.
+	Type any
 }
 
 var AccountResource = ubx.ResourceBinding{
 	WireType: "azure_graphservicesprod_account_resource",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   AccountResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -62,15 +62,23 @@ const VmmServer_PropertiesFields: FieldMap = {
 export interface VmmServerConfig {
   /** The extended location. */
   extendedLocation: VmmServer_ExtendedLocation | Computed<VmmServer_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Defines the resource properties. */
   properties?: VmmServer_Properties | Computed<VmmServer_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VmmServerAttrs {
   /** The extended location. */
   extendedLocation: VmmServer_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Defines the resource properties. */
   properties: VmmServer_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const VmmServer: ResourceBinding<VmmServerConfig, VmmServerAttrs> = {
@@ -81,10 +89,12 @@ export const VmmServer: ResourceBinding<VmmServerConfig, VmmServerAttrs> = {
       kind: "object",
       fields: VmmServer_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VmmServer_PropertiesFields,
     },
+    tags: "tags",
   },
 };

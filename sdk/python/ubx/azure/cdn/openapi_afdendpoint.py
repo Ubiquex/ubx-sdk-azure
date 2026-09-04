@@ -34,21 +34,31 @@ _OpenapiAfdendpoint_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiAfdendpointConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # The JSON object that contains the properties required to create an endpoint.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiAfdendpointAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # The JSON object that contains the properties required to create an endpoint.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiAfdendpoint = ubx.ResourceBinding(
     wire_type="azure_cdn_openapi_afdendpoint",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiAfdendpoint_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

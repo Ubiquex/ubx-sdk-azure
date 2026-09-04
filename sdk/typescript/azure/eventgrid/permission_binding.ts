@@ -43,10 +43,16 @@ export interface PermissionBindingConfig {
 }
 
 export interface PermissionBindingAttrs {
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** The properties of permission binding. */
   properties: PermissionBinding_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: PermissionBinding_SystemData;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const PermissionBinding: ResourceBinding<PermissionBindingConfig, PermissionBindingAttrs> = {

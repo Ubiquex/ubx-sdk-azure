@@ -218,17 +218,25 @@ _Topic_PropertiesFields = {
 class TopicConfig:
     # The identity information for the resource.
     identity: Any = None
+    # Location of the resource.
+    location: Any = None
     # Properties of the Topic.
     properties: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 @dataclasses.dataclass
 class TopicAttrs:
     # The identity information for the resource.
     identity: Any = None
+    # Location of the resource.
+    location: Any = None
     # Properties of the Topic.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 Topic = ubx.ResourceBinding(
     wire_type="azure_eventgrid_topic",
@@ -238,10 +246,12 @@ Topic = ubx.ResourceBinding(
             kind="object",
             fields=_Topic_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Topic_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

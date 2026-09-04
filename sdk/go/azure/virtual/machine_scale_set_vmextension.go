@@ -133,6 +133,8 @@ type MachineScaleSetVmextensionConfig struct {
 }
 
 type MachineScaleSetVmextensionAttrs struct {
+	// Resource Id
+	Id any
 	// The location of the extension.
 	Location any
 	// Resource name

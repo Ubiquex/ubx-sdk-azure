@@ -495,22 +495,31 @@ const NamespaceResource_SkuFields: FieldMap = {
 };
 
 export interface NamespaceResourceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Represents namespace properties. */
   properties?: NamespaceResource_Properties | Computed<NamespaceResource_Properties>;
   /** The Sku description for a namespace */
   sku: NamespaceResource_Sku | Computed<NamespaceResource_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NamespaceResourceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Represents namespace properties. */
   properties: NamespaceResource_Properties;
   /** The Sku description for a namespace */
   sku: NamespaceResource_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const NamespaceResource: ResourceBinding<NamespaceResourceConfig, NamespaceResourceAttrs> = {
   wireType: "azure_notificationhubs_namespace_resource",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -521,5 +530,6 @@ export const NamespaceResource: ResourceBinding<NamespaceResourceConfig, Namespa
       kind: "object",
       fields: NamespaceResource_SkuFields,
     },
+    tags: "tags",
   },
 };

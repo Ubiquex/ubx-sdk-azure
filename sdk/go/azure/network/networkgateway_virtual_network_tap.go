@@ -10011,24 +10011,43 @@ var NetworkgatewayVirtualNetworkTap_PropertiesFields = ubx.FieldMap{
 }
 
 type NetworkgatewayVirtualNetworkTapConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Virtual Network Tap properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type NetworkgatewayVirtualNetworkTapAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Virtual Network Tap properties.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var NetworkgatewayVirtualNetworkTap = ubx.ResourceBinding{
 	WireType: "azure_network_networkgateway_virtual_network_tap",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   NetworkgatewayVirtualNetworkTap_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

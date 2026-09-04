@@ -50,24 +50,43 @@ var VirtualwanVirtualWan_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanVirtualWanConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Parameters for VirtualWAN.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualwanVirtualWanAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Parameters for VirtualWAN.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualwanVirtualWan = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_virtual_wan",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualwanVirtualWan_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

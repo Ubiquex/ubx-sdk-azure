@@ -86,15 +86,23 @@ const LoadTestResource_PropertiesFields: FieldMap = {
 export interface LoadTestResourceConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: LoadTestResource_Identity | Computed<LoadTestResource_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** LoadTest resource properties. */
   properties?: LoadTestResource_Properties | Computed<LoadTestResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface LoadTestResourceAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: LoadTestResource_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** LoadTest resource properties. */
   properties: LoadTestResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const LoadTestResource: ResourceBinding<LoadTestResourceConfig, LoadTestResourceAttrs> = {
@@ -105,10 +113,12 @@ export const LoadTestResource: ResourceBinding<LoadTestResourceConfig, LoadTestR
       kind: "object",
       fields: LoadTestResource_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: LoadTestResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -375,8 +375,12 @@ class OpenapiManagedEnvironmentConfig:
     identity: Any = None
     # Kind of the Environment.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Managed environment resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiManagedEnvironmentAttrs:
@@ -384,8 +388,12 @@ class OpenapiManagedEnvironmentAttrs:
     identity: Any = None
     # Kind of the Environment.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Managed environment resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiManagedEnvironment = ubx.ResourceBinding(
     wire_type="azure_app_openapi_managed_environment",
@@ -396,10 +404,12 @@ OpenapiManagedEnvironment = ubx.ResourceBinding(
             fields=_OpenapiManagedEnvironment_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiManagedEnvironment_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

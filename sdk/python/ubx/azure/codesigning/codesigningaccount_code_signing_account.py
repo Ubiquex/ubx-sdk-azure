@@ -36,21 +36,31 @@ _CodesigningaccountCodeSigningAccount_PropertiesFields = {
 
 @dataclasses.dataclass
 class CodesigningaccountCodeSigningAccountConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the artifact signing account.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class CodesigningaccountCodeSigningAccountAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the artifact signing account.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 CodesigningaccountCodeSigningAccount = ubx.ResourceBinding(
     wire_type="azure_codesigning_codesigningaccount_code_signing_account",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_CodesigningaccountCodeSigningAccount_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

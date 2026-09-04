@@ -45,6 +45,8 @@ _VirtualnetworkInboundSecurityRule_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkInboundSecurityRuleConfig:
+    # Name of the resource.
+    name: Any = None
     # Properties of the Inbound Security Rules resource.
     properties: Any = None
 
@@ -52,12 +54,17 @@ class VirtualnetworkInboundSecurityRuleConfig:
 class VirtualnetworkInboundSecurityRuleAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the Inbound Security Rules resource.
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkInboundSecurityRule = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_inbound_security_rule",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

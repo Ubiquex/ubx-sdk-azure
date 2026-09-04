@@ -13,18 +13,22 @@ export interface OpenapiMsdeployLog_Properties {
 }
 
 export interface OpenapiMsdeployLogConfig {
-  name: string | Computed<string>;
 }
 
 export interface OpenapiMsdeployLogAttrs {
+  /** Resource Id. */
+  id: string;
+  /** Kind of resource. */
+  kind: string;
   name: string;
   /** MSDeployLog resource specific properties */
   properties: OpenapiMsdeployLog_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const OpenapiMsdeployLog: DataSourceBinding<OpenapiMsdeployLogConfig, OpenapiMsdeployLogAttrs> = {
   wireType: "azure_web_openapi_msdeploy_log",
   fields: {
-    name: "name",
   },
 };

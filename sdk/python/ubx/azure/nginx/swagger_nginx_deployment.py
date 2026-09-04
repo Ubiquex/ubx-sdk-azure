@@ -358,19 +358,27 @@ _SwaggerNginxDeployment_SkuFields = {
 class SwaggerNginxDeploymentConfig:
     # Identity Properties
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Nginx Deployment Properties
     properties: Any = None
     # Resource Sku
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class SwaggerNginxDeploymentAttrs:
     # Identity Properties
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Nginx Deployment Properties
     properties: Any = None
     # Resource Sku
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 SwaggerNginxDeployment = ubx.ResourceBinding(
     wire_type="azure_nginx_swagger_nginx_deployment",
@@ -380,6 +388,7 @@ SwaggerNginxDeployment = ubx.ResourceBinding(
             kind="object",
             fields=_SwaggerNginxDeployment_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -390,5 +399,6 @@ SwaggerNginxDeployment = ubx.ResourceBinding(
             kind="object",
             fields=_SwaggerNginxDeployment_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

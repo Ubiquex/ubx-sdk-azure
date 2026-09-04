@@ -138,15 +138,23 @@ _SapvirtualinstanceSapvirtualInstance_PropertiesFields = {
 class SapvirtualinstanceSapvirtualInstanceConfig:
     # A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the Virtual Instance for SAP solutions resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class SapvirtualinstanceSapvirtualInstanceAttrs:
     # A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the Virtual Instance for SAP solutions resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 SapvirtualinstanceSapvirtualInstance = ubx.ResourceBinding(
     wire_type="azure_workloads_sapvirtualinstance_sapvirtual_instance",
@@ -156,10 +164,12 @@ SapvirtualinstanceSapvirtualInstance = ubx.ResourceBinding(
             kind="object",
             fields=_SapvirtualinstanceSapvirtualInstance_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_SapvirtualinstanceSapvirtualInstance_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

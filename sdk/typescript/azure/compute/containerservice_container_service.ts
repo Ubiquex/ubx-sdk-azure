@@ -201,22 +201,38 @@ const ContainerserviceContainerService_PropertiesFields: FieldMap = {
 };
 
 export interface ContainerserviceContainerServiceConfig {
+  /** Resource location */
+  location: string | Computed<string>;
   /** Properties of the container service. */
   properties?: ContainerserviceContainerService_Properties | Computed<ContainerserviceContainerService_Properties>;
+  /** Resource tags */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ContainerserviceContainerServiceAttrs {
+  /** Resource Id */
+  id: string;
+  /** Resource location */
+  location: string;
+  /** Resource name */
+  name: string;
   /** Properties of the container service. */
   properties: ContainerserviceContainerService_Properties;
+  /** Resource tags */
+  tags: Record<string, string>;
+  /** Resource type */
+  type: string;
 }
 
 export const ContainerserviceContainerService: ResourceBinding<ContainerserviceContainerServiceConfig, ContainerserviceContainerServiceAttrs> = {
   wireType: "azure_compute_containerservice_container_service",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ContainerserviceContainerService_PropertiesFields,
     },
+    tags: "tags",
   },
 };

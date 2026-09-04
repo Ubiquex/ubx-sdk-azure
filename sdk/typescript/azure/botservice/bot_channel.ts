@@ -12,6 +12,13 @@ export interface BotChannel_Properties {
   provisioningState?: string | Computed<string>;
 }
 
+export interface BotChannel_Sku {
+  /** The name of SKU. */
+  name: string | Computed<string>;
+  /** Gets the sku tier. This is based on the SKU name. */
+  tier?: string | Computed<string>;
+}
+
 const BotChannel_PropertiesFields: FieldMap = {
   channelName: "channel_name",
   etag: "etag",
@@ -19,23 +26,65 @@ const BotChannel_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
+const BotChannel_SkuFields: FieldMap = {
+  name: "name",
+  tier: "tier",
+};
+
 export interface BotChannelConfig {
+  /** Entity Tag. */
+  etag?: string | Computed<string>;
+  /** Indicates the type of bot service */
+  kind?: string | Computed<string>;
+  /** Specifies the location of the resource. */
+  location?: string | Computed<string>;
   /** Channel definition */
   properties?: BotChannel_Properties | Computed<BotChannel_Properties>;
+  /** The SKU of the cognitive services account. */
+  sku?: BotChannel_Sku | Computed<BotChannel_Sku>;
+  /** Contains resource tags defined as key/value pairs. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface BotChannelAttrs {
+  /** Entity Tag. */
+  etag: string;
+  /** Specifies the resource ID. */
+  id: string;
+  /** Indicates the type of bot service */
+  kind: string;
+  /** Specifies the location of the resource. */
+  location: string;
+  /** Specifies the name of the resource. */
+  name: string;
   /** Channel definition */
   properties: BotChannel_Properties;
+  /** The SKU of the cognitive services account. */
+  sku: BotChannel_Sku;
+  /** Contains resource tags defined as key/value pairs. */
+  tags: Record<string, string>;
+  /** Specifies the type of the resource. */
+  type: string;
+  /** Entity zones */
+  zones: string[];
 }
 
 export const BotChannel: ResourceBinding<BotChannelConfig, BotChannelAttrs> = {
   wireType: "azure_botservice_bot_channel",
   fields: {
+    etag: "etag",
+    kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: BotChannel_PropertiesFields,
     },
+    sku: {
+      wireName: "sku",
+      kind: "object",
+      fields: BotChannel_SkuFields,
+    },
+    tags: "tags",
   },
 };

@@ -41,6 +41,21 @@ export interface OpenapiBalance_Properties {
   utilized?: number | Computed<number>;
 }
 
+export interface OpenapiBalance_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 export interface OpenapiBalanceConfig {
   billingAccountId: string | Computed<string>;
   billingPeriodName: string | Computed<string>;
@@ -51,10 +66,18 @@ export interface OpenapiBalanceAttrs {
   billingPeriodName: string;
   /** The etag for the resource. */
   etag: string;
+  /** Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} */
+  id: string;
+  /** The name of the resource */
+  name: string;
   /** The properties of the balance. */
   properties: OpenapiBalance_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: OpenapiBalance_SystemData;
   /** Resource tags. */
   tags: Record<string, string>;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const OpenapiBalance: DataSourceBinding<OpenapiBalanceConfig, OpenapiBalanceAttrs> = {

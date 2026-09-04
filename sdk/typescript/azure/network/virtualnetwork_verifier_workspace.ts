@@ -28,26 +28,36 @@ const VirtualnetworkVerifierWorkspace_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkVerifierWorkspaceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of Verifier Workspace resource. */
   properties?: VirtualnetworkVerifierWorkspace_Properties | Computed<VirtualnetworkVerifierWorkspace_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkVerifierWorkspaceAttrs {
   /** String representing unique etag for the resource document. */
   etag: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of Verifier Workspace resource. */
   properties: VirtualnetworkVerifierWorkspace_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: VirtualnetworkVerifierWorkspace_SystemData;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const VirtualnetworkVerifierWorkspace: ResourceBinding<VirtualnetworkVerifierWorkspaceConfig, VirtualnetworkVerifierWorkspaceAttrs> = {
   wireType: "azure_network_virtualnetwork_verifier_workspace",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkVerifierWorkspace_PropertiesFields,
     },
+    tags: "tags",
   },
 };

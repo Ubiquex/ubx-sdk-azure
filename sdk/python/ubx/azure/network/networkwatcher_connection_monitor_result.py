@@ -345,12 +345,20 @@ class NetworkwatcherConnectionMonitorResultConfig:
 
 @dataclasses.dataclass
 class NetworkwatcherConnectionMonitorResultAttrs:
+    # A unique read-only string that changes whenever the resource is updated.
+    etag: Any = None
+    # ID of the connection monitor.
+    id: Any = None
     # Connection monitor location.
     location: Any = None
+    # Name of the connection monitor.
+    name: Any = None
     # Parameters that define the operation to create a connection monitor.
     properties: Any = None
     # Connection monitor tags.
     tags: Any = None
+    # Connection monitor type.
+    type: Any = None
 
 NetworkwatcherConnectionMonitorResult = ubx.ResourceBinding(
     wire_type="azure_network_networkwatcher_connection_monitor_result",

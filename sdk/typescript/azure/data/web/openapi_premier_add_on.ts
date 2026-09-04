@@ -21,9 +21,13 @@ export interface OpenapiPremierAddOnConfig {
 export interface OpenapiPremierAddOnAttrs {
   /** Kind of resource. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   name: string;
   /** PremierAddOn resource specific properties */
   properties: OpenapiPremierAddOn_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiPremierAddOn: DataSourceBinding<OpenapiPremierAddOnConfig, OpenapiPremierAddOnAttrs> = {

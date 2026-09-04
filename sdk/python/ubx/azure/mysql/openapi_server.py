@@ -360,19 +360,27 @@ _OpenapiServer_SkuFields = {
 class OpenapiServerConfig:
     # Properties to configure Identity for Bring your Own Keys
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a server.
     properties: Any = None
     # Billing information related properties of a server.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiServerAttrs:
     # Properties to configure Identity for Bring your Own Keys
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a server.
     properties: Any = None
     # Billing information related properties of a server.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiServer = ubx.ResourceBinding(
     wire_type="azure_mysql_openapi_server",
@@ -382,6 +390,7 @@ OpenapiServer = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiServer_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -392,5 +401,6 @@ OpenapiServer = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiServer_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

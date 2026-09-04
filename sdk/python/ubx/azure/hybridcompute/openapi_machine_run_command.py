@@ -171,21 +171,31 @@ _OpenapiMachineRunCommand_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiMachineRunCommandConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a run command.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiMachineRunCommandAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a run command.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiMachineRunCommand = ubx.ResourceBinding(
     wire_type="azure_hybridcompute_openapi_machine_run_command",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiMachineRunCommand_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

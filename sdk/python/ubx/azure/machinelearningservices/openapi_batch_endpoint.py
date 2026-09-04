@@ -90,10 +90,14 @@ class OpenapiBatchEndpointConfig:
     identity: Any = None
     # Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Batch endpoint configuration.
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiBatchEndpointAttrs:
@@ -101,10 +105,14 @@ class OpenapiBatchEndpointAttrs:
     identity: Any = None
     # Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Batch endpoint configuration.
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiBatchEndpoint = ubx.ResourceBinding(
     wire_type="azure_machinelearningservices_openapi_batch_endpoint",
@@ -115,6 +123,7 @@ OpenapiBatchEndpoint = ubx.ResourceBinding(
             fields=_OpenapiBatchEndpoint_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -125,5 +134,6 @@ OpenapiBatchEndpoint = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiBatchEndpoint_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -79,10 +79,14 @@ const OpenapiDedicatedHsm_SkuFields: FieldMap = {
 };
 
 export interface OpenapiDedicatedHsmConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the dedicated hsm */
   properties: OpenapiDedicatedHsm_Properties | Computed<OpenapiDedicatedHsm_Properties>;
   /** SKU of the dedicated HSM */
   sku: OpenapiDedicatedHsm_Sku | Computed<OpenapiDedicatedHsm_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
   /** path parameter, not part of the API's own resource representation */
@@ -90,10 +94,14 @@ export interface OpenapiDedicatedHsmConfig {
 }
 
 export interface OpenapiDedicatedHsmAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the dedicated hsm */
   properties: OpenapiDedicatedHsm_Properties;
   /** SKU of the dedicated HSM */
   sku: OpenapiDedicatedHsm_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
   /** path parameter, not part of the API's own resource representation */
@@ -103,6 +111,7 @@ export interface OpenapiDedicatedHsmAttrs {
 export const OpenapiDedicatedHsm: ResourceBinding<OpenapiDedicatedHsmConfig, OpenapiDedicatedHsmAttrs> = {
   wireType: "azure_hardwaresecuritymodules_openapi_dedicated_hsm",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -113,6 +122,7 @@ export const OpenapiDedicatedHsm: ResourceBinding<OpenapiDedicatedHsmConfig, Ope
       kind: "object",
       fields: OpenapiDedicatedHsm_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
     name: "name",
   },

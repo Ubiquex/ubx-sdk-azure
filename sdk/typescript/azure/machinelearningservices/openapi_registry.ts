@@ -273,10 +273,14 @@ export interface OpenapiRegistryConfig {
   identity?: OpenapiRegistry_Identity | Computed<OpenapiRegistry_Identity>;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Details of the Registry */
   properties: OpenapiRegistry_Properties | Computed<OpenapiRegistry_Properties>;
   /** The resource model definition representing SKU */
   sku?: OpenapiRegistry_Sku | Computed<OpenapiRegistry_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiRegistryAttrs {
@@ -284,10 +288,14 @@ export interface OpenapiRegistryAttrs {
   identity: OpenapiRegistry_Identity;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Details of the Registry */
   properties: OpenapiRegistry_Properties;
   /** The resource model definition representing SKU */
   sku: OpenapiRegistry_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiRegistry: ResourceBinding<OpenapiRegistryConfig, OpenapiRegistryAttrs> = {
@@ -299,6 +307,7 @@ export const OpenapiRegistry: ResourceBinding<OpenapiRegistryConfig, OpenapiRegi
       fields: OpenapiRegistry_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -309,5 +318,6 @@ export const OpenapiRegistry: ResourceBinding<OpenapiRegistryConfig, OpenapiRegi
       kind: "object",
       fields: OpenapiRegistry_SkuFields,
     },
+    tags: "tags",
   },
 };

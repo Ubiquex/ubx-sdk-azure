@@ -125,10 +125,14 @@ type OpenapiServerlessEndpointConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
-	Kind       any
+	Kind any
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -137,10 +141,14 @@ type OpenapiServerlessEndpointAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
-	Kind       any
+	Kind any
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -153,7 +161,8 @@ var OpenapiServerlessEndpoint = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiServerlessEndpoint_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -164,6 +173,7 @@ var OpenapiServerlessEndpoint = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiServerlessEndpoint_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

@@ -374,15 +374,23 @@ var MongoCluster_PropertiesFields = ubx.FieldMap{
 type MongoClusterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a mongo cluster.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type MongoClusterAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a mongo cluster.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var MongoCluster = ubx.ResourceBinding{
@@ -393,10 +401,12 @@ var MongoCluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   MongoCluster_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   MongoCluster_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

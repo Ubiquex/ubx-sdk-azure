@@ -11,15 +11,23 @@ const OpenapiAiGateway_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiAiGatewayConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The properties of an AI gateway. */
   properties?: OpenapiAiGateway_Properties | Computed<OpenapiAiGateway_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   name: string | Computed<string>;
 }
 
 export interface OpenapiAiGatewayAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The properties of an AI gateway. */
   properties: OpenapiAiGateway_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** path parameter, not part of the API's own resource representation */
   name: string;
 }
@@ -27,11 +35,13 @@ export interface OpenapiAiGatewayAttrs {
 export const OpenapiAiGateway: ResourceBinding<OpenapiAiGatewayConfig, OpenapiAiGatewayAttrs> = {
   wireType: "azure_web_openapi_ai_gateway",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiAiGateway_PropertiesFields,
     },
+    tags: "tags",
     name: "name",
   },
 };

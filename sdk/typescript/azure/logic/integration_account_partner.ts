@@ -63,22 +63,38 @@ const IntegrationAccountPartner_PropertiesFields: FieldMap = {
 };
 
 export interface IntegrationAccountPartnerConfig {
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** The integration account partner properties. */
   properties: IntegrationAccountPartner_Properties | Computed<IntegrationAccountPartner_Properties>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface IntegrationAccountPartnerAttrs {
+  /** The resource id. */
+  id: string;
+  /** The resource location. */
+  location: string;
+  /** Gets the resource name. */
+  name: string;
   /** The integration account partner properties. */
   properties: IntegrationAccountPartner_Properties;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** Gets the resource type. */
+  type: string;
 }
 
 export const IntegrationAccountPartner: ResourceBinding<IntegrationAccountPartnerConfig, IntegrationAccountPartnerAttrs> = {
   wireType: "azure_logic_integration_account_partner",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: IntegrationAccountPartner_PropertiesFields,
     },
+    tags: "tags",
   },
 };

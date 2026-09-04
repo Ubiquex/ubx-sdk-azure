@@ -35,6 +35,21 @@ class ConfigurationAssignment_Properties:
     # The unique resourceId
     resource_id: Any = None
 
+@dataclasses.dataclass
+class ConfigurationAssignment_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _ConfigurationAssignment_Properties_Filter_TagSettingsFields = {
     "filter_operator": ubx.FieldSpec(wire_name="filter_operator"),
     "tags": ubx.FieldSpec(wire_name="tags"),
@@ -71,10 +86,18 @@ class ConfigurationAssignmentConfig:
 
 @dataclasses.dataclass
 class ConfigurationAssignmentAttrs:
+    # Fully qualified identifier of the resource
+    id: Any = None
     # Location of the resource
     location: Any = None
+    # Name of the resource
+    name: Any = None
     # Properties for configuration assignment
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Type of the resource
+    type: Any = None
 
 ConfigurationAssignment = ubx.ResourceBinding(
     wire_type="azure_maintenance_configuration_assignment",

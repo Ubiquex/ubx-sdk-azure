@@ -309,10 +309,14 @@ _PrivateCloud_SkuFields = {
 class PrivateCloudConfig:
     # Managed service identity (either system assigned, or none)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a private cloud resource
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
@@ -320,10 +324,14 @@ class PrivateCloudConfig:
 class PrivateCloudAttrs:
     # Managed service identity (either system assigned, or none)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a private cloud resource
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
@@ -335,6 +343,7 @@ PrivateCloud = ubx.ResourceBinding(
             kind="object",
             fields=_PrivateCloud_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -345,6 +354,7 @@ PrivateCloud = ubx.ResourceBinding(
             kind="object",
             fields=_PrivateCloud_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

@@ -11940,24 +11940,43 @@ const VirtualnetworkRouteTable_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkRouteTableConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Route Table resource. */
   properties?: VirtualnetworkRouteTable_Properties | Computed<VirtualnetworkRouteTable_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkRouteTableAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Route Table resource. */
   properties: VirtualnetworkRouteTable_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkRouteTable: ResourceBinding<VirtualnetworkRouteTableConfig, VirtualnetworkRouteTableAttrs> = {
   wireType: "azure_network_virtualnetwork_route_table",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkRouteTable_PropertiesFields,
     },
+    tags: "tags",
   },
 };

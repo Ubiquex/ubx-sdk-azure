@@ -36,24 +36,40 @@ const VirtualnetworkDdosProtectionPlan_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkDdosProtectionPlanConfig {
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** DDoS protection plan properties. */
   properties?: VirtualnetworkDdosProtectionPlan_Properties | Computed<VirtualnetworkDdosProtectionPlan_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkDdosProtectionPlanAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** DDoS protection plan properties. */
   properties: VirtualnetworkDdosProtectionPlan_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkDdosProtectionPlan: ResourceBinding<VirtualnetworkDdosProtectionPlanConfig, VirtualnetworkDdosProtectionPlanAttrs> = {
   wireType: "azure_network_virtualnetwork_ddos_protection_plan",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkDdosProtectionPlan_PropertiesFields,
     },
+    tags: "tags",
   },
 };

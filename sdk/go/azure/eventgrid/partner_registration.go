@@ -31,24 +31,34 @@ var PartnerRegistration_PropertiesFields = ubx.FieldMap{
 }
 
 type PartnerRegistrationConfig struct {
+	// Location of the resource.
+	Location any
 	// Properties of the partner registration.
 	Properties any
+	// Tags of the resource.
+	Tags any
 }
 
 type PartnerRegistrationAttrs struct {
+	// Location of the resource.
+	Location any
 	// Properties of the partner registration.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Tags of the resource.
+	Tags any
 }
 
 var PartnerRegistration = ubx.ResourceBinding{
 	WireType: "azure_eventgrid_partner_registration",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   PartnerRegistration_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -47,24 +47,43 @@ const VirtualnetworkVirtualRouter_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkVirtualRouterConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Virtual Router definition. */
   properties?: VirtualnetworkVirtualRouter_Properties | Computed<VirtualnetworkVirtualRouter_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkVirtualRouterAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Virtual Router definition. */
   properties: VirtualnetworkVirtualRouter_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkVirtualRouter: ResourceBinding<VirtualnetworkVirtualRouterConfig, VirtualnetworkVirtualRouterAttrs> = {
   wireType: "azure_network_virtualnetwork_virtual_router",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkVirtualRouter_PropertiesFields,
     },
+    tags: "tags",
   },
 };

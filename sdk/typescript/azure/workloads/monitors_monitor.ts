@@ -177,15 +177,23 @@ const MonitorsMonitor_PropertiesFields: FieldMap = {
 export interface MonitorsMonitorConfig {
   /** A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide. */
   identity?: MonitorsMonitor_Identity | Computed<MonitorsMonitor_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describes the properties of a SAP monitor. */
   properties?: MonitorsMonitor_Properties | Computed<MonitorsMonitor_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MonitorsMonitorAttrs {
   /** A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide. */
   identity: MonitorsMonitor_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describes the properties of a SAP monitor. */
   properties: MonitorsMonitor_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const MonitorsMonitor: ResourceBinding<MonitorsMonitorConfig, MonitorsMonitorAttrs> = {
@@ -196,10 +204,12 @@ export const MonitorsMonitor: ResourceBinding<MonitorsMonitorConfig, MonitorsMon
       kind: "object",
       fields: MonitorsMonitor_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: MonitorsMonitor_PropertiesFields,
     },
+    tags: "tags",
   },
 };

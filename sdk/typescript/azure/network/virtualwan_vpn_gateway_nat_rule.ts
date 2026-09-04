@@ -66,6 +66,8 @@ const VirtualwanVpnGatewayNatRule_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanVpnGatewayNatRuleConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Parameters for VpnGatewayNatRule. */
   properties?: VirtualwanVpnGatewayNatRule_Properties | Computed<VirtualwanVpnGatewayNatRule_Properties>;
 }
@@ -73,13 +75,18 @@ export interface VirtualwanVpnGatewayNatRuleConfig {
 export interface VirtualwanVpnGatewayNatRuleAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Parameters for VpnGatewayNatRule. */
   properties: VirtualwanVpnGatewayNatRule_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualwanVpnGatewayNatRule: ResourceBinding<VirtualwanVpnGatewayNatRuleConfig, VirtualwanVpnGatewayNatRuleAttrs> = {
   wireType: "azure_network_virtualwan_vpn_gateway_nat_rule",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

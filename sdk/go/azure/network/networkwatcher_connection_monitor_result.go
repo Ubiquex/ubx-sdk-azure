@@ -341,12 +341,20 @@ type NetworkwatcherConnectionMonitorResultConfig struct {
 }
 
 type NetworkwatcherConnectionMonitorResultAttrs struct {
+	// A unique read-only string that changes whenever the resource is updated.
+	Etag any
+	// ID of the connection monitor.
+	Id any
 	// Connection monitor location.
 	Location any
+	// Name of the connection monitor.
+	Name any
 	// Parameters that define the operation to create a connection monitor.
 	Properties any
 	// Connection monitor tags.
 	Tags any
+	// Connection monitor type.
+	Type any
 }
 
 var NetworkwatcherConnectionMonitorResult = ubx.ResourceBinding{

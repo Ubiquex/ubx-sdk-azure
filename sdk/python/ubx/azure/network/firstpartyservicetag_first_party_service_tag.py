@@ -26,8 +26,12 @@ _FirstpartyservicetagFirstPartyServiceTag_PropertiesFields = {
 
 @dataclasses.dataclass
 class FirstpartyservicetagFirstPartyServiceTagConfig:
+    # Resource location.
+    location: Any = None
     # Properties of the first party service tag.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class FirstpartyservicetagFirstPartyServiceTagAttrs:
@@ -35,18 +39,26 @@ class FirstpartyservicetagFirstPartyServiceTagAttrs:
     etag: Any = None
     # The unique identifier of the resource.
     id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of the first party service tag.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The type of the resource.
     type: Any = None
 
 FirstpartyservicetagFirstPartyServiceTag = ubx.ResourceBinding(
     wire_type="azure_network_firstpartyservicetag_first_party_service_tag",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_FirstpartyservicetagFirstPartyServiceTag_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

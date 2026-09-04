@@ -9378,10 +9378,16 @@ var ApplicationgatewayApplicationGateway_PropertiesFields = ubx.FieldMap{
 }
 
 type ApplicationgatewayApplicationGatewayConfig struct {
+	// Resource ID.
+	Id any
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
 	// Properties of the application gateway.
 	Properties any
+	// Resource tags.
+	Tags any
 	// A list of availability zones denoting where the resource needs to come from.
 	Zones any
 }
@@ -9389,10 +9395,20 @@ type ApplicationgatewayApplicationGatewayConfig struct {
 type ApplicationgatewayApplicationGatewayAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties of the application gateway.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 	// A list of availability zones denoting where the resource needs to come from.
 	Zones any
 }
@@ -9400,16 +9416,19 @@ type ApplicationgatewayApplicationGatewayAttrs struct {
 var ApplicationgatewayApplicationGateway = ubx.ResourceBinding{
 	WireType: "azure_network_applicationgateway_application_gateway",
 	Fields: ubx.FieldMap{
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
 			Kind:     "object",
 			Fields:   ApplicationgatewayApplicationGateway_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ApplicationgatewayApplicationGateway_PropertiesFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

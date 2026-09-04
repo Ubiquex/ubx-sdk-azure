@@ -4911,10 +4911,14 @@ _ServicegatewayServiceGateway_PropertiesFields = {
 
 @dataclasses.dataclass
 class ServicegatewayServiceGatewayConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the service gateway.
     properties: Any = None
     # SKU of a service gateway.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # A list of availability zones denoting the zone in which service gateway should be deployed. - The zone values must be provided as strings representing numeric identifiers like "1", "2", "3" etc.
     zones: Any = None
 
@@ -4922,16 +4926,21 @@ class ServicegatewayServiceGatewayConfig:
 class ServicegatewayServiceGatewayAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the service gateway.
     properties: Any = None
     # SKU of a service gateway.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # A list of availability zones denoting the zone in which service gateway should be deployed. - The zone values must be provided as strings representing numeric identifiers like "1", "2", "3" etc.
     zones: Any = None
 
 ServicegatewayServiceGateway = ubx.ResourceBinding(
     wire_type="azure_network_servicegateway_service_gateway",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -4942,6 +4951,7 @@ ServicegatewayServiceGateway = ubx.ResourceBinding(
             kind="object",
             fields=_ServicegatewayServiceGateway_Properties_RouteTargetAddress_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

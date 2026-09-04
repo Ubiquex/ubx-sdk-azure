@@ -37,10 +37,16 @@ export interface ClientGroupConfig {
 }
 
 export interface ClientGroupAttrs {
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** The properties of client group. */
   properties: ClientGroup_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: ClientGroup_SystemData;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const ClientGroup: ResourceBinding<ClientGroupConfig, ClientGroupAttrs> = {

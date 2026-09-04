@@ -204,15 +204,23 @@ var SreagentAgent_PropertiesFields = ubx.FieldMap{
 type SreagentAgentConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the Agent
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type SreagentAgentAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the Agent
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var SreagentAgent = ubx.ResourceBinding{
@@ -223,10 +231,12 @@ var SreagentAgent = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   SreagentAgent_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   SreagentAgent_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

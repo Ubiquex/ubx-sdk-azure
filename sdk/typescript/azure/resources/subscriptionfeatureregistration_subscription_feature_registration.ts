@@ -79,7 +79,13 @@ export interface SubscriptionfeatureregistrationSubscriptionFeatureRegistrationC
 }
 
 export interface SubscriptionfeatureregistrationSubscriptionFeatureRegistrationAttrs {
+  /** Azure resource Id. */
+  id: string;
+  /** Azure resource name. */
+  name: string;
   properties: SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Properties;
+  /** Azure resource type. */
+  type: string;
 }
 
 export const SubscriptionfeatureregistrationSubscriptionFeatureRegistration: ResourceBinding<SubscriptionfeatureregistrationSubscriptionFeatureRegistrationConfig, SubscriptionfeatureregistrationSubscriptionFeatureRegistrationAttrs> = {

@@ -158,19 +158,27 @@ var Reservation_SkuFields = ubx.FieldMap{
 }
 
 type ReservationConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the Capacity reservation.
 	Properties any
 	// Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
 	Sku any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
 
 type ReservationAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the Capacity reservation.
 	Properties any
 	// Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
 	Sku any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -178,6 +186,7 @@ type ReservationAttrs struct {
 var Reservation = ubx.ResourceBinding{
 	WireType: "azure_capacity_reservation",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -188,6 +197,7 @@ var Reservation = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Reservation_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

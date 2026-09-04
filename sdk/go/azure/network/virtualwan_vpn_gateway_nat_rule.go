@@ -68,6 +68,8 @@ var VirtualwanVpnGatewayNatRule_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanVpnGatewayNatRuleConfig struct {
+	// Name of the resource.
+	Name any
 	// Parameters for VpnGatewayNatRule.
 	Properties any
 }
@@ -75,13 +77,18 @@ type VirtualwanVpnGatewayNatRuleConfig struct {
 type VirtualwanVpnGatewayNatRuleAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Parameters for VpnGatewayNatRule.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualwanVpnGatewayNatRule = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_vpn_gateway_nat_rule",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

@@ -32,21 +32,31 @@ _OpenapiGateway_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiGatewayConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a Gateway Profile.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiGatewayAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a Gateway Profile.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiGateway = ubx.ResourceBinding(
     wire_type="azure_hybridcompute_openapi_gateway",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiGateway_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

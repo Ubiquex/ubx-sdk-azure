@@ -232,15 +232,23 @@ _LogicalnetworksLogicalNetworks_PropertiesFields = {
 class LogicalnetworksLogicalNetworksConfig:
     # The complex type of the extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties under the logical network resource
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class LogicalnetworksLogicalNetworksAttrs:
     # The complex type of the extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties under the logical network resource
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 LogicalnetworksLogicalNetworks = ubx.ResourceBinding(
     wire_type="azure_azurestackhci_logicalnetworks_logical_networks",
@@ -250,10 +258,12 @@ LogicalnetworksLogicalNetworks = ubx.ResourceBinding(
             kind="object",
             fields=_LogicalnetworksLogicalNetworks_ExtendedLocationFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_LogicalnetworksLogicalNetworks_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

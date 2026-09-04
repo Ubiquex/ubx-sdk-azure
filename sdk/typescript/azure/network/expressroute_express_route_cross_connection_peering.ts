@@ -144,6 +144,8 @@ const ExpressrouteExpressRouteCrossConnectionPeering_PropertiesFields: FieldMap 
 };
 
 export interface ExpressrouteExpressRouteCrossConnectionPeeringConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** The name of the resource that is unique within a resource group. This name can be used to access the resource. */
   name?: string | Computed<string>;
   /** Properties of express route cross connection peering. */
@@ -153,6 +155,8 @@ export interface ExpressrouteExpressRouteCrossConnectionPeeringConfig {
 export interface ExpressrouteExpressRouteCrossConnectionPeeringAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** The name of the resource that is unique within a resource group. This name can be used to access the resource. */
   name: string;
   /** Properties of express route cross connection peering. */
@@ -162,6 +166,7 @@ export interface ExpressrouteExpressRouteCrossConnectionPeeringAttrs {
 export const ExpressrouteExpressRouteCrossConnectionPeering: ResourceBinding<ExpressrouteExpressRouteCrossConnectionPeeringConfig, ExpressrouteExpressRouteCrossConnectionPeeringAttrs> = {
   wireType: "azure_network_expressroute_express_route_cross_connection_peering",
   fields: {
+    id: "id",
     name: "name",
     properties: {
       wireName: "properties",

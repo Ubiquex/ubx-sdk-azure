@@ -85,21 +85,31 @@ _Dashboard_PropertiesFields = {
 
 @dataclasses.dataclass
 class DashboardConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Dashboard Properties with Provisioning state
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class DashboardAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Dashboard Properties with Provisioning state
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Dashboard = ubx.ResourceBinding(
     wire_type="azure_portal_dashboard",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Dashboard_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

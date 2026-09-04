@@ -111,10 +111,16 @@ class ChannelConfig:
 
 @dataclasses.dataclass
 class ChannelAttrs:
+    # Fully qualified identifier of the resource.
+    id: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the Channel.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Type of the resource.
+    type: Any = None
 
 Channel = ubx.ResourceBinding(
     wire_type="azure_eventgrid_channel",

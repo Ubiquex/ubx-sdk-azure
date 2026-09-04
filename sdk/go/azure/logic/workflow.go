@@ -298,15 +298,29 @@ var Workflow_PropertiesFields = ubx.FieldMap{
 type WorkflowConfig struct {
 	// Managed service identity properties.
 	Identity any
+	// The resource location.
+	Location any
 	// The workflow properties.
 	Properties any
+	// The resource tags.
+	Tags any
 }
 
 type WorkflowAttrs struct {
+	// The resource id.
+	Id any
 	// Managed service identity properties.
 	Identity any
+	// The resource location.
+	Location any
+	// Gets the resource name.
+	Name any
 	// The workflow properties.
 	Properties any
+	// The resource tags.
+	Tags any
+	// Gets the resource type.
+	Type any
 }
 
 var Workflow = ubx.ResourceBinding{
@@ -317,10 +331,12 @@ var Workflow = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Workflow_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Workflow_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

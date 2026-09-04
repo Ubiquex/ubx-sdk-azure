@@ -75,8 +75,12 @@ export interface WorkbooksWorkbookConfig {
   identity?: WorkbooksWorkbook_Identity | Computed<WorkbooksWorkbook_Identity>;
   /** The kind of workbook. Only valid value is shared. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties that contain a workbook. */
   properties?: WorkbooksWorkbook_Properties | Computed<WorkbooksWorkbook_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface WorkbooksWorkbookAttrs {
@@ -86,8 +90,12 @@ export interface WorkbooksWorkbookAttrs {
   identity: WorkbooksWorkbook_Identity;
   /** The kind of workbook. Only valid value is shared. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties that contain a workbook. */
   properties: WorkbooksWorkbook_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const WorkbooksWorkbook: ResourceBinding<WorkbooksWorkbookConfig, WorkbooksWorkbookAttrs> = {
@@ -100,10 +108,12 @@ export const WorkbooksWorkbook: ResourceBinding<WorkbooksWorkbookConfig, Workboo
       fields: WorkbooksWorkbook_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: WorkbooksWorkbook_PropertiesFields,
     },
+    tags: "tags",
   },
 };

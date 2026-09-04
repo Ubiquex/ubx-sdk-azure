@@ -20,22 +20,32 @@ const ManagedidentityIdentity_PropertiesFields: FieldMap = {
 };
 
 export interface ManagedidentityIdentityConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The properties associated with the user assigned identity. */
   properties?: ManagedidentityIdentity_Properties | Computed<ManagedidentityIdentity_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ManagedidentityIdentityAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The properties associated with the user assigned identity. */
   properties: ManagedidentityIdentity_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ManagedidentityIdentity: ResourceBinding<ManagedidentityIdentityConfig, ManagedidentityIdentityAttrs> = {
   wireType: "azure_msi_managedidentity_identity",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ManagedidentityIdentity_PropertiesFields,
     },
+    tags: "tags",
   },
 };

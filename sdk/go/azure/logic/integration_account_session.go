@@ -18,22 +18,38 @@ var IntegrationAccountSession_PropertiesFields = ubx.FieldMap{
 }
 
 type IntegrationAccountSessionConfig struct {
+	// The resource location.
+	Location any
 	// The integration account session properties.
 	Properties any
+	// The resource tags.
+	Tags any
 }
 
 type IntegrationAccountSessionAttrs struct {
+	// The resource id.
+	Id any
+	// The resource location.
+	Location any
+	// Gets the resource name.
+	Name any
 	// The integration account session properties.
 	Properties any
+	// The resource tags.
+	Tags any
+	// Gets the resource type.
+	Type any
 }
 
 var IntegrationAccountSession = ubx.ResourceBinding{
 	WireType: "azure_logic_integration_account_session",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   IntegrationAccountSession_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

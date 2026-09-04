@@ -66,19 +66,27 @@ const JobagentsJobAgent_SkuFields: FieldMap = {
 export interface JobagentsJobAgentConfig {
   /** Azure Active Directory identity configuration for a resource. */
   identity?: JobagentsJobAgent_Identity | Computed<JobagentsJobAgent_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of a job agent. */
   properties?: JobagentsJobAgent_Properties | Computed<JobagentsJobAgent_Properties>;
   /** An ARM Resource SKU. */
   sku?: JobagentsJobAgent_Sku | Computed<JobagentsJobAgent_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface JobagentsJobAgentAttrs {
   /** Azure Active Directory identity configuration for a resource. */
   identity: JobagentsJobAgent_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of a job agent. */
   properties: JobagentsJobAgent_Properties;
   /** An ARM Resource SKU. */
   sku: JobagentsJobAgent_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const JobagentsJobAgent: ResourceBinding<JobagentsJobAgentConfig, JobagentsJobAgentAttrs> = {
@@ -89,6 +97,7 @@ export const JobagentsJobAgent: ResourceBinding<JobagentsJobAgentConfig, Jobagen
       kind: "object",
       fields: JobagentsJobAgent_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -99,5 +108,6 @@ export const JobagentsJobAgent: ResourceBinding<JobagentsJobAgentConfig, Jobagen
       kind: "object",
       fields: JobagentsJobAgent_SkuFields,
     },
+    tags: "tags",
   },
 };

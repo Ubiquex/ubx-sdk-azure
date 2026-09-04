@@ -31,8 +31,12 @@ _OpenapiPremierAddOn_PropertiesFields = {
 class OpenapiPremierAddOnConfig:
     # Kind of resource.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # PremierAddOn resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
@@ -40,8 +44,12 @@ class OpenapiPremierAddOnConfig:
 class OpenapiPremierAddOnAttrs:
     # Kind of resource.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # PremierAddOn resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
@@ -49,11 +57,13 @@ OpenapiPremierAddOn = ubx.ResourceBinding(
     wire_type="azure_web_openapi_premier_add_on",
     fields={
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiPremierAddOn_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

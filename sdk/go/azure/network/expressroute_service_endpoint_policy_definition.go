@@ -22,6 +22,8 @@ var ExpressrouteServiceEndpointPolicyDefinition_PropertiesFields = ubx.FieldMap{
 }
 
 type ExpressrouteServiceEndpointPolicyDefinitionConfig struct {
+	// Name of the resource.
+	Name any
 	// Service Endpoint policy definition resource.
 	Properties any
 }
@@ -29,13 +31,18 @@ type ExpressrouteServiceEndpointPolicyDefinitionConfig struct {
 type ExpressrouteServiceEndpointPolicyDefinitionAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Service Endpoint policy definition resource.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var ExpressrouteServiceEndpointPolicyDefinition = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_service_endpoint_policy_definition",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

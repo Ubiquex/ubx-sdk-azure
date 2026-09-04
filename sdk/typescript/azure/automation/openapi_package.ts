@@ -129,8 +129,12 @@ export interface OpenapiPackageConfig {
 export interface OpenapiPackageAttrs {
   /** The resource model definition for an Azure Resource Manager tracked top level resource which has 'tags' and a 'location' */
   allOf: OpenapiPackage_AllOf;
+  /** The geo-location where the resource lives */
+  location: string;
   /** The parameters supplied to the create or update package properties. */
   properties: OpenapiPackage_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiPackage: ResourceBinding<OpenapiPackageConfig, OpenapiPackageAttrs> = {

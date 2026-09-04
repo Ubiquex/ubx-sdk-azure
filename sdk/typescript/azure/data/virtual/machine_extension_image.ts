@@ -41,9 +41,13 @@ export interface MachineExtensionImageConfig {
 }
 
 export interface MachineExtensionImageAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describes the properties of a Virtual Machine Extension Image. */
   properties: MachineExtensionImage_Properties;
   publisherName: string;
+  /** Resource tags. */
+  tags: Record<string, string>;
   type: string;
   version: string;
 }

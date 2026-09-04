@@ -37,6 +37,10 @@ type DeploymentscriptsDeploymentScriptConfig struct {
 	Identity any
 	// Type of the script.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
+	// Resource tags.
+	Tags any
 }
 
 type DeploymentscriptsDeploymentScriptAttrs struct {
@@ -44,6 +48,10 @@ type DeploymentscriptsDeploymentScriptAttrs struct {
 	Identity any
 	// Type of the script.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
+	// Resource tags.
+	Tags any
 }
 
 var DeploymentscriptsDeploymentScript = ubx.ResourceBinding{
@@ -54,6 +62,8 @@ var DeploymentscriptsDeploymentScript = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   DeploymentscriptsDeploymentScript_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
+		"Tags":     ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -190,8 +190,12 @@ _ServersServer_PropertiesFields = {
 class ServersServerConfig:
     # Azure Active Directory identity configuration for a resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a server.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ServersServerAttrs:
@@ -199,8 +203,12 @@ class ServersServerAttrs:
     identity: Any = None
     # Kind of sql server. This is metadata used for the Azure portal experience.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a server.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ServersServer = ubx.ResourceBinding(
     wire_type="azure_sql_servers_server",
@@ -210,10 +218,12 @@ ServersServer = ubx.ResourceBinding(
             kind="object",
             fields=_ServersServer_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ServersServer_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

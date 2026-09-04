@@ -25,10 +25,16 @@ export interface DomainTopicConfig {
 }
 
 export interface DomainTopicAttrs {
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the Domain Topic. */
   properties: DomainTopic_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: DomainTopic_SystemData;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const DomainTopic: ResourceBinding<DomainTopicConfig, DomainTopicAttrs> = {

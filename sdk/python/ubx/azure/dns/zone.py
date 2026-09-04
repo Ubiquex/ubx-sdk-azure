@@ -53,24 +53,40 @@ _Zone_PropertiesFields = {
 class ZoneConfig:
     # The etag of the zone.
     etag: Any = None
+    # Resource location.
+    location: Any = None
     # Represents the properties of the zone.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ZoneAttrs:
     # The etag of the zone.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Represents the properties of the zone.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 Zone = ubx.ResourceBinding(
     wire_type="azure_dns_zone",
     fields={
         "etag": ubx.FieldSpec(wire_name="etag"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Zone_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

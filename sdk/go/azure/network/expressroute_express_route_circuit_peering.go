@@ -296,6 +296,8 @@ var ExpressrouteExpressRouteCircuitPeering_PropertiesFields = ubx.FieldMap{
 }
 
 type ExpressrouteExpressRouteCircuitPeeringConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of the express route circuit peering.
 	Properties any
 }
@@ -303,13 +305,18 @@ type ExpressrouteExpressRouteCircuitPeeringConfig struct {
 type ExpressrouteExpressRouteCircuitPeeringAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of the express route circuit peering.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var ExpressrouteExpressRouteCircuitPeering = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_express_route_circuit_peering",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

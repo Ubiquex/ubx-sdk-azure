@@ -19,17 +19,22 @@ class OpenapiMsdeployLog_Properties:
 
 @dataclasses.dataclass
 class OpenapiMsdeployLogConfig:
-    name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiMsdeployLogAttrs:
+    # Resource Id.
+    id: Any = None
+    # Kind of resource.
+    kind: Any = None
     name: Any = None
     # MSDeployLog resource specific properties
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 OpenapiMsdeployLog = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_msdeploy_log",
     fields={
-        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

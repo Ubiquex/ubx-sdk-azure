@@ -49,25 +49,41 @@ var Zone_PropertiesFields = ubx.FieldMap{
 type ZoneConfig struct {
 	// The etag of the zone.
 	Etag any
+	// Resource location.
+	Location any
 	// Represents the properties of the zone.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ZoneAttrs struct {
 	// The etag of the zone.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Represents the properties of the zone.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var Zone = ubx.ResourceBinding{
 	WireType: "azure_dns_zone",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Etag":     ubx.FieldSpec{WireName: "etag"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Zone_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -220,17 +220,25 @@ var Domain_PropertiesFields = ubx.FieldMap{
 type DomainConfig struct {
 	// The identity information for the resource.
 	Identity any
+	// Location of the resource.
+	Location any
 	// Properties of the Event Grid Domain Resource.
 	Properties any
+	// Tags of the resource.
+	Tags any
 }
 
 type DomainAttrs struct {
 	// The identity information for the resource.
 	Identity any
+	// Location of the resource.
+	Location any
 	// Properties of the Event Grid Domain Resource.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Tags of the resource.
+	Tags any
 }
 
 var Domain = ubx.ResourceBinding{
@@ -241,10 +249,12 @@ var Domain = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Domain_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Domain_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

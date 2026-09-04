@@ -14,22 +14,32 @@ const NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields: FieldMa
 };
 
 export interface NetworksecurityperimeterNetworkSecurityPerimeterConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of network security perimeter. */
   properties?: NetworksecurityperimeterNetworkSecurityPerimeter_Properties | Computed<NetworksecurityperimeterNetworkSecurityPerimeter_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NetworksecurityperimeterNetworkSecurityPerimeterAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of network security perimeter. */
   properties: NetworksecurityperimeterNetworkSecurityPerimeter_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const NetworksecurityperimeterNetworkSecurityPerimeter: ResourceBinding<NetworksecurityperimeterNetworkSecurityPerimeterConfig, NetworksecurityperimeterNetworkSecurityPerimeterAttrs> = {
   wireType: "azure_network_networksecurityperimeter_network_security_perimeter",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields,
     },
+    tags: "tags",
   },
 };

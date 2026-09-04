@@ -453,8 +453,14 @@ const FirewallAzureFirewall_PropertiesFields: FieldMap = {
 export interface FirewallAzureFirewallConfig {
   /** ExtendedLocation complex type. */
   extendedLocation?: FirewallAzureFirewall_ExtendedLocation | Computed<FirewallAzureFirewall_ExtendedLocation>;
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties of the Azure Firewall. */
   properties?: FirewallAzureFirewall_Properties | Computed<FirewallAzureFirewall_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** A list of availability zones denoting where the resource needs to come from. */
   zones?: string[] | Computed<string[]>;
 }
@@ -464,8 +470,18 @@ export interface FirewallAzureFirewallAttrs {
   etag: string;
   /** ExtendedLocation complex type. */
   extendedLocation: FirewallAzureFirewall_ExtendedLocation;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of the Azure Firewall. */
   properties: FirewallAzureFirewall_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
   /** A list of availability zones denoting where the resource needs to come from. */
   zones: string[];
 }
@@ -478,11 +494,14 @@ export const FirewallAzureFirewall: ResourceBinding<FirewallAzureFirewallConfig,
       kind: "object",
       fields: FirewallAzureFirewall_ExtendedLocationFields,
     },
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: FirewallAzureFirewall_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

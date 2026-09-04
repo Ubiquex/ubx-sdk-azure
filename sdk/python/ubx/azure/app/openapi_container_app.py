@@ -816,10 +816,14 @@ class OpenapiContainerAppConfig:
     identity: Any = None
     # Metadata to represent the container app kind, representing if a container app is workflowapp or functionapp.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The fully qualified resource ID of the resource that manages this resource. Indicates if this resource is managed by another Azure resource. If this is present, complete mode deployment will not delete the resource if it is removed from the template since it is managed by another resource.
     managed_by: Any = None
     # ContainerApp resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiContainerAppAttrs:
@@ -829,10 +833,14 @@ class OpenapiContainerAppAttrs:
     identity: Any = None
     # Metadata to represent the container app kind, representing if a container app is workflowapp or functionapp.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The fully qualified resource ID of the resource that manages this resource. Indicates if this resource is managed by another Azure resource. If this is present, complete mode deployment will not delete the resource if it is removed from the template since it is managed by another resource.
     managed_by: Any = None
     # ContainerApp resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiContainerApp = ubx.ResourceBinding(
     wire_type="azure_app_openapi_container_app",
@@ -848,11 +856,13 @@ OpenapiContainerApp = ubx.ResourceBinding(
             fields=_OpenapiContainerApp_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "managed_by": ubx.FieldSpec(wire_name="managed_by"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiContainerApp_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

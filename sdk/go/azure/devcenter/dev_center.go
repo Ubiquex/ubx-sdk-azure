@@ -50,15 +50,23 @@ var DevCenter_PropertiesFields = ubx.FieldMap{
 type DevCenterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the devcenter.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type DevCenterAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the devcenter.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var DevCenter = ubx.ResourceBinding{
@@ -69,10 +77,12 @@ var DevCenter = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   DevCenter_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   DevCenter_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

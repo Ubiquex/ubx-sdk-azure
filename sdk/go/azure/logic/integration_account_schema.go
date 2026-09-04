@@ -80,22 +80,38 @@ var IntegrationAccountSchema_PropertiesFields = ubx.FieldMap{
 }
 
 type IntegrationAccountSchemaConfig struct {
+	// The resource location.
+	Location any
 	// The integration account schema properties.
 	Properties any
+	// The resource tags.
+	Tags any
 }
 
 type IntegrationAccountSchemaAttrs struct {
+	// The resource id.
+	Id any
+	// The resource location.
+	Location any
+	// Gets the resource name.
+	Name any
 	// The integration account schema properties.
 	Properties any
+	// The resource tags.
+	Tags any
+	// Gets the resource type.
+	Type any
 }
 
 var IntegrationAccountSchema = ubx.ResourceBinding{
 	WireType: "azure_logic_integration_account_schema",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   IntegrationAccountSchema_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

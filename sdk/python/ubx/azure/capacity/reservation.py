@@ -162,25 +162,34 @@ _Reservation_SkuFields = {
 
 @dataclasses.dataclass
 class ReservationConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the Capacity reservation.
     properties: Any = None
     # Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 @dataclasses.dataclass
 class ReservationAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the Capacity reservation.
     properties: Any = None
     # Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 Reservation = ubx.ResourceBinding(
     wire_type="azure_capacity_reservation",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -191,6 +200,7 @@ Reservation = ubx.ResourceBinding(
             kind="object",
             fields=_Reservation_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

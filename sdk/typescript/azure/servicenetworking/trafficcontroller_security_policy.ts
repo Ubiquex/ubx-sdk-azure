@@ -30,22 +30,32 @@ const TrafficcontrollerSecurityPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface TrafficcontrollerSecurityPolicyConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** SecurityPolicy Properties. */
   properties?: TrafficcontrollerSecurityPolicy_Properties | Computed<TrafficcontrollerSecurityPolicy_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface TrafficcontrollerSecurityPolicyAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** SecurityPolicy Properties. */
   properties: TrafficcontrollerSecurityPolicy_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const TrafficcontrollerSecurityPolicy: ResourceBinding<TrafficcontrollerSecurityPolicyConfig, TrafficcontrollerSecurityPolicyAttrs> = {
   wireType: "azure_servicenetworking_trafficcontroller_security_policy",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: TrafficcontrollerSecurityPolicy_PropertiesFields,
     },
+    tags: "tags",
   },
 };

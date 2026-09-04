@@ -252,26 +252,36 @@ _OpenapiExadbVmCluster_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiExadbVmClusterConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # ExadbVmCluster resource model
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 @dataclasses.dataclass
 class OpenapiExadbVmClusterAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # ExadbVmCluster resource model
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 OpenapiExadbVmCluster = ubx.ResourceBinding(
     wire_type="azure_oracle_openapi_exadb_vm_cluster",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiExadbVmCluster_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

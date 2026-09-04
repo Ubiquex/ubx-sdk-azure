@@ -452,10 +452,14 @@ class SignalRresourceConfig:
     identity: Any = None
     # The kind of the service
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # A class that describes the properties of the resource
     properties: Any = None
     # The billing information of the resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class SignalRresourceAttrs:
@@ -463,10 +467,14 @@ class SignalRresourceAttrs:
     identity: Any = None
     # The kind of the service
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # A class that describes the properties of the resource
     properties: Any = None
     # The billing information of the resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 SignalRresource = ubx.ResourceBinding(
     wire_type="azure_signalr_signal_rresource",
@@ -477,6 +485,7 @@ SignalRresource = ubx.ResourceBinding(
             fields=_SignalRresource_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -487,5 +496,6 @@ SignalRresource = ubx.ResourceBinding(
             kind="object",
             fields=_SignalRresource_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

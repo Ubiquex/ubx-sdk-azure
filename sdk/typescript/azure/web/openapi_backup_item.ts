@@ -105,29 +105,33 @@ const OpenapiBackupItem_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiBackupItemConfig {
+  /** Kind of resource. */
+  kind?: string | Computed<string>;
   /** BackupRequest resource specific properties */
   properties?: OpenapiBackupItem_Properties | Computed<OpenapiBackupItem_Properties>;
-  /** path parameter, not part of the API's own resource representation */
-  name: string | Computed<string>;
 }
 
 export interface OpenapiBackupItemAttrs {
+  /** Resource Id. */
+  id: string;
   /** Kind of resource. */
   kind: string;
+  /** Resource Name. */
+  name: string;
   /** BackupRequest resource specific properties */
   properties: OpenapiBackupItem_Properties;
-  /** path parameter, not part of the API's own resource representation */
-  name: string;
+  /** Resource type. */
+  type: string;
 }
 
 export const OpenapiBackupItem: ResourceBinding<OpenapiBackupItemConfig, OpenapiBackupItemAttrs> = {
   wireType: "azure_web_openapi_backup_item",
   fields: {
+    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiBackupItem_PropertiesFields,
     },
-    name: "name",
   },
 };

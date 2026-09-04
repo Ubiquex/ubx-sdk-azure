@@ -305,10 +305,14 @@ var PrivateCloud_SkuFields = ubx.FieldMap{
 type PrivateCloudConfig struct {
 	// Managed service identity (either system assigned, or none)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a private cloud resource
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -316,10 +320,14 @@ type PrivateCloudConfig struct {
 type PrivateCloudAttrs struct {
 	// Managed service identity (either system assigned, or none)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a private cloud resource
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -332,6 +340,7 @@ var PrivateCloud = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   PrivateCloud_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -342,6 +351,7 @@ var PrivateCloud = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   PrivateCloud_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

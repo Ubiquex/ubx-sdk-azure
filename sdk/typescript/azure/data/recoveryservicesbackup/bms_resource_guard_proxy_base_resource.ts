@@ -25,6 +25,8 @@ export interface BmsResourceGuardProxyBaseResourceConfig {
 }
 
 export interface BmsResourceGuardProxyBaseResourceAttrs {
+  /** The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200. */
+  nextLink: string;
   /** List of resources. */
   value: BmsResourceGuardProxyBaseResource_Value[];
   vaultName: string;

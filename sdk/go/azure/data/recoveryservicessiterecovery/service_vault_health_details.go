@@ -68,16 +68,39 @@ type ServiceVaultHealthDetails_Properties struct {
 	VaultErrors any
 }
 
+type ServiceVaultHealthDetails_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 type ServiceVaultHealthDetailsConfig struct {
 	ResourceName any
 }
 
 type ServiceVaultHealthDetailsAttrs struct {
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
 	// Resource Location
 	Location any
+	// The name of the resource
+	Name any
 	// class to define the health summary of the Vault.
 	Properties   any
 	ResourceName any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var ServiceVaultHealthDetails = ubx.DataSourceBinding{

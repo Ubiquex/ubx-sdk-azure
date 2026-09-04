@@ -1769,12 +1769,16 @@ var MachineScaleSetVm_SkuFields = ubx.FieldMap{
 type MachineScaleSetVmConfig struct {
 	// Identity for the virtual machine.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use. In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**.
 	Plan any
 	// Describes the properties of a virtual machine scale set virtual machine.
 	Properties any
 	// Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type MachineScaleSetVmAttrs struct {
@@ -1784,6 +1788,8 @@ type MachineScaleSetVmAttrs struct {
 	Identity any
 	// The virtual machine instance ID.
 	InstanceId any
+	// The geo-location where the resource lives
+	Location any
 	// Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use. In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**.
 	Plan any
 	// Describes the properties of a virtual machine scale set virtual machine.
@@ -1792,6 +1798,8 @@ type MachineScaleSetVmAttrs struct {
 	Resources any
 	// Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
 	Sku any
+	// Resource tags.
+	Tags any
 	// The virtual machine zones.
 	Zones any
 }
@@ -1804,6 +1812,7 @@ var MachineScaleSetVm = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   MachineScaleSetVm_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Plan": ubx.FieldSpec{
 			WireName: "plan",
 			Kind:     "object",
@@ -1819,5 +1828,6 @@ var MachineScaleSetVm = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   MachineScaleSetVm_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -210,15 +210,23 @@ _MonitorResource_PropertiesFields = {
 class MonitorResourceConfig:
     # The properties of the managed service identities assigned to this resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the monitor resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class MonitorResourceAttrs:
     # The properties of the managed service identities assigned to this resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the monitor resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 MonitorResource = ubx.ResourceBinding(
     wire_type="azure_dynatrace_monitor_resource",
@@ -228,10 +236,12 @@ MonitorResource = ubx.ResourceBinding(
             kind="object",
             fields=_MonitorResource_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_MonitorResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

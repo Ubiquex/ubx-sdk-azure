@@ -21,6 +21,8 @@ class BaseBackupPolicyResourceConfig:
 
 @dataclasses.dataclass
 class BaseBackupPolicyResourceAttrs:
+    # The uri to fetch the next page of resources. Call ListNext() fetches next page of resources.
+    next_link: Any = None
     # List of resources.
     value: Any = None
     vault_name: Any = None

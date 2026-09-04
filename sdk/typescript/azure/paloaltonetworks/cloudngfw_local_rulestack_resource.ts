@@ -103,15 +103,23 @@ const CloudngfwLocalRulestackResource_PropertiesFields: FieldMap = {
 export interface CloudngfwLocalRulestackResourceConfig {
   /** The properties of the managed service identities assigned to this resource. */
   identity?: CloudngfwLocalRulestackResource_Identity | Computed<CloudngfwLocalRulestackResource_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** PAN Rulestack Describe Object */
   properties: CloudngfwLocalRulestackResource_Properties | Computed<CloudngfwLocalRulestackResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface CloudngfwLocalRulestackResourceAttrs {
   /** The properties of the managed service identities assigned to this resource. */
   identity: CloudngfwLocalRulestackResource_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** PAN Rulestack Describe Object */
   properties: CloudngfwLocalRulestackResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const CloudngfwLocalRulestackResource: ResourceBinding<CloudngfwLocalRulestackResourceConfig, CloudngfwLocalRulestackResourceAttrs> = {
@@ -122,10 +130,12 @@ export const CloudngfwLocalRulestackResource: ResourceBinding<CloudngfwLocalRule
       kind: "object",
       fields: CloudngfwLocalRulestackResource_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: CloudngfwLocalRulestackResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

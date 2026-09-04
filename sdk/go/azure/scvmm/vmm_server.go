@@ -64,15 +64,23 @@ var VmmServer_PropertiesFields = ubx.FieldMap{
 type VmmServerConfig struct {
 	// The extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VmmServerAttrs struct {
 	// The extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var VmmServer = ubx.ResourceBinding{
@@ -83,10 +91,12 @@ var VmmServer = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VmmServer_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VmmServer_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

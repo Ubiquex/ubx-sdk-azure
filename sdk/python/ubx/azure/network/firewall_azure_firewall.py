@@ -459,8 +459,14 @@ _FirewallAzureFirewall_PropertiesFields = {
 class FirewallAzureFirewallConfig:
     # ExtendedLocation complex type.
     extended_location: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Properties of the Azure Firewall.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # A list of availability zones denoting where the resource needs to come from.
     zones: Any = None
 
@@ -470,8 +476,18 @@ class FirewallAzureFirewallAttrs:
     etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of the Azure Firewall.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
     # A list of availability zones denoting where the resource needs to come from.
     zones: Any = None
 
@@ -483,11 +499,14 @@ FirewallAzureFirewall = ubx.ResourceBinding(
             kind="object",
             fields=_FirewallAzureFirewall_ExtendedLocationFields,
         ),
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_FirewallAzureFirewall_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

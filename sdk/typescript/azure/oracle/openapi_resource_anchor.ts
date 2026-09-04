@@ -14,22 +14,32 @@ const OpenapiResourceAnchor_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiResourceAnchorConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Resource Anchor properties. */
   properties?: OpenapiResourceAnchor_Properties | Computed<OpenapiResourceAnchor_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiResourceAnchorAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Resource Anchor properties. */
   properties: OpenapiResourceAnchor_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiResourceAnchor: ResourceBinding<OpenapiResourceAnchorConfig, OpenapiResourceAnchorAttrs> = {
   wireType: "azure_oracle_openapi_resource_anchor",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiResourceAnchor_PropertiesFields,
     },
+    tags: "tags",
   },
 };

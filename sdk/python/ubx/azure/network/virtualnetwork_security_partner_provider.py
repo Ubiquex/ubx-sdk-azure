@@ -39,23 +39,42 @@ _VirtualnetworkSecurityPartnerProvider_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkSecurityPartnerProviderConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Properties of the Security Partner Provider.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkSecurityPartnerProviderAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of the Security Partner Provider.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkSecurityPartnerProvider = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_security_partner_provider",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualnetworkSecurityPartnerProvider_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

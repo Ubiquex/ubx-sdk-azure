@@ -315,15 +315,23 @@ const OpenShiftCluster_PropertiesFields: FieldMap = {
 export interface OpenShiftClusterConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: OpenShiftCluster_Identity | Computed<OpenShiftCluster_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** OpenShiftClusterProperties represents an OpenShift cluster's properties. */
   properties?: OpenShiftCluster_Properties | Computed<OpenShiftCluster_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenShiftClusterAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: OpenShiftCluster_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** OpenShiftClusterProperties represents an OpenShift cluster's properties. */
   properties: OpenShiftCluster_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenShiftCluster: ResourceBinding<OpenShiftClusterConfig, OpenShiftClusterAttrs> = {
@@ -334,10 +342,12 @@ export const OpenShiftCluster: ResourceBinding<OpenShiftClusterConfig, OpenShift
       kind: "object",
       fields: OpenShiftCluster_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenShiftCluster_PropertiesFields,
     },
+    tags: "tags",
   },
 };

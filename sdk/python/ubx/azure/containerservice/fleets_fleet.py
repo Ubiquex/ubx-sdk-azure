@@ -210,8 +210,12 @@ _FleetsFleet_PropertiesFields = {
 class FleetsFleetConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Fleet properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class FleetsFleetAttrs:
@@ -219,8 +223,12 @@ class FleetsFleetAttrs:
     e_tag: Any = None
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Fleet properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 FleetsFleet = ubx.ResourceBinding(
     wire_type="azure_containerservice_fleets_fleet",
@@ -230,10 +238,12 @@ FleetsFleet = ubx.ResourceBinding(
             kind="object",
             fields=_FleetsFleet_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_FleetsFleet_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

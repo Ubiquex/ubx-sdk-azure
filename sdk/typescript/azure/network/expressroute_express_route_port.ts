@@ -150,33 +150,52 @@ const ExpressrouteExpressRoutePort_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteExpressRoutePortConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: ExpressrouteExpressRoutePort_Identity | Computed<ExpressrouteExpressRoutePort_Identity>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties specific to ExpressRoutePort resources. */
   properties?: ExpressrouteExpressRoutePort_Properties | Computed<ExpressrouteExpressRoutePort_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ExpressrouteExpressRoutePortAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** Identity for the resource. */
   identity: ExpressrouteExpressRoutePort_Identity;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties specific to ExpressRoutePort resources. */
   properties: ExpressrouteExpressRoutePort_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const ExpressrouteExpressRoutePort: ResourceBinding<ExpressrouteExpressRoutePortConfig, ExpressrouteExpressRoutePortAttrs> = {
   wireType: "azure_network_expressroute_express_route_port",
   fields: {
+    id: "id",
     identity: {
       wireName: "identity",
       kind: "object",
       fields: ExpressrouteExpressRoutePort_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ExpressrouteExpressRoutePort_PropertiesFields,
     },
+    tags: "tags",
   },
 };

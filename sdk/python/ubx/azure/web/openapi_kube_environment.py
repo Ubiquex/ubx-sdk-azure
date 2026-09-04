@@ -148,8 +148,12 @@ class OpenapiKubeEnvironmentConfig:
     extended_location: Any = None
     # Kind of resource.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # KubeEnvironment resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
@@ -159,8 +163,12 @@ class OpenapiKubeEnvironmentAttrs:
     extended_location: Any = None
     # Kind of resource.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # KubeEnvironment resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
@@ -173,11 +181,13 @@ OpenapiKubeEnvironment = ubx.ResourceBinding(
             fields=_OpenapiKubeEnvironment_ExtendedLocationFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiKubeEnvironment_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

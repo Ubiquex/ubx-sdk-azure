@@ -275,15 +275,23 @@ var OpenapiSessionPool_PropertiesFields = ubx.FieldMap{
 type OpenapiSessionPoolConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Container App session pool resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiSessionPoolAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Container App session pool resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiSessionPool = ubx.ResourceBinding{
@@ -294,10 +302,12 @@ var OpenapiSessionPool = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiSessionPool_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiSessionPool_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

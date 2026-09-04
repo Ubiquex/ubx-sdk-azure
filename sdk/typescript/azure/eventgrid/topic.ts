@@ -212,17 +212,25 @@ const Topic_PropertiesFields: FieldMap = {
 export interface TopicConfig {
   /** The identity information for the resource. */
   identity?: Topic_Identity | Computed<Topic_Identity>;
+  /** Location of the resource. */
+  location: string | Computed<string>;
   /** Properties of the Topic. */
   properties?: Topic_Properties | Computed<Topic_Properties>;
+  /** Tags of the resource. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface TopicAttrs {
   /** The identity information for the resource. */
   identity: Topic_Identity;
+  /** Location of the resource. */
+  location: string;
   /** Properties of the Topic. */
   properties: Topic_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: Topic_SystemData;
+  /** Tags of the resource. */
+  tags: Record<string, string>;
 }
 
 export const Topic: ResourceBinding<TopicConfig, TopicAttrs> = {
@@ -233,10 +241,12 @@ export const Topic: ResourceBinding<TopicConfig, TopicAttrs> = {
       kind: "object",
       fields: Topic_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Topic_PropertiesFields,
     },
+    tags: "tags",
   },
 };

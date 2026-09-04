@@ -145,10 +145,16 @@ _VirtualnetworkBastionHost_SkuFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkBastionHostConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Properties of the Bastion Host.
     properties: Any = None
     # The sku of this Bastion Host.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # A list of availability zones denoting where the resource needs to come from.
     zones: Any = None
 
@@ -156,16 +162,28 @@ class VirtualnetworkBastionHostConfig:
 class VirtualnetworkBastionHostAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of the Bastion Host.
     properties: Any = None
     # The sku of this Bastion Host.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
     # A list of availability zones denoting where the resource needs to come from.
     zones: Any = None
 
 VirtualnetworkBastionHost = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_bastion_host",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -176,6 +194,7 @@ VirtualnetworkBastionHost = ubx.ResourceBinding(
             kind="object",
             fields=_VirtualnetworkBastionHost_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

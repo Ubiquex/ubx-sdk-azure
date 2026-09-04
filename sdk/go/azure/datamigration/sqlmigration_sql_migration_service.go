@@ -16,22 +16,32 @@ var SqlmigrationSqlMigrationService_PropertiesFields = ubx.FieldMap{
 }
 
 type SqlmigrationSqlMigrationServiceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The SQL Migration Service properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type SqlmigrationSqlMigrationServiceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The SQL Migration Service properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var SqlmigrationSqlMigrationService = ubx.ResourceBinding{
 	WireType: "azure_datamigration_sqlmigration_sql_migration_service",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   SqlmigrationSqlMigrationService_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -26,6 +26,15 @@ type PrivateEndpointConnection_Properties struct {
 	ProvisioningState any
 }
 
+type PrivateEndpointConnection_SystemData struct {
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
+	LastModifiedByType any
+}
+
 var PrivateEndpointConnection_Properties_PrivateEndpointFields = ubx.FieldMap{
 	"Id": ubx.FieldSpec{WireName: "id"},
 }
@@ -56,8 +65,16 @@ type PrivateEndpointConnectionConfig struct {
 }
 
 type PrivateEndpointConnectionAttrs struct {
+	// Gets or sets the identifier.
+	Id any
+	// Gets or sets the name.
+	Name any
 	// A private endpoint connection properties class.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Gets or sets the type.
+	Type any
 }
 
 var PrivateEndpointConnection = ubx.ResourceBinding{

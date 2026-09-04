@@ -78,22 +78,38 @@ const IntegrationAccountSchema_PropertiesFields: FieldMap = {
 };
 
 export interface IntegrationAccountSchemaConfig {
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** The integration account schema properties. */
   properties: IntegrationAccountSchema_Properties | Computed<IntegrationAccountSchema_Properties>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface IntegrationAccountSchemaAttrs {
+  /** The resource id. */
+  id: string;
+  /** The resource location. */
+  location: string;
+  /** Gets the resource name. */
+  name: string;
   /** The integration account schema properties. */
   properties: IntegrationAccountSchema_Properties;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** Gets the resource type. */
+  type: string;
 }
 
 export const IntegrationAccountSchema: ResourceBinding<IntegrationAccountSchemaConfig, IntegrationAccountSchemaAttrs> = {
   wireType: "azure_logic_integration_account_schema",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: IntegrationAccountSchema_PropertiesFields,
     },
+    tags: "tags",
   },
 };

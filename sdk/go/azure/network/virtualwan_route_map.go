@@ -95,8 +95,14 @@ type VirtualwanRouteMapConfig struct {
 type VirtualwanRouteMapAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Name of the resource.
+	Name any
 	// Properties of RouteMap resource
 	Properties any
+	// Type of the resource.
+	Type any
 }
 
 var VirtualwanRouteMap = ubx.ResourceBinding{

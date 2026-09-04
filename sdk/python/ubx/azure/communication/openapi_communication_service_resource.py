@@ -75,15 +75,23 @@ _OpenapiCommunicationServiceResource_PropertiesFields = {
 class OpenapiCommunicationServiceResourceConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # A class that describes the properties of the CommunicationService.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiCommunicationServiceResourceAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # A class that describes the properties of the CommunicationService.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiCommunicationServiceResource = ubx.ResourceBinding(
     wire_type="azure_communication_openapi_communication_service_resource",
@@ -93,10 +101,12 @@ OpenapiCommunicationServiceResource = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiCommunicationServiceResource_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiCommunicationServiceResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

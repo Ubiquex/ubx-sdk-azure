@@ -14,8 +14,14 @@ type DbOpenapiNotebookWorkspaceConfig struct {
 }
 
 type DbOpenapiNotebookWorkspaceAttrs struct {
+	// The unique resource identifier of the database account.
+	Id any
+	// The name of the database account.
+	Name any
 	// Properties of a notebook workspace resource.
 	Properties any
+	// The type of Azure resource.
+	Type any
 }
 
 var DbOpenapiNotebookWorkspace = ubx.ResourceBinding{

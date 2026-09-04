@@ -11956,10 +11956,16 @@ const VirtualnetworkPublicIpaddress_PropertiesFields: FieldMap = {
 export interface VirtualnetworkPublicIpaddressConfig {
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkPublicIpaddress_ExtendedLocation | Computed<VirtualnetworkPublicIpaddress_ExtendedLocation>;
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Public IP address properties. */
   properties?: VirtualnetworkPublicIpaddress_Properties | Computed<VirtualnetworkPublicIpaddress_Properties>;
   /** SKU of a public IP address. */
   sku?: VirtualnetworkPublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku | Computed<VirtualnetworkPublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** A list of availability zones denoting the IP allocated for the resource needs to come from. */
   zones?: string[] | Computed<string[]>;
 }
@@ -11969,10 +11975,20 @@ export interface VirtualnetworkPublicIpaddressAttrs {
   etag: string;
   /** ExtendedLocation complex type. */
   extendedLocation: VirtualnetworkPublicIpaddress_ExtendedLocation;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Public IP address properties. */
   properties: VirtualnetworkPublicIpaddress_Properties;
   /** SKU of a public IP address. */
   sku: VirtualnetworkPublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
   /** A list of availability zones denoting the IP allocated for the resource needs to come from. */
   zones: string[];
 }
@@ -11985,6 +12001,8 @@ export const VirtualnetworkPublicIpaddress: ResourceBinding<VirtualnetworkPublic
       kind: "object",
       fields: VirtualnetworkPublicIpaddress_ExtendedLocationFields,
     },
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -11995,6 +12013,7 @@ export const VirtualnetworkPublicIpaddress: ResourceBinding<VirtualnetworkPublic
       kind: "object",
       fields: VirtualnetworkPublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

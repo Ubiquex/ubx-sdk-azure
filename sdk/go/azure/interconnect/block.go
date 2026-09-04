@@ -114,23 +114,31 @@ var Block_SkuFields = ubx.FieldMap{
 }
 
 type BlockConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the user-defined constraints for resource hardware placement.
 	Placement any
 	// Properties of the Interconnect Block.
 	Properties any
 	// Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
 	Sku any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
 
 type BlockAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the user-defined constraints for resource hardware placement.
 	Placement any
 	// Properties of the Interconnect Block.
 	Properties any
 	// Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
 	Sku any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -138,6 +146,7 @@ type BlockAttrs struct {
 var Block = ubx.ResourceBinding{
 	WireType: "azure_interconnect_block",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Placement": ubx.FieldSpec{
 			WireName: "placement",
 			Kind:     "object",
@@ -153,6 +162,7 @@ var Block = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Block_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

@@ -263,6 +263,8 @@ export interface OperationJobExtendedInfoAttrs {
   backupInstance: OperationJobExtendedInfo_BackupInstance;
   /** Name or Arm Id of the job created for this operation. */
   jobId: string;
+  /** This property will be used as the discriminator for deciding the specific types in the polymorphic chain of types. */
+  objectType: string;
   /** path parameter, not part of the API's own resource representation */
   location: string;
 }

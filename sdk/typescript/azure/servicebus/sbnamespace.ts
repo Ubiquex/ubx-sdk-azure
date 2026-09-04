@@ -267,19 +267,27 @@ const Sbnamespace_SkuFields: FieldMap = {
 export interface SbnamespaceConfig {
   /** Properties to configure User Assigned Identities for Bring your Own Keys */
   identity?: Sbnamespace_Identity | Computed<Sbnamespace_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the namespace. */
   properties?: Sbnamespace_Properties | Computed<Sbnamespace_Properties>;
   /** SKU of the namespace. */
   sku?: Sbnamespace_Sku | Computed<Sbnamespace_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SbnamespaceAttrs {
   /** Properties to configure User Assigned Identities for Bring your Own Keys */
   identity: Sbnamespace_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the namespace. */
   properties: Sbnamespace_Properties;
   /** SKU of the namespace. */
   sku: Sbnamespace_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Sbnamespace: ResourceBinding<SbnamespaceConfig, SbnamespaceAttrs> = {
@@ -290,6 +298,7 @@ export const Sbnamespace: ResourceBinding<SbnamespaceConfig, SbnamespaceAttrs> =
       kind: "object",
       fields: Sbnamespace_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -300,5 +309,6 @@ export const Sbnamespace: ResourceBinding<SbnamespaceConfig, SbnamespaceAttrs> =
       kind: "object",
       fields: Sbnamespace_SkuFields,
     },
+    tags: "tags",
   },
 };

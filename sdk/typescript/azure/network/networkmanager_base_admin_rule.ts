@@ -22,10 +22,18 @@ export interface NetworkmanagerBaseAdminRuleConfig {
 }
 
 export interface NetworkmanagerBaseAdminRuleAttrs {
+  /** A unique read-only string that changes whenever the resource is updated. */
+  etag: string;
+  /** Resource ID. */
+  id: string;
   /** Whether the rule is custom or default. */
   kind: string;
+  /** Resource name. */
+  name: string;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: NetworkmanagerBaseAdminRule_SystemData;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkmanagerBaseAdminRule: ResourceBinding<NetworkmanagerBaseAdminRuleConfig, NetworkmanagerBaseAdminRuleAttrs> = {

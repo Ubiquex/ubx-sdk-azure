@@ -193,8 +193,12 @@ var OpenapiAppServiceEnvironmentResource_PropertiesFields = ubx.FieldMap{
 type OpenapiAppServiceEnvironmentResourceConfig struct {
 	// Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Description of an App Service Environment.
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -202,8 +206,12 @@ type OpenapiAppServiceEnvironmentResourceConfig struct {
 type OpenapiAppServiceEnvironmentResourceAttrs struct {
 	// Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Description of an App Service Environment.
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -211,12 +219,14 @@ type OpenapiAppServiceEnvironmentResourceAttrs struct {
 var OpenapiAppServiceEnvironmentResource = ubx.ResourceBinding{
 	WireType: "azure_web_openapi_app_service_environment_resource",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiAppServiceEnvironmentResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

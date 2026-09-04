@@ -464,10 +464,14 @@ class OpenapiStaticSiteArmresourceConfig:
     identity: Any = None
     # Kind of resource.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # A static site.
     properties: Any = None
     # Description of a SKU for a scalable resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
@@ -477,10 +481,14 @@ class OpenapiStaticSiteArmresourceAttrs:
     identity: Any = None
     # Kind of resource.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # A static site.
     properties: Any = None
     # Description of a SKU for a scalable resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
@@ -493,6 +501,7 @@ OpenapiStaticSiteArmresource = ubx.ResourceBinding(
             fields=_OpenapiStaticSiteArmresource_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -503,6 +512,7 @@ OpenapiStaticSiteArmresource = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

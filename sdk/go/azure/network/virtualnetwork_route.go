@@ -41,6 +41,8 @@ var VirtualnetworkRoute_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkRouteConfig struct {
+	// Name of the resource.
+	Name any
 	// Route resource.
 	Properties any
 }
@@ -48,13 +50,18 @@ type VirtualnetworkRouteConfig struct {
 type VirtualnetworkRouteAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Route resource.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkRoute = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_route",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

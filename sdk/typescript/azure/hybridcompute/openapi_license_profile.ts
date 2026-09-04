@@ -180,22 +180,32 @@ const OpenapiLicenseProfile_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiLicenseProfileConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describe the properties of a license profile. */
   properties?: OpenapiLicenseProfile_Properties | Computed<OpenapiLicenseProfile_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiLicenseProfileAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describe the properties of a license profile. */
   properties: OpenapiLicenseProfile_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiLicenseProfile: ResourceBinding<OpenapiLicenseProfileConfig, OpenapiLicenseProfileAttrs> = {
   wireType: "azure_hybridcompute_openapi_license_profile",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiLicenseProfile_PropertiesFields,
     },
+    tags: "tags",
   },
 };

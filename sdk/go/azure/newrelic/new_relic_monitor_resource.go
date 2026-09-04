@@ -222,15 +222,23 @@ var NewRelicMonitorResource_PropertiesFields = ubx.FieldMap{
 type NewRelicMonitorResourceConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the NewRelic Monitor resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type NewRelicMonitorResourceAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the NewRelic Monitor resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var NewRelicMonitorResource = ubx.ResourceBinding{
@@ -241,10 +249,12 @@ var NewRelicMonitorResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   NewRelicMonitorResource_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   NewRelicMonitorResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

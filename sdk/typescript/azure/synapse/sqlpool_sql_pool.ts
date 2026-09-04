@@ -56,22 +56,31 @@ const SqlpoolSqlPool_SkuFields: FieldMap = {
 };
 
 export interface SqlpoolSqlPoolConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of a SQL Analytics pool */
   properties?: SqlpoolSqlPool_Properties | Computed<SqlpoolSqlPool_Properties>;
   /** SQL pool SKU */
   sku?: SqlpoolSqlPool_Sku | Computed<SqlpoolSqlPool_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SqlpoolSqlPoolAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of a SQL Analytics pool */
   properties: SqlpoolSqlPool_Properties;
   /** SQL pool SKU */
   sku: SqlpoolSqlPool_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const SqlpoolSqlPool: ResourceBinding<SqlpoolSqlPoolConfig, SqlpoolSqlPoolAttrs> = {
   wireType: "azure_synapse_sqlpool_sql_pool",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -82,5 +91,6 @@ export const SqlpoolSqlPool: ResourceBinding<SqlpoolSqlPoolConfig, SqlpoolSqlPoo
       kind: "object",
       fields: SqlpoolSqlPool_SkuFields,
     },
+    tags: "tags",
   },
 };

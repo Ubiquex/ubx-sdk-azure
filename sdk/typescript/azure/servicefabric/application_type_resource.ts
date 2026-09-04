@@ -6,27 +6,62 @@ export interface ApplicationTypeResource_Properties {
   provisioningState?: string | Computed<string>;
 }
 
+export interface ApplicationTypeResource_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC). */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const ApplicationTypeResource_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
 export interface ApplicationTypeResourceConfig {
+  /** It will be deprecated in New API, resource location depends on the parent resource. */
+  location?: string | Computed<string>;
   /** The application type name properties */
   properties?: ApplicationTypeResource_Properties | Computed<ApplicationTypeResource_Properties>;
+  /** Azure resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ApplicationTypeResourceAttrs {
+  /** Azure resource etag. */
+  etag: string;
+  /** Azure resource identifier. */
+  id: string;
+  /** It will be deprecated in New API, resource location depends on the parent resource. */
+  location: string;
+  /** Azure resource name. */
+  name: string;
   /** The application type name properties */
   properties: ApplicationTypeResource_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: ApplicationTypeResource_SystemData;
+  /** Azure resource tags. */
+  tags: Record<string, string>;
+  /** Azure resource type. */
+  type: string;
 }
 
 export const ApplicationTypeResource: ResourceBinding<ApplicationTypeResourceConfig, ApplicationTypeResourceAttrs> = {
   wireType: "azure_servicefabric_application_type_resource",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ApplicationTypeResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

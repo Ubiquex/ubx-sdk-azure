@@ -81,15 +81,23 @@ var OpenapiExascaleDbStorageVault_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiExascaleDbStorageVaultConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// ExascaleDbStorageVault resource model
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
 
 type OpenapiExascaleDbStorageVaultAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// ExascaleDbStorageVault resource model
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -97,11 +105,13 @@ type OpenapiExascaleDbStorageVaultAttrs struct {
 var OpenapiExascaleDbStorageVault = ubx.ResourceBinding{
 	WireType: "azure_oracle_openapi_exascale_db_storage_vault",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiExascaleDbStorageVault_PropertiesFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

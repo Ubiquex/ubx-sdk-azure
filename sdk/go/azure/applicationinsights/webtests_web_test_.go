@@ -70,25 +70,41 @@ var WebtestsWebTest_PropertiesFields = ubx.FieldMap{
 type WebtestsWebTestConfig struct {
 	// The kind of web test that this web test watches. Choices are ping and multistep.
 	Kind any
+	// Resource location
+	Location any
 	// Metadata describing a web test for an Azure resource.
 	Properties any
+	// Resource tags
+	Tags any
 }
 
 type WebtestsWebTestAttrs struct {
+	// Azure resource Id
+	Id any
 	// The kind of web test that this web test watches. Choices are ping and multistep.
 	Kind any
+	// Resource location
+	Location any
+	// Azure resource name
+	Name any
 	// Metadata describing a web test for an Azure resource.
 	Properties any
+	// Resource tags
+	Tags any
+	// Azure resource type
+	Type any
 }
 
 var WebtestsWebTest = ubx.ResourceBinding{
 	WireType: "azure_applicationinsights_webtests_web_test",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   WebtestsWebTest_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

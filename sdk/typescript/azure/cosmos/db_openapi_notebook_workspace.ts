@@ -12,8 +12,14 @@ export interface DbOpenapiNotebookWorkspaceConfig {
 }
 
 export interface DbOpenapiNotebookWorkspaceAttrs {
+  /** The unique resource identifier of the database account. */
+  id: string;
+  /** The name of the database account. */
+  name: string;
   /** Properties of a notebook workspace resource. */
   properties: DbOpenapiNotebookWorkspace_Properties;
+  /** The type of Azure resource. */
+  type: string;
 }
 
 export const DbOpenapiNotebookWorkspace: ResourceBinding<DbOpenapiNotebookWorkspaceConfig, DbOpenapiNotebookWorkspaceAttrs> = {

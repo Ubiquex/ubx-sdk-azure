@@ -44,22 +44,31 @@ const InstancepoolsInstancePool_SkuFields: FieldMap = {
 };
 
 export interface InstancepoolsInstancePoolConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of an instance pool. */
   properties?: InstancepoolsInstancePool_Properties | Computed<InstancepoolsInstancePool_Properties>;
   /** An ARM Resource SKU. */
   sku?: InstancepoolsInstancePool_Sku | Computed<InstancepoolsInstancePool_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface InstancepoolsInstancePoolAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of an instance pool. */
   properties: InstancepoolsInstancePool_Properties;
   /** An ARM Resource SKU. */
   sku: InstancepoolsInstancePool_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const InstancepoolsInstancePool: ResourceBinding<InstancepoolsInstancePoolConfig, InstancepoolsInstancePoolAttrs> = {
   wireType: "azure_sql_instancepools_instance_pool",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -70,5 +79,6 @@ export const InstancepoolsInstancePool: ResourceBinding<InstancepoolsInstancePoo
       kind: "object",
       fields: InstancepoolsInstancePool_SkuFields,
     },
+    tags: "tags",
   },
 };

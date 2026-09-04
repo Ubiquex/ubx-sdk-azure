@@ -105,10 +105,16 @@ export interface ChannelConfig {
 }
 
 export interface ChannelAttrs {
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the Channel. */
   properties: Channel_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: Channel_SystemData;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const Channel: ResourceBinding<ChannelConfig, ChannelAttrs> = {

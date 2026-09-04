@@ -152,33 +152,52 @@ var ExpressrouteExpressRoutePort_PropertiesFields = ubx.FieldMap{
 }
 
 type ExpressrouteExpressRoutePortConfig struct {
+	// Resource ID.
+	Id any
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
 	// Properties specific to ExpressRoutePort resources.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ExpressrouteExpressRoutePortAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties specific to ExpressRoutePort resources.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var ExpressrouteExpressRoutePort = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_express_route_port",
 	Fields: ubx.FieldMap{
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
 			Kind:     "object",
 			Fields:   ExpressrouteExpressRoutePort_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ExpressrouteExpressRoutePort_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

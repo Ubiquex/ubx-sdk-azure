@@ -12,6 +12,21 @@ type PrivateLinkResource2_Properties struct {
 	RequiredZoneNames any
 }
 
+type PrivateLinkResource2_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 type PrivateLinkResource2Config struct {
 	AccountName any
 	GroupId     any
@@ -20,8 +35,16 @@ type PrivateLinkResource2Config struct {
 type PrivateLinkResource2Attrs struct {
 	AccountName any
 	GroupId     any
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
+	// The name of the resource
+	Name any
 	// Properties of a private link resource.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var PrivateLinkResource2 = ubx.DataSourceBinding{

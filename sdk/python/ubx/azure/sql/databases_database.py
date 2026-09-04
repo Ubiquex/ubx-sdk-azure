@@ -234,10 +234,14 @@ _DatabasesDatabase_PropertiesFields = {
 class DatabasesDatabaseConfig:
     # Azure Active Directory identity configuration for a resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The database's properties.
     properties: Any = None
     # An ARM Resource SKU.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class DatabasesDatabaseAttrs:
@@ -245,12 +249,16 @@ class DatabasesDatabaseAttrs:
     identity: Any = None
     # Kind of database. This is metadata used for the Azure portal experience.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Resource that manages the database.
     managed_by: Any = None
     # The database's properties.
     properties: Any = None
     # An ARM Resource SKU.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 DatabasesDatabase = ubx.ResourceBinding(
     wire_type="azure_sql_databases_database",
@@ -260,6 +268,7 @@ DatabasesDatabase = ubx.ResourceBinding(
             kind="object",
             fields=_DatabasesDatabase_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -270,5 +279,6 @@ DatabasesDatabase = ubx.ResourceBinding(
             kind="object",
             fields=_DatabasesDatabase_Properties_CurrentSkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

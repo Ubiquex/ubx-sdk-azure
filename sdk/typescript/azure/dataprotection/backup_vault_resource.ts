@@ -281,8 +281,12 @@ export interface BackupVaultResourceConfig {
   eTag?: string | Computed<string>;
   /** Identity details */
   identity?: BackupVaultResource_Identity | Computed<BackupVaultResource_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Backup Vault */
   properties: BackupVaultResource_Properties | Computed<BackupVaultResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface BackupVaultResourceAttrs {
@@ -290,8 +294,12 @@ export interface BackupVaultResourceAttrs {
   eTag: string;
   /** Identity details */
   identity: BackupVaultResource_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Backup Vault */
   properties: BackupVaultResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const BackupVaultResource: ResourceBinding<BackupVaultResourceConfig, BackupVaultResourceAttrs> = {
@@ -303,10 +311,12 @@ export const BackupVaultResource: ResourceBinding<BackupVaultResourceConfig, Bac
       kind: "object",
       fields: BackupVaultResource_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: BackupVaultResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

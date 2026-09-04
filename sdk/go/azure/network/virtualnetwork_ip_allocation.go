@@ -51,24 +51,43 @@ var VirtualnetworkIpAllocation_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkIpAllocationConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Properties of the IpAllocation.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkIpAllocationAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties of the IpAllocation.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkIpAllocation = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_ip_allocation",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkIpAllocation_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -220,15 +220,23 @@ const NewRelicMonitorResource_PropertiesFields: FieldMap = {
 export interface NewRelicMonitorResourceConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: NewRelicMonitorResource_Identity | Computed<NewRelicMonitorResource_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties specific to the NewRelic Monitor resource */
   properties: NewRelicMonitorResource_Properties | Computed<NewRelicMonitorResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NewRelicMonitorResourceAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: NewRelicMonitorResource_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties specific to the NewRelic Monitor resource */
   properties: NewRelicMonitorResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const NewRelicMonitorResource: ResourceBinding<NewRelicMonitorResourceConfig, NewRelicMonitorResourceAttrs> = {
@@ -239,10 +247,12 @@ export const NewRelicMonitorResource: ResourceBinding<NewRelicMonitorResourceCon
       kind: "object",
       fields: NewRelicMonitorResource_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NewRelicMonitorResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

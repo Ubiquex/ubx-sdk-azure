@@ -376,19 +376,27 @@ const OpenapiServer_SkuFields: FieldMap = {
 export interface OpenapiServerConfig {
   /** Identities associated with a server. */
   identity?: OpenapiServer_Identity | Computed<OpenapiServer_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of a server. */
   properties?: OpenapiServer_Properties | Computed<OpenapiServer_Properties>;
   /** Compute information of a server. */
   sku?: OpenapiServer_Sku | Computed<OpenapiServer_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiServerAttrs {
   /** Identities associated with a server. */
   identity: OpenapiServer_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of a server. */
   properties: OpenapiServer_Properties;
   /** Compute information of a server. */
   sku: OpenapiServer_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiServer: ResourceBinding<OpenapiServerConfig, OpenapiServerAttrs> = {
@@ -399,6 +407,7 @@ export const OpenapiServer: ResourceBinding<OpenapiServerConfig, OpenapiServerAt
       kind: "object",
       fields: OpenapiServer_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -409,5 +418,6 @@ export const OpenapiServer: ResourceBinding<OpenapiServerConfig, OpenapiServerAt
       kind: "object",
       fields: OpenapiServer_SkuFields,
     },
+    tags: "tags",
   },
 };

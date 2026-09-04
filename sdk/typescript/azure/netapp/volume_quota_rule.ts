@@ -20,22 +20,32 @@ const VolumeQuotaRule_PropertiesFields: FieldMap = {
 };
 
 export interface VolumeQuotaRuleConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Volume Quota Rule properties */
   properties?: VolumeQuotaRule_Properties | Computed<VolumeQuotaRule_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VolumeQuotaRuleAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Volume Quota Rule properties */
   properties: VolumeQuotaRule_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const VolumeQuotaRule: ResourceBinding<VolumeQuotaRuleConfig, VolumeQuotaRuleAttrs> = {
   wireType: "azure_netapp_volume_quota_rule",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VolumeQuotaRule_PropertiesFields,
     },
+    tags: "tags",
   },
 };

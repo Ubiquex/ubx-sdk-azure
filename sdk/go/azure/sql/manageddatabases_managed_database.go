@@ -101,22 +101,32 @@ var ManageddatabasesManagedDatabase_PropertiesFields = ubx.FieldMap{
 }
 
 type ManageddatabasesManagedDatabaseConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The managed database's properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ManageddatabasesManagedDatabaseAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The managed database's properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var ManageddatabasesManagedDatabase = ubx.ResourceBinding{
 	WireType: "azure_sql_manageddatabases_managed_database",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ManageddatabasesManagedDatabase_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

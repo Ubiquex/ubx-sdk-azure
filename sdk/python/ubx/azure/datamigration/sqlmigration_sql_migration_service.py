@@ -20,21 +20,31 @@ _SqlmigrationSqlMigrationService_PropertiesFields = {
 
 @dataclasses.dataclass
 class SqlmigrationSqlMigrationServiceConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # The SQL Migration Service properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class SqlmigrationSqlMigrationServiceAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # The SQL Migration Service properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 SqlmigrationSqlMigrationService = ubx.ResourceBinding(
     wire_type="azure_datamigration_sqlmigration_sql_migration_service",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_SqlmigrationSqlMigrationService_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

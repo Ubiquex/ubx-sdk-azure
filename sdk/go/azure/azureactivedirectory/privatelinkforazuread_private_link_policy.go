@@ -25,6 +25,8 @@ type PrivatelinkforazureadPrivateLinkPolicyConfig struct {
 type PrivatelinkforazureadPrivateLinkPolicyAttrs struct {
 	// Flag indicating whether all tenants are allowed
 	AllTenants any
+	// String Id used to locate any resource on Azure.
+	Id any
 	// Name of the Private Link Azure AD Policy.
 	Name any
 	// Guid of the owner tenant
@@ -39,6 +41,8 @@ type PrivatelinkforazureadPrivateLinkPolicyAttrs struct {
 	Tags any
 	// The list of tenantIds.
 	Tenants any
+	// Type of this resource.
+	Type any
 }
 
 var PrivatelinkforazureadPrivateLinkPolicy = ubx.ResourceBinding{

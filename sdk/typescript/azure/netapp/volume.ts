@@ -438,8 +438,12 @@ const Volume_PropertiesFields: FieldMap = {
 };
 
 export interface VolumeConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Volume properties */
   properties: Volume_Properties | Computed<Volume_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
@@ -447,8 +451,12 @@ export interface VolumeConfig {
 export interface VolumeAttrs {
   /** "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.") */
   etag: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Volume properties */
   properties: Volume_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -456,11 +464,13 @@ export interface VolumeAttrs {
 export const Volume: ResourceBinding<VolumeConfig, VolumeAttrs> = {
   wireType: "azure_netapp_volume",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Volume_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

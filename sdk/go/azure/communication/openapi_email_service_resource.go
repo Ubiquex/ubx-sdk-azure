@@ -16,22 +16,32 @@ var OpenapiEmailServiceResource_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiEmailServiceResourceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// A class that describes the properties of the EmailService.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiEmailServiceResourceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// A class that describes the properties of the EmailService.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiEmailServiceResource = ubx.ResourceBinding{
 	WireType: "azure_communication_openapi_email_service_resource",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiEmailServiceResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -29,22 +29,31 @@ const OpenapiDedicatedCapacity_SkuFields: FieldMap = {
 };
 
 export interface OpenapiDedicatedCapacityConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of Dedicated Capacity resource. */
   properties?: OpenapiDedicatedCapacity_Properties | Computed<OpenapiDedicatedCapacity_Properties>;
   /** Represents the SKU name and Azure pricing tier for PowerBI Dedicated capacity resource. */
   sku: OpenapiDedicatedCapacity_Sku | Computed<OpenapiDedicatedCapacity_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiDedicatedCapacityAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of Dedicated Capacity resource. */
   properties: OpenapiDedicatedCapacity_Properties;
   /** Represents the SKU name and Azure pricing tier for PowerBI Dedicated capacity resource. */
   sku: OpenapiDedicatedCapacity_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiDedicatedCapacity: ResourceBinding<OpenapiDedicatedCapacityConfig, OpenapiDedicatedCapacityAttrs> = {
   wireType: "azure_powerbidedicated_openapi_dedicated_capacity",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -55,5 +64,6 @@ export const OpenapiDedicatedCapacity: ResourceBinding<OpenapiDedicatedCapacityC
       kind: "object",
       fields: OpenapiDedicatedCapacity_SkuFields,
     },
+    tags: "tags",
   },
 };

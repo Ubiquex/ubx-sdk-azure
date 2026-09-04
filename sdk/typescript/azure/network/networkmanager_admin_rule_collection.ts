@@ -52,10 +52,18 @@ export interface NetworkmanagerAdminRuleCollectionConfig {
 }
 
 export interface NetworkmanagerAdminRuleCollectionAttrs {
+  /** A unique read-only string that changes whenever the resource is updated. */
+  etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource name. */
+  name: string;
   /** Defines the admin rule collection properties. */
   properties: NetworkmanagerAdminRuleCollection_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: NetworkmanagerAdminRuleCollection_SystemData;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkmanagerAdminRuleCollection: ResourceBinding<NetworkmanagerAdminRuleCollectionConfig, NetworkmanagerAdminRuleCollectionAttrs> = {

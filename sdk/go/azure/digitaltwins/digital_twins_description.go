@@ -3,6 +3,22 @@ package digitaltwins
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type DigitalTwinsDescription_Identity_UserAssignedIdentities struct {
+	ClientId    any
+	PrincipalId any
+}
+
+type DigitalTwinsDescription_Identity struct {
+	// The object id of the Managed Identity Resource. This will be sent to the RP from ARM via the x-ms-identity-principal-id header in the PUT request if the resource has a systemAssigned(implicit) identity
+	PrincipalId any
+	// The tenant id of the Managed Identity Resource. This will be sent to the RP from ARM via the x-ms-client-tenant-id header in the PUT request if the resource has a systemAssigned(implicit) identity
+	TenantId any
+	// The type of Managed Identity used by the DigitalTwinsInstance.
+	Type any
+	// The list of user identities associated with the resource. The user identity dictionary key references will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'. .
+	UserAssignedIdentities any
+}
+
 type DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
 	Id any
 }
@@ -50,6 +66,22 @@ type DigitalTwinsDescription_Properties struct {
 	ProvisioningState any
 	// Public network access for the DigitalTwinsInstance.
 	PublicNetworkAccess any
+}
+
+var DigitalTwinsDescription_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
+
+var DigitalTwinsDescription_IdentityFields = ubx.FieldMap{
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   DigitalTwinsDescription_Identity_UserAssignedIdentitiesFields,
+	},
 }
 
 var DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
@@ -116,22 +148,49 @@ var DigitalTwinsDescription_PropertiesFields = ubx.FieldMap{
 }
 
 type DigitalTwinsDescriptionConfig struct {
+	// The managed identity for the DigitalTwinsInstance.
+	Identity any
+	// The resource location.
+	Location any
 	// The properties of a DigitalTwinsInstance.
 	Properties any
+	// The resource tags.
+	Tags any
 }
 
 type DigitalTwinsDescriptionAttrs struct {
+	// The resource identifier.
+	Id any
+	// The managed identity for the DigitalTwinsInstance.
+	Identity any
+	// The resource location.
+	Location any
+	// The resource name.
+	Name any
 	// The properties of a DigitalTwinsInstance.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The resource tags.
+	Tags any
+	// The resource type.
+	Type any
 }
 
 var DigitalTwinsDescription = ubx.ResourceBinding{
 	WireType: "azure_digitaltwins_digital_twins_description",
 	Fields: ubx.FieldMap{
+		"Identity": ubx.FieldSpec{
+			WireName: "identity",
+			Kind:     "object",
+			Fields:   DigitalTwinsDescription_IdentityFields,
+		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   DigitalTwinsDescription_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

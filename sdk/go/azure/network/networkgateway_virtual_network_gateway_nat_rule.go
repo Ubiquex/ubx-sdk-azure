@@ -46,6 +46,8 @@ var NetworkgatewayVirtualNetworkGatewayNatRule_PropertiesFields = ubx.FieldMap{
 }
 
 type NetworkgatewayVirtualNetworkGatewayNatRuleConfig struct {
+	// Name of the resource.
+	Name any
 	// Parameters for VirtualNetworkGatewayNatRule.
 	Properties any
 }
@@ -53,13 +55,18 @@ type NetworkgatewayVirtualNetworkGatewayNatRuleConfig struct {
 type NetworkgatewayVirtualNetworkGatewayNatRuleAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Parameters for VirtualNetworkGatewayNatRule.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var NetworkgatewayVirtualNetworkGatewayNatRule = ubx.ResourceBinding{
 	WireType: "azure_network_networkgateway_virtual_network_gateway_nat_rule",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

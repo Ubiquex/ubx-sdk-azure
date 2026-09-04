@@ -22,22 +22,32 @@ var OpenapiLogAnalyticsQueryPack_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiLogAnalyticsQueryPackConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties that define a Log Analytics QueryPack resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiLogAnalyticsQueryPackAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties that define a Log Analytics QueryPack resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiLogAnalyticsQueryPack = ubx.ResourceBinding{
 	WireType: "azure_operationalinsights_openapi_log_analytics_query_pack",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiLogAnalyticsQueryPack_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

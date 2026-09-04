@@ -14,12 +14,14 @@ const OpenapiActionResponse_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiActionResponseConfig {
+  /** Etag of the azure resource */
+  etag?: string | Computed<string>;
   /** Action property bag. */
   properties?: OpenapiActionResponse_Properties | Computed<OpenapiActionResponse_Properties>;
 }
 
 export interface OpenapiActionResponseAttrs {
-  /** Etag of the action. */
+  /** Etag of the azure resource */
   etag: string;
   /** Action property bag. */
   properties: OpenapiActionResponse_Properties;
@@ -28,6 +30,7 @@ export interface OpenapiActionResponseAttrs {
 export const OpenapiActionResponse: ResourceBinding<OpenapiActionResponseConfig, OpenapiActionResponseAttrs> = {
   wireType: "azure_securityinsights_openapi_action_response",
   fields: {
+    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

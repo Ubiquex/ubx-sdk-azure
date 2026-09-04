@@ -188,22 +188,32 @@ var Profile_PropertiesFields = ubx.FieldMap{
 }
 
 type ProfileConfig struct {
+	// The Azure Region where the resource lives
+	Location any
 	// Class representing the Traffic Manager profile properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ProfileAttrs struct {
+	// The Azure Region where the resource lives
+	Location any
 	// Class representing the Traffic Manager profile properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var Profile = ubx.ResourceBinding{
 	WireType: "azure_trafficmanager_profile",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Profile_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

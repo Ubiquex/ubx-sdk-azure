@@ -81,6 +81,8 @@ type MachineScaleSetExtensionConfig struct {
 }
 
 type MachineScaleSetExtensionAttrs struct {
+	// Resource Id
+	Id any
 	// Resource name
 	Name any
 	// Describes the properties of a Virtual Machine Scale Set Extension.

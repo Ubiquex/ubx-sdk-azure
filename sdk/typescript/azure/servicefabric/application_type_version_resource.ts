@@ -10,6 +10,21 @@ export interface ApplicationTypeVersionResource_Properties {
   provisioningState?: string | Computed<string>;
 }
 
+export interface ApplicationTypeVersionResource_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC). */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const ApplicationTypeVersionResource_PropertiesFields: FieldMap = {
   appPackageUrl: "app_package_url",
   defaultParameterList: "default_parameter_list",
@@ -17,15 +32,33 @@ const ApplicationTypeVersionResource_PropertiesFields: FieldMap = {
 };
 
 export interface ApplicationTypeVersionResourceConfig {
+  /** It will be deprecated in New API, resource location depends on the parent resource. */
+  location?: string | Computed<string>;
   /** The properties of the application type version resource. */
   properties?: ApplicationTypeVersionResource_Properties | Computed<ApplicationTypeVersionResource_Properties>;
+  /** Azure resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   version: string | Computed<string>;
 }
 
 export interface ApplicationTypeVersionResourceAttrs {
+  /** Azure resource etag. */
+  etag: string;
+  /** Azure resource identifier. */
+  id: string;
+  /** It will be deprecated in New API, resource location depends on the parent resource. */
+  location: string;
+  /** Azure resource name. */
+  name: string;
   /** The properties of the application type version resource. */
   properties: ApplicationTypeVersionResource_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: ApplicationTypeVersionResource_SystemData;
+  /** Azure resource tags. */
+  tags: Record<string, string>;
+  /** Azure resource type. */
+  type: string;
   /** path parameter, not part of the API's own resource representation */
   version: string;
 }
@@ -33,11 +66,13 @@ export interface ApplicationTypeVersionResourceAttrs {
 export const ApplicationTypeVersionResource: ResourceBinding<ApplicationTypeVersionResourceConfig, ApplicationTypeVersionResourceAttrs> = {
   wireType: "azure_servicefabric_application_type_version_resource",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ApplicationTypeVersionResource_PropertiesFields,
     },
+    tags: "tags",
     version: "version",
   },
 };

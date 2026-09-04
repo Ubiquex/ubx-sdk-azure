@@ -37,24 +37,33 @@ var ClustersCluster_SkuFields = ubx.FieldMap{
 }
 
 type ClustersClusterConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The properties associated with a Stream Analytics cluster.
 	Properties any
 	// The SKU of the cluster. This determines the size/capacity of the cluster. Required on PUT (CreateOrUpdate) requests.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type ClustersClusterAttrs struct {
 	// The current entity tag for the cluster. This is an opaque string. You can use it to detect whether the resource has changed between requests. You can also use it in the If-Match or If-None-Match headers for write operations for optimistic concurrency.
 	Etag any
+	// The geo-location where the resource lives
+	Location any
 	// The properties associated with a Stream Analytics cluster.
 	Properties any
 	// The SKU of the cluster. This determines the size/capacity of the cluster. Required on PUT (CreateOrUpdate) requests.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var ClustersCluster = ubx.ResourceBinding{
 	WireType: "azure_streamanalytics_clusters_cluster",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -65,5 +74,6 @@ var ClustersCluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ClustersCluster_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

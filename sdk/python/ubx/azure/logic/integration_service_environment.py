@@ -217,19 +217,33 @@ _IntegrationServiceEnvironment_SkuFields = {
 class IntegrationServiceEnvironmentConfig:
     # Managed service identity properties.
     identity: Any = None
+    # The resource location.
+    location: Any = None
     # The integration service environment properties.
     properties: Any = None
     # The integration service environment sku.
     sku: Any = None
+    # The resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class IntegrationServiceEnvironmentAttrs:
+    # The resource id.
+    id: Any = None
     # Managed service identity properties.
     identity: Any = None
+    # The resource location.
+    location: Any = None
+    # Gets the resource name.
+    name: Any = None
     # The integration service environment properties.
     properties: Any = None
     # The integration service environment sku.
     sku: Any = None
+    # The resource tags.
+    tags: Any = None
+    # Gets the resource type.
+    type: Any = None
 
 IntegrationServiceEnvironment = ubx.ResourceBinding(
     wire_type="azure_logic_integration_service_environment",
@@ -239,6 +253,7 @@ IntegrationServiceEnvironment = ubx.ResourceBinding(
             kind="object",
             fields=_IntegrationServiceEnvironment_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -249,5 +264,6 @@ IntegrationServiceEnvironment = ubx.ResourceBinding(
             kind="object",
             fields=_IntegrationServiceEnvironment_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

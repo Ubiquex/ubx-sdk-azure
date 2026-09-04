@@ -55,8 +55,6 @@ _ApimprivatelinkPrivateEndpointConnection2_PropertiesFields = {
 
 @dataclasses.dataclass
 class ApimprivatelinkPrivateEndpointConnection2Config:
-    # Private Endpoint Connection Resource Id.
-    id: Any = None
     # The connection state of the private endpoint connection.
     properties: Any = None
 
@@ -64,13 +62,16 @@ class ApimprivatelinkPrivateEndpointConnection2Config:
 class ApimprivatelinkPrivateEndpointConnection2Attrs:
     # Private Endpoint Connection Resource Id.
     id: Any = None
+    # The name of the resource
+    name: Any = None
     # The connection state of the private endpoint connection.
     properties: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 ApimprivatelinkPrivateEndpointConnection2 = ubx.ResourceBinding(
     wire_type="azure_apimanagement_apimprivatelink_private_endpoint_connection_2",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

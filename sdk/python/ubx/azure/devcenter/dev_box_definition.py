@@ -61,21 +61,31 @@ _DevBoxDefinition_PropertiesFields = {
 
 @dataclasses.dataclass
 class DevBoxDefinitionConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a Dev Box definition.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class DevBoxDefinitionAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a Dev Box definition.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 DevBoxDefinition = ubx.ResourceBinding(
     wire_type="azure_devcenter_dev_box_definition",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_DevBoxDefinition_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

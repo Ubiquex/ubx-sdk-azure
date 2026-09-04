@@ -93,15 +93,23 @@ const Image_PropertiesFields: FieldMap = {
 export interface ImageConfig {
   /** The complex type of the extended location. */
   extendedLocation?: Image_ExtendedLocation | Computed<Image_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describes the properties of an Image. */
   properties?: Image_Properties | Computed<Image_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ImageAttrs {
   /** The complex type of the extended location. */
   extendedLocation: Image_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describes the properties of an Image. */
   properties: Image_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Image: ResourceBinding<ImageConfig, ImageAttrs> = {
@@ -112,10 +120,12 @@ export const Image: ResourceBinding<ImageConfig, ImageAttrs> = {
       kind: "object",
       fields: Image_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Image_PropertiesFields,
     },
+    tags: "tags",
   },
 };

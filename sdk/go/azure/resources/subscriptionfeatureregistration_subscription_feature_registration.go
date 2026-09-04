@@ -81,7 +81,13 @@ type SubscriptionfeatureregistrationSubscriptionFeatureRegistrationConfig struct
 }
 
 type SubscriptionfeatureregistrationSubscriptionFeatureRegistrationAttrs struct {
+	// Azure resource Id.
+	Id any
+	// Azure resource name.
+	Name       any
 	Properties any
+	// Azure resource type.
+	Type any
 }
 
 var SubscriptionfeatureregistrationSubscriptionFeatureRegistration = ubx.ResourceBinding{

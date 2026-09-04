@@ -278,19 +278,27 @@ var Service_SkuFields = ubx.FieldMap{
 type ServiceConfig struct {
 	// Details about the search service identity. A null value indicates that the search service has no identity assigned.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the search service.
 	Properties any
 	// Defines the SKU of a search service, which determines billing rate and capacity limits.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type ServiceAttrs struct {
 	// Details about the search service identity. A null value indicates that the search service has no identity assigned.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the search service.
 	Properties any
 	// Defines the SKU of a search service, which determines billing rate and capacity limits.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var Service = ubx.ResourceBinding{
@@ -301,6 +309,7 @@ var Service = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Service_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -311,5 +320,6 @@ var Service = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Service_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

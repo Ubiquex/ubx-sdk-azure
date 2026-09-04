@@ -207,21 +207,37 @@ _ContainerserviceContainerService_PropertiesFields = {
 
 @dataclasses.dataclass
 class ContainerserviceContainerServiceConfig:
+    # Resource location
+    location: Any = None
     # Properties of the container service.
     properties: Any = None
+    # Resource tags
+    tags: Any = None
 
 @dataclasses.dataclass
 class ContainerserviceContainerServiceAttrs:
+    # Resource Id
+    id: Any = None
+    # Resource location
+    location: Any = None
+    # Resource name
+    name: Any = None
     # Properties of the container service.
     properties: Any = None
+    # Resource tags
+    tags: Any = None
+    # Resource type
+    type: Any = None
 
 ContainerserviceContainerService = ubx.ResourceBinding(
     wire_type="azure_compute_containerservice_container_service",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ContainerserviceContainerService_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

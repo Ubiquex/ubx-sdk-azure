@@ -300,21 +300,29 @@ const Namespace_SkuFields: FieldMap = {
 export interface NamespaceConfig {
   /** The identity information for the resource. */
   identity?: Namespace_Identity | Computed<Namespace_Identity>;
+  /** Location of the resource. */
+  location: string | Computed<string>;
   /** Properties of the namespace resource. */
   properties?: Namespace_Properties | Computed<Namespace_Properties>;
   /** Represents available Sku pricing tiers. */
   sku?: Namespace_Sku | Computed<Namespace_Sku>;
+  /** Tags of the resource. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NamespaceAttrs {
   /** The identity information for the resource. */
   identity: Namespace_Identity;
+  /** Location of the resource. */
+  location: string;
   /** Properties of the namespace resource. */
   properties: Namespace_Properties;
   /** Represents available Sku pricing tiers. */
   sku: Namespace_Sku;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: Namespace_SystemData;
+  /** Tags of the resource. */
+  tags: Record<string, string>;
 }
 
 export const Namespace: ResourceBinding<NamespaceConfig, NamespaceAttrs> = {
@@ -325,6 +333,7 @@ export const Namespace: ResourceBinding<NamespaceConfig, NamespaceAttrs> = {
       kind: "object",
       fields: Namespace_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -335,5 +344,6 @@ export const Namespace: ResourceBinding<NamespaceConfig, NamespaceAttrs> = {
       kind: "object",
       fields: Namespace_SkuFields,
     },
+    tags: "tags",
   },
 };

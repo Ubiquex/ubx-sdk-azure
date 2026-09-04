@@ -32,6 +32,21 @@ class OucontainerOuContainer_Properties:
     tenant_id: Any = None
 
 @dataclasses.dataclass
+class OucontainerOuContainer_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
 class OucontainerOuContainerConfig:
     # The account name
     account_name: Any = None
@@ -44,12 +59,26 @@ class OucontainerOuContainerConfig:
 class OucontainerOuContainerAttrs:
     # The account name
     account_name: Any = None
+    # Resource etag
+    etag: Any = None
+    # Resource Id
+    id: Any = None
+    # Resource location
+    location: Any = None
+    # Resource name
+    name: Any = None
     # The account password
     password: Any = None
     # Properties of the OuContainer.
     properties: Any = None
     # The account spn
     spn: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Resource tags
+    tags: Any = None
+    # Resource type
+    type: Any = None
 
 OucontainerOuContainer = ubx.ResourceBinding(
     wire_type="azure_domainservices_oucontainer_ou_container",

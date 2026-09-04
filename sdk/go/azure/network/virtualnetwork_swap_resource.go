@@ -18,8 +18,14 @@ type VirtualnetworkSwapResourceConfig struct {
 }
 
 type VirtualnetworkSwapResourceAttrs struct {
+	// Resource ID.
+	Id any
+	// Resource name.
+	Name any
 	// Swap resource properties
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkSwapResource = ubx.ResourceBinding{

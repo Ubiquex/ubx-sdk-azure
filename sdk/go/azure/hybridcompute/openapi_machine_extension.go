@@ -87,22 +87,32 @@ var OpenapiMachineExtension_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiMachineExtensionConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Machine Extension.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiMachineExtensionAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Machine Extension.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiMachineExtension = ubx.ResourceBinding{
 	WireType: "azure_hybridcompute_openapi_machine_extension",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiMachineExtension_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

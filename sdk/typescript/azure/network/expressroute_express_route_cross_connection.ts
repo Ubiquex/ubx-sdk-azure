@@ -177,24 +177,43 @@ const ExpressrouteExpressRouteCrossConnection_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteExpressRouteCrossConnectionConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties of ExpressRouteCrossConnection. */
   properties?: ExpressrouteExpressRouteCrossConnection_Properties | Computed<ExpressrouteExpressRouteCrossConnection_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ExpressrouteExpressRouteCrossConnectionAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of ExpressRouteCrossConnection. */
   properties: ExpressrouteExpressRouteCrossConnection_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const ExpressrouteExpressRouteCrossConnection: ResourceBinding<ExpressrouteExpressRouteCrossConnectionConfig, ExpressrouteExpressRouteCrossConnectionAttrs> = {
   wireType: "azure_network_expressroute_express_route_cross_connection",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ExpressrouteExpressRouteCrossConnection_PropertiesFields,
     },
+    tags: "tags",
   },
 };

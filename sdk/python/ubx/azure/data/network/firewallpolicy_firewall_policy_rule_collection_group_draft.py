@@ -29,9 +29,13 @@ class FirewallpolicyFirewallPolicyRuleCollectionGroupDraftConfig:
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicyRuleCollectionGroupDraftAttrs:
     firewall_policy_name: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the rule collection group draft.
     properties: Any = None
     rule_collection_group_name: Any = None
+    # Resource type.
+    type: Any = None
 
 FirewallpolicyFirewallPolicyRuleCollectionGroupDraft = ubx.DataSourceBinding(
     wire_type="azure_network_firewallpolicy_firewall_policy_rule_collection_group_draft",

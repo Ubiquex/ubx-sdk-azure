@@ -204,15 +204,23 @@ const MonitorResource_PropertiesFields: FieldMap = {
 export interface MonitorResourceConfig {
   /** The properties of the managed service identities assigned to this resource. */
   identity?: MonitorResource_Identity | Computed<MonitorResource_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties specific to the monitor resource. */
   properties: MonitorResource_Properties | Computed<MonitorResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MonitorResourceAttrs {
   /** The properties of the managed service identities assigned to this resource. */
   identity: MonitorResource_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties specific to the monitor resource. */
   properties: MonitorResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const MonitorResource: ResourceBinding<MonitorResourceConfig, MonitorResourceAttrs> = {
@@ -223,10 +231,12 @@ export const MonitorResource: ResourceBinding<MonitorResourceConfig, MonitorReso
       kind: "object",
       fields: MonitorResource_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: MonitorResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

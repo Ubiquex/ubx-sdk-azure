@@ -33,15 +33,23 @@ var AvailabilitySet_PropertiesFields = ubx.FieldMap{
 type AvailabilitySetConfig struct {
 	// The extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type AvailabilitySetAttrs struct {
 	// The extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var AvailabilitySet = ubx.ResourceBinding{
@@ -52,10 +60,12 @@ var AvailabilitySet = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   AvailabilitySet_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   AvailabilitySet_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

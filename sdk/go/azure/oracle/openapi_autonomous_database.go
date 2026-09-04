@@ -472,15 +472,23 @@ var OpenapiAutonomousDatabase_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiAutonomousDatabaseConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Autonomous Database base resource model.
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Autonomousdatabasename any
 }
 
 type OpenapiAutonomousDatabaseAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Autonomous Database base resource model.
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Autonomousdatabasename any
 }
@@ -488,11 +496,13 @@ type OpenapiAutonomousDatabaseAttrs struct {
 var OpenapiAutonomousDatabase = ubx.ResourceBinding{
 	WireType: "azure_oracle_openapi_autonomous_database",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiAutonomousDatabase_PropertiesFields,
 		},
+		"Tags":                   ubx.FieldSpec{WireName: "tags"},
 		"Autonomousdatabasename": ubx.FieldSpec{WireName: "autonomousdatabasename"},
 	},
 }

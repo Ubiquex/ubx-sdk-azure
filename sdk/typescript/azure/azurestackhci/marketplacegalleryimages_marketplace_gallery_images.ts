@@ -172,15 +172,23 @@ const MarketplacegalleryimagesMarketplaceGalleryImages_PropertiesFields: FieldMa
 export interface MarketplacegalleryimagesMarketplaceGalleryImagesConfig {
   /** The complex type of the extended location. */
   extendedLocation?: MarketplacegalleryimagesMarketplaceGalleryImages_ExtendedLocation | Computed<MarketplacegalleryimagesMarketplaceGalleryImages_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties under the marketplace gallery image resource */
   properties?: MarketplacegalleryimagesMarketplaceGalleryImages_Properties | Computed<MarketplacegalleryimagesMarketplaceGalleryImages_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MarketplacegalleryimagesMarketplaceGalleryImagesAttrs {
   /** The complex type of the extended location. */
   extendedLocation: MarketplacegalleryimagesMarketplaceGalleryImages_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties under the marketplace gallery image resource */
   properties: MarketplacegalleryimagesMarketplaceGalleryImages_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const MarketplacegalleryimagesMarketplaceGalleryImages: ResourceBinding<MarketplacegalleryimagesMarketplaceGalleryImagesConfig, MarketplacegalleryimagesMarketplaceGalleryImagesAttrs> = {
@@ -191,10 +199,12 @@ export const MarketplacegalleryimagesMarketplaceGalleryImages: ResourceBinding<M
       kind: "object",
       fields: MarketplacegalleryimagesMarketplaceGalleryImages_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: MarketplacegalleryimagesMarketplaceGalleryImages_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -581,22 +581,36 @@ export interface IotHubDescriptionConfig {
   /** The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention. */
   etag?: string | Computed<string>;
   identity?: IotHubDescription_Identity | Computed<IotHubDescription_Identity>;
+  /** The resource location. */
+  location: string | Computed<string>;
   /** The properties of an IoT hub. */
   properties?: IotHubDescription_Properties | Computed<IotHubDescription_Properties>;
   /** Information about the SKU of the IoT hub. */
   sku: IotHubDescription_Sku | Computed<IotHubDescription_Sku>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface IotHubDescriptionAttrs {
   /** The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention. */
   etag: string;
+  /** The resource identifier. */
+  id: string;
   identity: IotHubDescription_Identity;
+  /** The resource location. */
+  location: string;
+  /** The resource name. */
+  name: string;
   /** The properties of an IoT hub. */
   properties: IotHubDescription_Properties;
   /** Information about the SKU of the IoT hub. */
   sku: IotHubDescription_Sku;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: IotHubDescription_SystemData;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** The resource type. */
+  type: string;
 }
 
 export const IotHubDescription: ResourceBinding<IotHubDescriptionConfig, IotHubDescriptionAttrs> = {
@@ -608,6 +622,7 @@ export const IotHubDescription: ResourceBinding<IotHubDescriptionConfig, IotHubD
       kind: "object",
       fields: IotHubDescription_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -618,5 +633,6 @@ export const IotHubDescription: ResourceBinding<IotHubDescriptionConfig, IotHubD
       kind: "object",
       fields: IotHubDescription_SkuFields,
     },
+    tags: "tags",
   },
 };

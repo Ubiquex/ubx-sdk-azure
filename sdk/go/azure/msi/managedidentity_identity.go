@@ -22,22 +22,32 @@ var ManagedidentityIdentity_PropertiesFields = ubx.FieldMap{
 }
 
 type ManagedidentityIdentityConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The properties associated with the user assigned identity.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ManagedidentityIdentityAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The properties associated with the user assigned identity.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var ManagedidentityIdentity = ubx.ResourceBinding{
 	WireType: "azure_msi_managedidentity_identity",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ManagedidentityIdentity_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -6,6 +6,21 @@ export interface VdiSchedule_Properties {
   provisioningState?: string | Computed<string>;
 }
 
+export interface VdiSchedule_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const VdiSchedule_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
@@ -16,8 +31,16 @@ export interface VdiScheduleConfig {
 }
 
 export interface VdiScheduleAttrs {
+  /** Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}" */
+  id: string;
+  /** The name of the resource */
+  name: string;
   /** The Schedule properties defining when and what to execute. */
   properties: VdiSchedule_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: VdiSchedule_SystemData;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const VdiSchedule: ResourceBinding<VdiScheduleConfig, VdiScheduleAttrs> = {

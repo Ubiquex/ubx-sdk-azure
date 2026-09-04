@@ -85,22 +85,32 @@ const OpenapiMachineExtension_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiMachineExtensionConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describes the properties of a Machine Extension. */
   properties?: OpenapiMachineExtension_Properties | Computed<OpenapiMachineExtension_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiMachineExtensionAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describes the properties of a Machine Extension. */
   properties: OpenapiMachineExtension_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiMachineExtension: ResourceBinding<OpenapiMachineExtensionConfig, OpenapiMachineExtensionAttrs> = {
   wireType: "azure_hybridcompute_openapi_machine_extension",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiMachineExtension_PropertiesFields,
     },
+    tags: "tags",
   },
 };

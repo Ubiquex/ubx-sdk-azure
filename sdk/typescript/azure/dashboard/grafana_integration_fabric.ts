@@ -19,20 +19,30 @@ const GrafanaIntegrationFabric_PropertiesFields: FieldMap = {
 };
 
 export interface GrafanaIntegrationFabricConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   properties?: GrafanaIntegrationFabric_Properties | Computed<GrafanaIntegrationFabric_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface GrafanaIntegrationFabricAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   properties: GrafanaIntegrationFabric_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const GrafanaIntegrationFabric: ResourceBinding<GrafanaIntegrationFabricConfig, GrafanaIntegrationFabricAttrs> = {
   wireType: "azure_dashboard_grafana_integration_fabric",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: GrafanaIntegrationFabric_PropertiesFields,
     },
+    tags: "tags",
   },
 };

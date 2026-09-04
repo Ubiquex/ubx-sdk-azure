@@ -19,22 +19,32 @@ var VirtualclustersVirtualCluster_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualclustersVirtualClusterConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a virtual cluster.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualclustersVirtualClusterAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a virtual cluster.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var VirtualclustersVirtualCluster = ubx.ResourceBinding{
 	WireType: "azure_sql_virtualclusters_virtual_cluster",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualclustersVirtualCluster_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -26,6 +26,21 @@ type ProjectEnvironmentType_Properties struct {
 	ProvisioningState any
 }
 
+type ProjectEnvironmentType_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var ProjectEnvironmentType_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
 	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
 	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
@@ -59,14 +74,22 @@ type ProjectEnvironmentTypeConfig struct {
 }
 
 type ProjectEnvironmentTypeAttrs struct {
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
 	// The geo-location for the environment type
 	Location any
+	// The name of the resource
+	Name any
 	// Properties of a project environment type.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
 	// Resource tags.
 	Tags any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var ProjectEnvironmentType = ubx.ResourceBinding{

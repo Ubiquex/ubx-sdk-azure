@@ -316,22 +316,32 @@ const OpenapiMigration_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiMigrationConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Migration. */
   properties?: OpenapiMigration_Properties | Computed<OpenapiMigration_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiMigrationAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Migration. */
   properties: OpenapiMigration_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiMigration: ResourceBinding<OpenapiMigrationConfig, OpenapiMigrationAttrs> = {
   wireType: "azure_postgresql_openapi_migration",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiMigration_PropertiesFields,
     },
+    tags: "tags",
   },
 };

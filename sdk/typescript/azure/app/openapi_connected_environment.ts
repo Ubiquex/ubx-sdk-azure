@@ -90,15 +90,23 @@ const OpenapiConnectedEnvironment_PropertiesFields: FieldMap = {
 export interface OpenapiConnectedEnvironmentConfig {
   /** The complex type of the extended location. */
   extendedLocation?: OpenapiConnectedEnvironment_ExtendedLocation | Computed<OpenapiConnectedEnvironment_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** ConnectedEnvironment resource specific properties */
   properties?: OpenapiConnectedEnvironment_Properties | Computed<OpenapiConnectedEnvironment_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiConnectedEnvironmentAttrs {
   /** The complex type of the extended location. */
   extendedLocation: OpenapiConnectedEnvironment_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** ConnectedEnvironment resource specific properties */
   properties: OpenapiConnectedEnvironment_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiConnectedEnvironment: ResourceBinding<OpenapiConnectedEnvironmentConfig, OpenapiConnectedEnvironmentAttrs> = {
@@ -109,10 +117,12 @@ export const OpenapiConnectedEnvironment: ResourceBinding<OpenapiConnectedEnviro
       kind: "object",
       fields: OpenapiConnectedEnvironment_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiConnectedEnvironment_PropertiesFields,
     },
+    tags: "tags",
   },
 };

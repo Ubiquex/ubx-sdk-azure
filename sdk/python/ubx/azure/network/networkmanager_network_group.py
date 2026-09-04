@@ -46,10 +46,18 @@ class NetworkmanagerNetworkGroupConfig:
 
 @dataclasses.dataclass
 class NetworkmanagerNetworkGroupAttrs:
+    # A unique read-only string that changes whenever the resource is updated.
+    etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of network group
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource type.
+    type: Any = None
 
 NetworkmanagerNetworkGroup = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_network_group",

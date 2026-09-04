@@ -3088,23 +3088,42 @@ _VirtualnetworkapplianceVirtualNetworkAppliance_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkapplianceVirtualNetworkApplianceConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # VirtualNetworkAppliance properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkapplianceVirtualNetworkApplianceAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # VirtualNetworkAppliance properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkapplianceVirtualNetworkAppliance = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetworkappliance_virtual_network_appliance",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualnetworkapplianceVirtualNetworkAppliance_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

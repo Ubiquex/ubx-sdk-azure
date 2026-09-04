@@ -238,6 +238,21 @@ type Cluster_Properties struct {
 	WaveUpgradePaused any
 }
 
+type Cluster_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC).
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var Cluster_Properties_ApplicationTypeVersionsCleanupPolicyFields = ubx.FieldMap{
 	"MaxUnusedVersionsToKeep": ubx.FieldSpec{WireName: "max_unused_versions_to_keep"},
 }
@@ -520,22 +535,42 @@ var Cluster_PropertiesFields = ubx.FieldMap{
 }
 
 type ClusterConfig struct {
+	// Azure resource location.
+	Location any
 	// Describes the cluster resource properties.
 	Properties any
+	// Azure resource tags.
+	Tags any
 }
 
 type ClusterAttrs struct {
+	// Azure resource etag.
+	Etag any
+	// Azure resource identifier.
+	Id any
+	// Azure resource location.
+	Location any
+	// Azure resource name.
+	Name any
 	// Describes the cluster resource properties.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Azure resource tags.
+	Tags any
+	// Azure resource type.
+	Type any
 }
 
 var Cluster = ubx.ResourceBinding{
 	WireType: "azure_servicefabric_cluster",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Cluster_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

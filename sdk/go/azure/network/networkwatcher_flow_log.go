@@ -142,33 +142,52 @@ var NetworkwatcherFlowLog_PropertiesFields = ubx.FieldMap{
 }
 
 type NetworkwatcherFlowLogConfig struct {
+	// Resource ID.
+	Id any
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
 	// Parameters that define the configuration of flow log.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type NetworkwatcherFlowLogAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Parameters that define the configuration of flow log.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var NetworkwatcherFlowLog = ubx.ResourceBinding{
 	WireType: "azure_network_networkwatcher_flow_log",
 	Fields: ubx.FieldMap{
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
 			Kind:     "object",
 			Fields:   NetworkwatcherFlowLog_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   NetworkwatcherFlowLog_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

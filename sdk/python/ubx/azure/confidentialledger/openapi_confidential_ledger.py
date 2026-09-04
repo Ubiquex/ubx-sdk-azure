@@ -101,21 +101,31 @@ _OpenapiConfidentialLedger_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiConfidentialLedgerConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Additional Confidential Ledger properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiConfidentialLedgerAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Additional Confidential Ledger properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiConfidentialLedger = ubx.ResourceBinding(
     wire_type="azure_confidentialledger_openapi_confidential_ledger",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiConfidentialLedger_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

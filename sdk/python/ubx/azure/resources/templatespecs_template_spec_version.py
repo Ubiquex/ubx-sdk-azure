@@ -24,6 +24,21 @@ class TemplatespecsTemplateSpecVersion_Properties:
     # The Azure Resource Manager template UI definition content.
     ui_form_definition: Any = None
 
+@dataclasses.dataclass
+class TemplatespecsTemplateSpecVersion_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _TemplatespecsTemplateSpecVersion_Properties_LinkedTemplatesFields = {
     "path": ubx.FieldSpec(wire_name="path"),
     "template": ubx.FieldSpec(wire_name="template"),
@@ -52,12 +67,20 @@ class TemplatespecsTemplateSpecVersionConfig:
 
 @dataclasses.dataclass
 class TemplatespecsTemplateSpecVersionAttrs:
+    # String Id used to locate any resource on Azure.
+    id: Any = None
     # The location of the Template Spec Version. It must match the location of the parent Template Spec.
     location: Any = None
+    # Name of this resource.
+    name: Any = None
     # Template Spec Version properties.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
     # Resource tags.
     tags: Any = None
+    # Type of this resource.
+    type: Any = None
 
 TemplatespecsTemplateSpecVersion = ubx.ResourceBinding(
     wire_type="azure_resources_templatespecs_template_spec_version",

@@ -218,10 +218,16 @@ type SubscriptionConfig struct {
 }
 
 type SubscriptionAttrs struct {
+	// Fully qualified identifier of the resource.
+	Id any
+	// Name of the resource.
+	Name any
 	// Properties of the event subscription.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Type of the resource.
+	Type any
 }
 
 var Subscription = ubx.ResourceBinding{

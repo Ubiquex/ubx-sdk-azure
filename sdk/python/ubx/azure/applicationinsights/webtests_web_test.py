@@ -74,24 +74,40 @@ _WebtestsWebTest_PropertiesFields = {
 class WebtestsWebTestConfig:
     # The kind of web test that this web test watches. Choices are ping and multistep.
     kind: Any = None
+    # Resource location
+    location: Any = None
     # Metadata describing a web test for an Azure resource.
     properties: Any = None
+    # Resource tags
+    tags: Any = None
 
 @dataclasses.dataclass
 class WebtestsWebTestAttrs:
+    # Azure resource Id
+    id: Any = None
     # The kind of web test that this web test watches. Choices are ping and multistep.
     kind: Any = None
+    # Resource location
+    location: Any = None
+    # Azure resource name
+    name: Any = None
     # Metadata describing a web test for an Azure resource.
     properties: Any = None
+    # Resource tags
+    tags: Any = None
+    # Azure resource type
+    type: Any = None
 
 WebtestsWebTest = ubx.ResourceBinding(
     wire_type="azure_applicationinsights_webtests_web_test",
     fields={
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_WebtestsWebTest_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

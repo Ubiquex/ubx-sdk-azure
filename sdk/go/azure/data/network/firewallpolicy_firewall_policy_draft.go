@@ -133,7 +133,17 @@ type FirewallpolicyFirewallPolicyDraftConfig struct {
 
 type FirewallpolicyFirewallPolicyDraftAttrs struct {
 	FirewallPolicyName any
-	Properties         any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name       any
+	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var FirewallpolicyFirewallPolicyDraft = ubx.DataSourceBinding{

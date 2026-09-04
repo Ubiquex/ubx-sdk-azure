@@ -33,22 +33,32 @@ const OpenapiRuntimeEnvironment_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiRuntimeEnvironmentConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Runtime Environment properties. */
   properties?: OpenapiRuntimeEnvironment_Properties | Computed<OpenapiRuntimeEnvironment_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiRuntimeEnvironmentAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Runtime Environment properties. */
   properties: OpenapiRuntimeEnvironment_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiRuntimeEnvironment: ResourceBinding<OpenapiRuntimeEnvironmentConfig, OpenapiRuntimeEnvironmentAttrs> = {
   wireType: "azure_automation_openapi_runtime_environment",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiRuntimeEnvironment_PropertiesFields,
     },
+    tags: "tags",
   },
 };

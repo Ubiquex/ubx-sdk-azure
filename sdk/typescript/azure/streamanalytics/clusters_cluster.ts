@@ -35,24 +35,33 @@ const ClustersCluster_SkuFields: FieldMap = {
 };
 
 export interface ClustersClusterConfig {
+  /** The geo-location where the resource lives */
+  location?: string | Computed<string>;
   /** The properties associated with a Stream Analytics cluster. */
   properties?: ClustersCluster_Properties | Computed<ClustersCluster_Properties>;
   /** The SKU of the cluster. This determines the size/capacity of the cluster. Required on PUT (CreateOrUpdate) requests. */
   sku?: ClustersCluster_Sku | Computed<ClustersCluster_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ClustersClusterAttrs {
   /** The current entity tag for the cluster. This is an opaque string. You can use it to detect whether the resource has changed between requests. You can also use it in the If-Match or If-None-Match headers for write operations for optimistic concurrency. */
   etag: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** The properties associated with a Stream Analytics cluster. */
   properties: ClustersCluster_Properties;
   /** The SKU of the cluster. This determines the size/capacity of the cluster. Required on PUT (CreateOrUpdate) requests. */
   sku: ClustersCluster_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ClustersCluster: ResourceBinding<ClustersClusterConfig, ClustersClusterAttrs> = {
   wireType: "azure_streamanalytics_clusters_cluster",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -63,5 +72,6 @@ export const ClustersCluster: ResourceBinding<ClustersClusterConfig, ClustersClu
       kind: "object",
       fields: ClustersCluster_SkuFields,
     },
+    tags: "tags",
   },
 };

@@ -165,17 +165,25 @@ const Account_PropertiesFields: FieldMap = {
 export interface AccountConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: Account_Identity | Computed<Account_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Azure Video Indexer account properties */
   properties?: Account_Properties | Computed<Account_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface AccountAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: Account_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Azure Video Indexer account properties */
   properties: Account_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: Account_SystemData;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Account: ResourceBinding<AccountConfig, AccountAttrs> = {
@@ -186,10 +194,12 @@ export const Account: ResourceBinding<AccountConfig, AccountAttrs> = {
       kind: "object",
       fields: Account_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Account_PropertiesFields,
     },
+    tags: "tags",
   },
 };

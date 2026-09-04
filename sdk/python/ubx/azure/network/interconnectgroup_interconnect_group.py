@@ -94,23 +94,42 @@ _InterconnectgroupInterconnectGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class InterconnectgroupInterconnectGroupConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Interconnect group properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class InterconnectgroupInterconnectGroupAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Interconnect group properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 InterconnectgroupInterconnectGroup = ubx.ResourceBinding(
     wire_type="azure_network_interconnectgroup_interconnect_group",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_InterconnectgroupInterconnectGroup_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

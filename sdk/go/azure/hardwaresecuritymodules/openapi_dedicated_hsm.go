@@ -81,10 +81,14 @@ var OpenapiDedicatedHsm_SkuFields = ubx.FieldMap{
 }
 
 type OpenapiDedicatedHsmConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the dedicated hsm
 	Properties any
 	// SKU of the dedicated HSM
 	Sku any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 	// path parameter, not part of the API's own resource representation
@@ -92,10 +96,14 @@ type OpenapiDedicatedHsmConfig struct {
 }
 
 type OpenapiDedicatedHsmAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the dedicated hsm
 	Properties any
 	// SKU of the dedicated HSM
 	Sku any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 	// path parameter, not part of the API's own resource representation
@@ -105,6 +113,7 @@ type OpenapiDedicatedHsmAttrs struct {
 var OpenapiDedicatedHsm = ubx.ResourceBinding{
 	WireType: "azure_hardwaresecuritymodules_openapi_dedicated_hsm",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -115,6 +124,7 @@ var OpenapiDedicatedHsm = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiDedicatedHsm_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 		"Name":  ubx.FieldSpec{WireName: "name"},
 	},

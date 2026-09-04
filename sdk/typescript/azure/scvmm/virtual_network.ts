@@ -37,15 +37,23 @@ const VirtualNetwork_PropertiesFields: FieldMap = {
 export interface VirtualNetworkConfig {
   /** The extended location. */
   extendedLocation: VirtualNetwork_ExtendedLocation | Computed<VirtualNetwork_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Defines the resource properties. */
   properties?: VirtualNetwork_Properties | Computed<VirtualNetwork_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualNetworkAttrs {
   /** The extended location. */
   extendedLocation: VirtualNetwork_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Defines the resource properties. */
   properties: VirtualNetwork_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const VirtualNetwork: ResourceBinding<VirtualNetworkConfig, VirtualNetworkAttrs> = {
@@ -56,10 +64,12 @@ export const VirtualNetwork: ResourceBinding<VirtualNetworkConfig, VirtualNetwor
       kind: "object",
       fields: VirtualNetwork_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualNetwork_PropertiesFields,
     },
+    tags: "tags",
   },
 };

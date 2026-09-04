@@ -26,21 +26,31 @@ _VolumeQuotaRule_PropertiesFields = {
 
 @dataclasses.dataclass
 class VolumeQuotaRuleConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Volume Quota Rule properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VolumeQuotaRuleAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Volume Quota Rule properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 VolumeQuotaRule = ubx.ResourceBinding(
     wire_type="azure_netapp_volume_quota_rule",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VolumeQuotaRule_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

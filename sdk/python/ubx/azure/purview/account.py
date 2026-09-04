@@ -7,6 +7,22 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class Account_Identity_UserAssignedIdentities:
+    client_id: Any = None
+    principal_id: Any = None
+
+@dataclasses.dataclass
+class Account_Identity:
+    # Service principal object Id
+    principal_id: Any = None
+    # Tenant Id
+    tenant_id: Any = None
+    # Identity Type
+    type: Any = None
+    # User Assigned Identities
+    user_assigned_identities: Any = None
+
+@dataclasses.dataclass
 class Account_Properties_AccountStatus_ErrorDetails_Details_Details:
     pass
 
@@ -101,6 +117,31 @@ class Account_Properties:
 class Account_Sku:
     capacity: Any = None
     name: Any = None
+
+@dataclasses.dataclass
+class Account_SystemData:
+    created_at: Any = None
+    created_by: Any = None
+    created_by_type: Any = None
+    last_modified_at: Any = None
+    last_modified_by: Any = None
+    last_modified_by_type: Any = None
+
+_Account_Identity_UserAssignedIdentitiesFields = {
+    "client_id": ubx.FieldSpec(wire_name="client_id"),
+    "principal_id": ubx.FieldSpec(wire_name="principal_id"),
+}
+
+_Account_IdentityFields = {
+    "principal_id": ubx.FieldSpec(wire_name="principal_id"),
+    "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
+    "type": ubx.FieldSpec(wire_name="type"),
+    "user_assigned_identities": ubx.FieldSpec(
+        wire_name="user_assigned_identities",
+        kind="map",
+        fields=_Account_Identity_UserAssignedIdentitiesFields,
+    ),
+}
 
 _Account_Properties_AccountStatus_ErrorDetails_Details_DetailsFields = {
 }
@@ -223,23 +264,50 @@ _Account_PropertiesFields = {
 
 @dataclasses.dataclass
 class AccountConfig:
+    # The Managed Identity of the resource
+    identity: Any = None
+    # Gets or sets the location.
+    location: Any = None
     # The account properties
     properties: Any = None
+    # Tags on the azure resource.
+    tags: Any = None
 
 @dataclasses.dataclass
 class AccountAttrs:
+    # Gets or sets the identifier.
+    id: Any = None
+    # The Managed Identity of the resource
+    identity: Any = None
+    # Gets or sets the location.
+    location: Any = None
+    # Gets or sets the name.
+    name: Any = None
     # The account properties
     properties: Any = None
     # Gets or sets the Sku.
     sku: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Tags on the azure resource.
+    tags: Any = None
+    # Gets or sets the type.
+    type: Any = None
 
 Account = ubx.ResourceBinding(
     wire_type="azure_purview_account",
     fields={
+        "identity": ubx.FieldSpec(
+            wire_name="identity",
+            kind="object",
+            fields=_Account_IdentityFields,
+        ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Account_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

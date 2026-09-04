@@ -90,8 +90,12 @@ class UpgradeStatusInfoConfig:
 
 @dataclasses.dataclass
 class UpgradeStatusInfoAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # The status of the latest virtual machine scale set rolling upgrade.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     vm_scale_set_name: Any = None
 
 UpgradeStatusInfo = ubx.DataSourceBinding(

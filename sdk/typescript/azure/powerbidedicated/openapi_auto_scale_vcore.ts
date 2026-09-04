@@ -29,22 +29,31 @@ const OpenapiAutoScaleVcore_SkuFields: FieldMap = {
 };
 
 export interface OpenapiAutoScaleVcoreConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of an auto scale v-core resource. */
   properties?: OpenapiAutoScaleVcore_Properties | Computed<OpenapiAutoScaleVcore_Properties>;
   /** Represents the SKU name and Azure pricing tier for auto scale v-core resource. */
   sku: OpenapiAutoScaleVcore_Sku | Computed<OpenapiAutoScaleVcore_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiAutoScaleVcoreAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of an auto scale v-core resource. */
   properties: OpenapiAutoScaleVcore_Properties;
   /** Represents the SKU name and Azure pricing tier for auto scale v-core resource. */
   sku: OpenapiAutoScaleVcore_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiAutoScaleVcore: ResourceBinding<OpenapiAutoScaleVcoreConfig, OpenapiAutoScaleVcoreAttrs> = {
   wireType: "azure_powerbidedicated_openapi_auto_scale_vcore",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -55,5 +64,6 @@ export const OpenapiAutoScaleVcore: ResourceBinding<OpenapiAutoScaleVcoreConfig,
       kind: "object",
       fields: OpenapiAutoScaleVcore_SkuFields,
     },
+    tags: "tags",
   },
 };

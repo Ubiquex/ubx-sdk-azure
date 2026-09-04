@@ -11,22 +11,32 @@ const PublicKeyResource_PropertiesFields: FieldMap = {
 };
 
 export interface PublicKeyResourceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the SSH public key. */
   properties?: PublicKeyResource_Properties | Computed<PublicKeyResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface PublicKeyResourceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the SSH public key. */
   properties: PublicKeyResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const PublicKeyResource: ResourceBinding<PublicKeyResourceConfig, PublicKeyResourceAttrs> = {
   wireType: "azure_ssh_public_key_resource",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: PublicKeyResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

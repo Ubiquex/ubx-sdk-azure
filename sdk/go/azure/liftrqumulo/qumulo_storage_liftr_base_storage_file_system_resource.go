@@ -115,15 +115,23 @@ var QumuloStorageLiftrBaseStorageFileSystemResource_PropertiesFields = ubx.Field
 type QumuloStorageLiftrBaseStorageFileSystemResourceConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the Qumulo File System resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type QumuloStorageLiftrBaseStorageFileSystemResourceAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the Qumulo File System resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var QumuloStorageLiftrBaseStorageFileSystemResource = ubx.ResourceBinding{
@@ -134,10 +142,12 @@ var QumuloStorageLiftrBaseStorageFileSystemResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   QumuloStorageLiftrBaseStorageFileSystemResource_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   QumuloStorageLiftrBaseStorageFileSystemResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

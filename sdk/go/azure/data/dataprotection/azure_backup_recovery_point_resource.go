@@ -18,6 +18,8 @@ type AzureBackupRecoveryPointResourceConfig struct {
 
 type AzureBackupRecoveryPointResourceAttrs struct {
 	BackupInstanceName any
+	// The uri to fetch the next page of resources. Call ListNext() fetches next page of resources.
+	NextLink any
 	// List of resources.
 	Value     any
 	VaultName any

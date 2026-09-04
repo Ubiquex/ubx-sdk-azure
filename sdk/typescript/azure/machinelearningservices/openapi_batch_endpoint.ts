@@ -84,10 +84,14 @@ export interface OpenapiBatchEndpointConfig {
   identity?: OpenapiBatchEndpoint_Identity | Computed<OpenapiBatchEndpoint_Identity>;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Batch endpoint configuration. */
   properties: OpenapiBatchEndpoint_Properties | Computed<OpenapiBatchEndpoint_Properties>;
   /** The resource model definition representing SKU */
   sku?: OpenapiBatchEndpoint_Sku | Computed<OpenapiBatchEndpoint_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiBatchEndpointAttrs {
@@ -95,10 +99,14 @@ export interface OpenapiBatchEndpointAttrs {
   identity: OpenapiBatchEndpoint_Identity;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Batch endpoint configuration. */
   properties: OpenapiBatchEndpoint_Properties;
   /** The resource model definition representing SKU */
   sku: OpenapiBatchEndpoint_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiBatchEndpoint: ResourceBinding<OpenapiBatchEndpointConfig, OpenapiBatchEndpointAttrs> = {
@@ -110,6 +118,7 @@ export const OpenapiBatchEndpoint: ResourceBinding<OpenapiBatchEndpointConfig, O
       fields: OpenapiBatchEndpoint_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -120,5 +129,6 @@ export const OpenapiBatchEndpoint: ResourceBinding<OpenapiBatchEndpointConfig, O
       kind: "object",
       fields: OpenapiBatchEndpoint_SkuFields,
     },
+    tags: "tags",
   },
 };

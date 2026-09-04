@@ -160,19 +160,27 @@ _OpenapiCloudHsmCluster_SkuFields = {
 class OpenapiCloudHsmClusterConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a Cloud HSM Cluster.
     properties: Any = None
     # Cloud Hsm Cluster SKU information
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiCloudHsmClusterAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a Cloud HSM Cluster.
     properties: Any = None
     # Cloud Hsm Cluster SKU information
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiCloudHsmCluster = ubx.ResourceBinding(
     wire_type="azure_hardwaresecuritymodules_openapi_cloud_hsm_cluster",
@@ -182,6 +190,7 @@ OpenapiCloudHsmCluster = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiCloudHsmCluster_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -192,5 +201,6 @@ OpenapiCloudHsmCluster = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiCloudHsmCluster_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

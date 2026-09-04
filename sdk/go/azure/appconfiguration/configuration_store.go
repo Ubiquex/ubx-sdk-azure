@@ -211,21 +211,29 @@ var ConfigurationStore_SkuFields = ubx.FieldMap{
 type ConfigurationStoreConfig struct {
 	// An identity that can be associated with a resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a configuration store.
 	Properties any
 	// Describes a configuration store SKU.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type ConfigurationStoreAttrs struct {
 	// An identity that can be associated with a resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a configuration store.
 	Properties any
 	// Describes a configuration store SKU.
 	Sku any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource tags.
+	Tags any
 }
 
 var ConfigurationStore = ubx.ResourceBinding{
@@ -236,6 +244,7 @@ var ConfigurationStore = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ConfigurationStore_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -246,5 +255,6 @@ var ConfigurationStore = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ConfigurationStore_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

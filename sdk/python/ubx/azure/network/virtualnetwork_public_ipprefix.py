@@ -216,10 +216,16 @@ _VirtualnetworkPublicIpprefix_SkuFields = {
 class VirtualnetworkPublicIpprefixConfig:
     # ExtendedLocation complex type.
     extended_location: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Public IP prefix properties.
     properties: Any = None
     # SKU of a public IP prefix.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # A list of availability zones denoting the IP allocated for the resource needs to come from.
     zones: Any = None
 
@@ -229,10 +235,20 @@ class VirtualnetworkPublicIpprefixAttrs:
     etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Public IP prefix properties.
     properties: Any = None
     # SKU of a public IP prefix.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
     # A list of availability zones denoting the IP allocated for the resource needs to come from.
     zones: Any = None
 
@@ -244,6 +260,8 @@ VirtualnetworkPublicIpprefix = ubx.ResourceBinding(
             kind="object",
             fields=_VirtualnetworkPublicIpprefix_ExtendedLocationFields,
         ),
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -254,6 +272,7 @@ VirtualnetworkPublicIpprefix = ubx.ResourceBinding(
             kind="object",
             fields=_VirtualnetworkPublicIpprefix_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

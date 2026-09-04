@@ -378,15 +378,23 @@ _MongoCluster_PropertiesFields = {
 class MongoClusterConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a mongo cluster.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class MongoClusterAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a mongo cluster.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 MongoCluster = ubx.ResourceBinding(
     wire_type="azure_mongocluster_mongo_cluster",
@@ -396,10 +404,12 @@ MongoCluster = ubx.ResourceBinding(
             kind="object",
             fields=_MongoCluster_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_MongoCluster_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

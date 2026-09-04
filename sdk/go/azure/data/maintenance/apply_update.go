@@ -12,6 +12,21 @@ type ApplyUpdate_Properties struct {
 	Status any
 }
 
+type ApplyUpdate_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 type ApplyUpdateConfig struct {
 	ApiVersion        any
 	ApplyUpdateName   any
@@ -25,6 +40,10 @@ type ApplyUpdateConfig struct {
 type ApplyUpdateAttrs struct {
 	ApiVersion      any
 	ApplyUpdateName any
+	// Fully qualified identifier of the resource
+	Id any
+	// Name of the resource
+	Name any
 	// Properties for apply update
 	Properties        any
 	ProviderName      any
@@ -32,6 +51,10 @@ type ApplyUpdateAttrs struct {
 	ResourceName      any
 	ResourceType      any
 	SubscriptionId    any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Type of the resource
+	Type any
 }
 
 var ApplyUpdate = ubx.DataSourceBinding{

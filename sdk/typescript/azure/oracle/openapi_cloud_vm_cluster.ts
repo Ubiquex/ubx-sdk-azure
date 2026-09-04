@@ -263,15 +263,23 @@ const OpenapiCloudVmCluster_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiCloudVmClusterConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** CloudVmCluster resource model */
   properties?: OpenapiCloudVmCluster_Properties | Computed<OpenapiCloudVmCluster_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   cloudvmclustername: string | Computed<string>;
 }
 
 export interface OpenapiCloudVmClusterAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** CloudVmCluster resource model */
   properties: OpenapiCloudVmCluster_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** path parameter, not part of the API's own resource representation */
   cloudvmclustername: string;
 }
@@ -279,11 +287,13 @@ export interface OpenapiCloudVmClusterAttrs {
 export const OpenapiCloudVmCluster: ResourceBinding<OpenapiCloudVmClusterConfig, OpenapiCloudVmClusterAttrs> = {
   wireType: "azure_oracle_openapi_cloud_vm_cluster",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiCloudVmCluster_PropertiesFields,
     },
+    tags: "tags",
     cloudvmclustername: "cloudvmclustername",
   },
 };

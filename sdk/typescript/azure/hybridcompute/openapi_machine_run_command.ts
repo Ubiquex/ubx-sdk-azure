@@ -165,22 +165,32 @@ const OpenapiMachineRunCommand_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiMachineRunCommandConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describes the properties of a run command. */
   properties?: OpenapiMachineRunCommand_Properties | Computed<OpenapiMachineRunCommand_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiMachineRunCommandAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describes the properties of a run command. */
   properties: OpenapiMachineRunCommand_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiMachineRunCommand: ResourceBinding<OpenapiMachineRunCommandConfig, OpenapiMachineRunCommandAttrs> = {
   wireType: "azure_hybridcompute_openapi_machine_run_command",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiMachineRunCommand_PropertiesFields,
     },
+    tags: "tags",
   },
 };

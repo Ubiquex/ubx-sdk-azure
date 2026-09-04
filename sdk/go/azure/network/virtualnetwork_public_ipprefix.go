@@ -212,10 +212,16 @@ var VirtualnetworkPublicIpprefix_SkuFields = ubx.FieldMap{
 type VirtualnetworkPublicIpprefixConfig struct {
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Public IP prefix properties.
 	Properties any
 	// SKU of a public IP prefix.
 	Sku any
+	// Resource tags.
+	Tags any
 	// A list of availability zones denoting the IP allocated for the resource needs to come from.
 	Zones any
 }
@@ -225,10 +231,20 @@ type VirtualnetworkPublicIpprefixAttrs struct {
 	Etag any
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Public IP prefix properties.
 	Properties any
 	// SKU of a public IP prefix.
 	Sku any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 	// A list of availability zones denoting the IP allocated for the resource needs to come from.
 	Zones any
 }
@@ -241,6 +257,8 @@ var VirtualnetworkPublicIpprefix = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualnetworkPublicIpprefix_ExtendedLocationFields,
 		},
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -251,6 +269,7 @@ var VirtualnetworkPublicIpprefix = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualnetworkPublicIpprefix_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

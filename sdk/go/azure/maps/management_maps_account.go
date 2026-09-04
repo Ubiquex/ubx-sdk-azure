@@ -181,10 +181,14 @@ type ManagementMapsAccountConfig struct {
 	Identity any
 	// The Kind of the Maps Account.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Additional Map account properties
 	Properties any
 	// The SKU of the Maps Account.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type ManagementMapsAccountAttrs struct {
@@ -192,12 +196,16 @@ type ManagementMapsAccountAttrs struct {
 	Identity any
 	// The Kind of the Maps Account.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Additional Map account properties
 	Properties any
 	// The SKU of the Maps Account.
 	Sku any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource tags.
+	Tags any
 }
 
 var ManagementMapsAccount = ubx.ResourceBinding{
@@ -208,7 +216,8 @@ var ManagementMapsAccount = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ManagementMapsAccount_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -219,5 +228,6 @@ var ManagementMapsAccount = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ManagementMapsAccount_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

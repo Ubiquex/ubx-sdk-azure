@@ -95,15 +95,23 @@ var Image_PropertiesFields = ubx.FieldMap{
 type ImageConfig struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of an Image.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ImageAttrs struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of an Image.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var Image = ubx.ResourceBinding{
@@ -114,10 +122,12 @@ var Image = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Image_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Image_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

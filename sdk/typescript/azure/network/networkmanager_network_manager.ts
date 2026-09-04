@@ -73,26 +73,45 @@ const NetworkmanagerNetworkManager_PropertiesFields: FieldMap = {
 };
 
 export interface NetworkmanagerNetworkManagerConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties of Managed Network */
   properties?: NetworkmanagerNetworkManager_Properties | Computed<NetworkmanagerNetworkManager_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NetworkmanagerNetworkManagerAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of Managed Network */
   properties: NetworkmanagerNetworkManager_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: NetworkmanagerNetworkManager_SystemData;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkmanagerNetworkManager: ResourceBinding<NetworkmanagerNetworkManagerConfig, NetworkmanagerNetworkManagerAttrs> = {
   wireType: "azure_network_networkmanager_network_manager",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerNetworkManager_PropertiesFields,
     },
+    tags: "tags",
   },
 };
