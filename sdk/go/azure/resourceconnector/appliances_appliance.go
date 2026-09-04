@@ -58,15 +58,23 @@ var AppliancesAppliance_PropertiesFields = ubx.FieldMap{
 type AppliancesApplianceConfig struct {
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties for an appliance.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type AppliancesApplianceAttrs struct {
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties for an appliance.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var AppliancesAppliance = ubx.ResourceBinding{
@@ -77,10 +85,12 @@ var AppliancesAppliance = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   AppliancesAppliance_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   AppliancesAppliance_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

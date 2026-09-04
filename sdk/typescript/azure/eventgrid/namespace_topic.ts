@@ -40,10 +40,16 @@ export interface NamespaceTopicConfig {
 }
 
 export interface NamespaceTopicAttrs {
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the namespace topic. */
   properties: NamespaceTopic_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: NamespaceTopic_SystemData;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const NamespaceTopic: ResourceBinding<NamespaceTopicConfig, NamespaceTopicAttrs> = {

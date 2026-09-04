@@ -157,6 +157,8 @@ _VirtualwanBgpConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanBgpConnectionConfig:
+    # Name of the resource.
+    name: Any = None
     # Properties of the bgp connection.
     properties: Any = None
 
@@ -164,12 +166,17 @@ class VirtualwanBgpConnectionConfig:
 class VirtualwanBgpConnectionAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the bgp connection.
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualwanBgpConnection = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_bgp_connection",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -77,15 +77,23 @@ _StoragecontainersStorageContainers_PropertiesFields = {
 class StoragecontainersStorageContainersConfig:
     # The complex type of the extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties under the storage container resource
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class StoragecontainersStorageContainersAttrs:
     # The complex type of the extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties under the storage container resource
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 StoragecontainersStorageContainers = ubx.ResourceBinding(
     wire_type="azure_azurestackhci_storagecontainers_storage_containers",
@@ -95,10 +103,12 @@ StoragecontainersStorageContainers = ubx.ResourceBinding(
             kind="object",
             fields=_StoragecontainersStorageContainers_ExtendedLocationFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_StoragecontainersStorageContainers_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

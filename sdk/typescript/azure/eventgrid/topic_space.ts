@@ -37,10 +37,16 @@ export interface TopicSpaceConfig {
 }
 
 export interface TopicSpaceAttrs {
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** The properties of topic space. */
   properties: TopicSpace_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: TopicSpace_SystemData;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const TopicSpace: ResourceBinding<TopicSpaceConfig, TopicSpaceAttrs> = {

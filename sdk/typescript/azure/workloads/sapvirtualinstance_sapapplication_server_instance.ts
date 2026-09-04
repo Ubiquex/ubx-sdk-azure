@@ -127,22 +127,32 @@ const SapvirtualinstanceSapapplicationServerInstance_PropertiesFields: FieldMap 
 };
 
 export interface SapvirtualinstanceSapapplicationServerInstanceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Defines the SAP Application Server instance properties. */
   properties?: SapvirtualinstanceSapapplicationServerInstance_Properties | Computed<SapvirtualinstanceSapapplicationServerInstance_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SapvirtualinstanceSapapplicationServerInstanceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Defines the SAP Application Server instance properties. */
   properties: SapvirtualinstanceSapapplicationServerInstance_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const SapvirtualinstanceSapapplicationServerInstance: ResourceBinding<SapvirtualinstanceSapapplicationServerInstanceConfig, SapvirtualinstanceSapapplicationServerInstanceAttrs> = {
   wireType: "azure_workloads_sapvirtualinstance_sapapplication_server_instance",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: SapvirtualinstanceSapapplicationServerInstance_PropertiesFields,
     },
+    tags: "tags",
   },
 };

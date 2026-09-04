@@ -70,22 +70,32 @@ var OpenapiLicense_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiLicenseConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a License Profile.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiLicenseAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a License Profile.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiLicense = ubx.ResourceBinding{
 	WireType: "azure_hybridcompute_openapi_license",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiLicense_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

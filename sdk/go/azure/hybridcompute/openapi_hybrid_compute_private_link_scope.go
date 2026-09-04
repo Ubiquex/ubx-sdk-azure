@@ -103,22 +103,32 @@ var OpenapiHybridComputePrivateLinkScope_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiHybridComputePrivateLinkScopeConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties that define a Azure Arc PrivateLinkScope resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiHybridComputePrivateLinkScopeAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties that define a Azure Arc PrivateLinkScope resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiHybridComputePrivateLinkScope = ubx.ResourceBinding{
 	WireType: "azure_hybridcompute_openapi_hybrid_compute_private_link_scope",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiHybridComputePrivateLinkScope_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -62,10 +62,16 @@ export interface ClientConfig {
 }
 
 export interface ClientAttrs {
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** The properties of client. */
   properties: Client_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: Client_SystemData;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const Client: ResourceBinding<ClientConfig, ClientAttrs> = {

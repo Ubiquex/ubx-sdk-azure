@@ -88,6 +88,8 @@ const VirtualnetworkSecurityRule_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkSecurityRuleConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Security rule resource. */
   properties?: VirtualnetworkSecurityRule_Properties | Computed<VirtualnetworkSecurityRule_Properties>;
 }
@@ -95,13 +97,18 @@ export interface VirtualnetworkSecurityRuleConfig {
 export interface VirtualnetworkSecurityRuleAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Security rule resource. */
   properties: VirtualnetworkSecurityRule_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkSecurityRule: ResourceBinding<VirtualnetworkSecurityRuleConfig, VirtualnetworkSecurityRuleAttrs> = {
   wireType: "azure_network_virtualnetwork_security_rule",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

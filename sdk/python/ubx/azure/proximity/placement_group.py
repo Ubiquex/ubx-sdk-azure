@@ -89,26 +89,36 @@ _PlacementGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class PlacementGroupConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a Proximity Placement Group.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 @dataclasses.dataclass
 class PlacementGroupAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a Proximity Placement Group.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 PlacementGroup = ubx.ResourceBinding(
     wire_type="azure_proximity_placement_group",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_PlacementGroup_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

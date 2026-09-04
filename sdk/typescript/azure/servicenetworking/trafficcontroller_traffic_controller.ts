@@ -63,22 +63,32 @@ const TrafficcontrollerTrafficController_PropertiesFields: FieldMap = {
 };
 
 export interface TrafficcontrollerTrafficControllerConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Traffic Controller Properties. */
   properties?: TrafficcontrollerTrafficController_Properties | Computed<TrafficcontrollerTrafficController_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface TrafficcontrollerTrafficControllerAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Traffic Controller Properties. */
   properties: TrafficcontrollerTrafficController_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const TrafficcontrollerTrafficController: ResourceBinding<TrafficcontrollerTrafficControllerConfig, TrafficcontrollerTrafficControllerAttrs> = {
   wireType: "azure_servicenetworking_trafficcontroller_traffic_controller",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: TrafficcontrollerTrafficController_PropertiesFields,
     },
+    tags: "tags",
   },
 };

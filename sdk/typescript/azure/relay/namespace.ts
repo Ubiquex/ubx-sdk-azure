@@ -103,22 +103,31 @@ const Namespace_SkuFields: FieldMap = {
 };
 
 export interface NamespaceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the namespace. */
   properties?: Namespace_Properties | Computed<Namespace_Properties>;
   /** SKU of the namespace. */
   sku?: Namespace_Sku | Computed<Namespace_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NamespaceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the namespace. */
   properties: Namespace_Properties;
   /** SKU of the namespace. */
   sku: Namespace_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Namespace: ResourceBinding<NamespaceConfig, NamespaceAttrs> = {
   wireType: "azure_relay_namespace",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -129,5 +138,6 @@ export const Namespace: ResourceBinding<NamespaceConfig, NamespaceAttrs> = {
       kind: "object",
       fields: Namespace_SkuFields,
     },
+    tags: "tags",
   },
 };

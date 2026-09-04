@@ -87,8 +87,14 @@ const VirtualnetworkCustomIpPrefix_PropertiesFields: FieldMap = {
 export interface VirtualnetworkCustomIpPrefixConfig {
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkCustomIpPrefix_ExtendedLocation | Computed<VirtualnetworkCustomIpPrefix_ExtendedLocation>;
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Custom IP prefix properties. */
   properties?: VirtualnetworkCustomIpPrefix_Properties | Computed<VirtualnetworkCustomIpPrefix_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** A list of availability zones denoting where the resource needs to come from. */
   zones?: string[] | Computed<string[]>;
 }
@@ -98,8 +104,18 @@ export interface VirtualnetworkCustomIpPrefixAttrs {
   etag: string;
   /** ExtendedLocation complex type. */
   extendedLocation: VirtualnetworkCustomIpPrefix_ExtendedLocation;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Custom IP prefix properties. */
   properties: VirtualnetworkCustomIpPrefix_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
   /** A list of availability zones denoting where the resource needs to come from. */
   zones: string[];
 }
@@ -112,11 +128,14 @@ export const VirtualnetworkCustomIpPrefix: ResourceBinding<VirtualnetworkCustomI
       kind: "object",
       fields: VirtualnetworkCustomIpPrefix_ExtendedLocationFields,
     },
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkCustomIpPrefix_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

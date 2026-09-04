@@ -19,6 +19,21 @@ export interface TemplatespecsTemplateSpecVersion_Properties {
   uiFormDefinition?: unknown | Computed<unknown>;
 }
 
+export interface TemplatespecsTemplateSpecVersion_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const TemplatespecsTemplateSpecVersion_Properties_LinkedTemplatesFields: FieldMap = {
   path: "path",
   template: "template",
@@ -46,12 +61,20 @@ export interface TemplatespecsTemplateSpecVersionConfig {
 }
 
 export interface TemplatespecsTemplateSpecVersionAttrs {
+  /** String Id used to locate any resource on Azure. */
+  id: string;
   /** The location of the Template Spec Version. It must match the location of the parent Template Spec. */
   location: string;
+  /** Name of this resource. */
+  name: string;
   /** Template Spec Version properties. */
   properties: TemplatespecsTemplateSpecVersion_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: TemplatespecsTemplateSpecVersion_SystemData;
   /** Resource tags. */
   tags: Record<string, string>;
+  /** Type of this resource. */
+  type: string;
 }
 
 export const TemplatespecsTemplateSpecVersion: ResourceBinding<TemplatespecsTemplateSpecVersionConfig, TemplatespecsTemplateSpecVersionAttrs> = {

@@ -187,21 +187,31 @@ _OpenapiLicenseProfile_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiLicenseProfileConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describe the properties of a license profile.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiLicenseProfileAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describe the properties of a license profile.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiLicenseProfile = ubx.ResourceBinding(
     wire_type="azure_hybridcompute_openapi_license_profile",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiLicenseProfile_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

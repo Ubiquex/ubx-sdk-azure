@@ -49,14 +49,22 @@ var OpenapiAccessConnector_PropertiesFields = ubx.FieldMap{
 
 type OpenapiAccessConnectorConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
-	Identity   any
+	Identity any
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiAccessConnectorAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
-	Identity   any
+	Identity any
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiAccessConnector = ubx.ResourceBinding{
@@ -67,10 +75,12 @@ var OpenapiAccessConnector = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiAccessConnector_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiAccessConnector_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

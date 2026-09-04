@@ -174,15 +174,23 @@ var MarketplacegalleryimagesMarketplaceGalleryImages_PropertiesFields = ubx.Fiel
 type MarketplacegalleryimagesMarketplaceGalleryImagesConfig struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the marketplace gallery image resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type MarketplacegalleryimagesMarketplaceGalleryImagesAttrs struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the marketplace gallery image resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var MarketplacegalleryimagesMarketplaceGalleryImages = ubx.ResourceBinding{
@@ -193,10 +201,12 @@ var MarketplacegalleryimagesMarketplaceGalleryImages = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   MarketplacegalleryimagesMarketplaceGalleryImages_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   MarketplacegalleryimagesMarketplaceGalleryImages_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -176,22 +176,32 @@ var MachineRunCommand_PropertiesFields = ubx.FieldMap{
 }
 
 type MachineRunCommandConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Virtual Machine run command.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type MachineRunCommandAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Virtual Machine run command.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var MachineRunCommand = ubx.ResourceBinding{
 	WireType: "azure_virtual_machine_run_command",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   MachineRunCommand_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

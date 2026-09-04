@@ -5316,6 +5316,8 @@ const LoadbalancerBackendAddressPool_PropertiesFields: FieldMap = {
 };
 
 export interface LoadbalancerBackendAddressPoolConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of the backend address pool. */
   properties?: LoadbalancerBackendAddressPool_Properties | Computed<LoadbalancerBackendAddressPool_Properties>;
 }
@@ -5323,13 +5325,18 @@ export interface LoadbalancerBackendAddressPoolConfig {
 export interface LoadbalancerBackendAddressPoolAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the backend address pool. */
   properties: LoadbalancerBackendAddressPool_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const LoadbalancerBackendAddressPool: ResourceBinding<LoadbalancerBackendAddressPoolConfig, LoadbalancerBackendAddressPoolAttrs> = {
   wireType: "azure_network_loadbalancer_backend_address_pool",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

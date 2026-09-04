@@ -168,6 +168,21 @@ type DomainService_Properties struct {
 	Version any
 }
 
+type DomainService_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var DomainService_Properties_ConfigDiagnostics_ValidatorResults_IssuesFields = ubx.FieldMap{
 	"DescriptionParams": ubx.FieldSpec{WireName: "description_params"},
 	"Id":                ubx.FieldSpec{WireName: "id"},
@@ -340,22 +355,45 @@ var DomainService_PropertiesFields = ubx.FieldMap{
 }
 
 type DomainServiceConfig struct {
+	// Resource etag
+	Etag any
+	// Resource location
+	Location any
 	// Properties of the Domain Service.
 	Properties any
+	// Resource tags
+	Tags any
 }
 
 type DomainServiceAttrs struct {
+	// Resource etag
+	Etag any
+	// Resource Id
+	Id any
+	// Resource location
+	Location any
+	// Resource name
+	Name any
 	// Properties of the Domain Service.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Resource tags
+	Tags any
+	// Resource type
+	Type any
 }
 
 var DomainService = ubx.ResourceBinding{
 	WireType: "azure_domainservices_domain_service",
 	Fields: ubx.FieldMap{
+		"Etag":     ubx.FieldSpec{WireName: "etag"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   DomainService_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

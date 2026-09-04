@@ -105,19 +105,29 @@ type ApigatewayApiManagementGatewayResourceConfig struct {
 	Properties any
 	// API Management gateway resource SKU properties.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type ApigatewayApiManagementGatewayResourceAttrs struct {
 	// ETag of the resource.
 	Etag any
+	// Resource ID.
+	Id any
 	// Resource location.
 	Location any
+	// Resource name.
+	Name any
 	// Properties of an API Management gateway resource description.
 	Properties any
 	// API Management gateway resource SKU properties.
 	Sku any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource tags.
+	Tags any
+	// Resource type for API Management resource is set to Microsoft.ApiManagement.
+	Type any
 }
 
 var ApigatewayApiManagementGatewayResource = ubx.ResourceBinding{
@@ -134,5 +144,6 @@ var ApigatewayApiManagementGatewayResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ApigatewayApiManagementGatewayResource_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

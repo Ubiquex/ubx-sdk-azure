@@ -12,6 +12,21 @@ type OpenapiPrivateLinkResource2_Properties struct {
 	RequiredZoneNames any
 }
 
+type OpenapiPrivateLinkResource2_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 type OpenapiPrivateLinkResource2Config struct {
 	GroupName  any
 	ServerName any
@@ -19,9 +34,17 @@ type OpenapiPrivateLinkResource2Config struct {
 
 type OpenapiPrivateLinkResource2Attrs struct {
 	GroupName any
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
+	// The name of the resource
+	Name any
 	// Properties of a private link resource.
 	Properties any
 	ServerName any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var OpenapiPrivateLinkResource2 = ubx.DataSourceBinding{

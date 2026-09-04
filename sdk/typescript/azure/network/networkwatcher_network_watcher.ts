@@ -11,24 +11,43 @@ const NetworkwatcherNetworkWatcher_PropertiesFields: FieldMap = {
 };
 
 export interface NetworkwatcherNetworkWatcherConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** The network watcher properties. */
   properties?: NetworkwatcherNetworkWatcher_Properties | Computed<NetworkwatcherNetworkWatcher_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NetworkwatcherNetworkWatcherAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** The network watcher properties. */
   properties: NetworkwatcherNetworkWatcher_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkwatcherNetworkWatcher: ResourceBinding<NetworkwatcherNetworkWatcherConfig, NetworkwatcherNetworkWatcherAttrs> = {
   wireType: "azure_network_networkwatcher_network_watcher",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetworkwatcherNetworkWatcher_PropertiesFields,
     },
+    tags: "tags",
   },
 };

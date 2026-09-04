@@ -4384,6 +4384,8 @@ var ApplicationgatewayApplicationGatewayPrivateEndpointConnection_PropertiesFiel
 }
 
 type ApplicationgatewayApplicationGatewayPrivateEndpointConnectionConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of Private Link Resource of an application gateway.
 	Properties any
 }
@@ -4391,13 +4393,18 @@ type ApplicationgatewayApplicationGatewayPrivateEndpointConnectionConfig struct 
 type ApplicationgatewayApplicationGatewayPrivateEndpointConnectionAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of Private Link Resource of an application gateway.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var ApplicationgatewayApplicationGatewayPrivateEndpointConnection = ubx.ResourceBinding{
 	WireType: "azure_network_applicationgateway_application_gateway_private_endpoint_connection",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

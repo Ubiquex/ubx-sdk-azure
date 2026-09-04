@@ -129,15 +129,23 @@ var NetworkinterfacesNetworkInterfaces_PropertiesFields = ubx.FieldMap{
 type NetworkinterfacesNetworkInterfacesConfig struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the network interface resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type NetworkinterfacesNetworkInterfacesAttrs struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the network interface resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var NetworkinterfacesNetworkInterfaces = ubx.ResourceBinding{
@@ -148,10 +156,12 @@ var NetworkinterfacesNetworkInterfaces = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   NetworkinterfacesNetworkInterfaces_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   NetworkinterfacesNetworkInterfaces_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

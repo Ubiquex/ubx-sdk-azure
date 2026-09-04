@@ -248,15 +248,23 @@ var OpenapiExadbVmCluster_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiExadbVmClusterConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// ExadbVmCluster resource model
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
 
 type OpenapiExadbVmClusterAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// ExadbVmCluster resource model
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -264,11 +272,13 @@ type OpenapiExadbVmClusterAttrs struct {
 var OpenapiExadbVmCluster = ubx.ResourceBinding{
 	WireType: "azure_oracle_openapi_exadb_vm_cluster",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiExadbVmCluster_PropertiesFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

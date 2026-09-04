@@ -14,6 +14,21 @@ export interface AttachedNetworkConnection_Properties {
   provisioningState?: string | Computed<string>;
 }
 
+export interface AttachedNetworkConnection_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const AttachedNetworkConnection_PropertiesFields: FieldMap = {
   domainJoinType: "domain_join_type",
   healthCheckStatus: "health_check_status",
@@ -28,8 +43,16 @@ export interface AttachedNetworkConnectionConfig {
 }
 
 export interface AttachedNetworkConnectionAttrs {
+  /** Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}" */
+  id: string;
+  /** The name of the resource */
+  name: string;
   /** Properties of an attached NetworkConnection. */
   properties: AttachedNetworkConnection_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: AttachedNetworkConnection_SystemData;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const AttachedNetworkConnection: ResourceBinding<AttachedNetworkConnectionConfig, AttachedNetworkConnectionAttrs> = {

@@ -16,21 +16,31 @@ _GrafanaManagedDashboard_PropertiesFields = {
 
 @dataclasses.dataclass
 class GrafanaManagedDashboardConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the grafana resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class GrafanaManagedDashboardAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the grafana resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 GrafanaManagedDashboard = ubx.ResourceBinding(
     wire_type="azure_dashboard_grafana_managed_dashboard",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_GrafanaManagedDashboard_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

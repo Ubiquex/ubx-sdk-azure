@@ -299,19 +299,27 @@ var ManagedinstancesManagedInstance_SkuFields = ubx.FieldMap{
 type ManagedinstancesManagedInstanceConfig struct {
 	// Azure Active Directory identity configuration for a resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a managed instance.
 	Properties any
 	// An ARM Resource SKU.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type ManagedinstancesManagedInstanceAttrs struct {
 	// Azure Active Directory identity configuration for a resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The properties of a managed instance.
 	Properties any
 	// An ARM Resource SKU.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var ManagedinstancesManagedInstance = ubx.ResourceBinding{
@@ -322,6 +330,7 @@ var ManagedinstancesManagedInstance = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ManagedinstancesManagedInstance_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -332,5 +341,6 @@ var ManagedinstancesManagedInstance = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ManagedinstancesManagedInstance_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -372,15 +372,23 @@ const MongoCluster_PropertiesFields: FieldMap = {
 export interface MongoClusterConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: MongoCluster_Identity | Computed<MongoCluster_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The properties of a mongo cluster. */
   properties?: MongoCluster_Properties | Computed<MongoCluster_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MongoClusterAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: MongoCluster_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** The properties of a mongo cluster. */
   properties: MongoCluster_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const MongoCluster: ResourceBinding<MongoClusterConfig, MongoClusterAttrs> = {
@@ -391,10 +399,12 @@ export const MongoCluster: ResourceBinding<MongoClusterConfig, MongoClusterAttrs
       kind: "object",
       fields: MongoCluster_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: MongoCluster_PropertiesFields,
     },
+    tags: "tags",
   },
 };

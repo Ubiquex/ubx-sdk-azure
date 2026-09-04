@@ -22,6 +22,8 @@ export interface ResourceGuardProxyBaseResourceConfig {
 }
 
 export interface ResourceGuardProxyBaseResourceAttrs {
+  /** The uri to fetch the next page of resources. Call ListNext() fetches next page of resources. */
+  nextLink: string;
   /** List of resources. */
   value: ResourceGuardProxyBaseResource_Value[];
   vaultName: string;

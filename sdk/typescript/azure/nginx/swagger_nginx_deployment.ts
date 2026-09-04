@@ -352,19 +352,27 @@ const SwaggerNginxDeployment_SkuFields: FieldMap = {
 export interface SwaggerNginxDeploymentConfig {
   /** Identity Properties */
   identity?: SwaggerNginxDeployment_Identity | Computed<SwaggerNginxDeployment_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Nginx Deployment Properties */
   properties?: SwaggerNginxDeployment_Properties | Computed<SwaggerNginxDeployment_Properties>;
   /** Resource Sku */
   sku?: SwaggerNginxDeployment_Sku | Computed<SwaggerNginxDeployment_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SwaggerNginxDeploymentAttrs {
   /** Identity Properties */
   identity: SwaggerNginxDeployment_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Nginx Deployment Properties */
   properties: SwaggerNginxDeployment_Properties;
   /** Resource Sku */
   sku: SwaggerNginxDeployment_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const SwaggerNginxDeployment: ResourceBinding<SwaggerNginxDeploymentConfig, SwaggerNginxDeploymentAttrs> = {
@@ -375,6 +383,7 @@ export const SwaggerNginxDeployment: ResourceBinding<SwaggerNginxDeploymentConfi
       kind: "object",
       fields: SwaggerNginxDeployment_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -385,5 +394,6 @@ export const SwaggerNginxDeployment: ResourceBinding<SwaggerNginxDeploymentConfi
       kind: "object",
       fields: SwaggerNginxDeployment_SkuFields,
     },
+    tags: "tags",
   },
 };

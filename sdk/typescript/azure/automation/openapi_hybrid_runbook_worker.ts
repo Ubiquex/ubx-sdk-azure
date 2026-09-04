@@ -31,10 +31,14 @@ export interface OpenapiHybridRunbookWorkerConfig {
 }
 
 export interface OpenapiHybridRunbookWorkerAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Gets or sets the name of the resource. */
   name: string;
   /** The parameters supplied to the create or update hybrid runbook worker operation. */
   properties: OpenapiHybridRunbookWorker_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiHybridRunbookWorker: ResourceBinding<OpenapiHybridRunbookWorkerConfig, OpenapiHybridRunbookWorkerAttrs> = {

@@ -27,9 +27,13 @@ class OpenapiPremierAddOnConfig:
 class OpenapiPremierAddOnAttrs:
     # Kind of resource.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     name: Any = None
     # PremierAddOn resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiPremierAddOn = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_premier_add_on",

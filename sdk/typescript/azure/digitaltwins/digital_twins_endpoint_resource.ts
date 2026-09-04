@@ -25,6 +25,21 @@ export interface DigitalTwinsEndpointResource_Properties {
   provisioningState?: string | Computed<string>;
 }
 
+export interface DigitalTwinsEndpointResource_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const DigitalTwinsEndpointResource_Properties_IdentityFields: FieldMap = {
   type: "type",
   userAssignedIdentity: "user_assigned_identity",
@@ -50,8 +65,16 @@ export interface DigitalTwinsEndpointResourceConfig {
 }
 
 export interface DigitalTwinsEndpointResourceAttrs {
+  /** The resource identifier. */
+  id: string;
+  /** Extension resource name. */
+  name: string;
   /** Properties related to Digital Twins Endpoint */
   properties: DigitalTwinsEndpointResource_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: DigitalTwinsEndpointResource_SystemData;
+  /** The resource type. */
+  type: string;
 }
 
 export const DigitalTwinsEndpointResource: ResourceBinding<DigitalTwinsEndpointResourceConfig, DigitalTwinsEndpointResourceAttrs> = {

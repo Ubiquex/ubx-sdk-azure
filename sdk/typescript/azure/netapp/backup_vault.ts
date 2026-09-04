@@ -11,22 +11,32 @@ const BackupVault_PropertiesFields: FieldMap = {
 };
 
 export interface BackupVaultConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Backup Vault properties */
   properties?: BackupVault_Properties | Computed<BackupVault_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface BackupVaultAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Backup Vault properties */
   properties: BackupVault_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const BackupVault: ResourceBinding<BackupVaultConfig, BackupVaultAttrs> = {
   wireType: "azure_netapp_backup_vault",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: BackupVault_PropertiesFields,
     },
+    tags: "tags",
   },
 };

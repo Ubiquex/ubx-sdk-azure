@@ -573,22 +573,31 @@ var OpenapiWorkspace_SkuFields = ubx.FieldMap{
 }
 
 type OpenapiWorkspaceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The workspace properties.
 	Properties any
 	// SKU for the resource.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiWorkspaceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The workspace properties.
 	Properties any
 	// SKU for the resource.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiWorkspace = ubx.ResourceBinding{
 	WireType: "azure_databricks_openapi_workspace",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -599,5 +608,6 @@ var OpenapiWorkspace = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiWorkspace_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

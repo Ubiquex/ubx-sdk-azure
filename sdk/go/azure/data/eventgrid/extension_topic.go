@@ -32,11 +32,17 @@ type ExtensionTopicConfig struct {
 
 type ExtensionTopicAttrs struct {
 	ApiVersion any
+	// Fully qualified identifier of the resource.
+	Id any
+	// Name of the resource.
+	Name any
 	// Properties of the Extension Topic
 	Properties any
 	Scope      any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Type of the resource.
+	Type any
 }
 
 var ExtensionTopic = ubx.DataSourceBinding{

@@ -141,18 +141,29 @@ const VirtualwanConnectionPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanConnectionPolicyConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** Properties of the ConnectionPolicy resource. */
   properties?: VirtualwanConnectionPolicy_Properties | Computed<VirtualwanConnectionPolicy_Properties>;
 }
 
 export interface VirtualwanConnectionPolicyAttrs {
+  /** A unique read-only string that changes whenever the resource is updated. */
+  etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource name. */
+  name: string;
   /** Properties of the ConnectionPolicy resource. */
   properties: VirtualwanConnectionPolicy_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualwanConnectionPolicy: ResourceBinding<VirtualwanConnectionPolicyConfig, VirtualwanConnectionPolicyAttrs> = {
   wireType: "azure_network_virtualwan_connection_policy",
   fields: {
+    id: "id",
     properties: {
       wireName: "properties",
       kind: "object",

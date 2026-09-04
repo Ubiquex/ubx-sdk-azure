@@ -15,18 +15,21 @@ type OpenapiSitePhpErrorLogFlag_Properties struct {
 }
 
 type OpenapiSitePhpErrorLogFlagConfig struct {
-	Name any
 }
 
 type OpenapiSitePhpErrorLogFlagAttrs struct {
+	// Resource Id.
+	Id any
+	// Kind of resource.
+	Kind any
 	Name any
 	// SitePhpErrorLogFlag resource specific properties
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var OpenapiSitePhpErrorLogFlag = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_site_php_error_log_flag",
-	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	},
+	Fields:   ubx.FieldMap{},
 }

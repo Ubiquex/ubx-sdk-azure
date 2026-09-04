@@ -51,21 +51,31 @@ _ManagedclustersSnapshot_PropertiesFields = {
 
 @dataclasses.dataclass
 class ManagedclustersSnapshotConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties used to configure a node pool snapshot.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersSnapshotAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties used to configure a node pool snapshot.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ManagedclustersSnapshot = ubx.ResourceBinding(
     wire_type="azure_containerservice_managedclusters_snapshot",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ManagedclustersSnapshot_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -39,6 +39,8 @@ const VirtualnetworkInboundSecurityRule_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkInboundSecurityRuleConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of the Inbound Security Rules resource. */
   properties?: VirtualnetworkInboundSecurityRule_Properties | Computed<VirtualnetworkInboundSecurityRule_Properties>;
 }
@@ -46,13 +48,18 @@ export interface VirtualnetworkInboundSecurityRuleConfig {
 export interface VirtualnetworkInboundSecurityRuleAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the Inbound Security Rules resource. */
   properties: VirtualnetworkInboundSecurityRule_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkInboundSecurityRule: ResourceBinding<VirtualnetworkInboundSecurityRuleConfig, VirtualnetworkInboundSecurityRuleAttrs> = {
   wireType: "azure_network_virtualnetwork_inbound_security_rule",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -35,6 +35,21 @@ type BmsErrorResponse_Properties struct {
 	SubscriptionId any
 }
 
+type BmsErrorResponse_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var BmsErrorResponse_PropertiesFields = ubx.FieldMap{
 	"EncryptionAtRestType":          ubx.FieldSpec{WireName: "encryption_at_rest_type"},
 	"InfrastructureEncryptionState": ubx.FieldSpec{WireName: "infrastructure_encryption_state"},
@@ -58,11 +73,19 @@ type BmsErrorResponseAttrs struct {
 	ETag any
 	// The error detail.
 	Error any
+	// Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+	Id any
 	// Represents an Azure geography region where supported resource providers live.
-	Location   any
+	Location any
+	// The name of the resource
+	Name       any
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
 	// Resource tags.
 	Tags any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var BmsErrorResponse = ubx.ResourceBinding{

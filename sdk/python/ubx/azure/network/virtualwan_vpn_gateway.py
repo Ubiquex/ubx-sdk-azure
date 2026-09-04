@@ -475,23 +475,42 @@ _VirtualwanVpnGateway_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanVpnGatewayConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Parameters for VpnGateway.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualwanVpnGatewayAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Parameters for VpnGateway.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualwanVpnGateway = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_vpn_gateway",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualwanVpnGateway_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

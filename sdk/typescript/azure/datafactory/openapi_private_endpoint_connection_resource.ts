@@ -53,10 +53,16 @@ export interface OpenapiPrivateEndpointConnectionResourceConfig {
 }
 
 export interface OpenapiPrivateEndpointConnectionResourceAttrs {
-  /** "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.") */
+  /** Etag identifies change in the resource. */
   etag: string;
+  /** The resource identifier. */
+  id: string;
+  /** The resource name. */
+  name: string;
   /** A request to approve or reject a private endpoint connection */
   properties: OpenapiPrivateEndpointConnectionResource_Properties;
+  /** The resource type. */
+  type: string;
 }
 
 export const OpenapiPrivateEndpointConnectionResource: ResourceBinding<OpenapiPrivateEndpointConnectionResourceConfig, OpenapiPrivateEndpointConnectionResourceAttrs> = {

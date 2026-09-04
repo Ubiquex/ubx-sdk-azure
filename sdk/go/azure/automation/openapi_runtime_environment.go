@@ -35,22 +35,32 @@ var OpenapiRuntimeEnvironment_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiRuntimeEnvironmentConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Runtime Environment properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiRuntimeEnvironmentAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Runtime Environment properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiRuntimeEnvironment = ubx.ResourceBinding{
 	WireType: "azure_automation_openapi_runtime_environment",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiRuntimeEnvironment_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

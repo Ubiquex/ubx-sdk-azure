@@ -43,10 +43,16 @@ class ClientGroupConfig:
 
 @dataclasses.dataclass
 class ClientGroupAttrs:
+    # Fully qualified identifier of the resource.
+    id: Any = None
+    # Name of the resource.
+    name: Any = None
     # The properties of client group.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Type of the resource.
+    type: Any = None
 
 ClientGroup = ubx.ResourceBinding(
     wire_type="azure_eventgrid_client_group",

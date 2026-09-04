@@ -75,17 +75,25 @@ _SystemTopic_PropertiesFields = {
 class SystemTopicConfig:
     # The identity information for the resource.
     identity: Any = None
+    # Location of the resource.
+    location: Any = None
     # Properties of the System Topic.
     properties: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 @dataclasses.dataclass
 class SystemTopicAttrs:
     # The identity information for the resource.
     identity: Any = None
+    # Location of the resource.
+    location: Any = None
     # Properties of the System Topic.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 SystemTopic = ubx.ResourceBinding(
     wire_type="azure_eventgrid_system_topic",
@@ -95,10 +103,12 @@ SystemTopic = ubx.ResourceBinding(
             kind="object",
             fields=_SystemTopic_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_SystemTopic_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

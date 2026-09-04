@@ -121,6 +121,21 @@ export interface ManagedapplicationsApplication_Properties {
   updatedBy?: ManagedapplicationsApplication_Properties_CreatedBy | Computed<ManagedapplicationsApplication_Properties_CreatedBy>;
 }
 
+export interface ManagedapplicationsApplication_Sku {
+  /** The SKU capacity. */
+  capacity?: number | Computed<number>;
+  /** The SKU family. */
+  family?: string | Computed<string>;
+  /** The SKU model. */
+  model?: string | Computed<string>;
+  /** The SKU name. */
+  name: string | Computed<string>;
+  /** The SKU size. */
+  size?: string | Computed<string>;
+  /** The SKU tier. */
+  tier?: string | Computed<string>;
+}
+
 const ManagedapplicationsApplication_Identity_UserAssignedIdentitiesFields: FieldMap = {
   principalId: "principal_id",
   tenantId: "tenant_id",
@@ -244,15 +259,28 @@ const ManagedapplicationsApplication_PropertiesFields: FieldMap = {
   },
 };
 
+const ManagedapplicationsApplication_SkuFields: FieldMap = {
+  capacity: "capacity",
+  family: "family",
+  model: "model",
+  name: "name",
+  size: "size",
+  tier: "tier",
+};
+
 export interface ManagedapplicationsApplicationConfig {
   /** Identity for the resource. */
   identity?: ManagedapplicationsApplication_Identity | Computed<ManagedapplicationsApplication_Identity>;
   /** The kind of the managed application. Allowed values are MarketPlace and ServiceCatalog. */
   kind: string | Computed<string>;
+  /** ID of the resource that manages this resource. */
+  managedBy?: string | Computed<string>;
   /** Plan for the managed application. */
   plan?: ManagedapplicationsApplication_Plan | Computed<ManagedapplicationsApplication_Plan>;
   /** The managed application properties. */
   properties: ManagedapplicationsApplication_Properties | Computed<ManagedapplicationsApplication_Properties>;
+  /** SKU for the resource. */
+  sku?: ManagedapplicationsApplication_Sku | Computed<ManagedapplicationsApplication_Sku>;
 }
 
 export interface ManagedapplicationsApplicationAttrs {
@@ -260,10 +288,14 @@ export interface ManagedapplicationsApplicationAttrs {
   identity: ManagedapplicationsApplication_Identity;
   /** The kind of the managed application. Allowed values are MarketPlace and ServiceCatalog. */
   kind: string;
+  /** ID of the resource that manages this resource. */
+  managedBy: string;
   /** Plan for the managed application. */
   plan: ManagedapplicationsApplication_Plan;
   /** The managed application properties. */
   properties: ManagedapplicationsApplication_Properties;
+  /** SKU for the resource. */
+  sku: ManagedapplicationsApplication_Sku;
 }
 
 export const ManagedapplicationsApplication: ResourceBinding<ManagedapplicationsApplicationConfig, ManagedapplicationsApplicationAttrs> = {
@@ -275,6 +307,7 @@ export const ManagedapplicationsApplication: ResourceBinding<Managedapplications
       fields: ManagedapplicationsApplication_IdentityFields,
     },
     kind: "kind",
+    managedBy: "managed_by",
     plan: {
       wireName: "plan",
       kind: "object",
@@ -284,6 +317,11 @@ export const ManagedapplicationsApplication: ResourceBinding<Managedapplications
       wireName: "properties",
       kind: "object",
       fields: ManagedapplicationsApplication_PropertiesFields,
+    },
+    sku: {
+      wireName: "sku",
+      kind: "object",
+      fields: ManagedapplicationsApplication_SkuFields,
     },
   },
 };

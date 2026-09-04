@@ -28,10 +28,18 @@ class NetworkmanagerBaseAdminRuleConfig:
 
 @dataclasses.dataclass
 class NetworkmanagerBaseAdminRuleAttrs:
+    # A unique read-only string that changes whenever the resource is updated.
+    etag: Any = None
+    # Resource ID.
+    id: Any = None
     # Whether the rule is custom or default.
     kind: Any = None
+    # Resource name.
+    name: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource type.
+    type: Any = None
 
 NetworkmanagerBaseAdminRule = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_base_admin_rule",

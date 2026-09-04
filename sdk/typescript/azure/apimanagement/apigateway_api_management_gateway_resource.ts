@@ -103,19 +103,29 @@ export interface ApigatewayApiManagementGatewayResourceConfig {
   properties: ApigatewayApiManagementGatewayResource_Properties | Computed<ApigatewayApiManagementGatewayResource_Properties>;
   /** API Management gateway resource SKU properties. */
   sku: ApigatewayApiManagementGatewayResource_Sku | Computed<ApigatewayApiManagementGatewayResource_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ApigatewayApiManagementGatewayResourceAttrs {
   /** ETag of the resource. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** Resource location. */
   location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of an API Management gateway resource description. */
   properties: ApigatewayApiManagementGatewayResource_Properties;
   /** API Management gateway resource SKU properties. */
   sku: ApigatewayApiManagementGatewayResource_Sku;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: ApigatewayApiManagementGatewayResource_SystemData;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type for API Management resource is set to Microsoft.ApiManagement. */
+  type: string;
 }
 
 export const ApigatewayApiManagementGatewayResource: ResourceBinding<ApigatewayApiManagementGatewayResourceConfig, ApigatewayApiManagementGatewayResourceAttrs> = {
@@ -132,5 +142,6 @@ export const ApigatewayApiManagementGatewayResource: ResourceBinding<ApigatewayA
       kind: "object",
       fields: ApigatewayApiManagementGatewayResource_SkuFields,
     },
+    tags: "tags",
   },
 };

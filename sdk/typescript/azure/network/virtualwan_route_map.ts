@@ -93,8 +93,14 @@ export interface VirtualwanRouteMapConfig {
 export interface VirtualwanRouteMapAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of RouteMap resource */
   properties: VirtualwanRouteMap_Properties;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const VirtualwanRouteMap: ResourceBinding<VirtualwanRouteMapConfig, VirtualwanRouteMapAttrs> = {

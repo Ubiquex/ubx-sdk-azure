@@ -33,6 +33,21 @@ export interface BmsErrorResponse_Properties {
   subscriptionId?: string | Computed<string>;
 }
 
+export interface BmsErrorResponse_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const BmsErrorResponse_PropertiesFields: FieldMap = {
   encryptionAtRestType: "encryption_at_rest_type",
   infrastructureEncryptionState: "infrastructure_encryption_state",
@@ -56,11 +71,19 @@ export interface BmsErrorResponseAttrs {
   eTag: string;
   /** The error detail. */
   error: BmsErrorResponse_Error;
+  /** Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} */
+  id: string;
   /** Represents an Azure geography region where supported resource providers live. */
   location: string;
+  /** The name of the resource */
+  name: string;
   properties: BmsErrorResponse_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: BmsErrorResponse_SystemData;
   /** Resource tags. */
   tags: Record<string, string>;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const BmsErrorResponse: ResourceBinding<BmsErrorResponseConfig, BmsErrorResponseAttrs> = {

@@ -24,6 +24,21 @@ export interface ApplicationResource_Properties {
   typeName?: string | Computed<string>;
 }
 
+export interface ApplicationResource_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC). */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const ApplicationResource_Identity_UserAssignedIdentitiesFields: FieldMap = {
   clientId: "client_id",
   principalId: "principal_id",
@@ -48,15 +63,33 @@ const ApplicationResource_PropertiesFields: FieldMap = {
 export interface ApplicationResourceConfig {
   /** Describes the managed identities for an Azure resource. */
   identity?: ApplicationResource_Identity | Computed<ApplicationResource_Identity>;
+  /** It will be deprecated in New API, resource location depends on the parent resource. */
+  location?: string | Computed<string>;
   /** The application resource properties. */
   properties?: ApplicationResource_Properties | Computed<ApplicationResource_Properties>;
+  /** Azure resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ApplicationResourceAttrs {
+  /** Azure resource etag. */
+  etag: string;
+  /** Azure resource identifier. */
+  id: string;
   /** Describes the managed identities for an Azure resource. */
   identity: ApplicationResource_Identity;
+  /** It will be deprecated in New API, resource location depends on the parent resource. */
+  location: string;
+  /** Azure resource name. */
+  name: string;
   /** The application resource properties. */
   properties: ApplicationResource_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: ApplicationResource_SystemData;
+  /** Azure resource tags. */
+  tags: Record<string, string>;
+  /** Azure resource type. */
+  type: string;
 }
 
 export const ApplicationResource: ResourceBinding<ApplicationResourceConfig, ApplicationResourceAttrs> = {
@@ -67,10 +100,12 @@ export const ApplicationResource: ResourceBinding<ApplicationResourceConfig, App
       kind: "object",
       fields: ApplicationResource_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ApplicationResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

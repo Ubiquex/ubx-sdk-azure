@@ -230,10 +230,14 @@ var DatabasesDatabase_PropertiesFields = ubx.FieldMap{
 type DatabasesDatabaseConfig struct {
 	// Azure Active Directory identity configuration for a resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// The database's properties.
 	Properties any
 	// An ARM Resource SKU.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type DatabasesDatabaseAttrs struct {
@@ -241,12 +245,16 @@ type DatabasesDatabaseAttrs struct {
 	Identity any
 	// Kind of database. This is metadata used for the Azure portal experience.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Resource that manages the database.
 	ManagedBy any
 	// The database's properties.
 	Properties any
 	// An ARM Resource SKU.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var DatabasesDatabase = ubx.ResourceBinding{
@@ -257,6 +265,7 @@ var DatabasesDatabase = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   DatabasesDatabase_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -267,5 +276,6 @@ var DatabasesDatabase = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   DatabasesDatabase_Properties_CurrentSkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

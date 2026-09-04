@@ -29,6 +29,21 @@ class ProjectEnvironmentType_Properties:
     # Provisioning state of the resource.
     provisioning_state: Any = None
 
+@dataclasses.dataclass
+class ProjectEnvironmentType_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _ProjectEnvironmentType_Identity_UserAssignedIdentitiesFields = {
     "client_id": ubx.FieldSpec(wire_name="client_id"),
     "principal_id": ubx.FieldSpec(wire_name="principal_id"),
@@ -63,14 +78,22 @@ class ProjectEnvironmentTypeConfig:
 
 @dataclasses.dataclass
 class ProjectEnvironmentTypeAttrs:
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
     # The geo-location for the environment type
     location: Any = None
+    # The name of the resource
+    name: Any = None
     # Properties of a project environment type.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
     # Resource tags.
     tags: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 ProjectEnvironmentType = ubx.ResourceBinding(
     wire_type="azure_devcenter_project_environment_type",

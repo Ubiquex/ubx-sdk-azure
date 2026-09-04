@@ -39,15 +39,23 @@ var VirtualNetwork_PropertiesFields = ubx.FieldMap{
 type VirtualNetworkConfig struct {
 	// The extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualNetworkAttrs struct {
 	// The extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var VirtualNetwork = ubx.ResourceBinding{
@@ -58,10 +66,12 @@ var VirtualNetwork = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualNetwork_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualNetwork_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

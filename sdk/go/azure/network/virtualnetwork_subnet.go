@@ -11932,6 +11932,8 @@ var VirtualnetworkSubnet_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkSubnetConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of the subnet.
 	Properties any
 }
@@ -11939,13 +11941,18 @@ type VirtualnetworkSubnetConfig struct {
 type VirtualnetworkSubnetAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of the subnet.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkSubnet = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_subnet",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

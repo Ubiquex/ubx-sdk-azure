@@ -160,6 +160,8 @@ const VirtualnetworkVirtualNetworkPeering_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkVirtualNetworkPeeringConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of the virtual network peering. */
   properties?: VirtualnetworkVirtualNetworkPeering_Properties | Computed<VirtualnetworkVirtualNetworkPeering_Properties>;
 }
@@ -167,13 +169,18 @@ export interface VirtualnetworkVirtualNetworkPeeringConfig {
 export interface VirtualnetworkVirtualNetworkPeeringAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the virtual network peering. */
   properties: VirtualnetworkVirtualNetworkPeering_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkVirtualNetworkPeering: ResourceBinding<VirtualnetworkVirtualNetworkPeeringConfig, VirtualnetworkVirtualNetworkPeeringAttrs> = {
   wireType: "azure_network_virtualnetwork_virtual_network_peering",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -20,18 +20,27 @@ const TransformationsTransformation_PropertiesFields: FieldMap = {
 };
 
 export interface TransformationsTransformationConfig {
+  /** Resource name */
+  name?: string | Computed<string>;
   /** The properties that are associated with a transformation. */
   properties?: TransformationsTransformation_Properties | Computed<TransformationsTransformation_Properties>;
 }
 
 export interface TransformationsTransformationAttrs {
+  /** Resource Id */
+  id: string;
+  /** Resource name */
+  name: string;
   /** The properties that are associated with a transformation. */
   properties: TransformationsTransformation_Properties;
+  /** Resource type */
+  type: string;
 }
 
 export const TransformationsTransformation: ResourceBinding<TransformationsTransformationConfig, TransformationsTransformationAttrs> = {
   wireType: "azure_streamanalytics_transformations_transformation",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

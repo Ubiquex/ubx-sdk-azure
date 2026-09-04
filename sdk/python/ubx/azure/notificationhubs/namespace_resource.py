@@ -501,21 +501,30 @@ _NamespaceResource_SkuFields = {
 
 @dataclasses.dataclass
 class NamespaceResourceConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Represents namespace properties.
     properties: Any = None
     # The Sku description for a namespace
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class NamespaceResourceAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Represents namespace properties.
     properties: Any = None
     # The Sku description for a namespace
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 NamespaceResource = ubx.ResourceBinding(
     wire_type="azure_notificationhubs_namespace_resource",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -526,5 +535,6 @@ NamespaceResource = ubx.ResourceBinding(
             kind="object",
             fields=_NamespaceResource_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

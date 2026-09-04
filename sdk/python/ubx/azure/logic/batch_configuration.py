@@ -112,21 +112,37 @@ _BatchConfiguration_PropertiesFields = {
 
 @dataclasses.dataclass
 class BatchConfigurationConfig:
+    # The resource location.
+    location: Any = None
     # The batch configuration properties definition.
     properties: Any = None
+    # The resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class BatchConfigurationAttrs:
+    # The resource id.
+    id: Any = None
+    # The resource location.
+    location: Any = None
+    # Gets the resource name.
+    name: Any = None
     # The batch configuration properties definition.
     properties: Any = None
+    # The resource tags.
+    tags: Any = None
+    # Gets the resource type.
+    type: Any = None
 
 BatchConfiguration = ubx.ResourceBinding(
     wire_type="azure_logic_batch_configuration",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_BatchConfiguration_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -105,15 +105,23 @@ var CloudngfwLocalRulestackResource_PropertiesFields = ubx.FieldMap{
 type CloudngfwLocalRulestackResourceConfig struct {
 	// The properties of the managed service identities assigned to this resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// PAN Rulestack Describe Object
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type CloudngfwLocalRulestackResourceAttrs struct {
 	// The properties of the managed service identities assigned to this resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// PAN Rulestack Describe Object
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var CloudngfwLocalRulestackResource = ubx.ResourceBinding{
@@ -124,10 +132,12 @@ var CloudngfwLocalRulestackResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   CloudngfwLocalRulestackResource_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   CloudngfwLocalRulestackResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -1954,12 +1954,16 @@ class MachineConfig:
     extended_location: Any = None
     # Identity for the virtual machine.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the user-defined constraints for resource hardware placement.
     placement: Any = None
     # Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use. In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**.
     plan: Any = None
     # Describes the properties of a Virtual Machine.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
@@ -1971,6 +1975,8 @@ class MachineAttrs:
     extended_location: Any = None
     # Identity for the virtual machine.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # ManagedBy is set to Virtual Machine Scale Set(VMSS) flex ARM resourceID, if the VM is part of the VMSS. This property is used by platform for internal resource group delete optimization.
     managed_by: Any = None
     # Describes the user-defined constraints for resource hardware placement.
@@ -1981,6 +1987,8 @@ class MachineAttrs:
     properties: Any = None
     # The virtual machine child extension resources.
     resources: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
@@ -1997,6 +2005,7 @@ Machine = ubx.ResourceBinding(
             kind="object",
             fields=_Machine_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "placement": ubx.FieldSpec(
             wire_name="placement",
             kind="object",
@@ -2012,6 +2021,7 @@ Machine = ubx.ResourceBinding(
             kind="object",
             fields=_Machine_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

@@ -49,10 +49,16 @@ class PermissionBindingConfig:
 
 @dataclasses.dataclass
 class PermissionBindingAttrs:
+    # Fully qualified identifier of the resource.
+    id: Any = None
+    # Name of the resource.
+    name: Any = None
     # The properties of permission binding.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Type of the resource.
+    type: Any = None
 
 PermissionBinding = ubx.ResourceBinding(
     wire_type="azure_eventgrid_permission_binding",

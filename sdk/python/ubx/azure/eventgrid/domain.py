@@ -224,17 +224,25 @@ _Domain_PropertiesFields = {
 class DomainConfig:
     # The identity information for the resource.
     identity: Any = None
+    # Location of the resource.
+    location: Any = None
     # Properties of the Event Grid Domain Resource.
     properties: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 @dataclasses.dataclass
 class DomainAttrs:
     # The identity information for the resource.
     identity: Any = None
+    # Location of the resource.
+    location: Any = None
     # Properties of the Event Grid Domain Resource.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 Domain = ubx.ResourceBinding(
     wire_type="azure_eventgrid_domain",
@@ -244,10 +252,12 @@ Domain = ubx.ResourceBinding(
             kind="object",
             fields=_Domain_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Domain_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

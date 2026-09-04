@@ -8,6 +8,21 @@ type VdiSchedule_Properties struct {
 	ProvisioningState any
 }
 
+type VdiSchedule_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var VdiSchedule_PropertiesFields = ubx.FieldMap{
 	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
 }
@@ -18,8 +33,16 @@ type VdiScheduleConfig struct {
 }
 
 type VdiScheduleAttrs struct {
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
+	// The name of the resource
+	Name any
 	// The Schedule properties defining when and what to execute.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var VdiSchedule = ubx.ResourceBinding{

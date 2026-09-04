@@ -16,6 +16,21 @@ type AttachedNetworkConnection_Properties struct {
 	ProvisioningState any
 }
 
+type AttachedNetworkConnection_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var AttachedNetworkConnection_PropertiesFields = ubx.FieldMap{
 	"DomainJoinType":            ubx.FieldSpec{WireName: "domain_join_type"},
 	"HealthCheckStatus":         ubx.FieldSpec{WireName: "health_check_status"},
@@ -30,8 +45,16 @@ type AttachedNetworkConnectionConfig struct {
 }
 
 type AttachedNetworkConnectionAttrs struct {
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
+	// The name of the resource
+	Name any
 	// Properties of an attached NetworkConnection.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var AttachedNetworkConnection = ubx.ResourceBinding{

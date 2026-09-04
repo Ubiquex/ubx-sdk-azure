@@ -106,22 +106,38 @@ const BatchConfiguration_PropertiesFields: FieldMap = {
 };
 
 export interface BatchConfigurationConfig {
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** The batch configuration properties definition. */
   properties: BatchConfiguration_Properties | Computed<BatchConfiguration_Properties>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface BatchConfigurationAttrs {
+  /** The resource id. */
+  id: string;
+  /** The resource location. */
+  location: string;
+  /** Gets the resource name. */
+  name: string;
   /** The batch configuration properties definition. */
   properties: BatchConfiguration_Properties;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** Gets the resource type. */
+  type: string;
 }
 
 export const BatchConfiguration: ResourceBinding<BatchConfigurationConfig, BatchConfigurationAttrs> = {
   wireType: "azure_logic_batch_configuration",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: BatchConfiguration_PropertiesFields,
     },
+    tags: "tags",
   },
 };

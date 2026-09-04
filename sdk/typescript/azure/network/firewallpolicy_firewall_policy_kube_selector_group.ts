@@ -53,6 +53,8 @@ const FirewallpolicyFirewallPolicyKubeSelectorGroup_PropertiesFields: FieldMap =
 };
 
 export interface FirewallpolicyFirewallPolicyKubeSelectorGroupConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of the Kubernetes Selector Group. */
   properties?: FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties | Computed<FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties>;
 }
@@ -60,13 +62,18 @@ export interface FirewallpolicyFirewallPolicyKubeSelectorGroupConfig {
 export interface FirewallpolicyFirewallPolicyKubeSelectorGroupAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the Kubernetes Selector Group. */
   properties: FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const FirewallpolicyFirewallPolicyKubeSelectorGroup: ResourceBinding<FirewallpolicyFirewallPolicyKubeSelectorGroupConfig, FirewallpolicyFirewallPolicyKubeSelectorGroupAttrs> = {
   wireType: "azure_network_firewallpolicy_firewall_policy_kube_selector_group",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

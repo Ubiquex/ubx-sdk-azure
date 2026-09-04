@@ -16,6 +16,21 @@ class OpenapiPrivateLinkResource2_Properties:
     required_zone_names: Any = None
 
 @dataclasses.dataclass
+class OpenapiPrivateLinkResource2_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
 class OpenapiPrivateLinkResource2Config:
     group_name: Any = None
     server_name: Any = None
@@ -23,9 +38,17 @@ class OpenapiPrivateLinkResource2Config:
 @dataclasses.dataclass
 class OpenapiPrivateLinkResource2Attrs:
     group_name: Any = None
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     # Properties of a private link resource.
     properties: Any = None
     server_name: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 OpenapiPrivateLinkResource2 = ubx.DataSourceBinding(
     wire_type="azure_mysql_openapi_private_link_resource_2",

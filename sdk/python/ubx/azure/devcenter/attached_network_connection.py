@@ -19,6 +19,21 @@ class AttachedNetworkConnection_Properties:
     # Provisioning state of the resource.
     provisioning_state: Any = None
 
+@dataclasses.dataclass
+class AttachedNetworkConnection_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _AttachedNetworkConnection_PropertiesFields = {
     "domain_join_type": ubx.FieldSpec(wire_name="domain_join_type"),
     "health_check_status": ubx.FieldSpec(wire_name="health_check_status"),
@@ -34,8 +49,16 @@ class AttachedNetworkConnectionConfig:
 
 @dataclasses.dataclass
 class AttachedNetworkConnectionAttrs:
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     # Properties of an attached NetworkConnection.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 AttachedNetworkConnection = ubx.ResourceBinding(
     wire_type="azure_devcenter_attached_network_connection",

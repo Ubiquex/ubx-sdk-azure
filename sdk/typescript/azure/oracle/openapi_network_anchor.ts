@@ -79,15 +79,23 @@ const OpenapiNetworkAnchor_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiNetworkAnchorConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Network Anchor properties */
   properties?: OpenapiNetworkAnchor_Properties | Computed<OpenapiNetworkAnchor_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiNetworkAnchorAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Network Anchor properties */
   properties: OpenapiNetworkAnchor_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -95,11 +103,13 @@ export interface OpenapiNetworkAnchorAttrs {
 export const OpenapiNetworkAnchor: ResourceBinding<OpenapiNetworkAnchorConfig, OpenapiNetworkAnchorAttrs> = {
   wireType: "azure_oracle_openapi_network_anchor",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiNetworkAnchor_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

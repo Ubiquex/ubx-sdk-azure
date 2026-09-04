@@ -16,6 +16,21 @@ class PrivateLinkResource2_Properties:
     required_zone_names: Any = None
 
 @dataclasses.dataclass
+class PrivateLinkResource2_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
 class PrivateLinkResource2Config:
     account_name: Any = None
     group_id: Any = None
@@ -24,8 +39,16 @@ class PrivateLinkResource2Config:
 class PrivateLinkResource2Attrs:
     account_name: Any = None
     group_id: Any = None
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     # Properties of a private link resource.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 PrivateLinkResource2 = ubx.DataSourceBinding(
     wire_type="azure_vi_private_link_resource_2",

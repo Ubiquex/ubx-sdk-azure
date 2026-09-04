@@ -42,22 +42,37 @@ const IntegrationAccount_SkuFields: FieldMap = {
 };
 
 export interface IntegrationAccountConfig {
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** The integration account properties. */
   properties?: IntegrationAccount_Properties | Computed<IntegrationAccount_Properties>;
   /** The integration account sku. */
   sku?: IntegrationAccount_Sku | Computed<IntegrationAccount_Sku>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface IntegrationAccountAttrs {
+  /** The resource id. */
+  id: string;
+  /** The resource location. */
+  location: string;
+  /** Gets the resource name. */
+  name: string;
   /** The integration account properties. */
   properties: IntegrationAccount_Properties;
   /** The integration account sku. */
   sku: IntegrationAccount_Sku;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** Gets the resource type. */
+  type: string;
 }
 
 export const IntegrationAccount: ResourceBinding<IntegrationAccountConfig, IntegrationAccountAttrs> = {
   wireType: "azure_logic_integration_account",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -68,5 +83,6 @@ export const IntegrationAccount: ResourceBinding<IntegrationAccountConfig, Integ
       kind: "object",
       fields: IntegrationAccount_SkuFields,
     },
+    tags: "tags",
   },
 };

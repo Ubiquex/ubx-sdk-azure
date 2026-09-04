@@ -83,15 +83,23 @@ const PlacementGroup_PropertiesFields: FieldMap = {
 };
 
 export interface PlacementGroupConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describes the properties of a Proximity Placement Group. */
   properties?: PlacementGroup_Properties | Computed<PlacementGroup_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface PlacementGroupAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describes the properties of a Proximity Placement Group. */
   properties: PlacementGroup_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -99,11 +107,13 @@ export interface PlacementGroupAttrs {
 export const PlacementGroup: ResourceBinding<PlacementGroupConfig, PlacementGroupAttrs> = {
   wireType: "azure_proximity_placement_group",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: PlacementGroup_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

@@ -43,6 +43,8 @@ const VirtualwanHubRouteTable_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanHubRouteTableConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Parameters for RouteTable. */
   properties?: VirtualwanHubRouteTable_Properties | Computed<VirtualwanHubRouteTable_Properties>;
 }
@@ -50,13 +52,18 @@ export interface VirtualwanHubRouteTableConfig {
 export interface VirtualwanHubRouteTableAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Parameters for RouteTable. */
   properties: VirtualwanHubRouteTable_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualwanHubRouteTable: ResourceBinding<VirtualwanHubRouteTableConfig, VirtualwanHubRouteTableAttrs> = {
   wireType: "azure_network_virtualwan_hub_route_table",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

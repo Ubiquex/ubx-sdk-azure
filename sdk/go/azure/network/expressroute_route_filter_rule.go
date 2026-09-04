@@ -22,6 +22,8 @@ var ExpressrouteRouteFilterRule_PropertiesFields = ubx.FieldMap{
 }
 
 type ExpressrouteRouteFilterRuleConfig struct {
+	// Resource ID.
+	Id any
 	// Resource location.
 	Location any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
@@ -33,6 +35,8 @@ type ExpressrouteRouteFilterRuleConfig struct {
 type ExpressrouteRouteFilterRuleAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// Resource location.
 	Location any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
@@ -44,6 +48,7 @@ type ExpressrouteRouteFilterRuleAttrs struct {
 var ExpressrouteRouteFilterRule = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_route_filter_rule",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Name":     ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{

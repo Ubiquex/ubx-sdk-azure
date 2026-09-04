@@ -19,8 +19,14 @@ class DbOpenapiNotebookWorkspaceConfig:
 
 @dataclasses.dataclass
 class DbOpenapiNotebookWorkspaceAttrs:
+    # The unique resource identifier of the database account.
+    id: Any = None
+    # The name of the database account.
+    name: Any = None
     # Properties of a notebook workspace resource.
     properties: Any = None
+    # The type of Azure resource.
+    type: Any = None
 
 DbOpenapiNotebookWorkspace = ubx.ResourceBinding(
     wire_type="azure_cosmos_db_openapi_notebook_workspace",

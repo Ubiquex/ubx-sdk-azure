@@ -156,6 +156,8 @@ _VirtualwanNetworkVirtualApplianceConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanNetworkVirtualApplianceConnectionConfig:
+    # Resource ID.
+    id: Any = None
     # The name of the resource.
     name: Any = None
     # Properties of the NetworkVirtualApplianceConnection subresource.
@@ -163,6 +165,8 @@ class VirtualwanNetworkVirtualApplianceConnectionConfig:
 
 @dataclasses.dataclass
 class VirtualwanNetworkVirtualApplianceConnectionAttrs:
+    # Resource ID.
+    id: Any = None
     # The name of the resource.
     name: Any = None
     # Properties of the NetworkVirtualApplianceConnection subresource.
@@ -171,6 +175,7 @@ class VirtualwanNetworkVirtualApplianceConnectionAttrs:
 VirtualwanNetworkVirtualApplianceConnection = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_network_virtual_appliance_connection",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
         "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",

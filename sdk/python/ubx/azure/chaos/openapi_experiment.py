@@ -127,15 +127,23 @@ _OpenapiExperiment_PropertiesFields = {
 class OpenapiExperimentConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Model that represents the Experiment properties model.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiExperimentAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Model that represents the Experiment properties model.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiExperiment = ubx.ResourceBinding(
     wire_type="azure_chaos_openapi_experiment",
@@ -145,10 +153,12 @@ OpenapiExperiment = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiExperiment_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiExperiment_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

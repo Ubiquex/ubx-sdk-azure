@@ -39,23 +39,33 @@ const ResourceGuardResource_PropertiesFields: FieldMap = {
 export interface ResourceGuardResourceConfig {
   /** Optional ETag. */
   eTag?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   properties?: ResourceGuardResource_Properties | Computed<ResourceGuardResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ResourceGuardResourceAttrs {
   /** Optional ETag. */
   eTag: string;
+  /** The geo-location where the resource lives */
+  location: string;
   properties: ResourceGuardResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ResourceGuardResource: ResourceBinding<ResourceGuardResourceConfig, ResourceGuardResourceAttrs> = {
   wireType: "azure_dataprotection_resource_guard_resource",
   fields: {
     eTag: "e_tag",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ResourceGuardResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

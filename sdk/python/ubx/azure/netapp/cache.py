@@ -199,8 +199,12 @@ _Cache_PropertiesFields = {
 
 @dataclasses.dataclass
 class CacheConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Cache resource properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
@@ -208,19 +212,25 @@ class CacheConfig:
 class CacheAttrs:
     # "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
     etag: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Cache resource properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 Cache = ubx.ResourceBinding(
     wire_type="azure_netapp_cache",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Cache_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

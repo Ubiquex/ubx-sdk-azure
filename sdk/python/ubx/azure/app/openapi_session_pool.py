@@ -279,15 +279,23 @@ _OpenapiSessionPool_PropertiesFields = {
 class OpenapiSessionPoolConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Container App session pool resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiSessionPoolAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Container App session pool resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiSessionPool = ubx.ResourceBinding(
     wire_type="azure_app_openapi_session_pool",
@@ -297,10 +305,12 @@ OpenapiSessionPool = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiSessionPool_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiSessionPool_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

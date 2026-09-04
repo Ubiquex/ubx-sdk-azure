@@ -5885,6 +5885,8 @@ var VirtualnetworkNetworkInterfaceTapConfiguration_PropertiesFields = ubx.FieldM
 }
 
 type VirtualnetworkNetworkInterfaceTapConfigurationConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of Virtual Network Tap configuration.
 	Properties any
 }
@@ -5892,13 +5894,18 @@ type VirtualnetworkNetworkInterfaceTapConfigurationConfig struct {
 type VirtualnetworkNetworkInterfaceTapConfigurationAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of Virtual Network Tap configuration.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkNetworkInterfaceTapConfiguration = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_network_interface_tap_configuration",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

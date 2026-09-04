@@ -287,8 +287,12 @@ class BackupVaultResourceConfig:
     e_tag: Any = None
     # Identity details
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Backup Vault
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class BackupVaultResourceAttrs:
@@ -296,8 +300,12 @@ class BackupVaultResourceAttrs:
     e_tag: Any = None
     # Identity details
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Backup Vault
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 BackupVaultResource = ubx.ResourceBinding(
     wire_type="azure_dataprotection_backup_vault_resource",
@@ -308,10 +316,12 @@ BackupVaultResource = ubx.ResourceBinding(
             kind="object",
             fields=_BackupVaultResource_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_BackupVaultResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

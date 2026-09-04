@@ -184,15 +184,23 @@ _MonitorsMonitor_PropertiesFields = {
 class MonitorsMonitorConfig:
     # A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a SAP monitor.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class MonitorsMonitorAttrs:
     # A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a SAP monitor.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 MonitorsMonitor = ubx.ResourceBinding(
     wire_type="azure_workloads_monitors_monitor",
@@ -202,10 +210,12 @@ MonitorsMonitor = ubx.ResourceBinding(
             kind="object",
             fields=_MonitorsMonitor_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_MonitorsMonitor_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -84,24 +84,33 @@ const ElasticpoolsElasticPool_SkuFields: FieldMap = {
 };
 
 export interface ElasticpoolsElasticPoolConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of an elastic pool */
   properties?: ElasticpoolsElasticPool_Properties | Computed<ElasticpoolsElasticPool_Properties>;
   /** An ARM Resource SKU. */
   sku?: ElasticpoolsElasticPool_Sku | Computed<ElasticpoolsElasticPool_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ElasticpoolsElasticPoolAttrs {
   /** Kind of elastic pool. This is metadata used for the Azure portal experience. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of an elastic pool */
   properties: ElasticpoolsElasticPool_Properties;
   /** An ARM Resource SKU. */
   sku: ElasticpoolsElasticPool_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ElasticpoolsElasticPool: ResourceBinding<ElasticpoolsElasticPoolConfig, ElasticpoolsElasticPoolAttrs> = {
   wireType: "azure_sql_elasticpools_elastic_pool",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -112,5 +121,6 @@ export const ElasticpoolsElasticPool: ResourceBinding<ElasticpoolsElasticPoolCon
       kind: "object",
       fields: ElasticpoolsElasticPool_SkuFields,
     },
+    tags: "tags",
   },
 };

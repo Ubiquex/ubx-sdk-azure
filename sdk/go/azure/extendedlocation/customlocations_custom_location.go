@@ -79,17 +79,25 @@ var CustomlocationsCustomLocation_PropertiesFields = ubx.FieldMap{
 type CustomlocationsCustomLocationConfig struct {
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties for a custom location.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type CustomlocationsCustomLocationAttrs struct {
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties for a custom location.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource tags.
+	Tags any
 }
 
 var CustomlocationsCustomLocation = ubx.ResourceBinding{
@@ -100,10 +108,12 @@ var CustomlocationsCustomLocation = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   CustomlocationsCustomLocation_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   CustomlocationsCustomLocation_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

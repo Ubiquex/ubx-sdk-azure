@@ -44,22 +44,37 @@ var IntegrationAccount_SkuFields = ubx.FieldMap{
 }
 
 type IntegrationAccountConfig struct {
+	// The resource location.
+	Location any
 	// The integration account properties.
 	Properties any
 	// The integration account sku.
 	Sku any
+	// The resource tags.
+	Tags any
 }
 
 type IntegrationAccountAttrs struct {
+	// The resource id.
+	Id any
+	// The resource location.
+	Location any
+	// Gets the resource name.
+	Name any
 	// The integration account properties.
 	Properties any
 	// The integration account sku.
 	Sku any
+	// The resource tags.
+	Tags any
+	// Gets the resource type.
+	Type any
 }
 
 var IntegrationAccount = ubx.ResourceBinding{
 	WireType: "azure_logic_integration_account",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -70,5 +85,6 @@ var IntegrationAccount = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   IntegrationAccount_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

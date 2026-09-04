@@ -208,24 +208,43 @@ const VirtualwanExpressRouteGateway_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanExpressRouteGatewayConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** ExpressRoute gateway resource properties. */
   properties?: VirtualwanExpressRouteGateway_Properties | Computed<VirtualwanExpressRouteGateway_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualwanExpressRouteGatewayAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** ExpressRoute gateway resource properties. */
   properties: VirtualwanExpressRouteGateway_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualwanExpressRouteGateway: ResourceBinding<VirtualwanExpressRouteGatewayConfig, VirtualwanExpressRouteGatewayAttrs> = {
   wireType: "azure_network_virtualwan_express_route_gateway",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualwanExpressRouteGateway_PropertiesFields,
     },
+    tags: "tags",
   },
 };

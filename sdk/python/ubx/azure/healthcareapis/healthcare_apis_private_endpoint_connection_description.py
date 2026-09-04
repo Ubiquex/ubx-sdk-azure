@@ -75,10 +75,16 @@ class HealthcareApisPrivateEndpointConnectionDescriptionConfig:
 
 @dataclasses.dataclass
 class HealthcareApisPrivateEndpointConnectionDescriptionAttrs:
+    # Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     # Properties of the PrivateEndpointConnectProperties.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 HealthcareApisPrivateEndpointConnectionDescription = ubx.ResourceBinding(
     wire_type="azure_healthcareapis_healthcare_apis_private_endpoint_connection_description",

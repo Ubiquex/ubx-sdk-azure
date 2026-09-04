@@ -812,10 +812,14 @@ type OpenapiContainerAppConfig struct {
 	Identity any
 	// Metadata to represent the container app kind, representing if a container app is workflowapp or functionapp.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// The fully qualified resource ID of the resource that manages this resource. Indicates if this resource is managed by another Azure resource. If this is present, complete mode deployment will not delete the resource if it is removed from the template since it is managed by another resource.
 	ManagedBy any
 	// ContainerApp resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiContainerAppAttrs struct {
@@ -825,10 +829,14 @@ type OpenapiContainerAppAttrs struct {
 	Identity any
 	// Metadata to represent the container app kind, representing if a container app is workflowapp or functionapp.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// The fully qualified resource ID of the resource that manages this resource. Indicates if this resource is managed by another Azure resource. If this is present, complete mode deployment will not delete the resource if it is removed from the template since it is managed by another resource.
 	ManagedBy any
 	// ContainerApp resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiContainerApp = ubx.ResourceBinding{
@@ -845,11 +853,13 @@ var OpenapiContainerApp = ubx.ResourceBinding{
 			Fields:   OpenapiContainerApp_IdentityFields,
 		},
 		"Kind":      ubx.FieldSpec{WireName: "kind"},
+		"Location":  ubx.FieldSpec{WireName: "location"},
 		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiContainerApp_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

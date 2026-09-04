@@ -69,17 +69,25 @@ const SystemTopic_PropertiesFields: FieldMap = {
 export interface SystemTopicConfig {
   /** The identity information for the resource. */
   identity?: SystemTopic_Identity | Computed<SystemTopic_Identity>;
+  /** Location of the resource. */
+  location: string | Computed<string>;
   /** Properties of the System Topic. */
   properties?: SystemTopic_Properties | Computed<SystemTopic_Properties>;
+  /** Tags of the resource. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SystemTopicAttrs {
   /** The identity information for the resource. */
   identity: SystemTopic_Identity;
+  /** Location of the resource. */
+  location: string;
   /** Properties of the System Topic. */
   properties: SystemTopic_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: SystemTopic_SystemData;
+  /** Tags of the resource. */
+  tags: Record<string, string>;
 }
 
 export const SystemTopic: ResourceBinding<SystemTopicConfig, SystemTopicAttrs> = {
@@ -90,10 +98,12 @@ export const SystemTopic: ResourceBinding<SystemTopicConfig, SystemTopicAttrs> =
       kind: "object",
       fields: SystemTopic_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: SystemTopic_PropertiesFields,
     },
+    tags: "tags",
   },
 };

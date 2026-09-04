@@ -194,8 +194,12 @@ const NetAppAccount_PropertiesFields: FieldMap = {
 export interface NetAppAccountConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: NetAppAccount_Identity | Computed<NetAppAccount_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** NetApp account properties */
   properties?: NetAppAccount_Properties | Computed<NetAppAccount_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NetAppAccountAttrs {
@@ -203,8 +207,12 @@ export interface NetAppAccountAttrs {
   etag: string;
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: NetAppAccount_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** NetApp account properties */
   properties: NetAppAccount_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const NetAppAccount: ResourceBinding<NetAppAccountConfig, NetAppAccountAttrs> = {
@@ -215,10 +223,12 @@ export const NetAppAccount: ResourceBinding<NetAppAccountConfig, NetAppAccountAt
       kind: "object",
       fields: NetAppAccount_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetAppAccount_PropertiesFields,
     },
+    tags: "tags",
   },
 };

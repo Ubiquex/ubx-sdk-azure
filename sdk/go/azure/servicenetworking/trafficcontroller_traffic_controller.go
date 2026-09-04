@@ -65,22 +65,32 @@ var TrafficcontrollerTrafficController_PropertiesFields = ubx.FieldMap{
 }
 
 type TrafficcontrollerTrafficControllerConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Traffic Controller Properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type TrafficcontrollerTrafficControllerAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Traffic Controller Properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var TrafficcontrollerTrafficController = ubx.ResourceBinding{
 	WireType: "azure_servicenetworking_trafficcontroller_traffic_controller",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   TrafficcontrollerTrafficController_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

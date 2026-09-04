@@ -41,6 +41,8 @@ _VirtualwanVirtualHubRouteTableV2_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanVirtualHubRouteTableV2Config:
+    # Resource ID.
+    id: Any = None
     # The name of the resource that is unique within a resource group. This name can be used to access the resource.
     name: Any = None
     # Parameters for VirtualHubRouteTableV2.
@@ -50,6 +52,8 @@ class VirtualwanVirtualHubRouteTableV2Config:
 class VirtualwanVirtualHubRouteTableV2Attrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
     # The name of the resource that is unique within a resource group. This name can be used to access the resource.
     name: Any = None
     # Parameters for VirtualHubRouteTableV2.
@@ -58,6 +62,7 @@ class VirtualwanVirtualHubRouteTableV2Attrs:
 VirtualwanVirtualHubRouteTableV2 = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_virtual_hub_route_table_v2",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
         "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",

@@ -79,6 +79,8 @@ export interface MachineScaleSetExtensionConfig {
 }
 
 export interface MachineScaleSetExtensionAttrs {
+  /** Resource Id */
+  id: string;
   /** Resource name */
   name: string;
   /** Describes the properties of a Virtual Machine Scale Set Extension. */

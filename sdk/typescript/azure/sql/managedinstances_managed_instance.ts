@@ -297,19 +297,27 @@ const ManagedinstancesManagedInstance_SkuFields: FieldMap = {
 export interface ManagedinstancesManagedInstanceConfig {
   /** Azure Active Directory identity configuration for a resource. */
   identity?: ManagedinstancesManagedInstance_Identity | Computed<ManagedinstancesManagedInstance_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The properties of a managed instance. */
   properties?: ManagedinstancesManagedInstance_Properties | Computed<ManagedinstancesManagedInstance_Properties>;
   /** An ARM Resource SKU. */
   sku?: ManagedinstancesManagedInstance_Sku | Computed<ManagedinstancesManagedInstance_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ManagedinstancesManagedInstanceAttrs {
   /** Azure Active Directory identity configuration for a resource. */
   identity: ManagedinstancesManagedInstance_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** The properties of a managed instance. */
   properties: ManagedinstancesManagedInstance_Properties;
   /** An ARM Resource SKU. */
   sku: ManagedinstancesManagedInstance_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ManagedinstancesManagedInstance: ResourceBinding<ManagedinstancesManagedInstanceConfig, ManagedinstancesManagedInstanceAttrs> = {
@@ -320,6 +328,7 @@ export const ManagedinstancesManagedInstance: ResourceBinding<ManagedinstancesMa
       kind: "object",
       fields: ManagedinstancesManagedInstance_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -330,5 +339,6 @@ export const ManagedinstancesManagedInstance: ResourceBinding<ManagedinstancesMa
       kind: "object",
       fields: ManagedinstancesManagedInstance_SkuFields,
     },
+    tags: "tags",
   },
 };

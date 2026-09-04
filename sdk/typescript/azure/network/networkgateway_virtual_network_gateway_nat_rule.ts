@@ -44,6 +44,8 @@ const NetworkgatewayVirtualNetworkGatewayNatRule_PropertiesFields: FieldMap = {
 };
 
 export interface NetworkgatewayVirtualNetworkGatewayNatRuleConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Parameters for VirtualNetworkGatewayNatRule. */
   properties?: NetworkgatewayVirtualNetworkGatewayNatRule_Properties | Computed<NetworkgatewayVirtualNetworkGatewayNatRule_Properties>;
 }
@@ -51,13 +53,18 @@ export interface NetworkgatewayVirtualNetworkGatewayNatRuleConfig {
 export interface NetworkgatewayVirtualNetworkGatewayNatRuleAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Parameters for VirtualNetworkGatewayNatRule. */
   properties: NetworkgatewayVirtualNetworkGatewayNatRule_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkgatewayVirtualNetworkGatewayNatRule: ResourceBinding<NetworkgatewayVirtualNetworkGatewayNatRuleConfig, NetworkgatewayVirtualNetworkGatewayNatRuleAttrs> = {
   wireType: "azure_network_networkgateway_virtual_network_gateway_nat_rule",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -269,19 +269,27 @@ var Sbnamespace_SkuFields = ubx.FieldMap{
 type SbnamespaceConfig struct {
 	// Properties to configure User Assigned Identities for Bring your Own Keys
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the namespace.
 	Properties any
 	// SKU of the namespace.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type SbnamespaceAttrs struct {
 	// Properties to configure User Assigned Identities for Bring your Own Keys
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the namespace.
 	Properties any
 	// SKU of the namespace.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var Sbnamespace = ubx.ResourceBinding{
@@ -292,6 +300,7 @@ var Sbnamespace = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Sbnamespace_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -302,5 +311,6 @@ var Sbnamespace = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Sbnamespace_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

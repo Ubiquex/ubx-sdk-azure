@@ -107,10 +107,16 @@ type ChannelConfig struct {
 }
 
 type ChannelAttrs struct {
+	// Fully qualified identifier of the resource.
+	Id any
+	// Name of the resource.
+	Name any
 	// Properties of the Channel.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Type of the resource.
+	Type any
 }
 
 var Channel = ubx.ResourceBinding{

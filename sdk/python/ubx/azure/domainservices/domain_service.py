@@ -171,6 +171,21 @@ class DomainService_Properties:
     # Data Model Version
     version: Any = None
 
+@dataclasses.dataclass
+class DomainService_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _DomainService_Properties_ConfigDiagnostics_ValidatorResults_IssuesFields = {
     "description_params": ubx.FieldSpec(wire_name="description_params"),
     "id": ubx.FieldSpec(wire_name="id"),
@@ -344,21 +359,44 @@ _DomainService_PropertiesFields = {
 
 @dataclasses.dataclass
 class DomainServiceConfig:
+    # Resource etag
+    etag: Any = None
+    # Resource location
+    location: Any = None
     # Properties of the Domain Service.
     properties: Any = None
+    # Resource tags
+    tags: Any = None
 
 @dataclasses.dataclass
 class DomainServiceAttrs:
+    # Resource etag
+    etag: Any = None
+    # Resource Id
+    id: Any = None
+    # Resource location
+    location: Any = None
+    # Resource name
+    name: Any = None
     # Properties of the Domain Service.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Resource tags
+    tags: Any = None
+    # Resource type
+    type: Any = None
 
 DomainService = ubx.ResourceBinding(
     wire_type="azure_domainservices_domain_service",
     fields={
+        "etag": ubx.FieldSpec(wire_name="etag"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_DomainService_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -61,10 +61,18 @@ class NetworkmanagerRoutingRuleCollectionConfig:
 
 @dataclasses.dataclass
 class NetworkmanagerRoutingRuleCollectionAttrs:
+    # A unique read-only string that changes whenever the resource is updated.
+    etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource name.
+    name: Any = None
     # Defines the routing rule collection properties.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource type.
+    type: Any = None
 
 NetworkmanagerRoutingRuleCollection = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_routing_rule_collection",

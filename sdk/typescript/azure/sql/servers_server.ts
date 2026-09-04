@@ -184,8 +184,12 @@ const ServersServer_PropertiesFields: FieldMap = {
 export interface ServersServerConfig {
   /** Azure Active Directory identity configuration for a resource. */
   identity?: ServersServer_Identity | Computed<ServersServer_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The properties of a server. */
   properties?: ServersServer_Properties | Computed<ServersServer_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ServersServerAttrs {
@@ -193,8 +197,12 @@ export interface ServersServerAttrs {
   identity: ServersServer_Identity;
   /** Kind of sql server. This is metadata used for the Azure portal experience. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** The properties of a server. */
   properties: ServersServer_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ServersServer: ResourceBinding<ServersServerConfig, ServersServerAttrs> = {
@@ -205,10 +213,12 @@ export const ServersServer: ResourceBinding<ServersServerConfig, ServersServerAt
       kind: "object",
       fields: ServersServer_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ServersServer_PropertiesFields,
     },
+    tags: "tags",
   },
 };

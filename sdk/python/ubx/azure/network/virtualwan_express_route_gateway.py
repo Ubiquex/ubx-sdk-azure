@@ -214,23 +214,42 @@ _VirtualwanExpressRouteGateway_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteGatewayConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # ExpressRoute gateway resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteGatewayAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # ExpressRoute gateway resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualwanExpressRouteGateway = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_express_route_gateway",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualwanExpressRouteGateway_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

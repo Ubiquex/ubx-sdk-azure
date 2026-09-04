@@ -109,21 +109,30 @@ _Namespace_SkuFields = {
 
 @dataclasses.dataclass
 class NamespaceConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the namespace.
     properties: Any = None
     # SKU of the namespace.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class NamespaceAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the namespace.
     properties: Any = None
     # SKU of the namespace.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Namespace = ubx.ResourceBinding(
     wire_type="azure_relay_namespace",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -134,5 +143,6 @@ Namespace = ubx.ResourceBinding(
             kind="object",
             fields=_Namespace_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

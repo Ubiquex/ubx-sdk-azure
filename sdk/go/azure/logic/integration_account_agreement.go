@@ -1282,22 +1282,38 @@ var IntegrationAccountAgreement_PropertiesFields = ubx.FieldMap{
 }
 
 type IntegrationAccountAgreementConfig struct {
+	// The resource location.
+	Location any
 	// The integration account agreement properties.
 	Properties any
+	// The resource tags.
+	Tags any
 }
 
 type IntegrationAccountAgreementAttrs struct {
+	// The resource id.
+	Id any
+	// The resource location.
+	Location any
+	// Gets the resource name.
+	Name any
 	// The integration account agreement properties.
 	Properties any
+	// The resource tags.
+	Tags any
+	// Gets the resource type.
+	Type any
 }
 
 var IntegrationAccountAgreement = ubx.ResourceBinding{
 	WireType: "azure_logic_integration_account_agreement",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   IntegrationAccountAgreement_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

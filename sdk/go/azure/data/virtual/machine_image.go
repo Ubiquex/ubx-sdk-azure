@@ -3,6 +3,13 @@ package virtual
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type MachineImage_ExtendedLocation struct {
+	// The name of the extended location.
+	Name any
+	// The type of extendedLocation.
+	Type any
+}
+
 type MachineImage_Properties_AutomaticOsupgradeProperties struct {
 	// Specifies whether automatic OS upgrade is supported on the image.
 	AutomaticOsupgradeSupported any
@@ -82,12 +89,20 @@ type MachineImageConfig struct {
 
 type MachineImageAttrs struct {
 	EdgeZone any
-	Offer    any
+	// The complex type of the extended location.
+	ExtendedLocation any
+	// The supported Azure location of the resource.
+	Location any
+	// The name of the resource.
+	Name  any
+	Offer any
 	// Describes the properties of a Virtual Machine Image.
 	Properties    any
 	PublisherName any
 	Skus          any
-	Version       any
+	// Specifies the tags that are assigned to the virtual machine. For more information about using tags, see [Using tags to organize your Azure resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags.md).
+	Tags    any
+	Version any
 }
 
 var MachineImage = ubx.DataSourceBinding{

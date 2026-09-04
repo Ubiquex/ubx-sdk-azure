@@ -43,10 +43,16 @@ export interface CaCertificateConfig {
 }
 
 export interface CaCertificateAttrs {
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** The properties of CA certificate. */
   properties: CaCertificate_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: CaCertificate_SystemData;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const CaCertificate: ResourceBinding<CaCertificateConfig, CaCertificateAttrs> = {

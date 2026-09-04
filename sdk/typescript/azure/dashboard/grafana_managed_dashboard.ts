@@ -10,22 +10,32 @@ const GrafanaManagedDashboard_PropertiesFields: FieldMap = {
 };
 
 export interface GrafanaManagedDashboardConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties specific to the grafana resource. */
   properties?: GrafanaManagedDashboard_Properties | Computed<GrafanaManagedDashboard_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface GrafanaManagedDashboardAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties specific to the grafana resource. */
   properties: GrafanaManagedDashboard_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const GrafanaManagedDashboard: ResourceBinding<GrafanaManagedDashboardConfig, GrafanaManagedDashboardAttrs> = {
   wireType: "azure_dashboard_grafana_managed_dashboard",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: GrafanaManagedDashboard_PropertiesFields,
     },
+    tags: "tags",
   },
 };

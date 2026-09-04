@@ -351,10 +351,14 @@ type WebPubSubResourceConfig struct {
 	Identity any
 	// The kind of the service
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// A class that describes the properties of the resource
 	Properties any
 	// The billing information of the resource.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type WebPubSubResourceAttrs struct {
@@ -362,10 +366,14 @@ type WebPubSubResourceAttrs struct {
 	Identity any
 	// The kind of the service
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// A class that describes the properties of the resource
 	Properties any
 	// The billing information of the resource.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var WebPubSubResource = ubx.ResourceBinding{
@@ -376,7 +384,8 @@ var WebPubSubResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   WebPubSubResource_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -387,5 +396,6 @@ var WebPubSubResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   WebPubSubResource_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

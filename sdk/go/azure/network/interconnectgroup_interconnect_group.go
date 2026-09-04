@@ -90,24 +90,43 @@ var InterconnectgroupInterconnectGroup_PropertiesFields = ubx.FieldMap{
 }
 
 type InterconnectgroupInterconnectGroupConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Interconnect group properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type InterconnectgroupInterconnectGroupAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Interconnect group properties.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var InterconnectgroupInterconnectGroup = ubx.ResourceBinding{
 	WireType: "azure_network_interconnectgroup_interconnect_group",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   InterconnectgroupInterconnectGroup_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

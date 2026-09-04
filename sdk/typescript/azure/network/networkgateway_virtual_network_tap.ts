@@ -10010,24 +10010,43 @@ const NetworkgatewayVirtualNetworkTap_PropertiesFields: FieldMap = {
 };
 
 export interface NetworkgatewayVirtualNetworkTapConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Virtual Network Tap properties. */
   properties?: NetworkgatewayVirtualNetworkTap_Properties | Computed<NetworkgatewayVirtualNetworkTap_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NetworkgatewayVirtualNetworkTapAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Virtual Network Tap properties. */
   properties: NetworkgatewayVirtualNetworkTap_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkgatewayVirtualNetworkTap: ResourceBinding<NetworkgatewayVirtualNetworkTapConfig, NetworkgatewayVirtualNetworkTapAttrs> = {
   wireType: "azure_network_networkgateway_virtual_network_tap",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetworkgatewayVirtualNetworkTap_PropertiesFields,
     },
+    tags: "tags",
   },
 };

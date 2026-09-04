@@ -571,22 +571,31 @@ const OpenapiWorkspace_SkuFields: FieldMap = {
 };
 
 export interface OpenapiWorkspaceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The workspace properties. */
   properties: OpenapiWorkspace_Properties | Computed<OpenapiWorkspace_Properties>;
   /** SKU for the resource. */
   sku?: OpenapiWorkspace_Sku | Computed<OpenapiWorkspace_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiWorkspaceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The workspace properties. */
   properties: OpenapiWorkspace_Properties;
   /** SKU for the resource. */
   sku: OpenapiWorkspace_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiWorkspace: ResourceBinding<OpenapiWorkspaceConfig, OpenapiWorkspaceAttrs> = {
   wireType: "azure_databricks_openapi_workspace",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -597,5 +606,6 @@ export const OpenapiWorkspace: ResourceBinding<OpenapiWorkspaceConfig, OpenapiWo
       kind: "object",
       fields: OpenapiWorkspace_SkuFields,
     },
+    tags: "tags",
   },
 };

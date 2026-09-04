@@ -21,6 +21,8 @@ export interface DeletedBackupInstanceResourceConfig {
 }
 
 export interface DeletedBackupInstanceResourceAttrs {
+  /** The uri to fetch the next page of resources. Call ListNext() fetches next page of resources. */
+  nextLink: string;
   /** List of resources. */
   value: DeletedBackupInstanceResource_Value[];
   vaultName: string;

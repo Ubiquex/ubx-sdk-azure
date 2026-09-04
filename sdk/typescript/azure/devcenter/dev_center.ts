@@ -48,15 +48,23 @@ const DevCenter_PropertiesFields: FieldMap = {
 export interface DevCenterConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: DevCenter_Identity | Computed<DevCenter_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the devcenter. */
   properties?: DevCenter_Properties | Computed<DevCenter_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface DevCenterAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: DevCenter_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the devcenter. */
   properties: DevCenter_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const DevCenter: ResourceBinding<DevCenterConfig, DevCenterAttrs> = {
@@ -67,10 +75,12 @@ export const DevCenter: ResourceBinding<DevCenterConfig, DevCenterAttrs> = {
       kind: "object",
       fields: DevCenter_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: DevCenter_PropertiesFields,
     },
+    tags: "tags",
   },
 };

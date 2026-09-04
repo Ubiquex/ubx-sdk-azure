@@ -224,22 +224,32 @@ const SapvirtualinstanceSapcentralServerInstance_PropertiesFields: FieldMap = {
 };
 
 export interface SapvirtualinstanceSapcentralServerInstanceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Defines the SAP Central Services Instance properties. */
   properties?: SapvirtualinstanceSapcentralServerInstance_Properties | Computed<SapvirtualinstanceSapcentralServerInstance_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SapvirtualinstanceSapcentralServerInstanceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Defines the SAP Central Services Instance properties. */
   properties: SapvirtualinstanceSapcentralServerInstance_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const SapvirtualinstanceSapcentralServerInstance: ResourceBinding<SapvirtualinstanceSapcentralServerInstanceConfig, SapvirtualinstanceSapcentralServerInstanceAttrs> = {
   wireType: "azure_workloads_sapvirtualinstance_sapcentral_server_instance",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: SapvirtualinstanceSapcentralServerInstance_PropertiesFields,
     },
+    tags: "tags",
   },
 };

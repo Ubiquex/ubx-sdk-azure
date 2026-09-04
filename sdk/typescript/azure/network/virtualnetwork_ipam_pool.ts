@@ -25,24 +25,34 @@ const VirtualnetworkIpamPool_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkIpamPoolConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of IpamPool resource properties which are specific to the Pool resource. */
   properties: VirtualnetworkIpamPool_Properties | Computed<VirtualnetworkIpamPool_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkIpamPoolAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of IpamPool resource properties which are specific to the Pool resource. */
   properties: VirtualnetworkIpamPool_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const VirtualnetworkIpamPool: ResourceBinding<VirtualnetworkIpamPoolConfig, VirtualnetworkIpamPoolAttrs> = {
   wireType: "azure_network_virtualnetwork_ipam_pool",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkIpamPool_PropertiesFields,
     },
+    tags: "tags",
   },
 };

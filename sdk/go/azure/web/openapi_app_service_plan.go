@@ -356,10 +356,14 @@ type OpenapiAppServicePlanConfig struct {
 	Identity any
 	// Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// AppServicePlan resource specific properties
 	Properties any
 	// Description of a SKU for a scalable resource.
 	Sku any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -371,10 +375,14 @@ type OpenapiAppServicePlanAttrs struct {
 	Identity any
 	// Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// AppServicePlan resource specific properties
 	Properties any
 	// Description of a SKU for a scalable resource.
 	Sku any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -392,7 +400,8 @@ var OpenapiAppServicePlan = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiAppServicePlan_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -403,6 +412,7 @@ var OpenapiAppServicePlan = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiAppServicePlan_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

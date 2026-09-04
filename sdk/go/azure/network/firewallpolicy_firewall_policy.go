@@ -394,33 +394,52 @@ var FirewallpolicyFirewallPolicy_PropertiesFields = ubx.FieldMap{
 }
 
 type FirewallpolicyFirewallPolicyConfig struct {
+	// Resource ID.
+	Id any
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
 	// Firewall Policy definition.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type FirewallpolicyFirewallPolicyAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Firewall Policy definition.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var FirewallpolicyFirewallPolicy = ubx.ResourceBinding{
 	WireType: "azure_network_firewallpolicy_firewall_policy",
 	Fields: ubx.FieldMap{
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
 			Kind:     "object",
 			Fields:   FirewallpolicyFirewallPolicy_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   FirewallpolicyFirewallPolicy_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

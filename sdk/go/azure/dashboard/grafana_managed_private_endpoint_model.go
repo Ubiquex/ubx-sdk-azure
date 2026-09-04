@@ -49,22 +49,32 @@ var GrafanaManagedPrivateEndpointModel_PropertiesFields = ubx.FieldMap{
 }
 
 type GrafanaManagedPrivateEndpointModelConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the managed private endpoint.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type GrafanaManagedPrivateEndpointModelAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the managed private endpoint.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var GrafanaManagedPrivateEndpointModel = ubx.ResourceBinding{
 	WireType: "azure_dashboard_grafana_managed_private_endpoint_model",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   GrafanaManagedPrivateEndpointModel_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

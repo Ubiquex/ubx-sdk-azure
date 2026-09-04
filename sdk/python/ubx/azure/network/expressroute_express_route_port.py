@@ -156,32 +156,51 @@ _ExpressrouteExpressRoutePort_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteExpressRoutePortConfig:
+    # Resource ID.
+    id: Any = None
     # Identity for the resource.
     identity: Any = None
+    # Resource location.
+    location: Any = None
     # Properties specific to ExpressRoutePort resources.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRoutePortAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
     # Identity for the resource.
     identity: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties specific to ExpressRoutePort resources.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 ExpressrouteExpressRoutePort = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_express_route_port",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",
             fields=_ExpressrouteExpressRoutePort_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ExpressrouteExpressRoutePort_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

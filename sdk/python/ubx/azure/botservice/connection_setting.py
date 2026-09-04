@@ -34,6 +34,13 @@ class ConnectionSetting_Properties:
     # Setting Id set by the service for the Connection Setting.
     setting_id: Any = None
 
+@dataclasses.dataclass
+class ConnectionSetting_Sku:
+    # The name of SKU.
+    name: Any = None
+    # Gets the sku tier. This is based on the SKU name.
+    tier: Any = None
+
 _ConnectionSetting_Properties_ParametersFields = {
     "key": ubx.FieldSpec(wire_name="key"),
     "value": ubx.FieldSpec(wire_name="value"),
@@ -56,23 +63,65 @@ _ConnectionSetting_PropertiesFields = {
     "setting_id": ubx.FieldSpec(wire_name="setting_id"),
 }
 
+_ConnectionSetting_SkuFields = {
+    "name": ubx.FieldSpec(wire_name="name"),
+    "tier": ubx.FieldSpec(wire_name="tier"),
+}
+
 @dataclasses.dataclass
 class ConnectionSettingConfig:
+    # Entity Tag.
+    etag: Any = None
+    # Indicates the type of bot service
+    kind: Any = None
+    # Specifies the location of the resource.
+    location: Any = None
     # Properties for a Connection Setting Item
     properties: Any = None
+    # The SKU of the cognitive services account.
+    sku: Any = None
+    # Contains resource tags defined as key/value pairs.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ConnectionSettingAttrs:
+    # Entity Tag.
+    etag: Any = None
+    # Specifies the resource ID.
+    id: Any = None
+    # Indicates the type of bot service
+    kind: Any = None
+    # Specifies the location of the resource.
+    location: Any = None
+    # Specifies the name of the resource.
+    name: Any = None
     # Properties for a Connection Setting Item
     properties: Any = None
+    # The SKU of the cognitive services account.
+    sku: Any = None
+    # Contains resource tags defined as key/value pairs.
+    tags: Any = None
+    # Specifies the type of the resource.
+    type: Any = None
+    # Entity zones
+    zones: Any = None
 
 ConnectionSetting = ubx.ResourceBinding(
     wire_type="azure_botservice_connection_setting",
     fields={
+        "etag": ubx.FieldSpec(wire_name="etag"),
+        "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ConnectionSetting_PropertiesFields,
         ),
+        "sku": ubx.FieldSpec(
+            wire_name="sku",
+            kind="object",
+            fields=_ConnectionSetting_SkuFields,
+        ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

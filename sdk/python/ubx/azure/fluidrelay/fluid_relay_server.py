@@ -142,17 +142,25 @@ _FluidRelayServer_PropertiesFields = {
 class FluidRelayServerConfig:
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a Fluid Relay Service resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class FluidRelayServerAttrs:
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a Fluid Relay Service resource.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource tags.
+    tags: Any = None
 
 FluidRelayServer = ubx.ResourceBinding(
     wire_type="azure_fluidrelay_fluid_relay_server",
@@ -162,10 +170,12 @@ FluidRelayServer = ubx.ResourceBinding(
             kind="object",
             fields=_FluidRelayServer_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_FluidRelayServer_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

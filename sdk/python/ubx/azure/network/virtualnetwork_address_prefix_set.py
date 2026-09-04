@@ -20,17 +20,28 @@ _VirtualnetworkAddressPrefixSet_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkAddressPrefixSetConfig:
+    # Resource ID.
+    id: Any = None
     # Properties of address prefix set.
     properties: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkAddressPrefixSetAttrs:
+    # A unique read-only string that changes whenever the resource is updated.
+    etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of address prefix set.
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkAddressPrefixSet = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_address_prefix_set",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

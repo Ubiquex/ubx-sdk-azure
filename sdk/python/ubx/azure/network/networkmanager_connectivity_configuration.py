@@ -112,10 +112,18 @@ class NetworkmanagerConnectivityConfigurationConfig:
 
 @dataclasses.dataclass
 class NetworkmanagerConnectivityConfigurationAttrs:
+    # A unique read-only string that changes whenever the resource is updated.
+    etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of network manager connectivity configuration
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource type.
+    type: Any = None
 
 NetworkmanagerConnectivityConfiguration = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_connectivity_configuration",

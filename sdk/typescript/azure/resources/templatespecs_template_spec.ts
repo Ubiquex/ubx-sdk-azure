@@ -18,6 +18,21 @@ export interface TemplatespecsTemplateSpec_Properties {
   versions?: Record<string, TemplatespecsTemplateSpec_Properties_Versions> | Computed<Record<string, TemplatespecsTemplateSpec_Properties_Versions>>;
 }
 
+export interface TemplatespecsTemplateSpec_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const TemplatespecsTemplateSpec_Properties_VersionsFields: FieldMap = {
   description: "description",
   timeCreated: "time_created",
@@ -45,12 +60,20 @@ export interface TemplatespecsTemplateSpecConfig {
 }
 
 export interface TemplatespecsTemplateSpecAttrs {
+  /** String Id used to locate any resource on Azure. */
+  id: string;
   /** The location of the Template Spec. It cannot be changed after Template Spec creation. It must be one of the supported Azure locations. */
   location: string;
+  /** Name of this resource. */
+  name: string;
   /** Template Spec properties. */
   properties: TemplatespecsTemplateSpec_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: TemplatespecsTemplateSpec_SystemData;
   /** Resource tags. */
   tags: Record<string, string>;
+  /** Type of this resource. */
+  type: string;
 }
 
 export const TemplatespecsTemplateSpec: ResourceBinding<TemplatespecsTemplateSpecConfig, TemplatespecsTemplateSpecAttrs> = {

@@ -118,29 +118,38 @@ _Block_SkuFields = {
 
 @dataclasses.dataclass
 class BlockConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the user-defined constraints for resource hardware placement.
     placement: Any = None
     # Properties of the Interconnect Block.
     properties: Any = None
     # Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 @dataclasses.dataclass
 class BlockAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the user-defined constraints for resource hardware placement.
     placement: Any = None
     # Properties of the Interconnect Block.
     properties: Any = None
     # Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 Block = ubx.ResourceBinding(
     wire_type="azure_interconnect_block",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "placement": ubx.FieldSpec(
             wire_name="placement",
             kind="object",
@@ -156,6 +165,7 @@ Block = ubx.ResourceBinding(
             kind="object",
             fields=_Block_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

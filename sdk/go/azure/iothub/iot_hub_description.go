@@ -583,22 +583,36 @@ type IotHubDescriptionConfig struct {
 	// The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention.
 	Etag     any
 	Identity any
+	// The resource location.
+	Location any
 	// The properties of an IoT hub.
 	Properties any
 	// Information about the SKU of the IoT hub.
 	Sku any
+	// The resource tags.
+	Tags any
 }
 
 type IotHubDescriptionAttrs struct {
 	// The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention.
-	Etag     any
+	Etag any
+	// The resource identifier.
+	Id       any
 	Identity any
+	// The resource location.
+	Location any
+	// The resource name.
+	Name any
 	// The properties of an IoT hub.
 	Properties any
 	// Information about the SKU of the IoT hub.
 	Sku any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// The resource tags.
+	Tags any
+	// The resource type.
+	Type any
 }
 
 var IotHubDescription = ubx.ResourceBinding{
@@ -610,6 +624,7 @@ var IotHubDescription = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   IotHubDescription_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -620,5 +635,6 @@ var IotHubDescription = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   IotHubDescription_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

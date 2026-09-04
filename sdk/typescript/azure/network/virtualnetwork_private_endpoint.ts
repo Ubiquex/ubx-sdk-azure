@@ -12626,8 +12626,14 @@ const VirtualnetworkPrivateEndpoint_PropertiesFields: FieldMap = {
 export interface VirtualnetworkPrivateEndpointConfig {
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkPrivateEndpoint_ExtendedLocation | Computed<VirtualnetworkPrivateEndpoint_ExtendedLocation>;
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties of the private endpoint. */
   properties?: VirtualnetworkPrivateEndpoint_Properties | Computed<VirtualnetworkPrivateEndpoint_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkPrivateEndpointAttrs {
@@ -12635,8 +12641,18 @@ export interface VirtualnetworkPrivateEndpointAttrs {
   etag: string;
   /** ExtendedLocation complex type. */
   extendedLocation: VirtualnetworkPrivateEndpoint_ExtendedLocation;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of the private endpoint. */
   properties: VirtualnetworkPrivateEndpoint_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkPrivateEndpoint: ResourceBinding<VirtualnetworkPrivateEndpointConfig, VirtualnetworkPrivateEndpointAttrs> = {
@@ -12647,10 +12663,13 @@ export const VirtualnetworkPrivateEndpoint: ResourceBinding<VirtualnetworkPrivat
       kind: "object",
       fields: VirtualnetworkPrivateEndpoint_ExtendedLocationFields,
     },
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkPrivateEndpoint_PropertiesFields,
     },
+    tags: "tags",
   },
 };

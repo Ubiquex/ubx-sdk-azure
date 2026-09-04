@@ -56,22 +56,32 @@ const OpenapiDataShare_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiDataShareConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The storage datashare properties */
   properties: OpenapiDataShare_Properties | Computed<OpenapiDataShare_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiDataShareAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The storage datashare properties */
   properties: OpenapiDataShare_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiDataShare: ResourceBinding<OpenapiDataShareConfig, OpenapiDataShareAttrs> = {
   wireType: "azure_storage_openapi_data_share",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiDataShare_PropertiesFields,
     },
+    tags: "tags",
   },
 };

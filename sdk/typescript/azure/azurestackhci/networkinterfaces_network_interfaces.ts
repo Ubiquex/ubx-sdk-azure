@@ -127,15 +127,23 @@ const NetworkinterfacesNetworkInterfaces_PropertiesFields: FieldMap = {
 export interface NetworkinterfacesNetworkInterfacesConfig {
   /** The complex type of the extended location. */
   extendedLocation?: NetworkinterfacesNetworkInterfaces_ExtendedLocation | Computed<NetworkinterfacesNetworkInterfaces_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties under the network interface resource */
   properties?: NetworkinterfacesNetworkInterfaces_Properties | Computed<NetworkinterfacesNetworkInterfaces_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NetworkinterfacesNetworkInterfacesAttrs {
   /** The complex type of the extended location. */
   extendedLocation: NetworkinterfacesNetworkInterfaces_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties under the network interface resource */
   properties: NetworkinterfacesNetworkInterfaces_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const NetworkinterfacesNetworkInterfaces: ResourceBinding<NetworkinterfacesNetworkInterfacesConfig, NetworkinterfacesNetworkInterfacesAttrs> = {
@@ -146,10 +154,12 @@ export const NetworkinterfacesNetworkInterfaces: ResourceBinding<Networkinterfac
       kind: "object",
       fields: NetworkinterfacesNetworkInterfaces_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetworkinterfacesNetworkInterfaces_PropertiesFields,
     },
+    tags: "tags",
   },
 };

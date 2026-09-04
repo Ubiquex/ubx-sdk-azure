@@ -3082,24 +3082,43 @@ var VirtualnetworkapplianceVirtualNetworkAppliance_PropertiesFields = ubx.FieldM
 }
 
 type VirtualnetworkapplianceVirtualNetworkApplianceConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// VirtualNetworkAppliance properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkapplianceVirtualNetworkApplianceAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// VirtualNetworkAppliance properties.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkapplianceVirtualNetworkAppliance = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetworkappliance_virtual_network_appliance",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkapplianceVirtualNetworkAppliance_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

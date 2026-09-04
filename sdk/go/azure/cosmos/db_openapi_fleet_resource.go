@@ -13,22 +13,32 @@ var DbOpenapiFleetResource_PropertiesFields = ubx.FieldMap{
 }
 
 type DbOpenapiFleetResourceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties to update Azure Cosmos DB fleet resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type DbOpenapiFleetResourceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties to update Azure Cosmos DB fleet resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var DbOpenapiFleetResource = ubx.ResourceBinding{
 	WireType: "azure_cosmos_db_openapi_fleet_resource",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   DbOpenapiFleetResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

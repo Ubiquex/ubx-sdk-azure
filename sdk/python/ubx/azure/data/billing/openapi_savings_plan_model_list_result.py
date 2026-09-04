@@ -28,6 +28,97 @@ class OpenapiSavingsPlanModelListResult_Summary:
     warning_count: Any = None
 
 @dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value_Properties_AppliedScopeProperties:
+    display_name: Any = None
+    management_group_id: Any = None
+    resource_group_id: Any = None
+    subscription_id: Any = None
+    tenant_id: Any = None
+
+@dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value_Properties_Commitment:
+    grain: Any = None
+
+@dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo_Properties:
+    subscription_id: Any = None
+
+@dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo:
+    message: Any = None
+    properties: Any = None
+    status_code: Any = None
+
+@dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Properties:
+    applied_scope_properties: Any = None
+    applied_scope_type: Any = None
+    billing_plan: Any = None
+    billing_scope_id: Any = None
+    commitment: Any = None
+    display_name: Any = None
+    renew: Any = None
+    term: Any = None
+
+@dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Sku:
+    name: Any = None
+
+@dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties:
+    properties: Any = None
+    sku: Any = None
+
+@dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties:
+    purchase_properties: Any = None
+
+@dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value_Properties_Utilization_Aggregates:
+    grain: Any = None
+    grain_unit: Any = None
+    value: Any = None
+    value_unit: Any = None
+
+@dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value_Properties_Utilization:
+    aggregates: Any = None
+    trend: Any = None
+
+@dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value_Properties:
+    applied_scope_properties: Any = None
+    applied_scope_type: Any = None
+    benefit_start_time: Any = None
+    billing_account_id: Any = None
+    billing_plan: Any = None
+    billing_profile_id: Any = None
+    billing_scope_id: Any = None
+    commitment: Any = None
+    customer_id: Any = None
+    display_name: Any = None
+    display_provisioning_state: Any = None
+    effective_date_time: Any = None
+    expiry_date_time: Any = None
+    extended_status_info: Any = None
+    product_code: Any = None
+    provisioning_state: Any = None
+    purchase_date_time: Any = None
+    renew: Any = None
+    renew_destination: Any = None
+    renew_properties: Any = None
+    renew_source: Any = None
+    term: Any = None
+    user_friendly_applied_scope_type: Any = None
+    utilization: Any = None
+
+@dataclasses.dataclass
+class OpenapiSavingsPlanModelListResult_Value:
+    properties: Any = None
+    sku: Any = None
+    tags: Any = None
+
+@dataclasses.dataclass
 class OpenapiSavingsPlanModelListResultConfig:
     billing_account_name: Any = None
     filter: Any = None
@@ -41,6 +132,8 @@ class OpenapiSavingsPlanModelListResultConfig:
 class OpenapiSavingsPlanModelListResultAttrs:
     billing_account_name: Any = None
     filter: Any = None
+    # The link to the next page of items
+    next_link: Any = None
     order_by: Any = None
     refresh_summary: Any = None
     selected_state: Any = None
@@ -48,6 +141,8 @@ class OpenapiSavingsPlanModelListResultAttrs:
     # The roll up count summary of savings plans in each state
     summary: Any = None
     take: Any = None
+    # The SavingsPlanModel items on this page
+    value: Any = None
 
 OpenapiSavingsPlanModelListResult = ubx.DataSourceBinding(
     wire_type="azure_billing_openapi_savings_plan_model_list_result",

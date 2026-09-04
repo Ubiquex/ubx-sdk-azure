@@ -171,19 +171,27 @@ const OpenapiCluster_SkuFields: FieldMap = {
 export interface OpenapiClusterConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: OpenapiCluster_Identity | Computed<OpenapiCluster_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Cluster properties. */
   properties?: OpenapiCluster_Properties | Computed<OpenapiCluster_Properties>;
   /** The cluster sku definition. */
   sku?: OpenapiCluster_Sku | Computed<OpenapiCluster_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiClusterAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: OpenapiCluster_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Cluster properties. */
   properties: OpenapiCluster_Properties;
   /** The cluster sku definition. */
   sku: OpenapiCluster_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiCluster: ResourceBinding<OpenapiClusterConfig, OpenapiClusterAttrs> = {
@@ -194,6 +202,7 @@ export const OpenapiCluster: ResourceBinding<OpenapiClusterConfig, OpenapiCluste
       kind: "object",
       fields: OpenapiCluster_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -204,5 +213,6 @@ export const OpenapiCluster: ResourceBinding<OpenapiClusterConfig, OpenapiCluste
       kind: "object",
       fields: OpenapiCluster_SkuFields,
     },
+    tags: "tags",
   },
 };

@@ -1948,12 +1948,16 @@ export interface MachineConfig {
   extendedLocation?: Machine_ExtendedLocation | Computed<Machine_ExtendedLocation>;
   /** Identity for the virtual machine. */
   identity?: Machine_Identity | Computed<Machine_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describes the user-defined constraints for resource hardware placement. */
   placement?: Machine_Placement | Computed<Machine_Placement>;
   /** Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use. In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**. */
   plan?: Machine_Plan | Computed<Machine_Plan>;
   /** Describes the properties of a Virtual Machine. */
   properties?: Machine_Properties | Computed<Machine_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
@@ -1965,6 +1969,8 @@ export interface MachineAttrs {
   extendedLocation: Machine_ExtendedLocation;
   /** Identity for the virtual machine. */
   identity: Machine_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** ManagedBy is set to Virtual Machine Scale Set(VMSS) flex ARM resourceID, if the VM is part of the VMSS. This property is used by platform for internal resource group delete optimization. */
   managedBy: string;
   /** Describes the user-defined constraints for resource hardware placement. */
@@ -1975,6 +1981,8 @@ export interface MachineAttrs {
   properties: Machine_Properties;
   /** The virtual machine child extension resources. */
   resources: Machine_Resources[];
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -1992,6 +2000,7 @@ export const Machine: ResourceBinding<MachineConfig, MachineAttrs> = {
       kind: "object",
       fields: Machine_IdentityFields,
     },
+    location: "location",
     placement: {
       wireName: "placement",
       kind: "object",
@@ -2007,6 +2016,7 @@ export const Machine: ResourceBinding<MachineConfig, MachineAttrs> = {
       kind: "object",
       fields: Machine_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

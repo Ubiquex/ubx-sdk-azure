@@ -353,10 +353,14 @@ const Cluster_SkuFields: FieldMap = {
 export interface ClusterConfig {
   /** Identity for the resource. */
   identity?: Cluster_Identity | Computed<Cluster_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Class representing the Kusto cluster properties. */
   properties?: Cluster_Properties | Computed<Cluster_Properties>;
   /** Azure SKU definition. */
   sku: Cluster_Sku | Computed<Cluster_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
@@ -366,10 +370,14 @@ export interface ClusterAttrs {
   etag: string;
   /** Identity for the resource. */
   identity: Cluster_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Class representing the Kusto cluster properties. */
   properties: Cluster_Properties;
   /** Azure SKU definition. */
   sku: Cluster_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -382,6 +390,7 @@ export const Cluster: ResourceBinding<ClusterConfig, ClusterAttrs> = {
       kind: "object",
       fields: Cluster_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -392,6 +401,7 @@ export const Cluster: ResourceBinding<ClusterConfig, ClusterAttrs> = {
       kind: "object",
       fields: Cluster_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

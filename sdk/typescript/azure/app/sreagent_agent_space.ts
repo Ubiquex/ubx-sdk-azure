@@ -164,15 +164,23 @@ const SreagentAgentSpace_PropertiesFields: FieldMap = {
 export interface SreagentAgentSpaceConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: SreagentAgentSpace_Identity | Computed<SreagentAgentSpace_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Agent Space specific properties */
   properties?: SreagentAgentSpace_Properties | Computed<SreagentAgentSpace_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SreagentAgentSpaceAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: SreagentAgentSpace_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Agent Space specific properties */
   properties: SreagentAgentSpace_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const SreagentAgentSpace: ResourceBinding<SreagentAgentSpaceConfig, SreagentAgentSpaceAttrs> = {
@@ -183,10 +191,12 @@ export const SreagentAgentSpace: ResourceBinding<SreagentAgentSpaceConfig, Sreag
       kind: "object",
       fields: SreagentAgentSpace_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: SreagentAgentSpace_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -86,10 +86,16 @@ const VirtualnetworkNatGateway_SkuFields: FieldMap = {
 };
 
 export interface VirtualnetworkNatGatewayConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Nat Gateway properties. */
   properties?: VirtualnetworkNatGateway_Properties | Computed<VirtualnetworkNatGateway_Properties>;
   /** SKU of nat gateway. */
   sku?: VirtualnetworkNatGateway_Sku | Computed<VirtualnetworkNatGateway_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** A list of availability zones denoting the zone in which Nat Gateway should be deployed. */
   zones?: string[] | Computed<string[]>;
 }
@@ -97,10 +103,20 @@ export interface VirtualnetworkNatGatewayConfig {
 export interface VirtualnetworkNatGatewayAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Nat Gateway properties. */
   properties: VirtualnetworkNatGateway_Properties;
   /** SKU of nat gateway. */
   sku: VirtualnetworkNatGateway_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
   /** A list of availability zones denoting the zone in which Nat Gateway should be deployed. */
   zones: string[];
 }
@@ -108,6 +124,8 @@ export interface VirtualnetworkNatGatewayAttrs {
 export const VirtualnetworkNatGateway: ResourceBinding<VirtualnetworkNatGatewayConfig, VirtualnetworkNatGatewayAttrs> = {
   wireType: "azure_network_virtualnetwork_nat_gateway",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -118,6 +136,7 @@ export const VirtualnetworkNatGateway: ResourceBinding<VirtualnetworkNatGatewayC
       kind: "object",
       fields: VirtualnetworkNatGateway_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

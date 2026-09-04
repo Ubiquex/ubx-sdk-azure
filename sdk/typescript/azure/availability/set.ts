@@ -189,22 +189,31 @@ const Set_SkuFields: FieldMap = {
 };
 
 export interface SetConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The instance view of a resource. */
   properties?: Set_Properties | Computed<Set_Properties>;
   /** Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. */
   sku?: Set_Sku | Computed<Set_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SetAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The instance view of a resource. */
   properties: Set_Properties;
   /** Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. */
   sku: Set_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Set: ResourceBinding<SetConfig, SetAttrs> = {
   wireType: "azure_availability_set",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -215,5 +224,6 @@ export const Set: ResourceBinding<SetConfig, SetAttrs> = {
       kind: "object",
       fields: Set_SkuFields,
     },
+    tags: "tags",
   },
 };

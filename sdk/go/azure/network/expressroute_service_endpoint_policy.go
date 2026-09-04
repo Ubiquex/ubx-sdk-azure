@@ -3005,26 +3005,45 @@ var ExpressrouteServiceEndpointPolicy_PropertiesFields = ubx.FieldMap{
 }
 
 type ExpressrouteServiceEndpointPolicyConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Service Endpoint Policy resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ExpressrouteServiceEndpointPolicyAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// Kind of service endpoint policy. This is metadata used for the Azure portal experience.
 	Kind any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Service Endpoint Policy resource.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var ExpressrouteServiceEndpointPolicy = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_service_endpoint_policy",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ExpressrouteServiceEndpointPolicy_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

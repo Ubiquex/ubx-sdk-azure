@@ -56,6 +56,22 @@ export interface DbOpenapiGremlinDatabaseGetResults_Properties {
   resource: DbOpenapiGremlinDatabaseGetResults_Properties_Resource | Computed<DbOpenapiGremlinDatabaseGetResults_Properties_Resource>;
 }
 
+const DbOpenapiGremlinDatabaseGetResults_Identity_UserAssignedIdentitiesFields: FieldMap = {
+  clientId: "client_id",
+  principalId: "principal_id",
+};
+
+const DbOpenapiGremlinDatabaseGetResults_IdentityFields: FieldMap = {
+  principalId: "principal_id",
+  tenantId: "tenant_id",
+  type: "type",
+  userAssignedIdentities: {
+    wireName: "user_assigned_identities",
+    kind: "map",
+    fields: DbOpenapiGremlinDatabaseGetResults_Identity_UserAssignedIdentitiesFields,
+  },
+};
+
 const DbOpenapiGremlinDatabaseGetResults_Properties_Options_AutoscaleSettingsFields: FieldMap = {
   maxThroughput: "max_throughput",
 };
@@ -102,28 +118,47 @@ const DbOpenapiGremlinDatabaseGetResults_PropertiesFields: FieldMap = {
 };
 
 export interface DbOpenapiGremlinDatabaseGetResultsConfig {
+  /** Identity for the resource. */
+  identity?: DbOpenapiGremlinDatabaseGetResults_Identity | Computed<DbOpenapiGremlinDatabaseGetResults_Identity>;
+  /** The location of the resource group to which the resource belongs. */
+  location?: string | Computed<string>;
   /** Properties to create and update Azure Cosmos DB Gremlin database. */
   properties: DbOpenapiGremlinDatabaseGetResults_Properties | Computed<DbOpenapiGremlinDatabaseGetResults_Properties>;
+  /** Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with "defaultExperience": "Cassandra". Current "defaultExperience" values also include "Table", "Graph", "DocumentDB", and "MongoDB". */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface DbOpenapiGremlinDatabaseGetResultsAttrs {
+  /** The unique resource identifier of the ARM resource. */
+  id: string;
   /** Identity for the resource. */
   identity: DbOpenapiGremlinDatabaseGetResults_Identity;
   /** The location of the resource group to which the resource belongs. */
   location: string;
+  /** The name of the ARM resource. */
+  name: string;
   /** Properties to create and update Azure Cosmos DB Gremlin database. */
   properties: DbOpenapiGremlinDatabaseGetResults_Properties;
-  /** Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with \"defaultExperience\": \"Cassandra\". Current \"defaultExperience\" values also include \"Table\", \"Graph\", \"DocumentDB\", and \"MongoDB\". */
+  /** Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with "defaultExperience": "Cassandra". Current "defaultExperience" values also include "Table", "Graph", "DocumentDB", and "MongoDB". */
   tags: Record<string, string>;
+  /** The type of Azure resource. */
+  type: string;
 }
 
 export const DbOpenapiGremlinDatabaseGetResults: ResourceBinding<DbOpenapiGremlinDatabaseGetResultsConfig, DbOpenapiGremlinDatabaseGetResultsAttrs> = {
   wireType: "azure_cosmos_db_openapi_gremlin_database_get_results",
   fields: {
+    identity: {
+      wireName: "identity",
+      kind: "object",
+      fields: DbOpenapiGremlinDatabaseGetResults_IdentityFields,
+    },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: DbOpenapiGremlinDatabaseGetResults_PropertiesFields,
     },
+    tags: "tags",
   },
 };

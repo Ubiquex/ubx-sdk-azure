@@ -360,10 +360,14 @@ class OpenapiAppServicePlanConfig:
     identity: Any = None
     # Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # AppServicePlan resource specific properties
     properties: Any = None
     # Description of a SKU for a scalable resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
@@ -375,10 +379,14 @@ class OpenapiAppServicePlanAttrs:
     identity: Any = None
     # Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # AppServicePlan resource specific properties
     properties: Any = None
     # Description of a SKU for a scalable resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
@@ -396,6 +404,7 @@ OpenapiAppServicePlan = ubx.ResourceBinding(
             fields=_OpenapiAppServicePlan_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -406,6 +415,7 @@ OpenapiAppServicePlan = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiAppServicePlan_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

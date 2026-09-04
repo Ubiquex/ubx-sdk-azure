@@ -215,26 +215,45 @@ const VirtualwanVirtualHub_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanVirtualHubConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Parameters for VirtualHub. */
   properties?: VirtualwanVirtualHub_Properties | Computed<VirtualwanVirtualHub_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualwanVirtualHubAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** Kind of service virtual hub. This is metadata used for the Azure portal experience for Route Server. */
   kind: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Parameters for VirtualHub. */
   properties: VirtualwanVirtualHub_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualwanVirtualHub: ResourceBinding<VirtualwanVirtualHubConfig, VirtualwanVirtualHubAttrs> = {
   wireType: "azure_network_virtualwan_virtual_hub",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualwanVirtualHub_PropertiesFields,
     },
+    tags: "tags",
   },
 };

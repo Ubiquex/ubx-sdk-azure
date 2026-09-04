@@ -81,6 +81,8 @@ export interface ApimdeploymentApiManagementServiceResourceConfig {
   properties: ApimdeploymentApiManagementServiceResource_Properties | Computed<ApimdeploymentApiManagementServiceResource_Properties>;
   /** API Management service resource SKU properties. */
   sku: ApimdeploymentApiManagementServiceResource_Sku | Computed<ApimdeploymentApiManagementServiceResource_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** A list of availability zones denoting where the resource needs to come from. */
   zones?: string[] | Computed<string[]>;
 }
@@ -88,16 +90,24 @@ export interface ApimdeploymentApiManagementServiceResourceConfig {
 export interface ApimdeploymentApiManagementServiceResourceAttrs {
   /** ETag of the resource. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** Identity properties of the Api Management service resource. */
   identity: ApimdeploymentApiManagementServiceResource_Identity;
   /** Resource location. */
   location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of an API Management service resource description. */
   properties: ApimdeploymentApiManagementServiceResource_Properties;
   /** API Management service resource SKU properties. */
   sku: ApimdeploymentApiManagementServiceResource_Sku;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: ApimdeploymentApiManagementServiceResource_SystemData;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type for API Management resource is set to Microsoft.ApiManagement. */
+  type: string;
   /** A list of availability zones denoting where the resource needs to come from. */
   zones: string[];
 }
@@ -121,6 +131,7 @@ export const ApimdeploymentApiManagementServiceResource: ResourceBinding<Apimdep
       kind: "object",
       fields: ApimdeploymentApiManagementServiceResource_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

@@ -79,6 +79,21 @@ type ManagedapplicationsApplicationDefinition_Properties struct {
 	StorageAccountId any
 }
 
+type ManagedapplicationsApplicationDefinition_Sku struct {
+	// The SKU capacity.
+	Capacity any
+	// The SKU family.
+	Family any
+	// The SKU model.
+	Model any
+	// The SKU name.
+	Name any
+	// The SKU size.
+	Size any
+	// The SKU tier.
+	Tier any
+}
+
 var ManagedapplicationsApplicationDefinition_Properties_ArtifactsFields = ubx.FieldMap{
 	"Name": ubx.FieldSpec{WireName: "name"},
 	"Type": ubx.FieldSpec{WireName: "type"},
@@ -167,23 +182,46 @@ var ManagedapplicationsApplicationDefinition_PropertiesFields = ubx.FieldMap{
 	"StorageAccountId": ubx.FieldSpec{WireName: "storage_account_id"},
 }
 
+var ManagedapplicationsApplicationDefinition_SkuFields = ubx.FieldMap{
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Model":    ubx.FieldSpec{WireName: "model"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
+
 type ManagedapplicationsApplicationDefinitionConfig struct {
+	// ID of the resource that manages this resource.
+	ManagedBy any
 	// The managed application definition properties.
 	Properties any
+	// SKU for the resource.
+	Sku any
 }
 
 type ManagedapplicationsApplicationDefinitionAttrs struct {
+	// ID of the resource that manages this resource.
+	ManagedBy any
 	// The managed application definition properties.
 	Properties any
+	// SKU for the resource.
+	Sku any
 }
 
 var ManagedapplicationsApplicationDefinition = ubx.ResourceBinding{
 	WireType: "azure_solutions_managedapplications_application_definition",
 	Fields: ubx.FieldMap{
+		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ManagedapplicationsApplicationDefinition_PropertiesFields,
+		},
+		"Sku": ubx.FieldSpec{
+			WireName: "sku",
+			Kind:     "object",
+			Fields:   ManagedapplicationsApplicationDefinition_SkuFields,
 		},
 	},
 }

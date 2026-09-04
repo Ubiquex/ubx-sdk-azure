@@ -74,18 +74,27 @@ var InputsInput_PropertiesFields = ubx.FieldMap{
 }
 
 type InputsInputConfig struct {
+	// Resource name
+	Name any
 	// The properties that are associated with an input.
 	Properties any
 }
 
 type InputsInputAttrs struct {
+	// Resource Id
+	Id any
+	// Resource name
+	Name any
 	// The properties that are associated with an input.
 	Properties any
+	// Resource type
+	Type any
 }
 
 var InputsInput = ubx.ResourceBinding{
 	WireType: "azure_streamanalytics_inputs_input",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

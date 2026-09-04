@@ -83,15 +83,23 @@ const VirtualharddisksVirtualHardDisks_PropertiesFields: FieldMap = {
 export interface VirtualharddisksVirtualHardDisksConfig {
   /** The complex type of the extended location. */
   extendedLocation?: VirtualharddisksVirtualHardDisks_ExtendedLocation | Computed<VirtualharddisksVirtualHardDisks_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties under the virtual hard disk resource */
   properties?: VirtualharddisksVirtualHardDisks_Properties | Computed<VirtualharddisksVirtualHardDisks_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualharddisksVirtualHardDisksAttrs {
   /** The complex type of the extended location. */
   extendedLocation: VirtualharddisksVirtualHardDisks_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties under the virtual hard disk resource */
   properties: VirtualharddisksVirtualHardDisks_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const VirtualharddisksVirtualHardDisks: ResourceBinding<VirtualharddisksVirtualHardDisksConfig, VirtualharddisksVirtualHardDisksAttrs> = {
@@ -102,10 +110,12 @@ export const VirtualharddisksVirtualHardDisks: ResourceBinding<VirtualharddisksV
       kind: "object",
       fields: VirtualharddisksVirtualHardDisks_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualharddisksVirtualHardDisks_PropertiesFields,
     },
+    tags: "tags",
   },
 };

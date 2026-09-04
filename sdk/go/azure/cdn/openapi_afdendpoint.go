@@ -30,22 +30,32 @@ var OpenapiAfdendpoint_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiAfdendpointConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The JSON object that contains the properties required to create an endpoint.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiAfdendpointAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The JSON object that contains the properties required to create an endpoint.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiAfdendpoint = ubx.ResourceBinding{
 	WireType: "azure_cdn_openapi_afdendpoint",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiAfdendpoint_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

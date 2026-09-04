@@ -48,15 +48,23 @@ const Project_PropertiesFields: FieldMap = {
 export interface ProjectConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: Project_Identity | Computed<Project_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of a project. */
   properties?: Project_Properties | Computed<Project_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ProjectAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: Project_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of a project. */
   properties: Project_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Project: ResourceBinding<ProjectConfig, ProjectAttrs> = {
@@ -67,10 +75,12 @@ export const Project: ResourceBinding<ProjectConfig, ProjectAttrs> = {
       kind: "object",
       fields: Project_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Project_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -38,24 +38,40 @@ var VirtualnetworkDdosProtectionPlan_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkDdosProtectionPlanConfig struct {
+	// Resource location.
+	Location any
 	// DDoS protection plan properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkDdosProtectionPlanAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// DDoS protection plan properties.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkDdosProtectionPlan = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_ddos_protection_plan",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkDdosProtectionPlan_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

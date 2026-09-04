@@ -64,6 +64,8 @@ var ExpressrouteExpressRouteCircuitConnection_PropertiesFields = ubx.FieldMap{
 }
 
 type ExpressrouteExpressRouteCircuitConnectionConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of the express route circuit connection.
 	Properties any
 }
@@ -71,13 +73,18 @@ type ExpressrouteExpressRouteCircuitConnectionConfig struct {
 type ExpressrouteExpressRouteCircuitConnectionAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of the express route circuit connection.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var ExpressrouteExpressRouteCircuitConnection = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_express_route_circuit_connection",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

@@ -57,6 +57,8 @@ _VirtualwanVpnServerConfigurationPolicyGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanVpnServerConfigurationPolicyGroupConfig:
+    # Name of the resource.
+    name: Any = None
     # Parameters for VpnServerConfigurationPolicyGroup.
     properties: Any = None
 
@@ -64,12 +66,17 @@ class VirtualwanVpnServerConfigurationPolicyGroupConfig:
 class VirtualwanVpnServerConfigurationPolicyGroupAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Name of the resource.
+    name: Any = None
     # Parameters for VpnServerConfigurationPolicyGroup.
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualwanVpnServerConfigurationPolicyGroup = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_vpn_server_configuration_policy_group",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

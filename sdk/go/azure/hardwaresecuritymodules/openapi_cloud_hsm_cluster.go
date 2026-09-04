@@ -156,19 +156,27 @@ var OpenapiCloudHsmCluster_SkuFields = ubx.FieldMap{
 type OpenapiCloudHsmClusterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a Cloud HSM Cluster.
 	Properties any
 	// Cloud Hsm Cluster SKU information
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiCloudHsmClusterAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a Cloud HSM Cluster.
 	Properties any
 	// Cloud Hsm Cluster SKU information
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiCloudHsmCluster = ubx.ResourceBinding{
@@ -179,6 +187,7 @@ var OpenapiCloudHsmCluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiCloudHsmCluster_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -189,5 +198,6 @@ var OpenapiCloudHsmCluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiCloudHsmCluster_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

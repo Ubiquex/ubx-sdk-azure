@@ -23,9 +23,13 @@ export interface FirewallpolicyFirewallPolicyRuleCollectionGroupDraftConfig {
 
 export interface FirewallpolicyFirewallPolicyRuleCollectionGroupDraftAttrs {
   firewallPolicyName: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the rule collection group draft. */
   properties: FirewallpolicyFirewallPolicyRuleCollectionGroupDraft_Properties;
   ruleCollectionGroupName: string;
+  /** Resource type. */
+  type: string;
 }
 
 export const FirewallpolicyFirewallPolicyRuleCollectionGroupDraft: DataSourceBinding<FirewallpolicyFirewallPolicyRuleCollectionGroupDraftConfig, FirewallpolicyFirewallPolicyRuleCollectionGroupDraftAttrs> = {

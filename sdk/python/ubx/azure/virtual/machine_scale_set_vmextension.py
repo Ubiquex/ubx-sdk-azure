@@ -137,6 +137,8 @@ class MachineScaleSetVmextensionConfig:
 
 @dataclasses.dataclass
 class MachineScaleSetVmextensionAttrs:
+    # Resource Id
+    id: Any = None
     # The location of the extension.
     location: Any = None
     # Resource name

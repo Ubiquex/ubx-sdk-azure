@@ -190,21 +190,31 @@ _BigdatapoolBigDataPoolResourceInfo_PropertiesFields = {
 
 @dataclasses.dataclass
 class BigdatapoolBigDataPoolResourceInfoConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a Big Data pool powered by Apache Spark
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class BigdatapoolBigDataPoolResourceInfoAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a Big Data pool powered by Apache Spark
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 BigdatapoolBigDataPoolResourceInfo = ubx.ResourceBinding(
     wire_type="azure_synapse_bigdatapool_big_data_pool_resource_info",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_BigdatapoolBigDataPoolResourceInfo_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

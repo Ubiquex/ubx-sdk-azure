@@ -240,8 +240,12 @@ const OpenapiCloudExadataInfrastructure_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiCloudExadataInfrastructureConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** CloudExadataInfrastructure resource model */
   properties?: OpenapiCloudExadataInfrastructure_Properties | Computed<OpenapiCloudExadataInfrastructure_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** CloudExadataInfrastructure zones */
   zones: string[] | Computed<string[]>;
   /** path parameter, not part of the API's own resource representation */
@@ -249,8 +253,12 @@ export interface OpenapiCloudExadataInfrastructureConfig {
 }
 
 export interface OpenapiCloudExadataInfrastructureAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** CloudExadataInfrastructure resource model */
   properties: OpenapiCloudExadataInfrastructure_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** CloudExadataInfrastructure zones */
   zones: string[];
   /** path parameter, not part of the API's own resource representation */
@@ -260,11 +268,13 @@ export interface OpenapiCloudExadataInfrastructureAttrs {
 export const OpenapiCloudExadataInfrastructure: ResourceBinding<OpenapiCloudExadataInfrastructureConfig, OpenapiCloudExadataInfrastructureAttrs> = {
   wireType: "azure_oracle_openapi_cloud_exadata_infrastructure",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiCloudExadataInfrastructure_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
     cloudexadatainfrastructurename: "cloudexadatainfrastructurename",
   },

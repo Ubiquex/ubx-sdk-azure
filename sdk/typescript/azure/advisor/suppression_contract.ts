@@ -10,6 +10,21 @@ export interface SuppressionContract_Properties {
   ttl?: string | Computed<string>;
 }
 
+export interface SuppressionContract_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const SuppressionContract_PropertiesFields: FieldMap = {
   expirationTimeStamp: "expiration_time_stamp",
   suppressionId: "suppression_id",
@@ -19,15 +34,19 @@ const SuppressionContract_PropertiesFields: FieldMap = {
 export interface SuppressionContractConfig {
   /** The properties of the suppression. */
   properties?: SuppressionContract_Properties | Computed<SuppressionContract_Properties>;
-  /** path parameter, not part of the API's own resource representation */
-  name: string | Computed<string>;
 }
 
 export interface SuppressionContractAttrs {
+  /** Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}" */
+  id: string;
+  /** The name of the resource */
+  name: string;
   /** The properties of the suppression. */
   properties: SuppressionContract_Properties;
-  /** path parameter, not part of the API's own resource representation */
-  name: string;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: SuppressionContract_SystemData;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const SuppressionContract: ResourceBinding<SuppressionContractConfig, SuppressionContractAttrs> = {
@@ -38,6 +57,5 @@ export const SuppressionContract: ResourceBinding<SuppressionContractConfig, Sup
       kind: "object",
       fields: SuppressionContract_PropertiesFields,
     },
-    name: "name",
   },
 };

@@ -47,22 +47,32 @@ const GrafanaManagedPrivateEndpointModel_PropertiesFields: FieldMap = {
 };
 
 export interface GrafanaManagedPrivateEndpointModelConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties specific to the managed private endpoint. */
   properties?: GrafanaManagedPrivateEndpointModel_Properties | Computed<GrafanaManagedPrivateEndpointModel_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface GrafanaManagedPrivateEndpointModelAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties specific to the managed private endpoint. */
   properties: GrafanaManagedPrivateEndpointModel_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const GrafanaManagedPrivateEndpointModel: ResourceBinding<GrafanaManagedPrivateEndpointModelConfig, GrafanaManagedPrivateEndpointModelAttrs> = {
   wireType: "azure_dashboard_grafana_managed_private_endpoint_model",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: GrafanaManagedPrivateEndpointModel_PropertiesFields,
     },
+    tags: "tags",
   },
 };

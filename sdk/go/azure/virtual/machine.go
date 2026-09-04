@@ -1950,12 +1950,16 @@ type MachineConfig struct {
 	ExtendedLocation any
 	// Identity for the virtual machine.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Describes the user-defined constraints for resource hardware placement.
 	Placement any
 	// Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use. In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**.
 	Plan any
 	// Describes the properties of a Virtual Machine.
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -1967,6 +1971,8 @@ type MachineAttrs struct {
 	ExtendedLocation any
 	// Identity for the virtual machine.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// ManagedBy is set to Virtual Machine Scale Set(VMSS) flex ARM resourceID, if the VM is part of the VMSS. This property is used by platform for internal resource group delete optimization.
 	ManagedBy any
 	// Describes the user-defined constraints for resource hardware placement.
@@ -1977,6 +1983,8 @@ type MachineAttrs struct {
 	Properties any
 	// The virtual machine child extension resources.
 	Resources any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -1994,6 +2002,7 @@ var Machine = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Machine_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Placement": ubx.FieldSpec{
 			WireName: "placement",
 			Kind:     "object",
@@ -2009,6 +2018,7 @@ var Machine = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Machine_PropertiesFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

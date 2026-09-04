@@ -12,6 +12,21 @@ type SuppressionContract_Properties struct {
 	Ttl any
 }
 
+type SuppressionContract_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var SuppressionContract_PropertiesFields = ubx.FieldMap{
 	"ExpirationTimeStamp": ubx.FieldSpec{WireName: "expiration_time_stamp"},
 	"SuppressionId":       ubx.FieldSpec{WireName: "suppression_id"},
@@ -21,15 +36,19 @@ var SuppressionContract_PropertiesFields = ubx.FieldMap{
 type SuppressionContractConfig struct {
 	// The properties of the suppression.
 	Properties any
-	// path parameter, not part of the API's own resource representation
-	Name any
 }
 
 type SuppressionContractAttrs struct {
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
+	// The name of the resource
+	Name any
 	// The properties of the suppression.
 	Properties any
-	// path parameter, not part of the API's own resource representation
-	Name any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var SuppressionContract = ubx.ResourceBinding{
@@ -40,6 +59,5 @@ var SuppressionContract = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   SuppressionContract_PropertiesFields,
 		},
-		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

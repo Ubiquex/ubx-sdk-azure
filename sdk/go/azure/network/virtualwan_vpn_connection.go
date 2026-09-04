@@ -324,6 +324,8 @@ var VirtualwanVpnConnection_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanVpnConnectionConfig struct {
+	// Resource ID.
+	Id any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Parameters for VpnConnection.
@@ -333,6 +335,8 @@ type VirtualwanVpnConnectionConfig struct {
 type VirtualwanVpnConnectionAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Parameters for VpnConnection.
@@ -342,6 +346,7 @@ type VirtualwanVpnConnectionAttrs struct {
 var VirtualwanVpnConnection = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_vpn_connection",
 	Fields: ubx.FieldMap{
+		"Id":   ubx.FieldSpec{WireName: "id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",

@@ -20,6 +20,21 @@ type TemplatespecsTemplateSpec_Properties struct {
 	Versions any
 }
 
+type TemplatespecsTemplateSpec_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var TemplatespecsTemplateSpec_Properties_VersionsFields = ubx.FieldMap{
 	"Description":  ubx.FieldSpec{WireName: "description"},
 	"TimeCreated":  ubx.FieldSpec{WireName: "time_created"},
@@ -47,12 +62,20 @@ type TemplatespecsTemplateSpecConfig struct {
 }
 
 type TemplatespecsTemplateSpecAttrs struct {
+	// String Id used to locate any resource on Azure.
+	Id any
 	// The location of the Template Spec. It cannot be changed after Template Spec creation. It must be one of the supported Azure locations.
 	Location any
+	// Name of this resource.
+	Name any
 	// Template Spec properties.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
 	// Resource tags.
 	Tags any
+	// Type of this resource.
+	Type any
 }
 
 var TemplatespecsTemplateSpec = ubx.ResourceBinding{

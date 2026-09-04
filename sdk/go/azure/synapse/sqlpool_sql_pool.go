@@ -58,22 +58,31 @@ var SqlpoolSqlPool_SkuFields = ubx.FieldMap{
 }
 
 type SqlpoolSqlPoolConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a SQL Analytics pool
 	Properties any
 	// SQL pool SKU
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type SqlpoolSqlPoolAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a SQL Analytics pool
 	Properties any
 	// SQL pool SKU
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var SqlpoolSqlPool = ubx.ResourceBinding{
 	WireType: "azure_synapse_sqlpool_sql_pool",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -84,5 +93,6 @@ var SqlpoolSqlPool = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   SqlpoolSqlPool_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

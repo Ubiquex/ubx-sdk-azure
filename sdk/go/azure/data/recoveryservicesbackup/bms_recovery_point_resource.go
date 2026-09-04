@@ -35,8 +35,10 @@ type BmsRecoveryPointResourceConfig struct {
 }
 
 type BmsRecoveryPointResourceAttrs struct {
-	ContainerName     any
-	FabricName        any
+	ContainerName any
+	FabricName    any
+	// The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
+	NextLink          any
 	ProtectedItemName any
 	// List of resources.
 	Value     any

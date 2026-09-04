@@ -641,10 +641,16 @@ const NetworkgatewayVirtualNetworkGateway_PropertiesFields: FieldMap = {
 export interface NetworkgatewayVirtualNetworkGatewayConfig {
   /** ExtendedLocation complex type. */
   extendedLocation?: NetworkgatewayVirtualNetworkGateway_ExtendedLocation | Computed<NetworkgatewayVirtualNetworkGateway_ExtendedLocation>;
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: NetworkgatewayVirtualNetworkGateway_Identity | Computed<NetworkgatewayVirtualNetworkGateway_Identity>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** VirtualNetworkGateway properties. */
   properties: NetworkgatewayVirtualNetworkGateway_Properties | Computed<NetworkgatewayVirtualNetworkGateway_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NetworkgatewayVirtualNetworkGatewayAttrs {
@@ -652,10 +658,20 @@ export interface NetworkgatewayVirtualNetworkGatewayAttrs {
   etag: string;
   /** ExtendedLocation complex type. */
   extendedLocation: NetworkgatewayVirtualNetworkGateway_ExtendedLocation;
+  /** Resource ID. */
+  id: string;
   /** Identity for the resource. */
   identity: NetworkgatewayVirtualNetworkGateway_Identity;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** VirtualNetworkGateway properties. */
   properties: NetworkgatewayVirtualNetworkGateway_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkgatewayVirtualNetworkGateway: ResourceBinding<NetworkgatewayVirtualNetworkGatewayConfig, NetworkgatewayVirtualNetworkGatewayAttrs> = {
@@ -666,15 +682,18 @@ export const NetworkgatewayVirtualNetworkGateway: ResourceBinding<Networkgateway
       kind: "object",
       fields: NetworkgatewayVirtualNetworkGateway_ExtendedLocationFields,
     },
+    id: "id",
     identity: {
       wireName: "identity",
       kind: "object",
       fields: NetworkgatewayVirtualNetworkGateway_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetworkgatewayVirtualNetworkGateway_PropertiesFields,
     },
+    tags: "tags",
   },
 };

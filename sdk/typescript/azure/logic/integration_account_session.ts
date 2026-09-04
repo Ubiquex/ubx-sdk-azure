@@ -16,22 +16,38 @@ const IntegrationAccountSession_PropertiesFields: FieldMap = {
 };
 
 export interface IntegrationAccountSessionConfig {
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** The integration account session properties. */
   properties: IntegrationAccountSession_Properties | Computed<IntegrationAccountSession_Properties>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface IntegrationAccountSessionAttrs {
+  /** The resource id. */
+  id: string;
+  /** The resource location. */
+  location: string;
+  /** Gets the resource name. */
+  name: string;
   /** The integration account session properties. */
   properties: IntegrationAccountSession_Properties;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** Gets the resource type. */
+  type: string;
 }
 
 export const IntegrationAccountSession: ResourceBinding<IntegrationAccountSessionConfig, IntegrationAccountSessionAttrs> = {
   wireType: "azure_logic_integration_account_session",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: IntegrationAccountSession_PropertiesFields,
     },
+    tags: "tags",
   },
 };

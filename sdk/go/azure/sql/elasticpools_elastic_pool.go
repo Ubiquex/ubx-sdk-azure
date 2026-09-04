@@ -86,24 +86,33 @@ var ElasticpoolsElasticPool_SkuFields = ubx.FieldMap{
 }
 
 type ElasticpoolsElasticPoolConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of an elastic pool
 	Properties any
 	// An ARM Resource SKU.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type ElasticpoolsElasticPoolAttrs struct {
 	// Kind of elastic pool. This is metadata used for the Azure portal experience.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of an elastic pool
 	Properties any
 	// An ARM Resource SKU.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var ElasticpoolsElasticPool = ubx.ResourceBinding{
 	WireType: "azure_sql_elasticpools_elastic_pool",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -114,5 +123,6 @@ var ElasticpoolsElasticPool = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ElasticpoolsElasticPool_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

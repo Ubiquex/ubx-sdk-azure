@@ -107,6 +107,8 @@ class BackupVaultResourceConfig:
 
 @dataclasses.dataclass
 class BackupVaultResourceAttrs:
+    # The uri to fetch the next page of resources. Call ListNext() fetches next page of resources.
+    next_link: Any = None
     # List of resources.
     value: Any = None
 

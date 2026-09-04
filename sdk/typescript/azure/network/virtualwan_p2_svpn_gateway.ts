@@ -300,24 +300,43 @@ const VirtualwanP2SvpnGateway_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanP2SvpnGatewayConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Parameters for P2SVpnGateway. */
   properties?: VirtualwanP2SvpnGateway_Properties | Computed<VirtualwanP2SvpnGateway_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualwanP2SvpnGatewayAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Parameters for P2SVpnGateway. */
   properties: VirtualwanP2SvpnGateway_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualwanP2SvpnGateway: ResourceBinding<VirtualwanP2SvpnGatewayConfig, VirtualwanP2SvpnGatewayAttrs> = {
   wireType: "azure_network_virtualwan_p2_svpn_gateway",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualwanP2SvpnGateway_PropertiesFields,
     },
+    tags: "tags",
   },
 };

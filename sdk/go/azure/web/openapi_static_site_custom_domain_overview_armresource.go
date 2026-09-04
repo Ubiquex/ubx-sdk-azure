@@ -27,29 +27,33 @@ var OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields = ubx.Fiel
 }
 
 type OpenapiStaticSiteCustomDomainOverviewArmresourceConfig struct {
-	// StaticSiteCustomDomainRequestPropertiesARMResource resource specific properties
-	Properties any
-	// path parameter, not part of the API's own resource representation
-	Name any
-}
-
-type OpenapiStaticSiteCustomDomainOverviewArmresourceAttrs struct {
 	// Kind of resource.
 	Kind any
 	// StaticSiteCustomDomainRequestPropertiesARMResource resource specific properties
 	Properties any
-	// path parameter, not part of the API's own resource representation
+}
+
+type OpenapiStaticSiteCustomDomainOverviewArmresourceAttrs struct {
+	// Resource Id.
+	Id any
+	// Kind of resource.
+	Kind any
+	// Resource Name.
 	Name any
+	// StaticSiteCustomDomainRequestPropertiesARMResource resource specific properties
+	Properties any
+	// Resource type.
+	Type any
 }
 
 var OpenapiStaticSiteCustomDomainOverviewArmresource = ubx.ResourceBinding{
 	WireType: "azure_web_openapi_static_site_custom_domain_overview_armresource",
 	Fields: ubx.FieldMap{
+		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields,
 		},
-		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

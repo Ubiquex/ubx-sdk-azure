@@ -184,22 +184,32 @@ const BigdatapoolBigDataPoolResourceInfo_PropertiesFields: FieldMap = {
 };
 
 export interface BigdatapoolBigDataPoolResourceInfoConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of a Big Data pool powered by Apache Spark */
   properties?: BigdatapoolBigDataPoolResourceInfo_Properties | Computed<BigdatapoolBigDataPoolResourceInfo_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface BigdatapoolBigDataPoolResourceInfoAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of a Big Data pool powered by Apache Spark */
   properties: BigdatapoolBigDataPoolResourceInfo_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const BigdatapoolBigDataPoolResourceInfo: ResourceBinding<BigdatapoolBigDataPoolResourceInfoConfig, BigdatapoolBigDataPoolResourceInfoAttrs> = {
   wireType: "azure_synapse_bigdatapool_big_data_pool_resource_info",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: BigdatapoolBigDataPoolResourceInfo_PropertiesFields,
     },
+    tags: "tags",
   },
 };

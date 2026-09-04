@@ -36,6 +36,8 @@ const FirewallpolicyFirewallPolicyRuleCollectionGroup_PropertiesFields: FieldMap
 };
 
 export interface FirewallpolicyFirewallPolicyRuleCollectionGroupConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of the rule collection group. */
   properties?: FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties | Computed<FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties>;
 }
@@ -43,13 +45,18 @@ export interface FirewallpolicyFirewallPolicyRuleCollectionGroupConfig {
 export interface FirewallpolicyFirewallPolicyRuleCollectionGroupAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the rule collection group. */
   properties: FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const FirewallpolicyFirewallPolicyRuleCollectionGroup: ResourceBinding<FirewallpolicyFirewallPolicyRuleCollectionGroupConfig, FirewallpolicyFirewallPolicyRuleCollectionGroupAttrs> = {
   wireType: "azure_network_firewallpolicy_firewall_policy_rule_collection_group",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

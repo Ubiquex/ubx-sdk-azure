@@ -19,17 +19,22 @@ class OpenapiSitePhpErrorLogFlag_Properties:
 
 @dataclasses.dataclass
 class OpenapiSitePhpErrorLogFlagConfig:
-    name: Any = None
+    pass
 
 @dataclasses.dataclass
 class OpenapiSitePhpErrorLogFlagAttrs:
+    # Resource Id.
+    id: Any = None
+    # Kind of resource.
+    kind: Any = None
     name: Any = None
     # SitePhpErrorLogFlag resource specific properties
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 OpenapiSitePhpErrorLogFlag = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_site_php_error_log_flag",
     fields={
-        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

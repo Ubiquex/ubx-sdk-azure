@@ -81,8 +81,12 @@ class WorkbooksWorkbookConfig:
     identity: Any = None
     # The kind of workbook. Only valid value is shared.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties that contain a workbook.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class WorkbooksWorkbookAttrs:
@@ -92,8 +96,12 @@ class WorkbooksWorkbookAttrs:
     identity: Any = None
     # The kind of workbook. Only valid value is shared.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties that contain a workbook.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 WorkbooksWorkbook = ubx.ResourceBinding(
     wire_type="azure_applicationinsights_workbooks_workbook",
@@ -105,10 +113,12 @@ WorkbooksWorkbook = ubx.ResourceBinding(
             fields=_WorkbooksWorkbook_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_WorkbooksWorkbook_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

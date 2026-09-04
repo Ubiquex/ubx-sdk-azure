@@ -84,24 +84,40 @@ _ComponentsApplicationInsightsComponent_PropertiesFields = {
 class ComponentsApplicationInsightsComponentConfig:
     # The kind of application that this component refers to, used to customize UI. This value is a freeform string, values should typically be one of the following: web, ios, other, store, java, phone.
     kind: Any = None
+    # Resource location
+    location: Any = None
     # Properties that define an Application Insights component resource.
     properties: Any = None
+    # Resource tags
+    tags: Any = None
 
 @dataclasses.dataclass
 class ComponentsApplicationInsightsComponentAttrs:
+    # Azure resource Id
+    id: Any = None
     # The kind of application that this component refers to, used to customize UI. This value is a freeform string, values should typically be one of the following: web, ios, other, store, java, phone.
     kind: Any = None
+    # Resource location
+    location: Any = None
+    # Azure resource name
+    name: Any = None
     # Properties that define an Application Insights component resource.
     properties: Any = None
+    # Resource tags
+    tags: Any = None
+    # Azure resource type
+    type: Any = None
 
 ComponentsApplicationInsightsComponent = ubx.ResourceBinding(
     wire_type="azure_applicationinsights_components_application_insights_component",
     fields={
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ComponentsApplicationInsightsComponent_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

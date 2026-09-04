@@ -131,6 +131,8 @@ export interface MachineScaleSetVmextensionConfig {
 }
 
 export interface MachineScaleSetVmextensionAttrs {
+  /** Resource Id */
+  id: string;
   /** The location of the extension. */
   location: string;
   /** Resource name */

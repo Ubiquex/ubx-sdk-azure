@@ -16,22 +16,32 @@ var TrafficcontrollerFrontend_PropertiesFields = ubx.FieldMap{
 }
 
 type TrafficcontrollerFrontendConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Frontend Properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type TrafficcontrollerFrontendAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Frontend Properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var TrafficcontrollerFrontend = ubx.ResourceBinding{
 	WireType: "azure_servicenetworking_trafficcontroller_frontend",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   TrafficcontrollerFrontend_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

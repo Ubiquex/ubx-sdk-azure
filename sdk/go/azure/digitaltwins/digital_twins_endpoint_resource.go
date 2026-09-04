@@ -27,6 +27,21 @@ type DigitalTwinsEndpointResource_Properties struct {
 	ProvisioningState any
 }
 
+type DigitalTwinsEndpointResource_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var DigitalTwinsEndpointResource_Properties_IdentityFields = ubx.FieldMap{
 	"Type":                 ubx.FieldSpec{WireName: "type"},
 	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
@@ -52,8 +67,16 @@ type DigitalTwinsEndpointResourceConfig struct {
 }
 
 type DigitalTwinsEndpointResourceAttrs struct {
+	// The resource identifier.
+	Id any
+	// Extension resource name.
+	Name any
 	// Properties related to Digital Twins Endpoint
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The resource type.
+	Type any
 }
 
 var DigitalTwinsEndpointResource = ubx.ResourceBinding{

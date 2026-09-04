@@ -89,22 +89,38 @@ var ManagedapplicationsJitRequestDefinition_PropertiesFields = ubx.FieldMap{
 }
 
 type ManagedapplicationsJitRequestDefinitionConfig struct {
+	// Resource location
+	Location any
 	// Information about JIT request properties
 	Properties any
+	// Resource tags
+	Tags any
 }
 
 type ManagedapplicationsJitRequestDefinitionAttrs struct {
+	// Resource ID
+	Id any
+	// Resource location
+	Location any
+	// Resource name
+	Name any
 	// Information about JIT request properties
 	Properties any
+	// Resource tags
+	Tags any
+	// Resource type
+	Type any
 }
 
 var ManagedapplicationsJitRequestDefinition = ubx.ResourceBinding{
 	WireType: "azure_resources_managedapplications_jit_request_definition",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ManagedapplicationsJitRequestDefinition_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

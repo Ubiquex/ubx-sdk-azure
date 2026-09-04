@@ -12633,24 +12633,43 @@ var VirtualnetworkNetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkNetworkSecurityGroupConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Network Security Group resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkNetworkSecurityGroupAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Network Security Group resource.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkNetworkSecurityGroup = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_network_security_group",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkNetworkSecurityGroup_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

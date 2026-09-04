@@ -21,6 +21,21 @@ type TemplatespecsTemplateSpecVersion_Properties struct {
 	UiFormDefinition any
 }
 
+type TemplatespecsTemplateSpecVersion_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var TemplatespecsTemplateSpecVersion_Properties_LinkedTemplatesFields = ubx.FieldMap{
 	"Path":     ubx.FieldSpec{WireName: "path"},
 	"Template": ubx.FieldSpec{WireName: "template"},
@@ -48,12 +63,20 @@ type TemplatespecsTemplateSpecVersionConfig struct {
 }
 
 type TemplatespecsTemplateSpecVersionAttrs struct {
+	// String Id used to locate any resource on Azure.
+	Id any
 	// The location of the Template Spec Version. It must match the location of the parent Template Spec.
 	Location any
+	// Name of this resource.
+	Name any
 	// Template Spec Version properties.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
 	// Resource tags.
 	Tags any
+	// Type of this resource.
+	Type any
 }
 
 var TemplatespecsTemplateSpecVersion = ubx.ResourceBinding{

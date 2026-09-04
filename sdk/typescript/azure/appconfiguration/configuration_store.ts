@@ -209,21 +209,29 @@ const ConfigurationStore_SkuFields: FieldMap = {
 export interface ConfigurationStoreConfig {
   /** An identity that can be associated with a resource. */
   identity?: ConfigurationStore_Identity | Computed<ConfigurationStore_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The properties of a configuration store. */
   properties?: ConfigurationStore_Properties | Computed<ConfigurationStore_Properties>;
   /** Describes a configuration store SKU. */
   sku: ConfigurationStore_Sku | Computed<ConfigurationStore_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ConfigurationStoreAttrs {
   /** An identity that can be associated with a resource. */
   identity: ConfigurationStore_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** The properties of a configuration store. */
   properties: ConfigurationStore_Properties;
   /** Describes a configuration store SKU. */
   sku: ConfigurationStore_Sku;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: ConfigurationStore_SystemData;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ConfigurationStore: ResourceBinding<ConfigurationStoreConfig, ConfigurationStoreAttrs> = {
@@ -234,6 +242,7 @@ export const ConfigurationStore: ResourceBinding<ConfigurationStoreConfig, Confi
       kind: "object",
       fields: ConfigurationStore_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -244,5 +253,6 @@ export const ConfigurationStore: ResourceBinding<ConfigurationStoreConfig, Confi
       kind: "object",
       fields: ConfigurationStore_SkuFields,
     },
+    tags: "tags",
   },
 };

@@ -191,22 +191,31 @@ var Set_SkuFields = ubx.FieldMap{
 }
 
 type SetConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The instance view of a resource.
 	Properties any
 	// Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type SetAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The instance view of a resource.
 	Properties any
 	// Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var Set = ubx.ResourceBinding{
 	WireType: "azure_availability_set",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -217,5 +226,6 @@ var Set = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Set_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

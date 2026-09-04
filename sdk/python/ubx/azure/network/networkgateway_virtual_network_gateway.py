@@ -647,10 +647,16 @@ _NetworkgatewayVirtualNetworkGateway_PropertiesFields = {
 class NetworkgatewayVirtualNetworkGatewayConfig:
     # ExtendedLocation complex type.
     extended_location: Any = None
+    # Resource ID.
+    id: Any = None
     # Identity for the resource.
     identity: Any = None
+    # Resource location.
+    location: Any = None
     # VirtualNetworkGateway properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayAttrs:
@@ -658,10 +664,20 @@ class NetworkgatewayVirtualNetworkGatewayAttrs:
     etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
+    # Resource ID.
+    id: Any = None
     # Identity for the resource.
     identity: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # VirtualNetworkGateway properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 NetworkgatewayVirtualNetworkGateway = ubx.ResourceBinding(
     wire_type="azure_network_networkgateway_virtual_network_gateway",
@@ -671,15 +687,18 @@ NetworkgatewayVirtualNetworkGateway = ubx.ResourceBinding(
             kind="object",
             fields=_NetworkgatewayVirtualNetworkGateway_ExtendedLocationFields,
         ),
+        "id": ubx.FieldSpec(wire_name="id"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",
             fields=_NetworkgatewayVirtualNetworkGateway_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_NetworkgatewayVirtualNetworkGateway_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

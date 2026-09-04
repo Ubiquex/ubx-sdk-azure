@@ -12330,23 +12330,42 @@ _VirtualnetworkDscpConfiguration_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkDscpConfigurationConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Differentiated Services Code Point configuration properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkDscpConfigurationAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Differentiated Services Code Point configuration properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkDscpConfiguration = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_dscp_configuration",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualnetworkDscpConfiguration_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

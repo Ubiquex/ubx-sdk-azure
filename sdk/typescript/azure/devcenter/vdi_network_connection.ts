@@ -20,22 +20,32 @@ const VdiNetworkConnection_PropertiesFields: FieldMap = {
 };
 
 export interface VdiNetworkConnectionConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Network properties */
   properties?: VdiNetworkConnection_Properties | Computed<VdiNetworkConnection_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VdiNetworkConnectionAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Network properties */
   properties: VdiNetworkConnection_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const VdiNetworkConnection: ResourceBinding<VdiNetworkConnectionConfig, VdiNetworkConnectionAttrs> = {
   wireType: "azure_devcenter_vdi_network_connection",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VdiNetworkConnection_PropertiesFields,
     },
+    tags: "tags",
   },
 };

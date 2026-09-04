@@ -71,10 +71,16 @@ type HealthcareApisPrivateEndpointConnectionDescriptionConfig struct {
 }
 
 type HealthcareApisPrivateEndpointConnectionDescriptionAttrs struct {
+	// Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+	Id any
+	// The name of the resource
+	Name any
 	// Properties of the PrivateEndpointConnectProperties.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var HealthcareApisPrivateEndpointConnectionDescription = ubx.ResourceBinding{

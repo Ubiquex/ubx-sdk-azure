@@ -80,6 +80,21 @@ export interface OpenapiReservationRecommendationDetailsModel_Properties {
   usage?: OpenapiReservationRecommendationDetailsModel_Properties_Usage | Computed<OpenapiReservationRecommendationDetailsModel_Properties_Usage>;
 }
 
+export interface OpenapiReservationRecommendationDetailsModel_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 export interface OpenapiReservationRecommendationDetailsModelConfig {
   lookBackPeriod: string | Computed<string>;
   managementGroupId?: string | Computed<string>;
@@ -93,10 +108,14 @@ export interface OpenapiReservationRecommendationDetailsModelConfig {
 export interface OpenapiReservationRecommendationDetailsModelAttrs {
   /** The etag for the resource. */
   etag: string;
+  /** Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} */
+  id: string;
   /** Resource Location. */
   location: string;
   lookBackPeriod: string;
   managementGroupId: string;
+  /** The name of the resource */
+  name: string;
   product: string;
   /** The properties of the reservation recommendation. */
   properties: OpenapiReservationRecommendationDetailsModel_Properties;
@@ -105,9 +124,13 @@ export interface OpenapiReservationRecommendationDetailsModelAttrs {
   scope: string;
   /** Resource sku */
   sku: string;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: OpenapiReservationRecommendationDetailsModel_SystemData;
   /** Resource tags. */
   tags: Record<string, string>;
   term: string;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const OpenapiReservationRecommendationDetailsModel: DataSourceBinding<OpenapiReservationRecommendationDetailsModelConfig, OpenapiReservationRecommendationDetailsModelAttrs> = {

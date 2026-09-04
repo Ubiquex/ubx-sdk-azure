@@ -475,8 +475,12 @@ class HciClusterConfig:
     identity: Any = None
     # This property identifies the purpose of the Cluster deployment. For example, a valid value is AzureLocal
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Cluster properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class HciClusterAttrs:
@@ -484,8 +488,12 @@ class HciClusterAttrs:
     identity: Any = None
     # This property identifies the purpose of the Cluster deployment. For example, a valid value is AzureLocal
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Cluster properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 HciCluster = ubx.ResourceBinding(
     wire_type="azure_azurestackhci_hci_cluster",
@@ -496,10 +504,12 @@ HciCluster = ubx.ResourceBinding(
             fields=_HciCluster_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_HciCluster_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

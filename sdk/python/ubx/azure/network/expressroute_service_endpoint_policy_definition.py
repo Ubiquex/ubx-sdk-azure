@@ -26,6 +26,8 @@ _ExpressrouteServiceEndpointPolicyDefinition_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteServiceEndpointPolicyDefinitionConfig:
+    # Name of the resource.
+    name: Any = None
     # Service Endpoint policy definition resource.
     properties: Any = None
 
@@ -33,12 +35,17 @@ class ExpressrouteServiceEndpointPolicyDefinitionConfig:
 class ExpressrouteServiceEndpointPolicyDefinitionAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Name of the resource.
+    name: Any = None
     # Service Endpoint policy definition resource.
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 ExpressrouteServiceEndpointPolicyDefinition = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_service_endpoint_policy_definition",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

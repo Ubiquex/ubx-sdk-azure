@@ -22,8 +22,14 @@ class VirtualnetworkSwapResourceConfig:
 
 @dataclasses.dataclass
 class VirtualnetworkSwapResourceAttrs:
+    # Resource ID.
+    id: Any = None
+    # Resource name.
+    name: Any = None
     # Swap resource properties
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkSwapResource = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_swap_resource",

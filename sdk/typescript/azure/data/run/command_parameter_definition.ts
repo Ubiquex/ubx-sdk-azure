@@ -14,6 +14,14 @@ export interface CommandParameterDefinitionConfig {
 
 export interface CommandParameterDefinitionAttrs {
   commandId: string;
+  /** The VM run command description. */
+  description: string;
+  /** The VM run command id. */
+  id: string;
+  /** The VM run command label. */
+  label: string;
+  /** This property allows you to specify the type of the OS that is included in the disk if creating a VM from user-image or a specialized VHD. Possible values are: **Windows,** **Linux.** */
+  osType: string;
   /** The parameters used by the script. */
   parameters: CommandParameterDefinition_Parameters[];
   /** The script to be executed. */

@@ -13,22 +13,32 @@ var BackupVault_PropertiesFields = ubx.FieldMap{
 }
 
 type BackupVaultConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Backup Vault properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type BackupVaultAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Backup Vault properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var BackupVault = ubx.ResourceBinding{
 	WireType: "azure_netapp_backup_vault",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   BackupVault_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

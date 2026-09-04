@@ -131,7 +131,17 @@ export interface FirewallpolicyFirewallPolicyDraftConfig {
 
 export interface FirewallpolicyFirewallPolicyDraftAttrs {
   firewallPolicyName: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   properties: FirewallpolicyFirewallPolicyDraft_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const FirewallpolicyFirewallPolicyDraft: DataSourceBinding<FirewallpolicyFirewallPolicyDraftConfig, FirewallpolicyFirewallPolicyDraftAttrs> = {

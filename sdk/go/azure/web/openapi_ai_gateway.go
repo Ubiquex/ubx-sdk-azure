@@ -13,15 +13,23 @@ var OpenapiAiGateway_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiAiGatewayConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The properties of an AI gateway.
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
 
 type OpenapiAiGatewayAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The properties of an AI gateway.
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -29,11 +37,13 @@ type OpenapiAiGatewayAttrs struct {
 var OpenapiAiGateway = ubx.ResourceBinding{
 	WireType: "azure_web_openapi_ai_gateway",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiAiGateway_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

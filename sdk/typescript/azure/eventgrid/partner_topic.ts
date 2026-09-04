@@ -115,17 +115,25 @@ const PartnerTopic_PropertiesFields: FieldMap = {
 export interface PartnerTopicConfig {
   /** The identity information for the resource. */
   identity?: PartnerTopic_Identity | Computed<PartnerTopic_Identity>;
+  /** Location of the resource. */
+  location: string | Computed<string>;
   /** Properties of the Partner Topic. */
   properties?: PartnerTopic_Properties | Computed<PartnerTopic_Properties>;
+  /** Tags of the resource. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface PartnerTopicAttrs {
   /** The identity information for the resource. */
   identity: PartnerTopic_Identity;
+  /** Location of the resource. */
+  location: string;
   /** Properties of the Partner Topic. */
   properties: PartnerTopic_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: PartnerTopic_SystemData;
+  /** Tags of the resource. */
+  tags: Record<string, string>;
 }
 
 export const PartnerTopic: ResourceBinding<PartnerTopicConfig, PartnerTopicAttrs> = {
@@ -136,10 +144,12 @@ export const PartnerTopic: ResourceBinding<PartnerTopicConfig, PartnerTopicAttrs
       kind: "object",
       fields: PartnerTopic_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: PartnerTopic_PropertiesFields,
     },
+    tags: "tags",
   },
 };

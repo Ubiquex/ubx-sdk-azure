@@ -57,8 +57,14 @@ export interface PrivateEndpointConnection2Config {
 }
 
 export interface PrivateEndpointConnection2Attrs {
+  /** Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} */
+  id: string;
+  /** The name of the resource */
+  name: string;
   /** Properties of the PrivateEndpointConnectProperties. */
   properties: PrivateEndpointConnection2_Properties;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const PrivateEndpointConnection2: ResourceBinding<PrivateEndpointConnection2Config, PrivateEndpointConnection2Attrs> = {

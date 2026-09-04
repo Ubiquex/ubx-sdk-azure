@@ -30,26 +30,36 @@ var VirtualnetworkVerifierWorkspace_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkVerifierWorkspaceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of Verifier Workspace resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkVerifierWorkspaceAttrs struct {
 	// String representing unique etag for the resource document.
 	Etag any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of Verifier Workspace resource.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource tags.
+	Tags any
 }
 
 var VirtualnetworkVerifierWorkspace = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_verifier_workspace",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkVerifierWorkspace_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

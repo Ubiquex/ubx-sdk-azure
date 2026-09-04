@@ -12079,24 +12079,43 @@ var VirtualnetworkNetworkProfile_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkNetworkProfileConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Network profile properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkNetworkProfileAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Network profile properties.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkNetworkProfile = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_network_profile",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkNetworkProfile_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

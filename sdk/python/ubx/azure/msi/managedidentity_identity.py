@@ -26,21 +26,31 @@ _ManagedidentityIdentity_PropertiesFields = {
 
 @dataclasses.dataclass
 class ManagedidentityIdentityConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties associated with the user assigned identity.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ManagedidentityIdentityAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties associated with the user assigned identity.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ManagedidentityIdentity = ubx.ResourceBinding(
     wire_type="azure_msi_managedidentity_identity",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ManagedidentityIdentity_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

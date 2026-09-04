@@ -75,10 +75,18 @@ type NetworkmanagerSecurityUserRuleConfig struct {
 }
 
 type NetworkmanagerSecurityUserRuleAttrs struct {
+	// A unique read-only string that changes whenever the resource is updated.
+	Etag any
+	// Resource ID.
+	Id any
+	// Resource name.
+	Name any
 	// Security rule resource.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource type.
+	Type any
 }
 
 var NetworkmanagerSecurityUserRule = ubx.ResourceBinding{

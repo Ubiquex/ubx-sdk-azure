@@ -66,6 +66,8 @@ var VirtualnetworkPrivateDnsZoneGroup_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkPrivateDnsZoneGroupConfig struct {
+	// Resource ID.
+	Id any
 	// Name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Properties of the private dns zone group.
@@ -75,6 +77,8 @@ type VirtualnetworkPrivateDnsZoneGroupConfig struct {
 type VirtualnetworkPrivateDnsZoneGroupAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// Name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Properties of the private dns zone group.
@@ -84,6 +88,7 @@ type VirtualnetworkPrivateDnsZoneGroupAttrs struct {
 var VirtualnetworkPrivateDnsZoneGroup = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_private_dns_zone_group",
 	Fields: ubx.FieldMap{
+		"Id":   ubx.FieldSpec{WireName: "id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",

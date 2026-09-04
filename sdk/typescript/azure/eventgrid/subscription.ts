@@ -216,10 +216,16 @@ export interface SubscriptionConfig {
 }
 
 export interface SubscriptionAttrs {
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the event subscription. */
   properties: Subscription_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: Subscription_SystemData;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const Subscription: ResourceBinding<SubscriptionConfig, SubscriptionAttrs> = {

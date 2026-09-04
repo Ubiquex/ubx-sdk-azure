@@ -15,18 +15,21 @@ type OpenapiMsdeployLog_Properties struct {
 }
 
 type OpenapiMsdeployLogConfig struct {
-	Name any
 }
 
 type OpenapiMsdeployLogAttrs struct {
+	// Resource Id.
+	Id any
+	// Kind of resource.
+	Kind any
 	Name any
 	// MSDeployLog resource specific properties
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var OpenapiMsdeployLog = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_msdeploy_log",
-	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	},
+	Fields:   ubx.FieldMap{},
 }

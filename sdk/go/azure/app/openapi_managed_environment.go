@@ -371,8 +371,12 @@ type OpenapiManagedEnvironmentConfig struct {
 	Identity any
 	// Kind of the Environment.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Managed environment resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiManagedEnvironmentAttrs struct {
@@ -380,8 +384,12 @@ type OpenapiManagedEnvironmentAttrs struct {
 	Identity any
 	// Kind of the Environment.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Managed environment resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiManagedEnvironment = ubx.ResourceBinding{
@@ -392,11 +400,13 @@ var OpenapiManagedEnvironment = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiManagedEnvironment_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiManagedEnvironment_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

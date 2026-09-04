@@ -22,18 +22,27 @@ var TransformationsTransformation_PropertiesFields = ubx.FieldMap{
 }
 
 type TransformationsTransformationConfig struct {
+	// Resource name
+	Name any
 	// The properties that are associated with a transformation.
 	Properties any
 }
 
 type TransformationsTransformationAttrs struct {
+	// Resource Id
+	Id any
+	// Resource name
+	Name any
 	// The properties that are associated with a transformation.
 	Properties any
+	// Resource type
+	Type any
 }
 
 var TransformationsTransformation = ubx.ResourceBinding{
 	WireType: "azure_streamanalytics_transformations_transformation",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

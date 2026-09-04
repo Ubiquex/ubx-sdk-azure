@@ -476,26 +476,36 @@ _OpenapiAutonomousDatabase_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiAutonomousDatabaseConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Autonomous Database base resource model.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     autonomousdatabasename: Any = None
 
 @dataclasses.dataclass
 class OpenapiAutonomousDatabaseAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Autonomous Database base resource model.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     autonomousdatabasename: Any = None
 
 OpenapiAutonomousDatabase = ubx.ResourceBinding(
     wire_type="azure_oracle_openapi_autonomous_database",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiAutonomousDatabase_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "autonomousdatabasename": ubx.FieldSpec(wire_name="autonomousdatabasename"),
     },
 )

@@ -107,21 +107,31 @@ _OpenapiHybridComputePrivateLinkScope_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiHybridComputePrivateLinkScopeConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties that define a Azure Arc PrivateLinkScope resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiHybridComputePrivateLinkScopeAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties that define a Azure Arc PrivateLinkScope resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiHybridComputePrivateLinkScope = ubx.ResourceBinding(
     wire_type="azure_hybridcompute_openapi_hybrid_compute_private_link_scope",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiHybridComputePrivateLinkScope_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

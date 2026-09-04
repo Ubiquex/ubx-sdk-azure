@@ -861,8 +861,12 @@ type OpenapiMachineConfig struct {
 	Identity any
 	// Indicates which kind of Arc machine placement on-premises, such as HCI, SCVMM or VMware etc.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a hybrid machine.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiMachineAttrs struct {
@@ -870,10 +874,14 @@ type OpenapiMachineAttrs struct {
 	Identity any
 	// Indicates which kind of Arc machine placement on-premises, such as HCI, SCVMM or VMware etc.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a hybrid machine.
 	Properties any
 	// The list of extensions affiliated to the machine
 	Resources any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiMachine = ubx.ResourceBinding{
@@ -884,11 +892,13 @@ var OpenapiMachine = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiMachine_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiMachine_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

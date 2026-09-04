@@ -16,12 +16,14 @@ var OpenapiActionResponse_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiActionResponseConfig struct {
+	// Etag of the azure resource
+	Etag any
 	// Action property bag.
 	Properties any
 }
 
 type OpenapiActionResponseAttrs struct {
-	// Etag of the action.
+	// Etag of the azure resource
 	Etag any
 	// Action property bag.
 	Properties any
@@ -30,6 +32,7 @@ type OpenapiActionResponseAttrs struct {
 var OpenapiActionResponse = ubx.ResourceBinding{
 	WireType: "azure_securityinsights_openapi_action_response",
 	Fields: ubx.FieldMap{
+		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

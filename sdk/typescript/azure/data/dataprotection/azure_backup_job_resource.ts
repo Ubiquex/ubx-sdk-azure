@@ -94,6 +94,8 @@ export interface AzureBackupJobResourceConfig {
 }
 
 export interface AzureBackupJobResourceAttrs {
+  /** The uri to fetch the next page of resources. Call ListNext() fetches next page of resources. */
+  nextLink: string;
   /** List of resources. */
   value: AzureBackupJobResource_Value[];
   vaultName: string;

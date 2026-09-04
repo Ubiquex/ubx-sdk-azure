@@ -345,15 +345,23 @@ const Workspace_PropertiesFields: FieldMap = {
 export interface WorkspaceConfig {
   /** The workspace managed identity */
   identity?: Workspace_Identity | Computed<Workspace_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Workspace properties */
   properties?: Workspace_Properties | Computed<Workspace_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface WorkspaceAttrs {
   /** The workspace managed identity */
   identity: Workspace_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Workspace properties */
   properties: Workspace_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Workspace: ResourceBinding<WorkspaceConfig, WorkspaceAttrs> = {
@@ -364,10 +372,12 @@ export const Workspace: ResourceBinding<WorkspaceConfig, WorkspaceAttrs> = {
       kind: "object",
       fields: Workspace_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Workspace_PropertiesFields,
     },
+    tags: "tags",
   },
 };

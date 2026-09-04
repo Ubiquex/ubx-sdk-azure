@@ -118,15 +118,23 @@ var Pool_PropertiesFields = ubx.FieldMap{
 type PoolConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Pool properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type PoolAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Pool properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var Pool = ubx.ResourceBinding{
@@ -137,10 +145,12 @@ var Pool = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Pool_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Pool_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -11,14 +11,25 @@ type OpenapiBackupResult_Properties struct {
 }
 
 type OpenapiBackupResultConfig struct {
+	// The Azure blob storage container Uri which contains the backup
+	AzureStorageBlobContainerUri any
+	// The SAS token pointing to an Azure blob storage container. This property is reserved for Azure Backup Service.
+	Token any
 }
 
 type OpenapiBackupResultAttrs struct {
+	// The Azure blob storage container Uri which contains the backup
+	AzureStorageBlobContainerUri any
 	// Properties of the Cloud HSM Cluster
 	Properties any
+	// The SAS token pointing to an Azure blob storage container. This property is reserved for Azure Backup Service.
+	Token any
 }
 
 var OpenapiBackupResult = ubx.ResourceBinding{
 	WireType: "azure_hardwaresecuritymodules_openapi_backup_result",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"AzureStorageBlobContainerUri": ubx.FieldSpec{WireName: "azure_storage_blob_container_uri"},
+		"Token":                        ubx.FieldSpec{WireName: "token"},
+	},
 }

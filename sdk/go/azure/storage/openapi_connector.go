@@ -47,22 +47,32 @@ var OpenapiConnector_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiConnectorConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The storage connector properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiConnectorAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The storage connector properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiConnector = ubx.ResourceBinding{
 	WireType: "azure_storage_openapi_connector",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiConnector_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

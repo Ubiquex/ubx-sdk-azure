@@ -34,25 +34,35 @@ _VirtualnetworkVerifierWorkspace_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkVerifierWorkspaceConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of Verifier Workspace resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkVerifierWorkspaceAttrs:
     # String representing unique etag for the resource document.
     etag: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of Verifier Workspace resource.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource tags.
+    tags: Any = None
 
 VirtualnetworkVerifierWorkspace = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_verifier_workspace",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualnetworkVerifierWorkspace_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -12290,8 +12290,14 @@ _VirtualnetworkNetworkInterface_PropertiesFields = {
 class VirtualnetworkNetworkInterfaceConfig:
     # ExtendedLocation complex type.
     extended_location: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # NetworkInterface properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkInterfaceAttrs:
@@ -12299,8 +12305,18 @@ class VirtualnetworkNetworkInterfaceAttrs:
     etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # NetworkInterface properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkNetworkInterface = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_network_interface",
@@ -12310,10 +12326,13 @@ VirtualnetworkNetworkInterface = ubx.ResourceBinding(
             kind="object",
             fields=_VirtualnetworkNetworkInterface_ExtendedLocationFields,
         ),
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualnetworkNetworkInterface_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

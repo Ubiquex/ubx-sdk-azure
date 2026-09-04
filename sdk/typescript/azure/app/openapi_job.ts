@@ -473,15 +473,23 @@ const OpenapiJob_PropertiesFields: FieldMap = {
 export interface OpenapiJobConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: OpenapiJob_Identity | Computed<OpenapiJob_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Container Apps Job resource specific properties. */
   properties?: OpenapiJob_Properties | Computed<OpenapiJob_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiJobAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: OpenapiJob_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Container Apps Job resource specific properties. */
   properties: OpenapiJob_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiJob: ResourceBinding<OpenapiJobConfig, OpenapiJobAttrs> = {
@@ -492,10 +500,12 @@ export const OpenapiJob: ResourceBinding<OpenapiJobConfig, OpenapiJobAttrs> = {
       kind: "object",
       fields: OpenapiJob_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiJob_PropertiesFields,
     },
+    tags: "tags",
   },
 };

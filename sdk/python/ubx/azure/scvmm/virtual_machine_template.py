@@ -166,15 +166,23 @@ _VirtualMachineTemplate_PropertiesFields = {
 class VirtualMachineTemplateConfig:
     # The extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualMachineTemplateAttrs:
     # The extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 VirtualMachineTemplate = ubx.ResourceBinding(
     wire_type="azure_scvmm_virtual_machine_template",
@@ -184,10 +192,12 @@ VirtualMachineTemplate = ubx.ResourceBinding(
             kind="object",
             fields=_VirtualMachineTemplate_ExtendedLocationFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualMachineTemplate_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

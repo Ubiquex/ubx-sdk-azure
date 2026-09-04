@@ -95,6 +95,13 @@ export interface Bot_Properties {
   tenantId?: string | Computed<string>;
 }
 
+export interface Bot_Sku {
+  /** The name of SKU. */
+  name: string | Computed<string>;
+  /** Gets the sku tier. This is based on the SKU name. */
+  tier?: string | Computed<string>;
+}
+
 const Bot_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields: FieldMap = {
   id: "id",
 };
@@ -170,23 +177,65 @@ const Bot_PropertiesFields: FieldMap = {
   tenantId: "tenant_id",
 };
 
+const Bot_SkuFields: FieldMap = {
+  name: "name",
+  tier: "tier",
+};
+
 export interface BotConfig {
+  /** Entity Tag. */
+  etag?: string | Computed<string>;
+  /** Indicates the type of bot service */
+  kind?: string | Computed<string>;
+  /** Specifies the location of the resource. */
+  location?: string | Computed<string>;
   /** The parameters to provide for the Bot. */
   properties?: Bot_Properties | Computed<Bot_Properties>;
+  /** The SKU of the cognitive services account. */
+  sku?: Bot_Sku | Computed<Bot_Sku>;
+  /** Contains resource tags defined as key/value pairs. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface BotAttrs {
+  /** Entity Tag. */
+  etag: string;
+  /** Specifies the resource ID. */
+  id: string;
+  /** Indicates the type of bot service */
+  kind: string;
+  /** Specifies the location of the resource. */
+  location: string;
+  /** Specifies the name of the resource. */
+  name: string;
   /** The parameters to provide for the Bot. */
   properties: Bot_Properties;
+  /** The SKU of the cognitive services account. */
+  sku: Bot_Sku;
+  /** Contains resource tags defined as key/value pairs. */
+  tags: Record<string, string>;
+  /** Specifies the type of the resource. */
+  type: string;
+  /** Entity zones */
+  zones: string[];
 }
 
 export const Bot: ResourceBinding<BotConfig, BotAttrs> = {
   wireType: "azure_botservice_bot",
   fields: {
+    etag: "etag",
+    kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Bot_PropertiesFields,
     },
+    sku: {
+      wireName: "sku",
+      kind: "object",
+      fields: Bot_SkuFields,
+    },
+    tags: "tags",
   },
 };

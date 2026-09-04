@@ -35,21 +35,30 @@ _OpenapiDedicatedCapacity_SkuFields = {
 
 @dataclasses.dataclass
 class OpenapiDedicatedCapacityConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of Dedicated Capacity resource.
     properties: Any = None
     # Represents the SKU name and Azure pricing tier for PowerBI Dedicated capacity resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiDedicatedCapacityAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of Dedicated Capacity resource.
     properties: Any = None
     # Represents the SKU name and Azure pricing tier for PowerBI Dedicated capacity resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiDedicatedCapacity = ubx.ResourceBinding(
     wire_type="azure_powerbidedicated_openapi_dedicated_capacity",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -60,5 +69,6 @@ OpenapiDedicatedCapacity = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiDedicatedCapacity_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

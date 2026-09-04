@@ -22,15 +22,23 @@ var OpenapiDbSystem_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiDbSystemConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// DbSystem resource model.
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
 
 type OpenapiDbSystemAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// DbSystem resource model.
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -38,11 +46,13 @@ type OpenapiDbSystemAttrs struct {
 var OpenapiDbSystem = ubx.ResourceBinding{
 	WireType: "azure_oracle_openapi_db_system",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiDbSystem_PropertiesFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

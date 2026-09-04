@@ -186,22 +186,32 @@ var BigdatapoolBigDataPoolResourceInfo_PropertiesFields = ubx.FieldMap{
 }
 
 type BigdatapoolBigDataPoolResourceInfoConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a Big Data pool powered by Apache Spark
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type BigdatapoolBigDataPoolResourceInfoAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a Big Data pool powered by Apache Spark
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var BigdatapoolBigDataPoolResourceInfo = ubx.ResourceBinding{
 	WireType: "azure_synapse_bigdatapool_big_data_pool_resource_info",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   BigdatapoolBigDataPoolResourceInfo_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

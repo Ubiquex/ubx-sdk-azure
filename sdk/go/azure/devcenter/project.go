@@ -50,15 +50,23 @@ var Project_PropertiesFields = ubx.FieldMap{
 type ProjectConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a project.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ProjectAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a project.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var Project = ubx.ResourceBinding{
@@ -69,10 +77,12 @@ var Project = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Project_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Project_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

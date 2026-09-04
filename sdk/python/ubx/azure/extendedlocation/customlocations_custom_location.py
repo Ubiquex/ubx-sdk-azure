@@ -83,17 +83,25 @@ _CustomlocationsCustomLocation_PropertiesFields = {
 class CustomlocationsCustomLocationConfig:
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties for a custom location.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class CustomlocationsCustomLocationAttrs:
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties for a custom location.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource tags.
+    tags: Any = None
 
 CustomlocationsCustomLocation = ubx.ResourceBinding(
     wire_type="azure_extendedlocation_customlocations_custom_location",
@@ -103,10 +111,12 @@ CustomlocationsCustomLocation = ubx.ResourceBinding(
             kind="object",
             fields=_CustomlocationsCustomLocation_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_CustomlocationsCustomLocation_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

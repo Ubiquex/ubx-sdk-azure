@@ -176,22 +176,32 @@ var MachineDiagnosticRunCommand_PropertiesFields = ubx.FieldMap{
 }
 
 type MachineDiagnosticRunCommandConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Virtual Machine run command.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type MachineDiagnosticRunCommandAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Virtual Machine run command.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var MachineDiagnosticRunCommand = ubx.ResourceBinding{
 	WireType: "azure_virtual_machine_diagnostic_run_command",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   MachineDiagnosticRunCommand_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

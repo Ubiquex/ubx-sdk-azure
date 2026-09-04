@@ -45,22 +45,32 @@ _ResourceGuardResource_PropertiesFields = {
 class ResourceGuardResourceConfig:
     # Optional ETag.
     e_tag: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ResourceGuardResourceAttrs:
     # Optional ETag.
     e_tag: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ResourceGuardResource = ubx.ResourceBinding(
     wire_type="azure_dataprotection_resource_guard_resource",
     fields={
         "e_tag": ubx.FieldSpec(wire_name="e_tag"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ResourceGuardResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

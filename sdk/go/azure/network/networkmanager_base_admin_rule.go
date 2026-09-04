@@ -24,10 +24,18 @@ type NetworkmanagerBaseAdminRuleConfig struct {
 }
 
 type NetworkmanagerBaseAdminRuleAttrs struct {
+	// A unique read-only string that changes whenever the resource is updated.
+	Etag any
+	// Resource ID.
+	Id any
 	// Whether the rule is custom or default.
 	Kind any
+	// Resource name.
+	Name any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource type.
+	Type any
 }
 
 var NetworkmanagerBaseAdminRule = ubx.ResourceBinding{

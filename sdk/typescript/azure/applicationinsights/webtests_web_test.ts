@@ -68,25 +68,41 @@ const WebtestsWebTest_PropertiesFields: FieldMap = {
 export interface WebtestsWebTestConfig {
   /** The kind of web test that this web test watches. Choices are ping and multistep. */
   kind?: string | Computed<string>;
+  /** Resource location */
+  location: string | Computed<string>;
   /** Metadata describing a web test for an Azure resource. */
   properties?: WebtestsWebTest_Properties | Computed<WebtestsWebTest_Properties>;
+  /** Resource tags */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface WebtestsWebTestAttrs {
+  /** Azure resource Id */
+  id: string;
   /** The kind of web test that this web test watches. Choices are ping and multistep. */
   kind: string;
+  /** Resource location */
+  location: string;
+  /** Azure resource name */
+  name: string;
   /** Metadata describing a web test for an Azure resource. */
   properties: WebtestsWebTest_Properties;
+  /** Resource tags */
+  tags: Record<string, string>;
+  /** Azure resource type */
+  type: string;
 }
 
 export const WebtestsWebTest: ResourceBinding<WebtestsWebTestConfig, WebtestsWebTestAttrs> = {
   wireType: "azure_applicationinsights_webtests_web_test",
   fields: {
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: WebtestsWebTest_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -12085,23 +12085,42 @@ _VirtualnetworkNetworkProfile_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkProfileConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Network profile properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkProfileAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Network profile properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkNetworkProfile = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_network_profile",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualnetworkNetworkProfile_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

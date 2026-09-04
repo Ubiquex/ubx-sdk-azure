@@ -25,9 +25,13 @@ type FirewallpolicyFirewallPolicyRuleCollectionGroupDraftConfig struct {
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroupDraftAttrs struct {
 	FirewallPolicyName any
+	// Name of the resource.
+	Name any
 	// Properties of the rule collection group draft.
 	Properties              any
 	RuleCollectionGroupName any
+	// Resource type.
+	Type any
 }
 
 var FirewallpolicyFirewallPolicyRuleCollectionGroupDraft = ubx.DataSourceBinding{

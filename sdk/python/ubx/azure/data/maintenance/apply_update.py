@@ -16,6 +16,21 @@ class ApplyUpdate_Properties:
     status: Any = None
 
 @dataclasses.dataclass
+class ApplyUpdate_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
 class ApplyUpdateConfig:
     api_version: Any = None
     apply_update_name: Any = None
@@ -29,6 +44,10 @@ class ApplyUpdateConfig:
 class ApplyUpdateAttrs:
     api_version: Any = None
     apply_update_name: Any = None
+    # Fully qualified identifier of the resource
+    id: Any = None
+    # Name of the resource
+    name: Any = None
     # Properties for apply update
     properties: Any = None
     provider_name: Any = None
@@ -36,6 +55,10 @@ class ApplyUpdateAttrs:
     resource_name: Any = None
     resource_type: Any = None
     subscription_id: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Type of the resource
+    type: Any = None
 
 ApplyUpdate = ubx.DataSourceBinding(
     wire_type="azure_maintenance_apply_update",

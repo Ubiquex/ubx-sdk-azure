@@ -4390,6 +4390,8 @@ _ApplicationgatewayApplicationGatewayPrivateEndpointConnection_PropertiesFields 
 
 @dataclasses.dataclass
 class ApplicationgatewayApplicationGatewayPrivateEndpointConnectionConfig:
+    # Name of the resource.
+    name: Any = None
     # Properties of Private Link Resource of an application gateway.
     properties: Any = None
 
@@ -4397,12 +4399,17 @@ class ApplicationgatewayApplicationGatewayPrivateEndpointConnectionConfig:
 class ApplicationgatewayApplicationGatewayPrivateEndpointConnectionAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of Private Link Resource of an application gateway.
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 ApplicationgatewayApplicationGatewayPrivateEndpointConnection = ubx.ResourceBinding(
     wire_type="azure_network_applicationgateway_application_gateway_private_endpoint_connection",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

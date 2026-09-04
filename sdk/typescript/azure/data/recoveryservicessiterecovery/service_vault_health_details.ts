@@ -66,16 +66,39 @@ export interface ServiceVaultHealthDetails_Properties {
   vaultErrors?: ServiceVaultHealthDetails_Properties_VaultErrors[] | Computed<ServiceVaultHealthDetails_Properties_VaultErrors[]>;
 }
 
+export interface ServiceVaultHealthDetails_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 export interface ServiceVaultHealthDetailsConfig {
   resourceName: string | Computed<string>;
 }
 
 export interface ServiceVaultHealthDetailsAttrs {
+  /** Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}" */
+  id: string;
   /** Resource Location */
   location: string;
+  /** The name of the resource */
+  name: string;
   /** class to define the health summary of the Vault. */
   properties: ServiceVaultHealthDetails_Properties;
   resourceName: string;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: ServiceVaultHealthDetails_SystemData;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const ServiceVaultHealthDetails: DataSourceBinding<ServiceVaultHealthDetailsConfig, ServiceVaultHealthDetailsAttrs> = {

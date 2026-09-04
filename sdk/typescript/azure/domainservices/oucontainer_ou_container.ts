@@ -26,6 +26,21 @@ export interface OucontainerOuContainer_Properties {
   tenantId?: string | Computed<string>;
 }
 
+export interface OucontainerOuContainer_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 export interface OucontainerOuContainerConfig {
   /** The account name */
   accountName?: string | Computed<string>;
@@ -38,12 +53,26 @@ export interface OucontainerOuContainerConfig {
 export interface OucontainerOuContainerAttrs {
   /** The account name */
   accountName: string;
+  /** Resource etag */
+  etag: string;
+  /** Resource Id */
+  id: string;
+  /** Resource location */
+  location: string;
+  /** Resource name */
+  name: string;
   /** The account password */
   password: string;
   /** Properties of the OuContainer. */
   properties: OucontainerOuContainer_Properties;
   /** The account spn */
   spn: string;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: OucontainerOuContainer_SystemData;
+  /** Resource tags */
+  tags: Record<string, string>;
+  /** Resource type */
+  type: string;
 }
 
 export const OucontainerOuContainer: ResourceBinding<OucontainerOuContainerConfig, OucontainerOuContainerAttrs> = {

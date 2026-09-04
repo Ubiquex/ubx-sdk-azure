@@ -22,8 +22,12 @@ var FirstpartyservicetagFirstPartyServiceTag_PropertiesFields = ubx.FieldMap{
 }
 
 type FirstpartyservicetagFirstPartyServiceTagConfig struct {
+	// Resource location.
+	Location any
 	// Properties of the first party service tag.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type FirstpartyservicetagFirstPartyServiceTagAttrs struct {
@@ -31,8 +35,14 @@ type FirstpartyservicetagFirstPartyServiceTagAttrs struct {
 	Etag any
 	// The unique identifier of the resource.
 	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties of the first party service tag.
 	Properties any
+	// Resource tags.
+	Tags any
 	// The type of the resource.
 	Type any
 }
@@ -40,10 +50,12 @@ type FirstpartyservicetagFirstPartyServiceTagAttrs struct {
 var FirstpartyservicetagFirstPartyServiceTag = ubx.ResourceBinding{
 	WireType: "azure_network_firstpartyservicetag_first_party_service_tag",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   FirstpartyservicetagFirstPartyServiceTag_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

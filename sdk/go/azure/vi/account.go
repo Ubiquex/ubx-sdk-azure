@@ -167,17 +167,25 @@ var Account_PropertiesFields = ubx.FieldMap{
 type AccountConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Azure Video Indexer account properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type AccountAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Azure Video Indexer account properties
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource tags.
+	Tags any
 }
 
 var Account = ubx.ResourceBinding{
@@ -188,10 +196,12 @@ var Account = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Account_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Account_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

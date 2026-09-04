@@ -54,13 +54,21 @@ _OpenapiAccessConnector_PropertiesFields = {
 class OpenapiAccessConnectorConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiAccessConnectorAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiAccessConnector = ubx.ResourceBinding(
     wire_type="azure_databricks_openapi_access_connector",
@@ -70,10 +78,12 @@ OpenapiAccessConnector = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiAccessConnector_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiAccessConnector_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

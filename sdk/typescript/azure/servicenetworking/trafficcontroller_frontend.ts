@@ -14,22 +14,32 @@ const TrafficcontrollerFrontend_PropertiesFields: FieldMap = {
 };
 
 export interface TrafficcontrollerFrontendConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Frontend Properties. */
   properties?: TrafficcontrollerFrontend_Properties | Computed<TrafficcontrollerFrontend_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface TrafficcontrollerFrontendAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Frontend Properties. */
   properties: TrafficcontrollerFrontend_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const TrafficcontrollerFrontend: ResourceBinding<TrafficcontrollerFrontendConfig, TrafficcontrollerFrontendAttrs> = {
   wireType: "azure_servicenetworking_trafficcontroller_frontend",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: TrafficcontrollerFrontend_PropertiesFields,
     },
+    tags: "tags",
   },
 };

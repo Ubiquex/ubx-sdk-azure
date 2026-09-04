@@ -20,12 +20,14 @@ _OpenapiActionResponse_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiActionResponseConfig:
+    # Etag of the azure resource
+    etag: Any = None
     # Action property bag.
     properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiActionResponseAttrs:
-    # Etag of the action.
+    # Etag of the azure resource
     etag: Any = None
     # Action property bag.
     properties: Any = None
@@ -33,6 +35,7 @@ class OpenapiActionResponseAttrs:
 OpenapiActionResponse = ubx.ResourceBinding(
     wire_type="azure_securityinsights_openapi_action_response",
     fields={
+        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

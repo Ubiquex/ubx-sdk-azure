@@ -95,22 +95,32 @@ const OpenapiConfidentialLedger_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiConfidentialLedgerConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Additional Confidential Ledger properties. */
   properties?: OpenapiConfidentialLedger_Properties | Computed<OpenapiConfidentialLedger_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiConfidentialLedgerAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Additional Confidential Ledger properties. */
   properties: OpenapiConfidentialLedger_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiConfidentialLedger: ResourceBinding<OpenapiConfidentialLedgerConfig, OpenapiConfidentialLedgerAttrs> = {
   wireType: "azure_confidentialledger_openapi_confidential_ledger",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiConfidentialLedger_PropertiesFields,
     },
+    tags: "tags",
   },
 };

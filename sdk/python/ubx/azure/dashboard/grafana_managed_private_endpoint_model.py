@@ -53,21 +53,31 @@ _GrafanaManagedPrivateEndpointModel_PropertiesFields = {
 
 @dataclasses.dataclass
 class GrafanaManagedPrivateEndpointModelConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the managed private endpoint.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class GrafanaManagedPrivateEndpointModelAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the managed private endpoint.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 GrafanaManagedPrivateEndpointModel = ubx.ResourceBinding(
     wire_type="azure_dashboard_grafana_managed_private_endpoint_model",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_GrafanaManagedPrivateEndpointModel_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

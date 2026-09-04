@@ -42,6 +42,21 @@ export interface ManagedapplicationsJitRequestDefinition_Properties {
   updatedBy?: ManagedapplicationsJitRequestDefinition_Properties_CreatedBy | Computed<ManagedapplicationsJitRequestDefinition_Properties_CreatedBy>;
 }
 
+export interface ManagedapplicationsJitRequestDefinition_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const ManagedapplicationsJitRequestDefinition_Properties_CreatedByFields: FieldMap = {
   applicationId: "application_id",
   oid: "oid",
@@ -87,22 +102,40 @@ const ManagedapplicationsJitRequestDefinition_PropertiesFields: FieldMap = {
 };
 
 export interface ManagedapplicationsJitRequestDefinitionConfig {
+  /** Resource location */
+  location?: string | Computed<string>;
   /** Information about JIT request properties */
   properties?: ManagedapplicationsJitRequestDefinition_Properties | Computed<ManagedapplicationsJitRequestDefinition_Properties>;
+  /** Resource tags */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ManagedapplicationsJitRequestDefinitionAttrs {
+  /** Resource ID */
+  id: string;
+  /** Resource location */
+  location: string;
+  /** Resource name */
+  name: string;
   /** Information about JIT request properties */
   properties: ManagedapplicationsJitRequestDefinition_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: ManagedapplicationsJitRequestDefinition_SystemData;
+  /** Resource tags */
+  tags: Record<string, string>;
+  /** Resource type */
+  type: string;
 }
 
 export const ManagedapplicationsJitRequestDefinition: ResourceBinding<ManagedapplicationsJitRequestDefinitionConfig, ManagedapplicationsJitRequestDefinitionAttrs> = {
   wireType: "azure_solutions_managedapplications_jit_request_definition",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ManagedapplicationsJitRequestDefinition_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -25,6 +25,21 @@ type BmsRecoveryPointResource_Properties struct {
 	ThreatStatus any
 }
 
+type BmsRecoveryPointResource_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var BmsRecoveryPointResource_Properties_ThreatInfoFields = ubx.FieldMap{
 	"LastUpdatedTime":   ubx.FieldSpec{WireName: "last_updated_time"},
 	"ThreatDescription": ubx.FieldSpec{WireName: "threat_description"},
@@ -61,12 +76,20 @@ type BmsRecoveryPointResourceConfig struct {
 type BmsRecoveryPointResourceAttrs struct {
 	// Optional ETag.
 	ETag any
+	// Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+	Id any
 	// Represents an Azure geography region where supported resource providers live.
 	Location any
+	// The name of the resource
+	Name any
 	// Base class for restore request. Workload-specific restore requests are derived from this class.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
 	// Resource tags.
 	Tags any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var BmsRecoveryPointResource = ubx.ResourceBinding{

@@ -133,15 +133,23 @@ _NetworkinterfacesNetworkInterfaces_PropertiesFields = {
 class NetworkinterfacesNetworkInterfacesConfig:
     # The complex type of the extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties under the network interface resource
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class NetworkinterfacesNetworkInterfacesAttrs:
     # The complex type of the extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties under the network interface resource
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 NetworkinterfacesNetworkInterfaces = ubx.ResourceBinding(
     wire_type="azure_azurestackhci_networkinterfaces_network_interfaces",
@@ -151,10 +159,12 @@ NetworkinterfacesNetworkInterfaces = ubx.ResourceBinding(
             kind="object",
             fields=_NetworkinterfacesNetworkInterfaces_ExtendedLocationFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_NetworkinterfacesNetworkInterfaces_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -39,6 +39,21 @@ class BmsErrorResponse_Properties:
     # Key Vault Subscription Id
     subscription_id: Any = None
 
+@dataclasses.dataclass
+class BmsErrorResponse_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _BmsErrorResponse_PropertiesFields = {
     "encryption_at_rest_type": ubx.FieldSpec(wire_name="encryption_at_rest_type"),
     "infrastructure_encryption_state": ubx.FieldSpec(wire_name="infrastructure_encryption_state"),
@@ -63,11 +78,19 @@ class BmsErrorResponseAttrs:
     e_tag: Any = None
     # The error detail.
     error: Any = None
+    # Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    id: Any = None
     # Represents an Azure geography region where supported resource providers live.
     location: Any = None
+    # The name of the resource
+    name: Any = None
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
     # Resource tags.
     tags: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 BmsErrorResponse = ubx.ResourceBinding(
     wire_type="azure_recoveryservicesbackup_bms_error_response",

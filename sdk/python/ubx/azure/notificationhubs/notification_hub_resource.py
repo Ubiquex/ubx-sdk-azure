@@ -369,21 +369,30 @@ _NotificationHubResource_SkuFields = {
 
 @dataclasses.dataclass
 class NotificationHubResourceConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # NotificationHub properties.
     properties: Any = None
     # The Sku description for a namespace
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class NotificationHubResourceAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # NotificationHub properties.
     properties: Any = None
     # The Sku description for a namespace
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 NotificationHubResource = ubx.ResourceBinding(
     wire_type="azure_notificationhubs_notification_hub_resource",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -394,5 +403,6 @@ NotificationHubResource = ubx.ResourceBinding(
             kind="object",
             fields=_NotificationHubResource_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

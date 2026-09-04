@@ -643,10 +643,16 @@ var NetworkgatewayVirtualNetworkGateway_PropertiesFields = ubx.FieldMap{
 type NetworkgatewayVirtualNetworkGatewayConfig struct {
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
 	// VirtualNetworkGateway properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type NetworkgatewayVirtualNetworkGatewayAttrs struct {
@@ -654,10 +660,20 @@ type NetworkgatewayVirtualNetworkGatewayAttrs struct {
 	Etag any
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
 	// Identity for the resource.
 	Identity any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// VirtualNetworkGateway properties.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var NetworkgatewayVirtualNetworkGateway = ubx.ResourceBinding{
@@ -668,15 +684,18 @@ var NetworkgatewayVirtualNetworkGateway = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   NetworkgatewayVirtualNetworkGateway_ExtendedLocationFields,
 		},
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
 			Kind:     "object",
 			Fields:   NetworkgatewayVirtualNetworkGateway_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   NetworkgatewayVirtualNetworkGateway_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -222,9 +222,13 @@ class OpenapiOnlineDeploymentConfig:
     identity: Any = None
     # Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiOnlineDeploymentAttrs:
@@ -232,9 +236,13 @@ class OpenapiOnlineDeploymentAttrs:
     identity: Any = None
     # Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiOnlineDeployment = ubx.ResourceBinding(
     wire_type="azure_machinelearningservices_openapi_online_deployment",
@@ -245,6 +253,7 @@ OpenapiOnlineDeployment = ubx.ResourceBinding(
             fields=_OpenapiOnlineDeployment_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -255,5 +264,6 @@ OpenapiOnlineDeployment = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiOnlineDeployment_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

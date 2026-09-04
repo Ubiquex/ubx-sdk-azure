@@ -37,10 +37,18 @@ export interface NetworkmanagerNetworkManagerConnectionConfig {
 }
 
 export interface NetworkmanagerNetworkManagerConnectionAttrs {
+  /** A unique read-only string that changes whenever the resource is updated. */
+  etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource name. */
+  name: string;
   /** Information about the network manager connection. */
   properties: NetworkmanagerNetworkManagerConnection_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: NetworkmanagerNetworkManagerConnection_SystemData;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkmanagerNetworkManagerConnection: ResourceBinding<NetworkmanagerNetworkManagerConnectionConfig, NetworkmanagerNetworkManagerConnectionAttrs> = {

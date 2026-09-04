@@ -88,15 +88,23 @@ var ReservationGroup_PropertiesFields = ubx.FieldMap{
 }
 
 type ReservationGroupConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// capacity reservation group Properties.
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
 
 type ReservationGroupAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// capacity reservation group Properties.
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -104,11 +112,13 @@ type ReservationGroupAttrs struct {
 var ReservationGroup = ubx.ResourceBinding{
 	WireType: "azure_capacity_reservation_group",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ReservationGroup_PropertiesFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

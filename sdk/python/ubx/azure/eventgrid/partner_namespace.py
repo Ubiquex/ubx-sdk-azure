@@ -128,23 +128,33 @@ _PartnerNamespace_PropertiesFields = {
 
 @dataclasses.dataclass
 class PartnerNamespaceConfig:
+    # Location of the resource.
+    location: Any = None
     # Properties of the partner namespace.
     properties: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 @dataclasses.dataclass
 class PartnerNamespaceAttrs:
+    # Location of the resource.
+    location: Any = None
     # Properties of the partner namespace.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 PartnerNamespace = ubx.ResourceBinding(
     wire_type="azure_eventgrid_partner_namespace",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_PartnerNamespace_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

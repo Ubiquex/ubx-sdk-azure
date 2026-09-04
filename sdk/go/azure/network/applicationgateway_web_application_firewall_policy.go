@@ -9724,24 +9724,43 @@ var ApplicationgatewayWebApplicationFirewallPolicy_PropertiesFields = ubx.FieldM
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicyConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Defines web application firewall policy properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicyAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Defines web application firewall policy properties.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var ApplicationgatewayWebApplicationFirewallPolicy = ubx.ResourceBinding{
 	WireType: "azure_network_applicationgateway_web_application_firewall_policy",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ApplicationgatewayWebApplicationFirewallPolicy_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -112,23 +112,31 @@ const Block_SkuFields: FieldMap = {
 };
 
 export interface BlockConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describes the user-defined constraints for resource hardware placement. */
   placement?: Block_Placement | Computed<Block_Placement>;
   /** Properties of the Interconnect Block. */
   properties?: Block_Properties | Computed<Block_Properties>;
   /** Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. */
   sku: Block_Sku | Computed<Block_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface BlockAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describes the user-defined constraints for resource hardware placement. */
   placement: Block_Placement;
   /** Properties of the Interconnect Block. */
   properties: Block_Properties;
   /** Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. */
   sku: Block_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -136,6 +144,7 @@ export interface BlockAttrs {
 export const Block: ResourceBinding<BlockConfig, BlockAttrs> = {
   wireType: "azure_interconnect_block",
   fields: {
+    location: "location",
     placement: {
       wireName: "placement",
       kind: "object",
@@ -151,6 +160,7 @@ export const Block: ResourceBinding<BlockConfig, BlockAttrs> = {
       kind: "object",
       fields: Block_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

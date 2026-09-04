@@ -446,10 +446,14 @@ export interface SignalRresourceConfig {
   identity?: SignalRresource_Identity | Computed<SignalRresource_Identity>;
   /** The kind of the service */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** A class that describes the properties of the resource */
   properties?: SignalRresource_Properties | Computed<SignalRresource_Properties>;
   /** The billing information of the resource. */
   sku?: SignalRresource_Sku | Computed<SignalRresource_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SignalRresourceAttrs {
@@ -457,10 +461,14 @@ export interface SignalRresourceAttrs {
   identity: SignalRresource_Identity;
   /** The kind of the service */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** A class that describes the properties of the resource */
   properties: SignalRresource_Properties;
   /** The billing information of the resource. */
   sku: SignalRresource_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const SignalRresource: ResourceBinding<SignalRresourceConfig, SignalRresourceAttrs> = {
@@ -472,6 +480,7 @@ export const SignalRresource: ResourceBinding<SignalRresourceConfig, SignalRreso
       fields: SignalRresource_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -482,5 +491,6 @@ export const SignalRresource: ResourceBinding<SignalRresourceConfig, SignalRreso
       kind: "object",
       fields: SignalRresource_SkuFields,
     },
+    tags: "tags",
   },
 };

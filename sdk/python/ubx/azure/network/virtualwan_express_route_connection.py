@@ -163,6 +163,8 @@ _VirtualwanExpressRouteConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteConnectionConfig:
+    # Resource ID.
+    id: Any = None
     # The name of the resource.
     name: Any = None
     # Properties of the ExpressRouteConnection subresource.
@@ -170,6 +172,8 @@ class VirtualwanExpressRouteConnectionConfig:
 
 @dataclasses.dataclass
 class VirtualwanExpressRouteConnectionAttrs:
+    # Resource ID.
+    id: Any = None
     # The name of the resource.
     name: Any = None
     # Properties of the ExpressRouteConnection subresource.
@@ -178,6 +182,7 @@ class VirtualwanExpressRouteConnectionAttrs:
 VirtualwanExpressRouteConnection = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_express_route_connection",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
         "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",

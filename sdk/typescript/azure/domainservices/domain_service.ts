@@ -166,6 +166,21 @@ export interface DomainService_Properties {
   version?: number | Computed<number>;
 }
 
+export interface DomainService_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const DomainService_Properties_ConfigDiagnostics_ValidatorResults_IssuesFields: FieldMap = {
   descriptionParams: "description_params",
   id: "id",
@@ -338,22 +353,45 @@ const DomainService_PropertiesFields: FieldMap = {
 };
 
 export interface DomainServiceConfig {
+  /** Resource etag */
+  etag?: string | Computed<string>;
+  /** Resource location */
+  location?: string | Computed<string>;
   /** Properties of the Domain Service. */
   properties?: DomainService_Properties | Computed<DomainService_Properties>;
+  /** Resource tags */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface DomainServiceAttrs {
+  /** Resource etag */
+  etag: string;
+  /** Resource Id */
+  id: string;
+  /** Resource location */
+  location: string;
+  /** Resource name */
+  name: string;
   /** Properties of the Domain Service. */
   properties: DomainService_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: DomainService_SystemData;
+  /** Resource tags */
+  tags: Record<string, string>;
+  /** Resource type */
+  type: string;
 }
 
 export const DomainService: ResourceBinding<DomainServiceConfig, DomainServiceAttrs> = {
   wireType: "azure_domainservices_domain_service",
   fields: {
+    etag: "etag",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: DomainService_PropertiesFields,
     },
+    tags: "tags",
   },
 };

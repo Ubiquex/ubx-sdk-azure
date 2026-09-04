@@ -29,6 +29,21 @@ class ApplicationResource_Properties:
     # The application type name as defined in the application manifest.
     type_name: Any = None
 
+@dataclasses.dataclass
+class ApplicationResource_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC).
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _ApplicationResource_Identity_UserAssignedIdentitiesFields = {
     "client_id": ubx.FieldSpec(wire_name="client_id"),
     "principal_id": ubx.FieldSpec(wire_name="principal_id"),
@@ -54,15 +69,33 @@ _ApplicationResource_PropertiesFields = {
 class ApplicationResourceConfig:
     # Describes the managed identities for an Azure resource.
     identity: Any = None
+    # It will be deprecated in New API, resource location depends on the parent resource.
+    location: Any = None
     # The application resource properties.
     properties: Any = None
+    # Azure resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ApplicationResourceAttrs:
+    # Azure resource etag.
+    etag: Any = None
+    # Azure resource identifier.
+    id: Any = None
     # Describes the managed identities for an Azure resource.
     identity: Any = None
+    # It will be deprecated in New API, resource location depends on the parent resource.
+    location: Any = None
+    # Azure resource name.
+    name: Any = None
     # The application resource properties.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Azure resource tags.
+    tags: Any = None
+    # Azure resource type.
+    type: Any = None
 
 ApplicationResource = ubx.ResourceBinding(
     wire_type="azure_servicefabric_application_resource",
@@ -72,10 +105,12 @@ ApplicationResource = ubx.ResourceBinding(
             kind="object",
             fields=_ApplicationResource_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ApplicationResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

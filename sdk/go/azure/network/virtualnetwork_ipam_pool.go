@@ -27,24 +27,34 @@ var VirtualnetworkIpamPool_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkIpamPoolConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of IpamPool resource properties which are specific to the Pool resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkIpamPoolAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of IpamPool resource properties which are specific to the Pool resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var VirtualnetworkIpamPool = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_ipam_pool",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkIpamPool_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

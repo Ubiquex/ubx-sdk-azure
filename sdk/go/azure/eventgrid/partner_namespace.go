@@ -124,24 +124,34 @@ var PartnerNamespace_PropertiesFields = ubx.FieldMap{
 }
 
 type PartnerNamespaceConfig struct {
+	// Location of the resource.
+	Location any
 	// Properties of the partner namespace.
 	Properties any
+	// Tags of the resource.
+	Tags any
 }
 
 type PartnerNamespaceAttrs struct {
+	// Location of the resource.
+	Location any
 	// Properties of the partner namespace.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Tags of the resource.
+	Tags any
 }
 
 var PartnerNamespace = ubx.ResourceBinding{
 	WireType: "azure_eventgrid_partner_namespace",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   PartnerNamespace_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -349,10 +349,14 @@ export interface WebPubSubResourceConfig {
   identity?: WebPubSubResource_Identity | Computed<WebPubSubResource_Identity>;
   /** The kind of the service */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** A class that describes the properties of the resource */
   properties?: WebPubSubResource_Properties | Computed<WebPubSubResource_Properties>;
   /** The billing information of the resource. */
   sku?: WebPubSubResource_Sku | Computed<WebPubSubResource_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface WebPubSubResourceAttrs {
@@ -360,10 +364,14 @@ export interface WebPubSubResourceAttrs {
   identity: WebPubSubResource_Identity;
   /** The kind of the service */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** A class that describes the properties of the resource */
   properties: WebPubSubResource_Properties;
   /** The billing information of the resource. */
   sku: WebPubSubResource_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const WebPubSubResource: ResourceBinding<WebPubSubResourceConfig, WebPubSubResourceAttrs> = {
@@ -375,6 +383,7 @@ export const WebPubSubResource: ResourceBinding<WebPubSubResourceConfig, WebPubS
       fields: WebPubSubResource_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -385,5 +394,6 @@ export const WebPubSubResource: ResourceBinding<WebPubSubResourceConfig, WebPubS
       kind: "object",
       fields: WebPubSubResource_SkuFields,
     },
+    tags: "tags",
   },
 };

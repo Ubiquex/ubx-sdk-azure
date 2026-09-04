@@ -50,21 +50,30 @@ _InstancepoolsInstancePool_SkuFields = {
 
 @dataclasses.dataclass
 class InstancepoolsInstancePoolConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of an instance pool.
     properties: Any = None
     # An ARM Resource SKU.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class InstancepoolsInstancePoolAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of an instance pool.
     properties: Any = None
     # An ARM Resource SKU.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 InstancepoolsInstancePool = ubx.ResourceBinding(
     wire_type="azure_sql_instancepools_instance_pool",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -75,5 +84,6 @@ InstancepoolsInstancePool = ubx.ResourceBinding(
             kind="object",
             fields=_InstancepoolsInstancePool_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

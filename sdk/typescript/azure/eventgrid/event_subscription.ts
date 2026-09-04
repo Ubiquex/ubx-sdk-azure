@@ -198,10 +198,16 @@ export interface EventSubscriptionConfig {
 }
 
 export interface EventSubscriptionAttrs {
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the Event Subscription. */
   properties: EventSubscription_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: EventSubscription_SystemData;
+  /** Type of the resource. */
+  type: string;
   /** path parameter, not part of the API's own resource representation */
   scope: string;
 }

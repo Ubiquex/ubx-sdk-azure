@@ -117,17 +117,25 @@ var PartnerTopic_PropertiesFields = ubx.FieldMap{
 type PartnerTopicConfig struct {
 	// The identity information for the resource.
 	Identity any
+	// Location of the resource.
+	Location any
 	// Properties of the Partner Topic.
 	Properties any
+	// Tags of the resource.
+	Tags any
 }
 
 type PartnerTopicAttrs struct {
 	// The identity information for the resource.
 	Identity any
+	// Location of the resource.
+	Location any
 	// Properties of the Partner Topic.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Tags of the resource.
+	Tags any
 }
 
 var PartnerTopic = ubx.ResourceBinding{
@@ -138,10 +146,12 @@ var PartnerTopic = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   PartnerTopic_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   PartnerTopic_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

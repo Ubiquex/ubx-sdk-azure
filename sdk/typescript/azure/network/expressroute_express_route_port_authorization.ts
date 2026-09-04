@@ -20,6 +20,8 @@ const ExpressrouteExpressRoutePortAuthorization_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteExpressRoutePortAuthorizationConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of ExpressRoutePort Authorization. */
   properties?: ExpressrouteExpressRoutePortAuthorization_Properties | Computed<ExpressrouteExpressRoutePortAuthorization_Properties>;
 }
@@ -27,13 +29,18 @@ export interface ExpressrouteExpressRoutePortAuthorizationConfig {
 export interface ExpressrouteExpressRoutePortAuthorizationAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of ExpressRoutePort Authorization. */
   properties: ExpressrouteExpressRoutePortAuthorization_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const ExpressrouteExpressRoutePortAuthorization: ResourceBinding<ExpressrouteExpressRoutePortAuthorizationConfig, ExpressrouteExpressRoutePortAuthorizationAttrs> = {
   wireType: "azure_network_expressroute_express_route_port_authorization",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

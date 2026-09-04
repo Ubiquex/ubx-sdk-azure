@@ -31,28 +31,32 @@ _OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiStaticSiteCustomDomainOverviewArmresourceConfig:
-    # StaticSiteCustomDomainRequestPropertiesARMResource resource specific properties
-    properties: Any = None
-    # path parameter, not part of the API's own resource representation
-    name: Any = None
-
-@dataclasses.dataclass
-class OpenapiStaticSiteCustomDomainOverviewArmresourceAttrs:
     # Kind of resource.
     kind: Any = None
     # StaticSiteCustomDomainRequestPropertiesARMResource resource specific properties
     properties: Any = None
-    # path parameter, not part of the API's own resource representation
+
+@dataclasses.dataclass
+class OpenapiStaticSiteCustomDomainOverviewArmresourceAttrs:
+    # Resource Id.
+    id: Any = None
+    # Kind of resource.
+    kind: Any = None
+    # Resource Name.
     name: Any = None
+    # StaticSiteCustomDomainRequestPropertiesARMResource resource specific properties
+    properties: Any = None
+    # Resource type.
+    type: Any = None
 
 OpenapiStaticSiteCustomDomainOverviewArmresource = ubx.ResourceBinding(
     wire_type="azure_web_openapi_static_site_custom_domain_overview_armresource",
     fields={
+        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields,
         ),
-        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

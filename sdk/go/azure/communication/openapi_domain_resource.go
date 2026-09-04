@@ -154,22 +154,32 @@ var OpenapiDomainResource_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiDomainResourceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// A class that describes the properties of a Domains resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiDomainResourceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// A class that describes the properties of a Domains resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiDomainResource = ubx.ResourceBinding{
 	WireType: "azure_communication_openapi_domain_resource",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiDomainResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

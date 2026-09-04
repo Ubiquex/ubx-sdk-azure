@@ -30,6 +30,8 @@ const VirtualwanRoutingIntent_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanRoutingIntentConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** The properties of a RoutingIntent resource. */
   properties?: VirtualwanRoutingIntent_Properties | Computed<VirtualwanRoutingIntent_Properties>;
 }
@@ -37,13 +39,18 @@ export interface VirtualwanRoutingIntentConfig {
 export interface VirtualwanRoutingIntentAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** The properties of a RoutingIntent resource. */
   properties: VirtualwanRoutingIntent_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualwanRoutingIntent: ResourceBinding<VirtualwanRoutingIntentConfig, VirtualwanRoutingIntentAttrs> = {
   wireType: "azure_network_virtualwan_routing_intent",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

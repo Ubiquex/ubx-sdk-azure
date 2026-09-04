@@ -113,16 +113,24 @@ var MonitorResource_SkuFields = ubx.FieldMap{
 
 type MonitorResourceConfig struct {
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the monitor resource.
 	Properties any
 	Sku        any
+	// Resource tags.
+	Tags any
 }
 
 type MonitorResourceAttrs struct {
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the monitor resource.
 	Properties any
 	Sku        any
+	// Resource tags.
+	Tags any
 }
 
 var MonitorResource = ubx.ResourceBinding{
@@ -133,6 +141,7 @@ var MonitorResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   MonitorResource_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -143,5 +152,6 @@ var MonitorResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   MonitorResource_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

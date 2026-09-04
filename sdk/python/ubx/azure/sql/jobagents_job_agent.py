@@ -72,19 +72,27 @@ _JobagentsJobAgent_SkuFields = {
 class JobagentsJobAgentConfig:
     # Azure Active Directory identity configuration for a resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a job agent.
     properties: Any = None
     # An ARM Resource SKU.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class JobagentsJobAgentAttrs:
     # Azure Active Directory identity configuration for a resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a job agent.
     properties: Any = None
     # An ARM Resource SKU.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 JobagentsJobAgent = ubx.ResourceBinding(
     wire_type="azure_sql_jobagents_job_agent",
@@ -94,6 +102,7 @@ JobagentsJobAgent = ubx.ResourceBinding(
             kind="object",
             fields=_JobagentsJobAgent_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -104,5 +113,6 @@ JobagentsJobAgent = ubx.ResourceBinding(
             kind="object",
             fields=_JobagentsJobAgent_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

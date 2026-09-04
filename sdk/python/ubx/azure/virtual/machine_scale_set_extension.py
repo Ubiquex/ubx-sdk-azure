@@ -85,6 +85,8 @@ class MachineScaleSetExtensionConfig:
 
 @dataclasses.dataclass
 class MachineScaleSetExtensionAttrs:
+    # Resource Id
+    id: Any = None
     # Resource name
     name: Any = None
     # Describes the properties of a Virtual Machine Scale Set Extension.

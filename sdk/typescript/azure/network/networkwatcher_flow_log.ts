@@ -140,33 +140,52 @@ const NetworkwatcherFlowLog_PropertiesFields: FieldMap = {
 };
 
 export interface NetworkwatcherFlowLogConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: NetworkwatcherFlowLog_Identity | Computed<NetworkwatcherFlowLog_Identity>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Parameters that define the configuration of flow log. */
   properties?: NetworkwatcherFlowLog_Properties | Computed<NetworkwatcherFlowLog_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NetworkwatcherFlowLogAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** Identity for the resource. */
   identity: NetworkwatcherFlowLog_Identity;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Parameters that define the configuration of flow log. */
   properties: NetworkwatcherFlowLog_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkwatcherFlowLog: ResourceBinding<NetworkwatcherFlowLogConfig, NetworkwatcherFlowLogAttrs> = {
   wireType: "azure_network_networkwatcher_flow_log",
   fields: {
+    id: "id",
     identity: {
       wireName: "identity",
       kind: "object",
       fields: NetworkwatcherFlowLog_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetworkwatcherFlowLog_PropertiesFields,
     },
+    tags: "tags",
   },
 };

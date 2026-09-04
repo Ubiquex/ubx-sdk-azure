@@ -22,8 +22,18 @@ type ApplicationgatewayApplicationGatewayAvailableSslOptionsConfig struct {
 }
 
 type ApplicationgatewayApplicationGatewayAvailableSslOptionsAttrs struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties of ApplicationGatewayAvailableSslOptions.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var ApplicationgatewayApplicationGatewayAvailableSslOptions = ubx.DataSourceBinding{

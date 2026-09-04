@@ -72,22 +72,32 @@ const PrivatelinkhubPrivateLinkHub_PropertiesFields: FieldMap = {
 };
 
 export interface PrivatelinkhubPrivateLinkHubConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** PrivateLinkHub properties */
   properties?: PrivatelinkhubPrivateLinkHub_Properties | Computed<PrivatelinkhubPrivateLinkHub_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface PrivatelinkhubPrivateLinkHubAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** PrivateLinkHub properties */
   properties: PrivatelinkhubPrivateLinkHub_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const PrivatelinkhubPrivateLinkHub: ResourceBinding<PrivatelinkhubPrivateLinkHubConfig, PrivatelinkhubPrivateLinkHubAttrs> = {
   wireType: "azure_synapse_privatelinkhub_private_link_hub",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: PrivatelinkhubPrivateLinkHub_PropertiesFields,
     },
+    tags: "tags",
   },
 };

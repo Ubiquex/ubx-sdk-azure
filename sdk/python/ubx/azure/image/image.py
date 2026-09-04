@@ -99,15 +99,23 @@ _Image_PropertiesFields = {
 class ImageConfig:
     # The complex type of the extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of an Image.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ImageAttrs:
     # The complex type of the extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of an Image.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Image = ubx.ResourceBinding(
     wire_type="azure_image",
@@ -117,10 +125,12 @@ Image = ubx.ResourceBinding(
             kind="object",
             fields=_Image_ExtendedLocationFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Image_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

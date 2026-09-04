@@ -4567,6 +4567,8 @@ var VirtualwanHubIpConfiguration_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanHubIpConfigurationConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of IP configuration.
 	Properties any
 }
@@ -4574,13 +4576,18 @@ type VirtualwanHubIpConfigurationConfig struct {
 type VirtualwanHubIpConfigurationAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of IP configuration.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualwanHubIpConfiguration = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_hub_ip_configuration",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

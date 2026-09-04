@@ -273,15 +273,23 @@ const OpenapiSessionPool_PropertiesFields: FieldMap = {
 export interface OpenapiSessionPoolConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: OpenapiSessionPool_Identity | Computed<OpenapiSessionPool_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Container App session pool resource specific properties */
   properties?: OpenapiSessionPool_Properties | Computed<OpenapiSessionPool_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiSessionPoolAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: OpenapiSessionPool_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Container App session pool resource specific properties */
   properties: OpenapiSessionPool_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiSessionPool: ResourceBinding<OpenapiSessionPoolConfig, OpenapiSessionPoolAttrs> = {
@@ -292,10 +300,12 @@ export const OpenapiSessionPool: ResourceBinding<OpenapiSessionPoolConfig, Opena
       kind: "object",
       fields: OpenapiSessionPool_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiSessionPool_PropertiesFields,
     },
+    tags: "tags",
   },
 };

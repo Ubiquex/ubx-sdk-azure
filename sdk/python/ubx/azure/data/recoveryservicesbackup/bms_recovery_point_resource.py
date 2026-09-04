@@ -41,6 +41,8 @@ class BmsRecoveryPointResourceConfig:
 class BmsRecoveryPointResourceAttrs:
     container_name: Any = None
     fabric_name: Any = None
+    # The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
+    next_link: Any = None
     protected_item_name: Any = None
     # List of resources.
     value: Any = None

@@ -103,10 +103,14 @@ const OpenapiProfile_SkuFields: FieldMap = {
 export interface OpenapiProfileConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: OpenapiProfile_Identity | Computed<OpenapiProfile_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The JSON object that contains the properties required to create a profile. */
   properties?: OpenapiProfile_Properties | Computed<OpenapiProfile_Properties>;
   /** Standard_Verizon = The SKU name for a Standard Verizon CDN profile. Premium_Verizon = The SKU name for a Premium Verizon CDN profile. Custom_Verizon = The SKU name for a Custom Verizon CDN profile. Standard_Akamai = The SKU name for an Akamai CDN profile. Standard_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using GB based billing model. Standard_Microsoft = The SKU name for a Standard Microsoft CDN profile. Standard_AzureFrontDoor = The SKU name for an Azure Front Door Standard profile. Premium_AzureFrontDoor = The SKU name for an Azure Front Door Premium profile. Standard_955BandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using 95-5 peak bandwidth billing model. Standard_AvgBandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using monthly average peak bandwidth billing model. StandardPlus_ChinaCdn = The SKU name for a China CDN profile for live-streaming using GB based billing model. StandardPlus_955BandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using 95-5 peak bandwidth billing model. StandardPlus_AvgBandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using monthly average peak bandwidth billing model. */
   sku: OpenapiProfile_Sku | Computed<OpenapiProfile_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiProfileAttrs {
@@ -114,10 +118,14 @@ export interface OpenapiProfileAttrs {
   identity: OpenapiProfile_Identity;
   /** Kind of the profile. Used by portal to differentiate traditional CDN profile and new AFD profile. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** The JSON object that contains the properties required to create a profile. */
   properties: OpenapiProfile_Properties;
   /** Standard_Verizon = The SKU name for a Standard Verizon CDN profile. Premium_Verizon = The SKU name for a Premium Verizon CDN profile. Custom_Verizon = The SKU name for a Custom Verizon CDN profile. Standard_Akamai = The SKU name for an Akamai CDN profile. Standard_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using GB based billing model. Standard_Microsoft = The SKU name for a Standard Microsoft CDN profile. Standard_AzureFrontDoor = The SKU name for an Azure Front Door Standard profile. Premium_AzureFrontDoor = The SKU name for an Azure Front Door Premium profile. Standard_955BandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using 95-5 peak bandwidth billing model. Standard_AvgBandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using monthly average peak bandwidth billing model. StandardPlus_ChinaCdn = The SKU name for a China CDN profile for live-streaming using GB based billing model. StandardPlus_955BandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using 95-5 peak bandwidth billing model. StandardPlus_AvgBandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using monthly average peak bandwidth billing model. */
   sku: OpenapiProfile_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiProfile: ResourceBinding<OpenapiProfileConfig, OpenapiProfileAttrs> = {
@@ -128,6 +136,7 @@ export const OpenapiProfile: ResourceBinding<OpenapiProfileConfig, OpenapiProfil
       kind: "object",
       fields: OpenapiProfile_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -138,5 +147,6 @@ export const OpenapiProfile: ResourceBinding<OpenapiProfileConfig, OpenapiProfil
       kind: "object",
       fields: OpenapiProfile_SkuFields,
     },
+    tags: "tags",
   },
 };

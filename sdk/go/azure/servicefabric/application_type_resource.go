@@ -8,27 +8,62 @@ type ApplicationTypeResource_Properties struct {
 	ProvisioningState any
 }
 
+type ApplicationTypeResource_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC).
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var ApplicationTypeResource_PropertiesFields = ubx.FieldMap{
 	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
 }
 
 type ApplicationTypeResourceConfig struct {
+	// It will be deprecated in New API, resource location depends on the parent resource.
+	Location any
 	// The application type name properties
 	Properties any
+	// Azure resource tags.
+	Tags any
 }
 
 type ApplicationTypeResourceAttrs struct {
+	// Azure resource etag.
+	Etag any
+	// Azure resource identifier.
+	Id any
+	// It will be deprecated in New API, resource location depends on the parent resource.
+	Location any
+	// Azure resource name.
+	Name any
 	// The application type name properties
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Azure resource tags.
+	Tags any
+	// Azure resource type.
+	Type any
 }
 
 var ApplicationTypeResource = ubx.ResourceBinding{
 	WireType: "azure_servicefabric_application_type_resource",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ApplicationTypeResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

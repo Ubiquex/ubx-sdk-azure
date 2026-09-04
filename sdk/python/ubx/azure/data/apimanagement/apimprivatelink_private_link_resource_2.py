@@ -21,9 +21,15 @@ class ApimprivatelinkPrivateLinkResource2Config:
 
 @dataclasses.dataclass
 class ApimprivatelinkPrivateLinkResource2Attrs:
+    # Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     private_link_sub_resource_name: Any = None
     # Properties of a private link resource.
     properties: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 ApimprivatelinkPrivateLinkResource2 = ubx.DataSourceBinding(
     wire_type="azure_apimanagement_apimprivatelink_private_link_resource_2",

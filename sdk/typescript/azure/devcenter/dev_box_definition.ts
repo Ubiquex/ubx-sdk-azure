@@ -55,22 +55,32 @@ const DevBoxDefinition_PropertiesFields: FieldMap = {
 };
 
 export interface DevBoxDefinitionConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of a Dev Box definition. */
   properties?: DevBoxDefinition_Properties | Computed<DevBoxDefinition_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface DevBoxDefinitionAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of a Dev Box definition. */
   properties: DevBoxDefinition_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const DevBoxDefinition: ResourceBinding<DevBoxDefinitionConfig, DevBoxDefinitionAttrs> = {
   wireType: "azure_devcenter_dev_box_definition",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: DevBoxDefinition_PropertiesFields,
     },
+    tags: "tags",
   },
 };

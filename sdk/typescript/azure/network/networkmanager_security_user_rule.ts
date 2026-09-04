@@ -73,10 +73,18 @@ export interface NetworkmanagerSecurityUserRuleConfig {
 }
 
 export interface NetworkmanagerSecurityUserRuleAttrs {
+  /** A unique read-only string that changes whenever the resource is updated. */
+  etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource name. */
+  name: string;
   /** Security rule resource. */
   properties: NetworkmanagerSecurityUserRule_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: NetworkmanagerSecurityUserRule_SystemData;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkmanagerSecurityUserRule: ResourceBinding<NetworkmanagerSecurityUserRuleConfig, NetworkmanagerSecurityUserRuleAttrs> = {

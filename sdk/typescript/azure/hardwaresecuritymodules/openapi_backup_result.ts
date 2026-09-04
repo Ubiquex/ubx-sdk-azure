@@ -9,15 +9,25 @@ export interface OpenapiBackupResult_Properties {
 }
 
 export interface OpenapiBackupResultConfig {
+  /** The Azure blob storage container Uri which contains the backup */
+  azureStorageBlobContainerUri: string | Computed<string>;
+  /** The SAS token pointing to an Azure blob storage container. This property is reserved for Azure Backup Service. */
+  token?: string | Computed<string>;
 }
 
 export interface OpenapiBackupResultAttrs {
+  /** The Azure blob storage container Uri which contains the backup */
+  azureStorageBlobContainerUri: string;
   /** Properties of the Cloud HSM Cluster */
   properties: OpenapiBackupResult_Properties;
+  /** The SAS token pointing to an Azure blob storage container. This property is reserved for Azure Backup Service. */
+  token: string;
 }
 
 export const OpenapiBackupResult: ResourceBinding<OpenapiBackupResultConfig, OpenapiBackupResultAttrs> = {
   wireType: "azure_hardwaresecuritymodules_openapi_backup_result",
   fields: {
+    azureStorageBlobContainerUri: "azure_storage_blob_container_uri",
+    token: "token",
   },
 };

@@ -75,6 +75,21 @@ export interface ManagedapplicationsApplicationDefinition_Properties {
   policies?: ManagedapplicationsApplicationDefinition_Properties_Policies[] | Computed<ManagedapplicationsApplicationDefinition_Properties_Policies[]>;
 }
 
+export interface ManagedapplicationsApplicationDefinition_Sku {
+  /** The SKU capacity. */
+  capacity?: number | Computed<number>;
+  /** The SKU family. */
+  family?: string | Computed<string>;
+  /** The SKU model. */
+  model?: string | Computed<string>;
+  /** The SKU name. */
+  name: string | Computed<string>;
+  /** The SKU size. */
+  size?: string | Computed<string>;
+  /** The SKU tier. */
+  tier?: string | Computed<string>;
+}
+
 const ManagedapplicationsApplicationDefinition_Properties_ArtifactsFields: FieldMap = {
   name: "name",
   type: "type",
@@ -162,23 +177,46 @@ const ManagedapplicationsApplicationDefinition_PropertiesFields: FieldMap = {
   },
 };
 
+const ManagedapplicationsApplicationDefinition_SkuFields: FieldMap = {
+  capacity: "capacity",
+  family: "family",
+  model: "model",
+  name: "name",
+  size: "size",
+  tier: "tier",
+};
+
 export interface ManagedapplicationsApplicationDefinitionConfig {
+  /** ID of the resource that manages this resource. */
+  managedBy?: string | Computed<string>;
   /** The managed application definition properties. */
   properties: ManagedapplicationsApplicationDefinition_Properties | Computed<ManagedapplicationsApplicationDefinition_Properties>;
+  /** SKU for the resource. */
+  sku?: ManagedapplicationsApplicationDefinition_Sku | Computed<ManagedapplicationsApplicationDefinition_Sku>;
 }
 
 export interface ManagedapplicationsApplicationDefinitionAttrs {
+  /** ID of the resource that manages this resource. */
+  managedBy: string;
   /** The managed application definition properties. */
   properties: ManagedapplicationsApplicationDefinition_Properties;
+  /** SKU for the resource. */
+  sku: ManagedapplicationsApplicationDefinition_Sku;
 }
 
 export const ManagedapplicationsApplicationDefinition: ResourceBinding<ManagedapplicationsApplicationDefinitionConfig, ManagedapplicationsApplicationDefinitionAttrs> = {
   wireType: "azure_resources_managedapplications_application_definition",
   fields: {
+    managedBy: "managed_by",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ManagedapplicationsApplicationDefinition_PropertiesFields,
+    },
+    sku: {
+      wireName: "sku",
+      kind: "object",
+      fields: ManagedapplicationsApplicationDefinition_SkuFields,
     },
   },
 };

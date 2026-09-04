@@ -242,8 +242,12 @@ type ConnectedclustersConnectedClusterConfig struct {
 	Identity any
 	// Indicates the kind of Arc connected cluster based on host infrastructure.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the connected cluster.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ConnectedclustersConnectedClusterAttrs struct {
@@ -251,8 +255,12 @@ type ConnectedclustersConnectedClusterAttrs struct {
 	Identity any
 	// Indicates the kind of Arc connected cluster based on host infrastructure.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the connected cluster.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var ConnectedclustersConnectedCluster = ubx.ResourceBinding{
@@ -263,11 +271,13 @@ var ConnectedclustersConnectedCluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ConnectedclustersConnectedCluster_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ConnectedclustersConnectedCluster_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

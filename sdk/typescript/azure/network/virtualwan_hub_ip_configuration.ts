@@ -4566,6 +4566,8 @@ const VirtualwanHubIpConfiguration_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanHubIpConfigurationConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of IP configuration. */
   properties?: VirtualwanHubIpConfiguration_Properties | Computed<VirtualwanHubIpConfiguration_Properties>;
 }
@@ -4573,13 +4575,18 @@ export interface VirtualwanHubIpConfigurationConfig {
 export interface VirtualwanHubIpConfigurationAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of IP configuration. */
   properties: VirtualwanHubIpConfiguration_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualwanHubIpConfiguration: ResourceBinding<VirtualwanHubIpConfigurationConfig, VirtualwanHubIpConfigurationAttrs> = {
   wireType: "azure_network_virtualwan_hub_ip_configuration",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

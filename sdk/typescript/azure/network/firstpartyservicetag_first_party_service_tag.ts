@@ -20,8 +20,12 @@ const FirstpartyservicetagFirstPartyServiceTag_PropertiesFields: FieldMap = {
 };
 
 export interface FirstpartyservicetagFirstPartyServiceTagConfig {
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties of the first party service tag. */
   properties?: FirstpartyservicetagFirstPartyServiceTag_Properties | Computed<FirstpartyservicetagFirstPartyServiceTag_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface FirstpartyservicetagFirstPartyServiceTagAttrs {
@@ -29,8 +33,14 @@ export interface FirstpartyservicetagFirstPartyServiceTagAttrs {
   etag: string;
   /** The unique identifier of the resource. */
   id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of the first party service tag. */
   properties: FirstpartyservicetagFirstPartyServiceTag_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The type of the resource. */
   type: string;
 }
@@ -38,10 +48,12 @@ export interface FirstpartyservicetagFirstPartyServiceTagAttrs {
 export const FirstpartyservicetagFirstPartyServiceTag: ResourceBinding<FirstpartyservicetagFirstPartyServiceTagConfig, FirstpartyservicetagFirstPartyServiceTagAttrs> = {
   wireType: "azure_network_firstpartyservicetag_first_party_service_tag",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: FirstpartyservicetagFirstPartyServiceTag_PropertiesFields,
     },
+    tags: "tags",
   },
 };

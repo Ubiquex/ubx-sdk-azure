@@ -211,19 +211,33 @@ const IntegrationServiceEnvironment_SkuFields: FieldMap = {
 export interface IntegrationServiceEnvironmentConfig {
   /** Managed service identity properties. */
   identity?: IntegrationServiceEnvironment_Identity | Computed<IntegrationServiceEnvironment_Identity>;
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** The integration service environment properties. */
   properties?: IntegrationServiceEnvironment_Properties | Computed<IntegrationServiceEnvironment_Properties>;
   /** The integration service environment sku. */
   sku?: IntegrationServiceEnvironment_Sku | Computed<IntegrationServiceEnvironment_Sku>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface IntegrationServiceEnvironmentAttrs {
+  /** The resource id. */
+  id: string;
   /** Managed service identity properties. */
   identity: IntegrationServiceEnvironment_Identity;
+  /** The resource location. */
+  location: string;
+  /** Gets the resource name. */
+  name: string;
   /** The integration service environment properties. */
   properties: IntegrationServiceEnvironment_Properties;
   /** The integration service environment sku. */
   sku: IntegrationServiceEnvironment_Sku;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** Gets the resource type. */
+  type: string;
 }
 
 export const IntegrationServiceEnvironment: ResourceBinding<IntegrationServiceEnvironmentConfig, IntegrationServiceEnvironmentAttrs> = {
@@ -234,6 +248,7 @@ export const IntegrationServiceEnvironment: ResourceBinding<IntegrationServiceEn
       kind: "object",
       fields: IntegrationServiceEnvironment_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -244,5 +259,6 @@ export const IntegrationServiceEnvironment: ResourceBinding<IntegrationServiceEn
       kind: "object",
       fields: IntegrationServiceEnvironment_SkuFields,
     },
+    tags: "tags",
   },
 };

@@ -20,21 +20,31 @@ _NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields = {
 
 @dataclasses.dataclass
 class NetworksecurityperimeterNetworkSecurityPerimeterConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of network security perimeter.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class NetworksecurityperimeterNetworkSecurityPerimeterAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of network security perimeter.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 NetworksecurityperimeterNetworkSecurityPerimeter = ubx.ResourceBinding(
     wire_type="azure_network_networksecurityperimeter_network_security_perimeter",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

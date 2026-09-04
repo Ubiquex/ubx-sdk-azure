@@ -455,8 +455,14 @@ var FirewallAzureFirewall_PropertiesFields = ubx.FieldMap{
 type FirewallAzureFirewallConfig struct {
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Properties of the Azure Firewall.
 	Properties any
+	// Resource tags.
+	Tags any
 	// A list of availability zones denoting where the resource needs to come from.
 	Zones any
 }
@@ -466,8 +472,18 @@ type FirewallAzureFirewallAttrs struct {
 	Etag any
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties of the Azure Firewall.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 	// A list of availability zones denoting where the resource needs to come from.
 	Zones any
 }
@@ -480,11 +496,14 @@ var FirewallAzureFirewall = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   FirewallAzureFirewall_ExtendedLocationFields,
 		},
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   FirewallAzureFirewall_PropertiesFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

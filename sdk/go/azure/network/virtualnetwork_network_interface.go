@@ -12284,8 +12284,14 @@ var VirtualnetworkNetworkInterface_PropertiesFields = ubx.FieldMap{
 type VirtualnetworkNetworkInterfaceConfig struct {
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// NetworkInterface properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkNetworkInterfaceAttrs struct {
@@ -12293,8 +12299,18 @@ type VirtualnetworkNetworkInterfaceAttrs struct {
 	Etag any
 	// ExtendedLocation complex type.
 	ExtendedLocation any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// NetworkInterface properties.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkNetworkInterface = ubx.ResourceBinding{
@@ -12305,10 +12321,13 @@ var VirtualnetworkNetworkInterface = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualnetworkNetworkInterface_ExtendedLocationFields,
 		},
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkNetworkInterface_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -303,10 +303,14 @@ const PrivateCloud_SkuFields: FieldMap = {
 export interface PrivateCloudConfig {
   /** Managed service identity (either system assigned, or none) */
   identity?: PrivateCloud_Identity | Computed<PrivateCloud_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The properties of a private cloud resource */
   properties?: PrivateCloud_Properties | Computed<PrivateCloud_Properties>;
   /** The resource model definition representing SKU */
   sku: PrivateCloud_Sku | Computed<PrivateCloud_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
@@ -314,10 +318,14 @@ export interface PrivateCloudConfig {
 export interface PrivateCloudAttrs {
   /** Managed service identity (either system assigned, or none) */
   identity: PrivateCloud_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** The properties of a private cloud resource */
   properties: PrivateCloud_Properties;
   /** The resource model definition representing SKU */
   sku: PrivateCloud_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -330,6 +338,7 @@ export const PrivateCloud: ResourceBinding<PrivateCloudConfig, PrivateCloudAttrs
       kind: "object",
       fields: PrivateCloud_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -340,6 +349,7 @@ export const PrivateCloud: ResourceBinding<PrivateCloudConfig, PrivateCloudAttrs
       kind: "object",
       fields: PrivateCloud_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

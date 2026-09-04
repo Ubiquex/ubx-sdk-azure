@@ -162,15 +162,23 @@ var VirtualMachineTemplate_PropertiesFields = ubx.FieldMap{
 type VirtualMachineTemplateConfig struct {
 	// The extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualMachineTemplateAttrs struct {
 	// The extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Defines the resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var VirtualMachineTemplate = ubx.ResourceBinding{
@@ -181,10 +189,12 @@ var VirtualMachineTemplate = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualMachineTemplate_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualMachineTemplate_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

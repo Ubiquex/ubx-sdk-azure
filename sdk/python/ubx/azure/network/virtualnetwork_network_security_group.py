@@ -12639,23 +12639,42 @@ _VirtualnetworkNetworkSecurityGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkSecurityGroupConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Network Security Group resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkSecurityGroupAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Network Security Group resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkNetworkSecurityGroup = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_network_security_group",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualnetworkNetworkSecurityGroup_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

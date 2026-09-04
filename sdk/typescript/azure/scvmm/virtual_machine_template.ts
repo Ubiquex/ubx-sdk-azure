@@ -160,15 +160,23 @@ const VirtualMachineTemplate_PropertiesFields: FieldMap = {
 export interface VirtualMachineTemplateConfig {
   /** The extended location. */
   extendedLocation: VirtualMachineTemplate_ExtendedLocation | Computed<VirtualMachineTemplate_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Defines the resource properties. */
   properties?: VirtualMachineTemplate_Properties | Computed<VirtualMachineTemplate_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualMachineTemplateAttrs {
   /** The extended location. */
   extendedLocation: VirtualMachineTemplate_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Defines the resource properties. */
   properties: VirtualMachineTemplate_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const VirtualMachineTemplate: ResourceBinding<VirtualMachineTemplateConfig, VirtualMachineTemplateAttrs> = {
@@ -179,10 +187,12 @@ export const VirtualMachineTemplate: ResourceBinding<VirtualMachineTemplateConfi
       kind: "object",
       fields: VirtualMachineTemplate_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualMachineTemplate_PropertiesFields,
     },
+    tags: "tags",
   },
 };

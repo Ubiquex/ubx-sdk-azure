@@ -217,26 +217,45 @@ var VirtualwanVirtualHub_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanVirtualHubConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Parameters for VirtualHub.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualwanVirtualHubAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// Kind of service virtual hub. This is metadata used for the Azure portal experience for Route Server.
 	Kind any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Parameters for VirtualHub.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualwanVirtualHub = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_virtual_hub",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualwanVirtualHub_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -169,22 +169,31 @@ var ServiceResource_SkuFields = ubx.FieldMap{
 }
 
 type ServiceResourceConfig struct {
+	// The GEO location of the resource.
+	Location any
 	// Service properties payload
 	Properties any
 	// Sku of Azure Spring Apps
 	Sku any
+	// Tags of the service which is a list of key value pairs that describe the resource.
+	Tags any
 }
 
 type ServiceResourceAttrs struct {
+	// The GEO location of the resource.
+	Location any
 	// Service properties payload
 	Properties any
 	// Sku of Azure Spring Apps
 	Sku any
+	// Tags of the service which is a list of key value pairs that describe the resource.
+	Tags any
 }
 
 var ServiceResource = ubx.ResourceBinding{
 	WireType: "azure_appplatform_service_resource",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -195,5 +204,6 @@ var ServiceResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ServiceResource_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

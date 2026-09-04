@@ -126,22 +126,32 @@ var MachineExtension_PropertiesFields = ubx.FieldMap{
 }
 
 type MachineExtensionConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Virtual Machine Extension.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type MachineExtensionAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Virtual Machine Extension.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var MachineExtension = ubx.ResourceBinding{
 	WireType: "azure_virtual_machine_extension",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   MachineExtension_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

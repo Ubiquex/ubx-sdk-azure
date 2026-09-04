@@ -246,8 +246,12 @@ _OpenapiCloudExadataInfrastructure_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiCloudExadataInfrastructureConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # CloudExadataInfrastructure resource model
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # CloudExadataInfrastructure zones
     zones: Any = None
     # path parameter, not part of the API's own resource representation
@@ -255,8 +259,12 @@ class OpenapiCloudExadataInfrastructureConfig:
 
 @dataclasses.dataclass
 class OpenapiCloudExadataInfrastructureAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # CloudExadataInfrastructure resource model
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # CloudExadataInfrastructure zones
     zones: Any = None
     # path parameter, not part of the API's own resource representation
@@ -265,11 +273,13 @@ class OpenapiCloudExadataInfrastructureAttrs:
 OpenapiCloudExadataInfrastructure = ubx.ResourceBinding(
     wire_type="azure_oracle_openapi_cloud_exadata_infrastructure",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiCloudExadataInfrastructure_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
         "cloudexadatainfrastructurename": ubx.FieldSpec(wire_name="cloudexadatainfrastructurename"),
     },

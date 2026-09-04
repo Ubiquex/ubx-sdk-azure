@@ -355,10 +355,14 @@ var Cluster_SkuFields = ubx.FieldMap{
 type ClusterConfig struct {
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Class representing the Kusto cluster properties.
 	Properties any
 	// Azure SKU definition.
 	Sku any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -368,10 +372,14 @@ type ClusterAttrs struct {
 	Etag any
 	// Identity for the resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Class representing the Kusto cluster properties.
 	Properties any
 	// Azure SKU definition.
 	Sku any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -384,6 +392,7 @@ var Cluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Cluster_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -394,6 +403,7 @@ var Cluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Cluster_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

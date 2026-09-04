@@ -243,10 +243,14 @@ class MonitorResourceConfig:
     identity: Any = None
     # The kind of the Elastic resource - observability, security, search etc.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the monitor resource.
     properties: Any = None
     # Represents the SKU of a resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class MonitorResourceAttrs:
@@ -254,10 +258,14 @@ class MonitorResourceAttrs:
     identity: Any = None
     # The kind of the Elastic resource - observability, security, search etc.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties specific to the monitor resource.
     properties: Any = None
     # Represents the SKU of a resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 MonitorResource = ubx.ResourceBinding(
     wire_type="azure_elastic_monitor_resource",
@@ -268,6 +276,7 @@ MonitorResource = ubx.ResourceBinding(
             fields=_MonitorResource_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -278,5 +287,6 @@ MonitorResource = ubx.ResourceBinding(
             kind="object",
             fields=_MonitorResource_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

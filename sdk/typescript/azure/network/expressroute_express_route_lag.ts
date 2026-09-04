@@ -188,8 +188,12 @@ const ExpressrouteExpressRouteLag_PropertiesFields: FieldMap = {
 export interface ExpressrouteExpressRouteLagConfig {
   /** Identity for the resource. */
   identity?: ExpressrouteExpressRouteLag_Identity | Computed<ExpressrouteExpressRouteLag_Identity>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties specific to ExpressRouteLag resources. */
   properties?: ExpressrouteExpressRouteLag_Properties | Computed<ExpressrouteExpressRouteLag_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ExpressrouteExpressRouteLagAttrs {
@@ -199,8 +203,14 @@ export interface ExpressrouteExpressRouteLagAttrs {
   id: string;
   /** Identity for the resource. */
   identity: ExpressrouteExpressRouteLag_Identity;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties specific to ExpressRouteLag resources. */
   properties: ExpressrouteExpressRouteLag_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The type of the resource. */
   type: string;
 }
@@ -213,10 +223,12 @@ export const ExpressrouteExpressRouteLag: ResourceBinding<ExpressrouteExpressRou
       kind: "object",
       fields: ExpressrouteExpressRouteLag_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ExpressrouteExpressRouteLag_PropertiesFields,
     },
+    tags: "tags",
   },
 };

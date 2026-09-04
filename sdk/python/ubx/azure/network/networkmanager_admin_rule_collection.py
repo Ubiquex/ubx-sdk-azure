@@ -58,10 +58,18 @@ class NetworkmanagerAdminRuleCollectionConfig:
 
 @dataclasses.dataclass
 class NetworkmanagerAdminRuleCollectionAttrs:
+    # A unique read-only string that changes whenever the resource is updated.
+    etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource name.
+    name: Any = None
     # Defines the admin rule collection properties.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource type.
+    type: Any = None
 
 NetworkmanagerAdminRuleCollection = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_admin_rule_collection",

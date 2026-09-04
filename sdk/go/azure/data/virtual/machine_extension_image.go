@@ -43,11 +43,15 @@ type MachineExtensionImageConfig struct {
 }
 
 type MachineExtensionImageAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Virtual Machine Extension Image.
 	Properties    any
 	PublisherName any
-	Type          any
-	Version       any
+	// Resource tags.
+	Tags    any
+	Type    any
+	Version any
 }
 
 var MachineExtensionImage = ubx.DataSourceBinding{

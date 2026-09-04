@@ -159,6 +159,8 @@ var VirtualwanExpressRouteConnection_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanExpressRouteConnectionConfig struct {
+	// Resource ID.
+	Id any
 	// The name of the resource.
 	Name any
 	// Properties of the ExpressRouteConnection subresource.
@@ -166,6 +168,8 @@ type VirtualwanExpressRouteConnectionConfig struct {
 }
 
 type VirtualwanExpressRouteConnectionAttrs struct {
+	// Resource ID.
+	Id any
 	// The name of the resource.
 	Name any
 	// Properties of the ExpressRouteConnection subresource.
@@ -175,6 +179,7 @@ type VirtualwanExpressRouteConnectionAttrs struct {
 var VirtualwanExpressRouteConnection = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_express_route_connection",
 	Fields: ubx.FieldMap{
+		"Id":   ubx.FieldSpec{WireName: "id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",

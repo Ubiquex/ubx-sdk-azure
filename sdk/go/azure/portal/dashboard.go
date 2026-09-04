@@ -81,22 +81,32 @@ var Dashboard_PropertiesFields = ubx.FieldMap{
 }
 
 type DashboardConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Dashboard Properties with Provisioning state
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type DashboardAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Dashboard Properties with Provisioning state
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var Dashboard = ubx.ResourceBinding{
 	WireType: "azure_portal_dashboard",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Dashboard_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

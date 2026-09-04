@@ -193,8 +193,12 @@ const Cache_PropertiesFields: FieldMap = {
 };
 
 export interface CacheConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Cache resource properties */
   properties: Cache_Properties | Computed<Cache_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
@@ -202,8 +206,12 @@ export interface CacheConfig {
 export interface CacheAttrs {
   /** "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.") */
   etag: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Cache resource properties */
   properties: Cache_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -211,11 +219,13 @@ export interface CacheAttrs {
 export const Cache: ResourceBinding<CacheConfig, CacheAttrs> = {
   wireType: "azure_netapp_cache",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Cache_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

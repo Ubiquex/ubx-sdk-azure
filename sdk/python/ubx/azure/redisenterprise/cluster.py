@@ -63,10 +63,14 @@ _Cluster_SkuFields = {
 class ClusterConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of Redis Enterprise clusters for create operations
     properties: Any = None
     # SKU parameters supplied to the create Redis Enterprise cluster operation.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The Availability Zones where this cluster will be deployed.
     zones: Any = None
 
@@ -76,10 +80,14 @@ class ClusterAttrs:
     identity: Any = None
     # Distinguishes the kind of cluster. Read-only.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of Redis Enterprise clusters for create operations
     properties: Any = None
     # SKU parameters supplied to the create Redis Enterprise cluster operation.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The Availability Zones where this cluster will be deployed.
     zones: Any = None
 
@@ -91,6 +99,7 @@ Cluster = ubx.ResourceBinding(
             kind="object",
             fields=_Cluster_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -101,6 +110,7 @@ Cluster = ubx.ResourceBinding(
             kind="object",
             fields=_Cluster_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

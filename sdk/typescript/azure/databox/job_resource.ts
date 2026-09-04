@@ -790,19 +790,27 @@ const JobResource_SkuFields: FieldMap = {
 export interface JobResourceConfig {
   /** Msi identity details of the resource */
   identity?: JobResource_Identity | Computed<JobResource_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Job Properties */
   properties: JobResource_Properties | Computed<JobResource_Properties>;
   /** The Sku. */
   sku: JobResource_Sku | Computed<JobResource_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface JobResourceAttrs {
   /** Msi identity details of the resource */
   identity: JobResource_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Job Properties */
   properties: JobResource_Properties;
   /** The Sku. */
   sku: JobResource_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const JobResource: ResourceBinding<JobResourceConfig, JobResourceAttrs> = {
@@ -813,6 +821,7 @@ export const JobResource: ResourceBinding<JobResourceConfig, JobResourceAttrs> =
       kind: "object",
       fields: JobResource_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -823,5 +832,6 @@ export const JobResource: ResourceBinding<JobResourceConfig, JobResourceAttrs> =
       kind: "object",
       fields: JobResource_SkuFields,
     },
+    tags: "tags",
   },
 };

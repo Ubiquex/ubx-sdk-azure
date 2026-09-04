@@ -47,22 +47,32 @@ var ManagedclustersSnapshot_PropertiesFields = ubx.FieldMap{
 }
 
 type ManagedclustersSnapshotConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties used to configure a node pool snapshot.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ManagedclustersSnapshotAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties used to configure a node pool snapshot.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var ManagedclustersSnapshot = ubx.ResourceBinding{
 	WireType: "azure_containerservice_managedclusters_snapshot",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ManagedclustersSnapshot_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

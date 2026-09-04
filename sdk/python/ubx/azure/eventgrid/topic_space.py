@@ -43,10 +43,16 @@ class TopicSpaceConfig:
 
 @dataclasses.dataclass
 class TopicSpaceAttrs:
+    # Fully qualified identifier of the resource.
+    id: Any = None
+    # Name of the resource.
+    name: Any = None
     # The properties of topic space.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Type of the resource.
+    type: Any = None
 
 TopicSpace = ubx.ResourceBinding(
     wire_type="azure_eventgrid_topic_space",

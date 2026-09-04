@@ -11,22 +11,32 @@ const DbOpenapiFleetResource_PropertiesFields: FieldMap = {
 };
 
 export interface DbOpenapiFleetResourceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties to update Azure Cosmos DB fleet resource. */
   properties?: DbOpenapiFleetResource_Properties | Computed<DbOpenapiFleetResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface DbOpenapiFleetResourceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties to update Azure Cosmos DB fleet resource. */
   properties: DbOpenapiFleetResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const DbOpenapiFleetResource: ResourceBinding<DbOpenapiFleetResourceConfig, DbOpenapiFleetResourceAttrs> = {
   wireType: "azure_cosmos_db_openapi_fleet_resource",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: DbOpenapiFleetResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -151,6 +151,8 @@ const VirtualwanBgpConnection_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanBgpConnectionConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of the bgp connection. */
   properties?: VirtualwanBgpConnection_Properties | Computed<VirtualwanBgpConnection_Properties>;
 }
@@ -158,13 +160,18 @@ export interface VirtualwanBgpConnectionConfig {
 export interface VirtualwanBgpConnectionAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the bgp connection. */
   properties: VirtualwanBgpConnection_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualwanBgpConnection: ResourceBinding<VirtualwanBgpConnectionConfig, VirtualwanBgpConnectionAttrs> = {
   wireType: "azure_network_virtualwan_bgp_connection",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

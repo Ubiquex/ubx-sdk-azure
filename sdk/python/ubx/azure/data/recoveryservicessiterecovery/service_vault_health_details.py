@@ -72,16 +72,39 @@ class ServiceVaultHealthDetails_Properties:
     vault_errors: Any = None
 
 @dataclasses.dataclass
+class ServiceVaultHealthDetails_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
 class ServiceVaultHealthDetailsConfig:
     resource_name: Any = None
 
 @dataclasses.dataclass
 class ServiceVaultHealthDetailsAttrs:
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
     # Resource Location
     location: Any = None
+    # The name of the resource
+    name: Any = None
     # class to define the health summary of the Vault.
     properties: Any = None
     resource_name: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 ServiceVaultHealthDetails = ubx.DataSourceBinding(
     wire_type="azure_recoveryservicessiterecovery_service_vault_health_details",

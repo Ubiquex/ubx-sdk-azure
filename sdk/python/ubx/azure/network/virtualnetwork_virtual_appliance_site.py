@@ -55,6 +55,8 @@ _VirtualnetworkVirtualApplianceSite_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkVirtualApplianceSiteConfig:
+    # Name of the resource.
+    name: Any = None
     # Properties of the rule group.
     properties: Any = None
 
@@ -62,12 +64,17 @@ class VirtualnetworkVirtualApplianceSiteConfig:
 class VirtualnetworkVirtualApplianceSiteAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the rule group.
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkVirtualApplianceSite = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_virtual_appliance_site",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

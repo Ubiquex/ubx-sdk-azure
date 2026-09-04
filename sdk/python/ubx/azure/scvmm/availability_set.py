@@ -37,15 +37,23 @@ _AvailabilitySet_PropertiesFields = {
 class AvailabilitySetConfig:
     # The extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class AvailabilitySetAttrs:
     # The extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 AvailabilitySet = ubx.ResourceBinding(
     wire_type="azure_scvmm_availability_set",
@@ -55,10 +63,12 @@ AvailabilitySet = ubx.ResourceBinding(
             kind="object",
             fields=_AvailabilitySet_ExtendedLocationFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_AvailabilitySet_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

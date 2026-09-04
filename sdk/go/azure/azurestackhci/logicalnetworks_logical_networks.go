@@ -228,15 +228,23 @@ var LogicalnetworksLogicalNetworks_PropertiesFields = ubx.FieldMap{
 type LogicalnetworksLogicalNetworksConfig struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the logical network resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type LogicalnetworksLogicalNetworksAttrs struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the logical network resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var LogicalnetworksLogicalNetworks = ubx.ResourceBinding{
@@ -247,10 +255,12 @@ var LogicalnetworksLogicalNetworks = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   LogicalnetworksLogicalNetworks_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   LogicalnetworksLogicalNetworks_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

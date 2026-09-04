@@ -179,10 +179,14 @@ export interface ManagementMapsAccountConfig {
   identity?: ManagementMapsAccount_Identity | Computed<ManagementMapsAccount_Identity>;
   /** The Kind of the Maps Account. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Additional Map account properties */
   properties?: ManagementMapsAccount_Properties | Computed<ManagementMapsAccount_Properties>;
   /** The SKU of the Maps Account. */
   sku: ManagementMapsAccount_Sku | Computed<ManagementMapsAccount_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ManagementMapsAccountAttrs {
@@ -190,12 +194,16 @@ export interface ManagementMapsAccountAttrs {
   identity: ManagementMapsAccount_Identity;
   /** The Kind of the Maps Account. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Additional Map account properties */
   properties: ManagementMapsAccount_Properties;
   /** The SKU of the Maps Account. */
   sku: ManagementMapsAccount_Sku;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: ManagementMapsAccount_SystemData;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ManagementMapsAccount: ResourceBinding<ManagementMapsAccountConfig, ManagementMapsAccountAttrs> = {
@@ -207,6 +215,7 @@ export const ManagementMapsAccount: ResourceBinding<ManagementMapsAccountConfig,
       fields: ManagementMapsAccount_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -217,5 +226,6 @@ export const ManagementMapsAccount: ResourceBinding<ManagementMapsAccountConfig,
       kind: "object",
       fields: ManagementMapsAccount_SkuFields,
     },
+    tags: "tags",
   },
 };

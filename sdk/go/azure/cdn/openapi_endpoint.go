@@ -196,22 +196,32 @@ var OpenapiEndpoint_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiEndpointConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The JSON object that contains the properties required to create an endpoint.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiEndpointAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The JSON object that contains the properties required to create an endpoint.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiEndpoint = ubx.ResourceBinding{
 	WireType: "azure_cdn_openapi_endpoint",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiEndpoint_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

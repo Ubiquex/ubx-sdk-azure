@@ -36,21 +36,31 @@ _TrafficcontrollerSecurityPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class TrafficcontrollerSecurityPolicyConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # SecurityPolicy Properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class TrafficcontrollerSecurityPolicyAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # SecurityPolicy Properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 TrafficcontrollerSecurityPolicy = ubx.ResourceBinding(
     wire_type="azure_servicenetworking_trafficcontroller_security_policy",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_TrafficcontrollerSecurityPolicy_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

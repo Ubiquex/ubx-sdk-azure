@@ -396,15 +396,23 @@ var CloudngfwFirewallResource_PropertiesFields = ubx.FieldMap{
 type CloudngfwFirewallResourceConfig struct {
 	// The properties of the managed service identities assigned to this resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the Firewall resource deployment.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type CloudngfwFirewallResourceAttrs struct {
 	// The properties of the managed service identities assigned to this resource.
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the Firewall resource deployment.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var CloudngfwFirewallResource = ubx.ResourceBinding{
@@ -415,10 +423,12 @@ var CloudngfwFirewallResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   CloudngfwFirewallResource_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   CloudngfwFirewallResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

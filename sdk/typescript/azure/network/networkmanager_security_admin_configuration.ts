@@ -43,10 +43,18 @@ export interface NetworkmanagerSecurityAdminConfigurationConfig {
 }
 
 export interface NetworkmanagerSecurityAdminConfigurationAttrs {
+  /** A unique read-only string that changes whenever the resource is updated. */
+  etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource name. */
+  name: string;
   /** Defines the security admin configuration properties. */
   properties: NetworkmanagerSecurityAdminConfiguration_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: NetworkmanagerSecurityAdminConfiguration_SystemData;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkmanagerSecurityAdminConfiguration: ResourceBinding<NetworkmanagerSecurityAdminConfigurationConfig, NetworkmanagerSecurityAdminConfigurationAttrs> = {

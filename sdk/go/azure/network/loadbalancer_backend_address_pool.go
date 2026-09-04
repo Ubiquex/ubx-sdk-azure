@@ -5317,6 +5317,8 @@ var LoadbalancerBackendAddressPool_PropertiesFields = ubx.FieldMap{
 }
 
 type LoadbalancerBackendAddressPoolConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of the backend address pool.
 	Properties any
 }
@@ -5324,13 +5326,18 @@ type LoadbalancerBackendAddressPoolConfig struct {
 type LoadbalancerBackendAddressPoolAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of the backend address pool.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var LoadbalancerBackendAddressPool = ubx.ResourceBinding{
 	WireType: "azure_network_loadbalancer_backend_address_pool",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

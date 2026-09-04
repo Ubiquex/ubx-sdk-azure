@@ -25,19 +25,29 @@ _GrafanaIntegrationFabric_PropertiesFields = {
 
 @dataclasses.dataclass
 class GrafanaIntegrationFabricConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class GrafanaIntegrationFabricAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 GrafanaIntegrationFabric = ubx.ResourceBinding(
     wire_type="azure_dashboard_grafana_integration_fabric",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_GrafanaIntegrationFabric_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

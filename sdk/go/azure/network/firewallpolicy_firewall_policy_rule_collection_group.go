@@ -38,6 +38,8 @@ var FirewallpolicyFirewallPolicyRuleCollectionGroup_PropertiesFields = ubx.Field
 }
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroupConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of the rule collection group.
 	Properties any
 }
@@ -45,13 +47,18 @@ type FirewallpolicyFirewallPolicyRuleCollectionGroupConfig struct {
 type FirewallpolicyFirewallPolicyRuleCollectionGroupAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of the rule collection group.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var FirewallpolicyFirewallPolicyRuleCollectionGroup = ubx.ResourceBinding{
 	WireType: "azure_network_firewallpolicy_firewall_policy_rule_collection_group",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

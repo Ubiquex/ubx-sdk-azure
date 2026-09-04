@@ -27,10 +27,16 @@ type DomainTopicConfig struct {
 }
 
 type DomainTopicAttrs struct {
+	// Fully qualified identifier of the resource.
+	Id any
+	// Name of the resource.
+	Name any
 	// Properties of the Domain Topic.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Type of the resource.
+	Type any
 }
 
 var DomainTopic = ubx.ResourceBinding{

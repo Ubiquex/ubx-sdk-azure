@@ -269,26 +269,36 @@ _OpenapiCloudVmCluster_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiCloudVmClusterConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # CloudVmCluster resource model
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     cloudvmclustername: Any = None
 
 @dataclasses.dataclass
 class OpenapiCloudVmClusterAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # CloudVmCluster resource model
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     cloudvmclustername: Any = None
 
 OpenapiCloudVmCluster = ubx.ResourceBinding(
     wire_type="azure_oracle_openapi_cloud_vm_cluster",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiCloudVmCluster_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "cloudvmclustername": ubx.FieldSpec(wire_name="cloudvmclustername"),
     },
 )

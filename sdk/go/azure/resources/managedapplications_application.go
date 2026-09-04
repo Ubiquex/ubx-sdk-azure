@@ -123,6 +123,21 @@ type ManagedapplicationsApplication_Properties struct {
 	UpdatedBy any
 }
 
+type ManagedapplicationsApplication_Sku struct {
+	// The SKU capacity.
+	Capacity any
+	// The SKU family.
+	Family any
+	// The SKU model.
+	Model any
+	// The SKU name.
+	Name any
+	// The SKU size.
+	Size any
+	// The SKU tier.
+	Tier any
+}
+
 var ManagedapplicationsApplication_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
 	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
 	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
@@ -246,15 +261,28 @@ var ManagedapplicationsApplication_PropertiesFields = ubx.FieldMap{
 	},
 }
 
+var ManagedapplicationsApplication_SkuFields = ubx.FieldMap{
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Model":    ubx.FieldSpec{WireName: "model"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
+
 type ManagedapplicationsApplicationConfig struct {
 	// Identity for the resource.
 	Identity any
 	// The kind of the managed application. Allowed values are MarketPlace and ServiceCatalog.
 	Kind any
+	// ID of the resource that manages this resource.
+	ManagedBy any
 	// Plan for the managed application.
 	Plan any
 	// The managed application properties.
 	Properties any
+	// SKU for the resource.
+	Sku any
 }
 
 type ManagedapplicationsApplicationAttrs struct {
@@ -262,10 +290,14 @@ type ManagedapplicationsApplicationAttrs struct {
 	Identity any
 	// The kind of the managed application. Allowed values are MarketPlace and ServiceCatalog.
 	Kind any
+	// ID of the resource that manages this resource.
+	ManagedBy any
 	// Plan for the managed application.
 	Plan any
 	// The managed application properties.
 	Properties any
+	// SKU for the resource.
+	Sku any
 }
 
 var ManagedapplicationsApplication = ubx.ResourceBinding{
@@ -276,7 +308,8 @@ var ManagedapplicationsApplication = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ManagedapplicationsApplication_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":      ubx.FieldSpec{WireName: "kind"},
+		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Plan": ubx.FieldSpec{
 			WireName: "plan",
 			Kind:     "object",
@@ -286,6 +319,11 @@ var ManagedapplicationsApplication = ubx.ResourceBinding{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ManagedapplicationsApplication_PropertiesFields,
+		},
+		"Sku": ubx.FieldSpec{
+			WireName: "sku",
+			Kind:     "object",
+			Fields:   ManagedapplicationsApplication_SkuFields,
 		},
 	},
 }

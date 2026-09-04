@@ -241,6 +241,21 @@ class Cluster_Properties:
     # Boolean to pause automatic runtime version upgrades to the cluster.
     wave_upgrade_paused: Any = None
 
+@dataclasses.dataclass
+class Cluster_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC).
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _Cluster_Properties_ApplicationTypeVersionsCleanupPolicyFields = {
     "max_unused_versions_to_keep": ubx.FieldSpec(wire_name="max_unused_versions_to_keep"),
 }
@@ -524,21 +539,41 @@ _Cluster_PropertiesFields = {
 
 @dataclasses.dataclass
 class ClusterConfig:
+    # Azure resource location.
+    location: Any = None
     # Describes the cluster resource properties.
     properties: Any = None
+    # Azure resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ClusterAttrs:
+    # Azure resource etag.
+    etag: Any = None
+    # Azure resource identifier.
+    id: Any = None
+    # Azure resource location.
+    location: Any = None
+    # Azure resource name.
+    name: Any = None
     # Describes the cluster resource properties.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Azure resource tags.
+    tags: Any = None
+    # Azure resource type.
+    type: Any = None
 
 Cluster = ubx.ResourceBinding(
     wire_type="azure_servicefabric_cluster",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Cluster_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

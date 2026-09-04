@@ -20,22 +20,38 @@ const AssemblyDefinition_PropertiesFields: FieldMap = {
 };
 
 export interface AssemblyDefinitionConfig {
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** The assembly properties definition. */
   properties: AssemblyDefinition_Properties | Computed<AssemblyDefinition_Properties>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface AssemblyDefinitionAttrs {
+  /** The resource id. */
+  id: string;
+  /** The resource location. */
+  location: string;
+  /** Gets the resource name. */
+  name: string;
   /** The assembly properties definition. */
   properties: AssemblyDefinition_Properties;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** Gets the resource type. */
+  type: string;
 }
 
 export const AssemblyDefinition: ResourceBinding<AssemblyDefinitionConfig, AssemblyDefinitionAttrs> = {
   wireType: "azure_logic_assembly_definition",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: AssemblyDefinition_PropertiesFields,
     },
+    tags: "tags",
   },
 };

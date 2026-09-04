@@ -44,22 +44,31 @@ var Capacity_SkuFields = ubx.FieldMap{
 }
 
 type CapacityConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// The Microsoft Fabric capacity properties.
 	Properties any
 	// Represents the SKU name and Azure pricing tier for Microsoft Fabric capacity resource.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type CapacityAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// The Microsoft Fabric capacity properties.
 	Properties any
 	// Represents the SKU name and Azure pricing tier for Microsoft Fabric capacity resource.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var Capacity = ubx.ResourceBinding{
 	WireType: "azure_fabric_capacity",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -70,5 +79,6 @@ var Capacity = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Capacity_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

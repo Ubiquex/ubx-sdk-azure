@@ -22,22 +22,32 @@ var VdiNetworkConnection_PropertiesFields = ubx.FieldMap{
 }
 
 type VdiNetworkConnectionConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Network properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VdiNetworkConnectionAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Network properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var VdiNetworkConnection = ubx.ResourceBinding{
 	WireType: "azure_devcenter_vdi_network_connection",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VdiNetworkConnection_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

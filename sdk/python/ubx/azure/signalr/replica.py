@@ -44,19 +44,28 @@ _Replica_SkuFields = {
 
 @dataclasses.dataclass
 class ReplicaConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     properties: Any = None
     # The billing information of the resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ReplicaAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     properties: Any = None
     # The billing information of the resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Replica = ubx.ResourceBinding(
     wire_type="azure_signalr_replica",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -67,5 +76,6 @@ Replica = ubx.ResourceBinding(
             kind="object",
             fields=_Replica_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

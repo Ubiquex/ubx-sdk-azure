@@ -35,6 +35,10 @@ export interface DeploymentscriptsDeploymentScriptConfig {
   identity?: DeploymentscriptsDeploymentScript_Identity | Computed<DeploymentscriptsDeploymentScript_Identity>;
   /** Type of the script. */
   kind: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface DeploymentscriptsDeploymentScriptAttrs {
@@ -42,6 +46,10 @@ export interface DeploymentscriptsDeploymentScriptAttrs {
   identity: DeploymentscriptsDeploymentScript_Identity;
   /** Type of the script. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const DeploymentscriptsDeploymentScript: ResourceBinding<DeploymentscriptsDeploymentScriptConfig, DeploymentscriptsDeploymentScriptAttrs> = {
@@ -53,5 +61,7 @@ export const DeploymentscriptsDeploymentScript: ResourceBinding<Deploymentscript
       fields: DeploymentscriptsDeploymentScript_IdentityFields,
     },
     kind: "kind",
+    location: "location",
+    tags: "tags",
   },
 };

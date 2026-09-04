@@ -85,26 +85,36 @@ _OpenapiNetworkAnchor_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiNetworkAnchorConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Network Anchor properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 @dataclasses.dataclass
 class OpenapiNetworkAnchorAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Network Anchor properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 OpenapiNetworkAnchor = ubx.ResourceBinding(
     wire_type="azure_oracle_openapi_network_anchor",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiNetworkAnchor_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

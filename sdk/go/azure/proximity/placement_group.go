@@ -85,15 +85,23 @@ var PlacementGroup_PropertiesFields = ubx.FieldMap{
 }
 
 type PlacementGroupConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Proximity Placement Group.
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
 
 type PlacementGroupAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a Proximity Placement Group.
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -101,11 +109,13 @@ type PlacementGroupAttrs struct {
 var PlacementGroup = ubx.ResourceBinding{
 	WireType: "azure_proximity_placement_group",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   PlacementGroup_PropertiesFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

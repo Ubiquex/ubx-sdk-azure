@@ -3,6 +3,22 @@ package purview
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type Account_Identity_UserAssignedIdentities struct {
+	ClientId    any
+	PrincipalId any
+}
+
+type Account_Identity struct {
+	// Service principal object Id
+	PrincipalId any
+	// Tenant Id
+	TenantId any
+	// Identity Type
+	Type any
+	// User Assigned Identities
+	UserAssignedIdentities any
+}
+
 type Account_Properties_AccountStatus_ErrorDetails_Details_Details struct {
 }
 
@@ -96,6 +112,31 @@ type Account_Properties struct {
 type Account_Sku struct {
 	Capacity any
 	Name     any
+}
+
+type Account_SystemData struct {
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
+	LastModifiedByType any
+}
+
+var Account_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
+
+var Account_IdentityFields = ubx.FieldMap{
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   Account_Identity_UserAssignedIdentitiesFields,
+	},
 }
 
 var Account_Properties_AccountStatus_ErrorDetails_Details_DetailsFields = ubx.FieldMap{}
@@ -217,24 +258,51 @@ var Account_PropertiesFields = ubx.FieldMap{
 }
 
 type AccountConfig struct {
+	// The Managed Identity of the resource
+	Identity any
+	// Gets or sets the location.
+	Location any
 	// The account properties
 	Properties any
+	// Tags on the azure resource.
+	Tags any
 }
 
 type AccountAttrs struct {
+	// Gets or sets the identifier.
+	Id any
+	// The Managed Identity of the resource
+	Identity any
+	// Gets or sets the location.
+	Location any
+	// Gets or sets the name.
+	Name any
 	// The account properties
 	Properties any
 	// Gets or sets the Sku.
 	Sku any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Tags on the azure resource.
+	Tags any
+	// Gets or sets the type.
+	Type any
 }
 
 var Account = ubx.ResourceBinding{
 	WireType: "azure_purview_account",
 	Fields: ubx.FieldMap{
+		"Identity": ubx.FieldSpec{
+			WireName: "identity",
+			Kind:     "object",
+			Fields:   Account_IdentityFields,
+		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   Account_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

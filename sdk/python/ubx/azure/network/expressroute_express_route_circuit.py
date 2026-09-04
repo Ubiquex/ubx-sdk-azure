@@ -419,23 +419,41 @@ _ExpressrouteExpressRouteCircuit_SkuFields = {
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuitConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Properties of ExpressRouteCircuit.
     properties: Any = None
     # Contains SKU in an ExpressRouteCircuit.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuitAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of ExpressRouteCircuit.
     properties: Any = None
     # Contains SKU in an ExpressRouteCircuit.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 ExpressrouteExpressRouteCircuit = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_express_route_circuit",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -446,5 +464,6 @@ ExpressrouteExpressRouteCircuit = ubx.ResourceBinding(
             kind="object",
             fields=_ExpressrouteExpressRouteCircuit_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

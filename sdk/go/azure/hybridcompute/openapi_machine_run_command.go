@@ -167,22 +167,32 @@ var OpenapiMachineRunCommand_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiMachineRunCommandConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a run command.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiMachineRunCommandAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Describes the properties of a run command.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiMachineRunCommand = ubx.ResourceBinding{
 	WireType: "azure_hybridcompute_openapi_machine_run_command",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiMachineRunCommand_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -14,24 +14,43 @@ const VirtualnetworkApplicationSecurityGroup_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkApplicationSecurityGroupConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Application security group properties. */
   properties?: VirtualnetworkApplicationSecurityGroup_Properties | Computed<VirtualnetworkApplicationSecurityGroup_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkApplicationSecurityGroupAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Application security group properties. */
   properties: VirtualnetworkApplicationSecurityGroup_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkApplicationSecurityGroup: ResourceBinding<VirtualnetworkApplicationSecurityGroupConfig, VirtualnetworkApplicationSecurityGroupAttrs> = {
   wireType: "azure_network_virtualnetwork_application_security_group",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkApplicationSecurityGroup_PropertiesFields,
     },
+    tags: "tags",
   },
 };

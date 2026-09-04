@@ -158,21 +158,31 @@ _OpenapiDomainResource_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiDomainResourceConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # A class that describes the properties of a Domains resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiDomainResourceAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # A class that describes the properties of a Domains resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiDomainResource = ubx.ResourceBinding(
     wire_type="azure_communication_openapi_domain_resource",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiDomainResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

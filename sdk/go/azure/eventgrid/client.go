@@ -64,10 +64,16 @@ type ClientConfig struct {
 }
 
 type ClientAttrs struct {
+	// Fully qualified identifier of the resource.
+	Id any
+	// Name of the resource.
+	Name any
 	// The properties of client.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Type of the resource.
+	Type any
 }
 
 var Client = ubx.ResourceBinding{

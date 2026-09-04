@@ -24,6 +24,97 @@ type OpenapiSavingsPlanModelListResult_Summary struct {
 	WarningCount any
 }
 
+type OpenapiSavingsPlanModelListResult_Value_Properties_AppliedScopeProperties struct {
+	DisplayName       any
+	ManagementGroupId any
+	ResourceGroupId   any
+	SubscriptionId    any
+	TenantId          any
+}
+
+type OpenapiSavingsPlanModelListResult_Value_Properties_Commitment struct {
+	Grain any
+}
+
+type OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo_Properties struct {
+	SubscriptionId any
+}
+
+type OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo struct {
+	Message    any
+	Properties any
+	StatusCode any
+}
+
+type OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Properties struct {
+	AppliedScopeProperties any
+	AppliedScopeType       any
+	BillingPlan            any
+	BillingScopeId         any
+	Commitment             any
+	DisplayName            any
+	Renew                  any
+	Term                   any
+}
+
+type OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Sku struct {
+	Name any
+}
+
+type OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties struct {
+	Properties any
+	Sku        any
+}
+
+type OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties struct {
+	PurchaseProperties any
+}
+
+type OpenapiSavingsPlanModelListResult_Value_Properties_Utilization_Aggregates struct {
+	Grain     any
+	GrainUnit any
+	Value     any
+	ValueUnit any
+}
+
+type OpenapiSavingsPlanModelListResult_Value_Properties_Utilization struct {
+	Aggregates any
+	Trend      any
+}
+
+type OpenapiSavingsPlanModelListResult_Value_Properties struct {
+	AppliedScopeProperties       any
+	AppliedScopeType             any
+	BenefitStartTime             any
+	BillingAccountId             any
+	BillingPlan                  any
+	BillingProfileId             any
+	BillingScopeId               any
+	Commitment                   any
+	CustomerId                   any
+	DisplayName                  any
+	DisplayProvisioningState     any
+	EffectiveDateTime            any
+	ExpiryDateTime               any
+	ExtendedStatusInfo           any
+	ProductCode                  any
+	ProvisioningState            any
+	PurchaseDateTime             any
+	Renew                        any
+	RenewDestination             any
+	RenewProperties              any
+	RenewSource                  any
+	Term                         any
+	UserFriendlyAppliedScopeType any
+	Utilization                  any
+}
+
+type OpenapiSavingsPlanModelListResult_Value struct {
+	Properties any
+	Sku        any
+	Tags       any
+}
+
 type OpenapiSavingsPlanModelListResultConfig struct {
 	BillingAccountName any
 	Filter             any
@@ -37,13 +128,17 @@ type OpenapiSavingsPlanModelListResultConfig struct {
 type OpenapiSavingsPlanModelListResultAttrs struct {
 	BillingAccountName any
 	Filter             any
-	OrderBy            any
-	RefreshSummary     any
-	SelectedState      any
-	Skiptoken          any
+	// The link to the next page of items
+	NextLink       any
+	OrderBy        any
+	RefreshSummary any
+	SelectedState  any
+	Skiptoken      any
 	// The roll up count summary of savings plans in each state
 	Summary any
 	Take    any
+	// The SavingsPlanModel items on this page
+	Value any
 }
 
 var OpenapiSavingsPlanModelListResult = ubx.DataSourceBinding{

@@ -134,21 +134,31 @@ _SapvirtualinstanceSapapplicationServerInstance_PropertiesFields = {
 
 @dataclasses.dataclass
 class SapvirtualinstanceSapapplicationServerInstanceConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the SAP Application Server instance properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class SapvirtualinstanceSapapplicationServerInstanceAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the SAP Application Server instance properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 SapvirtualinstanceSapapplicationServerInstance = ubx.ResourceBinding(
     wire_type="azure_workloads_sapvirtualinstance_sapapplication_server_instance",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_SapvirtualinstanceSapapplicationServerInstance_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

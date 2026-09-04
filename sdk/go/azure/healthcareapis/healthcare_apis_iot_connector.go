@@ -3,6 +3,22 @@ package healthcareapis
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type HealthcareApisIotConnector_Identity_UserAssignedIdentities struct {
+	ClientId    any
+	PrincipalId any
+}
+
+type HealthcareApisIotConnector_Identity struct {
+	// The service principal ID of the system assigned identity. This property will only be provided for a system assigned identity.
+	PrincipalId any
+	// The tenant ID of the system assigned identity. This property will only be provided for a system assigned identity.
+	TenantId any
+	// Type of identity being specified, currently SystemAssigned and None are allowed.
+	Type any
+	// The set of user assigned identities associated with the resource. The userAssignedIdentities dictionary keys will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}. The dictionary values can be empty objects ({}) in requests.
+	UserAssignedIdentities any
+}
+
 type HealthcareApisIotConnector_Properties_DeviceMapping struct {
 	// The mapping.
 	Content any
@@ -41,6 +57,22 @@ type HealthcareApisIotConnector_SystemData struct {
 	LastModifiedByType any
 }
 
+var HealthcareApisIotConnector_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
+
+var HealthcareApisIotConnector_IdentityFields = ubx.FieldMap{
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   HealthcareApisIotConnector_Identity_UserAssignedIdentitiesFields,
+	},
+}
+
 var HealthcareApisIotConnector_Properties_DeviceMappingFields = ubx.FieldMap{
 	"Content": ubx.FieldSpec{WireName: "content"},
 }
@@ -66,11 +98,15 @@ var HealthcareApisIotConnector_PropertiesFields = ubx.FieldMap{
 }
 
 type HealthcareApisIotConnectorConfig struct {
+	// Setting indicating whether the service has a managed identity associated with it.
+	Identity any
 	// IoT Connector properties.
 	Properties any
 }
 
 type HealthcareApisIotConnectorAttrs struct {
+	// Setting indicating whether the service has a managed identity associated with it.
+	Identity any
 	// IoT Connector properties.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
@@ -80,6 +116,11 @@ type HealthcareApisIotConnectorAttrs struct {
 var HealthcareApisIotConnector = ubx.ResourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_iot_connector",
 	Fields: ubx.FieldMap{
+		"Identity": ubx.FieldSpec{
+			WireName: "identity",
+			Kind:     "object",
+			Fields:   HealthcareApisIotConnector_IdentityFields,
+		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

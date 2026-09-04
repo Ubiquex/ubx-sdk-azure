@@ -22,22 +22,38 @@ var AssemblyDefinition_PropertiesFields = ubx.FieldMap{
 }
 
 type AssemblyDefinitionConfig struct {
+	// The resource location.
+	Location any
 	// The assembly properties definition.
 	Properties any
+	// The resource tags.
+	Tags any
 }
 
 type AssemblyDefinitionAttrs struct {
+	// The resource id.
+	Id any
+	// The resource location.
+	Location any
+	// Gets the resource name.
+	Name any
 	// The assembly properties definition.
 	Properties any
+	// The resource tags.
+	Tags any
+	// Gets the resource type.
+	Type any
 }
 
 var AssemblyDefinition = ubx.ResourceBinding{
 	WireType: "azure_logic_assembly_definition",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   AssemblyDefinition_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

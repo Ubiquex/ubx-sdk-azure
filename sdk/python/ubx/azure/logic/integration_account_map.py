@@ -91,21 +91,37 @@ _IntegrationAccountMap_PropertiesFields = {
 
 @dataclasses.dataclass
 class IntegrationAccountMapConfig:
+    # The resource location.
+    location: Any = None
     # The integration account map.
     properties: Any = None
+    # The resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class IntegrationAccountMapAttrs:
+    # The resource id.
+    id: Any = None
+    # The resource location.
+    location: Any = None
+    # Gets the resource name.
+    name: Any = None
     # The integration account map.
     properties: Any = None
+    # The resource tags.
+    tags: Any = None
+    # Gets the resource type.
+    type: Any = None
 
 IntegrationAccountMap = ubx.ResourceBinding(
     wire_type="azure_logic_integration_account_map",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_IntegrationAccountMap_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

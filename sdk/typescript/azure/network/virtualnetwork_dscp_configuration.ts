@@ -12323,24 +12323,43 @@ const VirtualnetworkDscpConfiguration_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkDscpConfigurationConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Differentiated Services Code Point configuration properties. */
   properties?: VirtualnetworkDscpConfiguration_Properties | Computed<VirtualnetworkDscpConfiguration_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkDscpConfigurationAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Differentiated Services Code Point configuration properties. */
   properties: VirtualnetworkDscpConfiguration_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkDscpConfiguration: ResourceBinding<VirtualnetworkDscpConfigurationConfig, VirtualnetworkDscpConfigurationAttrs> = {
   wireType: "azure_network_virtualnetwork_dscp_configuration",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkDscpConfiguration_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -1707,10 +1707,14 @@ class ManagedclustersManagedClusterConfig:
     identity: Any = None
     # This is primarily used to expose different UI experiences in the portal for different kinds
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the managed cluster.
     properties: Any = None
     # The SKU of a Managed Cluster.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersManagedClusterAttrs:
@@ -1722,10 +1726,14 @@ class ManagedclustersManagedClusterAttrs:
     identity: Any = None
     # This is primarily used to expose different UI experiences in the portal for different kinds
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the managed cluster.
     properties: Any = None
     # The SKU of a Managed Cluster.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 ManagedclustersManagedCluster = ubx.ResourceBinding(
     wire_type="azure_containerservice_managedclusters_managed_cluster",
@@ -1741,6 +1749,7 @@ ManagedclustersManagedCluster = ubx.ResourceBinding(
             fields=_ManagedclustersManagedCluster_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -1751,5 +1760,6 @@ ManagedclustersManagedCluster = ubx.ResourceBinding(
             kind="object",
             fields=_ManagedclustersManagedCluster_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -63,22 +63,38 @@ var IntegrationAccountCertificate_PropertiesFields = ubx.FieldMap{
 }
 
 type IntegrationAccountCertificateConfig struct {
+	// The resource location.
+	Location any
 	// The integration account certificate properties.
 	Properties any
+	// The resource tags.
+	Tags any
 }
 
 type IntegrationAccountCertificateAttrs struct {
+	// The resource id.
+	Id any
+	// The resource location.
+	Location any
+	// Gets the resource name.
+	Name any
 	// The integration account certificate properties.
 	Properties any
+	// The resource tags.
+	Tags any
+	// Gets the resource type.
+	Type any
 }
 
 var IntegrationAccountCertificate = ubx.ResourceBinding{
 	WireType: "azure_logic_integration_account_certificate",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   IntegrationAccountCertificate_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

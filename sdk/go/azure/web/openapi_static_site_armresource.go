@@ -458,10 +458,14 @@ type OpenapiStaticSiteArmresourceConfig struct {
 	Identity any
 	// Kind of resource.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// A static site.
 	Properties any
 	// Description of a SKU for a scalable resource.
 	Sku any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -471,10 +475,14 @@ type OpenapiStaticSiteArmresourceAttrs struct {
 	Identity any
 	// Kind of resource.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// A static site.
 	Properties any
 	// Description of a SKU for a scalable resource.
 	Sku any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -487,7 +495,8 @@ var OpenapiStaticSiteArmresource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiStaticSiteArmresource_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -498,6 +507,7 @@ var OpenapiStaticSiteArmresource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

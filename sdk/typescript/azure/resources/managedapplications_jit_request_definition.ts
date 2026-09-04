@@ -87,22 +87,38 @@ const ManagedapplicationsJitRequestDefinition_PropertiesFields: FieldMap = {
 };
 
 export interface ManagedapplicationsJitRequestDefinitionConfig {
+  /** Resource location */
+  location?: string | Computed<string>;
   /** Information about JIT request properties */
   properties?: ManagedapplicationsJitRequestDefinition_Properties | Computed<ManagedapplicationsJitRequestDefinition_Properties>;
+  /** Resource tags */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ManagedapplicationsJitRequestDefinitionAttrs {
+  /** Resource ID */
+  id: string;
+  /** Resource location */
+  location: string;
+  /** Resource name */
+  name: string;
   /** Information about JIT request properties */
   properties: ManagedapplicationsJitRequestDefinition_Properties;
+  /** Resource tags */
+  tags: Record<string, string>;
+  /** Resource type */
+  type: string;
 }
 
 export const ManagedapplicationsJitRequestDefinition: ResourceBinding<ManagedapplicationsJitRequestDefinitionConfig, ManagedapplicationsJitRequestDefinitionAttrs> = {
   wireType: "azure_resources_managedapplications_jit_request_definition",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ManagedapplicationsJitRequestDefinition_PropertiesFields,
     },
+    tags: "tags",
   },
 };

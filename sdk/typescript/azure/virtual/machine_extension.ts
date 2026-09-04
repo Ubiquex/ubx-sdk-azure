@@ -124,22 +124,32 @@ const MachineExtension_PropertiesFields: FieldMap = {
 };
 
 export interface MachineExtensionConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Describes the properties of a Virtual Machine Extension. */
   properties?: MachineExtension_Properties | Computed<MachineExtension_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MachineExtensionAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Describes the properties of a Virtual Machine Extension. */
   properties: MachineExtension_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const MachineExtension: ResourceBinding<MachineExtensionConfig, MachineExtensionAttrs> = {
   wireType: "azure_virtual_machine_extension",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: MachineExtension_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -144,8 +144,12 @@ type OpenapiKubeEnvironmentConfig struct {
 	ExtendedLocation any
 	// Kind of resource.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// KubeEnvironment resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -155,8 +159,12 @@ type OpenapiKubeEnvironmentAttrs struct {
 	ExtendedLocation any
 	// Kind of resource.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// KubeEnvironment resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 	// path parameter, not part of the API's own resource representation
 	Name any
 }
@@ -169,12 +177,14 @@ var OpenapiKubeEnvironment = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiKubeEnvironment_ExtendedLocationFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiKubeEnvironment_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

@@ -57,22 +57,32 @@ var DevBoxDefinition_PropertiesFields = ubx.FieldMap{
 }
 
 type DevBoxDefinitionConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a Dev Box definition.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type DevBoxDefinitionAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties of a Dev Box definition.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var DevBoxDefinition = ubx.ResourceBinding{
 	WireType: "azure_devcenter_dev_box_definition",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   DevBoxDefinition_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

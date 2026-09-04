@@ -273,19 +273,27 @@ _Sbnamespace_SkuFields = {
 class SbnamespaceConfig:
     # Properties to configure User Assigned Identities for Bring your Own Keys
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the namespace.
     properties: Any = None
     # SKU of the namespace.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class SbnamespaceAttrs:
     # Properties to configure User Assigned Identities for Bring your Own Keys
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the namespace.
     properties: Any = None
     # SKU of the namespace.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Sbnamespace = ubx.ResourceBinding(
     wire_type="azure_servicebus_sbnamespace",
@@ -295,6 +303,7 @@ Sbnamespace = ubx.ResourceBinding(
             kind="object",
             fields=_Sbnamespace_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -305,5 +314,6 @@ Sbnamespace = ubx.ResourceBinding(
             kind="object",
             fields=_Sbnamespace_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

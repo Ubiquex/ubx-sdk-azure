@@ -28,6 +28,21 @@ type OucontainerOuContainer_Properties struct {
 	TenantId any
 }
 
+type OucontainerOuContainer_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 type OucontainerOuContainerConfig struct {
 	// The account name
 	AccountName any
@@ -40,12 +55,26 @@ type OucontainerOuContainerConfig struct {
 type OucontainerOuContainerAttrs struct {
 	// The account name
 	AccountName any
+	// Resource etag
+	Etag any
+	// Resource Id
+	Id any
+	// Resource location
+	Location any
+	// Resource name
+	Name any
 	// The account password
 	Password any
 	// Properties of the OuContainer.
 	Properties any
 	// The account spn
 	Spn any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Resource tags
+	Tags any
+	// Resource type
+	Type any
 }
 
 var OucontainerOuContainer = ubx.ResourceBinding{

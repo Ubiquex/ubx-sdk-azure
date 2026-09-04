@@ -62,15 +62,23 @@ _AppliancesAppliance_PropertiesFields = {
 class AppliancesApplianceConfig:
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties for an appliance.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class AppliancesApplianceAttrs:
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties for an appliance.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 AppliancesAppliance = ubx.ResourceBinding(
     wire_type="azure_resourceconnector_appliances_appliance",
@@ -80,10 +88,12 @@ AppliancesAppliance = ubx.ResourceBinding(
             kind="object",
             fields=_AppliancesAppliance_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_AppliancesAppliance_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

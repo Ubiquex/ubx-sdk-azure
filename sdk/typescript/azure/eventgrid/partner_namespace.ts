@@ -122,24 +122,34 @@ const PartnerNamespace_PropertiesFields: FieldMap = {
 };
 
 export interface PartnerNamespaceConfig {
+  /** Location of the resource. */
+  location: string | Computed<string>;
   /** Properties of the partner namespace. */
   properties?: PartnerNamespace_Properties | Computed<PartnerNamespace_Properties>;
+  /** Tags of the resource. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface PartnerNamespaceAttrs {
+  /** Location of the resource. */
+  location: string;
   /** Properties of the partner namespace. */
   properties: PartnerNamespace_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: PartnerNamespace_SystemData;
+  /** Tags of the resource. */
+  tags: Record<string, string>;
 }
 
 export const PartnerNamespace: ResourceBinding<PartnerNamespaceConfig, PartnerNamespaceAttrs> = {
   wireType: "azure_eventgrid_partner_namespace",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: PartnerNamespace_PropertiesFields,
     },
+    tags: "tags",
   },
 };

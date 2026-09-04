@@ -22,6 +22,97 @@ export interface OpenapiSavingsPlanModelListResult_Summary {
   warningCount?: number | Computed<number>;
 }
 
+export interface OpenapiSavingsPlanModelListResult_Value_Properties_AppliedScopeProperties {
+  displayName?: string | Computed<string>;
+  managementGroupId?: string | Computed<string>;
+  resourceGroupId?: string | Computed<string>;
+  subscriptionId?: string | Computed<string>;
+  tenantId?: string | Computed<string>;
+}
+
+export interface OpenapiSavingsPlanModelListResult_Value_Properties_Commitment {
+  grain?: string | Computed<string>;
+}
+
+export interface OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo_Properties {
+  subscriptionId?: string | Computed<string>;
+}
+
+export interface OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo {
+  message?: string | Computed<string>;
+  properties?: OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo_Properties | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo_Properties>;
+  statusCode?: string | Computed<string>;
+}
+
+export interface OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Properties {
+  appliedScopeProperties?: OpenapiSavingsPlanModelListResult_Value_Properties_AppliedScopeProperties | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_AppliedScopeProperties>;
+  appliedScopeType?: string | Computed<string>;
+  billingPlan?: string | Computed<string>;
+  billingScopeId?: string | Computed<string>;
+  commitment?: OpenapiSavingsPlanModelListResult_Value_Properties_Commitment | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_Commitment>;
+  displayName?: string | Computed<string>;
+  renew?: boolean | Computed<boolean>;
+  term?: string | Computed<string>;
+}
+
+export interface OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Sku {
+  name?: string | Computed<string>;
+}
+
+export interface OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties {
+  properties?: OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Properties | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Properties>;
+  sku?: OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Sku | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Sku>;
+}
+
+export interface OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties {
+  purchaseProperties?: OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties>;
+}
+
+export interface OpenapiSavingsPlanModelListResult_Value_Properties_Utilization_Aggregates {
+  grain?: number | Computed<number>;
+  grainUnit?: string | Computed<string>;
+  value?: number | Computed<number>;
+  valueUnit?: string | Computed<string>;
+}
+
+export interface OpenapiSavingsPlanModelListResult_Value_Properties_Utilization {
+  aggregates?: OpenapiSavingsPlanModelListResult_Value_Properties_Utilization_Aggregates[] | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_Utilization_Aggregates[]>;
+  trend?: string | Computed<string>;
+}
+
+export interface OpenapiSavingsPlanModelListResult_Value_Properties {
+  appliedScopeProperties?: OpenapiSavingsPlanModelListResult_Value_Properties_AppliedScopeProperties | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_AppliedScopeProperties>;
+  appliedScopeType?: string | Computed<string>;
+  benefitStartTime?: string | Computed<string>;
+  billingAccountId?: string | Computed<string>;
+  billingPlan?: string | Computed<string>;
+  billingProfileId?: string | Computed<string>;
+  billingScopeId?: string | Computed<string>;
+  commitment?: OpenapiSavingsPlanModelListResult_Value_Properties_Commitment | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_Commitment>;
+  customerId?: string | Computed<string>;
+  displayName?: string | Computed<string>;
+  displayProvisioningState?: string | Computed<string>;
+  effectiveDateTime?: string | Computed<string>;
+  expiryDateTime?: string | Computed<string>;
+  extendedStatusInfo?: OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo>;
+  productCode?: string | Computed<string>;
+  provisioningState?: string | Computed<string>;
+  purchaseDateTime?: string | Computed<string>;
+  renew?: boolean | Computed<boolean>;
+  renewDestination?: string | Computed<string>;
+  renewProperties?: OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties>;
+  renewSource?: string | Computed<string>;
+  term?: string | Computed<string>;
+  userFriendlyAppliedScopeType?: string | Computed<string>;
+  utilization?: OpenapiSavingsPlanModelListResult_Value_Properties_Utilization | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_Utilization>;
+}
+
+export interface OpenapiSavingsPlanModelListResult_Value {
+  properties?: OpenapiSavingsPlanModelListResult_Value_Properties | Computed<OpenapiSavingsPlanModelListResult_Value_Properties>;
+  sku?: OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Sku | Computed<OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Sku>;
+  tags?: Record<string, string> | Computed<Record<string, string>>;
+}
+
 export interface OpenapiSavingsPlanModelListResultConfig {
   billingAccountName: string | Computed<string>;
   filter?: string | Computed<string>;
@@ -35,6 +126,8 @@ export interface OpenapiSavingsPlanModelListResultConfig {
 export interface OpenapiSavingsPlanModelListResultAttrs {
   billingAccountName: string;
   filter: string;
+  /** The link to the next page of items */
+  nextLink: string;
   orderBy: string;
   refreshSummary: string;
   selectedState: string;
@@ -42,6 +135,8 @@ export interface OpenapiSavingsPlanModelListResultAttrs {
   /** The roll up count summary of savings plans in each state */
   summary: OpenapiSavingsPlanModelListResult_Summary;
   take: number;
+  /** The SavingsPlanModel items on this page */
+  value: OpenapiSavingsPlanModelListResult_Value[];
 }
 
 export const OpenapiSavingsPlanModelListResult: DataSourceBinding<OpenapiSavingsPlanModelListResultConfig, OpenapiSavingsPlanModelListResultAttrs> = {

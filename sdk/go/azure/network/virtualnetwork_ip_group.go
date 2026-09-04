@@ -38,24 +38,43 @@ var VirtualnetworkIpGroup_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkIpGroupConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// The IpGroups property information.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkIpGroupAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// The IpGroups property information.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkIpGroup = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_ip_group",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkIpGroup_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

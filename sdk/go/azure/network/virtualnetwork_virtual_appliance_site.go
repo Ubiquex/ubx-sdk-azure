@@ -51,6 +51,8 @@ var VirtualnetworkVirtualApplianceSite_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkVirtualApplianceSiteConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of the rule group.
 	Properties any
 }
@@ -58,13 +60,18 @@ type VirtualnetworkVirtualApplianceSiteConfig struct {
 type VirtualnetworkVirtualApplianceSiteAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of the rule group.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkVirtualApplianceSite = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_virtual_appliance_site",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

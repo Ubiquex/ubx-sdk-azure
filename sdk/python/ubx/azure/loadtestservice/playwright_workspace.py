@@ -29,21 +29,31 @@ _PlaywrightWorkspace_PropertiesFields = {
 
 @dataclasses.dataclass
 class PlaywrightWorkspaceConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Playwright workspace resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class PlaywrightWorkspaceAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Playwright workspace resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 PlaywrightWorkspace = ubx.ResourceBinding(
     wire_type="azure_loadtestservice_playwright_workspace",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_PlaywrightWorkspace_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

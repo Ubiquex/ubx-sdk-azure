@@ -225,25 +225,34 @@ var OpenapiCdnWebApplicationFirewallPolicy_SkuFields = ubx.FieldMap{
 type OpenapiCdnWebApplicationFirewallPolicyConfig struct {
 	// Gets a unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// The geo-location where the resource lives
+	Location any
 	// Defines CDN web application firewall policy properties.
 	Properties any
 	// Standard_Verizon = The SKU name for a Standard Verizon CDN profile. Premium_Verizon = The SKU name for a Premium Verizon CDN profile. Custom_Verizon = The SKU name for a Custom Verizon CDN profile. Standard_Akamai = The SKU name for an Akamai CDN profile. Standard_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using GB based billing model. Standard_Microsoft = The SKU name for a Standard Microsoft CDN profile. Standard_AzureFrontDoor = The SKU name for an Azure Front Door Standard profile. Premium_AzureFrontDoor = The SKU name for an Azure Front Door Premium profile. Standard_955BandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using 95-5 peak bandwidth billing model. Standard_AvgBandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using monthly average peak bandwidth billing model. StandardPlus_ChinaCdn = The SKU name for a China CDN profile for live-streaming using GB based billing model. StandardPlus_955BandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using 95-5 peak bandwidth billing model. StandardPlus_AvgBandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using monthly average peak bandwidth billing model.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiCdnWebApplicationFirewallPolicyAttrs struct {
 	// Gets a unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// The geo-location where the resource lives
+	Location any
 	// Defines CDN web application firewall policy properties.
 	Properties any
 	// Standard_Verizon = The SKU name for a Standard Verizon CDN profile. Premium_Verizon = The SKU name for a Premium Verizon CDN profile. Custom_Verizon = The SKU name for a Custom Verizon CDN profile. Standard_Akamai = The SKU name for an Akamai CDN profile. Standard_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using GB based billing model. Standard_Microsoft = The SKU name for a Standard Microsoft CDN profile. Standard_AzureFrontDoor = The SKU name for an Azure Front Door Standard profile. Premium_AzureFrontDoor = The SKU name for an Azure Front Door Premium profile. Standard_955BandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using 95-5 peak bandwidth billing model. Standard_AvgBandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using monthly average peak bandwidth billing model. StandardPlus_ChinaCdn = The SKU name for a China CDN profile for live-streaming using GB based billing model. StandardPlus_955BandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using 95-5 peak bandwidth billing model. StandardPlus_AvgBandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using monthly average peak bandwidth billing model.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiCdnWebApplicationFirewallPolicy = ubx.ResourceBinding{
 	WireType: "azure_cdn_openapi_cdn_web_application_firewall_policy",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Etag":     ubx.FieldSpec{WireName: "etag"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -254,5 +263,6 @@ var OpenapiCdnWebApplicationFirewallPolicy = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiCdnWebApplicationFirewallPolicy_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

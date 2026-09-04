@@ -57,10 +57,14 @@ const Cluster_SkuFields: FieldMap = {
 export interface ClusterConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: Cluster_Identity | Computed<Cluster_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of Redis Enterprise clusters for create operations */
   properties?: Cluster_Properties | Computed<Cluster_Properties>;
   /** SKU parameters supplied to the create Redis Enterprise cluster operation. */
   sku: Cluster_Sku | Computed<Cluster_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The Availability Zones where this cluster will be deployed. */
   zones?: string[] | Computed<string[]>;
 }
@@ -70,10 +74,14 @@ export interface ClusterAttrs {
   identity: Cluster_Identity;
   /** Distinguishes the kind of cluster. Read-only. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of Redis Enterprise clusters for create operations */
   properties: Cluster_Properties;
   /** SKU parameters supplied to the create Redis Enterprise cluster operation. */
   sku: Cluster_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The Availability Zones where this cluster will be deployed. */
   zones: string[];
 }
@@ -86,6 +94,7 @@ export const Cluster: ResourceBinding<ClusterConfig, ClusterAttrs> = {
       kind: "object",
       fields: Cluster_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -96,6 +105,7 @@ export const Cluster: ResourceBinding<ClusterConfig, ClusterAttrs> = {
       kind: "object",
       fields: Cluster_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

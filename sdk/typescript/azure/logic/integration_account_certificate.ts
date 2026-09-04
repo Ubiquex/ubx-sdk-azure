@@ -61,22 +61,38 @@ const IntegrationAccountCertificate_PropertiesFields: FieldMap = {
 };
 
 export interface IntegrationAccountCertificateConfig {
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** The integration account certificate properties. */
   properties: IntegrationAccountCertificate_Properties | Computed<IntegrationAccountCertificate_Properties>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface IntegrationAccountCertificateAttrs {
+  /** The resource id. */
+  id: string;
+  /** The resource location. */
+  location: string;
+  /** Gets the resource name. */
+  name: string;
   /** The integration account certificate properties. */
   properties: IntegrationAccountCertificate_Properties;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** Gets the resource type. */
+  type: string;
 }
 
 export const IntegrationAccountCertificate: ResourceBinding<IntegrationAccountCertificateConfig, IntegrationAccountCertificateAttrs> = {
   wireType: "azure_logic_integration_account_certificate",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: IntegrationAccountCertificate_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -16,6 +16,8 @@ export interface AzureBackupRecoveryPointResourceConfig {
 
 export interface AzureBackupRecoveryPointResourceAttrs {
   backupInstanceName: string;
+  /** The uri to fetch the next page of resources. Call ListNext() fetches next page of resources. */
+  nextLink: string;
   /** List of resources. */
   value: AzureBackupRecoveryPointResource_Value[];
   vaultName: string;

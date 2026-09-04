@@ -47,6 +47,21 @@ class OpenapiBalance_Properties:
     utilized: Any = None
 
 @dataclasses.dataclass
+class OpenapiBalance_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
 class OpenapiBalanceConfig:
     billing_account_id: Any = None
     billing_period_name: Any = None
@@ -57,10 +72,18 @@ class OpenapiBalanceAttrs:
     billing_period_name: Any = None
     # The etag for the resource.
     etag: Any = None
+    # Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     # The properties of the balance.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
     # Resource tags.
     tags: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 OpenapiBalance = ubx.DataSourceBinding(
     wire_type="azure_consumption_openapi_balance",

@@ -108,10 +108,18 @@ type NetworkmanagerConnectivityConfigurationConfig struct {
 }
 
 type NetworkmanagerConnectivityConfigurationAttrs struct {
+	// A unique read-only string that changes whenever the resource is updated.
+	Etag any
+	// Resource ID.
+	Id any
+	// Resource name.
+	Name any
 	// Properties of network manager connectivity configuration
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Resource type.
+	Type any
 }
 
 var NetworkmanagerConnectivityConfiguration = ubx.ResourceBinding{

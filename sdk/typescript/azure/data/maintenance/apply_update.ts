@@ -10,6 +10,21 @@ export interface ApplyUpdate_Properties {
   status?: string | Computed<string>;
 }
 
+export interface ApplyUpdate_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 export interface ApplyUpdateConfig {
   apiVersion: string | Computed<string>;
   applyUpdateName: string | Computed<string>;
@@ -23,6 +38,10 @@ export interface ApplyUpdateConfig {
 export interface ApplyUpdateAttrs {
   apiVersion: string;
   applyUpdateName: string;
+  /** Fully qualified identifier of the resource */
+  id: string;
+  /** Name of the resource */
+  name: string;
   /** Properties for apply update */
   properties: ApplyUpdate_Properties;
   providerName: string;
@@ -30,6 +49,10 @@ export interface ApplyUpdateAttrs {
   resourceName: string;
   resourceType: string;
   subscriptionId: string;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: ApplyUpdate_SystemData;
+  /** Type of the resource */
+  type: string;
 }
 
 export const ApplyUpdate: DataSourceBinding<ApplyUpdateConfig, ApplyUpdateAttrs> = {

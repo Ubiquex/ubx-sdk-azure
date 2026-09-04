@@ -186,22 +186,32 @@ const Profile_PropertiesFields: FieldMap = {
 };
 
 export interface ProfileConfig {
+  /** The Azure Region where the resource lives */
+  location?: string | Computed<string>;
   /** Class representing the Traffic Manager profile properties. */
   properties?: Profile_Properties | Computed<Profile_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ProfileAttrs {
+  /** The Azure Region where the resource lives */
+  location: string;
   /** Class representing the Traffic Manager profile properties. */
   properties: Profile_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Profile: ResourceBinding<ProfileConfig, ProfileAttrs> = {
   wireType: "azure_trafficmanager_profile",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Profile_PropertiesFields,
     },
+    tags: "tags",
   },
 };

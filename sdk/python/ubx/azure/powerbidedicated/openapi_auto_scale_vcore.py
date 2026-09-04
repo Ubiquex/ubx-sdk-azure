@@ -35,21 +35,30 @@ _OpenapiAutoScaleVcore_SkuFields = {
 
 @dataclasses.dataclass
 class OpenapiAutoScaleVcoreConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of an auto scale v-core resource.
     properties: Any = None
     # Represents the SKU name and Azure pricing tier for auto scale v-core resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiAutoScaleVcoreAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of an auto scale v-core resource.
     properties: Any = None
     # Represents the SKU name and Azure pricing tier for auto scale v-core resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiAutoScaleVcore = ubx.ResourceBinding(
     wire_type="azure_powerbidedicated_openapi_auto_scale_vcore",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -60,5 +69,6 @@ OpenapiAutoScaleVcore = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiAutoScaleVcore_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

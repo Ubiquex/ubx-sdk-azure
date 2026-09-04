@@ -536,21 +536,31 @@ export interface DbOpenapiDatabaseAccountGetResultsConfig {
   identity?: DbOpenapiDatabaseAccountGetResults_Identity | Computed<DbOpenapiDatabaseAccountGetResults_Identity>;
   /** Indicates the type of database account. This can only be set at database account creation. */
   kind?: string | Computed<string>;
+  /** The location of the resource group to which the resource belongs. */
+  location?: string | Computed<string>;
   /** Properties to create and update Azure Cosmos DB database accounts. */
   properties: DbOpenapiDatabaseAccountGetResults_Properties | Computed<DbOpenapiDatabaseAccountGetResults_Properties>;
+  /** Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with "defaultExperience": "Cassandra". Current "defaultExperience" values also include "Table", "Graph", "DocumentDB", and "MongoDB". */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface DbOpenapiDatabaseAccountGetResultsAttrs {
+  /** The unique resource identifier of the ARM resource. */
+  id: string;
   /** Identity for the resource. */
   identity: DbOpenapiDatabaseAccountGetResults_Identity;
   /** Indicates the type of database account. This can only be set at database account creation. */
   kind: string;
   /** The location of the resource group to which the resource belongs. */
   location: string;
+  /** The name of the ARM resource. */
+  name: string;
   /** Properties to create and update Azure Cosmos DB database accounts. */
   properties: DbOpenapiDatabaseAccountGetResults_Properties;
-  /** Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with \"defaultExperience\": \"Cassandra\". Current \"defaultExperience\" values also include \"Table\", \"Graph\", \"DocumentDB\", and \"MongoDB\". */
+  /** Tags are a list of key-value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters. For example, the default experience for a template type is set with "defaultExperience": "Cassandra". Current "defaultExperience" values also include "Table", "Graph", "DocumentDB", and "MongoDB". */
   tags: Record<string, string>;
+  /** The type of Azure resource. */
+  type: string;
 }
 
 export const DbOpenapiDatabaseAccountGetResults: ResourceBinding<DbOpenapiDatabaseAccountGetResultsConfig, DbOpenapiDatabaseAccountGetResultsAttrs> = {
@@ -562,10 +572,12 @@ export const DbOpenapiDatabaseAccountGetResults: ResourceBinding<DbOpenapiDataba
       fields: DbOpenapiDatabaseAccountGetResults_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: DbOpenapiDatabaseAccountGetResults_PropertiesFields,
     },
+    tags: "tags",
   },
 };

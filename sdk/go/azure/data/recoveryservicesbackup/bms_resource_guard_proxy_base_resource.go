@@ -27,6 +27,8 @@ type BmsResourceGuardProxyBaseResourceConfig struct {
 }
 
 type BmsResourceGuardProxyBaseResourceAttrs struct {
+	// The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
+	NextLink any
 	// List of resources.
 	Value     any
 	VaultName any

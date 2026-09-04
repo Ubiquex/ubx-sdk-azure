@@ -1701,10 +1701,14 @@ type ManagedclustersManagedClusterConfig struct {
 	Identity any
 	// This is primarily used to expose different UI experiences in the portal for different kinds
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the managed cluster.
 	Properties any
 	// The SKU of a Managed Cluster.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type ManagedclustersManagedClusterAttrs struct {
@@ -1716,10 +1720,14 @@ type ManagedclustersManagedClusterAttrs struct {
 	Identity any
 	// This is primarily used to expose different UI experiences in the portal for different kinds
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of the managed cluster.
 	Properties any
 	// The SKU of a Managed Cluster.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var ManagedclustersManagedCluster = ubx.ResourceBinding{
@@ -1735,7 +1743,8 @@ var ManagedclustersManagedCluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ManagedclustersManagedCluster_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -1746,5 +1755,6 @@ var ManagedclustersManagedCluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ManagedclustersManagedCluster_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

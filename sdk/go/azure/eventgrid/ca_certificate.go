@@ -45,10 +45,16 @@ type CaCertificateConfig struct {
 }
 
 type CaCertificateAttrs struct {
+	// Fully qualified identifier of the resource.
+	Id any
+	// Name of the resource.
+	Name any
 	// The properties of CA certificate.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Type of the resource.
+	Type any
 }
 
 var CaCertificate = ubx.ResourceBinding{

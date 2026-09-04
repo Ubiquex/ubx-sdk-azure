@@ -52,10 +52,18 @@ export interface NetworkmanagerCommitConfig {
 }
 
 export interface NetworkmanagerCommitAttrs {
+  /** A unique read-only string that changes whenever the resource is updated. */
+  etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource name. */
+  name: string;
   /** Properties of commit */
   properties: NetworkmanagerCommit_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: NetworkmanagerCommit_SystemData;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkmanagerCommit: ResourceBinding<NetworkmanagerCommitConfig, NetworkmanagerCommitAttrs> = {

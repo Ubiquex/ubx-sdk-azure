@@ -99,22 +99,32 @@ const ManageddatabasesManagedDatabase_PropertiesFields: FieldMap = {
 };
 
 export interface ManageddatabasesManagedDatabaseConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The managed database's properties. */
   properties?: ManageddatabasesManagedDatabase_Properties | Computed<ManageddatabasesManagedDatabase_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ManageddatabasesManagedDatabaseAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The managed database's properties. */
   properties: ManageddatabasesManagedDatabase_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ManageddatabasesManagedDatabase: ResourceBinding<ManageddatabasesManagedDatabaseConfig, ManageddatabasesManagedDatabaseAttrs> = {
   wireType: "azure_sql_manageddatabases_managed_database",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ManageddatabasesManagedDatabase_PropertiesFields,
     },
+    tags: "tags",
   },
 };

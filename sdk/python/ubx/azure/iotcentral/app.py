@@ -55,19 +55,33 @@ _App_SkuFields = {
 class AppConfig:
     # Managed service identity (either system assigned, or none)
     identity: Any = None
+    # The resource location.
+    location: Any = None
     # The properties of an IoT Central application.
     properties: Any = None
     # Information about the SKU of the IoT Central application.
     sku: Any = None
+    # The resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class AppAttrs:
+    # The ARM resource identifier.
+    id: Any = None
     # Managed service identity (either system assigned, or none)
     identity: Any = None
+    # The resource location.
+    location: Any = None
+    # The ARM resource name.
+    name: Any = None
     # The properties of an IoT Central application.
     properties: Any = None
     # Information about the SKU of the IoT Central application.
     sku: Any = None
+    # The resource tags.
+    tags: Any = None
+    # The resource type.
+    type: Any = None
 
 App = ubx.ResourceBinding(
     wire_type="azure_iotcentral_app",
@@ -77,6 +91,7 @@ App = ubx.ResourceBinding(
             kind="object",
             fields=_App_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -87,5 +102,6 @@ App = ubx.ResourceBinding(
             kind="object",
             fields=_App_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

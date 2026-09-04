@@ -587,22 +587,36 @@ class IotHubDescriptionConfig:
     # The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention.
     etag: Any = None
     identity: Any = None
+    # The resource location.
+    location: Any = None
     # The properties of an IoT hub.
     properties: Any = None
     # Information about the SKU of the IoT hub.
     sku: Any = None
+    # The resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class IotHubDescriptionAttrs:
     # The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention.
     etag: Any = None
+    # The resource identifier.
+    id: Any = None
     identity: Any = None
+    # The resource location.
+    location: Any = None
+    # The resource name.
+    name: Any = None
     # The properties of an IoT hub.
     properties: Any = None
     # Information about the SKU of the IoT hub.
     sku: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # The resource tags.
+    tags: Any = None
+    # The resource type.
+    type: Any = None
 
 IotHubDescription = ubx.ResourceBinding(
     wire_type="azure_iothub_iot_hub_description",
@@ -613,6 +627,7 @@ IotHubDescription = ubx.ResourceBinding(
             kind="object",
             fields=_IotHubDescription_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -623,5 +638,6 @@ IotHubDescription = ubx.ResourceBinding(
             kind="object",
             fields=_IotHubDescription_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

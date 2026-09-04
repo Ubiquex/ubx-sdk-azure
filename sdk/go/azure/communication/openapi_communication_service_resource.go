@@ -71,15 +71,23 @@ var OpenapiCommunicationServiceResource_PropertiesFields = ubx.FieldMap{
 type OpenapiCommunicationServiceResourceConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// A class that describes the properties of the CommunicationService.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiCommunicationServiceResourceAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// A class that describes the properties of the CommunicationService.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiCommunicationServiceResource = ubx.ResourceBinding{
@@ -90,10 +98,12 @@ var OpenapiCommunicationServiceResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiCommunicationServiceResource_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiCommunicationServiceResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -6,6 +6,8 @@ export interface NetworkgatewayConnectionSharedKeyConfig {
 }
 
 export interface NetworkgatewayConnectionSharedKeyAttrs {
+  /** Resource ID. */
+  id: string;
   /** The virtual network connection shared key value. */
   value: string;
   virtualNetworkGatewayConnectionName: string;

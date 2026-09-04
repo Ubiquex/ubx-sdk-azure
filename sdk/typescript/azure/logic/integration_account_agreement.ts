@@ -1280,22 +1280,38 @@ const IntegrationAccountAgreement_PropertiesFields: FieldMap = {
 };
 
 export interface IntegrationAccountAgreementConfig {
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** The integration account agreement properties. */
   properties: IntegrationAccountAgreement_Properties | Computed<IntegrationAccountAgreement_Properties>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface IntegrationAccountAgreementAttrs {
+  /** The resource id. */
+  id: string;
+  /** The resource location. */
+  location: string;
+  /** Gets the resource name. */
+  name: string;
   /** The integration account agreement properties. */
   properties: IntegrationAccountAgreement_Properties;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** Gets the resource type. */
+  type: string;
 }
 
 export const IntegrationAccountAgreement: ResourceBinding<IntegrationAccountAgreementConfig, IntegrationAccountAgreementAttrs> = {
   wireType: "azure_logic_integration_account_agreement",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: IntegrationAccountAgreement_PropertiesFields,
     },
+    tags: "tags",
   },
 };

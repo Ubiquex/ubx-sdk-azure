@@ -15,6 +15,21 @@ class SuppressionContract_Properties:
     # The duration for which the suppression is valid.
     ttl: Any = None
 
+@dataclasses.dataclass
+class SuppressionContract_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
 _SuppressionContract_PropertiesFields = {
     "expiration_time_stamp": ubx.FieldSpec(wire_name="expiration_time_stamp"),
     "suppression_id": ubx.FieldSpec(wire_name="suppression_id"),
@@ -25,15 +40,19 @@ _SuppressionContract_PropertiesFields = {
 class SuppressionContractConfig:
     # The properties of the suppression.
     properties: Any = None
-    # path parameter, not part of the API's own resource representation
-    name: Any = None
 
 @dataclasses.dataclass
 class SuppressionContractAttrs:
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     # The properties of the suppression.
     properties: Any = None
-    # path parameter, not part of the API's own resource representation
-    name: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 SuppressionContract = ubx.ResourceBinding(
     wire_type="azure_advisor_suppression_contract",
@@ -43,6 +62,5 @@ SuppressionContract = ubx.ResourceBinding(
             kind="object",
             fields=_SuppressionContract_PropertiesFields,
         ),
-        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

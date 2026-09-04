@@ -12283,8 +12283,14 @@ const VirtualnetworkNetworkInterface_PropertiesFields: FieldMap = {
 export interface VirtualnetworkNetworkInterfaceConfig {
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkNetworkInterface_ExtendedLocation | Computed<VirtualnetworkNetworkInterface_ExtendedLocation>;
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** NetworkInterface properties. */
   properties?: VirtualnetworkNetworkInterface_Properties | Computed<VirtualnetworkNetworkInterface_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkNetworkInterfaceAttrs {
@@ -12292,8 +12298,18 @@ export interface VirtualnetworkNetworkInterfaceAttrs {
   etag: string;
   /** ExtendedLocation complex type. */
   extendedLocation: VirtualnetworkNetworkInterface_ExtendedLocation;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** NetworkInterface properties. */
   properties: VirtualnetworkNetworkInterface_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkNetworkInterface: ResourceBinding<VirtualnetworkNetworkInterfaceConfig, VirtualnetworkNetworkInterfaceAttrs> = {
@@ -12304,10 +12320,13 @@ export const VirtualnetworkNetworkInterface: ResourceBinding<VirtualnetworkNetwo
       kind: "object",
       fields: VirtualnetworkNetworkInterface_ExtendedLocationFields,
     },
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkNetworkInterface_PropertiesFields,
     },
+    tags: "tags",
   },
 };

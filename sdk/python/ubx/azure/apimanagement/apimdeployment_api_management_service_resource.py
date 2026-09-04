@@ -87,6 +87,8 @@ class ApimdeploymentApiManagementServiceResourceConfig:
     properties: Any = None
     # API Management service resource SKU properties.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # A list of availability zones denoting where the resource needs to come from.
     zones: Any = None
 
@@ -94,16 +96,24 @@ class ApimdeploymentApiManagementServiceResourceConfig:
 class ApimdeploymentApiManagementServiceResourceAttrs:
     # ETag of the resource.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
     # Identity properties of the Api Management service resource.
     identity: Any = None
     # Resource location.
     location: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of an API Management service resource description.
     properties: Any = None
     # API Management service resource SKU properties.
     sku: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type for API Management resource is set to Microsoft.ApiManagement.
+    type: Any = None
     # A list of availability zones denoting where the resource needs to come from.
     zones: Any = None
 
@@ -126,6 +136,7 @@ ApimdeploymentApiManagementServiceResource = ubx.ResourceBinding(
             kind="object",
             fields=_ApimdeploymentApiManagementServiceResource_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

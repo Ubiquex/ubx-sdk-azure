@@ -25,22 +25,32 @@ var PlaywrightWorkspace_PropertiesFields = ubx.FieldMap{
 }
 
 type PlaywrightWorkspaceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Playwright workspace resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type PlaywrightWorkspaceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Playwright workspace resource properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var PlaywrightWorkspace = ubx.ResourceBinding{
 	WireType: "azure_loadtestservice_playwright_workspace",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   PlaywrightWorkspace_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -296,15 +296,29 @@ const Workflow_PropertiesFields: FieldMap = {
 export interface WorkflowConfig {
   /** Managed service identity properties. */
   identity?: Workflow_Identity | Computed<Workflow_Identity>;
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** The workflow properties. */
   properties?: Workflow_Properties | Computed<Workflow_Properties>;
+  /** The resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface WorkflowAttrs {
+  /** The resource id. */
+  id: string;
   /** Managed service identity properties. */
   identity: Workflow_Identity;
+  /** The resource location. */
+  location: string;
+  /** Gets the resource name. */
+  name: string;
   /** The workflow properties. */
   properties: Workflow_Properties;
+  /** The resource tags. */
+  tags: Record<string, string>;
+  /** Gets the resource type. */
+  type: string;
 }
 
 export const Workflow: ResourceBinding<WorkflowConfig, WorkflowAttrs> = {
@@ -315,10 +329,12 @@ export const Workflow: ResourceBinding<WorkflowConfig, WorkflowAttrs> = {
       kind: "object",
       fields: Workflow_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Workflow_PropertiesFields,
     },
+    tags: "tags",
   },
 };

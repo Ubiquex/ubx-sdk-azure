@@ -223,25 +223,34 @@ const OpenapiCdnWebApplicationFirewallPolicy_SkuFields: FieldMap = {
 export interface OpenapiCdnWebApplicationFirewallPolicyConfig {
   /** Gets a unique read-only string that changes whenever the resource is updated. */
   etag?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Defines CDN web application firewall policy properties. */
   properties?: OpenapiCdnWebApplicationFirewallPolicy_Properties | Computed<OpenapiCdnWebApplicationFirewallPolicy_Properties>;
   /** Standard_Verizon = The SKU name for a Standard Verizon CDN profile. Premium_Verizon = The SKU name for a Premium Verizon CDN profile. Custom_Verizon = The SKU name for a Custom Verizon CDN profile. Standard_Akamai = The SKU name for an Akamai CDN profile. Standard_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using GB based billing model. Standard_Microsoft = The SKU name for a Standard Microsoft CDN profile. Standard_AzureFrontDoor = The SKU name for an Azure Front Door Standard profile. Premium_AzureFrontDoor = The SKU name for an Azure Front Door Premium profile. Standard_955BandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using 95-5 peak bandwidth billing model. Standard_AvgBandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using monthly average peak bandwidth billing model. StandardPlus_ChinaCdn = The SKU name for a China CDN profile for live-streaming using GB based billing model. StandardPlus_955BandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using 95-5 peak bandwidth billing model. StandardPlus_AvgBandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using monthly average peak bandwidth billing model. */
   sku: OpenapiCdnWebApplicationFirewallPolicy_Sku | Computed<OpenapiCdnWebApplicationFirewallPolicy_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiCdnWebApplicationFirewallPolicyAttrs {
   /** Gets a unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Defines CDN web application firewall policy properties. */
   properties: OpenapiCdnWebApplicationFirewallPolicy_Properties;
   /** Standard_Verizon = The SKU name for a Standard Verizon CDN profile. Premium_Verizon = The SKU name for a Premium Verizon CDN profile. Custom_Verizon = The SKU name for a Custom Verizon CDN profile. Standard_Akamai = The SKU name for an Akamai CDN profile. Standard_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using GB based billing model. Standard_Microsoft = The SKU name for a Standard Microsoft CDN profile. Standard_AzureFrontDoor = The SKU name for an Azure Front Door Standard profile. Premium_AzureFrontDoor = The SKU name for an Azure Front Door Premium profile. Standard_955BandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using 95-5 peak bandwidth billing model. Standard_AvgBandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using monthly average peak bandwidth billing model. StandardPlus_ChinaCdn = The SKU name for a China CDN profile for live-streaming using GB based billing model. StandardPlus_955BandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using 95-5 peak bandwidth billing model. StandardPlus_AvgBandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using monthly average peak bandwidth billing model. */
   sku: OpenapiCdnWebApplicationFirewallPolicy_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiCdnWebApplicationFirewallPolicy: ResourceBinding<OpenapiCdnWebApplicationFirewallPolicyConfig, OpenapiCdnWebApplicationFirewallPolicyAttrs> = {
   wireType: "azure_cdn_openapi_cdn_web_application_firewall_policy",
   fields: {
     etag: "etag",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -252,5 +261,6 @@ export const OpenapiCdnWebApplicationFirewallPolicy: ResourceBinding<OpenapiCdnW
       kind: "object",
       fields: OpenapiCdnWebApplicationFirewallPolicy_SkuFields,
     },
+    tags: "tags",
   },
 };

@@ -5450,6 +5450,8 @@ const LoadbalancerInboundNatRule_PropertiesFields: FieldMap = {
 };
 
 export interface LoadbalancerInboundNatRuleConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of the inbound NAT rule. */
   properties?: LoadbalancerInboundNatRule_Properties | Computed<LoadbalancerInboundNatRule_Properties>;
 }
@@ -5457,13 +5459,18 @@ export interface LoadbalancerInboundNatRuleConfig {
 export interface LoadbalancerInboundNatRuleAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the inbound NAT rule. */
   properties: LoadbalancerInboundNatRule_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const LoadbalancerInboundNatRule: ResourceBinding<LoadbalancerInboundNatRuleConfig, LoadbalancerInboundNatRuleAttrs> = {
   wireType: "azure_network_loadbalancer_inbound_nat_rule",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

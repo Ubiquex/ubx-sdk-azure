@@ -35,23 +35,33 @@ _PartnerRegistration_PropertiesFields = {
 
 @dataclasses.dataclass
 class PartnerRegistrationConfig:
+    # Location of the resource.
+    location: Any = None
     # Properties of the partner registration.
     properties: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 @dataclasses.dataclass
 class PartnerRegistrationAttrs:
+    # Location of the resource.
+    location: Any = None
     # Properties of the partner registration.
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Tags of the resource.
+    tags: Any = None
 
 PartnerRegistration = ubx.ResourceBinding(
     wire_type="azure_eventgrid_partner_registration",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_PartnerRegistration_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

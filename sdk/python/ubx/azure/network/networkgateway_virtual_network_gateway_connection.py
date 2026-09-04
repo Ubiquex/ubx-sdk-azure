@@ -1043,23 +1043,42 @@ _NetworkgatewayVirtualNetworkGatewayConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnectionConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # VirtualNetworkGatewayConnection properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class NetworkgatewayVirtualNetworkGatewayConnectionAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # VirtualNetworkGatewayConnection properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 NetworkgatewayVirtualNetworkGatewayConnection = ubx.ResourceBinding(
     wire_type="azure_network_networkgateway_virtual_network_gateway_connection",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_NetworkgatewayVirtualNetworkGatewayConnection_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -19,6 +19,21 @@ type TimeSeriesDatabaseConnection_Properties struct {
 	ProvisioningState any
 }
 
+type TimeSeriesDatabaseConnection_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var TimeSeriesDatabaseConnection_Properties_IdentityFields = ubx.FieldMap{
 	"Type":                 ubx.FieldSpec{WireName: "type"},
 	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
@@ -40,8 +55,16 @@ type TimeSeriesDatabaseConnectionConfig struct {
 }
 
 type TimeSeriesDatabaseConnectionAttrs struct {
+	// The resource identifier.
+	Id any
+	// Extension resource name.
+	Name any
 	// Properties of a time series database connection resource.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The resource type.
+	Type any
 }
 
 var TimeSeriesDatabaseConnection = ubx.ResourceBinding{

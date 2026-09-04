@@ -45,11 +45,15 @@ const HealthcareApisIotFhirDestination_PropertiesFields: FieldMap = {
 };
 
 export interface HealthcareApisIotFhirDestinationConfig {
+  /** The resource location. */
+  location?: string | Computed<string>;
   /** IoT Connector destination properties for an Azure FHIR service. */
   properties: HealthcareApisIotFhirDestination_Properties | Computed<HealthcareApisIotFhirDestination_Properties>;
 }
 
 export interface HealthcareApisIotFhirDestinationAttrs {
+  /** The resource location. */
+  location: string;
   /** IoT Connector destination properties for an Azure FHIR service. */
   properties: HealthcareApisIotFhirDestination_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
@@ -59,6 +63,7 @@ export interface HealthcareApisIotFhirDestinationAttrs {
 export const HealthcareApisIotFhirDestination: ResourceBinding<HealthcareApisIotFhirDestinationConfig, HealthcareApisIotFhirDestinationAttrs> = {
   wireType: "azure_healthcareapis_healthcare_apis_iot_fhir_destination",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

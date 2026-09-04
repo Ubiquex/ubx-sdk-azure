@@ -49,24 +49,43 @@ var VirtualnetworkVirtualRouter_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkVirtualRouterConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Virtual Router definition.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkVirtualRouterAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Virtual Router definition.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkVirtualRouter = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_virtual_router",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkVirtualRouter_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

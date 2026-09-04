@@ -15,6 +15,8 @@ export interface BaseBackupPolicyResourceConfig {
 }
 
 export interface BaseBackupPolicyResourceAttrs {
+  /** The uri to fetch the next page of resources. Call ListNext() fetches next page of resources. */
+  nextLink: string;
   /** List of resources. */
   value: BaseBackupPolicyResource_Value[];
   vaultName: string;

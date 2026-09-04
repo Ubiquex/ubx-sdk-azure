@@ -93,15 +93,23 @@ _Cloud_PropertiesFields = {
 class CloudConfig:
     # The extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class CloudAttrs:
     # The extended location.
     extended_location: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Cloud = ubx.ResourceBinding(
     wire_type="azure_scvmm_cloud",
@@ -111,10 +119,12 @@ Cloud = ubx.ResourceBinding(
             kind="object",
             fields=_Cloud_ExtendedLocationFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Cloud_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

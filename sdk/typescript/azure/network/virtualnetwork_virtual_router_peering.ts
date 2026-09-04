@@ -17,6 +17,8 @@ const VirtualnetworkVirtualRouterPeering_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkVirtualRouterPeeringConfig {
+  /** Name of the resource. */
+  name?: string | Computed<string>;
   /** Properties of the rule group. */
   properties?: VirtualnetworkVirtualRouterPeering_Properties | Computed<VirtualnetworkVirtualRouterPeering_Properties>;
 }
@@ -24,13 +26,18 @@ export interface VirtualnetworkVirtualRouterPeeringConfig {
 export interface VirtualnetworkVirtualRouterPeeringAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the rule group. */
   properties: VirtualnetworkVirtualRouterPeering_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkVirtualRouterPeering: ResourceBinding<VirtualnetworkVirtualRouterPeeringConfig, VirtualnetworkVirtualRouterPeeringAttrs> = {
   wireType: "azure_network_virtualnetwork_virtual_router_peering",
   fields: {
+    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",

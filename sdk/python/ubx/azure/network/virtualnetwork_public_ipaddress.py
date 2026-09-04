@@ -11963,10 +11963,16 @@ _VirtualnetworkPublicIpaddress_PropertiesFields = {
 class VirtualnetworkPublicIpaddressConfig:
     # ExtendedLocation complex type.
     extended_location: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Public IP address properties.
     properties: Any = None
     # SKU of a public IP address.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # A list of availability zones denoting the IP allocated for the resource needs to come from.
     zones: Any = None
 
@@ -11976,10 +11982,20 @@ class VirtualnetworkPublicIpaddressAttrs:
     etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Public IP address properties.
     properties: Any = None
     # SKU of a public IP address.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
     # A list of availability zones denoting the IP allocated for the resource needs to come from.
     zones: Any = None
 
@@ -11991,6 +12007,8 @@ VirtualnetworkPublicIpaddress = ubx.ResourceBinding(
             kind="object",
             fields=_VirtualnetworkPublicIpaddress_ExtendedLocationFields,
         ),
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -12001,6 +12019,7 @@ VirtualnetworkPublicIpaddress = ubx.ResourceBinding(
             kind="object",
             fields=_VirtualnetworkPublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

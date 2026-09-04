@@ -58,10 +58,18 @@ class NetworkmanagerCommitConfig:
 
 @dataclasses.dataclass
 class NetworkmanagerCommitAttrs:
+    # A unique read-only string that changes whenever the resource is updated.
+    etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource name.
+    name: Any = None
     # Properties of commit
     properties: Any = None
     # Metadata pertaining to creation and last modification of the resource.
     system_data: Any = None
+    # Resource type.
+    type: Any = None
 
 NetworkmanagerCommit = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_commit",

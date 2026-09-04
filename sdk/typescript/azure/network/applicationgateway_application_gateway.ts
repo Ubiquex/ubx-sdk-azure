@@ -9377,10 +9377,16 @@ const ApplicationgatewayApplicationGateway_PropertiesFields: FieldMap = {
 };
 
 export interface ApplicationgatewayApplicationGatewayConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: ApplicationgatewayApplicationGateway_Identity | Computed<ApplicationgatewayApplicationGateway_Identity>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties of the application gateway. */
   properties?: ApplicationgatewayApplicationGateway_Properties | Computed<ApplicationgatewayApplicationGateway_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** A list of availability zones denoting where the resource needs to come from. */
   zones?: string[] | Computed<string[]>;
 }
@@ -9388,10 +9394,20 @@ export interface ApplicationgatewayApplicationGatewayConfig {
 export interface ApplicationgatewayApplicationGatewayAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** Identity for the resource. */
   identity: ApplicationgatewayApplicationGateway_Identity;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of the application gateway. */
   properties: ApplicationgatewayApplicationGateway_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
   /** A list of availability zones denoting where the resource needs to come from. */
   zones: string[];
 }
@@ -9399,16 +9415,19 @@ export interface ApplicationgatewayApplicationGatewayAttrs {
 export const ApplicationgatewayApplicationGateway: ResourceBinding<ApplicationgatewayApplicationGatewayConfig, ApplicationgatewayApplicationGatewayAttrs> = {
   wireType: "azure_network_applicationgateway_application_gateway",
   fields: {
+    id: "id",
     identity: {
       wireName: "identity",
       kind: "object",
       fields: ApplicationgatewayApplicationGateway_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ApplicationgatewayApplicationGateway_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

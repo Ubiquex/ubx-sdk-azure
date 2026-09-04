@@ -130,21 +130,31 @@ _MachineExtension_PropertiesFields = {
 
 @dataclasses.dataclass
 class MachineExtensionConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a Virtual Machine Extension.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class MachineExtensionAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the properties of a Virtual Machine Extension.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 MachineExtension = ubx.ResourceBinding(
     wire_type="azure_virtual_machine_extension",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_MachineExtension_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

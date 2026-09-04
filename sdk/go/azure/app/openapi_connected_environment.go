@@ -92,15 +92,23 @@ var OpenapiConnectedEnvironment_PropertiesFields = ubx.FieldMap{
 type OpenapiConnectedEnvironmentConfig struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// ConnectedEnvironment resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiConnectedEnvironmentAttrs struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// ConnectedEnvironment resource specific properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiConnectedEnvironment = ubx.ResourceBinding{
@@ -111,10 +119,12 @@ var OpenapiConnectedEnvironment = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiConnectedEnvironment_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiConnectedEnvironment_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

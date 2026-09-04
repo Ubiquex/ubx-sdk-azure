@@ -13,18 +13,22 @@ export interface OpenapiSitePhpErrorLogFlag_Properties {
 }
 
 export interface OpenapiSitePhpErrorLogFlagConfig {
-  name: string | Computed<string>;
 }
 
 export interface OpenapiSitePhpErrorLogFlagAttrs {
+  /** Resource Id. */
+  id: string;
+  /** Kind of resource. */
+  kind: string;
   name: string;
   /** SitePhpErrorLogFlag resource specific properties */
   properties: OpenapiSitePhpErrorLogFlag_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const OpenapiSitePhpErrorLogFlag: DataSourceBinding<OpenapiSitePhpErrorLogFlagConfig, OpenapiSitePhpErrorLogFlagAttrs> = {
   wireType: "azure_web_openapi_site_php_error_log_flag",
   fields: {
-    name: "name",
   },
 };

@@ -50,20 +50,24 @@ export interface OpenapiCustomHostnameAnalysisResult_Properties {
 
 export interface OpenapiCustomHostnameAnalysisResultConfig {
   hostName?: string | Computed<string>;
-  name: string | Computed<string>;
 }
 
 export interface OpenapiCustomHostnameAnalysisResultAttrs {
   hostName: string;
+  /** Resource Id. */
+  id: string;
+  /** Kind of resource. */
+  kind: string;
   name: string;
   /** CustomHostnameAnalysisResult resource specific properties */
   properties: OpenapiCustomHostnameAnalysisResult_Properties;
+  /** Resource type. */
+  type: string;
 }
 
 export const OpenapiCustomHostnameAnalysisResult: DataSourceBinding<OpenapiCustomHostnameAnalysisResultConfig, OpenapiCustomHostnameAnalysisResultAttrs> = {
   wireType: "azure_web_openapi_custom_hostname_analysis_result",
   fields: {
     hostName: "host_name",
-    name: "name",
   },
 };

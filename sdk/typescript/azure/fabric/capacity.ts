@@ -42,22 +42,31 @@ const Capacity_SkuFields: FieldMap = {
 };
 
 export interface CapacityConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The Microsoft Fabric capacity properties. */
   properties: Capacity_Properties | Computed<Capacity_Properties>;
   /** Represents the SKU name and Azure pricing tier for Microsoft Fabric capacity resource. */
   sku: Capacity_Sku | Computed<Capacity_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface CapacityAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The Microsoft Fabric capacity properties. */
   properties: Capacity_Properties;
   /** Represents the SKU name and Azure pricing tier for Microsoft Fabric capacity resource. */
   sku: Capacity_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Capacity: ResourceBinding<CapacityConfig, CapacityAttrs> = {
   wireType: "azure_fabric_capacity",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -68,5 +77,6 @@ export const Capacity: ResourceBinding<CapacityConfig, CapacityAttrs> = {
       kind: "object",
       fields: Capacity_SkuFields,
     },
+    tags: "tags",
   },
 };

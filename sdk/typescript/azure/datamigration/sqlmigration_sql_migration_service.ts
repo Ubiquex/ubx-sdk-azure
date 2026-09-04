@@ -14,22 +14,32 @@ const SqlmigrationSqlMigrationService_PropertiesFields: FieldMap = {
 };
 
 export interface SqlmigrationSqlMigrationServiceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** The SQL Migration Service properties. */
   properties?: SqlmigrationSqlMigrationService_Properties | Computed<SqlmigrationSqlMigrationService_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface SqlmigrationSqlMigrationServiceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** The SQL Migration Service properties. */
   properties: SqlmigrationSqlMigrationService_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const SqlmigrationSqlMigrationService: ResourceBinding<SqlmigrationSqlMigrationServiceConfig, SqlmigrationSqlMigrationServiceAttrs> = {
   wireType: "azure_datamigration_sqlmigration_sql_migration_service",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: SqlmigrationSqlMigrationService_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -135,8 +135,12 @@ class OpenapiPackageConfig:
 class OpenapiPackageAttrs:
     # The resource model definition for an Azure Resource Manager tracked top level resource which has 'tags' and a 'location'
     all_of: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The parameters supplied to the create or update package properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiPackage = ubx.ResourceBinding(
     wire_type="azure_automation_openapi_package",

@@ -81,15 +81,23 @@ var OpenapiNetworkAnchor_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiNetworkAnchorConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Network Anchor properties
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
 
 type OpenapiNetworkAnchorAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Network Anchor properties
 	Properties any
+	// Resource tags.
+	Tags any
 	// The availability zones.
 	Zones any
 }
@@ -97,11 +105,13 @@ type OpenapiNetworkAnchorAttrs struct {
 var OpenapiNetworkAnchor = ubx.ResourceBinding{
 	WireType: "azure_oracle_openapi_network_anchor",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiNetworkAnchor_PropertiesFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

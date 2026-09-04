@@ -110,24 +110,43 @@ const NetworkgatewayLocalNetworkGateway_PropertiesFields: FieldMap = {
 };
 
 export interface NetworkgatewayLocalNetworkGatewayConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** LocalNetworkGateway properties. */
   properties: NetworkgatewayLocalNetworkGateway_Properties | Computed<NetworkgatewayLocalNetworkGateway_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NetworkgatewayLocalNetworkGatewayAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** LocalNetworkGateway properties. */
   properties: NetworkgatewayLocalNetworkGateway_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const NetworkgatewayLocalNetworkGateway: ResourceBinding<NetworkgatewayLocalNetworkGatewayConfig, NetworkgatewayLocalNetworkGatewayAttrs> = {
   wireType: "azure_network_networkgateway_local_network_gateway",
   fields: {
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetworkgatewayLocalNetworkGateway_PropertiesFields,
     },
+    tags: "tags",
   },
 };

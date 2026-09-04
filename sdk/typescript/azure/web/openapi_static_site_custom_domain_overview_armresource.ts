@@ -25,29 +25,33 @@ const OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields: FieldMa
 };
 
 export interface OpenapiStaticSiteCustomDomainOverviewArmresourceConfig {
+  /** Kind of resource. */
+  kind?: string | Computed<string>;
   /** StaticSiteCustomDomainRequestPropertiesARMResource resource specific properties */
   properties?: OpenapiStaticSiteCustomDomainOverviewArmresource_Properties | Computed<OpenapiStaticSiteCustomDomainOverviewArmresource_Properties>;
-  /** path parameter, not part of the API's own resource representation */
-  name: string | Computed<string>;
 }
 
 export interface OpenapiStaticSiteCustomDomainOverviewArmresourceAttrs {
+  /** Resource Id. */
+  id: string;
   /** Kind of resource. */
   kind: string;
+  /** Resource Name. */
+  name: string;
   /** StaticSiteCustomDomainRequestPropertiesARMResource resource specific properties */
   properties: OpenapiStaticSiteCustomDomainOverviewArmresource_Properties;
-  /** path parameter, not part of the API's own resource representation */
-  name: string;
+  /** Resource type. */
+  type: string;
 }
 
 export const OpenapiStaticSiteCustomDomainOverviewArmresource: ResourceBinding<OpenapiStaticSiteCustomDomainOverviewArmresourceConfig, OpenapiStaticSiteCustomDomainOverviewArmresourceAttrs> = {
   wireType: "azure_web_openapi_static_site_custom_domain_overview_armresource",
   fields: {
+    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields,
     },
-    name: "name",
   },
 };

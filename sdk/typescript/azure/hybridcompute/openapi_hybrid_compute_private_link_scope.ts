@@ -101,22 +101,32 @@ const OpenapiHybridComputePrivateLinkScope_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiHybridComputePrivateLinkScopeConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties that define a Azure Arc PrivateLinkScope resource. */
   properties?: OpenapiHybridComputePrivateLinkScope_Properties | Computed<OpenapiHybridComputePrivateLinkScope_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiHybridComputePrivateLinkScopeAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties that define a Azure Arc PrivateLinkScope resource. */
   properties: OpenapiHybridComputePrivateLinkScope_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiHybridComputePrivateLinkScope: ResourceBinding<OpenapiHybridComputePrivateLinkScopeConfig, OpenapiHybridComputePrivateLinkScopeAttrs> = {
   wireType: "azure_hybridcompute_openapi_hybrid_compute_private_link_scope",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiHybridComputePrivateLinkScope_PropertiesFields,
     },
+    tags: "tags",
   },
 };

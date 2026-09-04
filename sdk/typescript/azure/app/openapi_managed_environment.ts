@@ -369,8 +369,12 @@ export interface OpenapiManagedEnvironmentConfig {
   identity?: OpenapiManagedEnvironment_Identity | Computed<OpenapiManagedEnvironment_Identity>;
   /** Kind of the Environment. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Managed environment resource specific properties */
   properties?: OpenapiManagedEnvironment_Properties | Computed<OpenapiManagedEnvironment_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiManagedEnvironmentAttrs {
@@ -378,8 +382,12 @@ export interface OpenapiManagedEnvironmentAttrs {
   identity: OpenapiManagedEnvironment_Identity;
   /** Kind of the Environment. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Managed environment resource specific properties */
   properties: OpenapiManagedEnvironment_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiManagedEnvironment: ResourceBinding<OpenapiManagedEnvironmentConfig, OpenapiManagedEnvironmentAttrs> = {
@@ -391,10 +399,12 @@ export const OpenapiManagedEnvironment: ResourceBinding<OpenapiManagedEnvironmen
       fields: OpenapiManagedEnvironment_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiManagedEnvironment_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -177,15 +177,23 @@ var GalleryimagesGalleryImages_PropertiesFields = ubx.FieldMap{
 type GalleryimagesGalleryImagesConfig struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the gallery image resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type GalleryimagesGalleryImagesAttrs struct {
 	// The complex type of the extended location.
 	ExtendedLocation any
+	// The geo-location where the resource lives
+	Location any
 	// Properties under the gallery image resource
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var GalleryimagesGalleryImages = ubx.ResourceBinding{
@@ -196,10 +204,12 @@ var GalleryimagesGalleryImages = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   GalleryimagesGalleryImages_ExtendedLocationFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   GalleryimagesGalleryImages_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -55,6 +55,8 @@ var FirewallpolicyFirewallPolicyKubeSelectorGroup_PropertiesFields = ubx.FieldMa
 }
 
 type FirewallpolicyFirewallPolicyKubeSelectorGroupConfig struct {
+	// Name of the resource.
+	Name any
 	// Properties of the Kubernetes Selector Group.
 	Properties any
 }
@@ -62,13 +64,18 @@ type FirewallpolicyFirewallPolicyKubeSelectorGroupConfig struct {
 type FirewallpolicyFirewallPolicyKubeSelectorGroupAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Properties of the Kubernetes Selector Group.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var FirewallpolicyFirewallPolicyKubeSelectorGroup = ubx.ResourceBinding{
 	WireType: "azure_network_firewallpolicy_firewall_policy_kube_selector_group",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

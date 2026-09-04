@@ -354,10 +354,14 @@ export interface OpenapiAppServicePlanConfig {
   identity?: OpenapiAppServicePlan_Identity | Computed<OpenapiAppServicePlan_Identity>;
   /** Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** AppServicePlan resource specific properties */
   properties?: OpenapiAppServicePlan_Properties | Computed<OpenapiAppServicePlan_Properties>;
   /** Description of a SKU for a scalable resource. */
   sku?: OpenapiAppServicePlan_Sku | Computed<OpenapiAppServicePlan_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   name: string | Computed<string>;
 }
@@ -369,10 +373,14 @@ export interface OpenapiAppServicePlanAttrs {
   identity: OpenapiAppServicePlan_Identity;
   /** Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** AppServicePlan resource specific properties */
   properties: OpenapiAppServicePlan_Properties;
   /** Description of a SKU for a scalable resource. */
   sku: OpenapiAppServicePlan_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** path parameter, not part of the API's own resource representation */
   name: string;
 }
@@ -391,6 +399,7 @@ export const OpenapiAppServicePlan: ResourceBinding<OpenapiAppServicePlanConfig,
       fields: OpenapiAppServicePlan_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -401,6 +410,7 @@ export const OpenapiAppServicePlan: ResourceBinding<OpenapiAppServicePlanConfig,
       kind: "object",
       fields: OpenapiAppServicePlan_SkuFields,
     },
+    tags: "tags",
     name: "name",
   },
 };

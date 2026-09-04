@@ -156,19 +156,27 @@ const Reservation_SkuFields: FieldMap = {
 };
 
 export interface ReservationConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the Capacity reservation. */
   properties?: Reservation_Properties | Computed<Reservation_Properties>;
   /** Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. */
   sku: Reservation_Sku | Computed<Reservation_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ReservationAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the Capacity reservation. */
   properties: Reservation_Properties;
   /** Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. */
   sku: Reservation_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -176,6 +184,7 @@ export interface ReservationAttrs {
 export const Reservation: ResourceBinding<ReservationConfig, ReservationAttrs> = {
   wireType: "azure_capacity_reservation",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -186,6 +195,7 @@ export const Reservation: ResourceBinding<ReservationConfig, ReservationAttrs> =
       kind: "object",
       fields: Reservation_SkuFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

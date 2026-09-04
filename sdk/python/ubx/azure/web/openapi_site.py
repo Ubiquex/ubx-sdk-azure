@@ -1379,8 +1379,12 @@ class OpenapiSiteConfig:
     identity: Any = None
     # Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Site resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
@@ -1392,8 +1396,12 @@ class OpenapiSiteAttrs:
     identity: Any = None
     # Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Site resource specific properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # path parameter, not part of the API's own resource representation
     name: Any = None
 
@@ -1411,11 +1419,13 @@ OpenapiSite = ubx.ResourceBinding(
             fields=_OpenapiSite_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiSite_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

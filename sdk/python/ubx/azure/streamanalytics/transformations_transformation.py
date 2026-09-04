@@ -26,17 +26,26 @@ _TransformationsTransformation_PropertiesFields = {
 
 @dataclasses.dataclass
 class TransformationsTransformationConfig:
+    # Resource name
+    name: Any = None
     # The properties that are associated with a transformation.
     properties: Any = None
 
 @dataclasses.dataclass
 class TransformationsTransformationAttrs:
+    # Resource Id
+    id: Any = None
+    # Resource name
+    name: Any = None
     # The properties that are associated with a transformation.
     properties: Any = None
+    # Resource type
+    type: Any = None
 
 TransformationsTransformation = ubx.ResourceBinding(
     wire_type="azure_streamanalytics_transformations_transformation",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

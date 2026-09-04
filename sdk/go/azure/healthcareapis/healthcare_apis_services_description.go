@@ -3,6 +3,15 @@ package healthcareapis
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type HealthcareApisServicesDescription_Identity struct {
+	// The principal ID of the resource identity.
+	PrincipalId any
+	// The tenant ID of the resource.
+	TenantId any
+	// Type of identity being specified, currently SystemAssigned and None are allowed.
+	Type any
+}
+
 type HealthcareApisServicesDescription_Properties_AccessPolicies struct {
 	ObjectId any
 }
@@ -121,6 +130,12 @@ type HealthcareApisServicesDescription_SystemData struct {
 	LastModifiedBy any
 	// The type of identity that last modified the resource.
 	LastModifiedByType any
+}
+
+var HealthcareApisServicesDescription_IdentityFields = ubx.FieldMap{
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
 }
 
 var HealthcareApisServicesDescription_Properties_AccessPoliciesFields = ubx.FieldMap{
@@ -250,24 +265,59 @@ var HealthcareApisServicesDescription_PropertiesFields = ubx.FieldMap{
 }
 
 type HealthcareApisServicesDescriptionConfig struct {
+	// An etag associated with the resource, used for optimistic concurrency when editing it.
+	Etag any
+	// Setting indicating whether the service has a managed identity associated with it.
+	Identity any
+	// The kind of the service.
+	Kind any
+	// The resource location.
+	Location any
 	// The properties of a service instance.
 	Properties any
+	// The resource tags.
+	Tags any
 }
 
 type HealthcareApisServicesDescriptionAttrs struct {
+	// An etag associated with the resource, used for optimistic concurrency when editing it.
+	Etag any
+	// The resource identifier.
+	Id any
+	// Setting indicating whether the service has a managed identity associated with it.
+	Identity any
+	// The kind of the service.
+	Kind any
+	// The resource location.
+	Location any
+	// The resource name.
+	Name any
 	// The properties of a service instance.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// The resource tags.
+	Tags any
+	// The resource type.
+	Type any
 }
 
 var HealthcareApisServicesDescription = ubx.ResourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_services_description",
 	Fields: ubx.FieldMap{
+		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Identity": ubx.FieldSpec{
+			WireName: "identity",
+			Kind:     "object",
+			Fields:   HealthcareApisServicesDescription_IdentityFields,
+		},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   HealthcareApisServicesDescription_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

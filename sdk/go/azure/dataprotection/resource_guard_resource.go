@@ -40,24 +40,34 @@ var ResourceGuardResource_PropertiesFields = ubx.FieldMap{
 
 type ResourceGuardResourceConfig struct {
 	// Optional ETag.
-	ETag       any
+	ETag any
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type ResourceGuardResourceAttrs struct {
 	// Optional ETag.
-	ETag       any
+	ETag any
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var ResourceGuardResource = ubx.ResourceBinding{
 	WireType: "azure_dataprotection_resource_guard_resource",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
+		"ETag":     ubx.FieldSpec{WireName: "e_tag"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ResourceGuardResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

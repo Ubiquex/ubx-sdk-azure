@@ -166,6 +166,8 @@ _VirtualnetworkVirtualNetworkPeering_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkVirtualNetworkPeeringConfig:
+    # Name of the resource.
+    name: Any = None
     # Properties of the virtual network peering.
     properties: Any = None
 
@@ -173,12 +175,17 @@ class VirtualnetworkVirtualNetworkPeeringConfig:
 class VirtualnetworkVirtualNetworkPeeringAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of the virtual network peering.
     properties: Any = None
+    # Resource type.
+    type: Any = None
 
 VirtualnetworkVirtualNetworkPeering = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_virtual_network_peering",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

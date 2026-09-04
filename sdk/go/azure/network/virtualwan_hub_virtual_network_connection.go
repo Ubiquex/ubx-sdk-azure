@@ -163,6 +163,8 @@ var VirtualwanHubVirtualNetworkConnection_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanHubVirtualNetworkConnectionConfig struct {
+	// Resource ID.
+	Id any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Parameters for HubVirtualNetworkConnection.
@@ -172,6 +174,8 @@ type VirtualwanHubVirtualNetworkConnectionConfig struct {
 type VirtualwanHubVirtualNetworkConnectionAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Parameters for HubVirtualNetworkConnection.
@@ -181,6 +185,7 @@ type VirtualwanHubVirtualNetworkConnectionAttrs struct {
 var VirtualwanHubVirtualNetworkConnection = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_hub_virtual_network_connection",
 	Fields: ubx.FieldMap{
+		"Id":   ubx.FieldSpec{WireName: "id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",

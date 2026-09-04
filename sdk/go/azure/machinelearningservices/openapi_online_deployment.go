@@ -217,20 +217,28 @@ type OpenapiOnlineDeploymentConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
-	Kind       any
+	Kind any
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiOnlineDeploymentAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
-	Kind       any
+	Kind any
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiOnlineDeployment = ubx.ResourceBinding{
@@ -241,7 +249,8 @@ var OpenapiOnlineDeployment = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiOnlineDeployment_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -252,5 +261,6 @@ var OpenapiOnlineDeployment = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiOnlineDeployment_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

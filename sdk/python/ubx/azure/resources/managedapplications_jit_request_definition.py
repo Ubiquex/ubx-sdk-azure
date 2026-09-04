@@ -93,21 +93,37 @@ _ManagedapplicationsJitRequestDefinition_PropertiesFields = {
 
 @dataclasses.dataclass
 class ManagedapplicationsJitRequestDefinitionConfig:
+    # Resource location
+    location: Any = None
     # Information about JIT request properties
     properties: Any = None
+    # Resource tags
+    tags: Any = None
 
 @dataclasses.dataclass
 class ManagedapplicationsJitRequestDefinitionAttrs:
+    # Resource ID
+    id: Any = None
+    # Resource location
+    location: Any = None
+    # Resource name
+    name: Any = None
     # Information about JIT request properties
     properties: Any = None
+    # Resource tags
+    tags: Any = None
+    # Resource type
+    type: Any = None
 
 ManagedapplicationsJitRequestDefinition = ubx.ResourceBinding(
     wire_type="azure_resources_managedapplications_jit_request_definition",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ManagedapplicationsJitRequestDefinition_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

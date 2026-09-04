@@ -131,8 +131,12 @@ type OpenapiPackageConfig struct {
 type OpenapiPackageAttrs struct {
 	// The resource model definition for an Azure Resource Manager tracked top level resource which has 'tags' and a 'location'
 	AllOf any
+	// The geo-location where the resource lives
+	Location any
 	// The parameters supplied to the create or update package properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiPackage = ubx.ResourceBinding{

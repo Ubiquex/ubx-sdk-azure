@@ -99,8 +99,14 @@ class VirtualwanRouteMapConfig:
 class VirtualwanRouteMapAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Name of the resource.
+    name: Any = None
     # Properties of RouteMap resource
     properties: Any = None
+    # Type of the resource.
+    type: Any = None
 
 VirtualwanRouteMap = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_route_map",

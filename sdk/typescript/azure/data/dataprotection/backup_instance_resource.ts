@@ -89,6 +89,8 @@ export interface BackupInstanceResourceConfig {
 }
 
 export interface BackupInstanceResourceAttrs {
+  /** The uri to fetch the next page of resources. Call ListNext() fetches next page of resources. */
+  nextLink: string;
   /** List of resources. */
   value: BackupInstanceResource_Value[];
   vaultName: string;

@@ -29,6 +29,15 @@ class KafkaConfiguration_Properties:
     # The event streaming service type
     event_streaming_type: Any = None
 
+@dataclasses.dataclass
+class KafkaConfiguration_SystemData:
+    created_at: Any = None
+    created_by: Any = None
+    created_by_type: Any = None
+    last_modified_at: Any = None
+    last_modified_by: Any = None
+    last_modified_by_type: Any = None
+
 _KafkaConfiguration_Properties_CredentialsFields = {
     "identity_id": ubx.FieldSpec(wire_name="identity_id"),
     "type": ubx.FieldSpec(wire_name="type"),
@@ -55,8 +64,16 @@ class KafkaConfigurationConfig:
 
 @dataclasses.dataclass
 class KafkaConfigurationAttrs:
+    # Gets or sets the identifier.
+    id: Any = None
+    # Gets or sets the name.
+    name: Any = None
     # The kafka configuration properties of the event streaming service attached to the Purview account for kafka notifications.
     properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Gets or sets the type.
+    type: Any = None
 
 KafkaConfiguration = ubx.ResourceBinding(
     wire_type="azure_purview_kafka_configuration",

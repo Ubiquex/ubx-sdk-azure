@@ -302,15 +302,29 @@ _Workflow_PropertiesFields = {
 class WorkflowConfig:
     # Managed service identity properties.
     identity: Any = None
+    # The resource location.
+    location: Any = None
     # The workflow properties.
     properties: Any = None
+    # The resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class WorkflowAttrs:
+    # The resource id.
+    id: Any = None
     # Managed service identity properties.
     identity: Any = None
+    # The resource location.
+    location: Any = None
+    # Gets the resource name.
+    name: Any = None
     # The workflow properties.
     properties: Any = None
+    # The resource tags.
+    tags: Any = None
+    # Gets the resource type.
+    type: Any = None
 
 Workflow = ubx.ResourceBinding(
     wire_type="azure_logic_workflow",
@@ -320,10 +334,12 @@ Workflow = ubx.ResourceBinding(
             kind="object",
             fields=_Workflow_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Workflow_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

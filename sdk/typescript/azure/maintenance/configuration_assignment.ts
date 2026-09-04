@@ -30,6 +30,21 @@ export interface ConfigurationAssignment_Properties {
   resourceId?: string | Computed<string>;
 }
 
+export interface ConfigurationAssignment_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const ConfigurationAssignment_Properties_Filter_TagSettingsFields: FieldMap = {
   filterOperator: "filter_operator",
   tags: "tags",
@@ -65,10 +80,18 @@ export interface ConfigurationAssignmentConfig {
 }
 
 export interface ConfigurationAssignmentAttrs {
+  /** Fully qualified identifier of the resource */
+  id: string;
   /** Location of the resource */
   location: string;
+  /** Name of the resource */
+  name: string;
   /** Properties for configuration assignment */
   properties: ConfigurationAssignment_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: ConfigurationAssignment_SystemData;
+  /** Type of the resource */
+  type: string;
 }
 
 export const ConfigurationAssignment: ResourceBinding<ConfigurationAssignmentConfig, ConfigurationAssignmentAttrs> = {

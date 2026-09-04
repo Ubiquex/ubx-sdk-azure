@@ -78,25 +78,41 @@ const ComponentsApplicationInsightsComponent_PropertiesFields: FieldMap = {
 export interface ComponentsApplicationInsightsComponentConfig {
   /** The kind of application that this component refers to, used to customize UI. This value is a freeform string, values should typically be one of the following: web, ios, other, store, java, phone. */
   kind: string | Computed<string>;
+  /** Resource location */
+  location: string | Computed<string>;
   /** Properties that define an Application Insights component resource. */
   properties?: ComponentsApplicationInsightsComponent_Properties | Computed<ComponentsApplicationInsightsComponent_Properties>;
+  /** Resource tags */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ComponentsApplicationInsightsComponentAttrs {
+  /** Azure resource Id */
+  id: string;
   /** The kind of application that this component refers to, used to customize UI. This value is a freeform string, values should typically be one of the following: web, ios, other, store, java, phone. */
   kind: string;
+  /** Resource location */
+  location: string;
+  /** Azure resource name */
+  name: string;
   /** Properties that define an Application Insights component resource. */
   properties: ComponentsApplicationInsightsComponent_Properties;
+  /** Resource tags */
+  tags: Record<string, string>;
+  /** Azure resource type */
+  type: string;
 }
 
 export const ComponentsApplicationInsightsComponent: ResourceBinding<ComponentsApplicationInsightsComponentConfig, ComponentsApplicationInsightsComponentAttrs> = {
   wireType: "azure_applicationinsights_components_application_insights_component",
   fields: {
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ComponentsApplicationInsightsComponent_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -355,10 +355,14 @@ class WebPubSubResourceConfig:
     identity: Any = None
     # The kind of the service
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # A class that describes the properties of the resource
     properties: Any = None
     # The billing information of the resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class WebPubSubResourceAttrs:
@@ -366,10 +370,14 @@ class WebPubSubResourceAttrs:
     identity: Any = None
     # The kind of the service
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # A class that describes the properties of the resource
     properties: Any = None
     # The billing information of the resource.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 WebPubSubResource = ubx.ResourceBinding(
     wire_type="azure_webpubsub_web_pub_sub_resource",
@@ -380,6 +388,7 @@ WebPubSubResource = ubx.ResourceBinding(
             fields=_WebPubSubResource_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -390,5 +399,6 @@ WebPubSubResource = ubx.ResourceBinding(
             kind="object",
             fields=_WebPubSubResource_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

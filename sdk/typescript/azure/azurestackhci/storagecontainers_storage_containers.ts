@@ -71,15 +71,23 @@ const StoragecontainersStorageContainers_PropertiesFields: FieldMap = {
 export interface StoragecontainersStorageContainersConfig {
   /** The complex type of the extended location. */
   extendedLocation?: StoragecontainersStorageContainers_ExtendedLocation | Computed<StoragecontainersStorageContainers_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties under the storage container resource */
   properties?: StoragecontainersStorageContainers_Properties | Computed<StoragecontainersStorageContainers_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface StoragecontainersStorageContainersAttrs {
   /** The complex type of the extended location. */
   extendedLocation: StoragecontainersStorageContainers_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties under the storage container resource */
   properties: StoragecontainersStorageContainers_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const StoragecontainersStorageContainers: ResourceBinding<StoragecontainersStorageContainersConfig, StoragecontainersStorageContainersAttrs> = {
@@ -90,10 +98,12 @@ export const StoragecontainersStorageContainers: ResourceBinding<Storagecontaine
       kind: "object",
       fields: StoragecontainersStorageContainers_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: StoragecontainersStorageContainers_PropertiesFields,
     },
+    tags: "tags",
   },
 };

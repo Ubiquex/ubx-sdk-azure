@@ -128,22 +128,31 @@ const Host_SkuFields: FieldMap = {
 };
 
 export interface HostConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the dedicated host. */
   properties?: Host_Properties | Computed<Host_Properties>;
   /** Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. */
   sku: Host_Sku | Computed<Host_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface HostAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the dedicated host. */
   properties: Host_Properties;
   /** Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. */
   sku: Host_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Host: ResourceBinding<HostConfig, HostAttrs> = {
   wireType: "azure_dedicated_host",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -154,5 +163,6 @@ export const Host: ResourceBinding<HostConfig, HostAttrs> = {
       kind: "object",
       fields: Host_SkuFields,
     },
+    tags: "tags",
   },
 };

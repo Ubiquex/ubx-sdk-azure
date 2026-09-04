@@ -71,17 +71,25 @@ var SystemTopic_PropertiesFields = ubx.FieldMap{
 type SystemTopicConfig struct {
 	// The identity information for the resource.
 	Identity any
+	// Location of the resource.
+	Location any
 	// Properties of the System Topic.
 	Properties any
+	// Tags of the resource.
+	Tags any
 }
 
 type SystemTopicAttrs struct {
 	// The identity information for the resource.
 	Identity any
+	// Location of the resource.
+	Location any
 	// Properties of the System Topic.
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
+	// Tags of the resource.
+	Tags any
 }
 
 var SystemTopic = ubx.ResourceBinding{
@@ -92,10 +100,12 @@ var SystemTopic = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   SystemTopic_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   SystemTopic_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

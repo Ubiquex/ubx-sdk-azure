@@ -392,33 +392,52 @@ const FirewallpolicyFirewallPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface FirewallpolicyFirewallPolicyConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: FirewallpolicyFirewallPolicy_Identity | Computed<FirewallpolicyFirewallPolicy_Identity>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Firewall Policy definition. */
   properties?: FirewallpolicyFirewallPolicy_Properties | Computed<FirewallpolicyFirewallPolicy_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface FirewallpolicyFirewallPolicyAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** Identity for the resource. */
   identity: FirewallpolicyFirewallPolicy_Identity;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Firewall Policy definition. */
   properties: FirewallpolicyFirewallPolicy_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const FirewallpolicyFirewallPolicy: ResourceBinding<FirewallpolicyFirewallPolicyConfig, FirewallpolicyFirewallPolicyAttrs> = {
   wireType: "azure_network_firewallpolicy_firewall_policy",
   fields: {
+    id: "id",
     identity: {
       wireName: "identity",
       kind: "object",
       fields: FirewallpolicyFirewallPolicy_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: FirewallpolicyFirewallPolicy_PropertiesFields,
     },
+    tags: "tags",
   },
 };

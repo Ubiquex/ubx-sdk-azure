@@ -91,19 +91,27 @@ _HealthBot_SkuFields = {
 class HealthBotConfig:
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a Azure Health Bot. The Health Bot Service is a cloud platform that empowers developers in Healthcare organizations to build and deploy their compliant, AI-powered virtual health assistants and health bots, that help them improve processes and reduce costs.
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class HealthBotAttrs:
     # Identity for the resource.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a Azure Health Bot. The Health Bot Service is a cloud platform that empowers developers in Healthcare organizations to build and deploy their compliant, AI-powered virtual health assistants and health bots, that help them improve processes and reduce costs.
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 HealthBot = ubx.ResourceBinding(
     wire_type="azure_healthbot_health_bot",
@@ -113,6 +121,7 @@ HealthBot = ubx.ResourceBinding(
             kind="object",
             fields=_HealthBot_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -123,5 +132,6 @@ HealthBot = ubx.ResourceBinding(
             kind="object",
             fields=_HealthBot_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

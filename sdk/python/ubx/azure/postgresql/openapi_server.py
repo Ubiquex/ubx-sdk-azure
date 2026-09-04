@@ -382,19 +382,27 @@ _OpenapiServer_SkuFields = {
 class OpenapiServerConfig:
     # Identities associated with a server.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a server.
     properties: Any = None
     # Compute information of a server.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiServerAttrs:
     # Identities associated with a server.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a server.
     properties: Any = None
     # Compute information of a server.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiServer = ubx.ResourceBinding(
     wire_type="azure_postgresql_openapi_server",
@@ -404,6 +412,7 @@ OpenapiServer = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiServer_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -414,5 +423,6 @@ OpenapiServer = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiServer_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

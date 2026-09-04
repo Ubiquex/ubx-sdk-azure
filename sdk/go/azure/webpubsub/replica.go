@@ -40,20 +40,29 @@ var Replica_SkuFields = ubx.FieldMap{
 }
 
 type ReplicaConfig struct {
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
 	// The billing information of the resource.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type ReplicaAttrs struct {
+	// The geo-location where the resource lives
+	Location   any
 	Properties any
 	// The billing information of the resource.
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var Replica = ubx.ResourceBinding{
 	WireType: "azure_webpubsub_replica",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -64,5 +73,6 @@ var Replica = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Replica_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

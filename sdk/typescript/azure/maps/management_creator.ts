@@ -29,24 +29,34 @@ const ManagementCreator_PropertiesFields: FieldMap = {
 };
 
 export interface ManagementCreatorConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Creator resource properties */
   properties: ManagementCreator_Properties | Computed<ManagementCreator_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ManagementCreatorAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Creator resource properties */
   properties: ManagementCreator_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: ManagementCreator_SystemData;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ManagementCreator: ResourceBinding<ManagementCreatorConfig, ManagementCreatorAttrs> = {
   wireType: "azure_maps_management_creator",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ManagementCreator_PropertiesFields,
     },
+    tags: "tags",
   },
 };

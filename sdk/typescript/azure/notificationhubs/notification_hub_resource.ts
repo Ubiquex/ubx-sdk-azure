@@ -363,22 +363,31 @@ const NotificationHubResource_SkuFields: FieldMap = {
 };
 
 export interface NotificationHubResourceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** NotificationHub properties. */
   properties?: NotificationHubResource_Properties | Computed<NotificationHubResource_Properties>;
   /** The Sku description for a namespace */
   sku?: NotificationHubResource_Sku | Computed<NotificationHubResource_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface NotificationHubResourceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** NotificationHub properties. */
   properties: NotificationHubResource_Properties;
   /** The Sku description for a namespace */
   sku: NotificationHubResource_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const NotificationHubResource: ResourceBinding<NotificationHubResourceConfig, NotificationHubResourceAttrs> = {
   wireType: "azure_notificationhubs_notification_hub_resource",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -389,5 +398,6 @@ export const NotificationHubResource: ResourceBinding<NotificationHubResourceCon
       kind: "object",
       fields: NotificationHubResource_SkuFields,
     },
+    tags: "tags",
   },
 };

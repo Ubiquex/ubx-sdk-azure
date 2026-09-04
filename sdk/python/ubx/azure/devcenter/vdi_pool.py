@@ -40,21 +40,31 @@ _VdiPool_PropertiesFields = {
 
 @dataclasses.dataclass
 class VdiPoolConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a Pool
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VdiPoolAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a Pool
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 VdiPool = ubx.ResourceBinding(
     wire_type="azure_devcenter_vdi_pool",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VdiPool_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

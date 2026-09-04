@@ -8243,10 +8243,16 @@ const LoadbalancerLoadBalancer_PropertiesFields: FieldMap = {
 export interface LoadbalancerLoadBalancerConfig {
   /** ExtendedLocation complex type. */
   extendedLocation?: LoadbalancerLoadBalancer_ExtendedLocation | Computed<LoadbalancerLoadBalancer_ExtendedLocation>;
+  /** Resource ID. */
+  id?: string | Computed<string>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Properties of the load balancer. */
   properties?: LoadbalancerLoadBalancer_Properties | Computed<LoadbalancerLoadBalancer_Properties>;
   /** SKU of a load balancer. */
   sku?: LoadbalancerLoadBalancer_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku | Computed<LoadbalancerLoadBalancer_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface LoadbalancerLoadBalancerAttrs {
@@ -8254,10 +8260,20 @@ export interface LoadbalancerLoadBalancerAttrs {
   etag: string;
   /** ExtendedLocation complex type. */
   extendedLocation: LoadbalancerLoadBalancer_ExtendedLocation;
+  /** Resource ID. */
+  id: string;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Properties of the load balancer. */
   properties: LoadbalancerLoadBalancer_Properties;
   /** SKU of a load balancer. */
   sku: LoadbalancerLoadBalancer_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const LoadbalancerLoadBalancer: ResourceBinding<LoadbalancerLoadBalancerConfig, LoadbalancerLoadBalancerAttrs> = {
@@ -8268,6 +8284,8 @@ export const LoadbalancerLoadBalancer: ResourceBinding<LoadbalancerLoadBalancerC
       kind: "object",
       fields: LoadbalancerLoadBalancer_ExtendedLocationFields,
     },
+    id: "id",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -8278,5 +8296,6 @@ export const LoadbalancerLoadBalancer: ResourceBinding<LoadbalancerLoadBalancerC
       kind: "object",
       fields: LoadbalancerLoadBalancer_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
     },
+    tags: "tags",
   },
 };

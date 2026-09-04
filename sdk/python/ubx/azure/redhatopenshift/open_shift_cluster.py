@@ -321,15 +321,23 @@ _OpenShiftCluster_PropertiesFields = {
 class OpenShiftClusterConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # OpenShiftClusterProperties represents an OpenShift cluster's properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenShiftClusterAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # OpenShiftClusterProperties represents an OpenShift cluster's properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenShiftCluster = ubx.ResourceBinding(
     wire_type="azure_redhatopenshift_open_shift_cluster",
@@ -339,10 +347,12 @@ OpenShiftCluster = ubx.ResourceBinding(
             kind="object",
             fields=_OpenShiftCluster_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenShiftCluster_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -12,22 +12,32 @@ var GrafanaManagedDashboard_PropertiesFields = ubx.FieldMap{
 }
 
 type GrafanaManagedDashboardConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the grafana resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type GrafanaManagedDashboardAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Properties specific to the grafana resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var GrafanaManagedDashboard = ubx.ResourceBinding{
 	WireType: "azure_dashboard_grafana_managed_dashboard",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   GrafanaManagedDashboard_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

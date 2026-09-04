@@ -338,33 +338,52 @@ const VirtualnetworkNetworkVirtualAppliance_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkNetworkVirtualApplianceConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: VirtualnetworkNetworkVirtualAppliance_Identity | Computed<VirtualnetworkNetworkVirtualAppliance_Identity>;
+  /** Resource location. */
+  location?: string | Computed<string>;
   /** Network Virtual Appliance definition. */
   properties?: VirtualnetworkNetworkVirtualAppliance_Properties | Computed<VirtualnetworkNetworkVirtualAppliance_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface VirtualnetworkNetworkVirtualApplianceAttrs {
   /** A unique read-only string that changes whenever the resource is updated. */
   etag: string;
+  /** Resource ID. */
+  id: string;
   /** Identity for the resource. */
   identity: VirtualnetworkNetworkVirtualAppliance_Identity;
+  /** Resource location. */
+  location: string;
+  /** Resource name. */
+  name: string;
   /** Network Virtual Appliance definition. */
   properties: VirtualnetworkNetworkVirtualAppliance_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
+  /** Resource type. */
+  type: string;
 }
 
 export const VirtualnetworkNetworkVirtualAppliance: ResourceBinding<VirtualnetworkNetworkVirtualApplianceConfig, VirtualnetworkNetworkVirtualApplianceAttrs> = {
   wireType: "azure_network_virtualnetwork_network_virtual_appliance",
   fields: {
+    id: "id",
     identity: {
       wireName: "identity",
       kind: "object",
       fields: VirtualnetworkNetworkVirtualAppliance_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: VirtualnetworkNetworkVirtualAppliance_PropertiesFields,
     },
+    tags: "tags",
   },
 };

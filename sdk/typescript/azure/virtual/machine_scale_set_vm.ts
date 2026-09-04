@@ -1767,12 +1767,16 @@ const MachineScaleSetVm_SkuFields: FieldMap = {
 export interface MachineScaleSetVmConfig {
   /** Identity for the virtual machine. */
   identity?: MachineScaleSetVm_Identity | Computed<MachineScaleSetVm_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use. In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**. */
   plan?: MachineScaleSetVm_Plan | Computed<MachineScaleSetVm_Plan>;
   /** Describes the properties of a virtual machine scale set virtual machine. */
   properties?: MachineScaleSetVm_Properties | Computed<MachineScaleSetVm_Properties>;
   /** Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. */
   sku?: MachineScaleSetVm_Sku | Computed<MachineScaleSetVm_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MachineScaleSetVmAttrs {
@@ -1782,6 +1786,8 @@ export interface MachineScaleSetVmAttrs {
   identity: MachineScaleSetVm_Identity;
   /** The virtual machine instance ID. */
   instanceId: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use. In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**. */
   plan: MachineScaleSetVm_Plan;
   /** Describes the properties of a virtual machine scale set virtual machine. */
@@ -1790,6 +1796,8 @@ export interface MachineScaleSetVmAttrs {
   resources: MachineScaleSetVm_Resources[];
   /** Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. */
   sku: MachineScaleSetVm_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The virtual machine zones. */
   zones: string[];
 }
@@ -1802,6 +1810,7 @@ export const MachineScaleSetVm: ResourceBinding<MachineScaleSetVmConfig, Machine
       kind: "object",
       fields: MachineScaleSetVm_IdentityFields,
     },
+    location: "location",
     plan: {
       wireName: "plan",
       kind: "object",
@@ -1817,5 +1826,6 @@ export const MachineScaleSetVm: ResourceBinding<MachineScaleSetVmConfig, Machine
       kind: "object",
       fields: MachineScaleSetVm_SkuFields,
     },
+    tags: "tags",
   },
 };

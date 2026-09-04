@@ -90,6 +90,8 @@ var VirtualnetworkSecurityRule_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkSecurityRuleConfig struct {
+	// Name of the resource.
+	Name any
 	// Security rule resource.
 	Properties any
 }
@@ -97,13 +99,18 @@ type VirtualnetworkSecurityRuleConfig struct {
 type VirtualnetworkSecurityRuleAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Security rule resource.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkSecurityRule = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_security_rule",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

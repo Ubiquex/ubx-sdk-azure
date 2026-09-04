@@ -30,11 +30,17 @@ export interface ExtensionTopicConfig {
 
 export interface ExtensionTopicAttrs {
   apiVersion: string;
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the Extension Topic */
   properties: ExtensionTopic_Properties;
   scope: string;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: ExtensionTopic_SystemData;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const ExtensionTopic: DataSourceBinding<ExtensionTopicConfig, ExtensionTopicAttrs> = {

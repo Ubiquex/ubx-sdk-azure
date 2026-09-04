@@ -72,15 +72,23 @@ const HostGroup_PropertiesFields: FieldMap = {
 };
 
 export interface HostGroupConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Dedicated Host Group Properties. */
   properties?: HostGroup_Properties | Computed<HostGroup_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface HostGroupAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** Dedicated Host Group Properties. */
   properties: HostGroup_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -88,11 +96,13 @@ export interface HostGroupAttrs {
 export const HostGroup: ResourceBinding<HostGroupConfig, HostGroupAttrs> = {
   wireType: "azure_dedicated_host_group",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: HostGroup_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

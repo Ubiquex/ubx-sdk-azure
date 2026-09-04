@@ -150,6 +150,8 @@ const VirtualwanNetworkVirtualApplianceConnection_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanNetworkVirtualApplianceConnectionConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** The name of the resource. */
   name?: string | Computed<string>;
   /** Properties of the NetworkVirtualApplianceConnection subresource. */
@@ -157,6 +159,8 @@ export interface VirtualwanNetworkVirtualApplianceConnectionConfig {
 }
 
 export interface VirtualwanNetworkVirtualApplianceConnectionAttrs {
+  /** Resource ID. */
+  id: string;
   /** The name of the resource. */
   name: string;
   /** Properties of the NetworkVirtualApplianceConnection subresource. */
@@ -166,6 +170,7 @@ export interface VirtualwanNetworkVirtualApplianceConnectionAttrs {
 export const VirtualwanNetworkVirtualApplianceConnection: ResourceBinding<VirtualwanNetworkVirtualApplianceConnectionConfig, VirtualwanNetworkVirtualApplianceConnectionAttrs> = {
   wireType: "azure_network_virtualwan_network_virtual_appliance_connection",
   fields: {
+    id: "id",
     name: "name",
     properties: {
       wireName: "properties",

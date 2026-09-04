@@ -57,8 +57,14 @@ export interface PrivateEndpointConnectionConfig {
 }
 
 export interface PrivateEndpointConnectionAttrs {
+  /** Fully qualified identifier of the resource. */
+  id: string;
+  /** Name of the resource. */
+  name: string;
   /** Properties of the private endpoint connection resource. */
   properties: PrivateEndpointConnection_Properties;
+  /** Type of the resource. */
+  type: string;
 }
 
 export const PrivateEndpointConnection: ResourceBinding<PrivateEndpointConnectionConfig, PrivateEndpointConnectionAttrs> = {

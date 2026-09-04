@@ -53,6 +53,8 @@ var VirtualwanVpnServerConfigurationPolicyGroup_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanVpnServerConfigurationPolicyGroupConfig struct {
+	// Name of the resource.
+	Name any
 	// Parameters for VpnServerConfigurationPolicyGroup.
 	Properties any
 }
@@ -60,13 +62,18 @@ type VirtualwanVpnServerConfigurationPolicyGroupConfig struct {
 type VirtualwanVpnServerConfigurationPolicyGroupAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Name of the resource.
+	Name any
 	// Parameters for VpnServerConfigurationPolicyGroup.
 	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualwanVpnServerConfigurationPolicyGroup = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_vpn_server_configuration_policy_group",
 	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",

@@ -92,10 +92,16 @@ _VirtualnetworkNatGateway_SkuFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkNatGatewayConfig:
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
     # Nat Gateway properties.
     properties: Any = None
     # SKU of nat gateway.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # A list of availability zones denoting the zone in which Nat Gateway should be deployed.
     zones: Any = None
 
@@ -103,16 +109,28 @@ class VirtualnetworkNatGatewayConfig:
 class VirtualnetworkNatGatewayAttrs:
     # A unique read-only string that changes whenever the resource is updated.
     etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
     # Nat Gateway properties.
     properties: Any = None
     # SKU of nat gateway.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
     # A list of availability zones denoting the zone in which Nat Gateway should be deployed.
     zones: Any = None
 
 VirtualnetworkNatGateway = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_nat_gateway",
     fields={
+        "id": ubx.FieldSpec(wire_name="id"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -123,6 +141,7 @@ VirtualnetworkNatGateway = ubx.ResourceBinding(
             kind="object",
             fields=_VirtualnetworkNatGateway_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

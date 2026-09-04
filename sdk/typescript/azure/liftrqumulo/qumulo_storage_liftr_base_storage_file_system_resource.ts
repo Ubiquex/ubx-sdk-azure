@@ -113,15 +113,23 @@ const QumuloStorageLiftrBaseStorageFileSystemResource_PropertiesFields: FieldMap
 export interface QumuloStorageLiftrBaseStorageFileSystemResourceConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: QumuloStorageLiftrBaseStorageFileSystemResource_Identity | Computed<QumuloStorageLiftrBaseStorageFileSystemResource_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties specific to the Qumulo File System resource */
   properties?: QumuloStorageLiftrBaseStorageFileSystemResource_Properties | Computed<QumuloStorageLiftrBaseStorageFileSystemResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface QumuloStorageLiftrBaseStorageFileSystemResourceAttrs {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity: QumuloStorageLiftrBaseStorageFileSystemResource_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties specific to the Qumulo File System resource */
   properties: QumuloStorageLiftrBaseStorageFileSystemResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const QumuloStorageLiftrBaseStorageFileSystemResource: ResourceBinding<QumuloStorageLiftrBaseStorageFileSystemResourceConfig, QumuloStorageLiftrBaseStorageFileSystemResourceAttrs> = {
@@ -132,10 +140,12 @@ export const QumuloStorageLiftrBaseStorageFileSystemResource: ResourceBinding<Qu
       kind: "object",
       fields: QumuloStorageLiftrBaseStorageFileSystemResource_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: QumuloStorageLiftrBaseStorageFileSystemResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

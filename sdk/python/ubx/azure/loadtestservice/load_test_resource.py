@@ -92,15 +92,23 @@ _LoadTestResource_PropertiesFields = {
 class LoadTestResourceConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # LoadTest resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class LoadTestResourceAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # LoadTest resource properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 LoadTestResource = ubx.ResourceBinding(
     wire_type="azure_loadtestservice_load_test_resource",
@@ -110,10 +118,12 @@ LoadTestResource = ubx.ResourceBinding(
             kind="object",
             fields=_LoadTestResource_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_LoadTestResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

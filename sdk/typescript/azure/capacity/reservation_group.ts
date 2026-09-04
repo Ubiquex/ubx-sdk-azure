@@ -86,15 +86,23 @@ const ReservationGroup_PropertiesFields: FieldMap = {
 };
 
 export interface ReservationGroupConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** capacity reservation group Properties. */
   properties?: ReservationGroup_Properties | Computed<ReservationGroup_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface ReservationGroupAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** capacity reservation group Properties. */
   properties: ReservationGroup_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -102,11 +110,13 @@ export interface ReservationGroupAttrs {
 export const ReservationGroup: ResourceBinding<ReservationGroupConfig, ReservationGroupAttrs> = {
   wireType: "azure_capacity_reservation_group",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ReservationGroup_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

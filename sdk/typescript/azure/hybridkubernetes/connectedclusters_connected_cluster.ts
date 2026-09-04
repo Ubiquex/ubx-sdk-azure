@@ -240,8 +240,12 @@ export interface ConnectedclustersConnectedClusterConfig {
   identity: ConnectedclustersConnectedCluster_Identity | Computed<ConnectedclustersConnectedCluster_Identity>;
   /** Indicates the kind of Arc connected cluster based on host infrastructure. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the connected cluster. */
   properties: ConnectedclustersConnectedCluster_Properties | Computed<ConnectedclustersConnectedCluster_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ConnectedclustersConnectedClusterAttrs {
@@ -249,8 +253,12 @@ export interface ConnectedclustersConnectedClusterAttrs {
   identity: ConnectedclustersConnectedCluster_Identity;
   /** Indicates the kind of Arc connected cluster based on host infrastructure. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the connected cluster. */
   properties: ConnectedclustersConnectedCluster_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const ConnectedclustersConnectedCluster: ResourceBinding<ConnectedclustersConnectedClusterConfig, ConnectedclustersConnectedClusterAttrs> = {
@@ -262,10 +270,12 @@ export const ConnectedclustersConnectedCluster: ResourceBinding<Connectedcluster
       fields: ConnectedclustersConnectedCluster_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ConnectedclustersConnectedCluster_PropertiesFields,
     },
+    tags: "tags",
   },
 };

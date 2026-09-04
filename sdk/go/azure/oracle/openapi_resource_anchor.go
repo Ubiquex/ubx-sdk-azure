@@ -16,22 +16,32 @@ var OpenapiResourceAnchor_PropertiesFields = ubx.FieldMap{
 }
 
 type OpenapiResourceAnchorConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Resource Anchor properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiResourceAnchorAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Resource Anchor properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiResourceAnchor = ubx.ResourceBinding{
 	WireType: "azure_oracle_openapi_resource_anchor",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiResourceAnchor_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -85,26 +85,36 @@ _OpenapiExascaleDbStorageVault_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiExascaleDbStorageVaultConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # ExascaleDbStorageVault resource model
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 @dataclasses.dataclass
 class OpenapiExascaleDbStorageVaultAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # ExascaleDbStorageVault resource model
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
 OpenapiExascaleDbStorageVault = ubx.ResourceBinding(
     wire_type="azure_oracle_openapi_exascale_db_storage_vault",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiExascaleDbStorageVault_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

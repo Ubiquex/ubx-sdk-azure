@@ -66,22 +66,38 @@ var IntegrationServiceEnvironmentManagedApi_PropertiesFields = ubx.FieldMap{
 }
 
 type IntegrationServiceEnvironmentManagedApiConfig struct {
+	// The resource location.
+	Location any
 	// The integration service environment managed api properties.
 	Properties any
+	// The resource tags.
+	Tags any
 }
 
 type IntegrationServiceEnvironmentManagedApiAttrs struct {
+	// The resource id.
+	Id any
+	// The resource location.
+	Location any
+	// Gets the resource name.
+	Name any
 	// The integration service environment managed api properties.
 	Properties any
+	// The resource tags.
+	Tags any
+	// Gets the resource type.
+	Type any
 }
 
 var IntegrationServiceEnvironmentManagedApi = ubx.ResourceBinding{
 	WireType: "azure_logic_integration_service_environment_managed_api",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   IntegrationServiceEnvironmentManagedApi_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

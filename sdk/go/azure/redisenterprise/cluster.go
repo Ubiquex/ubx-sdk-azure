@@ -59,10 +59,14 @@ var Cluster_SkuFields = ubx.FieldMap{
 type ClusterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of Redis Enterprise clusters for create operations
 	Properties any
 	// SKU parameters supplied to the create Redis Enterprise cluster operation.
 	Sku any
+	// Resource tags.
+	Tags any
 	// The Availability Zones where this cluster will be deployed.
 	Zones any
 }
@@ -72,10 +76,14 @@ type ClusterAttrs struct {
 	Identity any
 	// Distinguishes the kind of cluster. Read-only.
 	Kind any
+	// The geo-location where the resource lives
+	Location any
 	// Properties of Redis Enterprise clusters for create operations
 	Properties any
 	// SKU parameters supplied to the create Redis Enterprise cluster operation.
 	Sku any
+	// Resource tags.
+	Tags any
 	// The Availability Zones where this cluster will be deployed.
 	Zones any
 }
@@ -88,6 +96,7 @@ var Cluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Cluster_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -98,6 +107,7 @@ var Cluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   Cluster_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

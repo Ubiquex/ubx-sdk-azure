@@ -54,15 +54,23 @@ _Project_PropertiesFields = {
 class ProjectConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a project.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ProjectAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of a project.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Project = ubx.ResourceBinding(
     wire_type="azure_devcenter_project",
@@ -72,10 +80,12 @@ Project = ubx.ResourceBinding(
             kind="object",
             fields=_Project_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Project_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

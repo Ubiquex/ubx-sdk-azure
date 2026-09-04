@@ -152,22 +152,32 @@ const OpenapiDomainResource_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiDomainResourceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** A class that describes the properties of a Domains resource. */
   properties?: OpenapiDomainResource_Properties | Computed<OpenapiDomainResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiDomainResourceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** A class that describes the properties of a Domains resource. */
   properties: OpenapiDomainResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiDomainResource: ResourceBinding<OpenapiDomainResourceConfig, OpenapiDomainResourceAttrs> = {
   wireType: "azure_communication_openapi_domain_resource",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiDomainResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

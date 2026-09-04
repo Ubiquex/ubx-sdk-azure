@@ -1889,6 +1889,8 @@ class MachineScaleSetConfig:
     extended_location: Any = None
     # Identity for the virtual machine scale set.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the user-defined constraints for resource hardware placement.
     placement: Any = None
     # Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use. In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**.
@@ -1897,6 +1899,8 @@ class MachineScaleSetConfig:
     properties: Any = None
     # Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
@@ -1908,6 +1912,8 @@ class MachineScaleSetAttrs:
     extended_location: Any = None
     # Identity for the virtual machine scale set.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Describes the user-defined constraints for resource hardware placement.
     placement: Any = None
     # Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use. In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**.
@@ -1916,6 +1922,8 @@ class MachineScaleSetAttrs:
     properties: Any = None
     # Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
     # The availability zones.
     zones: Any = None
 
@@ -1932,6 +1940,7 @@ MachineScaleSet = ubx.ResourceBinding(
             kind="object",
             fields=_MachineScaleSet_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "placement": ubx.FieldSpec(
             wire_name="placement",
             kind="object",
@@ -1952,6 +1961,7 @@ MachineScaleSet = ubx.ResourceBinding(
             kind="object",
             fields=_MachineScaleSet_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
         "zones": ubx.FieldSpec(wire_name="zones"),
     },
 )

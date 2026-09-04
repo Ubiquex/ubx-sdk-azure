@@ -276,19 +276,27 @@ const Service_SkuFields: FieldMap = {
 export interface ServiceConfig {
   /** Details about the search service identity. A null value indicates that the search service has no identity assigned. */
   identity?: Service_Identity | Computed<Service_Identity>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties of the search service. */
   properties?: Service_Properties | Computed<Service_Properties>;
   /** Defines the SKU of a search service, which determines billing rate and capacity limits. */
   sku?: Service_Sku | Computed<Service_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface ServiceAttrs {
   /** Details about the search service identity. A null value indicates that the search service has no identity assigned. */
   identity: Service_Identity;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties of the search service. */
   properties: Service_Properties;
   /** Defines the SKU of a search service, which determines billing rate and capacity limits. */
   sku: Service_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const Service: ResourceBinding<ServiceConfig, ServiceAttrs> = {
@@ -299,6 +307,7 @@ export const Service: ResourceBinding<ServiceConfig, ServiceAttrs> = {
       kind: "object",
       fields: Service_IdentityFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -309,5 +318,6 @@ export const Service: ResourceBinding<ServiceConfig, ServiceAttrs> = {
       kind: "object",
       fields: Service_SkuFields,
     },
+    tags: "tags",
   },
 };

@@ -282,19 +282,27 @@ _Service_SkuFields = {
 class ServiceConfig:
     # Details about the search service identity. A null value indicates that the search service has no identity assigned.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the search service.
     properties: Any = None
     # Defines the SKU of a search service, which determines billing rate and capacity limits.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class ServiceAttrs:
     # Details about the search service identity. A null value indicates that the search service has no identity assigned.
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the search service.
     properties: Any = None
     # Defines the SKU of a search service, which determines billing rate and capacity limits.
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 Service = ubx.ResourceBinding(
     wire_type="azure_search_service",
@@ -304,6 +312,7 @@ Service = ubx.ResourceBinding(
             kind="object",
             fields=_Service_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -314,5 +323,6 @@ Service = ubx.ResourceBinding(
             kind="object",
             fields=_Service_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

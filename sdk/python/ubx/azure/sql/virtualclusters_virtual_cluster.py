@@ -23,21 +23,31 @@ _VirtualclustersVirtualCluster_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualclustersVirtualClusterConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a virtual cluster.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class VirtualclustersVirtualClusterAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # The properties of a virtual cluster.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 VirtualclustersVirtualCluster = ubx.ResourceBinding(
     wire_type="azure_sql_virtualclusters_virtual_cluster",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualclustersVirtualCluster_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -111,28 +111,32 @@ _OpenapiBackupItem_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiBackupItemConfig:
-    # BackupRequest resource specific properties
-    properties: Any = None
-    # path parameter, not part of the API's own resource representation
-    name: Any = None
-
-@dataclasses.dataclass
-class OpenapiBackupItemAttrs:
     # Kind of resource.
     kind: Any = None
     # BackupRequest resource specific properties
     properties: Any = None
-    # path parameter, not part of the API's own resource representation
+
+@dataclasses.dataclass
+class OpenapiBackupItemAttrs:
+    # Resource Id.
+    id: Any = None
+    # Kind of resource.
+    kind: Any = None
+    # Resource Name.
     name: Any = None
+    # BackupRequest resource specific properties
+    properties: Any = None
+    # Resource type.
+    type: Any = None
 
 OpenapiBackupItem = ubx.ResourceBinding(
     wire_type="azure_web_openapi_backup_item",
     fields={
+        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiBackupItem_PropertiesFields,
         ),
-        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

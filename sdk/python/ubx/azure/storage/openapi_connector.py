@@ -51,21 +51,31 @@ _OpenapiConnector_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiConnectorConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # The storage connector properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiConnectorAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # The storage connector properties
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiConnector = ubx.ResourceBinding(
     wire_type="azure_storage_openapi_connector",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_OpenapiConnector_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

@@ -17,21 +17,31 @@ _DbOpenapiFleetResource_PropertiesFields = {
 
 @dataclasses.dataclass
 class DbOpenapiFleetResourceConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties to update Azure Cosmos DB fleet resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class DbOpenapiFleetResourceAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties to update Azure Cosmos DB fleet resource.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 DbOpenapiFleetResource = ubx.ResourceBinding(
     wire_type="azure_cosmos_db_openapi_fleet_resource",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_DbOpenapiFleetResource_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

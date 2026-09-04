@@ -157,6 +157,8 @@ const VirtualwanExpressRouteConnection_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanExpressRouteConnectionConfig {
+  /** Resource ID. */
+  id?: string | Computed<string>;
   /** The name of the resource. */
   name: string | Computed<string>;
   /** Properties of the ExpressRouteConnection subresource. */
@@ -164,6 +166,8 @@ export interface VirtualwanExpressRouteConnectionConfig {
 }
 
 export interface VirtualwanExpressRouteConnectionAttrs {
+  /** Resource ID. */
+  id: string;
   /** The name of the resource. */
   name: string;
   /** Properties of the ExpressRouteConnection subresource. */
@@ -173,6 +177,7 @@ export interface VirtualwanExpressRouteConnectionAttrs {
 export const VirtualwanExpressRouteConnection: ResourceBinding<VirtualwanExpressRouteConnectionConfig, VirtualwanExpressRouteConnectionAttrs> = {
   wireType: "azure_network_virtualwan_express_route_connection",
   fields: {
+    id: "id",
     name: "name",
     properties: {
       wireName: "properties",

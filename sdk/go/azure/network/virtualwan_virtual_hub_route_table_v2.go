@@ -37,6 +37,8 @@ var VirtualwanVirtualHubRouteTableV2_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualwanVirtualHubRouteTableV2Config struct {
+	// Resource ID.
+	Id any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Parameters for VirtualHubRouteTableV2.
@@ -46,6 +48,8 @@ type VirtualwanVirtualHubRouteTableV2Config struct {
 type VirtualwanVirtualHubRouteTableV2Attrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Parameters for VirtualHubRouteTableV2.
@@ -55,6 +59,7 @@ type VirtualwanVirtualHubRouteTableV2Attrs struct {
 var VirtualwanVirtualHubRouteTableV2 = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_virtual_hub_route_table_v2",
 	Fields: ubx.FieldMap{
+		"Id":   ubx.FieldSpec{WireName: "id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",

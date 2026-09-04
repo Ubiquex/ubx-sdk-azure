@@ -176,6 +176,10 @@ _OpenapiThreatIntelligenceInformation_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiThreatIntelligenceInformationConfig:
+    # Etag of the azure resource
+    etag: Any = None
+    # The kind of the threat intelligence entity
+    kind: Any = None
     # Describes threat intelligence entity properties
     properties: Any = None
     # path parameter, not part of the API's own resource representation
@@ -195,6 +199,8 @@ class OpenapiThreatIntelligenceInformationAttrs:
 OpenapiThreatIntelligenceInformation = ubx.ResourceBinding(
     wire_type="azure_securityinsights_openapi_threat_intelligence_information",
     fields={
+        "etag": ubx.FieldSpec(wire_name="etag"),
+        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

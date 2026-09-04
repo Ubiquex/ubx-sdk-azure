@@ -141,10 +141,16 @@ var VirtualnetworkBastionHost_SkuFields = ubx.FieldMap{
 }
 
 type VirtualnetworkBastionHostConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Properties of the Bastion Host.
 	Properties any
 	// The sku of this Bastion Host.
 	Sku any
+	// Resource tags.
+	Tags any
 	// A list of availability zones denoting where the resource needs to come from.
 	Zones any
 }
@@ -152,10 +158,20 @@ type VirtualnetworkBastionHostConfig struct {
 type VirtualnetworkBastionHostAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Properties of the Bastion Host.
 	Properties any
 	// The sku of this Bastion Host.
 	Sku any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 	// A list of availability zones denoting where the resource needs to come from.
 	Zones any
 }
@@ -163,6 +179,8 @@ type VirtualnetworkBastionHostAttrs struct {
 var VirtualnetworkBastionHost = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_bastion_host",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -173,6 +191,7 @@ var VirtualnetworkBastionHost = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   VirtualnetworkBastionHost_SkuFields,
 		},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

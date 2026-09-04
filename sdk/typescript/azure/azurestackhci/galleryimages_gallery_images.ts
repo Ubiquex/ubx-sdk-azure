@@ -175,15 +175,23 @@ const GalleryimagesGalleryImages_PropertiesFields: FieldMap = {
 export interface GalleryimagesGalleryImagesConfig {
   /** The complex type of the extended location. */
   extendedLocation?: GalleryimagesGalleryImages_ExtendedLocation | Computed<GalleryimagesGalleryImages_ExtendedLocation>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Properties under the gallery image resource */
   properties?: GalleryimagesGalleryImages_Properties | Computed<GalleryimagesGalleryImages_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface GalleryimagesGalleryImagesAttrs {
   /** The complex type of the extended location. */
   extendedLocation: GalleryimagesGalleryImages_ExtendedLocation;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Properties under the gallery image resource */
   properties: GalleryimagesGalleryImages_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const GalleryimagesGalleryImages: ResourceBinding<GalleryimagesGalleryImagesConfig, GalleryimagesGalleryImagesAttrs> = {
@@ -194,10 +202,12 @@ export const GalleryimagesGalleryImages: ResourceBinding<GalleryimagesGalleryIma
       kind: "object",
       fields: GalleryimagesGalleryImages_ExtendedLocationFields,
     },
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: GalleryimagesGalleryImages_PropertiesFields,
     },
+    tags: "tags",
   },
 };

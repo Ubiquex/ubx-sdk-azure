@@ -41,6 +41,10 @@ class DeploymentscriptsDeploymentScriptConfig:
     identity: Any = None
     # Type of the script.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class DeploymentscriptsDeploymentScriptAttrs:
@@ -48,6 +52,10 @@ class DeploymentscriptsDeploymentScriptAttrs:
     identity: Any = None
     # Type of the script.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
+    # Resource tags.
+    tags: Any = None
 
 DeploymentscriptsDeploymentScript = ubx.ResourceBinding(
     wire_type="azure_resources_deploymentscripts_deployment_script",
@@ -58,5 +66,7 @@ DeploymentscriptsDeploymentScript = ubx.ResourceBinding(
             fields=_DeploymentscriptsDeploymentScript_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

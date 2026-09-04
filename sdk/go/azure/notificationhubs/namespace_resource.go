@@ -497,22 +497,31 @@ var NamespaceResource_SkuFields = ubx.FieldMap{
 }
 
 type NamespaceResourceConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// Represents namespace properties.
 	Properties any
 	// The Sku description for a namespace
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 type NamespaceResourceAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// Represents namespace properties.
 	Properties any
 	// The Sku description for a namespace
 	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var NamespaceResource = ubx.ResourceBinding{
 	WireType: "azure_notificationhubs_namespace_resource",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
@@ -523,5 +532,6 @@ var NamespaceResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   NamespaceResource_SkuFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

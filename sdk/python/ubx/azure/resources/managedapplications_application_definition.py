@@ -80,6 +80,21 @@ class ManagedapplicationsApplicationDefinition_Properties:
     # The managed application provider policies.
     policies: Any = None
 
+@dataclasses.dataclass
+class ManagedapplicationsApplicationDefinition_Sku:
+    # The SKU capacity.
+    capacity: Any = None
+    # The SKU family.
+    family: Any = None
+    # The SKU model.
+    model: Any = None
+    # The SKU name.
+    name: Any = None
+    # The SKU size.
+    size: Any = None
+    # The SKU tier.
+    tier: Any = None
+
 _ManagedapplicationsApplicationDefinition_Properties_ArtifactsFields = {
     "name": ubx.FieldSpec(wire_name="name"),
     "type": ubx.FieldSpec(wire_name="type"),
@@ -167,23 +182,46 @@ _ManagedapplicationsApplicationDefinition_PropertiesFields = {
     ),
 }
 
+_ManagedapplicationsApplicationDefinition_SkuFields = {
+    "capacity": ubx.FieldSpec(wire_name="capacity"),
+    "family": ubx.FieldSpec(wire_name="family"),
+    "model": ubx.FieldSpec(wire_name="model"),
+    "name": ubx.FieldSpec(wire_name="name"),
+    "size": ubx.FieldSpec(wire_name="size"),
+    "tier": ubx.FieldSpec(wire_name="tier"),
+}
+
 @dataclasses.dataclass
 class ManagedapplicationsApplicationDefinitionConfig:
+    # ID of the resource that manages this resource.
+    managed_by: Any = None
     # The managed application definition properties.
     properties: Any = None
+    # SKU for the resource.
+    sku: Any = None
 
 @dataclasses.dataclass
 class ManagedapplicationsApplicationDefinitionAttrs:
+    # ID of the resource that manages this resource.
+    managed_by: Any = None
     # The managed application definition properties.
     properties: Any = None
+    # SKU for the resource.
+    sku: Any = None
 
 ManagedapplicationsApplicationDefinition = ubx.ResourceBinding(
     wire_type="azure_resources_managedapplications_application_definition",
     fields={
+        "managed_by": ubx.FieldSpec(wire_name="managed_by"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ManagedapplicationsApplicationDefinition_PropertiesFields,
+        ),
+        "sku": ubx.FieldSpec(
+            wire_name="sku",
+            kind="object",
+            fields=_ManagedapplicationsApplicationDefinition_SkuFields,
         ),
     },
 )

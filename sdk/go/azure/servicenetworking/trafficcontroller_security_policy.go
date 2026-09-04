@@ -32,22 +32,32 @@ var TrafficcontrollerSecurityPolicy_PropertiesFields = ubx.FieldMap{
 }
 
 type TrafficcontrollerSecurityPolicyConfig struct {
+	// The geo-location where the resource lives
+	Location any
 	// SecurityPolicy Properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type TrafficcontrollerSecurityPolicyAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	// SecurityPolicy Properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var TrafficcontrollerSecurityPolicy = ubx.ResourceBinding{
 	WireType: "azure_servicenetworking_trafficcontroller_security_policy",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   TrafficcontrollerSecurityPolicy_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

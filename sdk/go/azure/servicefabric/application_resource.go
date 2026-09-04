@@ -26,6 +26,21 @@ type ApplicationResource_Properties struct {
 	TypeName any
 }
 
+type ApplicationResource_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC).
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var ApplicationResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
 	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
 	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
@@ -50,15 +65,33 @@ var ApplicationResource_PropertiesFields = ubx.FieldMap{
 type ApplicationResourceConfig struct {
 	// Describes the managed identities for an Azure resource.
 	Identity any
+	// It will be deprecated in New API, resource location depends on the parent resource.
+	Location any
 	// The application resource properties.
 	Properties any
+	// Azure resource tags.
+	Tags any
 }
 
 type ApplicationResourceAttrs struct {
+	// Azure resource etag.
+	Etag any
+	// Azure resource identifier.
+	Id any
 	// Describes the managed identities for an Azure resource.
 	Identity any
+	// It will be deprecated in New API, resource location depends on the parent resource.
+	Location any
+	// Azure resource name.
+	Name any
 	// The application resource properties.
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Azure resource tags.
+	Tags any
+	// Azure resource type.
+	Type any
 }
 
 var ApplicationResource = ubx.ResourceBinding{
@@ -69,10 +102,12 @@ var ApplicationResource = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   ApplicationResource_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ApplicationResource_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -246,15 +246,23 @@ const OpenapiExadbVmCluster_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiExadbVmClusterConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** ExadbVmCluster resource model */
   properties?: OpenapiExadbVmCluster_Properties | Computed<OpenapiExadbVmCluster_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** The availability zones. */
   zones?: string[] | Computed<string[]>;
 }
 
 export interface OpenapiExadbVmClusterAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** ExadbVmCluster resource model */
   properties: OpenapiExadbVmCluster_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** The availability zones. */
   zones: string[];
 }
@@ -262,11 +270,13 @@ export interface OpenapiExadbVmClusterAttrs {
 export const OpenapiExadbVmCluster: ResourceBinding<OpenapiExadbVmClusterConfig, OpenapiExadbVmClusterAttrs> = {
   wireType: "azure_oracle_openapi_exadb_vm_cluster",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiExadbVmCluster_PropertiesFields,
     },
+    tags: "tags",
     zones: "zones",
   },
 };

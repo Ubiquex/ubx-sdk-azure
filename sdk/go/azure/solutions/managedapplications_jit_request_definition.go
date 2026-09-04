@@ -44,6 +44,21 @@ type ManagedapplicationsJitRequestDefinition_Properties struct {
 	UpdatedBy any
 }
 
+type ManagedapplicationsJitRequestDefinition_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 var ManagedapplicationsJitRequestDefinition_Properties_CreatedByFields = ubx.FieldMap{
 	"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
 	"Oid":           ubx.FieldSpec{WireName: "oid"},
@@ -89,22 +104,40 @@ var ManagedapplicationsJitRequestDefinition_PropertiesFields = ubx.FieldMap{
 }
 
 type ManagedapplicationsJitRequestDefinitionConfig struct {
+	// Resource location
+	Location any
 	// Information about JIT request properties
 	Properties any
+	// Resource tags
+	Tags any
 }
 
 type ManagedapplicationsJitRequestDefinitionAttrs struct {
+	// Resource ID
+	Id any
+	// Resource location
+	Location any
+	// Resource name
+	Name any
 	// Information about JIT request properties
 	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Resource tags
+	Tags any
+	// Resource type
+	Type any
 }
 
 var ManagedapplicationsJitRequestDefinition = ubx.ResourceBinding{
 	WireType: "azure_solutions_managedapplications_jit_request_definition",
 	Fields: ubx.FieldMap{
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   ManagedapplicationsJitRequestDefinition_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

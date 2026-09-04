@@ -142,8 +142,12 @@ export interface OpenapiKubeEnvironmentConfig {
   extendedLocation?: OpenapiKubeEnvironment_ExtendedLocation | Computed<OpenapiKubeEnvironment_ExtendedLocation>;
   /** Kind of resource. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** KubeEnvironment resource specific properties */
   properties?: OpenapiKubeEnvironment_Properties | Computed<OpenapiKubeEnvironment_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
   /** path parameter, not part of the API's own resource representation */
   name: string | Computed<string>;
 }
@@ -153,8 +157,12 @@ export interface OpenapiKubeEnvironmentAttrs {
   extendedLocation: OpenapiKubeEnvironment_ExtendedLocation;
   /** Kind of resource. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** KubeEnvironment resource specific properties */
   properties: OpenapiKubeEnvironment_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
   /** path parameter, not part of the API's own resource representation */
   name: string;
 }
@@ -168,11 +176,13 @@ export const OpenapiKubeEnvironment: ResourceBinding<OpenapiKubeEnvironmentConfi
       fields: OpenapiKubeEnvironment_ExtendedLocationFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiKubeEnvironment_PropertiesFields,
     },
+    tags: "tags",
     name: "name",
   },
 };

@@ -196,8 +196,12 @@ var NetAppAccount_PropertiesFields = ubx.FieldMap{
 type NetAppAccountConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// NetApp account properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type NetAppAccountAttrs struct {
@@ -205,8 +209,12 @@ type NetAppAccountAttrs struct {
 	Etag any
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// NetApp account properties
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var NetAppAccount = ubx.ResourceBinding{
@@ -217,10 +225,12 @@ var NetAppAccount = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   NetAppAccount_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   NetAppAccount_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

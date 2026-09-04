@@ -22,18 +22,41 @@ export interface ServiceSupportedOperatingSystems_Properties {
   supportedOsList?: ServiceSupportedOperatingSystems_Properties_SupportedOsList[] | Computed<ServiceSupportedOperatingSystems_Properties_SupportedOsList[]>;
 }
 
+export interface ServiceSupportedOperatingSystems_SystemData {
+  /** The timestamp of resource creation (UTC). */
+  createdAt?: string | Computed<string>;
+  /** The identity that created the resource. */
+  createdBy?: string | Computed<string>;
+  /** The type of identity that created the resource. */
+  createdByType?: string | Computed<string>;
+  /** The timestamp of resource last modification (UTC) */
+  lastModifiedAt?: string | Computed<string>;
+  /** The identity that last modified the resource. */
+  lastModifiedBy?: string | Computed<string>;
+  /** The type of identity that last modified the resource. */
+  lastModifiedByType?: string | Computed<string>;
+}
+
 export interface ServiceSupportedOperatingSystemsConfig {
   instanceType?: string | Computed<string>;
   resourceName: string | Computed<string>;
 }
 
 export interface ServiceSupportedOperatingSystemsAttrs {
+  /** Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}" */
+  id: string;
   instanceType: string;
   /** Resource Location */
   location: string;
+  /** The name of the resource */
+  name: string;
   /** Supported operating systems properties. */
   properties: ServiceSupportedOperatingSystems_Properties;
   resourceName: string;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: ServiceSupportedOperatingSystems_SystemData;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const ServiceSupportedOperatingSystems: DataSourceBinding<ServiceSupportedOperatingSystemsConfig, ServiceSupportedOperatingSystemsAttrs> = {

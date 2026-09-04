@@ -11941,24 +11941,43 @@ var VirtualnetworkRouteTable_PropertiesFields = ubx.FieldMap{
 }
 
 type VirtualnetworkRouteTableConfig struct {
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
 	// Route Table resource.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type VirtualnetworkRouteTableAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
 	// Route Table resource.
 	Properties any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var VirtualnetworkRouteTable = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_route_table",
 	Fields: ubx.FieldMap{
+		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   VirtualnetworkRouteTable_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

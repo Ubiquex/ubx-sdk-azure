@@ -208,15 +208,23 @@ _SreagentAgent_PropertiesFields = {
 class SreagentAgentConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the Agent
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class SreagentAgentAttrs:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Properties of the Agent
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 SreagentAgent = ubx.ResourceBinding(
     wire_type="azure_app_sreagent_agent",
@@ -226,10 +234,12 @@ SreagentAgent = ubx.ResourceBinding(
             kind="object",
             fields=_SreagentAgent_IdentityFields,
         ),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_SreagentAgent_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

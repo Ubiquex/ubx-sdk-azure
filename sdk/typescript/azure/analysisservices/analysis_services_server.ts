@@ -39,22 +39,47 @@ const AnalysisServicesServer_PropertiesFields: FieldMap = {
 };
 
 export interface AnalysisServicesServerConfig {
+  /** Location of the Analysis Services resource. */
+  location: string | Computed<string>;
   /** Properties of Analysis Services resource. */
   properties?: AnalysisServicesServer_Properties | Computed<AnalysisServicesServer_Properties>;
+  /** Represents the SKU name and Azure pricing tier for Analysis Services resource. */
+  sku: AnalysisServicesServer_Properties_Sku | Computed<AnalysisServicesServer_Properties_Sku>;
+  /** Key-value pairs of additional resource provisioning properties. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface AnalysisServicesServerAttrs {
+  /** An identifier that represents the Analysis Services resource. */
+  id: string;
+  /** Location of the Analysis Services resource. */
+  location: string;
+  /** The name of the Analysis Services resource. */
+  name: string;
   /** Properties of Analysis Services resource. */
   properties: AnalysisServicesServer_Properties;
+  /** Represents the SKU name and Azure pricing tier for Analysis Services resource. */
+  sku: AnalysisServicesServer_Properties_Sku;
+  /** Key-value pairs of additional resource provisioning properties. */
+  tags: Record<string, string>;
+  /** The type of the Analysis Services resource. */
+  type: string;
 }
 
 export const AnalysisServicesServer: ResourceBinding<AnalysisServicesServerConfig, AnalysisServicesServerAttrs> = {
   wireType: "azure_analysisservices_analysis_services_server",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: AnalysisServicesServer_PropertiesFields,
     },
+    sku: {
+      wireName: "sku",
+      kind: "object",
+      fields: AnalysisServicesServer_Properties_SkuFields,
+    },
+    tags: "tags",
   },
 };

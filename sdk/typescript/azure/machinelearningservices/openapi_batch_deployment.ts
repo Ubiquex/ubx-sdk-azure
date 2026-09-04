@@ -158,10 +158,14 @@ export interface OpenapiBatchDeploymentConfig {
   identity?: OpenapiBatchDeployment_Identity | Computed<OpenapiBatchDeployment_Identity>;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind?: string | Computed<string>;
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** Batch inference settings per deployment. */
   properties: OpenapiBatchDeployment_Properties | Computed<OpenapiBatchDeployment_Properties>;
   /** The resource model definition representing SKU */
   sku?: OpenapiBatchDeployment_Sku | Computed<OpenapiBatchDeployment_Sku>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiBatchDeploymentAttrs {
@@ -169,10 +173,14 @@ export interface OpenapiBatchDeploymentAttrs {
   identity: OpenapiBatchDeployment_Identity;
   /** Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. */
   kind: string;
+  /** The geo-location where the resource lives */
+  location: string;
   /** Batch inference settings per deployment. */
   properties: OpenapiBatchDeployment_Properties;
   /** The resource model definition representing SKU */
   sku: OpenapiBatchDeployment_Sku;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiBatchDeployment: ResourceBinding<OpenapiBatchDeploymentConfig, OpenapiBatchDeploymentAttrs> = {
@@ -184,6 +192,7 @@ export const OpenapiBatchDeployment: ResourceBinding<OpenapiBatchDeploymentConfi
       fields: OpenapiBatchDeployment_IdentityFields,
     },
     kind: "kind",
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
@@ -194,5 +203,6 @@ export const OpenapiBatchDeployment: ResourceBinding<OpenapiBatchDeploymentConfi
       kind: "object",
       fields: OpenapiBatchDeployment_SkuFields,
     },
+    tags: "tags",
   },
 };

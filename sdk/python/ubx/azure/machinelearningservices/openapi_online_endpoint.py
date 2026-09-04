@@ -86,10 +86,14 @@ class OpenapiOnlineEndpointConfig:
     identity: Any = None
     # Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Online endpoint configuration
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiOnlineEndpointAttrs:
@@ -97,10 +101,14 @@ class OpenapiOnlineEndpointAttrs:
     identity: Any = None
     # Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
     kind: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
     # Online endpoint configuration
     properties: Any = None
     # The resource model definition representing SKU
     sku: Any = None
+    # Resource tags.
+    tags: Any = None
 
 OpenapiOnlineEndpoint = ubx.ResourceBinding(
     wire_type="azure_machinelearningservices_openapi_online_endpoint",
@@ -111,6 +119,7 @@ OpenapiOnlineEndpoint = ubx.ResourceBinding(
             fields=_OpenapiOnlineEndpoint_IdentityFields,
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
@@ -121,5 +130,6 @@ OpenapiOnlineEndpoint = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiOnlineEndpoint_SkuFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

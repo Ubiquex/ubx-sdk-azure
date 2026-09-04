@@ -20,6 +20,14 @@ class CommandParameterDefinitionConfig:
 @dataclasses.dataclass
 class CommandParameterDefinitionAttrs:
     command_id: Any = None
+    # The VM run command description.
+    description: Any = None
+    # The VM run command id.
+    id: Any = None
+    # The VM run command label.
+    label: Any = None
+    # This property allows you to specify the type of the OS that is included in the disk if creating a VM from user-image or a specialized VHD. Possible values are: **Windows,** **Linux.**
+    os_type: Any = None
     # The parameters used by the script.
     parameters: Any = None
     # The script to be executed.

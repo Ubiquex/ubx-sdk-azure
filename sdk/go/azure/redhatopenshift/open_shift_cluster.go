@@ -317,15 +317,23 @@ var OpenShiftCluster_PropertiesFields = ubx.FieldMap{
 type OpenShiftClusterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// OpenShiftClusterProperties represents an OpenShift cluster's properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenShiftClusterAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// OpenShiftClusterProperties represents an OpenShift cluster's properties.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenShiftCluster = ubx.ResourceBinding{
@@ -336,10 +344,12 @@ var OpenShiftCluster = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenShiftCluster_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenShiftCluster_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

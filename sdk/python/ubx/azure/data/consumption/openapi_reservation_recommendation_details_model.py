@@ -86,6 +86,21 @@ class OpenapiReservationRecommendationDetailsModel_Properties:
     usage: Any = None
 
 @dataclasses.dataclass
+class OpenapiReservationRecommendationDetailsModel_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
 class OpenapiReservationRecommendationDetailsModelConfig:
     look_back_period: Any = None
     management_group_id: Any = None
@@ -99,10 +114,14 @@ class OpenapiReservationRecommendationDetailsModelConfig:
 class OpenapiReservationRecommendationDetailsModelAttrs:
     # The etag for the resource.
     etag: Any = None
+    # Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    id: Any = None
     # Resource Location.
     location: Any = None
     look_back_period: Any = None
     management_group_id: Any = None
+    # The name of the resource
+    name: Any = None
     product: Any = None
     # The properties of the reservation recommendation.
     properties: Any = None
@@ -111,9 +130,13 @@ class OpenapiReservationRecommendationDetailsModelAttrs:
     scope: Any = None
     # Resource sku
     sku: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
     # Resource tags.
     tags: Any = None
     term: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 OpenapiReservationRecommendationDetailsModel = ubx.DataSourceBinding(
     wire_type="azure_consumption_openapi_reservation_recommendation_details_model",

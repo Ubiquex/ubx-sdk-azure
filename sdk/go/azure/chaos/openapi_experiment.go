@@ -123,15 +123,23 @@ var OpenapiExperiment_PropertiesFields = ubx.FieldMap{
 type OpenapiExperimentConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Model that represents the Experiment properties model.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 type OpenapiExperimentAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
+	// The geo-location where the resource lives
+	Location any
 	// Model that represents the Experiment properties model.
 	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiExperiment = ubx.ResourceBinding{
@@ -142,10 +150,12 @@ var OpenapiExperiment = ubx.ResourceBinding{
 			Kind:     "object",
 			Fields:   OpenapiExperiment_IdentityFields,
 		},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
 			Kind:     "object",
 			Fields:   OpenapiExperiment_PropertiesFields,
 		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -69,10 +69,16 @@ export interface HealthcareApisPrivateEndpointConnectionDescriptionConfig {
 }
 
 export interface HealthcareApisPrivateEndpointConnectionDescriptionAttrs {
+  /** Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} */
+  id: string;
+  /** The name of the resource */
+  name: string;
   /** Properties of the PrivateEndpointConnectProperties. */
   properties: HealthcareApisPrivateEndpointConnectionDescription_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
   systemData: HealthcareApisPrivateEndpointConnectionDescription_SystemData;
+  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
+  type: string;
 }
 
 export const HealthcareApisPrivateEndpointConnectionDescription: ResourceBinding<HealthcareApisPrivateEndpointConnectionDescriptionConfig, HealthcareApisPrivateEndpointConnectionDescriptionAttrs> = {

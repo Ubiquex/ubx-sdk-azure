@@ -14,22 +14,32 @@ const OpenapiEmailServiceResource_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiEmailServiceResourceConfig {
+  /** The geo-location where the resource lives */
+  location: string | Computed<string>;
   /** A class that describes the properties of the EmailService. */
   properties?: OpenapiEmailServiceResource_Properties | Computed<OpenapiEmailServiceResource_Properties>;
+  /** Resource tags. */
+  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiEmailServiceResourceAttrs {
+  /** The geo-location where the resource lives */
+  location: string;
   /** A class that describes the properties of the EmailService. */
   properties: OpenapiEmailServiceResource_Properties;
+  /** Resource tags. */
+  tags: Record<string, string>;
 }
 
 export const OpenapiEmailServiceResource: ResourceBinding<OpenapiEmailServiceResourceConfig, OpenapiEmailServiceResourceAttrs> = {
   wireType: "azure_communication_openapi_email_service_resource",
   fields: {
+    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: OpenapiEmailServiceResource_PropertiesFields,
     },
+    tags: "tags",
   },
 };

@@ -24,6 +24,15 @@ export interface PrivateEndpointConnection_Properties {
   provisioningState?: string | Computed<string>;
 }
 
+export interface PrivateEndpointConnection_SystemData {
+  createdAt?: string | Computed<string>;
+  createdBy?: string | Computed<string>;
+  createdByType?: string | Computed<string>;
+  lastModifiedAt?: string | Computed<string>;
+  lastModifiedBy?: string | Computed<string>;
+  lastModifiedByType?: string | Computed<string>;
+}
+
 const PrivateEndpointConnection_Properties_PrivateEndpointFields: FieldMap = {
   id: "id",
 };
@@ -54,8 +63,16 @@ export interface PrivateEndpointConnectionConfig {
 }
 
 export interface PrivateEndpointConnectionAttrs {
+  /** Gets or sets the identifier. */
+  id: string;
+  /** Gets or sets the name. */
+  name: string;
   /** A private endpoint connection properties class. */
   properties: PrivateEndpointConnection_Properties;
+  /** Metadata pertaining to creation and last modification of the resource. */
+  systemData: PrivateEndpointConnection_SystemData;
+  /** Gets or sets the type. */
+  type: string;
 }
 
 export const PrivateEndpointConnection: ResourceBinding<PrivateEndpointConnectionConfig, PrivateEndpointConnectionAttrs> = {

@@ -231,21 +231,31 @@ _SapvirtualinstanceSapcentralServerInstance_PropertiesFields = {
 
 @dataclasses.dataclass
 class SapvirtualinstanceSapcentralServerInstanceConfig:
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the SAP Central Services Instance properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 @dataclasses.dataclass
 class SapvirtualinstanceSapcentralServerInstanceAttrs:
+    # The geo-location where the resource lives
+    location: Any = None
     # Defines the SAP Central Services Instance properties.
     properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 SapvirtualinstanceSapcentralServerInstance = ubx.ResourceBinding(
     wire_type="azure_workloads_sapvirtualinstance_sapcentral_server_instance",
     fields={
+        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_SapvirtualinstanceSapcentralServerInstance_PropertiesFields,
         ),
+        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )
